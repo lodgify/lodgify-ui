@@ -1,0 +1,48 @@
+// .selection.dropdown
+
+@selectionHoverBorderColor          : @inputHoverBorderColor;
+@selectionFocusBackground           : @focusedInputBackground;
+
+@selectionActiveHoverBorderColor    : @focusedFormBorderColor;
+@selectionFocusBorderColor          : @selectionActiveHoverBorderColor;
+@selectionVisibleBorderColor        : @selectionActiveHoverBorderColor;
+
+// .pointing.dropdown
+
+@pointingDropdownTextAlign          : center;
+
+// .menu
+
+@menuBackground                     : @selectionFocusBackground;
+@menuBorder                         : none;
+@menuBoxShadow                      : 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+@menuMarginTop                      : @8px;
+@pointingMenuMinWidth               : 100%;
+@pointingMenuBorderRadius           : @3px;
+@selectionVisibleMenuBoxShadow      : @menuBoxShadow;
+@selectionFocusMenuBoxShadow        : @menuBoxShadow;
+
+// .item
+
+@itemColor                          : @greySix;
+@selectionItemDivider               : 0.5px solid @solidInternalBorderColor;
+@selectionItemPadding               : @inputVerticalPadding @inputHorizontalPadding;
+
+@activeItemColor                    : @itemColor;
+@activeItemFontWeight               : normal;
+@selectedBackground                 : none;
+@selectedColor                      : @itemColor;
+
+@hoveredItemBackground              : @primaryColor;
+@hoveredItemColor                   : @textColor;
+
+// .item > img
+
+@menuImageHeight                    : @35px;
+@menuImageMinWidth                  : @58px;
+@menuImageHorizontalMargin          : -(@5px);
+@menuImageVerticalMargin            : -(@2px);
+
+// .icon
+
+@dropdownWithImagesCaretPaddingTop  : @20px;

@@ -1,0 +1,75 @@
+.ui.selection.dropdown:hover,
+.ui.selection.dropdown:focus,
+.ui.selection.dropdown.dirty {
+  background: @selectionFocusBackground;
+}
+
+.ui.selection.dropdown:not(.dirty) {
+  color: @defaultTextColor;
+}
+
+.ui.selection.dropdown.dirty {
+  border-color: @selectionFocusBorderColor;
+}
+
+.ui.selection.dropdown .menu {
+  margin-top: @menuMarginTop;
+}
+
+.ui.dropdown .menu .selected.item:hover {
+  background: @hoveredItemBackground;
+  color: @hoveredItemColor;
+}
+
+.ui.selection.dropdown .menu > .item {
+  white-space: nowrap;
+}
+
+.ui.dropdown > .text > .image,
+.ui.dropdown > .text > img,
+.ui.dropdown .menu > .item .image,
+.ui.dropdown .menu > .item img {
+  box-shadow: @floatingShadow;
+  display: inline-block;
+  height: @menuImageHeight;
+  margin-left: @menuImageHorizontalMargin;
+  margin-right: @itemElementDistance;
+  max-height: none;
+  min-width: @menuImageMinWidth;
+  vertical-align: middle;
+}
+
+.ui.dropdown:not(.dirty) > .text > .image,
+.ui.dropdown:not(.dirty) > .text > img,
+.ui.dropdown:not(.dirty) .menu > .item .image,
+.ui.dropdown:not(.dirty) .menu > .item img {
+  filter: opacity(0.5) grayscale(100%);
+}
+
+.ui.dropdown .menu > .item .image ~ .text,
+.ui.dropdown .menu > .item img ~ .text {
+  font-size: @tinyParagraphFontSize;
+}
+
+.ui.dropdown > .dropdown.icon:before {
+  content: '\f0d7';
+}
+
+.ui.dropdown.hasImages > .dropdown.icon {
+  padding-top: @dropdownWithImagesCaretPaddingTop;
+}
+
+// Submenu
+
+.ui.pointing.dropdown .menu {
+  min-width: @pointingMenuMinWidth;
+}
+
+.ui.pointing.dropdown,
+.ui.pointing.dropdown .menu .item {
+  text-align: @pointingDropdownTextAlign;
+}
+
+.ui.pointing.dropdown .menu a.item .text {
+  color: @textColor;
+}

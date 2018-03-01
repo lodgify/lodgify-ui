@@ -1,0 +1,34 @@
+// input
+@inputMarginTop: @15px;
+@inputMaxWidth: 350px;
+@inputWidth: 100%;
+
+// input:focus
+@focusBackground: @focusedInputBackground;
+
+// .input:hover input
+@hoveredInputBorderColor: @inputHoverBorderColor;
+
+// .input.error input
+@errorBackground: @focusedInputBackground;
+@errorColor: @textColor;
+
+// .input.error .label
+@errorMessageFontWeight: 400;
+@errorMessagePadding: @6px @25px;
+@errorMessageRightPosition: -(@1px);
+@errorMessageTopPosition: -(@30px);
+
+// .input.valid input
+@validBorderColor: @green;
+
+// .input.valid i
+@validIconPositionTop: @7px;
+
+// label
+@labelColor: @greySix;
+
+// input:focus + label
+@labelFocusColor: @black;
+@labelFocusFontSize: @10px;
+@labelFocusXTranslate: @30px;

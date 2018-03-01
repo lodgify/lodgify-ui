@@ -1,0 +1,7 @@
+@checkboxBackground: @white;
+@checkboxBorderRadius: 0;
+@checkboxBorder: 1px solid @greySeven;
+@checkboxActiveBorderColor: @greySeven;
+@checkboxActiveFocusBorderColor: @greySeven;
+@checkboxPressedBorderColor: @greySeven;
+@bulletColor: @greySeven;

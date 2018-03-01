@@ -1,0 +1,8 @@
+@paginationButtonDiameter           : @35px;
+@paginationButtonHorizontalMargin   : @15px;
+@paginationPrevButtonIconMarginLeft : -(@3px) !important;
+
+@paginationLabelBackground          : @greyFive;
+@paginationLabelActiveBackground    : @primaryColor;
+@paginationLabelHorizontalMargin    : @8px;
+@paginationLabelVerticalMargin      : @12px;

@@ -1,0 +1,32 @@
+.ui.pagination.menu .label {
+  background-color: @paginationLabelBackground;
+  margin: 0;
+  margin-left: @paginationLabelHorizontalMargin;
+  margin-top: @paginationLabelVerticalMargin;
+}
+
+.ui.pagination.menu .label:nth-child(2) {
+  margin-left: 0;
+}
+
+.ui.pagination.menu .active.label {
+  background-color: @paginationLabelActiveBackground;
+}
+
+.ui.pagination.menu button.button {
+  height: @paginationButtonDiameter;
+  margin: 0;
+  width: @paginationButtonDiameter;
+}
+
+.ui.pagination.menu button.button:first-child {
+  margin-right: @paginationButtonHorizontalMargin;
+}
+
+.ui.pagination.menu button.button:last-child {
+  margin-left: @paginationButtonHorizontalMargin;
+}
+
+.ui.pagination.menu button.button i.left.chevron {
+  margin-left: @paginationPrevButtonIconMarginLeft;
+}
