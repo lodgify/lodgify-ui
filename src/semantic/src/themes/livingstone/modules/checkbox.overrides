@@ -45,7 +45,14 @@
 .ui.checkbox.disabled.radio input ~ label:before,
 .ui.checkbox.disabled.radio input:focus ~ label:before {
   background-color: @disabledBackgroundColor;
-  border-color: @greyFive;
+  border-color: @greySix;
+}
+
+.ui.toggle.checkbox.disabled input:focus ~ label:before,
+.ui.toggle.checkbox.disabled input ~ label:before {
+  /* "important" marker required to overwrite the one declared in checkbox.less */
+  background-color: @disabledBackgroundColor !important;
+  border-width: 1px;
 }
 
 .ui.checkbox.disabled input ~ label:after,

@@ -41,8 +41,8 @@
 // neutrals
 @black            : #333;
 @greyEight        : #444;
-@greySeven          : #555;
-@greySix         : #aaa;
+@greySeven        : #555;
+@greySix          : #aaa;
 @greyFive         : #ccc;
 @greyFour         : #d8d8d8;
 @greyThree        : #e2e2e2;
@@ -56,7 +56,7 @@
 
 // States
 
-@disabledBackgroundColor: @greyFour;
+@disabledBackgroundColor: @greyFive;
 
 // Input
 

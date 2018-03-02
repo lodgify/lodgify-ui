@@ -1,5 +1,5 @@
 
-RadioButton is a variation on the [`<Checkbox>` component](#checkbox)
+RadioButton is a variation on the [`<Checkbox>` component](#checkbox).
 Please refer to it for more information.
 
 ```jsx

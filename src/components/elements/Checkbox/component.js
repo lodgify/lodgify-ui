@@ -4,29 +4,40 @@ import { Checkbox } from 'semantic-ui-react';
 
 /**
  * A checkbox allows a user to select a value from a small set of options, often binary.
- * @param {Object} props
  * @return {Object}
- * */
-export const Component = props => (
+ */
+export const Component = ({
+  isDisabled,
+  isChecked,
+  isCheckedByDefault,
+  isRadioButton,
+  isToggle,
+  label,
+  name,
+  onChange,
+  value,
+}) => (
   <Checkbox
-    checked={props.isChecked}
-    defaultChecked={props.isCheckedByDefault}
-    disabled={props.isDisabled}
-    label={props.label}
-    name={props.name}
-    onChange={props.onChange}
-    radio={props.isRadioButton}
-    value={props.value}
+    checked={isChecked}
+    defaultChecked={isCheckedByDefault}
+    disabled={isDisabled}
+    label={label}
+    name={name}
+    onChange={onChange}
+    radio={isRadioButton}
+    value={value}
+    toggle={isToggle}
   />
 );
 
 Component.displayName = 'Checkbox';
 
 Component.defaultProps = {
-  // Notes: Use undefined for uncontrolled checkboxes, boolean for controlled ones.
+  // Notes: Use undefined for uncontrolled checkboxes, boolean for controlled ones
   isChecked: undefined,
   isCheckedByDefault: undefined,
   isDisabled: false,
+  isToggle: false,
   isRadioButton: undefined,
   label: '',
   name: undefined,
@@ -49,8 +60,8 @@ Component.propTypes = {
   isRadioButton: PropTypes.bool,
   /** The label for the checkbox */
   label: PropTypes.string,
-  /** The HTML input name. */
-  name: PropTypes.string,
+  /** Format to show an on or off choice. */
+  isToggle: PropTypes.bool,
   /** The HTML input name. */
   name: PropTypes.string,
   /**

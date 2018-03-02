@@ -1,7 +1,22 @@
+@bulletColor: @greySeven;
 @checkboxBackground: @white;
 @checkboxBorderRadius: 0;
 @checkboxBorder: 1px solid @greySeven;
 @checkboxActiveBorderColor: @greySeven;
 @checkboxActiveFocusBorderColor: @greySeven;
 @checkboxPressedBorderColor: @greySeven;
-@bulletColor: @greySeven;
+@disabledCheckboxOpacity: 0.5;
+
+@handleBackground: @white;
+@handleBoxShadow:
+  @subtleShadow,
+  0px 2px 4px 0 rgba(0, 0, 0, 0.2)
+;
+@toggleLaneBackground: @greyFive;
+@toggleOnFocusLaneColor: @yellow;
+@toggleLaneHeight: 1.5rem;
+@toggleLaneWidth: 2.8rem;
+@toggleHandleSize: 1.3rem;
+@toggleHandleOffset: 0.1rem;
+@toggleOffOffset: 0.2rem;
+@toggleOnOffset: (@toggleLaneWidth - @toggleHandleSize) - 0.15rem;
