@@ -23,7 +23,7 @@ Component.defaultProps = {
   error: false,
   isValid: false,
   label: '',
-  onChange: () => {},
+  onChange: Function.prototype,
 };
 
 Component.propTypes = {

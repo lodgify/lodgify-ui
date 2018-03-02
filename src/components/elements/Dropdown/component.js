@@ -58,7 +58,7 @@ Component.displayName = 'Dropdown';
 
 Component.defaultProps = {
   label: '',
-  onChange: () => {},
+  onChange: Function.prototype,
 };
 
 Component.propTypes = {

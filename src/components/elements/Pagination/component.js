@@ -24,7 +24,7 @@ export const Component = ({ onPageChange, startingPage, totalPages }) => (
 Component.displayName = 'Pagination';
 
 Component.defaultProps = {
-  onPageChange: () => {},
+  onPageChange: Function.prototype,
   startingPage: 1,
 };
 
