@@ -8,7 +8,7 @@ const props = {
   error: false,
   isValid: false,
   label: '',
-  onChange: () => {},
+  onChange: Function.prototype,
 };
 
 describe('<InputController />', () => {
