@@ -1,18 +1,18 @@
 const path = require('path');
 
-const ROOT_DIR = path.join(__dirname, '..');
+const INCLUDE_PATHS = [__dirname, path.join(__dirname, '..', 'src')];
 
 module.exports = {
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: ROOT_DIR,
+        include: INCLUDE_PATHS,
         loader: 'babel-loader',
       },
       {
         test: /\.css$/,
-        include: ROOT_DIR,
+        include: INCLUDE_PATHS,
         use: ['style-loader', 'css-loader'],
       },
       {
