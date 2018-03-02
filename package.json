@@ -4,24 +4,26 @@
   "description": "React components for building amazing websites with Lodgify",
   "main": "dist/index.js",
   "config": {
-    "styleguide_config_path": "./styleguide/config",
-    "styleguide_dist_path": "./styleguide/dist"
+    "jest_config": "tools/jest/jest.config.js",
+    "semantic_gulpfile": "src/semantic/gulpfile.js",
+    "styleguide_config": "./styleguide/config",
+    "styleguide_dist": "./styleguide/dist"
   },
   "scripts": {
-    "copy:gh-pages": "cp -R $npm_package_config_styleguide_dist_path/* ./gh-pages",
-    "semantic:watch": "gulp watch --gulpfile lodgify-ui/src/semantic/gulpfile.js",
-    "semantic:build": "gulp build --gulpfile lodgify-ui/src/semantic/gulpfile.js",
+    "copy:gh-pages": "cp -R $npm_package_config_styleguide_dist/* ./gh-pages",
+    "semantic:watch": "gulp watch --gulpfile $npm_package_config_semantic_gulpfile",
+    "semantic:build": "gulp build --gulpfile $npm_package_config_semantic_gulpfile",
     "lint": "eslint . --ext .js",
     "lint:debug": "npm run lint -- --debug",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "patch-package",
-    "styleguide:build": "styleguidist build --config $npm_package_config_styleguide_config_path",
-    "styleguide:dev-server": "styleguidist server --config $npm_package_config_styleguide_config_path",
+    "styleguide:build": "styleguidist build --config $npm_package_config_styleguide_config",
+    "styleguide:dev-server": "styleguidist server --config $npm_package_config_styleguide_config",
     "docs:pr": "npm run lint && npm run test && npm run semantic:build && npm run styleguide:build",
     "docs:build": "npm run docs:pr && npm run copy:gh-pages",
-    "test": "jest --coverage --config tools/jest/jest.config.js",
+    "test": "jest --coverage --config $npm_package_config_jest_config",
     "test:no-cache": "npm run test -- --no-cache",
-    "test:watch": "jest --config tools/jest/jest.config.js --watch"
+    "test:watch": "jest --config $npm_package_config_jest_config --watch"
   },
   "repository": {
     "type": "git",

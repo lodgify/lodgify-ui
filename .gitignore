@@ -62,3 +62,7 @@ tools/jest/tmp/
 
 # lock files
 package-lock.json
+
+# dist files
+**/dist
+gh-pages/
