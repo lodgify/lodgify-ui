@@ -9,8 +9,8 @@ import { Dropdown } from 'semantic-ui-react';
 export const Component = ({
   children,
   isMenuItem,
-  isTriggerUnderlined,
   isTriggeredOnHover,
+  isTriggerUnderlined,
   items,
 }) => (
   <Dropdown
@@ -27,8 +27,8 @@ Component.displayName = 'Submenu';
 
 Component.defaultProps = {
   isMenuItem: false,
-  isTriggerUnderlined: false,
   isTriggeredOnHover: false,
+  isTriggerUnderlined: false,
 };
 
 Component.propTypes = {
