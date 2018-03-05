@@ -15,7 +15,7 @@
 
 @menuBackground                     : @selectionFocusBackground;
 @menuBorder                         : none;
-@menuBoxShadow                      : 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+@menuBoxShadow                      : @subMenuShadow;
 @menuMarginTop                      : @8px;
 @pointingMenuMinWidth               : 100%;
 @pointingMenuBorderRadius           : @3px;

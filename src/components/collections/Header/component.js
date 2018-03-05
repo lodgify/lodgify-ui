@@ -18,7 +18,7 @@ export const Component = ({
   navigationItems,
   primaryCTA,
 }) => (
-  <Menu borderless>
+  <Menu activeIndex={1} borderless>
     <Menu.Item link href="/">
       {logoSrc ? (
         <Image alt={logoText} src={logoSrc} />

@@ -1,3 +1,26 @@
+@background                         : transparent;
+@hoverItemBackground                : @background;
+@activeItemBackground               : @background;
+@activeHoverItemBackground          : @background;
+
+@menuHorizontalPadding              : 92px;
+
+@itemTextColor                      : @pureWhite;
+@hoverItemTextColor                 : @itemTextColor;
+@activeItemTextColor                : @itemTextColor;
+@activeHoverItemColor               : @itemTextColor;
+
+@itemVerticalPadding                : @35px;
+
+@dropdownHoveredItemBackground      : @primaryColor;
+@dropdownSelectedItemBackground     : @background;
+@dropdownActiveItemBackground       : @background;
+
+@dropdownMenuBorderRadius           : @3px;
+@dropdownMenuBoxShadow              : @subMenuShadow;
+
+@pointingDropdownMenuDistance       : -(@10px);
+
 @paginationButtonDiameter           : @35px;
 @paginationButtonHorizontalMargin   : @15px;
 @paginationPrevButtonIconMarginLeft : -(@3px) !important;
