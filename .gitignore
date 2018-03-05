@@ -57,3 +57,12 @@ typings/
 # dotenv environment variables file
 .env
 
+# jest tmp directory
+tools/jest/tmp/
+
+# lock files
+package-lock.json
+
+# dist files
+dist/
+gh-pages/

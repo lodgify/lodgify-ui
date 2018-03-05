@@ -1,0 +1,16 @@
+// state: default
+
+@background: @primaryColor;
+@borderRadius: 20px;
+@fontFamily: 'Roboto';
+@fontWeight: 400;
+@horizontalPadding: 40px;
+@hoverBackgroundColor: @darkPrimaryColor;
+@textColor: @black;
+@verticalPadding: 12px;
+
+// state: disabled
+
+@disabledBackgroundColor: @greyFive;
+@disabledFontColor: @pureWhite;
+@disabledOpacity: 1;

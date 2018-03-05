@@ -1,0 +1,92 @@
+// input
+
+.ui.input {
+  max-width: @inputMaxWidth;
+  width: @inputWidth;
+}
+
+.ui.input input,
+.ui.input textarea {
+  margin-top: @inputMarginTop;
+  width: @inputWidth;
+}
+
+.ui.input textarea {
+  background: @background;
+  border: @border;
+  font-family: @inputFont;
+  outline: none;
+  padding: @padding;
+}
+
+.ui.input textarea:focus  {
+  border-color: @focusBorderColor;
+  background: @focusBackground;
+  color: @focusColor;
+}
+
+.ui.input:hover:not(.error):not(.valid):not(.dirty) input:not(:focus),
+.ui.input:hover:not(.error):not(.valid):not(.dirty) textarea:not(:focus) {
+  background: @focusedInputBackground;
+  border-color: @hoveredInputBorderColor;
+}
+
+.ui.input.dirty:not(.error):not(.valid) input,
+.ui.input.dirty:not(.error):not(.valid) textarea {
+  background: @focusedInputBackground;
+  border-color: @focusedFormBorderColor;
+}
+
+// error
+
+.ui.input.error textarea {
+  background: @errorBackground;
+  border-color: @errorBorder;
+}
+
+.ui.input.error .ui.pointing.below.label {
+  font-weight: @errorMessageFontWeight;
+  padding: @errorMessagePadding;
+  position: absolute;
+  right: @errorMessageRightPosition;
+  top: (@inputMarginTop + @errorMessageTopPosition);
+}
+
+.ui.input.error .ui.pointing.below.label:before {
+  left: unset;
+  right: 6px;
+}
+
+// valid
+
+.ui.input.valid input,
+.ui.input.valid textarea {
+  background: @focusedInputBackground;
+  border-color: @validBorderColor;
+}
+
+.ui.input i.big.green.checkmark.icon {
+  position: absolute;
+  right: @inputHorizontalPadding;
+  top: (@inputMarginTop + @validIconPositionTop);
+}
+
+
+// label
+
+.ui.input label {
+  color: @labelColor;
+  cursor: text;
+  left: @inputHorizontalPadding;
+  position: absolute;
+  top: (@inputMarginTop + @inputVerticalPadding);
+  transition: transform @defaultDuration, font-size @defaultDuration;
+}
+
+.ui.input input:focus + label,
+.ui.input textarea:focus + label,
+.ui.input.dirty > label {
+  color: @labelFocusColor;
+  font-size: @labelFocusFontSize;
+  transform: translate(-(@inputMarginTop), -(@labelFocusXTranslate));
+}

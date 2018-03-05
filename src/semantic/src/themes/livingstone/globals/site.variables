@@ -1,0 +1,81 @@
+// Global variables
+
+// Fonts
+
+@fontName         : 'Roboto';
+
+@textColor        : @black;
+@hoveredTextColor : @black;
+
+// Heading
+
+@headerFont       : @fontName;
+@headerLineHeight : 36px;
+
+@h1 : 48px;
+@h2 : 42px;
+@h3 : 34px;
+@h4 : 28px;
+@h5 : 22px;
+
+// Paragraph
+
+@paragraphColor           : @greySeven;
+@paragraphLineHeight      : 26px;
+
+@tinyParagraphFontSize    : 12px;
+@tinyParagraphFontWeight  : bold;
+@tinyParagraphLineHeight  : 24px;
+
+// Colors
+
+// base
+@green            : #3adf35;
+@grey             : #9e9fa0;
+@red              : #d0021b;
+@yellow           : #fac600;
+
+// dark
+@darkYellow       : #e5b505;
+
+// neutrals
+@black            : #333;
+@greyEight        : #444;
+@greySeven        : #555;
+@greySix          : #aaa;
+@greyFive         : #ccc;
+@greyFour         : #d8d8d8;
+@greyThree        : #e2e2e2;
+@greyTwo          : #fdfdfd;
+@greyOne          : #f7f7f7;
+@offWhite         : #fdfdfd;
+@pureWhite        : #fff;
+
+@primaryColor     : @yellow;
+@darkPrimaryColor : @darkYellow;
+
+// States
+
+@disabledBackgroundColor: @greyFive;
+
+// Input
+
+@inputBackground            : @greyOne;
+@inputVerticalPadding       : @12px;
+@inputHorizontalPadding     : @15px;
+@inputPlaceholderColor      : @greySix;
+
+@focusedFormBorderColor : @black;
+@focusedInputBackground : @offWhite;
+
+// Borders
+
+@absoluteBorderRadius       : 0;
+@inputHoverBorderColor      : @greyThree;
+@borderColor                : transparent;
+@negativeBorderColor        : @red;
+@solidInternalBorderColor   : @greyFive;
+
+// Shadow
+
+@floatingShadow   : 0 2px 7px 0 rgba(0, 0, 0, 0.27);

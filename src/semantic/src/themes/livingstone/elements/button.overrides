@@ -1,0 +1,4 @@
+.ui.disabled.button {
+  background-color: @disabledBackgroundColor;
+  color: @disabledFontColor;
+}

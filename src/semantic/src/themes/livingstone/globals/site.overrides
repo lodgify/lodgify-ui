@@ -1,0 +1,9 @@
+p {
+  color: @paragraphColor;
+}
+
+p.tiny {
+  font-size: @tinyParagraphFontSize;
+  font-weight: @tinyParagraphFontWeight;
+  line-height: @tinyParagraphLineHeight;
+}
