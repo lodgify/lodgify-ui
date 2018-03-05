@@ -52,7 +52,6 @@ export class Component extends PureComponent {
         })}
       >
         {hasErrorMessage(error) && <ErrorMessage errorMessage={error} />}
-        {isValid && <Icon color="green" name="checkmark" size="big" />}
         {React.createElement(type, {
           onChange: this.handleChange,
           ref: input => (this.htmlInput = input),

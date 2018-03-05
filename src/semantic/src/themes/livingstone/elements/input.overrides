@@ -65,11 +65,14 @@
   border-color: @validBorderColor;
 }
 
-.ui.input i.big.green.checkmark.icon {
+.ui.input.valid:before {
+  content: '\2713';
+  color: green;
+  font-size: 2rem;
   position: absolute;
-  right: @inputHorizontalPadding;
+  right: 5px;
   top: (@inputMarginTop + @validIconPositionTop);
-}
+ }
 
 
 // label
