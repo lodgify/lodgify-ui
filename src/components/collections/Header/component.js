@@ -13,6 +13,7 @@ import { Button } from '../../elements/Button';
  * @return {Object}
  */
 export const Component = ({
+  activeNavigationItemIndex,
   logoSrc,
   logoText,
   navigationItems,
@@ -28,19 +29,29 @@ export const Component = ({
     </Menu.Item>
     <Menu.Menu position="right">
       {navigationItems.map(
-        ({ subItems, text, href }) =>
+        ({ subItems, text, href }, index) =>
           size(subItems) ? (
-            <Submenu isMenuItem items={subItems}>
+            <Submenu
+              isActive={index === activeNavigationItemIndex}
+              isMenuItem
+              isSimple
+              isTriggeredOnHover
+              items={subItems}
+            >
               {text}
             </Submenu>
           ) : (
-            <Menu.Item link href={href}>
+            <Menu.Item
+              active={index === activeNavigationItemIndex}
+              link
+              href={href}
+            >
               {text}
             </Menu.Item>
           )
       )}
       {primaryCTA && (
-        <Menu.Item link href={primaryCTA.href}>
+        <Menu.Item className="no-underline" link href={primaryCTA.href}>
           <Button>{primaryCTA.text}</Button>
         </Menu.Item>
       )}
@@ -51,11 +62,14 @@ export const Component = ({
 Component.displayName = 'Header';
 
 Component.defaultProps = {
+  activeNavigationItemIndex: null,
   logoSrc: null,
   primaryCTA: null,
 };
 
 Component.propTypes = {
+  /** The index of the active navigation item. */
+  activeNavigationItemIndex: PropTypes.number,
   /** The src url for the logo. */
   logoSrc: PropTypes.string,
   /** The text for the logo. */

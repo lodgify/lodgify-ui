@@ -1,9 +1,32 @@
+.ui.menu .item {
+  margin: 0 @itemHorizontalMargin;
+}
+
 .ui.menu .item:first-child {
-  padding-left: @menuHorizontalPadding;
+  margin-left: @menuHorizontalMargin;
 }
 
 .ui.menu .item:last-child {
-  padding-right: @menuHorizontalPadding;
+  margin-right: @menuHorizontalMargin;
+}
+
+.ui.menu .right.menu > .item:not(.no-underline):after {
+  border-bottom: @activeItemUnderlineBorder;
+  bottom: @activeItemUnderlineBottomPosition;
+  content: '';
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: @activeItemUnderlineTransition;
+  width: 100%;
+}
+
+.ui.menu .right.menu > .active.item:after,
+.ui.menu .right.menu > .item:hover:after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 .ui.menu .dropdown.item .menu {
@@ -14,6 +37,8 @@
 .ui.menu .ui.dropdown .menu > .active.item:hover {
   background: @dropdownHoveredItemBackground !important;
 }
+
+// Pagination
 
 .ui.pagination.menu .label {
   background-color: @paginationLabelBackground;

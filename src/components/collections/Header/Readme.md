@@ -30,7 +30,9 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 <div style={{ backgroundColor: 'grey'}}>
   <Header
     logoSrc={logoSrc}
-    logoText={'Livingstone lodge'} navigationItems={navigationItems}
+    logoText={'Livingstone lodge'}
+    navigationItems={navigationItems}
+    activeNavigationItemIndex={0}
     primaryCTA={{ href: '/book', text: 'Book now'}}
   />
 </div>
