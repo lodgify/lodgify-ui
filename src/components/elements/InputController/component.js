@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { Input, Icon } from 'semantic-ui-react';
+import { Input } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
 import { ErrorMessage } from '../ErrorMessage';
@@ -52,7 +52,6 @@ export class Component extends PureComponent {
         })}
       >
         {hasErrorMessage(error) && <ErrorMessage errorMessage={error} />}
-        {isValid && <Icon color="green" name="checkmark" size="big" />}
         {React.createElement(type, {
           onChange: this.handleChange,
           ref: input => (this.htmlInput = input),

@@ -27,6 +27,11 @@
   margin-left: @paginationButtonHorizontalMargin;
 }
 
+.ui.pagination.menu button.button i.chevron {
+  position: relative;
+  top: -2px;
+}
+
 .ui.pagination.menu button.button i.left.chevron {
   margin-left: @paginationPrevButtonIconMarginLeft;
 }
