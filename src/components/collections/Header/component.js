@@ -37,12 +37,14 @@ export const Component = ({
               isTriggerUnderlined={index === activeNavigationItemIndex}
               isTriggeredOnHover
               items={subItems}
+              key={text}
             >
               {text}
             </Submenu>
           ) : (
             <Menu.Item
               active={index === activeNavigationItemIndex}
+              key={text}
               link
               href={href}
             >
