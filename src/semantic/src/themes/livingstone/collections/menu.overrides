@@ -24,6 +24,7 @@
 }
 
 .ui.menu .right.menu > .active.item:after,
+.ui.menu .right.menu > .underlined.item:after ,
 .ui.menu .right.menu > .item:hover:after {
   opacity: 1;
   transform: scaleX(1);

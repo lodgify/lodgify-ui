@@ -19,7 +19,7 @@ export const Component = ({
   navigationItems,
   primaryCTA,
 }) => (
-  <Menu activeIndex={1} borderless>
+  <Menu borderless>
     <Menu.Item link href="/">
       {logoSrc ? (
         <Image alt={logoText} src={logoSrc} />
@@ -32,9 +32,9 @@ export const Component = ({
         ({ subItems, text, href }, index) =>
           size(subItems) ? (
             <Submenu
-              isActive={index === activeNavigationItemIndex}
               isMenuItem
               isSimple
+              isTriggerUnderlined={index === activeNavigationItemIndex}
               isTriggeredOnHover
               items={subItems}
             >
@@ -93,7 +93,7 @@ Component.propTypes = {
   /** An optional primary call to action to display as a [`<Button />`](#button). */
   primaryCTA: PropTypes.shape({
     /** The href url for the call to action. */
-    href: PropTypes.string,
+    href: PropTypes.string.isRequired,
     /** The  visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),

@@ -18,7 +18,7 @@
 // Active item underline
 @activeItemUnderlineBorder          : @2px solid @primaryColor;
 @activeItemUnderlineBottomPosition  : 40%;
-@activeItemUnderlineTransition      : @defaultTransition;
+@activeItemUnderlineTransition      : @defaultDuration @defaultEasing;
 
 @dropdownHoveredItemBackground      : @primaryColor;
 @dropdownSelectedItemBackground     : @background;

@@ -9,10 +9,12 @@ import { Dropdown } from 'semantic-ui-react';
 export const Component = ({
   children,
   isMenuItem,
+  isTriggerUnderlined,
   isTriggeredOnHover,
   items,
 }) => (
   <Dropdown
+    className={isTriggerUnderlined ? 'underlined' : ''}
     item={isMenuItem}
     options={items}
     pointing="top"
@@ -25,6 +27,7 @@ Component.displayName = 'Submenu';
 
 Component.defaultProps = {
   isMenuItem: false,
+  isTriggerUnderlined: false,
   isTriggeredOnHover: false,
 };
 
@@ -33,6 +36,8 @@ Component.propTypes = {
   children: PropTypes.string.isRequired,
   /** Is it an item in a Semantic UI Menu.  */
   isMenuItem: PropTypes.bool,
+  /** Is the trigger underlined for emphasis.  */
+  isTriggerUnderlined: PropTypes.bool,
   /** Is it triggered on hover rather than click.  */
   isTriggeredOnHover: PropTypes.bool,
   /** The items the user can see in the submenu. */

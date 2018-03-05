@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { Component as Button } from './component';
+import { Component as Header } from './component';
 
-describe('<Button />', () => {
-  it('should render a single Semantic UI `Button` component', () => {
+describe('<Header />', () => {
+  it('should render a single Semantic UI `Menu` component', () => {
     const textInput = shallow(<Button>Press me</Button>);
     const actual = textInput.find('Button').length;
     expect(actual).toBe(1);
