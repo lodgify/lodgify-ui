@@ -39,6 +39,10 @@
   background: @dropdownHoveredItemBackground !important;
 }
 
+.ui.menu .item h5.ui.header {
+  color: @offWhite;
+}
+
 // Pagination
 
 .ui.pagination.menu .label {
