@@ -3,7 +3,6 @@ const importOrder = require('./rule-options/import.order');
 const prettierPrettier = require('./rule-options/prettier.prettier');
 const reactBooleanPropNaming = require('./rule-options/react.boolean-prop-naming');
 const requireJsdoc = require('./rule-options/requireJsdoc');
-const validJsdoc = require('./rule-options/validJsdoc');
 
 module.exports = {
   extends: 'prettier',
@@ -49,6 +48,5 @@ module.exports = {
     'react/react-in-jsx-scope': 2,
     'react/require-default-props': 2,
     'require-jsdoc': [2, requireJsdoc],
-    'valid-jsdoc': [2, validJsdoc],
   },
 };
