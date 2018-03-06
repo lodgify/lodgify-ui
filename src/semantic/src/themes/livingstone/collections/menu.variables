@@ -1,3 +1,34 @@
+@background                         : transparent;
+@hoverItemBackground                : @background;
+@activeItemBackground               : @background;
+@activeHoverItemBackground          : @background;
+
+@menuHorizontalMargin               : 92px;
+
+@itemTextColor                      : @pureWhite;
+@hoverItemTextColor                 : @itemTextColor;
+@activeItemTextColor                : @itemTextColor;
+@activeHoverItemColor               : @itemTextColor;
+
+// Need to use margin rather than padding to implement 'active' state bottom border
+@itemHorizontalPadding              : 0;
+@itemHorizontalMargin               : @15px;
+@itemVerticalPadding                : @35px;
+
+// Active item underline
+@activeItemUnderlineBorder          : @2px solid @primaryColor;
+@activeItemUnderlineBottomPosition  : 40%;
+@activeItemUnderlineTransition      : @defaultDuration @defaultEasing;
+
+@dropdownHoveredItemBackground      : @primaryColor;
+@dropdownSelectedItemBackground     : @background;
+@dropdownActiveItemBackground       : @background;
+
+@dropdownMenuBorderRadius           : @3px;
+@dropdownMenuBoxShadow              : @subMenuShadow;
+
+@pointingDropdownMenuDistance       : -(@10px);
+
 @paginationButtonDiameter           : @35px;
 @paginationButtonHorizontalMargin   : @15px;
 @paginationPrevButtonIconMarginLeft : -(@3px) !important;

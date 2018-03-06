@@ -1,3 +1,11 @@
+.ui.dropdown .menu .item:first-child {
+  border-radius: @borderRadius @borderRadius 0 0;
+}
+
+.ui.dropdown .menu .item:last-child {
+  border-radius: 0 0 @borderRadius @borderRadius;
+}
+
 .ui.selection.dropdown:hover,
 .ui.selection.dropdown:focus,
 .ui.selection.dropdown.dirty {
