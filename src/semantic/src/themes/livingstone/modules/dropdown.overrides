@@ -63,8 +63,30 @@
   content: '\f0d7';
 }
 
-.ui.dropdown.hasImages > .dropdown.icon {
-  padding-top: @dropdownWithImagesCaretPaddingTop;
+.dropdown-container{
+  position: relative;
+  
+  .left-dropdown-icon{
+    position: absolute;
+    left: 5px;
+    top: @selectionVerticalPadding;
+    z-index: @selectionZIndex + 1;
+    color: @itemColor;
+  }
+  
+  &.has-left-icon .ui.dropdown {
+    padding-left: @selectionIconDistance;
+  }
+
+  &.has-images{
+    .left-dropdown-icon{
+      top: @dropdownWithImagesCaretPaddingTop;    
+    }
+
+    .ui.dropdown > .dropdown.icon {
+      padding-top: @dropdownWithImagesCaretPaddingTop;
+    }
+  }
 }
 
 // Submenu

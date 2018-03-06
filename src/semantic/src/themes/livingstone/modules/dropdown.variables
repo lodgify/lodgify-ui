@@ -3,6 +3,7 @@
 // .selection.dropdown
 
 @selectionHoverBorderColor          : @inputHoverBorderColor;
+@selectionBorderRadius              : 0;
 @selectionFocusBackground           : @focusedInputBackground;
 
 @selectionActiveHoverBorderColor    : @focusedFormBorderColor;
@@ -47,3 +48,5 @@
 // .icon
 
 @dropdownWithImagesCaretPaddingTop  : @20px;
+@dropdownWithIconPaddingLeft  : @selectionIconDistance;
+

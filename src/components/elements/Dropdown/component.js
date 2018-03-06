@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { Dropdown } from 'semantic-ui-react';
+import { Dropdown, Icon } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
 import { adaptOptions } from './utils/adaptOptions';
@@ -36,21 +36,29 @@ export class Component extends PureComponent {
 
   render() {
     const { value } = this.state;
-    const { label, options } = this.props;
+    const { label, options, icon } = this.props;
     const optionsWithImages = adaptOptions(options);
     const defaultValue = getDefaultValue(optionsWithImages);
     return (
-      <Dropdown
-        className={getClassNames({
-          dirty: value,
-          hasImages: optionsWithImages,
+      <div
+        className={getClassNames('dropdown-container', {
+          'has-images': optionsWithImages,
+          'has-left-icon': icon,
         })}
-        defaultValue={defaultValue}
-        onChange={this.handleChange}
-        options={optionsWithImages || options}
-        placeholder={label}
-        selection
-      />
+      >
+        <Dropdown
+          className={getClassNames({
+            dirty: value,
+          })}
+          className={value ? 'dirty' : ''}
+          defaultValue={defaultValue}
+          onChange={this.handleChange}
+          options={optionsWithImages || options}
+          placeholder={label}
+          selection
+        />
+        {icon && <Icon name={icon} className="left-dropdown-icon" />}
+      </div>
     );
   }
 }
@@ -61,10 +69,13 @@ Component.defaultProps = {
   label: '',
   name: '',
   onChange: Function.prototype,
+  icon: null,
 };
 
 Component.propTypes = {
-  /** The visible label for the dropdown. */
+  /** Icon for the dropdown */
+  icon: PropTypes.string,
+  /** The label for the dropdown. */
   label: PropTypes.string,
   /** The name for the dropdown. */
   name: PropTypes.string,

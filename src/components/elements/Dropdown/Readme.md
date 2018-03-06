@@ -13,7 +13,20 @@ const { options } = require('./mock-data/options');
 />
 ```
 
-### Content
+### Variations
+
+#### Icon
+An icon can be displayed with the dropdown. [See all available icons](https://react.semantic-ui.com/elements/icon#icon-set)
+
+```jsx
+const { options } = require('./mock-data/options');
+<Dropdown
+  label="Location"
+  options={options}
+  icon="world"
+/>
+```
+
 
 #### Image
 Options can contain images
