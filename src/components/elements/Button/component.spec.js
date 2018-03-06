@@ -16,9 +16,18 @@ describe('<Button />', () => {
     expect(actual).toEqual(
       expect.objectContaining({
         disabled: false,
+        floated: 'left',
         loading: false,
       })
     );
+  });
+
+  describe('if `props.isPositionedRight` is true', () => {
+    it('should pass the `Button` component `floated="right"`', () => {
+      const textInput = shallow(<Button isPositionedRight>Press me</Button>);
+      const actual = textInput.find('Button').prop('floated');
+      expect(actual).toBe('right');
+    });
   });
 
   it('should render the `children`', () => {
