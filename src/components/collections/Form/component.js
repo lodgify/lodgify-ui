@@ -70,6 +70,7 @@ Component.displayName = 'Form';
 Component.defaultProps = {
   headingText: null,
   onSubmit: Function.prototype,
+  secondaryCTA: null,
 };
 
 Component.propTypes = {
@@ -83,4 +84,11 @@ Component.propTypes = {
   onSubmit: PropTypes.func,
   /** The text to display on the primary call to action. */
   primaryCTAText: PropTypes.string.isRequired,
+  /** An optional secondary call to action. */
+  secondaryCTA: PropTypes.shape({
+    /** The function to call when the secondary call to action is clicked. */
+    onClick: PropTypes.func.isRequired,
+    /** The visible text for the secondary call to action */
+    text: PropTypes.string.isRequired,
+  }),
 };
