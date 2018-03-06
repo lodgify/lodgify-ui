@@ -7,12 +7,13 @@ import { InputController } from '../InputController';
  * A text input can get short text data from a user.
  * @return {Object}
  */
-export const Component = ({ error, isValid, label, onChange }) => (
+export const Component = ({ error, isValid, label, name, onChange }) => (
   <InputController
     type="input"
     error={error}
     isValid={isValid}
     label={label}
+    name={name}
     onChange={onChange}
   />
 );

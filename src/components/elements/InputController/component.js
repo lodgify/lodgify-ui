@@ -23,7 +23,8 @@ export class Component extends PureComponent {
    */
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
-    prevValue !== value && this.props.onChange(value);
+    const { name, onChange } = this.props;
+    prevValue !== value && onChange(name, value);
   }
 
   // eslint-disable-next-line valid-jsdoc
