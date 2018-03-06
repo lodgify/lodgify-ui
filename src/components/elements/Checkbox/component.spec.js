@@ -10,7 +10,7 @@ describe('<Checkbox />', () => {
     expect(displayName).toBe('Checkbox');
   });
 
-  it('should a single Semantic UI Checkbox component', () => {
+  it('should render a single Semantic UI Checkbox component', () => {
     const component = shallow(<Checkbox />);
     const checkbox = component.find(SemanticCheckbox);
     expect(checkbox).toHaveLength(1);
@@ -32,5 +32,17 @@ describe('<Checkbox />', () => {
     expect(checkbox.prop('isChecked')).not.toBeDefined();
     expect(checkbox.prop('isDisabled')).not.toBeDefined();
     expect(checkbox.prop('isCheckedByDefault')).not.toBeDefined();
+  });
+
+  describe('Interaction: onChange', () => {
+    it('should call `props.onChange` with the right arguments', () => {
+      const name = 'someName';
+      const handleChange = jest.fn();
+      const checkbox = shallow(
+        <Checkbox name={name} onChange={handleChange} />
+      );
+      checkbox.simulate('change', undefined, { checked: true });
+      expect(handleChange).toHaveBeenCalledWith(name, true);
+    });
   });
 });
