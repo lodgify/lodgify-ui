@@ -23,6 +23,7 @@ export class Component extends PureComponent {
   cloneFormGroup = formGroup =>
     React.cloneElement(formGroup, {
       children: Children.map(formGroup.props.children, this.cloneInput),
+      widths: 'equal',
     });
 
   cloneInput = input =>
@@ -36,20 +37,29 @@ export class Component extends PureComponent {
     });
 
   render = () => {
-    const { children, headingText, primaryCTAText } = this.props;
+    const { children, headingText, primaryCTAText, secondaryCTA } = this.props;
     return (
       <Card>
-        <Heading size="tiny">{headingText}</Heading>
-        <Form onSubmit={this.handleSubmit}>
-          {Children.map(
-            children,
-            child =>
-              child.type === Form.Group
-                ? this.cloneFormGroup(child)
-                : this.cloneInput(child)
-          )}
-          <Button>{primaryCTAText}</Button>
-        </Form>
+        {headingText && (
+          <Card.Content>
+            <Heading size="small">{headingText}</Heading>
+          </Card.Content>
+        )}
+        <Card.Content>
+          <Form onSubmit={this.handleSubmit}>
+            {Children.map(
+              children,
+              child =>
+                child.type === Form.Group
+                  ? this.cloneFormGroup(child)
+                  : this.cloneInput(child)
+            )}
+            {secondaryCTA && (
+              <a onClick={secondaryCTA.onClick}>{secondaryCTA.text}</a>
+            )}
+            <Button isPositionedRight>{primaryCTAText}</Button>
+          </Form>
+        </Card.Content>
       </Card>
     );
   };
@@ -59,6 +69,7 @@ Component.displayName = 'Form';
 
 Component.defaultProps = {
   headingText: null,
+  onSubmit: Function.prototype,
 };
 
 Component.propTypes = {
@@ -69,7 +80,7 @@ Component.propTypes = {
   /** The function to call when the form is submitted
    *  @param {Object} values - The values of the inputs in the form.
    */
-  onSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func,
   /** The text to display on the primary call to action. */
   primaryCTAText: PropTypes.string.isRequired,
 };

@@ -1,0 +1,13 @@
+// card
+
+@borderRadius              : @4px;
+@boxShadow                 : 0 8px 22px 0 rgba(0, 0, 0, 0.07);
+@padding                   : @50px 90px;
+@width                     : 600px;
+
+// content
+
+@contentDivider            : none;
+@contentPadding            : 0;
+
+@headerMargin              : 0 0 @45px 0;

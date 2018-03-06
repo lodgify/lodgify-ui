@@ -1,0 +1,4 @@
+.ui.form .field .ui.input,
+.ui.form .fields .field .ui.input {
+  max-width: unset;
+}

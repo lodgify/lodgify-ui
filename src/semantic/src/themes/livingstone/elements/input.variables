@@ -1,5 +1,4 @@
 // input
-@inputMarginTop: @15px;
 @inputMaxWidth: 350px;
 @inputWidth: 100%;
 
@@ -32,3 +31,4 @@
 @labelFocusColor: @black;
 @labelFocusFontSize: @10px;
 @labelFocusXTranslate: @30px;
+@labelFocusYTranslate: @15px;
