@@ -27,6 +27,11 @@
 @tinyParagraphFontWeight  : bold;
 @tinyParagraphLineHeight  : 24px;
 
+// Links
+
+@linkColor           : @primaryColor;
+@linkUnderline       : underline;
+
 // Colors
 
 // base
