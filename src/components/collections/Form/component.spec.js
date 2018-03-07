@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import { Card as SemanticCard } from 'semantic-ui-react';
 
 import { TextInput } from '../../elements/TextInput';
 import { InputGroup } from '../InputGroup';
@@ -19,7 +20,7 @@ const headingText = '👥';
 describe('<Form />', () => {
   it('should render a single Semantic UI `Card` component', () => {
     const form = shallow(<Form>{stringChildren}</Form>);
-    const actual = form.find('Card');
+    const actual = form.find(SemanticCard);
     expect(actual).toHaveLength(1);
   });
 
