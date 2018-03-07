@@ -51,7 +51,7 @@ pipeline {
           sh "git commit -m 'Publishing to branch ${BRANCH_NAME}'"
 
           sshagent(credentials: ["${CREDENTIAL_ID}"]) {
-            sh "git pull"
+            sh "git pull -s recursive -X ours"
             sh "git push origin ${BRANCH_NAME}"
           }
         }
