@@ -37,7 +37,7 @@ export class Component extends PureComponent {
     });
 
   render = () => {
-    const { children, headingText, primaryCTAText, secondaryCTA } = this.props;
+    const { children, headingText, submitButtonText, actionLink } = this.props;
     return (
       <Card>
         {headingText && (
@@ -54,10 +54,12 @@ export class Component extends PureComponent {
                   ? this.cloneFormGroup(child)
                   : this.cloneInput(child)
             )}
-            {secondaryCTA && (
-              <a onClick={secondaryCTA.onClick}>{secondaryCTA.text}</a>
+            {actionLink && (
+              <a onClick={actionLink.onClick}>{actionLink.text}</a>
             )}
-            <Button isPositionedRight>{primaryCTAText}</Button>
+            {submitButtonText && (
+              <Button isPositionedRight>{submitButtonText}</Button>
+            )}
           </Form>
         </Card.Content>
       </Card>
@@ -70,10 +72,18 @@ Component.displayName = 'Form';
 Component.defaultProps = {
   headingText: null,
   onSubmit: Function.prototype,
-  secondaryCTA: null,
+  actionLink: null,
+  submitButtonText: null,
 };
 
 Component.propTypes = {
+  /** An optional action link. */
+  actionLink: PropTypes.shape({
+    /** The function to call when the secondary call to action is clicked. */
+    onClick: PropTypes.func.isRequired,
+    /** The visible text for the secondary call to action */
+    text: PropTypes.string.isRequired,
+  }),
   /** The child components and elements. */
   children: PropTypes.node.isRequired,
   /** The text to display as a heading at the top of the form. */
@@ -82,13 +92,6 @@ Component.propTypes = {
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
-  /** The text to display on the primary call to action. */
-  primaryCTAText: PropTypes.string.isRequired,
-  /** An optional secondary call to action. */
-  secondaryCTA: PropTypes.shape({
-    /** The function to call when the secondary call to action is clicked. */
-    onClick: PropTypes.func.isRequired,
-    /** The visible text for the secondary call to action */
-    text: PropTypes.string.isRequired,
-  }),
+  /** The text to display on the submit button. */
+  submitButtonText: PropTypes.string,
 };

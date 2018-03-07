@@ -14,14 +14,11 @@ const groupChild = (
   </InputGroup>
 );
 const textInputChild = <TextInput name="someName" />;
-const primaryCTAText = 'somePrimaryCTAText';
 const headingText = '👥';
 
 describe('<Form />', () => {
   it('should render a single Semantic UI `Card` component', () => {
-    const form = shallow(
-      <Form primaryCTAText={primaryCTAText}>{stringChildren}</Form>
-    );
+    const form = shallow(<Form>{stringChildren}</Form>);
     const actual = form.find('Card');
     expect(actual).toHaveLength(1);
   });
@@ -29,9 +26,7 @@ describe('<Form />', () => {
   describe('if `props.headingText` is passed', () => {
     it('should render it in `CardContent` > `Heading`', () => {
       const form = shallow(
-        <Form headingText={headingText} primaryCTAText={primaryCTAText}>
-          {stringChildren}
-        </Form>
+        <Form headingText={headingText}>{stringChildren}</Form>
       );
       const actual = form
         .children('CardContent')
@@ -48,9 +43,7 @@ describe('<Form />', () => {
   });
 
   it('should render `CardContent` > `Form` to wrap the children', () => {
-    const form = shallow(
-      <Form primaryCTAText={primaryCTAText}>{stringChildren}</Form>
-    );
+    const form = shallow(<Form>{stringChildren}</Form>);
     const actual = form
       .children('CardContent')
       .first()
@@ -65,17 +58,13 @@ describe('<Form />', () => {
 
   describe('the Semantic UI `Form` component', () => {
     it('should render each non-group child wrapped in a `FormField`', () => {
-      const semanticForm = shallow(
-        <Form primaryCTAText={primaryCTAText}>{htmlInputChild}</Form>
-      ).find('Form');
+      const semanticForm = shallow(<Form>{htmlInputChild}</Form>).find('Form');
       const actual = semanticForm.children('FormField');
       expect(actual).toHaveLength(1);
     });
 
     it('should set `props.onChange` on each non-grouped child', () => {
-      const semanticForm = shallow(
-        <Form primaryCTAText={primaryCTAText}>{htmlInputChild}</Form>
-      ).find('Form');
+      const semanticForm = shallow(<Form>{htmlInputChild}</Form>).find('Form');
       const actual = semanticForm
         .children('FormField')
         .children('input')
@@ -84,17 +73,13 @@ describe('<Form />', () => {
     });
 
     it('should render each group child wrapped in a `FormGroup`', () => {
-      const semanticForm = shallow(
-        <Form primaryCTAText={primaryCTAText}>{groupChild}</Form>
-      ).find('Form');
+      const semanticForm = shallow(<Form>{groupChild}</Form>).find('Form');
       const actual = semanticForm.children('FormGroup');
       expect(actual).toHaveLength(1);
     });
 
     it('should pass `FormGroup` the right props', () => {
-      const semanticForm = shallow(
-        <Form primaryCTAText={primaryCTAText}>{groupChild}</Form>
-      ).find('Form');
+      const semanticForm = shallow(<Form>{groupChild}</Form>).find('Form');
       const actual = semanticForm.children('FormGroup').props();
       expect(actual).toEqual(
         expect.objectContaining({
@@ -104,9 +89,7 @@ describe('<Form />', () => {
     });
 
     it('should nest `FormGroup` > `FormField` > input', () => {
-      const semanticForm = shallow(
-        <Form primaryCTAText={primaryCTAText}>{groupChild}</Form>
-      ).find('Form');
+      const semanticForm = shallow(<Form>{groupChild}</Form>).find('Form');
       const actual = semanticForm
         .children('FormGroup')
         .children('FormField')
@@ -114,44 +97,43 @@ describe('<Form />', () => {
       expect(actual).toHaveLength(1);
     });
 
-    describe('if `props.secondaryCTA` is passed', () => {
+    describe('if `props.actionLink` is passed', () => {
       it('should render it ', () => {
-        const secondaryCTA = { text: 'someText', onClick: () => {} };
+        const actionLink = { text: 'someText', onClick: () => {} };
         const semanticForm = shallow(
-          <Form secondaryCTA={secondaryCTA} primaryCTAText={primaryCTAText}>
-            {stringChildren}
-          </Form>
+          <Form actionLink={actionLink}>{stringChildren}</Form>
         ).find('Form');
         const actual = semanticForm.children('a').props();
         expect(actual).toEqual(
           expect.objectContaining({
-            children: secondaryCTA.text,
-            onClick: secondaryCTA.onClick,
+            children: actionLink.text,
+            onClick: actionLink.onClick,
           })
         );
       });
     });
 
-    it('should render a Button with the right props', () => {
-      const semanticForm = shallow(
-        <Form primaryCTAText={primaryCTAText}>{stringChildren}</Form>
-      ).find('Form');
-      const actual = semanticForm.children('Button').props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          children: primaryCTAText,
-          isPositionedRight: true,
-        })
-      );
+    describe('if `props.submitButtonText` is passed', () => {
+      it('should render a Button with the right props', () => {
+        const submitButtonText = 'someText';
+        const semanticForm = shallow(
+          <Form submitButtonText={submitButtonText}>{stringChildren}</Form>
+        ).find('Form');
+        const actual = semanticForm.children('Button').props();
+        expect(actual).toEqual(
+          expect.objectContaining({
+            children: submitButtonText,
+            isPositionedRight: true,
+          })
+        );
+      });
     });
   });
 
   describe('Interaction: onChange an input', () => {
     it('should persist the value in component state', () => {
       const event = { target: { value: '🐸' } };
-      const form = mount(
-        <Form primaryCTAText={primaryCTAText}>{textInputChild}</Form>
-      );
+      const form = mount(<Form>{textInputChild}</Form>);
       const htmlInput = form.find('input');
       htmlInput.simulate('change', event);
       const actual = form.state('someName');
@@ -163,11 +145,7 @@ describe('<Form />', () => {
     it('should call `props.onSubmit` with the state', () => {
       const onSubmit = jest.fn();
       const event = { target: { value: '🐸' } };
-      const form = mount(
-        <Form onSubmit={onSubmit} primaryCTAText={primaryCTAText}>
-          {textInputChild}
-        </Form>
-      );
+      const form = mount(<Form onSubmit={onSubmit}>{textInputChild}</Form>);
       const htmlInput = form.find('input');
       htmlInput.simulate('change', event);
       const semanticForm = form.children().find('Form');
