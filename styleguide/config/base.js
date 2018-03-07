@@ -18,4 +18,9 @@ module.exports = {
   webpackConfig: require('../webpack.config.js'),
   styleguideDir: 'dist',
   serverPort: 6060,
+  getComponentPathLine(componentPath) {
+    const componentFolderPath = path.dirname(componentPath);
+    const componentName = path.basename(componentFolderPath);
+    return `import { ${componentName} } from 'lodgify-ui';`;
+  },
 };
