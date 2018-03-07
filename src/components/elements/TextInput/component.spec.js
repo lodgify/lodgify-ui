@@ -15,7 +15,7 @@ describe('<TextInput />', () => {
     const actual = inputController.props();
     expect(actual).toEqual(
       expect.objectContaining({
-        type: 'input',
+        tagName: 'input',
         ...TextInput.defaultProps,
       })
     );
