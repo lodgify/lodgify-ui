@@ -22,7 +22,8 @@ export class Component extends PureComponent {
    */
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
-    prevValue !== value && this.props.onChange(value);
+    const { name, onChange } = this.props;
+    prevValue !== value && onChange(name, value);
   }
 
   // eslint-disable-next-line valid-jsdoc
@@ -58,12 +59,15 @@ Component.displayName = 'Dropdown';
 
 Component.defaultProps = {
   label: '',
+  name: '',
   onChange: Function.prototype,
 };
 
 Component.propTypes = {
-  /** The label for the dropdown. */
+  /** The visible label for the dropdown. */
   label: PropTypes.string,
+  /** The name for the dropdown. */
+  name: PropTypes.string,
   /** A function called when the dropdown value changes. */
   onChange: PropTypes.func,
   /** The options which the user can select. */

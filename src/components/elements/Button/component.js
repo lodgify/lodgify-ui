@@ -6,8 +6,17 @@ import { Button } from 'semantic-ui-react';
  * A button indicates a possible user action.
  * @return {Object}
  */
-export const Component = ({ children, isDisabled, isLoading }) => (
-  <Button disabled={isDisabled} loading={isLoading}>
+export const Component = ({
+  children,
+  isDisabled,
+  isLoading,
+  isPositionedRight,
+}) => (
+  <Button
+    disabled={isDisabled}
+    floated={isPositionedRight ? 'right' : 'left'}
+    loading={isLoading}
+  >
     {children}
   </Button>
 );
@@ -16,6 +25,7 @@ Component.displayName = 'Button';
 
 Component.defaultProps = {
   isDisabled: false,
+  isPositionedRight: false,
   isLoading: false,
 };
 
@@ -26,4 +36,6 @@ Component.propTypes = {
   isDisabled: PropTypes.bool,
   /** Is the button in loading state. */
   isLoading: PropTypes.bool,
+  /** Is the button positioned on the right hand side of its container. */
+  isPositionedRight: PropTypes.bool,
 };

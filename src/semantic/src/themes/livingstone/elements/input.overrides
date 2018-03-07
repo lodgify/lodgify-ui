@@ -5,18 +5,13 @@
   width: @inputWidth;
 }
 
-.ui.input input,
-.ui.input textarea {
-  margin-top: @inputMarginTop;
-  width: @inputWidth;
-}
-
 .ui.input textarea {
   background: @background;
   border: @border;
   font-family: @inputFont;
   outline: none;
   padding: @padding;
+  width: @inputWidth;
 }
 
 .ui.input textarea:focus  {
@@ -49,7 +44,7 @@
   padding: @errorMessagePadding;
   position: absolute;
   right: @errorMessageRightPosition;
-  top: (@inputMarginTop + @errorMessageTopPosition);
+  top: @errorMessageTopPosition;
 }
 
 .ui.input.error .ui.pointing.below.label:before {
@@ -68,7 +63,7 @@
 .ui.input i.big.green.checkmark.icon {
   position: absolute;
   right: @inputHorizontalPadding;
-  top: (@inputMarginTop + @validIconPositionTop);
+  top: @validIconPositionTop;
 }
 
 
@@ -79,7 +74,7 @@
   cursor: text;
   left: @inputHorizontalPadding;
   position: absolute;
-  top: (@inputMarginTop + @inputVerticalPadding);
+  top: @inputVerticalPadding;
   transition: transform @defaultDuration, font-size @defaultDuration;
 }
 
@@ -88,5 +83,5 @@
 .ui.input.dirty > label {
   color: @labelFocusColor;
   font-size: @labelFocusFontSize;
-  transform: translate(-(@inputMarginTop), -(@labelFocusXTranslate));
+  transform: translate(-(@labelFocusYTranslate), -(@labelFocusXTranslate));
 }

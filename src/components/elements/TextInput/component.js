@@ -7,12 +7,13 @@ import { InputController } from '../InputController';
  * A text input can get short text data from a user.
  * @return {Object}
  */
-export const Component = ({ error, isValid, label, onChange }) => (
+export const Component = ({ error, isValid, label, name, onChange }) => (
   <InputController
     type="input"
     error={error}
     isValid={isValid}
     label={label}
+    name={name}
     onChange={onChange}
   />
 );
@@ -23,6 +24,7 @@ Component.defaultProps = {
   error: false,
   isValid: false,
   label: '',
+  name: '',
   onChange: Function.prototype,
 };
 
@@ -31,8 +33,14 @@ Component.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   /** Is the text input in a valid state. */
   isValid: PropTypes.bool,
-  /** The label for the text input. */
+  /** The visible label for the text input. */
   label: PropTypes.string,
-  /** A function called when the text input value changes. */
+  /** The name for the text input. */
+  name: PropTypes.string,
+  /**
+   * A function called when the text input value changes
+   * @param {String} name
+   * @param {String} value
+   */
   onChange: PropTypes.func,
 };

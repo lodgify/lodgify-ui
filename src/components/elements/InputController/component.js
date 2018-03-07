@@ -23,7 +23,8 @@ export class Component extends PureComponent {
    */
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
-    prevValue !== value && this.props.onChange(value);
+    const { name, onChange } = this.props;
+    prevValue !== value && onChange(name, value);
   }
 
   // eslint-disable-next-line valid-jsdoc
@@ -71,9 +72,15 @@ Component.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   /** Is input in a valid state. */
   isValid: PropTypes.bool.isRequired,
-  /** The label for the input. */
+  /** The visible label for the input. */
   label: PropTypes.string.isRequired,
-  /** A function called when the input value changes. */
+  /** The name for the input. */
+  name: PropTypes.string.isRequired,
+  /**
+   * A function called when the input value changes
+   * @param {String} name
+   * @param {String} value
+   */
   onChange: PropTypes.func.isRequired,
   /** The type of input to be rendered. */
   type: PropTypes.oneOf(['input', 'textarea']).isRequired,

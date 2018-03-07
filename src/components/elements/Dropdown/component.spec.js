@@ -65,13 +65,14 @@ describe('<Dropdown />', () => {
 
   describe('State change: value', () => {
     it('should call the function passed as `props.onChange`', () => {
+      const name = 'someName';
       const value = 'someValue';
       const handleChange = jest.fn();
       const dropdown = shallow(
-        <Dropdown options={options} onChange={handleChange} />
+        <Dropdown name={name} options={options} onChange={handleChange} />
       );
       dropdown.setState({ value });
-      expect(handleChange).toHaveBeenCalledWith(value);
+      expect(handleChange).toHaveBeenCalledWith(name, value);
     });
   });
 

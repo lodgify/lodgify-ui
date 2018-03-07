@@ -8,6 +8,7 @@ const props = {
   error: false,
   isValid: false,
   label: '',
+  name: 'someName',
   onChange: Function.prototype,
 };
 
@@ -207,7 +208,7 @@ describe('<InputController />', () => {
         <InputController {...props} onChange={handleChange} />
       );
       inputController.setState({ value });
-      expect(handleChange).toHaveBeenCalledWith(value);
+      expect(handleChange).toHaveBeenCalledWith(props.name, value);
     });
   });
 

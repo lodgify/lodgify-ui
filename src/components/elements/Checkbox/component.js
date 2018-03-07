@@ -23,7 +23,7 @@ export const Component = ({
     disabled={isDisabled}
     label={label}
     name={name}
-    onChange={onChange}
+    onChange={(event, { checked }) => onChange(name, checked)}
     radio={isRadioButton}
     value={value}
     toggle={isToggle}
@@ -41,7 +41,7 @@ Component.defaultProps = {
   isRadioButton: undefined,
   label: '',
   name: undefined,
-  onChange: undefined,
+  onChange: Function.prototype,
   value: undefined,
 };
 
