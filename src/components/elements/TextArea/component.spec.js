@@ -15,7 +15,7 @@ describe('<TextArea />', () => {
     const actual = inputController.props();
     expect(actual).toEqual(
       expect.objectContaining({
-        type: 'textarea',
+        tagName: 'textarea',
         ...TextArea.defaultProps,
       })
     );

@@ -7,14 +7,15 @@ import { InputController } from '../InputController';
  * A text input can get short text data from a user.
  * @return {Object}
  */
-export const Component = ({ error, isValid, label, name, onChange }) => (
+export const Component = ({ error, isValid, label, name, onChange, type }) => (
   <InputController
-    type="input"
     error={error}
     isValid={isValid}
     label={label}
     name={name}
     onChange={onChange}
+    tagName="input"
+    type={type}
   />
 );
 
@@ -26,6 +27,7 @@ Component.defaultProps = {
   label: '',
   name: '',
   onChange: Function.prototype,
+  type: 'text',
 };
 
 Component.propTypes = {
@@ -43,4 +45,6 @@ Component.propTypes = {
    * @param {String} value
    */
   onChange: PropTypes.func,
+  /** The [HTML input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types). */
+  type: PropTypes.string,
 };
