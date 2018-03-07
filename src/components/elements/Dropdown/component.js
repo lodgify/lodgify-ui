@@ -43,9 +43,9 @@ export class Component extends PureComponent {
       <div
         className={getClassNames('dropdown-container', {
           'has-images': optionsWithImages,
-          'has-left-icon': icon,
         })}
       >
+        {icon && <Icon name={icon} />}
         <Dropdown
           className={getClassNames({
             dirty: value,
@@ -57,7 +57,6 @@ export class Component extends PureComponent {
           placeholder={label}
           selection
         />
-        {icon && <Icon name={icon} className="left-dropdown-icon" />}
       </div>
     );
   }
