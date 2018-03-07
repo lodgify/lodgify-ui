@@ -1,0 +1,27 @@
+.react-phone-number-input__country.rrui__select--collapsed {
+  padding: 0 8px;
+  height: 3rem;
+  background-color: #f7f7f7;
+  margin-right: 0;
+}
+
+.rrui__input:not(.rrui__input--multiline),
+.rrui__input-label,
+.react-phone-number-input__row > input {
+  border: none;
+  background-color: #f7f7f7;
+  height: 3rem;
+}
+
+.rrui__button-reset,
+.rrui__select__button {
+  border: none;
+}
+
+.rrui__select__arrow {
+  border-width: 0.4em 0.35em 0 0.35em;
+}
+
+.react-phone-number-input .rrui__select__arrow {
+  margin-left: 0.6rem;
+}
