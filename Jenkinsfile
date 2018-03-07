@@ -40,14 +40,18 @@ pipeline {
           sh "git remote set-url origin ${PAGES_REPO}"
         }
 
+        sh "rm -rf ./${BRANCH_NAME}/*"
         sh "npm i && npm run docs:build"
 
         dir("${BRANCH_NAME}") {
-          sh "git checkout -f ${BRANCH_NAME}"
-          sh "git add -A"
-          sh "git commit -m 'Publishing to branch ${BRANCH_NAME}'"
+          sh "git branch -D ${BRANCH_NAME} || true"
+          sh "git checkout -b ${BRANCH_NAME}"
+          sh "git branch -u origin/${BRANCH_NAME}"
 
           sshagent(credentials: ["${CREDENTIAL_ID}"]) {
+            sh "git add -A"
+            sh "git commit -m 'Publishing to branch ${BRANCH_NAME}'"
+            sh "git pull"
             sh "git push origin ${BRANCH_NAME}"
           }
         }
