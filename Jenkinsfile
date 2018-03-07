@@ -43,6 +43,7 @@ pipeline {
         sh "npm i && npm run docs:build"
 
         dir("${BRANCH_NAME}") {
+          sh "git checkout -f ${BRANCH_NAME}"
           sh "git add -A"
           sh "git commit -m 'Publishing to branch ${BRANCH_NAME}'"
 
