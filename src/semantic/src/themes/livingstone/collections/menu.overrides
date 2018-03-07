@@ -43,6 +43,11 @@
   color: @offWhite;
 }
 
+.ui.pagination.menu button.button i.chevron {
+  position: relative;
+  top: -2px;
+}
+
 // Pagination
 
 .ui.pagination.menu .label {

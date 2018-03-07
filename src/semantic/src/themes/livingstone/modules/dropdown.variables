@@ -11,14 +11,15 @@
 @selectionVisibleBorderColor        : @selectionActiveHoverBorderColor;
 
 // .pointing.dropdown
-
+@pointingArrowSize                  : @relative12px;
+@pointingArrowBoxShadow             : -1px -1px 4px -1px rgba(0, 0, 0, 0.12);
 @pointingDropdownTextAlign          : center;
 
 // .menu
 
 @menuBackground                     : @selectionFocusBackground;
 @menuBorder                         : none;
-@menuBoxShadow                      : @subMenuShadow;
+@menuBoxShadow                      : 0 @menuBorderWidth 13px 0 rgba(0, 0, 0, 0.12);
 @menuMarginTop                      : @8px;
 @pointingMenuMinWidth               : 100%;
 @selectionVisibleMenuBoxShadow      : @menuBoxShadow;
@@ -27,7 +28,7 @@
 // .item
 
 @itemColor                          : @greySix;
-@selectionItemDivider               : 0.5px solid @solidInternalBorderColor;
+@selectionItemDivider               : 0.5px solid @greyFour;
 @selectionItemPadding               : @inputVerticalPadding @inputHorizontalPadding;
 
 @activeItemColor                    : @itemColor;
@@ -47,6 +48,6 @@
 
 // .icon
 
-@dropdownWithImagesCaretPaddingTop  : @20px;
+@dropdownWithImagesCaretPaddingTop  : @15px;
 @dropdownWithIconPaddingLeft  : @selectionIconDistance;
 
