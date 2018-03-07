@@ -12,7 +12,7 @@
   "scripts": {
     "copy:gh-pages": "cp -R $npm_package_config_styleguide_dist/* ./gh-pages",
     "semantic:watch": "gulp watch --gulpfile $npm_package_config_semantic_gulpfile",
-    "semantic:build": "gulp build --gulpfile $npm_package_config_semantic_gulpfile",
+    "semantic:build": "gulp build-css build-assets --gulpfile $npm_package_config_semantic_gulpfile",
     "lint": "eslint . --ext .js",
     "lint:debug": "npm run lint -- --debug",
     "lint:fix": "npm run lint -- --fix",
@@ -20,7 +20,7 @@
     "styleguide:build": "styleguidist build --config $npm_package_config_styleguide_config",
     "styleguide:dev-server": "styleguidist server --config $npm_package_config_styleguide_config",
     "docs:pr": "npm run lint && npm run test && npm run semantic:build && npm run styleguide:build",
-    "docs:build": "npm run docs:pr && npm run copy:gh-pages",
+    "docs:build": "npm run semantic:build && npm run styleguide:build && npm run copy:gh-pages",
     "test": "jest --coverage --config $npm_package_config_jest_config",
     "test:no-cache": "npm run test -- --no-cache",
     "test:watch": "jest --config $npm_package_config_jest_config --watch"
