@@ -9,7 +9,7 @@ import { InputController } from '../InputController';
  */
 export const Component = ({ error, isValid, label, name, onChange }) => (
   <InputController
-    type="textarea"
+    tagName="textarea"
     error={error}
     isValid={isValid}
     label={label}

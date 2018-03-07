@@ -43,7 +43,7 @@ export class Component extends PureComponent {
 
   render() {
     const { value } = this.state;
-    const { isValid, error, label, type } = this.props;
+    const { isValid, error, label, tagName, type } = this.props;
     return (
       <Input
         className={getClassNames({
@@ -54,10 +54,11 @@ export class Component extends PureComponent {
       >
         {hasErrorMessage(error) && <ErrorMessage errorMessage={error} />}
         {isValid && <Icon color="green" name="checkmark" size="big" />}
-        {React.createElement(type, {
+        {React.createElement(tagName, {
           onChange: this.handleChange,
           ref: input => (this.htmlInput = input),
           rows: 8,
+          type,
         })}
         {label && <label onClick={this.handleClick}>{label}</label>}
       </Input>
@@ -66,6 +67,10 @@ export class Component extends PureComponent {
 }
 
 Component.displayName = 'InputController';
+
+Component.defaultProps = {
+  type: null,
+};
 
 Component.propTypes = {
   /** Is input in an error state. */
@@ -82,6 +87,8 @@ Component.propTypes = {
    * @param {String} value
    */
   onChange: PropTypes.func.isRequired,
-  /** The type of input to be rendered. */
-  type: PropTypes.oneOf(['input', 'textarea']).isRequired,
+  /** The HTML tagName of the input to be rendered. */
+  tagName: PropTypes.oneOf(['input', 'textarea']).isRequired,
+  /** The [HTML input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types). */
+  type: PropTypes.string,
 };

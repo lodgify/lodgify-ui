@@ -28,3 +28,9 @@
 ```jsx
 <TextInput label="Search" />
 ```
+
+#### Type
+
+```jsx
+<TextInput label="Password" type="password" />
+```

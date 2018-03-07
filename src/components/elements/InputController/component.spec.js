@@ -4,7 +4,7 @@ import { shallow, mount } from 'enzyme';
 import { Component as InputController } from './component';
 
 const props = {
-  type: 'input',
+  tagName: 'input',
   error: false,
   isValid: false,
   label: '',
@@ -47,7 +47,7 @@ describe('<InputController />', () => {
 
     it('should render a single html `textarea` inside `Input`', () => {
       const semanticInput = shallow(
-        <InputController {...props} type="textarea" />
+        <InputController {...props} tagName="textarea" />
       ).find('Input');
       const actual = semanticInput.find('textarea').length;
       expect(actual).toBe(1);
