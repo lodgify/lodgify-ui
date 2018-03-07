@@ -1,5 +1,8 @@
 const path = require('path');
 
+const buildComponentsPath = (srcDirectory, category) =>
+  path.join(srcDirectory, `components/${category}/**/component.js`);
+
 module.exports = srcDirectory => [
   {
     name: 'Get started',
@@ -7,20 +10,18 @@ module.exports = srcDirectory => [
   },
   {
     name: 'Typography',
-    components: path.join(
-      srcDirectory,
-      'components/typography/**/component.js'
-    ),
+    components: buildComponentsPath(srcDirectory, 'typography'),
   },
   {
     name: 'Elements',
-    components: path.join(srcDirectory, 'components/elements/**/component.js'),
+    components: buildComponentsPath(srcDirectory, 'elements'),
   },
   {
     name: 'Collections',
-    components: path.join(
-      srcDirectory,
-      'components/collections/**/component.js'
-    ),
+    components: buildComponentsPath(srcDirectory, 'collections'),
+  },
+  {
+    name: 'Widgets',
+    components: buildComponentsPath(srcDirectory, 'widgets'),
   },
 ];
