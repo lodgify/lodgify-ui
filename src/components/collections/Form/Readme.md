@@ -3,7 +3,7 @@ const { InputGroup } = require('../InputGroup');
 
 <Form
   headingText="Welcome"
-  primaryCTAText="Sign up"
+  submitButtonText="Sign up"
 >
   <InputGroup>
     <TextInput label="First name" name="firstName" />
@@ -31,13 +31,13 @@ const { InputGroup } = require('../InputGroup');
 <div>
   <Form
     headingText="Welcome"
-    primaryCTAText="Sign up"
+    submitButtonText="Sign up"
   >
     <TextInput label="Name" name="name" />
   </Form>
   <Form
     headingText="Join us"
-    primaryCTAText="Sign up"
+    submitButtonText="Sign up"
   >
     <TextInput label="Name" name="name" />
   </Form>
@@ -53,7 +53,7 @@ const { InputGroup } = require('../InputGroup');
 
 <Form
   headingText="Welcome"
-  primaryCTAText="Sign up"
+  submitButtonText="Sign up"
 >
   <InputGroup>
     <TextInput label="Name" name="name" />
@@ -68,39 +68,37 @@ const { InputGroup } = require('../InputGroup');
 </Form>
 ```
 
-#### Primary call to action text
+#### Submit button text
 
 ```jsx
 <div>
   <Form
-    primaryCTAText="Sign up"
+    submitButtonText="Sign up"
   >
     <TextInput label="Name" name="name" />
   </Form>
   <Form
-    primaryCTAText="Come on in"
+    submitButtonText="Come on in"
   >
     <TextInput label="Name" name="name" />
   </Form>
 </div>
 ```
 
-#### Secondary call to action
-
-A form can show an optional secondary call to action.
+#### Action link
 
 ```jsx
 <div>
   <Form
-    headingText="Log in"
-    primaryCTAText="Submit"
-    secondaryCTA={{
-      onClick: () => console.log('Clicked the secondary call to action'),
-      text: 'Forgot password'
+    actionLink={{
+      onClick: () => console.log('Clicked the action link'),
+      text: 'Forgot password?'
     }}
+    headingText="Log in"
+    submitButtonText="Submit"
   >
     <TextInput label="Name" name="name" />
-    <TextInput label="Password" name="password" />
+    <TextInput label="Password" name="password" type="password"/>
   </Form>
 </div>
 ```
