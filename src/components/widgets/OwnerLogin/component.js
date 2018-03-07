@@ -4,6 +4,10 @@ import PropTypes from 'prop-types';
 import { Form } from '../../collections/Form';
 import { TextInput } from '../../elements/TextInput';
 
+/**
+ * The standard widget for owner login.
+ * @returns {Object}
+ */
 export const Component = ({ onClickForgotPassword, onSubmit }) => (
   <Form
     actionLink={{
