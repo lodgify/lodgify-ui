@@ -24,7 +24,8 @@
   margin-top: @menuMarginTop;
 }
 
-.ui.dropdown .menu > .item{
+.ui.dropdown .menu > .item {
+  text-decoration: @itemTextDecoration;
   transition: @itemTransition;
 }
 
@@ -69,7 +70,7 @@
 
 .dropdown-container{
   position: relative;
-  
+
   & > i.icon {
     position: absolute;
     left: 5px;
