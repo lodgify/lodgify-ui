@@ -10,7 +10,7 @@ import './component.css';
  * @return {Object}
  * */
 export class Component extends PureComponent {
-  state = { phoneNumber: this.props.value };
+  state = { value: this.props.value };
 
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
@@ -21,46 +21,45 @@ export class Component extends PureComponent {
 
   /**
    * Persist the value in component state
-   * @param {String} phoneNumber
+   * @param {String} value
    * @return {void}
    */
-  handleChange = phoneNumber => {
-    this.setState({ phoneNumber });
+  handleChange = value => {
+    this.setState({ value });
   };
 
   render() {
-    const { phoneNumber } = this.state;
-    const { isDisabled, country, placeholder } = this.props;
+    const { value } = this.state;
+    const { isDisabled, defaultCountryCode, label } = this.props;
     return (
       <Phone
-        country={country}
+        country={defaultCountryCode}
         disabled={isDisabled}
         onChange={this.handleChange}
-        placeholder={placeholder}
-        value={phoneNumber}
+        placeholder={label}
+        value={value}
       />
     );
   }
 }
 
 Component.defaultProps = {
-  value: '',
-  country: '',
+  defaultCountryCode: '',
   isDisabled: false,
   onChange: Function.prototype,
-  placeholder: 'Enter phone number',
+  label: '',
+  value: '',
 };
 
 Component.propTypes = {
-  /** Default country (two-letter country code)
-   * For local (non-international) phone numbers. */
-  country: PropTypes.string,
+  /** Default [ISO alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) */
+  defaultCountryCode: PropTypes.string,
   /** Is the input disabled */
   isDisabled: PropTypes.bool,
+  /** Placeholder text for the phone input */
+  label: PropTypes.string,
   /** Handler for when the phone number is changed */
   onChange: PropTypes.func,
-  /** Placeholder text for the phone input */
-  placeholder: PropTypes.string,
   /** Phone number */
   value: PropTypes.string,
 };
