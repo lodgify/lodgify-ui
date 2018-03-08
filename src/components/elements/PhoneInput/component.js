@@ -19,11 +19,16 @@ export class Component extends PureComponent {
     }
   }
 
+  /**
+   * Persist the value in component state
+   * @param {String} phoneNumber
+   * @return {void}
+   */
   handleChange = phoneNumber => {
     this.setState({ phoneNumber });
   };
 
-  render = () => {
+  render() {
     const { phoneNumber } = this.state;
     const { isDisabled, country, placeholder } = this.props;
     return (
@@ -35,7 +40,7 @@ export class Component extends PureComponent {
         value={phoneNumber}
       />
     );
-  };
+  }
 }
 
 Component.defaultProps = {
