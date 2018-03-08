@@ -4,7 +4,7 @@ import Phone from 'react-phone-number-input';
 
 import { Component as PhoneInput } from './component';
 
-describe.only('<PhoneInput />', () => {
+describe('<PhoneInput />', () => {
   it('should have displayName "PhoneInput"', () => {
     const displayName = PhoneInput.displayName;
     expect(displayName).toBe('PhoneInput');
