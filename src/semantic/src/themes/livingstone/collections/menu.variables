@@ -32,7 +32,7 @@
 @paginationButtonDiameter           : @35px;
 @paginationButtonHorizontalMargin   : @15px;
 @paginationPrevButtonIconMarginLeft : -(@3px) !important;
-@paginationTopPosition              : -(@2px);
+@paginationButtonIconTopPosition    : -(@2px);
 
 @paginationLabelBackground          : @greyFive;
 @paginationLabelActiveBackground    : @primaryColor;
