@@ -63,8 +63,30 @@
   content: '\f0d7';
 }
 
-.ui.dropdown.hasImages > .dropdown.icon {
-  padding-top: @dropdownWithImagesCaretPaddingTop;
+.dropdown-container{
+  position: relative;
+  
+  & > i.icon {
+    position: absolute;
+    left: 5px;
+    top: @selectionVerticalPadding;
+    z-index: @selectionZIndex + 1;
+    color: @itemColor;
+
+    & + .ui.dropdown {
+     padding-left: @selectionIconDistance;
+    }
+  }
+
+  &.has-images{
+    & > i.icon {
+      top: @dropdownWithImagesCaretPaddingTop;
+    }
+
+    .ui.dropdown > .dropdown.icon {
+      padding-top: @dropdownWithImagesCaretPaddingTop;
+    }
+  }
 }
 
 // Submenu

@@ -7,15 +7,22 @@ const { options } = require('./mock-data/options');
 //  { text: 'United Kingdom', value: 'gb' },
 // ];
 
-<Dropdown
-  label="Location"
-  options={options}
-/>
+<Dropdown label="Location" options={options} />;
 ```
 
-### Content
+### Variations
+
+#### Icon
+
+The dropdown can contain an icon. [See all available icons](https://react.semantic-ui.com/elements/icon#icon-set)
+
+```jsx
+const { options } = require('./mock-data/options');
+<Dropdown label="Location" options={options} icon="world" />;
+```
 
 #### Image
+
 Options can contain images
 
 ```jsx
@@ -27,8 +34,5 @@ const { optionsWithImages } = require('./mock-data/options');
 //  { text: 'The Black Lodge', value: 'blackLodge', image: '/path/to/image.png' },
 // ];
 
-<Dropdown
-  label="Properties"
-  options={optionsWithImages}
-/>
+<Dropdown label="Properties" options={optionsWithImages} icon="world" />;
 ```
