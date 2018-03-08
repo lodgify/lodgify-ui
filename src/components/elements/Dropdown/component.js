@@ -47,9 +47,6 @@ export class Component extends PureComponent {
       >
         {icon && <Icon name={icon} />}
         <Dropdown
-          className={getClassNames({
-            dirty: value,
-          })}
           className={value ? 'dirty' : ''}
           defaultValue={defaultValue}
           onChange={this.handleChange}
