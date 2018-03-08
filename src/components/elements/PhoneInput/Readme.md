@@ -5,5 +5,5 @@
 #### Disabled
 
 ```jsx
-<PhoneInput isDisabled phone="+12025550104" />
+<PhoneInput isDisabled value="+12025550104" />
 ```

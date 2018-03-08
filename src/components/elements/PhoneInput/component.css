@@ -25,3 +25,7 @@
 .react-phone-number-input .rrui__select__arrow {
   margin-left: 0.6rem;
 }
+
+.rrui__select--disabled {
+  filter: opacity(0.5) grayscale(100%);
+}
