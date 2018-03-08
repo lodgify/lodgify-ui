@@ -5,6 +5,7 @@
 @checkboxActiveBorderColor: @greySeven;
 @checkboxActiveFocusBorderColor: @greySeven;
 @checkboxPressedBorderColor: @greySeven;
+@checkboxCheckmarkLeftPosition: -(@1px);
 @disabledCheckboxOpacity: 0.5;
 
 @handleBackground: @white;

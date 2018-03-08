@@ -25,9 +25,7 @@
 }
 
 .ui.dropdown .menu > .item{
-  transition: 
-    background-color @defaultDuration @defaultEasing,
-    opacity @defaultDuration @defaultEasing,
+  transition: @itemTransition;
 }
 
 .ui.dropdown .menu .selected.item:hover {

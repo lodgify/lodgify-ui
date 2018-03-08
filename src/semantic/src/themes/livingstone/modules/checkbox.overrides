@@ -12,7 +12,7 @@
 .ui.checkbox input:checked:focus ~ label:after {
   content: '\2713';
   color: @white;
-  left: -1px;
+  left: @checkboxCheckmarkLeftPosition;
 }
 
 .ui.checkbox.radio input:checked ~ label:after,

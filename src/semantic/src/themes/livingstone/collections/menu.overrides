@@ -45,7 +45,7 @@
 
 .ui.pagination.menu button.button i.chevron {
   position: relative;
-  top: -2px;
+  top: @paginationTopPosition;
 }
 
 // Pagination
