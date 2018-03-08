@@ -35,6 +35,7 @@ const { InputGroup } = require('../InputGroup');
   >
     <TextInput label="Name" name="name" />
   </Form>
+  <Divider />
   <Form
     headingText="Join us"
     submitButtonText="Sign up"
@@ -77,6 +78,7 @@ const { InputGroup } = require('../InputGroup');
   >
     <TextInput label="Name" name="name" />
   </Form>
+  <Divider />
   <Form
     submitButtonText="Come on in"
   >
@@ -88,17 +90,15 @@ const { InputGroup } = require('../InputGroup');
 #### Action link
 
 ```jsx
-<div>
-  <Form
-    actionLink={{
-      onClick: () => console.log('Clicked the action link'),
-      text: 'Forgot password?'
-    }}
-    headingText="Log in"
-    submitButtonText="Submit"
-  >
-    <TextInput label="Name" name="name" />
-    <TextInput label="Password" name="password" type="password"/>
-  </Form>
-</div>
+<Form
+  actionLink={{
+    onClick: () => console.log('Clicked the action link'),
+    text: 'Forgot password?'
+  }}
+  headingText="Log in"
+  submitButtonText="Submit"
+>
+  <TextInput label="Name" name="name" />
+  <TextInput label="Password" name="password" type="password"/>
+</Form>
 ```

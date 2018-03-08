@@ -30,7 +30,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
       navigationItems={navigationItems}
     />
   </div>
-  <div style={{ height: '20px', width: '100%', }} />
+  <Divider />
   <div style={{ backgroundColor: 'grey'}}>
     <Header
       logoText={'Livingstone Cottage'}

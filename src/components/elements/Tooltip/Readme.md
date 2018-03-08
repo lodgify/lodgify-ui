@@ -14,8 +14,8 @@
     content="i is for Inuit"
     size="small"
   />
-  <br />
-  <br />
+  <Divider />
+  <Divider />
   <Tooltip
     content="i is for indigo"  
     size="tiny"
