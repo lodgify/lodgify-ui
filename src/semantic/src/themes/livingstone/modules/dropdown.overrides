@@ -24,6 +24,10 @@
   margin-top: @menuMarginTop;
 }
 
+.ui.dropdown .menu > .item{
+  transition: @itemTransition;
+}
+
 .ui.dropdown .menu .selected.item:hover {
   background: @hoveredItemBackground;
   color: @hoveredItemColor;
