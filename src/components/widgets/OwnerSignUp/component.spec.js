@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { Form } from '../../collections/Form';
-import { TextInput } from '../../elements/TextInput';
+import { Form } from 'collections/Form';
+import { TextInput } from 'elements/TextInput';
 
 import { Component as OwnerSignUp } from './component';
 

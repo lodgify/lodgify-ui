@@ -2,7 +2,8 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Card as SemanticCard } from 'semantic-ui-react';
 
-import { TextInput } from '../../elements/TextInput';
+import { TextInput } from 'elements/TextInput';
+
 import { InputGroup } from '../InputGroup';
 
 import { Component as Form } from './component';
