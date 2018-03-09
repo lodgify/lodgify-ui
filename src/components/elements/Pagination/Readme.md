@@ -8,15 +8,11 @@
 
 ```jsx
 <div>
-  <div>
-    <Pagination startingPage={1} totalPages={5} />
-  </div>
-  <div>
-    <Pagination startingPage={3} totalPages={5} />
-  </div>
-  <div>
-    <Pagination startingPage={5} totalPages={5} />
-  </div>
+  <Pagination startingPage={1} totalPages={5} />
+  <Divider />
+  <Pagination startingPage={3} totalPages={5} />
+  <Divider />
+  <Pagination startingPage={5} totalPages={5} />
 </div>
 ```
 
@@ -24,15 +20,11 @@
 
 ```jsx
 <div>
-  <div>
-    <Pagination totalPages={5} />
-  </div>
-  <div>
-    <Pagination totalPages={10} />
-  </div>
-  <div>
-    <Pagination totalPages={15} />
-  </div>
+  <Pagination totalPages={5} />
+  <Divider />
+  <Pagination totalPages={10} />
+  <Divider />
+  <Pagination totalPages={15} />
 </div>
 ```
 

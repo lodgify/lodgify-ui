@@ -9,8 +9,8 @@
 ```jsx
 <div>
   <TextArea error />
-  <br />
-  <br />
+  <Divider />
+  <Divider />
   <TextArea error="Something's not right" />
 </div>
 ```
