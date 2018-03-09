@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Menu, Image } from 'semantic-ui-react';
 import { size } from 'lodash';
 
-import { Heading } from '../../typography/Heading';
-import { Submenu } from '../../elements/Submenu';
-import { Button } from '../../elements/Button';
+import { Heading } from 'typography/Heading';
+import { Submenu } from 'elements/Submenu';
+import { Button } from 'elements/Button';
 
 /**
  * A header displays a logo, grouped navigation items
