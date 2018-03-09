@@ -28,6 +28,7 @@
 // .item
 
 @itemColor                          : @greySix;
+@itemTextDecoration                 : none;
 @itemTransition                     : background-color @defaultDuration @defaultEasing,
                                       opacity @defaultDuration @defaultEasing;
 @selectionItemDivider               : 0.5px solid @greyFour;
@@ -53,4 +54,3 @@
 @dropdownIconSize                   : @18px;
 @dropdownWithImagesCaretPaddingTop  : @15px;
 @dropdownWithIconPaddingLeft  : @selectionIconDistance;
-

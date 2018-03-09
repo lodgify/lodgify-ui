@@ -3,5 +3,13 @@
   "plugins": [
     "transform-object-rest-spread",
     "transform-class-properties",
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "collections": "./src/components/collections",
+        "elements": "./src/components/elements",
+        "typography": "./src/components/typography",
+      }
+    }]
   ]
 }
