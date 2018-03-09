@@ -31,4 +31,7 @@ module.exports = {
   // https://github.com/facebook/jest/issues/3285
   // https://github.com/facebook/create-react-app/issues/2537
   transformIgnorePatterns: ['<rootDir>/node_modules/'],
+  moduleNameMapper: {
+    '\\.css$': 'identity-obj-proxy',
+  },
 };

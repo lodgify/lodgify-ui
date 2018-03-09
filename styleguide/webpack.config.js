@@ -12,7 +12,6 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: INCLUDE_PATHS,
         use: ['style-loader', 'css-loader'],
       },
       {
