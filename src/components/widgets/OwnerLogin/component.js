@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Form } from '../../collections/Form';
-import { TextInput } from '../../elements/TextInput';
+import { Form } from 'collections/Form';
+import { TextInput } from 'elements/TextInput';
 
 /**
  * The standard widget for owner login.

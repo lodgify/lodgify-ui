@@ -29,6 +29,8 @@
 
 @pointingDropdownMenuDistance       : -(@10px);
 
+@paginationMenuMinHeight            : 0;
+
 @paginationButtonDiameter           : @35px;
 @paginationButtonHorizontalMargin   : @15px;
 @paginationPrevButtonIconMarginLeft : -(@3px) !important;

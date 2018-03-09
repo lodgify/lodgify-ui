@@ -2,8 +2,8 @@ import React, { PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Form } from 'semantic-ui-react';
 
-import { Heading } from '../../typography/Heading';
-import { Button } from '../../elements/Button';
+import { Heading } from 'typography/Heading';
+import { Button } from 'elements/Button';
 
 /**
  * A form displays a set of related user input fields in a structured way.

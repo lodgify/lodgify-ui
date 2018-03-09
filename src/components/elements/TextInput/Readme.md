@@ -9,8 +9,8 @@
 ```jsx
 <div>
   <TextInput error />
-  <br />
-  <br />
+  <Divider />
+  <Divider />
   <TextInput error="Something's not right" />
 </div>
 ```
