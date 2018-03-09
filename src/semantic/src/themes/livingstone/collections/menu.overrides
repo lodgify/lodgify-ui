@@ -50,6 +50,10 @@
 
 // Pagination
 
+.ui.pagination.menu {
+  min-height: @paginationMenuMinHeight;
+}
+
 .ui.pagination.menu .label {
   background-color: @paginationLabelBackground;
   margin: 0;
