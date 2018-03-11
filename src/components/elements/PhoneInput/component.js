@@ -12,8 +12,8 @@ import 'react-phone-number-input/style.css';
  * @return {Object}
  * */
 export const Component = ({
-  error = false,
-  isValid = false,
+  error,
+  isValid,
   countries,
   label,
   onChange,
@@ -37,10 +37,10 @@ Component.defaultProps = {
   countries: undefined,
   defaultCountryCode: '',
   defaultValue: null,
-  isDisabled: false,
+  error: '',
+  isValid: false,
   onChange: Function.prototype,
   label: '',
-  value: '',
 };
 
 Component.propTypes = {
@@ -48,14 +48,16 @@ Component.propTypes = {
   countries: PropTypes.arrayOf(PropTypes.string),
   /** Default [ISO alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) */
   defaultCountryCode: PropTypes.string,
+  /** Is input in an error state. */
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  /** Is input in a valid state. */
+  isValid: PropTypes.bool,
   /** Placeholder text for the phone input */
   label: PropTypes.string,
   /** Handler for when the phone number is changed */
   onChange: PropTypes.func,
   /** Default input value */
   defaultValue: PropTypes.string,
-  /** Phone number */
-  value: PropTypes.string,
 };
 
 Component.displayName = 'PhoneInput';
