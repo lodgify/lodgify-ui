@@ -14,6 +14,8 @@ export const Component = ({ error, isValid, label, onChange }) => (
     isValid={isValid}
     label={label}
     onChange={onChange}
+    changeValueTransformer={event => event.target.value}
+    rows="8"
   />
 );
 

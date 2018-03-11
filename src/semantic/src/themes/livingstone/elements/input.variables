@@ -32,3 +32,8 @@
 @labelFocusColor: @black;
 @labelFocusFontSize: @10px;
 @labelFocusXTranslate: @30px;
+
+@inputIconZIndex: 1;
+@phoneInputArrowBorder: @6px @5px 0 @5px;
+@phoneInputArrowMargin: 0 0 0 @6px;
+@phoneInputHeight: @40px;

@@ -190,12 +190,12 @@ describe('<InputController />', () => {
 
   describe('Interaction: onChange', () => {
     it('should persist the value in component state', () => {
-      const event = { target: { value: '🐸' } };
+      const NEW_VALUE = '🐸';
       const inputController = shallow(<InputController {...props} />);
       const htmlInput = inputController.find('input');
-      htmlInput.simulate('change', event);
+      htmlInput.simulate('change', NEW_VALUE);
       const actual = inputController.state('value');
-      expect(actual).toBe(event.target.value);
+      expect(actual).toBe(NEW_VALUE);
     });
   });
 

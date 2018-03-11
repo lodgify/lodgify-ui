@@ -69,6 +69,7 @@
   position: absolute;
   right: @inputHorizontalPadding;
   top: (@inputMarginTop + @validIconPositionTop);
+  z-index: @inputIconZIndex;
 }
 
 
@@ -89,4 +90,53 @@
   color: @labelFocusColor;
   font-size: @labelFocusFontSize;
   transform: translate(-(@inputMarginTop), -(@labelFocusXTranslate));
+}
+
+
+/*-------------------
+       Phone input
+--------------------*/
+
+div.react-phone-number-input {
+  width: 100%;
+
+  input.rrui__input-field {
+    margin-top: @inputMarginTop !important;  
+    color: red;
+    height: @phoneInputHeight; /*overwrite a rule for .rrui__input*/
+  }
+
+  .rrui__select__arrow {
+    border-width: @phoneInputArrowBorder;
+    margin: @phoneInputArrowMargin;
+  }
+
+  button.rrui__button-reset,
+  button.rrui__select__button {
+    border: none;
+  }
+
+  .rrui__select--collapsed,
+  .rrui__select--expanded {
+    position: absolute;
+    z-index: @inputIconZIndex + 1;
+  }
+
+  .rrui__select--collapsed {
+    left: @10px;
+    top: (@inputMarginTop + @validIconPositionTop);
+    & + input {
+      padding-left: @55px !important;
+    }
+  }
+
+  .rrui__select--expanded {
+    top: -(@phoneInputHeight);
+    width: 100%;
+
+    ul {
+      margin-left: @18px;
+      width: 100%;
+    }
+  }
 }

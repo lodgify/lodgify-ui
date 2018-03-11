@@ -2,8 +2,29 @@
 <PhoneInput />
 ```
 
-#### Disabled
+### States
+
+#### Error
 
 ```jsx
-<PhoneInput isDisabled value="+12025550104" />
+<div>
+  <PhoneInput error />
+  <br />
+  <br />
+  <PhoneInput error="Something's not right" />
+</div>
+```
+
+#### Valid
+
+```jsx
+<PhoneInput isValid />
+```
+
+### Variations
+
+#### Labeled
+
+```jsx
+<PhoneInput label="Search" />
 ```
