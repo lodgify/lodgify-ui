@@ -2,6 +2,9 @@
 @inputMaxWidth: 350px;
 @inputWidth: 100%;
 
+// DateRangePickerInput
+@dateRangePickerInputPadding: @8px @10px;
+
 // input:focus
 @focusBackground: @focusedInputBackground;
 
@@ -32,3 +35,6 @@
 @labelFocusFontSize: @10px;
 @labelFocusXTranslate: @30px;
 @labelFocusYTranslate: @15px;
+
+// DateRangePicker picker
+@dateRangePickerPickerWidth: 820px !important;

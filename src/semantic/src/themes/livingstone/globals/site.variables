@@ -43,6 +43,9 @@
 // dark
 @darkYellow       : #e5b505;
 
+// light
+@lightYellow      : #fde37f;
+
 // neutrals
 @black            : #333;
 @greyEight        : #444;
@@ -51,13 +54,14 @@
 @greyFive         : #ccc;
 @greyFour         : #d8d8d8;
 @greyThree        : #e2e2e2;
-@greyTwo          : #fdfdfd;
+@greyTwo          : #f3f3f3;
 @greyOne          : #f7f7f7;
 @offWhite         : #fdfdfd;
 @pureWhite        : #fff;
 
 @primaryColor     : @yellow;
 @darkPrimaryColor : @darkYellow;
+@lightPrimaryColor: @lightYellow;
 
 // States
 
@@ -85,3 +89,4 @@
 
 @floatingShadow   : 0 2px 7px 0 rgba(0, 0, 0, 0.27);
 @subMenuShadow    : 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+@spreadShadow     : 0 0 35px 0 rgba(0, 0, 0, 0.07);

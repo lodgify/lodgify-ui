@@ -43,23 +43,35 @@ export class Component extends PureComponent {
 
   render() {
     const { value } = this.state;
-    const { isValid, error, label, tagName, type } = this.props;
+    const isDirty =
+      typeof value === 'object'
+        ? Object.entries(value).some(entry => !!entry[1])
+        : !!value;
+    const { isFocused, isValid, error, label, tagName, type } = this.props;
     return (
       <Input
         className={getClassNames({
-          dirty: value,
+          dirty: isDirty,
           valid: isValid,
           error: error,
+          focus: isFocused,
         })}
       >
         {hasErrorMessage(error) && <ErrorMessage errorMessage={error} />}
         {isValid && <Icon color="green" name="checkmark" size="big" />}
-        {React.createElement(tagName, {
-          onChange: this.handleChange,
-          ref: input => (this.htmlInput = input),
-          rows: 8,
-          type,
-        })}
+        {tagName && !this.props.children
+          ? React.createElement(tagName, {
+              onChange: this.handleChange,
+              ref: input => (this.htmlInput = input),
+              rows: 8,
+              type,
+            })
+          : React.cloneElement(this.props.children, {
+              onDatesChange: dates => {
+                this.props.children.props.onDatesChange(dates);
+                this.handleChange({ target: { value: dates } });
+              },
+            })}
         {label && <label onClick={this.handleClick}>{label}</label>}
       </Input>
     );

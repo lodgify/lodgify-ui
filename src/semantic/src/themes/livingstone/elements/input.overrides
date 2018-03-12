@@ -3,85 +3,270 @@
 .ui.input {
   max-width: @inputMaxWidth;
   width: @inputWidth;
-}
 
-.ui.input textarea {
-  background: @background;
-  border: @border;
-  font-family: @inputFont;
-  outline: none;
-  padding: @padding;
-  width: @inputWidth;
-}
+  //
+  // default
+  //
 
-.ui.input textarea:focus  {
-  border-color: @focusBorderColor;
-  background: @focusBackground;
-  color: @focusColor;
-}
+  textarea,
+  .DateRangePickerInput {
+    background: @background;
+    border: @border;
+    font-family: @inputFont;
+    outline: none;
+    width: @inputWidth;
+  }
 
-.ui.input:hover:not(.error):not(.valid):not(.dirty) input:not(:focus),
-.ui.input:hover:not(.error):not(.valid):not(.dirty) textarea:not(:focus) {
-  background: @focusedInputBackground;
-  border-color: @hoveredInputBorderColor;
-}
+  textarea {
+    padding: @padding;
+  }
 
-.ui.input.dirty:not(.error):not(.valid) input,
-.ui.input.dirty:not(.error):not(.valid) textarea {
-  background: @focusedInputBackground;
-  border-color: @focusedFormBorderColor;
-}
+  .DateRangePicker {
+    width: @inputWidth;
 
-// error
+    .DateRangePickerInput {
+      color: @labelColor;
 
-.ui.input.error textarea {
-  background: @errorBackground;
-  border-color: @errorBorder;
-}
+      button.DateRangePickerInput_calendarIcon,
+      .DateRangePickerInput_arrow {
+        color: inherit;
+        margin: 0;
+        outline: none;
+        padding: @dateRangePickerInputPadding;
 
-.ui.input.error .ui.pointing.below.label {
-  font-weight: @errorMessageFontWeight;
-  padding: @errorMessagePadding;
-  position: absolute;
-  right: @errorMessageRightPosition;
-  top: @errorMessageTopPosition;
-}
+        i {
+          margin: 0;
+        }
+      }
 
-.ui.input.error .ui.pointing.below.label:before {
-  left: unset;
-  right: 6px;
-}
+      .DateInput {
+        box-sizing: content-box;
 
-// valid
+        &,
+        input {
+          background: transparent;
+          color: inherit;
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: normal;
+          line-height: inherit;
+        }
 
-.ui.input.valid input,
-.ui.input.valid textarea {
-  background: @focusedInputBackground;
-  border-color: @validBorderColor;
-}
+        input {
+          padding: (@verticalPadding - @lineHeightOffset) 0;
 
-.ui.input i.big.green.checkmark.icon {
-  position: absolute;
-  right: @inputHorizontalPadding;
-  top: @validIconPositionTop;
-}
+          &::placeholder {
+            color: inherit;
+            opacity: 1;
+          }
+        }
+
+        .DateInput_fangStroke {
+          stroke: transparent;
+        }
+      }
+    }
+  }
 
 
-// label
+  label {
+    color: @labelColor;
+    cursor: text;
+    left: @inputHorizontalPadding;
+    position: absolute;
+    top: @inputVerticalPadding;
+    transition: transform @defaultDuration, font-size @defaultDuration;
+  }
 
-.ui.input label {
-  color: @labelColor;
-  cursor: text;
-  left: @inputHorizontalPadding;
-  position: absolute;
-  top: @inputVerticalPadding;
-  transition: transform @defaultDuration, font-size @defaultDuration;
-}
+  //
+  // hover, focus, dirty
+  //
 
-.ui.input input:focus + label,
-.ui.input textarea:focus + label,
-.ui.input.dirty > label {
-  color: @labelFocusColor;
-  font-size: @labelFocusFontSize;
-  transform: translate(-(@labelFocusYTranslate), -(@labelFocusXTranslate));
+  &:hover:not(.error):not(.valid):not(.dirty):not(.focus) {
+    input:not(:focus),
+    textarea:not(:focus),
+    .DateRangePickerInput {
+      background: @focusedInputBackground;
+      border-color: @hoveredInputBorderColor;
+    }
+
+    .DateRangePickerInput {
+      input:not(.DateInput_input__focused) {
+        border-color: transparent;
+      }
+    }
+  }
+
+  &.dirty:not(.error):not(.valid) {
+    input,
+    textarea,
+    .DateRangePickerInput {
+      background: @focusedInputBackground;
+      border-color: @focusedFormBorderColor;
+    }
+
+    .DateRangePickerInput {
+      color: @focusColor;
+      input:not(.DateInput_input__focused) {
+        border-color: transparent;
+      }
+    }
+  }
+
+  textarea:focus,
+  &.focus .DateRangePickerInput  {
+    border-color: @focusBorderColor;
+    background: @focusBackground;
+    color: @focusColor;
+  }
+
+  .DateRangePicker .DateRangePickerInput input.DateInput_input__focused {
+    border-bottom: 3px solid @primaryColor;
+    margin-bottom: -1px;
+  }
+
+  input:focus + label,
+  textarea:focus + label,
+  &.dirty > label {
+    color: @labelFocusColor;
+    font-size: @labelFocusFontSize;
+    transform: translate(-(@labelFocusYTranslate), -(@labelFocusXTranslate));
+  }
+
+  //
+  // error
+  //
+
+  &.error {
+    textarea {
+      background: @errorBackground;
+      border-color: @errorBorder;
+    }
+
+    .ui.pointing.below.label {
+      font-weight: @errorMessageFontWeight;
+      padding: @errorMessagePadding;
+      position: absolute;
+      right: @errorMessageRightPosition;
+      top: @errorMessageTopPosition;
+
+      &:before {
+        left: unset;
+        right: 6px;
+      }
+    }
+  }
+
+  //
+  // valid
+  //
+
+  &.valid {
+    input,
+    textarea {
+      background: @focusedInputBackground;
+      border-color: @validBorderColor;
+    }
+
+    i.big.green.checkmark.icon {
+      position: absolute;
+      right: @inputHorizontalPadding;
+      top: @validIconPositionTop;
+    }
+  }
+
+  // DateRangePicker picker
+
+  .DateRangePicker_picker {
+    color: @greyEight;
+
+    .DayPicker__withBorder {
+      box-shadow: @spreadShadow;
+    }
+
+    button.DayPickerNavigation_button {
+      border: none;
+      padding: 0;
+      top: 38px;
+    }
+
+    .CalendarMonth_caption {
+      color: inherit;
+      font-size: @fontSize;
+      padding-top: 34px;
+      padding-bottom: 59px;
+
+      strong {
+        font-weight: @normal;
+      }
+    }
+
+    .DayPicker_weekHeader {
+      color: inherit;
+      padding: 0 15px;
+      top: 75px;
+
+      li.DayPicker_weekHeader_li {
+        box-sizing: content-box;
+        width: 48px !important;
+
+        &:not(:first-child) {
+          border-left: 4px solid white;
+        }
+
+        small {
+          font-size: @tinyParagraphFontSize;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .CalendarMonth {
+      padding: 0 15px;
+
+      table.CalendarMonth_table {
+        td.CalendarDay {
+          border: none;
+          box-sizing: content-box;
+          font-size: @tinyParagraphFontSize;
+          font-weight: @tinyParagraphFontWeight;
+          height: 38px !important;
+          padding: 0;
+          width: 48px !important;
+
+          &:not(:first-child) {
+            border-left: 4px solid white;
+          }
+
+          &.CalendarDay__default:hover,
+          &.CalendarDay__selected_span,
+          &.CalendarDay__hovered_span {
+            background: @lightPrimaryColor;
+            color: inherit;
+          }
+
+          &.CalendarDay__selected {
+            &,
+            &:active,
+            &:hover {
+              background: @primaryColor;
+              color: inherit;
+            }
+          }
+
+          &.CalendarDay__blocked_out_of_range {
+            &,
+            &:hover, {
+              background: @greyTwo;
+              color: @greyFive;
+            }
+          }
+        }
+
+        tr:not(:first-child) td.CalendarDay {
+          border-top: 4px solid white;
+        }
+      }
+    }
+  }
 }
