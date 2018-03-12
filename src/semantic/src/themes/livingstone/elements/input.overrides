@@ -1,12 +1,18 @@
-// input
+/*******************************
+            Input
+*******************************/
+
+/*-------------------
+      Element
+--------------------*/
 
 .ui.input {
   max-width: @inputMaxWidth;
   width: @inputWidth;
 
-  //
-  // default
-  //
+  /*-------------------
+          Types
+  --------------------*/
 
   textarea,
   .DateRangePickerInput {
@@ -48,12 +54,12 @@
           color: inherit;
           font-family: inherit;
           font-size: inherit;
-          font-weight: normal;
+          font-weight: @normal;
           line-height: inherit;
         }
 
         input {
-          padding: (@verticalPadding - @lineHeightOffset) 0;
+          padding: @dateRangePickerDateInputPadding;
 
           &::placeholder {
             color: inherit;
@@ -66,22 +72,106 @@
         }
       }
     }
+
+    .DateRangePicker_picker {
+      color: @dateRangePickerPickerFontColor;
+
+      .DayPicker__withBorder {
+        box-shadow: @dateRangePickerPickerBoxShadow;
+      }
+
+      button.DayPickerNavigation_button {
+        border: none;
+        padding: 0;
+        top: @dateRangePickerPickerNavigationButtonTopSpace;
+      }
+
+      .CalendarMonth_caption {
+        color: inherit;
+        font-size: @fontSize;
+        padding-top: @dateRangePickerPickerMonthCaptionPaddingTop;
+        padding-bottom: @dateRangePickerPickerMonthCaptionPaddingBottom;
+
+        strong {
+          font-weight: @normal;
+        }
+      }
+
+      .DayPicker_weekHeader {
+        color: inherit;
+        padding: @dateRangePickerPickerTablePadding;
+        top: @dateRangePickerPickerWeekHeaderTopSpace;
+
+        li.DayPicker_weekHeader_li {
+          box-sizing: content-box;
+          width: @dateRangePickerPickerWeekHeaderWidth;
+
+          &:not(:first-child) {
+            border-left: @dateRangePickerPickerTableCellBorder;
+          }
+
+          small {
+            font-size: @tinyParagraphFontSize;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .CalendarMonth {
+        padding: @dateRangePickerPickerTablePadding;
+
+        table.CalendarMonth_table {
+          td.CalendarDay {
+            border: none;
+            box-sizing: content-box;
+            font-size: @tinyParagraphFontSize;
+            font-weight: @tinyParagraphFontWeight;
+            height: @dateRangePickerPickerTableCellHeight;
+            padding: 0;
+            width: @dateRangePickerPickerTableCellWidth;
+
+            &:not(:first-child) {
+              border-left: @dateRangePickerPickerTableCellBorder;
+            }
+
+            &.CalendarDay__default:hover,
+            &.CalendarDay__selected_span,
+            &.CalendarDay__hovered_span {
+              background: @dateRangePickerPickerDayHoveredBackground;
+              color: inherit;
+            }
+
+            &.CalendarDay__selected {
+              &,
+              &:active,
+              &:hover {
+                background: @dateRangePickerPickerDaySelectedBackground;
+                color: inherit;
+              }
+            }
+
+            &.CalendarDay__blocked_out_of_range {
+              &,
+              &:hover, {
+                background: @dateRangePickerPickerDayBlockedBackground;
+                color: @dateRangePickerPickerDayBlockedFontColor;
+              }
+            }
+          }
+
+          tr:not(:first-child) td.CalendarDay {
+            border-top: @dateRangePickerPickerTableCellBorder;
+          }
+        }
+      }
+    }
   }
 
+  /*-------------------
+          States
+  --------------------*/
 
-  label {
-    color: @labelColor;
-    cursor: text;
-    left: @inputHorizontalPadding;
-    position: absolute;
-    top: @inputVerticalPadding;
-    transition: transform @defaultDuration, font-size @defaultDuration;
-  }
-
-  //
-  // hover, focus, dirty
-  //
-
+  /* Hover */
   &:hover:not(.error):not(.valid):not(.dirty):not(.focus) {
     input:not(:focus),
     textarea:not(:focus),
@@ -97,6 +187,7 @@
     }
   }
 
+  /* Dirty */
   &.dirty:not(.error):not(.valid) {
     input,
     textarea,
@@ -113,6 +204,7 @@
     }
   }
 
+  /* Focus */
   textarea:focus,
   &.focus .DateRangePickerInput  {
     border-color: @focusBorderColor;
@@ -121,22 +213,11 @@
   }
 
   .DateRangePicker .DateRangePickerInput input.DateInput_input__focused {
-    border-bottom: 3px solid @primaryColor;
-    margin-bottom: -1px;
+    border-bottom: @dateRangePickerInputFocusedBorderBottom;
+    margin-bottom: @dateRangePickerInputFocusedMarginBottom;
   }
 
-  input:focus + label,
-  textarea:focus + label,
-  &.dirty > label {
-    color: @labelFocusColor;
-    font-size: @labelFocusFontSize;
-    transform: translate(-(@labelFocusYTranslate), -(@labelFocusXTranslate));
-  }
-
-  //
-  // error
-  //
-
+  /* Error */
   &.error {
     textarea {
       background: @errorBackground;
@@ -157,10 +238,7 @@
     }
   }
 
-  //
-  // valid
-  //
-
+  /* Valid */
   &.valid {
     input,
     textarea {
@@ -175,98 +253,25 @@
     }
   }
 
-  // DateRangePicker picker
+  /*-------------------
+        Variations
+  --------------------*/
 
-  .DateRangePicker_picker {
-    color: @greyEight;
+  /* Labeled */
+  label {
+    color: @labelColor;
+    cursor: text;
+    left: @inputHorizontalPadding;
+    position: absolute;
+    top: @inputVerticalPadding;
+    transition: transform @defaultDuration, font-size @defaultDuration;
+  }
 
-    .DayPicker__withBorder {
-      box-shadow: @spreadShadow;
-    }
-
-    button.DayPickerNavigation_button {
-      border: none;
-      padding: 0;
-      top: 38px;
-    }
-
-    .CalendarMonth_caption {
-      color: inherit;
-      font-size: @fontSize;
-      padding-top: 34px;
-      padding-bottom: 59px;
-
-      strong {
-        font-weight: @normal;
-      }
-    }
-
-    .DayPicker_weekHeader {
-      color: inherit;
-      padding: 0 15px;
-      top: 75px;
-
-      li.DayPicker_weekHeader_li {
-        box-sizing: content-box;
-        width: 48px !important;
-
-        &:not(:first-child) {
-          border-left: 4px solid white;
-        }
-
-        small {
-          font-size: @tinyParagraphFontSize;
-          text-transform: uppercase;
-        }
-      }
-    }
-
-    .CalendarMonth {
-      padding: 0 15px;
-
-      table.CalendarMonth_table {
-        td.CalendarDay {
-          border: none;
-          box-sizing: content-box;
-          font-size: @tinyParagraphFontSize;
-          font-weight: @tinyParagraphFontWeight;
-          height: 38px !important;
-          padding: 0;
-          width: 48px !important;
-
-          &:not(:first-child) {
-            border-left: 4px solid white;
-          }
-
-          &.CalendarDay__default:hover,
-          &.CalendarDay__selected_span,
-          &.CalendarDay__hovered_span {
-            background: @lightPrimaryColor;
-            color: inherit;
-          }
-
-          &.CalendarDay__selected {
-            &,
-            &:active,
-            &:hover {
-              background: @primaryColor;
-              color: inherit;
-            }
-          }
-
-          &.CalendarDay__blocked_out_of_range {
-            &,
-            &:hover, {
-              background: @greyTwo;
-              color: @greyFive;
-            }
-          }
-        }
-
-        tr:not(:first-child) td.CalendarDay {
-          border-top: 4px solid white;
-        }
-      }
-    }
+  input:focus + label,
+  textarea:focus + label,
+  &.dirty > label {
+    color: @labelFocusColor;
+    font-size: @labelFocusFontSize;
+    transform: translate(-(@labelFocusYTranslate), -(@labelFocusXTranslate));
   }
 }

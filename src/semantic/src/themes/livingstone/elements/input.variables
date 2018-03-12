@@ -1,40 +1,80 @@
-// input
+/*******************************
+            Input
+*******************************/
+
+/*-------------------
+      Element
+--------------------*/
+
 @inputMaxWidth: 350px;
 @inputWidth: 100%;
 
-// DateRangePickerInput
+/*-------------------
+        Types
+--------------------*/
+
 @dateRangePickerInputPadding: @8px @10px;
 
-// input:focus
-@focusBackground: @focusedInputBackground;
+@dateRangePickerDateInputPadding: (@verticalPadding - @lineHeightOffset) 0;
 
-// .input:hover input
+@dateRangePickerPickerFontColor: @greyEight;
+@dateRangePickerPickerBoxShadow: @spreadShadow;
+
+@dateRangePickerPickerNavigationButtonTopSpace: (@dateRangePickerPickerMonthCaptionPaddingTop + @4px);
+
+@dateRangePickerPickerMonthCaptionPaddingTop: @34px;
+@dateRangePickerPickerMonthCaptionPaddingBottom: @59px;
+
+@dateRangePickerPickerWeekHeaderTopSpace: 75px;
+@dateRangePickerPickerWeekHeaderWidth: @48px !important;
+
+@dateRangePickerPickerTablePadding: 0 @15px;
+@dateRangePickerPickerTableCellBorder: @4px solid @pureWhite;
+@dateRangePickerPickerTableCellHeight: 38px !important;
+@dateRangePickerPickerTableCellWidth: 48px !important;
+
+@dateRangePickerPickerDayHoveredBackground: @lightPrimaryColor;
+@dateRangePickerPickerDaySelectedBackground: @primaryColor;
+@dateRangePickerPickerDayBlockedBackground: @greyTwo;
+@dateRangePickerPickerDayBlockedFontColor: @greyFive;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
 @hoveredInputBorderColor: @inputHoverBorderColor;
 
-// .input.error input
+/* Dirty */
+
+/* Focus */
+@focusBackground: @focusedInputBackground;
+
+@dateRangePickerInputFocusedBorderBottom: @3px solid @primaryColor;
+@dateRangePickerInputFocusedMarginBottom: -(@1px);
+
+/* Error */
 @errorBackground: @focusedInputBackground;
 @errorColor: @textColor;
 
-// .input.error .label
 @errorMessageFontWeight: 400;
 @errorMessagePadding: @6px @25px;
 @errorMessageRightPosition: -(@1px);
 @errorMessageTopPosition: -(@30px);
 
-// .input.valid input
+/* Valid */
 @validBorderColor: @green;
 
-// .input.valid i
 @validIconPositionTop: @7px;
 
-// label
+/*-------------------
+      Variations
+--------------------*/
+
+/* Labeled */
 @labelColor: @greySix;
 
-// input:focus + label
 @labelFocusColor: @black;
 @labelFocusFontSize: @10px;
 @labelFocusXTranslate: @30px;
 @labelFocusYTranslate: @15px;
-
-// DateRangePicker picker
-@dateRangePickerPickerWidth: 820px !important;
