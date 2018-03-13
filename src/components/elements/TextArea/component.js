@@ -9,13 +9,14 @@ import { InputController } from '../InputController';
  */
 export const Component = ({ error, isValid, label, name, onChange }) => (
   <InputController
-    tagName="textarea"
     error={error}
     isValid={isValid}
     label={label}
     name={name}
     onChange={onChange}
-  />
+  >
+    <textarea rows="8" />
+  </InputController>
 );
 
 Component.displayName = 'TextArea';

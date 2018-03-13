@@ -1,41 +1,40 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import { isEqual, some } from 'lodash';
 import { Input, Icon } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
 import { ErrorMessage } from '../ErrorMessage';
 
-import { hasErrorMessage } from './hasErrorMessage';
+import { getHasErrorMessage } from './utils/getHasErrorMessage';
+import { getValue } from './utils/getValue';
 
 /**
- * Shared controller for TextInput and TextArea.
- * @extends React.PureComponent
+ * Shared controller for input elements.
+ * @extends {React.PureComponent}
  */
 export class Component extends PureComponent {
   state = {
     value: '',
   };
 
-  // eslint-disable-next-line valid-jsdoc
   /**
-   * Call the onChange function passed down via props
-   * with the new state value
+   * Call `props.onChange` with the new value from state.
    */
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
     const { name, onChange } = this.props;
-    prevValue !== value && onChange(name, value);
+    !isEqual(prevValue, value) && onChange(name, value);
   }
 
-  // eslint-disable-next-line valid-jsdoc
   /**
-   * Persist the value in component state
+   * Persist the value in component state.
    */
-  handleChange = event => {
-    this.setState({ value: event.target.value });
+  handleChange = eventOrValue => {
+    const value = getValue(eventOrValue);
+    this.setState({ value });
   };
 
-  // eslint-disable-next-line valid-jsdoc
   /**
    * Force focus the input when the dynamic label is clicked.
    */
@@ -43,22 +42,30 @@ export class Component extends PureComponent {
 
   render() {
     const { value } = this.state;
-    const { isValid, error, label, tagName, type } = this.props;
+    const isDirty = some(value);
+    const {
+      children,
+      error,
+      inputOnChangeFunctionName,
+      isFocused,
+      isValid,
+      label,
+    } = this.props;
+    const hasErrorMessage = getHasErrorMessage(error);
     return (
       <Input
         className={getClassNames({
-          dirty: value,
+          dirty: isDirty,
           valid: isValid,
           error: error,
+          focus: isFocused,
         })}
       >
-        {hasErrorMessage(error) && <ErrorMessage errorMessage={error} />}
+        {hasErrorMessage && <ErrorMessage errorMessage={error} />}
         {isValid && <Icon color="green" name="checkmark" size="big" />}
-        {React.createElement(tagName, {
-          onChange: this.handleChange,
+        {React.cloneElement(children, {
+          [inputOnChangeFunctionName]: this.handleChange,
           ref: input => (this.htmlInput = input),
-          rows: 8,
-          type,
         })}
         {label && <label onClick={this.handleClick}>{label}</label>}
       </Input>
@@ -69,26 +76,30 @@ export class Component extends PureComponent {
 Component.displayName = 'InputController';
 
 Component.defaultProps = {
-  type: null,
+  inputOnChangeFunctionName: 'onChange',
+  isFocused: false,
+  label: null,
 };
 
 Component.propTypes = {
+  /** The input controlled by the input controller */
+  children: PropTypes.element.isRequired,
   /** Is input in an error state. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  /** The name of the change function on the input, if not `onChange`.  */
+  inputOnChangeFunctionName: PropTypes.string,
+  /** Is input in a focused state. */
+  isFocused: PropTypes.bool,
   /** Is input in a valid state. */
   isValid: PropTypes.bool.isRequired,
   /** The visible label for the input. */
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   /** The name for the input. */
   name: PropTypes.string.isRequired,
   /**
-   * A function called when the input value changes
+   * A function called when a change in the input value is handled by the input controller.
    * @param {String} name
    * @param {String} value
    */
   onChange: PropTypes.func.isRequired,
-  /** The HTML tagName of the input to be rendered. */
-  tagName: PropTypes.oneOf(['input', 'textarea']).isRequired,
-  /** The [HTML input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types). */
-  type: PropTypes.string,
 };

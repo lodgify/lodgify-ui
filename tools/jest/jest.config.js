@@ -24,6 +24,9 @@ module.exports = {
       statements: 90,
     },
   },
+  moduleNameMapper: {
+    '\\.css$': 'identity-obj-proxy',
+  },
   setupTestFrameworkScriptFile: '<rootDir>/tools/jest/jest.framework-setup.js',
   transform: {
     '^.+\\.jsx?$': 'babel-jest',

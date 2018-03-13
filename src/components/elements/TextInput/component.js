@@ -14,9 +14,9 @@ export const Component = ({ error, isValid, label, name, onChange, type }) => (
     label={label}
     name={name}
     onChange={onChange}
-    tagName="input"
-    type={type}
-  />
+  >
+    <input type={type} />
+  </InputController>
 );
 
 Component.displayName = 'TextInput';

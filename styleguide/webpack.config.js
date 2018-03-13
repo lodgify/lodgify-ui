@@ -1,6 +1,12 @@
 const path = require('path');
 
-const INCLUDE_PATHS = [__dirname, path.join(__dirname, '..', 'src')];
+const ROOT_PATH = path.join(__dirname, '..');
+
+const INCLUDE_PATHS = [
+  __dirname,
+  path.join(ROOT_PATH, 'src'),
+  path.join(ROOT_PATH, 'node_modules/react-dates/lib/css'),
+];
 
 module.exports = {
   module: {
