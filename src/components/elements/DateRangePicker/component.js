@@ -32,6 +32,11 @@ export class Component extends PureComponent {
   };
 
   /**
+   * Persist the focused input identifier in component state.
+   */
+  handleFocusChange = focusedInput => this.setState({ focusedInput });
+
+  /**
    * Persist the date values in component state.
    */
   handleInputControllerChange = (name, value) => {
@@ -40,6 +45,7 @@ export class Component extends PureComponent {
 
   render() {
     const {
+      displayFormat,
       endDatePlaceholderText,
       error,
       getIsDayBlocked,
@@ -59,6 +65,7 @@ export class Component extends PureComponent {
       >
         <DateRangePicker
           // Consumer defined props.
+          displayFormat={displayFormat}
           endDatePlaceholderText={endDatePlaceholderText}
           isDayBlocked={getIsDayBlocked}
           startDatePlaceholderText={startDatePlaceholderText}
@@ -67,7 +74,7 @@ export class Component extends PureComponent {
           focusedInput={focusedInput}
           // NOTE onDatesChange is required by DateRangePicker but is set in `InputController`
           onDatesChange={Function.prototype}
-          onFocusChange={focusedInput => this.setState({ focusedInput })}
+          onFocusChange={this.handleFocusChange}
           startDate={startDate}
           // Static required props.
           endDateId="end_date_id"
@@ -88,6 +95,7 @@ export class Component extends PureComponent {
 Component.displayName = 'DateRangePicker';
 
 Component.defaultProps = {
+  displayFormat: 'DD/MM/YYYY',
   endDatePlaceholderText: '',
   error: false,
   getIsDayBlocked: Function.prototype,
@@ -98,6 +106,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** The format for inputting and displaying dates as text. */
+  displayFormat: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   /** The visible placeholder text for the end date input. */
   endDatePlaceholderText: PropTypes.string,
   /** Is the date range picker in an error state. A string is displayed as an error message. */
