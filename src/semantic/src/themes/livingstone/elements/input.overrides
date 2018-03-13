@@ -150,6 +150,7 @@
               }
             }
 
+            &.CalendarDay__blocked_calendar,
             &.CalendarDay__blocked_out_of_range {
               &,
               &:hover, {
