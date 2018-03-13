@@ -1,3 +1,3 @@
 ```jsx
-<DateRangePicker />
+<DateRangePicker onChange={console.log} />
 ```

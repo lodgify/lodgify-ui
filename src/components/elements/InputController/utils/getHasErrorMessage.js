@@ -5,4 +5,4 @@ import { isString } from 'lodash';
  * @param  {Boolean|String}  error
  * @return {Boolean}
  */
-export const hasErrorMessage = error => !!error && isString(error);
+export const getHasErrorMessage = error => !!error && isString(error);
