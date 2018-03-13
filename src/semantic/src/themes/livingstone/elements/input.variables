@@ -18,6 +18,7 @@
 @dateRangePickerDateInputPadding: (@verticalPadding - @lineHeightOffset) 0;
 
 @dateRangePickerPickerFontColor: @greyEight;
+@dateRangePickerPickerZIndex: 3;
 @dateRangePickerPickerBoxShadow: @spreadShadow;
 
 @dateRangePickerPickerNavigationButtonTopSpace: (@dateRangePickerPickerMonthCaptionPaddingTop + @4px);
@@ -66,6 +67,7 @@
 @validBorderColor: @green;
 
 @validIconPositionTop: @7px;
+@validIconZIndex: 1;
 
 /*-------------------
       Variations

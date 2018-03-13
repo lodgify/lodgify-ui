@@ -75,6 +75,7 @@
 
     .DateRangePicker_picker {
       color: @dateRangePickerPickerFontColor;
+      z-index: @dateRangePickerPickerZIndex;
 
       .DayPicker__withBorder {
         box-shadow: @dateRangePickerPickerBoxShadow;
@@ -220,9 +221,17 @@
 
   /* Error */
   &.error {
-    textarea {
+    textarea,
+    .DateRangePickerInput {
       background: @errorBackground;
       border-color: @errorBorder;
+    }
+
+    .DateRangePickerInput {
+      color: @focusColor;
+      input:not(.DateInput_input__focused) {
+        border-color: transparent;
+      }
     }
 
     .ui.pointing.below.label {
@@ -242,15 +251,24 @@
   /* Valid */
   &.valid {
     input,
-    textarea {
+    textarea,
+    .DateRangePickerInput  {
       background: @focusedInputBackground;
       border-color: @validBorderColor;
+    }
+
+    .DateRangePickerInput {
+      color: @focusColor;
+      input:not(.DateInput_input__focused) {
+        border-color: transparent;
+      }
     }
 
     i.big.green.checkmark.icon {
       position: absolute;
       right: @inputHorizontalPadding;
       top: @validIconPositionTop;
+      z-index: @validIconZIndex;
     }
   }
 
