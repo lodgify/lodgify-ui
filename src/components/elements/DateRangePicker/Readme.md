@@ -37,8 +37,8 @@
 
 ```jsx
 <DateRangePicker
-  endDatePlaceholderText="Check-in"
-  startDatePlaceholderText="Check-out"
+  endDatePlaceholderText="Check-out"
+  startDatePlaceholderText="Check-in"
 />
 ```
 
