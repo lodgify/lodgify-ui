@@ -6,6 +6,7 @@
       Element
 --------------------*/
 
+.ui.form .ui.input,
 .ui.input {
   max-width: @inputMaxWidth;
   width: @inputWidth;
@@ -221,6 +222,7 @@
 
   /* Error */
   &.error {
+    input,
     textarea,
     .DateRangePickerInput {
       background: @errorBackground;
