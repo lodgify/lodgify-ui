@@ -53,8 +53,12 @@
 @menuImageHorizontalMargin          : -(@5px);
 @menuImageVerticalMargin            : -(@2px);
 
-// .icon
+// .dropdown.icon
 
 @dropdownIconSize                   : @18px;
 @dropdownWithImagesCaretPaddingTop  : @15px;
-@dropdownWithIconPaddingLeft  : @selectionIconDistance;
+@dropdownWithIconPaddingLeft        : @40px;
+
+// i.icon
+
+@iconPadding                        : @10px;

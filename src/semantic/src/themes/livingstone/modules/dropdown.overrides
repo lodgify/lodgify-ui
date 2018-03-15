@@ -77,14 +77,13 @@
   position: relative;
 
   & > i.icon {
+    padding: @iconPadding;
     position: absolute;
-    left: 5px;
-    top: @selectionVerticalPadding;
     z-index: @selectionZIndex + 1;
     color: @itemColor;
 
     & + .ui.dropdown {
-     padding-left: @selectionIconDistance;
+     padding-left: @dropdownWithIconPaddingLeft;
     }
   }
 

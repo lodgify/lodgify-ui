@@ -45,7 +45,7 @@ export class Component extends PureComponent {
           'has-images': optionsWithImages,
         })}
       >
-        {icon && <Icon name={icon} />}
+        {icon && <Icon name={icon} size="large" />}
         <Dropdown
           className={value ? 'dirty' : ''}
           defaultValue={defaultValue}
