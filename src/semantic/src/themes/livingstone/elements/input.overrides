@@ -48,6 +48,7 @@
 
       .DateInput {
         box-sizing: content-box;
+        width: @dateRangePickerDateInputWidth;
 
         &,
         input {
@@ -56,11 +57,13 @@
           font-family: inherit;
           font-size: inherit;
           font-weight: @normal;
-          line-height: inherit;
+          line-height: 1em;
         }
 
         input {
+          border: 0;
           padding: @dateRangePickerDateInputPadding;
+          width: 100%;
 
           &::placeholder {
             color: inherit;
@@ -182,12 +185,6 @@
       background: @focusedInputBackground;
       border-color: @hoveredInputBorderColor;
     }
-
-    .DateRangePickerInput {
-      input:not(.DateInput_input__focused) {
-        border-color: transparent;
-      }
-    }
   }
 
   /* Dirty */
@@ -201,9 +198,6 @@
 
     .DateRangePickerInput {
       color: @focusColor;
-      input:not(.DateInput_input__focused) {
-        border-color: transparent;
-      }
     }
   }
 
@@ -218,6 +212,7 @@
   .DateRangePicker .DateRangePickerInput input.DateInput_input__focused {
     border-bottom: @dateRangePickerInputFocusedBorderBottom;
     margin-bottom: @dateRangePickerInputFocusedMarginBottom;
+    padding-bottom: @dateRangePickerInputFocusedPaddingBottom;
   }
 
   /* Error */
@@ -231,9 +226,6 @@
 
     .DateRangePickerInput {
       color: @focusColor;
-      input:not(.DateInput_input__focused) {
-        border-color: transparent;
-      }
     }
 
     .ui.pointing.below.label {

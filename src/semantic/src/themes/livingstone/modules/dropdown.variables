@@ -2,6 +2,10 @@
 
 // .selection.dropdown
 
+@selectionMaxWidth                  : 350px;
+@selectionMinWidth                  : unset;
+@selectionWidth                     : 100%;
+
 @selectionHoverBorderColor          : @inputHoverBorderColor;
 @selectionBorderRadius              : 0;
 @selectionFocusBackground           : @focusedInputBackground;

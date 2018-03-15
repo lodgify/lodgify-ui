@@ -46,7 +46,7 @@ export const Component = ({ guestOptions, locationOptions, onSubmit }) => (
   </Form>
 );
 
-Component.displayName = 'SearchBox';
+Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   onSubmit: Function.prototype,
