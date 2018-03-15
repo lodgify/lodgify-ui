@@ -1,8 +1,8 @@
 ```jsx
-const { guestOptions, locationOptions } = require('./mock-data/options');
+const { guestsOptions, locationOptions } = require('./mock-data/options');
 
 <SearchBar
-  guestOptions={guestOptions}
+  guestsOptions={guestsOptions}
   locationOptions={locationOptions}
 />
 ```
