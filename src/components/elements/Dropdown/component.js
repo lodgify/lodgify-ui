@@ -42,12 +42,12 @@ export class Component extends PureComponent {
     return (
       <div
         className={getClassNames('dropdown-container', {
+          dirty: value,
           'has-images': optionsWithImages,
         })}
       >
         {icon && <Icon name={icon} size="large" />}
         <Dropdown
-          className={value ? 'dirty' : ''}
           defaultValue={defaultValue}
           onChange={this.handleChange}
           options={optionsWithImages || options}

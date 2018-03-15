@@ -1,114 +1,174 @@
-.ui.dropdown .menu .item:first-child {
-  border-radius: @borderRadius @borderRadius 0 0;
-}
+/*******************************
+            Dropdown
+*******************************/
 
-.ui.dropdown .menu .item:last-child {
-  border-radius: 0 0 @borderRadius @borderRadius;
-}
+.ui.dropdown {
 
-.ui.selection.dropdown {
-  max-width: @selectionMaxWidth;
-  width: @selectionWidth;
-}
+  /*******************************
+              Content
+  *******************************/
 
-.ui.selection.dropdown:hover,
-.ui.selection.dropdown:focus,
-.ui.selection.dropdown.dirty {
-  background: @selectionFocusBackground;
-}
+  /*--------------
+        Menu
+  ---------------*/
 
-.ui.selection.dropdown:not(.dirty) {
-  color: @defaultTextColor;
-}
+  .menu {
 
-.ui.selection.dropdown.dirty {
-  border-color: @selectionFocusBorderColor;
-}
+    /*--------------
+     Dropdown Icon
+    ---------------*/
 
-.ui.selection.dropdown .menu {
-  margin-top: @menuMarginTop;
-}
+    .dropdown.icon:before {
+      content: '\f0d7';
+    }
 
-.ui.dropdown .menu > .item {
-  text-decoration: @itemTextDecoration;
-  transition: @itemTransition;
-}
+    /*--------------
+        Menu Item
+    ---------------*/
 
-.ui.dropdown .menu .selected.item:hover {
-  background: @hoveredItemBackground;
-  color: @hoveredItemColor;
-}
+    & > .item {
+      text-decoration: @itemTextDecoration;
+      transition: @itemTransition;
+      white-space: nowrap;
 
-.ui.selection.dropdown .menu > .item {
-  white-space: nowrap;
-}
+      &:first-child {
+        border-radius: @borderRadius @borderRadius 0 0;
+      }
 
-.ui.dropdown > .text > .image,
-.ui.dropdown > .text > img,
-.ui.dropdown .menu > .item .image,
-.ui.dropdown .menu > .item img {
-  box-shadow: @floatingShadow;
-  display: inline-block;
-  height: @menuImageHeight;
-  margin-left: @menuImageHorizontalMargin;
-  margin-right: @itemElementDistance;
-  max-height: none;
-  min-width: @menuImageMinWidth;
-  vertical-align: middle;
-}
+      &:last-child {
+        border-radius: 0 0 @borderRadius @borderRadius;
+      }
 
-.ui.dropdown:not(.dirty) > .text > .image,
-.ui.dropdown:not(.dirty) > .text > img,
-.ui.dropdown:not(.dirty) .menu > .item .image,
-.ui.dropdown:not(.dirty) .menu > .item img {
-  filter: opacity(0.5) grayscale(100%);
-}
+      &.selected:hover {
+        background: @hoveredItemBackground;
+        color: @hoveredItemColor;
+      }
+    }
 
-.ui.dropdown .menu > .item .image ~ .text,
-.ui.dropdown .menu > .item img ~ .text {
-  font-size: @tinyParagraphFontSize;
-}
+  }
 
-.ui.dropdown > .dropdown.icon:before {
-  content: '\f0d7';
-}
+  /*--------------
+       Image
+  ---------------*/
 
-.dropdown-container{
-  position: relative;
+  & > .text > .image,
+  & > .text > img,
+  .menu > .item .image,
+  .menu > .item img {
+    box-shadow: @floatingShadow;
+    display: inline-block;
+    height: @menuImageHeight;
+    margin-left: @menuImageHorizontalMargin;
+    margin-right: @itemElementDistance;
+    max-height: none;
+    min-width: @menuImageMinWidth;
+    vertical-align: middle;
 
-  & > i.icon {
-    padding: @iconPadding;
-    position: absolute;
-    z-index: @selectionZIndex + 1;
-    color: @itemColor;
+    & ~ .text{
+      font-size: @tinyParagraphFontSize;
+    }
 
-    & + .ui.dropdown {
-     padding-left: @dropdownWithIconPaddingLeft;
+    .dropdown-container:not(.dirty) & {
+      filter: opacity(0.5) grayscale(100%);
     }
   }
 
+}
+
+/*******************************
+              Types
+*******************************/
+
+/*--------------
+    Selection
+---------------*/
+
+// The extra class .dropdown-container is needed for
+// the implementation of dropdown with icon.
+.dropdown-container {
+  position: relative;
+
+  .ui.selection.dropdown {
+    color: @defaultTextColor;
+    max-width: @selectionMaxWidth;
+    width: @selectionWidth;
+
+    /*  Selection Menu */
+    .menu {
+      margin-top: @menuMarginTop;
+    }
+  }
+
+  /*  Icon */
+  & > i.icon {
+    color: @iconColor;
+    padding: @iconPadding;
+    position: absolute;
+    z-index: @iconZIndex;
+
+    & + .ui.dropdown {
+      padding-left: @dropdownWithIconPaddingLeft;
+    }
+  }
+
+  /*  with Images */
   &.has-images{
     & > i.icon {
       top: @dropdownWithImagesCaretPaddingTop;
     }
 
-    .ui.dropdown > .dropdown.icon {
+    .ui.selection.dropdown > .dropdown.icon {
       padding-top: @dropdownWithImagesCaretPaddingTop;
+    }
+  }
+
+  /*******************************
+              States
+  *******************************/
+
+  /*--------------------
+          Hover
+          Focus
+  ----------------------*/
+
+  .ui.selection.dropdown:hover,
+  .ui.selection.dropdown:focus {
+    background: @selectionFocusBackground;
+  }
+
+  /*--------------------
+          Dirty
+  ----------------------*/
+
+  &.dirty {
+    & > i.icon {
+      color: @textColor;
+    }
+
+    .ui.selection.dropdown {
+      background: @selectionFocusBackground;
+      border-color: @selectionFocusBorderColor;
+      color: @textColor;
     }
   }
 }
 
-// Submenu
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+     Pointing
+---------------*/
 
 .ui.pointing.dropdown .menu {
   min-width: @pointingMenuMinWidth;
-}
 
-.ui.pointing.dropdown,
-.ui.pointing.dropdown .menu .item {
-  text-align: @pointingDropdownTextAlign;
-}
+  .item {
+    text-align: @pointingDropdownTextAlign;
+  }
 
-.ui.pointing.dropdown .menu a.item .text {
-  color: @textColor;
+  a.item .text {
+    color: @textColor;
+  }
 }
