@@ -20,7 +20,7 @@
 @dateRangePickerIconWidthOffset: 42px; // This offsets the widths of the icons in the date range picker.
 
 /* Date range picker text inputs */
-@dateRangePickerDateInputPadding: (@verticalPadding - @dateRangePickerDateInputBorderOffset) 0;
+@dateRangePickerDateInputPadding: (@verticalPadding - @dateRangePickerInputBorderOffset) 0;
 @dateRangePickerDateInputWidth: ~"calc(50% - @{dateRangePickerIconWidthOffset})";
 
 /* Date range picker dropdown picker */
@@ -62,7 +62,7 @@
 @dateRangePickerInputFocusedBorderBottom: @dateRangePickerInputFocusedBorderBottomWidth solid @primaryColor;
 @dateRangePickerInputFocusedMarginBottom: -(@1px);
 @dateRangePickerInputFocusedBorderBottomOffset: (@dateRangePickerInputFocusedBorderBottomWidth + @dateRangePickerInputFocusedMarginBottom);
-@dateRangePickerInputFocusedPaddingBottom: (@verticalPadding - @dateRangePickerDateInputBorderOffset - @dateRangePickerInputFocusedBorderBottomOffset);
+@dateRangePickerInputFocusedPaddingBottom: (@verticalPadding - @dateRangePickerInputBorderOffset - @dateRangePickerInputFocusedBorderBottomOffset);
 
 /* Error */
 @errorBackground: @focusedInputBackground;
