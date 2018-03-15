@@ -31,7 +31,7 @@ Component.defaultProps = {
 
 Component.propTypes = {
   /** The text to display on the button. */
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   /** Is the button disabled. */
   isDisabled: PropTypes.bool,
   /** Is the button in loading state. */

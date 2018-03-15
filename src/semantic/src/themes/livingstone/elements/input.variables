@@ -13,10 +13,17 @@
         Types
 --------------------*/
 
+/* Date range picker input container */
 @dateRangePickerInputPadding: @8px @10px;
+@dateRangePickerInputBorderOffset: (@2px/2); // This offsets the border on .DateRangePicker.
 
-@dateRangePickerDateInputPadding: (@verticalPadding - @lineHeightOffset) 0;
+@dateRangePickerIconWidthOffset: 42px; // This offsets the widths of the icons in the date range picker.
 
+/* Date range picker text inputs */
+@dateRangePickerDateInputPadding: (@verticalPadding - @dateRangePickerInputBorderOffset) 0;
+@dateRangePickerDateInputWidth: ~"calc(50% - @{dateRangePickerIconWidthOffset})";
+
+/* Date range picker dropdown picker */
 @dateRangePickerPickerFontColor: @greyEight;
 @dateRangePickerPickerZIndex: 3;
 @dateRangePickerPickerBoxShadow: @spreadShadow;
@@ -51,8 +58,11 @@
 /* Focus */
 @focusBackground: @focusedInputBackground;
 
-@dateRangePickerInputFocusedBorderBottom: @3px solid @primaryColor;
+@dateRangePickerInputFocusedBorderBottomWidth: @3px;
+@dateRangePickerInputFocusedBorderBottom: @dateRangePickerInputFocusedBorderBottomWidth solid @primaryColor;
 @dateRangePickerInputFocusedMarginBottom: -(@1px);
+@dateRangePickerInputFocusedBorderBottomOffset: (@dateRangePickerInputFocusedBorderBottomWidth + @dateRangePickerInputFocusedMarginBottom);
+@dateRangePickerInputFocusedPaddingBottom: (@verticalPadding - @dateRangePickerInputBorderOffset - @dateRangePickerInputFocusedBorderBottomOffset);
 
 /* Error */
 @errorBackground: @focusedInputBackground;
