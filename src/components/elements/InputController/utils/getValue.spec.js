@@ -1,13 +1,10 @@
 import { getValue } from './getValue';
 
 describe('getValue', () => {
-  describe('if it is passed a React `SyntheticEvent`', () => {
+  describe('if it is passed a an object structured as an event', () => {
     it('should return `eventOrValue.target.value`', () => {
       const value = '🍞';
-      const mockEvent = {
-        constructor: { name: 'SyntheticEvent' },
-        target: { value },
-      };
+      const mockEvent = { target: { value } };
       const actual = getValue(mockEvent);
       expect(actual).toBe(value);
     });
