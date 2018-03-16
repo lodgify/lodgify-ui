@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { isEqual } from 'lodash';
+import { isEqual, uniqueId } from 'lodash';
 import { DateRangePicker } from 'react-dates';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
@@ -77,8 +77,8 @@ export class Component extends PureComponent {
           onFocusChange={this.handleFocusChange}
           startDate={startDate}
           // Static required props.
-          endDateId="end_date_id"
-          startDateId="start_date_id"
+          endDateId={uniqueId('end_date_id_')}
+          startDateId={uniqueId('start_date_id_')}
           // Static custom appearance props.
           customArrowIcon={<Icon name="arrow right" />}
           customInputIcon={<Icon name="calendar outline" size="large" />}
