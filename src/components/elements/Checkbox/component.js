@@ -15,7 +15,6 @@ export const Component = ({
   label,
   name,
   onChange,
-  value,
 }) => (
   <Checkbox
     checked={isChecked}
@@ -25,7 +24,6 @@ export const Component = ({
     name={name}
     onChange={(event, { checked }) => onChange(name, checked)}
     radio={isRadioButton}
-    value={value}
     toggle={isToggle}
   />
 );
@@ -33,16 +31,14 @@ export const Component = ({
 Component.displayName = 'Checkbox';
 
 Component.defaultProps = {
-  // Notes: Use undefined for uncontrolled checkboxes, boolean for controlled ones
   isChecked: undefined,
-  isCheckedByDefault: undefined,
+  isCheckedByDefault: false,
   isDisabled: false,
   isToggle: false,
-  isRadioButton: undefined,
+  isRadioButton: false,
   label: '',
-  name: undefined,
+  name: '',
   onChange: Function.prototype,
-  value: undefined,
 };
 
 Component.propTypes = {
@@ -65,11 +61,9 @@ Component.propTypes = {
   /** The HTML input name. */
   name: PropTypes.string,
   /**
-   * Event called when the user attempts to change the checked state.
-   * @param {SyntheticEvent} event - React's original SyntheticEvent.
-   * @param {object} data - All props and proposed checked/indeterminate state.
+   * Event called when the checkbox value changes.
+   * @param {String} name
+   * @param {Boolean} value
    */
   onChange: PropTypes.func,
-  /** The HTML input value. */
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };

@@ -17,16 +17,18 @@ describe('<Checkbox />', () => {
   });
 
   it('should pass the right props to child component', () => {
-    const LABEL_TEXT = 'Hulk Hogan loves testing';
-    const component = shallow(
-      <Checkbox isDisabled isChecked label={LABEL_TEXT} />
-    );
+    const component = shallow(<Checkbox />);
     const checkbox = component.find(SemanticCheckbox);
     expect(checkbox.props()).toEqual(
       expect.objectContaining({
-        disabled: true,
-        checked: true,
-        label: LABEL_TEXT,
+        checked: undefined,
+        defaultChecked: false,
+        disabled: false,
+        label: '',
+        name: '',
+        onChange: expect.any(Function),
+        radio: false,
+        toggle: false,
       })
     );
     expect(checkbox.prop('isChecked')).not.toBeDefined();

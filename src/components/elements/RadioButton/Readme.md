@@ -18,31 +18,45 @@ Please refer to it for more information.
 RadioButtons in a group must be [controlled components](https://reactjs.org/docs/forms.html#controlled-components).
 
 ```jsx
-class GroupedRadiosDemo extends React.Component {
+class GroupedRadiosDemo extends React.PureComponent {
+
   constructor(props) {
     super(props);
     this.state = {
-      selectedValue: 'cheeseburger'
+      selectedRadio: 'plane',
     };
     this.handleChange = this.handleChange.bind(this);
   }
-  handleChange(e, { value }){
-    this.setState({ selectedValue: value });
-  } 
+
+  handleChange(name) {
+    this.setState({ selectedRadio: name });
+  }
+
   render() {
-    const { selectedValue } = this.state;
+    const { selectedRadio } = this.state;
     return (
       <div>
         <div>
-          <RadioButton label="Cheeseburger" value="cheeseburger" isChecked={selectedValue === 'cheeseburger'} onChange={this.handleChange} />
+          <RadioButton
+            label="By plane"
+            isChecked={selectedRadio === 'plane'}
+            name="plane"
+            onChange={this.handleChange}
+          />
         </div>
         <div>
-          <RadioButton label="Pizza" value="pizza"  isChecked={selectedValue === 'pizza'} onChange={this.handleChange} />
+          <RadioButton
+            label="By train"
+            isChecked={selectedRadio === 'train'}
+            name="train"  
+            onChange={this.handleChange}
+          />
         </div>
       </div>
     );
   }
 }
+
 <GroupedRadiosDemo />
 ```
 
@@ -66,4 +80,3 @@ class GroupedRadiosDemo extends React.Component {
 ```jsx
 <RadioButton isDisabled isChecked label="I am disabled and checked"/>
 ```
-
