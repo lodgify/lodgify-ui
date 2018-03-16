@@ -74,8 +74,8 @@ describe('<DateRangePicker />', () => {
       const actual = reactDatesDateRangePicker.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          endDateId: 'end_date_id',
-          startDateId: 'start_date_id',
+          endDateId: expect.stringContaining('end_date_id_'),
+          startDateId: expect.stringContaining('start_date_id_'),
         })
       );
     });

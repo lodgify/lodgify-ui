@@ -1,40 +1,68 @@
+/*******************************
+            Dropdown
+*******************************/
+
 @borderRadius                       : @3px;
 
-// .selection.dropdown
+/*******************************
+            Content
+*******************************/
 
-@selectionMaxWidth                  : 350px;
-@selectionMinWidth                  : unset;
-@selectionWidth                     : 100%;
-
-@selectionHoverBorderColor          : @inputHoverBorderColor;
-@selectionBorderRadius              : 0;
-@selectionFocusBackground           : @focusedInputBackground;
-
-@selectionActiveHoverBorderColor    : @focusedFormBorderColor;
-@selectionFocusBorderColor          : @selectionActiveHoverBorderColor;
-@selectionVisibleBorderColor        : @selectionActiveHoverBorderColor;
-
-// .pointing.dropdown
-@pointingArrowSize                  : @relative12px;
-@pointingArrowBoxShadow             : -(@1px) -(@1px) @4px -(@1px) rgba(0, 0, 0, 0.12);
-@pointingDropdownTextAlign          : center;
-
-// .menu
+/*--------------
+      Menu
+---------------*/
 
 @menuBackground                     : @selectionFocusBackground;
 @menuBorder                         : none;
 @menuBoxShadow                      : 0 @menuBorderWidth 13px 0 rgba(0, 0, 0, 0.12);
-@menuMarginTop                      : @8px;
-@pointingMenuMinWidth               : 100%;
-@selectionVisibleMenuBoxShadow      : @menuBoxShadow;
-@selectionFocusMenuBoxShadow        : @menuBoxShadow;
 
-// .item
+/*--------------
+ Dropdown Icon
+---------------*/
+
+@dropdownIconSize                   : @18px;
+
+/*--------------
+    Menu Item
+---------------*/
 
 @itemColor                          : @greySix;
 @itemTextDecoration                 : none;
 @itemTransition                     : background-color @defaultDuration @defaultEasing,
                                       opacity @defaultDuration @defaultEasing;
+
+@hoveredItemBackground              : @primaryColor;
+@hoveredItemColor                   : @textColor;
+
+/*--------------
+     Image
+---------------*/
+
+@menuImageHeight                    : @35px;
+@menuImageMinWidth                  : @58px;
+@menuImageHorizontalMargin          : -(@5px);
+@menuImageVerticalMargin            : -(@2px);
+
+/*******************************
+              Types
+*******************************/
+
+/*--------------
+    Selection
+---------------*/
+
+@selectionBorderRadius              : 0;
+@selectionMaxWidth                  : 350px;
+@selectionMinWidth                  : unset;
+@selectionWidth                     : 100%;
+
+/*  Selection Menu */
+@menuMarginTop                      : @8px;
+
+@selectionVisibleMenuBoxShadow      : @menuBoxShadow;
+@selectionFocusMenuBoxShadow        : @menuBoxShadow;
+
+/*  Menu item */
 @selectionItemDivider               : 0.5px solid @greyFour;
 @selectionItemPadding               : @inputVerticalPadding @inputHorizontalPadding;
 
@@ -43,18 +71,59 @@
 @selectedBackground                 : none;
 @selectedColor                      : @itemColor;
 
-@hoveredItemBackground              : @primaryColor;
-@hoveredItemColor                   : @textColor;
+/*  Icon */
+@iconColor                          : @itemColor;
+@iconPadding                        : @10px;
+@iconZIndex                         : @selectionZIndex + 1;
 
-// .item > img
+@dropdownWithIconPaddingLeft        : @40px;
 
-@menuImageHeight                    : @35px;
-@menuImageMinWidth                  : @58px;
-@menuImageHorizontalMargin          : -(@5px);
-@menuImageVerticalMargin            : -(@2px);
-
-// .icon
-
-@dropdownIconSize                   : @18px;
+/*  with Images */
 @dropdownWithImagesCaretPaddingTop  : @15px;
-@dropdownWithIconPaddingLeft  : @selectionIconDistance;
+
+/*******************************
+            States
+*******************************/
+
+/*--------------------
+        Hover
+        Focus
+        Dirty
+----------------------*/
+
+@selectionHoverBorderColor          : @inputHoverBorderColor;
+@selectionActiveHoverBorderColor    : @focusedFormBorderColor;
+
+@selectionFocusBackground           : @focusedInputBackground;
+@selectionFocusBorderColor          : @selectionActiveHoverBorderColor;
+
+@selectionVisibleBorderColor        : @selectionActiveHoverBorderColor;
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+     Labeled
+---------------*/
+
+@labelColor                         : @itemColor;
+
+@labelFocusColor                    : @textColor;
+@labelFocusFontSize                 : @10px;
+@labelFocusXTranslate               : @15px;
+@labelFocusYTranslate               : @30px;
+
+@withIconLabelLeftPosition          : @dropdownWithIconPaddingLeft;
+@withIconLabelFocusXTranslate       : @withIconLabelLeftPosition - @1px;
+
+/*--------------
+     Pointing
+---------------*/
+
+@pointingArrowSize                  : @relative12px;
+@pointingArrowBoxShadow             : -(@1px) -(@1px) @4px -(@1px) rgba(0, 0, 0, 0.12);
+
+@pointingDropdownTextAlign          : center;
+
+@pointingMenuMinWidth               : 100%;

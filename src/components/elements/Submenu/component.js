@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
 
+import { adaptOptions } from './adaptOptions';
+
 /**
  * A submenu displays grouped navigation items.
  * @return {Object}
@@ -16,7 +18,7 @@ export const Component = ({
   <Dropdown
     className={isTriggerUnderlined ? 'underlined' : ''}
     item={isMenuItem}
-    options={items}
+    options={adaptOptions(items)}
     pointing="top"
     simple={isTriggeredOnHover}
     trigger={children}

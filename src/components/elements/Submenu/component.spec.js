@@ -22,7 +22,7 @@ describe('<Submenu />', () => {
           item: false,
           simple: false,
           className: '',
-          options: items,
+          options: expect.arrayContaining([expect.any(Object)]),
           pointing: 'top',
           trigger: children,
         })

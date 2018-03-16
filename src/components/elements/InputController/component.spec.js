@@ -146,7 +146,7 @@ describe('<InputController />', () => {
         expect.objectContaining({
           color: 'green',
           name: 'checkmark',
-          size: 'big',
+          size: 'large',
         })
       );
     });

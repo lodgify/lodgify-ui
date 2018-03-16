@@ -12,10 +12,10 @@ import { getDefaultValue } from './utils/getDefaultValue';
  */
 export class Component extends PureComponent {
   state = {
+    isOpen: false,
     value: '',
   };
 
-  // eslint-disable-next-line valid-jsdoc
   /**
    * Call the onChange function passed down via props
    * with the new state value
@@ -26,34 +26,43 @@ export class Component extends PureComponent {
     prevValue !== value && onChange(name, value);
   }
 
-  // eslint-disable-next-line valid-jsdoc
   /**
    * Persist the value in component state
    */
   handleChange = (event, data) => {
-    this.setState({ value: data.value });
+    this.setState({ value: data.value, isOpen: false });
   };
 
+  /**
+   * Handle actions to change the isOpen state .
+   */
+  handleOpen = isOpen => this.setState({ isOpen });
+
   render() {
-    const { value } = this.state;
+    const { isOpen, value } = this.state;
     const { label, options, icon } = this.props;
     const optionsWithImages = adaptOptions(options);
     const defaultValue = getDefaultValue(optionsWithImages);
     return (
       <div
         className={getClassNames('dropdown-container', {
+          dirty: value,
           'has-images': optionsWithImages,
+          focus: isOpen,
         })}
       >
-        {icon && <Icon name={icon} />}
+        {!optionsWithImages && icon && <Icon name={icon} size="large" />}
         <Dropdown
-          className={value ? 'dirty' : ''}
           defaultValue={defaultValue}
+          onBlur={() => this.handleOpen(false)}
           onChange={this.handleChange}
+          onClick={() => this.handleOpen(!isOpen)}
+          open={isOpen}
           options={optionsWithImages || options}
-          placeholder={label}
           selection
         />
+        {!optionsWithImages &&
+          label && <label onClick={() => this.handleOpen(true)}>{label}</label>}
       </div>
     );
   }
@@ -69,9 +78,9 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** Icon for the dropdown */
+  /** Icon for the dropdown. Not displayed if options have images. */
   icon: PropTypes.string,
-  /** The label for the dropdown. */
+  /** The label for the dropdown. Not displayed if options have images. */
   label: PropTypes.string,
   /** The name for the dropdown. */
   name: PropTypes.string,
