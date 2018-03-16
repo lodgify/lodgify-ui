@@ -18,7 +18,9 @@
 // Active item underline
 @activeItemUnderlineBorder          : @2px solid @primaryColor;
 @activeItemUnderlineBottomPosition  : 40%;
-@activeItemUnderlineTransition      : @defaultDuration @defaultEasing;
+@activeItemUnderlineTransition      : .5s @defaultEasing;
+
+@dropdownIconDistance               : @10px;
 
 @dropdownHoveredItemBackground      : @primaryColor;
 @dropdownSelectedItemBackground     : @background;
@@ -27,7 +29,7 @@
 @dropdownMenuBorderRadius           : @3px;
 @dropdownMenuBoxShadow              : @subMenuShadow;
 
-@pointingDropdownMenuDistance       : -(@10px);
+@pointingDropdownMenuDistance       : -(20%);
 
 @paginationMenuMinHeight            : 0;
 
