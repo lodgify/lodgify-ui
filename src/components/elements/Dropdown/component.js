@@ -51,7 +51,7 @@ export class Component extends PureComponent {
           focus: isOpen,
         })}
       >
-        {icon && <Icon name={icon} size="large" />}
+        {!optionsWithImages && icon && <Icon name={icon} size="large" />}
         <Dropdown
           defaultValue={defaultValue}
           onBlur={() => this.handleOpen(false)}
@@ -61,7 +61,8 @@ export class Component extends PureComponent {
           options={optionsWithImages || options}
           selection
         />
-        {label && <label onClick={() => this.handleOpen(true)}>{label}</label>}
+        {!optionsWithImages &&
+          label && <label onClick={() => this.handleOpen(true)}>{label}</label>}
       </div>
     );
   }
@@ -77,9 +78,9 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** Icon for the dropdown */
+  /** Icon for the dropdown. Not displayed if options have images. */
   icon: PropTypes.string,
-  /** The label for the dropdown. */
+  /** The label for the dropdown. Not displayed if options have images. */
   label: PropTypes.string,
   /** The name for the dropdown. */
   name: PropTypes.string,
