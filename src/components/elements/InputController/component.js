@@ -62,7 +62,7 @@ export class Component extends PureComponent {
         })}
       >
         {hasErrorMessage && <ErrorMessage errorMessage={error} />}
-        {isValid && <Icon color="green" name="checkmark" size="big" />}
+        {isValid && <Icon color="green" name="checkmark" size="large" />}
         {React.cloneElement(children, {
           [inputOnChangeFunctionName]: this.handleChange,
           ref: input => (this.htmlInput = input),
