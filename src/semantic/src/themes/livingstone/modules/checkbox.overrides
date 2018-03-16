@@ -1,5 +1,5 @@
 /*******************************
-         Theme Overrides
+           Checkbox
 *******************************/
 
 /* Checked */
@@ -8,8 +8,8 @@
   font-weight: bold;
 }
 
-.ui.checkbox input:checked ~ label:after,
-.ui.checkbox input:checked:focus ~ label:after {
+.ui.checkbox:not(.radio):not(.toggle) input:checked ~ label:after,
+.ui.checkbox:not(.radio):not(.toggle) input:checked:focus ~ label:after {
   content: '\2713';
   color: @white;
   left: @checkboxCheckmarkLeftPosition;
@@ -17,14 +17,14 @@
 
 .ui.checkbox.radio input:checked ~ label:after,
 .ui.checkbox.radio input:checked:focus ~ label:after {
-  background-color: @white;
+  background-color: @checkboxBackground;
 }
 
 .ui.checkbox input:checked ~ label:before,
 .ui.checkbox input:checked:focus ~ label:before,
 .ui.radio.checkbox input:checked ~ label:before,
 .ui.radio.checkbox input:checked:focus ~ label:before {
-  background-color: @yellow;
+  background-color: @checkedCheckboxBackground;
 }
 
 /* Disabled */
@@ -33,7 +33,7 @@
 .ui.checkbox.disabled.radio input ~ label:before,
 .ui.checkbox.disabled.radio input:focus ~ label:before {
   background-color: @disabledBackgroundColor;
-  border-color: @greySix;
+  border-color: @disabledCheckboxBorderColor;
 }
 
 .ui.toggle.checkbox.disabled input:focus ~ label:before,
@@ -45,11 +45,10 @@
 
 .ui.checkbox.disabled input ~ label:after,
 .ui.checkbox.disabled input:focus ~ label:after {
-  color: @greySeven;
+  color: @disabledCheckboxLabelTextColor;
 }
 
 .ui.checkbox.disabled.radio input ~ label:after,
 .ui.checkbox.disabled.radio input:focus ~ label:after {
-   background-color: @greySeven;
+   background-color: @disabledCheckboxLabelBackgroundColor;
 }
-
