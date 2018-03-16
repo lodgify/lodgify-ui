@@ -136,6 +136,12 @@
     background: @selectionFocusBackground;
   }
 
+  &.focus {
+    & > i.icon {
+      color: @textColor;
+    }
+  }
+
   /*--------------------
           Dirty
   ----------------------*/
@@ -151,11 +157,50 @@
       color: @textColor;
     }
   }
-}
 
 /*******************************
            Variations
 *******************************/
+
+/*--------------
+     Labeled
+---------------*/
+
+  label {
+    color: @labelColor;
+    left: @itemHorizontalPadding;
+    pointer-events: none;
+    position: absolute;
+    top: @itemVerticalPadding;
+    transition: transform @defaultDuration, font-size @defaultDuration;
+  }
+
+  &.focus,
+  &.dirty {
+    label {
+      color: @labelFocusColor;
+      font-size: @labelFocusFontSize;
+      transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
+    }
+  }
+
+  & > i.icon {
+    & ~ label {
+      left: @withIconLabelLeftPosition;
+    }
+  }
+
+  &.focus,
+  &.dirty {
+    & > i.icon {
+      & ~ label {
+        transform: translate(-(@withIconLabelFocusXTranslate), -(@labelFocusYTranslate));
+      }
+    }
+  }
+
+}
+
 
 /*--------------
      Pointing

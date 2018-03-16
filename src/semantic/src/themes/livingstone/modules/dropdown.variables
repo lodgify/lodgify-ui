@@ -72,7 +72,7 @@
 @selectedColor                      : @itemColor;
 
 /*  Icon */
-@iconColor:                         : @itemColor;
+@iconColor                          : @itemColor;
 @iconPadding                        : @10px;
 @iconZIndex                         : @selectionZIndex + 1;
 
@@ -102,6 +102,20 @@
 /*******************************
            Variations
 *******************************/
+
+/*--------------
+     Labeled
+---------------*/
+
+@labelColor                         : @itemColor;
+
+@labelFocusColor                    : @textColor;
+@labelFocusFontSize                 : @10px;
+@labelFocusXTranslate               : @15px;
+@labelFocusYTranslate               : @30px;
+
+@withIconLabelLeftPosition          : @dropdownWithIconPaddingLeft;
+@withIconLabelFocusXTranslate       : @withIconLabelLeftPosition - @1px;
 
 /*--------------
      Pointing
