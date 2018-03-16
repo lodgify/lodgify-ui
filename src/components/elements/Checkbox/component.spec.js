@@ -22,7 +22,7 @@ describe('<Checkbox />', () => {
     expect(checkbox.props()).toEqual(
       expect.objectContaining({
         checked: undefined,
-        defaultChecked: false,
+        defaultChecked: undefined,
         disabled: false,
         label: '',
         name: '',

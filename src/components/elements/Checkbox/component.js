@@ -32,7 +32,7 @@ Component.displayName = 'Checkbox';
 
 Component.defaultProps = {
   isChecked: undefined,
-  isCheckedByDefault: false,
+  isCheckedByDefault: undefined,
   isDisabled: false,
   isToggle: false,
   isRadioButton: false,
