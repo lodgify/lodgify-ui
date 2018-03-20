@@ -69,7 +69,7 @@
     }
 
     .dropdown-container:not(.dirty) & {
-      filter: opacity(0.5) grayscale(100%);
+      filter: @grayscaleFilter;
     }
   }
 

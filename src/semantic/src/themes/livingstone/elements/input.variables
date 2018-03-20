@@ -83,10 +83,18 @@
       Variations
 --------------------*/
 
+/* Icon */
+@flagIconXOffset: -(@7px);
+@flagIconYOffset: -(@5px);
+@flagIconScale: scale(1.2);
+
+@leftIconInputLabelLeftPosition: @iconWidth;
+@leftIconInputLabelFocusXTranslate: @leftIconInputLabelLeftPosition - @1px;
+
 /* Labeled */
 @labelColor: @greySix;
 
 @labelFocusColor: @black;
 @labelFocusFontSize: @10px;
-@labelFocusXTranslate: @30px;
-@labelFocusYTranslate: @15px;
+@labelFocusXTranslate: @15px;
+@labelFocusYTranslate: @30px;
