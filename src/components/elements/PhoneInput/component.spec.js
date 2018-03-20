@@ -1,22 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { DateRangePicker as ReactDatesDateRangePicker } from 'react-dates';
-import { Icon } from 'semantic-ui-react';
-import moment from 'moment';
+import { Flag } from 'semantic-ui-react';
 
-import { Component as DateRangePicker } from './component';
+import { Component as PhoneInput } from './component';
 
-const getDateRangePicker = props => shallow(<DateRangePicker {...props} />);
+const getPhoneInput = props => shallow(<PhoneInput {...props} />);
 
-const getInputController = () => getDateRangePicker().find('InputController');
+const getInputController = () => getPhoneInput().find('InputController');
 
-const getReactDatesDateRangePicker = () =>
-  getDateRangePicker().find(ReactDatesDateRangePicker);
-
-describe('<DateRangePicker />', () => {
+describe('<PhoneInput />', () => {
   it('should render a single `InputController` component', () => {
-    const textInput = getDateRangePicker();
-    const actual = textInput.find('InputController').length;
+    const wrapper = getPhoneInput();
+    const actual = wrapper.find('InputController').length;
     expect(actual).toBe(1);
   });
 
@@ -26,117 +21,35 @@ describe('<DateRangePicker />', () => {
     expect(actual).toEqual(
       expect.objectContaining({
         error: false,
-        inputOnChangeFunctionName: 'onDatesChange',
-        isFocused: false,
+        icon: <Flag name="ad" />,
         isValid: false,
+        label: '',
         name: '',
         onChange: expect.any(Function),
       })
     );
   });
 
-  it('should pass a `react-dates` `DateRangePicker` as a child to `InputController`', () => {
+  it('should pass an html `input` as a child to `InputController`', () => {
     const inputController = getInputController();
-    const actual = inputController.children(ReactDatesDateRangePicker);
+    const actual = inputController.children('input');
     expect(actual).toHaveLength(1);
   });
 
-  describe('the child `react-dates` `DateRangePicker`', () => {
-    it('should get the right consumer defined props', () => {
-      const reactDatesDateRangePicker = getReactDatesDateRangePicker();
-      const actual = reactDatesDateRangePicker.props();
+  describe('the child `input`', () => {
+    it('should get the right props', () => {
+      const inputController = getInputController();
+      const actual = inputController.children('input').props();
       expect(actual).toEqual(
         expect.objectContaining({
-          displayFormat: 'DD/MM/YYYY',
-          endDatePlaceholderText: '',
-          isDayBlocked: Function.prototype,
-          startDatePlaceholderText: '',
-        })
-      );
-    });
-
-    it('should get the right controlled props', () => {
-      const reactDatesDateRangePicker = getReactDatesDateRangePicker();
-      const actual = reactDatesDateRangePicker.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          endDate: null,
-          focusedInput: null,
-          onDatesChange: Function.prototype,
-          onFocusChange: expect.any(Function),
-          startDate: null,
-        })
-      );
-    });
-
-    it('should get the right static required props', () => {
-      const reactDatesDateRangePicker = getReactDatesDateRangePicker();
-      const actual = reactDatesDateRangePicker.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          endDateId: expect.stringContaining('end_date_id_'),
-          startDateId: expect.stringContaining('start_date_id_'),
-        })
-      );
-    });
-
-    it('should get the right static custom appearance props', () => {
-      const reactDatesDateRangePicker = getReactDatesDateRangePicker();
-      const actual = reactDatesDateRangePicker.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          customArrowIcon: <Icon name="arrow right" />,
-          customInputIcon: <Icon name="calendar outline" size="large" />,
-          daySize: 52,
-          hideKeyboardShortcutsPanel: true,
-          navNext: <Icon name="arrow right" />,
-          navPrev: <Icon name="arrow left" />,
+          type: 'text',
         })
       );
     });
   });
 
-  describe('Interaction: onChange', () => {
-    it('should persist the value in component state', () => {
-      const now = moment();
-      const value = { startDate: now };
-      const dateRangePicker = shallow(<DateRangePicker />);
-      dateRangePicker.instance().handleInputControllerChange(undefined, value);
-      const actual = dateRangePicker.state();
-      expect(actual).toEqual(expect.objectContaining(value));
-    });
-  });
-
-  describe('Interaction: onFocusChange', () => {
-    it('should persist the value in component state', () => {
-      const value = 'startDate';
-      const dateRangePicker = shallow(<DateRangePicker />);
-      dateRangePicker.instance().handleFocusChange(value);
-      const actual = dateRangePicker.state();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          focusedInput: value,
-        })
-      );
-    });
-  });
-
-  describe('State change: value', () => {
-    it('should call the function passed as `props.onChange`', () => {
-      const handleChange = jest.fn();
-      const props = { name: 'winnie', onChange: handleChange };
-      const newState = { endDate: null, startDate: moment() };
-      const dateRangePicker = getDateRangePicker(props);
-      dateRangePicker.setState(newState);
-      expect(handleChange).toHaveBeenCalledWith(
-        props.name,
-        expect.objectContaining(newState)
-      );
-    });
-  });
-
-  it('should have displayName `DateRangePicker`', () => {
-    const actual = DateRangePicker.displayName;
-    expect(actual).toBe('DateRangePicker');
+  it('should have displayName `PhoneInput`', () => {
+    const actual = PhoneInput.displayName;
+    expect(actual).toBe('PhoneInput');
   });
 });
