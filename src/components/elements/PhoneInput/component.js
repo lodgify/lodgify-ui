@@ -1,26 +1,52 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { Flag } from 'semantic-ui-react';
+import { isEqual } from 'lodash';
 
 import { InputController } from '../InputController';
+
+import { parseValue } from './utils/parseValue';
+import { getIconOrFlag } from './utils/getIconOrFlag';
 
 /**
  * A phone input allows a user to enter a phone number.
  * @extends {React.PureComponent}
  */
 export class Component extends PureComponent {
+  state = {
+    country: undefined,
+    value: '',
+  };
+
+  /**
+   * Call `props.onChange` with the new value from state.
+   */
+  componentDidUpdate(prevProps, { value: prevValue }) {
+    const { value } = this.state;
+    const { name, onChange } = this.props;
+    !isEqual(prevValue, value) && onChange(name, value);
+  }
+
+  /**
+   * Parse the value, format if possible and persist in component state.
+   */
+  handleChange = (name, value) => {
+    const { country, phone } = parseValue(value);
+    this.setState({ country, value: phone });
+  };
+
   render() {
-    const { error, isValid, label, name, onChange } = this.props;
+    const { error, isValid, label, name } = this.props;
+    const { country, value } = this.state;
     return (
       <InputController
         error={error}
-        icon={<Flag name="ad" />}
+        icon={getIconOrFlag(country)}
         isValid={isValid}
         label={label}
         name={name}
-        onChange={onChange}
+        onChange={this.handleChange}
       >
-        <input type="text" />
+        <input type="text" value={value} />
       </InputController>
     );
   }

@@ -1,5 +1,3 @@
 ```jsx
-<PhoneInput
-  label="Phone"
-/>
+<PhoneInput />
 ```
