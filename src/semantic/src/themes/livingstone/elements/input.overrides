@@ -259,6 +259,9 @@
     }
 
     i.large.green.checkmark.icon {
+      height: @validIconHeight;
+      left: auto;
+      opacity: inherit;
       position: absolute;
       right: @inputHorizontalPadding;
       top: @validIconPositionTop;
