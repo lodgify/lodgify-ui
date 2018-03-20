@@ -1,0 +1,5 @@
+```jsx
+<PhoneInput
+  label="Phone"
+/>
+```
