@@ -1,17 +1,21 @@
 ### Usage
 
-#### No `imageUrl` specified
-
-```jsx
-<Image />
-```
-
 #### Standard Example
 
+Fluid by default
 ```jsx
 <Image
   imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1140&mode=max"
-  alternativeText='Seamlessly image loading amuses me'
+  alternativeText='Seamlessly fluid image loading amuses me'
+/>
+```
+
+Not fluid image
+```jsx
+<Image
+  imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=320&mode=max"
+  isFluid={false}
+  alternativeText='Seamlessly non-fluid image loading amuses me'
 />
 ```
 
@@ -31,4 +35,10 @@
     }
   ]}
 />
+```
+
+#### No `imageUrl` specified
+
+```jsx
+<Image />
 ```

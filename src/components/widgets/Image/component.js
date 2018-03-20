@@ -15,6 +15,8 @@ export const Component = ({
   alternativeText,
   imageTitle,
   className,
+  onLoad,
+  isFluid,
 }) => (
   <div>
     {!!imageUrl.length && (
@@ -27,7 +29,8 @@ export const Component = ({
           alt={alternativeText}
           className={cx(LEGACY_CLASSNAME, className)}
           title={imageTitle}
-          fluid
+          onLoad={onLoad}
+          fluid={isFluid}
         />
       </picture>
     )}
@@ -41,7 +44,8 @@ export const Component = ({
           alt={alternativeText}
           className={cx(LEGACY_CLASSNAME, className)}
           title={imageTitle}
-          fluid
+          onLoad={onLoad}
+          fluid={isFluid}
         >
           <Label content="Image not found!" icon="warning" />
         </Image>
@@ -58,17 +62,16 @@ Component.defaultProps = {
   imageTitle: 'Image title',
   className: null,
   sources: [],
+  onLoad: Function.prototype,
+  isFluid: true,
 };
 
 Component.propTypes = {
-  /** URL pointing to the image to render
-   *  @param {Object} imageUrl - The base image URL
-   */
+  /** URL pointing to the image to render */
   imageUrl: PropTypes.string,
   /** Collection of objects to specify different image sources
    *  See https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
    *  for further info
-   *  @param {Object} sources - Collection of image sources
    */
   sources: PropTypes.arrayOf(
     PropTypes.shape({
@@ -76,16 +79,14 @@ Component.propTypes = {
       media: PropTypes.string.isRequired,
     })
   ),
-  /** Alternative text to show if the image can't be loaded by the browser
-   *  @param {Object} alternativeText - Alternative text
-   */
+  /** Alternative text to show if the image can't be loaded by the browser */
   alternativeText: PropTypes.string,
-  /** Title of the image to show when hovering it on desktop browsers
-   *  @param {Object} imageTitle - Title string
-   */
+  /** Title of the image to show when hovering it on desktop browsers */
   imageTitle: PropTypes.string,
-  /** Custom class name string to customize the resulting img
-   *  @param {Object} className - Custom class name to style the image
-   */
+  /** Custom class name string to customize the resulting img */
   className: PropTypes.string,
+  /** Whether to render fluidly the image or not */
+  isFluid: PropTypes.bool,
+  /** The function to call when the image is loaded */
+  onLoad: PropTypes.func,
 };
