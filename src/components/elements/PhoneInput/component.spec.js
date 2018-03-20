@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Flag } from 'semantic-ui-react';
 
 import { Component as PhoneInput } from './component';
 
@@ -21,7 +20,7 @@ describe('<PhoneInput />', () => {
     expect(actual).toEqual(
       expect.objectContaining({
         error: false,
-        icon: <Flag name="ad" />,
+        icon: expect.any(Object),
         isValid: false,
         label: '',
         name: '',
@@ -43,8 +42,30 @@ describe('<PhoneInput />', () => {
       expect(actual).toEqual(
         expect.objectContaining({
           type: 'text',
+          value: '',
         })
       );
+    });
+  });
+
+  describe('Interaction: onChange', () => {
+    it('should persist the value in component state', () => {
+      const value = '🐸';
+      const wrapper = getPhoneInput();
+      const input = wrapper.find('InputController');
+      input.simulate('change', undefined, value);
+      const actual = wrapper.state('value');
+      expect(actual).toBe(value);
+    });
+  });
+
+  describe('State change: value', () => {
+    it('should call the function passed as `props.onChange`', () => {
+      const value = 'someValue';
+      const handleChange = jest.fn();
+      const wrapper = getPhoneInput({ onChange: handleChange });
+      wrapper.setState({ value });
+      expect(handleChange).toHaveBeenCalledWith('', value);
     });
   });
 
