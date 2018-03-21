@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { GridColumn } from 'semantic-ui-react';
 
+import { GridColumn } from 'collections/GridColumn';
 import { OwnerLogin } from 'widgets/OwnerLogin';
 
 import { Component as Container } from './component';
@@ -13,9 +13,24 @@ describe('<Container />', () => {
   });
 
   describe('the `Container` component', () => {
-    it('should not render children if not informed', () => {
+    it('should not render children none provided', () => {
       const column = shallow(<Container />).find(GridColumn);
       expect(column.children().exists()).toBeFalsy();
+    });
+
+    it('should render a GridColumn', () => {
+      const column = shallow(<Container />).find(GridColumn);
+      expect(column).toHaveLength(1);
+    });
+
+    it('should render a GridColumn with the right props', () => {
+      const column = shallow(<Container />).find(GridColumn);
+      const actual = column.props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          width: 16,
+        })
+      );
     });
 
     it('should render children if informed', () => {
