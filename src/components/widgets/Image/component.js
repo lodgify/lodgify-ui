@@ -18,40 +18,26 @@ export const Component = ({
   onLoad,
   isFluid,
 }) => (
-  <div>
-    {!!imageUrl.length && (
-      <picture role="figure">
-        {sources.map(({ srcset, media }) => (
-          <source srcset={srcset} media={media} />
-        ))}
-        <Image
-          src={imageUrl}
-          alt={alternativeText}
-          className={cx(LEGACY_CLASSNAME, className)}
-          title={imageTitle}
-          onLoad={onLoad}
-          fluid={isFluid}
-        />
-      </picture>
-    )}
-    {!imageUrl.length && (
-      <picture role="figure">
-        {sources.map(({ srcset, media }) => (
-          <source srcset={srcset} media={media} />
-        ))}
-        <Image
-          src={imageUrl}
-          alt={alternativeText}
-          className={cx(LEGACY_CLASSNAME, className)}
-          title={imageTitle}
-          onLoad={onLoad}
-          fluid={isFluid}
-        >
-          <Label content="Image not found!" icon="warning" />
-        </Image>
-      </picture>
-    )}
-  </div>
+  <picture role="figure">
+    {sources.map(({ srcset, media }) => (
+      <source srcSet={srcset} media={media} />
+    ))}
+    {React.createElement(Image, {
+      src: imageUrl,
+      alt: alternativeText,
+      className: cx(LEGACY_CLASSNAME, className),
+      title: imageTitle,
+      onLoad: onLoad,
+      fluid: isFluid,
+      children:
+        (!imageUrl &&
+          React.createElement(Label, {
+            content: 'Image not Found!',
+            icon: 'warning',
+          })) ||
+        null,
+    })}
+  </picture>
 );
 
 Component.displayName = 'Image';
