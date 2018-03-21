@@ -4,11 +4,10 @@ import PropTypes from 'prop-types';
 import { Grid } from 'collections/Grid';
 import { GridRow } from 'collections/Grid/GridRow';
 import { GridColumn } from 'collections/Grid/GridColumn';
-import { COLUMNS } from 'collections/Grid';
 
 /**
- * A container which renders widgets inside of it
- * A 12-columns based grid width can also be specified
+ * A container which renders widgets inside of it.
+ * By default spans to 100% width stacking widgets vertically.
  */
 export const Component = ({ children, width }) => (
   <Grid>
@@ -26,12 +25,12 @@ Component.displayName = 'Container';
 
 Component.defaultProps = {
   children: null,
-  width: COLUMNS,
+  width: 12,
 };
 
 Component.propTypes = {
-  /** The child components and elements. */
+  /** The children widgets. */
   children: PropTypes.node,
-  /** How many columns the widget should span */
+  /** Value between 1 and 12 */
   width: PropTypes.number,
 };

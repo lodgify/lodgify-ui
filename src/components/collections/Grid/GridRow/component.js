@@ -6,6 +6,8 @@ import { getTwelveColumnsWidthValue } from '../utils';
 /**
  * GridRow is the Lodgify UI 12-columns based component for the
  * Semantic UI Grid.Row.
+ *
+ * The [Semantic UI props](https://react.semantic-ui.com/collections/grid) can be for this component.
  * @type {Object}
  */
 export const Component = props => (
