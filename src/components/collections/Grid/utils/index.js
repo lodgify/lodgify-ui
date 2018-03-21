@@ -1,0 +1,1 @@
+export { getTwelveColumnsWidthValue } from './getTwelveColumnsWidthValue';
