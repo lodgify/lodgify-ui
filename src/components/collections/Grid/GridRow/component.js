@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 
-import { COLUMNS } from '../constants';
+import { DEFAULT_MAX_WIDTH } from '../constants';
 import { getTwelveColumnsWidthValue } from '../utils';
 /**
  * GridRow is the Lodgify UI 12-columns based component for the
@@ -11,7 +11,7 @@ import { getTwelveColumnsWidthValue } from '../utils';
 export const Component = props => (
   <Grid.Row
     {...Object.assign({}, props, {
-      columns: getTwelveColumnsWidthValue(COLUMNS),
+      columns: getTwelveColumnsWidthValue(DEFAULT_MAX_WIDTH),
     })}
   />
 );

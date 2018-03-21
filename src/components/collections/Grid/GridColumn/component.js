@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid } from 'semantic-ui-react';
 
+import { DEFAULT_COLUMN_WIDTH } from '../constants';
 import { getTwelveColumnsWidthValue } from '../utils';
 /**
  * GridColumn is the Lodgify UI 12-columns based component for the
@@ -17,7 +18,7 @@ export const Component = props => (
 );
 
 Component.defaultProps = {
-  width: 1,
+  width: DEFAULT_COLUMN_WIDTH,
 };
 
 Component.propTypes = {

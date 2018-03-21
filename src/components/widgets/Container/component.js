@@ -7,8 +7,8 @@ import { GridColumn } from 'collections/Grid/GridColumn';
 import { COLUMNS } from 'collections/Grid';
 
 /**
- * A container which renders a column which spans to a given width
- * and render its children
+ * A container which renders widgets inside of it
+ * A 12-columns based grid width can also be specified
  */
 export const Component = ({ children, width }) => (
   <Grid>
