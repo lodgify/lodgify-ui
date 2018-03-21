@@ -1,24 +1,94 @@
-// Global variables
+/*******************************
+         Site Settings
+*******************************/
 
-// Fonts
+/*-------------------
+       Fonts
+--------------------*/
 
 @fontName         : 'Roboto';
 
-@textColor        : @black;
-@hoveredTextColor : @black;
+/*-------------------
+      Base Sizes
+--------------------*/
 
-// Heading
+/* This is the single variable that controls them all */
 
-@headerFont       : @fontName;
-@headerLineHeight : 36px;
+/* The size of page text  */
 
-@h1 : 48px;
-@h2 : 42px;
-@h3 : 34px;
-@h4 : 28px;
-@h5 : 22px;
+/*-------------------
+    Border Radius
+--------------------*/
 
-// Paragraph
+/* See Power-user section below
+   for explanation of @px variables
+*/
+@absoluteBorderRadius  : 0;
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@primaryColor      : @yellow;
+@darkPrimaryColor  : @darkYellow;
+@lightPrimaryColor : @lightYellow;
+
+/*--------------
+  Page Heading
+---------------*/
+
+@headerLineHeight  : 36px;
+
+@h1                : 48px;
+@h2                : 42px;
+@h3                : 34px;
+@h4                : 28px;
+@h5                : 22px;
+
+/*--------------
+   Form Input
+---------------*/
+
+/* This adjusts the default form input across all elements */
+@inputBackground            : @greyOne;
+@inputVerticalPadding       : @12px;
+@inputHorizontalPadding     : @15px;
+
+@inputHoverBorderColor      : @greyThree;
+
+/* Input Text Color */
+@inputPlaceholderColor      : @greySix;
+
+/* Line Height Default For Inputs in Browser (Descendors are 17px at 14px base em) */
+
+/*-------------------
+    Focused Input
+--------------------*/
+
+/* Used on inputs, textarea etc */
+@focusedFormBorderColor : @black;
+@focusedInputBackground : @offWhite;
+
+/* Used on dropdowns, other larger blocks */
+
+/*-------------------
+        Sizes
+--------------------*/
+
+/*
+  Sizes are all expressed in terms of 14px/em (default em)
+  This ensures these "ratios" remain constant despite changes in EM
+*/
+
+/*-------------------
+        Page
+--------------------*/
+
+@textColor  : @black;
+
+/*-------------------
+      Paragraph
+--------------------*/
 
 @paragraphColor           : @greySeven;
 @paragraphLineHeight      : 26px;
@@ -27,26 +97,56 @@
 @tinyParagraphFontWeight  : bold;
 @tinyParagraphLineHeight  : 24px;
 
-// Links
+/*-------------------
+       Links
+--------------------*/
 
-@linkColor           : @primaryColor;
-@linkUnderline       : underline;
+@linkColor      : @primaryColor;
+@linkUnderline  : underline;
 
-// Colors
+/*-------------------
+    Scroll Bars
+--------------------*/
 
-// base
+/* Inverted */
+
+/*-------------------
+  Highlighted Text
+--------------------*/
+
+/*-------------------
+       Loader
+--------------------*/
+
+/*-------------------
+        Grid
+--------------------*/
+
+/*-------------------
+     Transitions
+--------------------*/
+
+/*-------------------
+     Breakpoints
+--------------------*/
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
 @green            : #3adf35;
 @grey             : #9e9fa0;
 @red              : #d0021b;
 @yellow           : #fac600;
 
-// dark
+/*---  Dark Colors  ---*/
 @darkYellow       : #e5b505;
 
-// light
+/*---  Light Colors  ---*/
 @lightYellow      : #fde37f;
 
-// neutrals
+/*---   Neutrals  ---*/
 @black            : #333;
 @greyEight        : #444;
 @greySeven        : #555;
@@ -59,37 +159,190 @@
 @offWhite         : #fdfdfd;
 @pureWhite        : #fff;
 
-@primaryColor     : @yellow;
-@darkPrimaryColor : @darkYellow;
-@lightPrimaryColor: @lightYellow;
-
-// Filters
 @grayscaleFilter  : opacity(.5) grayscale(100%);
 
-// States
+/*--- Colored Backgrounds ---*/
 
-@disabledBackgroundColor: @greyFive;
+/*--- Colored Headers ---*/
 
-// Input
+/*--- Colored Text ---*/
 
-@inputBackground            : @greyOne;
-@inputVerticalPadding       : @12px;
-@inputHorizontalPadding     : @15px;
-@inputPlaceholderColor      : @greySix;
+/*--- Colored Border ---*/
 
-@focusedFormBorderColor : @black;
-@focusedInputBackground : @offWhite;
+/*-------------------
+     Alpha Colors
+--------------------*/
 
-// Borders
+/*-------------------
+       Accents
+--------------------*/
 
-@absoluteBorderRadius       : 0;
-@inputHoverBorderColor      : @greyThree;
-@borderColor                : transparent;
-@negativeBorderColor        : @red;
-@solidInternalBorderColor   : @greyFive;
+/* Differentiating Neutrals */
 
-// Shadow
-
+/* Differentiating Layers */
 @floatingShadow   : 0 2px 7px 0 rgba(0, 0, 0, 0.27);
 @subMenuShadow    : 0 4px 12px 0 rgba(0, 0, 0, 0.12);
 @spreadShadow     : 0 0 35px 0 rgba(0, 0, 0, 0.07);
+
+/*******************************
+           Power-User
+*******************************/
+
+/*-------------------
+    Emotive Colors
+--------------------*/
+
+/* Positive */
+
+/* Negative */
+@negativeBorderColor        : @red;
+
+/* Info */
+
+/* Warning */
+
+/*-------------------
+        Paths
+--------------------*/
+
+/* For source only. Modified in gulp for dist */
+
+/*-------------------
+       Em Sizes
+--------------------*/
+
+/*
+  This rounds @size values to the closest pixel then expresses that value in (r)em.
+  This ensures all size values round to exact pixels
+*/
+
+/* em */
+
+/* rem */
+
+/*-------------------
+       Icons
+--------------------*/
+
+/* Maximum Glyph Width of Icon */
+
+/*-------------------
+     Neutral Text
+--------------------*/
+
+@hoveredTextColor : @black;
+
+/*-------------------
+     Brand Colors
+--------------------*/
+
+/*-------------------
+      Borders
+--------------------*/
+
+@borderColor                : transparent;
+
+@solidInternalBorderColor   : @greyFive;
+
+/*-------------------
+    Derived Values
+--------------------*/
+
+/* Loaders Position Offset */
+
+/* Rendered Scrollbar Width */
+
+/* Maximum Single Character Glyph Width, aka Capital "W" */
+
+/* Used to match floats with text */
+
+/* Header Spacing */
+
+/* Minimum Mobile Width */
+
+/* Positive / Negative Dupes */
+
+/* Responsive */
+
+/*-------------------
+  Exact Pixel Values
+--------------------*/
+
+/*
+  These are used to specify exact pixel values in em
+  for things like borders that remain constantly
+  sized as emSize adjusts
+
+  Since there are many more sizes than names for sizes,
+  these are named by their original pixel values.
+*/
+
+/* Columns */
+
+/*******************************
+             States
+*******************************/
+
+/*-------------------
+      Disabled
+--------------------*/
+
+@disabledBackgroundColor  : @greyFive;
+
+/*-------------------
+        Hover
+--------------------*/
+
+/*---  Shadows  ---*/
+
+/*---  Colors  ---*/
+
+/*---  Emotive  ---*/
+
+/*---  Brand   ---*/
+
+/*---  Dark Tones  ---*/
+
+/*---  Light Tones  ---*/
+
+/*-------------------
+        Focus
+--------------------*/
+
+/*---  Colors  ---*/
+
+/*---  Emotive  ---*/
+
+/*---  Brand   ---*/
+
+/*---  Dark Tones  ---*/
+
+/*---  Light Tones  ---*/
+
+/*-------------------
+    Down (:active)
+--------------------*/
+
+/*---  Colors  ---*/
+
+/*---  Emotive  ---*/
+
+/*---  Brand   ---*/
+
+/*---  Dark Tones  ---*/
+
+/*---  Light Tones  ---*/
+
+/*-------------------
+        Active
+--------------------*/
+
+/*---  Colors  ---*/
+
+/*---  Emotive  ---*/
+
+/*---  Brand   ---*/
+
+/*---  Dark Tones  ---*/
+
+/*---  Light Tones  ---*/
