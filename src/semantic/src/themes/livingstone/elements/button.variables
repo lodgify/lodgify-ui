@@ -15,4 +15,4 @@
 @disabledFontColor: @pureWhite;
 @disabledOpacity: 1;
 
-@iconMargin: 0em @iconDistance 0em -(@iconDistance);
+@iconMargin: 0 @iconDistance 0 -(@iconDistance);

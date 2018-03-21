@@ -53,7 +53,7 @@
 
 @selectionBorderRadius              : 0;
 @selectionMaxWidth                  : 350px;
-@selectionMinWidth                  : unset;
+@selectionMinWidth                  : auto;
 @selectionWidth                     : 100%;
 
 /*  Selection Menu */
