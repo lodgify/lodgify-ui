@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Image, Label } from 'semantic-ui-react';
 
-const LEGACY_CLASSNAME = 'img-responsive';
+import { LEGACY_CLASSNAME, IMAGE_NOT_FOUND } from './constants';
 
 /**
  * The standard Image widget
@@ -19,8 +19,8 @@ export const Component = ({
   isFluid,
 }) => (
   <picture role="figure">
-    {sources.map(({ srcset, media }) => (
-      <source srcSet={srcset} media={media} />
+    {sources.map(({ srcset, media }, index) => (
+      <source srcSet={srcset} media={media} key={index} />
     ))}
     {React.createElement(Image, {
       src: imageUrl,
@@ -32,7 +32,7 @@ export const Component = ({
       children:
         (!imageUrl &&
           React.createElement(Label, {
-            content: 'Image not Found!',
+            content: IMAGE_NOT_FOUND,
             icon: 'warning',
           })) ||
         null,
