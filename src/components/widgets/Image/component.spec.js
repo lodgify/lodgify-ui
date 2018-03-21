@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import { Image as SemanticImage, Label } from 'semantic-ui-react';
 
 import { Component as Image } from './component';
-import { LEGACY_CLASSNAME } from './constants';
 
 describe('<Image />', () => {
   it('should render a single Lodgify UI `Image` component', () => {
@@ -35,7 +34,7 @@ describe('<Image />', () => {
         expect.objectContaining({
           src: props.imageUrl,
           alt: props.alternativeText,
-          className: LEGACY_CLASSNAME,
+          className: String.prototype,
           fluid: props.isFluid,
           onLoad: props.onLoad,
           title: props.imageTitle,

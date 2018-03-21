@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Image, Label } from 'semantic-ui-react';
 
-import { LEGACY_CLASSNAME, IMAGE_NOT_FOUND } from './constants';
+import { IMAGE_NOT_FOUND } from './constants';
 
 /**
  * The standard Image widget
@@ -22,21 +22,16 @@ export const Component = ({
     {sources.map(({ srcset, media }, index) => (
       <source srcSet={srcset} media={media} key={index} />
     ))}
-    {React.createElement(Image, {
-      src: imageUrl,
-      alt: alternativeText,
-      className: cx(LEGACY_CLASSNAME, className),
-      title: imageTitle,
-      onLoad: onLoad,
-      fluid: isFluid,
-      children:
-        (!imageUrl &&
-          React.createElement(Label, {
-            content: IMAGE_NOT_FOUND,
-            icon: 'warning',
-          })) ||
-        null,
-    })}
+    <Image
+      src={imageUrl}
+      alt={alternativeText}
+      className={cx(className)}
+      title={imageTitle}
+      onLoad={onLoad}
+      fluid={isFluid}
+    >
+      {!imageUrl ? <Label content={IMAGE_NOT_FOUND} icon="warning" /> : null}
+    </Image>
   </picture>
 );
 
