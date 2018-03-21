@@ -56,8 +56,7 @@ Component.propTypes = {
   /** URL pointing to the image to render */
   imageUrl: PropTypes.string,
   /** Collection of objects to specify different image sources
-   *  See https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-   *  for further info
+   *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
    */
   sources: PropTypes.arrayOf(
     PropTypes.shape({
