@@ -236,7 +236,7 @@
       top: @errorMessageTopPosition;
 
       &:before {
-        left: unset;
+        left: auto;
         right: 6px;
       }
     }
