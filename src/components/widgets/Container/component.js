@@ -1,7 +1,8 @@
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 
-import { GridColumn } from 'collections/GridColumn';
+import { GridColumn } from 'collections/Grid/GridColumn';
+import { FULL_WIDTH_COLUMN } from 'collections/Grid';
 
 /**
  * A container which renders a column which spans to a given width
@@ -19,7 +20,7 @@ Component.displayName = 'Container';
 
 Component.defaultProps = {
   children: null,
-  width: 16,
+  width: FULL_WIDTH_COLUMN,
 };
 
 Component.propTypes = {

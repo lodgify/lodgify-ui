@@ -1,8 +1,8 @@
 ```jsx
-<Grid columns={16}>
+<Grid>
  <GridRow>
    <Container>
-     <OwnerSignUp />
+     <OwnerLogin />
    </Container>
  </GridRow>
 </Grid>
@@ -13,7 +13,7 @@
 #### 50% width customisation
 
 ```jsx
-<Grid columns={16}>
+<Grid>
  <GridRow>
    <Container width={8}>
      <OwnerLogin />
