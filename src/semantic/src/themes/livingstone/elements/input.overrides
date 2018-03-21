@@ -259,6 +259,9 @@
     }
 
     i.large.green.checkmark.icon {
+      height: @validIconHeight;
+      left: auto;
+      opacity: inherit;
       position: absolute;
       right: @inputHorizontalPadding;
       top: @validIconPositionTop;
@@ -269,6 +272,51 @@
   /*-------------------
         Variations
   --------------------*/
+
+  /* Icon */
+
+  // Partial duplication of declarations
+  // for `.ui.icon.input > i.icon`
+  // in `semantic/src/definitions/elements/input.less`
+  &.left.icon {
+    & > i.flag:not(.icon) {
+      cursor: default;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      position: absolute;
+      width: @iconWidth;
+
+      &:before {
+        filter: @grayscaleFilter;
+        left: 50%;
+        margin-left: @flagIconXOffset;
+        margin-top: @flagIconYOffset;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: @flagIconScale;
+      }
+    }
+
+    input:focus ~ i.flag:not(.icon),
+    textarea:focus ~ i.flag:not(.icon),
+    &.dirty > i.flag:not(.icon) {
+      &:before {
+        filter: none;
+      }
+    }
+
+    label {
+      left: @leftIconInputLabelLeftPosition;
+    }
+
+    input:focus + label,
+    textarea:focus + label,
+    &.dirty > label {
+      transform: translate(-(@leftIconInputLabelFocusXTranslate), -(@labelFocusYTranslate));
+    }
+  }
 
   /* Labeled */
   label {
@@ -285,6 +333,6 @@
   &.dirty > label {
     color: @labelFocusColor;
     font-size: @labelFocusFontSize;
-    transform: translate(-(@labelFocusYTranslate), -(@labelFocusXTranslate));
+    transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
   }
 }

@@ -8,6 +8,15 @@ describe('getValue', () => {
       const actual = getValue(mockEvent);
       expect(actual).toBe(value);
     });
+
+    it('should respect defined but falsy values at `eventOrValue.target.value`', () => {
+      const values = [false, null, 0, NaN, ''];
+      values.forEach(value => {
+        const mockEvent = { target: { value } };
+        const actual = getValue(mockEvent);
+        expect(actual).toBe(value);
+      });
+    });
   });
 
   describe('if it is passed anything else', () => {
