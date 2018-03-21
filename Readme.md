@@ -128,6 +128,13 @@ Styles live in `src/semantic/src/themes/livingstone`.
 
 The organisation and format of the directory and files is prescribed by the [Semantic UI theming guide](https://semantic-ui.com/usage/theming.html). Give that a good read before writing any styles (Clue: write as little css as you can 😉).
 
+If you add a new `*.overrides` or `*.variables` file in the livingstone theme directory, you need to:
+
+1. add the name of the component to the `components` array in [semantic.json](https://github.com/lodgify/lodgify-ui/blob/production/semantic.json)
+1. change the value of the component entry in [src/semantic/src/theme.config](https://github.com/lodgify/lodgify-ui/blob/production/src/semantic/src/theme.config) from `'default'` to `'livingstone'`.
+
+If you do not take these steps, the declarations in your files will not be included in the styles build.
+
 ### Contributing
 
 Open a PR into the [production branch](https://github.com/lodgify/lodgify-ui/tree/production).
