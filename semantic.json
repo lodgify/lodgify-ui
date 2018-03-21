@@ -18,5 +18,24 @@
   "permission": false,
   "autoInstall": true,
   "rtl": false,
-  "version": "2.3.1"
+  "version": "2.3.1",
+  "components": [
+    "button",
+    "card",
+    "checkbox",
+    "divider",
+    "dropdown",
+    "flag",
+    "form",
+    "header",
+    "icon",
+    "image",
+    "input",
+    "label",
+    "menu",
+    "popup",
+    "reset",
+    "site",
+    "transition"
+  ]
 }
