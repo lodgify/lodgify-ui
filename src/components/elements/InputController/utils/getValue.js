@@ -1,4 +1,4 @@
-import { get } from 'lodash';
+import { get, isUndefined } from 'lodash';
 
 /**
  * @param  {Object|any} eventOrValue
@@ -6,5 +6,5 @@ import { get } from 'lodash';
  */
 export const getValue = eventOrValue => {
   const nestedValue = get(eventOrValue, ['target', 'value']);
-  return nestedValue !== undefined ? nestedValue : eventOrValue;
+  return !isUndefined(nestedValue) ? nestedValue : eventOrValue;
 };
