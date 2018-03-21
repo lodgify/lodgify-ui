@@ -63,6 +63,9 @@
 @darkPrimaryColor : @darkYellow;
 @lightPrimaryColor: @lightYellow;
 
+// Filters
+@grayscaleFilter  : opacity(.5) grayscale(100%);
+
 // States
 
 @disabledBackgroundColor: @greyFive;

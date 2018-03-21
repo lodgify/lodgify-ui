@@ -46,6 +46,7 @@ export class Component extends PureComponent {
     const {
       children,
       error,
+      icon,
       inputOnChangeFunctionName,
       isFocused,
       isValid,
@@ -60,6 +61,7 @@ export class Component extends PureComponent {
           error: error,
           focus: isFocused,
         })}
+        iconPosition={icon && 'left'}
       >
         {hasErrorMessage && <ErrorMessage errorMessage={error} />}
         {isValid && <Icon color="green" name="checkmark" size="large" />}
@@ -68,6 +70,7 @@ export class Component extends PureComponent {
           ref: input => (this.htmlInput = input),
         })}
         {label && <label onClick={this.handleClick}>{label}</label>}
+        {icon}
       </Input>
     );
   }
@@ -76,6 +79,7 @@ export class Component extends PureComponent {
 Component.displayName = 'InputController';
 
 Component.defaultProps = {
+  icon: null,
   inputOnChangeFunctionName: 'onChange',
   isFocused: false,
   label: null,
@@ -86,6 +90,8 @@ Component.propTypes = {
   children: PropTypes.element.isRequired,
   /** Is input in an error state. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  /** An icon to display in the input */
+  icon: PropTypes.element,
   /** The name of the change function on the input, if not `onChange`.  */
   inputOnChangeFunctionName: PropTypes.string,
   /** Is input in a focused state. */
