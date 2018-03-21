@@ -1,36 +1,117 @@
-@background                         : transparent;
-@hoverItemBackground                : @background;
-@activeItemBackground               : @background;
-@activeHoverItemBackground          : @background;
+/*******************************
+             Menu
+*******************************/
 
+/*-------------------
+      Collection
+--------------------*/
+
+/* Menu */
+@background                         : transparent;
 @menuHorizontalMargin               : 92px;
 
-@itemTextColor                      : @pureWhite;
-@hoverItemTextColor                 : @itemTextColor;
-@activeItemTextColor                : @itemTextColor;
-@activeHoverItemColor               : @itemTextColor;
-
+/* Menu Item */
 // Need to use margin rather than padding to implement 'active' state bottom border
 @itemHorizontalPadding              : 0;
 @itemHorizontalMargin               : @15px;
 @itemVerticalPadding                : @35px;
+@itemTextColor                      : @pureWhite;
 
-// Active item underline
+/* Divider */
+
+/* Sub Menu */
+
+/* Text Item */
+
+/*--------------
+    Elements
+---------------*/
+
+/* Icon */
+
+/* Dropdown Icon */
+@dropdownIconDistance               : @10px;
+
+/* Header */
+
+/* Vertical Icon */
+
+/* Vertical Header */
+
+/* Pointing Arrow */
+
+/*--------------
+    Couplings
+---------------*/
+
+/* Button */
+
+/* Input */
+
+/* Image */
+
+/* Label */
+
+/* Dropdown in Menu */
+@dropdownMenuBoxShadow              : @subMenuShadow;
+
+@dropdownMenuBorderRadius           : @3px;
+
+@dropdownHoveredItemBackground      : @primaryColor;
+
+/* Dropdown Variations */
+@pointingDropdownMenuDistance       : -(20%);
+
+/*--------------
+     States
+---------------*/
+
+/* Hovered Item */
+@hoverItemBackground                : @background;
+@hoverItemTextColor                 : @itemTextColor;
+
+/* Pressed Item */
+
+/* Active Item */
+@activeItemBackground               : @background;
+@activeItemTextColor                : @itemTextColor;
 @activeItemUnderlineBorder          : @2px solid @primaryColor;
 @activeItemUnderlineBottomPosition  : 40%;
 @activeItemUnderlineTransition      : .5s @defaultEasing;
 
-@dropdownIconDistance               : @10px;
+/* Active Hovered Item */
+@activeHoverItemBackground          : @background;
+@activeHoverItemColor               : @itemTextColor;
 
-@dropdownHoveredItemBackground      : @primaryColor;
+/* Selected Dropdown */
 @dropdownSelectedItemBackground     : @background;
+
+/* Active Dropdown */
 @dropdownActiveItemBackground       : @background;
 
-@dropdownMenuBorderRadius           : @3px;
-@dropdownMenuBoxShadow              : @subMenuShadow;
+/* Active Sub Menu */
 
-@pointingDropdownMenuDistance       : -(20%);
+/*--------------
+     Types
+---------------*/
 
+/* Vertical */
+
+/* Secondary */
+
+/* Pointing */
+
+/* Inverted Secondary */
+
+/* Inverted Pointing */
+
+/* Tiered */
+
+/* Icon */
+
+/* Tabular */
+
+/* Pagination */
 @paginationMenuMinHeight            : 0;
 
 @paginationButtonDiameter           : @35px;
@@ -42,3 +123,37 @@
 @paginationLabelActiveBackground    : @primaryColor;
 @paginationLabelHorizontalMargin    : @8px;
 @paginationLabelVerticalMargin      : @12px;
+
+/* Labeled Icon */
+
+/* Text */
+
+/*--------------
+   Variations
+---------------*/
+
+/* Inverted */
+
+/* Inverted Sub Menu */
+
+/* Inverted Hover */
+
+/* Pressed */
+
+/* Inverted Active */
+
+/* Inverted Active Hover  */
+
+/* Inverted Menu Divider */
+
+/* Inverted Colored */
+
+/* Fixed */
+
+/* Floated */
+
+/* Attached */
+
+/* Resize large sizes */
+
+/* Sizes */
