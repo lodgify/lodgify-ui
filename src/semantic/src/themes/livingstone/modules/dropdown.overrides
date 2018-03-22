@@ -2,30 +2,31 @@
             Dropdown
 *******************************/
 
+/*-------------------
+       Element
+--------------------*/
+
 .ui.dropdown {
 
-  /*******************************
-              Content
-  *******************************/
-
-  /*--------------
-        Menu
-  ---------------*/
+/*-------------------
+       Content
+--------------------*/
 
   .menu {
 
-    /*--------------
-     Dropdown Icon
-    ---------------*/
-
+/* Icon */
     .dropdown.icon:before {
       content: '\f0d7';
     }
 
-    /*--------------
-        Menu Item
-    ---------------*/
+/* Current Text */
 
+/* Menu */
+
+
+/* Text */
+
+/* Menu Item */
     & > .item {
       text-decoration: @itemTextDecoration;
       transition: @itemTransition;
@@ -46,11 +47,15 @@
     }
 
   }
+/* Sub Menu */
 
-  /*--------------
-       Image
-  ---------------*/
+/* Menu Header */
 
+/* Menu Divider */
+
+/* Menu Input */
+
+/* Menu Image */
   & > .text > .image,
   & > .text > img,
   .menu > .item .image,
@@ -74,14 +79,23 @@
   }
 
 }
+/* Item Sub-Element */
 
-/*******************************
-              Types
-*******************************/
+/* Sub-Menu Dropdown Icon */
 
-/*--------------
-    Selection
----------------*/
+/* Description */
+
+/* Message */
+
+/* Floated Content */
+
+/*-------------------
+        Types
+--------------------*/
+
+/*------------
+   Selection
+--------------*/
 
 // The extra class .dropdown-container is needed for
 // the implementation of dropdown with icon.
@@ -99,38 +113,14 @@
     }
   }
 
-  /*  Icon */
-  & > i.icon {
-    color: @iconColor;
-    padding: @iconPadding;
-    position: absolute;
-    z-index: @iconZIndex;
+/* <select> */
 
-    & + .ui.dropdown {
-      padding-left: @dropdownWithIconPaddingLeft;
-    }
-  }
+/* Responsive */
 
-  /*  with Images */
-  &.has-images{
-    & > i.icon {
-      top: @dropdownWithImagesCaretPaddingTop;
-    }
+/* Derived */
 
-    .ui.selection.dropdown > .dropdown.icon {
-      padding-top: @dropdownWithImagesCaretPaddingTop;
-    }
-  }
-
-  /*******************************
-              States
-  *******************************/
-
-  /*--------------------
-          Hover
-          Focus
-  ----------------------*/
-
+/* Hover */
+/* Focus */
   .ui.selection.dropdown:hover,
   .ui.selection.dropdown:focus {
     background: @selectionFocusBackground;
@@ -142,9 +132,11 @@
     }
   }
 
-  /*--------------------
-          Dirty
-  ----------------------*/
+/* Visible */
+
+/* Visible Hover */
+
+/* Dirty */
 
   &.dirty {
     & > i.icon {
@@ -158,14 +150,30 @@
     }
   }
 
-/*******************************
-           Variations
-*******************************/
+/*  With Icon */
+  & > i.icon {
+    color: @iconColor;
+    padding: @iconPadding;
+    position: absolute;
+    z-index: @iconZIndex;
 
-/*--------------
-     Labeled
----------------*/
+    & + .ui.dropdown {
+      padding-left: @dropdownWithIconPaddingLeft;
+    }
+  }
 
+/*  With Image */
+  &.has-images{
+    & > i.icon {
+      top: @dropdownWithImagesCaretPaddingTop;
+    }
+
+    .ui.selection.dropdown > .dropdown.icon {
+      padding-top: @dropdownWithImagesCaretPaddingTop;
+    }
+  }
+
+/*  With Label */
   label {
     color: @labelColor;
     left: @itemHorizontalPadding;
@@ -201,11 +209,59 @@
 
 }
 
+/*--------------
+     Search
+--------------*/
+
+/* Search Selection */
+
+/* Inline */
 
 /*--------------
-     Pointing
----------------*/
+    Multiple
+--------------*/
 
+/* Split Actual Padding Between Child and Parent (allows for label spacing) */
+
+/* Child Elements */
+
+/* Dropdown Icon */
+
+/* Selection Label */
+
+/*-------------------
+       States
+--------------------*/
+
+/* Hovered */
+
+/* Default Text */
+
+/* Loading */
+
+/* Active Menu Item */
+
+/* Selected */
+
+/* Error */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Scrolling */
+
+/* Upward */
+
+/* Flyout Direction */
+
+/* Left */
+
+/* Simple */
+
+/* Floating */
+
+/* Pointing */
 .ui.pointing.dropdown .menu {
   min-width: @pointingMenuMinWidth;
 
@@ -217,3 +273,5 @@
     color: @textColor;
   }
 }
+
+/* Pointing Upward */
