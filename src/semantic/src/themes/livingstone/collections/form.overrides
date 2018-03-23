@@ -1,8 +1,88 @@
-.ui.form .field .ui.input,
-.ui.form .fields .field .ui.input {
-  max-width: unset;
-}
+/*******************************
+             Form
+*******************************/
 
-.ui.form a {
-  line-height: @secondaryCTALineHeight;
+/*-------------------
+       Elements
+--------------------*/
+
+/* Form */
+
+.ui.form {
+
+/* Text */
+
+/* Field */
+
+/* Fields */
+
+/* Form Label */
+
+/* Input */
+  .field .ui.input,
+  .fields .field .ui.input {
+    max-width: unset;
+  }
+
+/* Select */
+
+/* Text Area */
+
+/* Checkbox */
+
+/* Inline Validation Prompt */
+
+/* Action link */
+  a {
+    line-height: @actionLinkLineHeight;
+  }
+
+/*-------------------
+        States
+--------------------*/
+
+/* Focus */
+
+/* Input Focus */
+
+/* Text Area Focus */
+
+/* Disabled */
+
+/* Errored Input */
+
+/* AutoFill */
+
+/* Input Error */
+
+/* Dropdown Error */
+
+/* Focused Error */
+
+/* Placeholder Error */
+
+/* Loading Dimmer */
+
+/* Loading Spinner */
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Required */
+
+/* Inverted */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Grouped Fields */
+
+/* Inline */
+
+/*-------------------
+       Groups
+--------------------*/
+
 }

@@ -1,11 +1,50 @@
-// First child
+/*******************************
+            Header
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
 
 @firstMargin    : 0;
 
-// Sizes
+/* Sub Heading */
 
+/* Sub Header */
+
+/* Icon */
+
+/* Image */
+
+/* Label */
+
+/* Content */
+
+/* Paragraph after Header */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Sizing */
 @hugeFontSize   : @h1;
 @largeFontSize  : @h2;
 @mediumFontSize : @h3;
 @smallFontSize  : @h4;
 @tinyFontSize   : @h5;
+
+/* Sub Header */
+
+/* Icon Header */
+
+/* No Line Height Offset */
+
+/* Divided */
+
+/* Block */
+
+/* Attached */
+
+/* Inverted */
+
+/* Floated */

@@ -1,18 +1,106 @@
-// state: default
+/*******************************
+            Button
+*******************************/
 
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
 @background: @primaryColor;
-@borderRadius: 20px;
-@fontFamily: 'Roboto';
-@fontWeight: 400;
-@horizontalPadding: 40px;
-@hoverBackgroundColor: @darkPrimaryColor;
+
+/* Button defaults to using same height as input globally */
+@verticalPadding: @12px;
+@horizontalPadding: @40px;
+
+/* Text */
+@fontWeight: @normal;
 @textColor: @black;
-@verticalPadding: 12px;
+@borderRadius: @20px;
 
-// state: disabled
+/* Internal Shadow */
 
+/* Box Shadow */
+
+/* Icon */
+@iconMargin: 0 @iconDistance 0 -(@iconDistance);
+
+/* Loader */
+
+/*
+@willChange: box-shadow, transform, opacity, color, background;
+*/
+
+/*-------------------
+        Group
+--------------------*/
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hovered */
+@hoverBackgroundColor: @darkPrimaryColor;
+
+/* Focused */
+
+/* Disabled */
 @disabledBackgroundColor: @greyFive;
 @disabledFontColor: @pureWhite;
 @disabledOpacity: 1;
 
-@iconMargin: 0 @iconDistance 0 -(@iconDistance);
+/* Pressed Down */
+
+/* Active */
+
+/* Active + Hovered */
+
+/* Loading */
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Or */
+
+/* Icon */
+
+/* Labeled */
+
+/* Labeled Icon */
+
+/* Inverted */
+
+/* Basic */
+
+/* Basic Hover */
+
+/* Basic Focus */
+
+/* Basic Down */
+
+/* Basic Active */
+
+/* Basic Inverted */
+
+/* Basic Group */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Colors */
+
+/* Colored */
+
+/* Inverted */
+
+/* Ordinality */
+
+/* Compact */
+
+/* Attached */
+
+/* Floated */
+
+/* Animated */
