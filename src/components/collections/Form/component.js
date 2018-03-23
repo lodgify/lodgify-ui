@@ -5,6 +5,8 @@ import { Card, Form } from 'semantic-ui-react';
 import { Heading } from 'typography/Heading';
 import { Button } from 'elements/Button';
 
+import { getInputWidth } from './getInputWidth';
+
 /**
  * A form displays a set of related user input fields in a structured way.
  * @extends {React.PureComponent}
@@ -34,6 +36,7 @@ export class Component extends PureComponent {
           input.props.onChange(name, value);
         },
       }),
+      width: getInputWidth(input),
     });
 
   render = () => {
