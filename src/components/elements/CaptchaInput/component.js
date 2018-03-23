@@ -13,13 +13,15 @@ export const Component = ({ error, image, isValid, label, name, onChange }) => (
     <Form.Field>
       <Image src={image} />
     </Form.Field>
-    <TextInput
-      error={error}
-      isValid={isValid}
-      label={label}
-      name={name}
-      onChange={onChange}
-    />
+    <Form.Field>
+      <TextInput
+        error={error}
+        isValid={isValid}
+        label={label}
+        name={name}
+        onChange={onChange}
+      />
+    </Form.Field>
   </Form.Group>
 );
 
