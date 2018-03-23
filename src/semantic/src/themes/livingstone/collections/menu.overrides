@@ -1,88 +1,213 @@
-.ui.menu .item {
-  margin: 0 @itemHorizontalMargin;
-}
+/*******************************
+             Menu
+*******************************/
 
-.ui.menu .item:first-child {
-  margin-left: @menuHorizontalMargin;
-}
+/*-------------------
+      Collection
+--------------------*/
 
-.ui.menu .item:last-child {
-  margin-right: @menuHorizontalMargin;
-}
+/* Menu */
 
-.ui.menu .right.menu > .item:not(.no-underline):after {
-  border-bottom: @activeItemUnderlineBorder;
-  bottom: @activeItemUnderlineBottomPosition;
-  content: '';
-  left: 0;
-  opacity: 0.2;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: @activeItemUnderlineTransition;
-  width: 100%;
-}
+.ui.menu {
 
-.ui.menu .right.menu > .active.item:after,
-.ui.menu .right.menu > .underlined.item:after ,
-.ui.menu .right.menu > .item:hover:after {
-  opacity: 1;
-  transform: scaleX(1);
-}
+/* Menu Item */
+  .item {
+    margin: 0 @itemHorizontalMargin;
 
-.ui.menu .dropdown.item .menu {
-  border-radius: @dropdownMenuBorderRadius;
-}
+    &:first-child {
+      margin-left: @menuHorizontalMargin;
+    }
 
-.ui.menu .ui.dropdown .menu > .selected.item:hover,
-.ui.menu .ui.dropdown .menu > .active.item:hover {
-  background: @dropdownHoveredItemBackground !important;
-}
+    &:last-child {
+      margin-right: @menuHorizontalMargin;
+    }
+  }
 
-.ui.menu .item h5.ui.header {
-  color: @offWhite;
-}
+/* Divider */
 
-.ui.pagination.menu button.button i.chevron {
-  position: relative;
-  top: @paginationButtonIconTopPosition;
-}
+/* Sub Menu */
 
-// Pagination
+/* Text Item */
 
-.ui.pagination.menu {
-  min-height: @paginationMenuMinHeight;
-}
+/*--------------
+    Elements
+---------------*/
 
-.ui.pagination.menu .label {
-  background-color: @paginationLabelBackground;
-  margin: 0;
-  margin-left: @paginationLabelHorizontalMargin;
-  margin-top: @paginationLabelVerticalMargin;
-}
+/* Icon */
 
-.ui.pagination.menu .label:nth-child(2) {
-  margin-left: 0;
-}
+/* Dropdown Icon */
 
-.ui.pagination.menu .active.label {
-  background-color: @paginationLabelActiveBackground;
-}
+/* Header */
+  .item h5.ui.header {
+    color: @offWhite;
+  }
 
-.ui.pagination.menu button.button {
-  height: @paginationButtonDiameter;
-  margin: 0;
-  width: @paginationButtonDiameter;
-}
+/* Vertical Icon */
 
-.ui.pagination.menu button.button:first-child {
-  margin-right: @paginationButtonHorizontalMargin;
-}
+/* Vertical Header */
 
-.ui.pagination.menu button.button:last-child {
-  margin-left: @paginationButtonHorizontalMargin;
-}
+/* Pointing Arrow */
 
-.ui.pagination.menu button.button i.left.chevron {
-  margin-left: @paginationPrevButtonIconMarginLeft;
+/*--------------
+    Couplings
+---------------*/
+
+/* Button */
+
+/* Input */
+
+/* Image */
+
+/* Label */
+
+/* Dropdown in Menu */
+  .dropdown.item .menu {
+    border-radius: @dropdownMenuBorderRadius;
+  }
+
+  .ui.dropdown .menu {
+    & > .selected.item:hover,
+    & > .active.item:hover {
+      background: @dropdownHoveredItemBackground !important;
+    }
+  }
+
+/* Dropdown Variations */
+
+/*--------------
+     States
+---------------*/
+
+/* Hovered Item */
+
+/* Pressed Item */
+
+/* Active Item */
+  .right.menu {
+    & > .item:not(.no-underline):after {
+      border-bottom: @activeItemUnderlineBorder;
+      bottom: @activeItemUnderlineBottomPosition;
+      content: '';
+      left: 0;
+      opacity: 0.2;
+      position: absolute;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: @activeItemUnderlineTransition;
+      width: 100%;
+    }
+
+    & > .active.item:after,
+    & > .underlined.item:after,
+    & > .item:hover:after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
+/* Active Hovered Item */
+
+/* Selected Dropdown */
+
+/* Active Dropdown */
+
+/* Active Sub Menu */
+
+/*--------------
+     Types
+---------------*/
+
+/* Vertical */
+
+/* Secondary */
+
+/* Pointing */
+
+/* Inverted Secondary */
+
+/* Inverted Pointing */
+
+/* Tiered */
+
+/* Icon */
+
+/* Tabular */
+
+/* Pagination */
+  &.pagination {
+    min-height: @paginationMenuMinHeight;
+
+    button.button {
+      height: @paginationButtonDiameter;
+      margin: 0;
+      width: @paginationButtonDiameter;
+
+      &:first-child {
+        margin-right: @paginationButtonHorizontalMargin;
+      }
+
+      &:last-child {
+        margin-left: @paginationButtonHorizontalMargin;
+      }
+
+      i.chevron {
+        position: relative;
+        top: @paginationButtonIconTopPosition;
+
+        &.left {
+          margin-left: @paginationPrevButtonIconMarginLeft;
+        }
+      }
+    }
+
+    .label {
+      background-color: @paginationLabelBackground;
+      margin: 0;
+      margin-left: @paginationLabelHorizontalMargin;
+      margin-top: @paginationLabelVerticalMargin;
+
+      &:nth-child(2) {
+        margin-left: 0;
+      }
+
+      &.active {
+        background-color: @paginationLabelActiveBackground;
+      }
+    }
+  }
+
+/* Labeled Icon */
+
+/* Text */
+
+/*--------------
+   Variations
+---------------*/
+
+/* Inverted */
+
+/* Inverted Sub Menu */
+
+/* Inverted Hover */
+
+/* Pressed */
+
+/* Inverted Active */
+
+/* Inverted Active Hover  */
+
+/* Inverted Menu Divider */
+
+/* Inverted Colored */
+
+/* Fixed */
+
+/* Floated */
+
+/* Attached */
+
+/* Resize large sizes */
+
+/* Sizes */
+
 }

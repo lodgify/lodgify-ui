@@ -1,6 +1,57 @@
-@borderRadius           : @2px;
-@horizontalPadding      : @16px;
-@verticalPadding        : @11px;
+/*******************************
+             Popup
+*******************************/
 
+/*-------------------
+       Element
+--------------------*/
+
+@verticalPadding        : @11px;
+@horizontalPadding      : @16px;
+@borderRadius           : @2px;
+
+/*-------------------
+       Parts
+--------------------*/
+
+/* Placement */
+
+/* Header */
+
+/* Content Border */
+
+/* Arrow */
+
+/* Arrow color by position */
+
+/*-------------------
+       Types
+--------------------*/
+
+/* Tooltip */
+
+/* Inverted */
+
+/* Arrow */
+
+/*-------------------
+       Coupling
+--------------------*/
+
+/* Grid Inside Popup */
+
+/*-------------------
+       States
+--------------------*/
+
+/*-------------------
+       Variations
+--------------------*/
+
+/* Wide */
+
+/* Inverted */
 @invertedBackground     : @greyEight;
 @invertedBoxShadow      : @floatingShadow;
+
+/* Arrow color by position */

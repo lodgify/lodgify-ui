@@ -11,10 +11,77 @@
   max-width: @inputMaxWidth;
   width: @inputWidth;
 
-  /*-------------------
-          Types
-  --------------------*/
+/*-------------------
+        Types
+--------------------*/
 
+/* Icon Input */
+
+// Partial duplication of declarations
+// for `.ui.icon.input > i.icon`
+// in `semantic/src/definitions/elements/input.less`
+  &.left.icon {
+    & > i.flag:not(.icon) {
+      cursor: default;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      position: absolute;
+      width: @iconWidth;
+
+      &:before {
+        filter: @grayscaleFilter;
+        left: 50%;
+        margin-left: @flagIconXOffset;
+        margin-top: @flagIconYOffset;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: @flagIconScale;
+      }
+    }
+
+    input:focus ~ i.flag:not(.icon),
+    textarea:focus ~ i.flag:not(.icon),
+    &.dirty > i.flag:not(.icon) {
+      &:before {
+        filter: none;
+      }
+    }
+
+    label {
+      left: @leftIconInputLabelLeftPosition;
+    }
+
+    input:focus + label,
+    textarea:focus + label,
+    &.dirty > label {
+      transform: translate(-(@leftIconInputLabelFocusXTranslate), -(@labelFocusYTranslate));
+    }
+  }
+
+/* Circular Icon Input */
+
+/* Labeled Input */
+  label {
+    color: @labelColor;
+    cursor: text;
+    left: @inputHorizontalPadding;
+    position: absolute;
+    top: @inputVerticalPadding;
+    transition: transform @defaultDuration, font-size @defaultDuration;
+  }
+
+  input:focus + label,
+  textarea:focus + label,
+  &.dirty > label {
+    color: @labelFocusColor;
+    font-size: @labelFocusFontSize;
+    transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
+  }
+
+/* textarea */
+/* Date range picker */
   textarea,
   .DateRangePickerInput {
     background: @background;
@@ -173,35 +240,15 @@
     }
   }
 
-  /*-------------------
-          States
-  --------------------*/
+/*-------------------
+        States
+--------------------*/
 
-  /* Hover */
-  &:hover:not(.error):not(.valid):not(.dirty):not(.focus) {
-    input:not(:focus),
-    textarea:not(:focus),
-    .DateRangePickerInput {
-      background: @focusedInputBackground;
-      border-color: @hoveredInputBorderColor;
-    }
-  }
+/* Placeholder */
 
-  /* Dirty */
-  &.dirty:not(.error):not(.valid) {
-    input,
-    textarea,
-    .DateRangePickerInput {
-      background: @focusedInputBackground;
-      border-color: @focusedFormBorderColor;
-    }
+/* Down */
 
-    .DateRangePickerInput {
-      color: @focusColor;
-    }
-  }
-
-  /* Focus */
+/* Focus */
   textarea:focus,
   &.focus .DateRangePickerInput  {
     border-color: @focusBorderColor;
@@ -215,7 +262,7 @@
     padding-bottom: @dateRangePickerInputFocusedPaddingBottom;
   }
 
-  /* Error */
+/* Error */
   &.error {
     input,
     textarea,
@@ -242,7 +289,33 @@
     }
   }
 
-  /* Valid */
+/* Loader */
+
+/* Hover */
+  &:hover:not(.error):not(.valid):not(.dirty):not(.focus) {
+    input:not(:focus),
+    textarea:not(:focus),
+    .DateRangePickerInput {
+      background: @focusedInputBackground;
+      border-color: @hoveredInputBorderColor;
+    }
+  }
+
+/* Dirty */
+  &.dirty:not(.error):not(.valid) {
+    input,
+    textarea,
+    .DateRangePickerInput {
+      background: @focusedInputBackground;
+      border-color: @focusedFormBorderColor;
+    }
+
+    .DateRangePickerInput {
+      color: @focusColor;
+    }
+  }
+
+/* Valid */
   &.valid {
     input,
     textarea,
@@ -269,70 +342,10 @@
     }
   }
 
-  /*-------------------
-        Variations
-  --------------------*/
+/*-------------------
+      Variations
+--------------------*/
 
-  /* Icon */
+/* Inverted */
 
-  // Partial duplication of declarations
-  // for `.ui.icon.input > i.icon`
-  // in `semantic/src/definitions/elements/input.less`
-  &.left.icon {
-    & > i.flag:not(.icon) {
-      cursor: default;
-      height: 100%;
-      margin: 0;
-      overflow: hidden;
-      position: absolute;
-      width: @iconWidth;
-
-      &:before {
-        filter: @grayscaleFilter;
-        left: 50%;
-        margin-left: @flagIconXOffset;
-        margin-top: @flagIconYOffset;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        transform: @flagIconScale;
-      }
-    }
-
-    input:focus ~ i.flag:not(.icon),
-    textarea:focus ~ i.flag:not(.icon),
-    &.dirty > i.flag:not(.icon) {
-      &:before {
-        filter: none;
-      }
-    }
-
-    label {
-      left: @leftIconInputLabelLeftPosition;
-    }
-
-    input:focus + label,
-    textarea:focus + label,
-    &.dirty > label {
-      transform: translate(-(@leftIconInputLabelFocusXTranslate), -(@labelFocusYTranslate));
-    }
-  }
-
-  /* Labeled */
-  label {
-    color: @labelColor;
-    cursor: text;
-    left: @inputHorizontalPadding;
-    position: absolute;
-    top: @inputVerticalPadding;
-    transition: transform @defaultDuration, font-size @defaultDuration;
-  }
-
-  input:focus + label,
-  textarea:focus + label,
-  &.dirty > label {
-    color: @labelFocusColor;
-    font-size: @labelFocusFontSize;
-    transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
-  }
 }

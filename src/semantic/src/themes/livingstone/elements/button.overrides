@@ -1,4 +1,99 @@
+/*******************************
+            Button
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
+
+/* Button defaults to using same height as input globally */
+
+/* Text */
+
+/* Internal Shadow */
+
+/* Box Shadow */
+
+/* Icon */
+
+/* Loader */
+
+/*
+@willChange: box-shadow, transform, opacity, color, background;
+*/
+
+/*-------------------
+        Group
+--------------------*/
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hovered */
+
+/* Focused */
+
+/* Disabled */
 .ui.disabled.button {
   background-color: @disabledBackgroundColor;
   color: @disabledFontColor;
 }
+
+/* Pressed Down */
+
+/* Active */
+
+/* Active + Hovered */
+
+/* Loading */
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Or */
+
+/* Icon */
+
+/* Labeled */
+
+/* Labeled Icon */
+
+/* Inverted */
+
+/* Basic */
+
+/* Basic Hover */
+
+/* Basic Focus */
+
+/* Basic Down */
+
+/* Basic Active */
+
+/* Basic Inverted */
+
+/* Basic Group */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Colors */
+
+/* Colored */
+
+/* Inverted */
+
+/* Ordinality */
+
+/* Compact */
+
+/* Attached */
+
+/* Floated */
+
+/* Animated */

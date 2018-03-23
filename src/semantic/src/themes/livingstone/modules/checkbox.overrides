@@ -1,54 +1,103 @@
 /*******************************
-           Checkbox
+            Checkbox
 *******************************/
 
-/* Checked */
-.ui.checkbox input:checked ~ label,
-.ui.checkbox.radio input:checked ~ label {
-  font-weight: bold;
-}
+.ui.checkbox {
 
-.ui.checkbox:not(.radio):not(.toggle) input:checked ~ label:after,
-.ui.checkbox:not(.radio):not(.toggle) input:checked:focus ~ label:after {
-  content: '\2713';
-  color: @white;
-  left: @checkboxCheckmarkLeftPosition;
-}
+/* Label */
+  input:checked,
+  &.radio input:checked {
+    & ~ label {
+      font-weight: bold;
+    }
+  }
+/* Checkbox */
 
-.ui.checkbox.radio input:checked ~ label:after,
-.ui.checkbox.radio input:checked:focus ~ label:after {
-  background-color: @checkboxBackground;
-}
+/* Checkmark */
+  &:not(.radio):not(.toggle) {
+    input:checked,
+    input:checked:focus {
+      & ~ label:after {
+        content: '\2713';
+      }
+    }
+  }
+/* Label */
 
-.ui.checkbox input:checked ~ label:before,
-.ui.checkbox input:checked:focus ~ label:before,
-.ui.radio.checkbox input:checked ~ label:before,
-.ui.radio.checkbox input:checked:focus ~ label:before {
-  background-color: @checkedCheckboxBackground;
-}
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+
+/* Pressed */
+
+/* Focus */
+
+/* Active */
+
+/* Active Focus */
+
+/* Indeterminate */
 
 /* Disabled */
-.ui.checkbox.disabled input ~ label:before,
-.ui.checkbox.disabled input:focus ~ label:before,
-.ui.checkbox.disabled.radio input ~ label:before,
-.ui.checkbox.disabled.radio input:focus ~ label:before {
-  background-color: @disabledBackgroundColor;
-  border-color: @disabledCheckboxBorderColor;
-}
+  &.disabled {
+    input,
+    input:focus {
+       & ~ label:after {
+         color: @disabledCheckboxLabelTextColor;
+       }
+    }
 
-.ui.toggle.checkbox.disabled input:focus ~ label:before,
-.ui.toggle.checkbox.disabled input ~ label:before {
-  /* "important" marker required to overwrite the one declared in checkbox.less */
-  background-color: @disabledBackgroundColor !important;
-  border-width: 1px;
-}
+    &,
+    &.radio {
+      input,
+      input:focus {
+        & ~ label:before {
+          background-color: @disabledBackgroundColor;
+          border-color: @disabledCheckboxBorderColor;
+        }
+      }
+    }
 
-.ui.checkbox.disabled input ~ label:after,
-.ui.checkbox.disabled input:focus ~ label:after {
-  color: @disabledCheckboxLabelTextColor;
-}
+    &.radio {
+      input,
+      input:focus {
+        & ~ label:after {
+          background-color: @disabledCheckboxLabelBackgroundColor;
+        }
+      }
+    }
 
-.ui.checkbox.disabled.radio input ~ label:after,
-.ui.checkbox.disabled.radio input:focus ~ label:after {
-   background-color: @disabledCheckboxLabelBackgroundColor;
+    &.toggle {
+      input,
+      input:focus {
+        & ~ label:before {
+          /* "important" marker required to overwrite the one declared in checkbox.less */
+          background-color: @disabledBackgroundColor !important;
+          border-width: @disabledToggleBorderWidth;
+        }
+      }
+    }
+  }
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Radio */
+/* Uses px to avoid rounding issues with circles */
+
+/* Slider & Toggle Handle */
+
+/* Slider */
+
+/* Slider States */
+
+/* Toggle */
+
+/*-------------------
+      Variations
+--------------------*/
+
 }
