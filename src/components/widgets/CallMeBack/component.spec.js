@@ -3,10 +3,7 @@ import { shallow } from 'enzyme';
 
 import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
-import { TextInput } from 'elements/TextInput';
-import { PhoneInput } from 'elements/PhoneInput';
 import { Dropdown } from 'elements/Dropdown';
-import { TextArea } from 'elements/TextArea';
 
 import * as options from './mock-data/options';
 import { Component as CallMeBack } from './component';
@@ -195,26 +192,15 @@ describe('<CallMeBack />', () => {
       const actual = wrapper.childAt(4).props();
       expect(actual).toEqual(
         expect.objectContaining({
-          label: 'Email',
-          name: 'email',
+          label: 'Notes',
+          name: 'notes',
         })
       );
     });
   });
 
-  // describe('the `TextInput` components', () => {
-  //   it('should have the right props', () => {
-  //     const form = shallow(<CallMeBack />).find(Form);
-  //     const textInputs = form.find(TextInput);
-  //     const propSets = [
-  //       { label: 'First Name', name: 'firstName' },
-  //       { label: 'Last Name', name: 'lastName' },
-  //       { label: 'Email', name: 'email' },
-  //     ];
-  //     textInputs.forEach((textInput, index) => {
-  //       const actual = textInput.props();
-  //       expect(actual).toEqual(expect.objectContaining(propSets[index]));
-  //     });
-  //   });
-  // });
+  it('should have `displayName` `CallMeBack`', () => {
+    const actual = CallMeBack.displayName;
+    expect(actual).toBe('CallMeBack');
+  });
 });
