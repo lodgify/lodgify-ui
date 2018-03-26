@@ -23,16 +23,6 @@ describe('<Container />', () => {
       expect(column).toHaveLength(1);
     });
 
-    it('should render a GridColumn with the right props', () => {
-      const column = shallow(<Container />).find(GridColumn);
-      const actual = column.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 12,
-        })
-      );
-    });
-
     it('should render children if informed', () => {
       const column = shallow(
         <Container>

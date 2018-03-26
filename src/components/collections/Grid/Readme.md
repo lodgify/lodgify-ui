@@ -1,19 +1,31 @@
 ```jsx
 <Grid>
  <GridRow>
-   <GridColumn>
-    First Row - First Column
+   <GridColumn width={6}>
+     🔴 🔴 ⚪️ ⚪️<br />
+     🔴 🔴 ⚪️ ⚪️<br />
+     ⚪️ ⚪️ ⚪️ ⚪️<br />
+     ⚪️ ⚪️ ⚪️ ⚪️<br />
    </GridColumn>
-   <GridColumn>
-    First Row - Second Column
+   <GridColumn width={6}>
+     ⚪️ ⚪️ 🔴 🔴<br />
+     ⚪️ ⚪️ 🔴 🔴<br />
+     ⚪️ ⚪️ ⚪️ ⚪️<br />
+     ⚪️ ⚪️ ⚪️ ⚪️<br />
    </GridColumn>
  </GridRow>
  <GridRow>
-   <GridColumn>
-    Second Row - First Column
+   <GridColumn width={6}>
+     ⚪️ ⚪️ ⚪️ ⚪️<br />
+     ⚪️ ⚪️ ⚪️ ⚪️<br />
+     🔴 🔴 ⚪️ ⚪️<br />
+     🔴 🔴 ⚪️ ⚪️<br />
    </GridColumn>
-   <GridColumn>
-    Second Row - Second Column
+   <GridColumn width={6}>
+     ⚪️ ⚪️ ⚪️ ⚪️<br />
+     ⚪️ ⚪️ ⚪️ ⚪️<br />
+     ⚪️ ⚪️ 🔴 🔴<br />
+     ⚪️ ⚪️ 🔴 🔴<br />
    </GridColumn>
  </GridRow>
 </Grid>

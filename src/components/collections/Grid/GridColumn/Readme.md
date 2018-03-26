@@ -1,11 +1,13 @@
 ```jsx
 <Grid>
  <GridRow>
-   <GridColumn>
-    First column
+   <GridColumn width={6}>
+     🔴 🔴 ⚪️ ⚪️<br />
+     🔴 🔴 ⚪️ ⚪️<br />
    </GridColumn>
-   <GridColumn>
-    Second column
+   <GridColumn width={6}>
+     ⚪️ ⚪️ 🔴 🔴<br />
+     ⚪️ ⚪️ 🔴 🔴<br />
    </GridColumn>
  </GridRow>
 </Grid>
