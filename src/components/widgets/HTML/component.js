@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import DOMPurify from 'dompurify';
 
 /**
- * The standard HTML Widget
+ * The HTML widget sanitises and renders HTML strings.
  * @returns {Object}
  */
 export const Component = ({ htmlString, children }) =>

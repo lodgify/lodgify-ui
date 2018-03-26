@@ -12,8 +12,8 @@ const {
 
 ```jsx
 <HTML htmlString="<h2>Inception Level 0 😱</h2><br />">
-  <HTML htmlString="<h3>Incetion Level 1 😱</h3><br />">
-    <HTML htmlString="<h4>Incetion Level 2 😱</h4><br />">
+  <HTML htmlString="<h3>Inception Level 1 😱</h3><br />">
+    <HTML htmlString="<h4>Inception Level 2 😱</h4><br />">
       <a href="https://en.wikipedia.org/wiki/Playtest_(Black_Mirror)" target="_blank">Headexplode!</a>
     </HTML>
   </HTML>
