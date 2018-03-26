@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import { GridColumn } from 'collections/Grid/GridColumn';
-import { COLUMNS } from 'collections/Grid';
 import { OwnerLogin } from 'widgets/OwnerLogin';
 
 import { Component as Container } from './component';
@@ -29,7 +28,7 @@ describe('<Container />', () => {
       const actual = column.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          width: COLUMNS,
+          width: 12,
         })
       );
     });
