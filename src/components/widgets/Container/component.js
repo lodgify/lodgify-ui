@@ -34,5 +34,5 @@ Component.propTypes = {
   /** The children widgets. */
   children: PropTypes.node,
   /** Value between 1 and 12 */
-  width: PropTypes.number,
+  width: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
 };
