@@ -132,8 +132,7 @@ If you add a new `*.overrides` or `*.variables` file in the livingstone theme di
 
 1. add the name of the component to the `components` array in [semantic.json](https://github.com/lodgify/lodgify-ui/blob/production/semantic.json)
 1. change the value of the component entry in [src/semantic/src/theme.config](https://github.com/lodgify/lodgify-ui/blob/production/src/semantic/src/theme.config) from `'default'` to `'livingstone'`.
-
-If you do not take these steps, the declarations in your files will not be included in the styles build.
+1. follow the comment structure used in the default theme variables file for that component.
 
 ### Contributing
 

@@ -1,13 +1,68 @@
-// card
+/*******************************
+             Card
+*******************************/
 
+/*-------------------
+         View
+--------------------*/
+
+/* Shadow */
+
+/* Card */
 @borderRadius              : @4px;
-@boxShadow                 : 0 8px 22px 0 rgba(0, 0, 0, 0.07);
 @padding                   : @50px 90px;
 @width                     : 600px;
+@boxShadow                 : 0 8px 22px 0 rgba(0, 0, 0, 0.07);
 
-// content
+/* Card Group */
 
+/* Consecutive Cards */
+
+/*-------------------
+       Content
+--------------------*/
+
+/* Image */
+
+/* Content */
 @contentDivider            : none;
 @contentPadding            : 0;
 
+/* Header */
 @headerMargin              : 0 0 @45px 0;
+
+/* Metadata */
+
+/* Icons */
+
+/* Links */
+
+/* Description */
+
+/* Content Image */
+
+/* Avatar Image */
+
+/* Paragraph */
+
+/* Dimmer */
+
+/* Additional Content */
+
+/* Extra Links */
+
+/* Buttons */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Link */
+
+/* Raised *//* Card Count */
+
+/* Stackable */
+
+/* Sizes */
+
+/* Colored */

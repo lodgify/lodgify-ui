@@ -27,28 +27,18 @@ describe('<CaptchaInput />', () => {
       );
     });
 
-    it('should render two children', () => {
-      const formGroup = getFormGroup();
-      const actual = formGroup.children();
-      expect(actual).toHaveLength(2);
-    });
-
-    it('should render one Semantic UI `Form.Field` component', () => {
+    it('should render two Semantic UI `Form.Field` components', () => {
       const formGroup = getFormGroup();
       const actual = formGroup.children(Form.Field);
-      expect(actual).toHaveLength(1);
-    });
-
-    it('should render one Lodgify UI `TextInput` component', () => {
-      const formGroup = getFormGroup();
-      const actual = formGroup.children(TextInput);
-      expect(actual).toHaveLength(1);
+      expect(actual).toHaveLength(2);
     });
   });
 
-  describe('the `Form.Field` component', () => {
+  describe('the first `Form.Field` component', () => {
     it('should render one Semantic UI `Image` component', () => {
-      const formField = getCaptchaInput().find(Form.Field);
+      const formField = getCaptchaInput()
+        .find(Form.Field)
+        .at(0);
       const actual = formField.children(Image);
       expect(actual).toHaveLength(1);
     });
@@ -63,6 +53,16 @@ describe('<CaptchaInput />', () => {
           src: image,
         })
       );
+    });
+  });
+
+  describe('the second `Form.Field` component', () => {
+    it('should render one Lodgify UI `TextInput` component', () => {
+      const formField = getCaptchaInput()
+        .find(Form.Field)
+        .at(1);
+      const actual = formField.children(TextInput);
+      expect(actual).toHaveLength(1);
     });
   });
 

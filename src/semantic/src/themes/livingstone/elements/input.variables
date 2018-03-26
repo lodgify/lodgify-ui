@@ -13,17 +13,33 @@
         Types
 --------------------*/
 
-/* Date range picker input container */
+/* Icon Input */
+@flagIconXOffset: -(@7px);
+@flagIconYOffset: -(@5px);
+@flagIconScale: scale(1.2);
+
+@leftIconInputLabelLeftPosition: @iconWidth;
+@leftIconInputLabelFocusXTranslate: @leftIconInputLabelLeftPosition - @1px;
+
+/* Circular Icon Input */
+
+/* Labeled Input */
+@labelColor: @greySix;
+
+@labelFocusColor: @black;
+@labelFocusFontSize: @10px;
+@labelFocusXTranslate: @15px;
+@labelFocusYTranslate: @30px;
+
+/* Date range picker */
 @dateRangePickerInputPadding: @8px @10px;
 @dateRangePickerInputBorderOffset: (@2px/2); // This offsets the border on .DateRangePicker.
 
 @dateRangePickerIconWidthOffset: 42px; // This offsets the widths of the icons in the date range picker.
 
-/* Date range picker text inputs */
 @dateRangePickerDateInputPadding: (@verticalPadding - @dateRangePickerInputBorderOffset) 0;
 @dateRangePickerDateInputWidth: ~"calc(50% - @{dateRangePickerIconWidthOffset})";
 
-/* Date range picker dropdown picker */
 @dateRangePickerPickerFontColor: @greyEight;
 @dateRangePickerPickerZIndex: 3;
 @dateRangePickerPickerBoxShadow: @spreadShadow;
@@ -50,16 +66,15 @@
         States
 --------------------*/
 
-/* Hover */
-@hoveredInputBorderColor: @inputHoverBorderColor;
+/* Placeholder */
 
-/* Dirty */
+/* Down */
 
 /* Focus */
 @focusBackground: @focusedInputBackground;
 
 @dateRangePickerInputFocusedBorderBottomWidth: @3px;
-@dateRangePickerInputFocusedBorderBottom: @dateRangePickerInputFocusedBorderBottomWidth solid @primaryColor;
+@dateRangePickerInputFocusedBorderBottom: @dateRangePickerInputFocusedBorderBottomWidth solid @primaryColor !important;
 @dateRangePickerInputFocusedMarginBottom: -(@1px);
 @dateRangePickerInputFocusedBorderBottomOffset: (@dateRangePickerInputFocusedBorderBottomWidth + @dateRangePickerInputFocusedMarginBottom);
 @dateRangePickerInputFocusedPaddingBottom: (@verticalPadding - @dateRangePickerInputBorderOffset - @dateRangePickerInputFocusedBorderBottomOffset);
@@ -73,6 +88,13 @@
 @errorMessageRightPosition: -(@1px);
 @errorMessageTopPosition: -(@30px);
 
+/* Loader */
+
+/* Hover */
+@hoveredInputBorderColor: @inputHoverBorderColor;
+
+/* Dirty */
+
 /* Valid */
 @validBorderColor: @green;
 
@@ -84,18 +106,4 @@
       Variations
 --------------------*/
 
-/* Icon */
-@flagIconXOffset: -(@7px);
-@flagIconYOffset: -(@5px);
-@flagIconScale: scale(1.2);
-
-@leftIconInputLabelLeftPosition: @iconWidth;
-@leftIconInputLabelFocusXTranslate: @leftIconInputLabelLeftPosition - @1px;
-
-/* Labeled */
-@labelColor: @greySix;
-
-@labelFocusColor: @black;
-@labelFocusFontSize: @10px;
-@labelFocusXTranslate: @15px;
-@labelFocusYTranslate: @30px;
+/* Inverted */
