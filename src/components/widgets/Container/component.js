@@ -8,6 +8,8 @@ import { GridColumn } from 'collections/Grid/GridColumn';
 /**
  * A container which renders widgets inside of it.
  * By default spans to 100% width stacking widgets vertically.
+ *
+ * @returns {Object}
  */
 export const Component = ({ children, width }) => (
   <Grid>

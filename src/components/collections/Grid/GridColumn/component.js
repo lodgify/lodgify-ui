@@ -7,6 +7,9 @@ import { getTwelveColumnsWidthValue } from '../utils';
  * GridColumn is the Lodgify UI 12-columns based component for the
  * Semantic UI Grid.Column.
  *
+ * By default all Semantic UI props but `width` are passed to Semantic,
+ * so they can be reused
+ *
  * @returns {Object}
  */
 export const Component = props => (
@@ -23,7 +26,7 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  width: PropTypes.number,
+  width: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
 };
 
 Component.displayName = 'GridColumn';
