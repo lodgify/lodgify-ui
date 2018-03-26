@@ -8,11 +8,11 @@ import { getTwelveColumnsWidthValue } from '../utils';
  * Semantic UI Grid.Row.
  *
  * The [Semantic UI props](https://react.semantic-ui.com/collections/grid) can be for this component.
- * @type {Object}
+ * @returns {Object}
  */
 export const Component = props => (
   <Grid.Row
-    {...Object.assign({}, props, {
+    {...Object.assign({}, ...props, {
       columns: getTwelveColumnsWidthValue(DEFAULT_MAX_WIDTH),
     })}
   />
