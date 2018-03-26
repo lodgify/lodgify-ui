@@ -186,7 +186,14 @@
 
     > .image-gallery-swipe {
       border-radius: @slideshowImagesBorderRadius;
+      box-shadow: @floatingShadow;
       overflow: hidden;
+
+      .image-gallery-image {
+        align-items: center;
+        display: flex;
+        max-height: @slideshowImageMaxHeight;
+      }
     }
 
     // This `span` wraps the left and right nav buttons.

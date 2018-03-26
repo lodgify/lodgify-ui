@@ -128,6 +128,7 @@
 @slideshowBottomMargin              : @30px;
 
 @slideshowImagesBorderRadius        : @4px;
+@slideshowImageMaxHeight            : 390px;
 
 @slideshowButtonHorizontalPadding   : @30px;
 @slideshowButtonHeightOffset        : (@38px / 2);
