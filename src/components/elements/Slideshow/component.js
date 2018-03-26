@@ -14,12 +14,14 @@ export const Component = ({ imageUrls }) => (
   <ImageGallery
     items={adaptImageUrls(imageUrls)}
     lazyLoad
+    // Note: styles for the pagination controls
+    // live in `semantic/src/themes/livingstone/collections/menu.*`
+    renderRightNav={renderNavButton('right')}
+    renderLeftNav={renderNavButton('left')}
     showBullets
     showFullscreenButton={false}
     showPlayButton={false}
     showThumbnails={false}
-    renderRightNav={renderNavButton('right')}
-    renderLeftNav={renderNavButton('left')}
   />
 );
 
