@@ -1,37 +1,36 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Button, Label } from 'semantic-ui-react';
+import ImageGallery from 'react-image-gallery';
 
 import { Component as Slideshow } from './component';
+import { images } from './mock-data/images';
+
+const getSlideshow = () => shallow(<Slideshow images={images} />);
 
 describe('<Slideshow />', () => {
-  it('should render a single Semantic UI `Slideshow` component', () => {
-    const pagination = shallow(<Slideshow totalPages={5} />);
-    const actual = pagination.find('Slideshow');
+  it('should render a single react-image-gallery `ImageGallery` component', () => {
+    const wrapper = getSlideshow();
+    const actual = wrapper.find(ImageGallery);
     expect(actual).toHaveLength(1);
   });
 
-  it('should pass the right props to the Semantic UI `Slideshow` component', () => {
-    const pagination = shallow(<Slideshow totalPages={5} />);
-    const actual = pagination.find('Slideshow').props();
-    expect(actual).toEqual(
-      expect.objectContaining({
-        boundaryRange: 10,
-        defaultActivePage: 1,
-        firstItem: null,
-        lastItem: null,
-        nextItem: (
-          <Button primary circular icon="chevron right" content={null} />
-        ),
-        onPageChange: expect.any(Function),
-        pageItem: <Label empty circular size="tiny" content={null} />,
-        prevItem: (
-          <Button primary circular icon="chevron left" content={null} />
-        ),
-        secondary: true,
-        totalPages: 5,
-      })
-    );
+  describe('the `ImageGallery` component', () => {
+    it('should get the right props', () => {
+      const wrapper = getSlideshow();
+      const actual = wrapper.find(ImageGallery).props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          items: expect.any(Array),
+          lazyLoad: true,
+          renderRightNav: expect.any(Function),
+          renderLeftNav: expect.any(Function),
+          showBullets: true,
+          showFullscreenButton: false,
+          showPlayButton: false,
+          showThumbnails: false,
+        })
+      );
+    });
   });
 
   it('should have displayName `Slideshow`', () => {
