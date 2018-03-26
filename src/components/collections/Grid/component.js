@@ -8,9 +8,13 @@ import { Grid } from 'semantic-ui-react';
  */
 export const Component = props => (
   <Grid
-    {...Object.assign({}, ...props, {
-      columns: 'twelve',
-    })}
+    {...Object.assign(
+      {},
+      { ...props },
+      {
+        columns: 12,
+      }
+    )}
   />
 );
 

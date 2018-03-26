@@ -14,9 +14,13 @@ import { getTwelveColumnsWidthValue } from '../utils';
  */
 export const Component = props => (
   <Grid.Column
-    {...Object.assign({}, ...props, {
-      width: getTwelveColumnsWidthValue(props.width),
-    })}
+    {...Object.assign(
+      {},
+      { ...props },
+      {
+        width: getTwelveColumnsWidthValue(props.width),
+      }
+    )}
   />
 );
 

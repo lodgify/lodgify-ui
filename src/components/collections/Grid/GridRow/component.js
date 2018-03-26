@@ -11,11 +11,7 @@ import { Grid } from 'semantic-ui-react';
  * @returns {Object}
  */
 export const Component = props => (
-  <Grid.Row
-    {...Object.assign({}, ...props, {
-      columns: 'twelve',
-    })}
-  />
+  <Grid.Row {...Object.assign({}, { ...props }, { columns: 12 })} />
 );
 
 Component.displayName = 'GridRow';
