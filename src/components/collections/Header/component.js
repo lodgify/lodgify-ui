@@ -10,6 +10,7 @@ import { Button } from 'elements/Button';
 /**
  * A header displays a logo, grouped navigation items
  * and an optional primary call to action.
+ *
  * @return {Object}
  */
 export const Component = ({
