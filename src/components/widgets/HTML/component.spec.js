@@ -10,8 +10,7 @@ describe('<HTML />', () => {
   it('should render a single Lodgify UI `HTML` component', () => {
     const htmlWidget = shallow(<HTMLWidget />);
 
-    expect(htmlWidget).toBeDefined();
-    expect(htmlWidget).toHaveLength(1);
+    expect(htmlWidget.find('div').length).toBeGreaterThan(0);
   });
 
   it('should contain a HTML component with the right props', () => {
