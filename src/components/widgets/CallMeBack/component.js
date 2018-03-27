@@ -32,12 +32,7 @@ export const Component = ({
         name="date"
         options={dateOptions}
       />
-      <Dropdown
-        icon="clock outline"
-        label="Time"
-        name="time"
-        options={timeOptions}
-      />
+      <Dropdown icon="clock" label="Time" name="time" options={timeOptions} />
     </InputGroup>
     <InputGroup>
       <Dropdown label="Time Zone" name="timeZone" options={timeZoneOptions} />

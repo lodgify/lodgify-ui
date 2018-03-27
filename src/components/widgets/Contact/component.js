@@ -35,7 +35,7 @@ export const Component = ({
         width="eight"
       />
       <Dropdown
-        icon="users outline"
+        icon="users"
         label="Guests"
         name="guests"
         options={guestsOptions}
