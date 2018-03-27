@@ -14,11 +14,12 @@ export const Component = ({
   guestsNumber,
   locationName,
   nightPrice,
+  onClick,
   propertyName,
   propertyType,
   ratingNumber,
 }) => (
-  <Card>
+  <Card as="div" onClick={onClick}>
     <Image src={imageUrl} />
     <Card.Content>
       <Card.Meta>{propertyType}</Card.Meta>
@@ -41,35 +42,28 @@ export const Component = ({
 Component.displayName = 'FeaturedProperty';
 
 Component.defaultProps = {
-  // imageUrl: '',
-  // alternativeText: 'FeaturedProperty Widget',
-  // imageTitle: 'FeaturedProperty title',
-  // className: null,
-  // sources: [],
-  // onLoad: Function.prototype,
-  // isFluid: true,
+  onClick: Function.prototype,
 };
 
 Component.propTypes = {
-  // /** URL pointing to the image to render */
-  // imageUrl: PropTypes.string,
-  // /** Collection of objects to specify different image sources
-  //  *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-  //  */
-  // sources: PropTypes.arrayOf(
-  //   PropTypes.shape({
-  //     srcset: PropTypes.string.isRequired,
-  //     media: PropTypes.string.isRequired,
-  //   })
-  // ),
-  // /** Alternative text to show if the image can't be loaded by the browser */
-  // alternativeText: PropTypes.string,
-  // /** Title of the image to show when hovering it on desktop browsers */
-  // imageTitle: PropTypes.string,
-  // /** Custom class name string to customize the resulting img */
-  // className: PropTypes.string,
-  // /** Whether to render fluidly the image or not */
-  // isFluid: PropTypes.bool,
-  // /** The function to call when the image is loaded */
-  // onLoad: PropTypes.func,
+  /** The number of available bedrooms at the property. */
+  bedroomsNumber: PropTypes.number.isRequired,
+  /** URL pointing to the image to render */
+  imageUrl: PropTypes.string.isRequired,
+  /** The number of guests the property can accommodate. */
+  guestsNumber: PropTypes.number.isRequired,
+  /** The name of the location of the property. */
+  locationName: PropTypes.string.isRequired,
+  /** The price per night of the property, with currency symbol. */
+  nightPrice: PropTypes.string.isRequired,
+  /** A function called when the property card is clicked.
+   *  @param {Object} event
+   */
+  onClick: PropTypes.func,
+  /** The name of the property. */
+  propertyName: PropTypes.string.isRequired,
+  /** The name of type of the property. */
+  propertyType: PropTypes.string.isRequired,
+  /** The numeral rating for the property, out of 5 */
+  ratingNumber: PropTypes.number.isRequired,
 };
