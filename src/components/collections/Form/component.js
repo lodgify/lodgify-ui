@@ -42,7 +42,7 @@ export class Component extends PureComponent {
   render = () => {
     const { children, headingText, submitButtonText, actionLink } = this.props;
     return (
-      <Card>
+      <Card className="has-form">
         {headingText && (
           <Card.Content>
             <Heading size="small">{headingText}</Heading>
