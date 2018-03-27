@@ -1,8 +1,5 @@
 ```jsx
-<Video
-  isUrl={true}
-  videoSource="https://www.youtube.com/watch?v=SOcixRXr0vs"
-/>
+<Video videoSource="https://www.youtube.com/watch?v=SOcixRXr0vs" />
 ```
 
 ### Variations
@@ -20,8 +17,5 @@ const embeddableLodgifyVideo = `
   </iframe>
 `;
 
-<Video
-  isUrl={true}
-  videoSource="https://www.youtube.com/watch?v=SOcixRXr0vs"
-/>
+<Video videoSource="https://www.youtube.com/watch?v=SOcixRXr0vs" />
 ```
