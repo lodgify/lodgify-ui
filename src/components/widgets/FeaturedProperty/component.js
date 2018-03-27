@@ -30,7 +30,12 @@ export const Component = ({
       </Card.Description>
       <Card.Description>
         {ratingNumber}
-        <Rating maxRating={5} rating={Math.round(ratingNumber)} size="mini" />
+        <Rating
+          disabled
+          maxRating={5}
+          rating={Math.round(ratingNumber)}
+          size="mini"
+        />
       </Card.Description>
       <Card.Description>
         from <Heading size="tiny">{nightPrice}</Heading> /night
