@@ -4,9 +4,9 @@ import DOMPurify from 'dompurify';
 
 /**
  * The HTML widget sanitises and renders HTML strings.
+ * @extends {React.PureComponent}
  * @returns {Object}
  */
-
 export class Component extends PureComponent {
   render() {
     const { htmlString, children } = this.props;

@@ -5,6 +5,7 @@ import { getVideoContent } from './utils';
 
 /**
  * The standard widget for owner login.
+ * @extends {React.PureComponent}
  * @returns {Object}
  */
 export class Component extends PureComponent {
