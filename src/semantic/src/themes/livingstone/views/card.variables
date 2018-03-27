@@ -30,6 +30,7 @@
 
 /* Metadata */
 @metaColor                 : @greySix;
+@metaFontSize              : @tinyParagraphFontSize;
 
 @metaFontWeight            : bold;
 @metaTextTransform         : uppercase;
