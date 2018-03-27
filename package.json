@@ -69,6 +69,7 @@
     "webpack": "^3.11.0"
   },
   "dependencies": {
+    "dompurify": "^1.0.3",
     "libphonenumber-js": "^1.1.4",
     "lodash": "^4.17.5",
     "moment": "^2.21.0",
