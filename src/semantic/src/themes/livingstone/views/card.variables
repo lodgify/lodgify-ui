@@ -73,6 +73,9 @@
 --------------------*/
 
 /* Link */
+@linkHoverTransform: none;
+
+@linkHoverBoxShadow: @boxShadow;
 
 /* Raised */
 

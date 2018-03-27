@@ -9,6 +9,7 @@ const { twoCats } = require('./mock-data/images');
   nightPrice="$280"
   propertyName="The Cat House"
   propertyType="Bed and breakfast"
+  propertyUrl="/"
   ratingNumber={4.8}
 />
 ```

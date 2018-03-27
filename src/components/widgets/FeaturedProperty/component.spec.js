@@ -14,6 +14,7 @@ const props = {
   nightPrice: '$280',
   propertyName: 'The Cat House',
   propertyType: 'Bed and breakfast',
+  propertyUrl: '/',
   ratingNumber: 4.8,
 };
 
@@ -36,6 +37,16 @@ describe('<FeaturedProperty />', () => {
   });
 
   describe('the `Card` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getCard();
+      const actual = wrapper.props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          href: props.propertyUrl,
+        })
+      );
+    });
+
     it('should render the right children', () => {
       const children = ['Image', 'CardContent'];
       const wrapper = getCard();

@@ -17,9 +17,10 @@ export const Component = ({
   nightPrice,
   propertyName,
   propertyType,
+  propertyUrl,
   ratingNumber,
 }) => (
-  <Card>
+  <Card href={propertyUrl}>
     <Image alt={imageAlternativeText} src={imageUrl} />
     <Card.Content>
       <Card.Meta>{propertyType}</Card.Meta>
@@ -67,6 +68,8 @@ Component.propTypes = {
   propertyName: PropTypes.string.isRequired,
   /** The name of type of the property. */
   propertyType: PropTypes.string.isRequired,
+  /** URL pointing to a page with details of the property . */
+  propertyUrl: PropTypes.string.isRequired,
   /** The numeral rating for the property, out of 5 */
   ratingNumber: PropTypes.number.isRequired,
 };
