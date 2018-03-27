@@ -1,3 +1,4 @@
+import { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import { getVideoContent } from './utils';
@@ -6,14 +7,18 @@ import { getVideoContent } from './utils';
  * The standard widget for owner login.
  * @returns {Object}
  */
-export const Component = ({ isUrl, videoInput }) =>
-  getVideoContent(isUrl, videoInput);
+export class Component extends PureComponent {
+  render() {
+    const { isUrl, videoSource } = this.props;
+    return getVideoContent(isUrl, videoSource);
+  }
+}
 
 Component.displayName = 'Video';
 
 Component.defaultProps = {
   isUrl: false,
-  videoInput: null,
+  videoSource: null,
 };
 
 Component.propTypes = {

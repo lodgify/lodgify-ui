@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import DOMPurify from 'dompurify';
 
@@ -6,17 +6,25 @@ import DOMPurify from 'dompurify';
  * The HTML widget sanitises and renders HTML strings.
  * @returns {Object}
  */
-export const Component = ({ htmlString, children }) =>
-  children ? (
-    <div>
+
+export class Component extends PureComponent {
+  render() {
+    const { htmlString, children } = this.props;
+
+    return children ? (
+      <div>
+        <div
+          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(htmlString) }}
+        />
+        {children}
+      </div>
+    ) : (
       <div
         dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(htmlString) }}
       />
-      {children}
-    </div>
-  ) : (
-    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(htmlString) }} />
-  );
+    );
+  }
+}
 
 Component.displayName = 'HTML';
 

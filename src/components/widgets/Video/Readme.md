@@ -1,7 +1,7 @@
 ```jsx
 <Video
   isUrl={true}
-  videoInput="https://www.youtube.com/watch?v=SOcixRXr0vs"
+  videoSource="https://www.youtube.com/watch?v=SOcixRXr0vs"
 />
 ```
 
@@ -18,10 +18,10 @@ const embeddableLodgifyVideo = `
     frameborder="0"
     allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
-`
+`;
 
 <Video
   isUrl={true}
-  videoInput="https://www.youtube.com/watch?v=SOcixRXr0vs"
+  videoSource="https://www.youtube.com/watch?v=SOcixRXr0vs"
 />
 ```

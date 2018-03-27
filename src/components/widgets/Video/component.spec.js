@@ -14,21 +14,21 @@ describe('<Video />', () => {
   });
 
   it('should render a single `div` children component', () => {
-    const video = shallow(getVideo({ videoInput: '<iframe></iframe>' }));
+    const video = shallow(getVideo({ videoSource: '<iframe></iframe>' }));
     const actual = video.find('div');
     expect(actual).toHaveLength(1);
   });
 
   describe('the `Video` component', () => {
     it('should render a div.is-url if an url is provided', () => {
-      const props = { isUrl: true, videoInput: 'https://lodgify.com' };
+      const props = { isUrl: true, videoSource: 'https://lodgify.com' };
       const video = shallow(getVideo(props));
 
       expect(video.find('.video.is-url')).toHaveLength(1);
     });
 
     it('should render a div.is-html if an HTML snippet is provided', () => {
-      const props = { isUrl: true, videoInput: '<iframe></iframe>' };
+      const props = { isUrl: true, videoSource: '<iframe></iframe>' };
       const video = shallow(getVideo(props));
 
       expect(video.find('.video.is-html')).toHaveLength(1);
@@ -42,18 +42,18 @@ describe('<Video />', () => {
     });
 
     it('should render a <ReactPlayer> if HTML is provided', () => {
-      const props = { isUrl: true, videoInput: 'https://lodgify.com' };
+      const props = { isUrl: true, videoSource: 'https://lodgify.com' };
       const video = shallow(getVideo(props));
       expect(video.find(ReactPlayer)).toHaveLength(1);
     });
 
     it('should have a <ReactPlayer> with the right props', () => {
-      const props = { isUrl: true, videoInput: 'https://lodgify.com' };
+      const props = { isUrl: true, videoSource: 'https://lodgify.com' };
       const video = shallow(getVideo(props));
       const videoProps = video.find(ReactPlayer).props();
 
       expect(videoProps).toEqual(
-        expect.objectContaining({ url: props.videoInput })
+        expect.objectContaining({ url: props.videoSource })
       );
     });
   });
