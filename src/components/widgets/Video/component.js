@@ -4,30 +4,30 @@ import PropTypes from 'prop-types';
 import { getVideoContent } from './utils';
 
 /**
- * The standard widget for owner login.
+ * The Video widget. It allows the consumer to render videos given a URL or
+ * an embeddable HTML snippet.
  * @extends {React.PureComponent}
  * @returns {Object}
  */
 export class Component extends PureComponent {
   render() {
-    const { isUrl, videoSource } = this.props;
-    return getVideoContent(isUrl, videoSource);
+    const { videoSource } = this.props;
+
+    return getVideoContent(videoSource);
   }
 }
 
 Component.displayName = 'Video';
 
 Component.defaultProps = {
-  isUrl: false,
   videoSource: null,
 };
 
 Component.propTypes = {
-  /** Whether the input is an url or not
-   */
-  isUrl: PropTypes.bool,
-  /** The string that will be used to build the video player. It could be
-   *  whether a URL or a embeddable HTML snippet.
+  /** The string that will be used to build the video player.
+   *  A URL pointing to a Youtube, Vimeo, ... video is valid.
+   *  A embeddable HTML video snippet is also valid.
+   *  An invalid input throws an error.
    */
   videoSource: PropTypes.string,
 };
