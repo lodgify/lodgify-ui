@@ -10,8 +10,9 @@ import { Heading } from 'typography/Heading';
  */
 export const Component = ({
   bedroomsNumber,
-  imageUrl,
   guestsNumber,
+  imageAlternativeText,
+  imageUrl,
   locationName,
   nightPrice,
   onClick,
@@ -20,7 +21,7 @@ export const Component = ({
   ratingNumber,
 }) => (
   <Card as="div" onClick={onClick}>
-    <Image src={imageUrl} />
+    <Image alt={imageAlternativeText} src={imageUrl} />
     <Card.Content>
       <Card.Meta>{propertyType}</Card.Meta>
       <Card.Header>{propertyName}</Card.Header>
@@ -47,13 +48,16 @@ export const Component = ({
 Component.displayName = 'FeaturedProperty';
 
 Component.defaultProps = {
+  imageAlternativeText: '',
   onClick: Function.prototype,
 };
 
 Component.propTypes = {
   /** The number of available bedrooms at the property. */
   bedroomsNumber: PropTypes.number.isRequired,
-  /** URL pointing to the image to render */
+  /** The alternative text for the image to display. */
+  imageAlternativeText: PropTypes.string,
+  /** URL pointing to the image to display. */
   imageUrl: PropTypes.string.isRequired,
   /** The number of guests the property can accommodate. */
   guestsNumber: PropTypes.number.isRequired,

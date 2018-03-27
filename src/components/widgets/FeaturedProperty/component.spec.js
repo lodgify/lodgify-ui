@@ -63,6 +63,7 @@ describe('<FeaturedProperty />', () => {
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
+          alt: '',
           src: props.imageUrl,
         })
       );
