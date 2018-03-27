@@ -15,12 +15,11 @@ export const Component = ({
   imageUrl,
   locationName,
   nightPrice,
-  onClick,
   propertyName,
   propertyType,
   ratingNumber,
 }) => (
-  <Card as="div" onClick={onClick}>
+  <Card>
     <Image alt={imageAlternativeText} src={imageUrl} />
     <Card.Content>
       <Card.Meta>{propertyType}</Card.Meta>
@@ -49,7 +48,6 @@ Component.displayName = 'FeaturedProperty';
 
 Component.defaultProps = {
   imageAlternativeText: '',
-  onClick: Function.prototype,
 };
 
 Component.propTypes = {
@@ -65,10 +63,6 @@ Component.propTypes = {
   locationName: PropTypes.string.isRequired,
   /** The price per night of the property, with currency symbol. */
   nightPrice: PropTypes.string.isRequired,
-  /** A function called when the property card is clicked.
-   *  @param {Object} event
-   */
-  onClick: PropTypes.func,
   /** The name of the property. */
   propertyName: PropTypes.string.isRequired,
   /** The name of type of the property. */

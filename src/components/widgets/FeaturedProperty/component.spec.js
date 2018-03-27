@@ -36,17 +36,6 @@ describe('<FeaturedProperty />', () => {
   });
 
   describe('the `Card` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getCard();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          as: 'div',
-          onClick: Function.prototype,
-        })
-      );
-    });
-
     it('should render the right children', () => {
       const children = ['Image', 'CardContent'];
       const wrapper = getCard();
