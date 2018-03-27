@@ -29,10 +29,10 @@ export const Component = ({
       </Card.Description>
       <Card.Description>
         {ratingNumber}
-        <Rating icon="star" maxRating={5} rating={Math.round(ratingNumber)} />
+        <Rating maxRating={5} rating={Math.round(ratingNumber)} size="mini" />
       </Card.Description>
       <Card.Description>
-        from <Heading size="tiny">{nightPrice}</Heading> / night
+        from <Heading size="tiny">{nightPrice}</Heading> /night
       </Card.Description>
     </Card.Content>
   </Card>

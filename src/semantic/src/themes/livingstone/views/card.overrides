@@ -6,6 +6,8 @@
          View
 --------------------*/
 
+.ui.card {
+
 /* Shadow */
 
 /* Card */
@@ -25,12 +27,24 @@
 /* Header */
 
 /* Metadata */
+  .meta {
+    font-weight: @metaFontWeight;
+    text-transform: @metaTextTransform;
+  }
 
 /* Icons */
 
 /* Links */
 
 /* Description */
+  .description {
+    margin-top: @descriptionDistance;
+
+    h5.ui.header {
+      display: inline-block;
+      padding: @descriptionBigTextPadding @descriptionBigTextPadding 0 @descriptionBigTextPadding;
+    }
+  }
 
 /* Content Image */
 
@@ -47,18 +61,18 @@
 /* Buttons */
 
 /* Form */
-.ui.card.has-form {
-  width: @hasFormWidth;
-  padding: @hasFormPadding;
+  &.has-form {
+    width: @hasFormWidth;
+    padding: @hasFormPadding;
 
-  & > .content {
-    padding: @hasFormContentPadding;
+    & > .content {
+      padding: @hasFormContentPadding;
 
-    & > .header {
-      margin: @hasFormHeaderMargin;
+      & > .header {
+        margin: @hasFormHeaderMargin;
+      }
     }
   }
-}
 
 /*-------------------
       Variations
@@ -75,3 +89,5 @@
 /* Sizes */
 
 /* Colored */
+
+}

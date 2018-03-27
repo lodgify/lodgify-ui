@@ -26,14 +26,24 @@
 @contentDivider            : none;
 
 /* Header */
+@headerFontSize            : @h5;
 
 /* Metadata */
+@metaColor                 : @greySix;
+
+@metaFontWeight            : bold;
+@metaTextTransform         : uppercase;
 
 /* Icons */
 
 /* Links */
 
 /* Description */
+@descriptionColor          : @greySeven;
+
+@descriptionDistance       : @4px;
+
+@descriptionBigTextPadding : @5px;
 
 /* Content Image */
 
