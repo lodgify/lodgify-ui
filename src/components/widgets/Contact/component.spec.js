@@ -152,7 +152,7 @@ describe('<Contact />', () => {
       const actual = wrapper.childAt(1).props();
       expect(actual).toEqual(
         expect.objectContaining({
-          icon: 'users outline',
+          icon: 'users',
           label: 'Guests',
           name: 'guests',
           options: options.guestsOptions,
