@@ -9,8 +9,6 @@
 /* Shadow */
 
 /* Card */
-@borderRadius              : @4px;
-@boxShadow                 : 0 8px 22px 0 rgba(0, 0, 0, 0.07);
 
 /* Card Group */
 
@@ -23,7 +21,6 @@
 /* Image */
 
 /* Content */
-@contentDivider            : none;
 
 /* Header */
 
@@ -50,12 +47,18 @@
 /* Buttons */
 
 /* Form */
-@hasFormWidth               : 600px;
-@hasFormPadding             : @50px 90px;
+.ui.card.has-form {
+  width: @hasFormWidth;
+  padding: @hasFormPadding;
 
-@hasFormContentPadding      : 0;
+  & > .content {
+    padding: @hasFormContentPadding;
 
-@hasFormHeaderMargin        : 0 0 @45px 0;
+    & > .header {
+      margin: @hasFormHeaderMargin;
+    }
+  }
+}
 
 /*-------------------
       Variations
