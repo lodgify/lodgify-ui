@@ -141,7 +141,7 @@ describe('<CallMeBack />', () => {
       const actual = wrapper.childAt(1).props();
       expect(actual).toEqual(
         expect.objectContaining({
-          icon: 'clock outline',
+          icon: 'clock',
           label: 'Time',
           name: 'time',
           options: options.timeOptions,
