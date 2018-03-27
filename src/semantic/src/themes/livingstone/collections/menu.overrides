@@ -175,6 +175,55 @@
       }
     }
   }
+}
+
+/* Slideshow pagination */
+
+.image-gallery {
+  margin-bottom: @slideshowBottomMargin;
+
+  > .image-gallery-content .image-gallery-slide-wrapper {
+
+    > .image-gallery-swipe {
+      border-radius: @slideshowImagesBorderRadius;
+      box-shadow: @floatingShadow;
+      overflow: hidden;
+
+      .image-gallery-image {
+        align-items: center;
+        display: flex;
+        max-height: @slideshowImageMaxHeight;
+      }
+    }
+
+    // This `span` wraps the left and right nav buttons.
+    > span:first-child {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 @slideshowButtonHorizontalPadding;
+      position: absolute;
+      top: @slideshowButtonTopPosition;
+      width: 100%;
+      z-index: 1;
+    }
+
+    > .image-gallery-bullets  {
+      bottom: @slideshowBulletsBottomPosition;
+
+      > .image-gallery-bullets-container button.image-gallery-bullet {
+        background-color: @paginationLabelBackground;
+        border: none;
+        box-shadow: none;
+        margin: 0 0 0 @paginationLabelHorizontalMargin;
+
+        &.active {
+          background-color: @paginationLabelActiveBackground;
+        }
+      }
+    }
+  }
+}
+
 
 /* Labeled Icon */
 
@@ -209,5 +258,3 @@
 /* Resize large sizes */
 
 /* Sizes */
-
-}
