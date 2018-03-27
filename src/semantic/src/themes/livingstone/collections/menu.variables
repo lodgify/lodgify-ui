@@ -124,6 +124,18 @@
 @paginationLabelHorizontalMargin    : @8px;
 @paginationLabelVerticalMargin      : @12px;
 
+/* Slideshow pagination */
+@slideshowBottomMargin              : @30px;
+
+@slideshowImagesBorderRadius        : @4px;
+@slideshowImageMaxHeight            : 390px;
+
+@slideshowButtonHorizontalPadding   : @30px;
+@slideshowButtonHeightOffset        : (@38px / 2);
+@slideshowButtonTopPosition         : ~"calc(50% - @{slideshowButtonHeightOffset})";
+
+@slideshowBulletsBottomPosition     : -(@20px);
+
 /* Labeled Icon */
 
 /* Text */

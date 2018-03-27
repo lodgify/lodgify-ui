@@ -6,6 +6,7 @@ const INCLUDE_PATHS = [
   __dirname,
   path.join(ROOT_PATH, 'src'),
   path.join(ROOT_PATH, 'node_modules/react-dates/lib/css'),
+  path.join(ROOT_PATH, 'node_modules/react-image-gallery/styles/css'),
 ];
 
 module.exports = {
