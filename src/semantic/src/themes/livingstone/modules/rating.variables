@@ -1,0 +1,30 @@
+/*******************************
+             Rating
+*******************************/
+
+@verticalAlign: top;
+
+@marginLeft: @5px;
+
+@iconWidth: @20px;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Standard */
+@inactiveColor: @greySix;
+
+@activeColor: @primaryColor;
+
+/* Star */
+
+/* Heart */
+
+/*-------------------
+        States
+--------------------*/
+
+/*-------------------
+      Variations
+--------------------*/
