@@ -26,7 +26,7 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The string that will be used to build the video player.
    *  A URL pointing to a Youtube, Vimeo, ... video is valid.
-   *  A embeddable HTML video snippet is also valid.
+   *  A embeddable HTML video snippet is also valid (iframes, video, audio, objects)
    *  An invalid input throws an error.
    */
   videoSource: PropTypes.string,
