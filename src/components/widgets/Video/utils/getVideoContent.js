@@ -24,7 +24,12 @@ export const getVideoContent = videoSource => {
     return (
       <div
         className="video is-html"
-        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(videoSource) }}
+        dangerouslySetInnerHTML={{
+          __html: DOMPurify.sanitize(videoSource, {
+            SANITIZE_DOM: true,
+            ALLOWED_TAGS: ['iframe', 'object', 'video', 'audio'],
+          }),
+        }}
       />
     );
   }
