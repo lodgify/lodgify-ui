@@ -13,7 +13,8 @@ const embeddableLodgifyVideo = `
     height="315"
     src="https://www.youtube.com/embed/SOcixRXr0vs"
     frameborder="0"
-    allow="autoplay; encrypted-media" allowfullscreen
+    allow="autoplay; encrypted-media"
+    allowfullscreen
     style="border: none">
   </iframe>
 `;
