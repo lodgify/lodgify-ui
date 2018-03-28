@@ -26,7 +26,7 @@ export const getVideoContent = videoSource => {
         className="video is-html"
         dangerouslySetInnerHTML={{
           __html: DOMPurify.sanitize(videoSource, {
-            SANITIZE_DOM: false,
+            SANITIZE_DOM: true,
             ALLOWED_TAGS: ['iframe', 'object', 'video', 'audio'],
           }),
         }}
