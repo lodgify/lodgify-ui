@@ -2,6 +2,7 @@ const importNoUnresolved = require('./rule-options/import.no-unresolved');
 const importOrder = require('./rule-options/import.order');
 const prettierPrettier = require('./rule-options/prettier.prettier');
 const reactBooleanPropNaming = require('./rule-options/react.boolean-prop-naming');
+const reactJsxFilenameExtension = require('./rule-options/react.jsx-filename-extension');
 const requireJsdoc = require('./rule-options/requireJsdoc');
 
 module.exports = {
@@ -28,6 +29,7 @@ module.exports = {
   },
   rules: {
     'import/named': 2,
+    'import/no-default-export': 2,
     'import/no-unresolved': [2, importNoUnresolved],
     'import/order': [2, importOrder],
     'no-console': 2,
@@ -40,6 +42,7 @@ module.exports = {
     'react/forbid-prop-types': 2,
     'react/jsx-boolean-value': [2, 'never'],
     'react/jsx-curly-brace-presence': [2, 'never'],
+    'react/jsx-filename-extension': [2, reactJsxFilenameExtension],
     'react/jsx-no-undef': 2,
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,

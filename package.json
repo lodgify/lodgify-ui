@@ -13,7 +13,7 @@
     "copy:gh-pages": "cp -R $npm_package_config_styleguide_dist/* ./gh-pages",
     "semantic:watch": "gulp watch --gulpfile $npm_package_config_semantic_gulpfile",
     "semantic:build": "gulp build-css build-assets --gulpfile $npm_package_config_semantic_gulpfile",
-    "lint": "eslint . --ext .js",
+    "lint": "eslint . --ext .js,.jsx",
     "lint:debug": "npm run lint -- --debug",
     "lint:fix": "npm run lint -- --fix",
     "styleguide:build": "styleguidist build --config $npm_package_config_styleguide_config",
