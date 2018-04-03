@@ -31,8 +31,12 @@ export const Component = ({
       'has-shadow': !!hasShadow,
     })}
   >
-    {React.isValidElement(icon) ? <div className="icon">{icon}</div> : null}
-    {isString(icon) ? <Icon name={icon} /> : null}
+    {!icon ? null : (
+      <div className="icon">
+        {React.isValidElement(icon) ? <div className="icon">{icon}</div> : null}
+        {isString(icon) ? <Icon name={icon} /> : null}
+      </div>
+    )}
     {children}
   </Button>
 );
