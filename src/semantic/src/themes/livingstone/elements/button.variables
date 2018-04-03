@@ -72,10 +72,19 @@
 /* Inverted */
 
 /* Basic */
+@basicColor: @primaryColor;
+@basicVerticalPadding: @12px;
+@basicHorizontalPadding: @20px;
 
 /* Basic Hover */
+@basicBoxShadowHover: none;
+@basicOutlineHover: none;
+@basicTextDecorationHover: underline;
 
 /* Basic Focus */
+@basicBoxShadowFocus: @basicBoxShadowHover;
+@basicOutlineFocus: @basicOutlineHover;
+@basicTextDecorationFocus: @basicTextDecorationHover;
 
 /* Basic Down */
 

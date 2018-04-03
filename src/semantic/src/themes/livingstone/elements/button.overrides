@@ -65,10 +65,24 @@
 /* Inverted */
 
 /* Basic */
+.ui.button.basic {
+  color: @basicColor;
+  padding: @basicVerticalPadding @basicHorizontalPadding;
+}
 
 /* Basic Hover */
+.ui.button.basic:hover {
+  box-shadow: @basicBoxShadowHover;
+  outline: @basicOutlineHover;
+  text-decoration: @basicTextDecorationHover;
+}
 
 /* Basic Focus */
+.ui.button.basic:focus {
+  box-shadow: @basicBoxShadowFocus;
+  outline: @basicOutlineFocus;
+  text-decoration: @basicTextDecorationFocus;
+}
 
 /* Basic Down */
 

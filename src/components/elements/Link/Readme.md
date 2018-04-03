@@ -1,13 +1,14 @@
 ```jsx
-<Link url="https://lodgify.com" mode="_blank">Submit</Link>
+<Link url="https://lodgify.com">Submit</Link>
 ```
 
-### States
+### Variations
 
-#### Disabled
+#### Mode
 
 ```jsx
-<Link isDisabled>
-  Submit
-</Link>
+<div>
+  <Link url="https://lodgify.com" mode="_blank">Submit</Link>
+  <Link url="https://lodgify.com" mode="_self">Submit</Link>
+</div>
 ```

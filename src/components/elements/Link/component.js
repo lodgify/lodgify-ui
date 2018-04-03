@@ -8,18 +8,18 @@ import { Button } from 'semantic-ui-react';
  */
 export const Component = ({
   children,
-  isDisabled,
   isPositionedRight,
   mode,
   url,
+  onClick,
 }) => (
   <Button
     as="a"
     basic
     href={url}
     target={mode}
-    disabled={isDisabled}
     floated={isPositionedRight ? 'right' : 'left'}
+    onClick={onClick}
   >
     {children}
   </Button>
@@ -28,7 +28,7 @@ export const Component = ({
 Component.displayName = 'Link';
 
 Component.defaultProps = {
-  isDisabled: false,
+  onClick: Function.prototype,
   isPositionedRight: false,
   mode: '_self',
 };
@@ -38,8 +38,10 @@ Component.propTypes = {
   children: PropTypes.node.isRequired,
   /** The URL the link refers to. */
   url: PropTypes.string.isRequired,
-  /** Is the button disabled. */
-  isDisabled: PropTypes.bool,
+  /** The function to call when the link is tap
+   *  @param {Object} event
+   */
+  onClick: PropTypes.func,
   /** Is the button positioned on the right hand side of its container. */
   isPositionedRight: PropTypes.bool,
   /** Is the resource refered going to be open in a new tab or the existing one. */
