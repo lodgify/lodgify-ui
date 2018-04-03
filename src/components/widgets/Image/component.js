@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Image, Label } from 'semantic-ui-react';
 
+import { Paragraph } from 'typography/Paragraph';
+
 import { IMAGE_NOT_FOUND } from './constants';
 
 /**
@@ -17,6 +19,7 @@ export const Component = ({
   className,
   onLoad,
   isFluid,
+  label,
 }) => (
   <picture role="figure">
     {sources.map(({ srcset, media }, index) => (
@@ -32,6 +35,7 @@ export const Component = ({
     >
       {!imageUrl ? <Label content={IMAGE_NOT_FOUND} icon="warning" /> : null}
     </Image>
+    {label ? <Paragraph>{label}</Paragraph> : null}
   </picture>
 );
 
@@ -45,6 +49,7 @@ Component.defaultProps = {
   sources: [],
   onLoad: Function.prototype,
   isFluid: true,
+  label: null,
 };
 
 Component.propTypes = {
@@ -69,4 +74,6 @@ Component.propTypes = {
   isFluid: PropTypes.bool,
   /** The function to call when the image is loaded */
   onLoad: PropTypes.func,
+  /** A visible label for the image */
+  label: PropTypes.string,
 };
