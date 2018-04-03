@@ -97,3 +97,25 @@
 /* Floated */
 
 /* Animated */
+
+/* Circular */
+.ui.button.circular {
+  padding: @circularPadding;
+}
+
+/* Squared */
+.ui.button.is-squared {
+  border-radius: @squaredBorderRadius;
+}
+
+/* Has Shadow */
+.ui.button.has-shadow {
+  box-shadow: @hasShadowBoxShadow;
+}
+
+
+/* Has Icon */
+.ui.button.has-icon > .icon {
+  display: @hasIconDisplay;
+  height: @hasIconHeight;
+}
