@@ -1,9 +1,9 @@
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 
-import { Grid } from 'collections/Grid';
-import { GridRow } from 'collections/Grid/GridRow';
-import { GridColumn } from 'collections/Grid/GridColumn';
+import { Grid } from 'layout/Grid';
+import { GridRow } from 'layout/GridRow';
+import { GridColumn } from 'layout/GridColumn';
 
 /**
  * A container which renders widgets inside of it.
