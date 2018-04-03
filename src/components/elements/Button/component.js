@@ -30,7 +30,7 @@ export const Component = ({
       'has-shadow': !!hasShadow,
     })}
   >
-    {icon && (
+    {!!icon && (
       <span className="icon">
         <Icon name={icon} />
       </span>
