@@ -44,10 +44,10 @@
 </div>
 ```
 
-#### Squared
+#### Rounded
 
 ```jsx
-<Button isRounded={false}>
+<Button isRounded>
   Submit
 </Button>
 ```

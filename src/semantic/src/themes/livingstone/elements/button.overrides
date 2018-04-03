@@ -100,19 +100,13 @@
 
 /* Circular */
 .ui.button.circular {
-  padding: @circularPadding;
-}
-
-/* Squared */
-.ui.button.is-squared {
-  border-radius: @squaredBorderRadius;
+  border-radius: @circularBorderRadius;
 }
 
 /* Has Shadow */
 .ui.button.has-shadow {
   box-shadow: @hasShadowBoxShadow;
 }
-
 
 /* Has Icon */
 .ui.button.has-icon > .icon {

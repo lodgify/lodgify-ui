@@ -16,13 +16,14 @@
 /* Text */
 @fontWeight: @normal;
 @textColor: @black;
-@borderRadius: @20px;
+@borderRadius: 0;
 
 /* Internal Shadow */
 
 /* Box Shadow */
 @boxShadow: none;
-@boxShadowColor: rgba(100, 100, 100, 0.2);
+@boxShadowColor: rgba(0,0,0,0.20);
+
 
 /* Icon */
 @iconMargin: 0 @iconDistance 0 -(@iconDistance);
@@ -108,13 +109,10 @@
 /* Animated */
 
 /* Circular */
-@circularPadding: 0;
-
-/* Squared */
-@squaredBorderRadius: 0;
+@circularBorderRadius: 5px;
 
 /* Has Shadow */
-@hasShadowBoxShadow: 0 0 10px @boxShadowColor;
+@hasShadowBoxShadow: 0 2px 7px 0 @boxShadowColor;
 
 /* Has Icon */
 // Forces inline-block elements inside the button itself

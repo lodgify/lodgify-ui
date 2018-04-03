@@ -24,11 +24,11 @@ export const Component = ({
     floated={isPositionedRight ? 'right' : 'left'}
     loading={isLoading}
     secondary={isSecondary}
+    circular={isRounded}
     size={size}
     className={cx({
       'has-icon': !!icon,
       'has-shadow': !!hasShadow,
-      'is-squared': !isRounded,
     })}
   >
     {React.isValidElement(icon) ? <div className="icon">{icon}</div> : null}
@@ -43,7 +43,7 @@ Component.defaultProps = {
   isDisabled: false,
   isPositionedRight: false,
   isLoading: false,
-  isRounded: true,
+  isRounded: false,
   isSecondary: false,
   hasShadow: false,
   icon: null,
