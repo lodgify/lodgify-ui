@@ -9,6 +9,7 @@
 /* Button */
 @background: @primaryColor;
 
+
 /* Button defaults to using same height as input globally */
 @verticalPadding: @12px;
 @horizontalPadding: @40px;
@@ -22,7 +23,7 @@
 
 /* Box Shadow */
 @boxShadow: none;
-@boxShadowColor: rgba(0,0,0,0.20);
+@boxShadowColor: rgba(0, 0, 0, 0.21);
 
 
 /* Icon */
@@ -30,9 +31,9 @@
 
 /* Loader */
 
-/*
-@willChange: box-shadow, transform, opacity, color, background;
-*/
+@willChange: transform, color, background;
+@transitionTime: 0.20s;
+@transitionFunction: ease-out;
 
 /*-------------------
         Group
@@ -107,6 +108,12 @@
 /* Floated */
 
 /* Animated */
+
+/* Secondary */
+@secondaryBorderRadius: @5px;
+@secondaryBackgroundColor: @secondaryColor;
+@secondaryTextColor: #555;
+@secondaryTransformHover: translateY(-2px);
 
 /* Circular */
 @circularBorderRadius: @50px;

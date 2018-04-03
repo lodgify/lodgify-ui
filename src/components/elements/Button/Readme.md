@@ -26,9 +26,21 @@
 #### Secondary
 
 ```jsx
-<Button isSecondary>
-  Submit
-</Button>
+<Grid style={{ backgroundColor: '#333' }}>
+  <GridRow columns={12}>
+    <GridColumn width={12}>
+      <Divider />
+    </GridColumn>
+    <GridColumn width={12}>
+      <Button isSecondary>
+        Submit
+      </Button>
+    </GridColumn>
+    <GridColumn width={12}>
+      <Divider />
+    </GridColumn>
+  </GridRow>
+</Grid>
 ```
 
 #### Icon

@@ -7,6 +7,13 @@
 --------------------*/
 
 /* Button */
+.ui.button {
+  will-change: @willChange;
+  transition:
+    transform @transitionTime @transitionFunction,
+    background-color @transitionTime @transitionFunction,
+    color @transitionTime @transitionFunction;
+}
 
 /* Button defaults to using same height as input globally */
 
@@ -33,6 +40,9 @@
 --------------------*/
 
 /* Hovered */
+.ui.button.secondary:hover {
+  transform: @secondaryTransformHover;
+}
 
 /* Focused */
 
@@ -97,6 +107,13 @@
 /* Floated */
 
 /* Animated */
+
+/* Secondary */
+.ui.button.secondary {
+  color: @secondaryTextColor;
+  border-radius: @secondaryBorderRadius;
+  background-color: @secondaryBackgroundColor;
+}
 
 /* Circular */
 .ui.button.circular {
