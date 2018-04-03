@@ -32,10 +32,10 @@ export const Component = ({
     })}
   >
     {!icon ? null : (
-      <div className="icon">
+      <span className="icon">
         {React.isValidElement(icon) ? <div className="icon">{icon}</div> : null}
         {isString(icon) ? <Icon name={icon} /> : null}
-      </div>
+      </span>
     )}
     {children}
   </Button>

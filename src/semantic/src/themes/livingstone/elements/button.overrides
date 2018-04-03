@@ -113,3 +113,7 @@
   display: @hasIconDisplay;
   height: @hasIconHeight;
 }
+
+.ui.button.has-icon > .icon > * {
+  display: @hasIconDisplay;
+}
