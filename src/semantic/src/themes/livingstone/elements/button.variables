@@ -109,7 +109,7 @@
 /* Animated */
 
 /* Circular */
-@circularBorderRadius: 5px;
+@circularBorderRadius: @50px;
 
 /* Has Shadow */
 @hasShadowBoxShadow: 0 2px 7px 0 @boxShadowColor;

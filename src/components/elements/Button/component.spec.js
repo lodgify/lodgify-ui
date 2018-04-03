@@ -21,6 +21,17 @@ describe('<Button />', () => {
         disabled: false,
         floated: 'left',
         loading: false,
+        circular: false,
+      })
+    );
+  });
+
+  it('should pass the `Button` component `props.isRounded` as `circular`', () => {
+    const button = getButton({ isRounded: true });
+    const actual = button.find('Button').props();
+    expect(actual).toEqual(
+      expect.objectContaining({
+        circular: true,
       })
     );
   });
@@ -74,20 +85,6 @@ describe('<Button />', () => {
     it('should render with `has-shadow` class name', () => {
       const button = getButton({ hasShadow: true });
       const actual = button.find('.has-shadow');
-      expect(actual).toHaveLength(1);
-    });
-  });
-
-  describe('when `props.isRounded`', () => {
-    it('should not render with `is-squared` class name by default', () => {
-      const button = getButton({ isRounded: true });
-      const actual = button.find('.is-squared');
-      expect(actual).toHaveLength(0);
-    });
-
-    it('should render with `is-squared` if `isRounded={false}`', () => {
-      const button = getButton({ isRounded: false });
-      const actual = button.find('.is-squared');
       expect(actual).toHaveLength(1);
     });
   });
