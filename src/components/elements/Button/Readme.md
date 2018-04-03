@@ -38,9 +38,6 @@
   <Button icon="world">
     Submit
   </Button>
-  <Button icon={<span>🌐</span>}>
-    Submit
-  </Button>
 </div>
 ```
 

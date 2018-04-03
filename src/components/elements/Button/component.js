@@ -30,8 +30,10 @@ export const Component = ({
       'has-shadow': !!hasShadow,
     })}
   >
-    {!icon ? null : (
-      <span className="icon">{icon && <Icon name={icon} />}</span>
+    {icon && (
+      <span className="icon">
+        <Icon name={icon} />
+      </span>
     )}
     {children}
   </Button>
