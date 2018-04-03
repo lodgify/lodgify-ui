@@ -16,7 +16,7 @@ export const Component = ({
   label,
   name,
 }) => (
-  <Label className={cx({ 'left aligned': isLeftAligned })} basic={!isFilled}>
+  <Label basic={!isFilled} className={cx({ 'left aligned': isLeftAligned })}>
     <Icon
       color={isDisabled ? 'grey' : undefined}
       inverted={isDisabled}
