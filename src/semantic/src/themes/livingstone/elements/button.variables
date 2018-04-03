@@ -9,6 +9,7 @@
 /* Button */
 @background: @primaryColor;
 
+
 /* Button defaults to using same height as input globally */
 @verticalPadding: @12px;
 @horizontalPadding: @40px;
@@ -16,20 +17,23 @@
 /* Text */
 @fontWeight: @normal;
 @textColor: @black;
-@borderRadius: @20px;
+@borderRadius: 0;
 
 /* Internal Shadow */
 
 /* Box Shadow */
+@boxShadow: none;
+@boxShadowColor: rgba(0, 0, 0, 0.21);
+
 
 /* Icon */
 @iconMargin: 0 @iconDistance 0 -(@iconDistance);
 
 /* Loader */
 
-/*
-@willChange: box-shadow, transform, opacity, color, background;
-*/
+@willChange: transform, color, background;
+@transitionTime: 0.20s;
+@transitionFunction: ease-out;
 
 /*-------------------
         Group
@@ -104,3 +108,20 @@
 /* Floated */
 
 /* Animated */
+
+/* Secondary */
+@secondaryBorderRadius: @5px;
+@secondaryBackgroundColor: @secondaryColor;
+@secondaryTextColor: #555;
+@secondaryTransformHover: translateY(-2px);
+
+/* Circular */
+@circularBorderRadius: @50px;
+
+/* Has Shadow */
+@hasShadowBoxShadow: 0 2px 7px 0 @boxShadowColor;
+
+/* Has Icon */
+// Forces inline-block elements inside the button itself
+@hasIconDisplay: inline-block;
+@hasIconHeight: auto;
