@@ -13,6 +13,10 @@ module.exports = srcDirectory => [
     components: buildComponentsPath(srcDirectory, 'typography'),
   },
   {
+    name: 'Layout',
+    components: buildComponentsPath(srcDirectory, 'layout'),
+  },
+  {
     name: 'Elements',
     components: buildComponentsPath(srcDirectory, 'elements'),
   },
