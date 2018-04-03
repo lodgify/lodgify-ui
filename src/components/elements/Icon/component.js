@@ -25,7 +25,6 @@ Component.displayName = 'Icon';
 Component.defaultProps = {
   isDisabled: false,
   label: null,
-  name: null,
 };
 
 Component.propTypes = {
@@ -37,5 +36,5 @@ Component.propTypes = {
    * The name of the icon to display.
    * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/icon)
    */
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
 };
