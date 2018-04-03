@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { GridColumn } from 'collections/Grid/GridColumn';
+import { GridColumn } from 'layout/GridColumn';
 import { OwnerLogin } from 'widgets/OwnerLogin';
 
 import { Component as Container } from './component';

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Segment } from 'semantic-ui-react';
 
-import { getBackgroundImageUrl } from './getBackgroundImageUrl';
+import { getBackgroundImageUrl } from './utils/getBackgroundImageUrl';
 
 /**
  * A full bleed takes up the width of its containing element

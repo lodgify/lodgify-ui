@@ -3,4 +3,5 @@
  * @param  {String|null} imageUrl
  * @return {String|null}
  */
-export const getBackgroundImageUrl = imageUrl => imageUrl && `url(${imageUrl})`;
+export const getBackgroundImageUrl = imageUrl =>
+  imageUrl ? `url(${imageUrl})` : null;
