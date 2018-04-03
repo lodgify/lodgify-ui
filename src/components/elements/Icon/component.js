@@ -9,7 +9,7 @@ import { Paragraph } from 'typography/Paragraph';
  * @return {Object}
  */
 export const Component = ({ isDisabled, label, name }) => (
-  <div>
+  <span>
     <Icon
       color={isDisabled ? 'grey' : undefined}
       inverted={isDisabled}
@@ -17,7 +17,7 @@ export const Component = ({ isDisabled, label, name }) => (
       size="large"
     />
     {label && <Paragraph>{label}</Paragraph>}
-  </div>
+  </span>
 );
 
 Component.displayName = 'Icon';
