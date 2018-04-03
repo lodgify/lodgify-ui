@@ -1,0 +1,60 @@
+/*******************************
+            Segment
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/*-------------------
+       Group
+--------------------*/
+
+/*-------------------
+       Coupling
+--------------------*/
+
+/* Page Grid Segment */
+
+/*******************************
+            States
+*******************************/
+
+/* Loading Dimmer */
+
+/* Loading Spinner */
+
+/*******************************
+            Variations
+*******************************/
+
+/* Piled */
+
+/* Circular */
+
+/* Stacked */
+
+/* Raised */
+
+/* Padded */
+
+/* Attached */
+
+/* Inverted */
+
+/* Floated */
+
+/* Basic */
+
+/* Colors */
+
+/* Ordinality */
+
+/* Full bleed */
+
+.ui.segment.full-bleed {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+}

@@ -40,6 +40,24 @@
 />
 ```
 
+#### Labeled
+
+```jsx
+<div>
+  <Image
+    imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
+    isFluid={false}
+    label="Two cats"
+  />
+  <Divider />
+  <Image
+    imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
+    isFluid={false}
+    label="Two more"
+  />
+</div>
+```
+
 #### No url
 
 ```jsx

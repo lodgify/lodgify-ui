@@ -1,1 +1,1 @@
-export { Component as Heading } from './component';
+export { Component as Paragraph } from './component';
