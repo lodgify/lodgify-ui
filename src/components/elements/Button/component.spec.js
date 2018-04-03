@@ -67,13 +67,6 @@ describe('<Button />', () => {
       expect(actual).toBe(1);
     });
 
-    it('should render an the icon Element if is an Element', () => {
-      const element = <h1>Hey</h1>;
-      const button = getButton({ icon: element });
-      const actual = button.find('h1').length;
-      expect(actual).toBe(1);
-    });
-
     it('should render with `has-icon` class name', () => {
       const button = getButton({ icon: 'world' });
       const actual = button.find('.has-icon');

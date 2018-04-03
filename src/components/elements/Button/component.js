@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import { isString } from 'lodash';
 import { Button, Icon } from 'semantic-ui-react';
 
 /**
@@ -32,10 +31,7 @@ export const Component = ({
     })}
   >
     {!icon ? null : (
-      <span className="icon">
-        {React.isValidElement(icon) ? <div className="icon">{icon}</div> : null}
-        {isString(icon) ? <Icon name={icon} /> : null}
-      </span>
+      <span className="icon">{icon && <Icon name={icon} />}</span>
     )}
     {children}
   </Button>
@@ -70,7 +66,7 @@ Component.propTypes = {
   /** Has the button shadow. */
   hasShadow: PropTypes.bool,
   /** An icon to display in the button */
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  icon: PropTypes.string,
   /** The size of the button */
   size: PropTypes.string,
 };
