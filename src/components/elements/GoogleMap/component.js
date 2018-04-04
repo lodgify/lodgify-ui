@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ReactGoogleMaps } from './reactGoogleMaps';
+import { ReactGoogleMap } from 'lib/react-google-maps';
 
 /**
  * A map displays a location.
@@ -13,7 +13,7 @@ export const Component = ({
   latitude,
   longitude,
 }) => (
-  <ReactGoogleMaps
+  <ReactGoogleMap
     isShowingExactMarker={isShowingExactMarker}
     isShowingVagueMarker={isShowingVagueMarker}
     latitude={latitude}
@@ -34,7 +34,7 @@ Component.propTypes = {
   /** Is the map showing a marker of a vague location. */
   isShowingVagueMarker: PropTypes.bool,
   /** The latitude coordinate for the center of the map and/or location of the marker */
-  latitude: PropTypes.bool.isRequired,
+  latitude: PropTypes.number.isRequired,
   /** The longitude coordinate for the center of the map and/or location of the marker */
-  longitude: PropTypes.bool.isRequired,
+  longitude: PropTypes.number.isRequired,
 };
