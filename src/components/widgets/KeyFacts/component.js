@@ -18,6 +18,7 @@ export const Component = ({ keyFacts, width }) => (
         <IconCard
           isDisabled={isDisabled}
           isFilled
+          key={label}
           label={label}
           name={iconName}
         />
@@ -34,17 +35,19 @@ Component.defaultProps = {
 
 Component.propTypes = {
   /** The key facts to display as icon cards. */
-  keyFacts: PropTypes.shape({
-    /**
-     * The name of the icon to display.
-     * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/IconCard)
-     */
-    iconName: PropTypes.string.isRequired,
-    /** Is the key fact disabled. */
-    isDisabled: PropTypes.bool,
-    /** A visible label to display for the key fact. */
-    label: PropTypes.string.isRequired,
-  }).isRequired,
+  keyFacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      /**
+       * The name of the icon to display.
+       * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/IconCard)
+       */
+      iconName: PropTypes.string.isRequired,
+      /** Is the key fact disabled. */
+      isDisabled: PropTypes.bool,
+      /** A visible label to display for the key fact. */
+      label: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   /** The number of columns the widget occupies. */
   width: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
 };

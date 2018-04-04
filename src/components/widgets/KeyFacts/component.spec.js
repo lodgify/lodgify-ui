@@ -1,62 +1,38 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { Form } from 'collections/Form';
-import { InputGroup } from 'collections/InputGroup';
-import { DateRangePicker } from 'elements/DateRangePicker';
-import { Dropdown } from 'elements/Dropdown';
+import { GridColumn } from 'layout/GridColumn';
+import { Heading } from 'typography/Heading';
+import { IconCard } from 'elements/IconCard';
 
-import * as options from './mock-data/options';
+import { keyFacts } from './mock-data/keyFacts';
 import { Component as KeyFacts } from './component';
 
-const captchaInputImage = 'someImage';
-
-const getKeyFacts = () =>
-  shallow(<KeyFacts captchaInputImage={captchaInputImage} {...options} />);
-const getForm = () => getKeyFacts().find(Form);
-const getFirstInputGroup = () =>
-  getKeyFacts()
-    .find(InputGroup)
-    .first();
-const getSecondInputGroup = () =>
-  getKeyFacts()
-    .find(InputGroup)
-    .at(1);
-const getThirdInputGroup = () =>
-  getKeyFacts()
-    .find(InputGroup)
-    .at(2);
+const getKeyFacts = () => shallow(<KeyFacts keyFacts={keyFacts} />);
+const getGridColumn = () => getKeyFacts().find(GridColumn);
+const getHeading = () => getKeyFacts().find(Heading);
 
 describe('<KeyFacts />', () => {
-  it('should render a single Lodgify UI `Form` component', () => {
+  it('should render a single Lodgify UI `GridColumn` component', () => {
     const wrapper = getKeyFacts();
-    const actual = wrapper.find(Form);
+    const actual = wrapper.find(GridColumn);
     expect(actual).toHaveLength(1);
   });
 
-  describe('the `Form` component', () => {
+  describe('the `GridColumn` component', () => {
     it('should have the right props', () => {
-      const wrapper = getForm();
+      const wrapper = getGridColumn();
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          headingText: 'KeyFacts',
-          onSubmit: Function.prototype,
-          submitButtonText: 'Send',
+          width: 12,
         })
       );
     });
 
     it('should render the right children', () => {
-      const children = [
-        'InputGroup',
-        'TextInput',
-        'InputGroup',
-        'TextArea',
-        'InputGroup',
-        'CaptchaInput',
-      ];
-      const wrapper = getForm();
+      const children = ['Heading', 'LabelGroup'];
+      const wrapper = getGridColumn();
       children.forEach((child, index) => {
         const actual = wrapper.childAt(index).name();
         expect(actual).toBe(child);
@@ -64,162 +40,45 @@ describe('<KeyFacts />', () => {
     });
   });
 
-  describe('the first `InputGroup`', () => {
-    it('should render the Name `TextInput` as first child', () => {
-      const wrapper = getFirstInputGroup();
-      const actual = wrapper.childAt(0).name();
-      expect(actual).toBe('TextInput');
-    });
-
-    it('should render the Phone `PhoneInput` as first child', () => {
-      const wrapper = getFirstInputGroup();
-      const actual = wrapper.childAt(1).name();
-      expect(actual).toBe('PhoneInput');
-    });
-  });
-
-  describe('the Name `TextInput`', () => {
+  describe('the `Heading` component', () => {
     it('should have the right props', () => {
-      const wrapper = getFirstInputGroup();
-      const actual = wrapper.childAt(0).props();
+      const wrapper = getHeading();
+      const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          label: 'Name',
-          name: 'name',
+          size: 'tiny',
         })
       );
     });
+
+    it('should render the right children', () => {
+      const wrapper = getHeading();
+      const actual = wrapper.prop('children');
+      expect(actual).toBe('Key facts');
+    });
   });
 
-  describe('the Phone `PhoneInput`', () => {
-    it('should have the right props', () => {
-      const wrapper = getFirstInputGroup();
-      const actual = wrapper.childAt(1).props();
+  describe('the `Label.Group` component', () => {
+    it('should render an `IconCard` for each item in `props.keyFacts`', () => {
+      const wrapper = getKeyFacts().find('LabelGroup');
+      const actual = wrapper.children(IconCard);
+      expect(actual).toHaveLength(keyFacts.length);
+    });
+  });
+
+  describe('each `IconCard` component', () => {
+    it('should get the right props', () => {
+      const wrapper = getKeyFacts()
+        .find(IconCard)
+        .first();
+      const actual = wrapper.props();
+      const { iconName, isDisabled, label } = keyFacts[0];
       expect(actual).toEqual(
         expect.objectContaining({
-          label: 'Phone',
-          name: 'phone',
-        })
-      );
-    });
-  });
-
-  describe('the Email `TextInput`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm();
-      const actual = wrapper.childAt(1).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Email',
-          name: 'email',
-        })
-      );
-    });
-  });
-
-  describe('the second `InputGroup`', () => {
-    it('should a `DateRangePicker` as first child', () => {
-      const wrapper = getSecondInputGroup();
-      const actual = wrapper.children(DateRangePicker);
-      expect(actual).toHaveLength(1);
-    });
-
-    it('should a `Dropdown` as second child', () => {
-      const wrapper = getSecondInputGroup();
-      const actual = wrapper.children(Dropdown);
-      expect(actual).toHaveLength(1);
-    });
-  });
-
-  describe('the `DateRangePicker`', () => {
-    it('should have the right props', () => {
-      const wrapper = getSecondInputGroup();
-      const actual = wrapper.childAt(0).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          endDatePlaceholderText: 'Departure',
-          name: 'dates',
-          startDatePlaceholderText: 'Arrival',
-          width: 'eight',
-        })
-      );
-    });
-  });
-
-  describe('the Guests `Dropdown`', () => {
-    it('should have the right props', () => {
-      const wrapper = getSecondInputGroup();
-      const actual = wrapper.childAt(1).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          icon: 'users',
-          label: 'Guests',
-          name: 'guests',
-          options: options.guestsOptions,
-          width: 'four',
-        })
-      );
-    });
-  });
-
-  describe('the Comments `TextArea`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm();
-      const actual = wrapper.childAt(3).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Comments',
-          name: 'comments',
-        })
-      );
-    });
-  });
-
-  describe('the third `InputGroup`', () => {
-    it('should render two `Dropdown`s', () => {
-      const wrapper = getThirdInputGroup();
-      const actual = wrapper.children(Dropdown);
-      expect(actual).toHaveLength(2);
-    });
-  });
-
-  describe('the Property `Dropdown`', () => {
-    it('should have the right props', () => {
-      const wrapper = getThirdInputGroup();
-      const actual = wrapper.childAt(0).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Property',
-          name: 'property',
-          options: options.propertyOptions,
-        })
-      );
-    });
-  });
-
-  describe('the Room `Dropdown`', () => {
-    it('should have the right props', () => {
-      const wrapper = getThirdInputGroup();
-      const actual = wrapper.childAt(1).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Room',
-          name: 'room',
-          options: options.roomOptions,
-        })
-      );
-    });
-  });
-
-  describe('the `CaptchaInput`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm();
-      const actual = wrapper.childAt(5).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          image: captchaInputImage,
-          label: 'Security Code',
-          name: 'captcha',
+          isDisabled: !!isDisabled,
+          isFilled: true,
+          label: label,
+          name: iconName,
         })
       );
     });
