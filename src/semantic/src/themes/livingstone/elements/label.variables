@@ -1,0 +1,90 @@
+/*******************************
+             Label
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+@backgroundColor: @greyTwo;
+@verticalPadding: @20px;
+@horizontalPadding: @24px;
+@fontWeight: @normal;
+
+/* Group */
+
+@groupVerticalMargin: @10px;
+@groupHorizontalMargin: @10px;
+
+/*-------------------
+        Parts
+--------------------*/
+
+/* Link */
+
+/* Icon */
+@iconCardTextLineHeight: @12px;
+@iconCardTextMargin: @12px 0 0;
+
+/* Image */
+
+/* Detail */
+
+/* Delete */
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Image Label */
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+
+/* Active */
+
+/* Active Hover */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Basic */
+@basicBorderColor: @greyThree;
+@basicBorder: @basicBorderWidth solid @basicBorderColor;
+
+@basicFontWeight: @bold;
+
+/* Tag */
+
+/* Ribbon */
+
+/* Colors */
+
+/* Attached */
+
+/* Corner */
+
+/* Corner Text */
+
+/* Horizontal */
+
+/* Circular Padding */
+
+/* Pointing */
+
+/* Basic Pointing */
+
+/* Floating */
+
+/* Left aligned */
+@leftAlignedIconCardMargin: @7px 65px @7px @5px;
+
+/*-------------------
+        Group
+--------------------*/
+
+/* Sizing */

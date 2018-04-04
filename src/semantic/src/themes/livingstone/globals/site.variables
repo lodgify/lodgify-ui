@@ -33,6 +33,8 @@
 @darkPrimaryColor  : @darkYellow;
 @lightPrimaryColor : @lightYellow;
 
+@secondaryColor    : @white;
+
 /*--------------
   Page Heading
 ---------------*/
@@ -121,6 +123,8 @@
 /*-------------------
         Grid
 --------------------*/
+
+@columnCount: 12;
 
 /*-------------------
      Transitions

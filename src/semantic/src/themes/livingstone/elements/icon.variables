@@ -1,0 +1,10 @@
+/*******************************
+             Icon
+*******************************/
+
+/* Variations */
+
+@iconLabelMarginLeft: @5px;
+@iconLabelMargin: 0 0 0 @iconLabelMarginLeft;
+
+@disabledIconLabelDecoration: line-through;

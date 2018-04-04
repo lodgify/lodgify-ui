@@ -1,0 +1,104 @@
+/*******************************
+             Label
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+.ui.label {
+
+/* Group */
+
+/*-------------------
+        Parts
+--------------------*/
+
+/* Link */
+
+/* Icon */
+  & > .big.icon {
+    text-align: center;
+    width: 100%;
+
+    & + p {
+      display: block;
+      line-height: @iconCardTextLineHeight;
+      margin: @iconCardTextMargin;
+      text-align: center;
+    }
+  }
+
+/* Image */
+
+/* Detail */
+
+/* Delete */
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Image Label */
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+
+/* Active */
+
+/* Active Hover */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Basic */
+  &.basic {
+    font-weight: @basicFontWeight;
+  }
+
+/* Tag */
+
+/* Ribbon */
+
+/* Colors */
+
+/* Attached */
+
+/* Corner */
+
+/* Corner Text */
+
+/* Horizontal */
+
+/* Circular Padding */
+
+/* Pointing */
+
+/* Basic Pointing */
+
+/* Floating */
+
+/* Left aligned */
+
+  &.left.aligned {
+    & > .big.icon {
+      margin:@leftAlignedIconCardMargin;
+      text-align: left;
+
+      & + p {
+        text-align: left;
+      }
+    }
+  }
+
+/*-------------------
+        Group
+--------------------*/
+
+/* Sizing */
+
+}
