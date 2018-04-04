@@ -1,15 +1,27 @@
 ```jsx
-const mockCaptcha = require('./mock-data/signupcode.jpeg');
-const {
-  guestsOptions,
-  propertyOptions,
-  roomOptions,
-} = require('./mock-data/options');
+const { keyFacts } = require('./mock-data/keyFacts');
 
-<KeyFacts
-  captchaInputImage={mockCaptcha}
-  guestsOptions={guestsOptions}
-  propertyOptions={propertyOptions}
-  roomOptions={roomOptions}
-/>
+<Grid>
+  <GridRow>
+    <KeyFacts keyFacts={keyFacts} />
+  </GridRow>
+</Grid>
+```
+
+### Variations
+
+#### Width
+
+```jsx
+const { keyFacts } = require('./mock-data/keyFacts');
+
+<Grid>
+  <GridRow>
+    <KeyFacts keyFacts={keyFacts} />
+  </GridRow>
+  <Divider hasLine />
+  <GridRow>
+    <KeyFacts keyFacts={keyFacts} width={6} />
+  </GridRow>
+</Grid>
 ```
