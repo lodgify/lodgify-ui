@@ -72,19 +72,19 @@
 /* Inverted */
 
 /* Basic */
-@basicColor: @primaryColor;
+@basicTextColor: @primaryColor;
 @basicVerticalPadding: @12px;
 @basicHorizontalPadding: @20px;
 
 /* Basic Hover */
-@basicBoxShadowHover: none;
-@basicOutlineHover: none;
-@basicTextDecorationHover: underline;
+@basicHoverBoxShadow: none;
+@basicHoverOutline: none;
+@basicHoverTextDecoration: underline;
 
 /* Basic Focus */
-@basicBoxShadowFocus: @basicBoxShadowHover;
-@basicOutlineFocus: @basicOutlineHover;
-@basicTextDecorationFocus: @basicTextDecorationHover;
+@basicFocusBoxShadow: @basicHoverBoxShadow;
+@basicFocusOutline: @basicHoverOutline;
+@basicFocusTextDecoration: @basicHoverTextDecoration;
 
 /* Basic Down */
 

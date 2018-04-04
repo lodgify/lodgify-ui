@@ -9,15 +9,15 @@ import { Button } from 'semantic-ui-react';
 export const Component = ({
   children,
   isPositionedRight,
-  mode,
-  url,
+  willOpenInNewTab,
+  href,
   onClick,
 }) => (
   <Button
     as="a"
     basic
-    href={url}
-    target={mode}
+    href={href}
+    target={willOpenInNewTab ? '_blank' : '_self'}
     floated={isPositionedRight ? 'right' : 'left'}
     onClick={onClick}
   >
@@ -30,20 +30,20 @@ Component.displayName = 'Link';
 Component.defaultProps = {
   onClick: Function.prototype,
   isPositionedRight: false,
-  mode: '_self',
+  willOpenInNewTab: false,
 };
 
 Component.propTypes = {
-  /** The text to display on the button. */
+  /** The text to display on the link. */
   children: PropTypes.node.isRequired,
   /** The URL the link refers to. */
-  url: PropTypes.string.isRequired,
-  /** The function to call when the link is tap
+  href: PropTypes.string.isRequired,
+  /** The function to call when the link is clicked
    *  @param {Object} event
    */
   onClick: PropTypes.func,
   /** Is the button positioned on the right hand side of its container. */
   isPositionedRight: PropTypes.bool,
-  /** Is the resource refered going to be open in a new tab or the existing one. */
-  mode: PropTypes.oneOf(['_self', '_blank']),
+  /** Is the referred resource to be opened in a new tab or the existing one. */
+  willOpenInNewTab: PropTypes.bool,
 };

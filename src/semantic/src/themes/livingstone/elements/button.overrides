@@ -66,22 +66,22 @@
 
 /* Basic */
 .ui.button.basic {
-  color: @basicColor;
+  color: @basicTextColor;
   padding: @basicVerticalPadding @basicHorizontalPadding;
 }
 
 /* Basic Hover */
 .ui.button.basic:hover {
-  box-shadow: @basicBoxShadowHover;
-  outline: @basicOutlineHover;
-  text-decoration: @basicTextDecorationHover;
+  box-shadow: @basicHoverBoxShadow;
+  outline: @basicHoverOutline;
+  text-decoration: @basicHoverTextDecoration;
 }
 
 /* Basic Focus */
 .ui.button.basic:focus {
-  box-shadow: @basicBoxShadowFocus;
-  outline: @basicOutlineFocus;
-  text-decoration: @basicTextDecorationFocus;
+  box-shadow: @basicFocusBoxShadow;
+  outline: @basicFocusOutline;
+  text-decoration: @basicFocusTextDecoration;
 }
 
 /* Basic Down */
