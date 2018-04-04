@@ -18,7 +18,8 @@
 
 /* Icon */
   & > .big.icon {
-    margin: @iconCardMargin;
+    text-align: center;
+    width: 100%;
 
     & + p {
       display: block;
@@ -86,6 +87,7 @@
   &.left.aligned {
     & > .big.icon {
       margin:@leftAlignedIconCardMargin;
+      text-align: left;
 
       & + p {
         text-align: left;

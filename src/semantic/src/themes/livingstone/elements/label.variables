@@ -13,6 +13,9 @@
 
 /* Group */
 
+@groupVerticalMargin: @10px;
+@groupHorizontalMargin: @10px;
+
 /*-------------------
         Parts
 --------------------*/
@@ -20,8 +23,6 @@
 /* Link */
 
 /* Icon */
-@iconCardMargin: 0 @20px;
-
 @iconCardTextLineHeight: @12px;
 @iconCardTextMargin: @12px 0 0;
 
