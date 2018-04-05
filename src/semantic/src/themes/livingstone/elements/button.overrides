@@ -10,9 +10,9 @@
 .ui.button {
   will-change: @willChange;
   transition:
-    transform @transitionTime @transitionFunction,
     background-color @transitionTime @transitionFunction,
-    color @transitionTime @transitionFunction;
+    color @transitionTime @transitionFunction,
+    transform @transitionTime @transitionFunction;
 }
 
 /* Button defaults to using same height as input globally */
@@ -75,24 +75,16 @@
 /* Inverted */
 
 /* Basic */
-.ui.button.basic {
-  color: @basicTextColor;
+.ui.basic.button {
   padding: @basicVerticalPadding @basicHorizontalPadding;
-}
 
-/* Basic Hover */
-.ui.button.basic:hover {
-  box-shadow: @basicHoverBoxShadow;
-  outline: @basicHoverOutline;
-  text-decoration: @basicHoverTextDecoration;
+  a& {
+    text-decoration: underline;
+  }
 }
+/* Basic Hover */
 
 /* Basic Focus */
-.ui.button.basic:focus {
-  box-shadow: @basicFocusBoxShadow;
-  outline: @basicFocusOutline;
-  text-decoration: @basicFocusTextDecoration;
-}
 
 /* Basic Down */
 
