@@ -1,5 +1,5 @@
 ```jsx
-<Image imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max" />
+<ResponsiveImage imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max" />
 ```
 
 ### Variations
@@ -7,7 +7,7 @@
 #### Fluid by default
 
 ```jsx
-<Image
+<ResponsiveImage
   imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
   alternativeText="Seamlessly fluid image loading amuses me"
 />
@@ -15,7 +15,7 @@
 
 #### Not Fluid
 ```jsx
-<Image
+<ResponsiveImage
   imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
   isFluid={false}
   alternativeText="Seamlessly non-fluid image loading amuses me"
@@ -25,7 +25,7 @@
 #### Responsive
 
 ```jsx
-<Image
+<ResponsiveImage
   imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=640&mode=max"
   sources={[
     {
@@ -44,13 +44,13 @@
 
 ```jsx
 <div>
-  <Image
+  <ResponsiveImage
     imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
     isFluid={false}
     label="Two cats"
   />
   <Divider />
-  <Image
+  <ResponsiveImage
     imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
     isFluid={false}
     label="Two more"
@@ -61,5 +61,5 @@
 #### No url
 
 ```jsx
-<Image />
+<ResponsiveImage />
 ```
