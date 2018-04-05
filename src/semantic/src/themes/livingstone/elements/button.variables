@@ -76,14 +76,25 @@
 /* Inverted */
 
 /* Basic */
+@basicTextColor: @primaryColor;
+@basicVerticalPadding: @12px;
+@basicHorizontalPadding: @20px;
 
 /* Basic Hover */
+@basicHoverBackground: @basicBackground;
+@basicHoverTextColor: @darkPrimaryColor;
+@basicHoverBoxShadow: none;
 
 /* Basic Focus */
 
 /* Basic Down */
+@basicDownBackground: @basicBackground;
+@basicDownTextColor: @basicHoverTextColor;
+@basicDownBoxShadow: @basicHoverBoxShadow;
 
 /* Basic Active */
+@basicActiveBackground: @basicBackground;
+@basicActiveTextColor: @basicHoverTextColor;
 
 /* Basic Inverted */
 
