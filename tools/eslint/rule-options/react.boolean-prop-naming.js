@@ -1,1 +1,1 @@
-module.exports = { rule: '^(is|has|are)[A-Z]([A-Za-z0-9]?)+' };
+module.exports = { rule: '^(is|has|are|will)[A-Z]([A-Za-z0-9]?)+' };

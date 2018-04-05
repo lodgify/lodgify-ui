@@ -10,9 +10,9 @@
 .ui.button {
   will-change: @willChange;
   transition:
-    transform @transitionTime @transitionFunction,
     background-color @transitionTime @transitionFunction,
-    color @transitionTime @transitionFunction;
+    color @transitionTime @transitionFunction,
+    transform @transitionTime @transitionFunction;
 }
 
 /* Button defaults to using same height as input globally */
@@ -75,7 +75,13 @@
 /* Inverted */
 
 /* Basic */
+.ui.basic.button {
+  padding: @basicVerticalPadding @basicHorizontalPadding;
 
+  a& {
+    text-decoration: underline;
+  }
+}
 /* Basic Hover */
 
 /* Basic Focus */
