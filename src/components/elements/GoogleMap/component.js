@@ -8,14 +8,14 @@ import { ReactGoogleMap } from 'lib/react-google-maps';
  * @return {Object}
  */
 export const Component = ({
-  isShowingExactMarker,
-  isShowingVagueMarker,
+  isShowingExactLocation,
+  isShowingApproximateLocation,
   latitude,
   longitude,
 }) => (
   <ReactGoogleMap
-    isShowingExactMarker={isShowingExactMarker}
-    isShowingVagueMarker={isShowingVagueMarker}
+    isShowingExactLocation={isShowingExactLocation}
+    isShowingApproximateLocation={isShowingApproximateLocation}
     latitude={latitude}
     longitude={longitude}
   />
@@ -24,15 +24,15 @@ export const Component = ({
 Component.displayName = 'GoogleMap';
 
 Component.defaultProps = {
-  isShowingExactMarker: false,
-  isShowingVagueMarker: false,
+  isShowingExactLocation: false,
+  isShowingApproximateLocation: false,
 };
 
 Component.propTypes = {
-  /** Is the map showing a marker of an exact location. */
-  isShowingExactMarker: PropTypes.bool,
-  /** Is the map showing a marker of a vague location. */
-  isShowingVagueMarker: PropTypes.bool,
+  /** Is the map showing a marker for the exact location. */
+  isShowingExactLocation: PropTypes.bool,
+  /** Is the map showing a marker for the approximate location. */
+  isShowingApproximateLocation: PropTypes.bool,
   /** The latitude coordinate for the center of the map and/or location of the marker */
   latitude: PropTypes.number.isRequired,
   /** The longitude coordinate for the center of the map and/or location of the marker */

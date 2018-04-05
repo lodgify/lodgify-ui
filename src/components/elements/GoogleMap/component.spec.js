@@ -25,8 +25,8 @@ describe('<GoogleMap />', () => {
       const actual = wrapper.find(ReactGoogleMap).props();
       expect(actual).toEqual(
         expect.objectContaining({
-          isShowingExactMarker: false,
-          isShowingVagueMarker: false,
+          isShowingExactLocation: false,
+          isShowingApproximateLocation: false,
           ...props,
         })
       );
