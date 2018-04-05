@@ -58,7 +58,7 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The text to display on the button. */
   children: PropTypes.node.isRequired,
-  /** The function to call when the link is clicked
+  /** The function to call when the button is clicked.
    *  @param {Object} event
    */
   onClick: PropTypes.func,
