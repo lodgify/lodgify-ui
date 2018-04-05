@@ -8,7 +8,7 @@ import { Paragraph } from 'typography/Paragraph';
 import { IMAGE_NOT_FOUND } from './constants';
 
 /**
- * The standard Image widget
+ * The standard widget for displaying an image.
  * @returns {Object}
  */
 export const Component = ({
@@ -39,7 +39,7 @@ export const Component = ({
   </picture>
 );
 
-Component.displayName = 'Image';
+Component.displayName = 'ResponsiveImage';
 
 Component.defaultProps = {
   imageUrl: '',

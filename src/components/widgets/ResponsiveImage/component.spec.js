@@ -4,17 +4,17 @@ import { Image as SemanticImage, Label } from 'semantic-ui-react';
 
 import { Paragraph } from 'typography/Paragraph';
 
-import { Component as Image } from './component';
+import { Component as ResponsiveImage } from './component';
 
-const getImage = props => shallow(<Image {...props} />);
+const getResponsiveImage = props => shallow(<ResponsiveImage {...props} />);
 
-describe('<Image />', () => {
-  it('should render a single Lodgify UI `Image` component', () => {
-    const image = getImage();
+describe('<ResponsiveImage />', () => {
+  it('should render a single Lodgify UI `ResponsiveImage` component', () => {
+    const image = getResponsiveImage();
     expect(image).toHaveLength(1);
   });
 
-  describe('the `Image` component', () => {
+  describe('the `ResponsiveImage` component', () => {
     const props = {
       imageUrl: 'Dummy URL 🙄',
       sources: [],
@@ -22,16 +22,16 @@ describe('<Image />', () => {
       className: null,
       isFluid: true,
       onLoad: Function.prototype,
-      imageTitle: 'Image title',
+      imageTitle: 'ResponsiveImage title',
     };
 
     it('should have a <Label> when no imageUrl is provided', () => {
-      const actual = getImage().find(Label);
+      const actual = getResponsiveImage().find(Label);
       expect(actual).toHaveLength(1);
     });
 
     it('should contain a Semantic UI <Image> with the right props', () => {
-      const semanticImage = getImage(props).find(SemanticImage);
+      const semanticImage = getResponsiveImage(props).find(SemanticImage);
 
       const actual = semanticImage.props();
       expect(actual).toEqual(
@@ -49,7 +49,7 @@ describe('<Image />', () => {
     });
 
     it('should not have any <source> when no imageUrl is provided', () => {
-      const sources = getImage(props).find('source');
+      const sources = getResponsiveImage(props).find('source');
 
       expect(sources).toHaveLength(0);
     });
@@ -67,7 +67,7 @@ describe('<Image />', () => {
           media: '(min-width: 1024px)',
         },
       ];
-      const actual = getImage({ ...props, sources }).find('source');
+      const actual = getResponsiveImage({ ...props, sources }).find('source');
 
       expect(actual).toHaveLength(2);
     });
@@ -75,7 +75,7 @@ describe('<Image />', () => {
 
   it('should render a single Lodgify UI `Paragraph` component when passed a label prop', () => {
     const label = '🔷';
-    const wrapper = getImage({ label });
+    const wrapper = getResponsiveImage({ label });
     const actual = wrapper.find(Paragraph);
     expect(actual).toHaveLength(1);
   });
@@ -83,7 +83,7 @@ describe('<Image />', () => {
   describe('the `Paragraph` component', () => {
     it('should get `props.label` as its children', () => {
       const label = '🔷';
-      const wrapper = getImage({ label });
+      const wrapper = getResponsiveImage({ label });
       const actual = wrapper.find(Paragraph).prop('children');
       expect(actual).toBe(label);
     });
