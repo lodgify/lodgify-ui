@@ -11,7 +11,7 @@
 
 ```jsx
 <GoogleMap
-  isShowingExactMarker
+  isShowingExactLocation
   latitude={41.387863}
   longitude={2.158105}
 />
@@ -21,7 +21,7 @@
 
 ```jsx
 <GoogleMap
-  isShowingVagueMarker
+  isShowingApproximateLocation
   latitude={41.387863}
   longitude={2.158105}
 />
