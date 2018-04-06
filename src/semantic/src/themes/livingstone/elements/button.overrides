@@ -76,7 +76,7 @@
 
 /* Basic */
 .ui.basic.button {
-  padding: @basicVerticalPadding @basicHorizontalPadding;
+  padding: @basicVerticalPadding @basicHorizontalPadding @basicVerticalPadding 0;
 
   a& {
     text-decoration: underline;

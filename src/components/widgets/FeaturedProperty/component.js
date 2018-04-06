@@ -66,7 +66,7 @@ Component.propTypes = {
   nightPrice: PropTypes.string.isRequired,
   /** The name of the property. */
   propertyName: PropTypes.string.isRequired,
-  /** The name of type of the property. */
+  /** The name of the type of the property. */
   propertyType: PropTypes.string.isRequired,
   /** URL pointing to a page with details of the property . */
   propertyUrl: PropTypes.string.isRequired,

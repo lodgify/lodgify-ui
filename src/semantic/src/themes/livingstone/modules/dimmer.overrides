@@ -1,0 +1,29 @@
+/*******************************
+            Dimmer
+*******************************/
+
+/* Hidden (Default) */
+
+/* Visible */
+
+.dimmed.dimmable > .ui.animating.dimmer,
+.dimmed.dimmable > .ui.visible.dimmer,
+.ui.active.dimmer {
+  // !important required to override
+  // conflicting !important on `.visible.transition`
+  display: flex !important;
+}
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Page Dimmer*/
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Inverted */
+
+/* Simple */

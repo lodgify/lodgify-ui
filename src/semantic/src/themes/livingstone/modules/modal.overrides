@@ -1,0 +1,51 @@
+/*******************************
+             Modal
+*******************************/
+
+.ui.modal {
+  // !important required to override
+  // conflicting inline styles
+  margin-top: 0 !important;
+}
+
+/* Close Icon */
+
+/* Header */
+
+/* Content */
+
+/* Image / Description */
+
+/* Modal Actions */
+
+/* Inner Close Position (Tablet/Mobile) */
+
+/* Mobile Positions */
+
+/* Responsive Widths */
+
+/* Coupling */
+
+/*-------------------
+       States
+--------------------*/
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Basic */
+
+/* Top Aligned */
+
+/* Scrolling Margin */
+
+/* Scrolling Content */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Size Widths */
+
+/* Derived Responsive Sizes */
