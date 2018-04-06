@@ -1,12 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Modal } from 'semantic-ui-react';
 
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
 import { Link } from 'elements/Link';
 import { Icon } from 'elements/Icon';
+import { Modal } from 'elements/Modal';
 
 import { getParagraphsFromStrings } from './utils/getParagraphsFromStrings';
 import {
@@ -246,10 +246,7 @@ describe('<PropertyDescription />', () => {
         const actual = wrapper.props();
         expect(actual).toEqual(
           expect.objectContaining({
-            closeIcon: true,
-            content: expect.any(Array),
-            dimmer: 'inverted',
-            size: 'tiny',
+            children: expect.any(Array),
             trigger: <Link>View more</Link>,
           })
         );
