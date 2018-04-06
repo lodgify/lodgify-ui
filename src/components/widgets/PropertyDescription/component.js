@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Modal } from 'semantic-ui-react';
 
+import { getUniqueKey } from 'lib/get-unique-key';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
 import { Link } from 'elements/Link';
 import { Icon } from 'elements/Icon';
+import { Modal } from 'elements/Modal';
 
 import { getParagraphsFromStrings } from './utils/getParagraphsFromStrings';
-import { getUniqueKey } from './utils/getUniqueKey';
 import { getFirstFourItems } from './utils/getFirstFourItems';
 
 /**
@@ -44,9 +44,8 @@ export const Component = ({
       </GridColumn>
       {extraDescriptionText && (
         <GridColumn width={12}>
-          <Modal
-            closeIcon
-            content={getParagraphsFromStrings(
+          <Modal trigger={<Link>View more</Link>}>
+            {getParagraphsFromStrings(
               descriptionText,
               extraDescriptionText
             ).map((paragraphText, i) => (
@@ -54,10 +53,7 @@ export const Component = ({
                 {paragraphText}
               </Paragraph>
             ))}
-            dimmer="inverted"
-            size="tiny"
-            trigger={<Link>View more</Link>}
-          />
+          </Modal>
         </GridColumn>
       )}
     </Grid>
@@ -81,7 +77,7 @@ Component.propTypes = {
     PropTypes.shape({
       /**
        * The name of the icon to display.
-       * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/IconCard)
+       * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/Icon)
        */
       iconName: PropTypes.string.isRequired,
       /** A visible label to display for the key fact. */
