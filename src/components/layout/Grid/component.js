@@ -1,5 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Grid } from 'semantic-ui-react';
+
 /**
  * Grid is the Lodgify UI interface for the
  * Semantic UI Grid.
@@ -9,6 +11,17 @@ import { Grid } from 'semantic-ui-react';
  *
  * @returns {Object}
  */
-export const Component = props => <Grid {...props} />;
+export const Component = ({ areColumnsCentered, ...props }) => (
+  <Grid {...props} centered={areColumnsCentered} />
+);
 
 Component.displayName = 'Grid';
+
+Component.defaultProps = {
+  areColumnsCentered: false,
+};
+
+Component.propTypes = {
+  /** Are the columns in the grid centered. */
+  areColumnsCentered: PropTypes.bool,
+};
