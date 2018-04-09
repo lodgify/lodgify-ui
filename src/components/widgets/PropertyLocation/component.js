@@ -42,10 +42,9 @@ export const Component = ({
         <Grid>
           {getFirstFourItems(transportOptions).map(
             ({ distance, iconName, label }, i) => (
-              <GridColumn width={3}>
+              <GridColumn key={getUniqueKey(label, i)} width={3}>
                 <IconCard
                   isFilled
-                  key={getUniqueKey(label, i)}
                   label={`${distance} ${label}`}
                   name={iconName}
                 />
