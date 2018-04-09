@@ -41,7 +41,7 @@ export const Component = ({
           ))}
         </Grid>
       </GridColumn>
-      {extraDescriptionText && (
+      {!!extraDescriptionText && (
         <GridColumn width={12}>
           <Modal trigger={<Link>View more</Link>}>
             {getParagraphsFromStrings(
