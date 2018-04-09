@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { getUniqueKey } from 'lib/get-unique-key';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -9,7 +10,6 @@ import { Paragraph } from 'typography/Paragraph';
 import { IconCard } from 'elements/IconCard';
 import { GoogleMap } from 'elements/GoogleMap';
 
-import { getParagraphsFromStrings } from './utils/getParagraphsFromStrings';
 import { getFirstFourItems } from './utils/getFirstFourItems';
 
 /**
@@ -42,11 +42,11 @@ export const Component = ({
       <GridColumn width={6}>
         <Grid>
           {getFirstFourItems(transportOptions).map(
-            ({ distance, iconName, label }) => (
+            ({ distance, iconName, label }, i) => (
               <GridColumn width={3}>
                 <IconCard
                   isFilled
-                  key={label}
+                  key={getUniqueKey(label, i)}
                   label={`${distance} ${label}`}
                   name={iconName}
                 />
