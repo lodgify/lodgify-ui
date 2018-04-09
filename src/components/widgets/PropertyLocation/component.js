@@ -11,6 +11,8 @@ import { Paragraph } from 'typography/Paragraph';
 import { IconCard } from 'elements/IconCard';
 import { GoogleMap } from 'elements/GoogleMap';
 
+import { getTransportOptionLabel } from './utils/getTransportOptionLabel';
+
 /**
  * The standard widget for displaying the location of a property.
  * @returns {Object}
@@ -45,7 +47,7 @@ export const Component = ({
               <GridColumn key={getUniqueKey(label, i)} width={3}>
                 <IconCard
                   isFilled
-                  label={`${distance} ${label}`}
+                  label={getTransportOptionLabel(distance, label)}
                   name={iconName}
                 />
               </GridColumn>
