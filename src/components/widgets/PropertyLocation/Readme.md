@@ -1,35 +1,19 @@
 ```jsx
-const { descriptionText, icons } = require('./mock-data/props');
-
-<Grid>
-  <GridRow>
-    <PropertyLocation
-      descriptionText={descriptionText}
-      icons={icons}
-      propertyType="Bed & Breakfast"
-    />
-  </GridRow>
-</Grid>
-```
-
-### Content
-
-#### Extra description text
-
-```jsx
 const {
-  descriptionText,
-  extraDescriptionText,
-  icons
+  locationDescription,
+  locationSummary,
+  transportOptions
 } = require('./mock-data/props');
 
 <Grid>
   <GridRow>
     <PropertyLocation
-      descriptionText={descriptionText}
-      extraDescriptionText={extraDescriptionText}
-      icons={icons}
-      propertyType="Bed & Breakfast"
+      locationDescription={locationDescription}
+      locationSummary={locationSummary}
+      transportOptions={transportOptions}
+      isShowingExactLocation
+      latitude={41.387863}
+      longitude={2.158105}
     />
   </GridRow>
 </Grid>
