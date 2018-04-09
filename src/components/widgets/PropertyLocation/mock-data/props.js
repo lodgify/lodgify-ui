@@ -5,8 +5,8 @@ export const locationDescription = `
 `;
 
 export const transportOptions = [
-  { distance: '20km', iconName: 'users', label: 'Airport' },
-  { distance: '2km', iconName: 'home', label: 'Bus' },
-  { distance: '12km', iconName: 'bed', label: 'Motorway' },
-  { distance: '2km', iconName: 'bath', label: 'Underground' },
+  { distance: '20km', iconName: 'plane', label: 'Airport' },
+  { distance: '2km', iconName: 'bus', label: 'Bus' },
+  { distance: '12km', iconName: 'road', label: 'Motorway' },
+  { distance: '2km', iconName: 'train', label: 'Underground' },
 ];

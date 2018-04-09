@@ -4,58 +4,65 @@ import PropTypes from 'prop-types';
 import { getUniqueKey } from 'lib/get-unique-key';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
-import { Link } from 'elements/Link';
-import { Icon } from 'elements/Icon';
-import { Modal } from 'elements/Modal';
+import { IconCard } from 'elements/IconCard';
+import { GoogleMap } from 'elements/GoogleMap';
 
 import { getParagraphsFromStrings } from './utils/getParagraphsFromStrings';
 import { getFirstFourItems } from './utils/getFirstFourItems';
 
 /**
- * The standard widget for displaying the description of a property.
+ * The standard widget for displaying the location of a property.
  * @returns {Object}
  */
 export const Component = ({
-  descriptionText,
-  extraDescriptionText,
-  icons,
-  propertyType,
+  isShowingApproximateLocation,
+  isShowingExactLocation,
+  latitude,
+  locationDescription,
+  locationSummary,
+  longitude,
+  transportOptions,
   width,
 }) => (
   <GridColumn width={width}>
+    <Heading size="tiny">Location</Heading>
+    <Paragraph size="tiny">{locationSummary}</Paragraph>
     <Grid>
-      <GridColumn width={7}>
-        <Paragraph size="tiny">{propertyType}</Paragraph>
-        {getParagraphsFromStrings(descriptionText).map((paragraphText, i) => (
-          <Paragraph key={getUniqueKey(paragraphText, i)}>
-            {paragraphText}
-          </Paragraph>
-        ))}
+      <GridColumn width={6}>
+        {getParagraphsFromStrings(locationDescription).map(
+          (paragraphText, i) => (
+            <Paragraph key={getUniqueKey(paragraphText, i)}>
+              {paragraphText}
+            </Paragraph>
+          )
+        )}
       </GridColumn>
-      <GridColumn verticalAlignContent="middle" width={5}>
-        <Grid areColumnsCentered>
-          {getFirstFourItems(icons).map(({ iconName, label }, i) => (
-            <GridColumn key={getUniqueKey(label, i)} width={5}>
-              <Icon label={label} name={iconName} />
-            </GridColumn>
-          ))}
+      <GridColumn width={6}>
+        <Grid>
+          {getFirstFourItems(transportOptions).map(
+            ({ distance, iconName, label }) => (
+              <GridColumn width={3}>
+                <IconCard
+                  isFilled
+                  key={label}
+                  label={`${distance} ${label}`}
+                  name={iconName}
+                />
+              </GridColumn>
+            )
+          )}
         </Grid>
       </GridColumn>
-      {extraDescriptionText && (
-        <GridColumn width={12}>
-          <Modal trigger={<Link>View more</Link>}>
-            {getParagraphsFromStrings(
-              descriptionText,
-              extraDescriptionText
-            ).map((paragraphText, i) => (
-              <Paragraph key={getUniqueKey(paragraphText, i)}>
-                {paragraphText}
-              </Paragraph>
-            ))}
-          </Modal>
-        </GridColumn>
-      )}
+      <GridColumn width={12}>
+        <GoogleMap
+          isShowingExactLocation={isShowingExactLocation}
+          isShowingApproximateLocation={isShowingApproximateLocation}
+          latitude={latitude}
+          longitude={longitude}
+        />
+      </GridColumn>
     </Grid>
   </GridColumn>
 );
@@ -63,29 +70,38 @@ export const Component = ({
 Component.displayName = 'PropertyLocation';
 
 Component.defaultProps = {
-  extraDescriptionText: null,
+  isShowingApproximateLocation: false,
+  isShowingExactLocation: false,
   width: 12,
 };
 
 Component.propTypes = {
-  /** The description text to display. */
-  descriptionText: PropTypes.string.isRequired,
-  /** Extra text to display in a modal. */
-  extraDescriptionText: PropTypes.string,
-  /** The icons to display. Maximum four. */
-  icons: PropTypes.arrayOf(
+  /** Is the map showing a marker for the approximate location. */
+  isShowingApproximateLocation: PropTypes.bool,
+  /** Is the map showing a marker for the exact location. */
+  isShowingExactLocation: PropTypes.bool,
+  /** The latitude coordinate for the center of the map and/or location of the marker */
+  latitude: PropTypes.number.isRequired,
+  /** The text description of the location. */
+  locationDescription: PropTypes.string.isRequired,
+  /** The summary of the location. */
+  locationSummary: PropTypes.string.isRequired,
+  /** The longitude coordinate for the center of the map and/or location of the marker */
+  longitude: PropTypes.number.isRequired,
+  /** The transport options to display. Maximum four. */
+  transportOptions: PropTypes.arrayOf(
     PropTypes.shape({
+      /** The distance of the transport option from the location. */
+      distance: PropTypes.string.isRequired,
       /**
        * The name of the icon to display.
        * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/Icon)
        */
       iconName: PropTypes.string.isRequired,
-      /** A visible label to display for the key fact. */
+      /** A visible label to display for the transport option. */
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** The name of the type of the property. */
-  propertyType: PropTypes.string.isRequired,
   /** The number of columns the widget occupies. */
   width: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
 };
