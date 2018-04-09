@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { getUniqueKey } from 'lib/get-unique-key';
+import { getFirstFourItems } from 'lib/get-first-four-items';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { IconCard } from 'elements/IconCard';
 import { GoogleMap } from 'elements/GoogleMap';
-
-import { getFirstFourItems } from './utils/getFirstFourItems';
 
 /**
  * The standard widget for displaying the location of a property.
