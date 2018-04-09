@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { getUniqueKey } from 'lib/get-unique-key';
+import { getFirstFourItems } from 'lib/get-first-four-items';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
 import { Link } from 'elements/Link';
 import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
-
-import { getParagraphsFromStrings } from './utils/getParagraphsFromStrings';
-import { getFirstFourItems } from './utils/getFirstFourItems';
 
 /**
  * The standard widget for displaying the description of a property.
