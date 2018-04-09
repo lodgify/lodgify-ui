@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
+import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
@@ -8,7 +9,6 @@ import { Link } from 'elements/Link';
 import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 
-import { getParagraphsFromStrings } from './utils/getParagraphsFromStrings';
 import {
   descriptionText,
   extraDescriptionText,
