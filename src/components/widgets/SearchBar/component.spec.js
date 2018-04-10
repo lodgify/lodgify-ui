@@ -1,38 +1,77 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { Icon, Form } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 
+import { GridColumn } from 'layout/GridColumn';
 import { Dropdown } from 'elements/Dropdown';
 import { DateRangePicker } from 'elements/DateRangePicker';
 import { Button } from 'elements/Button';
+import { Icon } from 'elements/Icon';
 
 import { Component as SearchBar } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
 
-const getSearchBar = () =>
+const getSearchBar = props =>
   shallow(
     <SearchBar
       guestsOptions={guestsOptions}
       locationOptions={locationOptions}
+      {...props}
     />
   );
-const getForm = () => getSearchBar().find(Form);
-const getFormGroup = () => getSearchBar().find(Form.Group);
-const getFormField = index =>
-  getSearchBar()
+const getGridColumn = props => getSearchBar(props).find(GridColumn);
+const getForm = props => getSearchBar(props).find(Form);
+const getFormGroup = props => getSearchBar(props).find(Form.Group);
+const getFormField = (index, props) =>
+  getSearchBar(props)
     .find(Form.Field)
     .at(index);
-const getDropdown = index =>
-  getSearchBar()
+const getDropdown = (index, props) =>
+  getSearchBar(props)
     .find(Dropdown)
     .at(index);
-const getButton = () => getSearchBar().find(Button);
+const getButton = props => getSearchBar(props).find(Button);
 
 describe('<SearchBar />', () => {
   it('should render a single Semantic UI `Form` component', () => {
     const wrapper = getSearchBar();
     const actual = wrapper.find(Form);
     expect(actual).toHaveLength(1);
+  });
+
+  describe('the `GridColumn` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getGridColumn();
+      const actual = wrapper.props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          width: 12,
+        })
+      );
+    });
+  });
+
+  describe('with `props.isSticky`', () => {
+    it('should render a div with `is-sticky` class name', () => {
+      const actual = getSearchBar({ isSticky: true }).find('.is-sticky');
+      expect(actual).toHaveLength(1);
+    });
+  });
+
+  describe('with `props.isShowingPropertySummary`', () => {
+    it('should render five `Form.Field` components', () => {
+      const wrapper = getFormGroup({ isShowingPropertySummary: true });
+      const actual = wrapper.find(Form.Field);
+      expect(actual).toHaveLength(5);
+    });
+  });
+
+  describe('with `props.searchButton`', () => {
+    it('should render the string `Search`', () => {
+      const wrapper = getButton({ searchButton: <Button>Yo!</Button> });
+      const actual = wrapper.contains('Yo!');
+      expect(actual).toBe(true);
+    });
   });
 
   describe('the `Form` component', () => {
@@ -182,6 +221,16 @@ describe('<SearchBar />', () => {
   });
 
   describe('the `Button` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getButton();
+      const actual = wrapper.props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          isRounded: true,
+        })
+      );
+    });
+
     it('should render a single Semantic UI `Icon` component', () => {
       const wrapper = getButton();
       const actual = wrapper.find(Icon);
@@ -217,7 +266,7 @@ describe('<SearchBar />', () => {
           onSubmit={onSubmit}
         />
       );
-      const form = wrapper.children(Form);
+      const form = wrapper.find(Form);
       form.simulate('submit');
       expect(onSubmit).toHaveBeenCalledWith(wrapper.state());
     });
