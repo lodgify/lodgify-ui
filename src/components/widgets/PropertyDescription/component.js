@@ -26,16 +26,18 @@ export const Component = ({
     <Grid>
       <GridColumn width={7}>
         <Paragraph size="tiny">{propertyType}</Paragraph>
-        {getParagraphsFromStrings(descriptionText).map((paragraphText, i) => (
-          <Paragraph key={getUniqueKey(paragraphText, i)}>
-            {paragraphText}
-          </Paragraph>
-        ))}
+        {getParagraphsFromStrings(descriptionText).map(
+          (paragraphText, index) => (
+            <Paragraph key={getUniqueKey(paragraphText, index)}>
+              {paragraphText}
+            </Paragraph>
+          )
+        )}
       </GridColumn>
       <GridColumn verticalAlignContent="middle" width={5}>
         <Grid areColumnsCentered>
-          {getFirstFourItems(icons).map(({ iconName, label }, i) => (
-            <GridColumn key={getUniqueKey(label, i)} width={5}>
+          {getFirstFourItems(icons).map(({ iconName, label }, index) => (
+            <GridColumn key={getUniqueKey(label, index)} width={5}>
               <Icon label={label} name={iconName} />
             </GridColumn>
           ))}
@@ -47,8 +49,8 @@ export const Component = ({
             {getParagraphsFromStrings(
               descriptionText,
               extraDescriptionText
-            ).map((paragraphText, i) => (
-              <Paragraph key={getUniqueKey(paragraphText, i)}>
+            ).map((paragraphText, index) => (
+              <Paragraph key={getUniqueKey(paragraphText, index)}>
                 {paragraphText}
               </Paragraph>
             ))}

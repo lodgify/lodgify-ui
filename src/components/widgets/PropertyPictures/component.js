@@ -16,8 +16,8 @@ export const Component = ({ pictures, width }) => (
   <GridColumn width={width}>
     <Heading size="tiny">Property pictures</Heading>
     <Grid>
-      {pictures.map(({ imageUrl, label }, i) => (
-        <GridColumn key={getUniqueKey(label, i)} width={4}>
+      {pictures.map(({ imageUrl, label }, index) => (
+        <GridColumn key={getUniqueKey(label, index)} width={4}>
           <ResponsiveImage imageUrl={imageUrl} label={label} />
         </GridColumn>
       ))}
