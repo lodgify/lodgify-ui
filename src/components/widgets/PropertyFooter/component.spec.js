@@ -1,38 +1,53 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import { Icon, Form } from 'semantic-ui-react';
+import { shallow } from 'enzyme';
+import { Form } from 'semantic-ui-react';
 
+import { GridColumn } from 'layout/GridColumn';
 import { Dropdown } from 'elements/Dropdown';
 import { DateRangePicker } from 'elements/DateRangePicker';
 import { Button } from 'elements/Button';
+import { Icon } from 'elements/Icon';
 
-import { Component as SearchBar } from './component';
+import { Component as PropertyFooter } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
 
-const getSearchBar = () =>
+const getPropertyFooter = () =>
   shallow(
-    <SearchBar
+    <PropertyFooter
       guestsOptions={guestsOptions}
       locationOptions={locationOptions}
     />
   );
-const getForm = () => getSearchBar().find(Form);
-const getFormGroup = () => getSearchBar().find(Form.Group);
+const getGridColumn = () => getPropertyFooter().find(GridColumn);
+const getForm = () => getPropertyFooter().find(Form);
+const getFormGroup = () => getPropertyFooter().find(Form.Group);
 const getFormField = index =>
-  getSearchBar()
+  getPropertyFooter()
     .find(Form.Field)
     .at(index);
 const getDropdown = index =>
-  getSearchBar()
+  getPropertyFooter()
     .find(Dropdown)
     .at(index);
-const getButton = () => getSearchBar().find(Button);
+const getButton = () => getPropertyFooter().find(Button);
 
-describe('<SearchBar />', () => {
+describe('<PropertyFooter />', () => {
   it('should render a single Semantic UI `Form` component', () => {
-    const wrapper = getSearchBar();
+    const wrapper = getPropertyFooter();
     const actual = wrapper.find(Form);
     expect(actual).toHaveLength(1);
+  });
+
+  describe('the `GridColumn` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getGridColumn();
+      const actual = wrapper.props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          width: 12,
+        })
+      );
+    });
   });
 
   describe('the `Form` component', () => {
@@ -67,31 +82,15 @@ describe('<SearchBar />', () => {
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          width: 'three',
+          width: 'four',
         })
       );
     });
 
-    it('should render a single Lodgify UI `Dropdown` component', () => {
+    it('should render a single Lodgify UI `Icon` component', () => {
       const wrapper = getFormField(0);
-      const actual = wrapper.find(Dropdown);
+      const actual = wrapper.find(Icon);
       expect(actual).toHaveLength(1);
-    });
-  });
-
-  describe('the first `Dropdown` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getDropdown(0);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          icon: 'map pin',
-          label: 'Location',
-          name: 'location',
-          onChange: expect.any(Function),
-          options: locationOptions,
-        })
-      );
     });
   });
 
@@ -101,7 +100,7 @@ describe('<SearchBar />', () => {
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          width: 'seven',
+          width: 'four',
         })
       );
     });
@@ -115,7 +114,7 @@ describe('<SearchBar />', () => {
 
   describe('the `DateRangePicker` component', () => {
     it('should have the right props', () => {
-      const wrapper = getSearchBar().find(DateRangePicker);
+      const wrapper = getPropertyFooter().find(DateRangePicker);
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
@@ -135,7 +134,7 @@ describe('<SearchBar />', () => {
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          width: 'three',
+          width: 'two',
         })
       );
     });
@@ -147,9 +146,9 @@ describe('<SearchBar />', () => {
     });
   });
 
-  describe('the second `Dropdown` component', () => {
+  describe('the `Dropdown` component', () => {
     it('should have the right props', () => {
-      const wrapper = getDropdown(1);
+      const wrapper = getDropdown(0);
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
@@ -169,7 +168,7 @@ describe('<SearchBar />', () => {
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          width: 'three',
+          width: 'two',
         })
       );
     });
@@ -192,15 +191,15 @@ describe('<SearchBar />', () => {
       );
     });
 
-    it('should render a single Semantic UI `Icon` component', () => {
+    it('should not render a single Semantic UI `Icon` component', () => {
       const wrapper = getButton();
       const actual = wrapper.find(Icon);
-      expect(actual).toHaveLength(1);
+      expect(actual).toHaveLength(0);
     });
 
-    it('should render the string `Search`', () => {
+    it('should render the string `Check Availability`', () => {
       const wrapper = getButton();
-      const actual = wrapper.contains('Search');
+      const actual = wrapper.contains('Check Availability');
       expect(actual).toBe(true);
     });
   });
@@ -209,7 +208,7 @@ describe('<SearchBar />', () => {
     it('should persist the value in component state', () => {
       const name = 'location';
       const value = '🍰';
-      const wrapper = getSearchBar();
+      const wrapper = getPropertyFooter();
       const input = wrapper.find(Dropdown).first();
       input.simulate('change', name, value);
       const actual = wrapper.state(name);
@@ -220,8 +219,8 @@ describe('<SearchBar />', () => {
   describe('Interaction: onSubmit the form', () => {
     it('should call `props.onSubmit` with the state', () => {
       const onSubmit = jest.fn();
-      const wrapper = mount(
-        <SearchBar
+      const wrapper = shallow(
+        <PropertyFooter
           guestsOptions={guestsOptions}
           locationOptions={locationOptions}
           onSubmit={onSubmit}
@@ -233,8 +232,8 @@ describe('<SearchBar />', () => {
     });
   });
 
-  it('should have `displayName` `SearchBar`', () => {
-    const actual = SearchBar.displayName;
-    expect(actual).toBe('SearchBar');
+  it('should have `displayName` `PropertyFooter`', () => {
+    const actual = PropertyFooter.displayName;
+    expect(actual).toBe('PropertyFooter');
   });
 });
