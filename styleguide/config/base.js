@@ -2,6 +2,8 @@ const path = require('path');
 
 const SRC_DIR = path.join(__dirname, '..', '..', 'src');
 
+const TITLE = 'Lodgify UI';
+
 module.exports = {
   assetsDir: 'assets',
   editorConfig: {
@@ -12,9 +14,14 @@ module.exports = {
   skipComponentsWithoutExample: true,
   styleguideComponents: require('../styleguide-components'),
   styles: require('./styles'),
-  template: path.join('.', 'index.html'),
+  template: {
+    context: {
+      title: TITLE,
+    },
+    filename: path.join('.', 'index.html'),
+  },
   theme: require('./theme'),
-  title: 'Lodgify UI',
+  title: TITLE,
   webpackConfig: require('../webpack.config.js'),
   styleguideDir: 'dist',
   serverPort: 6060,
