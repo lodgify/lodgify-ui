@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Menu, Image } from 'semantic-ui-react';
 import { size } from 'lodash';
 
+import { getUniqueKey } from 'lib/get-unique-key';
 import { Heading } from 'typography/Heading';
 import { Submenu } from 'elements/Submenu';
 import { Button } from 'elements/Button';
@@ -38,14 +39,14 @@ export const Component = ({
               isTriggerUnderlined={index === activeNavigationItemIndex}
               isTriggeredOnHover
               items={subItems}
-              key={text}
+              key={getUniqueKey(text, index)}
             >
               {text}
             </Submenu>
           ) : (
             <Menu.Item
               active={index === activeNavigationItemIndex}
-              key={text}
+              key={getUniqueKey(text, index)}
               link
               href={href}
             >

@@ -33,8 +33,8 @@ export const Component = ({
     <Grid>
       <GridColumn width={6}>
         {getParagraphsFromStrings(locationDescription).map(
-          (paragraphText, i) => (
-            <Paragraph key={getUniqueKey(paragraphText, i)}>
+          (paragraphText, index) => (
+            <Paragraph key={getUniqueKey(paragraphText, index)}>
               {paragraphText}
             </Paragraph>
           )
@@ -43,8 +43,8 @@ export const Component = ({
       <GridColumn width={6}>
         <Grid>
           {getFirstFourItems(transportOptions).map(
-            ({ distance, iconName, label }, i) => (
-              <GridColumn key={getUniqueKey(label, i)} width={3}>
+            ({ distance, iconName, label }, index) => (
+              <GridColumn key={getUniqueKey(label, index)} width={3}>
                 <IconCard
                   isFilled
                   label={getTransportOptionLabel(distance, label)}

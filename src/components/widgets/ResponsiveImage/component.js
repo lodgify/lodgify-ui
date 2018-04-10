@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Image, Label } from 'semantic-ui-react';
 
+import { getUniqueKey } from 'lib/get-unique-key';
 import { Paragraph } from 'typography/Paragraph';
 
 import { IMAGE_NOT_FOUND } from './constants';
@@ -23,7 +24,7 @@ export const Component = ({
 }) => (
   <picture role="figure">
     {sources.map(({ srcset, media }, index) => (
-      <source srcSet={srcset} media={media} key={index} />
+      <source srcSet={srcset} media={media} key={getUniqueKey(srcset, index)} />
     ))}
     <Image
       src={imageUrl}

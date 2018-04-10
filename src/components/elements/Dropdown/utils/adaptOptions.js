@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { getUniqueKey } from 'lib/get-unique-key';
+
 /**
  * If no options specify an image, return false.
  * If one or more options has an image,
@@ -11,15 +13,15 @@ export const adaptOptions = options => {
   const hasImage = options.some(option => option.hasOwnProperty('image'));
   return (
     hasImage &&
-    options.map(({ image, text, value }) => ({
+    options.map(({ image, text, value }, index) => ({
       text: [
         <img
-          key={`image-${value}`}
+          key={getUniqueKey(`img${text}`, index)}
           className="ui image"
           src={image || ''}
           alt={text}
         />,
-        <span key={`text-${value}`} className="text">
+        <span key={getUniqueKey(`spa${text}`, index)} className="text">
           {text}
         </span>,
       ],

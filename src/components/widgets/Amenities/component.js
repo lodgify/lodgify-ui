@@ -22,8 +22,8 @@ export const Component = ({ amenities, width }) => (
     <Heading size="tiny">Amenities</Heading>
     <Grid>
       {getFirstNineItems(amenities).map(
-        ({ iconName, isDisabled, label }, i) => (
-          <GridColumn key={getUniqueKey(label, i)} width={4}>
+        ({ iconName, isDisabled, label }, index) => (
+          <GridColumn key={getUniqueKey(label, index)} width={4}>
             <Icon isDisabled={isDisabled} label={label} name={iconName} />
           </GridColumn>
         )
@@ -31,9 +31,9 @@ export const Component = ({ amenities, width }) => (
       {hasMoreThanNineItems(amenities) && (
         <GridColumn width={12}>
           <Modal trigger={<Link>View more</Link>}>
-            {amenities.map(({ iconName, isDisabled, label }, i) => (
-              <div key={getUniqueKey(label, i)}>
-                {!!i && <Divider hasLine />}
+            {amenities.map(({ iconName, isDisabled, label }, index) => (
+              <div key={getUniqueKey(label, index)}>
+                {!!index && <Divider hasLine />}
                 <Icon isDisabled={isDisabled} label={label} name={iconName} />
               </div>
             ))}
