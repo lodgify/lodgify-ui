@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Button } from 'elements/Button';
@@ -6,39 +6,30 @@ import { SearchBar } from 'widgets/SearchBar';
 
 /**
  * The standard widget for displaying the Check Availability Search Bar of a property.
- * @extends {React.PureComponent}
+ * @returns {Object}
  */
-export class Component extends PureComponent {
-  state = {};
-
-  persistInputChange = (name, value) => {
-    this.setState({ [name]: value });
-  };
-
-  handleSubmit = () => {
-    this.props.onSubmit(this.state);
-  };
-
-  render = () => {
-    const { guestsOptions, locationOptions } = this.props;
-    return (
-      <SearchBar
-        guestsOptions={guestsOptions}
-        locationOptions={locationOptions}
-        onSubmit={this.handleSubmit}
-        searchButton={<Button isRounded>Check Availability</Button>}
-        isShowingLocationDropdown={false}
-        isShowingPropertySummary
-        isSticky
-      />
-    );
-  };
-}
+export const Component = ({
+  guestsOptions,
+  searchButton,
+  locationOptions,
+  onSubmit,
+}) => (
+  <SearchBar
+    guestsOptions={guestsOptions}
+    locationOptions={locationOptions}
+    onSubmit={onSubmit}
+    searchButton={searchButton}
+    isShowingLocationDropdown={false}
+    isShowingPropertySummary
+    isSticky
+  />
+);
 
 Component.displayName = 'PropertyFooter';
 
 Component.defaultProps = {
   onSubmit: Function.prototype,
+  searchButton: <Button isRounded>Check Availability</Button>,
 };
 
 Component.propTypes = {
@@ -67,4 +58,6 @@ Component.propTypes = {
    *  @param {String} values.location
    */
   onSubmit: PropTypes.func,
+  /** The Search Button the Search Bar displays. */
+  searchButton: PropTypes.node,
 };

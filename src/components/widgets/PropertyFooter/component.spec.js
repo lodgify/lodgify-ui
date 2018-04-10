@@ -42,7 +42,7 @@ describe('<PropertyFooter />', () => {
   });
 
   describe('Interaction: onSubmit the form', () => {
-    it('should call `props.onSubmit` with the state', () => {
+    it('should call `props.onSubmit`', () => {
       const onSubmit = jest.fn();
       const searchBar = mount(
         <SearchBar
@@ -54,7 +54,7 @@ describe('<PropertyFooter />', () => {
 
       const form = searchBar.find(Form);
       form.simulate('submit');
-      expect(onSubmit).toHaveBeenCalledWith(searchBar.state());
+      expect(onSubmit).toHaveBeenCalled();
     });
   });
 });
