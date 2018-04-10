@@ -45,7 +45,6 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 ```
 
 #### Sticky
-Renders with `is-sticky` classname
 ```jsx
 const { guestsOptions, locationOptions } = require('./mock-data/options');
 

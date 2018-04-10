@@ -5,7 +5,7 @@ import { Button } from 'elements/Button';
 import { SearchBar } from 'widgets/SearchBar';
 
 /**
- * The standard widget for displaying the Check Availability Search Bar of a property.
+ * The standard widget displaying the summary and search bar as the footer of a property page.
  * @returns {Object}
  */
 export const Component = ({
