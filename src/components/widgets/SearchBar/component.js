@@ -54,7 +54,7 @@ export class Component extends PureComponent {
             />
           </Form.Field>
           <Form.Field width="three">
-            <Button>
+            <Button isRounded>
               <Icon name="search" />
               Search
             </Button>
