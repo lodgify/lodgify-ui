@@ -33,7 +33,7 @@ export const Component = ({
         />
       </Segment>
       <Segment>
-        from <Heading size="tiny">{nightPrice}</Heading> /night
+        from <Heading size="mini">{nightPrice}</Heading> /night
       </Segment>
     </Segment.Group>
   </Segment.Group>

@@ -6,8 +6,6 @@
        Element
 --------------------*/
 
-@firstMargin    : 0;
-
 /* Sub Heading */
 
 /* Sub Header */
@@ -27,6 +25,9 @@
 --------------------*/
 
 /* Sizing */
+h6.ui.header {
+  font-size: @h6;
+}
 
 /* Sub Header */
 
