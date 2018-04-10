@@ -10,14 +10,8 @@
        Group
 --------------------*/
 
-.ui.compact.segments .segment {
-  padding: @groupedSegmentPadding;
-
-  h6.ui.header {
-    display: inline;
-    line-height: @groupedSegmentMiniHeaderLineHeight;
-  }
-}
+@groupedSegmentPadding: 0 @12px 0 0;
+@groupedSegmentMiniHeaderLineHeight: 1em;
 
 /*-------------------
        Coupling
@@ -60,10 +54,3 @@
 /* Ordinality */
 
 /* Full bleed */
-
-.ui.segment.full-bleed {
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  padding: 0;
-}
