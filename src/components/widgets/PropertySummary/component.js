@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Rating, Segment, Icon } from 'semantic-ui-react';
+import { Icon, Rating, Segment } from 'semantic-ui-react';
 
 import { Heading } from 'typography/Heading';
 

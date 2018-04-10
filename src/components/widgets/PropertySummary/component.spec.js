@@ -1,55 +1,41 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Card, Image, Rating } from 'semantic-ui-react';
+import { Segment, Icon, Rating } from 'semantic-ui-react';
 
 import { Heading } from 'typography/Heading';
 
 import { Component as PropertySummary } from './component';
 
 const props = {
-  bedroomsNumber: 3,
-  imageUrl: '🐱🐱',
-  guestsNumber: 3,
   locationName: 'Catania',
   nightPrice: '$280',
   propertyName: 'The Cat House',
-  propertyType: 'Bed and breakfast',
-  propertyUrl: '/',
   ratingNumber: 4.8,
 };
 
 const getPropertySummary = () => shallow(<PropertySummary {...props} />);
-const getCard = () => getPropertySummary().find(Card);
-const getThirdCardDescription = () =>
-  getPropertySummary()
-    .find(Card.Description)
-    .at(2);
-const getFourthCardDescription = () =>
-  getPropertySummary()
-    .find(Card.Description)
-    .at(3);
 
 describe('<PropertySummary />', () => {
-  it('should render a single Semantic UI `Card` component', () => {
+  it('should render a single Semantic UI `Segment.Group` component', () => {
     const wrapper = getPropertySummary();
-    const actual = wrapper.find(Card);
-    expect(actual).toHaveLength(1);
+    const actual = wrapper.is(Segment.Group);
+    expect(actual).toBe(true);
   });
 
-  describe('the `Card` component', () => {
+  describe('the first `Segment.Group` component', () => {
     it('should have the right props', () => {
-      const wrapper = getCard();
+      const wrapper = getPropertySummary();
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          href: props.propertyUrl,
+          compact: true,
         })
       );
     });
 
     it('should render the right children', () => {
-      const children = ['Image', 'CardContent'];
-      const wrapper = getCard();
+      const children = ['Segment', 'SegmentGroup'];
+      const wrapper = getPropertySummary();
       children.forEach((child, index) => {
         const actual = wrapper.childAt(index).name();
         expect(actual).toBe(child);
@@ -57,87 +43,113 @@ describe('<PropertySummary />', () => {
     });
   });
 
-  describe('the `Image` component', () => {
+  describe('the first `Segment` child of `Segment.Group` component', () => {
+    const getFirstSegment = () =>
+      getPropertySummary()
+        .find(Segment)
+        .first();
+    it('should render the right children', () => {
+      const wrapper = getFirstSegment();
+      const actual = wrapper.children(Heading);
+      expect(actual).toHaveLength(1);
+    });
+  });
+
+  describe('the first `Heading` component', () => {
+    const getFirstHeading = () =>
+      getPropertySummary()
+        .find(Heading)
+        .first();
+
     it('should have the right props', () => {
-      const wrapper = getPropertySummary().find(Image);
+      const wrapper = getFirstHeading();
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          alt: '',
-          src: props.imageUrl,
+          size: 'tiny',
         })
       );
     });
-  });
 
-  describe('the `Card.Content` component', () => {
-    it('should render the right children', () => {
-      const children = [
-        'CardMeta',
-        'CardHeader',
-        'CardDescription',
-        'CardDescription',
-        'CardDescription',
-        'CardDescription',
-      ];
-      const wrapper = getPropertySummary().find(Card.Content);
-      children.forEach((child, index) => {
-        const actual = wrapper.childAt(index).name();
-        expect(actual).toBe(child);
-      });
-    });
-  });
-
-  describe('the `Card.Meta` component', () => {
-    it('should have the right `children` prop', () => {
-      const wrapper = getPropertySummary().find(Card.Meta);
-      const actual = wrapper.prop('children');
-      expect(actual).toBe(props.propertyType);
-    });
-  });
-
-  describe('the `Card.Header` component', () => {
-    it('should have the right `children` prop', () => {
-      const wrapper = getPropertySummary().find(Card.Header);
+    it('should have the right children', () => {
+      const wrapper = getFirstHeading();
       const actual = wrapper.prop('children');
       expect(actual).toBe(props.propertyName);
     });
   });
 
-  describe('the first `Card.Description` component', () => {
-    it('should have the right `children` prop', () => {
-      const wrapper = getPropertySummary()
-        .find(Card.Description)
-        .at(0);
-      const actual = wrapper.prop('children');
-      expect(actual).toBe(props.locationName);
-    });
-  });
-
-  describe('the second `Card.Description` component', () => {
-    it('should have the right `children` prop', () => {
-      const wrapper = getPropertySummary()
-        .find(Card.Description)
+  describe('the second `Segment.Group` component', () => {
+    const getSecondSegmentGroup = () =>
+      getPropertySummary()
+        .find(Segment.Group)
         .at(1);
-      const actual = wrapper.prop('children');
-      expect(actual).toEqual([
-        'Guests: ',
-        props.guestsNumber,
-        ' | Bedrooms: ',
-        props.bedroomsNumber,
-      ]);
+
+    it('should have the right props', () => {
+      const wrapper = getSecondSegmentGroup();
+      const actual = wrapper.props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          horizontal: true,
+        })
+      );
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getSecondSegmentGroup();
+      const actual = wrapper.find(Segment);
+      expect(actual).toHaveLength(3);
     });
   });
 
-  describe('the third `Card.Description` component', () => {
-    it('should have the right `children` prop', () => {
-      const wrapper = getThirdCardDescription();
+  describe('the second `Segment` component', () => {
+    const getSecondSegment = () =>
+      getPropertySummary()
+        .find(Segment)
+        .at(1);
+    it('should render the right `children`', () => {
+      const wrapper = getSecondSegment();
+      const actual = wrapper.prop('children');
+      expect(actual).toEqual(expect.arrayContaining([props.locationName]));
+    });
+
+    it('should render a single Semantic UI `Icon` component', () => {
+      const wrapper = getSecondSegment();
+      const actual = wrapper.find(Icon);
+      expect(actual).toHaveLength(1);
+    });
+  });
+
+  describe('the first `Icon` component', () => {
+    const getFirstIcon = () =>
+      getPropertySummary()
+        .find(Icon)
+        .at(0);
+    it('should have the right props', () => {
+      const wrapper = getFirstIcon();
+      const actual = wrapper.props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          color: 'yellow',
+          name: 'map pin',
+        })
+      );
+    });
+  });
+
+  describe('the third `Segment` component', () => {
+    const getThirdSegment = () =>
+      getPropertySummary()
+        .find(Segment)
+        .at(2);
+
+    it('should have the right children', () => {
+      const wrapper = getThirdSegment();
       const actual = wrapper.prop('children');
       expect(actual).toEqual(expect.arrayContaining([props.ratingNumber]));
     });
 
-    it('should render a single Semantic UI `Rating` component', () => {
-      const wrapper = getThirdCardDescription();
+    it('should have a single `Rating` component', () => {
+      const wrapper = getThirdSegment();
       const actual = wrapper.find(Rating);
       expect(actual).toHaveLength(1);
     });
@@ -158,34 +170,44 @@ describe('<PropertySummary />', () => {
     });
   });
 
-  describe('the fourth `Card.Description` component', () => {
-    it('should have the right `children` prop', () => {
-      const wrapper = getFourthCardDescription();
+  describe('the last `Segment` component', () => {
+    const getFourthSegment = () =>
+      getPropertySummary()
+        .find(Segment)
+        .at(3);
+
+    it('should have the right children', () => {
+      const wrapper = getFourthSegment();
       const actual = wrapper.prop('children');
       expect(actual).toEqual(expect.arrayContaining(['from ', ' /night']));
     });
 
     it('should render a single Lodgify UI `Heading` component', () => {
-      const wrapper = getFourthCardDescription();
+      const wrapper = getFourthSegment();
       const actual = wrapper.find(Heading);
       expect(actual).toHaveLength(1);
     });
   });
 
-  describe('the `Rating` component', () => {
+  describe('the last `Heading` component', () => {
+    const getLastHeading = () =>
+      getPropertySummary()
+        .find(Heading)
+        .at(1);
     it('should have the right props', () => {
-      const wrapper = getPropertySummary().find(Heading);
+      const wrapper = getLastHeading();
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          size: 'tiny',
+          size: 'mini',
         })
       );
     });
-  });
 
-  it('should have `displayName` `PropertySummary`', () => {
-    const actual = PropertySummary.displayName;
-    expect(actual).toBe('PropertySummary');
+    it('should have the right children', () => {
+      const wrapper = getLastHeading();
+      const actual = wrapper.prop('children');
+      expect(actual).toEqual(props.nightPrice);
+    });
   });
 });
