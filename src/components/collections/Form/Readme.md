@@ -69,6 +69,52 @@ const { InputGroup } = require('../InputGroup');
 </Form>
 ```
 
+#### Input width
+
+Inputs in forms can take up different widths.
+
+```jsx
+const { InputGroup } = require('../InputGroup');
+
+<Form>
+  <TextInput label="Three" width="three" />
+  <TextInput label="Five" width="five" />
+  <TextInput label="Seven" width="seven" />
+  <TextInput label="Nine" width="nine" />
+  <InputGroup>
+    <TextInput label="Groups default"/>
+    <TextInput label="to equal"/>
+  </InputGroup>
+  <InputGroup>
+    <TextInput label="Two" width="two" />
+    <TextInput label="Ten" width="ten" />
+  </InputGroup>
+  <InputGroup>
+    <TextInput label="Four" width="four" />
+    <TextInput label="Eight" width="eight" />
+  </InputGroup>
+  <InputGroup>
+    <TextInput label="Six" width="six" />
+    <TextInput label="Six" width="six" />
+  </InputGroup>
+  <InputGroup>
+    <TextInput label="Two" width="two" />
+    <TextInput label="Eight" width="eight" />
+    <TextInput label="Two" width="two" />
+  </InputGroup>
+  <InputGroup>
+    <TextInput label="Three" width="three" />
+    <TextInput label="Six" width="six" />
+    <TextInput label="Three" width="three" />
+  </InputGroup>
+  <InputGroup>
+    <TextInput label="Four" width="four" />
+    <TextInput label="Four" width="four" />
+    <TextInput label="Four" width="four" />
+  </InputGroup>
+</Form>
+```
+
 #### Submit button text
 
 ```jsx
