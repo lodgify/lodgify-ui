@@ -109,13 +109,15 @@ describe('<PropertyDescription />', () => {
 
   describe('the other `Paragraph` components', () => {
     it('should render the right children', () => {
-      getParagraphsFromStrings(descriptionText).forEach((paragraphText, i) => {
-        const wrapper = getPropertyDescription()
-          .find(Paragraph)
-          .at(i + 1);
-        const actual = wrapper.prop('children');
-        expect(actual).toBe(paragraphText);
-      });
+      getParagraphsFromStrings(descriptionText).forEach(
+        (paragraphText, index) => {
+          const wrapper = getPropertyDescription()
+            .find(Paragraph)
+            .at(index + 1);
+          const actual = wrapper.prop('children');
+          expect(actual).toBe(paragraphText);
+        }
+      );
     });
   });
 
