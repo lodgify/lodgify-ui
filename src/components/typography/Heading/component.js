@@ -4,7 +4,7 @@ import { Header } from 'semantic-ui-react';
 
 import { getHeadingNumber } from './getHeadingNumber';
 
-const SIZES = ['huge', 'large', 'medium', 'small', 'tiny'];
+const SIZES = ['huge', 'large', 'medium', 'small', 'tiny', 'mini'];
 
 /**
  * A heading provides a short summary of content.
