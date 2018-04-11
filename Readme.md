@@ -154,7 +154,7 @@ Avoid wasting time in PRs by creating these pre-commit git hooks...
 npm run lint && \
 npm run test && \
 npm run semantic:build && \
-npm run styleguide:build && \
+npm run styleguide:build
 ```
 
 ### Deployment
