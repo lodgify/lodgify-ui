@@ -137,9 +137,10 @@ If you add a new `*.overrides` or `*.variables` file in the livingstone theme di
 ### Contributing
 
 - Open a PR into the [production branch](https://github.com/lodgify/lodgify-ui/tree/production).
-- When the PR has been created add the two contributors, that you would like to review your PR, to the list of Reviewers and Assignees.
-- If you are a reviewer and have completed your 'review' (approved or not) add the contributor, that needs to take the next action, to the Assignee list.
-- When the PR has been approved, branch merged and deleted there should be no Assignees.
+- The PR Opener adds contributors as Reviewers *and* Assignees.
+- Each Reviewer completes a review. Reviewer removes themself as Assignee.
+- If action is required, Reviewer adds Opener as Assignee.
+- If no action is required and all checks pass, any Reviewer or Opener merges the PR.
 
 A PR cannot be merged if:
 - It breaks [Wheaton's Law](http://www.wheatonslaw.com/)
