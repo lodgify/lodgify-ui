@@ -1,11 +1,7 @@
 ```jsx
 const { sleepingArrangements } = require('./mock-data/sleepingArrangements');
 
-<Grid>
-  <GridRow>
-    <SleepingArrangements sleepingArrangements={sleepingArrangements} />
-  </GridRow>
-</Grid>
+<SleepingArrangements sleepingArrangements={sleepingArrangements} />
 ```
 
 ### Variations
@@ -17,11 +13,15 @@ const { sleepingArrangements } = require('./mock-data/sleepingArrangements');
 
 <Grid>
   <GridRow>
-    <SleepingArrangements sleepingArrangements={sleepingArrangements} />
+    <GridColumn>
+      <SleepingArrangements sleepingArrangements={sleepingArrangements} />
+    </GridColumn>
   </GridRow>
   <Divider hasLine />
   <GridRow>
-    <SleepingArrangements sleepingArrangements={sleepingArrangements} width={6} />
+    <GridColumn>
+      <SleepingArrangements sleepingArrangements={sleepingArrangements} width={6} />
+    </GridColumn>
   </GridRow>
 </Grid>
 ```
