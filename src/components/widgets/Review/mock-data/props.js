@@ -5,11 +5,15 @@ export const reviewerCategory = 'Young couple';
 export const reviewerLocation = 'Portugal';
 
 export const reviewerName = 'Magellan';
-// TODO just date and make helper
-export const reviewerStayDate = 'stayed in 9/2015';
 
-export const reviewResponse =
-  'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon! Loren ipsum :) ';
+export const reviewerStayDate = '9/2015';
+
+export const reviewResponse = {
+  text:
+    'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!',
+  source: 'The Owner',
+  dateTime: '10/14/2015 12:22:58 PM',
+};
 
 export const reviewText =
   'Beautifully located and well-kept villas in Santorini. Would certainly come back next year.';
