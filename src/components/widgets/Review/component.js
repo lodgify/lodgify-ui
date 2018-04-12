@@ -2,16 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Rating } from 'semantic-ui-react';
 
-import { Paragraph } from 'typography/Paragraph';
+import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
+import { Paragraph } from 'typography/Paragraph';
+import { Quote } from 'elements/Quote';
 
+import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
 import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
-// import { Heading } from 'typography/Heading';
 
 /**
- * The standard widget for displaying the summary details of a property.
+ * The standard widget for displaying the reviews of a property.
  * @returns {Object}
  */
 export const Component = ({
@@ -19,8 +21,8 @@ export const Component = ({
   reviewerCategory,
   reviewerLocation,
   reviewerName,
-  reviewerStayDate,
   reviewResponse,
+  reviewerStayDate,
   reviewText,
   reviewTitle,
 }) => (
@@ -53,11 +55,23 @@ export const Component = ({
           </GridRow>
         </Grid>
       </Card.Meta>
+      <Divider />
       <Card.Header>{reviewTitle}</Card.Header>
       <Card.Description>{reviewText}</Card.Description>
-      {reviewResponse && <quoteblock>{reviewResponse}</quoteblock>}
+      <Divider />
+      {reviewResponse && [
+        <Quote
+          quoteDateTime={reviewResponse.dateTime}
+          quoteSource={reviewResponse.source}
+          quoteText={reviewResponse.text}
+        />,
+        <Divider />,
+      ]}
       <Card.Description textAlign="right">
-        {getReviewerNameAndLocationString(reviewerCategory, reviewerStayDate)}
+        {getReviewerCategoryAndStayDateString(
+          reviewerCategory,
+          reviewerStayDate
+        )}
       </Card.Description>
     </Card.Content>
   </Card>
@@ -65,26 +79,32 @@ export const Component = ({
 
 Component.displayName = 'Review';
 
-// TODO: use the proper object for the review response using the Quote format
 Component.defaultProps = {
-  reviewResponse: '',
+  reviewResponse: null,
 };
 
 Component.propTypes = {
-  /** The numeral rating for the property given in the review, out of 5 */
+  /** The numeral rating for the property given in the review, out of 5. */
   ratingNumber: PropTypes.number.isRequired,
-  /** the reviewers category */
+  /** the reviewers category. */
   reviewerCategory: PropTypes.string.isRequired,
-  /** The reviewers location */
+  /** The reviewers location. */
   reviewerLocation: PropTypes.string.isRequired,
-  /** The name of the individual that wrote the review */
+  /** The name of the individual that wrote the review. */
   reviewerName: PropTypes.string.isRequired,
-  /** the date the reviewer stayed */
+  /** The owners response to the review. */
+  reviewResponse: PropTypes.shape({
+    /** The text for the quote. */
+    text: PropTypes.string.isRequired,
+    /** The name of the individual being quoted. */
+    source: PropTypes.string.isRequired,
+    /** The time of the quote. */
+    dateTime: PropTypes.string.isRequired,
+  }),
+  /** the date the reviewer stayed. */
   reviewerStayDate: PropTypes.string.isRequired,
-  /** The review's main body of text */
+  /** The review's main body of text. */
   reviewText: PropTypes.string.isRequired,
-  /** The title of the review */
+  /** The title of the review. */
   reviewTitle: PropTypes.string.isRequired,
-  /** The owners response to the review */
-  reviewResponse: PropTypes.string,
 };
