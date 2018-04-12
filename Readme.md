@@ -136,7 +136,11 @@ If you add a new `*.overrides` or `*.variables` file in the livingstone theme di
 
 ### Contributing
 
-Open a PR into the [production branch](https://github.com/lodgify/lodgify-ui/tree/production).
+- Open a PR into the [production branch](https://github.com/lodgify/lodgify-ui/tree/production).
+- The PR Opener adds contributors as Reviewers *and* Assignees.
+- Each Reviewer completes a review. Reviewer removes themself as Assignee.
+- If action is required, Reviewer adds Opener as Assignee.
+- If no action is required and all checks pass, any Reviewer or Opener merges the PR.
 
 A PR cannot be merged if:
 - It breaks [Wheaton's Law](http://www.wheatonslaw.com/)
@@ -154,7 +158,7 @@ Avoid wasting time in PRs by creating these pre-commit git hooks...
 npm run lint && \
 npm run test && \
 npm run semantic:build && \
-npm run styleguide:build && \
+npm run styleguide:build
 ```
 
 ### Deployment
