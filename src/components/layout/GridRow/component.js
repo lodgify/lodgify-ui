@@ -19,7 +19,7 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** Vertically align the content of the column to the bottom, middle or top. */
+  /** Horizontally align the content of the row to the left, center or right. Text content can be justified to fit the width of the row. */
   horizontalAlignContent: PropTypes.oneOf([
     'left',
     'center',
