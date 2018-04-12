@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Card } from 'semantic-ui-react';
 
 import { ReactGoogleMap } from 'lib/react-google-maps';
 
@@ -8,12 +9,16 @@ import { ReactGoogleMap } from 'lib/react-google-maps';
  * @return {Object}
  */
 export const Component = ({
+  height,
   isShowingExactLocation,
   isShowingApproximateLocation,
   latitude,
   longitude,
 }) => (
   <ReactGoogleMap
+    apiKey="AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q"
+    containerElement={<Card fluid />}
+    height={height}
     isShowingExactLocation={isShowingExactLocation}
     isShowingApproximateLocation={isShowingApproximateLocation}
     latitude={latitude}
@@ -24,11 +29,14 @@ export const Component = ({
 Component.displayName = 'GoogleMap';
 
 Component.defaultProps = {
+  height: '400px',
   isShowingExactLocation: false,
   isShowingApproximateLocation: false,
 };
 
 Component.propTypes = {
+  /** A valid CSS value to set the height of the map. */
+  height: PropTypes.string,
   /** Is the map showing a marker for the exact location. */
   isShowingExactLocation: PropTypes.bool,
   /** Is the map showing a marker for the approximate location. */
