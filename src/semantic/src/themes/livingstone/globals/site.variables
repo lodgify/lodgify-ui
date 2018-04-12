@@ -351,3 +351,17 @@
 /*---  Dark Tones  ---*/
 
 /*---  Light Tones  ---*/
+
+/*******************************
+           Lodgify UI
+       Additional Elements
+*******************************/
+
+/*-------------------
+        Quote
+--------------------*/
+
+@quoteBorderLeft: solid @8px @greyThree;
+@quotePadding: 0 1em;
+@quoteMargin: 1em;
+@quoteRowPadding: 0.4em 0em;
