@@ -9,7 +9,7 @@ import { Paragraph } from 'typography/Paragraph';
 import { getQuoteSource } from './utils/getQuoteSource';
 
 /**
- * An quote displays text with indentation and a left border.
+ * A quote displays text with indentation and a left border.
  * @return {Object}
  */
 export const Component = ({ quoteDateTime, quoteSource, quoteText }) => (
