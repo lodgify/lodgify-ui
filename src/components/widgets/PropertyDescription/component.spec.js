@@ -1,6 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
+import {
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+} from 'lib/expect-helpers';
+import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -26,61 +31,41 @@ const getPropertyDescription = extraProps =>
   shallow(<PropertyDescription {...props} {...extraProps} />);
 
 describe('<PropertyDescription />', () => {
-  it('should render a single Lodgify UI `GridColumn` component', () => {
+  it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getPropertyDescription();
-    const actual = wrapper.is(GridColumn);
+    const actual = wrapper.is(Grid);
     expect(actual).toBe(true);
-  });
-
-  describe('the first `GridColumn` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getPropertyDescription();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 12,
-        })
-      );
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getPropertyDescription();
-      const actual = wrapper.children();
-      expect(actual).toHaveLength(1);
-      expect(actual.is(Grid)).toBe(true);
-    });
   });
 
   describe('the first `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyDescription()
-        .find(Grid)
-        .at(0);
-      const actual = wrapper.children(GridColumn);
-      expect(actual).toHaveLength(2);
+      const wrapper = getPropertyDescription();
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(2, GridColumn)
+      );
     });
   });
 
-  describe('the second `GridColumn` component', () => {
-    const getSecondGridColumn = () =>
+  describe('the first `GridColumn` component', () => {
+    const getFirstGridColumn = () =>
       getPropertyDescription()
         .find(GridColumn)
-        .at(1);
+        .first();
 
     it('should have the right props', () => {
-      const wrapper = getSecondGridColumn();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 7,
-        })
-      );
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        width: 7,
+      });
     });
 
     it('should render the right children', () => {
-      const wrapper = getSecondGridColumn();
-      const actual = wrapper.children(Paragraph);
-      expect(actual).toHaveLength(3);
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(3, Paragraph)
+      );
     });
   });
 
@@ -92,18 +77,14 @@ describe('<PropertyDescription />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstParagraph();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'tiny',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        size: 'tiny',
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getFirstParagraph();
-      const actual = wrapper.prop('children');
-      expect(actual).toBe(props.propertyType);
+      expectComponentToHaveChildren(wrapper, props.propertyType);
     });
   });
 
@@ -114,34 +95,29 @@ describe('<PropertyDescription />', () => {
           const wrapper = getPropertyDescription()
             .find(Paragraph)
             .at(index + 1);
-          const actual = wrapper.prop('children');
-          expect(actual).toBe(paragraphText);
+          expectComponentToHaveChildren(wrapper, paragraphText);
         }
       );
     });
   });
 
-  describe('the third `GridColumn` component', () => {
-    const getThirdGridColumn = () =>
+  describe('the second `GridColumn` component', () => {
+    const getSecondGridColumn = () =>
       getPropertyDescription()
         .find(GridColumn)
-        .at(2);
+        .at(1);
 
     it('should have the right props', () => {
-      const wrapper = getThirdGridColumn();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          verticalAlignContent: 'middle',
-          width: 5,
-        })
-      );
+      const wrapper = getSecondGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        verticalAlignContent: 'middle',
+        width: 5,
+      });
     });
 
     it('should render the right children', () => {
-      const wrapper = getThirdGridColumn();
-      const actual = wrapper.children(Grid);
-      expect(actual).toHaveLength(1);
+      const wrapper = getSecondGridColumn();
+      expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
@@ -153,18 +129,17 @@ describe('<PropertyDescription />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGrid();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          areColumnsCentered: true,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        areColumnsCentered: true,
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getSecondGrid();
-      const actual = wrapper.children(GridColumn);
-      expect(actual).toHaveLength(4);
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(4, GridColumn)
+      );
     });
   });
 
@@ -176,18 +151,14 @@ describe('<PropertyDescription />', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridColumnInSecondGrid();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 5,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        width: 5,
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getGridColumnInSecondGrid();
-      const actual = wrapper.children(Icon);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, Icon);
     });
   });
 
@@ -196,13 +167,10 @@ describe('<PropertyDescription />', () => {
       const wrapper = getPropertyDescription()
         .find(Icon)
         .at(0);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: icons[0].label,
-          name: icons[0].iconName,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        label: icons[0].label,
+        name: icons[0].iconName,
+      });
     });
   });
 
@@ -212,8 +180,10 @@ describe('<PropertyDescription />', () => {
         const wrapper = getPropertyDescription({ extraDescriptionText })
           .find(Grid)
           .at(0);
-        const actual = wrapper.children(GridColumn);
-        expect(actual).toHaveLength(3);
+        expectComponentToHaveChildren(
+          wrapper,
+          ...getArrayOfLengthOfItem(3, GridColumn)
+        );
       });
     });
 
@@ -221,22 +191,18 @@ describe('<PropertyDescription />', () => {
       const getConditionalGridColumn = () =>
         getPropertyDescription({ extraDescriptionText })
           .find(GridColumn)
-          .at(7);
+          .at(6);
 
       it('should have the right props', () => {
         const wrapper = getConditionalGridColumn();
-        const actual = wrapper.props();
-        expect(actual).toEqual(
-          expect.objectContaining({
-            width: 12,
-          })
-        );
+        expectComponentToHaveProps(wrapper, {
+          width: 12,
+        });
       });
 
       it('should render the right children', () => {
         const wrapper = getConditionalGridColumn();
-        const actual = wrapper.children(Modal);
-        expect(actual).toHaveLength(1);
+        expectComponentToHaveChildren(wrapper, Modal);
       });
     });
 
@@ -245,13 +211,10 @@ describe('<PropertyDescription />', () => {
         const wrapper = getPropertyDescription({ extraDescriptionText }).find(
           Modal
         );
-        const actual = wrapper.props();
-        expect(actual).toEqual(
-          expect.objectContaining({
-            children: expect.any(Array),
-            trigger: <Link>View more</Link>,
-          })
-        );
+        expectComponentToHaveProps(wrapper, {
+          children: expect.any(Array),
+          trigger: <Link>View more</Link>,
+        });
       });
     });
   });
