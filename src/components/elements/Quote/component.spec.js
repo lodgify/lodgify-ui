@@ -44,45 +44,35 @@ describe('<Quote />', () => {
   });
 
   describe('the `Grid` component', () => {
-    const getGrid = () => getQuote().find(Grid);
-
     it('should render a single Lodgify UI `GridColumn` component', () => {
-      const wrapper = getGrid();
+      const wrapper = getQuote().find(Grid);
       expectComponentToHaveChildren(wrapper, GridRow, GridRow);
     });
   });
 
   describe('the first `GridRow` component', () => {
-    const getFirstGridRow = () =>
-      getQuote()
+    it('should render a single `GridColumn` component', () => {
+      const wrapper = getQuote()
         .find(GridRow)
         .at(0);
-    const wrapper = getFirstGridRow();
-    it('should render a single `GridColumn` component', () => {
       expectComponentToHaveChildren(wrapper, GridColumn);
     });
   });
 
   describe('the first `GridColumn` component', () => {
-    const getFirstGridColumn = () =>
-      getQuote()
+    it('should render a single `Paragraph` component', () => {
+      const wrapper = getQuote()
         .find(GridColumn)
         .at(0);
-    const wrapper = getFirstGridColumn();
-
-    it('should render a single `Paragraph` component', () => {
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
 
   describe('this first `Paragraph` component', () => {
-    const getFirstParagraph = () =>
-      getQuote()
+    it('should have the right children', () => {
+      const wrapper = getQuote()
         .find(Paragraph)
         .at(0);
-    const wrapper = getFirstParagraph();
-
-    it('should have the right children', () => {
       expectComponentToHaveChildren(wrapper, quoteText);
     });
   });
@@ -92,27 +82,25 @@ describe('<Quote />', () => {
       getQuote()
         .find(GridRow)
         .at(1);
-    const wrapper = getSecondGridRow();
 
     it('should have the right props', () => {
+      const wrapper = getSecondGridRow();
       expectComponentToHaveProps(wrapper, {
         horizontalAlignContent: 'right',
       });
     });
 
     it('should render a `GridColumn` component', () => {
+      const wrapper = getSecondGridRow();
       expectComponentToHaveChildren(wrapper, GridColumn);
     });
   });
 
   describe('the second `GridColumn` component', () => {
-    const getSecondGridColumn = () =>
-      getQuote()
+    it('should render a `Paragraph` component', () => {
+      const wrapper = getQuote()
         .find(GridColumn)
         .at(1);
-    const wrapper = getSecondGridColumn();
-
-    it('should render a `Paragraph` component', () => {
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
@@ -122,15 +110,16 @@ describe('<Quote />', () => {
       getQuote()
         .find(Paragraph)
         .at(1);
-    const wrapper = getSecondParagraph();
 
     it('should have the right props', () => {
+      const wrapper = getSecondParagraph();
       expectComponentToHaveProps(wrapper, {
         size: 'tiny',
       });
     });
 
     it('should have the right children', () => {
+      const wrapper = getSecondParagraph();
       expectComponentToHaveChildren(
         wrapper,
         getQuoteSource(quoteSource, quoteDateTime)
