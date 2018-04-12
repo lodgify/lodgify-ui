@@ -7,7 +7,7 @@
 
 ### Usage
 
-#### Exact marker
+#### Exact location
 
 ```jsx
 <GoogleMap
@@ -17,7 +17,7 @@
 />
 ```
 
-#### Vague marker
+#### Approximate location
 
 ```jsx
 <GoogleMap
