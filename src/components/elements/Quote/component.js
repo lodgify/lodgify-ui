@@ -13,22 +13,20 @@ import { getQuoteSource } from './utils/getQuoteSource';
  */
 export const Component = ({ quoteDateTime, quoteSource, quoteText }) => (
   <blockquote className="ui quote">
-    <GridColumn>
-      <Grid>
-        <GridRow>
-          <GridColumn>
-            <Paragraph>{quoteText}</Paragraph>
-          </GridColumn>
-        </GridRow>
-        <GridRow horizontalAlignContent="right">
-          <GridColumn>
-            <Paragraph size="tiny">
-              {getQuoteSource(quoteSource, quoteDateTime)}
-            </Paragraph>
-          </GridColumn>
-        </GridRow>
-      </Grid>
-    </GridColumn>
+    <Grid>
+      <GridRow>
+        <GridColumn>
+          <Paragraph>{quoteText}</Paragraph>
+        </GridColumn>
+      </GridRow>
+      <GridRow horizontalAlignContent="right">
+        <GridColumn>
+          <Paragraph size="tiny">
+            {getQuoteSource(quoteSource, quoteDateTime)}
+          </Paragraph>
+        </GridColumn>
+      </GridRow>
+    </Grid>
   </blockquote>
 );
 
