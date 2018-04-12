@@ -1,6 +1,6 @@
 import { getQuoteSource } from './getQuoteSource';
 
-describe('getTransportOptionLabel', () => {
+describe('getQuoteSource', () => {
   it('should return a string composed from the `quoteSource` and `quoteDateTime` arguments', () => {
     const quoteSource = '🚣';
     const quoteDateTime = 'someLabel';
