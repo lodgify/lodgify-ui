@@ -288,3 +288,22 @@ p.tiny {
 /*---  Dark Tones  ---*/
 
 /*---  Light Tones  ---*/
+
+/*******************************
+           Lodgify UI
+       Additional Elements
+*******************************/
+
+/*-------------------
+        Quote
+--------------------*/
+
+blockquote.ui.quote {
+  border-left: @quoteBorderLeft;
+  padding: @quotePadding;
+  margin: @quoteMargin;
+}
+
+blockquote.ui.quote .row {
+    padding: @quoteRowPadding;
+}
