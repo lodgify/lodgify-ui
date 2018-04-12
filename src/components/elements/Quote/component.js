@@ -7,8 +7,9 @@ import { GridRow } from 'layout/GridRow';
 import { Paragraph } from 'typography/Paragraph';
 
 import { getQuoteSource } from './utils/getQuoteSource';
+
 /**
- * An Quote Block displays a quote with indentation and a left aligned border.
+ * An quote displays text with indentation and a left border.
  * @return {Object}
  */
 export const Component = ({ quoteDateTime, quoteSource, quoteText }) => (
@@ -37,6 +38,6 @@ Component.propTypes = {
   quoteText: PropTypes.string.isRequired,
   /** The name of the individual being quoted. */
   quoteSource: PropTypes.string.isRequired,
-  /** The time of quotation. */
+  /** The time of the quote. */
   quoteDateTime: PropTypes.string.isRequired,
 };
