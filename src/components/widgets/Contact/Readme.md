@@ -6,10 +6,14 @@ const {
   roomOptions,
 } = require('./mock-data/options');
 
-<Contact
-  captchaInputImage={mockCaptcha}
-  guestsOptions={guestsOptions}
-  propertyOptions={propertyOptions}
-  roomOptions={roomOptions}
-/>
+<Grid>
+  <GridColumn width={8}>
+    <Contact
+      captchaInputImage={mockCaptcha}
+      guestsOptions={guestsOptions}
+      propertyOptions={propertyOptions}
+      roomOptions={roomOptions}
+    />
+  </GridColumn>
+</Grid>
 ```
