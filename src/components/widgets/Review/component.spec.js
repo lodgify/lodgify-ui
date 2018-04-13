@@ -13,32 +13,15 @@ import { Divider } from 'elements/Divider';
 import { Quote } from 'elements/Quote';
 import { Paragraph } from 'typography/Paragraph';
 
-import {
-  ratingNumber,
-  reviewerCategory,
-  reviewerLocation,
-  reviewerName,
-  reviewerStayDate,
-  reviewText,
-  reviewTitle,
-  reviewResponse,
-} from './mock-data/props';
+import * as props from './mock-data/props';
 import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
 import { Component as Review } from './component';
 
-const props = {
-  ratingNumber,
-  reviewerCategory,
-  reviewerLocation,
-  reviewerName,
-  reviewerStayDate,
-  reviewText,
-  reviewTitle,
-};
+const { reviewResponse, ...requiredProps } = props;
 
 const getReview = additionalProps =>
-  shallow(<Review {...props} {...additionalProps} />);
+  shallow(<Review {...requiredProps} {...additionalProps} />);
 
 describe('<Review />', () => {
   it('should render a single Semantic UI `Card` component', () => {
