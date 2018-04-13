@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Form } from 'semantic-ui-react';
 
-import { GridColumn } from 'layout/GridColumn';
 import { Icon } from 'elements/Icon';
 import { Dropdown } from 'elements/Dropdown';
 import { DateRangePicker } from 'elements/DateRangePicker';
@@ -36,49 +35,47 @@ export class Component extends PureComponent {
     } = this.props;
 
     return (
-      <GridColumn width={12}>
-        <div className={cx({ 'is-sticky': isSticky })}>
-          <Form onSubmit={this.handleSubmit}>
-            <Form.Group>
-              {!!isShowingPropertySummary && (
-                <Form.Field width="three">
-                  <Icon isDisabled label="Property Summary" name="home" />
-                </Form.Field>
-              )}
-              {!!isShowingLocationDropdown && (
-                <Form.Field width="three">
-                  <Dropdown
-                    icon="map pin"
-                    label="Location"
-                    name="location"
-                    onChange={this.persistInputChange}
-                    options={locationOptions}
-                  />
-                </Form.Field>
-              )}
-              <Form.Field width="seven">
-                <DateRangePicker
-                  endDatePlaceholderText="Check-out"
-                  getIsDayBlocked={getIsDayBlocked}
-                  name="dates"
-                  onChange={this.persistInputChange}
-                  startDatePlaceholderText="Check-in"
-                />
+      <div className={cx({ 'is-sticky': isSticky })}>
+        <Form onSubmit={this.handleSubmit}>
+          <Form.Group>
+            {!!isShowingPropertySummary && (
+              <Form.Field width="three">
+                <Icon isDisabled label="Property Summary" name="home" />
               </Form.Field>
+            )}
+            {!!isShowingLocationDropdown && (
               <Form.Field width="three">
                 <Dropdown
-                  icon="users"
-                  label="Guests"
-                  name="guests"
+                  icon="map pin"
+                  label="Location"
+                  name="location"
                   onChange={this.persistInputChange}
-                  options={guestsOptions}
+                  options={locationOptions}
                 />
               </Form.Field>
-              <Form.Field width="three">{searchButton}</Form.Field>
-            </Form.Group>
-          </Form>
-        </div>
-      </GridColumn>
+            )}
+            <Form.Field width="seven">
+              <DateRangePicker
+                endDatePlaceholderText="Check-out"
+                getIsDayBlocked={getIsDayBlocked}
+                name="dates"
+                onChange={this.persistInputChange}
+                startDatePlaceholderText="Check-in"
+              />
+            </Form.Field>
+            <Form.Field width="three">
+              <Dropdown
+                icon="users"
+                label="Guests"
+                name="guests"
+                onChange={this.persistInputChange}
+                options={guestsOptions}
+              />
+            </Form.Field>
+            <Form.Field width="three">{searchButton}</Form.Field>
+          </Form.Group>
+        </Form>
+      </div>
     );
   };
 }

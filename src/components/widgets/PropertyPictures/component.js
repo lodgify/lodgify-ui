@@ -12,27 +12,23 @@ import { Link } from 'elements/Link';
  * The standard widget for displaying pictures of a property.
  * @returns {Object}
  */
-export const Component = ({ pictures, width }) => (
-  <GridColumn width={width}>
-    <Heading size="tiny">Property pictures</Heading>
-    <Grid>
-      {pictures.map(({ imageUrl, label }, index) => (
-        <GridColumn key={getUniqueKey(label, index)} width={4}>
-          <ResponsiveImage imageUrl={imageUrl} label={label} />
-        </GridColumn>
-      ))}
-      <GridColumn width={12}>
-        <Link>Explore all pictures</Link>
+export const Component = ({ pictures }) => (
+  <Grid>
+    <GridColumn width={12}>
+      <Heading size="tiny">Property pictures</Heading>
+    </GridColumn>
+    {pictures.map(({ imageUrl, label }, index) => (
+      <GridColumn key={getUniqueKey(label, index)} width={4}>
+        <ResponsiveImage imageUrl={imageUrl} label={label} />
       </GridColumn>
-    </Grid>
-  </GridColumn>
+    ))}
+    <GridColumn width={12}>
+      <Link>Explore all pictures</Link>
+    </GridColumn>
+  </Grid>
 );
 
 Component.displayName = 'PropertyPictures';
-
-Component.defaultProps = {
-  width: 12,
-};
 
 Component.propTypes = {
   /** The pictures to display as responsive images. */
@@ -44,6 +40,4 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** The number of columns the widget occupies. */
-  width: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
 };

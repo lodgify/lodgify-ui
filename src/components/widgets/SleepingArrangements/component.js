@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Label } from 'semantic-ui-react';
 
 import { getUniqueKey } from 'lib/get-unique-key';
-import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { IconCard } from 'elements/IconCard';
 
@@ -11,8 +10,8 @@ import { IconCard } from 'elements/IconCard';
  * The standard widget for displaying the sleeping arrangments for a property.
  * @returns {Object}
  */
-export const Component = ({ sleepingArrangements, width }) => (
-  <GridColumn width={width}>
+export const Component = ({ sleepingArrangements }) => (
+  <div>
     <Heading size="tiny">Sleeping arrangements</Heading>
     <Label.Group>
       {sleepingArrangements.map(({ iconName, label }, index) => (
@@ -24,14 +23,10 @@ export const Component = ({ sleepingArrangements, width }) => (
         />
       ))}
     </Label.Group>
-  </GridColumn>
+  </div>
 );
 
 Component.displayName = 'SleepingArrangements';
-
-Component.defaultProps = {
-  width: 12,
-};
 
 Component.propTypes = {
   /** The sleeping arrangements to display as icon cards. */
@@ -46,6 +41,4 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** The number of columns the widget occupies. */
-  width: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
 };

@@ -2,7 +2,11 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Form } from 'semantic-ui-react';
 
-import { GridColumn } from 'layout/GridColumn';
+import {
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+} from 'lib/expect-helpers';
+import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { Dropdown } from 'elements/Dropdown';
 import { DateRangePicker } from 'elements/DateRangePicker';
 import { Button } from 'elements/Button';
@@ -19,228 +23,239 @@ const getSearchBar = props =>
       {...props}
     />
   );
-const getGridColumn = props => getSearchBar(props).find(GridColumn);
-const getForm = props => getSearchBar(props).find(Form);
-const getFormGroup = props => getSearchBar(props).find(Form.Group);
-const getFormField = (index, props) =>
-  getSearchBar(props)
-    .find(Form.Field)
-    .at(index);
-const getDropdown = (index, props) =>
-  getSearchBar(props)
-    .find(Dropdown)
-    .at(index);
-const getButton = props => getSearchBar(props).find(Button);
 
 describe('<SearchBar />', () => {
-  it('should render a single Semantic UI `Form` component', () => {
+  it('should render a single `div` element', () => {
     const wrapper = getSearchBar();
-    const actual = wrapper.find(Form);
-    expect(actual).toHaveLength(1);
+    const actual = wrapper.is('div');
+    expect(actual).toBe(true);
   });
 
-  describe('the `GridColumn` component', () => {
+  describe('the `div` element', () => {
     it('should have the right props', () => {
-      const wrapper = getGridColumn();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 12,
-        })
-      );
+      const wrapper = getSearchBar();
+      expectComponentToHaveProps(wrapper, { className: '' });
     });
-  });
 
-  describe('with `props.isSticky`', () => {
-    it('should render a div with `is-sticky` class name', () => {
-      const actual = getSearchBar({ isSticky: true }).find('.is-sticky');
-      expect(actual).toHaveLength(1);
+    it('should render the right children', () => {
+      const wrapper = getSearchBar();
+      expectComponentToHaveChildren(wrapper, Form);
     });
-  });
 
-  describe('with `props.isShowingPropertySummary`', () => {
-    it('should render five `Form.Field` components', () => {
-      const wrapper = getFormGroup({ isShowingPropertySummary: true });
-      const actual = wrapper.find(Form.Field);
-      expect(actual).toHaveLength(5);
-    });
-  });
-
-  describe('with `props.searchButton`', () => {
-    it('should render the string `Search`', () => {
-      const wrapper = getButton({ searchButton: <Button>Yo!</Button> });
-      const actual = wrapper.contains('Yo!');
-      expect(actual).toBe(true);
+    describe('if `props.isSticky` is true', () => {
+      it('should have the right props', () => {
+        const wrapper = getSearchBar({ isSticky: true });
+        expectComponentToHaveProps(wrapper, { className: 'is-sticky' });
+      });
     });
   });
 
   describe('the `Form` component', () => {
+    const getForm = () => getSearchBar().find(Form);
+
     it('should have the right props', () => {
       const wrapper = getForm();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          onSubmit: expect.any(Function),
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        onSubmit: expect.any(Function),
+      });
     });
 
-    it('should render a single Semantic UI `Form.Group` component', () => {
+    it('should render the right children', () => {
       const wrapper = getForm();
-      const actual = wrapper.find(Form.Group);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, Form.Group);
     });
   });
 
   describe('the `Form.Group` component', () => {
-    it('should render four `Form.Field` components', () => {
-      const wrapper = getFormGroup();
-      const actual = wrapper.find(Form.Field);
-      expect(actual).toHaveLength(4);
-    });
-  });
+    const getFormGroup = props => getSearchBar(props).find(Form.Group);
 
-  describe('the first `Form.Field` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getFormField(0);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 'three',
-        })
+    it('should render four `Form.Field` components by default', () => {
+      const wrapper = getFormGroup();
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(4, Form.Field)
       );
     });
 
-    it('should render a single Lodgify UI `Dropdown` component', () => {
-      const wrapper = getFormField(0);
-      const actual = wrapper.find(Dropdown);
-      expect(actual).toHaveLength(1);
+    describe('if `props.isShowingPropertySummary` is true', () => {
+      it('should render five `Form.Field` components', () => {
+        const wrapper = getFormGroup({ isShowingPropertySummary: true });
+        expectComponentToHaveChildren(
+          wrapper,
+          ...getArrayOfLengthOfItem(5, Form.Field)
+        );
+      });
+    });
+
+    describe('if `props.isShowingLocationDropdown` is false', () => {
+      it('should render three `Form.Field` components', () => {
+        const wrapper = getFormGroup({ isShowingLocationDropdown: false });
+        expectComponentToHaveChildren(
+          wrapper,
+          ...getArrayOfLengthOfItem(3, Form.Field)
+        );
+      });
+    });
+  });
+
+  describe('the property summary `Form.Field` component', () => {
+    const getPropertySummaryFormField = () =>
+      getSearchBar({ isShowingPropertySummary: true })
+        .find(Form.Field)
+        .at(0);
+
+    it('should have the right props', () => {
+      const wrapper = getPropertySummaryFormField();
+      expectComponentToHaveProps(wrapper, {
+        width: 'three',
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getPropertySummaryFormField();
+      expectComponentToHaveChildren(wrapper, Icon);
+    });
+  });
+
+  describe('the location dropdown `Form.Field` component', () => {
+    const getLocationDropdownFormField = () =>
+      getSearchBar()
+        .find(Form.Field)
+        .at(0);
+
+    it('should have the right props', () => {
+      const wrapper = getLocationDropdownFormField();
+      expectComponentToHaveProps(wrapper, {
+        width: 'three',
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getLocationDropdownFormField();
+      expectComponentToHaveChildren(wrapper, Dropdown);
     });
   });
 
   describe('the first `Dropdown` component', () => {
     it('should have the right props', () => {
-      const wrapper = getDropdown(0);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          icon: 'map pin',
-          label: 'Location',
-          name: 'location',
-          onChange: expect.any(Function),
-          options: locationOptions,
-        })
-      );
+      const wrapper = getSearchBar()
+        .find(Dropdown)
+        .at(0);
+      expectComponentToHaveProps(wrapper, {
+        icon: 'map pin',
+        label: 'Location',
+        name: 'location',
+        onChange: expect.any(Function),
+        options: locationOptions,
+      });
     });
   });
 
-  describe('the second `Form.Field` component', () => {
+  describe('the date range picker `Form.Field` component', () => {
+    const getDateRangePickerFormField = () =>
+      getSearchBar()
+        .find(Form.Field)
+        .at(1);
+
     it('should have the right props', () => {
-      const wrapper = getFormField(1);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 'seven',
-        })
-      );
+      const wrapper = getDateRangePickerFormField();
+      expectComponentToHaveProps(wrapper, {
+        width: 'seven',
+      });
     });
 
     it('should render a single Lodgify UI `DateRangePicker` component', () => {
-      const wrapper = getFormField(1);
-      const actual = wrapper.find(DateRangePicker);
-      expect(actual).toHaveLength(1);
+      const wrapper = getDateRangePickerFormField();
+      expectComponentToHaveChildren(wrapper, DateRangePicker);
     });
   });
 
   describe('the `DateRangePicker` component', () => {
     it('should have the right props', () => {
       const wrapper = getSearchBar().find(DateRangePicker);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          endDatePlaceholderText: 'Check-out',
-          getIsDayBlocked: Function.prototype,
-          name: 'dates',
-          onChange: expect.any(Function),
-          startDatePlaceholderText: 'Check-in',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        endDatePlaceholderText: 'Check-out',
+        getIsDayBlocked: Function.prototype,
+        name: 'dates',
+        onChange: expect.any(Function),
+        startDatePlaceholderText: 'Check-in',
+      });
     });
   });
 
-  describe('the third `Form.Field` component', () => {
+  describe('the guests dropdown `Form.Field` component', () => {
+    const getGuestsDropdownFormField = () =>
+      getSearchBar()
+        .find(Form.Field)
+        .at(2);
+
     it('should have the right props', () => {
-      const wrapper = getFormField(2);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 'three',
-        })
-      );
+      const wrapper = getGuestsDropdownFormField();
+      expectComponentToHaveProps(wrapper, {
+        width: 'three',
+      });
     });
 
     it('should render a single Lodgify UI `Dropdown` component', () => {
-      const wrapper = getFormField(2);
-      const actual = wrapper.find(Dropdown);
-      expect(actual).toHaveLength(1);
+      const wrapper = getGuestsDropdownFormField();
+      expectComponentToHaveChildren(wrapper, Dropdown);
     });
   });
 
   describe('the second `Dropdown` component', () => {
     it('should have the right props', () => {
-      const wrapper = getDropdown(1);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          icon: 'users',
-          label: 'Guests',
-          name: 'guests',
-          onChange: expect.any(Function),
-          options: guestsOptions,
-        })
-      );
+      const wrapper = getSearchBar()
+        .find(Dropdown)
+        .at(1);
+      expectComponentToHaveProps(wrapper, {
+        icon: 'users',
+        label: 'Guests',
+        name: 'guests',
+        onChange: expect.any(Function),
+        options: guestsOptions,
+      });
     });
   });
 
-  describe('the fourth `Form.Field` component', () => {
+  describe('the button `Form.Field` component', () => {
+    const getButtonFormField = props =>
+      getSearchBar(props)
+        .find(Form.Field)
+        .at(3);
+
     it('should have the right props', () => {
-      const wrapper = getFormField(3);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 'three',
-        })
-      );
+      const wrapper = getButtonFormField();
+      expectComponentToHaveProps(wrapper, {
+        width: 'three',
+      });
     });
 
-    it('should render a single Lodgify UI `Button` component', () => {
-      const wrapper = getFormField(3);
-      const actual = wrapper.find(Button);
-      expect(actual).toHaveLength(1);
+    it('should render the right children by default', () => {
+      const wrapper = getButtonFormField();
+      expectComponentToHaveChildren(wrapper, Button);
+    });
+
+    describe('if `props.searchButton` is passed', () => {
+      it('should render the right children', () => {
+        const wrapper = getButtonFormField({ searchButton: 'Yo!' });
+        expectComponentToHaveChildren(wrapper, 'Yo!');
+      });
     });
   });
 
   describe('the `Button` component', () => {
+    const getButton = props => getSearchBar(props).find(Button);
+
     it('should have the right props', () => {
       const wrapper = getButton();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          isRounded: true,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        isRounded: true,
+      });
     });
 
-    it('should render a single Semantic UI `Icon` component', () => {
+    it('should render the right children', () => {
       const wrapper = getButton();
-      const actual = wrapper.find(Icon);
-      expect(actual).toHaveLength(1);
-    });
-
-    it('should render the string `Search`', () => {
-      const wrapper = getButton();
-      const actual = wrapper.contains('Search');
-      expect(actual).toBe(true);
+      expectComponentToHaveChildren(wrapper, Icon, 'Search');
     });
   });
 

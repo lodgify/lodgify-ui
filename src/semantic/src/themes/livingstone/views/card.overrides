@@ -62,7 +62,6 @@
 
 /* Form */
   &.has-form {
-    width: @hasFormWidth;
     padding: @hasFormPadding;
 
     & > .content {
