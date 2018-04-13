@@ -6,10 +6,14 @@ const {
   timeZoneOptions,
 } = require('./mock-data/options');
 
-<CallMeBack
-  dateOptions={dateOptions}
-  propertyOptions={propertyOptions}
-  timeOptions={timeOptions}
-  timeZoneOptions={timeZoneOptions}
-/>
+<Grid>
+  <GridColumn width={8}>
+    <CallMeBack
+      dateOptions={dateOptions}
+      propertyOptions={propertyOptions}
+      timeOptions={timeOptions}
+      timeZoneOptions={timeZoneOptions}
+    />
+  </GridColumn>
+</Grid>
 ```

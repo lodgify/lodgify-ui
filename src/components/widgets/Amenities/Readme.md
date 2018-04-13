@@ -1,11 +1,7 @@
 ```jsx
 const { sixAmenities } = require('./mock-data/amenities');
 
-<Grid>
-  <GridRow>
-    <Amenities amenities={sixAmenities} />
-  </GridRow>
-</Grid>
+<Amenities amenities={sixAmenities} />
 ```
 
 ### Content
@@ -15,9 +11,5 @@ const { sixAmenities } = require('./mock-data/amenities');
 ```jsx
 const { twelveAmenities } = require('./mock-data/amenities');
 
-<Grid>
-  <GridRow>
-    <Amenities amenities={twelveAmenities} />
-  </GridRow>
-</Grid>
+<Amenities amenities={twelveAmenities} />
 ```

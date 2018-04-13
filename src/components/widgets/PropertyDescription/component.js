@@ -20,52 +20,45 @@ export const Component = ({
   extraDescriptionText,
   icons,
   propertyType,
-  width,
 }) => (
-  <GridColumn width={width}>
-    <Grid>
-      <GridColumn width={7}>
-        <Paragraph size="tiny">{propertyType}</Paragraph>
-        {getParagraphsFromStrings(descriptionText).map(
-          (paragraphText, index) => (
-            <Paragraph key={getUniqueKey(paragraphText, index)}>
-              {paragraphText}
-            </Paragraph>
-          )
-        )}
-      </GridColumn>
-      <GridColumn verticalAlignContent="middle" width={5}>
-        <Grid areColumnsCentered>
-          {getFirstFourItems(icons).map(({ iconName, label }, index) => (
-            <GridColumn key={getUniqueKey(label, index)} width={5}>
-              <Icon label={label} name={iconName} />
-            </GridColumn>
-          ))}
-        </Grid>
-      </GridColumn>
-      {!!extraDescriptionText && (
-        <GridColumn width={12}>
-          <Modal trigger={<Link>View more</Link>}>
-            {getParagraphsFromStrings(
-              descriptionText,
-              extraDescriptionText
-            ).map((paragraphText, index) => (
+  <Grid>
+    <GridColumn width={7}>
+      <Paragraph size="tiny">{propertyType}</Paragraph>
+      {getParagraphsFromStrings(descriptionText).map((paragraphText, index) => (
+        <Paragraph key={getUniqueKey(paragraphText, index)}>
+          {paragraphText}
+        </Paragraph>
+      ))}
+    </GridColumn>
+    <GridColumn verticalAlignContent="middle" width={5}>
+      <Grid areColumnsCentered>
+        {getFirstFourItems(icons).map(({ iconName, label }, index) => (
+          <GridColumn key={getUniqueKey(label, index)} width={5}>
+            <Icon label={label} name={iconName} />
+          </GridColumn>
+        ))}
+      </Grid>
+    </GridColumn>
+    {!!extraDescriptionText && (
+      <GridColumn width={12}>
+        <Modal trigger={<Link>View more</Link>}>
+          {getParagraphsFromStrings(descriptionText, extraDescriptionText).map(
+            (paragraphText, index) => (
               <Paragraph key={getUniqueKey(paragraphText, index)}>
                 {paragraphText}
               </Paragraph>
-            ))}
-          </Modal>
-        </GridColumn>
-      )}
-    </Grid>
-  </GridColumn>
+            )
+          )}
+        </Modal>
+      </GridColumn>
+    )}
+  </Grid>
 );
 
 Component.displayName = 'PropertyDescription';
 
 Component.defaultProps = {
   extraDescriptionText: null,
-  width: 12,
 };
 
 Component.propTypes = {
@@ -87,6 +80,4 @@ Component.propTypes = {
   ).isRequired,
   /** The name of the type of the property. */
   propertyType: PropTypes.string.isRequired,
-  /** The number of columns the widget occupies. */
-  width: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
 };

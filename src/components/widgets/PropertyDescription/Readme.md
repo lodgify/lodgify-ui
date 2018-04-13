@@ -1,15 +1,11 @@
 ```jsx
 const { descriptionText, icons } = require('./mock-data/props');
 
-<Grid>
-  <GridRow>
-    <PropertyDescription
-      descriptionText={descriptionText}
-      icons={icons}
-      propertyType="Bed & Breakfast"
-    />
-  </GridRow>
-</Grid>
+<PropertyDescription
+  descriptionText={descriptionText}
+  icons={icons}
+  propertyType="Bed & Breakfast"
+/>
 ```
 
 ### Content
@@ -23,14 +19,10 @@ const {
   icons
 } = require('./mock-data/props');
 
-<Grid>
-  <GridRow>
-    <PropertyDescription
-      descriptionText={descriptionText}
-      extraDescriptionText={extraDescriptionText}
-      icons={icons}
-      propertyType="Bed & Breakfast"
-    />
-  </GridRow>
-</Grid>
+<PropertyDescription
+  descriptionText={descriptionText}
+  extraDescriptionText={extraDescriptionText}
+  icons={icons}
+  propertyType="Bed & Breakfast"
+/>
 ```

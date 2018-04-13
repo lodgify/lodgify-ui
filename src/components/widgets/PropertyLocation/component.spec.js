@@ -1,6 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
+import {
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+} from 'lib/expect-helpers';
+import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -27,30 +32,38 @@ const props = {
 const getPropertyLocation = () => shallow(<PropertyLocation {...props} />);
 
 describe('<PropertyLocation />', () => {
-  it('should render a single Lodgify UI `GridColumn` component', () => {
+  it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getPropertyLocation();
-    const actual = wrapper.is(GridColumn);
+    const actual = wrapper.is(Grid);
     expect(actual).toBe(true);
   });
 
-  describe('the first `GridColumn` component', () => {
-    it('should have the right props', () => {
+  describe('the first `Grid` component', () => {
+    it('should render the right children', () => {
       const wrapper = getPropertyLocation();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 12,
-        })
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(4, GridColumn)
       );
+    });
+  });
+
+  describe('the first `GridColumn` component', () => {
+    const getFirstGridColumn = () =>
+      getPropertyLocation()
+        .find(GridColumn)
+        .at(0);
+
+    it('should have the right props', () => {
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        width: 12,
+      });
     });
 
     it('should render the right children', () => {
-      const wrapper = getPropertyLocation();
-      const children = ['Heading', 'Paragraph', 'Grid'];
-      children.forEach((child, index) => {
-        const actual = wrapper.childAt(index).name();
-        expect(actual).toBe(child);
-      });
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveChildren(wrapper, Heading, Paragraph);
     });
   });
 
@@ -59,18 +72,14 @@ describe('<PropertyLocation />', () => {
 
     it('should have the right props', () => {
       const wrapper = getHeading();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'tiny',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        size: 'tiny',
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getHeading();
-      const actual = wrapper.prop('children');
-      expect(actual).toBe('Location');
+      expectComponentToHaveChildren(wrapper, 'Location');
     });
   });
 
@@ -82,28 +91,14 @@ describe('<PropertyLocation />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstParagraph();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'tiny',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        size: 'tiny',
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getFirstParagraph();
-      const actual = wrapper.prop('children');
-      expect(actual).toBe(locationSummary);
-    });
-  });
-
-  describe('the first `Grid` component', () => {
-    it('should render the right children', () => {
-      const wrapper = getPropertyLocation()
-        .find(Grid)
-        .at(0);
-      const actual = wrapper.children(GridColumn);
-      expect(actual).toHaveLength(3);
+      expectComponentToHaveChildren(wrapper, locationSummary);
     });
   });
 
@@ -115,18 +110,14 @@ describe('<PropertyLocation />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 6,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        width: 6,
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
-      const actual = wrapper.children(Paragraph);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
 
@@ -139,9 +130,8 @@ describe('<PropertyLocation />', () => {
 
     it('should render the right children', () => {
       const wrapper = getParagraphInSecondGridColumn();
-      const actual = wrapper.prop('children');
       const expected = getParagraphsFromStrings(locationDescription)[0];
-      expect(actual).toBe(expected);
+      expectComponentToHaveChildren(wrapper, expected);
     });
   });
 
@@ -153,18 +143,14 @@ describe('<PropertyLocation />', () => {
 
     it('should have the right props', () => {
       const wrapper = getThirdGridColumn();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 6,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        width: 6,
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getThirdGridColumn();
-      const actual = wrapper.children(Grid);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
@@ -173,8 +159,10 @@ describe('<PropertyLocation />', () => {
       const wrapper = getPropertyLocation()
         .find(Grid)
         .at(1);
-      const actual = wrapper.children(GridColumn);
-      expect(actual).toHaveLength(4);
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(4, GridColumn)
+      );
     });
   });
 
@@ -188,18 +176,14 @@ describe('<PropertyLocation />', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridColumnInSecondGrid();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 3,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        width: 3,
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getGridColumnInSecondGrid();
-      const actual = wrapper.children(IconCard);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, IconCard);
     });
   });
 
@@ -213,14 +197,11 @@ describe('<PropertyLocation />', () => {
 
     it('should have the right props', () => {
       const wrapper = getIconCardInSecondGrid();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          isFilled: true,
-          label: expect.any(String),
-          name: transportOptions[0].iconName,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        isFilled: true,
+        label: expect.any(String),
+        name: transportOptions[0].iconName,
+      });
     });
   });
 
@@ -232,33 +213,26 @@ describe('<PropertyLocation />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFourthGridColumn();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 12,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        width: 12,
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getFourthGridColumn();
-      const actual = wrapper.children(GoogleMap);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, GoogleMap);
     });
   });
 
   describe('the `GoogleMap` component', () => {
     it('should have the right props', () => {
       const wrapper = getPropertyLocation().find(GoogleMap);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          isShowingExactLocation: false,
-          isShowingApproximateLocation: false,
-          latitude: props.latitude,
-          longitude: props.longitude,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        isShowingExactLocation: false,
+        isShowingApproximateLocation: false,
+        latitude: props.latitude,
+        longitude: props.longitude,
+      });
     });
   });
 
