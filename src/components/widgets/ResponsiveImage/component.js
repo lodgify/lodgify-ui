@@ -74,7 +74,7 @@ Component.propTypes = {
   imageTitle: PropTypes.string,
   /** Custom class name string to customize the resulting img */
   className: PropTypes.string,
-  /** Whether to render the image circular */
+  /** Whether to render a circular image */
   isCircular: PropTypes.bool,
   /** Whether to render fluidly the image or not */
   isFluid: PropTypes.bool,
