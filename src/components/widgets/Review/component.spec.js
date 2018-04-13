@@ -13,19 +13,28 @@ import { Divider } from 'elements/Divider';
 import { Quote } from 'elements/Quote';
 import { Paragraph } from 'typography/Paragraph';
 
+import {
+  ratingNumber,
+  reviewerCategory,
+  reviewerLocation,
+  reviewerName,
+  reviewerStayDate,
+  reviewText,
+  reviewTitle,
+  reviewResponse,
+} from './mock-data/props';
 import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
 import { Component as Review } from './component';
 
 const props = {
-  ratingNumber: 4,
-  reviewerCategory: 'Young couple',
-  reviewerLocation: 'Portugal',
-  reviewerName: 'Magellan',
-  reviewerStayDate: '9/2015',
-  reviewText:
-    'Beautifully located and well-kept villas in Santorini. Would certainly come back next year.',
-  reviewTitle: 'Great accommodation! Honorable host.',
+  ratingNumber,
+  reviewerCategory,
+  reviewerLocation,
+  reviewerName,
+  reviewerStayDate,
+  reviewText,
+  reviewTitle,
 };
 
 const getReview = additionalProps =>
@@ -73,12 +82,7 @@ describe('<Review />', () => {
     describe('if `props.reviewResponse` is present', () => {
       it('should render the right children', () => {
         const wrapper = getReview({
-          reviewResponse: {
-            dateTime: '10/14/2015 12:22:58 PM',
-            text:
-              'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!',
-            source: 'The Owner',
-          },
+          reviewResponse,
         })
           .find(Card.Content)
           .at(0);
@@ -235,12 +239,7 @@ describe('<Review />', () => {
   describe('the `div` element', () => {
     it('should have the right children', () => {
       const wrapper = getReview({
-        reviewResponse: {
-          dateTime: '10/14/2015 12:22:58 PM',
-          text:
-            'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!',
-          source: 'The Owner',
-        },
+        reviewResponse,
       })
         .find('div')
         .at(0);
@@ -251,21 +250,15 @@ describe('<Review />', () => {
   describe('the `Quote` component', () => {
     it('should have the right props', () => {
       const wrapper = getReview({
-        reviewResponse: {
-          dateTime: '10/14/2015 12:22:58 PM',
-          text:
-            'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!',
-          source: 'The Owner',
-        },
+        reviewResponse,
       })
         .find(Quote)
         .at(0);
 
       expectComponentToHaveProps(wrapper, {
-        quoteDateTime: '10/14/2015 12:22:58 PM',
-        quoteText:
-          'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!',
-        quoteSource: 'The Owner',
+        quoteDateTime: reviewResponse.dateTime,
+        quoteText: reviewResponse.text,
+        quoteSource: reviewResponse.source,
       });
     });
   });
