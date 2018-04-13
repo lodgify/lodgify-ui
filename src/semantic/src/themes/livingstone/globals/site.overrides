@@ -300,6 +300,7 @@ p.tiny {
 
 blockquote.ui.quote {
   border-left: @quoteBorderLeft;
+  box-shadow: @quoteBoxShadow;
   padding: @quotePadding;
   margin: @quoteMargin;
 }
