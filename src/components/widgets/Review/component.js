@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Rating } from 'semantic-ui-react';
 
-import { getUniqueKey } from 'lib/get-unique-key';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';

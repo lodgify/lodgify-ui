@@ -1,213 +1,302 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Segment, Icon, Rating } from 'semantic-ui-react';
+import { Card, Rating } from 'semantic-ui-react';
 
-import { Heading } from 'typography/Heading';
+import {
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+} from 'lib/expect-helpers';
+import { Grid } from 'layout/Grid';
+import { GridRow } from 'layout/GridRow';
+import { GridColumn } from 'layout/GridColumn';
+import { Divider } from 'elements/Divider';
+import { Quote } from 'elements/Quote';
+import { Paragraph } from 'typography/Paragraph';
 
+import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
+import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
 import { Component as Review } from './component';
 
 const props = {
-  locationName: 'Catania',
-  nightPrice: '$280',
-  propertyName: 'The Cat House',
-  ratingNumber: 4.8,
+  ratingNumber: 4,
+  reviewerCategory: 'Young couple',
+  reviewerLocation: 'Portugal',
+  reviewerName: 'Magellan',
+  reviewerStayDate: '9/2015',
+  reviewText:
+    'Beautifully located and well-kept villas in Santorini. Would certainly come back next year.',
+  reviewTitle: 'Great accommodation! Honorable host.',
 };
 
-const getReview = () => shallow(<Review {...props} />);
+const getReview = additionalProps =>
+  shallow(<Review {...props} {...additionalProps} />);
 
 describe('<Review />', () => {
-  it('should render a single Semantic UI `Segment.Group` component', () => {
+  it('should render a single Semantic UI `Card` component', () => {
     const wrapper = getReview();
-    const actual = wrapper.is(Segment.Group);
+    const actual = wrapper.is(Card);
     expect(actual).toBe(true);
   });
 
-  describe('the first `Segment.Group` component', () => {
+  describe('the first `Card` component', () => {
     it('should have the right props', () => {
       const wrapper = getReview();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          compact: true,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        fluid: true,
+      });
     });
 
     it('should render the right children', () => {
-      const children = ['Segment', 'SegmentGroup'];
       const wrapper = getReview();
-      children.forEach((child, index) => {
-        const actual = wrapper.childAt(index).name();
-        expect(actual).toBe(child);
+      expectComponentToHaveChildren(wrapper, Card.Content);
+    });
+  });
+
+  describe('the first `Card.Content` child of `Card` component', () => {
+    describe('if `props.reviewResponse` are not present', () => {
+      it('should render the right children', () => {
+        const wrapper = getReview()
+          .find(Card.Content)
+          .at(0);
+        expectComponentToHaveChildren(
+          wrapper,
+          Card.Meta,
+          Divider,
+          Card.Header,
+          Card.Description,
+          Divider,
+          Card.Description
+        );
+      });
+    });
+
+    describe('if `props.reviewResponse` is present', () => {
+      it('should render the right children', () => {
+        const wrapper = getReview({
+          reviewResponse: {
+            dateTime: '10/14/2015 12:22:58 PM',
+            text:
+              'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!',
+            source: 'The Owner',
+          },
+        })
+          .find(Card.Content)
+          .at(0);
+        expectComponentToHaveChildren(
+          wrapper,
+          Card.Meta,
+          Divider,
+          Card.Header,
+          Card.Description,
+          Divider,
+          'div',
+          Card.Description
+        );
       });
     });
   });
 
-  describe('the first `Segment` child of `Segment.Group` component', () => {
-    const getFirstSegment = () =>
-      getReview()
-        .find(Segment)
-        .first();
+  describe('the `Card.Meta` component', () => {
     it('should render the right children', () => {
-      const wrapper = getFirstSegment();
-      const actual = wrapper.children(Heading);
-      expect(actual).toHaveLength(1);
-    });
-  });
-
-  describe('the first `Heading` component', () => {
-    const getFirstHeading = () =>
-      getReview()
-        .find(Heading)
-        .first();
-
-    it('should have the right props', () => {
-      const wrapper = getFirstHeading();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'tiny',
-        })
-      );
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getFirstHeading();
-      const actual = wrapper.prop('children');
-      expect(actual).toBe(props.propertyName);
-    });
-  });
-
-  describe('the second `Segment.Group` component', () => {
-    const getSecondSegmentGroup = () =>
-      getReview()
-        .find(Segment.Group)
-        .at(1);
-
-    it('should have the right props', () => {
-      const wrapper = getSecondSegmentGroup();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          horizontal: true,
-        })
-      );
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getSecondSegmentGroup();
-      const actual = wrapper.find(Segment);
-      expect(actual).toHaveLength(3);
-    });
-  });
-
-  describe('the second `Segment` component', () => {
-    const getSecondSegment = () =>
-      getReview()
-        .find(Segment)
-        .at(1);
-    it('should render the right `children`', () => {
-      const wrapper = getSecondSegment();
-      const actual = wrapper.prop('children');
-      expect(actual).toEqual(expect.arrayContaining([props.locationName]));
-    });
-
-    it('should render a single Semantic UI `Icon` component', () => {
-      const wrapper = getSecondSegment();
-      const actual = wrapper.find(Icon);
-      expect(actual).toHaveLength(1);
-    });
-  });
-
-  describe('the first `Icon` component', () => {
-    const getFirstIcon = () =>
-      getReview()
-        .find(Icon)
+      const wrapper = getReview()
+        .find(Card.Meta)
         .at(0);
+      expectComponentToHaveChildren(wrapper, Grid);
+    });
+  });
+
+  describe('the `Grid` component', () => {
+    it('should render the right children', () => {
+      const wrapper = getReview()
+        .find(Grid)
+        .at(0);
+      expectComponentToHaveChildren(wrapper, GridRow);
+    });
+  });
+
+  describe('the `GridRow` component', () => {
+    const getGridRow = () =>
+      getReview()
+        .find(GridRow)
+        .at(0);
+
     it('should have the right props', () => {
-      const wrapper = getFirstIcon();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          color: 'yellow',
-          name: 'map pin',
-        })
+      const wrapper = getGridRow();
+      expectComponentToHaveProps(wrapper, {
+        verticalAlign: 'middle',
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getGridRow();
+      expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
+    });
+  });
+
+  describe('the first `GridColumn` component', () => {
+    const getFirstGridColumn = () =>
+      getReview()
+        .find(GridColumn)
+        .at(0);
+
+    it('should render the right props', () => {
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        width: 6,
+        floated: 'left',
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveChildren(wrapper, Paragraph);
+    });
+  });
+
+  describe('the first `Paragraph` component', () => {
+    const getFirstParagraph = () =>
+      getReview()
+        .find(Paragraph)
+        .at(0);
+
+    it('should have the right props', () => {
+      const wrapper = getFirstParagraph();
+      expectComponentToHaveProps(wrapper, {
+        size: 'tiny',
+      });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getFirstParagraph();
+      expectComponentToHaveChildren(
+        wrapper,
+        getReviewerNameAndLocationString(
+          props.reviewerName,
+          props.reviewerLocation
+        )
       );
     });
   });
 
-  describe('the third `Segment` component', () => {
-    const getThirdSegment = () =>
+  describe('the second `GridColumn` component', () => {
+    const getSecondGridColumn = () =>
       getReview()
-        .find(Segment)
-        .at(2);
+        .find(GridColumn)
+        .at(1);
 
-    it('should have the right children', () => {
-      const wrapper = getThirdSegment();
-      const actual = wrapper.prop('children');
-      expect(actual).toEqual(expect.arrayContaining([props.ratingNumber]));
+    it('should have the right props', () => {
+      const wrapper = getSecondGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        width: 6,
+        floated: 'right',
+        textAlign: 'right',
+        verticalAlign: 'middle',
+      });
     });
 
-    it('should have a single `Rating` component', () => {
-      const wrapper = getThirdSegment();
-      const actual = wrapper.find(Rating);
-      expect(actual).toHaveLength(1);
+    it('should have the right children', () => {
+      const wrapper = getSecondGridColumn();
+      expectComponentToHaveChildren(wrapper, Rating);
     });
   });
 
   describe('the `Rating` component', () => {
     it('should have the right props', () => {
-      const wrapper = getReview().find(Rating);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          disabled: true,
-          maxRating: 5,
-          rating: Math.round(props.ratingNumber),
-          size: 'mini',
-        })
-      );
+      const wrapper = getReview()
+        .find(Rating)
+        .at(0);
+      expectComponentToHaveProps(wrapper, {
+        disabled: true,
+        maxRating: 5,
+        rating: Math.round(props.ratingNumber),
+        size: 'small',
+      });
     });
   });
 
-  describe('the last `Segment` component', () => {
-    const getFourthSegment = () =>
-      getReview()
-        .find(Segment)
-        .at(3);
-
+  describe('the `Card.Header` component', () => {
     it('should have the right children', () => {
-      const wrapper = getFourthSegment();
-      const actual = wrapper.prop('children');
-      expect(actual).toEqual(expect.arrayContaining(['from ', ' /night']));
-    });
-
-    it('should render a single Lodgify UI `Heading` component', () => {
-      const wrapper = getFourthSegment();
-      const actual = wrapper.find(Heading);
-      expect(actual).toHaveLength(1);
+      const wrapper = getReview()
+        .find(Card.Header)
+        .at(0);
+      expectComponentToHaveChildren(wrapper, props.reviewTitle);
     });
   });
 
-  describe('the last `Heading` component', () => {
-    const getLastHeading = () =>
-      getReview()
-        .find(Heading)
-        .at(1);
+  describe('the first `Card.Description` component', () => {
+    it('should have the right children', () => {
+      const wrapper = getReview()
+        .find(Card.Description)
+        .at(0);
+      expectComponentToHaveChildren(wrapper, props.reviewText);
+    });
+  });
+
+  describe('the `div` element', () => {
+    it('should have the right children', () => {
+      const wrapper = getReview({
+        reviewResponse: {
+          dateTime: '10/14/2015 12:22:58 PM',
+          text:
+            'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!',
+          source: 'The Owner',
+        },
+      })
+        .find('div')
+        .at(0);
+      expectComponentToHaveChildren(wrapper, Quote, Divider);
+    });
+  });
+
+  describe('the `Quote` component', () => {
     it('should have the right props', () => {
-      const wrapper = getLastHeading();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'mini',
-        })
-      );
+      const wrapper = getReview({
+        reviewResponse: {
+          dateTime: '10/14/2015 12:22:58 PM',
+          text:
+            'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!',
+          source: 'The Owner',
+        },
+      })
+        .find(Quote)
+        .at(0);
+
+      expectComponentToHaveProps(wrapper, {
+        quoteDateTime: '10/14/2015 12:22:58 PM',
+        quoteText:
+          'You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!',
+        quoteSource: 'The Owner',
+      });
+    });
+  });
+
+  describe('the second `Card.Description` component', () => {
+    const getSecondCardDescription = () =>
+      getReview()
+        .find(Card.Description)
+        .at(1);
+
+    it('should have the right props', () => {
+      const wrapper = getSecondCardDescription();
+      expectComponentToHaveProps(wrapper, {
+        textAlign: 'right',
+      });
     });
 
     it('should have the right children', () => {
-      const wrapper = getLastHeading();
-      const actual = wrapper.prop('children');
-      expect(actual).toEqual(props.nightPrice);
+      const wrapper = getSecondCardDescription();
+      expectComponentToHaveChildren(
+        wrapper,
+        getReviewerCategoryAndStayDateString(
+          props.reviewerCategory,
+          props.reviewerStayDate
+        )
+      );
     });
+  });
+
+  it('should have displayName `Review`', () => {
+    const actual = Review.displayName;
+    expect(actual).toBe('Review');
   });
 });
