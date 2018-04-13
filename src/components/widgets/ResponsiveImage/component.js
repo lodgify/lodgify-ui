@@ -19,6 +19,7 @@ export const Component = ({
   imageTitle,
   className,
   onLoad,
+  isCircular,
   isFluid,
   label,
 }) => (
@@ -29,6 +30,7 @@ export const Component = ({
     <Image
       src={imageUrl}
       alt={alternativeText}
+      circular={isCircular}
       className={cx(className)}
       title={imageTitle}
       onLoad={onLoad}
@@ -49,6 +51,7 @@ Component.defaultProps = {
   className: null,
   sources: [],
   onLoad: Function.prototype,
+  isCircular: false,
   isFluid: true,
   label: null,
 };
@@ -71,6 +74,8 @@ Component.propTypes = {
   imageTitle: PropTypes.string,
   /** Custom class name string to customize the resulting img */
   className: PropTypes.string,
+  /** Whether to render the image circular */
+  isCircular: PropTypes.bool,
   /** Whether to render fluidly the image or not */
   isFluid: PropTypes.bool,
   /** The function to call when the image is loaded */
