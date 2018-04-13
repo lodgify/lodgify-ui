@@ -1,6 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
+import {
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+} from 'lib/expect-helpers';
+import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
@@ -15,30 +20,36 @@ const getAmenities = (props = {}) =>
   shallow(<Amenities amenities={props.amenities || sixAmenities} />);
 
 describe('<Amenities />', () => {
-  it('should render a single Lodgify UI `GridColumn` component', () => {
+  it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getAmenities();
-    const actual = wrapper.is(GridColumn);
+    const actual = wrapper.is(Grid);
     expect(actual).toBe(true);
   });
 
-  describe('the first `GridColumn` component', () => {
-    it('should have the right props', () => {
+  describe('the `Grid` component', () => {
+    it('should render the right children', () => {
       const wrapper = getAmenities();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 12,
-        })
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(7, GridColumn)
       );
+    });
+  });
+
+  describe('the first `GridColumn` component', () => {
+    const getFirstGridColumn = () =>
+      getAmenities()
+        .find(GridColumn)
+        .first();
+
+    it('should have the right right props', () => {
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveProps(wrapper, { width: 12 });
     });
 
     it('should render the right children', () => {
-      const children = ['Heading', 'Grid'];
-      const wrapper = getAmenities();
-      children.forEach((child, index) => {
-        const actual = wrapper.childAt(index).name();
-        expect(actual).toBe(child);
-      });
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveChildren(wrapper, Heading);
     });
   });
 
@@ -47,115 +58,86 @@ describe('<Amenities />', () => {
 
     it('should have the right props', () => {
       const wrapper = getHeading();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'tiny',
-        })
-      );
+      expectComponentToHaveProps(wrapper, { size: 'tiny' });
     });
 
     it('should render the right children', () => {
       const wrapper = getHeading();
-      const actual = wrapper.prop('children');
-      expect(actual).toBe('Amenities');
+      expectComponentToHaveChildren(wrapper, 'Amenities');
     });
   });
 
-  describe('the first `Grid` component', () => {
-    it('should render the right children', () => {
-      const wrapper = getAmenities().find(Grid);
-      const actual = wrapper.children(GridColumn);
-      expect(actual).toHaveLength(6);
-    });
-  });
-
-  describe('each of the `GridColumn`s in the `Grid` component', () => {
-    const getGridColumnInGrid = () =>
+  describe('each of the array of `GridColumn`s', () => {
+    const getGridColumnInArray = () =>
       getAmenities()
         .find(GridColumn)
         .at(1);
 
     it('should have the right props', () => {
-      const wrapper = getGridColumnInGrid();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 4,
-        })
-      );
+      const wrapper = getGridColumnInArray();
+      expectComponentToHaveProps(wrapper, { width: 4 });
     });
 
     it('should render the right children', () => {
-      const wrapper = getGridColumnInGrid();
-      const actual = wrapper.children(Icon);
-      expect(actual).toHaveLength(1);
+      const wrapper = getGridColumnInArray();
+      expectComponentToHaveChildren(wrapper, Icon);
     });
   });
 
-  describe('each of the `Icon`s in the `Grid` component', () => {
+  describe('each of the `Icon`s in the array of `GridColumn`s', () => {
     it('should have the right props', () => {
       const wrapper = getAmenities()
         .find(Icon)
         .at(0);
-      const actual = wrapper.props();
       const { isDisabled, label, iconName: name } = sixAmenities[0];
-      expect(actual).toEqual(
-        expect.objectContaining({
-          isDisabled: !!isDisabled,
-          label,
-          name,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        isDisabled: !!isDisabled,
+        label,
+        name,
+      });
     });
   });
 
   describe('if more than nine amenities are passed', () => {
+    const getAmenitiesWithTwelveAmenities = () =>
+      getAmenities({ amenities: twelveAmenities });
+
     describe('the `Grid` component', () => {
       it('should render another `GridColumn`', () => {
-        const wrapper = getAmenities({ amenities: twelveAmenities })
+        const wrapper = getAmenitiesWithTwelveAmenities()
           .find(Grid)
           .at(0);
-        const actual = wrapper.children(GridColumn);
-        expect(actual).toHaveLength(10);
+        expectComponentToHaveChildren(
+          wrapper,
+          ...getArrayOfLengthOfItem(11, GridColumn)
+        );
       });
     });
 
     describe('the conditional `GridColumn` component', () => {
       const getConditionalGridColumn = () =>
-        getAmenities({ amenities: twelveAmenities })
+        getAmenitiesWithTwelveAmenities()
           .find(GridColumn)
           .at(10);
 
       it('should have the right props', () => {
         const wrapper = getConditionalGridColumn();
-        const actual = wrapper.props();
-        expect(actual).toEqual(
-          expect.objectContaining({
-            width: 12,
-          })
-        );
+        expectComponentToHaveProps(wrapper, { width: 12 });
       });
 
       it('should render the right children', () => {
         const wrapper = getConditionalGridColumn();
-        const actual = wrapper.children(Modal);
-        expect(actual).toHaveLength(1);
+        expectComponentToHaveChildren(wrapper, Modal);
       });
     });
 
     describe('the `Modal` component', () => {
       it('should have the right props', () => {
-        const wrapper = getAmenities({ amenities: twelveAmenities }).find(
-          Modal
-        );
-        const actual = wrapper.props();
-        expect(actual).toEqual(
-          expect.objectContaining({
-            children: expect.any(Array),
-            trigger: <Link>View more</Link>,
-          })
-        );
+        const wrapper = getAmenitiesWithTwelveAmenities().find(Modal);
+        expectComponentToHaveProps(wrapper, {
+          children: expect.any(Array),
+          trigger: <Link>View more</Link>,
+        });
       });
     });
   });

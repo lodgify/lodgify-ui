@@ -1,6 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
+import {
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+} from 'lib/expect-helpers';
+import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
@@ -14,30 +19,38 @@ const getPropertyPictures = () =>
   shallow(<PropertyPictures pictures={pictures} />);
 
 describe('<PropertyPictures />', () => {
-  it('should render a single Lodgify UI `GridColumn` component', () => {
+  it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getPropertyPictures();
-    const actual = wrapper.is(GridColumn);
+    const actual = wrapper.is(Grid);
     expect(actual).toBe(true);
   });
 
-  describe('the `GridColumn` component', () => {
-    it('should have the right props', () => {
+  describe('the `Grid` component', () => {
+    it('should render a `GridColumn` for each item in `props.pictures` plus one for the Link', () => {
       const wrapper = getPropertyPictures();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 12,
-        })
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(7, GridColumn)
       );
+    });
+  });
+
+  describe('the first `GridColumn` component', () => {
+    const getFirstGridColumn = () =>
+      getPropertyPictures()
+        .find(GridColumn)
+        .first();
+
+    it('should have the right props', () => {
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        width: 12,
+      });
     });
 
     it('should render the right children', () => {
-      const children = ['Heading', 'Grid'];
-      const wrapper = getPropertyPictures();
-      children.forEach((child, index) => {
-        const actual = wrapper.childAt(index).name();
-        expect(actual).toBe(child);
-      });
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveChildren(wrapper, Heading);
     });
   });
 
@@ -46,51 +59,33 @@ describe('<PropertyPictures />', () => {
 
     it('should have the right props', () => {
       const wrapper = getHeading();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'tiny',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        size: 'tiny',
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getHeading();
-      const actual = wrapper.prop('children');
-      expect(actual).toBe('Property pictures');
+      expectComponentToHaveChildren(wrapper, 'Property pictures');
     });
   });
 
-  describe('the `Grid` component', () => {
-    const getGrid = () => getPropertyPictures().find(Grid);
-
-    it('should render a `GridColumn` for each item in `props.pictures` plus one for the Link', () => {
-      const wrapper = getGrid();
-      const actual = wrapper.children(GridColumn);
-      expect(actual).toHaveLength(pictures.length + 1);
-    });
-  });
-
-  describe('each `GridColumn` component wrapping an image', () => {
-    const getFirstGridColumnWithImage = () =>
+  describe('each of the array of `GridColumn`s', () => {
+    const getGridColumnInArray = () =>
       getPropertyPictures()
         .find(GridColumn)
         .at(1);
 
     it('should get the right props', () => {
-      const wrapper = getFirstGridColumnWithImage();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 4,
-        })
-      );
+      const wrapper = getGridColumnInArray();
+      expectComponentToHaveProps(wrapper, {
+        width: 4,
+      });
     });
 
     it('should render the right children', () => {
-      const wrapper = getFirstGridColumnWithImage();
-      const actual = wrapper.find(ResponsiveImage);
-      expect(actual).toHaveLength(1);
+      const wrapper = getGridColumnInArray();
+      expectComponentToHaveChildren(wrapper, ResponsiveImage);
     });
   });
 
@@ -99,14 +94,11 @@ describe('<PropertyPictures />', () => {
       const wrapper = getPropertyPictures()
         .find(ResponsiveImage)
         .at(0);
-      const actual = wrapper.props();
       const { imageUrl, label } = pictures[0];
-      expect(actual).toEqual(
-        expect.objectContaining({
-          imageUrl,
-          label,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        imageUrl,
+        label,
+      });
     });
   });
 
@@ -118,27 +110,21 @@ describe('<PropertyPictures />', () => {
 
     it('should get the right props', () => {
       const wrapper = getGridColumnWithLink();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          width: 12,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        width: 12,
+      });
     });
 
     it('should render the right children', () => {
       const wrapper = getGridColumnWithLink();
-      const actual = wrapper.find(Link);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, Link);
     });
   });
 
   describe('the `Link` component', () => {
     it('should render the right children', () => {
       const wrapper = getPropertyPictures().find(Link);
-      const actual = wrapper.prop('children');
-
-      expect(actual).toBe('Explore all pictures');
+      expectComponentToHaveChildren(wrapper, 'Explore all pictures');
     });
   });
 

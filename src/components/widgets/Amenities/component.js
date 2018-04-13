@@ -17,38 +17,34 @@ import { hasMoreThanNineItems } from './utils/hasMoreThanNineItems';
  * The standard widget for displaying the amenities of a property.
  * @returns {Object}
  */
-export const Component = ({ amenities, width }) => (
-  <GridColumn width={width}>
-    <Heading size="tiny">Amenities</Heading>
-    <Grid>
-      {getFirstNineItems(amenities).map(
-        ({ iconName, isDisabled, label }, index) => (
-          <GridColumn key={getUniqueKey(label, index)} width={4}>
-            <Icon isDisabled={isDisabled} label={label} name={iconName} />
-          </GridColumn>
-        )
-      )}
-      {hasMoreThanNineItems(amenities) && (
-        <GridColumn width={12}>
-          <Modal trigger={<Link>View more</Link>}>
-            {amenities.map(({ iconName, isDisabled, label }, index) => (
-              <div key={getUniqueKey(label, index)}>
-                {!!index && <Divider hasLine />}
-                <Icon isDisabled={isDisabled} label={label} name={iconName} />
-              </div>
-            ))}
-          </Modal>
+export const Component = ({ amenities }) => (
+  <Grid>
+    <GridColumn width={12}>
+      <Heading size="tiny">Amenities</Heading>
+    </GridColumn>
+    {getFirstNineItems(amenities).map(
+      ({ iconName, isDisabled, label }, index) => (
+        <GridColumn key={getUniqueKey(label, index)} width={4}>
+          <Icon isDisabled={isDisabled} label={label} name={iconName} />
         </GridColumn>
-      )}
-    </Grid>
-  </GridColumn>
+      )
+    )}
+    {hasMoreThanNineItems(amenities) && (
+      <GridColumn width={12}>
+        <Modal trigger={<Link>View more</Link>}>
+          {amenities.map(({ iconName, isDisabled, label }, index) => (
+            <div key={getUniqueKey(label, index)}>
+              {!!index && <Divider hasLine />}
+              <Icon isDisabled={isDisabled} label={label} name={iconName} />
+            </div>
+          ))}
+        </Modal>
+      </GridColumn>
+    )}
+  </Grid>
 );
 
 Component.displayName = 'Amenities';
-
-Component.defaultProps = {
-  width: 12,
-};
 
 Component.propTypes = {
   /** The amenities to display as icons. */
@@ -65,6 +61,4 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** The number of columns the widget occupies. */
-  width: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
 };

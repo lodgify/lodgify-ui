@@ -25,46 +25,45 @@ export const Component = ({
   locationSummary,
   longitude,
   transportOptions,
-  width,
 }) => (
-  <GridColumn width={width}>
-    <Heading size="tiny">Location</Heading>
-    <Paragraph size="tiny">{locationSummary}</Paragraph>
-    <Grid>
-      <GridColumn width={6}>
-        {getParagraphsFromStrings(locationDescription).map(
-          (paragraphText, index) => (
-            <Paragraph key={getUniqueKey(paragraphText, index)}>
-              {paragraphText}
-            </Paragraph>
+  <Grid>
+    <GridColumn width={12}>
+      <Heading size="tiny">Location</Heading>
+      <Paragraph size="tiny">{locationSummary}</Paragraph>
+    </GridColumn>
+    <GridColumn width={6}>
+      {getParagraphsFromStrings(locationDescription).map(
+        (paragraphText, index) => (
+          <Paragraph key={getUniqueKey(paragraphText, index)}>
+            {paragraphText}
+          </Paragraph>
+        )
+      )}
+    </GridColumn>
+    <GridColumn width={6}>
+      <Grid>
+        {getFirstFourItems(transportOptions).map(
+          ({ distance, iconName, label }, index) => (
+            <GridColumn key={getUniqueKey(label, index)} width={3}>
+              <IconCard
+                isFilled
+                label={getTransportOptionLabel(distance, label)}
+                name={iconName}
+              />
+            </GridColumn>
           )
         )}
-      </GridColumn>
-      <GridColumn width={6}>
-        <Grid>
-          {getFirstFourItems(transportOptions).map(
-            ({ distance, iconName, label }, index) => (
-              <GridColumn key={getUniqueKey(label, index)} width={3}>
-                <IconCard
-                  isFilled
-                  label={getTransportOptionLabel(distance, label)}
-                  name={iconName}
-                />
-              </GridColumn>
-            )
-          )}
-        </Grid>
-      </GridColumn>
-      <GridColumn width={12}>
-        <GoogleMap
-          isShowingExactLocation={isShowingExactLocation}
-          isShowingApproximateLocation={isShowingApproximateLocation}
-          latitude={latitude}
-          longitude={longitude}
-        />
-      </GridColumn>
-    </Grid>
-  </GridColumn>
+      </Grid>
+    </GridColumn>
+    <GridColumn width={12}>
+      <GoogleMap
+        isShowingExactLocation={isShowingExactLocation}
+        isShowingApproximateLocation={isShowingApproximateLocation}
+        latitude={latitude}
+        longitude={longitude}
+      />
+    </GridColumn>
+  </Grid>
 );
 
 Component.displayName = 'PropertyLocation';
@@ -72,7 +71,6 @@ Component.displayName = 'PropertyLocation';
 Component.defaultProps = {
   isShowingApproximateLocation: false,
   isShowingExactLocation: false,
-  width: 12,
 };
 
 Component.propTypes = {
@@ -102,6 +100,4 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** The number of columns the widget occupies. */
-  width: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
 };
