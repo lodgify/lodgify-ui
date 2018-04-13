@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Rating } from 'semantic-ui-react';
 
+import { getUniqueKey } from 'lib/get-unique-key';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -32,7 +33,7 @@ export const Component = ({
         <Grid>
           <GridRow verticalAlign="middle">
             <GridColumn width={6} floated="left">
-              <Paragraph size="small">
+              <Paragraph size="tiny">
                 {getReviewerNameAndLocationString(
                   reviewerName,
                   reviewerLocation
@@ -59,14 +60,16 @@ export const Component = ({
       <Card.Header>{reviewTitle}</Card.Header>
       <Card.Description>{reviewText}</Card.Description>
       <Divider />
-      {reviewResponse && [
-        <Quote
-          quoteDateTime={reviewResponse.dateTime}
-          quoteSource={reviewResponse.source}
-          quoteText={reviewResponse.text}
-        />,
-        <Divider />,
-      ]}
+      {reviewResponse && (
+        <div>
+          <Quote
+            quoteDateTime={reviewResponse.dateTime}
+            quoteSource={reviewResponse.source}
+            quoteText={reviewResponse.text}
+          />
+          <Divider />
+        </div>
+      )}
       <Card.Description textAlign="right">
         {getReviewerCategoryAndStayDateString(
           reviewerCategory,
@@ -94,12 +97,12 @@ Component.propTypes = {
   reviewerName: PropTypes.string.isRequired,
   /** The owners response to the review. */
   reviewResponse: PropTypes.shape({
+    /** The time of the quote. */
+    dateTime: PropTypes.string.isRequired,
     /** The text for the quote. */
     text: PropTypes.string.isRequired,
     /** The name of the individual being quoted. */
     source: PropTypes.string.isRequired,
-    /** The time of the quote. */
-    dateTime: PropTypes.string.isRequired,
   }),
   /** the date the reviewer stayed. */
   reviewerStayDate: PropTypes.string.isRequired,
