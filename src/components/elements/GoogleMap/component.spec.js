@@ -1,9 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { Card } from 'semantic-ui-react';
 
 import { ReactGoogleMap } from 'lib/react-google-maps';
+import { expectComponentToHaveProps } from 'lib/expect-helpers';
 
 import { Component as GoogleMap } from './component';
+import { GOOGLE_MAPS_API_KEY } from './constants';
 
 const props = {
   latitude: 0,
@@ -15,21 +18,21 @@ const getGoogleMap = () => shallow(<GoogleMap {...props} />);
 describe('<GoogleMap />', () => {
   it('should render a single `ReactGoogleMap` component', () => {
     const wrapper = getGoogleMap();
-    const actual = wrapper.find(ReactGoogleMap);
-    expect(actual).toHaveLength(1);
+    const actual = wrapper.is(ReactGoogleMap);
+    expect(actual).toBe(true);
   });
 
   describe('the `ReactGoogleMap` component', () => {
     it('should get the right props', () => {
       const wrapper = getGoogleMap();
-      const actual = wrapper.find(ReactGoogleMap).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          isShowingExactLocation: false,
-          isShowingApproximateLocation: false,
-          ...props,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        apiKey: GOOGLE_MAPS_API_KEY,
+        containerElement: <Card fluid />,
+        height: '400px',
+        isShowingExactLocation: false,
+        isShowingApproximateLocation: false,
+        ...props,
+      });
     });
   });
 
