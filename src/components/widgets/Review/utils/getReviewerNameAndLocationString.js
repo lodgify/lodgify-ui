@@ -4,6 +4,6 @@
  * @return {String}
  */
 export const getReviewerNameAndLocationString = (
-  reviewerName,
-  reviewerLocation
+  reviewerLocation,
+  reviewerName
 ) => `${reviewerName} (${reviewerLocation})`;

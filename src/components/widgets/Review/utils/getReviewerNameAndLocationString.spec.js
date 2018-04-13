@@ -3,11 +3,11 @@ import { getReviewerNameAndLocationString } from './getReviewerNameAndLocationSt
 //TODO merge this and getQuoteSourceUtil
 describe('getReviewerNameAndLocationString', () => {
   it('should return a string composed from the `reviewerName` and `reviewerLocation` arguments', () => {
-    const reviewerName = '🚣';
     const reviewerLocation = 'someLabel';
+    const reviewerName = '🚣';
     const actual = getReviewerNameAndLocationString(
-      reviewerName,
-      reviewerLocation
+      reviewerLocation,
+      reviewerName
     );
     expect(actual).toBe(`${reviewerName} (${reviewerLocation})`);
   });
