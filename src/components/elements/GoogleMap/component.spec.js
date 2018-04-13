@@ -6,6 +6,7 @@ import { ReactGoogleMap } from 'lib/react-google-maps';
 import { expectComponentToHaveProps } from 'lib/expect-helpers';
 
 import { Component as GoogleMap } from './component';
+import { GOOGLE_MAPS_API_KEY } from './constants';
 
 const props = {
   latitude: 0,
@@ -25,7 +26,7 @@ describe('<GoogleMap />', () => {
     it('should get the right props', () => {
       const wrapper = getGoogleMap();
       expectComponentToHaveProps(wrapper, {
-        apiKey: 'AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q',
+        apiKey: GOOGLE_MAPS_API_KEY,
         containerElement: <Card fluid />,
         height: '400px',
         isShowingExactLocation: false,

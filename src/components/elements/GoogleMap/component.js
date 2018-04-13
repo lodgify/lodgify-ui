@@ -4,6 +4,8 @@ import { Card } from 'semantic-ui-react';
 
 import { ReactGoogleMap } from 'lib/react-google-maps';
 
+import { GOOGLE_MAPS_API_KEY } from './constants';
+
 /**
  * A map displays a location.
  * @return {Object}
@@ -16,7 +18,7 @@ export const Component = ({
   longitude,
 }) => (
   <ReactGoogleMap
-    apiKey="AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q"
+    apiKey={GOOGLE_MAPS_API_KEY}
     containerElement={<Card fluid />}
     height={height}
     isShowingExactLocation={isShowingExactLocation}
