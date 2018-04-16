@@ -363,6 +363,7 @@
 
 @quoteBorderLeft: solid @8px @greyThree;
 @quoteBoxShadow: @4px @8px @8px 0 rgba(0, 0, 0, .05);
-@quotePadding: 0 1em;
-@quoteMargin: 1em;
-@quoteRowPadding: 0.4em 0em;
+@quotePadding: 0 @14px;
+@quoteMargin: @14px;
+
+@quoteRowPadding: @6px 0em;
