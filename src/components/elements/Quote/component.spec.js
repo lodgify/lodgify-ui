@@ -11,8 +11,11 @@ import { GridRow } from 'layout/GridRow';
 import { Paragraph } from 'typography/Paragraph';
 
 import { getQuoteSource } from './utils/getQuoteSource';
-import { quoteText, quoteSource, quoteDateTime } from './mock-data/props';
 import { Component as Quote } from './component';
+
+export const quoteText = 'someText';
+export const quoteSource = 'someName';
+export const quoteDateTime = 'someDate';
 
 const props = {
   quoteText,
