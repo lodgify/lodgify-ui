@@ -306,5 +306,5 @@ blockquote.ui.quote {
 }
 
 blockquote.ui.quote .row {
-    padding: @quoteRowPadding;
+  padding: @quoteRowPadding;
 }
