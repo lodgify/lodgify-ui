@@ -52,7 +52,7 @@ pipeline {
 
           sshagent(credentials: ["${CREDENTIAL_ID}"]) {
             sh "git pull -s recursive -X ours"
-            sh "git push origin ${BRANCH_NAME} --force-with-lease"
+            sh "git push origin ${BRANCH_NAME} --force"
           }
         }
       }
