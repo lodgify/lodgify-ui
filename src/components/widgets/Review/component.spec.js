@@ -13,12 +13,25 @@ import { Divider } from 'elements/Divider';
 import { Quote } from 'elements/Quote';
 import { Paragraph } from 'typography/Paragraph';
 
-import * as props from './mock-data/props';
 import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
 import { Component as Review } from './component';
 
-const { reviewResponse, ...requiredProps } = props;
+const requiredProps = {
+  ratingNumber: 4,
+  reviewerCategory: 'someCategory',
+  reviewerLocation: 'someLocation',
+  reviewerName: 'someName',
+  reviewerStayDate: 'someDate',
+  reviewText: 'someText',
+  reviewTitle: 'someTitle',
+};
+
+const reviewResponse = {
+  dateTime: 'someDate',
+  source: 'someSource',
+  text: 'someOtherText',
+};
 
 const getReview = additionalProps =>
   shallow(<Review {...requiredProps} {...additionalProps} />);
@@ -158,8 +171,8 @@ describe('<Review />', () => {
       expectComponentToHaveChildren(
         wrapper,
         getReviewerNameAndLocationString(
-          props.reviewerName,
-          props.reviewerLocation
+          requiredProps.reviewerName,
+          requiredProps.reviewerLocation
         )
       );
     });
@@ -195,7 +208,7 @@ describe('<Review />', () => {
       expectComponentToHaveProps(wrapper, {
         disabled: true,
         maxRating: 5,
-        rating: Math.round(props.ratingNumber),
+        rating: Math.round(requiredProps.ratingNumber),
         size: 'small',
       });
     });
@@ -206,7 +219,7 @@ describe('<Review />', () => {
       const wrapper = getReview()
         .find(Card.Header)
         .at(0);
-      expectComponentToHaveChildren(wrapper, props.reviewTitle);
+      expectComponentToHaveChildren(wrapper, requiredProps.reviewTitle);
     });
   });
 
@@ -215,7 +228,7 @@ describe('<Review />', () => {
       const wrapper = getReview()
         .find(Card.Description)
         .at(0);
-      expectComponentToHaveChildren(wrapper, props.reviewText);
+      expectComponentToHaveChildren(wrapper, requiredProps.reviewText);
     });
   });
 
@@ -264,8 +277,8 @@ describe('<Review />', () => {
       expectComponentToHaveChildren(
         wrapper,
         getReviewerCategoryAndStayDateString(
-          props.reviewerCategory,
-          props.reviewerStayDate
+          requiredProps.reviewerCategory,
+          requiredProps.reviewerStayDate
         )
       );
     });

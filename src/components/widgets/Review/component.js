@@ -59,7 +59,7 @@ export const Component = ({
       <Card.Header>{reviewTitle}</Card.Header>
       <Card.Description>{reviewText}</Card.Description>
       <Divider />
-      {reviewResponse && (
+      {!!reviewResponse && (
         <div>
           <Quote
             quoteDateTime={reviewResponse.dateTime}
