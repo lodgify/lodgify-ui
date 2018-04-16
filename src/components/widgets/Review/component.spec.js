@@ -24,6 +24,7 @@ const requiredProps = {
   reviewerName: 'someName',
   reviewerStayDate: 'someDate',
   reviewText: 'someText',
+  reviewTitle: 'someTitle',
 };
 
 const reviewResponse = {
