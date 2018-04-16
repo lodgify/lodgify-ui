@@ -41,9 +41,6 @@ pipeline {
         }
 
         sh "rm -rf ./${BRANCH_NAME}/*"
-        sh "rm -rf ./${BRANCH_NAME}/build"
-        sh "rm -rf ./${BRANCH_NAME}/.github"
-        sh "rm -rf ./${BRANCH_NAME}/.babelrc ./${BRANCH_NAME}/.eslintrc ./${BRANCH_NAME}/.eslintignore"
         sh "npm i && npm run docs:build"
 
         dir("${BRANCH_NAME}") {
