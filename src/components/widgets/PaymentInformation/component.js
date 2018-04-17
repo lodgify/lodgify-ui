@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Statistic } from 'semantic-ui-react';
 
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { getUniqueKey } from 'lib/get-unique-key';
@@ -49,18 +50,19 @@ export const Component = ({
       {!!cleaningCharge && (
         <GridColumn width={6}>
           <Heading size="mini">Cleaning Charge</Heading>
-          <Paragraph size="medium" isBoldWord>
-            {cleaningCharge}
-          </Paragraph>
+          <Statistic horizontal size="mini" text value={cleaningCharge} />
         </GridColumn>
       )}
       {!!taxesText && (
-        <GridColumn width={6} style={{ whiteSpace: 'pre' }}>
+        <GridColumn width={6}>
           <Heading size="mini">Taxes</Heading>
-          <Paragraph size="medium" isBoldWord>
-            {taxesText}
-          </Paragraph>{' '}
-          {taxesDescriptionText}
+          <Statistic
+            horizontal
+            text
+            size="tiny"
+            label={taxesDescriptionText}
+            value={taxesText}
+          />
         </GridColumn>
       )}
     </GridRow>

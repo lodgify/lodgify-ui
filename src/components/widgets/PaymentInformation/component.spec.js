@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { Statistic } from 'semantic-ui-react';
 
 import {
   expectComponentToHaveChildren,
@@ -256,7 +257,7 @@ describe('<PaymentInformation />', () => {
 
       it('should render the right children', () => {
         const wrapper = getConditionalGridColumn();
-        expectComponentToHaveChildren(wrapper, Heading, Paragraph);
+        expectComponentToHaveChildren(wrapper, Heading, Statistic);
       });
 
       describe('the `Heading` component', () => {
@@ -278,23 +279,20 @@ describe('<PaymentInformation />', () => {
         });
       });
 
-      describe('the `Paragraph` component', () => {
-        const getParagraph = () =>
+      describe('the `Statistic` component', () => {
+        const getStatistic = () =>
           getConditionalGridColumn()
-            .find(Paragraph)
+            .find(Statistic)
             .first();
 
         it('should have the right props', () => {
-          const wrapper = getParagraph();
+          const wrapper = getStatistic();
           expectComponentToHaveProps(wrapper, {
-            size: 'medium',
-            isBoldWord: true,
+            horizontal: true,
+            size: 'mini',
+            text: true,
+            value: cleaningCharge,
           });
-        });
-
-        it('should render the right children', () => {
-          const wrapper = getParagraph();
-          expectComponentToHaveChildren(wrapper, cleaningCharge);
         });
       });
     });
@@ -331,13 +329,7 @@ describe('<PaymentInformation />', () => {
 
       it('should render the right children', () => {
         const wrapper = getConditionalGridColumn();
-        expectComponentToHaveChildren(
-          wrapper,
-          Heading,
-          Paragraph,
-          ' ',
-          taxesDescriptionText
-        );
+        expectComponentToHaveChildren(wrapper, Heading, Statistic);
       });
 
       describe('the `Heading` component', () => {
@@ -359,23 +351,21 @@ describe('<PaymentInformation />', () => {
         });
       });
 
-      describe('the `Paragraph` component', () => {
-        const getParagraph = () =>
+      describe('the `Statistic` component', () => {
+        const getStatistic = () =>
           getConditionalGridColumn()
-            .find(Paragraph)
+            .find(Statistic)
             .first();
 
         it('should have the right props', () => {
-          const wrapper = getParagraph();
+          const wrapper = getStatistic();
           expectComponentToHaveProps(wrapper, {
-            size: 'medium',
-            isBoldWord: true,
+            horizontal: true,
+            text: true,
+            size: 'tiny',
+            label: taxesDescriptionText,
+            value: taxesText,
           });
-        });
-
-        it('should render the right children', () => {
-          const wrapper = getParagraph();
-          expectComponentToHaveChildren(wrapper, taxesText);
         });
       });
     });

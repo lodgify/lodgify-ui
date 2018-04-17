@@ -14,18 +14,6 @@ describe('<Paragraph />', () => {
     expect(actual).toHaveLength(1);
   });
 
-  it('should render a single `b` if `props.isBoldWord`', () => {
-    const header = getParagraph({ children, isBoldWord: true });
-    const actual = header.find('b');
-    expect(actual).toHaveLength(1);
-  });
-
-  it('should render a single `span` if `props.isWord`', () => {
-    const header = getParagraph({ children, isWord: true });
-    const actual = header.find('span');
-    expect(actual).toHaveLength(1);
-  });
-
   it('should default to adding no className', () => {
     const header = getParagraph({ children });
     const actual = header.find('p.tiny');
