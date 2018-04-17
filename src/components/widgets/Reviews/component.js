@@ -43,37 +43,14 @@ export const Component = ({ reviews, ratingAverage }) => (
         </Button>
       </GridColumn>
     </GridRow>
-    {reviews.map(
-      (
-        {
-          ratingNumber,
-          reviewerCategory,
-          reviewerLocation,
-          reviewerName,
-          reviewResponse,
-          reviewerStayDate,
-          reviewText,
-          reviewTitle,
-        },
-        index
-      ) => (
-        <GridRow key={getUniqueKey(reviewText, index)}>
-          <GridColumn width={12}>
-            <Review
-              ratingNumber={ratingNumber}
-              reviewerCategory={reviewerCategory}
-              reviewerLocation={reviewerLocation}
-              reviewerName={reviewerName}
-              reviewResponse={reviewResponse}
-              reviewerStayDate={reviewerStayDate}
-              reviewText={reviewText}
-              reviewTitle={reviewTitle}
-            />
-            <Divider />
-          </GridColumn>
-        </GridRow>
-      )
-    )}
+    {reviews.map((review, index) => (
+      <GridRow key={getUniqueKey(review.reviewText, index)}>
+        <GridColumn width={12}>
+          <Review {...review} />
+          <Divider />
+        </GridColumn>
+      </GridRow>
+    ))}
   </Grid>
 );
 
