@@ -1,0 +1,49 @@
+/*******************************
+           Statistic
+*******************************/
+
+/*-------------------
+         View
+--------------------*/
+
+@margin: 0 0 1em 0;
+@textAlign: left;
+
+/* Group */
+
+/* Group Element */
+
+/*-------------------
+       Content
+--------------------*/
+
+/* Value */
+@valueLineHeight: @26px;
+
+/* Label */
+@labelSize: @14px;
+@labelFontWeight: @normal;
+@labelLineHeight: @26px;
+@labelTextTransform: none;
+
+/* Text */
+
+/* Label Image */
+
+/*-------------------
+      Types
+--------------------*/
+
+@horizontalLabelDistance: 0.25em;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Floated */
+
+/* Inverted */
+
+/* Item Width */
+
+/* Size */
