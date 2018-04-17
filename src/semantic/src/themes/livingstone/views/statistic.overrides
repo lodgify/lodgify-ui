@@ -1,0 +1,39 @@
+/*******************************
+            Statistic
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+.ui.horizontal.statistic {
+
+  .value {
+    line-height: @valueLineHeight;
+  }
+
+  .label {
+    font-size: @labelSize;
+    line-height: @labelLineHeight;
+    text-transform: @labelTextTransform;
+  }
+}
+
+
+/*-------------------
+       Group
+--------------------*/
+
+/*-------------------
+       Coupling
+--------------------*/
+
+
+/*******************************
+            States
+*******************************/
+
+
+/*******************************
+            Variations
+*******************************/
