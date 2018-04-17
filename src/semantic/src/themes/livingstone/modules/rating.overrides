@@ -4,6 +4,13 @@
 
 .ui.rating {
   margin-left: @marginLeft;
+  
+  + span {
+    margin-right: @siblingSpanMarginRight;
+    float: @siblingSpanFloat;
+    color: @siblingSpanColor;
+    font-weight: @siblingSpanFontWeight;
+  }
 
 /*-------------------
         Types
