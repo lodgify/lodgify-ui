@@ -6,8 +6,7 @@ import { getUniqueKey } from 'lib/get-unique-key';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
-import { Paragraph } from 'typography/Paragraph';
-import { IconCard } from 'elements/IconCard';
+import { Icon } from 'elements/Icon';
 
 /**
  * The standard widget for displaying the rules of a property.
@@ -19,21 +18,39 @@ export const Component = ({ checkInTime, checkOutTime, rules }) => (
       <Heading size="tiny">House Rules</Heading>
     </GridColumn>
     <GridColumn width={3}>
-      {getParagraphsFromStrings(rules.join('\n')).map(
-        (paragraphText, index) => (
-          <Paragraph key={getUniqueKey(paragraphText, index)}>
-            {paragraphText}
-          </Paragraph>
-        )
-      )}
+      <div className="ui list">
+        {getParagraphsFromStrings(rules.join('\n')).map(
+          (paragraphText, index) => (
+            <div className="item" key={getUniqueKey(paragraphText, index)}>
+              {paragraphText}
+            </div>
+          )
+        )}
+      </div>
     </GridColumn>
-    <GridColumn width={3}>
-      <Grid>
-        <GridColumn width={6}>
-          <IconCard name="home" label={checkInTime} />
+    <GridColumn width={2}>
+      <Grid verticalAlign="middle">
+        <GridColumn width={3}>
+          <Icon name="bed" />
         </GridColumn>
-        <GridColumn width={6}>
-          <IconCard name="home" label={checkOutTime} />
+        <GridColumn width={9}>
+          <div>
+            <b>Check-in</b>
+          </div>
+          <span className="header">{checkInTime}</span>
+        </GridColumn>
+      </Grid>
+    </GridColumn>
+    <GridColumn width={2}>
+      <Grid verticalAlign="middle">
+        <GridColumn width={3}>
+          <Icon name="blind" />
+        </GridColumn>
+        <GridColumn width={9}>
+          <div>
+            <b>Check-out</b>
+          </div>
+          <span className="header">{checkOutTime}</span>
         </GridColumn>
       </Grid>
     </GridColumn>

@@ -11,36 +11,36 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
-import { IconCard } from 'elements/IconCard';
-import { GoogleMap } from 'elements/GoogleMap';
+import { Icon } from 'elements/Icon';
 
-import {
-  locationDescription,
-  locationSummary,
-  transportOptions,
-} from './mock-data/props';
-import { Component as PropertyLocation } from './component';
+import { Component as PropertyRules } from './component';
+
+const checkInTime = '09.00 PM';
+const checkOutTime = '12.00 AM';
+const rules = [
+  'Smoking not allowed',
+  'No parties or events',
+  'Pets are allowed',
+];
 
 const props = {
-  locationDescription,
-  locationSummary,
-  transportOptions,
-  latitude: 41.387863,
-  longitude: 2.158105,
+  checkInTime,
+  checkOutTime,
+  rules,
 };
 
-const getPropertyLocation = () => shallow(<PropertyLocation {...props} />);
+const getPropertyRules = () => shallow(<PropertyRules {...props} />);
 
-describe('<PropertyLocation />', () => {
+describe('<PropertyRules />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
-    const wrapper = getPropertyLocation();
+    const wrapper = getPropertyRules();
     const actual = wrapper.is(Grid);
-    expect(actual).toBe(true);
+    expect(actual).toBeTruthy();
   });
 
   describe('the first `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyLocation();
+      const wrapper = getPropertyRules();
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(4, GridColumn)
@@ -50,7 +50,7 @@ describe('<PropertyLocation />', () => {
 
   describe('the first `GridColumn` component', () => {
     const getFirstGridColumn = () =>
-      getPropertyLocation()
+      getPropertyRules()
         .find(GridColumn)
         .at(0);
 
@@ -63,12 +63,12 @@ describe('<PropertyLocation />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
-      expectComponentToHaveChildren(wrapper, Heading, Paragraph);
+      expectComponentToHaveChildren(wrapper, Heading);
     });
   });
 
   describe('the `Heading` component', () => {
-    const getHeading = () => getPropertyLocation().find(Heading);
+    const getHeading = () => getPropertyRules().find(Heading);
 
     it('should have the right props', () => {
       const wrapper = getHeading();
@@ -79,72 +79,73 @@ describe('<PropertyLocation />', () => {
 
     it('should render the right children', () => {
       const wrapper = getHeading();
-      expectComponentToHaveChildren(wrapper, 'Location');
-    });
-  });
-
-  describe('the first `Paragraph` component', () => {
-    const getFirstParagraph = () =>
-      getPropertyLocation()
-        .find(Paragraph)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getFirstParagraph();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getFirstParagraph();
-      expectComponentToHaveChildren(wrapper, locationSummary);
+      expectComponentToHaveChildren(wrapper, 'House Rules');
     });
   });
 
   describe('the second `GridColumn` component', () => {
     const getSecondGridColumn = () =>
-      getPropertyLocation()
+      getPropertyRules()
         .find(GridColumn)
         .at(1);
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 6,
+        width: 3,
       });
     });
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
-      expectComponentToHaveChildren(wrapper, Paragraph);
+      expectComponentToHaveChildren(wrapper, 'div');
     });
   });
 
-  describe('each `Paragraph` in the second `GridColumn` component', () => {
-    const getParagraphInSecondGridColumn = () =>
-      getPropertyLocation()
+  describe('the second `GridColumn` component', () => {
+    const getSecondGridColumn = () =>
+      getPropertyRules()
         .find(GridColumn)
-        .at(1)
-        .children(Paragraph);
+        .at(1);
+
+    it('should have the right props', () => {
+      const wrapper = getSecondGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        width: 3,
+      });
+    });
 
     it('should render the right children', () => {
-      const wrapper = getParagraphInSecondGridColumn();
-      const expected = getParagraphsFromStrings(locationDescription)[0];
+      const wrapper = getSecondGridColumn();
+      expectComponentToHaveChildren(wrapper, 'div');
+    });
+  });
+
+  describe('each list item in the second `GridColumn` component', () => {
+    const getListItemInSecondGridColumn = () =>
+      getPropertyRules()
+        .find(GridColumn)
+        .at(1)
+        .find('.list')
+        .children();
+
+    it('should render the right children', () => {
+      const wrapper = getListItemInSecondGridColumn();
+      const expected = getParagraphsFromStrings(rules.join('\n'));
       expectComponentToHaveChildren(wrapper, expected);
     });
   });
 
   describe('the third `GridColumn` component', () => {
     const getThirdGridColumn = () =>
-      getPropertyLocation()
+      getPropertyRules()
         .find(GridColumn)
         .at(2);
 
     it('should have the right props', () => {
       const wrapper = getThirdGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 6,
+        width: 2,
       });
     });
 
@@ -156,19 +157,20 @@ describe('<PropertyLocation />', () => {
 
   describe('the second `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyLocation()
+      const wrapper = getPropertyRules()
         .find(Grid)
         .at(1);
+
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(4, GridColumn)
+        ...getArrayOfLengthOfItem(2, GridColumn)
       );
     });
   });
 
   describe('each `GridColumn` in the second `Grid` component', () => {
     const getGridColumnInSecondGrid = () =>
-      getPropertyLocation()
+      getPropertyRules()
         .find(Grid)
         .at(1)
         .children(GridColumn)
@@ -183,61 +185,47 @@ describe('<PropertyLocation />', () => {
 
     it('should render the right children', () => {
       const wrapper = getGridColumnInSecondGrid();
-      expectComponentToHaveChildren(wrapper, IconCard);
+      expectComponentToHaveChildren(wrapper, Icon);
     });
   });
 
-  describe('each `IconCard` in the second `Grid` component', () => {
+  describe('each `Icon` in the second `Grid` component', () => {
     const getIconCardInSecondGrid = () =>
-      getPropertyLocation()
+      getPropertyRules()
         .find(Grid)
         .at(1)
-        .find(IconCard)
+        .find(Icon)
         .first();
 
     it('should have the right props', () => {
       const wrapper = getIconCardInSecondGrid();
       expectComponentToHaveProps(wrapper, {
-        isFilled: true,
-        label: expect.any(String),
-        name: transportOptions[0].iconName,
+        name: expect.any(String),
       });
     });
   });
 
   describe('the fourth `GridColumn` component', () => {
     const getFourthGridColumn = () =>
-      getPropertyLocation()
+      getPropertyRules()
         .find(GridColumn)
-        .at(7);
+        .at(5);
 
     it('should have the right props', () => {
       const wrapper = getFourthGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 12,
+        width: 2,
       });
     });
 
     it('should render the right children', () => {
       const wrapper = getFourthGridColumn();
-      expectComponentToHaveChildren(wrapper, GoogleMap);
+      expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
-  describe('the `GoogleMap` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getPropertyLocation().find(GoogleMap);
-      expectComponentToHaveProps(wrapper, {
-        isShowingExactLocation: false,
-        isShowingApproximateLocation: false,
-        latitude: props.latitude,
-        longitude: props.longitude,
-      });
-    });
-  });
-
-  it('should have `displayName` `PropertyLocation`', () => {
-    const actual = PropertyLocation.displayName;
-    expect(actual).toBe('PropertyLocation');
+  it('should have `displayName` `PropertyRules`', () => {
+    const actual = PropertyRules.displayName;
+    expect(actual).toBe('PropertyRules');
   });
 });
