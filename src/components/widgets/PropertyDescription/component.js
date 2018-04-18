@@ -44,10 +44,11 @@ export const Component = ({
         </GridColumn>
       )}
     </GridColumn>
-    <GridColumn verticalAlignContent="middle" width={5}>
-      <Grid areColumnsCentered>
+    <GridColumn only="computer" width={1} />
+    <GridColumn verticalAlignContent="middle" computer={4} mobile={4}>
+      <Grid>
         {getFirstFourItems(icons).map(({ iconName, label }, index) => (
-          <GridColumn key={getUniqueKey(label, index)} computer={5} mobile={6}>
+          <GridColumn key={getUniqueKey(label, index)} computer={6} mobile={6}>
             <Icon label={label} name={iconName} />
           </GridColumn>
         ))}
