@@ -29,6 +29,20 @@ export const Component = ({
           {paragraphText}
         </Paragraph>
       ))}
+      {!!extraDescriptionText && (
+        <GridColumn width={12}>
+          <Modal trigger={<Link>View more</Link>}>
+            {getParagraphsFromStrings(
+              descriptionText,
+              extraDescriptionText
+            ).map((paragraphText, index) => (
+              <Paragraph key={getUniqueKey(paragraphText, index)}>
+                {paragraphText}
+              </Paragraph>
+            ))}
+          </Modal>
+        </GridColumn>
+      )}
     </GridColumn>
     <GridColumn verticalAlignContent="middle" width={5}>
       <Grid areColumnsCentered>
@@ -39,19 +53,6 @@ export const Component = ({
         ))}
       </Grid>
     </GridColumn>
-    {!!extraDescriptionText && (
-      <GridColumn width={12}>
-        <Modal trigger={<Link>View more</Link>}>
-          {getParagraphsFromStrings(descriptionText, extraDescriptionText).map(
-            (paragraphText, index) => (
-              <Paragraph key={getUniqueKey(paragraphText, index)}>
-                {paragraphText}
-              </Paragraph>
-            )
-          )}
-        </Modal>
-      </GridColumn>
-    )}
   </Grid>
 );
 
