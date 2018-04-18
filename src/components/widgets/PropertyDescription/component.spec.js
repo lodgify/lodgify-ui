@@ -42,7 +42,7 @@ describe('<PropertyDescription />', () => {
       const wrapper = getPropertyDescription();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(2, GridColumn)
+        ...getArrayOfLengthOfItem(3, GridColumn)
       );
     });
   });
@@ -102,16 +102,31 @@ describe('<PropertyDescription />', () => {
   });
 
   describe('the second `GridColumn` component', () => {
-    const getSecondGridColumn = () =>
+    const getThirdGridColumn = () =>
       getPropertyDescription()
         .find(GridColumn)
         .at(1);
+    it('should have the right props', () => {
+      const wrapper = getThirdGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        only: 'computer',
+        width: 1,
+      });
+    });
+  });
+
+  describe('the third `GridColumn` component', () => {
+    const getSecondGridColumn = () =>
+      getPropertyDescription()
+        .find(GridColumn)
+        .at(2);
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
         verticalAlignContent: 'middle',
-        width: 5,
+        computer: 4,
+        mobile: 4,
       });
     });
 
@@ -122,20 +137,10 @@ describe('<PropertyDescription />', () => {
   });
 
   describe('the second `Grid` component', () => {
-    const getSecondGrid = () =>
-      getPropertyDescription()
+    it('should render the right children', () => {
+      const wrapper = getPropertyDescription()
         .find(Grid)
         .at(1);
-
-    it('should have the right props', () => {
-      const wrapper = getSecondGrid();
-      expectComponentToHaveProps(wrapper, {
-        areColumnsCentered: true,
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getSecondGrid();
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(4, GridColumn)
@@ -152,7 +157,8 @@ describe('<PropertyDescription />', () => {
     it('should have the right props', () => {
       const wrapper = getGridColumnInSecondGrid();
       expectComponentToHaveProps(wrapper, {
-        width: 5,
+        computer: 6,
+        mobile: 6,
       });
     });
 
@@ -191,7 +197,7 @@ describe('<PropertyDescription />', () => {
       const getConditionalGridColumn = () =>
         getPropertyDescription({ extraDescriptionText })
           .find(GridColumn)
-          .at(6);
+          .at(1);
 
       it('should have the right props', () => {
         const wrapper = getConditionalGridColumn();
