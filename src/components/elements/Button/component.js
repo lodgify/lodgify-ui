@@ -15,6 +15,7 @@ export const Component = ({
   onClick,
   isRounded,
   isSecondary,
+  isCompact,
   hasShadow,
   icon,
   size,
@@ -26,6 +27,7 @@ export const Component = ({
     onClick={onClick}
     secondary={isSecondary}
     circular={isRounded}
+    compact={isCompact}
     size={size}
     className={cx({
       'has-icon': !!icon,
@@ -50,6 +52,7 @@ Component.defaultProps = {
   isLoading: false,
   isRounded: false,
   isSecondary: false,
+  isCompact: false,
   hasShadow: false,
   icon: null,
   size: null,
@@ -73,6 +76,8 @@ Component.propTypes = {
   /** Is the button secondary. */
   isSecondary: PropTypes.bool,
   /** Has the button shadow. */
+  isCompact: PropTypes.bool,
+  /** Has the button got reduced padding. */
   hasShadow: PropTypes.bool,
   /** An icon to display in the button */
   icon: PropTypes.string,
