@@ -17,6 +17,7 @@ export const Component = ({
   onClick,
   isRounded,
   isSecondary,
+  isCompact,
   hasShadow,
   icon,
   size,
@@ -28,6 +29,7 @@ export const Component = ({
     onClick={onClick}
     secondary={isSecondary}
     circular={isRounded}
+    compact={isCompact}
     size={size}
     className={cx({
       'has-shadow': !!hasShadow,
@@ -48,6 +50,7 @@ Component.defaultProps = {
   isLoading: false,
   isRounded: false,
   isSecondary: false,
+  isCompact: false,
   hasShadow: false,
   icon: null,
   size: null,
@@ -60,6 +63,8 @@ Component.propTypes = {
    *  @param {Object} event
    */
   onClick: PropTypes.func,
+  /** Has the button got reduced padding. */
+  isCompact: PropTypes.bool,
   /** Is the button disabled. */
   isDisabled: PropTypes.bool,
   /** Is the button in loading state. */

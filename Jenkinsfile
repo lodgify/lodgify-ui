@@ -41,6 +41,7 @@ pipeline {
         }
 
         sh "rm -rf ./${BRANCH_NAME}/*"
+        sh "rm -rf ./${BRANCH_NAME}/.github ./${BRANCH_NAME}/.babelrc ./${BRANCH_NAME}/.eslint*"
         sh "npm i && npm run docs:build"
 
         dir("${BRANCH_NAME}") {
@@ -51,8 +52,7 @@ pipeline {
           sh "git commit -m 'Publishing to branch ${BRANCH_NAME}'"
 
           sshagent(credentials: ["${CREDENTIAL_ID}"]) {
-            sh "git pull -s recursive -X ours"
-            sh "git push origin ${BRANCH_NAME}"
+            sh "git push origin ${BRANCH_NAME} --force"
           }
         }
       }

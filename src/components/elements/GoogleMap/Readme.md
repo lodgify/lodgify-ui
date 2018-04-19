@@ -5,9 +5,33 @@
 />
 ```
 
+### Variations
+
+#### Height
+
+```jsx
+<GoogleMap
+  height="100px"
+  latitude={41.387863}
+  longitude={2.158105}
+/>
+<Divider />
+<GoogleMap
+  height="200px"
+  latitude={41.387863}
+  longitude={2.158105}
+/>
+<Divider />
+<GoogleMap
+  height="300px"
+  latitude={41.387863}
+  longitude={2.158105}
+/>
+```
+
 ### Usage
 
-#### Exact marker
+#### Exact location
 
 ```jsx
 <GoogleMap
@@ -17,7 +41,7 @@
 />
 ```
 
-#### Vague marker
+#### Approximate location
 
 ```jsx
 <GoogleMap
