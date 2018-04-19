@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Pagination, Button, Label } from 'semantic-ui-react';
+import { Pagination } from 'semantic-ui-react';
+
+import { nextItem, pageItem, prevItem } from './navigationMarkup';
 
 /**
  * A pagination control enables a user to navigate a set of items or views.
@@ -12,10 +14,10 @@ export const Component = ({ onPageChange, startingPage, totalPages }) => (
     defaultActivePage={startingPage}
     firstItem={null}
     lastItem={null}
-    nextItem={<Button primary circular icon="chevron right" content={null} />}
+    nextItem={nextItem}
     onPageChange={onPageChange}
-    pageItem={<Label empty circular size="tiny" content={null} />}
-    prevItem={<Button primary circular icon="chevron left" content={null} />}
+    pageItem={pageItem}
+    prevItem={prevItem}
     secondary
     totalPages={totalPages}
   />
