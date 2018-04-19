@@ -1,6 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Dropdown as SemanticDropdown, Icon } from 'semantic-ui-react';
+import { Dropdown as SemanticDropdown } from 'semantic-ui-react';
+
+import { Icon } from 'elements/Icon';
 
 import { Component as Dropdown } from './component';
 
@@ -40,6 +42,7 @@ describe('<Dropdown />', () => {
       expect(actual).toEqual(
         expect.objectContaining({
           defaultValue: null,
+          icon: <Icon name="caret down" />,
           onBlur: expect.any(Function),
           onChange: expect.any(Function),
           onClick: expect.any(Function),

@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { Dropdown, Icon } from 'semantic-ui-react';
+import { Dropdown } from 'semantic-ui-react';
 import getClassNames from 'classnames';
+
+import { Icon } from 'elements/Icon';
 
 import { adaptOptions } from './utils/adaptOptions';
 import { getDefaultValue } from './utils/getDefaultValue';
@@ -51,9 +53,10 @@ export class Component extends PureComponent {
           focus: isOpen,
         })}
       >
-        {!optionsWithImages && icon && <Icon name={icon} size="large" />}
+        {!optionsWithImages && icon && <Icon name={icon} />}
         <Dropdown
           defaultValue={defaultValue}
+          icon={<Icon name="caret down" />}
           onBlur={() => this.handleOpen(false)}
           onChange={this.handleChange}
           onClick={() => this.handleOpen(!isOpen)}
