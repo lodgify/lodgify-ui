@@ -45,10 +45,10 @@ export const Component = ({
       )}
     </GridColumn>
     <GridColumn only="computer" width={1} />
-    <GridColumn verticalAlignContent="middle" computer={4} mobile={4}>
+    <GridColumn verticalAlignContent="middle" width={4}>
       <Grid>
         {getFirstFourItems(icons).map(({ iconName, label }, index) => (
-          <GridColumn key={getUniqueKey(label, index)} computer={6} mobile={6}>
+          <GridColumn key={getUniqueKey(label, index)} width={6}>
             <Icon label={label} name={iconName} />
           </GridColumn>
         ))}
