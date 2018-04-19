@@ -24,6 +24,9 @@
 /* Box Shadow */
 
 /* Icon */
+.ui.button > .icon:not(.button) > svg {
+  margin: @iconSvgMargin;
+}
 
 /* Loader */
 
@@ -129,14 +132,4 @@
 /* Has Shadow */
 .ui.button.has-shadow {
   box-shadow: @hasShadowBoxShadow;
-}
-
-/* Has Icon */
-.ui.button.has-icon > .icon {
-  display: @hasIconDisplay;
-  height: @hasIconHeight;
-}
-
-.ui.button.has-icon > .icon > * {
-  display: @hasIconDisplay;
 }

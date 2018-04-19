@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal } from 'semantic-ui-react';
 
+import { Icon } from 'elements/Icon';
+
 /**
  * A modal displays content that temporarily
  * blocks interactions with the main view of a page.
@@ -9,7 +11,7 @@ import { Modal } from 'semantic-ui-react';
  */
 export const Component = ({ children, trigger }) => (
   <Modal
-    closeIcon
+    closeIcon={<Icon name="close" />}
     content={children}
     dimmer="inverted"
     size="tiny"

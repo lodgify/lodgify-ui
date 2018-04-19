@@ -117,7 +117,6 @@
 @paginationButtonDiameter           : @35px;
 @paginationButtonHorizontalMargin   : @15px;
 @paginationPrevButtonIconMarginLeft : -(@3px) !important;
-@paginationButtonIconTopPosition    : -(@2px);
 
 @paginationLabelBackground          : @greyFive;
 @paginationLabelActiveBackground    : @primaryColor;
@@ -133,6 +132,7 @@
 @slideshowButtonHorizontalPadding   : @30px;
 @slideshowButtonHeightOffset        : (@38px / 2);
 @slideshowButtonTopPosition         : ~"calc(50% - @{slideshowButtonHeightOffset})";
+@slideshowButtonDiameter            : @paginationButtonDiameter;
 
 @slideshowBulletsBottomPosition     : -(@20px);
 

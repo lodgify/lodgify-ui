@@ -1,52 +1,85 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Icon as SemanticIcon } from 'semantic-ui-react';
 
+import {
+  expectComponentToHaveProps,
+  expectComponentToHaveChildren,
+} from 'lib/expect-helpers';
 import { Paragraph } from 'typography/Paragraph';
 
 import { Component as Icon } from './component';
 
-const name = 'steam';
+const props = {
+  color: 'green',
+  isCircular: true,
+  isColorInverted: true,
+  isDisabled: true,
+  size: 'tiny',
+  some: 'otherProps',
+};
 
-const getIcon = props => shallow(<Icon name={name} {...props} />);
+const getIcon = extraProps => shallow(<Icon {...props} {...extraProps} />);
 
 describe('<Icon />', () => {
-  it('should render a single Lodgify UI `Icon` component', () => {
+  it('should render a `i.icon` element', () => {
     const wrapper = getIcon();
-    const actual = wrapper.find(SemanticIcon);
-    expect(actual).toHaveLength(1);
+    const actual = wrapper.is('i.icon');
+    expect(actual).toBe(true);
   });
 
-  describe('the Lodgify UI `Icon` component', () => {
+  describe('the `i.icon` element', () => {
     it('should get the right props', () => {
-      const wrapper = getIcon().find(SemanticIcon);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          color: undefined,
-          inverted: false,
-          name,
-          size: 'large',
-        })
-      );
+      const wrapper = getIcon();
+      const { color, size } = props;
+      expectComponentToHaveProps(wrapper, {
+        className: `icon ${color} ${size} circular inverted grey inverted`,
+        some: 'otherProps',
+      });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getIcon();
+      expectComponentToHaveChildren(wrapper, 'svg');
+    });
+
+    describe('if `props.label` is passed', () => {
+      it('should have the right children', () => {
+        const wrapper = getIcon({ label: 'someLabel' });
+        expectComponentToHaveChildren(wrapper, 'svg', Paragraph);
+      });
     });
   });
 
-  describe('if a label prop is passed', () => {
-    it('should render a single Lodgify UI `Paragraph` component', () => {
-      const label = '🐘';
-      const wrapper = getIcon({ label });
-      const actual = wrapper.find(Paragraph);
-      expect(actual).toHaveLength(1);
+  describe('the `svg` element', () => {
+    const getSvg = () => getIcon().find('svg');
+
+    it('should get the right props', () => {
+      const wrapper = getSvg();
+      expectComponentToHaveProps(wrapper, {
+        viewBox: '0 0 24 24',
+      });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getSvg();
+      expectComponentToHaveChildren(wrapper, 'path');
     });
   });
 
-  describe('the Lodgify UI `Paragraph` component', () => {
-    it('should get the right children prop', () => {
-      const label = '🐘';
-      const wrapper = getIcon({ label });
-      const actual = wrapper.find(Paragraph).prop('children');
-      expect(actual).toBe(label);
+  describe('the `path` element', () => {
+    it('should get the right props', () => {
+      const wrapper = getIcon().find('path');
+      expectComponentToHaveProps(wrapper, {
+        d: expect.any(String),
+        fill: 'currentColor',
+      });
+    });
+  });
+
+  describe('the `Paragraph` component', () => {
+    it('should have the right children', () => {
+      const wrapper = getIcon({ label: 'someLabel' }).find(Paragraph);
+      expectComponentToHaveChildren(wrapper, 'someLabel');
     });
   });
 

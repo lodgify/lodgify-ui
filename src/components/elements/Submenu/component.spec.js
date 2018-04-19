@@ -1,6 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
+import { Icon } from 'elements/Icon';
+
 import { Component as Submenu } from './component';
 
 const children = 'Click me';
@@ -19,6 +21,7 @@ describe('<Submenu />', () => {
       const actual = submenu.find('Dropdown').props();
       expect(actual).toEqual(
         expect.objectContaining({
+          icon: <Icon name="caret down" size="small" />,
           item: false,
           simple: false,
           className: '',

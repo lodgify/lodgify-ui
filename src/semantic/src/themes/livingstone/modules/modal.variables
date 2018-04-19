@@ -6,9 +6,10 @@
 @closeOpacity: 1;
 @closeColor: @greySix;
 
-@closeHitBoxOffset: @13px;
 @closeTop: 0;
 @closeRight: 0;
+
+@closePadding: @10px @8px;
 
 /* Header */
 

@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
 
+import { Icon } from 'elements/Icon';
+
 import { adaptOptions } from './adaptOptions';
 
 /**
@@ -17,6 +19,7 @@ export const Component = ({
 }) => (
   <Dropdown
     className={isTriggerUnderlined ? 'underlined' : ''}
+    icon={<Icon name="caret down" size="small" />}
     item={isMenuItem}
     options={adaptOptions(items)}
     pointing="top"

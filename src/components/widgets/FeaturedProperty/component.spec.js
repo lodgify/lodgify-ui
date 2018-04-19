@@ -152,7 +152,7 @@ describe('<FeaturedProperty />', () => {
           disabled: true,
           maxRating: 5,
           rating: Math.round(props.ratingNumber),
-          size: 'mini',
+          size: 'tiny',
         })
       );
     });

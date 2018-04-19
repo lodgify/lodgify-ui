@@ -140,6 +140,7 @@
     button.button {
       height: @paginationButtonDiameter;
       margin: 0;
+      padding: 0;
       width: @paginationButtonDiameter;
 
       &:first-child {
@@ -150,13 +151,9 @@
         margin-left: @paginationButtonHorizontalMargin;
       }
 
-      i.chevron {
+      i.icon {
+        margin-left: @paginationPrevButtonIconMarginLeft;
         position: relative;
-        top: @paginationButtonIconTopPosition;
-
-        &.left {
-          margin-left: @paginationPrevButtonIconMarginLeft;
-        }
       }
     }
 
@@ -205,6 +202,12 @@
       top: @slideshowButtonTopPosition;
       width: 100%;
       z-index: 1;
+
+      button {
+        height: @slideshowButtonDiameter;
+        padding: 0;
+        width: @slideshowButtonDiameter;
+      }
     }
 
     > .image-gallery-bullets  {

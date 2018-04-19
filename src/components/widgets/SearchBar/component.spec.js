@@ -249,13 +249,14 @@ describe('<SearchBar />', () => {
     it('should have the right props', () => {
       const wrapper = getButton();
       expectComponentToHaveProps(wrapper, {
+        icon: 'search',
         isRounded: true,
       });
     });
 
     it('should render the right children', () => {
       const wrapper = getButton();
-      expectComponentToHaveChildren(wrapper, Icon, 'Search');
+      expectComponentToHaveChildren(wrapper, 'Search');
     });
   });
 

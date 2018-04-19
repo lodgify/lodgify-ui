@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { Icon } from 'semantic-ui-react';
+
+import { Icon } from 'elements/Icon';
 
 import { Component as InputController } from './component';
 
@@ -147,7 +148,6 @@ describe('<InputController />', () => {
         expect.objectContaining({
           color: 'green',
           name: 'checkmark',
-          size: 'large',
         })
       );
     });
@@ -187,15 +187,15 @@ describe('<InputController />', () => {
 
   describe('Variation: icon', () => {
     it('should add `props.iconPosition="left"` to `Input`', () => {
-      const semanticInput = getInputController({ icon: <Icon /> });
+      const semanticInput = getInputController({ icon: <Icon name="phone" /> });
       const actual = semanticInput.prop('iconPosition');
       expect(actual).toBe('left');
     });
 
     it('should render `props.icon` inside `Input`', () => {
-      const semanticInput = getInputController({ icon: <Icon /> }).find(
-        'Input'
-      );
+      const semanticInput = getInputController({
+        icon: <Icon name="phone" />,
+      }).find('Input');
       const actual = semanticInput.find(Icon).length;
       expect(actual).toBe(1);
     });

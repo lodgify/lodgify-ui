@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Popup, Icon } from 'semantic-ui-react';
+import { Popup } from 'semantic-ui-react';
+
+import { getTriggerMarkup } from './getTriggerMarkup';
 
 /**
  * A tooltip helps a user understand an element or some content.
@@ -13,7 +15,7 @@ export const Component = ({ content, size }) => (
     inverted
     position="top center"
     size={size}
-    trigger={<Icon name="info" color="grey" inverted circular size={size} />}
+    trigger={getTriggerMarkup(size)}
   />
 );
 

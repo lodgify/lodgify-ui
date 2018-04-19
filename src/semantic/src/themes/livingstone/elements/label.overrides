@@ -17,7 +17,7 @@
 /* Link */
 
 /* Icon */
-  & > .big.icon {
+  & > i.icon {
     text-align: center;
     width: 100%;
 
@@ -82,11 +82,19 @@
 
 /* Floating */
 
+/* Disabled */
+
+  & > i.inverted.grey.icon {
+    & + p {
+      color: @disabledIconCardColor;
+    }
+  }
+
 /* Left aligned */
 
   &.left.aligned {
-    & > .big.icon {
-      margin:@leftAlignedIconCardMargin;
+    & > i.icon {
+      margin-right: @leftAlignedIconCardMarginRight;
       text-align: left;
 
       & + p {

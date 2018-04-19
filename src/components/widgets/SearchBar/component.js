@@ -89,8 +89,7 @@ Component.defaultProps = {
   isShowingLocationDropdown: true,
   isSticky: false,
   searchButton: (
-    <Button isRounded>
-      <Icon name="search" />
+    <Button isRounded icon="search">
       Search
     </Button>
   ),

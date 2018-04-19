@@ -21,6 +21,10 @@
 // for `.ui.icon.input > i.icon`
 // in `semantic/src/definitions/elements/input.less`
   &.left.icon {
+    & > i.icon {
+      padding: @iconPadding;
+    }
+
     & > i.flag:not(.icon) {
       cursor: default;
       height: 100%;
@@ -331,13 +335,12 @@
       }
     }
 
-    i.large.green.checkmark.icon {
-      height: @validIconHeight;
-      left: auto;
-      opacity: inherit;
+    i.green.icon {
+      left: inherit;
+      opacity: @validIconOpacity;
+      padding: @validIconPadding;
       position: absolute;
       right: @inputHorizontalPadding;
-      top: @validIconPositionTop;
       z-index: @validIconZIndex;
     }
   }
