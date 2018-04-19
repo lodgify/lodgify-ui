@@ -14,6 +14,8 @@
 --------------------*/
 
 /* Icon Input */
+@iconPadding: @8px @10px;
+
 @flagIconXOffset: -(@7px);
 @flagIconYOffset: -(@5px);
 @flagIconScale: scale(1.2);
@@ -26,16 +28,11 @@
 /* Labeled Input */
 @labelColor: @greySix;
 
-@labelFocusColor: @black;
-@labelFocusFontSize: @10px;
-@labelFocusXTranslate: @15px;
-@labelFocusYTranslate: @30px;
-
 /* Date range picker */
-@dateRangePickerInputPadding: @8px @10px;
+@dateRangePickerInputPadding: @6px @10px;
 @dateRangePickerInputBorderOffset: (@2px/2); // This offsets the border on .DateRangePicker.
 
-@dateRangePickerIconWidthOffset: 42px; // This offsets the widths of the icons in the date range picker.
+@dateRangePickerIconWidthOffset: 44px; // This offsets the widths of the icons in the date range picker.
 
 @dateRangePickerDateInputPadding: (@verticalPadding - @dateRangePickerInputBorderOffset) 0;
 @dateRangePickerDateInputWidth: ~"calc(50% - @{dateRangePickerIconWidthOffset})";
@@ -44,7 +41,7 @@
 @dateRangePickerPickerZIndex: 3;
 @dateRangePickerPickerBoxShadow: @spreadShadow;
 
-@dateRangePickerPickerNavigationButtonTopSpace: (@dateRangePickerPickerMonthCaptionPaddingTop + @4px);
+@dateRangePickerPickerNavigationButtonTopSpace: (@dateRangePickerPickerMonthCaptionPaddingTop - @2px);
 
 @dateRangePickerPickerMonthCaptionPaddingTop: @34px;
 @dateRangePickerPickerMonthCaptionPaddingBottom: @59px;
@@ -73,6 +70,13 @@
 /* Focus */
 @focusBackground: @focusedInputBackground;
 
+@labelFocusColor: @black;
+@labelFocusFontSize: @10px;
+@labelFocusXTranslate: @15px;
+@labelFocusYTranslate: @30px;
+
+@iconFocusColor: @labelFocusColor;
+
 @dateRangePickerInputFocusedBorderBottomWidth: @3px;
 @dateRangePickerInputFocusedBorderBottom: @dateRangePickerInputFocusedBorderBottomWidth solid @primaryColor !important;
 @dateRangePickerInputFocusedMarginBottom: -(@1px);
@@ -98,8 +102,8 @@
 /* Valid */
 @validBorderColor: @green;
 
-@validIconHeight: 1em;
-@validIconPositionTop: @11px;
+@validIconOpacity: 1;
+@validIconPadding: @8px 0;
 @validIconZIndex: 1;
 
 /*-------------------
