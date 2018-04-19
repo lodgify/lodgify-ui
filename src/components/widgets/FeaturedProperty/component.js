@@ -35,7 +35,7 @@ export const Component = ({
           disabled
           maxRating={5}
           rating={Math.round(ratingNumber)}
-          size="mini"
+          size="tiny"
         />
       </Card.Description>
       <Card.Description>
