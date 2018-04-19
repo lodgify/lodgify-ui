@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Label, Icon } from 'semantic-ui-react';
+import { Label } from 'semantic-ui-react';
 
+import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
 import { Component as IconCard } from './component';
@@ -43,8 +44,7 @@ describe('<IconCard />', () => {
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          color: undefined,
-          inverted: false,
+          isDisabled: false,
           name,
           size: 'big',
         })
