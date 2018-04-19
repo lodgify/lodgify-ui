@@ -25,6 +25,7 @@ describe('<Button />', () => {
       floated: 'left',
       loading: false,
       circular: false,
+      compact: false,
     });
   });
 
