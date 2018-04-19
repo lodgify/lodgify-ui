@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import { Button, Icon } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
+
+import { Icon } from 'elements/Icon';
 
 /**
  * A button indicates a possible user action.
@@ -28,15 +30,10 @@ export const Component = ({
     circular={isRounded}
     size={size}
     className={cx({
-      'has-icon': !!icon,
       'has-shadow': !!hasShadow,
     })}
   >
-    {!!icon && (
-      <span className="icon">
-        <Icon name={icon} />
-      </span>
-    )}
+    {!!icon && <Icon name={icon} />}
     {children}
   </Button>
 );
@@ -44,6 +41,7 @@ export const Component = ({
 Component.displayName = 'Button';
 
 Component.defaultProps = {
+  children: null,
   onClick: Function.prototype,
   isDisabled: false,
   isPositionedRight: false,
@@ -56,8 +54,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The text to display on the button. */
-  children: PropTypes.node.isRequired,
+  /** The content to display in the button. */
+  children: PropTypes.node,
   /** The function to call when the button is clicked.
    *  @param {Object} event
    */
