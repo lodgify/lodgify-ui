@@ -25,6 +25,7 @@ describe('<Button />', () => {
       floated: 'left',
       loading: false,
       circular: false,
+      compact: false,
     });
   });
 
@@ -49,6 +50,15 @@ describe('<Button />', () => {
       const wrapper = getButton({ isSecondary: true });
       expectComponentToHaveProps(wrapper, {
         secondary: true,
+      });
+    });
+  });
+
+  describe('if `props.isCompact` is true', () => {
+    it('should pass the `Button` component `compact={true}`', () => {
+      const wrapper = getButton({ isCompact: true });
+      expectComponentToHaveProps(wrapper, {
+        compact: true,
       });
     });
   });

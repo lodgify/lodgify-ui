@@ -116,7 +116,8 @@ describe('<Reviews />', () => {
           .at(0);
 
         expectComponentToHaveProps(wrapper, {
-          width: 6,
+          mobile: 5,
+          computer: 6,
           textAlign: 'left',
           verticalAlign: 'middle',
           floated: 'left',
@@ -141,7 +142,8 @@ describe('<Reviews />', () => {
           .at(1);
 
         expectComponentToHaveProps(wrapper, {
-          width: 6,
+          mobile: 7,
+          computer: 6,
           verticalAlign: 'middle',
           floated: 'right',
         });
@@ -210,6 +212,7 @@ describe('<Reviews />', () => {
         .at(0);
 
       expectComponentToHaveProps(wrapper, {
+        isCompact: true,
         size: 'medium',
         isPositionedRight: true,
         isRounded: true,

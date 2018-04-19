@@ -142,7 +142,8 @@ describe('<Review />', () => {
     it('should render the right props', () => {
       const wrapper = getFirstGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 6,
+        mobile: 7,
+        computer: 6,
         floated: 'left',
       });
     });
@@ -187,7 +188,8 @@ describe('<Review />', () => {
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 6,
+        mobile: 5,
+        computer: 6,
         floated: 'right',
         textAlign: 'right',
         verticalAlign: 'middle',
