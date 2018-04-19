@@ -21,7 +21,7 @@ export const Component = ({
   icons,
   propertyType,
 }) => (
-  <Grid>
+  <Grid stackable>
     <GridColumn width={7}>
       <Paragraph size="tiny">{propertyType}</Paragraph>
       {getParagraphsFromStrings(descriptionText).map((paragraphText, index) => (
@@ -29,18 +29,7 @@ export const Component = ({
           {paragraphText}
         </Paragraph>
       ))}
-    </GridColumn>
-    <GridColumn verticalAlignContent="middle" width={5}>
-      <Grid areColumnsCentered>
-        {getFirstFourItems(icons).map(({ iconName, label }, index) => (
-          <GridColumn key={getUniqueKey(label, index)} width={5}>
-            <Icon label={label} name={iconName} />
-          </GridColumn>
-        ))}
-      </Grid>
-    </GridColumn>
-    {!!extraDescriptionText && (
-      <GridColumn width={12}>
+      {!!extraDescriptionText && (
         <Modal trigger={<Link>View more</Link>}>
           {getParagraphsFromStrings(descriptionText, extraDescriptionText).map(
             (paragraphText, index) => (
@@ -50,8 +39,18 @@ export const Component = ({
             )
           )}
         </Modal>
-      </GridColumn>
-    )}
+      )}
+    </GridColumn>
+    <GridColumn only="computer" width={1} />
+    <GridColumn verticalAlignContent="middle" width={4}>
+      <Grid>
+        {getFirstFourItems(icons).map(({ iconName, label }, index) => (
+          <GridColumn key={getUniqueKey(label, index)} width={6}>
+            <Icon label={label} name={iconName} />
+          </GridColumn>
+        ))}
+      </Grid>
+    </GridColumn>
   </Grid>
 );
 
