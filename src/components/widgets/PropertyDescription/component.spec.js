@@ -38,6 +38,13 @@ describe('<PropertyDescription />', () => {
   });
 
   describe('the first `Grid` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getPropertyDescription();
+      expectComponentToHaveProps(wrapper, {
+        stackable: true,
+      });
+    });
+
     it('should render the right children', () => {
       const wrapper = getPropertyDescription();
       expectComponentToHaveChildren(
