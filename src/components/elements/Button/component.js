@@ -65,6 +65,8 @@ Component.propTypes = {
    *  @param {Object} event
    */
   onClick: PropTypes.func,
+  /** Has the button got reduced padding. */
+  isCompact: PropTypes.bool,
   /** Is the button disabled. */
   isDisabled: PropTypes.bool,
   /** Is the button in loading state. */
@@ -76,8 +78,6 @@ Component.propTypes = {
   /** Is the button secondary. */
   isSecondary: PropTypes.bool,
   /** Has the button shadow. */
-  isCompact: PropTypes.bool,
-  /** Has the button got reduced padding. */
   hasShadow: PropTypes.bool,
   /** An icon to display in the button */
   icon: PropTypes.string,
