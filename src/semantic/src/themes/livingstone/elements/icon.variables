@@ -24,9 +24,16 @@
 ---------------*/
 
 /* Icon Variables */
+// default icon size in px / default font size in px = icon size in ems
+@iconSize: 1.71428571em;
+@width: @iconSize;
+@height: @iconSize;
 
 /* Variations */
+@circularPadding: 0.2em 0;
+
 @iconLabelMarginLeft: @5px;
 @iconLabelMargin: 0 0 0 @iconLabelMarginLeft;
+@iconLabelLineHeight: 1.8em;
 
 @disabledIconLabelDecoration: line-through;

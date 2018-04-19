@@ -20,14 +20,32 @@
 
 /* Icon Variables */
 
+i.icon {
+  height: @height;
+  width: auto;
+
+  font-family: inherit;
+  vertical-align: top;
+
+  svg {
+    height: @height;
+    width: @width;
+  }
+
 /* Variations */
 
-i.icon + p {
-  display: inline;
-  margin: @iconLabelMargin;
-}
+  p {
+    color: inherit;
+    display: inline-block;
+    line-height: @iconLabelLineHeight;
+    margin: @iconLabelMargin;
+    vertical-align: top;
+  }
 
-i.icon.inverted + p {
-  color: @lightGrey;
-  text-decoration: @disabledIconLabelDecoration;
+  &.inverted.grey {
+    p {
+      text-decoration: @disabledIconLabelDecoration;
+    }
+  }
+
 }
