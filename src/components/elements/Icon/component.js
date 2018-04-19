@@ -1,40 +1,96 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon } from 'semantic-ui-react';
+import getClassNames from 'classnames';
 
 import { Paragraph } from 'typography/Paragraph';
+
+import { getPath } from './utils/getPath';
 
 /**
  * An icon is a glyph used to represent something else.
  * @return {Object}
  */
-export const Component = ({ isDisabled, label, name }) => (
-  <span>
-    <Icon
-      color={isDisabled ? 'grey' : undefined}
-      inverted={isDisabled}
-      name={name}
-      size="large"
-    />
-    {label && <Paragraph>{label}</Paragraph>}
-  </span>
+export const Component = ({
+  color,
+  isCircular,
+  isColorInverted,
+  isDisabled,
+  label,
+  name,
+  path,
+  size,
+  ...otherProps
+}) => (
+  <i
+    className={getClassNames('icon', color, size, {
+      circular: isCircular,
+      'inverted grey': isDisabled,
+      inverted: isColorInverted,
+    })}
+    // Passing through props is required for
+    // compatibility with dynamic components e.g. `ToolTip`
+    {...otherProps}
+  >
+    <svg viewBox="0 0 24 24">
+      <path d={getPath(name, path)} fill="currentColor" />
+    </svg>
+    {!!label && <Paragraph>{label}</Paragraph>}
+  </i>
 );
 
 Component.displayName = 'Icon';
 
 Component.defaultProps = {
+  color: null,
+  isCircular: false,
+  isColorInverted: false,
   isDisabled: false,
   label: null,
+  name: null,
+  path: null,
+  size: null,
 };
 
 Component.propTypes = {
+  /** The color of the icon. */
+  color: PropTypes.oneOf([
+    'red',
+    'orange',
+    'yellow',
+    'olive',
+    'green',
+    'teal',
+    'blue',
+    'violet',
+    'purple',
+    'pink',
+    'brown',
+    'grey',
+    'black',
+  ]),
+  /** Is the icon formatted to appear circular  */
+  isCircular: PropTypes.bool,
+  /** Is the color of the icon inverted for contrast */
+  isColorInverted: PropTypes.bool,
   /** Is the icon disabled. */
   isDisabled: PropTypes.bool,
   /** A visible label to display with the icon. */
   label: PropTypes.string,
+  /** The name of the icon to display. Takes priority over `props.path`. */
+  name: PropTypes.oneOf(['question mark']),
   /**
-   * The name of the icon to display.
-   * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/icon)
+   * A string containing a series of path descriptions. Should fit a 24x24 viewBox.
+   * [See MDN for documentation.](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d)
    */
-  name: PropTypes.string.isRequired,
+  path: PropTypes.string,
+  /** The size of the icon. */
+  size: PropTypes.oneOf([
+    'mini',
+    'tiny',
+    'small',
+    'large',
+    'big',
+    'huge',
+    'massive',
+  ]),
 };

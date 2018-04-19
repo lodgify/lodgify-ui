@@ -1,9 +1,11 @@
 import React from 'react';
-import { Flag, Icon } from 'semantic-ui-react';
+import { Flag } from 'semantic-ui-react';
 
-const countryCode = 'ES';
+import { Icon } from 'elements/Icon';
 
 import { getIconOrFlag } from './getIconOrFlag';
+
+const countryCode = 'ES';
 
 describe('getIconOrFlag', () => {
   describe('if argument `country` is undefined', () => {

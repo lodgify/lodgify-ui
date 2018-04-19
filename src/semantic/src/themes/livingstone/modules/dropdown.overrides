@@ -15,14 +15,10 @@
   .menu {
 
 /* Icon */
-    .dropdown.icon:before {
-      content: '\f0d7';
-    }
 
 /* Current Text */
 
 /* Menu */
-
 
 /* Text */
 
@@ -111,6 +107,19 @@
     .menu {
       margin-top: @menuMarginTop;
     }
+
+    // Partial reimplementation of styles for
+    // .ui.selection.dropdown > .dropdown.icon
+    // in `semantic/src/definitions/modules/dropdown.less`
+    > i.icon {
+      position: absolute;
+      right: @selectionHorizontalPadding;
+      z-index: @selectionIconZIndex;
+      margin: @selectionIconMargin;
+      padding: @selectionIconPadding;
+      opacity: @selectionIconOpacity;
+      transition: @selectionIconTransition;
+    }
   }
 
 /* <select> */
@@ -168,7 +177,7 @@
       top: @dropdownWithImagesCaretPaddingTop;
     }
 
-    .ui.selection.dropdown > .dropdown.icon {
+    .ui.selection.dropdown > i.icon {
       padding-top: @dropdownWithImagesCaretPaddingTop;
     }
   }
@@ -262,16 +271,21 @@
 /* Floating */
 
 /* Pointing */
-.ui.pointing.dropdown .menu {
-  min-width: @pointingMenuMinWidth;
-
-  .item {
-    text-align: @pointingDropdownTextAlign;
+.ui.pointing.dropdown {
+  i.icon {
+    margin: @dropdownIconMargin;
   }
 
-  a.item .text {
-    color: @textColor;
+  .menu {
+    min-width: @pointingMenuMinWidth;
+
+    .item {
+      text-align: @pointingDropdownTextAlign;
+    }
+
+    a.item .text {
+      color: @textColor;
+    }
   }
 }
-
 /* Pointing Upward */

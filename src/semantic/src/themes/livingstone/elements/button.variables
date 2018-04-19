@@ -27,7 +27,10 @@
 
 
 /* Icon */
+@iconOpacity: 1;
+
 @iconMargin: 0 @iconDistance 0 -(@iconDistance);
+@iconSvgMargin: -(@iconDistance) 0 -(@iconDistance) 0;
 
 /* Loader */
 
@@ -132,8 +135,3 @@
 
 /* Has Shadow */
 @hasShadowBoxShadow: 0 2px 7px 0 @boxShadowColor;
-
-/* Has Icon */
-// Forces inline-block elements inside the button itself
-@hasIconDisplay: inline-block;
-@hasIconHeight: auto;

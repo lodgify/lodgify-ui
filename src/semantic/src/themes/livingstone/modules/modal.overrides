@@ -9,6 +9,18 @@
 }
 
 /* Close Icon */
+.ui.modal > i.icon {
+  cursor: pointer;
+  position: absolute;
+  top: @closeTop;
+  right: @closeRight;
+  z-index: 1;
+
+  color: @closeColor;
+
+  margin: 0;
+  padding: @closePadding;
+}
 
 /* Header */
 

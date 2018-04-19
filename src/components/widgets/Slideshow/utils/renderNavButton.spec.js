@@ -28,9 +28,21 @@ describe('renderNavButton', () => {
           primary: true,
           circular: true,
           disabled: disabled,
-          icon: 'chevron left',
           onClick: onClick,
           content: null,
+        })
+      );
+    });
+
+    it('should have the right children', () => {
+      const children = getButton().props.children;
+      const actualName = children.type.displayName;
+      const actualProps = children.props;
+      expect(actualName).toBe('Icon');
+      expect(actualProps).toEqual(
+        expect.objectContaining({
+          isColorInverted: true,
+          name: 'chevron left',
         })
       );
     });

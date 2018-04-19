@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Icon, Button as SemanticButton } from 'semantic-ui-react';
+import { Button as SemanticButton } from 'semantic-ui-react';
 
 import {
   expectComponentToBe,
@@ -8,6 +8,7 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
 } from 'lib/expect-helpers';
+import { Icon } from 'elements/Icon';
 
 import { Component as Button } from './component';
 
@@ -81,23 +82,9 @@ describe('<Button />', () => {
   describe('if `props.icon` is informed', () => {
     const getButtonWithIcon = () => getButton({ icon: 'world' });
 
-    it('should render a <span>', () => {
+    it('should render an <Icon />', () => {
       const wrapper = getButtonWithIcon();
-      expectComponentToHaveChildren(wrapper, 'span', 'Press me');
-    });
-
-    it('should have the `has-icon` className', () => {
-      const wrapper = getButtonWithIcon();
-      expectComponentToHaveProps(wrapper, {
-        className: 'has-icon',
-      });
-    });
-
-    describe('the <span>', () => {
-      it('should render an <Icon />', () => {
-        const wrapper = getButtonWithIcon().children('span');
-        expectComponentToHaveChildren(wrapper, Icon);
-      });
+      expectComponentToHaveChildren(wrapper, Icon, 'Press me');
     });
 
     describe('the <Icon>', () => {

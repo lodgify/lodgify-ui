@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Segment, Icon, Rating } from 'semantic-ui-react';
+import { Segment, Rating } from 'semantic-ui-react';
 
+import { Icon } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
 
 import { Component as PropertySummary } from './component';
@@ -112,7 +113,7 @@ describe('<PropertySummary />', () => {
       expect(actual).toEqual(expect.arrayContaining([props.locationName]));
     });
 
-    it('should render a single Semantic UI `Icon` component', () => {
+    it('should render a single Lodgify UI `Icon` component', () => {
       const wrapper = getSecondSegment();
       const actual = wrapper.find(Icon);
       expect(actual).toHaveLength(1);
@@ -131,6 +132,7 @@ describe('<PropertySummary />', () => {
         expect.objectContaining({
           color: 'yellow',
           name: 'map pin',
+          size: 'small',
         })
       );
     });
@@ -164,7 +166,7 @@ describe('<PropertySummary />', () => {
           disabled: true,
           maxRating: 5,
           rating: Math.round(props.ratingNumber),
-          size: 'mini',
+          size: 'tiny',
         })
       );
     });

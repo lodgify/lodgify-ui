@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Button, Label } from 'semantic-ui-react';
 
+import { nextItem, pageItem, prevItem } from './navigationMarkup';
 import { Component as Pagination } from './component';
 
 describe('<Pagination />', () => {
@@ -20,14 +20,10 @@ describe('<Pagination />', () => {
         defaultActivePage: 1,
         firstItem: null,
         lastItem: null,
-        nextItem: (
-          <Button primary circular icon="chevron right" content={null} />
-        ),
+        nextItem: nextItem,
         onPageChange: expect.any(Function),
-        pageItem: <Label empty circular size="tiny" content={null} />,
-        prevItem: (
-          <Button primary circular icon="chevron left" content={null} />
-        ),
+        pageItem: pageItem,
+        prevItem: prevItem,
         secondary: true,
         totalPages: 5,
       })
