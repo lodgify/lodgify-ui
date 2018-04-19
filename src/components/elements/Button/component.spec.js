@@ -53,6 +53,15 @@ describe('<Button />', () => {
     });
   });
 
+  describe('if `props.isCompact` is true', () => {
+    it('should pass the `Button` component `compact={true}`', () => {
+      const wrapper = getButton({ isCompact: true });
+      expectComponentToHaveProps(wrapper, {
+        compact: true,
+      });
+    });
+  });
+
   describe('if `props.size` is informed', () => {
     it('should pass the `Button` component `size={size}`', () => {
       const wrapper = getButton({ size: 'massive' });
