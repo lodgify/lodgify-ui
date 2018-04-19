@@ -21,7 +21,7 @@ export const Component = ({
   icons,
   propertyType,
 }) => (
-  <Grid stackable columns={2}>
+  <Grid stackable>
     <GridColumn width={7}>
       <Paragraph size="tiny">{propertyType}</Paragraph>
       {getParagraphsFromStrings(descriptionText).map((paragraphText, index) => (
