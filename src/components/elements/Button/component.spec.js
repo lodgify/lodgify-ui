@@ -3,8 +3,10 @@ import { shallow } from 'enzyme';
 import { Icon, Button as SemanticButton } from 'semantic-ui-react';
 
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
+  expectComponentToHaveDisplayName,
 } from 'lib/expect-helpers';
 
 import { Component as Button } from './component';
@@ -14,8 +16,7 @@ const getButton = props => shallow(<Button {...props}>Press me</Button>);
 describe('<Button />', () => {
   it('should render a single Semantic UI `Button` component', () => {
     const wrapper = getButton();
-    const actual = wrapper.is(SemanticButton);
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, SemanticButton);
   });
 
   it('should pass the `Button` component the right props', () => {
@@ -119,7 +120,6 @@ describe('<Button />', () => {
   });
 
   it('should have displayName `Button`', () => {
-    const actual = Button.displayName;
-    expect(actual).toBe('Button');
+    expectComponentToHaveDisplayName(Button, 'Button');
   });
 });
