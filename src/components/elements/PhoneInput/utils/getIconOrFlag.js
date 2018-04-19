@@ -1,6 +1,8 @@
 import React from 'react';
 import { lowerCase } from 'lodash';
-import { Flag, Icon } from 'semantic-ui-react';
+import { Flag } from 'semantic-ui-react';
+
+import { Icon } from 'elements/Icon';
 
 import { VALID_FLAG_NAMES } from './validFlagNames';
 
