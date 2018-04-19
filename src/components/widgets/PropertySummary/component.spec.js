@@ -112,7 +112,7 @@ describe('<PropertySummary />', () => {
       expect(actual).toEqual(expect.arrayContaining([props.locationName]));
     });
 
-    it('should render a single Semantic UI `Icon` component', () => {
+    it('should render a single Lodgify UI `Icon` component', () => {
       const wrapper = getSecondSegment();
       const actual = wrapper.find(Icon);
       expect(actual).toHaveLength(1);

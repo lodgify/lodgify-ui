@@ -28,7 +28,7 @@ describe('<Tooltip />', () => {
     );
   });
 
-  it('should pass the `Popup` component a Semantic UI `Icon` as `props.trigger`', () => {
+  it('should pass the `Popup` component a Lodgify UI `Icon` as `props.trigger`', () => {
     const tooltip = shallow(<Tooltip content={content} />);
     const triggerProp = tooltip.find('Popup').prop('trigger');
     const actual = shallow(triggerProp).instance();

@@ -11,13 +11,13 @@ const name = 'steam';
 const getIcon = props => shallow(<Icon name={name} {...props} />);
 
 describe('<Icon />', () => {
-  it('should render a single Semantic UI `Icon` component', () => {
+  it('should render a single Lodgify UI `Icon` component', () => {
     const wrapper = getIcon();
     const actual = wrapper.find(SemanticIcon);
     expect(actual).toHaveLength(1);
   });
 
-  describe('the Semantic UI `Icon` component', () => {
+  describe('the Lodgify UI `Icon` component', () => {
     it('should get the right props', () => {
       const wrapper = getIcon().find(SemanticIcon);
       const actual = wrapper.props();
