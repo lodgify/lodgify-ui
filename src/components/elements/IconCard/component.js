@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Label, Icon } from 'semantic-ui-react';
+import { Label } from 'semantic-ui-react';
 import cx from 'classnames';
 
+import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
 /**
@@ -17,12 +18,7 @@ export const Component = ({
   name,
 }) => (
   <Label basic={!isFilled} className={cx({ 'left aligned': isLeftAligned })}>
-    <Icon
-      color={isDisabled ? 'grey' : undefined}
-      inverted={isDisabled}
-      name={name}
-      size="big"
-    />
+    <Icon isDisabled={isDisabled} name={name} size="big" />
     {label && <Paragraph>{label}</Paragraph>}
   </Label>
 );
