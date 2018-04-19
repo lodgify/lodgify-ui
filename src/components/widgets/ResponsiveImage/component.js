@@ -34,7 +34,7 @@ export const Component = ({
       onLoad={onLoad}
       fluid={isFluid}
     >
-      {!imageUrl ? <Label content={IMAGE_NOT_FOUND} icon="warning" /> : null}
+      {!imageUrl ? <Label content={IMAGE_NOT_FOUND} /> : null}
     </Image>
     {label ? <Paragraph>{label}</Paragraph> : null}
   </picture>
