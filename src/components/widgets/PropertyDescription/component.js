@@ -30,18 +30,15 @@ export const Component = ({
         </Paragraph>
       ))}
       {!!extraDescriptionText && (
-        <GridColumn width={12}>
-          <Modal trigger={<Link>View more</Link>}>
-            {getParagraphsFromStrings(
-              descriptionText,
-              extraDescriptionText
-            ).map((paragraphText, index) => (
+        <Modal trigger={<Link>View more</Link>}>
+          {getParagraphsFromStrings(descriptionText, extraDescriptionText).map(
+            (paragraphText, index) => (
               <Paragraph key={getUniqueKey(paragraphText, index)}>
                 {paragraphText}
               </Paragraph>
-            ))}
-          </Modal>
-        </GridColumn>
+            )
+          )}
+        </Modal>
       )}
     </GridColumn>
     <GridColumn only="computer" width={1} />
