@@ -2,8 +2,30 @@
              Icon
 *******************************/
 
-/* Variations */
+/*--------------
+   Font Files
+---------------*/
 
+@src: false;
+@fallbackSRC: false;
+
+/*--------------
+ Optional Files
+---------------*/
+
+/* Outline Icons */
+@importOutlineIcons: false;
+
+/* Brand Icons */
+@importBrandIcons: false;
+
+/*--------------
+   Definition
+---------------*/
+
+/* Icon Variables */
+
+/* Variations */
 @iconLabelMarginLeft: @5px;
 @iconLabelMargin: 0 0 0 @iconLabelMarginLeft;
 
