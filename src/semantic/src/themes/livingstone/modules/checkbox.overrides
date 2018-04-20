@@ -4,55 +4,64 @@
 
 .ui.checkbox {
 
-/* Label */
+  /* Label */
   input:checked,
   &.radio input:checked {
+
     & ~ label {
       font-weight: bold;
     }
   }
-/* Checkbox */
 
-/* Checkmark */
+  /* Checkbox */
+
+  /* Checkmark */
   &:not(.radio):not(.toggle) {
+
     input:checked,
     input:checked:focus {
+
       & ~ label:after {
         content: '\2713';
       }
     }
   }
-/* Label */
 
-/*-------------------
+  /* Label */
+
+  /*-------------------
         States
 --------------------*/
 
-/* Hover */
+  /* Hover */
 
-/* Pressed */
+  /* Pressed */
 
-/* Focus */
+  /* Focus */
 
-/* Active */
+  /* Active */
 
-/* Active Focus */
+  /* Active Focus */
 
-/* Indeterminate */
+  /* Indeterminate */
 
-/* Disabled */
+  /* Disabled */
   &.disabled {
+
     input,
     input:focus {
-       & ~ label:after {
-         color: @disabledCheckboxLabelTextColor;
-       }
+
+      & ~ label:after {
+        color: @disabledCheckboxLabelTextColor;
+      }
     }
 
     &,
     &.radio {
+
       input,
       input:focus {
+
         & ~ label:before {
           background-color: @disabledBackgroundColor;
           border-color: @disabledCheckboxBorderColor;
@@ -61,8 +70,10 @@
     }
 
     &.radio {
+
       input,
       input:focus {
+
         & ~ label:after {
           background-color: @disabledCheckboxLabelBackgroundColor;
         }
@@ -70,9 +81,12 @@
     }
 
     &.toggle {
+
       input,
       input:focus {
+
         & ~ label:before {
+
           /* "important" marker required to overwrite the one declared in checkbox.less */
           background-color: @disabledBackgroundColor !important;
           border-width: @disabledToggleBorderWidth;
@@ -81,23 +95,23 @@
     }
   }
 
-/*-------------------
+  /*-------------------
         Types
 --------------------*/
 
-/* Radio */
-/* Uses px to avoid rounding issues with circles */
+  /* Radio */
 
-/* Slider & Toggle Handle */
+  /* Uses px to avoid rounding issues with circles */
 
-/* Slider */
+  /* Slider & Toggle Handle */
 
-/* Slider States */
+  /* Slider */
 
-/* Toggle */
+  /* Slider States */
 
-/*-------------------
+  /* Toggle */
+
+  /*-------------------
       Variations
 --------------------*/
-
 }

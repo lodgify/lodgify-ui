@@ -4,7 +4,7 @@
 
 .ui.rating {
   margin-left: @marginLeft;
-  
+
   + span {
     margin-right: @siblingSpanMarginRight;
     float: @siblingSpanFloat;
@@ -12,25 +12,24 @@
     font-weight: @siblingSpanFontWeight;
   }
 
-/*-------------------
-        Types
---------------------*/
+  /*-------------------
+          Types
+  --------------------*/
 
-/* Standard */
+  /* Standard */
   .icon:before {
     content: '\2605';
   }
 
-/* Star */
+  /* Star */
 
-/* Heart */
+  /* Heart */
 
-/*-------------------
-        States
---------------------*/
+  /*-------------------
+          States
+  --------------------*/
 
-/*-------------------
-      Variations
---------------------*/
-
+  /*-------------------
+        Variations
+  --------------------*/
 }
