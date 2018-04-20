@@ -7,6 +7,9 @@
 --------------------*/
 
 /* Sub Heading */
+.ui.sub.header {
+  line-height: @subHeadingLineHeight;
+}
 
 /* Sub Header */
 

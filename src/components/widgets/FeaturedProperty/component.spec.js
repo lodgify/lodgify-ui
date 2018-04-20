@@ -2,6 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Card, Image, Rating } from 'semantic-ui-react';
 
+import { expectComponentToHaveChildren } from 'lib/expect-helpers';
+import { Subheading } from 'typography/Subheading';
 import { Heading } from 'typography/Heading';
 
 import { Component as FeaturedProperty } from './component';
@@ -89,10 +91,16 @@ describe('<FeaturedProperty />', () => {
   });
 
   describe('the `Card.Meta` component', () => {
-    it('should have the right `children` prop', () => {
+    it('should have the right children', () => {
       const wrapper = getFeaturedProperty().find(Card.Meta);
-      const actual = wrapper.prop('children');
-      expect(actual).toBe(props.propertyType);
+      expectComponentToHaveChildren(wrapper, Subheading);
+    });
+  });
+
+  describe('the `Subheading` component', () => {
+    it('should have the right children', () => {
+      const wrapper = getFeaturedProperty().find(Subheading);
+      expectComponentToHaveChildren(wrapper, props.propertyType);
     });
   });
 

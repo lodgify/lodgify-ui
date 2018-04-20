@@ -7,6 +7,7 @@ import { getFirstFourItems } from 'lib/get-first-four-items';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
+import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
 import { IconCard } from 'elements/IconCard';
 import { GoogleMap } from 'elements/GoogleMap';
@@ -29,7 +30,7 @@ export const Component = ({
   <Grid>
     <GridColumn width={12}>
       <Heading>Location</Heading>
-      <Paragraph size="tiny">{locationSummary}</Paragraph>
+      <Subheading>{locationSummary}</Subheading>
     </GridColumn>
     <GridColumn width={6}>
       {getParagraphsFromStrings(locationDescription).map(

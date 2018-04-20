@@ -9,6 +9,7 @@ import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
 import { Link } from 'elements/Link';
 import { Icon } from 'elements/Icon';
@@ -71,37 +72,26 @@ describe('<PropertyDescription />', () => {
       const wrapper = getFirstGridColumn();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(3, Paragraph)
+        Subheading,
+        ...getArrayOfLengthOfItem(2, Paragraph)
       );
     });
   });
 
-  describe('the first `Paragraph` component', () => {
-    const getFirstParagraph = () =>
-      getPropertyDescription()
-        .find(Paragraph)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getFirstParagraph();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
+  describe('the `Subheading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getFirstParagraph();
+      const wrapper = getPropertyDescription().find(Subheading);
       expectComponentToHaveChildren(wrapper, props.propertyType);
     });
   });
 
-  describe('the other `Paragraph` components', () => {
+  describe('the `Paragraph` components', () => {
     it('should render the right children', () => {
       getParagraphsFromStrings(descriptionText).forEach(
         (paragraphText, index) => {
           const wrapper = getPropertyDescription()
             .find(Paragraph)
-            .at(index + 1);
+            .at(index);
           expectComponentToHaveChildren(wrapper, paragraphText);
         }
       );
@@ -193,7 +183,8 @@ describe('<PropertyDescription />', () => {
           .first();
         expectComponentToHaveChildren(
           wrapper,
-          ...getArrayOfLengthOfItem(3, Paragraph),
+          Subheading,
+          ...getArrayOfLengthOfItem(2, Paragraph),
           ...getArrayOfLengthOfItem(1, Modal)
         );
       });

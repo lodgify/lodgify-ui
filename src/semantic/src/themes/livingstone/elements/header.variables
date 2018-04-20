@@ -9,6 +9,11 @@
 @firstMargin: 0;
 
 /* Sub Heading */
+@subHeadingDistance: 0;
+@subHeadingFontSize: 14px;
+@subHeadingColor: @greySix;
+
+@subHeadingLineHeight: 1.5em;
 
 /* Sub Header */
 

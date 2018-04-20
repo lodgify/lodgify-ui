@@ -6,7 +6,7 @@ import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
-import { Paragraph } from 'typography/Paragraph';
+import { Subheading } from 'typography/Subheading';
 import { Quote } from 'elements/Quote';
 
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
@@ -32,12 +32,12 @@ export const Component = ({
         <Grid>
           <GridRow verticalAlign="middle">
             <GridColumn mobile={7} computer={6} floated="left">
-              <Paragraph size="tiny">
+              <Subheading>
                 {getReviewerNameAndLocationString(
                   reviewerName,
                   reviewerLocation
                 )}
-              </Paragraph>
+              </Subheading>
             </GridColumn>
             <GridColumn
               mobile={5}
