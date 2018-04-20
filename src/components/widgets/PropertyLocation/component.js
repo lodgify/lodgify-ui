@@ -1,15 +1,21 @@
+import { MOBILE_BREAKPOINT } from 'constants';
+
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Responsive } from 'semantic-ui-react';
 
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { getUniqueKey } from 'lib/get-unique-key';
 import { getFirstFourItems } from 'lib/get-first-four-items';
+import { Divider } from 'elements/Divider';
+import { GoogleMap } from 'elements/GoogleMap';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
-import { Paragraph } from 'typography/Paragraph';
 import { IconCard } from 'elements/IconCard';
-import { GoogleMap } from 'elements/GoogleMap';
+import { Paragraph } from 'typography/Paragraph';
 
 import { getTransportOptionLabel } from './utils/getTransportOptionLabel';
 
@@ -26,7 +32,7 @@ export const Component = ({
   longitude,
   transportOptions,
 }) => (
-  <Grid>
+  <Grid stackable>
     <GridColumn width={12}>
       <Heading size="tiny">Location</Heading>
       <Paragraph size="tiny">{locationSummary}</Paragraph>
@@ -40,7 +46,8 @@ export const Component = ({
         )
       )}
     </GridColumn>
-    <GridColumn width={6}>
+    <ShowOnDesktop as={GridColumn} width={6}>
+      {/* <GridColumn width={6}> */}
       <Grid>
         {getFirstFourItems(transportOptions).map(
           ({ distance, iconName, label }, index) => (
@@ -54,15 +61,39 @@ export const Component = ({
           )
         )}
       </Grid>
-    </GridColumn>
-    <GridColumn width={12}>
+      {/* </GridColumn> */}
+    </ShowOnDesktop>
+    <Responsive as={GridColumn} width={12} minWidth={599}>
       <GoogleMap
         isShowingExactLocation={isShowingExactLocation}
         isShowingApproximateLocation={isShowingApproximateLocation}
         latitude={latitude}
         longitude={longitude}
       />
-    </GridColumn>
+    </Responsive>
+    <Responsive as={GridColumn} width={12} maxWidth={599}>
+      <GoogleMap
+        height="200px"
+        isShowingExactLocation={isShowingExactLocation}
+        isShowingApproximateLocation={isShowingApproximateLocation}
+        latitude={latitude}
+        longitude={longitude}
+      />
+      <Divider />
+      <Grid>
+        {getFirstFourItems(transportOptions).map(
+          ({ distance, iconName, label }, index) => (
+            <GridColumn key={getUniqueKey(label, index)} width={3}>
+              <IconCard
+                isFilled
+                label={getTransportOptionLabel(distance, label)}
+                name={iconName}
+              />
+            </GridColumn>
+          )
+        )}
+      </Grid>
+    </Responsive>
   </Grid>
 );
 
