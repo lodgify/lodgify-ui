@@ -5,14 +5,15 @@ import { Responsive } from 'semantic-ui-react';
 import {
   expectComponentToHaveProps,
   expectComponentToBe,
+  expectComponentToHaveDisplayName,
 } from 'lib/expect-helpers';
 
 import { Component as ShowOnMobile } from './component';
 
 const props = {
-  parent: '<section />',
+  parent: 'section',
   parentProps: { width: '🚸' },
-  children: '<div />',
+  children: 'div',
 };
 
 const getShowOnMobile = () => shallow(<ShowOnMobile {...props} />);
@@ -26,7 +27,6 @@ describe('<ShowOnMobile />', () => {
   describe('the `Responsive` component', () => {
     it('it should get the right props', () => {
       const wrapper = getShowOnMobile();
-
       expectComponentToHaveProps(wrapper, {
         as: props.parent,
         children: props.children,
@@ -35,7 +35,6 @@ describe('<ShowOnMobile />', () => {
   });
 
   it('should have `displayName` `ShowOnMobile`', () => {
-    const actual = ShowOnMobile.displayName;
-    expect(actual).toBe('ShowOnMobile');
+    expectComponentToHaveDisplayName(ShowOnMobile, 'ShowOnMobile');
   });
 });

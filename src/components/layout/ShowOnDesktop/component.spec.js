@@ -5,14 +5,15 @@ import { Responsive } from 'semantic-ui-react';
 import {
   expectComponentToHaveProps,
   expectComponentToBe,
+  expectComponentToHaveDisplayName,
 } from 'lib/expect-helpers';
 
 import { Component as ShowOnDesktop } from './component';
 
 const props = {
-  parent: '<section />',
+  parent: 'section',
   parentProps: { width: '🚸' },
-  children: '<div />',
+  children: 'div',
 };
 
 const getShowOnDesktop = () => shallow(<ShowOnDesktop {...props} />);
@@ -26,7 +27,6 @@ describe('<ShowOnDesktop />', () => {
   describe('the `Responsive` component', () => {
     it('it should get the right props', () => {
       const wrapper = getShowOnDesktop();
-
       expectComponentToHaveProps(wrapper, {
         as: props.parent,
         children: props.children,
@@ -35,7 +35,6 @@ describe('<ShowOnDesktop />', () => {
   });
 
   it('should have `displayName` `ShowOnDesktop`', () => {
-    const actual = ShowOnDesktop.displayName;
-    expect(actual).toBe('ShowOnDesktop');
+    expectComponentToHaveDisplayName(ShowOnDesktop, 'ShowOnDesktop');
   });
 });
