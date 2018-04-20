@@ -2,12 +2,17 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Responsive } from 'semantic-ui-react';
 
-import { expectComponentToHaveProps } from 'lib/expect-helpers';
+import {
+  expectComponentToHaveProps,
+  expectComponentToBe,
+} from 'lib/expect-helpers';
 
 import { Component as ShowOnMobile } from './component';
 
 const props = {
-  parent: '🚸',
+  parent: '<section />',
+  parentProps: { width: '🚸' },
+  children: '<div />',
 };
 
 const getShowOnMobile = () => shallow(<ShowOnMobile {...props} />);
@@ -15,19 +20,16 @@ const getShowOnMobile = () => shallow(<ShowOnMobile {...props} />);
 describe('<ShowOnMobile />', () => {
   it('should render a single Semantic UI `Responsive` component', () => {
     const wrapper = getShowOnMobile();
-    const actual = wrapper.is(Responsive);
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, Responsive);
   });
 
   describe('the `Responsive` component', () => {
-    it('it should render the right props', () => {
-      const wrapper = getShowOnMobile()
-        .find(Responsive)
-        .first();
+    it('it should get the right props', () => {
+      const wrapper = getShowOnMobile();
 
       expectComponentToHaveProps(wrapper, {
         as: props.parent,
-        maxWidth: 599,
+        children: props.children,
       });
     });
   });
