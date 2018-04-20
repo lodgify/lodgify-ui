@@ -10,6 +10,7 @@ import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
+import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
 import { IconCard } from 'elements/IconCard';
 import { GoogleMap } from 'elements/GoogleMap';
@@ -63,7 +64,7 @@ describe('<PropertyLocation />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
-      expectComponentToHaveChildren(wrapper, Heading, Paragraph);
+      expectComponentToHaveChildren(wrapper, Heading, Subheading);
     });
   });
 
@@ -83,21 +84,11 @@ describe('<PropertyLocation />', () => {
     });
   });
 
-  describe('the first `Paragraph` component', () => {
-    const getFirstParagraph = () =>
-      getPropertyLocation()
-        .find(Paragraph)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getFirstParagraph();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
+  describe('the `Subheading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getFirstParagraph();
+      const wrapper = getPropertyLocation()
+        .find(Subheading)
+        .at(0);
       expectComponentToHaveChildren(wrapper, locationSummary);
     });
   });

@@ -6,6 +6,7 @@ import { getUniqueKey } from 'lib/get-unique-key';
 import { getFirstFourItems } from 'lib/get-first-four-items';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
 import { Link } from 'elements/Link';
 import { Icon } from 'elements/Icon';
@@ -23,7 +24,7 @@ export const Component = ({
 }) => (
   <Grid stackable>
     <GridColumn width={7}>
-      <Paragraph size="tiny">{propertyType}</Paragraph>
+      <Subheading>{propertyType}</Subheading>
       {getParagraphsFromStrings(descriptionText).map((paragraphText, index) => (
         <Paragraph key={getUniqueKey(paragraphText, index)}>
           {paragraphText}
