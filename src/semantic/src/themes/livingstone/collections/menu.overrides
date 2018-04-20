@@ -10,7 +10,7 @@
 
 .ui.menu {
 
-/* Menu Item */
+  /* Menu Item */
   .item {
     margin: 0 @itemHorizontalMargin;
 
@@ -23,67 +23,69 @@
     }
   }
 
-/* Divider */
+  /* Divider */
 
-/* Sub Menu */
+  /* Sub Menu */
 
-/* Text Item */
+  /* Text Item */
 
-/*--------------
+  /*--------------
     Elements
 ---------------*/
 
-/* Icon */
+  /* Icon */
 
-/* Dropdown Icon */
+  /* Dropdown Icon */
 
-/* Header */
+  /* Header */
   .item h5.ui.header {
     color: @offWhite;
   }
 
-/* Vertical Icon */
+  /* Vertical Icon */
 
-/* Vertical Header */
+  /* Vertical Header */
 
-/* Pointing Arrow */
+  /* Pointing Arrow */
 
-/*--------------
+  /*--------------
     Couplings
 ---------------*/
 
-/* Button */
+  /* Button */
 
-/* Input */
+  /* Input */
 
-/* Image */
+  /* Image */
 
-/* Label */
+  /* Label */
 
-/* Dropdown in Menu */
+  /* Dropdown in Menu */
   .dropdown.item .menu {
     border-radius: @dropdownMenuBorderRadius;
   }
 
   .ui.dropdown .menu {
+
     & > .selected.item:hover,
     & > .active.item:hover {
       background: @dropdownHoveredItemBackground !important;
     }
   }
 
-/* Dropdown Variations */
+  /* Dropdown Variations */
 
-/*--------------
+  /*--------------
      States
 ---------------*/
 
-/* Hovered Item */
+  /* Hovered Item */
 
-/* Pressed Item */
+  /* Pressed Item */
 
-/* Active Item */
+  /* Active Item */
   .right.menu {
+
     & > .item:not(.no-underline):after {
       border-bottom: @activeItemUnderlineBorder;
       bottom: @activeItemUnderlineBottomPosition;
@@ -105,35 +107,35 @@
     }
   }
 
-/* Active Hovered Item */
+  /* Active Hovered Item */
 
-/* Selected Dropdown */
+  /* Selected Dropdown */
 
-/* Active Dropdown */
+  /* Active Dropdown */
 
-/* Active Sub Menu */
+  /* Active Sub Menu */
 
-/*--------------
+  /*--------------
      Types
 ---------------*/
 
-/* Vertical */
+  /* Vertical */
 
-/* Secondary */
+  /* Secondary */
 
-/* Pointing */
+  /* Pointing */
 
-/* Inverted Secondary */
+  /* Inverted Secondary */
 
-/* Inverted Pointing */
+  /* Inverted Pointing */
 
-/* Tiered */
+  /* Tiered */
 
-/* Icon */
+  /* Icon */
 
-/* Tabular */
+  /* Tabular */
 
-/* Pagination */
+  /* Pagination */
   &.pagination {
     min-height: @paginationMenuMinHeight;
 
@@ -210,7 +212,7 @@
       }
     }
 
-    > .image-gallery-bullets  {
+    > .image-gallery-bullets {
       bottom: @slideshowBulletsBottomPosition;
 
       > .image-gallery-bullets-container button.image-gallery-bullet {
@@ -226,7 +228,6 @@
     }
   }
 }
-
 
 /* Labeled Icon */
 

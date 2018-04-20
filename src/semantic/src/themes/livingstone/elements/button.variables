@@ -9,7 +9,6 @@
 /* Button */
 @background: @primaryColor;
 
-
 /* Button defaults to using same height as input globally */
 @verticalPadding: @12px;
 @horizontalPadding: @40px;
@@ -25,7 +24,6 @@
 @boxShadow: none;
 @boxShadowColor: rgba(0, 0, 0, 0.21);
 
-
 /* Icon */
 @iconOpacity: 1;
 
@@ -35,7 +33,7 @@
 /* Loader */
 
 @willChange: transform, color, background;
-@transitionTime: 0.20s;
+@transitionTime: 0.2s;
 @transitionFunction: ease-out;
 
 /*-------------------

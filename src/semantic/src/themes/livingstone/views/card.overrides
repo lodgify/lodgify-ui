@@ -8,36 +8,36 @@
 
 .ui.card {
 
-/* Shadow */
+  /* Shadow */
 
-/* Card */
+  /* Card */
   overflow: hidden;
-  
-/* Card Group */
 
-/* Consecutive Cards */
+  /* Card Group */
 
-/*-------------------
+  /* Consecutive Cards */
+
+  /*-------------------
        Content
 --------------------*/
 
-/* Image */
+  /* Image */
 
-/* Content */
+  /* Content */
 
-/* Header */
+  /* Header */
 
-/* Metadata */
+  /* Metadata */
   .meta {
     font-weight: @metaFontWeight;
     text-transform: @metaTextTransform;
   }
 
-/* Icons */
+  /* Icons */
 
-/* Links */
+  /* Links */
 
-/* Description */
+  /* Description */
   .description {
     margin-top: @descriptionDistance;
 
@@ -47,21 +47,21 @@
     }
   }
 
-/* Content Image */
+  /* Content Image */
 
-/* Avatar Image */
+  /* Avatar Image */
 
-/* Paragraph */
+  /* Paragraph */
 
-/* Dimmer */
+  /* Dimmer */
 
-/* Additional Content */
+  /* Additional Content */
 
-/* Extra Links */
+  /* Extra Links */
 
-/* Buttons */
+  /* Buttons */
 
-/* Form */
+  /* Form */
   &.has-form {
     padding: @hasFormPadding;
 
@@ -74,23 +74,22 @@
     }
   }
 
-/*-------------------
+  /*-------------------
       Variations
 --------------------*/
 
-/* Link */
+  /* Link */
   a& {
     text-decoration-line: none;
   }
 
-/* Raised */
+  /* Raised */
 
-/* Card Count */
+  /* Card Count */
 
-/* Stackable */
+  /* Stackable */
 
-/* Sizes */
+  /* Sizes */
 
-/* Colored */
-
+  /* Colored */
 }
