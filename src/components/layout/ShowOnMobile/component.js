@@ -31,6 +31,6 @@ Component.propTypes = {
   /** The parent component that will be rendered. */
   parent: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   /** The props to be passed to the parent component. */
-  // eslint-disable-next-line
+  // eslint-disable-next-line react/forbid-prop-types
   parentProps: PropTypes.object,
 };
