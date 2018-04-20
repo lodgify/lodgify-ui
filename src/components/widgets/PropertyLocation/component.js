@@ -4,13 +4,16 @@ import PropTypes from 'prop-types';
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { getUniqueKey } from 'lib/get-unique-key';
 import { getFirstFourItems } from 'lib/get-first-four-items';
+import { Divider } from 'elements/Divider';
+import { GoogleMap } from 'elements/GoogleMap';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
-import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
+import { Subheading } from 'typography/Subheading';
 import { IconCard } from 'elements/IconCard';
-import { GoogleMap } from 'elements/GoogleMap';
 
 import { getTransportOptionLabel } from './utils/getTransportOptionLabel';
 
@@ -27,7 +30,7 @@ export const Component = ({
   longitude,
   transportOptions,
 }) => (
-  <Grid>
+  <Grid stackable>
     <GridColumn width={12}>
       <Heading>Location</Heading>
       <Subheading>{locationSummary}</Subheading>
@@ -41,7 +44,7 @@ export const Component = ({
         )
       )}
     </GridColumn>
-    <GridColumn width={6}>
+    <ShowOnDesktop parent={GridColumn} parentProps={{ width: 6 }}>
       <Grid>
         {getFirstFourItems(transportOptions).map(
           ({ distance, iconName, label }, index) => (
@@ -55,15 +58,38 @@ export const Component = ({
           )
         )}
       </Grid>
-    </GridColumn>
-    <GridColumn width={12}>
+    </ShowOnDesktop>
+    <ShowOnDesktop parent={GridColumn} parentProps={{ width: 12 }}>
       <GoogleMap
         isShowingExactLocation={isShowingExactLocation}
         isShowingApproximateLocation={isShowingApproximateLocation}
         latitude={latitude}
         longitude={longitude}
       />
-    </GridColumn>
+    </ShowOnDesktop>
+    <ShowOnMobile parent={GridColumn} parentProps={{ width: 12 }}>
+      <GoogleMap
+        height="200px"
+        isShowingExactLocation={isShowingExactLocation}
+        isShowingApproximateLocation={isShowingApproximateLocation}
+        latitude={latitude}
+        longitude={longitude}
+      />
+      <Divider />
+      <Grid>
+        {getFirstFourItems(transportOptions).map(
+          ({ distance, iconName, label }, index) => (
+            <GridColumn key={getUniqueKey(label, index)} width={3}>
+              <IconCard
+                isFilled
+                label={getTransportOptionLabel(distance, label)}
+                name={iconName}
+              />
+            </GridColumn>
+          )
+        )}
+      </Grid>
+    </ShowOnMobile>
   </Grid>
 );
 
