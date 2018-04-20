@@ -9,8 +9,8 @@
 /* Shadow */
 
 /* Card */
-@borderRadius              : @4px;
-@boxShadow                 : 0 8px 22px 0 rgba(0, 0, 0, 0.07);
+@borderRadius: @4px;
+@boxShadow: 0 8px 22px 0 rgba(0, 0, 0, 0.07);
 
 /* Card Group */
 
@@ -23,28 +23,28 @@
 /* Image */
 
 /* Content */
-@contentDivider            : none;
+@contentDivider: none;
 
 /* Header */
-@headerFontSize            : @h3;
+@headerFontSize: @h3;
 
 /* Metadata */
-@metaColor                 : @greySix;
-@metaFontSize              : @tinyParagraphFontSize;
+@metaColor: @greySix;
+@metaFontSize: @tinyParagraphFontSize;
 
-@metaFontWeight            : bold;
-@metaTextTransform         : uppercase;
+@metaFontWeight: bold;
+@metaTextTransform: uppercase;
 
 /* Icons */
 
 /* Links */
 
 /* Description */
-@descriptionColor          : @greySeven;
+@descriptionColor: @greySeven;
 
-@descriptionDistance       : @4px;
+@descriptionDistance: @4px;
 
-@descriptionBigTextPadding : @5px;
+@descriptionBigTextPadding: @5px;
 
 /* Content Image */
 
@@ -61,11 +61,11 @@
 /* Buttons */
 
 /* Form */
-@hasFormPadding             : @50px 90px;
+@hasFormPadding: @50px 90px;
 
-@hasFormContentPadding      : 0;
+@hasFormContentPadding: 0;
 
-@hasFormHeaderMargin        : 0 0 @45px 0;
+@hasFormHeaderMargin: 0 0 @45px 0;
 
 /*-------------------
       Variations

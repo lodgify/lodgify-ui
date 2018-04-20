@@ -80,7 +80,7 @@ describe('<Button />', () => {
   });
 
   describe('if `props.icon` is informed', () => {
-    const getButtonWithIcon = () => getButton({ icon: 'world' });
+    const getButtonWithIcon = () => getButton({ icon: 'search' });
 
     it('should render an <Icon />', () => {
       const wrapper = getButtonWithIcon();
@@ -91,7 +91,7 @@ describe('<Button />', () => {
       it('should have the right props', () => {
         const wrapper = getButtonWithIcon().find(Icon);
         expectComponentToHaveProps(wrapper, {
-          name: 'world',
+          name: 'search',
         });
       });
     });

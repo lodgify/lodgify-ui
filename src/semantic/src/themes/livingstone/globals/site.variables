@@ -6,7 +6,7 @@
        Fonts
 --------------------*/
 
-@fontName         : 'Roboto';
+@fontName: 'Roboto';
 
 /*-------------------
       Base Sizes
@@ -23,23 +23,23 @@
 /* See Power-user section below
    for explanation of @px variables
 */
-@absoluteBorderRadius  : 0;
+@absoluteBorderRadius: 0;
 
 /*-------------------
     Brand Colors
 --------------------*/
 
-@primaryColor      : @yellow;
-@darkPrimaryColor  : @darkYellow;
-@lightPrimaryColor : @lightYellow;
+@primaryColor: @yellow;
+@darkPrimaryColor: @darkYellow;
+@lightPrimaryColor: @lightYellow;
 
-@secondaryColor    : @white;
+@secondaryColor: @white;
 
 /*--------------
   Page Heading
 ---------------*/
 
-@headerLineHeight  : 36px;
+@headerLineHeight: 36px;
 
 @h1                : 48px;
 @h2                : 40px;
@@ -52,14 +52,14 @@
 ---------------*/
 
 /* This adjusts the default form input across all elements */
-@inputBackground            : @greyOne;
-@inputVerticalPadding       : @12px;
-@inputHorizontalPadding     : @15px;
+@inputBackground: @greyOne;
+@inputVerticalPadding: @12px;
+@inputHorizontalPadding: @15px;
 
-@inputHoverBorderColor      : @greyThree;
+@inputHoverBorderColor: @greyThree;
 
 /* Input Text Color */
-@inputPlaceholderColor      : @greySix;
+@inputPlaceholderColor: @greySix;
 
 /* Line Height Default For Inputs in Browser (Descendors are 17px at 14px base em) */
 
@@ -68,8 +68,8 @@
 --------------------*/
 
 /* Used on inputs, textarea etc */
-@focusedFormBorderColor : @black;
-@focusedInputBackground : @offWhite;
+@focusedFormBorderColor: @black;
+@focusedInputBackground: @offWhite;
 
 /* Used on dropdowns, other larger blocks */
 
@@ -86,25 +86,25 @@
         Page
 --------------------*/
 
-@textColor  : @black;
+@textColor: @black;
 
 /*-------------------
       Paragraph
 --------------------*/
 
-@paragraphColor           : @greySeven;
-@paragraphLineHeight      : 26px;
+@paragraphColor: @greySeven;
+@paragraphLineHeight: 26px;
 
-@tinyParagraphFontSize    : 12px;
-@tinyParagraphFontWeight  : bold;
-@tinyParagraphLineHeight  : 24px;
+@tinyParagraphFontSize: 12px;
+@tinyParagraphFontWeight: bold;
+@tinyParagraphLineHeight: 24px;
 
 /*-------------------
        Links
 --------------------*/
 
-@linkColor      : @primaryColor;
-@linkUnderline  : underline;
+@linkColor: @primaryColor;
+@linkUnderline: underline;
 
 /*-------------------
     Scroll Bars
@@ -139,31 +139,31 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@green            : #3adf35;
-@grey             : #9e9fa0;
-@red              : #d0021b;
-@yellow           : #fac600;
+@green: #3adf35;
+@grey: #9e9fa0;
+@red: #d0021b;
+@yellow: #fac600;
 
 /*---  Dark Colors  ---*/
-@darkYellow       : #e5b505;
+@darkYellow: #e5b505;
 
 /*---  Light Colors  ---*/
-@lightYellow      : #fde37f;
+@lightYellow: #fde37f;
 
 /*---   Neutrals  ---*/
-@black            : #333;
-@greyEight        : #444;
-@greySeven        : #555;
-@greySix          : #aaa;
-@greyFive         : #ccc;
-@greyFour         : #d8d8d8;
-@greyThree        : #e2e2e2;
-@greyTwo          : #f3f3f3;
-@greyOne          : #f7f7f7;
-@offWhite         : #fdfdfd;
-@pureWhite        : #fff;
+@black: #333;
+@greyEight: #444;
+@greySeven: #555;
+@greySix: #aaa;
+@greyFive: #ccc;
+@greyFour: #d8d8d8;
+@greyThree: #e2e2e2;
+@greyTwo: #f3f3f3;
+@greyOne: #f7f7f7;
+@offWhite: #fdfdfd;
+@pureWhite: #fff;
 
-@grayscaleFilter  : opacity(.5) grayscale(100%);
+@grayscaleFilter: opacity(0.5) grayscale(100%);
 
 /*--- Colored Backgrounds ---*/
 
@@ -184,9 +184,9 @@
 /* Differentiating Neutrals */
 
 /* Differentiating Layers */
-@floatingShadow   : 0 2px 7px 0 rgba(0, 0, 0, 0.27);
-@subMenuShadow    : 0 4px 12px 0 rgba(0, 0, 0, 0.12);
-@spreadShadow     : 0 0 35px 0 rgba(0, 0, 0, 0.07);
+@floatingShadow: 0 2px 7px 0 rgba(0, 0, 0, 0.27);
+@subMenuShadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+@spreadShadow: 0 0 35px 0 rgba(0, 0, 0, 0.07);
 
 /*******************************
            Power-User
@@ -199,7 +199,7 @@
 /* Positive */
 
 /* Negative */
-@negativeBorderColor        : @red;
+@negativeBorderColor: @red;
 
 /* Info */
 
@@ -234,7 +234,7 @@
      Neutral Text
 --------------------*/
 
-@hoveredTextColor : @black;
+@hoveredTextColor: @black;
 
 /*-------------------
      Brand Colors
@@ -244,9 +244,9 @@
       Borders
 --------------------*/
 
-@borderColor                : transparent;
+@borderColor: transparent;
 
-@solidInternalBorderColor   : @greyFive;
+@solidInternalBorderColor: @greyFive;
 
 /*-------------------
     Derived Values
@@ -291,7 +291,7 @@
       Disabled
 --------------------*/
 
-@disabledBackgroundColor  : @greyFive;
+@disabledBackgroundColor: @greyFive;
 
 /*-------------------
         Hover
@@ -361,8 +361,8 @@
 --------------------*/
 
 @quoteBorderLeft: solid @8px @greyThree;
-@quoteBoxShadow: @4px @8px @8px 0 rgba(0, 0, 0, .05);
+@quoteBoxShadow: @4px @8px @8px 0 rgba(0, 0, 0, 0.05);
 @quotePadding: 0 @14px;
 @quoteMargin: @14px;
 
-@quoteRowPadding: @6px 0em;
+@quoteRowPadding: @6px 0;

@@ -82,7 +82,7 @@ export class Component extends PureComponent {
           startDateId={uniqueId('start_date_id_')}
           // Static custom appearance props.
           customArrowIcon={<Icon name="arrow right" />}
-          customInputIcon={<Icon name="calendar outline" />}
+          customInputIcon={<Icon name="calendar" />}
           daySize={52}
           hideKeyboardShortcutsPanel
           navNext={<Icon name="arrow right" />}

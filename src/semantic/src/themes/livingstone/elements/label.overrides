@@ -8,15 +8,15 @@
 
 .ui.label {
 
-/* Group */
+  /* Group */
 
-/*-------------------
+  /*-------------------
         Parts
 --------------------*/
 
-/* Link */
+  /* Link */
 
-/* Icon */
+  /* Icon */
   & > i.icon {
     text-align: center;
     width: 100%;
@@ -29,70 +29,72 @@
     }
   }
 
-/* Image */
+  /* Image */
 
-/* Detail */
+  /* Detail */
 
-/* Delete */
+  /* Delete */
 
-/*-------------------
+  /*-------------------
         Types
 --------------------*/
 
-/* Image Label */
+  /* Image Label */
 
-/*-------------------
+  /*-------------------
         States
 --------------------*/
 
-/* Hover */
+  /* Hover */
 
-/* Active */
+  /* Active */
 
-/* Active Hover */
+  /* Active Hover */
 
-/*-------------------
+  /*-------------------
       Variations
 --------------------*/
 
-/* Basic */
+  /* Basic */
   &.basic {
     font-weight: @basicFontWeight;
   }
 
-/* Tag */
+  /* Tag */
 
-/* Ribbon */
+  /* Ribbon */
 
-/* Colors */
+  /* Colors */
 
-/* Attached */
+  /* Attached */
 
-/* Corner */
+  /* Corner */
 
-/* Corner Text */
+  /* Corner Text */
 
-/* Horizontal */
+  /* Horizontal */
 
-/* Circular Padding */
+  /* Circular Padding */
 
-/* Pointing */
+  /* Pointing */
 
-/* Basic Pointing */
+  /* Basic Pointing */
 
-/* Floating */
+  /* Floating */
 
-/* Disabled */
+  /* Disabled */
 
   & > i.inverted.grey.icon {
+
     & + p {
       color: @disabledIconCardColor;
     }
   }
 
-/* Left aligned */
+  /* Left aligned */
 
   &.left.aligned {
+
     & > i.icon {
       margin-right: @leftAlignedIconCardMarginRight;
       text-align: left;
@@ -103,10 +105,9 @@
     }
   }
 
-/*-------------------
+  /*-------------------
         Group
 --------------------*/
 
-/* Sizing */
-
+  /* Sizing */
 }
