@@ -1,32 +1,10 @@
 ```jsx
-<ShowOnDesktop>
- <ShowOnDesktopRow>
-   <ShowOnDesktopColumn width={6}>
-     🔴 🔴 ⚪️ ⚪️<br />
-     🔴 🔴 ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-   </ShowOnDesktopColumn>
-   <ShowOnDesktopColumn width={6}>
-     ⚪️ ⚪️ 🔴 🔴<br />
-     ⚪️ ⚪️ 🔴 🔴<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-   </ShowOnDesktopColumn>
- </ShowOnDesktopRow>
- <ShowOnDesktopRow>
-   <ShowOnDesktopColumn width={6}>
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     🔴 🔴 ⚪️ ⚪️<br />
-     🔴 🔴 ⚪️ ⚪️<br />
-   </ShowOnDesktopColumn>
-   <ShowOnDesktopColumn width={6}>
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ 🔴 🔴<br />
-     ⚪️ ⚪️ 🔴 🔴<br />
-   </ShowOnDesktopColumn>
- </ShowOnDesktopRow>
-</ShowOnDesktop>
+<Grid>
+  <GridRow>
+    <GridColumn width={6}>I'll always show</GridColumn>
+    <ShowOnDesktop parent={GridColumn} width={6}>
+      I only show on large screens
+    </ShowOnDesktop>
+  </GridRow>
+</Grid>
 ```
