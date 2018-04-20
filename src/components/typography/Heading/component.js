@@ -4,10 +4,10 @@ import { Header } from 'semantic-ui-react';
 
 import { getHeadingNumber } from './getHeadingNumber';
 
-const SIZES = ['huge', 'large', 'medium', 'small', 'tiny', 'mini'];
+const SIZES = ['huge', 'large', 'medium', 'small'];
 
 /**
- * A heading provides a short summary of content.
+ * A heading identifies a block of content.
  * @return {Object}
  */
 export const Component = ({ children, size }) => (
@@ -17,7 +17,7 @@ export const Component = ({ children, size }) => (
 Component.displayName = 'Heading';
 
 Component.defaultProps = {
-  size: 'large',
+  size: 'medium',
 };
 
 Component.propTypes = {

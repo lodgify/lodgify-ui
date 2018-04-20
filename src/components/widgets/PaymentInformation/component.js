@@ -29,19 +29,19 @@ export const Component = ({
   <Grid>
     <GridRow>
       <GridColumn width={12}>
-        <Heading size="tiny">Payment Information</Heading>
+        <Heading>Payment Information</Heading>
       </GridColumn>
     </GridRow>
     <GridRow>
       {!!paymentScheduleText && (
         <GridColumn width={6}>
-          <Heading size="mini">Payment Schedule</Heading>
+          <Heading size="small">Payment Schedule</Heading>
           <Paragraph size="medium">{paymentScheduleText}</Paragraph>
         </GridColumn>
       )}
       {!!cancellationPolicyText && (
         <GridColumn width={6}>
-          <Heading size="mini">Cancellation Policy</Heading>
+          <Heading size="small">Cancellation Policy</Heading>
           <Paragraph size="medium">{cancellationPolicyText}</Paragraph>
         </GridColumn>
       )}
@@ -49,13 +49,13 @@ export const Component = ({
     <GridRow>
       {!!cleaningCharge && (
         <GridColumn width={6}>
-          <Heading size="mini">Cleaning Charge</Heading>
+          <Heading size="small">Cleaning Charge</Heading>
           <Statistic horizontal size="mini" text value={cleaningCharge} />
         </GridColumn>
       )}
       {!!taxesText && (
         <GridColumn width={6}>
-          <Heading size="mini">Taxes</Heading>
+          <Heading size="small">Taxes</Heading>
           <Statistic
             horizontal
             text
@@ -69,7 +69,7 @@ export const Component = ({
     {!!damageDepositText && (
       <GridRow>
         <GridColumn width={12}>
-          <Heading size="mini">Damage Deposit</Heading>
+          <Heading size="small">Damage Deposit</Heading>
           <Paragraph size="medium">{damageDepositText}</Paragraph>
         </GridColumn>
       </GridRow>
@@ -77,7 +77,7 @@ export const Component = ({
     {!!notesText && (
       <GridRow>
         <GridColumn width={12}>
-          <Heading size="mini">Notes</Heading>
+          <Heading size="small">Notes</Heading>
           <Paragraph size="medium">{notesText}</Paragraph>
         </GridColumn>
       </GridRow>

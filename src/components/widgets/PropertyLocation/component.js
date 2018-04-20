@@ -11,8 +11,9 @@ import { GridColumn } from 'layout/GridColumn';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
-import { IconCard } from 'elements/IconCard';
 import { Paragraph } from 'typography/Paragraph';
+import { Subheading } from 'typography/Subheading';
+import { IconCard } from 'elements/IconCard';
 
 import { getTransportOptionLabel } from './utils/getTransportOptionLabel';
 
@@ -31,8 +32,8 @@ export const Component = ({
 }) => (
   <Grid stackable>
     <GridColumn width={12}>
-      <Heading size="tiny">Location</Heading>
-      <Paragraph size="tiny">{locationSummary}</Paragraph>
+      <Heading>Location</Heading>
+      <Subheading>{locationSummary}</Subheading>
     </GridColumn>
     <GridColumn width={6}>
       {getParagraphsFromStrings(locationDescription).map(

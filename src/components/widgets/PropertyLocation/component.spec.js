@@ -13,6 +13,7 @@ import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { Divider } from 'elements/Divider';
 import { Heading } from 'typography/Heading';
+import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
 import { IconCard } from 'elements/IconCard';
 import { GoogleMap } from 'elements/GoogleMap';
@@ -77,41 +78,22 @@ describe('<PropertyLocation />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
-      expectComponentToHaveChildren(wrapper, Heading, Paragraph);
+      expectComponentToHaveChildren(wrapper, Heading, Subheading);
     });
   });
 
   describe('the `Heading` component', () => {
-    const getHeading = () => getPropertyLocation().find(Heading);
-
-    it('should have the right props', () => {
-      const wrapper = getHeading();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
     it('should render the right children', () => {
-      const wrapper = getHeading();
+      const wrapper = getPropertyLocation().find(Heading);
       expectComponentToHaveChildren(wrapper, 'Location');
     });
   });
 
-  describe('the first `Paragraph` component', () => {
-    const getFirstParagraph = () =>
-      getPropertyLocation()
-        .find(Paragraph)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getFirstParagraph();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
+  describe('the `Subheading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getFirstParagraph();
+      const wrapper = getPropertyLocation()
+        .find(Subheading)
+        .at(0);
       expectComponentToHaveChildren(wrapper, locationSummary);
     });
   });

@@ -12,16 +12,16 @@ describe('<Heading />', () => {
     expect(actual).toHaveLength(1);
   });
 
-  it('should default to setting `props.as` as `h2`', () => {
+  it('should default to setting `props.as` as `h3`', () => {
     const semanticHeader = shallow(<Heading>{children}</Heading>).find(
       'Header'
     );
     const actual = semanticHeader.prop('as');
-    expect(actual).toBe('h2');
+    expect(actual).toBe('h3');
   });
 
   it('should add set `props.as` correctly', () => {
-    const TEST_SIZES = ['huge', 'large', 'medium', 'small', 'tiny'];
+    const TEST_SIZES = ['huge', 'large', 'medium', 'small'];
     TEST_SIZES.forEach(testSize => {
       const semanticHeader = shallow(
         <Heading size={testSize}>{children}</Heading>

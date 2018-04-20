@@ -38,7 +38,6 @@ describe('<Form />', () => {
       expect(actual).toEqual(
         expect.objectContaining({
           children: headingText,
-          size: 'small',
         })
       );
     });

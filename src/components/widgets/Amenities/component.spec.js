@@ -54,15 +54,8 @@ describe('<Amenities />', () => {
   });
 
   describe('the `Heading` component', () => {
-    const getHeading = () => getAmenities().find(Heading);
-
-    it('should have the right props', () => {
-      const wrapper = getHeading();
-      expectComponentToHaveProps(wrapper, { size: 'tiny' });
-    });
-
     it('should render the right children', () => {
-      const wrapper = getHeading();
+      const wrapper = getAmenities().find(Heading);
       expectComponentToHaveChildren(wrapper, 'Amenities');
     });
   });

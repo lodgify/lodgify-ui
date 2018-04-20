@@ -7,6 +7,9 @@
 --------------------*/
 
 /* Sub Heading */
+.ui.sub.header {
+  line-height: @subHeadingLineHeight;
+}
 
 /* Sub Header */
 
@@ -25,9 +28,6 @@
 --------------------*/
 
 /* Sizing */
-h6.ui.header {
-  font-size: @h6;
-}
 
 /* Sub Header */
 

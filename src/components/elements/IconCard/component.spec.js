@@ -7,7 +7,7 @@ import { Paragraph } from 'typography/Paragraph';
 
 import { Component as IconCard } from './component';
 
-const name = 'steam';
+const name = 'phone';
 
 const getIconCard = props => shallow(<IconCard name={name} {...props} />);
 const getLabel = () => getIconCard().find(Label);
