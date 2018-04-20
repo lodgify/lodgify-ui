@@ -7,7 +7,7 @@ import { getHeadingNumber } from './getHeadingNumber';
 const SIZES = ['huge', 'large', 'medium', 'small', 'tiny', 'mini'];
 
 /**
- * A heading provides a short summary of content.
+ * A heading identifies a block of content.
  * @return {Object}
  */
 export const Component = ({ children, size }) => (
