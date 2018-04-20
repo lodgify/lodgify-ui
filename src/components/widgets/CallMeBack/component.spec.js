@@ -126,7 +126,7 @@ describe('<CallMeBack />', () => {
       const actual = wrapper.childAt(0).props();
       expect(actual).toEqual(
         expect.objectContaining({
-          icon: 'calendar outline',
+          icon: 'calendar',
           label: 'Date',
           name: 'date',
           options: options.dateOptions,

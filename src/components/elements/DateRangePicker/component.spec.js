@@ -87,7 +87,7 @@ describe('<DateRangePicker />', () => {
       expect(actual).toEqual(
         expect.objectContaining({
           customArrowIcon: <Icon name="arrow right" />,
-          customInputIcon: <Icon name="calendar outline" />,
+          customInputIcon: <Icon name="calendar" />,
           daySize: 52,
           hideKeyboardShortcutsPanel: true,
           navNext: <Icon name="arrow right" />,
