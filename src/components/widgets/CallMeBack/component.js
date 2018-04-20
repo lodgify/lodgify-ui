@@ -27,7 +27,7 @@ export const Component = ({
     <TextInput label="Email" name="email" />
     <InputGroup>
       <Dropdown
-        icon="calendar outline"
+        icon="calendar"
         label="Date"
         name="date"
         options={dateOptions}

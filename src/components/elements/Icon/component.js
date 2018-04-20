@@ -77,7 +77,32 @@ Component.propTypes = {
   /** A visible label to display with the icon. */
   label: PropTypes.string,
   /** The name of the icon to display. Takes priority over `props.path`. */
-  name: PropTypes.oneOf(['question mark']),
+  name: PropTypes.oneOf([
+    'arrow left',
+    'arrow right',
+    'bath',
+    'bed',
+    'bus',
+    'calendar',
+    'caret down',
+    'checkmark',
+    'chevron left',
+    'chevron right',
+    'clock',
+    'close',
+    'fire',
+    'home',
+    'info',
+    'map pin',
+    'paw',
+    'phone',
+    'plane',
+    'question mark',
+    'road',
+    'search',
+    'train',
+    'users',
+  ]),
   /**
    * A string containing a series of path descriptions. Should fit a 24x24 viewBox.
    * [See MDN for documentation.](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d)
