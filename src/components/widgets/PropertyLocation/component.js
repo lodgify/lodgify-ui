@@ -43,7 +43,7 @@ export const Component = ({
         )
       )}
     </GridColumn>
-    <ShowOnDesktop as={GridColumn} width={6}>
+    <ShowOnDesktop parent={GridColumn} parentProps={{ width: 6 }}>
       <Grid>
         {getFirstFourItems(transportOptions).map(
           ({ distance, iconName, label }, index) => (
@@ -58,7 +58,7 @@ export const Component = ({
         )}
       </Grid>
     </ShowOnDesktop>
-    <ShowOnDesktop as={GridColumn} width={12}>
+    <ShowOnDesktop parent={GridColumn} parentProps={{ width: 12 }}>
       <GoogleMap
         isShowingExactLocation={isShowingExactLocation}
         isShowingApproximateLocation={isShowingApproximateLocation}
@@ -66,7 +66,7 @@ export const Component = ({
         longitude={longitude}
       />
     </ShowOnDesktop>
-    <ShowOnMobile as={GridColumn} width={12}>
+    <ShowOnMobile parent={GridColumn} parentProps={{ width: 12 }}>
       <GoogleMap
         height="200px"
         isShowingExactLocation={isShowingExactLocation}

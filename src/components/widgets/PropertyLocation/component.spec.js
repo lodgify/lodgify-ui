@@ -158,8 +158,10 @@ describe('<PropertyLocation />', () => {
     it('should have the right props', () => {
       const wrapper = getFirstShowOnDesktop();
       expectComponentToHaveProps(wrapper, {
-        as: GridColumn,
-        width: 6,
+        parent: GridColumn,
+        parentProps: {
+          width: 6,
+        },
       });
     });
 
@@ -229,8 +231,10 @@ describe('<PropertyLocation />', () => {
     it('should have the right props', () => {
       const wrapper = getSecondShowOnDesktop();
       expectComponentToHaveProps(wrapper, {
-        as: GridColumn,
-        width: 12,
+        parent: GridColumn,
+        parentProps: {
+          width: 12,
+        },
       });
     });
 
@@ -261,8 +265,10 @@ describe('<PropertyLocation />', () => {
 
     it('should have the right props', () => {
       expectComponentToHaveProps(wrapper, {
-        as: GridColumn,
-        width: 12,
+        parent: GridColumn,
+        parentProps: {
+          width: 12,
+        },
       });
     });
 
