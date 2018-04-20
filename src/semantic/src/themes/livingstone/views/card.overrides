@@ -12,7 +12,7 @@
 
 /* Card */
   overflow: hidden;
-  
+
 /* Card Group */
 
 /* Consecutive Cards */
@@ -41,7 +41,7 @@
   .description {
     margin-top: @descriptionDistance;
 
-    h5.ui.header {
+    h3.ui.header {
       display: inline-block;
       padding: @descriptionBigTextPadding @descriptionBigTextPadding 0 @descriptionBigTextPadding;
     }

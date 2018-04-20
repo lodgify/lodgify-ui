@@ -13,7 +13,7 @@
 .ui.compact.segments .segment {
   padding: @groupedSegmentPadding;
 
-  h6.ui.header {
+  h4.ui.header {
     display: inline;
     line-height: @groupedSegmentMiniHeaderLineHeight;
   }
