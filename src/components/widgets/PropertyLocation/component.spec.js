@@ -68,17 +68,8 @@ describe('<PropertyLocation />', () => {
   });
 
   describe('the `Heading` component', () => {
-    const getHeading = () => getPropertyLocation().find(Heading);
-
-    it('should have the right props', () => {
-      const wrapper = getHeading();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
     it('should render the right children', () => {
-      const wrapper = getHeading();
+      const wrapper = getPropertyLocation().find(Heading);
       expectComponentToHaveChildren(wrapper, 'Location');
     });
   });

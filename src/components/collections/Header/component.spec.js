@@ -85,7 +85,7 @@ describe('<Header />', () => {
       const actual = semanticMenuItem.children('Heading');
       expect(actual).toHaveLength(1);
       expect(actual.props()).toEqual(
-        expect.objectContaining({ children: logoText, size: 'tiny' })
+        expect.objectContaining({ children: logoText, size: 'small' })
       );
     });
 

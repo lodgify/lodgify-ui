@@ -39,7 +39,7 @@ export const Component = ({
         />
       </Card.Description>
       <Card.Description>
-        from <Heading size="tiny">{nightPrice}</Heading> /night
+        from <Heading>{nightPrice}</Heading> /night
       </Card.Description>
     </Card.Content>
   </Card>

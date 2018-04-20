@@ -127,7 +127,7 @@ describe('<PaymentInformation />', () => {
         it('should have the right props', () => {
           const wrapper = getHeader();
           expectComponentToHaveProps(wrapper, {
-            size: 'mini',
+            size: 'small',
           });
         });
 
@@ -198,7 +198,7 @@ describe('<PaymentInformation />', () => {
         it('should have the right props', () => {
           const wrapper = getHeader();
           expectComponentToHaveProps(wrapper, {
-            size: 'mini',
+            size: 'small',
           });
         });
 
@@ -269,7 +269,7 @@ describe('<PaymentInformation />', () => {
         it('should have the right props', () => {
           const wrapper = getHeader();
           expectComponentToHaveProps(wrapper, {
-            size: 'mini',
+            size: 'small',
           });
         });
 
@@ -341,7 +341,7 @@ describe('<PaymentInformation />', () => {
         it('should have the right props', () => {
           const wrapper = getHeader();
           expectComponentToHaveProps(wrapper, {
-            size: 'mini',
+            size: 'small',
           });
         });
 
@@ -411,7 +411,7 @@ describe('<PaymentInformation />', () => {
           it('should have the right props', () => {
             const wrapper = getHeader();
             expectComponentToHaveProps(wrapper, {
-              size: 'mini',
+              size: 'small',
             });
           });
 
@@ -483,7 +483,7 @@ describe('<PaymentInformation />', () => {
           it('should have the right props', () => {
             const wrapper = getHeader();
             expectComponentToHaveProps(wrapper, {
-              size: 'mini',
+              size: 'small',
             });
           });
 

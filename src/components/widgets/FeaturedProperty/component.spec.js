@@ -172,15 +172,11 @@ describe('<FeaturedProperty />', () => {
     });
   });
 
-  describe('the `Rating` component', () => {
-    it('should have the right props', () => {
+  describe('the `Heading` component', () => {
+    it('should have the right children', () => {
       const wrapper = getFeaturedProperty().find(Heading);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'tiny',
-        })
-      );
+      const actual = wrapper.prop('children');
+      expect(actual).toBe(props.nightPrice);
     });
   });
 
