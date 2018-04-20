@@ -1,32 +1,10 @@
 ```jsx
-<ShowOnMobile>
- <ShowOnMobileRow>
-   <ShowOnMobileColumn width={6}>
-     🔴 🔴 ⚪️ ⚪️<br />
-     🔴 🔴 ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-   </ShowOnMobileColumn>
-   <ShowOnMobileColumn width={6}>
-     ⚪️ ⚪️ 🔴 🔴<br />
-     ⚪️ ⚪️ 🔴 🔴<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-   </ShowOnMobileColumn>
- </ShowOnMobileRow>
- <ShowOnMobileRow>
-   <ShowOnMobileColumn width={6}>
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     🔴 🔴 ⚪️ ⚪️<br />
-     🔴 🔴 ⚪️ ⚪️<br />
-   </ShowOnMobileColumn>
-   <ShowOnMobileColumn width={6}>
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ ⚪️ ⚪️<br />
-     ⚪️ ⚪️ 🔴 🔴<br />
-     ⚪️ ⚪️ 🔴 🔴<br />
-   </ShowOnMobileColumn>
- </ShowOnMobileRow>
-</ShowOnMobile>
+<Grid>
+  <GridRow>
+    <GridColumn width={6}>I'll always show</GridColumn>
+    <ShowOnMobile parent={GridColumn} width={6}>
+      I only show on mobile devices
+    </ShowOnMobile>
+  </GridRow>
+</Grid>
 ```
