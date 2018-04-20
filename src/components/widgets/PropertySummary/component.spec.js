@@ -57,23 +57,10 @@ describe('<PropertySummary />', () => {
   });
 
   describe('the first `Heading` component', () => {
-    const getFirstHeading = () =>
-      getPropertySummary()
+    it('should have the right children', () => {
+      const wrapper = getPropertySummary()
         .find(Heading)
         .first();
-
-    it('should have the right props', () => {
-      const wrapper = getFirstHeading();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'tiny',
-        })
-      );
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getFirstHeading();
       const actual = wrapper.prop('children');
       expect(actual).toBe(props.propertyName);
     });
@@ -201,7 +188,7 @@ describe('<PropertySummary />', () => {
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          size: 'mini',
+          size: 'small',
         })
       );
     });

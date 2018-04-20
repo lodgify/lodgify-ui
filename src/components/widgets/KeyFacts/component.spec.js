@@ -14,7 +14,6 @@ import { keyFacts } from './mock-data/keyFacts';
 import { Component as KeyFacts } from './component';
 
 const getKeyFacts = () => shallow(<KeyFacts keyFacts={keyFacts} />);
-const getHeading = () => getKeyFacts().find(Heading);
 
 describe('<KeyFacts />', () => {
   it('should render a single Lodgify UI `GridColumn` component', () => {
@@ -31,13 +30,8 @@ describe('<KeyFacts />', () => {
   });
 
   describe('the `Heading` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getHeading();
-      expectComponentToHaveProps(wrapper, { size: 'tiny' });
-    });
-
     it('should render the right children', () => {
-      const wrapper = getHeading();
+      const wrapper = getKeyFacts().find(Heading);
       expectComponentToHaveChildren(wrapper, 'Key facts');
     });
   });
