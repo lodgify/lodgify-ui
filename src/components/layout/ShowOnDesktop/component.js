@@ -11,21 +11,26 @@ import { Responsive } from 'semantic-ui-react';
  *
  * @returns {Object}
  */
-export const Component = ({ parent, ...parentProps }) => (
-  <Responsive as={parent} {...parentProps} minWidth={600} />
+export const Component = ({ children, parent, parentProps }) => (
+  <Responsive as={parent} {...parentProps} minWidth={600}>
+    {children}
+  </Responsive>
 );
 
 Component.defaultProps = {
   parent: 'div',
   parentProps: null,
+  children: null,
 };
 
 Component.displayName = 'ShowOnDesktop';
 
 Component.propTypes = {
+  /** The child components only to be rendered on desktop  */
+  children: PropTypes.node,
   /** The parent component that will be rendered. */
-  parent: PropTypes.node,
-  /** The parent props */
+  parent: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  /** The props to be passed to the parent component. */
   // eslint-disable-next-line
   parentProps: PropTypes.object,
 };
