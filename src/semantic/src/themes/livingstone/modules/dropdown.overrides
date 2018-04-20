@@ -8,21 +8,21 @@
 
 .ui.dropdown {
 
-/*-------------------
+  /*-------------------
        Content
 --------------------*/
 
   .menu {
 
-/* Icon */
+    /* Icon */
 
-/* Current Text */
+    /* Current Text */
 
-/* Menu */
+    /* Menu */
 
-/* Text */
+    /* Text */
 
-/* Menu Item */
+    /* Menu Item */
     & > .item {
       text-decoration: @itemTextDecoration;
       transition: @itemTransition;
@@ -41,17 +41,17 @@
         color: @hoveredItemColor;
       }
     }
-
   }
-/* Sub Menu */
 
-/* Menu Header */
+  /* Sub Menu */
 
-/* Menu Divider */
+  /* Menu Header */
 
-/* Menu Input */
+  /* Menu Divider */
 
-/* Menu Image */
+  /* Menu Input */
+
+  /* Menu Image */
   & > .text > .image,
   & > .text > img,
   .menu > .item .image,
@@ -65,7 +65,7 @@
     min-width: @menuImageMinWidth;
     vertical-align: middle;
 
-    & ~ .text{
+    & ~ .text {
       font-size: @tinyParagraphFontSize;
     }
 
@@ -73,8 +73,8 @@
       filter: @grayscaleFilter;
     }
   }
-
 }
+
 /* Item Sub-Element */
 
 /* Sub-Menu Dropdown Icon */
@@ -122,32 +122,35 @@
     }
   }
 
-/* <select> */
+  /* <select> */
 
-/* Responsive */
+  /* Responsive */
 
-/* Derived */
+  /* Derived */
 
-/* Hover */
-/* Focus */
+  /* Hover */
+
+  /* Focus */
   .ui.selection.dropdown:hover,
   .ui.selection.dropdown:focus {
     background: @selectionFocusBackground;
   }
 
   &.focus {
+
     & > i.icon {
       color: @textColor;
     }
   }
 
-/* Visible */
+  /* Visible */
 
-/* Visible Hover */
+  /* Visible Hover */
 
-/* Dirty */
+  /* Dirty */
 
   &.dirty {
+
     & > i.icon {
       color: @textColor;
     }
@@ -159,7 +162,7 @@
     }
   }
 
-/*  With Icon */
+  /*  With Icon */
   & > i.icon {
     color: @iconColor;
     padding: @iconPadding;
@@ -171,8 +174,9 @@
     }
   }
 
-/*  With Image */
-  &.has-images{
+  /*  With Image */
+  &.has-images {
+
     & > i.icon {
       top: @dropdownWithImagesCaretPaddingTop;
     }
@@ -182,7 +186,7 @@
     }
   }
 
-/*  With Label */
+  /*  With Label */
   label {
     color: @labelColor;
     left: @itemHorizontalPadding;
@@ -192,16 +196,9 @@
     transition: transform @defaultDuration, font-size @defaultDuration;
   }
 
-  &.focus,
-  &.dirty {
-    label {
-      color: @labelFocusColor;
-      font-size: @labelFocusFontSize;
-      transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
-    }
-  }
-
+  // stylelint-disable-next-line no-duplicate-selectors
   & > i.icon {
+
     & ~ label {
       left: @withIconLabelLeftPosition;
     }
@@ -209,13 +206,20 @@
 
   &.focus,
   &.dirty {
+
+    label {
+      color: @labelFocusColor;
+      font-size: @labelFocusFontSize;
+      transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
+    }
+
     & > i.icon {
+
       & ~ label {
         transform: translate(-(@withIconLabelFocusXTranslate), -(@labelFocusYTranslate));
       }
     }
   }
-
 }
 
 /*--------------
@@ -272,6 +276,7 @@
 
 /* Pointing */
 .ui.pointing.dropdown {
+
   i.icon {
     margin: @dropdownIconMargin;
   }
@@ -288,4 +293,5 @@
     }
   }
 }
+
 /* Pointing Upward */

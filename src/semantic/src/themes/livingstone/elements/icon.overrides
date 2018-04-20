@@ -23,7 +23,6 @@
 i.icon {
   height: @height;
   width: auto;
-
   font-family: inherit;
   vertical-align: top;
 
@@ -32,7 +31,7 @@ i.icon {
     width: @width;
   }
 
-/* Variations */
+  /* Variations */
 
   p {
     color: inherit;
@@ -43,9 +42,9 @@ i.icon {
   }
 
   &.inverted.grey {
+
     p {
       text-decoration: @disabledIconLabelDecoration;
     }
   }
-
 }

@@ -6,9 +6,9 @@
        Element
 --------------------*/
 
-@verticalPadding        : @11px;
-@horizontalPadding      : @16px;
-@borderRadius           : @2px;
+@verticalPadding: @11px;
+@horizontalPadding: @16px;
+@borderRadius: @2px;
 
 /*-------------------
        Parts
@@ -51,7 +51,7 @@
 /* Wide */
 
 /* Inverted */
-@invertedBackground     : @greyEight;
-@invertedBoxShadow      : @floatingShadow;
+@invertedBackground: @greyEight;
+@invertedBoxShadow: @floatingShadow;
 
 /* Arrow color by position */
