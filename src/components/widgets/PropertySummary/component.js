@@ -17,7 +17,7 @@ export const Component = ({
 }) => (
   <Segment.Group compact>
     <Segment>
-      <Heading size="tiny">{propertyName}</Heading>
+      <Heading>{propertyName}</Heading>
     </Segment>
     <Segment.Group horizontal>
       <Segment>
@@ -34,7 +34,7 @@ export const Component = ({
         />
       </Segment>
       <Segment>
-        from <Heading size="mini">{nightPrice}</Heading> /night
+        from <Heading size="small">{nightPrice}</Heading> /night
       </Segment>
     </Segment.Group>
   </Segment.Group>

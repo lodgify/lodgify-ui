@@ -12,7 +12,7 @@ import { IconCard } from 'elements/IconCard';
  */
 export const Component = ({ keyFacts }) => (
   <div>
-    <Heading size="tiny">Key facts</Heading>
+    <Heading>Key facts</Heading>
     <Label.Group>
       {keyFacts.map(({ iconName, isDisabled, label }, index) => (
         <IconCard

@@ -45,7 +45,7 @@ export class Component extends PureComponent {
       <Card className="has-form" fluid>
         {headingText && (
           <Card.Content>
-            <Heading size="small">{headingText}</Heading>
+            <Heading>{headingText}</Heading>
           </Card.Content>
         )}
         <Card.Content>

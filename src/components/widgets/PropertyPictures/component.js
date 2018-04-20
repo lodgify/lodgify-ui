@@ -15,7 +15,7 @@ import { Link } from 'elements/Link';
 export const Component = ({ pictures }) => (
   <Grid>
     <GridColumn width={12}>
-      <Heading size="tiny">Property pictures</Heading>
+      <Heading>Property pictures</Heading>
     </GridColumn>
     {pictures.map(({ imageUrl, label }, index) => (
       <GridColumn key={getUniqueKey(label, index)} width={4}>

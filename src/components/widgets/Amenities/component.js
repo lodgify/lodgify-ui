@@ -20,7 +20,7 @@ import { hasMoreThanNineItems } from './utils/hasMoreThanNineItems';
 export const Component = ({ amenities }) => (
   <Grid>
     <GridColumn width={12}>
-      <Heading size="tiny">Amenities</Heading>
+      <Heading>Amenities</Heading>
     </GridColumn>
     {getFirstNineItems(amenities).map(
       ({ iconName, isDisabled, label }, index) => (
