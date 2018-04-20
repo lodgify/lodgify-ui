@@ -7,15 +7,15 @@
 --------------------*/
 
 /* Menu */
-@background                         : transparent;
-@menuHorizontalMargin               : 92px;
+@background: transparent;
+@menuHorizontalMargin: 92px;
 
 /* Menu Item */
 // Need to use margin rather than padding to implement 'active' state bottom border
-@itemHorizontalPadding              : 0;
-@itemHorizontalMargin               : @15px;
-@itemVerticalPadding                : @35px;
-@itemTextColor                      : @pureWhite;
+@itemHorizontalPadding: 0;
+@itemHorizontalMargin: @15px;
+@itemVerticalPadding: @35px;
+@itemTextColor: @pureWhite;
 
 /* Divider */
 
@@ -30,7 +30,7 @@
 /* Icon */
 
 /* Dropdown Icon */
-@dropdownIconDistance               : @10px;
+@dropdownIconDistance: @10px;
 
 /* Header */
 
@@ -53,41 +53,41 @@
 /* Label */
 
 /* Dropdown in Menu */
-@dropdownMenuBoxShadow              : @subMenuShadow;
+@dropdownMenuBoxShadow: @subMenuShadow;
 
-@dropdownMenuBorderRadius           : @3px;
+@dropdownMenuBorderRadius: @3px;
 
-@dropdownHoveredItemBackground      : @primaryColor;
+@dropdownHoveredItemBackground: @primaryColor;
 
 /* Dropdown Variations */
-@pointingDropdownMenuDistance       : -(20%);
+@pointingDropdownMenuDistance: -(20%);
 
 /*--------------
      States
 ---------------*/
 
 /* Hovered Item */
-@hoverItemBackground                : @background;
-@hoverItemTextColor                 : @itemTextColor;
+@hoverItemBackground: @background;
+@hoverItemTextColor: @itemTextColor;
 
 /* Pressed Item */
 
 /* Active Item */
-@activeItemBackground               : @background;
-@activeItemTextColor                : @itemTextColor;
-@activeItemUnderlineBorder          : @2px solid @primaryColor;
-@activeItemUnderlineBottomPosition  : 40%;
-@activeItemUnderlineTransition      : .5s @defaultEasing;
+@activeItemBackground: @background;
+@activeItemTextColor: @itemTextColor;
+@activeItemUnderlineBorder: @2px solid @primaryColor;
+@activeItemUnderlineBottomPosition: 40%;
+@activeItemUnderlineTransition: 0.5s @defaultEasing;
 
 /* Active Hovered Item */
-@activeHoverItemBackground          : @background;
-@activeHoverItemColor               : @itemTextColor;
+@activeHoverItemBackground: @background;
+@activeHoverItemColor: @itemTextColor;
 
 /* Selected Dropdown */
-@dropdownSelectedItemBackground     : @background;
+@dropdownSelectedItemBackground: @background;
 
 /* Active Dropdown */
-@dropdownActiveItemBackground       : @background;
+@dropdownActiveItemBackground: @background;
 
 /* Active Sub Menu */
 
@@ -112,29 +112,29 @@
 /* Tabular */
 
 /* Pagination */
-@paginationMenuMinHeight            : 0;
+@paginationMenuMinHeight: 0;
 
-@paginationButtonDiameter           : @35px;
-@paginationButtonHorizontalMargin   : @15px;
-@paginationPrevButtonIconMarginLeft : -(@3px) !important;
+@paginationButtonDiameter: @35px;
+@paginationButtonHorizontalMargin: @15px;
+@paginationPrevButtonIconMarginLeft: -(@3px) !important;
 
-@paginationLabelBackground          : @greyFive;
-@paginationLabelActiveBackground    : @primaryColor;
-@paginationLabelHorizontalMargin    : @8px;
-@paginationLabelVerticalMargin      : @12px;
+@paginationLabelBackground: @greyFive;
+@paginationLabelActiveBackground: @primaryColor;
+@paginationLabelHorizontalMargin: @8px;
+@paginationLabelVerticalMargin: @12px;
 
 /* Slideshow pagination */
-@slideshowBottomMargin              : @30px;
+@slideshowBottomMargin: @30px;
 
-@slideshowImagesBorderRadius        : @4px;
-@slideshowImageMaxHeight            : 390px;
+@slideshowImagesBorderRadius: @4px;
+@slideshowImageMaxHeight: 390px;
 
-@slideshowButtonHorizontalPadding   : @30px;
-@slideshowButtonHeightOffset        : (@38px / 2);
-@slideshowButtonTopPosition         : ~"calc(50% - @{slideshowButtonHeightOffset})";
-@slideshowButtonDiameter            : @paginationButtonDiameter;
+@slideshowButtonHorizontalPadding: @30px;
+@slideshowButtonHeightOffset: (@38px / 2);
+@slideshowButtonTopPosition: ~"calc(50% - @{slideshowButtonHeightOffset})";
+@slideshowButtonDiameter: @paginationButtonDiameter;
 
-@slideshowBulletsBottomPosition     : -(@20px);
+@slideshowBulletsBottomPosition: -(@20px);
 
 /* Labeled Icon */
 

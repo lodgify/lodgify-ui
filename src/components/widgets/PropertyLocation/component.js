@@ -29,7 +29,7 @@ export const Component = ({
 }) => (
   <Grid>
     <GridColumn width={12}>
-      <Heading size="tiny">Location</Heading>
+      <Heading>Location</Heading>
       <Subheading>{locationSummary}</Subheading>
     </GridColumn>
     <GridColumn width={6}>

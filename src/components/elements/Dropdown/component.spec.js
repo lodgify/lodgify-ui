@@ -62,7 +62,7 @@ describe('<Dropdown />', () => {
 
   describe('if none of the options specifies an image', () => {
     it('should render the specified `Icon`', () => {
-      const icon = 'world';
+      const icon = 'search';
       const wrapper = getDropdownContainer({ icon });
       const actual = wrapper.children(Icon).prop('name');
       expect(actual).toBe(icon);
@@ -98,7 +98,7 @@ describe('<Dropdown />', () => {
     });
 
     it('should not render the `Icon`, even if specified', () => {
-      const icon = 'world';
+      const icon = 'search';
       const wrapper = getDropdownContainer({
         icon,
         options: OPTIONS_WITH_IMAGES,

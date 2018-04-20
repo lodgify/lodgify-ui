@@ -1,8 +1,8 @@
 export const keyFacts = [
-  { iconName: 'fire', label: 'Fireplace' },
-  { iconName: 'print', label: 'Home office' },
-  { iconName: 'child', label: 'Child friendly' },
-  { iconName: 'paw', isDisabled: true, label: 'No pets' },
-  { iconName: 'leaf', label: 'Clean energy' },
-  { iconName: 'cocktail', label: 'Parties' },
+  { iconName: 'question mark', label: 'Fireplace' },
+  { iconName: 'question mark', label: 'Home office' },
+  { iconName: 'question mark', label: 'Child friendly' },
+  { iconName: 'question mark', isDisabled: true, label: 'No pets' },
+  { iconName: 'question mark', label: 'Clean energy' },
+  { iconName: 'question mark', label: 'Parties' },
 ];

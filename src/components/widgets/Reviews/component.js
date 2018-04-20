@@ -19,7 +19,7 @@ export const Component = ({ reviews, ratingAverage }) => (
   <Grid>
     <GridRow>
       <GridColumn width={12}>
-        <Heading size="tiny">Reviews</Heading>
+        <Heading>Reviews</Heading>
       </GridColumn>
     </GridRow>
     <GridRow verticalAlign="middle">

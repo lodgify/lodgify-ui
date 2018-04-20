@@ -10,79 +10,78 @@
 
 .ui.form {
 
-/* Text */
+  /* Text */
 
-/* Field */
+  /* Field */
 
-/* Fields */
+  /* Fields */
 
-/* Form Label */
+  /* Form Label */
 
-/* Input */
+  /* Input */
   .field .ui.input,
   .fields .field .ui.input {
     max-width: unset;
   }
 
-/* Select */
+  /* Select */
 
-/* Text Area */
+  /* Text Area */
 
-/* Checkbox */
+  /* Checkbox */
 
-/* Inline Validation Prompt */
+  /* Inline Validation Prompt */
 
-/* Action link */
+  /* Action link */
   a {
     line-height: @actionLinkLineHeight;
   }
 
-/*-------------------
+  /*-------------------
         States
 --------------------*/
 
-/* Focus */
+  /* Focus */
 
-/* Input Focus */
+  /* Input Focus */
 
-/* Text Area Focus */
+  /* Text Area Focus */
 
-/* Disabled */
+  /* Disabled */
 
-/* Errored Input */
+  /* Errored Input */
 
-/* AutoFill */
+  /* AutoFill */
 
-/* Input Error */
+  /* Input Error */
 
-/* Dropdown Error */
+  /* Dropdown Error */
 
-/* Focused Error */
+  /* Focused Error */
 
-/* Placeholder Error */
+  /* Placeholder Error */
 
-/* Loading Dimmer */
+  /* Loading Dimmer */
 
-/* Loading Spinner */
+  /* Loading Spinner */
 
-/*-------------------
+  /*-------------------
         Types
 --------------------*/
 
-/* Required */
+  /* Required */
 
-/* Inverted */
+  /* Inverted */
 
-/*-------------------
+  /*-------------------
       Variations
 --------------------*/
 
-/* Grouped Fields */
+  /* Grouped Fields */
 
-/* Inline */
+  /* Inline */
 
-/*-------------------
+  /*-------------------
        Groups
 --------------------*/
-
 }

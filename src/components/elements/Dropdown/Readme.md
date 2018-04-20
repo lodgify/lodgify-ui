@@ -18,7 +18,7 @@ The dropdown can contain an icon. [See all available icons](https://react.semant
 
 ```jsx
 const { options } = require('./mock-data/options');
-<Dropdown label="Location" options={options} icon="world" />;
+<Dropdown label="Location" options={options} icon="map pin" />;
 ```
 
 #### Image
@@ -34,5 +34,5 @@ const { optionsWithImages } = require('./mock-data/options');
 //  { text: 'The Black Lodge', value: 'blackLodge', image: '/path/to/image.png' },
 // ];
 
-<Dropdown label="Properties" options={optionsWithImages} icon="world" />;
+<Dropdown label="Properties" options={optionsWithImages} icon="map pin" />;
 ```
