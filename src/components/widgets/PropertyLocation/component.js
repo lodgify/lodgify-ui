@@ -1,8 +1,5 @@
-import { MOBILE_BREAKPOINT } from 'constants';
-
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Responsive } from 'semantic-ui-react';
 
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { getUniqueKey } from 'lib/get-unique-key';
@@ -47,7 +44,6 @@ export const Component = ({
       )}
     </GridColumn>
     <ShowOnDesktop as={GridColumn} width={6}>
-      {/* <GridColumn width={6}> */}
       <Grid>
         {getFirstFourItems(transportOptions).map(
           ({ distance, iconName, label }, index) => (
@@ -61,17 +57,16 @@ export const Component = ({
           )
         )}
       </Grid>
-      {/* </GridColumn> */}
     </ShowOnDesktop>
-    <Responsive as={GridColumn} width={12} minWidth={599}>
+    <ShowOnDesktop as={GridColumn} width={12}>
       <GoogleMap
         isShowingExactLocation={isShowingExactLocation}
         isShowingApproximateLocation={isShowingApproximateLocation}
         latitude={latitude}
         longitude={longitude}
       />
-    </Responsive>
-    <Responsive as={GridColumn} width={12} maxWidth={599}>
+    </ShowOnDesktop>
+    <ShowOnMobile as={GridColumn} width={12}>
       <GoogleMap
         height="200px"
         isShowingExactLocation={isShowingExactLocation}
@@ -93,7 +88,7 @@ export const Component = ({
           )
         )}
       </Grid>
-    </Responsive>
+    </ShowOnMobile>
   </Grid>
 );
 
