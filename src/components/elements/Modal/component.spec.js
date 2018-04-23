@@ -2,6 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Modal as SemanticModal } from 'semantic-ui-react';
 
+import { Icon } from 'elements/Icon';
+
 import { Component as Modal } from './component';
 
 const trigger = 'someTrigger';
@@ -22,7 +24,7 @@ describe('<Modal />', () => {
       const actual = wrapper.find('Modal').props();
       expect(actual).toEqual(
         expect.objectContaining({
-          closeIcon: true,
+          closeIcon: <Icon name="close" />,
           content,
           dimmer: 'inverted',
           size: 'tiny',

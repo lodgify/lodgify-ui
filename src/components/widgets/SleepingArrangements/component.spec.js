@@ -31,17 +31,8 @@ describe('<SleepingArrangements />', () => {
   });
 
   describe('the `Heading` component', () => {
-    const getHeading = () => getSleepingArrangements().find(Heading);
-
-    it('should have the right props', () => {
-      const wrapper = getHeading();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
     it('should render the right children', () => {
-      const wrapper = getHeading();
+      const wrapper = getSleepingArrangements().find(Heading);
       expectComponentToHaveChildren(wrapper, 'Sleeping arrangements');
     });
   });

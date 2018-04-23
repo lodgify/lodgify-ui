@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Image, Rating } from 'semantic-ui-react';
 
+import { Subheading } from 'typography/Subheading';
 import { Heading } from 'typography/Heading';
 
 /**
@@ -23,7 +24,9 @@ export const Component = ({
   <Card href={propertyUrl}>
     <Image alt={imageAlternativeText} src={imageUrl} />
     <Card.Content>
-      <Card.Meta>{propertyType}</Card.Meta>
+      <Card.Meta>
+        <Subheading>{propertyType}</Subheading>
+      </Card.Meta>
       <Card.Header>{propertyName}</Card.Header>
       <Card.Description>{locationName}</Card.Description>
       <Card.Description>
@@ -35,11 +38,11 @@ export const Component = ({
           disabled
           maxRating={5}
           rating={Math.round(ratingNumber)}
-          size="mini"
+          size="tiny"
         />
       </Card.Description>
       <Card.Description>
-        from <Heading size="tiny">{nightPrice}</Heading> /night
+        from <Heading>{nightPrice}</Heading> /night
       </Card.Description>
     </Card.Content>
   </Card>

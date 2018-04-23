@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon, Rating, Segment } from 'semantic-ui-react';
+import { Rating, Segment } from 'semantic-ui-react';
 
+import { Icon } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
 
 /**
@@ -16,12 +17,12 @@ export const Component = ({
 }) => (
   <Segment.Group compact>
     <Segment>
-      <Heading size="tiny">{propertyName}</Heading>
+      <Heading>{propertyName}</Heading>
     </Segment>
     <Segment.Group horizontal>
       <Segment>
         {locationName}
-        <Icon color="yellow" name="map pin" />
+        <Icon color="yellow" name="map pin" size="small" />
       </Segment>
       <Segment>
         {ratingNumber}
@@ -29,11 +30,11 @@ export const Component = ({
           disabled
           maxRating={5}
           rating={Math.round(ratingNumber)}
-          size="mini"
+          size="tiny"
         />
       </Segment>
       <Segment>
-        from <Heading size="mini">{nightPrice}</Heading> /night
+        from <Heading size="small">{nightPrice}</Heading> /night
       </Segment>
     </Segment.Group>
   </Segment.Group>

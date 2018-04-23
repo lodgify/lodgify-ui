@@ -1,8 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { DateRangePicker as ReactDatesDateRangePicker } from 'react-dates';
-import { Icon } from 'semantic-ui-react';
 import moment from 'moment';
+
+import { Icon } from 'elements/Icon';
 
 import { Component as DateRangePicker } from './component';
 
@@ -86,7 +87,7 @@ describe('<DateRangePicker />', () => {
       expect(actual).toEqual(
         expect.objectContaining({
           customArrowIcon: <Icon name="arrow right" />,
-          customInputIcon: <Icon name="calendar outline" size="large" />,
+          customInputIcon: <Icon name="calendar" />,
           daySize: 52,
           hideKeyboardShortcutsPanel: true,
           navNext: <Icon name="arrow right" />,

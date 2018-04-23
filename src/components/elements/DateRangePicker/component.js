@@ -4,7 +4,8 @@ import { isEqual, uniqueId } from 'lodash';
 import { DateRangePicker } from 'react-dates';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
-import { Icon } from 'semantic-ui-react';
+
+import { Icon } from 'elements/Icon';
 
 import { InputController } from '../InputController';
 
@@ -81,7 +82,7 @@ export class Component extends PureComponent {
           startDateId={uniqueId('start_date_id_')}
           // Static custom appearance props.
           customArrowIcon={<Icon name="arrow right" />}
-          customInputIcon={<Icon name="calendar outline" size="large" />}
+          customInputIcon={<Icon name="calendar" />}
           daySize={52}
           hideKeyboardShortcutsPanel
           navNext={<Icon name="arrow right" />}

@@ -97,7 +97,7 @@
 
 /* With Icon */
 @iconColor: @itemColor;
-@iconPadding: @10px;
+@iconPadding: @8px;
 @iconZIndex: @selectionZIndex + 1;
 
 @dropdownWithIconPaddingLeft: @40px;

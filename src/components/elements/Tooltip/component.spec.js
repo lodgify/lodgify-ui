@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Icon } from 'semantic-ui-react';
+
+import { Icon } from 'elements/Icon';
 
 import { Component as Tooltip } from './component';
 
@@ -23,29 +24,15 @@ describe('<Tooltip />', () => {
         inverted: true,
         position: 'top center',
         size: 'small',
-        trigger: expect.any(Object),
-      })
-    );
-  });
-
-  it('should pass the `Popup` component a Semantic UI `Icon` as `props.trigger`', () => {
-    const tooltip = shallow(<Tooltip content={content} />);
-    const triggerProp = tooltip.find('Popup').prop('trigger');
-    const actual = shallow(triggerProp).instance();
-    expect(actual).toBeInstanceOf(Icon);
-  });
-
-  it('should pass the `Icon` component the right props', () => {
-    const tooltip = shallow(<Tooltip content={content} />);
-    const triggerProp = tooltip.find('Popup').prop('trigger');
-    const actual = shallow(triggerProp).instance().props;
-    expect(actual).toEqual(
-      expect.objectContaining({
-        name: 'info',
-        color: 'grey',
-        inverted: true,
-        circular: true,
-        size: 'small',
+        trigger: (
+          <Icon
+            name="info"
+            color="grey"
+            isColorInverted
+            isCircular
+            size="small"
+          />
+        ),
       })
     );
   });

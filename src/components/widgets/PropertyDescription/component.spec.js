@@ -9,6 +9,7 @@ import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
 import { Link } from 'elements/Link';
 import { Icon } from 'elements/Icon';
@@ -38,11 +39,18 @@ describe('<PropertyDescription />', () => {
   });
 
   describe('the first `Grid` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getPropertyDescription();
+      expectComponentToHaveProps(wrapper, {
+        stackable: true,
+      });
+    });
+
     it('should render the right children', () => {
       const wrapper = getPropertyDescription();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(2, GridColumn)
+        ...getArrayOfLengthOfItem(3, GridColumn)
       );
     });
   });
@@ -64,37 +72,26 @@ describe('<PropertyDescription />', () => {
       const wrapper = getFirstGridColumn();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(3, Paragraph)
+        Subheading,
+        ...getArrayOfLengthOfItem(2, Paragraph)
       );
     });
   });
 
-  describe('the first `Paragraph` component', () => {
-    const getFirstParagraph = () =>
-      getPropertyDescription()
-        .find(Paragraph)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getFirstParagraph();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
+  describe('the `Subheading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getFirstParagraph();
+      const wrapper = getPropertyDescription().find(Subheading);
       expectComponentToHaveChildren(wrapper, props.propertyType);
     });
   });
 
-  describe('the other `Paragraph` components', () => {
+  describe('the `Paragraph` components', () => {
     it('should render the right children', () => {
       getParagraphsFromStrings(descriptionText).forEach(
         (paragraphText, index) => {
           const wrapper = getPropertyDescription()
             .find(Paragraph)
-            .at(index + 1);
+            .at(index);
           expectComponentToHaveChildren(wrapper, paragraphText);
         }
       );
@@ -106,36 +103,40 @@ describe('<PropertyDescription />', () => {
       getPropertyDescription()
         .find(GridColumn)
         .at(1);
-
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
+        only: 'computer',
+        width: 1,
+      });
+    });
+  });
+
+  describe('the third `GridColumn` component', () => {
+    const getThirdGridColumn = () =>
+      getPropertyDescription()
+        .find(GridColumn)
+        .at(2);
+
+    it('should have the right props', () => {
+      const wrapper = getThirdGridColumn();
+      expectComponentToHaveProps(wrapper, {
         verticalAlignContent: 'middle',
-        width: 5,
+        width: 4,
       });
     });
 
     it('should render the right children', () => {
-      const wrapper = getSecondGridColumn();
+      const wrapper = getThirdGridColumn();
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
   describe('the second `Grid` component', () => {
-    const getSecondGrid = () =>
-      getPropertyDescription()
+    it('should render the right children', () => {
+      const wrapper = getPropertyDescription()
         .find(Grid)
         .at(1);
-
-    it('should have the right props', () => {
-      const wrapper = getSecondGrid();
-      expectComponentToHaveProps(wrapper, {
-        areColumnsCentered: true,
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getSecondGrid();
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(4, GridColumn)
@@ -152,7 +153,7 @@ describe('<PropertyDescription />', () => {
     it('should have the right props', () => {
       const wrapper = getGridColumnInSecondGrid();
       expectComponentToHaveProps(wrapper, {
-        width: 5,
+        width: 6,
       });
     });
 
@@ -175,34 +176,17 @@ describe('<PropertyDescription />', () => {
   });
 
   describe('if `props.extraDescriptionText` is passed', () => {
-    describe('the first `Grid` component', () => {
-      it('should render another `GridColumn`', () => {
+    describe('the first `GridColumn` component', () => {
+      it('should render an extra `Modal` component', () => {
         const wrapper = getPropertyDescription({ extraDescriptionText })
-          .find(Grid)
-          .at(0);
+          .find(GridColumn)
+          .first();
         expectComponentToHaveChildren(
           wrapper,
-          ...getArrayOfLengthOfItem(3, GridColumn)
+          Subheading,
+          ...getArrayOfLengthOfItem(2, Paragraph),
+          ...getArrayOfLengthOfItem(1, Modal)
         );
-      });
-    });
-
-    describe('the conditional `GridColumn` component', () => {
-      const getConditionalGridColumn = () =>
-        getPropertyDescription({ extraDescriptionText })
-          .find(GridColumn)
-          .at(6);
-
-      it('should have the right props', () => {
-        const wrapper = getConditionalGridColumn();
-        expectComponentToHaveProps(wrapper, {
-          width: 12,
-        });
-      });
-
-      it('should render the right children', () => {
-        const wrapper = getConditionalGridColumn();
-        expectComponentToHaveChildren(wrapper, Modal);
       });
     });
 

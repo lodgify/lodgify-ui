@@ -24,6 +24,9 @@
 /* Box Shadow */
 
 /* Icon */
+.ui.button > .icon:not(.button) > svg {
+  margin: @iconSvgMargin;
+}
 
 /* Loader */
 
@@ -82,6 +85,7 @@
     text-decoration: underline;
   }
 }
+
 /* Basic Hover */
 
 /* Basic Focus */
@@ -129,14 +133,4 @@
 /* Has Shadow */
 .ui.button.has-shadow {
   box-shadow: @hasShadowBoxShadow;
-}
-
-/* Has Icon */
-.ui.button.has-icon > .icon {
-  display: @hasIconDisplay;
-  height: @hasIconHeight;
-}
-
-.ui.button.has-icon > .icon > * {
-  display: @hasIconDisplay;
 }

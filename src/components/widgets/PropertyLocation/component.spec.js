@@ -9,7 +9,11 @@ import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { Divider } from 'elements/Divider';
 import { Heading } from 'typography/Heading';
+import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
 import { IconCard } from 'elements/IconCard';
 import { GoogleMap } from 'elements/GoogleMap';
@@ -39,11 +43,22 @@ describe('<PropertyLocation />', () => {
   });
 
   describe('the first `Grid` component', () => {
+    it('should render the right props', () => {
+      const wrapper = getPropertyLocation();
+      expectComponentToHaveProps(wrapper, {
+        stackable: true,
+      });
+    });
+  });
+
+  describe('the first `Grid` component', () => {
     it('should render the right children', () => {
       const wrapper = getPropertyLocation();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(4, GridColumn)
+        ...getArrayOfLengthOfItem(2, GridColumn),
+        ...getArrayOfLengthOfItem(2, ShowOnDesktop),
+        ShowOnMobile
       );
     });
   });
@@ -63,41 +78,22 @@ describe('<PropertyLocation />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
-      expectComponentToHaveChildren(wrapper, Heading, Paragraph);
+      expectComponentToHaveChildren(wrapper, Heading, Subheading);
     });
   });
 
   describe('the `Heading` component', () => {
-    const getHeading = () => getPropertyLocation().find(Heading);
-
-    it('should have the right props', () => {
-      const wrapper = getHeading();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
     it('should render the right children', () => {
-      const wrapper = getHeading();
+      const wrapper = getPropertyLocation().find(Heading);
       expectComponentToHaveChildren(wrapper, 'Location');
     });
   });
 
-  describe('the first `Paragraph` component', () => {
-    const getFirstParagraph = () =>
-      getPropertyLocation()
-        .find(Paragraph)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getFirstParagraph();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
+  describe('the `Subheading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getFirstParagraph();
+      const wrapper = getPropertyLocation()
+        .find(Subheading)
+        .at(0);
       expectComponentToHaveChildren(wrapper, locationSummary);
     });
   });
@@ -135,21 +131,24 @@ describe('<PropertyLocation />', () => {
     });
   });
 
-  describe('the third `GridColumn` component', () => {
-    const getThirdGridColumn = () =>
+  describe('the first `ShowOnDesktop` component', () => {
+    const getFirstShowOnDesktop = () =>
       getPropertyLocation()
-        .find(GridColumn)
-        .at(2);
+        .find(ShowOnDesktop)
+        .at(0);
 
     it('should have the right props', () => {
-      const wrapper = getThirdGridColumn();
+      const wrapper = getFirstShowOnDesktop();
       expectComponentToHaveProps(wrapper, {
-        width: 6,
+        parent: GridColumn,
+        parentProps: {
+          width: 6,
+        },
       });
     });
 
     it('should render the right children', () => {
-      const wrapper = getThirdGridColumn();
+      const wrapper = getFirstShowOnDesktop();
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
@@ -205,33 +204,108 @@ describe('<PropertyLocation />', () => {
     });
   });
 
-  describe('the fourth `GridColumn` component', () => {
-    const getFourthGridColumn = () =>
+  describe('the second `ShowOnDesktop` component', () => {
+    const getSecondShowOnDesktop = () =>
       getPropertyLocation()
-        .find(GridColumn)
-        .at(7);
+        .find(ShowOnDesktop)
+        .at(1);
 
     it('should have the right props', () => {
-      const wrapper = getFourthGridColumn();
+      const wrapper = getSecondShowOnDesktop();
       expectComponentToHaveProps(wrapper, {
-        width: 12,
+        parent: GridColumn,
+        parentProps: {
+          width: 12,
+        },
       });
     });
 
     it('should render the right children', () => {
-      const wrapper = getFourthGridColumn();
+      const wrapper = getSecondShowOnDesktop();
       expectComponentToHaveChildren(wrapper, GoogleMap);
     });
   });
 
-  describe('the `GoogleMap` component', () => {
+  describe('the first `GoogleMap` component', () => {
     it('should have the right props', () => {
-      const wrapper = getPropertyLocation().find(GoogleMap);
+      const wrapper = getPropertyLocation()
+        .find(GoogleMap)
+        .at(0);
       expectComponentToHaveProps(wrapper, {
         isShowingExactLocation: false,
         isShowingApproximateLocation: false,
         latitude: props.latitude,
         longitude: props.longitude,
+      });
+    });
+  });
+
+  describe('the first `ShowOnMobile` component', () => {
+    const wrapper = getPropertyLocation()
+      .find(ShowOnMobile)
+      .first();
+
+    it('should have the right props', () => {
+      expectComponentToHaveProps(wrapper, {
+        parent: GridColumn,
+        parentProps: {
+          width: 12,
+        },
+      });
+    });
+
+    it('should render the right children', () => {
+      expectComponentToHaveChildren(wrapper, GoogleMap, Divider, Grid);
+    });
+  });
+
+  describe('the third `Grid` component', () => {
+    it('should render the right children', () => {
+      const wrapper = getPropertyLocation()
+        .find(Grid)
+        .at(2);
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(4, GridColumn)
+      );
+    });
+  });
+
+  describe('each `GridColumn` in the third `Grid` component', () => {
+    const getGridColumnInThirdGrid = () =>
+      getPropertyLocation()
+        .find(Grid)
+        .at(2)
+        .children(GridColumn)
+        .first();
+
+    it('should have the right props', () => {
+      const wrapper = getGridColumnInThirdGrid();
+      expectComponentToHaveProps(wrapper, {
+        width: 3,
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getGridColumnInThirdGrid();
+      expectComponentToHaveChildren(wrapper, IconCard);
+    });
+  });
+
+  describe('each `IconCard` in the third `Grid` component', () => {
+    const getIconCardInThirdGrid = () =>
+      getPropertyLocation()
+        .find(Grid)
+        .at(2)
+        .find(IconCard)
+        .first();
+
+    it('should have the right props', () => {
+      const wrapper = getIconCardInThirdGrid();
+      expectComponentToHaveProps(wrapper, {
+        isFilled: true,
+        label: expect.any(String),
+        name: transportOptions[0].iconName,
       });
     });
   });

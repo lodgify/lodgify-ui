@@ -3,35 +3,37 @@ import { shallow } from 'enzyme';
 
 import { Component as Paragraph } from './component';
 
+const getParagraph = props => shallow(<Paragraph {...props} />);
+
 const children = '🚸';
 
 describe('<Paragraph />', () => {
-  it('should render a single `p`', () => {
-    const header = shallow(<Paragraph>{children}</Paragraph>);
-    const actual = header.find('p').length;
-    expect(actual).toBe(1);
+  it('should default render a single `p`', () => {
+    const header = getParagraph({ children });
+    const actual = header.find('p');
+    expect(actual).toHaveLength(1);
   });
 
   it('should default to adding no className', () => {
-    const header = shallow(<Paragraph>{children}</Paragraph>);
-    const actual = header.find('p.tiny').length;
-    expect(actual).toBe(0);
+    const header = getParagraph({ children });
+    const actual = header.find('p.tiny');
+    expect(actual).toHaveLength(0);
   });
 
   it('should add no className if `props.size` is `medium`', () => {
-    const header = shallow(<Paragraph size="medium">{children}</Paragraph>);
-    const actual = header.find('p.medium').length;
-    expect(actual).toBe(0);
+    const header = getParagraph({ children, size: 'medium' });
+    const actual = header.find('p.medium');
+    expect(actual).toHaveLength(0);
   });
 
   it('should add className `tiny` if `props.size` is `tiny`', () => {
-    const header = shallow(<Paragraph size="tiny">{children}</Paragraph>);
-    const actual = header.find(`p.tiny`).length;
-    expect(actual).toBe(1);
+    const header = getParagraph({ children, size: 'tiny' });
+    const actual = header.find(`p.tiny`);
+    expect(actual).toHaveLength(1);
   });
 
   it('should render children', () => {
-    const header = shallow(<Paragraph>{children}</Paragraph>);
+    const header = getParagraph({ children });
     const actual = header.contains(children);
     expect(actual).toBe(true);
   });

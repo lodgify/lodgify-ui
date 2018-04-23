@@ -55,17 +55,8 @@ describe('<PropertyPictures />', () => {
   });
 
   describe('the `Heading` component', () => {
-    const getHeading = () => getPropertyPictures().find(Heading);
-
-    it('should have the right props', () => {
-      const wrapper = getHeading();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
     it('should render the right children', () => {
-      const wrapper = getHeading();
+      const wrapper = getPropertyPictures().find(Heading);
       expectComponentToHaveChildren(wrapper, 'Property pictures');
     });
   });

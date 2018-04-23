@@ -26,7 +26,7 @@ export const Component = ({
       {logoSrc ? (
         <Image alt={logoText} src={logoSrc} />
       ) : (
-        <Heading size="tiny">{logoText}</Heading>
+        <Heading size="small">{logoText}</Heading>
       )}
     </Menu.Item>
     <Menu.Menu position="right">

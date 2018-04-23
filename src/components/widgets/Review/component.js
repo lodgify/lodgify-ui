@@ -6,7 +6,7 @@ import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
-import { Paragraph } from 'typography/Paragraph';
+import { Subheading } from 'typography/Subheading';
 import { Quote } from 'elements/Quote';
 
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
@@ -31,16 +31,17 @@ export const Component = ({
       <Card.Meta>
         <Grid>
           <GridRow verticalAlign="middle">
-            <GridColumn width={6} floated="left">
-              <Paragraph size="tiny">
+            <GridColumn mobile={7} computer={6} floated="left">
+              <Subheading>
                 {getReviewerNameAndLocationString(
                   reviewerName,
                   reviewerLocation
                 )}
-              </Paragraph>
+              </Subheading>
             </GridColumn>
             <GridColumn
-              width={6}
+              mobile={5}
+              computer={6}
               floated="right"
               textAlign="right"
               verticalAlign="middle"

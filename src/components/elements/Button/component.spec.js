@@ -1,11 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Icon, Button as SemanticButton } from 'semantic-ui-react';
+import { Button as SemanticButton } from 'semantic-ui-react';
 
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
+  expectComponentToHaveDisplayName,
 } from 'lib/expect-helpers';
+import { Icon } from 'elements/Icon';
 
 import { Component as Button } from './component';
 
@@ -14,8 +17,7 @@ const getButton = props => shallow(<Button {...props}>Press me</Button>);
 describe('<Button />', () => {
   it('should render a single Semantic UI `Button` component', () => {
     const wrapper = getButton();
-    const actual = wrapper.is(SemanticButton);
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, SemanticButton);
   });
 
   it('should pass the `Button` component the right props', () => {
@@ -25,6 +27,7 @@ describe('<Button />', () => {
       floated: 'left',
       loading: false,
       circular: false,
+      compact: false,
     });
   });
 
@@ -53,6 +56,15 @@ describe('<Button />', () => {
     });
   });
 
+  describe('if `props.isCompact` is true', () => {
+    it('should pass the `Button` component `compact={true}`', () => {
+      const wrapper = getButton({ isCompact: true });
+      expectComponentToHaveProps(wrapper, {
+        compact: true,
+      });
+    });
+  });
+
   describe('if `props.size` is informed', () => {
     it('should pass the `Button` component `size={size}`', () => {
       const wrapper = getButton({ size: 'massive' });
@@ -68,32 +80,18 @@ describe('<Button />', () => {
   });
 
   describe('if `props.icon` is informed', () => {
-    const getButtonWithIcon = () => getButton({ icon: 'world' });
+    const getButtonWithIcon = () => getButton({ icon: 'search' });
 
-    it('should render a <span>', () => {
+    it('should render an <Icon />', () => {
       const wrapper = getButtonWithIcon();
-      expectComponentToHaveChildren(wrapper, 'span', 'Press me');
-    });
-
-    it('should have the `has-icon` className', () => {
-      const wrapper = getButtonWithIcon();
-      expectComponentToHaveProps(wrapper, {
-        className: 'has-icon',
-      });
-    });
-
-    describe('the <span>', () => {
-      it('should render an <Icon />', () => {
-        const wrapper = getButtonWithIcon().children('span');
-        expectComponentToHaveChildren(wrapper, Icon);
-      });
+      expectComponentToHaveChildren(wrapper, Icon, 'Press me');
     });
 
     describe('the <Icon>', () => {
       it('should have the right props', () => {
         const wrapper = getButtonWithIcon().find(Icon);
         expectComponentToHaveProps(wrapper, {
-          name: 'world',
+          name: 'search',
         });
       });
     });
@@ -109,7 +107,6 @@ describe('<Button />', () => {
   });
 
   it('should have displayName `Button`', () => {
-    const actual = Button.displayName;
-    expect(actual).toBe('Button');
+    expectComponentToHaveDisplayName(Button, 'Button');
   });
 });

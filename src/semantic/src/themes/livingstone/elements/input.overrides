@@ -11,16 +11,21 @@
   max-width: @inputMaxWidth;
   width: @inputWidth;
 
-/*-------------------
+  /*-------------------
         Types
 --------------------*/
 
-/* Icon Input */
+  /* Icon Input */
 
-// Partial duplication of declarations
-// for `.ui.icon.input > i.icon`
-// in `semantic/src/definitions/elements/input.less`
+  // Partial duplication of declarations
+  // for `.ui.icon.input > i.icon`
+  // in `semantic/src/definitions/elements/input.less`
   &.left.icon {
+
+    & > i.icon {
+      padding: @iconPadding;
+    }
+
     & > i.flag:not(.icon) {
       cursor: default;
       height: 100%;
@@ -44,6 +49,7 @@
     input:focus ~ i.flag:not(.icon),
     textarea:focus ~ i.flag:not(.icon),
     &.dirty > i.flag:not(.icon) {
+
       &:before {
         filter: none;
       }
@@ -60,9 +66,9 @@
     }
   }
 
-/* Circular Icon Input */
+  /* Circular Icon Input */
 
-/* Labeled Input */
+  /* Labeled Input */
   label {
     color: @labelColor;
     cursor: text;
@@ -80,8 +86,9 @@
     transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
   }
 
-/* textarea */
-/* Date range picker */
+  /* textarea */
+
+  /* Date range picker */
   textarea,
   .DateRangePickerInput {
     background: @background;
@@ -193,6 +200,7 @@
         padding: @dateRangePickerPickerTablePadding;
 
         table.CalendarMonth_table {
+
           td.CalendarDay {
             border: none;
             box-sizing: content-box;
@@ -214,6 +222,7 @@
             }
 
             &.CalendarDay__selected {
+
               &,
               &:active,
               &:hover {
@@ -224,6 +233,7 @@
 
             &.CalendarDay__blocked_calendar,
             &.CalendarDay__blocked_out_of_range {
+
               &,
               &:hover, {
                 background: @dateRangePickerPickerDayBlockedBackground;
@@ -240,17 +250,17 @@
     }
   }
 
-/*-------------------
+  /*-------------------
         States
 --------------------*/
 
-/* Placeholder */
+  /* Placeholder */
 
-/* Down */
+  /* Down */
 
-/* Focus */
+  /* Focus */
   textarea:focus,
-  &.focus .DateRangePickerInput  {
+  &.focus .DateRangePickerInput {
     border-color: @focusBorderColor;
     background: @focusBackground;
     color: @focusColor;
@@ -262,8 +272,9 @@
     padding-bottom: @dateRangePickerInputFocusedPaddingBottom;
   }
 
-/* Error */
+  /* Error */
   &.error {
+
     input,
     textarea,
     .DateRangePickerInput {
@@ -289,10 +300,11 @@
     }
   }
 
-/* Loader */
+  /* Loader */
 
-/* Hover */
+  /* Hover */
   &:hover:not(.error):not(.valid):not(.dirty):not(.focus) {
+
     input:not(:focus),
     textarea:not(:focus),
     .DateRangePickerInput {
@@ -301,8 +313,9 @@
     }
   }
 
-/* Dirty */
+  /* Dirty */
   &.dirty:not(.error):not(.valid) {
+
     input,
     textarea,
     .DateRangePickerInput {
@@ -315,37 +328,37 @@
     }
   }
 
-/* Valid */
+  /* Valid */
   &.valid {
+
     input,
     textarea,
-    .DateRangePickerInput  {
+    .DateRangePickerInput {
       background: @focusedInputBackground;
       border-color: @validBorderColor;
     }
 
     .DateRangePickerInput {
       color: @focusColor;
+
       input:not(.DateInput_input__focused) {
         border-color: transparent;
       }
     }
 
-    i.large.green.checkmark.icon {
-      height: @validIconHeight;
-      left: auto;
-      opacity: inherit;
+    i.green.icon {
+      left: inherit;
+      opacity: @validIconOpacity;
+      padding: @validIconPadding;
       position: absolute;
       right: @inputHorizontalPadding;
-      top: @validIconPositionTop;
       z-index: @validIconZIndex;
     }
   }
 
-/*-------------------
+  /*-------------------
       Variations
 --------------------*/
 
-/* Inverted */
-
+  /* Inverted */
 }

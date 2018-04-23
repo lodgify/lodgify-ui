@@ -8,25 +8,21 @@
 
 .ui.dropdown {
 
-/*-------------------
+  /*-------------------
        Content
 --------------------*/
 
   .menu {
 
-/* Icon */
-    .dropdown.icon:before {
-      content: '\f0d7';
-    }
+    /* Icon */
 
-/* Current Text */
+    /* Current Text */
 
-/* Menu */
+    /* Menu */
 
+    /* Text */
 
-/* Text */
-
-/* Menu Item */
+    /* Menu Item */
     & > .item {
       text-decoration: @itemTextDecoration;
       transition: @itemTransition;
@@ -45,17 +41,17 @@
         color: @hoveredItemColor;
       }
     }
-
   }
-/* Sub Menu */
 
-/* Menu Header */
+  /* Sub Menu */
 
-/* Menu Divider */
+  /* Menu Header */
 
-/* Menu Input */
+  /* Menu Divider */
 
-/* Menu Image */
+  /* Menu Input */
+
+  /* Menu Image */
   & > .text > .image,
   & > .text > img,
   .menu > .item .image,
@@ -69,7 +65,7 @@
     min-width: @menuImageMinWidth;
     vertical-align: middle;
 
-    & ~ .text{
+    & ~ .text {
       font-size: @tinyParagraphFontSize;
     }
 
@@ -77,8 +73,8 @@
       filter: @grayscaleFilter;
     }
   }
-
 }
+
 /* Item Sub-Element */
 
 /* Sub-Menu Dropdown Icon */
@@ -111,34 +107,50 @@
     .menu {
       margin-top: @menuMarginTop;
     }
+
+    // Partial reimplementation of styles for
+    // .ui.selection.dropdown > .dropdown.icon
+    // in `semantic/src/definitions/modules/dropdown.less`
+    > i.icon {
+      position: absolute;
+      right: @selectionHorizontalPadding;
+      z-index: @selectionIconZIndex;
+      margin: @selectionIconMargin;
+      padding: @selectionIconPadding;
+      opacity: @selectionIconOpacity;
+      transition: @selectionIconTransition;
+    }
   }
 
-/* <select> */
+  /* <select> */
 
-/* Responsive */
+  /* Responsive */
 
-/* Derived */
+  /* Derived */
 
-/* Hover */
-/* Focus */
+  /* Hover */
+
+  /* Focus */
   .ui.selection.dropdown:hover,
   .ui.selection.dropdown:focus {
     background: @selectionFocusBackground;
   }
 
   &.focus {
+
     & > i.icon {
       color: @textColor;
     }
   }
 
-/* Visible */
+  /* Visible */
 
-/* Visible Hover */
+  /* Visible Hover */
 
-/* Dirty */
+  /* Dirty */
 
   &.dirty {
+
     & > i.icon {
       color: @textColor;
     }
@@ -150,7 +162,7 @@
     }
   }
 
-/*  With Icon */
+  /*  With Icon */
   & > i.icon {
     color: @iconColor;
     padding: @iconPadding;
@@ -162,18 +174,19 @@
     }
   }
 
-/*  With Image */
-  &.has-images{
+  /*  With Image */
+  &.has-images {
+
     & > i.icon {
       top: @dropdownWithImagesCaretPaddingTop;
     }
 
-    .ui.selection.dropdown > .dropdown.icon {
+    .ui.selection.dropdown > i.icon {
       padding-top: @dropdownWithImagesCaretPaddingTop;
     }
   }
 
-/*  With Label */
+  /*  With Label */
   label {
     color: @labelColor;
     left: @itemHorizontalPadding;
@@ -183,16 +196,9 @@
     transition: transform @defaultDuration, font-size @defaultDuration;
   }
 
-  &.focus,
-  &.dirty {
-    label {
-      color: @labelFocusColor;
-      font-size: @labelFocusFontSize;
-      transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
-    }
-  }
-
+  // stylelint-disable-next-line no-duplicate-selectors
   & > i.icon {
+
     & ~ label {
       left: @withIconLabelLeftPosition;
     }
@@ -200,13 +206,20 @@
 
   &.focus,
   &.dirty {
+
+    label {
+      color: @labelFocusColor;
+      font-size: @labelFocusFontSize;
+      transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
+    }
+
     & > i.icon {
+
       & ~ label {
         transform: translate(-(@withIconLabelFocusXTranslate), -(@labelFocusYTranslate));
       }
     }
   }
-
 }
 
 /*--------------
@@ -262,15 +275,22 @@
 /* Floating */
 
 /* Pointing */
-.ui.pointing.dropdown .menu {
-  min-width: @pointingMenuMinWidth;
+.ui.pointing.dropdown {
 
-  .item {
-    text-align: @pointingDropdownTextAlign;
+  i.icon {
+    margin: @dropdownIconMargin;
   }
 
-  a.item .text {
-    color: @textColor;
+  .menu {
+    min-width: @pointingMenuMinWidth;
+
+    .item {
+      text-align: @pointingDropdownTextAlign;
+    }
+
+    a.item .text {
+      color: @textColor;
+    }
   }
 }
 

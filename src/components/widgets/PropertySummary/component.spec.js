@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Segment, Icon, Rating } from 'semantic-ui-react';
+import { Segment, Rating } from 'semantic-ui-react';
 
+import { Icon } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
 
 import { Component as PropertySummary } from './component';
@@ -56,23 +57,10 @@ describe('<PropertySummary />', () => {
   });
 
   describe('the first `Heading` component', () => {
-    const getFirstHeading = () =>
-      getPropertySummary()
+    it('should have the right children', () => {
+      const wrapper = getPropertySummary()
         .find(Heading)
         .first();
-
-    it('should have the right props', () => {
-      const wrapper = getFirstHeading();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'tiny',
-        })
-      );
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getFirstHeading();
       const actual = wrapper.prop('children');
       expect(actual).toBe(props.propertyName);
     });
@@ -112,7 +100,7 @@ describe('<PropertySummary />', () => {
       expect(actual).toEqual(expect.arrayContaining([props.locationName]));
     });
 
-    it('should render a single Semantic UI `Icon` component', () => {
+    it('should render a single Lodgify UI `Icon` component', () => {
       const wrapper = getSecondSegment();
       const actual = wrapper.find(Icon);
       expect(actual).toHaveLength(1);
@@ -131,6 +119,7 @@ describe('<PropertySummary />', () => {
         expect.objectContaining({
           color: 'yellow',
           name: 'map pin',
+          size: 'small',
         })
       );
     });
@@ -164,7 +153,7 @@ describe('<PropertySummary />', () => {
           disabled: true,
           maxRating: 5,
           rating: Math.round(props.ratingNumber),
-          size: 'mini',
+          size: 'tiny',
         })
       );
     });
@@ -199,7 +188,7 @@ describe('<PropertySummary />', () => {
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
-          size: 'mini',
+          size: 'small',
         })
       );
     });

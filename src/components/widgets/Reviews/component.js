@@ -19,12 +19,13 @@ export const Component = ({ reviews, ratingAverage }) => (
   <Grid>
     <GridRow>
       <GridColumn width={12}>
-        <Heading size="tiny">Reviews</Heading>
+        <Heading>Reviews</Heading>
       </GridColumn>
     </GridRow>
     <GridRow verticalAlign="middle">
       <GridColumn
-        width={6}
+        mobile={5}
+        computer={6}
         textAlign="left"
         verticalAlign="middle"
         floated="left"
@@ -37,8 +38,13 @@ export const Component = ({ reviews, ratingAverage }) => (
         />
         <span>{Math.round(ratingAverage)}</span>
       </GridColumn>
-      <GridColumn width={6} verticalAlign="middle" floated="right">
-        <Button size="medium" isPositionedRight isRounded>
+      <GridColumn
+        mobile={7}
+        computer={6}
+        verticalAlign="middle"
+        floated="right"
+      >
+        <Button isCompact size="medium" isPositionedRight isRounded>
           Submit a review
         </Button>
       </GridColumn>

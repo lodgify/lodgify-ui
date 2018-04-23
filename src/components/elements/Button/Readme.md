@@ -35,7 +35,7 @@
 
 ```jsx
 <div>
-  <Button icon="world">
+  <Button icon="search">
     Submit
   </Button>
 </div>

@@ -11,7 +11,7 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Divider } from 'elements/Divider';
 import { Quote } from 'elements/Quote';
-import { Paragraph } from 'typography/Paragraph';
+import { Subheading } from 'typography/Subheading';
 
 import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
@@ -142,32 +142,21 @@ describe('<Review />', () => {
     it('should render the right props', () => {
       const wrapper = getFirstGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 6,
+        mobile: 7,
+        computer: 6,
         floated: 'left',
       });
     });
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
-      expectComponentToHaveChildren(wrapper, Paragraph);
+      expectComponentToHaveChildren(wrapper, Subheading);
     });
   });
 
-  describe('the first `Paragraph` component', () => {
-    const getFirstParagraph = () =>
-      getReview()
-        .find(Paragraph)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getFirstParagraph();
-      expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
-      });
-    });
-
+  describe('the `Paragraph` component', () => {
     it('should have the right children', () => {
-      const wrapper = getFirstParagraph();
+      const wrapper = getReview().find(Subheading);
       expectComponentToHaveChildren(
         wrapper,
         getReviewerNameAndLocationString(
@@ -187,7 +176,8 @@ describe('<Review />', () => {
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 6,
+        mobile: 5,
+        computer: 6,
         floated: 'right',
         textAlign: 'right',
         verticalAlign: 'middle',
