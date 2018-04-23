@@ -5,6 +5,8 @@ import { List } from 'semantic-ui-react';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
+  expectComponentToHaveDisplayName,
+  expectComponentToBe,
 } from 'lib/expect-helpers';
 import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
@@ -34,8 +36,7 @@ const getPropertyRules = () => shallow(<PropertyRules {...props} />);
 describe('<PropertyRules />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getPropertyRules();
-    const actual = wrapper.is(Grid);
-    expect(actual).toBeTruthy();
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the first `Grid` component', () => {
@@ -219,8 +220,7 @@ describe('<PropertyRules />', () => {
     });
   });
 
-  it('should have `displayName` `PropertyRules`', () => {
-    const actual = PropertyRules.displayName;
-    expect(actual).toBe('PropertyRules');
+  it('should have displayName `PropertyRules`', () => {
+    expectComponentToHaveDisplayName(PropertyRules, 'PropertyRules');
   });
 });
