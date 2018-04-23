@@ -19,9 +19,13 @@
   /* Form Label */
 
   /* Input */
-  .field .ui.input,
-  .fields .field .ui.input {
-    max-width: unset;
+  .field,
+  .fields .field {
+
+    .ui.input,
+    .ui.dropdown {
+      max-width: 100%;
+    }
   }
 
   /* Select */
@@ -78,6 +82,13 @@
 --------------------*/
 
   /* Grouped Fields */
+  &[class*="equal width"] .fields > .field,
+  [class*="equal width"].fields > .field {
+    // This prevents any field from extending beyond the right edge of its
+    // containing field group. Flex sizing of each field is delegated to
+    // `semantic/src/definitions/collections/form.less` line 950
+    width: 0%;
+  }
 
   /* Inline */
 
