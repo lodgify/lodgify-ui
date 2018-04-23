@@ -13,7 +13,7 @@ import { Icon } from 'elements/Icon';
  * @returns {Object}
  */
 export const Component = ({ checkInTime, checkOutTime, rules }) => (
-  <Grid>
+  <Grid stackable>
     <GridColumn width={12}>
       <Heading size="small">House Rules</Heading>
     </GridColumn>

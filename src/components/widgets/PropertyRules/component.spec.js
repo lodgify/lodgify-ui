@@ -31,12 +31,20 @@ const props = {
   rules,
 };
 
-const getPropertyRules = () => shallow(<PropertyRules {...props} />);
+const getPropertyRules = otherProps =>
+  shallow(<PropertyRules {...props} {...otherProps} />);
 
 describe('<PropertyRules />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getPropertyRules();
     expectComponentToBe(wrapper, Grid);
+  });
+
+  it('should have the right props', () => {
+    const wrapper = getPropertyRules();
+    expectComponentToHaveProps(wrapper, {
+      stackable: true,
+    });
   });
 
   describe('the first `Grid` component', () => {
