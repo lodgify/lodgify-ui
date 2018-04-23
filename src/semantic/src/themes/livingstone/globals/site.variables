@@ -133,6 +133,14 @@
      Breakpoints
 --------------------*/
 
+@mobileBreakpoint: 1px;
+@tabletBreakpoint: 600px;
+@computerBreakpoint: 1000px;
+@largeMonitorBreakpoint: 1920px;
+@widescreenMonitorBreakpoint: 1920px;
+
+@mobileScreen: ~"only screen and (min-width: @{mobileBreakpoint}) and (max-width: @{largestMobileScreen})";
+
 /*-------------------
       Site Colors
 --------------------*/
