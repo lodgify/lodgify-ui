@@ -7,6 +7,8 @@
 --------------------*/
 
 .ui.label {
+  height: @keyFactsHeight;
+  width: @keyFactsWidth;
 
   /* Group */
 
@@ -26,6 +28,7 @@
       line-height: @iconCardTextLineHeight;
       margin: @iconCardTextMargin;
       text-align: center;
+      white-space: nowrap;
     }
   }
 

@@ -53,9 +53,10 @@
 --------------------*/
 
 /* Basic */
+@keyFactsWidth: 9em;
+@keyFactsHeight: 9.5em;
 @basicBorderColor: @greyThree;
 @basicBorder: @basicBorderWidth solid @basicBorderColor;
-
 @basicFontWeight: @bold;
 
 /* Tag */
