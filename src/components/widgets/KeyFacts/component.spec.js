@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Label } from 'semantic-ui-react';
 
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
+  expectComponentToHaveDisplayName,
   expectComponentToBe,
 } from 'lib/expect-helpers';
 import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
@@ -38,27 +38,16 @@ describe('<KeyFacts />', () => {
     });
   });
 
-  describe('the `Label.Group` component', () => {
-    it('should render a `Grid` component inside of it', () => {
-      const wrapper = getKeyFacts().find(Label.Group);
-      expectComponentToHaveChildren(wrapper, Grid);
-    });
-
-    it('should render an `GridColumn` for each item in `props.keyFacts`', () => {
-      const wrapper = getKeyFacts()
-        .find(Label.Group)
-        .find(Grid);
-      expectComponentToHaveChildren(
-        wrapper,
-        ...getArrayOfLengthOfItem(keyFacts.length, GridColumn)
-      );
-    });
-
-    it('should render `GridColumns` with the right props', () => {
-      const wrapper = getKeyFacts()
-        .find(Label.Group)
+  describe('the inner `GridColumn` components', () => {
+    const getInnerColumn = () =>
+      getKeyFacts()
         .find(Grid)
-        .find(GridColumn);
+        .at(1)
+        .find(GridColumn)
+        .at(0);
+
+    it('should render with the right props', () => {
+      const wrapper = getInnerColumn();
 
       wrapper.children().forEach((element, index) =>
         expectComponentToHaveProps(wrapper.at(index), {
@@ -71,10 +60,7 @@ describe('<KeyFacts />', () => {
     });
 
     it('should render an `IconCard` for each item in `props.keyFacts`', () => {
-      const wrapper = getKeyFacts()
-        .find(Label.Group)
-        .find(Grid)
-        .find(GridColumn);
+      const wrapper = getInnerColumn();
 
       wrapper
         .children()
@@ -102,8 +88,7 @@ describe('<KeyFacts />', () => {
     });
   });
 
-  it('should have `displayName` `KeyFacts`', () => {
-    const actual = KeyFacts.displayName;
-    expect(actual).toBe('KeyFacts');
+  it('should have displayName `KeyFacts`', () => {
+    expectComponentToHaveDisplayName(KeyFacts, 'KeyFacts');
   });
 });
