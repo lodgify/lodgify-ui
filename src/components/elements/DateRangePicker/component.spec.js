@@ -92,6 +92,7 @@ describe('<DateRangePicker />', () => {
           hideKeyboardShortcutsPanel: true,
           navNext: <Icon name="arrow right" />,
           navPrev: <Icon name="arrow left" />,
+          numberOfMonths: ReactDatesDateRangePicker.defaultProps.numberOfMonths,
         })
       );
     });

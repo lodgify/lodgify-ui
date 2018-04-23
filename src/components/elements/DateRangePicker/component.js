@@ -6,10 +6,10 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 
 import { Icon } from 'elements/Icon';
+import { InputController } from 'elements/InputController';
 
-import { InputController } from '../InputController';
-
-import { pickDatesFromState } from './pickDatesFromState';
+import { pickDatesFromState } from './utils/pickDatesFromState';
+import { getNumberOfMonths } from './utils/getNumberOfMonths';
 
 /**
  * A date range picker lets a user pick a date range.
@@ -87,6 +87,7 @@ export class Component extends PureComponent {
           hideKeyboardShortcutsPanel
           navNext={<Icon name="arrow right" />}
           navPrev={<Icon name="arrow left" />}
+          numberOfMonths={getNumberOfMonths()}
         />
       </InputController>
     );
