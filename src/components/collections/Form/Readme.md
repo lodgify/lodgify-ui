@@ -2,7 +2,7 @@
 const { InputGroup } = require('../InputGroup');
 
 <Grid>
-  <GridColumn width={8}>
+  <GridColumn computer={8} tablet={11} mobile={12}>
     <Form
       headingText="Welcome"
       submitButtonText="Sign up"
@@ -33,7 +33,7 @@ const { InputGroup } = require('../InputGroup');
 
 ```jsx
 <Grid>
-  <GridColumn width={8}>
+  <GridColumn computer={8} tablet={11} mobile={12}>
     <Form
       headingText="Welcome"
       submitButtonText="Sign up"
@@ -59,7 +59,7 @@ A set of fields can appear grouped together.
 const { InputGroup } = require('../InputGroup');
 
 <Grid>
-  <GridColumn width={8}>
+  <GridColumn computer={8} tablet={11} mobile={12}>
     <Form
       headingText="Welcome"
       submitButtonText="Sign up"
@@ -87,7 +87,7 @@ Inputs in forms can take up different widths.
 const { InputGroup } = require('../InputGroup');
 
 <Grid>
-  <GridColumn width={8}>
+  <GridColumn computer={8} tablet={11} mobile={12}>
     <Form>
       <TextInput label="Three" width="three" />
       <TextInput label="Five" width="five" />
@@ -133,7 +133,7 @@ const { InputGroup } = require('../InputGroup');
 
 ```jsx
 <Grid>
-  <GridColumn width={8}>
+  <GridColumn computer={8} tablet={11} mobile={12}>
     <Form
       submitButtonText="Sign up"
     >
@@ -153,7 +153,7 @@ const { InputGroup } = require('../InputGroup');
 
 ```jsx
 <Grid>
-  <GridColumn width={8}>
+  <GridColumn computer={8} tablet={11} mobile={12}>
     <Form
       actionLink={{
         onClick: () => console.log('Clicked the action link'),
