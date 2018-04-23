@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { List } from 'semantic-ui-react';
 
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
-import { getUniqueKey } from 'lib/get-unique-key';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
@@ -18,15 +18,7 @@ export const Component = ({ checkInTime, checkOutTime, rules }) => (
       <Heading size="small">House Rules</Heading>
     </GridColumn>
     <GridColumn width={3}>
-      <div className="ui list">
-        {getParagraphsFromStrings(rules.join('\n')).map(
-          (paragraphText, index) => (
-            <div className="item" key={getUniqueKey(paragraphText, index)}>
-              {paragraphText}
-            </div>
-          )
-        )}
-      </div>
+      <List items={getParagraphsFromStrings(rules.join('\n'))} />
     </GridColumn>
     <GridColumn width={2}>
       <Grid verticalAlign="middle">

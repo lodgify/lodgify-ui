@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { List } from 'semantic-ui-react';
 
 import {
   expectComponentToHaveChildren,
@@ -97,7 +98,7 @@ describe('<PropertyRules />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
-      expectComponentToHaveChildren(wrapper, 'div');
+      expectComponentToHaveChildren(wrapper, List);
     });
   });
 
@@ -116,23 +117,17 @@ describe('<PropertyRules />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
-      expectComponentToHaveChildren(wrapper, 'div');
+      expectComponentToHaveChildren(wrapper, List);
     });
-  });
 
-  describe('each list item in the second `GridColumn` component', () => {
-    const getListItemInSecondGridColumn = () =>
-      getPropertyRules()
-        .find(GridColumn)
-        .at(1)
-        .find('.ui.list')
-        .children();
-
-    it('should render the right children', () => {
-      const wrapper = getListItemInSecondGridColumn();
-      const expected = getParagraphsFromStrings(rules.join('\n'));
-
-      expect(wrapper).toHaveLength(expected.length);
+    it('should have the right props', () => {
+      const wrapper = getSecondGridColumn().find(List);
+      const actual = wrapper.props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          items: getParagraphsFromStrings(rules.join('\n')),
+        })
+      );
     });
   });
 
