@@ -4,6 +4,8 @@ import { Label } from 'semantic-ui-react';
 
 import { getUniqueKey } from 'lib/get-unique-key';
 import { Heading } from 'typography/Heading';
+import { Grid } from 'layout/Grid';
+import { GridColumn } from 'layout/GridColumn';
 import { IconCard } from 'elements/IconCard';
 
 /**
@@ -11,20 +13,33 @@ import { IconCard } from 'elements/IconCard';
  * @returns {Object}
  */
 export const Component = ({ keyFacts }) => (
-  <div>
-    <Heading>Key facts</Heading>
-    <Label.Group>
-      {keyFacts.map(({ iconName, isDisabled, label }, index) => (
-        <IconCard
-          isDisabled={isDisabled}
-          isFilled
-          key={getUniqueKey(label, index)}
-          label={label}
-          name={iconName}
-        />
-      ))}
-    </Label.Group>
-  </div>
+  <Grid>
+    <GridColumn width={12}>
+      <Heading>Key facts</Heading>
+    </GridColumn>
+    <GridColumn width={12}>
+      <Label.Group>
+        <Grid>
+          {keyFacts.map(({ iconName, isDisabled, label }, index) => (
+            <GridColumn
+              computer={2}
+              tablet={3}
+              mobile={4}
+              streched
+              key={getUniqueKey(label, index)}
+            >
+              <IconCard
+                isDisabled={isDisabled}
+                isFilled
+                label={label}
+                name={iconName}
+              />
+            </GridColumn>
+          ))}
+        </Grid>
+      </Label.Group>
+    </GridColumn>
+  </Grid>
 );
 
 Component.displayName = 'KeyFacts';

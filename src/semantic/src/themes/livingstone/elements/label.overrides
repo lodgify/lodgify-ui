@@ -26,6 +26,7 @@
       line-height: @iconCardTextLineHeight;
       margin: @iconCardTextMargin;
       text-align: center;
+      white-space: nowrap;
     }
   }
 
