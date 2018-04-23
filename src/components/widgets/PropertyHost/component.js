@@ -57,7 +57,7 @@ export const Component = ({
               <span>{phone}</span>
             </List.Item>
           )}
-          {!!phone && (
+          {!!languages && (
             <List.Item>
               <span>Languages: </span>
               <span>{languages.join(', ')}</span>
@@ -79,7 +79,7 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The property host URL pointing to her/his avatar picture */
+  /** A url pointing to a picture of the property host */
   avatarUrl: PropTypes.string,
   /** The name of the property host. */
   name: PropTypes.string.isRequired,
