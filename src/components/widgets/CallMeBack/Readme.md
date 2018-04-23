@@ -7,7 +7,7 @@ const {
 } = require('./mock-data/options');
 
 <Grid>
-  <GridColumn width={8}>
+  <GridColumn computer={8} tablet={11} mobile={12}>
     <CallMeBack
       dateOptions={dateOptions}
       propertyOptions={propertyOptions}
