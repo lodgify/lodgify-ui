@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
  * @return {Object}
  */
 export const Component = ({ children }) => (
-  <h5 className="ui sub header">{children}</h5>
+  <span className="ui sub header">{children}</span>
 );
 
 Component.displayName = 'Subheading';

@@ -15,9 +15,9 @@ const children = '🚸';
 const getSubheading = () => shallow(<Subheading>{children}</Subheading>);
 
 describe('<Subheading />', () => {
-  it('should render a single `h5` element', () => {
+  it('should render a single `span` element', () => {
     const wrapper = getSubheading();
-    expectComponentToBe(wrapper, 'h5');
+    expectComponentToBe(wrapper, 'span');
   });
 
   it('should get the right props', () => {
