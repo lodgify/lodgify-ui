@@ -26,7 +26,7 @@ export const Component = ({
   notesText,
   extraNotesText,
 }) => (
-  <Grid>
+  <Grid stackable>
     <GridRow>
       <GridColumn width={12}>
         <Heading>Payment Information</Heading>
