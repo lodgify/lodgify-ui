@@ -52,6 +52,13 @@ describe('<PaymentInformation />', () => {
   });
 
   describe('the first `Grid` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getPaymentInformation();
+      expectComponentToHaveProps(wrapper, {
+        stackable: true,
+      });
+    });
+
     it('should render the right children', () => {
       const wrapper = getPaymentInformation();
       expectComponentToHaveChildren(
