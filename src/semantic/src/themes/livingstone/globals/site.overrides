@@ -308,3 +308,54 @@ blockquote.ui.quote {
 blockquote.ui.quote .row {
   padding: @quoteRowPadding;
 }
+
+/*-------------------
+       Thumbnail
+--------------------*/
+
+.ui.thumbnail {
+
+  .image {
+    background: no-repeat center/cover;
+    width: 75px;
+    max-width: 75px;
+    max-height: 75px;
+    padding-top: 15%;
+  }
+
+  .image.large {
+    width: 100px;
+  }
+
+  .image.small {
+    width: 50px;
+  }
+
+  .image.circular {
+    background: center/100%;
+    border-radius: 50%;
+  }
+
+  .image.square {
+    background: center/cover;
+  }
+
+  .image.circular,
+  .image.square {
+    padding-top: 0;
+  }
+
+  .image.large.circular,
+  .image.large.square {
+    height: 100px;
+  }
+
+  .image.small.circular,
+  .image.small.square {
+    height: 50px;
+  }
+
+  .label {
+
+  }
+}
