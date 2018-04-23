@@ -10,7 +10,6 @@ import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
-import { Paragraph } from 'typography/Paragraph';
 import { Icon } from 'elements/Icon';
 
 import { Component as PropertyRules } from './component';
@@ -73,7 +72,7 @@ describe('<PropertyRules />', () => {
     it('should have the right props', () => {
       const wrapper = getHeading();
       expectComponentToHaveProps(wrapper, {
-        size: 'tiny',
+        size: 'small',
       });
     });
 
@@ -126,13 +125,14 @@ describe('<PropertyRules />', () => {
       getPropertyRules()
         .find(GridColumn)
         .at(1)
-        .find('.list')
+        .find('.ui.list')
         .children();
 
     it('should render the right children', () => {
       const wrapper = getListItemInSecondGridColumn();
       const expected = getParagraphsFromStrings(rules.join('\n'));
-      expectComponentToHaveChildren(wrapper, expected);
+
+      expect(wrapper).toHaveLength(expected.length);
     });
   });
 

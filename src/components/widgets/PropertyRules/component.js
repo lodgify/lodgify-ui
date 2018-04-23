@@ -15,7 +15,7 @@ import { Icon } from 'elements/Icon';
 export const Component = ({ checkInTime, checkOutTime, rules }) => (
   <Grid>
     <GridColumn width={12}>
-      <Heading size="tiny">House Rules</Heading>
+      <Heading size="small">House Rules</Heading>
     </GridColumn>
     <GridColumn width={3}>
       <div className="ui list">
@@ -44,7 +44,7 @@ export const Component = ({ checkInTime, checkOutTime, rules }) => (
     <GridColumn width={2}>
       <Grid verticalAlign="middle">
         <GridColumn width={3}>
-          <Icon name="blind" />
+          <Icon name="question mark" />
         </GridColumn>
         <GridColumn width={9}>
           <div>
