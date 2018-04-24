@@ -6,7 +6,7 @@ const { sixAmenities } = require('./mock-data/amenities');
 
 ### Content
 
-#### More than nine icons
+#### Extra icons
 
 ```jsx
 const { twelveAmenities } = require('./mock-data/amenities');
