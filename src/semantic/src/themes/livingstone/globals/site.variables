@@ -374,3 +374,23 @@
 @quoteMargin: @14px;
 
 @quoteRowPadding: @6px 0;
+
+/*-------------------
+       Thumbnail
+--------------------*/
+
+@thumbnailBackground: center/cover;
+@thumbnailHeight: 75px;
+@thumbnailWidth: @thumbnailHeight;
+@thumbnailBorderRadius: @3px;
+
+@circularBorderRadius: 50%;
+
+@smallThumbnailHeight: 50px;
+@smallThumbnailWidth: @smallThumbnailHeight;
+
+@largeThumbnailHeight: 100px;
+@largeThumbnailWidth: @largeThumbnailHeight;
+
+@hugeThumbnailHeight: 150px;
+@hugeThumbnailWidth: @hugeThumbnailHeight;

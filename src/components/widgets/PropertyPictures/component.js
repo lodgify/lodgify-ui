@@ -4,8 +4,10 @@ import PropTypes from 'prop-types';
 import { getUniqueKey } from 'lib/get-unique-key';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { Thumbnail } from 'elements/Thumbnail';
 import { Heading } from 'typography/Heading';
-import { ResponsiveImage } from 'widgets/ResponsiveImage';
 import { Link } from 'elements/Link';
 
 /**
@@ -19,7 +21,18 @@ export const Component = ({ pictures }) => (
     </GridColumn>
     {pictures.map(({ imageUrl, label }, index) => (
       <GridColumn key={getUniqueKey(label, index)} width={4}>
-        <ResponsiveImage imageUrl={imageUrl} label={label} />
+        <ShowOnDesktop>
+          <Thumbnail size="huge" imageUrl={imageUrl} label={label} />
+        </ShowOnDesktop>
+        <ShowOnMobile>
+          <Thumbnail
+            isSquare
+            hasRoundedCorners
+            size="large"
+            imageUrl={imageUrl}
+            label={label}
+          />
+        </ShowOnMobile>
       </GridColumn>
     ))}
     <GridColumn width={12}>

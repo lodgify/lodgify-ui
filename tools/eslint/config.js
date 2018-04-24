@@ -29,6 +29,7 @@ module.exports = {
   },
   rules: {
     'import/named': 2,
+    'import/newline-after-import': 2,
     'import/no-default-export': 2,
     'import/no-unresolved': [2, importNoUnresolved],
     'import/order': [2, importOrder],

@@ -308,3 +308,53 @@ blockquote.ui.quote {
 blockquote.ui.quote .row {
   padding: @quoteRowPadding;
 }
+
+/*-------------------
+       Thumbnail
+--------------------*/
+
+.ui.thumbnail {
+
+  .image {
+    background: @thumbnailBackground;
+    width: 100%;
+    height: @thumbnailHeight;
+
+    &.small {
+      height: @smallThumbnailHeight;
+    }
+
+    &.large {
+      height: @largeThumbnailHeight;
+    }
+
+    &.huge {
+      height: @hugeThumbnailHeight;
+    }
+
+    &.circular {
+      border-radius: @circularBorderRadius;
+    }
+
+    &.rounded {
+      border-radius: @thumbnailBorderRadius;
+    }
+
+    &.circular,
+    &.square {
+      width: @thumbnailWidth;
+
+      &.small {
+        width: @smallThumbnailWidth;
+      }
+
+      &.large {
+        width: @largeThumbnailWidth;
+      }
+
+      &.huge {
+        width: @hugeThumbnailWidth;
+      }
+    }
+  }
+}
