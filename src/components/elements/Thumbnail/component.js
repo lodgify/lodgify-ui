@@ -45,11 +45,11 @@ Component.propTypes = {
   alternativeText: PropTypes.string,
   /** URL pointing to the image to render */
   imageUrl: PropTypes.string.isRequired,
-  /** Whether to render a circular image */
+  /** Whether to render a circular thumbnail */
   isCircular: PropTypes.bool,
-  /** Whether to render a square image */
+  /** Whether to render a square thumbnail */
   isSquare: PropTypes.bool,
-  /** A visible label for the image */
+  /** A visible label for the thumbnail */
   label: PropTypes.string,
   /** The size of the thumbnail */
   size: PropTypes.oneOf(['small', 'large']),
