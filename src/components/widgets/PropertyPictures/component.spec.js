@@ -8,9 +8,12 @@ import {
 import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { Heading } from 'typography/Heading';
 import { ResponsiveImage } from 'widgets/ResponsiveImage';
 import { Link } from 'elements/Link';
+import { Thumbnail } from 'elements/Thumbnail';
 
 import { pictures } from './mock-data/pictures';
 import { Component as PropertyPictures } from './component';
@@ -76,6 +79,17 @@ describe('<PropertyPictures />', () => {
 
     it('should render the right children', () => {
       const wrapper = getGridColumnInArray();
+      expectComponentToHaveChildren(wrapper, ShowOnDesktop, ShowOnMobile);
+    });
+  });
+
+  describe('each of the array of `ShowOnDesktop`s', () => {
+    const getShowOnDesktopInArray = () =>
+      getPropertyPictures()
+        .find(ShowOnDesktop)
+        .at(0);
+    it('should render the right children', () => {
+      const wrapper = getShowOnDesktopInArray();
       expectComponentToHaveChildren(wrapper, ResponsiveImage);
     });
   });
@@ -84,6 +98,30 @@ describe('<PropertyPictures />', () => {
     it('should get the right props', () => {
       const wrapper = getPropertyPictures()
         .find(ResponsiveImage)
+        .at(0);
+      const { imageUrl, label } = pictures[0];
+      expectComponentToHaveProps(wrapper, {
+        imageUrl,
+        label,
+      });
+    });
+  });
+
+  describe('each of the array of `ShowOnMobile`s', () => {
+    const getShowOnMobileInArray = () =>
+      getPropertyPictures()
+        .find(ShowOnMobile)
+        .at(0);
+    it('should render the right children', () => {
+      const wrapper = getShowOnMobileInArray();
+      expectComponentToHaveChildren(wrapper, Thumbnail);
+    });
+  });
+
+  describe('each `Thumbnail` component', () => {
+    it('should get the right props', () => {
+      const wrapper = getPropertyPictures()
+        .find(Thumbnail)
         .at(0);
       const { imageUrl, label } = pictures[0];
       expectComponentToHaveProps(wrapper, {
