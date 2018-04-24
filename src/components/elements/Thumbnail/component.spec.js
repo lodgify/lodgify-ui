@@ -1,93 +1,136 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Image as SemanticImage, Label } from 'semantic-ui-react';
 
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
+} from 'lib/expect-helpers';
+import { getBackgroundImageUrl } from 'lib/get-background-image-url';
 import { Paragraph } from 'typography/Paragraph';
 
 import { Component as Thumbnail } from './component';
 
-const getThumbnail = props => shallow(<Thumbnail {...props} />);
+const props = {
+  imageUrl: 'www.⚡️.net',
+};
+
+const getThumbnail = extraProps =>
+  shallow(<Thumbnail {...props} {...extraProps} />);
 
 describe('<Thumbnail />', () => {
-  it('should render a single Lodgify UI `Thumbnail` component', () => {
-    const image = getThumbnail();
-    expect(image).toHaveLength(1);
+  it('should render a single Lodgify UI `div` element', () => {
+    const wrapper = getThumbnail();
+    expectComponentToBe(wrapper, 'div');
   });
 
-  describe('the `Thumbnail` component', () => {
-    const props = {
-      imageUrl: 'Dummy URL 🙄',
-      sources: [],
-      alternativeText: 'Alternative Text 😝',
-      className: null,
-      isCircular: false,
-      isFluid: true,
-      onLoad: Function.prototype,
-      imageTitle: 'Thumbnail title',
-    };
-
-    it('should have a <Label> when no imageUrl is provided', () => {
-      const actual = getThumbnail().find(Label);
-      expect(actual).toHaveLength(1);
+  it('should have the right `ui thumbnail` classNames', () => {
+    const wrapper = getThumbnail();
+    expectComponentToHaveProps(wrapper, {
+      className: 'ui thumbnail',
     });
+  });
 
-    it('should contain a Semantic UI <Image> with the right props', () => {
-      const semanticImage = getThumbnail(props).find(SemanticImage);
+  it('should render a single `div`', () => {
+    const wrapper = getThumbnail();
+    expectComponentToHaveChildren(wrapper, 'div');
+  });
 
-      const actual = semanticImage.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          src: props.imageUrl,
-          alt: props.alternativeText,
-          circular: props.isCircular,
-          className: String.prototype,
-          fluid: props.isFluid,
-          onLoad: props.onLoad,
-          title: props.imageTitle,
-          as: 'img',
-          ui: true,
-        })
-      );
-    });
+  describe('the second `div` element', () => {
+    const getSecondDiv = () =>
+      getThumbnail()
+        .find('div')
+        .at(1);
 
-    it('should not have any <source> when no imageUrl is provided', () => {
-      const sources = getThumbnail(props).find('source');
-
-      expect(sources).toHaveLength(0);
-    });
-
-    it('should have defined the right <source>s when provided', () => {
-      const sources = [
-        {
-          srcset:
-            '//si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max',
-          media: '(min-width: 1200px)',
+    it('should have the right props', () => {
+      const wrapper = getSecondDiv();
+      expectComponentToHaveProps(wrapper, {
+        className: 'ui image',
+        style: {
+          backgroundImage: getBackgroundImageUrl(props.imageUrl),
         },
-        {
-          srcset:
-            '//si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max',
-          media: '(min-width: 1024px)',
-        },
-      ];
-      const actual = getThumbnail({ ...props, sources }).find('source');
+      });
+    });
 
-      expect(actual).toHaveLength(2);
+    describe('if `props.isCircular` is true', () => {
+      const getSecondDivWithIsCircularProp = () =>
+        getThumbnail({ isCircular: true })
+          .find('div')
+          .at(1);
+
+      it('should have the right classNames', () => {
+        const wrapper = getSecondDivWithIsCircularProp();
+        expectComponentToHaveProps(wrapper, {
+          className: 'ui image circular',
+        });
+      });
+    });
+
+    describe('if `props.isSquare` is true', () => {
+      const getSecondDivWithIsSquareProp = () =>
+        getThumbnail({ isSquare: true })
+          .find('div')
+          .at(1);
+
+      it('should have the right classNames', () => {
+        const wrapper = getSecondDivWithIsSquareProp();
+        expectComponentToHaveProps(wrapper, {
+          className: 'ui image square',
+        });
+      });
+    });
+
+    describe('if `props.size` is supplied', () => {
+      const getSecondDivWithSizeProp = () =>
+        getThumbnail({ size: 'small' })
+          .find('div')
+          .at(1);
+
+      it('should have the right classNames', () => {
+        const wrapper = getSecondDivWithSizeProp();
+        expectComponentToHaveProps(wrapper, {
+          className: 'ui image small',
+        });
+      });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getSecondDiv();
+      expectComponentToHaveChildren(wrapper, 'span');
     });
   });
 
-  it('should render a single Lodgify UI `Paragraph` component when passed a label prop', () => {
-    const label = '🔷';
-    const wrapper = getThumbnail({ label });
-    const actual = wrapper.find(Paragraph);
-    expect(actual).toHaveLength(1);
+  describe('the only `span`', () => {
+    const getFirstSpan = () => getThumbnail().find('span');
+    it('should have the right props', () => {
+      const wrapper = getFirstSpan();
+      expectComponentToHaveProps(wrapper, {
+        role: 'img',
+      });
+    });
+
+    describe('if `props.alternativeText` is informed', () => {
+      const getFirstSpanWithPropAlternativeText = () =>
+        getThumbnail({ alternativeText: 'lightning' }).find('span');
+
+      it('should have the right `props`', () => {
+        const wrapper = getFirstSpanWithPropAlternativeText();
+        expectComponentToHaveProps(wrapper, {
+          'aria-label': 'lightning',
+        });
+      });
+    });
   });
 
-  describe('the `Paragraph` component', () => {
-    it('should get `props.label` as its children', () => {
-      const label = '🔷';
-      const wrapper = getThumbnail({ label });
-      const actual = wrapper.find(Paragraph).prop('children');
-      expect(actual).toBe(label);
+  describe('if `props.Label` is informed', () => {
+    it('should render the right children', () => {
+      const wrapper = getThumbnail({ label: 'Hello' });
+      expectComponentToHaveChildren(wrapper, 'div', Paragraph);
     });
+  });
+
+  it('should have the displayName `Thumbnail`', () => {
+    expectComponentToHaveDisplayName(Thumbnail, 'Thumbnail');
   });
 });
