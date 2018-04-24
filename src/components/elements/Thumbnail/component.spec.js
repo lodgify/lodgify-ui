@@ -81,6 +81,20 @@ describe('<Thumbnail />', () => {
       });
     });
 
+    describe('if `props.isRoundEdged` is true', () => {
+      const getSecondDivWithIsSquareProp = () =>
+        getThumbnail({ isRoundEdged: true })
+          .find('div')
+          .at(1);
+
+      it('should have the right classNames', () => {
+        const wrapper = getSecondDivWithIsSquareProp();
+        expectComponentToHaveProps(wrapper, {
+          className: 'ui image rounded',
+        });
+      });
+    });
+
     describe('if `props.size` is supplied', () => {
       const getSecondDivWithSizeProp = () =>
         getThumbnail({ size: 'small' })

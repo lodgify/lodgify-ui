@@ -319,7 +319,6 @@ blockquote.ui.quote .row {
     background: @thumbnailBackground;
     width: 100%;
     height: @thumbnailHeight;
-    border-radius: @thumbnailBorderRadius;
 
     &.small {
       height: @smallThumbnailHeight;
@@ -329,8 +328,16 @@ blockquote.ui.quote .row {
       height: @largeThumbnailHeight;
     }
 
+    &.huge {
+      height: @hugeThumbnailHeight;
+    }
+
     &.circular {
       border-radius: @circularBorderRadius;
+    }
+
+    &.rounded {
+      border-radius: @thumbnailBorderRadius;
     }
 
     &.circular,
@@ -343,6 +350,10 @@ blockquote.ui.quote .row {
 
       &.large {
         width: @largeThumbnailWidth;
+      }
+
+      &.huge {
+        width: @hugeThumbnailWidth;
       }
     }
   }

@@ -387,3 +387,6 @@
 
 @largeThumbnailHeight: 100px;
 @largeThumbnailWidth: @largeThumbnailHeight;
+
+@hugeThumbnailHeight: 150px;
+@hugeThumbnailWidth: @hugeThumbnailHeight;
