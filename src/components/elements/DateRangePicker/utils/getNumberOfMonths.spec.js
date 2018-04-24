@@ -1,25 +1,30 @@
+import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from '../constants';
+
 import { getNumberOfMonths } from './getNumberOfMonths';
 
 describe('getNumberOfMonths', () => {
-  it('should return undefined if `window.innerWidth` is 800 or more', () => {
-    const testCases = [1000, 801, 800];
-    const windowInnerWidthStash = window.innerWidth;
+  it('should return undefined if `windowInnerWidth` is equal to or more than the bound', () => {
+    const testCases = [
+      MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR + 1000,
+      MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR + 1,
+      MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR,
+    ];
+
     testCases.forEach(testCase => {
-      window.innerWidth = testCase;
-      const actual = getNumberOfMonths();
+      const actual = getNumberOfMonths(testCase);
       expect(actual).toBeUndefined();
     });
-    window.innerWidth = windowInnerWidthStash;
   });
 
-  it('should return undefined if `window.innerWidth` is 800 or more', () => {
-    const testCases = [799, 30, 1];
-    const windowInnerWidthStash = window.innerWidth;
+  it('should return undefined if `window.innerWidth` is below the bound', () => {
+    const testCases = [
+      MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR - 1,
+      MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR - 700,
+    ];
+
     testCases.forEach(testCase => {
-      window.innerWidth = testCase;
-      const actual = getNumberOfMonths();
+      const actual = getNumberOfMonths(testCase);
       expect(actual).toBe(1);
     });
-    window.innerWidth = windowInnerWidthStash;
   });
 });

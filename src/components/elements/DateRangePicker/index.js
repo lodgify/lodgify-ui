@@ -1,1 +1,1 @@
-export { Component as DateRangePicker } from './component';
+export { ComponentWithResponsive as DateRangePicker } from './component';
