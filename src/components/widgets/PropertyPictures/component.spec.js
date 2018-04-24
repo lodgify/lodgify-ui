@@ -11,7 +11,6 @@ import { GridColumn } from 'layout/GridColumn';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { Heading } from 'typography/Heading';
-import { ResponsiveImage } from 'widgets/ResponsiveImage';
 import { Link } from 'elements/Link';
 import { Thumbnail } from 'elements/Thumbnail';
 
@@ -90,19 +89,20 @@ describe('<PropertyPictures />', () => {
         .at(0);
     it('should render the right children', () => {
       const wrapper = getShowOnDesktopInArray();
-      expectComponentToHaveChildren(wrapper, ResponsiveImage);
+      expectComponentToHaveChildren(wrapper, Thumbnail);
     });
   });
 
-  describe('each `ResponsiveImage` component', () => {
+  describe('each `Thumbnail` component', () => {
     it('should get the right props', () => {
       const wrapper = getPropertyPictures()
-        .find(ResponsiveImage)
+        .find(Thumbnail)
         .at(0);
       const { imageUrl, label } = pictures[0];
       expectComponentToHaveProps(wrapper, {
         imageUrl,
         label,
+        size: 'huge',
       });
     });
   });
@@ -122,11 +122,14 @@ describe('<PropertyPictures />', () => {
     it('should get the right props', () => {
       const wrapper = getPropertyPictures()
         .find(Thumbnail)
-        .at(0);
+        .at(1);
       const { imageUrl, label } = pictures[0];
       expectComponentToHaveProps(wrapper, {
         imageUrl,
         label,
+        isRoundEdged: true,
+        isSquare: true,
+        size: 'large',
       });
     });
   });

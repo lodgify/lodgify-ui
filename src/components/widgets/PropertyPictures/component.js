@@ -8,7 +8,6 @@ import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Thumbnail } from 'elements/Thumbnail';
 import { Heading } from 'typography/Heading';
-import { ResponsiveImage } from 'widgets/ResponsiveImage';
 import { Link } from 'elements/Link';
 
 /**
@@ -23,10 +22,16 @@ export const Component = ({ pictures }) => (
     {pictures.map(({ imageUrl, label }, index) => (
       <GridColumn key={getUniqueKey(label, index)} width={4}>
         <ShowOnDesktop>
-          <ResponsiveImage imageUrl={imageUrl} label={label} />
+          <Thumbnail size="huge" imageUrl={imageUrl} label={label} />
         </ShowOnDesktop>
         <ShowOnMobile>
-          <Thumbnail isSquare size="large" imageUrl={imageUrl} label={label} />
+          <Thumbnail
+            isSquare
+            isRoundEdged
+            size="large"
+            imageUrl={imageUrl}
+            label={label}
+          />
         </ShowOnMobile>
       </GridColumn>
     ))}
