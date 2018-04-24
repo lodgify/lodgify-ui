@@ -316,46 +316,34 @@ blockquote.ui.quote .row {
 .ui.thumbnail {
 
   .image {
-    background: no-repeat center/cover;
-    width: 75px;
-    max-width: 75px;
-    max-height: 75px;
-    padding-top: 15%;
-  }
+    background: @thumbnailBackground;
+    width: 100%;
+    height: @thumbnailHeight;
+    border-radius: @thumbnailBorderRadius;
 
-  .image.large {
-    width: 100px;
-  }
+    &.small {
+      height: @smallThumbnailHeight;
+    }
 
-  .image.small {
-    width: 50px;
-  }
+    &.large {
+      height: @largeThumbnailHeight;
+    }
 
-  .image.circular {
-    background: center/100%;
-    border-radius: 50%;
-  }
+    &.circular {
+      border-radius: @circularBorderRadius;
+    }
 
-  .image.square {
-    background: center/cover;
-  }
+    &.circular,
+    &.square {
+      width: @thumbnailWidth;
 
-  .image.circular,
-  .image.square {
-    padding-top: 0;
-  }
+      &.small {
+        width: @smallThumbnailWidth;
+      }
 
-  .image.large.circular,
-  .image.large.square {
-    height: 100px;
-  }
-
-  .image.small.circular,
-  .image.small.square {
-    height: 50px;
-  }
-
-  .label {
-
+      &.large {
+        width: @largeThumbnailWidth;
+      }
+    }
   }
 }

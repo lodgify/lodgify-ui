@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 
-// import { Grid } from 'layout/Grid';
-// import { GridRow } from 'layout/GridRow';
-// import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
 import { getBackgroundImageUrl } from 'lib/get-background-image-url';
 /**
