@@ -5,7 +5,7 @@ import getClassNames from 'classnames';
 import { Paragraph } from 'typography/Paragraph';
 import { getBackgroundImageUrl } from 'lib/get-background-image-url';
 /**
- * The standard widget for displaying an image.
+ * The standard element for displaying a thumbnail.
  * @returns {Object}
  */
 export const Component = ({
