@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { StaticSticky } from 'lib/react-static-sticky';
 import { Button } from 'elements/Button';
 import { SearchBar } from 'widgets/SearchBar';
 
@@ -13,16 +14,18 @@ export const Component = ({
   searchButton,
   locationOptions,
   onSubmit,
+  isRelativeSticky,
 }) => (
-  <SearchBar
-    guestsOptions={guestsOptions}
-    locationOptions={locationOptions}
-    onSubmit={onSubmit}
-    searchButton={searchButton}
-    isShowingLocationDropdown={false}
-    isShowingPropertySummary
-    isSticky
-  />
+  <StaticSticky isRelativeSticky={isRelativeSticky} willStickToBottom>
+    <SearchBar
+      guestsOptions={guestsOptions}
+      locationOptions={locationOptions}
+      onSubmit={onSubmit}
+      searchButton={searchButton}
+      isShowingLocationDropdown={false}
+      isShowingPropertySummary
+    />
+  </StaticSticky>
 );
 
 Component.displayName = 'PropertyFooter';
@@ -30,6 +33,7 @@ Component.displayName = 'PropertyFooter';
 Component.defaultProps = {
   onSubmit: Function.prototype,
   searchButton: <Button isRounded>Check Availability</Button>,
+  isRelativeSticky: false,
 };
 
 Component.propTypes = {
@@ -60,4 +64,6 @@ Component.propTypes = {
   onSubmit: PropTypes.func,
   /** The Search Button the Search Bar displays. */
   searchButton: PropTypes.node,
+  /** Is the children going to be render in relative sticky mode. */
+  isRelativeSticky: PropTypes.bool,
 };

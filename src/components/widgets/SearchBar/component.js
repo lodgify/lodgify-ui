@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
 import { Form } from 'semantic-ui-react';
 
 import { Icon } from 'elements/Icon';
@@ -31,51 +30,48 @@ export class Component extends PureComponent {
       isShowingLocationDropdown,
       isShowingPropertySummary,
       searchButton,
-      isSticky,
     } = this.props;
 
     return (
-      <div className={cx({ 'is-sticky': isSticky })}>
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Group>
-            {!!isShowingPropertySummary && (
-              <Form.Field width="three">
-                <Icon isDisabled label="Property Summary" name="home" />
-              </Form.Field>
-            )}
-            {!!isShowingLocationDropdown && (
-              <Form.Field width="three">
-                <Dropdown
-                  icon="map pin"
-                  label="Location"
-                  name="location"
-                  onChange={this.persistInputChange}
-                  options={locationOptions}
-                />
-              </Form.Field>
-            )}
-            <Form.Field width="seven">
-              <DateRangePicker
-                endDatePlaceholderText="Check-out"
-                getIsDayBlocked={getIsDayBlocked}
-                name="dates"
-                onChange={this.persistInputChange}
-                startDatePlaceholderText="Check-in"
-              />
+      <Form onSubmit={this.handleSubmit}>
+        <Form.Group>
+          {!!isShowingPropertySummary && (
+            <Form.Field width="three">
+              <Icon isDisabled label="Property Summary" name="home" />
             </Form.Field>
+          )}
+          {!!isShowingLocationDropdown && (
             <Form.Field width="three">
               <Dropdown
-                icon="users"
-                label="Guests"
-                name="guests"
+                icon="map pin"
+                label="Location"
+                name="location"
                 onChange={this.persistInputChange}
-                options={guestsOptions}
+                options={locationOptions}
               />
             </Form.Field>
-            <Form.Field width="three">{searchButton}</Form.Field>
-          </Form.Group>
-        </Form>
-      </div>
+          )}
+          <Form.Field width="seven">
+            <DateRangePicker
+              endDatePlaceholderText="Check-out"
+              getIsDayBlocked={getIsDayBlocked}
+              name="dates"
+              onChange={this.persistInputChange}
+              startDatePlaceholderText="Check-in"
+            />
+          </Form.Field>
+          <Form.Field width="three">
+            <Dropdown
+              icon="users"
+              label="Guests"
+              name="guests"
+              onChange={this.persistInputChange}
+              options={guestsOptions}
+            />
+          </Form.Field>
+          <Form.Field width="three">{searchButton}</Form.Field>
+        </Form.Group>
+      </Form>
     );
   };
 }
@@ -87,7 +83,6 @@ Component.defaultProps = {
   onSubmit: Function.prototype,
   isShowingPropertySummary: false,
   isShowingLocationDropdown: true,
-  isSticky: false,
   searchButton: (
     <Button isRounded icon="search">
       Search
@@ -131,8 +126,6 @@ Component.propTypes = {
   isShowingPropertySummary: PropTypes.bool,
   /** Is Search Bar showing the Location Dropdown. */
   isShowingLocationDropdown: PropTypes.bool,
-  /** Is Search Bar going to render in sticky mode. */
-  isSticky: PropTypes.bool,
   /** The Search Button the Search Bar displays. */
   searchButton: PropTypes.node,
 };
