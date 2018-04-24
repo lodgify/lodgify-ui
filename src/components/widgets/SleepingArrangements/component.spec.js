@@ -1,17 +1,22 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Label } from 'semantic-ui-react';
 
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from 'lib/expect-helpers';
-import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
+import { Grid } from 'layout/Grid';
+import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { IconCard } from 'elements/IconCard';
 
-import { sleepingArrangements } from './mock-data/sleepingArrangements';
 import { Component as SleepingArrangements } from './component';
+
+const sleepingArrangements = [
+  { iconName: 'bed', label: '1 king bed' },
+  { iconName: 'bed', label: '2 single beds' },
+  { iconName: 'paw', label: '1 kennel' },
+];
 
 const getSleepingArrangements = () =>
   shallow(<SleepingArrangements sleepingArrangements={sleepingArrangements} />);
@@ -26,7 +31,7 @@ describe('<SleepingArrangements />', () => {
   describe('the `div` element', () => {
     it('should render the right children', () => {
       const wrapper = getSleepingArrangements();
-      expectComponentToHaveChildren(wrapper, Heading, Label.Group);
+      expectComponentToHaveChildren(wrapper, Heading, Grid);
     });
   });
 
@@ -37,13 +42,12 @@ describe('<SleepingArrangements />', () => {
     });
   });
 
-  describe('the `Label.Group` component', () => {
+  describe('the `Grid` component', () => {
     it('should render an `IconCard` for each item in `props.sleepingArrangements`', () => {
-      const wrapper = getSleepingArrangements().find('LabelGroup');
-      expectComponentToHaveChildren(
-        wrapper,
-        ...getArrayOfLengthOfItem(sleepingArrangements.length, IconCard)
-      );
+      const wrapper = getSleepingArrangements().find(GridColumn);
+      wrapper.forEach((element, index) => {
+        expectComponentToHaveChildren(wrapper.at(index), IconCard);
+      });
     });
   });
 
