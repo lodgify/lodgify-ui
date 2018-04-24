@@ -27,7 +27,7 @@ export const Component = ({ pictures }) => (
         <ShowOnMobile>
           <Thumbnail
             isSquare
-            isRoundEdged
+            hasRoundedCorners
             size="large"
             imageUrl={imageUrl}
             label={label}

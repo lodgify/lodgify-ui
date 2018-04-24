@@ -127,7 +127,7 @@ describe('<PropertyPictures />', () => {
       expectComponentToHaveProps(wrapper, {
         imageUrl,
         label,
-        isRoundEdged: true,
+        hasRoundedCorners: true,
         isSquare: true,
         size: 'large',
       });

@@ -6,14 +6,14 @@ import { Paragraph } from 'typography/Paragraph';
 import { getBackgroundImageUrl } from 'lib/get-background-image-url';
 
 /**
- * The standard element for displaying a thumbnail.
+ * A thumbnail displays a small image.
  * @returns {Object}
  */
 export const Component = ({
   alternativeText,
   imageUrl,
   isCircular,
-  isRoundEdged,
+  hasRoundedCorners,
   isSquare,
   label,
   size,
@@ -23,7 +23,7 @@ export const Component = ({
       className={getClassNames('ui', 'image', size, {
         circular: isCircular,
         square: isSquare,
-        rounded: isRoundEdged,
+        rounded: hasRoundedCorners,
       })}
       style={{ backgroundImage: getBackgroundImageUrl(imageUrl) }}
     >
@@ -38,22 +38,22 @@ Component.displayName = 'Thumbnail';
 Component.defaultProps = {
   alternativeText: 'Thumbnail element',
   isCircular: false,
-  isRoundEdged: false,
+  hasRoundedCorners: false,
   isSquare: false,
   label: null,
   size: null,
 };
 
 Component.propTypes = {
-  /** Alternative text to show if the image can't be loaded by the browser */
+  /** Text to help visually impaired users understand the content of the image. */
   alternativeText: PropTypes.string,
   /** URL pointing to the image to render */
   imageUrl: PropTypes.string.isRequired,
-  /** Whether to render a circular thumbnail */
+  /** Is the thumbnail circular */
   isCircular: PropTypes.bool,
-  /** Whether to render a round edged thumbnail */
-  isRoundEdged: PropTypes.bool,
-  /** Whether to render a square thumbnail */
+  /** Is the thumbnail rounded on the corners */
+  hasRoundedCorners: PropTypes.bool,
+  /** Is the thumbnail square */
   isSquare: PropTypes.bool,
   /** A visible label for the thumbnail */
   label: PropTypes.string,

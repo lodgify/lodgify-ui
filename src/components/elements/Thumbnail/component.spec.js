@@ -81,9 +81,9 @@ describe('<Thumbnail />', () => {
       });
     });
 
-    describe('if `props.isRoundEdged` is true', () => {
+    describe('if `props.hasRoundedCorners` is true', () => {
       const getSecondDivWithIsSquareProp = () =>
-        getThumbnail({ isRoundEdged: true })
+        getThumbnail({ hasRoundedCorners: true })
           .find('div')
           .at(1);
 
