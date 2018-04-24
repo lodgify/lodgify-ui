@@ -1,99 +1,105 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { DateRangePicker as ReactDatesDateRangePicker } from 'react-dates';
+import { Responsive } from 'semantic-ui-react';
 import moment from 'moment';
 
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+  expectComponentToHaveDisplayName,
+} from 'lib/expect-helpers';
+import { InputController } from 'elements/InputController';
 import { Icon } from 'elements/Icon';
 
-import { Component as DateRangePicker } from './component';
+import { ComponentWithResponsive as DateRangePicker } from './component';
 
-const getDateRangePicker = props => shallow(<DateRangePicker {...props} />);
-
-const getInputController = () => getDateRangePicker().find('InputController');
-
-const getReactDatesDateRangePicker = () =>
-  getDateRangePicker().find(ReactDatesDateRangePicker);
+const getDateRangePicker = () => shallow(<DateRangePicker />);
+const getWrappedDateRangePicker = props => {
+  const Child = getDateRangePicker().prop('as');
+  return shallow(<Child {...props} />);
+};
 
 describe('<DateRangePicker />', () => {
-  it('should render a single `InputController` component', () => {
-    const textInput = getDateRangePicker();
-    const actual = textInput.find('InputController').length;
-    expect(actual).toBe(1);
+  it('should be wrapped in a Semantic UI `Responsive` component', () => {
+    const wrapper = getDateRangePicker();
+    expectComponentToBe(wrapper, Responsive);
   });
 
-  it('should pass the right `props` to `InputController`', () => {
-    const inputController = getInputController();
-    const actual = inputController.props();
-    expect(actual).toEqual(
-      expect.objectContaining({
+  describe('the wrapped `DateRangePicker` component', () => {
+    it('should be a Semantic UI `InputController`', () => {
+      const wrapper = getWrappedDateRangePicker();
+      expectComponentToBe(wrapper, InputController);
+    });
+  });
+
+  describe('the `InputController` component', () => {
+    const getInputController = () =>
+      getWrappedDateRangePicker().find(InputController);
+
+    it('should get the right props', () => {
+      const wrapper = getInputController();
+      expectComponentToHaveProps(wrapper, {
         error: false,
         inputOnChangeFunctionName: 'onDatesChange',
         isFocused: false,
         isValid: false,
         name: '',
         onChange: expect.any(Function),
-      })
-    );
+      });
+    });
+
+    it('should get the right children', () => {
+      const wrapper = getInputController();
+      expectComponentToHaveChildren(wrapper, ReactDatesDateRangePicker);
+    });
   });
 
-  it('should pass a `react-dates` `DateRangePicker` as a child to `InputController`', () => {
-    const inputController = getInputController();
-    const actual = inputController.children(ReactDatesDateRangePicker);
-    expect(actual).toHaveLength(1);
-  });
+  describe('the `react-dates` `DateRangePicker`', () => {
+    const getReactDatesDateRangePicker = () =>
+      getWrappedDateRangePicker().find(ReactDatesDateRangePicker);
 
-  describe('the child `react-dates` `DateRangePicker`', () => {
     it('should get the right consumer defined props', () => {
-      const reactDatesDateRangePicker = getReactDatesDateRangePicker();
-      const actual = reactDatesDateRangePicker.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          displayFormat: 'DD/MM/YYYY',
-          endDatePlaceholderText: '',
-          isDayBlocked: Function.prototype,
-          startDatePlaceholderText: '',
-        })
-      );
+      const wrapper = getReactDatesDateRangePicker();
+      expectComponentToHaveProps(wrapper, {
+        displayFormat: 'DD/MM/YYYY',
+        endDatePlaceholderText: '',
+        isDayBlocked: Function.prototype,
+        startDatePlaceholderText: '',
+      });
     });
 
     it('should get the right controlled props', () => {
-      const reactDatesDateRangePicker = getReactDatesDateRangePicker();
-      const actual = reactDatesDateRangePicker.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          endDate: null,
-          focusedInput: null,
-          onDatesChange: Function.prototype,
-          onFocusChange: expect.any(Function),
-          startDate: null,
-        })
-      );
+      const wrapper = getReactDatesDateRangePicker();
+      expectComponentToHaveProps(wrapper, {
+        endDate: null,
+        focusedInput: null,
+        onDatesChange: Function.prototype,
+        onFocusChange: expect.any(Function),
+        startDate: null,
+      });
     });
 
     it('should get the right static required props', () => {
-      const reactDatesDateRangePicker = getReactDatesDateRangePicker();
-      const actual = reactDatesDateRangePicker.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          endDateId: expect.stringContaining('end_date_id_'),
-          startDateId: expect.stringContaining('start_date_id_'),
-        })
-      );
+      const wrapper = getReactDatesDateRangePicker();
+      expectComponentToHaveProps(wrapper, {
+        endDateId: expect.stringContaining('end_date_id_'),
+        startDateId: expect.stringContaining('start_date_id_'),
+      });
     });
 
     it('should get the right static custom appearance props', () => {
-      const reactDatesDateRangePicker = getReactDatesDateRangePicker();
-      const actual = reactDatesDateRangePicker.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          customArrowIcon: <Icon name="arrow right" />,
-          customInputIcon: <Icon name="calendar" />,
-          daySize: 52,
-          hideKeyboardShortcutsPanel: true,
-          navNext: <Icon name="arrow right" />,
-          navPrev: <Icon name="arrow left" />,
-        })
-      );
+      const wrapper = getReactDatesDateRangePicker();
+      expectComponentToHaveProps(wrapper, {
+        customArrowIcon: <Icon name="arrow right" />,
+        customInputIcon: <Icon name="calendar" />,
+        daySize: 52,
+        hideKeyboardShortcutsPanel: true,
+        navNext: <Icon name="arrow right" />,
+        navPrev: <Icon name="arrow left" />,
+        numberOfMonths: ReactDatesDateRangePicker.defaultProps.numberOfMonths,
+      });
     });
   });
 
@@ -101,7 +107,7 @@ describe('<DateRangePicker />', () => {
     it('should persist the value in component state', () => {
       const now = moment();
       const value = { startDate: now };
-      const dateRangePicker = shallow(<DateRangePicker />);
+      const dateRangePicker = getWrappedDateRangePicker();
       dateRangePicker.instance().handleInputControllerChange(undefined, value);
       const actual = dateRangePicker.state();
       expect(actual).toEqual(expect.objectContaining(value));
@@ -111,7 +117,7 @@ describe('<DateRangePicker />', () => {
   describe('Interaction: onFocusChange', () => {
     it('should persist the value in component state', () => {
       const value = 'startDate';
-      const dateRangePicker = shallow(<DateRangePicker />);
+      const dateRangePicker = getWrappedDateRangePicker();
       dateRangePicker.instance().handleFocusChange(value);
       const actual = dateRangePicker.state();
       expect(actual).toEqual(
@@ -127,7 +133,7 @@ describe('<DateRangePicker />', () => {
       const handleChange = jest.fn();
       const props = { name: 'winnie', onChange: handleChange };
       const newState = { endDate: null, startDate: moment() };
-      const dateRangePicker = getDateRangePicker(props);
+      const dateRangePicker = getWrappedDateRangePicker(props);
       dateRangePicker.setState(newState);
       expect(handleChange).toHaveBeenCalledWith(
         props.name,
@@ -137,7 +143,7 @@ describe('<DateRangePicker />', () => {
   });
 
   it('should have displayName `DateRangePicker`', () => {
-    const actual = DateRangePicker.displayName;
-    expect(actual).toBe('DateRangePicker');
+    const component = getDateRangePicker().prop('as');
+    expectComponentToHaveDisplayName(component, 'DateRangePicker');
   });
 });

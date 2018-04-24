@@ -155,6 +155,11 @@
       color: @dateRangePickerPickerFontColor;
       z-index: @dateRangePickerPickerZIndex;
 
+      @media @tinyScreen {
+        transform: scale(0.8);
+        transform-origin: top center;
+      }
+
       .DayPicker__withBorder {
         box-shadow: @dateRangePickerPickerBoxShadow;
       }
