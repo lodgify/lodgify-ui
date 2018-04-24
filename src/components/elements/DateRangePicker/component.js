@@ -5,17 +5,19 @@ import { DateRangePicker } from 'react-dates';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 
+import { withResponsive } from 'lib/with-responsive';
 import { Icon } from 'elements/Icon';
+import { InputController } from 'elements/InputController';
 
-import { InputController } from '../InputController';
-
-import { pickDatesFromState } from './pickDatesFromState';
+import { pickDatesFromState } from './utils/pickDatesFromState';
+import { getNumberOfMonths } from './utils/getNumberOfMonths';
+import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 
 /**
  * A date range picker lets a user pick a date range.
  * @extends {React.PureComponent}
  */
-export class Component extends PureComponent {
+class Component extends PureComponent {
   state = {
     endDate: null,
     focusedInput: null,
@@ -53,6 +55,7 @@ export class Component extends PureComponent {
       isValid,
       name,
       startDatePlaceholderText,
+      windowInnerWidth,
     } = this.props;
     const { endDate, focusedInput, startDate } = this.state;
     return (
@@ -87,6 +90,7 @@ export class Component extends PureComponent {
           hideKeyboardShortcutsPanel
           navNext={<Icon name="arrow right" />}
           navPrev={<Icon name="arrow left" />}
+          numberOfMonths={getNumberOfMonths(windowInnerWidth)}
         />
       </InputController>
     );
@@ -104,6 +108,7 @@ Component.defaultProps = {
   name: '',
   onChange: Function.prototype,
   startDatePlaceholderText: '',
+  windowInnerWidth: MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR,
 };
 
 Component.propTypes = {
@@ -133,4 +138,12 @@ Component.propTypes = {
   onChange: PropTypes.func,
   /** The visible placeholder text for the start date input. */
   startDatePlaceholderText: PropTypes.string,
+  /**
+   * Is the user on a mobile device.
+   * Provided by `withResponsive` so ignored in the styleguide.
+   * @ignore
+   */
+  windowInnerWidth: PropTypes.number,
 };
+
+export const ComponentWithResponsive = withResponsive(Component);

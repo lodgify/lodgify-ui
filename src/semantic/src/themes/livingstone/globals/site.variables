@@ -133,9 +133,11 @@
      Breakpoints
 --------------------*/
 
+@tinyBreakpoint: 400px;
 @tabletBreakpoint: 600px;
 @computerBreakpoint: 1000px;
 
+@tinyScreen: ~"only screen and (max-width: @{largestTinyScreen})";
 @mobileScreen: ~"only screen and (max-width: @{largestMobileScreen})";
 
 /*-------------------
@@ -271,6 +273,8 @@
 /* Positive / Negative Dupes */
 
 /* Responsive */
+
+@largestTinyScreen: (@tinyBreakpoint - 1px);
 
 /*-------------------
   Exact Pixel Values
