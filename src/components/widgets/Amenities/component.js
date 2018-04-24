@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { withResponsive } from 'lib/with-responsive';
 import { getUniqueKey } from 'lib/get-unique-key';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -10,26 +11,31 @@ import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Divider } from 'elements/Divider';
 
-import { getFirstNineItems } from './utils/getFirstNineItems';
-import { hasMoreThanNineItems } from './utils/hasMoreThanNineItems';
+import { getDefaultItems } from './utils/getDefaultItems';
+import { hasExtraItems } from './utils/hasExtraItems';
 
 /**
  * The standard widget for displaying the amenities of a property.
  * @returns {Object}
  */
-export const Component = ({ amenities }) => (
+const Component = ({ amenities, isUserOnMobile }) => (
   <Grid>
     <GridColumn width={12}>
       <Heading>Amenities</Heading>
     </GridColumn>
-    {getFirstNineItems(amenities).map(
+    {getDefaultItems(amenities, isUserOnMobile).map(
       ({ iconName, isDisabled, label }, index) => (
-        <GridColumn key={getUniqueKey(label, index)} width={4}>
+        <GridColumn
+          key={getUniqueKey(label, index)}
+          computer={4}
+          tablet={4}
+          mobile={6}
+        >
           <Icon isDisabled={isDisabled} label={label} name={iconName} />
         </GridColumn>
       )
     )}
-    {hasMoreThanNineItems(amenities) && (
+    {hasExtraItems(amenities, isUserOnMobile) && (
       <GridColumn width={12}>
         <Modal trigger={<Link>View more</Link>}>
           {amenities.map(({ iconName, isDisabled, label }, index) => (
@@ -61,4 +67,12 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /**
+   * Is the user on a mobile device.
+   * Provided by `withResponsive` so ignored in the styleguide.
+   * @ignore
+   */
+  isUserOnMobile: PropTypes.bool.isRequired,
 };
+
+export const ComponentWithResponsive = withResponsive(Component);
