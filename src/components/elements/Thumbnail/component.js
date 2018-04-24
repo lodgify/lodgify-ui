@@ -34,7 +34,6 @@ Component.displayName = 'Thumbnail';
 
 Component.defaultProps = {
   alternativeText: 'Thumbnail element',
-  imageUrl: '',
   isCircular: false,
   isSquare: false,
   label: null,
@@ -45,7 +44,7 @@ Component.propTypes = {
   /** Alternative text to show if the image can't be loaded by the browser */
   alternativeText: PropTypes.string,
   /** URL pointing to the image to render */
-  imageUrl: PropTypes.string,
+  imageUrl: PropTypes.string.isRequired,
   /** Whether to render a circular image */
   isCircular: PropTypes.bool,
   /** Whether to render a square image */
