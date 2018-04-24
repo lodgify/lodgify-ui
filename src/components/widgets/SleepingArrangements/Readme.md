@@ -1,27 +1,12 @@
 ```jsx
-const { sleepingArrangements } = require('./mock-data/sleepingArrangements');
+const sleepingArrangements = [
+  { iconName: 'bed', label: '1 king bed' },
+  { iconName: 'bed', label: '2 single beds' },
+  { iconName: 'paw', label: '1 kennel' },
+  { iconName: 'paw', label: '1 cat' },
+  { iconName: 'paw', label: '3 dogs' },
+  { iconName: 'paw', label: '2 okapis' },
+];
 
 <SleepingArrangements sleepingArrangements={sleepingArrangements} />
-```
-
-### Variations
-
-#### Width
-
-```jsx
-const { sleepingArrangements } = require('./mock-data/sleepingArrangements');
-
-<Grid>
-  <GridRow>
-    <GridColumn>
-      <SleepingArrangements sleepingArrangements={sleepingArrangements} />
-    </GridColumn>
-  </GridRow>
-  <Divider hasLine />
-  <GridRow>
-    <GridColumn>
-      <SleepingArrangements sleepingArrangements={sleepingArrangements} width={6} />
-    </GridColumn>
-  </GridRow>
-</Grid>
 ```

@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Label } from 'semantic-ui-react';
 
 import { getUniqueKey } from 'lib/get-unique-key';
 import { Heading } from 'typography/Heading';
+import { Grid } from 'layout/Grid';
+import { GridColumn } from 'layout/GridColumn';
 import { IconCard } from 'elements/IconCard';
 
 /**
@@ -13,16 +14,18 @@ import { IconCard } from 'elements/IconCard';
 export const Component = ({ sleepingArrangements }) => (
   <div>
     <Heading>Sleeping arrangements</Heading>
-    <Label.Group>
+    <Grid>
       {sleepingArrangements.map(({ iconName, label }, index) => (
-        <IconCard
-          isLeftAligned
+        <GridColumn
+          computer={2}
+          tablet={4}
+          mobile={4}
           key={getUniqueKey(label, index)}
-          label={label}
-          name={iconName}
-        />
+        >
+          <IconCard isLeftAligned label={label} name={iconName} />
+        </GridColumn>
       ))}
-    </Label.Group>
+    </Grid>
   </div>
 );
 
