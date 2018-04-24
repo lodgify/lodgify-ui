@@ -63,16 +63,3 @@
 ```jsx
 <ResponsiveImage />
 ```
-
-#### Circular
-
-Perfectly circular images require a square image file.
-
-```jsx
-const image = require('./mock-data/cat.png');
-
-<ResponsiveImage
-  imageUrl={image}
-  isCircular
-/>
-```

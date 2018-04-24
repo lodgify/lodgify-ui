@@ -20,7 +20,6 @@ describe('<ResponsiveImage />', () => {
       sources: [],
       alternativeText: 'Alternative Text 😝',
       className: null,
-      isCircular: false,
       isAvatar: false,
       isFluid: true,
       onLoad: Function.prototype,
@@ -40,7 +39,6 @@ describe('<ResponsiveImage />', () => {
         expect.objectContaining({
           src: props.imageUrl,
           alt: props.alternativeText,
-          circular: props.isCircular,
           avatar: props.isAvatar,
           className: String.prototype,
           fluid: props.isFluid,
