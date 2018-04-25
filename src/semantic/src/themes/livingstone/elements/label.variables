@@ -53,8 +53,8 @@
 --------------------*/
 
 /* Basic */
-@keyFactsWidth: 8.5em;
-@keyFactsHeight: 9em;
+@keyFactsWidth: 8em;
+@keyFactsHeight: 8.5em;
 @basicBorderColor: @greyThree;
 @basicBorder: @basicBorderWidth solid @basicBorderColor;
 @basicFontWeight: @bold;
