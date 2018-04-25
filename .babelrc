@@ -8,10 +8,13 @@
       "alias": {
         "collections": "./src/components/collections",
         "elements": "./src/components/elements",
+        "general-widgets": "./src/components/general-widgets",
+        "inputs": "./src/components/inputs",
         "layout": "./src/components/layout",
         "lib": "./lib",
+        "media": "./src/components/media",
+        "property-page-widgets": "./src/components/property-page-widgets",
         "typography": "./src/components/typography",
-        "widgets": "./src/components/widgets",
       }
     }]
   ]
