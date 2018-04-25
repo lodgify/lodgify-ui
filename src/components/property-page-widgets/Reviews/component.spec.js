@@ -117,6 +117,7 @@ describe('<Reviews />', () => {
 
         expectComponentToHaveProps(wrapper, {
           mobile: 5,
+          tablet: 5,
           computer: 6,
           textAlign: 'left',
           verticalAlign: 'middle',
@@ -143,6 +144,7 @@ describe('<Reviews />', () => {
 
         expectComponentToHaveProps(wrapper, {
           mobile: 7,
+          tablet: 7,
           computer: 6,
           verticalAlign: 'middle',
           floated: 'right',
