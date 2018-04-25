@@ -21,7 +21,7 @@ export const Component = ({ keyFacts }) => (
         {keyFacts.map(({ iconName, isDisabled, label }, index) => (
           <GridColumn
             computer={2}
-            tablet={3}
+            tablet={4}
             mobile={4}
             streched
             key={getUniqueKey(label, index)}

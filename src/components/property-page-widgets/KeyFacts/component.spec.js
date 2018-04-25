@@ -52,7 +52,7 @@ describe('<KeyFacts />', () => {
       wrapper.children().forEach((element, index) =>
         expectComponentToHaveProps(wrapper.at(index), {
           computer: 2,
-          tablet: 3,
+          tablet: 4,
           mobile: 4,
           streched: true,
         })
