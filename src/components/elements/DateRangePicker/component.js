@@ -10,6 +10,7 @@ import { Icon } from 'elements/Icon';
 import { InputController } from 'elements/InputController';
 
 import { pickDatesFromState } from './utils/pickDatesFromState';
+import { getOpenDirection } from './utils/getOpenDirection';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
 import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 
@@ -55,6 +56,7 @@ class Component extends PureComponent {
       isValid,
       name,
       startDatePlaceholderText,
+      willOpenAbove,
       windowInnerWidth,
     } = this.props;
     const { endDate, focusedInput, startDate } = this.state;
@@ -72,6 +74,7 @@ class Component extends PureComponent {
           displayFormat={displayFormat}
           endDatePlaceholderText={endDatePlaceholderText}
           isDayBlocked={getIsDayBlocked}
+          openDirection={getOpenDirection(willOpenAbove)}
           startDatePlaceholderText={startDatePlaceholderText}
           // Controlled props
           endDate={endDate}
@@ -108,6 +111,7 @@ Component.defaultProps = {
   name: '',
   onChange: Function.prototype,
   startDatePlaceholderText: '',
+  willOpenAbove: false,
   windowInnerWidth: MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR,
 };
 
@@ -138,6 +142,8 @@ Component.propTypes = {
   onChange: PropTypes.func,
   /** The visible placeholder text for the start date input. */
   startDatePlaceholderText: PropTypes.string,
+  /** Will the calendar open above the input. */
+  willOpenAbove: PropTypes.bool,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.

@@ -66,6 +66,7 @@ describe('<DateRangePicker />', () => {
         displayFormat: 'DD/MM/YYYY',
         endDatePlaceholderText: '',
         isDayBlocked: Function.prototype,
+        openDirection: expect.any(String),
         startDatePlaceholderText: '',
       });
     });
