@@ -42,6 +42,12 @@
 />
 ```
 
+#### Calendar opens above input
+
+```jsx
+<DateRangePicker willOpenAbove />
+```
+
 ### Usage
 
 #### Block days
