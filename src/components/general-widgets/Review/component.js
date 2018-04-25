@@ -31,7 +31,7 @@ export const Component = ({
       <Card.Meta>
         <Grid>
           <GridRow verticalAlign="middle">
-            <GridColumn mobile={7} computer={6} floated="left">
+            <GridColumn mobile={7} tablet={7} computer={6} floated="left">
               <Subheading>
                 {getReviewerNameAndLocationString(
                   reviewerName,
@@ -41,6 +41,7 @@ export const Component = ({
             </GridColumn>
             <GridColumn
               mobile={5}
+              tablet={5}
               computer={6}
               floated="right"
               textAlign="right"
