@@ -143,6 +143,7 @@ describe('<Review />', () => {
       const wrapper = getFirstGridColumn();
       expectComponentToHaveProps(wrapper, {
         mobile: 7,
+        tablet: 7,
         computer: 6,
         floated: 'left',
       });
@@ -177,6 +178,7 @@ describe('<Review />', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
         mobile: 5,
+        tablet: 5,
         computer: 6,
         floated: 'right',
         textAlign: 'right',
