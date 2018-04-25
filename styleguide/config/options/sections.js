@@ -23,11 +23,23 @@ module.exports = [
     components: buildComponentsPath('elements'),
   },
   {
+    name: 'Inputs',
+    components: buildComponentsPath('inputs'),
+  },
+  {
     name: 'Collections',
     components: buildComponentsPath('collections'),
   },
   {
-    name: 'Widgets',
-    components: buildComponentsPath('widgets'),
+    name: 'Media',
+    components: buildComponentsPath('media'),
+  },
+  {
+    name: 'General widgets',
+    components: buildComponentsPath('general-widgets'),
+  },
+  {
+    name: 'Property page widgets',
+    components: buildComponentsPath('property-page-widgets'),
   },
 ];
