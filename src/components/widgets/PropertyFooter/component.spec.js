@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Form } from 'semantic-ui-react';
 
+import { StaticSticky } from 'lib/react-static-sticky';
 import { Button } from 'elements/Button';
 import { SearchBar } from 'widgets/SearchBar';
 
@@ -24,6 +25,24 @@ describe('<PropertyFooter />', () => {
     expect(actual).toHaveLength(1);
   });
 
+  it('should render a single `StaticSticky` component', () => {
+    const actual = getPropertyFooter().find(StaticSticky);
+    expect(actual).toHaveLength(1);
+  });
+
+  describe('the `StaticSticky` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getPropertyFooter().find(StaticSticky);
+      const actual = wrapper.props();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          isRelativeSticky: expect.any(Boolean),
+          willStickToBottom: true,
+        })
+      );
+    });
+  });
+
   describe('the `SearchBar` component', () => {
     it('should have the right props', () => {
       const wrapper = getSearchBar();
@@ -35,7 +54,6 @@ describe('<PropertyFooter />', () => {
           searchButton: <Button isRounded>Check Availability</Button>,
           isShowingLocationDropdown: false,
           isShowingPropertySummary: true,
-          isSticky: true,
         })
       );
     });
