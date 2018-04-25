@@ -5,7 +5,7 @@ import { Segment, Rating } from 'semantic-ui-react';
 import { Icon } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
 
-import { Component as PropertySummary } from './component';
+import { Component as Summary } from './component';
 
 const props = {
   locationName: 'Catania',
@@ -14,18 +14,18 @@ const props = {
   ratingNumber: 4.8,
 };
 
-const getPropertySummary = () => shallow(<PropertySummary {...props} />);
+const getSummary = () => shallow(<Summary {...props} />);
 
-describe('<PropertySummary />', () => {
+describe('<Summary />', () => {
   it('should render a single Semantic UI `Segment.Group` component', () => {
-    const wrapper = getPropertySummary();
+    const wrapper = getSummary();
     const actual = wrapper.is(Segment.Group);
     expect(actual).toBe(true);
   });
 
   describe('the first `Segment.Group` component', () => {
     it('should have the right props', () => {
-      const wrapper = getPropertySummary();
+      const wrapper = getSummary();
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
@@ -36,7 +36,7 @@ describe('<PropertySummary />', () => {
 
     it('should render the right children', () => {
       const children = ['Segment', 'SegmentGroup'];
-      const wrapper = getPropertySummary();
+      const wrapper = getSummary();
       children.forEach((child, index) => {
         const actual = wrapper.childAt(index).name();
         expect(actual).toBe(child);
@@ -46,7 +46,7 @@ describe('<PropertySummary />', () => {
 
   describe('the first `Segment` child of `Segment.Group` component', () => {
     const getFirstSegment = () =>
-      getPropertySummary()
+      getSummary()
         .find(Segment)
         .first();
     it('should render the right children', () => {
@@ -58,7 +58,7 @@ describe('<PropertySummary />', () => {
 
   describe('the first `Heading` component', () => {
     it('should have the right children', () => {
-      const wrapper = getPropertySummary()
+      const wrapper = getSummary()
         .find(Heading)
         .first();
       const actual = wrapper.prop('children');
@@ -68,7 +68,7 @@ describe('<PropertySummary />', () => {
 
   describe('the second `Segment.Group` component', () => {
     const getSecondSegmentGroup = () =>
-      getPropertySummary()
+      getSummary()
         .find(Segment.Group)
         .at(1);
 
@@ -91,7 +91,7 @@ describe('<PropertySummary />', () => {
 
   describe('the second `Segment` component', () => {
     const getSecondSegment = () =>
-      getPropertySummary()
+      getSummary()
         .find(Segment)
         .at(1);
     it('should render the right `children`', () => {
@@ -109,7 +109,7 @@ describe('<PropertySummary />', () => {
 
   describe('the first `Icon` component', () => {
     const getFirstIcon = () =>
-      getPropertySummary()
+      getSummary()
         .find(Icon)
         .at(0);
     it('should have the right props', () => {
@@ -127,7 +127,7 @@ describe('<PropertySummary />', () => {
 
   describe('the third `Segment` component', () => {
     const getThirdSegment = () =>
-      getPropertySummary()
+      getSummary()
         .find(Segment)
         .at(2);
 
@@ -146,7 +146,7 @@ describe('<PropertySummary />', () => {
 
   describe('the `Rating` component', () => {
     it('should have the right props', () => {
-      const wrapper = getPropertySummary().find(Rating);
+      const wrapper = getSummary().find(Rating);
       const actual = wrapper.props();
       expect(actual).toEqual(
         expect.objectContaining({
@@ -161,7 +161,7 @@ describe('<PropertySummary />', () => {
 
   describe('the last `Segment` component', () => {
     const getFourthSegment = () =>
-      getPropertySummary()
+      getSummary()
         .find(Segment)
         .at(3);
 
@@ -180,7 +180,7 @@ describe('<PropertySummary />', () => {
 
   describe('the last `Heading` component', () => {
     const getLastHeading = () =>
-      getPropertySummary()
+      getSummary()
         .find(Heading)
         .at(1);
     it('should have the right props', () => {

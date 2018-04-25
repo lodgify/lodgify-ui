@@ -1,1 +1,1 @@
-export { Component as PropertyLocation } from './component';
+export { Component as Location } from './component';

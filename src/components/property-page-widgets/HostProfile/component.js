@@ -69,7 +69,7 @@ export const Component = ({
   </Grid>
 );
 
-Component.displayName = 'PropertyHost';
+Component.displayName = 'HostProfile';
 
 Component.defaultProps = {
   avatarUrl: null,

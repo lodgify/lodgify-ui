@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Form, Image } from 'semantic-ui-react';
 
-import { TextInput } from 'elements/TextInput';
+import { TextInput } from 'inputs/TextInput';
 
 /**
  * A captcha input helps to ensure a user is a real human.

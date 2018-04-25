@@ -4,8 +4,8 @@ import cx from 'classnames';
 import { Form } from 'semantic-ui-react';
 
 import { Icon } from 'elements/Icon';
-import { Dropdown } from 'elements/Dropdown';
-import { DateRangePicker } from 'elements/DateRangePicker';
+import { Dropdown } from 'inputs/Dropdown';
+import { DateRangePicker } from 'inputs/DateRangePicker';
 import { Button } from 'elements/Button';
 
 /**
@@ -29,7 +29,7 @@ export class Component extends PureComponent {
       guestsOptions,
       locationOptions,
       isShowingLocationDropdown,
-      isShowingPropertySummary,
+      isShowingSummary,
       searchButton,
       isSticky,
     } = this.props;
@@ -38,7 +38,7 @@ export class Component extends PureComponent {
       <div className={cx({ 'is-sticky': isSticky })}>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
-            {!!isShowingPropertySummary && (
+            {!!isShowingSummary && (
               <Form.Field width="three">
                 <Icon isDisabled label="Property Summary" name="home" />
               </Form.Field>
@@ -85,7 +85,7 @@ Component.displayName = 'SearchBar';
 Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
   onSubmit: Function.prototype,
-  isShowingPropertySummary: false,
+  isShowingSummary: false,
   isShowingLocationDropdown: true,
   isSticky: false,
   searchButton: (
@@ -128,7 +128,7 @@ Component.propTypes = {
    */
   onSubmit: PropTypes.func,
   /** Is Search Bar showing the Property Summary info. */
-  isShowingPropertySummary: PropTypes.bool,
+  isShowingSummary: PropTypes.bool,
   /** Is Search Bar showing the Location Dropdown. */
   isShowingLocationDropdown: PropTypes.bool,
   /** Is Search Bar going to render in sticky mode. */

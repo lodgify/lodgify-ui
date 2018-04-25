@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Button } from 'elements/Button';
-import { SearchBar } from 'widgets/SearchBar';
+import { SearchBar } from 'general-widgets/SearchBar';
 
 /**
  * The standard widget displaying the summary and search bar as the footer of a property page.
@@ -20,12 +20,12 @@ export const Component = ({
     onSubmit={onSubmit}
     searchButton={searchButton}
     isShowingLocationDropdown={false}
-    isShowingPropertySummary
+    isShowingSummary
     isSticky
   />
 );
 
-Component.displayName = 'PropertyFooter';
+Component.displayName = 'Footer';
 
 Component.defaultProps = {
   onSubmit: Function.prototype,

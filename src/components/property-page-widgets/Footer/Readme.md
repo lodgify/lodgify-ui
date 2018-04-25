@@ -1,7 +1,7 @@
 ```jsx
 const { guestsOptions, locationOptions } = require('./mock-data/options');
 
-<PropertyFooter
+<Footer
   guestsOptions={guestsOptions}
   locationOptions={locationOptions}
 />
@@ -15,7 +15,7 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 const { Button } = require('../../elements/Button');
 const { guestsOptions, locationOptions } = require('./mock-data/options');
 
-<PropertyFooter
+<Footer
   guestsOptions={guestsOptions}
   locationOptions={locationOptions}
   searchButton={<Button>Search</Button>}

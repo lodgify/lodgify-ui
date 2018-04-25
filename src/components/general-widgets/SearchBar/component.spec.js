@@ -7,8 +7,8 @@ import {
   expectComponentToHaveProps,
 } from 'lib/expect-helpers';
 import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
-import { Dropdown } from 'elements/Dropdown';
-import { DateRangePicker } from 'elements/DateRangePicker';
+import { Dropdown } from 'inputs/Dropdown';
+import { DateRangePicker } from 'inputs/DateRangePicker';
 import { Button } from 'elements/Button';
 import { Icon } from 'elements/Icon';
 
@@ -77,9 +77,9 @@ describe('<SearchBar />', () => {
       );
     });
 
-    describe('if `props.isShowingPropertySummary` is true', () => {
+    describe('if `props.isShowingSummary` is true', () => {
       it('should render five `Form.Field` components', () => {
-        const wrapper = getFormGroup({ isShowingPropertySummary: true });
+        const wrapper = getFormGroup({ isShowingSummary: true });
         expectComponentToHaveChildren(
           wrapper,
           ...getArrayOfLengthOfItem(5, Form.Field)
@@ -99,20 +99,20 @@ describe('<SearchBar />', () => {
   });
 
   describe('the property summary `Form.Field` component', () => {
-    const getPropertySummaryFormField = () =>
-      getSearchBar({ isShowingPropertySummary: true })
+    const getSummaryFormField = () =>
+      getSearchBar({ isShowingSummary: true })
         .find(Form.Field)
         .at(0);
 
     it('should have the right props', () => {
-      const wrapper = getPropertySummaryFormField();
+      const wrapper = getSummaryFormField();
       expectComponentToHaveProps(wrapper, {
         width: 'three',
       });
     });
 
     it('should render the right children', () => {
-      const wrapper = getPropertySummaryFormField();
+      const wrapper = getSummaryFormField();
       expectComponentToHaveChildren(wrapper, Icon);
     });
   });

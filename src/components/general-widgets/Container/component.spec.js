@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import { expectComponentToHaveChildren } from 'lib/expect-helpers';
-import { OwnerLogin } from 'widgets/OwnerLogin';
+import { OwnerLogin } from 'general-widgets/OwnerLogin';
 
 import { Component as Container } from './component';
 

@@ -93,7 +93,7 @@ export const Component = ({
   </Grid>
 );
 
-Component.displayName = 'PropertyLocation';
+Component.displayName = 'Location';
 
 Component.defaultProps = {
   isShowingApproximateLocation: false,

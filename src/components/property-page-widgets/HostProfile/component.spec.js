@@ -14,7 +14,7 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
 
-import { Component as PropertyHost } from './component';
+import { Component as HostProfile } from './component';
 
 const catImageUrl =
   'https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max';
@@ -25,9 +25,9 @@ const email = 'welovecats@lodgify.com';
 const phone = '+34932206524';
 const languages = ['English', 'Italian', 'German', 'Spanish'];
 
-const getPropertyHost = props =>
+const getHostProfile = props =>
   shallow(
-    <PropertyHost
+    <HostProfile
       avatarUrl={catImageUrl}
       name={name}
       description={description}
@@ -38,12 +38,12 @@ const getPropertyHost = props =>
     />
   );
 
-const getGridRows = () => getPropertyHost().find(GridRow);
+const getGridRows = () => getHostProfile().find(GridRow);
 const getGridRowAt = at => getGridRows().at(at);
 
-describe('<PropertyHost />', () => {
+describe('<HostProfile />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
-    const wrapper = getPropertyHost();
+    const wrapper = getHostProfile();
     expectComponentToBe(wrapper, Grid);
   });
 
@@ -165,7 +165,7 @@ describe('<PropertyHost />', () => {
     });
   });
 
-  it('should have displayName `PropertyHost`', () => {
-    expectComponentToHaveDisplayName(PropertyHost, 'PropertyHost');
+  it('should have displayName `HostProfile`', () => {
+    expectComponentToHaveDisplayName(HostProfile, 'HostProfile');
   });
 });

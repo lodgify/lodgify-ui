@@ -40,7 +40,7 @@ export const Component = ({
   </Segment.Group>
 );
 
-Component.displayName = 'PropertySummary';
+Component.displayName = 'Summary';
 
 Component.propTypes = {
   /** The name of the location of the property. */

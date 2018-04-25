@@ -3,22 +3,22 @@ import { shallow, mount } from 'enzyme';
 import { Form } from 'semantic-ui-react';
 
 import { Button } from 'elements/Button';
-import { SearchBar } from 'widgets/SearchBar';
+import { SearchBar } from 'general-widgets/SearchBar';
 
-import { Component as PropertyFooter } from './component';
+import { Component as Footer } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
 
-const getPropertyFooter = props =>
+const getFooter = props =>
   shallow(
-    <PropertyFooter
+    <Footer
       guestsOptions={guestsOptions}
       locationOptions={locationOptions}
       {...props}
     />
   );
-const getSearchBar = props => getPropertyFooter(props).find(SearchBar);
+const getSearchBar = props => getFooter(props).find(SearchBar);
 
-describe('<PropertyFooter />', () => {
+describe('<Footer />', () => {
   it('should render a single Lodgify UI `SearchBar` component', () => {
     const actual = getSearchBar();
     expect(actual).toHaveLength(1);
@@ -34,7 +34,7 @@ describe('<PropertyFooter />', () => {
           locationOptions,
           searchButton: <Button isRounded>Check Availability</Button>,
           isShowingLocationDropdown: false,
-          isShowingPropertySummary: true,
+          isShowingSummary: true,
           isSticky: true,
         })
       );

@@ -1,5 +1,5 @@
 ```jsx
-<PropertySummary
+<Summary
   locationName="Catania"
   nightPrice="$280"
   propertyName="The Cat House"

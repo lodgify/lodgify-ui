@@ -12,7 +12,7 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Button } from 'elements/Button';
 import { Divider } from 'elements/Divider';
-import { Review } from 'widgets/Review';
+import { Review } from 'general-widgets/Review';
 
 import { Component as Reviews } from './component';
 

@@ -1,1 +1,1 @@
-export { Component as PropertyPictures } from './component';
+export { Component as Pictures } from './component';

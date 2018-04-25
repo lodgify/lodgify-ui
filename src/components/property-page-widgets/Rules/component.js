@@ -49,7 +49,7 @@ export const Component = ({ checkInTime, checkOutTime, rules }) => (
   </Grid>
 );
 
-Component.displayName = 'PropertyRules';
+Component.displayName = 'Rules';
 
 Component.propTypes = {
   /** The propery check-in time. */

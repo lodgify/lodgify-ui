@@ -5,7 +5,7 @@ const {
   transportOptions
 } = require('./mock-data/props');
 
-<PropertyLocation
+<Location
   locationDescription={locationDescription}
   locationSummary={locationSummary}
   transportOptions={transportOptions}

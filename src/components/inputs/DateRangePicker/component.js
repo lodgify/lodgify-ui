@@ -7,7 +7,7 @@ import 'react-dates/lib/css/_datepicker.css';
 
 import { withResponsive } from 'lib/with-responsive';
 import { Icon } from 'elements/Icon';
-import { InputController } from 'elements/InputController';
+import { InputController } from 'inputs/InputController';
 
 import { pickDatesFromState } from './utils/pickDatesFromState';
 import { getOpenDirection } from './utils/getOpenDirection';

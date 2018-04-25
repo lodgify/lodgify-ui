@@ -1,1 +1,1 @@
-export { Component as PropertyHost } from './component';
+export { Component as HostProfile } from './component';

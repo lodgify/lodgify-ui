@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import { Form } from 'collections/Form';
-import { TextInput } from 'elements/TextInput';
+import { TextInput } from 'inputs/TextInput';
 
 import { Component as OwnerLogin } from './component';
 

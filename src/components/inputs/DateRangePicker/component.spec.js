@@ -10,7 +10,7 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
 } from 'lib/expect-helpers';
-import { InputController } from 'elements/InputController';
+import { InputController } from 'inputs/InputController';
 import { Icon } from 'elements/Icon';
 
 import { ComponentWithResponsive as DateRangePicker } from './component';

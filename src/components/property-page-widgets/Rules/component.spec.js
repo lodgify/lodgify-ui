@@ -15,7 +15,7 @@ import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 
-import { Component as PropertyRules } from './component';
+import { Component as Rules } from './component';
 
 const checkInTime = '09.00 PM';
 const checkOutTime = '12.00 AM';
@@ -31,17 +31,16 @@ const props = {
   rules,
 };
 
-const getPropertyRules = otherProps =>
-  shallow(<PropertyRules {...props} {...otherProps} />);
+const getRules = otherProps => shallow(<Rules {...props} {...otherProps} />);
 
-describe('<PropertyRules />', () => {
+describe('<Rules />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
-    const wrapper = getPropertyRules();
+    const wrapper = getRules();
     expectComponentToBe(wrapper, Grid);
   });
 
   it('should have the right props', () => {
-    const wrapper = getPropertyRules();
+    const wrapper = getRules();
     expectComponentToHaveProps(wrapper, {
       stackable: true,
     });
@@ -49,7 +48,7 @@ describe('<PropertyRules />', () => {
 
   describe('the first `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyRules();
+      const wrapper = getRules();
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(4, GridColumn)
@@ -59,7 +58,7 @@ describe('<PropertyRules />', () => {
 
   describe('the first `GridColumn` component', () => {
     const getFirstGridColumn = () =>
-      getPropertyRules()
+      getRules()
         .find(GridColumn)
         .at(0);
 
@@ -77,7 +76,7 @@ describe('<PropertyRules />', () => {
   });
 
   describe('the `Heading` component', () => {
-    const getHeading = () => getPropertyRules().find(Heading);
+    const getHeading = () => getRules().find(Heading);
 
     it('should have the right props', () => {
       const wrapper = getHeading();
@@ -94,7 +93,7 @@ describe('<PropertyRules />', () => {
 
   describe('the second `GridColumn` component', () => {
     const getSecondGridColumn = () =>
-      getPropertyRules()
+      getRules()
         .find(GridColumn)
         .at(1);
 
@@ -113,7 +112,7 @@ describe('<PropertyRules />', () => {
 
   describe('the second `GridColumn` component', () => {
     const getSecondGridColumn = () =>
-      getPropertyRules()
+      getRules()
         .find(GridColumn)
         .at(1);
 
@@ -142,7 +141,7 @@ describe('<PropertyRules />', () => {
 
   describe('the third `GridColumn` component', () => {
     const getThirdGridColumn = () =>
-      getPropertyRules()
+      getRules()
         .find(GridColumn)
         .at(2);
 
@@ -161,7 +160,7 @@ describe('<PropertyRules />', () => {
 
   describe('the second `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyRules()
+      const wrapper = getRules()
         .find(Grid)
         .at(1);
 
@@ -174,7 +173,7 @@ describe('<PropertyRules />', () => {
 
   describe('each `GridColumn` in the second `Grid` component', () => {
     const getGridColumnInSecondGrid = () =>
-      getPropertyRules()
+      getRules()
         .find(Grid)
         .at(1)
         .children(GridColumn)
@@ -195,7 +194,7 @@ describe('<PropertyRules />', () => {
 
   describe('each `Icon` in the second `Grid` component', () => {
     const getIconCardInSecondGrid = () =>
-      getPropertyRules()
+      getRules()
         .find(Grid)
         .at(1)
         .find(Icon)
@@ -211,7 +210,7 @@ describe('<PropertyRules />', () => {
 
   describe('the fourth `GridColumn` component', () => {
     const getFourthGridColumn = () =>
-      getPropertyRules()
+      getRules()
         .find(GridColumn)
         .at(5);
 
@@ -228,7 +227,7 @@ describe('<PropertyRules />', () => {
     });
   });
 
-  it('should have displayName `PropertyRules`', () => {
-    expectComponentToHaveDisplayName(PropertyRules, 'PropertyRules');
+  it('should have displayName `Rules`', () => {
+    expectComponentToHaveDisplayName(Rules, 'Rules');
   });
 });

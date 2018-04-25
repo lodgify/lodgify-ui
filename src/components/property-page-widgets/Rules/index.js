@@ -1,1 +1,1 @@
-export { Component as PropertyRules } from './component';
+export { Component as Rules } from './component';

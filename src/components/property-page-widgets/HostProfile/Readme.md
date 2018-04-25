@@ -16,7 +16,7 @@ const email = 'welovecats@lodgify.com';
 const phone = '+34932206524';
 const languages = ['English', 'Italian', 'German', 'Spanish'];
 
-<PropertyHost
+<HostProfile
   avatarUrl={catImageUrl}
   name={name}
   description={description}

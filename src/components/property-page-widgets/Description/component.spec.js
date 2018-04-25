@@ -20,7 +20,7 @@ import {
   extraDescriptionText,
   icons,
 } from './mock-data/props';
-import { Component as PropertyDescription } from './component';
+import { Component as Description } from './component';
 
 const props = {
   descriptionText,
@@ -28,26 +28,26 @@ const props = {
   propertyType: 'Bed & Breakfast',
 };
 
-const getPropertyDescription = extraProps =>
-  shallow(<PropertyDescription {...props} {...extraProps} />);
+const getDescription = extraProps =>
+  shallow(<Description {...props} {...extraProps} />);
 
-describe('<PropertyDescription />', () => {
+describe('<Description />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
-    const wrapper = getPropertyDescription();
+    const wrapper = getDescription();
     const actual = wrapper.is(Grid);
     expect(actual).toBe(true);
   });
 
   describe('the first `Grid` component', () => {
     it('should have the right props', () => {
-      const wrapper = getPropertyDescription();
+      const wrapper = getDescription();
       expectComponentToHaveProps(wrapper, {
         stackable: true,
       });
     });
 
     it('should render the right children', () => {
-      const wrapper = getPropertyDescription();
+      const wrapper = getDescription();
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(3, GridColumn)
@@ -57,7 +57,7 @@ describe('<PropertyDescription />', () => {
 
   describe('the first `GridColumn` component', () => {
     const getFirstGridColumn = () =>
-      getPropertyDescription()
+      getDescription()
         .find(GridColumn)
         .first();
 
@@ -80,7 +80,7 @@ describe('<PropertyDescription />', () => {
 
   describe('the `Subheading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyDescription().find(Subheading);
+      const wrapper = getDescription().find(Subheading);
       expectComponentToHaveChildren(wrapper, props.propertyType);
     });
   });
@@ -89,7 +89,7 @@ describe('<PropertyDescription />', () => {
     it('should render the right children', () => {
       getParagraphsFromStrings(descriptionText).forEach(
         (paragraphText, index) => {
-          const wrapper = getPropertyDescription()
+          const wrapper = getDescription()
             .find(Paragraph)
             .at(index);
           expectComponentToHaveChildren(wrapper, paragraphText);
@@ -100,7 +100,7 @@ describe('<PropertyDescription />', () => {
 
   describe('the second `GridColumn` component', () => {
     const getSecondGridColumn = () =>
-      getPropertyDescription()
+      getDescription()
         .find(GridColumn)
         .at(1);
     it('should have the right props', () => {
@@ -114,7 +114,7 @@ describe('<PropertyDescription />', () => {
 
   describe('the third `GridColumn` component', () => {
     const getThirdGridColumn = () =>
-      getPropertyDescription()
+      getDescription()
         .find(GridColumn)
         .at(2);
 
@@ -134,7 +134,7 @@ describe('<PropertyDescription />', () => {
 
   describe('the second `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyDescription()
+      const wrapper = getDescription()
         .find(Grid)
         .at(1);
       expectComponentToHaveChildren(
@@ -146,7 +146,7 @@ describe('<PropertyDescription />', () => {
 
   describe('each of the `GridColumn`s in the second `Grid` component', () => {
     const getGridColumnInSecondGrid = () =>
-      getPropertyDescription()
+      getDescription()
         .find(GridColumn)
         .at(3);
 
@@ -165,7 +165,7 @@ describe('<PropertyDescription />', () => {
 
   describe('each of the `Icon`s in the second `Grid` component', () => {
     it('should have the right props', () => {
-      const wrapper = getPropertyDescription()
+      const wrapper = getDescription()
         .find(Icon)
         .at(0);
       expectComponentToHaveProps(wrapper, {
@@ -178,7 +178,7 @@ describe('<PropertyDescription />', () => {
   describe('if `props.extraDescriptionText` is passed', () => {
     describe('the first `GridColumn` component', () => {
       it('should render an extra `Modal` component', () => {
-        const wrapper = getPropertyDescription({ extraDescriptionText })
+        const wrapper = getDescription({ extraDescriptionText })
           .find(GridColumn)
           .first();
         expectComponentToHaveChildren(
@@ -192,9 +192,7 @@ describe('<PropertyDescription />', () => {
 
     describe('the `Modal` component', () => {
       it('should have the right props', () => {
-        const wrapper = getPropertyDescription({ extraDescriptionText }).find(
-          Modal
-        );
+        const wrapper = getDescription({ extraDescriptionText }).find(Modal);
         expectComponentToHaveProps(wrapper, {
           children: expect.any(Array),
           trigger: <Link>View more</Link>,
@@ -203,8 +201,8 @@ describe('<PropertyDescription />', () => {
     });
   });
 
-  it('should have `displayName` `PropertyDescription`', () => {
-    const actual = PropertyDescription.displayName;
-    expect(actual).toBe('PropertyDescription');
+  it('should have `displayName` `Description`', () => {
+    const actual = Description.displayName;
+    expect(actual).toBe('Description');
   });
 });

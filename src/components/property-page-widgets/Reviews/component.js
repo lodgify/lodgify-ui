@@ -9,7 +9,7 @@ import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
-import { Review } from 'widgets/Review';
+import { Review } from 'general-widgets/Review';
 
 /**
  * The standard widget for displaying a collection of reviews.

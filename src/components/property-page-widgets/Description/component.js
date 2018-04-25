@@ -55,7 +55,7 @@ export const Component = ({
   </Grid>
 );
 
-Component.displayName = 'PropertyDescription';
+Component.displayName = 'Description';
 
 Component.defaultProps = {
   extraDescriptionText: null,

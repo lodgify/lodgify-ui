@@ -6,7 +6,7 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
-import { Thumbnail } from 'elements/Thumbnail';
+import { Thumbnail } from 'media/Thumbnail';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 
@@ -41,7 +41,7 @@ export const Component = ({ pictures }) => (
   </Grid>
 );
 
-Component.displayName = 'PropertyPictures';
+Component.displayName = 'Pictures';
 
 Component.propTypes = {
   /** The pictures to display as responsive images. */

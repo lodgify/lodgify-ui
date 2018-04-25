@@ -1,1 +1,1 @@
-export { Component as PropertyDescription } from './component';
+export { Component as Description } from './component';

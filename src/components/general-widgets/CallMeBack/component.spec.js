@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
-import { Dropdown } from 'elements/Dropdown';
+import { Dropdown } from 'inputs/Dropdown';
 
 import * as options from './mock-data/options';
 import { Component as CallMeBack } from './component';

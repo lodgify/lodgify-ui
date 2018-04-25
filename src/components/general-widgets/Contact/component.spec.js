@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 
 import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
-import { DateRangePicker } from 'elements/DateRangePicker';
-import { Dropdown } from 'elements/Dropdown';
+import { DateRangePicker } from 'inputs/DateRangePicker';
+import { Dropdown } from 'inputs/Dropdown';
 
 import * as options from './mock-data/options';
 import { Component as Contact } from './component';

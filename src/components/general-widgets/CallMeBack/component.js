@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
-import { TextInput } from 'elements/TextInput';
-import { PhoneInput } from 'elements/PhoneInput';
-import { Dropdown } from 'elements/Dropdown';
-import { TextArea } from 'elements/TextArea';
+import { TextInput } from 'inputs/TextInput';
+import { PhoneInput } from 'inputs/PhoneInput';
+import { Dropdown } from 'inputs/Dropdown';
+import { TextArea } from 'inputs/TextArea';
 
 /**
  * The standard widget for a user to request a call back.

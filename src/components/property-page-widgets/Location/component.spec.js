@@ -23,7 +23,7 @@ import {
   locationSummary,
   transportOptions,
 } from './mock-data/props';
-import { Component as PropertyLocation } from './component';
+import { Component as Location } from './component';
 
 const props = {
   locationDescription,
@@ -33,18 +33,18 @@ const props = {
   longitude: 2.158105,
 };
 
-const getPropertyLocation = () => shallow(<PropertyLocation {...props} />);
+const getLocation = () => shallow(<Location {...props} />);
 
-describe('<PropertyLocation />', () => {
+describe('<Location />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
-    const wrapper = getPropertyLocation();
+    const wrapper = getLocation();
     const actual = wrapper.is(Grid);
     expect(actual).toBe(true);
   });
 
   describe('the first `Grid` component', () => {
     it('should render the right props', () => {
-      const wrapper = getPropertyLocation();
+      const wrapper = getLocation();
       expectComponentToHaveProps(wrapper, {
         stackable: true,
       });
@@ -53,7 +53,7 @@ describe('<PropertyLocation />', () => {
 
   describe('the first `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyLocation();
+      const wrapper = getLocation();
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(2, GridColumn),
@@ -65,7 +65,7 @@ describe('<PropertyLocation />', () => {
 
   describe('the first `GridColumn` component', () => {
     const getFirstGridColumn = () =>
-      getPropertyLocation()
+      getLocation()
         .find(GridColumn)
         .at(0);
 
@@ -84,14 +84,14 @@ describe('<PropertyLocation />', () => {
 
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyLocation().find(Heading);
+      const wrapper = getLocation().find(Heading);
       expectComponentToHaveChildren(wrapper, 'Location');
     });
   });
 
   describe('the `Subheading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyLocation()
+      const wrapper = getLocation()
         .find(Subheading)
         .at(0);
       expectComponentToHaveChildren(wrapper, locationSummary);
@@ -100,7 +100,7 @@ describe('<PropertyLocation />', () => {
 
   describe('the second `GridColumn` component', () => {
     const getSecondGridColumn = () =>
-      getPropertyLocation()
+      getLocation()
         .find(GridColumn)
         .at(1);
 
@@ -119,7 +119,7 @@ describe('<PropertyLocation />', () => {
 
   describe('each `Paragraph` in the second `GridColumn` component', () => {
     const getParagraphInSecondGridColumn = () =>
-      getPropertyLocation()
+      getLocation()
         .find(GridColumn)
         .at(1)
         .children(Paragraph);
@@ -133,7 +133,7 @@ describe('<PropertyLocation />', () => {
 
   describe('the first `ShowOnDesktop` component', () => {
     const getFirstShowOnDesktop = () =>
-      getPropertyLocation()
+      getLocation()
         .find(ShowOnDesktop)
         .at(0);
 
@@ -155,7 +155,7 @@ describe('<PropertyLocation />', () => {
 
   describe('the second `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyLocation()
+      const wrapper = getLocation()
         .find(Grid)
         .at(1);
       expectComponentToHaveChildren(
@@ -167,7 +167,7 @@ describe('<PropertyLocation />', () => {
 
   describe('each `GridColumn` in the second `Grid` component', () => {
     const getGridColumnInSecondGrid = () =>
-      getPropertyLocation()
+      getLocation()
         .find(Grid)
         .at(1)
         .children(GridColumn)
@@ -188,7 +188,7 @@ describe('<PropertyLocation />', () => {
 
   describe('each `IconCard` in the second `Grid` component', () => {
     const getIconCardInSecondGrid = () =>
-      getPropertyLocation()
+      getLocation()
         .find(Grid)
         .at(1)
         .find(IconCard)
@@ -206,7 +206,7 @@ describe('<PropertyLocation />', () => {
 
   describe('the second `ShowOnDesktop` component', () => {
     const getSecondShowOnDesktop = () =>
-      getPropertyLocation()
+      getLocation()
         .find(ShowOnDesktop)
         .at(1);
 
@@ -228,7 +228,7 @@ describe('<PropertyLocation />', () => {
 
   describe('the first `GoogleMap` component', () => {
     it('should have the right props', () => {
-      const wrapper = getPropertyLocation()
+      const wrapper = getLocation()
         .find(GoogleMap)
         .at(0);
       expectComponentToHaveProps(wrapper, {
@@ -241,7 +241,7 @@ describe('<PropertyLocation />', () => {
   });
 
   describe('the first `ShowOnMobile` component', () => {
-    const wrapper = getPropertyLocation()
+    const wrapper = getLocation()
       .find(ShowOnMobile)
       .first();
 
@@ -261,7 +261,7 @@ describe('<PropertyLocation />', () => {
 
   describe('the third `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyLocation()
+      const wrapper = getLocation()
         .find(Grid)
         .at(2);
       expectComponentToHaveChildren(
@@ -273,7 +273,7 @@ describe('<PropertyLocation />', () => {
 
   describe('each `GridColumn` in the third `Grid` component', () => {
     const getGridColumnInThirdGrid = () =>
-      getPropertyLocation()
+      getLocation()
         .find(Grid)
         .at(2)
         .children(GridColumn)
@@ -294,7 +294,7 @@ describe('<PropertyLocation />', () => {
 
   describe('each `IconCard` in the third `Grid` component', () => {
     const getIconCardInThirdGrid = () =>
-      getPropertyLocation()
+      getLocation()
         .find(Grid)
         .at(2)
         .find(IconCard)
@@ -310,8 +310,8 @@ describe('<PropertyLocation />', () => {
     });
   });
 
-  it('should have `displayName` `PropertyLocation`', () => {
-    const actual = PropertyLocation.displayName;
-    expect(actual).toBe('PropertyLocation');
+  it('should have `displayName` `Location`', () => {
+    const actual = Location.displayName;
+    expect(actual).toBe('Location');
   });
 });

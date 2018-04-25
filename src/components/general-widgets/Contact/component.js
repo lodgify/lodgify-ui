@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
-import { TextInput } from 'elements/TextInput';
-import { PhoneInput } from 'elements/PhoneInput';
-import { Dropdown } from 'elements/Dropdown';
-import { DateRangePicker } from 'elements/DateRangePicker';
-import { TextArea } from 'elements/TextArea';
-import { CaptchaInput } from 'elements/CaptchaInput';
+import { TextInput } from 'inputs/TextInput';
+import { PhoneInput } from 'inputs/PhoneInput';
+import { Dropdown } from 'inputs/Dropdown';
+import { DateRangePicker } from 'inputs/DateRangePicker';
+import { TextArea } from 'inputs/TextArea';
+import { CaptchaInput } from 'inputs/CaptchaInput';
 
 /**
  * The standard widget for a user contact an owner.

@@ -1,7 +1,7 @@
 ```jsx
 const { descriptionText, icons } = require('./mock-data/props');
 
-<PropertyDescription
+<Description
   descriptionText={descriptionText}
   icons={icons}
   propertyType="Bed & Breakfast"
@@ -19,7 +19,7 @@ const {
   icons
 } = require('./mock-data/props');
 
-<PropertyDescription
+<Description
   descriptionText={descriptionText}
   extraDescriptionText={extraDescriptionText}
   icons={icons}

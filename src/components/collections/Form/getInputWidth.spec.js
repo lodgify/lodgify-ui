@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TextInput } from 'elements/TextInput';
+import { TextInput } from 'inputs/TextInput';
 
 import { getInputWidth } from './getInputWidth';
 

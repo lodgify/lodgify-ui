@@ -12,24 +12,23 @@ import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
-import { Thumbnail } from 'elements/Thumbnail';
+import { Thumbnail } from 'media/Thumbnail';
 
 import { pictures } from './mock-data/pictures';
-import { Component as PropertyPictures } from './component';
+import { Component as Pictures } from './component';
 
-const getPropertyPictures = () =>
-  shallow(<PropertyPictures pictures={pictures} />);
+const getPictures = () => shallow(<Pictures pictures={pictures} />);
 
-describe('<PropertyPictures />', () => {
+describe('<Pictures />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
-    const wrapper = getPropertyPictures();
+    const wrapper = getPictures();
     const actual = wrapper.is(Grid);
     expect(actual).toBe(true);
   });
 
   describe('the `Grid` component', () => {
     it('should render a `GridColumn` for each item in `props.pictures` plus one for the Link', () => {
-      const wrapper = getPropertyPictures();
+      const wrapper = getPictures();
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(7, GridColumn)
@@ -39,7 +38,7 @@ describe('<PropertyPictures />', () => {
 
   describe('the first `GridColumn` component', () => {
     const getFirstGridColumn = () =>
-      getPropertyPictures()
+      getPictures()
         .find(GridColumn)
         .first();
 
@@ -58,14 +57,14 @@ describe('<PropertyPictures />', () => {
 
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyPictures().find(Heading);
+      const wrapper = getPictures().find(Heading);
       expectComponentToHaveChildren(wrapper, 'Property pictures');
     });
   });
 
   describe('each of the array of `GridColumn`s', () => {
     const getGridColumnInArray = () =>
-      getPropertyPictures()
+      getPictures()
         .find(GridColumn)
         .at(1);
 
@@ -84,7 +83,7 @@ describe('<PropertyPictures />', () => {
 
   describe('each of the array of `ShowOnDesktop`s', () => {
     const getShowOnDesktopInArray = () =>
-      getPropertyPictures()
+      getPictures()
         .find(ShowOnDesktop)
         .at(0);
     it('should render the right children', () => {
@@ -95,7 +94,7 @@ describe('<PropertyPictures />', () => {
 
   describe('each `Thumbnail` component', () => {
     it('should get the right props', () => {
-      const wrapper = getPropertyPictures()
+      const wrapper = getPictures()
         .find(Thumbnail)
         .at(0);
       const { imageUrl, label } = pictures[0];
@@ -109,7 +108,7 @@ describe('<PropertyPictures />', () => {
 
   describe('each of the array of `ShowOnMobile`s', () => {
     const getShowOnMobileInArray = () =>
-      getPropertyPictures()
+      getPictures()
         .find(ShowOnMobile)
         .at(0);
     it('should render the right children', () => {
@@ -120,7 +119,7 @@ describe('<PropertyPictures />', () => {
 
   describe('each `Thumbnail` component', () => {
     it('should get the right props', () => {
-      const wrapper = getPropertyPictures()
+      const wrapper = getPictures()
         .find(Thumbnail)
         .at(1);
       const { imageUrl, label } = pictures[0];
@@ -136,7 +135,7 @@ describe('<PropertyPictures />', () => {
 
   describe('the `GridColumn` component wrapping the link', () => {
     const getGridColumnWithLink = () =>
-      getPropertyPictures()
+      getPictures()
         .find(GridColumn)
         .at(6);
 
@@ -155,13 +154,13 @@ describe('<PropertyPictures />', () => {
 
   describe('the `Link` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPropertyPictures().find(Link);
+      const wrapper = getPictures().find(Link);
       expectComponentToHaveChildren(wrapper, 'Explore all pictures');
     });
   });
 
-  it('should have `displayName` `PropertyPictures`', () => {
-    const actual = PropertyPictures.displayName;
-    expect(actual).toBe('PropertyPictures');
+  it('should have `displayName` `Pictures`', () => {
+    const actual = Pictures.displayName;
+    expect(actual).toBe('Pictures');
   });
 });
