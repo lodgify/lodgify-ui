@@ -50,7 +50,7 @@ describe('<Description />', () => {
       const wrapper = getDescription();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(3, GridColumn)
+        ...getArrayOfLengthOfItem(2, GridColumn)
       );
     });
   });
@@ -64,7 +64,8 @@ describe('<Description />', () => {
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 7,
+        computer: 7,
+        tablet: 12,
       });
     });
 
@@ -103,31 +104,18 @@ describe('<Description />', () => {
       getDescription()
         .find(GridColumn)
         .at(1);
+
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
-        only: 'computer',
-        width: 1,
-      });
-    });
-  });
-
-  describe('the third `GridColumn` component', () => {
-    const getThirdGridColumn = () =>
-      getDescription()
-        .find(GridColumn)
-        .at(2);
-
-    it('should have the right props', () => {
-      const wrapper = getThirdGridColumn();
-      expectComponentToHaveProps(wrapper, {
         verticalAlignContent: 'middle',
-        width: 4,
+        computer: 5,
+        tablet: 12,
       });
     });
 
     it('should render the right children', () => {
-      const wrapper = getThirdGridColumn();
+      const wrapper = getSecondGridColumn();
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
