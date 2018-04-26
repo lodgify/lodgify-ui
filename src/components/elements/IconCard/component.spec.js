@@ -2,6 +2,12 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Label } from 'semantic-ui-react';
 
+import {
+  expectComponentToBe,
+  expectComponentToHaveProps,
+  expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
+} from 'lib/expect-helpers';
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
@@ -15,63 +21,63 @@ const getLabel = () => getIconCard().find(Label);
 describe('<IconCard />', () => {
   it('should render a single Semantic UI `Label` component', () => {
     const wrapper = getIconCard();
-    const actual = wrapper.find(Label);
-    expect(actual).toHaveLength(1);
+    expectComponentToBe(wrapper, Label);
   });
 
   describe('the `Label` component', () => {
     it('should get the right props', () => {
       const wrapper = getLabel();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          basic: true,
-          className: 'icon-card',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        basic: true,
+        className: 'icon-card',
+      });
     });
 
     it('should render a single Lodgify UI `Icon` component', () => {
       const wrapper = getLabel();
-      const actual = wrapper.find(Icon);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, Icon);
     });
   });
 
   describe('the `Icon` component', () => {
     it('should get the right props', () => {
       const wrapper = getIconCard().find(Icon);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          isDisabled: false,
-          name,
-          size: 'big',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        isDisabled: false,
+        name,
+        size: 'big',
+      });
     });
   });
 
-  describe('if a label prop is passed', () => {
+  describe('if a single line string label prop is passed', () => {
     it('should render a single Lodgify UI `Paragraph` component', () => {
       const label = '🐘';
       const wrapper = getIconCard({ label });
-      const actual = wrapper.find(Paragraph);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, Icon, Paragraph);
     });
   });
 
-  describe('the Lodgify UI `Paragraph` component', () => {
-    it('should get the right children prop', () => {
-      const label = '🐘';
+  describe('if a multiline string label prop is passed', () => {
+    it('should render more than one Lodgify UI `Paragraph` component', () => {
+      const label = `
+        🐘
+        🐘
+      `;
       const wrapper = getIconCard({ label });
-      const actual = wrapper.find(Paragraph).prop('children');
-      expect(actual).toBe(label);
+      expectComponentToHaveChildren(wrapper, Icon, Paragraph, Paragraph);
+    });
+  });
+
+  describe('each Lodgify UI `Paragraph` component', () => {
+    it('should have the right children', () => {
+      const label = '🐘';
+      const wrapper = getIconCard({ label }).find(Paragraph);
+      expectComponentToHaveChildren(wrapper, label);
     });
   });
 
   it('should have displayName `IconCard`', () => {
-    const actual = IconCard.displayName;
-    expect(actual).toBe('IconCard');
+    expectComponentToHaveDisplayName(IconCard, 'IconCard');
   });
 });

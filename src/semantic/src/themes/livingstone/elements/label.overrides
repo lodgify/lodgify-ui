@@ -18,19 +18,23 @@
 
   /* Icon */
   &.icon-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     height: @iconCardHeight;
+    justify-content: center;
     width: @iconCardWidth;
 
     & > i.icon {
-      text-align: center;
-      width: 100%;
+      margin: 0;
+    }
 
-      & + p {
-        display: block;
-        line-height: @iconCardTextLineHeight;
+    & > p {
+      line-height: @iconCardTextLineHeight;
+      white-space: nowrap;
+
+      &:nth-child(2) {
         margin: @iconCardTextMargin;
-        text-align: center;
-        white-space: nowrap;
       }
     }
   }
@@ -92,7 +96,7 @@
 
   & > i.inverted.grey.icon {
 
-    & + p {
+    & ~ p {
       color: @disabledIconCardColor;
     }
   }
@@ -100,15 +104,7 @@
   /* Left aligned */
 
   &.left.aligned.icon-card {
-
-    & > i.icon {
-      margin-right: @leftAlignedIconCardMarginRight;
-      text-align: left;
-
-      & + p {
-        text-align: left;
-      }
-    }
+    align-items: flex-start;
   }
 
   /*-------------------

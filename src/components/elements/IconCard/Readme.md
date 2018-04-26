@@ -18,6 +18,14 @@
 <div>
   <IconCard label="Fireplace" name="fire" />
   <Divider />
+  <IconCard
+    label={`
+      Wow
+      Multiline
+    `}
+    name="fire"
+  />
+  <Divider />
   <IconCard isDisabled label="Fireplace" name="fire" />
 </div>
 ```
