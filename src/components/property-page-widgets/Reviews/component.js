@@ -25,6 +25,7 @@ export const Component = ({ reviews, ratingAverage }) => (
     <GridRow verticalAlign="middle">
       <GridColumn
         mobile={5}
+        tablet={5}
         computer={6}
         textAlign="left"
         verticalAlign="middle"
@@ -40,6 +41,7 @@ export const Component = ({ reviews, ratingAverage }) => (
       </GridColumn>
       <GridColumn
         mobile={7}
+        tablet={7}
         computer={6}
         verticalAlign="middle"
         floated="right"
