@@ -22,9 +22,9 @@ export const Component = ({ checkInTime, checkOutTime, rules }) => (
       <List items={rules.map(rule => <Paragraph>{rule}</Paragraph>)} />
     </GridColumn>
     <GridColumn computer={9} tablet={7}>
-      <Icon label={`Check in: ${checkInTime}`} name="checkin" />
+      <Icon label={`Check in: ${checkInTime}`} name="question mark" />
       <Divider />
-      <Icon label={`Check out: ${checkOutTime}`} name="checkout" />
+      <Icon label={`Check out: ${checkOutTime}`} name="question mark" />
     </GridColumn>
   </Grid>
 );

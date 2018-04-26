@@ -9,9 +9,9 @@ import {
   expectComponentToBe,
 } from 'lib/expect-helpers';
 import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
-import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { Divider } from 'elements/Divider';
 import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 
@@ -51,7 +51,7 @@ describe('<Rules />', () => {
       const wrapper = getRules();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(4, GridColumn)
+        ...getArrayOfLengthOfItem(3, GridColumn)
       );
     });
   });
@@ -76,17 +76,8 @@ describe('<Rules />', () => {
   });
 
   describe('the `Heading` component', () => {
-    const getHeading = () => getRules().find(Heading);
-
-    it('should have the right props', () => {
-      const wrapper = getHeading();
-      expectComponentToHaveProps(wrapper, {
-        size: 'small',
-      });
-    });
-
     it('should render the right children', () => {
-      const wrapper = getHeading();
+      const wrapper = getRules().find(Heading);
       expectComponentToHaveChildren(wrapper, 'House Rules');
     });
   });
@@ -100,7 +91,8 @@ describe('<Rules />', () => {
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 3,
+        computer: 3,
+        tablet: 5,
       });
     });
 
@@ -110,32 +102,12 @@ describe('<Rules />', () => {
     });
   });
 
-  describe('the second `GridColumn` component', () => {
-    const getSecondGridColumn = () =>
-      getRules()
-        .find(GridColumn)
-        .at(1);
-
+  describe('the `List` component', () => {
     it('should have the right props', () => {
-      const wrapper = getSecondGridColumn();
+      const wrapper = getRules().find(List);
       expectComponentToHaveProps(wrapper, {
-        width: 3,
+        items: expect.any(Array),
       });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getSecondGridColumn();
-      expectComponentToHaveChildren(wrapper, List);
-    });
-
-    it('should have the right props', () => {
-      const wrapper = getSecondGridColumn().find(List);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          items: getParagraphsFromStrings(rules.join('\n')),
-        })
-      );
     });
   });
 
@@ -148,82 +120,38 @@ describe('<Rules />', () => {
     it('should have the right props', () => {
       const wrapper = getThirdGridColumn();
       expectComponentToHaveProps(wrapper, {
-        width: 2,
+        computer: 9,
+        tablet: 7,
       });
     });
 
     it('should render the right children', () => {
       const wrapper = getThirdGridColumn();
-      expectComponentToHaveChildren(wrapper, Grid);
+      expectComponentToHaveChildren(wrapper, Icon, Divider, Icon);
     });
   });
 
-  describe('the second `Grid` component', () => {
-    it('should render the right children', () => {
+  describe('the first `Icon` in the second `Grid` component', () => {
+    it('should have the right props', () => {
       const wrapper = getRules()
-        .find(Grid)
-        .at(1);
-
-      expectComponentToHaveChildren(
-        wrapper,
-        ...getArrayOfLengthOfItem(2, GridColumn)
-      );
-    });
-  });
-
-  describe('each `GridColumn` in the second `Grid` component', () => {
-    const getGridColumnInSecondGrid = () =>
-      getRules()
-        .find(Grid)
-        .at(1)
-        .children(GridColumn)
-        .first();
-
-    it('should have the right props', () => {
-      const wrapper = getGridColumnInSecondGrid();
-      expectComponentToHaveProps(wrapper, {
-        width: 3,
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getGridColumnInSecondGrid();
-      expectComponentToHaveChildren(wrapper, Icon);
-    });
-  });
-
-  describe('each `Icon` in the second `Grid` component', () => {
-    const getIconCardInSecondGrid = () =>
-      getRules()
-        .find(Grid)
-        .at(1)
         .find(Icon)
-        .first();
-
-    it('should have the right props', () => {
-      const wrapper = getIconCardInSecondGrid();
+        .at(0);
       expectComponentToHaveProps(wrapper, {
-        name: expect.any(String),
+        label: expect.stringContaining('Check in:'),
+        name: 'question mark',
       });
     });
   });
 
-  describe('the fourth `GridColumn` component', () => {
-    const getFourthGridColumn = () =>
-      getRules()
-        .find(GridColumn)
-        .at(5);
-
+  describe('the second `Icon` in the second `Grid` component', () => {
     it('should have the right props', () => {
-      const wrapper = getFourthGridColumn();
+      const wrapper = getRules()
+        .find(Icon)
+        .at(1);
       expectComponentToHaveProps(wrapper, {
-        width: 2,
+        label: expect.stringContaining('Check out:'),
+        name: 'question mark',
       });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getFourthGridColumn();
-      expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
