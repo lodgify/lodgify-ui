@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { Label } from 'semantic-ui-react';
 import cx from 'classnames';
 
+import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
+import { getUniqueKey } from 'lib/get-unique-key';
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
@@ -22,7 +24,10 @@ export const Component = ({
     className={cx('icon-card', { 'left aligned': isLeftAligned })}
   >
     <Icon isDisabled={isDisabled} name={name} size="big" />
-    {label && <Paragraph>{label}</Paragraph>}
+    {label &&
+      getParagraphsFromStrings(label).map((paragraph, index) => (
+        <Paragraph key={getUniqueKey(paragraph, index)}>{paragraph}</Paragraph>
+      ))}
   </Label>
 );
 
