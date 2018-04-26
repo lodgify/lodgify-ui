@@ -7,8 +7,6 @@
 --------------------*/
 
 .ui.label {
-  height: @keyFactsHeight;
-  width: @keyFactsWidth;
 
   /* Group */
 
@@ -19,16 +17,21 @@
   /* Link */
 
   /* Icon */
-  & > i.icon {
-    text-align: center;
-    width: 100%;
+  &.icon-card {
+    height: @iconCardHeight;
+    width: @iconCardWidth;
 
-    & + p {
-      display: block;
-      line-height: @iconCardTextLineHeight;
-      margin: @iconCardTextMargin;
+    & > i.icon {
       text-align: center;
-      white-space: nowrap;
+      width: 100%;
+
+      & + p {
+        display: block;
+        line-height: @iconCardTextLineHeight;
+        margin: @iconCardTextMargin;
+        text-align: center;
+        white-space: nowrap;
+      }
     }
   }
 
@@ -96,7 +99,7 @@
 
   /* Left aligned */
 
-  &.left.aligned {
+  &.left.aligned.icon-card {
 
     & > i.icon {
       margin-right: @leftAlignedIconCardMarginRight;

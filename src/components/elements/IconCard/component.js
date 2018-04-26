@@ -17,7 +17,10 @@ export const Component = ({
   label,
   name,
 }) => (
-  <Label basic={!isFilled} className={cx({ 'left aligned': isLeftAligned })}>
+  <Label
+    basic={!isFilled}
+    className={cx('icon-card', { 'left aligned': isLeftAligned })}
+  >
     <Icon isDisabled={isDisabled} name={name} size="big" />
     {label && <Paragraph>{label}</Paragraph>}
   </Label>

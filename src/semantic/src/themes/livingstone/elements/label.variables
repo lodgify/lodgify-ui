@@ -23,6 +23,9 @@
 /* Link */
 
 /* Icon */
+@iconCardWidth: 8em;
+@iconCardHeight: 8.5em;
+
 @iconCardTextLineHeight: @12px;
 @iconCardTextMargin: @12px 0 0;
 
@@ -53,8 +56,6 @@
 --------------------*/
 
 /* Basic */
-@keyFactsWidth: 8em;
-@keyFactsHeight: 8.5em;
 @basicBorderColor: @greyThree;
 @basicBorder: @basicBorderWidth solid @basicBorderColor;
 @basicFontWeight: @bold;
