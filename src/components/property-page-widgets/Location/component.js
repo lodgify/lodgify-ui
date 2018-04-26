@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
 import { getUniqueKey } from 'lib/get-unique-key';
-import { getFirstFourItems } from 'lib/get-first-four-items';
+import { withResponsive } from 'lib/with-responsive';
 import { Divider } from 'elements/Divider';
 import { GoogleMap } from 'elements/GoogleMap';
 import { Grid } from 'layout/Grid';
@@ -13,17 +13,18 @@ import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
-import { IconCard } from 'elements/IconCard';
 
-import { getTransportOptionLabel } from './utils/getTransportOptionLabel';
+import { getTransportOptionsMarkup } from './utils/getTransportOptionsMarkup';
+import { getGoogleMapHeight } from './utils/getGoogleMapHeight';
 
 /**
  * The standard widget for displaying the location of a property.
  * @returns {Object}
  */
-export const Component = ({
+const Component = ({
   isShowingApproximateLocation,
   isShowingExactLocation,
+  isUserOnMobile,
   latitude,
   locationDescription,
   locationSummary,
@@ -35,7 +36,7 @@ export const Component = ({
       <Heading>Location</Heading>
       <Subheading>{locationSummary}</Subheading>
     </GridColumn>
-    <GridColumn width={6}>
+    <GridColumn computer={6} tablet={12}>
       {getParagraphsFromStrings(locationDescription).map(
         (paragraphText, index) => (
           <Paragraph key={getUniqueKey(paragraphText, index)}>
@@ -44,51 +45,24 @@ export const Component = ({
         )
       )}
     </GridColumn>
-    <ShowOnDesktop parent={GridColumn} parentProps={{ width: 6 }}>
-      <Grid>
-        {getFirstFourItems(transportOptions).map(
-          ({ distance, iconName, label }, index) => (
-            <GridColumn key={getUniqueKey(label, index)} width={3}>
-              <IconCard
-                isFilled
-                label={getTransportOptionLabel(distance, label)}
-                name={iconName}
-              />
-            </GridColumn>
-          )
-        )}
-      </Grid>
+    <ShowOnDesktop
+      parent={GridColumn}
+      parentProps={{ computer: 6, tablet: 12 }}
+    >
+      {getTransportOptionsMarkup(transportOptions)}
     </ShowOnDesktop>
-    <ShowOnDesktop parent={GridColumn} parentProps={{ width: 12 }}>
+    <GridColumn width={12}>
       <GoogleMap
+        height={getGoogleMapHeight(isUserOnMobile)}
         isShowingExactLocation={isShowingExactLocation}
         isShowingApproximateLocation={isShowingApproximateLocation}
         latitude={latitude}
         longitude={longitude}
       />
-    </ShowOnDesktop>
+    </GridColumn>
     <ShowOnMobile parent={GridColumn} parentProps={{ width: 12 }}>
-      <GoogleMap
-        height="200px"
-        isShowingExactLocation={isShowingExactLocation}
-        isShowingApproximateLocation={isShowingApproximateLocation}
-        latitude={latitude}
-        longitude={longitude}
-      />
       <Divider />
-      <Grid>
-        {getFirstFourItems(transportOptions).map(
-          ({ distance, iconName, label }, index) => (
-            <GridColumn key={getUniqueKey(label, index)} width={3}>
-              <IconCard
-                isFilled
-                label={getTransportOptionLabel(distance, label)}
-                name={iconName}
-              />
-            </GridColumn>
-          )
-        )}
-      </Grid>
+      {getTransportOptionsMarkup(transportOptions)}
     </ShowOnMobile>
   </Grid>
 );
@@ -105,6 +79,12 @@ Component.propTypes = {
   isShowingApproximateLocation: PropTypes.bool,
   /** Is the map showing a marker for the exact location. */
   isShowingExactLocation: PropTypes.bool,
+  /**
+   * Is the user on a mobile device.
+   * Provided by `withResponsive` so ignored in the styleguide.
+   * @ignore
+   */
+  isUserOnMobile: PropTypes.bool.isRequired,
   /** The latitude coordinate for the center of the map and/or location of the marker */
   latitude: PropTypes.number.isRequired,
   /** The text description of the location. */
@@ -128,3 +108,5 @@ Component.propTypes = {
     })
   ).isRequired,
 };
+
+export const ComponentWithResponsive = withResponsive(Component);
