@@ -23,7 +23,7 @@ export const Component = ({
   propertyType,
 }) => (
   <Grid stackable>
-    <GridColumn width={7}>
+    <GridColumn computer={7} tablet={12}>
       <Subheading>{propertyType}</Subheading>
       {getParagraphsFromStrings(descriptionText).map((paragraphText, index) => (
         <Paragraph key={getUniqueKey(paragraphText, index)}>
@@ -42,8 +42,7 @@ export const Component = ({
         </Modal>
       )}
     </GridColumn>
-    <GridColumn only="computer" width={1} />
-    <GridColumn verticalAlignContent="middle" width={4}>
+    <GridColumn verticalAlignContent="middle" computer={5} tablet={12}>
       <Grid>
         {getFirstFourItems(icons).map(({ iconName, label }, index) => (
           <GridColumn key={getUniqueKey(label, index)} width={6}>
