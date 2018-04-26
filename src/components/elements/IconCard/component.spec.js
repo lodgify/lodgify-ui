@@ -26,7 +26,7 @@ describe('<IconCard />', () => {
       expect(actual).toEqual(
         expect.objectContaining({
           basic: true,
-          className: '',
+          className: 'icon-card',
         })
       );
     });
