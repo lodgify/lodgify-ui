@@ -19,7 +19,7 @@
   /* Icon */
   &.icon-card {
     align-items: center;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     height: @iconCardHeight;
     justify-content: center;
