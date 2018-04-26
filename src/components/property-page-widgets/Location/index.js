@@ -1,1 +1,1 @@
-export { Component as Location } from './component';
+export { ComponentWithResponsive as Location } from './component';

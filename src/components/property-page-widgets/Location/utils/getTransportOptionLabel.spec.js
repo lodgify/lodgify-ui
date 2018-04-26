@@ -5,6 +5,9 @@ describe('getTransportOptionLabel', () => {
     const distance = '🚣';
     const label = 'someLabel';
     const actual = getTransportOptionLabel(distance, label);
-    expect(actual).toBe(`${distance} ${label}`);
+    expect(actual).toBe(`
+  ${distance}
+  ${label}
+`);
   });
 });
