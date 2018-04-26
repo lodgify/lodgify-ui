@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Label } from 'semantic-ui-react';
 
 import { getUniqueKey } from 'lib/get-unique-key';
 import { Heading } from 'typography/Heading';
@@ -17,24 +18,17 @@ export const Component = ({ keyFacts }) => (
       <Heading>Key facts</Heading>
     </GridColumn>
     <GridColumn width={12}>
-      <Grid>
+      <Label.Group>
         {keyFacts.map(({ iconName, isDisabled, label }, index) => (
-          <GridColumn
-            computer={2}
-            tablet={3}
-            mobile={4}
-            streched
+          <IconCard
+            isDisabled={isDisabled}
+            isFilled
             key={getUniqueKey(label, index)}
-          >
-            <IconCard
-              isDisabled={isDisabled}
-              isFilled
-              label={label}
-              name={iconName}
-            />
-          </GridColumn>
+            label={label}
+            name={iconName}
+          />
         ))}
-      </Grid>
+      </Label.Group>
     </GridColumn>
   </Grid>
 );

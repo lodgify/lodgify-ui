@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { Label } from 'semantic-ui-react';
 
 import {
   expectComponentToHaveChildren,
@@ -31,6 +32,25 @@ describe('<KeyFacts />', () => {
     });
   });
 
+  describe('the first `GridColumn` component', () => {
+    const getFirstGridColumn = () =>
+      getKeyFacts()
+        .find(GridColumn)
+        .at(0);
+
+    it('should have the right props', () => {
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        width: 12,
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getFirstGridColumn();
+      expectComponentToHaveChildren(wrapper, Heading);
+    });
+  });
+
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
       const wrapper = getKeyFacts().find(Heading);
@@ -38,38 +58,38 @@ describe('<KeyFacts />', () => {
     });
   });
 
-  describe('the inner `GridColumn` components', () => {
-    const getInnerColumn = () =>
+  describe('the second `GridColumn` component', () => {
+    const getSecondGridColumn = () =>
       getKeyFacts()
-        .find(Grid)
-        .at(1)
         .find(GridColumn)
-        .at(0);
+        .at(1);
 
-    it('should render with the right props', () => {
-      const wrapper = getInnerColumn();
-
-      wrapper.children().forEach((element, index) =>
-        expectComponentToHaveProps(wrapper.at(index), {
-          computer: 2,
-          tablet: 3,
-          mobile: 4,
-          streched: true,
-        })
-      );
+    it('should have the right props', () => {
+      const wrapper = getSecondGridColumn();
+      expectComponentToHaveProps(wrapper, {
+        width: 12,
+      });
     });
 
-    it('should render an `IconCard` for each item in `props.keyFacts`', () => {
-      const wrapper = getInnerColumn();
+    it('should render the right children', () => {
+      const wrapper = getSecondGridColumn();
+      expectComponentToHaveChildren(wrapper, Label.Group);
+    });
+  });
 
-      wrapper
-        .children()
-        .forEach((element, index) =>
-          expectComponentToHaveChildren(
-            wrapper.at(index),
-            ...getArrayOfLengthOfItem(1, IconCard)
-          )
-        );
+  describe('the `Label.Group` components', () => {
+    const getLabelGroup = () =>
+      getKeyFacts()
+        .find(Label.Group)
+        .at(0);
+
+    it('should render an `IconCard` for each item in `props.keyFacts`', () => {
+      const wrapper = getLabelGroup();
+
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(keyFacts.length, IconCard)
+      );
     });
   });
 
