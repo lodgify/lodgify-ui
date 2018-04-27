@@ -9,6 +9,8 @@ import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { Icon } from 'elements/Icon';
 
+import { getCheckInOrOutTimeLabel } from './utils/getCheckInOrOutTimeLabel';
+
 /**
  * The standard widget for displaying the rules of a property.
  * @returns {Object}
@@ -22,9 +24,15 @@ export const Component = ({ checkInTime, checkOutTime, rules }) => (
       <List items={rules.map(rule => <Paragraph>{rule}</Paragraph>)} />
     </GridColumn>
     <GridColumn computer={9} tablet={7}>
-      <Icon label={`Check in: ${checkInTime}`} name="question mark" />
+      <Icon
+        label={getCheckInOrOutTimeLabel(checkInTime)}
+        name="question mark"
+      />
       <Divider />
-      <Icon label={`Check out: ${checkOutTime}`} name="question mark" />
+      <Icon
+        label={getCheckInOrOutTimeLabel(checkOutTime, true)}
+        name="question mark"
+      />
     </GridColumn>
   </Grid>
 );
