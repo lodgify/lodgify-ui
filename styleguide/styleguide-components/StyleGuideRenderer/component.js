@@ -18,12 +18,18 @@ import cx from 'classnames';
 import Ribbon from 'rsg-components/Ribbon';
 
 // Lodgify UI import start
+import { MobilePlaceholder } from '../MobilePlaceholder';
 import { AlphaFlag } from '../AlphaFlag';
+
+import { getIsDevelopmentServer } from './getIsDevelopmentServer';
 // Lodgify UI import end
 
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
 	root: {
 		backgroundColor: color.baseBackground,
+		// Lodgify UI styles start
+		overflowX: 'scroll',
+		// Lodgify UI styles end
 	},
 	hasSidebar: {
 		paddingLeft: sidebarWidth,
@@ -80,10 +86,11 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
 export function StyleGuideRenderer({ classes, title, homepageUrl, children, toc, hasSidebar }) {
 	return (
 		<div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
+			{/* Lodgify UI markup start */}
+			{getIsDevelopmentServer() || <MobilePlaceholder />}
+			<AlphaFlag />
+			{/* Lodgify UI markup end */}
 			<main className={classes.content}>
-				{/* Lodgify UI markup start */}
-				<AlphaFlag />
-				{/* Lodgify UI markup end */}
 				{children}
 				<footer className={classes.footer}>
 					<Markdown text={`Generated with [React Styleguidist](${homepageUrl})`} />
