@@ -1,27 +1,6 @@
 const { color, fontFamily } = require('./theme');
 
 module.exports = {
-  ComponentsList: {
-    heading: {
-      '&:link, &:visited': {
-        color: `${color.light} !important`,
-        fontFamily: fontFamily.heading,
-        margin: 0,
-        marginTop: '18px',
-        textTransform: 'uppercase',
-      },
-    },
-    item: {
-      margin: 0,
-      marginTop: '12px',
-      'div > ul > &': {
-        marginTop: '30px',
-      },
-    },
-    list: {
-      paddingLeft: 0,
-    },
-  },
   Heading: {
     heading: {
       lineHeight: 1,

@@ -4,7 +4,7 @@ module.exports = {
     base: '#444',
     border: 'transparent',
     light: '#bababa',
-    link: '#444',
+    link: 'inherit',
     linkHover: '#ff585d',
     white: '#fdfdfc',
     name: '#1c8177',
@@ -20,4 +20,5 @@ module.exports = {
     h1: 36,
     h2: 34,
   },
+  sidebarWidth: '210px',
 };
