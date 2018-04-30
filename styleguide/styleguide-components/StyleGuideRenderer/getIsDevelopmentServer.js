@@ -1,1 +1,1 @@
-export const getIsDevelopmentServer = () => !!webpackHotUpdate;
+export const getIsDevelopmentServer = () => !!global.webpackHotUpdate;
