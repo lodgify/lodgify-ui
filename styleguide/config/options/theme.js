@@ -1,20 +1,19 @@
 module.exports = {
   buttonTextTransform: 'none',
   color: {
-    base: '#444',
-    border: 'transparent',
-    light: '#bababa',
+    base: '#0d2b3e',
+    border: '#cdd0d2',
+    light: '#939da3',
     link: 'inherit',
     linkHover: '#ff585d',
-    white: '#fdfdfc',
+    white: '#fff',
     name: '#1c8177',
     type: '#d0494d',
-    baseBackground: '#f0f0ec',
-    sidebarBackground: '#ebebe4',
+    baseBackground: '#fcfdff',
+    sidebarBackground: '#f7f9fc',
   },
   fontFamily: {
     base: '"Roboto", sans-serif',
-    heading: '"Brother-1816", sans-serif',
   },
   fontSize: {
     h1: 36,

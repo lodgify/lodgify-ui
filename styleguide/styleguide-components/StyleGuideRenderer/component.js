@@ -28,7 +28,9 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
 	root: {
 		backgroundColor: color.baseBackground,
 		// Lodgify UI styles start
-		overflowX: 'scroll',
+		backgroundImage: 'url(lego-repeat.png)',
+		backgroundSize: '500px',
+		backgroundRepeat: 'repeat',
 		// Lodgify UI styles end
 	},
 	hasSidebar: {
