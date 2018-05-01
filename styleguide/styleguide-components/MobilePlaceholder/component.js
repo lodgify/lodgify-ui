@@ -7,7 +7,7 @@ import { getMailToHref } from './getMailToHref';
 
 const styles = ({ borderRadius, color, mq, space }) => ({
   screen: {
-    background: color.baseBackground,
+    background: color.sidebarBackground,
     display: 'none',
     height: '100vh',
     overflowY: 'scroll',
@@ -22,9 +22,9 @@ const styles = ({ borderRadius, color, mq, space }) => ({
       visibility: 'visible',
     },
   },
-  heading: {
+  firstParagraph: {
     isolate: false,
-    lineHeight: '1em',
+    marginTop: space[4],
   },
   input: {
     background: color.white,
@@ -67,7 +67,7 @@ class Markup extends React.Component {
       <div className={classes.screen} onScroll={console.log}>
         <div>
           <LogoRenderer hasNoMargin />
-          <h1 className={classes.heading}>Yo</h1>
+          <p className={classes.firstParagraph}>Yo.</p>
           <p>Lodgify UI is intended to be viewed on devices with larger screens.</p>
           <p>Why not send yourself a reminder to come back when you get to your computer?</p>
           <p>Don't worry - we don't store your email.</p>
