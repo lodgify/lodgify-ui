@@ -19,7 +19,7 @@ const styles = ({ color, fontFamily }) => ({
     transform: 'rotate(45deg)',
     top: 35,
     width: 350,
-    zIndex: 1,
+    zIndex: 1000,
   },
   heading: {
     fontFamily: 'inherit',
