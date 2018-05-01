@@ -16,7 +16,6 @@ module.exports = {
     base: '"Roboto", sans-serif',
   },
   fontSize: {
-    h1: 36,
     h2: 34,
   },
   mq: {
