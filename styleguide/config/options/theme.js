@@ -19,5 +19,8 @@ module.exports = {
     h1: 36,
     h2: 34,
   },
-  sidebarWidth: '210px',
+  mq: {
+    xlarge: '@media (min-width: 1200px)',
+  },
+  sidebarWidth: 210,
 };
