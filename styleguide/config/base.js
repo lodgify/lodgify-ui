@@ -5,7 +5,7 @@ const { SRC_DIR, TITLE } = require('./constants');
 module.exports = {
   assetsDir: 'assets',
   editorConfig: {
-    theme: 'material',
+    theme: 'lucario',
   },
   pagePerSection: true,
   require: [path.join(SRC_DIR, 'semantic/dist/semantic.min.css')],
