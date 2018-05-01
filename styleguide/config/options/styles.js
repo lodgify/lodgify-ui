@@ -5,6 +5,9 @@ module.exports = {
     heading: {
       lineHeight: 1,
     },
+    heading1: {
+      padding: '30px 0 !important',
+    },
     heading2: {
       fontWeight: 'bold',
       paddingTop: '30px !important',
