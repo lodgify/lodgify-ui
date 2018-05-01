@@ -66,3 +66,7 @@ package-lock.json
 # dist files
 dist/
 gh-pages/
+
+# OS generated files
+.DS_Store
+.DS_Store?
