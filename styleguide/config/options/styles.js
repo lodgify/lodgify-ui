@@ -5,21 +5,15 @@ module.exports = {
     heading: {
       lineHeight: 1,
     },
-    heading1: {
-      color: color.light,
-      fontFamily: fontFamily.heading,
-      marginBottom: '1em !important',
-      paddingTop: '30px !important',
-      textTransform: 'uppercase',
-      'main > &': {
-        paddingTop: '0 !important',
-      },
-    },
     heading2: {
+      fontWeight: 'bold',
       paddingTop: '30px !important',
     },
   },
   Playground: {
+    root: {
+      marginBottom: '100px',
+    },
     preview: {
       background: color.white,
     },
@@ -27,6 +21,12 @@ module.exports = {
   ReactComponent: {
     root: {
       marginBottom: '200px',
+    },
+    docs: {
+      marginBottom: '30px',
+    },
+    tabs: {
+      marginBottom: '100px',
     },
   },
   Section: {
@@ -44,7 +44,6 @@ module.exports = {
       padding: 0,
     },
     sidebar: {
-      boxShadow: `0px 0 10px -2px ${color.light}`,
       padding: 30,
     },
   },
