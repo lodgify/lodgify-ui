@@ -24,6 +24,7 @@ export const styles = ({ space, color, borderRadius, mq }) => ({
 	root: {
 		marginBottom: space[4],
   	// Lodgify UI styles start
+  	marginTop: space[2],
 		[mq.xlarge]: {
 	  	width: `calc(200% + ${space[4] * 2}px)`,
 		},
