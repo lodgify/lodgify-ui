@@ -6,11 +6,14 @@ module.exports = {
       lineHeight: 1,
     },
     heading1: {
-      padding: '30px 0 !important',
+      margin: '30px 0 !important',
     },
     heading2: {
       fontWeight: 'bold',
-      paddingTop: '30px !important',
+      marginTop: '30px !important',
+    },
+    heading3: {
+      marginTop: '50px !important',
     },
   },
   Playground: {
