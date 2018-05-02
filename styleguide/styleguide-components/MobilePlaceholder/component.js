@@ -15,7 +15,7 @@ const styles = ({ borderRadius, color, mq, space }) => ({
     position: 'fixed',
     visibility: 'hidden',
     width: '100vw',
-    zIndex: 2,
+    zIndex: 11,
 
     [mq.small]: {
       display: 'block',
