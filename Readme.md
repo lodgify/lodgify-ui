@@ -8,10 +8,7 @@ React components for building amazing websites with Lodgify. https://lodgify.git
 $ git clone git@github.com:lodgify/lodgify-ui.git
 $ cd lodgify-ui
 $ npm install
-# Watch for changes to the styles files.
-$ npm run semantic:watch
-# Run the development server.
-$ npm run styleguide:dev-server
+$ npm start
 ```
 
 Then go to http://localhost:6060/
@@ -151,14 +148,11 @@ A PR cannot be merged if:
   - `npm run styleguide:build`
 - It does not have at least one approval from a contributor
 
-Avoid wasting time in PRs by creating these pre-commit git hooks...
+Avoid wasting time in PRs by creating this pre-commit git hook...
 
 ```sh
 # .git/hooks/pre-commit
-npm run lint && \
-npm run test && \
-npm run semantic:build && \
-npm run styleguide:build
+npm run integration:pr
 ```
 
 ### Deployment
@@ -167,6 +161,6 @@ When a commit is merged into production branch, Jenkins does the following tasks
 
 - Builds fresh Semantic UI styles and assets
 - Builds a fresh React Styleguidist styleguide
-- Push the build files to [gh-pages branch](https://github.com/lodgify/lodgify-ui/tree/gh-pages)
+- Pushes the build files to [gh-pages branch](https://github.com/lodgify/lodgify-ui/tree/gh-pages)
 
 You should be able to see the styleguide at https://lodgify.github.io/lodgify-ui/ shortly after the merge.
