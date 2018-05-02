@@ -16,7 +16,7 @@ pipeline {
         script {
           sh "rm -rf node_modules"
           sh "npm i"
-          sh "npm run docs:pr"
+          sh "npm run integration:pr"
         }
       }
     }
@@ -42,7 +42,7 @@ pipeline {
 
         sh "rm -rf ./${BRANCH_NAME}/*"
         sh "rm -rf ./${BRANCH_NAME}/.github ./${BRANCH_NAME}/.babelrc ./${BRANCH_NAME}/.eslint*"
-        sh "npm i && npm run docs:build"
+        sh "npm i && npm run integration:build"
 
         dir("${BRANCH_NAME}") {
           sh "git branch -D ${BRANCH_NAME} || true"
