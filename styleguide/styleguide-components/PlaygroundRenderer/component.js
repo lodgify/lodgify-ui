@@ -15,6 +15,7 @@ import cx from 'classnames';
 import Styled from 'rsg-components/Styled';
 
 // Lodgify UI import start
+import { Transition } from 'react-transition-group';
 import { compose } from 'recompose';
 
 import { withResponsive } from 'lib/with-responsive';
@@ -53,14 +54,24 @@ export const styles = ({ space, color, borderRadius, mq }) => ({
 		marginLeft: 'auto',
 	},
 	tab: {
-  // Lodgify UI styles start
-  [mq.xlarge]: {
-		display: 'inline-block',
-		marginLeft: space[4],
-		width: `calc(50% - ${space[4]}px)`,
+	  // Lodgify UI styles start
+	  [mq.xlarge]: {
+			display: 'inline-block',
+			marginLeft: space[4],
+			opacity: 0,
+			transition: 'opacity 0.15s ease-in',
+			width: `calc(50% - ${space[4]}px)`,
+		},
+		// Lodgify UI styles end
+	}, // expose className to allow using it in 'styles' settings
+	// Lodgify UI styles start
+	'tab-entered': {
+		opacity: 1,
+	},
+	'tab-exited': {
+		display: 'none',
 	},
 	// Lodgify UI styles end
-}, // expose className to allow using it in 'styles' settings
 });
 
 export function PlaygroundRenderer({
@@ -93,11 +104,13 @@ export function PlaygroundRenderer({
 				</div>,
 				<div key="iReallyDo" className={classes.tab}>{tabBody}</div>
 			]
-		) : isCodeVisible && (
-	    React.cloneElement(tabBody, {
-	      className: classes.tab,
-	      active: 'rsg-code-editor',
-	    })
+		) : (
+			<Transition in={isCodeVisible} timeout={{ enter: 850, exit: 150 }}>
+				{status => React.cloneElement(tabBody, {
+					active: 'rsg-code-editor',
+					className: cx(classes.tab, classes[`tab-${status}`]),
+				})}
+			</Transition>
 		)}
     {/* Lodgify UI markup end */}
 		</div>
