@@ -31,6 +31,7 @@ import { getIsDevelopmentServer } from './getIsDevelopmentServer';
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
 	root: {
 		// Lodgify UI styles start
+		backgroundBlendMode: 'soft-light',
 		backgroundColor: color.base,
 		backgroundImage: 'url(lego-repeat.png)',
 		backgroundSize: '500px',
@@ -63,13 +64,20 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
 		backgroundSize: '500px',
 		backgroundRepeat: 'repeat',
 		position: 'relative',
-		transition: 'width 1s ease',
+		transition: 'width 1s ease, padding 1s ease',
 		width: '100%',
+		[mq.large]: {
+			padding: [[space[2], '15%']],
+		},
+		[mq.xlarge]: {
+			padding: [[space[2], '20%']],
+		}
 		// Lodgify UI styles end
 	},
 	// Lodgify UI styles start
 	hasDarkPanel: {
 		margin: 0,
+		padding: [[space[2], space[4]]],
 		width: '50%',
 	},
 	codeToggle: {
