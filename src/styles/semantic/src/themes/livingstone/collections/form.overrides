@@ -86,7 +86,7 @@
   [class*="equal width"].fields > .field {
     // This prevents any field from extending beyond the right edge of its
     // containing field group. Flex sizing of each field is delegated to
-    // `semantic/src/definitions/collections/form.less` line 950
+    // `styles/semantic/src/definitions/collections/form.less` line 950
     width: 0%;
   }
 
