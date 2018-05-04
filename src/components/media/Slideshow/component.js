@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ImageGallery from 'react-image-gallery';
 
-import 'react-image-gallery/styles/css/image-gallery-no-icon.css';
-
 import { adaptImages } from './utils/adaptImages';
 import { renderNavButton } from './utils/renderNavButton';
 
@@ -16,7 +14,7 @@ export const Component = ({ images }) => (
     items={adaptImages(images)}
     lazyLoad
     // Note: styles for the pagination controls
-    // live in `semantic/src/themes/livingstone/collections/menu.*`
+    // live in `styles/semantic/src/themes/livingstone/collections/menu.*`
     renderRightNav={renderNavButton('right')}
     renderLeftNav={renderNavButton('left')}
     showBullets
