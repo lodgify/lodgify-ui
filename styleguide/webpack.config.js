@@ -2,12 +2,10 @@ const path = require('path');
 
 const ROOT_PATH = path.join(__dirname, '..');
 
-const INCLUDE_PATHS = [
+const JS_INCLUDE_PATHS = [
   __dirname,
   path.join(ROOT_PATH, 'lib'),
-  path.join(ROOT_PATH, 'src'),
-  path.join(ROOT_PATH, 'node_modules/react-dates/lib/css'),
-  path.join(ROOT_PATH, 'node_modules/react-image-gallery/styles/css'),
+  path.join(ROOT_PATH, 'src/components'),
 ];
 
 module.exports = {
@@ -15,19 +13,27 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        include: INCLUDE_PATHS,
+        include: JS_INCLUDE_PATHS,
         loader: 'babel-loader',
       },
       {
         test: /\.css$/,
-        include: INCLUDE_PATHS,
-        use: ['style-loader', 'css-loader'],
+        include: path.join(ROOT_PATH, 'src/styles'),
+        use: ['style-loader', 'css-loader', 'less-loader'],
       },
       {
         test: /\.(png|jpeg)$/,
         loader: 'file-loader',
       },
     ],
+  },
+  resolve: {
+    alias: {
+      '../../theme.config$': path.join(
+        ROOT_PATH,
+        'src/styles/semantic/theme.config'
+      ),
+    },
   },
   devServer: {
     contentBase: path.join(__dirname, 'assets'),
