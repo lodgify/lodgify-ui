@@ -13,7 +13,7 @@
 ---------------------*/
 
 /* Default site.variables */
-@import "@{themesFolder}/default/globals/site.variables";
+@import "~semantic-ui-less/@{themesFolder}/default/globals/site.variables";
 
 /* Packaged site.variables */
 @import "@{themesFolder}/@{site}/globals/site.variables";
@@ -24,20 +24,18 @@
 /* Site theme site.variables */
 @import (optional) "@{siteFolder}/globals/site.variables";
 
-
 /*-------------------
  Component Variables
 ---------------------*/
 
 /* Default */
-@import "@{themesFolder}/default/@{type}s/@{element}.variables";
+@import "~semantic-ui-less/@{themesFolder}/default/@{type}s/@{element}.variables";
 
 /* Packaged Theme */
 @import (optional) "@{themesFolder}/@{theme}/@{type}s/@{element}.variables";
 
 /* Site Theme */
 @import (optional) "@{siteFolder}/@{type}s/@{element}.variables";
-
 
 /*******************************
              Mix-ins
