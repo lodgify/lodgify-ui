@@ -10,57 +10,40 @@
   Import this file into your LESS project to use Semantic UI without build tools
 */
 
+/* stylelint-disable no-duplicate-selectors */
+
 /* Global */
-& { @import "definitions/globals/reset"; }
-& { @import "definitions/globals/site"; }
+& { @import "~semantic-ui-less/definitions/globals/reset.less"; }
+& { @import "~semantic-ui-less/definitions/globals/site.less"; }
 
 /* Elements */
-& { @import "definitions/elements/button"; }
-& { @import "definitions/elements/container"; }
-& { @import "definitions/elements/divider"; }
-& { @import "definitions/elements/flag"; }
-& { @import "definitions/elements/header"; }
-& { @import "definitions/elements/icon"; }
-& { @import "definitions/elements/image"; }
-& { @import "definitions/elements/input"; }
-& { @import "definitions/elements/label"; }
-& { @import "definitions/elements/list"; }
-& { @import "definitions/elements/loader"; }
-& { @import "definitions/elements/rail"; }
-& { @import "definitions/elements/reveal"; }
-& { @import "definitions/elements/segment"; }
-& { @import "definitions/elements/step"; }
+& { @import "~semantic-ui-less/definitions/elements/button.less"; }
+& { @import "~semantic-ui-less/definitions/elements/divider.less"; }
+& { @import "~semantic-ui-less/definitions/elements/flag.less"; }
+& { @import "~semantic-ui-less/definitions/elements/header.less"; }
+& { @import "~semantic-ui-less/definitions/elements/icon.less"; }
+& { @import "~semantic-ui-less/definitions/elements/image.less"; }
+& { @import "~semantic-ui-less/definitions/elements/input.less"; }
+& { @import "~semantic-ui-less/definitions/elements/label.less"; }
+& { @import "~semantic-ui-less/definitions/elements/list.less"; }
+& { @import "~semantic-ui-less/definitions/elements/segment.less"; }
 
 /* Collections */
-& { @import "definitions/collections/breadcrumb"; }
-& { @import "definitions/collections/form"; }
-& { @import "definitions/collections/grid"; }
-& { @import "definitions/collections/menu"; }
-& { @import "definitions/collections/message"; }
-& { @import "definitions/collections/table"; }
+& { @import "~semantic-ui-less/definitions/collections/form.less"; }
+& { @import "~semantic-ui-less/definitions/collections/grid.less"; }
+& { @import "~semantic-ui-less/definitions/collections/menu.less"; }
 
 /* Views */
-& { @import "definitions/views/ad"; }
-& { @import "definitions/views/card"; }
-& { @import "definitions/views/comment"; }
-& { @import "definitions/views/feed"; }
-& { @import "definitions/views/item"; }
-& { @import "definitions/views/statistic"; }
+& { @import "~semantic-ui-less/definitions/views/card.less"; }
+& { @import "~semantic-ui-less/definitions/views/item.less"; }
+& { @import "~semantic-ui-less/definitions/views/statistic.less"; }
 
 /* Modules */
-& { @import "definitions/modules/accordion"; }
-& { @import "definitions/modules/checkbox"; }
-& { @import "definitions/modules/dimmer"; }
-& { @import "definitions/modules/dropdown"; }
-& { @import "definitions/modules/embed"; }
-& { @import "definitions/modules/modal"; }
-& { @import "definitions/modules/nag"; }
-& { @import "definitions/modules/popup"; }
-& { @import "definitions/modules/progress"; }
-& { @import "definitions/modules/rating"; }
-& { @import "definitions/modules/search"; }
-& { @import "definitions/modules/shape"; }
-& { @import "definitions/modules/sidebar"; }
-& { @import "definitions/modules/sticky"; }
-& { @import "definitions/modules/tab"; }
-& { @import "definitions/modules/transition"; }
+& { @import "~semantic-ui-less/definitions/modules/checkbox.less"; }
+& { @import "~semantic-ui-less/definitions/modules/dimmer.less"; }
+& { @import "~semantic-ui-less/definitions/modules/modal.less"; }
+& { @import "~semantic-ui-less/definitions/modules/popup.less"; }
+& { @import "~semantic-ui-less/definitions/modules/rating.less"; }
+& { @import "~semantic-ui-less/definitions/modules/transition.less"; }
+
+/* stylelint-enable no-duplicate-selectors */
