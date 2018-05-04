@@ -14,7 +14,7 @@ export const Component = ({ images }) => (
     items={adaptImages(images)}
     lazyLoad
     // Note: styles for the pagination controls
-    // live in `styles/semantic/src/themes/livingstone/collections/menu.*`
+    // live in `styles/semantic/themes/livingstone/collections/menu.*`
     renderRightNav={renderNavButton('right')}
     renderLeftNav={renderNavButton('left')}
     showBullets
