@@ -74,6 +74,7 @@
 @selectionItemPadding: @inputVerticalPadding @inputHorizontalPadding;
 
 /* <select> */
+@selectionBorder: 1px solid transparent;
 @selectionBorderRadius: 0;
 
 /* Responsive */

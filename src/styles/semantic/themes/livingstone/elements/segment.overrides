@@ -25,6 +25,10 @@
 
 /* Page Grid Segment */
 
+.ui.horizontal.segments > .segment {
+  border-left: @border;
+}
+
 /*******************************
             States
 *******************************/

@@ -6,6 +6,10 @@
        Element
 --------------------*/
 
+@border: @borderWidth solid transparent;
+
+@boxShadow: none;
+
 /*-------------------
        Group
 --------------------*/
