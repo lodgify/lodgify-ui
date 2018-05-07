@@ -66,6 +66,7 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
 		position: 'relative',
 		transition: 'width 1s ease, padding 1s ease',
 		width: '100%',
+		willChange: 'width, padding',
 		[mq.large]: {
 			padding: [[space[2], '15%']],
 		},
