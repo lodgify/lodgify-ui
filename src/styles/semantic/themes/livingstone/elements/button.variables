@@ -81,6 +81,8 @@
 @basicVerticalPadding: @12px;
 @basicHorizontalPadding: @20px;
 
+@basicBoxShadow: none;
+
 /* Basic Hover */
 @basicHoverBackground: @basicBackground;
 @basicHoverTextColor: @darkPrimaryColor;

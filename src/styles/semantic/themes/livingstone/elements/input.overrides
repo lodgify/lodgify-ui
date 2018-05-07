@@ -19,7 +19,7 @@
 
   // Partial duplication of declarations
   // for `.ui.icon.input > i.icon`
-  // in `semantic/src/definitions/elements/input.less`
+  // in `node_modules/semantic-ui-less/definitions/elements/input.less`
   &.left.icon {
 
     & > i.icon {

@@ -139,13 +139,12 @@ describe('<Review />', () => {
         .find(GridColumn)
         .at(0);
 
-    it('should render the right props', () => {
+    it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
       expectComponentToHaveProps(wrapper, {
-        mobile: 7,
+        mobile: 12,
         tablet: 7,
         computer: 6,
-        floated: 'left',
       });
     });
 
@@ -177,10 +176,9 @@ describe('<Review />', () => {
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
-        mobile: 5,
+        mobile: 12,
         tablet: 5,
         computer: 6,
-        floated: 'right',
         textAlign: 'right',
         verticalAlign: 'middle',
       });

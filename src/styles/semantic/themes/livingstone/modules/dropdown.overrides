@@ -110,7 +110,7 @@
 
     // Partial reimplementation of styles for
     // .ui.selection.dropdown > .dropdown.icon
-    // in `semantic/src/definitions/modules/dropdown.less`
+    // in `node_modules/semantic-ui-less/definitions/modules/dropdown.less`
     > i.icon {
       position: absolute;
       right: @selectionHorizontalPadding;

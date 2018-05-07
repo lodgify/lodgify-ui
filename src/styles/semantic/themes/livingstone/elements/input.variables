@@ -9,6 +9,8 @@
 @inputMaxWidth: 350px;
 @inputWidth: 100%;
 
+@border: @borderWidth solid transparent;
+
 /*-------------------
         Types
 --------------------*/

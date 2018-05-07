@@ -8,7 +8,7 @@ module.exports = {
     theme: 'lucario',
   },
   pagePerSection: true,
-  require: [path.join(SRC_DIR, 'semantic/dist/semantic.min.css')],
+  require: [path.join(SRC_DIR, 'styles/lodgify-ui.css')],
   sections: require('./options/sections'),
   serverPort: 6060,
   showUsage: true,

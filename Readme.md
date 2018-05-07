@@ -121,14 +121,14 @@ A form can have a heading.
 
 #### Styles
 
-Styles live in `src/semantic/src/themes/livingstone`.
+Styles live in `src/styles/semantic/themes/livingstone`.
 
 The organisation and format of the directory and files is prescribed by the [Semantic UI theming guide](https://semantic-ui.com/usage/theming.html). Give that a good read before writing any styles (Clue: write as little css as you can 😉).
 
 If you add a new `*.overrides` or `*.variables` file in the livingstone theme directory, you need to:
 
-1. add the name of the component to the `components` array in [semantic.json](https://github.com/lodgify/lodgify-ui/blob/production/semantic.json)
-1. change the value of the component entry in [src/semantic/src/theme.config](https://github.com/lodgify/lodgify-ui/blob/production/src/semantic/src/theme.config) from `'default'` to `'livingstone'`.
+1. add an `@import` statement for the component to  [semantic.less](https://github.com/lodgify/lodgify-ui/blob/production/src/styles/semantic/semantic.less).
+1. change the value of the component entry in [src/styles/semantic/theme.config](https://github.com/lodgify/lodgify-ui/blob/production/src/styles/semantic/theme.config) from `'default'` to `'livingstone'`.
 1. follow the comment structure used in the default theme variables file for that component.
 
 ### Contributing
@@ -144,7 +144,6 @@ A PR cannot be merged if:
 - Any of the following commands fail when run by Jenkins
   - `npm run lint`
   - `npm run test`
-  - `npm run semantic:build`
   - `npm run styleguide:build`
 - It does not have at least one approval from a contributor
 
@@ -159,7 +158,6 @@ npm run integration:pr
 
 When a commit is merged into production branch, Jenkins does the following tasks
 
-- Builds fresh Semantic UI styles and assets
 - Builds a fresh React Styleguidist styleguide
 - Pushes the build files to [gh-pages branch](https://github.com/lodgify/lodgify-ui/tree/gh-pages)
 

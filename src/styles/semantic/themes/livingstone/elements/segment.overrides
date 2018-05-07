@@ -10,14 +10,24 @@
        Group
 --------------------*/
 
-@groupedSegmentPadding: 0 @12px 0 0;
-@groupedSegmentMiniHeaderLineHeight: 1em;
+.ui.compact.segments .segment {
+  padding: @groupedSegmentPadding;
+
+  h4.ui.header {
+    display: inline;
+    line-height: @groupedSegmentMiniHeaderLineHeight;
+  }
+}
 
 /*-------------------
        Coupling
 --------------------*/
 
 /* Page Grid Segment */
+
+.ui.horizontal.segments > .segment {
+  border-left: @border;
+}
 
 /*******************************
             States
@@ -54,3 +64,10 @@
 /* Ordinality */
 
 /* Full bleed */
+
+.ui.segment.full-bleed {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+}
