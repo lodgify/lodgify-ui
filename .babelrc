@@ -2,7 +2,12 @@
   "env": {
     "production": {
         "comments": false,
-        "ignore": "spec.js"
+        "ignore": "spec.js",
+        "plugins": [
+          ["transform-react-remove-prop-types", {
+            "removeImport": true
+          }]
+        ]
     }
   },
   "presets": [ "react", "env" ],
