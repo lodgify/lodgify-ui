@@ -24,3 +24,17 @@ You can use the code editors to modify the examples live in your browser.
 <Paragraph>Cool, huh?</Paragraph>
 <Button onClick={() => console.log('Totally')}>Click me</Button>
 ```
+
+### Importing components
+
+```jsx static
+import { Heading } from '@lodgify/lodgify-ui';
+
+<Heading>Easy, right?</Heading>
+```
+
+### Importing Styles
+
+```jsx static
+import '@lodgify/lodgify-ui/lib/lodgify-ui.css';
+```
