@@ -7,6 +7,10 @@ const buildComponentsPath = category =>
 
 module.exports = [
   {
+    name: 'Introduction',
+    content: 'docs/introduction.md',
+  },
+  {
     name: 'Get started',
     content: 'docs/getStarted.md',
   },
