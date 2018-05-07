@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Statistic } from 'semantic-ui-react';
 
-import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
-import { getUniqueKey } from 'lib/get-unique-key';
+import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
+import { getUniqueKey } from 'utils/get-unique-key';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';

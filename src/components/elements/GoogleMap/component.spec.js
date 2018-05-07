@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Card } from 'semantic-ui-react';
 
-import { ReactGoogleMap } from 'lib/react-google-maps';
-import { expectComponentToHaveProps } from 'lib/expect-helpers';
+import { ReactGoogleMap } from 'utils/react-google-maps';
+import { expectComponentToHaveProps } from 'utils/expect-helpers';
 
 import { Component as GoogleMap } from './component';
 import { GOOGLE_MAPS_API_KEY } from './constants';

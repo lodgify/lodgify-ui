@@ -4,7 +4,7 @@ import { isEqual, uniqueId } from 'lodash';
 import { DateRangePicker } from 'react-dates';
 import 'react-dates/initialize';
 
-import { withResponsive } from 'lib/with-responsive';
+import { withResponsive } from 'utils/with-responsive';
 import { Icon } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
 

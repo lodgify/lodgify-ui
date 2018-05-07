@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Label } from 'semantic-ui-react';
 import cx from 'classnames';
 
-import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
-import { getUniqueKey } from 'lib/get-unique-key';
+import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
+import { getUniqueKey } from 'utils/get-unique-key';
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 

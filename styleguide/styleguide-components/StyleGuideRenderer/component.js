@@ -20,7 +20,7 @@ import Ribbon from 'rsg-components/Ribbon';
 // Lodgify UI import start
 import { compose } from 'recompose';
 
-import { withResponsive } from 'lib/with-responsive';
+import { withResponsive } from 'utils/with-responsive';
 
 import { MobilePlaceholder } from '../MobilePlaceholder';
 import { AlphaFlag } from '../AlphaFlag';

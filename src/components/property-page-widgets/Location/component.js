@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
-import { getUniqueKey } from 'lib/get-unique-key';
-import { withResponsive } from 'lib/with-responsive';
+import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
+import { getUniqueKey } from 'utils/get-unique-key';
+import { withResponsive } from 'utils/with-responsive';
 import { Divider } from 'elements/Divider';
 import { GoogleMap } from 'elements/GoogleMap';
 import { Grid } from 'layout/Grid';

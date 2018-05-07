@@ -6,7 +6,7 @@ import {
   expectComponentToBe,
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 
 import { withResponsive } from './withResponsive';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
-import { ReactGoogleMap } from 'lib/react-google-maps';
+import { ReactGoogleMap } from 'utils/react-google-maps';
 
 import { GOOGLE_MAPS_API_KEY } from './constants';
 

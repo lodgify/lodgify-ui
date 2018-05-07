@@ -7,7 +7,7 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
   expectComponentToBe,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';

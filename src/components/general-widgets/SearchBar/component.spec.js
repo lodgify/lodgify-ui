@@ -5,8 +5,8 @@ import { Form } from 'semantic-ui-react';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'lib/expect-helpers';
-import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
+} from 'utils/expect-helpers';
+import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Dropdown } from 'inputs/Dropdown';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { Button } from 'elements/Button';

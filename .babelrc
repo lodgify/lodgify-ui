@@ -11,10 +11,10 @@
         "general-widgets": "./src/components/general-widgets",
         "inputs": "./src/components/inputs",
         "layout": "./src/components/layout",
-        "lib": "./lib",
         "media": "./src/components/media",
         "property-page-widgets": "./src/components/property-page-widgets",
         "typography": "./src/components/typography",
+        "utils": "./src/utils",
       }
     }]
   ]

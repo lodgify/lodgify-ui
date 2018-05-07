@@ -5,7 +5,7 @@ import { Card, Rating } from 'semantic-ui-react';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';

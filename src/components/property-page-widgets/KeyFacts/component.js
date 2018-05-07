@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Label } from 'semantic-ui-react';
 
-import { getUniqueKey } from 'lib/get-unique-key';
+import { getUniqueKey } from 'utils/get-unique-key';
 import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';

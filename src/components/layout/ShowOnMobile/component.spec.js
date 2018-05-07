@@ -6,7 +6,7 @@ import {
   expectComponentToHaveProps,
   expectComponentToBe,
   expectComponentToHaveDisplayName,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 
 import { Component as ShowOnMobile } from './component';
 

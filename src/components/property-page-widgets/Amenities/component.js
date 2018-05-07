@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { withResponsive } from 'lib/with-responsive';
-import { getUniqueKey } from 'lib/get-unique-key';
+import { withResponsive } from 'utils/with-responsive';
+import { getUniqueKey } from 'utils/get-unique-key';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';

@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import {
   expectComponentToHaveProps,
   expectComponentToHaveChildren,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 import { Paragraph } from 'typography/Paragraph';
 
 import { Component as Icon } from './component';
