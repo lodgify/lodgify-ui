@@ -1,4 +1,10 @@
 {
+  "env": {
+    "production": {
+        "comments": false,
+        "ignore": "spec.js"
+    }
+  },
   "presets": [ "react", "env" ],
   "plugins": [
     "transform-object-rest-spread",
