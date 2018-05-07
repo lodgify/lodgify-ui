@@ -2,14 +2,14 @@
   "name": "lodgify-ui",
   "version": "0.1.0",
   "description": "React components for building amazing websites with Lodgify",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "config": {
     "jest_config": "tools/jest/jest.config.js",
     "styleguide_config": "./styleguide/config",
     "styleguide_dist": "./styleguide/dist"
   },
   "scripts": {
-    "build:js": "BABEL_ENV=production babel src/ -d lib/",
+    "build:js": "BABEL_ENV=production babel src/ -d lib/ --quiet",
     "copy:gh-pages": "cp -R $npm_package_config_styleguide_dist/* ./gh-pages",
     "integration:pr": "run-p lint test styleguide:build",
     "integration:build": "run-s styleguide:build copy:gh-pages",
