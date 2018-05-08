@@ -15,5 +15,5 @@ import { Heading } from '@lodgify/lodgify-ui';
 ## Import Styles
 
 ```jsx static
-import '@lodgify/lodgify-ui/lib/lodgify-ui.css';
+import '@lodgify/lodgify-ui/lib/styles/lodgify-ui.css';
 ```
