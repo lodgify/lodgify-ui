@@ -17,7 +17,7 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.css$/,
+        test: /\.less$/,
         include: path.join(ROOT_PATH, 'src/styles'),
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
