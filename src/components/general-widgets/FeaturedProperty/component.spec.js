@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Card, Image, Rating } from 'semantic-ui-react';
 
-import { expectComponentToHaveChildren } from 'lib/expect-helpers';
+import { expectComponentToHaveChildren } from 'utils/expect-helpers';
 import { Subheading } from 'typography/Subheading';
 import { Heading } from 'typography/Heading';
 

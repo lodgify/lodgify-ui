@@ -63,9 +63,10 @@ tools/jest/tmp/
 # lock files
 package-lock.json
 
-# dist files
+# Built files
 dist/
 gh-pages/
+lib/
 
 # OS generated files
 .DS_Store

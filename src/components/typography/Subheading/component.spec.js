@@ -6,7 +6,7 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 
 import { Component as Subheading } from './component';
 

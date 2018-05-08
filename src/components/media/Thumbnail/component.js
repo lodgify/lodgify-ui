@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 
 import { Paragraph } from 'typography/Paragraph';
-import { getBackgroundImageUrl } from 'lib/get-background-image-url';
+import { getBackgroundImageUrl } from 'utils/get-background-image-url';
 
 /**
  * A thumbnail displays a small image.

@@ -4,8 +4,8 @@ const ROOT_PATH = path.join(__dirname, '..');
 
 const JS_INCLUDE_PATHS = [
   __dirname,
-  path.join(ROOT_PATH, 'lib'),
   path.join(ROOT_PATH, 'src/components'),
+  path.join(ROOT_PATH, 'src/utils'),
 ];
 
 module.exports = {

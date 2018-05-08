@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getUniqueKey } from 'lib/get-unique-key';
+import { getUniqueKey } from 'utils/get-unique-key';
 
 /**
  * If no options specify an image, return false.

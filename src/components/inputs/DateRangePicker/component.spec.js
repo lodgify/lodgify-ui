@@ -9,7 +9,7 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 import { InputController } from 'inputs/InputController';
 import { Icon } from 'elements/Icon';
 

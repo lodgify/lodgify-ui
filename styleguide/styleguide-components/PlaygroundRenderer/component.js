@@ -18,7 +18,7 @@ import Styled from 'rsg-components/Styled';
 import { Transition } from 'react-transition-group';
 import { compose } from 'recompose';
 
-import { withResponsive } from 'lib/with-responsive';
+import { withResponsive } from 'utils/with-responsive';
 // Lodgify UI import end
 
 export const styles = ({ space, color, borderRadius, mq }) => ({

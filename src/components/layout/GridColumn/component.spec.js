@@ -6,7 +6,7 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
   expectComponentToBe,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 
 import { Component as GridColumn } from './component';
 

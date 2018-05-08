@@ -4,8 +4,8 @@ import {
   expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'lib/expect-helpers';
-import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
+} from 'utils/expect-helpers';
+import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { IconCard } from 'elements/IconCard';
 
 import { transportOptions } from '../mock-data/props';

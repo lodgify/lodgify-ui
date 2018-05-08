@@ -4,9 +4,9 @@ import { shallow } from 'enzyme';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'lib/expect-helpers';
-import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
-import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
+} from 'utils/expect-helpers';
+import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
+import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Subheading } from 'typography/Subheading';

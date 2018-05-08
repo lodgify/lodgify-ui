@@ -4,8 +4,8 @@ import { shallow } from 'enzyme';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'lib/expect-helpers';
-import { getArrayOfLengthOfItem } from 'lib/get-array-of-length-of-item';
+} from 'utils/expect-helpers';
+import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { ShowOnMobile } from 'layout/ShowOnMobile';

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getParagraphsFromStrings } from 'lib/get-paragraphs-from-strings';
-import { getUniqueKey } from 'lib/get-unique-key';
-import { getFirstFourItems } from 'lib/get-first-four-items';
+import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
+import { getUniqueKey } from 'utils/get-unique-key';
+import { getFirstFourItems } from 'utils/get-first-four-items';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Subheading } from 'typography/Subheading';

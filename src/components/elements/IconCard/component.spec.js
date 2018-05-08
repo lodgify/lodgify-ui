@@ -7,7 +7,7 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 

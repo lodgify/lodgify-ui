@@ -6,8 +6,8 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
-} from 'lib/expect-helpers';
-import { getBackgroundImageUrl } from 'lib/get-background-image-url';
+} from 'utils/expect-helpers';
+import { getBackgroundImageUrl } from 'utils/get-background-image-url';
 import { Paragraph } from 'typography/Paragraph';
 
 import { Component as Thumbnail } from './component';

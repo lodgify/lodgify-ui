@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';

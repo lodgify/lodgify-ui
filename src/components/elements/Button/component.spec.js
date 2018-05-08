@@ -7,7 +7,7 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
-} from 'lib/expect-helpers';
+} from 'utils/expect-helpers';
 import { Icon } from 'elements/Icon';
 
 import { Component as Button } from './component';

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Menu, Image } from 'semantic-ui-react';
 import { size } from 'lodash';
 
-import { getUniqueKey } from 'lib/get-unique-key';
+import { getUniqueKey } from 'utils/get-unique-key';
 import { Heading } from 'typography/Heading';
 import { Submenu } from 'elements/Submenu';
 import { Button } from 'elements/Button';

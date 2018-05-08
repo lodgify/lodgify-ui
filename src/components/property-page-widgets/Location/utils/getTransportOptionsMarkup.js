@@ -1,8 +1,8 @@
 import React from 'react';
 import { Label } from 'semantic-ui-react';
 
-import { getUniqueKey } from 'lib/get-unique-key';
-import { getFirstFourItems } from 'lib/get-first-four-items';
+import { getUniqueKey } from 'utils/get-unique-key';
+import { getFirstFourItems } from 'utils/get-first-four-items';
 import { IconCard } from 'elements/IconCard';
 
 import { getTransportOptionLabel } from './getTransportOptionLabel';
