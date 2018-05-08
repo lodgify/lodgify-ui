@@ -5,7 +5,7 @@ import LogoRenderer from '../LogoRenderer';
 
 import { getMailToHref } from './getMailToHref';
 
-const styles = ({ borderRadius, color, mq, space }) => ({
+const styles = ({ borderRadius, color, mq, space, zIndices }) => ({
   screen: {
     background: color.sidebarBackground,
     display: 'none',
@@ -15,7 +15,7 @@ const styles = ({ borderRadius, color, mq, space }) => ({
     position: 'fixed',
     visibility: 'hidden',
     width: '100vw',
-    zIndex: 11,
+    zIndex: zIndices.overlay,
 
     [mq.small]: {
       display: 'block',
