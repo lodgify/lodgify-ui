@@ -1,19 +1,13 @@
 module.exports = {
   automock: false,
-  clearMocks: false,
-  verbose: false,
   bail: true,
-  rootDir: '../../',
   cacheDirectory: '<rootDir>/tools/jest/tmp/',
+  clearMocks: false,
   collectCoverageFrom: [
     '**/*.js',
-    '!**/coverage/**',
-    '!**/node_modules/**',
-    '!**/tools/**',
-    '!**/(styleguide|semantic)/**',
     '!**/mock-data/**',
-    '!**/*+(config.js)',
     '!**/index.js',
+    '!**/jest*',
   ],
   coverageReporters: ['text', 'lcov'],
   coverageThreshold: {
@@ -27,6 +21,8 @@ module.exports = {
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
   },
+  rootDir: '../../',
+  roots: ['<rootDir>/src/components', '<rootDir>/src/utils'],
   setupTestFrameworkScriptFile: '<rootDir>/tools/jest/jest.framework-setup.js',
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
@@ -34,4 +30,5 @@ module.exports = {
   // https://github.com/facebook/jest/issues/3285
   // https://github.com/facebook/create-react-app/issues/2537
   transformIgnorePatterns: ['<rootDir>/node_modules/'],
+  verbose: false,
 };
