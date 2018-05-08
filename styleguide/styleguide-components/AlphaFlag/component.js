@@ -1,7 +1,7 @@
 import React from 'react';
 import Styled from 'rsg-components/Styled';
 
-const styles = ({ color, fontFamily }) => ({
+const styles = ({ color, fontFamily, zIndices }) => ({
   flag: {
     alignItems: 'center',
     background: color.linkHover,
@@ -19,7 +19,7 @@ const styles = ({ color, fontFamily }) => ({
     transform: 'rotate(45deg)',
     top: 35,
     width: 350,
-    zIndex: 10,
+    zIndex: zIndices.banner,
   },
   heading: {
     fontFamily: 'inherit',

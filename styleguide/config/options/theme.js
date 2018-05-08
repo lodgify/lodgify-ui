@@ -23,4 +23,9 @@ module.exports = {
     xlarge: '@media (min-width: 1200px)',
   },
   sidebarWidth: 210,
+  zIndices: {
+    overlay: 20,
+    banner: 10,
+    codeToggle: 5,
+  },
 };
