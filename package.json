@@ -5,12 +5,17 @@
   "main": "lib/index.js",
   "config": {
     "jest_config": "tools/jest/jest.config.js",
-    "styleguide_config": "./styleguide/config",
-    "styleguide_dist": "./styleguide/dist"
+    "less_build_config": "tools/webpack/less.build.config.js",
+    "less_build_orphan": "lib/styles/orphan.js",
+    "styleguide_config": "styleguide/config",
+    "styleguide_dist": "styleguide/dist"
   },
   "scripts": {
-    "build:js": "BABEL_ENV=production babel src/ -d lib/ --quiet",
+    "build": "npm-run-all -p build:less build:js -s rm:build-orphan",
+    "build:less": "webpack --config $npm_package_config_less_build_config",
+    "build:js": "BABEL_ENV=production babel src/ -d lib/",
     "copy:gh-pages": "cp -R $npm_package_config_styleguide_dist/* ./gh-pages",
+    "rm:build-orphan": "rm $npm_package_config_less_build_orphan",
     "integration:pr": "run-p lint test styleguide:build",
     "integration:build": "run-s styleguide:build copy:gh-pages",
     "lint": "run-p lint:js lint:less",
@@ -64,13 +69,13 @@
     "jest": "^22.4.3",
     "less": "^2.7.3",
     "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.0",
     "npm": "^5.8.0",
     "npm-run-all": "^4.1.2",
     "prettier": "^1.12.1",
     "react-docgen": "^2.20.0",
     "react-styleguidist": "^7.0.5",
     "react-transition-group": "^2.3.1",
-    "semantic-ui-less": "^2.3.1",
     "style-loader": "^0.20.2",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0",
@@ -91,6 +96,7 @@
     "react-image-gallery": "^0.8.7",
     "react-player": "^1.4.0",
     "recompose": "^0.26.0",
+    "semantic-ui-less": "^2.3.1",
     "semantic-ui-react": "^0.79.1"
   }
 }
