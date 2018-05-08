@@ -28,7 +28,7 @@ import { AlphaFlag } from '../AlphaFlag';
 import { getIsDevelopmentServer } from './getIsDevelopmentServer';
 // Lodgify UI import end
 
-const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
+const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth, zIndices }) => ({
 	root: {
 		// Lodgify UI styles start
 		backgroundBlendMode: 'soft-light',
@@ -89,7 +89,7 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
     padding: space[2],
     color: color.white,
 		transition: 'color 0.15s ease 0.15s',
-		zIndex: 10,
+		zIndex: zIndices.codeToggle,
 	},
 	isDarkText: {
 		color: color.base,
