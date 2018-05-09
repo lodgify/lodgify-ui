@@ -3,6 +3,7 @@ const path = require('path');
 const { SRC_DIR, TITLE } = require('./constants');
 
 module.exports = {
+  getComponentPathLine: require('./options/componentPathLine'),
   assetsDir: 'assets',
   editorConfig: {
     theme: 'lucario',
