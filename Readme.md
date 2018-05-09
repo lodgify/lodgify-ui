@@ -1,164 +1,69 @@
-## Lodgify UI
+<div align="center">
+  <a href="https://lodgify.github.io/lodgify-ui/">
+    <img src="https://li5.cdbcdn.com/oh/a84645c0-0a35-4735-bda5-e5c425c2ffdc.png" width="150" />
+  </a>  
 
-React components for building amazing websites with Lodgify. https://lodgify.github.io/lodgify-ui/
+  **React components for building amazing websites with Lodgify.**  
 
-### Quick start
+  ![Travis](https://img.shields.io/travis/lodgify/lodgify-ui.svg?style=flat-square)
+  ![David](https://img.shields.io/david/lodgify/lodgify-ui.svg?style=flat-square)
+  ![]()
+  ![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)  
 
-```bash
-$ git clone git@github.com:lodgify/lodgify-ui.git
-$ cd lodgify-ui
-$ npm install
-$ npm start
-```
+  https://lodgify.github.io/lodgify-ui/  
 
-Then go to http://localhost:6060/
+  <img src="https://li5.cdbcdn.com/oh/1c5d629f-450d-4ffe-aab0-80895284abf9.png" width="699" />  
+</div>
+
 
 ### Prior art
 
 Lodgify UI stands on the shoulders of Semantic UI. It follows [the same principles](https://semantic-ui.com/usage/theming.html) and consumes a lot of [its code](https://react.semantic-ui.com/introduction).
 
-It is published using [React Styleguidist](https://react-styleguidist.js.org/).
-
-### Development
-
-#### React components
-
-React components live in `src/components`
-
-The basic directory structure is
-
-```
-/src
-  /components
-    /collections
-      /Form
-        component.js
-        component.spec.js
-        index.js
-        Readme.md
-```
-
-##### Files
-
-**index.js**
-
-Defines the API for the component. It exports
-everything which other modules need to access.
-
-```js
-export { Component as Form } from './component';
-```
-
-**component.js**
-
-Contains the React component.
-
-Rules:
-- Default to stateless components.
-- The export is a React component so should be in PascalCase i.e. `Component`.
-- React Styleguidist consumes component and propTypes comments. These need to be complete and concise.
-
-```js
-import React from 'react';
-import PropTypes from 'prop-types';
-
-/**
- * A form displays a set of related user input fields in a structured way.
- * @returns {Object}
- */
-export const Component = ({ heading }) => (
-  ...
-);
-
-Component.displayName = 'Form';
-
-Component.propTypes = {
-    /** The heading for the form. */
-    heading: PropTypes.string.isRequired,
-};
-```
-
-**component.spec.js**
-
-Contains unit tests for the component.
-
-```js
-import React from 'react';
-import { shallow } from 'enzyme';
-
-import { Component as Form } from './component';
-
-describe('<Form />', () => {
-  it('should render a nice `div`', () => {
-    const form = shallow(<Form />);
-    const actual = form.find('div');
-    expect(actual).toHaveLength(1);
-  });
-});
-```
-
-**Readme.md**
-
-Contains [React Styleguidist examples](https://react-styleguidist.js.org/docs/documenting.html#usage-examples-and-readme-files) for the component.
-
-````md
+### Usage
 
 ```jsx
-<Form />
+import { Form, TextInput } from '@lodgify/lodgify-ui';
+
+import '@lodgify/lodgify-ui/lib/styles/lodgify-ui.css';
+
+export const Component = () => (
+  <Form
+    actionLink={{
+      onClick: () => console.log('Clicked the action link'),
+      text: 'Forgot password?'
+    }}
+    headingText="Log in"
+    submitButtonText="Submit"
+  >
+    <TextInput label="Name" name="name" />
+    <TextInput label="Password" name="password" type="password"/>
+  </Form>
+)
 ```
 
-### Variations
+See more at https://lodgify.github.io/lodgify-ui/
 
-#### Heading
+### Get started
 
-A form can have a heading.
+#### Install
+
+```bash
+$ npm install @lodgify/lodgify-ui
+```
+
+#### Import components
 
 ```jsx
-<Form heading="Lovely form" />
+import { Heading } from '@lodgify/lodgify-ui';
 ```
 
-````
+#### Import styles
 
-#### Styles
-
-Styles live in `src/styles/semantic/themes/livingstone`.
-
-The organisation and format of the directory and files is prescribed by the [Semantic UI theming guide](https://semantic-ui.com/usage/theming.html). Give that a good read before writing any styles (Clue: write as little css as you can 😉).
-
-If you add a new `*.overrides` or `*.variables` file in the livingstone theme directory, you need to:
-
-1. add an `@import` statement for the component to  [semantic.less](https://github.com/lodgify/lodgify-ui/blob/production/src/styles/semantic/semantic.less).
-1. change the value of the component entry in [src/styles/semantic/theme.config](https://github.com/lodgify/lodgify-ui/blob/production/src/styles/semantic/theme.config) from `'default'` to `'livingstone'`.
-1. follow the comment structure used in the default theme variables file for that component.
+```jsx
+import '@lodgify/lodgify-ui/lib/styles/lodgify-ui.css';
+```
 
 ### Contributing
 
-- Open a PR into the [production branch](https://github.com/lodgify/lodgify-ui/tree/production).
-- The PR Opener adds contributors as Reviewers *and* Assignees.
-- Each Reviewer completes a review. Reviewer removes themself as Assignee.
-- If action is required, Reviewer adds Opener as Assignee.
-- If no action is required and all checks pass, any Reviewer or Opener merges the PR.
-
-A PR cannot be merged if:
-- It breaks [Wheaton's Law](http://www.wheatonslaw.com/)
-- Any of the following commands fail when run by Jenkins
-  - `npm run lint`
-  - `npm run test`
-  - `npm run styleguide:build`
-- It does not have at least one approval from a contributor
-
-Avoid wasting time in PRs by creating this pre-commit git hook...
-
-```sh
-# .git/hooks/pre-commit
-npm run precommit
-```
-
-### Deployment
-
-When a commit is merged into production branch, Jenkins does the following tasks
-
-- Builds a fresh React Styleguidist styleguide
-- Pushes the build files to [gh-pages branch](https://github.com/lodgify/lodgify-ui/tree/gh-pages)
-
-You should be able to see the styleguide at https://lodgify.github.io/lodgify-ui/ shortly after the merge.
+See  [contributing](https://github.com/lodgify/lodgify-ui/blob/production/docs/CONTRIBUTING.md).

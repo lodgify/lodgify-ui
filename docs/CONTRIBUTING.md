@@ -22,22 +22,24 @@ Then go to http://localhost:6060/
 
 A PR cannot be merged if:
 - It breaks [Wheaton's Law](http://www.wheatonslaw.com/)
-- Any of the following commands fail when run by Jenkins
+- It doesn't follow project [code conventions](https://github.com/lodgify/lodgify-ui/docs/CONVENTIONS.md)
+- Any of the following commands fail when run by Travis
   - `npm run lint`
   - `npm run test`
+  - `npm run build`
   - `npm run styleguide:build`
 - It does not have at least one approval from a contributor
 
-Avoid wasting time in PRs by taking a look at [our development conventions](https://github.com/lodgify/lodgify-ui/docs/CONVENTIONS.md) and creating this pre-commit git hook...
+Avoid wasting time in PRs by creating this pre-commit git hook...
 
 ```sh
 # .git/hooks/pre-commit
-npm run integration:pr
+npm run precommit
 ```
 
 ### Deployment
 
-When a commit is merged into production branch, Jenkins does the following tasks
+When a commit is merged into production branch, Travis does the following tasks
 
 - Builds a fresh React Styleguidist styleguide
 - Pushes the build files to [gh-pages branch](https://github.com/lodgify/lodgify-ui/tree/gh-pages)
