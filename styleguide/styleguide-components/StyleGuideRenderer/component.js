@@ -25,7 +25,7 @@ import { withResponsive } from 'utils/with-responsive';
 import { MobilePlaceholder } from '../MobilePlaceholder';
 import { AlphaFlag } from '../AlphaFlag';
 
-import { getIsDevelopmentServer } from './getIsDevelopmentServer';
+import { getIsDevelopmentServer } from '../utils/getIsDevelopmentServer';
 // Lodgify UI import end
 
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth, zIndices }) => ({
