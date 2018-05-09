@@ -1,1 +1,0 @@
-export { getParagraphsFromStrings } from './getParagraphsFromStrings';

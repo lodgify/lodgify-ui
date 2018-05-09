@@ -1,1 +1,0 @@
-export { getFirstFourItems } from './getFirstFourItems';

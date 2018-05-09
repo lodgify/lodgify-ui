@@ -1,1 +1,0 @@
-export { withResponsive } from './withResponsive';

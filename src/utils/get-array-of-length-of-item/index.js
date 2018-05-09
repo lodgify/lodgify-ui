@@ -1,1 +1,0 @@
-export { getArrayOfLengthOfItem } from './getArrayOfLengthOfItem';
