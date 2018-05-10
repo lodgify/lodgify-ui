@@ -151,7 +151,7 @@ Avoid wasting time in PRs by creating this pre-commit git hook...
 
 ```sh
 # .git/hooks/pre-commit
-npm run integration:pr
+npm run precommit
 ```
 
 ### Deployment
