@@ -16,7 +16,7 @@
     "build:js": "BABEL_ENV=production babel src/ -d lib/",
     "copy:gh-pages": "cp -R $npm_package_config_styleguide_dist/* ./gh-pages",
     "rm:build-orphan": "rm $npm_package_config_less_build_orphan",
-    "integration:pr": "run-p lint test styleguide:build",
+    "integration:pr": "run-p lint test build styleguide:build",
     "integration:build": "run-s styleguide:build copy:gh-pages",
     "lint": "run-p lint:js lint:less",
     "lint:js": "eslint . --ext .js,.jsx",
