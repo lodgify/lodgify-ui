@@ -13,5 +13,7 @@ deploy:
   - github-token: $GITHUB_TOKEN
     keep-history: true
     local-dir: './styleguide/dist'
+    on:
+      branch: production
     provider: pages
     skip_cleanup: true
