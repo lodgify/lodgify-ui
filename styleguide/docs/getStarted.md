@@ -1,13 +1,13 @@
 ### Install
 
 ```bash
-$ npm install @lodgify/lodgify-ui
+$ npm install @lodgify/ui
 ```
 
 ### Import components
 
 ```jsx static
-import { Heading } from '@lodgify/lodgify-ui';
+import { Heading } from '@lodgify/ui';
 
 <Heading>Easy, right?</Heading>
 ```
@@ -15,5 +15,5 @@ import { Heading } from '@lodgify/lodgify-ui';
 ## Import styles
 
 ```jsx static
-import '@lodgify/lodgify-ui/lib/styles/lodgify-ui.css';
+import '@lodgify/ui/lib/styles/lodgify-ui.css';
 ```
