@@ -23,9 +23,9 @@ Lodgify UI stands on the shoulders of Semantic UI. It follows [the same principl
 ### Usage
 
 ```jsx
-import { Form, TextInput } from '@lodgify/lodgify-ui';
+import { Form, TextInput } from '@lodgify/ui';
 
-import '@lodgify/lodgify-ui/lib/styles/lodgify-ui.css';
+import '@lodgify/ui/lib/styles/lodgify-ui.css';
 
 export const Component = () => (
   <Form
@@ -49,19 +49,19 @@ See more at https://lodgify.github.io/lodgify-ui/
 #### Install
 
 ```bash
-$ npm install @lodgify/lodgify-ui
+$ npm install @lodgify/ui
 ```
 
 #### Import components
 
 ```jsx
-import { Heading } from '@lodgify/lodgify-ui';
+import { Heading } from '@lodgify/ui';
 ```
 
 #### Import styles
 
 ```jsx
-import '@lodgify/lodgify-ui/lib/styles/lodgify-ui.css';
+import '@lodgify/ui/lib/styles/lodgify-ui.css';
 ```
 
 ### Contributing

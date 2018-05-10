@@ -7,7 +7,7 @@ const getLastFolderFromFilePath = filePath => {
 
 const getPathLine = componentPath => {
   const name = getLastFolderFromFilePath(componentPath);
-  const dir = '@lodgify/lodgify-ui';
+  const dir = '@lodgify/ui';
   return `import { ${name} } from '${dir}';`;
 };
 
