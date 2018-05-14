@@ -22,7 +22,7 @@ Then go to http://localhost:6060/
 
 A PR cannot be merged if:
 - It breaks [Wheaton's Law](http://www.wheatonslaw.com/)
-- It doesn't follow project [code conventions](https://github.com/lodgify/lodgify-ui/docs/CONVENTIONS.md)
+- It doesn't follow project [code conventions](https://github.com/lodgify/lodgify-ui/blob/production/docs/CONVENTIONS.md)
 - Any of the following commands fail when run by Travis
   - `npm run lint`
   - `npm run test`
