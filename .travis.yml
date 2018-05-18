@@ -8,6 +8,10 @@ script:
   - npm run build
   - npm run styleguide:build
 
+notifications:
+  email: false
+  slack: $SLACK_KEY
+
 deploy:
   # Publish styleguide to GitHub Pages
   - github-token: $GITHUB_TOKEN
