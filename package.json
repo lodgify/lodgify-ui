@@ -17,7 +17,7 @@
     "build:less": "webpack --config $npm_package_config_less_build_config",
     "build:js": "BABEL_ENV=production babel src/ -d lib/",
     "commit": "git-cz",
-    "install:peers": "npm install react@^16.3.2 react-dom@^16.3.2",
+    "install:peers": "npm install react@^16.3.2 react-dom@^16.3.2 --no-save",
     "lint": "run-p lint:js lint:less",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:debug": "npm run lint:js -- --debug",
