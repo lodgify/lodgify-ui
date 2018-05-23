@@ -85,14 +85,16 @@
     "libphonenumber-js": "^1.1.9",
     "lodash": "^4.17.5",
     "moment": "^2.22.1",
-    "react": "^16.3.2",
     "react-dates": "^16.6.1",
-    "react-dom": "^16.3.2",
     "react-google-maps": "^9.4.5",
     "react-image-gallery": "^0.8.7",
     "react-player": "^1.4.0",
     "recompose": "^0.26.0",
     "semantic-ui-less": "^2.3.1",
     "semantic-ui-react": "^0.79.1"
+  },
+  "peerDependencies": {
+    "react": ">=0.14.0 <= 16",
+    "react-dom": ">=0.14.0 <= 16"
   }
 }
