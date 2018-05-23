@@ -6,6 +6,7 @@
 $ git clone git@github.com:lodgify/lodgify-ui.git
 $ cd lodgify-ui
 $ npm install
+$ npm run install:peers
 $ npm start
 ```
 

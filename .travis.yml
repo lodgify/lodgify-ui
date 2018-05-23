@@ -3,6 +3,7 @@ node_js:
   - '8'
 
 script:
+  - npm run install:peers
   - npm run lint
   - npm run test
   - npm run build
