@@ -1,0 +1,57 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Table } from 'semantic-ui-react';
+
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
+
+/**
+ * Table is the Lodgify UI interface for the Semantic UI Table.
+ * @returns {Object}
+ */
+export const Component = ({ tableHeadings, tableBody, tableId }) => (
+  <Table basic="very" padded striped>
+    <Table.Header>
+      <Table.Row>
+        {tableHeadings.map((heading, index) => (
+          <Table.HeaderCell
+            key={buildKeyFromStrings(tableId, `heading${index}`)}
+          >
+            {heading}
+          </Table.HeaderCell>
+        ))}
+      </Table.Row>
+    </Table.Header>
+    <Table.Body>
+      {tableBody.map((row, rowIndex) => (
+        <Table.Row key={buildKeyFromStrings(tableId, `row${rowIndex}`)}>
+          {row.map((cell, cellIndex) => (
+            <Table.Cell
+              key={buildKeyFromStrings(
+                tableId,
+                `cell${cellIndex}`,
+                `row${rowIndex}`
+              )}
+            >
+              {cell}
+            </Table.Cell>
+          ))}
+        </Table.Row>
+      ))}
+    </Table.Body>
+  </Table>
+);
+
+Component.defaultProps = {
+  tableId: '',
+};
+
+Component.displayName = 'Table';
+
+Component.propTypes = {
+  /** The column heading represented in the table */
+  tableHeadings: PropTypes.arrayOf(PropTypes.node).isRequired,
+  /** The data making up the body of the table */
+  tableBody: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.node)).isRequired,
+  /** The id needed if rendering more than one table */
+  tableId: PropTypes.string,
+};
