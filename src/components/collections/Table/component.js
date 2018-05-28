@@ -28,8 +28,8 @@ export const Component = ({ tableHeadings, tableBody, tableId }) => (
             <Table.Cell
               key={buildKeyFromStrings(
                 tableId,
-                `cell${cellIndex}`,
-                `row${rowIndex}`
+                `row${rowIndex}`,
+                `cell${cellIndex}`
               )}
             >
               {cell}
