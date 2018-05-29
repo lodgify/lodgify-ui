@@ -1,0 +1,1 @@
+export { buildKeyFromStrings } from './buildKeyFromStrings';

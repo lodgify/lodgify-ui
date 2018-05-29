@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 
 /**
  * If no options specify an image, return false.
@@ -16,12 +16,12 @@ export const adaptOptions = options => {
     options.map(({ image, text, value }, index) => ({
       text: [
         <img
-          key={getUniqueKey(`img${text}`, index)}
+          key={buildKeyFromStrings(`img${text}`, index)}
           className="ui image"
           src={image || ''}
           alt={text}
         />,
-        <span key={getUniqueKey(`spa${text}`, index)} className="text">
+        <span key={buildKeyFromStrings(`spa${text}`, index)} className="text">
           {text}
         </span>,
       ],

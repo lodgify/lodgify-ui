@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { withResponsive } from 'utils/with-responsive';
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
@@ -26,7 +26,7 @@ const Component = ({ amenities, isUserOnMobile }) => (
     {getDefaultItems(amenities, isUserOnMobile).map(
       ({ iconName, isDisabled, label }, index) => (
         <GridColumn
-          key={getUniqueKey(label, index)}
+          key={buildKeyFromStrings(label, index)}
           computer={4}
           tablet={4}
           mobile={6}
@@ -39,7 +39,7 @@ const Component = ({ amenities, isUserOnMobile }) => (
       <GridColumn width={12}>
         <Modal trigger={<Link>View more</Link>}>
           {amenities.map(({ iconName, isDisabled, label }, index) => (
-            <div key={getUniqueKey(label, index)}>
+            <div key={buildKeyFromStrings(label, index)}>
               {!!index && <Divider hasLine />}
               <Icon isDisabled={isDisabled} label={label} name={iconName} />
             </div>

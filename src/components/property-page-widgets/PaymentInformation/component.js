@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Statistic } from 'semantic-ui-react';
 
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
@@ -88,7 +88,7 @@ export const Component = ({
           <Modal trigger={<Link>View more</Link>}>
             {getParagraphsFromStrings(extraNotesText).map(
               (paragraphText, index) => (
-                <Paragraph key={getUniqueKey(paragraphText, index)}>
+                <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
                   {paragraphText}
                 </Paragraph>
               )
