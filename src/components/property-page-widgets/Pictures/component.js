@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
@@ -20,7 +20,7 @@ export const Component = ({ pictures }) => (
       <Heading>Property pictures</Heading>
     </GridColumn>
     {pictures.map(({ imageUrl, label }, index) => (
-      <GridColumn key={getUniqueKey(label, index)} width={4}>
+      <GridColumn key={buildKeyFromStrings(label, index)} width={4}>
         <ShowOnDesktop>
           <Thumbnail size="huge" imageUrl={imageUrl} label={label} />
         </ShowOnDesktop>

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { getFirstFourItems } from 'utils/get-first-four-items';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -26,7 +26,7 @@ export const Component = ({
     <GridColumn computer={7} tablet={12}>
       <Subheading>{propertyType}</Subheading>
       {getParagraphsFromStrings(descriptionText).map((paragraphText, index) => (
-        <Paragraph key={getUniqueKey(paragraphText, index)}>
+        <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
           {paragraphText}
         </Paragraph>
       ))}
@@ -34,7 +34,7 @@ export const Component = ({
         <Modal trigger={<Link>View more</Link>}>
           {getParagraphsFromStrings(descriptionText, extraDescriptionText).map(
             (paragraphText, index) => (
-              <Paragraph key={getUniqueKey(paragraphText, index)}>
+              <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
                 {paragraphText}
               </Paragraph>
             )
@@ -45,7 +45,7 @@ export const Component = ({
     <GridColumn verticalAlignContent="middle" computer={5} tablet={12}>
       <Grid>
         {getFirstFourItems(icons).map(({ iconName, label }, index) => (
-          <GridColumn key={getUniqueKey(label, index)} width={6}>
+          <GridColumn key={buildKeyFromStrings(label, index)} width={6}>
             <Icon label={label} name={iconName} />
           </GridColumn>
         ))}

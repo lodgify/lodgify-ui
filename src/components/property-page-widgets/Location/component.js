@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { withResponsive } from 'utils/with-responsive';
 import { Divider } from 'elements/Divider';
 import { GoogleMap } from 'elements/GoogleMap';
@@ -39,7 +39,7 @@ const Component = ({
     <GridColumn computer={6} tablet={12}>
       {getParagraphsFromStrings(locationDescription).map(
         (paragraphText, index) => (
-          <Paragraph key={getUniqueKey(paragraphText, index)}>
+          <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
             {paragraphText}
           </Paragraph>
         )

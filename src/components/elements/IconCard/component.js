@@ -4,7 +4,7 @@ import { Label } from 'semantic-ui-react';
 import cx from 'classnames';
 
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
@@ -26,7 +26,9 @@ export const Component = ({
     <Icon isDisabled={isDisabled} name={name} size="big" />
     {label &&
       getParagraphsFromStrings(label).map((paragraph, index) => (
-        <Paragraph key={getUniqueKey(paragraph, index)}>{paragraph}</Paragraph>
+        <Paragraph key={buildKeyFromStrings(paragraph, index)}>
+          {paragraph}
+        </Paragraph>
       ))}
   </Label>
 );

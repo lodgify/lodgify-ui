@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -20,7 +20,7 @@ export const Component = ({ sleepingArrangements }) => (
           computer={2}
           tablet={4}
           mobile={4}
-          key={getUniqueKey(label, index)}
+          key={buildKeyFromStrings(label, index)}
         >
           <IconCard isLeftAligned label={label} name={iconName} />
         </GridColumn>
