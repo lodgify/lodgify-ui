@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Rating } from 'semantic-ui-react';
-
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';

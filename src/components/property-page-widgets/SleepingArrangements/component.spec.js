@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';

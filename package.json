@@ -50,6 +50,7 @@
   },
   "homepage": "https://lodgify.github.io/lodgify-ui/",
   "devDependencies": {
+    "@lodgify/enzyme-jest-expect-helpers": "0.0.1",
     "@semantic-release/changelog": "^2.0.2",
     "@semantic-release/git": "^5.0.0",
     "babel-cli": "^6.26.0",

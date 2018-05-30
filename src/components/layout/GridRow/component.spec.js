@@ -1,12 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Grid } from 'semantic-ui-react';
-
 import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
   expectComponentToBe,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as GridRow } from './component';
 

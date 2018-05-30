@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Statistic } from 'semantic-ui-react';
-
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';

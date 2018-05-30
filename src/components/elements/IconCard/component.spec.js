@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Label } from 'semantic-ui-react';
-
 import {
   expectComponentToBe,
   expectComponentToHaveProps,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
