@@ -15,6 +15,6 @@ export const extraDescriptionText = `
 export const icons = [
   { iconName: 'users', label: '2 guests' },
   { iconName: 'home', label: '1 bedroom' },
-  { iconName: 'bed', label: '2 beds' },
-  { iconName: 'bath', label: '1 bathroom' },
+  { iconName: 'single bed', label: '2 beds' },
+  { iconName: 'bathroom', label: '1 bathroom' },
 ];

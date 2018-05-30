@@ -33,11 +33,15 @@ Library icons
 <Icon name="check in" />
 <Icon name="check out" />
 <Icon name="checkmark" />
+<Icon name="chevron right" />
+<Icon name="chevron left" />
 <Icon name="clock" />
+<Icon name="close" />
 <Icon name="coffee" />
 <Icon name="double bed" />
 <Icon name="guests" />
 <Icon name="home" />
+<Icon name="info" />
 <Icon name="leaf" />
 <Icon name="location" />
 <Icon name="map pin" />
@@ -45,6 +49,7 @@ Library icons
 <Icon name="phone" />
 <Icon name="placeholder" />
 <Icon name="plane" />
+<Icon name="question mark" />
 <Icon name="road" />
 <Icon name="search" />
 <Icon name="single bed" />
