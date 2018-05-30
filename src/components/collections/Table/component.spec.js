@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Table as SemanticUITable } from 'semantic-ui-react';
-
 import {
   expectComponentToBe,
   expectComponentToHaveProps,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 
 import { Component as Table } from './component';

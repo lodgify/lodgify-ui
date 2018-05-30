@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Button as SemanticButton } from 'semantic-ui-react';
-
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { Icon } from 'elements/Icon';
 
 import { Component as Button } from './component';

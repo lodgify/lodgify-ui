@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
 import {
   expectComponentToHaveProps,
   expectComponentToHaveChildren,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { Paragraph } from 'typography/Paragraph';
 
 import { Component as Icon } from './component';

@@ -1,12 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
 import {
   expectComponentToBe,
   expectComponentToHaveProps,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Subheading } from './component';
 
