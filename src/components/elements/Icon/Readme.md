@@ -39,6 +39,7 @@ Library icons
 <Icon name="close" />
 <Icon name="coffee" />
 <Icon name="double bed" />
+<Icon name="fire" />
 <Icon name="guests" />
 <Icon name="home" />
 <Icon name="info" />

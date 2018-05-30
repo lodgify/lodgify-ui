@@ -99,6 +99,7 @@ Component.propTypes = {
     'close',
     'coffee',
     'double bed',
+    'fire',
     'guests',
     'home',
     'info',
