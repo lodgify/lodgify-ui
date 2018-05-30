@@ -1,7 +1,7 @@
 import React from 'react';
 import { Label } from 'semantic-ui-react';
 
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { getFirstFourItems } from 'utils/get-first-four-items';
 import { IconCard } from 'elements/IconCard';
 
@@ -13,7 +13,7 @@ export const getTransportOptionsMarkup = transportOptions => (
       ({ distance, iconName, label }, index) => (
         <IconCard
           isFilled
-          key={getUniqueKey(label, index)}
+          key={buildKeyFromStrings(label, index)}
           label={getTransportOptionLabel(distance, label)}
           name={iconName}
         />

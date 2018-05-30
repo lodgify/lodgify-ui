@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Label } from 'semantic-ui-react';
 
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -23,7 +23,7 @@ export const Component = ({ keyFacts }) => (
           <IconCard
             isDisabled={isDisabled}
             isFilled
-            key={getUniqueKey(label, index)}
+            key={buildKeyFromStrings(label, index)}
             label={label}
             name={iconName}
           />

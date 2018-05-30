@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Label } from 'semantic-ui-react';
-
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
   expectComponentToBe,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Heading } from 'typography/Heading';
 import { IconCard } from 'elements/IconCard';

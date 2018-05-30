@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Rating } from 'semantic-ui-react';
 
-import { getUniqueKey } from 'utils/get-unique-key';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Heading } from 'typography/Heading';
 import { Button } from 'elements/Button';
 import { Divider } from 'elements/Divider';
@@ -52,7 +52,7 @@ export const Component = ({ reviews, ratingAverage }) => (
       </GridColumn>
     </GridRow>
     {reviews.map((review, index) => (
-      <GridRow key={getUniqueKey(review.reviewText, index)}>
+      <GridRow key={buildKeyFromStrings(review.reviewText, index)}>
         <GridColumn width={12}>
           <Review {...review} />
           <Divider />

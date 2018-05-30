@@ -1,12 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { getBackgroundImageUrl } from 'utils/get-background-image-url';
 import { Paragraph } from 'typography/Paragraph';
 

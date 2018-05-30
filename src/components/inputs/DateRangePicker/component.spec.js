@@ -3,13 +3,13 @@ import { shallow } from 'enzyme';
 import { DateRangePicker as ReactDatesDateRangePicker } from 'react-dates';
 import { Responsive } from 'semantic-ui-react';
 import moment from 'moment';
-
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { InputController } from 'inputs/InputController';
 import { Icon } from 'elements/Icon';
 

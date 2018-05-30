@@ -59,19 +59,21 @@ Component.propTypes = {
 
 **component.spec.js**
 
-Contains unit tests for the component.
+Contains unit tests for the component. Use [lodgify's expect helpers](https://www.npmjs.com/package/@lodgify/enzyme-jest-expect-helpers) when possible.
 
 ```js
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Form } from './component';
 
+const getForm = () => shallow(<Form />);
+
 describe('<Form />', () => {
   it('should render a nice `div`', () => {
-    const form = shallow(<Form />);
-    const actual = form.find('div');
-    expect(actual).toHaveLength(1);
+    const wrapper = getForm();
+    expectComponentToBe(actual, 'div')
   });
 });
 ```

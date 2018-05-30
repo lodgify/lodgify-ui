@@ -1,10 +1,10 @@
 import { shallow } from 'enzyme';
-
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
+
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { IconCard } from 'elements/IconCard';
 

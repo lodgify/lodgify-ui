@@ -1,12 +1,11 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Responsive } from 'semantic-ui-react';
-
 import {
   expectComponentToBe,
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
-} from 'utils/expect-helpers';
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { withResponsive } from './withResponsive';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveChildren } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { expectComponentToHaveChildren } from 'utils/expect-helpers';
 import { OwnerLogin } from 'general-widgets/OwnerLogin';
 
 import { Component as Container } from './component';
