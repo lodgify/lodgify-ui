@@ -15,6 +15,52 @@ An icon can display a named svg from the Lodgify UI icon library or any valid sv
 />
 ```
 
+Library icons
+
+```jsx
+<Icon name="arrow down" />
+<Icon name="arrow left" />
+<Icon name="arrow right" />
+<Icon name="arrow up" />
+<Icon name="bathroom" />
+<Icon name="bedroom door" />
+<Icon name="bus" />
+<Icon name="calendar" />
+<Icon name="caret down" />
+<Icon name="caret left" />
+<Icon name="caret right" />
+<Icon name="caret up" />
+<Icon name="check in" />
+<Icon name="check out" />
+<Icon name="checkmark" />
+<Icon name="chevron right" />
+<Icon name="chevron left" />
+<Icon name="clock" />
+<Icon name="close" />
+<Icon name="coffee" />
+<Icon name="double bed" />
+<Icon name="fire" />
+<Icon name="guests" />
+<Icon name="home" />
+<Icon name="info" />
+<Icon name="leaf" />
+<Icon name="location" />
+<Icon name="map pin" />
+<Icon name="paw" />
+<Icon name="phone" />
+<Icon name="placeholder" />
+<Icon name="plane" />
+<Icon name="question mark" />
+<Icon name="road" />
+<Icon name="search" />
+<Icon name="single bed" />
+<Icon name="star" />
+<Icon name="sun" />
+<Icon name="train" />
+<Icon name="users" />
+<Icon name="wheelchair" />
+```
+
 ### States
 
 #### Disabled
