@@ -4,6 +4,8 @@ import { Table } from 'semantic-ui-react';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 
+import { getTextAlign } from './utils/getTextAlign';
+
 /**
  * Table is the Lodgify UI interface for the Semantic UI Table.
  * @returns {Object}
@@ -14,6 +16,7 @@ export const Component = ({ tableHeadings, tableBody, tableId }) => (
       <Table.Row>
         {tableHeadings.map((heading, index) => (
           <Table.HeaderCell
+            textAlign={getTextAlign(index)}
             key={buildKeyFromStrings(tableId, `heading${index}`)}
           >
             {heading}
@@ -26,6 +29,7 @@ export const Component = ({ tableHeadings, tableBody, tableId }) => (
         <Table.Row key={buildKeyFromStrings(tableId, `row${rowIndex}`)}>
           {row.map((cell, cellIndex) => (
             <Table.Cell
+              textAlign={getTextAlign(cellIndex)}
               key={buildKeyFromStrings(
                 tableId,
                 `row${rowIndex}`,
