@@ -70,11 +70,29 @@ describe('<Table />', () => {
   });
 
   describe('the `SemanticUITable.HeaderCell` component', () => {
-    it('it should render the right children', () => {
+    it('should render the right children', () => {
       const wrapper = getTable()
         .find(SemanticUITable.HeaderCell)
         .first();
       expectComponentToHaveChildren(wrapper, tableHeadings[0]);
+    });
+  });
+
+  describe('the first `SemanticUITable.HeaderCell` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getTable()
+        .find(SemanticUITable.HeaderCell)
+        .at(0);
+      expectComponentToHaveProps(wrapper, { textAlign: 'left' });
+    });
+  });
+
+  describe('every other `SemanticUITable.HeaderCell` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getTable()
+        .find(SemanticUITable.HeaderCell)
+        .at(1);
+      expectComponentToHaveProps(wrapper, { textAlign: 'center' });
     });
   });
 
@@ -104,8 +122,26 @@ describe('<Table />', () => {
     it('should render the right children', () => {
       const wrapper = getTable()
         .find(SemanticUITable.Cell)
-        .first(0);
+        .first();
       expectComponentToHaveChildren(wrapper, tableBody[0][0]);
+    });
+  });
+
+  describe('the first `SemanticUITable.Cell` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getTable()
+        .find(SemanticUITable.Cell)
+        .at(0);
+      expectComponentToHaveProps(wrapper, { textAlign: 'left' });
+    });
+  });
+
+  describe('every other `SemanticUITable.Cell` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getTable()
+        .find(SemanticUITable.Cell)
+        .at(1);
+      expectComponentToHaveProps(wrapper, { textAlign: 'center' });
     });
   });
 
