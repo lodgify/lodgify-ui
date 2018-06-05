@@ -11,7 +11,9 @@ script:
 
 notifications:
   email: false
-  slack: $SLACK_KEY
+  slack:
+    rooms:
+      - $SLACK_KEY
 
 deploy:
   # Publish styleguide to GitHub Pages
