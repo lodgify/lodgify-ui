@@ -27,7 +27,7 @@ export const Component = ({
       })}
       style={{ backgroundImage: getBackgroundImageUrl(imageUrl) }}
     >
-      <span role="img" aria-label={alternativeText} />
+      <span aria-label={alternativeText} role="img" />
     </div>
     {!!label ? <Paragraph>{label}</Paragraph> : null}
   </div>
@@ -47,12 +47,12 @@ Component.defaultProps = {
 Component.propTypes = {
   /** Text to help visually impaired users understand the content of the image. */
   alternativeText: PropTypes.string,
+  /** Is the thumbnail rounded on the corners */
+  hasRoundedCorners: PropTypes.bool,
   /** URL pointing to the image to render */
   imageUrl: PropTypes.string.isRequired,
   /** Is the thumbnail circular */
   isCircular: PropTypes.bool,
-  /** Is the thumbnail rounded on the corners */
-  hasRoundedCorners: PropTypes.bool,
   /** Is the thumbnail square */
   isSquare: PropTypes.bool,
   /** A visible label for the thumbnail */

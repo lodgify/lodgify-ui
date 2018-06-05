@@ -23,17 +23,17 @@ export const Component = ({
   size,
 }) => (
   <Button
+    circular={isRounded}
+    className={cx({
+      'has-shadow': !!hasShadow,
+    })}
+    compact={isCompact}
     disabled={isDisabled}
     floated={isPositionedRight ? 'right' : 'left'}
     loading={isLoading}
     onClick={onClick}
     secondary={isSecondary}
-    circular={isRounded}
-    compact={isCompact}
     size={size}
-    className={cx({
-      'has-shadow': !!hasShadow,
-    })}
   >
     {!!icon && <Icon name={icon} />}
     {children}
@@ -59,10 +59,10 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The content to display in the button. */
   children: PropTypes.node,
-  /** The function to call when the button is clicked.
-   *  @param {Object} event
-   */
-  onClick: PropTypes.func,
+  /** Has the button shadow. */
+  hasShadow: PropTypes.bool,
+  /** An icon to display in the button */
+  icon: PropTypes.string,
   /** Has the button got reduced padding. */
   isCompact: PropTypes.bool,
   /** Is the button disabled. */
@@ -75,10 +75,10 @@ Component.propTypes = {
   isRounded: PropTypes.bool,
   /** Is the button secondary. */
   isSecondary: PropTypes.bool,
-  /** Has the button shadow. */
-  hasShadow: PropTypes.bool,
-  /** An icon to display in the button */
-  icon: PropTypes.string,
+  /** The function to call when the button is clicked.
+   *  @param {Object} event
+   */
+  onClick: PropTypes.func,
   /** The size of the button */
   size: PropTypes.string,
 };

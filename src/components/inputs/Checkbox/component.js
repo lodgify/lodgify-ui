@@ -54,10 +54,10 @@ Component.propTypes = {
   isDisabled: PropTypes.bool,
   /** Is the checkbox formatted as a radio button. Prefer using the <RadioButton> component instead */
   isRadioButton: PropTypes.bool,
-  /** The label for the checkbox */
-  label: PropTypes.string,
   /** Format to show an on or off choice. */
   isToggle: PropTypes.bool,
+  /** The label for the checkbox */
+  label: PropTypes.string,
   /** The HTML input name. */
   name: PropTypes.string,
   /**

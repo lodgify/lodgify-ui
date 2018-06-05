@@ -3,6 +3,7 @@ const importOrder = require('./rule-options/import.order');
 const prettierPrettier = require('./rule-options/prettier.prettier');
 const reactBooleanPropNaming = require('./rule-options/react.boolean-prop-naming');
 const reactJsxFilenameExtension = require('./rule-options/react.jsx-filename-extension');
+const reactSortPropTypes = require('./rule-options/react.sort-prop-types');
 const requireJsdoc = require('./rule-options/requireJsdoc');
 
 module.exports = {
@@ -45,12 +46,14 @@ module.exports = {
     'react/jsx-curly-brace-presence': [2, 'never'],
     'react/jsx-filename-extension': [2, reactJsxFilenameExtension],
     'react/jsx-no-undef': 2,
+    'react/jsx-sort-props': 2,
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
     'react/no-unused-prop-types': 2,
     'react/prop-types': 2,
     'react/react-in-jsx-scope': 2,
     'react/require-default-props': 2,
+    'react/sort-prop-types': [2, reactSortPropTypes],
     'require-jsdoc': [2, requireJsdoc],
   },
 };

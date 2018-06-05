@@ -16,12 +16,12 @@ export const Component = ({
 }) => (
   <SearchBar
     guestsOptions={guestsOptions}
-    locationOptions={locationOptions}
-    onSubmit={onSubmit}
-    searchButton={searchButton}
     isShowingLocationDropdown={false}
     isShowingSummary
     isSticky
+    locationOptions={locationOptions}
+    onSubmit={onSubmit}
+    searchButton={searchButton}
   />
 );
 

@@ -19,7 +19,7 @@ const tableBody = [
 ];
 
 const getTable = () =>
-  shallow(<Table tableHeadings={tableHeadings} tableBody={tableBody} />);
+  shallow(<Table tableBody={tableBody} tableHeadings={tableHeadings} />);
 
 describe('<Table />', () => {
   it('should render a single Semantic UI `Table` component', () => {

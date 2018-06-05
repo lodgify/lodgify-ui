@@ -21,8 +21,8 @@ export const Component = ({
     apiKey={GOOGLE_MAPS_API_KEY}
     containerElement={<Card fluid />}
     height={height}
-    isShowingExactLocation={isShowingExactLocation}
     isShowingApproximateLocation={isShowingApproximateLocation}
+    isShowingExactLocation={isShowingExactLocation}
     latitude={latitude}
     longitude={longitude}
   />
@@ -39,10 +39,10 @@ Component.defaultProps = {
 Component.propTypes = {
   /** A valid CSS value to set the height of the map. */
   height: PropTypes.string,
-  /** Is the map showing a marker for the exact location. */
-  isShowingExactLocation: PropTypes.bool,
   /** Is the map showing a marker for the approximate location. */
   isShowingApproximateLocation: PropTypes.bool,
+  /** Is the map showing a marker for the exact location. */
+  isShowingExactLocation: PropTypes.bool,
   /** The latitude coordinate for the center of the map and/or location of the marker */
   latitude: PropTypes.number.isRequired,
   /** The longitude coordinate for the center of the map and/or location of the marker */

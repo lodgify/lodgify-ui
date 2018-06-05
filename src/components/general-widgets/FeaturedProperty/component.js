@@ -57,12 +57,12 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The number of available bedrooms at the property. */
   bedroomsNumber: PropTypes.number.isRequired,
+  /** The number of guests the property can accommodate. */
+  guestsNumber: PropTypes.number.isRequired,
   /** The alternative text for the image to display. */
   imageAlternativeText: PropTypes.string,
   /** URL pointing to the image to display. */
   imageUrl: PropTypes.string.isRequired,
-  /** The number of guests the property can accommodate. */
-  guestsNumber: PropTypes.number.isRequired,
   /** The name of the location of the property. */
   locationName: PropTypes.string.isRequired,
   /** The price per night of the property, with currency symbol. */

@@ -10,7 +10,7 @@ import { Icon } from 'elements/Icon';
  * @return {Function}
  */
 export const renderNavButton = leftOrRight => (onClick, disabled) => (
-  <Button primary circular disabled={disabled} onClick={onClick} content={null}>
+  <Button circular content={null} disabled={disabled} onClick={onClick} primary>
     <Icon isColorInverted name={`chevron ${leftOrRight}`} />
   </Button>
 );

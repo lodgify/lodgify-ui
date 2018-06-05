@@ -179,7 +179,7 @@ describe('<Dropdown />', () => {
       const value = 'someValue';
       const handleChange = jest.fn();
       const dropdown = shallow(
-        <Dropdown name={name} options={OPTIONS} onChange={handleChange} />
+        <Dropdown name={name} onChange={handleChange} options={OPTIONS} />
       );
       dropdown.setState({ value });
       expect(handleChange).toHaveBeenCalledWith(name, value);

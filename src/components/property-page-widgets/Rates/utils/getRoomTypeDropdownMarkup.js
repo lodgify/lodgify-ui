@@ -15,7 +15,7 @@ export const getRoomTypeDropdownMarkup = (options, onChange) => (
     <GridRow columns={2}>
       <GridColumn width={4}>View Rate Information for:</GridColumn>
       <GridColumn width={4}>
-        <Dropdown options={options} onChange={onChange} />
+        <Dropdown onChange={onChange} options={options} />
       </GridColumn>
     </GridRow>
   </Grid>

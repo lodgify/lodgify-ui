@@ -16,10 +16,10 @@ export const Component = ({
   <Button
     as={href && 'a'}
     basic
-    href={href}
-    target={willOpenInNewTab ? '_blank' : '_self'}
     floated={isPositionedRight ? 'right' : 'left'}
+    href={href}
     onClick={onClick}
+    target={willOpenInNewTab ? '_blank' : '_self'}
   >
     {children}
   </Button>

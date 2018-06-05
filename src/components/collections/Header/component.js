@@ -22,7 +22,7 @@ export const Component = ({
   primaryCTA,
 }) => (
   <Menu borderless>
-    <Menu.Item link href="/">
+    <Menu.Item href="/" link>
       {logoSrc ? (
         <Image alt={logoText} src={logoSrc} />
       ) : (
@@ -46,16 +46,16 @@ export const Component = ({
           ) : (
             <Menu.Item
               active={index === activeNavigationItemIndex}
+              href={href}
               key={buildKeyFromStrings(text, index)}
               link
-              href={href}
             >
               {text}
             </Menu.Item>
           )
       )}
       {primaryCTA && (
-        <Menu.Item className="no-underline" link href={primaryCTA.href}>
+        <Menu.Item className="no-underline" href={primaryCTA.href} link>
           <Button>{primaryCTA.text}</Button>
         </Menu.Item>
       )}
