@@ -98,6 +98,10 @@
 @tinyParagraphFontWeight: bold;
 @tinyParagraphLineHeight: 24px;
 
+@heavyParagraphFontWeight: bold;
+
+@lightParagraphColor: @greySix;
+
 /*-------------------
        Links
 --------------------*/

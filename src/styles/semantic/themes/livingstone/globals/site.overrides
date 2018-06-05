@@ -75,6 +75,14 @@ p.tiny {
   line-height: @tinyParagraphLineHeight;
 }
 
+p.heavy {
+  font-weight: @heavyParagraphFontWeight;
+}
+
+p.light {
+  color: @lightParagraphColor;
+}
+
 /*-------------------
        Links
 --------------------*/
