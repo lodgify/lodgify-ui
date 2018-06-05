@@ -1,3 +1,11 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/lodgify/lodgify-ui/compare/v1.2.0...v1.3.0) (2018-06-05)
+
+
+### Features
+
+* **Rates:** implement Rates widget ([36d69be](https://github.com/lodgify/lodgify-ui/commit/36d69be))
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/lodgify/lodgify-ui/compare/v1.1.2...v1.2.0) (2018-06-05)
 
