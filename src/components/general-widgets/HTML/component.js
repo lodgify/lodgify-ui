@@ -34,8 +34,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** HTML content */
-  htmlString: PropTypes.string,
   /** Children nodes */
   children: PropTypes.node,
+  /** HTML content */
+  htmlString: PropTypes.string,
 };

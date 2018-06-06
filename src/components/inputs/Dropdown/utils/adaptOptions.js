@@ -16,12 +16,12 @@ export const adaptOptions = options => {
     options.map(({ image, text, value }, index) => ({
       text: [
         <img
-          key={buildKeyFromStrings(`img${text}`, index)}
-          className="ui image"
-          src={image || ''}
           alt={text}
+          className="ui image"
+          key={buildKeyFromStrings(`img${text}`, index)}
+          src={image || ''}
         />,
-        <span key={buildKeyFromStrings(`spa${text}`, index)} className="text">
+        <span className="text" key={buildKeyFromStrings(`spa${text}`, index)}>
           {text}
         </span>,
       ],

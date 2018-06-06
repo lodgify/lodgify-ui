@@ -26,10 +26,10 @@ describe('<Tooltip />', () => {
         size: 'small',
         trigger: (
           <Icon
-            name="info"
             color="grey"
-            isColorInverted
             isCircular
+            isColorInverted
+            name="info"
             size="small"
           />
         ),

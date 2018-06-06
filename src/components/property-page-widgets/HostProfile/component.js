@@ -30,7 +30,7 @@ export const Component = ({
       <GridColumn width={12}>
         <Item.Group unstackable>
           <Item>
-            <Item.Image size="tiny" avatar src={avatarUrl} />
+            <Item.Image avatar size="tiny" src={avatarUrl} />
             <Item.Header as="h4" verticalAlign="middle">
               {name}
             </Item.Header>
@@ -39,10 +39,10 @@ export const Component = ({
       </GridColumn>
     </GridRow>
     <GridRow verticalAlign="top">
-      <GridColumn mobile={12} tablet={12} computer={7}>
+      <GridColumn computer={7} mobile={12} tablet={12}>
         <Paragraph size="medium">{description}</Paragraph>
       </GridColumn>
-      <GridColumn mobile={12} tablet={12} computer={5}>
+      <GridColumn computer={5} mobile={12} tablet={12}>
         <Heading size="small">Contact Information</Heading>
         <List relaxed size="medium">
           {!!email && (
@@ -81,14 +81,14 @@ Component.defaultProps = {
 Component.propTypes = {
   /** A url pointing to a picture of the property host */
   avatarUrl: PropTypes.string,
-  /** The name of the property host. */
-  name: PropTypes.string.isRequired,
   /** The description of the property host. */
   description: PropTypes.string.isRequired,
   /** The email of the property host. */
   email: PropTypes.string,
-  /** The phone number of the property host. */
-  phone: PropTypes.string,
   /** The languages the property host speaks. */
   languages: PropTypes.arrayOf(PropTypes.string),
+  /** The name of the property host. */
+  name: PropTypes.string.isRequired,
+  /** The phone number of the property host. */
+  phone: PropTypes.string,
 };

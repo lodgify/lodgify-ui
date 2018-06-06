@@ -178,9 +178,9 @@ describe('<Header />', () => {
     it('should get `props.isTriggerUnderlined = true` if required', () => {
       const semanticMenuMenu = shallow(
         <Header
+          activeNavigationItemIndex={1}
           logoText={logoText}
           navigationItems={navigationItems}
-          activeNavigationItemIndex={1}
         />
       )
         .find('Menu')
@@ -214,9 +214,9 @@ describe('<Header />', () => {
     it('should get `props.active = true` if required', () => {
       const semanticMenuMenu = shallow(
         <Header
+          activeNavigationItemIndex={0}
           logoText={logoText}
           navigationItems={navigationItems}
-          activeNavigationItemIndex={0}
         />
       )
         .find('Menu')

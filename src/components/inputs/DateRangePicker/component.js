@@ -69,6 +69,7 @@ class Component extends PureComponent {
         onChange={this.handleInputControllerChange}
       >
         <DateRangePicker
+          /* eslint-disable react/jsx-sort-props */
           // Consumer defined props.
           displayFormat={displayFormat}
           endDatePlaceholderText={endDatePlaceholderText}
@@ -93,6 +94,7 @@ class Component extends PureComponent {
           navNext={<Icon name="arrow right" />}
           navPrev={<Icon name="arrow left" />}
           numberOfMonths={getNumberOfMonths(windowInnerWidth)}
+          /* eslint-enable react/jsx-sort-props */
         />
       </InputController>
     );

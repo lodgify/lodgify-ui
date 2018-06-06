@@ -9,7 +9,7 @@ export const nextItem = (
   </Button>
 );
 
-export const pageItem = <Label empty circular size="tiny" content={null} />;
+export const pageItem = <Label circular content={null} empty size="tiny" />;
 
 export const prevItem = (
   <Button circular content={null}>

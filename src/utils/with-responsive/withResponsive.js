@@ -23,6 +23,7 @@ export const withResponsive = WrappedComponent =>
         as={WrappedComponent}
         onUpdate={this.handleUpdate}
         // Props passed to `WrappedComponent` by this component.
+        // eslint-disable-next-line react/jsx-sort-props
         isUserOnMobile={this.state.windowInnerWidth < TABLET_BREAKPOINT}
         windowInnerWidth={this.state.windowInnerWidth}
         // All other props passed to `WrappedComponent`.

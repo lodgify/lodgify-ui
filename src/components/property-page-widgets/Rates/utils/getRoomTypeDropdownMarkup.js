@@ -18,7 +18,7 @@ export const getRoomTypeDropdownMarkup = (options, onChange) => (
         <Paragraph weight="heavy">View Rate Information for:</Paragraph>
       </GridColumn>
       <GridColumn width={4}>
-        <Dropdown options={options} onChange={onChange} />
+        <Dropdown onChange={onChange} options={options} />
       </GridColumn>
     </GridRow>
   </Grid>

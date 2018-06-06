@@ -22,14 +22,14 @@ export const Component = ({
   <section>
     {roomTypes && getRoomTypeDropdownMarkup(roomTypes, onChangeRoomType)}
     <Table
-      tableHeadings={[
-        <Dropdown onChange={onChangeCurrency} options={currencyOptions} />,
-        ...rateHeadings,
-      ]}
       tableBody={rateCategories.map(rateCategory => [
         getRateCategoryHeadingMarkup(rateCategory),
         ...rateCategory.rates,
       ])}
+      tableHeadings={[
+        <Dropdown onChange={onChangeCurrency} options={currencyOptions} />,
+        ...rateHeadings,
+      ]}
     />
   </section>
 );
@@ -59,14 +59,14 @@ Component.propTypes = {
   /** The data that populates the table rows */
   rateCategories: PropTypes.arrayOf(
     PropTypes.shape({
-      /** The name of the rate category */
-      name: PropTypes.string,
-      /** The date range the rate category applies to */
-      dateRange: PropTypes.string,
-      /** The number of guests the rate category applies to */
-      numberOfGuests: PropTypes.string,
       /** The rate category cost per additional guest  */
       costPerExtraGuest: PropTypes.string,
+      /** The date range the rate category applies to */
+      dateRange: PropTypes.string,
+      /** The name of the rate category */
+      name: PropTypes.string,
+      /** The number of guests the rate category applies to */
+      numberOfGuests: PropTypes.string,
       /** The rate category rates */
       rates: PropTypes.arrayOf(PropTypes.string),
     })

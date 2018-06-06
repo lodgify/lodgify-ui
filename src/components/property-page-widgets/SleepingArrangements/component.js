@@ -18,9 +18,9 @@ export const Component = ({ sleepingArrangements }) => (
       {sleepingArrangements.map(({ iconName, label }, index) => (
         <GridColumn
           computer={2}
-          tablet={4}
-          mobile={4}
           key={buildKeyFromStrings(label, index)}
+          mobile={4}
+          tablet={4}
         >
           <IconCard isLeftAligned label={label} name={iconName} />
         </GridColumn>
