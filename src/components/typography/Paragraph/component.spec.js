@@ -5,7 +5,7 @@ import { Component as Paragraph } from './component';
 
 const getParagraph = props => shallow(<Paragraph {...props} />);
 
-const children = '🚸';
+const children = ['🚸', 2];
 
 describe('<Paragraph />', () => {
   it('should default render a single `p`', () => {

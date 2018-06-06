@@ -8,6 +8,7 @@ import {
 import { Dropdown } from 'inputs/Dropdown';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
+import { Paragraph } from 'typography/Paragraph';
 
 import { getRoomTypeDropdownMarkup } from './getRoomTypeDropdownMarkup';
 
@@ -82,6 +83,22 @@ describe('getTransportOptionsMarkup', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+      expectComponentToHaveChildren(wrapper, Paragraph);
+    });
+  });
+
+  describe('the `Paragraph`', () => {
+    const getParagraph = () =>
+      getRoomTypeDropdown()
+        .find(Paragraph)
+        .first();
+    it('should have the right props', () => {
+      const wrapper = getParagraph();
+      expectComponentToHaveProps(wrapper, { weight: 'heavy' });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getParagraph();
       expectComponentToHaveChildren(wrapper, 'View Rate Information for:');
     });
   });
