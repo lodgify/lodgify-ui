@@ -21,8 +21,11 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The paragraph text. */
-  children: PropTypes.string.isRequired,
+  /** The paragraph content. */
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   /** The size of the paragraph. */
   size: PropTypes.oneOf([MEDIUM, TINY]),
   /** The weight of the paragraph. */
