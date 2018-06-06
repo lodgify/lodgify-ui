@@ -16,8 +16,8 @@ export const Component = ({ tableHeadings, tableBody, tableId }) => (
       <Table.Row>
         {tableHeadings.map((heading, index) => (
           <Table.HeaderCell
-            textAlign={getTextAlign(index)}
             key={buildKeyFromStrings(tableId, `heading${index}`)}
+            textAlign={getTextAlign(index)}
           >
             {heading}
           </Table.HeaderCell>
@@ -29,12 +29,12 @@ export const Component = ({ tableHeadings, tableBody, tableId }) => (
         <Table.Row key={buildKeyFromStrings(tableId, `row${rowIndex}`)}>
           {row.map((cell, cellIndex) => (
             <Table.Cell
-              textAlign={getTextAlign(cellIndex)}
               key={buildKeyFromStrings(
                 tableId,
                 `row${rowIndex}`,
                 `cell${cellIndex}`
               )}
+              textAlign={getTextAlign(cellIndex)}
             >
               {cell}
             </Table.Cell>
@@ -52,10 +52,10 @@ Component.defaultProps = {
 Component.displayName = 'Table';
 
 Component.propTypes = {
-  /** The column heading represented in the table */
-  tableHeadings: PropTypes.arrayOf(PropTypes.node).isRequired,
   /** The data making up the body of the table */
   tableBody: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.node)).isRequired,
+  /** The column heading represented in the table */
+  tableHeadings: PropTypes.arrayOf(PropTypes.node).isRequired,
   /** The id needed if rendering more than one table */
   tableId: PropTypes.string,
 };

@@ -58,9 +58,9 @@ export const Component = ({
           <Heading size="small">Taxes</Heading>
           <Statistic
             horizontal
-            text
-            size="tiny"
             label={taxesDescriptionText}
+            size="tiny"
+            text
             value={taxesText}
           />
         </GridColumn>
@@ -114,20 +114,20 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The Payment Schedule text to display. */
-  paymentScheduleText: PropTypes.string,
-  /** The Cleaning Charge text to display. */
-  cleaningCharge: PropTypes.string,
   /** The Cancellation Policy text to display. */
   cancellationPolicyText: PropTypes.string,
-  /** The Taxes text to display. */
-  taxesText: PropTypes.string,
-  /** The Taxes Description text to display. */
-  taxesDescriptionText: PropTypes.string,
+  /** The Cleaning Charge text to display. */
+  cleaningCharge: PropTypes.string,
   /** The Damage Deposit text to display. */
   damageDepositText: PropTypes.string,
-  /** The Notes text to display. */
-  notesText: PropTypes.string,
   /** The Extra Notes text to display. */
   extraNotesText: PropTypes.string,
+  /** The Notes text to display. */
+  notesText: PropTypes.string,
+  /** The Payment Schedule text to display. */
+  paymentScheduleText: PropTypes.string,
+  /** The Taxes Description text to display. */
+  taxesDescriptionText: PropTypes.string,
+  /** The Taxes text to display. */
+  taxesText: PropTypes.string,
 };

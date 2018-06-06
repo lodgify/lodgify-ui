@@ -15,8 +15,8 @@ export const Component = ({ images }) => (
     lazyLoad
     // Note: styles for the pagination controls
     // live in `styles/semantic/themes/livingstone/collections/menu.*`
-    renderRightNav={renderNavButton('right')}
     renderLeftNav={renderNavButton('left')}
+    renderRightNav={renderNavButton('right')}
     showBullets
     showFullscreenButton={false}
     showPlayButton={false}
@@ -32,8 +32,6 @@ Component.propTypes = {
     PropTypes.shape({
       /** Alternative text to show if the image can't be loaded by the browser. */
       alternativeText: PropTypes.string,
-      /** URL pointing to the image to display. */
-      url: PropTypes.string.isRequired,
       /** A set of media conditions indicating to the browser which source to choose.
        *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
        */
@@ -44,6 +42,8 @@ Component.propTypes = {
       sourceSet: PropTypes.string.isRequired,
       /** Title of the image to show when hovering over it on desktop browsers. */
       title: PropTypes.string,
+      /** URL pointing to the image to display. */
+      url: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

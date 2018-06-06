@@ -36,10 +36,10 @@ export const Component = ({
 Component.displayName = 'ReactGoogleMap';
 
 Component.propTypes = {
-  /** Is the map showing a marker for the exact location. */
-  isShowingExactLocation: PropTypes.bool.isRequired,
   /** Is the map showing a marker for the approximate location. */
   isShowingApproximateLocation: PropTypes.bool.isRequired,
+  /** Is the map showing a marker for the exact location. */
+  isShowingExactLocation: PropTypes.bool.isRequired,
   /** The latitude coordinate for the center of the map and/or location of the marker */
   latitude: PropTypes.number.isRequired,
   /** The longitude coordinate for the center of the map and/or location of the marker */

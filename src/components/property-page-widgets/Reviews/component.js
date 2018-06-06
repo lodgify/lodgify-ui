@@ -24,12 +24,12 @@ export const Component = ({ reviews, ratingAverage }) => (
     </GridRow>
     <GridRow verticalAlign="middle">
       <GridColumn
+        computer={6}
+        floated="left"
         mobile={5}
         tablet={5}
-        computer={6}
         textAlign="left"
         verticalAlign="middle"
-        floated="left"
       >
         <Rating
           disabled
@@ -40,13 +40,13 @@ export const Component = ({ reviews, ratingAverage }) => (
         <span>{Math.round(ratingAverage)}</span>
       </GridColumn>
       <GridColumn
+        computer={6}
+        floated="right"
         mobile={7}
         tablet={7}
-        computer={6}
         verticalAlign="middle"
-        floated="right"
       >
-        <Button isCompact size="medium" isPositionedRight isRounded>
+        <Button isCompact isPositionedRight isRounded size="medium">
           Submit a review
         </Button>
       </GridColumn>
@@ -76,27 +76,27 @@ Component.propTypes = {
     PropTypes.shape({
       /** The numeral rating for the property given in the review, out of 5. */
       ratingNumber: PropTypes.number.isRequired,
+      /** The response to the review. */
+      reviewResponse: PropTypes.shape({
+        /** The time of the review response. */
+        dateTime: PropTypes.string.isRequired,
+        /** The name of the review response. */
+        source: PropTypes.string.isRequired,
+        /** The text of the review response. */
+        text: PropTypes.string.isRequired,
+      }),
+      /** The body text of the review. */
+      reviewText: PropTypes.string.isRequired,
+      /** The title of the review. */
+      reviewTitle: PropTypes.string.isRequired,
       /** The category of the reviewer. */
       reviewerCategory: PropTypes.string.isRequired,
       /** The location of the reviewer. */
       reviewerLocation: PropTypes.string.isRequired,
       /** The name of the reviewer. */
       reviewerName: PropTypes.string.isRequired,
-      /** The response to the review. */
-      reviewResponse: PropTypes.shape({
-        /** The time of the review response. */
-        dateTime: PropTypes.string.isRequired,
-        /** The text of the review response. */
-        text: PropTypes.string.isRequired,
-        /** The name of the review response. */
-        source: PropTypes.string.isRequired,
-      }),
       /** The date the reviewer stayed. */
       reviewerStayDate: PropTypes.string.isRequired,
-      /** The body text of the review. */
-      reviewText: PropTypes.string.isRequired,
-      /** The title of the review. */
-      reviewTitle: PropTypes.string.isRequired,
     })
   ),
 };

@@ -42,7 +42,7 @@ export const Component = ({
         </Modal>
       )}
     </GridColumn>
-    <GridColumn verticalAlignContent="middle" computer={5} tablet={12}>
+    <GridColumn computer={5} tablet={12} verticalAlignContent="middle">
       <Grid>
         {getFirstFourItems(icons).map(({ iconName, label }, index) => (
           <GridColumn key={buildKeyFromStrings(label, index)} width={6}>

@@ -22,15 +22,15 @@ export const Component = ({ pictures }) => (
     {pictures.map(({ imageUrl, label }, index) => (
       <GridColumn key={buildKeyFromStrings(label, index)} width={4}>
         <ShowOnDesktop>
-          <Thumbnail size="huge" imageUrl={imageUrl} label={label} />
+          <Thumbnail imageUrl={imageUrl} label={label} size="huge" />
         </ShowOnDesktop>
         <ShowOnMobile>
           <Thumbnail
-            isSquare
             hasRoundedCorners
-            size="large"
             imageUrl={imageUrl}
+            isSquare
             label={label}
+            size="large"
           />
         </ShowOnMobile>
       </GridColumn>

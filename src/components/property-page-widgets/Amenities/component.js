@@ -26,10 +26,10 @@ const Component = ({ amenities, isUserOnMobile }) => (
     {getDefaultItems(amenities, isUserOnMobile).map(
       ({ iconName, isDisabled, label }, index) => (
         <GridColumn
-          key={buildKeyFromStrings(label, index)}
           computer={4}
-          tablet={4}
+          key={buildKeyFromStrings(label, index)}
           mobile={6}
+          tablet={4}
         >
           <Icon isDisabled={isDisabled} label={label} name={iconName} />
         </GridColumn>

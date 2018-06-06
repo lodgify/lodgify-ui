@@ -89,7 +89,7 @@ Component.defaultProps = {
   isShowingLocationDropdown: true,
   isSticky: false,
   searchButton: (
-    <Button isRounded icon="search">
+    <Button icon="search" isRounded>
       Search
     </Button>
   ),
@@ -111,6 +111,12 @@ Component.propTypes = {
       value: PropTypes.any,
     })
   ).isRequired,
+  /** Is Search Bar showing the Location Dropdown. */
+  isShowingLocationDropdown: PropTypes.bool,
+  /** Is Search Bar showing the Property Summary info. */
+  isShowingSummary: PropTypes.bool,
+  /** Is Search Bar going to render in sticky mode. */
+  isSticky: PropTypes.bool,
   /** The options which the user can select in the location field. */
   locationOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -127,12 +133,6 @@ Component.propTypes = {
    *  @param {String} values.location
    */
   onSubmit: PropTypes.func,
-  /** Is Search Bar showing the Property Summary info. */
-  isShowingSummary: PropTypes.bool,
-  /** Is Search Bar showing the Location Dropdown. */
-  isShowingLocationDropdown: PropTypes.bool,
-  /** Is Search Bar going to render in sticky mode. */
-  isSticky: PropTypes.bool,
   /** The Search Button the Search Bar displays. */
   searchButton: PropTypes.node,
 };

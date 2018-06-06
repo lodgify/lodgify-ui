@@ -29,11 +29,11 @@ const getHostProfile = props =>
   shallow(
     <HostProfile
       avatarUrl={catImageUrl}
-      name={name}
       description={description}
       email={email}
-      phone={phone}
       languages={languages}
+      name={name}
+      phone={phone}
       {...props}
     />
   );

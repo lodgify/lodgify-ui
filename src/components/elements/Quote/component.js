@@ -34,10 +34,10 @@ export const Component = ({ quoteDateTime, quoteSource, quoteText }) => (
 Component.displayName = 'Quote';
 
 Component.propTypes = {
-  /** The text for the quote. */
-  quoteText: PropTypes.string.isRequired,
-  /** The name of the individual being quoted. */
-  quoteSource: PropTypes.string.isRequired,
   /** The time of the quote. */
   quoteDateTime: PropTypes.string.isRequired,
+  /** The name of the individual being quoted. */
+  quoteSource: PropTypes.string.isRequired,
+  /** The text for the quote. */
+  quoteText: PropTypes.string.isRequired,
 };

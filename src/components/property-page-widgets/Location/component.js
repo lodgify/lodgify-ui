@@ -54,8 +54,8 @@ const Component = ({
     <GridColumn width={12}>
       <GoogleMap
         height={getGoogleMapHeight(isUserOnMobile)}
-        isShowingExactLocation={isShowingExactLocation}
         isShowingApproximateLocation={isShowingApproximateLocation}
+        isShowingExactLocation={isShowingExactLocation}
         latitude={latitude}
         longitude={longitude}
       />
