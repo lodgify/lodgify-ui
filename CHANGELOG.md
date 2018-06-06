@@ -1,3 +1,12 @@
+<a name="1.3.1"></a>
+## [1.3.1](https://github.com/lodgify/lodgify-ui/compare/v1.3.0...v1.3.1) (2018-06-06)
+
+
+### Bug Fixes
+
+* **Paragraph:** children can be a node or array of nodes ([c9449a2](https://github.com/lodgify/lodgify-ui/commit/c9449a2))
+* **Rates:** update typography ([2a05768](https://github.com/lodgify/lodgify-ui/commit/2a05768))
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/lodgify/lodgify-ui/compare/v1.2.0...v1.3.0) (2018-06-05)
 
