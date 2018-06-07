@@ -1,0 +1,1 @@
+export { getUpOrDownFromBoolean } from './getUpOrDownFromBoolean';
