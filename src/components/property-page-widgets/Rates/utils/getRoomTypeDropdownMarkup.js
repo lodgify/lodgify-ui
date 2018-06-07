@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Dropdown } from 'inputs/Dropdown';
-import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
 import { Paragraph } from 'typography/Paragraph';
@@ -12,14 +11,12 @@ import { Paragraph } from 'typography/Paragraph';
  * @return {Object}
  */
 export const getRoomTypeDropdownMarkup = (options, onChange) => (
-  <Grid stackable verticalAlign="middle">
-    <GridRow columns={2}>
-      <GridColumn width={4}>
-        <Paragraph weight="heavy">View Rate Information for:</Paragraph>
-      </GridColumn>
-      <GridColumn width={4}>
-        <Dropdown onChange={onChange} options={options} />
-      </GridColumn>
-    </GridRow>
-  </Grid>
+  <GridRow verticalAlign="middle">
+    <GridColumn computer={4} mobile={12}>
+      <Paragraph weight="heavy">View Rate Information for:</Paragraph>
+    </GridColumn>
+    <GridColumn computer={4} mobile={12}>
+      <Dropdown onChange={onChange} options={options} />
+    </GridColumn>
+  </GridRow>
 );
