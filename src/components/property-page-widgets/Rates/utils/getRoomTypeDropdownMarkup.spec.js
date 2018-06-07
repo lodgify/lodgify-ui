@@ -5,9 +5,9 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Dropdown } from 'inputs/Dropdown';
 import { GridColumn } from 'layout/GridColumn';
-import { GridRow } from 'layout/GridRow';
 import { Paragraph } from 'typography/Paragraph';
 
 import { getRoomTypeDropdownMarkup } from './getRoomTypeDropdownMarkup';
@@ -32,41 +32,26 @@ const onChange = () => '😼';
 const getRoomTypeDropdown = () =>
   shallow(getRoomTypeDropdownMarkup(options, onChange));
 
-describe('getTransportOptionsMarkup', () => {
-  it('should return a `Grid`', () => {
+describe('getRoomTypeDropdownMarkup', () => {
+  it('should return a `GridRow`', () => {
     const wrapper = getRoomTypeDropdown();
-    expectComponentToBe(wrapper, 'Grid');
+    expectComponentToBe(wrapper, 'GridRow');
   });
 
-  describe('the `Grid` component', () => {
+  describe('the `GridRow` component', () => {
     it('should have the right props', () => {
       const wrapper = getRoomTypeDropdown();
       expectComponentToHaveProps(wrapper, {
-        stackable: true,
         verticalAlign: 'middle',
       });
     });
 
     it('should render the right children', () => {
       const wrapper = getRoomTypeDropdown();
-      expectComponentToHaveChildren(wrapper, GridRow);
-    });
-  });
-
-  describe('the `GridRow` component', () => {
-    const getGridRow = () =>
-      getRoomTypeDropdown()
-        .find(GridRow)
-        .first();
-
-    it('should have the right props', () => {
-      const wrapper = getGridRow();
-      expectComponentToHaveProps(wrapper, { columns: 2 });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getGridRow();
-      expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(2, GridColumn)
+      );
     });
   });
 
@@ -78,7 +63,7 @@ describe('getTransportOptionsMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
-      expectComponentToHaveProps(wrapper, { width: 4 });
+      expectComponentToHaveProps(wrapper, { computer: 4, mobile: 12 });
     });
 
     it('should render the right children', () => {
@@ -111,7 +96,7 @@ describe('getTransportOptionsMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
-      expectComponentToHaveProps(wrapper, { width: 4 });
+      expectComponentToHaveProps(wrapper, { computer: 4, mobile: 12 });
     });
 
     it('should render the right children', () => {

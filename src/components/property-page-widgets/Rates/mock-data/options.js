@@ -1,5 +1,3 @@
-import { getRateCategoryHeadingMarkup } from '../utils/getRateCategoryHeadingMarkup';
-
 export const currencyOptions = [
   {
     text: 'EUR €',
