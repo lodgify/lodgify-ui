@@ -1,11 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Card } from 'semantic-ui-react';
 
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Dropdown } from 'inputs/Dropdown';
+import { Grid } from 'layout/Grid';
+import { GridColumn } from 'layout/GridColumn';
+import { GridRow } from 'layout/GridRow';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Table } from 'collections/Table';
 
-import { getRoomTypeDropdownMarkup } from './utils/getRoomTypeDropdownMarkup';
+import { getMobileRateRowMarkup } from './utils/getMobileRateRowMarkup';
 import { getRateCategoryHeadingMarkup } from './utils/getRateCategoryHeadingMarkup';
+import { getRoomTypeDropdownMarkup } from './utils/getRoomTypeDropdownMarkup';
 
 /**
  * The standard widget for displaying the rates of a property.
@@ -19,19 +27,49 @@ export const Component = ({
   rateHeadings,
   roomTypes,
 }) => (
-  <section>
-    {roomTypes && getRoomTypeDropdownMarkup(roomTypes, onChangeRoomType)}
-    <Table
-      tableBody={rateCategories.map(rateCategory => [
-        getRateCategoryHeadingMarkup(rateCategory),
-        ...rateCategory.rates,
-      ])}
-      tableHeadings={[
-        <Dropdown onChange={onChangeCurrency} options={currencyOptions} />,
-        ...rateHeadings,
-      ]}
-    />
-  </section>
+  <div>
+    <Grid padded>
+      {roomTypes && getRoomTypeDropdownMarkup(roomTypes, onChangeRoomType)}
+      <ShowOnMobile>
+        <Dropdown onChange={onChangeCurrency} options={currencyOptions} />
+        {rateCategories.map((rateCategory, rateCategoryIndex) => (
+          <Card
+            fluid
+            key={buildKeyFromStrings(rateCategory.name, rateCategoryIndex)}
+          >
+            <Card.Content>
+              <Grid padded>
+                <GridRow>
+                  <GridColumn>
+                    {getRateCategoryHeadingMarkup(rateCategory)}
+                  </GridColumn>
+                </GridRow>
+                {rateCategory.rates.map((rate, rateIndex) =>
+                  getMobileRateRowMarkup(
+                    rate,
+                    rateHeadings[rateIndex],
+                    buildKeyFromStrings(rateCategory.name, rate, rateIndex)
+                  )
+                )}
+              </Grid>
+            </Card.Content>
+          </Card>
+        ))}
+      </ShowOnMobile>
+    </Grid>
+    <ShowOnDesktop>
+      <Table
+        tableBody={rateCategories.map(rateCategory => [
+          getRateCategoryHeadingMarkup(rateCategory),
+          ...rateCategory.rates,
+        ])}
+        tableHeadings={[
+          <Dropdown onChange={onChangeCurrency} options={currencyOptions} />,
+          ...rateHeadings,
+        ]}
+      />
+    </ShowOnDesktop>
+  </div>
 );
 
 Component.defaultProps = {
