@@ -1,0 +1,156 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+import { Card, Image, Rating } from 'semantic-ui-react';
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
+
+import { Heading } from 'typography/Heading';
+
+import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
+import { Component as FeaturedRoomType } from './component';
+
+const props = {
+  bedsNumber: 3,
+  guestsNumber: 3,
+  imageAlternativeText: 'this alt tag',
+  imageUrl: '🐱🐱',
+  locationName: 'Catania',
+  nightPrice: '$280',
+  ratingNumber: 4.8,
+  roomTypeName: 'The Cat House',
+  roomTypeUrl: '/',
+};
+
+const getFeaturedRoomType = () => shallow(<FeaturedRoomType {...props} />);
+
+describe('<FeaturedRoomType />', () => {
+  it('should render a single Semantic UI `Card` component', () => {
+    const wrapper = getFeaturedRoomType();
+    expectComponentToBe(wrapper, Card);
+  });
+
+  describe('the `Card` component', () => {
+    const getCard = () => getFeaturedRoomType().find(Card);
+    it('should have the right props', () => {
+      const wrapper = getCard();
+      expectComponentToHaveProps(wrapper, { href: props.roomTypeUrl });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getCard();
+      expectComponentToHaveChildren(wrapper, Image, Card.Content);
+    });
+  });
+
+  describe('the `Image` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getFeaturedRoomType().find(Image);
+      const { imageAlternativeText, imageUrl } = props;
+
+      expectComponentToHaveProps(wrapper, {
+        alt: imageAlternativeText,
+        src: imageUrl,
+      });
+    });
+  });
+
+  describe('the `Card.Content` component', () => {
+    it('should render the right children', () => {
+      const wrapper = getFeaturedRoomType().find(Card.Content);
+
+      expectComponentToHaveChildren(
+        wrapper,
+        Card.Header,
+        Card.Description,
+        Card.Description,
+        Card.Description,
+        Card.Description
+      );
+    });
+  });
+
+  describe('the `Card.Header` component', () => {
+    it('should have the right `children`', () => {
+      const wrapper = getFeaturedRoomType().find(Card.Header);
+      expectComponentToHaveChildren(wrapper, props.roomTypeName);
+    });
+  });
+
+  describe('the first `Card.Description` component', () => {
+    it('should have the right `children`', () => {
+      const wrapper = getFeaturedRoomType()
+        .find(Card.Description)
+        .at(0);
+      expectComponentToHaveChildren(wrapper, props.locationName);
+    });
+  });
+
+  describe('the second `Card.Description` component', () => {
+    it('should have the right `children`', () => {
+      const wrapper = getFeaturedRoomType()
+        .find(Card.Description)
+        .at(1);
+      expectComponentToHaveChildren(
+        wrapper,
+        getRoomTypeDescription(props.guestsNumber, props.bedsNumber)
+      );
+    });
+  });
+
+  describe('the third `Card.Description` component', () => {
+    it('should have the right `children`', () => {
+      const wrapper = getFeaturedRoomType()
+        .find(Card.Description)
+        .at(2);
+      expectComponentToHaveChildren(
+        wrapper,
+        props.ratingNumber.toString(),
+        Rating
+      );
+    });
+
+    it('should render a single Semantic UI `Rating` component', () => {
+      const wrapper = getFeaturedRoomType()
+        .find(Card.Description)
+        .at(2)
+        .find(Rating);
+      expectComponentToBe(wrapper, Rating);
+    });
+  });
+
+  describe('the `Rating` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getFeaturedRoomType().find(Rating);
+      expectComponentToHaveProps(wrapper, {
+        disabled: true,
+        maxRating: 5,
+        rating: Math.round(props.ratingNumber),
+        size: 'tiny',
+      });
+    });
+  });
+
+  describe('the fourth `Card.Description` component', () => {
+    it('should have the right `children`', () => {
+      const wrapper = getFeaturedRoomType()
+        .find(Card.Description)
+        .at(3);
+      expectComponentToHaveChildren(wrapper, 'from ', Heading, ' /night');
+    });
+  });
+
+  describe('the `Heading` component', () => {
+    it('should have the right children', () => {
+      const wrapper = getFeaturedRoomType().find(Heading);
+      expectComponentToHaveChildren(wrapper, props.nightPrice);
+    });
+  });
+
+  it('should have `displayName` `FeaturedRoomType`', () => {
+    expectComponentToHaveDisplayName(FeaturedRoomType, 'FeaturedRoomType');
+  });
+});
