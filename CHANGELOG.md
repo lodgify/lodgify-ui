@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/lodgify/lodgify-ui/compare/v1.5.2...v1.5.3) (2018-06-11)
+
+
+### Bug Fixes
+
+* **PlaygroundRenderer:** add style to allow scroll on overflow-x ([e90442c](https://github.com/lodgify/lodgify-ui/commit/e90442c))
+
 ## [1.5.2](https://github.com/lodgify/lodgify-ui/compare/v1.5.1...v1.5.2) (2018-06-11)
 
 
