@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/lodgify/lodgify-ui/compare/v1.4.0...v1.5.0) (2018-06-11)
+
+
+### Features
+
+* **FeaturedRoomType:** add FeaturedRoomType component ([438b5d7](https://github.com/lodgify/lodgify-ui/commit/438b5d7))
+
 # [1.4.0](https://github.com/lodgify/lodgify-ui/compare/v1.3.2...v1.4.0) (2018-06-11)
 
 
