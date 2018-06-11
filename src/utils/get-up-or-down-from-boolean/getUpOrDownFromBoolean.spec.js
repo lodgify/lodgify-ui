@@ -1,13 +1,13 @@
-import { getOpenDirection } from './getOpenDirection';
+import { getUpOrDownFromBoolean } from './getUpOrDownFromBoolean';
 
-describe('getOpenDirection', () => {
+describe('getUpOrDownFromBoolean', () => {
   it('should return `up` if `willOpenAbove` is true', () => {
-    const actual = getOpenDirection(true);
+    const actual = getUpOrDownFromBoolean(true);
     expect(actual).toBe('up');
   });
 
   it('should return `down` if `willOpenAbove` is false', () => {
-    const actual = getOpenDirection(false);
+    const actual = getUpOrDownFromBoolean(false);
     expect(actual).toBe('down');
   });
 });

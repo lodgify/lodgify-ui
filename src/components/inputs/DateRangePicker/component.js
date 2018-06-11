@@ -4,12 +4,12 @@ import { isEqual, uniqueId } from 'lodash';
 import { DateRangePicker } from 'react-dates';
 import 'react-dates/initialize';
 
+import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
 import { withResponsive } from 'utils/with-responsive';
 import { Icon } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
 
 import { pickDatesFromState } from './utils/pickDatesFromState';
-import { getOpenDirection } from './utils/getOpenDirection';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
 import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 
@@ -74,7 +74,7 @@ class Component extends PureComponent {
           displayFormat={displayFormat}
           endDatePlaceholderText={endDatePlaceholderText}
           isDayBlocked={getIsDayBlocked}
-          openDirection={getOpenDirection(willOpenAbove)}
+          openDirection={getUpOrDownFromBoolean(willOpenAbove)}
           startDatePlaceholderText={startDatePlaceholderText}
           // Controlled props
           endDate={endDate}
