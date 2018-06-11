@@ -61,6 +61,9 @@
 @dateRangePickerPickerDayBlockedBackground: @greyTwo;
 @dateRangePickerPickerDayBlockedFontColor: @greyFive;
 
+/* Single date picker */
+@singleDatePickerDateInputWidth: ~"calc(100% - @{dateRangePickerIconWidthOffset})";
+
 /*-------------------
         States
 --------------------*/

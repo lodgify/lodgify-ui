@@ -89,8 +89,12 @@
   /* textarea */
 
   /* Date range picker */
+
+  /* Single date picker */
+
   textarea,
-  .DateRangePickerInput {
+  .DateRangePickerInput,
+  .SingleDatePickerInput {
     background: @background;
     border: @border;
     font-family: @inputFont;
@@ -102,14 +106,18 @@
     padding: @padding;
   }
 
-  .DateRangePicker {
+  .DateRangePicker,
+  .SingleDatePicker {
     width: @inputWidth;
 
-    .DateRangePickerInput {
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
       color: @labelColor;
 
       button.DateRangePickerInput_calendarIcon,
-      .DateRangePickerInput_arrow {
+      .DateRangePickerInput_arrow,
+      button.SingleDatePickerInput_calendarIcon,
+      .SingleDatePickerInput_arrow {
         color: inherit;
         margin: 0;
         outline: none;
@@ -151,7 +159,8 @@
       }
     }
 
-    .DateRangePicker_picker {
+    .DateRangePicker_picker,
+    .SingleDatePicker_picker {
       color: @dateRangePickerPickerFontColor;
       z-index: @dateRangePickerPickerZIndex;
 
@@ -255,6 +264,27 @@
     }
   }
 
+  .DateRangePicker {
+
+    .DateRangePickerInput {
+
+      .DateInput {
+        width: @dateRangePickerDateInputWidth;
+      }
+    }
+  }
+
+  .SingleDatePicker {
+
+    .SingleDatePickerInput {
+      width: @inputWidth;
+
+      .DateInput {
+        width: @singleDatePickerDateInputWidth;
+      }
+    }
+  }
+
   /*-------------------
         States
 --------------------*/
@@ -265,7 +295,8 @@
 
   /* Focus */
   textarea:focus,
-  &.focus .DateRangePickerInput {
+  &.focus .DateRangePickerInput,
+  &.focus .SingleDatePickerInput {
     border-color: @focusBorderColor;
     background: @focusBackground;
     color: @focusColor;
@@ -282,12 +313,14 @@
 
     input,
     textarea,
-    .DateRangePickerInput {
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
       background: @errorBackground;
       border-color: @errorBorder;
     }
 
-    .DateRangePickerInput {
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
       color: @focusColor;
     }
 
@@ -312,7 +345,8 @@
 
     input:not(:focus),
     textarea:not(:focus),
-    .DateRangePickerInput {
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
       background: @focusedInputBackground;
       border-color: @hoveredInputBorderColor;
     }
@@ -323,12 +357,14 @@
 
     input,
     textarea,
-    .DateRangePickerInput {
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
       background: @focusedInputBackground;
       border-color: @focusedFormBorderColor;
     }
 
-    .DateRangePickerInput {
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
       color: @focusColor;
     }
   }
@@ -338,12 +374,14 @@
 
     input,
     textarea,
-    .DateRangePickerInput {
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
       background: @focusedInputBackground;
       border-color: @validBorderColor;
     }
 
-    .DateRangePickerInput {
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
       color: @focusColor;
 
       input:not(.DateInput_input__focused) {
