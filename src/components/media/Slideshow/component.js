@@ -35,11 +35,11 @@ Component.propTypes = {
       /** A set of media conditions indicating to the browser which source to choose.
        *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
        */
-      sizes: PropTypes.string.isRequired,
+      sizes: PropTypes.string,
       /** The set of images the browser can choose between depending on screen width.
        *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
        */
-      sourceSet: PropTypes.string.isRequired,
+      sourceSet: PropTypes.string,
       /** Title of the image to show when hovering over it on desktop browsers. */
       title: PropTypes.string,
       /** URL pointing to the image to display. */
