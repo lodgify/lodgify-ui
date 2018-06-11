@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/lodgify/lodgify-ui/compare/v1.5.0...v1.5.1) (2018-06-11)
+
+
+### Bug Fixes
+
+* **CallMeBack:** replace date picker Dropdown with SingleDatePicker ([13ec23e](https://github.com/lodgify/lodgify-ui/commit/13ec23e))
+
 # [1.5.0](https://github.com/lodgify/lodgify-ui/compare/v1.4.0...v1.5.0) (2018-06-11)
 
 
