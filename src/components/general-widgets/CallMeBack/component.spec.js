@@ -1,7 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveChildren } from '@lodgify/enzyme-jest-expect-helpers/lib/expectComponentToHaveChildren';
+import { expectComponentToHaveProps } from '@lodgify/enzyme-jest-expect-helpers/lib/expectComponentToHaveProps';
 
 import { Form } from 'collections/Form';
+import { SingleDatePicker } from 'inputs/SingleDatePicker';
 import { InputGroup } from 'collections/InputGroup';
 import { Dropdown } from 'inputs/Dropdown';
 
@@ -113,25 +116,19 @@ describe('<CallMeBack />', () => {
   });
 
   describe('the second `InputGroup`', () => {
-    it('should render two `Dropdown`s', () => {
+    it('should render the right children', () => {
       const wrapper = getSecondInputGroup();
-      const actual = wrapper.children(Dropdown);
-      expect(actual).toHaveLength(2);
+      expectComponentToHaveChildren(wrapper, SingleDatePicker, Dropdown);
     });
   });
 
-  describe('the Date `Dropdown`', () => {
+  describe('the `SingleDatePicker`', () => {
     it('should have the right props', () => {
-      const wrapper = getSecondInputGroup();
-      const actual = wrapper.childAt(0).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          icon: 'calendar',
-          label: 'Date',
-          name: 'date',
-          options: options.dateOptions,
-        })
-      );
+      const wrapper = getSecondInputGroup().find(SingleDatePicker);
+      expectComponentToHaveProps(wrapper, {
+        placeholderText: 'Date',
+        name: 'date',
+      });
     });
   });
 
