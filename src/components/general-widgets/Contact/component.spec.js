@@ -191,6 +191,7 @@ describe('<Contact />', () => {
         expect.objectContaining({
           label: 'Property',
           name: 'property',
+          onChange: Function.prototype,
           options: options.propertyOptions,
         })
       );
