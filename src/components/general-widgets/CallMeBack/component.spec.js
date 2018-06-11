@@ -8,11 +8,52 @@ import { SingleDatePicker } from 'inputs/SingleDatePicker';
 import { InputGroup } from 'collections/InputGroup';
 import { Dropdown } from 'inputs/Dropdown';
 
-import * as options from './mock-data/options';
 import { Component as CallMeBack } from './component';
 
-const getCallMeBack = () => shallow(<CallMeBack {...options} />);
+export const propertyOptions = [
+  {
+    text: 'La Casa Viva',
+    value: 'casaViva',
+  },
+  {
+    text: 'La Casa Muerta',
+    value: 'casaMuerta',
+  },
+  {
+    text: 'The White Lodge',
+    value: 'whiteLodge',
+  },
+  {
+    text: 'The Black Lodge',
+    value: 'blackLodge',
+  },
+];
+
+export const timeOptions = [
+  { text: '10 am', value: '1000' },
+  { text: '11 am', value: '1100' },
+  { text: '12 noon', value: '1200' },
+  { text: '1 pm', value: '1300' },
+  { text: '2 pm', value: '1400' },
+  { text: '3 pm', value: '1500' },
+];
+
+export const timeZoneOptions = [
+  { text: 'CET', value: 'cet' },
+  { text: 'GMT', value: 'gmt' },
+  { text: 'EST', value: 'est' },
+];
+
+const getCallMeBack = () =>
+  shallow(
+    <CallMeBack
+      propertyOptions={propertyOptions}
+      timeOptions={timeOptions}
+      timeZoneOptions={timeZoneOptions}
+    />
+  );
 const getForm = () => getCallMeBack().find(Form);
+
 const getFirstInputGroup = () =>
   getCallMeBack()
     .find(InputGroup)
@@ -141,7 +182,7 @@ describe('<CallMeBack />', () => {
           icon: 'clock',
           label: 'Time',
           name: 'time',
-          options: options.timeOptions,
+          options: timeOptions,
         })
       );
     });
@@ -163,7 +204,7 @@ describe('<CallMeBack />', () => {
         expect.objectContaining({
           label: 'Time Zone',
           name: 'timeZone',
-          options: options.timeZoneOptions,
+          options: timeZoneOptions,
         })
       );
     });
@@ -177,7 +218,7 @@ describe('<CallMeBack />', () => {
         expect.objectContaining({
           label: 'Property',
           name: 'property',
-          options: options.propertyOptions,
+          options: propertyOptions,
         })
       );
     });
