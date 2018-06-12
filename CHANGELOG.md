@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/lodgify/lodgify-ui/compare/v1.7.0...v1.7.1) (2018-06-12)
+
+
+### Bug Fixes
+
+* **Modal:** remove margin-top from .ui.modal > .ui.card ([49e053c](https://github.com/lodgify/lodgify-ui/commit/49e053c))
+
 # [1.7.0](https://github.com/lodgify/lodgify-ui/compare/v1.6.0...v1.7.0) (2018-06-12)
 
 
