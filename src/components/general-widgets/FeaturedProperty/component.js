@@ -5,6 +5,8 @@ import { Card, Image, Rating } from 'semantic-ui-react';
 import { Subheading } from 'typography/Subheading';
 import { Heading } from 'typography/Heading';
 
+import { getPropertyDescription } from './utils/getPropertyDescription';
+
 /**
  * The standard widget for featuring a property.
  * @returns {Object}
@@ -30,7 +32,7 @@ export const Component = ({
       <Card.Header>{propertyName}</Card.Header>
       <Card.Description>{locationName}</Card.Description>
       <Card.Description>
-        Guests: {guestsNumber} | Bedrooms: {bedroomsNumber}
+        {getPropertyDescription(guestsNumber, bedroomsNumber)}
       </Card.Description>
       <Card.Description>
         {ratingNumber}
@@ -71,7 +73,7 @@ Component.propTypes = {
   propertyName: PropTypes.string.isRequired,
   /** The name of the type of the property. */
   propertyType: PropTypes.string.isRequired,
-  /** URL pointing to a page with details of the property . */
+  /** URL pointing to a page with details of the property. */
   propertyUrl: PropTypes.string.isRequired,
   /** The numeral rating for the property, out of 5 */
   ratingNumber: PropTypes.number.isRequired,
