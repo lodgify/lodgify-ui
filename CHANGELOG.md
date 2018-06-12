@@ -1,3 +1,15 @@
+# [1.7.0](https://github.com/lodgify/lodgify-ui/compare/v1.6.0...v1.7.0) (2018-06-12)
+
+
+### Bug Fixes
+
+* **Form:** remove .isRequired from props.actionLink.onClick ([b24adf8](https://github.com/lodgify/lodgify-ui/commit/b24adf8))
+
+
+### Features
+
+* **OwnerLogin:** add forgot password form displaying in modal ([04d22e1](https://github.com/lodgify/lodgify-ui/commit/04d22e1))
+
 # [1.6.0](https://github.com/lodgify/lodgify-ui/compare/v1.5.3...v1.6.0) (2018-06-12)
 
 
