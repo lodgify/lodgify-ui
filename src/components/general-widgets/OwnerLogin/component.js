@@ -4,15 +4,16 @@ import PropTypes from 'prop-types';
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
 
+import { getForgotPasswordFormMarkup } from './utils/getForgotPasswordFormMarkup';
+
 /**
  * The standard widget for owner login.
  * @returns {Object}
  */
-export const Component = ({ onClickForgotPassword, onSubmit }) => (
+export const Component = ({ onForgotPasswordSubmit, onSubmit }) => (
   <Form
     actionLink={{
-      onClick: onClickForgotPassword,
-      text: 'Forgot password?',
+      text: getForgotPasswordFormMarkup(onForgotPasswordSubmit),
     }}
     headingText="Owner Login"
     onSubmit={onSubmit}
@@ -26,16 +27,16 @@ export const Component = ({ onClickForgotPassword, onSubmit }) => (
 Component.displayName = 'OwnerLogin';
 
 Component.defaultProps = {
-  onClickForgotPassword: Function.prototype,
+  onForgotPasswordSubmit: Function.prototype,
   onSubmit: Function.prototype,
 };
 
 Component.propTypes = {
-  /** The function to call when the form is submitted
-   *  @param {Object} event
+  /** The function to call when the forgot password form is submitted
+   *  @param {Object} values - The values of the inputs in the form.
    */
-  onClickForgotPassword: PropTypes.func,
-  /** The function to call when the form is submitted
+  onForgotPasswordSubmit: PropTypes.func,
+  /** The function to call when the login form is submitted
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,

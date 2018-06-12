@@ -20,8 +20,7 @@ describe('<OwnerLogin />', () => {
       expect(actual).toEqual(
         expect.objectContaining({
           actionLink: expect.objectContaining({
-            onClick: Function.prototype,
-            text: 'Forgot password?',
+            text: expect.any(Object),
           }),
           headingText: 'Owner Login',
           onSubmit: Function.prototype,
