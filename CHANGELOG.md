@@ -1,3 +1,11 @@
+## [1.7.2](https://github.com/lodgify/lodgify-ui/compare/v1.7.1...v1.7.2) (2018-06-13)
+
+
+### Bug Fixes
+
+* **HTML:** move DOMPurify call to componentDidMount to avoid calling during server side render ([52871c8](https://github.com/lodgify/lodgify-ui/commit/52871c8))
+* **Video:** move DOMPurify call to componentDidMount to avoid calling during server side render ([318ba8c](https://github.com/lodgify/lodgify-ui/commit/318ba8c))
+
 ## [1.7.1](https://github.com/lodgify/lodgify-ui/compare/v1.7.0...v1.7.1) (2018-06-12)
 
 
