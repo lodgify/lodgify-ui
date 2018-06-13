@@ -38,7 +38,6 @@ export const styles = ({ space, color, borderRadius, mq }) => ({
 		// the next 2 lines are required to contain floated components
 	  width: '100%',
 	  display: 'inline-block',
-		overflowX: 'auto',
 	  // Lodgify UI styles start
 	  [mq.xlarge]: {
 		  marginRight: space[4],
