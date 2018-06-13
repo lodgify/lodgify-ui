@@ -1,1 +1,0 @@
-export { getVideoContent } from './getVideoContent';
