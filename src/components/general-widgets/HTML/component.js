@@ -8,20 +8,30 @@ import DOMPurify from 'dompurify';
  * @returns {Object}
  */
 export class Component extends PureComponent {
+  state = {
+    cleanHTMLString: null,
+  };
+
+  componentDidMount = () => {
+    this.setState({
+      // `DOMPurify.sanitize` is in `componentDidMount` so that it
+      // is not called during server side rendering.
+      // Reason: DOMPurify depends on browser features.
+      cleanHTMLString: DOMPurify.sanitize(this.props.htmlString),
+    });
+  };
+
   render() {
-    const { htmlString, children } = this.props;
+    const { cleanHTMLString } = this.state;
+    const { children } = this.props;
 
     return children ? (
       <div>
-        <div
-          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(htmlString) }}
-        />
+        <div dangerouslySetInnerHTML={{ __html: cleanHTMLString }} />
         {children}
       </div>
     ) : (
-      <div
-        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(htmlString) }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: cleanHTMLString }} />
     );
   }
 }
