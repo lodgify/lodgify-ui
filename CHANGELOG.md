@@ -1,3 +1,58 @@
+## [1.7.2](https://github.com/lodgify/lodgify-ui/compare/v1.7.1...v1.7.2) (2018-06-13)
+
+
+### Bug Fixes
+
+* **HTML:** move DOMPurify call to componentDidMount to avoid calling during server side render ([52871c8](https://github.com/lodgify/lodgify-ui/commit/52871c8))
+* **Video:** move DOMPurify call to componentDidMount to avoid calling during server side render ([318ba8c](https://github.com/lodgify/lodgify-ui/commit/318ba8c))
+
+## [1.7.1](https://github.com/lodgify/lodgify-ui/compare/v1.7.0...v1.7.1) (2018-06-12)
+
+
+### Bug Fixes
+
+* **Modal:** remove margin-top from .ui.modal > .ui.card ([49e053c](https://github.com/lodgify/lodgify-ui/commit/49e053c))
+
+# [1.7.0](https://github.com/lodgify/lodgify-ui/compare/v1.6.0...v1.7.0) (2018-06-12)
+
+
+### Bug Fixes
+
+* **Form:** remove .isRequired from props.actionLink.onClick ([b24adf8](https://github.com/lodgify/lodgify-ui/commit/b24adf8))
+
+
+### Features
+
+* **OwnerLogin:** add forgot password form displaying in modal ([04d22e1](https://github.com/lodgify/lodgify-ui/commit/04d22e1))
+
+# [1.6.0](https://github.com/lodgify/lodgify-ui/compare/v1.5.3...v1.6.0) (2018-06-12)
+
+
+### Features
+
+* **Contact:** expose onChangeProperty function prop ([1e8575a](https://github.com/lodgify/lodgify-ui/commit/1e8575a))
+
+## [1.5.3](https://github.com/lodgify/lodgify-ui/compare/v1.5.2...v1.5.3) (2018-06-11)
+
+
+### Bug Fixes
+
+* **PlaygroundRenderer:** add style to allow scroll on overflow-x ([e90442c](https://github.com/lodgify/lodgify-ui/commit/e90442c))
+
+## [1.5.2](https://github.com/lodgify/lodgify-ui/compare/v1.5.1...v1.5.2) (2018-06-11)
+
+
+### Bug Fixes
+
+* **Slideshow:** change the required props ([4473e24](https://github.com/lodgify/lodgify-ui/commit/4473e24))
+
+## [1.5.1](https://github.com/lodgify/lodgify-ui/compare/v1.5.0...v1.5.1) (2018-06-11)
+
+
+### Bug Fixes
+
+* **CallMeBack:** replace date picker Dropdown with SingleDatePicker ([13ec23e](https://github.com/lodgify/lodgify-ui/commit/13ec23e))
+
 # [1.5.0](https://github.com/lodgify/lodgify-ui/compare/v1.4.0...v1.5.0) (2018-06-11)
 
 

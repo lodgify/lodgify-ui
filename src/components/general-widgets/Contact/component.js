@@ -17,6 +17,7 @@ import { CaptchaInput } from 'inputs/CaptchaInput';
 export const Component = ({
   captchaInputImage,
   guestsOptions,
+  onChangeProperty,
   onSubmit,
   propertyOptions,
   roomOptions,
@@ -44,7 +45,12 @@ export const Component = ({
     </InputGroup>
     <TextArea label="Comments" name="comments" />
     <InputGroup>
-      <Dropdown label="Property" name="property" options={propertyOptions} />
+      <Dropdown
+        label="Property"
+        name="property"
+        onChange={onChangeProperty}
+        options={propertyOptions}
+      />
       <Dropdown label="Room" name="room" options={roomOptions} />
     </InputGroup>
     <CaptchaInput
@@ -58,6 +64,7 @@ export const Component = ({
 Component.displayName = 'Contact';
 
 Component.defaultProps = {
+  onChangeProperty: Function.prototype,
   onSubmit: Function.prototype,
 };
 
@@ -73,6 +80,11 @@ Component.propTypes = {
       value: PropTypes.any,
     })
   ).isRequired,
+  /** The function called when the property dropdown is changed.
+   *  @param {String}        name - The name of the property dropdown field.
+   *  @param {String|Number} value - The value of the property dropdown after the change
+   */
+  onChangeProperty: PropTypes.func,
   /** The function to call when the form is submitted
    *  @param {Object} values - The values of the inputs in the form.
    */

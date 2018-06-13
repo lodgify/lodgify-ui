@@ -83,9 +83,9 @@ Component.propTypes = {
   /** An optional action link. */
   actionLink: PropTypes.shape({
     /** The function to call when the secondary call to action is clicked. */
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
     /** The visible text for the secondary call to action */
-    text: PropTypes.string.isRequired,
+    text: PropTypes.node.isRequired,
   }),
   /** The child components and elements. */
   children: PropTypes.node.isRequired,
