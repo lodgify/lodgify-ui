@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/lodgify/lodgify-ui/compare/v1.9.0...v1.10.0) (2018-06-14)
+
+
+### Features
+
+* **Dropdown:** expose isDisabled prop with an example ([2f93277](https://github.com/lodgify/lodgify-ui/commit/2f93277))
+
 # [1.9.0](https://github.com/lodgify/lodgify-ui/compare/v1.8.0...v1.9.0) (2018-06-14)
 
 
