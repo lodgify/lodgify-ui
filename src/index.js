@@ -23,6 +23,12 @@ export { Container } from './components/general-widgets/Container';
 export {
   FeaturedProperty,
 } from './components/general-widgets/FeaturedProperty';
+export {
+  FeaturedRoomType,
+} from './components/general-widgets/FeaturedRoomType';
+export {
+  FeaturedRoomTypes,
+} from './components/general-widgets/FeaturedRoomTypes';
 export { HTML } from './components/general-widgets/HTML';
 export { OwnerLogin } from './components/general-widgets/OwnerLogin';
 export { OwnerSignUp } from './components/general-widgets/OwnerSignUp';

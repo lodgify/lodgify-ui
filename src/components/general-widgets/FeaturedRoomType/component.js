@@ -47,13 +47,17 @@ export const Component = ({
 
 Component.displayName = 'FeaturedRoomType';
 
+Component.defaultProps = {
+  imageAlternativeText: '',
+};
+
 Component.propTypes = {
   /** The number of available beds in the room. */
   bedsNumber: PropTypes.number.isRequired,
   /** The number of guests the room can accommodate. */
   guestsNumber: PropTypes.number.isRequired,
   /** The alternative text for the image to display. */
-  imageAlternativeText: PropTypes.string.isRequired,
+  imageAlternativeText: PropTypes.string,
   /** URL pointing to the image to display. */
   imageUrl: PropTypes.string.isRequired,
   /** The name of the location of the room. */
