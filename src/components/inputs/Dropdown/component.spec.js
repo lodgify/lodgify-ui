@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveProps } from '@lodgify/enzyme-jest-expect-helpers';
 import { Dropdown as SemanticDropdown } from 'semantic-ui-react';
 
 import { Icon } from 'elements/Icon';
@@ -42,6 +43,7 @@ describe('<Dropdown />', () => {
       expect(actual).toEqual(
         expect.objectContaining({
           defaultValue: null,
+          disabled: false,
           icon: <Icon name="caret down" />,
           onBlur: expect.any(Function),
           onChange: expect.any(Function),
@@ -51,6 +53,15 @@ describe('<Dropdown />', () => {
           selection: true,
         })
       );
+    });
+
+    describe('if `isDisabled` prop is passed', () => {
+      it('should have the right props', () => {
+        const wrapper = getDropdown({ isDisabled: true }).find(
+          SemanticDropdown
+        );
+        expectComponentToHaveProps(wrapper, { disabled: true });
+      });
     });
 
     it('should not render a `label` as a child', () => {
