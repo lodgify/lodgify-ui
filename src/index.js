@@ -21,6 +21,9 @@ export { CallMeBack } from './components/general-widgets/CallMeBack';
 export { Contact } from './components/general-widgets/Contact';
 export { Container } from './components/general-widgets/Container';
 export {
+  FeaturedProperties,
+} from './components/general-widgets/FeaturedProperties';
+export {
   FeaturedProperty,
 } from './components/general-widgets/FeaturedProperty';
 export {
