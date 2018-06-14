@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/lodgify/lodgify-ui/compare/v1.7.2...v1.8.0) (2018-06-14)
+
+
+### Bug Fixes
+
+* **FeaturedRoomType:** remove .isRequired from props.imageAlternativeText ([a830b55](https://github.com/lodgify/lodgify-ui/commit/a830b55))
+
+
+### Features
+
+* **FeaturedRoomTypes:** add component with examples and expose to the api ([dafb440](https://github.com/lodgify/lodgify-ui/commit/dafb440))
+
 ## [1.7.2](https://github.com/lodgify/lodgify-ui/compare/v1.7.1...v1.7.2) (2018-06-13)
 
 
