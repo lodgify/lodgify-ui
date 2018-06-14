@@ -67,7 +67,9 @@ export { Video } from './components/media/Video';
 // Property Page Widgets
 export { Amenities } from './components/property-page-widgets/Amenities';
 export { Description } from './components/property-page-widgets/Description';
-export { Footer } from './components/property-page-widgets/Footer';
+export {
+  PropertySearchBar,
+} from './components/property-page-widgets/PropertySearchBar';
 export { HostProfile } from './components/property-page-widgets/HostProfile';
 export { KeyFacts } from './components/property-page-widgets/KeyFacts';
 export { Location } from './components/property-page-widgets/Location';
