@@ -42,7 +42,7 @@ export class Component extends PureComponent {
 
   render() {
     const { isOpen, value } = this.state;
-    const { label, options, icon } = this.props;
+    const { icon, isDisabled, label, options } = this.props;
     const optionsWithImages = adaptOptions(options);
     const defaultValue = getDefaultValue(optionsWithImages);
     return (
@@ -56,6 +56,7 @@ export class Component extends PureComponent {
         {!optionsWithImages && icon && <Icon name={icon} />}
         <Dropdown
           defaultValue={defaultValue}
+          disabled={isDisabled}
           icon={<Icon name="caret down" />}
           onBlur={() => this.handleOpen(false)}
           onChange={this.handleChange}
@@ -74,15 +75,18 @@ export class Component extends PureComponent {
 Component.displayName = 'Dropdown';
 
 Component.defaultProps = {
+  isDisabled: false,
+  icon: null,
   label: '',
   name: '',
   onChange: Function.prototype,
-  icon: null,
 };
 
 Component.propTypes = {
   /** Icon for the dropdown. Not displayed if options have images. */
   icon: PropTypes.string,
+  /** A disabled dropdown does not allow user interaction. */
+  isDisabled: PropTypes.bool,
   /** The label for the dropdown. Not displayed if options have images. */
   label: PropTypes.string,
   /** The name for the dropdown. */
