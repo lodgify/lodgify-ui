@@ -21,7 +21,7 @@ export const Component = ({
   navigationItems,
   primaryCTA,
 }) => (
-  <Menu borderless>
+  <Menu borderless className="is-header">
     <Menu.Item href="/" link>
       {logoSrc ? (
         <Image alt={logoText} src={logoSrc} />

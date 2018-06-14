@@ -11,15 +11,24 @@
 .ui.menu {
 
   /* Menu Item */
-  .item {
-    margin: 0 @itemHorizontalMargin;
+  &.is-header {
 
-    &:first-child {
-      margin-left: @menuHorizontalMargin;
-    }
+    .item {
+      color: @headerMenuItemTextColor;
+      margin: 0 @headerMenuItemHorizontalMargin;
+      padding: @headerMenuItemVerticalPadding 0;
 
-    &:last-child {
-      margin-right: @menuHorizontalMargin;
+      &:hover {
+        color: @headerMenuItemTextColor;
+      }
+
+      &:first-child {
+        margin-left: @headerMenuHorizontalMargin;
+      }
+
+      &:last-child {
+        margin-right: @headerMenuHorizontalMargin;
+      }
     }
   }
 
