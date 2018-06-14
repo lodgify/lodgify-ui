@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/lodgify/lodgify-ui/compare/v1.8.0...v1.9.0) (2018-06-14)
+
+
+### Features
+
+* **FeaturedProperties:** add component and examples and expose to api ([c646228](https://github.com/lodgify/lodgify-ui/commit/c646228))
+
 # [1.8.0](https://github.com/lodgify/lodgify-ui/compare/v1.7.2...v1.8.0) (2018-06-14)
 
 
