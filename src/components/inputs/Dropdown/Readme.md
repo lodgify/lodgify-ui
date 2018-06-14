@@ -10,6 +10,16 @@ const { options } = require('./mock-data/options');
 <Dropdown label="Location" options={options} />;
 ```
 
+### States
+
+#### Disabled
+
+```jsx
+const { options } = require('./mock-data/options');
+
+<Dropdown isDisabled label="Location" options={options} />
+```
+
 ### Variations
 
 #### Icon
