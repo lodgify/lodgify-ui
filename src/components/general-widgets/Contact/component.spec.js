@@ -1,6 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveChildren } from '@lodgify/enzyme-jest-expect-helpers';
+import { expectComponentToHaveProps } from '@lodgify/enzyme-jest-expect-helpers/lib/expectComponentToHaveProps';
 
+import { TextInput } from 'inputs/TextInput';
 import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
 import { DateRangePicker } from 'inputs/DateRangePicker';
@@ -118,16 +121,9 @@ describe('<Contact />', () => {
   });
 
   describe('the second `InputGroup`', () => {
-    it('should a `DateRangePicker` as first child', () => {
+    it('should render the right children', () => {
       const wrapper = getSecondInputGroup();
-      const actual = wrapper.children(DateRangePicker);
-      expect(actual).toHaveLength(1);
-    });
-
-    it('should a `Dropdown` as second child', () => {
-      const wrapper = getSecondInputGroup();
-      const actual = wrapper.children(Dropdown);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, DateRangePicker, TextInput);
     });
   });
 
@@ -146,19 +142,15 @@ describe('<Contact />', () => {
     });
   });
 
-  describe('the Guests `Dropdown`', () => {
+  describe('the Guests `TextInput`', () => {
     it('should have the right props', () => {
-      const wrapper = getSecondInputGroup();
-      const actual = wrapper.childAt(1).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          icon: 'users',
-          label: 'Guests',
-          name: 'guests',
-          options: options.guestsOptions,
-          width: 'four',
-        })
-      );
+      const wrapper = getSecondInputGroup().find(TextInput);
+      expectComponentToHaveProps(wrapper, {
+        label: 'Guests',
+        name: 'guests',
+        type: 'number',
+        width: 'four',
+      });
     });
   });
 
