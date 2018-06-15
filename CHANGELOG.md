@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/lodgify/lodgify-ui/compare/v1.10.0...v1.10.1) (2018-06-15)
+
+
+### Bug Fixes
+
+* **Dropdown:** remove isRequired from options prop ([eca5b98](https://github.com/lodgify/lodgify-ui/commit/eca5b98))
+
 # [1.10.0](https://github.com/lodgify/lodgify-ui/compare/v1.9.0...v1.10.0) (2018-06-14)
 
 
