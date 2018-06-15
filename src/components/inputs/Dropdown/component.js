@@ -56,7 +56,7 @@ export class Component extends PureComponent {
         {!optionsWithImages && icon && <Icon name={icon} />}
         <Dropdown
           defaultValue={defaultValue}
-          disabled={isDisabled}
+          disabled={isDisabled || !options.length}
           icon={<Icon name="caret down" />}
           onBlur={() => this.handleOpen(false)}
           onChange={this.handleChange}
@@ -80,6 +80,7 @@ Component.defaultProps = {
   label: '',
   name: '',
   onChange: Function.prototype,
+  options: [],
 };
 
 Component.propTypes = {
@@ -93,7 +94,7 @@ Component.propTypes = {
   name: PropTypes.string,
   /** A function called when the dropdown value changes. */
   onChange: PropTypes.func,
-  /** The options which the user can select. */
+  /** The options which the user can select. Dropdown is disabled if options is an empty array. */
   options: PropTypes.arrayOf(
     PropTypes.shape({
       /** The source url for the image to display with the option. */
@@ -103,5 +104,5 @@ Component.propTypes = {
       /** The underlying value for the option. */
       value: PropTypes.any,
     })
-  ).isRequired,
+  ),
 };
