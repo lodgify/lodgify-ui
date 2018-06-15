@@ -12,8 +12,7 @@ const OPTIONS_WITH_IMAGES = [
   { text: 'someText', value: 'someValue', image: 'someImage' },
 ];
 
-const getDropdown = extraProps =>
-  shallow(<Dropdown options={OPTIONS} {...extraProps} />);
+const getDropdown = extraProps => shallow(<Dropdown {...extraProps} />);
 const getDropdownContainer = extraProps =>
   getDropdown(extraProps).find('div.dropdown-container');
 
@@ -25,6 +24,9 @@ describe('<Dropdown />', () => {
   });
 
   describe('the `div.dropdown-container`', () => {
+    const getSemanticDropdown = extraProps =>
+      getDropdown(extraProps).find(SemanticDropdown);
+
     it('should not render an `Icon`', () => {
       const wrapper = getDropdownContainer();
       const actual = wrapper.children(Icon);
@@ -38,28 +40,45 @@ describe('<Dropdown />', () => {
     });
 
     it('should pass the right props to `Dropdown`', () => {
-      const wrapper = getDropdownContainer();
-      const actual = wrapper.children(SemanticDropdown).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          defaultValue: null,
+      const wrapper = getSemanticDropdown(SemanticDropdown);
+      expectComponentToHaveProps(wrapper, {
+        defaultValue: null,
+        icon: <Icon name="caret down" />,
+        onBlur: expect.any(Function),
+        onChange: expect.any(Function),
+        onClick: expect.any(Function),
+        open: false,
+        options: expect.any(Array),
+        selection: true,
+      });
+    });
+
+    describe('if `options` prop is passed and has a length', () => {
+      it('should have the right props', () => {
+        const wrapper = getSemanticDropdown({
+          options: OPTIONS,
+        });
+        expectComponentToHaveProps(wrapper, {
           disabled: false,
-          icon: <Icon name="caret down" />,
-          onBlur: expect.any(Function),
-          onChange: expect.any(Function),
-          onClick: expect.any(Function),
-          open: false,
-          options: expect.arrayContaining([expect.any(Object)]),
-          selection: true,
-        })
-      );
+        });
+      });
+    });
+
+    describe('if `options` and `isDisabled` props are passed', () => {
+      it('should have the right props', () => {
+        const wrapper = getSemanticDropdown({
+          isDisabled: true,
+          options: OPTIONS,
+        });
+        expectComponentToHaveProps(wrapper, { disabled: true });
+      });
     });
 
     describe('if `isDisabled` prop is passed', () => {
       it('should have the right props', () => {
-        const wrapper = getDropdown({ isDisabled: true }).find(
-          SemanticDropdown
-        );
+        const wrapper = getSemanticDropdown({
+          isDisabled: true,
+        });
         expectComponentToHaveProps(wrapper, { disabled: true });
       });
     });
