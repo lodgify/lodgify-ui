@@ -16,7 +16,6 @@ import { CaptchaInput } from 'inputs/CaptchaInput';
  */
 export const Component = ({
   captchaInputImage,
-  guestsOptions,
   onChangeProperty,
   onSubmit,
   propertyOptions,
@@ -35,13 +34,7 @@ export const Component = ({
         startDatePlaceholderText="Arrival"
         width="eight"
       />
-      <Dropdown
-        icon="users"
-        label="Guests"
-        name="guests"
-        options={guestsOptions}
-        width="four"
-      />
+      <TextInput label="Guests" name="guests" type="number" width="four" />
     </InputGroup>
     <TextArea label="Comments" name="comments" />
     <InputGroup>
@@ -66,20 +59,12 @@ Component.displayName = 'Contact';
 Component.defaultProps = {
   onChangeProperty: Function.prototype,
   onSubmit: Function.prototype,
+  roomOptions: undefined,
 };
 
 Component.propTypes = {
   /** The source url for the image to display. */
   captchaInputImage: PropTypes.string.isRequired,
-  /** The options which the user can select for the guests field. */
-  guestsOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.any,
-    })
-  ).isRequired,
   /** The function called when the property dropdown is changed.
    *  @param {String}        name - The name of the property dropdown field.
    *  @param {String|Number} value - The value of the property dropdown after the change
@@ -106,5 +91,5 @@ Component.propTypes = {
       /** The underlying value for the option. */
       value: PropTypes.any,
     })
-  ).isRequired,
+  ),
 };
