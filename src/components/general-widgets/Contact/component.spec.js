@@ -1,13 +1,20 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveChildren } from '@lodgify/enzyme-jest-expect-helpers';
-import { expectComponentToHaveProps } from '@lodgify/enzyme-jest-expect-helpers/lib/expectComponentToHaveProps';
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
-import { TextInput } from 'inputs/TextInput';
-import { Form } from 'collections/Form';
-import { InputGroup } from 'collections/InputGroup';
+import { CaptchaInput } from 'inputs/CaptchaInput';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { Dropdown } from 'inputs/Dropdown';
+import { Form } from 'collections/Form';
+import { InputGroup } from 'collections/InputGroup';
+import { PhoneInput } from 'inputs/PhoneInput';
+import { TextArea } from 'inputs/TextArea';
+import { TextInput } from 'inputs/TextInput';
 
 import * as options from './mock-data/options';
 import { Component as Contact } from './component';
@@ -17,134 +24,107 @@ const captchaInputImage = 'someImage';
 const getContact = () =>
   shallow(<Contact captchaInputImage={captchaInputImage} {...options} />);
 const getForm = () => getContact().find(Form);
-const getFirstInputGroup = () =>
-  getContact()
-    .find(InputGroup)
-    .first();
-const getSecondInputGroup = () =>
-  getContact()
-    .find(InputGroup)
-    .at(1);
-const getThirdInputGroup = () =>
-  getContact()
-    .find(InputGroup)
-    .at(2);
 
 describe('<Contact />', () => {
   it('should render a single Lodgify UI `Form` component', () => {
     const wrapper = getContact();
-    const actual = wrapper.find(Form);
-    expect(actual).toHaveLength(1);
+    expectComponentToBe(wrapper, Form);
   });
 
   describe('the `Form` component', () => {
     it('should have the right props', () => {
       const wrapper = getForm();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          headingText: 'Contact',
-          onSubmit: Function.prototype,
-          submitButtonText: 'Send',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        headingText: 'Contact',
+        onSubmit: Function.prototype,
+        submitButtonText: 'Send',
+      });
     });
 
     it('should render the right children', () => {
-      const children = [
-        'InputGroup',
-        'TextInput',
-        'InputGroup',
-        'TextArea',
-        'InputGroup',
-        'CaptchaInput',
-      ];
       const wrapper = getForm();
-      children.forEach((child, index) => {
-        const actual = wrapper.childAt(index).name();
-        expect(actual).toBe(child);
-      });
+      expectComponentToHaveChildren(
+        wrapper,
+        InputGroup,
+        TextInput,
+        InputGroup,
+        TextArea,
+        InputGroup,
+        CaptchaInput
+      );
     });
   });
 
   describe('the first `InputGroup`', () => {
-    it('should render the Name `TextInput` as first child', () => {
-      const wrapper = getFirstInputGroup();
-      const actual = wrapper.childAt(0).name();
-      expect(actual).toBe('TextInput');
-    });
-
-    it('should render the Phone `PhoneInput` as first child', () => {
-      const wrapper = getFirstInputGroup();
-      const actual = wrapper.childAt(1).name();
-      expect(actual).toBe('PhoneInput');
+    it('should render the right children', () => {
+      const wrapper = getForm()
+        .find(InputGroup)
+        .first();
+      expectComponentToHaveChildren(wrapper, TextInput, PhoneInput);
     });
   });
 
   describe('the Name `TextInput`', () => {
     it('should have the right props', () => {
-      const wrapper = getFirstInputGroup();
-      const actual = wrapper.childAt(0).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Name',
-          name: 'name',
-        })
-      );
+      const wrapper = getForm()
+        .find(TextInput)
+        .at(0);
+      expectComponentToHaveProps(wrapper, {
+        label: 'Name',
+        name: 'name',
+      });
     });
   });
 
   describe('the Phone `PhoneInput`', () => {
     it('should have the right props', () => {
-      const wrapper = getFirstInputGroup();
-      const actual = wrapper.childAt(1).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Phone',
-          name: 'phone',
-        })
-      );
+      const wrapper = getForm().find(PhoneInput);
+      expectComponentToHaveProps(wrapper, {
+        label: 'Phone',
+        name: 'phone',
+      });
     });
   });
 
   describe('the Email `TextInput`', () => {
     it('should have the right props', () => {
-      const wrapper = getForm();
-      const actual = wrapper.childAt(1).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Email',
-          name: 'email',
-        })
-      );
+      const wrapper = getForm()
+        .find(TextInput)
+        .at(1);
+      expectComponentToHaveProps(wrapper, {
+        label: 'Email',
+        name: 'email',
+      });
     });
   });
 
   describe('the second `InputGroup`', () => {
     it('should render the right children', () => {
-      const wrapper = getSecondInputGroup();
+      const wrapper = getForm()
+        .find(InputGroup)
+        .at(1);
       expectComponentToHaveChildren(wrapper, DateRangePicker, TextInput);
     });
   });
 
   describe('the `DateRangePicker`', () => {
     it('should have the right props', () => {
-      const wrapper = getSecondInputGroup();
-      const actual = wrapper.childAt(0).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          endDatePlaceholderText: 'Departure',
-          name: 'dates',
-          startDatePlaceholderText: 'Arrival',
-          width: 'eight',
-        })
-      );
+      const wrapper = getForm().find(DateRangePicker);
+      expectComponentToHaveProps(wrapper, {
+        endDatePlaceholderText: 'Departure',
+        name: 'dates',
+        startDatePlaceholderText: 'Arrival',
+        width: 'eight',
+      });
     });
   });
 
   describe('the Guests `TextInput`', () => {
     it('should have the right props', () => {
-      const wrapper = getSecondInputGroup().find(TextInput);
+      const wrapper = getForm()
+        .find(InputGroup)
+        .at(1)
+        .find(TextInput);
       expectComponentToHaveProps(wrapper, {
         label: 'Guests',
         name: 'guests',
@@ -156,70 +136,63 @@ describe('<Contact />', () => {
 
   describe('the Comments `TextArea`', () => {
     it('should have the right props', () => {
-      const wrapper = getForm();
-      const actual = wrapper.childAt(3).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Comments',
-          name: 'comments',
-        })
-      );
+      const wrapper = getForm().find(TextArea);
+      expectComponentToHaveProps(wrapper, {
+        label: 'Comments',
+        name: 'comments',
+      });
     });
   });
 
   describe('the third `InputGroup`', () => {
     it('should render two `Dropdown`s', () => {
-      const wrapper = getThirdInputGroup();
-      const actual = wrapper.children(Dropdown);
-      expect(actual).toHaveLength(2);
+      const wrapper = getForm()
+        .find(InputGroup)
+        .at(2);
+      expectComponentToHaveChildren(wrapper, Dropdown, Dropdown);
     });
   });
 
   describe('the Property `Dropdown`', () => {
     it('should have the right props', () => {
-      const wrapper = getThirdInputGroup();
-      const actual = wrapper.childAt(0).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Property',
-          name: 'property',
-          onChange: Function.prototype,
-          options: options.propertyOptions,
-        })
-      );
+      const wrapper = getForm()
+        .find(InputGroup)
+        .at(2)
+        .childAt(0);
+      expectComponentToHaveProps(wrapper, {
+        label: 'Property',
+        name: 'property',
+        options: options.propertyOptions,
+      });
     });
   });
 
   describe('the Room `Dropdown`', () => {
     it('should have the right props', () => {
-      const wrapper = getThirdInputGroup();
-      const actual = wrapper.childAt(1).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          label: 'Room',
-          name: 'room',
-          options: options.roomOptions,
-        })
-      );
+      const wrapper = getForm()
+        .find(InputGroup)
+        .at(2)
+        .childAt(1);
+      expectComponentToHaveProps(wrapper, {
+        label: 'Room',
+        name: 'room',
+        options: options.roomOptions,
+      });
     });
   });
 
   describe('the `CaptchaInput`', () => {
     it('should have the right props', () => {
-      const wrapper = getForm();
-      const actual = wrapper.childAt(5).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          image: captchaInputImage,
-          label: 'Security Code',
-          name: 'captcha',
-        })
-      );
+      const wrapper = getForm().find(CaptchaInput);
+      expectComponentToHaveProps(wrapper, {
+        image: captchaInputImage,
+        label: 'Security Code',
+        name: 'captcha',
+      });
     });
   });
 
   it('should have `displayName` `Contact`', () => {
-    const actual = Contact.displayName;
-    expect(actual).toBe('Contact');
+    expectComponentToHaveDisplayName(Contact, 'Contact');
   });
 });
