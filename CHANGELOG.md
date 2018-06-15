@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/lodgify/lodgify-ui/compare/v1.10.1...v1.10.2) (2018-06-15)
+
+
+### Bug Fixes
+
+* **Contact:** remove isRequired from roomOptions and change guest Dropdown to TextInput ([4a6087b](https://github.com/lodgify/lodgify-ui/commit/4a6087b))
+
 ## [1.10.1](https://github.com/lodgify/lodgify-ui/compare/v1.10.0...v1.10.1) (2018-06-15)
 
 
