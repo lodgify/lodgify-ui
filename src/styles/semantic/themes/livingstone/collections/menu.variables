@@ -10,15 +10,26 @@
 @background: transparent;
 @headerMenuHorizontalMargin: 92px;
 
+@footerMenuVerticalPadding: @30px;
+@footerMenuHorizontalPadding: @35px;
+
 /* Menu Item */
 // Need to use margin rather than padding to implement 'active' state bottom border
 @headerMenuItemHorizontalMargin: @15px;
 @headerMenuItemVerticalPadding: @35px;
 @headerMenuItemTextColor: @pureWhite;
 
+@footerMenuItemVerticalPadding: @8px;
+@footerMenuItemHorizontalPadding: @footerMenuHorizontalPadding;
+
+@footerBottomMenuColor: @greySix;
+
 /* Divider */
+@footerBottomMenuDividerWidth: 100%;
 
 /* Sub Menu */
+@footerTopMenuHeadingFontWeight: bold;
+@footerTopMenuHeadingVerticalPadding: @footerMenuItemVerticalPadding;
 
 /* Text Item */
 
@@ -148,6 +159,10 @@
 /* Inverted Sub Menu */
 
 /* Inverted Hover */
+@invertedHoverBackground: @invertedBackground;
+@invertedHoverColor: @invertedItemTextColor;
+
+@footerBottomBackground: @greyEight;
 
 /* Pressed */
 

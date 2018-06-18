@@ -10,9 +10,10 @@
 
 .ui.menu {
 
-  /* Menu Item */
+  /* Header */
   &.is-header {
 
+    /* Menu Item */
     .item {
       color: @headerMenuItemTextColor;
       margin: 0 @headerMenuItemHorizontalMargin;
@@ -32,9 +33,64 @@
     }
   }
 
-  /* Divider */
+  /* Footer */
+  .is-footer > & {
+    margin: 0;
+    padding: @footerMenuVerticalPadding @footerMenuHorizontalPadding;
 
-  /* Sub Menu */
+    /* Menu Item */
+    & .item {
+      padding:
+        @footerMenuItemVerticalPadding
+        @footerMenuItemHorizontalPadding
+        @footerMenuItemVerticalPadding
+        0;
+    }
+
+    &:first-child {
+
+      /* Menu Item */
+      & .item {
+        align-items: flex-start;
+      }
+
+      /* Sub Menu */
+      .menu {
+
+        .header {
+          font-weight: @footerTopMenuHeadingFontWeight;
+          padding: @footerTopMenuHeadingVerticalPadding 0;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      flex-wrap: wrap;
+
+      /* Menu Item */
+      .item {
+        color: @footerBottomMenuColor;
+      }
+
+      .right.menu {
+        flex-direction: row;
+
+        .item {
+          flex: 0;
+          padding-right: 0;
+        }
+      }
+
+      .right.item {
+        padding-right: 0;
+      }
+
+      /* Divider */
+      .ui.divider {
+        width: @footerBottomMenuDividerWidth;
+      }
+    }
+  }
 
   /* Text Item */
 
@@ -93,26 +149,30 @@
   /* Pressed Item */
 
   /* Active Item */
-  .right.menu {
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  &.is-header {
 
-    & > .item:not(.no-underline):after {
-      border-bottom: @activeItemUnderlineBorder;
-      bottom: @activeItemUnderlineBottomPosition;
-      content: '';
-      left: 0;
-      opacity: 0.2;
-      position: absolute;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: @activeItemUnderlineTransition;
-      width: 100%;
-    }
+    .right.menu {
 
-    & > .active.item:after,
-    & > .underlined.item:after,
-    & > .item:hover:after {
-      opacity: 1;
-      transform: scaleX(1);
+      & > .item:not(.no-underline):after {
+        border-bottom: @activeItemUnderlineBorder;
+        bottom: @activeItemUnderlineBottomPosition;
+        content: '';
+        left: 0;
+        opacity: 0.2;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: @activeItemUnderlineTransition;
+        width: 100%;
+      }
+
+      & > .active.item:after,
+      & > .underlined.item:after,
+      & > .item:hover:after {
+        opacity: 1;
+        transform: scaleX(1);
+      }
     }
   }
 
@@ -247,10 +307,17 @@
 ---------------*/
 
 /* Inverted */
+.ui.inverted.grey.menu {
+  background-color: @footerBottomBackground;
 
-/* Inverted Sub Menu */
+  /* Inverted Sub Menu */
 
-/* Inverted Hover */
+  /* Inverted Hover */
+  .item:hover {
+    background-color: @footerBottomBackground;
+    color: @footerBottomMenuColor;
+  }
+}
 
 /* Pressed */
 
