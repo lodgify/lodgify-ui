@@ -33,7 +33,7 @@ export class Component extends PureComponent {
       children: React.cloneElement(input, {
         onChange: (name, value) => {
           this.persistInputChange(name, value);
-          input.props.onChange(name, value);
+          input.props.onChange && input.props.onChange(name, value);
         },
       }),
       width: getInputWidth(input),
