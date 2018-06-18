@@ -353,6 +353,13 @@
   }
 
   /* Dirty */
+  &.dirty {
+
+    i.icon {
+      opacity: @iconFocusOpacity;
+    }
+  }
+
   &.dirty:not(.error):not(.valid) {
 
     input,
