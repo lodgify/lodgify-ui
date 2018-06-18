@@ -4,7 +4,9 @@ import { Dropdown } from 'semantic-ui-react';
 
 import { Icon } from 'elements/Icon';
 
-import { adaptOptions } from './adaptOptions';
+import { getDefaultValue } from './utils/getDefaultValue';
+import { adaptOnChange } from './utils/adaptOnChange';
+import { adaptOptions } from './utils/adaptOptions';
 
 /**
  * A submenu displays grouped navigation items.
@@ -16,29 +18,40 @@ export const Component = ({
   isTriggeredOnHover,
   isTriggerUnderlined,
   items,
+  name,
+  onChange,
+  willOpenAbove,
 }) => (
   <Dropdown
     className={isTriggerUnderlined ? 'underlined' : ''}
+    defaultValue={getDefaultValue(children, items)}
     icon={<Icon name="caret down" size="small" />}
     item={isMenuItem}
+    name={name}
+    onChange={adaptOnChange(onChange, name)}
     options={adaptOptions(items)}
     pointing="top"
     simple={isTriggeredOnHover}
     trigger={children}
+    upward={willOpenAbove}
   />
 );
 
 Component.displayName = 'Submenu';
 
 Component.defaultProps = {
+  children: null,
   isMenuItem: false,
   isTriggeredOnHover: false,
   isTriggerUnderlined: false,
+  name: null,
+  onChange: Function.prototype,
+  willOpenAbove: false,
 };
 
 Component.propTypes = {
   /** The clickable text to open the submenu.  */
-  children: PropTypes.string.isRequired,
+  children: PropTypes.string,
   /** Is it an item in a Semantic UI Menu.  */
   isMenuItem: PropTypes.bool,
   /** Is the trigger underlined for emphasis.  */
@@ -48,10 +61,18 @@ Component.propTypes = {
   /** The items the user can see in the submenu. */
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      /** The url for the item. */
-      href: PropTypes.string.isRequired,
+      /** The url for a link item. */
+      href: PropTypes.string,
       /** The visible text for the item. */
-      text: PropTypes.string.isRequired,
+      text: PropTypes.string,
+      /** The underlying value for the item. */
+      value: PropTypes.string,
     })
   ).isRequired,
+  /** The name of submenu, used when `props.onChange` is called. */
+  name: PropTypes.string,
+  /** A function called when the dropdown value changes. */
+  onChange: PropTypes.func,
+  /** Will the submenu open above the input. */
+  willOpenAbove: PropTypes.bool,
 };
