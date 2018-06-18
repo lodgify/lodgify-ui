@@ -1,4 +1,5 @@
 // Collections
+export { Footer } from './components/collections/Footer';
 export { Form } from './components/collections/Form';
 export { Header } from './components/collections/Header';
 export { InputGroup } from './components/collections/InputGroup';
