@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/lodgify/lodgify-ui/compare/v1.10.2...v1.10.3) (2018-06-18)
+
+
+### Bug Fixes
+
+* **Dropdown:** fix missing case for isDisabled ([44e69b8](https://github.com/lodgify/lodgify-ui/commit/44e69b8))
+
 ## [1.10.2](https://github.com/lodgify/lodgify-ui/compare/v1.10.1...v1.10.2) (2018-06-15)
 
 
