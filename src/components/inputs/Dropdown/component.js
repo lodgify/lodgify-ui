@@ -7,6 +7,7 @@ import { Icon } from 'elements/Icon';
 
 import { adaptOptions } from './utils/adaptOptions';
 import { getDefaultValue } from './utils/getDefaultValue';
+import { getHasImages } from './utils/getHasImages';
 
 /**
  * A dropdown allows a user to select a value from a series of options.
@@ -43,29 +44,30 @@ export class Component extends PureComponent {
   render() {
     const { isOpen, value } = this.state;
     const { icon, isDisabled, label, options } = this.props;
-    const optionsWithImages = adaptOptions(options);
-    const defaultValue = getDefaultValue(optionsWithImages);
+    const hasImages = getHasImages(options);
+    const adaptedOptions = adaptOptions(options, hasImages);
+    const defaultValue = getDefaultValue(adaptedOptions, hasImages, !!label);
     return (
       <div
         className={getClassNames('dropdown-container', {
           dirty: value,
-          'has-images': optionsWithImages,
+          'has-images': hasImages,
           focus: isOpen,
         })}
       >
-        {!optionsWithImages && icon && <Icon name={icon} />}
+        {!hasImages && icon && <Icon name={icon} />}
         <Dropdown
           defaultValue={defaultValue}
-          disabled={isDisabled || !options.length}
+          disabled={isDisabled || !adaptedOptions.length}
           icon={<Icon name="caret down" />}
           onBlur={() => this.handleOpen(false)}
           onChange={this.handleChange}
           onClick={() => this.handleOpen(!isOpen)}
           open={isOpen}
-          options={optionsWithImages || options}
+          options={adaptedOptions}
           selection
         />
-        {!optionsWithImages &&
+        {!hasImages &&
           label && <label onClick={() => this.handleOpen(true)}>{label}</label>}
       </div>
     );

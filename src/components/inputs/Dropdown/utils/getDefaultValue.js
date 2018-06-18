@@ -1,8 +1,18 @@
 /**
- * If the options have images, return the first option.
- * If the options have no images, return null.
- * @param  {Object} optionsWithImages
+ * @param  {Object[]} options
+ * @param  {Boolean} hasImages
+ * @param  {Boolean} hasLabel
  * @return {String|Number|null}
  */
-export const getDefaultValue = optionsWithImages =>
-  optionsWithImages ? optionsWithImages[0].value : null;
+export const getDefaultValue = (options, hasImages, hasLabel) => {
+  /**
+   * If
+   * 1. there is at least one option, and
+   * 2. one or more of the options has an image, or
+   * 3. the Dropdown does not have a label
+   */
+  if (options.length && (hasImages || !hasLabel)) {
+    return options[0].value;
+  }
+  return null;
+};
