@@ -1,20 +1,31 @@
 import { getDefaultValue } from './getDefaultValue';
 
 describe('getDefaultValue', () => {
-  describe('if passed an options object', () => {
+  describe('if `hasImages` equals true or `hasLabel` equals false', () => {
     it('should return the `value` property of the first index', () => {
-      const optionsWithImages = [
-        { value: 'firstValue' },
-        { value: 'secondValue' },
+      const options = [
+        { value: 'firstSafeValue' },
+        { value: 'secondSafeValue' },
       ];
-      const actual = getDefaultValue(optionsWithImages);
-      expect(actual).toBe(optionsWithImages[0].value);
+      const actual = getDefaultValue(options, true, false);
+      expect(actual).toBe(options[0].value);
     });
   });
 
-  describe('if passed undefined', () => {
+  describe('if `hasImages` equals false or `hasLabel` equal true', () => {
     it('should return null', () => {
-      const actual = getDefaultValue(undefined);
+      const options = [
+        { value: 'firstGeezValue' },
+        { value: 'secondGeezValue' },
+      ];
+      const actual = getDefaultValue(options, false, true);
+      expect(actual).toBe(null);
+    });
+  });
+
+  describe('if `options` is an empty array', () => {
+    it('should return null', () => {
+      const actual = getDefaultValue([], false, false);
       expect(actual).toBe(null);
     });
   });
