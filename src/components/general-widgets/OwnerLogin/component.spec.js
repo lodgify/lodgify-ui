@@ -1,53 +1,68 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
 
 import { Component as OwnerLogin } from './component';
+import { getForgotPasswordFormMarkup } from './utils/getForgotPasswordFormMarkup';
+
+const getOwnerLogin = () => shallow(<OwnerLogin />);
 
 describe('<OwnerLogin />', () => {
   it('should render a single Lodgify UI `Form` component', () => {
-    const ownerLogin = shallow(<OwnerLogin />);
-    const actual = ownerLogin.find(Form);
-    expect(actual).toHaveLength(1);
+    const wrapper = getOwnerLogin();
+    expectComponentToBe(wrapper, Form);
   });
 
   describe('the `Form` component', () => {
-    it('should have the right props', () => {
-      const form = shallow(<OwnerLogin />).find(Form);
-      const actual = form.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          actionLink: expect.objectContaining({
-            text: expect.any(Object),
-          }),
-          headingText: 'Owner Login',
-          onSubmit: Function.prototype,
-          submitButtonText: 'Log in',
-        })
-      );
+    it('should have the right children', () => {
+      const wrapper = getOwnerLogin().find(Form);
+      expectComponentToHaveChildren(wrapper, TextInput, TextInput);
     });
 
-    it('should render three Lodgify UI `TextInput` components', () => {
-      const form = shallow(<OwnerLogin />).find(Form);
-      const actual = form.find(TextInput);
-      expect(actual).toHaveLength(2);
+    it('should have the right props', () => {
+      const wrapper = getOwnerLogin().find(Form);
+      expectComponentToHaveProps(wrapper, {
+        actionLink: {
+          text: getForgotPasswordFormMarkup(Function.prototype),
+        },
+        headingText: 'Owner Login',
+        onSubmit: Function.prototype,
+        submitButtonText: 'Log in',
+      });
     });
   });
 
-  describe('the `TextInput` components', () => {
+  describe('the first `TextInput` component', () => {
     it('should have the right props', () => {
-      const form = shallow(<OwnerLogin />).find(Form);
-      const textInputs = form.find(TextInput);
-      const propSets = [
-        { label: 'Email', name: 'email' },
-        { label: 'Password', name: 'password', type: 'password' },
-      ];
-      textInputs.forEach((textInput, index) => {
-        const actual = textInput.props();
-        expect(actual).toEqual(expect.objectContaining(propSets[index]));
+      const wrapper = getOwnerLogin()
+        .find(TextInput)
+        .at(0);
+      expectComponentToHaveProps(wrapper, { label: 'Email', name: 'email' });
+    });
+  });
+
+  describe('the second `TextInput` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getOwnerLogin()
+        .find(TextInput)
+        .at(1);
+      expectComponentToHaveProps(wrapper, {
+        label: 'Password',
+        name: 'password',
+        type: 'password',
       });
     });
+  });
+
+  it('should have `displayName` `OwnerLogin`', () => {
+    expectComponentToHaveDisplayName(OwnerLogin, 'OwnerLogin');
   });
 });
