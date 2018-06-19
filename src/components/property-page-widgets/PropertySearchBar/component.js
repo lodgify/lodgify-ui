@@ -5,7 +5,7 @@ import { Button } from 'elements/Button';
 import { SearchBar } from 'general-widgets/SearchBar';
 
 /**
- * The standard widget displaying the summary and search bar as the footer of a property page.
+ * The standard widget allowing a user to search availability for a specific property.
  * @returns {Object}
  */
 export const Component = ({
@@ -25,7 +25,7 @@ export const Component = ({
   />
 );
 
-Component.displayName = 'Footer';
+Component.displayName = 'PropertySearchBar';
 
 Component.defaultProps = {
   onSubmit: Function.prototype,

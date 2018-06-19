@@ -21,13 +21,17 @@ describe('<Submenu />', () => {
       const actual = submenu.find('Dropdown').props();
       expect(actual).toEqual(
         expect.objectContaining({
+          defaultValue: null,
           icon: <Icon name="caret down" size="small" />,
           item: false,
+          name: null,
+          onChange: expect.any(Function),
           simple: false,
           className: '',
           options: expect.arrayContaining([expect.any(Object)]),
           pointing: 'top',
           trigger: children,
+          upward: false,
         })
       );
     });
