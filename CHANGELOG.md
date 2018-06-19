@@ -1,3 +1,10 @@
+## [1.10.5](https://github.com/lodgify/lodgify-ui/compare/v1.10.4...v1.10.5) (2018-06-19)
+
+
+### Bug Fixes
+
+* **Form:** add check for input.props.onChange before call ([83f1e8c](https://github.com/lodgify/lodgify-ui/commit/83f1e8c))
+
 ## [1.10.4](https://github.com/lodgify/lodgify-ui/compare/v1.10.3...v1.10.4) (2018-06-18)
 
 
