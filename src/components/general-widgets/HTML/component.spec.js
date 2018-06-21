@@ -1,69 +1,58 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
-import DOMPurify from 'dompurify';
+import { shallow } from 'enzyme';
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Component as HTMLWidget } from './component';
+import { Component as HTML } from './component';
 
 const { headings } = require('./mock-data/examples');
 
+const getHTMLWidget = props => shallow(<HTML {...props} />);
+
 describe('<HTML />', () => {
-  it('should render a single Lodgify UI `HTML` component', () => {
-    const htmlWidget = shallow(<HTMLWidget />);
-
-    expect(htmlWidget.find('div').length).toBeGreaterThan(0);
+  it('should render a single `div` element', () => {
+    const wrapper = getHTMLWidget();
+    expectComponentToBe(wrapper, 'div');
   });
 
-  it('should contain a HTML component with the right props', () => {
-    const htmlWidget = shallow(<HTMLWidget htmlString={headings} />).find(
-      'div'
-    );
+  describe('if `props.children` is passed', () => {
+    it('should have the right children', () => {
+      const children = 'hello';
+      const wrapper = getHTMLWidget({ children });
+      expectComponentToHaveChildren(wrapper, 'div', children);
+    });
 
-    expect(htmlWidget).toHaveLength(1);
+    describe('the nested `div` element', () => {
+      it('should have the right props', () => {
+        const wrapper = getHTMLWidget({
+          children: headings,
+          htmlString: headings,
+        })
+          .children('div')
+          .first();
 
-    const sanitizedHTML = DOMPurify.sanitize(headings);
-
-    const actual = htmlWidget.props();
-    expect(actual).toEqual(
-      expect.objectContaining({
-        dangerouslySetInnerHTML: {
-          __html: sanitizedHTML,
-        },
-      })
-    );
-  });
-
-  describe('with children', () => {
-    it('should contain a HTML component with the right props', () => {
-      const htmlWidget = shallow(
-        <HTMLWidget htmlString={headings}>
-          <h1>Spec</h1>
-        </HTMLWidget>
-      );
-
-      expect(htmlWidget.find('div')).toHaveLength(2);
-
-      const actual = htmlWidget
-        .find('div')
-        .at(0)
-        .children();
-
-      expect(actual).toHaveLength(2);
+        expectComponentToHaveProps(wrapper, {
+          dangerouslySetInnerHTML: expect.objectContaining({
+            __html: expect.any(String),
+          }),
+        });
+      });
     });
   });
 
-  describe('if `props.htmlString` is passed', () => {
+  describe('if `props.children` is not passed', () => {
     it('should render it', () => {
-      const htmlWidget = mount(<HTMLWidget htmlString={headings} />);
+      const wrapper = getHTMLWidget({ headings });
 
-      expect(htmlWidget.find('div')).toHaveLength(1);
-
-      const firstDiv = htmlWidget.find('div').render();
-
-      expect(firstDiv.find('h1')).toHaveLength(1);
-      expect(firstDiv.find('h2')).toHaveLength(0);
-      expect(firstDiv.find('h3')).toHaveLength(1);
-      expect(firstDiv.find('h4')).toHaveLength(1);
-      expect(firstDiv.find('h5')).toHaveLength(1);
+      expectComponentToBe(wrapper, 'div');
     });
+  });
+
+  it('should have displayName `HTML`', () => {
+    expectComponentToHaveDisplayName(HTML, 'HTML');
   });
 });

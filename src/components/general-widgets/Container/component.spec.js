@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveChildren } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { OwnerLogin } from 'general-widgets/OwnerLogin';
 
@@ -11,8 +15,7 @@ const getContainer = () => shallow(<Container />);
 describe('<Container />', () => {
   it('should render a single `div` element', () => {
     const wrapper = getContainer();
-    const actual = wrapper.is('div');
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, 'div');
   });
 
   it('should not render children if none passed', () => {
@@ -27,5 +30,8 @@ describe('<Container />', () => {
       </Container>
     );
     expectComponentToHaveChildren(wrapper, OwnerLogin);
+  });
+  it('should have `displayName` `Container`', () => {
+    expectComponentToHaveDisplayName(Container, 'Container');
   });
 });
