@@ -2,15 +2,17 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Form } from 'semantic-ui-react';
 import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Dropdown } from 'inputs/Dropdown';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { Button } from 'elements/Button';
 import { Icon } from 'elements/Icon';
+import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 
 import { Component as SearchBar } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
@@ -23,12 +25,10 @@ const getSearchBar = props =>
       {...props}
     />
   );
-
 describe('<SearchBar />', () => {
   it('should render a single `div` element', () => {
     const wrapper = getSearchBar();
-    const actual = wrapper.is('div');
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, 'div');
   });
 
   describe('the `div` element', () => {
@@ -289,7 +289,6 @@ describe('<SearchBar />', () => {
   });
 
   it('should have `displayName` `SearchBar`', () => {
-    const actual = SearchBar.displayName;
-    expect(actual).toBe('SearchBar');
+    expectComponentToHaveDisplayName(SearchBar, 'SearchBar');
   });
 });

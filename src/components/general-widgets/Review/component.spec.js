@@ -2,14 +2,16 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Card, Rating } from 'semantic-ui-react';
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
-import { Divider } from 'elements/Divider';
 import { Quote } from 'elements/Quote';
 import { Subheading } from 'typography/Subheading';
 
@@ -39,8 +41,7 @@ const getReview = additionalProps =>
 describe('<Review />', () => {
   it('should render a single Semantic UI `Card` component', () => {
     const wrapper = getReview();
-    const actual = wrapper.is(Card);
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, Card);
   });
 
   describe('the first `Card` component', () => {
@@ -142,9 +143,9 @@ describe('<Review />', () => {
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
       expectComponentToHaveProps(wrapper, {
+        computer: 6,
         mobile: 12,
         tablet: 7,
-        computer: 6,
       });
     });
 
@@ -176,9 +177,9 @@ describe('<Review />', () => {
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
       expectComponentToHaveProps(wrapper, {
+        computer: 6,
         mobile: 12,
         tablet: 5,
-        computer: 6,
         textAlign: 'right',
         verticalAlign: 'middle',
       });
@@ -275,7 +276,6 @@ describe('<Review />', () => {
   });
 
   it('should have displayName `Review`', () => {
-    const actual = Review.displayName;
-    expect(actual).toBe('Review');
+    expectComponentToHaveDisplayName(Review, 'Review');
   });
 });
