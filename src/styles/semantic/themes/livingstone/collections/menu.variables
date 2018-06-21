@@ -8,18 +8,28 @@
 
 /* Menu */
 @background: transparent;
-@menuHorizontalMargin: 92px;
+@headerMenuHorizontalMargin: 92px;
+
+@footerMenuVerticalPadding: @30px;
+@footerMenuHorizontalPadding: @35px;
 
 /* Menu Item */
 // Need to use margin rather than padding to implement 'active' state bottom border
-@itemHorizontalPadding: 0;
-@itemHorizontalMargin: @15px;
-@itemVerticalPadding: @35px;
-@itemTextColor: @pureWhite;
+@headerMenuItemHorizontalMargin: @15px;
+@headerMenuItemVerticalPadding: @35px;
+@headerMenuItemTextColor: @pureWhite;
+
+@footerMenuItemVerticalPadding: @8px;
+@footerMenuItemHorizontalPadding: @footerMenuHorizontalPadding;
+
+@footerBottomMenuColor: @greySix;
 
 /* Divider */
+@footerBottomMenuDividerWidth: 100%;
 
 /* Sub Menu */
+@footerTopMenuHeadingFontWeight: bold;
+@footerTopMenuHeadingVerticalPadding: @footerMenuItemVerticalPadding;
 
 /* Text Item */
 
@@ -149,6 +159,10 @@
 /* Inverted Sub Menu */
 
 /* Inverted Hover */
+@invertedHoverBackground: @invertedBackground;
+@invertedHoverColor: @invertedItemTextColor;
+
+@footerBottomBackground: @greyEight;
 
 /* Pressed */
 

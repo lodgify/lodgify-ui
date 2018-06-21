@@ -5,20 +5,20 @@ import { Form } from 'semantic-ui-react';
 import { Button } from 'elements/Button';
 import { SearchBar } from 'general-widgets/SearchBar';
 
-import { Component as Footer } from './component';
+import { Component as PropertySearchBar } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
 
-const getFooter = props =>
+const getPropertySearchBar = props =>
   shallow(
-    <Footer
+    <PropertySearchBar
       guestsOptions={guestsOptions}
       locationOptions={locationOptions}
       {...props}
     />
   );
-const getSearchBar = props => getFooter(props).find(SearchBar);
+const getSearchBar = props => getPropertySearchBar(props).find(SearchBar);
 
-describe('<Footer />', () => {
+describe('<PropertySearchBar />', () => {
   it('should render a single Lodgify UI `SearchBar` component', () => {
     const actual = getSearchBar();
     expect(actual).toHaveLength(1);

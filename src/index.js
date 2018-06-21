@@ -1,4 +1,5 @@
 // Collections
+export { Footer } from './components/collections/Footer';
 export { Form } from './components/collections/Form';
 export { Header } from './components/collections/Header';
 export { InputGroup } from './components/collections/InputGroup';
@@ -67,7 +68,9 @@ export { Video } from './components/media/Video';
 // Property Page Widgets
 export { Amenities } from './components/property-page-widgets/Amenities';
 export { Description } from './components/property-page-widgets/Description';
-export { Footer } from './components/property-page-widgets/Footer';
+export {
+  PropertySearchBar,
+} from './components/property-page-widgets/PropertySearchBar';
 export { HostProfile } from './components/property-page-widgets/HostProfile';
 export { KeyFacts } from './components/property-page-widgets/KeyFacts';
 export { Location } from './components/property-page-widgets/Location';

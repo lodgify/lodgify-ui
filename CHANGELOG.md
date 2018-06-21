@@ -1,3 +1,28 @@
+# [1.11.0](https://github.com/lodgify/lodgify-ui/compare/v1.10.5...v1.11.0) (2018-06-19)
+
+
+### Features
+
+* **Footer:** add component, examples and api ([c3f7cb3](https://github.com/lodgify/lodgify-ui/commit/c3f7cb3))
+* **Footer:** add styles ([4eaa05b](https://github.com/lodgify/lodgify-ui/commit/4eaa05b))
+* **Footer:** isolate utility functions ([2be673a](https://github.com/lodgify/lodgify-ui/commit/2be673a))
+* **Submenu:** add input-style props to extend functionality ([7a0e5cc](https://github.com/lodgify/lodgify-ui/commit/7a0e5cc))
+* **Submenu:** isolate utility functions ([37c2474](https://github.com/lodgify/lodgify-ui/commit/37c2474))
+
+## [1.10.5](https://github.com/lodgify/lodgify-ui/compare/v1.10.4...v1.10.5) (2018-06-19)
+
+
+### Bug Fixes
+
+* **Form:** add check for input.props.onChange before call ([83f1e8c](https://github.com/lodgify/lodgify-ui/commit/83f1e8c))
+
+## [1.10.4](https://github.com/lodgify/lodgify-ui/compare/v1.10.3...v1.10.4) (2018-06-18)
+
+
+### Bug Fixes
+
+* **Input:** fix style of input icon when dirty ([5b769f7](https://github.com/lodgify/lodgify-ui/commit/5b769f7))
+
 ## [1.10.3](https://github.com/lodgify/lodgify-ui/compare/v1.10.2...v1.10.3) (2018-06-18)
 
 

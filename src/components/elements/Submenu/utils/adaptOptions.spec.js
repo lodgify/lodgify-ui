@@ -1,5 +1,6 @@
+import { items } from '../mock-data/items';
+
 import { adaptOptions } from './adaptOptions';
-import { items } from './mock-data/items';
 
 describe('adaptOptions', () => {
   it('should add a `key` property to each object in the passed array', () => {
