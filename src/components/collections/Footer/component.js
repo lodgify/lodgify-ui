@@ -66,7 +66,7 @@ export const Component = ({
       <Menu.Item>
         <Icon label={phoneNumber} name="phone" />
       </Menu.Item>
-      {socialMediaLinks.length && (
+      {!!socialMediaLinks.length && (
         <Menu.Menu position="right">
           {socialMediaLinks.map(({ href, iconName, iconPath }, index) => (
             <Menu.Item href={href} key={buildKeyFromStrings(href, index)} link>
