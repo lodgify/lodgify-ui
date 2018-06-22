@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/lodgify/lodgify-ui/compare/v1.11.0...v1.11.1) (2018-06-22)
+
+
+### Bug Fixes
+
+* **Footer:** fix social menu when no socialMediaLinks prop ([f076f00](https://github.com/lodgify/lodgify-ui/commit/f076f00))
+
 # [1.11.0](https://github.com/lodgify/lodgify-ui/compare/v1.10.5...v1.11.0) (2018-06-19)
 
 
