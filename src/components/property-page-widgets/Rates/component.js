@@ -87,7 +87,11 @@ Component.propTypes = {
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
-      value: PropTypes.any,
+      value: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.number,
+        PropTypes.string,
+      ]),
     })
   ).isRequired,
   /** A function called when the currency type value changes. */
@@ -119,7 +123,11 @@ Component.propTypes = {
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
-      value: PropTypes.any,
+      value: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.number,
+        PropTypes.string,
+      ]),
     })
   ),
 };

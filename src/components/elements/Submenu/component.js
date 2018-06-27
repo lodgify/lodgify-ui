@@ -66,7 +66,11 @@ Component.propTypes = {
       /** The visible text for the item. */
       text: PropTypes.string,
       /** The underlying value for the item. */
-      value: PropTypes.string,
+      value: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.number,
+        PropTypes.string,
+      ]),
     })
   ).isRequired,
   /** The name of submenu, used when `props.onChange` is called. */

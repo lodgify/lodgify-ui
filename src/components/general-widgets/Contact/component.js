@@ -80,7 +80,11 @@ Component.propTypes = {
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
-      value: PropTypes.any,
+      value: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.number,
+        PropTypes.string,
+      ]),
     })
   ).isRequired,
   /** The options which the user can select for the room field. */
@@ -89,7 +93,11 @@ Component.propTypes = {
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
-      value: PropTypes.any,
+      value: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.number,
+        PropTypes.string,
+      ]),
     })
   ),
 };
