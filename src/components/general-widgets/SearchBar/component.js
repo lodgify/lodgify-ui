@@ -108,7 +108,11 @@ Component.propTypes = {
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
-      value: PropTypes.any,
+      value: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.number,
+        PropTypes.string,
+      ]),
     })
   ).isRequired,
   /** Is Search Bar showing the Location Dropdown. */
@@ -123,7 +127,11 @@ Component.propTypes = {
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
-      value: PropTypes.any,
+      value: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.number,
+        PropTypes.string,
+      ]),
     })
   ).isRequired,
   /** The function to call when the search bar is submitted.
