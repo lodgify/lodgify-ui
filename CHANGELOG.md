@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/lodgify/lodgify-ui/compare/v1.11.1...v1.11.2) (2018-06-27)
+
+
+### Bug Fixes
+
+* **Dropdown:** fix options prop type ([0d0887a](https://github.com/lodgify/lodgify-ui/commit/0d0887a))
+
 ## [1.11.1](https://github.com/lodgify/lodgify-ui/compare/v1.11.0...v1.11.1) (2018-06-22)
 
 
