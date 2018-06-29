@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Button } from 'semantic-ui-react';
+import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Link } from './component';
 
@@ -14,8 +15,8 @@ const getLink = props =>
 
 describe('<Link />', () => {
   it('should render a single Semantic UI `Button` component', () => {
-    const actual = getLink().find(Button).length;
-    expect(actual).toBe(1);
+    const wrapper = getLink();
+    expectComponentToBe(wrapper, Button);
   });
 
   it('should pass the `Button` component the right props', () => {

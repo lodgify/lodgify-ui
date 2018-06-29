@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Image as SemanticImage, Label } from 'semantic-ui-react';
+import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Paragraph } from 'typography/Paragraph';
 
@@ -9,9 +10,9 @@ import { Component as ResponsiveImage } from './component';
 const getResponsiveImage = props => shallow(<ResponsiveImage {...props} />);
 
 describe('<ResponsiveImage />', () => {
-  it('should render a single Lodgify UI `ResponsiveImage` component', () => {
-    const image = getResponsiveImage();
-    expect(image).toHaveLength(1);
+  it('should render a single `picture` element', () => {
+    const wrapper = getResponsiveImage();
+    expectComponentToBe(wrapper, 'picture');
   });
 
   describe('the `ResponsiveImage` component', () => {

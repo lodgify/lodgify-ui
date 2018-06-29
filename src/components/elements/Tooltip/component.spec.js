@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import { Popup } from 'semantic-ui-react';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 
@@ -10,9 +14,8 @@ const content = 'Extra berenjena';
 
 describe('<Tooltip />', () => {
   it('should render a single Semantic UI `Popup` component', () => {
-    const tooltip = shallow(<Tooltip content={content} />);
-    const actual = tooltip.find('Popup').length;
-    expect(actual).toBe(1);
+    const wrapper = shallow(<Tooltip content={content} />);
+    expectComponentToBe(wrapper, Popup);
   });
 
   it('should pass the `Popup` component the right props', () => {

@@ -1,6 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
+
+import { InputController } from '../InputController';
 
 import { Component as PhoneInput } from './component';
 
@@ -11,8 +16,7 @@ const getInputController = () => getPhoneInput().find('InputController');
 describe('<PhoneInput />', () => {
   it('should render a single `InputController` component', () => {
     const wrapper = getPhoneInput();
-    const actual = wrapper.find('InputController').length;
-    expect(actual).toBe(1);
+    expectComponentToBe(wrapper, InputController);
   });
 
   it('should pass the right `props` to `InputController`', () => {

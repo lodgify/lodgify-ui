@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
@@ -25,8 +26,7 @@ const getSleepingArrangements = () =>
 describe('<SleepingArrangements />', () => {
   it('should render a single `div` element', () => {
     const wrapper = getSleepingArrangements();
-    const actual = wrapper.is('div');
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, 'div');
   });
 
   describe('the `div` element', () => {

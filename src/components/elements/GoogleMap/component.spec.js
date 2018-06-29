@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Card } from 'semantic-ui-react';
 import {
+  expectComponentToBe,
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
@@ -21,8 +22,7 @@ const getGoogleMap = () => shallow(<GoogleMap {...props} />);
 describe('<GoogleMap />', () => {
   it('should render a single `ReactGoogleMap` component', () => {
     const wrapper = getGoogleMap();
-    const actual = wrapper.is(ReactGoogleMap);
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, ReactGoogleMap);
   });
 
   describe('the `ReactGoogleMap` component', () => {

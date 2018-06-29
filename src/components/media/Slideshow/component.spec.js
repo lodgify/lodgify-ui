@@ -1,7 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import ImageGallery from 'react-image-gallery';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Slideshow } from './component';
 import { images } from './mock-data/images';
@@ -11,8 +14,7 @@ const getSlideshow = () => shallow(<Slideshow images={images} />);
 describe('<Slideshow />', () => {
   it('should render a single react-image-gallery `ImageGallery` component', () => {
     const wrapper = getSlideshow();
-    const actual = wrapper.find(ImageGallery);
-    expect(actual).toHaveLength(1);
+    expectComponentToBe(wrapper, ImageGallery);
   });
 
   describe('the `ImageGallery` component', () => {

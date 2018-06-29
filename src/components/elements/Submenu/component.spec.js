@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import { Dropdown } from 'semantic-ui-react';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 
@@ -11,9 +15,8 @@ const items = [{ text: 'someText', href: 'someHref' }];
 
 describe('<Submenu />', () => {
   it('should render a single Semantic UI `Dropdown` component', () => {
-    const submenu = shallow(<Submenu items={items}>{children}</Submenu>);
-    const actual = submenu.find('Dropdown');
-    expect(actual).toHaveLength(1);
+    const wrapper = shallow(<Submenu items={items}>{children}</Submenu>);
+    expectComponentToBe(wrapper, Dropdown);
   });
 
   describe('the `Dropdown` component', () => {

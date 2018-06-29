@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Form } from 'semantic-ui-react';
+import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Button } from 'elements/Button';
 import { SearchBar } from 'general-widgets/SearchBar';
@@ -20,8 +21,8 @@ const getSearchBar = props => getPropertySearchBar(props).find(SearchBar);
 
 describe('<PropertySearchBar />', () => {
   it('should render a single Lodgify UI `SearchBar` component', () => {
-    const actual = getSearchBar();
-    expect(actual).toHaveLength(1);
+    const wrapper = getPropertySearchBar();
+    expectComponentToBe(wrapper, SearchBar);
   });
 
   describe('the `SearchBar` component', () => {

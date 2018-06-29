@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Rating } from 'semantic-ui-react';
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
@@ -59,8 +60,7 @@ const getReviews = additionalProps =>
 describe('<Reviews />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getReviews();
-    const actual = wrapper.is(Grid);
-    expect(actual).toBeTruthy();
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the first `GridRow` component', () => {

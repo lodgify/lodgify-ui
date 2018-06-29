@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
@@ -35,8 +36,7 @@ const getDescription = extraProps =>
 describe('<Description />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getDescription();
-    const actual = wrapper.is(Grid);
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the first `Grid` component', () => {

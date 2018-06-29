@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import { Header } from 'semantic-ui-react';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Heading } from './component';
 
@@ -8,9 +12,8 @@ const children = '🚸';
 
 describe('<Heading />', () => {
   it('should render a single Semantic UI `Header` component', () => {
-    const heading = shallow(<Heading>{children}</Heading>);
-    const actual = heading.find('Header');
-    expect(actual).toHaveLength(1);
+    const wrapper = shallow(<Heading>{children}</Heading>);
+    expectComponentToBe(wrapper, Header);
   });
 
   it('should default to setting `props.as` as `h3`', () => {

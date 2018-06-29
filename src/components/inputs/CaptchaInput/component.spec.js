@@ -1,7 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Form, Image } from 'semantic-ui-react';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { TextInput } from 'inputs/TextInput';
 
@@ -13,8 +16,8 @@ const getFormGroup = () => getCaptchaInput().find(Form.Group);
 
 describe('<CaptchaInput />', () => {
   it('should render a single Semantic UI `Form.Group` component', () => {
-    const actual = getFormGroup();
-    expect(actual).toHaveLength(1);
+    const wrapper = getCaptchaInput();
+    expectComponentToBe(wrapper, Form.Group);
   });
 
   describe('the `Form.Group` component', () => {
