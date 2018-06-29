@@ -1,7 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Segment } from 'semantic-ui-react';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as FullBleed } from './component';
 
@@ -16,8 +19,7 @@ const getSegment = () => getFullBleed().find(Segment);
 describe('<FullBleed />', () => {
   it('should render a single Semantic UI `Segment` component', () => {
     const wrapper = getFullBleed();
-    const actual = wrapper.find(Segment);
-    expect(actual).toHaveLength(1);
+    expectComponentToBe(wrapper, Segment);
   });
 
   describe('the `Segment` component', () => {

@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import { Input } from 'semantic-ui-react';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 
@@ -24,9 +28,8 @@ const getInputController = extraProps =>
 describe('<InputController />', () => {
   describe('default behaviour', () => {
     it('should render a single Semantic UI `Input` component', () => {
-      const inputController = getInputController();
-      const actual = inputController.find('Input').length;
-      expect(actual).toBe(1);
+      const wrapper = getInputController();
+      expectComponentToBe(wrapper, Input);
     });
 
     it('should default to no classNames on `Input`', () => {

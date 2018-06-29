@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import ReactPlayer from 'react-player';
+import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Video } from './component';
 
@@ -11,25 +12,22 @@ describe('<Video />', () => {
     expect(() => shallow(getVideo())).toThrow();
   });
 
-  it('should render a single `div` children component', () => {
-    const video = shallow(getVideo({ videoSource: '<iframe></iframe>' }));
-    const actual = video.find('div');
-    expect(actual).toHaveLength(1);
+  it('should render a single `div.video` element', () => {
+    const wrapper = shallow(getVideo({ videoSource: '<iframe></iframe>' }));
+    expectComponentToBe(wrapper, 'div.video');
   });
 
   describe('the `Video` component', () => {
-    it('should render a div.is-url if an url is provided', () => {
+    it('should render a `div.video.is-url` element if an url is provided', () => {
       const props = { videoSource: 'https://lodgify.com' };
-      const video = shallow(getVideo(props));
-
-      expect(video.find('.video.is-url')).toHaveLength(1);
+      const wrapper = shallow(getVideo(props));
+      expectComponentToBe(wrapper, 'div.video.is-url');
     });
 
-    it('should render a div.is-html if an HTML snippet is provided', () => {
+    it('should render a `div.video.is-html` if an HTML snippet is provided', () => {
       const props = { videoSource: '<iframe></iframe>' };
-      const video = shallow(getVideo(props));
-
-      expect(video.find('.video.is-html')).toHaveLength(1);
+      const wrapper = shallow(getVideo(props));
+      expectComponentToBe(wrapper, 'div.video.is-html');
     });
 
     it('should render a <ReactPlayer> if HTML is provided', () => {

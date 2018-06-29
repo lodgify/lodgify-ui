@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
@@ -29,8 +30,7 @@ const getQuote = () => shallow(<Quote {...props} />);
 describe('<Quote />', () => {
   it('should render a single `blockquote`', () => {
     const wrapper = getQuote();
-    const actual = wrapper.is('blockquote');
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, 'blockquote');
   });
 
   describe('the `blockquote` element', () => {

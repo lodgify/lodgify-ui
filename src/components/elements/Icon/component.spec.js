@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
@@ -24,8 +25,7 @@ const getIcon = extraProps => shallow(<Icon {...props} {...extraProps} />);
 describe('<Icon />', () => {
   it('should render a `i.icon` element', () => {
     const wrapper = getIcon();
-    const actual = wrapper.is('i.icon');
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, 'i.icon');
   });
 
   describe('the `i.icon` element', () => {

@@ -1,21 +1,18 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Checkbox } from '../Checkbox/component';
 
 import { Component as Toggle } from './component';
 
 describe('<Toggle />', () => {
-  it('should have displayName "Toggle"', () => {
-    expectComponentToHaveDisplayName(Toggle, 'Toggle');
-  });
-
   it('should render a single UI Checkbox component', () => {
-    const component = shallow(<Toggle />);
-    // Reminder: <Toggle> is based on <Checkbox>
-    const checkboxComponent = component.find(Checkbox);
-    expect(checkboxComponent).toHaveLength(1);
+    const wrapper = shallow(<Toggle />);
+    expectComponentToBe(wrapper, Checkbox);
   });
 
   it('should pass the right props to child component', () => {
@@ -33,5 +30,9 @@ describe('<Toggle />', () => {
         ...PROPS,
       })
     );
+  });
+
+  it('should have displayName "Toggle"', () => {
+    expectComponentToHaveDisplayName(Toggle, 'Toggle');
   });
 });

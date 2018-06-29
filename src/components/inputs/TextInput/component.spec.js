@@ -1,6 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
+
+import { InputController } from '../InputController';
 
 import { Component as TextInput } from './component';
 
@@ -8,9 +13,8 @@ const getTextInput = () => shallow(<TextInput />);
 
 describe('<TextInput />', () => {
   it('should render a single `InputController` component', () => {
-    const textInput = getTextInput();
-    const actual = textInput.find('InputController').length;
-    expect(actual).toBe(1);
+    const wrapper = getTextInput();
+    expectComponentToBe(wrapper, InputController);
   });
 
   it('should pass the right `props` to `InputController`', () => {

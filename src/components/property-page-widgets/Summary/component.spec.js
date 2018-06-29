@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Segment, Rating } from 'semantic-ui-react';
+import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
@@ -19,8 +20,7 @@ const getSummary = () => shallow(<Summary {...props} />);
 describe('<Summary />', () => {
   it('should render a single Semantic UI `Segment.Group` component', () => {
     const wrapper = getSummary();
-    const actual = wrapper.is(Segment.Group);
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, Segment.Group);
   });
 
   describe('the first `Segment.Group` component', () => {

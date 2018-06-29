@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import { Label } from 'semantic-ui-react';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ErrorMessage } from './component';
 
@@ -8,9 +12,8 @@ const errorMessage = '🔥';
 
 describe('<ErrorMessage />', () => {
   it('should render a single Semantic UI `Label` component', () => {
-    const textInput = shallow(<ErrorMessage errorMessage={errorMessage} />);
-    const actual = textInput.find('Label').length;
-    expect(actual).toBe(1);
+    const wrapper = shallow(<ErrorMessage errorMessage={errorMessage} />);
+    expectComponentToBe(wrapper, Label);
   });
 
   it('should pass the right props to `Label`', () => {

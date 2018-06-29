@@ -1,6 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Checkbox } from '../Checkbox/component';
 
@@ -8,10 +11,8 @@ import { Component as RadioButton } from './component';
 
 describe('<RadioButton />', () => {
   it('should render a single UI Checkbox component', () => {
-    const component = shallow(<RadioButton />);
-    // Reminder: <RadioButton/> is based on <Checkbox>
-    const checkbox = component.find(Checkbox);
-    expect(checkbox).toHaveLength(1);
+    const wrapper = shallow(<RadioButton />);
+    expectComponentToBe(wrapper, Checkbox);
   });
 
   it('should pass the right props to child component', () => {

@@ -2,7 +2,10 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { expectComponentToHaveProps } from '@lodgify/enzyme-jest-expect-helpers';
 import { Dropdown as SemanticDropdown } from 'semantic-ui-react';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 
@@ -20,8 +23,7 @@ const getDropdownContainer = extraProps =>
 describe('<Dropdown />', () => {
   it('should render a single `div` with class `.dropdown-container`', () => {
     const wrapper = getDropdown();
-    const actual = wrapper.find('div.dropdown-container');
-    expect(actual).toHaveLength(1);
+    expectComponentToBe(wrapper, 'div.dropdown-container');
   });
 
   describe('the `div.dropdown-container`', () => {

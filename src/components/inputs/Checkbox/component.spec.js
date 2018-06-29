@@ -1,15 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Checkbox as SemanticCheckbox } from 'semantic-ui-react';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Checkbox } from './component';
 
 describe('<Checkbox />', () => {
   it('should render a single Semantic UI Checkbox component', () => {
-    const component = shallow(<Checkbox />);
-    const checkbox = component.find(SemanticCheckbox);
-    expect(checkbox).toHaveLength(1);
+    const wrapper = shallow(<Checkbox />);
+    expectComponentToBe(wrapper, SemanticCheckbox);
   });
 
   it('should pass the right props to child component', () => {

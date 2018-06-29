@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Statistic } from 'semantic-ui-react';
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
@@ -48,8 +49,7 @@ const getPaymentInformation = extraProps =>
 describe('<PaymentInformation />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getPaymentInformation();
-    const actual = wrapper.is(Grid);
-    expect(actual).toBe(true);
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the first `Grid` component', () => {
