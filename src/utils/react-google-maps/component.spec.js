@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { GoogleMap, Marker, Circle } from 'react-google-maps';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ReactGoogleMap } from './component';
 
@@ -94,7 +95,6 @@ describe('<ReactGoogleMaps />', () => {
   });
 
   it('should have `displayName` ReactGoogleMap', () => {
-    const actual = ReactGoogleMap.displayName;
-    expect(actual).toBe('ReactGoogleMap');
+    expectComponentToHaveDisplayName(ReactGoogleMap, 'ReactGoogleMap');
   });
 });

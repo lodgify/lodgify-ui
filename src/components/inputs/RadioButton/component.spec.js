@@ -1,16 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Checkbox } from '../Checkbox/component';
 
 import { Component as RadioButton } from './component';
 
 describe('<RadioButton />', () => {
-  it('should have displayName "RadioButton"', () => {
-    const displayName = RadioButton.displayName;
-    expect(displayName).toBe('RadioButton');
-  });
-
   it('should render a single UI Checkbox component', () => {
     const component = shallow(<RadioButton />);
     // Reminder: <RadioButton/> is based on <Checkbox>
@@ -34,5 +30,9 @@ describe('<RadioButton />', () => {
         ...PROPS,
       })
     );
+  });
+
+  it('should have displayName `RadioButton`', () => {
+    expectComponentToHaveDisplayName(RadioButton, 'RadioButton');
   });
 });

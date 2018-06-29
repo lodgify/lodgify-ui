@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 
@@ -38,7 +39,6 @@ describe('<Tooltip />', () => {
   });
 
   it('should have `displayName` Tooltip', () => {
-    const actual = Tooltip.displayName;
-    expect(actual).toBe('Tooltip');
+    expectComponentToHaveDisplayName(Tooltip, 'Tooltip');
   });
 });

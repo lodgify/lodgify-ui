@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ErrorMessage } from './component';
 
@@ -27,7 +28,6 @@ describe('<ErrorMessage />', () => {
   });
 
   it('should have displayName `ErrorMessage`', () => {
-    const actual = ErrorMessage.displayName;
-    expect(actual).toBe('ErrorMessage');
+    expectComponentToHaveDisplayName(ErrorMessage, 'ErrorMessage');
   });
 });

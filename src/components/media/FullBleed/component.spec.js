@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Segment } from 'semantic-ui-react';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as FullBleed } from './component';
 
@@ -35,7 +36,6 @@ describe('<FullBleed />', () => {
   });
 
   it('should have `displayName` `FullBleed`', () => {
-    const actual = FullBleed.displayName;
-    expect(actual).toBe('FullBleed');
+    expectComponentToHaveDisplayName(FullBleed, 'FullBleed');
   });
 });

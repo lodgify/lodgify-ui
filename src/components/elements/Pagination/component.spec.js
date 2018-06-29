@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { nextItem, pageItem, prevItem } from './navigationMarkup';
 import { Component as Pagination } from './component';
@@ -31,7 +32,6 @@ describe('<Pagination />', () => {
   });
 
   it('should have displayName `Pagination`', () => {
-    const actual = Pagination.displayName;
-    expect(actual).toBe('Pagination');
+    expectComponentToHaveDisplayName(Pagination, 'Pagination');
   });
 });

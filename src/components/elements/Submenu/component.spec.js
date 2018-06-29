@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 
@@ -68,7 +69,6 @@ describe('<Submenu />', () => {
   });
 
   it('should have displayName `Submenu`', () => {
-    const actual = Submenu.displayName;
-    expect(actual).toBe('Submenu');
+    expectComponentToHaveDisplayName(Submenu, 'Submenu');
   });
 });
