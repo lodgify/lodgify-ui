@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import ImageGallery from 'react-image-gallery';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Slideshow } from './component';
 import { images } from './mock-data/images';
@@ -34,7 +35,6 @@ describe('<Slideshow />', () => {
   });
 
   it('should have displayName `Slideshow`', () => {
-    const actual = Slideshow.displayName;
-    expect(actual).toBe('Slideshow');
+    expectComponentToHaveDisplayName(Slideshow, 'Slideshow');
   });
 });

@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Header } from './component';
 import { navigationItems } from './mock-data/navigationItems';
@@ -264,7 +265,6 @@ describe('<Header />', () => {
   });
 
   it('should have `displayName` Header', () => {
-    const actual = Header.displayName;
-    expect(actual).toBe('Header');
+    expectComponentToHaveDisplayName(Header, 'Header');
   });
 });

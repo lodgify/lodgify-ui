@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import {
   expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
@@ -190,7 +191,6 @@ describe('<Description />', () => {
   });
 
   it('should have `displayName` `Description`', () => {
-    const actual = Description.displayName;
-    expect(actual).toBe('Description');
+    expectComponentToHaveDisplayName(Description, 'Description');
   });
 });

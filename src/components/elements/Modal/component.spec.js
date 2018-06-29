@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Modal as SemanticModal } from 'semantic-ui-react';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 
@@ -35,7 +36,6 @@ describe('<Modal />', () => {
   });
 
   it('should have `displayName` Modal', () => {
-    const actual = Modal.displayName;
-    expect(actual).toBe('Modal');
+    expectComponentToHaveDisplayName(Modal, 'Modal');
   });
 });

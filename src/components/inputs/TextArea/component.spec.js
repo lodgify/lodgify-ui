@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as TextArea } from './component';
 
@@ -41,7 +42,6 @@ describe('<TextArea />', () => {
   });
 
   it('should have displayName `TextArea`', () => {
-    const actual = TextArea.displayName;
-    expect(actual).toBe('TextArea');
+    expectComponentToHaveDisplayName(TextArea, 'TextArea');
   });
 });

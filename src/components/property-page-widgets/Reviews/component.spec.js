@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { Rating } from 'semantic-ui-react';
 import {
   expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
@@ -246,7 +247,6 @@ describe('<Reviews />', () => {
   });
 
   it('should have displayName `Reviews`', () => {
-    const actual = Reviews.displayName;
-    expect(actual).toBe('Reviews');
+    expectComponentToHaveDisplayName(Reviews, 'Reviews');
   });
 });

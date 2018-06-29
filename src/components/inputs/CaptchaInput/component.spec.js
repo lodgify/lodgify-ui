@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Form, Image } from 'semantic-ui-react';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { TextInput } from 'inputs/TextInput';
 
@@ -83,7 +84,6 @@ describe('<CaptchaInput />', () => {
   });
 
   it('should have displayName `CaptchaInput`', () => {
-    const actual = CaptchaInput.displayName;
-    expect(actual).toBe('CaptchaInput');
+    expectComponentToHaveDisplayName(CaptchaInput, 'CaptchaInput');
   });
 });

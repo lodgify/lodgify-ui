@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as TextInput } from './component';
 
@@ -41,7 +42,6 @@ describe('<TextInput />', () => {
   });
 
   it('should have displayName `TextInput`', () => {
-    const actual = TextInput.displayName;
-    expect(actual).toBe('TextInput');
+    expectComponentToHaveDisplayName(TextInput, 'TextInput');
   });
 });

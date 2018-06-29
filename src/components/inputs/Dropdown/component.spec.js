@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { expectComponentToHaveProps } from '@lodgify/enzyme-jest-expect-helpers';
 import { Dropdown as SemanticDropdown } from 'semantic-ui-react';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 
@@ -217,7 +218,6 @@ describe('<Dropdown />', () => {
   });
 
   it('should have displayName `Dropdown`', () => {
-    const actual = Dropdown.displayName;
-    expect(actual).toBe('Dropdown');
+    expectComponentToHaveDisplayName(Dropdown, 'Dropdown');
   });
 });

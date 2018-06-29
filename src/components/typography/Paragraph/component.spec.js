@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Paragraph } from './component';
 
@@ -39,7 +40,6 @@ describe('<Paragraph />', () => {
   });
 
   it('should have displayName `Paragraph`', () => {
-    const actual = Paragraph.displayName;
-    expect(actual).toBe('Paragraph');
+    expectComponentToHaveDisplayName(Paragraph, 'Paragraph');
   });
 });

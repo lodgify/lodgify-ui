@@ -1,8 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import {
-  expectComponentToHaveProps,
   expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Paragraph } from 'typography/Paragraph';
@@ -84,7 +85,6 @@ describe('<Icon />', () => {
   });
 
   it('should have displayName `Icon`', () => {
-    const actual = Icon.displayName;
-    expect(actual).toBe('Icon');
+    expectComponentToHaveDisplayName(Icon, 'Icon');
   });
 });

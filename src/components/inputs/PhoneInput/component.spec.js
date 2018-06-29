@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as PhoneInput } from './component';
 
@@ -70,7 +71,6 @@ describe('<PhoneInput />', () => {
   });
 
   it('should have displayName `PhoneInput`', () => {
-    const actual = PhoneInput.displayName;
-    expect(actual).toBe('PhoneInput');
+    expectComponentToHaveDisplayName(PhoneInput, 'PhoneInput');
   });
 });

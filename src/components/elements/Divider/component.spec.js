@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Divider as SemanticDivider } from 'semantic-ui-react';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Divider } from './component';
 
@@ -36,7 +37,6 @@ describe('<Divider />', () => {
   });
 
   it('should have `displayName` Divider', () => {
-    const actual = Divider.displayName;
-    expect(actual).toBe('Divider');
+    expectComponentToHaveDisplayName(Divider, 'Divider');
   });
 });

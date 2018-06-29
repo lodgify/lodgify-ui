@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Card as SemanticCard } from 'semantic-ui-react';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { TextInput } from 'inputs/TextInput';
 
@@ -156,7 +157,6 @@ describe('<Form />', () => {
   });
 
   it('should have `displayName` Form', () => {
-    const actual = Form.displayName;
-    expect(actual).toBe('Form');
+    expectComponentToHaveDisplayName(Form, 'Form');
   });
 });

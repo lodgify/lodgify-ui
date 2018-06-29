@@ -1,7 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Card } from 'semantic-ui-react';
-import { expectComponentToHaveProps } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { ReactGoogleMap } from 'utils/react-google-maps';
 
@@ -37,7 +40,6 @@ describe('<GoogleMap />', () => {
   });
 
   it('should have `displayName` GoogleMap', () => {
-    const actual = GoogleMap.displayName;
-    expect(actual).toBe('GoogleMap');
+    expectComponentToHaveDisplayName(GoogleMap, 'GoogleMap');
   });
 });

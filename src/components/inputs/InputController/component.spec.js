@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 
@@ -76,11 +77,6 @@ describe('<InputController />', () => {
       const semanticInput = getInputController().find('Input');
       const actual = semanticInput.find('Icon').length;
       expect(actual).toBe(0);
-    });
-
-    it('should have displayName `InputController`', () => {
-      const actual = InputController.displayName;
-      expect(actual).toBe('InputController');
     });
   });
 
@@ -234,5 +230,9 @@ describe('<InputController />', () => {
       htmlLabel.simulate('click');
       expect(htmlInput).toBe(document.activeElement);
     });
+  });
+
+  it('should have displayName `InputController`', () => {
+    expectComponentToHaveDisplayName(InputController, 'InputController');
   });
 });

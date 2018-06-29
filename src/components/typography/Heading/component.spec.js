@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Heading } from './component';
 
@@ -38,7 +39,6 @@ describe('<Heading />', () => {
   });
 
   it('should have displayName `Heading`', () => {
-    const actual = Heading.displayName;
-    expect(actual).toBe('Heading');
+    expectComponentToHaveDisplayName('Heading');
   });
 });
