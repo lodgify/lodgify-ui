@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 import { Card } from 'semantic-ui-react';
@@ -224,5 +225,9 @@ describe('<Rates />', () => {
         tableBody: expectedTableBody,
       });
     });
+  });
+
+  it('should have the right `displayName`', () => {
+    expectComponentToHaveDisplayName(Rates, 'Rates');
   });
 });
