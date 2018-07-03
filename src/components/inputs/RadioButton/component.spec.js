@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Checkbox } from '../Checkbox/component';
@@ -24,13 +25,11 @@ describe('<RadioButton />', () => {
       label: LABEL_TEXT,
     };
     const component = shallow(<RadioButton {...PROPS} label={LABEL_TEXT} />);
-    const checkbox = component.find(Checkbox);
-    expect(checkbox.props()).toEqual(
-      expect.objectContaining({
-        isRadioButton: true,
-        ...PROPS,
-      })
-    );
+    const wrapper = component.find(Checkbox);
+    expectComponentToHaveProps(wrapper, {
+      isRadioButton: true,
+      ...PROPS,
+    });
   });
 
   it('should have displayName `RadioButton`', () => {
