@@ -2,7 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import {
   expectComponentToBe,
+  expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { InputController } from '../InputController';
@@ -18,30 +20,25 @@ describe('<TextInput />', () => {
   });
 
   it('should pass the right `props` to `InputController`', () => {
-    const inputController = getTextInput().find('InputController');
-    const actual = inputController.props();
-    expect(actual).toEqual(
-      expect.objectContaining({
-        error: false,
-        isValid: false,
-        label: '',
-        name: '',
-        onChange: Function.prototype,
-      })
-    );
+    const wrapper = getTextInput().find('InputController');
+    expectComponentToHaveProps(wrapper, {
+      error: false,
+      isValid: false,
+      label: '',
+      name: '',
+      onChange: Function.prototype,
+    });
   });
 
   it('should pass an `input` as a child to `InputController`', () => {
-    const inputController = getTextInput().find('InputController');
-    const actual = inputController.children('input');
-    expect(actual).toHaveLength(1);
+    const wrapper = getTextInput().find('InputController');
+    expectComponentToHaveChildren(wrapper, 'input');
   });
 
   describe('the child `input`', () => {
     it('should get the `TextInput.props.type` as `props.type`', () => {
-      const htmlInput = getTextInput().find('input');
-      const actual = htmlInput.prop('type');
-      expect(actual).toBe('text');
+      const wrapper = getTextInput().find('input');
+      expectComponentToHaveProps(wrapper, { type: 'text' });
     });
   });
 
