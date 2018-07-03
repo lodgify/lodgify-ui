@@ -4,6 +4,7 @@ import { Divider as SemanticDivider } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Divider } from './component';
@@ -19,22 +20,12 @@ describe('<Divider />', () => {
   describe('the Semantic UI `Divider` component', () => {
     it('should get the right props', () => {
       const wrapper = getDivider();
-      const actual = wrapper.find('Divider').props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          hidden: true,
-        })
-      );
+      expectComponentToHaveProps(wrapper, { hidden: true });
     });
 
     it('should get `props.hidden` as false if the parent `props.hasLine` is true', () => {
       const wrapper = getDivider({ hasLine: true });
-      const actual = wrapper.find('Divider').props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          hidden: false,
-        })
-      );
+      expectComponentToHaveProps(wrapper, { hidden: false });
     });
   });
 
