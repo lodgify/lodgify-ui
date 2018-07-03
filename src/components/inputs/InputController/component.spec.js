@@ -3,7 +3,9 @@ import { shallow, mount } from 'enzyme';
 import { Input } from 'semantic-ui-react';
 import {
   expectComponentToBe,
+  expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
@@ -24,6 +26,7 @@ const getInputController = extraProps =>
       {children}
     </InputController>
   );
+const getInputControllerInput = () => getInputController().find('Input');
 
 describe('<InputController />', () => {
   describe('default behaviour', () => {
@@ -33,7 +36,7 @@ describe('<InputController />', () => {
     });
 
     it('should default to no classNames on `Input`', () => {
-      const semanticInput = getInputController().find('Input');
+      const semanticInput = getInputControllerInput();
       const classNames = ['dirty', 'valid', 'error'];
       classNames.forEach(className => {
         const actual = semanticInput.hasClass(className);
@@ -42,43 +45,44 @@ describe('<InputController />', () => {
     });
 
     it('should render the children inside `Input`', () => {
-      const semanticInput = getInputController().find('Input');
-      const actual = semanticInput.find('input').length;
-      expect(actual).toBe(1);
+      const wrapper = getInputControllerInput();
+      expectComponentToHaveChildren(wrapper, 'input');
     });
 
     describe('the children', () => {
       it('should get a function as `props.onChange` by default', () => {
-        const htmlInput = getInputController().find('input');
-        const actual = htmlInput.prop('onChange');
-        expect(actual).toEqual(expect.any(Function));
+        const wrapper = getInputController().find('input');
+        expectComponentToHaveProps(wrapper, {
+          onChange: expect.any(Function),
+        });
       });
 
       it('should get a function as `props[inputOnChangeFunctionName]` if specified', () => {
         const inputOnChangeFunctionName = 'whoopDeDooo';
-        const htmlInput = getInputController({
+        const wrapper = getInputController({
           inputOnChangeFunctionName,
         }).find('input');
-        const actual = htmlInput.prop(inputOnChangeFunctionName);
-        expect(actual).toEqual(expect.any(Function));
+        expectComponentToHaveProps(wrapper, {
+          [inputOnChangeFunctionName]: expect.any(Function),
+        });
       });
     });
 
     it('should not render the `ErrorMessage` component', () => {
-      const semanticInput = getInputController().find('Input');
+      const semanticInput = getInputControllerInput();
       const actual = semanticInput.find('ErrorMessage').length;
       expect(actual).toBe(0);
     });
 
     it('should not render the `Icon` component', () => {
-      const semanticInput = getInputController().find('Input');
+      const semanticInput = getInputControllerInput();
       const actual = semanticInput.find('Icon').length;
       expect(actual).toBe(0);
     });
 
     it('should not render the `label` element', () => {
-      const semanticInput = getInputController().find('Input');
-      const actual = semanticInput.find('Icon').length;
+      const semanticInput = getInputControllerInput();
+      const actual = semanticInput.find('label').length;
       expect(actual).toBe(0);
     });
   });
@@ -118,11 +122,12 @@ describe('<InputController />', () => {
 
       it('should pass `props.error` to the `ErrorMessage` component', () => {
         const errorMessage = 'Oh nooes';
-        const inputController = getInputController({ error: errorMessage });
-        const actual = inputController
-          .find('ErrorMessage')
-          .prop('errorMessage');
-        expect(actual).toBe(errorMessage);
+        const wrapper = getInputController({ error: errorMessage }).find(
+          'ErrorMessage'
+        );
+        expectComponentToHaveProps(wrapper, {
+          errorMessage,
+        });
       });
     });
   });
@@ -170,10 +175,10 @@ describe('<InputController />', () => {
     });
 
     it('should pass a function as `props.onClick` to `label`', () => {
-      const semanticInput = getInputController({ label: 'yo' }).find('Input');
-      const label = semanticInput.find('label');
-      const actual = label.prop('onClick');
-      expect(actual).toEqual(expect.any(Function));
+      const wrapper = getInputController({ label: 'yo' }).find('Input label');
+      expectComponentToHaveProps(wrapper, {
+        onClick: expect.any(Function),
+      });
     });
 
     it('should render the `props.label`', () => {
@@ -186,9 +191,10 @@ describe('<InputController />', () => {
 
   describe('Variation: icon', () => {
     it('should add `props.iconPosition="left"` to `Input`', () => {
-      const semanticInput = getInputController({ icon: <Icon name="phone" /> });
-      const actual = semanticInput.prop('iconPosition');
-      expect(actual).toBe('left');
+      const wrapper = getInputController({ icon: <Icon name="phone" /> });
+      expectComponentToHaveProps(wrapper, {
+        iconPosition: 'left',
+      });
     });
 
     it('should render `props.icon` inside `Input`', () => {
