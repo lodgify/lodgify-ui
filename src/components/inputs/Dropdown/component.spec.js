@@ -1,10 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveProps } from '@lodgify/enzyme-jest-expect-helpers';
 import { Dropdown as SemanticDropdown } from 'semantic-ui-react';
 import {
   expectComponentToBe,
+  expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
@@ -30,20 +31,13 @@ describe('<Dropdown />', () => {
     const getSemanticDropdown = extraProps =>
       getDropdown(extraProps).find(SemanticDropdown);
 
-    it('should not render an `Icon`', () => {
-      const wrapper = getDropdownContainer();
-      const actual = wrapper.children(Icon);
-      expect(actual).toHaveLength(0);
-    });
-
     it('should render a single Semantic UI `Dropdown` component', () => {
       const wrapper = getDropdownContainer();
-      const actual = wrapper.children(SemanticDropdown);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, SemanticDropdown);
     });
 
     it('should pass the right props to `Dropdown`', () => {
-      const wrapper = getSemanticDropdown(SemanticDropdown);
+      const wrapper = getSemanticDropdown();
       expectComponentToHaveProps(wrapper, {
         defaultValue: null,
         icon: <Icon name="caret down" />,
@@ -85,69 +79,63 @@ describe('<Dropdown />', () => {
         expectComponentToHaveProps(wrapper, { disabled: true });
       });
     });
-
-    it('should not render a `label` as a child', () => {
-      const wrapper = getDropdown();
-      const actual = wrapper.children('label');
-      expect(actual).toHaveLength(0);
-    });
   });
 
-  describe('if none of the options specifies an image', () => {
-    it('should render the specified `Icon`', () => {
-      const icon = 'search';
-      const wrapper = getDropdownContainer({ icon });
-      const actual = wrapper.children(Icon).prop('name');
-      expect(actual).toBe(icon);
-    });
+  describe('if any option does not specify an image', () => {
+    describe('`Icon`', () => {
+      const getDropdownWithIcon = () =>
+        getDropdownContainer({ icon: 'search' });
 
-    it('should render the specified `label`', () => {
-      const label = 'whoop';
-      const wrapper = getDropdownContainer({ label });
-      const actual = wrapper.children('label');
-      expect(actual).toHaveLength(1);
-    });
+      it('should render if `props.icon` is passed', () => {
+        const wrapper = getDropdownWithIcon();
+        expectComponentToHaveChildren(wrapper, Icon, SemanticDropdown);
+      });
 
-    describe('the `label`', () => {
       it('should have the right props', () => {
-        const label = 'whoop';
-        const wrapper = getDropdownContainer({ label });
-        const actual = wrapper.children('label').props();
-        expect(actual).toEqual(
-          expect.objectContaining({
-            children: label,
-            onClick: expect.any(Function),
-          })
-        );
+        const wrapper = getDropdownWithIcon().find(Icon);
+        expectComponentToHaveProps(wrapper, {
+          name: 'search',
+        });
+      });
+    });
+
+    describe('`label`', () => {
+      const getDropdownLabel = () => getDropdownContainer({ label: '🏷' });
+
+      it('should render if `props.label` is passed', () => {
+        const wrapper = getDropdownLabel();
+        expectComponentToHaveChildren(wrapper, SemanticDropdown, 'label');
+      });
+
+      it('should have the right props', () => {
+        const wrapper = getDropdownLabel().find('label');
+        expectComponentToHaveProps(wrapper, { onClick: expect.any(Function) });
       });
     });
   });
 
-  describe('if some of the options specify an image', () => {
+  describe('if any of the options specify an image', () => {
+    const getDropdownWithImageOptions = (extraProps = {}) =>
+      getDropdownContainer({ options: OPTIONS_WITH_IMAGES, ...extraProps });
+
     it('should add the correct class to the wrapper', () => {
-      const wrapper = getDropdownContainer({ options: OPTIONS_WITH_IMAGES });
+      const wrapper = getDropdownWithImageOptions();
       const actual = wrapper.hasClass('has-images');
       expect(actual).toBe(true);
     });
 
-    it('should not render the `Icon`, even if specified', () => {
-      const icon = 'search';
-      const wrapper = getDropdownContainer({
-        icon,
-        options: OPTIONS_WITH_IMAGES,
+    describe('`Icon`', () => {
+      it('should not render', () => {
+        const wrapper = getDropdownWithImageOptions({ icon: 'search' });
+        expectComponentToHaveChildren(wrapper, SemanticDropdown);
       });
-      const actual = wrapper.children(Icon);
-      expect(actual).toHaveLength(0);
     });
 
-    it('should render the `label`, even if specified', () => {
-      const label = 'whoop';
-      const wrapper = getDropdownContainer({
-        options: OPTIONS_WITH_IMAGES,
-        label,
+    describe('`label`', () => {
+      it('should not render', () => {
+        const wrapper = getDropdownWithImageOptions({ label: '🏷' });
+        expectComponentToHaveChildren(wrapper, SemanticDropdown);
       });
-      const actual = wrapper.children('label');
-      expect(actual).toHaveLength(0);
     });
   });
 
