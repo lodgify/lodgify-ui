@@ -2,7 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import {
   expectComponentToBe,
+  expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { InputController } from '../InputController';
@@ -20,36 +22,29 @@ describe('<PhoneInput />', () => {
   });
 
   it('should pass the right `props` to `InputController`', () => {
-    const inputController = getInputController();
-    const actual = inputController.props();
-    expect(actual).toEqual(
-      expect.objectContaining({
-        error: false,
-        icon: expect.any(Object),
-        isValid: false,
-        label: '',
-        name: '',
-        onChange: expect.any(Function),
-      })
-    );
+    const wrapper = getInputController();
+    expectComponentToHaveProps(wrapper, {
+      error: false,
+      icon: expect.any(Object),
+      isValid: false,
+      label: '',
+      name: '',
+      onChange: expect.any(Function),
+    });
   });
 
   it('should pass an html `input` as a child to `InputController`', () => {
-    const inputController = getInputController();
-    const actual = inputController.children('input');
-    expect(actual).toHaveLength(1);
+    const wrapper = getInputController();
+    expectComponentToHaveChildren(wrapper, 'input');
   });
 
   describe('the child `input`', () => {
     it('should get the right props', () => {
-      const inputController = getInputController();
-      const actual = inputController.children('input').props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          type: 'text',
-          value: '',
-        })
-      );
+      const wrapper = getInputController().find('input');
+      expectComponentToHaveProps(wrapper, {
+        type: 'text',
+        value: '',
+      });
     });
   });
 

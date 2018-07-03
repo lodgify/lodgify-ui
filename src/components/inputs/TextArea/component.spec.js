@@ -2,7 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import {
   expectComponentToBe,
+  expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { InputController } from '../InputController';
@@ -18,30 +20,25 @@ describe('<TextArea />', () => {
   });
 
   it('should pass the right `props` to `InputController`', () => {
-    const inputController = getTextArea().find('InputController');
-    const actual = inputController.props();
-    expect(actual).toEqual(
-      expect.objectContaining({
-        error: false,
-        isValid: false,
-        label: '',
-        name: '',
-        onChange: Function.prototype,
-      })
-    );
+    const wrapper = getTextArea().find('InputController');
+    expectComponentToHaveProps(wrapper, {
+      error: false,
+      isValid: false,
+      label: '',
+      name: '',
+      onChange: Function.prototype,
+    });
   });
 
   it('should pass a `textarea` as a child to `InputController`', () => {
-    const inputController = getTextArea().find('InputController');
-    const actual = inputController.children('textarea');
-    expect(actual).toHaveLength(1);
+    const wrapper = getTextArea().find('InputController');
+    expectComponentToHaveChildren(wrapper, 'textarea');
   });
 
   describe('the child `textarea`', () => {
-    it('should get `8` as `props.rows`', () => {
-      const htmlInput = getTextArea().find('textarea');
-      const actual = htmlInput.prop('rows');
-      expect(actual).toBe('8');
+    it('should have the right props', () => {
+      const wrapper = getTextArea().find('textarea');
+      expectComponentToHaveProps(wrapper, { rows: '8' });
     });
   });
 
