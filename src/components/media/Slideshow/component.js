@@ -9,7 +9,7 @@ import { renderNavButton } from './utils/renderNavButton';
  * A slideshow displays a series of images.
  * @return {Object}
  */
-export const Component = ({ images }) => (
+export const Component = ({ images, ...props }) => (
   <ImageGallery
     items={adaptImages(images)}
     lazyLoad
@@ -21,6 +21,7 @@ export const Component = ({ images }) => (
     showFullscreenButton={false}
     showPlayButton={false}
     showThumbnails={false}
+    {...props}
   />
 );
 
