@@ -1,7 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Button } from 'semantic-ui-react';
-import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Link } from './component';
 
@@ -20,45 +25,38 @@ describe('<Link />', () => {
   });
 
   it('should pass the `Button` component the right props', () => {
-    const actual = getLink()
-      .find(Button)
-      .props();
-
-    expect(actual).toEqual(
-      expect.objectContaining({
-        as: 'a',
-        href: URL,
-        target: '_self',
-        floated: 'left',
-        onClick: Function.prototype,
-      })
-    );
+    const wrapper = getLink().find(Button);
+    expectComponentToHaveProps(wrapper, {
+      as: 'a',
+      href: URL,
+      target: '_self',
+      floated: 'left',
+      onClick: Function.prototype,
+    });
   });
 
   describe('if `props.isPositionedRight` is true', () => {
     it('should pass the `Button` component `floated="right"`', () => {
-      const actual = getLink({ isPositionedRight: true })
-        .find(Button)
-        .prop('floated');
-      expect(actual).toBe('right');
+      const wrapper = getLink({ isPositionedRight: true }).find(Button);
+      expectComponentToHaveProps(wrapper, { floated: 'right' });
     });
   });
 
   describe('if `props.willOpenInNewTab` is true', () => {
     it('should pass the `Button` component `target="_blank"`', () => {
-      const actual = getLink({ willOpenInNewTab: true })
-        .find(Button)
-        .props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          target: '_blank',
-        })
-      );
+      const wrapper = getLink({ willOpenInNewTab: true }).find(Button);
+      expectComponentToHaveProps(wrapper, {
+        target: '_blank',
+      });
     });
   });
 
   it('should render the `children`', () => {
-    const actual = getLink().contains('Press me');
-    expect(actual).toBe(true);
+    const wrapper = getLink();
+    expectComponentToHaveChildren(wrapper, 'Press me');
+  });
+
+  it('should have the right `displayName`', () => {
+    expectComponentToHaveDisplayName(Link, 'Link');
   });
 });
