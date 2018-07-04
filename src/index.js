@@ -33,6 +33,7 @@ export {
 export {
   FeaturedRoomTypes,
 } from './components/general-widgets/FeaturedRoomTypes';
+export { MultiRoomType } from './components/general-widgets/MultiRoomType';
 export { HTML } from './components/general-widgets/HTML';
 export { OwnerLogin } from './components/general-widgets/OwnerLogin';
 export { OwnerSignUp } from './components/general-widgets/OwnerSignUp';
