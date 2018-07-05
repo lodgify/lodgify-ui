@@ -4,21 +4,23 @@ import { Checkbox as SemanticCheckbox } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Checkbox } from './component';
 
+const getCheckbox = () => shallow(<Checkbox />);
+
 describe('<Checkbox />', () => {
   it('should render a single Semantic UI Checkbox component', () => {
-    const wrapper = shallow(<Checkbox />);
+    const wrapper = getCheckbox();
     expectComponentToBe(wrapper, SemanticCheckbox);
   });
 
-  it('should pass the right props to child component', () => {
-    const component = shallow(<Checkbox />);
-    const checkbox = component.find(SemanticCheckbox);
-    expect(checkbox.props()).toEqual(
-      expect.objectContaining({
+  describe('`SemanticCheckbox`', () => {
+    it('should have the right props', () => {
+      const wrapper = getCheckbox().find(SemanticCheckbox);
+      expectComponentToHaveProps(wrapper, {
         checked: undefined,
         defaultChecked: undefined,
         disabled: false,
@@ -27,11 +29,8 @@ describe('<Checkbox />', () => {
         onChange: expect.any(Function),
         radio: false,
         toggle: false,
-      })
-    );
-    expect(checkbox.prop('isChecked')).not.toBeDefined();
-    expect(checkbox.prop('isDisabled')).not.toBeDefined();
-    expect(checkbox.prop('isCheckedByDefault')).not.toBeDefined();
+      });
+    });
   });
 
   describe('Interaction: onChange', () => {

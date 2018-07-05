@@ -3,7 +3,9 @@ import { shallow } from 'enzyme';
 import { Form, Image } from 'semantic-ui-react';
 import {
   expectComponentToBe,
+  expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { TextInput } from 'inputs/TextInput';
@@ -22,67 +24,55 @@ describe('<CaptchaInput />', () => {
 
   describe('the `Form.Group` component', () => {
     it('should get the right props', () => {
-      const formGroup = getFormGroup();
-      const actual = formGroup.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          widths: 'equal',
-        })
-      );
+      const wrapper = getFormGroup();
+      expectComponentToHaveProps(wrapper, {
+        widths: 'equal',
+      });
     });
 
-    it('should render two Semantic UI `Form.Field` components', () => {
-      const formGroup = getFormGroup();
-      const actual = formGroup.children(Form.Field);
-      expect(actual).toHaveLength(2);
+    it('should render the right children', () => {
+      const wrapper = getFormGroup();
+      expectComponentToHaveChildren(wrapper, Form.Field, Form.Field);
     });
   });
 
   describe('the first `Form.Field` component', () => {
     it('should render one Semantic UI `Image` component', () => {
-      const formField = getCaptchaInput()
+      const wrapper = getCaptchaInput()
         .find(Form.Field)
         .at(0);
-      const actual = formField.children(Image);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, Image);
     });
   });
 
   describe('the `Image` component', () => {
     it('should get the right props', () => {
-      const imageComponent = getCaptchaInput().find(Image);
-      const actual = imageComponent.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          src: image,
-        })
-      );
+      const wrapper = getCaptchaInput().find(Image);
+      expectComponentToHaveProps(wrapper, {
+        src: image,
+      });
     });
   });
 
   describe('the second `Form.Field` component', () => {
     it('should render one Lodgify UI `TextInput` component', () => {
-      const formField = getCaptchaInput()
+      const wrapper = getCaptchaInput()
         .find(Form.Field)
         .at(1);
-      const actual = formField.children(TextInput);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, TextInput);
     });
   });
 
   describe('the `TextInput` component', () => {
     it('should get the right props', () => {
-      const textInput = getCaptchaInput().find(TextInput);
-      const actual = textInput.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          error: false,
-          isValid: false,
-          label: '',
-          name: '',
-          onChange: Function.prototype,
-        })
-      );
+      const wrapper = getCaptchaInput().find(TextInput);
+      expectComponentToHaveProps(wrapper, {
+        error: false,
+        isValid: false,
+        label: '',
+        name: '',
+        onChange: Function.prototype,
+      });
     });
   });
 
