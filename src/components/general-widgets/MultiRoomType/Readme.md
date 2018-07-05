@@ -23,8 +23,8 @@ const images = [
   guestsNumber={3}
   nightPrice="$280"
   name="The Cat House"
-  ratingNumber={4.8}
+  ratingNumber={3.4}
   slideShowImages={images}
-  checkAvailability={console.log}
+  checkAvailabilityHandler={console.log}
 />
 ```

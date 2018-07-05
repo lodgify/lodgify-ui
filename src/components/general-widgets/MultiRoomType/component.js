@@ -1,91 +1,73 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, List, Rating } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 
 import { Button } from 'elements/Button';
+import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
-import { Icon } from 'elements/Icon';
 import { Slideshow } from 'media/Slideshow';
+import { withResponsive } from 'utils/with-responsive';
 
-import { getPluralString } from './utils/getPluralString';
+import { getRatingMarkup } from './utils/getRatingMarkup';
+import { getRoomFeaturesMarkup } from './utils/getRoomFeaturesMarkup';
 
 /**
  * The standard widget for a multi room.
  * @returns {Object}
  */
-export const Component = ({
+const Component = ({
   bathroomsNumber,
   bedsNumber,
+  checkAvailabilityHandler,
   guestsNumber,
-  nightPrice,
+  isUserOnMobile,
   name,
+  nightPrice,
   ratingNumber,
   slideShowImages,
-  checkAvailabilityHandler,
 }) => (
   <Card fluid>
     <Grid>
       <GridRow>
-        <GridColumn verticalAlignContent={null} width={4}>
+        <GridColumn computer={4} mobile={12} verticalAlignContent={null}>
           <Slideshow
             additionalClass="fit-height no-shadow no-border-radius"
             images={slideShowImages}
             showBullets={false}
           />
         </GridColumn>
-        <GridColumn width={8}>
+        <GridColumn computer={8} mobile={12}>
           <Grid padded>
-            <GridRow columns={2}>
-              <GridColumn width={8}>
-                <Heading>{name}</Heading>
-              </GridColumn>
-              <GridColumn textAlign="right" width={4}>
-                {ratingNumber}
-                <Rating
-                  disabled
-                  maxRating={5}
-                  rating={Math.round(ratingNumber)}
-                  size="tiny"
-                />
-              </GridColumn>
-            </GridRow>
-            <List floated="left" horizontal>
-              <List.Item>
-                <Icon
-                  label={getPluralString(guestsNumber, 'Guest', 'Guests')}
-                  name="guests"
-                  size="small"
-                />
-              </List.Item>
-              <List.Item>
-                <Icon
-                  label={getPluralString(bedsNumber, 'Bedroom', 'Bedrooms')}
-                  name="double bed"
-                  size="small"
-                />
-              </List.Item>
-              <List.Item>
-                <Icon
-                  label={getPluralString(
-                    bathroomsNumber,
-                    'Bathroom',
-                    'Bathrooms'
-                  )}
-                  name="bathroom"
-                  size="small"
-                />
-              </List.Item>
-            </List>
+            <GridColumn computer={8} mobile={12} tablet={8}>
+              <Heading>{name}</Heading>
+            </GridColumn>
+            <GridColumn computer={4} only="tablet computer" textAlign="right">
+              {getRatingMarkup(ratingNumber)}
+            </GridColumn>
+            {getRoomFeaturesMarkup({
+              bedsNumber,
+              bathroomsNumber,
+              guestsNumber,
+              isUserOnMobile,
+            })}
+            <ShowOnMobile>{getRatingMarkup(ratingNumber)}</ShowOnMobile>
             <GridRow>
-              <GridColumn textAlign="right" width={12}>
+              <GridColumn
+                textAlign={isUserOnMobile ? 'left' : 'right'}
+                width={12}
+              >
                 <Card.Description>
                   from <Heading>{nightPrice}</Heading> /night
                 </Card.Description>
+                <ShowOnMobile>
+                  <Divider />
+                </ShowOnMobile>
                 <Button
-                  isPositionedRight
+                  isPositionedRight={isUserOnMobile === false}
                   isRounded
                   onClick={checkAvailabilityHandler}
                 >
@@ -111,6 +93,12 @@ Component.propTypes = {
   checkAvailabilityHandler: PropTypes.func.isRequired,
   /** The number of guests the multi room can accommodate. */
   guestsNumber: PropTypes.number.isRequired,
+  /**
+   * Is the user on a mobile device.
+   * Provided by `withResponsive` so ignored in the styleguide.
+   * @ignore
+   */
+  isUserOnMobile: PropTypes.bool.isRequired,
   /** The name of the multi room. */
   name: PropTypes.string.isRequired,
   /** The price per night of the multi room, with currency symbol. */
@@ -137,3 +125,5 @@ Component.propTypes = {
     })
   ).isRequired,
 };
+
+export const ComponentWithResponsive = withResponsive(Component);
