@@ -7,6 +7,9 @@ import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
+import { Link } from 'elements/Link';
+import { Icon } from 'elements/Icon';
+import { Modal } from 'elements/Modal';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
 import { Slideshow } from 'media/Slideshow';
@@ -14,16 +17,18 @@ import { withResponsive } from 'utils/with-responsive';
 
 import { getRatingMarkup } from './utils/getRatingMarkup';
 import { getRoomFeaturesMarkup } from './utils/getRoomFeaturesMarkup';
+import { getModalContentMarkup } from './utils/getModalContentMarkup';
 
 /**
  * The standard widget for a multi room.
  * @returns {Object}
  */
 const Component = ({
-  bathroomsNumber,
-  bedsNumber,
+  amenities,
   checkAvailabilityHandler,
-  guestsNumber,
+  description,
+  extraFeatures,
+  features,
   isUserOnMobile,
   name,
   nightPrice,
@@ -42,23 +47,68 @@ const Component = ({
         </GridColumn>
         <GridColumn computer={8} mobile={12}>
           <Grid padded>
-            <GridColumn computer={8} mobile={12} tablet={8}>
+            <GridColumn floated="left" width={8}>
               <Heading>{name}</Heading>
             </GridColumn>
-            <GridColumn computer={4} only="tablet computer" textAlign="right">
-              {getRatingMarkup(ratingNumber)}
+            <GridColumn
+              computer={4}
+              mobile={2}
+              textAlign="right"
+              verticalAlignContent={isUserOnMobile ? 'middle' : 'top'}
+            >
+              {isUserOnMobile ? (
+                <Modal
+                  trigger={
+                    <Icon
+                      color="yellow"
+                      isCircular
+                      isColorInverted
+                      name="info"
+                      size="small"
+                    />
+                  }
+                >
+                  {getModalContentMarkup(
+                    amenities,
+                    checkAvailabilityHandler,
+                    description,
+                    extraFeatures,
+                    features,
+                    name,
+                    nightPrice,
+                    ratingNumber,
+                    slideShowImages
+                  )}
+                </Modal>
+              ) : (
+                getRatingMarkup(ratingNumber)
+              )}
             </GridColumn>
-            {getRoomFeaturesMarkup({
-              bedsNumber,
-              bathroomsNumber,
-              guestsNumber,
-              isUserOnMobile,
-            })}
+            {getRoomFeaturesMarkup(isUserOnMobile, features)}
             <ShowOnMobile>{getRatingMarkup(ratingNumber)}</ShowOnMobile>
             <GridRow>
               <GridColumn
+                only="tablet computer"
+                verticalAlignContent="bottom"
+                width={4}
+              >
+                <Modal trigger={<Link>More Info</Link>}>
+                  {getModalContentMarkup(
+                    amenities,
+                    checkAvailabilityHandler,
+                    description,
+                    extraFeatures,
+                    features,
+                    name,
+                    nightPrice,
+                    ratingNumber,
+                    slideShowImages
+                  )}
+                </Modal>
+              </GridColumn>
+              <GridColumn
                 textAlign={isUserOnMobile ? 'left' : 'right'}
-                width={12}
+                width={8}
               >
                 <Card.Description>
                   from <Heading>{nightPrice}</Heading> /night
@@ -84,15 +134,44 @@ const Component = ({
 
 Component.displayName = 'MultiRoomType';
 
+Component.defaultProps = {
+  extraFeatures: [],
+};
+
 Component.propTypes = {
-  /** The number of available bathrooms at the multi room. */
-  bathroomsNumber: PropTypes.number.isRequired,
-  /** The number of available beds at the multi room. */
-  bedsNumber: PropTypes.number.isRequired,
+  /** A list of amenities displayed in the modal */
+  amenities: PropTypes.arrayOf(
+    PropTypes.shape({
+      /**
+       * The name of the icon to display.
+       * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/Icon)
+       */
+      iconName: PropTypes.string.isRequired,
+      /** Is the amenity disabled. */
+      isDisabled: PropTypes.bool,
+      /** A visible label to display for the amenity. */
+      label: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   /** A function called when check availability button is clicked. */
   checkAvailabilityHandler: PropTypes.func.isRequired,
-  /** The number of guests the multi room can accommodate. */
-  guestsNumber: PropTypes.number.isRequired,
+  /** A description to be displayed in the more information modal */
+  description: PropTypes.string.isRequired,
+  /** The room features to display in the modal */
+  extraFeatures: PropTypes.arrayOf(
+    PropTypes.shape({
+      count: PropTypes.number,
+      name: PropTypes.string,
+    })
+  ),
+  /** The room features to display in the card and modal */
+  features: PropTypes.arrayOf(
+    PropTypes.shape({
+      count: PropTypes.number,
+      iconName: PropTypes.string,
+      label: PropTypes.string,
+    })
+  ).isRequired,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.

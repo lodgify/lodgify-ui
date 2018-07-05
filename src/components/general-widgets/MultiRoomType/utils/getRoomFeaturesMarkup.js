@@ -4,50 +4,21 @@ import { List } from 'semantic-ui-react';
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
-import { getPluralString } from './getPluralString';
-
-export const getRoomInfo = ({ guestsNumber, bedsNumber, bathroomsNumber }) => [
-  {
-    name: getPluralString(guestsNumber, 'Guest', 'Guests'),
-    icon: 'guests',
-  },
-  {
-    name: getPluralString(bedsNumber, 'Bedroom', 'Bedrooms'),
-    icon: 'double bed',
-  },
-  {
-    name: getPluralString(bathroomsNumber, 'Bathroom', 'Bathrooms'),
-    icon: 'bathroom',
-  },
-];
-
 /**
- * @param  {Object}  roomFeature
- * @param  {Boolean} roomFeature.isUserOnMobile
- * @param  {Number}  roomFeature.guestsNumber
- * @param  {Number}  roomFeature.bedsNumber
- * @param  {Number}  roomFeature.bathroomsNumber
- * @return {String}
+ * @param  {Boolean} showIcons
+ * @param  {Object[]}  features
+ * @return {Object}
  */
-export const getRoomFeaturesMarkup = ({
-  /* eslint-disable react/prop-types */
-  isUserOnMobile,
-  guestsNumber,
-  bedsNumber,
-  bathroomsNumber,
-  /* eslint-enable */
-}) => (
+export const getRoomFeaturesMarkup = (showIcons, features) => (
   <List floated="left" horizontal>
-    {getRoomInfo({ guestsNumber, bedsNumber, bathroomsNumber }).map(
-      (infoItem, index) => (
-        <List.Item key={index}>
-          {isUserOnMobile ? (
-            <Paragraph>{infoItem.name}</Paragraph>
-          ) : (
-            <Icon label={infoItem.name} name={infoItem.icon} size="small" />
-          )}
-        </List.Item>
-      )
-    )}
+    {features.map((infoItem, index) => (
+      <List.Item key={index}>
+        {showIcons ? (
+          <Paragraph>{infoItem.label}</Paragraph>
+        ) : (
+          <Icon label={infoItem.label} name={infoItem.iconName} size="small" />
+        )}
+      </List.Item>
+    ))}
   </List>
 );
