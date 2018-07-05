@@ -1,36 +1,37 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import {
+  expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 import { List } from 'semantic-ui-react';
 
+import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Paragraph } from 'typography/Paragraph';
 import { Icon } from 'elements/Icon';
 
-import { getRoomFeaturesMarkup, getRoomInfo } from './getRoomFeaturesMarkup';
+import { getRoomFeaturesMarkup } from './getRoomFeaturesMarkup';
 
-const props = {
-  bathroomsNumber: 1,
-  bedsNumber: 1,
-  guestsNumber: 1,
-};
+const features = [
+  { iconName: 'double bed', label: '1 Bedroom' },
+  { iconName: 'guests', label: '2 Guests' },
+  { label: '1 Terrace' },
+];
 
-const getRoomFeatureInstance = (isUserOnMobile = false) =>
-  shallow(
-    <div>
-      {getRoomFeaturesMarkup({
-        isUserOnMobile,
-        ...props,
-      })}
-    </div>
-  ).find(List);
+const getMarkup = (isUserOnMobile = false) =>
+  shallow(<div>{getRoomFeaturesMarkup(isUserOnMobile, features)}</div>);
 
 describe('`getRoomFeaturesMarkup`', () => {
-  it('it should have the correct props', () => {
-    const wrapper = getRoomFeatureInstance();
+  const getList = () => getMarkup().find(List);
 
+  it('should return a single wrapping `div`', () => {
+    const wrapper = getMarkup();
+    expectComponentToBe(wrapper, 'div');
+  });
+
+  it('it should have the correct props', () => {
+    const wrapper = getList();
     expectComponentToHaveProps(wrapper, {
       floated: 'left',
       horizontal: true,
@@ -38,48 +39,41 @@ describe('`getRoomFeaturesMarkup`', () => {
   });
 
   it('it should correctly return the correct children', () => {
-    const wrapper = getRoomFeatureInstance();
-
-    expectComponentToHaveChildren(wrapper, List.Item, List.Item, List.Item);
+    const wrapper = getList();
+    expectComponentToHaveChildren(
+      wrapper,
+      ...getArrayOfLengthOfItem(features.length, List.Item)
+    );
   });
 
-  getRoomInfo({
-    ...props,
-  }).forEach((item, index) => {
-    describe('`List.Item` at index ' + index, () => {
-      it('should have the right children', () => {
-        const wrapper = getRoomFeatureInstance()
-          .find(List.Item)
-          .at(index);
+  describe('each `List.Item`', () => {
+    it('should have the right children', () => {
+      const wrapper = getMarkup()
+        .find(List.Item)
+        .at(0);
+      expectComponentToHaveChildren(wrapper, Icon);
+    });
+  });
 
-        expectComponentToHaveChildren(wrapper, Icon);
+  describe('each `Icon`', () => {
+    it('should have the right props', () => {
+      const wrapper = getMarkup()
+        .find(Icon)
+        .at(0);
+      expectComponentToHaveProps(wrapper, {
+        label: features[0].label,
+        name: features[0].iconName,
+        size: 'small',
       });
     });
+  });
 
-    describe('`Icon` at index ' + index, () => {
-      it('should have the right props', () => {
-        const wrapper = getRoomFeatureInstance()
-          .find(Icon)
-          .at(index);
-
-        expectComponentToHaveProps(wrapper, {
-          label: item.name,
-          name: item.icon,
-          size: 'small',
-        });
-      });
+  describe('if `showIcons === false`', () => {
+    it('should render the right children', () => {
+      const wrapper = getMarkup(true)
+        .find(List.Item)
+        .at(0);
+      expectComponentToHaveChildren(wrapper, Paragraph);
     });
-
-    describe(
-      '`Icon` at index should be hidden on mobile devices' + index,
-      () => {
-        it('should have the right props', () => {
-          const wrapper = getRoomFeatureInstance(true)
-            .find(List.Item)
-            .at(index);
-          expectComponentToHaveChildren(wrapper, Paragraph);
-        });
-      }
-    );
   });
 });

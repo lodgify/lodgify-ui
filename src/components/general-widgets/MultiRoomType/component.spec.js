@@ -19,13 +19,11 @@ import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 import { Slideshow } from 'media/Slideshow';
 
-import { getPluralString } from './utils/getPluralString';
 import { ComponentWithResponsive as MultiRoomType } from './component';
 
 const props = {
-  bathroomsNumber: 2,
-  bedsNumber: 3,
-  guestsNumber: 3,
+  amenities: [{ iconName: 'wheelchair', label: 'Elevator' }],
+  description: 'yayayay',
   imageUrl: '🐱🐱',
   locationName: 'Catania',
   nightPrice: '$280',
@@ -52,6 +50,8 @@ const props = {
     },
   ],
   isUserOnMobile: false,
+  extraFeatures: [{ label: '1 Dining-Room' }],
+  features: [{ iconName: 'double bed', label: '1 Bedroom' }],
 };
 
 const getMultiRoomType = () => shallow(<MultiRoomType {...props} />);
@@ -124,7 +124,9 @@ describe('<MultiRoomType />', () => {
 
   describe('the `Slideshow`', () => {
     it('should have the right props', () => {
-      const wrapper = getWrappedMultiRoomType().find(Slideshow);
+      const wrapper = getWrappedMultiRoomType()
+        .find(Slideshow)
+        .at(0);
       expectComponentToHaveProps(wrapper, {
         additionalClass: 'fit-height no-shadow no-border-radius',
         images: props.slideShowImages,
@@ -168,7 +170,6 @@ describe('<MultiRoomType />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGrid();
-
       expectComponentToHaveChildren(
         wrapper,
         GridColumn,
@@ -232,7 +233,11 @@ describe('<MultiRoomType />', () => {
   });
 
   describe('the `List`', () => {
-    const getList = () => getWrappedMultiRoomType().find(List);
+    const getList = () =>
+      getWrappedMultiRoomType()
+        .find(List)
+        .at(0);
+
     it('should have the right props', () => {
       const wrapper = getList();
       expectComponentToHaveProps(wrapper, {
@@ -245,53 +250,27 @@ describe('<MultiRoomType />', () => {
       const wrapper = getList();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(3, List.Item)
+        ...getArrayOfLengthOfItem(1, List.Item)
       );
     });
   });
 
   describe('each `List.Item`', () => {
     it('should render the right children', () => {
-      getWrappedMultiRoomType()
+      const wrapper = getWrappedMultiRoomType()
         .find(List.Item)
-        .forEach(wrapper => expectComponentToHaveChildren(wrapper, Icon));
+        .at(0);
+      expectComponentToHaveChildren(wrapper, Icon);
     });
   });
 
-  describe('the first `Icon`', () => {
+  describe('each `Icon`', () => {
     it('should have the right props', () => {
       const wrapper = getWrappedMultiRoomType()
         .find(Icon)
         .at(0);
       expectComponentToHaveProps(wrapper, {
-        label: getPluralString(props.guestsNumber, 'Guest', 'Guests'),
-        name: 'guests',
-        size: 'small',
-      });
-    });
-  });
-
-  describe('the second `Icon`', () => {
-    it('should have the right props', () => {
-      const wrapper = getWrappedMultiRoomType()
-        .find(Icon)
-        .at(1);
-      expectComponentToHaveProps(wrapper, {
-        label: getPluralString(props.bedsNumber, 'Bedroom', 'Bedrooms'),
-        name: 'double bed',
-        size: 'small',
-      });
-    });
-  });
-
-  describe('the third `Icon`', () => {
-    it('should have the right props', () => {
-      const wrapper = getWrappedMultiRoomType()
-        .find(Icon)
-        .at(2);
-      expectComponentToHaveProps(wrapper, {
-        label: getPluralString(props.bathroomsNumber, 'Bathroom', 'Bathrooms'),
-        name: 'bathroom',
+        label: props.features[0].label,
         size: 'small',
       });
     });
@@ -308,13 +287,16 @@ describe('<MultiRoomType />', () => {
     it('should have the right children', () => {
       const wrapper = getWrappedMultiRoomType()
         .find(Heading)
-        .at(1);
+        .at(2);
       expectComponentToHaveChildren(wrapper, props.nightPrice);
     });
   });
 
   describe('the `Button`', () => {
-    const getButton = () => getWrappedMultiRoomType().find(Button);
+    const getButton = () =>
+      getWrappedMultiRoomType()
+        .find(Button)
+        .at(0);
 
     it('should have the right props', () => {
       const wrapper = getButton();
