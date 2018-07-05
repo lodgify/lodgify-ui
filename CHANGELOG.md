@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/lodgify/lodgify-ui/compare/v1.12.0...v1.13.0) (2018-07-05)
+
+
+### Features
+
+* **MultiRoomType:** To make this component responsive ([ce20099](https://github.com/lodgify/lodgify-ui/commit/ce20099))
+
 # [1.12.0](https://github.com/lodgify/lodgify-ui/compare/v1.11.2...v1.12.0) (2018-07-04)
 
 
