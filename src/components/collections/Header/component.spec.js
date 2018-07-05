@@ -1,6 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import { Menu } from 'semantic-ui-react';
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+  expectComponentToHaveProps,
+  expectComponentToHaveDisplayName,
+} from '@lodgify/enzyme-jest-expect-helpers';
+
+import { Button } from 'elements/Button';
+import { Heading } from 'typography/Heading';
+import { Submenu } from 'elements/Submenu';
 
 import { Component as Header } from './component';
 import { navigationItems } from './mock-data/navigationItems';
@@ -8,259 +18,182 @@ import { navigationItems } from './mock-data/navigationItems';
 const logoText = 'someLogoText';
 const primaryCTA = { href: 'someHref', text: 'someText' };
 
+const getHeader = props =>
+  shallow(
+    <Header logoText={logoText} navigationItems={navigationItems} {...props} />
+  );
+
 describe('<Header />', () => {
   it('should render a single Semantic UI `Menu` component', () => {
-    const header = shallow(
-      <Header logoText={logoText} navigationItems={navigationItems} />
-    );
-    const actual = header.find('Menu');
-    expect(actual).toHaveLength(1);
+    const wrapper = getHeader();
+    expectComponentToBe(wrapper, Menu);
   });
 
   describe('the Semantic UI `Menu` component', () => {
-    it('should have prop `borderless === true`', () => {
-      const semanticMenu = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      ).find('Menu');
-      const actual = semanticMenu.prop('borderless');
-      expect(actual).toBe(true);
+    it('should have the right props', () => {
+      const wrapper = getHeader();
+      expectComponentToHaveProps(wrapper, { borderless: true });
     });
 
-    it('should render only two children', () => {
-      const semanticMenu = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      ).find('Menu');
-      const actual = semanticMenu.children();
-      expect(actual).toHaveLength(2);
-    });
-
-    it('should first render a Semantic UI `Menu.Item`', () => {
-      const semanticMenu = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      ).find('Menu');
-      const actual = semanticMenu.children('MenuItem');
-      expect(actual).toHaveLength(1);
-    });
-
-    it('should next render a Semantic UI `Menu.Menu`', () => {
-      const semanticMenu = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      ).find('Menu');
-      const actual = semanticMenu.children('MenuMenu');
-      expect(actual).toHaveLength(1);
+    it('should render the right children', () => {
+      const wrapper = getHeader();
+      expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Menu);
     });
   });
 
-  describe('the top-level Semantic UI `Menu.Item` component', () => {
-    it('should have props `link` and `href` set correctly', () => {
-      const semanticMenuItem = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      )
-        .find('Menu')
-        .children('MenuItem');
-      const actual = semanticMenuItem.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          href: '/',
-          link: true,
-        })
-      );
+  describe('the first Semantic UI `Menu.Item` component', () => {
+    it('should have props', () => {
+      const wrapper = getHeader()
+        .find(Menu)
+        .children(Menu.Item);
+      expectComponentToHaveProps(wrapper, { href: '/', link: true });
     });
 
     it('should render a single child', () => {
-      const semanticMenuItem = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      )
-        .find('Menu')
-        .children('MenuItem');
-      const actual = semanticMenuItem.children();
-      expect(actual).toHaveLength(1);
+      const wrapper = getHeader()
+        .find(Menu)
+        .children(Menu.Item);
+      expectComponentToHaveChildren(wrapper, Heading);
     });
 
-    it('should render a Lodgify UI `Heading` component by default', () => {
-      const semanticMenuItem = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      )
-        .find('Menu')
-        .children('MenuItem');
-      const actual = semanticMenuItem.children('Heading');
-      expect(actual).toHaveLength(1);
-      expect(actual.props()).toEqual(
-        expect.objectContaining({ children: logoText, size: 'small' })
-      );
-    });
-
-    it('should render a Semantic UI `Image` component if `props.logoSrc` is a string', () => {
-      const logoSrc = 'someLogoSrc';
-      const semanticMenuItem = shallow(
-        <Header
-          logoSrc={logoSrc}
-          logoText={logoText}
-          navigationItems={navigationItems}
-        />
-      )
-        .find('Menu')
-        .children('MenuItem');
-      const actual = semanticMenuItem.children('Image');
-      expect(actual).toHaveLength(1);
-      expect(actual.props()).toEqual(
-        expect.objectContaining({ alt: logoText, src: logoSrc })
-      );
+    describe('the Heading component', () => {
+      it('should render a Lodgify UI `Heading` component by default with the right props', () => {
+        const wrapper = getHeader()
+          .find(Menu)
+          .children(Menu.Item)
+          .find(Heading);
+        expectComponentToHaveProps(wrapper, {
+          children: logoText,
+          size: 'small',
+        });
+      });
     });
   });
 
-  describe('the top-level Semantic UI `Menu.Menu` component', () => {
+  describe('the first Semantic UI `Menu.Menu` component', () => {
     it('should have prop `position` set as `right`', () => {
-      const semanticMenuMenu = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu.prop('position');
-      expect(actual).toBe('right');
+      const wrapper = getHeader({
+        logoText,
+        navigationItems,
+      })
+        .find(Menu)
+        .children(Menu.Menu);
+      expectComponentToHaveProps(wrapper, { position: 'right' });
     });
 
     it('should render a Lodgify UI `Submenu` component for each navigation item with sub items', () => {
-      const semanticMenuMenu = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu.children('Submenu');
-      expect(actual).toHaveLength(1);
+      const wrapper = getHeader({
+        logoText,
+        navigationItems,
+      })
+        .find(Menu)
+        .children(Menu.Menu)
+        .find(Submenu);
+
+      expectComponentToBe(wrapper, Submenu);
     });
 
     it('should render a Semantic UI `Menu.Item` component for each navigation item which is a link', () => {
-      const semanticMenuMenu = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu.children('MenuItem');
-      expect(actual).toHaveLength(1);
+      const wrapper = getHeader({
+        logoText,
+        navigationItems,
+      })
+        .find(Menu.Menu)
+        .children(Menu.Item);
+      expect(wrapper).toHaveLength(1);
     });
 
     it('should render a Semantic UI `Menu.Item` component for the primary cta if required', () => {
-      const semanticMenuMenu = shallow(
-        <Header
-          logoText={logoText}
-          navigationItems={navigationItems}
-          primaryCTA={primaryCTA}
-        />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu.children('MenuItem');
-      expect(actual).toHaveLength(2);
+      const wrapper = getHeader({
+        primaryCTA,
+      })
+        .find(Button)
+        .parent();
+      expectComponentToBe(wrapper, Menu.Item);
     });
   });
 
   describe('each `Submenu` component', () => {
     it('should get the right props', () => {
-      const semanticMenuMenu = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu.children('Submenu').props();
       const { subItems, text } = navigationItems[1];
-      expect(actual).toEqual(
-        expect.objectContaining({
-          isMenuItem: true,
-          isSimple: true,
-          isTriggerUnderlined: false,
-          isTriggeredOnHover: true,
-          items: subItems,
-          children: text,
-        })
-      );
+      const wrapper = getHeader().find(Submenu);
+
+      expectComponentToHaveProps(wrapper, {
+        isMenuItem: true,
+        isSimple: true,
+        isTriggerUnderlined: false,
+        isTriggeredOnHover: true,
+        items: subItems,
+        children: text,
+      });
     });
 
     it('should get `props.isTriggerUnderlined = true` if required', () => {
-      const semanticMenuMenu = shallow(
-        <Header
-          activeNavigationItemIndex={1}
-          logoText={logoText}
-          navigationItems={navigationItems}
-        />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu
-        .children('Submenu')
-        .prop('isTriggerUnderlined');
-      expect(actual).toBe(true);
+      const wrapper = getHeader({
+        activeNavigationItemIndex: 1,
+      }).find(Submenu);
+
+      expectComponentToHaveProps(wrapper, { isTriggerUnderlined: true });
     });
   });
 
   describe('each child `Menu.Item` component', () => {
     it('should get the right props', () => {
-      const semanticMenuMenu = shallow(
-        <Header logoText={logoText} navigationItems={navigationItems} />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu.children('MenuItem').props();
       const { href, text } = navigationItems[0];
-      expect(actual).toEqual(
-        expect.objectContaining({
-          active: false,
-          link: true,
-          href,
-          children: text,
-        })
-      );
+      const wrapper = getHeader()
+        .find(Menu.Item)
+        .at(1);
+
+      expectComponentToHaveProps(wrapper, {
+        active: false,
+        link: true,
+        href,
+        children: text,
+      });
     });
 
     it('should get `props.active = true` if required', () => {
-      const semanticMenuMenu = shallow(
-        <Header
-          activeNavigationItemIndex={0}
-          logoText={logoText}
-          navigationItems={navigationItems}
-        />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu.children('MenuItem').prop('active');
-      expect(actual).toBe(true);
+      const wrapper = getHeader({
+        activeNavigationItemIndex: 0,
+      })
+        .find(Menu.Item)
+        .at(1);
+
+      expectComponentToHaveProps(wrapper, { active: true });
     });
   });
 
   describe('the child `Menu.Item` component for the primary CTA', () => {
     it('should get the right props', () => {
-      const semanticMenuMenu = shallow(
-        <Header
-          logoText={logoText}
-          navigationItems={navigationItems}
-          primaryCTA={primaryCTA}
-        />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu.childAt(2).props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          className: 'no-underline',
-          link: true,
-          href: primaryCTA.href,
-        })
-      );
+      const wrapper = getHeader({
+        primaryCTA,
+      })
+        .find(Menu.Item)
+        .at(2);
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'no-underline',
+        link: true,
+        href: primaryCTA.href,
+      });
     });
 
-    it('should render a Lodgify UI `Button` component with text', () => {
-      const semanticMenuMenu = shallow(
-        <Header
-          logoText={logoText}
-          navigationItems={navigationItems}
-          primaryCTA={primaryCTA}
-        />
-      )
-        .find('Menu')
-        .children('MenuMenu');
-      const actual = semanticMenuMenu.childAt(2).find('Button');
-      expect(actual).toHaveLength(1);
-      expect(actual.prop('children')).toBe(primaryCTA.text);
+    describe('the Lodgify UI `Button`', () => {
+      it('should render a Lodgify UI `Button` component', () => {
+        const wrapper = getHeader({
+          primaryCTA,
+        })
+          .find(Menu.Item)
+          .at(2);
+        expectComponentToHaveChildren(wrapper, Button);
+      });
+
+      it('should have the right children', () => {
+        const wrapper = getHeader({
+          primaryCTA,
+        }).find(Button);
+        expectComponentToHaveChildren(wrapper, primaryCTA.text);
+      });
     });
   });
 

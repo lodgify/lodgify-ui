@@ -4,6 +4,7 @@ import { Modal as SemanticModal } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
@@ -24,16 +25,13 @@ describe('<Modal />', () => {
   describe('the Semantic UI `Modal` component', () => {
     it('should get the right props', () => {
       const wrapper = getModal();
-      const actual = wrapper.find('Modal').props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          closeIcon: <Icon name="close" />,
-          content,
-          dimmer: 'inverted',
-          size: 'tiny',
-          trigger,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        closeIcon: <Icon name="close" />,
+        content,
+        dimmer: 'inverted',
+        size: 'tiny',
+        trigger,
+      });
     });
   });
 

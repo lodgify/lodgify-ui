@@ -1,3 +1,11 @@
+# [1.12.0](https://github.com/lodgify/lodgify-ui/compare/v1.11.2...v1.12.0) (2018-07-04)
+
+
+### Features
+
+* **MultiRoomType:** implement general-widget ([8e416ee](https://github.com/lodgify/lodgify-ui/commit/8e416ee))
+* **Slideshow:** extend to pass extra props to ImageGallery ([7b8d399](https://github.com/lodgify/lodgify-ui/commit/7b8d399))
+
 ## [1.11.2](https://github.com/lodgify/lodgify-ui/compare/v1.11.1...v1.11.2) (2018-06-27)
 
 
