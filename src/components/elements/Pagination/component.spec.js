@@ -4,6 +4,7 @@ import { Pagination as SemanticPagination } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { nextItem, pageItem, prevItem } from './navigationMarkup';
@@ -19,21 +20,18 @@ describe('<Pagination />', () => {
 
   it('should pass the right props to the Semantic UI `Pagination` component', () => {
     const wrapper = getPagination();
-    const actual = wrapper.find('Pagination').props();
-    expect(actual).toEqual(
-      expect.objectContaining({
-        boundaryRange: 10,
-        defaultActivePage: 1,
-        firstItem: null,
-        lastItem: null,
-        nextItem: nextItem,
-        onPageChange: expect.any(Function),
-        pageItem: pageItem,
-        prevItem: prevItem,
-        secondary: true,
-        totalPages: 5,
-      })
-    );
+    expectComponentToHaveProps(wrapper, {
+      boundaryRange: 10,
+      defaultActivePage: 1,
+      firstItem: null,
+      lastItem: null,
+      nextItem: nextItem,
+      onPageChange: expect.any(Function),
+      pageItem: pageItem,
+      prevItem: prevItem,
+      secondary: true,
+      totalPages: 5,
+    });
   });
 
   it('should have displayName `Pagination`', () => {
