@@ -1,1 +1,1 @@
-export { Component as MultiRoomType } from './component';
+export { ComponentWithResponsive as MultiRoomType } from './component';
