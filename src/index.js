@@ -33,7 +33,6 @@ export {
 export {
   FeaturedRoomTypes,
 } from './components/general-widgets/FeaturedRoomTypes';
-export { MultiRoomType } from './components/general-widgets/MultiRoomType';
 export { HTML } from './components/general-widgets/HTML';
 export { OwnerLogin } from './components/general-widgets/OwnerLogin';
 export { OwnerSignUp } from './components/general-widgets/OwnerSignUp';
@@ -79,6 +78,9 @@ export {
   PaymentInformation,
 } from './components/property-page-widgets/PaymentInformation';
 export { Pictures } from './components/property-page-widgets/Pictures';
+export {
+  PropertyRoomType,
+} from './components/property-page-widgets/PropertyRoomType';
 export { Rates } from './components/property-page-widgets/Rates';
 export { Reviews } from './components/property-page-widgets/Reviews';
 export { Rules } from './components/property-page-widgets/Rules';

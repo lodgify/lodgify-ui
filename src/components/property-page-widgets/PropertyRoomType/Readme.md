@@ -42,7 +42,7 @@ const roomTypeFeatures = [
   { iconName: 'bathroom',  label: '1 Bathroom' }, 
 ];
 
-<MultiRoomType
+<PropertyRoomType
   bathroomsNumber={2}
   bedsNumber={3}
   description={description}
