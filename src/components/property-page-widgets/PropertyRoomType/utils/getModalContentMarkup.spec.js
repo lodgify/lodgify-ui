@@ -22,7 +22,7 @@ const amenities = [
   { iconName: 'coffee', label: 'Free Coffee', isDisabled: true },
 ];
 
-const checkAvailabilityHandler = Function.prototype;
+const onClickCheckAvailability = Function.prototype;
 const description = 'yoyo description';
 const extraFeatures = [{ label: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', label: '1 Bedroom' }];
@@ -46,7 +46,7 @@ const getMarkup = () =>
   shallow(
     getModalContentMarkup(
       amenities,
-      checkAvailabilityHandler,
+      onClickCheckAvailability,
       description,
       extraFeatures,
       features,
