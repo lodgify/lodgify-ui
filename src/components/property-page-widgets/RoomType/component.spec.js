@@ -8,24 +8,23 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Button } from 'elements/Button';
+import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
-import { Divider } from 'elements/Divider';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
+import { Link } from 'elements/Link';
+import { Modal } from 'elements/Modal';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Slideshow } from 'media/Slideshow';
 
-import { getPluralString } from './utils/getPluralString';
-import { ComponentWithResponsive as MultiRoomType } from './component';
+import { ComponentWithResponsive as RoomType } from './component';
 
 const props = {
-  bathroomsNumber: 2,
-  bedsNumber: 3,
-  guestsNumber: 3,
+  amenities: [{ iconName: 'wheelchair', label: 'Elevator' }],
+  description: 'yayayay',
   imageUrl: '🐱🐱',
   locationName: 'Catania',
   nightPrice: '$280',
@@ -33,7 +32,7 @@ const props = {
   propertyType: 'Bed and breakfast',
   propertyUrl: '/',
   ratingNumber: 4,
-  checkAvailabilityHandler: Function.prototype,
+  onClickCheckAvailability: Function.prototype,
   slideShowImages: [
     {
       alternativeText: 'Two cats',
@@ -52,37 +51,43 @@ const props = {
     },
   ],
   isUserOnMobile: false,
+  extraFeatures: [{ label: '1 Dining-Room' }],
+  features: [{ iconName: 'double bed', label: '1 Bedroom' }],
 };
 
-const getMultiRoomType = () => shallow(<MultiRoomType {...props} />);
-const getWrappedMultiRoomType = () => {
-  const Child = getMultiRoomType().prop('as');
-  return shallow(<Child {...props} />);
+const getRoomType = extraProps =>
+  shallow(<RoomType {...props} {...extraProps} />);
+const getWrappedRoomType = extraProps => {
+  const Child = getRoomType().prop('as');
+  return shallow(<Child {...props} {...extraProps} />);
 };
 
-describe('<MultiRoomType />', () => {
-  it('should render a single Semantic UI `Responsive` component', () => {
-    const wrapper = getMultiRoomType();
+describe('<RoomType />', () => {
+  it('should be wrapped in a Semantic UI `Responsive` component', () => {
+    const wrapper = getRoomType();
     expectComponentToBe(wrapper, Responsive);
   });
 
-  describe('`Card`', () => {
-    const firstCardInComponent = () => getWrappedMultiRoomType().find(Card);
+  describe('the wrapper `RoomType` component', () => {
+    it('should be a Semantic UI `Card`', () => {
+      const wrapper = getWrappedRoomType();
+      expectComponentToBe(wrapper, Card);
+    });
 
     it('should have the right props', () => {
-      const wrapper = firstCardInComponent();
+      const wrapper = getWrappedRoomType();
       expectComponentToHaveProps(wrapper, { fluid: true });
     });
 
     it('should have one child', () => {
-      const wrapper = firstCardInComponent();
+      const wrapper = getWrappedRoomType();
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
   describe('the first Grid`', () => {
     it('should render the right children', () => {
-      const wrapper = getWrappedMultiRoomType()
+      const wrapper = getWrappedRoomType()
         .find(Grid)
         .first();
       expectComponentToHaveChildren(wrapper, GridRow);
@@ -91,7 +96,7 @@ describe('<MultiRoomType />', () => {
 
   describe('the first `GridRow`', () => {
     const getFirstGridRow = () =>
-      getWrappedMultiRoomType()
+      getWrappedRoomType()
         .find(GridRow)
         .first();
 
@@ -103,7 +108,7 @@ describe('<MultiRoomType />', () => {
 
   describe('the first `GridColumn`', () => {
     const getFirstGridColumn = () =>
-      getWrappedMultiRoomType()
+      getWrappedRoomType()
         .find(GridColumn)
         .first();
 
@@ -115,16 +120,18 @@ describe('<MultiRoomType />', () => {
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
       expectComponentToHaveProps(wrapper, {
-        verticalAlignContent: null,
         computer: 4,
         mobile: 12,
+        verticalAlignContent: null,
       });
     });
   });
 
   describe('the `Slideshow`', () => {
     it('should have the right props', () => {
-      const wrapper = getWrappedMultiRoomType().find(Slideshow);
+      const wrapper = getWrappedRoomType()
+        .find(Slideshow)
+        .at(0);
       expectComponentToHaveProps(wrapper, {
         additionalClass: 'fit-height no-shadow no-border-radius',
         images: props.slideShowImages,
@@ -135,7 +142,7 @@ describe('<MultiRoomType />', () => {
 
   describe('the second `GridColumn`', () => {
     const getSecondGridColumn = () =>
-      getWrappedMultiRoomType()
+      getWrappedRoomType()
         .find(GridColumn)
         .at(1);
 
@@ -155,7 +162,7 @@ describe('<MultiRoomType />', () => {
 
   describe('the second `Grid`', () => {
     const getSecondGrid = () =>
-      getWrappedMultiRoomType()
+      getWrappedRoomType()
         .find(Grid)
         .at(1);
 
@@ -168,7 +175,6 @@ describe('<MultiRoomType />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGrid();
-
       expectComponentToHaveChildren(
         wrapper,
         GridColumn,
@@ -180,18 +186,16 @@ describe('<MultiRoomType />', () => {
     });
   });
 
-  describe('the third `GridColumn`', () => {
+  describe('the first `GridColumn`', () => {
     const getThirdGridColumn = () =>
-      getWrappedMultiRoomType()
+      getWrappedRoomType()
         .find(GridColumn)
         .at(2);
 
     it('should have the right props', () => {
       const wrapper = getThirdGridColumn();
       expectComponentToHaveProps(wrapper, {
-        computer: 8,
-        mobile: 12,
-        tablet: 8,
+        width: 8,
       });
     });
 
@@ -203,7 +207,7 @@ describe('<MultiRoomType />', () => {
 
   describe('the first `Heading`', () => {
     it('should have the right children', () => {
-      const wrapper = getWrappedMultiRoomType()
+      const wrapper = getWrappedRoomType()
         .find(Heading)
         .at(0);
       expectComponentToHaveChildren(wrapper, props.name);
@@ -212,7 +216,7 @@ describe('<MultiRoomType />', () => {
 
   describe('the fourth `GridColumn`', () => {
     const getFourthGridColumn = () =>
-      getWrappedMultiRoomType()
+      getWrappedRoomType()
         .find(GridColumn)
         .at(3);
 
@@ -220,8 +224,9 @@ describe('<MultiRoomType />', () => {
       const wrapper = getFourthGridColumn();
       expectComponentToHaveProps(wrapper, {
         computer: 4,
-        only: 'tablet computer',
+        mobile: 2,
         textAlign: 'right',
+        verticalAlignContent: 'top',
       });
     });
 
@@ -231,90 +236,116 @@ describe('<MultiRoomType />', () => {
     });
   });
 
-  describe('the `List`', () => {
-    const getList = () => getWrappedMultiRoomType().find(List);
+  describe('the `ShowOnMobile', () => {
+    it('should render the right children', () => {
+      const wrapper = getWrappedRoomType()
+        .find(ShowOnMobile)
+        .at(0);
+      expectComponentToHaveChildren(wrapper, 'div');
+    });
+  });
+
+  describe('the last `GridRow`', () => {
+    it('should have the right children', () => {
+      const wrapper = getWrappedRoomType()
+        .find(GridRow)
+        .at(1);
+      expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
+    });
+  });
+
+  describe('the fifth `GridColumn`', () => {
+    const getFifthGridColumn = () =>
+      getWrappedRoomType()
+        .find(GridColumn)
+        .at(4);
+
     it('should have the right props', () => {
-      const wrapper = getList();
+      const wrapper = getFifthGridColumn();
       expectComponentToHaveProps(wrapper, {
-        floated: 'left',
-        horizontal: true,
+        only: 'tablet computer',
+        verticalAlignContent: 'bottom',
+        width: 4,
       });
     });
 
+    it('should have the right children', () => {
+      const wrapper = getFifthGridColumn();
+      expectComponentToHaveChildren(wrapper, Modal);
+    });
+  });
+
+  describe('the second `Modal`', () => {
+    it('should have the right props', () => {
+      const wrapper = getWrappedRoomType()
+        .find(Modal)
+        .at(0);
+      expectComponentToHaveProps(wrapper, { trigger: <Link>More Info</Link> });
+    });
+  });
+
+  describe('the sixth `GridColumn`', () => {
+    const getSixthGridColumn = () =>
+      getWrappedRoomType()
+        .find(GridColumn)
+        .at(9);
+
+    it('should have the right props', () => {
+      const wrapper = getSixthGridColumn();
+      expectComponentToHaveProps(wrapper, { textAlign: 'right' });
+    });
+
     it('should render the right children', () => {
-      const wrapper = getList();
+      const wrapper = getSixthGridColumn();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(3, List.Item)
+        Card.Description,
+        ShowOnMobile,
+        Button
       );
     });
-  });
 
-  describe('each `List.Item`', () => {
-    it('should render the right children', () => {
-      getWrappedMultiRoomType()
-        .find(List.Item)
-        .forEach(wrapper => expectComponentToHaveChildren(wrapper, Icon));
-    });
-  });
-
-  describe('the first `Icon`', () => {
-    it('should have the right props', () => {
-      const wrapper = getWrappedMultiRoomType()
-        .find(Icon)
-        .at(0);
-      expectComponentToHaveProps(wrapper, {
-        label: getPluralString(props.guestsNumber, 'Guest', 'Guests'),
-        name: 'guests',
-        size: 'small',
-      });
-    });
-  });
-
-  describe('the second `Icon`', () => {
-    it('should have the right props', () => {
-      const wrapper = getWrappedMultiRoomType()
-        .find(Icon)
-        .at(1);
-      expectComponentToHaveProps(wrapper, {
-        label: getPluralString(props.bedsNumber, 'Bedroom', 'Bedrooms'),
-        name: 'double bed',
-        size: 'small',
-      });
-    });
-  });
-
-  describe('the third `Icon`', () => {
-    it('should have the right props', () => {
-      const wrapper = getWrappedMultiRoomType()
-        .find(Icon)
-        .at(2);
-      expectComponentToHaveProps(wrapper, {
-        label: getPluralString(props.bathroomsNumber, 'Bathroom', 'Bathrooms'),
-        name: 'bathroom',
-        size: 'small',
+    describe('if `isUserOnMobile === true`', () => {
+      it('should have the right props', () => {
+        const wrapper = getWrappedRoomType({ isUserOnMobile: true })
+          .find(Card.Description)
+          .at(0)
+          .parent();
+        expectComponentToHaveProps(wrapper, { textAlign: 'left' });
       });
     });
   });
 
   describe('the `Card.Description`', () => {
     it('should have the right children', () => {
-      const wrapper = getWrappedMultiRoomType().find(Card.Description);
+      const wrapper = getWrappedRoomType().find(Card.Description);
       expectComponentToHaveChildren(wrapper, 'from ', Heading, ' /night');
     });
   });
 
   describe('the second `Heading`', () => {
     it('should have the right children', () => {
-      const wrapper = getWrappedMultiRoomType()
+      const wrapper = getWrappedRoomType()
         .find(Heading)
-        .at(1);
+        .at(2);
       expectComponentToHaveChildren(wrapper, props.nightPrice);
     });
   });
 
+  describe('the second `ShowOnMobile`', () => {
+    it('should render the right children', () => {
+      const wrapper = getWrappedRoomType()
+        .find(ShowOnMobile)
+        .at(1);
+      expectComponentToHaveChildren(wrapper, Divider);
+    });
+  });
+
   describe('the `Button`', () => {
-    const getButton = () => getWrappedMultiRoomType().find(Button);
+    const getButton = () =>
+      getWrappedRoomType()
+        .find(Button)
+        .at(0);
 
     it('should have the right props', () => {
       const wrapper = getButton();
@@ -331,41 +362,55 @@ describe('<MultiRoomType />', () => {
     });
   });
 
-  it('should have displayName `MultiRoomType`', () => {
-    const component = getMultiRoomType().prop('as');
-    expectComponentToHaveDisplayName(component, 'MultiRoomType');
+  it('should have displayName `RoomType`', () => {
+    const component = getRoomType().prop('as');
+    expectComponentToHaveDisplayName(component, 'RoomType');
   });
 });
 
-describe('`MultiRoomType` in mobile view', () => {
-  describe('`getRatingMarkup`', () => {
-    it('should only be visible after the card list items', () => {
-      const wrapper = getWrappedMultiRoomType()
-        .find(ShowOnMobile)
-        .at(0);
-      expectComponentToHaveChildren(wrapper, 'div');
+describe('`RoomType` in mobile view', () => {
+  const getMobileFourthGrid = () =>
+    getWrappedRoomType({ isUserOnMobile: true })
+      .find(GridColumn)
+      .at(3);
+
+  describe('`the fourth `GridColumn`', () => {
+    it('should have the right props', () => {
+      const wrapper = getMobileFourthGrid();
+      expectComponentToHaveProps(wrapper, { verticalAlignContent: 'middle' });
     });
 
-    it('should not be visible next to the `Heading`', () => {
-      const wrapper = getWrappedMultiRoomType()
-        .find(Grid)
-        .at(1)
-        .find(GridColumn);
-      const column2 = wrapper.at(1);
-      expectComponentToHaveChildren(wrapper.at(0), Heading);
-      expectComponentToHaveChildren(column2, 'div');
-      expectComponentToHaveProps(column2, {
-        only: 'tablet computer',
+    it('should have the right children', () => {
+      const wrapper = getMobileFourthGrid();
+      expectComponentToHaveChildren(wrapper, Modal);
+    });
+  });
+
+  describe('the `Modal`', () => {
+    it('should have the right props', () => {
+      const wrapper = getWrappedRoomType({ isUserOnMobile: true })
+        .find(Modal)
+        .at(0);
+      expectComponentToHaveProps(wrapper, {
+        trigger: (
+          <Icon
+            color="yellow"
+            isCircular
+            isColorInverted
+            name="info"
+            size="small"
+          />
+        ),
       });
     });
   });
 
-  describe('the second `ShowMobile`', () => {
-    it('should render the right children', () => {
-      const wrapper = getWrappedMultiRoomType()
-        .find(ShowOnMobile)
-        .at(1);
-      expectComponentToHaveChildren(wrapper, Divider);
+  describe('the `Button`', () => {
+    it('should have the right props', () => {
+      const wrapper = getWrappedRoomType({ isUserOnMobile: true })
+        .find(Button)
+        .at(2);
+      expectComponentToHaveProps(wrapper, { isPositionedRight: false });
     });
   });
 });
