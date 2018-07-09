@@ -1,3 +1,11 @@
+## [1.13.1](https://github.com/lodgify/lodgify-ui/compare/v1.13.0...v1.13.1) (2018-07-09)
+
+
+### Bug Fixes
+
+* **MultiRoomType:** add more info modal ([3fbaea6](https://github.com/lodgify/lodgify-ui/commit/3fbaea6))
+* **PropertyRoomType:** rename checkAvailabilityHandler prop ([a70585e](https://github.com/lodgify/lodgify-ui/commit/a70585e))
+
 # [1.13.0](https://github.com/lodgify/lodgify-ui/compare/v1.12.0...v1.13.0) (2018-07-05)
 
 
