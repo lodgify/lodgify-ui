@@ -75,6 +75,13 @@ Library icons
 #### Color
 
 ```jsx
+<Icon color='black' />
+<Icon color='black' isColorInverted />
+<Icon color='grey' />
+<Icon color='grey' isColorInverted />
+<Icon color='light grey' />
+<Icon color='light grey' isColorInverted />
+<Divider />
 <Icon color='red' />
 <Icon color='red' isColorInverted />
 <Icon color='orange' />
@@ -100,16 +107,18 @@ Library icons
 <Icon color='pink' isColorInverted />
 <Icon color='brown' />
 <Icon color='brown' isColorInverted />
-<Icon color='grey' />
-<Icon color='grey' isColorInverted />
-<Divider />
-<Icon color='black' />
-<Icon color='black' isColorInverted />
 ```
 
 #### Circular
 
 ```jsx
+<Icon color='black' isCircular />
+<Icon color='black' isCircular isColorInverted />
+<Icon color='grey' isCircular />
+<Icon color='grey' isCircular isColorInverted />
+<Icon color='light grey' isCircular />
+<Icon color='light grey' isCircular isColorInverted />
+<Divider />
 <Icon color='red' isCircular />
 <Icon color='red' isCircular isColorInverted />
 <Icon color='orange' isCircular />
@@ -135,11 +144,6 @@ Library icons
 <Icon color='pink' isCircular isColorInverted />
 <Icon color='brown' isCircular />
 <Icon color='brown' isCircular isColorInverted />
-<Icon color='grey' isCircular />
-<Icon color='grey' isCircular isColorInverted />
-<Divider />
-<Icon color='black' isCircular />
-<Icon color='black' isCircular isColorInverted />
 ```
 
 #### Labeled

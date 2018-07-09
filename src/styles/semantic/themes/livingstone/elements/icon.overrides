@@ -38,7 +38,7 @@ i.icon {
   /* Variations */
 
   p {
-    color: inherit;
+    color: @textColor;
     display: inline-block;
     line-height: @iconLabelLineHeight;
     margin: @iconReversedLabelMargin;
@@ -49,6 +49,26 @@ i.icon {
 
     p {
       text-decoration: @disabledIconLabelDecoration;
+    }
+  }
+
+  /*-------------------
+        Colors
+  --------------------*/
+
+  /* Light grey */
+  &.light.grey {
+    // Having to use important to override Semantic UI
+    color: @greyTwo !important;
+
+    &.inverted {
+      color: @greyOne !important;
+
+      &.bordered,
+      &.circular {
+        background-color: @greyTwo !important;
+        color: @white !important;
+      }
     }
   }
 }
