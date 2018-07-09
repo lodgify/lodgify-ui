@@ -132,7 +132,7 @@ const Component = ({
   </Card>
 );
 
-Component.displayName = 'PropertyRoomType';
+Component.displayName = 'RoomType';
 
 Component.defaultProps = {
   extraFeatures: [],

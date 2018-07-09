@@ -78,9 +78,7 @@ export {
   PaymentInformation,
 } from './components/property-page-widgets/PaymentInformation';
 export { Pictures } from './components/property-page-widgets/Pictures';
-export {
-  PropertyRoomType,
-} from './components/property-page-widgets/PropertyRoomType';
+export { RoomType } from './components/property-page-widgets/RoomType';
 export { Rates } from './components/property-page-widgets/Rates';
 export { Reviews } from './components/property-page-widgets/Reviews';
 export { Rules } from './components/property-page-widgets/Rules';
