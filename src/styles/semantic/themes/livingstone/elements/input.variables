@@ -6,9 +6,6 @@
       Element
 --------------------*/
 
-@inputMaxWidth: 350px;
-@inputWidth: 100%;
-
 @border: @borderWidth solid transparent;
 
 /*-------------------
@@ -30,40 +27,6 @@
 /* Labeled Input */
 @labelColor: @greySix;
 
-/* Date range picker */
-@dateRangePickerInputPadding: @6px @10px;
-@dateRangePickerInputBorderOffset: (@2px/2); // This offsets the border on .DateRangePicker.
-
-@dateRangePickerIconWidthOffset: 44px; // This offsets the widths of the icons in the date range picker.
-
-@dateRangePickerDateInputPadding: (@verticalPadding - @dateRangePickerInputBorderOffset) 0;
-@dateRangePickerDateInputWidth: ~"calc(50% - @{dateRangePickerIconWidthOffset})";
-
-@dateRangePickerPickerFontColor: @greyEight;
-@dateRangePickerPickerZIndex: 3;
-@dateRangePickerPickerBoxShadow: @spreadShadow;
-
-@dateRangePickerPickerNavigationButtonTopSpace: (@dateRangePickerPickerMonthCaptionPaddingTop - @2px);
-
-@dateRangePickerPickerMonthCaptionPaddingTop: @34px;
-@dateRangePickerPickerMonthCaptionPaddingBottom: @59px;
-
-@dateRangePickerPickerWeekHeaderTopSpace: 75px;
-@dateRangePickerPickerWeekHeaderWidth: @48px !important;
-
-@dateRangePickerPickerTablePadding: 0 @15px;
-@dateRangePickerPickerTableCellBorder: @4px solid @pureWhite;
-@dateRangePickerPickerTableCellHeight: 38px !important;
-@dateRangePickerPickerTableCellWidth: 48px !important;
-
-@dateRangePickerPickerDayHoveredBackground: @lightPrimaryColor;
-@dateRangePickerPickerDaySelectedBackground: @primaryColor;
-@dateRangePickerPickerDayBlockedBackground: @greyTwo;
-@dateRangePickerPickerDayBlockedFontColor: @greyFive;
-
-/* Single date picker */
-@singleDatePickerDateInputWidth: ~"calc(100% - @{dateRangePickerIconWidthOffset})";
-
 /*-------------------
         States
 --------------------*/
@@ -81,12 +44,6 @@
 @labelFocusYTranslate: @30px;
 
 @iconFocusColor: @labelFocusColor;
-
-@dateRangePickerInputFocusedBorderBottomWidth: @3px;
-@dateRangePickerInputFocusedBorderBottom: @dateRangePickerInputFocusedBorderBottomWidth solid @primaryColor !important;
-@dateRangePickerInputFocusedMarginBottom: -(@1px);
-@dateRangePickerInputFocusedBorderBottomOffset: (@dateRangePickerInputFocusedBorderBottomWidth + @dateRangePickerInputFocusedMarginBottom);
-@dateRangePickerInputFocusedPaddingBottom: (@verticalPadding - @dateRangePickerInputBorderOffset - @dateRangePickerInputFocusedBorderBottomOffset);
 
 /* Error */
 @errorBackground: @focusedInputBackground;
