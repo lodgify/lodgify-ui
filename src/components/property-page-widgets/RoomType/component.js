@@ -20,7 +20,7 @@ import { getRoomFeaturesMarkup } from './utils/getRoomFeaturesMarkup';
 import { getModalContentMarkup } from './utils/getModalContentMarkup';
 
 /**
- * The standard widget for a multi room.
+ * The standard widget for displaying a room type in the context of a property page.
  * @returns {Object}
  */
 const Component = ({
@@ -40,9 +40,11 @@ const Component = ({
       <GridRow>
         <GridColumn computer={4} mobile={12} verticalAlignContent={null}>
           <Slideshow
-            additionalClass="fit-height no-shadow no-border-radius"
+            hasShadow={false}
             images={slideShowImages}
-            showBullets={false}
+            isRounded={false}
+            isShowingBulletNavigation={false}
+            isStretched
           />
         </GridColumn>
         <GridColumn computer={8} mobile={12}>
@@ -176,13 +178,13 @@ Component.propTypes = {
    * @ignore
    */
   isUserOnMobile: PropTypes.bool.isRequired,
-  /** The name of the multi room. */
+  /** The name of the room. */
   name: PropTypes.string.isRequired,
-  /** The price per night of the multi room, with currency symbol. */
+  /** The price per night of the room, with currency symbol. */
   nightPrice: PropTypes.string.isRequired,
   /** A function called when check availability button is clicked. */
   onClickCheckAvailability: PropTypes.func.isRequired,
-  /** The numeral rating for the multi room, out of 5 */
+  /** The numeral rating for the room, out of 5 */
   ratingNumber: PropTypes.number.isRequired,
   /** The images to display for the slideshow */
   slideShowImages: PropTypes.arrayOf(
