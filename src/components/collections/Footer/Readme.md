@@ -19,8 +19,8 @@ const navigationItems = [
   { href: '/gym', text: 'Gym' },
 ];
 const socialMediaLinks = [
-  { href: '//twitter.com/lodgify', iconName: 'twitter' },
-  { href: '//instagram.com/lodgify', iconName: 'instagram' },
+  { href: 'https://twitter.com/lodgify', iconName: 'twitter' },
+  { href: 'https://instagram.com/lodgify', iconName: 'instagram' },
 ];
 
 <Footer
@@ -75,8 +75,8 @@ const navigationItems = [
   { href: '/press-releases', text: 'Press releases' },
 ];
 const socialMediaLinks = [
-  { href: '//twitter.com/lodgify', iconName: 'twitter' },
-  { href: '//instagram.com/lodgify', iconName: 'instagram' },
+  { href: 'https://twitter.com/lodgify', iconName: 'twitter' },
+  { href: 'https://instagram.com/lodgify', iconName: 'instagram' },
 ];
 
 <Footer

@@ -1,5 +1,5 @@
 ```jsx
-<Thumbnail imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg" />
+<Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg" />
 ```
 
 ### Variations
@@ -8,7 +8,7 @@
 
 ```jsx
 <Thumbnail
-  imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
   hasRoundedCorners
 />
 ```
@@ -17,7 +17,7 @@
 
 ```jsx
 <Thumbnail
-  imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
   isCircular
 />
 ```
@@ -26,7 +26,7 @@
 
 ```jsx
 <Thumbnail
-  imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
   isSquare
 />
 ```
@@ -37,7 +37,7 @@
 <Grid columns={3}>
   <GridColumn>
     <Thumbnail
-      imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
       isSquare
       label="small"
       size="small"
@@ -45,14 +45,14 @@
   </GridColumn>
   <GridColumn>
     <Thumbnail
-      imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
       isSquare
       label="medium"
     />
   </GridColumn>
   <GridColumn>
     <Thumbnail
-      imageUrl="//li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
       isSquare
       label="large"
       size="large"

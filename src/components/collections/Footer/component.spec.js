@@ -38,8 +38,8 @@ const onChangeLanguage = () => {};
 const phoneNumber = '+1 2345 678912';
 const propertyAddress = 'The Cat House, Pawprint Way, Catania 08012';
 const socialMediaLinks = [
-  { href: '//twitter.com/lodgify', iconName: 'leaf' },
-  { href: '//instagram.com/lodgify', iconName: 'paw' },
+  { href: 'https://twitter.com/lodgify', iconName: 'leaf' },
+  { href: 'https://instagram.com/lodgify', iconName: 'paw' },
 ];
 
 const getFooter = otherProps =>
