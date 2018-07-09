@@ -133,9 +133,11 @@ describe('<RoomType />', () => {
         .find(Slideshow)
         .at(0);
       expectComponentToHaveProps(wrapper, {
-        additionalClass: 'fit-height no-shadow no-border-radius',
+        hasShadow: false,
         images: props.slideShowImages,
-        showBullets: false,
+        isRounded: false,
+        isStretched: true,
+        isShowingBulletNavigation: false,
       });
     });
   });

@@ -1,3 +1,15 @@
+# [1.15.0](https://github.com/lodgify/lodgify-ui/compare/v1.14.0...v1.15.0) (2018-07-09)
+
+
+### Bug Fixes
+
+* **RoomType:** update component to use new Slideshow props ([a0e9fe8](https://github.com/lodgify/lodgify-ui/commit/a0e9fe8))
+
+
+### Features
+
+* **Slideshow:** expose additional formatting props ([aef8897](https://github.com/lodgify/lodgify-ui/commit/aef8897))
+
 # [1.14.0](https://github.com/lodgify/lodgify-ui/compare/v1.13.1...v1.14.0) (2018-07-09)
 
 
