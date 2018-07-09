@@ -55,6 +55,7 @@ Library icons
 <Icon name="search" />
 <Icon name="single bed" />
 <Icon name="star" />
+<Icon name="square" />
 <Icon name="sun" />
 <Icon name="train" />
 <Icon name="users" />

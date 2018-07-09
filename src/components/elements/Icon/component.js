@@ -120,6 +120,7 @@ Component.propTypes = {
     'search',
     'single bed',
     'star',
+    'square',
     'sun',
     'train',
     'users',
