@@ -15,7 +15,7 @@ import { getRatingMarkup } from './getRatingMarkup';
 
 /**
  * @param  {Object[]} amenities
- * @param  {Function} checkAvailabilityHandler
+ * @param  {Function} onClickCheckAvailability
  * @param  {String} description
  * @param  {Object[]} extraFeatures
  * @param  {Object[]} features
@@ -27,7 +27,7 @@ import { getRatingMarkup } from './getRatingMarkup';
  */
 export const getModalContentMarkup = (
   amenities,
-  checkAvailabilityHandler,
+  onClickCheckAvailability,
   description,
   extraFeatures,
   features,
@@ -60,7 +60,7 @@ export const getModalContentMarkup = (
         </Paragraph>
       </GridColumn>
       <GridColumn verticalAlignContent="bottom" width={6}>
-        <Button isPositionedRight isRounded onClick={checkAvailabilityHandler}>
+        <Button isPositionedRight isRounded onClick={onClickCheckAvailability}>
           Check Availability
         </Button>
       </GridColumn>

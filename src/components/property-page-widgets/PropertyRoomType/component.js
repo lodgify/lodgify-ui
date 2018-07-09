@@ -25,7 +25,7 @@ import { getModalContentMarkup } from './utils/getModalContentMarkup';
  */
 const Component = ({
   amenities,
-  checkAvailabilityHandler,
+  onClickCheckAvailability,
   description,
   extraFeatures,
   features,
@@ -70,7 +70,7 @@ const Component = ({
                 >
                   {getModalContentMarkup(
                     amenities,
-                    checkAvailabilityHandler,
+                    onClickCheckAvailability,
                     description,
                     extraFeatures,
                     features,
@@ -95,7 +95,7 @@ const Component = ({
                 <Modal trigger={<Link>More Info</Link>}>
                   {getModalContentMarkup(
                     amenities,
-                    checkAvailabilityHandler,
+                    onClickCheckAvailability,
                     description,
                     extraFeatures,
                     features,
@@ -119,7 +119,7 @@ const Component = ({
                 <Button
                   isPositionedRight={isUserOnMobile === false}
                   isRounded
-                  onClick={checkAvailabilityHandler}
+                  onClick={onClickCheckAvailability}
                 >
                   Check Availability
                 </Button>
@@ -153,9 +153,7 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** A function called when check availability button is clicked. */
-  checkAvailabilityHandler: PropTypes.func.isRequired,
-  /** A description to be displayed in the more information modal */
+  /** A description to be displayed in the modal */
   description: PropTypes.string.isRequired,
   /** The room features to display in the modal */
   extraFeatures: PropTypes.arrayOf(
@@ -182,6 +180,8 @@ Component.propTypes = {
   name: PropTypes.string.isRequired,
   /** The price per night of the multi room, with currency symbol. */
   nightPrice: PropTypes.string.isRequired,
+  /** A function called when check availability button is clicked. */
+  onClickCheckAvailability: PropTypes.func.isRequired,
   /** The numeral rating for the multi room, out of 5 */
   ratingNumber: PropTypes.number.isRequired,
   /** The images to display for the slideshow */
