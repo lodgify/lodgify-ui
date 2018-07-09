@@ -147,6 +147,8 @@ Library icons
 <Icon label="Search" name="search" />
 <Divider />
 <Icon isDisabled label="Search" name="search" />
+<Divider />
+<Icon isLabelLeft label="Search" name="search" />
 ```
 
 #### Size
