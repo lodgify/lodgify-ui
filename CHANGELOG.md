@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/lodgify/lodgify-ui/compare/v1.13.1...v1.14.0) (2018-07-09)
+
+
+### Features
+
+* **Icon:** Add the ability to reverse the label position ([60bbe41](https://github.com/lodgify/lodgify-ui/commit/60bbe41))
+
 ## [1.13.1](https://github.com/lodgify/lodgify-ui/compare/v1.13.0...v1.13.1) (2018-07-09)
 
 
