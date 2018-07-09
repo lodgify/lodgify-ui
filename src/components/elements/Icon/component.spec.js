@@ -49,6 +49,13 @@ describe('<Icon />', () => {
         expectComponentToHaveChildren(wrapper, 'svg', Paragraph);
       });
     });
+
+    describe('if `props.isReversed` is true', () => {
+      it('should correctly render the label on the left side of the icon', () => {
+        const wrapper = getIcon({ label: 'somelabel', isLabelLeft: true });
+        expectComponentToHaveChildren(wrapper, Paragraph, 'svg');
+      });
+    });
   });
 
   describe('the `svg` element', () => {

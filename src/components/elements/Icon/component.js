@@ -15,6 +15,7 @@ export const Component = ({
   isCircular,
   isColorInverted,
   isDisabled,
+  isLabelLeft,
   label,
   name,
   path,
@@ -31,10 +32,11 @@ export const Component = ({
     // compatibility with dynamic components e.g. `ToolTip`
     {...otherProps}
   >
+    {!!label && isLabelLeft && <Paragraph>{label}</Paragraph>}
     <svg viewBox="0 0 24 24">
       <path d={getPath(name, path)} fill="currentColor" />
     </svg>
-    {!!label && <Paragraph>{label}</Paragraph>}
+    {!!label && !isLabelLeft && <Paragraph>{label}</Paragraph>}
   </i>
 );
 
@@ -45,6 +47,7 @@ Component.defaultProps = {
   isCircular: false,
   isColorInverted: false,
   isDisabled: false,
+  isLabelLeft: false,
   label: null,
   name: null,
   path: null,
@@ -74,6 +77,8 @@ Component.propTypes = {
   isColorInverted: PropTypes.bool,
   /** Is the icon disabled. */
   isDisabled: PropTypes.bool,
+  /** Is the label on the left hand side of the icon */
+  isLabelLeft: PropTypes.bool,
   /** A visible label to display with the icon. */
   label: PropTypes.string,
   /** The name of the icon to display. Takes priority over `props.path`. */

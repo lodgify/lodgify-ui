@@ -29,6 +29,10 @@ i.icon {
   svg {
     height: @height;
     width: @width;
+
+    + p {
+      margin: @iconLabelMargin;
+    }
   }
 
   /* Variations */
@@ -37,7 +41,7 @@ i.icon {
     color: inherit;
     display: inline-block;
     line-height: @iconLabelLineHeight;
-    margin: @iconLabelMargin;
+    margin: @iconReversedLabelMargin;
     vertical-align: top;
   }
 

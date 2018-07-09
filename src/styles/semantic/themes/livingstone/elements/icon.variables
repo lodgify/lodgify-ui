@@ -32,8 +32,9 @@
 /* Variations */
 @circularPadding: 0.2em 0;
 
-@iconLabelMarginLeft: @5px;
-@iconLabelMargin: 0 0 0 @iconLabelMarginLeft;
+@iconLabelMarginSpacing: @5px;
+@iconLabelMargin: 0 0 0 @iconLabelMarginSpacing;
+@iconReversedLabelMargin: 0 @iconLabelMarginSpacing 0 0;
 @iconLabelLineHeight: 1.8em;
 
 @disabledIconLabelDecoration: line-through;
