@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/lodgify/lodgify-ui/compare/v1.16.0...v1.16.1) (2018-07-10)
+
+
+### Bug Fixes
+
+* **Icon:** add missing social media icon paths ([7e84594](https://github.com/lodgify/lodgify-ui/commit/7e84594))
+
 # [1.16.0](https://github.com/lodgify/lodgify-ui/compare/v1.15.0...v1.16.0) (2018-07-09)
 
 
