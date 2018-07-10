@@ -4,6 +4,7 @@ import { Rating, Segment } from 'semantic-ui-react';
 
 import { Icon } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
+import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
 
 /**
  * The standard widget for displaying the summary details of a property.
@@ -33,9 +34,7 @@ export const Component = ({
           size="tiny"
         />
       </Segment>
-      <Segment>
-        from <Heading size="small">{nightPrice}</Heading> /night
-      </Segment>
+      <Segment>{getNightPriceMarkup(nightPrice, 'small')}</Segment>
     </Segment.Group>
   </Segment.Group>
 );
