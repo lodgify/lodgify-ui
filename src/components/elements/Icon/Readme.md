@@ -39,10 +39,13 @@ Library icons
 <Icon name="close" />
 <Icon name="coffee" />
 <Icon name="double bed" />
+<Icon name="facebook" />
 <Icon name="fire" />
+<Icon name="google" />
 <Icon name="guests" />
 <Icon name="home" />
 <Icon name="info" />
+<Icon name="instagram" />
 <Icon name="leaf" />
 <Icon name="location" />
 <Icon name="map pin" />
@@ -55,10 +58,13 @@ Library icons
 <Icon name="search" />
 <Icon name="single bed" />
 <Icon name="star" />
+<Icon name="square" />
 <Icon name="sun" />
 <Icon name="train" />
+<Icon name="twitter" />
 <Icon name="users" />
 <Icon name="wheelchair" />
+<Icon name="youtube" />
 ```
 
 ### States
@@ -74,6 +80,13 @@ Library icons
 #### Color
 
 ```jsx
+<Icon color='black' />
+<Icon color='black' isColorInverted />
+<Icon color='grey' />
+<Icon color='grey' isColorInverted />
+<Icon color='light grey' />
+<Icon color='light grey' isColorInverted />
+<Divider />
 <Icon color='red' />
 <Icon color='red' isColorInverted />
 <Icon color='orange' />
@@ -99,16 +112,18 @@ Library icons
 <Icon color='pink' isColorInverted />
 <Icon color='brown' />
 <Icon color='brown' isColorInverted />
-<Icon color='grey' />
-<Icon color='grey' isColorInverted />
-<Divider />
-<Icon color='black' />
-<Icon color='black' isColorInverted />
 ```
 
 #### Circular
 
 ```jsx
+<Icon color='black' isCircular />
+<Icon color='black' isCircular isColorInverted />
+<Icon color='grey' isCircular />
+<Icon color='grey' isCircular isColorInverted />
+<Icon color='light grey' isCircular />
+<Icon color='light grey' isCircular isColorInverted />
+<Divider />
 <Icon color='red' isCircular />
 <Icon color='red' isCircular isColorInverted />
 <Icon color='orange' isCircular />
@@ -134,11 +149,6 @@ Library icons
 <Icon color='pink' isCircular isColorInverted />
 <Icon color='brown' isCircular />
 <Icon color='brown' isCircular isColorInverted />
-<Icon color='grey' isCircular />
-<Icon color='grey' isCircular isColorInverted />
-<Divider />
-<Icon color='black' isCircular />
-<Icon color='black' isCircular isColorInverted />
 ```
 
 #### Labeled
