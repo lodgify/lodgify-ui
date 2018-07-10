@@ -61,12 +61,12 @@ describe('<ResponsiveImage />', () => {
       const sources = [
         {
           srcset:
-            '//si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max',
+            'https://si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max',
           media: '(min-width: 1200px)',
         },
         {
           srcset:
-            '//si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max',
+            'https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max',
           media: '(min-width: 1024px)',
         },
       ];
