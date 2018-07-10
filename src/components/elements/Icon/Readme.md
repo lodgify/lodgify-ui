@@ -39,10 +39,13 @@ Library icons
 <Icon name="close" />
 <Icon name="coffee" />
 <Icon name="double bed" />
+<Icon name="facebook" />
 <Icon name="fire" />
+<Icon name="google" />
 <Icon name="guests" />
 <Icon name="home" />
 <Icon name="info" />
+<Icon name="instagram" />
 <Icon name="leaf" />
 <Icon name="location" />
 <Icon name="map pin" />
@@ -58,8 +61,10 @@ Library icons
 <Icon name="square" />
 <Icon name="sun" />
 <Icon name="train" />
+<Icon name="twitter" />
 <Icon name="users" />
 <Icon name="wheelchair" />
+<Icon name="youtube" />
 ```
 
 ### States
