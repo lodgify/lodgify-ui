@@ -1,0 +1,81 @@
+/*******************************
+           Datepicker
+*******************************/
+
+/*-------------------
+      Element
+--------------------*/
+
+/* Input */
+@inputFont: @pageFont;
+
+@background: @inputBackground;
+
+@verticalPadding: @inputVerticalPadding;
+@inputPadding: @6px @10px;
+
+@inputBorderOffset: (@2px/2); // This offsets the border on .picker.
+@inputBorder: @borderWidth solid transparent;
+@borderWidth: 1px;
+
+@iconWidthOffset: 44px; // This offsets the widths of the icons in the date range picker.
+
+@dateInputPadding: (@verticalPadding - @inputBorderOffset) 0;
+@dateInputWidth: ~"calc(50% - @{iconWidthOffset})";
+
+@singleDatePickerDateInputWidth: ~"calc(100% - @{iconWidthOffset})";
+
+/* Label */
+@labelColor: @greySix;
+
+/* Picker */
+@pickerFontColor: @greyEight;
+@pickerZIndex: 3;
+@pickerBoxShadow: @spreadShadow;
+
+@pickerNavigationButtonTopSpace: (@pickerMonthCaptionPaddingTop - @2px);
+
+@pickerMonthCaptionPaddingTop: @34px;
+@pickerMonthCaptionPaddingBottom: @59px;
+
+@pickerWeekHeaderTopSpace: 75px;
+@pickerWeekHeaderWidth: @48px !important;
+
+@pickerTablePadding: 0 @15px;
+@pickerTableCellBorder: @4px solid @pureWhite;
+@pickerTableCellHeight: 38px !important;
+@pickerTableCellWidth: 48px !important;
+
+@pickerDayHoveredBackground: @lightPrimaryColor;
+@pickerDaySelectedBackground: @primaryColor;
+@pickerDayBlockedBackground: @greyTwo;
+@pickerDayBlockedFontColor: @greyFive;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Focus */
+@InputFocusedBorderBottomWidth: @3px;
+@inputFocusedBorderBottom: @InputFocusedBorderBottomWidth solid @primaryColor !important;
+@inputFocusedMarginBottom: -(@1px);
+@inputFocusedBorderBottomOffset: (@InputFocusedBorderBottomWidth + @inputFocusedMarginBottom);
+@inputFocusedPaddingBottom: (@verticalPadding - @inputBorderOffset - @inputFocusedBorderBottomOffset);
+
+@focusBorderColor: @focusedFormBorderColor;
+@focusBackground: @background;
+@focusColor: @hoveredTextColor;
+
+/* Hover */
+@hoveredInputBorderColor: @inputHoverBorderColor;
+
+/* Valid */
+@validBorderColor: @green;
+
+@validIconOpacity: 1;
+@validIconPadding: @8px 0;
+@validIconZIndex: 1;
+
+/* Error */
+@errorBackground: @negativeBackgroundColor;
+@errorBorder: @negativeBorderColor;

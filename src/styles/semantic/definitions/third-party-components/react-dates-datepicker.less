@@ -1,0 +1,275 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'third-party-component';
+@element  : 'react-dates-datepicker';
+
+@import (multiple) '../../theme.config';
+
+/*******************************
+            Datepicker
+*******************************/
+
+.DateRangePicker,
+.SingleDatePicker {
+
+  .DateRangePicker_picker,
+  .SingleDatePicker_picker {
+    color: @pickerFontColor;
+    z-index: @pickerZIndex;
+
+    @media @tinyScreen {
+      transform: scale(0.8);
+      transform-origin: top center;
+    }
+
+    .DayPicker__withBorder {
+      box-shadow: @pickerBoxShadow;
+    }
+
+    button.DayPickerNavigation_button {
+      border: none;
+      padding: 0;
+      top: @pickerNavigationButtonTopSpace;
+    }
+
+    .CalendarMonth_caption {
+      color: inherit;
+      font-size: @fontSize;
+      padding-top: @pickerMonthCaptionPaddingTop;
+      padding-bottom: @pickerMonthCaptionPaddingBottom;
+
+      strong {
+        font-weight: @normal;
+      }
+    }
+
+    .DayPicker_weekHeader {
+      color: inherit;
+      padding: @pickerTablePadding;
+      top: @pickerWeekHeaderTopSpace;
+
+      li.DayPicker_weekHeader_li {
+        box-sizing: content-box;
+        width: @pickerWeekHeaderWidth;
+
+        &:not(:first-child) {
+          border-left: @pickerTableCellBorder;
+        }
+
+        small {
+          font-size: @tinyParagraphFontSize;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .CalendarMonth {
+      padding: @pickerTablePadding;
+
+      table.CalendarMonth_table {
+
+        td.CalendarDay {
+          border: none;
+          box-sizing: content-box;
+          font-size: @tinyParagraphFontSize;
+          font-weight: @tinyParagraphFontWeight;
+          height: @pickerTableCellHeight;
+          padding: 0;
+          width: @pickerTableCellWidth;
+
+          &:not(:first-child) {
+            border-left: @pickerTableCellBorder;
+          }
+
+          &.CalendarDay__default:hover,
+          &.CalendarDay__selected_span,
+          &.CalendarDay__hovered_span {
+            background: @pickerDayHoveredBackground;
+            color: inherit;
+          }
+
+          &.CalendarDay__selected {
+
+            &,
+            &:active,
+            &:hover {
+              background: @pickerDaySelectedBackground;
+              color: inherit;
+            }
+          }
+
+          &.CalendarDay__blocked_calendar,
+          &.CalendarDay__blocked_out_of_range {
+
+            &,
+            &:hover {
+              background: @pickerDayBlockedBackground;
+              color: @pickerDayBlockedFontColor;
+            }
+          }
+        }
+
+        tr:not(:first-child) td.CalendarDay {
+          border-top: @pickerTableCellBorder;
+        }
+      }
+    }
+  }
+}
+
+/*
+  Input specific styles
+*/
+
+.ui.form .ui.input,
+.ui.input {
+
+  .DateRangePicker,
+  .SingleDatePicker {
+    width: @inputWidth;
+
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
+      color: @labelColor;
+
+      button.DateRangePickerInput_calendarIcon,
+      .DateRangePickerInput_arrow,
+      button.SingleDatePickerInput_calendarIcon,
+      .SingleDatePickerInput_arrow {
+        color: inherit;
+        margin: 0;
+        outline: none;
+        padding: @inputPadding;
+
+        i {
+          margin: 0;
+        }
+      }
+
+      .DateInput {
+        box-sizing: content-box;
+        width: @dateInputWidth;
+
+        &,
+        input {
+          background: transparent;
+          color: inherit;
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: @normal;
+          line-height: 1em;
+        }
+
+        input {
+          border: 0;
+          padding: @dateInputPadding;
+          width: 100%;
+
+          &::placeholder {
+            color: inherit;
+            opacity: 1;
+          }
+        }
+
+        .DateInput_fangStroke {
+          stroke: transparent;
+        }
+      }
+    }
+  }
+
+  .DateRangePicker .DateRangePickerInput .DateInput {
+    width: @dateInputWidth;
+  }
+
+  .SingleDatePicker .SingleDatePickerInput {
+    width: @inputWidth;
+
+    .DateInput {
+      width: @singleDatePickerDateInputWidth;
+    }
+  }
+
+  .DateRangePickerInput,
+  .SingleDatePickerInput {
+    background: @background;
+    border: @inputBorder;
+    font-family: @inputFont;
+    outline: none;
+    width: @inputWidth;
+  }
+
+  &.focus .DateRangePickerInput,
+  &.focus .SingleDatePickerInput {
+    border-color: @focusBorderColor;
+    background: @focusBackground;
+    color: @focusColor;
+  }
+
+  .DateRangePicker .DateRangePickerInput input.DateInput_input__focused {
+    border-bottom: @inputFocusedBorderBottom;
+    margin-bottom: @inputFocusedMarginBottom;
+    padding-bottom: @inputFocusedPaddingBottom;
+  }
+
+  /* Error */
+  &.error {
+
+    input,
+    textarea,
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
+      background: @errorBackground;
+      border-color: @errorBorder;
+    }
+
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
+      color: @focusColor;
+    }
+  }
+
+  /* Loader */
+
+  /* Hover */
+  &:hover:not(.error):not(.valid):not(.dirty):not(.focus) {
+
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
+      background: @focusedInputBackground;
+      border-color: @hoveredInputBorderColor;
+    }
+  }
+
+  &.dirty:not(.error):not(.valid) {
+
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
+      background: @focusedInputBackground;
+      border-color: @focusedFormBorderColor;
+      color: @focusColor;
+    }
+  }
+
+  /* Valid */
+  &.valid {
+
+    .DateRangePickerInput,
+    .SingleDatePickerInput {
+      background: @focusedInputBackground;
+      border-color: @validBorderColor;
+      color: @focusColor;
+
+      input:not(.DateInput_input__focused) {
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+/*
+  Trigger override mixin
+*/
+.loadUIOverrides();
