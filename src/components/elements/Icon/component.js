@@ -69,6 +69,7 @@ Component.propTypes = {
     'pink',
     'brown',
     'grey',
+    'light grey',
     'black',
   ]),
   /** Is the icon formatted to appear circular  */
