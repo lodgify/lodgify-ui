@@ -43,13 +43,21 @@
 
 @pickerTablePadding: 0 @15px;
 @pickerTableCellBorder: @4px solid @pureWhite;
-@pickerTableCellHeight: 38px !important;
+@pickerTableCellHeight: 48px !important;
 @pickerTableCellWidth: 48px !important;
 
 @pickerDayHoveredBackground: @lightPrimaryColor;
 @pickerDaySelectedBackground: @primaryColor;
 @pickerDayBlockedBackground: @greyTwo;
 @pickerDayBlockedFontColor: @greyFive;
+
+/* Buttons */
+@pickerButtonTop: 1.7rem;
+@pickerButtonLineHeight: 0.78em;
+@pickerButtonBorderRadius: @3px;
+@pickerButtonPadding: @6px @9px;
+@pickerButtonFirstLeft: @20px;
+@pickerButtonLastRight: @20px;
 
 /*-------------------
         States
