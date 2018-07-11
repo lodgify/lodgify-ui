@@ -10,7 +10,6 @@
 /*******************************
             Datepicker
 *******************************/
-
 .DateRangePicker,
 .SingleDatePicker {
 
@@ -34,17 +33,6 @@
       top: @pickerNavigationButtonTopSpace;
     }
 
-    .CalendarMonth_caption {
-      color: inherit;
-      font-size: @fontSize;
-      padding-top: @pickerMonthCaptionPaddingTop;
-      padding-bottom: @pickerMonthCaptionPaddingBottom;
-
-      strong {
-        font-weight: @normal;
-      }
-    }
-
     .DayPicker_weekHeader {
       color: inherit;
       padding: @pickerTablePadding;
@@ -64,57 +52,68 @@
         }
       }
     }
+  }
+}
 
-    .CalendarMonth {
-      padding: @pickerTablePadding;
+.CalendarMonth {
+  padding: @pickerTablePadding;
 
-      table.CalendarMonth_table {
+  .CalendarMonth_caption {
+    color: inherit;
+    font-size: @fontSize;
+    padding-top: @pickerMonthCaptionPaddingTop;
+    padding-bottom: @pickerMonthCaptionPaddingBottom;
 
-        td.CalendarDay {
-          border: none;
-          box-sizing: content-box;
-          font-size: @tinyParagraphFontSize;
-          font-weight: @tinyParagraphFontWeight;
-          height: @pickerTableCellHeight;
-          padding: 0;
-          width: @pickerTableCellWidth;
+    strong {
+      font-weight: @normal;
+    }
+  }
 
-          &:not(:first-child) {
-            border-left: @pickerTableCellBorder;
-          }
+  table.CalendarMonth_table {
 
-          &.CalendarDay__default:hover,
-          &.CalendarDay__selected_span,
-          &.CalendarDay__hovered_span {
-            background: @pickerDayHoveredBackground;
-            color: inherit;
-          }
+    td.CalendarDay {
+      border: none;
+      box-sizing: content-box;
+      font-size: @tinyParagraphFontSize;
+      font-weight: @tinyParagraphFontWeight;
+      height: @pickerTableCellHeight;
+      padding: 0;
+      width: @pickerTableCellWidth;
 
-          &.CalendarDay__selected {
+      &:not(:first-child) {
+        border-left: @pickerTableCellBorder;
+      }
 
-            &,
-            &:active,
-            &:hover {
-              background: @pickerDaySelectedBackground;
-              color: inherit;
-            }
-          }
+      &.CalendarDay__default:hover,
+      &.CalendarDay__selected_span,
+      &.CalendarDay__hovered_span {
+        background: @pickerDayHoveredBackground;
+        color: inherit;
+      }
 
-          &.CalendarDay__blocked_calendar,
-          &.CalendarDay__blocked_out_of_range {
+      &.CalendarDay__selected {
 
-            &,
-            &:hover {
-              background: @pickerDayBlockedBackground;
-              color: @pickerDayBlockedFontColor;
-            }
-          }
-        }
-
-        tr:not(:first-child) td.CalendarDay {
-          border-top: @pickerTableCellBorder;
+        &,
+        &:active,
+        &:hover {
+          background: @pickerDaySelectedBackground;
+          color: inherit;
         }
       }
+
+      &.CalendarDay__blocked_calendar,
+      &.CalendarDay__blocked_out_of_range {
+
+        &,
+        &:hover {
+          background: @pickerDayBlockedBackground;
+          color: @pickerDayBlockedFontColor;
+        }
+      }
+    }
+
+    tr:not(:first-child) td.CalendarDay {
+      border-top: @pickerTableCellBorder;
     }
   }
 }
