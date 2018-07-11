@@ -1,7 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Segment, Rating } from 'semantic-ui-react';
-import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
@@ -160,21 +163,19 @@ describe('<Summary />', () => {
   });
 
   describe('the last `Segment` component', () => {
-    const getFourthSegment = () =>
-      getSummary()
-        .find(Segment)
-        .at(3);
-
     it('should have the right children', () => {
-      const wrapper = getFourthSegment();
-      const actual = wrapper.prop('children');
-      expect(actual).toEqual(expect.arrayContaining(['from ', ' /night']));
+      const wrapper = getSummary()
+        .find(Segment)
+        .at(3)
+        .children();
+      expectComponentToBe(wrapper, 'span');
     });
+  });
 
-    it('should render a single Lodgify UI `Heading` component', () => {
-      const wrapper = getFourthSegment();
-      const actual = wrapper.find(Heading);
-      expect(actual).toHaveLength(1);
+  describe('the `span`', () => {
+    it('should have the right children', () => {
+      const wrapper = getSummary().find('span');
+      expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
   });
 

@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Image, Rating } from 'semantic-ui-react';
 
+import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 import { Subheading } from 'typography/Subheading';
-import { Heading } from 'typography/Heading';
 
 import { getPropertyDescription } from './utils/getPropertyDescription';
 
@@ -43,9 +43,7 @@ export const Component = ({
           size="tiny"
         />
       </Card.Description>
-      <Card.Description>
-        from <Heading>{nightPrice}</Heading> /night
-      </Card.Description>
+      <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
     </Card.Content>
   </Card>
 );
