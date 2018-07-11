@@ -57,6 +57,9 @@
 
 @inputHoverBorderColor: @greyThree;
 
+@inputMaxWidth: 350px;
+@inputWidth: 100%;
+
 /* Input Text Color */
 @inputPlaceholderColor: @greySix;
 
