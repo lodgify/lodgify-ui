@@ -1,3 +1,10 @@
+## [1.16.2](https://github.com/lodgify/lodgify-ui/compare/v1.16.1...v1.16.2) (2018-07-11)
+
+
+### Bug Fixes
+
+* **Icon:** add missing prop type value ([7835e45](https://github.com/lodgify/lodgify-ui/commit/7835e45))
+
 ## [1.16.1](https://github.com/lodgify/lodgify-ui/compare/v1.16.0...v1.16.1) (2018-07-10)
 
 
