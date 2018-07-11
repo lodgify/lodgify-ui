@@ -67,6 +67,7 @@ export { Video } from './components/media/Video';
 
 // Property Page Widgets
 export { Amenities } from './components/property-page-widgets/Amenities';
+export { Availability } from './components/property-page-widgets/Availability';
 export { Description } from './components/property-page-widgets/Description';
 export {
   PropertySearchBar,
