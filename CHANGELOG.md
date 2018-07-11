@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/lodgify/lodgify-ui/compare/v1.16.2...v1.17.0) (2018-07-11)
+
+
+### Features
+
+* **Availability:** implement widget ([760e7f3](https://github.com/lodgify/lodgify-ui/commit/760e7f3))
+
 ## [1.16.2](https://github.com/lodgify/lodgify-ui/compare/v1.16.1...v1.16.2) (2018-07-11)
 
 
