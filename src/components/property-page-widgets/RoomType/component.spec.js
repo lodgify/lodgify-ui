@@ -320,12 +320,30 @@ describe('<RoomType />', () => {
 
   describe('the `Card.Description`', () => {
     it('should have the right children', () => {
-      const wrapper = getWrappedRoomType().find(Card.Description);
-      expectComponentToHaveChildren(wrapper, 'from ', Heading, ' /night');
+      const wrapper = getWrappedRoomType()
+        .find(Card.Description)
+        .children();
+      expectComponentToBe(wrapper, 'span');
+    });
+  });
+
+  describe('the `span`', () => {
+    it('should have the right children', () => {
+      const wrapper = getWrappedRoomType().find('span');
+      expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
   });
 
   describe('the second `Heading`', () => {
+    const getSecondHeading = () =>
+      getWrappedRoomType()
+        .find(Heading)
+        .at(1);
+    it('should have the right props', () => {
+      const wrapper = getSecondHeading();
+      expectComponentToHaveProps(wrapper, { size: 'medium' });
+    });
+
     it('should have the right children', () => {
       const wrapper = getWrappedRoomType()
         .find(Heading)

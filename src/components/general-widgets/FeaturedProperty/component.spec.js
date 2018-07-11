@@ -147,14 +147,28 @@ describe('<FeaturedProperty />', () => {
     it('should have the right `children`', () => {
       const wrapper = getFeaturedProperty()
         .find(Card.Description)
-        .at(3);
-      expectComponentToHaveChildren(wrapper, 'from ', Heading, ' /night');
+        .at(3)
+        .children();
+      expectComponentToBe(wrapper, 'span');
+    });
+  });
+
+  describe('the `span`', () => {
+    it('should have the right `children`', () => {
+      const wrapper = getFeaturedProperty().find('span');
+      expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
   });
 
   describe('the `Heading` component', () => {
+    const getHeading = () => getFeaturedProperty().find(Heading);
+    it('should have the right props', () => {
+      const wrapper = getHeading();
+      expectComponentToHaveProps(wrapper, { size: 'medium' });
+    });
+
     it('should have the right children', () => {
-      const wrapper = getFeaturedProperty().find(Heading);
+      const wrapper = getHeading();
       expectComponentToHaveChildren(wrapper, props.nightPrice);
     });
   });

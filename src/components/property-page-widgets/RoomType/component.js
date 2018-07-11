@@ -14,6 +14,7 @@ import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
 import { Slideshow } from 'media/Slideshow';
 import { withResponsive } from 'utils/with-responsive';
+import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 
 import { getRatingMarkup } from './utils/getRatingMarkup';
 import { getRoomFeaturesMarkup } from './utils/getRoomFeaturesMarkup';
@@ -113,7 +114,7 @@ const Component = ({
                 width={8}
               >
                 <Card.Description>
-                  from <Heading>{nightPrice}</Heading> /night
+                  {getNightPriceMarkup(nightPrice)}
                 </Card.Description>
                 <ShowOnMobile>
                   <Divider />

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Image, Rating } from 'semantic-ui-react';
 
-import { Heading } from 'typography/Heading';
+import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
 
 import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
 
@@ -10,6 +10,7 @@ import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
  * The standard widget for featuring a room.
  * @returns {Object}
  */
+
 export const Component = ({
   bedsNumber,
   guestsNumber,
@@ -38,9 +39,7 @@ export const Component = ({
           size="tiny"
         />
       </Card.Description>
-      <Card.Description>
-        from <Heading>{nightPrice}</Heading> /night
-      </Card.Description>
+      <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
     </Card.Content>
   </Card>
 );
