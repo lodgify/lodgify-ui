@@ -1,0 +1,25 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'third-party-component';
+@element  : 'react-player';
+
+@import (multiple) '../../theme.config';
+
+/*******************************
+            Datepicker
+*******************************/
+.react-player-wrapper {
+
+  &.is-responsive {
+    position: relative;
+    padding-top: @playerAspectRatioPaddingTop;
+
+    .react-player {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

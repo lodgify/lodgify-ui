@@ -40,10 +40,20 @@ describe('<Video />', () => {
       const props = { videoSource: 'https://lodgify.com' };
       const video = shallow(getVideo(props));
       const videoProps = video.find(ReactPlayer).props();
-
       expect(videoProps).toEqual(
         expect.objectContaining({ url: props.videoSource })
       );
+    });
+  });
+
+  describe('the responsive capabilities', () => {
+    it('should correctly be responsive if the prop is set', () => {
+      const props = {
+        videoSource: 'https://lodgify.com',
+        isResponsive: true,
+      };
+      const wrapper = shallow(getVideo(props));
+      expect(wrapper.find('.is-responsive')).toHaveLength(1);
     });
   });
 });
