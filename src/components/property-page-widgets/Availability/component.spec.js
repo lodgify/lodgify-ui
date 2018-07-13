@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import moment from 'moment';
 import { CalendarMonth } from 'react-dates';
 import { Card, Responsive } from 'semantic-ui-react';
 import {
@@ -24,9 +25,9 @@ const props = {
 };
 
 const getAvailability = () => shallow(<Availability {...props} />);
-const getWrappedAvailability = () => {
+const getWrappedAvailability = (overrideProps = {}) => {
   const Child = getAvailability().prop('as');
-  return shallow(<Child {...props} />);
+  return shallow(<Child {...{ ...props, ...overrideProps }} />);
 };
 
 describe('<Availability />', () => {
@@ -44,6 +45,71 @@ describe('<Availability />', () => {
     it('should have four children', () => {
       const wrapper = getWrappedAvailability();
       expectComponentToHaveChildren(wrapper, Heading, Grid, Card, Grid);
+    });
+  });
+
+  describe('Interaction: handleClickNextMonth', () => {
+    it('should persist the next startDate in component state', () => {
+      const wrapper = getWrappedAvailability();
+      const startDate = wrapper.state().startDate;
+      wrapper.instance().handleClickNextMonth();
+      const actual = wrapper.state();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          startDate: startDate.clone().add(4, 'months'),
+        })
+      );
+    });
+  });
+
+  describe('Interaction: handleClickPreviousMonth', () => {
+    it('should persist the next startDate in component state', () => {
+      const wrapper = getWrappedAvailability();
+      const startDate = wrapper.state().startDate;
+      wrapper.instance().handleClickPreviousMonth();
+      const actual = wrapper.state();
+      expect(actual).toEqual(
+        expect.objectContaining({
+          startDate: startDate.clone().subtract(4, 'months'),
+        })
+      );
+    });
+  });
+
+  describe('Render: renderCalendarDay', () => {
+    it('should correctly render the day as blocked', () => {
+      const todayMomentObject = moment();
+      const component = getWrappedAvailability({
+        getIsDayBlocked: currentDate => {
+          return currentDate.isSame(todayMomentObject, 'date');
+        },
+      });
+      const actual = component.instance().renderCalendarDay({
+        day: todayMomentObject,
+      });
+      expect(actual.props.modifiers.has('blocked-calendar')).toBe(true);
+    });
+
+    it('should correctly use the default method of `getIsDayBlocked`', () => {
+      const todayMomentObject = moment();
+      const component = getWrappedAvailability();
+      const actual = component.instance().renderCalendarDay({
+        day: todayMomentObject,
+      });
+      expect(actual.props.modifiers.has('blocked-calendar')).toBe(false);
+    });
+
+    it('should correctly render the day as blocked', () => {
+      const todayMomentObject = moment();
+      const component = getWrappedAvailability({
+        getIsDayBlocked: currentDate => {
+          return currentDate.isSame(todayMomentObject, 'date');
+        },
+      });
+      const actual = component.instance().renderCalendarDay({
+        day: todayMomentObject.clone().add(1, 'day'),
+      });
+      expect(actual.props.modifiers.has('blocked-calendar')).toBe(false);
     });
   });
 
@@ -173,6 +239,19 @@ describe('<Availability />', () => {
         icon: 'map pin',
         label: 'Properties',
         options: props.roomsWithImages,
+      });
+    });
+
+    describe('Interaction: onChange', () => {
+      it('should correctly trigger the prop method and force update', () => {
+        const onChangeRoomDropdown = jest.fn();
+        const wrapper = getWrappedAvailability({
+          onChangeRoomDropdown,
+        })
+          .find(Dropdown)
+          .at(0);
+        wrapper.simulate('change', {});
+        expect(onChangeRoomDropdown).toBeCalled();
       });
     });
   });
