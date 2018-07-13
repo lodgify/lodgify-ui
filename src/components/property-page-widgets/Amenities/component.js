@@ -1,49 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Modal as SemanticModal } from 'semantic-ui-react';
 
 import { withResponsive } from 'utils/with-responsive';
-import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
-import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
-import { Divider } from 'elements/Divider';
 
 import { getDefaultItems } from './utils/getDefaultItems';
 import { hasExtraItems } from './utils/hasExtraItems';
+import { getCategoryMarkup } from './utils/getCategoryMarkup';
 
 /**
  * The standard widget for displaying the amenities of a property.
  * @returns {Object}
  */
 const Component = ({ amenities, isUserOnMobile }) => (
-  <Grid>
+  <Grid stackable>
     <GridColumn width={12}>
-      <Heading>Amenities</Heading>
+      <Heading>Property Amenities</Heading>
     </GridColumn>
-    {getDefaultItems(amenities, isUserOnMobile).map(
-      ({ iconName, isDisabled, label }, index) => (
-        <GridColumn
-          computer={4}
-          key={buildKeyFromStrings(label, index)}
-          mobile={6}
-          tablet={4}
-        >
-          <Icon isDisabled={isDisabled} label={label} name={iconName} />
-        </GridColumn>
-      )
-    )}
+    {getDefaultItems(amenities, isUserOnMobile).map(getCategoryMarkup)}
     {hasExtraItems(amenities, isUserOnMobile) && (
       <GridColumn width={12}>
         <Modal trigger={<Link>View more</Link>}>
-          {amenities.map(({ iconName, isDisabled, label }, index) => (
-            <div key={buildKeyFromStrings(label, index)}>
-              {!!index && <Divider hasLine />}
-              <Icon isDisabled={isDisabled} label={label} name={iconName} />
-            </div>
-          ))}
+          <SemanticModal.Content>
+            <Grid padded stackable>
+              {amenities.map(getCategoryMarkup)}
+            </Grid>
+          </SemanticModal.Content>
         </Modal>
       </GridColumn>
     )}
@@ -53,18 +40,15 @@ const Component = ({ amenities, isUserOnMobile }) => (
 Component.displayName = 'Amenities';
 
 Component.propTypes = {
-  /** The amenities to display as icons. */
+  /** The amenity categories. */
   amenities: PropTypes.arrayOf(
     PropTypes.shape({
-      /**
-       * The name of the icon to display.
-       * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/Icon)
-       */
+      /** The name of the icon to display for the category. */
       iconName: PropTypes.string.isRequired,
-      /** Is the amenity disabled. */
-      isDisabled: PropTypes.bool,
-      /** A visible label to display for the amenity. */
-      label: PropTypes.string.isRequired,
+      /** The list of amenities */
+      items: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+      /** The category name */
+      name: PropTypes.string.isRequired,
     })
   ).isRequired,
   /**

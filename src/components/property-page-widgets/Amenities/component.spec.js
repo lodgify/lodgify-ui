@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Responsive } from 'semantic-ui-react';
+import { Responsive, Modal as SemanticModal } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
@@ -11,25 +11,22 @@ import {
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { GridRow } from 'layout/GridRow';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
-import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 
-import { sixAmenities, twelveAmenities } from './mock-data/amenities';
+import { twoAmenities, sixAmenities } from './mock-data/amenities';
 import { ComponentWithResponsive as Amenities } from './component';
 
 const getAmenities = (props = {}) =>
   shallow(
-    <Amenities
-      amenities={props.amenities || sixAmenities}
-      isUserOnMobile={false}
-    />
+    <Amenities amenities={props.amenities || twoAmenities} isUserOnMobile />
   );
 const getWrappedAmenities = (props = {}) => {
   const Child = getAmenities().prop('as');
   return shallow(
-    <Child amenities={props.amenities || sixAmenities} isUserOnMobile={false} />
+    <Child amenities={props.amenities || twoAmenities} isUserOnMobile />
   );
 };
 
@@ -51,7 +48,8 @@ describe('<Amenities />', () => {
       const wrapper = getWrappedAmenities();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(7, GridColumn)
+        GridColumn,
+        ...getArrayOfLengthOfItem(2, GridRow)
       );
     });
   });
@@ -76,85 +74,82 @@ describe('<Amenities />', () => {
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
       const wrapper = getWrappedAmenities().find(Heading);
-      expectComponentToHaveChildren(wrapper, 'Amenities');
+      expectComponentToHaveChildren(wrapper, 'Property Amenities');
     });
   });
 
-  describe('each of the array of `GridColumn`s', () => {
-    const getGridColumnInArray = () =>
-      getWrappedAmenities()
-        .find(GridColumn)
-        .at(1);
-
-    it('should have the right props', () => {
-      const wrapper = getGridColumnInArray();
-      expectComponentToHaveProps(wrapper, {
-        computer: 4,
-        tablet: 4,
-        mobile: 6,
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getGridColumnInArray();
-      expectComponentToHaveChildren(wrapper, Icon);
-    });
-  });
-
-  describe('each of the `Icon`s in the array of `GridColumn`s', () => {
-    it('should have the right props', () => {
-      const wrapper = getWrappedAmenities()
-        .find(Icon)
-        .at(0);
-      const { isDisabled, label, iconName: name } = sixAmenities[0];
-      expectComponentToHaveProps(wrapper, {
-        isDisabled: !!isDisabled,
-        label,
-        name,
-      });
-    });
-  });
-
-  describe('if more than nine amenities are passed', () => {
-    const getAmenitiesWithTwelveAmenities = () =>
-      getWrappedAmenities({ amenities: twelveAmenities });
-
+  describe('if `hasExtraItems` returns true', () => {
+    const getAmenitiesWithSixCategories = () =>
+      getWrappedAmenities({ amenities: sixAmenities });
     describe('the `Grid` component', () => {
-      it('should render another `GridColumn`', () => {
-        const wrapper = getAmenitiesWithTwelveAmenities()
-          .find(Grid)
-          .at(0);
+      it('should render the right children', () => {
+        const wrapper = getAmenitiesWithSixCategories();
         expectComponentToHaveChildren(
           wrapper,
-          ...getArrayOfLengthOfItem(11, GridColumn)
+          GridColumn,
+          ...getArrayOfLengthOfItem(3, GridRow),
+          GridColumn
         );
       });
     });
 
-    describe('the conditional `GridColumn` component', () => {
-      const getConditionalGridColumn = () =>
-        getAmenitiesWithTwelveAmenities()
+    describe('the last child `GridColumn` of `Grid`', () => {
+      const getLastGridColumn = () =>
+        getAmenitiesWithSixCategories()
           .find(GridColumn)
-          .at(10);
+          .at(7);
 
       it('should have the right props', () => {
-        const wrapper = getConditionalGridColumn();
+        const wrapper = getLastGridColumn();
         expectComponentToHaveProps(wrapper, { width: 12 });
       });
 
       it('should render the right children', () => {
-        const wrapper = getConditionalGridColumn();
+        const wrapper = getLastGridColumn();
         expectComponentToHaveChildren(wrapper, Modal);
       });
     });
 
-    describe('the `Modal` component', () => {
+    describe('the `Modal`', () => {
+      const getModal = () => getAmenitiesWithSixCategories().find(Modal);
       it('should have the right props', () => {
-        const wrapper = getAmenitiesWithTwelveAmenities().find(Modal);
+        const wrapper = getModal();
         expectComponentToHaveProps(wrapper, {
-          children: expect.any(Array),
           trigger: <Link>View more</Link>,
         });
+      });
+
+      it('should have the right children', () => {
+        const wrapper = getModal();
+        expectComponentToHaveChildren(wrapper, SemanticModal.Content);
+      });
+    });
+
+    describe('the `SemanticModal.Content`', () => {
+      it('should have the right children', () => {
+        const wrapper = getAmenitiesWithSixCategories().find(
+          SemanticModal.Content
+        );
+        expectComponentToHaveChildren(wrapper, Grid);
+      });
+    });
+
+    describe('the `Grid` child of `SemanticModal.Content`', () => {
+      const getSecondGrid = () =>
+        getAmenitiesWithSixCategories()
+          .find(Grid)
+          .at(1);
+      it('should have the right props', () => {
+        const wrapper = getSecondGrid();
+        expectComponentToHaveProps(wrapper, { padded: true, stackable: true });
+      });
+
+      it('should render the right children', () => {
+        const wrapper = getSecondGrid();
+        expectComponentToHaveChildren(
+          wrapper,
+          ...getArrayOfLengthOfItem(5, GridRow)
+        );
       });
     });
   });
