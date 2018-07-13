@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Image as SemanticImage } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
@@ -42,17 +42,17 @@ describe('<Header />', () => {
   });
 
   describe('the first Semantic UI `Menu.Item` component', () => {
-    it('should have props', () => {
-      const wrapper = getHeader()
+    const getFirstMenuItem = props =>
+      getHeader(props)
         .find(Menu)
         .children(Menu.Item);
+    it('should have props', () => {
+      const wrapper = getFirstMenuItem();
       expectComponentToHaveProps(wrapper, { href: '/', link: true });
     });
 
     it('should render a single child', () => {
-      const wrapper = getHeader()
-        .find(Menu)
-        .children(Menu.Item);
+      const wrapper = getFirstMenuItem();
       expectComponentToHaveChildren(wrapper, Heading);
     });
 
@@ -65,6 +65,25 @@ describe('<Header />', () => {
         expectComponentToHaveProps(wrapper, {
           children: logoText,
           size: 'small',
+        });
+      });
+    });
+
+    describe('if `props.logoSrc` is passed', () => {
+      it('should render the right children', () => {
+        const wrapper = getFirstMenuItem({ logoSrc: 'whatup' });
+        expectComponentToHaveChildren(wrapper, SemanticImage);
+      });
+
+      describe('the `Image`', () => {
+        it('should have the right props', () => {
+          const wrapper = getFirstMenuItem({ logoSrc: 'duck' }).find(
+            SemanticImage
+          );
+          expectComponentToHaveProps(wrapper, {
+            alt: logoText,
+            src: 'duck',
+          });
         });
       });
     });
