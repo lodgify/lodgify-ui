@@ -4,8 +4,11 @@ import { Segment, Rating } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
+  expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Icon } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
 
@@ -29,21 +32,12 @@ describe('<Summary />', () => {
   describe('the first `Segment.Group` component', () => {
     it('should have the right props', () => {
       const wrapper = getSummary();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          compact: true,
-        })
-      );
+      expectComponentToHaveProps(wrapper, { compact: true });
     });
 
     it('should render the right children', () => {
-      const children = ['Segment', 'SegmentGroup'];
       const wrapper = getSummary();
-      children.forEach((child, index) => {
-        const actual = wrapper.childAt(index).name();
-        expect(actual).toBe(child);
-      });
+      expectComponentToHaveChildren(wrapper, Segment, Segment.Group);
     });
   });
 
@@ -54,8 +48,7 @@ describe('<Summary />', () => {
         .first();
     it('should render the right children', () => {
       const wrapper = getFirstSegment();
-      const actual = wrapper.children(Heading);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, Heading);
     });
   });
 
@@ -64,8 +57,7 @@ describe('<Summary />', () => {
       const wrapper = getSummary()
         .find(Heading)
         .first();
-      const actual = wrapper.prop('children');
-      expect(actual).toBe(props.propertyName);
+      expectComponentToHaveChildren(wrapper, props.propertyName);
     });
   });
 
@@ -77,18 +69,16 @@ describe('<Summary />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondSegmentGroup();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          horizontal: true,
-        })
-      );
+      expectComponentToHaveProps(wrapper, { horizontal: true });
     });
 
     it('should have the right children', () => {
       const wrapper = getSecondSegmentGroup();
-      const actual = wrapper.find(Segment);
-      expect(actual).toHaveLength(3);
+
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(3, Segment)
+      );
     });
   });
 
@@ -99,14 +89,7 @@ describe('<Summary />', () => {
         .at(1);
     it('should render the right `children`', () => {
       const wrapper = getSecondSegment();
-      const actual = wrapper.prop('children');
-      expect(actual).toEqual(expect.arrayContaining([props.locationName]));
-    });
-
-    it('should render a single Lodgify UI `Icon` component', () => {
-      const wrapper = getSecondSegment();
-      const actual = wrapper.find(Icon);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(wrapper, props.locationName, Icon);
     });
   });
 
@@ -117,14 +100,11 @@ describe('<Summary />', () => {
         .at(0);
     it('should have the right props', () => {
       const wrapper = getFirstIcon();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          color: 'yellow',
-          name: 'map pin',
-          size: 'small',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        color: 'yellow',
+        name: 'map pin',
+        size: 'small',
+      });
     });
   });
 
@@ -136,29 +116,23 @@ describe('<Summary />', () => {
 
     it('should have the right children', () => {
       const wrapper = getThirdSegment();
-      const actual = wrapper.prop('children');
-      expect(actual).toEqual(expect.arrayContaining([props.ratingNumber]));
-    });
-
-    it('should have a single `Rating` component', () => {
-      const wrapper = getThirdSegment();
-      const actual = wrapper.find(Rating);
-      expect(actual).toHaveLength(1);
+      expectComponentToHaveChildren(
+        wrapper,
+        props.ratingNumber.toString(),
+        Rating
+      );
     });
   });
 
   describe('the `Rating` component', () => {
     it('should have the right props', () => {
       const wrapper = getSummary().find(Rating);
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          disabled: true,
-          maxRating: 5,
-          rating: Math.round(props.ratingNumber),
-          size: 'tiny',
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        disabled: true,
+        maxRating: 5,
+        rating: Math.round(props.ratingNumber),
+        size: 'tiny',
+      });
     });
   });
 
@@ -186,18 +160,16 @@ describe('<Summary />', () => {
         .at(1);
     it('should have the right props', () => {
       const wrapper = getLastHeading();
-      const actual = wrapper.props();
-      expect(actual).toEqual(
-        expect.objectContaining({
-          size: 'small',
-        })
-      );
+      expectComponentToHaveProps(wrapper, { size: 'small' });
     });
 
     it('should have the right children', () => {
       const wrapper = getLastHeading();
-      const actual = wrapper.prop('children');
-      expect(actual).toEqual(props.nightPrice);
+      expectComponentToHaveChildren(wrapper, props.nightPrice);
     });
+  });
+
+  it('should have `displayName` `Summary`', () => {
+    expectComponentToHaveDisplayName(Summary, 'Summary');
   });
 });
