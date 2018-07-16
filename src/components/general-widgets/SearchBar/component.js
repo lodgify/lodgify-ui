@@ -7,6 +7,10 @@ import { Icon } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { Button } from 'elements/Button';
+import { Grid } from 'layout/Grid';
+import { GridColumn } from 'layout/GridColumn';
+
+import { getBarSizing } from './utils/getBarSizing';
 
 /**
  * The standard widget for property search.
@@ -34,17 +38,26 @@ export class Component extends PureComponent {
       isSticky,
     } = this.props;
 
+    const { rangePickerWidth, computer } = getBarSizing(
+      isShowingSummary,
+      isShowingLocationDropdown
+    );
+
+    const defaultGridProps = {
+      computer,
+    };
+
     return (
       <div className={cx({ 'is-sticky': isSticky })}>
         <Form onSubmit={this.handleSubmit}>
-          <Form.Group>
+          <Grid columns="equal" verticalAlign="middle">
             {!!isShowingSummary && (
-              <Form.Field width="three">
+              <GridColumn tablet="6" {...defaultGridProps}>
                 <Icon isDisabled labelText="Property Summary" name="home" />
-              </Form.Field>
+              </GridColumn>
             )}
             {!!isShowingLocationDropdown && (
-              <Form.Field width="three">
+              <GridColumn computer="2" tablet="6">
                 <Dropdown
                   icon="map pin"
                   label="Location"
@@ -52,9 +65,9 @@ export class Component extends PureComponent {
                   onChange={this.persistInputChange}
                   options={locationOptions}
                 />
-              </Form.Field>
+              </GridColumn>
             )}
-            <Form.Field width="seven">
+            <GridColumn computer={rangePickerWidth} tablet="12">
               <DateRangePicker
                 endDatePlaceholderText="Check-out"
                 getIsDayBlocked={getIsDayBlocked}
@@ -62,8 +75,8 @@ export class Component extends PureComponent {
                 onChange={this.persistInputChange}
                 startDatePlaceholderText="Check-in"
               />
-            </Form.Field>
-            <Form.Field width="three">
+            </GridColumn>
+            <GridColumn tablet="6" {...defaultGridProps}>
               <Dropdown
                 icon="users"
                 label="Guests"
@@ -71,9 +84,11 @@ export class Component extends PureComponent {
                 onChange={this.persistInputChange}
                 options={guestsOptions}
               />
-            </Form.Field>
-            <Form.Field width="three">{searchButton}</Form.Field>
-          </Form.Group>
+            </GridColumn>
+            <GridColumn computer="3" tablet="6">
+              {searchButton}
+            </GridColumn>
+          </Grid>
         </Form>
       </div>
     );

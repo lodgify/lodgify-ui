@@ -8,6 +8,8 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { Grid } from 'layout/Grid';
+import { GridColumn } from 'layout/GridColumn';
 import { Dropdown } from 'inputs/Dropdown';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { Button } from 'elements/Button';
@@ -62,52 +64,53 @@ describe('<SearchBar />', () => {
 
     it('should render the right children', () => {
       const wrapper = getForm();
-      expectComponentToHaveChildren(wrapper, Form.Group);
+      expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
-  describe('the `Form.Group` component', () => {
-    const getFormGroup = props => getSearchBar(props).find(Form.Group);
+  describe('the `Grid` component', () => {
+    const getGrid = props => getSearchBar(props).find(Grid);
 
-    it('should render four `Form.Field` components by default', () => {
-      const wrapper = getFormGroup();
+    it('should render four `GridColumn` components by default', () => {
+      const wrapper = getGrid();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(4, Form.Field)
+        ...getArrayOfLengthOfItem(4, GridColumn)
       );
     });
 
     describe('if `props.isShowingSummary` is true', () => {
-      it('should render five `Form.Field` components', () => {
-        const wrapper = getFormGroup({ isShowingSummary: true });
+      it('should render five `GridColumn` components', () => {
+        const wrapper = getGrid({ isShowingSummary: true });
         expectComponentToHaveChildren(
           wrapper,
-          ...getArrayOfLengthOfItem(5, Form.Field)
+          ...getArrayOfLengthOfItem(5, GridColumn)
         );
       });
     });
 
     describe('if `props.isShowingLocationDropdown` is false', () => {
-      it('should render three `Form.Field` components', () => {
-        const wrapper = getFormGroup({ isShowingLocationDropdown: false });
+      it('should render three `GridColumn` components', () => {
+        const wrapper = getGrid({ isShowingLocationDropdown: false });
         expectComponentToHaveChildren(
           wrapper,
-          ...getArrayOfLengthOfItem(3, Form.Field)
+          ...getArrayOfLengthOfItem(3, GridColumn)
         );
       });
     });
   });
 
-  describe('the property summary `Form.Field` component', () => {
+  describe('the property summary `GridColumn` component', () => {
     const getSummaryFormField = () =>
       getSearchBar({ isShowingSummary: true })
-        .find(Form.Field)
+        .find(GridColumn)
         .at(0);
 
     it('should have the right props', () => {
       const wrapper = getSummaryFormField();
       expectComponentToHaveProps(wrapper, {
-        width: 'three',
+        tablet: '6',
+        computer: 2,
       });
     });
 
@@ -117,16 +120,41 @@ describe('<SearchBar />', () => {
     });
   });
 
-  describe('the location dropdown `Form.Field` component', () => {
+  describe('the property summary `GridColumn` component when summary and location dropdown is shown', () => {
+    const getSummaryFormField = () =>
+      getSearchBar({
+        isShowingSummary: false,
+        isShowingLocationDropdown: false,
+      })
+        .find(GridColumn)
+        .at(0);
+
+    it('should have the right props', () => {
+      const wrapper = getSummaryFormField();
+      expectComponentToHaveProps(wrapper, {
+        tablet: '12',
+        computer: 5,
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getSummaryFormField();
+
+      expectComponentToHaveChildren(wrapper, DateRangePicker);
+    });
+  });
+
+  describe('the location dropdown `GridColumn` component', () => {
     const getLocationDropdownFormField = () =>
       getSearchBar()
-        .find(Form.Field)
+        .find(GridColumn)
         .at(0);
 
     it('should have the right props', () => {
       const wrapper = getLocationDropdownFormField();
       expectComponentToHaveProps(wrapper, {
-        width: 'three',
+        tablet: '6',
+        computer: '2',
       });
     });
 
@@ -151,16 +179,17 @@ describe('<SearchBar />', () => {
     });
   });
 
-  describe('the date range picker `Form.Field` component', () => {
+  describe('the date range picker `GridColumn` component', () => {
     const getDateRangePickerFormField = () =>
       getSearchBar()
-        .find(Form.Field)
+        .find(GridColumn)
         .at(1);
 
     it('should have the right props', () => {
       const wrapper = getDateRangePickerFormField();
       expectComponentToHaveProps(wrapper, {
-        width: 'seven',
+        tablet: '12',
+        computer: 4,
       });
     });
 
@@ -183,16 +212,17 @@ describe('<SearchBar />', () => {
     });
   });
 
-  describe('the guests dropdown `Form.Field` component', () => {
+  describe('the guests dropdown `GridColumn` component', () => {
     const getGuestsDropdownFormField = () =>
       getSearchBar()
-        .find(Form.Field)
+        .find(GridColumn)
         .at(2);
 
     it('should have the right props', () => {
       const wrapper = getGuestsDropdownFormField();
       expectComponentToHaveProps(wrapper, {
-        width: 'three',
+        tablet: '6',
+        computer: 3,
       });
     });
 
@@ -217,16 +247,17 @@ describe('<SearchBar />', () => {
     });
   });
 
-  describe('the button `Form.Field` component', () => {
+  describe('the button `GridColumn` component', () => {
     const getButtonFormField = props =>
       getSearchBar(props)
-        .find(Form.Field)
+        .find(GridColumn)
         .at(3);
 
     it('should have the right props', () => {
       const wrapper = getButtonFormField();
       expectComponentToHaveProps(wrapper, {
-        width: 'three',
+        tablet: '6',
+        computer: '3',
       });
     });
 
