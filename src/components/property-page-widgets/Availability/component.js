@@ -18,6 +18,7 @@ import { Dropdown } from 'inputs/Dropdown';
 import { getMonthsToDisplay } from './utils/getMonthsToDisplay';
 import { getNextStartDate } from './utils/getNextStartDate';
 import { getPreviousStartDate } from './utils/getPreviousStartDate';
+import { renderMonthHeader } from './utils/renderMonthHeader';
 import { BLOCKED_DAY_CLASS } from './constants';
 
 import 'react-dates/initialize';
@@ -121,6 +122,7 @@ class Component extends PureComponent {
               {getMonthsToDisplay(startDate, isUserOnMobile).map(
                 (month, index) => (
                   <GridColumn
+                    className="availability-calendar-wrapper"
                     computer={6}
                     key={buildKeyFromStrings('month-column', index)}
                     mobile={12}
@@ -130,6 +132,7 @@ class Component extends PureComponent {
                       isVisible
                       month={month}
                       renderCalendarDay={this.renderCalendarDay}
+                      renderMonthElement={renderMonthHeader}
                     />
                   </GridColumn>
                 )

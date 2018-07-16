@@ -136,6 +136,37 @@
 }
 
 /*
+  Calendar in Availability Component
+*/
+.availability-calendar-wrapper .CalendarMonth {
+
+  > .CalendarMonth_caption {
+    padding-bottom: @availabilityCaptionPadding;
+    padding-top: @availabilityCaptionPadding;
+  }
+
+  .DayPicker_weekHeader {
+    width: @availabilityWeekHeaderWidth;
+    top: @availabilityWeekHeaderTop;
+    padding: @availabilityWeekHeaderPadding;
+
+    .DayPicker_weekHeader_ul {
+      width: @availabilityWeekHeaderWidth;
+      display: flex;
+
+      .DayPicker_weekHeader_li {
+        width: @availabilityWeekHeaderWidth !important;
+
+        small {
+          text-transform: uppercase;
+          font-size: @availabilityWeekHeaderFontSize;
+        }
+      }
+    }
+  }
+}
+
+/*
   Input specific styles
 */
 
