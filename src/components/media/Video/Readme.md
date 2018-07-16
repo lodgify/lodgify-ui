@@ -4,6 +4,18 @@
 
 ### Variations
 
+#### Responsive
+
+```jsx
+<Video isResponsive videoSource="https://www.youtube.com/watch?v=SOcixRXr0vs" />
+```
+
+#### Responsive with a different aspect ratio
+
+```jsx
+<Video isResponsive width="300" height="220" videoSource="https://www.youtube.com/watch?v=SOcixRXr0vs" />
+```
+
 #### HTML
 
 ```jsx
