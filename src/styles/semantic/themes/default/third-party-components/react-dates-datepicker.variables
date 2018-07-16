@@ -59,6 +59,13 @@
 @pickerButtonFirstLeft: @20px;
 @pickerButtonLastRight: @20px;
 
+/* Availability */
+@availabilityCaptionPadding: 0;
+@availabilityWeekHeaderTop: @20px;
+@availabilityWeekHeaderPadding: 0;
+@availabilityWeekHeaderWidth: 100%;
+@availabilityWeekHeaderFontSize: 0.857rem;
+
 /*-------------------
         States
 --------------------*/
