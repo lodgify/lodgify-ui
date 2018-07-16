@@ -22,7 +22,9 @@ const Component = ({ amenities, isUserOnMobile }) => (
     <GridColumn width={12}>
       <Heading>Property Amenities</Heading>
     </GridColumn>
-    {getDefaultItems(amenities, isUserOnMobile).map(getCategoryMarkup)}
+    {getDefaultItems(amenities, isUserOnMobile).map((amenity, index) =>
+      getCategoryMarkup(amenity, index, isUserOnMobile)
+    )}
     {hasExtraItems(amenities, isUserOnMobile) && (
       <GridColumn width={12}>
         <Modal trigger={<Link>View more</Link>}>
