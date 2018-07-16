@@ -17,6 +17,7 @@ export const Component = ({
   isDisabled,
   isLabelLeft,
   label,
+  labelWeight,
   name,
   path,
   size,
@@ -32,11 +33,13 @@ export const Component = ({
     // compatibility with dynamic components e.g. `ToolTip`
     {...otherProps}
   >
-    {!!label && isLabelLeft && <Paragraph>{label}</Paragraph>}
+    {!!label &&
+      isLabelLeft && <Paragraph weight={labelWeight}>{label}</Paragraph>}
     <svg viewBox="0 0 24 24">
       <path d={getPath(name, path)} fill="currentColor" />
     </svg>
-    {!!label && !isLabelLeft && <Paragraph>{label}</Paragraph>}
+    {!!label &&
+      !isLabelLeft && <Paragraph weight={labelWeight}>{label}</Paragraph>}
   </i>
 );
 
@@ -49,6 +52,7 @@ Component.defaultProps = {
   isDisabled: false,
   isLabelLeft: false,
   label: null,
+  labelWeight: null,
   name: null,
   path: null,
   size: null,
@@ -82,6 +86,8 @@ Component.propTypes = {
   isLabelLeft: PropTypes.bool,
   /** A visible label to display with the icon. */
   label: PropTypes.string,
+  /** The weight of the label. */
+  labelWeight: PropTypes.oneOf(['heavy', 'light']),
   /** The name of the icon to display. Takes priority over `props.path`. */
   name: PropTypes.oneOf([
     'arrow down',

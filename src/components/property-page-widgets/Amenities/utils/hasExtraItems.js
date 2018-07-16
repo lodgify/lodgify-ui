@@ -1,9 +1,9 @@
 /**
  * @param  {Any[]}    array
- * @param  {Boolean}  shouldCompareSix
+ * @param  {Boolean}  shouldCompareThree
  * @return {Boolean}
  */
-export const hasExtraItems = (array, shouldCompareSix) => {
-  const numberToCompare = shouldCompareSix ? 6 : 9;
+export const hasExtraItems = (array, shouldCompareThree) => {
+  const numberToCompare = shouldCompareThree ? 3 : 5;
   return array.length > numberToCompare;
 };

@@ -1,23 +1,49 @@
-export const sixAmenities = [
-  { iconName: 'question mark', label: 'Fireplace' },
-  { iconName: 'question mark', label: 'Home office' },
-  { iconName: 'question mark', label: 'Child friendly' },
-  { iconName: 'question mark', isDisabled: true, label: 'No pets' },
-  { iconName: 'question mark', label: 'Clean energy' },
-  { iconName: 'question mark', label: 'Parties' },
+export const twoAmenities = [
+  {
+    name: 'Cooking',
+    iconName: 'leaf',
+    items: ['Toaster', 'Microwave', 'Coffee Machine'],
+  },
+  {
+    name: 'Bathroom & Laundry',
+    iconName: 'paw',
+    items: ['Bidet', 'Hair Dryer', 'Iron & Board'],
+  },
 ];
 
-export const twelveAmenities = [
-  { iconName: 'question mark', label: 'Fireplace' },
-  { iconName: 'question mark', label: 'Home office' },
-  { iconName: 'question mark', label: 'Child friendly' },
-  { iconName: 'question mark', isDisabled: true, label: 'No pets' },
-  { iconName: 'question mark', label: 'Clean energy' },
-  { iconName: 'question mark', label: 'Parties' },
-  { iconName: 'question mark', label: 'Phone signal' },
-  { iconName: 'question mark', label: 'Shop nearby' },
-  { iconName: 'question mark', isDisabled: true, label: 'Bug free' },
-  { iconName: 'question mark', label: 'Defibrillator' },
-  { iconName: 'question mark', label: 'Pastry chef' },
-  { iconName: 'question mark', label: 'Legal' },
+export const sixAmenities = [
+  {
+    name: 'Cooking',
+    iconName: 'leaf',
+    items: ['Toaster', 'Microwave', 'Coffee Machine'],
+  },
+  {
+    name: 'Bathroom & Laundry',
+    iconName: 'paw',
+    items: ['Bidet', 'Hair Dryer', 'Iron & Board'],
+  },
+  {
+    name: 'Spa & Gym',
+    iconName: 'leaf',
+    items: ['Ping-Pong Table', 'Pool Table', 'Foosball'],
+  },
+  {
+    name: 'Outside',
+    iconName: 'sun',
+    items: ['Tennis Court'],
+  },
+  {
+    name: 'Miscellaneous',
+    iconName: 'coffee',
+    items: [
+      'Rice Steamer',
+      'Hot Tub',
+      'Fold-Away Bed',
+      'Fireplace',
+      'Steam Sauna',
+      'Fitness-Room',
+      'Parking',
+      'Laundry Service',
+    ],
+  },
 ];

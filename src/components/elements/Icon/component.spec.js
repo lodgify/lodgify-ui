@@ -85,9 +85,21 @@ describe('<Icon />', () => {
   });
 
   describe('the `Paragraph` component', () => {
+    const getIconWithLabel = props =>
+      getIcon({ label: 'someLabel', ...props }).find(Paragraph);
+
     it('should have the right children', () => {
-      const wrapper = getIcon({ label: 'someLabel' }).find(Paragraph);
+      const wrapper = getIconWithLabel();
       expectComponentToHaveChildren(wrapper, 'someLabel');
+    });
+
+    describe('if `props.labelWeight` is passed', () => {
+      it('should have the right props', () => {
+        const wrapper = getIconWithLabel({
+          labelWeight: 'heavy',
+        });
+        expectComponentToHaveProps(wrapper, { weight: 'heavy' });
+      });
     });
   });
 
