@@ -1,3 +1,14 @@
+# [1.18.0](https://github.com/lodgify/lodgify-ui/compare/v1.17.0...v1.18.0) (2018-07-16)
+
+
+### Features
+
+* **Amenities:** add responsive layout ([a5550fc](https://github.com/lodgify/lodgify-ui/commit/a5550fc))
+* **Amenities:** rework to allow amenities to be organised into categories ([0e6f3b6](https://github.com/lodgify/lodgify-ui/commit/0e6f3b6))
+* **Amenities:** rework to allow amenities to be organised into categories ([efeeae8](https://github.com/lodgify/lodgify-ui/commit/efeeae8))
+* **Icon:** add prop for label font weight ([4e56d0e](https://github.com/lodgify/lodgify-ui/commit/4e56d0e))
+* **Icon:** add prop for label font weight ([d89db60](https://github.com/lodgify/lodgify-ui/commit/d89db60))
+
 # [1.17.0](https://github.com/lodgify/lodgify-ui/compare/v1.16.2...v1.17.0) (2018-07-11)
 
 
