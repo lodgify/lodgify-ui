@@ -177,7 +177,7 @@ Component.displayName = 'Availability';
 
 Component.defaultProps = {
   getIsDayBlocked: () => false,
-  onChangeRoomDropdown: () => {},
+  onChangeRoomDropdown: Function.prototype,
   roomOptionsWithImages: [],
 };
 

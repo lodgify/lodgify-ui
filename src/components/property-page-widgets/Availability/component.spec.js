@@ -253,6 +253,12 @@ describe('<Availability />', () => {
         wrapper.simulate('change', {});
         expect(onChangeRoomDropdown).toBeCalled();
       });
+
+      it('should have `Function.prototype` as the default value for `props.onChangeRoomDropdown`', () => {
+        const wrapper = getWrappedAvailability();
+        const props = wrapper.instance().props;
+        expect(props.onChangeRoomDropdown).toBe(Function.prototype);
+      });
     });
   });
 
