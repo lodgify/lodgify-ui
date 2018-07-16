@@ -1,9 +1,9 @@
 /**
  * @param  {Any[]}    items
- * @param  {Boolean}  shouldGetSix
+ * @param  {Boolean}  shouldGetThree
  * @return {Any[]}
  */
-export const getDefaultItems = (items, shouldGetSix) => {
-  const numberOfItems = shouldGetSix ? 6 : 9;
+export const getDefaultItems = (items, shouldGetThree) => {
+  const numberOfItems = shouldGetThree ? 3 : 5;
   return items.slice(0, numberOfItems);
 };
