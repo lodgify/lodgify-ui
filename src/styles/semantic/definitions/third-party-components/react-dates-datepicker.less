@@ -33,6 +33,23 @@
       top: @pickerNavigationButtonTopSpace;
     }
 
+    // add styling for buttons
+    .DayPickerNavigation button:not(.DayPickerNavigation_button__horizontalDefault) {
+      position: absolute;
+      top: @pickerButtonTop;
+      line-height: @pickerButtonLineHeight;
+      border-radius: @pickerButtonBorderRadius;
+      padding: @pickerButtonPadding;
+
+      &:first-child {
+        left: @pickerButtonFirstLeft;
+      }
+
+      &:last-child {
+        right: @pickerButtonLastRight;
+      }
+    }
+
     .DayPicker_weekHeader {
       color: inherit;
       padding: @pickerTablePadding;

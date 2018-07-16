@@ -123,6 +123,10 @@ describe('getGroupedNavigationItems', () => {
           },
         ],
       },
+      {
+        before: [{ text: 'Home' }, { subItems: null }, { href: '/' }],
+        after: [{ text: 'Home' }, { subItems: [{ href: '/' }] }],
+      },
     ];
     testCases.forEach(({ before, after }) => {
       const actual = getGroupedNavigationItems(before);
