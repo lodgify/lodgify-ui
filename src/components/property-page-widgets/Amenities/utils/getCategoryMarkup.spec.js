@@ -5,9 +5,8 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
-import { GridColumn } from 'layout/GridColumn';
 import { Icon } from 'elements/Icon';
+import { Paragraph } from 'typography/Paragraph';
 
 import { getFormattedAmenityItems } from './getFormattedAmenityItems';
 import { getCategoryMarkup } from './getCategoryMarkup';
@@ -27,36 +26,28 @@ const category = {
   ],
 };
 
-const getMarkup = () => shallow(getCategoryMarkup(category, 'yo'));
+const getMarkup = isUserOnMobile =>
+  shallow(getCategoryMarkup(category, 'yo', isUserOnMobile));
 
 describe('getCategoryMarkup', () => {
-  it('should return `GridRow` component', () => {
+  it('should return `GridColumn` component', () => {
     const wrapper = getMarkup();
-    expectComponentToBe(wrapper, 'GridRow');
+    expectComponentToBe(wrapper, 'GridColumn');
+  });
+
+  it('should have the right props', () => {
+    const wrapper = getMarkup();
+    expectComponentToHaveProps(wrapper, { width: 4 });
   });
 
   it('should render the right children', () => {
     const wrapper = getMarkup();
-    expectComponentToHaveChildren(
-      wrapper,
-      ...getArrayOfLengthOfItem(2, GridColumn)
-    );
+    expectComponentToHaveChildren(wrapper, Icon, Paragraph);
   });
 
-  describe('the first `GridColumn`', () => {
-    it('should render the right children', () => {
-      const wrapper = getMarkup()
-        .find(GridColumn)
-        .at(0);
-      expectComponentToHaveChildren(wrapper, Icon);
-    });
-  });
-
-  describe('each of the `Icon`s child of the `GridColumn`s', () => {
+  describe('the `Icon`', () => {
     it('should have the right props', () => {
-      const wrapper = getMarkup()
-        .find(Icon)
-        .at(0);
+      const wrapper = getMarkup().find(Icon);
       expectComponentToHaveProps(wrapper, {
         isLabelLeft: true,
         label: category.name,
@@ -66,15 +57,20 @@ describe('getCategoryMarkup', () => {
     });
   });
 
-  describe('second `GridColumn`', () => {
+  describe('the `Paragraph`', () => {
     it('should render the right children', () => {
-      const wrapper = getMarkup()
-        .find(GridColumn)
-        .at(1);
+      const wrapper = getMarkup().find(Paragraph);
       expectComponentToHaveChildren(
         wrapper,
         ...getFormattedAmenityItems(category.items)
       );
+    });
+  });
+
+  describe('if `isFullWidth === true`', () => {
+    it('should have the right props', () => {
+      const wrapper = getMarkup(true);
+      expectComponentToHaveProps(wrapper, { width: 12 });
     });
   });
 });

@@ -94,11 +94,7 @@ describe('<Icon />', () => {
     });
 
     describe('if `props.labelWeight` is passed', () => {
-<<<<<<< HEAD
       it('should have the right props', () => {
-=======
-      it('should have the right props if` ', () => {
->>>>>>> feat(Icon): add prop for label font weight
         const wrapper = getIconWithLabel({
           labelWeight: 'heavy',
         });

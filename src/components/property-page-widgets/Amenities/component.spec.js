@@ -7,12 +7,10 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import { Modal as SemanticModal } from 'semantic-ui-react';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
-import { GridRow } from 'layout/GridRow';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
@@ -49,8 +47,7 @@ describe('<Amenities />', () => {
       const wrapper = getWrappedAmenities();
       expectComponentToHaveChildren(
         wrapper,
-        GridColumn,
-        ...getArrayOfLengthOfItem(2, GridRow)
+        ...getArrayOfLengthOfItem(3, GridColumn)
       );
     });
   });
@@ -87,9 +84,7 @@ describe('<Amenities />', () => {
         const wrapper = getAmenitiesWithSixCategories();
         expectComponentToHaveChildren(
           wrapper,
-          GridColumn,
-          ...getArrayOfLengthOfItem(3, GridRow),
-          GridColumn
+          ...getArrayOfLengthOfItem(5, GridColumn)
         );
       });
     });
@@ -98,7 +93,7 @@ describe('<Amenities />', () => {
       const getLastGridColumn = () =>
         getAmenitiesWithSixCategories()
           .find(GridColumn)
-          .at(7);
+          .at(4);
 
       it('should have the right props', () => {
         const wrapper = getLastGridColumn();
@@ -149,7 +144,7 @@ describe('<Amenities />', () => {
         const wrapper = getSecondGrid();
         expectComponentToHaveChildren(
           wrapper,
-          ...getArrayOfLengthOfItem(5, GridRow)
+          ...getArrayOfLengthOfItem(5, GridColumn)
         );
       });
     });

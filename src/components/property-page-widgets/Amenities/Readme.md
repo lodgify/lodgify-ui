@@ -2,23 +2,50 @@
 const amenities = [
   {
     name: 'Cooking',
-    iconName: 'leaf',
+    iconName: 'coffee',
     items: ['Toaster', 'Microwave', 'Coffee Machine'],
   },
   {
-    name: 'Bathroom & Laundry',
-    iconName: 'paw',
-    items: ['Bidet', 'Hair Dryer', 'Iron & Board'],
+    name: 'Bathroom',
+    iconName: 'bathroom',
+    items: ['Bidet', 'Hair Dryer'],
   },
   {
-    name: 'Spa & Gym',
+    name: 'Laundry',
     iconName: 'leaf',
-    items: ['Ping-Pong Table', 'Pool Table', 'Foosball'],
+    items: ['Washer', 'Dryer', 'Iron & Board'],
+  },
+];
+
+<Amenities amenities={amenities} />
+```
+
+```jsx
+const amenities = [
+  {
+    name: 'Cooking',
+    iconName: 'coffee',
+    items: ['Toaster', 'Microwave', 'Coffee Machine'],
+  },
+  {
+    name: 'Bathroom',
+    iconName: 'bathroom',
+    items: ['Bidet', 'Hair Dryer'],
   },
   {
     name: 'Outside',
     iconName: 'sun',
     items: ['Tennis Court'],
+  },
+  {
+    name: 'Spa & Gym',
+    iconName: 'paw',
+    items: ['Ping-Pong Table', 'Pool Table', 'Foosball'],
+  },
+  {
+    name: 'Laundry',
+    iconName: 'leaf',
+    items: ['Washer', 'Dryer', 'Iron & Board'],
   },
   {
     name: 'Miscellaneous',
@@ -37,4 +64,5 @@ const amenities = [
 ];
 
 <Amenities amenities={amenities} />
+
 ```
