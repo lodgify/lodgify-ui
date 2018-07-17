@@ -1,0 +1,4 @@
+export const MAXIMUM_SCREEN_WIDTH_TABLET = 800;
+
+export const NAVIGATION_ITEM_COUNT = 5;
+export const INITIAL_NAVIGATION_ITEM_WIDTH = 3;

@@ -21,7 +21,8 @@
 /* Icon Variables */
 
 i.icon {
-  height: @height;
+  height: auto;
+  min-height: @height;
   width: auto;
   font-family: inherit;
   vertical-align: top;
