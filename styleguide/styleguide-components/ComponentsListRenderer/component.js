@@ -42,14 +42,12 @@ const styles = ({ color, fontFamily, fontSize, space, mq }) => ({
 	},
 	// Lodgify UI custom styles start
 	heading: {
-		'&:link': {
-			marginTop: space[4],
-			fontFamily: fontFamily.base,
-			fontWeight: 'bold',
-			display: 'inline-block',
-			fontSize: '11px',
-			textTransform: 'uppercase',
-		}
+		marginTop: space[4],
+		fontFamily: fontFamily.base,
+		fontWeight: 'bold',
+		display: 'inline-block',
+		fontSize: '11px',
+		textTransform: 'uppercase',
 	},
 	isCurrentPage: {
 		color: color.type,
@@ -79,9 +77,13 @@ export function ComponentsListRenderer({ classes, items }) {
 					// Lodgify UI custom markup end
 					key={href}
 				>
-					<Link className={cx(heading && classes.heading)} href={href}>
-						{name}
-					</Link>
+					{/* Lodgify UI custom markup start */}
+					{
+						heading
+							? <span className={classes.heading}>{name}</span>
+							: <Link href={href}>{name}</Link>
+					}
+					{/* Lodgify UI custom markup end */}
 					{content}
 				</li>
 			))}
