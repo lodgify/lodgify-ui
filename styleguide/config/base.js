@@ -12,7 +12,6 @@ module.exports = {
   require: [path.join(SRC_DIR, 'styles/lodgify-ui.less')],
   sections: require('./options/sections'),
   serverPort: 6060,
-  showUsage: true,
   skipComponentsWithoutExample: true,
   styleguideComponents: require('../styleguide-components'),
   styleguideDir: 'dist',
@@ -20,5 +19,6 @@ module.exports = {
   template: require('./options/template'),
   theme: require('./options/theme'),
   title: TITLE,
+  usageMode: 'expand',
   webpackConfig: require('../webpack.config.js'),
 };
