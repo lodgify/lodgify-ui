@@ -1,3 +1,12 @@
+## [1.18.2](https://github.com/lodgify/lodgify-ui/compare/v1.18.1...v1.18.2) (2018-07-17)
+
+
+### Bug Fixes
+
+* **styleguidist:** add  to each component section ([68b0bcd](https://github.com/lodgify/lodgify-ui/commit/68b0bcd))
+* **styleguidist:** prevent headings in sidebar from being clickable links ([1f352d2](https://github.com/lodgify/lodgify-ui/commit/1f352d2))
+* **styleguidist:** switch deprecated  to ([2d34dfb](https://github.com/lodgify/lodgify-ui/commit/2d34dfb))
+
 ## [1.18.1](https://github.com/lodgify/lodgify-ui/compare/v1.18.0...v1.18.1) (2018-07-17)
 
 
