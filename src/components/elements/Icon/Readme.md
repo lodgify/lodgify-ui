@@ -7,10 +7,10 @@
 An icon can display a named svg from the Lodgify UI icon library or any valid svg path description.
 
 ```jsx
-<Icon label="Using props.name" name="search" />
+<Icon labelText="Using props.name" name="search" />
 <Divider />
 <Icon
-  label="Using props.path"
+  labelText="Using props.path"
   path="M9.67,13.55V12.49c0-2.11,3.48-3,3.48-4.66a1.73,1.73,0,0,0-1.89-1.48c-1.76,0-2.24,1.58-2.87,1L6.85,5.87a.45.45,0,0,1,0-.65A7.07,7.07,0,0,1,12,3c2.66,0,5.13,1.86,5.13,4.41,0,3.32-3.77,3.42-3.77,6.14a.48.48,0,0,1-.48.48h-2.7A.48.48,0,0,1,9.67,13.55Zm1.82,2.79a2.45,2.45,0,0,1,2.41,2.42,2.39,2.39,0,1,1-2.41-2.42Z"
 />
 ```
@@ -154,29 +154,29 @@ Library icons
 #### Labeled
 
 ```jsx
-<Icon label="Search" name="search" />
+<Icon labelText="Search" name="search" />
 <Divider />
-<Icon isDisabled label="Search" name="search" />
+<Icon isDisabled labelText="Search" name="search" />
 <Divider />
-<Icon isLabelLeft label="Search" name="search" />
+<Icon isLabelLeft labelText="Search" name="search" />
 ```
 
 #### Size
 
 ```jsx
-<Icon label="Mini" size="mini" />
+<Icon labelText="Mini" size="mini" />
 <Divider />
-<Icon label="Tiny" size="tiny" />
+<Icon labelText="Tiny" size="tiny" />
 <Divider />
-<Icon label="Small" size="small" />
+<Icon labelText="Small" size="small" />
 <Divider />
-<Icon label="Default" />
+<Icon labelText="Default" />
 <Divider />
-<Icon label="Large" size="large" />
+<Icon labelText="Large" size="large" />
 <Divider />
-<Icon label="Big" size="big" />
+<Icon labelText="Big" size="big" />
 <Divider />
-<Icon label="Huge" size="huge" />
+<Icon labelText="Huge" size="huge" />
 <Divider />
-<Icon label="Massive" size="massive" />
+<Icon labelText="Massive" size="massive" />
 ```

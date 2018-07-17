@@ -43,16 +43,16 @@ describe('<Icon />', () => {
       expectComponentToHaveChildren(wrapper, 'svg');
     });
 
-    describe('if `props.label` is passed', () => {
+    describe('if `props.labelText` is passed', () => {
       it('should have the right children', () => {
-        const wrapper = getIcon({ label: 'someLabel' });
+        const wrapper = getIcon({ labelText: 'someLabel' });
         expectComponentToHaveChildren(wrapper, 'svg', Paragraph);
       });
     });
 
     describe('if `props.isReversed` is true', () => {
       it('should correctly render the label on the left side of the icon', () => {
-        const wrapper = getIcon({ label: 'somelabel', isLabelLeft: true });
+        const wrapper = getIcon({ labelText: 'somelabel', isLabelLeft: true });
         expectComponentToHaveChildren(wrapper, Paragraph, 'svg');
       });
     });
@@ -86,7 +86,7 @@ describe('<Icon />', () => {
 
   describe('the `Paragraph` component', () => {
     const getIconWithLabel = props =>
-      getIcon({ label: 'someLabel', ...props }).find(Paragraph);
+      getIcon({ labelText: 'someLabel', ...props }).find(Paragraph);
 
     it('should have the right children', () => {
       const wrapper = getIconWithLabel();
