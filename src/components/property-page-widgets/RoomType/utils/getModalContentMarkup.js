@@ -43,9 +43,9 @@ export const getModalContentMarkup = (
     <Slideshow additionalClass="no-shadow" images={slideShowImages} />
     <Paragraph>{description}</Paragraph>
     <Grid columns={4} stackable>
-      {[...features, ...extraFeatures].map(({ label }, index) => (
-        <GridColumn key={buildKeyFromStrings(index, label, 'feature')}>
-          <Paragraph weight="heavy">{label}</Paragraph>
+      {[...features, ...extraFeatures].map(({ labelText }, index) => (
+        <GridColumn key={buildKeyFromStrings(index, labelText, 'feature')}>
+          <Paragraph weight="heavy">{labelText}</Paragraph>
         </GridColumn>
       ))}
     </Grid>

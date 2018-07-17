@@ -50,7 +50,7 @@ describe('getCategoryMarkup', () => {
       const wrapper = getMarkup().find(Icon);
       expectComponentToHaveProps(wrapper, {
         isLabelLeft: true,
-        label: category.name,
+        labelText: category.name,
         labelWeight: 'heavy',
         name: category.iconName,
       });

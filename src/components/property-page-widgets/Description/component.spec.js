@@ -158,7 +158,7 @@ describe('<Description />', () => {
         .find(Icon)
         .at(0);
       expectComponentToHaveProps(wrapper, {
-        label: icons[0].label,
+        labelText: icons[0].labelText,
         name: icons[0].iconName,
       });
     });

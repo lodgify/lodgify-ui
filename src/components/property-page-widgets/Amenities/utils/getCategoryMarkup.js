@@ -20,7 +20,7 @@ export const getCategoryMarkup = (category, index, isFullWidth = false) => (
   >
     <Icon
       isLabelLeft
-      label={category.name}
+      labelText={category.name}
       labelWeight="heavy"
       name={category.iconName}
     />

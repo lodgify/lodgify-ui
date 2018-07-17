@@ -23,7 +23,7 @@ import { Slideshow } from 'media/Slideshow';
 import { ComponentWithResponsive as RoomType } from './component';
 
 const props = {
-  amenities: [{ iconName: 'wheelchair', label: 'Elevator' }],
+  amenities: [{ iconName: 'wheelchair', labelText: 'Elevator' }],
   description: 'yayayay',
   imageUrl: '🐱🐱',
   locationName: 'Catania',
@@ -51,8 +51,8 @@ const props = {
     },
   ],
   isUserOnMobile: false,
-  extraFeatures: [{ label: '1 Dining-Room' }],
-  features: [{ iconName: 'double bed', label: '1 Bedroom' }],
+  extraFeatures: [{ labelText: '1 Dining-Room' }],
+  features: [{ iconName: 'double bed', labelText: '1 Bedroom' }],
 };
 
 const getRoomType = extraProps =>

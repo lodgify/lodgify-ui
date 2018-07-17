@@ -1,14 +1,14 @@
 ```jsx
 const availableAmenities = [
-  { iconName: 'wheelchair', label: 'Elevator' },
-  { iconName: 'coffee', label: 'Free Coffee', isDisabled: true, },
-  { iconName: 'bus', label: 'Bus Routes' },
-  { iconName: 'sun', label: 'Sunny Terrace' },
-  { iconName: 'leaf', label: 'Tea Cutlery' },
-  { iconName: 'paw', label: 'Pets Allowed' },
-  { iconName: 'users', label: 'Family Friendly' },
-  { iconName: 'placeholder', label: 'Great View' },
-  { iconName: 'plane', label: 'Airport Pickup' },
+  { iconName: 'wheelchair', labelText: 'Elevator' },
+  { iconName: 'coffee', labelText: 'Free Coffee', isDisabled: true, },
+  { iconName: 'bus', labelText: 'Bus Routes' },
+  { iconName: 'sun', labelText: 'Sunny Terrace' },
+  { iconName: 'leaf', labelText: 'Tea Cutlery' },
+  { iconName: 'paw', labelText: 'Pets Allowed' },
+  { iconName: 'users', labelText: 'Family Friendly' },
+  { iconName: 'placeholder', labelText: 'Great View' },
+  { iconName: 'plane', labelText: 'Airport Pickup' },
 ];
 
 const description = "There are not many cities that have experienced such social and political extremes in recent history as Amsterdam. In the 20th century alone, Amsterdam faced the atrocities of war for the first time in 400 years, became the radical center of 1960s social movements and witnessed a complete about-face in its core economy.";
@@ -32,14 +32,14 @@ const images = [
 ];
 
 const extraRoomTypeFeatures = [
-  { label: '1 Dining-Room' },
-  { label: '1 Terrace' },
+  { labelText: '1 Dining-Room' },
+  { labelText: '1 Terrace' },
 ];
 
 const roomTypeFeatures = [
-  { iconName: 'double bed',  label: '1 Bedroom' },
-  { iconName: 'guests',  label: '2 Guests' },
-  { iconName: 'bathroom',  label: '1 Bathroom' }, 
+  { iconName: 'double bed',  labelText: '1 Bedroom' },
+  { iconName: 'guests',  labelText: '2 Guests' },
+  { iconName: 'bathroom',  labelText: '1 Bathroom' }, 
 ];
 
 <RoomType
