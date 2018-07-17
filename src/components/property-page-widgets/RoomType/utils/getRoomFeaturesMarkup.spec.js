@@ -14,9 +14,9 @@ import { Icon } from 'elements/Icon';
 import { getRoomFeaturesMarkup } from './getRoomFeaturesMarkup';
 
 const features = [
-  { iconName: 'double bed', label: '1 Bedroom' },
-  { iconName: 'guests', label: '2 Guests' },
-  { label: '1 Terrace' },
+  { iconName: 'double bed', labelText: '1 Bedroom' },
+  { iconName: 'guests', labelText: '2 Guests' },
+  { labelText: '1 Terrace' },
 ];
 
 const getMarkup = (isUserOnMobile = false) =>
@@ -61,7 +61,7 @@ describe('`getRoomFeaturesMarkup`', () => {
         .find(Icon)
         .at(0);
       expectComponentToHaveProps(wrapper, {
-        label: features[0].label,
+        labelText: features[0].labelText,
         name: features[0].iconName,
         size: 'small',
       });

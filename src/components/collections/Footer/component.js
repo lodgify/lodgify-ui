@@ -64,7 +64,7 @@ export const Component = ({
         />
       </Menu.Item>
       <Menu.Item>
-        <Icon label={phoneNumber} name="phone" />
+        <Icon labelText={phoneNumber} name="phone" />
       </Menu.Item>
       {!!socialMediaLinks.length && (
         <Menu.Menu position="right">

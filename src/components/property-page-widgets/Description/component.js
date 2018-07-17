@@ -44,9 +44,9 @@ export const Component = ({
     </GridColumn>
     <GridColumn computer={5} tablet={12} verticalAlignContent="middle">
       <Grid>
-        {getFirstFourItems(icons).map(({ iconName, label }, index) => (
-          <GridColumn key={buildKeyFromStrings(label, index)} width={6}>
-            <Icon label={label} name={iconName} />
+        {getFirstFourItems(icons).map(({ iconName, labelText }, index) => (
+          <GridColumn key={buildKeyFromStrings(labelText, index)} width={6}>
+            <Icon labelText={labelText} name={iconName} />
           </GridColumn>
         ))}
       </Grid>
@@ -74,7 +74,7 @@ Component.propTypes = {
        */
       iconName: PropTypes.string.isRequired,
       /** A visible label to display for the key fact. */
-      label: PropTypes.string.isRequired,
+      labelText: PropTypes.string.isRequired,
     })
   ).isRequired,
   /** The name of the type of the property. */

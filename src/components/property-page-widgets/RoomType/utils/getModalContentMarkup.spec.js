@@ -18,14 +18,14 @@ import { Slideshow } from 'media/Slideshow';
 import { getModalContentMarkup } from './getModalContentMarkup';
 
 const amenities = [
-  { iconName: 'wheelchair', label: 'Elevator' },
-  { iconName: 'coffee', label: 'Free Coffee', isDisabled: true },
+  { iconName: 'wheelchair', labelText: 'Elevator' },
+  { iconName: 'coffee', labelText: 'Free Coffee', isDisabled: true },
 ];
 
 const onClickCheckAvailability = Function.prototype;
 const description = 'yoyo description';
-const extraFeatures = [{ label: '1 Dining-Room' }];
-const features = [{ iconName: 'double bed', label: '1 Bedroom' }];
+const extraFeatures = [{ labelText: '1 Dining-Room' }];
+const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
 const nightPrice = '$1010';
 const ratingNumber = 4;
@@ -151,7 +151,7 @@ describe('getModalContentMarkup', () => {
 
     it('should render the right children', () => {
       const wrapper = getParagraph();
-      expectComponentToHaveChildren(wrapper, features[0].label);
+      expectComponentToHaveChildren(wrapper, features[0].labelText);
     });
   });
 

@@ -295,7 +295,7 @@ describe('<Availability />', () => {
       expectComponentToHaveProps(wrapper, {
         color: 'light grey',
         isLabelLeft: true,
-        label: 'Unavailable',
+        labelText: 'Unavailable',
         name: 'square',
       });
     });
@@ -441,7 +441,7 @@ describe('<Availability />', () => {
         .at(1);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Previous',
+        labelText: 'Previous',
         name: 'arrow left',
       });
     });
@@ -454,7 +454,7 @@ describe('<Availability />', () => {
         .at(2);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Next',
+        labelText: 'Next',
         isLabelLeft: true,
         name: 'arrow right',
       });
@@ -491,7 +491,7 @@ describe('<Availability />', () => {
       expectComponentToHaveProps(wrapper, {
         color: 'grey',
         isLabelLeft: true,
-        label: 'Unavailable',
+        labelText: 'Unavailable',
         name: 'square',
       });
     });

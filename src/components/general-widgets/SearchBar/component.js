@@ -40,7 +40,7 @@ export class Component extends PureComponent {
           <Form.Group>
             {!!isShowingSummary && (
               <Form.Field width="three">
-                <Icon isDisabled label="Property Summary" name="home" />
+                <Icon isDisabled labelText="Property Summary" name="home" />
               </Form.Field>
             )}
             {!!isShowingLocationDropdown && (
