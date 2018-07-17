@@ -1,9 +1,17 @@
 const path = require('path');
 
+const { kebabCase } = require('lodash');
+
 const { SRC_DIR } = require('../constants');
 
 const buildComponentsPath = category =>
   path.join(SRC_DIR, `components/${category}/**/component.js`);
+
+const getComponentsSectionConfig = name => ({
+  name,
+  components: buildComponentsPath(kebabCase(name)),
+  sectionDepth: 1,
+});
 
 module.exports = [
   {
@@ -14,36 +22,12 @@ module.exports = [
     name: 'Get started',
     content: 'docs/getStarted.md',
   },
-  {
-    name: 'Typography',
-    components: buildComponentsPath('typography'),
-  },
-  {
-    name: 'Layout',
-    components: buildComponentsPath('layout'),
-  },
-  {
-    name: 'Elements',
-    components: buildComponentsPath('elements'),
-  },
-  {
-    name: 'Inputs',
-    components: buildComponentsPath('inputs'),
-  },
-  {
-    name: 'Collections',
-    components: buildComponentsPath('collections'),
-  },
-  {
-    name: 'Media',
-    components: buildComponentsPath('media'),
-  },
-  {
-    name: 'General widgets',
-    components: buildComponentsPath('general-widgets'),
-  },
-  {
-    name: 'Property page widgets',
-    components: buildComponentsPath('property-page-widgets'),
-  },
+  getComponentsSectionConfig('Typography'),
+  getComponentsSectionConfig('Layout'),
+  getComponentsSectionConfig('Elements'),
+  getComponentsSectionConfig('Inputs'),
+  getComponentsSectionConfig('Collections'),
+  getComponentsSectionConfig('Media'),
+  getComponentsSectionConfig('General widgets'),
+  getComponentsSectionConfig('Property page widgets'),
 ];
