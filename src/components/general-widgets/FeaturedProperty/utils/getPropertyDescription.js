@@ -4,4 +4,6 @@
  *  @returns {String}
  */
 export const getPropertyDescription = (guestsNumber, bedroomsNumber) =>
-  `Guests: ${guestsNumber} | Bedrooms: ${bedroomsNumber}`;
+  `Guests: ${guestsNumber}${
+    bedroomsNumber ? ` | Bedrooms: ${bedroomsNumber}` : ''
+  }`;
