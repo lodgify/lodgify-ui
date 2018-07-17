@@ -12,7 +12,7 @@ import { Heading } from '@lodgify/ui';
 <Heading>Easy, right?</Heading>
 ```
 
-## Import styles
+### Import styles
 
 ```jsx static
 import '@lodgify/ui/lib/styles/lodgify-ui.css';
