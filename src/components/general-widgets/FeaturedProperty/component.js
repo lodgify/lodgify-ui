@@ -51,12 +51,13 @@ export const Component = ({
 Component.displayName = 'FeaturedProperty';
 
 Component.defaultProps = {
+  bedroomsNumber: null,
   imageAlternativeText: '',
 };
 
 Component.propTypes = {
   /** The number of available bedrooms at the property. */
-  bedroomsNumber: PropTypes.number.isRequired,
+  bedroomsNumber: PropTypes.number,
   /** The number of guests the property can accommodate. */
   guestsNumber: PropTypes.number.isRequired,
   /** The alternative text for the image to display. */
