@@ -9,4 +9,13 @@ describe('getPropertyDescription', () => {
       `Guests: ${guestsNumber} | Bedrooms: ${bedroomsNumber}`
     );
   });
+
+  describe('if `bedroomsNumber` is falsy', () => {
+    it('should return a string composed from the `guestsNumber` only', () => {
+      const guestsNumber = 10;
+      const bedroomsNumber = null;
+      const actual = getPropertyDescription(guestsNumber, bedroomsNumber);
+      expect(actual).toBe(`Guests: ${guestsNumber}`);
+    });
+  });
 });
