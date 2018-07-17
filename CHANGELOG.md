@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/lodgify/lodgify-ui/compare/v1.18.0...v1.18.1) (2018-07-17)
+
+
+### Bug Fixes
+
+* **package.json:** lock react-styleguidist to less than 7.1.0 ([3bae307](https://github.com/lodgify/lodgify-ui/commit/3bae307))
+
 # [1.18.0](https://github.com/lodgify/lodgify-ui/compare/v1.17.0...v1.18.0) (2018-07-16)
 
 
