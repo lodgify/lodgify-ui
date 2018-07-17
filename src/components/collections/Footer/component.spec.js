@@ -242,7 +242,7 @@ describe('<Footer />', () => {
         .find(Icon)
         .at(0);
       expectComponentToHaveProps(wrapper, {
-        label: phoneNumber,
+        labelText: phoneNumber,
         name: 'phone',
       });
     });

@@ -25,12 +25,12 @@ export const Component = ({ checkInTime, checkOutTime, rules }) => (
     </GridColumn>
     <GridColumn computer={9} tablet={7}>
       <Icon
-        label={getCheckInOrOutTimeLabel(checkInTime)}
+        labelText={getCheckInOrOutTimeLabel(checkInTime)}
         name="question mark"
       />
       <Divider />
       <Icon
-        label={getCheckInOrOutTimeLabel(checkOutTime, true)}
+        labelText={getCheckInOrOutTimeLabel(checkOutTime, true)}
         name="question mark"
       />
     </GridColumn>

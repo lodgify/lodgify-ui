@@ -110,7 +110,7 @@ class Component extends PureComponent {
               <Icon
                 color="light grey"
                 isLabelLeft
-                label="Unavailable"
+                labelText="Unavailable"
                 name="square"
               />
             </GridColumn>
@@ -141,7 +141,7 @@ class Component extends PureComponent {
             <GridRow>
               <GridColumn width={6}>
                 <Icon
-                  label="Previous"
+                  labelText="Previous"
                   name="arrow left"
                   onClick={this.handleClickPreviousMonth}
                 />
@@ -149,7 +149,7 @@ class Component extends PureComponent {
               <GridColumn textAlign="right" width={6}>
                 <Icon
                   isLabelLeft
-                  label="Next"
+                  labelText="Next"
                   name="arrow right"
                   onClick={this.handleClickNextMonth}
                 />
@@ -163,7 +163,7 @@ class Component extends PureComponent {
               <Icon
                 color="grey"
                 isLabelLeft
-                label="Unavailable"
+                labelText="Unavailable"
                 name="square"
               />
             </GridColumn>

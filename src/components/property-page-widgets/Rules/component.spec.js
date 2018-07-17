@@ -137,7 +137,7 @@ describe('<Rules />', () => {
         .find(Icon)
         .at(0);
       expectComponentToHaveProps(wrapper, {
-        label: expect.stringContaining('Check in:'),
+        labelText: expect.stringContaining('Check in:'),
         name: 'question mark',
       });
     });
@@ -149,7 +149,7 @@ describe('<Rules />', () => {
         .find(Icon)
         .at(1);
       expectComponentToHaveProps(wrapper, {
-        label: expect.stringContaining('Check out:'),
+        labelText: expect.stringContaining('Check out:'),
         name: 'question mark',
       });
     });

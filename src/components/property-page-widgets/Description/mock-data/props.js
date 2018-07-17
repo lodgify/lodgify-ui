@@ -13,8 +13,8 @@ export const extraDescriptionText = `
 `;
 
 export const icons = [
-  { iconName: 'users', label: '2 guests' },
-  { iconName: 'home', label: '1 bedroom' },
-  { iconName: 'single bed', label: '2 beds' },
-  { iconName: 'bathroom', label: '1 bathroom' },
+  { iconName: 'users', labelText: '2 guests' },
+  { iconName: 'home', labelText: '1 bedroom' },
+  { iconName: 'single bed', labelText: '2 beds' },
+  { iconName: 'bathroom', labelText: '1 bathroom' },
 ];

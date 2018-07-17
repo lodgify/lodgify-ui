@@ -14,9 +14,13 @@ export const getRoomFeaturesMarkup = (showIcons, features) => (
     {features.map((infoItem, index) => (
       <List.Item key={index}>
         {showIcons ? (
-          <Paragraph>{infoItem.label}</Paragraph>
+          <Paragraph>{infoItem.labelText}</Paragraph>
         ) : (
-          <Icon label={infoItem.label} name={infoItem.iconName} size="small" />
+          <Icon
+            labelText={infoItem.labelText}
+            name={infoItem.iconName}
+            size="small"
+          />
         )}
       </List.Item>
     ))}
