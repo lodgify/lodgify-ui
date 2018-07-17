@@ -153,7 +153,7 @@ Component.propTypes = {
       /** Is the amenity disabled. */
       isDisabled: PropTypes.bool,
       /** A visible label to display for the amenity. */
-      labelText: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
     })
   ).isRequired,
   /** A description to be displayed in the modal */

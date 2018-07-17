@@ -24,6 +24,8 @@ export const getCategoryMarkup = (category, index, isFullWidth = false) => (
       labelWeight="heavy"
       name={category.iconName}
     />
-    <Paragraph>{getFormattedAmenityItems(category.items)}</Paragraph>
+    {category.items ? (
+      <Paragraph>{getFormattedAmenityItems(category.items)}</Paragraph>
+    ) : null}
   </GridColumn>
 );
