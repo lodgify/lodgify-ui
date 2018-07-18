@@ -25,7 +25,11 @@ const getAmenities = (props = {}) =>
 const getWrappedAmenities = (props = {}) => {
   const Child = getAmenities().prop('as');
   return shallow(
-    <Child amenities={props.amenities || twoAmenities} isUserOnMobile />
+    <Child
+      amenities={props.amenities || twoAmenities}
+      isUserOnMobile
+      {...props}
+    />
   );
 };
 
@@ -47,14 +51,16 @@ describe('<Amenities />', () => {
       const wrapper = getWrappedAmenities();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(3, GridColumn)
+        ...getArrayOfLengthOfItem(2, GridColumn)
       );
     });
   });
 
   describe('the first `GridColumn` component', () => {
     const getFirstGridColumn = () =>
-      getWrappedAmenities()
+      getWrappedAmenities({
+        headingText: 'Hello world',
+      })
         .find(GridColumn)
         .first();
 
@@ -71,7 +77,9 @@ describe('<Amenities />', () => {
 
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getWrappedAmenities().find(Heading);
+      const wrapper = getWrappedAmenities({
+        headingText: 'Property Amenities',
+      }).find(Heading);
       expectComponentToHaveChildren(wrapper, 'Property Amenities');
     });
   });
@@ -84,7 +92,7 @@ describe('<Amenities />', () => {
         const wrapper = getAmenitiesWithSixCategories();
         expectComponentToHaveChildren(
           wrapper,
-          ...getArrayOfLengthOfItem(5, GridColumn)
+          ...getArrayOfLengthOfItem(4, GridColumn)
         );
       });
     });
@@ -93,7 +101,7 @@ describe('<Amenities />', () => {
       const getLastGridColumn = () =>
         getAmenitiesWithSixCategories()
           .find(GridColumn)
-          .at(4);
+          .at(3);
 
       it('should have the right props', () => {
         const wrapper = getLastGridColumn();
