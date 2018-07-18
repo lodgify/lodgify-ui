@@ -1,9 +1,8 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import { Form } from 'semantic-ui-react';
+import { shallow } from 'enzyme';
+import { Form, Modal as SemanticModal } from 'semantic-ui-react';
 import {
   expectComponentToBe,
-  expectComponentToHaveDisplayName,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
@@ -12,19 +11,20 @@ import { Dropdown } from 'inputs/Dropdown';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { Button } from 'elements/Button';
 import { Icon } from 'elements/Icon';
-import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
+import { Modal } from 'elements/Modal';
+import { Heading } from 'typography/Heading';
 
 import { Component as SearchBar } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
 
-const getSearchBar = props =>
-  shallow(
-    <SearchBar
-      guestsOptions={guestsOptions}
-      locationOptions={locationOptions}
-      {...props}
-    />
-  );
+const props = {
+  guestsOptions,
+  locationOptions,
+};
+
+const getSearchBar = overrideProps =>
+  shallow(<SearchBar {...props} {...overrideProps} />);
+
 describe('<SearchBar />', () => {
   it('should render a single `div` element', () => {
     const wrapper = getSearchBar();
@@ -70,30 +70,26 @@ describe('<SearchBar />', () => {
     const getFormGroup = props => getSearchBar(props).find(Form.Group);
 
     it('should render four `Form.Field` components by default', () => {
-      const wrapper = getFormGroup();
-      expectComponentToHaveChildren(
-        wrapper,
-        ...getArrayOfLengthOfItem(4, Form.Field)
-      );
+      const wrapper = getFormGroup().find(Form.Field);
+      expect(wrapper).toHaveLength(4);
     });
 
     describe('if `props.isShowingSummary` is true', () => {
       it('should render five `Form.Field` components', () => {
-        const wrapper = getFormGroup({ isShowingSummary: true });
-        expectComponentToHaveChildren(
-          wrapper,
-          ...getArrayOfLengthOfItem(5, Form.Field)
+        const wrapper = getFormGroup({ isShowingSummary: true }).find(
+          Form.Field
         );
+        expect(wrapper).toHaveLength(5);
       });
     });
 
     describe('if `props.isShowingLocationDropdown` is false', () => {
       it('should render three `Form.Field` components', () => {
-        const wrapper = getFormGroup({ isShowingLocationDropdown: false });
-        expectComponentToHaveChildren(
-          wrapper,
-          ...getArrayOfLengthOfItem(3, Form.Field)
+        const wrapper = getFormGroup({ isShowingLocationDropdown: false }).find(
+          Form.Field
         );
+
+        expect(wrapper).toHaveLength(3);
       });
     });
   });
@@ -175,7 +171,7 @@ describe('<SearchBar />', () => {
       const wrapper = getSearchBar().find(DateRangePicker);
       expectComponentToHaveProps(wrapper, {
         endDatePlaceholderText: 'Check-out',
-        getIsDayBlocked: Function.prototype,
+        getIsDayBlocked: expect.any(Function),
         name: 'dates',
         onChange: expect.any(Function),
         startDatePlaceholderText: 'Check-in',
@@ -275,20 +271,85 @@ describe('<SearchBar />', () => {
   describe('Interaction: onSubmit the form', () => {
     it('should call `props.onSubmit` with the state', () => {
       const onSubmit = jest.fn();
-      const wrapper = mount(
-        <SearchBar
-          guestsOptions={guestsOptions}
-          locationOptions={locationOptions}
-          onSubmit={onSubmit}
-        />
-      );
+      const wrapper = getSearchBar({
+        guestsOptions,
+        locationOptions,
+        onSubmit,
+      });
       const form = wrapper.find(Form);
       form.simulate('submit');
       expect(onSubmit).toHaveBeenCalledWith(wrapper.state());
     });
   });
+});
 
-  it('should have `displayName` `SearchBar`', () => {
-    expectComponentToHaveDisplayName(SearchBar, 'SearchBar');
+describe('<SearchBar /> with the modal', () => {
+  const getSearchBarWithModal = extraProps =>
+    getSearchBar({
+      isDisplayedAsModal: true,
+      ...extraProps,
+    });
+
+  it('should have the correct props', () => {
+    const wrapper = getSearchBarWithModal({
+      modalTrigger: <div />,
+    });
+    expectComponentToHaveProps(wrapper, {
+      trigger: <div />,
+    });
+  });
+
+  it('should render inside a modal', () => {
+    const wrapper = getSearchBarWithModal();
+    expectComponentToBe(wrapper, Modal);
+  });
+
+  it('should have the correct children', () => {
+    const wrapper = getSearchBarWithModal();
+    expectComponentToHaveChildren(wrapper, SemanticModal.Content);
+  });
+
+  describe('The Modal.Content', () => {
+    it('should have the correct children', () => {
+      const wrapper = getSearchBarWithModal().find(SemanticModal.Content);
+      expectComponentToHaveChildren(wrapper, Heading, Form);
+    });
+  });
+
+  describe('The Heading in the modal', () => {
+    const getModalHeading = () => getSearchBarWithModal().find(Heading);
+
+    it('should have the correct props', () => {
+      const wrapper = getModalHeading();
+      expectComponentToHaveProps(wrapper, {
+        size: 'small',
+      });
+    });
+
+    it('should have the text', () => {
+      const wrapper = getModalHeading();
+      expectComponentToHaveChildren(wrapper, 'Check our availability');
+    });
+  });
+
+  describe('The Form in the modal', () => {
+    const getModalForm = () => getSearchBarWithModal().find(Form);
+
+    it('should have the correct props', () => {
+      const wrapper = getModalForm();
+      expectComponentToHaveProps(wrapper, {
+        as: 'form',
+      });
+    });
+
+    it('should have the correct children', () => {
+      const wrapper = getModalForm();
+      expectComponentToHaveChildren(wrapper, React.Fragment);
+    });
+
+    it('should have the 4 form fields', () => {
+      const wrapper = getModalForm().find(Form.Field);
+      expect(wrapper).toHaveLength(4);
+    });
   });
 });

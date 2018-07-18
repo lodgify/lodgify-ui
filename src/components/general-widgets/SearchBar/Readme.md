@@ -54,3 +54,29 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
   isSticky
 />
 ```
+
+#### Display search bar in a modal
+
+```jsx
+const { guestsOptions, locationOptions } = require('./mock-data/options');
+
+<SearchBar
+  guestsOptions={guestsOptions}
+  locationOptions={locationOptions}
+  isDisplayedAsModal
+/>
+```
+
+#### Custom modal trigger
+
+```jsx
+const { Button } = require('../../elements/Button');
+const { guestsOptions, locationOptions } = require('./mock-data/options');
+
+<SearchBar
+  guestsOptions={guestsOptions}
+  locationOptions={locationOptions}
+  modalTrigger={<Button>Show Search bar</Button>}
+  isDisplayedAsModal
+/>
+```

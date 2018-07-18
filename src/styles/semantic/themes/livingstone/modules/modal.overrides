@@ -27,6 +27,12 @@
   margin-top: 0;
 }
 
+.ui.modal .content:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
 /* Image / Description */
 
 /* Modal Actions */
