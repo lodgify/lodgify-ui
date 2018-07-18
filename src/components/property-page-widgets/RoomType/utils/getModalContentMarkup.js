@@ -50,7 +50,7 @@ export const getModalContentMarkup = (
       ))}
     </Grid>
     <Divider hasLine />
-    <Amenities amenities={amenities} />
+    <Amenities amenities={amenities} headingText="Room Amenities" />
     <Grid>
       <GridColumn verticalAlignContent="bottom" width={6}>
         <Paragraph>

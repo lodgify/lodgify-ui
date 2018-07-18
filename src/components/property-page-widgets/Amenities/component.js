@@ -17,11 +17,13 @@ import { getCategoryMarkup } from './utils/getCategoryMarkup';
  * The standard widget for displaying the amenities of a property.
  * @returns {Object}
  */
-const Component = ({ amenities, isUserOnMobile }) => (
+const Component = ({ amenities, isUserOnMobile, headingText }) => (
   <Grid stackable>
-    <GridColumn width={12}>
-      <Heading>Property Amenities</Heading>
-    </GridColumn>
+    {headingText && (
+      <GridColumn width={12}>
+        <Heading>{headingText}</Heading>
+      </GridColumn>
+    )}
     {getDefaultItems(amenities, isUserOnMobile).map((amenity, index) =>
       getCategoryMarkup(amenity, index, isUserOnMobile)
     )}
@@ -41,6 +43,10 @@ const Component = ({ amenities, isUserOnMobile }) => (
 
 Component.displayName = 'Amenities';
 
+Component.defaultProps = {
+  headingText: null,
+};
+
 Component.propTypes = {
   /** The amenity categories. */
   amenities: PropTypes.arrayOf(
@@ -53,6 +59,8 @@ Component.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** The text to display as a heading at the top of the amenities. */
+  headingText: PropTypes.string,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.
