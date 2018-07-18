@@ -1,3 +1,11 @@
+## [1.19.1](https://github.com/lodgify/lodgify-ui/compare/v1.19.0...v1.19.1) (2018-07-18)
+
+
+### Bug Fixes
+
+* **Contact:** add ability to only show necessary dropdowns ([6e2845a](https://github.com/lodgify/lodgify-ui/commit/6e2845a))
+* **Form:** add check to prevent warnings when not passing a react element ([fd0d50a](https://github.com/lodgify/lodgify-ui/commit/fd0d50a))
+
 # [1.19.0](https://github.com/lodgify/lodgify-ui/compare/v1.18.2...v1.19.0) (2018-07-18)
 
 

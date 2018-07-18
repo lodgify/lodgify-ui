@@ -5,10 +5,10 @@ import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
 import { TextInput } from 'inputs/TextInput';
 import { PhoneInput } from 'inputs/PhoneInput';
-import { Dropdown } from 'inputs/Dropdown';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { TextArea } from 'inputs/TextArea';
 import { CaptchaInput } from 'inputs/CaptchaInput';
+import { Dropdown } from 'inputs/Dropdown';
 
 /**
  * The standard widget for a user contact an owner.
@@ -37,15 +37,21 @@ export const Component = ({
       <TextInput label="Guests" name="guests" type="number" width="four" />
     </InputGroup>
     <TextArea label="Comments" name="comments" />
-    <InputGroup>
-      <Dropdown
-        label="Property"
-        name="property"
-        onChange={onChangeProperty}
-        options={propertyOptions}
-      />
-      <Dropdown label="Room" name="room" options={roomOptions} />
-    </InputGroup>
+    {(roomOptions || propertyOptions) && (
+      <InputGroup>
+        {propertyOptions && (
+          <Dropdown
+            label="Property"
+            name="property"
+            onChange={onChangeProperty}
+            options={propertyOptions}
+          />
+        )}
+        {roomOptions && (
+          <Dropdown label="Room" name="room" options={roomOptions} />
+        )}
+      </InputGroup>
+    )}
     <CaptchaInput
       image={captchaInputImage}
       label="Security Code"
@@ -59,7 +65,8 @@ Component.displayName = 'Contact';
 Component.defaultProps = {
   onChangeProperty: Function.prototype,
   onSubmit: Function.prototype,
-  roomOptions: undefined,
+  propertyOptions: null,
+  roomOptions: null,
 };
 
 Component.propTypes = {
@@ -86,7 +93,7 @@ Component.propTypes = {
         PropTypes.string,
       ]),
     })
-  ).isRequired,
+  ),
   /** The options which the user can select for the room field. */
   roomOptions: PropTypes.arrayOf(
     PropTypes.shape({
