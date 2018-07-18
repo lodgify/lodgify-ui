@@ -1,14 +1,39 @@
 ```jsx
 const availableAmenities = [
-  { iconName: 'wheelchair', labelText: 'Elevator' },
-  { iconName: 'coffee', labelText: 'Free Coffee', isDisabled: true, },
-  { iconName: 'bus', labelText: 'Bus Routes' },
-  { iconName: 'sun', labelText: 'Sunny Terrace' },
-  { iconName: 'leaf', labelText: 'Tea Cutlery' },
-  { iconName: 'paw', labelText: 'Pets Allowed' },
-  { iconName: 'users', labelText: 'Family Friendly' },
-  { iconName: 'placeholder', labelText: 'Great View' },
-  { iconName: 'plane', labelText: 'Airport Pickup' },
+  {
+    name: 'Cooking',
+    iconName: 'leaf',
+    items: ['Toaster', 'Microwave', 'Coffee Machine'],
+  },
+  {
+    name: 'Bathroom & Laundry',
+    iconName: 'paw',
+    items: ['Bidet', 'Hair Dryer', 'Iron & Board'],
+  },
+  {
+    name: 'Spa & Gym',
+    iconName: 'leaf',
+    items: ['Ping-Pong Table', 'Pool Table', 'Foosball'],
+  },
+  {
+    name: 'Outside',
+    iconName: 'sun',
+    items: ['Tennis Court'],
+  },
+  {
+    name: 'Miscellaneous',
+    iconName: 'coffee',
+    items: [
+      'Rice Steamer',
+      'Hot Tub',
+      'Fold-Away Bed',
+      'Fireplace',
+      'Steam Sauna',
+      'Fitness-Room',
+      'Parking',
+      'Laundry Service',
+    ],
+  },
 ];
 
 const description = "There are not many cities that have experienced such social and political extremes in recent history as Amsterdam. In the 20th century alone, Amsterdam faced the atrocities of war for the first time in 400 years, became the radical center of 1960s social movements and witnessed a complete about-face in its core economy.";

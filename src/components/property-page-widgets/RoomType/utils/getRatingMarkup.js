@@ -2,7 +2,7 @@ import React from 'react';
 import { Rating } from 'semantic-ui-react';
 
 /**
- * @param {Number} ratingNumber
+ * @param {Number}   ratingNumber
  * @return {String}
  */
 export const getRatingMarkup = ratingNumber => (

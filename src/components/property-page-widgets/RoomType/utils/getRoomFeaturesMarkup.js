@@ -5,7 +5,7 @@ import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
 /**
- * @param  {Boolean} showIcons
+ * @param  {Boolean}   showIcons
  * @param  {Object[]}  features
  * @return {Object}
  */

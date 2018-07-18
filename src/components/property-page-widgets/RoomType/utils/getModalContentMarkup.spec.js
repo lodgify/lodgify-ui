@@ -18,8 +18,16 @@ import { Slideshow } from 'media/Slideshow';
 import { getModalContentMarkup } from './getModalContentMarkup';
 
 const amenities = [
-  { iconName: 'wheelchair', labelText: 'Elevator' },
-  { iconName: 'coffee', labelText: 'Free Coffee', isDisabled: true },
+  {
+    name: 'Cooking',
+    iconName: 'leaf',
+    items: ['Toaster', 'Microwave', 'Coffee Machine'],
+  },
+  {
+    name: 'Bathroom & Laundry',
+    iconName: 'paw',
+    items: ['Bidet', 'Hair Dryer', 'Iron & Board'],
+  },
 ];
 
 const onClickCheckAvailability = Function.prototype;
