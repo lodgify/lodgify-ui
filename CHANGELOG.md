@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/lodgify/lodgify-ui/compare/v1.18.2...v1.19.0) (2018-07-18)
+
+
+### Features
+
+* **Slideshow:** expose headingText prop ([4809d3e](https://github.com/lodgify/lodgify-ui/commit/4809d3e))
+
 ## [1.18.2](https://github.com/lodgify/lodgify-ui/compare/v1.18.1...v1.18.2) (2018-07-17)
 
 
