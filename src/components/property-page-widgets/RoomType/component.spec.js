@@ -23,7 +23,7 @@ import { Slideshow } from 'media/Slideshow';
 import { ComponentWithResponsive as RoomType } from './component';
 
 const props = {
-  amenities: [{ iconName: 'wheelchair', labelText: 'Elevator' }],
+  amenities: [{ iconName: 'wheelchair', name: 'Elevator' }],
   description: 'yayayay',
   imageUrl: '🐱🐱',
   locationName: 'Catania',

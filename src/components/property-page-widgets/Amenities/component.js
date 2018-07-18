@@ -48,7 +48,7 @@ Component.propTypes = {
       /** The name of the icon to display for the category. */
       iconName: PropTypes.string.isRequired,
       /** The list of amenities */
-      items: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+      items: PropTypes.arrayOf(PropTypes.string.isRequired),
       /** The category name */
       name: PropTypes.string.isRequired,
     })
