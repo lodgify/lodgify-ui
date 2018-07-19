@@ -23,12 +23,14 @@ export class Component extends PureComponent {
   };
 
   cloneFormGroup = formGroup =>
+    formGroup &&
     React.cloneElement(formGroup, {
       children: Children.map(formGroup.props.children, this.cloneInput),
       widths: 'equal',
     });
 
   cloneInput = input =>
+    input &&
     React.createElement(Form.Field, {
       children: React.cloneElement(input, {
         onChange: (name, value) => {
@@ -53,7 +55,7 @@ export class Component extends PureComponent {
             {Children.map(
               children,
               child =>
-                child.type === Form.Group
+                child && child.type === Form.Group
                   ? this.cloneFormGroup(child)
                   : this.cloneInput(child)
             )}

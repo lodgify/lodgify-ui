@@ -14,15 +14,15 @@ import { Slideshow } from 'media/Slideshow';
 import { getRatingMarkup } from './getRatingMarkup';
 
 /**
- * @param  {Object[]} amenities
- * @param  {Function} onClickCheckAvailability
- * @param  {String} description
- * @param  {Object[]} extraFeatures
- * @param  {Object[]} features
- * @param  {String} name
- * @param  {String} nightPrice
- * @param  {Number} ratingNumber
- * @param  {Object[]} slideShowImages
+ * @param  {Object[]}    amenities
+ * @param  {Function}    onClickCheckAvailability
+ * @param  {String}      description
+ * @param  {Object[]}    extraFeatures
+ * @param  {Object[]}    features
+ * @param  {String}      name
+ * @param  {String}      nightPrice
+ * @param  {Number}      ratingNumber
+ * @param  {Object[]}    slideShowImages
  * @return {Object}
  */
 export const getModalContentMarkup = (
@@ -50,7 +50,7 @@ export const getModalContentMarkup = (
       ))}
     </Grid>
     <Divider hasLine />
-    <Amenities amenities={amenities} />
+    <Amenities amenities={amenities} headingText="Room Amenities" isStacked />
     <Grid>
       <GridColumn verticalAlignContent="bottom" width={6}>
         <Paragraph>

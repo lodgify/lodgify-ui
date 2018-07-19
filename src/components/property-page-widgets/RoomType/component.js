@@ -142,7 +142,7 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** A list of amenities displayed in the modal */
+  /** A list of amenity categories displayed in the modal */
   amenities: PropTypes.arrayOf(
     PropTypes.shape({
       /**
@@ -150,10 +150,10 @@ Component.propTypes = {
        * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/Icon)
        */
       iconName: PropTypes.string.isRequired,
-      /** Is the amenity disabled. */
-      isDisabled: PropTypes.bool,
+      /** The list of amenity items displayed for each category */
+      items: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
       /** A visible label to display for the amenity. */
-      labelText: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
     })
   ).isRequired,
   /** A description to be displayed in the modal */

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Responsive, Modal as SemanticModal } from 'semantic-ui-react';
+import { Modal as SemanticModal } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
@@ -16,45 +16,41 @@ import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
 
 import { twoAmenities, sixAmenities } from './mock-data/amenities';
-import { ComponentWithResponsive as Amenities } from './component';
+import { Component as Amenities } from './component';
 
 const getAmenities = (props = {}) =>
   shallow(
-    <Amenities amenities={props.amenities || twoAmenities} isUserOnMobile />
+    <Amenities
+      amenities={props.amenities || twoAmenities}
+      isStacked
+      isUserOnMobile
+      {...props}
+    />
   );
-const getWrappedAmenities = (props = {}) => {
-  const Child = getAmenities().prop('as');
-  return shallow(
-    <Child amenities={props.amenities || twoAmenities} isUserOnMobile />
-  );
-};
 
 describe('<Amenities />', () => {
-  it('should be wrapped in a Semantic UI `Responsive` component', () => {
-    const wrapper = getAmenities();
-    expectComponentToBe(wrapper, Responsive);
-  });
-
-  describe('the wrapped `Amenities` component', () => {
+  describe('the `Amenities` component', () => {
     it('should be a Lodgify UI `Grid`', () => {
-      const wrapper = getWrappedAmenities();
+      const wrapper = getAmenities();
       expectComponentToBe(wrapper, Grid);
     });
   });
 
   describe('the `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getWrappedAmenities();
+      const wrapper = getAmenities();
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(3, GridColumn)
+        ...getArrayOfLengthOfItem(2, GridColumn)
       );
     });
   });
 
   describe('the first `GridColumn` component', () => {
     const getFirstGridColumn = () =>
-      getWrappedAmenities()
+      getAmenities({
+        headingText: 'Hello world',
+      })
         .find(GridColumn)
         .first();
 
@@ -71,20 +67,22 @@ describe('<Amenities />', () => {
 
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getWrappedAmenities().find(Heading);
+      const wrapper = getAmenities({
+        headingText: 'Property Amenities',
+      }).find(Heading);
       expectComponentToHaveChildren(wrapper, 'Property Amenities');
     });
   });
 
   describe('if `hasExtraItems` returns true', () => {
     const getAmenitiesWithSixCategories = () =>
-      getWrappedAmenities({ amenities: sixAmenities });
+      getAmenities({ amenities: sixAmenities });
     describe('the `Grid` component', () => {
       it('should render the right children', () => {
         const wrapper = getAmenitiesWithSixCategories();
         expectComponentToHaveChildren(
           wrapper,
-          ...getArrayOfLengthOfItem(5, GridColumn)
+          ...getArrayOfLengthOfItem(4, GridColumn)
         );
       });
     });
@@ -93,7 +91,7 @@ describe('<Amenities />', () => {
       const getLastGridColumn = () =>
         getAmenitiesWithSixCategories()
           .find(GridColumn)
-          .at(4);
+          .at(3);
 
       it('should have the right props', () => {
         const wrapper = getLastGridColumn();
@@ -151,7 +149,6 @@ describe('<Amenities />', () => {
   });
 
   it('should have `displayName` `Amenities`', () => {
-    const component = getAmenities().prop('as');
-    expectComponentToHaveDisplayName(component, 'Amenities');
+    expectComponentToHaveDisplayName(Amenities, 'Amenities');
   });
 });

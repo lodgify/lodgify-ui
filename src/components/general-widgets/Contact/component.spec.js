@@ -16,14 +16,14 @@ import { PhoneInput } from 'inputs/PhoneInput';
 import { TextArea } from 'inputs/TextArea';
 import { TextInput } from 'inputs/TextInput';
 
-import * as options from './mock-data/options';
+import { roomOptions, propertyOptions } from './mock-data/options';
 import { Component as Contact } from './component';
 
 const captchaInputImage = 'someImage';
 
-const getContact = () =>
-  shallow(<Contact captchaInputImage={captchaInputImage} {...options} />);
-const getForm = () => getContact().find(Form);
+const getContact = extraProps =>
+  shallow(<Contact captchaInputImage={captchaInputImage} {...extraProps} />);
+const getForm = extraProps => getContact(extraProps).find(Form);
 
 describe('<Contact />', () => {
   it('should render a single Lodgify UI `Form` component', () => {
@@ -49,7 +49,6 @@ describe('<Contact />', () => {
         TextInput,
         InputGroup,
         TextArea,
-        InputGroup,
         CaptchaInput
       );
     });
@@ -144,39 +143,89 @@ describe('<Contact />', () => {
     });
   });
 
-  describe('the third `InputGroup`', () => {
-    it('should render two `Dropdown`s', () => {
-      const wrapper = getForm()
-        .find(InputGroup)
-        .at(2);
-      expectComponentToHaveChildren(wrapper, Dropdown, Dropdown);
-    });
-  });
+  describe('if `props.propertyOptions` is passed', () => {
+    const getFormWithPropertyOptions = () => getForm({ propertyOptions });
 
-  describe('the Property `Dropdown`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm()
-        .find(InputGroup)
-        .at(2)
-        .childAt(0);
-      expectComponentToHaveProps(wrapper, {
-        label: 'Property',
-        name: 'property',
-        options: options.propertyOptions,
+    it('should render the right children', () => {
+      const wrapper = getFormWithPropertyOptions();
+      expectComponentToHaveChildren(
+        wrapper,
+        InputGroup,
+        TextInput,
+        InputGroup,
+        TextArea,
+        InputGroup,
+        CaptchaInput
+      );
+    });
+
+    describe('the third `InputGroup`', () => {
+      it('should render the right children', () => {
+        const wrapper = getFormWithPropertyOptions()
+          .find(InputGroup)
+          .at(2);
+        expectComponentToHaveChildren(wrapper, Dropdown);
+      });
+    });
+
+    describe('the `Dropdown`', () => {
+      it('should have the right props', () => {
+        const wrapper = getFormWithPropertyOptions().find(Dropdown);
+        expectComponentToHaveProps(wrapper, {
+          label: 'Property',
+          name: 'property',
+          onChange: expect.any(Function),
+          options: propertyOptions,
+        });
       });
     });
   });
 
-  describe('the Room `Dropdown`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm()
-        .find(InputGroup)
-        .at(2)
-        .childAt(1);
-      expectComponentToHaveProps(wrapper, {
-        label: 'Room',
-        name: 'room',
-        options: options.roomOptions,
+  describe('if `props.roomOptions` is passed', () => {
+    const getFormWithRoomOptions = () => getForm({ roomOptions });
+
+    it('should render the right children', () => {
+      const wrapper = getFormWithRoomOptions();
+      expectComponentToHaveChildren(
+        wrapper,
+        InputGroup,
+        TextInput,
+        InputGroup,
+        TextArea,
+        InputGroup,
+        CaptchaInput
+      );
+    });
+
+    describe('the third `InputGroup`', () => {
+      it('should render the right children', () => {
+        const wrapper = getFormWithRoomOptions()
+          .find(InputGroup)
+          .at(2);
+        expectComponentToHaveChildren(wrapper, Dropdown);
+      });
+    });
+
+    describe('the `Dropdown`', () => {
+      it('should have the right props', () => {
+        const wrapper = getFormWithRoomOptions().find(Dropdown);
+        expectComponentToHaveProps(wrapper, {
+          label: 'Room',
+          name: 'room',
+          onChange: expect.any(Function),
+          options: roomOptions,
+        });
+      });
+    });
+  });
+
+  describe('if `propertyOptions` and `roomOptions` are passed', () => {
+    describe('the third `InputGroup`', () => {
+      it('should render the right children', () => {
+        const wrapper = getForm({ propertyOptions, roomOptions })
+          .find(InputGroup)
+          .at(2);
+        expectComponentToHaveChildren(wrapper, Dropdown, Dropdown);
       });
     });
   });

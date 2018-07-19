@@ -1,3 +1,25 @@
+## [1.19.2](https://github.com/lodgify/lodgify-ui/compare/v1.19.1...v1.19.2) (2018-07-19)
+
+
+### Bug Fixes
+
+* **RoomType:** Standardise amenities array in component ([da1275a](https://github.com/lodgify/lodgify-ui/commit/da1275a))
+
+## [1.19.1](https://github.com/lodgify/lodgify-ui/compare/v1.19.0...v1.19.1) (2018-07-18)
+
+
+### Bug Fixes
+
+* **Contact:** add ability to only show necessary dropdowns ([6e2845a](https://github.com/lodgify/lodgify-ui/commit/6e2845a))
+* **Form:** add check to prevent warnings when not passing a react element ([fd0d50a](https://github.com/lodgify/lodgify-ui/commit/fd0d50a))
+
+# [1.19.0](https://github.com/lodgify/lodgify-ui/compare/v1.18.2...v1.19.0) (2018-07-18)
+
+
+### Features
+
+* **Slideshow:** expose headingText prop ([4809d3e](https://github.com/lodgify/lodgify-ui/commit/4809d3e))
+
 ## [1.18.2](https://github.com/lodgify/lodgify-ui/compare/v1.18.1...v1.18.2) (2018-07-17)
 
 

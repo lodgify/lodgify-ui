@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal as SemanticModal } from 'semantic-ui-react';
 
-import { withResponsive } from 'utils/with-responsive';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
@@ -17,15 +16,17 @@ import { getCategoryMarkup } from './utils/getCategoryMarkup';
  * The standard widget for displaying the amenities of a property.
  * @returns {Object}
  */
-const Component = ({ amenities, isUserOnMobile }) => (
+export const Component = ({ amenities, headingText, isStacked }) => (
   <Grid stackable>
-    <GridColumn width={12}>
-      <Heading>Property Amenities</Heading>
-    </GridColumn>
-    {getDefaultItems(amenities, isUserOnMobile).map((amenity, index) =>
-      getCategoryMarkup(amenity, index, isUserOnMobile)
+    {headingText && (
+      <GridColumn width={12}>
+        <Heading>{headingText}</Heading>
+      </GridColumn>
     )}
-    {hasExtraItems(amenities, isUserOnMobile) && (
+    {getDefaultItems(amenities, isStacked).map((amenity, index) =>
+      getCategoryMarkup(amenity, index, isStacked)
+    )}
+    {hasExtraItems(amenities, isStacked) && (
       <GridColumn width={12}>
         <Modal trigger={<Link>View more</Link>}>
           <SemanticModal.Content>
@@ -41,6 +42,11 @@ const Component = ({ amenities, isUserOnMobile }) => (
 
 Component.displayName = 'Amenities';
 
+Component.defaultProps = {
+  headingText: null,
+  isStacked: false,
+};
+
 Component.propTypes = {
   /** The amenity categories. */
   amenities: PropTypes.arrayOf(
@@ -53,12 +59,8 @@ Component.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /**
-   * Is the user on a mobile device.
-   * Provided by `withResponsive` so ignored in the styleguide.
-   * @ignore
-   */
-  isUserOnMobile: PropTypes.bool.isRequired,
+  /** The text to display as a heading at the top of the amenities. */
+  headingText: PropTypes.string,
+  /** Are the amenities displayed stacked on top of one another */
+  isStacked: PropTypes.bool,
 };
-
-export const ComponentWithResponsive = withResponsive(Component);
