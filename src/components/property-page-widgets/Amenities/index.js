@@ -1,1 +1,1 @@
-export { ComponentWithResponsive as Amenities } from './component';
+export { Component as Amenities } from './component';

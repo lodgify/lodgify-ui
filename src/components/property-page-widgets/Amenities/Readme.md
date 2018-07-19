@@ -20,6 +20,8 @@ const amenities = [
 <Amenities amenities={amenities} />
 ```
 
+#### Amenities with some extra items
+
 ```jsx
 const amenities = [
   {
@@ -67,7 +69,9 @@ const amenities = [
 
 ```
 
-#### Amenities with heading
+### Variations
+
+#### With heading
 
 ```jsx
 const amenities = [
@@ -113,5 +117,30 @@ const amenities = [
 ];
 
 <Amenities amenities={amenities} headingText="Property Amenities" />
+
+```
+
+#### Display as stacked
+
+```jsx
+const amenities = [
+  {
+    name: 'Cooking',
+    iconName: 'coffee',
+    items: ['Toaster', 'Microwave', 'Coffee Machine'],
+  },
+  {
+    name: 'Bathroom',
+    iconName: 'bathroom',
+    items: ['Bidet', 'Hair Dryer'],
+  },
+  {
+    name: 'Laundry',
+    iconName: 'leaf',
+    items: ['Washer', 'Dryer', 'Iron & Board'],
+  },
+];
+
+<Amenities amenities={amenities} headingText="Property Amenities" isStacked />
 
 ```
