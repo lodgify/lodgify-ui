@@ -1,3 +1,10 @@
+## [1.19.2](https://github.com/lodgify/lodgify-ui/compare/v1.19.1...v1.19.2) (2018-07-19)
+
+
+### Bug Fixes
+
+* **RoomType:** Standardise amenities array in component ([da1275a](https://github.com/lodgify/lodgify-ui/commit/da1275a))
+
 ## [1.19.1](https://github.com/lodgify/lodgify-ui/compare/v1.19.0...v1.19.1) (2018-07-18)
 
 
