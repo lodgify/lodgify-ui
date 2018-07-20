@@ -42,6 +42,17 @@
 /* Mobile Positions */
 
 /* Responsive Widths */
+.ui.fullscreen.modal {
+  bottom: 0;
+  height: @fullScreenHeight;
+  position: absolute;
+  top: 0;
+
+  .content {
+    height: 100%;
+    overflow: auto;
+  }
+}
 
 /* Coupling */
 

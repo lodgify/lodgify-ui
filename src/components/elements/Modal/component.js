@@ -9,21 +9,27 @@ import { Icon } from 'elements/Icon';
  * blocks interactions with the main view of a page.
  * @return {Object}
  */
-export const Component = ({ children, trigger }) => (
+export const Component = ({ children, isFullscreen, trigger }) => (
   <Modal
     closeIcon={<Icon name="close" />}
     content={children}
     dimmer="inverted"
-    size="tiny"
+    size={isFullscreen ? 'fullscreen' : 'tiny'}
     trigger={trigger}
   />
 );
 
 Component.displayName = 'Modal';
 
+Component.defaultProps = {
+  isFullscreen: false,
+};
+
 Component.propTypes = {
-  /** The content of the modal when display. */
+  /** The content of the modal when displayed. */
   children: PropTypes.node.isRequired,
+  /** Is the modal filling the whole screen when displayed. */
+  isFullscreen: PropTypes.bool,
   /** The element to be clicked to display the modal. */
   trigger: PropTypes.node.isRequired,
 };

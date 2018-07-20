@@ -25,6 +25,9 @@
 /* Mobile Positions */
 
 /* Responsive Widths */
+@fullScreenWidth: 100%;
+// Fixes the bug I describe at https://stackoverflow.com/questions/41453780/semantic-react-modal-weird-height-behavior/51426377#51426377
+@fullScreenHeight: ~"calc(100% - 1px)";
 
 /* Coupling */
 
