@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/lodgify/lodgify-ui/compare/v1.19.2...v1.20.0) (2018-07-20)
+
+
+### Features
+
+* **Modal:** expose isFullscreen prop to display full screen ([4333029](https://github.com/lodgify/lodgify-ui/commit/4333029))
+
 ## [1.19.2](https://github.com/lodgify/lodgify-ui/compare/v1.19.1...v1.19.2) (2018-07-19)
 
 
