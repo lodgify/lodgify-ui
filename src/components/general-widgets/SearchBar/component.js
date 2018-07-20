@@ -1,12 +1,14 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import { Form } from 'semantic-ui-react';
+import { Form, Modal as SemanticModal } from 'semantic-ui-react';
 
 import { Icon } from 'elements/Icon';
-import { Dropdown } from 'inputs/Dropdown';
-import { DateRangePicker } from 'inputs/DateRangePicker';
+import { Heading } from 'typography/Heading';
+import { Modal } from 'elements/Modal';
 import { Button } from 'elements/Button';
+
+import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
 
 /**
  * The standard widget for property search.
@@ -24,55 +26,26 @@ export class Component extends PureComponent {
   };
 
   render = () => {
-    const {
-      getIsDayBlocked,
-      guestsOptions,
-      locationOptions,
-      isShowingLocationDropdown,
-      isShowingSummary,
-      searchButton,
-      isSticky,
-    } = this.props;
+    const { isDisplayedAsModal, isSticky, modalTrigger } = this.props;
+
+    if (isDisplayedAsModal) {
+      return (
+        <Modal trigger={modalTrigger}>
+          <SemanticModal.Content>
+            <Heading size="small">Check our availability</Heading>
+            <Form onSubmit={this.handleSubmit}>
+              {getFormFieldMarkup(this.props, this.persistInputChange, true)}
+            </Form>
+          </SemanticModal.Content>
+        </Modal>
+      );
+    }
 
     return (
       <div className={cx({ 'is-sticky': isSticky })}>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
-            {!!isShowingSummary && (
-              <Form.Field width="three">
-                <Icon isDisabled labelText="Property Summary" name="home" />
-              </Form.Field>
-            )}
-            {!!isShowingLocationDropdown && (
-              <Form.Field width="three">
-                <Dropdown
-                  icon="map pin"
-                  label="Location"
-                  name="location"
-                  onChange={this.persistInputChange}
-                  options={locationOptions}
-                />
-              </Form.Field>
-            )}
-            <Form.Field width="seven">
-              <DateRangePicker
-                endDatePlaceholderText="Check-out"
-                getIsDayBlocked={getIsDayBlocked}
-                name="dates"
-                onChange={this.persistInputChange}
-                startDatePlaceholderText="Check-in"
-              />
-            </Form.Field>
-            <Form.Field width="three">
-              <Dropdown
-                icon="users"
-                label="Guests"
-                name="guests"
-                onChange={this.persistInputChange}
-                options={guestsOptions}
-              />
-            </Form.Field>
-            <Form.Field width="three">{searchButton}</Form.Field>
+            {getFormFieldMarkup(this.props, this.persistInputChange, false)}
           </Form.Group>
         </Form>
       </div>
@@ -84,17 +57,19 @@ Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
+  modalTrigger: <Icon name="search" />,
   onSubmit: Function.prototype,
+  isDisplayedAsModal: false,
   isShowingSummary: false,
   isShowingLocationDropdown: true,
   isSticky: false,
   searchButton: (
-    <Button icon="search" isRounded>
+    <Button icon="search" isPositionedRight isRounded>
       Search
     </Button>
   ),
 };
-
+/* eslint react/no-unused-prop-types: 0 */
 Component.propTypes = {
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
@@ -115,6 +90,8 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** Is the Search Bar displayed in a modal*/
+  isDisplayedAsModal: PropTypes.bool,
   /** Is Search Bar showing the Location Dropdown. */
   isShowingLocationDropdown: PropTypes.bool,
   /** Is Search Bar showing the Property Summary info. */
@@ -134,6 +111,8 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The element to be clicked to display the modal. */
+  modalTrigger: PropTypes.node,
   /** The function to call when the search bar is submitted.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates
