@@ -14,7 +14,12 @@ import { Component as Modal } from './component';
 const trigger = 'someTrigger';
 const content = 'someContent';
 
-const getModal = () => shallow(<Modal trigger={trigger}>{content}</Modal>);
+const getModal = props =>
+  shallow(
+    <Modal trigger={trigger} {...props}>
+      {content}
+    </Modal>
+  );
 
 describe('<Modal />', () => {
   it('should render a single Semantic UI `Modal` component', () => {
@@ -31,6 +36,19 @@ describe('<Modal />', () => {
         dimmer: 'inverted',
         size: 'tiny',
         trigger,
+      });
+    });
+
+    describe('if `props.isFullscreen` is `true`', () => {
+      it('should get the right props', () => {
+        const wrapper = getModal({ isFullscreen: true });
+        expectComponentToHaveProps(wrapper, {
+          closeIcon: <Icon name="close" />,
+          content,
+          dimmer: 'inverted',
+          size: 'fullscreen',
+          trigger,
+        });
       });
     });
   });
