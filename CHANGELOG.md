@@ -1,3 +1,15 @@
+# [1.22.0](https://github.com/lodgify/lodgify-ui/compare/v1.21.0...v1.22.0) (2018-07-23)
+
+
+### Bug Fixes
+
+* **Icon:** change icon name from google to google plus ([272ae49](https://github.com/lodgify/lodgify-ui/commit/272ae49))
+
+
+### Features
+
+* **Icon:** add pinterest social media icon ([77ce77f](https://github.com/lodgify/lodgify-ui/commit/77ce77f))
+
 # [1.21.0](https://github.com/lodgify/lodgify-ui/compare/v1.20.0...v1.21.0) (2018-07-23)
 
 
