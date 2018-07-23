@@ -94,6 +94,7 @@ Component.propTypes = {
     'arrow left',
     'arrow right',
     'arrow up',
+    'bars',
     'bathroom',
     'bedroom door',
     'bus',
