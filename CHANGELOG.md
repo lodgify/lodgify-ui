@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/lodgify/lodgify-ui/compare/v1.20.0...v1.21.0) (2018-07-23)
+
+
+### Features
+
+* **Icon:** add bars to icon names ([e323227](https://github.com/lodgify/lodgify-ui/commit/e323227))
+
 # [1.20.0](https://github.com/lodgify/lodgify-ui/compare/v1.19.2...v1.20.0) (2018-07-20)
 
 
