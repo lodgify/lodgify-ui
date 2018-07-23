@@ -118,7 +118,7 @@ Library icons
 <Heading size="small">Social media</Heading>
 <Icon labelText="facebook" name="facebook" />
 <Divider />
-<Icon labelText="google" name="google" />
+<Icon labelText="google plus" name="google plus" />
 <Divider />
 <Icon labelText="instagram" name="instagram" />
 <Divider />

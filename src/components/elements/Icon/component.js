@@ -114,7 +114,7 @@ Component.propTypes = {
     'double bed',
     'facebook',
     'fire',
-    'google',
+    'google plus',
     'guests',
     'home',
     'info',
