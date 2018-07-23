@@ -122,6 +122,8 @@ Library icons
 <Divider />
 <Icon labelText="instagram" name="instagram" />
 <Divider />
+<Icon labelText="pinterest" name="pinterest" />
+<Divider />
 <Icon labelText="twitter" name="twitter" />
 <Divider />
 <Icon labelText="youtube" name="youtube" />

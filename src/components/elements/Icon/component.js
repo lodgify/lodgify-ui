@@ -124,6 +124,7 @@ Component.propTypes = {
     'map pin',
     'paw',
     'phone',
+    'pinterest',
     'placeholder',
     'plane',
     'question mark',
