@@ -34,6 +34,7 @@ module.exports = {
     'import/no-default-export': 2,
     'import/no-unresolved': [2, importNoUnresolved],
     'import/order': [2, importOrder],
+    'newline-after-var': 2,
     'no-console': 2,
     'no-undef': 2,
     'no-unreachable': 2,
