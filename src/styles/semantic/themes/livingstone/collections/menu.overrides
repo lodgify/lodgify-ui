@@ -19,16 +19,28 @@
       margin: 0 @headerMenuItemHorizontalMargin;
       padding: @headerMenuItemVerticalPadding 0;
 
+      @media @mobileScreen {
+        padding: @headerMenuItemMobileVerticalPadding 0;
+      }
+
       &:hover {
         color: @headerMenuItemTextColor;
       }
 
       &:first-child {
         margin-left: @headerMenuHorizontalMargin;
+
+        @media @mobileScreen {
+          margin-left: @headerMenuMobileHorizontalMargin;
+        }
       }
 
       &:last-child {
         margin-right: @headerMenuHorizontalMargin;
+
+        @media @mobileScreen {
+          margin-right: @headerMenuMobileHorizontalMargin;
+        }
       }
     }
   }
@@ -105,6 +117,10 @@
   /* Header */
   .item .ui.header {
     color: @offWhite;
+
+    .ui.modal & {
+      color: @textColor;
+    }
   }
 
   /* Vertical Icon */
@@ -165,6 +181,10 @@
         transform-origin: left;
         transition: @activeItemUnderlineTransition;
         width: 100%;
+
+        @media @mobileScreen {
+          border: none;
+        }
       }
 
       & > .active.item:after,
@@ -189,6 +209,43 @@
 ---------------*/
 
   /* Vertical */
+  .ui.modal &.vertical {
+    width: @verticalMenuInModalWidth;
+
+    > .item {
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:not(:first-child) {
+        border-bottom: @verticalMenuInModalItemBorderBottom;
+        line-height: @verticalMenuInModalItemLineHeight;
+        padding-left: @verticalMenuInModalItemPaddingLeft;
+
+        > .title {
+          padding: 0;
+
+          > .icon {
+            float: right;
+            margin: @verticalMenuInModalAccordionIconMargin;
+          }
+        }
+
+        > .content {
+          padding: 0;
+
+          > .item {
+            padding-left: @verticalMenuInModalSubItemPaddingLeft;
+          }
+        }
+
+        &.active {
+          border-bottom: @activeItemUnderlineBorder;
+        }
+      }
+    }
+  }
 
   /* Secondary */
 
