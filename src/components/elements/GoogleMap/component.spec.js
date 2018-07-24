@@ -22,12 +22,14 @@ const getGoogleMap = () => shallow(<GoogleMap {...props} />);
 describe('<GoogleMap />', () => {
   it('should render a single `ReactGoogleMap` component', () => {
     const wrapper = getGoogleMap();
+
     expectComponentToBe(wrapper, ReactGoogleMap);
   });
 
   describe('the `ReactGoogleMap` component', () => {
     it('should get the right props', () => {
       const wrapper = getGoogleMap();
+
       expectComponentToHaveProps(wrapper, {
         apiKey: GOOGLE_MAPS_API_KEY,
         containerElement: <Card fluid />,

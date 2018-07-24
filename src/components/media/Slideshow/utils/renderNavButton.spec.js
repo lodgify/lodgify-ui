@@ -10,12 +10,14 @@ const getButton = (leftOrRight = 'left') =>
 describe('renderNavButton', () => {
   it('should return a function', () => {
     const actual = renderNavButton();
+
     expect(actual).toBeInstanceOf(Function);
   });
 
   describe('the returned function', () => {
     it('should should return a single Semantic UI `Button` component', () => {
       const actual = getButton().type;
+
       expect(actual).toBe(Button);
     });
   });
@@ -23,6 +25,7 @@ describe('renderNavButton', () => {
   describe('the `Button` component', () => {
     it('should get the right props', () => {
       const actual = getButton().props;
+
       expect(actual).toEqual(
         expect.objectContaining({
           primary: true,
@@ -38,6 +41,7 @@ describe('renderNavButton', () => {
       const children = getButton().props.children;
       const actualName = children.type.displayName;
       const actualProps = children.props;
+
       expect(actualName).toBe('Icon');
       expect(actualProps).toEqual(
         expect.objectContaining({

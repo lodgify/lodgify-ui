@@ -31,6 +31,7 @@ class Component extends PureComponent {
     const prevDates = pickDatesFromState(prevState);
     const dates = pickDatesFromState(this.state);
     const { name, onChange } = this.props;
+
     !isEqual(prevDates, dates) && onChange(name, dates);
   };
 
@@ -59,6 +60,7 @@ class Component extends PureComponent {
       windowInnerWidth,
     } = this.props;
     const { endDate, focusedInput, startDate } = this.state;
+
     return (
       <InputController
         error={error}

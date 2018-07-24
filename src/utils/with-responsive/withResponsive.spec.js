@@ -15,6 +15,7 @@ const WrapperComponent = withResponsive(WrappedComponent);
 describe('withResponsive', () => {
   it('should be return a Wrapper component', () => {
     const actual = withResponsive(WrappedComponent);
+
     expect(actual).toBeInstanceOf(Function);
   });
 
@@ -23,12 +24,14 @@ describe('withResponsive', () => {
 
     it('should render a Semantic UI `Responsive` component', () => {
       const wrapper = getWrapper();
+
       expectComponentToBe(wrapper, Responsive);
     });
 
     describe('the `Responsive` component', () => {
       it('should get the right props', () => {
         const wrapper = getWrapper();
+
         expectComponentToHaveProps(wrapper, {
           as: WrappedComponent,
           onUpdate: expect.any(Function),
@@ -41,6 +44,7 @@ describe('withResponsive', () => {
 
     it('should have `displayName` `Amenities`', () => {
       const component = withResponsive(WrappedComponent);
+
       expectComponentToHaveDisplayName(component, 'WithResponsive(undefined)');
     });
 
@@ -49,8 +53,10 @@ describe('withResponsive', () => {
         const event = { target: { innerWidth: '🐸' } };
         const wrapper = mount(<WrapperComponent some="prop" />);
         const responsiveComponent = wrapper.find(Responsive);
+
         responsiveComponent.prop('onUpdate')(event);
         const actual = wrapper.state('windowInnerWidth');
+
         expect(actual).toBe(event.target.innerWidth);
       });
     });

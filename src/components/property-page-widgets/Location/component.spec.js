@@ -38,18 +38,21 @@ const props = {
 const getLocation = () => shallow(<Location {...props} />);
 const getWrappedLocation = () => {
   const Child = getLocation().prop('as');
+
   return shallow(<Child {...props} isUserOnMobile={false} />);
 };
 
 describe('<Location />', () => {
   it('should be wrapped in a Semantic UI `Responsive` component', () => {
     const wrapper = getLocation();
+
     expectComponentToBe(wrapper, Responsive);
   });
 
   describe('the wrapped `Location` component', () => {
     it('should be a Lodgify UI `Grid`', () => {
       const wrapper = getWrappedLocation();
+
       expectComponentToBe(wrapper, Grid);
     });
   });
@@ -57,6 +60,7 @@ describe('<Location />', () => {
   describe('the first `Grid` component', () => {
     it('should render the right props', () => {
       const wrapper = getWrappedLocation();
+
       expectComponentToHaveProps(wrapper, {
         stackable: true,
       });
@@ -66,6 +70,7 @@ describe('<Location />', () => {
   describe('the first `Grid` component', () => {
     it('should render the right children', () => {
       const wrapper = getWrappedLocation();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(2, GridColumn),
@@ -84,6 +89,7 @@ describe('<Location />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         width: 12,
       });
@@ -91,6 +97,7 @@ describe('<Location />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(wrapper, Heading, Subheading);
     });
   });
@@ -98,6 +105,7 @@ describe('<Location />', () => {
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
       const wrapper = getWrappedLocation().find(Heading);
+
       expectComponentToHaveChildren(wrapper, 'Location');
     });
   });
@@ -107,6 +115,7 @@ describe('<Location />', () => {
       const wrapper = getWrappedLocation()
         .find(Subheading)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, locationSummary);
     });
   });
@@ -119,6 +128,7 @@ describe('<Location />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         computer: 6,
         tablet: 12,
@@ -127,6 +137,7 @@ describe('<Location />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
@@ -141,6 +152,7 @@ describe('<Location />', () => {
     it('should render the right children', () => {
       const wrapper = getParagraphInSecondGridColumn();
       const expected = getParagraphsFromStrings(locationDescription)[0];
+
       expectComponentToHaveChildren(wrapper, expected);
     });
   });
@@ -150,6 +162,7 @@ describe('<Location />', () => {
 
     it('should have the right props', () => {
       const wrapper = getShowOnDesktop();
+
       expectComponentToHaveProps(wrapper, {
         parent: GridColumn,
         parentProps: {
@@ -161,6 +174,7 @@ describe('<Location />', () => {
 
     it('should render the right children', () => {
       const wrapper = getShowOnDesktop();
+
       expectComponentToHaveChildren(wrapper, Label.Group);
     });
   });
@@ -168,6 +182,7 @@ describe('<Location />', () => {
   describe('the `GoogleMap` component', () => {
     it('should have the right props', () => {
       const wrapper = getWrappedLocation().find(GoogleMap);
+
       expectComponentToHaveProps(wrapper, {
         height: GoogleMap.defaultProps.height,
         isShowingExactLocation: false,
@@ -183,6 +198,7 @@ describe('<Location />', () => {
 
     it('should have the right props', () => {
       const wrapper = getShowOnMobile();
+
       expectComponentToHaveProps(wrapper, {
         parent: GridColumn,
         parentProps: {
@@ -193,12 +209,14 @@ describe('<Location />', () => {
 
     it('should render the right children', () => {
       const wrapper = getShowOnMobile();
+
       expectComponentToHaveChildren(wrapper, Divider, Label.Group);
     });
   });
 
   it('should have `displayName` `Location`', () => {
     const component = getLocation().prop('as');
+
     expectComponentToHaveDisplayName(component, 'Location');
   });
 });

@@ -21,6 +21,7 @@ describe('<ReactGoogleMaps />', () => {
   it('should render a single react-google-maps `GoogleMap` component', () => {
     const wrapper = getReactGoogleMap();
     const actual = wrapper.find(GoogleMap);
+
     expect(actual).toHaveLength(1);
   });
 
@@ -28,6 +29,7 @@ describe('<ReactGoogleMaps />', () => {
     it('should get the right props', () => {
       const wrapper = getGoogleMap();
       const actual = wrapper.props();
+
       expect(actual).toEqual(
         expect.objectContaining({
           center: expect.any(Object),
@@ -41,6 +43,7 @@ describe('<ReactGoogleMaps />', () => {
     it('should not render a `Marker`', () => {
       const wrapper = getGoogleMap();
       const actual = wrapper.find(Marker);
+
       expect(actual).toHaveLength(0);
     });
   });
@@ -49,6 +52,7 @@ describe('<ReactGoogleMaps />', () => {
     it('should render a `Marker`', () => {
       const wrapper = getGoogleMap({ isShowingExactLocation: true });
       const actual = wrapper.find(Marker);
+
       expect(actual).toHaveLength(1);
     });
   });
@@ -57,6 +61,7 @@ describe('<ReactGoogleMaps />', () => {
     it('should get the right props', () => {
       const wrapper = getGoogleMap({ isShowingExactLocation: true });
       const actual = wrapper.find(Marker).props();
+
       expect(actual).toEqual(
         expect.objectContaining({
           position: expect.any(Object),
@@ -69,6 +74,7 @@ describe('<ReactGoogleMaps />', () => {
     it('should not render a `Circle`', () => {
       const wrapper = getGoogleMap();
       const actual = wrapper.find(Circle);
+
       expect(actual).toHaveLength(0);
     });
   });
@@ -77,6 +83,7 @@ describe('<ReactGoogleMaps />', () => {
     it('should render a `Circle`', () => {
       const wrapper = getGoogleMap({ isShowingApproximateLocation: true });
       const actual = wrapper.find(Circle);
+
       expect(actual).toHaveLength(1);
     });
   });
@@ -85,6 +92,7 @@ describe('<ReactGoogleMaps />', () => {
     it('should get the right props', () => {
       const wrapper = getGoogleMap({ isShowingApproximateLocation: true });
       const actual = wrapper.find(Circle).props();
+
       expect(actual).toEqual(
         expect.objectContaining({
           center: expect.any(Object),

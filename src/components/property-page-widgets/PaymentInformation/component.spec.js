@@ -49,12 +49,14 @@ const getPaymentInformation = extraProps =>
 describe('<PaymentInformation />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getPaymentInformation();
+
     expectComponentToBe(wrapper, Grid);
   });
 
   describe('the first `Grid` component', () => {
     it('should have the right props', () => {
       const wrapper = getPaymentInformation();
+
       expectComponentToHaveProps(wrapper, {
         stackable: true,
       });
@@ -62,6 +64,7 @@ describe('<PaymentInformation />', () => {
 
     it('should render the right children', () => {
       const wrapper = getPaymentInformation();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(3, GridRow)
@@ -80,6 +83,7 @@ describe('<PaymentInformation />', () => {
 
       it('should have the right props', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveProps(wrapper, {
           width: 12,
         });
@@ -87,6 +91,7 @@ describe('<PaymentInformation />', () => {
 
       it('should render the right children', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveChildren(
           wrapper,
           ...getArrayOfLengthOfItem(1, Heading)
@@ -116,6 +121,7 @@ describe('<PaymentInformation />', () => {
 
       it('should have the right props', () => {
         const wrapper = getConditionalGridColumn();
+
         expectComponentToHaveProps(wrapper, {
           width: 6,
         });
@@ -123,6 +129,7 @@ describe('<PaymentInformation />', () => {
 
       it('should render the right children', () => {
         const wrapper = getConditionalGridColumn();
+
         expectComponentToHaveChildren(wrapper, Heading, Paragraph);
       });
 
@@ -134,6 +141,7 @@ describe('<PaymentInformation />', () => {
 
         it('should have the right props', () => {
           const wrapper = getHeader();
+
           expectComponentToHaveProps(wrapper, {
             size: 'small',
           });
@@ -141,6 +149,7 @@ describe('<PaymentInformation />', () => {
 
         it('should render the right children', () => {
           const wrapper = getHeader();
+
           expectComponentToHaveChildren(wrapper, 'Payment Schedule');
         });
       });
@@ -153,6 +162,7 @@ describe('<PaymentInformation />', () => {
 
         it('should have the right props', () => {
           const wrapper = getParagraph();
+
           expectComponentToHaveProps(wrapper, {
             size: 'medium',
           });
@@ -160,6 +170,7 @@ describe('<PaymentInformation />', () => {
 
         it('should render the right children', () => {
           const wrapper = getParagraph();
+
           expectComponentToHaveChildren(wrapper, paymentScheduleText);
         });
       });
@@ -187,6 +198,7 @@ describe('<PaymentInformation />', () => {
 
       it('should have the right props', () => {
         const wrapper = getConditionalGridColumn();
+
         expectComponentToHaveProps(wrapper, {
           width: 6,
         });
@@ -194,6 +206,7 @@ describe('<PaymentInformation />', () => {
 
       it('should render the right children', () => {
         const wrapper = getConditionalGridColumn();
+
         expectComponentToHaveChildren(wrapper, Heading, Paragraph);
       });
 
@@ -205,6 +218,7 @@ describe('<PaymentInformation />', () => {
 
         it('should have the right props', () => {
           const wrapper = getHeader();
+
           expectComponentToHaveProps(wrapper, {
             size: 'small',
           });
@@ -212,6 +226,7 @@ describe('<PaymentInformation />', () => {
 
         it('should render the right children', () => {
           const wrapper = getHeader();
+
           expectComponentToHaveChildren(wrapper, 'Cancellation Policy');
         });
       });
@@ -224,6 +239,7 @@ describe('<PaymentInformation />', () => {
 
         it('should have the right props', () => {
           const wrapper = getParagraph();
+
           expectComponentToHaveProps(wrapper, {
             size: 'medium',
           });
@@ -231,6 +247,7 @@ describe('<PaymentInformation />', () => {
 
         it('should render the right children', () => {
           const wrapper = getParagraph();
+
           expectComponentToHaveChildren(wrapper, cancellationPolicyText);
         });
       });
@@ -258,6 +275,7 @@ describe('<PaymentInformation />', () => {
 
       it('should have the right props', () => {
         const wrapper = getConditionalGridColumn();
+
         expectComponentToHaveProps(wrapper, {
           width: 6,
         });
@@ -265,6 +283,7 @@ describe('<PaymentInformation />', () => {
 
       it('should render the right children', () => {
         const wrapper = getConditionalGridColumn();
+
         expectComponentToHaveChildren(wrapper, Heading, Statistic);
       });
 
@@ -276,6 +295,7 @@ describe('<PaymentInformation />', () => {
 
         it('should have the right props', () => {
           const wrapper = getHeader();
+
           expectComponentToHaveProps(wrapper, {
             size: 'small',
           });
@@ -283,6 +303,7 @@ describe('<PaymentInformation />', () => {
 
         it('should render the right children', () => {
           const wrapper = getHeader();
+
           expectComponentToHaveChildren(wrapper, 'Cleaning Charge');
         });
       });
@@ -295,6 +316,7 @@ describe('<PaymentInformation />', () => {
 
         it('should have the right props', () => {
           const wrapper = getStatistic();
+
           expectComponentToHaveProps(wrapper, {
             horizontal: true,
             size: 'mini',
@@ -330,6 +352,7 @@ describe('<PaymentInformation />', () => {
 
       it('should have the right props', () => {
         const wrapper = getConditionalGridColumn();
+
         expectComponentToHaveProps(wrapper, {
           width: 6,
         });
@@ -337,6 +360,7 @@ describe('<PaymentInformation />', () => {
 
       it('should render the right children', () => {
         const wrapper = getConditionalGridColumn();
+
         expectComponentToHaveChildren(wrapper, Heading, Statistic);
       });
 
@@ -348,6 +372,7 @@ describe('<PaymentInformation />', () => {
 
         it('should have the right props', () => {
           const wrapper = getHeader();
+
           expectComponentToHaveProps(wrapper, {
             size: 'small',
           });
@@ -355,6 +380,7 @@ describe('<PaymentInformation />', () => {
 
         it('should render the right children', () => {
           const wrapper = getHeader();
+
           expectComponentToHaveChildren(wrapper, 'Taxes');
         });
       });
@@ -367,6 +393,7 @@ describe('<PaymentInformation />', () => {
 
         it('should have the right props', () => {
           const wrapper = getStatistic();
+
           expectComponentToHaveProps(wrapper, {
             horizontal: true,
             text: true,
@@ -407,6 +434,7 @@ describe('<PaymentInformation />', () => {
 
         it('should render the right children', () => {
           const wrapper = getConditionalGridColumn();
+
           expectComponentToHaveChildren(wrapper, Heading, Paragraph);
         });
 
@@ -418,6 +446,7 @@ describe('<PaymentInformation />', () => {
 
           it('should have the right props', () => {
             const wrapper = getHeader();
+
             expectComponentToHaveProps(wrapper, {
               size: 'small',
             });
@@ -425,6 +454,7 @@ describe('<PaymentInformation />', () => {
 
           it('should render the right children', () => {
             const wrapper = getHeader();
+
             expectComponentToHaveChildren(wrapper, 'Damage Deposit');
           });
         });
@@ -437,6 +467,7 @@ describe('<PaymentInformation />', () => {
 
           it('should have the right props', () => {
             const wrapper = getParagraph();
+
             expectComponentToHaveProps(wrapper, {
               size: 'medium',
             });
@@ -444,6 +475,7 @@ describe('<PaymentInformation />', () => {
 
           it('should render the right children', () => {
             const wrapper = getParagraph();
+
             expectComponentToHaveChildren(wrapper, damageDepositText);
           });
         });
@@ -479,6 +511,7 @@ describe('<PaymentInformation />', () => {
 
         it('should render the right children', () => {
           const wrapper = getConditionalGridColumn();
+
           expectComponentToHaveChildren(wrapper, Heading, Paragraph);
         });
 
@@ -490,6 +523,7 @@ describe('<PaymentInformation />', () => {
 
           it('should have the right props', () => {
             const wrapper = getHeader();
+
             expectComponentToHaveProps(wrapper, {
               size: 'small',
             });
@@ -497,6 +531,7 @@ describe('<PaymentInformation />', () => {
 
           it('should render the right children', () => {
             const wrapper = getHeader();
+
             expectComponentToHaveChildren(wrapper, 'Notes');
           });
         });
@@ -509,6 +544,7 @@ describe('<PaymentInformation />', () => {
 
           it('should have the right props', () => {
             const wrapper = getParagraph();
+
             expectComponentToHaveProps(wrapper, {
               size: 'medium',
             });
@@ -516,6 +552,7 @@ describe('<PaymentInformation />', () => {
 
           it('should render the right children', () => {
             const wrapper = getParagraph();
+
             expectComponentToHaveChildren(wrapper, notesText);
           });
         });
@@ -551,6 +588,7 @@ describe('<PaymentInformation />', () => {
 
         it('should render the right children', () => {
           const wrapper = getConditionalGridColumn();
+
           expectComponentToHaveChildren(wrapper, Modal);
         });
       });

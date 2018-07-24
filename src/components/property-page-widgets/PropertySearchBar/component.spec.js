@@ -22,6 +22,7 @@ const getSearchBar = props => getPropertySearchBar(props).find(SearchBar);
 describe('<PropertySearchBar />', () => {
   it('should render a single Lodgify UI `SearchBar` component', () => {
     const wrapper = getPropertySearchBar();
+
     expectComponentToBe(wrapper, SearchBar);
   });
 
@@ -29,6 +30,7 @@ describe('<PropertySearchBar />', () => {
     it('should have the right props', () => {
       const wrapper = getSearchBar();
       const actual = wrapper.props();
+
       expect(actual).toEqual(
         expect.objectContaining({
           guestsOptions,
@@ -54,6 +56,7 @@ describe('<PropertySearchBar />', () => {
       );
 
       const form = searchBar.find(Form);
+
       form.simulate('submit');
       expect(onSubmit).toHaveBeenCalled();
     });

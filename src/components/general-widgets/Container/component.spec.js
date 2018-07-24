@@ -15,11 +15,13 @@ const getContainer = () => shallow(<Container />);
 describe('<Container />', () => {
   it('should render a single `div` element', () => {
     const wrapper = getContainer();
+
     expectComponentToBe(wrapper, 'div');
   });
 
   it('should not render children if none passed', () => {
     const wrapper = getContainer();
+
     expectComponentToHaveChildren(wrapper);
   });
 
@@ -29,6 +31,7 @@ describe('<Container />', () => {
         <OwnerLogin />
       </Container>
     );
+
     expectComponentToHaveChildren(wrapper, OwnerLogin);
   });
   it('should have `displayName` `Container`', () => {

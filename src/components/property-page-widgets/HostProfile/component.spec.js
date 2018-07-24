@@ -44,6 +44,7 @@ const getGridRowAt = at => getGridRows().at(at);
 describe('<HostProfile />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getHostProfile();
+
     expectComponentToBe(wrapper, Grid);
   });
 
@@ -132,6 +133,7 @@ describe('<HostProfile />', () => {
     const secondColumn = getGridRowAt(2)
       .find(GridColumn)
       .at(1);
+
     it('should render a `GridColumn`', () => {
       expectComponentToHaveChildren(getGridRowAt(2), GridColumn, GridColumn);
     });

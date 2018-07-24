@@ -7,6 +7,7 @@ const today = moment();
 describe('getMonthsToDisplay', () => {
   it('should return the correct number of months is not on mobile', () => {
     const actual = getMonthsToDisplay(today, false);
+
     expect(actual).toHaveLength(4);
   });
 
@@ -19,6 +20,7 @@ describe('getMonthsToDisplay', () => {
 
   it('should return the correct number of months if on mobile', () => {
     const actual = getMonthsToDisplay(today, true);
+
     expect(actual).toHaveLength(1);
   });
 });

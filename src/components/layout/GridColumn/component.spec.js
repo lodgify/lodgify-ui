@@ -14,12 +14,14 @@ const getGridColumn = props => shallow(<GridColumn {...props} />);
 describe('<GridColumn />', () => {
   it('should render a single Semantic UI `Grid.Column` component', () => {
     const wrapper = getGridColumn();
+
     expectComponentToBe(wrapper, Grid.Column);
   });
 
   describe('the Semantic UI `Grid` component', () => {
     it('should get the right props', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         verticalAlign: expect.any(String),
       });

@@ -6,5 +6,6 @@ import { get, isUndefined } from 'lodash';
  */
 export const getValue = eventOrValue => {
   const nestedValue = get(eventOrValue, ['target', 'value']);
+
   return !isUndefined(nestedValue) ? nestedValue : eventOrValue;
 };

@@ -18,6 +18,7 @@ const getErrorMessage = () =>
 describe('<ErrorMessage />', () => {
   it('should render a single Semantic UI `Label` component', () => {
     const wrapper = getErrorMessage();
+
     expectComponentToBe(wrapper, Label);
   });
 
@@ -26,11 +27,13 @@ describe('<ErrorMessage />', () => {
 
     it('should have the right props', () => {
       const wrapper = getLabel();
+
       expectComponentToHaveProps(wrapper, { color: 'red', pointing: 'below' });
     });
 
     it('should render the right children', () => {
       const wrapper = getErrorMessage();
+
       expectComponentToHaveChildren(wrapper, errorMessage);
     });
   });

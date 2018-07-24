@@ -31,13 +31,16 @@ const getFeaturedProperty = () => shallow(<FeaturedProperty {...props} />);
 describe('<FeaturedProperty />', () => {
   it('should render a single Semantic UI `Card` component', () => {
     const wrapper = getFeaturedProperty();
+
     expectComponentToBe(wrapper, Card);
   });
 
   describe('the `Card` component', () => {
     const getCard = () => getFeaturedProperty().find(Card);
+
     it('should have the right props', () => {
       const wrapper = getCard();
+
       expectComponentToHaveProps(wrapper, {
         href: props.propertyUrl,
       });
@@ -45,6 +48,7 @@ describe('<FeaturedProperty />', () => {
 
     it('should render the right children', () => {
       const wrapper = getCard();
+
       expectComponentToHaveChildren(wrapper, Image, Card.Content);
     });
   });
@@ -52,6 +56,7 @@ describe('<FeaturedProperty />', () => {
   describe('the `Image` component', () => {
     it('should have the right props', () => {
       const wrapper = getFeaturedProperty().find(Image);
+
       expectComponentToHaveProps(wrapper, {
         alt: '',
         src: props.imageUrl,
@@ -62,6 +67,7 @@ describe('<FeaturedProperty />', () => {
   describe('the `Card.Content` component', () => {
     it('should render the right children', () => {
       const wrapper = getFeaturedProperty().find(Card.Content);
+
       expectComponentToHaveChildren(
         wrapper,
         Card.Meta,
@@ -77,6 +83,7 @@ describe('<FeaturedProperty />', () => {
   describe('the `Card.Meta` component', () => {
     it('should have the right children', () => {
       const wrapper = getFeaturedProperty().find(Card.Meta);
+
       expectComponentToHaveChildren(wrapper, Subheading);
     });
   });
@@ -84,6 +91,7 @@ describe('<FeaturedProperty />', () => {
   describe('the `Subheading` component', () => {
     it('should have the right children', () => {
       const wrapper = getFeaturedProperty().find(Subheading);
+
       expectComponentToHaveChildren(wrapper, props.propertyType);
     });
   });
@@ -91,6 +99,7 @@ describe('<FeaturedProperty />', () => {
   describe('the `Card.Header` component', () => {
     it('should have the right `children`', () => {
       const wrapper = getFeaturedProperty().find(Card.Header);
+
       expectComponentToHaveChildren(wrapper, props.propertyName);
     });
   });
@@ -100,6 +109,7 @@ describe('<FeaturedProperty />', () => {
       const wrapper = getFeaturedProperty()
         .find(Card.Description)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, props.locationName);
     });
   });
@@ -109,6 +119,7 @@ describe('<FeaturedProperty />', () => {
       const wrapper = getFeaturedProperty()
         .find(Card.Description)
         .at(1);
+
       expectComponentToHaveChildren(
         wrapper,
         getPropertyDescription(props.guestsNumber, props.bedroomsNumber)
@@ -121,6 +132,7 @@ describe('<FeaturedProperty />', () => {
       const wrapper = getFeaturedProperty()
         .find(Card.Description)
         .at(2);
+
       expectComponentToHaveChildren(
         wrapper,
         props.ratingNumber.toString(),
@@ -134,6 +146,7 @@ describe('<FeaturedProperty />', () => {
       const wrapper = getFeaturedProperty()
         .find(Card.Description)
         .find(Rating);
+
       expectComponentToHaveProps(wrapper, {
         disabled: true,
         maxRating: 5,
@@ -149,6 +162,7 @@ describe('<FeaturedProperty />', () => {
         .find(Card.Description)
         .at(3)
         .children();
+
       expectComponentToBe(wrapper, 'span');
     });
   });
@@ -156,19 +170,23 @@ describe('<FeaturedProperty />', () => {
   describe('the `span`', () => {
     it('should have the right `children`', () => {
       const wrapper = getFeaturedProperty().find('span');
+
       expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
   });
 
   describe('the `Heading` component', () => {
     const getHeading = () => getFeaturedProperty().find(Heading);
+
     it('should have the right props', () => {
       const wrapper = getHeading();
+
       expectComponentToHaveProps(wrapper, { size: 'medium' });
     });
 
     it('should have the right children', () => {
       const wrapper = getHeading();
+
       expectComponentToHaveChildren(wrapper, props.nightPrice);
     });
   });

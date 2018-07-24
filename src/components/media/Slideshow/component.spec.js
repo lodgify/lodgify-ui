@@ -18,6 +18,7 @@ const getImageGallery = props => getSlideshow(props).find(ImageGallery);
 describe('<Slideshow />', () => {
   it('should render a fragment with the right children', () => {
     const wrapper = getSlideshow();
+
     expectComponentToHaveChildren(wrapper, ImageGallery);
   });
 
@@ -26,12 +27,14 @@ describe('<Slideshow />', () => {
 
     it('should render a `Heading` component', () => {
       const wrapper = getSlideshow({ headingText });
+
       expectComponentToHaveChildren(wrapper, Heading, ImageGallery);
     });
 
     describe('the `Heading` component', () => {
       it('should have the right children', () => {
         const wrapper = getSlideshow({ headingText }).find(Heading);
+
         expectComponentToHaveChildren(wrapper, headingText);
       });
     });
@@ -40,6 +43,7 @@ describe('<Slideshow />', () => {
   describe('the `ImageGallery` component', () => {
     it('should get the right props', () => {
       const wrapper = getImageGallery();
+
       expectComponentToHaveProps(wrapper, {
         items: expect.any(Array),
         lazyLoad: true,
@@ -58,6 +62,7 @@ describe('<Slideshow />', () => {
       const wrapper = getImageGallery({
         isStretched: true,
       });
+
       expectComponentToHaveProps(wrapper, { additionalClass: 'fit-height' });
     });
   });
@@ -67,6 +72,7 @@ describe('<Slideshow />', () => {
       const wrapper = getImageGallery({
         isRounded: false,
       });
+
       expectComponentToHaveProps(wrapper, {
         additionalClass: 'no-border-radius',
       });
@@ -78,6 +84,7 @@ describe('<Slideshow />', () => {
       const wrapper = getImageGallery({
         hasShadow: false,
       });
+
       expectComponentToHaveProps(wrapper, { additionalClass: 'no-shadow' });
     });
   });

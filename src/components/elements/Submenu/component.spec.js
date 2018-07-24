@@ -17,6 +17,7 @@ const items = [{ text: 'someText', href: 'someHref' }];
 describe('<Submenu />', () => {
   it('should render a single Semantic UI `Dropdown` component', () => {
     const wrapper = shallow(<Submenu items={items}>{children}</Submenu>);
+
     expectComponentToBe(wrapper, Dropdown);
   });
 
@@ -30,6 +31,7 @@ describe('<Submenu />', () => {
 
     it('should get the right props by default', () => {
       const wrapper = getSubmenuDropdown();
+
       expectComponentToHaveProps(wrapper, {
         defaultValue: null,
         icon: <Icon name="caret down" size="small" />,
@@ -47,6 +49,7 @@ describe('<Submenu />', () => {
 
     it('should get `props.className` `underlined` if required', () => {
       const wrapper = getSubmenuDropdown({ isTriggerUnderlined: true });
+
       expectComponentToHaveProps(wrapper, {
         className: 'underlined',
       });
@@ -54,6 +57,7 @@ describe('<Submenu />', () => {
 
     it('should get `props.item` `true` if required', () => {
       const wrapper = getSubmenuDropdown({ isMenuItem: true });
+
       expectComponentToHaveProps(wrapper, {
         item: true,
       });
@@ -61,6 +65,7 @@ describe('<Submenu />', () => {
 
     it('should get `props.simple` `true` if required', () => {
       const wrapper = getSubmenuDropdown({ isTriggeredOnHover: true });
+
       expectComponentToHaveProps(wrapper, {
         simple: true,
       });
