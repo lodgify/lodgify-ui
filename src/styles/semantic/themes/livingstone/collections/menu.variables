@@ -9,6 +9,7 @@
 /* Menu */
 @background: transparent;
 @headerMenuHorizontalMargin: 92px;
+@headerMenuMobileHorizontalMargin: @25px;
 
 @footerMenuVerticalPadding: @30px;
 @footerMenuHorizontalPadding: @35px;
@@ -17,6 +18,7 @@
 // Need to use margin rather than padding to implement 'active' state bottom border
 @headerMenuItemHorizontalMargin: @15px;
 @headerMenuItemVerticalPadding: @35px;
+@headerMenuItemMobileVerticalPadding: @15px;
 @headerMenuItemTextColor: @pureWhite;
 
 @footerMenuItemVerticalPadding: @8px;
@@ -106,6 +108,16 @@
 ---------------*/
 
 /* Vertical */
+@verticalMenuInModalWidthOffset: 2 * @textVerticalMenuHorizontalMargin;
+@verticalMenuInModalWidth: ~"calc(100% - @{verticalMenuInModalWidthOffset})";
+
+@verticalMenuInModalItemLineHeight: @30px;
+@verticalMenuInModalItemPaddingLeft: @10px;
+@verticalMenuInModalItemBorderBottom: @1px solid @greyFour;
+
+@verticalMenuInModalAccordionIconMargin: @8px @verticalMenuInModalItemPaddingLeft 0;
+
+@verticalMenuInModalSubItemPaddingLeft: @10px;
 
 /* Secondary */
 
@@ -136,6 +148,10 @@
 /* Labeled Icon */
 
 /* Text */
+@textMenuItemColor: @textColor;
+
+@textVerticalMenuHorizontalMargin: @25px;
+@textVerticalMenuMargin: @15px @textVerticalMenuHorizontalMargin;
 
 /*--------------
    Variations

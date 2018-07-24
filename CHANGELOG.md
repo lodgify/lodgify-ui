@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/lodgify/lodgify-ui/compare/v1.22.0...v1.23.0) (2018-07-24)
+
+
+### Features
+
+* **Header:** add responsive structure and styles ([6b840f0](https://github.com/lodgify/lodgify-ui/commit/6b840f0))
+
 # [1.22.0](https://github.com/lodgify/lodgify-ui/compare/v1.21.0...v1.22.0) (2018-07-23)
 
 
