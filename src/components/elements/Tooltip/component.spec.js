@@ -18,11 +18,13 @@ const getTooltip = () => shallow(<Tooltip content={content} />);
 describe('<Tooltip />', () => {
   it('should render a single Semantic UI `Popup` component', () => {
     const wrapper = getTooltip();
+
     expectComponentToBe(wrapper, Popup);
   });
 
   it('should pass the `Popup` component the right props', () => {
     const wrapper = getTooltip();
+
     expectComponentToHaveProps(wrapper, {
       color: 'grey',
       content,

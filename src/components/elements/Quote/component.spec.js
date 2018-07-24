@@ -30,12 +30,14 @@ const getQuote = () => shallow(<Quote {...props} />);
 describe('<Quote />', () => {
   it('should render a single `blockquote`', () => {
     const wrapper = getQuote();
+
     expectComponentToBe(wrapper, 'blockquote');
   });
 
   describe('the `blockquote` element', () => {
     it('should default to adding a className of `ui quote`', () => {
       const wrapper = getQuote();
+
       expectComponentToHaveProps(wrapper, {
         className: 'ui quote',
       });
@@ -43,6 +45,7 @@ describe('<Quote />', () => {
 
     it('should render the right children', () => {
       const wrapper = getQuote();
+
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
@@ -50,6 +53,7 @@ describe('<Quote />', () => {
   describe('the `Grid` component', () => {
     it('should render a single Lodgify UI `GridColumn` component', () => {
       const wrapper = getQuote().find(Grid);
+
       expectComponentToHaveChildren(wrapper, GridRow, GridRow);
     });
   });
@@ -59,6 +63,7 @@ describe('<Quote />', () => {
       const wrapper = getQuote()
         .find(GridRow)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, GridColumn);
     });
   });
@@ -68,6 +73,7 @@ describe('<Quote />', () => {
       const wrapper = getQuote()
         .find(GridColumn)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
@@ -77,6 +83,7 @@ describe('<Quote />', () => {
       const wrapper = getQuote()
         .find(Paragraph)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, quoteText);
     });
   });
@@ -89,6 +96,7 @@ describe('<Quote />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridRow();
+
       expectComponentToHaveProps(wrapper, {
         horizontalAlignContent: 'right',
       });
@@ -96,6 +104,7 @@ describe('<Quote />', () => {
 
     it('should render a `GridColumn` component', () => {
       const wrapper = getSecondGridRow();
+
       expectComponentToHaveChildren(wrapper, GridColumn);
     });
   });
@@ -105,6 +114,7 @@ describe('<Quote />', () => {
       const wrapper = getQuote()
         .find(GridColumn)
         .at(1);
+
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
@@ -117,6 +127,7 @@ describe('<Quote />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondParagraph();
+
       expectComponentToHaveProps(wrapper, {
         size: 'tiny',
       });
@@ -124,6 +135,7 @@ describe('<Quote />', () => {
 
     it('should have the right children', () => {
       const wrapper = getSecondParagraph();
+
       expectComponentToHaveChildren(
         wrapper,
         getQuoteSource(quoteSource, quoteDateTime)

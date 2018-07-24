@@ -24,12 +24,14 @@ const getModal = props =>
 describe('<Modal />', () => {
   it('should render a single Semantic UI `Modal` component', () => {
     const wrapper = getModal();
+
     expectComponentToBe(wrapper, SemanticModal);
   });
 
   describe('the Semantic UI `Modal` component', () => {
     it('should get the right props', () => {
       const wrapper = getModal();
+
       expectComponentToHaveProps(wrapper, {
         closeIcon: <Icon name="close" />,
         content,
@@ -42,6 +44,7 @@ describe('<Modal />', () => {
     describe('if `props.isFullscreen` is `true`', () => {
       it('should get the right props', () => {
         const wrapper = getModal({ isFullscreen: true });
+
         expectComponentToHaveProps(wrapper, {
           closeIcon: <Icon name="close" />,
           content,

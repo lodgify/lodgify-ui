@@ -19,12 +19,14 @@ const getSingleDatePicker = props => shallow(<SingleDatePicker {...props} />);
 describe('<SingleDatePicker />', () => {
   it('should render a Semantic UI `InputController`', () => {
     const wrapper = getSingleDatePicker();
+
     expectComponentToBe(wrapper, InputController);
   });
 
   describe('the `InputController` component', () => {
     it('should get the right props', () => {
       const wrapper = getSingleDatePicker();
+
       expectComponentToHaveProps(wrapper, {
         error: false,
         inputOnChangeFunctionName: 'onDateChange',
@@ -37,6 +39,7 @@ describe('<SingleDatePicker />', () => {
 
     it('should get the right children', () => {
       const wrapper = getSingleDatePicker();
+
       expectComponentToHaveChildren(wrapper, ReactDatesSingleDatePicker);
     });
   });
@@ -47,6 +50,7 @@ describe('<SingleDatePicker />', () => {
 
     it('should get the right consumer defined props', () => {
       const wrapper = getReactDatesSingleDatePicker();
+
       expectComponentToHaveProps(wrapper, {
         displayFormat: 'DD/MM/YYYY',
         isDayBlocked: Function.prototype,
@@ -57,6 +61,7 @@ describe('<SingleDatePicker />', () => {
 
     it('should get the right controlled props', () => {
       const wrapper = getReactDatesSingleDatePicker();
+
       expectComponentToHaveProps(wrapper, {
         date: null,
         focused: null,
@@ -67,6 +72,7 @@ describe('<SingleDatePicker />', () => {
 
     it('should get the right static custom appearance props', () => {
       const wrapper = getReactDatesSingleDatePicker();
+
       expectComponentToHaveProps(wrapper, {
         customInputIcon: <Icon name="calendar" />,
         daySize: 52,
@@ -82,8 +88,10 @@ describe('<SingleDatePicker />', () => {
     it('should persist the value in component state', () => {
       const now = moment();
       const singleDatePicker = getSingleDatePicker();
+
       singleDatePicker.instance().handleInputControllerChange(undefined, now);
       const actual = singleDatePicker.state();
+
       expect(actual).toEqual(expect.objectContaining({ date: now }));
     });
   });
@@ -92,8 +100,10 @@ describe('<SingleDatePicker />', () => {
     it('should persist the value in component state', () => {
       const value = true;
       const singleDatePicker = getSingleDatePicker();
+
       singleDatePicker.instance().handleFocusChange({ focused: value });
       const actual = singleDatePicker.state();
+
       expect(actual).toEqual(
         expect.objectContaining({
           isFocused: value,
@@ -108,6 +118,7 @@ describe('<SingleDatePicker />', () => {
       const props = { name: 'winnie', onChange: handleChange };
       const newState = { date: moment() };
       const singleDatePicker = getSingleDatePicker(props);
+
       singleDatePicker.setState(newState);
       expect(handleChange).toHaveBeenCalledWith(
         props.name,

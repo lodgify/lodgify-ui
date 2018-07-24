@@ -16,11 +16,13 @@ const getTextInput = () => shallow(<TextInput />);
 describe('<TextInput />', () => {
   it('should render a single `InputController` component', () => {
     const wrapper = getTextInput();
+
     expectComponentToBe(wrapper, InputController);
   });
 
   it('should pass the right `props` to `InputController`', () => {
     const wrapper = getTextInput().find('InputController');
+
     expectComponentToHaveProps(wrapper, {
       error: false,
       isValid: false,
@@ -32,12 +34,14 @@ describe('<TextInput />', () => {
 
   it('should pass an `input` as a child to `InputController`', () => {
     const wrapper = getTextInput().find('InputController');
+
     expectComponentToHaveChildren(wrapper, 'input');
   });
 
   describe('the child `input`', () => {
     it('should get the `TextInput.props.type` as `props.type`', () => {
       const wrapper = getTextInput().find('input');
+
       expectComponentToHaveProps(wrapper, { type: 'text' });
     });
   });

@@ -15,11 +15,13 @@ const getPagination = () => shallow(<Pagination totalPages={5} />);
 describe('<Pagination />', () => {
   it('should render a single Semantic UI `Pagination` component', () => {
     const wrapper = getPagination();
+
     expectComponentToBe(wrapper, SemanticPagination);
   });
 
   it('should pass the right props to the Semantic UI `Pagination` component', () => {
     const wrapper = getPagination();
+
     expectComponentToHaveProps(wrapper, {
       boundaryRange: 10,
       defaultActivePage: 1,

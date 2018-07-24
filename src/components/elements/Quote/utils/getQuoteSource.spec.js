@@ -5,6 +5,7 @@ describe('getQuoteSource', () => {
     const quoteSource = '🚣';
     const quoteDateTime = 'someLabel';
     const actual = getQuoteSource(quoteSource, quoteDateTime);
+
     expect(actual).toBe(`${quoteSource} (${quoteDateTime})`);
   });
 });

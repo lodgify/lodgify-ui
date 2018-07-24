@@ -23,6 +23,7 @@ export class Component extends PureComponent {
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
     const { name, onChange } = this.props;
+
     !isEqual(prevValue, value) && onChange(name, value);
   }
 
@@ -31,12 +32,14 @@ export class Component extends PureComponent {
    */
   handleChange = (name, value) => {
     const { country, phone } = parseValue(value);
+
     this.setState({ country, value: phone });
   };
 
   render() {
     const { error, isValid, label, name } = this.props;
     const { country, value } = this.state;
+
     return (
       <InputController
         error={error}

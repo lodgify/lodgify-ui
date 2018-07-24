@@ -6,6 +6,7 @@ describe('getPropertyDescription', () => {
     const single = 'singleSingle';
     const plural = 'pluralSingle';
     const actual = getPluralString(amount, single, plural);
+
     expect(actual).toBe(`${amount} ${single}`);
   });
 
@@ -14,6 +15,7 @@ describe('getPropertyDescription', () => {
     const single = 'singleSingle';
     const plural = 'pluralSingle';
     const actual = getPluralString(amount, single, plural);
+
     expect(actual).toBe(`${amount} ${plural}`);
   });
 });

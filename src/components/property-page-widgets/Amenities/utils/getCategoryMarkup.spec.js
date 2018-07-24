@@ -32,22 +32,26 @@ const getMarkup = isUserOnMobile =>
 describe('getCategoryMarkup', () => {
   it('should return `GridColumn` component', () => {
     const wrapper = getMarkup();
+
     expectComponentToBe(wrapper, 'GridColumn');
   });
 
   it('should have the right props', () => {
     const wrapper = getMarkup();
+
     expectComponentToHaveProps(wrapper, { width: 4 });
   });
 
   it('should render the right children', () => {
     const wrapper = getMarkup();
+
     expectComponentToHaveChildren(wrapper, Icon, Paragraph);
   });
 
   describe('the `Icon`', () => {
     it('should have the right props', () => {
       const wrapper = getMarkup().find(Icon);
+
       expectComponentToHaveProps(wrapper, {
         isLabelLeft: true,
         labelText: category.name,
@@ -60,6 +64,7 @@ describe('getCategoryMarkup', () => {
   describe('the `Paragraph`', () => {
     it('should render the right children', () => {
       const wrapper = getMarkup().find(Paragraph);
+
       expectComponentToHaveChildren(
         wrapper,
         ...getFormattedAmenityItems(category.items)
@@ -70,6 +75,7 @@ describe('getCategoryMarkup', () => {
   describe('if `isFullWidth === true`', () => {
     it('should have the right props', () => {
       const wrapper = getMarkup(true);
+
       expectComponentToHaveProps(wrapper, { width: 12 });
     });
   });

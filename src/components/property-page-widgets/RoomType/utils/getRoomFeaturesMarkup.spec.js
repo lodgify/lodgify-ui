@@ -27,11 +27,13 @@ describe('`getRoomFeaturesMarkup`', () => {
 
   it('should return a single wrapping `div`', () => {
     const wrapper = getMarkup();
+
     expectComponentToBe(wrapper, 'div');
   });
 
   it('it should have the correct props', () => {
     const wrapper = getList();
+
     expectComponentToHaveProps(wrapper, {
       floated: 'left',
       horizontal: true,
@@ -40,6 +42,7 @@ describe('`getRoomFeaturesMarkup`', () => {
 
   it('it should correctly return the correct children', () => {
     const wrapper = getList();
+
     expectComponentToHaveChildren(
       wrapper,
       ...getArrayOfLengthOfItem(features.length, List.Item)
@@ -51,6 +54,7 @@ describe('`getRoomFeaturesMarkup`', () => {
       const wrapper = getMarkup()
         .find(List.Item)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Icon);
     });
   });
@@ -60,6 +64,7 @@ describe('`getRoomFeaturesMarkup`', () => {
       const wrapper = getMarkup()
         .find(Icon)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         labelText: features[0].labelText,
         name: features[0].iconName,
@@ -73,6 +78,7 @@ describe('`getRoomFeaturesMarkup`', () => {
       const wrapper = getMarkup(true)
         .find(List.Item)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });

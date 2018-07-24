@@ -26,17 +26,20 @@ const getHeader = props =>
 describe('<Header />', () => {
   it('should render a single Semantic UI `Menu` component', () => {
     const wrapper = getHeader();
+
     expectComponentToBe(wrapper, Menu);
   });
 
   describe('the Semantic UI `Menu` component', () => {
     it('should have the right props', () => {
       const wrapper = getHeader();
+
       expectComponentToHaveProps(wrapper, { borderless: true });
     });
 
     it('should render the right children', () => {
       const wrapper = getHeader();
+
       expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Menu);
     });
   });
@@ -46,13 +49,16 @@ describe('<Header />', () => {
       getHeader(props)
         .find(Menu)
         .children(Menu.Item);
+
     it('should have props', () => {
       const wrapper = getFirstMenuItem();
+
       expectComponentToHaveProps(wrapper, { href: '/', link: true });
     });
 
     it('should render a single child', () => {
       const wrapper = getFirstMenuItem();
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
 
@@ -62,6 +68,7 @@ describe('<Header />', () => {
           .find(Menu)
           .children(Menu.Item)
           .find(Heading);
+
         expectComponentToHaveProps(wrapper, {
           children: logoText,
           size: 'small',
@@ -72,6 +79,7 @@ describe('<Header />', () => {
     describe('if `props.logoSrc` is passed', () => {
       it('should render the right children', () => {
         const wrapper = getFirstMenuItem({ logoSrc: 'whatup' });
+
         expectComponentToHaveChildren(wrapper, SemanticImage);
       });
 
@@ -80,6 +88,7 @@ describe('<Header />', () => {
           const wrapper = getFirstMenuItem({ logoSrc: 'duck' }).find(
             SemanticImage
           );
+
           expectComponentToHaveProps(wrapper, {
             alt: logoText,
             src: 'duck',
@@ -97,6 +106,7 @@ describe('<Header />', () => {
       })
         .find(Menu)
         .children(Menu.Menu);
+
       expectComponentToHaveProps(wrapper, { position: 'right' });
     });
 
@@ -119,6 +129,7 @@ describe('<Header />', () => {
       })
         .find(Menu.Menu)
         .children(Menu.Item);
+
       expect(wrapper).toHaveLength(1);
     });
 
@@ -128,6 +139,7 @@ describe('<Header />', () => {
       })
         .find(Button)
         .parent();
+
       expectComponentToBe(wrapper, Menu.Item);
     });
   });
@@ -204,6 +216,7 @@ describe('<Header />', () => {
         })
           .find(Menu.Item)
           .at(2);
+
         expectComponentToHaveChildren(wrapper, Button);
       });
 
@@ -211,6 +224,7 @@ describe('<Header />', () => {
         const wrapper = getHeader({
           primaryCTA,
         }).find(Button);
+
         expectComponentToHaveChildren(wrapper, primaryCTA.text);
       });
     });

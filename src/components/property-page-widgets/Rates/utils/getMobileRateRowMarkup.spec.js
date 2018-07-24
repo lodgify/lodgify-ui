@@ -20,16 +20,19 @@ const getMobileRateRow = () =>
 describe('getMobileRateRowMarkup', () => {
   it('should render a `GridRow` component', () => {
     const wrapper = getMobileRateRow();
+
     expectComponentToBe(wrapper, 'GridRow');
   });
 
   it('should have the right props', () => {
     const wrapper = getMobileRateRow();
+
     expectComponentToHaveProps(wrapper, { columns: 2 });
   });
 
   it('should render the right children', () => {
     const wrapper = getMobileRateRow();
+
     expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
   });
 
@@ -38,13 +41,16 @@ describe('getMobileRateRowMarkup', () => {
       getMobileRateRow()
         .find(GridColumn)
         .first();
+
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, { floated: 'left' });
     });
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
@@ -54,13 +60,16 @@ describe('getMobileRateRowMarkup', () => {
       getMobileRateRow()
         .find(Paragraph)
         .first();
+
     it('should have the right props', () => {
       const wrapper = getParagraph();
+
       expectComponentToHaveProps(wrapper, { weight: 'heavy' });
     });
 
     it('should render the right children', () => {
       const wrapper = getParagraph();
+
       expectComponentToHaveChildren(wrapper, rateHeading);
     });
   });
@@ -70,8 +79,10 @@ describe('getMobileRateRowMarkup', () => {
       getMobileRateRow()
         .find(GridColumn)
         .at(1);
+
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         floated: 'right',
         textAlign: 'right',
@@ -80,6 +91,7 @@ describe('getMobileRateRowMarkup', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveChildren(wrapper, rate);
     });
   });

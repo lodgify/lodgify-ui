@@ -27,23 +27,27 @@ const props = {
 const getAvailability = () => shallow(<Availability {...props} />);
 const getWrappedAvailability = (overrideProps = {}) => {
   const Child = getAvailability().prop('as');
+
   return shallow(<Child {...{ ...props, ...overrideProps }} />);
 };
 
 describe('<Availability />', () => {
   it('should be wrapped in a Semantic UI `Responsive` component', () => {
     const wrapper = getAvailability();
+
     expectComponentToBe(wrapper, Responsive);
   });
 
   describe('the wrapper `Availability` component', () => {
     it('should be a `div`', () => {
       const wrapper = getWrappedAvailability();
+
       expectComponentToBe(wrapper, 'div');
     });
 
     it('should have four children', () => {
       const wrapper = getWrappedAvailability();
+
       expectComponentToHaveChildren(wrapper, Heading, Grid, Card, Grid);
     });
   });
@@ -52,8 +56,10 @@ describe('<Availability />', () => {
     it('should persist the next startDate in component state', () => {
       const wrapper = getWrappedAvailability();
       const startDate = wrapper.state().startDate;
+
       wrapper.instance().handleClickNextMonth();
       const actual = wrapper.state();
+
       expect(actual).toEqual(
         expect.objectContaining({
           startDate: startDate.clone().add(4, 'months'),
@@ -66,8 +72,10 @@ describe('<Availability />', () => {
     it('should persist the next startDate in component state', () => {
       const wrapper = getWrappedAvailability();
       const startDate = wrapper.state().startDate;
+
       wrapper.instance().handleClickPreviousMonth();
       const actual = wrapper.state();
+
       expect(actual).toEqual(
         expect.objectContaining({
           startDate: startDate.clone().subtract(4, 'months'),
@@ -87,6 +95,7 @@ describe('<Availability />', () => {
       const actual = component.instance().renderCalendarDay({
         day: todayMomentObject,
       });
+
       expect(actual.props.modifiers.has('blocked-calendar')).toBe(true);
     });
 
@@ -96,6 +105,7 @@ describe('<Availability />', () => {
       const actual = component.instance().renderCalendarDay({
         day: todayMomentObject,
       });
+
       expect(actual.props.modifiers.has('blocked-calendar')).toBe(false);
     });
 
@@ -109,6 +119,7 @@ describe('<Availability />', () => {
       const actual = component.instance().renderCalendarDay({
         day: todayMomentObject.clone().add(1, 'day'),
       });
+
       expect(actual.props.modifiers.has('blocked-calendar')).toBe(false);
     });
   });
@@ -250,6 +261,7 @@ describe('<Availability />', () => {
         })
           .find(Dropdown)
           .at(0);
+
         wrapper.simulate('change', {});
         expect(onChangeRoomDropdown).toBeCalled();
       });
@@ -257,6 +269,7 @@ describe('<Availability />', () => {
       it('should have `Function.prototype` as the default value for `props.onChangeRoomDropdown`', () => {
         const wrapper = getWrappedAvailability();
         const props = wrapper.instance().props;
+
         expect(props.onChangeRoomDropdown).toBe(Function.prototype);
       });
     });

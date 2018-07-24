@@ -43,6 +43,7 @@ export class Component extends PureComponent {
 
   render = () => {
     const { children, headingText, submitButtonText, actionLink } = this.props;
+
     return (
       <Card className="has-form" fluid>
         {headingText && (

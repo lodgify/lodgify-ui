@@ -26,6 +26,7 @@ export class Component extends PureComponent {
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
     const { name, onChange } = this.props;
+
     prevValue !== value && onChange(name, value);
   }
 
@@ -47,6 +48,7 @@ export class Component extends PureComponent {
     const hasImages = getHasImages(options);
     const adaptedOptions = adaptOptions(options, hasImages);
     const defaultValue = getDefaultValue(adaptedOptions, hasImages, !!label);
+
     return (
       <div
         className={getClassNames('dropdown-container', {

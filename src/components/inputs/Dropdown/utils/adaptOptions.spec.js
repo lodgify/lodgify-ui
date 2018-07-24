@@ -7,6 +7,7 @@ describe('adaptOptions', () => {
     it('should return the `options`', () => {
       const options = [{ some: 'option' }, { no: 'image' }];
       const actual = adaptOptions(options, false);
+
       expect(actual).toBe(options);
     });
   });
@@ -15,6 +16,7 @@ describe('adaptOptions', () => {
     it('should return an array of options', () => {
       const options = [{ image: 'someImage' }, {}];
       const actual = adaptOptions(options, true);
+
       expect(actual).toBeInstanceOf(Array);
     });
 
@@ -22,8 +24,10 @@ describe('adaptOptions', () => {
       it('should be an array', () => {
         const options = [{ image: 'someImage' }, { text: 'someOtherText' }];
         const adaptedOptions = adaptOptions(options, true);
+
         adaptedOptions.forEach(adaptedOption => {
           const actual = adaptedOption.text;
+
           expect(actual).toBeInstanceOf(Array);
         });
       });
@@ -34,6 +38,7 @@ describe('adaptOptions', () => {
         const textIndex0 = adaptedOptions[0].text[0];
         const element = shallow(textIndex0);
         const actual = element.is('img');
+
         expect(actual).toBe(true);
       });
 
@@ -43,6 +48,7 @@ describe('adaptOptions', () => {
         const textIndex0 = adaptedOptions[0].text[0];
         const element = shallow(textIndex0);
         const actual = element.props();
+
         expect(actual).toEqual(
           expect.objectContaining({
             alt: 'someText',
@@ -58,6 +64,7 @@ describe('adaptOptions', () => {
         const textIndex1 = adaptedOptions[0].text[1];
         const element = shallow(textIndex1);
         const actual = element.is('span');
+
         expect(actual).toBe(true);
       });
 
@@ -67,6 +74,7 @@ describe('adaptOptions', () => {
         const textIndex1 = adaptedOptions[0].text[1];
         const element = shallow(textIndex1);
         const actual = element.props();
+
         expect(actual).toEqual(
           expect.objectContaining({
             className: 'text',
@@ -80,6 +88,7 @@ describe('adaptOptions', () => {
         const textIndex1 = adaptedOptions[0].text[1];
         const element = shallow(textIndex1);
         const actual = element.contains(options[0].text);
+
         expect(actual).toBe(true);
       });
     });
@@ -90,8 +99,10 @@ describe('adaptOptions', () => {
         { value: 'self worth' },
       ];
       const adaptedOptions = adaptOptions(options, true);
+
       adaptedOptions.forEach((adaptedOption, index) => {
         const actual = adaptedOption.value;
+
         expect(actual).toBe(options[index].value);
       });
     });
@@ -100,6 +111,7 @@ describe('adaptOptions', () => {
       const options = [{ image: 'someImage' }];
       const adaptedOptions = adaptOptions(options, true);
       const actual = adaptedOptions[0].image;
+
       expect(actual).toBeUndefined();
     });
   });

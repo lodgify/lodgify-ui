@@ -128,8 +128,10 @@ describe('getGroupedNavigationItems', () => {
         after: [{ text: 'Home' }, { subItems: [{ href: '/' }] }],
       },
     ];
+
     testCases.forEach(({ before, after }) => {
       const actual = getGroupedNavigationItems(before);
+
       expect(actual).toEqual(after);
     });
   });

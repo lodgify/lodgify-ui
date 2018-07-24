@@ -26,12 +26,14 @@ const getSleepingArrangements = () =>
 describe('<SleepingArrangements />', () => {
   it('should render a single `div` element', () => {
     const wrapper = getSleepingArrangements();
+
     expectComponentToBe(wrapper, 'div');
   });
 
   describe('the `div` element', () => {
     it('should render the right children', () => {
       const wrapper = getSleepingArrangements();
+
       expectComponentToHaveChildren(wrapper, Heading, Grid);
     });
   });
@@ -39,6 +41,7 @@ describe('<SleepingArrangements />', () => {
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
       const wrapper = getSleepingArrangements().find(Heading);
+
       expectComponentToHaveChildren(wrapper, 'Sleeping arrangements');
     });
   });
@@ -46,6 +49,7 @@ describe('<SleepingArrangements />', () => {
   describe('the `Grid` component', () => {
     it('should render an `IconCard` for each item in `props.sleepingArrangements`', () => {
       const wrapper = getSleepingArrangements().find(GridColumn);
+
       wrapper.forEach((element, index) => {
         expectComponentToHaveChildren(wrapper.at(index), IconCard);
       });
@@ -58,6 +62,7 @@ describe('<SleepingArrangements />', () => {
         .find(IconCard)
         .first();
       const { iconName, label } = sleepingArrangements[0];
+
       expectComponentToHaveProps(wrapper, {
         isLeftAligned: true,
         label: label,

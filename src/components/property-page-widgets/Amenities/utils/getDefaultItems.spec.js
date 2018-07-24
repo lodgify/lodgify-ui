@@ -6,6 +6,7 @@ describe('getDefaultItems', () => {
   describe('by default', () => {
     it('should return the first five items of an array', () => {
       const actual = getDefaultItems(array);
+
       expect(actual).toHaveLength(5);
       expect(actual).toEqual([1, 2, 3, 4, 5]);
     });
@@ -14,6 +15,7 @@ describe('getDefaultItems', () => {
   describe('if `shouldGetThree` is true', () => {
     it('should return the first three items of an array', () => {
       const actual = getDefaultItems(array, true);
+
       expect(actual).toHaveLength(3);
       expect(actual).toEqual([1, 2, 3]);
     });

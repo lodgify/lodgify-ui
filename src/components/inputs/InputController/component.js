@@ -26,6 +26,7 @@ export class Component extends PureComponent {
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
     const { name, onChange } = this.props;
+
     !isEqual(prevValue, value) && onChange(name, value);
   }
 
@@ -34,6 +35,7 @@ export class Component extends PureComponent {
    */
   handleChange = eventOrValue => {
     const value = getValue(eventOrValue);
+
     this.setState({ value });
   };
 
@@ -55,6 +57,7 @@ export class Component extends PureComponent {
       label,
     } = this.props;
     const hasErrorMessage = getHasErrorMessage(error);
+
     return (
       <Input
         className={getClassNames({

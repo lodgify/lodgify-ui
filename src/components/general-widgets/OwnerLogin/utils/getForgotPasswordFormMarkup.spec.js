@@ -10,6 +10,7 @@ describe('getForgotPasswordFormMarkup', () => {
   it('should return the right markup ', () => {
     const someFunction = () => {};
     const actual = getForgotPasswordFormMarkup(someFunction);
+
     expect(actual).toEqual(
       <Modal trigger={<span>Forgot password</span>}>
         <Form
