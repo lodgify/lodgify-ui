@@ -1,0 +1,63 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'third-party-component';
+@element  : 'react-image-gallery';
+
+@import (multiple) '../../theme.config';
+
+/*******************************
+          Image Gallery
+*******************************/
+
+.image-gallery {
+  margin-bottom: @imageGalleryBottomMargin;
+
+  > .image-gallery-content .image-gallery-slide-wrapper {
+
+    > .image-gallery-swipe {
+      border-radius: @imageGalleryImagesBorderRadius;
+      box-shadow: @floatingShadow;
+      overflow: hidden;
+
+      .image-gallery-image {
+        align-items: center;
+        display: flex;
+        max-height: @imageGalleryImageMaxHeight;
+      }
+    }
+
+    // This `span` wraps the left and right nav buttons.
+    > span:first-child {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 @imageGalleryButtonHorizontalPadding;
+      position: absolute;
+      top: @imageGalleryButtonTopPosition;
+      width: 100%;
+      z-index: 1;
+
+      button {
+        height: @imageGalleryButtonDiameter;
+        padding: 0;
+        width: @imageGalleryButtonDiameter;
+      }
+    }
+
+    > .image-gallery-bullets {
+      bottom: @imageGalleryBulletsBottomPosition;
+
+      > .image-gallery-bullets-container button.image-gallery-bullet {
+        background-color: @imageGalleryButtonBackground;
+        border: none;
+        box-shadow: none;
+        margin: 0 0 0 @imageGalleryButtonHorizontalMargin;
+
+        &.active {
+          background-color: @imageGalleryButtonActiveBackground;
+        }
+      }
+    }
+  }
+}
