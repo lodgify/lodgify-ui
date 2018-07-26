@@ -7,6 +7,6 @@
 export const getPlayerCss = (isResponsive, width, height) =>
   width && height && isResponsive
     ? {
-        paddingTop: `${100 / (parseInt(width, 10) / parseInt(height, 10))}%`,
+        paddingTop: `${100 / (width / height)}%`,
       }
     : {};
