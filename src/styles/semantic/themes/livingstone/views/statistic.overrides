@@ -6,16 +6,34 @@
        Element
 --------------------*/
 
-.ui.horizontal.statistic {
+.ui.statistic {
 
-  .value {
-    line-height: @valueLineHeight;
+  &.horizontal {
+  
+    .value {
+      line-height: @valueLineHeight;
+    }
+
+    .label {
+      font-size: @labelSize;
+      line-height: @labelLineHeight;
+      text-transform: @labelTextTransform;
+    }
   }
 
-  .label {
-    font-size: @labelSize;
-    line-height: @labelLineHeight;
-    text-transform: @labelTextTransform;
+  &:not(.horizontal) {
+
+    .value,
+    .label {
+      text-align: center;
+    }
+
+    > .label {
+
+      + .value {
+        margin-top: 10px;
+      }
+    }
   }
 }
 
