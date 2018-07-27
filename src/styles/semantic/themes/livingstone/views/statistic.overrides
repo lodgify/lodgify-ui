@@ -9,7 +9,7 @@
 .ui.statistic {
 
   &.horizontal {
-  
+
     .value {
       line-height: @valueLineHeight;
     }
@@ -31,7 +31,7 @@
     > .label {
 
       + .value {
-        margin-top: 10px;
+        margin-top: @valueMarginTop;
       }
     }
   }

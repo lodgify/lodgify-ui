@@ -71,3 +71,122 @@
   height: 100vh;
   padding: 0;
 }
+
+/* Is Promotion */
+
+.ui.segment.is-promotion {
+  background-color: @promotionBackgroundColor;
+  cursor: pointer;
+
+  .ui.grid.first-grid > .row {
+    overflow: hidden;
+    border-radius: @promotionBorderRadius;
+    padding: 0;
+  }
+
+  &.display-stacked {
+
+    p + .button {
+      float: none;
+    }
+
+    .content-section {
+      min-height: @promotionMinHeight;
+
+      h3 {
+        margin-top: @promotionStackedHeadingMarginTop;
+      }
+    }
+
+    .discount-section {
+      padding: @promotionStackedDiscountPadding;
+      height: auto;
+    }
+  }
+
+  &:not(.display-stacked):hover .content-section {
+
+    p,
+    p + .button,
+    .header,
+    &:before {
+      filter: @promotionHoverBlur;
+      -ms-filter: @promotionHoverBlur;
+      pointer-events: none;
+    }
+
+    .book-now-button-container .button {
+      opacity: 1;
+    }
+  }
+
+  .discount-section p {
+    color: inherit;
+  }
+
+  .content-section {
+    min-height: @promotionMinHeight;
+    position: relative;
+    overflow: hidden;
+
+    > * {
+      position: relative;
+      z-index: @promotionContentLayerZIndex;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: @promotionBackgroundOffset;
+      left: @promotionBackgroundOffset;
+      right: @promotionBackgroundOffset;
+      bottom: @promotionBackgroundOffset;
+      content: "";
+    }
+
+    &:before {
+      background-image: inherit;
+      background-size: cover;
+      background-position: center;
+      z-index: @promotionBeforeLayerZIndex;
+    }
+
+    &:after {
+      background-color: @black;
+      opacity: @promotionOverlayOpacity;
+      z-index: @promotionAfterLayerZIndex;
+    }
+
+    p,
+    .button,
+    &:after,
+    &:before,
+    .ui.header {
+      transition: filter @promotionOverlayTransitionTime, -ms-filter @promotionOverlayTransitionTime;
+    }
+
+    p,
+    .ui.header {
+      color: @pureWhite;
+    }
+
+    p {
+      margin: 0;
+
+      + button {
+        margin-top: @5px;
+      }
+    }
+
+    .book-now-button-container {
+      padding-bottom: 0;
+
+      .button {
+        float: none;
+        margin: 0 auto;
+        opacity: 0;
+        transition: opacity @promotionOverlayTransitionTime;
+      }
+    }
+  }
+}
