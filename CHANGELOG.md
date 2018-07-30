@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/lodgify/lodgify-ui/compare/v1.23.0...v1.23.1) (2018-07-30)
+
+
+### Bug Fixes
+
+* **Jest:** Update config to fix build ([195ed36](https://github.com/lodgify/lodgify-ui/commit/195ed36))
+
 # [1.23.0](https://github.com/lodgify/lodgify-ui/compare/v1.22.0...v1.23.0) (2018-07-24)
 
 

@@ -21,7 +21,11 @@ export const Component = ({ checkInTime, checkOutTime, rules }) => (
       <Heading>House Rules</Heading>
     </GridColumn>
     <GridColumn computer={3} tablet={5}>
-      <List items={rules.map(rule => <Paragraph>{rule}</Paragraph>)} />
+      <List
+        items={rules.map(rule => (
+          <Paragraph>{rule}</Paragraph>
+        ))}
+      />
     </GridColumn>
     <GridColumn computer={9} tablet={7}>
       <Icon
