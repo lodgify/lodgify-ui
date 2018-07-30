@@ -1,3 +1,15 @@
+# [1.24.0](https://github.com/lodgify/lodgify-ui/compare/v1.23.1...v1.24.0) (2018-07-30)
+
+
+### Bug Fixes
+
+* **Statistic:** Update styling of component when displayed vertically ([dd7c379](https://github.com/lodgify/lodgify-ui/commit/dd7c379))
+
+
+### Features
+
+* **Promotion:** add the component, examples and specs ([f79f569](https://github.com/lodgify/lodgify-ui/commit/f79f569))
+
 ## [1.23.1](https://github.com/lodgify/lodgify-ui/compare/v1.23.0...v1.23.1) (2018-07-30)
 
 
