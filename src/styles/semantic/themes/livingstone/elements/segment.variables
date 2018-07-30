@@ -58,3 +58,21 @@
 /* Ordinality */
 
 /* Full bleed */
+
+/* Is Promotion */
+@promotionBackgroundColor: @darkYellow;
+@promotionBorderRadius: @3px;
+@promotionMinHeight: 200px;
+@promotionHoverBlur: blur(3px);
+@promotionBackgroundOffset: (-1 * @5px);
+
+@promotionOverlayTransitionTime: 0.3s;
+@promotionOverlayOpacity: 0.3;
+
+@promotionStackedMinHeight: 275px;
+@promotionStackedHeadingMarginTop: @15px;
+@promotionStackedDiscountPadding: @10px 0 @20px;
+
+@promotionBeforeLayerZIndex: 1;
+@promotionAfterLayerZIndex: 2;
+@promotionContentLayerZIndex: 3;
