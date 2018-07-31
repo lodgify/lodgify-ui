@@ -4,6 +4,7 @@ import getClassNames from 'classnames';
 
 import { Paragraph } from 'typography/Paragraph';
 
+import { ICON_NAMES_LIST } from './constants';
 import { getPath } from './utils/getPath';
 
 /**
@@ -88,58 +89,11 @@ Component.propTypes = {
   labelText: PropTypes.string,
   /** The weight of the label. */
   labelWeight: PropTypes.oneOf(['heavy', 'light']),
-  /** The name of the icon to display. Takes priority over `props.path`. */
-  name: PropTypes.oneOf([
-    'arrow down',
-    'arrow left',
-    'arrow right',
-    'arrow up',
-    'bars',
-    'bathroom',
-    'bedroom door',
-    'bus',
-    'calendar',
-    'caret down',
-    'caret left',
-    'caret right',
-    'caret up',
-    'check in',
-    'check out',
-    'checkmark',
-    'chevron left',
-    'chevron right',
-    'clock',
-    'close',
-    'coffee',
-    'double bed',
-    'facebook',
-    'fire',
-    'google plus',
-    'guests',
-    'home',
-    'info',
-    'instagram',
-    'leaf',
-    'location',
-    'map pin',
-    'paw',
-    'phone',
-    'pinterest',
-    'placeholder',
-    'plane',
-    'question mark',
-    'road',
-    'search',
-    'single bed',
-    'star',
-    'square',
-    'sun',
-    'train',
-    'twitter',
-    'users',
-    'wheelchair',
-    'youtube',
-  ]),
+  /**
+   * The name of the icon to display. Takes priority over `props.path`.
+   * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/tree/production/src/constants/icon-names.js)
+   */
+  name: PropTypes.oneOf(ICON_NAMES_LIST),
   /**
    * A string containing a series of path descriptions. Should fit a 24x24 viewBox.
    * [See MDN for documentation.](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d)
