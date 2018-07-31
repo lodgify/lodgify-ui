@@ -11,7 +11,7 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { InputController } from 'inputs/InputController';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { ComponentWithResponsive as DateRangePicker } from './component';
 
@@ -93,12 +93,12 @@ describe('<DateRangePicker />', () => {
     it('should get the right static custom appearance props', () => {
       const wrapper = getReactDatesDateRangePicker();
       expectComponentToHaveProps(wrapper, {
-        customArrowIcon: <Icon name="arrow right" />,
-        customInputIcon: <Icon name="calendar" />,
+        customArrowIcon: <Icon name={ICON_NAMES.ARROW_RIGHT} />,
+        customInputIcon: <Icon name={ICON_NAMES.CALENDAR} />,
         daySize: 52,
         hideKeyboardShortcutsPanel: true,
-        navNext: <Icon name="arrow right" />,
-        navPrev: <Icon name="arrow left" />,
+        navNext: <Icon name={ICON_NAMES.ARROW_RIGHT} />,
+        navPrev: <Icon name={ICON_NAMES.ARROW_LEFT} />,
         numberOfMonths: ReactDatesDateRangePicker.defaultProps.numberOfMonths,
       });
     });

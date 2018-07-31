@@ -2,7 +2,7 @@
 import React, { Fragment } from 'react';
 import { Form } from 'semantic-ui-react';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 
@@ -37,13 +37,17 @@ export const getFormFieldMarkup = (
     <Fragment>
       {!!isShowingSummary && (
         <Form.Field width={defaultColumnWidth}>
-          <Icon isDisabled labelText="Property Summary" name="home" />
+          <Icon
+            isDisabled
+            labelText="Property Summary"
+            name={ICON_NAMES.HOME}
+          />
         </Form.Field>
       )}
       {!!isShowingLocationDropdown && (
         <Form.Field width={defaultColumnWidth}>
           <Dropdown
-            icon="map pin"
+            icon={ICON_NAMES.MAP_PIN}
             label="Location"
             name="location"
             onChange={onDatePickerChange}
@@ -62,7 +66,7 @@ export const getFormFieldMarkup = (
       </Form.Field>
       <Form.Field width={defaultColumnWidth}>
         <Dropdown
-          icon="users"
+          icon={ICON_NAMES.USERS}
           label="Guests"
           name="guests"
           onChange={onDatePickerChange}

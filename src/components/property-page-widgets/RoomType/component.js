@@ -8,7 +8,7 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
 import { Link } from 'elements/Link';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
@@ -66,7 +66,7 @@ const Component = ({
                       color="yellow"
                       isCircular
                       isColorInverted
-                      name="info"
+                      name={ICON_NAMES.INFO}
                       size="small"
                     />
                   }

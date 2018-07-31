@@ -8,7 +8,7 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { Component as Dropdown } from './component';
 
@@ -40,7 +40,7 @@ describe('<Dropdown />', () => {
       const wrapper = getSemanticDropdown();
       expectComponentToHaveProps(wrapper, {
         defaultValue: null,
-        icon: <Icon name="caret down" />,
+        icon: <Icon name={ICON_NAMES.CARET_DOWN} />,
         onBlur: expect.any(Function),
         onChange: expect.any(Function),
         onClick: expect.any(Function),

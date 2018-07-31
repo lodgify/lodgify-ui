@@ -4,7 +4,7 @@ import { isEqual, some } from 'lodash';
 import { Input } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { ErrorMessage } from '../ErrorMessage';
 
@@ -66,7 +66,7 @@ export class Component extends PureComponent {
         iconPosition={icon && 'left'}
       >
         {hasErrorMessage && <ErrorMessage errorMessage={error} />}
-        {isValid && <Icon color="green" name="checkmark" />}
+        {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
         {React.cloneElement(children, {
           [inputOnChangeFunctionName]: this.handleChange,
           ref: input => (this.htmlInput = input),

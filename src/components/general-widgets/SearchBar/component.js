@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Form, Modal as SemanticModal } from 'semantic-ui-react';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
 import { Modal } from 'elements/Modal';
 import { Button } from 'elements/Button';
@@ -57,14 +57,14 @@ Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
-  modalTrigger: <Icon name="search" />,
+  modalTrigger: <Icon name={ICON_NAMES.SEARCH} />,
   onSubmit: Function.prototype,
   isDisplayedAsModal: false,
   isShowingSummary: false,
   isShowingLocationDropdown: true,
   isSticky: false,
   searchButton: (
-    <Button icon="search" isPositionedRight isRounded>
+    <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
       Search
     </Button>
   ),
