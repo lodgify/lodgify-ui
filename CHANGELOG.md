@@ -1,3 +1,16 @@
+# [1.25.0](https://github.com/lodgify/lodgify-ui/compare/v1.24.0...v1.25.0) (2018-08-01)
+
+
+### Bug Fixes
+
+* **components:** update to use the ICON_NAMES constant ([1e86318](https://github.com/lodgify/lodgify-ui/commit/1e86318))
+* **Slideshow:** update to use icon names constants ([d14f4b5](https://github.com/lodgify/lodgify-ui/commit/d14f4b5))
+
+
+### Features
+
+* **Icon:** add and expose icon name mapping ([c8a39e1](https://github.com/lodgify/lodgify-ui/commit/c8a39e1))
+
 # [1.24.0](https://github.com/lodgify/lodgify-ui/compare/v1.23.1...v1.24.0) (2018-07-30)
 
 
