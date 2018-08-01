@@ -84,24 +84,43 @@ Library icons
 <Divider />
 <Icon labelText="coffee" name="coffee" />
 <Divider />
+<Icon labelText="cooking" name="cooking" />
+<Divider />
+<Icon labelText="credit card" name="credit card" />
+<Divider />
 <Icon labelText="double bed" name="double bed" />
+<Divider />
+<Icon labelText="entertainment" name="entertainment" />
 <Divider />
 <Icon labelText="fire" name="fire" />
 <Divider />
+<Icon labelText="heating" name="heating" />
+<Divider />
 <Icon labelText="home" name="home" />
 <Divider />
+<Icon labelText="laundry" name="laundry" />
+<Divider />
 <Icon labelText="leaf" name="leaf" />
+<Divider />
+<Icon labelText="no children" name="no children" />
+<Divider />
+<Icon labelText="parking" name="parking" />
 <Divider />
 <Icon labelText="paw" name="paw" />
 <Divider />
 <Icon labelText="phone" name="phone" />
 <Divider />
+<Icon labelText="port" name="port" />
+<Divider />
 <Icon labelText="single bed" name="single bed" />
 <Divider />
 <Icon labelText="sun" name="sun" />
 <Divider />
+<Icon labelText="underground" name="underground" />
+<Divider />
 <Icon labelText="wheelchair" name="wheelchair" />
 <Divider />
+<Icon labelText="wifi" name="wifi" />
 
 <Heading size="small">Scheduling</Heading>
 
