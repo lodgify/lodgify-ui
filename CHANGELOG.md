@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/lodgify/lodgify-ui/compare/v1.25.0...v1.26.0) (2018-08-01)
+
+
+### Features
+
+* **Icon:** add extra paths ([c2a13ac](https://github.com/lodgify/lodgify-ui/commit/c2a13ac))
+
 # [1.25.0](https://github.com/lodgify/lodgify-ui/compare/v1.24.0...v1.25.0) (2018-08-01)
 
 
