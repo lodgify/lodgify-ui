@@ -14,7 +14,7 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
 import { Heading } from 'typography/Heading';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
@@ -428,7 +428,7 @@ describe('`RoomType` in mobile view', () => {
             color="yellow"
             isCircular
             isColorInverted
-            name="info"
+            name={ICON_NAMES.INFO}
             size="small"
           />
         ),

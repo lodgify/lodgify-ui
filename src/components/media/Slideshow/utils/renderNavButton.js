@@ -4,13 +4,11 @@ import { Button } from 'semantic-ui-react';
 import { Icon } from 'elements/Icon';
 
 /**
- * Render a left- or right-pointing nav button
- * for use in the slideshow element.
- * @param  {String} leftOrRight
+ * @param  {String} iconName
  * @return {Function}
  */
-export const renderNavButton = leftOrRight => (onClick, disabled) => (
+export const renderNavButton = iconName => (onClick, disabled) => (
   <Button circular content={null} disabled={disabled} onClick={onClick} primary>
-    <Icon isColorInverted name={`chevron ${leftOrRight}`} />
+    <Icon isColorInverted name={iconName} />
   </Button>
 );

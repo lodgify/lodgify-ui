@@ -5,7 +5,7 @@ import { size } from 'lodash';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { SearchBar } from 'general-widgets/SearchBar';
 import { Modal } from 'elements/Modal';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { getLogoMarkup } from './getLogoMarkup';
 import { getLinkMarkup } from './getLinkMarkup';
@@ -39,7 +39,7 @@ export const getMobileMenuMarkup = ({
       />
     </Menu.Item>
     <Menu.Item>
-      <Modal isFullscreen trigger={<Icon name="bars" />}>
+      <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
         <Menu text vertical>
           {getLogoMarkup(logoSrc, logoText)}
           {navigationItems.map(

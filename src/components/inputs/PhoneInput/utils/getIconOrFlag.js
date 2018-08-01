@@ -2,7 +2,7 @@ import React from 'react';
 import { lowerCase } from 'lodash';
 import { Flag } from 'semantic-ui-react';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { VALID_FLAG_NAMES } from './validFlagNames';
 
@@ -17,6 +17,6 @@ export const getIconOrFlag = country => {
   return flagName && VALID_FLAG_NAMES.includes(flagName) ? (
     <Flag name={flagName} />
   ) : (
-    <Icon name="phone" />
+    <Icon name={ICON_NAMES.PHONE} />
   );
 };

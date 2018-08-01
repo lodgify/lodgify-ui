@@ -8,7 +8,7 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { Component as InputController } from './component';
 
@@ -191,7 +191,9 @@ describe('<InputController />', () => {
 
   describe('Variation: icon', () => {
     it('should add `props.iconPosition="left"` to `Input`', () => {
-      const wrapper = getInputController({ icon: <Icon name="phone" /> });
+      const wrapper = getInputController({
+        icon: <Icon name={ICON_NAMES.PHONE} />,
+      });
       expectComponentToHaveProps(wrapper, {
         iconPosition: 'left',
       });
@@ -199,7 +201,7 @@ describe('<InputController />', () => {
 
     it('should render `props.icon` inside `Input`', () => {
       const semanticInput = getInputController({
-        icon: <Icon name="phone" />,
+        icon: <Icon name={ICON_NAMES.PHONE} />,
       }).find('Input');
       const actual = semanticInput.find(Icon).length;
       expect(actual).toBe(1);

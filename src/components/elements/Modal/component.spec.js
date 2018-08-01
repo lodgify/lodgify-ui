@@ -7,7 +7,7 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { Component as Modal } from './component';
 
@@ -31,7 +31,7 @@ describe('<Modal />', () => {
     it('should get the right props', () => {
       const wrapper = getModal();
       expectComponentToHaveProps(wrapper, {
-        closeIcon: <Icon name="close" />,
+        closeIcon: <Icon name={ICON_NAMES.CLOSE} />,
         content,
         dimmer: 'inverted',
         size: 'tiny',
@@ -43,7 +43,7 @@ describe('<Modal />', () => {
       it('should get the right props', () => {
         const wrapper = getModal({ isFullscreen: true });
         expectComponentToHaveProps(wrapper, {
-          closeIcon: <Icon name="close" />,
+          closeIcon: <Icon name={ICON_NAMES.CLOSE} />,
           content,
           dimmer: 'inverted',
           size: 'fullscreen',

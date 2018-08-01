@@ -8,7 +8,7 @@ export { InputGroup } from './components/collections/InputGroup';
 export { Button } from './components/elements/Button';
 export { Divider } from './components/elements/Divider';
 export { GoogleMap } from './components/elements/GoogleMap';
-export { Icon } from './components/elements/Icon';
+export { Icon, ICON_NAMES } from './components/elements/Icon';
 export { IconCard } from './components/elements/IconCard';
 export { Link } from './components/elements/Link';
 export { Modal } from './components/elements/Modal';

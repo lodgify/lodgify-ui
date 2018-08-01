@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
 import { buildPricePerExtraGuestString } from './buildPricePerExtraGuestString';
@@ -26,7 +26,7 @@ export const getRateCategoryHeadingMarkup = ({
     <Paragraph weight="light">
       {dateRange}
       <br />
-      <Icon name="guests" />
+      <Icon name={ICON_NAMES.GUESTS} />
       {numberOfGuests}
       <br />
       {buildPricePerExtraGuestString(costPerExtraGuest)}

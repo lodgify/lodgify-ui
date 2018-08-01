@@ -5,7 +5,7 @@ import { toUpper } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Submenu } from 'elements/Submenu';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Divider } from 'elements/Divider';
 
 import { getAreNavigationItemsGrouped } from './utils/getAreNavigationItemsGrouped';
@@ -64,7 +64,7 @@ export const Component = ({
         />
       </Menu.Item>
       <Menu.Item>
-        <Icon labelText={phoneNumber} name="phone" />
+        <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
       </Menu.Item>
       {!!socialMediaLinks.length && (
         <Menu.Menu position="right">

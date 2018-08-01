@@ -7,7 +7,7 @@ import { GridColumn } from 'layout/GridColumn';
 import { Divider } from 'elements/Divider';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { getCheckInOrOutTimeLabel } from './utils/getCheckInOrOutTimeLabel';
 
@@ -30,12 +30,12 @@ export const Component = ({ checkInTime, checkOutTime, rules }) => (
     <GridColumn computer={9} tablet={7}>
       <Icon
         labelText={getCheckInOrOutTimeLabel(checkInTime)}
-        name="question mark"
+        name={ICON_NAMES.QUESTION_MARK}
       />
       <Divider />
       <Icon
         labelText={getCheckInOrOutTimeLabel(checkOutTime, true)}
-        name="question mark"
+        name={ICON_NAMES.QUESTION_MARK}
       />
     </GridColumn>
   </Grid>

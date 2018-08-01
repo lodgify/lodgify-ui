@@ -7,7 +7,7 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { Component as Submenu } from './component';
 
@@ -32,7 +32,7 @@ describe('<Submenu />', () => {
       const wrapper = getSubmenuDropdown();
       expectComponentToHaveProps(wrapper, {
         defaultValue: null,
-        icon: <Icon name="caret down" size="small" />,
+        icon: <Icon name={ICON_NAMES.CARET_DOWN} size="small" />,
         item: false,
         name: null,
         onChange: expect.any(Function),

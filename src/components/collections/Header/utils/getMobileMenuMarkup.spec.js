@@ -9,7 +9,7 @@ import {
 
 import { SearchBar } from 'general-widgets/SearchBar';
 import { Modal } from 'elements/Modal';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { navigationItems } from '../mock-data/navigationItems';
 
@@ -85,7 +85,7 @@ describe('getMobileMenuMarkup', () => {
       const wrapper = getModal();
       expectComponentToHaveProps(wrapper, {
         isFullscreen: true,
-        trigger: <Icon name="bars" />,
+        trigger: <Icon name={ICON_NAMES.BARS} />,
       });
     });
 
