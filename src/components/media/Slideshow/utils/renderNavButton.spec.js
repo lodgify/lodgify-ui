@@ -1,11 +1,13 @@
 import { Button } from 'semantic-ui-react';
 
+import { ICON_NAMES } from 'elements/Icon';
+
 import { renderNavButton } from './renderNavButton';
 
 const onClick = Function.prototype;
 const disabled = true;
-const getButton = (leftOrRight = 'left') =>
-  renderNavButton(leftOrRight)(onClick, disabled);
+const getButton = (iconName = ICON_NAMES.CHEVRON_LEFT) =>
+  renderNavButton(iconName)(onClick, disabled);
 
 describe('renderNavButton', () => {
   it('should return a function', () => {
@@ -42,7 +44,7 @@ describe('renderNavButton', () => {
       expect(actualProps).toEqual(
         expect.objectContaining({
           isColorInverted: true,
-          name: 'chevron left',
+          name: ICON_NAMES.CHEVRON_LEFT,
         })
       );
     });
