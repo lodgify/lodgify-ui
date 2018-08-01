@@ -12,6 +12,9 @@ import { Link } from 'elements/Link';
 import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 
+import { getEllipsis } from './utils/getEllipsis';
+import { isDescriptionDisplayingWithEllipsis } from './utils/isDescriptionDisplayingWithEllipsis';
+
 /**
  * The standard widget for displaying the description of a property.
  * @returns {Object}
@@ -25,11 +28,18 @@ export const Component = ({
   <Grid stackable>
     <GridColumn computer={7} tablet={12}>
       <Subheading>{propertyType}</Subheading>
-      {getParagraphsFromStrings(descriptionText).map((paragraphText, index) => (
-        <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-          {paragraphText}
-        </Paragraph>
-      ))}
+      {getParagraphsFromStrings(descriptionText).map(
+        (paragraphText, index, descriptionTextArray) => (
+          <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
+            {paragraphText}
+            {isDescriptionDisplayingWithEllipsis(
+              index,
+              descriptionTextArray,
+              extraDescriptionText
+            ) && getEllipsis(paragraphText)}
+          </Paragraph>
+        )
+      )}
       {!!extraDescriptionText && (
         <Modal trigger={<Link>View more</Link>}>
           {getParagraphsFromStrings(descriptionText, extraDescriptionText).map(
