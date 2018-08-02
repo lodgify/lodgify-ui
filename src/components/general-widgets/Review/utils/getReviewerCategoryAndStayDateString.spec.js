@@ -8,6 +8,7 @@ describe('getReviewerCategoryAndStayDateString', () => {
       reviewerCategory,
       reviewerStayDate
     );
+
     expect(actual).toBe(`${reviewerCategory} | stayed in ${reviewerStayDate}`);
   });
 });

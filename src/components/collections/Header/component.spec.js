@@ -22,28 +22,33 @@ const getHeader = () => shallow(<Header {...props} />);
 
 const getWrappedHeader = extraProps => {
   const Child = getHeader().prop('as');
+
   return shallow(<Child isUserOnMobile={false} {...props} {...extraProps} />);
 };
 
 describe('<Header />', () => {
   it('should be wrapped in a Semantic UI `Responsive` component', () => {
     const wrapper = getHeader();
+
     expectComponentToBe(wrapper, Responsive);
   });
 
   describe('the wrapped `Header` component', () => {
     it('should be a single Semantic UI `Menu` component', () => {
       const wrapper = getWrappedHeader();
+
       expectComponentToBe(wrapper, Menu);
     });
 
     it('should have the right props', () => {
       const wrapper = getWrappedHeader();
+
       expectComponentToHaveProps(wrapper, { borderless: true });
     });
 
     it('should render the right children', () => {
       const wrapper = getWrappedHeader();
+
       expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Menu);
     });
   });
@@ -56,6 +61,7 @@ describe('<Header />', () => {
       })
         .find(Menu)
         .children(Menu.Menu);
+
       expectComponentToHaveProps(wrapper, { position: 'right' });
     });
 
@@ -65,6 +71,7 @@ describe('<Header />', () => {
           isUserOnMobile: true,
         });
         const actual = wrapper.find('Modal');
+
         expect(actual).toHaveLength(1);
       });
     });
@@ -75,6 +82,7 @@ describe('<Header />', () => {
           isUserOnMobile: false,
         });
         const actual = wrapper.find('Modal');
+
         expect(actual).toHaveLength(0);
       });
     });
@@ -82,6 +90,7 @@ describe('<Header />', () => {
 
   it('should have `displayName` Header', () => {
     const component = getHeader().prop('as');
+
     expectComponentToHaveDisplayName(component, 'Header');
   });
 });

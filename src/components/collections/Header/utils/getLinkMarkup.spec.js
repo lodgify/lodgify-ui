@@ -17,6 +17,7 @@ const getLinkMarkupAsComponent = activeNavigationItemIndex =>
 describe('getLinkMarkup', () => {
   it('should return a Semantic UI `Menu.Item` link component', () => {
     const wrapper = getLinkMarkupAsComponent();
+
     expectComponentToBe(wrapper, 'a');
   });
 
@@ -26,17 +27,20 @@ describe('getLinkMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getMenuItem();
+
       expectComponentToHaveProps(wrapper, { href });
     });
 
     it('should have the right children', () => {
       const wrapper = getMenuItem();
+
       expectComponentToHaveChildren(wrapper, text);
     });
 
     describe('if `props.index` and `props.activeNavigationItemIndex` are equal', () => {
       it('should get the right props', () => {
         const wrapper = getMenuItem(0);
+
         expectComponentToHaveProps(wrapper, {
           href,
           className: expect.stringContaining('active'),

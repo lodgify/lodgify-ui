@@ -60,6 +60,7 @@ const getReviews = additionalProps =>
 describe('<Reviews />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getReviews();
+
     expectComponentToBe(wrapper, Grid);
   });
 

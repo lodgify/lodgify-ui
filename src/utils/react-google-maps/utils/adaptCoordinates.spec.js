@@ -5,6 +5,7 @@ describe('adaptCoordinates', () => {
     const latitude = 22;
     const longitude = 44;
     const actual = adaptCoordinates(latitude, longitude);
+
     expect(actual).toEqual({
       lat: latitude,
       lng: longitude,

@@ -51,6 +51,7 @@
   "homepage": "https://lodgify.github.io/lodgify-ui/",
   "devDependencies": {
     "@lodgify/enzyme-jest-expect-helpers": "0.0.1",
+    "@lodgify/eslint-config": "^2.0.0",
     "@semantic-release/changelog": "^2.0.2",
     "@semantic-release/git": "^5.0.0",
     "babel-cli": "^6.26.0",
@@ -69,7 +70,6 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
-    "eslint-config-lodgify": "^1.1.0",
     "eslint-config-prettier": "^2.6.0",
     "eslint-import-resolver-babel-module": "^4.0.0",
     "eslint-plugin-babel": "^5.0.0",

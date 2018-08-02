@@ -60,12 +60,14 @@ const getFooter = otherProps =>
 describe('<Footer />', () => {
   it('should render a single `div.is-footer` element', () => {
     const wrapper = getFooter();
+
     expectComponentToBe(wrapper, 'div.is-footer');
   });
 
   describe('the `div.is-footer` element', () => {
     it('should have the right children', () => {
       const wrapper = getFooter();
+
       expectComponentToHaveChildren(wrapper, Menu, Menu);
     });
   });
@@ -78,6 +80,7 @@ describe('<Footer />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstMenu();
+
       expectComponentToHaveProps(wrapper, {
         borderless: true,
         inverted: true,
@@ -87,6 +90,7 @@ describe('<Footer />', () => {
 
     it('should have the right children', () => {
       const wrapper = getFirstMenu();
+
       expectComponentToHaveChildren(wrapper, Menu.Item);
     });
   });
@@ -100,6 +104,7 @@ describe('<Footer />', () => {
     describe('the first `Menu` component', () => {
       it('should have the right children', () => {
         const wrapper = getFirstMenuWithGroupeNavigationItems();
+
         expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Item);
       });
     });
@@ -114,6 +119,7 @@ describe('<Footer />', () => {
             .children(Menu.Item)
             .at(1),
         ];
+
         wrappers.forEach(wrapper => {
           expectComponentToHaveChildren(wrapper, Menu.Menu);
         });
@@ -126,6 +132,7 @@ describe('<Footer />', () => {
           const wrapper = getFirstMenuWithGroupeNavigationItems()
             .find(Menu.Menu)
             .at(0);
+
           expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Item);
         });
       });
@@ -135,6 +142,7 @@ describe('<Footer />', () => {
           const wrapper = getFirstMenuWithGroupeNavigationItems()
             .find(Menu.Menu)
             .at(1);
+
           expectComponentToHaveChildren(wrapper, Menu.Header, Menu.Item);
         });
       });
@@ -149,6 +157,7 @@ describe('<Footer />', () => {
   describe('the second `Menu` component', () => {
     it('should have the right props', () => {
       const wrapper = getSecondMenu();
+
       expectComponentToHaveProps(wrapper, {
         borderless: true,
         color: 'grey',
@@ -159,6 +168,7 @@ describe('<Footer />', () => {
 
     it('should have the right children', () => {
       const wrapper = getSecondMenu();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(3, Menu.Item),
@@ -170,6 +180,7 @@ describe('<Footer />', () => {
     describe('if `socialMediaLinks` has length > 0', () => {
       it('should have the right children', () => {
         const wrapper = getSecondMenu({ socialMediaLinks });
+
         expectComponentToHaveChildren(
           wrapper,
           ...getArrayOfLengthOfItem(3, Menu.Item),
@@ -186,6 +197,7 @@ describe('<Footer />', () => {
       const wrapper = getSecondMenu()
         .children(Menu.Item)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Submenu);
     });
   });
@@ -195,6 +207,7 @@ describe('<Footer />', () => {
       const wrapper = getFooter()
         .find(Submenu)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         items: languageOptions,
         name: 'language',
@@ -209,6 +222,7 @@ describe('<Footer />', () => {
       const wrapper = getSecondMenu()
         .children(Menu.Item)
         .at(1);
+
       expectComponentToHaveChildren(wrapper, Submenu);
     });
   });
@@ -218,6 +232,7 @@ describe('<Footer />', () => {
       const wrapper = getFooter()
         .find(Submenu)
         .at(1);
+
       expectComponentToHaveProps(wrapper, {
         items: currencyOptions,
         name: 'currency',
@@ -232,6 +247,7 @@ describe('<Footer />', () => {
       const wrapper = getSecondMenu()
         .children(Menu.Item)
         .at(2);
+
       expectComponentToHaveChildren(wrapper, Icon);
     });
   });
@@ -241,6 +257,7 @@ describe('<Footer />', () => {
       const wrapper = getFooter()
         .find(Icon)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         labelText: phoneNumber,
         name: 'phone',
@@ -254,11 +271,13 @@ describe('<Footer />', () => {
   describe('the `Menu.Menu` component containing the `socialMediaLinks`', () => {
     it('should have the right props', () => {
       const wrapper = getSocialMediaMenuMenu();
+
       expectComponentToHaveProps(wrapper, { position: 'right' });
     });
 
     it('should have the right children', () => {
       const wrapper = getSocialMediaMenuMenu();
+
       expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Item);
     });
   });
@@ -271,6 +290,7 @@ describe('<Footer />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSocialMediaMenuItem();
+
       expectComponentToHaveProps(wrapper, {
         href: socialMediaLinks[0].href,
         link: true,
@@ -279,6 +299,7 @@ describe('<Footer />', () => {
 
     it('should have the right children', () => {
       const wrapper = getSocialMediaMenuItem();
+
       expectComponentToHaveChildren(wrapper, Icon);
     });
   });
@@ -288,6 +309,7 @@ describe('<Footer />', () => {
       const wrapper = getSocialMediaMenuMenu()
         .find(Icon)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         name: socialMediaLinks[0].iconName,
         path: null,
@@ -298,6 +320,7 @@ describe('<Footer />', () => {
   describe('the `Divider` component', () => {
     it('should have the right props', () => {
       const wrapper = getSecondMenu().find(Divider);
+
       expectComponentToHaveProps(wrapper, {
         hasLine: true,
       });
@@ -309,6 +332,7 @@ describe('<Footer />', () => {
       const wrapper = getSecondMenu()
         .children(Menu.Item)
         .at(3);
+
       expectComponentToHaveChildren(wrapper, propertyAddress);
     });
   });
@@ -321,6 +345,7 @@ describe('<Footer />', () => {
 
     it('should have the right props', () => {
       const wrapper = getCopyrightMenuItem();
+
       expectComponentToHaveProps(wrapper, {
         position: 'right',
       });
@@ -328,6 +353,7 @@ describe('<Footer />', () => {
 
     it('should have the right children', () => {
       const wrapper = getCopyrightMenuItem();
+
       expectComponentToHaveChildren(
         wrapper,
         '© 2018 Feline Vacations. All rights reserved.'

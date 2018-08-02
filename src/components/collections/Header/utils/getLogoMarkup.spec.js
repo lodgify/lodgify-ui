@@ -18,6 +18,7 @@ const getLogoMarkupAsComponent = logoSrc =>
 describe('getLogoMarkup', () => {
   it('should return a Semantic UI `Menu.Item` link component', () => {
     const wrapper = getLogoMarkupAsComponent();
+
     expectComponentToBe(wrapper, 'a');
   });
 
@@ -26,17 +27,20 @@ describe('getLogoMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getMenuItem();
+
       expectComponentToHaveProps(wrapper, { href: '/' });
     });
 
     it('should render a single child', () => {
       const wrapper = getMenuItem();
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
 
     describe('the Heading component', () => {
       it('should have the right props', () => {
         const wrapper = getMenuItem().find(Heading);
+
         expectComponentToHaveProps(wrapper, {
           children: logoText,
           size: 'small',
@@ -49,12 +53,14 @@ describe('getLogoMarkup', () => {
 
       it('should render the right children', () => {
         const wrapper = getMenuItem(logoSrc);
+
         expectComponentToHaveChildren(wrapper, Image);
       });
 
       describe('the `Image`', () => {
         it('should have the right props', () => {
           const wrapper = getMenuItem(logoSrc).find(Image);
+
           expectComponentToHaveProps(wrapper, {
             alt: logoText,
             src: logoSrc,

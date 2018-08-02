@@ -28,23 +28,27 @@ const getSearchBar = overrideProps =>
 describe('<SearchBar />', () => {
   it('should render a single `div` element', () => {
     const wrapper = getSearchBar();
+
     expectComponentToBe(wrapper, 'div');
   });
 
   describe('the `div` element', () => {
     it('should have the right props', () => {
       const wrapper = getSearchBar();
+
       expectComponentToHaveProps(wrapper, { className: '' });
     });
 
     it('should render the right children', () => {
       const wrapper = getSearchBar();
+
       expectComponentToHaveChildren(wrapper, Form);
     });
 
     describe('if `props.isSticky` is true', () => {
       it('should have the right props', () => {
         const wrapper = getSearchBar({ isSticky: true });
+
         expectComponentToHaveProps(wrapper, { className: 'is-sticky' });
       });
     });
@@ -55,6 +59,7 @@ describe('<SearchBar />', () => {
 
     it('should have the right props', () => {
       const wrapper = getForm();
+
       expectComponentToHaveProps(wrapper, {
         onSubmit: expect.any(Function),
       });
@@ -62,6 +67,7 @@ describe('<SearchBar />', () => {
 
     it('should render the right children', () => {
       const wrapper = getForm();
+
       expectComponentToHaveChildren(wrapper, Form.Group);
     });
   });
@@ -71,6 +77,7 @@ describe('<SearchBar />', () => {
 
     it('should render four `Form.Field` components by default', () => {
       const wrapper = getFormGroup().find(Form.Field);
+
       expect(wrapper).toHaveLength(4);
     });
 
@@ -79,6 +86,7 @@ describe('<SearchBar />', () => {
         const wrapper = getFormGroup({ isShowingSummary: true }).find(
           Form.Field
         );
+
         expect(wrapper).toHaveLength(5);
       });
     });
@@ -102,6 +110,7 @@ describe('<SearchBar />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSummaryFormField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'three',
       });
@@ -109,6 +118,7 @@ describe('<SearchBar />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSummaryFormField();
+
       expectComponentToHaveChildren(wrapper, Icon);
     });
   });
@@ -121,6 +131,7 @@ describe('<SearchBar />', () => {
 
     it('should have the right props', () => {
       const wrapper = getLocationDropdownFormField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'three',
       });
@@ -128,6 +139,7 @@ describe('<SearchBar />', () => {
 
     it('should render the right children', () => {
       const wrapper = getLocationDropdownFormField();
+
       expectComponentToHaveChildren(wrapper, Dropdown);
     });
   });
@@ -137,6 +149,7 @@ describe('<SearchBar />', () => {
       const wrapper = getSearchBar()
         .find(Dropdown)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         icon: 'map pin',
         label: 'Location',
@@ -155,6 +168,7 @@ describe('<SearchBar />', () => {
 
     it('should have the right props', () => {
       const wrapper = getDateRangePickerFormField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'seven',
       });
@@ -162,6 +176,7 @@ describe('<SearchBar />', () => {
 
     it('should render a single Lodgify UI `DateRangePicker` component', () => {
       const wrapper = getDateRangePickerFormField();
+
       expectComponentToHaveChildren(wrapper, DateRangePicker);
     });
   });
@@ -169,6 +184,7 @@ describe('<SearchBar />', () => {
   describe('the `DateRangePicker` component', () => {
     it('should have the right props', () => {
       const wrapper = getSearchBar().find(DateRangePicker);
+
       expectComponentToHaveProps(wrapper, {
         endDatePlaceholderText: 'Check-out',
         getIsDayBlocked: expect.any(Function),
@@ -187,6 +203,7 @@ describe('<SearchBar />', () => {
 
     it('should have the right props', () => {
       const wrapper = getGuestsDropdownFormField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'three',
       });
@@ -194,6 +211,7 @@ describe('<SearchBar />', () => {
 
     it('should render a single Lodgify UI `Dropdown` component', () => {
       const wrapper = getGuestsDropdownFormField();
+
       expectComponentToHaveChildren(wrapper, Dropdown);
     });
   });
@@ -203,6 +221,7 @@ describe('<SearchBar />', () => {
       const wrapper = getSearchBar()
         .find(Dropdown)
         .at(1);
+
       expectComponentToHaveProps(wrapper, {
         icon: 'users',
         label: 'Guests',
@@ -221,6 +240,7 @@ describe('<SearchBar />', () => {
 
     it('should have the right props', () => {
       const wrapper = getButtonFormField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'three',
       });
@@ -228,12 +248,14 @@ describe('<SearchBar />', () => {
 
     it('should render the right children by default', () => {
       const wrapper = getButtonFormField();
+
       expectComponentToHaveChildren(wrapper, Button);
     });
 
     describe('if `props.searchButton` is passed', () => {
       it('should render the right children', () => {
         const wrapper = getButtonFormField({ searchButton: 'Yo!' });
+
         expectComponentToHaveChildren(wrapper, 'Yo!');
       });
     });
@@ -244,6 +266,7 @@ describe('<SearchBar />', () => {
 
     it('should have the right props', () => {
       const wrapper = getButton();
+
       expectComponentToHaveProps(wrapper, {
         icon: 'search',
         isRounded: true,
@@ -252,6 +275,7 @@ describe('<SearchBar />', () => {
 
     it('should render the right children', () => {
       const wrapper = getButton();
+
       expectComponentToHaveChildren(wrapper, 'Search');
     });
   });
@@ -262,8 +286,10 @@ describe('<SearchBar />', () => {
       const value = '🍰';
       const wrapper = getSearchBar();
       const input = wrapper.find(Dropdown).first();
+
       input.simulate('change', name, value);
       const actual = wrapper.state(name);
+
       expect(actual).toBe(value);
     });
   });
@@ -277,6 +303,7 @@ describe('<SearchBar />', () => {
         onSubmit,
       });
       const form = wrapper.find(Form);
+
       form.simulate('submit');
       expect(onSubmit).toHaveBeenCalledWith(wrapper.state());
     });
@@ -294,6 +321,7 @@ describe('<SearchBar /> with the modal', () => {
     const wrapper = getSearchBarWithModal({
       modalTrigger: <div />,
     });
+
     expectComponentToHaveProps(wrapper, {
       trigger: <div />,
     });
@@ -301,17 +329,20 @@ describe('<SearchBar /> with the modal', () => {
 
   it('should render inside a modal', () => {
     const wrapper = getSearchBarWithModal();
+
     expectComponentToBe(wrapper, Modal);
   });
 
   it('should have the correct children', () => {
     const wrapper = getSearchBarWithModal();
+
     expectComponentToHaveChildren(wrapper, SemanticModal.Content);
   });
 
   describe('The Modal.Content', () => {
     it('should have the correct children', () => {
       const wrapper = getSearchBarWithModal().find(SemanticModal.Content);
+
       expectComponentToHaveChildren(wrapper, Heading, Form);
     });
   });
@@ -321,6 +352,7 @@ describe('<SearchBar /> with the modal', () => {
 
     it('should have the correct props', () => {
       const wrapper = getModalHeading();
+
       expectComponentToHaveProps(wrapper, {
         size: 'small',
       });
@@ -328,6 +360,7 @@ describe('<SearchBar /> with the modal', () => {
 
     it('should have the text', () => {
       const wrapper = getModalHeading();
+
       expectComponentToHaveChildren(wrapper, 'Check our availability');
     });
   });
@@ -337,6 +370,7 @@ describe('<SearchBar /> with the modal', () => {
 
     it('should have the correct props', () => {
       const wrapper = getModalForm();
+
       expectComponentToHaveProps(wrapper, {
         as: 'form',
       });
@@ -344,11 +378,13 @@ describe('<SearchBar /> with the modal', () => {
 
     it('should have the correct children', () => {
       const wrapper = getModalForm();
+
       expectComponentToHaveChildren(wrapper, React.Fragment);
     });
 
     it('should have the 4 form fields', () => {
       const wrapper = getModalForm().find(Form.Field);
+
       expect(wrapper).toHaveLength(4);
     });
   });

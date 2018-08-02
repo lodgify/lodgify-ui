@@ -38,6 +38,7 @@ const getMarkup = overrideProps =>
 describe('getFormFieldMarkup', () => {
   it('should return 5 `Form.Field`', () => {
     const wrapper = getMarkup().find(Form.Field);
+
     expect(wrapper).toHaveLength(5);
   });
 
@@ -49,12 +50,14 @@ describe('getFormFieldMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'three',
       });
     });
     it('should have the correct children', () => {
       const wrapper = getField();
+
       expectComponentToHaveChildren(wrapper, Icon);
     });
   });
@@ -64,6 +67,7 @@ describe('getFormFieldMarkup', () => {
       const wrapper = getMarkup()
         .find(Icon)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         name: 'home',
         labelText: 'Property Summary',
@@ -79,12 +83,14 @@ describe('getFormFieldMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'three',
       });
     });
     it('should have the correct children', () => {
       const wrapper = getField();
+
       expectComponentToHaveChildren(wrapper, Dropdown);
     });
   });
@@ -107,14 +113,17 @@ describe('getFormFieldMarkup', () => {
       getMarkup()
         .find(Form.Field)
         .at(2);
+
     it('should have the right props', () => {
       const wrapper = getField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'seven',
       });
     });
     it('should have the correct children', () => {
       const wrapper = getField();
+
       expectComponentToHaveChildren(wrapper, DateRangePicker);
     });
   });
@@ -136,14 +145,17 @@ describe('getFormFieldMarkup', () => {
       getMarkup()
         .find(Form.Field)
         .at(3);
+
     it('should have the right props', () => {
       const wrapper = getField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'three',
       });
     });
     it('should have the correct children', () => {
       const wrapper = getField();
+
       expectComponentToHaveChildren(wrapper, Dropdown);
     });
   });
@@ -165,14 +177,17 @@ describe('getFormFieldMarkup', () => {
       getMarkup()
         .find(Form.Field)
         .at(4);
+
     it('should have the right props', () => {
       const wrapper = getField();
+
       expectComponentToHaveProps(wrapper, {
         width: 'three',
       });
     });
     it('should have the correct children', () => {
       const wrapper = getField();
+
       expectComponentToHaveChildren(wrapper, 'div');
     });
   });

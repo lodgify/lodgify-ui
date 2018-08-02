@@ -13,6 +13,7 @@ import { Component as RadioButton } from './component';
 describe('<RadioButton />', () => {
   it('should render a single UI Checkbox component', () => {
     const wrapper = shallow(<RadioButton />);
+
     expectComponentToBe(wrapper, Checkbox);
   });
 
@@ -26,6 +27,7 @@ describe('<RadioButton />', () => {
     };
     const component = shallow(<RadioButton {...PROPS} label={LABEL_TEXT} />);
     const wrapper = component.find(Checkbox);
+
     expectComponentToHaveProps(wrapper, {
       isRadioButton: true,
       ...PROPS,

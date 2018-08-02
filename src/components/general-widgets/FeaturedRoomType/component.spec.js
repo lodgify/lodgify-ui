@@ -29,18 +29,22 @@ const getFeaturedRoomType = () => shallow(<FeaturedRoomType {...props} />);
 describe('<FeaturedRoomType />', () => {
   it('should render a single Semantic UI `Card` component', () => {
     const wrapper = getFeaturedRoomType();
+
     expectComponentToBe(wrapper, Card);
   });
 
   describe('the `Card` component', () => {
     const getCard = () => getFeaturedRoomType().find(Card);
+
     it('should have the right props', () => {
       const wrapper = getCard();
+
       expectComponentToHaveProps(wrapper, { href: props.roomTypeUrl });
     });
 
     it('should render the right children', () => {
       const wrapper = getCard();
+
       expectComponentToHaveChildren(wrapper, Image, Card.Content);
     });
   });
@@ -74,6 +78,7 @@ describe('<FeaturedRoomType />', () => {
   describe('the `Card.Header` component', () => {
     it('should have the right `children`', () => {
       const wrapper = getFeaturedRoomType().find(Card.Header);
+
       expectComponentToHaveChildren(wrapper, props.roomTypeName);
     });
   });
@@ -83,6 +88,7 @@ describe('<FeaturedRoomType />', () => {
       const wrapper = getFeaturedRoomType()
         .find(Card.Description)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, props.locationName);
     });
   });
@@ -92,6 +98,7 @@ describe('<FeaturedRoomType />', () => {
       const wrapper = getFeaturedRoomType()
         .find(Card.Description)
         .at(1);
+
       expectComponentToHaveChildren(
         wrapper,
         getRoomTypeDescription(props.guestsNumber, props.bedsNumber)
@@ -113,19 +120,23 @@ describe('<FeaturedRoomType />', () => {
   describe('the span', () => {
     it('should have the right children', () => {
       const wrapper = getFeaturedRoomType().find('span');
+
       expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
   });
 
   describe('the `Heading` component', () => {
     const getHeading = () => getFeaturedRoomType().find(Heading);
+
     it('should have the right props', () => {
       const wrapper = getHeading();
+
       expectComponentToHaveProps(wrapper, { size: 'medium' });
     });
 
     it('should have the right children', () => {
       const wrapper = getHeading();
+
       expectComponentToHaveChildren(wrapper, props.nightPrice);
     });
   });

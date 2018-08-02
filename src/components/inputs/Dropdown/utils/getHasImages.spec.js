@@ -7,12 +7,14 @@ describe('getHasImages', () => {
       { value: 'secondValue' },
     ];
     const actual = getHasImages(options);
+
     expect(actual).toBe(true);
   });
 
   it('should return `false` if object doesnt have `image` property', () => {
     const options = [{ value: 'firstYoValue' }, { value: 'secondYoValue' }];
     const actual = getHasImages(options);
+
     expect(actual).toBe(false);
   });
 });

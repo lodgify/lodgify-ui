@@ -70,28 +70,33 @@ const getRoomType = extraProps =>
   shallow(<RoomType {...props} {...extraProps} />);
 const getWrappedRoomType = extraProps => {
   const Child = getRoomType().prop('as');
+
   return shallow(<Child {...props} {...extraProps} />);
 };
 
 describe('<RoomType />', () => {
   it('should be wrapped in a Semantic UI `Responsive` component', () => {
     const wrapper = getRoomType();
+
     expectComponentToBe(wrapper, Responsive);
   });
 
   describe('the wrapper `RoomType` component', () => {
     it('should be a Semantic UI `Card`', () => {
       const wrapper = getWrappedRoomType();
+
       expectComponentToBe(wrapper, Card);
     });
 
     it('should have the right props', () => {
       const wrapper = getWrappedRoomType();
+
       expectComponentToHaveProps(wrapper, { fluid: true });
     });
 
     it('should have one child', () => {
       const wrapper = getWrappedRoomType();
+
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
@@ -101,6 +106,7 @@ describe('<RoomType />', () => {
       const wrapper = getWrappedRoomType()
         .find(Grid)
         .first();
+
       expectComponentToHaveChildren(wrapper, GridRow);
     });
   });
@@ -113,6 +119,7 @@ describe('<RoomType />', () => {
 
     it('should have the right children', () => {
       const wrapper = getFirstGridRow();
+
       expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
     });
   });
@@ -125,11 +132,13 @@ describe('<RoomType />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(wrapper, Slideshow);
     });
 
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         computer: 4,
         mobile: 12,
@@ -143,6 +152,7 @@ describe('<RoomType />', () => {
       const wrapper = getWrappedRoomType()
         .find(Slideshow)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         hasShadow: false,
         images: props.slideShowImages,
@@ -161,6 +171,7 @@ describe('<RoomType />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         computer: 8,
         mobile: 12,
@@ -169,6 +180,7 @@ describe('<RoomType />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
@@ -181,6 +193,7 @@ describe('<RoomType />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGrid();
+
       expectComponentToHaveProps(wrapper, {
         padded: true,
       });
@@ -188,6 +201,7 @@ describe('<RoomType />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGrid();
+
       expectComponentToHaveChildren(
         wrapper,
         GridColumn,
@@ -206,6 +220,7 @@ describe('<RoomType />', () => {
 
     it('should have the right props', () => {
       const wrapper = getThirdGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         computer: 12,
         floated: 'left',
@@ -215,6 +230,7 @@ describe('<RoomType />', () => {
 
     it('should render the right children', () => {
       const wrapper = getThirdGridColumn();
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
   });
@@ -224,6 +240,7 @@ describe('<RoomType />', () => {
       const wrapper = getWrappedRoomType()
         .find(Heading)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, props.name);
     });
   });
@@ -236,6 +253,7 @@ describe('<RoomType />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFourthGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         only: 'mobile',
         textAlign: 'right',
@@ -246,6 +264,7 @@ describe('<RoomType />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFourthGridColumn();
+
       expectComponentToHaveChildren(wrapper, Modal);
     });
   });
@@ -255,6 +274,7 @@ describe('<RoomType />', () => {
       const wrapper = getWrappedRoomType()
         .find(GridRow)
         .at(1);
+
       expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
     });
   });
@@ -267,6 +287,7 @@ describe('<RoomType />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFifthGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         only: 'tablet computer',
         verticalAlignContent: 'bottom',
@@ -276,6 +297,7 @@ describe('<RoomType />', () => {
 
     it('should have the right children', () => {
       const wrapper = getFifthGridColumn();
+
       expectComponentToHaveChildren(wrapper, Modal);
     });
   });
@@ -285,6 +307,7 @@ describe('<RoomType />', () => {
       const wrapper = getWrappedRoomType()
         .find(Modal)
         .at(1);
+
       expectComponentToHaveProps(wrapper, { trigger: <Link>More Info</Link> });
     });
   });
@@ -297,11 +320,13 @@ describe('<RoomType />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSixthGridColumn();
+
       expectComponentToHaveProps(wrapper, { textAlign: 'right' });
     });
 
     it('should render the right children', () => {
       const wrapper = getSixthGridColumn();
+
       expectComponentToHaveChildren(
         wrapper,
         Card.Description,
@@ -316,6 +341,7 @@ describe('<RoomType />', () => {
           .find(Card.Description)
           .at(0)
           .parent();
+
         expectComponentToHaveProps(wrapper, { textAlign: 'left' });
       });
     });
@@ -326,6 +352,7 @@ describe('<RoomType />', () => {
       const wrapper = getWrappedRoomType()
         .find(Card.Description)
         .children();
+
       expectComponentToBe(wrapper, 'span');
     });
   });
@@ -333,6 +360,7 @@ describe('<RoomType />', () => {
   describe('the `span`', () => {
     it('should have the right children', () => {
       const wrapper = getWrappedRoomType().find('span');
+
       expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
   });
@@ -342,13 +370,16 @@ describe('<RoomType />', () => {
       getWrappedRoomType()
         .find(Heading)
         .at(3);
+
     it('should have the right props', () => {
       const wrapper = getSecondHeading();
+
       expectComponentToHaveProps(wrapper, { size: 'medium' });
     });
 
     it('should have the right children', () => {
       const wrapper = getSecondHeading();
+
       expectComponentToHaveChildren(wrapper, props.nightPrice);
     });
   });
@@ -358,6 +389,7 @@ describe('<RoomType />', () => {
       const wrapper = getWrappedRoomType()
         .find(ShowOnMobile)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Divider);
     });
   });
@@ -370,6 +402,7 @@ describe('<RoomType />', () => {
 
     it('should have the right props', () => {
       const wrapper = getButton();
+
       expectComponentToHaveProps(wrapper, {
         isPositionedRight: true,
         isRounded: true,
@@ -379,12 +412,14 @@ describe('<RoomType />', () => {
 
     it('should render the right children', () => {
       const wrapper = getButton();
+
       expectComponentToHaveChildren(wrapper, 'Check Availability');
     });
   });
 
   it('should have displayName `RoomType`', () => {
     const component = getRoomType().prop('as');
+
     expectComponentToHaveDisplayName(component, 'RoomType');
   });
 });
@@ -398,11 +433,13 @@ describe('`RoomType` in mobile view', () => {
   describe('`the fourth `GridColumn`', () => {
     it('should have the right props', () => {
       const wrapper = getMobileFourthGrid();
+
       expectComponentToHaveProps(wrapper, { verticalAlignContent: 'middle' });
     });
 
     it('should have the right children', () => {
       const wrapper = getMobileFourthGrid();
+
       expectComponentToHaveChildren(wrapper, Modal);
     });
   });
@@ -412,6 +449,7 @@ describe('`RoomType` in mobile view', () => {
       const wrapper = getWrappedRoomType({ isUserOnMobile: true })
         .find(Modal)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         trigger: (
           <Icon
@@ -431,6 +469,7 @@ describe('`RoomType` in mobile view', () => {
       const wrapper = getWrappedRoomType({ isUserOnMobile: true })
         .find(Button)
         .at(2);
+
       expectComponentToHaveProps(wrapper, { isPositionedRight: false });
     });
   });

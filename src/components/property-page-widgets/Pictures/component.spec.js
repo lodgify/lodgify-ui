@@ -24,12 +24,14 @@ const getPictures = () => shallow(<Pictures pictures={pictures} />);
 describe('<Pictures />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getPictures();
+
     expectComponentToBe(wrapper, Grid);
   });
 
   describe('the `Grid` component', () => {
     it('should render a `GridColumn` for each item in `props.pictures` plus one for the Link', () => {
       const wrapper = getPictures();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(7, GridColumn)
@@ -45,6 +47,7 @@ describe('<Pictures />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         width: 12,
       });
@@ -52,6 +55,7 @@ describe('<Pictures />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
   });
@@ -59,6 +63,7 @@ describe('<Pictures />', () => {
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
       const wrapper = getPictures().find(Heading);
+
       expectComponentToHaveChildren(wrapper, 'Property pictures');
     });
   });
@@ -71,6 +76,7 @@ describe('<Pictures />', () => {
 
     it('should get the right props', () => {
       const wrapper = getGridColumnInArray();
+
       expectComponentToHaveProps(wrapper, {
         width: 4,
       });
@@ -78,6 +84,7 @@ describe('<Pictures />', () => {
 
     it('should render the right children', () => {
       const wrapper = getGridColumnInArray();
+
       expectComponentToHaveChildren(wrapper, ShowOnDesktop, ShowOnMobile);
     });
   });
@@ -87,8 +94,10 @@ describe('<Pictures />', () => {
       getPictures()
         .find(ShowOnDesktop)
         .at(0);
+
     it('should render the right children', () => {
       const wrapper = getShowOnDesktopInArray();
+
       expectComponentToHaveChildren(wrapper, Thumbnail);
     });
   });
@@ -99,6 +108,7 @@ describe('<Pictures />', () => {
         .find(Thumbnail)
         .at(0);
       const { imageUrl, label } = pictures[0];
+
       expectComponentToHaveProps(wrapper, {
         imageUrl,
         label,
@@ -112,8 +122,10 @@ describe('<Pictures />', () => {
       getPictures()
         .find(ShowOnMobile)
         .at(0);
+
     it('should render the right children', () => {
       const wrapper = getShowOnMobileInArray();
+
       expectComponentToHaveChildren(wrapper, Thumbnail);
     });
   });
@@ -124,6 +136,7 @@ describe('<Pictures />', () => {
         .find(Thumbnail)
         .at(1);
       const { imageUrl, label } = pictures[0];
+
       expectComponentToHaveProps(wrapper, {
         imageUrl,
         label,
@@ -142,6 +155,7 @@ describe('<Pictures />', () => {
 
     it('should get the right props', () => {
       const wrapper = getGridColumnWithLink();
+
       expectComponentToHaveProps(wrapper, {
         width: 12,
       });
@@ -149,6 +163,7 @@ describe('<Pictures />', () => {
 
     it('should render the right children', () => {
       const wrapper = getGridColumnWithLink();
+
       expectComponentToHaveChildren(wrapper, Link);
     });
   });
@@ -156,6 +171,7 @@ describe('<Pictures />', () => {
   describe('the `Link` component', () => {
     it('should render the right children', () => {
       const wrapper = getPictures().find(Link);
+
       expectComponentToHaveChildren(wrapper, 'Explore all pictures');
     });
   });

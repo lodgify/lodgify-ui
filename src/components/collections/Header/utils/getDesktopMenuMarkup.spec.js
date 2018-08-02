@@ -35,11 +35,13 @@ const getChildOfFragment = (index, extraProps) =>
 describe('getDesktopMenuMarkup', () => {
   it('should render the return value of `getLinkMarkup` as the first child of the fragment', () => {
     const wrapper = getChildOfFragment(0);
+
     expectComponentToBe(wrapper, Menu.Item);
   });
 
   it('should render a Lodgify UI `Submenu` as the second child of the fragment', () => {
     const wrapper = getChildOfFragment(1);
+
     expectComponentToBe(wrapper, Submenu);
   });
 
@@ -74,6 +76,7 @@ describe('getDesktopMenuMarkup', () => {
       const wrapper = getChildOfFragment(2, {
         primaryCTA,
       });
+
       expectComponentToBe(wrapper, Menu.Item);
     });
 
@@ -95,6 +98,7 @@ describe('getDesktopMenuMarkup', () => {
           const wrapper = getChildOfFragment(2, {
             primaryCTA,
           });
+
           expectComponentToHaveChildren(wrapper, Button);
         });
 
@@ -102,6 +106,7 @@ describe('getDesktopMenuMarkup', () => {
           const wrapper = getChildOfFragment(2, {
             primaryCTA,
           }).find(Button);
+
           expectComponentToHaveChildren(wrapper, primaryCTA.text);
         });
       });

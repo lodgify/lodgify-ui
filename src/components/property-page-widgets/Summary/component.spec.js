@@ -26,17 +26,20 @@ const getSummary = () => shallow(<Summary {...props} />);
 describe('<Summary />', () => {
   it('should render a single Semantic UI `Segment.Group` component', () => {
     const wrapper = getSummary();
+
     expectComponentToBe(wrapper, Segment.Group);
   });
 
   describe('the first `Segment.Group` component', () => {
     it('should have the right props', () => {
       const wrapper = getSummary();
+
       expectComponentToHaveProps(wrapper, { compact: true });
     });
 
     it('should render the right children', () => {
       const wrapper = getSummary();
+
       expectComponentToHaveChildren(wrapper, Segment, Segment.Group);
     });
   });
@@ -46,8 +49,10 @@ describe('<Summary />', () => {
       getSummary()
         .find(Segment)
         .first();
+
     it('should render the right children', () => {
       const wrapper = getFirstSegment();
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
   });
@@ -57,6 +62,7 @@ describe('<Summary />', () => {
       const wrapper = getSummary()
         .find(Heading)
         .first();
+
       expectComponentToHaveChildren(wrapper, props.propertyName);
     });
   });
@@ -69,6 +75,7 @@ describe('<Summary />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondSegmentGroup();
+
       expectComponentToHaveProps(wrapper, { horizontal: true });
     });
 
@@ -87,8 +94,10 @@ describe('<Summary />', () => {
       getSummary()
         .find(Segment)
         .at(1);
+
     it('should render the right `children`', () => {
       const wrapper = getSecondSegment();
+
       expectComponentToHaveChildren(wrapper, props.locationName, Icon);
     });
   });
@@ -98,8 +107,10 @@ describe('<Summary />', () => {
       getSummary()
         .find(Icon)
         .at(0);
+
     it('should have the right props', () => {
       const wrapper = getFirstIcon();
+
       expectComponentToHaveProps(wrapper, {
         color: 'yellow',
         name: 'map pin',
@@ -116,6 +127,7 @@ describe('<Summary />', () => {
 
     it('should have the right children', () => {
       const wrapper = getThirdSegment();
+
       expectComponentToHaveChildren(
         wrapper,
         props.ratingNumber.toString(),
@@ -127,6 +139,7 @@ describe('<Summary />', () => {
   describe('the `Rating` component', () => {
     it('should have the right props', () => {
       const wrapper = getSummary().find(Rating);
+
       expectComponentToHaveProps(wrapper, {
         disabled: true,
         maxRating: 5,
@@ -142,6 +155,7 @@ describe('<Summary />', () => {
         .find(Segment)
         .at(3)
         .children();
+
       expectComponentToBe(wrapper, 'span');
     });
   });
@@ -149,6 +163,7 @@ describe('<Summary />', () => {
   describe('the `span`', () => {
     it('should have the right children', () => {
       const wrapper = getSummary().find('span');
+
       expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
   });
@@ -158,13 +173,16 @@ describe('<Summary />', () => {
       getSummary()
         .find(Heading)
         .at(1);
+
     it('should have the right props', () => {
       const wrapper = getLastHeading();
+
       expectComponentToHaveProps(wrapper, { size: 'small' });
     });
 
     it('should have the right children', () => {
       const wrapper = getLastHeading();
+
       expectComponentToHaveChildren(wrapper, props.nightPrice);
     });
   });

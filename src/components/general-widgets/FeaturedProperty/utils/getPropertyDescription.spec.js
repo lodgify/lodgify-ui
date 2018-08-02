@@ -5,6 +5,7 @@ describe('getPropertyDescription', () => {
     const guestsNumber = 10;
     const bedroomsNumber = 31;
     const actual = getPropertyDescription(guestsNumber, bedroomsNumber);
+
     expect(actual).toBe(
       `Guests: ${guestsNumber} | Bedrooms: ${bedroomsNumber}`
     );
@@ -15,6 +16,7 @@ describe('getPropertyDescription', () => {
       const guestsNumber = 10;
       const bedroomsNumber = null;
       const actual = getPropertyDescription(guestsNumber, bedroomsNumber);
+
       expect(actual).toBe(`Guests: ${guestsNumber}`);
     });
   });

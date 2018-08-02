@@ -23,12 +23,14 @@ const getRateHeading = () => shallow(getRateCategoryHeadingMarkup(rate));
 describe('getRateCategoryHeadingMarkup', () => {
   it('should render a single `div` element', () => {
     const wrapper = getRateHeading();
+
     expectComponentToBe(wrapper, 'div');
   });
 
   describe('the single `div` element', () => {
     it('should render the right children', () => {
       const wrapper = getRateHeading();
+
       expectComponentToHaveChildren(wrapper, Paragraph, Paragraph);
     });
   });
@@ -38,13 +40,16 @@ describe('getRateCategoryHeadingMarkup', () => {
       getRateHeading()
         .find(Paragraph)
         .first();
+
     it('should have the right props', () => {
       const wrapper = getFirstParagraph();
+
       expectComponentToHaveProps(wrapper, { weight: 'heavy' });
     });
 
     it('should render the right children', () => {
       const wrapper = getFirstParagraph();
+
       expectComponentToHaveChildren(wrapper, rate.name);
     });
   });
@@ -54,14 +59,17 @@ describe('getRateCategoryHeadingMarkup', () => {
       getRateHeading()
         .find(Paragraph)
         .at(1);
+
     it('should have the right props', () => {
       const wrapper = getSecondParagraph();
+
       expectComponentToHaveProps(wrapper, { weight: 'light' });
     });
 
     it('should render the right children', () => {
       const { dateRange, numberOfGuests, costPerExtraGuest } = rate;
       const wrapper = getSecondParagraph();
+
       expectComponentToHaveChildren(
         wrapper,
         dateRange,
@@ -77,6 +85,7 @@ describe('getRateCategoryHeadingMarkup', () => {
   describe('the `Icon` component', () => {
     it('should have the right props', () => {
       const wrapper = getRateHeading().find(Icon);
+
       expectComponentToHaveProps(wrapper, { name: 'guests' });
     });
   });

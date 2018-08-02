@@ -64,12 +64,14 @@ const getForm = () => getCallMeBack().find(Form);
 describe('<CallMeBack />', () => {
   it('should render a single Lodgify UI `Form` component', () => {
     const wrapper = getCallMeBack();
+
     expectComponentToBe(wrapper, Form);
   });
 
   describe('the `Form` component', () => {
     it('should have the right props', () => {
       const wrapper = getForm();
+
       expectComponentToHaveProps(wrapper, {
         headingText: 'Call me back',
         onSubmit: Function.prototype,
@@ -79,6 +81,7 @@ describe('<CallMeBack />', () => {
 
     it('should render the right children', () => {
       const wrapper = getForm();
+
       expectComponentToHaveChildren(
         wrapper,
         InputGroup,
@@ -95,6 +98,7 @@ describe('<CallMeBack />', () => {
       const wrapper = getForm()
         .find(InputGroup)
         .first();
+
       expectComponentToHaveChildren(wrapper, TextInput, PhoneInput);
     });
   });
@@ -104,6 +108,7 @@ describe('<CallMeBack />', () => {
       const wrapper = getCallMeBack()
         .find(InputGroup)
         .find(TextInput);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Name',
         name: 'name',
@@ -114,6 +119,7 @@ describe('<CallMeBack />', () => {
   describe('the Phone `PhoneInput`', () => {
     it('should have the right props', () => {
       const wrapper = getCallMeBack().find(PhoneInput);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Phone',
         name: 'phone',
@@ -126,6 +132,7 @@ describe('<CallMeBack />', () => {
       const wrapper = getForm()
         .find(TextInput)
         .at(1);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Email',
         name: 'email',
@@ -138,6 +145,7 @@ describe('<CallMeBack />', () => {
       const wrapper = getForm()
         .find(InputGroup)
         .at(1);
+
       expectComponentToHaveChildren(wrapper, SingleDatePicker, Dropdown);
     });
   });
@@ -145,6 +153,7 @@ describe('<CallMeBack />', () => {
   describe('the `SingleDatePicker`', () => {
     it('should have the right props', () => {
       const wrapper = getForm().find(SingleDatePicker);
+
       expectComponentToHaveProps(wrapper, {
         placeholderText: 'Date',
         name: 'date',
@@ -158,6 +167,7 @@ describe('<CallMeBack />', () => {
         .find(InputGroup)
         .at(1)
         .find(Dropdown);
+
       expectComponentToHaveProps(wrapper, {
         icon: 'clock',
         label: 'Time',
@@ -172,6 +182,7 @@ describe('<CallMeBack />', () => {
       const wrapper = getForm()
         .find(InputGroup)
         .at(2);
+
       expectComponentToHaveChildren(wrapper, Dropdown, Dropdown);
     });
   });
@@ -183,6 +194,7 @@ describe('<CallMeBack />', () => {
         .at(2)
         .find(Dropdown)
         .first();
+
       expectComponentToHaveProps(wrapper, {
         label: 'Time Zone',
         name: 'timeZone',
@@ -198,6 +210,7 @@ describe('<CallMeBack />', () => {
         .at(2)
         .find(Dropdown)
         .at(1);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Property',
         name: 'property',
@@ -209,6 +222,7 @@ describe('<CallMeBack />', () => {
   describe('the Notes `TextArea`', () => {
     it('should have the right props', () => {
       const wrapper = getForm().find(TextArea);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Notes',
         name: 'notes',
