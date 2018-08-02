@@ -15,6 +15,7 @@ describe('renderMonthHeader', () => {
 
   it('should correctly render 7 list items for each day', () => {
     const wrapper = getMonthHeader().find('li');
+
     expect(wrapper).toHaveLength(7);
     expect(
       wrapper

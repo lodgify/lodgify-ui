@@ -14,6 +14,7 @@ import { VALID_FLAG_NAMES } from './validFlagNames';
  */
 export const getIconOrFlag = country => {
   const flagName = lowerCase(country);
+
   return flagName && VALID_FLAG_NAMES.includes(flagName) ? (
     <Flag name={flagName} />
   ) : (

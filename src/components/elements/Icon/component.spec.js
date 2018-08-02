@@ -25,6 +25,7 @@ const getIcon = extraProps => shallow(<Icon {...props} {...extraProps} />);
 describe('<Icon />', () => {
   it('should render a `i.icon` element', () => {
     const wrapper = getIcon();
+
     expectComponentToBe(wrapper, 'i.icon');
   });
 
@@ -32,6 +33,7 @@ describe('<Icon />', () => {
     it('should get the right props', () => {
       const wrapper = getIcon();
       const { color, size } = props;
+
       expectComponentToHaveProps(wrapper, {
         className: `icon ${color} ${size} circular inverted grey inverted`,
         some: 'otherProps',
@@ -40,12 +42,14 @@ describe('<Icon />', () => {
 
     it('should have the right children', () => {
       const wrapper = getIcon();
+
       expectComponentToHaveChildren(wrapper, 'svg');
     });
 
     describe('if `props.labelText` is passed', () => {
       it('should have the right children', () => {
         const wrapper = getIcon({ labelText: 'someLabel' });
+
         expectComponentToHaveChildren(wrapper, 'svg', Paragraph);
       });
     });
@@ -53,6 +57,7 @@ describe('<Icon />', () => {
     describe('if `props.isReversed` is true', () => {
       it('should correctly render the label on the left side of the icon', () => {
         const wrapper = getIcon({ labelText: 'somelabel', isLabelLeft: true });
+
         expectComponentToHaveChildren(wrapper, Paragraph, 'svg');
       });
     });
@@ -63,6 +68,7 @@ describe('<Icon />', () => {
 
     it('should get the right props', () => {
       const wrapper = getSvg();
+
       expectComponentToHaveProps(wrapper, {
         viewBox: '0 0 24 24',
       });
@@ -70,6 +76,7 @@ describe('<Icon />', () => {
 
     it('should have the right children', () => {
       const wrapper = getSvg();
+
       expectComponentToHaveChildren(wrapper, 'path');
     });
   });
@@ -77,6 +84,7 @@ describe('<Icon />', () => {
   describe('the `path` element', () => {
     it('should get the right props', () => {
       const wrapper = getIcon().find('path');
+
       expectComponentToHaveProps(wrapper, {
         d: expect.any(String),
         fill: 'currentColor',
@@ -90,6 +98,7 @@ describe('<Icon />', () => {
 
     it('should have the right children', () => {
       const wrapper = getIconWithLabel();
+
       expectComponentToHaveChildren(wrapper, 'someLabel');
     });
 
@@ -98,6 +107,7 @@ describe('<Icon />', () => {
         const wrapper = getIconWithLabel({
           labelWeight: 'heavy',
         });
+
         expectComponentToHaveProps(wrapper, { weight: 'heavy' });
       });
     });

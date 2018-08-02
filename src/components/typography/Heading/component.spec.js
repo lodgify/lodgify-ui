@@ -13,6 +13,7 @@ const children = '🚸';
 describe('<Heading />', () => {
   it('should render a single Semantic UI `Header` component', () => {
     const wrapper = shallow(<Heading>{children}</Heading>);
+
     expectComponentToBe(wrapper, Header);
   });
 
@@ -21,16 +22,19 @@ describe('<Heading />', () => {
       'Header'
     );
     const actual = semanticHeader.prop('as');
+
     expect(actual).toBe('h3');
   });
 
   it('should add set `props.as` correctly', () => {
     const TEST_SIZES = ['huge', 'large', 'medium', 'small'];
+
     TEST_SIZES.forEach(testSize => {
       const semanticHeader = shallow(
         <Heading size={testSize}>{children}</Heading>
       ).find('Header');
       const actual = semanticHeader.prop('as');
+
       expect(actual).toBe(`h${TEST_SIZES.indexOf(testSize) + 1}`);
     });
   });
@@ -38,6 +42,7 @@ describe('<Heading />', () => {
   it('should render children', () => {
     const heading = shallow(<Heading>{children}</Heading>);
     const actual = heading.contains(children);
+
     expect(actual).toBe(true);
   });
 

@@ -22,6 +22,7 @@ export class Component extends PureComponent {
 
   componentDidMount = () => {
     const { videoSource } = this.props;
+
     isValidHTML(videoSource) &&
       this.setState({
         // `DOMPurify.sanitize` is in `componentDidMount` so that it

@@ -41,12 +41,14 @@ const getReview = additionalProps =>
 describe('<Review />', () => {
   it('should render a single Semantic UI `Card` component', () => {
     const wrapper = getReview();
+
     expectComponentToBe(wrapper, Card);
   });
 
   describe('the first `Card` component', () => {
     it('should have the right props', () => {
       const wrapper = getReview();
+
       expectComponentToHaveProps(wrapper, {
         fluid: true,
       });
@@ -54,6 +56,7 @@ describe('<Review />', () => {
 
     it('should render the right children', () => {
       const wrapper = getReview();
+
       expectComponentToHaveChildren(wrapper, Card.Content);
     });
   });
@@ -64,6 +67,7 @@ describe('<Review />', () => {
         const wrapper = getReview()
           .find(Card.Content)
           .at(0);
+
         expectComponentToHaveChildren(
           wrapper,
           Card.Meta,
@@ -83,6 +87,7 @@ describe('<Review />', () => {
         })
           .find(Card.Content)
           .at(0);
+
         expectComponentToHaveChildren(
           wrapper,
           Card.Meta,
@@ -102,6 +107,7 @@ describe('<Review />', () => {
       const wrapper = getReview()
         .find(Card.Meta)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
@@ -111,6 +117,7 @@ describe('<Review />', () => {
       const wrapper = getReview()
         .find(Grid)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, GridRow);
     });
   });
@@ -123,6 +130,7 @@ describe('<Review />', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridRow();
+
       expectComponentToHaveProps(wrapper, {
         verticalAlign: 'middle',
       });
@@ -130,6 +138,7 @@ describe('<Review />', () => {
 
     it('should render the right children', () => {
       const wrapper = getGridRow();
+
       expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
     });
   });
@@ -142,6 +151,7 @@ describe('<Review />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         computer: 6,
         mobile: 12,
@@ -151,6 +161,7 @@ describe('<Review />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(wrapper, Subheading);
     });
   });
@@ -158,6 +169,7 @@ describe('<Review />', () => {
   describe('the `Paragraph` component', () => {
     it('should have the right children', () => {
       const wrapper = getReview().find(Subheading);
+
       expectComponentToHaveChildren(
         wrapper,
         getReviewerNameAndLocationString(
@@ -176,6 +188,7 @@ describe('<Review />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         computer: 6,
         mobile: 12,
@@ -187,6 +200,7 @@ describe('<Review />', () => {
 
     it('should have the right children', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveChildren(wrapper, Rating);
     });
   });
@@ -196,6 +210,7 @@ describe('<Review />', () => {
       const wrapper = getReview()
         .find(Rating)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         disabled: true,
         maxRating: 5,
@@ -210,6 +225,7 @@ describe('<Review />', () => {
       const wrapper = getReview()
         .find(Card.Header)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, requiredProps.reviewTitle);
     });
   });
@@ -219,6 +235,7 @@ describe('<Review />', () => {
       const wrapper = getReview()
         .find(Card.Description)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, requiredProps.reviewText);
     });
   });
@@ -230,6 +247,7 @@ describe('<Review />', () => {
       })
         .find('div')
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Quote, Divider);
     });
   });
@@ -258,6 +276,7 @@ describe('<Review />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondCardDescription();
+
       expectComponentToHaveProps(wrapper, {
         textAlign: 'right',
       });
@@ -265,6 +284,7 @@ describe('<Review />', () => {
 
     it('should have the right children', () => {
       const wrapper = getSecondCardDescription();
+
       expectComponentToHaveChildren(
         wrapper,
         getReviewerCategoryAndStayDateString(

@@ -27,6 +27,7 @@ export class Component extends PureComponent {
     const prevDate = pickDateFromState(prevState);
     const date = pickDateFromState(this.state);
     const { name, onChange } = this.props;
+
     !isEqual(prevDate, date) && onChange(name, date);
   };
 
@@ -53,6 +54,7 @@ export class Component extends PureComponent {
       placeholderText,
     } = this.props;
     const { date, isFocused } = this.state;
+
     return (
       <InputController
         error={error}

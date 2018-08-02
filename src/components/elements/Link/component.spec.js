@@ -21,11 +21,13 @@ const getLink = props =>
 describe('<Link />', () => {
   it('should render a single Semantic UI `Button` component', () => {
     const wrapper = getLink();
+
     expectComponentToBe(wrapper, Button);
   });
 
   it('should pass the `Button` component the right props', () => {
     const wrapper = getLink().find(Button);
+
     expectComponentToHaveProps(wrapper, {
       as: 'a',
       href: URL,
@@ -38,6 +40,7 @@ describe('<Link />', () => {
   describe('if `props.isPositionedRight` is true', () => {
     it('should pass the `Button` component `floated="right"`', () => {
       const wrapper = getLink({ isPositionedRight: true }).find(Button);
+
       expectComponentToHaveProps(wrapper, { floated: 'right' });
     });
   });
@@ -45,6 +48,7 @@ describe('<Link />', () => {
   describe('if `props.willOpenInNewTab` is true', () => {
     it('should pass the `Button` component `target="_blank"`', () => {
       const wrapper = getLink({ willOpenInNewTab: true }).find(Button);
+
       expectComponentToHaveProps(wrapper, {
         target: '_blank',
       });
@@ -53,6 +57,7 @@ describe('<Link />', () => {
 
   it('should render the `children`', () => {
     const wrapper = getLink();
+
     expectComponentToHaveChildren(wrapper, 'Press me');
   });
 

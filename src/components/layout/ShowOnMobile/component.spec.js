@@ -20,12 +20,14 @@ const getShowOnMobile = () => shallow(<ShowOnMobile {...props} />);
 describe('<ShowOnMobile />', () => {
   it('should render a single Semantic UI `Responsive` component', () => {
     const wrapper = getShowOnMobile();
+
     expectComponentToBe(wrapper, Responsive);
   });
 
   describe('the `Responsive` component', () => {
     it('it should get the right props', () => {
       const wrapper = getShowOnMobile();
+
       expectComponentToHaveProps(wrapper, {
         as: props.parent,
         children: props.children,

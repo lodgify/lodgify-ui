@@ -17,11 +17,13 @@ const getButton = props => shallow(<Button {...props}>Press me</Button>);
 describe('<Button />', () => {
   it('should render a single Semantic UI `Button` component', () => {
     const wrapper = getButton();
+
     expectComponentToBe(wrapper, SemanticButton);
   });
 
   it('should pass the `Button` component the right props', () => {
     const wrapper = getButton();
+
     expectComponentToHaveProps(wrapper, {
       disabled: false,
       floated: 'left',
@@ -33,6 +35,7 @@ describe('<Button />', () => {
 
   it('should pass the `Button` component `props.isRounded` as `circular`', () => {
     const wrapper = getButton({ isRounded: true });
+
     expectComponentToHaveProps(wrapper, {
       circular: true,
     });
@@ -41,6 +44,7 @@ describe('<Button />', () => {
   describe('if `props.isPositionedRight` is true', () => {
     it('should pass the `Button` component `floated="right"`', () => {
       const wrapper = getButton({ isPositionedRight: true });
+
       expectComponentToHaveProps(wrapper, {
         floated: 'right',
       });
@@ -50,6 +54,7 @@ describe('<Button />', () => {
   describe('if `props.isSecondary` is true', () => {
     it('should pass the `Button` component `secondary={true}`', () => {
       const wrapper = getButton({ isSecondary: true });
+
       expectComponentToHaveProps(wrapper, {
         secondary: true,
       });
@@ -59,6 +64,7 @@ describe('<Button />', () => {
   describe('if `props.isCompact` is true', () => {
     it('should pass the `Button` component `compact={true}`', () => {
       const wrapper = getButton({ isCompact: true });
+
       expectComponentToHaveProps(wrapper, {
         compact: true,
       });
@@ -68,6 +74,7 @@ describe('<Button />', () => {
   describe('if `props.size` is informed', () => {
     it('should pass the `Button` component `size={size}`', () => {
       const wrapper = getButton({ size: 'massive' });
+
       expectComponentToHaveProps(wrapper, {
         size: 'massive',
       });
@@ -76,6 +83,7 @@ describe('<Button />', () => {
 
   it('should render the right children', () => {
     const wrapper = getButton();
+
     expectComponentToHaveChildren(wrapper, 'Press me');
   });
 
@@ -84,12 +92,14 @@ describe('<Button />', () => {
 
     it('should render an <Icon />', () => {
       const wrapper = getButtonWithIcon();
+
       expectComponentToHaveChildren(wrapper, Icon, 'Press me');
     });
 
     describe('the <Icon>', () => {
       it('should have the right props', () => {
         const wrapper = getButtonWithIcon().find(Icon);
+
         expectComponentToHaveProps(wrapper, {
           name: 'search',
         });
@@ -100,6 +110,7 @@ describe('<Button />', () => {
   describe('if `props.hasShadow` is informed', () => {
     it('should have the `has-shadow` className', () => {
       const wrapper = getButton({ hasShadow: true });
+
       expectComponentToHaveProps(wrapper, {
         className: 'has-shadow',
       });

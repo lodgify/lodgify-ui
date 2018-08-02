@@ -19,12 +19,14 @@ const getOwnerSignUp = () => shallow(<OwnerSignUp />);
 describe('<OwnerSignUp />', () => {
   it('should render a single Lodgify UI `Form` component', () => {
     const wrapper = getOwnerSignUp();
+
     expectComponentToBe(wrapper, Form);
   });
 
   describe('the `Form` component', () => {
     it('should have the right props', () => {
       const wrapper = getOwnerSignUp().find(Form);
+
       expectComponentToHaveProps(wrapper, {
         headingText: 'Owner Signup',
         onSubmit: Function.prototype,
@@ -34,6 +36,7 @@ describe('<OwnerSignUp />', () => {
 
     it('should render three Lodgify UI `TextInput` components', () => {
       const wrapper = getOwnerSignUp().find(Form);
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(3, TextInput)
@@ -51,6 +54,7 @@ describe('<OwnerSignUp />', () => {
         { label: 'Last Name', name: 'lastName' },
         { label: 'Email', name: 'email' },
       ];
+
       wrappers.forEach((wrapper, index) => {
         expectComponentToHaveProps(wrapper, propSets[index]);
       });

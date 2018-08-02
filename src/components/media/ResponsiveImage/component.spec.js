@@ -12,6 +12,7 @@ const getResponsiveImage = props => shallow(<ResponsiveImage {...props} />);
 describe('<ResponsiveImage />', () => {
   it('should render a single `picture` element', () => {
     const wrapper = getResponsiveImage();
+
     expectComponentToBe(wrapper, 'picture');
   });
 
@@ -29,6 +30,7 @@ describe('<ResponsiveImage />', () => {
 
     it('should have a <Label> when no imageUrl is provided', () => {
       const actual = getResponsiveImage().find(Label);
+
       expect(actual).toHaveLength(1);
     });
 
@@ -36,6 +38,7 @@ describe('<ResponsiveImage />', () => {
       const semanticImage = getResponsiveImage(props).find(SemanticImage);
 
       const actual = semanticImage.props();
+
       expect(actual).toEqual(
         expect.objectContaining({
           src: props.imageUrl,
@@ -80,6 +83,7 @@ describe('<ResponsiveImage />', () => {
     const label = '🔷';
     const wrapper = getResponsiveImage({ label });
     const actual = wrapper.find(Paragraph);
+
     expect(actual).toHaveLength(1);
   });
 
@@ -88,6 +92,7 @@ describe('<ResponsiveImage />', () => {
       const label = '🔷';
       const wrapper = getResponsiveImage({ label });
       const actual = wrapper.find(Paragraph).prop('children');
+
       expect(actual).toBe(label);
     });
   });

@@ -45,12 +45,14 @@ const getChildOfFragment = (index, extraProps) =>
 describe('getMobileMenuMarkup', () => {
   it('should render a Semantic UI `Menu.Item` component as the first child of the fragment', () => {
     const wrapper = getChildOfFragment(0);
+
     expectComponentToBe(wrapper, Menu.Item);
   });
 
   describe('the first `Menu.Item` component', () => {
     it('should render a Lodgify UI `SearchBar` component', () => {
       const wrapper = getChildOfFragment(0);
+
       expectComponentToHaveChildren(wrapper, SearchBar);
     });
   });
@@ -58,6 +60,7 @@ describe('getMobileMenuMarkup', () => {
   describe('the `SearchBar` component', () => {
     it('should have the right props', () => {
       const wrapper = getChildOfFragment(0).find(SearchBar);
+
       expectComponentToHaveProps(wrapper, {
         guestsOptions: searchBarGuestsOptions,
         isDisplayedAsModal: true,
@@ -68,12 +71,14 @@ describe('getMobileMenuMarkup', () => {
 
   it('should render a Semantic UI `Menu.Item` component as the second child of the fragment', () => {
     const wrapper = getChildOfFragment(1);
+
     expectComponentToBe(wrapper, Menu.Item);
   });
 
   describe('the second `Menu.Item` component', () => {
     it('should render a Lodgify UI `Modal` component', () => {
       const wrapper = getChildOfFragment(1);
+
       expectComponentToHaveChildren(wrapper, Modal);
     });
   });
@@ -83,6 +88,7 @@ describe('getMobileMenuMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getModal();
+
       expectComponentToHaveProps(wrapper, {
         isFullscreen: true,
         trigger: <Icon name={ICON_NAMES.BARS} />,
@@ -91,6 +97,7 @@ describe('getMobileMenuMarkup', () => {
 
     it('should have the right children', () => {
       const wrapper = getModal();
+
       expectComponentToHaveChildren(wrapper, Menu);
     });
   });
@@ -100,6 +107,7 @@ describe('getMobileMenuMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getMenu();
+
       expectComponentToHaveProps(wrapper, {
         text: true,
         vertical: true,
@@ -108,6 +116,7 @@ describe('getMobileMenuMarkup', () => {
 
     it('should have the right children', () => {
       const wrapper = getMenu();
+
       expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Item, Accordion);
     });
   });
@@ -115,6 +124,7 @@ describe('getMobileMenuMarkup', () => {
   describe('each `Accordion` component', () => {
     it('should have the right props', () => {
       const wrapper = getChildOfFragment(1).find(Accordion);
+
       expectComponentToHaveProps(wrapper, {
         as: Menu.Item,
         panels: [

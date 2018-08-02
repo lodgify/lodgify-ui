@@ -14,6 +14,7 @@ describe('<Video />', () => {
 
   it('should render a single `div.video` element', () => {
     const wrapper = shallow(getVideo({ videoSource: '<iframe></iframe>' }));
+
     expectComponentToBe(wrapper, 'div.video');
   });
 
@@ -21,18 +22,21 @@ describe('<Video />', () => {
     it('should render a `div.video.is-url` element if an url is provided', () => {
       const props = { videoSource: 'https://lodgify.com' };
       const wrapper = shallow(getVideo(props));
+
       expectComponentToBe(wrapper, 'div.video.is-url');
     });
 
     it('should render a `div.video.is-html` if an HTML snippet is provided', () => {
       const props = { videoSource: '<iframe></iframe>' };
       const wrapper = shallow(getVideo(props));
+
       expectComponentToBe(wrapper, 'div.video.is-html');
     });
 
     it('should render a <ReactPlayer> if HTML is provided', () => {
       const props = { videoSource: 'https://lodgify.com' };
       const video = shallow(getVideo(props));
+
       expect(video.find(ReactPlayer)).toHaveLength(1);
     });
 
@@ -40,6 +44,7 @@ describe('<Video />', () => {
       const props = { videoSource: 'https://lodgify.com' };
       const video = shallow(getVideo(props));
       const videoProps = video.find(ReactPlayer).props();
+
       expect(videoProps).toEqual(
         expect.objectContaining({ url: props.videoSource })
       );
@@ -53,6 +58,7 @@ describe('<Video />', () => {
         isResponsive: true,
       };
       const wrapper = shallow(getVideo(props));
+
       expect(wrapper.find('.is-responsive')).toHaveLength(1);
     });
   });

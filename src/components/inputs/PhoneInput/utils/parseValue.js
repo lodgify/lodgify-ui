@@ -8,6 +8,7 @@ import { parse, format } from 'libphonenumber-js';
 export const parseValue = value => {
   const { country, phone } = parse(value);
   const formattedValue = phone && format(phone, country, 'International');
+
   return {
     country,
     phone: formattedValue || value,

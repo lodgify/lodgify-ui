@@ -11,6 +11,7 @@ describe('<ReactGoogleMaps />', () => {
   it('should render the HOCs in the right order', () => {
     const wrapper = getContainer();
     const actual = wrapper.name();
+
     expect(actual).toBe(
       'withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))'
     );
@@ -19,6 +20,7 @@ describe('<ReactGoogleMaps />', () => {
   it('should pass the right props down the chain', () => {
     const wrapper = getContainer();
     const actual = wrapper.childAt(0).props();
+
     expect(actual).toEqual(
       expect.objectContaining({
         googleMapURL: expect.any(String),

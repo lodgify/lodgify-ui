@@ -22,12 +22,14 @@ const getKeyFacts = () => shallow(<KeyFacts keyFacts={keyFacts} />);
 describe('<KeyFacts />', () => {
   it('should render a single Lodgify UI `GridColumn` component', () => {
     const wrapper = getKeyFacts();
+
     expectComponentToBe(wrapper, Grid);
   });
 
   describe('the `Grid` component', () => {
     it('should render the right children', () => {
       const wrapper = getKeyFacts();
+
       expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
     });
   });
@@ -40,6 +42,7 @@ describe('<KeyFacts />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         width: 12,
       });
@@ -47,6 +50,7 @@ describe('<KeyFacts />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
   });
@@ -54,6 +58,7 @@ describe('<KeyFacts />', () => {
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
       const wrapper = getKeyFacts().find(Heading);
+
       expectComponentToHaveChildren(wrapper, 'Key facts');
     });
   });
@@ -66,6 +71,7 @@ describe('<KeyFacts />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         width: 12,
       });
@@ -73,6 +79,7 @@ describe('<KeyFacts />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveChildren(wrapper, Label.Group);
     });
   });
@@ -99,6 +106,7 @@ describe('<KeyFacts />', () => {
         .find(IconCard)
         .first();
       const { iconName, isDisabled, label } = keyFacts[0];
+
       expectComponentToHaveProps(wrapper, {
         isDisabled: !!isDisabled,
         isFilled: true,

@@ -86,12 +86,14 @@ const getRatesWidget = props =>
 describe('<Rates />', () => {
   it('should render a single `div` element', () => {
     const wrapper = getRatesWidget();
+
     expectComponentToBe(wrapper, 'div');
   });
 
   describe('the `div` element', () => {
     it('should render the right children', () => {
       const wrapper = getRatesWidget();
+
       expectComponentToHaveChildren(wrapper, Grid, ShowOnDesktop);
     });
   });
@@ -101,19 +103,23 @@ describe('<Rates />', () => {
       getRatesWidget(props)
         .find(Grid)
         .first();
+
     it('should have the right props', () => {
       const wrapper = getFirstGrid();
+
       expectComponentToHaveProps(wrapper, { padded: true });
     });
 
     it('should render the right children', () => {
       const wrapper = getFirstGrid();
+
       expectComponentToHaveChildren(wrapper, ShowOnMobile);
     });
 
     describe('if `props.roomTypes` is passed', () => {
       it('should render an extra `GridRow` child', () => {
         const wrapper = getFirstGrid({ roomTypes, onChangeRoomType });
+
         expectComponentToHaveChildren(wrapper, GridRow, ShowOnMobile);
       });
     });
@@ -121,8 +127,10 @@ describe('<Rates />', () => {
 
   describe('the `ShowOnMobile` component', () => {
     const getFirstGridRow = props => getRatesWidget(props).find(ShowOnMobile);
+
     it('should render the right children', () => {
       const wrapper = getFirstGridRow();
+
       expectComponentToHaveChildren(
         wrapper,
         Dropdown,
@@ -136,6 +144,7 @@ describe('<Rates />', () => {
       const wrapper = getRatesWidget()
         .find(Dropdown)
         .first();
+
       expectComponentToHaveProps(wrapper, {
         onChange: onChangeCurrency,
         options: currencyOptions,
@@ -148,13 +157,16 @@ describe('<Rates />', () => {
       getRatesWidget()
         .find(Card)
         .first();
+
     it('should have the right props', () => {
       const wrapper = getFirstCard();
+
       expectComponentToHaveProps(wrapper, { fluid: true });
     });
 
     it('should render the right children', () => {
       const wrapper = getFirstCard();
+
       expectComponentToHaveChildren(wrapper, Card.Content);
     });
   });
@@ -169,6 +181,7 @@ describe('<Rates />', () => {
       const wrapper = getCardContent()
         .find(Card.Content)
         .first();
+
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
@@ -178,13 +191,16 @@ describe('<Rates />', () => {
       getRatesWidget()
         .find(Grid)
         .at(1);
+
     it('should have the right props', () => {
       const wrapper = getSecondGrid();
+
       expectComponentToHaveProps(wrapper, { padded: true });
     });
 
     it('should render the right children', () => {
       const wrapper = getSecondGrid();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(5, GridRow)
@@ -197,6 +213,7 @@ describe('<Rates />', () => {
       const wrapper = getRatesWidget()
         .find(GridRow)
         .at(5);
+
       expectComponentToHaveChildren(wrapper, GridColumn);
     });
   });
@@ -206,6 +223,7 @@ describe('<Rates />', () => {
       const wrapper = getRatesWidget()
         .find(GridColumn)
         .at(9);
+
       expectComponentToHaveChildren(wrapper, 'div');
     });
   });
@@ -213,6 +231,7 @@ describe('<Rates />', () => {
   describe('the `ShowOnDesktop` component', () => {
     it('should render the right children', () => {
       const wrapper = getRatesWidget().find(ShowOnDesktop);
+
       expectComponentToHaveChildren(wrapper, Table);
     });
   });
@@ -220,6 +239,7 @@ describe('<Rates />', () => {
   describe('the `Table` component', () => {
     it('should have the right props', () => {
       const wrapper = getRatesWidget().find(Table);
+
       expectComponentToHaveProps(wrapper, {
         tableHeadings: expectedHeadings,
         tableBody: expectedTableBody,

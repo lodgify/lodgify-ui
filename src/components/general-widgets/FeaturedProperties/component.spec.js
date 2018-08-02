@@ -53,6 +53,7 @@ const getFeaturedProperties = otherProps =>
 describe('<FeaturedProperties />', () => {
   it('should be a Lodgify UI `Grid`', () => {
     const wrapper = getFeaturedProperties();
+
     expectComponentToBe(wrapper, Grid);
   });
 
@@ -60,6 +61,7 @@ describe('<FeaturedProperties />', () => {
     describe('the `Grid` component', () => {
       it('should render the right children', () => {
         const wrapper = getFeaturedProperties();
+
         expectComponentToHaveChildren(
           wrapper,
           ...getArrayOfLengthOfItem(2, GridColumn)
@@ -75,6 +77,7 @@ describe('<FeaturedProperties />', () => {
 
       it('should have the right right props', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveProps(wrapper, {
           computer: 4,
           mobile: 12,
@@ -84,6 +87,7 @@ describe('<FeaturedProperties />', () => {
 
       it('should render the right children', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveChildren(wrapper, FeaturedProperty);
       });
     });
@@ -91,9 +95,11 @@ describe('<FeaturedProperties />', () => {
 
   describe('if `props.headingText` is passed', () => {
     const headingText = 'My god I love Cliff Richard';
+
     describe('the `Grid` component', () => {
       it('should render the right children', () => {
         const wrapper = getFeaturedProperties({ headingText });
+
         expectComponentToHaveChildren(
           wrapper,
           ...getArrayOfLengthOfItem(3, GridColumn)
@@ -109,6 +115,7 @@ describe('<FeaturedProperties />', () => {
 
       it('should have the right right props', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveProps(wrapper, {
           width: 12,
         });
@@ -116,6 +123,7 @@ describe('<FeaturedProperties />', () => {
 
       it('should render the right children', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveChildren(wrapper, Heading);
       });
     });
@@ -123,6 +131,7 @@ describe('<FeaturedProperties />', () => {
     describe('the `Heading` component', () => {
       it('should render the right children', () => {
         const wrapper = getFeaturedProperties({ headingText }).find(Heading);
+
         expectComponentToHaveChildren(wrapper, headingText);
       });
     });

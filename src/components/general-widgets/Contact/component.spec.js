@@ -28,12 +28,14 @@ const getForm = extraProps => getContact(extraProps).find(Form);
 describe('<Contact />', () => {
   it('should render a single Lodgify UI `Form` component', () => {
     const wrapper = getContact();
+
     expectComponentToBe(wrapper, Form);
   });
 
   describe('the `Form` component', () => {
     it('should have the right props', () => {
       const wrapper = getForm();
+
       expectComponentToHaveProps(wrapper, {
         headingText: 'Contact',
         onSubmit: Function.prototype,
@@ -43,6 +45,7 @@ describe('<Contact />', () => {
 
     it('should render the right children', () => {
       const wrapper = getForm();
+
       expectComponentToHaveChildren(
         wrapper,
         InputGroup,
@@ -59,6 +62,7 @@ describe('<Contact />', () => {
       const wrapper = getForm()
         .find(InputGroup)
         .first();
+
       expectComponentToHaveChildren(wrapper, TextInput, PhoneInput);
     });
   });
@@ -68,6 +72,7 @@ describe('<Contact />', () => {
       const wrapper = getForm()
         .find(TextInput)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Name',
         name: 'name',
@@ -78,6 +83,7 @@ describe('<Contact />', () => {
   describe('the Phone `PhoneInput`', () => {
     it('should have the right props', () => {
       const wrapper = getForm().find(PhoneInput);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Phone',
         name: 'phone',
@@ -90,6 +96,7 @@ describe('<Contact />', () => {
       const wrapper = getForm()
         .find(TextInput)
         .at(1);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Email',
         name: 'email',
@@ -102,6 +109,7 @@ describe('<Contact />', () => {
       const wrapper = getForm()
         .find(InputGroup)
         .at(1);
+
       expectComponentToHaveChildren(wrapper, DateRangePicker, TextInput);
     });
   });
@@ -109,6 +117,7 @@ describe('<Contact />', () => {
   describe('the `DateRangePicker`', () => {
     it('should have the right props', () => {
       const wrapper = getForm().find(DateRangePicker);
+
       expectComponentToHaveProps(wrapper, {
         endDatePlaceholderText: 'Departure',
         name: 'dates',
@@ -124,6 +133,7 @@ describe('<Contact />', () => {
         .find(InputGroup)
         .at(1)
         .find(TextInput);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Guests',
         name: 'guests',
@@ -136,6 +146,7 @@ describe('<Contact />', () => {
   describe('the Comments `TextArea`', () => {
     it('should have the right props', () => {
       const wrapper = getForm().find(TextArea);
+
       expectComponentToHaveProps(wrapper, {
         label: 'Comments',
         name: 'comments',
@@ -148,6 +159,7 @@ describe('<Contact />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFormWithPropertyOptions();
+
       expectComponentToHaveChildren(
         wrapper,
         InputGroup,
@@ -164,6 +176,7 @@ describe('<Contact />', () => {
         const wrapper = getFormWithPropertyOptions()
           .find(InputGroup)
           .at(2);
+
         expectComponentToHaveChildren(wrapper, Dropdown);
       });
     });
@@ -171,6 +184,7 @@ describe('<Contact />', () => {
     describe('the `Dropdown`', () => {
       it('should have the right props', () => {
         const wrapper = getFormWithPropertyOptions().find(Dropdown);
+
         expectComponentToHaveProps(wrapper, {
           label: 'Property',
           name: 'property',
@@ -186,6 +200,7 @@ describe('<Contact />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFormWithRoomOptions();
+
       expectComponentToHaveChildren(
         wrapper,
         InputGroup,
@@ -202,6 +217,7 @@ describe('<Contact />', () => {
         const wrapper = getFormWithRoomOptions()
           .find(InputGroup)
           .at(2);
+
         expectComponentToHaveChildren(wrapper, Dropdown);
       });
     });
@@ -209,6 +225,7 @@ describe('<Contact />', () => {
     describe('the `Dropdown`', () => {
       it('should have the right props', () => {
         const wrapper = getFormWithRoomOptions().find(Dropdown);
+
         expectComponentToHaveProps(wrapper, {
           label: 'Room',
           name: 'room',
@@ -225,6 +242,7 @@ describe('<Contact />', () => {
         const wrapper = getForm({ propertyOptions, roomOptions })
           .find(InputGroup)
           .at(2);
+
         expectComponentToHaveChildren(wrapper, Dropdown, Dropdown);
       });
     });
@@ -233,6 +251,7 @@ describe('<Contact />', () => {
   describe('the `CaptchaInput`', () => {
     it('should have the right props', () => {
       const wrapper = getForm().find(CaptchaInput);
+
       expectComponentToHaveProps(wrapper, {
         image: captchaInputImage,
         label: 'Security Code',

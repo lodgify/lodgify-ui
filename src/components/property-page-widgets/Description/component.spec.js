@@ -36,12 +36,14 @@ const getDescription = extraProps =>
 describe('<Description />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getDescription();
+
     expectComponentToBe(wrapper, Grid);
   });
 
   describe('the first `Grid` component', () => {
     it('should have the right props', () => {
       const wrapper = getDescription();
+
       expectComponentToHaveProps(wrapper, {
         stackable: true,
       });
@@ -49,6 +51,7 @@ describe('<Description />', () => {
 
     it('should render the right children', () => {
       const wrapper = getDescription();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(2, GridColumn)
@@ -64,6 +67,7 @@ describe('<Description />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         computer: 7,
         tablet: 12,
@@ -72,6 +76,7 @@ describe('<Description />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(
         wrapper,
         Subheading,
@@ -83,6 +88,7 @@ describe('<Description />', () => {
   describe('the `Subheading` component', () => {
     it('should render the right children', () => {
       const wrapper = getDescription().find(Subheading);
+
       expectComponentToHaveChildren(wrapper, props.propertyType);
     });
   });
@@ -94,6 +100,7 @@ describe('<Description />', () => {
           const wrapper = getDescription()
             .find(Paragraph)
             .at(index);
+
           expectComponentToHaveChildren(wrapper, paragraphText);
         }
       );
@@ -108,6 +115,7 @@ describe('<Description />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         verticalAlignContent: 'middle',
         computer: 5,
@@ -117,6 +125,7 @@ describe('<Description />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
@@ -126,6 +135,7 @@ describe('<Description />', () => {
       const wrapper = getDescription()
         .find(Grid)
         .at(1);
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(4, GridColumn)
@@ -141,6 +151,7 @@ describe('<Description />', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridColumnInSecondGrid();
+
       expectComponentToHaveProps(wrapper, {
         width: 6,
       });
@@ -148,6 +159,7 @@ describe('<Description />', () => {
 
     it('should render the right children', () => {
       const wrapper = getGridColumnInSecondGrid();
+
       expectComponentToHaveChildren(wrapper, Icon);
     });
   });
@@ -157,6 +169,7 @@ describe('<Description />', () => {
       const wrapper = getDescription()
         .find(Icon)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         labelText: icons[0].labelText,
         name: icons[0].iconName,
@@ -170,6 +183,7 @@ describe('<Description />', () => {
         const wrapper = getDescription({ extraDescriptionText })
           .find(GridColumn)
           .first();
+
         expectComponentToHaveChildren(
           wrapper,
           Subheading,
@@ -182,6 +196,7 @@ describe('<Description />', () => {
     describe('the `Modal` component', () => {
       it('should have the right props', () => {
         const wrapper = getDescription({ extraDescriptionText }).find(Modal);
+
         expectComponentToHaveProps(wrapper, {
           children: expect.any(Array),
           trigger: <Link>View more</Link>,

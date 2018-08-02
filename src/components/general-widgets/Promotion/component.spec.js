@@ -32,12 +32,14 @@ const getPromotionAsStacked = () =>
 describe('The `Promotion` component', () => {
   it('should render a `Segment` component', () => {
     const wrapper = getPromotion();
+
     expectComponentToBe(wrapper, Segment);
   });
 
   describe('the `Segment`', () => {
     it('should have the right props', () => {
       const wrapper = getPromotion();
+
       expectComponentToHaveProps(wrapper, {
         className: 'is-promotion',
         basic: true,
@@ -47,6 +49,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getPromotion();
+
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
@@ -59,6 +62,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGrid();
+
       expectComponentToHaveProps(wrapper, {
         className: 'first-grid',
         stackable: true,
@@ -68,6 +72,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGrid();
+
       expectComponentToHaveChildren(wrapper, GridRow);
     });
   });
@@ -77,6 +82,7 @@ describe('The `Promotion` component', () => {
       const wrapper = getPromotion()
         .find(GridRow)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
     });
   });
@@ -89,6 +95,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         className: 'content-section',
         style: {
@@ -100,6 +107,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveChildren(wrapper, Grid);
     });
   });
@@ -112,6 +120,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGrid();
+
       expectComponentToHaveProps(wrapper, {
         padded: true,
       });
@@ -119,6 +128,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGrid();
+
       expectComponentToHaveChildren(wrapper, GridRow, GridRow, GridRow);
     });
   });
@@ -131,6 +141,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridRow();
+
       expectComponentToHaveProps(wrapper, {
         verticalAlign: 'top',
       });
@@ -138,6 +149,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGridRow();
+
       expectComponentToHaveChildren(wrapper, GridColumn);
     });
   });
@@ -150,6 +162,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         textAlign: 'left',
       });
@@ -157,6 +170,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
   });
@@ -166,6 +180,7 @@ describe('The `Promotion` component', () => {
       const wrapper = getPromotion()
         .find(Heading)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, componentProps.headingText);
     });
   });
@@ -178,6 +193,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridRow();
+
       expectComponentToHaveProps(wrapper, {
         className: 'book-now-button-container',
       });
@@ -185,6 +201,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGridRow();
+
       expectComponentToHaveChildren(wrapper, GridColumn);
     });
   });
@@ -197,6 +214,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         textAlign: 'center',
       });
@@ -204,6 +222,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveChildren(wrapper, Button);
     });
   });
@@ -216,6 +235,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getButton();
+
       expectComponentToHaveProps(wrapper, {
         isRounded: true,
       });
@@ -223,6 +243,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getButton();
+
       expectComponentToHaveChildren(wrapper, 'Book Now with Discount');
     });
   });
@@ -235,6 +256,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridRow();
+
       expectComponentToHaveProps(wrapper, {
         verticalAlign: 'bottom',
       });
@@ -242,6 +264,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGridRow();
+
       expectComponentToHaveChildren(wrapper, GridColumn);
     });
   });
@@ -254,6 +277,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         floated: 'right',
         textAlign: 'right',
@@ -263,6 +287,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveChildren(wrapper, 'div');
     });
   });
@@ -272,6 +297,7 @@ describe('The `Promotion` component', () => {
       const wrapper = getPromotion()
         .find('div')
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Paragraph, Button);
     });
   });
@@ -284,6 +310,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getParagraph();
+
       expectComponentToHaveProps(wrapper, {
         size: 'tiny',
       });
@@ -291,6 +318,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getParagraph();
+
       expectComponentToHaveChildren(wrapper, 'Use the coupon code');
     });
   });
@@ -303,6 +331,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getButton();
+
       expectComponentToHaveProps(wrapper, {
         hasShadow: true,
         isPositionedRight: true,
@@ -311,6 +340,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getButton();
+
       expectComponentToHaveChildren(wrapper, componentProps.discountCode);
     });
   });
@@ -323,6 +353,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         className: 'discount-section',
         textAlign: 'center',
@@ -333,6 +364,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getGridColumn();
+
       expectComponentToHaveChildren(wrapper, Statistic);
     });
   });
@@ -345,6 +377,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right props', () => {
       const wrapper = getStatistic();
+
       expectComponentToHaveProps(wrapper, {
         size: 'small',
       });
@@ -352,6 +385,7 @@ describe('The `Promotion` component', () => {
 
     it('should have the right children', () => {
       const wrapper = getStatistic();
+
       expectComponentToHaveChildren(wrapper, Statistic.Label, Statistic.Value);
     });
   });

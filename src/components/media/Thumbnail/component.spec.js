@@ -22,11 +22,13 @@ const getThumbnail = extraProps =>
 describe('<Thumbnail />', () => {
   it('should render a single Lodgify UI `div` element', () => {
     const wrapper = getThumbnail();
+
     expectComponentToBe(wrapper, 'div');
   });
 
   it('should have the right `ui thumbnail` classNames', () => {
     const wrapper = getThumbnail();
+
     expectComponentToHaveProps(wrapper, {
       className: 'ui thumbnail',
     });
@@ -34,6 +36,7 @@ describe('<Thumbnail />', () => {
 
   it('should render a single `div`', () => {
     const wrapper = getThumbnail();
+
     expectComponentToHaveChildren(wrapper, 'div');
   });
 
@@ -45,6 +48,7 @@ describe('<Thumbnail />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondDiv();
+
       expectComponentToHaveProps(wrapper, {
         className: 'ui image',
         style: {
@@ -61,6 +65,7 @@ describe('<Thumbnail />', () => {
 
       it('should have the right classNames', () => {
         const wrapper = getSecondDivWithIsCircularProp();
+
         expectComponentToHaveProps(wrapper, {
           className: 'ui image circular',
         });
@@ -75,6 +80,7 @@ describe('<Thumbnail />', () => {
 
       it('should have the right classNames', () => {
         const wrapper = getSecondDivWithIsSquareProp();
+
         expectComponentToHaveProps(wrapper, {
           className: 'ui image square',
         });
@@ -89,6 +95,7 @@ describe('<Thumbnail />', () => {
 
       it('should have the right classNames', () => {
         const wrapper = getSecondDivWithIsSquareProp();
+
         expectComponentToHaveProps(wrapper, {
           className: 'ui image rounded',
         });
@@ -103,6 +110,7 @@ describe('<Thumbnail />', () => {
 
       it('should have the right classNames', () => {
         const wrapper = getSecondDivWithSizeProp();
+
         expectComponentToHaveProps(wrapper, {
           className: 'ui image small',
         });
@@ -111,14 +119,17 @@ describe('<Thumbnail />', () => {
 
     it('should have the right children', () => {
       const wrapper = getSecondDiv();
+
       expectComponentToHaveChildren(wrapper, 'span');
     });
   });
 
   describe('the only `span`', () => {
     const getFirstSpan = () => getThumbnail().find('span');
+
     it('should have the right props', () => {
       const wrapper = getFirstSpan();
+
       expectComponentToHaveProps(wrapper, {
         role: 'img',
       });
@@ -130,6 +141,7 @@ describe('<Thumbnail />', () => {
 
       it('should have the right `props`', () => {
         const wrapper = getFirstSpanWithPropAlternativeText();
+
         expectComponentToHaveProps(wrapper, {
           'aria-label': 'lightning',
         });
@@ -140,6 +152,7 @@ describe('<Thumbnail />', () => {
   describe('if `props.Label` is informed', () => {
     it('should render the right children', () => {
       const wrapper = getThumbnail({ label: 'Hello' });
+
       expectComponentToHaveChildren(wrapper, 'div', Paragraph);
     });
   });
