@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Card, Image, Rating } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
@@ -20,7 +20,6 @@ const props = {
   imageUrl: '🐱🐱',
   locationName: 'Catania',
   nightPrice: '$280',
-  ratingNumber: 4.8,
   roomTypeName: 'The Cat House',
   roomTypeUrl: '/',
 };
@@ -67,7 +66,6 @@ describe('<FeaturedRoomType />', () => {
         Card.Header,
         Card.Description,
         Card.Description,
-        Card.Description,
         Card.Description
       );
     });
@@ -105,40 +103,7 @@ describe('<FeaturedRoomType />', () => {
     it('should have the right `children`', () => {
       const wrapper = getFeaturedRoomType()
         .find(Card.Description)
-        .at(2);
-      expectComponentToHaveChildren(
-        wrapper,
-        props.ratingNumber.toString(),
-        Rating
-      );
-    });
-
-    it('should render a single Semantic UI `Rating` component', () => {
-      const wrapper = getFeaturedRoomType()
-        .find(Card.Description)
         .at(2)
-        .find(Rating);
-      expectComponentToBe(wrapper, Rating);
-    });
-  });
-
-  describe('the `Rating` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getFeaturedRoomType().find(Rating);
-      expectComponentToHaveProps(wrapper, {
-        disabled: true,
-        maxRating: 5,
-        rating: Math.round(props.ratingNumber),
-        size: 'tiny',
-      });
-    });
-  });
-
-  describe('the fourth `Card.Description` component', () => {
-    it('should have the right `children`', () => {
-      const wrapper = getFeaturedRoomType()
-        .find(Card.Description)
-        .at(3)
         .children();
 
       expectComponentToBe(wrapper, 'span');

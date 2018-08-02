@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Image, Rating } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 
 import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
 
@@ -18,7 +18,6 @@ export const Component = ({
   imageUrl,
   locationName,
   nightPrice,
-  ratingNumber,
   roomTypeName,
   roomTypeUrl,
 }) => (
@@ -29,15 +28,6 @@ export const Component = ({
       <Card.Description>{locationName}</Card.Description>
       <Card.Description>
         {getRoomTypeDescription(guestsNumber, bedsNumber)}
-      </Card.Description>
-      <Card.Description>
-        {ratingNumber}
-        <Rating
-          disabled
-          maxRating={5}
-          rating={Math.round(ratingNumber)}
-          size="tiny"
-        />
       </Card.Description>
       <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
     </Card.Content>
@@ -63,8 +53,6 @@ Component.propTypes = {
   locationName: PropTypes.string.isRequired,
   /** The price per night of the room, with currency symbol. */
   nightPrice: PropTypes.string.isRequired,
-  /** The numeral rating for the room, out of 5 */
-  ratingNumber: PropTypes.number.isRequired,
   /** The name of the room. */
   roomTypeName: PropTypes.string.isRequired,
   /** URL pointing to a page with details of the room. */

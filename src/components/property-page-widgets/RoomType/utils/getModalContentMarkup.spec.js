@@ -36,7 +36,6 @@ const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
 const nightPrice = '$1010';
-const ratingNumber = 4;
 const slideShowImages = [
   {
     alternativeText: 'Two cats',
@@ -60,7 +59,6 @@ const getMarkup = () =>
       features,
       name,
       nightPrice,
-      ratingNumber,
       slideShowImages
     )
   );
@@ -77,7 +75,6 @@ describe('getModalContentMarkup', () => {
       expectComponentToHaveChildren(
         wrapper,
         Heading,
-        'div',
         Divider,
         Slideshow,
         Paragraph,
