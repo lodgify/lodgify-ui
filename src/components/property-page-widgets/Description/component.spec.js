@@ -17,6 +17,7 @@ import { Link } from 'elements/Link';
 import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 
+import { getEllipsis } from './utils/getEllipsis';
 import {
   descriptionText,
   extraDescriptionText,
@@ -189,6 +190,21 @@ describe('<Description />', () => {
           Subheading,
           ...getArrayOfLengthOfItem(2, Paragraph),
           ...getArrayOfLengthOfItem(1, Modal)
+        );
+      });
+    });
+
+    describe('the second `Paragraph` component', () => {
+      it('should render the right children', () => {
+        const wrapper = getDescription({ extraDescriptionText })
+          .find(Paragraph)
+          .at(1);
+        const actual = getParagraphsFromStrings(descriptionText);
+
+        expectComponentToHaveChildren(
+          wrapper,
+          actual[1],
+          getEllipsis(actual[1])
         );
       });
     });
