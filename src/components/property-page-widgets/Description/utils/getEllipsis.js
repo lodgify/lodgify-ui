@@ -2,7 +2,5 @@
  * @param  {String} paragraphText
  * @return {String}
  */
-
-export const getEllipsis = paragraphText => {
-  return paragraphText.slice(-1) === '.' ? '..' : '...';
-};
+export const getEllipsis = paragraphText =>
+  paragraphText.slice(-1) === '.' ? '..' : '...';
