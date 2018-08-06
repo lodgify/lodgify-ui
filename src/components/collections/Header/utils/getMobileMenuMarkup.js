@@ -7,6 +7,7 @@ import { SearchBar } from 'general-widgets/SearchBar';
 import { Modal } from 'elements/Modal';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
+import { hasSearchBarOptions } from './hasSearchBarOptions';
 import { getLogoMarkup } from './getLogoMarkup';
 import { getLinkMarkup } from './getLinkMarkup';
 
@@ -31,13 +32,15 @@ export const getMobileMenuMarkup = ({
   /* eslint-enable react/prop-types */
 }) => (
   <Fragment>
-    <Menu.Item>
-      <SearchBar
-        guestsOptions={searchBarGuestsOptions}
-        isDisplayedAsModal
-        locationOptions={searchBarLocationOptions}
-      />
-    </Menu.Item>
+    {hasSearchBarOptions(searchBarGuestsOptions, searchBarLocationOptions) && (
+      <Menu.Item>
+        <SearchBar
+          guestsOptions={searchBarGuestsOptions}
+          isDisplayedAsModal
+          locationOptions={searchBarLocationOptions}
+        />
+      </Menu.Item>
+    )}
     <Menu.Item>
       <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
         <Menu text vertical>
