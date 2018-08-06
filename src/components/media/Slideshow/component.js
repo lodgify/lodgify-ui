@@ -4,6 +4,7 @@ import ImageGallery from 'react-image-gallery';
 import getClassNames from 'classnames';
 
 import { Heading } from 'typography/Heading';
+import { ICON_NAMES } from 'elements/Icon';
 
 import { adaptImages } from './utils/adaptImages';
 import { renderNavButton } from './utils/renderNavButton';
@@ -32,8 +33,8 @@ export const Component = ({
       // live in `styles/semantic/themes/livingstone/collections/menu.*`
       items={adaptImages(images)}
       lazyLoad
-      renderLeftNav={renderNavButton('left')}
-      renderRightNav={renderNavButton('right')}
+      renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
+      renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
       showBullets={isShowingBulletNavigation}
       showFullscreenButton={false}
       showPlayButton={false}

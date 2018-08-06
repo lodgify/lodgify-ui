@@ -10,6 +10,7 @@ import { Heading } from 'typography/Heading';
 
 export const getNightPriceMarkup = (nightPrice, size = 'medium') => (
   <span>
-    from <Heading size={size}>{nightPrice}</Heading>/night
+    from <Heading size={size}>{nightPrice}</Heading>
+    /night
   </span>
 );

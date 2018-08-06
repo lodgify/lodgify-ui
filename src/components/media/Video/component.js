@@ -22,6 +22,7 @@ export class Component extends PureComponent {
 
   componentDidMount = () => {
     const { videoSource } = this.props;
+
     isValidHTML(videoSource) &&
       this.setState({
         // `DOMPurify.sanitize` is in `componentDidMount` so that it
@@ -72,15 +73,15 @@ export class Component extends PureComponent {
 Component.displayName = 'Video';
 
 Component.defaultProps = {
-  height: '315',
+  height: 315,
   isResponsive: false,
   videoSource: null,
-  width: '560',
+  width: 560,
 };
 
 Component.propTypes = {
   /** The height of the video to determine the aspect ratio of the video */
-  height: PropTypes.string,
+  height: PropTypes.number,
   /** Should the video be responsive */
   isResponsive: PropTypes.bool,
   /** The string that will be used to build the video player.
@@ -90,5 +91,5 @@ Component.propTypes = {
    */
   videoSource: PropTypes.string,
   /** The width of the component to determine aspect ratio */
-  width: PropTypes.string,
+  width: PropTypes.number,
 };

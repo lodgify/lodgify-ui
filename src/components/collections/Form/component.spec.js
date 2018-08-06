@@ -37,17 +37,20 @@ const getForm = (children, props) =>
 describe('<Form />', () => {
   it('should render a single Semantic UI `Card` component', () => {
     const wrapper = getForm(stringChild);
+
     expectComponentToBe(wrapper, SemanticCard);
   });
 
   it('should render a single Semantic UI Card.Content component by default', () => {
     const wrapper = getForm(stringChild);
+
     expectComponentToHaveChildren(wrapper, SemanticCard.Content);
   });
 
   describe('Semantic UI Card.Content', () => {
     it('should render a single Semantic UI Form component', () => {
       const wrapper = getForm(stringChild).find(SemanticCard.Content);
+
       expectComponentToHaveChildren(wrapper, SemanticForm);
     });
   });
@@ -57,11 +60,13 @@ describe('<Form />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSemanticForm();
+
       expectComponentToHaveProps(wrapper, { onSubmit: expect.any(Function) });
     });
 
     it('should render each non-group child wrapped in a `FormField`', () => {
       const wrapper = getSemanticForm();
+
       expectComponentToHaveChildren(wrapper, SemanticFormField);
     });
 
@@ -70,11 +75,13 @@ describe('<Form />', () => {
         .find(SemanticForm)
         .children(SemanticFormField)
         .children('input');
+
       expectComponentToHaveProps(wrapper, { onChange: expect.any(Function) });
     });
 
     it('should render each group child wrapped in a `SemanticFormGroup`', () => {
       const wrapper = getForm(groupChild).find(SemanticForm);
+
       expectComponentToHaveChildren(wrapper, SemanticFormGroup);
     });
 
@@ -82,11 +89,13 @@ describe('<Form />', () => {
       const wrapper = getForm(groupChild)
         .find(SemanticForm)
         .children(SemanticFormGroup);
+
       expectComponentToHaveProps(wrapper, { widths: 'equal' });
     });
 
     it('should nest `FormGroup` > `FormField` > input', () => {
       const wrapper = getForm(groupChild).find(SemanticFormField);
+
       expectComponentToHaveChildren(wrapper, 'input');
     });
 
@@ -98,6 +107,7 @@ describe('<Form />', () => {
 
       it('should render the right children', () => {
         const wrapper = getFormWithActionLink();
+
         expectComponentToHaveChildren(wrapper, SemanticFormField, 'a');
       });
 
@@ -106,6 +116,7 @@ describe('<Form />', () => {
 
         it('should have the right props', () => {
           const wrapper = getActionLink();
+
           expectComponentToHaveProps(wrapper, {
             onClick: expect.any(Function),
           });
@@ -113,6 +124,7 @@ describe('<Form />', () => {
 
         it('should have the right children', () => {
           const wrapper = getActionLink();
+
           expectComponentToHaveChildren(wrapper, 'mayday');
         });
       });
@@ -122,6 +134,7 @@ describe('<Form />', () => {
       it('should render a Button with the right props', () => {
         const submitButtonText = 'someText';
         const wrapper = getForm(stringChild, { submitButtonText }).find(Button);
+
         expectComponentToHaveProps(wrapper, {
           isPositionedRight: true,
         });
@@ -132,6 +145,7 @@ describe('<Form />', () => {
       it('should have the right children', () => {
         const submitButtonText = 'someText';
         const wrapper = getForm(stringChild, { submitButtonText }).find(Button);
+
         expectComponentToHaveChildren(wrapper, submitButtonText);
       });
     });
@@ -142,8 +156,10 @@ describe('<Form />', () => {
       const event = { target: { value: '🐸' } };
       const form = mount(<Form>{textInputChild}</Form>);
       const htmlInput = form.find('input');
+
       htmlInput.simulate('change', event);
       const actual = form.state('someName');
+
       expect(actual).toBe(event.target.value);
     });
   });
@@ -154,8 +170,10 @@ describe('<Form />', () => {
       const event = { target: { value: '🐸' } };
       const form = mount(<Form onSubmit={onSubmit}>{textInputChild}</Form>);
       const htmlInput = form.find('input');
+
       htmlInput.simulate('change', event);
       const semanticForm = form.children().find(SemanticForm);
+
       semanticForm.simulate('submit');
       expect(onSubmit).toHaveBeenCalledWith(form.state());
     });
@@ -168,12 +186,14 @@ describe('<Form />', () => {
       const wrapper = getFormWithHeading()
         .children(SemanticCard.Content)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
 
     describe('Heading', () => {
       it('should have the right children', () => {
         const wrapper = getFormWithHeading().find(Heading);
+
         expectComponentToHaveChildren(wrapper, headingText);
       });
     });

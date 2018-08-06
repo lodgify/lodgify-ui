@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { adaptOptions } from './utils/adaptOptions';
 import { getDefaultValue } from './utils/getDefaultValue';
@@ -26,6 +26,7 @@ export class Component extends PureComponent {
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
     const { name, onChange } = this.props;
+
     prevValue !== value && onChange(name, value);
   }
 
@@ -47,6 +48,7 @@ export class Component extends PureComponent {
     const hasImages = getHasImages(options);
     const adaptedOptions = adaptOptions(options, hasImages);
     const defaultValue = getDefaultValue(adaptedOptions, hasImages, !!label);
+
     return (
       <div
         className={getClassNames('dropdown-container', {
@@ -59,7 +61,7 @@ export class Component extends PureComponent {
         <Dropdown
           defaultValue={defaultValue}
           disabled={isDisabled || !adaptedOptions.length}
-          icon={<Icon name="caret down" />}
+          icon={<Icon name={ICON_NAMES.CARET_DOWN} />}
           onBlur={() => this.handleOpen(false)}
           onChange={this.handleChange}
           onClick={() => this.handleOpen(!isOpen)}

@@ -19,12 +19,14 @@ const getFormGroup = () => getCaptchaInput().find(Form.Group);
 describe('<CaptchaInput />', () => {
   it('should render a single Semantic UI `Form.Group` component', () => {
     const wrapper = getCaptchaInput();
+
     expectComponentToBe(wrapper, Form.Group);
   });
 
   describe('the `Form.Group` component', () => {
     it('should get the right props', () => {
       const wrapper = getFormGroup();
+
       expectComponentToHaveProps(wrapper, {
         widths: 'equal',
       });
@@ -32,6 +34,7 @@ describe('<CaptchaInput />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFormGroup();
+
       expectComponentToHaveChildren(wrapper, Form.Field, Form.Field);
     });
   });
@@ -41,6 +44,7 @@ describe('<CaptchaInput />', () => {
       const wrapper = getCaptchaInput()
         .find(Form.Field)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Image);
     });
   });
@@ -48,6 +52,7 @@ describe('<CaptchaInput />', () => {
   describe('the `Image` component', () => {
     it('should get the right props', () => {
       const wrapper = getCaptchaInput().find(Image);
+
       expectComponentToHaveProps(wrapper, {
         src: image,
       });
@@ -59,6 +64,7 @@ describe('<CaptchaInput />', () => {
       const wrapper = getCaptchaInput()
         .find(Form.Field)
         .at(1);
+
       expectComponentToHaveChildren(wrapper, TextInput);
     });
   });
@@ -66,6 +72,7 @@ describe('<CaptchaInput />', () => {
   describe('the `TextInput` component', () => {
     it('should get the right props', () => {
       const wrapper = getCaptchaInput().find(TextInput);
+
       expectComponentToHaveProps(wrapper, {
         error: false,
         isValid: false,

@@ -3,6 +3,7 @@ import { adaptOnChange } from './adaptOnChange';
 describe('adaptOnChange', () => {
   it('should return a function', () => {
     const actual = adaptOnChange();
+
     expect(actual).toBeInstanceOf(Function);
   });
 
@@ -13,6 +14,7 @@ describe('adaptOnChange', () => {
       const adaptedOnChange = adaptOnChange(onChange, name);
 
       const data = { value: '💰' };
+
       adaptedOnChange(undefined, data);
 
       expect(onChange).toHaveBeenCalledWith(

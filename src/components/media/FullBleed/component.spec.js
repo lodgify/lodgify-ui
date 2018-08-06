@@ -19,6 +19,7 @@ const getSegment = () => getFullBleed().find(Segment);
 describe('<FullBleed />', () => {
   it('should render a single Semantic UI `Segment` component', () => {
     const wrapper = getFullBleed();
+
     expectComponentToBe(wrapper, Segment);
   });
 
@@ -26,6 +27,7 @@ describe('<FullBleed />', () => {
     it('should have the right props', () => {
       const wrapper = getSegment();
       const actual = wrapper.props();
+
       expect(actual).toEqual(
         expect.objectContaining({
           children: props.children,

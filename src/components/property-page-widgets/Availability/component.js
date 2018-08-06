@@ -12,7 +12,7 @@ import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { withResponsive } from 'utils/with-responsive';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
 
 import { getMonthsToDisplay } from './utils/getMonthsToDisplay';
@@ -93,7 +93,7 @@ class Component extends PureComponent {
                 </GridColumn>
                 <GridColumn computer={7} mobile={7} tablet={12}>
                   <Dropdown
-                    icon="map pin"
+                    icon={ICON_NAMES.MAP_PIN}
                     label="Properties"
                     onChange={this.reloadCalendarOnRoomSelection}
                     options={roomOptionsWithImages}
@@ -111,7 +111,7 @@ class Component extends PureComponent {
                 color="light grey"
                 isLabelLeft
                 labelText="Unavailable"
-                name="square"
+                name={ICON_NAMES.SQUARE}
               />
             </GridColumn>
           </GridRow>
@@ -142,7 +142,7 @@ class Component extends PureComponent {
               <GridColumn width={6}>
                 <Icon
                   labelText="Previous"
-                  name="arrow left"
+                  name={ICON_NAMES.ARROW_LEFT}
                   onClick={this.handleClickPreviousMonth}
                 />
               </GridColumn>
@@ -150,7 +150,7 @@ class Component extends PureComponent {
                 <Icon
                   isLabelLeft
                   labelText="Next"
-                  name="arrow right"
+                  name={ICON_NAMES.ARROW_RIGHT}
                   onClick={this.handleClickNextMonth}
                 />
               </GridColumn>
@@ -164,7 +164,7 @@ class Component extends PureComponent {
                 color="grey"
                 isLabelLeft
                 labelText="Unavailable"
-                name="square"
+                name={ICON_NAMES.SQUARE}
               />
             </GridColumn>
           </GridColumn>

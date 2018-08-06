@@ -36,7 +36,6 @@ const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
 const nightPrice = '$1010';
-const ratingNumber = 4;
 const slideShowImages = [
   {
     alternativeText: 'Two cats',
@@ -60,7 +59,6 @@ const getMarkup = () =>
       features,
       name,
       nightPrice,
-      ratingNumber,
       slideShowImages
     )
   );
@@ -68,16 +66,17 @@ const getMarkup = () =>
 describe('getModalContentMarkup', () => {
   it('should return a `Modal.Content` component', () => {
     const wrapper = getMarkup();
+
     expectComponentToBe(wrapper, 'div');
   });
 
   describe('the `div`', () => {
     it('should render the right children', () => {
       const wrapper = getMarkup();
+
       expectComponentToHaveChildren(
         wrapper,
         Heading,
-        'div',
         Divider,
         Slideshow,
         Paragraph,
@@ -92,6 +91,7 @@ describe('getModalContentMarkup', () => {
   describe('`Heading`', () => {
     it('should render the right children', () => {
       const wrapper = getMarkup().find(Heading);
+
       expectComponentToHaveChildren(wrapper, name);
     });
   });
@@ -99,6 +99,7 @@ describe('getModalContentMarkup', () => {
   describe('`Slideshow`', () => {
     it('should have the right props', () => {
       const wrapper = getMarkup().find(Slideshow);
+
       expectComponentToHaveProps(wrapper, {
         additionalClass: 'no-shadow',
         images: slideShowImages,
@@ -111,6 +112,7 @@ describe('getModalContentMarkup', () => {
       const wrapper = getMarkup()
         .find(Paragraph)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, description);
     });
   });
@@ -123,11 +125,13 @@ describe('getModalContentMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstGrid();
+
       expectComponentToHaveProps(wrapper, { columns: 4, stackable: true });
     });
 
     it('should render the right number of children', () => {
       const wrapper = getFirstGrid();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(
@@ -143,6 +147,7 @@ describe('getModalContentMarkup', () => {
       const wrapper = getMarkup()
         .find(GridColumn)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
@@ -152,13 +157,16 @@ describe('getModalContentMarkup', () => {
       getMarkup()
         .find(Paragraph)
         .at(1);
+
     it('should have the right props', () => {
       const wrapper = getParagraph();
+
       expectComponentToHaveProps(wrapper, { weight: 'heavy' });
     });
 
     it('should render the right children', () => {
       const wrapper = getParagraph();
+
       expectComponentToHaveChildren(wrapper, features[0].labelText);
     });
   });
@@ -168,6 +176,7 @@ describe('getModalContentMarkup', () => {
       const wrapper = getMarkup()
         .find(Divider)
         .at(1);
+
       expectComponentToHaveProps(wrapper, { hasLine: true });
     });
   });
@@ -175,6 +184,7 @@ describe('getModalContentMarkup', () => {
   describe('`Amenities`', () => {
     it('should have the right props', () => {
       const wrapper = getMarkup().find(Amenities);
+
       expectComponentToHaveProps(wrapper, { amenities });
     });
   });
@@ -184,6 +194,7 @@ describe('getModalContentMarkup', () => {
       const wrapper = getMarkup()
         .find(Grid)
         .at(1);
+
       expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
     });
   });
@@ -193,8 +204,10 @@ describe('getModalContentMarkup', () => {
       getMarkup()
         .find(GridColumn)
         .at(2);
+
     it('should have the right props', () => {
       const wrapper = getThirdGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         verticalAlignContent: 'bottom',
         width: 6,
@@ -203,6 +216,7 @@ describe('getModalContentMarkup', () => {
 
     it('should render the right children', () => {
       const wrapper = getThirdGridColumn();
+
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
@@ -212,6 +226,7 @@ describe('getModalContentMarkup', () => {
       const wrapper = getMarkup()
         .find(Paragraph)
         .at(3);
+
       expectComponentToHaveChildren(wrapper, 'from', 'strong', '/night');
     });
   });
@@ -219,6 +234,7 @@ describe('getModalContentMarkup', () => {
   describe('the `strong` element', () => {
     it('should have the right children', () => {
       const wrapper = getMarkup().find('strong');
+
       expectComponentToHaveChildren(wrapper, ` ${nightPrice} `);
     });
   });
@@ -231,6 +247,7 @@ describe('getModalContentMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getFourthGrid();
+
       expectComponentToHaveProps(wrapper, {
         verticalAlignContent: 'bottom',
         width: 6,
@@ -239,14 +256,17 @@ describe('getModalContentMarkup', () => {
 
     it('should have the right children', () => {
       const wrapper = getFourthGrid();
+
       expectComponentToHaveChildren(wrapper, Button);
     });
   });
 
   describe('the `Button`', () => {
     const getButton = () => getMarkup().find(Button);
+
     it('should have the right props', () => {
       const wrapper = getButton();
+
       expectComponentToHaveProps(wrapper, {
         isPositionedRight: true,
         isRounded: true,
@@ -256,6 +276,7 @@ describe('getModalContentMarkup', () => {
 
     it('should have the right children', () => {
       const wrapper = getButton();
+
       expectComponentToHaveChildren(wrapper, 'Check Availability');
     });
   });

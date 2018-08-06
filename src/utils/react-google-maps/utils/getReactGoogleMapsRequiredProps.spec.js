@@ -19,6 +19,7 @@ describe('getReactGoogleMapsRequiredProps', () => {
       ...usedProps,
       ...otherProps,
     });
+
     expect(actual).toEqual(
       expect.objectContaining({
         googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${

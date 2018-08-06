@@ -7,7 +7,7 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { Component as Tooltip } from './component';
 
@@ -18,11 +18,13 @@ const getTooltip = () => shallow(<Tooltip content={content} />);
 describe('<Tooltip />', () => {
   it('should render a single Semantic UI `Popup` component', () => {
     const wrapper = getTooltip();
+
     expectComponentToBe(wrapper, Popup);
   });
 
   it('should pass the `Popup` component the right props', () => {
     const wrapper = getTooltip();
+
     expectComponentToHaveProps(wrapper, {
       color: 'grey',
       content,
@@ -34,7 +36,7 @@ describe('<Tooltip />', () => {
           color="grey"
           isCircular
           isColorInverted
-          name="info"
+          name={ICON_NAMES.INFO}
           size="small"
         />
       ),

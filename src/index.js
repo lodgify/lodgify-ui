@@ -8,7 +8,7 @@ export { InputGroup } from './components/collections/InputGroup';
 export { Button } from './components/elements/Button';
 export { Divider } from './components/elements/Divider';
 export { GoogleMap } from './components/elements/GoogleMap';
-export { Icon } from './components/elements/Icon';
+export { Icon, ICON_NAMES } from './components/elements/Icon';
 export { IconCard } from './components/elements/IconCard';
 export { Link } from './components/elements/Link';
 export { Modal } from './components/elements/Modal';
@@ -36,6 +36,7 @@ export {
 export { HTML } from './components/general-widgets/HTML';
 export { OwnerLogin } from './components/general-widgets/OwnerLogin';
 export { OwnerSignUp } from './components/general-widgets/OwnerSignUp';
+export { Promotion } from './components/general-widgets/Promotion';
 export { Review } from './components/general-widgets/Review';
 export { SearchBar } from './components/general-widgets/SearchBar';
 

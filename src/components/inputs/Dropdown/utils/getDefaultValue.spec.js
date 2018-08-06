@@ -8,6 +8,7 @@ describe('getDefaultValue', () => {
         { value: 'secondSafeValue' },
       ];
       const actual = getDefaultValue(options, true, false);
+
       expect(actual).toBe(options[0].value);
     });
   });
@@ -19,6 +20,7 @@ describe('getDefaultValue', () => {
         { value: 'secondGeezValue' },
       ];
       const actual = getDefaultValue(options, false, true);
+
       expect(actual).toBe(null);
     });
   });
@@ -26,6 +28,7 @@ describe('getDefaultValue', () => {
   describe('if `options` is an empty array', () => {
     it('should return null', () => {
       const actual = getDefaultValue([], false, false);
+
       expect(actual).toBe(null);
     });
   });

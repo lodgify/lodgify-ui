@@ -18,12 +18,14 @@ const getLabelGroup = () =>
 describe('getTransportOptionsMarkup', () => {
   it('should return a Semantic UI `Label.Group`', () => {
     const wrapper = getLabelGroup();
+
     expectComponentToBe(wrapper, 'div.ui.labels');
   });
 
   describe('the `Label.Group`', () => {
     it('should render the right children', () => {
       const wrapper = getLabelGroup();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(4, IconCard)
@@ -39,6 +41,7 @@ describe('getTransportOptionsMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getIconCard();
+
       expectComponentToHaveProps(wrapper, {
         isFilled: true,
         label: expect.any(String),

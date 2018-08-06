@@ -5,7 +5,7 @@ import { SingleDatePicker } from 'react-dates';
 import 'react-dates/initialize';
 
 import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
 
 import { pickDateFromState } from './utils/pickDateFromState';
@@ -27,6 +27,7 @@ export class Component extends PureComponent {
     const prevDate = pickDateFromState(prevState);
     const date = pickDateFromState(this.state);
     const { name, onChange } = this.props;
+
     !isEqual(prevDate, date) && onChange(name, date);
   };
 
@@ -53,6 +54,7 @@ export class Component extends PureComponent {
       placeholderText,
     } = this.props;
     const { date, isFocused } = this.state;
+
     return (
       <InputController
         error={error}
@@ -76,11 +78,11 @@ export class Component extends PureComponent {
           onDateChange={Function.prototype}
           onFocusChange={this.handleFocusChange}
           // Static custom appearance props.
-          customInputIcon={<Icon name="calendar" />}
+          customInputIcon={<Icon name={ICON_NAMES.CALENDAR} />}
           daySize={52}
           hideKeyboardShortcutsPanel
-          navNext={<Icon name="arrow right" />}
-          navPrev={<Icon name="arrow left" />}
+          navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
+          navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
           numberOfMonths={1}
           /* eslint-enable react/jsx-sort-props */
         />

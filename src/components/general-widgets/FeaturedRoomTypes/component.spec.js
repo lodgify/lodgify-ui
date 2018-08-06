@@ -48,6 +48,7 @@ const getFeaturedRoomTypes = otherProps =>
 describe('<FeaturedRoomTypes />', () => {
   it('should be a Lodgify UI `Grid`', () => {
     const wrapper = getFeaturedRoomTypes();
+
     expectComponentToBe(wrapper, Grid);
   });
 
@@ -55,6 +56,7 @@ describe('<FeaturedRoomTypes />', () => {
     describe('the `Grid` component', () => {
       it('should render the right children', () => {
         const wrapper = getFeaturedRoomTypes();
+
         expectComponentToHaveChildren(
           wrapper,
           ...getArrayOfLengthOfItem(2, GridColumn)
@@ -70,6 +72,7 @@ describe('<FeaturedRoomTypes />', () => {
 
       it('should have the right right props', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveProps(wrapper, {
           computer: 4,
           mobile: 12,
@@ -79,6 +82,7 @@ describe('<FeaturedRoomTypes />', () => {
 
       it('should render the right children', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveChildren(wrapper, FeaturedRoomType);
       });
     });
@@ -86,9 +90,11 @@ describe('<FeaturedRoomTypes />', () => {
 
   describe('if `props.headingText` is passed', () => {
     const headingText = 'My god I love Elton John';
+
     describe('the `Grid` component', () => {
       it('should render the right children', () => {
         const wrapper = getFeaturedRoomTypes({ headingText });
+
         expectComponentToHaveChildren(
           wrapper,
           ...getArrayOfLengthOfItem(3, GridColumn)
@@ -104,6 +110,7 @@ describe('<FeaturedRoomTypes />', () => {
 
       it('should have the right right props', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveProps(wrapper, {
           width: 12,
         });
@@ -111,6 +118,7 @@ describe('<FeaturedRoomTypes />', () => {
 
       it('should render the right children', () => {
         const wrapper = getFirstGridColumn();
+
         expectComponentToHaveChildren(wrapper, Heading);
       });
     });
@@ -118,6 +126,7 @@ describe('<FeaturedRoomTypes />', () => {
     describe('the `Heading` component', () => {
       it('should render the right children', () => {
         const wrapper = getFeaturedRoomTypes({ headingText }).find(Heading);
+
         expectComponentToHaveChildren(wrapper, headingText);
       });
     });

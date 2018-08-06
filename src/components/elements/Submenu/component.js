@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { getDefaultValue } from './utils/getDefaultValue';
 import { adaptOnChange } from './utils/adaptOnChange';
@@ -25,7 +25,7 @@ export const Component = ({
   <Dropdown
     className={isTriggerUnderlined ? 'underlined' : ''}
     defaultValue={getDefaultValue(children, items)}
-    icon={<Icon name="caret down" size="small" />}
+    icon={<Icon name={ICON_NAMES.CARET_DOWN} size="small" />}
     item={isMenuItem}
     name={name}
     onChange={adaptOnChange(onChange, name)}

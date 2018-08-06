@@ -1,3 +1,68 @@
+# [1.26.0](https://github.com/lodgify/lodgify-ui/compare/v1.25.0...v1.26.0) (2018-08-01)
+
+
+### Features
+
+* **Icon:** add extra paths ([c2a13ac](https://github.com/lodgify/lodgify-ui/commit/c2a13ac))
+
+# [1.25.0](https://github.com/lodgify/lodgify-ui/compare/v1.24.0...v1.25.0) (2018-08-01)
+
+
+### Bug Fixes
+
+* **components:** update to use the ICON_NAMES constant ([1e86318](https://github.com/lodgify/lodgify-ui/commit/1e86318))
+* **Slideshow:** update to use icon names constants ([d14f4b5](https://github.com/lodgify/lodgify-ui/commit/d14f4b5))
+
+
+### Features
+
+* **Icon:** add and expose icon name mapping ([c8a39e1](https://github.com/lodgify/lodgify-ui/commit/c8a39e1))
+
+# [1.24.0](https://github.com/lodgify/lodgify-ui/compare/v1.23.1...v1.24.0) (2018-07-30)
+
+
+### Bug Fixes
+
+* **Statistic:** Update styling of component when displayed vertically ([dd7c379](https://github.com/lodgify/lodgify-ui/commit/dd7c379))
+
+
+### Features
+
+* **Promotion:** add the component, examples and specs ([f79f569](https://github.com/lodgify/lodgify-ui/commit/f79f569))
+
+## [1.23.1](https://github.com/lodgify/lodgify-ui/compare/v1.23.0...v1.23.1) (2018-07-30)
+
+
+### Bug Fixes
+
+* **Jest:** Update config to fix build ([195ed36](https://github.com/lodgify/lodgify-ui/commit/195ed36))
+
+# [1.23.0](https://github.com/lodgify/lodgify-ui/compare/v1.22.0...v1.23.0) (2018-07-24)
+
+
+### Features
+
+* **Header:** add responsive structure and styles ([6b840f0](https://github.com/lodgify/lodgify-ui/commit/6b840f0))
+
+# [1.22.0](https://github.com/lodgify/lodgify-ui/compare/v1.21.0...v1.22.0) (2018-07-23)
+
+
+### Bug Fixes
+
+* **Icon:** change icon name from google to google plus ([272ae49](https://github.com/lodgify/lodgify-ui/commit/272ae49))
+
+
+### Features
+
+* **Icon:** add pinterest social media icon ([77ce77f](https://github.com/lodgify/lodgify-ui/commit/77ce77f))
+
+# [1.21.0](https://github.com/lodgify/lodgify-ui/compare/v1.20.0...v1.21.0) (2018-07-23)
+
+
+### Features
+
+* **Icon:** add bars to icon names ([e323227](https://github.com/lodgify/lodgify-ui/commit/e323227))
+
 # [1.20.0](https://github.com/lodgify/lodgify-ui/compare/v1.19.2...v1.20.0) (2018-07-20)
 
 

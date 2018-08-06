@@ -5,6 +5,7 @@ import { adaptImages } from './adaptImages';
 describe('adaptImages', () => {
   it('should map the input image data correctly', () => {
     const actual = adaptImages(images);
+
     expect(actual).toHaveLength(images.length);
     expect(actual[0]).toEqual({
       original: images[0].url,

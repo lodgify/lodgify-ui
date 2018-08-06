@@ -8,6 +8,7 @@ describe('getReviewerNameAndLocationString', () => {
       reviewerLocation,
       reviewerName
     );
+
     expect(actual).toBe(`${reviewerName} (${reviewerLocation})`);
   });
 });

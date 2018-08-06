@@ -16,6 +16,7 @@ const getHTMLWidget = props => shallow(<HTML {...props} />);
 describe('<HTML />', () => {
   it('should render a single `div` element', () => {
     const wrapper = getHTMLWidget();
+
     expectComponentToBe(wrapper, 'div');
   });
 
@@ -23,6 +24,7 @@ describe('<HTML />', () => {
     it('should have the right children', () => {
       const children = 'hello';
       const wrapper = getHTMLWidget({ children });
+
       expectComponentToHaveChildren(wrapper, 'div', children);
     });
 

@@ -8,7 +8,7 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
 import { Link } from 'elements/Link';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
@@ -16,7 +16,6 @@ import { Slideshow } from 'media/Slideshow';
 import { withResponsive } from 'utils/with-responsive';
 import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 
-import { getRatingMarkup } from './utils/getRatingMarkup';
 import { getRoomFeaturesMarkup } from './utils/getRoomFeaturesMarkup';
 import { getModalContentMarkup } from './utils/getModalContentMarkup';
 
@@ -33,7 +32,6 @@ const Component = ({
   isUserOnMobile,
   name,
   nightPrice,
-  ratingNumber,
   slideShowImages,
 }) => (
   <Card fluid>
@@ -50,45 +48,39 @@ const Component = ({
         </GridColumn>
         <GridColumn computer={8} mobile={12}>
           <Grid padded>
-            <GridColumn floated="left" width={8}>
+            <GridColumn computer={12} floated="left" mobile={10}>
               <Heading>{name}</Heading>
             </GridColumn>
             <GridColumn
-              computer={4}
-              mobile={2}
+              only="mobile"
               textAlign="right"
-              verticalAlignContent={isUserOnMobile ? 'middle' : 'top'}
+              verticalAlignContent="middle"
+              width={2}
             >
-              {isUserOnMobile ? (
-                <Modal
-                  trigger={
-                    <Icon
-                      color="yellow"
-                      isCircular
-                      isColorInverted
-                      name="info"
-                      size="small"
-                    />
-                  }
-                >
-                  {getModalContentMarkup(
-                    amenities,
-                    onClickCheckAvailability,
-                    description,
-                    extraFeatures,
-                    features,
-                    name,
-                    nightPrice,
-                    ratingNumber,
-                    slideShowImages
-                  )}
-                </Modal>
-              ) : (
-                getRatingMarkup(ratingNumber)
-              )}
+              <Modal
+                trigger={
+                  <Icon
+                    color="yellow"
+                    isCircular
+                    isColorInverted
+                    name={ICON_NAMES.INFO}
+                    size="small"
+                  />
+                }
+              >
+                {getModalContentMarkup(
+                  amenities,
+                  onClickCheckAvailability,
+                  description,
+                  extraFeatures,
+                  features,
+                  name,
+                  nightPrice,
+                  slideShowImages
+                )}
+              </Modal>
             </GridColumn>
             {getRoomFeaturesMarkup(isUserOnMobile, features)}
-            <ShowOnMobile>{getRatingMarkup(ratingNumber)}</ShowOnMobile>
             <GridRow>
               <GridColumn
                 only="tablet computer"
@@ -104,7 +96,6 @@ const Component = ({
                     features,
                     name,
                     nightPrice,
-                    ratingNumber,
                     slideShowImages
                   )}
                 </Modal>
@@ -185,8 +176,6 @@ Component.propTypes = {
   nightPrice: PropTypes.string.isRequired,
   /** A function called when check availability button is clicked. */
   onClickCheckAvailability: PropTypes.func.isRequired,
-  /** The numeral rating for the room, out of 5 */
-  ratingNumber: PropTypes.number.isRequired,
   /** The images to display for the slideshow */
   slideShowImages: PropTypes.arrayOf(
     PropTypes.shape({

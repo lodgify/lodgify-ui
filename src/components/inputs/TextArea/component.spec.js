@@ -16,11 +16,13 @@ const getTextArea = () => shallow(<TextArea />);
 describe('<TextArea />', () => {
   it('should render a single `InputController` component', () => {
     const wrapper = getTextArea();
+
     expectComponentToBe(wrapper, InputController);
   });
 
   it('should pass the right `props` to `InputController`', () => {
     const wrapper = getTextArea().find('InputController');
+
     expectComponentToHaveProps(wrapper, {
       error: false,
       isValid: false,
@@ -32,12 +34,14 @@ describe('<TextArea />', () => {
 
   it('should pass a `textarea` as a child to `InputController`', () => {
     const wrapper = getTextArea().find('InputController');
+
     expectComponentToHaveChildren(wrapper, 'textarea');
   });
 
   describe('the child `textarea`', () => {
     it('should have the right props', () => {
       const wrapper = getTextArea().find('textarea');
+
       expectComponentToHaveProps(wrapper, { rows: '8' });
     });
   });

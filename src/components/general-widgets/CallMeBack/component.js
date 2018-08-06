@@ -8,6 +8,7 @@ import { PhoneInput } from 'inputs/PhoneInput';
 import { SingleDatePicker } from 'inputs/SingleDatePicker';
 import { TextArea } from 'inputs/TextArea';
 import { TextInput } from 'inputs/TextInput';
+import { ICON_NAMES } from 'elements/Icon';
 
 /**
  * The standard widget for a user to request a call back.
@@ -27,7 +28,12 @@ export const Component = ({
     <TextInput label="Email" name="email" />
     <InputGroup>
       <SingleDatePicker name="date" placeholderText="Date" />
-      <Dropdown icon="clock" label="Time" name="time" options={timeOptions} />
+      <Dropdown
+        icon={ICON_NAMES.CLOCK}
+        label="Time"
+        name="time"
+        options={timeOptions}
+      />
     </InputGroup>
     <InputGroup>
       <Dropdown label="Time Zone" name="timeZone" options={timeZoneOptions} />

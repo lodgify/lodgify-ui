@@ -21,12 +21,14 @@ const getLabel = () => getIconCard().find(Label);
 describe('<IconCard />', () => {
   it('should render a single Semantic UI `Label` component', () => {
     const wrapper = getIconCard();
+
     expectComponentToBe(wrapper, Label);
   });
 
   describe('the `Label` component', () => {
     it('should get the right props', () => {
       const wrapper = getLabel();
+
       expectComponentToHaveProps(wrapper, {
         basic: true,
         className: 'icon-card',
@@ -35,6 +37,7 @@ describe('<IconCard />', () => {
 
     it('should render a single Lodgify UI `Icon` component', () => {
       const wrapper = getLabel();
+
       expectComponentToHaveChildren(wrapper, Icon);
     });
   });
@@ -42,6 +45,7 @@ describe('<IconCard />', () => {
   describe('the `Icon` component', () => {
     it('should get the right props', () => {
       const wrapper = getIconCard().find(Icon);
+
       expectComponentToHaveProps(wrapper, {
         isDisabled: false,
         name,
@@ -54,6 +58,7 @@ describe('<IconCard />', () => {
     it('should render a single Lodgify UI `Paragraph` component', () => {
       const label = '🐘';
       const wrapper = getIconCard({ label });
+
       expectComponentToHaveChildren(wrapper, Icon, Paragraph);
     });
   });
@@ -65,6 +70,7 @@ describe('<IconCard />', () => {
         🐘
       `;
       const wrapper = getIconCard({ label });
+
       expectComponentToHaveChildren(wrapper, Icon, Paragraph, Paragraph);
     });
   });
@@ -73,6 +79,7 @@ describe('<IconCard />', () => {
     it('should have the right children', () => {
       const label = '🐘';
       const wrapper = getIconCard({ label }).find(Paragraph);
+
       expectComponentToHaveChildren(wrapper, label);
     });
   });

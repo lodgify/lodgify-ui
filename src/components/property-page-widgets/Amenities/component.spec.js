@@ -32,6 +32,7 @@ describe('<Amenities />', () => {
   describe('the `Amenities` component', () => {
     it('should be a Lodgify UI `Grid`', () => {
       const wrapper = getAmenities();
+
       expectComponentToBe(wrapper, Grid);
     });
   });
@@ -39,6 +40,7 @@ describe('<Amenities />', () => {
   describe('the `Grid` component', () => {
     it('should render the right children', () => {
       const wrapper = getAmenities();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(2, GridColumn)
@@ -56,11 +58,13 @@ describe('<Amenities />', () => {
 
     it('should have the right right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, { width: 12 });
     });
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
   });
@@ -70,6 +74,7 @@ describe('<Amenities />', () => {
       const wrapper = getAmenities({
         headingText: 'Property Amenities',
       }).find(Heading);
+
       expectComponentToHaveChildren(wrapper, 'Property Amenities');
     });
   });
@@ -77,9 +82,11 @@ describe('<Amenities />', () => {
   describe('if `hasExtraItems` returns true', () => {
     const getAmenitiesWithSixCategories = () =>
       getAmenities({ amenities: sixAmenities });
+
     describe('the `Grid` component', () => {
       it('should render the right children', () => {
         const wrapper = getAmenitiesWithSixCategories();
+
         expectComponentToHaveChildren(
           wrapper,
           ...getArrayOfLengthOfItem(4, GridColumn)
@@ -95,19 +102,23 @@ describe('<Amenities />', () => {
 
       it('should have the right props', () => {
         const wrapper = getLastGridColumn();
+
         expectComponentToHaveProps(wrapper, { width: 12 });
       });
 
       it('should render the right children', () => {
         const wrapper = getLastGridColumn();
+
         expectComponentToHaveChildren(wrapper, Modal);
       });
     });
 
     describe('the `Modal`', () => {
       const getModal = () => getAmenitiesWithSixCategories().find(Modal);
+
       it('should have the right props', () => {
         const wrapper = getModal();
+
         expectComponentToHaveProps(wrapper, {
           trigger: <Link>View more</Link>,
         });
@@ -115,6 +126,7 @@ describe('<Amenities />', () => {
 
       it('should have the right children', () => {
         const wrapper = getModal();
+
         expectComponentToHaveChildren(wrapper, SemanticModal.Content);
       });
     });
@@ -124,6 +136,7 @@ describe('<Amenities />', () => {
         const wrapper = getAmenitiesWithSixCategories().find(
           SemanticModal.Content
         );
+
         expectComponentToHaveChildren(wrapper, Grid);
       });
     });
@@ -133,13 +146,16 @@ describe('<Amenities />', () => {
         getAmenitiesWithSixCategories()
           .find(Grid)
           .at(1);
+
       it('should have the right props', () => {
         const wrapper = getSecondGrid();
+
         expectComponentToHaveProps(wrapper, { padded: true, stackable: true });
       });
 
       it('should render the right children', () => {
         const wrapper = getSecondGrid();
+
         expectComponentToHaveChildren(
           wrapper,
           ...getArrayOfLengthOfItem(5, GridColumn)

@@ -36,11 +36,13 @@ const getRules = otherProps => shallow(<Rules {...props} {...otherProps} />);
 describe('<Rules />', () => {
   it('should render a single Lodgify UI `Grid` component', () => {
     const wrapper = getRules();
+
     expectComponentToBe(wrapper, Grid);
   });
 
   it('should have the right props', () => {
     const wrapper = getRules();
+
     expectComponentToHaveProps(wrapper, {
       stackable: true,
     });
@@ -49,6 +51,7 @@ describe('<Rules />', () => {
   describe('the first `Grid` component', () => {
     it('should render the right children', () => {
       const wrapper = getRules();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(3, GridColumn)
@@ -64,6 +67,7 @@ describe('<Rules />', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         width: 12,
       });
@@ -71,6 +75,7 @@ describe('<Rules />', () => {
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(wrapper, Heading);
     });
   });
@@ -78,6 +83,7 @@ describe('<Rules />', () => {
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
       const wrapper = getRules().find(Heading);
+
       expectComponentToHaveChildren(wrapper, 'House Rules');
     });
   });
@@ -90,6 +96,7 @@ describe('<Rules />', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         computer: 3,
         tablet: 5,
@@ -98,6 +105,7 @@ describe('<Rules />', () => {
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveChildren(wrapper, List);
     });
   });
@@ -105,6 +113,7 @@ describe('<Rules />', () => {
   describe('the `List` component', () => {
     it('should have the right props', () => {
       const wrapper = getRules().find(List);
+
       expectComponentToHaveProps(wrapper, {
         items: expect.any(Array),
       });
@@ -119,6 +128,7 @@ describe('<Rules />', () => {
 
     it('should have the right props', () => {
       const wrapper = getThirdGridColumn();
+
       expectComponentToHaveProps(wrapper, {
         computer: 9,
         tablet: 7,
@@ -127,6 +137,7 @@ describe('<Rules />', () => {
 
     it('should render the right children', () => {
       const wrapper = getThirdGridColumn();
+
       expectComponentToHaveChildren(wrapper, Icon, Divider, Icon);
     });
   });
@@ -136,6 +147,7 @@ describe('<Rules />', () => {
       const wrapper = getRules()
         .find(Icon)
         .at(0);
+
       expectComponentToHaveProps(wrapper, {
         labelText: expect.stringContaining('Check in:'),
         name: 'question mark',
@@ -148,6 +160,7 @@ describe('<Rules />', () => {
       const wrapper = getRules()
         .find(Icon)
         .at(1);
+
       expectComponentToHaveProps(wrapper, {
         labelText: expect.stringContaining('Check out:'),
         name: 'question mark',

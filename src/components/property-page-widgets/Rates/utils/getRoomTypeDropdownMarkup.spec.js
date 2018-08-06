@@ -35,12 +35,14 @@ const getRoomTypeDropdown = () =>
 describe('getRoomTypeDropdownMarkup', () => {
   it('should return a `GridRow`', () => {
     const wrapper = getRoomTypeDropdown();
+
     expectComponentToBe(wrapper, 'GridRow');
   });
 
   describe('the `GridRow` component', () => {
     it('should have the right props', () => {
       const wrapper = getRoomTypeDropdown();
+
       expectComponentToHaveProps(wrapper, {
         verticalAlign: 'middle',
       });
@@ -48,6 +50,7 @@ describe('getRoomTypeDropdownMarkup', () => {
 
     it('should render the right children', () => {
       const wrapper = getRoomTypeDropdown();
+
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(2, GridColumn)
@@ -63,11 +66,13 @@ describe('getRoomTypeDropdownMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveProps(wrapper, { computer: 4, mobile: 12 });
     });
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
+
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
   });
@@ -77,13 +82,16 @@ describe('getRoomTypeDropdownMarkup', () => {
       getRoomTypeDropdown()
         .find(Paragraph)
         .first();
+
     it('should have the right props', () => {
       const wrapper = getParagraph();
+
       expectComponentToHaveProps(wrapper, { weight: 'heavy' });
     });
 
     it('should render the right children', () => {
       const wrapper = getParagraph();
+
       expectComponentToHaveChildren(wrapper, 'View Rate Information for:');
     });
   });
@@ -96,11 +104,13 @@ describe('getRoomTypeDropdownMarkup', () => {
 
     it('should have the right props', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveProps(wrapper, { computer: 4, mobile: 12 });
     });
 
     it('should render the right children', () => {
       const wrapper = getSecondGridColumn();
+
       expectComponentToHaveChildren(wrapper, Dropdown);
     });
   });

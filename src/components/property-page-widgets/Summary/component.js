@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Rating, Segment } from 'semantic-ui-react';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
 import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
 
@@ -23,7 +23,7 @@ export const Component = ({
     <Segment.Group horizontal>
       <Segment>
         {locationName}
-        <Icon color="yellow" name="map pin" size="small" />
+        <Icon color="yellow" name={ICON_NAMES.MAP_PIN} size="small" />
       </Segment>
       <Segment>
         {ratingNumber}

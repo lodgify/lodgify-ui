@@ -7,6 +7,7 @@ const today = moment();
 describe('getMonthsToDisplay', () => {
   it('should return the correct start date if not on mobile', () => {
     const actual = getPreviousStartDate(today, false);
+
     expect(
       today
         .clone()
@@ -17,6 +18,7 @@ describe('getMonthsToDisplay', () => {
 
   it('should return the correct start date if on mobile', () => {
     const actual = getPreviousStartDate(today, true);
+
     expect(
       today
         .clone()

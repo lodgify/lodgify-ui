@@ -11,8 +11,6 @@ import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Slideshow } from 'media/Slideshow';
 
-import { getRatingMarkup } from './getRatingMarkup';
-
 /**
  * @param  {Object[]}    amenities
  * @param  {Function}    onClickCheckAvailability
@@ -21,7 +19,6 @@ import { getRatingMarkup } from './getRatingMarkup';
  * @param  {Object[]}    features
  * @param  {String}      name
  * @param  {String}      nightPrice
- * @param  {Number}      ratingNumber
  * @param  {Object[]}    slideShowImages
  * @return {Object}
  */
@@ -33,12 +30,10 @@ export const getModalContentMarkup = (
   features,
   name,
   nightPrice,
-  ratingNumber,
   slideShowImages
 ) => (
   <Modal.Content>
     <Heading>{name}</Heading>
-    {getRatingMarkup(ratingNumber)}
     <Divider />
     <Slideshow additionalClass="no-shadow" images={slideShowImages} />
     <Paragraph>{description}</Paragraph>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Card, Image, Rating } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
@@ -20,7 +20,6 @@ const props = {
   imageUrl: '🐱🐱',
   locationName: 'Catania',
   nightPrice: '$280',
-  ratingNumber: 4.8,
   roomTypeName: 'The Cat House',
   roomTypeUrl: '/',
 };
@@ -30,18 +29,22 @@ const getFeaturedRoomType = () => shallow(<FeaturedRoomType {...props} />);
 describe('<FeaturedRoomType />', () => {
   it('should render a single Semantic UI `Card` component', () => {
     const wrapper = getFeaturedRoomType();
+
     expectComponentToBe(wrapper, Card);
   });
 
   describe('the `Card` component', () => {
     const getCard = () => getFeaturedRoomType().find(Card);
+
     it('should have the right props', () => {
       const wrapper = getCard();
+
       expectComponentToHaveProps(wrapper, { href: props.roomTypeUrl });
     });
 
     it('should render the right children', () => {
       const wrapper = getCard();
+
       expectComponentToHaveChildren(wrapper, Image, Card.Content);
     });
   });
@@ -67,7 +70,6 @@ describe('<FeaturedRoomType />', () => {
         Card.Header,
         Card.Description,
         Card.Description,
-        Card.Description,
         Card.Description
       );
     });
@@ -76,6 +78,7 @@ describe('<FeaturedRoomType />', () => {
   describe('the `Card.Header` component', () => {
     it('should have the right `children`', () => {
       const wrapper = getFeaturedRoomType().find(Card.Header);
+
       expectComponentToHaveChildren(wrapper, props.roomTypeName);
     });
   });
@@ -85,6 +88,7 @@ describe('<FeaturedRoomType />', () => {
       const wrapper = getFeaturedRoomType()
         .find(Card.Description)
         .at(0);
+
       expectComponentToHaveChildren(wrapper, props.locationName);
     });
   });
@@ -94,6 +98,7 @@ describe('<FeaturedRoomType />', () => {
       const wrapper = getFeaturedRoomType()
         .find(Card.Description)
         .at(1);
+
       expectComponentToHaveChildren(
         wrapper,
         getRoomTypeDescription(props.guestsNumber, props.bedsNumber)
@@ -105,40 +110,7 @@ describe('<FeaturedRoomType />', () => {
     it('should have the right `children`', () => {
       const wrapper = getFeaturedRoomType()
         .find(Card.Description)
-        .at(2);
-      expectComponentToHaveChildren(
-        wrapper,
-        props.ratingNumber.toString(),
-        Rating
-      );
-    });
-
-    it('should render a single Semantic UI `Rating` component', () => {
-      const wrapper = getFeaturedRoomType()
-        .find(Card.Description)
         .at(2)
-        .find(Rating);
-      expectComponentToBe(wrapper, Rating);
-    });
-  });
-
-  describe('the `Rating` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getFeaturedRoomType().find(Rating);
-      expectComponentToHaveProps(wrapper, {
-        disabled: true,
-        maxRating: 5,
-        rating: Math.round(props.ratingNumber),
-        size: 'tiny',
-      });
-    });
-  });
-
-  describe('the fourth `Card.Description` component', () => {
-    it('should have the right `children`', () => {
-      const wrapper = getFeaturedRoomType()
-        .find(Card.Description)
-        .at(3)
         .children();
 
       expectComponentToBe(wrapper, 'span');
@@ -148,19 +120,23 @@ describe('<FeaturedRoomType />', () => {
   describe('the span', () => {
     it('should have the right children', () => {
       const wrapper = getFeaturedRoomType().find('span');
+
       expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
   });
 
   describe('the `Heading` component', () => {
     const getHeading = () => getFeaturedRoomType().find(Heading);
+
     it('should have the right props', () => {
       const wrapper = getHeading();
+
       expectComponentToHaveProps(wrapper, { size: 'medium' });
     });
 
     it('should have the right children', () => {
       const wrapper = getHeading();
+
       expectComponentToHaveChildren(wrapper, props.nightPrice);
     });
   });

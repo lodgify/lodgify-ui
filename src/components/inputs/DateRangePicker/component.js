@@ -6,7 +6,7 @@ import 'react-dates/initialize';
 
 import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
 import { withResponsive } from 'utils/with-responsive';
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
 
 import { pickDatesFromState } from './utils/pickDatesFromState';
@@ -31,6 +31,7 @@ class Component extends PureComponent {
     const prevDates = pickDatesFromState(prevState);
     const dates = pickDatesFromState(this.state);
     const { name, onChange } = this.props;
+
     !isEqual(prevDates, dates) && onChange(name, dates);
   };
 
@@ -59,6 +60,7 @@ class Component extends PureComponent {
       windowInnerWidth,
     } = this.props;
     const { endDate, focusedInput, startDate } = this.state;
+
     return (
       <InputController
         error={error}
@@ -87,12 +89,12 @@ class Component extends PureComponent {
           endDateId={uniqueId('end_date_id_')}
           startDateId={uniqueId('start_date_id_')}
           // Static custom appearance props.
-          customArrowIcon={<Icon name="arrow right" />}
-          customInputIcon={<Icon name="calendar" />}
+          customArrowIcon={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
+          customInputIcon={<Icon name={ICON_NAMES.CALENDAR} />}
           daySize={52}
           hideKeyboardShortcutsPanel
-          navNext={<Icon name="arrow right" />}
-          navPrev={<Icon name="arrow left" />}
+          navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
+          navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
           numberOfMonths={getNumberOfMonths(windowInnerWidth)}
           /* eslint-enable react/jsx-sort-props */
         />

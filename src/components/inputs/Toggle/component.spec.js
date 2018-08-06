@@ -12,6 +12,7 @@ import { Component as Toggle } from './component';
 describe('<Toggle />', () => {
   it('should render a single UI Checkbox component', () => {
     const wrapper = shallow(<Toggle />);
+
     expectComponentToBe(wrapper, Checkbox);
   });
 
@@ -24,6 +25,7 @@ describe('<Toggle />', () => {
     };
     const component = shallow(<Toggle {...PROPS} label={LABEL_TEXT} />);
     const checkbox = component.find(Checkbox);
+
     expect(checkbox.props()).toEqual(
       expect.objectContaining({
         isToggle: true,

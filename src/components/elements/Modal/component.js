@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal } from 'semantic-ui-react';
 
-import { Icon } from 'elements/Icon';
+import { Icon, ICON_NAMES } from 'elements/Icon';
 
 /**
  * A modal displays content that temporarily
@@ -11,7 +11,7 @@ import { Icon } from 'elements/Icon';
  */
 export const Component = ({ children, isFullscreen, trigger }) => (
   <Modal
-    closeIcon={<Icon name="close" />}
+    closeIcon={<Icon name={ICON_NAMES.CLOSE} />}
     content={children}
     dimmer="inverted"
     size={isFullscreen ? 'fullscreen' : 'tiny'}

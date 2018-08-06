@@ -12,6 +12,7 @@ describe('getNumberOfMonths', () => {
 
     testCases.forEach(testCase => {
       const actual = getNumberOfMonths(testCase);
+
       expect(actual).toBeUndefined();
     });
   });
@@ -24,6 +25,7 @@ describe('getNumberOfMonths', () => {
 
     testCases.forEach(testCase => {
       const actual = getNumberOfMonths(testCase);
+
       expect(actual).toBe(1);
     });
   });

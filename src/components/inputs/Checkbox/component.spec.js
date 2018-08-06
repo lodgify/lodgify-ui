@@ -14,12 +14,14 @@ const getCheckbox = () => shallow(<Checkbox />);
 describe('<Checkbox />', () => {
   it('should render a single Semantic UI Checkbox component', () => {
     const wrapper = getCheckbox();
+
     expectComponentToBe(wrapper, SemanticCheckbox);
   });
 
   describe('`SemanticCheckbox`', () => {
     it('should have the right props', () => {
       const wrapper = getCheckbox().find(SemanticCheckbox);
+
       expectComponentToHaveProps(wrapper, {
         checked: undefined,
         defaultChecked: undefined,
@@ -40,6 +42,7 @@ describe('<Checkbox />', () => {
       const checkbox = shallow(
         <Checkbox name={name} onChange={handleChange} />
       );
+
       checkbox.simulate('change', undefined, { checked: true });
       expect(handleChange).toHaveBeenCalledWith(name, true);
     });

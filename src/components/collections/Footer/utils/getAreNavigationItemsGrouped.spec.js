@@ -12,8 +12,10 @@ describe('getAreNavigationItemsGrouped', () => {
           { subItems: [0, 1, 2] },
         ],
       ];
+
       testCases.forEach(testCase => {
         const actual = getAreNavigationItemsGrouped(testCase);
+
         expect(actual).toBe(true);
       });
     });
@@ -26,8 +28,10 @@ describe('getAreNavigationItemsGrouped', () => {
         [{ subItems: [] }, {}, {}],
         [{ subItems: undefined }, { subItems: [] }, {}],
       ];
+
       testCases.forEach(testCase => {
         const actual = getAreNavigationItemsGrouped(testCase);
+
         expect(actual).toBe(false);
       });
     });

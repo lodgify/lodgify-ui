@@ -18,53 +18,135 @@ An icon can display a named svg from the Lodgify UI icon library or any valid sv
 Library icons
 
 ```jsx
-<Icon name="arrow down" />
-<Icon name="arrow left" />
-<Icon name="arrow right" />
-<Icon name="arrow up" />
-<Icon name="bathroom" />
-<Icon name="bedroom door" />
-<Icon name="bus" />
-<Icon name="calendar" />
-<Icon name="caret down" />
-<Icon name="caret left" />
-<Icon name="caret right" />
-<Icon name="caret up" />
-<Icon name="check in" />
-<Icon name="check out" />
-<Icon name="checkmark" />
-<Icon name="chevron right" />
-<Icon name="chevron left" />
-<Icon name="clock" />
-<Icon name="close" />
-<Icon name="coffee" />
-<Icon name="double bed" />
-<Icon name="facebook" />
-<Icon name="fire" />
-<Icon name="google" />
-<Icon name="guests" />
-<Icon name="home" />
-<Icon name="info" />
-<Icon name="instagram" />
-<Icon name="leaf" />
-<Icon name="location" />
-<Icon name="map pin" />
-<Icon name="paw" />
-<Icon name="phone" />
-<Icon name="placeholder" />
-<Icon name="plane" />
-<Icon name="question mark" />
-<Icon name="road" />
-<Icon name="search" />
-<Icon name="single bed" />
-<Icon name="star" />
-<Icon name="square" />
-<Icon name="sun" />
-<Icon name="train" />
-<Icon name="twitter" />
-<Icon name="users" />
-<Icon name="wheelchair" />
-<Icon name="youtube" />
+<Heading size="small">Arrows</Heading>
+
+<Icon labelText="arrow down" name="arrow down" />
+<Icon labelText="arrow left" name="arrow left" />
+<Icon labelText="arrow right" name="arrow right" />
+<Icon labelText="arrow up" name="arrow up" />
+<Divider />
+<Icon labelText="caret down" name="caret down" />
+<Icon labelText="caret left" name="caret left" />
+<Icon labelText="caret right" name="caret right" />
+<Icon labelText="caret up" name="caret up" />
+<Divider />
+<Icon labelText="chevron right" name="chevron right" />
+<Icon labelText="chevron left" name="chevron left" />
+<Divider />
+
+<Heading size="small">Interface actions</Heading>
+
+<Icon labelText="bars" name="bars" />
+<Divider />
+<Icon labelText="checkmark" name="checkmark" />
+<Divider />
+<Icon labelText="close" name="close" />
+<Divider />
+<Icon labelText="info" name="info" />
+<Divider />
+<Icon labelText="placeholder" name="placeholder" />
+<Divider />
+<Icon labelText="question mark" name="question mark" />
+<Divider />
+<Icon labelText="search" name="search" />
+<Divider />
+<Icon labelText="square" name="square" />
+<Divider />
+<Icon labelText="star" name="star" />
+<Divider />
+<Icon labelText="users" name="users" />
+<Divider />
+
+
+<Heading size="small">Directions and transport</Heading>
+
+<Icon labelText="bus" name="bus" />
+<Divider />
+<Icon labelText="location" name="location" />
+<Divider />
+<Icon labelText="map pin" name="map pin" />
+<Divider />
+<Icon labelText="plane" name="plane" />
+<Divider />
+<Icon labelText="road" name="road" />
+<Divider />
+<Icon labelText="train" name="train" />
+<Divider />
+
+<Heading size="small">Property features</Heading>
+<Icon labelText="bathroom" name="bathroom" />
+<Divider />
+<Icon labelText="bedroom door" name="bedroom door" />
+<Divider />
+<Icon labelText="check in" name="check in" />
+<Divider />
+<Icon labelText="check out" name="check out" />
+<Divider />
+<Icon labelText="coffee" name="coffee" />
+<Divider />
+<Icon labelText="cooking" name="cooking" />
+<Divider />
+<Icon labelText="credit card" name="credit card" />
+<Divider />
+<Icon labelText="double bed" name="double bed" />
+<Divider />
+<Icon labelText="entertainment" name="entertainment" />
+<Divider />
+<Icon labelText="fire" name="fire" />
+<Divider />
+<Icon labelText="heating" name="heating" />
+<Divider />
+<Icon labelText="home" name="home" />
+<Divider />
+<Icon labelText="laundry" name="laundry" />
+<Divider />
+<Icon labelText="leaf" name="leaf" />
+<Divider />
+<Icon labelText="no children" name="no children" />
+<Divider />
+<Icon labelText="parking" name="parking" />
+<Divider />
+<Icon labelText="paw" name="paw" />
+<Divider />
+<Icon labelText="phone" name="phone" />
+<Divider />
+<Icon labelText="port" name="port" />
+<Divider />
+<Icon labelText="single bed" name="single bed" />
+<Divider />
+<Icon labelText="sun" name="sun" />
+<Divider />
+<Icon labelText="underground" name="underground" />
+<Divider />
+<Icon labelText="wheelchair" name="wheelchair" />
+<Divider />
+<Icon labelText="wifi" name="wifi" />
+
+<Heading size="small">Scheduling</Heading>
+
+<Icon labelText="calendar" name="calendar" />
+<Divider />
+<Icon labelText="clock" name="clock" />
+<Divider />
+<Icon labelText="guests" name="guests" />
+<Divider />
+<Icon labelText="phone" name="phone" />
+<Divider />
+
+<Divider />
+<Heading size="small">Social media</Heading>
+<Icon labelText="facebook" name="facebook" />
+<Divider />
+<Icon labelText="google plus" name="google plus" />
+<Divider />
+<Icon labelText="instagram" name="instagram" />
+<Divider />
+<Icon labelText="pinterest" name="pinterest" />
+<Divider />
+<Icon labelText="twitter" name="twitter" />
+<Divider />
+<Icon labelText="youtube" name="youtube" />
+<Divider />
 ```
 
 ### States
