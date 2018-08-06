@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/lodgify/lodgify-ui/compare/v1.26.0...v1.27.0) (2018-08-06)
+
+
+### Features
+
+* **Icon:** add rounded border ([37e2f73](https://github.com/lodgify/lodgify-ui/commit/37e2f73))
+
 # [1.26.0](https://github.com/lodgify/lodgify-ui/compare/v1.25.0...v1.26.0) (2018-08-01)
 
 
