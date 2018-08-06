@@ -71,4 +71,11 @@ i.icon {
       }
     }
   }
+
+  &.has-border {
+    border: @1px solid;
+    height: @iconHeightWithBorder;
+    padding: @iconPaddingWithBorder;
+    border-radius: @50px;
+  }
 }
