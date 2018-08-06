@@ -5,7 +5,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 <div style={{ backgroundColor: 'grey'}}>
   <Header
     logoSrc={logoSrc}
-    logoText={'Livingstone Cottage'}
+    logoText="Livingstone Cottage"
     navigationItems={navigationItems}
     primaryCTA={{ href: '/book', text: 'Book now'}}
   />
@@ -26,14 +26,14 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
   <div style={{ backgroundColor: 'grey'}}>
     <Header
       logoSrc={logoSrc}
-      logoText={'Livingstone Cottage'}
+      logoText="Livingstone Cottage"
       navigationItems={navigationItems}
     />
   </div>
   <Divider />
   <div style={{ backgroundColor: 'grey'}}>
     <Header
-      logoText={'Livingstone Cottage'}
+      logoText="Livingstone Cottage"
       navigationItems={navigationItems}
     />
   </div>
@@ -76,7 +76,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 <div style={{ backgroundColor: 'grey'}}>
   <Header
     logoSrc={logoSrc}
-    logoText={'Livingstone Cottage'}
+    logoText="Livingstone Cottage"
     navigationItems={navigationItems}
   />
 </div>
@@ -91,9 +91,28 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 <div style={{ backgroundColor: 'grey'}}>
   <Header
     logoSrc={logoSrc}
-    logoText={'Livingstone Cottage'}
+    logoText="Livingstone Cottage"
     navigationItems={navigationItems}
     primaryCTA={{ href: '/book', text: 'Book now'}}
+  />
+</div>
+```
+
+#### Search bar
+
+The header can display a clickable icon to reveal the search bar on mobile screens
+
+```jsx
+const { navigationItems } = require('./mock-data/navigationItems');
+const searchBarGuestsOptions = [{ text: '1', value: 1 }];
+const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
+
+<div style={{ backgroundColor: 'grey'}}>
+  <Header
+    logoText="Livingstone Cottage"
+    navigationItems={navigationItems}
+    searchBarGuestsOptions={searchBarGuestsOptions}
+    searchBarLocationOptions={searchBarLocationOptions}
   />
 </div>
 ```
@@ -110,7 +129,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
   <Header
     activeNavigationItemIndex={0}
     logoSrc={logoSrc}
-    logoText={'Livingstone Cottage'}
+    logoText="Livingstone Cottage"
     navigationItems={navigationItems}
   />
 </div>
