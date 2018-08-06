@@ -17,8 +17,8 @@ import { getMobileMenuMarkup } from './getMobileMenuMarkup';
 
 const logoSrc = 'someLogoSrc';
 const logoText = 'someLogoText';
-const searchBarGuestsOptions = [];
-const searchBarLocationOptions = [];
+const searchBarGuestsOptions = [{ text: '1', value: 1 }];
+const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
 
 const getMarkupAsRenderedComponent = extraProps =>
   shallow(
@@ -28,8 +28,6 @@ const getMarkupAsRenderedComponent = extraProps =>
         logoSrc,
         logoText,
         navigationItems,
-        searchBarGuestsOptions,
-        searchBarLocationOptions,
         ...extraProps,
       })}
     </div>
@@ -49,42 +47,16 @@ describe('getMobileMenuMarkup', () => {
     expectComponentToBe(wrapper, Menu.Item);
   });
 
-  describe('the first `Menu.Item` component', () => {
-    it('should render a Lodgify UI `SearchBar` component', () => {
-      const wrapper = getChildOfFragment(0);
-
-      expectComponentToHaveChildren(wrapper, SearchBar);
-    });
-  });
-
-  describe('the `SearchBar` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getChildOfFragment(0).find(SearchBar);
-
-      expectComponentToHaveProps(wrapper, {
-        guestsOptions: searchBarGuestsOptions,
-        isDisplayedAsModal: true,
-        locationOptions: searchBarLocationOptions,
-      });
-    });
-  });
-
-  it('should render a Semantic UI `Menu.Item` component as the second child of the fragment', () => {
-    const wrapper = getChildOfFragment(1);
-
-    expectComponentToBe(wrapper, Menu.Item);
-  });
-
-  describe('the second `Menu.Item` component', () => {
+  describe('the `Menu.Item` component', () => {
     it('should render a Lodgify UI `Modal` component', () => {
-      const wrapper = getChildOfFragment(1);
+      const wrapper = getChildOfFragment(0);
 
       expectComponentToHaveChildren(wrapper, Modal);
     });
   });
 
   describe('the `Modal` component', () => {
-    const getModal = () => getChildOfFragment(1).find(Modal);
+    const getModal = () => getChildOfFragment(0).find(Modal);
 
     it('should have the right props', () => {
       const wrapper = getModal();
@@ -103,7 +75,7 @@ describe('getMobileMenuMarkup', () => {
   });
 
   describe('the `Menu` component', () => {
-    const getMenu = () => getChildOfFragment(1).find(Menu);
+    const getMenu = () => getChildOfFragment(0).find(Menu);
 
     it('should have the right props', () => {
       const wrapper = getMenu();
@@ -123,7 +95,7 @@ describe('getMobileMenuMarkup', () => {
 
   describe('each `Accordion` component', () => {
     it('should have the right props', () => {
-      const wrapper = getChildOfFragment(1).find(Accordion);
+      const wrapper = getChildOfFragment(0).find(Accordion);
 
       expectComponentToHaveProps(wrapper, {
         as: Menu.Item,
@@ -139,6 +111,40 @@ describe('getMobileMenuMarkup', () => {
             },
           },
         ],
+      });
+    });
+  });
+
+  describe('if `props.searchBarGuestsOptions` and `props.searchBarLocationOptions` are defined and populated', () => {
+    const getSearchBarMenuItem = () =>
+      getChildOfFragment(0, {
+        searchBarGuestsOptions,
+        searchBarLocationOptions,
+      });
+
+    it('should render a Semantic UI `Menu.Item` component as the first child of the fragment', () => {
+      const wrapper = getSearchBarMenuItem();
+
+      expectComponentToBe(wrapper, Menu.Item);
+    });
+
+    describe('the `Menu.Item` component', () => {
+      it('should render a Lodgify UI `SearchBar` component', () => {
+        const wrapper = getSearchBarMenuItem();
+
+        expectComponentToHaveChildren(wrapper, SearchBar);
+      });
+    });
+
+    describe('the `SearchBar` component', () => {
+      it('should have the right props', () => {
+        const wrapper = getSearchBarMenuItem().find(SearchBar);
+
+        expectComponentToHaveProps(wrapper, {
+          guestsOptions: searchBarGuestsOptions,
+          isDisplayedAsModal: true,
+          locationOptions: searchBarLocationOptions,
+        });
       });
     });
   });
