@@ -13,6 +13,7 @@ import { Component as Icon } from './component';
 
 const props = {
   color: 'green',
+  hasBorder: true,
   isCircular: true,
   isColorInverted: true,
   isDisabled: true,
@@ -35,7 +36,7 @@ describe('<Icon />', () => {
       const { color, size } = props;
 
       expectComponentToHaveProps(wrapper, {
-        className: `icon ${color} ${size} circular inverted grey inverted`,
+        className: `icon ${color} ${size} circular has-border inverted grey inverted`,
         some: 'otherProps',
       });
     });
