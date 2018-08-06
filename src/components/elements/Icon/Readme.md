@@ -72,8 +72,11 @@ Library icons
 <Divider />
 <Icon labelText="train" name="train" />
 <Divider />
+<Icon labelText="underground" name="underground" />
+<Divider />
 
 <Heading size="small">Property features</Heading>
+
 <Icon labelText="bathroom" name="bathroom" />
 <Divider />
 <Icon labelText="bedroom door" name="bedroom door" />
@@ -116,11 +119,10 @@ Library icons
 <Divider />
 <Icon labelText="sun" name="sun" />
 <Divider />
-<Icon labelText="underground" name="underground" />
-<Divider />
 <Icon labelText="wheelchair" name="wheelchair" />
 <Divider />
 <Icon labelText="wifi" name="wifi" />
+<Divider />
 
 <Heading size="small">Scheduling</Heading>
 
@@ -133,8 +135,8 @@ Library icons
 <Icon labelText="phone" name="phone" />
 <Divider />
 
-<Divider />
 <Heading size="small">Social media</Heading>
+
 <Icon labelText="facebook" name="facebook" />
 <Divider />
 <Icon labelText="google plus" name="google plus" />
@@ -231,6 +233,12 @@ Library icons
 <Icon color='pink' isCircular isColorInverted />
 <Icon color='brown' isCircular />
 <Icon color='brown' isCircular isColorInverted />
+```
+
+#### Bordered
+
+```jsx
+<Icon hasBorder name="credit card" labelText="Credit card" />
 ```
 
 #### Labeled

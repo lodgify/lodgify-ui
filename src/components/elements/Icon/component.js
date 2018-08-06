@@ -13,6 +13,7 @@ import { getPath } from './utils/getPath';
  */
 export const Component = ({
   color,
+  hasBorder,
   isCircular,
   isColorInverted,
   isDisabled,
@@ -27,6 +28,7 @@ export const Component = ({
   <i
     className={getClassNames('icon', color, size, {
       circular: isCircular,
+      'has-border': hasBorder,
       'inverted grey': isDisabled,
       inverted: isColorInverted,
     })}
@@ -48,6 +50,7 @@ Component.displayName = 'Icon';
 
 Component.defaultProps = {
   color: null,
+  hasBorder: false,
   isCircular: false,
   isColorInverted: false,
   isDisabled: false,
@@ -77,6 +80,8 @@ Component.propTypes = {
     'light grey',
     'black',
   ]),
+  /** Is the icon formatted to have a border  */
+  hasBorder: PropTypes.bool,
   /** Is the icon formatted to appear circular  */
   isCircular: PropTypes.bool,
   /** Is the color of the icon inverted for contrast */
