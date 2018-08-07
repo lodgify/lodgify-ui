@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/lodgify/lodgify-ui/compare/v1.27.0...v1.28.0) (2018-08-07)
+
+
+### Features
+
+* **Description:** update component functionality ([99b5945](https://github.com/lodgify/lodgify-ui/commit/99b5945))
+
 # [1.27.0](https://github.com/lodgify/lodgify-ui/compare/v1.26.0...v1.27.0) (2018-08-06)
 
 
