@@ -1,9 +1,16 @@
 ```jsx
-const { descriptionText, icons } = require('./mock-data/props');
+const { descriptionText, homeHighlights, propertyMainCharacteristics } = require('./mock-data/props');
+
+// const homeHighlights = [
+//   { iconName: 'credit card', text: 'credit cards' },
+//   { iconName: 'no children', text: 'no children allowed' },
+// ];
 
 <Description
   descriptionText={descriptionText}
-  icons={icons}
+  homeHighlights={homeHighlights}
+  propertyMainCharacteristics={propertyMainCharacteristics}
+  propertyName="Lonely Lodge"
   propertyType="Bed & Breakfast"
 />
 ```
@@ -16,13 +23,16 @@ const { descriptionText, icons } = require('./mock-data/props');
 const {
   descriptionText,
   extraDescriptionText,
-  icons
+  homeHighlights,
+  propertyMainCharacteristics,
 } = require('./mock-data/props');
 
 <Description
   descriptionText={descriptionText}
   extraDescriptionText={extraDescriptionText}
-  icons={icons}
+  homeHighlights={homeHighlights}
+  propertyMainCharacteristics={propertyMainCharacteristics}
+  propertyName="Lonely Lodge"
   propertyType="Bed & Breakfast"
 />
 ```
