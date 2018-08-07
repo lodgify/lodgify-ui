@@ -37,7 +37,7 @@ Component.propTypes = {
     PropTypes.shape({
       /**
        * The name of the icon to display.
-       * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/tree/production/src/constants/icon-names.js)
+       * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
        */
       iconName: PropTypes.string.isRequired,
       /** A visible label to display for the sleeping arrangement. */
