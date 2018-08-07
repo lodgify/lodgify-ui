@@ -41,7 +41,7 @@ Component.propTypes = {
     PropTypes.shape({
       /**
        * The name of the icon to display.
-       * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/IconCard)
+       * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/tree/production/src/constants/icon-names.js)
        */
       iconName: PropTypes.string.isRequired,
       /** Is the key fact disabled. */

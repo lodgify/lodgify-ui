@@ -138,7 +138,7 @@ Component.propTypes = {
     PropTypes.shape({
       /**
        * The name of the icon to display.
-       * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/Icon)
+       * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/tree/production/src/constants/icon-names.js)
        */
       iconName: PropTypes.string.isRequired,
       /** The list of amenity items displayed for each category */
@@ -160,6 +160,10 @@ Component.propTypes = {
   features: PropTypes.arrayOf(
     PropTypes.shape({
       count: PropTypes.number,
+      /**
+       * The name of the icon to display.
+       * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/tree/production/src/constants/icon-names.js)
+       */
       iconName: PropTypes.string,
       label: PropTypes.string,
     })
