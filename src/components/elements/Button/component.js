@@ -61,7 +61,9 @@ Component.propTypes = {
   children: PropTypes.node,
   /** Has the button shadow. */
   hasShadow: PropTypes.bool,
-  /** An icon to display in the button */
+  /** An icon to display in the button
+   * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
+   */
   icon: PropTypes.string,
   /** Has the button got reduced padding. */
   isCompact: PropTypes.bool,

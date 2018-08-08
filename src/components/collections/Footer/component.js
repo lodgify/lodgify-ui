@@ -152,7 +152,9 @@ Component.propTypes = {
     PropTypes.shape({
       /** The href url pointing to the social media account. */
       href: PropTypes.string,
-      /** The name of the icon to display. Can be any allowed name for the [`Icon` element](/#!/Icon) */
+      /** The name of the icon to display. Can be any allowed name for the [`Icon` element](/#!/Icon)
+       * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
+       */
       iconName: PropTypes.string,
       /** The path of the icon to display. See [`Icon` props](/#!/Icon) for guidance. */
       iconPath: PropTypes.string,
