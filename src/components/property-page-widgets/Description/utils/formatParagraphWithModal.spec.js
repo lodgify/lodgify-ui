@@ -30,27 +30,16 @@ const getMarkupAsRenderedComponent = () =>
     </div>
   );
 
-const getChildOfFragment = index =>
-  getMarkupAsRenderedComponent()
-    .children()
-    .first()
-    .children()
-    .at(index);
-
 describe('`formatParagraphWithModal`', () => {
-  describe('the `Fragment`', () => {
-    it('should render the right children', () => {
-      const wrapper = getMarkupAsRenderedComponent()
-        .children()
-        .first();
-      const string = getParagraphWithEllipsis(paragraphText);
+  it('should render the right children', () => {
+    const wrapper = getMarkupAsRenderedComponent();
+    const string = getParagraphWithEllipsis(paragraphText);
 
-      expectComponentToHaveChildren(wrapper, string, Modal);
-    });
+    expectComponentToHaveChildren(wrapper, string, Modal);
   });
 
   describe('the `Modal`', () => {
-    const getModal = () => getChildOfFragment(1);
+    const getModal = () => getMarkupAsRenderedComponent().find(Modal);
 
     it('should have the right props', () => {
       const wrapper = getModal(1);
@@ -75,7 +64,7 @@ describe('`formatParagraphWithModal`', () => {
 
     describe('each `Paragraph`', () => {
       it('should have the right children', () => {
-        const wrapper = getChildOfFragment(1)
+        const wrapper = getMarkupAsRenderedComponent()
           .find(Paragraph)
           .at(0);
 

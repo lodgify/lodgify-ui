@@ -13,9 +13,11 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
+import { Modal } from 'elements/Modal';
 import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
 
+import { getParagraphWithEllipsis } from './utils/getParagraphWithEllipsis';
 import {
   descriptionText,
   extraDescriptionText,
@@ -177,8 +179,11 @@ describe('<Description />', () => {
         const wrapper = getDescription({ extraDescriptionText })
           .find(Paragraph)
           .at(1);
+        const finalParagraph = getParagraphWithEllipsis(
+          getParagraphsFromStrings(descriptionText)[1]
+        );
 
-        expectComponentToHaveChildren(wrapper, React.Fragment);
+        expectComponentToHaveChildren(wrapper, finalParagraph, Modal);
       });
     });
   });
