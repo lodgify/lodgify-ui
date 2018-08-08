@@ -31,32 +31,27 @@ const getMarkupAsRenderedComponent = extraProps =>
         ...extraProps,
       })}
     </div>
-  );
-
-const getChildOfFragment = (index, extraProps) =>
-  getMarkupAsRenderedComponent(extraProps)
+  )
     .children()
-    .first()
-    .children()
-    .at(index);
+    .first();
 
 describe('getMobileMenuMarkup', () => {
-  it('should render a Semantic UI `Menu.Item` component as the first child of the fragment', () => {
-    const wrapper = getChildOfFragment(0);
+  it('should render a Semantic UI `Menu.Item`', () => {
+    const wrapper = getMarkupAsRenderedComponent();
 
     expectComponentToBe(wrapper, Menu.Item);
   });
 
   describe('the `Menu.Item` component', () => {
     it('should render a Lodgify UI `Modal` component', () => {
-      const wrapper = getChildOfFragment(0);
+      const wrapper = getMarkupAsRenderedComponent();
 
       expectComponentToHaveChildren(wrapper, Modal);
     });
   });
 
   describe('the `Modal` component', () => {
-    const getModal = () => getChildOfFragment(0).find(Modal);
+    const getModal = () => getMarkupAsRenderedComponent().find(Modal);
 
     it('should have the right props', () => {
       const wrapper = getModal();
@@ -75,7 +70,7 @@ describe('getMobileMenuMarkup', () => {
   });
 
   describe('the `Menu` component', () => {
-    const getMenu = () => getChildOfFragment(0).find(Menu);
+    const getMenu = () => getMarkupAsRenderedComponent().find(Menu);
 
     it('should have the right props', () => {
       const wrapper = getMenu();
@@ -95,7 +90,7 @@ describe('getMobileMenuMarkup', () => {
 
   describe('each `Accordion` component', () => {
     it('should have the right props', () => {
-      const wrapper = getChildOfFragment(0).find(Accordion);
+      const wrapper = getMarkupAsRenderedComponent().find(Accordion);
 
       expectComponentToHaveProps(wrapper, {
         as: Menu.Item,
@@ -117,7 +112,7 @@ describe('getMobileMenuMarkup', () => {
 
   describe('if `props.searchBarGuestsOptions` and `props.searchBarLocationOptions` are defined and populated', () => {
     const getSearchBarMenuItem = () =>
-      getChildOfFragment(0, {
+      getMarkupAsRenderedComponent({
         searchBarGuestsOptions,
         searchBarLocationOptions,
       });

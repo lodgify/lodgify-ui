@@ -25,30 +25,20 @@ const getMarkupAsRenderedComponent = extraProps =>
     </div>
   );
 
-const getChildOfFragment = (index, extraProps) =>
-  getMarkupAsRenderedComponent(extraProps)
-    .children()
-    .first()
-    .children()
-    .at(index);
-
 describe('getDesktopMenuMarkup', () => {
-  it('should render the return value of `getLinkMarkup` as the first child of the fragment', () => {
-    const wrapper = getChildOfFragment(0);
+  it('should render the right children', () => {
+    const wrapper = getMarkupAsRenderedComponent();
 
-    expectComponentToBe(wrapper, Menu.Item);
-  });
-
-  it('should render a Lodgify UI `Submenu` as the second child of the fragment', () => {
-    const wrapper = getChildOfFragment(1);
-
-    expectComponentToBe(wrapper, Submenu);
+    expectComponentToHaveChildren(wrapper, Menu.Item, Submenu);
   });
 
   describe('the `Submenu` component', () => {
+    const getSubmenu = extraProps =>
+      getMarkupAsRenderedComponent(extraProps).find(Submenu);
+
     it('should get the right props', () => {
       const { subItems, text } = navigationItems[1];
-      const wrapper = getChildOfFragment(1).find(Submenu);
+      const wrapper = getSubmenu();
 
       expectComponentToHaveProps(wrapper, {
         isMenuItem: true,
@@ -61,9 +51,9 @@ describe('getDesktopMenuMarkup', () => {
     });
 
     it('should get `props.isTriggerUnderlined = true` if required', () => {
-      const wrapper = getChildOfFragment(1, {
+      const wrapper = getSubmenu({
         activeNavigationItemIndex: 1,
-      }).find(Submenu);
+      });
 
       expectComponentToHaveProps(wrapper, { isTriggerUnderlined: true });
     });
@@ -71,41 +61,39 @@ describe('getDesktopMenuMarkup', () => {
 
   describe('if `props.primaryCTA` is passed', () => {
     const primaryCTA = { href: 'someHref', text: 'someText' };
+    const getMenuItem = () =>
+      getMarkupAsRenderedComponent({ primaryCTA })
+        .find(Menu.Item)
+        .at(1);
 
-    it('should render a Semantic UI `Menu.Item` as the third child of the fragment', () => {
-      const wrapper = getChildOfFragment(2, {
-        primaryCTA,
-      });
+    it('should render an extra Semantic UI `Menu.Item`', () => {
+      const wrapper = getMarkupAsRenderedComponent({ primaryCTA })
+        .children()
+        .at(2);
 
       expectComponentToBe(wrapper, Menu.Item);
     });
 
     describe('the `Menu.Item` component ', () => {
       it('should get the right props', () => {
-        const wrapper = getChildOfFragment(2, {
-          primaryCTA,
-        });
+        const wrapper = getMenuItem();
 
         expectComponentToHaveProps(wrapper, {
           className: 'no-underline',
-          link: true,
           href: primaryCTA.href,
+          link: true,
         });
       });
 
       describe('the Lodgify UI `Button`', () => {
         it('should render a Lodgify UI `Button` component', () => {
-          const wrapper = getChildOfFragment(2, {
-            primaryCTA,
-          });
+          const wrapper = getMenuItem();
 
           expectComponentToHaveChildren(wrapper, Button);
         });
 
         it('should have the right children', () => {
-          const wrapper = getChildOfFragment(2, {
-            primaryCTA,
-          }).find(Button);
+          const wrapper = getMenuItem().find(Button);
 
           expectComponentToHaveChildren(wrapper, primaryCTA.text);
         });
