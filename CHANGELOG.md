@@ -1,3 +1,10 @@
+## [1.28.1](https://github.com/lodgify/lodgify-ui/compare/v1.28.0...v1.28.1) (2018-08-08)
+
+
+### Bug Fixes
+
+* **components:** update docs to reference new list of icons ([f849e48](https://github.com/lodgify/lodgify-ui/commit/f849e48))
+
 # [1.28.0](https://github.com/lodgify/lodgify-ui/compare/v1.27.0...v1.28.0) (2018-08-07)
 
 
