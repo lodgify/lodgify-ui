@@ -11,23 +11,28 @@ import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
-import { Subheading } from 'typography/Subheading';
-import { Paragraph } from 'typography/Paragraph';
-import { Link } from 'elements/Link';
+import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
+import { Paragraph } from 'typography/Paragraph';
+import { Subheading } from 'typography/Subheading';
 
-import { getEllipsis } from './utils/getEllipsis';
+import { getParagraphWithEllipsis } from './utils/getParagraphWithEllipsis';
 import {
   descriptionText,
   extraDescriptionText,
-  icons,
+  propertyMainCharacteristics,
 } from './mock-data/props';
 import { Component as Description } from './component';
 
 const props = {
   descriptionText,
-  icons,
+  homeHighlights: [
+    { iconName: 'credit card', text: 'credit cards' },
+    { iconName: 'no children', text: 'no children allowed' },
+  ],
+  propertyMainCharacteristics,
+  propertyName: 'Yolo',
   propertyType: 'Bed & Breakfast',
 };
 
@@ -46,7 +51,7 @@ describe('<Description />', () => {
       const wrapper = getDescription();
 
       expectComponentToHaveProps(wrapper, {
-        stackable: true,
+        columns: 1,
       });
     });
 
@@ -55,7 +60,7 @@ describe('<Description />', () => {
 
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(2, GridColumn)
+        ...getArrayOfLengthOfItem(9, GridColumn)
       );
     });
   });
@@ -66,31 +71,91 @@ describe('<Description />', () => {
         .find(GridColumn)
         .first();
 
-    it('should have the right props', () => {
-      const wrapper = getFirstGridColumn();
-
-      expectComponentToHaveProps(wrapper, {
-        computer: 7,
-        tablet: 12,
-      });
-    });
-
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
 
-      expectComponentToHaveChildren(
-        wrapper,
-        Subheading,
-        ...getArrayOfLengthOfItem(2, Paragraph)
-      );
+      expectComponentToHaveChildren(wrapper, Subheading);
     });
   });
 
   describe('the `Subheading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getDescription().find(Subheading);
+      const wrapper = getDescription()
+        .find(Subheading)
+        .first();
 
       expectComponentToHaveChildren(wrapper, props.propertyType);
+    });
+  });
+
+  describe('the second `GridColumn`', () => {
+    it('should render the right children', () => {
+      const wrapper = getDescription()
+        .find(GridColumn)
+        .at(1);
+
+      expectComponentToHaveChildren(wrapper, Heading);
+    });
+  });
+
+  describe('the first `Heading`', () => {
+    it('should render the right children', () => {
+      const wrapper = getDescription()
+        .find(Heading)
+        .at(0);
+
+      expectComponentToHaveChildren(wrapper, props.propertyName);
+    });
+  });
+
+  describe('each of propertyKeyFact `GridColumn`s', () => {
+    const getGridColumnInSecondGrid = () =>
+      getDescription()
+        .find(GridColumn)
+        .at(3);
+
+    it('should have the right props', () => {
+      const wrapper = getGridColumnInSecondGrid();
+
+      expectComponentToHaveProps(wrapper, {
+        computer: 3,
+        mobile: 6,
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getGridColumnInSecondGrid();
+
+      expectComponentToHaveChildren(wrapper, Icon);
+    });
+  });
+
+  describe('each of the propertyKeyFact `Icon`s', () => {
+    it('should have the right props', () => {
+      const wrapper = getDescription()
+        .find(Icon)
+        .at(0);
+
+      expectComponentToHaveProps(wrapper, {
+        labelText: propertyMainCharacteristics[0].text,
+        name: propertyMainCharacteristics[0].iconName,
+      });
+    });
+  });
+
+  describe('the seventh `GridColum` component', () => {
+    it('should render the right children', () => {
+      const wrapper = getDescription()
+        .find(GridColumn)
+        .at(6);
+
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(
+          getParagraphsFromStrings(descriptionText).length,
+          Paragraph
+        )
+      );
     });
   });
 
@@ -108,115 +173,64 @@ describe('<Description />', () => {
     });
   });
 
-  describe('the second `GridColumn` component', () => {
-    const getSecondGridColumn = () =>
-      getDescription()
-        .find(GridColumn)
-        .at(1);
-
-    it('should have the right props', () => {
-      const wrapper = getSecondGridColumn();
-
-      expectComponentToHaveProps(wrapper, {
-        verticalAlignContent: 'middle',
-        computer: 5,
-        tablet: 12,
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getSecondGridColumn();
-
-      expectComponentToHaveChildren(wrapper, Grid);
-    });
-  });
-
-  describe('the second `Grid` component', () => {
-    it('should render the right children', () => {
-      const wrapper = getDescription()
-        .find(Grid)
-        .at(1);
-
-      expectComponentToHaveChildren(
-        wrapper,
-        ...getArrayOfLengthOfItem(4, GridColumn)
-      );
-    });
-  });
-
-  describe('each of the `GridColumn`s in the second `Grid` component', () => {
-    const getGridColumnInSecondGrid = () =>
-      getDescription()
-        .find(GridColumn)
-        .at(3);
-
-    it('should have the right props', () => {
-      const wrapper = getGridColumnInSecondGrid();
-
-      expectComponentToHaveProps(wrapper, {
-        width: 6,
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getGridColumnInSecondGrid();
-
-      expectComponentToHaveChildren(wrapper, Icon);
-    });
-  });
-
-  describe('each of the `Icon`s in the second `Grid` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getDescription()
-        .find(Icon)
-        .at(0);
-
-      expectComponentToHaveProps(wrapper, {
-        labelText: icons[0].labelText,
-        name: icons[0].iconName,
-      });
-    });
-  });
-
   describe('if `props.extraDescriptionText` is passed', () => {
-    describe('the first `GridColumn` component', () => {
-      it('should render an extra `Modal` component', () => {
-        const wrapper = getDescription({ extraDescriptionText })
-          .find(GridColumn)
-          .first();
-
-        expectComponentToHaveChildren(
-          wrapper,
-          Subheading,
-          ...getArrayOfLengthOfItem(2, Paragraph),
-          ...getArrayOfLengthOfItem(1, Modal)
-        );
-      });
-    });
-
-    describe('the second `Paragraph` component', () => {
+    describe('the last `Paragraph` component', () => {
       it('should render the right children', () => {
         const wrapper = getDescription({ extraDescriptionText })
           .find(Paragraph)
           .at(1);
-        const actual = getParagraphsFromStrings(descriptionText);
-
-        expectComponentToHaveChildren(
-          wrapper,
-          actual[1],
-          getEllipsis(actual[1])
+        const finalParagraph = getParagraphWithEllipsis(
+          getParagraphsFromStrings(descriptionText)[1]
         );
+
+        expectComponentToHaveChildren(wrapper, finalParagraph, Modal);
       });
     });
+  });
 
-    describe('the `Modal` component', () => {
-      it('should have the right props', () => {
-        const wrapper = getDescription({ extraDescriptionText }).find(Modal);
+  describe('the eighth `GridColumn` component', () => {
+    it('should render the right children', () => {
+      const wrapper = getDescription()
+        .find(GridColumn)
+        .at(7);
 
-        expectComponentToHaveProps(wrapper, {
-          children: expect.any(Array),
-          trigger: <Link>View more</Link>,
-        });
+      expectComponentToHaveChildren(wrapper, Subheading);
+    });
+  });
+
+  describe('the second `Subheading` component', () => {
+    it('should render the right children', () => {
+      const wrapper = getDescription()
+        .find(Subheading)
+        .at(1);
+
+      expectComponentToHaveChildren(wrapper, 'Home highlights');
+    });
+  });
+
+  describe('the ninth `GridColumn` component', () => {
+    it('should have the right amount of children', () => {
+      const wrapper = getDescription()
+        .find(GridColumn)
+        .at(8);
+
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(props.homeHighlights.length, Icon)
+      );
+    });
+  });
+
+  describe('each `Icon`', () => {
+    it('shoudl have the right props', () => {
+      const wrapper = getDescription()
+        .find(Icon)
+        .at(4);
+
+      expectComponentToHaveProps(wrapper, {
+        hasBorder: true,
+        labelText: props.homeHighlights[0].text,
+        name: props.homeHighlights[0].iconName,
       });
     });
   });

@@ -38,3 +38,7 @@
 @iconLabelLineHeight: 1.8em;
 
 @disabledIconLabelDecoration: line-through;
+
+@iconHeightWithBorder: ~"calc(@{height} + @{12px})";
+@iconPaddingWithBorder: @5px @15px;
+@iconMarginWithBorder: 0 @10px @10px 0;

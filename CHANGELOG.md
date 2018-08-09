@@ -1,3 +1,24 @@
+## [1.28.1](https://github.com/lodgify/lodgify-ui/compare/v1.28.0...v1.28.1) (2018-08-08)
+
+
+### Bug Fixes
+
+* **components:** update docs to reference new list of icons ([f849e48](https://github.com/lodgify/lodgify-ui/commit/f849e48))
+
+# [1.28.0](https://github.com/lodgify/lodgify-ui/compare/v1.27.0...v1.28.0) (2018-08-07)
+
+
+### Features
+
+* **Description:** update component functionality ([99b5945](https://github.com/lodgify/lodgify-ui/commit/99b5945))
+
+# [1.27.0](https://github.com/lodgify/lodgify-ui/compare/v1.26.0...v1.27.0) (2018-08-06)
+
+
+### Features
+
+* **Icon:** add rounded border ([37e2f73](https://github.com/lodgify/lodgify-ui/commit/37e2f73))
+
 # [1.26.0](https://github.com/lodgify/lodgify-ui/compare/v1.25.0...v1.26.0) (2018-08-01)
 
 

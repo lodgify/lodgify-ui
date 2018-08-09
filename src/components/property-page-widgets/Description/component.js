@@ -1,18 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { getFirstFourItems } from 'utils/get-first-four-items';
+import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
-import { Subheading } from 'typography/Subheading';
-import { Paragraph } from 'typography/Paragraph';
-import { Link } from 'elements/Link';
+import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
-import { Modal } from 'elements/Modal';
+import { Paragraph } from 'typography/Paragraph';
+import { Subheading } from 'typography/Subheading';
 
-import { getEllipsis } from './utils/getEllipsis';
+import { formatParagraphWithModal } from './utils/formatParagraphWithModal';
 import { isDescriptionDisplayingWithEllipsis } from './utils/isDescriptionDisplayingWithEllipsis';
 
 /**
@@ -22,44 +21,60 @@ import { isDescriptionDisplayingWithEllipsis } from './utils/isDescriptionDispla
 export const Component = ({
   descriptionText,
   extraDescriptionText,
-  icons,
+  homeHighlights,
+  propertyMainCharacteristics,
+  propertyName,
   propertyType,
 }) => (
-  <Grid stackable>
-    <GridColumn computer={7} tablet={12}>
+  <Grid columns={1}>
+    <GridColumn>
       <Subheading>{propertyType}</Subheading>
+    </GridColumn>
+    <GridColumn>
+      <Heading>{propertyName}</Heading>
+    </GridColumn>
+    {getFirstFourItems(propertyMainCharacteristics).map(
+      ({ iconName, text }, index) => (
+        <GridColumn
+          computer={3}
+          key={buildKeyFromStrings(text, index)}
+          mobile={6}
+        >
+          <Icon labelText={text} name={iconName} />
+        </GridColumn>
+      )
+    )}
+    <GridColumn>
       {getParagraphsFromStrings(descriptionText).map(
         (paragraphText, index, descriptionTextArray) => (
           <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-            {paragraphText}
             {isDescriptionDisplayingWithEllipsis(
               index,
               descriptionTextArray,
               extraDescriptionText
-            ) && getEllipsis(paragraphText)}
+            )
+              ? formatParagraphWithModal(
+                  paragraphText,
+                  descriptionText,
+                  extraDescriptionText
+                )
+              : paragraphText}
           </Paragraph>
         )
       )}
-      {!!extraDescriptionText && (
-        <Modal trigger={<Link>View more</Link>}>
-          {getParagraphsFromStrings(descriptionText, extraDescriptionText).map(
-            (paragraphText, index) => (
-              <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-                {paragraphText}
-              </Paragraph>
-            )
-          )}
-        </Modal>
-      )}
     </GridColumn>
-    <GridColumn computer={5} tablet={12} verticalAlignContent="middle">
-      <Grid>
-        {getFirstFourItems(icons).map(({ iconName, labelText }, index) => (
-          <GridColumn key={buildKeyFromStrings(labelText, index)} width={6}>
-            <Icon labelText={labelText} name={iconName} />
-          </GridColumn>
-        ))}
-      </Grid>
+    <GridColumn>
+      <Subheading>Home highlights</Subheading>
+    </GridColumn>
+    <GridColumn>
+      {homeHighlights.map(({ iconName, text }) => (
+        <Icon
+          hasBorder
+          key={buildKeyFromStrings(iconName, text)}
+          labelText={text}
+          name={iconName}
+        />
+      ))}
     </GridColumn>
   </Grid>
 );
@@ -75,18 +90,32 @@ Component.propTypes = {
   descriptionText: PropTypes.string.isRequired,
   /** Extra text to display in a modal. */
   extraDescriptionText: PropTypes.string,
-  /** The icons to display. Maximum four. */
-  icons: PropTypes.arrayOf(
+  /** The home highlights to display. */
+  homeHighlights: PropTypes.arrayOf(
     PropTypes.shape({
       /**
        * The name of the icon to display.
        * [See Semantic UI for the full list.](https://react.semantic-ui.com/elements/Icon)
        */
-      iconName: PropTypes.string.isRequired,
-      /** A visible label to display for the key fact. */
-      labelText: PropTypes.string.isRequired,
+      iconName: PropTypes.string,
+      /** A visible label to display. */
+      text: PropTypes.string,
     })
   ).isRequired,
-  /** The name of the type of the property. */
+  /** The main characteristics to display. Maximum four. */
+  propertyMainCharacteristics: PropTypes.arrayOf(
+    PropTypes.shape({
+      /**
+       * The name of the icon to display.
+       * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
+       */
+      iconName: PropTypes.string.isRequired,
+      /** A visible label to display for the key fact. */
+      text: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  /** The name of the property to display. */
+  propertyName: PropTypes.string.isRequired,
+  /** The name of the type of the property to display. */
   propertyType: PropTypes.string.isRequired,
 };

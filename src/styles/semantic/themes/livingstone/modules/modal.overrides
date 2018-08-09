@@ -48,6 +48,10 @@
   position: absolute;
   top: 0;
 
+  &.scrolling.modal {
+    margin: 0 !important;
+  }
+
   .content {
     height: 100%;
     overflow: auto;

@@ -7,6 +7,7 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Dropdown } from 'inputs/Dropdown';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { Button } from 'elements/Button';
@@ -379,13 +380,10 @@ describe('<SearchBar /> with the modal', () => {
     it('should have the correct children', () => {
       const wrapper = getModalForm();
 
-      expectComponentToHaveChildren(wrapper, React.Fragment);
-    });
-
-    it('should have the 4 form fields', () => {
-      const wrapper = getModalForm().find(Form.Field);
-
-      expect(wrapper).toHaveLength(4);
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(4, Form.Field)
+      );
     });
   });
 });
