@@ -9,6 +9,8 @@ import { TABLET_BREAKPOINT } from './constants';
  */
 export const withResponsive = WrappedComponent =>
   class WrapperComponent extends Component {
+    static displayName = `WithResponsive(${WrappedComponent.displayName})`;
+
     state = {
       windowInnerWidth: global.innerWidth,
     };
@@ -30,6 +32,4 @@ export const withResponsive = WrappedComponent =>
         {...this.props}
       />
     );
-
-    static displayName = `WithResponsive(${WrappedComponent.displayName})`;
   };
