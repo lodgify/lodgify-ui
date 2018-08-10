@@ -24,6 +24,7 @@ describe('<GridColumn />', () => {
 
       expectComponentToHaveProps(wrapper, {
         verticalAlign: expect.any(String),
+        width: expect.any(Number),
       });
     });
   });
