@@ -5,7 +5,11 @@ import { Card, Form } from 'semantic-ui-react';
 import { Heading } from 'typography/Heading';
 import { Button } from 'elements/Button';
 
-import { getInputWidth } from './getInputWidth';
+import { DEFAULT_IS_REQUIRED_MESSAGE } from './constants';
+import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
+import { getIsRequiredError } from './utils/getIsRequiredError';
+import { getIsValidError } from './utils/getIsValidError';
+import { getFormChild } from './utils/getFormChild';
 
 /**
  * A form displays a set of related user input fields in a structured way.
@@ -14,32 +18,26 @@ import { getInputWidth } from './getInputWidth';
 export class Component extends PureComponent {
   state = {};
 
-  persistInputChange = (name, value) => {
-    this.setState({ [name]: value });
+  handleInputBlur = name => {
+    const validation = getValidationWithDefaults(this.props.validation[name]);
+    const error = getIsRequiredError(validation, this.state[name]);
+
+    error && this.setState({ [name]: { error: DEFAULT_IS_REQUIRED_MESSAGE } });
+  };
+
+  handleInputChange = (name, value) => {
+    const { invalidMessage, getIsValid } = getValidationWithDefaults(
+      this.props.validation[name]
+    );
+    const isValid = getIsValid(value);
+    const error = getIsValidError(value, isValid, invalidMessage);
+
+    this.setState({ [name]: { error, isValid, value } });
   };
 
   handleSubmit = () => {
     this.props.onSubmit(this.state);
   };
-
-  cloneFormGroup = formGroup =>
-    formGroup &&
-    React.cloneElement(formGroup, {
-      children: Children.map(formGroup.props.children, this.cloneInput),
-      widths: 'equal',
-    });
-
-  cloneInput = input =>
-    input &&
-    React.createElement(Form.Field, {
-      children: React.cloneElement(input, {
-        onChange: (name, value) => {
-          this.persistInputChange(name, value);
-          input.props.onChange && input.props.onChange(name, value);
-        },
-      }),
-      width: getInputWidth(input),
-    });
 
   render = () => {
     const { children, headingText, submitButtonText, actionLink } = this.props;
@@ -53,13 +51,7 @@ export class Component extends PureComponent {
         )}
         <Card.Content>
           <Form onSubmit={this.handleSubmit}>
-            {Children.map(
-              children,
-              child =>
-                child && child.type === Form.Group
-                  ? this.cloneFormGroup(child)
-                  : this.cloneInput(child)
-            )}
+            {Children.map(children, child => getFormChild(child, this))}
             {actionLink && (
               <a onClick={actionLink.onClick}>{actionLink.text}</a>
             )}
@@ -80,6 +72,7 @@ Component.defaultProps = {
   onSubmit: Function.prototype,
   actionLink: null,
   submitButtonText: null,
+  validation: {},
 };
 
 Component.propTypes = {
@@ -100,4 +93,23 @@ Component.propTypes = {
   onSubmit: PropTypes.func,
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
+  /** Settings for validating inputs. */
+  validation: PropTypes.objectOf(
+    PropTypes.shape({
+      /** A function which checks whether the input is empty. Defaults to check for falsy value.
+       *  @param  {Any}     value
+       *  @return {Boolean}
+       */
+      getIsEmpty: PropTypes.func,
+      /** A function which checks `value` and returns `true` if valid, `false` if invalid.
+       *  @param  {Any}     value
+       *  @return {Boolean}
+       */
+      getIsValid: PropTypes.func,
+      /** An optional message to display if `getIsValid` returns `false`. */
+      invalidMessage: PropTypes.string,
+      /** Is the user required to enter a value into the input. */
+      isRequired: PropTypes.bool,
+    })
+  ),
 };

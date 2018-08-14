@@ -1,11 +1,6 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import {
-  Card as SemanticCard,
-  Form as SemanticForm,
-  FormField as SemanticFormField,
-  FormGroup as SemanticFormGroup,
-} from 'semantic-ui-react';
+import { shallow } from 'enzyme';
+import { Card, Form as SemanticForm, FormField } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
@@ -15,20 +10,11 @@ import {
 
 import { Button } from 'elements/Button';
 import { Heading } from 'typography/Heading';
-import { TextInput } from 'inputs/TextInput';
-
-import { InputGroup } from '../InputGroup';
 
 import { Component as Form } from './component';
+import { DEFAULT_IS_REQUIRED_MESSAGE } from './constants';
 
 const stringChild = '🚸';
-const htmlInputChild = <input />;
-const groupChild = (
-  <InputGroup>
-    <input />
-  </InputGroup>
-);
-const textInputChild = <TextInput name="someName" />;
 const headingText = '👥';
 
 const getForm = (children, props) =>
@@ -38,18 +24,18 @@ describe('<Form />', () => {
   it('should render a single Semantic UI `Card` component', () => {
     const wrapper = getForm(stringChild);
 
-    expectComponentToBe(wrapper, SemanticCard);
+    expectComponentToBe(wrapper, Card);
   });
 
   it('should render a single Semantic UI Card.Content component by default', () => {
     const wrapper = getForm(stringChild);
 
-    expectComponentToHaveChildren(wrapper, SemanticCard.Content);
+    expectComponentToHaveChildren(wrapper, Card.Content);
   });
 
   describe('Semantic UI Card.Content', () => {
     it('should render a single Semantic UI Form component', () => {
-      const wrapper = getForm(stringChild).find(SemanticCard.Content);
+      const wrapper = getForm(stringChild).find(Card.Content);
 
       expectComponentToHaveChildren(wrapper, SemanticForm);
     });
@@ -64,39 +50,10 @@ describe('<Form />', () => {
       expectComponentToHaveProps(wrapper, { onSubmit: expect.any(Function) });
     });
 
-    it('should render each non-group child wrapped in a `FormField`', () => {
+    it('should render whatever `getFormChild` returns', () => {
       const wrapper = getSemanticForm();
 
-      expectComponentToHaveChildren(wrapper, SemanticFormField);
-    });
-
-    it('should set `props.onChange` on each non-grouped child', () => {
-      const wrapper = getForm(htmlInputChild)
-        .find(SemanticForm)
-        .children(SemanticFormField)
-        .children('input');
-
-      expectComponentToHaveProps(wrapper, { onChange: expect.any(Function) });
-    });
-
-    it('should render each group child wrapped in a `SemanticFormGroup`', () => {
-      const wrapper = getForm(groupChild).find(SemanticForm);
-
-      expectComponentToHaveChildren(wrapper, SemanticFormGroup);
-    });
-
-    it('should pass `SemanticFormGroup` the right props', () => {
-      const wrapper = getForm(groupChild)
-        .find(SemanticForm)
-        .children(SemanticFormGroup);
-
-      expectComponentToHaveProps(wrapper, { widths: 'equal' });
-    });
-
-    it('should nest `FormGroup` > `FormField` > input', () => {
-      const wrapper = getForm(groupChild).find(SemanticFormField);
-
-      expectComponentToHaveChildren(wrapper, 'input');
+      expectComponentToHaveChildren(wrapper, FormField);
     });
 
     describe('if `props.actionLink` is passed', () => {
@@ -108,7 +65,7 @@ describe('<Form />', () => {
       it('should render the right children', () => {
         const wrapper = getFormWithActionLink();
 
-        expectComponentToHaveChildren(wrapper, SemanticFormField, 'a');
+        expectComponentToHaveChildren(wrapper, FormField, 'a');
       });
 
       describe('the `actionLink`', () => {
@@ -151,31 +108,62 @@ describe('<Form />', () => {
     });
   });
 
-  describe('Interaction: onChange an input', () => {
-    it('should persist the value in component state', () => {
-      const event = { target: { value: '🐸' } };
-      const form = mount(<Form>{textInputChild}</Form>);
-      const htmlInput = form.find('input');
+  describe('`handleInputBlur`', () => {
+    describe('if there is an `is required` type error', () => {
+      it('should set the error to component state', () => {
+        const name = '🐸';
+        const wrapper = getForm(<input />, {
+          validation: { [name]: { isRequired: true } },
+        });
 
-      htmlInput.simulate('change', event);
-      const actual = form.state('someName');
+        wrapper.instance().handleInputBlur(name);
 
-      expect(actual).toBe(event.target.value);
+        const actual = wrapper.state();
+
+        expect(actual).toEqual({
+          [name]: { error: DEFAULT_IS_REQUIRED_MESSAGE },
+        });
+      });
+    });
+
+    describe('if there is no `is required` type error', () => {
+      it('should set the error to component state', () => {
+        const name = '🐸';
+        const wrapper = getForm(<input />);
+
+        wrapper.instance().handleInputBlur(name);
+
+        const actual = wrapper.state();
+
+        expect(actual).toEqual({});
+      });
     });
   });
 
-  describe('Interaction: onSubmit the form', () => {
+  describe('`handleInputChange`', () => {
+    it('should set `error`, `isValid` and `value` to component state', () => {
+      const name = '🐸';
+      const value = '🌴';
+      const wrapper = getForm(<input />);
+
+      wrapper.instance().handleInputChange(name, value);
+
+      const actual = wrapper.state();
+
+      expect(actual).toEqual({
+        [name]: { error: false, isValid: undefined, value: '🌴' },
+      });
+    });
+  });
+
+  describe('`handleSubmit`', () => {
     it('should call `props.onSubmit` with the state', () => {
       const onSubmit = jest.fn();
-      const event = { target: { value: '🐸' } };
-      const form = mount(<Form onSubmit={onSubmit}>{textInputChild}</Form>);
-      const htmlInput = form.find('input');
+      const wrapper = getForm(<input />, { onSubmit });
 
-      htmlInput.simulate('change', event);
-      const semanticForm = form.children().find(SemanticForm);
+      wrapper.instance().handleSubmit();
 
-      semanticForm.simulate('submit');
-      expect(onSubmit).toHaveBeenCalledWith(form.state());
+      expect(onSubmit).toHaveBeenCalledWith(wrapper.state());
     });
   });
 
@@ -184,7 +172,7 @@ describe('<Form />', () => {
 
     it('should render it in `CardContent` > `Heading`', () => {
       const wrapper = getFormWithHeading()
-        .children(SemanticCard.Content)
+        .children(Card.Content)
         .at(0);
 
       expectComponentToHaveChildren(wrapper, Heading);
