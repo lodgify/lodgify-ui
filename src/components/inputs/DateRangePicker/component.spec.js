@@ -127,6 +127,28 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('Interaction: onFocusChange', () => {
+    describe('if `focusedInput` is `null`', () => {
+      it('should call `props.onBlur`', () => {
+        const onBlur = jest.fn();
+        const singleDatePicker = getWrappedDateRangePicker({ onBlur });
+
+        singleDatePicker.instance().handleFocusChange(null);
+
+        expect(onBlur).toHaveBeenCalled();
+      });
+    });
+
+    describe('if `focused` is not `null`', () => {
+      it('should not call `props.onBlur`', () => {
+        const onBlur = jest.fn();
+        const singleDatePicker = getWrappedDateRangePicker({ onBlur });
+
+        singleDatePicker.instance().handleFocusChange('startDate');
+
+        expect(onBlur).not.toHaveBeenCalled();
+      });
+    });
+
     it('should persist the value in component state', () => {
       const value = 'startDate';
       const dateRangePicker = getWrappedDateRangePicker();

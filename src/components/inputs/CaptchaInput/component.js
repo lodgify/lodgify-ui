@@ -8,7 +8,15 @@ import { TextInput } from 'inputs/TextInput';
  * A captcha input helps to ensure a user is a real human.
  * @return {Object}
  */
-export const Component = ({ error, image, isValid, label, name, onChange }) => (
+export const Component = ({
+  error,
+  image,
+  isValid,
+  label,
+  name,
+  onBlur,
+  onChange,
+}) => (
   <Form.Group widths="equal">
     <Form.Field>
       <Image src={image} />
@@ -19,6 +27,7 @@ export const Component = ({ error, image, isValid, label, name, onChange }) => (
         isValid={isValid}
         label={label}
         name={name}
+        onBlur={onBlur}
         onChange={onChange}
       />
     </Form.Field>
@@ -32,6 +41,7 @@ Component.defaultProps = {
   isValid: false,
   label: '',
   name: '',
+  onBlur: Function.prototype,
   onChange: Function.prototype,
 };
 
@@ -46,6 +56,11 @@ Component.propTypes = {
   label: PropTypes.string,
   /** The name for the captcha input. */
   name: PropTypes.string,
+  /**
+   * Used internally by `Form` so ignored in the styleguide.
+   * @ignore
+   */
+  onBlur: PropTypes.func,
   /**
    * A function called when the captcha input value changes
    * @param {String} name

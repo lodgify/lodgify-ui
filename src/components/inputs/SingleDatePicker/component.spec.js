@@ -97,6 +97,28 @@ describe('<SingleDatePicker />', () => {
   });
 
   describe('Interaction: onFocusChange', () => {
+    describe('if `focused` is `false`', () => {
+      it('should call `props.onBlur`', () => {
+        const onBlur = jest.fn();
+        const singleDatePicker = getSingleDatePicker({ onBlur });
+
+        singleDatePicker.instance().handleFocusChange({ focused: false });
+
+        expect(onBlur).toHaveBeenCalled();
+      });
+    });
+
+    describe('if `focused` is `true`', () => {
+      it('should not call `props.onBlur`', () => {
+        const onBlur = jest.fn();
+        const singleDatePicker = getSingleDatePicker({ onBlur });
+
+        singleDatePicker.instance().handleFocusChange({ focused: true });
+
+        expect(onBlur).not.toHaveBeenCalled();
+      });
+    });
+
     it('should persist the value in component state', () => {
       const value = true;
       const singleDatePicker = getSingleDatePicker();
