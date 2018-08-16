@@ -34,7 +34,10 @@ export class Component extends PureComponent {
   /**
    * Persist the focused input identifier in component state.
    */
-  handleFocusChange = ({ focused }) => this.setState({ isFocused: focused });
+  handleFocusChange = ({ focused }) => {
+    focused || this.props.onBlur();
+    this.setState({ isFocused: focused });
+  };
 
   /**
    * Persist the date value in component state.
@@ -99,6 +102,7 @@ Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
   isValid: false,
   name: '',
+  onBlur: Function.prototype,
   onChange: Function.prototype,
   placeholderText: '',
   willOpenAbove: false,
@@ -119,6 +123,11 @@ Component.propTypes = {
   isValid: PropTypes.bool,
   /** The name for the single date picker. */
   name: PropTypes.string,
+  /**
+   * Used internally by `Form` so ignored in the styleguide.
+   * @ignore
+   */
+  onBlur: PropTypes.func,
   /**
    * A function called when the single date picker value changes. Dates are wrapped as [Moment objects](https://momentjs.com/docs/#/parsing/).
    * @param {String} name   - `this.props.name`

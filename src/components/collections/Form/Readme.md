@@ -144,3 +144,37 @@ const { InputGroup } = require('../InputGroup');
   <TextInput label="Password" name="password" type="password"/>
 </Form>
 ```
+
+### Usage
+
+#### Validation
+
+```jsx
+<Form
+  validation={{
+    'naive-email': {
+      getIsValid: value => !!value && value.includes('@'),
+    },
+    'invalid-message': {
+      getIsValid: value => !!value && value.includes('@'),
+      invalidMessage: `Must contain the character '@'`,
+    },
+    required: {
+      isRequired: true,
+    },
+    'custom-get-is-empty': {
+      isRequired: true,
+      getIsEmpty: value => !value || [value.startDate, value.endDate].includes(null),
+    },
+  }}
+>
+  <TextInput label="Naive email" name="naive-email" />
+  <TextInput label="With invalid message" name="invalid-message"/>
+  <TextInput label="Required" name="required" />
+  <DateRangePicker
+    startDatePlaceholderText="Custom"
+    endDatePlaceholderText="getIsEmpty"
+    name="custom-get-is-empty"
+  />
+</Form>
+```
