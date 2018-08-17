@@ -18,7 +18,7 @@ export const getFormChild = (child, parent) => {
   if (child.type === Form.Group) {
     return React.cloneElement(child, {
       children: Children.map(child.props.children, nestedChild =>
-        getClonedInput(nestedChild, parent)
+        getFormChild(nestedChild, parent)
       ),
       widths: 'equal',
     });
