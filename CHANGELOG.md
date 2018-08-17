@@ -1,3 +1,18 @@
+# [1.29.0](https://github.com/lodgify/lodgify-ui/compare/v1.28.1...v1.29.0) (2018-08-17)
+
+
+### Bug Fixes
+
+* **Form:** recur getFormChild rather than calling getClonedInput ([64a64a4](https://github.com/lodgify/lodgify-ui/commit/64a64a4))
+
+
+### Features
+
+* **Contact:** expose strings props ([351e486](https://github.com/lodgify/lodgify-ui/commit/351e486))
+* **Form:** add validation logic and factor out form child markup ([50f0a46](https://github.com/lodgify/lodgify-ui/commit/50f0a46))
+* **Form:** add validation logic utils ([13c9e7c](https://github.com/lodgify/lodgify-ui/commit/13c9e7c))
+* **inputs:** add props.onBlur to inputs to enable isRequired valiation ([ff77731](https://github.com/lodgify/lodgify-ui/commit/ff77731))
+
 ## [1.28.1](https://github.com/lodgify/lodgify-ui/compare/v1.28.0...v1.28.1) (2018-08-08)
 
 
