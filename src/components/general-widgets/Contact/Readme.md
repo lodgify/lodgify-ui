@@ -61,3 +61,31 @@ const {
   roomOptions={roomOptions}
 />
 ```
+
+#### Strings
+
+```jsx
+const mockCaptcha = require('./mock-data/signupcode.jpeg');
+const {
+  propertyOptions,
+  roomOptions,
+} = require('./mock-data/options');
+
+<Contact
+  arrivalDateInputLabel="Check-in"
+  captchaInputImage={mockCaptcha}
+  captchaInputLabel="Enter Code"
+  commentsInputLabel="Other notes"
+  departureDateInputLabel="Check-out"
+  emailInputLabel="Your email"
+  guestsInputLabel="Visitors"
+  headingText="Get in touch"
+  nameInputLabel="Your name"
+  phoneInputLabel="Your phone"
+  propertyInputLabel="Chalet"
+  propertyOptions={propertyOptions}
+  roomInputLabel="Salon"
+  roomOptions={roomOptions}
+  submitButtonText="Submit"
+/>
+```
