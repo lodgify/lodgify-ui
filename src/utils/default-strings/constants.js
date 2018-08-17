@@ -1,0 +1,12 @@
+export const ARRIVAL = 'Arrival';
+export const CONTACT = 'Contact';
+export const COMMENTS = 'Comments';
+export const DEPARTURE = 'Departure';
+export const EMAIL = 'Email';
+export const GUESTS = 'Guests';
+export const NAME = 'Name';
+export const PHONE = 'Phone';
+export const PROPERTY = 'Property';
+export const ROOM = 'Room';
+export const SECURITY_CODE = 'Security code';
+export const SEND = 'Send';
