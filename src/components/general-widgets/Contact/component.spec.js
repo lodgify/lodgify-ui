@@ -15,6 +15,20 @@ import { InputGroup } from 'collections/InputGroup';
 import { PhoneInput } from 'inputs/PhoneInput';
 import { TextArea } from 'inputs/TextArea';
 import { TextInput } from 'inputs/TextInput';
+import {
+  ARRIVAL,
+  CONTACT,
+  COMMENTS,
+  DEPARTURE,
+  EMAIL,
+  GUESTS,
+  NAME,
+  PHONE,
+  PROPERTY,
+  ROOM,
+  SECURITY_CODE,
+  SEND,
+} from 'utils/default-strings';
 
 import { roomOptions, propertyOptions } from './mock-data/options';
 import { Component as Contact } from './component';
@@ -37,9 +51,9 @@ describe('<Contact />', () => {
       const wrapper = getForm();
 
       expectComponentToHaveProps(wrapper, {
-        headingText: 'Contact',
+        headingText: CONTACT,
         onSubmit: Function.prototype,
-        submitButtonText: 'Send',
+        submitButtonText: SEND,
       });
     });
 
@@ -74,7 +88,7 @@ describe('<Contact />', () => {
         .at(0);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Name',
+        label: NAME,
         name: 'name',
       });
     });
@@ -85,7 +99,7 @@ describe('<Contact />', () => {
       const wrapper = getForm().find(PhoneInput);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Phone',
+        label: PHONE,
         name: 'phone',
       });
     });
@@ -98,7 +112,7 @@ describe('<Contact />', () => {
         .at(1);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Email',
+        label: EMAIL,
         name: 'email',
       });
     });
@@ -119,9 +133,9 @@ describe('<Contact />', () => {
       const wrapper = getForm().find(DateRangePicker);
 
       expectComponentToHaveProps(wrapper, {
-        endDatePlaceholderText: 'Departure',
+        endDatePlaceholderText: DEPARTURE,
         name: 'dates',
-        startDatePlaceholderText: 'Arrival',
+        startDatePlaceholderText: ARRIVAL,
         width: 'eight',
       });
     });
@@ -135,7 +149,7 @@ describe('<Contact />', () => {
         .find(TextInput);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Guests',
+        label: GUESTS,
         name: 'guests',
         type: 'number',
         width: 'four',
@@ -148,7 +162,7 @@ describe('<Contact />', () => {
       const wrapper = getForm().find(TextArea);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Comments',
+        label: COMMENTS,
         name: 'comments',
       });
     });
@@ -186,7 +200,7 @@ describe('<Contact />', () => {
         const wrapper = getFormWithPropertyOptions().find(Dropdown);
 
         expectComponentToHaveProps(wrapper, {
-          label: 'Property',
+          label: PROPERTY,
           name: 'property',
           onChange: expect.any(Function),
           options: propertyOptions,
@@ -227,7 +241,7 @@ describe('<Contact />', () => {
         const wrapper = getFormWithRoomOptions().find(Dropdown);
 
         expectComponentToHaveProps(wrapper, {
-          label: 'Room',
+          label: ROOM,
           name: 'room',
           onChange: expect.any(Function),
           options: roomOptions,
@@ -254,7 +268,7 @@ describe('<Contact />', () => {
 
       expectComponentToHaveProps(wrapper, {
         image: captchaInputImage,
-        label: 'Security Code',
+        label: SECURITY_CODE,
         name: 'captcha',
       });
     });
