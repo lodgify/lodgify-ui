@@ -49,5 +49,5 @@ const reviews = [
   },
 ];
 
-<Reviews ratingAverage={ratingAverage} reviews={reviews} reviewsLabel="The title" submitReviewLabel="Add a new review" />;
+<Reviews ratingAverage={ratingAverage} reviews={reviews} reviewsHeading="The title" submitReviewLabel="Add a new review" />;
 ```
