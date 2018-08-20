@@ -12,36 +12,55 @@ import { Paragraph } from 'typography/Paragraph';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
 
+import {
+  HEADING_TITLE,
+  PAYMENT_SCHEDULE,
+  CANCELLATION_POLICY,
+  CLEANING_CHARGE,
+  TAXES,
+  DAMAGE_DEPOSIT,
+  NOTES,
+  VIEW_MORE,
+} from './utils/default-strings';
+
 /**
  * The standard widget for displaying the payment information of a property.
  * @returns {Object}
  */
 export const Component = ({
-  paymentScheduleText,
+  cancellationPolicyLabel,
   cancellationPolicyText,
   cleaningCharge,
-  taxesText,
-  taxesDescriptionText,
+  cleaningChargeLabel,
+  damageDepositLabel,
   damageDepositText,
-  notesText,
   extraNotesText,
+  headingLabel,
+  paymentScheduleLabel,
+  paymentScheduleText,
+  taxesDescriptionText,
+  taxesText,
+  taxesLabel,
+  notesLabel,
+  notesText,
+  viewMoreLabel,
 }) => (
   <Grid stackable>
     <GridRow>
       <GridColumn width={12}>
-        <Heading>Payment Information</Heading>
+        <Heading>{headingLabel}</Heading>
       </GridColumn>
     </GridRow>
     <GridRow>
       {!!paymentScheduleText && (
         <GridColumn width={6}>
-          <Heading size="small">Payment Schedule</Heading>
+          <Heading size="small">{paymentScheduleLabel}</Heading>
           <Paragraph size="medium">{paymentScheduleText}</Paragraph>
         </GridColumn>
       )}
       {!!cancellationPolicyText && (
         <GridColumn width={6}>
-          <Heading size="small">Cancellation Policy</Heading>
+          <Heading size="small">{cancellationPolicyLabel}</Heading>
           <Paragraph size="medium">{cancellationPolicyText}</Paragraph>
         </GridColumn>
       )}
@@ -49,13 +68,13 @@ export const Component = ({
     <GridRow>
       {!!cleaningCharge && (
         <GridColumn width={6}>
-          <Heading size="small">Cleaning Charge</Heading>
+          <Heading size="small">{cleaningChargeLabel}</Heading>
           <Statistic horizontal size="mini" text value={cleaningCharge} />
         </GridColumn>
       )}
       {!!taxesText && (
         <GridColumn width={6}>
-          <Heading size="small">Taxes</Heading>
+          <Heading size="small">{taxesLabel}</Heading>
           <Statistic
             horizontal
             label={taxesDescriptionText}
@@ -69,7 +88,7 @@ export const Component = ({
     {!!damageDepositText && (
       <GridRow>
         <GridColumn width={12}>
-          <Heading size="small">Damage Deposit</Heading>
+          <Heading size="small">{damageDepositLabel}</Heading>
           <Paragraph size="medium">{damageDepositText}</Paragraph>
         </GridColumn>
       </GridRow>
@@ -77,7 +96,7 @@ export const Component = ({
     {!!notesText && (
       <GridRow>
         <GridColumn width={12}>
-          <Heading size="small">Notes</Heading>
+          <Heading size="small">{notesLabel}</Heading>
           <Paragraph size="medium">{notesText}</Paragraph>
         </GridColumn>
       </GridRow>
@@ -85,7 +104,7 @@ export const Component = ({
     {!!extraNotesText && (
       <GridRow>
         <GridColumn width={12}>
-          <Modal trigger={<Link>View more</Link>}>
+          <Modal trigger={<Link>{viewMoreLabel}</Link>}>
             {getParagraphsFromStrings(extraNotesText).map(
               (paragraphText, index) => (
                 <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
@@ -103,31 +122,55 @@ export const Component = ({
 Component.displayName = 'PaymentInformation';
 
 Component.defaultProps = {
-  paymentScheduleText: null,
-  cleaningCharge: null,
+  cancellationPolicyLabel: CANCELLATION_POLICY,
   cancellationPolicyText: null,
-  taxesText: null,
-  taxesDescriptionText: null,
+  cleaningCharge: null,
+  cleaningChargeLabel: CLEANING_CHARGE,
+  damageDepositLabel: DAMAGE_DEPOSIT,
   damageDepositText: null,
-  notesText: null,
   extraNotesText: null,
+  headingLabel: HEADING_TITLE,
+  notesLabel: NOTES,
+  notesText: null,
+  paymentScheduleLabel: PAYMENT_SCHEDULE,
+  paymentScheduleText: null,
+  taxesDescriptionText: null,
+  taxesLabel: TAXES,
+  taxesText: null,
+  viewMoreLabel: VIEW_MORE,
 };
 
 Component.propTypes = {
+  /** The cancellation policy label */
+  cancellationPolicyLabel: PropTypes.string,
   /** The Cancellation Policy text to display. */
   cancellationPolicyText: PropTypes.string,
   /** The Cleaning Charge text to display. */
   cleaningCharge: PropTypes.string,
+  /** The cleaning charge label */
+  cleaningChargeLabel: PropTypes.string,
+  /** The damage deposit label */
+  damageDepositLabel: PropTypes.string,
   /** The Damage Deposit text to display. */
   damageDepositText: PropTypes.string,
   /** The Extra Notes text to display. */
   extraNotesText: PropTypes.string,
+  /** The label for the heading */
+  headingLabel: PropTypes.string,
+  /** The notes label */
+  notesLabel: PropTypes.string,
   /** The Notes text to display. */
   notesText: PropTypes.string,
+  /** The label for the payment schedule */
+  paymentScheduleLabel: PropTypes.string,
   /** The Payment Schedule text to display. */
   paymentScheduleText: PropTypes.string,
   /** The Taxes Description text to display. */
   taxesDescriptionText: PropTypes.string,
+  /** The taxes label */
+  taxesLabel: PropTypes.string,
   /** The Taxes text to display. */
   taxesText: PropTypes.string,
+  /** The view more label */
+  viewMoreLabel: PropTypes.string,
 };
