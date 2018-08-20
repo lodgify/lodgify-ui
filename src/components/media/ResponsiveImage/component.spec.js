@@ -4,6 +4,9 @@ import { Image as SemanticImage, Label } from 'semantic-ui-react';
 import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Paragraph } from 'typography/Paragraph';
+import { IMAGE_NOT_FOUND } from 'utils/default-strings';
+
+import { expectComponentToHaveProps } from '../../../../node_modules/@lodgify/enzyme-jest-expect-helpers/lib/expectComponentToHaveProps';
 
 import { Component as ResponsiveImage } from './component';
 
@@ -32,6 +35,24 @@ describe('<ResponsiveImage />', () => {
       const actual = getResponsiveImage().find(Label);
 
       expect(actual).toHaveLength(1);
+    });
+
+    describe('the `Label`', () => {
+      const getLabel = props => getResponsiveImage(props).find(Label);
+
+      it('should have the right props', () => {
+        const wrapper = getLabel();
+
+        expectComponentToHaveProps(wrapper, { content: IMAGE_NOT_FOUND });
+      });
+
+      describe('if `props.imageNotFoundLabelText` is passed', () => {
+        it('should have the right props', () => {
+          const wrapper = getLabel({ imageNotFoundLabelText: 'ayyy' });
+
+          expectComponentToHaveProps(wrapper, { content: 'ayyy' });
+        });
+      });
     });
 
     it('should contain a Semantic UI <Image> with the right props', () => {
