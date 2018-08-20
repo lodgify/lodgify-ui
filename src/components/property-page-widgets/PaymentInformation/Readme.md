@@ -55,3 +55,34 @@ const extraNotesText = `
   extraNotesText={extraNotesText}
 />
 ```
+
+#### Strings
+
+```jsx
+const paymentScheduleText = `50% due at time of booking. Remaining balance: Due later.`;
+const cancellationPolicyText = `All paid prepayments are non-refundable.`;
+const cleaningCharge = `25$ (USD)`;
+const taxesText = `1%`;
+const taxesDescriptionText = `of total booking value`;
+const damageDepositText = `A refundable damage deposit of 200.00 € (EUR) is due.`;
+const notesText = null;
+
+<PaymentInformation
+  paymentScheduleText={paymentScheduleText}
+  cleaningCharge={cleaningCharge}
+  cancellationPolicyText={cancellationPolicyText}
+  taxesText={taxesText}
+  taxesDescriptionText={taxesDescriptionText}
+  damageDepositText={damageDepositText}
+  notesText={notesText}
+
+  cancellationPolicyLabel="Cancel"
+  cleaningChargeLabel="Cleaning"
+  damageDepositLabel="Damage"
+  headingLabel="Heading"
+  notesLabel="Notes"
+  paymentScheduleLabel="Payment"
+  taxesLabel="Taxes info"
+  viewMoreLabel="See more"
+/>
+```
