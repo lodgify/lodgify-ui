@@ -11,12 +11,18 @@ import { Modal } from 'elements/Modal';
 import { getDefaultItems } from './utils/getDefaultItems';
 import { hasExtraItems } from './utils/hasExtraItems';
 import { getCategoryMarkup } from './utils/getCategoryMarkup';
+import { VIEW_MORE } from './utils/default-strings';
 
 /**
  * The standard widget for displaying the amenities of a property.
  * @returns {Object}
  */
-export const Component = ({ amenities, headingText, isStacked }) => (
+export const Component = ({
+  amenities,
+  headingText,
+  isStacked,
+  viewMoreLabel,
+}) => (
   <Grid stackable>
     {headingText && (
       <GridColumn width={12}>
@@ -28,7 +34,7 @@ export const Component = ({ amenities, headingText, isStacked }) => (
     )}
     {hasExtraItems(amenities, isStacked) && (
       <GridColumn width={12}>
-        <Modal trigger={<Link>View more</Link>}>
+        <Modal trigger={<Link>{viewMoreLabel}</Link>}>
           <SemanticModal.Content>
             <Grid padded stackable>
               {amenities.map(getCategoryMarkup)}
@@ -45,6 +51,7 @@ Component.displayName = 'Amenities';
 Component.defaultProps = {
   headingText: null,
   isStacked: false,
+  viewMoreLabel: VIEW_MORE,
 };
 
 Component.propTypes = {
@@ -65,4 +72,6 @@ Component.propTypes = {
   headingText: PropTypes.string,
   /** Are the amenities displayed stacked on top of one another */
   isStacked: PropTypes.bool,
+  /** The label for the view more link */
+  viewMoreLabel: PropTypes.string,
 };
