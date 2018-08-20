@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Image, Label } from 'semantic-ui-react';
 
+import {
+  IMAGE_NOT_FOUND,
+  IMAGE_TITLE,
+  IMAGE_WIDGET,
+} from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Paragraph } from 'typography/Paragraph';
-
-import { IMAGE_NOT_FOUND } from './constants';
 
 /**
  * The standard widget for displaying an image.
@@ -16,6 +19,7 @@ export const Component = ({
   imageUrl,
   sources,
   alternativeText,
+  imageNotFoundLabel,
   imageTitle,
   className,
   onLoad,
@@ -40,7 +44,7 @@ export const Component = ({
       src={imageUrl}
       title={imageTitle}
     >
-      {!imageUrl ? <Label content={IMAGE_NOT_FOUND} /> : null}
+      {!imageUrl ? <Label content={imageNotFoundLabel} /> : null}
     </Image>
     {label ? <Paragraph>{label}</Paragraph> : null}
   </picture>
@@ -50,8 +54,9 @@ Component.displayName = 'ResponsiveImage';
 
 Component.defaultProps = {
   imageUrl: '',
-  alternativeText: 'Image Widget',
-  imageTitle: 'Image title',
+  alternativeText: IMAGE_WIDGET,
+  imageNotFoundLabel: IMAGE_NOT_FOUND,
+  imageTitle: IMAGE_TITLE,
   className: null,
   sources: [],
   onLoad: Function.prototype,
@@ -65,6 +70,8 @@ Component.propTypes = {
   alternativeText: PropTypes.string,
   /** Custom class name string to customize the resulting img */
   className: PropTypes.string,
+  /** The label text for the when the image is not found. */
+  imageNotFoundLabel: PropTypes.string,
   /** Title of the image to show when hovering it on desktop browsers */
   imageTitle: PropTypes.string,
   /** URL pointing to the image to render */
