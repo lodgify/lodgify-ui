@@ -7,7 +7,14 @@ import { InputController } from '../InputController';
  * A text area can get longer text data from a user.
  * @return {Object}
  */
-export const Component = ({ error, isValid, label, name, onChange }) => (
+export const Component = ({
+  error,
+  isValid,
+  label,
+  name,
+  onBlur,
+  onChange,
+}) => (
   <InputController
     error={error}
     isValid={isValid}
@@ -15,7 +22,7 @@ export const Component = ({ error, isValid, label, name, onChange }) => (
     name={name}
     onChange={onChange}
   >
-    <textarea rows="8" />
+    <textarea onBlur={onBlur} rows="8" />
   </InputController>
 );
 
@@ -26,6 +33,7 @@ Component.defaultProps = {
   isValid: false,
   label: '',
   name: '',
+  onBlur: Function.prototype,
   onChange: Function.prototype,
 };
 
@@ -38,6 +46,11 @@ Component.propTypes = {
   label: PropTypes.string,
   /** The name for the text area. */
   name: PropTypes.string,
+  /**
+   * Used internally by `Form` so ignored in the styleguide.
+   * @ignore
+   */
+  onBlur: PropTypes.func,
   /**
    * A function called when the text area value changes
    * @param {String} name

@@ -7,7 +7,15 @@ import { InputController } from '../InputController';
  * A text input can get short text data from a user.
  * @return {Object}
  */
-export const Component = ({ error, isValid, label, name, onChange, type }) => (
+export const Component = ({
+  error,
+  isValid,
+  label,
+  name,
+  onBlur,
+  onChange,
+  type,
+}) => (
   <InputController
     error={error}
     isValid={isValid}
@@ -15,7 +23,7 @@ export const Component = ({ error, isValid, label, name, onChange, type }) => (
     name={name}
     onChange={onChange}
   >
-    <input type={type} />
+    <input onBlur={onBlur} type={type} />
   </InputController>
 );
 
@@ -26,6 +34,7 @@ Component.defaultProps = {
   isValid: false,
   label: '',
   name: '',
+  onBlur: Function.prototype,
   onChange: Function.prototype,
   type: 'text',
 };
@@ -39,6 +48,11 @@ Component.propTypes = {
   label: PropTypes.string,
   /** The name for the text input. */
   name: PropTypes.string,
+  /**
+   * Used internally by `Form` so ignored in the styleguide.
+   * @ignore
+   */
+  onBlur: PropTypes.func,
   /**
    * A function called when the text input value changes
    * @param {String} name

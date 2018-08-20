@@ -84,6 +84,10 @@
     padding: 0;
   }
 
+  @media @mobileScreen {
+    padding: 0;
+  }
+
   &.display-stacked {
 
     p + .button {

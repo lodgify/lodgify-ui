@@ -37,7 +37,7 @@ export class Component extends PureComponent {
   };
 
   render() {
-    const { error, isValid, label, name } = this.props;
+    const { error, isValid, label, name, onBlur } = this.props;
     const { country, value } = this.state;
 
     return (
@@ -49,7 +49,7 @@ export class Component extends PureComponent {
         name={name}
         onChange={this.handleChange}
       >
-        <input type="text" value={value} />
+        <input onBlur={onBlur} type="text" value={value} />
       </InputController>
     );
   }
@@ -62,6 +62,7 @@ Component.defaultProps = {
   isValid: false,
   label: '',
   name: '',
+  onBlur: Function.prototype,
   onChange: Function.prototype,
 };
 
@@ -74,6 +75,11 @@ Component.propTypes = {
   label: PropTypes.string,
   /** The name for the phone input. */
   name: PropTypes.string,
+  /**
+   * Used internally by `Form` so ignored in the styleguide.
+   * @ignore
+   */
+  onBlur: PropTypes.func,
   /**
    * A function called when the phone input value changes
    * @param {String} name

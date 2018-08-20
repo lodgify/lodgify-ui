@@ -38,7 +38,10 @@ class Component extends PureComponent {
   /**
    * Persist the focused input identifier in component state.
    */
-  handleFocusChange = focusedInput => this.setState({ focusedInput });
+  handleFocusChange = focusedInput => {
+    focusedInput === null && this.props.onBlur();
+    this.setState({ focusedInput });
+  };
 
   /**
    * Persist the date values in component state.
@@ -112,6 +115,7 @@ Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
   isValid: false,
   name: '',
+  onBlur: Function.prototype,
   onChange: Function.prototype,
   startDatePlaceholderText: '',
   willOpenAbove: false,
@@ -135,6 +139,11 @@ Component.propTypes = {
   isValid: PropTypes.bool,
   /** The name for the date range picker. */
   name: PropTypes.string,
+  /**
+   * Used internally by `Form` so ignored in the styleguide.
+   * @ignore
+   */
+  onBlur: PropTypes.func,
   /**
    * A function called when the date range picker value changes. Dates are wrapped as [Moment objects](https://momentjs.com/docs/#/parsing/).
    * @param {String} name   - `this.props.name`
