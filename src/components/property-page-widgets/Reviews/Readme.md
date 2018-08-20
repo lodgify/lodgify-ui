@@ -31,3 +31,23 @@ const reviews = [
 
 <Reviews ratingAverage={ratingAverage} reviews={reviews} />;
 ```
+
+#### Strings
+
+```jsx
+const ratingAverage = 4;
+const reviews = [
+  {
+    ratingNumber: 3,
+    reviewerCategory: 'Young people',
+    reviewerLocation: 'Lithuania',
+    reviewerName: 'Magellan',
+    reviewerStayDate: '9/2015',
+    reviewText:
+      'Beautifully located and well-kept villas in Santorini. Would certainly come back next year.',
+    reviewTitle: 'Great accommodation! Honorable host.',
+  },
+];
+
+<Reviews ratingAverage={ratingAverage} reviews={reviews} reviewsLabel="The title" submitReviewLabel="Add a new review" />;
+```

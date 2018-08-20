@@ -108,8 +108,8 @@ Component.propTypes = {
       reviewerStayDate: PropTypes.string.isRequired,
     })
   ),
-  /** The review title above the component */
+  /** The reviews title */
   reviewsLabel: PropTypes.string,
-  /** The review title above the component */
+  /** The submit a new review label */
   submitReviewLabel: PropTypes.string,
 };
