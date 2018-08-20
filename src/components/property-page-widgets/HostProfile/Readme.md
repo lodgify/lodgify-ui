@@ -24,3 +24,37 @@ const languages = ['English', 'Italian', 'German', 'Spanish'];
   phone={phone}
   languages={languages} />
 ```
+
+### Content
+
+#### Strings
+```jsx
+const catImageUrl = 'https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max';
+const name = 'Mitjons & Kira';
+const description = `Cats have keen vision; they can see much more detail than dogs.
+Concentrated in the center of the retina of the eye, a specific type of cell called a cone gives cats
+excellent visual acuity and binocular vision.`;
+
+const contactInformationHeadingText = 'Contact details';
+const email = 'welovecats@lodgify.com';
+const emailLabel = 'Email Address';
+const hostProfileHeadingText = 'Profile';
+const languages = ['English', 'Italian', 'German', 'Spanish'];
+const languagesLabel = 'Spoken languages';
+const phone = '+34932206524';
+const phoneLabel = 'Tel';
+
+<HostProfile
+  avatarUrl={catImageUrl}
+  contactInformationHeadingText={contactInformationHeadingText}
+  description={description}
+  email={email}
+  emailLabel={emailLabel}
+  hostProfileHeadingText={hostProfileHeadingText}
+  languages={languages}
+  languagesLabel={languagesLabel}
+  name={name}
+  phone={phone}
+  phoneLabel={phoneLabel}
+  />
+```
