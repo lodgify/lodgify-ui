@@ -16,16 +16,16 @@ import { Paragraph } from 'typography/Paragraph';
  * @returns {Object}
  */
 export const Component = ({
-  imageUrl,
-  sources,
   alternativeText,
+  className,
   imageNotFoundLabel,
   imageTitle,
-  className,
-  onLoad,
+  imageUrl,
   isAvatar,
   isFluid,
   label,
+  onLoad,
+  sources,
 }) => (
   <picture role="figure">
     {sources.map(({ srcset, media }, index) => (
@@ -53,16 +53,16 @@ export const Component = ({
 Component.displayName = 'ResponsiveImage';
 
 Component.defaultProps = {
-  imageUrl: '',
   alternativeText: IMAGE_WIDGET,
+  className: null,
   imageNotFoundLabel: IMAGE_NOT_FOUND,
   imageTitle: IMAGE_TITLE,
-  className: null,
-  sources: [],
-  onLoad: Function.prototype,
+  imageUrl: '',
   isAvatar: false,
   isFluid: true,
   label: null,
+  onLoad: Function.prototype,
+  sources: [],
 };
 
 Component.propTypes = {

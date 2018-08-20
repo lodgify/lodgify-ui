@@ -68,5 +68,5 @@
 
 #### Strings
 ```jsx
-<ResponsiveImage imageNotFoundLabel="Where did it go?" />
+<ResponsiveImage imageNotFoundLabelText="Where did it go?" />
 ```
