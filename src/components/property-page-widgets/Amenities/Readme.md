@@ -114,7 +114,7 @@ const amenities = [
   },
 ];
 
-<Amenities amenities={amenities} viewMoreLabel="See more" />
+<Amenities amenities={amenities} modalTriggerLabel="See more" />
 ```
 
 ### Variations

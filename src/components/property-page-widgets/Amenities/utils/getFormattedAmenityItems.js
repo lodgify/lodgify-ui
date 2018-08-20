@@ -1,4 +1,4 @@
-import { AND } from './default-strings';
+import { AND } from 'utils/default-strings';
 
 /**
  * @param  {String[]} items
