@@ -13,7 +13,7 @@ import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
 
 import {
-  HEADING_TITLE,
+  PAYMENT_INFORMATION,
   PAYMENT_SCHEDULE,
   CANCELLATION_POLICY,
   CLEANING_CHARGE,
@@ -28,39 +28,39 @@ import {
  * @returns {Object}
  */
 export const Component = ({
-  cancellationPolicyLabel,
+  cancellationPolicyHeadingText,
   cancellationPolicyText,
   cleaningCharge,
-  cleaningChargeLabel,
-  damageDepositLabel,
+  cleaningChargeHeadingText,
+  damageDepositHeadingText,
   damageDepositText,
   extraNotesText,
-  headingLabel,
-  paymentScheduleLabel,
+  modalViewMoreTriggerText,
+  notesHeadingText,
+  notesText,
+  paymentInformationHeadingText,
+  paymentScheduleHeadingText,
   paymentScheduleText,
   taxesDescriptionText,
   taxesText,
-  taxesLabel,
-  notesLabel,
-  notesText,
-  viewMoreLabel,
+  taxesHeadingText,
 }) => (
   <Grid stackable>
     <GridRow>
       <GridColumn width={12}>
-        <Heading>{headingLabel}</Heading>
+        <Heading>{paymentInformationHeadingText}</Heading>
       </GridColumn>
     </GridRow>
     <GridRow>
       {!!paymentScheduleText && (
         <GridColumn width={6}>
-          <Heading size="small">{paymentScheduleLabel}</Heading>
+          <Heading size="small">{paymentScheduleHeadingText}</Heading>
           <Paragraph size="medium">{paymentScheduleText}</Paragraph>
         </GridColumn>
       )}
       {!!cancellationPolicyText && (
         <GridColumn width={6}>
-          <Heading size="small">{cancellationPolicyLabel}</Heading>
+          <Heading size="small">{cancellationPolicyHeadingText}</Heading>
           <Paragraph size="medium">{cancellationPolicyText}</Paragraph>
         </GridColumn>
       )}
@@ -68,13 +68,13 @@ export const Component = ({
     <GridRow>
       {!!cleaningCharge && (
         <GridColumn width={6}>
-          <Heading size="small">{cleaningChargeLabel}</Heading>
+          <Heading size="small">{cleaningChargeHeadingText}</Heading>
           <Statistic horizontal size="mini" text value={cleaningCharge} />
         </GridColumn>
       )}
       {!!taxesText && (
         <GridColumn width={6}>
-          <Heading size="small">{taxesLabel}</Heading>
+          <Heading size="small">{taxesHeadingText}</Heading>
           <Statistic
             horizontal
             label={taxesDescriptionText}
@@ -88,7 +88,7 @@ export const Component = ({
     {!!damageDepositText && (
       <GridRow>
         <GridColumn width={12}>
-          <Heading size="small">{damageDepositLabel}</Heading>
+          <Heading size="small">{damageDepositHeadingText}</Heading>
           <Paragraph size="medium">{damageDepositText}</Paragraph>
         </GridColumn>
       </GridRow>
@@ -96,7 +96,7 @@ export const Component = ({
     {!!notesText && (
       <GridRow>
         <GridColumn width={12}>
-          <Heading size="small">{notesLabel}</Heading>
+          <Heading size="small">{notesHeadingText}</Heading>
           <Paragraph size="medium">{notesText}</Paragraph>
         </GridColumn>
       </GridRow>
@@ -104,7 +104,7 @@ export const Component = ({
     {!!extraNotesText && (
       <GridRow>
         <GridColumn width={12}>
-          <Modal trigger={<Link>{viewMoreLabel}</Link>}>
+          <Modal trigger={<Link>{modalViewMoreTriggerText}</Link>}>
             {getParagraphsFromStrings(extraNotesText).map(
               (paragraphText, index) => (
                 <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
@@ -122,55 +122,55 @@ export const Component = ({
 Component.displayName = 'PaymentInformation';
 
 Component.defaultProps = {
-  cancellationPolicyLabel: CANCELLATION_POLICY,
+  cancellationPolicyHeadingText: CANCELLATION_POLICY,
   cancellationPolicyText: null,
   cleaningCharge: null,
-  cleaningChargeLabel: CLEANING_CHARGE,
-  damageDepositLabel: DAMAGE_DEPOSIT,
+  cleaningChargeHeadingText: CLEANING_CHARGE,
+  damageDepositHeadingText: DAMAGE_DEPOSIT,
   damageDepositText: null,
   extraNotesText: null,
-  headingLabel: HEADING_TITLE,
-  notesLabel: NOTES,
+  modalViewMoreTriggerText: VIEW_MORE,
+  notesHeadingText: NOTES,
   notesText: null,
-  paymentScheduleLabel: PAYMENT_SCHEDULE,
+  paymentInformationHeadingText: PAYMENT_INFORMATION,
+  paymentScheduleHeadingText: PAYMENT_SCHEDULE,
   paymentScheduleText: null,
   taxesDescriptionText: null,
-  taxesLabel: TAXES,
+  taxesHeadingText: TAXES,
   taxesText: null,
-  viewMoreLabel: VIEW_MORE,
 };
 
 Component.propTypes = {
-  /** The cancellation policy label */
-  cancellationPolicyLabel: PropTypes.string,
+  /** The Cancellation policy heading text */
+  cancellationPolicyHeadingText: PropTypes.string,
   /** The Cancellation Policy text to display. */
   cancellationPolicyText: PropTypes.string,
   /** The Cleaning Charge text to display. */
   cleaningCharge: PropTypes.string,
-  /** The cleaning charge label */
-  cleaningChargeLabel: PropTypes.string,
-  /** The damage deposit label */
-  damageDepositLabel: PropTypes.string,
+  /** The Cleaning Charge heading text */
+  cleaningChargeHeadingText: PropTypes.string,
+  /** The Damage Deposit heading text */
+  damageDepositHeadingText: PropTypes.string,
   /** The Damage Deposit text to display. */
   damageDepositText: PropTypes.string,
   /** The Extra Notes text to display. */
   extraNotesText: PropTypes.string,
-  /** The label for the heading */
-  headingLabel: PropTypes.string,
-  /** The notes label */
-  notesLabel: PropTypes.string,
+  /** The View More trigger text */
+  modalViewMoreTriggerText: PropTypes.string,
+  /** The Notes heading text */
+  notesHeadingText: PropTypes.string,
   /** The Notes text to display. */
   notesText: PropTypes.string,
-  /** The label for the payment schedule */
-  paymentScheduleLabel: PropTypes.string,
+  /** The Payment Information heading text */
+  paymentInformationHeadingText: PropTypes.string,
+  /** The Payment Schedule heading text */
+  paymentScheduleHeadingText: PropTypes.string,
   /** The Payment Schedule text to display. */
   paymentScheduleText: PropTypes.string,
   /** The Taxes Description text to display. */
   taxesDescriptionText: PropTypes.string,
-  /** The taxes label */
-  taxesLabel: PropTypes.string,
+  /** The Taxes heading text */
+  taxesHeadingText: PropTypes.string,
   /** The Taxes text to display. */
   taxesText: PropTypes.string,
-  /** The view more label */
-  viewMoreLabel: PropTypes.string,
 };

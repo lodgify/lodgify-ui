@@ -75,14 +75,13 @@ const notesText = null;
   taxesDescriptionText={taxesDescriptionText}
   damageDepositText={damageDepositText}
   notesText={notesText}
-
-  cancellationPolicyLabel="Cancel"
-  cleaningChargeLabel="Cleaning"
-  damageDepositLabel="Damage"
-  headingLabel="Heading"
-  notesLabel="Notes"
-  paymentScheduleLabel="Payment"
-  taxesLabel="Taxes info"
-  viewMoreLabel="See more"
+  cancellationPolicyHeadingText="Cancel"
+  cleaningChargeHeadingText="Cleaning"
+  damageDepositHeadingText="Damage"
+  paymentInformationHeadingText="Heading"
+  notesHeadingText="Notes"
+  paymentScheduleHeadingText="Payment"
+  taxesHeadingText="Taxes info"
+  modalViewMoreTriggerText="See more"
 />
 ```
