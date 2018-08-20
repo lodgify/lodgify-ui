@@ -11,7 +11,6 @@ import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
-
 import {
   PAYMENT_INFORMATION,
   PAYMENT_SCHEDULE,
@@ -21,7 +20,7 @@ import {
   DAMAGE_DEPOSIT,
   NOTES,
   VIEW_MORE,
-} from './utils/default-strings';
+} from 'utils/default-strings';
 
 /**
  * The standard widget for displaying the payment information of a property.
