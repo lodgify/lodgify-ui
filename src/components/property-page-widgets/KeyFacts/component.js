@@ -37,8 +37,8 @@ export const Component = ({ keyFacts, keyFactsHeadingText }) => (
 Component.displayName = 'KeyFacts';
 
 Component.defaultProps = {
-  keyFactsHeadingText: KEY_FACTS
-}
+  keyFactsHeadingText: KEY_FACTS,
+};
 
 Component.propTypes = {
   /** The key facts to display as icon cards. */
@@ -55,6 +55,6 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-
-  keyFactsHeadingText: PropTypes.string
+  /** The key facts heading text */
+  keyFactsHeadingText: PropTypes.string,
 };
