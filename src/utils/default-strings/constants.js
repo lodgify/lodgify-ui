@@ -12,6 +12,7 @@ export const GUESTS = 'Guests';
 export const IMAGE_NOT_FOUND = 'Image not found!';
 export const IMAGE_TITLE = 'Image Title';
 export const IMAGE_WIDGET = 'Image Widget';
+export const KEY_FACTS = 'Key facts';
 export const LANGUAGES = 'Languages';
 export const NAME = 'Name';
 export const NOTES = 'Notes';
