@@ -9,6 +9,7 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
+import { VIEW_MORE } from 'utils/default-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
@@ -120,7 +121,7 @@ describe('<Amenities />', () => {
         const wrapper = getModal();
 
         expectComponentToHaveProps(wrapper, {
-          trigger: <Link>View more</Link>,
+          trigger: <Link>{VIEW_MORE}</Link>,
         });
       });
 

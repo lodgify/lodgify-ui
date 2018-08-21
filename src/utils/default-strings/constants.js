@@ -1,3 +1,4 @@
+export const AND = 'and';
 export const ARRIVAL = 'Arrival';
 export const CANCELLATION_POLICY = 'Cancellation Policy';
 export const CLEANING_CHARGE = 'Cleaning Charge';
