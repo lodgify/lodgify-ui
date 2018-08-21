@@ -8,6 +8,15 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import {
+  PAYMENT_SCHEDULE,
+  CANCELLATION_POLICY,
+  CLEANING_CHARGE,
+  TAXES,
+  DAMAGE_DEPOSIT,
+  NOTES,
+  VIEW_MORE,
+} from 'utils/default-strings';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
@@ -150,7 +159,7 @@ describe('<PaymentInformation />', () => {
         it('should render the right children', () => {
           const wrapper = getHeader();
 
-          expectComponentToHaveChildren(wrapper, 'Payment Schedule');
+          expectComponentToHaveChildren(wrapper, PAYMENT_SCHEDULE);
         });
       });
 
@@ -227,7 +236,7 @@ describe('<PaymentInformation />', () => {
         it('should render the right children', () => {
           const wrapper = getHeader();
 
-          expectComponentToHaveChildren(wrapper, 'Cancellation Policy');
+          expectComponentToHaveChildren(wrapper, CANCELLATION_POLICY);
         });
       });
 
@@ -304,7 +313,7 @@ describe('<PaymentInformation />', () => {
         it('should render the right children', () => {
           const wrapper = getHeader();
 
-          expectComponentToHaveChildren(wrapper, 'Cleaning Charge');
+          expectComponentToHaveChildren(wrapper, CLEANING_CHARGE);
         });
       });
 
@@ -381,7 +390,7 @@ describe('<PaymentInformation />', () => {
         it('should render the right children', () => {
           const wrapper = getHeader();
 
-          expectComponentToHaveChildren(wrapper, 'Taxes');
+          expectComponentToHaveChildren(wrapper, TAXES);
         });
       });
 
@@ -455,7 +464,7 @@ describe('<PaymentInformation />', () => {
           it('should render the right children', () => {
             const wrapper = getHeader();
 
-            expectComponentToHaveChildren(wrapper, 'Damage Deposit');
+            expectComponentToHaveChildren(wrapper, DAMAGE_DEPOSIT);
           });
         });
 
@@ -532,7 +541,7 @@ describe('<PaymentInformation />', () => {
           it('should render the right children', () => {
             const wrapper = getHeader();
 
-            expectComponentToHaveChildren(wrapper, 'Notes');
+            expectComponentToHaveChildren(wrapper, NOTES);
           });
         });
 
@@ -599,7 +608,7 @@ describe('<PaymentInformation />', () => {
 
           expectComponentToHaveProps(wrapper, {
             children: expect.any(Array),
-            trigger: <Link>View more</Link>,
+            trigger: <Link>{VIEW_MORE}</Link>,
           });
         });
       });
