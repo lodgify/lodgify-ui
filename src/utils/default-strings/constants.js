@@ -10,6 +10,7 @@ export const DEPARTURE = 'Departure';
 export const EMAIL = 'Email';
 export const FORGOT_PASSWORD = 'Forgot password';
 export const GUESTS = 'Guests';
+export const HOUSE_RULES = 'House Rules';
 export const IMAGE_NOT_FOUND = 'Image not found!';
 export const IMAGE_TITLE = 'Image Title';
 export const IMAGE_WIDGET = 'Image Widget';
