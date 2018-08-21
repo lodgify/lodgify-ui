@@ -18,7 +18,7 @@ import { Paragraph } from 'typography/Paragraph';
 export const Component = ({
   alternativeText,
   className,
-  imageNotFoundLabel,
+  imageNotFoundLabelText,
   imageTitle,
   imageUrl,
   isAvatar,
@@ -44,7 +44,7 @@ export const Component = ({
       src={imageUrl}
       title={imageTitle}
     >
-      {!imageUrl ? <Label content={imageNotFoundLabel} /> : null}
+      {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
     </Image>
     {label ? <Paragraph>{label}</Paragraph> : null}
   </picture>
@@ -55,7 +55,7 @@ Component.displayName = 'ResponsiveImage';
 Component.defaultProps = {
   alternativeText: IMAGE_WIDGET,
   className: null,
-  imageNotFoundLabel: IMAGE_NOT_FOUND,
+  imageNotFoundLabelText: IMAGE_NOT_FOUND,
   imageTitle: IMAGE_TITLE,
   imageUrl: '',
   isAvatar: false,
@@ -71,7 +71,7 @@ Component.propTypes = {
   /** Custom class name string to customize the resulting img */
   className: PropTypes.string,
   /** The label text for the when the image is not found. */
-  imageNotFoundLabel: PropTypes.string,
+  imageNotFoundLabelText: PropTypes.string,
   /** Title of the image to show when hovering it on desktop browsers */
   imageTitle: PropTypes.string,
   /** URL pointing to the image to render */
