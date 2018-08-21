@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/lodgify/lodgify-ui/compare/v1.31.0...v1.32.0) (2018-08-21)
+
+
+### Features
+
+* **Amenities:** expose string props ([91d5599](https://github.com/lodgify/lodgify-ui/commit/91d5599))
+
 # [1.31.0](https://github.com/lodgify/lodgify-ui/compare/v1.30.0...v1.31.0) (2018-08-21)
 
 
