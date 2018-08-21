@@ -10,16 +10,22 @@ import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Review } from 'general-widgets/Review';
+import { REVIEWS, SUBMIT_REVIEW } from 'utils/default-strings';
 
 /**
  * The standard widget for displaying a collection of reviews.
  * @returns {Object}
  */
-export const Component = ({ reviews, ratingAverage }) => (
+export const Component = ({
+  reviews,
+  ratingAverage,
+  reviewsHeadingText,
+  submitReviewButtonText,
+}) => (
   <Grid>
     <GridRow>
       <GridColumn width={12}>
-        <Heading>Reviews</Heading>
+        <Heading>{reviewsHeadingText}</Heading>
       </GridColumn>
     </GridRow>
     <GridRow verticalAlign="middle">
@@ -47,7 +53,7 @@ export const Component = ({ reviews, ratingAverage }) => (
         verticalAlign="middle"
       >
         <Button isCompact isPositionedRight isRounded size="medium">
-          Submit a review
+          {submitReviewButtonText}
         </Button>
       </GridColumn>
     </GridRow>
@@ -66,6 +72,8 @@ Component.displayName = 'Reviews';
 
 Component.defaultProps = {
   reviews: [],
+  reviewsHeadingText: REVIEWS,
+  submitReviewButtonText: SUBMIT_REVIEW,
 };
 
 Component.propTypes = {
@@ -99,4 +107,8 @@ Component.propTypes = {
       reviewerStayDate: PropTypes.string.isRequired,
     })
   ),
+  /** The reviews heading text */
+  reviewsHeadingText: PropTypes.string,
+  /** The submit a new review text */
+  submitReviewButtonText: PropTypes.string,
 };

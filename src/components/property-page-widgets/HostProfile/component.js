@@ -2,6 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { List, Item } from 'semantic-ui-react';
 
+import {
+  CONTACT_INFORMATION,
+  EMAIL,
+  LANGUAGES,
+  PHONE,
+  YOUR_HOST,
+} from 'utils/default-strings';
 import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
@@ -14,16 +21,21 @@ import { Paragraph } from 'typography/Paragraph';
  */
 export const Component = ({
   avatarUrl,
-  name,
+  contactInformationHeadingText,
   description,
   email,
-  phone,
+  emailLabel,
+  hostProfileHeadingText,
   languages,
+  languagesLabel,
+  name,
+  phone,
+  phoneLabel,
 }) => (
   <Grid textAlign="left">
     <GridRow>
       <GridColumn width={12}>
-        <Heading>Your Host</Heading>
+        <Heading>{hostProfileHeadingText}</Heading>
       </GridColumn>
     </GridRow>
     <GridRow>
@@ -43,23 +55,23 @@ export const Component = ({
         <Paragraph size="medium">{description}</Paragraph>
       </GridColumn>
       <GridColumn computer={5} mobile={12} tablet={12}>
-        <Heading size="small">Contact Information</Heading>
+        <Heading size="small">{contactInformationHeadingText}</Heading>
         <List relaxed size="medium">
           {!!email && (
             <List.Item>
-              <span>Email: </span>
+              <span>{`${emailLabel}: `}</span>
               <span>{email}</span>
             </List.Item>
           )}
           {!!phone && (
             <List.Item>
-              <span>Phone: </span>
+              <span>{`${phoneLabel}: `}</span>
               <span>{phone}</span>
             </List.Item>
           )}
           {!!languages && (
             <List.Item>
-              <span>Languages: </span>
+              <span>{`${languagesLabel}: `}</span>
               <span>{languages.join(', ')}</span>
             </List.Item>
           )}
@@ -73,22 +85,37 @@ Component.displayName = 'HostProfile';
 
 Component.defaultProps = {
   avatarUrl: null,
+  contactInformationHeadingText: CONTACT_INFORMATION,
   email: null,
-  phone: null,
+  emailLabel: EMAIL,
+  hostProfileHeadingText: YOUR_HOST,
   languages: null,
+  languagesLabel: LANGUAGES,
+  phone: null,
+  phoneLabel: PHONE,
 };
 
 Component.propTypes = {
-  /** A url pointing to a picture of the property host */
+  /** The url pointing to a picture of the property host. */
   avatarUrl: PropTypes.string,
+  /** The text for the contact information heading. */
+  contactInformationHeadingText: PropTypes.string,
   /** The description of the property host. */
   description: PropTypes.string.isRequired,
   /** The email of the property host. */
   email: PropTypes.string,
+  /** The label for the contact email address. */
+  emailLabel: PropTypes.string,
+  /** The text for the host profile heading. */
+  hostProfileHeadingText: PropTypes.string,
   /** The languages the property host speaks. */
   languages: PropTypes.arrayOf(PropTypes.string),
+  /** The label for the contact languages. */
+  languagesLabel: PropTypes.string,
   /** The name of the property host. */
   name: PropTypes.string.isRequired,
   /** The phone number of the property host. */
   phone: PropTypes.string,
+  /** The label for the contact phone number. */
+  phoneLabel: PropTypes.string,
 };
