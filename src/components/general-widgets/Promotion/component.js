@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import { Statistic, Segment } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
+import {
+  BOOK_NOW_DISCOUNT,
+  SAVE_UP_TO,
+  USE_COUPON_CODE,
+} from 'utils/default-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
@@ -15,10 +20,13 @@ import { Button } from 'elements/Button';
  * @returns {Object}
  */
 export const Component = ({
-  discountAmount,
-  discountCode,
-  headingText,
   backgroundImage,
+  discountAmount,
+  discountAmountParagraphText,
+  discountCode,
+  discountCodeParagraphText,
+  discountHoverButtonText,
+  headingText,
   isDisplayedStacked,
   onClick,
 }) => (
@@ -45,7 +53,7 @@ export const Component = ({
             {!isDisplayedStacked && (
               <GridRow className="book-now-button-container">
                 <GridColumn textAlign="center">
-                  <Button isRounded>Book Now with Discount</Button>
+                  <Button isRounded>{discountHoverButtonText}</Button>
                 </GridColumn>
               </GridRow>
             )}
@@ -56,7 +64,7 @@ export const Component = ({
                 width={isDisplayedStacked ? 12 : 6}
               >
                 <div>
-                  <Paragraph size="tiny">Use the coupon code</Paragraph>
+                  <Paragraph size="tiny">{discountCodeParagraphText}</Paragraph>
                   <Button hasShadow isPositionedRight>
                     {discountCode}
                   </Button>
@@ -73,7 +81,9 @@ export const Component = ({
         >
           <Statistic size="small">
             <Statistic.Label>
-              <Paragraph weight="heavy">Save up to</Paragraph>
+              <Paragraph weight="heavy">
+                {discountAmountParagraphText}
+              </Paragraph>
             </Statistic.Label>
             <Statistic.Value>
               <Heading size="large">{discountAmount}</Heading>
@@ -88,6 +98,9 @@ export const Component = ({
 Component.displayName = 'Promotion';
 
 Component.defaultProps = {
+  discountAmountParagraphText: SAVE_UP_TO,
+  discountCodeParagraphText: USE_COUPON_CODE,
+  discountHoverButtonText: BOOK_NOW_DISCOUNT,
   isDisplayedStacked: false,
 };
 
@@ -96,8 +109,14 @@ Component.propTypes = {
   backgroundImage: PropTypes.string.isRequired,
   /** The discount amount to be displayed */
   discountAmount: PropTypes.string.isRequired,
+  /** The above text for the discount amount  */
+  discountAmountParagraphText: PropTypes.string,
   /** The discount code to be displayed */
   discountCode: PropTypes.string.isRequired,
+  /** The above text for the discount code */
+  discountCodeParagraphText: PropTypes.string,
+  /** The text for the button that shows on hover */
+  discountHoverButtonText: PropTypes.string,
   /** The heading text */
   headingText: PropTypes.string.isRequired,
   /** Is the component displayed with each item above one another */
