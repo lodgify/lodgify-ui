@@ -21,7 +21,7 @@ export const Component = ({
   amenities,
   headingText,
   isStacked,
-  modalTriggerLabel,
+  modalTriggerText,
 }) => (
   <Grid stackable>
     {headingText && (
@@ -34,7 +34,7 @@ export const Component = ({
     )}
     {hasExtraItems(amenities, isStacked) && (
       <GridColumn width={12}>
-        <Modal trigger={<Link>{modalTriggerLabel}</Link>}>
+        <Modal trigger={<Link>{modalTriggerText}</Link>}>
           <SemanticModal.Content>
             <Grid padded stackable>
               {amenities.map(getCategoryMarkup)}
@@ -51,7 +51,7 @@ Component.displayName = 'Amenities';
 Component.defaultProps = {
   headingText: null,
   isStacked: false,
-  modalTriggerLabel: VIEW_MORE,
+  modalTriggerText: VIEW_MORE,
 };
 
 Component.propTypes = {
@@ -72,6 +72,6 @@ Component.propTypes = {
   headingText: PropTypes.string,
   /** Are the amenities displayed stacked on top of one another */
   isStacked: PropTypes.bool,
-  /** The label for the modal trigger */
-  modalTriggerLabel: PropTypes.string,
+  /** The text for the modal trigger */
+  modalTriggerText: PropTypes.string,
 };
