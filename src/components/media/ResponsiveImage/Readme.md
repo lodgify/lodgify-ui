@@ -63,3 +63,10 @@
 ```jsx
 <ResponsiveImage />
 ```
+
+### Content
+
+#### Strings
+```jsx
+<ResponsiveImage imageNotFoundLabelText="Where did it go?" />
+```
