@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Label } from 'semantic-ui-react';
 
+import { KEY_FACTS } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
@@ -12,10 +13,10 @@ import { IconCard } from 'elements/IconCard';
  * The standard widget for displaying key facts about a property.
  * @returns {Object}
  */
-export const Component = ({ keyFacts }) => (
+export const Component = ({ keyFacts, keyFactsHeadingText }) => (
   <Grid>
     <GridColumn width={12}>
-      <Heading>Key facts</Heading>
+      <Heading>{keyFactsHeadingText}</Heading>
     </GridColumn>
     <GridColumn width={12}>
       <Label.Group>
@@ -35,6 +36,10 @@ export const Component = ({ keyFacts }) => (
 
 Component.displayName = 'KeyFacts';
 
+Component.defaultProps = {
+  keyFactsHeadingText: KEY_FACTS
+}
+
 Component.propTypes = {
   /** The key facts to display as icon cards. */
   keyFacts: PropTypes.arrayOf(
@@ -50,4 +55,6 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
+
+  keyFactsHeadingText: PropTypes.string
 };

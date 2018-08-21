@@ -7,6 +7,7 @@ export const DAMAGE_DEPOSIT = 'Damage Deposit';
 export const DEPARTURE = 'Departure';
 export const EMAIL = 'Email';
 export const GUESTS = 'Guests';
+export const KEY_FACTS = 'Key facts';
 export const NAME = 'Name';
 export const NOTES = 'Notes';
 export const PAYMENT_INFORMATION = 'Payment Information';
