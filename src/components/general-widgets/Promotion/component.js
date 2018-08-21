@@ -109,11 +109,11 @@ Component.propTypes = {
   backgroundImage: PropTypes.string.isRequired,
   /** The discount amount to be displayed */
   discountAmount: PropTypes.string.isRequired,
-  /** The above text for the discount amount  */
+  /** The text to display above the discount amount */
   discountAmountParagraphText: PropTypes.string,
   /** The discount code to be displayed */
   discountCode: PropTypes.string.isRequired,
-  /** The above text for the discount code */
+  /** The text to display above the discount code */
   discountCodeParagraphText: PropTypes.string,
   /** The text for the button that shows on hover */
   discountHoverButtonText: PropTypes.string,
