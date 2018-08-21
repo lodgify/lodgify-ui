@@ -19,13 +19,13 @@ import { REVIEWS, SUBMIT_REVIEW } from 'utils/default-strings';
 export const Component = ({
   reviews,
   ratingAverage,
-  reviewsHeading,
-  submitReviewLabel,
+  reviewsHeadingText,
+  submitReviewButtonText,
 }) => (
   <Grid>
     <GridRow>
       <GridColumn width={12}>
-        <Heading>{reviewsHeading}</Heading>
+        <Heading>{reviewsHeadingText}</Heading>
       </GridColumn>
     </GridRow>
     <GridRow verticalAlign="middle">
@@ -53,7 +53,7 @@ export const Component = ({
         verticalAlign="middle"
       >
         <Button isCompact isPositionedRight isRounded size="medium">
-          {submitReviewLabel}
+          {submitReviewButtonText}
         </Button>
       </GridColumn>
     </GridRow>
@@ -72,8 +72,8 @@ Component.displayName = 'Reviews';
 
 Component.defaultProps = {
   reviews: [],
-  reviewsHeading: REVIEWS,
-  submitReviewLabel: SUBMIT_REVIEW,
+  reviewsHeadingText: REVIEWS,
+  submitReviewButtonText: SUBMIT_REVIEW,
 };
 
 Component.propTypes = {
@@ -107,8 +107,8 @@ Component.propTypes = {
       reviewerStayDate: PropTypes.string.isRequired,
     })
   ),
-  /** The reviews heading */
-  reviewsHeading: PropTypes.string,
-  /** The submit a new review label */
-  submitReviewLabel: PropTypes.string,
+  /** The reviews heading text */
+  reviewsHeadingText: PropTypes.string,
+  /** The submit a new review text */
+  submitReviewButtonText: PropTypes.string,
 };
