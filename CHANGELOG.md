@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/lodgify/lodgify-ui/compare/v1.29.0...v1.30.0) (2018-08-21)
+
+
+### Features
+
+* **PaymentInformation:** Expose string props ([6e9d0bd](https://github.com/lodgify/lodgify-ui/commit/6e9d0bd))
+
 # [1.29.0](https://github.com/lodgify/lodgify-ui/compare/v1.28.1...v1.29.0) (2018-08-17)
 
 
