@@ -7,6 +7,18 @@ import {
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import {
+  CALL_ME_BACK,
+  DATE,
+  EMAIL,
+  NAME,
+  NOTES,
+  PHONE,
+  PROPERTY,
+  SEND,
+  TIME_ZONE,
+  TIME,
+} from 'utils/default-strings';
 import { Dropdown } from 'inputs/Dropdown';
 import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
@@ -73,9 +85,9 @@ describe('<CallMeBack />', () => {
       const wrapper = getForm();
 
       expectComponentToHaveProps(wrapper, {
-        headingText: 'Call me back',
+        headingText: CALL_ME_BACK,
         onSubmit: Function.prototype,
-        submitButtonText: 'Send',
+        submitButtonText: SEND,
       });
     });
 
@@ -110,7 +122,7 @@ describe('<CallMeBack />', () => {
         .find(TextInput);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Name',
+        label: NAME,
         name: 'name',
       });
     });
@@ -121,7 +133,7 @@ describe('<CallMeBack />', () => {
       const wrapper = getCallMeBack().find(PhoneInput);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Phone',
+        label: PHONE,
         name: 'phone',
       });
     });
@@ -134,7 +146,7 @@ describe('<CallMeBack />', () => {
         .at(1);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Email',
+        label: EMAIL,
         name: 'email',
       });
     });
@@ -155,7 +167,7 @@ describe('<CallMeBack />', () => {
       const wrapper = getForm().find(SingleDatePicker);
 
       expectComponentToHaveProps(wrapper, {
-        placeholderText: 'Date',
+        placeholderText: DATE,
         name: 'date',
       });
     });
@@ -170,7 +182,7 @@ describe('<CallMeBack />', () => {
 
       expectComponentToHaveProps(wrapper, {
         icon: 'clock',
-        label: 'Time',
+        label: TIME,
         name: 'time',
         options: timeOptions,
       });
@@ -196,7 +208,7 @@ describe('<CallMeBack />', () => {
         .first();
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Time Zone',
+        label: TIME_ZONE,
         name: 'timeZone',
         options: timeZoneOptions,
       });
@@ -212,7 +224,7 @@ describe('<CallMeBack />', () => {
         .at(1);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Property',
+        label: PROPERTY,
         name: 'property',
         options: propertyOptions,
       });
@@ -224,7 +236,7 @@ describe('<CallMeBack />', () => {
       const wrapper = getForm().find(TextArea);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Notes',
+        label: NOTES,
         name: 'notes',
       });
     });
