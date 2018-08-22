@@ -27,13 +27,13 @@ import { ICON_NAMES } from 'elements/Icon';
  * @returns {Object}
  */
 export const Component = ({
-  datePlaceholderLabel,
-  emailFieldLabel,
+  datePlaceholderText,
+  emailInputLabel,
   headingText,
-  nameFieldLabel,
+  nameInputLabel,
   noteTextareaLabel,
   onSubmit,
-  phoneFieldLabel,
+  phoneInputLabel,
   propertyDropdownLabel,
   propertyOptions,
   submitButtonText,
@@ -48,12 +48,12 @@ export const Component = ({
     submitButtonText={submitButtonText}
   >
     <InputGroup>
-      <TextInput label={nameFieldLabel} name="name" />
-      <PhoneInput label={phoneFieldLabel} name="phone" />
+      <TextInput label={nameInputLabel} name="name" />
+      <PhoneInput label={phoneInputLabel} name="phone" />
     </InputGroup>
-    <TextInput label={emailFieldLabel} name="email" />
+    <TextInput label={emailInputLabel} name="email" />
     <InputGroup>
-      <SingleDatePicker name="date" placeholderText={datePlaceholderLabel} />
+      <SingleDatePicker name="date" placeholderText={datePlaceholderText} />
       <Dropdown
         icon={ICON_NAMES.CLOCK}
         label={timeDropdownLabel}
@@ -80,13 +80,13 @@ export const Component = ({
 Component.displayName = 'CallMeBack';
 
 Component.defaultProps = {
-  datePlaceholderLabel: DATE,
-  emailFieldLabel: EMAIL,
+  datePlaceholderText: DATE,
+  emailInputLabel: EMAIL,
   headingText: CALL_ME_BACK,
-  nameFieldLabel: NAME,
+  nameInputLabel: NAME,
   noteTextareaLabel: NOTES,
   onSubmit: Function.prototype,
-  phoneFieldLabel: PHONE,
+  phoneInputLabel: PHONE,
   propertyDropdownLabel: PROPERTY,
   submitButtonText: SEND,
   timeDropdownLabel: TIME,
@@ -94,23 +94,23 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The date placeholder label */
-  datePlaceholderLabel: PropTypes.string,
-  /** The email field label */
-  emailFieldLabel: PropTypes.string,
-  /** The heading text */
+  /** The placeholder text for the date input */
+  datePlaceholderText: PropTypes.string,
+  /** The label for the email input */
+  emailInputLabel: PropTypes.string,
+  /** The text for the heading displayed above the call me back form */
   headingText: PropTypes.string,
-  /** The name field label */
-  nameFieldLabel: PropTypes.string,
-  /** The note text area label */
+  /** The label for the name input */
+  nameInputLabel: PropTypes.string,
+  /** The label for the note text area */
   noteTextareaLabel: PropTypes.string,
   /** The function to call when the form is submitted
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
-  /** The phone field label */
-  phoneFieldLabel: PropTypes.string,
-  /** The property dropdown label */
+  /** The label for the phone input */
+  phoneInputLabel: PropTypes.string,
+  /** The label for the property dropdown */
   propertyDropdownLabel: PropTypes.string,
   /** The options which the user can select for the property field. */
   propertyOptions: PropTypes.arrayOf(
@@ -127,7 +127,7 @@ Component.propTypes = {
   ).isRequired,
   /** The form submit button text */
   submitButtonText: PropTypes.string,
-  /** The time dropdown label */
+  /** The label for the time dropdown */
   timeDropdownLabel: PropTypes.string,
   /** The options which the user can select for the time field. */
   timeOptions: PropTypes.arrayOf(
@@ -155,6 +155,6 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
-  /** The time zone dropdown label */
+  /** The label for the time zone dropdown */
   timezoneDropdownLabel: PropTypes.string,
 };
