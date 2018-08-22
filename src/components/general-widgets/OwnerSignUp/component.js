@@ -46,15 +46,15 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The email label */
+  /** The label for the email input */
   emailLabel: PropTypes.string,
-  /** The first name label */
+  /** The label for the first name input */
   firstNameLabel: PropTypes.string,
-  /** The form submit button text */
+  /** The text displayed inside the form submit button */
   formButtonText: PropTypes.string,
-  /** The form heading text */
+  /** The text displayed at the top of the form */
   formHeadingText: PropTypes.string,
-  /** The last name label */
+  /** The label for the last name input */
   lastNameLabel: PropTypes.string,
   /** The function to call when the form is submitted
    *  @param {Object} values - The values of the inputs in the form.
