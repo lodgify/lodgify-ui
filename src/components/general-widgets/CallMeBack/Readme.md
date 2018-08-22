@@ -28,3 +28,25 @@ const timeZoneOptions = [
   timeZoneOptions={timeZoneOptions}
 />
 ```
+
+### Content
+
+#### Strings
+
+```jsx
+<CallMeBack
+  datePlaceholderText="The Date"
+  emailInputLabel="Your email address"
+  headingText="Can you call me back?"
+  nameInputLabel="Your name"
+  noteTextareaLabel="Some notes?"
+  phoneInputLabel="Your phone number"
+  propertyDropdownLabel="What property?"
+  propertyOptions={[]}
+  submitButtonText="Submit form"
+  timeDropdownLabel="Choose an ideal time"
+  timeOptions={[]}
+  timezoneDropdownLabel="What is your time zone"
+  timeZoneOptions={[]}
+/>
+```
