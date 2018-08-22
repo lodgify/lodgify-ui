@@ -12,12 +12,9 @@ import { IconCard } from 'elements/IconCard';
  * The standard widget for displaying the sleeping arrangments for a property.
  * @returns {Object}
  */
-export const Component = ({
-  sleepingArrangements,
-  sleepingArrangementsHeadingText,
-}) => (
+export const Component = ({ headingText, sleepingArrangements }) => (
   <div>
-    <Heading>{sleepingArrangementsHeadingText}</Heading>
+    <Heading>{headingText}</Heading>
     <Grid>
       {sleepingArrangements.map(({ iconName, label }, index) => (
         <GridColumn
@@ -36,10 +33,12 @@ export const Component = ({
 Component.displayName = 'SleepingArrangements';
 
 Component.defaultProps = {
-  sleepingArrangementsHeadingText: SLEEPING_ARRANGEMENTS,
+  headingText: SLEEPING_ARRANGEMENTS,
 };
 
 Component.propTypes = {
+  /** The text for the heading displayed above the sleeping arrangments */
+  headingText: PropTypes.string,
   /** The sleeping arrangements to display as icon cards. */
   sleepingArrangements: PropTypes.arrayOf(
     PropTypes.shape({
@@ -52,6 +51,4 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** The heading text */
-  sleepingArrangementsHeadingText: PropTypes.string,
 };

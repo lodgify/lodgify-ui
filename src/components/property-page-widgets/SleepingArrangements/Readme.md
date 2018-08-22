@@ -25,5 +25,8 @@ const sleepingArrangements = [
   { iconName: 'paw', label: '2 okapis' },
 ];
 
-<SleepingArrangements sleepingArrangements={sleepingArrangements} sleepingArrangementsHeadingText="The title!" />
+<SleepingArrangements
+  headingText="The title!"
+  sleepingArrangements={sleepingArrangements}
+/>
 ```
