@@ -16,6 +16,7 @@ export const IMAGE_TITLE = 'Image Title';
 export const IMAGE_WIDGET = 'Image Widget';
 export const KEY_FACTS = 'Key facts';
 export const LANGUAGES = 'Languages';
+export const LOCATION = 'Location';
 export const LOGIN = 'Log in';
 export const NAME = 'Name';
 export const NOTES = 'Notes';
