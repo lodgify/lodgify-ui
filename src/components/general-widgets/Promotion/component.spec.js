@@ -7,6 +7,7 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 import { Statistic, Segment } from 'semantic-ui-react';
 
+import { BOOK_NOW_DISCOUNT, USE_COUPON_CODE } from 'utils/default-strings';
 import { Button } from 'elements/Button';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
@@ -244,7 +245,7 @@ describe('The `Promotion` component', () => {
     it('should have the right children', () => {
       const wrapper = getButton();
 
-      expectComponentToHaveChildren(wrapper, 'Book Now with Discount');
+      expectComponentToHaveChildren(wrapper, BOOK_NOW_DISCOUNT);
     });
   });
 
@@ -319,7 +320,7 @@ describe('The `Promotion` component', () => {
     it('should have the right children', () => {
       const wrapper = getParagraph();
 
-      expectComponentToHaveChildren(wrapper, 'Use the coupon code');
+      expectComponentToHaveChildren(wrapper, USE_COUPON_CODE);
     });
   });
 
