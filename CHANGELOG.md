@@ -1,3 +1,10 @@
+# [1.39.0](https://github.com/lodgify/lodgify-ui/compare/v1.38.0...v1.39.0) (2018-08-22)
+
+
+### Features
+
+* **SleepingArrangements:** expose string props ([2629ec9](https://github.com/lodgify/lodgify-ui/commit/2629ec9))
+
 # [1.38.0](https://github.com/lodgify/lodgify-ui/compare/v1.37.0...v1.38.0) (2018-08-22)
 
 
