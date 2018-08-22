@@ -1,3 +1,11 @@
+# [1.38.0](https://github.com/lodgify/lodgify-ui/compare/v1.37.0...v1.38.0) (2018-08-22)
+
+
+### Features
+
+* **OwnerSignup:** expose string props ([052b153](https://github.com/lodgify/lodgify-ui/commit/052b153))
+* **Rules:** expose string props ([6fc4644](https://github.com/lodgify/lodgify-ui/commit/6fc4644))
+
 # [1.37.0](https://github.com/lodgify/lodgify-ui/compare/v1.36.0...v1.37.0) (2018-08-22)
 
 
