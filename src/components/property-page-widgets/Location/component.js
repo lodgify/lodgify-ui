@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { LOCATION } from 'utils/default-strings';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { withResponsive } from 'utils/with-responsive';
@@ -27,13 +28,14 @@ const Component = ({
   isUserOnMobile,
   latitude,
   locationDescription,
+  locationHeadingText,
   locationSummary,
   longitude,
   transportOptions,
 }) => (
   <Grid stackable>
     <GridColumn width={12}>
-      <Heading>Location</Heading>
+      <Heading>{locationHeadingText}</Heading>
       <Subheading>{locationSummary}</Subheading>
     </GridColumn>
     <GridColumn computer={6} tablet={12}>
@@ -70,6 +72,7 @@ const Component = ({
 Component.displayName = 'Location';
 
 Component.defaultProps = {
+  locationHeadingText: LOCATION,
   isShowingApproximateLocation: false,
   isShowingExactLocation: false,
 };
@@ -89,6 +92,8 @@ Component.propTypes = {
   latitude: PropTypes.number.isRequired,
   /** The text description of the location. */
   locationDescription: PropTypes.string.isRequired,
+  /** The location heading text */
+  locationHeadingText: PropTypes.string,
   /** The summary of the location. */
   locationSummary: PropTypes.string.isRequired,
   /** The longitude coordinate for the center of the map and/or location of the marker */

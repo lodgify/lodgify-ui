@@ -8,6 +8,7 @@ import {
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { LOCATION } from 'utils/default-strings';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
@@ -106,7 +107,7 @@ describe('<Location />', () => {
     it('should render the right children', () => {
       const wrapper = getWrappedLocation().find(Heading);
 
-      expectComponentToHaveChildren(wrapper, 'Location');
+      expectComponentToHaveChildren(wrapper, LOCATION);
     });
   });
 
