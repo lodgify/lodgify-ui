@@ -19,12 +19,12 @@ import { getCheckInOrOutTimeLabel } from './utils/getCheckInOrOutTimeLabel';
 export const Component = ({
   checkInTime,
   checkOutTime,
+  headingText,
   rules,
-  rulesHeadingText,
 }) => (
   <Grid stackable>
     <GridColumn width={12}>
-      <Heading>{rulesHeadingText}</Heading>
+      <Heading>{headingText}</Heading>
     </GridColumn>
     <GridColumn computer={3} tablet={5}>
       <List
@@ -50,7 +50,7 @@ export const Component = ({
 Component.displayName = 'Rules';
 
 Component.defaultProps = {
-  rulesHeadingText: HOUSE_RULES,
+  headingText: HOUSE_RULES,
 };
 
 Component.propTypes = {
@@ -58,8 +58,8 @@ Component.propTypes = {
   checkInTime: PropTypes.string.isRequired,
   /** The propery check-out time. */
   checkOutTime: PropTypes.string.isRequired,
+  /** The text to display as a heading at the top of the rules. */
+  headingText: PropTypes.string,
   /** The collection of rules. */
   rules: PropTypes.arrayOf(PropTypes.string).isRequired,
-  /** The heading text */
-  rulesHeadingText: PropTypes.string,
 };

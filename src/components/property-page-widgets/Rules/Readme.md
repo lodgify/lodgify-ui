@@ -22,7 +22,7 @@ const rules = ['Smoking not allowed', 'No parties or events', 'Pets are allowed'
 <Rules
   checkInTime={checkInTime}
   checkOutTime={checkOutTime}
+  headingText="My Heading"
   rules={rules}
-  rulesHeadingText="My Heading"
 />
 ```
