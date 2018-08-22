@@ -7,6 +7,7 @@ import {
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { EMAIL, OWNER_LOGIN, PASSWORD, LOGIN } from 'utils/default-strings';
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
 
@@ -36,9 +37,9 @@ describe('<OwnerLogin />', () => {
         actionLink: {
           text: getForgotPasswordFormMarkup(Function.prototype),
         },
-        headingText: 'Owner Login',
+        headingText: OWNER_LOGIN,
         onSubmit: Function.prototype,
-        submitButtonText: 'Log in',
+        submitButtonText: LOGIN,
       });
     });
   });
@@ -49,7 +50,7 @@ describe('<OwnerLogin />', () => {
         .find(TextInput)
         .at(0);
 
-      expectComponentToHaveProps(wrapper, { label: 'Email', name: 'email' });
+      expectComponentToHaveProps(wrapper, { label: EMAIL, name: 'email' });
     });
   });
 
@@ -60,7 +61,7 @@ describe('<OwnerLogin />', () => {
         .at(1);
 
       expectComponentToHaveProps(wrapper, {
-        label: 'Password',
+        label: PASSWORD,
         name: 'password',
         type: 'password',
       });

@@ -1,21 +1,32 @@
 import React from 'react';
 
+import { FORGOT_PASSWORD, SEND_RESET, EMAIL } from 'utils/default-strings';
 import { Form } from 'collections/Form';
 import { Modal } from 'elements/Modal';
 import { TextInput } from 'inputs/TextInput';
 
 /**
- * @param  {Function} onForgotPasswordSubmit
+ * @param {Function}  onForgotPasswordSubmit
+ * @param {String}    forgotPasswordButtonText
+ * @param {String}    forgotPasswordEmailLabel
+ * @param {String}    forgotPasswordHeadingText
+ * @param {String}    forgotPasswordModelTriggerText
  * @return {Object}
  */
-export const getForgotPasswordFormMarkup = onForgotPasswordSubmit => (
-  <Modal trigger={<span>Forgot password</span>}>
+export const getForgotPasswordFormMarkup = (
+  onForgotPasswordSubmit,
+  forgotPasswordButtonText = SEND_RESET,
+  forgotPasswordEmailLabel = EMAIL,
+  forgotPasswordHeadingText = FORGOT_PASSWORD,
+  forgotPasswordModelTriggerText = FORGOT_PASSWORD
+) => (
+  <Modal trigger={<span>{forgotPasswordModelTriggerText}</span>}>
     <Form
-      headingText="Forgot Password"
+      headingText={forgotPasswordHeadingText}
       onSubmit={onForgotPasswordSubmit}
-      submitButtonText="Send reset"
+      submitButtonText={forgotPasswordButtonText}
     >
-      <TextInput label="Email" name="email" />
+      <TextInput label={forgotPasswordEmailLabel} name="email" />
     </Form>
   </Modal>
 );
