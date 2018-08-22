@@ -7,6 +7,13 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import {
+  EMAIL,
+  FIRST_NAME,
+  LAST_NAME,
+  OWNER_SIGNUP,
+  SIGN_UP,
+} from 'utils/default-strings';
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
 
@@ -28,9 +35,9 @@ describe('<OwnerSignUp />', () => {
       const wrapper = getOwnerSignUp().find(Form);
 
       expectComponentToHaveProps(wrapper, {
-        headingText: 'Owner Signup',
+        headingText: OWNER_SIGNUP,
         onSubmit: Function.prototype,
-        submitButtonText: 'Sign up',
+        submitButtonText: SIGN_UP,
       });
     });
 
@@ -50,9 +57,9 @@ describe('<OwnerSignUp />', () => {
         .find(Form)
         .find(TextInput);
       const propSets = [
-        { label: 'First Name', name: 'firstName' },
-        { label: 'Last Name', name: 'lastName' },
-        { label: 'Email', name: 'email' },
+        { label: FIRST_NAME, name: 'firstName' },
+        { label: LAST_NAME, name: 'lastName' },
+        { label: EMAIL, name: 'email' },
       ];
 
       wrappers.forEach((wrapper, index) => {
