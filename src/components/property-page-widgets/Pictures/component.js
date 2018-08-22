@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { EXPLORE_ALL_PICTURES, PROPERTY_PICTURES } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -14,10 +15,14 @@ import { Link } from 'elements/Link';
  * The standard widget for displaying pictures of a property.
  * @returns {Object}
  */
-export const Component = ({ pictures }) => (
+export const Component = ({
+  pictures,
+  propertyPicturesHeadingText,
+  propertyPicturesLinkText,
+}) => (
   <Grid>
     <GridColumn width={12}>
-      <Heading>Property pictures</Heading>
+      <Heading>{propertyPicturesHeadingText}</Heading>
     </GridColumn>
     {pictures.map(({ imageUrl, label }, index) => (
       <GridColumn key={buildKeyFromStrings(label, index)} width={4}>
@@ -36,12 +41,17 @@ export const Component = ({ pictures }) => (
       </GridColumn>
     ))}
     <GridColumn width={12}>
-      <Link>Explore all pictures</Link>
+      <Link>{propertyPicturesLinkText}</Link>
     </GridColumn>
   </Grid>
 );
 
 Component.displayName = 'Pictures';
+
+Component.defaultProps = {
+  propertyPicturesHeadingText: PROPERTY_PICTURES,
+  propertyPicturesLinkText: EXPLORE_ALL_PICTURES,
+};
 
 Component.propTypes = {
   /** The pictures to display as responsive images. */
@@ -53,4 +63,8 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** The heading text */
+  propertyPicturesHeadingText: PropTypes.string,
+  /** The link text */
+  propertyPicturesLinkText: PropTypes.string,
 };

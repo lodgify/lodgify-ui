@@ -7,6 +7,7 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { EXPLORE_ALL_PICTURES, PROPERTY_PICTURES } from 'utils/default-strings';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -64,7 +65,7 @@ describe('<Pictures />', () => {
     it('should render the right children', () => {
       const wrapper = getPictures().find(Heading);
 
-      expectComponentToHaveChildren(wrapper, 'Property pictures');
+      expectComponentToHaveChildren(wrapper, PROPERTY_PICTURES);
     });
   });
 
@@ -172,7 +173,7 @@ describe('<Pictures />', () => {
     it('should render the right children', () => {
       const wrapper = getPictures().find(Link);
 
-      expectComponentToHaveChildren(wrapper, 'Explore all pictures');
+      expectComponentToHaveChildren(wrapper, EXPLORE_ALL_PICTURES);
     });
   });
 
