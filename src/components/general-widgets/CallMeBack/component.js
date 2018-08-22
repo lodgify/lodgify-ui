@@ -1,6 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import {
+  CALL_ME_BACK,
+  DATE,
+  EMAIL,
+  NAME,
+  NOTES,
+  PHONE,
+  PROPERTY,
+  SEND,
+  TIME_ZONE,
+  TIME,
+} from 'utils/default-strings';
 import { Dropdown } from 'inputs/Dropdown';
 import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
@@ -15,45 +27,91 @@ import { ICON_NAMES } from 'elements/Icon';
  * @returns {Object}
  */
 export const Component = ({
+  datePlaceholderLabel,
+  emailFieldLabel,
+  headingText,
+  nameFieldLabel,
+  noteTextareaLabel,
   onSubmit,
+  phoneFieldLabel,
+  propertyDropdownLabel,
   propertyOptions,
+  submitButtonText,
+  timeDropdownLabel,
   timeOptions,
+  timezoneDropdownLabel,
   timeZoneOptions,
 }) => (
-  <Form headingText="Call me back" onSubmit={onSubmit} submitButtonText="Send">
+  <Form
+    headingText={headingText}
+    onSubmit={onSubmit}
+    submitButtonText={submitButtonText}
+  >
     <InputGroup>
-      <TextInput label="Name" name="name" />
-      <PhoneInput label="Phone" name="phone" />
+      <TextInput label={nameFieldLabel} name="name" />
+      <PhoneInput label={phoneFieldLabel} name="phone" />
     </InputGroup>
-    <TextInput label="Email" name="email" />
+    <TextInput label={emailFieldLabel} name="email" />
     <InputGroup>
-      <SingleDatePicker name="date" placeholderText="Date" />
+      <SingleDatePicker name="date" placeholderText={datePlaceholderLabel} />
       <Dropdown
         icon={ICON_NAMES.CLOCK}
-        label="Time"
+        label={timeDropdownLabel}
         name="time"
         options={timeOptions}
       />
     </InputGroup>
     <InputGroup>
-      <Dropdown label="Time Zone" name="timeZone" options={timeZoneOptions} />
-      <Dropdown label="Property" name="property" options={propertyOptions} />
+      <Dropdown
+        label={timezoneDropdownLabel}
+        name="timeZone"
+        options={timeZoneOptions}
+      />
+      <Dropdown
+        label={propertyDropdownLabel}
+        name="property"
+        options={propertyOptions}
+      />
     </InputGroup>
-    <TextArea label="Notes" name="notes" />
+    <TextArea label={noteTextareaLabel} name="notes" />
   </Form>
 );
 
 Component.displayName = 'CallMeBack';
 
 Component.defaultProps = {
+  datePlaceholderLabel: DATE,
+  emailFieldLabel: EMAIL,
+  headingText: CALL_ME_BACK,
+  nameFieldLabel: NAME,
+  noteTextareaLabel: NOTES,
   onSubmit: Function.prototype,
+  phoneFieldLabel: PHONE,
+  propertyDropdownLabel: PROPERTY,
+  submitButtonText: SEND,
+  timeDropdownLabel: TIME,
+  timezoneDropdownLabel: TIME_ZONE,
 };
 
 Component.propTypes = {
+  /** The date placeholder label */
+  datePlaceholderLabel: PropTypes.string,
+  /** The email field label */
+  emailFieldLabel: PropTypes.string,
+  /** The heading text */
+  headingText: PropTypes.string,
+  /** The name field label */
+  nameFieldLabel: PropTypes.string,
+  /** The note text area label */
+  noteTextareaLabel: PropTypes.string,
   /** The function to call when the form is submitted
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
+  /** The phone field label */
+  phoneFieldLabel: PropTypes.string,
+  /** The property dropdown label */
+  propertyDropdownLabel: PropTypes.string,
   /** The options which the user can select for the property field. */
   propertyOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -67,6 +125,10 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The form submit button text */
+  submitButtonText: PropTypes.string,
+  /** The time dropdown label */
+  timeDropdownLabel: PropTypes.string,
   /** The options which the user can select for the time field. */
   timeOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -93,4 +155,6 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The time zone dropdown label */
+  timezoneDropdownLabel: PropTypes.string,
 };
