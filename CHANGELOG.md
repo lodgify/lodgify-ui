@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/lodgify/lodgify-ui/compare/v1.36.0...v1.37.0) (2018-08-22)
+
+
+### Features
+
+* **Promotion:** exposes the string props ([3eeae72](https://github.com/lodgify/lodgify-ui/commit/3eeae72))
+
 # [1.36.0](https://github.com/lodgify/lodgify-ui/compare/v1.35.0...v1.36.0) (2018-08-22)
 
 
