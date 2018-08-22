@@ -7,6 +7,7 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { SLEEPING_ARRANGEMENTS } from 'utils/default-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
@@ -42,7 +43,7 @@ describe('<SleepingArrangements />', () => {
     it('should render the right children', () => {
       const wrapper = getSleepingArrangements().find(Heading);
 
-      expectComponentToHaveChildren(wrapper, 'Sleeping arrangements');
+      expectComponentToHaveChildren(wrapper, SLEEPING_ARRANGEMENTS);
     });
   });
 

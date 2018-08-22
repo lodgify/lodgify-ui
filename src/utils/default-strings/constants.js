@@ -39,6 +39,7 @@ export const SECURITY_CODE = 'Security code';
 export const SEND = 'Send';
 export const SEND_RESET = 'Send reset';
 export const SIGN_UP = 'Sign up';
+export const SLEEPING_ARRANGEMENTS = 'Sleeping arrangements';
 export const SUBMIT_REVIEW = 'Submit a review';
 export const TAXES = 'Taxes';
 export const USE_COUPON_CODE = 'Use the coupon code';
