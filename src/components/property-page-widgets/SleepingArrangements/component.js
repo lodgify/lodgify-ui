@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { SLEEPING_ARRANGEMENTS } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
@@ -11,9 +12,12 @@ import { IconCard } from 'elements/IconCard';
  * The standard widget for displaying the sleeping arrangments for a property.
  * @returns {Object}
  */
-export const Component = ({ sleepingArrangements }) => (
+export const Component = ({
+  sleepingArrangements,
+  sleepingArrangementsHeadingText,
+}) => (
   <div>
-    <Heading>Sleeping arrangements</Heading>
+    <Heading>{sleepingArrangementsHeadingText}</Heading>
     <Grid>
       {sleepingArrangements.map(({ iconName, label }, index) => (
         <GridColumn
@@ -31,6 +35,10 @@ export const Component = ({ sleepingArrangements }) => (
 
 Component.displayName = 'SleepingArrangements';
 
+Component.defaultProps = {
+  sleepingArrangementsHeadingText: SLEEPING_ARRANGEMENTS,
+};
+
 Component.propTypes = {
   /** The sleeping arrangements to display as icon cards. */
   sleepingArrangements: PropTypes.arrayOf(
@@ -44,4 +52,6 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** The heading text */
+  sleepingArrangementsHeadingText: PropTypes.string,
 };

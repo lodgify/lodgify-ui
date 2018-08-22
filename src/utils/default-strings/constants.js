@@ -44,3 +44,4 @@ export const TAXES = 'Taxes';
 export const USE_COUPON_CODE = 'Use the coupon code';
 export const VIEW_MORE = 'View more';
 export const YOUR_HOST = 'Your Host';
+export const SLEEPING_ARRANGEMENTS = 'Sleeping arrangements';
