@@ -8,6 +8,7 @@ import {
   expectComponentToBe,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { HOUSE_RULES } from 'utils/default-strings';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -84,7 +85,7 @@ describe('<Rules />', () => {
     it('should render the right children', () => {
       const wrapper = getRules().find(Heading);
 
-      expectComponentToHaveChildren(wrapper, 'House Rules');
+      expectComponentToHaveChildren(wrapper, HOUSE_RULES);
     });
   });
 

@@ -1,3 +1,81 @@
+# [1.40.0](https://github.com/lodgify/lodgify-ui/compare/v1.39.0...v1.40.0) (2018-08-22)
+
+
+### Features
+
+* **CallMeBack:** expose string props ([3f1c47d](https://github.com/lodgify/lodgify-ui/commit/3f1c47d))
+
+# [1.39.0](https://github.com/lodgify/lodgify-ui/compare/v1.38.0...v1.39.0) (2018-08-22)
+
+
+### Features
+
+* **SleepingArrangements:** expose string props ([2629ec9](https://github.com/lodgify/lodgify-ui/commit/2629ec9))
+
+# [1.38.0](https://github.com/lodgify/lodgify-ui/compare/v1.37.0...v1.38.0) (2018-08-22)
+
+
+### Features
+
+* **OwnerSignup:** expose string props ([052b153](https://github.com/lodgify/lodgify-ui/commit/052b153))
+* **Rules:** expose string props ([6fc4644](https://github.com/lodgify/lodgify-ui/commit/6fc4644))
+
+# [1.37.0](https://github.com/lodgify/lodgify-ui/compare/v1.36.0...v1.37.0) (2018-08-22)
+
+
+### Features
+
+* **Promotion:** exposes the string props ([3eeae72](https://github.com/lodgify/lodgify-ui/commit/3eeae72))
+
+# [1.36.0](https://github.com/lodgify/lodgify-ui/compare/v1.35.0...v1.36.0) (2018-08-22)
+
+
+### Features
+
+* **PropertyPictures:** expose string props ([246b979](https://github.com/lodgify/lodgify-ui/commit/246b979))
+
+# [1.35.0](https://github.com/lodgify/lodgify-ui/compare/v1.34.0...v1.35.0) (2018-08-22)
+
+
+### Features
+
+* **Location:** expose string prop ([60d7cf8](https://github.com/lodgify/lodgify-ui/commit/60d7cf8))
+
+# [1.34.0](https://github.com/lodgify/lodgify-ui/compare/v1.33.0...v1.34.0) (2018-08-22)
+
+
+### Features
+
+* **OwnerLogin:** expose string props ([d2b090e](https://github.com/lodgify/lodgify-ui/commit/d2b090e))
+
+# [1.33.0](https://github.com/lodgify/lodgify-ui/compare/v1.32.0...v1.33.0) (2018-08-21)
+
+
+### Features
+
+* **KeyFacts:** expose string props ([e36541c](https://github.com/lodgify/lodgify-ui/commit/e36541c))
+
+# [1.32.0](https://github.com/lodgify/lodgify-ui/compare/v1.31.0...v1.32.0) (2018-08-21)
+
+
+### Features
+
+* **Amenities:** expose string props ([91d5599](https://github.com/lodgify/lodgify-ui/commit/91d5599))
+
+# [1.31.0](https://github.com/lodgify/lodgify-ui/compare/v1.30.0...v1.31.0) (2018-08-21)
+
+
+### Features
+
+* **Reviews:** Expose string props ([616508d](https://github.com/lodgify/lodgify-ui/commit/616508d))
+
+# [1.30.0](https://github.com/lodgify/lodgify-ui/compare/v1.29.0...v1.30.0) (2018-08-21)
+
+
+### Features
+
+* **PaymentInformation:** Expose string props ([6e9d0bd](https://github.com/lodgify/lodgify-ui/commit/6e9d0bd))
+
 # [1.29.0](https://github.com/lodgify/lodgify-ui/compare/v1.28.1...v1.29.0) (2018-08-17)
 
 

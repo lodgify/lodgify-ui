@@ -8,6 +8,7 @@ import {
   expectComponentToBe,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { KEY_FACTS } from 'utils/default-strings';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Heading } from 'typography/Heading';
 import { IconCard } from 'elements/IconCard';
@@ -59,7 +60,7 @@ describe('<KeyFacts />', () => {
     it('should render the right children', () => {
       const wrapper = getKeyFacts().find(Heading);
 
-      expectComponentToHaveChildren(wrapper, 'Key facts');
+      expectComponentToHaveChildren(wrapper, KEY_FACTS);
     });
   });
 
