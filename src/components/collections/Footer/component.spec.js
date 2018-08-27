@@ -15,7 +15,7 @@ import { Icon } from 'elements/Icon';
 
 import { Component as Footer } from './component';
 
-const businessName = 'Feline Vacations';
+const copyrightText = '\u00A9 2018 Feline Vacations. All rights reserved.';
 const currencyOptions = [
   { text: 'EUR', value: 'EUR' },
   { text: 'USD', value: 'USD' },
@@ -45,7 +45,6 @@ const socialMediaLinks = [
 const getFooter = otherProps =>
   shallow(
     <Footer
-      businessName={businessName}
       currencyOptions={currencyOptions}
       languageOptions={languageOptions}
       navigationItems={navigationItems}
@@ -173,7 +172,7 @@ describe('<Footer />', () => {
         wrapper,
         ...getArrayOfLengthOfItem(3, Menu.Item),
         Divider,
-        ...getArrayOfLengthOfItem(2, Menu.Item)
+        Menu.Item
       );
     });
 
@@ -186,7 +185,7 @@ describe('<Footer />', () => {
           ...getArrayOfLengthOfItem(3, Menu.Item),
           Menu.Menu,
           Divider,
-          ...getArrayOfLengthOfItem(2, Menu.Item)
+          Menu.Item
         );
       });
     });
@@ -337,27 +336,43 @@ describe('<Footer />', () => {
     });
   });
 
-  describe('the `Menu.Item` displaying the copyright information', () => {
+  describe('if `props.copyrightText` is passed', () => {
+    const getSecondMenuWithCopyright = () => getSecondMenu({ copyrightText });
     const getCopyrightMenuItem = () =>
-      getSecondMenu()
+      getSecondMenuWithCopyright()
         .children(Menu.Item)
         .at(4);
 
-    it('should have the right props', () => {
-      const wrapper = getCopyrightMenuItem();
+    describe('the second `Menu` component', () => {
+      it('should render the right children', () => {
+        const wrapper = getSecondMenu({ copyrightText });
 
-      expectComponentToHaveProps(wrapper, {
-        position: 'right',
+        expectComponentToHaveChildren(
+          wrapper,
+          ...getArrayOfLengthOfItem(3, Menu.Item),
+          Divider,
+          ...getArrayOfLengthOfItem(2, Menu.Item)
+        );
       });
     });
 
-    it('should have the right children', () => {
-      const wrapper = getCopyrightMenuItem();
+    describe('the extra `Menu.Item`', () => {
+      it('should have the right props', () => {
+        const wrapper = getCopyrightMenuItem();
 
-      expectComponentToHaveChildren(
-        wrapper,
-        '© 2018 Feline Vacations. All rights reserved.'
-      );
+        expectComponentToHaveProps(wrapper, {
+          position: 'right',
+        });
+      });
+
+      it('should have the right children', () => {
+        const wrapper = getCopyrightMenuItem();
+
+        expectComponentToHaveChildren(
+          wrapper,
+          '© 2018 Feline Vacations. All rights reserved.'
+        );
+      });
     });
   });
 
