@@ -34,10 +34,10 @@ export const Component = ({
   damageDepositHeadingText,
   damageDepositText,
   extraNotesText,
-  modalViewMoreTriggerText,
+  modalTriggerText,
   notesHeadingText,
   notesText,
-  paymentInformationHeadingText,
+  headingText,
   paymentScheduleHeadingText,
   paymentScheduleText,
   taxesDescriptionText,
@@ -47,7 +47,7 @@ export const Component = ({
   <Grid stackable>
     <GridRow>
       <GridColumn width={12}>
-        <Heading>{paymentInformationHeadingText}</Heading>
+        <Heading>{headingText}</Heading>
       </GridColumn>
     </GridRow>
     <GridRow>
@@ -103,7 +103,7 @@ export const Component = ({
     {!!extraNotesText && (
       <GridRow>
         <GridColumn width={12}>
-          <Modal trigger={<Link>{modalViewMoreTriggerText}</Link>}>
+          <Modal trigger={<Link>{modalTriggerText}</Link>}>
             {getParagraphsFromStrings(extraNotesText).map(
               (paragraphText, index) => (
                 <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
@@ -128,10 +128,10 @@ Component.defaultProps = {
   damageDepositHeadingText: DAMAGE_DEPOSIT,
   damageDepositText: null,
   extraNotesText: null,
-  modalViewMoreTriggerText: VIEW_MORE,
+  modalTriggerText: VIEW_MORE,
   notesHeadingText: NOTES,
   notesText: null,
-  paymentInformationHeadingText: PAYMENT_INFORMATION,
+  headingText: PAYMENT_INFORMATION,
   paymentScheduleHeadingText: PAYMENT_SCHEDULE,
   paymentScheduleText: null,
   taxesDescriptionText: null,
@@ -154,14 +154,14 @@ Component.propTypes = {
   damageDepositText: PropTypes.string,
   /** The Extra Notes text to display. */
   extraNotesText: PropTypes.string,
+  /** The text to display as a heading at the top of the widget. */
+  headingText: PropTypes.string,
   /** The View More trigger text */
-  modalViewMoreTriggerText: PropTypes.string,
+  modalTriggerText: PropTypes.string,
   /** The Notes heading text */
   notesHeadingText: PropTypes.string,
   /** The Notes text to display. */
   notesText: PropTypes.string,
-  /** The Payment Information heading text */
-  paymentInformationHeadingText: PropTypes.string,
   /** The Payment Schedule heading text */
   paymentScheduleHeadingText: PropTypes.string,
   /** The Payment Schedule text to display. */

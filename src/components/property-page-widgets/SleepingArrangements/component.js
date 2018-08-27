@@ -37,7 +37,7 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The text for the heading displayed above the sleeping arrangments */
+  /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
   /** The sleeping arrangements to display as icon cards. */
   sleepingArrangements: PropTypes.arrayOf(

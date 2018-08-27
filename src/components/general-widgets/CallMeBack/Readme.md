@@ -35,18 +35,18 @@ const timeZoneOptions = [
 
 ```jsx
 <CallMeBack
-  datePlaceholderText="The Date"
+  dateInputPlaceholder="The Date"
   emailInputLabel="Your email address"
   headingText="Can you call me back?"
   nameInputLabel="Your name"
-  noteTextareaLabel="Some notes?"
+  notesInputLabel="Some notes?"
   phoneInputLabel="Your phone number"
-  propertyDropdownLabel="What property?"
+  propertyInputLabel="What property?"
   propertyOptions={[]}
   submitButtonText="Submit form"
-  timeDropdownLabel="Choose an ideal time"
+  timeInputLabel="Choose an ideal time"
   timeOptions={[]}
-  timezoneDropdownLabel="What is your time zone"
+  timeZoneInputLabel="What is your time zone"
   timeZoneOptions={[]}
 />
 ```
