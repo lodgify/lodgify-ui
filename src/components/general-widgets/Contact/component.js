@@ -131,7 +131,7 @@ Component.propTypes = {
   emailInputLabel: PropTypes.string,
   /** The label for the guests input.*/
   guestsInputLabel: PropTypes.string,
-  /** The text to display as a heading at the top of the form. */
+  /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
   /** The label for the name input.*/
   nameInputLabel: PropTypes.string,

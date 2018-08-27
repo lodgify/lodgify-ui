@@ -58,7 +58,7 @@ Component.propTypes = {
   checkInTime: PropTypes.string.isRequired,
   /** The propery check-out time. */
   checkOutTime: PropTypes.string.isRequired,
-  /** The text to display as a heading at the top of the rules. */
+  /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
   /** The collection of rules. */
   rules: PropTypes.arrayOf(PropTypes.string).isRequired,

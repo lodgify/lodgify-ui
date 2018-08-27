@@ -32,6 +32,8 @@ const reviews = [
 <Reviews ratingAverage={ratingAverage} reviews={reviews} />;
 ```
 
+### Content
+
 #### Strings
 
 ```jsx
@@ -49,5 +51,10 @@ const reviews = [
   },
 ];
 
-<Reviews ratingAverage={ratingAverage} reviews={reviews} reviewsHeadingText="The title" submitReviewButtonText="Add a new review" />;
+<Reviews
+  headingText="What our guests say..."
+  ratingAverage={ratingAverage}
+  reviews={reviews}
+  submitButtonText="Add a new review"
+/>;
 ```

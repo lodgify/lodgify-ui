@@ -26,7 +26,7 @@ const sleepingArrangements = [
 ];
 
 <SleepingArrangements
-  headingText="The title!"
+  headingText="Beds and bedrooms"
   sleepingArrangements={sleepingArrangements}
 />
 ```

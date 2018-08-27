@@ -68,20 +68,20 @@ const damageDepositText = `A refundable damage deposit of 200.00 € (EUR) is du
 const notesText = null;
 
 <PaymentInformation
-  paymentScheduleText={paymentScheduleText}
-  cleaningCharge={cleaningCharge}
-  cancellationPolicyText={cancellationPolicyText}
-  taxesText={taxesText}
-  taxesDescriptionText={taxesDescriptionText}
-  damageDepositText={damageDepositText}
-  notesText={notesText}
   cancellationPolicyHeadingText="Cancel"
+  cancellationPolicyText={cancellationPolicyText}
+  cleaningCharge={cleaningCharge}
   cleaningChargeHeadingText="Cleaning"
   damageDepositHeadingText="Damage"
-  paymentInformationHeadingText="Heading"
+  damageDepositText={damageDepositText}
+  headingText="How we charge"
+  modalTriggerText="See more"
   notesHeadingText="Notes"
+  notesText={notesText}
   paymentScheduleHeadingText="Payment"
+  paymentScheduleText={paymentScheduleText}
+  taxesDescriptionText={taxesDescriptionText}
   taxesHeadingText="Taxes info"
-  modalViewMoreTriggerText="See more"
+  taxesText={taxesText}
 />
 ```

@@ -8,10 +8,10 @@
 
 ```jsx
 <OwnerSignUp
-  emailLabel="Enter email"
-  firstNameLabel="Your first name"
-  formButtonText="Submit here"
-  formHeadingText="Sign up today!"
-  lastNameLabel="Your last name"
+  emailInputLabel="Enter email"
+  firstNameInputLabel="Your first name"
+  headingText="Sign up today!"
+  lastNameInutLabel="Your last name"
+  submitButtonText="Submit here"
 />
 ```

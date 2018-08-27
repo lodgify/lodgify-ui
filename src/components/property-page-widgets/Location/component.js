@@ -23,19 +23,19 @@ import { getGoogleMapHeight } from './utils/getGoogleMapHeight';
  * @returns {Object}
  */
 const Component = ({
+  headingText,
   isShowingApproximateLocation,
   isShowingExactLocation,
   isUserOnMobile,
   latitude,
   locationDescription,
-  locationHeadingText,
   locationSummary,
   longitude,
   transportOptions,
 }) => (
   <Grid stackable>
     <GridColumn width={12}>
-      <Heading>{locationHeadingText}</Heading>
+      <Heading>{headingText}</Heading>
       <Subheading>{locationSummary}</Subheading>
     </GridColumn>
     <GridColumn computer={6} tablet={12}>
@@ -72,12 +72,14 @@ const Component = ({
 Component.displayName = 'Location';
 
 Component.defaultProps = {
-  locationHeadingText: LOCATION,
+  headingText: LOCATION,
   isShowingApproximateLocation: false,
   isShowingExactLocation: false,
 };
 
 Component.propTypes = {
+  /** The text to display as a heading at the top of the widget. */
+  headingText: PropTypes.string,
   /** Is the map showing a marker for the approximate location. */
   isShowingApproximateLocation: PropTypes.bool,
   /** Is the map showing a marker for the exact location. */
@@ -92,8 +94,6 @@ Component.propTypes = {
   latitude: PropTypes.number.isRequired,
   /** The text description of the location. */
   locationDescription: PropTypes.string.isRequired,
-  /** The location heading text */
-  locationHeadingText: PropTypes.string,
   /** The summary of the location. */
   locationSummary: PropTypes.string.isRequired,
   /** The longitude coordinate for the center of the map and/or location of the marker */
