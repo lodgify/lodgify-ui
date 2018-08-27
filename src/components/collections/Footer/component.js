@@ -11,7 +11,6 @@ import { Divider } from 'elements/Divider';
 import { getAreNavigationItemsGrouped } from './utils/getAreNavigationItemsGrouped';
 import { getGroupedNavigationItems } from './utils/getGroupedNavigationItems';
 import { getMenuItemMarkup } from './utils/getMenuItemMarkup';
-import { getCopyrightText } from './utils/getCopyrightText';
 
 /**
  * A footer displays navigation items, language and currency selectors,
@@ -19,7 +18,7 @@ import { getCopyrightText } from './utils/getCopyrightText';
  * @return {Object}
  */
 export const Component = ({
-  businessName,
+  copyrightText,
   currencyOptions,
   languageOptions,
   navigationItems,
@@ -77,7 +76,7 @@ export const Component = ({
       )}
       <Divider hasLine />
       <Menu.Item>{propertyAddress}</Menu.Item>
-      <Menu.Item position="right">{getCopyrightText(businessName)}</Menu.Item>
+      {copyrightText && <Menu.Item position="right">{copyrightText}</Menu.Item>}
     </Menu>
   </div>
 );
@@ -85,12 +84,13 @@ export const Component = ({
 Component.displayName = 'Footer';
 
 Component.defaultProps = {
+  copyrightText: null,
   socialMediaLinks: [],
 };
 
 Component.propTypes = {
-  /** The name of the business holding copyright on the website. */
-  businessName: PropTypes.string.isRequired,
+  /** The text to display as a copyright notice */
+  copyrightText: PropTypes.string,
   /** The options which the user can select for the currency dropdown. */
   currencyOptions: PropTypes.arrayOf(
     PropTypes.shape({
