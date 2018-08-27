@@ -1,3 +1,10 @@
+## [1.41.1](https://github.com/lodgify/lodgify-ui/compare/v1.41.0...v1.41.1) (2018-08-27)
+
+
+### Bug Fixes
+
+* **Rules:** expose checkInTimeLabel and checkOutTimeLabel props ([4e42699](https://github.com/lodgify/lodgify-ui/commit/4e42699))
+
 # [1.41.0](https://github.com/lodgify/lodgify-ui/compare/v1.40.0...v1.41.0) (2018-08-27)
 
 
