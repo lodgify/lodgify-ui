@@ -1,3 +1,10 @@
+# [1.41.0](https://github.com/lodgify/lodgify-ui/compare/v1.40.0...v1.41.0) (2018-08-27)
+
+
+### Features
+
+* **FeaturedRoomType:** expose guestsLabel and bedsLabel string props ([b63ed1c](https://github.com/lodgify/lodgify-ui/commit/b63ed1c))
+
 # [1.40.0](https://github.com/lodgify/lodgify-ui/compare/v1.39.0...v1.40.0) (2018-08-22)
 
 

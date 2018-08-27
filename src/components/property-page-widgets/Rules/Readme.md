@@ -21,7 +21,9 @@ const rules = ['Smoking not allowed', 'No parties or events', 'Pets are allowed'
 
 <Rules
   checkInTime={checkInTime}
+  checkInTimeLabel="Come in from"
   checkOutTime={checkOutTime}
+  checkOutTimeLabel="Leave at"
   headingText="My Heading"
   rules={rules}
 />

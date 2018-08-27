@@ -12,7 +12,9 @@ import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
  */
 
 export const Component = ({
+  bedsLabel,
   bedsNumber,
+  guestsLabel,
   guestsNumber,
   imageAlternativeText,
   imageUrl,
@@ -27,7 +29,12 @@ export const Component = ({
       <Card.Header>{roomTypeName}</Card.Header>
       <Card.Description>{locationName}</Card.Description>
       <Card.Description>
-        {getRoomTypeDescription(guestsNumber, bedsNumber)}
+        {getRoomTypeDescription(
+          guestsLabel,
+          guestsNumber,
+          bedsLabel,
+          bedsNumber
+        )}
       </Card.Description>
       <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
     </Card.Content>
@@ -38,11 +45,17 @@ Component.displayName = 'FeaturedRoomType';
 
 Component.defaultProps = {
   imageAlternativeText: '',
+  bedsLabel: 'Beds',
+  guestsLabel: 'Guests',
 };
 
 Component.propTypes = {
+  /** The label displayed next to the number of beds. */
+  bedsLabel: PropTypes.string,
   /** The number of available beds in the room. */
   bedsNumber: PropTypes.number.isRequired,
+  /** The label displayed next to the number of guests. */
+  guestsLabel: PropTypes.string,
   /** The number of guests the room can accommodate. */
   guestsNumber: PropTypes.number.isRequired,
   /** The alternative text for the image to display. */
