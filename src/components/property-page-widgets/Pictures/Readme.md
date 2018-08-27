@@ -13,6 +13,7 @@ const { pictures } = require('./mock-data/pictures');
 
 <Pictures
   pictures={pictures}
-  propertyPicturesHeadingText="The Heading text"
-  propertyPicturesLinkText="Click here" />
+  headingText="Photos of the property"
+  linkText="Click here for more" 
+/>
 ```

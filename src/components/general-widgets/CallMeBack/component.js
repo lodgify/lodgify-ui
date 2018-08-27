@@ -27,19 +27,19 @@ import { ICON_NAMES } from 'elements/Icon';
  * @returns {Object}
  */
 export const Component = ({
-  datePlaceholderText,
+  dateInputPlaceholder,
   emailInputLabel,
   headingText,
   nameInputLabel,
-  noteTextareaLabel,
+  notesInputLabel,
   onSubmit,
   phoneInputLabel,
-  propertyDropdownLabel,
+  propertyInputLabel,
   propertyOptions,
   submitButtonText,
-  timeDropdownLabel,
+  timeInputLabel,
   timeOptions,
-  timezoneDropdownLabel,
+  timeZoneInputLabel,
   timeZoneOptions,
 }) => (
   <Form
@@ -53,65 +53,65 @@ export const Component = ({
     </InputGroup>
     <TextInput label={emailInputLabel} name="email" />
     <InputGroup>
-      <SingleDatePicker name="date" placeholderText={datePlaceholderText} />
+      <SingleDatePicker name="date" placeholderText={dateInputPlaceholder} />
       <Dropdown
         icon={ICON_NAMES.CLOCK}
-        label={timeDropdownLabel}
+        label={timeInputLabel}
         name="time"
         options={timeOptions}
       />
     </InputGroup>
     <InputGroup>
       <Dropdown
-        label={timezoneDropdownLabel}
+        label={timeZoneInputLabel}
         name="timeZone"
         options={timeZoneOptions}
       />
       <Dropdown
-        label={propertyDropdownLabel}
+        label={propertyInputLabel}
         name="property"
         options={propertyOptions}
       />
     </InputGroup>
-    <TextArea label={noteTextareaLabel} name="notes" />
+    <TextArea label={notesInputLabel} name="notes" />
   </Form>
 );
 
 Component.displayName = 'CallMeBack';
 
 Component.defaultProps = {
-  datePlaceholderText: DATE,
+  dateInputPlaceholder: DATE,
   emailInputLabel: EMAIL,
   headingText: CALL_ME_BACK,
   nameInputLabel: NAME,
-  noteTextareaLabel: NOTES,
+  notesInputLabel: NOTES,
   onSubmit: Function.prototype,
   phoneInputLabel: PHONE,
-  propertyDropdownLabel: PROPERTY,
+  propertyInputLabel: PROPERTY,
   submitButtonText: SEND,
-  timeDropdownLabel: TIME,
-  timezoneDropdownLabel: TIME_ZONE,
+  timeInputLabel: TIME,
+  timeZoneInputLabel: TIME_ZONE,
 };
 
 Component.propTypes = {
-  /** The placeholder text for the date input */
-  datePlaceholderText: PropTypes.string,
-  /** The label for the email input */
+  /** The placeholder for the date input. */
+  dateInputPlaceholder: PropTypes.string,
+  /** The label for the email input. */
   emailInputLabel: PropTypes.string,
-  /** The text for the heading displayed above the call me back form */
+  /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
-  /** The label for the name input */
+  /** The label for the name input. */
   nameInputLabel: PropTypes.string,
-  /** The label for the note text area */
-  noteTextareaLabel: PropTypes.string,
+  /** The label for the notes input. */
+  notesInputLabel: PropTypes.string,
   /** The function to call when the form is submitted
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
   /** The label for the phone input */
   phoneInputLabel: PropTypes.string,
-  /** The label for the property dropdown */
-  propertyDropdownLabel: PropTypes.string,
+  /** The label for the property input. */
+  propertyInputLabel: PropTypes.string,
   /** The options which the user can select for the property field. */
   propertyOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -127,8 +127,8 @@ Component.propTypes = {
   ).isRequired,
   /** The form submit button text */
   submitButtonText: PropTypes.string,
-  /** The label for the time dropdown */
-  timeDropdownLabel: PropTypes.string,
+  /** The label for the time input. */
+  timeInputLabel: PropTypes.string,
   /** The options which the user can select for the time field. */
   timeOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -142,6 +142,8 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The label for the time zone input. */
+  timeZoneInputLabel: PropTypes.string,
   /** The options which the user can select for the time zone field. */
   timeZoneOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -155,6 +157,4 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
-  /** The label for the time zone dropdown */
-  timezoneDropdownLabel: PropTypes.string,
 };

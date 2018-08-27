@@ -117,7 +117,7 @@ Component.propTypes = {
   discountCodeParagraphText: PropTypes.string,
   /** The text for the button that shows on hover */
   discountHoverButtonText: PropTypes.string,
-  /** The heading text */
+  /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string.isRequired,
   /** Is the component displayed with each item above one another */
   isDisplayedStacked: PropTypes.bool,

@@ -19,66 +19,64 @@ import { getForgotPasswordFormMarkup } from './utils/getForgotPasswordFormMarkup
  * @returns {Object}
  */
 export const Component = ({
-  emailLabel,
-  forgotPasswordButtonText,
-  forgotPasswordEmailLabel,
+  emailInputLabel,
+  forgotPasswordEmailInputLabel,
   forgotPasswordHeadingText,
-  forgotPasswordModelTriggerText,
-  loginFormButtonText,
-  loginFormHeadingText,
+  forgotPasswordModalTriggerText,
+  forgotPasswordSubmitButtonText,
+  submitButtonText,
+  headingText,
   onForgotPasswordSubmit,
   onSubmit,
-  passwordLabel,
+  passwordInputLabel,
 }) => (
   <Form
     actionLink={{
       text: getForgotPasswordFormMarkup(
         onForgotPasswordSubmit,
-        forgotPasswordButtonText,
-        forgotPasswordEmailLabel,
+        forgotPasswordSubmitButtonText,
+        forgotPasswordEmailInputLabel,
         forgotPasswordHeadingText,
-        forgotPasswordModelTriggerText
+        forgotPasswordModalTriggerText
       ),
     }}
-    headingText={loginFormHeadingText}
+    headingText={headingText}
     onSubmit={onSubmit}
-    submitButtonText={loginFormButtonText}
+    submitButtonText={submitButtonText}
   >
-    <TextInput label={emailLabel} name="email" />
-    <TextInput label={passwordLabel} name="password" type="password" />
+    <TextInput label={emailInputLabel} name="email" />
+    <TextInput label={passwordInputLabel} name="password" type="password" />
   </Form>
 );
 
 Component.displayName = 'OwnerLogin';
 
 Component.defaultProps = {
-  emailLabel: EMAIL,
-  forgotPasswordButtonText: SEND_RESET,
+  emailInputLabel: EMAIL,
+  forgotPasswordEmailInputLabel: EMAIL,
   forgotPasswordHeadingText: FORGOT_PASSWORD,
-  forgotPasswordEmailLabel: EMAIL,
-  forgotPasswordModelTriggerText: FORGOT_PASSWORD,
-  loginFormButtonText: LOGIN,
-  loginFormHeadingText: OWNER_LOGIN,
+  forgotPasswordModalTriggerText: FORGOT_PASSWORD,
+  forgotPasswordSubmitButtonText: SEND_RESET,
+  submitButtonText: LOGIN,
+  headingText: OWNER_LOGIN,
   onForgotPasswordSubmit: Function.prototype,
   onSubmit: Function.prototype,
-  passwordLabel: PASSWORD,
+  passwordInputLabel: PASSWORD,
 };
 
 Component.propTypes = {
-  /** The login form heading text */
-  emailLabel: PropTypes.string,
-  /** The forgot password button text */
-  forgotPasswordButtonText: PropTypes.string,
-  /** The email label for forgot password */
-  forgotPasswordEmailLabel: PropTypes.string,
-  /** The forgot password heading text */
+  /** The label for the email input. */
+  emailInputLabel: PropTypes.string,
+  /** The label for the email input on the forgot password form. */
+  forgotPasswordEmailInputLabel: PropTypes.string,
+  /** The text to display as a heading at the top of the forgot password form. */
   forgotPasswordHeadingText: PropTypes.string,
-  /** The trigger forgot password model text */
-  forgotPasswordModelTriggerText: PropTypes.string,
-  /** The login form button text */
-  loginFormButtonText: PropTypes.string,
-  /** The login form heading text */
-  loginFormHeadingText: PropTypes.string,
+  /** The text for the forgot password form modal trigger. */
+  forgotPasswordModalTriggerText: PropTypes.string,
+  /** The text to display on the submit button on the forgot password form.. */
+  forgotPasswordSubmitButtonText: PropTypes.string,
+  /** The text to display as a heading at the top of the widget. */
+  headingText: PropTypes.string,
   /** The function to call when the forgot password form is submitted
    *  @param {Object} values - The values of the inputs in the form.
    */
@@ -87,6 +85,8 @@ Component.propTypes = {
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
-  /** The password label */
-  passwordLabel: PropTypes.string,
+  /** The label for the password input. */
+  passwordInputLabel: PropTypes.string,
+  /** The text to display on the submit button. */
+  submitButtonText: PropTypes.string,
 };

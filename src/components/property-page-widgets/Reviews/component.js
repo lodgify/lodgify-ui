@@ -17,15 +17,15 @@ import { REVIEWS, SUBMIT_REVIEW } from 'utils/default-strings';
  * @returns {Object}
  */
 export const Component = ({
+  headingText,
   reviews,
   ratingAverage,
-  reviewsHeadingText,
-  submitReviewButtonText,
+  submitButtonText,
 }) => (
   <Grid>
     <GridRow>
       <GridColumn width={12}>
-        <Heading>{reviewsHeadingText}</Heading>
+        <Heading>{headingText}</Heading>
       </GridColumn>
     </GridRow>
     <GridRow verticalAlign="middle">
@@ -53,7 +53,7 @@ export const Component = ({
         verticalAlign="middle"
       >
         <Button isCompact isPositionedRight isRounded size="medium">
-          {submitReviewButtonText}
+          {submitButtonText}
         </Button>
       </GridColumn>
     </GridRow>
@@ -71,12 +71,14 @@ export const Component = ({
 Component.displayName = 'Reviews';
 
 Component.defaultProps = {
+  headingText: REVIEWS,
   reviews: [],
-  reviewsHeadingText: REVIEWS,
-  submitReviewButtonText: SUBMIT_REVIEW,
+  submitButtonText: SUBMIT_REVIEW,
 };
 
 Component.propTypes = {
+  /** The text to display as a heading at the top of the widget. */
+  headingText: PropTypes.string,
   /** The average numeral rating for the properties. */
   ratingAverage: PropTypes.number.isRequired,
   /** The collection of reviews. */
@@ -107,8 +109,6 @@ Component.propTypes = {
       reviewerStayDate: PropTypes.string.isRequired,
     })
   ),
-  /** The reviews heading text */
-  reviewsHeadingText: PropTypes.string,
-  /** The submit a new review text */
-  submitReviewButtonText: PropTypes.string,
+  /** The text to display on the submit button. */
+  submitButtonText: PropTypes.string,
 };

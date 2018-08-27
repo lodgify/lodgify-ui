@@ -13,10 +13,10 @@ import { IconCard } from 'elements/IconCard';
  * The standard widget for displaying key facts about a property.
  * @returns {Object}
  */
-export const Component = ({ keyFacts, keyFactsHeadingText }) => (
+export const Component = ({ keyFacts, headingText }) => (
   <Grid>
     <GridColumn width={12}>
-      <Heading>{keyFactsHeadingText}</Heading>
+      <Heading>{headingText}</Heading>
     </GridColumn>
     <GridColumn width={12}>
       <Label.Group>
@@ -37,10 +37,12 @@ export const Component = ({ keyFacts, keyFactsHeadingText }) => (
 Component.displayName = 'KeyFacts';
 
 Component.defaultProps = {
-  keyFactsHeadingText: KEY_FACTS,
+  headingText: KEY_FACTS,
 };
 
 Component.propTypes = {
+  /** The text to display as a heading at the top of the widget. */
+  headingText: PropTypes.string,
   /** The key facts to display as icon cards. */
   keyFacts: PropTypes.arrayOf(
     PropTypes.shape({
@@ -55,6 +57,4 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** The key facts heading text */
-  keyFactsHeadingText: PropTypes.string,
 };
