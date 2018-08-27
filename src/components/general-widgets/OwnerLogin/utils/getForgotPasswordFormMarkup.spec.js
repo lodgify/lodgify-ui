@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { FORGOT_PASSWORD, SEND_RESET, EMAIL } from 'utils/default-strings';
 import { Form } from 'collections/Form';
 import { Modal } from 'elements/Modal';
 import { TextInput } from 'inputs/TextInput';
@@ -13,13 +12,13 @@ describe('getForgotPasswordFormMarkup', () => {
     const actual = getForgotPasswordFormMarkup(someFunction);
 
     expect(actual).toEqual(
-      <Modal trigger={<span>{FORGOT_PASSWORD}</span>}>
+      <Modal trigger={<span />}>
         <Form
-          headingText={FORGOT_PASSWORD}
+          headingText={null}
           onSubmit={someFunction}
-          submitButtonText={SEND_RESET}
+          submitButtonText={null}
         >
-          <TextInput label={EMAIL} name="email" />
+          <TextInput label="" name="email" />
         </Form>
       </Modal>
     );
