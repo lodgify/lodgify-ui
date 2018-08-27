@@ -14,7 +14,9 @@ import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
 import { Component as FeaturedRoomType } from './component';
 
 const props = {
+  bedsLabel: '🛏',
   bedsNumber: 3,
+  guestsLabel: '🙆‍♂️',
   guestsNumber: 3,
   imageAlternativeText: 'this alt tag',
   imageUrl: '🐱🐱',
@@ -101,7 +103,12 @@ describe('<FeaturedRoomType />', () => {
 
       expectComponentToHaveChildren(
         wrapper,
-        getRoomTypeDescription(props.guestsNumber, props.bedsNumber)
+        getRoomTypeDescription(
+          props.guestsLabel,
+          props.guestsNumber,
+          props.bedsLabel,
+          props.bedsNumber
+        )
       );
     });
   });
