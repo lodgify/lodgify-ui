@@ -10,7 +10,7 @@ import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
-import { getCheckInOrOutTimeLabel } from './utils/getCheckInOrOutTimeLabel';
+import { getLabelAndValueString } from './utils/getLabelAndValueString';
 
 /**
  * The standard widget for displaying the rules of a property.
@@ -18,7 +18,9 @@ import { getCheckInOrOutTimeLabel } from './utils/getCheckInOrOutTimeLabel';
  */
 export const Component = ({
   checkInTime,
+  checkInTimeLabel,
   checkOutTime,
+  checkOutTimeLabel,
   headingText,
   rules,
 }) => (
@@ -35,12 +37,12 @@ export const Component = ({
     </GridColumn>
     <GridColumn computer={9} tablet={7}>
       <Icon
-        labelText={getCheckInOrOutTimeLabel(checkInTime)}
+        labelText={getLabelAndValueString(checkInTimeLabel, checkInTime)}
         name={ICON_NAMES.QUESTION_MARK}
       />
       <Divider />
       <Icon
-        labelText={getCheckInOrOutTimeLabel(checkOutTime, true)}
+        labelText={getLabelAndValueString(checkOutTimeLabel, checkOutTime)}
         name={ICON_NAMES.QUESTION_MARK}
       />
     </GridColumn>
@@ -50,14 +52,20 @@ export const Component = ({
 Component.displayName = 'Rules';
 
 Component.defaultProps = {
+  checkInTimeLabel: 'Check in',
+  checkOutTimeLabel: 'Check out',
   headingText: HOUSE_RULES,
 };
 
 Component.propTypes = {
   /** The propery check-in time. */
   checkInTime: PropTypes.string.isRequired,
+  /** The label displayed next to the check-in time. */
+  checkInTimeLabel: PropTypes.string,
   /** The propery check-out time. */
   checkOutTime: PropTypes.string.isRequired,
+  /** The label displayed next to the check-out time. */
+  checkOutTimeLabel: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
   /** The collection of rules. */
