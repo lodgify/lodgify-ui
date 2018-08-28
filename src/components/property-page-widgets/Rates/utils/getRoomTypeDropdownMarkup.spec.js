@@ -28,10 +28,10 @@ const options = [
 ];
 
 const onChange = () => '😼';
-const roomTypeHeadingText = 'A';
+const roomTypeInputLabel = 'A';
 
 const getRoomTypeDropdown = () =>
-  shallow(getRoomTypeDropdownMarkup(options, onChange, roomTypeHeadingText));
+  shallow(getRoomTypeDropdownMarkup(options, onChange, roomTypeInputLabel));
 
 describe('getRoomTypeDropdownMarkup', () => {
   it('should return a `GridRow`', () => {
@@ -93,7 +93,7 @@ describe('getRoomTypeDropdownMarkup', () => {
     it('should render the right children', () => {
       const wrapper = getParagraph();
 
-      expectComponentToHaveChildren(wrapper, roomTypeHeadingText);
+      expectComponentToHaveChildren(wrapper, roomTypeInputLabel);
     });
   });
 

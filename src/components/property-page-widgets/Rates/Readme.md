@@ -134,15 +134,15 @@ const rateCategories = [
 ];
 const rateHeadings = ['Daily', 'Weekly', 'Monthly'];
 
-const roomTypeHeadingText = 'View Rates for';
-const pricePerExtraText = 'Price per extra guest';
+const roomTypeInputLabel = 'View Rates for';
+const costPerExtraGuestLabel = 'Price per extra guest';
 
 <Rates
   currencyOptions={currencyOptions}
-  pricePerExtraText={pricePerExtraText}
+  costPerExtraGuestLabel={costPerExtraGuestLabel}
   rateCategories={rateCategories}
   rateHeadings={rateHeadings}
-  roomTypeHeadingText={roomTypeHeadingText}
+  roomTypeInputLabel={roomTypeInputLabel}
   roomTypes={roomTypes}
 />
 ```

@@ -34,7 +34,7 @@ const expectedHeadings = [
   ...rateHeadings,
 ];
 
-const pricePerExtraText = PRICE_PER_EXTRA_PER;
+const costPerExtraGuestLabel = PRICE_PER_EXTRA_PER;
 
 const expectedTableBody = [
   [
@@ -45,7 +45,7 @@ const expectedTableBody = [
         numberOfGuests: '2',
         costPerExtraGuest: '1€',
       },
-      pricePerExtraText
+      costPerExtraGuestLabel
     ),
     '40€',
     '30€',
@@ -60,7 +60,7 @@ const expectedTableBody = [
         numberOfGuests: '3',
         costPerExtraGuest: '2€',
       },
-      pricePerExtraText
+      costPerExtraGuestLabel
     ),
     '10€',
     '20€',
@@ -75,7 +75,7 @@ const expectedTableBody = [
         numberOfGuests: '4',
         costPerExtraGuest: '3€',
       },
-      pricePerExtraText
+      costPerExtraGuestLabel
     ),
     '40€',
     '30€',
@@ -87,9 +87,9 @@ const expectedTableBody = [
 const getRatesWidget = props =>
   shallow(
     <Rates
+      costPerExtraGuestLabel={costPerExtraGuestLabel}
       currencyOptions={currencyOptions}
       onChangeCurrency={onChangeCurrency}
-      pricePerExtraText={pricePerExtraText}
       rateCategories={rateCategories}
       rateHeadings={rateHeadings}
       {...props}

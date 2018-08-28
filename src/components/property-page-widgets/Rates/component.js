@@ -24,13 +24,13 @@ import { getRoomTypeDropdownMarkup } from './utils/getRoomTypeDropdownMarkup';
  * @returns {Object}
  */
 export const Component = ({
+  costPerExtraGuestLabel,
   currencyOptions,
   onChangeCurrency,
   onChangeRoomType,
-  pricePerExtraText,
   rateCategories,
   rateHeadings,
-  roomTypeHeadingText,
+  roomTypeInputLabel,
   roomTypes,
 }) => (
   <div>
@@ -39,7 +39,7 @@ export const Component = ({
         getRoomTypeDropdownMarkup(
           roomTypes,
           onChangeRoomType,
-          roomTypeHeadingText
+          roomTypeInputLabel
         )}
       <ShowOnMobile>
         <Dropdown onChange={onChangeCurrency} options={currencyOptions} />
@@ -54,7 +54,7 @@ export const Component = ({
                   <GridColumn>
                     {getRateCategoryHeadingMarkup(
                       rateCategory,
-                      pricePerExtraText
+                      costPerExtraGuestLabel
                     )}
                   </GridColumn>
                 </GridRow>
@@ -74,7 +74,7 @@ export const Component = ({
     <ShowOnDesktop>
       <Table
         tableBody={rateCategories.map(rateCategory => [
-          getRateCategoryHeadingMarkup(rateCategory, pricePerExtraText),
+          getRateCategoryHeadingMarkup(rateCategory, costPerExtraGuestLabel),
           ...rateCategory.rates,
         ])}
         tableHeadings={[
@@ -87,16 +87,18 @@ export const Component = ({
 );
 
 Component.defaultProps = {
+  costPerExtraGuestLabel: PRICE_PER_EXTRA_PER,
   onChangeCurrency: Function.prototype,
   onChangeRoomType: Function.prototype,
-  pricePerExtraText: PRICE_PER_EXTRA_PER,
-  roomTypeHeadingText: VIEW_RATE_INFORMATION_FOR,
+  roomTypeInputLabel: VIEW_RATE_INFORMATION_FOR,
   roomTypes: null,
 };
 
 Component.displayName = 'Rates';
 
 Component.propTypes = {
+  /** The text to display for the price per extra guest */
+  costPerExtraGuestLabel: PropTypes.string,
   /** The currency options which the user can select. */
   currencyOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -114,8 +116,6 @@ Component.propTypes = {
   onChangeCurrency: PropTypes.func,
   /** A function called when the room type value changes. */
   onChangeRoomType: PropTypes.func,
-  /** The text to display for the price per extra guest */
-  pricePerExtraText: PropTypes.string,
   /** The data that populates the table rows */
   rateCategories: PropTypes.arrayOf(
     PropTypes.shape({
@@ -134,7 +134,7 @@ Component.propTypes = {
   /** The headings for each column of the table */
   rateHeadings: PropTypes.arrayOf(PropTypes.string).isRequired,
   /** The heading text for the room type input */
-  roomTypeHeadingText: PropTypes.string,
+  roomTypeInputLabel: PropTypes.string,
   /** The room type options which the user can select. */
   roomTypes: PropTypes.arrayOf(
     PropTypes.shape({
