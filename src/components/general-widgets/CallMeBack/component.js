@@ -41,11 +41,13 @@ export const Component = ({
   timeOptions,
   timeZoneInputLabel,
   timeZoneOptions,
+  validation,
 }) => (
   <Form
     headingText={headingText}
     onSubmit={onSubmit}
     submitButtonText={submitButtonText}
+    validation={validation}
   >
     <InputGroup>
       <TextInput label={nameInputLabel} name="name" />
@@ -91,6 +93,7 @@ Component.defaultProps = {
   submitButtonText: SEND,
   timeInputLabel: TIME,
   timeZoneInputLabel: TIME_ZONE,
+  validation: {},
 };
 
 Component.propTypes = {
@@ -157,4 +160,12 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
+  validation: PropTypes.shape({
+    date: PropTypes.object,
+    email: PropTypes.object,
+    name: PropTypes.object,
+    notes: PropTypes.object,
+    phone: PropTypes.object,
+  }),
 };
