@@ -1,3 +1,13 @@
+# [1.43.0](https://github.com/lodgify/lodgify-ui/compare/v1.42.0...v1.43.0) (2018-08-28)
+
+
+### Features
+
+* **CallMeBack:** expose validation prop ([d760175](https://github.com/lodgify/lodgify-ui/commit/d760175))
+* **Contact:** expose validation prop ([3666ea4](https://github.com/lodgify/lodgify-ui/commit/3666ea4))
+* **OwnerLogin:** expose validation props ([ede4fb6](https://github.com/lodgify/lodgify-ui/commit/ede4fb6))
+* **OwnerSignUp:** expose validation prop ([bda2f86](https://github.com/lodgify/lodgify-ui/commit/bda2f86))
+
 # [1.42.0](https://github.com/lodgify/lodgify-ui/compare/v1.41.1...v1.42.0) (2018-08-28)
 
 
