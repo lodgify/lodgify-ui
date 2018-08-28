@@ -8,6 +8,7 @@ import { Paragraph } from 'typography/Paragraph';
 /**
  * @param {Object[]} options
  * @param {Function} onChange
+ * @param {String}   roomTypeHeadingText
  * @return {Object}
  */
 export const getRoomTypeDropdownMarkup = (

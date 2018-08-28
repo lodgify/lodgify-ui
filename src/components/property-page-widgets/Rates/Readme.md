@@ -92,3 +92,34 @@ const rateHeadings = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Weekly',
 
 <Rates currencyOptions={currencyOptions} rateCategories={rateCategories} rateHeadings={rateHeadings} roomTypes={roomTypes} />
 ```
+
+### Content
+
+#### Strings
+
+```jsx
+const currencyOptions = [
+  { text: 'EUR €', value: 'eur' },
+];
+const rateCategories = [
+  {
+    name: 'Mid Season',
+    dateRange: '01/02/2018 - 01/04/2018',
+    numberOfGuests: '2',
+    costPerExtraGuest: '5€',
+    rates: ['30€', '40€', '70€'],
+  }
+];
+const rateHeadings = ['Daily', 'Weekly', 'Monthly'];
+
+const roomTypeHeadingText = 'View Rates for'
+const pricePerExtraText = 'Price per extra guest'
+
+<Rates
+  currencyOptions={currencyOptions}
+  pricePerExtraText={pricePerExtraText}
+  rateCategories={rateCategories}
+  rateHeadings={rateHeadings}
+  roomTypeHeadingText={roomTypeHeadingText}
+/>
+```

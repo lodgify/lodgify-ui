@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
+import {
+  VIEW_RATE_INFORMATION_FOR,
+  PRICE_PER_EXTRA_PER,
+} from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Dropdown } from 'inputs/Dropdown';
 import { Grid } from 'layout/Grid';
@@ -23,6 +27,7 @@ export const Component = ({
   currencyOptions,
   onChangeCurrency,
   onChangeRoomType,
+  pricePerExtraText,
   rateCategories,
   rateHeadings,
   roomTypeHeadingText,
@@ -47,7 +52,10 @@ export const Component = ({
               <Grid padded>
                 <GridRow>
                   <GridColumn>
-                    {getRateCategoryHeadingMarkup(rateCategory)}
+                    {getRateCategoryHeadingMarkup(
+                      rateCategory,
+                      pricePerExtraText
+                    )}
                   </GridColumn>
                 </GridRow>
                 {rateCategory.rates.map((rate, rateIndex) =>
@@ -66,7 +74,7 @@ export const Component = ({
     <ShowOnDesktop>
       <Table
         tableBody={rateCategories.map(rateCategory => [
-          getRateCategoryHeadingMarkup(rateCategory),
+          getRateCategoryHeadingMarkup(rateCategory, pricePerExtraText),
           ...rateCategory.rates,
         ])}
         tableHeadings={[
@@ -81,7 +89,8 @@ export const Component = ({
 Component.defaultProps = {
   onChangeCurrency: Function.prototype,
   onChangeRoomType: Function.prototype,
-  roomTypeHeadingText: 'View Rate Information for:',
+  pricePerExtraText: PRICE_PER_EXTRA_PER,
+  roomTypeHeadingText: VIEW_RATE_INFORMATION_FOR,
   roomTypes: null,
 };
 
@@ -105,6 +114,8 @@ Component.propTypes = {
   onChangeCurrency: PropTypes.func,
   /** A function called when the room type value changes. */
   onChangeRoomType: PropTypes.func,
+  /** The text to display for the price per extra guest */
+  pricePerExtraText: PropTypes.string,
   /** The data that populates the table rows */
   rateCategories: PropTypes.arrayOf(
     PropTypes.shape({

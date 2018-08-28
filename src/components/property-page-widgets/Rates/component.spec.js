@@ -16,6 +16,7 @@ import { GridRow } from 'layout/GridRow';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Table } from 'collections/Table';
+import { PRICE_PER_EXTRA_PER } from 'utils/default-strings';
 
 import { Component as Rates } from './component';
 import { getRateCategoryHeadingMarkup } from './utils/getRateCategoryHeadingMarkup';
@@ -33,38 +34,49 @@ const expectedHeadings = [
   ...rateHeadings,
 ];
 
+const pricePerExtraText = PRICE_PER_EXTRA_PER;
+
 const expectedTableBody = [
   [
-    getRateCategoryHeadingMarkup({
-      name: 'Season 1',
-      dateRange: '01/05/2018 - 01/08/2018',
-      numberOfGuests: '2',
-      costPerExtraGuest: '1€',
-    }),
+    getRateCategoryHeadingMarkup(
+      {
+        name: 'Season 1',
+        dateRange: '01/05/2018 - 01/08/2018',
+        numberOfGuests: '2',
+        costPerExtraGuest: '1€',
+      },
+      pricePerExtraText
+    ),
     '40€',
     '30€',
     '40€',
     '40€',
   ],
   [
-    getRateCategoryHeadingMarkup({
-      name: 'Season 2',
-      dateRange: '01/02/2018 - 01/08/2018',
-      numberOfGuests: '3',
-      costPerExtraGuest: '2€',
-    }),
+    getRateCategoryHeadingMarkup(
+      {
+        name: 'Season 2',
+        dateRange: '01/02/2018 - 01/08/2018',
+        numberOfGuests: '3',
+        costPerExtraGuest: '2€',
+      },
+      pricePerExtraText
+    ),
     '10€',
     '20€',
     '30€',
     '40€',
   ],
   [
-    getRateCategoryHeadingMarkup({
-      name: 'Season 3',
-      dateRange: '01/03/2018 - 01/08/2018',
-      numberOfGuests: '4',
-      costPerExtraGuest: '3€',
-    }),
+    getRateCategoryHeadingMarkup(
+      {
+        name: 'Season 3',
+        dateRange: '01/03/2018 - 01/08/2018',
+        numberOfGuests: '4',
+        costPerExtraGuest: '3€',
+      },
+      pricePerExtraText
+    ),
     '40€',
     '30€',
     '20€',
@@ -77,6 +89,7 @@ const getRatesWidget = props =>
     <Rates
       currencyOptions={currencyOptions}
       onChangeCurrency={onChangeCurrency}
+      pricePerExtraText={pricePerExtraText}
       rateCategories={rateCategories}
       rateHeadings={rateHeadings}
       {...props}
