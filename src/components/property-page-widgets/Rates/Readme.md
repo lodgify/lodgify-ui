@@ -138,8 +138,8 @@ const roomTypeInputLabel = 'View Rates for';
 const costPerExtraGuestLabel = 'Price per extra guest';
 
 <Rates
-  currencyOptions={currencyOptions}
   costPerExtraGuestLabel={costPerExtraGuestLabel}
+  currencyOptions={currencyOptions}
   rateCategories={rateCategories}
   rateHeadings={rateHeadings}
   roomTypeInputLabel={roomTypeInputLabel}

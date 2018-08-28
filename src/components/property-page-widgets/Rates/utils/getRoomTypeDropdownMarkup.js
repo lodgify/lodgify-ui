@@ -5,6 +5,7 @@ import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
 import { Paragraph } from 'typography/Paragraph';
 
+import { getStringWithColonSuffix } from './getStringWithColonSuffix';
 /**
  * @param {Object[]} options
  * @param {Function} onChange
@@ -18,7 +19,9 @@ export const getRoomTypeDropdownMarkup = (
 ) => (
   <GridRow verticalAlign="middle">
     <GridColumn computer={4} mobile={12}>
-      <Paragraph weight="heavy">{roomTypeInputLabel}</Paragraph>
+      <Paragraph weight="heavy">
+        {getStringWithColonSuffix(roomTypeInputLabel)}
+      </Paragraph>
     </GridColumn>
     <GridColumn computer={4} mobile={12}>
       <Dropdown onChange={onChange} options={options} />

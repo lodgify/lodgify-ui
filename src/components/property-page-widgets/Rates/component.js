@@ -97,7 +97,7 @@ Component.defaultProps = {
 Component.displayName = 'Rates';
 
 Component.propTypes = {
-  /** The text to display for the price per extra guest */
+  /** The text to display for the cost per additional guest */
   costPerExtraGuestLabel: PropTypes.string,
   /** The currency options which the user can select. */
   currencyOptions: PropTypes.arrayOf(
@@ -133,7 +133,7 @@ Component.propTypes = {
   ).isRequired,
   /** The headings for each column of the table */
   rateHeadings: PropTypes.arrayOf(PropTypes.string).isRequired,
-  /** The heading text for the room type input */
+  /** The label for the room type input */
   roomTypeInputLabel: PropTypes.string,
   /** The room type options which the user can select. */
   roomTypes: PropTypes.arrayOf(

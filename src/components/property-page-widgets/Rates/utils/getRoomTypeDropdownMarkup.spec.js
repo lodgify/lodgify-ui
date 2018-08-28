@@ -11,6 +11,7 @@ import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
 
 import { getRoomTypeDropdownMarkup } from './getRoomTypeDropdownMarkup';
+import { getStringWithColonSuffix } from './getStringWithColonSuffix';
 
 const options = [
   {
@@ -93,7 +94,10 @@ describe('getRoomTypeDropdownMarkup', () => {
     it('should render the right children', () => {
       const wrapper = getParagraph();
 
-      expectComponentToHaveChildren(wrapper, roomTypeInputLabel);
+      expectComponentToHaveChildren(
+        wrapper,
+        getStringWithColonSuffix(roomTypeInputLabel)
+      );
     });
   });
 
