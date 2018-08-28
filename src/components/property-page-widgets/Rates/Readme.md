@@ -101,6 +101,28 @@ const rateHeadings = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Weekly',
 const currencyOptions = [
   { text: 'EUR €', value: 'eur' },
 ];
+const roomTypes = [
+  {
+    text: 'King suite',
+    value: 'kingSuite',
+    image: require('./mock-data/king-suite.png'),
+  },
+  {
+    text: 'Safari Room',
+    value: 'safariRoom',
+    image: require('./mock-data/safari-room.png'),
+  },
+  {
+    text: 'The Red Room',
+    value: 'redRoom',
+    image: require('./mock-data/the-red-room.png'),
+  },
+  {
+    text: 'Junior Suite',
+    value: 'juniorSuite',
+    image: require('./mock-data/junior-suite.png'),
+  },
+];
 const rateCategories = [
   {
     name: 'Mid Season',
@@ -112,8 +134,8 @@ const rateCategories = [
 ];
 const rateHeadings = ['Daily', 'Weekly', 'Monthly'];
 
-const roomTypeHeadingText = 'View Rates for'
-const pricePerExtraText = 'Price per extra guest'
+const roomTypeHeadingText = 'View Rates for';
+const pricePerExtraText = 'Price per extra guest';
 
 <Rates
   currencyOptions={currencyOptions}
@@ -121,5 +143,6 @@ const pricePerExtraText = 'Price per extra guest'
   rateCategories={rateCategories}
   rateHeadings={rateHeadings}
   roomTypeHeadingText={roomTypeHeadingText}
+  roomTypes={roomTypes}
 />
 ```
