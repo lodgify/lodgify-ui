@@ -15,6 +15,7 @@ export const EXPLORE_ALL_PICTURES = 'Explore all pictures';
 export const FIRST_NAME = 'First Name';
 export const FORGOT_PASSWORD = 'Forgot password';
 export const GUESTS = 'Guests';
+export const HOME_HIGHLIGHTS = 'Home highlights';
 export const HOUSE_RULES = 'House Rules';
 export const IMAGE_NOT_FOUND = 'Image not found!';
 export const IMAGE_TITLE = 'Image Title';
