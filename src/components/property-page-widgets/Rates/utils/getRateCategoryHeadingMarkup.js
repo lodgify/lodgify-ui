@@ -11,16 +11,20 @@ import { buildPricePerExtraGuestString } from './buildPricePerExtraGuestString';
  * @param {String} rateCategory.dateRange
  * @param {String} rateCategory.name
  * @param {String} rateCategory.numberOfGuests
+ * @param {String} costPerExtraGuestLabel
  * @return {Object}
  */
-export const getRateCategoryHeadingMarkup = ({
-  /* eslint-disable react/prop-types */
-  costPerExtraGuest,
-  dateRange,
-  name,
-  numberOfGuests,
-  /* eslint-enable react/prop-types */
-}) => (
+export const getRateCategoryHeadingMarkup = (
+  {
+    /* eslint-disable react/prop-types */
+    costPerExtraGuest,
+    dateRange,
+    name,
+    numberOfGuests,
+    /* eslint-enable react/prop-types */
+  },
+  costPerExtraGuestLabel
+) => (
   <div>
     <Paragraph weight="heavy">{name}</Paragraph>
     <Paragraph weight="light">
@@ -29,7 +33,7 @@ export const getRateCategoryHeadingMarkup = ({
       <Icon name={ICON_NAMES.GUESTS} />
       {numberOfGuests}
       <br />
-      {buildPricePerExtraGuestString(costPerExtraGuest)}
+      {buildPricePerExtraGuestString(costPerExtraGuest, costPerExtraGuestLabel)}
     </Paragraph>
   </div>
 );
