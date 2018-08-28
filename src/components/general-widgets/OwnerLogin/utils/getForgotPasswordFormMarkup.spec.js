@@ -13,6 +13,7 @@ describe('getForgotPasswordFormMarkup', () => {
     const forgotPasswordEmailInputLabel = 'B';
     const forgotPasswordHeadingText = 'C';
     const forgotPasswordModalTriggerText = 'D';
+    const forgotPasswordValidation = {};
     const actual = getForgotPasswordFormMarkup(
       someFunction,
       forgotPasswordSubmitButtonText,
@@ -27,6 +28,7 @@ describe('getForgotPasswordFormMarkup', () => {
           headingText={forgotPasswordHeadingText}
           onSubmit={someFunction}
           submitButtonText={forgotPasswordSubmitButtonText}
+          validation={forgotPasswordValidation}
         >
           <TextInput label={forgotPasswordEmailInputLabel} name="email" />
         </Form>

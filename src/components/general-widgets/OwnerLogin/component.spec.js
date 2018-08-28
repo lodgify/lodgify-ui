@@ -39,6 +39,7 @@ describe('<OwnerLogin />', () => {
         headingText: OWNER_LOGIN,
         onSubmit: Function.prototype,
         submitButtonText: LOGIN,
+        validation: expect.any(Object),
       });
     });
   });
