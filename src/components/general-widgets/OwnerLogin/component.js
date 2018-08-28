@@ -24,11 +24,13 @@ export const Component = ({
   forgotPasswordHeadingText,
   forgotPasswordModalTriggerText,
   forgotPasswordSubmitButtonText,
+  forgotPasswordValidation,
   submitButtonText,
   headingText,
   onForgotPasswordSubmit,
   onSubmit,
   passwordInputLabel,
+  validation,
 }) => (
   <Form
     actionLink={{
@@ -37,12 +39,14 @@ export const Component = ({
         forgotPasswordSubmitButtonText,
         forgotPasswordEmailInputLabel,
         forgotPasswordHeadingText,
-        forgotPasswordModalTriggerText
+        forgotPasswordModalTriggerText,
+        forgotPasswordValidation
       ),
     }}
     headingText={headingText}
     onSubmit={onSubmit}
     submitButtonText={submitButtonText}
+    validation={validation}
   >
     <TextInput label={emailInputLabel} name="email" />
     <TextInput label={passwordInputLabel} name="password" type="password" />
@@ -57,11 +61,13 @@ Component.defaultProps = {
   forgotPasswordHeadingText: FORGOT_PASSWORD,
   forgotPasswordModalTriggerText: FORGOT_PASSWORD,
   forgotPasswordSubmitButtonText: SEND_RESET,
+  forgotPasswordValidation: {},
   submitButtonText: LOGIN,
   headingText: OWNER_LOGIN,
   onForgotPasswordSubmit: Function.prototype,
   onSubmit: Function.prototype,
   passwordInputLabel: PASSWORD,
+  validation: {},
 };
 
 Component.propTypes = {
@@ -75,6 +81,10 @@ Component.propTypes = {
   forgotPasswordModalTriggerText: PropTypes.string,
   /** The text to display on the submit button on the forgot password form.. */
   forgotPasswordSubmitButtonText: PropTypes.string,
+  /** Settings for validating inputs on the forgot password form. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
+  forgotPasswordValidation: PropTypes.shape({
+    email: PropTypes.object,
+  }),
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
   /** The function to call when the forgot password form is submitted
@@ -89,4 +99,9 @@ Component.propTypes = {
   passwordInputLabel: PropTypes.string,
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
+  /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
+  validation: PropTypes.shape({
+    email: PropTypes.object,
+    password: PropTypes.object,
+  }),
 };

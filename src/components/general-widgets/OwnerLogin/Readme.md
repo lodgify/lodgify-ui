@@ -18,3 +18,22 @@
   submitButtonText="Log in to website"
 />
 ```
+
+### Usage
+
+#### Validation
+
+```jsx
+const forgotPasswordValidation = {
+  email: { isRequired: true },
+};
+const validation = {
+  email: { isRequired: true },
+  password: { isRequired: true },
+};
+
+<OwnerLogin
+  forgotPasswordValidation={forgotPasswordValidation}
+  validation={validation}
+/>
+```

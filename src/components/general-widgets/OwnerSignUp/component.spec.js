@@ -38,6 +38,7 @@ describe('<OwnerSignUp />', () => {
         headingText: OWNER_SIGNUP,
         onSubmit: Function.prototype,
         submitButtonText: SIGN_UP,
+        validation: expect.any(Object),
       });
     });
 

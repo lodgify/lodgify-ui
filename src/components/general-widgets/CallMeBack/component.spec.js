@@ -88,6 +88,7 @@ describe('<CallMeBack />', () => {
         headingText: CALL_ME_BACK,
         onSubmit: Function.prototype,
         submitButtonText: SEND,
+        validation: expect.any(Object),
       });
     });
 

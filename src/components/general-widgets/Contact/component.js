@@ -46,11 +46,13 @@ export const Component = ({
   roomInputLabel,
   roomOptions,
   submitButtonText,
+  validation,
 }) => (
   <Form
     headingText={headingText}
     onSubmit={onSubmit}
     submitButtonText={submitButtonText}
+    validation={validation}
   >
     <InputGroup>
       <TextInput label={nameInputLabel} name="name" />
@@ -114,6 +116,7 @@ Component.defaultProps = {
   roomInputLabel: ROOM,
   roomOptions: null,
   submitButtonText: SEND,
+  validation: {},
 };
 
 Component.propTypes = {
@@ -179,4 +182,14 @@ Component.propTypes = {
   ),
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
+  /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
+  validation: PropTypes.shape({
+    captcha: PropTypes.object,
+    comments: PropTypes.object,
+    dates: PropTypes.object,
+    email: PropTypes.object,
+    guests: PropTypes.object,
+    name: PropTypes.object,
+    phone: PropTypes.object,
+  }),
 };

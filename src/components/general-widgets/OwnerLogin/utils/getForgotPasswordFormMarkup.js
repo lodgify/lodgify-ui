@@ -17,13 +17,15 @@ export const getForgotPasswordFormMarkup = (
   forgotPasswordSubmitButtonText,
   forgotPasswordEmailInputLabel,
   forgotPasswordHeadingText,
-  forgotPasswordModalTriggerText
+  forgotPasswordModalTriggerText,
+  forgotPasswordValidation
 ) => (
   <Modal trigger={<span>{forgotPasswordModalTriggerText}</span>}>
     <Form
       headingText={forgotPasswordHeadingText}
       onSubmit={onForgotPasswordSubmit}
       submitButtonText={forgotPasswordSubmitButtonText}
+      validation={forgotPasswordValidation}
     >
       <TextInput label={forgotPasswordEmailInputLabel} name="email" />
     </Form>
