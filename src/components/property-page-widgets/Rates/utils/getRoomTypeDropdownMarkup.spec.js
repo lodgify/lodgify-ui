@@ -28,9 +28,10 @@ const options = [
 ];
 
 const onChange = () => '😼';
+const roomTypeHeadingText = 'A';
 
 const getRoomTypeDropdown = () =>
-  shallow(getRoomTypeDropdownMarkup(options, onChange));
+  shallow(getRoomTypeDropdownMarkup(options, onChange, roomTypeHeadingText));
 
 describe('getRoomTypeDropdownMarkup', () => {
   it('should return a `GridRow`', () => {
@@ -92,7 +93,7 @@ describe('getRoomTypeDropdownMarkup', () => {
     it('should render the right children', () => {
       const wrapper = getParagraph();
 
-      expectComponentToHaveChildren(wrapper, 'View Rate Information for:');
+      expectComponentToHaveChildren(wrapper, roomTypeHeadingText);
     });
   });
 

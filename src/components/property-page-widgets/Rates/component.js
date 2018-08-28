@@ -25,11 +25,17 @@ export const Component = ({
   onChangeRoomType,
   rateCategories,
   rateHeadings,
+  roomTypeHeadingText,
   roomTypes,
 }) => (
   <div>
     <Grid padded>
-      {roomTypes && getRoomTypeDropdownMarkup(roomTypes, onChangeRoomType)}
+      {roomTypes &&
+        getRoomTypeDropdownMarkup(
+          roomTypes,
+          onChangeRoomType,
+          roomTypeHeadingText
+        )}
       <ShowOnMobile>
         <Dropdown onChange={onChangeCurrency} options={currencyOptions} />
         {rateCategories.map((rateCategory, rateCategoryIndex) => (
@@ -75,6 +81,7 @@ export const Component = ({
 Component.defaultProps = {
   onChangeCurrency: Function.prototype,
   onChangeRoomType: Function.prototype,
+  roomTypeHeadingText: 'View Rate Information for:',
   roomTypes: null,
 };
 
@@ -115,6 +122,8 @@ Component.propTypes = {
   ).isRequired,
   /** The headings for each column of the table */
   rateHeadings: PropTypes.arrayOf(PropTypes.string).isRequired,
+  /** The heading text for the room type input */
+  roomTypeHeadingText: PropTypes.string,
   /** The room type options which the user can select. */
   roomTypes: PropTypes.arrayOf(
     PropTypes.shape({

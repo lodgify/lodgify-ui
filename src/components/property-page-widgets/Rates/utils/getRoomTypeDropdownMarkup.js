@@ -10,10 +10,14 @@ import { Paragraph } from 'typography/Paragraph';
  * @param {Function} onChange
  * @return {Object}
  */
-export const getRoomTypeDropdownMarkup = (options, onChange) => (
+export const getRoomTypeDropdownMarkup = (
+  options,
+  onChange,
+  roomTypeHeadingText
+) => (
   <GridRow verticalAlign="middle">
     <GridColumn computer={4} mobile={12}>
-      <Paragraph weight="heavy">View Rate Information for:</Paragraph>
+      <Paragraph weight="heavy">{roomTypeHeadingText}</Paragraph>
     </GridColumn>
     <GridColumn computer={4} mobile={12}>
       <Dropdown onChange={onChange} options={options} />
