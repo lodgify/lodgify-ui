@@ -22,11 +22,13 @@ export const Component = ({
   lastNameInputLabel,
   onSubmit,
   submitButtonText,
+  validation,
 }) => (
   <Form
     headingText={headingText}
     onSubmit={onSubmit}
     submitButtonText={submitButtonText}
+    validation={validation}
   >
     <TextInput label={firstNameInputLabel} name="firstName" />
     <TextInput label={lastNameInputLabel} name="lastName" />
@@ -43,6 +45,7 @@ Component.defaultProps = {
   lastNameInputLabel: LAST_NAME,
   onSubmit: Function.prototype,
   submitButtonText: SIGN_UP,
+  validation: {},
 };
 
 Component.propTypes = {
@@ -60,4 +63,10 @@ Component.propTypes = {
   onSubmit: PropTypes.func,
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
+  /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
+  validation: PropTypes.shape({
+    email: PropTypes.object,
+    firstName: PropTypes.object,
+    lastName: PropTypes.object,
+  }),
 };
