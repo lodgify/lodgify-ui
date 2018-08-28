@@ -50,3 +50,27 @@ const timeZoneOptions = [
   timeZoneOptions={[]}
 />
 ```
+
+### Usage
+
+#### Validation
+
+```jsx
+const validation = {
+  date: {
+    getIsEmpty: value => !value || !value.date,
+    isRequired: true,
+  },
+  email: { isRequired: true },
+  name: { isRequired: true },
+  notes: { isRequired: true },
+  phone: { isRequired: true },
+};
+
+<CallMeBack
+  propertyOptions={[]}
+  timeOptions={[]}
+  timeZoneOptions={[]}
+  validation={validation}
+/>
+```
