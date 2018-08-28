@@ -11,7 +11,7 @@
   emailInputLabel="Enter email"
   firstNameInputLabel="Your first name"
   headingText="Sign up today!"
-  lastNameInutLabel="Your last name"
+  lastNameInputLabel="Your last name"
   submitButtonText="Submit here"
 />
 ```
