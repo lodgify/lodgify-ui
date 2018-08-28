@@ -35,18 +35,42 @@ const timeZoneOptions = [
 
 ```jsx
 <CallMeBack
-  datePlaceholderText="The Date"
+  dateInputPlaceholder="The Date"
   emailInputLabel="Your email address"
   headingText="Can you call me back?"
   nameInputLabel="Your name"
-  noteTextareaLabel="Some notes?"
+  notesInputLabel="Some notes?"
   phoneInputLabel="Your phone number"
-  propertyDropdownLabel="What property?"
+  propertyInputLabel="What property?"
   propertyOptions={[]}
   submitButtonText="Submit form"
-  timeDropdownLabel="Choose an ideal time"
+  timeInputLabel="Choose an ideal time"
   timeOptions={[]}
-  timezoneDropdownLabel="What is your time zone"
+  timeZoneInputLabel="What is your time zone"
   timeZoneOptions={[]}
+/>
+```
+
+### Usage
+
+#### Validation
+
+```jsx
+const validation = {
+  date: {
+    getIsEmpty: value => !value || !value.date,
+    isRequired: true,
+  },
+  email: { isRequired: true },
+  name: { isRequired: true },
+  notes: { isRequired: true },
+  phone: { isRequired: true },
+};
+
+<CallMeBack
+  propertyOptions={[]}
+  timeOptions={[]}
+  timeZoneOptions={[]}
+  validation={validation}
 />
 ```

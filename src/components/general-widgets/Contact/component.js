@@ -46,11 +46,13 @@ export const Component = ({
   roomInputLabel,
   roomOptions,
   submitButtonText,
+  validation,
 }) => (
   <Form
     headingText={headingText}
     onSubmit={onSubmit}
     submitButtonText={submitButtonText}
+    validation={validation}
   >
     <InputGroup>
       <TextInput label={nameInputLabel} name="name" />
@@ -114,6 +116,7 @@ Component.defaultProps = {
   roomInputLabel: ROOM,
   roomOptions: null,
   submitButtonText: SEND,
+  validation: {},
 };
 
 Component.propTypes = {
@@ -131,7 +134,7 @@ Component.propTypes = {
   emailInputLabel: PropTypes.string,
   /** The label for the guests input.*/
   guestsInputLabel: PropTypes.string,
-  /** The text to display as a heading at the top of the form. */
+  /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
   /** The label for the name input.*/
   nameInputLabel: PropTypes.string,
@@ -179,4 +182,14 @@ Component.propTypes = {
   ),
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
+  /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
+  validation: PropTypes.shape({
+    captcha: PropTypes.object,
+    comments: PropTypes.object,
+    dates: PropTypes.object,
+    email: PropTypes.object,
+    guests: PropTypes.object,
+    name: PropTypes.object,
+    phone: PropTypes.object,
+  }),
 };

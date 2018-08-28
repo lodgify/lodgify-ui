@@ -15,14 +15,10 @@ import { Link } from 'elements/Link';
  * The standard widget for displaying pictures of a property.
  * @returns {Object}
  */
-export const Component = ({
-  pictures,
-  propertyPicturesHeadingText,
-  propertyPicturesLinkText,
-}) => (
+export const Component = ({ headingText, linkText, pictures }) => (
   <Grid>
     <GridColumn width={12}>
-      <Heading>{propertyPicturesHeadingText}</Heading>
+      <Heading>{headingText}</Heading>
     </GridColumn>
     {pictures.map(({ imageUrl, label }, index) => (
       <GridColumn key={buildKeyFromStrings(label, index)} width={4}>
@@ -41,7 +37,7 @@ export const Component = ({
       </GridColumn>
     ))}
     <GridColumn width={12}>
-      <Link>{propertyPicturesLinkText}</Link>
+      <Link>{linkText}</Link>
     </GridColumn>
   </Grid>
 );
@@ -49,11 +45,15 @@ export const Component = ({
 Component.displayName = 'Pictures';
 
 Component.defaultProps = {
-  propertyPicturesHeadingText: PROPERTY_PICTURES,
-  propertyPicturesLinkText: EXPLORE_ALL_PICTURES,
+  headingText: PROPERTY_PICTURES,
+  linkText: EXPLORE_ALL_PICTURES,
 };
 
 Component.propTypes = {
+  /** The text to display as a heading at the top of the widget. */
+  headingText: PropTypes.string,
+  /** The text to display on the link at the bottom of the widget. */
+  linkText: PropTypes.string,
   /** The pictures to display as responsive images. */
   pictures: PropTypes.arrayOf(
     PropTypes.shape({
@@ -63,8 +63,4 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** The heading text */
-  propertyPicturesHeadingText: PropTypes.string,
-  /** The link text */
-  propertyPicturesLinkText: PropTypes.string,
 };

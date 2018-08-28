@@ -12,7 +12,6 @@ import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
 
 import { Component as OwnerLogin } from './component';
-import { getForgotPasswordFormMarkup } from './utils/getForgotPasswordFormMarkup';
 
 const getOwnerLogin = () => shallow(<OwnerLogin />);
 
@@ -35,11 +34,12 @@ describe('<OwnerLogin />', () => {
 
       expectComponentToHaveProps(wrapper, {
         actionLink: {
-          text: getForgotPasswordFormMarkup(Function.prototype),
+          text: expect.any(Object),
         },
         headingText: OWNER_LOGIN,
         onSubmit: Function.prototype,
         submitButtonText: LOGIN,
+        validation: expect.any(Object),
       });
     });
   });

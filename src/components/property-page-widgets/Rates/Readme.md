@@ -92,3 +92,57 @@ const rateHeadings = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Weekly',
 
 <Rates currencyOptions={currencyOptions} rateCategories={rateCategories} rateHeadings={rateHeadings} roomTypes={roomTypes} />
 ```
+
+### Content
+
+#### Strings
+
+```jsx
+const currencyOptions = [
+  { text: 'EUR €', value: 'eur' },
+];
+const roomTypes = [
+  {
+    text: 'King suite',
+    value: 'kingSuite',
+    image: require('./mock-data/king-suite.png'),
+  },
+  {
+    text: 'Safari Room',
+    value: 'safariRoom',
+    image: require('./mock-data/safari-room.png'),
+  },
+  {
+    text: 'The Red Room',
+    value: 'redRoom',
+    image: require('./mock-data/the-red-room.png'),
+  },
+  {
+    text: 'Junior Suite',
+    value: 'juniorSuite',
+    image: require('./mock-data/junior-suite.png'),
+  },
+];
+const rateCategories = [
+  {
+    name: 'Mid Season',
+    dateRange: '01/02/2018 - 01/04/2018',
+    numberOfGuests: '2',
+    costPerExtraGuest: '5€',
+    rates: ['30€', '40€', '70€'],
+  }
+];
+const rateHeadings = ['Daily', 'Weekly', 'Monthly'];
+
+const roomTypeInputLabel = 'View Rates for';
+const costPerExtraGuestLabel = 'Price per extra guest';
+
+<Rates
+  costPerExtraGuestLabel={costPerExtraGuestLabel}
+  currencyOptions={currencyOptions}
+  rateCategories={rateCategories}
+  rateHeadings={rateHeadings}
+  roomTypeInputLabel={roomTypeInputLabel}
+  roomTypes={roomTypes}
+/>
+```

@@ -1,3 +1,34 @@
+# [1.43.0](https://github.com/lodgify/lodgify-ui/compare/v1.42.0...v1.43.0) (2018-08-28)
+
+
+### Features
+
+* **CallMeBack:** expose validation prop ([d760175](https://github.com/lodgify/lodgify-ui/commit/d760175))
+* **Contact:** expose validation prop ([3666ea4](https://github.com/lodgify/lodgify-ui/commit/3666ea4))
+* **OwnerLogin:** expose validation props ([ede4fb6](https://github.com/lodgify/lodgify-ui/commit/ede4fb6))
+* **OwnerSignUp:** expose validation prop ([bda2f86](https://github.com/lodgify/lodgify-ui/commit/bda2f86))
+
+# [1.42.0](https://github.com/lodgify/lodgify-ui/compare/v1.41.1...v1.42.0) (2018-08-28)
+
+
+### Features
+
+* **Description:** expose string props ([f6596bc](https://github.com/lodgify/lodgify-ui/commit/f6596bc))
+
+## [1.41.1](https://github.com/lodgify/lodgify-ui/compare/v1.41.0...v1.41.1) (2018-08-27)
+
+
+### Bug Fixes
+
+* **Rules:** expose checkInTimeLabel and checkOutTimeLabel props ([4e42699](https://github.com/lodgify/lodgify-ui/commit/4e42699))
+
+# [1.41.0](https://github.com/lodgify/lodgify-ui/compare/v1.40.0...v1.41.0) (2018-08-27)
+
+
+### Features
+
+* **FeaturedRoomType:** expose guestsLabel and bedsLabel string props ([b63ed1c](https://github.com/lodgify/lodgify-ui/commit/b63ed1c))
+
 # [1.40.0](https://github.com/lodgify/lodgify-ui/compare/v1.39.0...v1.40.0) (2018-08-22)
 
 

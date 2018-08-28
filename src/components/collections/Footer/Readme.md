@@ -24,7 +24,6 @@ const socialMediaLinks = [
 ];
 
 <Footer
-  businessName="Feline Vacations"
   currencyOptions={currencyOptions}
   languageOptions={languageOptions}
   navigationItems={navigationItems}
@@ -80,7 +79,38 @@ const socialMediaLinks = [
 ];
 
 <Footer
-  businessName="Feline Vacations"
+  currencyOptions={currencyOptions}
+  languageOptions={languageOptions}
+  navigationItems={navigationItems}
+  onChangeCurrency={console.log}
+  onChangeLanguage={console.log}
+  phoneNumber={'+1 2345 678912'}
+  propertyAddress={'The Cat House, Pawprint Way, Catania 08012'}
+  socialMediaLinks={socialMediaLinks}
+/>
+```
+
+#### Strings
+
+```jsx
+const currencyOptions = [
+  { text: 'EUR', value: 'EUR' },
+];
+const languageOptions = [
+  { text: 'English', value: 'en' },
+  { text: 'Italian', value: 'it' },
+];
+const navigationItems = [
+  { href: '/', text: 'Home' },
+  { href: '/contact', text: 'Contact' },
+  { href: '/gym', text: 'Gym' },
+];
+const socialMediaLinks = [
+  { href: 'https://twitter.com/lodgify', iconName: 'twitter' },
+];
+
+<Footer
+  copyrightText="\u00A9 2018 Feline Vacations. All rights reserved."
   currencyOptions={currencyOptions}
   languageOptions={languageOptions}
   navigationItems={navigationItems}

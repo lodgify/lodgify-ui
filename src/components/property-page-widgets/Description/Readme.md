@@ -36,3 +36,24 @@ const {
   propertyType="Bed & Breakfast"
 />
 ```
+
+#### Strings
+
+```jsx
+const {
+  descriptionText,
+  extraDescriptionText,
+  homeHighlights,
+  propertyMainCharacteristics,
+} = require('./mock-data/props');
+
+<Description
+  descriptionText={descriptionText}
+  extraDescriptionText={extraDescriptionText}
+  homeHighlights={homeHighlights}
+  homeHighlightsHeadingText="Highlights"
+  propertyMainCharacteristics={propertyMainCharacteristics}
+  propertyName="Lonely Lodge"
+  propertyType="Bed & Breakfast"
+/>
+```

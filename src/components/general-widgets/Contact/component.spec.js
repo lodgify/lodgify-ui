@@ -54,6 +54,7 @@ describe('<Contact />', () => {
         headingText: CONTACT,
         onSubmit: Function.prototype,
         submitButtonText: SEND,
+        validation: expect.any(Object),
       });
     });
 

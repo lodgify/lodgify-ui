@@ -5,15 +5,23 @@ import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
 import { Paragraph } from 'typography/Paragraph';
 
+import { getStringWithColonSuffix } from './getStringWithColonSuffix';
 /**
  * @param {Object[]} options
  * @param {Function} onChange
+ * @param {String}   roomTypeInputLabel
  * @return {Object}
  */
-export const getRoomTypeDropdownMarkup = (options, onChange) => (
+export const getRoomTypeDropdownMarkup = (
+  options,
+  onChange,
+  roomTypeInputLabel
+) => (
   <GridRow verticalAlign="middle">
     <GridColumn computer={4} mobile={12}>
-      <Paragraph weight="heavy">View Rate Information for:</Paragraph>
+      <Paragraph weight="heavy">
+        {getStringWithColonSuffix(roomTypeInputLabel)}
+      </Paragraph>
     </GridColumn>
     <GridColumn computer={4} mobile={12}>
       <Dropdown onChange={onChange} options={options} />

@@ -15,6 +15,8 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
 
+import { getStringWithColonSuffix } from './utils/getStringWithColonSuffix';
+
 /**
  * The standard widget for displaying the property host information.
  * @returns {Object}
@@ -25,7 +27,7 @@ export const Component = ({
   description,
   email,
   emailLabel,
-  hostProfileHeadingText,
+  headingText,
   languages,
   languagesLabel,
   name,
@@ -35,7 +37,7 @@ export const Component = ({
   <Grid textAlign="left">
     <GridRow>
       <GridColumn width={12}>
-        <Heading>{hostProfileHeadingText}</Heading>
+        <Heading>{headingText}</Heading>
       </GridColumn>
     </GridRow>
     <GridRow>
@@ -59,19 +61,19 @@ export const Component = ({
         <List relaxed size="medium">
           {!!email && (
             <List.Item>
-              <span>{`${emailLabel}: `}</span>
+              <span>{getStringWithColonSuffix(emailLabel)}</span>
               <span>{email}</span>
             </List.Item>
           )}
           {!!phone && (
             <List.Item>
-              <span>{`${phoneLabel}: `}</span>
+              <span>{getStringWithColonSuffix(phoneLabel)}</span>
               <span>{phone}</span>
             </List.Item>
           )}
           {!!languages && (
             <List.Item>
-              <span>{`${languagesLabel}: `}</span>
+              <span>{getStringWithColonSuffix(languagesLabel)}</span>
               <span>{languages.join(', ')}</span>
             </List.Item>
           )}
@@ -88,7 +90,7 @@ Component.defaultProps = {
   contactInformationHeadingText: CONTACT_INFORMATION,
   email: null,
   emailLabel: EMAIL,
-  hostProfileHeadingText: YOUR_HOST,
+  headingText: YOUR_HOST,
   languages: null,
   languagesLabel: LANGUAGES,
   phone: null,
@@ -106,8 +108,8 @@ Component.propTypes = {
   email: PropTypes.string,
   /** The label for the contact email address. */
   emailLabel: PropTypes.string,
-  /** The text for the host profile heading. */
-  hostProfileHeadingText: PropTypes.string,
+  /** The text to display as a heading at the top of the widget. */
+  headingText: PropTypes.string,
   /** The languages the property host speaks. */
   languages: PropTypes.arrayOf(PropTypes.string),
   /** The label for the contact languages. */

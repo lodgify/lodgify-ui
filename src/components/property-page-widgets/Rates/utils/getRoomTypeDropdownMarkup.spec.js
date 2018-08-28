@@ -11,6 +11,7 @@ import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
 
 import { getRoomTypeDropdownMarkup } from './getRoomTypeDropdownMarkup';
+import { getStringWithColonSuffix } from './getStringWithColonSuffix';
 
 const options = [
   {
@@ -28,9 +29,10 @@ const options = [
 ];
 
 const onChange = () => '😼';
+const roomTypeInputLabel = 'A';
 
 const getRoomTypeDropdown = () =>
-  shallow(getRoomTypeDropdownMarkup(options, onChange));
+  shallow(getRoomTypeDropdownMarkup(options, onChange, roomTypeInputLabel));
 
 describe('getRoomTypeDropdownMarkup', () => {
   it('should return a `GridRow`', () => {
@@ -92,7 +94,10 @@ describe('getRoomTypeDropdownMarkup', () => {
     it('should render the right children', () => {
       const wrapper = getParagraph();
 
-      expectComponentToHaveChildren(wrapper, 'View Rate Information for:');
+      expectComponentToHaveChildren(
+        wrapper,
+        getStringWithColonSuffix(roomTypeInputLabel)
+      );
     });
   });
 

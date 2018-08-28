@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { HOME_HIGHLIGHTS } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { getFirstFourItems } from 'utils/get-first-four-items';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
@@ -22,6 +23,7 @@ export const Component = ({
   descriptionText,
   extraDescriptionText,
   homeHighlights,
+  homeHighlightsHeadingText,
   propertyMainCharacteristics,
   propertyName,
   propertyType,
@@ -64,7 +66,7 @@ export const Component = ({
       )}
     </GridColumn>
     <GridColumn>
-      <Subheading>Home highlights</Subheading>
+      <Subheading>{homeHighlightsHeadingText}</Subheading>
     </GridColumn>
     <GridColumn>
       {homeHighlights.map(({ iconName, text }) => (
@@ -83,6 +85,7 @@ Component.displayName = 'Description';
 
 Component.defaultProps = {
   extraDescriptionText: null,
+  homeHighlightsHeadingText: HOME_HIGHLIGHTS,
 };
 
 Component.propTypes = {
@@ -102,6 +105,8 @@ Component.propTypes = {
       text: PropTypes.string,
     })
   ).isRequired,
+  /** The heading displayed above the home highlights. */
+  homeHighlightsHeadingText: PropTypes.string,
   /** The main characteristics to display. Maximum four. */
   propertyMainCharacteristics: PropTypes.arrayOf(
     PropTypes.shape({

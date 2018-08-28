@@ -16,48 +16,57 @@ import { TextInput } from 'inputs/TextInput';
  * @returns {Object}
  */
 export const Component = ({
-  emailLabel,
-  firstNameLabel,
-  formButtonText,
-  formHeadingText,
-  lastNameLabel,
+  emailInputLabel,
+  firstNameInputLabel,
+  headingText,
+  lastNameInputLabel,
   onSubmit,
+  submitButtonText,
+  validation,
 }) => (
   <Form
-    headingText={formHeadingText}
+    headingText={headingText}
     onSubmit={onSubmit}
-    submitButtonText={formButtonText}
+    submitButtonText={submitButtonText}
+    validation={validation}
   >
-    <TextInput label={firstNameLabel} name="firstName" />
-    <TextInput label={lastNameLabel} name="lastName" />
-    <TextInput label={emailLabel} name="email" />
+    <TextInput label={firstNameInputLabel} name="firstName" />
+    <TextInput label={lastNameInputLabel} name="lastName" />
+    <TextInput label={emailInputLabel} name="email" />
   </Form>
 );
 
 Component.displayName = 'OwnerSignUp';
 
 Component.defaultProps = {
-  emailLabel: EMAIL,
-  firstNameLabel: FIRST_NAME,
-  formButtonText: SIGN_UP,
-  formHeadingText: OWNER_SIGNUP,
-  lastNameLabel: LAST_NAME,
+  emailInputLabel: EMAIL,
+  firstNameInputLabel: FIRST_NAME,
+  headingText: OWNER_SIGNUP,
+  lastNameInputLabel: LAST_NAME,
   onSubmit: Function.prototype,
+  submitButtonText: SIGN_UP,
+  validation: {},
 };
 
 Component.propTypes = {
-  /** The label for the email input */
-  emailLabel: PropTypes.string,
-  /** The label for the first name input */
-  firstNameLabel: PropTypes.string,
-  /** The text displayed inside the form submit button */
-  formButtonText: PropTypes.string,
-  /** The text displayed at the top of the form */
-  formHeadingText: PropTypes.string,
+  /** The label for the email input. */
+  emailInputLabel: PropTypes.string,
+  /** The label for the first name input. */
+  firstNameInputLabel: PropTypes.string,
+  /** The text to display as a heading at the top of the widget. */
+  headingText: PropTypes.string,
   /** The label for the last name input */
-  lastNameLabel: PropTypes.string,
+  lastNameInputLabel: PropTypes.string,
   /** The function to call when the form is submitted
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
+  /** The text to display on the submit button. */
+  submitButtonText: PropTypes.string,
+  /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
+  validation: PropTypes.shape({
+    email: PropTypes.object,
+    firstName: PropTypes.object,
+    lastName: PropTypes.object,
+  }),
 };
