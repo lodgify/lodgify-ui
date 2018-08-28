@@ -89,3 +89,35 @@ const {
   submitButtonText="Submit"
 />
 ```
+
+### Usage
+
+#### Validation
+
+```jsx
+const mockCaptcha = require('./mock-data/signupcode.jpeg');
+const {
+  propertyOptions,
+  roomOptions,
+} = require('./mock-data/options');
+
+const validation = {
+  captcha: { isRequired: true },
+  comments: { isRequired: true },
+  dates: {
+    getIsEmpty: value => !value || [value.startDate, value.endDate].includes(null),
+    isRequired: true,
+  },
+  email: { isRequired: true },
+  guests: { isRequired: true },
+  name: { isRequired: true },
+  phone: { isRequired: true },
+};
+
+<Contact
+  captchaInputImage={mockCaptcha}
+  propertyOptions={propertyOptions}
+  roomOptions={roomOptions}
+  validation={validation}
+/>
+```
