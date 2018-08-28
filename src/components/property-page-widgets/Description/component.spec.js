@@ -31,6 +31,7 @@ const props = {
     { iconName: 'credit card', text: 'credit cards' },
     { iconName: 'no children', text: 'no children allowed' },
   ],
+  homeHighlightsHeadingText: 'Highlights',
   propertyMainCharacteristics,
   propertyName: 'Yolo',
   propertyType: 'Bed & Breakfast',
@@ -204,7 +205,7 @@ describe('<Description />', () => {
         .find(Subheading)
         .at(1);
 
-      expectComponentToHaveChildren(wrapper, 'Home highlights');
+      expectComponentToHaveChildren(wrapper, 'Highlights');
     });
   });
 
