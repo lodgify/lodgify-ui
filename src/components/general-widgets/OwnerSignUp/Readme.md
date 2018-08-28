@@ -15,3 +15,17 @@
   submitButtonText="Submit here"
 />
 ```
+
+### Usage
+
+#### Validation
+
+```jsx
+const validation = {
+  email: { isRequired: true },
+  firstName: { isRequired: true },
+  lastName: { isRequired: true },
+};
+
+<OwnerSignUp validation={validation} />
+```
