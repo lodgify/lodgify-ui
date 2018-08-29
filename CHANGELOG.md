@@ -1,3 +1,10 @@
+# [1.44.0](https://github.com/lodgify/lodgify-ui/compare/v1.43.0...v1.44.0) (2018-08-29)
+
+
+### Features
+
+* **Form:** expose isRequiredMessage on validation prop ([f7f93a3](https://github.com/lodgify/lodgify-ui/commit/f7f93a3))
+
 # [1.43.0](https://github.com/lodgify/lodgify-ui/compare/v1.42.0...v1.43.0) (2018-08-28)
 
 
