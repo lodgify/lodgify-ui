@@ -151,6 +151,7 @@ const { InputGroup } = require('../InputGroup');
 
 ```jsx
 <Form
+  submitButtonText="Submit"
   validation={{
     'naive-email': {
       getIsValid: value => !!value && value.includes('@'),
