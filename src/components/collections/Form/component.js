@@ -1,6 +1,7 @@
 import React, { PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Form } from 'semantic-ui-react';
+import { size, forEach } from 'lodash';
 
 import { Heading } from 'typography/Heading';
 import { Button } from 'elements/Button';
@@ -8,7 +9,9 @@ import { Button } from 'elements/Button';
 import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
 import { getIsRequiredError } from './utils/getIsRequiredError';
 import { getIsValidError } from './utils/getIsValidError';
+import { getEmptyRequiredInputs } from './utils/getEmptyRequiredInputs';
 import { getFormChild } from './utils/getFormChild';
+import { getIsSubmitButtonDisabled } from './utils/getIsSubmitButtonDisabled';
 
 /**
  * A form displays a set of related user input fields in a structured way.
@@ -36,7 +39,20 @@ export class Component extends PureComponent {
   };
 
   handleSubmit = () => {
-    this.props.onSubmit(this.state);
+    const emptyRequiredInputs = getEmptyRequiredInputs(
+      this.props.validation,
+      this.state
+    );
+
+    size(emptyRequiredInputs)
+      ? forEach(emptyRequiredInputs, (validation, name) => {
+          const { isRequiredMessage } = getValidationWithDefaults(validation);
+
+          this.setState({
+            [name]: { error: isRequiredMessage },
+          });
+        })
+      : this.props.onSubmit(this.state);
   };
 
   render = () => {
@@ -56,7 +72,12 @@ export class Component extends PureComponent {
               <a onClick={actionLink.onClick}>{actionLink.text}</a>
             )}
             {submitButtonText && (
-              <Button isPositionedRight>{submitButtonText}</Button>
+              <Button
+                isDisabled={getIsSubmitButtonDisabled(this.state)}
+                isPositionedRight
+              >
+                {submitButtonText}
+              </Button>
             )}
           </Form>
         </Card.Content>
