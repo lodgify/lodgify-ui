@@ -1,3 +1,10 @@
+# [1.45.0](https://github.com/lodgify/lodgify-ui/compare/v1.44.0...v1.45.0) (2018-08-29)
+
+
+### Features
+
+* **Form:** block submit if inputs have errors ([b07c428](https://github.com/lodgify/lodgify-ui/commit/b07c428))
+
 # [1.44.0](https://github.com/lodgify/lodgify-ui/compare/v1.43.0...v1.44.0) (2018-08-29)
 
 
