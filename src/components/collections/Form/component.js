@@ -5,7 +5,6 @@ import { Card, Form } from 'semantic-ui-react';
 import { Heading } from 'typography/Heading';
 import { Button } from 'elements/Button';
 
-import { DEFAULT_IS_REQUIRED_MESSAGE } from './constants';
 import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
 import { getIsRequiredError } from './utils/getIsRequiredError';
 import { getIsValidError } from './utils/getIsValidError';
@@ -20,9 +19,10 @@ export class Component extends PureComponent {
 
   handleInputBlur = name => {
     const validation = getValidationWithDefaults(this.props.validation[name]);
-    const error = getIsRequiredError(validation, this.state[name]);
+    const hasError = getIsRequiredError(validation, this.state[name]);
 
-    error && this.setState({ [name]: { error: DEFAULT_IS_REQUIRED_MESSAGE } });
+    hasError &&
+      this.setState({ [name]: { error: validation.isRequiredMessage } });
   };
 
   handleInputChange = (name, value) => {
@@ -110,6 +110,8 @@ Component.propTypes = {
       invalidMessage: PropTypes.string,
       /** Is the user required to enter a value into the input. */
       isRequired: PropTypes.bool,
+      /** An optional message to display if `getIsValid` returns `false`. */
+      isRequiredMessage: PropTypes.string,
     })
   ),
 };

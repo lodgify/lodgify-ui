@@ -162,6 +162,10 @@ const { InputGroup } = require('../InputGroup');
     required: {
       isRequired: true,
     },
+    'is-required-message': {
+      isRequired: true,
+      isRequiredMessage: `This field can't be empty`,
+    },
     'custom-get-is-empty': {
       isRequired: true,
       getIsEmpty: value => !value || [value.startDate, value.endDate].includes(null),
@@ -169,8 +173,9 @@ const { InputGroup } = require('../InputGroup');
   }}
 >
   <TextInput label="Naive email" name="naive-email" />
-  <TextInput label="With invalid message" name="invalid-message"/>
+  <TextInput label="With invalidMessage" name="invalid-message"/>
   <TextInput label="Required" name="required" />
+  <TextInput label="With isRequiredMessage" name="is-required-message" />
   <DateRangePicker
     startDatePlaceholderText="Custom"
     endDatePlaceholderText="getIsEmpty"
