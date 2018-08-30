@@ -23,7 +23,8 @@
   .fields .field {
 
     .ui.input,
-    .ui.dropdown {
+    .ui.dropdown,
+    .dropdown-container {
       max-width: 100%;
     }
   }

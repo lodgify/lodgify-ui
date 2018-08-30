@@ -97,8 +97,8 @@
 // the implementation of dropdown with icon.
 .dropdown-container {
   position: relative;
-  max-width: 350px;
-  width: 100%;
+  max-width: @inputMaxWidth;
+  width: @inputWidth;
 
   .ui.selection.dropdown {
     color: @defaultTextColor;
@@ -278,7 +278,7 @@
 
       &:before {
         left: auto;
-        right: 6px;
+        right: @6px;
       }
     }
   }

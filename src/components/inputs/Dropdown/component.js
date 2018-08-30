@@ -55,7 +55,7 @@ export class Component extends PureComponent {
 
   render() {
     const { isOpen, value } = this.state;
-    const { icon, isDisabled, label, options, error, isValid } = this.props;
+    const { error, icon, isDisabled, isValid, label, options } = this.props;
     const hasImages = getHasImages(options);
     const adaptedOptions = adaptOptions(options, hasImages);
     const defaultValue = getDefaultValue(adaptedOptions, hasImages, !!label);

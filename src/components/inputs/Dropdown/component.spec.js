@@ -52,7 +52,7 @@ describe('<Dropdown />', () => {
         });
       });
 
-      it('should has the error class', () => {
+      it('should have the error class', () => {
         const props = {
           error: true,
         };
@@ -83,7 +83,7 @@ describe('<Dropdown />', () => {
         });
       });
 
-      it('should has the valid class', () => {
+      it('should have the valid class', () => {
         const props = {
           isValid: true,
         };
