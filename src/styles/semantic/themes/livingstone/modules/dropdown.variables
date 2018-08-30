@@ -158,6 +158,14 @@
 @selectedColor: @itemColor;
 
 /* Error */
+@errorBackground: @negativeBackgroundColor;
+@errorBorder: @negativeBorderColor;
+@errorColor: @textColor;
+
+@errorMessageFontWeight: 400;
+@errorMessagePadding: @6px @25px;
+@errorMessageRightPosition: -(@1px);
+@errorMessageTopPosition: -(@30px);
 
 /*-------------------
       Variations

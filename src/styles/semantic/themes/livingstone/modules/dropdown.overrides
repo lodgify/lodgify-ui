@@ -220,43 +220,64 @@
       }
     }
   }
-}
 
-/*--------------
-     Search
---------------*/
 
-/* Search Selection */
+  /*--------------
+      Search
+  --------------*/
 
-/* Inline */
+  /* Search Selection */
 
-/*--------------
-    Multiple
---------------*/
+  /* Inline */
 
-/* Split Actual Padding Between Child and Parent (allows for label spacing) */
+  /*--------------
+      Multiple
+  --------------*/
 
-/* Child Elements */
+  /* Split Actual Padding Between Child and Parent (allows for label spacing) */
 
-/* Dropdown Icon */
+  /* Child Elements */
 
-/* Selection Label */
+  /* Dropdown Icon */
 
-/*-------------------
-       States
+  /* Selection Label */
+
+  /*-------------------
+        States
 --------------------*/
 
-/* Hovered */
+  /* Hovered */
 
-/* Default Text */
+  /* Default Text */
 
-/* Loading */
+  /* Loading */
 
-/* Active Menu Item */
+  /* Active Menu Item */
 
-/* Selected */
+  /* Selected */
 
-/* Error */
+  /* Error */
+  &.error {
+
+    .ui.selection.dropdown {
+      background: @errorBackground;
+      border-color: @errorBorder;
+    }
+
+    .ui.pointing.below.label {
+      font-weight: @errorMessageFontWeight;
+      padding: @errorMessagePadding;
+      position: absolute;
+      right: @errorMessageRightPosition;
+      top: @errorMessageTopPosition;
+
+      &:before {
+        left: auto;
+        right: 6px;
+      }
+    }
+  }
+}
 
 /*-------------------
       Variations
