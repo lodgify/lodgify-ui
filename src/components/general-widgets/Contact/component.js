@@ -191,5 +191,7 @@ Component.propTypes = {
     guests: PropTypes.object,
     name: PropTypes.object,
     phone: PropTypes.object,
+    property: PropTypes.object,
+    room: PropTypes.object,
   }),
 };

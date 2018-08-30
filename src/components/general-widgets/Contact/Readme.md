@@ -112,6 +112,12 @@ const validation = {
   guests: { isRequired: true },
   name: { isRequired: true },
   phone: { isRequired: true },
+  room: {
+    isRequired: true,
+    invalidMessage: 'Garden is invalid',
+    getIsValid: value => value !== 'garden'
+  },
+  property: { isRequired: true },
 };
 
 <Contact

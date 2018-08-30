@@ -12,12 +12,44 @@ const { options } = require('./mock-data/options');
 
 ### States
 
+#### Error
+
+```jsx
+const { options } = require('./mock-data/options');
+<div>
+  <Dropdown error label="Location" options={options} />
+  <Divider />
+  <Divider />
+  <Dropdown error="Something's not right" label="Location" options={options} />
+</div>
+```
+
 #### Disabled
 
 ```jsx
 const { options } = require('./mock-data/options');
 
 <Dropdown isDisabled label="Location" options={options} />
+```
+
+#### Valid
+
+```jsx
+const { options } = require('./mock-data/options');
+
+<div>
+  <Dropdown isValid label="Location" options={options} />
+</div>
+```
+
+##### Valid with Icon
+
+```jsx
+const { options } = require('./mock-data/options');
+
+<div>
+  <Dropdown isValid label="Location" options={options} icon="map pin" />
+</div>
 ```
 
 ### Variations
