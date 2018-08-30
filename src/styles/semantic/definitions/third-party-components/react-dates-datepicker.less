@@ -27,14 +27,14 @@
       box-shadow: @pickerBoxShadow;
     }
 
-    button.DayPickerNavigation_button {
+    .DayPickerNavigation > * {
       border: none;
       padding: 0;
       top: @pickerNavigationButtonTopSpace;
     }
 
     // add styling for buttons
-    .DayPickerNavigation button:not(.DayPickerNavigation_button__horizontalDefault) {
+    .DayPickerNavigation > *:not(.DayPickerNavigation_button__horizontalDefault) {
       position: absolute;
       top: @pickerButtonTop;
       line-height: @pickerButtonLineHeight;
