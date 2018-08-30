@@ -8,6 +8,7 @@ import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
 import { withResponsive } from 'utils/with-responsive';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
+import { isBlurEvent } from 'utils/is-blur-event';
 
 import { pickDatesFromState } from './utils/pickDatesFromState';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
@@ -30,16 +31,18 @@ class Component extends PureComponent {
   componentDidUpdate = (prevProps, prevState) => {
     const prevDates = pickDatesFromState(prevState);
     const dates = pickDatesFromState(this.state);
-    const { name, onChange } = this.props;
+    const { focusedInput: prevFocusedInput } = prevState;
+    const { focusedInput } = this.state;
+    const { name, onBlur, onChange } = this.props;
 
     !isEqual(prevDates, dates) && onChange(name, dates);
+    isBlurEvent(prevFocusedInput, focusedInput) && onBlur();
   };
 
   /**
    * Persist the focused input identifier in component state.
    */
   handleFocusChange = focusedInput => {
-    focusedInput === null && this.props.onBlur();
     this.setState({ focusedInput });
   };
 
