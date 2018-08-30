@@ -127,28 +127,6 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('Interaction: onFocusChange', () => {
-    describe('if `focusedInput` is `null`', () => {
-      it('should call `props.onBlur`', () => {
-        const onBlur = jest.fn();
-        const singleDatePicker = getWrappedDateRangePicker({ onBlur });
-
-        singleDatePicker.instance().handleFocusChange(null);
-
-        expect(onBlur).toHaveBeenCalled();
-      });
-    });
-
-    describe('if `focused` is not `null`', () => {
-      it('should not call `props.onBlur`', () => {
-        const onBlur = jest.fn();
-        const singleDatePicker = getWrappedDateRangePicker({ onBlur });
-
-        singleDatePicker.instance().handleFocusChange('startDate');
-
-        expect(onBlur).not.toHaveBeenCalled();
-      });
-    });
-
     it('should persist the value in component state', () => {
       const value = 'startDate';
       const dateRangePicker = getWrappedDateRangePicker();
@@ -176,6 +154,38 @@ describe('<DateRangePicker />', () => {
         props.name,
         expect.objectContaining(newState)
       );
+    });
+  });
+
+  describe('State change: focusedInput', () => {
+    describe('if there is a blur event', () => {
+      it('should call `props.onBlur`', () => {
+        const onBlur = jest.fn();
+        const dateRangePicker = getWrappedDateRangePicker({ onBlur });
+
+        const prevState = { focusedInput: 'startDate' };
+        const state = { focusedInput: null };
+
+        dateRangePicker.setState(prevState);
+        dateRangePicker.setState(state);
+
+        expect(onBlur).toHaveBeenCalled();
+      });
+    });
+
+    describe('if there is a no blur event', () => {
+      it('should note call `props.onBlur`', () => {
+        const onBlur = jest.fn();
+        const dateRangePicker = getWrappedDateRangePicker({ onBlur });
+
+        const prevState = { focusedInput: null };
+        const state = { focusedInput: null };
+
+        dateRangePicker.setState(prevState);
+        dateRangePicker.setState(state);
+
+        expect(onBlur).not.toHaveBeenCalled();
+      });
     });
   });
 

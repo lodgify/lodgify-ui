@@ -65,10 +65,7 @@ const propertyOptions = [{
 }];
 
 const validation = {
-  date: {
-    getIsEmpty: value => !value || !value.date,
-    isRequired: true,
-  },
+  date: { isRequired: true },
   email: { isRequired: true },
   name: { isRequired: true },
   notes: { isRequired: true },
