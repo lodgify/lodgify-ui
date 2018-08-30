@@ -1,15 +1,17 @@
 import React, { PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Form } from 'semantic-ui-react';
+import { size, forEach } from 'lodash';
 
 import { Heading } from 'typography/Heading';
 import { Button } from 'elements/Button';
 
-import { DEFAULT_IS_REQUIRED_MESSAGE } from './constants';
 import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
 import { getIsRequiredError } from './utils/getIsRequiredError';
 import { getIsValidError } from './utils/getIsValidError';
+import { getEmptyRequiredInputs } from './utils/getEmptyRequiredInputs';
 import { getFormChild } from './utils/getFormChild';
+import { getIsSubmitButtonDisabled } from './utils/getIsSubmitButtonDisabled';
 
 /**
  * A form displays a set of related user input fields in a structured way.
@@ -20,9 +22,10 @@ export class Component extends PureComponent {
 
   handleInputBlur = name => {
     const validation = getValidationWithDefaults(this.props.validation[name]);
-    const error = getIsRequiredError(validation, this.state[name]);
+    const hasError = getIsRequiredError(validation, this.state[name]);
 
-    error && this.setState({ [name]: { error: DEFAULT_IS_REQUIRED_MESSAGE } });
+    hasError &&
+      this.setState({ [name]: { error: validation.isRequiredMessage } });
   };
 
   handleInputChange = (name, value) => {
@@ -36,7 +39,20 @@ export class Component extends PureComponent {
   };
 
   handleSubmit = () => {
-    this.props.onSubmit(this.state);
+    const emptyRequiredInputs = getEmptyRequiredInputs(
+      this.props.validation,
+      this.state
+    );
+
+    size(emptyRequiredInputs)
+      ? forEach(emptyRequiredInputs, (validation, name) => {
+          const { isRequiredMessage } = getValidationWithDefaults(validation);
+
+          this.setState({
+            [name]: { error: isRequiredMessage },
+          });
+        })
+      : this.props.onSubmit(this.state);
   };
 
   render = () => {
@@ -56,7 +72,12 @@ export class Component extends PureComponent {
               <a onClick={actionLink.onClick}>{actionLink.text}</a>
             )}
             {submitButtonText && (
-              <Button isPositionedRight>{submitButtonText}</Button>
+              <Button
+                isDisabled={getIsSubmitButtonDisabled(this.state)}
+                isPositionedRight
+              >
+                {submitButtonText}
+              </Button>
             )}
           </Form>
         </Card.Content>
@@ -110,6 +131,8 @@ Component.propTypes = {
       invalidMessage: PropTypes.string,
       /** Is the user required to enter a value into the input. */
       isRequired: PropTypes.bool,
+      /** An optional message to display if `getIsValid` returns `false`. */
+      isRequiredMessage: PropTypes.string,
     })
   ),
 };

@@ -10,6 +10,8 @@ import {
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
+import { ErrorMessage } from '../ErrorMessage';
+
 import { Component as Dropdown } from './component';
 
 const OPTIONS = [{ text: 'someText', value: 'someValue' }];
@@ -26,6 +28,70 @@ describe('<Dropdown />', () => {
     const wrapper = getDropdown();
 
     expectComponentToBe(wrapper, 'div.dropdown-container');
+  });
+
+  describe('the validation states', () => {
+    describe('error state', () => {
+      it('should render ErrorMessage if message defined', () => {
+        const props = {
+          error: 'Hello world',
+        };
+        const wrapper = getDropdown(props);
+
+        expectComponentToHaveChildren(wrapper, ErrorMessage, SemanticDropdown);
+      });
+
+      it('should render ErrorMessage with the correct message', () => {
+        const props = {
+          error: 'Hello world',
+        };
+        const wrapper = getDropdown(props).find(ErrorMessage);
+
+        expectComponentToHaveProps(wrapper, {
+          errorMessage: 'Hello world',
+        });
+      });
+
+      it('should have the error class', () => {
+        const props = {
+          error: true,
+        };
+        const actual = getDropdown(props).hasClass('error');
+
+        expect(actual).toBe(true);
+      });
+    });
+
+    describe('valid state', () => {
+      it('should render the valid Icon', () => {
+        const props = {
+          isValid: true,
+        };
+        const wrapper = getDropdown(props);
+
+        expectComponentToHaveChildren(wrapper, Icon, SemanticDropdown);
+      });
+
+      it('should render the valid Icon with the color green', () => {
+        const props = {
+          isValid: true,
+        };
+        const wrapper = getDropdown(props).find(Icon);
+
+        expectComponentToHaveProps(wrapper, {
+          color: 'green',
+        });
+      });
+
+      it('should have the valid class', () => {
+        const props = {
+          isValid: true,
+        };
+        const actual = getDropdown(props).hasClass('valid');
+
+        expect(actual).toBe(true);
+      });
+    });
   });
 
   describe('the `div.dropdown-container`', () => {

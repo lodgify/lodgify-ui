@@ -49,7 +49,7 @@ export class Component extends PureComponent {
         name={name}
         onChange={this.handleChange}
       >
-        <input onBlur={onBlur} type="text" value={value} />
+        <input onBlur={onBlur} type="tel" value={value} />
       </InputController>
     );
   }

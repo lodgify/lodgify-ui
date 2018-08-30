@@ -167,5 +167,8 @@ Component.propTypes = {
     name: PropTypes.object,
     notes: PropTypes.object,
     phone: PropTypes.object,
+    property: PropTypes.object,
+    time: PropTypes.object,
+    timeZone: PropTypes.object,
   }),
 };

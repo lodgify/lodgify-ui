@@ -1,3 +1,32 @@
+## [1.46.1](https://github.com/lodgify/lodgify-ui/compare/v1.46.0...v1.46.1) (2018-08-30)
+
+
+### Bug Fixes
+
+* **Card:** remove overflow hidden to show datepicker ([3a29245](https://github.com/lodgify/lodgify-ui/commit/3a29245))
+* **react-dates-datepicker:** improve button element selector for custom styling ([829a7fd](https://github.com/lodgify/lodgify-ui/commit/829a7fd))
+
+# [1.46.0](https://github.com/lodgify/lodgify-ui/compare/v1.45.0...v1.46.0) (2018-08-30)
+
+
+### Features
+
+* **Dropdown:** add dropdown error validation state ([6c9ad9f](https://github.com/lodgify/lodgify-ui/commit/6c9ad9f))
+
+# [1.45.0](https://github.com/lodgify/lodgify-ui/compare/v1.44.0...v1.45.0) (2018-08-29)
+
+
+### Features
+
+* **Form:** block submit if inputs have errors ([b07c428](https://github.com/lodgify/lodgify-ui/commit/b07c428))
+
+# [1.44.0](https://github.com/lodgify/lodgify-ui/compare/v1.43.0...v1.44.0) (2018-08-29)
+
+
+### Features
+
+* **Form:** expose isRequiredMessage on validation prop ([f7f93a3](https://github.com/lodgify/lodgify-ui/commit/f7f93a3))
+
 # [1.43.0](https://github.com/lodgify/lodgify-ui/compare/v1.42.0...v1.43.0) (2018-08-28)
 
 

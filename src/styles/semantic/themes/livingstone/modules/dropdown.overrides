@@ -97,6 +97,8 @@
 // the implementation of dropdown with icon.
 .dropdown-container {
   position: relative;
+  max-width: @inputMaxWidth;
+  width: @inputWidth;
 
   .ui.selection.dropdown {
     color: @defaultTextColor;
@@ -169,8 +171,12 @@
     position: absolute;
     z-index: @iconZIndex;
 
-    & + .ui.dropdown {
+    &:not(.green) + .ui.dropdown {
       padding-left: @dropdownWithIconPaddingLeft;
+    }
+
+    &.green ~ .ui.dropdown {
+      padding-right: @dropdownWithIconPaddingRight;
     }
   }
 
@@ -199,7 +205,7 @@
   // stylelint-disable-next-line no-duplicate-selectors
   & > i.icon {
 
-    & ~ label {
+    &:not(.green) ~ label {
       left: @withIconLabelLeftPosition;
     }
   }
@@ -215,48 +221,86 @@
 
     & > i.icon {
 
-      & ~ label {
+      &:not(.green) ~ label {
         transform: translate(-(@withIconLabelFocusXTranslate), -(@labelFocusYTranslate));
       }
     }
   }
-}
 
-/*--------------
-     Search
---------------*/
+  /*--------------
+      Search
+  --------------*/
 
-/* Search Selection */
+  /* Search Selection */
 
-/* Inline */
+  /* Inline */
 
-/*--------------
-    Multiple
---------------*/
+  /*--------------
+      Multiple
+  --------------*/
 
-/* Split Actual Padding Between Child and Parent (allows for label spacing) */
+  /* Split Actual Padding Between Child and Parent (allows for label spacing) */
 
-/* Child Elements */
+  /* Child Elements */
 
-/* Dropdown Icon */
+  /* Dropdown Icon */
 
-/* Selection Label */
+  /* Selection Label */
 
-/*-------------------
-       States
+  /*-------------------
+        States
 --------------------*/
 
-/* Hovered */
+  /* Hovered */
 
-/* Default Text */
+  /* Default Text */
 
-/* Loading */
+  /* Loading */
 
-/* Active Menu Item */
+  /* Active Menu Item */
 
-/* Selected */
+  /* Selected */
 
-/* Error */
+  /* Error */
+  &.error {
+
+    .ui.selection.dropdown {
+      background: @errorBackground;
+      border-color: @errorBorder;
+    }
+
+    .ui.pointing.below.label {
+      font-weight: @errorMessageFontWeight;
+      padding: @errorMessagePadding;
+      position: absolute;
+      right: @errorMessageRightPosition;
+      top: @errorMessageTopPosition;
+
+      &:before {
+        left: auto;
+        right: @6px;
+      }
+    }
+  }
+
+  /* Valid */
+  &.valid {
+
+    .ui.selection.dropdown {
+      background: @focusedInputBackground;
+      border-color: @validBorderColor;
+    }
+
+    i.green.icon {
+      left: inherit;
+      opacity: @validIconOpacity;
+      padding: @validIconPadding;
+      position: absolute;
+      right: @validIconRight;
+      z-index: @validIconZIndex;
+    }
+  }
+}
 
 /*-------------------
       Variations

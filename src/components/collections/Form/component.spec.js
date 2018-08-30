@@ -157,13 +157,45 @@ describe('<Form />', () => {
   });
 
   describe('`handleSubmit`', () => {
-    it('should call `props.onSubmit` with the state', () => {
-      const onSubmit = jest.fn();
-      const wrapper = getForm(<input />, { onSubmit });
+    describe('if any input is required and is empty', () => {
+      it('should set the error to component state', () => {
+        const name = '🐸';
+        const wrapper = getForm(<input />, {
+          validation: { [name]: { isRequired: true } },
+        });
 
-      wrapper.instance().handleSubmit();
+        wrapper.instance().handleSubmit();
 
-      expect(onSubmit).toHaveBeenCalledWith(wrapper.state());
+        const actual = wrapper.state();
+
+        expect(actual).toEqual({
+          [name]: { error: DEFAULT_IS_REQUIRED_MESSAGE },
+        });
+      });
+
+      it('should not call `props.onSubmit`', () => {
+        const onSubmit = jest.fn();
+        const name = '🐸';
+        const wrapper = getForm(<input />, {
+          onSubmit,
+          validation: { [name]: { isRequired: true } },
+        });
+
+        wrapper.instance().handleSubmit();
+
+        expect(onSubmit).not.toHaveBeenCalledWith(wrapper.state());
+      });
+    });
+
+    describe('if no input is required and is empty', () => {
+      it('should call `props.onSubmit` with the state', () => {
+        const onSubmit = jest.fn();
+        const wrapper = getForm(<input />, { onSubmit });
+
+        wrapper.instance().handleSubmit();
+
+        expect(onSubmit).toHaveBeenCalledWith(wrapper.state());
+      });
     });
   });
 

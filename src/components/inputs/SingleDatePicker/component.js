@@ -4,11 +4,10 @@ import { isEqual } from 'lodash';
 import { SingleDatePicker } from 'react-dates';
 import 'react-dates/initialize';
 
+import { isBlurEvent } from 'utils/is-blur-event';
 import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
-
-import { pickDateFromState } from './utils/pickDateFromState';
 
 /**
  * A single date picker lets a user pick a date.
@@ -24,26 +23,26 @@ export class Component extends PureComponent {
    * Call `props.onChange` with the new date from state.
    */
   componentDidUpdate = (prevProps, prevState) => {
-    const prevDate = pickDateFromState(prevState);
-    const date = pickDateFromState(this.state);
-    const { name, onChange } = this.props;
+    const { date: prevDate, isFocused: prevIsFocused } = prevState;
+    const { date, isFocused } = this.state;
+    const { name, onBlur, onChange } = this.props;
 
     !isEqual(prevDate, date) && onChange(name, date);
+    isBlurEvent(prevIsFocused, isFocused) && onBlur();
   };
 
   /**
    * Persist the focused input identifier in component state.
    */
   handleFocusChange = ({ focused }) => {
-    focused || this.props.onBlur();
     this.setState({ isFocused: focused });
   };
 
   /**
    * Persist the date value in component state.
    */
-  handleInputControllerChange = (name, value) => {
-    this.setState({ date: value });
+  handleInputControllerChange = (name, date) => {
+    this.setState({ date });
   };
 
   render = () => {
