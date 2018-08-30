@@ -1,3 +1,11 @@
+## [1.46.1](https://github.com/lodgify/lodgify-ui/compare/v1.46.0...v1.46.1) (2018-08-30)
+
+
+### Bug Fixes
+
+* **Card:** remove overflow hidden to show datepicker ([3a29245](https://github.com/lodgify/lodgify-ui/commit/3a29245))
+* **react-dates-datepicker:** improve button element selector for custom styling ([829a7fd](https://github.com/lodgify/lodgify-ui/commit/829a7fd))
+
 # [1.46.0](https://github.com/lodgify/lodgify-ui/compare/v1.45.0...v1.46.0) (2018-08-30)
 
 
