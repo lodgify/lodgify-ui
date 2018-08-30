@@ -150,6 +150,14 @@ const { InputGroup } = require('../InputGroup');
 #### Validation
 
 ```jsx
+const dropdownOptions = [{
+  text: 'With error',
+  value: 'error'
+}, {
+  text: 'Is valid',
+  value: 'valid'
+}];
+
 <Form
   submitButtonText="Submit"
   validation={{
@@ -171,12 +179,18 @@ const { InputGroup } = require('../InputGroup');
       isRequired: true,
       getIsEmpty: value => !value || [value.startDate, value.endDate].includes(null),
     },
+    'is-required-dropdown': {
+      isRequired: true,
+      getIsValid: value => value !== 'error',
+      invalidMessage: 'This dropdown is required'
+    }
   }}
 >
   <TextInput label="Naive email" name="naive-email" />
   <TextInput label="With invalidMessage" name="invalid-message"/>
   <TextInput label="Required" name="required" />
   <TextInput label="With isRequiredMessage" name="is-required-message" />
+  <Dropdown label="Dropdown required" name="is-required-dropdown" options={dropdownOptions} />
   <DateRangePicker
     startDatePlaceholderText="Custom"
     endDatePlaceholderText="getIsEmpty"
