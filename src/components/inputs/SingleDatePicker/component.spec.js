@@ -97,28 +97,6 @@ describe('<SingleDatePicker />', () => {
   });
 
   describe('Interaction: onFocusChange', () => {
-    describe('if `focused` is `false`', () => {
-      it('should call `props.onBlur`', () => {
-        const onBlur = jest.fn();
-        const singleDatePicker = getSingleDatePicker({ onBlur });
-
-        singleDatePicker.instance().handleFocusChange({ focused: false });
-
-        expect(onBlur).toHaveBeenCalled();
-      });
-    });
-
-    describe('if `focused` is `true`', () => {
-      it('should not call `props.onBlur`', () => {
-        const onBlur = jest.fn();
-        const singleDatePicker = getSingleDatePicker({ onBlur });
-
-        singleDatePicker.instance().handleFocusChange({ focused: true });
-
-        expect(onBlur).not.toHaveBeenCalled();
-      });
-    });
-
     it('should persist the value in component state', () => {
       const value = true;
       const singleDatePicker = getSingleDatePicker();
@@ -138,14 +116,47 @@ describe('<SingleDatePicker />', () => {
     it('should call the function passed as `props.onChange`', () => {
       const handleChange = jest.fn();
       const props = { name: 'winnie', onChange: handleChange };
-      const newState = { date: moment() };
+      const date = moment();
+      const newState = { date };
       const singleDatePicker = getSingleDatePicker(props);
 
       singleDatePicker.setState(newState);
       expect(handleChange).toHaveBeenCalledWith(
         props.name,
-        expect.objectContaining(newState)
+        expect.objectContaining(date)
       );
+    });
+  });
+
+  describe('State change: focusedInput', () => {
+    describe('if there is a blur event', () => {
+      it('should call `props.onBlur`', () => {
+        const onBlur = jest.fn();
+        const singleDatePicker = getSingleDatePicker({ onBlur });
+
+        const prevState = { isFocused: true };
+        const state = { isFocused: false };
+
+        singleDatePicker.setState(prevState);
+        singleDatePicker.setState(state);
+
+        expect(onBlur).toHaveBeenCalled();
+      });
+    });
+
+    describe('if there is a no blur event', () => {
+      it('should note call `props.onBlur`', () => {
+        const onBlur = jest.fn();
+        const singleDatePicker = getSingleDatePicker({ onBlur });
+
+        const prevState = { isFocused: false };
+        const state = { isFocused: false };
+
+        singleDatePicker.setState(prevState);
+        singleDatePicker.setState(state);
+
+        expect(onBlur).not.toHaveBeenCalled();
+      });
     });
   });
 
