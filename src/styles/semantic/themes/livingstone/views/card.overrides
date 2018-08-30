@@ -64,6 +64,7 @@
   /* Form */
   &.has-form {
     padding: @hasFormPadding;
+    overflow: visible;
 
     @media @mobileScreen {
       padding: @hasFormMobilePadding;
