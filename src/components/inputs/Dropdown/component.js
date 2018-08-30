@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
+import { getHasErrorMessage } from 'utils/get-has-error-message';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { ErrorMessage } from '../ErrorMessage';
@@ -10,7 +11,6 @@ import { ErrorMessage } from '../ErrorMessage';
 import { adaptOptions } from './utils/adaptOptions';
 import { getDefaultValue } from './utils/getDefaultValue';
 import { getHasImages } from './utils/getHasImages';
-import { getHasErrorMessage } from './utils/getHasErrorMessage';
 
 /**
  * A dropdown allows a user to select a value from a series of options.
