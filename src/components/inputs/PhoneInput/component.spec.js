@@ -46,7 +46,7 @@ describe('<PhoneInput />', () => {
       const wrapper = getInputController().find('input');
 
       expectComponentToHaveProps(wrapper, {
-        type: 'text',
+        type: 'tel',
         value: '',
       });
     });
