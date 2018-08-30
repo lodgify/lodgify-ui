@@ -4,11 +4,11 @@ import { isEqual, some } from 'lodash';
 import { Input } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
+import { getHasErrorMessage } from 'utils/get-has-error-message';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { ErrorMessage } from '../ErrorMessage';
 
-import { getHasErrorMessage } from './utils/getHasErrorMessage';
 import { getValue } from './utils/getValue';
 
 /**

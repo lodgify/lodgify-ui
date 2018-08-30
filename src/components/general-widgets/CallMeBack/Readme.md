@@ -56,6 +56,14 @@ const timeZoneOptions = [
 #### Validation
 
 ```jsx
+const propertyOptions = [{
+  text: 'With error',
+  value: 'error'
+}, {
+  text: 'Is valid',
+  value: 'valid'
+}];
+
 const validation = {
   date: {
     getIsEmpty: value => !value || !value.date,
@@ -65,10 +73,17 @@ const validation = {
   name: { isRequired: true },
   notes: { isRequired: true },
   phone: { isRequired: true },
+  property: {
+    isRequired: true,
+    invalidMessage: 'A property is required',
+    getIsValid: value => value !== 'error'
+  },
+  time: { isRequired: true },
+  timeZone: { isRequired: true }
 };
 
 <CallMeBack
-  propertyOptions={[]}
+  propertyOptions={propertyOptions}
   timeOptions={[]}
   timeZoneOptions={[]}
   validation={validation}
