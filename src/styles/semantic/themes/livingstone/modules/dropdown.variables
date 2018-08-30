@@ -102,6 +102,7 @@
 @iconZIndex: @selectionZIndex + 1;
 
 @dropdownWithIconPaddingLeft: @40px;
+@dropdownWithIconPaddingRight: calc(@30px + @40px);
 
 /* With Image */
 @dropdownWithImagesCaretPaddingTop: @15px;
@@ -166,6 +167,14 @@
 @errorMessagePadding: @6px @25px;
 @errorMessageRightPosition: -(@1px);
 @errorMessageTopPosition: -(@30px);
+
+/* Valid */
+@validBorderColor: @green;
+
+@validIconOpacity: 1;
+@validIconPadding: @8px 0;
+@validIconRight: @40px;
+@validIconZIndex: 1;
 
 /*-------------------
       Variations

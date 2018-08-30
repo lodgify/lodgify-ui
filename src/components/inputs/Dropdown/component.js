@@ -48,8 +48,8 @@ export class Component extends PureComponent {
   /**
    * Handle blur event
    */
-  handleBlur = () => {
-    this.props.onBlur();
+  handleBlur = (event, data) => {
+    this.props.onBlur(event, data);
     this.handleOpen(false);
   };
 
@@ -63,7 +63,7 @@ export class Component extends PureComponent {
 
     return (
       <div
-        className={getClassNames('dropdown-container', 'ui', 'input', {
+        className={getClassNames('dropdown-container', {
           'has-images': hasImages,
           dirty: value,
           error: error,

@@ -97,6 +97,8 @@
 // the implementation of dropdown with icon.
 .dropdown-container {
   position: relative;
+  max-width: 350px;
+  width: 100%;
 
   .ui.selection.dropdown {
     color: @defaultTextColor;
@@ -169,8 +171,12 @@
     position: absolute;
     z-index: @iconZIndex;
 
-    & + .ui.dropdown {
+    &:not(.green) + .ui.dropdown {
       padding-left: @dropdownWithIconPaddingLeft;
+    }
+
+    &.green ~ .ui.dropdown {
+      padding-right: @dropdownWithIconPaddingRight;
     }
   }
 
@@ -199,7 +205,7 @@
   // stylelint-disable-next-line no-duplicate-selectors
   & > i.icon {
 
-    & ~ label {
+    &:not(.green) ~ label {
       left: @withIconLabelLeftPosition;
     }
   }
@@ -215,12 +221,11 @@
 
     & > i.icon {
 
-      & ~ label {
+      &:not(.green) ~ label {
         transform: translate(-(@withIconLabelFocusXTranslate), -(@labelFocusYTranslate));
       }
     }
   }
-
 
   /*--------------
       Search
@@ -275,6 +280,24 @@
         left: auto;
         right: 6px;
       }
+    }
+  }
+
+  /* Valid */
+  &.valid {
+
+    .ui.selection.dropdown {
+      background: @focusedInputBackground;
+      border-color: @validBorderColor;
+    }
+
+    i.green.icon {
+      left: inherit;
+      opacity: @validIconOpacity;
+      padding: @validIconPadding;
+      position: absolute;
+      right: @validIconRight;
+      z-index: @validIconZIndex;
     }
   }
 }
