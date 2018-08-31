@@ -23,7 +23,7 @@ export const Component = ({
   roomTypeName,
   roomTypeUrl,
 }) => (
-  <Card href={roomTypeUrl}>
+  <Card className="has-featured" href={roomTypeUrl}>
     <Image alt={imageAlternativeText} src={imageUrl} />
     <Card.Content>
       <Card.Header>{roomTypeName}</Card.Header>
