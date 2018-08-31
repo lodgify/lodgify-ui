@@ -1,3 +1,10 @@
+## [1.46.3](https://github.com/lodgify/lodgify-ui/compare/v1.46.2...v1.46.3) (2018-08-31)
+
+
+### Bug Fixes
+
+* **Promotion:** update promotion discount section color ([ee235c0](https://github.com/lodgify/lodgify-ui/commit/ee235c0))
+
 ## [1.46.2](https://github.com/lodgify/lodgify-ui/compare/v1.46.1...v1.46.2) (2018-08-31)
 
 
