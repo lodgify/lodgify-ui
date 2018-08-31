@@ -61,8 +61,10 @@
 /* Buttons */
 
 /* Form */
-@hasFormPadding: @50px 90px;
+@hasFormMargin: 0 auto;
+@hasFormMaxWidth: 650px;
 @hasFormMobilePadding: @25px;
+@hasFormPadding: @50px 90px;
 
 @hasFormContentPadding: 0;
 
