@@ -85,6 +85,14 @@
     }
   }
 
+  /* Featured */
+  &.has-featured {
+
+    img.ui.image {
+      height: @featuredImageHeight;
+    }
+  }
+
   /*-------------------
       Variations
 --------------------*/
