@@ -1,3 +1,10 @@
+## [1.46.2](https://github.com/lodgify/lodgify-ui/compare/v1.46.1...v1.46.2) (2018-08-31)
+
+
+### Bug Fixes
+
+* **card:** add styles to set max-width and center forms ([115d358](https://github.com/lodgify/lodgify-ui/commit/115d358))
+
 ## [1.46.1](https://github.com/lodgify/lodgify-ui/compare/v1.46.0...v1.46.1) (2018-08-30)
 
 
