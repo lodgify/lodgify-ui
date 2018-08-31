@@ -141,7 +141,7 @@
 --------------------*/
 
 @tinyBreakpoint: 400px;
-@tabletBreakpoint: 600px;
+@tabletBreakpoint: 670px;
 @computerBreakpoint: 1000px;
 
 @tinyScreen: ~"only screen and (max-width: @{largestTinyScreen})";

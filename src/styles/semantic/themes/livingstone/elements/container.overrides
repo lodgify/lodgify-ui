@@ -1,0 +1,11 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.container {
+  padding: @computerPadding;
+
+  @media (max-width: 670px) {
+    padding: @mobilePadding;
+  }
+}
