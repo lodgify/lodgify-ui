@@ -63,8 +63,10 @@
 
   /* Form */
   &.has-form {
-    padding: @hasFormPadding;
+    margin: @hasFormMargin;
+    max-width: @hasFormMaxWidth;
     overflow: visible;
+    padding: @hasFormPadding;
 
     @media @mobileScreen {
       padding: @hasFormMobilePadding;
@@ -80,6 +82,14 @@
           margin: @hasFormMobileHeaderMargin;
         }
       }
+    }
+  }
+
+  /* Featured */
+  &.has-featured {
+
+    img.ui.image {
+      height: @featuredImageHeight;
     }
   }
 

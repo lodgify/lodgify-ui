@@ -60,7 +60,7 @@
 /* Full bleed */
 
 /* Is Promotion */
-@promotionBackgroundColor: @darkYellow;
+@promotionBackgroundColor: @yellow;
 @promotionBorderRadius: @3px;
 @promotionMinHeight: 200px;
 @promotionHoverBlur: blur(3px);

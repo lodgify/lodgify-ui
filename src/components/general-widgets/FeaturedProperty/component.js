@@ -23,7 +23,7 @@ export const Component = ({
   propertyUrl,
   ratingNumber,
 }) => (
-  <Card href={propertyUrl}>
+  <Card className="has-featured" href={propertyUrl}>
     <Image alt={imageAlternativeText} src={imageUrl} />
     <Card.Content>
       <Card.Meta>
