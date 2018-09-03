@@ -1,5 +1,0 @@
-```jsx
- <Container>
-   <OwnerLogin />
- </Container>
-```

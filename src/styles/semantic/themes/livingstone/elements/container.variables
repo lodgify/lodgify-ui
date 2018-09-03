@@ -1,0 +1,34 @@
+/*******************************
+            Container
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Minimum Gutter is used to determine  the maximum container width for a given device */
+
+@maxWidth: 1120px;
+
+/* Devices */
+@mobileMinimumGutter: 0;
+@mobileWidth: auto;
+@mobileGutter: auto;
+@mobilePadding: 0 @25px;
+
+@tabletWidth: 100%;
+@tabletGutter: auto;
+
+@largeMonitorBreakpoint: @maxWidth;
+
+@computerWidth: 100%;
+@computerGutter: auto;
+@computerPadding: 0 @40px;
+
+@largeMonitorWidth: 100%;
+@largeMonitorGutter: auto;
+
+/*-------------------
+       Grid
+--------------------*/
+@gridColumnGutter: 0 2rem;
