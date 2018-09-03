@@ -27,3 +27,8 @@
 
 @largeMonitorWidth: 100%;
 @largeMonitorGutter: auto;
+
+/*-------------------
+       Grid
+--------------------*/
+@gridColumnGutter: 0 2rem;
