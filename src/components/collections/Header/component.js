@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Menu } from 'semantic-ui-react';
 
 import { withResponsive } from 'utils/with-responsive';
+import { Container } from 'layout/Container';
 
 import { getLogoMarkup } from './utils/getLogoMarkup';
 import { getMobileMenuMarkup } from './utils/getMobileMenuMarkup';
@@ -14,14 +15,16 @@ import { getDesktopMenuMarkup } from './utils/getDesktopMenuMarkup';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = props => (
-  <Menu borderless className="is-header" text>
-    {getLogoMarkup(props.logoSrc, props.logoText)}
-    <Menu.Menu position="right">
-      {props.isUserOnMobile
-        ? getMobileMenuMarkup(props)
-        : getDesktopMenuMarkup(props)}
-    </Menu.Menu>
-  </Menu>
+  <header>
+    <Container as={Menu} borderless className="is-header" text>
+      {getLogoMarkup(props.logoSrc, props.logoText)}
+      <Menu.Menu position="right">
+        {props.isUserOnMobile
+          ? getMobileMenuMarkup(props)
+          : getDesktopMenuMarkup(props)}
+      </Menu.Menu>
+    </Container>
+  </header>
 );
 
 Component.displayName = 'Header';

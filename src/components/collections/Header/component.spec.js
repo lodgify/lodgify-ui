@@ -8,6 +8,8 @@ import {
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { Container } from 'layout/Container';
+
 import { ComponentWithResponsive as Header } from './component';
 import { navigationItems } from './mock-data/navigationItems';
 
@@ -34,20 +36,33 @@ describe('<Header />', () => {
   });
 
   describe('the wrapped `Header` component', () => {
-    it('should be a single Semantic UI `Menu` component', () => {
+    it('should be a single header', () => {
       const wrapper = getWrappedHeader();
 
-      expectComponentToBe(wrapper, Menu);
+      expectComponentToBe(wrapper, 'header');
     });
 
-    it('should have the right props', () => {
+    it('should have the right children', () => {
       const wrapper = getWrappedHeader();
 
-      expectComponentToHaveProps(wrapper, { borderless: true });
+      expectComponentToHaveChildren(wrapper, Container);
+    });
+  });
+
+  describe('the `Container` component', () => {
+    const getFirstContainer = () => getWrappedHeader().find(Container);
+
+    it('should have the right props', () => {
+      const wrapper = getFirstContainer();
+
+      expectComponentToHaveProps(wrapper, {
+        borderless: true,
+        as: Menu,
+      });
     });
 
     it('should render the right children', () => {
-      const wrapper = getWrappedHeader();
+      const wrapper = getFirstContainer();
 
       expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Menu);
     });
@@ -59,7 +74,7 @@ describe('<Header />', () => {
         logoText,
         navigationItems,
       })
-        .find(Menu)
+        .find(Container)
         .children(Menu.Menu);
 
       expectComponentToHaveProps(wrapper, { position: 'right' });
