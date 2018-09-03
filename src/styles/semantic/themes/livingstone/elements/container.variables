@@ -11,10 +11,10 @@
 @maxWidth: 1120px;
 
 /* Devices */
-@mobileMinimumGutter: 0em;
+@mobileMinimumGutter: 0;
 @mobileWidth: auto;
-@mobileGutter: @25px;
-@mobilePadding: 0 @mobileGutter;
+@mobileGutter: auto;
+@mobilePadding: 0 @25px;
 
 @tabletWidth: 100%;
 @tabletGutter: auto;

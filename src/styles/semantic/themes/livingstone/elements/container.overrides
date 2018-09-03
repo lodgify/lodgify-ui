@@ -2,8 +2,8 @@
          Theme Overrides
 *******************************/
 
-.ui.grid > .row.container.ui,
-.container {
+.container,
+.ui.grid > .row.container.ui {
   padding: @computerPadding;
 
   @media @tabletScreen {
@@ -16,15 +16,13 @@
   > .row.container.ui {
     max-width: @maxWidth !important; /* Need to use !important to override library value */
 
-    /*
-      Since the container will handle the padding for us, no need to apply to the columns
-    */
     > .column {
       padding: @gridColumnGutter;
 
       &:first-child {
         padding-left: 0;
       }
+
       &:last-child {
         padding-right: 0;
       }
