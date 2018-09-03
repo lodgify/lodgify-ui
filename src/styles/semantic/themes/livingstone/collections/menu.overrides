@@ -45,65 +45,6 @@
     }
   }
 
-  /* Footer */
-  .is-footer > & {
-    margin: 0;
-    padding: @footerMenuVerticalPadding @footerMenuHorizontalPadding;
-
-    /* Menu Item */
-    & .item {
-      padding:
-        @footerMenuItemVerticalPadding
-        @footerMenuItemHorizontalPadding
-        @footerMenuItemVerticalPadding
-        0;
-    }
-
-    &:first-child {
-
-      /* Menu Item */
-      & .item {
-        align-items: flex-start;
-      }
-
-      /* Sub Menu */
-      .menu {
-
-        .header {
-          font-weight: @footerTopMenuHeadingFontWeight;
-          padding: @footerTopMenuHeadingVerticalPadding 0;
-        }
-      }
-    }
-
-    &:nth-child(2) {
-      flex-wrap: wrap;
-
-      /* Menu Item */
-      .item {
-        color: @footerBottomMenuColor;
-      }
-
-      .right.menu {
-        flex-direction: row;
-
-        .item {
-          flex: 0;
-          padding-right: 0;
-        }
-      }
-
-      .right.item {
-        padding-right: 0;
-      }
-
-      /* Divider */
-      .ui.divider {
-        width: @footerBottomMenuDividerWidth;
-      }
-    }
-  }
-
   /* Text Item */
 
   /*--------------
@@ -342,3 +283,78 @@
 /* Resize large sizes */
 
 /* Sizes */
+
+/* Footer */
+.is-footer {
+
+  .top-navigation {
+    background-color: @black;
+  }
+
+  .bottom-navigation {
+
+    &,
+    .menu {
+      background-color: @greyEight;
+    }
+
+    .menu {
+      flex-wrap: wrap;
+
+      /* Menu Item */
+      .item {
+        color: @footerBottomMenuColor;
+      }
+
+      .right.menu {
+        flex-direction: row;
+
+        .item {
+          flex: 0;
+          padding-right: 0;
+        }
+      }
+
+      .right.item {
+        padding-right: 0;
+      }
+
+      /* Divider */
+      .ui.divider {
+        width: @footerBottomMenuDividerWidth;
+      }
+    }
+  }
+
+  .top-navigation,
+  .bottom-navigation {
+    margin: 0;
+    padding: @footerMenuVerticalPadding @footerMenuHorizontalPadding;
+
+    /* Menu Item */
+    .menu .item {
+      padding:
+        @footerMenuItemVerticalPadding
+        @footerMenuItemHorizontalPadding
+        @footerMenuItemVerticalPadding
+        0;
+    }
+
+    &:first-child {
+
+      /* Menu Item */
+      .menu .item {
+        align-items: flex-start;
+      }
+
+      /* Sub Menu */
+      .menu {
+
+        .header {
+          font-weight: @footerTopMenuHeadingFontWeight;
+          padding: @footerTopMenuHeadingVerticalPadding 0;
+        }
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@
 @headerMenuMobileHorizontalMargin: @25px;
 
 @footerMenuVerticalPadding: @30px;
-@footerMenuHorizontalPadding: @35px;
+@footerMenuHorizontalPadding: 0;
 
 /* Menu Item */
 // Need to use margin rather than padding to implement 'active' state bottom border
@@ -22,7 +22,7 @@
 @headerMenuItemTextColor: @pureWhite;
 
 @footerMenuItemVerticalPadding: @8px;
-@footerMenuItemHorizontalPadding: @footerMenuHorizontalPadding;
+@footerMenuItemHorizontalPadding: @35px;
 
 @footerBottomMenuColor: @greySix;
 
