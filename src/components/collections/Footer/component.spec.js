@@ -8,6 +8,7 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 import { Menu } from 'semantic-ui-react';
 
+import { Container } from 'layout/Container';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Divider } from 'elements/Divider';
 import { Submenu } from 'elements/Submenu';
@@ -57,24 +58,64 @@ const getFooter = otherProps =>
   );
 
 describe('<Footer />', () => {
-  it('should render a single `div.is-footer` element', () => {
+  it('should render a single `footer` element', () => {
     const wrapper = getFooter();
 
-    expectComponentToBe(wrapper, 'div.is-footer');
+    expectComponentToBe(wrapper, 'footer');
   });
 
-  describe('the `div.is-footer` element', () => {
+  describe('the `footer` element', () => {
     it('should have the right children', () => {
       const wrapper = getFooter();
 
-      expectComponentToHaveChildren(wrapper, Menu, Menu);
+      expectComponentToHaveChildren(wrapper, 'div', 'div');
     });
   });
 
-  describe('the first `Menu` component', () => {
+  describe('the `div.top-navigation`', () => {
+    it('should have the right children', () => {
+      const wrapper = getFooter()
+        .find('div.top-navigation')
+        .at(0);
+
+      expectComponentToHaveChildren(wrapper, Container);
+    });
+
+    it('should have the right props', () => {
+      const wrapper = getFooter()
+        .find('div.top-navigation')
+        .at(0);
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'top-navigation',
+      });
+    });
+  });
+
+  describe('the `div.bottom-navigation`', () => {
+    it('should have the right children', () => {
+      const wrapper = getFooter()
+        .find('div.bottom-navigation')
+        .at(0);
+
+      expectComponentToHaveChildren(wrapper, Container);
+    });
+
+    it('should have the right props', () => {
+      const wrapper = getFooter()
+        .find('div.bottom-navigation')
+        .at(0);
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'bottom-navigation',
+      });
+    });
+  });
+
+  describe('the first `Container` component', () => {
     const getFirstMenu = () =>
       getFooter()
-        .children(Menu)
+        .find(Container)
         .at(0);
 
     it('should have the right props', () => {
@@ -84,6 +125,7 @@ describe('<Footer />', () => {
         borderless: true,
         inverted: true,
         stackable: true,
+        as: Menu,
       });
     });
 
@@ -97,7 +139,7 @@ describe('<Footer />', () => {
   describe('if `props.navigationItems` are grouped', () => {
     const getFirstMenuWithGroupeNavigationItems = () =>
       getFooter({ navigationItems: groupedNavigationItems })
-        .children(Menu)
+        .find(Container)
         .at(0);
 
     describe('the first `Menu` component', () => {
@@ -150,7 +192,7 @@ describe('<Footer />', () => {
 
   const getSecondMenu = otherProps =>
     getFooter(otherProps)
-      .children(Menu)
+      .find(Container)
       .at(1);
 
   describe('the second `Menu` component', () => {
@@ -159,9 +201,9 @@ describe('<Footer />', () => {
 
       expectComponentToHaveProps(wrapper, {
         borderless: true,
-        color: 'grey',
         inverted: true,
         stackable: true,
+        as: Menu,
       });
     });
 
