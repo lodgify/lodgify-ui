@@ -11,8 +11,8 @@ import { IconCard } from 'elements/IconCard';
 
 /**
  * The standard widget for displaying key facts about a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ keyFacts, headingText }) => (
   <Grid>
     <GridColumn width={12}>

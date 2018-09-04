@@ -14,8 +14,8 @@ import { getLabelAndValueString } from './utils/getLabelAndValueString';
 
 /**
  * The standard widget for displaying the rules of a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   checkInTime,
   checkInTimeLabel,

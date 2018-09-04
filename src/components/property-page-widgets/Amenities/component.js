@@ -15,8 +15,8 @@ import { getCategoryMarkup } from './utils/getCategoryMarkup';
 
 /**
  * The standard widget for displaying the amenities of a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   amenities,
   headingText,

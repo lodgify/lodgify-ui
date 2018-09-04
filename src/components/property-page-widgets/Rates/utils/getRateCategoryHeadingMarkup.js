@@ -7,11 +7,11 @@ import { buildPricePerExtraGuestString } from './buildPricePerExtraGuestString';
 
 /**
  * @param {Object} rateCategory
- * @param {String} rateCategory.costPerExtraGuest
- * @param {String} rateCategory.dateRange
- * @param {String} rateCategory.name
- * @param {String} rateCategory.numberOfGuests
- * @param {String} costPerExtraGuestLabel
+ * @param {string} rateCategory.costPerExtraGuest
+ * @param {string} rateCategory.dateRange
+ * @param {string} rateCategory.name
+ * @param {string} rateCategory.numberOfGuests
+ * @param {string} costPerExtraGuestLabel
  * @return {Object}
  */
 export const getRateCategoryHeadingMarkup = (

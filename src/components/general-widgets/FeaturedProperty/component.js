@@ -9,8 +9,8 @@ import { getPropertyDescription } from './utils/getPropertyDescription';
 
 /**
  * The standard widget for featuring a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   bedroomsNumber,
   guestsNumber,

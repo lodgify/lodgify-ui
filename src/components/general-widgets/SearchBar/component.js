@@ -12,8 +12,8 @@ import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
 
 /**
  * The standard widget for property search.
- * @extends {React.PureComponent}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {};
 
@@ -74,7 +74,7 @@ Component.propTypes = {
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
-   * @returns {Boolean}     - Is the day blocked.
+   * @returns{boolean}     - Is the day blocked.
    */
   getIsDayBlocked: PropTypes.func,
   /** The options which the user can select in the guests field. */

@@ -4,8 +4,8 @@ import { Checkbox } from 'semantic-ui-react';
 
 /**
  * A checkbox allows a user to select a value from a small set of options, often binary.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   isDisabled,
   isChecked,
@@ -63,7 +63,7 @@ Component.propTypes = {
   /**
    * Event called when the checkbox value changes.
    * @param {String} name
-   * @param {Boolean} value
+   * @param{boolean} value
    */
   onChange: PropTypes.func,
 };

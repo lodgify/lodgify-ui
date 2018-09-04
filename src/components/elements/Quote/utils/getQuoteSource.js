@@ -1,7 +1,7 @@
 /**
- * @param  {String} quoteSource
- * @param  {String} quoteDateTime
- * @return {String}
+ * @param  {string} quoteSource
+ * @param  {string} quoteDateTime
+ * @return {string}
  */
 export const getQuoteSource = (quoteSource, quoteDateTime) =>
   `${quoteSource} (${quoteDateTime})`;

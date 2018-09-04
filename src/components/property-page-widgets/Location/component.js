@@ -20,8 +20,8 @@ import { getGoogleMapHeight } from './utils/getGoogleMapHeight';
 
 /**
  * The standard widget for displaying the location of a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
   headingText,
   isShowingApproximateLocation,

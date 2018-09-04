@@ -14,18 +14,14 @@ import { getHasImages } from './utils/getHasImages';
 
 /**
  * A dropdown allows a user to select a value from a series of options.
- * @extends React.PureComponent
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
     isOpen: false,
     value: '',
   };
 
-  /**
-   * Call the onChange function passed down via props
-   * with the new state value
-   */
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
     const { name, onChange } = this.props;
@@ -33,21 +29,12 @@ export class Component extends PureComponent {
     prevValue !== value && onChange(name, value);
   }
 
-  /**
-   * Persist the value in component state
-   */
   handleChange = (event, data) => {
     this.setState({ value: data.value, isOpen: false });
   };
 
-  /**
-   * Handle actions to change the isOpen state .
-   */
   handleOpen = isOpen => this.setState({ isOpen });
 
-  /**
-   * Handle blur event
-   */
   handleBlur = (event, data) => {
     this.props.onBlur(event, data);
     this.handleOpen(false);

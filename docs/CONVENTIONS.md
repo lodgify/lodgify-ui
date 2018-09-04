@@ -43,8 +43,8 @@ import PropTypes from 'prop-types';
 
 /**
  * A form displays a set of related user input fields in a structured way.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ heading }) => (
   ...
 );

@@ -1,8 +1,8 @@
 /**
- * @param  {Number} index
+ * @param  {number} index
  * @param  {Array} descriptionTextArray
- * @param  {String} extraDescriptionText
- * @return {Boolean}
+ * @param  {string} extraDescriptionText
+ * @return {boolean}
  */
 export const isDescriptionDisplayingWithEllipsis = (
   index,

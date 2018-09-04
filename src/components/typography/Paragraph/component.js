@@ -7,8 +7,8 @@ const TINY = 'tiny';
 
 /**
  * A paragraph provides text content
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ children, size, weight }) => (
   <p className={getClassNames(weight, { tiny: size === TINY })}>{children}</p>
 );

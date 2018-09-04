@@ -7,9 +7,8 @@ import { getBackgroundImageUrl } from 'utils/get-background-image-url';
 /**
  * A full bleed takes up the width of its containing element
  * and the height of the viewport.
- *
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ children, imageUrl }) => (
   <Segment
     className="full-bleed"

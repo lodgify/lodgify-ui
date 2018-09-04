@@ -1,10 +1,10 @@
 /**
  * @param  {Object}    validation
  * @param  {Function}  validation.getIsEmpty
- * @param  {Boolean}   validation.isRequired
+ * @param  {boolean}   validation.isRequired
  * @param  {Object}    [inputState={}]
- * @param  {Any}       [inputState.value]
- * @return {Boolean}
+ * @param  {any}       [inputState.value]
+ * @return {boolean}
  */
 export const getIsRequiredError = (
   { getIsEmpty, isRequired },

@@ -1,7 +1,7 @@
 /**
- * @param  {Boolean}  isResponsive
- * @param  {String}   width
- * @param  {String}   height
+ * @param  {boolean}  isResponsive
+ * @param  {string}   width
+ * @param  {string}   height
  * @return {Object}
  */
 export const getPlayerCss = (isResponsive, width, height) =>

@@ -16,8 +16,8 @@ import { getForgotPasswordFormMarkup } from './utils/getForgotPasswordFormMarkup
 
 /**
  * The standard widget for owner login.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   emailInputLabel,
   forgotPasswordEmailInputLabel,

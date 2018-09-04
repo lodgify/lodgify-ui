@@ -13,8 +13,8 @@ import { TextInput } from 'inputs/TextInput';
 
 /**
  * The standard widget for owner sign up.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   emailInputLabel,
   firstNameInputLabel,

@@ -26,8 +26,8 @@ import {
 
 /**
  * The standard widget for a user contact an owner.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   arrivalDateInputLabel,
   captchaInputImage,

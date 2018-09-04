@@ -15,8 +15,8 @@ import { getIsSubmitButtonDisabled } from './utils/getIsSubmitButtonDisabled';
 
 /**
  * A form displays a set of related user input fields in a structured way.
- * @extends {React.PureComponent}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {};
 
@@ -118,13 +118,13 @@ Component.propTypes = {
   validation: PropTypes.objectOf(
     PropTypes.shape({
       /** A function which checks whether the input is empty. Defaults to check for falsy value.
-       *  @param  {Any}     value
-       *  @return {Boolean}
+       *  @param  {any}     value
+       *  @return {boolean}
        */
       getIsEmpty: PropTypes.func,
       /** A function which checks `value` and returns `true` if valid, `false` if invalid.
-       *  @param  {Any}     value
-       *  @return {Boolean}
+       *  @param  {any}     value
+       *  @return {boolean}
        */
       getIsValid: PropTypes.func,
       /** An optional message to display if `getIsValid` returns `false`. */

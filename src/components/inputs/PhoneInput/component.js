@@ -9,17 +9,14 @@ import { getIconOrFlag } from './utils/getIconOrFlag';
 
 /**
  * A phone input allows a user to enter a phone number.
- * @extends {React.PureComponent}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
     country: undefined,
     value: '',
   };
 
-  /**
-   * Call `props.onChange` with the new value from state.
-   */
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
     const { name, onChange } = this.props;
@@ -27,9 +24,6 @@ export class Component extends PureComponent {
     !isEqual(prevValue, value) && onChange(name, value);
   }
 
-  /**
-   * Parse the value, format if possible and persist in component state.
-   */
   handleChange = (name, value) => {
     const { country, phone } = parseValue(value);
 

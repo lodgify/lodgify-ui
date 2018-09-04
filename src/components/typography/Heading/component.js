@@ -8,8 +8,8 @@ const SIZES = ['huge', 'large', 'medium', 'small'];
 
 /**
  * A heading identifies a block of content.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ children, size }) => (
   <Header as={`h${getHeadingNumber(SIZES, size)}`}>{children}</Header>
 );

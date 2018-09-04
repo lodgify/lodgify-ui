@@ -15,8 +15,8 @@ import { getMenuItemMarkup } from './utils/getMenuItemMarkup';
 /**
  * A footer displays navigation items, language and currency selectors,
  * social media links and contact information for a property.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   copyrightText,
   currencyOptions,

@@ -9,8 +9,8 @@ import { getFormattedAmenityItems } from './getFormattedAmenityItems';
 
 /**
  * @param  {Object}  category
- * @param  {Number}  index
- * @param  {Boolean} [isFullWidth = false]
+ * @param  {number}  index
+ * @param  {boolean} [isFullWidth=false]
  * @return {Object}
  */
 export const getCategoryMarkup = (category, index, isFullWidth = false) => (

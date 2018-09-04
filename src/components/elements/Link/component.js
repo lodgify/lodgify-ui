@@ -4,8 +4,8 @@ import { Button } from 'semantic-ui-react';
 
 /**
  * A link indicates a referred resource.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   children,
   isPositionedRight,

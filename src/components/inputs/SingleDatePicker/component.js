@@ -11,17 +11,14 @@ import { InputController } from 'inputs/InputController';
 
 /**
  * A single date picker lets a user pick a date.
- * @extends {React.PureComponent}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
     date: null,
     isFocused: null,
   };
 
-  /**
-   * Call `props.onChange` with the new date from state.
-   */
   componentDidUpdate = (prevProps, prevState) => {
     const { date: prevDate, isFocused: prevIsFocused } = prevState;
     const { date, isFocused } = this.state;
@@ -31,16 +28,10 @@ export class Component extends PureComponent {
     isBlurEvent(prevIsFocused, isFocused) && onBlur();
   };
 
-  /**
-   * Persist the focused input identifier in component state.
-   */
   handleFocusChange = ({ focused }) => {
     this.setState({ isFocused: focused });
   };
 
-  /**
-   * Persist the date value in component state.
-   */
   handleInputControllerChange = (name, date) => {
     this.setState({ date });
   };
@@ -115,7 +106,7 @@ Component.propTypes = {
   /**
    * A function called for each day to be displayed. Returning true blocks that day in the single date picker.
    * @param   {Moment}  day - The day to test.
-   * @returns {Boolean}     - Is the day blocked.
+   * @returns{boolean}     - Is the day blocked.
    */
   getIsDayBlocked: PropTypes.func,
   /** Is the single date picker in a valid state. */

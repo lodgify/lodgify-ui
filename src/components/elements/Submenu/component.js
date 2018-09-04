@@ -10,8 +10,8 @@ import { adaptOptions } from './utils/adaptOptions';
 
 /**
  * A submenu displays grouped navigation items.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   children,
   isMenuItem,

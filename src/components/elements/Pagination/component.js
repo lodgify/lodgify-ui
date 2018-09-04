@@ -6,8 +6,8 @@ import { nextItem, pageItem, prevItem } from './navigationMarkup';
 
 /**
  * A pagination control enables a user to navigate a set of items or views.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ onPageChange, startingPage, totalPages }) => (
   <Pagination
     boundaryRange={10}

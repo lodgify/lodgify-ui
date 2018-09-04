@@ -14,8 +14,8 @@ import { REVIEWS, SUBMIT_REVIEW } from 'utils/default-strings';
 
 /**
  * The standard widget for displaying a collection of reviews.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   headingText,
   reviews,

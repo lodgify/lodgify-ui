@@ -1,7 +1,7 @@
 /**
- * @param  {String} reviewerCategory
- * @param  {String} reviewerStayDate
- * @return {String}
+ * @param  {string} reviewerCategory
+ * @param  {string} reviewerStayDate
+ * @return {string}
  */
 export const getReviewerCategoryAndStayDateString = (
   reviewerCategory,

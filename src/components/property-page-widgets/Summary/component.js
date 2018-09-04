@@ -8,8 +8,8 @@ import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
 
 /**
  * The standard widget for displaying the summary details of a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   locationName,
   nightPrice,

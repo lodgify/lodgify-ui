@@ -13,16 +13,13 @@ import { getValue } from './utils/getValue';
 
 /**
  * Shared controller for input elements.
- * @extends {React.PureComponent}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
     value: '',
   };
 
-  /**
-   * Call `props.onChange` with the new value from state.
-   */
   componentDidUpdate(prevProps, { value: prevValue }) {
     const { value } = this.state;
     const { name, onChange } = this.props;
@@ -30,9 +27,6 @@ export class Component extends PureComponent {
     !isEqual(prevValue, value) && onChange(name, value);
   }
 
-  /**
-   * Persist the value in component state.
-   */
   handleChange = eventOrValue => {
     const value = getValue(eventOrValue);
 

@@ -1,8 +1,9 @@
 /**
- * @param  {Object[]} options
- * @param  {Boolean} hasImages
- * @param  {Boolean} hasLabel
- * @return {String|Number|null}
+ * @typedef {Object} null
+ * @param   {Object[]} options
+ * @param   {boolean} hasImages
+ * @param   {boolean} hasLabel
+ * @return  {string|number|null}
  */
 export const getDefaultValue = (options, hasImages, hasLabel) => {
   /**

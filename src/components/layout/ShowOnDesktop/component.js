@@ -8,9 +8,8 @@ import { Responsive } from 'semantic-ui-react';
  *
  * A ShowOnDesktop component controls which elements are rendered on devices
  * with a screen width of 600px or more
- *
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ children, parent, parentProps }) => (
   <Responsive as={parent} {...parentProps} minWidth={600}>
     {children}

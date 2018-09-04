@@ -1,7 +1,7 @@
 /**
- * @param  {String} reviewerName
- * @param  {String} reviewerLocation
- * @return {String}
+ * @param  {string} reviewerLocation
+ * @param  {string} reviewerName
+ * @return {string}
  */
 export const getReviewerNameAndLocationString = (
   reviewerLocation,
