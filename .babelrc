@@ -1,14 +1,14 @@
 {
   "env": {
     "production": {
-        "comments": false,
-        "ignore": "spec.js",
+      "comments": false,
+      "ignore": ["spec.js"]
     }
   },
-  "presets": [ "react", "env" ],
+  "presets": [ "@babel/react", "@babel/env" ],
   "plugins": [
-    "transform-object-rest-spread",
-    "transform-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
     ["module-resolver", {
       "root": ["./src"],
       "alias": {
@@ -20,7 +20,7 @@
         "media": "./src/components/media",
         "property-page-widgets": "./src/components/property-page-widgets",
         "typography": "./src/components/typography",
-        "utils": "./src/utils",
+        "utils": "./src/utils"
       }
     }]
   ]
