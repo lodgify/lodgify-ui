@@ -29,7 +29,7 @@ export const Component = ({
   propertyAddress,
   socialMediaLinks,
 }) => (
-  <div className="is-footer">
+  <footer>
     <div className="top-navigation">
       <Container as={Menu} borderless inverted stackable>
         {getAreNavigationItemsGrouped(navigationItems)
@@ -89,7 +89,7 @@ export const Component = ({
         )}
       </Container>
     </div>
-  </div>
+  </footer>
 );
 
 Component.displayName = 'Footer';

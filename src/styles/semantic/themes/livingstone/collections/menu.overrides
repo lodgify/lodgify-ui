@@ -44,6 +44,9 @@
       }
     }
   }
+}
+
+.ui.menu {
 
   /* Text Item */
 
@@ -285,7 +288,7 @@
 /* Sizes */
 
 /* Footer */
-.is-footer {
+footer {
 
   .top-navigation {
     background-color: @black;
@@ -330,6 +333,10 @@
   .bottom-navigation {
     margin: 0;
     padding: @footerMenuVerticalPadding @footerMenuHorizontalPadding;
+
+    > .ui.inverted.menu {
+      background-color: inherit;
+    }
 
     /* Menu Item */
     .menu .item {
