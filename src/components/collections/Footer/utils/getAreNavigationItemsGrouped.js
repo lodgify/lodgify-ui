@@ -2,7 +2,7 @@ import { size } from 'lodash';
 
 /**
  * @param  {Object[]} navigationItems
- * @return {Boolean}
+ * @return {boolean}
  */
 export const getAreNavigationItemsGrouped = navigationItems =>
   navigationItems.some(({ subItems }) => size(subItems));

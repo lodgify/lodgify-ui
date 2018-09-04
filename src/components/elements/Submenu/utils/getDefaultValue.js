@@ -1,7 +1,8 @@
 /**
- * @param  {String}   children
+ * @typedef {Object} null
+ * @param  {string}   children
  * @param  {Object[]} items
- * @return {String|null}
+ * @return {string|null}
  */
 export const getDefaultValue = (children, items) => {
   /**
@@ -13,5 +14,6 @@ export const getDefaultValue = (children, items) => {
   if (!children && items.length && items[0].value) {
     return items[0].value;
   }
+
   return null;
 };

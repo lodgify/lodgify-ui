@@ -5,11 +5,12 @@ import { Modal } from 'elements/Modal';
 import { TextInput } from 'inputs/TextInput';
 
 /**
- * @param {Function}  onForgotPasswordSubmit
- * @param {String}    forgotPasswordSubmitButtonText
- * @param {String}    forgotPasswordEmailInputLabel
- * @param {String}    forgotPasswordHeadingText
- * @param {String}    forgotPasswordModalTriggerText
+ * @param  {Function}  onForgotPasswordSubmit
+ * @param  {string}    forgotPasswordSubmitButtonText
+ * @param  {string}    forgotPasswordEmailInputLabel
+ * @param  {string}    forgotPasswordHeadingText
+ * @param  {string}    forgotPasswordModalTriggerText
+ * @param  {Object}    forgotPasswordValidation
  * @return {Object}
  */
 export const getForgotPasswordFormMarkup = (

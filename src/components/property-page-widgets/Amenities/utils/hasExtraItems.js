@@ -1,7 +1,7 @@
 /**
- * @param  {Any[]}    array
- * @param  {Boolean}  shouldCompareThree
- * @return {Boolean}
+ * @param  {any[]}    array
+ * @param  {boolean}  shouldCompareThree
+ * @return {boolean}
  */
 export const hasExtraItems = (array, shouldCompareThree) => {
   const numberToCompare = shouldCompareThree ? 3 : 5;

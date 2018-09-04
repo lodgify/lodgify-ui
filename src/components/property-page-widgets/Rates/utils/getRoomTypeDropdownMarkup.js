@@ -9,7 +9,7 @@ import { getStringWithColonSuffix } from './getStringWithColonSuffix';
 /**
  * @param {Object[]} options
  * @param {Function} onChange
- * @param {String}   roomTypeInputLabel
+ * @param {string}   roomTypeInputLabel
  * @return {Object}
  */
 export const getRoomTypeDropdownMarkup = (

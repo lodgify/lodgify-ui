@@ -7,8 +7,8 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 /**
  * A modal displays content that temporarily
  * blocks interactions with the main view of a page.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ children, isFullscreen, trigger }) => (
   <Modal
     closeIcon={<Icon name={ICON_NAMES.CLOSE} />}

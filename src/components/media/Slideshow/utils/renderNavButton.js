@@ -4,7 +4,7 @@ import { Button } from 'semantic-ui-react';
 import { Icon } from 'elements/Icon';
 
 /**
- * @param  {String} iconName
+ * @param  {string} iconName
  * @return {Function}
  */
 export const renderNavButton = iconName => (onClick, disabled) => (

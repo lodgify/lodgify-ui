@@ -10,7 +10,7 @@ import { getLinkMarkup } from './getLinkMarkup';
 
 /**
  * @param  {Object} props
- * @param  {Number} props.activeNavigationItemIndex
+ * @param  {number} props.activeNavigationItemIndex
  * @param  {Object[]} props.navigationItems
  * @param  {Object} props.primaryCTA
  * @return {Object}

@@ -6,8 +6,8 @@ import { SearchBar } from 'general-widgets/SearchBar';
 
 /**
  * The standard widget allowing a user to search availability for a specific property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   guestsOptions,
   searchButton,

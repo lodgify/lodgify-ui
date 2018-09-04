@@ -1,7 +1,7 @@
 /**
- *  @param {Number} guestsNumber
- *  @param {Number} bedroomsNumber
- *  @returns {String}
+ *  @param {number} guestsNumber
+ *  @param {number} bedroomsNumber
+ *  @returns {string}
  */
 export const getPropertyDescription = (guestsNumber, bedroomsNumber) =>
   `Guests: ${guestsNumber}${

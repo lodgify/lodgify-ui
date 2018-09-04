@@ -25,8 +25,8 @@ import 'react-dates/initialize';
 
 /**
  * The standard widget for displaying the availability of a room.
- * @extends {React.PureComponent}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 class Component extends PureComponent {
   state = {
     startDate: moment(),
@@ -188,7 +188,7 @@ Component.propTypes = {
   /**
    * A function that is passed to determine if the current date should be blocked, the function is passed a moment object
    * @param {Moment} momentObj
-   * @returns {Boolean}
+   * @returns{boolean}
    */
   getIsDayBlocked: PropTypes.func,
   /**

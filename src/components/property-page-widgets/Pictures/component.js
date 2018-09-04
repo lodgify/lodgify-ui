@@ -13,8 +13,8 @@ import { Link } from 'elements/Link';
 
 /**
  * The standard widget for displaying pictures of a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ headingText, linkText, pictures }) => (
   <Grid>
     <GridColumn width={12}>

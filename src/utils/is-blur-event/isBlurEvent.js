@@ -1,7 +1,8 @@
 /**
- * @param  {String|Boolean|null}  prevFocusedState
- * @param  {String|Boolean|null}  focusedState
- * @return {Boolean}
+ * @typedef {Object} null
+ * @param  {string|boolean|null}  prevFocusedState
+ * @param  {string|boolean|null}  focusedState
+ * @return {boolean}
  */
 export const isBlurEvent = (prevFocusedState, focusedState) =>
   !!prevFocusedState && !focusedState;

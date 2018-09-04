@@ -8,9 +8,8 @@ import { Grid } from 'semantic-ui-react';
  *
  * To customise how the Grid gets computed, override the @columnCount
  * definition of Semantic UI.
- *
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ areColumnsCentered, ...props }) => (
   <Grid {...props} centered={areColumnsCentered} />
 );

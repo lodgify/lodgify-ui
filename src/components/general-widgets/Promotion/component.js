@@ -17,8 +17,8 @@ import { Button } from 'elements/Button';
 
 /**
  * The Promotion component, used to display a discount code along with a discount amount
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   backgroundImage,
   discountAmount,

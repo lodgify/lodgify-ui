@@ -8,9 +8,8 @@ import { Responsive } from 'semantic-ui-react';
  *
  * A ShowOnMobile component controls which elements are rendered on devices
  * with a screen width of 599px or less
- *
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ children, parent, parentProps }) => (
   <Responsive as={parent} {...parentProps} maxWidth={599}>
     {children}

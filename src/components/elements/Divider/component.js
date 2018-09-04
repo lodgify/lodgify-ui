@@ -4,8 +4,8 @@ import { Divider } from 'semantic-ui-react';
 
 /**
  * A divider adds whitespace between other elements.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ hasLine }) => <Divider hidden={!hasLine} />;
 
 Component.displayName = 'Divider';

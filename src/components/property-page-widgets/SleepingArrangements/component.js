@@ -10,8 +10,8 @@ import { IconCard } from 'elements/IconCard';
 
 /**
  * The standard widget for displaying the sleeping arrangments for a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ headingText, sleepingArrangements }) => (
   <div>
     <Heading>{headingText}</Heading>

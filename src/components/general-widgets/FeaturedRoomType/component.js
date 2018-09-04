@@ -8,9 +8,8 @@ import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
 
 /**
  * The standard widget for featuring a room.
- * @returns {Object}
  */
-
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   bedsLabel,
   bedsNumber,

@@ -1,7 +1,8 @@
 /**
  * Format an url as a valid value for a css background-image statement.
- * @param  {String|null} imageUrl
- * @return {String|null}
+ * @typedef {Object} null
+ * @param   {string|null} imageUrl
+ * @return  {string|null}
  */
 export const getBackgroundImageUrl = imageUrl =>
   imageUrl ? `url(${imageUrl})` : null;

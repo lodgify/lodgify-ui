@@ -21,8 +21,8 @@ import { getRoomTypeDropdownMarkup } from './utils/getRoomTypeDropdownMarkup';
 
 /**
  * The standard widget for displaying the rates of a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   costPerExtraGuestLabel,
   currencyOptions,

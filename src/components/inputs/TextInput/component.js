@@ -5,8 +5,8 @@ import { InputController } from '../InputController';
 
 /**
  * A text input can get short text data from a user.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   error,
   isValid,

@@ -4,10 +4,10 @@ import { Menu } from 'semantic-ui-react';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 
 /**
- * @param  {String} text
- * @param  {String} href
- * @param  {Number} index
- * @param  {Number} activeNavigationItemIndex
+ * @param  {string} text
+ * @param  {string} href
+ * @param  {number} index
+ * @param  {number} activeNavigationItemIndex
  * @return {Object}
  */
 export const getLinkMarkup = (text, href, index, activeNavigationItemIndex) => (

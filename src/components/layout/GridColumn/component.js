@@ -5,9 +5,8 @@ import { Grid } from 'semantic-ui-react';
 /**
  * GridColumn is the Lodgify UI interface for the
  * Semantic UI Grid.Column.
- *
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ verticalAlignContent, ...props }) => (
   <Grid.Column {...props} verticalAlign={verticalAlignContent} />
 );

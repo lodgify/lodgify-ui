@@ -6,8 +6,8 @@ import { getTriggerMarkup } from './getTriggerMarkup';
 
 /**
  * A tooltip helps a user understand an element or some content.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ content, size }) => (
   <Popup
     color="grey"

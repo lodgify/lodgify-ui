@@ -1,7 +1,7 @@
 /**
- * @param {String} cost
- * @param {String} costPerExtraGuestLabel
- * @return {String}
+ * @param {string} cost
+ * @param {string} costPerExtraGuestLabel
+ * @return {string}
  */
 export const buildPricePerExtraGuestString = (cost, costPerExtraGuestLabel) =>
   `${cost} / ${costPerExtraGuestLabel}`;

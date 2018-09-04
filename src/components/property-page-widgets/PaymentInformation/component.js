@@ -24,8 +24,8 @@ import {
 
 /**
  * The standard widget for displaying the payment information of a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   cancellationPolicyHeadingText,
   cancellationPolicyText,

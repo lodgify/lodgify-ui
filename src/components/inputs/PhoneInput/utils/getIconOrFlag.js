@@ -9,7 +9,7 @@ import { VALID_FLAG_NAMES } from './validFlagNames';
 /**
  * If country code known, return an appropriate flag component.
  * Default to returning a phone icon.
- * @param  {String} country
+ * @param  {string} country
  * @return {Object}
  */
 export const getIconOrFlag = country => {

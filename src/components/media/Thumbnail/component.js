@@ -7,8 +7,8 @@ import { getBackgroundImageUrl } from 'utils/get-background-image-url';
 
 /**
  * A thumbnail displays a small image.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   alternativeText,
   imageUrl,

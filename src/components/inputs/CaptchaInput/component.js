@@ -6,8 +6,8 @@ import { TextInput } from 'inputs/TextInput';
 
 /**
  * A captcha input helps to ensure a user is a real human.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   error,
   image,

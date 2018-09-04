@@ -11,9 +11,8 @@ import { getDesktopMenuMarkup } from './utils/getDesktopMenuMarkup';
 /**
  * A header displays a logo, grouped navigation items
  * and an optional primary call to action.
- *
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 const Component = props => (
   <Menu borderless className="is-header" text>
     {getLogoMarkup(props.logoSrc, props.logoText)}

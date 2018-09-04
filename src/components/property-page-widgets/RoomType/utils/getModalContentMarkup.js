@@ -14,11 +14,11 @@ import { Slideshow } from 'media/Slideshow';
 /**
  * @param  {Object[]}    amenities
  * @param  {Function}    onClickCheckAvailability
- * @param  {String}      description
+ * @param  {string}      description
  * @param  {Object[]}    extraFeatures
  * @param  {Object[]}    features
- * @param  {String}      name
- * @param  {String}      nightPrice
+ * @param  {string}      name
+ * @param  {string}      nightPrice
  * @param  {Object[]}    slideShowImages
  * @return {Object}
  */

@@ -4,8 +4,8 @@ import { Menu, Image } from 'semantic-ui-react';
 import { Heading } from 'typography/Heading';
 
 /**
- * @param  {String} logoSrc
- * @param  {String} logoText
+ * @param  {string} logoSrc
+ * @param  {string} logoText
  * @return {Object}
  */
 export const getLogoMarkup = (logoSrc, logoText) => (

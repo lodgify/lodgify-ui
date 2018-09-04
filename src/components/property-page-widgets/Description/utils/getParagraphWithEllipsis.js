@@ -1,8 +1,8 @@
 import { getEllipsis } from './getEllipsis';
 
 /**
- * @param  {String} paragraph
- * @return {String}
+ * @param  {string} paragraph
+ * @return {string}
  */
 export const getParagraphWithEllipsis = paragraph =>
   `${paragraph}${getEllipsis(paragraph)}`;

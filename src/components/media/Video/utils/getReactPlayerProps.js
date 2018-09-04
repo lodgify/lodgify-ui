@@ -1,6 +1,6 @@
 /**
- * @param  {Boolean}  isResponsive
- * @param  {String}   videoSource
+ * @param  {boolean}  isResponsive
+ * @param  {string}   videoSource
  * @return {Object}
  */
 export const getReactPlayerProps = (isResponsive, videoSource) => ({
