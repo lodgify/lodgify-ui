@@ -15,7 +15,7 @@ import { getDesktopMenuMarkup } from './utils/getDesktopMenuMarkup';
  * @return {Object}
  */
 const Component = props => (
-  <Menu borderless className="is-header">
+  <Menu borderless className="is-header" text>
     {getLogoMarkup(props.logoSrc, props.logoText)}
     <Menu.Menu position="right">
       {props.isUserOnMobile

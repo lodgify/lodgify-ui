@@ -20,7 +20,6 @@ export { Tooltip } from './components/elements/Tooltip';
 // General Widgets
 export { CallMeBack } from './components/general-widgets/CallMeBack';
 export { Contact } from './components/general-widgets/Contact';
-export { Container } from './components/general-widgets/Container';
 export {
   FeaturedProperties,
 } from './components/general-widgets/FeaturedProperties';
@@ -53,6 +52,7 @@ export { TextInput } from './components/inputs/TextInput';
 export { Toggle } from './components/inputs/Toggle';
 
 // Layout
+export { Container } from './components/layout/Container';
 export { Grid } from './components/layout/Grid';
 export { GridColumn } from './components/layout/GridColumn';
 export { GridRow } from './components/layout/GridRow';

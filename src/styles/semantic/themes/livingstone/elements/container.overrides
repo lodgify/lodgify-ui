@@ -1,0 +1,31 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.container,
+.ui.grid > .row.container.ui {
+  padding: @computerPadding;
+
+  @media @tabletScreen {
+    padding: @mobilePadding;
+  }
+}
+
+.ui.grid {
+
+  > .row.container.ui {
+    max-width: @maxWidth !important; /* Need to use !important to override library value */
+
+    > .column {
+      padding: @gridColumnGutter;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

@@ -146,6 +146,7 @@
 
 @tinyScreen: ~"only screen and (max-width: @{largestTinyScreen})";
 @mobileScreen: ~"only screen and (max-width: @{largestMobileScreen})";
+@tabletScreen: ~"only screen and (max-width: @{tabletBreakpoint})";
 
 /*-------------------
       Site Colors
