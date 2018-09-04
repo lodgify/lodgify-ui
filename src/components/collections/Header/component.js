@@ -16,7 +16,7 @@ import { getDesktopMenuMarkup } from './utils/getDesktopMenuMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = props => (
   <header>
-    <Container as={Menu} borderless className="is-header" text>
+    <Container as={Menu} borderless text>
       {getLogoMarkup(props.logoSrc, props.logoText)}
       <Menu.Menu position="right">
         {props.isUserOnMobile

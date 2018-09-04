@@ -10,44 +10,6 @@
 
 .ui.menu {
 
-  /* Header */
-  &.is-header {
-
-    /* Menu Item */
-    .item {
-      color: @headerMenuItemTextColor;
-      margin: 0 @headerMenuItemHorizontalMargin;
-      padding: @headerMenuItemVerticalPadding 0;
-
-      @media @mobileScreen {
-        padding: @headerMenuItemMobileVerticalPadding 0;
-      }
-
-      &:hover {
-        color: @headerMenuItemTextColor;
-      }
-
-      &:first-child {
-        margin-left: @headerMenuHorizontalMargin;
-
-        @media @mobileScreen {
-          margin-left: @headerMenuMobileHorizontalMargin;
-        }
-      }
-
-      &:last-child {
-        margin-right: @headerMenuHorizontalMargin;
-
-        @media @mobileScreen {
-          margin-right: @headerMenuMobileHorizontalMargin;
-        }
-      }
-    }
-  }
-}
-
-.ui.menu {
-
   /* Text Item */
 
   /*--------------
@@ -109,36 +71,6 @@
   /* Pressed Item */
 
   /* Active Item */
-  /* stylelint-disable-next-line no-duplicate-selectors */
-  &.is-header {
-
-    .right.menu {
-
-      & > .item:not(.no-underline):after {
-        border-bottom: @activeItemUnderlineBorder;
-        bottom: @activeItemUnderlineBottomPosition;
-        content: '';
-        left: 0;
-        opacity: 0.2;
-        position: absolute;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: @activeItemUnderlineTransition;
-        width: 100%;
-
-        @media @mobileScreen {
-          border: none;
-        }
-      }
-
-      & > .active.item:after,
-      & > .underlined.item:after,
-      & > .item:hover:after {
-        opacity: 1;
-        transform: scaleX(1);
-      }
-    }
-  }
 
   /* Active Hovered Item */
 
@@ -286,6 +218,78 @@
 /* Resize large sizes */
 
 /* Sizes */
+
+/* Header */
+header > .ui.menu.text {
+
+  /* Menu Item */
+  .item {
+    margin: 0 @headerMenuItemHorizontalMargin;
+    padding: @headerMenuItemVerticalPadding 0;
+
+    &,
+    &:hover,
+    &.active {
+      color: @headerMenuItemTextColor;
+    }
+
+    @media @mobileScreen {
+      padding: @headerMenuItemMobileVerticalPadding 0;
+    }
+
+    &:first-child {
+      margin-left: @headerMenuHorizontalMargin;
+
+      @media @mobileScreen {
+        margin-left: @headerMenuMobileHorizontalMargin;
+      }
+    }
+
+    &:last-child {
+      margin-right: @headerMenuHorizontalMargin;
+
+      @media @mobileScreen {
+        margin-right: @headerMenuMobileHorizontalMargin;
+      }
+    }
+  }
+
+  /*--------------
+     States
+---------------*/
+
+  /* Active Item */
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  > .right.menu {
+
+    > .item:not(.no-underline):after {
+      border-bottom: @activeItemUnderlineBorder;
+      bottom: @activeItemUnderlineBottomPosition;
+      content: '';
+      left: 0;
+      opacity: 0.2;
+      position: absolute;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: @activeItemUnderlineTransition;
+      width: 100%;
+
+      @media @mobileScreen {
+        border: none;
+      }
+    }
+
+    > .active.item,
+    > .underlined.item,
+    > .item:hover {
+
+      &:after {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+  }
+}
 
 /* Footer */
 footer {
