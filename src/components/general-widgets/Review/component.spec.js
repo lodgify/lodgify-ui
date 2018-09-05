@@ -14,6 +14,7 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Quote } from 'elements/Quote';
 import { Subheading } from 'typography/Subheading';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
@@ -39,15 +40,22 @@ const getReview = additionalProps =>
   shallow(<Review {...requiredProps} {...additionalProps} />);
 
 describe('<Review />', () => {
-  it('should render a single Semantic UI `Card` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getReview();
 
-    expectComponentToBe(wrapper, Card);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Card` as its only children', () => {
+      const wrapper = getReview();
+
+      expectComponentToHaveChildren(wrapper, Card);
+    });
   });
 
   describe('the first `Card` component', () => {
     it('should have the right props', () => {
-      const wrapper = getReview();
+      const wrapper = getReview().find(Card);
 
       expectComponentToHaveProps(wrapper, {
         fluid: true,
@@ -55,7 +63,7 @@ describe('<Review />', () => {
     });
 
     it('should render the right children', () => {
-      const wrapper = getReview();
+      const wrapper = getReview().find(Card);
 
       expectComponentToHaveChildren(wrapper, Card.Content);
     });
