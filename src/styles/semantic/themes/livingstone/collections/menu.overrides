@@ -238,19 +238,11 @@ header > .ui.menu.text {
     }
 
     &:first-child {
-      margin-left: @headerMenuHorizontalMargin;
-
-      @media @mobileScreen {
-        margin-left: @headerMenuMobileHorizontalMargin;
-      }
+      margin-left: 0;
     }
 
     &:last-child {
-      margin-right: @headerMenuHorizontalMargin;
-
-      @media @mobileScreen {
-        margin-right: @headerMenuMobileHorizontalMargin;
-      }
+      margin-right: 0;
     }
   }
 
