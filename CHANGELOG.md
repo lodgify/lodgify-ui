@@ -1,3 +1,10 @@
+# [1.49.0](https://github.com/lodgify/lodgify-ui/compare/v1.48.0...v1.49.0) (2018-09-05)
+
+
+### Features
+
+* **Footer:** update colour of icon text ([2255430](https://github.com/lodgify/lodgify-ui/commit/2255430))
+
 # [1.48.0](https://github.com/lodgify/lodgify-ui/compare/v1.47.0...v1.48.0) (2018-09-04)
 
 
