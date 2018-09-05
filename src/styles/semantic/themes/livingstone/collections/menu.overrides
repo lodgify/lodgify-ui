@@ -303,6 +303,13 @@ footer {
       /* Menu Item */
       .item {
         color: @footerBottomMenuColor;
+
+        .icon {
+
+          p {
+            color: inherit;
+          }
+        }
       }
 
       .right.menu {
