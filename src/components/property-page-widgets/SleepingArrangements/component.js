@@ -7,13 +7,14 @@ import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { IconCard } from 'elements/IconCard';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying the sleeping arrangments for a property.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ headingText, sleepingArrangements }) => (
-  <div>
+  <VerticalGutters>
     <Heading>{headingText}</Heading>
     <Grid>
       {sleepingArrangements.map(({ iconName, label }, index) => (
@@ -27,7 +28,7 @@ export const Component = ({ headingText, sleepingArrangements }) => (
         </GridColumn>
       ))}
     </Grid>
-  </div>
+  </VerticalGutters>
 );
 
 Component.displayName = 'SleepingArrangements';
