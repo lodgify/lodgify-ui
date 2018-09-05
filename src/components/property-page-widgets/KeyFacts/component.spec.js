@@ -14,6 +14,7 @@ import { Heading } from 'typography/Heading';
 import { IconCard } from 'elements/IconCard';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { keyFacts } from './mock-data/keyFacts';
 import { Component as KeyFacts } from './component';
@@ -21,15 +22,22 @@ import { Component as KeyFacts } from './component';
 const getKeyFacts = () => shallow(<KeyFacts keyFacts={keyFacts} />);
 
 describe('<KeyFacts />', () => {
-  it('should render a single Lodgify UI `GridColumn` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getKeyFacts();
 
-    expectComponentToBe(wrapper, Grid);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Grid` as its only children', () => {
+      const wrapper = getKeyFacts();
+
+      expectComponentToHaveChildren(wrapper, Grid);
+    });
   });
 
   describe('the `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getKeyFacts();
+      const wrapper = getKeyFacts().find(Grid);
 
       expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
     });
