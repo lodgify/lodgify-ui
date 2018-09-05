@@ -9,9 +9,9 @@ import { Paragraph } from 'typography/Paragraph';
 import { getParagraphWithEllipsis } from './getParagraphWithEllipsis';
 
 /**
- * @param  {String} paragraphText
- * @param  {String} descriptionText
- * @param  {String} extraDescriptionText
+ * @param  {string} paragraphText
+ * @param  {string} descriptionText
+ * @param  {string} extraDescriptionText
  * @return {Object}
  */
 export const formatParagraphWithModal = (

@@ -9,8 +9,8 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 
 /**
  * The standard widget for displaying a list of featured properties.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ featuredProperties, headingText }) => (
   <Grid>
     {headingText && (

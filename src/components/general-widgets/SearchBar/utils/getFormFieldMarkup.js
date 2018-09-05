@@ -8,14 +8,14 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
 
 /**
  * @param  {Object}   props
- * @param  {Boolean}  props.isShowingSummary
- * @param  {Boolean}  props.isShowingLocationDropdown
+ * @param  {boolean}  props.isShowingSummary
+ * @param  {boolean}  props.isShowingLocationDropdown
  * @param  {Function} props.getIsDayBlocked
  * @param  {Object[]} props.locationOptions
  * @param  {Object[]} props.guestsOptions
  * @param  {Node}     props.searchButton
  * @param  {Function} onDatePickerChange
- * @param  {Boolean}  areColumnsStacked
+ * @param  {boolean}  areColumnsStacked
  * @return {Object}
  */
 export const getFormFieldMarkup = (

@@ -1,3 +1,17 @@
+# [1.48.0](https://github.com/lodgify/lodgify-ui/compare/v1.47.0...v1.48.0) (2018-09-04)
+
+
+### Features
+
+* **VerticalGutters:** implement component and its unit test ([70614db](https://github.com/lodgify/lodgify-ui/commit/70614db))
+
+# [1.47.0](https://github.com/lodgify/lodgify-ui/compare/v1.46.3...v1.47.0) (2018-09-04)
+
+
+### Features
+
+* **Container:** import semantic component and add overrides ([5b02d11](https://github.com/lodgify/lodgify-ui/commit/5b02d11))
+
 ## [1.46.3](https://github.com/lodgify/lodgify-ui/compare/v1.46.2...v1.46.3) (2018-08-31)
 
 

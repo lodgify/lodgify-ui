@@ -22,13 +22,24 @@ describe('<Divider />', () => {
     it('should get the right props', () => {
       const wrapper = getDivider();
 
-      expectComponentToHaveProps(wrapper, { hidden: true });
+      expectComponentToHaveProps(wrapper, {
+        hidden: true,
+      });
     });
 
     it('should get `props.hidden` as false if the parent `props.hasLine` is true', () => {
       const wrapper = getDivider({ hasLine: true });
 
       expectComponentToHaveProps(wrapper, { hidden: false });
+    });
+
+    it('should get `props.section` as true if size equals large ', () => {
+      const wrapper = getDivider({ size: 'large' });
+
+      expectComponentToHaveProps(wrapper, {
+        hidden: true,
+        section: true,
+      });
     });
   });
 

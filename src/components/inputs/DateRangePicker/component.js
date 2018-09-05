@@ -16,8 +16,8 @@ import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 
 /**
  * A date range picker lets a user pick a date range.
- * @extends {React.PureComponent}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 class Component extends PureComponent {
   state = {
     endDate: null,
@@ -25,9 +25,6 @@ class Component extends PureComponent {
     startDate: null,
   };
 
-  /**
-   * Call `props.onChange` with the new dates from state.
-   */
   componentDidUpdate = (prevProps, prevState) => {
     const prevDates = pickDatesFromState(prevState);
     const dates = pickDatesFromState(this.state);
@@ -39,16 +36,10 @@ class Component extends PureComponent {
     isBlurEvent(prevFocusedInput, focusedInput) && onBlur();
   };
 
-  /**
-   * Persist the focused input identifier in component state.
-   */
   handleFocusChange = focusedInput => {
     this.setState({ focusedInput });
   };
 
-  /**
-   * Persist the date values in component state.
-   */
   handleInputControllerChange = (name, value) => {
     this.setState(value);
   };
@@ -135,7 +126,7 @@ Component.propTypes = {
   /**
    * A function called for each day to be displayed. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
-   * @returns {Boolean}     - Is the day blocked.
+   * @returns{boolean}     - Is the day blocked.
    */
   getIsDayBlocked: PropTypes.func,
   /** Is the date range picker in a valid state. */

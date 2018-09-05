@@ -21,8 +21,8 @@ import { getModalContentMarkup } from './utils/getModalContentMarkup';
 
 /**
  * The standard widget for displaying a room type in the context of a property page.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
   amenities,
   onClickCheckAvailability,

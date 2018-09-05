@@ -9,6 +9,7 @@ import { adaptCoordinates } from './utils/adaptCoordinates';
  * Canonical implementation for react-google-maps.
  * See https://tomchentw.github.io/react-google-maps/#usage--configuration
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   isShowingExactLocation,
   isShowingApproximateLocation,

@@ -8,8 +8,8 @@ import { GOOGLE_MAPS_API_KEY } from './constants';
 
 /**
  * A map displays a location.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   height,
   isShowingExactLocation,

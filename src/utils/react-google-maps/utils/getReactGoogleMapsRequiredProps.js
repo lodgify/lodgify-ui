@@ -3,10 +3,10 @@ import React from 'react';
 /**
  * Returns props predicated by react-google-maps
  * See https://tomchentw.github.io/react-google-maps/#usage--configuration
- * @param  {String} apiKey
- * @param  {Object} containerElement
- * @param  {String} height
  * @param  {Object} props
+ * @param  {string} props.apiKey
+ * @param  {Object} props.containerElement
+ * @param  {string} props.height
  * @return {Object}
  */
 export const getReactGoogleMapsRequiredProps = ({

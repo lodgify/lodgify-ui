@@ -17,8 +17,8 @@ import { isDescriptionDisplayingWithEllipsis } from './utils/isDescriptionDispla
 
 /**
  * The standard widget for displaying the description of a property.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   descriptionText,
   extraDescriptionText,

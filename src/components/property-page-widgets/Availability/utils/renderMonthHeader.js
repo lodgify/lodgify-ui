@@ -21,9 +21,10 @@ const buildWeekDayMappingMarkup = () => (
 );
 
 /**
- * @param  {Object} header
- * @param  {Moment} header.month
- * @return {Object}
+ * @typedef {Object} Moment
+ * @param   {Object} header
+ * @param   {Moment} header.month
+ * @return  {Object}
  */
 export const renderMonthHeader = ({ month }) => (
   <div className="CalendarMonth_caption">

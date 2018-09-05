@@ -1,6 +1,6 @@
 /**
- * @param  {Number} latitude
- * @param  {Number} longitude
+ * @param  {number} latitude
+ * @param  {number} longitude
  * @return {Object}
  */
 export const adaptCoordinates = (latitude, longitude) => ({

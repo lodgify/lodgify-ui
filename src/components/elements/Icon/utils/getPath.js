@@ -1,9 +1,9 @@
 import { PATH_DESCRIPTIONS } from './pathDescriptions';
 
 /**
- * @param  {String} name
- * @param  {String} path
- * @return {String}
+ * @param  {string} name
+ * @param  {string} path
+ * @return {string}
  */
 export const getPath = (name, path) =>
   // 1. If a named path exists in PATH_DESCRIPTIONS, return it.

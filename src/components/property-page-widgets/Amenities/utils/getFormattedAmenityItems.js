@@ -1,8 +1,8 @@
 import { AND } from 'utils/default-strings';
 
 /**
- * @param  {String[]} items
- * @return {String[]}
+ * @param  {string[]} items
+ * @return {string[]}
  */
 export const getFormattedAmenityItems = items =>
   items.map((item, index) => {

@@ -4,8 +4,8 @@ import { Label } from 'semantic-ui-react';
 
 /**
  * Error message for use with input elements
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ errorMessage }) => (
   <Label color="red" pointing="below">
     {errorMessage}

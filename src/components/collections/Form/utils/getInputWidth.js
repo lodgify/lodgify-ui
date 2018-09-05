@@ -2,7 +2,7 @@ import { get } from 'lodash';
 
 /**
  * Get the width prop from the input.
- * @param  {String|Object} input
- * @return {String|undefined}
+ * @param  {string|Object} input
+ * @return {string|undefined}
  */
 export const getInputWidth = input => get(input, ['props', 'width']);

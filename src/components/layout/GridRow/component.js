@@ -5,9 +5,8 @@ import { Grid } from 'semantic-ui-react';
 /**
  * GridRow is the Lodgify UI interface for the
  * Semantic UI Grid.Row.
- *
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ horizontalAlignContent, ...props }) => (
   <Grid.Row {...props} textAlign={horizontalAlignContent} />
 );

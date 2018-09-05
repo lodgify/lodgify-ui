@@ -9,8 +9,8 @@ import { getPath } from './utils/getPath';
 
 /**
  * An icon is a glyph used to represent something else.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   color,
   hasBorder,

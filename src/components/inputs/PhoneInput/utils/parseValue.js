@@ -2,7 +2,7 @@ import { parse, format } from 'libphonenumber-js';
 
 /**
  * Parse country code and number format from value.
- * @param  {String} value
+ * @param  {string} value
  * @return {Object}
  */
 export const parseValue = value => {

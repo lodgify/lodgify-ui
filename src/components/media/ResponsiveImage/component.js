@@ -13,8 +13,8 @@ import { Paragraph } from 'typography/Paragraph';
 
 /**
  * The standard widget for displaying an image.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   alternativeText,
   className,

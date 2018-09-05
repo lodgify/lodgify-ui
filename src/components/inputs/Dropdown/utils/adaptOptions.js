@@ -7,7 +7,7 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
  * If one or more options has an image,
  * modify the text property to include the image.
  * @param  {Object[]} options
- * @param  {Boolean} hasImages
+ * @param  {boolean} hasImages
  * @return {Object[]}
  */
 export const adaptOptions = (options, hasImages) => {

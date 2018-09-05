@@ -19,8 +19,8 @@ import { getStringWithColonSuffix } from './utils/getStringWithColonSuffix';
 
 /**
  * The standard widget for displaying the property host information.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   avatarUrl,
   contactInformationHeadingText,

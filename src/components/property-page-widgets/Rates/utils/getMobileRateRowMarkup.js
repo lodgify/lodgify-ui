@@ -5,9 +5,9 @@ import { GridRow } from 'layout/GridRow';
 import { Paragraph } from 'typography/Paragraph';
 
 /**
- * @param {Object} rateCategory
- * @param {String[]} rateHeadings
- * @param {String} key
+ * @param  {Object} rate
+ * @param  {string} rateHeading
+ * @param  {string} key
  * @return {Object}
  */
 export const getMobileRateRowMarkup = (rate, rateHeading, key) => (

@@ -1,9 +1,9 @@
 /**
- *  @param {String} guestsLabel
- *  @param {Number} guestsNumber
- *  @param {String} bedsLabel
- *  @param {Number} bedsNumber
- *  @returns {String}
+ *  @param {string} guestsLabel
+ *  @param {number} guestsNumber
+ *  @param {string} bedsLabel
+ *  @param {number} bedsNumber
+ *  @returns {string}
  */
 export const getRoomTypeDescription = (
   guestsLabel,

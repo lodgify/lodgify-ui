@@ -13,9 +13,9 @@ import { getLinkMarkup } from './getLinkMarkup';
 
 /**
  * @param  {Object} props
- * @param  {Number} props.activeNavigationItemIndex
- * @param  {String} props.logoSrc
- * @param  {String} props.logoText
+ * @param  {number} props.activeNavigationItemIndex
+ * @param  {string} props.logoSrc
+ * @param  {string} props.logoText
  * @param  {Object[]} props.navigationItems
  * @param  {Object[]} props.searchBarGuestsOptions
  * @param  {Object[]} props.searchBarLocationOptions

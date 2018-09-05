@@ -10,8 +10,8 @@ import { getQuoteSource } from './utils/getQuoteSource';
 
 /**
  * A quote displays text with indentation and a left border.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ quoteDateTime, quoteSource, quoteText }) => (
   <blockquote className="ui quote">
     <Grid>

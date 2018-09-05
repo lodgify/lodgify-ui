@@ -14,8 +14,8 @@ import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLoca
 
 /**
  * The standard widget for displaying a review.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   ratingNumber,
   reviewerCategory,

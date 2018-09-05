@@ -7,8 +7,8 @@ import { Icon } from 'elements/Icon';
 
 /**
  * A button indicates a possible user action.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   children,
   isDisabled,

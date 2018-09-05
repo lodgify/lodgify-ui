@@ -8,8 +8,8 @@ import { getTextAlign } from './utils/getTextAlign';
 
 /**
  * Table is the Lodgify UI interface for the Semantic UI Table.
- * @returns {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ tableHeadings, tableBody, tableId }) => (
   <Table basic="very" padded striped>
     <Table.Header>

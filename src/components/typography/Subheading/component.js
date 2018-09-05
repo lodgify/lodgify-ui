@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 /**
  * A subheading provides concise information about a block of content.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ children }) => (
   <span className="ui sub header">{children}</span>
 );

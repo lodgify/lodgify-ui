@@ -4,9 +4,10 @@ import { Form } from 'semantic-ui-react';
 import { getClonedInput } from './getClonedInput';
 
 /**
- * @param  {Boolean|String|Object}  child
+ * @typedef {Object} null
+ * @param  {boolean|string|null}  child
  * @param  {Object}                 parent
- * @return {Boolean|Object}
+ * @return {boolean|null}
  */
 export const getFormChild = (child, parent) => {
   if (!child) return child;

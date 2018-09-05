@@ -7,6 +7,7 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Submenu } from 'elements/Submenu';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Divider } from 'elements/Divider';
+import { Container } from 'layout/Container';
 
 import { getAreNavigationItemsGrouped } from './utils/getAreNavigationItemsGrouped';
 import { getGroupedNavigationItems } from './utils/getGroupedNavigationItems';
@@ -15,8 +16,8 @@ import { getMenuItemMarkup } from './utils/getMenuItemMarkup';
 /**
  * A footer displays navigation items, language and currency selectors,
  * social media links and contact information for a property.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   copyrightText,
   currencyOptions,
@@ -28,57 +29,67 @@ export const Component = ({
   propertyAddress,
   socialMediaLinks,
 }) => (
-  <div className="is-footer">
-    <Menu borderless inverted stackable>
-      {getAreNavigationItemsGrouped(navigationItems)
-        ? getGroupedNavigationItems(navigationItems).map(
-            ({ text, subItems }, index) => (
-              <Menu.Item
-                key={buildKeyFromStrings(text || subItems[0].text, index)}
-              >
-                <Menu.Menu>
-                  {text && <Menu.Header>{toUpper(text)}</Menu.Header>}
-                  {subItems.map(getMenuItemMarkup)}
-                </Menu.Menu>
-              </Menu.Item>
+  <footer>
+    <div className="top-navigation">
+      <Container as={Menu} borderless inverted stackable>
+        {getAreNavigationItemsGrouped(navigationItems)
+          ? getGroupedNavigationItems(navigationItems).map(
+              ({ text, subItems }, index) => (
+                <Menu.Item
+                  key={buildKeyFromStrings(text || subItems[0].text, index)}
+                >
+                  <Menu.Menu>
+                    {text && <Menu.Header>{toUpper(text)}</Menu.Header>}
+                    {subItems.map(getMenuItemMarkup)}
+                  </Menu.Menu>
+                </Menu.Item>
+              )
             )
-          )
-        : navigationItems.map(getMenuItemMarkup)}
-    </Menu>
-    <Menu borderless color="grey" inverted stackable>
-      <Menu.Item>
-        <Submenu
-          items={languageOptions}
-          name="language"
-          onChange={onChangeLanguage}
-          willOpenAbove
-        />
-      </Menu.Item>
-      <Menu.Item>
-        <Submenu
-          items={currencyOptions}
-          name="currency"
-          onChange={onChangeCurrency}
-          willOpenAbove
-        />
-      </Menu.Item>
-      <Menu.Item>
-        <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
-      </Menu.Item>
-      {!!socialMediaLinks.length && (
-        <Menu.Menu position="right">
-          {socialMediaLinks.map(({ href, iconName, iconPath }, index) => (
-            <Menu.Item href={href} key={buildKeyFromStrings(href, index)} link>
-              <Icon name={iconName} path={iconPath} />
-            </Menu.Item>
-          ))}
-        </Menu.Menu>
-      )}
-      <Divider hasLine />
-      <Menu.Item>{propertyAddress}</Menu.Item>
-      {copyrightText && <Menu.Item position="right">{copyrightText}</Menu.Item>}
-    </Menu>
-  </div>
+          : navigationItems.map(getMenuItemMarkup)}
+      </Container>
+    </div>
+    <div className="bottom-navigation">
+      <Container as={Menu} borderless inverted stackable>
+        <Menu.Item>
+          <Submenu
+            items={languageOptions}
+            name="language"
+            onChange={onChangeLanguage}
+            willOpenAbove
+          />
+        </Menu.Item>
+        <Menu.Item>
+          <Submenu
+            items={currencyOptions}
+            name="currency"
+            onChange={onChangeCurrency}
+            willOpenAbove
+          />
+        </Menu.Item>
+        <Menu.Item>
+          <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
+        </Menu.Item>
+        {!!socialMediaLinks.length && (
+          <Menu.Menu position="right">
+            {socialMediaLinks.map(({ href, iconName, iconPath }, index) => (
+              <Menu.Item
+                href={href}
+                key={buildKeyFromStrings(href, index)}
+                link
+              >
+                <Icon name={iconName} path={iconPath} />
+              </Menu.Item>
+            ))}
+          </Menu.Menu>
+        )}
+        <Divider hasLine />
+        <Menu.Item>{propertyAddress}</Menu.Item>
+        {copyrightText && (
+          <Menu.Item position="right">{copyrightText}</Menu.Item>
+        )}
+      </Container>
+    </div>
+  </footer>
 );
 
 Component.displayName = 'Footer';

@@ -10,8 +10,8 @@ import { Paragraph } from 'typography/Paragraph';
 
 /**
  * An icon card displays a large icon isolated on a card.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   isDisabled,
   isFilled,

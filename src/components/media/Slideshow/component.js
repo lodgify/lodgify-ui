@@ -11,8 +11,8 @@ import { renderNavButton } from './utils/renderNavButton';
 
 /**
  * A slideshow displays a series of images.
- * @return {Object}
  */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   hasShadow,
   headingText,
