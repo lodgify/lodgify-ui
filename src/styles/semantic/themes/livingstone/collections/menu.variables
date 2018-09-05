@@ -22,6 +22,7 @@
 @footerMenuItemVerticalPadding: @8px;
 @footerMenuItemHorizontalPadding: @35px;
 
+@footerBottomBackground: @greyEight;
 @footerBottomMenuColor: @greySix;
 
 /* Divider */
@@ -157,14 +158,14 @@
 ---------------*/
 
 /* Inverted */
+@invertedBottomBackground: @footerBottomBackground;
+@invertedBottomMenuColor: @footerBottomMenuColor;
 
 /* Inverted Sub Menu */
 
 /* Inverted Hover */
 @invertedHoverBackground: @invertedBackground;
 @invertedHoverColor: @invertedItemTextColor;
-
-@footerBottomBackground: @greyEight;
 
 /* Pressed */
 
