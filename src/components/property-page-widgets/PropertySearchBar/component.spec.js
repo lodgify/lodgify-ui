@@ -1,10 +1,14 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Form } from 'semantic-ui-react';
-import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
+import {
+  expectComponentToBe,
+  expectComponentToHaveChildren,
+} from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Button } from 'elements/Button';
 import { SearchBar } from 'general-widgets/SearchBar';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as PropertySearchBar } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
@@ -20,10 +24,17 @@ const getPropertySearchBar = props =>
 const getSearchBar = props => getPropertySearchBar(props).find(SearchBar);
 
 describe('<PropertySearchBar />', () => {
-  it('should render a single Lodgify UI `SearchBar` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getPropertySearchBar();
 
-    expectComponentToBe(wrapper, SearchBar);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+  describe('the `VerticalGutters` component', () => {
+    it('should have `SearchBar` as its only children', () => {
+      const wrapper = getPropertySearchBar();
+
+      expectComponentToHaveChildren(wrapper, SearchBar);
+    });
   });
 
   describe('the `SearchBar` component', () => {
