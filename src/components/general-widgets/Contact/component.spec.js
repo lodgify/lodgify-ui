@@ -29,6 +29,7 @@ import {
   SECURITY_CODE,
   SEND,
 } from 'utils/default-strings';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { roomOptions, propertyOptions } from './mock-data/options';
 import { Component as Contact } from './component';
@@ -40,10 +41,18 @@ const getContact = extraProps =>
 const getForm = extraProps => getContact(extraProps).find(Form);
 
 describe('<Contact />', () => {
-  it('should render a single Lodgify UI `Form` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getContact();
 
-    expectComponentToBe(wrapper, Form);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Form` as its only children', () => {
+      const wrapper = getContact();
+
+      expectComponentToHaveChildren(wrapper, Form);
+    });
   });
 
   describe('the `Form` component', () => {
