@@ -16,6 +16,7 @@ import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getParagraphWithEllipsis } from './utils/getParagraphWithEllipsis';
 import {
@@ -41,15 +42,23 @@ const getDescription = extraProps =>
   shallow(<Description {...props} {...extraProps} />);
 
 describe('<Description />', () => {
-  it('should render a single Lodgify UI `Grid` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getDescription();
 
-    expectComponentToBe(wrapper, Grid);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Grid` as its only children', () => {
+      const wrapper = getDescription();
+
+      expectComponentToHaveChildren(wrapper, Grid);
+    });
   });
 
   describe('the first `Grid` component', () => {
     it('should have the right props', () => {
-      const wrapper = getDescription();
+      const wrapper = getDescription().find(Grid);
 
       expectComponentToHaveProps(wrapper, {
         columns: 1,
@@ -57,7 +66,7 @@ describe('<Description />', () => {
     });
 
     it('should render the right children', () => {
-      const wrapper = getDescription();
+      const wrapper = getDescription().find(Grid);
 
       expectComponentToHaveChildren(
         wrapper,
