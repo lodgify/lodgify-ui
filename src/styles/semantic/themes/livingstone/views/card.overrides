@@ -87,9 +87,10 @@
 
   /* Featured */
   &.has-featured {
+    height: @featuredHeight;
 
     img.ui.image {
-      height: @featuredImageHeight;
+      flex-grow: @featuredImageFlexGrow;
     }
   }
 
