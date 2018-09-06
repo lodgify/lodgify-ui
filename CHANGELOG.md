@@ -1,3 +1,10 @@
+## [1.49.2](https://github.com/lodgify/lodgify-ui/compare/v1.49.1...v1.49.2) (2018-09-06)
+
+
+### Bug Fixes
+
+* **card:** fix height of featured cards ([f553d72](https://github.com/lodgify/lodgify-ui/commit/f553d72))
+
 ## [1.49.1](https://github.com/lodgify/lodgify-ui/compare/v1.49.0...v1.49.1) (2018-09-05)
 
 
