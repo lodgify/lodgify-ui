@@ -15,6 +15,7 @@ import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { twoAmenities, sixAmenities } from './mock-data/amenities';
 import { Component as Amenities } from './component';
@@ -30,17 +31,22 @@ const getAmenities = (props = {}) =>
   );
 
 describe('<Amenities />', () => {
-  describe('the `Amenities` component', () => {
-    it('should be a Lodgify UI `Grid`', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
+    const wrapper = getAmenities();
+
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Grid` as its only children', () => {
       const wrapper = getAmenities();
 
-      expectComponentToBe(wrapper, Grid);
+      expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
   describe('the `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getAmenities();
+      const wrapper = getAmenities().find(Grid);
 
       expectComponentToHaveChildren(
         wrapper,
@@ -86,7 +92,9 @@ describe('<Amenities />', () => {
 
     describe('the `Grid` component', () => {
       it('should render the right children', () => {
-        const wrapper = getAmenitiesWithSixCategories();
+        const wrapper = getAmenitiesWithSixCategories()
+          .find(Grid)
+          .at(0);
 
         expectComponentToHaveChildren(
           wrapper,

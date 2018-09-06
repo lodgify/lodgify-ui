@@ -15,6 +15,7 @@ import { Heading } from 'typography/Heading';
 import { Slideshow } from 'media/Slideshow';
 import { withResponsive } from 'utils/with-responsive';
 import { getNightPriceMarkup } from 'utils/get-night-price-markup';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getRoomFeaturesMarkup } from './utils/getRoomFeaturesMarkup';
 import { getModalContentMarkup } from './utils/getModalContentMarkup';
@@ -34,60 +35,41 @@ const Component = ({
   nightPrice,
   slideShowImages,
 }) => (
-  <Card fluid>
-    <Grid>
-      <GridRow>
-        <GridColumn computer={4} mobile={12} verticalAlignContent={null}>
-          <Slideshow
-            hasShadow={false}
-            images={slideShowImages}
-            isRounded={false}
-            isShowingBulletNavigation={false}
-            isStretched
-          />
-        </GridColumn>
-        <GridColumn computer={8} mobile={12}>
-          <Grid padded>
-            <GridColumn computer={12} floated="left" mobile={10}>
-              <Heading>{name}</Heading>
-            </GridColumn>
-            <GridColumn
-              only="mobile"
-              textAlign="right"
-              verticalAlignContent="middle"
-              width={2}
-            >
-              <Modal
-                trigger={
-                  <Icon
-                    color="yellow"
-                    isCircular
-                    isColorInverted
-                    name={ICON_NAMES.INFO}
-                    size="small"
-                  />
-                }
-              >
-                {getModalContentMarkup(
-                  amenities,
-                  onClickCheckAvailability,
-                  description,
-                  extraFeatures,
-                  features,
-                  name,
-                  nightPrice,
-                  slideShowImages
-                )}
-              </Modal>
-            </GridColumn>
-            {getRoomFeaturesMarkup(isUserOnMobile, features)}
-            <GridRow>
+  <VerticalGutters>
+    <Card fluid>
+      <Grid>
+        <GridRow>
+          <GridColumn computer={4} mobile={12} verticalAlignContent={null}>
+            <Slideshow
+              hasShadow={false}
+              images={slideShowImages}
+              isRounded={false}
+              isShowingBulletNavigation={false}
+              isStretched
+            />
+          </GridColumn>
+          <GridColumn computer={8} mobile={12}>
+            <Grid padded>
+              <GridColumn computer={12} floated="left" mobile={10}>
+                <Heading>{name}</Heading>
+              </GridColumn>
               <GridColumn
-                only="tablet computer"
-                verticalAlignContent="bottom"
-                width={4}
+                only="mobile"
+                textAlign="right"
+                verticalAlignContent="middle"
+                width={2}
               >
-                <Modal trigger={<Link>More Info</Link>}>
+                <Modal
+                  trigger={
+                    <Icon
+                      color="yellow"
+                      isCircular
+                      isColorInverted
+                      name={ICON_NAMES.INFO}
+                      size="small"
+                    />
+                  }
+                >
                   {getModalContentMarkup(
                     amenities,
                     onClickCheckAvailability,
@@ -100,30 +82,51 @@ const Component = ({
                   )}
                 </Modal>
               </GridColumn>
-              <GridColumn
-                textAlign={isUserOnMobile ? 'left' : 'right'}
-                width={8}
-              >
-                <Card.Description>
-                  {getNightPriceMarkup(nightPrice)}
-                </Card.Description>
-                <ShowOnMobile>
-                  <Divider />
-                </ShowOnMobile>
-                <Button
-                  isPositionedRight={isUserOnMobile === false}
-                  isRounded
-                  onClick={onClickCheckAvailability}
+              {getRoomFeaturesMarkup(isUserOnMobile, features)}
+              <GridRow>
+                <GridColumn
+                  only="tablet computer"
+                  verticalAlignContent="bottom"
+                  width={4}
                 >
-                  Check Availability
-                </Button>
-              </GridColumn>
-            </GridRow>
-          </Grid>
-        </GridColumn>
-      </GridRow>
-    </Grid>
-  </Card>
+                  <Modal trigger={<Link>More Info</Link>}>
+                    {getModalContentMarkup(
+                      amenities,
+                      onClickCheckAvailability,
+                      description,
+                      extraFeatures,
+                      features,
+                      name,
+                      nightPrice,
+                      slideShowImages
+                    )}
+                  </Modal>
+                </GridColumn>
+                <GridColumn
+                  textAlign={isUserOnMobile ? 'left' : 'right'}
+                  width={8}
+                >
+                  <Card.Description>
+                    {getNightPriceMarkup(nightPrice)}
+                  </Card.Description>
+                  <ShowOnMobile>
+                    <Divider />
+                  </ShowOnMobile>
+                  <Button
+                    isPositionedRight={isUserOnMobile === false}
+                    isRounded
+                    onClick={onClickCheckAvailability}
+                  >
+                    Check Availability
+                  </Button>
+                </GridColumn>
+              </GridRow>
+            </Grid>
+          </GridColumn>
+        </GridRow>
+      </Grid>
+    </Card>
+  </VerticalGutters>
 );
 
 Component.displayName = 'RoomType';

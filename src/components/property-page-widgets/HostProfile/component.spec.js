@@ -20,6 +20,7 @@ import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as HostProfile } from './component';
 
@@ -49,14 +50,24 @@ const getGridRows = () => getHostProfile().find(GridRow);
 const getGridRowAt = at => getGridRows().at(at);
 
 describe('<HostProfile />', () => {
-  it('should render a single Lodgify UI `Grid` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getHostProfile();
 
-    expectComponentToBe(wrapper, Grid);
+    expectComponentToBe(wrapper, VerticalGutters);
   });
 
-  it('should render `GridRows` components', () => {
-    expect(getGridRows()).toHaveLength(3);
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Grid` as its only children', () => {
+      const wrapper = getHostProfile();
+
+      expectComponentToHaveChildren(wrapper, Grid);
+    });
+  });
+
+  describe('the `Grid` component', () => {
+    it('should render `GridRows` components', () => {
+      expect(getGridRows()).toHaveLength(3);
+    });
   });
 
   describe('The first `GridRow`', () => {

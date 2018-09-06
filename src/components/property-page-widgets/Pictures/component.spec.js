@@ -16,6 +16,7 @@ import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 import { Thumbnail } from 'media/Thumbnail';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { pictures } from './mock-data/pictures';
 import { Component as Pictures } from './component';
@@ -23,15 +24,22 @@ import { Component as Pictures } from './component';
 const getPictures = () => shallow(<Pictures pictures={pictures} />);
 
 describe('<Pictures />', () => {
-  it('should render a single Lodgify UI `Grid` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getPictures();
 
-    expectComponentToBe(wrapper, Grid);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Grid` as its only children', () => {
+      const wrapper = getPictures();
+
+      expectComponentToHaveChildren(wrapper, Grid);
+    });
   });
 
   describe('the `Grid` component', () => {
     it('should render a `GridColumn` for each item in `props.pictures` plus one for the Link', () => {
-      const wrapper = getPictures();
+      const wrapper = getPictures().find(Grid);
 
       expectComponentToHaveChildren(
         wrapper,

@@ -6,8 +6,9 @@ import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
-import { Subheading } from 'typography/Subheading';
 import { Quote } from 'elements/Quote';
+import { Subheading } from 'typography/Subheading';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
 import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
@@ -26,58 +27,60 @@ export const Component = ({
   reviewText,
   reviewTitle,
 }) => (
-  <Card fluid>
-    <Card.Content>
-      <Card.Meta>
-        <Grid>
-          <GridRow verticalAlign="middle">
-            <GridColumn computer={6} mobile={12} tablet={7}>
-              <Subheading>
-                {getReviewerNameAndLocationString(
-                  reviewerName,
-                  reviewerLocation
-                )}
-              </Subheading>
-            </GridColumn>
-            <GridColumn
-              computer={6}
-              mobile={12}
-              tablet={5}
-              textAlign="right"
-              verticalAlign="middle"
-            >
-              <Rating
-                disabled
-                maxRating={5}
-                rating={Math.round(ratingNumber)}
-                size="small"
-              />
-            </GridColumn>
-          </GridRow>
-        </Grid>
-      </Card.Meta>
-      <Divider />
-      <Card.Header>{reviewTitle}</Card.Header>
-      <Card.Description>{reviewText}</Card.Description>
-      <Divider />
-      {!!reviewResponse && (
-        <div>
-          <Quote
-            quoteDateTime={reviewResponse.dateTime}
-            quoteSource={reviewResponse.source}
-            quoteText={reviewResponse.text}
-          />
-          <Divider />
-        </div>
-      )}
-      <Card.Description textAlign="right">
-        {getReviewerCategoryAndStayDateString(
-          reviewerCategory,
-          reviewerStayDate
+  <VerticalGutters>
+    <Card fluid>
+      <Card.Content>
+        <Card.Meta>
+          <Grid>
+            <GridRow verticalAlign="middle">
+              <GridColumn computer={6} mobile={12} tablet={7}>
+                <Subheading>
+                  {getReviewerNameAndLocationString(
+                    reviewerName,
+                    reviewerLocation
+                  )}
+                </Subheading>
+              </GridColumn>
+              <GridColumn
+                computer={6}
+                mobile={12}
+                tablet={5}
+                textAlign="right"
+                verticalAlign="middle"
+              >
+                <Rating
+                  disabled
+                  maxRating={5}
+                  rating={Math.round(ratingNumber)}
+                  size="small"
+                />
+              </GridColumn>
+            </GridRow>
+          </Grid>
+        </Card.Meta>
+        <Divider />
+        <Card.Header>{reviewTitle}</Card.Header>
+        <Card.Description>{reviewText}</Card.Description>
+        <Divider />
+        {!!reviewResponse && (
+          <div>
+            <Quote
+              quoteDateTime={reviewResponse.dateTime}
+              quoteSource={reviewResponse.source}
+              quoteText={reviewResponse.text}
+            />
+            <Divider />
+          </div>
         )}
-      </Card.Description>
-    </Card.Content>
-  </Card>
+        <Card.Description textAlign="right">
+          {getReviewerCategoryAndStayDateString(
+            reviewerCategory,
+            reviewerStayDate
+          )}
+        </Card.Description>
+      </Card.Content>
+    </Card>
+  </VerticalGutters>
 );
 
 Component.displayName = 'Review';
