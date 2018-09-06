@@ -12,6 +12,7 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { FeaturedProperty } from 'general-widgets/FeaturedProperty';
 import { Heading } from 'typography/Heading';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as FeaturedProperties } from './component';
 
@@ -51,16 +52,24 @@ const getFeaturedProperties = otherProps =>
   );
 
 describe('<FeaturedProperties />', () => {
-  it('should be a Lodgify UI `Grid`', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getFeaturedProperties();
 
-    expectComponentToBe(wrapper, Grid);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Grid` as its only children', () => {
+      const wrapper = getFeaturedProperties();
+
+      expectComponentToHaveChildren(wrapper, Grid);
+    });
   });
 
   describe('if `props.headingText` is not passed', () => {
     describe('the `Grid` component', () => {
       it('should render the right children', () => {
-        const wrapper = getFeaturedProperties();
+        const wrapper = getFeaturedProperties().find(Grid);
 
         expectComponentToHaveChildren(
           wrapper,
@@ -98,7 +107,7 @@ describe('<FeaturedProperties />', () => {
 
     describe('the `Grid` component', () => {
       it('should render the right children', () => {
-        const wrapper = getFeaturedProperties({ headingText });
+        const wrapper = getFeaturedProperties({ headingText }).find(Grid);
 
         expectComponentToHaveChildren(
           wrapper,

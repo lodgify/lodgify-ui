@@ -19,6 +19,7 @@ import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Slideshow } from 'media/Slideshow';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { ComponentWithResponsive as RoomType } from './component';
 
@@ -81,21 +82,31 @@ describe('<RoomType />', () => {
     expectComponentToBe(wrapper, Responsive);
   });
 
-  describe('the wrapper `RoomType` component', () => {
-    it('should be a Semantic UI `Card`', () => {
+  describe('the `Child` of the `RoomType` component', () => {
+    it('should have `VerticalGutters` component as a wrapper', () => {
       const wrapper = getWrappedRoomType();
 
-      expectComponentToBe(wrapper, Card);
+      expectComponentToBe(wrapper, VerticalGutters);
     });
+  });
 
-    it('should have the right props', () => {
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Card` as its only children', () => {
       const wrapper = getWrappedRoomType();
+
+      expectComponentToHaveChildren(wrapper, Card);
+    });
+  });
+
+  describe('the `Card component`', () => {
+    it('should have the right props', () => {
+      const wrapper = getWrappedRoomType().find(Card);
 
       expectComponentToHaveProps(wrapper, { fluid: true });
     });
 
     it('should have one child', () => {
-      const wrapper = getWrappedRoomType();
+      const wrapper = getWrappedRoomType().find(Card);
 
       expectComponentToHaveChildren(wrapper, Grid);
     });

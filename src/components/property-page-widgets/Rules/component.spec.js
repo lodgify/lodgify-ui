@@ -15,6 +15,7 @@ import { GridColumn } from 'layout/GridColumn';
 import { Divider } from 'elements/Divider';
 import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as Rules } from './component';
 
@@ -35,23 +36,31 @@ const props = {
 const getRules = otherProps => shallow(<Rules {...props} {...otherProps} />);
 
 describe('<Rules />', () => {
-  it('should render a single Lodgify UI `Grid` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getRules();
 
-    expectComponentToBe(wrapper, Grid);
+    expectComponentToBe(wrapper, VerticalGutters);
   });
 
-  it('should have the right props', () => {
-    const wrapper = getRules();
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Grid` as its only children', () => {
+      const wrapper = getRules();
 
-    expectComponentToHaveProps(wrapper, {
-      stackable: true,
+      expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
-  describe('the first `Grid` component', () => {
+  describe('the Grid component', () => {
+    it('should have the right props', () => {
+      const wrapper = getRules().find(Grid);
+
+      expectComponentToHaveProps(wrapper, {
+        stackable: true,
+      });
+    });
+
     it('should render the right children', () => {
-      const wrapper = getRules();
+      const wrapper = getRules().find(Grid);
 
       expectComponentToHaveChildren(
         wrapper,

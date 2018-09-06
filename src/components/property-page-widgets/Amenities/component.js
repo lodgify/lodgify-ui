@@ -8,6 +8,7 @@ import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
 import { VIEW_MORE } from 'utils/default-strings';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getDefaultItems } from './utils/getDefaultItems';
 import { hasExtraItems } from './utils/hasExtraItems';
@@ -23,27 +24,29 @@ export const Component = ({
   isStacked,
   modalTriggerText,
 }) => (
-  <Grid stackable>
-    {headingText && (
-      <GridColumn width={12}>
-        <Heading>{headingText}</Heading>
-      </GridColumn>
-    )}
-    {getDefaultItems(amenities, isStacked).map((amenity, index) =>
-      getCategoryMarkup(amenity, index, isStacked)
-    )}
-    {hasExtraItems(amenities, isStacked) && (
-      <GridColumn width={12}>
-        <Modal trigger={<Link>{modalTriggerText}</Link>}>
-          <SemanticModal.Content>
-            <Grid padded stackable>
-              {amenities.map(getCategoryMarkup)}
-            </Grid>
-          </SemanticModal.Content>
-        </Modal>
-      </GridColumn>
-    )}
-  </Grid>
+  <VerticalGutters>
+    <Grid stackable>
+      {headingText && (
+        <GridColumn width={12}>
+          <Heading>{headingText}</Heading>
+        </GridColumn>
+      )}
+      {getDefaultItems(amenities, isStacked).map((amenity, index) =>
+        getCategoryMarkup(amenity, index, isStacked)
+      )}
+      {hasExtraItems(amenities, isStacked) && (
+        <GridColumn width={12}>
+          <Modal trigger={<Link>{modalTriggerText}</Link>}>
+            <SemanticModal.Content>
+              <Grid padded stackable>
+                {amenities.map(getCategoryMarkup)}
+              </Grid>
+            </SemanticModal.Content>
+          </Modal>
+        </GridColumn>
+      )}
+    </Grid>
+  </VerticalGutters>
 );
 
 Component.displayName = 'Amenities';

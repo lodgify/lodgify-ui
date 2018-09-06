@@ -11,6 +11,7 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Review } from 'general-widgets/Review';
 import { REVIEWS, SUBMIT_REVIEW } from 'utils/default-strings';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying a collection of reviews.
@@ -22,50 +23,52 @@ export const Component = ({
   ratingAverage,
   submitButtonText,
 }) => (
-  <Grid>
-    <GridRow>
-      <GridColumn width={12}>
-        <Heading>{headingText}</Heading>
-      </GridColumn>
-    </GridRow>
-    <GridRow verticalAlign="middle">
-      <GridColumn
-        computer={6}
-        floated="left"
-        mobile={5}
-        tablet={5}
-        textAlign="left"
-        verticalAlign="middle"
-      >
-        <Rating
-          disabled
-          maxRating={5}
-          rating={Math.round(ratingAverage)}
-          size="small"
-        />
-        <span>{Math.round(ratingAverage)}</span>
-      </GridColumn>
-      <GridColumn
-        computer={6}
-        floated="right"
-        mobile={7}
-        tablet={7}
-        verticalAlign="middle"
-      >
-        <Button isCompact isPositionedRight isRounded size="medium">
-          {submitButtonText}
-        </Button>
-      </GridColumn>
-    </GridRow>
-    {reviews.map((review, index) => (
-      <GridRow key={buildKeyFromStrings(review.reviewText, index)}>
+  <VerticalGutters>
+    <Grid>
+      <GridRow>
         <GridColumn width={12}>
-          <Review {...review} />
-          <Divider />
+          <Heading>{headingText}</Heading>
         </GridColumn>
       </GridRow>
-    ))}
-  </Grid>
+      <GridRow verticalAlign="middle">
+        <GridColumn
+          computer={6}
+          floated="left"
+          mobile={5}
+          tablet={5}
+          textAlign="left"
+          verticalAlign="middle"
+        >
+          <Rating
+            disabled
+            maxRating={5}
+            rating={Math.round(ratingAverage)}
+            size="small"
+          />
+          <span>{Math.round(ratingAverage)}</span>
+        </GridColumn>
+        <GridColumn
+          computer={6}
+          floated="right"
+          mobile={7}
+          tablet={7}
+          verticalAlign="middle"
+        >
+          <Button isCompact isPositionedRight isRounded size="medium">
+            {submitButtonText}
+          </Button>
+        </GridColumn>
+      </GridRow>
+      {reviews.map((review, index) => (
+        <GridRow key={buildKeyFromStrings(review.reviewText, index)}>
+          <GridColumn width={12}>
+            <Review {...review} />
+            <Divider />
+          </GridColumn>
+        </GridRow>
+      ))}
+    </Grid>
+  </VerticalGutters>
 );
 
 Component.displayName = 'Reviews';

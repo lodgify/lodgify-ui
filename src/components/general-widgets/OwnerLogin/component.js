@@ -11,6 +11,7 @@ import {
   SEND_RESET,
   LOGIN,
 } from 'utils/default-strings';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getForgotPasswordFormMarkup } from './utils/getForgotPasswordFormMarkup';
 
@@ -32,25 +33,27 @@ export const Component = ({
   passwordInputLabel,
   validation,
 }) => (
-  <Form
-    actionLink={{
-      text: getForgotPasswordFormMarkup(
-        onForgotPasswordSubmit,
-        forgotPasswordSubmitButtonText,
-        forgotPasswordEmailInputLabel,
-        forgotPasswordHeadingText,
-        forgotPasswordModalTriggerText,
-        forgotPasswordValidation
-      ),
-    }}
-    headingText={headingText}
-    onSubmit={onSubmit}
-    submitButtonText={submitButtonText}
-    validation={validation}
-  >
-    <TextInput label={emailInputLabel} name="email" />
-    <TextInput label={passwordInputLabel} name="password" type="password" />
-  </Form>
+  <VerticalGutters>
+    <Form
+      actionLink={{
+        text: getForgotPasswordFormMarkup(
+          onForgotPasswordSubmit,
+          forgotPasswordSubmitButtonText,
+          forgotPasswordEmailInputLabel,
+          forgotPasswordHeadingText,
+          forgotPasswordModalTriggerText,
+          forgotPasswordValidation
+        ),
+      }}
+      headingText={headingText}
+      onSubmit={onSubmit}
+      submitButtonText={submitButtonText}
+      validation={validation}
+    >
+      <TextInput label={emailInputLabel} name="email" />
+      <TextInput label={passwordInputLabel} name="password" type="password" />
+    </Form>
+  </VerticalGutters>
 );
 
 Component.displayName = 'OwnerLogin';
