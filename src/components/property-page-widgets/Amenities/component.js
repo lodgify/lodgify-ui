@@ -20,6 +20,7 @@ import { getCategoryMarkup } from './utils/getCategoryMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   amenities,
+  hasExtraItemsInModal,
   headingText,
   isStacked,
   modalTriggerText,
@@ -34,17 +35,22 @@ export const Component = ({
       {getDefaultItems(amenities, isStacked).map((amenity, index) =>
         getCategoryMarkup(amenity, index, isStacked)
       )}
-      {hasExtraItems(amenities, isStacked) && (
-        <GridColumn width={12}>
-          <Modal trigger={<Link>{modalTriggerText}</Link>}>
-            <SemanticModal.Content>
-              <Grid padded stackable>
-                {amenities.map(getCategoryMarkup)}
-              </Grid>
-            </SemanticModal.Content>
-          </Modal>
-        </GridColumn>
-      )}
+      {hasExtraItems(amenities, isStacked) &&
+        (hasExtraItemsInModal ? (
+          <GridColumn width={12}>
+            <Modal trigger={<Link>{modalTriggerText}</Link>}>
+              <SemanticModal.Content>
+                <Grid padded stackable>
+                  {amenities.map(getCategoryMarkup)}
+                </Grid>
+              </SemanticModal.Content>
+            </Modal>
+          </GridColumn>
+        ) : (
+          amenities.map((amenity, index) =>
+            getCategoryMarkup(amenity, index, isStacked)
+          )
+        ))}
     </Grid>
   </VerticalGutters>
 );
@@ -52,6 +58,7 @@ export const Component = ({
 Component.displayName = 'Amenities';
 
 Component.defaultProps = {
+  hasExtraItemsInModal: true,
   headingText: null,
   isStacked: false,
   modalTriggerText: VIEW_MORE,
@@ -71,6 +78,8 @@ Component.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** Should the extra items be in a modal. */
+  hasExtraItemsInModal: PropTypes.bool,
   /** The text to display as a heading at the top of the amenities. */
   headingText: PropTypes.string,
   /** Are the amenities displayed stacked on top of one another */

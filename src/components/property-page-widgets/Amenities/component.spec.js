@@ -173,6 +173,21 @@ describe('<Amenities />', () => {
     });
   });
 
+  describe('the extra items when they are not in a modal', () => {
+    it('should render all items in the first Grid', () => {
+      const wrapper = getAmenities({
+        amenities: sixAmenities,
+        hasExtraItemsInModal: false,
+      })
+        .find(Grid)
+        .at(0);
+
+      const actual = wrapper.children(GridColumn);
+
+      expect(actual.length).toBe(8);
+    });
+  });
+
   it('should have `displayName` `Amenities`', () => {
     expectComponentToHaveDisplayName(Amenities, 'Amenities');
   });
