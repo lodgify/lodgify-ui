@@ -66,7 +66,7 @@ export const Component = ({
             willOpenAbove
           />
         </Menu.Item>
-        <Menu.Item>
+        <Menu.Item className="is-selectable">
           <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
         </Menu.Item>
         {!!socialMediaLinks.length && (
@@ -83,9 +83,11 @@ export const Component = ({
           </Menu.Menu>
         )}
         <Divider hasLine />
-        <Menu.Item>{propertyAddress}</Menu.Item>
+        <Menu.Item className="is-selectable">{propertyAddress}</Menu.Item>
         {copyrightText && (
-          <Menu.Item position="right">{copyrightText}</Menu.Item>
+          <Menu.Item className="is-selectable" position="right">
+            {copyrightText}
+          </Menu.Item>
         )}
       </Container>
     </div>
