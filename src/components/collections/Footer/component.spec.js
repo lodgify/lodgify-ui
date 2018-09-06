@@ -284,12 +284,21 @@ describe('<Footer />', () => {
   });
 
   describe('the third `Menu.Item` component in the second `Menu` component', () => {
-    it('should have the right children', () => {
-      const wrapper = getSecondMenu()
+    const getThirdMenuItem = () =>
+      getSecondMenu()
         .children(Menu.Item)
         .at(2);
 
+    it('should have the right children', () => {
+      const wrapper = getThirdMenuItem();
+
       expectComponentToHaveChildren(wrapper, Icon);
+    });
+
+    it('should have the right props', () => {
+      const wrapper = getThirdMenuItem();
+
+      expectComponentToHaveProps(wrapper, { className: 'is-selectable' });
     });
   });
 
@@ -369,12 +378,21 @@ describe('<Footer />', () => {
   });
 
   describe('the `Menu.Item` displaying the `propertyAddress`', () => {
-    it('should have the right children', () => {
-      const wrapper = getSecondMenu()
+    const getPropertyAddressMenuItem = () =>
+      getSecondMenu()
         .children(Menu.Item)
         .at(3);
 
+    it('should have the right children', () => {
+      const wrapper = getPropertyAddressMenuItem();
+
       expectComponentToHaveChildren(wrapper, propertyAddress);
+    });
+
+    it('should have the right props', () => {
+      const wrapper = getPropertyAddressMenuItem();
+
+      expectComponentToHaveProps(wrapper, { className: 'is-selectable' });
     });
   });
 
@@ -403,6 +421,7 @@ describe('<Footer />', () => {
         const wrapper = getCopyrightMenuItem();
 
         expectComponentToHaveProps(wrapper, {
+          className: 'is-selectable',
           position: 'right',
         });
       });
