@@ -93,3 +93,6 @@ export { Summary } from './components/property-page-widgets/Summary';
 export { Heading } from './components/typography/Heading';
 export { Paragraph } from './components/typography/Paragraph';
 export { Subheading } from './components/typography/Subheading';
+
+// Theme custom property identifiers
+export { THEME_CUSTOM_PROPERTY_IDENTIFIERS } from './styles/constants';
