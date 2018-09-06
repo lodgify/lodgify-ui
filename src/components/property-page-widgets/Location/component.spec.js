@@ -20,6 +20,7 @@ import { Heading } from 'typography/Heading';
 import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
 import { GoogleMap } from 'elements/GoogleMap';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import {
   locationDescription,
@@ -50,17 +51,25 @@ describe('<Location />', () => {
     expectComponentToBe(wrapper, Responsive);
   });
 
-  describe('the wrapped `Location` component', () => {
-    it('should be a Lodgify UI `Grid`', () => {
+  describe('the `Child` of the `Location` component', () => {
+    it('should have `VerticalGutters` component as a wrapper', () => {
       const wrapper = getWrappedLocation();
 
-      expectComponentToBe(wrapper, Grid);
+      expectComponentToBe(wrapper, VerticalGutters);
+    });
+  });
+
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Grid` as its only children', () => {
+      const wrapper = getWrappedLocation();
+
+      expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
   describe('the first `Grid` component', () => {
     it('should render the right props', () => {
-      const wrapper = getWrappedLocation();
+      const wrapper = getWrappedLocation().find(Grid);
 
       expectComponentToHaveProps(wrapper, {
         stackable: true,
@@ -70,7 +79,7 @@ describe('<Location />', () => {
 
   describe('the first `Grid` component', () => {
     it('should render the right children', () => {
-      const wrapper = getWrappedLocation();
+      const wrapper = getWrappedLocation().find(Grid);
 
       expectComponentToHaveChildren(
         wrapper,

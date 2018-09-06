@@ -11,6 +11,7 @@ import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { formatParagraphWithModal } from './utils/formatParagraphWithModal';
 import { isDescriptionDisplayingWithEllipsis } from './utils/isDescriptionDisplayingWithEllipsis';
@@ -28,57 +29,59 @@ export const Component = ({
   propertyName,
   propertyType,
 }) => (
-  <Grid columns={1}>
-    <GridColumn>
-      <Subheading>{propertyType}</Subheading>
-    </GridColumn>
-    <GridColumn>
-      <Heading>{propertyName}</Heading>
-    </GridColumn>
-    {getFirstFourItems(propertyMainCharacteristics).map(
-      ({ iconName, text }, index) => (
-        <GridColumn
-          computer={3}
-          key={buildKeyFromStrings(text, index)}
-          mobile={6}
-        >
-          <Icon labelText={text} name={iconName} />
-        </GridColumn>
-      )
-    )}
-    <GridColumn>
-      {getParagraphsFromStrings(descriptionText).map(
-        (paragraphText, index, descriptionTextArray) => (
-          <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-            {isDescriptionDisplayingWithEllipsis(
-              index,
-              descriptionTextArray,
-              extraDescriptionText
-            )
-              ? formatParagraphWithModal(
-                  paragraphText,
-                  descriptionText,
-                  extraDescriptionText
-                )
-              : paragraphText}
-          </Paragraph>
+  <VerticalGutters>
+    <Grid columns={1}>
+      <GridColumn>
+        <Subheading>{propertyType}</Subheading>
+      </GridColumn>
+      <GridColumn>
+        <Heading>{propertyName}</Heading>
+      </GridColumn>
+      {getFirstFourItems(propertyMainCharacteristics).map(
+        ({ iconName, text }, index) => (
+          <GridColumn
+            computer={3}
+            key={buildKeyFromStrings(text, index)}
+            mobile={6}
+          >
+            <Icon labelText={text} name={iconName} />
+          </GridColumn>
         )
       )}
-    </GridColumn>
-    <GridColumn>
-      <Subheading>{homeHighlightsHeadingText}</Subheading>
-    </GridColumn>
-    <GridColumn>
-      {homeHighlights.map(({ iconName, text }) => (
-        <Icon
-          hasBorder
-          key={buildKeyFromStrings(iconName, text)}
-          labelText={text}
-          name={iconName}
-        />
-      ))}
-    </GridColumn>
-  </Grid>
+      <GridColumn>
+        {getParagraphsFromStrings(descriptionText).map(
+          (paragraphText, index, descriptionTextArray) => (
+            <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
+              {isDescriptionDisplayingWithEllipsis(
+                index,
+                descriptionTextArray,
+                extraDescriptionText
+              )
+                ? formatParagraphWithModal(
+                    paragraphText,
+                    descriptionText,
+                    extraDescriptionText
+                  )
+                : paragraphText}
+            </Paragraph>
+          )
+        )}
+      </GridColumn>
+      <GridColumn>
+        <Subheading>{homeHighlightsHeadingText}</Subheading>
+      </GridColumn>
+      <GridColumn>
+        {homeHighlights.map(({ iconName, text }) => (
+          <Icon
+            hasBorder
+            key={buildKeyFromStrings(iconName, text)}
+            labelText={text}
+            name={iconName}
+          />
+        ))}
+      </GridColumn>
+    </Grid>
+  </VerticalGutters>
 );
 
 Component.displayName = 'Description';

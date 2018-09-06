@@ -26,6 +26,7 @@ import { PhoneInput } from 'inputs/PhoneInput';
 import { SingleDatePicker } from 'inputs/SingleDatePicker';
 import { TextArea } from 'inputs/TextArea';
 import { TextInput } from 'inputs/TextInput';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as CallMeBack } from './component';
 
@@ -74,10 +75,18 @@ const getCallMeBack = () =>
 const getForm = () => getCallMeBack().find(Form);
 
 describe('<CallMeBack />', () => {
-  it('should render a single Lodgify UI `Form` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getCallMeBack();
 
-    expectComponentToBe(wrapper, Form);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Form` as its only children', () => {
+      const wrapper = getCallMeBack();
+
+      expectComponentToHaveChildren(wrapper, Form);
+    });
   });
 
   describe('the `Form` component', () => {

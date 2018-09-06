@@ -26,6 +26,7 @@ import { Paragraph } from 'typography/Paragraph';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as PaymentInformation } from './component';
 
@@ -56,15 +57,22 @@ const getPaymentInformation = extraProps =>
   shallow(<PaymentInformation {...props} {...extraProps} />);
 
 describe('<PaymentInformation />', () => {
-  it('should render a single Lodgify UI `Grid` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getPaymentInformation();
 
-    expectComponentToBe(wrapper, Grid);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Grid` as its only children', () => {
+      const wrapper = getPaymentInformation();
+
+      expectComponentToHaveChildren(wrapper, Grid);
+    });
   });
 
   describe('the first `Grid` component', () => {
     it('should have the right props', () => {
-      const wrapper = getPaymentInformation();
+      const wrapper = getPaymentInformation().find(Grid);
 
       expectComponentToHaveProps(wrapper, {
         stackable: true,
@@ -72,7 +80,7 @@ describe('<PaymentInformation />', () => {
     });
 
     it('should render the right children', () => {
-      const wrapper = getPaymentInformation();
+      const wrapper = getPaymentInformation().find(Grid);
 
       expectComponentToHaveChildren(
         wrapper,

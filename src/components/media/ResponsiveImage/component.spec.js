@@ -2,9 +2,11 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Image as SemanticImage, Label } from 'semantic-ui-react';
 import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
+import { expectComponentToHaveChildren } from '@lodgify/enzyme-jest-expect-helpers/lib/expectComponentToHaveChildren';
 
 import { Paragraph } from 'typography/Paragraph';
 import { IMAGE_NOT_FOUND } from 'utils/default-strings';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { expectComponentToHaveProps } from '../../../../node_modules/@lodgify/enzyme-jest-expect-helpers/lib/expectComponentToHaveProps';
 
@@ -13,10 +15,18 @@ import { Component as ResponsiveImage } from './component';
 const getResponsiveImage = props => shallow(<ResponsiveImage {...props} />);
 
 describe('<ResponsiveImage />', () => {
-  it('should render a single `picture` element', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getResponsiveImage();
 
-    expectComponentToBe(wrapper, 'picture');
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+
+  describe('the `VerticalGutters` component', () => {
+    it('should have `picture` as its only children', () => {
+      const wrapper = getResponsiveImage();
+
+      expectComponentToHaveChildren(wrapper, 'picture');
+    });
   });
 
   describe('the `ResponsiveImage` component', () => {

@@ -12,6 +12,7 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { IconCard } from 'elements/IconCard';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as SleepingArrangements } from './component';
 
@@ -25,14 +26,14 @@ const getSleepingArrangements = () =>
   shallow(<SleepingArrangements sleepingArrangements={sleepingArrangements} />);
 
 describe('<SleepingArrangements />', () => {
-  it('should render a single `div` element', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getSleepingArrangements();
 
-    expectComponentToBe(wrapper, 'div');
+    expectComponentToBe(wrapper, VerticalGutters);
   });
 
-  describe('the `div` element', () => {
-    it('should render the right children', () => {
+  describe('the `VerticalGutters` component', () => {
+    it('should have the right children', () => {
       const wrapper = getSleepingArrangements();
 
       expectComponentToHaveChildren(wrapper, Heading, Grid);

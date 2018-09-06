@@ -17,6 +17,7 @@ import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Table } from 'collections/Table';
 import { PRICE_PER_EXTRA_PER } from 'utils/default-strings';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as Rates } from './component';
 import { getRateCategoryHeadingMarkup } from './utils/getRateCategoryHeadingMarkup';
@@ -97,14 +98,14 @@ const getRatesWidget = props =>
   );
 
 describe('<Rates />', () => {
-  it('should render a single `div` element', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getRatesWidget();
 
-    expectComponentToBe(wrapper, 'div');
+    expectComponentToBe(wrapper, VerticalGutters);
   });
 
-  describe('the `div` element', () => {
-    it('should render the right children', () => {
+  describe('the `VerticalGutters` component', () => {
+    it('should have the right children', () => {
       const wrapper = getRatesWidget();
 
       expectComponentToHaveChildren(wrapper, Grid, ShowOnDesktop);
