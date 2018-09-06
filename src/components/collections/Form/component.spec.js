@@ -10,6 +10,7 @@ import {
 
 import { Button } from 'elements/Button';
 import { Heading } from 'typography/Heading';
+import { Link } from 'elements/Link';
 
 import { Component as Form } from './component';
 import { DEFAULT_IS_REQUIRED_MESSAGE } from './constants';
@@ -65,11 +66,11 @@ describe('<Form />', () => {
       it('should render the right children', () => {
         const wrapper = getFormWithActionLink();
 
-        expectComponentToHaveChildren(wrapper, FormField, 'a');
+        expectComponentToHaveChildren(wrapper, FormField, Link);
       });
 
       describe('the `actionLink`', () => {
-        const getActionLink = () => getFormWithActionLink().find('a');
+        const getActionLink = () => getFormWithActionLink().find(Link);
 
         it('should have the right props', () => {
           const wrapper = getActionLink();
