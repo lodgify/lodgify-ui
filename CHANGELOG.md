@@ -1,3 +1,10 @@
+## [1.49.1](https://github.com/lodgify/lodgify-ui/compare/v1.49.0...v1.49.1) (2018-09-05)
+
+
+### Bug Fixes
+
+* **Footer:** social icon hover state ([5101973](https://github.com/lodgify/lodgify-ui/commit/5101973))
+
 # [1.49.0](https://github.com/lodgify/lodgify-ui/compare/v1.48.0...v1.49.0) (2018-09-05)
 
 
