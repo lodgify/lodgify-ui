@@ -187,15 +187,18 @@
 ---------------*/
 
 /* Inverted */
-.ui.inverted.grey.menu {
-  background-color: @footerBottomBackground;
+.ui.inverted.menu {
+  background-color: @invertedBottomBackground;
 
   /* Inverted Sub Menu */
 
-  /* Inverted Hover */
-  .item:hover {
-    background-color: @footerBottomBackground;
-    color: @footerBottomMenuColor;
+  .right.menu {
+
+    /* Inverted Hover */
+    .item:hover {
+      background-color: @invertedBottomBackground;
+      color: @invertedBottomMenuColor;
+    }
   }
 }
 
@@ -238,19 +241,11 @@ header > .ui.menu.text {
     }
 
     &:first-child {
-      margin-left: @headerMenuHorizontalMargin;
-
-      @media @mobileScreen {
-        margin-left: @headerMenuMobileHorizontalMargin;
-      }
+      margin-left: 0;
     }
 
     &:last-child {
-      margin-right: @headerMenuHorizontalMargin;
-
-      @media @mobileScreen {
-        margin-right: @headerMenuMobileHorizontalMargin;
-      }
+      margin-right: 0;
     }
   }
 
@@ -311,6 +306,13 @@ footer {
       /* Menu Item */
       .item {
         color: @footerBottomMenuColor;
+
+        .icon {
+
+          p {
+            color: inherit;
+          }
+        }
       }
 
       .right.menu {

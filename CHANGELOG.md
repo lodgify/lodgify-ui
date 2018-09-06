@@ -1,3 +1,31 @@
+## [1.49.2](https://github.com/lodgify/lodgify-ui/compare/v1.49.1...v1.49.2) (2018-09-06)
+
+
+### Bug Fixes
+
+* **card:** fix height of featured cards ([f553d72](https://github.com/lodgify/lodgify-ui/commit/f553d72))
+
+## [1.49.1](https://github.com/lodgify/lodgify-ui/compare/v1.49.0...v1.49.1) (2018-09-05)
+
+
+### Bug Fixes
+
+* **Footer:** social icon hover state ([5101973](https://github.com/lodgify/lodgify-ui/commit/5101973))
+
+# [1.49.0](https://github.com/lodgify/lodgify-ui/compare/v1.48.0...v1.49.0) (2018-09-05)
+
+
+### Features
+
+* **Footer:** update colour of icon text ([2255430](https://github.com/lodgify/lodgify-ui/commit/2255430))
+
+# [1.48.0](https://github.com/lodgify/lodgify-ui/compare/v1.47.0...v1.48.0) (2018-09-04)
+
+
+### Features
+
+* **VerticalGutters:** implement component and its unit test ([70614db](https://github.com/lodgify/lodgify-ui/commit/70614db))
+
 # [1.47.0](https://github.com/lodgify/lodgify-ui/compare/v1.46.3...v1.47.0) (2018-09-04)
 
 

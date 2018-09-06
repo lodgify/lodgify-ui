@@ -1,0 +1,9 @@
+/*******************************
+            Grid
+*******************************/
+
+.grid > *:not(.container):not(.row) {
+  flex-grow: @gridFullFlexGrow;
+  padding-left: 0;
+  padding-right: 0;
+}

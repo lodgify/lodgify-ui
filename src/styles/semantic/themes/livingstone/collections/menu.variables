@@ -8,8 +8,6 @@
 
 /* Menu */
 @background: transparent;
-@headerMenuHorizontalMargin: 92px;
-@headerMenuMobileHorizontalMargin: @25px;
 
 @footerMenuVerticalPadding: @30px;
 @footerMenuHorizontalPadding: 0;
@@ -24,6 +22,7 @@
 @footerMenuItemVerticalPadding: @8px;
 @footerMenuItemHorizontalPadding: @35px;
 
+@footerBottomBackground: @greyEight;
 @footerBottomMenuColor: @greySix;
 
 /* Divider */
@@ -159,14 +158,14 @@
 ---------------*/
 
 /* Inverted */
+@invertedBottomBackground: @footerBottomBackground;
+@invertedBottomMenuColor: @footerBottomMenuColor;
 
 /* Inverted Sub Menu */
 
 /* Inverted Hover */
 @invertedHoverBackground: @invertedBackground;
 @invertedHoverColor: @invertedItemTextColor;
-
-@footerBottomBackground: @greyEight;
 
 /* Pressed */
 
