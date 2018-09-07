@@ -1,3 +1,11 @@
+## [1.49.3](https://github.com/lodgify/lodgify-ui/compare/v1.49.2...v1.49.3) (2018-09-06)
+
+
+### Bug Fixes
+
+* **Footer:** add selectable class to selectable components ([b2a411a](https://github.com/lodgify/lodgify-ui/commit/b2a411a))
+* **Form:** remove underline form form action ([5d61d86](https://github.com/lodgify/lodgify-ui/commit/5d61d86))
+
 ## [1.49.2](https://github.com/lodgify/lodgify-ui/compare/v1.49.1...v1.49.2) (2018-09-06)
 
 
