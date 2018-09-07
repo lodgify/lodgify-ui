@@ -91,6 +91,8 @@
 
     img.ui.image {
       flex-grow: @featuredImageFlexGrow;
+      height: @featuredImageHeight;
+      object-fit: cover;
     }
   }
 
