@@ -91,7 +91,7 @@ const Component = ({
                   verticalAlignContent="bottom"
                   width={4}
                 >
-                  <Modal trigger={<Link>More Info</Link>}>
+                  <Modal size="small" trigger={<Link>More Info</Link>}>
                     {getModalContentMarkup(
                       amenities,
                       onClickCheckAvailability,
