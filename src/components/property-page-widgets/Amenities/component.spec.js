@@ -5,7 +5,6 @@ import {
   expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-  expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
@@ -24,6 +23,7 @@ const getAmenities = (props = {}) =>
   shallow(
     <Amenities
       amenities={props.amenities || twoAmenities}
+      hasExtraItemsInModal
       isStacked
       isUserOnMobile
       {...props}
@@ -171,9 +171,5 @@ describe('<Amenities />', () => {
         );
       });
     });
-  });
-
-  it('should have `displayName` `Amenities`', () => {
-    expectComponentToHaveDisplayName(Amenities, 'Amenities');
   });
 });
