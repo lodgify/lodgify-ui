@@ -87,6 +87,14 @@ p.light {
        Links
 --------------------*/
 
+a {
+  color: var(@themeLinkColorIdentifier, @themeLinkColorDefault);
+}
+
+a:hover {
+  color: var(@themeLinkHoverColorIdentifier, @themeLinkHoverColorDefault);
+}
+
 /*-------------------
     Scroll Bars
 --------------------*/

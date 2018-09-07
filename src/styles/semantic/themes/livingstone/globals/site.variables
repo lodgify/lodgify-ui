@@ -35,6 +35,14 @@
 
 @secondaryColor: @white;
 
+@themeCustomPropertyPrefix: --lodgify-ui;
+
+@themeLinkColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-color";
+@themeLinkColorDefault: @primaryColor;
+
+@themeLinkHoverColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-hover-color";
+@themeLinkHoverColorDefault: @darkPrimaryColor;
+
 /*--------------
   Page Heading
 ---------------*/
