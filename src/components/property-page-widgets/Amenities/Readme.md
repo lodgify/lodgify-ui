@@ -193,7 +193,7 @@ const amenities = [
 
 ```
 
-#### Display the extra items not in a modal
+#### Display the extra items in a modal
 
 ```jsx
 const amenities = [
@@ -239,6 +239,6 @@ const amenities = [
 ];
 
 
-<Amenities amenities={amenities} hasExtraItemsInModal={false} headingText="Property Amenities" />
+<Amenities hasExtraItemsInModal amenities={amenities} headingText="Property Amenities" />
 
 ```

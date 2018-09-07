@@ -5,7 +5,6 @@ import {
   expectComponentToBe,
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
-  expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
@@ -24,6 +23,7 @@ const getAmenities = (props = {}) =>
   shallow(
     <Amenities
       amenities={props.amenities || twoAmenities}
+      hasExtraItemsInModal
       isStacked
       isUserOnMobile
       {...props}
@@ -171,24 +171,5 @@ describe('<Amenities />', () => {
         );
       });
     });
-  });
-
-  describe('the extra items when they are not in a modal', () => {
-    it('should render all items in the first Grid', () => {
-      const wrapper = getAmenities({
-        amenities: sixAmenities,
-        hasExtraItemsInModal: false,
-      })
-        .find(Grid)
-        .at(0);
-
-      const actual = wrapper.children(GridColumn);
-
-      expect(actual.length).toBe(8);
-    });
-  });
-
-  it('should have `displayName` `Amenities`', () => {
-    expectComponentToHaveDisplayName(Amenities, 'Amenities');
   });
 });

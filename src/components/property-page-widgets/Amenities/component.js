@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Modal as SemanticModal } from 'semantic-ui-react';
 
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
-import { Link } from 'elements/Link';
-import { Modal } from 'elements/Modal';
 import { VIEW_MORE } from 'utils/default-strings';
 import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getDefaultItems } from './utils/getDefaultItems';
 import { hasExtraItems } from './utils/hasExtraItems';
 import { getCategoryMarkup } from './utils/getCategoryMarkup';
+import { getExtraItemsMarkup } from './utils/getExtraItemsMarkup';
 
 /**
  * The standard widget for displaying the amenities of a property.
@@ -36,21 +34,12 @@ export const Component = ({
         getCategoryMarkup(amenity, index, isStacked)
       )}
       {hasExtraItems(amenities, isStacked) &&
-        (hasExtraItemsInModal ? (
-          <GridColumn width={12}>
-            <Modal trigger={<Link>{modalTriggerText}</Link>}>
-              <SemanticModal.Content>
-                <Grid padded stackable>
-                  {amenities.map(getCategoryMarkup)}
-                </Grid>
-              </SemanticModal.Content>
-            </Modal>
-          </GridColumn>
-        ) : (
-          amenities.map((amenity, index) =>
-            getCategoryMarkup(amenity, index, isStacked)
-          )
-        ))}
+        getExtraItemsMarkup(
+          hasExtraItemsInModal,
+          modalTriggerText,
+          amenities,
+          isStacked
+        )}
     </Grid>
   </VerticalGutters>
 );
@@ -58,7 +47,7 @@ export const Component = ({
 Component.displayName = 'Amenities';
 
 Component.defaultProps = {
-  hasExtraItemsInModal: true,
+  hasExtraItemsInModal: false,
   headingText: null,
   isStacked: false,
   modalTriggerText: VIEW_MORE,
@@ -78,7 +67,7 @@ Component.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** Should the extra items be in a modal. */
+  /** Are the extra items displayed in a modal. */
   hasExtraItemsInModal: PropTypes.bool,
   /** The text to display as a heading at the top of the amenities. */
   headingText: PropTypes.string,
