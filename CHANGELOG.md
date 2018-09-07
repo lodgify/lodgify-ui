@@ -1,3 +1,10 @@
+# [1.50.0](https://github.com/lodgify/lodgify-ui/compare/v1.49.3...v1.50.0) (2018-09-07)
+
+
+### Features
+
+* **link:** expose themable custom properties for link ([ad1253c](https://github.com/lodgify/lodgify-ui/commit/ad1253c))
+
 ## [1.49.3](https://github.com/lodgify/lodgify-ui/compare/v1.49.2...v1.49.3) (2018-09-06)
 
 
