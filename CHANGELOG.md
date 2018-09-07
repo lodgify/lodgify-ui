@@ -1,3 +1,10 @@
+## [1.50.1](https://github.com/lodgify/lodgify-ui/compare/v1.50.0...v1.50.1) (2018-09-07)
+
+
+### Bug Fixes
+
+* **Card:** stop featured images from growing to 100% of container ([f016c17](https://github.com/lodgify/lodgify-ui/commit/f016c17))
+
 # [1.50.0](https://github.com/lodgify/lodgify-ui/compare/v1.49.3...v1.50.0) (2018-09-07)
 
 
