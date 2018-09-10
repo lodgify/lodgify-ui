@@ -118,6 +118,8 @@ Component.propTypes = {
     PropTypes.shape({
       /** The source url for the image to display with the option. */
       image: PropTypes.string,
+      /** The indent level of an option. One of: 1, 2 */
+      indent: PropTypes.oneOf([1, 2]),
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
