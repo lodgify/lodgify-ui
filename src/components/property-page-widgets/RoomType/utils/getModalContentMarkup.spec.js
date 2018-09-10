@@ -4,6 +4,7 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
+import { List, ListItem, Rating } from 'semantic-ui-react';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Amenities } from 'property-page-widgets/Amenities';
@@ -36,6 +37,7 @@ const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
 const nightPrice = '$1010';
+const ratingNumber = '3';
 const slideShowImages = [
   {
     alternativeText: 'Two cats',
@@ -59,6 +61,7 @@ const getMarkup = () =>
       features,
       name,
       nightPrice,
+      ratingNumber,
       slideShowImages
     )
   );
@@ -77,10 +80,10 @@ describe('getModalContentMarkup', () => {
       expectComponentToHaveChildren(
         wrapper,
         Heading,
-        Divider,
+        'div',
         Slideshow,
         Paragraph,
-        Grid,
+        List,
         Divider,
         Amenities,
         Grid
@@ -117,26 +120,26 @@ describe('getModalContentMarkup', () => {
     });
   });
 
-  describe('the first `Grid`', () => {
-    const getFirstGrid = () =>
+  describe('the first `List`', () => {
+    const getFirstList = () =>
       getMarkup()
-        .find(Grid)
+        .find(List)
         .at(0);
 
     it('should have the right props', () => {
-      const wrapper = getFirstGrid();
+      const wrapper = getFirstList();
 
-      expectComponentToHaveProps(wrapper, { columns: 4, stackable: true });
+      expectComponentToHaveProps(wrapper, { horizontal: true });
     });
 
     it('should render the right number of children', () => {
-      const wrapper = getFirstGrid();
+      const wrapper = getFirstList();
 
       expectComponentToHaveChildren(
         wrapper,
         ...getArrayOfLengthOfItem(
           [...features, ...extraFeatures].length,
-          GridColumn
+          ListItem
         )
       );
     });
@@ -171,13 +174,22 @@ describe('getModalContentMarkup', () => {
     });
   });
 
-  describe('the second `Divider`', () => {
-    it('should have the right props', () => {
-      const wrapper = getMarkup()
-        .find(Divider)
-        .at(1);
+  describe('the first `div.rating-container`', () => {
+    const getRatingContainer = () =>
+      getMarkup()
+        .find('div.rating-container')
+        .at(0);
 
-      expectComponentToHaveProps(wrapper, { hasLine: true });
+    it('should have the right props', () => {
+      const wrapper = getRatingContainer();
+
+      expectComponentToHaveProps(wrapper, { className: 'rating-container' });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getRatingContainer();
+
+      expectComponentToHaveChildren(wrapper, ratingNumber, Rating);
     });
   });
 
@@ -189,24 +201,24 @@ describe('getModalContentMarkup', () => {
     });
   });
 
-  describe('the second `Grid`', () => {
-    it('should rnder the right children', () => {
+  describe('the first `Grid`', () => {
+    it('should render the right children', () => {
       const wrapper = getMarkup()
         .find(Grid)
-        .at(1);
+        .at(0);
 
       expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
     });
   });
 
-  describe('the third `GridColumn`', () => {
-    const getThirdGridColumn = () =>
+  describe('the first `GridColumn`', () => {
+    const getFirstGridColumn = () =>
       getMarkup()
         .find(GridColumn)
-        .at(2);
+        .at(0);
 
     it('should have the right props', () => {
-      const wrapper = getThirdGridColumn();
+      const wrapper = getFirstGridColumn();
 
       expectComponentToHaveProps(wrapper, {
         verticalAlignContent: 'bottom',
@@ -215,7 +227,7 @@ describe('getModalContentMarkup', () => {
     });
 
     it('should render the right children', () => {
-      const wrapper = getThirdGridColumn();
+      const wrapper = getFirstGridColumn();
 
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
@@ -239,14 +251,14 @@ describe('getModalContentMarkup', () => {
     });
   });
 
-  describe('the fourth `GridColumn`', () => {
-    const getFourthGrid = () =>
+  describe('the second `GridColumn`', () => {
+    const getSecondGridColumn = () =>
       getMarkup()
         .find(GridColumn)
-        .at(3);
+        .at(1);
 
     it('should have the right props', () => {
-      const wrapper = getFourthGrid();
+      const wrapper = getSecondGridColumn();
 
       expectComponentToHaveProps(wrapper, {
         verticalAlignContent: 'bottom',
@@ -255,7 +267,7 @@ describe('getModalContentMarkup', () => {
     });
 
     it('should have the right children', () => {
-      const wrapper = getFourthGrid();
+      const wrapper = getSecondGridColumn();
 
       expectComponentToHaveChildren(wrapper, Button);
     });

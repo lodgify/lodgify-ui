@@ -294,7 +294,7 @@ describe('<RoomType />', () => {
     const getFifthGridColumn = () =>
       getWrappedRoomType()
         .find(GridColumn)
-        .at(8);
+        .at(6);
 
     it('should have the right props', () => {
       const wrapper = getFifthGridColumn();
@@ -319,7 +319,11 @@ describe('<RoomType />', () => {
         .find(Modal)
         .at(1);
 
-      expectComponentToHaveProps(wrapper, { trigger: <Link>More Info</Link> });
+      expectComponentToHaveProps(wrapper, {
+        trigger: <Link>More Info</Link>,
+        size: 'small',
+        className: 'with-room-type',
+      });
     });
   });
 
@@ -327,7 +331,7 @@ describe('<RoomType />', () => {
     const getSixthGridColumn = () =>
       getWrappedRoomType()
         .find(GridColumn)
-        .at(13);
+        .at(9);
 
     it('should have the right props', () => {
       const wrapper = getSixthGridColumn();
@@ -471,6 +475,7 @@ describe('`RoomType` in mobile view', () => {
             size="small"
           />
         ),
+        className: 'with-room-type',
       });
     });
   });

@@ -19,8 +19,8 @@ import { Slideshow } from 'media/Slideshow';
  * @param  {Object[]}    features
  * @param  {string}      name
  * @param  {string}      nightPrice
- * @param  {Object[]}    slideShowImages
  * @param  {number}      ratingNumber
+ * @param  {Object[]}    slideShowImages
  * @return {Object}
  */
 export const getModalContentMarkup = (
@@ -36,7 +36,6 @@ export const getModalContentMarkup = (
 ) => (
   <Modal.Content>
     <Heading>{name}</Heading>
-
     <div className="rating-container">
       {ratingNumber}
       <Rating
@@ -46,7 +45,6 @@ export const getModalContentMarkup = (
         size="tiny"
       />
     </div>
-
     <Slideshow additionalClass="no-shadow" images={slideShowImages} />
     <Paragraph>{description}</Paragraph>
     <List horizontal>
