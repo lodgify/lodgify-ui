@@ -7,6 +7,14 @@ import { Divider } from 'elements/Divider';
 
 import { getFormFieldMarkup } from './getFormFieldMarkup';
 
+/**
+ * @param {Node}      modalTrigger
+ * @param {Node}      mobileSummaryElement
+ * @param {Function}  handleSubmit
+ * @param {Function}  persistInputChange
+ * @param {Object[]}  props
+ * @return {Object}
+ */
 export const getSearchBarModal = (
   modalTrigger,
   mobileSummaryElement,
