@@ -402,7 +402,6 @@ blockquote.ui.quote .row {
   }
 }
 
-
 /*-------------------
       Search Bar
 --------------------*/
@@ -413,13 +412,10 @@ blockquote.ui.quote .row {
     bottom: 0;
     left: 0;
     right: 0;
-
-    // Styling
-    background: #fff;
-    z-index: 999;
-    padding: 20px 0;
-
-    box-shadow: 0 -4px 9px -6px rgba(0, 0, 0, 0.29);
+    background: @searchFixedBackgroundColor;
+    z-index: @searchFixedZIndex;
+    padding: @searchFixedPadding;
+    box-shadow: @searchFixedBoxShadow;
 
     .ui.form .fields {
       margin: 0;

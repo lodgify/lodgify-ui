@@ -1,19 +1,17 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import { Form, Modal as SemanticModal } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 
 import { Container } from 'layout/Container';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
 import { Icon, ICON_NAMES } from 'elements/Icon';
-import { Heading } from 'typography/Heading';
-import { Modal } from 'elements/Modal';
 import { Button } from 'elements/Button';
-import { Divider } from 'elements/Divider';
 
 import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
+import { getSearchBarModal } from './utils/getSearchBarModal';
 
 /**
  * The standard widget for property search.
@@ -40,28 +38,15 @@ export class Component extends PureComponent {
       summaryElement,
     } = this.props;
 
-    const searchBarAsModal = isDisplayedAsModal && (
-      <Modal isFullscreen trigger={modalTrigger}>
-        <SemanticModal.Content>
-          {mobileSummaryElement ? (
-            <div>
-              {mobileSummaryElement}
-              <Divider hasLine />
-            </div>
-          ) : (
-            <Heading size="small">Check our availability</Heading>
-          )}
-          <Form onSubmit={this.handleSubmit}>
-            {getFormFieldMarkup(
-              this.props,
-              this.persistInputChange,
-              true,
-              false
-            )}
-          </Form>
-        </SemanticModal.Content>
-      </Modal>
-    );
+    const searchBarAsModal =
+      isDisplayedAsModal &&
+      getSearchBarModal(
+        modalTrigger,
+        mobileSummaryElement,
+        this.handleSubmit,
+        this.persistInputChange,
+        this.props
+      );
 
     if (isFixed) {
       return (
@@ -93,7 +78,9 @@ export class Component extends PureComponent {
           </Container>
         </div>
       );
-    } else if (isDisplayedAsModal) {
+    }
+
+    if (isDisplayedAsModal) {
       return searchBarAsModal;
     }
 
