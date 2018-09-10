@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Rating } from 'semantic-ui-react';
+import { Modal, Rating, List } from 'semantic-ui-react';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Amenities } from 'property-page-widgets/Amenities';
@@ -48,13 +48,13 @@ export const getModalContentMarkup = (
     <Divider />
     <Slideshow additionalClass="no-shadow" images={slideShowImages} />
     <Paragraph>{description}</Paragraph>
-    <Grid columns={4} stackable>
+    <List horizontal>
       {[...features, ...extraFeatures].map(({ labelText }, index) => (
-        <GridColumn key={buildKeyFromStrings(index, labelText, 'feature')}>
+        <List.Item key={buildKeyFromStrings(index, labelText, 'feature')}>
           <Paragraph weight="heavy">{labelText}</Paragraph>
-        </GridColumn>
+        </List.Item>
       ))}
-    </Grid>
+    </List>
     <Divider hasLine />
     <Amenities amenities={amenities} headingText="Room Amenities" isStacked />
     <Grid>
