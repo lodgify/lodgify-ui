@@ -13,20 +13,12 @@ import { getAmenityMarkup } from './utils/getAmenityMarkup';
 export const Component = ({
   amenities,
   hasExtraItemsInModal,
+  hasVerticalGutters,
   headingText,
-  isNested,
   isStacked,
   modalTriggerText,
 }) =>
-  isNested ? (
-    getAmenityMarkup(
-      amenities,
-      hasExtraItemsInModal,
-      headingText,
-      isStacked,
-      modalTriggerText
-    )
-  ) : (
+  hasVerticalGutters ? (
     <VerticalGutters>
       {getAmenityMarkup(
         amenities,
@@ -36,6 +28,14 @@ export const Component = ({
         modalTriggerText
       )}
     </VerticalGutters>
+  ) : (
+    getAmenityMarkup(
+      amenities,
+      hasExtraItemsInModal,
+      headingText,
+      isStacked,
+      modalTriggerText
+    )
   );
 
 Component.displayName = 'Amenities';
@@ -43,7 +43,7 @@ Component.displayName = 'Amenities';
 Component.defaultProps = {
   hasExtraItemsInModal: false,
   headingText: null,
-  isNested: false,
+  hasVerticalGutters: true,
   isStacked: false,
   modalTriggerText: VIEW_MORE,
 };
@@ -64,10 +64,10 @@ Component.propTypes = {
   ).isRequired,
   /** Are the extra items displayed in a modal. */
   hasExtraItemsInModal: PropTypes.bool,
+  /** Does the component have vertical gutters */
+  hasVerticalGutters: PropTypes.bool,
   /** The text to display as a heading at the top of the amenities. */
   headingText: PropTypes.string,
-  /** Is the component nested in another component */
-  isNested: PropTypes.bool,
   /** Are the amenities displayed stacked on top of one another */
   isStacked: PropTypes.bool,
   /** The text for the modal trigger */

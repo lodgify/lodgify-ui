@@ -10,11 +10,12 @@ import { getCategoryMarkup } from './getCategoryMarkup';
 import { getExtraItemsMarkup } from './getExtraItemsMarkup';
 
 /**
- * @param {Object[]} amenities
- * @param {boolean} hasExtraItemsInModal
- * @param {string} headingText
- * @param {boolean} isStacked
- * @param {string} modalTriggerText
+ * @param {Object[]}  amenities
+ * @param {boolean}   hasExtraItemsInModal
+ * @param {string}    headingText
+ * @param {boolean}   isStacked
+ * @param {string}    modalTriggerText
+ * @return {Object}
  */
 export const getAmenityMarkup = (
   amenities,

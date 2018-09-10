@@ -243,7 +243,7 @@ const amenities = [
 
 ```
 
-#### Remove vertical padding
+#### Without vertical padding
 
 ```jsx
 const amenities = [
@@ -265,6 +265,6 @@ const amenities = [
 ];
 
 
-<Amenities isNested amenities={amenities} headingText="Property Amenities" />
+<Amenities hasVerticalGutters={false} amenities={amenities} headingText="Property Amenities" />
 
 ```

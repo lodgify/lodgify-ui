@@ -31,7 +31,7 @@ describe('<Amenities />', () => {
 
   it('should not have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getAmenities({
-      isNested: true,
+      hasVerticalGutters: false,
     });
 
     expectComponentToBe(wrapper, Grid);
