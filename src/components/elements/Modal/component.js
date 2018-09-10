@@ -9,8 +9,15 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
  * blocks interactions with the main view of a page.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ children, isFullscreen, size, trigger }) => (
+export const Component = ({
+  className,
+  children,
+  isFullscreen,
+  size,
+  trigger,
+}) => (
   <Modal
+    className={className}
     closeIcon={<Icon name={ICON_NAMES.CLOSE} />}
     content={children}
     dimmer="inverted"
@@ -22,6 +29,7 @@ export const Component = ({ children, isFullscreen, size, trigger }) => (
 Component.displayName = 'Modal';
 
 Component.defaultProps = {
+  className: '',
   isFullscreen: false,
   size: 'tiny',
 };
@@ -29,6 +37,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The content of the modal when displayed. */
   children: PropTypes.node.isRequired,
+  /** The additional classes for the modal */
+  className: PropTypes.string,
   /** Is the modal filling the whole screen when displayed. */
   isFullscreen: PropTypes.bool,
   /** The size of the modal */
