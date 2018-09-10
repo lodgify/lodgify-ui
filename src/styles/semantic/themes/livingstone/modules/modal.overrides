@@ -83,3 +83,22 @@
 /* Size Widths */
 
 /* Derived Responsive Sizes */
+
+/* With Room Type */
+.with-room-type {
+
+  .ui.header {
+    margin: 0;
+
+    + .rating-container {
+      margin-top: 10px;
+    }
+  }
+
+  .rating-container {
+
+    + .image-gallery {
+      margin-top: 20px;
+    }
+  }
+}
