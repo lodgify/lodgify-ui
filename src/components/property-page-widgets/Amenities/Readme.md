@@ -242,3 +242,29 @@ const amenities = [
 <Amenities hasExtraItemsInModal amenities={amenities} headingText="Property Amenities" />
 
 ```
+
+#### Remove vertical padding
+
+```jsx
+const amenities = [
+  {
+    name: 'Cooking',
+    iconName: 'coffee',
+    items: ['Toaster', 'Microwave', 'Coffee Machine'],
+  },
+  {
+    name: 'Bathroom',
+    iconName: 'bathroom',
+    items: ['Bidet', 'Hair Dryer'],
+  },
+  {
+    name: 'Outside',
+    iconName: 'sun',
+    items: ['Tennis Court'],
+  }
+];
+
+
+<Amenities isNested amenities={amenities} headingText="Property Amenities" />
+
+```
