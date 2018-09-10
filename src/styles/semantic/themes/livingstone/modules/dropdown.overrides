@@ -106,8 +106,13 @@
     width: @selectionWidth;
 
     /*  Selection Menu */
-    .menu {
+    &:not(.upward) .menu {
       margin-top: @menuMarginTop;
+    }
+
+    /* if upward */
+    &.upward .menu {
+      margin-bottom: @menuMarginBottom;
     }
 
     // Partial reimplementation of styles for
