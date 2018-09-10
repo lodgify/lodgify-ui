@@ -1,16 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Grid } from 'layout/Grid';
-import { GridColumn } from 'layout/GridColumn';
-import { Heading } from 'typography/Heading';
 import { VIEW_MORE } from 'utils/default-strings';
 import { VerticalGutters } from 'layout/VerticalGutters';
 
-import { getDefaultItems } from './utils/getDefaultItems';
-import { hasExtraItems } from './utils/hasExtraItems';
-import { getCategoryMarkup } from './utils/getCategoryMarkup';
-import { getExtraItemsMarkup } from './utils/getExtraItemsMarkup';
+import { getAmenityMarkup } from './utils/getAmenityMarkup';
 
 /**
  * The standard widget for displaying the amenities of a property.
@@ -20,35 +14,36 @@ export const Component = ({
   amenities,
   hasExtraItemsInModal,
   headingText,
+  isNested,
   isStacked,
   modalTriggerText,
-}) => (
-  <VerticalGutters>
-    <Grid stackable>
-      {headingText && (
-        <GridColumn width={12}>
-          <Heading>{headingText}</Heading>
-        </GridColumn>
+}) =>
+  isNested ? (
+    getAmenityMarkup(
+      amenities,
+      hasExtraItemsInModal,
+      headingText,
+      isStacked,
+      modalTriggerText
+    )
+  ) : (
+    <VerticalGutters>
+      {getAmenityMarkup(
+        amenities,
+        hasExtraItemsInModal,
+        headingText,
+        isStacked,
+        modalTriggerText
       )}
-      {getDefaultItems(amenities, isStacked).map((amenity, index) =>
-        getCategoryMarkup(amenity, index, isStacked)
-      )}
-      {hasExtraItems(amenities, isStacked) &&
-        getExtraItemsMarkup(
-          hasExtraItemsInModal,
-          modalTriggerText,
-          amenities,
-          isStacked
-        )}
-    </Grid>
-  </VerticalGutters>
-);
+    </VerticalGutters>
+  );
 
 Component.displayName = 'Amenities';
 
 Component.defaultProps = {
   hasExtraItemsInModal: false,
   headingText: null,
+  isNested: false,
   isStacked: false,
   modalTriggerText: VIEW_MORE,
 };
@@ -71,6 +66,8 @@ Component.propTypes = {
   hasExtraItemsInModal: PropTypes.bool,
   /** The text to display as a heading at the top of the amenities. */
   headingText: PropTypes.string,
+  /** Is the component nested in another component */
+  isNested: PropTypes.bool,
   /** Are the amenities displayed stacked on top of one another */
   isStacked: PropTypes.bool,
   /** The text for the modal trigger */
