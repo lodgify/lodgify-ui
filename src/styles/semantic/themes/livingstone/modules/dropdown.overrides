@@ -339,3 +339,12 @@
 }
 
 /* Pointing Upward */
+
+/* Indentation */
+.indent-1 span {
+  margin-left: @indentationLevelOne;
+}
+
+.indent-2 span {
+  margin-left: @indentationLevelTwo;
+}
