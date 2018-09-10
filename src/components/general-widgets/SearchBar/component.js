@@ -44,7 +44,12 @@ export class Component extends PureComponent {
           <SemanticModal.Content>
             <Heading size="small">Check our availability</Heading>
             <Form onSubmit={this.handleSubmit}>
-              {getFormFieldMarkup(this.props, this.persistInputChange, true)}
+              {getFormFieldMarkup(
+                this.props,
+                this.persistInputChange,
+                true,
+                false
+              )}
             </Form>
           </SemanticModal.Content>
         </Modal>
@@ -66,7 +71,8 @@ export class Component extends PureComponent {
                   {getFormFieldMarkup(
                     this.props,
                     this.persistInputChange,
-                    false
+                    false,
+                    true
                   )}
                 </Form.Group>
               </GridColumn>
@@ -80,7 +86,12 @@ export class Component extends PureComponent {
       <div className={cx('search-bar', { 'is-sticky': isSticky })}>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
-            {getFormFieldMarkup(this.props, this.persistInputChange, false)}
+            {getFormFieldMarkup(
+              this.props,
+              this.persistInputChange,
+              false,
+              false
+            )}
           </Form.Group>
         </Form>
       </div>

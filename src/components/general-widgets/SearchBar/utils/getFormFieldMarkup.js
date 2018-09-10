@@ -16,6 +16,7 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
  * @param  {Node}     props.searchButton
  * @param  {Function} onDatePickerChange
  * @param  {boolean}  areColumnsStacked
+ * @param  {boolean}  isDropdownUpward
  * @return {Object}
  */
 export const getFormFieldMarkup = (
@@ -28,7 +29,8 @@ export const getFormFieldMarkup = (
     searchButton,
   },
   onDatePickerChange,
-  areColumnsStacked
+  areColumnsStacked,
+  isDropdownUpward
 ) => {
   const defaultColumnWidth = areColumnsStacked ? 'twelve' : 'three';
   const datePickerColumnWidth = areColumnsStacked ? 'twelve' : 'seven';
@@ -48,6 +50,7 @@ export const getFormFieldMarkup = (
         <Form.Field width={defaultColumnWidth}>
           <Dropdown
             icon={ICON_NAMES.MAP_PIN}
+            isUpward={isDropdownUpward}
             label="Location"
             name="location"
             onChange={onDatePickerChange}
@@ -68,6 +71,7 @@ export const getFormFieldMarkup = (
       <Form.Field width={defaultColumnWidth}>
         <Dropdown
           icon={ICON_NAMES.USERS}
+          isUpward={isDropdownUpward}
           label="Guests"
           name="guests"
           onChange={onDatePickerChange}

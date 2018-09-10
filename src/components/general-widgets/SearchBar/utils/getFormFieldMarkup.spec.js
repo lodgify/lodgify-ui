@@ -30,6 +30,7 @@ const getMarkup = overrideProps =>
           ...overrideProps,
         },
         Function.prototype,
+        false,
         false
       )}
     </div>
