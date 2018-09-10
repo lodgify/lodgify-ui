@@ -27,3 +27,11 @@ export const optionsWithImages = [
     image: require('./the-white-lodge.png'),
   },
 ];
+
+export const indentedOptions = [
+  { text: 'United Kingdom', value: 'gb' },
+  { text: 'United States', value: 'us' },
+  { text: 'Texas', value: 'tx', indent: 1 },
+  { text: 'California', value: 'ca', indent: 1 },
+  { text: 'Los Angeles', value: 'la', indent: 2 },
+];
