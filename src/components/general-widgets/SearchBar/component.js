@@ -11,6 +11,7 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
 import { Modal } from 'elements/Modal';
 import { Button } from 'elements/Button';
+import { Divider } from 'elements/Divider';
 
 import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
 
@@ -33,28 +34,34 @@ export class Component extends PureComponent {
     const {
       isDisplayedAsModal,
       isSticky,
+      mobileSummaryElement,
       modalTrigger,
       isFixed,
       summaryElement,
     } = this.props;
 
-    if (isDisplayedAsModal) {
-      return (
-        <Modal trigger={modalTrigger}>
-          <SemanticModal.Content>
+    const searchBarAsModal = isDisplayedAsModal && (
+      <Modal isFullscreen trigger={modalTrigger}>
+        <SemanticModal.Content>
+          {mobileSummaryElement ? (
+            <div>
+              {mobileSummaryElement}
+              <Divider hasLine />
+            </div>
+          ) : (
             <Heading size="small">Check our availability</Heading>
-            <Form onSubmit={this.handleSubmit}>
-              {getFormFieldMarkup(
-                this.props,
-                this.persistInputChange,
-                true,
-                false
-              )}
-            </Form>
-          </SemanticModal.Content>
-        </Modal>
-      );
-    }
+          )}
+          <Form onSubmit={this.handleSubmit}>
+            {getFormFieldMarkup(
+              this.props,
+              this.persistInputChange,
+              true,
+              false
+            )}
+          </Form>
+        </SemanticModal.Content>
+      </Modal>
+    );
 
     if (isFixed) {
       return (
@@ -66,20 +73,28 @@ export class Component extends PureComponent {
           <Container as={Grid}>
             <GridRow verticalAlign="middle">
               <GridColumn width={5}>{summaryElement}</GridColumn>
-              <GridColumn as={Form} onSubmit={this.handleSubmit} width={7}>
-                <Form.Group>
-                  {getFormFieldMarkup(
-                    this.props,
-                    this.persistInputChange,
-                    false,
-                    true
-                  )}
-                </Form.Group>
+              <GridColumn floated="right" width={7}>
+                {isDisplayedAsModal ? (
+                  searchBarAsModal
+                ) : (
+                  <Form onSubmit={this.handleSubmit}>
+                    <Form.Group>
+                      {getFormFieldMarkup(
+                        this.props,
+                        this.persistInputChange,
+                        false,
+                        true
+                      )}
+                    </Form.Group>
+                  </Form>
+                )}
               </GridColumn>
             </GridRow>
           </Container>
         </div>
       );
+    } else if (isDisplayedAsModal) {
+      return searchBarAsModal;
     }
 
     return (
@@ -103,6 +118,7 @@ Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
+  mobileSummaryElement: null,
   modalTrigger: <Icon name={ICON_NAMES.SEARCH} />,
   onSubmit: Function.prototype,
   isDisplayedAsModal: false,
@@ -115,7 +131,7 @@ Component.defaultProps = {
       Search
     </Button>
   ),
-  summaryElement: <div />,
+  summaryElement: null,
 };
 /* eslint react/no-unused-prop-types: 0 */
 Component.propTypes = {
@@ -161,6 +177,8 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The summary element to display in the mobile modal  */
+  mobileSummaryElement: PropTypes.node,
   /** The element to be clicked to display the modal. */
   modalTrigger: PropTypes.node,
   /** The function to call when the search bar is submitted.

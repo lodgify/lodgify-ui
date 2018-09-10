@@ -60,10 +60,29 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 const { guestsOptions, locationOptions } = require('./mock-data/options');
 
 <SearchBar
+  //isFixed // Please uncomment "isFixed" to see exmaple
   isShowingLocationDropdown={false}
   guestsOptions={guestsOptions}
-  isFixed
   searchButton={<Button isRounded isCompact>Availability</Button>}
+  summaryElement={
+    <div>Property information</div>
+  }
+/> 
+```
+
+#### Fixed with mobile
+```jsx
+const { guestsOptions, locationOptions } = require('./mock-data/options');
+
+<SearchBar
+  //isFixed // Please uncomment "isFixed" to see exmaple
+  isDisplayedAsModal
+  isShowingLocationDropdown={false}
+  guestsOptions={guestsOptions}
+  modalTrigger={<Button isPositionedRight isRounded isCompact>Availability</Button>}
+  mobileSummaryElement={
+    <div>Property information for mobile modal</div>
+  }
   summaryElement={
     <div>Property information</div>
   }

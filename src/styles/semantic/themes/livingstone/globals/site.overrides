@@ -416,7 +416,7 @@ blockquote.ui.quote .row {
 
     // Styling
     background: #fff;
-    z-index: 99999;
+    z-index: 999;
     padding: 20px 0;
 
     box-shadow: 0 -4px 9px -6px rgba(0, 0, 0, 0.29);

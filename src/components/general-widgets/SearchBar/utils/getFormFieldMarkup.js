@@ -65,7 +65,7 @@ export const getFormFieldMarkup = (
           name="dates"
           onChange={onDatePickerChange}
           startDatePlaceholderText="Check-in"
-          willOpenAbove
+          willOpenAbove={isDropdownUpward}
         />
       </Form.Field>
       <Form.Field width={defaultColumnWidth}>
