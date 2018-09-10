@@ -78,3 +78,17 @@ const { optionsWithImages } = require('./mock-data/options');
 
 <Dropdown label="Properties" options={optionsWithImages} icon="map pin" />;
 ```
+
+#### Indented options
+
+```jsx
+const { indentedOptions } = require('./mock-data/options');
+// [
+//   { text: 'United States', value: 'us' }, 
+//   { text: 'Texas', value: 'tx', indent: 1 },
+//   { text: 'California', value: 'ca', indent: 1 },
+//   { text: 'Los Angeles', value: 'la', indent: 2 },
+// ];
+
+<Dropdown label="Properties" options={indentedOptions} />;
+```
