@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Form, Modal as SemanticModal } from 'semantic-ui-react';
 
+import { Container } from 'layout/Container';
+import { Grid } from 'layout/Grid';
+import { GridColumn } from 'layout/GridColumn';
+import { GridRow } from 'layout/GridRow';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
 import { Modal } from 'elements/Modal';
@@ -26,7 +30,13 @@ export class Component extends PureComponent {
   };
 
   render = () => {
-    const { isDisplayedAsModal, isSticky, modalTrigger } = this.props;
+    const {
+      isDisplayedAsModal,
+      isSticky,
+      modalTrigger,
+      isFixed,
+      summaryElement,
+    } = this.props;
 
     if (isDisplayedAsModal) {
       return (
@@ -41,8 +51,33 @@ export class Component extends PureComponent {
       );
     }
 
+    if (isFixed) {
+      return (
+        <div
+          className={cx('search-bar', {
+            'is-fixed': isFixed,
+          })}
+        >
+          <Container as={Grid}>
+            <GridRow verticalAlign="middle">
+              <GridColumn width={5}>{summaryElement}</GridColumn>
+              <GridColumn as={Form} onSubmit={this.handleSubmit} width={7}>
+                <Form.Group>
+                  {getFormFieldMarkup(
+                    this.props,
+                    this.persistInputChange,
+                    false
+                  )}
+                </Form.Group>
+              </GridColumn>
+            </GridRow>
+          </Container>
+        </div>
+      );
+    }
+
     return (
-      <div className={cx({ 'is-sticky': isSticky })}>
+      <div className={cx('search-bar', { 'is-sticky': isSticky })}>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
             {getFormFieldMarkup(this.props, this.persistInputChange, false)}
@@ -60,6 +95,7 @@ Component.defaultProps = {
   modalTrigger: <Icon name={ICON_NAMES.SEARCH} />,
   onSubmit: Function.prototype,
   isDisplayedAsModal: false,
+  isFixed: false,
   isShowingSummary: false,
   isShowingLocationDropdown: true,
   isSticky: false,
@@ -68,6 +104,7 @@ Component.defaultProps = {
       Search
     </Button>
   ),
+  summaryElement: <div />,
 };
 /* eslint react/no-unused-prop-types: 0 */
 Component.propTypes = {
@@ -92,6 +129,8 @@ Component.propTypes = {
   ).isRequired,
   /** Is the Search Bar displayed in a modal*/
   isDisplayedAsModal: PropTypes.bool,
+  /** Should the Search Bar be fixed to the window */
+  isFixed: PropTypes.bool,
   /** Is Search Bar showing the Location Dropdown. */
   isShowingLocationDropdown: PropTypes.bool,
   /** Is Search Bar showing the Property Summary info. */
@@ -122,4 +161,6 @@ Component.propTypes = {
   onSubmit: PropTypes.func,
   /** The Search Button the Search Bar displays. */
   searchButton: PropTypes.node,
+  /** The element to display in the fixed container */
+  summaryElement: PropTypes.node,
 };

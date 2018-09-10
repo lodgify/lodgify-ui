@@ -55,6 +55,21 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 />
 ```
 
+#### Fixed
+```jsx
+const { guestsOptions, locationOptions } = require('./mock-data/options');
+
+<SearchBar
+  isShowingLocationDropdown={false}
+  guestsOptions={guestsOptions}
+  isFixed
+  searchButton={<Button isRounded isCompact>Availability</Button>}
+  summaryElement={
+    <div>Property information</div>
+  }
+/>
+```
+
 #### Display search bar in a modal
 
 ```jsx

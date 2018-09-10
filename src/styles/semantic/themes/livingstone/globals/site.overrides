@@ -401,3 +401,28 @@ blockquote.ui.quote .row {
     border-radius: 0;
   }
 }
+
+
+/*-------------------
+      Search Bar
+--------------------*/
+.search-bar {
+
+  &.is-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    // Styling
+    background: #fff;
+    z-index: 99999;
+    padding: 20px 0;
+
+    box-shadow: 0 -4px 9px -6px rgba(0, 0, 0, 0.29);
+
+    .ui.form .fields {
+      margin: 0;
+    }
+  }
+}
