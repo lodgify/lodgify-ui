@@ -1,6 +1,6 @@
 {
   "name": "@lodgify/ui",
-  "version": "1.49.0",
+  "version": "1.51.0",
   "description": "React components for building amazing websites with Lodgify",
   "main": "lib/index.js",
   "config": {
@@ -36,6 +36,7 @@
     "styleguide:build": "styleguidist build --config $npm_package_config_styleguide_config",
     "styleguide:dev-server": "styleguidist server --config $npm_package_config_styleguide_config",
     "test": "jest --coverage --config $npm_package_config_jest_config",
+    "test:ci": "npm run test -- --runInBand",
     "test:no-cache": "npm run test -- --no-cache",
     "test:watch": "jest --config $npm_package_config_jest_config --watch"
   },

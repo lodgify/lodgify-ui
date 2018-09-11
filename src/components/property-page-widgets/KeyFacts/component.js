@@ -8,30 +8,33 @@ import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { IconCard } from 'elements/IconCard';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying key facts about a property.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ keyFacts, headingText }) => (
-  <Grid>
-    <GridColumn width={12}>
-      <Heading>{headingText}</Heading>
-    </GridColumn>
-    <GridColumn width={12}>
-      <Label.Group>
-        {keyFacts.map(({ iconName, isDisabled, label }, index) => (
-          <IconCard
-            isDisabled={isDisabled}
-            isFilled
-            key={buildKeyFromStrings(label, index)}
-            label={label}
-            name={iconName}
-          />
-        ))}
-      </Label.Group>
-    </GridColumn>
-  </Grid>
+  <VerticalGutters>
+    <Grid>
+      <GridColumn width={12}>
+        <Heading>{headingText}</Heading>
+      </GridColumn>
+      <GridColumn width={12}>
+        <Label.Group>
+          {keyFacts.map(({ iconName, isDisabled, label }, index) => (
+            <IconCard
+              isDisabled={isDisabled}
+              isFilled
+              key={buildKeyFromStrings(label, index)}
+              label={label}
+              name={iconName}
+            />
+          ))}
+        </Label.Group>
+      </GridColumn>
+    </Grid>
+  </VerticalGutters>
 );
 
 Component.displayName = 'KeyFacts';

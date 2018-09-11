@@ -54,6 +54,20 @@ describe('<Modal />', () => {
         });
       });
     });
+
+    describe('if `props.size` is `small`', () => {
+      it('should get the right props', () => {
+        const wrapper = getModal({ size: 'small' });
+
+        expectComponentToHaveProps(wrapper, {
+          closeIcon: <Icon name={ICON_NAMES.CLOSE} />,
+          content,
+          dimmer: 'inverted',
+          size: 'small',
+          trigger,
+        });
+      });
+    });
   });
 
   it('should have `displayName` Modal', () => {

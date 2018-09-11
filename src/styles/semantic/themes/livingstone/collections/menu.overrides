@@ -66,6 +66,11 @@
      States
 ---------------*/
 
+  /* Selectable Item */
+  .item.is-selectable {
+    user-select: auto;
+  }
+
   /* Hovered Item */
 
   /* Pressed Item */
@@ -187,15 +192,18 @@
 ---------------*/
 
 /* Inverted */
-.ui.inverted.grey.menu {
-  background-color: @footerBottomBackground;
+.ui.inverted.menu {
+  background-color: @invertedBottomBackground;
 
   /* Inverted Sub Menu */
 
-  /* Inverted Hover */
-  .item:hover {
-    background-color: @footerBottomBackground;
-    color: @footerBottomMenuColor;
+  .right.menu {
+
+    /* Inverted Hover */
+    .item:hover {
+      background-color: @invertedBottomBackground;
+      color: @invertedBottomMenuColor;
+    }
   }
 }
 

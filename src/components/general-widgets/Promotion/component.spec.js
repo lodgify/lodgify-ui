@@ -14,6 +14,7 @@ import { Paragraph } from 'typography/Paragraph';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as Promotion } from './component';
 
@@ -31,15 +32,22 @@ const getPromotionAsStacked = () =>
   shallow(<Promotion {...componentProps} isDisplayedStacked />);
 
 describe('The `Promotion` component', () => {
-  it('should render a `Segment` component', () => {
+  it('should have `VerticalGutters` component as a wrapper', () => {
     const wrapper = getPromotion();
 
-    expectComponentToBe(wrapper, Segment);
+    expectComponentToBe(wrapper, VerticalGutters);
+  });
+  describe('the `VerticalGutters` component', () => {
+    it('should have `Segment` as its only children', () => {
+      const wrapper = getPromotion();
+
+      expectComponentToHaveChildren(wrapper, Segment);
+    });
   });
 
   describe('the `Segment`', () => {
     it('should have the right props', () => {
-      const wrapper = getPromotion();
+      const wrapper = getPromotion().find(Segment);
 
       expectComponentToHaveProps(wrapper, {
         className: 'is-promotion',
@@ -49,7 +57,7 @@ describe('The `Promotion` component', () => {
     });
 
     it('should have the right children', () => {
-      const wrapper = getPromotion();
+      const wrapper = getPromotion().find(Segment);
 
       expectComponentToHaveChildren(wrapper, Grid);
     });

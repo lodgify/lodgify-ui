@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Button } from 'elements/Button';
 import { SearchBar } from 'general-widgets/SearchBar';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget allowing a user to search availability for a specific property.
@@ -14,15 +15,17 @@ export const Component = ({
   locationOptions,
   onSubmit,
 }) => (
-  <SearchBar
-    guestsOptions={guestsOptions}
-    isShowingLocationDropdown={false}
-    isShowingSummary
-    isSticky
-    locationOptions={locationOptions}
-    onSubmit={onSubmit}
-    searchButton={searchButton}
-  />
+  <VerticalGutters>
+    <SearchBar
+      guestsOptions={guestsOptions}
+      isShowingLocationDropdown={false}
+      isShowingSummary
+      isSticky
+      locationOptions={locationOptions}
+      onSubmit={onSubmit}
+      searchButton={searchButton}
+    />
+  </VerticalGutters>
 );
 
 Component.displayName = 'PropertySearchBar';

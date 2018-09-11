@@ -14,6 +14,7 @@ import { GridRow } from 'layout/GridRow';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Table } from 'collections/Table';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getMobileRateRowMarkup } from './utils/getMobileRateRowMarkup';
 import { getRateCategoryHeadingMarkup } from './utils/getRateCategoryHeadingMarkup';
@@ -33,7 +34,7 @@ export const Component = ({
   roomTypeInputLabel,
   roomTypes,
 }) => (
-  <div>
+  <VerticalGutters>
     <Grid padded>
       {roomTypes &&
         getRoomTypeDropdownMarkup(
@@ -83,7 +84,7 @@ export const Component = ({
         ]}
       />
     </ShowOnDesktop>
-  </div>
+  </VerticalGutters>
 );
 
 Component.defaultProps = {

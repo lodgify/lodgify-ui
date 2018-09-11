@@ -21,6 +21,7 @@ import {
   NOTES,
   VIEW_MORE,
 } from 'utils/default-strings';
+import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying the payment information of a property.
@@ -44,78 +45,80 @@ export const Component = ({
   taxesText,
   taxesHeadingText,
 }) => (
-  <Grid stackable>
-    <GridRow>
-      <GridColumn width={12}>
-        <Heading>{headingText}</Heading>
-      </GridColumn>
-    </GridRow>
-    <GridRow>
-      {!!paymentScheduleText && (
-        <GridColumn width={6}>
-          <Heading size="small">{paymentScheduleHeadingText}</Heading>
-          <Paragraph size="medium">{paymentScheduleText}</Paragraph>
-        </GridColumn>
-      )}
-      {!!cancellationPolicyText && (
-        <GridColumn width={6}>
-          <Heading size="small">{cancellationPolicyHeadingText}</Heading>
-          <Paragraph size="medium">{cancellationPolicyText}</Paragraph>
-        </GridColumn>
-      )}
-    </GridRow>
-    <GridRow>
-      {!!cleaningCharge && (
-        <GridColumn width={6}>
-          <Heading size="small">{cleaningChargeHeadingText}</Heading>
-          <Statistic horizontal size="mini" text value={cleaningCharge} />
-        </GridColumn>
-      )}
-      {!!taxesText && (
-        <GridColumn width={6}>
-          <Heading size="small">{taxesHeadingText}</Heading>
-          <Statistic
-            horizontal
-            label={taxesDescriptionText}
-            size="tiny"
-            text
-            value={taxesText}
-          />
-        </GridColumn>
-      )}
-    </GridRow>
-    {!!damageDepositText && (
+  <VerticalGutters>
+    <Grid stackable>
       <GridRow>
         <GridColumn width={12}>
-          <Heading size="small">{damageDepositHeadingText}</Heading>
-          <Paragraph size="medium">{damageDepositText}</Paragraph>
+          <Heading>{headingText}</Heading>
         </GridColumn>
       </GridRow>
-    )}
-    {!!notesText && (
       <GridRow>
-        <GridColumn width={12}>
-          <Heading size="small">{notesHeadingText}</Heading>
-          <Paragraph size="medium">{notesText}</Paragraph>
-        </GridColumn>
+        {!!paymentScheduleText && (
+          <GridColumn width={6}>
+            <Heading size="small">{paymentScheduleHeadingText}</Heading>
+            <Paragraph size="medium">{paymentScheduleText}</Paragraph>
+          </GridColumn>
+        )}
+        {!!cancellationPolicyText && (
+          <GridColumn width={6}>
+            <Heading size="small">{cancellationPolicyHeadingText}</Heading>
+            <Paragraph size="medium">{cancellationPolicyText}</Paragraph>
+          </GridColumn>
+        )}
       </GridRow>
-    )}
-    {!!extraNotesText && (
       <GridRow>
-        <GridColumn width={12}>
-          <Modal trigger={<Link>{modalTriggerText}</Link>}>
-            {getParagraphsFromStrings(extraNotesText).map(
-              (paragraphText, index) => (
-                <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-                  {paragraphText}
-                </Paragraph>
-              )
-            )}
-          </Modal>
-        </GridColumn>
+        {!!cleaningCharge && (
+          <GridColumn width={6}>
+            <Heading size="small">{cleaningChargeHeadingText}</Heading>
+            <Statistic horizontal size="mini" text value={cleaningCharge} />
+          </GridColumn>
+        )}
+        {!!taxesText && (
+          <GridColumn width={6}>
+            <Heading size="small">{taxesHeadingText}</Heading>
+            <Statistic
+              horizontal
+              label={taxesDescriptionText}
+              size="tiny"
+              text
+              value={taxesText}
+            />
+          </GridColumn>
+        )}
       </GridRow>
-    )}
-  </Grid>
+      {!!damageDepositText && (
+        <GridRow>
+          <GridColumn width={12}>
+            <Heading size="small">{damageDepositHeadingText}</Heading>
+            <Paragraph size="medium">{damageDepositText}</Paragraph>
+          </GridColumn>
+        </GridRow>
+      )}
+      {!!notesText && (
+        <GridRow>
+          <GridColumn width={12}>
+            <Heading size="small">{notesHeadingText}</Heading>
+            <Paragraph size="medium">{notesText}</Paragraph>
+          </GridColumn>
+        </GridRow>
+      )}
+      {!!extraNotesText && (
+        <GridRow>
+          <GridColumn width={12}>
+            <Modal trigger={<Link>{modalTriggerText}</Link>}>
+              {getParagraphsFromStrings(extraNotesText).map(
+                (paragraphText, index) => (
+                  <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
+                    {paragraphText}
+                  </Paragraph>
+                )
+              )}
+            </Modal>
+          </GridColumn>
+        </GridRow>
+      )}
+    </Grid>
+  </VerticalGutters>
 );
 
 Component.displayName = 'PaymentInformation';

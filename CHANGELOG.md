@@ -1,3 +1,46 @@
+# [1.51.0](https://github.com/lodgify/lodgify-ui/compare/v1.50.1...v1.51.0) (2018-09-10)
+
+
+### Features
+
+* **Dropdown:** add support for items to have indentation ([1a896f6](https://github.com/lodgify/lodgify-ui/commit/1a896f6))
+
+## [1.50.1](https://github.com/lodgify/lodgify-ui/compare/v1.50.0...v1.50.1) (2018-09-07)
+
+
+### Bug Fixes
+
+* **Card:** stop featured images from growing to 100% of container ([f016c17](https://github.com/lodgify/lodgify-ui/commit/f016c17))
+
+# [1.50.0](https://github.com/lodgify/lodgify-ui/compare/v1.49.3...v1.50.0) (2018-09-07)
+
+
+### Features
+
+* **link:** expose themable custom properties for link ([ad1253c](https://github.com/lodgify/lodgify-ui/commit/ad1253c))
+
+## [1.49.3](https://github.com/lodgify/lodgify-ui/compare/v1.49.2...v1.49.3) (2018-09-06)
+
+
+### Bug Fixes
+
+* **Footer:** add selectable class to selectable components ([b2a411a](https://github.com/lodgify/lodgify-ui/commit/b2a411a))
+* **Form:** remove underline form form action ([5d61d86](https://github.com/lodgify/lodgify-ui/commit/5d61d86))
+
+## [1.49.2](https://github.com/lodgify/lodgify-ui/compare/v1.49.1...v1.49.2) (2018-09-06)
+
+
+### Bug Fixes
+
+* **card:** fix height of featured cards ([f553d72](https://github.com/lodgify/lodgify-ui/commit/f553d72))
+
+## [1.49.1](https://github.com/lodgify/lodgify-ui/compare/v1.49.0...v1.49.1) (2018-09-05)
+
+
+### Bug Fixes
+
+* **Footer:** social icon hover state ([5101973](https://github.com/lodgify/lodgify-ui/commit/5101973))
+
 # [1.49.0](https://github.com/lodgify/lodgify-ui/compare/v1.48.0...v1.49.0) (2018-09-05)
 
 
