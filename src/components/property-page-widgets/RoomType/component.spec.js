@@ -322,7 +322,6 @@ describe('<RoomType />', () => {
       expectComponentToHaveProps(wrapper, {
         trigger: <Link>More Info</Link>,
         size: 'small',
-        className: 'with-room-type',
       });
     });
   });
@@ -477,7 +476,6 @@ describe('`RoomType` in mobile view', () => {
             size="small"
           />
         ),
-        className: 'with-room-type',
       });
     });
   });

@@ -61,7 +61,6 @@ const Component = ({
                 width={2}
               >
                 <Modal
-                  className="with-room-type"
                   trigger={
                     <Icon
                       color="yellow"
@@ -92,11 +91,7 @@ const Component = ({
                   verticalAlignContent="bottom"
                   width={4}
                 >
-                  <Modal
-                    className="with-room-type"
-                    size="small"
-                    trigger={<Link>More Info</Link>}
-                  >
+                  <Modal size="small" trigger={<Link>More Info</Link>}>
                     {getModalContentMarkup(
                       amenities,
                       onClickCheckAvailability,
