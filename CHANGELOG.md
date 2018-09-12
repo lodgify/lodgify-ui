@@ -1,3 +1,10 @@
+# [1.51.0](https://github.com/lodgify/lodgify-ui/compare/v1.50.1...v1.51.0) (2018-09-10)
+
+
+### Features
+
+* **Dropdown:** add support for items to have indentation ([1a896f6](https://github.com/lodgify/lodgify-ui/commit/1a896f6))
+
 ## [1.50.1](https://github.com/lodgify/lodgify-ui/compare/v1.50.0...v1.50.1) (2018-09-07)
 
 
