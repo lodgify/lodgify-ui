@@ -40,7 +40,7 @@
 @themeLinkColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-color";
 @themeLinkColorDefault: @primaryColor;
 
-@themeLinkHoverColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-hover-color";
+@themeLinkHoverColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-darker-color";
 @themeLinkHoverColorDefault: @darkPrimaryColor;
 
 /*--------------
