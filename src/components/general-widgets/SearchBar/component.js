@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Form } from 'semantic-ui-react';
 
+import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
 import { Container } from 'layout/Container';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -31,6 +32,7 @@ export class Component extends PureComponent {
   render = () => {
     const {
       isDisplayedAsModal,
+      modalHeadingText,
       modalSummaryElement,
       modalTrigger,
       isFixed,
@@ -40,6 +42,7 @@ export class Component extends PureComponent {
     const searchBarAsModal =
       isDisplayedAsModal &&
       getSearchBarModal(
+        modalHeadingText,
         modalTrigger,
         modalSummaryElement,
         this.handleSubmit,
@@ -104,6 +107,7 @@ Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
+  modalHeadingText: CHECK_OUR_AVAILABILITY,
   modalSummaryElement: null,
   modalTrigger: <Icon name={ICON_NAMES.SEARCH} />,
   onSubmit: Function.prototype,
@@ -160,6 +164,8 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The heading text to display in the modal */
+  modalHeadingText: PropTypes.string,
   /** The summary element to display in the mobile modal  */
   modalSummaryElement: PropTypes.node,
   /** The element to be clicked to display the modal. */

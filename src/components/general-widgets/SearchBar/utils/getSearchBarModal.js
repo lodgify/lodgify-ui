@@ -8,6 +8,7 @@ import { Divider } from 'elements/Divider';
 import { getFormFieldMarkup } from './getFormFieldMarkup';
 
 /**
+ * @param {string}    modalHeadingText
  * @param {Node}      modalTrigger
  * @param {Node}      modalSummaryElement
  * @param {Function}  handleSubmit
@@ -16,6 +17,7 @@ import { getFormFieldMarkup } from './getFormFieldMarkup';
  * @return {Object}
  */
 export const getSearchBarModal = (
+  modalHeadingText,
   modalTrigger,
   modalSummaryElement,
   handleSubmit,
@@ -30,7 +32,7 @@ export const getSearchBarModal = (
           <Divider hasLine />
         </div>
       ) : (
-        <Heading size="small">Check our availability</Heading>
+        <Heading size="small">{modalHeadingText}</Heading>
       )}
       <Form onSubmit={handleSubmit}>
         {getFormFieldMarkup(props, persistInputChange, true, false)}

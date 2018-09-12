@@ -13,6 +13,7 @@ import { Divider } from 'elements/Divider';
 
 import { getSearchBarModal } from './getSearchBarModal';
 
+const modalHeadingText = 'Hello world';
 const modalTrigger = <div />;
 const modalSummaryElement = null;
 const handleSubmit = () => {};
@@ -23,6 +24,7 @@ const getModalMarkup = (alternativeProps = {}) =>
   shallow(
     <div>
       {getSearchBarModal(
+        modalHeadingText,
         modalTrigger,
         alternativeProps.modalSummaryElement || modalSummaryElement,
         handleSubmit,
@@ -93,7 +95,7 @@ describe('getFormFieldMarkup', () => {
     it('should have the right children', () => {
       const wrapper = getHeading();
 
-      expectComponentToHaveChildren(wrapper, 'Check our availability');
+      expectComponentToHaveChildren(wrapper, modalHeadingText);
     });
   });
 
