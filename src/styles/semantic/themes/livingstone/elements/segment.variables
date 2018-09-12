@@ -58,6 +58,7 @@
 /* Ordinality */
 
 /* Full bleed */
+@backgroundImageGradient: linear-gradient(0deg, rgba(255, 255, 255, 0) 51%, rgba(0, 0, 0, 0.5) 100%);
 
 /* Is Promotion */
 @promotionBackgroundColor: @yellow;

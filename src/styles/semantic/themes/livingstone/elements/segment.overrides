@@ -70,6 +70,20 @@
   background-size: cover;
   height: 100vh;
   padding: 0;
+
+  &.has-gradient {
+    position: relative;
+
+    &:before {
+      background-image: @backgroundImageGradient;
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
 }
 
 /* Is Promotion */
