@@ -59,7 +59,7 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 ```jsx
 const { guestsOptions } = require('./mock-data/options');
 
-// Please  set this to true to see the example
+// Please set this to true to see the example
 const displayAsFixed = false;
 
 <SearchBar
@@ -73,11 +73,11 @@ const displayAsFixed = false;
 /> 
 ```
 
-#### Fixed with mobile
+#### With summary element in modal and search bar fixed
 ```jsx
 const { guestsOptions } = require('./mock-data/options');
 
-// Please  set this to true to see the example
+// Please set this to true to see the example
 const displayAsFixed = false;
 
 <SearchBar
@@ -86,7 +86,7 @@ const displayAsFixed = false;
   isShowingLocationDropdown={false}
   guestsOptions={guestsOptions}
   modalTrigger={<Button isPositionedRight isRounded isCompact>Availability</Button>}
-  mobileSummaryElement={
+  modalSummaryElement={
     <div>Property information for mobile modal</div>
   }
   summaryElement={

@@ -9,7 +9,7 @@ import { getFormFieldMarkup } from './getFormFieldMarkup';
 
 /**
  * @param {Node}      modalTrigger
- * @param {Node}      mobileSummaryElement
+ * @param {Node}      modalSummaryElement
  * @param {Function}  handleSubmit
  * @param {Function}  persistInputChange
  * @param {Object[]}  props
@@ -17,16 +17,16 @@ import { getFormFieldMarkup } from './getFormFieldMarkup';
  */
 export const getSearchBarModal = (
   modalTrigger,
-  mobileSummaryElement,
+  modalSummaryElement,
   handleSubmit,
   persistInputChange,
   props
 ) => (
   <Modal isFullscreen trigger={modalTrigger}>
     <SemanticModal.Content>
-      {mobileSummaryElement ? (
+      {modalSummaryElement ? (
         <div>
-          {mobileSummaryElement}
+          {modalSummaryElement}
           <Divider hasLine />
         </div>
       ) : (

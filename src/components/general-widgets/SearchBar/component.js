@@ -32,7 +32,7 @@ export class Component extends PureComponent {
     const {
       isDisplayedAsModal,
       isSticky,
-      mobileSummaryElement,
+      modalSummaryElement,
       modalTrigger,
       isFixed,
       summaryElement,
@@ -42,7 +42,7 @@ export class Component extends PureComponent {
       isDisplayedAsModal &&
       getSearchBarModal(
         modalTrigger,
-        mobileSummaryElement,
+        modalSummaryElement,
         this.handleSubmit,
         this.persistInputChange,
         this.props
@@ -105,7 +105,7 @@ Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
-  mobileSummaryElement: null,
+  modalSummaryElement: null,
   modalTrigger: <Icon name={ICON_NAMES.SEARCH} />,
   onSubmit: Function.prototype,
   isDisplayedAsModal: false,
@@ -143,7 +143,7 @@ Component.propTypes = {
   ).isRequired,
   /** Is the Search Bar displayed in a modal*/
   isDisplayedAsModal: PropTypes.bool,
-  /** Should the Search Bar be fixed to the window */
+  /** Is the Search Bar fixed to the bottom of the window */
   isFixed: PropTypes.bool,
   /** Is Search Bar showing the Location Dropdown. */
   isShowingLocationDropdown: PropTypes.bool,
@@ -165,7 +165,7 @@ Component.propTypes = {
     })
   ).isRequired,
   /** The summary element to display in the mobile modal  */
-  mobileSummaryElement: PropTypes.node,
+  modalSummaryElement: PropTypes.node,
   /** The element to be clicked to display the modal. */
   modalTrigger: PropTypes.node,
   /** The function to call when the search bar is submitted.

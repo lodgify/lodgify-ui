@@ -14,7 +14,7 @@ import { Divider } from 'elements/Divider';
 import { getSearchBarModal } from './getSearchBarModal';
 
 const modalTrigger = <div />;
-const mobileSummaryElement = null;
+const modalSummaryElement = null;
 const handleSubmit = () => {};
 const persistInputChange = () => {};
 const props = {};
@@ -24,7 +24,7 @@ const getModalMarkup = (alternativeProps = {}) =>
     <div>
       {getSearchBarModal(
         modalTrigger,
-        alternativeProps.mobileSummaryElement || mobileSummaryElement,
+        alternativeProps.modalSummaryElement || modalSummaryElement,
         handleSubmit,
         persistInputChange,
         props
@@ -67,7 +67,7 @@ describe('getFormFieldMarkup', () => {
 
     it('should have the right children if mobile summary is defined', () => {
       const wrapper = getModalMarkup({
-        mobileSummaryElement: <div />,
+        modalSummaryElement: <div />,
       })
         .find(SemanticModal.Content)
         .at(0);
@@ -77,26 +77,37 @@ describe('getFormFieldMarkup', () => {
   });
 
   describe('the first `Heading`', () => {
-    it('should have the right props', () => {
-      const wrapper = getModalMarkup()
+    const getHeading = () =>
+      getModalMarkup()
         .find(Heading)
         .at(0);
+
+    it('should have the right props', () => {
+      const wrapper = getHeading();
 
       expectComponentToHaveProps(wrapper, {
         size: 'small',
       });
     });
+
+    it('should have the right children', () => {
+      const wrapper = getHeading();
+
+      expectComponentToHaveChildren(wrapper, 'Check our availability');
+    });
   });
 
-  describe('the mobile summary when defined', () => {
-    it('should have the right children', () => {
-      const wrapper = getModalMarkup({
-        mobileSummaryElement: <div />,
-      })
-        .find('div')
-        .at(0);
+  describe('if `props.modalSummaryElement` is passed', () => {
+    describe('the first `div` element', () => {
+      it('should have the right children', () => {
+        const wrapper = getModalMarkup({
+          modalSummaryElement: <div />,
+        })
+          .find('div')
+          .at(0);
 
-      expectComponentToHaveChildren(wrapper, 'div', Divider);
+        expectComponentToHaveChildren(wrapper, 'div', Divider);
+      });
     });
   });
 });
