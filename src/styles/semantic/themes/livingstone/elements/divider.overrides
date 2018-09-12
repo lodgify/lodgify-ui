@@ -1,0 +1,10 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.horizontal.divider {
+
+  &.is-size-small {
+    margin: @sizeSmallMargin;
+  }
+}
