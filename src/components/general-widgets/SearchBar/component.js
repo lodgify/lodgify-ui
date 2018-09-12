@@ -31,7 +31,6 @@ export class Component extends PureComponent {
   render = () => {
     const {
       isDisplayedAsModal,
-      isSticky,
       modalSummaryElement,
       modalTrigger,
       isFixed,
@@ -85,7 +84,7 @@ export class Component extends PureComponent {
     }
 
     return (
-      <div className={cx('search-bar', { 'is-sticky': isSticky })}>
+      <div className="search-bar">
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
             {getFormFieldMarkup(
@@ -112,7 +111,6 @@ Component.defaultProps = {
   isFixed: false,
   isShowingSummary: false,
   isShowingLocationDropdown: true,
-  isSticky: false,
   searchButton: (
     <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
       Search
@@ -149,8 +147,6 @@ Component.propTypes = {
   isShowingLocationDropdown: PropTypes.bool,
   /** Is Search Bar showing the Property Summary info. */
   isShowingSummary: PropTypes.bool,
-  /** Is Search Bar going to render in sticky mode. */
-  isSticky: PropTypes.bool,
   /** The options which the user can select in the location field. */
   locationOptions: PropTypes.arrayOf(
     PropTypes.shape({

@@ -48,16 +48,6 @@ describe('<SearchBar />', () => {
       expectComponentToHaveChildren(wrapper, Form);
     });
 
-    describe('if `props.isSticky` is true', () => {
-      it('should have the right props', () => {
-        const wrapper = getSearchBar({ isSticky: true });
-
-        expectComponentToHaveProps(wrapper, {
-          className: 'search-bar is-sticky',
-        });
-      });
-    });
-
     describe('if `props.isFixed` is true', () => {
       it('should have the right props', () => {
         const wrapper = getSearchBar({ isFixed: true });

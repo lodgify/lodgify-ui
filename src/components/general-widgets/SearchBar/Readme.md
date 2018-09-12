@@ -44,17 +44,6 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 />
 ```
 
-#### Sticky
-```jsx
-const { guestsOptions, locationOptions } = require('./mock-data/options');
-
-<SearchBar
-  guestsOptions={guestsOptions}
-  locationOptions={locationOptions}
-  isSticky
-/>
-```
-
 #### Fixed
 ```jsx
 const { guestsOptions } = require('./mock-data/options');
