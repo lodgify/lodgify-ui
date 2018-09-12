@@ -295,7 +295,7 @@ header > .ui.menu.text {
 footer {
 
   .top-navigation {
-    background-color: @black;
+    background-color: @footerTopBackground;
   }
 
   .bottom-navigation {

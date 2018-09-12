@@ -25,6 +25,8 @@
 @footerBottomBackground: @greyEight;
 @footerBottomMenuColor: @greySix;
 
+@footerTopBackground: @black;
+
 /* Divider */
 @footerBottomMenuDividerWidth: 100%;
 
@@ -164,7 +166,8 @@
 /* Inverted Sub Menu */
 
 /* Inverted Hover */
-@invertedHoverBackground: @invertedBackground;
+@invertedHoverBackground: @footerTopBackground;
+@invertedMenuPressedBackground: @footerTopBackground;
 @invertedHoverColor: @invertedItemTextColor;
 
 /* Pressed */
