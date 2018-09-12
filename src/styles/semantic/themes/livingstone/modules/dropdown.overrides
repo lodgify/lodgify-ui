@@ -107,12 +107,12 @@
 
     /*  Selection Menu */
     &:not(.upward) .menu {
-      margin-top: @menuMarginTop;
+      margin-top: @menuVerticalMargin;
     }
 
     /* if upward */
     &.upward .menu {
-      margin-bottom: @menuMarginBottom;
+      margin-bottom: @menuVerticalMargin;
     }
 
     // Partial reimplementation of styles for

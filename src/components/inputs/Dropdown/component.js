@@ -46,7 +46,7 @@ export class Component extends PureComponent {
       error,
       icon,
       isDisabled,
-      isUpward,
+      willOpenAbove,
       isValid,
       label,
       options,
@@ -79,7 +79,7 @@ export class Component extends PureComponent {
           open={isOpen}
           options={adaptedOptions}
           selection
-          upward={isUpward}
+          upward={willOpenAbove}
         />
         {!hasImages &&
           label && <label onClick={() => this.handleOpen(true)}>{label}</label>}
@@ -94,13 +94,13 @@ Component.defaultProps = {
   error: false,
   icon: null,
   isDisabled: false,
-  isUpward: false,
   isValid: false,
   label: '',
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
   options: [],
+  willOpenAbove: false,
 };
 
 Component.propTypes = {
@@ -110,8 +110,6 @@ Component.propTypes = {
   icon: PropTypes.string,
   /** A disabled dropdown does not allow user interaction. */
   isDisabled: PropTypes.bool,
-  /** Should the dropdown display upward */
-  isUpward: PropTypes.bool,
   /** Is the dropdown in a valid state. */
   isValid: PropTypes.bool,
   /** The label for the dropdown. Not displayed if options have images. */
@@ -142,4 +140,6 @@ Component.propTypes = {
       ]),
     })
   ),
+  /** Should the dropdown display upward */
+  willOpenAbove: PropTypes.bool,
 };
