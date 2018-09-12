@@ -81,6 +81,7 @@ describe('getModalContentMarkup', () => {
         wrapper,
         Heading,
         'div',
+        Divider,
         Slideshow,
         Paragraph,
         List,
@@ -189,7 +190,7 @@ describe('getModalContentMarkup', () => {
     it('should have the right children', () => {
       const wrapper = getRatingContainer();
 
-      expectComponentToHaveChildren(wrapper, ratingNumber, Rating);
+      expectComponentToHaveChildren(wrapper, Rating, 'span');
     });
   });
 

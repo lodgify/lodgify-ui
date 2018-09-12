@@ -37,14 +37,15 @@ export const getModalContentMarkup = (
   <Modal.Content>
     <Heading>{name}</Heading>
     <div className="rating-container">
-      {ratingNumber}
       <Rating
         disabled
         maxRating={5}
         rating={Math.round(ratingNumber)}
-        size="tiny"
+        size="small"
       />
+      <span>{Math.round(ratingNumber)}</span>
     </div>
+    <Divider size="small" />
     <Slideshow additionalClass="no-shadow" images={slideShowImages} />
     <Paragraph>{description}</Paragraph>
     <List horizontal>

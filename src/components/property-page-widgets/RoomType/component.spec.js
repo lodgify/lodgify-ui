@@ -374,7 +374,9 @@ describe('<RoomType />', () => {
 
   describe('the `span`', () => {
     it('should have the right children', () => {
-      const wrapper = getWrappedRoomType().find('span');
+      const wrapper = getWrappedRoomType()
+        .find('span')
+        .at(2);
 
       expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
