@@ -37,7 +37,7 @@ const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
 const nightPrice = '$1010';
-const ratingNumber = '3';
+const ratingNumber = '3.2';
 const slideShowImages = [
   {
     alternativeText: 'Two cats',
@@ -80,7 +80,8 @@ describe('getModalContentMarkup', () => {
       expectComponentToHaveChildren(
         wrapper,
         Heading,
-        'div',
+        Rating,
+        'span',
         Divider,
         Slideshow,
         Paragraph,
@@ -175,22 +176,13 @@ describe('getModalContentMarkup', () => {
     });
   });
 
-  describe('the first `div.rating-container`', () => {
-    const getRatingContainer = () =>
-      getMarkup()
-        .find('div.rating-container')
+  describe('the first `span`', () => {
+    it('should have the right children', () => {
+      const wrapper = getMarkup()
+        .find('span')
         .at(0);
 
-    it('should have the right props', () => {
-      const wrapper = getRatingContainer();
-
-      expectComponentToHaveProps(wrapper, { className: 'rating-container' });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getRatingContainer();
-
-      expectComponentToHaveChildren(wrapper, Rating, 'span');
+      expectComponentToHaveChildren(wrapper, Math.round(ratingNumber) + '');
     });
   });
 
