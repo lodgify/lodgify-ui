@@ -1,18 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Modal as SemanticModal } from 'semantic-ui-react';
 
-import { Grid } from 'layout/Grid';
-import { GridColumn } from 'layout/GridColumn';
-import { Heading } from 'typography/Heading';
-import { Link } from 'elements/Link';
-import { Modal } from 'elements/Modal';
 import { VIEW_MORE } from 'utils/default-strings';
 import { VerticalGutters } from 'layout/VerticalGutters';
 
-import { getDefaultItems } from './utils/getDefaultItems';
-import { hasExtraItems } from './utils/hasExtraItems';
-import { getCategoryMarkup } from './utils/getCategoryMarkup';
+import { getAmenityMarkup } from './utils/getAmenityMarkup';
 
 /**
  * The standard widget for displaying the amenities of a property.
@@ -20,39 +12,38 @@ import { getCategoryMarkup } from './utils/getCategoryMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   amenities,
+  hasExtraItemsInModal,
+  hasVerticalGutters,
   headingText,
   isStacked,
   modalTriggerText,
-}) => (
-  <VerticalGutters>
-    <Grid stackable>
-      {headingText && (
-        <GridColumn width={12}>
-          <Heading>{headingText}</Heading>
-        </GridColumn>
+}) =>
+  hasVerticalGutters ? (
+    <VerticalGutters>
+      {getAmenityMarkup(
+        amenities,
+        hasExtraItemsInModal,
+        headingText,
+        isStacked,
+        modalTriggerText
       )}
-      {getDefaultItems(amenities, isStacked).map((amenity, index) =>
-        getCategoryMarkup(amenity, index, isStacked)
-      )}
-      {hasExtraItems(amenities, isStacked) && (
-        <GridColumn width={12}>
-          <Modal trigger={<Link>{modalTriggerText}</Link>}>
-            <SemanticModal.Content>
-              <Grid padded stackable>
-                {amenities.map(getCategoryMarkup)}
-              </Grid>
-            </SemanticModal.Content>
-          </Modal>
-        </GridColumn>
-      )}
-    </Grid>
-  </VerticalGutters>
-);
+    </VerticalGutters>
+  ) : (
+    getAmenityMarkup(
+      amenities,
+      hasExtraItemsInModal,
+      headingText,
+      isStacked,
+      modalTriggerText
+    )
+  );
 
 Component.displayName = 'Amenities';
 
 Component.defaultProps = {
+  hasExtraItemsInModal: false,
   headingText: null,
+  hasVerticalGutters: true,
   isStacked: false,
   modalTriggerText: VIEW_MORE,
 };
@@ -71,6 +62,10 @@ Component.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** Are the extra items displayed in a modal. */
+  hasExtraItemsInModal: PropTypes.bool,
+  /** Does the component have vertical gutters */
+  hasVerticalGutters: PropTypes.bool,
   /** The text to display as a heading at the top of the amenities. */
   headingText: PropTypes.string,
   /** Are the amenities displayed stacked on top of one another */

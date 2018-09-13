@@ -201,3 +201,7 @@
 @pointingMenuMinWidth: 100%;
 
 /* Pointing Upward */
+
+/* Indentation */
+@indentationLevelOne: @10px;
+@indentationLevelTwo: @20px;

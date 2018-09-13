@@ -66,6 +66,11 @@
      States
 ---------------*/
 
+  /* Selectable Item */
+  .item.is-selectable {
+    user-select: auto;
+  }
+
   /* Hovered Item */
 
   /* Pressed Item */
@@ -290,7 +295,7 @@ header > .ui.menu.text {
 footer {
 
   .top-navigation {
-    background-color: @black;
+    background-color: @footerTopBackground;
   }
 
   .bottom-navigation {

@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { Card, Form } from 'semantic-ui-react';
 import { size, forEach } from 'lodash';
 
-import { Heading } from 'typography/Heading';
 import { Button } from 'elements/Button';
+import { Heading } from 'typography/Heading';
+import { Link } from 'elements/Link';
 
 import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
 import { getIsRequiredError } from './utils/getIsRequiredError';
@@ -69,7 +70,7 @@ export class Component extends PureComponent {
           <Form onSubmit={this.handleSubmit}>
             {Children.map(children, child => getFormChild(child, this))}
             {actionLink && (
-              <a onClick={actionLink.onClick}>{actionLink.text}</a>
+              <Link onClick={actionLink.onClick}>{actionLink.text}</Link>
             )}
             {submitButtonText && (
               <Button
