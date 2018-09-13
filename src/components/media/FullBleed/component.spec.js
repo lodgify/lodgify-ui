@@ -4,7 +4,10 @@ import { Segment } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
+
+import { getBackgroundImageUrl } from 'utils/get-background-image-url';
 
 import { Component as FullBleed } from './component';
 
@@ -13,8 +16,9 @@ const props = {
   imageUrl: '🐱🐱',
 };
 
-const getFullBleed = () => shallow(<FullBleed {...props} />);
-const getSegment = () => getFullBleed().find(Segment);
+const getFullBleed = extraProps =>
+  shallow(<FullBleed {...props} {...extraProps} />);
+const getSegment = extraProps => getFullBleed(extraProps).find(Segment);
 
 describe('<FullBleed />', () => {
   it('should render a single Semantic UI `Segment` component', () => {
@@ -26,16 +30,33 @@ describe('<FullBleed />', () => {
   describe('the `Segment` component', () => {
     it('should have the right props', () => {
       const wrapper = getSegment();
-      const actual = wrapper.props();
 
-      expect(actual).toEqual(
-        expect.objectContaining({
-          children: props.children,
-          className: 'full-bleed',
-          style: { backgroundImage: expect.stringContaining(props.imageUrl) },
-          vertical: true,
-        })
-      );
+      expectComponentToHaveProps(wrapper, {
+        children: props.children,
+        className: 'full-bleed',
+        style: { backgroundImage: getBackgroundImageUrl(props.imageUrl) },
+        vertical: true,
+      });
+    });
+  });
+
+  describe('if `hasGradient` is passed', () => {
+    it('should have the correct `props.className`', () => {
+      const wrapper = getSegment({ hasGradient: true });
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'full-bleed has-gradient',
+      });
+    });
+  });
+
+  describe('if `props.className` is passed', () => {
+    it('should have the correct `props.className`', () => {
+      const wrapper = getSegment({ className: '🏛' });
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'full-bleed 🏛',
+      });
     });
   });
 
