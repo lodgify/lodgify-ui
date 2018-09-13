@@ -6,6 +6,8 @@ import {
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
+import { List } from 'semantic-ui-react';
+import { ListItem } from 'semantic-ui-react';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
@@ -17,6 +19,8 @@ import { Modal } from 'elements/Modal';
 import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
 import { VerticalGutters } from 'layout/VerticalGutters';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 
 import { getParagraphWithEllipsis } from './utils/getParagraphWithEllipsis';
 import {
@@ -33,6 +37,19 @@ const props = {
     { iconName: 'no children', text: 'no children allowed' },
   ],
   homeHighlightsHeadingText: 'Highlights',
+  mainCharacteristicsIcons: {
+    color: null,
+    hasBorder: false,
+    isCircular: false,
+    isColorInverted: false,
+    isDisabled: false,
+    isLabelLeft: false,
+    labelText: expect.any(String),
+    labelWeight: null,
+    name: expect.any(String),
+    path: null,
+    size: null,
+  },
   propertyMainCharacteristics,
   propertyName: 'Yolo',
   propertyType: 'Bed & Breakfast',
@@ -40,6 +57,8 @@ const props = {
 
 const getDescription = extraProps =>
   shallow(<Description {...props} {...extraProps} />);
+const getDesktopMarkup = getDescription().find(ShowOnDesktop);
+const getMobileMarkup = getDescription().find(ShowOnMobile);
 
 describe('<Description />', () => {
   it('should have `VerticalGutters` component as a wrapper', () => {
@@ -58,7 +77,9 @@ describe('<Description />', () => {
 
   describe('the first `Grid` component', () => {
     it('should have the right props', () => {
-      const wrapper = getDescription().find(Grid);
+      const wrapper = getDescription()
+        .first()
+        .children();
 
       expectComponentToHaveProps(wrapper, {
         columns: 1,
@@ -70,7 +91,7 @@ describe('<Description />', () => {
 
       expectComponentToHaveChildren(
         wrapper,
-        ...getArrayOfLengthOfItem(9, GridColumn)
+        ...getArrayOfLengthOfItem(5, GridColumn)
       );
     });
   });
@@ -84,7 +105,7 @@ describe('<Description />', () => {
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
 
-      expectComponentToHaveChildren(wrapper, Subheading);
+      expectComponentToHaveChildren(wrapper, Subheading, Heading);
     });
   });
 
@@ -98,23 +119,89 @@ describe('<Description />', () => {
     });
   });
 
+  describe('the first `Heading`', () => {
+    const getHeading = () => getDescription().find(Heading);
+
+    it('should have the right props', () => {
+      const wrapper = getHeading();
+
+      expectComponentToHaveProps(wrapper, {
+        size: 'large',
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getHeading();
+
+      expectComponentToHaveChildren(wrapper, props.propertyName);
+    });
+  });
+
   describe('the second `GridColumn`', () => {
     it('should render the right children', () => {
       const wrapper = getDescription()
         .find(GridColumn)
         .at(1);
 
-      expectComponentToHaveChildren(wrapper, Heading);
+      expectComponentToHaveChildren(wrapper, ShowOnDesktop, ShowOnMobile);
     });
   });
 
-  describe('the first `Heading`', () => {
-    it('should render the right children', () => {
-      const wrapper = getDescription()
-        .find(Heading)
-        .at(0);
+  describe('the `ShowOnDesktop` component', () => {
+    it('should render the right props', () => {
+      const wrapper = getDesktopMarkup;
 
-      expectComponentToHaveChildren(wrapper, props.propertyName);
+      expectComponentToHaveProps(wrapper, {
+        parent: List,
+        parentProps: { horizontal: true },
+      });
+    });
+
+    it('should render the right children', () => {
+      const wrapper = getDesktopMarkup;
+
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(4, ListItem)
+      );
+    });
+
+    describe('the `Icon` nested in the first `ListItem`', () => {
+      const wrapper = getDesktopMarkup
+        .find(ListItem)
+        .first()
+        .children();
+
+      it('should have the right props', () => {
+        expectComponentToHaveProps(wrapper, props.mainCharacteristicsIcons);
+      });
+    });
+  });
+
+  describe('the `ShowOnMobile` component', () => {
+    it('should render the right props', () => {
+      const wrapper = getMobileMarkup;
+
+      expectComponentToHaveProps(wrapper, {
+        parent: Grid,
+        parentProps: { columns: 1 },
+      });
+    });
+    it('should render the right children', () => {
+      const wrapper = getMobileMarkup;
+
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(4, GridColumn)
+      );
+    });
+
+    describe('the `Icon` nested in the first `GridColumn`', () => {
+      const wrapper = getMobileMarkup.find(Icon).at(0);
+
+      it('should have the right props', () => {
+        expectComponentToHaveProps(wrapper, props.mainCharacteristicsIcons);
+      });
     });
   });
 
@@ -231,16 +318,24 @@ describe('<Description />', () => {
     });
   });
 
-  describe('each `Icon`', () => {
-    it('shoudl have the right props', () => {
+  describe('the first `Icon`', () => {
+    it('should have the right props', () => {
       const wrapper = getDescription()
         .find(Icon)
-        .at(4);
+        .at(8);
 
       expectComponentToHaveProps(wrapper, {
+        color: null,
         hasBorder: true,
-        labelText: props.homeHighlights[0].text,
-        name: props.homeHighlights[0].iconName,
+        isCircular: false,
+        isColorInverted: false,
+        isDisabled: false,
+        isLabelLeft: false,
+        labelText: expect.any(String),
+        labelWeight: null,
+        name: expect.any(String),
+        path: null,
+        size: null,
       });
     });
   });

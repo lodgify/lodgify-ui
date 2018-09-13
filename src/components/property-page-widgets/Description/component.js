@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { List } from 'semantic-ui-react';
 
 import { HOME_HIGHLIGHTS } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
@@ -12,6 +13,8 @@ import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
 import { VerticalGutters } from 'layout/VerticalGutters';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 
 import { formatParagraphWithModal } from './utils/formatParagraphWithModal';
 import { isDescriptionDisplayingWithEllipsis } from './utils/isDescriptionDisplayingWithEllipsis';
@@ -33,21 +36,32 @@ export const Component = ({
     <Grid columns={1}>
       <GridColumn>
         <Subheading>{propertyType}</Subheading>
+        <Heading size="large">{propertyName}</Heading>
       </GridColumn>
       <GridColumn>
-        <Heading>{propertyName}</Heading>
+        <ShowOnDesktop parent={List} parentProps={{ horizontal: true }}>
+          {getFirstFourItems(propertyMainCharacteristics).map(
+            ({ iconName, text }, index) => (
+              <List.Item key={buildKeyFromStrings(text, index)}>
+                <Icon labelText={text} name={iconName} />
+              </List.Item>
+            )
+          )}
+        </ShowOnDesktop>
+        <ShowOnMobile parent={Grid} parentProps={{ columns: 1 }}>
+          {getFirstFourItems(propertyMainCharacteristics).map(
+            ({ iconName, text }, index) => (
+              <GridColumn
+                computer={3}
+                key={buildKeyFromStrings(text, index)}
+                mobile={6}
+              >
+                <Icon labelText={text} name={iconName} />
+              </GridColumn>
+            )
+          )}
+        </ShowOnMobile>
       </GridColumn>
-      {getFirstFourItems(propertyMainCharacteristics).map(
-        ({ iconName, text }, index) => (
-          <GridColumn
-            computer={3}
-            key={buildKeyFromStrings(text, index)}
-            mobile={6}
-          >
-            <Icon labelText={text} name={iconName} />
-          </GridColumn>
-        )
-      )}
       <GridColumn>
         {getParagraphsFromStrings(descriptionText).map(
           (paragraphText, index, descriptionTextArray) => (
