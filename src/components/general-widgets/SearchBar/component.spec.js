@@ -14,6 +14,8 @@ import { Button } from 'elements/Button';
 import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Heading } from 'typography/Heading';
+import { Container } from 'layout/Container';
+import { GridColumn } from 'layout/GridColumn';
 
 import { Component as SearchBar } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
@@ -37,7 +39,7 @@ describe('<SearchBar />', () => {
     it('should have the right props', () => {
       const wrapper = getSearchBar();
 
-      expectComponentToHaveProps(wrapper, { className: '' });
+      expectComponentToHaveProps(wrapper, { className: 'search-bar' });
     });
 
     it('should render the right children', () => {
@@ -46,11 +48,30 @@ describe('<SearchBar />', () => {
       expectComponentToHaveChildren(wrapper, Form);
     });
 
-    describe('if `props.isSticky` is true', () => {
+    describe('if `props.isFixed` is true', () => {
       it('should have the right props', () => {
-        const wrapper = getSearchBar({ isSticky: true });
+        const wrapper = getSearchBar({ isFixed: true });
 
-        expectComponentToHaveProps(wrapper, { className: 'is-sticky' });
+        expectComponentToHaveProps(wrapper, {
+          className: 'search-bar is-fixed',
+        });
+      });
+
+      it('should have the right children', () => {
+        const wrapper = getSearchBar({ isFixed: true });
+
+        expectComponentToHaveChildren(wrapper, Container);
+      });
+
+      it('should display as modal if `isDisplayedAsModal` is true', () => {
+        const wrapper = getSearchBar({
+          isFixed: true,
+          isDisplayedAsModal: true,
+        })
+          .find(GridColumn)
+          .at(1);
+
+        expectComponentToHaveChildren(wrapper, Modal);
       });
     });
   });

@@ -3,6 +3,7 @@ export const ARRIVAL = 'Arrival';
 export const BOOK_NOW_DISCOUNT = 'Book Now with Discount';
 export const CALL_ME_BACK = 'Call me back';
 export const CANCELLATION_POLICY = 'Cancellation Policy';
+export const CHECK_OUR_AVAILABILITY = 'Check our availability';
 export const CLEANING_CHARGE = 'Cleaning Charge';
 export const COMMENTS = 'Comments';
 export const CONTACT = 'Contact';

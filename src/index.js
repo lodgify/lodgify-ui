@@ -70,9 +70,6 @@ export { Video } from './components/media/Video';
 export { Amenities } from './components/property-page-widgets/Amenities';
 export { Availability } from './components/property-page-widgets/Availability';
 export { Description } from './components/property-page-widgets/Description';
-export {
-  PropertySearchBar,
-} from './components/property-page-widgets/PropertySearchBar';
 export { HostProfile } from './components/property-page-widgets/HostProfile';
 export { KeyFacts } from './components/property-page-widgets/KeyFacts';
 export { Location } from './components/property-page-widgets/Location';

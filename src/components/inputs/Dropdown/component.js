@@ -42,7 +42,15 @@ export class Component extends PureComponent {
 
   render() {
     const { isOpen, value } = this.state;
-    const { error, icon, isDisabled, isValid, label, options } = this.props;
+    const {
+      error,
+      icon,
+      isDisabled,
+      willOpenAbove,
+      isValid,
+      label,
+      options,
+    } = this.props;
     const hasImages = getHasImages(options);
     const adaptedOptions = adaptOptions(options, hasImages);
     const defaultValue = getDefaultValue(adaptedOptions, hasImages, !!label);
@@ -71,6 +79,7 @@ export class Component extends PureComponent {
           open={isOpen}
           options={adaptedOptions}
           selection
+          upward={willOpenAbove}
         />
         {!hasImages &&
           label && <label onClick={() => this.handleOpen(true)}>{label}</label>}
@@ -91,6 +100,7 @@ Component.defaultProps = {
   onBlur: Function.prototype,
   onChange: Function.prototype,
   options: [],
+  willOpenAbove: false,
 };
 
 Component.propTypes = {
@@ -130,4 +140,6 @@ Component.propTypes = {
       ]),
     })
   ),
+  /** Should the dropdown display upward */
+  willOpenAbove: PropTypes.bool,
 };
