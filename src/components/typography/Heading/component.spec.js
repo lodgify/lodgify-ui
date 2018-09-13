@@ -4,23 +4,24 @@ import { Header } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,
+  expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Heading } from './component';
 
 const children = '🚸';
 
+const getHeading = props => shallow(<Heading {...props}>{children}</Heading>);
+
 describe('<Heading />', () => {
   it('should render a single Semantic UI `Header` component', () => {
-    const wrapper = shallow(<Heading>{children}</Heading>);
+    const wrapper = getHeading();
 
     expectComponentToBe(wrapper, Header);
   });
 
   it('should default to setting `props.as` as `h3`', () => {
-    const semanticHeader = shallow(<Heading>{children}</Heading>).find(
-      'Header'
-    );
+    const semanticHeader = getHeading().find('Header');
     const actual = semanticHeader.prop('as');
 
     expect(actual).toBe('h3');
@@ -40,10 +41,22 @@ describe('<Heading />', () => {
   });
 
   it('should render children', () => {
-    const heading = shallow(<Heading>{children}</Heading>);
+    const heading = getHeading();
     const actual = heading.contains(children);
 
     expect(actual).toBe(true);
+  });
+
+  describe('if `props.hasTextShadow` is passed', () => {
+    it('should set `className` to `has-text-shadow`', () => {
+      const wrapper = getHeading({
+        hasTextShadow: true,
+      });
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'has-text-shadow',
+      });
+    });
   });
 
   it('should have displayName `Heading`', () => {
