@@ -90,7 +90,7 @@
 @activeItemBackground: @background;
 @activeItemTextColor: @itemTextColor;
 @activeItemUnderlineBorder: @2px solid @primaryColor;
-@activeItemUnderlineBottomPosition: 40%;
+@activeItemUnderlineBottomPosition: 30%;
 @activeItemUnderlineTransition: 0.5s @defaultEasing;
 
 /* Active Hovered Item */
