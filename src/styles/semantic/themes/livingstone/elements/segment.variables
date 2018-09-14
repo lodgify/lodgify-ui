@@ -58,6 +58,7 @@
 /* Ordinality */
 
 /* Full bleed */
+@backgroundImageGradient: linear-gradient(0deg, rgba(255, 255, 255, 0) 51%, rgba(0, 0, 0, 0.5) 100%);
 
 /* Is Promotion */
 @promotionBackgroundColor: @yellow;
@@ -76,3 +77,6 @@
 @promotionBeforeLayerZIndex: 1;
 @promotionAfterLayerZIndex: 2;
 @promotionContentLayerZIndex: 3;
+
+/* Is Hero */
+@heroHeadingShadow: @1px @1px @40px rgba(22, 23, 31, 0.4);

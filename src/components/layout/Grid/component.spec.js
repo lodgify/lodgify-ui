@@ -28,6 +28,18 @@ describe('<Grid />', () => {
     });
   });
 
+  describe('if `props.hasFixedWidth` is passed', () => {
+    it('should set `className` to `has-fixed-width`', () => {
+      const wrapper = getGrid({
+        hasFixedWidth: true,
+      });
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'has-fixed-width',
+      });
+    });
+  });
+
   it('should have displayName `Grid`', () => {
     expectComponentToHaveDisplayName(LodgifyGrid, 'Grid');
   });

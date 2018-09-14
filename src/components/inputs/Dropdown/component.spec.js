@@ -151,6 +151,16 @@ describe('<Dropdown />', () => {
         expectComponentToHaveProps(wrapper, { disabled: true });
       });
     });
+
+    describe('if `isDisabled` prop is passed', () => {
+      it('should have the right props', () => {
+        const wrapper = getSemanticDropdown({
+          willOpenAbove: true,
+        });
+
+        expectComponentToHaveProps(wrapper, { upward: true });
+      });
+    });
   });
 
   describe('if any option does not specify an image', () => {

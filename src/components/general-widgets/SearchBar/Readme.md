@@ -44,14 +44,43 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 />
 ```
 
-#### Sticky
+#### Fixed
 ```jsx
-const { guestsOptions, locationOptions } = require('./mock-data/options');
+const { guestsOptions } = require('./mock-data/options');
+
+// Please set this to true to see the example
+const displayAsFixed = false;
 
 <SearchBar
+  isFixed={displayAsFixed}
+  isShowingLocationDropdown={false}
   guestsOptions={guestsOptions}
-  locationOptions={locationOptions}
-  isSticky
+  searchButton={<Button isRounded isCompact>Availability</Button>}
+  summaryElement={
+    <div>Property information</div>
+  }
+/> 
+```
+
+#### With summary element in modal and search bar fixed
+```jsx
+const { guestsOptions } = require('./mock-data/options');
+
+// Please set this to true to see the example
+const displayAsFixed = false;
+
+<SearchBar
+  isFixed={displayAsFixed}
+  isDisplayedAsModal
+  isShowingLocationDropdown={false}
+  guestsOptions={guestsOptions}
+  modalTrigger={<Button isPositionedRight isRounded isCompact>Availability</Button>}
+  modalSummaryElement={
+    <div>Property information for mobile modal</div>
+  }
+  summaryElement={
+    <div>Property information</div>
+  }
 />
 ```
 

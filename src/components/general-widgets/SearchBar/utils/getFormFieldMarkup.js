@@ -16,6 +16,7 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
  * @param  {Node}     props.searchButton
  * @param  {Function} onDatePickerChange
  * @param  {boolean}  areColumnsStacked
+ * @param  {boolean}  willDropdownsOpenAbove
  * @return {Object}
  */
 export const getFormFieldMarkup = (
@@ -28,7 +29,8 @@ export const getFormFieldMarkup = (
     searchButton,
   },
   onDatePickerChange,
-  areColumnsStacked
+  areColumnsStacked,
+  willDropdownsOpenAbove
 ) => {
   const defaultColumnWidth = areColumnsStacked ? 'twelve' : 'three';
   const datePickerColumnWidth = areColumnsStacked ? 'twelve' : 'seven';
@@ -52,6 +54,7 @@ export const getFormFieldMarkup = (
             name="location"
             onChange={onDatePickerChange}
             options={locationOptions}
+            willOpenAbove={willDropdownsOpenAbove}
           />
         </Form.Field>
       )}
@@ -62,6 +65,7 @@ export const getFormFieldMarkup = (
           name="dates"
           onChange={onDatePickerChange}
           startDatePlaceholderText="Check-in"
+          willOpenAbove={willDropdownsOpenAbove}
         />
       </Form.Field>
       <Form.Field width={defaultColumnWidth}>
@@ -71,6 +75,7 @@ export const getFormFieldMarkup = (
           name="guests"
           onChange={onDatePickerChange}
           options={guestsOptions}
+          willOpenAbove={willDropdownsOpenAbove}
         />
       </Form.Field>
       <Form.Field width={defaultColumnWidth}>{searchButton}</Form.Field>
