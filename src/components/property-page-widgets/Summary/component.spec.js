@@ -8,6 +8,7 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Icon } from 'elements/Icon';
 import { Heading } from 'typography/Heading';
@@ -21,7 +22,8 @@ const props = {
   ratingNumber: 4.8,
 };
 
-const getSummary = () => shallow(<Summary {...props} />);
+const getSummary = otherProps =>
+  shallow(<Summary {...props} {...otherProps} />);
 
 describe('<Summary />', () => {
   it('should render a single Semantic UI `Segment.Group` component', () => {
@@ -184,6 +186,56 @@ describe('<Summary />', () => {
       const wrapper = getLastHeading();
 
       expectComponentToHaveChildren(wrapper, props.nightPrice);
+    });
+  });
+
+  describe('the reduced version', () => {
+    const getReducedSummary = () =>
+      getSummary({
+        hasReducedVersion: true,
+      });
+
+    it('should have the right children', () => {
+      const wrapper = getReducedSummary();
+
+      expectComponentToHaveChildren(wrapper, Segment, Segment);
+    });
+
+    describe('the first `Segment`', () => {
+      const getFirstSegment = () =>
+        getReducedSummary()
+          .find(Segment)
+          .at(0);
+
+      it('should have the right props', () => {
+        const wrapper = getFirstSegment();
+
+        expectComponentToHaveProps(wrapper, {
+          as: 'p',
+        });
+      });
+
+      it('should have the right children', () => {
+        const wrapper = getFirstSegment();
+
+        expectComponentToHaveChildren(wrapper, props.ratingNumber + '', Rating);
+      });
+    });
+
+    describe('the second `Segment`', () => {
+      const getSecondSegment = () =>
+        getReducedSummary()
+          .find(Segment)
+          .at(1);
+
+      it('should have the right props', () => {
+        const wrapper = getSecondSegment();
+
+        expectComponentToHaveProps(wrapper, {
+          as: 'p',
+          children: getNightPriceMarkup(props.nightPrice, 'small'),
+        });
+      });
     });
   });
 
