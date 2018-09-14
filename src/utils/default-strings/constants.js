@@ -40,6 +40,7 @@ export const PROPERTY_PICTURES = 'Property pictures';
 export const REVIEWS = 'Reviews';
 export const ROOM = 'Room';
 export const SAVE_UP_TO = 'Save up to';
+export const SEARCH = 'Search';
 export const SECURITY_CODE = 'Security code';
 export const SEND = 'Send';
 export const SEND_RESET = 'Send reset';
