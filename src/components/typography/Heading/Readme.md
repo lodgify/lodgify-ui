@@ -14,3 +14,11 @@
   <Heading size="small">The quick brown fox jumps</Heading>
 </div>
 ```
+
+#### Has text shadow
+
+```jsx
+<div>
+  <Heading hasTextShadow>The quick brown fox jumps</Heading>
+</div>
+```

@@ -44,3 +44,8 @@
 /* Inverted */
 
 /* Floated */
+
+/* Text Shadow */
+.ui.header.has-text-shadow {
+  text-shadow: @headingTextShadow;
+}
