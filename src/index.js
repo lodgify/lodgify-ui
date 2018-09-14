@@ -2,6 +2,7 @@
 export { Footer } from './components/collections/Footer';
 export { Form } from './components/collections/Form';
 export { Header } from './components/collections/Header';
+export { Hero } from './components/collections/Hero';
 export { InputGroup } from './components/collections/InputGroup';
 
 // Elements
