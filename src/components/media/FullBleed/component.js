@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import getClassNames from 'classnames';
 import { Segment } from 'semantic-ui-react';
 
 import { getBackgroundImageUrl } from 'utils/get-background-image-url';
@@ -9,10 +10,14 @@ import { getBackgroundImageUrl } from 'utils/get-background-image-url';
  * and the height of the viewport.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ children, imageUrl }) => (
+export const Component = ({ children, hasGradient, imageUrl, className }) => (
   <Segment
-    className="full-bleed"
-    style={{ backgroundImage: getBackgroundImageUrl(imageUrl) }}
+    className={getClassNames('full-bleed', className, {
+      'has-gradient': hasGradient,
+    })}
+    style={{
+      backgroundImage: getBackgroundImageUrl(imageUrl),
+    }}
     vertical
   >
     {children}
@@ -23,12 +28,18 @@ Component.displayName = 'FullBleed';
 
 Component.defaultProps = {
   children: null,
+  className: null,
+  hasGradient: false,
   imageUrl: null,
 };
 
 Component.propTypes = {
   /** The children to render inside the full bleed. */
   children: PropTypes.node,
+  /** Custom class name string to customize the full bleed. */
+  className: PropTypes.string,
+  /** Is there a gradient overlaying the full bleed.  */
+  hasGradient: PropTypes.bool,
   /** URL pointing to the image to render. */
   imageUrl: PropTypes.string,
 };
