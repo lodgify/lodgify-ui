@@ -1,8 +1,10 @@
 import React from 'react';
+import getClassNames from 'classnames';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 
 import { getHasIndentedOptions } from './getHasIndentedOptions';
+
 /**
  * If no options specify an image, return options.
  * If one or more options has an image,
@@ -30,7 +32,9 @@ export const adaptOptions = (options, hasImages) => {
   }
   if (getHasIndentedOptions(options)) {
     return options.map(({ indent, ...otherProps }) => ({
-      className: `indent-${indent}`,
+      className: getClassNames({
+        [`indent-${indent}`]: indent,
+      }),
       ...otherProps,
     }));
   }
