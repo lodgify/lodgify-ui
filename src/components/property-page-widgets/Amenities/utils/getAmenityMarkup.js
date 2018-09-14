@@ -24,7 +24,7 @@ export const getAmenityMarkup = (
   isStacked,
   modalTriggerText
 ) => (
-  <Grid stackable>
+  <Grid hasFixedWidth stackable>
     {headingText && (
       <GridColumn width={12}>
         <Heading>{headingText}</Heading>
