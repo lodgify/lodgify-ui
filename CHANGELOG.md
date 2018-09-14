@@ -1,3 +1,11 @@
+# [1.52.0](https://github.com/lodgify/lodgify-ui/compare/v1.51.0...v1.52.0) (2018-09-13)
+
+
+### Features
+
+* **FullBleed:** add gradient overlay functionality ([02c9f57](https://github.com/lodgify/lodgify-ui/commit/02c9f57))
+* **Hero:** expose component to api ([7d11db3](https://github.com/lodgify/lodgify-ui/commit/7d11db3))
+
 # [1.51.0](https://github.com/lodgify/lodgify-ui/compare/v1.50.1...v1.51.0) (2018-09-10)
 
 

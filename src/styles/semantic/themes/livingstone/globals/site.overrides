@@ -401,3 +401,24 @@ blockquote.ui.quote .row {
     border-radius: 0;
   }
 }
+
+/*-------------------
+      Search Bar
+--------------------*/
+.search-bar {
+
+  &.is-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: @searchBarFixedBackgroundColor;
+    z-index: @searchBarFixedZIndex;
+    padding: @searchBarFixedPadding;
+    box-shadow: @searchBarFixedBoxShadow;
+
+    .ui.form .fields {
+      margin: 0;
+    }
+  }
+}
