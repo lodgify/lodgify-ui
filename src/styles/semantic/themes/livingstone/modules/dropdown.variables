@@ -19,7 +19,7 @@
 
 /* Menu */
 @menuBackground: @selectionFocusBackground;
-@menuMarginTop: @8px;
+@menuVerticalMargin: @8px;
 
 @menuBorder: none;
 @menuBoxShadow: 0 @menuBorderWidth 13px 0 rgba(0, 0, 0, 0.12);

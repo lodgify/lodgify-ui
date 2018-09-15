@@ -32,6 +32,14 @@ const { options } = require('./mock-data/options');
 <Dropdown isDisabled label="Location" options={options} />
 ```
 
+#### Dropdown opens above input
+
+```jsx
+const { options } = require('./mock-data/options');
+
+<Dropdown willOpenAbove label="Location" options={options} />
+```
+
 #### Valid
 
 ```jsx

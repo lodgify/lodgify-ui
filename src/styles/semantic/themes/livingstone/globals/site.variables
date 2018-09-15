@@ -408,3 +408,11 @@
 
 @hugeThumbnailHeight: 150px;
 @hugeThumbnailWidth: @hugeThumbnailHeight;
+
+/*-------------------
+     Search Bar
+--------------------*/
+@searchBarFixedBackgroundColor: @pureWhite;
+@searchBarFixedZIndex: 999;
+@searchBarFixedPadding: @20px 0;
+@searchBarFixedBoxShadow: 0 -(@4px) @9px -(@6px) rgba(0, 0, 0, 0.29);

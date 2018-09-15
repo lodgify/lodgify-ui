@@ -114,5 +114,23 @@ describe('adaptOptions', () => {
 
       expect(actual).toBeUndefined();
     });
+
+    it('should return the right `className` when indent is defined', () => {
+      const options = [
+        { indent: 1, image: 'SRC-1', text: 'bam', value: 'boozled' },
+      ];
+      const adaptedOptions = adaptOptions(options, false);
+      const actual = adaptedOptions[0].className;
+
+      expect(actual).toBe('indent-1');
+    });
+
+    it('should not return `className` indent is undefined', () => {
+      const options = [{ image: 'SRC-2', text: 'C3', value: 'PO' }];
+      const adaptedOptions = adaptOptions(options, false);
+      const actual = adaptedOptions[0].className;
+
+      expect(actual).toBe(undefined);
+    });
   });
 });

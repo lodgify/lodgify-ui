@@ -28,6 +28,14 @@
   margin: @iconSvgMargin;
 }
 
+.ui.button.circular,
+.ui.button {
+
+  > .icon {
+    width: auto;
+  }
+}
+
 /* Loader */
 
 /*
