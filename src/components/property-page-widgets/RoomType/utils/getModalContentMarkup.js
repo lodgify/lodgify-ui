@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal } from 'semantic-ui-react';
+import { Modal, Rating, List } from 'semantic-ui-react';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Amenities } from 'property-page-widgets/Amenities';
@@ -19,6 +19,7 @@ import { Slideshow } from 'media/Slideshow';
  * @param  {Object[]}    features
  * @param  {string}      name
  * @param  {string}      nightPrice
+ * @param  {number}      ratingNumber
  * @param  {Object[]}    slideShowImages
  * @return {Object}
  */
@@ -30,22 +31,30 @@ export const getModalContentMarkup = (
   features,
   name,
   nightPrice,
+  ratingNumber,
   slideShowImages
 ) => (
   <Modal.Content>
     <Heading>{name}</Heading>
-    <Divider />
+    <Rating
+      disabled
+      maxRating={5}
+      rating={Math.round(ratingNumber)}
+      size="small"
+    />
+    <span>{Math.round(ratingNumber)}</span>
+    <Divider size="small" />
     <Slideshow additionalClass="no-shadow" images={slideShowImages} />
     <Paragraph>{description}</Paragraph>
-    <Grid columns={4} stackable>
+    <List horizontal>
       {[...features, ...extraFeatures].map(({ labelText }, index) => (
-        <GridColumn key={buildKeyFromStrings(index, labelText, 'feature')}>
+        <List.Item key={buildKeyFromStrings(index, labelText, 'feature')}>
           <Paragraph weight="heavy">{labelText}</Paragraph>
-        </GridColumn>
+        </List.Item>
       ))}
-    </Grid>
+    </List>
     <Divider hasLine />
-    <Amenities amenities={amenities} headingText="Room Amenities" isStacked />
+    <Amenities amenities={amenities} headingText="Room Amenities" />
     <Grid>
       <GridColumn verticalAlignContent="bottom" width={6}>
         <Paragraph>
