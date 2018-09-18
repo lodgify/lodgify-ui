@@ -33,6 +33,7 @@ const Component = ({
   isUserOnMobile,
   name,
   nightPrice,
+  ratingNumber,
   slideShowImages,
 }) => (
   <VerticalGutters>
@@ -78,6 +79,7 @@ const Component = ({
                     features,
                     name,
                     nightPrice,
+                    ratingNumber,
                     slideShowImages
                   )}
                 </Modal>
@@ -89,7 +91,7 @@ const Component = ({
                   verticalAlignContent="bottom"
                   width={4}
                 >
-                  <Modal trigger={<Link>More Info</Link>}>
+                  <Modal size="small" trigger={<Link>More Info</Link>}>
                     {getModalContentMarkup(
                       amenities,
                       onClickCheckAvailability,
@@ -98,6 +100,7 @@ const Component = ({
                       features,
                       name,
                       nightPrice,
+                      ratingNumber,
                       slideShowImages
                     )}
                   </Modal>
@@ -187,6 +190,8 @@ Component.propTypes = {
   nightPrice: PropTypes.string.isRequired,
   /** A function called when check availability button is clicked. */
   onClickCheckAvailability: PropTypes.func.isRequired,
+  /** The numeral rating for the property room given in the review, out of 5. */
+  ratingNumber: PropTypes.number.isRequired,
   /** The images to display for the slideshow */
   slideShowImages: PropTypes.arrayOf(
     PropTypes.shape({
