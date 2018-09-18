@@ -39,8 +39,6 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 
 <SearchBar
   guestsOptions={guestsOptions}
-  locationOptions={locationOptions}
-  isShowingLocationDropdown={false}
 />
 ```
 
@@ -53,7 +51,6 @@ const displayAsFixed = false;
 
 <SearchBar
   isFixed={displayAsFixed}
-  isShowingLocationDropdown={false}
   guestsOptions={guestsOptions}
   searchButton={<Button isRounded isCompact>Availability</Button>}
   summaryElement={
@@ -72,7 +69,6 @@ const displayAsFixed = false;
 <SearchBar
   isFixed={displayAsFixed}
   isDisplayedAsModal
-  isShowingLocationDropdown={false}
   guestsOptions={guestsOptions}
   modalTrigger={<Button isPositionedRight isRounded isCompact>Availability</Button>}
   modalSummaryElement={

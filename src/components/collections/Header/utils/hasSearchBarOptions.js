@@ -6,4 +6,4 @@ import { size } from 'lodash';
  * @return {boolean}
  */
 export const hasSearchBarOptions = (guestsOptions, locationOptions) =>
-  size(guestsOptions) > 0 && size(locationOptions) > 0;
+  size(guestsOptions) > 0 || size(locationOptions) > 0;

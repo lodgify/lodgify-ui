@@ -1,6 +1,7 @@
 /* eslint react/prop-types: 0 */
 import React, { Fragment } from 'react';
 import { Form } from 'semantic-ui-react';
+import { size } from 'lodash';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
@@ -9,7 +10,6 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
 /**
  * @param  {Object}   props
  * @param  {boolean}  props.isShowingSummary
- * @param  {boolean}  props.isShowingLocationDropdown
  * @param  {Function} props.getIsDayBlocked
  * @param  {Object[]} props.locationOptions
  * @param  {Object[]} props.guestsOptions
@@ -22,7 +22,6 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
 export const getFormFieldMarkup = (
   {
     isShowingSummary,
-    isShowingLocationDropdown,
     getIsDayBlocked,
     locationOptions,
     guestsOptions,
@@ -46,7 +45,7 @@ export const getFormFieldMarkup = (
           />
         </Form.Field>
       )}
-      {!!isShowingLocationDropdown && (
+      {!!size(locationOptions) > 0 && (
         <Form.Field width={defaultColumnWidth}>
           <Dropdown
             icon={ICON_NAMES.MAP_PIN}
