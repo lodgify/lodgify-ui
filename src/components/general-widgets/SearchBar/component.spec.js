@@ -113,9 +113,9 @@ describe('<SearchBar />', () => {
       });
     });
 
-    describe('if `props.isShowingLocationDropdown` is false', () => {
+    describe('if `props.locationOptions` is not passed', () => {
       it('should render three `Form.Field` components', () => {
-        const wrapper = getFormGroup({ isShowingLocationDropdown: false }).find(
+        const wrapper = getFormGroup({ locationOptions: null }).find(
           Form.Field
         );
 
