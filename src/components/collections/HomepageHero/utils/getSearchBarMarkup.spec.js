@@ -78,6 +78,7 @@ describe('getSearchBarMarkup', () => {
       const wrapper = getMarkupAsRenderComponent().find(SearchBar);
 
       expectComponentToHaveProps(wrapper, {
+        willDropdownsOpenAbove: true,
         ...props,
       });
     });
