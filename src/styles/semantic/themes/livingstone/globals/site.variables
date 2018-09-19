@@ -40,8 +40,8 @@
 @themeLinkColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-color";
 @themeLinkColorDefault: @primaryColor;
 
-@themeLinkHoverColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-hover-color";
-@themeLinkHoverColorDefault: @darkPrimaryColor;
+@themeLinkDarkerColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-darker-color";
+@themeLinkDarkerColorDefault: @darkPrimaryColor;
 
 /*--------------
   Page Heading
