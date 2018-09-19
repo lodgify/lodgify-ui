@@ -1,3 +1,23 @@
+## [1.53.1](https://github.com/lodgify/lodgify-ui/compare/v1.53.0...v1.53.1) (2018-09-18)
+
+
+### Bug Fixes
+
+* **Header:** update Header to not need both guestsOptions and locationOptions ([5d67cda](https://github.com/lodgify/lodgify-ui/commit/5d67cda))
+* **SearchBar:** update locationOptions to not be required ([d36919e](https://github.com/lodgify/lodgify-ui/commit/d36919e))
+
+# [1.53.0](https://github.com/lodgify/lodgify-ui/compare/v1.52.0...v1.53.0) (2018-09-14)
+
+
+### Bug Fixes
+
+* **adaptOptions:** add a className only when necessary ([5764063](https://github.com/lodgify/lodgify-ui/commit/5764063))
+
+
+### Features
+
+* **HomepageHero:** implement and expose component ([9eeae5a](https://github.com/lodgify/lodgify-ui/commit/9eeae5a))
+
 # [1.52.0](https://github.com/lodgify/lodgify-ui/compare/v1.51.0...v1.52.0) (2018-09-13)
 
 

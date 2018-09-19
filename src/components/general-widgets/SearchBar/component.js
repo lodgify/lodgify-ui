@@ -114,12 +114,12 @@ Component.defaultProps = {
   isDisplayedAsModal: false,
   isFixed: false,
   isShowingSummary: false,
-  isShowingLocationDropdown: true,
   searchButton: (
     <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
       Search
     </Button>
   ),
+  locationOptions: null,
   summaryElement: null,
 };
 /* eslint react/no-unused-prop-types: 0 */
@@ -147,8 +147,6 @@ Component.propTypes = {
   isDisplayedAsModal: PropTypes.bool,
   /** Is the Search Bar fixed to the bottom of the window */
   isFixed: PropTypes.bool,
-  /** Is Search Bar showing the Location Dropdown. */
-  isShowingLocationDropdown: PropTypes.bool,
   /** Is Search Bar showing the Property Summary info. */
   isShowingSummary: PropTypes.bool,
   /** The options which the user can select in the location field. */
@@ -163,7 +161,7 @@ Component.propTypes = {
         PropTypes.string,
       ]),
     })
-  ).isRequired,
+  ),
   /** The heading text to display in the modal */
   modalHeadingText: PropTypes.string,
   /** The summary element to display in the mobile modal  */

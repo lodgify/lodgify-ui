@@ -220,6 +220,12 @@
     flex: 1;
   }
 
+  .ui.container:not(.menu) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
   h1 {
     text-shadow: @heroHeadingShadow;
     text-align: center;

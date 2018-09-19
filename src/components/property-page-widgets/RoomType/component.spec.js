@@ -294,7 +294,7 @@ describe('<RoomType />', () => {
     const getFifthGridColumn = () =>
       getWrappedRoomType()
         .find(GridColumn)
-        .at(8);
+        .at(6);
 
     it('should have the right props', () => {
       const wrapper = getFifthGridColumn();
@@ -319,7 +319,10 @@ describe('<RoomType />', () => {
         .find(Modal)
         .at(1);
 
-      expectComponentToHaveProps(wrapper, { trigger: <Link>More Info</Link> });
+      expectComponentToHaveProps(wrapper, {
+        trigger: <Link>More Info</Link>,
+        size: 'small',
+      });
     });
   });
 
@@ -327,7 +330,7 @@ describe('<RoomType />', () => {
     const getSixthGridColumn = () =>
       getWrappedRoomType()
         .find(GridColumn)
-        .at(13);
+        .at(9);
 
     it('should have the right props', () => {
       const wrapper = getSixthGridColumn();
@@ -370,7 +373,9 @@ describe('<RoomType />', () => {
 
   describe('the `span`', () => {
     it('should have the right children', () => {
-      const wrapper = getWrappedRoomType().find('span');
+      const wrapper = getWrappedRoomType()
+        .find('span')
+        .at(2);
 
       expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });

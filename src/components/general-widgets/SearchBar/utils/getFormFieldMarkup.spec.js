@@ -37,10 +37,10 @@ const getMarkup = overrideProps =>
   );
 
 describe('getFormFieldMarkup', () => {
-  it('should return 5 `Form.Field`', () => {
+  it('should return 4 `Form.Field`', () => {
     const wrapper = getMarkup().find(Form.Field);
 
-    expect(wrapper).toHaveLength(5);
+    expect(wrapper).toHaveLength(4);
   });
 
   describe('first `Form.Field`', () => {
@@ -56,6 +56,7 @@ describe('getFormFieldMarkup', () => {
         width: 'three',
       });
     });
+
     it('should have the correct children', () => {
       const wrapper = getField();
 
@@ -86,42 +87,10 @@ describe('getFormFieldMarkup', () => {
       const wrapper = getField();
 
       expectComponentToHaveProps(wrapper, {
-        width: 'three',
-      });
-    });
-    it('should have the correct children', () => {
-      const wrapper = getField();
-
-      expectComponentToHaveChildren(wrapper, Dropdown);
-    });
-  });
-  describe('first `Dropdown`', () => {
-    it('should have the right props', () => {
-      const wrapper = getMarkup()
-        .find(Dropdown)
-        .at(0);
-
-      expectComponentToHaveProps(wrapper, {
-        icon: 'map pin',
-        label: 'Location',
-        onChange: expect.any(Function),
-      });
-    });
-  });
-
-  describe('third `Form.Field`', () => {
-    const getField = () =>
-      getMarkup()
-        .find(Form.Field)
-        .at(2);
-
-    it('should have the right props', () => {
-      const wrapper = getField();
-
-      expectComponentToHaveProps(wrapper, {
         width: 'seven',
       });
     });
+
     it('should have the correct children', () => {
       const wrapper = getField();
 
@@ -141,11 +110,11 @@ describe('getFormFieldMarkup', () => {
       });
     });
   });
-  describe('fourth `Form.Field`', () => {
+  describe('third `Form.Field`', () => {
     const getField = () =>
       getMarkup()
         .find(Form.Field)
-        .at(3);
+        .at(2);
 
     it('should have the right props', () => {
       const wrapper = getField();
@@ -164,7 +133,7 @@ describe('getFormFieldMarkup', () => {
     it('should have the right props', () => {
       const wrapper = getMarkup()
         .find(Dropdown)
-        .at(1);
+        .at(0);
 
       expectComponentToHaveProps(wrapper, {
         name: 'guests',
@@ -173,11 +142,11 @@ describe('getFormFieldMarkup', () => {
       });
     });
   });
-  describe('fifth `Form.Field`', () => {
+  describe('fourth `Form.Field`', () => {
     const getField = () =>
       getMarkup()
         .find(Form.Field)
-        .at(4);
+        .at(3);
 
     it('should have the right props', () => {
       const wrapper = getField();
@@ -186,10 +155,57 @@ describe('getFormFieldMarkup', () => {
         width: 'three',
       });
     });
+
     it('should have the correct children', () => {
       const wrapper = getField();
 
       expectComponentToHaveChildren(wrapper, 'div');
+    });
+  });
+
+  describe('if `props.locationOptions` size is greater than 0', () => {
+    const getMerkupWithLocationOptions = () =>
+      getMarkup({ locationOptions: [{ text: 'yo' }] });
+
+    it('should render an extra `Form.Field`', () => {
+      const wrapper = getMerkupWithLocationOptions().find(Form.Field);
+
+      expect(wrapper).toHaveLength(5);
+    });
+
+    describe('the `Form.Field`', () => {
+      const getField = () =>
+        getMerkupWithLocationOptions()
+          .find(Form.Field)
+          .at(1);
+
+      it('should have the right props', () => {
+        const wrapper = getField();
+
+        expectComponentToHaveProps(wrapper, {
+          width: 'three',
+        });
+      });
+
+      it('should have the correct children', () => {
+        const wrapper = getField();
+
+        expectComponentToHaveChildren(wrapper, Dropdown);
+      });
+
+      describe('first `Dropdown`', () => {
+        it('should have the right props', () => {
+          const wrapper = getMerkupWithLocationOptions()
+            .find(Dropdown)
+            .at(0);
+
+          expectComponentToHaveProps(wrapper, {
+            icon: 'map pin',
+            label: 'Location',
+            onChange: expect.any(Function),
+          });
+        });
+      });
     });
   });
 });
