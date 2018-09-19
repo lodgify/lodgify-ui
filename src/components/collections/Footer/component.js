@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Menu } from 'semantic-ui-react';
-import { toUpper } from 'lodash';
+import { toUpper, size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Submenu } from 'elements/Submenu';
@@ -69,7 +69,7 @@ export const Component = ({
         <Menu.Item className="is-selectable">
           <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
         </Menu.Item>
-        {!!socialMediaLinks.length && (
+        {size(socialMediaLinks) && (
           <Menu.Menu position="right">
             {socialMediaLinks.map(({ href, iconName, iconPath }, index) => (
               <Menu.Item
