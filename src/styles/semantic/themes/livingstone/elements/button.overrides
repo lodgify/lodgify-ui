@@ -32,6 +32,9 @@
 
 .ui.button.circular,
 .ui.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   > .icon {
     width: auto;

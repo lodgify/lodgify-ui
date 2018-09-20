@@ -1,3 +1,10 @@
+## [1.54.1](https://github.com/lodgify/lodgify-ui/compare/v1.54.0...v1.54.1) (2018-09-20)
+
+
+### Bug Fixes
+
+* **Button:** add styles for buttons with an icon ([4fbb0cf](https://github.com/lodgify/lodgify-ui/commit/4fbb0cf))
+
 # [1.54.0](https://github.com/lodgify/lodgify-ui/compare/v1.53.1...v1.54.0) (2018-09-20)
 
 
