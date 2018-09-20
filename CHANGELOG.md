@@ -1,3 +1,15 @@
+# [1.54.0](https://github.com/lodgify/lodgify-ui/compare/v1.53.1...v1.54.0) (2018-09-20)
+
+
+### Bug Fixes
+
+* **SearchBar:** expose willDropdownsOpenAbove prop ([b991589](https://github.com/lodgify/lodgify-ui/commit/b991589))
+
+
+### Features
+
+* **HomepageHero:** consume SearchBar willDropdownsOpenAbove ([af06ee3](https://github.com/lodgify/lodgify-ui/commit/af06ee3))
+
 ## [1.53.1](https://github.com/lodgify/lodgify-ui/compare/v1.53.0...v1.53.1) (2018-09-18)
 
 

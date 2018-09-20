@@ -11,7 +11,7 @@ import { SearchBar } from 'general-widgets/SearchBar';
 export const getSearchBarMarkup = props => (
   <Grid areColumnsCentered>
     <GridRow horizontalAlignContent="center">
-      <SearchBar {...props} />
+      <SearchBar willDropdownsOpenAbove {...props} />
     </GridRow>
   </Grid>
 );
