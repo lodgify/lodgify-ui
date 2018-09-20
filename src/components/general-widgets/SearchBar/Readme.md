@@ -40,6 +40,16 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 <SearchBar
   guestsOptions={guestsOptions}
 />
+
+```
+#### Dropdowns open above
+```jsx
+const { guestsOptions, locationOptions } = require('./mock-data/options');
+
+<SearchBar
+  guestsOptions={guestsOptions}
+  willDropdownsOpenAbove={true}
+/>
 ```
 
 #### Fixed

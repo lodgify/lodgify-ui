@@ -37,6 +37,7 @@ export class Component extends PureComponent {
       modalTrigger,
       isFixed,
       summaryElement,
+      willDropdownsOpenAbove,
     } = this.props;
 
     const searchBarAsModal =
@@ -94,7 +95,7 @@ export class Component extends PureComponent {
               this.props,
               this.persistInputChange,
               false,
-              false
+              willDropdownsOpenAbove
             )}
           </Form.Group>
         </Form>
@@ -121,6 +122,7 @@ Component.defaultProps = {
   ),
   locationOptions: null,
   summaryElement: null,
+  willDropdownsOpenAbove: false,
 };
 /* eslint react/no-unused-prop-types: 0 */
 Component.propTypes = {
@@ -179,4 +181,6 @@ Component.propTypes = {
   searchButton: PropTypes.node,
   /** The element to display in the fixed container */
   summaryElement: PropTypes.node,
+  /** The dropdowns will open above the search bar. */
+  willDropdownsOpenAbove: PropTypes.bool,
 };
