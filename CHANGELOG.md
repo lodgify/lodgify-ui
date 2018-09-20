@@ -1,3 +1,12 @@
+# [1.55.0](https://github.com/lodgify/lodgify-ui/compare/v1.54.1...v1.55.0) (2018-09-20)
+
+
+### Features
+
+* **getHeading:** implement util and its unit test ([261bea2](https://github.com/lodgify/lodgify-ui/commit/261bea2))
+* **getLocationName:** implement util and its unit test ([3d0f227](https://github.com/lodgify/lodgify-ui/commit/3d0f227))
+* **getRatingAndNightPriceMarkup:** implement util and its unit test ([725ed6e](https://github.com/lodgify/lodgify-ui/commit/725ed6e))
+
 ## [1.54.1](https://github.com/lodgify/lodgify-ui/compare/v1.54.0...v1.54.1) (2018-09-20)
 
 
