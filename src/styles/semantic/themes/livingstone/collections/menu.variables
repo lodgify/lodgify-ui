@@ -18,6 +18,8 @@
 @headerMenuItemVerticalPadding: @35px;
 @headerMenuItemMobileVerticalPadding: @15px;
 @headerMenuItemTextColor: @pureWhite;
+@headerLogoMaxWidth: 125px;
+@headerLogoMaxHeight: 55px;
 
 @footerMenuItemVerticalPadding: @8px;
 @footerMenuItemHorizontalPadding: @35px;

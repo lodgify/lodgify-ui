@@ -252,6 +252,14 @@ header > .ui.menu.text {
     &:last-child {
       margin-right: 0;
     }
+
+    &.link {
+
+      .ui.image {
+        max-height: @headerLogoMaxHeight;
+        max-width: @headerLogoMaxWidth;
+      }
+    }
   }
 
   /*--------------
