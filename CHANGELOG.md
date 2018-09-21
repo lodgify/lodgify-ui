@@ -1,3 +1,10 @@
+## [1.55.1](https://github.com/lodgify/lodgify-ui/compare/v1.55.0...v1.55.1) (2018-09-21)
+
+
+### Bug Fixes
+
+* **Header:** fix the max height and width of logo ([71d829c](https://github.com/lodgify/lodgify-ui/commit/71d829c))
+
 # [1.55.0](https://github.com/lodgify/lodgify-ui/compare/v1.54.1...v1.55.0) (2018-09-20)
 
 
