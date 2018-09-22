@@ -37,6 +37,7 @@ export class Component extends PureComponent {
       modalTrigger,
       isFixed,
       summaryElement,
+      willDropdownsOpenAbove,
     } = this.props;
 
     const searchBarAsModal =
@@ -94,7 +95,7 @@ export class Component extends PureComponent {
               this.props,
               this.persistInputChange,
               false,
-              false
+              willDropdownsOpenAbove
             )}
           </Form.Group>
         </Form>
@@ -114,13 +115,14 @@ Component.defaultProps = {
   isDisplayedAsModal: false,
   isFixed: false,
   isShowingSummary: false,
-  isShowingLocationDropdown: true,
   searchButton: (
     <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
       Search
     </Button>
   ),
+  locationOptions: null,
   summaryElement: null,
+  willDropdownsOpenAbove: false,
 };
 /* eslint react/no-unused-prop-types: 0 */
 Component.propTypes = {
@@ -147,8 +149,6 @@ Component.propTypes = {
   isDisplayedAsModal: PropTypes.bool,
   /** Is the Search Bar fixed to the bottom of the window */
   isFixed: PropTypes.bool,
-  /** Is Search Bar showing the Location Dropdown. */
-  isShowingLocationDropdown: PropTypes.bool,
   /** Is Search Bar showing the Property Summary info. */
   isShowingSummary: PropTypes.bool,
   /** The options which the user can select in the location field. */
@@ -163,7 +163,7 @@ Component.propTypes = {
         PropTypes.string,
       ]),
     })
-  ).isRequired,
+  ),
   /** The heading text to display in the modal */
   modalHeadingText: PropTypes.string,
   /** The summary element to display in the mobile modal  */
@@ -181,4 +181,6 @@ Component.propTypes = {
   searchButton: PropTypes.node,
   /** The element to display in the fixed container */
   summaryElement: PropTypes.node,
+  /** The dropdowns will open above the search bar. */
+  willDropdownsOpenAbove: PropTypes.bool,
 };

@@ -1,3 +1,46 @@
+## [1.55.1](https://github.com/lodgify/lodgify-ui/compare/v1.55.0...v1.55.1) (2018-09-21)
+
+
+### Bug Fixes
+
+* **Header:** fix the max height and width of logo ([71d829c](https://github.com/lodgify/lodgify-ui/commit/71d829c))
+
+# [1.55.0](https://github.com/lodgify/lodgify-ui/compare/v1.54.1...v1.55.0) (2018-09-20)
+
+
+### Features
+
+* **getHeading:** implement util and its unit test ([261bea2](https://github.com/lodgify/lodgify-ui/commit/261bea2))
+* **getLocationName:** implement util and its unit test ([3d0f227](https://github.com/lodgify/lodgify-ui/commit/3d0f227))
+* **getRatingAndNightPriceMarkup:** implement util and its unit test ([725ed6e](https://github.com/lodgify/lodgify-ui/commit/725ed6e))
+
+## [1.54.1](https://github.com/lodgify/lodgify-ui/compare/v1.54.0...v1.54.1) (2018-09-20)
+
+
+### Bug Fixes
+
+* **Button:** add styles for buttons with an icon ([4fbb0cf](https://github.com/lodgify/lodgify-ui/commit/4fbb0cf))
+
+# [1.54.0](https://github.com/lodgify/lodgify-ui/compare/v1.53.1...v1.54.0) (2018-09-20)
+
+
+### Bug Fixes
+
+* **SearchBar:** expose willDropdownsOpenAbove prop ([b991589](https://github.com/lodgify/lodgify-ui/commit/b991589))
+
+
+### Features
+
+* **HomepageHero:** consume SearchBar willDropdownsOpenAbove ([af06ee3](https://github.com/lodgify/lodgify-ui/commit/af06ee3))
+
+## [1.53.1](https://github.com/lodgify/lodgify-ui/compare/v1.53.0...v1.53.1) (2018-09-18)
+
+
+### Bug Fixes
+
+* **Header:** update Header to not need both guestsOptions and locationOptions ([5d67cda](https://github.com/lodgify/lodgify-ui/commit/5d67cda))
+* **SearchBar:** update locationOptions to not be required ([d36919e](https://github.com/lodgify/lodgify-ui/commit/d36919e))
+
 # [1.53.0](https://github.com/lodgify/lodgify-ui/compare/v1.52.0...v1.53.0) (2018-09-14)
 
 

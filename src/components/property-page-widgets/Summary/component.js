@@ -1,40 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Rating, Segment } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 
-import { Icon, ICON_NAMES } from 'elements/Icon';
-import { Heading } from 'typography/Heading';
-import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
+import { withResponsive } from 'utils/with-responsive';
+
+import { getRatingAndNightPriceMarkup } from './utils/getRatingAndNightPriceMarkup';
+import { getHeadingMarkup } from './utils/getHeadingMarkup';
+import { getLocationNameMarkup } from './utils/getLocationNameMarkup';
 
 /**
  * The standard widget for displaying the summary details of a property.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({
+const Component = ({
   locationName,
   nightPrice,
   propertyName,
   ratingNumber,
+  isUserOnMobile,
 }) => (
   <Segment.Group compact>
-    <Segment>
-      <Heading>{propertyName}</Heading>
-    </Segment>
+    {!isUserOnMobile && getHeadingMarkup(propertyName)}
     <Segment.Group horizontal>
-      <Segment>
-        {locationName}
-        <Icon color="yellow" name={ICON_NAMES.MAP_PIN} size="small" />
-      </Segment>
-      <Segment>
-        {ratingNumber}
-        <Rating
-          disabled
-          maxRating={5}
-          rating={Math.round(ratingNumber)}
-          size="tiny"
-        />
-      </Segment>
-      <Segment>{getNightPriceMarkup(nightPrice, 'small')}</Segment>
+      {!isUserOnMobile && getLocationNameMarkup(locationName)}
+      {getRatingAndNightPriceMarkup(ratingNumber, nightPrice)}
     </Segment.Group>
   </Segment.Group>
 );
@@ -42,6 +31,12 @@ export const Component = ({
 Component.displayName = 'Summary';
 
 Component.propTypes = {
+  /**
+   * Is the user on a mobile device.
+   * Provided by `withResponsive` so ignored in the styleguide.
+   * @ignore
+   */
+  isUserOnMobile: PropTypes.bool.isRequired,
   /** The name of the location of the property. */
   locationName: PropTypes.string.isRequired,
   /** The price per night of the property, with currency symbol. */
@@ -51,3 +46,5 @@ Component.propTypes = {
   /** The numeral rating for the property, out of 5 */
   ratingNumber: PropTypes.number.isRequired,
 };
+
+export const ComponentWithResponsive = withResponsive(Component);

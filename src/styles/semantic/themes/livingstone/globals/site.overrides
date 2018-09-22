@@ -92,7 +92,7 @@ a {
 }
 
 a:hover {
-  color: var(@themeLinkHoverColorIdentifier, @themeLinkHoverColorDefault);
+  color: var(@themeLinkDarkerColorIdentifier, @themeLinkDarkerColorDefault);
 }
 
 /*-------------------

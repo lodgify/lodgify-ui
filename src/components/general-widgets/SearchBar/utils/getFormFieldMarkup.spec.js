@@ -21,6 +21,8 @@ const componentProps = {
   searchButton: <div />,
 };
 
+const willDropdownsOpenAbove = true;
+
 const getMarkup = overrideProps =>
   shallow(
     <div>
@@ -31,16 +33,16 @@ const getMarkup = overrideProps =>
         },
         Function.prototype,
         false,
-        false
+        willDropdownsOpenAbove
       )}
     </div>
   );
 
 describe('getFormFieldMarkup', () => {
-  it('should return 5 `Form.Field`', () => {
+  it('should return 4 `Form.Field`', () => {
     const wrapper = getMarkup().find(Form.Field);
 
-    expect(wrapper).toHaveLength(5);
+    expect(wrapper).toHaveLength(4);
   });
 
   describe('first `Form.Field`', () => {
@@ -56,6 +58,7 @@ describe('getFormFieldMarkup', () => {
         width: 'three',
       });
     });
+
     it('should have the correct children', () => {
       const wrapper = getField();
 
@@ -86,25 +89,28 @@ describe('getFormFieldMarkup', () => {
       const wrapper = getField();
 
       expectComponentToHaveProps(wrapper, {
-        width: 'three',
+        width: 'seven',
       });
     });
+
     it('should have the correct children', () => {
       const wrapper = getField();
 
-      expectComponentToHaveChildren(wrapper, Dropdown);
+      expectComponentToHaveChildren(wrapper, DateRangePicker);
     });
   });
-  describe('first `Dropdown`', () => {
+
+  describe('first `DateRangePicker`', () => {
     it('should have the right props', () => {
       const wrapper = getMarkup()
-        .find(Dropdown)
+        .find(DateRangePicker)
         .at(0);
 
       expectComponentToHaveProps(wrapper, {
-        icon: 'map pin',
-        label: 'Location',
+        name: 'dates',
+        getIsDayBlocked: expect.any(Function),
         onChange: expect.any(Function),
+        willOpenAbove: willDropdownsOpenAbove,
       });
     });
   });
@@ -119,28 +125,32 @@ describe('getFormFieldMarkup', () => {
       const wrapper = getField();
 
       expectComponentToHaveProps(wrapper, {
-        width: 'seven',
+        width: 'three',
       });
     });
+
     it('should have the correct children', () => {
       const wrapper = getField();
 
-      expectComponentToHaveChildren(wrapper, DateRangePicker);
+      expectComponentToHaveChildren(wrapper, Dropdown);
     });
   });
-  describe('first `DateRangePicker`', () => {
+
+  describe('second `DateRangePicker`', () => {
     it('should have the right props', () => {
       const wrapper = getMarkup()
-        .find(DateRangePicker)
+        .find(Dropdown)
         .at(0);
 
       expectComponentToHaveProps(wrapper, {
-        name: 'dates',
-        getIsDayBlocked: expect.any(Function),
-        onChange: expect.any(Function),
+        name: 'guests',
+        icon: 'users',
+        label: 'Guests',
+        willOpenAbove: willDropdownsOpenAbove,
       });
     });
   });
+
   describe('fourth `Form.Field`', () => {
     const getField = () =>
       getMarkup()
@@ -154,42 +164,58 @@ describe('getFormFieldMarkup', () => {
         width: 'three',
       });
     });
-    it('should have the correct children', () => {
-      const wrapper = getField();
 
-      expectComponentToHaveChildren(wrapper, Dropdown);
-    });
-  });
-  describe('second `DateRangePicker`', () => {
-    it('should have the right props', () => {
-      const wrapper = getMarkup()
-        .find(Dropdown)
-        .at(1);
-
-      expectComponentToHaveProps(wrapper, {
-        name: 'guests',
-        icon: 'users',
-        label: 'Guests',
-      });
-    });
-  });
-  describe('fifth `Form.Field`', () => {
-    const getField = () =>
-      getMarkup()
-        .find(Form.Field)
-        .at(4);
-
-    it('should have the right props', () => {
-      const wrapper = getField();
-
-      expectComponentToHaveProps(wrapper, {
-        width: 'three',
-      });
-    });
     it('should have the correct children', () => {
       const wrapper = getField();
 
       expectComponentToHaveChildren(wrapper, 'div');
+    });
+  });
+
+  describe('if `props.locationOptions` size is greater than 0', () => {
+    const getMerkupWithLocationOptions = () =>
+      getMarkup({ locationOptions: [{ text: 'yo' }] });
+
+    it('should render an extra `Form.Field`', () => {
+      const wrapper = getMerkupWithLocationOptions().find(Form.Field);
+
+      expect(wrapper).toHaveLength(5);
+    });
+
+    describe('the `Form.Field`', () => {
+      const getField = () =>
+        getMerkupWithLocationOptions()
+          .find(Form.Field)
+          .at(1);
+
+      it('should have the right props', () => {
+        const wrapper = getField();
+
+        expectComponentToHaveProps(wrapper, {
+          width: 'three',
+        });
+      });
+
+      it('should have the correct children', () => {
+        const wrapper = getField();
+
+        expectComponentToHaveChildren(wrapper, Dropdown);
+      });
+
+      describe('first `Dropdown`', () => {
+        it('should have the right props', () => {
+          const wrapper = getMerkupWithLocationOptions()
+            .find(Dropdown)
+            .at(0);
+
+          expectComponentToHaveProps(wrapper, {
+            icon: 'map pin',
+            label: 'Location',
+            onChange: expect.any(Function),
+            willOpenAbove: willDropdownsOpenAbove,
+          });
+        });
+      });
     });
   });
 });

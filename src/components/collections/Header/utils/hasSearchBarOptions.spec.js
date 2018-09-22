@@ -12,15 +12,20 @@ describe('hasSearchBarOptions', () => {
   });
 
   describe('if either of `guestsOptions` and `locationOptions` is undefined or not populated', () => {
+    it('should return `true`', () => {
+      const testCases = [[[{}], undefined], [undefined, [{}]], [[{}], [{}]]];
+
+      testCases.forEach(([guestsOptions, locationOptions]) => {
+        const actual = hasSearchBarOptions(guestsOptions, locationOptions);
+
+        expect(actual).toBe(true);
+      });
+    });
+  });
+
+  describe('if both of `guestsOptions` and `locationOptions` is undefined or not populated', () => {
     it('should return `false`', () => {
-      const testCases = [
-        [undefined, undefined],
-        [[{}], undefined],
-        [undefined, [{}]],
-        [[{}], []],
-        [[], [{}]],
-        [[], []],
-      ];
+      const testCases = [[undefined, undefined]];
 
       testCases.forEach(([guestsOptions, locationOptions]) => {
         const actual = hasSearchBarOptions(guestsOptions, locationOptions);
