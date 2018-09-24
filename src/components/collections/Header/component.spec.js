@@ -47,6 +47,16 @@ describe('<Header />', () => {
 
       expectComponentToHaveChildren(wrapper, Container);
     });
+
+    describe('if `props.isBackgroundFilled` is true', () => {
+      it('should have the right props', () => {
+        const wrapper = getWrappedHeader({ isBackgroundFilled: true });
+
+        expectComponentToHaveProps(wrapper, {
+          className: 'is-background-filled',
+        });
+      });
+    });
   });
 
   describe('the `Container` component', () => {
