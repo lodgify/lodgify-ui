@@ -43,6 +43,9 @@
 @themeLinkDarkerColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-darker-color";
 @themeLinkDarkerColorDefault: @darkPrimaryColor;
 
+@themeBackgroundColorIdentifier:  ~"@{themeCustomPropertyPrefix}-background-color";
+@themeBackgroundColorDefault: @black;
+
 /*--------------
   Page Heading
 ---------------*/

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import getClassNames from 'classnames';
 import { Menu } from 'semantic-ui-react';
 
 import { withResponsive } from 'utils/with-responsive';
@@ -15,7 +16,11 @@ import { getDesktopMenuMarkup } from './utils/getDesktopMenuMarkup';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = props => (
-  <header>
+  <header
+    className={getClassNames({
+      'is-background-filled': props.isBackgroundFilled,
+    })}
+  >
     <Container as={Menu} borderless text>
       {getLogoMarkup(props.logoSrc, props.logoText)}
       <Menu.Menu position="right">
@@ -31,6 +36,7 @@ Component.displayName = 'Header';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  isBackgroundFilled: false,
   logoSrc: null,
   primaryCTA: null,
   searchBarGuestsOptions: [],
@@ -41,6 +47,8 @@ Component.propTypes = {
   /** The index of the active navigation item. */
   // eslint-disable-next-line react/no-unused-prop-types
   activeNavigationItemIndex: PropTypes.number,
+  /** Is the background filled with a color defined in CSS. */
+  isBackgroundFilled: PropTypes.bool,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.
