@@ -3,7 +3,6 @@ export { Footer } from './components/collections/Footer';
 export { Form } from './components/collections/Form';
 export { Header } from './components/collections/Header';
 export { Hero } from './components/collections/Hero';
-export { HomepageHero } from './components/collections/HomepageHero';
 export { InputGroup } from './components/collections/InputGroup';
 
 // Elements
@@ -34,6 +33,7 @@ export {
 export {
   FeaturedRoomTypes,
 } from './components/general-widgets/FeaturedRoomTypes';
+export { HomepageHero } from './components/general-widgets/HomepageHero';
 export { HTML } from './components/general-widgets/HTML';
 export { OwnerLogin } from './components/general-widgets/OwnerLogin';
 export { OwnerSignUp } from './components/general-widgets/OwnerSignUp';
