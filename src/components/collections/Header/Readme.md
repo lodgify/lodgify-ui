@@ -134,3 +134,20 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
   />
 </div>
 ```
+
+### Variations
+
+#### Background filled
+
+```jsx
+const { navigationItems } = require('./mock-data/navigationItems');
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+
+<Header
+  isBackgroundFilled
+  logoSrc={logoSrc}
+  logoText="Livingstone Cottage"
+  navigationItems={navigationItems}
+  primaryCTA={{ href: '/book', text: 'Book now'}}
+/>
+```
