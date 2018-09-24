@@ -54,12 +54,13 @@ export { TextInput } from './components/inputs/TextInput';
 export { Toggle } from './components/inputs/Toggle';
 
 // Layout
-export { Container } from './components/layout/Container';
 export { Grid } from './components/layout/Grid';
 export { GridColumn } from './components/layout/GridColumn';
 export { GridRow } from './components/layout/GridRow';
+export { HorizontalGutters } from './components/layout/HorizontalGutters';
 export { ShowOnDesktop } from './components/layout/ShowOnDesktop';
 export { ShowOnMobile } from './components/layout/ShowOnMobile';
+export { VerticalGutters } from './components/layout/VerticalGutters';
 
 // Media
 export { FullBleed } from './components/media/FullBleed';

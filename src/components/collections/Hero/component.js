@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Heading } from 'typography/Heading';
 import { Header } from 'collections/Header';
 import { FullBleed } from 'media/FullBleed';
-import { Container } from 'layout/Container';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 /**
  * A standard Hero widget which displays a heading, header
@@ -32,7 +32,9 @@ export const Component = ({
       searchBarLocationOptions={headerSearchBarLocationOptions}
     />
     <Heading size="huge">{heading}</Heading>
-    <Container textAlign="center">{!!extraContent && extraContent}</Container>
+    <HorizontalGutters textAlign="center">
+      {!!extraContent && extraContent}
+    </HorizontalGutters>
   </FullBleed>
 );
 

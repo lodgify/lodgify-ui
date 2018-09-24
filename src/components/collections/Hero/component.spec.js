@@ -10,7 +10,7 @@ import {
 import { Header } from 'collections/Header';
 import { FullBleed } from 'media/FullBleed';
 import { Heading } from 'typography/Heading';
-import { Container } from 'layout/Container';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { Component as Hero } from './component';
 
@@ -29,8 +29,8 @@ const props = {
 
 const getHeroComponent = extraProps =>
   shallow(<Hero {...props} {...extraProps} />);
-const getContainerComponent = extraProps =>
-  getHeroComponent(extraProps).find(Container);
+const getHorizontalGuttersComponent = extraProps =>
+  getHeroComponent(extraProps).find(HorizontalGutters);
 
 describe('<Hero />', () => {
   it('should render a single `FullBleed` component', () => {
@@ -52,7 +52,7 @@ describe('<Hero />', () => {
   it('should have the right children', () => {
     const wrapper = getHeroComponent();
 
-    expectComponentToHaveChildren(wrapper, Header, Heading, Container);
+    expectComponentToHaveChildren(wrapper, Header, Heading, HorizontalGutters);
   });
 
   describe('the `Header` component', () => {
@@ -86,9 +86,9 @@ describe('<Hero />', () => {
     });
   });
 
-  describe('the `Container` component', () => {
+  describe('the `HorizontalGutters` component', () => {
     it('should have the right props', () => {
-      const wrapper = getContainerComponent();
+      const wrapper = getHorizontalGuttersComponent();
 
       expectComponentToHaveProps(wrapper, { textAlign: 'center' });
     });
@@ -96,11 +96,11 @@ describe('<Hero />', () => {
 
   describe('if `props.extraContent` is passed', () => {
     const getGridWithExtraContent = () =>
-      getContainerComponent({ extraContent: <div>yo</div> });
+      getHorizontalGuttersComponent({ extraContent: <div>yo</div> });
 
-    describe('the `Container` component', () => {
+    describe('the `HorizontalGutters` component', () => {
       it('should render the right children', () => {
-        const wrapper = getGridWithExtraContent().find(Container);
+        const wrapper = getGridWithExtraContent().find(HorizontalGutters);
 
         expectComponentToHaveChildren(wrapper, 'div');
       });
