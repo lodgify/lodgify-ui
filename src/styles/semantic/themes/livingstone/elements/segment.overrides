@@ -68,6 +68,7 @@
 .ui.segment.full-bleed {
   background-position: center;
   background-size: cover;
+  display: flex;
   height: 100vh;
   padding: 0;
 
@@ -83,6 +84,10 @@
       right: 0;
       top: 0;
     }
+  }
+
+  &.is-hero {
+    flex-direction: column;
   }
 }
 

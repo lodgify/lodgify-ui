@@ -54,6 +54,7 @@ export { TextInput } from './components/inputs/TextInput';
 export { Toggle } from './components/inputs/Toggle';
 
 // Layout
+export { FlexContainer } from './components/layout/FlexContainer';
 export { Grid } from './components/layout/Grid';
 export { GridColumn } from './components/layout/GridColumn';
 export { GridRow } from './components/layout/GridRow';
