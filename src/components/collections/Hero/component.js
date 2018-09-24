@@ -1,26 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Heading } from 'typography/Heading';
 import { Header } from 'collections/Header';
 import { FullBleed } from 'media/FullBleed';
-import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 /**
- * A standard Hero widget which displays a heading, header
- * and some extra content
+ * A hero displays a header and optional children with a full bleed image background
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   backgroundImageUrl,
-  extraContent,
+  children,
   headerLogoSrc,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
   headerSearchBarGuestsOptions,
   headerSearchBarLocationOptions,
-  heading,
 }) => (
   <FullBleed className="is-hero" hasGradient imageUrl={backgroundImageUrl}>
     <Header
@@ -31,29 +27,25 @@ export const Component = ({
       searchBarGuestsOptions={headerSearchBarGuestsOptions}
       searchBarLocationOptions={headerSearchBarLocationOptions}
     />
-    <Heading size="huge">{heading}</Heading>
-    <HorizontalGutters textAlign="center">
-      {!!extraContent && extraContent}
-    </HorizontalGutters>
+    {children}
   </FullBleed>
 );
 
 Component.displayName = 'Hero';
 
 Component.defaultProps = {
-  extraContent: null,
+  children: null,
   headerLogoSrc: null,
   headerPrimaryCTA: null,
   headerSearchBarGuestsOptions: [],
   headerSearchBarLocationOptions: [],
-  heading: null,
 };
 
 Component.propTypes = {
   /** The background image url of the hero. */
   backgroundImageUrl: PropTypes.string.isRequired,
-  /** The extra content that will be displayed in a row underneath the heading. */
-  extraContent: PropTypes.node,
+  /** The children displayed between the header and the bottom of the hero. */
+  children: PropTypes.node,
   /** The src url for the logo in the header. */
   headerLogoSrc: PropTypes.string,
   /** The text for the logo in the header. */
@@ -107,6 +99,4 @@ Component.propTypes = {
       ]),
     })
   ),
-  /** The text for the heading displayed in the middle of the hero. */
-  heading: PropTypes.string,
 };

@@ -9,8 +9,6 @@ import {
 
 import { Header } from 'collections/Header';
 import { FullBleed } from 'media/FullBleed';
-import { Heading } from 'typography/Heading';
-import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { Component as Hero } from './component';
 
@@ -29,8 +27,6 @@ const props = {
 
 const getHeroComponent = extraProps =>
   shallow(<Hero {...props} {...extraProps} />);
-const getHorizontalGuttersComponent = extraProps =>
-  getHeroComponent(extraProps).find(HorizontalGutters);
 
 describe('<Hero />', () => {
   it('should render a single `FullBleed` component', () => {
@@ -52,7 +48,7 @@ describe('<Hero />', () => {
   it('should have the right children', () => {
     const wrapper = getHeroComponent();
 
-    expectComponentToHaveChildren(wrapper, Header, Heading, HorizontalGutters);
+    expectComponentToHaveChildren(wrapper, Header);
   });
 
   describe('the `Header` component', () => {
@@ -70,40 +66,14 @@ describe('<Hero />', () => {
     });
   });
 
-  describe('the `Heading` component', () => {
-    const getHeadingComponent = () => getHeroComponent().find(Heading);
-
-    it('should have the right props', () => {
-      const wrapper = getHeadingComponent();
-
-      expectComponentToHaveProps(wrapper, { size: 'huge' });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getHeadingComponent();
-
-      expectComponentToHaveChildren(wrapper, 'Heading');
-    });
-  });
-
-  describe('the `HorizontalGutters` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getHorizontalGuttersComponent();
-
-      expectComponentToHaveProps(wrapper, { textAlign: 'center' });
-    });
-  });
-
-  describe('if `props.extraContent` is passed', () => {
-    const getGridWithExtraContent = () =>
-      getHorizontalGuttersComponent({ extraContent: <div>yo</div> });
-
-    describe('the `HorizontalGutters` component', () => {
-      it('should render the right children', () => {
-        const wrapper = getGridWithExtraContent().find(HorizontalGutters);
-
-        expectComponentToHaveChildren(wrapper, 'div');
+  describe('if `props.children` is passed', () => {
+    it('should render the right children', () => {
+      const children = '👶👶';
+      const wrapper = getHeroComponent({
+        children,
       });
+
+      expectComponentToHaveChildren(wrapper, Header, children);
     });
   });
 
