@@ -3,33 +3,33 @@ import { shallow } from 'enzyme';
 import {
   expectComponentToBe,
   expectComponentToHaveProps,
+  expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Hero } from 'collections/Hero';
+import { FlexContainer } from 'layout/FlexContainer';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
+import { Heading } from 'typography/Heading';
+import { Grid } from 'layout/Grid';
 
-import { getSearchBarMarkup } from './utils/getSearchBarMarkup';
 import { ComponentWithResponsive as HomepageHero } from './component';
 
 const props = {
   backgroundImageUrl: 'url',
-  getSearchBarIsDayBlocked: Function.prototype,
   headerLogoSrc: 'src',
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
   headerPrimaryCTA: { href: '/book', text: 'Book now' },
-  heading: 'heading text',
+  headingText: 'heading text',
   isSearchBarDisplayedAsModal: false,
   isSearchBarShowingLocationDropdown: false,
   isSearchBarShowingSummary: false,
+  searchBarGetIsDayBlocked: Function.prototype,
   searchBarGuestsOptions: [{ text: '1', value: '1' }],
   searchBarLocationOptions: [{ text: '1', value: '1' }],
-  searchBarModalHeadingText: 'modal text',
-  searchBarModalSummaryElement: <div>element</div>,
-  searchBarModalTrigger: <button>trigger</button>,
   searchBarOnSubmit: Function.prototype,
   searchBarSearchButton: <button>search button</button>,
-  searchBarSummaryElement: <h1>summary</h1>,
 };
 
 const getHomepageHero = () => shallow(<HomepageHero {...props} />);
@@ -47,14 +47,11 @@ describe('HomepageHero', () => {
     expectComponentToBe(wrapper, Hero);
   });
 
-  describe('if `props.isUserOnMobile` is true', () => {
-    it('should render a the `Hero` with the right props', () => {
-      const wrapper = getWrappedHomepageHero({
-        isUserOnMobile: true,
-      });
-      const actual = wrapper.find('Hero');
+  describe('the `Hero` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getWrappedHomepageHero();
 
-      expectComponentToHaveProps(actual, {
+      expectComponentToHaveProps(wrapper, {
         backgroundImageUrl: props.backgroundImageUrl,
         headerLogoSrc: props.headerLogoSrc,
         headerLogoText: props.headerLogoText,
@@ -62,46 +59,92 @@ describe('HomepageHero', () => {
         headerPrimaryCTA: props.headerPrimaryCTA,
         headerSearchBarGuestsOptions: props.searchBarGuestsOptions,
         headerSearchBarLocationOptions: props.searchBarLocationOptions,
-        heading: props.heading,
+      });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getWrappedHomepageHero();
+
+      expectComponentToHaveChildren(wrapper, FlexContainer);
+    });
+  });
+
+  describe('the `FlexContainer`', () => {
+    const getFlexContainer = props =>
+      getWrappedHomepageHero(props).find(FlexContainer);
+
+    it('should have the right props', () => {
+      const wrapper = getFlexContainer();
+
+      expectComponentToHaveProps(wrapper, {
+        alignItems: 'center',
+        flexDirection: 'column',
+        justifyContent: 'space-evenly',
+      });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getFlexContainer();
+
+      expectComponentToHaveChildren(
+        wrapper,
+        HorizontalGutters,
+        HorizontalGutters
+      );
+    });
+
+    describe('if `props.isUserOnMobile` is true', () => {
+      it('should have the right children', () => {
+        const wrapper = getFlexContainer({ isUserOnMobile: true });
+
+        expectComponentToHaveChildren(wrapper, HorizontalGutters);
       });
     });
   });
 
-  describe('if `props.isUserOnMobile` is false', () => {
-    it('should render a the `Hero` with the right props', () => {
-      const wrapper = getWrappedHomepageHero({
-        isUserOnMobile: false,
-      });
-      const actual = wrapper.find('Hero');
+  describe('the first `HorizontalGutters` component', () => {
+    it('should have the right children', () => {
+      const wrapper = getWrappedHomepageHero()
+        .find(HorizontalGutters)
+        .first();
 
-      expectComponentToHaveProps(actual, {
-        backgroundImageUrl: props.backgroundImageUrl,
-        extraContent: getSearchBarMarkup({
-          getIsDayBlocked: props.getSearchBarIsDayBlocked,
-          isDisplayedAsModal: props.isSearchBarDisplayedAsModal,
-          isShowingLocationDropdown: props.isSearchBarShowingLocationDropdown,
-          isShowingSummary: props.isSearchBarShowingSummary,
-          guestsOptions: props.searchBarGuestsOptions,
-          locationOptions: props.searchBarLocationOptions,
-          modalHeadingText: props.searchBarModalHeadingText,
-          modalSummaryElement: props.searchBarModalSummaryElement,
-          modalTrigger: props.searchBarModalTrigger,
-          onSubmit: props.searchBarOnSubmit,
-          searchButton: props.searchBarSearchButton,
-          summaryElement: props.searchBarSummaryElement,
-        }),
-        headerLogoSrc: props.headerLogoSrc,
-        headerLogoText: props.headerLogoText,
-        headerNavigationItems: props.headerNavigationItems,
-        headerPrimaryCTA: props.headerPrimaryCTA,
-        heading: props.heading,
+      expectComponentToHaveChildren(wrapper, Heading);
+    });
+  });
+
+  describe('the `Heading`', () => {
+    const getHeading = () => getWrappedHomepageHero().find(Heading);
+
+    it('should have the right props', () => {
+      const wrapper = getHeading();
+
+      expectComponentToHaveProps(wrapper, {
+        isColorInverted: true,
+        size: 'huge',
+        textAlign: 'center',
       });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getHeading();
+
+      expectComponentToHaveChildren(wrapper, props.headingText);
+    });
+  });
+
+  describe('the second `HorizontalGutters` component', () => {
+    it('should have the right children', () => {
+      const wrapper = getWrappedHomepageHero()
+        .find(HorizontalGutters)
+        .at(1);
+
+      expectComponentToHaveChildren(wrapper, Grid);
     });
   });
 
   it('should have the displayName `HomepageHero`', () => {
-    const component = getHomepageHero().prop('as');
+    const wrapper = getHomepageHero().prop('as');
 
-    expectComponentToHaveDisplayName(component, 'HomepageHero');
+    expectComponentToHaveDisplayName(wrapper, 'HomepageHero');
   });
 });
