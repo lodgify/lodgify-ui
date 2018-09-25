@@ -10,24 +10,16 @@ import {
 import { EMAIL, OWNER_LOGIN, PASSWORD, LOGIN } from 'utils/default-strings';
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as OwnerLogin } from './component';
 
 const getOwnerLogin = () => shallow(<OwnerLogin />);
 
 describe('<OwnerLogin />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Form` component as a wrapper', () => {
     const wrapper = getOwnerLogin();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Form` as its only children', () => {
-      const wrapper = getOwnerLogin();
-
-      expectComponentToHaveChildren(wrapper, Form);
-    });
+    expectComponentToBe(wrapper, Form);
   });
 
   describe('the `Form` component', () => {
