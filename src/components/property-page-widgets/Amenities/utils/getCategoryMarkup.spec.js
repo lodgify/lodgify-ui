@@ -36,12 +36,6 @@ describe('getCategoryMarkup', () => {
     expectComponentToBe(wrapper, 'GridColumn');
   });
 
-  it('should have the right props', () => {
-    const wrapper = getMarkup();
-
-    expectComponentToHaveProps(wrapper, { width: 4 });
-  });
-
   it('should render the right children', () => {
     const wrapper = getMarkup();
 
@@ -69,14 +63,6 @@ describe('getCategoryMarkup', () => {
         wrapper,
         ...getFormattedAmenityItems(category.items)
       );
-    });
-  });
-
-  describe('if `isFullWidth === true`', () => {
-    it('should have the right props', () => {
-      const wrapper = getMarkup(true);
-
-      expectComponentToHaveProps(wrapper, { width: 12 });
     });
   });
 });

@@ -10,14 +10,10 @@ import { getFormattedAmenityItems } from './getFormattedAmenityItems';
 /**
  * @param  {Object}  category
  * @param  {number}  index
- * @param  {boolean} [isFullWidth=false]
  * @return {Object}
  */
-export const getCategoryMarkup = (category, index, isFullWidth = false) => (
-  <GridColumn
-    key={buildKeyFromStrings(category.name, index)}
-    width={isFullWidth ? 12 : 4}
-  >
+export const getCategoryMarkup = (category, index) => (
+  <GridColumn key={buildKeyFromStrings(category.name, index)} width={null}>
     <Icon
       isLabelLeft
       labelText={category.name}
