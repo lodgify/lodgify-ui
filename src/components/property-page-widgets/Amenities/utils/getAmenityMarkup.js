@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Grid } from 'layout/Grid';
+import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 
@@ -24,21 +25,18 @@ export const getAmenityMarkup = (
   isStacked,
   modalTriggerText
 ) => (
-  <Grid hasFixedWidth stackable>
-    {headingText && (
-      <GridColumn width={12}>
-        <Heading>{headingText}</Heading>
-      </GridColumn>
-    )}
-    {getDefaultItems(amenities, isStacked).map((amenity, index) =>
-      getCategoryMarkup(amenity, index, isStacked)
-    )}
-    {hasExtraItems(amenities, isStacked) &&
-      getExtraItemsMarkup(
-        hasExtraItemsInModal,
-        modalTriggerText,
-        amenities,
-        isStacked
+  <Grid className="is-amenities" columns={isStacked ? 1 : 3}>
+    <GridRow>
+      {headingText && (
+        <GridColumn width={12}>
+          <Heading>{headingText}</Heading>
+        </GridColumn>
       )}
+      {getDefaultItems(amenities, isStacked).map((amenity, index) =>
+        getCategoryMarkup(amenity, index)
+      )}
+      {hasExtraItems(amenities, isStacked) &&
+        getExtraItemsMarkup(hasExtraItemsInModal, modalTriggerText, amenities)}
+    </GridRow>
   </Grid>
 );
