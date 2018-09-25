@@ -80,6 +80,9 @@ export { Location } from './components/property-page-widgets/Location';
 export {
   PaymentInformation,
 } from './components/property-page-widgets/PaymentInformation';
+export {
+  PropertyPageHero,
+} from './components/property-page-widgets/PropertyPageHero';
 export { Pictures } from './components/property-page-widgets/Pictures';
 export { RoomType } from './components/property-page-widgets/RoomType';
 export { Rates } from './components/property-page-widgets/Rates';
