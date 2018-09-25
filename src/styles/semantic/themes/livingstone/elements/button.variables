@@ -8,8 +8,6 @@
 
 /* Button */
 @background: @primaryColor;
-@themeActionColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-color";
-@themeActionColorDefault: @primaryColor;
 
 /* Button defaults to using same height as input globally */
 @verticalPadding: @12px;
@@ -19,8 +17,6 @@
 @fontWeight: @normal;
 @textColor: @black;
 @borderRadius: 0;
-@themeActionContrastColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-contrast-color";
-@themeActionContrastColorDefault: @black;
 
 /* Internal Shadow */
 
@@ -50,8 +46,6 @@
 
 /* Hovered */
 @hoverBackgroundColor: @darkPrimaryColor;
-@themeActionDarkerColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-darker-color";
-@themeActionDarkerColorDefault: @darkPrimaryColor;
 
 /* Focused */
 

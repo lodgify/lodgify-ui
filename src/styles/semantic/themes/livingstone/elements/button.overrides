@@ -8,8 +8,8 @@
 
 /* Button */
 .ui.button {
-  background-color: ~"var(@{themeActionColorIdentifier}, @{themeActionColorDefault});";
-  color: ~"var(@{themeActionContrastColorIdentifier}, @{themeActionContrastColorDefault});";
+  background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+  color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
   will-change: @willChange;
   transition:
     background-color @transitionTime @transitionFunction,
@@ -57,14 +57,14 @@
 
 /* Hovered */
 .ui.button:hover {
-  background-color: ~"var(@{themeActionDarkerColorIdentifier}, @{themeActionDarkerColorDefault});";
-  color: ~"var(@{themeActionContrastColorIdentifier}, @{themeActionContrastColorDefault});";
+  background-color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
+  color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
 }
 
 /* Focused */
 .ui.button:focus {
-  background-color: ~"var(@{themeActionDarkerColorIdentifier}, @{themeActionDarkerColorDefault});";
-  color: ~"var(@{themeActionColorIdentifier}, @{themeActionColorDefault});";
+  background-color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
+  color: var(@themeActionColorIdentifier, @themeActionColorDefault);
 }
 
 /* Disabled */
