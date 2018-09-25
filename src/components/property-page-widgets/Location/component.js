@@ -14,7 +14,6 @@ import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getTransportOptionsMarkup } from './utils/getTransportOptionsMarkup';
 import { getGoogleMapHeight } from './utils/getGoogleMapHeight';
@@ -34,42 +33,40 @@ const Component = ({
   longitude,
   transportOptions,
 }) => (
-  <VerticalGutters>
-    <Grid stackable>
-      <GridColumn width={12}>
-        <Heading>{headingText}</Heading>
-        <Subheading>{locationSummary}</Subheading>
-      </GridColumn>
-      <GridColumn computer={6} tablet={12}>
-        {getParagraphsFromStrings(locationDescription).map(
-          (paragraphText, index) => (
-            <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-              {paragraphText}
-            </Paragraph>
-          )
-        )}
-      </GridColumn>
-      <ShowOnDesktop
-        parent={GridColumn}
-        parentProps={{ computer: 6, tablet: 12 }}
-      >
-        {getTransportOptionsMarkup(transportOptions)}
-      </ShowOnDesktop>
-      <GridColumn width={12}>
-        <GoogleMap
-          height={getGoogleMapHeight(isUserOnMobile)}
-          isShowingApproximateLocation={isShowingApproximateLocation}
-          isShowingExactLocation={isShowingExactLocation}
-          latitude={latitude}
-          longitude={longitude}
-        />
-      </GridColumn>
-      <ShowOnMobile parent={GridColumn} parentProps={{ width: 12 }}>
-        <Divider />
-        {getTransportOptionsMarkup(transportOptions)}
-      </ShowOnMobile>
-    </Grid>
-  </VerticalGutters>
+  <Grid stackable>
+    <GridColumn width={12}>
+      <Heading>{headingText}</Heading>
+      <Subheading>{locationSummary}</Subheading>
+    </GridColumn>
+    <GridColumn computer={6} tablet={12}>
+      {getParagraphsFromStrings(locationDescription).map(
+        (paragraphText, index) => (
+          <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
+            {paragraphText}
+          </Paragraph>
+        )
+      )}
+    </GridColumn>
+    <ShowOnDesktop
+      parent={GridColumn}
+      parentProps={{ computer: 6, tablet: 12 }}
+    >
+      {getTransportOptionsMarkup(transportOptions)}
+    </ShowOnDesktop>
+    <GridColumn width={12}>
+      <GoogleMap
+        height={getGoogleMapHeight(isUserOnMobile)}
+        isShowingApproximateLocation={isShowingApproximateLocation}
+        isShowingExactLocation={isShowingExactLocation}
+        latitude={latitude}
+        longitude={longitude}
+      />
+    </GridColumn>
+    <ShowOnMobile parent={GridColumn} parentProps={{ width: 12 }}>
+      <Divider />
+      {getTransportOptionsMarkup(transportOptions)}
+    </ShowOnMobile>
+  </Grid>
 );
 
 Component.displayName = 'Location';
