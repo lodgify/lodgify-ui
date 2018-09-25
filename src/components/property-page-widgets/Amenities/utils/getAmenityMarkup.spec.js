@@ -10,6 +10,7 @@ import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { VIEW_MORE } from 'utils/default-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { GridRow } from 'layout/GridRow';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
@@ -31,7 +32,7 @@ const getAmenities = (props = {}) =>
         props.amenities || amenities,
         hasExtraItemsInModal,
         props.headingText || headingText,
-        isStacked,
+        typeof props.isStacked !== 'undefined' ? props.isStacked : isStacked,
         props.modalTriggerText || modalTriggerText
       )}
     </div>
@@ -39,8 +40,42 @@ const getAmenities = (props = {}) =>
 
 describe('getAmenityMarkup', () => {
   describe('the `Grid` component', () => {
+    const getGrid = () => getAmenities().find(Grid);
+
     it('should render the right children', () => {
-      const wrapper = getAmenities().find(Grid);
+      const wrapper = getGrid();
+
+      expectComponentToHaveChildren(wrapper, GridRow);
+    });
+
+    it('should have the right props', () => {
+      const wrapper = getGrid();
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'is-amenities',
+        columns: 1,
+      });
+    });
+  });
+
+  describe('the `Grid` component where isStacked is false', () => {
+    it('should have the right props', () => {
+      const wrapper = getAmenities({
+        isStacked: false,
+      }).find(Grid);
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'is-amenities',
+        columns: 3,
+      });
+    });
+  });
+
+  describe('the `GridRow` component', () => {
+    it('should render the right children', () => {
+      const wrapper = getAmenities()
+        .find(GridRow)
+        .first();
 
       expectComponentToHaveChildren(
         wrapper,
@@ -56,12 +91,6 @@ describe('getAmenityMarkup', () => {
       })
         .find(GridColumn)
         .first();
-
-    it('should have the right right props', () => {
-      const wrapper = getFirstGridColumn();
-
-      expectComponentToHaveProps(wrapper, { width: 12 });
-    });
 
     it('should render the right children', () => {
       const wrapper = getFirstGridColumn();
@@ -88,7 +117,17 @@ describe('getAmenityMarkup', () => {
       it('should render the right children', () => {
         const wrapper = getAmenitiesWithSixCategories()
           .find(Grid)
-          .at(0);
+          .first();
+
+        expectComponentToHaveChildren(wrapper, GridRow);
+      });
+    });
+
+    describe('the `GridRow` component', () => {
+      it('should render the right children', () => {
+        const wrapper = getAmenitiesWithSixCategories()
+          .find(GridRow)
+          .first();
 
         expectComponentToHaveChildren(
           wrapper,
@@ -155,6 +194,19 @@ describe('getAmenityMarkup', () => {
 
         expectComponentToHaveProps(wrapper, { padded: true, stackable: true });
       });
+
+      it('should render the right children', () => {
+        const wrapper = getSecondGrid();
+
+        expectComponentToHaveChildren(wrapper, GridRow);
+      });
+    });
+
+    describe('the second GridRow', () => {
+      const getSecondGrid = () =>
+        getAmenitiesWithSixCategories()
+          .find(GridRow)
+          .at(1);
 
       it('should render the right children', () => {
         const wrapper = getSecondGrid();
