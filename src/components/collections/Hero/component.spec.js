@@ -9,8 +9,6 @@ import {
 
 import { Header } from 'collections/Header';
 import { FullBleed } from 'media/FullBleed';
-import { Heading } from 'typography/Heading';
-import { Container } from 'layout/Container';
 
 import { Component as Hero } from './component';
 
@@ -29,8 +27,6 @@ const props = {
 
 const getHeroComponent = extraProps =>
   shallow(<Hero {...props} {...extraProps} />);
-const getContainerComponent = extraProps =>
-  getHeroComponent(extraProps).find(Container);
 
 describe('<Hero />', () => {
   it('should render a single `FullBleed` component', () => {
@@ -52,7 +48,7 @@ describe('<Hero />', () => {
   it('should have the right children', () => {
     const wrapper = getHeroComponent();
 
-    expectComponentToHaveChildren(wrapper, Header, Heading, Container);
+    expectComponentToHaveChildren(wrapper, Header);
   });
 
   describe('the `Header` component', () => {
@@ -70,40 +66,14 @@ describe('<Hero />', () => {
     });
   });
 
-  describe('the `Heading` component', () => {
-    const getHeadingComponent = () => getHeroComponent().find(Heading);
-
-    it('should have the right props', () => {
-      const wrapper = getHeadingComponent();
-
-      expectComponentToHaveProps(wrapper, { size: 'huge' });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getHeadingComponent();
-
-      expectComponentToHaveChildren(wrapper, 'Heading');
-    });
-  });
-
-  describe('the `Container` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getContainerComponent();
-
-      expectComponentToHaveProps(wrapper, { textAlign: 'center' });
-    });
-  });
-
-  describe('if `props.extraContent` is passed', () => {
-    const getGridWithExtraContent = () =>
-      getContainerComponent({ extraContent: <div>yo</div> });
-
-    describe('the `Container` component', () => {
-      it('should render the right children', () => {
-        const wrapper = getGridWithExtraContent().find(Container);
-
-        expectComponentToHaveChildren(wrapper, 'div');
+  describe('if `props.children` is passed', () => {
+    it('should render the right children', () => {
+      const children = '👶👶';
+      const wrapper = getHeroComponent({
+        children,
       });
+
+      expectComponentToHaveChildren(wrapper, Header, children);
     });
   });
 

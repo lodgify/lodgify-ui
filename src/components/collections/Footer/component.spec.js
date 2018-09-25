@@ -8,7 +8,7 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 import { Menu } from 'semantic-ui-react';
 
-import { Container } from 'layout/Container';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Divider } from 'elements/Divider';
 import { Submenu } from 'elements/Submenu';
@@ -78,7 +78,7 @@ describe('<Footer />', () => {
         .find('div.top-navigation')
         .at(0);
 
-      expectComponentToHaveChildren(wrapper, Container);
+      expectComponentToHaveChildren(wrapper, HorizontalGutters);
     });
 
     it('should have the right props', () => {
@@ -98,7 +98,7 @@ describe('<Footer />', () => {
         .find('div.bottom-navigation')
         .at(0);
 
-      expectComponentToHaveChildren(wrapper, Container);
+      expectComponentToHaveChildren(wrapper, HorizontalGutters);
     });
 
     it('should have the right props', () => {
@@ -112,10 +112,10 @@ describe('<Footer />', () => {
     });
   });
 
-  describe('the first `Container` component', () => {
+  describe('the first `HorizontalGutters` component', () => {
     const getFirstMenu = () =>
       getFooter()
-        .find(Container)
+        .find(HorizontalGutters)
         .at(0);
 
     it('should have the right props', () => {
@@ -139,7 +139,7 @@ describe('<Footer />', () => {
   describe('if `props.navigationItems` are grouped', () => {
     const getFirstMenuWithGroupeNavigationItems = () =>
       getFooter({ navigationItems: groupedNavigationItems })
-        .find(Container)
+        .find(HorizontalGutters)
         .at(0);
 
     describe('the first `Menu` component', () => {
@@ -192,7 +192,7 @@ describe('<Footer />', () => {
 
   const getSecondMenu = otherProps =>
     getFooter(otherProps)
-      .find(Container)
+      .find(HorizontalGutters)
       .at(1);
 
   describe('the second `Menu` component', () => {

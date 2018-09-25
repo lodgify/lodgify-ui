@@ -1,51 +1,66 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { upperCase } from 'lodash';
 
-import { Header } from 'collections/Header';
-import { FullBleed } from 'media/FullBleed';
+import { withResponsive } from 'utils/with-responsive';
+import { Hero } from 'collections/Hero';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
+import { FlexContainer } from 'layout/FlexContainer';
+import { Button } from 'elements/Button';
+import { ICON_NAMES } from 'elements/Icon';
+import { VIEW_MORE_PICTURES } from 'utils/default-strings';
+import { Divider } from 'elements/Divider';
 
 /**
- * A hero displays a header and optional children with a full bleed image background
+ * A homepage hero displays a hero with heading and a search bar on desktop screens.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({
+const Component = ({
   backgroundImageUrl,
-  children,
   headerLogoSrc,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
-  headerSearchBarGuestsOptions,
-  headerSearchBarLocationOptions,
+  searchBarGuestsOptions,
+  searchBarLocationOptions,
+  secondaryButtonText,
 }) => (
-  <FullBleed className="is-hero" hasGradient imageUrl={backgroundImageUrl}>
-    <Header
-      logoSrc={headerLogoSrc}
-      logoText={headerLogoText}
-      navigationItems={headerNavigationItems}
-      primaryCTA={headerPrimaryCTA}
-      searchBarGuestsOptions={headerSearchBarGuestsOptions}
-      searchBarLocationOptions={headerSearchBarLocationOptions}
-    />
-    {children}
-  </FullBleed>
+  <Hero
+    backgroundImageUrl={backgroundImageUrl}
+    headerLogoSrc={headerLogoSrc}
+    headerLogoText={headerLogoText}
+    headerNavigationItems={headerNavigationItems}
+    headerPrimaryCTA={headerPrimaryCTA}
+    headerSearchBarGuestsOptions={searchBarGuestsOptions}
+    headerSearchBarLocationOptions={searchBarLocationOptions}
+  >
+    <FlexContainer alignItems="flex-end">
+      <HorizontalGutters>
+        <Button
+          icon={ICON_NAMES.PLACEHOLDER}
+          isCompact
+          isPositionedRight
+          isSecondary
+        >
+          {upperCase(secondaryButtonText)}
+        </Button>
+      </HorizontalGutters>
+    </FlexContainer>
+    <Divider />
+  </Hero>
 );
 
-Component.displayName = 'Hero';
+Component.displayName = 'PropertyPageHero';
 
 Component.defaultProps = {
-  children: null,
   headerLogoSrc: null,
   headerPrimaryCTA: null,
-  headerSearchBarGuestsOptions: [],
-  headerSearchBarLocationOptions: [],
+  secondaryButtonText: VIEW_MORE_PICTURES,
 };
 
 Component.propTypes = {
   /** The background image url of the hero. */
   backgroundImageUrl: PropTypes.string.isRequired,
-  /** The children displayed between the header and the bottom of the hero. */
-  children: PropTypes.node,
   /** The src url for the logo in the header. */
   headerLogoSrc: PropTypes.string,
   /** The text for the logo in the header. */
@@ -73,8 +88,8 @@ Component.propTypes = {
     /** The  visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),
-  /** The options which the user can select in the guests field in the search bar. */
-  headerSearchBarGuestsOptions: PropTypes.arrayOf(
+  /** The options which the user can select in the guests fields of the search bar. */
+  searchBarGuestsOptions: PropTypes.arrayOf(
     PropTypes.shape({
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
@@ -85,9 +100,9 @@ Component.propTypes = {
         PropTypes.string,
       ]),
     })
-  ),
-  /** The options which the user can select in the location field in the search bar. */
-  headerSearchBarLocationOptions: PropTypes.arrayOf(
+  ).isRequired,
+  /** The options which the user can select in the location field of the search bar. */
+  searchBarLocationOptions: PropTypes.arrayOf(
     PropTypes.shape({
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
@@ -98,5 +113,9 @@ Component.propTypes = {
         PropTypes.string,
       ]),
     })
-  ),
+  ).isRequired,
+  /** The text to display on the secondary button at the bottom of the hero. */
+  secondaryButtonText: PropTypes.string,
 };
+
+export const ComponentWithResponsive = withResponsive(Component);

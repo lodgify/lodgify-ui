@@ -4,7 +4,7 @@ import getClassNames from 'classnames';
 import { Menu } from 'semantic-ui-react';
 
 import { withResponsive } from 'utils/with-responsive';
-import { Container } from 'layout/Container';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { getLogoMarkup } from './utils/getLogoMarkup';
 import { getMobileMenuMarkup } from './utils/getMobileMenuMarkup';
@@ -21,14 +21,14 @@ const Component = props => (
       'is-background-filled': props.isBackgroundFilled,
     })}
   >
-    <Container as={Menu} borderless text>
+    <HorizontalGutters as={Menu} borderless text>
       {getLogoMarkup(props.logoSrc, props.logoText)}
       <Menu.Menu position="right">
         {props.isUserOnMobile
           ? getMobileMenuMarkup(props)
           : getDesktopMenuMarkup(props)}
       </Menu.Menu>
-    </Container>
+    </HorizontalGutters>
   </header>
 );
 
