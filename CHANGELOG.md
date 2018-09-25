@@ -1,3 +1,15 @@
+# [1.56.0](https://github.com/lodgify/lodgify-ui/compare/v1.55.1...v1.56.0) (2018-09-25)
+
+
+### Bug Fixes
+
+* **Webpack:** locking version to v4.19.0 until new version fixed ([6ea61d5](https://github.com/lodgify/lodgify-ui/commit/6ea61d5))
+
+
+### Features
+
+* **Header:** expose isBackgroundFilled ([6c54b82](https://github.com/lodgify/lodgify-ui/commit/6c54b82))
+
 ## [1.55.1](https://github.com/lodgify/lodgify-ui/compare/v1.55.0...v1.55.1) (2018-09-21)
 
 
