@@ -52,5 +52,6 @@ export const TIME = 'Time';
 export const TIME_ZONE = 'Time Zone';
 export const USE_COUPON_CODE = 'Use the coupon code';
 export const VIEW_MORE = 'View more';
+export const VIEW_MORE_PICTURES = 'View more pictures';
 export const VIEW_RATE_INFORMATION_FOR = 'View Rate Information for';
 export const YOUR_HOST = 'Your Host';
