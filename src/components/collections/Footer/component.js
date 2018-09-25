@@ -7,7 +7,7 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Submenu } from 'elements/Submenu';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Divider } from 'elements/Divider';
-import { Container } from 'layout/Container';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { getAreNavigationItemsGrouped } from './utils/getAreNavigationItemsGrouped';
 import { getGroupedNavigationItems } from './utils/getGroupedNavigationItems';
@@ -31,7 +31,7 @@ export const Component = ({
 }) => (
   <footer>
     <div className="top-navigation">
-      <Container as={Menu} borderless inverted stackable>
+      <HorizontalGutters as={Menu} borderless inverted stackable>
         {getAreNavigationItemsGrouped(navigationItems)
           ? getGroupedNavigationItems(navigationItems).map(
               ({ text, subItems }, index) => (
@@ -46,10 +46,10 @@ export const Component = ({
               )
             )
           : navigationItems.map(getMenuItemMarkup)}
-      </Container>
+      </HorizontalGutters>
     </div>
     <div className="bottom-navigation">
-      <Container as={Menu} borderless inverted stackable>
+      <HorizontalGutters as={Menu} borderless inverted stackable>
         <Menu.Item>
           <Submenu
             items={languageOptions}
@@ -89,7 +89,7 @@ export const Component = ({
             {copyrightText}
           </Menu.Item>
         )}
-      </Container>
+      </HorizontalGutters>
     </div>
   </footer>
 );

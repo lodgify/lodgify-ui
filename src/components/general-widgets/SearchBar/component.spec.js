@@ -14,7 +14,7 @@ import { Button } from 'elements/Button';
 import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Heading } from 'typography/Heading';
-import { Container } from 'layout/Container';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { GridColumn } from 'layout/GridColumn';
 
 import { Component as SearchBar } from './component';
@@ -60,7 +60,7 @@ describe('<SearchBar />', () => {
       it('should have the right children', () => {
         const wrapper = getSearchBar({ isFixed: true });
 
-        expectComponentToHaveChildren(wrapper, Container);
+        expectComponentToHaveChildren(wrapper, HorizontalGutters);
       });
 
       it('should display as modal if `isDisplayedAsModal` is true', () => {

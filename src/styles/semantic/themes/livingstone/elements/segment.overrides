@@ -68,6 +68,7 @@
 .ui.segment.full-bleed {
   background-position: center;
   background-size: cover;
+  display: flex;
   height: 100vh;
   padding: 0;
 
@@ -83,6 +84,10 @@
       right: 0;
       top: 0;
     }
+  }
+
+  &.is-hero {
+    flex-direction: column;
   }
 }
 
@@ -206,29 +211,5 @@
         transition: opacity @promotionOverlayTransitionTime;
       }
     }
-  }
-}
-
-/* Is Hero */
-.ui.segment.is-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  header,
-  .ui.container:first-of-type {
-    flex: 1;
-  }
-
-  .ui.container:not(.menu) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  h1 {
-    text-shadow: @heroHeadingShadow;
-    text-align: center;
-    color: @pureWhite;
   }
 }

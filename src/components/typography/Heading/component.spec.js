@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { Header } from 'semantic-ui-react';
 import {
   expectComponentToBe,
+  expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
@@ -36,6 +37,27 @@ describe('<Heading />', () => {
       const actual = semanticHeader.prop('as');
 
       expect(actual).toBe(`h${TEST_SIZES.indexOf(testSize) + 1}`);
+    });
+  });
+
+  describe('if `props.isColorInverted` is `true`', () => {
+    it('should have the right props', () => {
+      const wrapper = shallow(<Heading isColorInverted>Woopty doo</Heading>);
+
+      expectComponentToHaveProps(wrapper, { inverted: true });
+    });
+  });
+
+  describe('if `props.textAlign` is set', () => {
+    it('should have the right props', () => {
+      const textAlign = 'center';
+      const wrapper = shallow(
+        <Heading isColorInverted textAlign={textAlign}>
+          Woopty doo
+        </Heading>
+      );
+
+      expectComponentToHaveProps(wrapper, { textAlign });
     });
   });
 

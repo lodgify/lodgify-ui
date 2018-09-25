@@ -61,10 +61,6 @@
   color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
 }
 
-.ui.button.secondary:hover {
-  transform: @secondaryTransformHover;
-}
-
 /* Focused */
 .ui.button:focus {
   background-color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
