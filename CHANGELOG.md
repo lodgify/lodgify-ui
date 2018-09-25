@@ -1,3 +1,12 @@
+# [1.57.0](https://github.com/lodgify/lodgify-ui/compare/v1.56.0...v1.57.0) (2018-09-25)
+
+
+### Features
+
+* **FlexContainer:** expose component with tests and example ([a8cacb7](https://github.com/lodgify/lodgify-ui/commit/a8cacb7))
+* **Heading:** expose isColorInverted and textAlign  with tests and example ([d0234c1](https://github.com/lodgify/lodgify-ui/commit/d0234c1))
+* **PropertyPageHero:** expose component with tests and example ([752e6ec](https://github.com/lodgify/lodgify-ui/commit/752e6ec))
+
 # [1.56.0](https://github.com/lodgify/lodgify-ui/compare/v1.55.1...v1.56.0) (2018-09-25)
 
 
