@@ -6,32 +6,29 @@ import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { FeaturedProperty } from 'general-widgets/FeaturedProperty';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying a list of featured properties.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ featuredProperties, headingText }) => (
-  <VerticalGutters>
-    <Grid>
-      {headingText && (
-        <GridColumn width={12}>
-          <Heading>{headingText}</Heading>
-        </GridColumn>
-      )}
-      {featuredProperties.map((featuredProperty, index) => (
-        <GridColumn
-          computer={4}
-          key={buildKeyFromStrings(featuredProperty.propertyName, index)}
-          mobile={12}
-          tablet={6}
-        >
-          <FeaturedProperty {...featuredProperty} />
-        </GridColumn>
-      ))}
-    </Grid>
-  </VerticalGutters>
+  <Grid>
+    {headingText && (
+      <GridColumn width={12}>
+        <Heading>{headingText}</Heading>
+      </GridColumn>
+    )}
+    {featuredProperties.map((featuredProperty, index) => (
+      <GridColumn
+        computer={4}
+        key={buildKeyFromStrings(featuredProperty.propertyName, index)}
+        mobile={12}
+        tablet={6}
+      >
+        <FeaturedProperty {...featuredProperty} />
+      </GridColumn>
+    ))}
+  </Grid>
 );
 
 Component.displayName = 'FeaturedProperties';
