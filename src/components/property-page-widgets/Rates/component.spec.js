@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { shallow } from 'enzyme';
 import {
   expectComponentToBe,
@@ -17,7 +17,6 @@ import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Table } from 'collections/Table';
 import { PRICE_PER_EXTRA_PER } from 'utils/default-strings';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as Rates } from './component';
 import { getRateCategoryHeadingMarkup } from './utils/getRateCategoryHeadingMarkup';
@@ -98,13 +97,13 @@ const getRatesWidget = props =>
   );
 
 describe('<Rates />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Fragment` component as a wrapper', () => {
     const wrapper = getRatesWidget();
 
-    expectComponentToBe(wrapper, VerticalGutters);
+    expectComponentToBe(wrapper, Fragment);
   });
 
-  describe('the `VerticalGutters` component', () => {
+  describe('the `Fragment` component', () => {
     it('should have the right children', () => {
       const wrapper = getRatesWidget();
 
