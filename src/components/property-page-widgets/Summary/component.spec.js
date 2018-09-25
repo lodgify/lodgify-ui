@@ -58,36 +58,41 @@ describe('<Summary/>', () => {
       it('should render the right children', () => {
         const wrapper = getWrappedSummary({ isUserOnMobile: true })
           .find(Segment.Group)
-          .at(1);
+          .at(0);
 
         expectComponentToHaveChildren(wrapper, Segment.Group);
       });
     });
 
     describe('the second `Segment.Group`', () => {
-      it('should have the right props', () => {
-        const wrapper = getWrappedSummary({ isUserOnMobile: true })
+      const getSecondSummaryGroup = extraProps =>
+        getWrappedSummary(extraProps)
           .find(Segment.Group)
           .at(1);
+
+      it('should have the right props', () => {
+        const wrapper = getSecondSummaryGroup();
 
         expectComponentToHaveProps(wrapper, { horizontal: true });
       });
 
       it('should render the right children', () => {
-        const wrapper = getWrappedSummary()
-          .find(Segment.Group)
-          .at(1);
+        const wrapper = getSecondSummaryGroup();
 
-        expectComponentToHaveChildren(wrapper, Segment, Segment.Group);
+        expectComponentToHaveChildren(wrapper, Segment, Segment, Segment);
       });
 
       describe('if `props.isUserOnMobile` is true', () => {
-        it('should render the right children', () => {
-          const wrapper = getWrappedSummary({ isUserOnMobile: true })
-            .find(Segment.Group)
-            .at(1);
+        it('should have the right props', () => {
+          const wrapper = getSecondSummaryGroup({ isUserOnMobile: true });
 
-          expectComponentToHaveChildren(wrapper, Segment.Group);
+          expectComponentToHaveProps(wrapper, { horizontal: false });
+        });
+
+        it('should render the right children', () => {
+          const wrapper = getSecondSummaryGroup({ isUserOnMobile: true });
+
+          expectComponentToHaveChildren(wrapper, Segment, Segment);
         });
       });
     });

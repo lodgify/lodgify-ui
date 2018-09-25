@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Rating, Segment } from 'semantic-ui-react';
 
-import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
+import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 
 /**
  * @param  {number} ratingNumber
  * @param  {string} nightPrice
  * @return {Object}
  */
-export const getRatingAndNightPriceMarkup = (ratingNumber, nightPrice) => (
-  <Segment.Group horizontal>
+export const getNightPriceAndRatingMarkup = (ratingNumber, nightPrice) => (
+  <Fragment>
+    <Segment>{getNightPriceMarkup(nightPrice, 'small')}</Segment>
     <Segment>
       {ratingNumber}
       <Rating
@@ -19,6 +20,5 @@ export const getRatingAndNightPriceMarkup = (ratingNumber, nightPrice) => (
         size="tiny"
       />
     </Segment>
-    <Segment>{getNightPriceMarkup(nightPrice, 'small')}</Segment>
-  </Segment.Group>
+  </Fragment>
 );
