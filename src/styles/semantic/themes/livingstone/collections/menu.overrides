@@ -228,72 +228,80 @@
 /* Sizes */
 
 /* Header */
-header > .ui.menu.text {
+header {
 
-  /* Menu Item */
-  .item {
-    margin: 0 @headerMenuItemHorizontalMargin;
-    padding: @headerMenuItemVerticalPadding 0;
-
-    &,
-    &:hover,
-    &.active {
-      color: @headerMenuItemTextColor;
-    }
-
-    @media @mobileScreen {
-      padding: @headerMenuItemMobileVerticalPadding 0;
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &.link {
-
-      .ui.image {
-        max-height: @headerLogoMaxHeight;
-        max-width: @headerLogoMaxWidth;
-      }
-    }
+  &.is-background-filled {
+    background-color: @themeBackgroundColorDefault;
+    background-color: var(@themeBackgroundColorIdentifier, @themeBackgroundColorDefault);
   }
 
-  /*--------------
-     States
----------------*/
+  > .ui.menu.text {
 
-  /* Active Item */
-  /* stylelint-disable-next-line no-duplicate-selectors */
-  > .right.menu {
+    /* Menu Item */
+    .item {
+      margin: 0 @headerMenuItemHorizontalMargin;
+      padding: @headerMenuItemVerticalPadding 0;
 
-    > .item:not(.no-underline):after {
-      border-bottom: @activeItemUnderlineBorder;
-      bottom: @activeItemUnderlineBottomPosition;
-      content: '';
-      left: 0;
-      opacity: 0.2;
-      position: absolute;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: @activeItemUnderlineTransition;
-      width: 100%;
+      &,
+      &:hover,
+      &.active {
+        color: @headerMenuItemTextColor;
+      }
 
       @media @mobileScreen {
-        border: none;
+        padding: @headerMenuItemMobileVerticalPadding 0;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.link {
+
+        .ui.image {
+          max-height: @headerLogoMaxHeight;
+          max-width: @headerLogoMaxWidth;
+        }
       }
     }
 
-    > .active.item,
-    > .underlined.item,
-    > .item:hover {
+    /*--------------
+       States
+  ---------------*/
 
-      &:after {
-        opacity: 1;
-        transform: scaleX(1);
+    /* Active Item */
+    /* stylelint-disable-next-line no-duplicate-selectors */
+    > .right.menu {
+
+      > .item:not(.no-underline):after {
+        border-bottom: @activeItemUnderlineBorder;
+        bottom: @activeItemUnderlineBottomPosition;
+        content: '';
+        left: 0;
+        opacity: 0.2;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: @activeItemUnderlineTransition;
+        width: 100%;
+
+        @media @mobileScreen {
+          border: none;
+        }
+      }
+
+      > .active.item,
+      > .underlined.item,
+      > .item:hover {
+
+        &:after {
+          opacity: 1;
+          transform: scaleX(1);
+        }
       }
     }
   }
