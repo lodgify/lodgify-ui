@@ -1,3 +1,10 @@
+## [1.57.1](https://github.com/lodgify/lodgify-ui/compare/v1.57.0...v1.57.1) (2018-09-25)
+
+
+### Bug Fixes
+
+* **Summary:** make content stack in mobile ([9e5adfb](https://github.com/lodgify/lodgify-ui/commit/9e5adfb))
+
 # [1.57.0](https://github.com/lodgify/lodgify-ui/compare/v1.56.0...v1.57.0) (2018-09-25)
 
 
