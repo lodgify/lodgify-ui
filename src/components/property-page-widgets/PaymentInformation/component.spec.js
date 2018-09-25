@@ -26,7 +26,6 @@ import { Paragraph } from 'typography/Paragraph';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as PaymentInformation } from './component';
 
@@ -57,17 +56,10 @@ const getPaymentInformation = extraProps =>
   shallow(<PaymentInformation {...props} {...extraProps} />);
 
 describe('<PaymentInformation />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Grid` component as a wrapper', () => {
     const wrapper = getPaymentInformation();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Grid` as its only children', () => {
-      const wrapper = getPaymentInformation();
-
-      expectComponentToHaveChildren(wrapper, Grid);
-    });
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the first `Grid` component', () => {
