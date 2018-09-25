@@ -134,7 +134,6 @@
 @secondaryBorderRadius: @5px;
 @secondaryBackgroundColor: @secondaryColor;
 @secondaryTextColor: #555;
-@secondaryTransformHover: translateY(-2px);
 
 /* Circular */
 @circularBorderRadius: @50px;

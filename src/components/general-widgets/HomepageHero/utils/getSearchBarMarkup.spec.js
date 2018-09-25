@@ -14,17 +14,11 @@ import { getSearchBarMarkup } from './getSearchBarMarkup';
 
 const props = {
   getIsDayBlocked: Function.prototype,
-  isDisplayedAsModal: false,
   isShowingLocationDropdown: false,
-  isShowingSummary: false,
   guestsOptions: [{ text: '1', value: '1' }],
   locationOptions: [{ text: '2', value: '2' }],
-  modalHeadingText: 'yo',
-  modalSummaryElement: <div>bro</div>,
-  modalTrigger: <button>click</button>,
   onSubmit: Function.prototype,
   searchButton: <button>to</button>,
-  summaryElement: <button>search</button>,
 };
 
 const getMarkupAsRenderComponent = () =>

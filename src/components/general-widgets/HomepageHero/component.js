@@ -3,16 +3,17 @@ import PropTypes from 'prop-types';
 
 import { withResponsive } from 'utils/with-responsive';
 import { Hero } from 'collections/Hero';
-import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
-import { Icon, ICON_NAMES } from 'elements/Icon';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
+import { FlexContainer } from 'layout/FlexContainer';
+import { Heading } from 'typography/Heading';
+import { ICON_NAMES } from 'elements/Icon';
 import { Button } from 'elements/Button';
 import { SEARCH } from 'utils/default-strings';
 
 import { getSearchBarMarkup } from './utils/getSearchBarMarkup';
 
 /**
- * A homepage hero displays a header, heading and search bar
- * in a full width and hight container
+ * A homepage hero displays a hero with heading and a search bar on desktop screens.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
@@ -22,51 +23,46 @@ const Component = ({
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
-  heading,
+  headingText,
   isUserOnMobile,
-  isSearchBarDisplayedAsModal,
-  isSearchBarShowingLocationDropdown,
-  isSearchBarShowingSummary,
   searchBarGuestsOptions,
   searchBarLocationOptions,
-  searchBarModalHeadingText,
-  searchBarModalSummaryElement,
-  searchBarModalTrigger,
   searchBarOnSubmit,
   searchBarSearchButton,
-  searchBarSummaryElement,
-}) => {
-  const props = {
-    backgroundImageUrl: backgroundImageUrl,
-    headerLogoSrc: headerLogoSrc,
-    headerLogoText: headerLogoText,
-    headerNavigationItems: headerNavigationItems,
-    headerPrimaryCTA: headerPrimaryCTA,
-    headerSearchBarGuestsOptions: searchBarGuestsOptions,
-    headerSearchBarLocationOptions: searchBarLocationOptions,
-    heading,
-  };
-
-  const mobileProps = {
-    ...props,
-    extraContent: getSearchBarMarkup({
-      getIsDayBlocked: searchBarGetIsDayBlocked,
-      isDisplayedAsModal: isSearchBarDisplayedAsModal,
-      isShowingLocationDropdown: isSearchBarShowingLocationDropdown,
-      isShowingSummary: isSearchBarShowingSummary,
-      guestsOptions: searchBarGuestsOptions,
-      locationOptions: searchBarLocationOptions,
-      modalHeadingText: searchBarModalHeadingText,
-      modalSummaryElement: searchBarModalSummaryElement,
-      modalTrigger: searchBarModalTrigger,
-      onSubmit: searchBarOnSubmit,
-      searchButton: searchBarSearchButton,
-      summaryElement: searchBarSummaryElement,
-    }),
-  };
-
-  return isUserOnMobile ? <Hero {...props} /> : <Hero {...mobileProps} />;
-};
+}) => (
+  <Hero
+    backgroundImageUrl={backgroundImageUrl}
+    headerLogoSrc={headerLogoSrc}
+    headerLogoText={headerLogoText}
+    headerNavigationItems={headerNavigationItems}
+    headerPrimaryCTA={headerPrimaryCTA}
+    headerSearchBarGuestsOptions={searchBarGuestsOptions}
+    headerSearchBarLocationOptions={searchBarLocationOptions}
+  >
+    <FlexContainer
+      alignItems="center"
+      flexDirection="column"
+      justifyContent="space-evenly"
+    >
+      <HorizontalGutters>
+        <Heading isColorInverted size="huge" textAlign="center">
+          {headingText}
+        </Heading>
+      </HorizontalGutters>
+      {!isUserOnMobile && (
+        <HorizontalGutters>
+          {getSearchBarMarkup({
+            getIsDayBlocked: searchBarGetIsDayBlocked,
+            guestsOptions: searchBarGuestsOptions,
+            locationOptions: searchBarLocationOptions,
+            onSubmit: searchBarOnSubmit,
+            searchButton: searchBarSearchButton,
+          })}
+        </HorizontalGutters>
+      )}
+    </FlexContainer>
+  </Hero>
+);
 
 Component.displayName = 'HomepageHero';
 
@@ -74,20 +70,13 @@ Component.defaultProps = {
   searchBarGetIsDayBlocked: Function.prototype,
   headerLogoSrc: null,
   headerPrimaryCTA: null,
-  heading: null,
-  isSearchBarDisplayedAsModal: false,
-  isSearchBarShowingLocationDropdown: false,
-  isSearchBarShowingSummary: false,
+  headingText: null,
   searchBarOnSubmit: Function.prototype,
-  searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
-  searchBarModalSummaryElement: null,
-  searchBarModalTrigger: <Icon name={ICON_NAMES.SEARCH} />,
   searchBarSearchButton: (
     <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
       {SEARCH}
     </Button>
   ),
-  searchBarSummaryElement: null,
 };
 
 Component.propTypes = {
@@ -121,13 +110,7 @@ Component.propTypes = {
     text: PropTypes.string.isRequired,
   }),
   /** The text for the heading displayed in the middle of the hero. */
-  heading: PropTypes.string,
-  /** Is the search bar displayed in a modal. */
-  isSearchBarDisplayedAsModal: PropTypes.bool,
-  /** Is search bar showing the location dropdown. */
-  isSearchBarShowingLocationDropdown: PropTypes.bool,
-  /** Is search bar showing the property summary info. */
-  isSearchBarShowingSummary: PropTypes.bool,
+  headingText: PropTypes.string,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.
@@ -167,12 +150,6 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
-  /** The heading text to display in the search bar modal. */
-  searchBarModalHeadingText: PropTypes.string,
-  /** The summary element to display in the mobile search bar modal.  */
-  searchBarModalSummaryElement: PropTypes.node,
-  /** The element to be clicked to display the search bar modal. */
-  searchBarModalTrigger: PropTypes.node,
   /** The function to call when the search bar is submitted.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates
@@ -182,8 +159,6 @@ Component.propTypes = {
   searchBarOnSubmit: PropTypes.func,
   /** The search button the search bar displays. */
   searchBarSearchButton: PropTypes.node,
-  /** The element to display in the fixed container. */
-  searchBarSummaryElement: PropTypes.node,
 };
 
 export const ComponentWithResponsive = withResponsive(Component);
