@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
+import { Divider } from 'elements/Divider';
 import { Heading } from 'typography/Heading';
 import { Header } from 'collections/Header';
 import { FullBleed } from 'media/FullBleed';
@@ -22,18 +23,21 @@ export const Component = ({
   headerSearchBarLocationOptions,
   heading,
 }) => (
-  <FullBleed className="is-hero" hasGradient imageUrl={backgroundImageUrl}>
-    <Header
-      logoSrc={headerLogoSrc}
-      logoText={headerLogoText}
-      navigationItems={headerNavigationItems}
-      primaryCTA={headerPrimaryCTA}
-      searchBarGuestsOptions={headerSearchBarGuestsOptions}
-      searchBarLocationOptions={headerSearchBarLocationOptions}
-    />
-    <Heading size="huge">{heading}</Heading>
-    <Container textAlign="center">{!!extraContent && extraContent}</Container>
-  </FullBleed>
+  <Fragment>
+    <FullBleed className="is-hero" hasGradient imageUrl={backgroundImageUrl}>
+      <Header
+        logoSrc={headerLogoSrc}
+        logoText={headerLogoText}
+        navigationItems={headerNavigationItems}
+        primaryCTA={headerPrimaryCTA}
+        searchBarGuestsOptions={headerSearchBarGuestsOptions}
+        searchBarLocationOptions={headerSearchBarLocationOptions}
+      />
+      <Heading size="huge">{heading}</Heading>
+      <Container textAlign="center">{!!extraContent && extraContent}</Container>
+    </FullBleed>
+    <Divider size="large" />
+  </Fragment>
 );
 
 Component.displayName = 'Hero';

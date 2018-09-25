@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { shallow } from 'enzyme';
 import {
   expectComponentToBe,
@@ -33,26 +33,36 @@ const getContainerComponent = extraProps =>
   getHeroComponent(extraProps).find(Container);
 
 describe('<Hero />', () => {
-  it('should render a single `FullBleed` component', () => {
+  it('should render a single `Fragment` component', () => {
     const wrapper = getHeroComponent();
 
-    expectComponentToBe(wrapper, FullBleed);
+    expectComponentToBe(wrapper, Fragment);
   });
 
-  it('should have the right props', () => {
-    const wrapper = getHeroComponent();
+  describe('the `Fragment`', () => {
+    const getFullBleed = () => getHeroComponent().childAt(0);
 
-    expectComponentToHaveProps(wrapper, {
-      className: 'is-hero',
-      hasGradient: true,
-      imageUrl: 'https://darkpurple.com',
+    it('should render a single `FullBleed` component', () => {
+      const wrapper = getFullBleed();
+
+      expectComponentToBe(wrapper, FullBleed);
     });
-  });
 
-  it('should have the right children', () => {
-    const wrapper = getHeroComponent();
+    it('should have the right props', () => {
+      const wrapper = getFullBleed();
 
-    expectComponentToHaveChildren(wrapper, Header, Heading, Container);
+      expectComponentToHaveProps(wrapper, {
+        className: 'is-hero',
+        hasGradient: true,
+        imageUrl: 'https://darkpurple.com',
+      });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getFullBleed();
+
+      expectComponentToHaveChildren(wrapper, Header, Heading, Container);
+    });
   });
 
   describe('the `Header` component', () => {
