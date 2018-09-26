@@ -65,6 +65,7 @@ export { VerticalGutters } from './components/layout/VerticalGutters';
 
 // Media
 export { FullBleed } from './components/media/FullBleed';
+export { Gallery } from './components/media/Gallery';
 export { ResponsiveImage } from './components/media/ResponsiveImage';
 export { Slideshow } from './components/media/Slideshow';
 export { Thumbnail } from './components/media/Thumbnail';

@@ -51,7 +51,7 @@ export const Component = ({
             <Card.Content>
               <Grid padded>
                 <GridRow>
-                  <GridColumn>
+                  <GridColumn width={12}>
                     {getRateCategoryHeadingMarkup(
                       rateCategory,
                       costPerExtraGuestLabel

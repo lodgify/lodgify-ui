@@ -45,6 +45,7 @@
 .ui.fullscreen.modal {
   bottom: 0;
   height: @fullScreenHeight;
+  overflow-y: scroll;
   position: absolute;
   top: 0;
 
@@ -83,4 +84,3 @@
 /* Size Widths */
 
 /* Derived Responsive Sizes */
-

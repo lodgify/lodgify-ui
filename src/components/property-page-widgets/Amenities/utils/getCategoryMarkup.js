@@ -13,7 +13,7 @@ import { getFormattedAmenityItems } from './getFormattedAmenityItems';
  * @return {Object}
  */
 export const getCategoryMarkup = (category, index) => (
-  <GridColumn key={buildKeyFromStrings(category.name, index)} width={null}>
+  <GridColumn key={buildKeyFromStrings(category.name, index)}>
     <Icon
       isLabelLeft
       labelText={category.name}
