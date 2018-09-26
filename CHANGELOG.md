@@ -1,3 +1,10 @@
+# [1.58.0](https://github.com/lodgify/lodgify-ui/compare/v1.57.1...v1.58.0) (2018-09-26)
+
+
+### Features
+
+* **Gallery:** expose component with tests and examples ([206a68c](https://github.com/lodgify/lodgify-ui/commit/206a68c))
+
 ## [1.57.1](https://github.com/lodgify/lodgify-ui/compare/v1.57.0...v1.57.1) (2018-09-25)
 
 
