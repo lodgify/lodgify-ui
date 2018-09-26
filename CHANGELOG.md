@@ -1,3 +1,12 @@
+# [1.59.0](https://github.com/lodgify/lodgify-ui/compare/v1.58.0...v1.59.0) (2018-09-26)
+
+
+### Features
+
+* **Header:** expose additional props used by SearchBar ([6ebb899](https://github.com/lodgify/lodgify-ui/commit/6ebb899))
+* **Hero:** expose additional props used by SearchBar ([edc157d](https://github.com/lodgify/lodgify-ui/commit/edc157d))
+* **HomepageHero:** expose additional props used by SearchBar and add unit test and examples ([07d822d](https://github.com/lodgify/lodgify-ui/commit/07d822d))
+
 # [1.58.0](https://github.com/lodgify/lodgify-ui/compare/v1.57.1...v1.58.0) (2018-09-26)
 
 
