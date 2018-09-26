@@ -1,3 +1,10 @@
+# [1.60.0](https://github.com/lodgify/lodgify-ui/compare/v1.59.0...v1.60.0) (2018-09-26)
+
+
+### Features
+
+* **Rating:** expose component with tests and examples ([88a98a5](https://github.com/lodgify/lodgify-ui/commit/88a98a5))
+
 # [1.59.0](https://github.com/lodgify/lodgify-ui/compare/v1.58.0...v1.59.0) (2018-09-26)
 
 
