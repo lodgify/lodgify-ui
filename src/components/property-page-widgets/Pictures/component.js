@@ -13,9 +13,8 @@ import { Divider } from 'elements/Divider';
 import { Thumbnail } from 'media/Thumbnail';
 import { Heading } from 'typography/Heading';
 import { Gallery } from 'media/Gallery';
+import { getGalleryHeadingMarkup } from 'utils/get-gallery-heading-markup';
 import { Link } from 'elements/Link';
-
-import { getGalleryHeadingMarkup } from './utils/getGalleryHeadingMarkup';
 
 /**
  * The standard widget for displaying pictures of a property.

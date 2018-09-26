@@ -6,6 +6,8 @@ import { withResponsive } from 'utils/with-responsive';
 import { Hero } from 'collections/Hero';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { FlexContainer } from 'layout/FlexContainer';
+import { Gallery } from 'media/Gallery';
+import { getGalleryHeadingMarkup } from 'utils/get-gallery-heading-markup';
 import { Button } from 'elements/Button';
 import { ICON_NAMES } from 'elements/Icon';
 import { VIEW_MORE_PICTURES } from 'utils/default-strings';
@@ -16,17 +18,19 @@ import { Divider } from 'elements/Divider';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
-  backgroundImageUrl,
   headerLogoSrc,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
+  images,
+  propertyName,
+  ratingNumber,
   searchBarGuestsOptions,
   searchBarLocationOptions,
   secondaryButtonText,
 }) => (
   <Hero
-    backgroundImageUrl={backgroundImageUrl}
+    backgroundImageUrl={images[0].imageUrl}
     headerLogoSrc={headerLogoSrc}
     headerLogoText={headerLogoText}
     headerNavigationItems={headerNavigationItems}
@@ -36,14 +40,20 @@ const Component = ({
   >
     <FlexContainer alignItems="flex-end">
       <HorizontalGutters>
-        <Button
-          icon={ICON_NAMES.PLACEHOLDER}
-          isCompact
-          isPositionedRight
-          isSecondary
-        >
-          {upperCase(secondaryButtonText)}
-        </Button>
+        <Gallery
+          heading={getGalleryHeadingMarkup(propertyName, ratingNumber)}
+          images={images}
+          trigger={
+            <Button
+              icon={ICON_NAMES.PLACEHOLDER}
+              isCompact
+              isPositionedRight
+              isSecondary
+            >
+              {upperCase(secondaryButtonText)}
+            </Button>
+          }
+        />
       </HorizontalGutters>
     </FlexContainer>
     <Divider />
@@ -55,12 +65,12 @@ Component.displayName = 'PropertyPageHero';
 Component.defaultProps = {
   headerLogoSrc: null,
   headerPrimaryCTA: null,
+  propertyName: null,
+  ratingNumber: null,
   secondaryButtonText: VIEW_MORE_PICTURES,
 };
 
 Component.propTypes = {
-  /** The background image url of the hero. */
-  backgroundImageUrl: PropTypes.string.isRequired,
   /** The src url for the logo in the header. */
   headerLogoSrc: PropTypes.string,
   /** The text for the logo in the header. */
@@ -88,6 +98,34 @@ Component.propTypes = {
     /** The  visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),
+  /** The images to display in the gallery modal. */
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      /** Alternative text to show if the image can't be loaded by the browser */
+      alternativeText: PropTypes.string,
+      /** The label text for the when the image is not found. */
+      imageNotFoundLabelText: PropTypes.string,
+      /** Title of the image to show when hovering it on desktop browsers */
+      imageTitle: PropTypes.string,
+      /** URL pointing to the image to display. */
+      imageUrl: PropTypes.string.isRequired,
+      /** A visible label for the image. */
+      label: PropTypes.string.isRequired,
+      /** Collection of objects to specify different image sources
+       *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+       */
+      sources: PropTypes.arrayOf(
+        PropTypes.shape({
+          media: PropTypes.string.isRequired,
+          srcset: PropTypes.string.isRequired,
+        })
+      ),
+    })
+  ).isRequired,
+  /** The name of the property to display in the gallery modal. */
+  propertyName: PropTypes.string,
+  /** The numeral rating for the property, out of 5 */
+  ratingNumber: PropTypes.number,
   /** The options which the user can select in the guests fields of the search bar. */
   searchBarGuestsOptions: PropTypes.arrayOf(
     PropTypes.shape({

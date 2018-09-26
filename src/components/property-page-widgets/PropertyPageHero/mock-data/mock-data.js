@@ -25,3 +25,17 @@ export const navigationItems = [
 
 export const backgroundImageUrl =
   'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg';
+
+export const guestsOptions = [
+  { text: '1', value: '1' },
+  { text: '2', value: '2' },
+  { text: '3', value: '3' },
+  { text: '4', value: '4' },
+];
+
+export const locationOptions = [
+  { text: 'Barcelona', value: 'barcelona' },
+  { text: 'Valencia', value: 'valencia' },
+  { text: 'Madrid', value: 'madrid' },
+  { text: 'Bilbao', value: 'bilbao' },
+];
