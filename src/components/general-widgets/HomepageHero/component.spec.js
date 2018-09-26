@@ -16,15 +16,13 @@ import { Grid } from 'layout/Grid';
 import { ComponentWithResponsive as HomepageHero } from './component';
 
 const props = {
+  activeNavigationItemIndex: 1,
   backgroundImageUrl: 'url',
   headerLogoSrc: 'src',
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
   headerPrimaryCTA: { href: '/book', text: 'Book now' },
   headingText: 'heading text',
-  isSearchBarDisplayedAsModal: false,
-  isSearchBarShowingLocationDropdown: false,
-  isSearchBarShowingSummary: false,
   searchBarGetIsDayBlocked: Function.prototype,
   searchBarGuestsOptions: [{ text: '1', value: '1' }],
   searchBarLocationOptions: [{ text: '1', value: '1' }],
@@ -52,13 +50,16 @@ describe('HomepageHero', () => {
       const wrapper = getWrappedHomepageHero();
 
       expectComponentToHaveProps(wrapper, {
+        activeNavigationItemIndex: props.activeNavigationItemIndex,
         backgroundImageUrl: props.backgroundImageUrl,
+        searchBarGetIsDayBlocked: props.searchBarGetIsDayBlocked,
         headerLogoSrc: props.headerLogoSrc,
         headerLogoText: props.headerLogoText,
         headerNavigationItems: props.headerNavigationItems,
         headerPrimaryCTA: props.headerPrimaryCTA,
         headerSearchBarGuestsOptions: props.searchBarGuestsOptions,
         headerSearchBarLocationOptions: props.searchBarLocationOptions,
+        headerSearchBarSearchButton: props.searchBarSearchButton,
       });
     });
 
