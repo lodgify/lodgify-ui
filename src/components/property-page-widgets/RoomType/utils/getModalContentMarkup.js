@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Rating, List } from 'semantic-ui-react';
+import { Modal, List } from 'semantic-ui-react';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Amenities } from 'property-page-widgets/Amenities';
@@ -9,6 +9,7 @@ import { Button } from 'elements/Button';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
+import { Rating } from 'elements/Rating';
 import { Slideshow } from 'media/Slideshow';
 
 /**
@@ -36,13 +37,7 @@ export const getModalContentMarkup = (
 ) => (
   <Modal.Content>
     <Heading>{name}</Heading>
-    <Rating
-      disabled
-      maxRating={5}
-      rating={Math.round(ratingNumber)}
-      size="small"
-    />
-    <span>{Math.round(ratingNumber)}</span>
+    <Rating ratingNumber={ratingNumber} />
     <Divider size="small" />
     <Slideshow additionalClass="no-shadow" images={slideShowImages} />
     <Paragraph>{description}</Paragraph>

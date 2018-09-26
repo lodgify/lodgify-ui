@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Card, Rating } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
@@ -13,6 +13,7 @@ import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Quote } from 'elements/Quote';
+import { Rating } from 'elements/Rating';
 import { Subheading } from 'typography/Subheading';
 
 import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
@@ -212,10 +213,8 @@ describe('<Review />', () => {
         .at(0);
 
       expectComponentToHaveProps(wrapper, {
-        disabled: true,
-        maxRating: 5,
-        rating: Math.round(requiredProps.ratingNumber),
-        size: 'small',
+        isShowingNumeral: false,
+        ratingNumber: requiredProps.ratingNumber,
       });
     });
   });

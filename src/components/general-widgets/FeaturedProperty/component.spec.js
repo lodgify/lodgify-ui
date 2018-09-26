@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Card, Image, Rating } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
@@ -10,6 +10,7 @@ import {
 
 import { Subheading } from 'typography/Subheading';
 import { Heading } from 'typography/Heading';
+import { Rating } from 'elements/Rating';
 
 import { Component as FeaturedProperty } from './component';
 import { getPropertyDescription } from './utils/getPropertyDescription';
@@ -133,11 +134,7 @@ describe('<FeaturedProperty />', () => {
         .find(Card.Description)
         .at(2);
 
-      expectComponentToHaveChildren(
-        wrapper,
-        props.ratingNumber.toString(),
-        Rating
-      );
+      expectComponentToHaveChildren(wrapper, Rating);
     });
   });
 
@@ -148,10 +145,8 @@ describe('<FeaturedProperty />', () => {
         .find(Rating);
 
       expectComponentToHaveProps(wrapper, {
-        disabled: true,
-        maxRating: 5,
-        rating: Math.round(props.ratingNumber),
-        size: 'tiny',
+        ratingNumber: props.ratingNumber,
+        iconSize: 'tiny',
       });
     });
   });

@@ -4,7 +4,7 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import { List, ListItem, Rating } from 'semantic-ui-react';
+import { List, ListItem } from 'semantic-ui-react';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Amenities } from 'property-page-widgets/Amenities';
@@ -14,6 +14,7 @@ import { Button } from 'elements/Button';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
+import { Rating } from 'elements/Rating';
 import { Slideshow } from 'media/Slideshow';
 
 import { getModalContentMarkup } from './getModalContentMarkup';
@@ -37,7 +38,7 @@ const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
 const nightPrice = '$1010';
-const ratingNumber = '3.2';
+const ratingNumber = 3.2;
 const slideShowImages = [
   {
     alternativeText: 'Two cats',
@@ -81,7 +82,6 @@ describe('getModalContentMarkup', () => {
         wrapper,
         Heading,
         Rating,
-        'span',
         Divider,
         Slideshow,
         Paragraph,
@@ -98,6 +98,14 @@ describe('getModalContentMarkup', () => {
       const wrapper = getMarkup().find(Heading);
 
       expectComponentToHaveChildren(wrapper, name);
+    });
+  });
+
+  describe('`Rating`', () => {
+    it('should have the right props', () => {
+      const wrapper = getMarkup().find(Rating);
+
+      expectComponentToHaveProps(wrapper, { ratingNumber: ratingNumber });
     });
   });
 
@@ -173,16 +181,6 @@ describe('getModalContentMarkup', () => {
       const wrapper = getParagraph();
 
       expectComponentToHaveChildren(wrapper, features[0].labelText);
-    });
-  });
-
-  describe('the first `span`', () => {
-    it('should have the right children', () => {
-      const wrapper = getMarkup()
-        .find('span')
-        .at(0);
-
-      expectComponentToHaveChildren(wrapper, Math.round(ratingNumber) + '');
     });
   });
 

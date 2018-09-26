@@ -1,5 +1,5 @@
 ```jsx
-const ratingAverage = 4;
+const ratingAverage = 4.4;
 const reviews = [
   {
     ratingNumber: 4.5,
@@ -37,7 +37,7 @@ const reviews = [
 #### Strings
 
 ```jsx
-const ratingAverage = 4;
+const ratingAverage = 4.4;
 const reviews = [
   {
     ratingNumber: 3,
