@@ -13,6 +13,7 @@ import { FullBleed } from 'media/FullBleed';
 import { Component as Hero } from './component';
 
 const props = {
+  activeNavigationItemIndex: 1,
   backgroundImageUrl: 'https://darkpurple.com',
   heading: 'Heading',
   headerLogoSrc: 'https://darkgreen.com',
@@ -56,6 +57,7 @@ describe('<Hero />', () => {
       const wrapper = getHeroComponent().find(Header);
 
       expectComponentToHaveProps(wrapper, {
+        activeNavigationItemIndex: props.activeNavigationItemIndex,
         logoSrc: props.headerLogoSrc,
         logoText: props.headerLogoText,
         navigationItems: props.headerNavigationItems,
