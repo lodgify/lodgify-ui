@@ -19,15 +19,21 @@ const logoSrc = 'someLogoSrc';
 const logoText = 'someLogoText';
 const searchBarGuestsOptions = [{ text: '1', value: 1 }];
 const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
+const searchBarGetIsDayBlocked = Function.prototype;
+const searchBarModalHeadingText = 'someHeadingText';
+const searchBarSearchButton = 'button boy';
 
 const getMarkupAsRenderedComponent = extraProps =>
   shallow(
     <div>
       {getMobileMenuMarkup({
         activeNavigationItemIndex: 0,
+        searchBarGetIsDayBlocked,
         logoSrc,
         logoText,
         navigationItems,
+        searchBarModalHeadingText,
+        searchBarSearchButton,
         ...extraProps,
       })}
     </div>
@@ -139,6 +145,9 @@ describe('getMobileMenuMarkup', () => {
           guestsOptions: searchBarGuestsOptions,
           isDisplayedAsModal: true,
           locationOptions: searchBarLocationOptions,
+          getIsDayBlocked: searchBarGetIsDayBlocked,
+          modalHeadingText: searchBarModalHeadingText,
+          searchButton: searchBarSearchButton,
         });
       });
     });
