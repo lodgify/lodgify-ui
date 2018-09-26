@@ -21,6 +21,8 @@ import { ComponentWithResponsive as PropertyPageHero } from './component';
 const imageUrl = '🚞';
 
 const props = {
+  activeNavigationItemIndex: 1,
+  backgroundImageUrl: 'url',
   headerLogoSrc: 'src',
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
@@ -28,7 +30,10 @@ const props = {
   images: [{ imageUrl, label: 'Entrance' }, { imageUrl, label: 'Kitchen' }],
   searchBarGuestsOptions: [{ text: '1', value: '1' }],
   searchBarLocationOptions: [{ text: '1', value: '1' }],
+  searchBarModalHeadingText: '😹',
+  searchBarSearchButton: 'hey',
   secondaryButtonText: '🐸',
+  searchBarGetIsDayBlocked: Function.prototype,
 };
 
 const getPropertyPageHero = () => shallow(<PropertyPageHero {...props} />);
@@ -51,6 +56,7 @@ describe('PropertyPageHero', () => {
       const wrapper = getWrappedPropertyPageHero();
 
       expectComponentToHaveProps(wrapper, {
+        activeNavigationItemIndex: props.activeNavigationItemIndex,
         backgroundImageUrl: props.images[0].imageUrl,
         headerLogoSrc: props.headerLogoSrc,
         headerLogoText: props.headerLogoText,
@@ -58,6 +64,9 @@ describe('PropertyPageHero', () => {
         headerPrimaryCTA: props.headerPrimaryCTA,
         headerSearchBarGuestsOptions: props.searchBarGuestsOptions,
         headerSearchBarLocationOptions: props.searchBarLocationOptions,
+        headerSearchBarModalHeadingText: props.searchBarModalHeadingText,
+        headerSearchBarSearchButton: props.searchBarSearchButton,
+        searchBarGetIsDayBlocked: expect.any(Function),
       });
     });
 
