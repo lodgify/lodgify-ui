@@ -71,7 +71,7 @@ export const Component = ({
             <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
           </Menu.Item>
         )}
-        {size(socialMediaLinks) && (
+        {size(socialMediaLinks) > 0 && (
           <Menu.Menu position="right">
             {socialMediaLinks.map(({ href, iconName, iconPath }, index) => (
               <Menu.Item
