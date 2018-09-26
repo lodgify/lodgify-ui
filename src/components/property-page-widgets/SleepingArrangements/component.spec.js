@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { shallow } from 'enzyme';
 import {
   expectComponentToBe,
@@ -12,7 +12,6 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { IconCard } from 'elements/IconCard';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as SleepingArrangements } from './component';
 
@@ -26,13 +25,13 @@ const getSleepingArrangements = () =>
   shallow(<SleepingArrangements sleepingArrangements={sleepingArrangements} />);
 
 describe('<SleepingArrangements />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Fragment` component as a wrapper', () => {
     const wrapper = getSleepingArrangements();
 
-    expectComponentToBe(wrapper, VerticalGutters);
+    expectComponentToBe(wrapper, Fragment);
   });
 
-  describe('the `VerticalGutters` component', () => {
+  describe('the `Fragment` component', () => {
     it('should have the right children', () => {
       const wrapper = getSleepingArrangements();
 

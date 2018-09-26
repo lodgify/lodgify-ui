@@ -10,39 +10,36 @@ import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Thumbnail } from 'media/Thumbnail';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying pictures of a property.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ headingText, linkText, pictures }) => (
-  <VerticalGutters>
-    <Grid>
-      <GridColumn width={12}>
-        <Heading>{headingText}</Heading>
+  <Grid>
+    <GridColumn width={12}>
+      <Heading>{headingText}</Heading>
+    </GridColumn>
+    {pictures.map(({ imageUrl, label }, index) => (
+      <GridColumn key={buildKeyFromStrings(label, index)} width={4}>
+        <ShowOnDesktop>
+          <Thumbnail imageUrl={imageUrl} label={label} size="huge" />
+        </ShowOnDesktop>
+        <ShowOnMobile>
+          <Thumbnail
+            hasRoundedCorners
+            imageUrl={imageUrl}
+            isSquare
+            label={label}
+            size="large"
+          />
+        </ShowOnMobile>
       </GridColumn>
-      {pictures.map(({ imageUrl, label }, index) => (
-        <GridColumn key={buildKeyFromStrings(label, index)} width={4}>
-          <ShowOnDesktop>
-            <Thumbnail imageUrl={imageUrl} label={label} size="huge" />
-          </ShowOnDesktop>
-          <ShowOnMobile>
-            <Thumbnail
-              hasRoundedCorners
-              imageUrl={imageUrl}
-              isSquare
-              label={label}
-              size="large"
-            />
-          </ShowOnMobile>
-        </GridColumn>
-      ))}
-      <GridColumn width={12}>
-        <Link>{linkText}</Link>
-      </GridColumn>
-    </Grid>
-  </VerticalGutters>
+    ))}
+    <GridColumn width={12}>
+      <Link>{linkText}</Link>
+    </GridColumn>
+  </Grid>
 );
 
 Component.displayName = 'Pictures';

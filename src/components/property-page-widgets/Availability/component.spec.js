@@ -16,7 +16,6 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Icon } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { ComponentWithResponsive as Availability } from './component';
 
@@ -40,18 +39,10 @@ describe('<Availability />', () => {
   });
 
   describe('the `Child` of the `Availability` component', () => {
-    it('should have `VerticalGutters` component as a wrapper', () => {
+    it('should have `div` component as a wrapper', () => {
       const wrapper = getWrappedAvailability();
 
-      expectComponentToBe(wrapper, VerticalGutters);
-    });
-  });
-
-  describe('the `VerticalGutters` component', () => {
-    it('should have `div` as its only children', () => {
-      const wrapper = getWrappedAvailability();
-
-      expectComponentToHaveChildren(wrapper, 'div');
+      expectComponentToBe(wrapper, 'div');
     });
   });
 

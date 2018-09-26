@@ -16,7 +16,6 @@ import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 import { Thumbnail } from 'media/Thumbnail';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { pictures } from './mock-data/pictures';
 import { Component as Pictures } from './component';
@@ -24,17 +23,10 @@ import { Component as Pictures } from './component';
 const getPictures = () => shallow(<Pictures pictures={pictures} />);
 
 describe('<Pictures />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Grid` component as a wrapper', () => {
     const wrapper = getPictures();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Grid` as its only children', () => {
-      const wrapper = getPictures();
-
-      expectComponentToHaveChildren(wrapper, Grid);
-    });
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the `Grid` component', () => {

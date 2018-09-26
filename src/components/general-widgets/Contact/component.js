@@ -23,7 +23,6 @@ import {
   SECURITY_CODE,
   SEND,
 } from 'utils/default-strings';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for a user contact an owner.
@@ -49,59 +48,53 @@ export const Component = ({
   submitButtonText,
   validation,
 }) => (
-  <VerticalGutters>
-    <Form
-      headingText={headingText}
-      onSubmit={onSubmit}
-      submitButtonText={submitButtonText}
-      validation={validation}
-    >
-      <InputGroup>
-        <TextInput label={nameInputLabel} name="name" />
-        <PhoneInput label={phoneInputLabel} name="phone" />
-      </InputGroup>
-      <TextInput label={emailInputLabel} name="email" />
-      <InputGroup>
-        <DateRangePicker
-          endDatePlaceholderText={departureDateInputLabel}
-          name="dates"
-          startDatePlaceholderText={arrivalDateInputLabel}
-          width="eight"
-        />
-        <TextInput
-          label={guestsInputLabel}
-          name="guests"
-          type="number"
-          width="four"
-        />
-      </InputGroup>
-      <TextArea label={commentsInputLabel} name="comments" />
-      {(roomOptions || propertyOptions) && (
-        <InputGroup>
-          {propertyOptions && (
-            <Dropdown
-              label={propertyInputLabel}
-              name="property"
-              onChange={onChangeProperty}
-              options={propertyOptions}
-            />
-          )}
-          {roomOptions && (
-            <Dropdown
-              label={roomInputLabel}
-              name="room"
-              options={roomOptions}
-            />
-          )}
-        </InputGroup>
-      )}
-      <CaptchaInput
-        image={captchaInputImage}
-        label={captchaInputLabel}
-        name="captcha"
+  <Form
+    headingText={headingText}
+    onSubmit={onSubmit}
+    submitButtonText={submitButtonText}
+    validation={validation}
+  >
+    <InputGroup>
+      <TextInput label={nameInputLabel} name="name" />
+      <PhoneInput label={phoneInputLabel} name="phone" />
+    </InputGroup>
+    <TextInput label={emailInputLabel} name="email" />
+    <InputGroup>
+      <DateRangePicker
+        endDatePlaceholderText={departureDateInputLabel}
+        name="dates"
+        startDatePlaceholderText={arrivalDateInputLabel}
+        width="eight"
       />
-    </Form>
-  </VerticalGutters>
+      <TextInput
+        label={guestsInputLabel}
+        name="guests"
+        type="number"
+        width="four"
+      />
+    </InputGroup>
+    <TextArea label={commentsInputLabel} name="comments" />
+    {(roomOptions || propertyOptions) && (
+      <InputGroup>
+        {propertyOptions && (
+          <Dropdown
+            label={propertyInputLabel}
+            name="property"
+            onChange={onChangeProperty}
+            options={propertyOptions}
+          />
+        )}
+        {roomOptions && (
+          <Dropdown label={roomInputLabel} name="room" options={roomOptions} />
+        )}
+      </InputGroup>
+    )}
+    <CaptchaInput
+      image={captchaInputImage}
+      label={captchaInputLabel}
+      name="captcha"
+    />
+  </Form>
 );
 
 Component.displayName = 'Contact';

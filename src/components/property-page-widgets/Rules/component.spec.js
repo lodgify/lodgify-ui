@@ -15,7 +15,6 @@ import { GridColumn } from 'layout/GridColumn';
 import { Divider } from 'elements/Divider';
 import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as Rules } from './component';
 
@@ -36,18 +35,10 @@ const props = {
 const getRules = otherProps => shallow(<Rules {...props} {...otherProps} />);
 
 describe('<Rules />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Grid` component as a wrapper', () => {
     const wrapper = getRules();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Grid` as its only children', () => {
-      const wrapper = getRules();
-
-      expectComponentToHaveChildren(wrapper, Grid);
-    });
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the Grid component', () => {

@@ -14,7 +14,6 @@ import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getStringWithColonSuffix } from './utils/getStringWithColonSuffix';
 
@@ -35,55 +34,53 @@ export const Component = ({
   phone,
   phoneLabel,
 }) => (
-  <VerticalGutters>
-    <Grid textAlign="left">
-      <GridRow>
-        <GridColumn width={12}>
-          <Heading>{headingText}</Heading>
-        </GridColumn>
-      </GridRow>
-      <GridRow>
-        <GridColumn width={12}>
-          <Item.Group unstackable>
-            <Item>
-              <Item.Image avatar size="tiny" src={avatarUrl} />
-              <Item.Header as="h4" verticalAlign="middle">
-                {name}
-              </Item.Header>
-            </Item>
-          </Item.Group>
-        </GridColumn>
-      </GridRow>
-      <GridRow verticalAlign="top">
-        <GridColumn computer={7} mobile={12} tablet={12}>
-          <Paragraph size="medium">{description}</Paragraph>
-        </GridColumn>
-        <GridColumn computer={5} mobile={12} tablet={12}>
-          <Heading size="small">{contactInformationHeadingText}</Heading>
-          <List relaxed size="medium">
-            {!!email && (
-              <List.Item>
-                <span>{getStringWithColonSuffix(emailLabel)}</span>
-                <span>{email}</span>
-              </List.Item>
-            )}
-            {!!phone && (
-              <List.Item>
-                <span>{getStringWithColonSuffix(phoneLabel)}</span>
-                <span>{phone}</span>
-              </List.Item>
-            )}
-            {!!languages && (
-              <List.Item>
-                <span>{getStringWithColonSuffix(languagesLabel)}</span>
-                <span>{languages.join(', ')}</span>
-              </List.Item>
-            )}
-          </List>
-        </GridColumn>
-      </GridRow>
-    </Grid>
-  </VerticalGutters>
+  <Grid textAlign="left">
+    <GridRow>
+      <GridColumn width={12}>
+        <Heading>{headingText}</Heading>
+      </GridColumn>
+    </GridRow>
+    <GridRow>
+      <GridColumn width={12}>
+        <Item.Group unstackable>
+          <Item>
+            <Item.Image avatar size="tiny" src={avatarUrl} />
+            <Item.Header as="h4" verticalAlign="middle">
+              {name}
+            </Item.Header>
+          </Item>
+        </Item.Group>
+      </GridColumn>
+    </GridRow>
+    <GridRow verticalAlign="top">
+      <GridColumn computer={7} mobile={12} tablet={12}>
+        <Paragraph size="medium">{description}</Paragraph>
+      </GridColumn>
+      <GridColumn computer={5} mobile={12} tablet={12}>
+        <Heading size="small">{contactInformationHeadingText}</Heading>
+        <List relaxed size="medium">
+          {!!email && (
+            <List.Item>
+              <span>{getStringWithColonSuffix(emailLabel)}</span>
+              <span>{email}</span>
+            </List.Item>
+          )}
+          {!!phone && (
+            <List.Item>
+              <span>{getStringWithColonSuffix(phoneLabel)}</span>
+              <span>{phone}</span>
+            </List.Item>
+          )}
+          {!!languages && (
+            <List.Item>
+              <span>{getStringWithColonSuffix(languagesLabel)}</span>
+              <span>{languages.join(', ')}</span>
+            </List.Item>
+          )}
+        </List>
+      </GridColumn>
+    </GridRow>
+  </Grid>
 );
 
 Component.displayName = 'HostProfile';

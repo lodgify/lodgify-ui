@@ -15,7 +15,6 @@ import { GridColumn } from 'layout/GridColumn';
 import { Button } from 'elements/Button';
 import { Divider } from 'elements/Divider';
 import { Review } from 'general-widgets/Review';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as Reviews } from './component';
 
@@ -59,17 +58,10 @@ const getReviews = additionalProps =>
   shallow(<Reviews {...requiredProps} {...additionalProps} />);
 
 describe('<Reviews />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Grid` component as a wrapper', () => {
     const wrapper = getReviews();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Grid` as its only children', () => {
-      const wrapper = getReviews();
-
-      expectComponentToHaveChildren(wrapper, Grid);
-    });
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the first `GridRow` component', () => {

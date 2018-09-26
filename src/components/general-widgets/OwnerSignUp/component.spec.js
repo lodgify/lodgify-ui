@@ -16,7 +16,6 @@ import {
 } from 'utils/default-strings';
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getArrayOfLengthOfItem } from '../../../utils/get-array-of-length-of-item';
 
@@ -25,17 +24,10 @@ import { Component as OwnerSignUp } from './component';
 const getOwnerSignUp = () => shallow(<OwnerSignUp />);
 
 describe('<OwnerSignUp />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Form` component as a wrapper', () => {
     const wrapper = getOwnerSignUp();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Form` as its only children', () => {
-      const wrapper = getOwnerSignUp();
-
-      expectComponentToHaveChildren(wrapper, Form);
-    });
+    expectComponentToBe(wrapper, Form);
   });
 
   describe('the `Form` component', () => {
