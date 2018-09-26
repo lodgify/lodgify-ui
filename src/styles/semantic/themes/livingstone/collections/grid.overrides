@@ -15,3 +15,15 @@
     padding: (@gutterWidth / 2);
   }
 }
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+  Has no padding
+---------------*/
+.grid > .column.has-no-padding,
+.grid > .row > .column.has-no-padding {
+  padding: 0;
+}
