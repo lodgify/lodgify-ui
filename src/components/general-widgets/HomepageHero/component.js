@@ -6,9 +6,7 @@ import { Hero } from 'collections/Hero';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { FlexContainer } from 'layout/FlexContainer';
 import { Heading } from 'typography/Heading';
-import { ICON_NAMES } from 'elements/Icon';
-import { Button } from 'elements/Button';
-import { SEARCH } from 'utils/default-strings';
+import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
 
 import { getSearchBarMarkup } from './utils/getSearchBarMarkup';
 
@@ -17,6 +15,7 @@ import { getSearchBarMarkup } from './utils/getSearchBarMarkup';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
+  activeNavigationItemIndex,
   backgroundImageUrl,
   searchBarGetIsDayBlocked,
   headerLogoSrc,
@@ -27,10 +26,12 @@ const Component = ({
   isUserOnMobile,
   searchBarGuestsOptions,
   searchBarLocationOptions,
+  searchBarModalHeadingText,
   searchBarOnSubmit,
   searchBarSearchButton,
 }) => (
   <Hero
+    activeNavigationItemIndex={activeNavigationItemIndex}
     backgroundImageUrl={backgroundImageUrl}
     headerLogoSrc={headerLogoSrc}
     headerLogoText={headerLogoText}
@@ -38,6 +39,9 @@ const Component = ({
     headerPrimaryCTA={headerPrimaryCTA}
     headerSearchBarGuestsOptions={searchBarGuestsOptions}
     headerSearchBarLocationOptions={searchBarLocationOptions}
+    headerSearchBarModalHeadingText={searchBarModalHeadingText}
+    headerSearchBarSearchButton={searchBarSearchButton}
+    searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
   >
     <FlexContainer
       alignItems="center"
@@ -67,19 +71,19 @@ const Component = ({
 Component.displayName = 'HomepageHero';
 
 Component.defaultProps = {
-  searchBarGetIsDayBlocked: Function.prototype,
+  activeNavigationItemIndex: null,
   headerLogoSrc: null,
   headerPrimaryCTA: null,
   headingText: null,
+  searchBarGetIsDayBlocked: undefined,
+  searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
   searchBarOnSubmit: Function.prototype,
-  searchBarSearchButton: (
-    <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
-      {SEARCH}
-    </Button>
-  ),
+  searchBarSearchButton: undefined,
 };
 
 Component.propTypes = {
+  /** The index of the active navigation item. */
+  activeNavigationItemIndex: PropTypes.number,
   /** The background image url of the hero. */
   backgroundImageUrl: PropTypes.string.isRequired,
   /** The src url for the logo in the header. */
@@ -150,6 +154,8 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /* The heading displayed in the search bar modal. */
+  searchBarModalHeadingText: PropTypes.string,
   /** The function to call when the search bar is submitted.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates

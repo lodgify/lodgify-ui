@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Form } from 'semantic-ui-react';
 
-import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
+import { CHECK_OUR_AVAILABILITY, SEARCH } from 'utils/default-strings';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -117,7 +117,7 @@ Component.defaultProps = {
   isShowingSummary: false,
   searchButton: (
     <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
-      Search
+      {SEARCH}
     </Button>
   ),
   locationOptions: null,

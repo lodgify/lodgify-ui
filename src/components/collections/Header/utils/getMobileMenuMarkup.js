@@ -24,20 +24,26 @@ import { getLinkMarkup } from './getLinkMarkup';
 export const getMobileMenuMarkup = ({
   /* eslint-disable react/prop-types */
   activeNavigationItemIndex,
+  searchBarGetIsDayBlocked,
   logoSrc,
   logoText,
+  searchBarModalHeadingText,
   navigationItems,
   searchBarGuestsOptions,
   searchBarLocationOptions,
+  searchBarSearchButton,
   /* eslint-enable react/prop-types */
 }) => (
   <Fragment>
     {hasSearchBarOptions(searchBarGuestsOptions, searchBarLocationOptions) && (
       <Menu.Item>
         <SearchBar
+          getIsDayBlocked={searchBarGetIsDayBlocked}
           guestsOptions={searchBarGuestsOptions}
           isDisplayedAsModal
           locationOptions={searchBarLocationOptions}
+          modalHeadingText={searchBarModalHeadingText}
+          searchButton={searchBarSearchButton}
         />
       </Menu.Item>
     )}

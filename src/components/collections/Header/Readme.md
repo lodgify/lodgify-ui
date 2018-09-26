@@ -113,6 +113,8 @@ const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
     navigationItems={navigationItems}
     searchBarGuestsOptions={searchBarGuestsOptions}
     searchBarLocationOptions={searchBarLocationOptions}
+    searchBarHeadingText="Search for a date!"
+    searchBarSearchButton={<Button>Custom button</Button>}
   />
 </div>
 ```

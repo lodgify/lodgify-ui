@@ -9,6 +9,7 @@ import { FullBleed } from 'media/FullBleed';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  activeNavigationItemIndex,
   backgroundImageUrl,
   children,
   headerLogoSrc,
@@ -17,15 +18,22 @@ export const Component = ({
   headerPrimaryCTA,
   headerSearchBarGuestsOptions,
   headerSearchBarLocationOptions,
+  headerSearchBarModalHeadingText,
+  headerSearchBarSearchButton,
+  searchBarGetIsDayBlocked,
 }) => (
   <FullBleed className="is-hero" hasGradient imageUrl={backgroundImageUrl}>
     <Header
+      activeNavigationItemIndex={activeNavigationItemIndex}
       logoSrc={headerLogoSrc}
       logoText={headerLogoText}
       navigationItems={headerNavigationItems}
       primaryCTA={headerPrimaryCTA}
+      searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
       searchBarGuestsOptions={headerSearchBarGuestsOptions}
       searchBarLocationOptions={headerSearchBarLocationOptions}
+      searchBarModalHeadingText={headerSearchBarModalHeadingText}
+      searchBarSearchButton={headerSearchBarSearchButton}
     />
     {children}
   </FullBleed>
@@ -34,14 +42,20 @@ export const Component = ({
 Component.displayName = 'Hero';
 
 Component.defaultProps = {
+  activeNavigationItemIndex: null,
   children: null,
   headerLogoSrc: null,
   headerPrimaryCTA: null,
   headerSearchBarGuestsOptions: [],
   headerSearchBarLocationOptions: [],
+  headerSearchBarModalHeadingText: null,
+  headerSearchBarSearchButton: undefined,
+  searchBarGetIsDayBlocked: undefined,
 };
 
 Component.propTypes = {
+  /** The index of the active navigation item. */
+  activeNavigationItemIndex: PropTypes.number,
   /** The background image url of the hero. */
   backgroundImageUrl: PropTypes.string.isRequired,
   /** The children displayed between the header and the bottom of the hero. */
@@ -99,4 +113,15 @@ Component.propTypes = {
       ]),
     })
   ),
+  /** The heading displayed in the Search Bar modal. */
+  headerSearchBarModalHeadingText: PropTypes.string,
+  /** The Search Button the Search Bar modal displays. */
+  headerSearchBarSearchButton: PropTypes.node,
+  /**
+   * A function called for each day to be displayed in the DateRangePicker.
+   * Returning true blocks that day in the date range picker.
+   * @param   {Moment}  day - The day to test.
+   * @returns {boolean}     - Is the day blocked.
+   */
+  searchBarGetIsDayBlocked: PropTypes.func,
 };

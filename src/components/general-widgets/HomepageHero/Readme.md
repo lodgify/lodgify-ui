@@ -3,6 +3,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems, guestsOptions, locationOptions } = require('./mock-data/mock-data');
 
 <HomepageHero
+  activeNavigationItem={1}
   backgroundImageUrl={backgroundImageUrl}
   headerLogoSrc={logoSrc}
   headerLogoText="Livingstone Cottage"
@@ -11,5 +12,44 @@ const { backgroundImageUrl, navigationItems, guestsOptions, locationOptions } = 
   headingText="Super Interesting Heading"
   searchBarGuestsOptions={guestsOptions}
   searchBarLocationOptions={locationOptions}
+/>
+```
+
+### Variations
+
+#### Custom search button
+
+```jsx
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+const { backgroundImageUrl, navigationItems, guestsOptions, locationOptions } = require('./mock-data/mock-data');
+
+<HomepageHero
+  backgroundImageUrl={backgroundImageUrl}
+  headerLogoSrc={logoSrc}
+  headerLogoText="Livingstone Cottage"
+  headerNavigationItems={navigationItems}
+  headerPrimaryCTA={{ href: '/book', text: 'Book now'}}
+  searchBarGuestsOptions={guestsOptions}
+  searchBarLocationOptions={locationOptions}
+  searchBarSearchButton={<Button>Check now!</Button>}
+/>
+```
+
+#### Custom search bar modal heading
+
+```jsx
+// Viewport width needs to be less than 600px to trigger modal
+
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+const { backgroundImageUrl, navigationItems, guestsOptions } = require('./mock-data/mock-data');
+
+<HomepageHero
+  backgroundImageUrl={backgroundImageUrl}
+  headerLogoSrc={logoSrc}
+  headerLogoText="Livingstone Cottage"
+  headerNavigationItems={navigationItems}
+  headerPrimaryCTA={{ href: '/book', text: 'Book now'}}
+  searchBarGuestsOptions={guestsOptions}
+  searchBarModalHeadingText="Custom modal heading"
 />
 ```
