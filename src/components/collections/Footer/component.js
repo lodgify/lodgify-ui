@@ -66,9 +66,11 @@ export const Component = ({
             willOpenAbove
           />
         </Menu.Item>
-        <Menu.Item className="is-selectable">
-          <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
-        </Menu.Item>
+        {!!phoneNumber && (
+          <Menu.Item className="is-selectable">
+            <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
+          </Menu.Item>
+        )}
         {size(socialMediaLinks) && (
           <Menu.Menu position="right">
             {socialMediaLinks.map(({ href, iconName, iconPath }, index) => (
