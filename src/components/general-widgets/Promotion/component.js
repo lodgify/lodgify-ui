@@ -46,13 +46,16 @@ export const Component = ({
         >
           <Grid padded>
             <GridRow verticalAlign="top">
-              <GridColumn textAlign={isDisplayedStacked ? 'center' : 'left'}>
+              <GridColumn
+                textAlign={isDisplayedStacked ? 'center' : 'left'}
+                width={12}
+              >
                 <Heading>{headingText}</Heading>
               </GridColumn>
             </GridRow>
             {!isDisplayedStacked && (
               <GridRow className="book-now-button-container">
-                <GridColumn textAlign="center">
+                <GridColumn textAlign="center" width={12}>
                   <Button isRounded>{discountHoverButtonText}</Button>
                 </GridColumn>
               </GridRow>

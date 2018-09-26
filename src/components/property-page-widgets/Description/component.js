@@ -32,11 +32,11 @@ export const Component = ({
   propertyType,
 }) => (
   <Grid columns={1}>
-    <GridColumn>
+    <GridColumn width={12}>
       <Subheading>{propertyType}</Subheading>
       <Heading size="large">{propertyName}</Heading>
     </GridColumn>
-    <GridColumn>
+    <GridColumn width={12}>
       <ShowOnDesktop parent={List} parentProps={{ horizontal: true }}>
         {getFirstFourItems(propertyMainCharacteristics).map(
           ({ iconName, text }, index) => (
@@ -60,7 +60,7 @@ export const Component = ({
         )}
       </ShowOnMobile>
     </GridColumn>
-    <GridColumn>
+    <GridColumn width={12}>
       {getParagraphsFromStrings(descriptionText).map(
         (paragraphText, index, descriptionTextArray) => (
           <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
@@ -79,10 +79,10 @@ export const Component = ({
         )
       )}
     </GridColumn>
-    <GridColumn>
+    <GridColumn width={12}>
       <Subheading>{homeHighlightsHeadingText}</Subheading>
     </GridColumn>
-    <GridColumn>
+    <GridColumn width={12}>
       {homeHighlights.map(({ iconName, text }) => (
         <Icon
           hasBorder

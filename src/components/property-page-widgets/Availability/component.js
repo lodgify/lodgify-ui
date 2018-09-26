@@ -158,7 +158,7 @@ class Component extends PureComponent {
           </Grid>
         </Card>
         <Grid>
-          <GridColumn only="mobile" textAlign="right">
+          <GridColumn only="mobile" textAlign="right" width={12}>
             <GridColumn>
               <Icon
                 color="grey"

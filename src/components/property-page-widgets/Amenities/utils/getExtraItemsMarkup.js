@@ -21,7 +21,7 @@ export const getExtraItemsMarkup = (
   amenities
 ) =>
   hasExtraItemsInModal ? (
-    <GridColumn>
+    <GridColumn width={12}>
       <Modal trigger={<Link>{modalTriggerText}</Link>}>
         <SemanticModal.Content>
           <Grid className="is-amenities" columns={1} padded stackable>

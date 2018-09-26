@@ -166,6 +166,7 @@ describe('The `Promotion` component', () => {
 
       expectComponentToHaveProps(wrapper, {
         textAlign: 'left',
+        width: 12,
       });
     });
 
@@ -218,6 +219,7 @@ describe('The `Promotion` component', () => {
 
       expectComponentToHaveProps(wrapper, {
         textAlign: 'center',
+        width: 12,
       });
     });
 

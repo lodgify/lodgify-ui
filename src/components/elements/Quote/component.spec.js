@@ -69,10 +69,19 @@ describe('<Quote />', () => {
   });
 
   describe('the first `GridColumn` component', () => {
-    it('should render a single `Paragraph` component', () => {
-      const wrapper = getQuote()
+    const getFirstGridColumn = () =>
+      getQuote()
         .find(GridColumn)
-        .at(0);
+        .first();
+
+    it('should have the right props', () => {
+      const wrapper = getFirstGridColumn();
+
+      expectComponentToHaveProps(wrapper, { width: 12 });
+    });
+
+    it('should render a single `Paragraph` component', () => {
+      const wrapper = getFirstGridColumn();
 
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
@@ -110,10 +119,19 @@ describe('<Quote />', () => {
   });
 
   describe('the second `GridColumn` component', () => {
-    it('should render a `Paragraph` component', () => {
-      const wrapper = getQuote()
+    const getSecondGridColumn = () =>
+      getQuote()
         .find(GridColumn)
         .at(1);
+
+    it('should have the right props', () => {
+      const wrapper = getSecondGridColumn();
+
+      expectComponentToHaveProps(wrapper, { width: 12 });
+    });
+
+    it('should render a `Paragraph` component', () => {
+      const wrapper = getSecondGridColumn();
 
       expectComponentToHaveChildren(wrapper, Paragraph);
     });
