@@ -2,42 +2,60 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { EXPLORE_ALL_PICTURES, PROPERTY_PICTURES } from 'utils/default-strings';
+import { getFirstSixItems } from 'utils/get-first-six-items';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
+import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { Divider } from 'elements/Divider';
 import { Thumbnail } from 'media/Thumbnail';
 import { Heading } from 'typography/Heading';
+import { Gallery } from 'media/Gallery';
+import { getGalleryHeadingMarkup } from 'utils/get-gallery-heading-markup';
 import { Link } from 'elements/Link';
 
 /**
  * The standard widget for displaying pictures of a property.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ headingText, linkText, pictures }) => (
-  <Grid>
+export const Component = ({
+  headingText,
+  linkText,
+  pictures,
+  propertyName,
+  ratingNumber,
+}) => (
+  <Grid columns={3}>
     <GridColumn width={12}>
       <Heading>{headingText}</Heading>
     </GridColumn>
-    {pictures.map(({ imageUrl, label }, index) => (
-      <GridColumn key={buildKeyFromStrings(label, index)} width={4}>
-        <ShowOnDesktop>
-          <Thumbnail imageUrl={imageUrl} label={label} size="huge" />
-        </ShowOnDesktop>
-        <ShowOnMobile>
-          <Thumbnail
-            hasRoundedCorners
-            imageUrl={imageUrl}
-            isSquare
-            label={label}
-            size="large"
-          />
-        </ShowOnMobile>
-      </GridColumn>
-    ))}
+    <GridRow>
+      {getFirstSixItems(pictures).map(({ imageUrl, label }, index) => (
+        <GridColumn key={buildKeyFromStrings(label, index)}>
+          <ShowOnDesktop>
+            <Thumbnail imageUrl={imageUrl} label={label} size="huge" />
+          </ShowOnDesktop>
+          <ShowOnMobile>
+            <Thumbnail
+              hasRoundedCorners
+              imageUrl={imageUrl}
+              isSquare
+              label={label}
+              size="large"
+            />
+          </ShowOnMobile>
+          <Divider size="small" />
+        </GridColumn>
+      ))}
+    </GridRow>
     <GridColumn width={12}>
-      <Link>{linkText}</Link>
+      <Gallery
+        heading={getGalleryHeadingMarkup(propertyName, ratingNumber)}
+        images={pictures}
+        trigger={<Link>{linkText}</Link>}
+      />
     </GridColumn>
   </Grid>
 );
@@ -47,6 +65,8 @@ Component.displayName = 'Pictures';
 Component.defaultProps = {
   headingText: PROPERTY_PICTURES,
   linkText: EXPLORE_ALL_PICTURES,
+  propertyName: null,
+  ratingNumber: null,
 };
 
 Component.propTypes = {
@@ -63,4 +83,8 @@ Component.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** The name of the property to display in the gallery modal. */
+  propertyName: PropTypes.string,
+  /** The numeral rating for the property, out of 5 */
+  ratingNumber: PropTypes.number,
 };

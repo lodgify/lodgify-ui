@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Rating } from 'semantic-ui-react';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Heading } from 'typography/Heading';
+import { Rating } from 'elements/Rating';
 import { Button } from 'elements/Button';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
@@ -37,13 +37,7 @@ export const Component = ({
         textAlign="left"
         verticalAlign="middle"
       >
-        <Rating
-          disabled
-          maxRating={5}
-          rating={Math.round(ratingAverage)}
-          size="small"
-        />
-        <span>{Math.round(ratingAverage)}</span>
+        <Rating ratingNumber={ratingAverage} />
       </GridColumn>
       <GridColumn
         computer={6}

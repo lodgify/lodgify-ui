@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Rating } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
@@ -9,6 +8,7 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Heading } from 'typography/Heading';
+import { Rating } from 'elements/Rating';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
@@ -132,7 +132,7 @@ describe('<Reviews />', () => {
           .find(GridColumn)
           .at(1);
 
-        expectComponentToHaveChildren(wrapper, Rating, 'span');
+        expectComponentToHaveChildren(wrapper, Rating);
       });
     });
 
@@ -231,19 +231,8 @@ describe('<Reviews />', () => {
         .at(0);
 
       expectComponentToHaveProps(wrapper, {
-        disabled: true,
-        maxRating: 5,
-        rating: Math.round(requiredProps.ratingAverage),
-        size: 'small',
+        ratingNumber: requiredProps.ratingAverage,
       });
-    });
-
-    it('should have a sibling with the right text', () => {
-      const wrapper = getReviews()
-        .find('span')
-        .at(0);
-
-      expect(wrapper.text()).toBe(`${Math.round(requiredProps.ratingAverage)}`);
     });
   });
 

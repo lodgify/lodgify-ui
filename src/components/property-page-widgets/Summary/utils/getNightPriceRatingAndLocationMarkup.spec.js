@@ -1,12 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Segment, Rating } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon } from 'elements/Icon';
+import { Rating } from 'elements/Rating';
 
 import { getNightPriceRatingAndLocationMarkup } from './getNightPriceRatingAndLocationMarkup';
 
@@ -50,11 +51,7 @@ describe('getNightPriceRatingAndLocationMarkup', () => {
         .find(Segment)
         .at(1);
 
-      expectComponentToHaveChildren(
-        wrapper,
-        props.ratingNumber.toString(),
-        Rating
-      );
+      expectComponentToHaveChildren(wrapper, Rating);
     });
   });
 
@@ -63,10 +60,8 @@ describe('getNightPriceRatingAndLocationMarkup', () => {
       const wrapper = getMarkupAsRenderedComponent().find(Rating);
 
       expectComponentToHaveProps(wrapper, {
-        disabled: true,
-        maxRating: 5,
-        rating: props.ratingNumber,
-        size: 'tiny',
+        ratingNumber: props.ratingNumber,
+        iconSize: 'tiny',
       });
     });
   });

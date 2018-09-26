@@ -10,6 +10,7 @@ import { upperCase } from 'lodash';
 
 import { Hero } from 'collections/Hero';
 import { FlexContainer } from 'layout/FlexContainer';
+import { Gallery } from 'media/Gallery';
 import { Divider } from 'elements/Divider';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { Button } from 'elements/Button';
@@ -17,12 +18,14 @@ import { ICON_NAMES } from 'elements/Icon';
 
 import { ComponentWithResponsive as PropertyPageHero } from './component';
 
+const imageUrl = '🚞';
+
 const props = {
-  backgroundImageUrl: 'url',
   headerLogoSrc: 'src',
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
   headerPrimaryCTA: { href: '/book', text: 'Book now' },
+  images: [{ imageUrl, label: 'Entrance' }, { imageUrl, label: 'Kitchen' }],
   searchBarGuestsOptions: [{ text: '1', value: '1' }],
   searchBarLocationOptions: [{ text: '1', value: '1' }],
   secondaryButtonText: '🐸',
@@ -48,7 +51,7 @@ describe('PropertyPageHero', () => {
       const wrapper = getWrappedPropertyPageHero();
 
       expectComponentToHaveProps(wrapper, {
-        backgroundImageUrl: props.backgroundImageUrl,
+        backgroundImageUrl: props.images[0].imageUrl,
         headerLogoSrc: props.headerLogoSrc,
         headerLogoText: props.headerLogoText,
         headerNavigationItems: props.headerNavigationItems,
@@ -88,31 +91,28 @@ describe('PropertyPageHero', () => {
     it('should have the right children', () => {
       const wrapper = getWrappedPropertyPageHero().find(HorizontalGutters);
 
-      expectComponentToHaveChildren(wrapper, Button);
+      expectComponentToHaveChildren(wrapper, Gallery);
     });
   });
 
-  describe('the `Button`', () => {
-    const getButton = () => getWrappedPropertyPageHero().find(Button);
-
+  describe('the `Gallery` component', () => {
     it('should have the right props', () => {
-      const wrapper = getButton();
+      const wrapper = getWrappedPropertyPageHero().find(Gallery);
 
       expectComponentToHaveProps(wrapper, {
-        icon: ICON_NAMES.PLACEHOLDER,
-        isCompact: true,
-        isPositionedRight: true,
-        isSecondary: true,
+        heading: expect.any(Object),
+        images: props.images,
+        trigger: (
+          <Button
+            icon={ICON_NAMES.PLACEHOLDER}
+            isCompact
+            isPositionedRight
+            isSecondary
+          >
+            {upperCase(props.secondaryButtonText)}
+          </Button>
+        ),
       });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getButton();
-
-      expectComponentToHaveChildren(
-        wrapper,
-        upperCase(props.secondaryButtonText)
-      );
     });
   });
 

@@ -15,6 +15,7 @@ export { Link } from './components/elements/Link';
 export { Modal } from './components/elements/Modal';
 export { Pagination } from './components/elements/Pagination';
 export { Quote } from './components/elements/Quote';
+export { Rating } from './components/elements/Rating';
 export { Submenu } from './components/elements/Submenu';
 export { Tooltip } from './components/elements/Tooltip';
 
