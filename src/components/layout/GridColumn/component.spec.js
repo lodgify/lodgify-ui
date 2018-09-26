@@ -29,6 +29,20 @@ describe('<GridColumn />', () => {
     });
   });
 
+  describe('when the `hasNoPadding` prop is passed', () => {
+    it('should get the right props', () => {
+      const wrapper = getGridColumn({
+        hasNoPadding: true,
+      });
+
+      expectComponentToHaveProps(wrapper, {
+        className: 'has-no-padding',
+        verticalAlign: expect.any(String),
+        width: null,
+      });
+    });
+  });
+
   it('should have displayName `GridColumn`', () => {
     expectComponentToHaveDisplayName(GridColumn, 'GridColumn');
   });
