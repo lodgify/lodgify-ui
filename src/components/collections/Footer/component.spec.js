@@ -313,6 +313,14 @@ describe('<Footer />', () => {
         name: 'phone',
       });
     });
+
+    it('should hide the icon if the phone number is an empty string', () => {
+      const actual = getFooter({
+        phoneNumber: '',
+      }).find(Icon);
+
+      expect(actual).toHaveLength(0);
+    });
   });
 
   const getSocialMediaMenuMenu = () =>
