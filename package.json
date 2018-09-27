@@ -1,6 +1,6 @@
 {
   "name": "@lodgify/ui",
-  "version": "1.55.1",
+  "version": "1.60.0",
   "description": "React components for building amazing websites with Lodgify",
   "main": "lib/index.js",
   "config": {
@@ -94,8 +94,8 @@
     "style-loader": "^0.20.2",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0",
-    "webpack": "^4.5.0",
-    "webpack-cli": "^2.0.14"
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.0.0"
   },
   "dependencies": {
     "dompurify": "^1.0.3",

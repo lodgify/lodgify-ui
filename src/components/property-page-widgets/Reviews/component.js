@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Rating } from 'semantic-ui-react';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Heading } from 'typography/Heading';
+import { Rating } from 'elements/Rating';
 import { Button } from 'elements/Button';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
@@ -11,7 +11,6 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Review } from 'general-widgets/Review';
 import { REVIEWS, SUBMIT_REVIEW } from 'utils/default-strings';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying a collection of reviews.
@@ -23,52 +22,44 @@ export const Component = ({
   ratingAverage,
   submitButtonText,
 }) => (
-  <VerticalGutters>
-    <Grid>
-      <GridRow>
+  <Grid>
+    <GridRow>
+      <GridColumn width={12}>
+        <Heading>{headingText}</Heading>
+      </GridColumn>
+    </GridRow>
+    <GridRow verticalAlign="middle">
+      <GridColumn
+        computer={6}
+        floated="left"
+        mobile={5}
+        tablet={5}
+        textAlign="left"
+        verticalAlign="middle"
+      >
+        <Rating ratingNumber={ratingAverage} />
+      </GridColumn>
+      <GridColumn
+        computer={6}
+        floated="right"
+        mobile={7}
+        tablet={7}
+        verticalAlign="middle"
+      >
+        <Button isCompact isPositionedRight isRounded size="medium">
+          {submitButtonText}
+        </Button>
+      </GridColumn>
+    </GridRow>
+    {reviews.map((review, index) => (
+      <GridRow key={buildKeyFromStrings(review.reviewText, index)}>
         <GridColumn width={12}>
-          <Heading>{headingText}</Heading>
+          <Review {...review} />
+          <Divider />
         </GridColumn>
       </GridRow>
-      <GridRow verticalAlign="middle">
-        <GridColumn
-          computer={6}
-          floated="left"
-          mobile={5}
-          tablet={5}
-          textAlign="left"
-          verticalAlign="middle"
-        >
-          <Rating
-            disabled
-            maxRating={5}
-            rating={Math.round(ratingAverage)}
-            size="small"
-          />
-          <span>{Math.round(ratingAverage)}</span>
-        </GridColumn>
-        <GridColumn
-          computer={6}
-          floated="right"
-          mobile={7}
-          tablet={7}
-          verticalAlign="middle"
-        >
-          <Button isCompact isPositionedRight isRounded size="medium">
-            {submitButtonText}
-          </Button>
-        </GridColumn>
-      </GridRow>
-      {reviews.map((review, index) => (
-        <GridRow key={buildKeyFromStrings(review.reviewText, index)}>
-          <GridColumn width={12}>
-            <Review {...review} />
-            <Divider />
-          </GridColumn>
-        </GridRow>
-      ))}
-    </Grid>
-  </VerticalGutters>
+    ))}
+  </Grid>
 );
 
 Component.displayName = 'Reviews';

@@ -20,7 +20,6 @@ import { Heading } from 'typography/Heading';
 import { Subheading } from 'typography/Subheading';
 import { Paragraph } from 'typography/Paragraph';
 import { GoogleMap } from 'elements/GoogleMap';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import {
   locationDescription,
@@ -52,18 +51,10 @@ describe('<Location />', () => {
   });
 
   describe('the `Child` of the `Location` component', () => {
-    it('should have `VerticalGutters` component as a wrapper', () => {
+    it('should have `Grid` component as a wrapper', () => {
       const wrapper = getWrappedLocation();
 
-      expectComponentToBe(wrapper, VerticalGutters);
-    });
-  });
-
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Grid` as its only children', () => {
-      const wrapper = getWrappedLocation();
-
-      expectComponentToHaveChildren(wrapper, Grid);
+      expectComponentToBe(wrapper, Grid);
     });
   });
 

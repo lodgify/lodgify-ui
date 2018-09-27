@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Rating } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
 import { Quote } from 'elements/Quote';
+import { Rating } from 'elements/Rating';
 import { Subheading } from 'typography/Subheading';
 
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
@@ -46,12 +47,7 @@ export const Component = ({
               textAlign="right"
               verticalAlign="middle"
             >
-              <Rating
-                disabled
-                maxRating={5}
-                rating={Math.round(ratingNumber)}
-                size="small"
-              />
+              <Rating isShowingNumeral={false} ratingNumber={ratingNumber} />
             </GridColumn>
           </GridRow>
         </Grid>

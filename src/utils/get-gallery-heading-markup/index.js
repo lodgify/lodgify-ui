@@ -1,0 +1,1 @@
+export { getGalleryHeadingMarkup } from './getGalleryHeadingMarkup';

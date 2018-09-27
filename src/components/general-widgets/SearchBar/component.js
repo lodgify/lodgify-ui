@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Form } from 'semantic-ui-react';
 
-import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
-import { Container } from 'layout/Container';
+import { CHECK_OUR_AVAILABILITY, SEARCH } from 'utils/default-strings';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
@@ -58,7 +58,7 @@ export class Component extends PureComponent {
             'is-fixed': isFixed,
           })}
         >
-          <Container as={Grid}>
+          <HorizontalGutters as={Grid}>
             <GridRow verticalAlign="middle">
               <GridColumn width={5}>{summaryElement}</GridColumn>
               <GridColumn floated="right" width={7}>
@@ -78,7 +78,7 @@ export class Component extends PureComponent {
                 )}
               </GridColumn>
             </GridRow>
-          </Container>
+          </HorizontalGutters>
         </div>
       );
     }
@@ -117,7 +117,7 @@ Component.defaultProps = {
   isShowingSummary: false,
   searchButton: (
     <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
-      Search
+      {SEARCH}
     </Button>
   ),
   locationOptions: null,

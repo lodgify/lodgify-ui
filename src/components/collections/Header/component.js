@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import getClassNames from 'classnames';
 import { Menu } from 'semantic-ui-react';
 
 import { withResponsive } from 'utils/with-responsive';
-import { Container } from 'layout/Container';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { getLogoMarkup } from './utils/getLogoMarkup';
 import { getMobileMenuMarkup } from './utils/getMobileMenuMarkup';
@@ -15,15 +16,19 @@ import { getDesktopMenuMarkup } from './utils/getDesktopMenuMarkup';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = props => (
-  <header>
-    <Container as={Menu} borderless text>
+  <header
+    className={getClassNames({
+      'is-background-filled': props.isBackgroundFilled,
+    })}
+  >
+    <HorizontalGutters as={Menu} borderless text>
       {getLogoMarkup(props.logoSrc, props.logoText)}
       <Menu.Menu position="right">
         {props.isUserOnMobile
           ? getMobileMenuMarkup(props)
           : getDesktopMenuMarkup(props)}
       </Menu.Menu>
-    </Container>
+    </HorizontalGutters>
   </header>
 );
 
@@ -31,16 +36,22 @@ Component.displayName = 'Header';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  searchBarGetIsDayBlocked: Function.prototype,
+  isBackgroundFilled: false,
   logoSrc: null,
   primaryCTA: null,
   searchBarGuestsOptions: [],
   searchBarLocationOptions: [],
+  searchBarModalHeadingText: undefined,
+  searchBarSearchButton: undefined,
 };
 
 Component.propTypes = {
   /** The index of the active navigation item. */
   // eslint-disable-next-line react/no-unused-prop-types
   activeNavigationItemIndex: PropTypes.number,
+  /** Is the background filled with a color defined in CSS. */
+  isBackgroundFilled: PropTypes.bool,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.
@@ -76,6 +87,14 @@ Component.propTypes = {
     /** The  visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),
+  /**
+   * A function called for each day to be displayed in the DateRangePicker.
+   * Returning true blocks that day in the date range picker.
+   * @param   {Moment}  day - The day to test.
+   * @returns {boolean}     - Is the day blocked.
+   */
+  // eslint-disable-next-line react/no-unused-prop-types
+  searchBarGetIsDayBlocked: PropTypes.func,
   /** The options which the user can select in the guests field in the search bar. */
   // eslint-disable-next-line react/no-unused-prop-types
   searchBarGuestsOptions: PropTypes.arrayOf(
@@ -104,6 +123,12 @@ Component.propTypes = {
       ]),
     })
   ),
+  /** The text displayed in the search bar modal */
+  // eslint-disable-next-line react/no-unused-prop-types
+  searchBarModalHeadingText: PropTypes.string,
+  /** The Search Button the Search Bar displays. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  searchBarSearchButton: PropTypes.node,
 };
 
 export const ComponentWithResponsive = withResponsive(Component);

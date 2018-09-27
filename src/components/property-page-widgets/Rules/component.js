@@ -9,7 +9,6 @@ import { Divider } from 'elements/Divider';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { Icon, ICON_NAMES } from 'elements/Icon';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getLabelAndValueString } from './utils/getLabelAndValueString';
 
@@ -25,31 +24,29 @@ export const Component = ({
   headingText,
   rules,
 }) => (
-  <VerticalGutters>
-    <Grid stackable>
-      <GridColumn width={12}>
-        <Heading>{headingText}</Heading>
-      </GridColumn>
-      <GridColumn computer={3} tablet={5}>
-        <List
-          items={rules.map(rule => (
-            <Paragraph>{rule}</Paragraph>
-          ))}
-        />
-      </GridColumn>
-      <GridColumn computer={9} tablet={7}>
-        <Icon
-          labelText={getLabelAndValueString(checkInTimeLabel, checkInTime)}
-          name={ICON_NAMES.QUESTION_MARK}
-        />
-        <Divider />
-        <Icon
-          labelText={getLabelAndValueString(checkOutTimeLabel, checkOutTime)}
-          name={ICON_NAMES.QUESTION_MARK}
-        />
-      </GridColumn>
-    </Grid>
-  </VerticalGutters>
+  <Grid stackable>
+    <GridColumn width={12}>
+      <Heading>{headingText}</Heading>
+    </GridColumn>
+    <GridColumn computer={3} tablet={5}>
+      <List
+        items={rules.map(rule => (
+          <Paragraph>{rule}</Paragraph>
+        ))}
+      />
+    </GridColumn>
+    <GridColumn computer={9} tablet={7}>
+      <Icon
+        labelText={getLabelAndValueString(checkInTimeLabel, checkInTime)}
+        name={ICON_NAMES.QUESTION_MARK}
+      />
+      <Divider />
+      <Icon
+        labelText={getLabelAndValueString(checkOutTimeLabel, checkOutTime)}
+        name={ICON_NAMES.QUESTION_MARK}
+      />
+    </GridColumn>
+  </Grid>
 );
 
 Component.displayName = 'Rules';

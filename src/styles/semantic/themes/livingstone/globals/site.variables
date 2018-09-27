@@ -43,6 +43,18 @@
 @themeLinkDarkerColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-darker-color";
 @themeLinkDarkerColorDefault: @darkPrimaryColor;
 
+@themeBackgroundColorIdentifier:  ~"@{themeCustomPropertyPrefix}-background-color";
+@themeBackgroundColorDefault: @black;
+
+@themeActionColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-color";
+@themeActionColorDefault: @primaryColor;
+
+@themeActionDarkerColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-darker-color";
+@themeActionDarkerColorDefault: @darkPrimaryColor;
+
+@themeActionContrastColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-contrast-color";
+@themeActionContrastColorDefault: @black;
+
 /*--------------
   Page Heading
 ---------------*/

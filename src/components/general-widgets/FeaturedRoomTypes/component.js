@@ -6,32 +6,29 @@ import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { FeaturedRoomType } from 'general-widgets/FeaturedRoomType';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying a list of featured rooms.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ featuredRoomTypes, headingText }) => (
-  <VerticalGutters>
-    <Grid>
-      {headingText && (
-        <GridColumn width={12}>
-          <Heading>{headingText}</Heading>
-        </GridColumn>
-      )}
-      {featuredRoomTypes.map((featuredRoomType, index) => (
-        <GridColumn
-          computer={4}
-          key={buildKeyFromStrings(featuredRoomType.roomTypeName, index)}
-          mobile={12}
-          tablet={6}
-        >
-          <FeaturedRoomType {...featuredRoomType} />
-        </GridColumn>
-      ))}
-    </Grid>
-  </VerticalGutters>
+  <Grid>
+    {headingText && (
+      <GridColumn width={12}>
+        <Heading>{headingText}</Heading>
+      </GridColumn>
+    )}
+    {featuredRoomTypes.map((featuredRoomType, index) => (
+      <GridColumn
+        computer={4}
+        key={buildKeyFromStrings(featuredRoomType.roomTypeName, index)}
+        mobile={12}
+        tablet={6}
+      >
+        <FeaturedRoomType {...featuredRoomType} />
+      </GridColumn>
+    ))}
+  </Grid>
 );
 
 Component.displayName = 'FeaturedRoomTypes';

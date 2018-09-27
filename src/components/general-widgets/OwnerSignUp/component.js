@@ -10,7 +10,6 @@ import {
 } from 'utils/default-strings';
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for owner sign up.
@@ -25,18 +24,16 @@ export const Component = ({
   submitButtonText,
   validation,
 }) => (
-  <VerticalGutters>
-    <Form
-      headingText={headingText}
-      onSubmit={onSubmit}
-      submitButtonText={submitButtonText}
-      validation={validation}
-    >
-      <TextInput label={firstNameInputLabel} name="firstName" />
-      <TextInput label={lastNameInputLabel} name="lastName" />
-      <TextInput label={emailInputLabel} name="email" />
-    </Form>
-  </VerticalGutters>
+  <Form
+    headingText={headingText}
+    onSubmit={onSubmit}
+    submitButtonText={submitButtonText}
+    validation={validation}
+  >
+    <TextInput label={firstNameInputLabel} name="firstName" />
+    <TextInput label={lastNameInputLabel} name="lastName" />
+    <TextInput label={emailInputLabel} name="email" />
+  </Form>
 );
 
 Component.displayName = 'OwnerSignUp';

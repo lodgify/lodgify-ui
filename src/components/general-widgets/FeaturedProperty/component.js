@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Image, Rating } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 
 import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 import { Subheading } from 'typography/Subheading';
+import { Rating } from 'elements/Rating';
 
 import { getPropertyDescription } from './utils/getPropertyDescription';
 
@@ -35,13 +36,7 @@ export const Component = ({
         {getPropertyDescription(guestsNumber, bedroomsNumber)}
       </Card.Description>
       <Card.Description>
-        {ratingNumber}
-        <Rating
-          disabled
-          maxRating={5}
-          rating={Math.round(ratingNumber)}
-          size="tiny"
-        />
+        <Rating iconSize="tiny" ratingNumber={ratingNumber} />
       </Card.Description>
       <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
     </Card.Content>

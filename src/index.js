@@ -3,7 +3,6 @@ export { Footer } from './components/collections/Footer';
 export { Form } from './components/collections/Form';
 export { Header } from './components/collections/Header';
 export { Hero } from './components/collections/Hero';
-export { HomepageHero } from './components/collections/HomepageHero';
 export { InputGroup } from './components/collections/InputGroup';
 
 // Elements
@@ -16,6 +15,7 @@ export { Link } from './components/elements/Link';
 export { Modal } from './components/elements/Modal';
 export { Pagination } from './components/elements/Pagination';
 export { Quote } from './components/elements/Quote';
+export { Rating } from './components/elements/Rating';
 export { Submenu } from './components/elements/Submenu';
 export { Tooltip } from './components/elements/Tooltip';
 
@@ -34,6 +34,7 @@ export {
 export {
   FeaturedRoomTypes,
 } from './components/general-widgets/FeaturedRoomTypes';
+export { HomepageHero } from './components/general-widgets/HomepageHero';
 export { HTML } from './components/general-widgets/HTML';
 export { OwnerLogin } from './components/general-widgets/OwnerLogin';
 export { OwnerSignUp } from './components/general-widgets/OwnerSignUp';
@@ -54,15 +55,18 @@ export { TextInput } from './components/inputs/TextInput';
 export { Toggle } from './components/inputs/Toggle';
 
 // Layout
-export { Container } from './components/layout/Container';
+export { FlexContainer } from './components/layout/FlexContainer';
 export { Grid } from './components/layout/Grid';
 export { GridColumn } from './components/layout/GridColumn';
 export { GridRow } from './components/layout/GridRow';
+export { HorizontalGutters } from './components/layout/HorizontalGutters';
 export { ShowOnDesktop } from './components/layout/ShowOnDesktop';
 export { ShowOnMobile } from './components/layout/ShowOnMobile';
+export { VerticalGutters } from './components/layout/VerticalGutters';
 
 // Media
 export { FullBleed } from './components/media/FullBleed';
+export { Gallery } from './components/media/Gallery';
 export { ResponsiveImage } from './components/media/ResponsiveImage';
 export { Slideshow } from './components/media/Slideshow';
 export { Thumbnail } from './components/media/Thumbnail';
@@ -78,6 +82,9 @@ export { Location } from './components/property-page-widgets/Location';
 export {
   PaymentInformation,
 } from './components/property-page-widgets/PaymentInformation';
+export {
+  PropertyPageHero,
+} from './components/property-page-widgets/PropertyPageHero';
 export { Pictures } from './components/property-page-widgets/Pictures';
 export { RoomType } from './components/property-page-widgets/RoomType';
 export { Rates } from './components/property-page-widgets/Rates';

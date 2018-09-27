@@ -8,7 +8,7 @@ import {
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Container } from 'layout/Container';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { ComponentWithResponsive as Header } from './component';
 import { navigationItems } from './mock-data/navigationItems';
@@ -45,15 +45,26 @@ describe('<Header />', () => {
     it('should have the right children', () => {
       const wrapper = getWrappedHeader();
 
-      expectComponentToHaveChildren(wrapper, Container);
+      expectComponentToHaveChildren(wrapper, HorizontalGutters);
+    });
+
+    describe('if `props.isBackgroundFilled` is true', () => {
+      it('should have the right props', () => {
+        const wrapper = getWrappedHeader({ isBackgroundFilled: true });
+
+        expectComponentToHaveProps(wrapper, {
+          className: 'is-background-filled',
+        });
+      });
     });
   });
 
-  describe('the `Container` component', () => {
-    const getFirstContainer = () => getWrappedHeader().find(Container);
+  describe('the `HorizontalGutters` component', () => {
+    const getFirstHorizontalGutters = () =>
+      getWrappedHeader().find(HorizontalGutters);
 
     it('should have the right props', () => {
-      const wrapper = getFirstContainer();
+      const wrapper = getFirstHorizontalGutters();
 
       expectComponentToHaveProps(wrapper, {
         borderless: true,
@@ -62,7 +73,7 @@ describe('<Header />', () => {
     });
 
     it('should render the right children', () => {
-      const wrapper = getFirstContainer();
+      const wrapper = getFirstHorizontalGutters();
 
       expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Menu);
     });
@@ -74,7 +85,7 @@ describe('<Header />', () => {
         logoText,
         navigationItems,
       })
-        .find(Container)
+        .find(HorizontalGutters)
         .children(Menu.Menu);
 
       expectComponentToHaveProps(wrapper, { position: 'right' });

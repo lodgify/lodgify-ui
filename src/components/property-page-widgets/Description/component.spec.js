@@ -18,7 +18,6 @@ import { Icon } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
-import { VerticalGutters } from 'layout/VerticalGutters';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 
@@ -61,25 +60,15 @@ const getDesktopMarkup = getDescription().find(ShowOnDesktop);
 const getMobileMarkup = getDescription().find(ShowOnMobile);
 
 describe('<Description />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Grid` component as a wrapper', () => {
     const wrapper = getDescription();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Grid` as its only children', () => {
-      const wrapper = getDescription();
-
-      expectComponentToHaveChildren(wrapper, Grid);
-    });
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the first `Grid` component', () => {
     it('should have the right props', () => {
-      const wrapper = getDescription()
-        .first()
-        .children();
+      const wrapper = getDescription().first();
 
       expectComponentToHaveProps(wrapper, {
         columns: 1,

@@ -19,7 +19,6 @@ import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Slideshow } from 'media/Slideshow';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { ComponentWithResponsive as RoomType } from './component';
 
@@ -83,18 +82,10 @@ describe('<RoomType />', () => {
   });
 
   describe('the `Child` of the `RoomType` component', () => {
-    it('should have `VerticalGutters` component as a wrapper', () => {
+    it('should have `Card` component as a wrapper', () => {
       const wrapper = getWrappedRoomType();
 
-      expectComponentToBe(wrapper, VerticalGutters);
-    });
-  });
-
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Card` as its only children', () => {
-      const wrapper = getWrappedRoomType();
-
-      expectComponentToHaveChildren(wrapper, Card);
+      expectComponentToBe(wrapper, Card);
     });
   });
 
@@ -368,16 +359,6 @@ describe('<RoomType />', () => {
         .children();
 
       expectComponentToBe(wrapper, 'span');
-    });
-  });
-
-  describe('the `span`', () => {
-    it('should have the right children', () => {
-      const wrapper = getWrappedRoomType()
-        .find('span')
-        .at(2);
-
-      expectComponentToHaveChildren(wrapper, 'from ', Heading, '/night');
     });
   });
 

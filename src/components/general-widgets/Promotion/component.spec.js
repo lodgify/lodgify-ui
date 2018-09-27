@@ -14,7 +14,6 @@ import { Paragraph } from 'typography/Paragraph';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as Promotion } from './component';
 
@@ -32,17 +31,10 @@ const getPromotionAsStacked = () =>
   shallow(<Promotion {...componentProps} isDisplayedStacked />);
 
 describe('The `Promotion` component', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Segment` component as a wrapper', () => {
     const wrapper = getPromotion();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Segment` as its only children', () => {
-      const wrapper = getPromotion();
-
-      expectComponentToHaveChildren(wrapper, Segment);
-    });
+    expectComponentToBe(wrapper, Segment);
   });
 
   describe('the `Segment`', () => {
@@ -174,6 +166,7 @@ describe('The `Promotion` component', () => {
 
       expectComponentToHaveProps(wrapper, {
         textAlign: 'left',
+        width: 12,
       });
     });
 
@@ -226,6 +219,7 @@ describe('The `Promotion` component', () => {
 
       expectComponentToHaveProps(wrapper, {
         textAlign: 'center',
+        width: 12,
       });
     });
 

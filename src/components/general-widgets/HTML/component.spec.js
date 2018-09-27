@@ -7,8 +7,6 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { VerticalGutters } from 'layout/VerticalGutters';
-
 import { Component as HTML } from './component';
 
 const { headings } = require('./mock-data/examples');
@@ -16,32 +14,17 @@ const { headings } = require('./mock-data/examples');
 const getHTMLWidget = props => shallow(<HTML {...props} />);
 
 describe('<HTML />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `div` component as a wrapper', () => {
     const wrapper = getHTMLWidget();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-  describe('the `VerticalGutters` component', () => {
-    it('should have `div` as its only children', () => {
-      const wrapper = getHTMLWidget();
-
-      expectComponentToHaveChildren(wrapper, 'div');
-    });
+    expectComponentToBe(wrapper, 'div');
   });
 
   describe('if `props.children` is passed', () => {
-    it('should have `VerticalGutters` component as a wrapper', () => {
+    it('should have `div` component as a wrapper', () => {
       const wrapper = getHTMLWidget();
 
-      expectComponentToBe(wrapper, VerticalGutters);
-    });
-
-    describe('the `VerticalGutters` component', () => {
-      it('should have `div` as its only children', () => {
-        const wrapper = getHTMLWidget();
-
-        expectComponentToHaveChildren(wrapper, 'div');
-      });
+      expectComponentToBe(wrapper, 'div');
     });
 
     describe('the `div` element', () => {
@@ -62,7 +45,7 @@ describe('<HTML />', () => {
           htmlString: headings,
         })
           .children('div')
-          .childAt(0);
+          .at(0);
 
         expectComponentToHaveProps(wrapper, {
           dangerouslySetInnerHTML: expect.objectContaining({
@@ -74,22 +57,14 @@ describe('<HTML />', () => {
   });
 
   describe('if `props.children` is not passed', () => {
-    it('should have `VerticalGutters` as a wrapper`', () => {
+    it('should have `div` as a wrapper`', () => {
       const wrapper = getHTMLWidget({ headings });
 
-      expectComponentToBe(wrapper, VerticalGutters);
-    });
-
-    describe('the `VerticalGutters` component', () => {
-      it('should have `div` as its only child', () => {
-        const wrapper = getHTMLWidget({ headings });
-
-        expectComponentToHaveChildren(wrapper, 'div');
-      });
+      expectComponentToBe(wrapper, 'div');
     });
     describe('the `div` element', () => {
       it('should have the right props', () => {
-        const wrapper = getHTMLWidget({ headings }).children();
+        const wrapper = getHTMLWidget({ headings });
 
         expectComponentToHaveProps(wrapper, {
           dangerouslySetInnerHTML: expect.objectContaining({

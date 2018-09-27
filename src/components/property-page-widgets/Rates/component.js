@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
@@ -14,7 +14,6 @@ import { GridRow } from 'layout/GridRow';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Table } from 'collections/Table';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getMobileRateRowMarkup } from './utils/getMobileRateRowMarkup';
 import { getRateCategoryHeadingMarkup } from './utils/getRateCategoryHeadingMarkup';
@@ -34,7 +33,7 @@ export const Component = ({
   roomTypeInputLabel,
   roomTypes,
 }) => (
-  <VerticalGutters>
+  <Fragment>
     <Grid padded>
       {roomTypes &&
         getRoomTypeDropdownMarkup(
@@ -52,7 +51,7 @@ export const Component = ({
             <Card.Content>
               <Grid padded>
                 <GridRow>
-                  <GridColumn>
+                  <GridColumn width={12}>
                     {getRateCategoryHeadingMarkup(
                       rateCategory,
                       costPerExtraGuestLabel
@@ -84,7 +83,7 @@ export const Component = ({
         ]}
       />
     </ShowOnDesktop>
-  </VerticalGutters>
+  </Fragment>
 );
 
 Component.defaultProps = {

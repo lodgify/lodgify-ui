@@ -15,7 +15,7 @@ Component.displayName = 'GridColumn';
 
 Component.defaultProps = {
   verticalAlignContent: 'top',
-  width: 12,
+  width: null,
 };
 
 Component.propTypes = {

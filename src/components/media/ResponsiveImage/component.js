@@ -10,7 +10,6 @@ import {
 } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Paragraph } from 'typography/Paragraph';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying an image.
@@ -28,29 +27,27 @@ export const Component = ({
   onLoad,
   sources,
 }) => (
-  <VerticalGutters>
-    <picture role="figure">
-      {sources.map(({ srcset, media }, index) => (
-        <source
-          key={buildKeyFromStrings(srcset, index)}
-          media={media}
-          srcSet={srcset}
-        />
-      ))}
-      <Image
-        alt={alternativeText}
-        avatar={isAvatar}
-        className={cx(className)}
-        fluid={isFluid}
-        onLoad={onLoad}
-        src={imageUrl}
-        title={imageTitle}
-      >
-        {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
-      </Image>
-      {label ? <Paragraph>{label}</Paragraph> : null}
-    </picture>
-  </VerticalGutters>
+  <picture role="figure">
+    {sources.map(({ srcset, media }, index) => (
+      <source
+        key={buildKeyFromStrings(srcset, index)}
+        media={media}
+        srcSet={srcset}
+      />
+    ))}
+    <Image
+      alt={alternativeText}
+      avatar={isAvatar}
+      className={cx(className)}
+      fluid={isFluid}
+      onLoad={onLoad}
+      src={imageUrl}
+      title={imageTitle}
+    >
+      {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
+    </Image>
+    {label ? <Paragraph>{label}</Paragraph> : null}
+  </picture>
 );
 
 Component.displayName = 'ResponsiveImage';

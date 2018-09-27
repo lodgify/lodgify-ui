@@ -20,7 +20,6 @@ import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { Component as HostProfile } from './component';
 
@@ -50,18 +49,10 @@ const getGridRows = () => getHostProfile().find(GridRow);
 const getGridRowAt = at => getGridRows().at(at);
 
 describe('<HostProfile />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Grid` component as a wrapper', () => {
     const wrapper = getHostProfile();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Grid` as its only children', () => {
-      const wrapper = getHostProfile();
-
-      expectComponentToHaveChildren(wrapper, Grid);
-    });
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the `Grid` component', () => {

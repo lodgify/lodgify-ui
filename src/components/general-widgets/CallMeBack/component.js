@@ -21,7 +21,6 @@ import { PhoneInput } from 'inputs/PhoneInput';
 import { SingleDatePicker } from 'inputs/SingleDatePicker';
 import { TextArea } from 'inputs/TextArea';
 import { TextInput } from 'inputs/TextInput';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for a user to request a call back.
@@ -44,42 +43,40 @@ export const Component = ({
   timeZoneOptions,
   validation,
 }) => (
-  <VerticalGutters>
-    <Form
-      headingText={headingText}
-      onSubmit={onSubmit}
-      submitButtonText={submitButtonText}
-      validation={validation}
-    >
-      <InputGroup>
-        <TextInput label={nameInputLabel} name="name" />
-        <PhoneInput label={phoneInputLabel} name="phone" />
-      </InputGroup>
-      <TextInput label={emailInputLabel} name="email" />
-      <InputGroup>
-        <SingleDatePicker name="date" placeholderText={dateInputPlaceholder} />
-        <Dropdown
-          icon={ICON_NAMES.CLOCK}
-          label={timeInputLabel}
-          name="time"
-          options={timeOptions}
-        />
-      </InputGroup>
-      <InputGroup>
-        <Dropdown
-          label={timeZoneInputLabel}
-          name="timeZone"
-          options={timeZoneOptions}
-        />
-        <Dropdown
-          label={propertyInputLabel}
-          name="property"
-          options={propertyOptions}
-        />
-      </InputGroup>
-      <TextArea label={notesInputLabel} name="notes" />
-    </Form>
-  </VerticalGutters>
+  <Form
+    headingText={headingText}
+    onSubmit={onSubmit}
+    submitButtonText={submitButtonText}
+    validation={validation}
+  >
+    <InputGroup>
+      <TextInput label={nameInputLabel} name="name" />
+      <PhoneInput label={phoneInputLabel} name="phone" />
+    </InputGroup>
+    <TextInput label={emailInputLabel} name="email" />
+    <InputGroup>
+      <SingleDatePicker name="date" placeholderText={dateInputPlaceholder} />
+      <Dropdown
+        icon={ICON_NAMES.CLOCK}
+        label={timeInputLabel}
+        name="time"
+        options={timeOptions}
+      />
+    </InputGroup>
+    <InputGroup>
+      <Dropdown
+        label={timeZoneInputLabel}
+        name="timeZone"
+        options={timeZoneOptions}
+      />
+      <Dropdown
+        label={propertyInputLabel}
+        name="property"
+        options={propertyOptions}
+      />
+    </InputGroup>
+    <TextArea label={notesInputLabel} name="notes" />
+  </Form>
 );
 
 Component.displayName = 'CallMeBack';

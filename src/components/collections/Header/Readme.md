@@ -113,6 +113,8 @@ const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
     navigationItems={navigationItems}
     searchBarGuestsOptions={searchBarGuestsOptions}
     searchBarLocationOptions={searchBarLocationOptions}
+    searchBarHeadingText="Search for a date!"
+    searchBarSearchButton={<Button>Custom button</Button>}
   />
 </div>
 ```
@@ -133,4 +135,21 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
     navigationItems={navigationItems}
   />
 </div>
+```
+
+### Variations
+
+#### Background filled
+
+```jsx
+const { navigationItems } = require('./mock-data/navigationItems');
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+
+<Header
+  isBackgroundFilled
+  logoSrc={logoSrc}
+  logoText="Livingstone Cottage"
+  navigationItems={navigationItems}
+  primaryCTA={{ href: '/book', text: 'Book now'}}
+/>
 ```

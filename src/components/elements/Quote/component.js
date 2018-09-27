@@ -16,12 +16,12 @@ export const Component = ({ quoteDateTime, quoteSource, quoteText }) => (
   <blockquote className="ui quote">
     <Grid>
       <GridRow>
-        <GridColumn>
+        <GridColumn width={12}>
           <Paragraph>{quoteText}</Paragraph>
         </GridColumn>
       </GridRow>
       <GridRow horizontalAlignContent="right">
-        <GridColumn>
+        <GridColumn width={12}>
           <Paragraph size="tiny">
             {getQuoteSource(quoteSource, quoteDateTime)}
           </Paragraph>

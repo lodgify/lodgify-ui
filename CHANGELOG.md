@@ -1,3 +1,54 @@
+# [1.60.0](https://github.com/lodgify/lodgify-ui/compare/v1.59.0...v1.60.0) (2018-09-26)
+
+
+### Features
+
+* **Rating:** expose component with tests and examples ([88a98a5](https://github.com/lodgify/lodgify-ui/commit/88a98a5))
+
+# [1.59.0](https://github.com/lodgify/lodgify-ui/compare/v1.58.0...v1.59.0) (2018-09-26)
+
+
+### Features
+
+* **Header:** expose additional props used by SearchBar ([6ebb899](https://github.com/lodgify/lodgify-ui/commit/6ebb899))
+* **Hero:** expose additional props used by SearchBar ([edc157d](https://github.com/lodgify/lodgify-ui/commit/edc157d))
+* **HomepageHero:** expose additional props used by SearchBar and add unit test and examples ([07d822d](https://github.com/lodgify/lodgify-ui/commit/07d822d))
+
+# [1.58.0](https://github.com/lodgify/lodgify-ui/compare/v1.57.1...v1.58.0) (2018-09-26)
+
+
+### Features
+
+* **Gallery:** expose component with tests and examples ([206a68c](https://github.com/lodgify/lodgify-ui/commit/206a68c))
+
+## [1.57.1](https://github.com/lodgify/lodgify-ui/compare/v1.57.0...v1.57.1) (2018-09-25)
+
+
+### Bug Fixes
+
+* **Summary:** make content stack in mobile ([9e5adfb](https://github.com/lodgify/lodgify-ui/commit/9e5adfb))
+
+# [1.57.0](https://github.com/lodgify/lodgify-ui/compare/v1.56.0...v1.57.0) (2018-09-25)
+
+
+### Features
+
+* **FlexContainer:** expose component with tests and example ([a8cacb7](https://github.com/lodgify/lodgify-ui/commit/a8cacb7))
+* **Heading:** expose isColorInverted and textAlign  with tests and example ([d0234c1](https://github.com/lodgify/lodgify-ui/commit/d0234c1))
+* **PropertyPageHero:** expose component with tests and example ([752e6ec](https://github.com/lodgify/lodgify-ui/commit/752e6ec))
+
+# [1.56.0](https://github.com/lodgify/lodgify-ui/compare/v1.55.1...v1.56.0) (2018-09-25)
+
+
+### Bug Fixes
+
+* **Webpack:** locking version to v4.19.0 until new version fixed ([6ea61d5](https://github.com/lodgify/lodgify-ui/commit/6ea61d5))
+
+
+### Features
+
+* **Header:** expose isBackgroundFilled ([6c54b82](https://github.com/lodgify/lodgify-ui/commit/6c54b82))
+
 ## [1.55.1](https://github.com/lodgify/lodgify-ui/compare/v1.55.0...v1.55.1) (2018-09-21)
 
 

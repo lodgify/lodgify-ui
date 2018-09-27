@@ -1,57 +1,65 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Heading } from 'typography/Heading';
 import { Header } from 'collections/Header';
 import { FullBleed } from 'media/FullBleed';
-import { Container } from 'layout/Container';
 
 /**
- * A standard Hero widget which displays a heading, header
- * and some extra content
+ * A hero displays a header and optional children with a full bleed image background
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  activeNavigationItemIndex,
   backgroundImageUrl,
-  extraContent,
+  children,
   headerLogoSrc,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
   headerSearchBarGuestsOptions,
   headerSearchBarLocationOptions,
-  heading,
+  headerSearchBarModalHeadingText,
+  headerSearchBarSearchButton,
+  searchBarGetIsDayBlocked,
 }) => (
   <FullBleed className="is-hero" hasGradient imageUrl={backgroundImageUrl}>
     <Header
+      activeNavigationItemIndex={activeNavigationItemIndex}
       logoSrc={headerLogoSrc}
       logoText={headerLogoText}
       navigationItems={headerNavigationItems}
       primaryCTA={headerPrimaryCTA}
+      searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
       searchBarGuestsOptions={headerSearchBarGuestsOptions}
       searchBarLocationOptions={headerSearchBarLocationOptions}
+      searchBarModalHeadingText={headerSearchBarModalHeadingText}
+      searchBarSearchButton={headerSearchBarSearchButton}
     />
-    <Heading size="huge">{heading}</Heading>
-    <Container textAlign="center">{!!extraContent && extraContent}</Container>
+    {children}
   </FullBleed>
 );
 
 Component.displayName = 'Hero';
 
 Component.defaultProps = {
-  extraContent: null,
+  activeNavigationItemIndex: null,
+  children: null,
   headerLogoSrc: null,
   headerPrimaryCTA: null,
   headerSearchBarGuestsOptions: [],
   headerSearchBarLocationOptions: [],
-  heading: null,
+  headerSearchBarModalHeadingText: null,
+  headerSearchBarSearchButton: undefined,
+  searchBarGetIsDayBlocked: undefined,
 };
 
 Component.propTypes = {
+  /** The index of the active navigation item. */
+  activeNavigationItemIndex: PropTypes.number,
   /** The background image url of the hero. */
   backgroundImageUrl: PropTypes.string.isRequired,
-  /** The extra content that will be displayed in a row underneath the heading. */
-  extraContent: PropTypes.node,
+  /** The children displayed between the header and the bottom of the hero. */
+  children: PropTypes.node,
   /** The src url for the logo in the header. */
   headerLogoSrc: PropTypes.string,
   /** The text for the logo in the header. */
@@ -105,6 +113,15 @@ Component.propTypes = {
       ]),
     })
   ),
-  /** The text for the heading displayed in the middle of the hero. */
-  heading: PropTypes.string,
+  /** The heading displayed in the Search Bar modal. */
+  headerSearchBarModalHeadingText: PropTypes.string,
+  /** The Search Button the Search Bar modal displays. */
+  headerSearchBarSearchButton: PropTypes.node,
+  /**
+   * A function called for each day to be displayed in the DateRangePicker.
+   * Returning true blocks that day in the date range picker.
+   * @param   {Moment}  day - The day to test.
+   * @returns {boolean}     - Is the day blocked.
+   */
+  searchBarGetIsDayBlocked: PropTypes.func,
 };

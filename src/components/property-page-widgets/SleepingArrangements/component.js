@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import { SLEEPING_ARRANGEMENTS } from 'utils/default-strings';
@@ -7,14 +7,13 @@ import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { IconCard } from 'elements/IconCard';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 /**
  * The standard widget for displaying the sleeping arrangments for a property.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ headingText, sleepingArrangements }) => (
-  <VerticalGutters>
+  <Fragment>
     <Heading>{headingText}</Heading>
     <Grid>
       {sleepingArrangements.map(({ iconName, label }, index) => (
@@ -28,7 +27,7 @@ export const Component = ({ headingText, sleepingArrangements }) => (
         </GridColumn>
       ))}
     </Grid>
-  </VerticalGutters>
+  </Fragment>
 );
 
 Component.displayName = 'SleepingArrangements';

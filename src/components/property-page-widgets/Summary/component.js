@@ -4,9 +4,9 @@ import { Segment } from 'semantic-ui-react';
 
 import { withResponsive } from 'utils/with-responsive';
 
-import { getRatingAndNightPriceMarkup } from './utils/getRatingAndNightPriceMarkup';
 import { getHeadingMarkup } from './utils/getHeadingMarkup';
-import { getLocationNameMarkup } from './utils/getLocationNameMarkup';
+import { getNightPriceAndRatingMarkup } from './utils/getNightPriceAndRatingMarkup';
+import { getNightPriceRatingAndLocationMarkup } from './utils/getNightPriceRatingAndLocationMarkup';
 
 /**
  * The standard widget for displaying the summary details of a property.
@@ -21,9 +21,14 @@ const Component = ({
 }) => (
   <Segment.Group compact>
     {!isUserOnMobile && getHeadingMarkup(propertyName)}
-    <Segment.Group horizontal>
-      {!isUserOnMobile && getLocationNameMarkup(locationName)}
-      {getRatingAndNightPriceMarkup(ratingNumber, nightPrice)}
+    <Segment.Group horizontal={!isUserOnMobile}>
+      {isUserOnMobile
+        ? getNightPriceAndRatingMarkup(ratingNumber, nightPrice)
+        : getNightPriceRatingAndLocationMarkup(
+            ratingNumber,
+            nightPrice,
+            locationName
+          )}
     </Segment.Group>
   </Segment.Group>
 );

@@ -42,5 +42,8 @@
 /* Attached */
 
 /* Inverted */
+.ui.inverted.header {
+  text-shadow: @invertedTextShadow;
+}
 
 /* Floated */

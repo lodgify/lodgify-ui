@@ -14,7 +14,6 @@ import { GridColumn } from 'layout/GridColumn';
 import { withResponsive } from 'utils/with-responsive';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { getMonthsToDisplay } from './utils/getMonthsToDisplay';
 import { getNextStartDate } from './utils/getNextStartDate';
@@ -71,108 +70,106 @@ class Component extends PureComponent {
     const { isUserOnMobile, roomOptionsWithImages } = this.props;
 
     return (
-      <VerticalGutters>
-        <div>
-          <Heading size="small">Availability</Heading>
-          <Grid>
+      <div>
+        <Heading size="small">Availability</Heading>
+        <Grid>
+          <GridRow>
+            <GridColumn
+              computer={7}
+              mobile={12}
+              tablet={6}
+              verticalAlignContent="middle"
+            >
+              <Grid>
+                <GridColumn
+                  computer={5}
+                  mobile={5}
+                  tablet={12}
+                  verticalAlignContent="middle"
+                >
+                  <Paragraph size="tiny" weight="heavy">
+                    View Availability For:
+                  </Paragraph>
+                </GridColumn>
+                <GridColumn computer={7} mobile={7} tablet={12}>
+                  <Dropdown
+                    icon={ICON_NAMES.MAP_PIN}
+                    label="Properties"
+                    onChange={this.reloadCalendarOnRoomSelection}
+                    options={roomOptionsWithImages}
+                  />
+                </GridColumn>
+              </Grid>
+            </GridColumn>
+            <GridColumn
+              only="tablet computer"
+              textAlign="right"
+              verticalAlignContent="middle"
+              width={5}
+            >
+              <Icon
+                color="light grey"
+                isLabelLeft
+                labelText="Unavailable"
+                name={ICON_NAMES.SQUARE}
+              />
+            </GridColumn>
+          </GridRow>
+        </Grid>
+        <Card fluid>
+          <Grid padded>
             <GridRow>
-              <GridColumn
-                computer={7}
-                mobile={12}
-                tablet={6}
-                verticalAlignContent="middle"
-              >
-                <Grid>
+              {getMonthsToDisplay(startDate, isUserOnMobile).map(
+                (month, index) => (
                   <GridColumn
-                    computer={5}
-                    mobile={5}
-                    tablet={12}
-                    verticalAlignContent="middle"
+                    className="availability-calendar-wrapper"
+                    computer={6}
+                    key={buildKeyFromStrings('month-column', index)}
+                    mobile={12}
+                    tablet={6}
                   >
-                    <Paragraph size="tiny" weight="heavy">
-                      View Availability For:
-                    </Paragraph>
-                  </GridColumn>
-                  <GridColumn computer={7} mobile={7} tablet={12}>
-                    <Dropdown
-                      icon={ICON_NAMES.MAP_PIN}
-                      label="Properties"
-                      onChange={this.reloadCalendarOnRoomSelection}
-                      options={roomOptionsWithImages}
+                    <CalendarMonth
+                      isVisible
+                      month={month}
+                      renderCalendarDay={this.renderCalendarDay}
+                      renderMonthElement={renderMonthHeader}
                     />
                   </GridColumn>
-                </Grid>
-              </GridColumn>
-              <GridColumn
-                only="tablet computer"
-                textAlign="right"
-                verticalAlignContent="middle"
-                width={5}
-              >
+                )
+              )}
+            </GridRow>
+            <GridRow>
+              <GridColumn width={6}>
                 <Icon
-                  color="light grey"
+                  labelText="Previous"
+                  name={ICON_NAMES.ARROW_LEFT}
+                  onClick={this.handleClickPreviousMonth}
+                />
+              </GridColumn>
+              <GridColumn textAlign="right" width={6}>
+                <Icon
                   isLabelLeft
-                  labelText="Unavailable"
-                  name={ICON_NAMES.SQUARE}
+                  labelText="Next"
+                  name={ICON_NAMES.ARROW_RIGHT}
+                  onClick={this.handleClickNextMonth}
                 />
               </GridColumn>
             </GridRow>
           </Grid>
-          <Card fluid>
-            <Grid padded>
-              <GridRow>
-                {getMonthsToDisplay(startDate, isUserOnMobile).map(
-                  (month, index) => (
-                    <GridColumn
-                      className="availability-calendar-wrapper"
-                      computer={6}
-                      key={buildKeyFromStrings('month-column', index)}
-                      mobile={12}
-                      tablet={6}
-                    >
-                      <CalendarMonth
-                        isVisible
-                        month={month}
-                        renderCalendarDay={this.renderCalendarDay}
-                        renderMonthElement={renderMonthHeader}
-                      />
-                    </GridColumn>
-                  )
-                )}
-              </GridRow>
-              <GridRow>
-                <GridColumn width={6}>
-                  <Icon
-                    labelText="Previous"
-                    name={ICON_NAMES.ARROW_LEFT}
-                    onClick={this.handleClickPreviousMonth}
-                  />
-                </GridColumn>
-                <GridColumn textAlign="right" width={6}>
-                  <Icon
-                    isLabelLeft
-                    labelText="Next"
-                    name={ICON_NAMES.ARROW_RIGHT}
-                    onClick={this.handleClickNextMonth}
-                  />
-                </GridColumn>
-              </GridRow>
-            </Grid>
-          </Card>
-          <Grid>
-            <GridColumn only="mobile" textAlign="right">
-              <GridColumn>
-                <Icon
-                  color="grey"
-                  isLabelLeft
-                  labelText="Unavailable"
-                  name={ICON_NAMES.SQUARE}
-                />
-              </GridColumn>
+        </Card>
+        <Grid>
+          <GridColumn only="mobile" textAlign="right" width={12}>
+            <GridColumn>
+              <Icon
+                color="grey"
+                isLabelLeft
+                labelText="Unavailable"
+                name={ICON_NAMES.SQUARE}
+              />
             </GridColumn>
-          </Grid>
-        </div>
-      </VerticalGutters>
+          </GridColumn>
+        </Grid>
+      </div>
     );
   }
 }

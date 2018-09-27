@@ -10,13 +10,15 @@ import {
 import { EXPLORE_ALL_PICTURES, PROPERTY_PICTURES } from 'utils/default-strings';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
+import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { Divider } from 'elements/Divider';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { Heading } from 'typography/Heading';
+import { Gallery } from 'media/Gallery';
 import { Link } from 'elements/Link';
 import { Thumbnail } from 'media/Thumbnail';
-import { VerticalGutters } from 'layout/VerticalGutters';
 
 import { pictures } from './mock-data/pictures';
 import { Component as Pictures } from './component';
@@ -24,27 +26,25 @@ import { Component as Pictures } from './component';
 const getPictures = () => shallow(<Pictures pictures={pictures} />);
 
 describe('<Pictures />', () => {
-  it('should have `VerticalGutters` component as a wrapper', () => {
+  it('should have `Grid` component as a wrapper', () => {
     const wrapper = getPictures();
 
-    expectComponentToBe(wrapper, VerticalGutters);
-  });
-  describe('the `VerticalGutters` component', () => {
-    it('should have `Grid` as its only children', () => {
-      const wrapper = getPictures();
-
-      expectComponentToHaveChildren(wrapper, Grid);
-    });
+    expectComponentToBe(wrapper, Grid);
   });
 
   describe('the `Grid` component', () => {
-    it('should render a `GridColumn` for each item in `props.pictures` plus one for the Link', () => {
-      const wrapper = getPictures().find(Grid);
+    const getGrid = () => getPictures().find(Grid);
 
-      expectComponentToHaveChildren(
-        wrapper,
-        ...getArrayOfLengthOfItem(7, GridColumn)
-      );
+    it('should have the right props', () => {
+      const wrapper = getGrid();
+
+      expectComponentToHaveProps(wrapper, { columns: 3 });
+    });
+
+    it('should have the right children', () => {
+      const wrapper = getGrid();
+
+      expectComponentToHaveChildren(wrapper, GridColumn, GridRow, GridColumn);
     });
   });
 
@@ -77,24 +77,29 @@ describe('<Pictures />', () => {
     });
   });
 
+  describe('the `GridRow`', () => {
+    it('should have the right children', () => {
+      const wrapper = getPictures().find(GridRow);
+
+      expectComponentToHaveChildren(
+        wrapper,
+        ...getArrayOfLengthOfItem(5, GridColumn)
+      );
+    });
+  });
+
   describe('each of the array of `GridColumn`s', () => {
-    const getGridColumnInArray = () =>
-      getPictures()
+    it('should render the right children', () => {
+      const wrapper = getPictures()
         .find(GridColumn)
         .at(1);
 
-    it('should get the right props', () => {
-      const wrapper = getGridColumnInArray();
-
-      expectComponentToHaveProps(wrapper, {
-        width: 4,
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getGridColumnInArray();
-
-      expectComponentToHaveChildren(wrapper, ShowOnDesktop, ShowOnMobile);
+      expectComponentToHaveChildren(
+        wrapper,
+        ShowOnDesktop,
+        ShowOnMobile,
+        Divider
+      );
     });
   });
 
@@ -173,15 +178,19 @@ describe('<Pictures />', () => {
     it('should render the right children', () => {
       const wrapper = getGridColumnWithLink();
 
-      expectComponentToHaveChildren(wrapper, Link);
+      expectComponentToHaveChildren(wrapper, Gallery);
     });
   });
 
-  describe('the `Link` component', () => {
-    it('should render the right children', () => {
-      const wrapper = getPictures().find(Link);
+  describe('the `Gallery` component', () => {
+    it('should have the right props', () => {
+      const wrapper = getPictures().find(Gallery);
 
-      expectComponentToHaveChildren(wrapper, EXPLORE_ALL_PICTURES);
+      expectComponentToHaveProps(wrapper, {
+        heading: expect.any(Object),
+        images: pictures,
+        trigger: <Link>{EXPLORE_ALL_PICTURES}</Link>,
+      });
     });
   });
 
