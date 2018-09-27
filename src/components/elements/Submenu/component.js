@@ -20,6 +20,7 @@ export const Component = ({
   items,
   name,
   onChange,
+  pointing,
   willOpenAbove,
 }) => (
   <Dropdown
@@ -30,7 +31,7 @@ export const Component = ({
     name={name}
     onChange={adaptOnChange(onChange, name)}
     options={adaptOptions(items)}
-    pointing="top"
+    pointing={pointing}
     simple={isTriggeredOnHover}
     trigger={children}
     upward={willOpenAbove}
@@ -46,6 +47,7 @@ Component.defaultProps = {
   isTriggerUnderlined: false,
   name: null,
   onChange: Function.prototype,
+  pointing: 'top left',
   willOpenAbove: false,
 };
 
@@ -77,6 +79,17 @@ Component.propTypes = {
   name: PropTypes.string,
   /** A function called when the dropdown value changes. */
   onChange: PropTypes.func,
+  /** The pointing direction of the dropdown chevron */
+  pointing: PropTypes.oneOf([
+    'left',
+    'right',
+    'top',
+    'top left',
+    'top right',
+    'bottom',
+    'bottom left',
+    'bottom right',
+  ]),
   /** Will the submenu open above the input. */
   willOpenAbove: PropTypes.bool,
 };

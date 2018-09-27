@@ -341,6 +341,15 @@
       color: @textColor;
     }
   }
+
+  &.top.right.ui,
+  &.top.left.ui {
+    margin-left: @floatedDistance !important;
+
+    .menu & > .menu {
+      margin-top: @pointingDropdownMenuDistance;
+    }
+  }
 }
 
 /* Pointing Upward */
