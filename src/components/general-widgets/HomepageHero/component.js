@@ -17,13 +17,13 @@ import { getSearchBarMarkup } from './utils/getSearchBarMarkup';
 const Component = ({
   activeNavigationItemIndex,
   backgroundImageUrl,
-  searchBarGetIsDayBlocked,
   headerLogoSrc,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
   headingText,
   isUserOnMobile,
+  searchBarGetIsDayBlocked,
   searchBarGuestsOptions,
   searchBarLocationOptions,
   searchBarModalHeadingText,
@@ -42,6 +42,7 @@ const Component = ({
     headerSearchBarModalHeadingText={searchBarModalHeadingText}
     headerSearchBarSearchButton={searchBarSearchButton}
     searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
+    searchBarOnSubmit={searchBarOnSubmit}
   >
     <FlexContainer
       alignItems="center"
