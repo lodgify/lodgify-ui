@@ -52,7 +52,6 @@ describe('HomepageHero', () => {
       expectComponentToHaveProps(wrapper, {
         activeNavigationItemIndex: props.activeNavigationItemIndex,
         backgroundImageUrl: props.backgroundImageUrl,
-        searchBarGetIsDayBlocked: props.searchBarGetIsDayBlocked,
         headerLogoSrc: props.headerLogoSrc,
         headerLogoText: props.headerLogoText,
         headerNavigationItems: props.headerNavigationItems,
@@ -60,6 +59,8 @@ describe('HomepageHero', () => {
         headerSearchBarGuestsOptions: props.searchBarGuestsOptions,
         headerSearchBarLocationOptions: props.searchBarLocationOptions,
         headerSearchBarSearchButton: props.searchBarSearchButton,
+        searchBarGetIsDayBlocked: props.searchBarGetIsDayBlocked,
+        searchBarOnSubmit: props.searchBarOnSubmit,
       });
     });
 

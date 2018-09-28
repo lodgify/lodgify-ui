@@ -18,6 +18,7 @@ import { Divider } from 'elements/Divider';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
+  activeNavigationItemIndex,
   headerLogoSrc,
   headerLogoText,
   headerNavigationItems,
@@ -25,11 +26,16 @@ const Component = ({
   images,
   propertyName,
   ratingNumber,
+  searchBarGetIsDayBlocked,
   searchBarGuestsOptions,
   searchBarLocationOptions,
+  searchBarModalHeadingText,
+  searchBarSearchButton,
   secondaryButtonText,
+  searchBarOnSubmit,
 }) => (
   <Hero
+    activeNavigationItemIndex={activeNavigationItemIndex}
     backgroundImageUrl={images[0].imageUrl}
     headerLogoSrc={headerLogoSrc}
     headerLogoText={headerLogoText}
@@ -37,6 +43,10 @@ const Component = ({
     headerPrimaryCTA={headerPrimaryCTA}
     headerSearchBarGuestsOptions={searchBarGuestsOptions}
     headerSearchBarLocationOptions={searchBarLocationOptions}
+    headerSearchBarModalHeadingText={searchBarModalHeadingText}
+    headerSearchBarSearchButton={searchBarSearchButton}
+    searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
+    searchBarOnSubmit={searchBarOnSubmit}
   >
     <FlexContainer alignItems="flex-end">
       <HorizontalGutters>
@@ -63,14 +73,21 @@ const Component = ({
 Component.displayName = 'PropertyPageHero';
 
 Component.defaultProps = {
+  activeNavigationItemIndex: null,
   headerLogoSrc: null,
   headerPrimaryCTA: null,
   propertyName: null,
   ratingNumber: null,
+  searchBarGetIsDayBlocked: undefined,
+  searchBarModalHeadingText: undefined,
+  searchBarSearchButton: undefined,
   secondaryButtonText: VIEW_MORE_PICTURES,
+  searchBarOnSubmit: undefined,
 };
 
 Component.propTypes = {
+  /** The index of the active navigation item. */
+  activeNavigationItemIndex: PropTypes.number,
   /** The src url for the logo in the header. */
   headerLogoSrc: PropTypes.string,
   /** The text for the logo in the header. */
@@ -126,6 +143,13 @@ Component.propTypes = {
   propertyName: PropTypes.string,
   /** The numeral rating for the property, out of 5 */
   ratingNumber: PropTypes.number,
+  /**
+   * A function called for each day to be displayed in the DateRangePicker.
+   * Returning true blocks that day in the date range picker.
+   * @param   {Moment}  day - The day to test.
+   * @returns {boolean}     - Is the day blocked.
+   */
+  searchBarGetIsDayBlocked: PropTypes.func,
   /** The options which the user can select in the guests fields of the search bar. */
   searchBarGuestsOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -152,6 +176,17 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /* The heading displayed in the search bar modal. */
+  searchBarModalHeadingText: PropTypes.string,
+  /** The function to call when the search bar is submitted.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  searchBarOnSubmit: PropTypes.func,
+  /** The search button the search bar displays. */
+  searchBarSearchButton: PropTypes.node,
   /** The text to display on the secondary button at the bottom of the hero. */
   secondaryButtonText: PropTypes.string,
 };
