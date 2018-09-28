@@ -1,3 +1,18 @@
+# [1.61.0](https://github.com/lodgify/lodgify-ui/compare/v1.60.0...v1.61.0) (2018-09-28)
+
+
+### Bug Fixes
+
+* **Header:** expose searchBarOnSubmit prop ([539167c](https://github.com/lodgify/lodgify-ui/commit/539167c))
+* **Hero:** expose searchBarOnSubmit prop ([b5e18cd](https://github.com/lodgify/lodgify-ui/commit/b5e18cd))
+* **HomepageHero:** expose searchBarOnSubmit props ([fc93a74](https://github.com/lodgify/lodgify-ui/commit/fc93a74))
+* **PropertyPageHero:** expose searchBarOnSubmit prop ([d37b97f](https://github.com/lodgify/lodgify-ui/commit/d37b97f))
+
+
+### Features
+
+* **PropertyPageHero:** expose additional props and add examples and unit tests ([1dda4ab](https://github.com/lodgify/lodgify-ui/commit/1dda4ab))
+
 # [1.60.0](https://github.com/lodgify/lodgify-ui/compare/v1.59.0...v1.60.0) (2018-09-26)
 
 
