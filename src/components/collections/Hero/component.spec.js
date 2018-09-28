@@ -24,6 +24,7 @@ const props = {
   headerSearchBarLocationOptions: [
     { href: 'anotherHref', text: 'anotherText' },
   ],
+  searchBarOnSubmit: Function.prototype,
 };
 
 const getHeroComponent = extraProps =>
@@ -64,6 +65,7 @@ describe('<Hero />', () => {
         primaryCTA: props.headerPrimaryCTA,
         searchBarGuestsOptions: props.headerSearchBarGuestsOptions,
         searchBarLocationOptions: props.headerSearchBarLocationOptions,
+        searchBarOnSubmit: props.searchBarOnSubmit,
       });
     });
   });
