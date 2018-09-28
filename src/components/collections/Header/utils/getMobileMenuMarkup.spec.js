@@ -20,6 +20,7 @@ const logoText = 'someLogoText';
 const searchBarGuestsOptions = [{ text: '1', value: 1 }];
 const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
 const searchBarGetIsDayBlocked = Function.prototype;
+const searchBarOnSubmit = Function.prototype;
 const searchBarModalHeadingText = 'someHeadingText';
 const searchBarSearchButton = 'button boy';
 
@@ -34,6 +35,7 @@ const getMarkupAsRenderedComponent = extraProps =>
         navigationItems,
         searchBarModalHeadingText,
         searchBarSearchButton,
+        searchBarOnSubmit,
         ...extraProps,
       })}
     </div>
@@ -147,6 +149,7 @@ describe('getMobileMenuMarkup', () => {
           locationOptions: searchBarLocationOptions,
           getIsDayBlocked: searchBarGetIsDayBlocked,
           modalHeadingText: searchBarModalHeadingText,
+          onSubmit: expect.any(Function),
           searchButton: searchBarSearchButton,
         });
       });

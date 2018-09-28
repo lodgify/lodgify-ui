@@ -28,3 +28,42 @@ const images = [
   searchBarLocationOptions={locationOptions}
 />
 ```
+
+### Variations
+
+#### Custom search button
+
+```jsx
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+const { images, navigationItems, guestsOptions, locationOptions } = require('./mock-data/mock-data');
+
+<PropertyPageHero
+  images={images}
+  headerLogoSrc={logoSrc}
+  headerLogoText="Livingstone Cottage"
+  headerNavigationItems={navigationItems}
+  headerPrimaryCTA={{ href: '/book', text: 'Book now'}}
+  searchBarGuestsOptions={guestsOptions}
+  searchBarLocationOptions={locationOptions}
+  searchBarSearchButton={<Button>Check now!</Button>}
+/>
+```
+
+#### Custom search bar modal heading
+
+```jsx
+// Viewport width needs to be less than 600px to trigger modal
+
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+const { images, navigationItems, guestsOptions } = require('./mock-data/mock-data');
+
+<PropertyPageHero
+  images={images}
+  headerLogoSrc={logoSrc}
+  headerLogoText="Livingstone Cottage"
+  headerNavigationItems={navigationItems}
+  headerPrimaryCTA={{ href: '/book', text: 'Book now'}}
+  searchBarGuestsOptions={guestsOptions}
+  searchBarModalHeadingText="Custom modal heading"
+/>
+```

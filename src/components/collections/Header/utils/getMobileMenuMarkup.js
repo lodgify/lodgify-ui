@@ -31,6 +31,7 @@ export const getMobileMenuMarkup = ({
   navigationItems,
   searchBarGuestsOptions,
   searchBarLocationOptions,
+  searchBarOnSubmit,
   searchBarSearchButton,
   /* eslint-enable react/prop-types */
 }) => (
@@ -43,6 +44,7 @@ export const getMobileMenuMarkup = ({
           isDisplayedAsModal
           locationOptions={searchBarLocationOptions}
           modalHeadingText={searchBarModalHeadingText}
+          onSubmit={searchBarOnSubmit}
           searchButton={searchBarSearchButton}
         />
       </Menu.Item>

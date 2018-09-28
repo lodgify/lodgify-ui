@@ -21,6 +21,7 @@ export const Component = ({
   headerSearchBarModalHeadingText,
   headerSearchBarSearchButton,
   searchBarGetIsDayBlocked,
+  searchBarOnSubmit,
 }) => (
   <FullBleed className="is-hero" hasGradient imageUrl={backgroundImageUrl}>
     <Header
@@ -33,6 +34,7 @@ export const Component = ({
       searchBarGuestsOptions={headerSearchBarGuestsOptions}
       searchBarLocationOptions={headerSearchBarLocationOptions}
       searchBarModalHeadingText={headerSearchBarModalHeadingText}
+      searchBarOnSubmit={searchBarOnSubmit}
       searchBarSearchButton={headerSearchBarSearchButton}
     />
     {children}
@@ -51,6 +53,7 @@ Component.defaultProps = {
   headerSearchBarModalHeadingText: null,
   headerSearchBarSearchButton: undefined,
   searchBarGetIsDayBlocked: undefined,
+  searchBarOnSubmit: undefined,
 };
 
 Component.propTypes = {
@@ -124,4 +127,11 @@ Component.propTypes = {
    * @returns {boolean}     - Is the day blocked.
    */
   searchBarGetIsDayBlocked: PropTypes.func,
+  /** The function to call when the search bar is submitted.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  searchBarOnSubmit: PropTypes.func,
 };
