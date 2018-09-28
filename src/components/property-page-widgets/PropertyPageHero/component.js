@@ -32,6 +32,7 @@ const Component = ({
   searchBarModalHeadingText,
   searchBarSearchButton,
   secondaryButtonText,
+  searchBarOnSubmit,
 }) => (
   <Hero
     activeNavigationItemIndex={activeNavigationItemIndex}
@@ -45,6 +46,7 @@ const Component = ({
     headerSearchBarModalHeadingText={searchBarModalHeadingText}
     headerSearchBarSearchButton={searchBarSearchButton}
     searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
+    searchBarOnSubmit={searchBarOnSubmit}
   >
     <FlexContainer alignItems="flex-end">
       <HorizontalGutters>
@@ -80,6 +82,7 @@ Component.defaultProps = {
   searchBarModalHeadingText: undefined,
   searchBarSearchButton: undefined,
   secondaryButtonText: VIEW_MORE_PICTURES,
+  searchBarOnSubmit: undefined,
 };
 
 Component.propTypes = {
@@ -175,6 +178,13 @@ Component.propTypes = {
   ).isRequired,
   /* The heading displayed in the search bar modal. */
   searchBarModalHeadingText: PropTypes.string,
+  /** The function to call when the search bar is submitted.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  searchBarOnSubmit: PropTypes.func,
   /** The search button the search bar displays. */
   searchBarSearchButton: PropTypes.node,
   /** The text to display on the secondary button at the bottom of the hero. */

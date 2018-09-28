@@ -34,6 +34,7 @@ const props = {
   searchBarSearchButton: 'hey',
   secondaryButtonText: '🐸',
   searchBarGetIsDayBlocked: Function.prototype,
+  searchBarOnSubmit: Function.prototype,
 };
 
 const getPropertyPageHero = () => shallow(<PropertyPageHero {...props} />);
@@ -67,6 +68,7 @@ describe('PropertyPageHero', () => {
         headerSearchBarModalHeadingText: props.searchBarModalHeadingText,
         headerSearchBarSearchButton: props.searchBarSearchButton,
         searchBarGetIsDayBlocked: expect.any(Function),
+        searchBarOnSubmit: expect.any(Function),
       });
     });
 
