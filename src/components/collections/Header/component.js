@@ -36,13 +36,14 @@ Component.displayName = 'Header';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
-  searchBarGetIsDayBlocked: Function.prototype,
   isBackgroundFilled: false,
   logoSrc: null,
   primaryCTA: null,
+  searchBarGetIsDayBlocked: Function.prototype,
   searchBarGuestsOptions: [],
   searchBarLocationOptions: [],
   searchBarModalHeadingText: undefined,
+  searchBarOnSubmit: undefined,
   searchBarSearchButton: undefined,
 };
 
@@ -126,6 +127,14 @@ Component.propTypes = {
   /** The text displayed in the search bar modal */
   // eslint-disable-next-line react/no-unused-prop-types
   searchBarModalHeadingText: PropTypes.string,
+  /** The function to call when the search bar is submitted.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  // eslint-disable-next-line react/no-unused-prop-types
+  searchBarOnSubmit: PropTypes.func,
   /** The Search Button the Search Bar displays. */
   // eslint-disable-next-line react/no-unused-prop-types
   searchBarSearchButton: PropTypes.node,
