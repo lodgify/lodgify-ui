@@ -248,6 +248,14 @@ header {
         color: @headerMenuItemTextColor;
       }
 
+      &.right {
+        margin-left: @headerMenuItemHorizontalMargin !important;
+      }
+
+      &.left {
+        margin-right: @headerMenuItemHorizontalMargin !important;
+      }
+
       @media @mobileScreen {
         padding: @headerMenuItemMobileVerticalPadding 0;
       }
@@ -266,6 +274,10 @@ header {
           max-height: @headerLogoMaxHeight;
           max-width: @headerLogoMaxWidth;
         }
+      }
+
+      > .menu {
+        margin-top: @pointingDropdownMenuDistance !important;
       }
     }
 

@@ -79,7 +79,7 @@ Component.propTypes = {
   name: PropTypes.string,
   /** A function called when the dropdown value changes. */
   onChange: PropTypes.func,
-  /** The pointing direction of the dropdown chevron */
+  /** The pointing direction of the dropdown */
   pointing: PropTypes.oneOf([
     'left',
     'right',
