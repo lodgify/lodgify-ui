@@ -6,6 +6,7 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Submenu } from 'elements/Submenu';
 import { Button } from 'elements/Button';
 
+import { getSubmenuPointing } from './getSubmenuPointing';
 import { getLinkMarkup } from './getLinkMarkup';
 
 /**
@@ -25,7 +26,7 @@ export const getDesktopMenuMarkup = ({
   <Fragment>
     {navigationItems.map(
       ({ subItems, text, href }, index) =>
-        size(subItems) ? (
+        size(subItems) > 0 ? (
           <Submenu
             isMenuItem
             isSimple
@@ -33,6 +34,11 @@ export const getDesktopMenuMarkup = ({
             isTriggeredOnHover
             items={subItems}
             key={buildKeyFromStrings(text, index)}
+            pointing={getSubmenuPointing(
+              index,
+              size(navigationItems),
+              !!primaryCTA
+            )}
           >
             {text}
           </Submenu>
