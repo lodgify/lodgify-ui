@@ -2,7 +2,7 @@ import { getValueProperty } from './getValueProperty';
 
 describe('getValueProperty', () => {
   describe('`isSelectedDisabled`', () => {
-    it('is true then return an object with value', () => {
+    it('should return an object with value if isSelectedDisabled is true', () => {
       const actual = getValueProperty(true);
 
       expect(actual).toEqual({
@@ -10,7 +10,7 @@ describe('getValueProperty', () => {
       });
     });
 
-    it('is false then return an empty object', () => {
+    it('should return an empty object if isSelectedDisabled is false', () => {
       const actual = getValueProperty(false);
 
       expect(actual).toEqual({});
