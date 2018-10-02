@@ -47,6 +47,16 @@ describe('<Submenu />', () => {
       });
     });
 
+    it('should get `isSelectedDisabled` to set the `value` to `-999`', () => {
+      const wrapper = getSubmenuDropdown({
+        isSelectedDisabled: true,
+      });
+
+      expectComponentToHaveProps(wrapper, {
+        value: -999,
+      });
+    });
+
     it('should get `props.className` `underlined` if required', () => {
       const wrapper = getSubmenuDropdown({ isTriggerUnderlined: true });
 

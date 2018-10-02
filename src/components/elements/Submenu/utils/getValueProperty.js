@@ -1,7 +1,7 @@
 /**
  * @param {boolean} isSelectedDisabled
  */
-export const getValueProp = isSelectedDisabled =>
+export const getValueProperty = isSelectedDisabled =>
   isSelectedDisabled
     ? {
         value: -999,
