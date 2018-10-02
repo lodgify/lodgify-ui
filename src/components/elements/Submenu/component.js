@@ -7,6 +7,7 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 import { getDefaultValue } from './utils/getDefaultValue';
 import { adaptOnChange } from './utils/adaptOnChange';
 import { adaptOptions } from './utils/adaptOptions';
+import { getValueProperty } from './utils/getValueProperty';
 
 /**
  * A submenu displays grouped navigation items.
@@ -15,6 +16,7 @@ import { adaptOptions } from './utils/adaptOptions';
 export const Component = ({
   children,
   isMenuItem,
+  isSelectedDisabled,
   isTriggeredOnHover,
   isTriggerUnderlined,
   items,
@@ -35,6 +37,7 @@ export const Component = ({
     simple={isTriggeredOnHover}
     trigger={children}
     upward={willOpenAbove}
+    {...getValueProperty(isSelectedDisabled)}
   />
 );
 
@@ -43,6 +46,7 @@ Component.displayName = 'Submenu';
 Component.defaultProps = {
   children: null,
   isMenuItem: false,
+  isSelectedDisabled: false,
   isTriggeredOnHover: false,
   isTriggerUnderlined: false,
   name: null,
@@ -56,6 +60,8 @@ Component.propTypes = {
   children: PropTypes.string,
   /** Is it an item in a Semantic UI Menu.  */
   isMenuItem: PropTypes.bool,
+  /** Is the selected state disabled */
+  isSelectedDisabled: PropTypes.bool,
   /** Is the trigger underlined for emphasis.  */
   isTriggerUnderlined: PropTypes.bool,
   /** Is it triggered on hover rather than click.  */
