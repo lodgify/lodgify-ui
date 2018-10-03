@@ -24,7 +24,7 @@ Component.displayName = 'Heading';
 
 Component.defaultProps = {
   isColorInverted: false,
-  textAlign: 'left',
+  textAlign: null,
   size: 'medium',
 };
 
