@@ -91,7 +91,11 @@
 
     > * {
       position: relative;
-      z-index: 1;
+      z-index: @heroContentZIndex;
+    }
+
+    > header {
+      z-index: @heroContentZIndex + 1;
     }
   }
 }
