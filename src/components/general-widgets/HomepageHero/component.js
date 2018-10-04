@@ -77,6 +77,7 @@ Component.defaultProps = {
   headerPrimaryCTA: null,
   headingText: null,
   searchBarGetIsDayBlocked: undefined,
+  searchBarLocationOptions: undefined,
   searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
   searchBarOnSubmit: Function.prototype,
   searchBarSearchButton: undefined,
@@ -154,7 +155,7 @@ Component.propTypes = {
         PropTypes.string,
       ]),
     })
-  ).isRequired,
+  ),
   /* The heading displayed in the search bar modal. */
   searchBarModalHeadingText: PropTypes.string,
   /** The function to call when the search bar is submitted.
