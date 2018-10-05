@@ -1,3 +1,17 @@
+## [1.61.2](https://github.com/lodgify/lodgify-ui/compare/v1.61.1...v1.61.2) (2018-10-04)
+
+
+### Bug Fixes
+
+* **Hero:** header dropdown should be above content ([2631fc8](https://github.com/lodgify/lodgify-ui/commit/2631fc8))
+
+## [1.61.1](https://github.com/lodgify/lodgify-ui/compare/v1.61.0...v1.61.1) (2018-10-04)
+
+
+### Bug Fixes
+
+* **HomepageHero:** remove requirement from location options ([f540638](https://github.com/lodgify/lodgify-ui/commit/f540638))
+
 # [1.61.0](https://github.com/lodgify/lodgify-ui/compare/v1.60.0...v1.61.0) (2018-09-28)
 
 

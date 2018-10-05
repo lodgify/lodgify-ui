@@ -77,3 +77,6 @@
 @promotionBeforeLayerZIndex: 1;
 @promotionAfterLayerZIndex: 2;
 @promotionContentLayerZIndex: 3;
+
+/* Is Hero */
+@heroContentZIndex: 1;

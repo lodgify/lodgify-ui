@@ -12,6 +12,6 @@ export const getGalleryHeadingMarkup = (propertyName, ratingNumber) =>
   propertyName && (
     <Fragment>
       <Heading>{propertyName}</Heading>
-      {ratingNumber && <Rating ratingNumber={ratingNumber} />}
+      {ratingNumber > 0 && <Rating ratingNumber={ratingNumber} />}
     </Fragment>
   );
