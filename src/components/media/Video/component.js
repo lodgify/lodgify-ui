@@ -38,18 +38,20 @@ export class Component extends PureComponent {
   render() {
     const { videoSource, isResponsive, width, height } = this.props;
 
-    const reactPlayerProps = getReactPlayerProps(isResponsive, videoSource);
+    const playerWrapperProps = {
+      className: getClassNames('video', 'player-wrapper', {
+        'is-url': isValidUrl(videoSource),
+        'is-html': isValidHTML(videoSource),
+        'is-responsive': isResponsive,
+      }),
+      style: getPlayerCss(isResponsive, width, height),
+    };
 
     // In case a URL is informed
     if (isValidUrl(videoSource)) {
       return (
-        <div
-          className={getClassNames('video', 'is-url', 'react-player-wrapper', {
-            'is-responsive': isResponsive,
-          })}
-          style={getPlayerCss(isResponsive, width, height)}
-        >
-          <ReactPlayer {...reactPlayerProps} />
+        <div {...playerWrapperProps}>
+          <ReactPlayer {...getReactPlayerProps(isResponsive, videoSource)} />
         </div>
       );
     }
@@ -58,7 +60,7 @@ export class Component extends PureComponent {
     if (isValidHTML(videoSource)) {
       return (
         <div
-          className="video is-html"
+          {...playerWrapperProps}
           dangerouslySetInnerHTML={{
             __html: this.state.cleanHTMLString,
           }}
