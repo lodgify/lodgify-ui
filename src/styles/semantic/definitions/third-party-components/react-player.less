@@ -8,18 +8,26 @@
 @import (multiple) '../../theme.config';
 
 /*******************************
-            Datepicker
+          React Player
 *******************************/
-.react-player-wrapper {
+.player-wrapper {
 
   &.is-responsive {
     position: relative;
     padding-top: @playerAspectRatioPaddingTop;
 
-    .react-player {
+    .react-player,
+    iframe,
+    video {
       position: absolute;
       top: 0;
       left: 0;
+    }
+
+    iframe,
+    video {
+      width: 100%;
+      height: 100%;
     }
   }
 }

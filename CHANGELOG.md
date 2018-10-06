@@ -1,3 +1,10 @@
+## [1.61.3](https://github.com/lodgify/lodgify-ui/compare/v1.61.2...v1.61.3) (2018-10-05)
+
+
+### Bug Fixes
+
+* **Video:** make iframes responsive ([812cee1](https://github.com/lodgify/lodgify-ui/commit/812cee1))
+
 ## [1.61.2](https://github.com/lodgify/lodgify-ui/compare/v1.61.1...v1.61.2) (2018-10-04)
 
 
