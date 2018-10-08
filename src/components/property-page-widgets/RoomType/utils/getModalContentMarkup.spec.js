@@ -10,7 +10,6 @@ import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Amenities } from 'property-page-widgets/Amenities';
 import { Divider } from 'elements/Divider';
 import { Paragraph } from 'typography/Paragraph';
-import { Button } from 'elements/Button';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
@@ -32,7 +31,6 @@ const amenities = [
   },
 ];
 
-const onClickCheckAvailability = Function.prototype;
 const description = 'yoyo description';
 const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
@@ -56,7 +54,6 @@ const getMarkup = () =>
   shallow(
     getModalContentMarkup(
       amenities,
-      onClickCheckAvailability,
       description,
       extraFeatures,
       features,
@@ -198,7 +195,7 @@ describe('getModalContentMarkup', () => {
         .find(Grid)
         .at(0);
 
-      expectComponentToHaveChildren(wrapper, GridColumn, GridColumn);
+      expectComponentToHaveChildren(wrapper, GridColumn);
     });
   });
 
@@ -213,7 +210,7 @@ describe('getModalContentMarkup', () => {
 
       expectComponentToHaveProps(wrapper, {
         verticalAlignContent: 'bottom',
-        width: 6,
+        width: 12,
       });
     });
 
@@ -239,48 +236,6 @@ describe('getModalContentMarkup', () => {
       const wrapper = getMarkup().find('strong');
 
       expectComponentToHaveChildren(wrapper, ` ${nightPrice} `);
-    });
-  });
-
-  describe('the second `GridColumn`', () => {
-    const getSecondGridColumn = () =>
-      getMarkup()
-        .find(GridColumn)
-        .at(1);
-
-    it('should have the right props', () => {
-      const wrapper = getSecondGridColumn();
-
-      expectComponentToHaveProps(wrapper, {
-        verticalAlignContent: 'bottom',
-        width: 6,
-      });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getSecondGridColumn();
-
-      expectComponentToHaveChildren(wrapper, Button);
-    });
-  });
-
-  describe('the `Button`', () => {
-    const getButton = () => getMarkup().find(Button);
-
-    it('should have the right props', () => {
-      const wrapper = getButton();
-
-      expectComponentToHaveProps(wrapper, {
-        isPositionedRight: true,
-        isRounded: true,
-        onClick: expect.any(Function),
-      });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getButton();
-
-      expectComponentToHaveChildren(wrapper, 'Check Availability');
     });
   });
 });
