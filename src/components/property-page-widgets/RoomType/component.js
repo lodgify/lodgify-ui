@@ -75,7 +75,8 @@ const Component = ({
                   name,
                   nightPrice,
                   ratingNumber,
-                  slideShowImages
+                  slideShowImages,
+                  isUserOnMobile
                 )}
               </Modal>
             </GridColumn>
@@ -95,7 +96,8 @@ const Component = ({
                     name,
                     nightPrice,
                     ratingNumber,
-                    slideShowImages
+                    slideShowImages,
+                    isUserOnMobile
                   )}
                 </Modal>
               </GridColumn>
