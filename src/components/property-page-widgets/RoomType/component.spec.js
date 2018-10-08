@@ -205,7 +205,7 @@ describe('<RoomType />', () => {
         wrapper,
         GridColumn,
         GridColumn,
-        List,
+        GridColumn,
         GridRow
       );
     });
@@ -288,6 +288,23 @@ describe('<RoomType />', () => {
       const wrapper = getFifthGridColumn();
 
       expectComponentToHaveProps(wrapper, {
+        floated: 'left',
+        horizontal: true,
+        as: List,
+      });
+    });
+  });
+
+  describe('the sixth `GridColumn`', () => {
+    const getSixthGridColumn = () =>
+      getWrappedRoomType()
+        .find(GridColumn)
+        .at(6);
+
+    it('should have the right props', () => {
+      const wrapper = getSixthGridColumn();
+
+      expectComponentToHaveProps(wrapper, {
         only: 'tablet computer',
         verticalAlignContent: 'bottom',
         width: 4,
@@ -295,7 +312,7 @@ describe('<RoomType />', () => {
     });
 
     it('should have the right children', () => {
-      const wrapper = getFifthGridColumn();
+      const wrapper = getSixthGridColumn();
 
       expectComponentToHaveChildren(wrapper, Modal);
     });
@@ -314,20 +331,20 @@ describe('<RoomType />', () => {
     });
   });
 
-  describe('the sixth `GridColumn`', () => {
-    const getSixthGridColumn = () =>
+  describe('the seventh `GridColumn`', () => {
+    const getSeventhGridColumn = () =>
       getWrappedRoomType()
         .find(GridColumn)
-        .at(7);
+        .at(8);
 
     it('should have the right props', () => {
-      const wrapper = getSixthGridColumn();
+      const wrapper = getSeventhGridColumn();
 
       expectComponentToHaveProps(wrapper, { textAlign: 'right' });
     });
 
     it('should render the right children', () => {
-      const wrapper = getSixthGridColumn();
+      const wrapper = getSeventhGridColumn();
 
       expectComponentToHaveChildren(wrapper, Card.Description, ShowOnMobile);
     });
