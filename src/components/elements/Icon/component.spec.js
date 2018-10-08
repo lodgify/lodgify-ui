@@ -41,6 +41,18 @@ describe('<Icon />', () => {
       });
     });
 
+    it('should get the right props if `labelText` is passed', () => {
+      const wrapper = getIcon({
+        labelText: 'hello world',
+      });
+      const { color, size } = props;
+
+      expectComponentToHaveProps(wrapper, {
+        className: `icon ${color} ${size} circular has-border inverted grey has-label inverted`,
+        some: 'otherProps',
+      });
+    });
+
     it('should have the right children', () => {
       const wrapper = getIcon();
 
