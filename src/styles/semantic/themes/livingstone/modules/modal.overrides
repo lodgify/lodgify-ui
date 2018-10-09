@@ -20,6 +20,43 @@
   padding: @closePadding;
 }
 
+/* With Horizontal gutters */
+.ui.fullscreen.modal.with-horizontal-gutters {
+
+  .ui.container > .ui.header {
+    width: ~"calc(100% - 30px)";
+  }
+
+  &:not(.with-heading) {
+    @media (max-width: 599px) {
+
+      .grid-column-0 .ui.header {
+        width: ~"calc(100% - 30px)";
+      }
+    }
+
+    @media (min-width: 600px) {
+
+      .grid-column-1 .ui.header {
+        width: ~"calc(100% - 30px)";
+      }
+    }
+  }
+
+  > i.icon {
+    top: 25px;
+
+    @media (min-width: 1121px) {
+      left: ~"calc(50% + 480px)";
+      right: auto;
+    }
+
+    @media (max-width: 1120px) {
+      right: 25px;
+    }
+  }
+}
+
 /* Header */
 
 /* Content */

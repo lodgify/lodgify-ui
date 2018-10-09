@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import getClassNames from 'classnames';
 
 import { Modal } from 'elements/Modal';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
@@ -16,7 +17,13 @@ import { ResponsiveImage } from 'media/ResponsiveImage';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ heading, images, trigger }) => (
-  <Modal isFullscreen trigger={trigger}>
+  <Modal
+    className={getClassNames('with-horizontal-gutters', {
+      'with-heading': !!heading,
+    })}
+    isFullscreen
+    trigger={trigger}
+  >
     <HorizontalGutters>
       <Divider />
       {heading && (
@@ -28,7 +35,10 @@ export const Component = ({ heading, images, trigger }) => (
       <Grid columns={2} stackable>
         <GridRow>
           {images.map(({ label, ...otherImageProps }, index) => (
-            <GridColumn key={buildKeyFromStrings(label, index)}>
+            <GridColumn
+              className={`grid-column-${index}`}
+              key={buildKeyFromStrings(label, index)}
+            >
               <Heading size="small">{label}</Heading>
               <ResponsiveImage {...otherImageProps} />
               <Divider />
