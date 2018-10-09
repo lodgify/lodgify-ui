@@ -85,15 +85,23 @@ describe('getDesktopMenuMarkup', () => {
         });
       });
 
-      describe('the Lodgify UI `Button`', () => {
-        it('should render a Lodgify UI `Button` component', () => {
-          const wrapper = getMenuItem();
+      it('should render a Lodgify UI `Button` component', () => {
+        const wrapper = getMenuItem();
 
-          expectComponentToHaveChildren(wrapper, Button);
+        expectComponentToHaveChildren(wrapper, Button);
+      });
+
+      describe('the Lodgify UI `Button`', () => {
+        const getButton = () => getMenuItem().find(Button);
+
+        it('should have the right props', () => {
+          const wrapper = getButton();
+
+          expectComponentToHaveProps(wrapper, { isRounded: true });
         });
 
         it('should have the right children', () => {
-          const wrapper = getMenuItem().find(Button);
+          const wrapper = getButton();
 
           expectComponentToHaveChildren(wrapper, primaryCTA.text);
         });
