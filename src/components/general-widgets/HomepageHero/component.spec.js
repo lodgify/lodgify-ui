@@ -21,7 +21,7 @@ const props = {
   headerLogoSrc: 'src',
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
-  headerPrimaryCTA: { href: '/book', text: 'Book now' },
+  headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
   headingText: 'heading text',
   searchBarGetIsDayBlocked: Function.prototype,
   searchBarGuestsOptions: [{ text: '1', value: '1' }],
