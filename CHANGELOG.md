@@ -1,3 +1,13 @@
+## [1.62.1](https://github.com/lodgify/lodgify-ui/compare/v1.62.0...v1.62.1) (2018-10-09)
+
+
+### Bug Fixes
+
+* **Header:** expose primaryCTA.onClick and unit test ([6df151e](https://github.com/lodgify/lodgify-ui/commit/6df151e))
+* **Hero:** update component to use new primaryCTA onClick ([9bfee94](https://github.com/lodgify/lodgify-ui/commit/9bfee94))
+* **HomepageHero:** update component to use new primaryCTA onClick ([0258796](https://github.com/lodgify/lodgify-ui/commit/0258796))
+* **PropertyPageHero:** update component to use new primaryCTA onClick ([4c1e433](https://github.com/lodgify/lodgify-ui/commit/4c1e433))
+
 # [1.62.0](https://github.com/lodgify/lodgify-ui/compare/v1.61.4...v1.62.0) (2018-10-09)
 
 
