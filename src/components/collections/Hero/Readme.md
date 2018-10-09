@@ -7,7 +7,7 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
   headerLogoSrc={logoSrc}
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={navigationItems}
-  headerPrimaryCTA={{ href: '/book', text: 'Book now'}}
+  headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
   heading="Super Interesting Heading"
 />
 ```
@@ -25,7 +25,7 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
   headerLogoSrc={logoSrc}
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={navigationItems}
-  headerPrimaryCTA={{ href: '/book', text: 'Book now'}}
+  headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
   heading="Super Interesting Heading"
 />
 ```
@@ -42,7 +42,7 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
   headerLogoSrc={logoSrc}
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={navigationItems}
-  headerPrimaryCTA={{ href: '/book', text: 'Book now'}}
+  headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
 >
   <FlexContainer
     alignItems="center"
@@ -64,7 +64,7 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
   headerLogoSrc={logoSrc}
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={navigationItems}
-  headerPrimaryCTA={{ href: '/book', text: 'Book now'}}
+  headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
   headerSearchBarGuestsOptions={[{ text: '1', value: '1' }]}
   headerSearchBarLocationOptions={[{ text: 'New York', value: '2' }]}
   headerSearchBarModalHeadingText="Custom heading"
