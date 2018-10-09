@@ -83,9 +83,9 @@ Component.propTypes = {
   /** An optional primary call to action to display as a [`<Button />`](#button). */
   // eslint-disable-next-line react/no-unused-prop-types
   primaryCTA: PropTypes.shape({
-    /** The href url for the call to action. */
-    href: PropTypes.string.isRequired,
-    /** The  visible text for the call to action. */
+    /** The on click handler for the call to action. */
+    onClick: PropTypes.func.isRequired,
+    /** The visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),
   /**
