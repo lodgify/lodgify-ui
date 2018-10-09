@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
-import { Button } from 'elements/Button';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -25,7 +24,6 @@ import { getModalContentMarkup } from './utils/getModalContentMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
   amenities,
-  onClickCheckAvailability,
   description,
   extraFeatures,
   features,
@@ -71,7 +69,6 @@ const Component = ({
               >
                 {getModalContentMarkup(
                   amenities,
-                  onClickCheckAvailability,
                   description,
                   extraFeatures,
                   features,
@@ -92,7 +89,6 @@ const Component = ({
                 <Modal size="small" trigger={<Link>More Info</Link>}>
                   {getModalContentMarkup(
                     amenities,
-                    onClickCheckAvailability,
                     description,
                     extraFeatures,
                     features,
@@ -113,13 +109,6 @@ const Component = ({
                 <ShowOnMobile>
                   <Divider />
                 </ShowOnMobile>
-                <Button
-                  isPositionedRight={isUserOnMobile === false}
-                  isRounded
-                  onClick={onClickCheckAvailability}
-                >
-                  Check Availability
-                </Button>
               </GridColumn>
             </GridRow>
           </Grid>
@@ -185,8 +174,6 @@ Component.propTypes = {
   name: PropTypes.string.isRequired,
   /** The price per night of the room, with currency symbol. */
   nightPrice: PropTypes.string.isRequired,
-  /** A function called when check availability button is clicked. */
-  onClickCheckAvailability: PropTypes.func.isRequired,
   /** The numeral rating for the property room given in the review, out of 5. */
   ratingNumber: PropTypes.number.isRequired,
   /** The images to display for the slideshow */
