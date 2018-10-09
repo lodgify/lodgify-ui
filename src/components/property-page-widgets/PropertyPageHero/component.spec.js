@@ -26,7 +26,7 @@ const props = {
   headerLogoSrc: 'src',
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
-  headerPrimaryCTA: { href: '/book', text: 'Book now' },
+  headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
   images: [{ imageUrl, label: 'Entrance' }, { imageUrl, label: 'Kitchen' }],
   searchBarGuestsOptions: [{ text: '1', value: '1' }],
   searchBarLocationOptions: [{ text: '1', value: '1' }],
