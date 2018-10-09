@@ -20,6 +20,7 @@ import { Slideshow } from 'media/Slideshow';
  * @param  {string}      nightPrice
  * @param  {number}      ratingNumber
  * @param  {Object[]}    slideShowImages
+ * @param  {boolean}     isUserOnMobile
  * @return {Object}
  */
 export const getModalContentMarkup = (
@@ -30,7 +31,8 @@ export const getModalContentMarkup = (
   name,
   nightPrice,
   ratingNumber,
-  slideShowImages
+  slideShowImages,
+  isUserOnMobile
 ) => (
   <Modal.Content>
     <Heading>{name}</Heading>
@@ -46,7 +48,11 @@ export const getModalContentMarkup = (
       ))}
     </List>
     <Divider hasLine />
-    <Amenities amenities={amenities} headingText="Room Amenities" />
+    <Amenities
+      amenities={amenities}
+      headingText="Room Amenities"
+      isStacked={isUserOnMobile}
+    />
     <Grid>
       <GridColumn verticalAlignContent="bottom" width={12}>
         <Paragraph>

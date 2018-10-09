@@ -1,3 +1,16 @@
+# [1.62.0](https://github.com/lodgify/lodgify-ui/compare/v1.61.4...v1.62.0) (2018-10-09)
+
+
+### Bug Fixes
+
+* **Icon:** if label exists, then support the content expanding ([56198d6](https://github.com/lodgify/lodgify-ui/commit/56198d6))
+* **RoomType:** on mobile the amenities should be stacked ([b5c374e](https://github.com/lodgify/lodgify-ui/commit/b5c374e))
+
+
+### Features
+
+* **GridColumn:** add optional class to only have horizontal padding ([c9552ed](https://github.com/lodgify/lodgify-ui/commit/c9552ed))
+
 ## [1.61.4](https://github.com/lodgify/lodgify-ui/compare/v1.61.3...v1.61.4) (2018-10-09)
 
 
