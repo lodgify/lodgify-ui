@@ -1,3 +1,10 @@
+## [1.63.1](https://github.com/lodgify/lodgify-ui/compare/v1.63.0...v1.63.1) (2018-10-09)
+
+
+### Bug Fixes
+
+* **Icon:** fix pathDescription of furtherInfo ([63b76cf](https://github.com/lodgify/lodgify-ui/commit/63b76cf))
+
 # [1.63.0](https://github.com/lodgify/lodgify-ui/compare/v1.62.1...v1.63.0) (2018-10-09)
 
 
