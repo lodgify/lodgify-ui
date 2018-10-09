@@ -1,3 +1,10 @@
+## [1.61.4](https://github.com/lodgify/lodgify-ui/compare/v1.61.3...v1.61.4) (2018-10-09)
+
+
+### Bug Fixes
+
+* **Header:** add isRounded prop to cta button ([a6705b7](https://github.com/lodgify/lodgify-ui/commit/a6705b7))
+
 ## [1.61.3](https://github.com/lodgify/lodgify-ui/compare/v1.61.2...v1.61.3) (2018-10-05)
 
 
