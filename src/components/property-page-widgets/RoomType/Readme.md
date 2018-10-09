@@ -75,7 +75,6 @@ const roomTypeFeatures = [
   nightPrice="$280"
   name="The Cat House"
   ratingNumber={3.4}
-  onClickCheckAvailability={console.log}
   ratingNumber={4.8}
   features={roomTypeFeatures}
   extraFeatures={extraRoomTypeFeatures}
