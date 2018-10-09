@@ -49,7 +49,7 @@ export const getDesktopMenuMarkup = ({
     )}
     {primaryCTA && (
       <Menu.Item className="no-underline" href={primaryCTA.href} link>
-        <Button>{primaryCTA.text}</Button>
+        <Button isRounded>{primaryCTA.text}</Button>
       </Menu.Item>
     )}
   </Fragment>
