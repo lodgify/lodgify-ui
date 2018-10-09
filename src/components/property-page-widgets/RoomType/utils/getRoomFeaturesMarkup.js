@@ -1,6 +1,7 @@
 import React from 'react';
 import { List } from 'semantic-ui-react';
 
+import { GridColumn } from 'layout/GridColumn';
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
@@ -10,7 +11,12 @@ import { Paragraph } from 'typography/Paragraph';
  * @return {Object}
  */
 export const getRoomFeaturesMarkup = (showIcons, features) => (
-  <List floated="left" horizontal>
+  <GridColumn
+    as={List}
+    className="only-horizontal-padding"
+    floated="left"
+    horizontal
+  >
     {features.map((infoItem, index) => (
       <List.Item key={index}>
         {showIcons ? (
@@ -24,5 +30,5 @@ export const getRoomFeaturesMarkup = (showIcons, features) => (
         )}
       </List.Item>
     ))}
-  </List>
+  </GridColumn>
 );
