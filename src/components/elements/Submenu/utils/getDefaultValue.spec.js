@@ -37,4 +37,14 @@ describe('getDefaultValue', () => {
       expect(actual).toBe(value);
     });
   });
+
+  describe('if `children` is falsy and `items[0].value` is truthy and `isSelectedDisabled` is true', () => {
+    it('should return `items[0].value`', () => {
+      const value = '🐸';
+      const isSelectedDisabled = true;
+      const actual = getDefaultValue('', [{ value }], isSelectedDisabled);
+
+      expect(actual).toBe(null);
+    });
+  });
 });
