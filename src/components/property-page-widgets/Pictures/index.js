@@ -1,1 +1,1 @@
-export { Component as Pictures } from './component';
+export { ComponentWithResponsive as Pictures } from './component';
