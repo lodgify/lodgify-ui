@@ -1,90 +1,58 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Label } from 'semantic-ui-react';
-import {
-  expectComponentToBe,
-  expectComponentToHaveProps,
-  expectComponentToHaveChildren,
-  expectComponentToHaveDisplayName,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Icon } from 'elements/Icon';
-import { Paragraph } from 'typography/Paragraph';
+import { mount } from 'enzyme';
 
 import { Component as IconCard } from './component';
 
 const name = 'phone';
 
-const getIconCard = props => shallow(<IconCard name={name} {...props} />);
-const getLabel = () => getIconCard().find(Label);
+const getIconCard = props => mount(<IconCard name={name} {...props} />);
 
 describe('<IconCard />', () => {
-  it('should render a single Semantic UI `Label` component', () => {
-    const wrapper = getIconCard();
+  describe('by default', () => {
+    it('should render the right structure', () => {
+      const actual = getIconCard();
 
-    expectComponentToBe(wrapper, Label);
-  });
-
-  describe('the `Label` component', () => {
-    it('should get the right props', () => {
-      const wrapper = getLabel();
-
-      expectComponentToHaveProps(wrapper, {
-        basic: true,
-        className: 'icon-card',
-      });
-    });
-
-    it('should render a single Lodgify UI `Icon` component', () => {
-      const wrapper = getLabel();
-
-      expectComponentToHaveChildren(wrapper, Icon);
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('the `Icon` component', () => {
-    it('should get the right props', () => {
-      const wrapper = getIconCard().find(Icon);
+  describe('if `props.isDisabled` is `true`', () => {
+    it('should render the right structure', () => {
+      const actual = getIconCard({ isDisabled: true });
 
-      expectComponentToHaveProps(wrapper, {
-        isDisabled: false,
-        name,
-        size: 'big',
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('if a single line string label prop is passed', () => {
-    it('should render a single Lodgify UI `Paragraph` component', () => {
-      const label = '🐘';
-      const wrapper = getIconCard({ label });
+  describe('if `props.isFilled` is `true`', () => {
+    it('should render the right structure', () => {
+      const actual = getIconCard({ isFilled: true });
 
-      expectComponentToHaveChildren(wrapper, Icon, Paragraph);
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('if a multiline string label prop is passed', () => {
-    it('should render more than one Lodgify UI `Paragraph` component', () => {
-      const label = `
-        🐘
-        🐘
-      `;
-      const wrapper = getIconCard({ label });
+  describe('if `props.isLeftAligned` is `true`', () => {
+    it('should render the right structure', () => {
+      const actual = getIconCard({ isLeftAligned: true });
 
-      expectComponentToHaveChildren(wrapper, Icon, Paragraph, Paragraph);
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('each Lodgify UI `Paragraph` component', () => {
-    it('should have the right children', () => {
-      const label = '🐘';
-      const wrapper = getIconCard({ label }).find(Paragraph);
+  describe('if `props.label` is defined', () => {
+    it('should render the right structure', () => {
+      const actual = getIconCard({ label: '🔺' });
 
-      expectComponentToHaveChildren(wrapper, label);
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  it('should have displayName `IconCard`', () => {
-    expectComponentToHaveDisplayName(IconCard, 'IconCard');
+  describe('if `props.size` is `large`', () => {
+    it('should render the right structure', () => {
+      const actual = getIconCard({ label: 'large' });
+
+      expect(actual).toMatchSnapshot();
+    });
   });
 });

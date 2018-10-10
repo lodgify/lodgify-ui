@@ -15,51 +15,56 @@
 #### Labeled
 
 ```jsx
-<div>
-  <IconCard label="Fireplace" name="fire" />
-  <Divider />
-  <IconCard
-    label={`
-      Wow
-      Multiline
-    `}
-    name="fire"
-  />
-  <Divider />
-  <IconCard isDisabled label="Fireplace" name="fire" />
-</div>
+<IconCard label="Fireplace" name="fire" />
+<IconCard
+  label={`
+    Wow
+    Multiline
+  `}
+  name="fire"
+/>
+<IconCard isDisabled label="Fireplace" name="fire" />
 ```
 
 #### Filled
 
 ```jsx
-<div>
-  <IconCard isFilled label="Fireplace" name="fire" />
-  <Divider />
-  <IconCard
-    isDisabled
-    isFilled
-    label="Fireplace"
-    name="fire"
-  />
-</div>
+<IconCard isFilled label="Fireplace" name="fire" />
+<IconCard
+  isDisabled
+  isFilled
+  label="Fireplace"
+  name="fire"
+/>
 ```
 
 #### Left aligned
 
 ```jsx
-<div>
-  <IconCard
-    isLeftAligned
-    label="Fireplace"
-    name="fire"
-  />
-  <Divider />
-  <IconCard
-    isDisabled
-    isLeftAligned
-    label="Fireplace"
-    name="fire"
-  />
-</div>
+<IconCard
+  isLeftAligned
+  label="Fireplace"
+  name="fire"
+/>
+<IconCard
+  isDisabled
+  isLeftAligned
+  label="Fireplace"
+  name="fire"
+/>
+```
+
+#### Size
+
+```jsx
+<IconCard
+  label="Fireplace"
+  name="fire"
+  size="medium"
+/>
+<IconCard
+  label="Fireplace"
+  name="fire"
+  size="large"
+/>
 ```

@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import { SLEEPING_ARRANGEMENTS } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Heading } from 'typography/Heading';
-import { Grid } from 'layout/Grid';
-import { GridColumn } from 'layout/GridColumn';
 import { IconCard } from 'elements/IconCard';
 
 /**
@@ -15,18 +13,15 @@ import { IconCard } from 'elements/IconCard';
 export const Component = ({ headingText, sleepingArrangements }) => (
   <Fragment>
     <Heading>{headingText}</Heading>
-    <Grid>
-      {sleepingArrangements.map(({ iconName, label }, index) => (
-        <GridColumn
-          computer={2}
-          key={buildKeyFromStrings(label, index)}
-          mobile={4}
-          tablet={4}
-        >
-          <IconCard isLeftAligned label={label} name={iconName} />
-        </GridColumn>
-      ))}
-    </Grid>
+    {sleepingArrangements.map(({ iconName, label }, index) => (
+      <IconCard
+        isLeftAligned
+        key={buildKeyFromStrings(label, index)}
+        label={label}
+        name={iconName}
+        size="large"
+      />
+    ))}
   </Fragment>
 );
 
