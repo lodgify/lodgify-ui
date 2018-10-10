@@ -1,3 +1,10 @@
+## [1.64.1](https://github.com/lodgify/lodgify-ui/compare/v1.64.0...v1.64.1) (2018-10-10)
+
+
+### Bug Fixes
+
+* **Submenu:** defaultValue and value must not be set at the same time ([a02990d](https://github.com/lodgify/lodgify-ui/commit/a02990d))
+
 # [1.64.0](https://github.com/lodgify/lodgify-ui/compare/v1.63.1...v1.64.0) (2018-10-10)
 
 
