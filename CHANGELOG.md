@@ -1,3 +1,10 @@
+# [1.64.0](https://github.com/lodgify/lodgify-ui/compare/v1.63.1...v1.64.0) (2018-10-10)
+
+
+### Features
+
+* **RoomTypes:** add component to display a collection of RoomType ([0f33f9d](https://github.com/lodgify/lodgify-ui/commit/0f33f9d))
+
 ## [1.63.1](https://github.com/lodgify/lodgify-ui/compare/v1.63.0...v1.63.1) (2018-10-09)
 
 
