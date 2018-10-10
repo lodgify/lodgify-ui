@@ -18,10 +18,14 @@ export const Component = ({
   isLeftAligned,
   label,
   name,
+  size,
 }) => (
   <Label
     basic={!isFilled}
-    className={cx('icon-card', { 'left aligned': isLeftAligned })}
+    className={cx('icon-card', {
+      'is-large': size === 'large',
+      'left aligned': isLeftAligned,
+    })}
   >
     <Icon isDisabled={isDisabled} name={name} size="big" />
     {label &&
@@ -40,6 +44,7 @@ Component.defaultProps = {
   isFilled: false,
   isLeftAligned: false,
   label: null,
+  size: 'medium',
 };
 
 Component.propTypes = {
@@ -56,4 +61,6 @@ Component.propTypes = {
    * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
    */
   name: PropTypes.string.isRequired,
+  /** The size of the icon card. */
+  size: PropTypes.oneOf(['medium', 'large']),
 };

@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SleepingArrangements /> by default should render the right structure 1`] = `
+<SleepingArrangements
+  headingText="Sleeping arrangements"
+  sleepingArrangements={
+    Array [
+      Object {
+        "iconName": "single bed",
+        "label": "1 king bed",
+      },
+      Object {
+        "iconName": "single bed",
+        "label": "2 single beds",
+      },
+      Object {
+        "iconName": "paw",
+        "label": "1 kennel",
+      },
+    ]
+  }
+>
+  <Heading
+    isColorInverted={false}
+    size="medium"
+    textAlign={null}
+  >
+    <Header
+      as="h3"
+      inverted={false}
+      textAlign={null}
+    >
+      <h3
+        className="ui header"
+      >
+        Sleeping arrangements
+      </h3>
+    </Header>
+  </Heading>
+  <IconCard
+    isDisabled={false}
+    isFilled={false}
+    isLeftAligned={true}
+    key="1 king bed0"
+    label="1 king bed"
+    name="single bed"
+    size="large"
+  >
+    <Label
+      basic={true}
+      className="icon-card is-large left aligned"
+    >
+      <div
+        className="ui basic label icon-card is-large left aligned"
+        onClick={[Function]}
+      >
+        <Icon
+          color={null}
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="single bed"
+          path={null}
+          size="big"
+        >
+          <i
+            className="icon big"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </Icon>
+        <Paragraph
+          key="1 king bed0"
+          size="medium"
+          weight={null}
+        >
+          <p
+            className=""
+          >
+            1 king bed
+          </p>
+        </Paragraph>
+      </div>
+    </Label>
+  </IconCard>
+  <IconCard
+    isDisabled={false}
+    isFilled={false}
+    isLeftAligned={true}
+    key="2 single beds1"
+    label="2 single beds"
+    name="single bed"
+    size="large"
+  >
+    <Label
+      basic={true}
+      className="icon-card is-large left aligned"
+    >
+      <div
+        className="ui basic label icon-card is-large left aligned"
+        onClick={[Function]}
+      >
+        <Icon
+          color={null}
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="single bed"
+          path={null}
+          size="big"
+        >
+          <i
+            className="icon big"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </Icon>
+        <Paragraph
+          key="2 single beds0"
+          size="medium"
+          weight={null}
+        >
+          <p
+            className=""
+          >
+            2 single beds
+          </p>
+        </Paragraph>
+      </div>
+    </Label>
+  </IconCard>
+  <IconCard
+    isDisabled={false}
+    isFilled={false}
+    isLeftAligned={true}
+    key="1 kennel2"
+    label="1 kennel"
+    name="paw"
+    size="large"
+  >
+    <Label
+      basic={true}
+      className="icon-card is-large left aligned"
+    >
+      <div
+        className="ui basic label icon-card is-large left aligned"
+        onClick={[Function]}
+      >
+        <Icon
+          color={null}
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="paw"
+          path={null}
+          size="big"
+        >
+          <i
+            className="icon big"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.38,9.25c1.52,0,2.71-1.81,2.71-4.13S16.9,1,15.38,1s-2.7,1.81-2.7,4.12S13.86,9.25,15.38,9.25Zm0-6.87c.64,0,1.36,1.17,1.36,2.74S16,7.88,15.38,7.88,14,6.7,14,5.12,14.74,2.38,15.38,2.38Zm5.41,4.09c-1.51,0-2.7,1.82-2.7,4.14s1.19,4.14,2.7,4.14,2.71-1.82,2.71-4.14S22.31,6.47,20.79,6.47Zm0,6.91c-.63,0-1.35-1.19-1.35-2.77s.72-2.77,1.35-2.77S22.15,9,22.15,10.61,21.43,13.38,20.79,13.38ZM16.73,23ZM5.91,10.61c0-2.32-1.19-4.14-2.7-4.14S.5,8.29.5,10.61s1.19,4.14,2.71,4.14S5.91,12.93,5.91,10.61Zm-2.7,2.77c-.64,0-1.36-1.19-1.36-2.77s.72-2.77,1.36-2.77S4.56,9,4.56,10.61,3.84,13.38,3.21,13.38Zm5.4-4.13c1.52,0,2.71-1.81,2.71-4.13S10.13,1,8.61,1s-2.7,1.81-2.7,4.12S7.1,9.25,8.61,9.25Zm0-6.87C9.25,2.38,10,3.55,10,5.12S9.25,7.88,8.61,7.88,7.26,6.7,7.26,5.12,8,2.38,8.61,2.38ZM12,10.62c-2.79,0-5.23,2.17-6.72,5.94-.82,2.09-.81,4,0,5.3A2.37,2.37,0,0,0,7.26,23a5.49,5.49,0,0,0,2.68-.76A4.19,4.19,0,0,1,12,21.62a4.2,4.2,0,0,1,2.07.62,5.41,5.41,0,0,0,2.66.76,2.38,2.38,0,0,0,1.95-1.14c.85-1.28.86-3.21,0-5.3C17.23,12.79,14.78,10.62,12,10.62Zm5.56,10.47a1,1,0,0,1-.82.53A4.19,4.19,0,0,1,14.67,21,5.42,5.42,0,0,0,12,20.25h0A5.45,5.45,0,0,0,9.33,21a4.19,4.19,0,0,1-2.07.61,1,1,0,0,1-.82-.53c-.58-.88-.55-2.38.1-4C7.81,13.85,9.8,12,12,12s4.19,1.85,5.46,5.07C18.11,18.71,18.14,20.21,17.56,21.09Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </Icon>
+        <Paragraph
+          key="1 kennel0"
+          size="medium"
+          weight={null}
+        >
+          <p
+            className=""
+          >
+            1 kennel
+          </p>
+        </Paragraph>
+      </div>
+    </Label>
+  </IconCard>
+</SleepingArrangements>
+`;
+
+exports[`<SleepingArrangements /> if \`props.headingText\` is defined should render the right structure 1`] = `
+<SleepingArrangements
+  headingText="👥"
+  sleepingArrangements={
+    Array [
+      Object {
+        "iconName": "single bed",
+        "label": "1 king bed",
+      },
+      Object {
+        "iconName": "single bed",
+        "label": "2 single beds",
+      },
+      Object {
+        "iconName": "paw",
+        "label": "1 kennel",
+      },
+    ]
+  }
+>
+  <Heading
+    isColorInverted={false}
+    size="medium"
+    textAlign={null}
+  >
+    <Header
+      as="h3"
+      inverted={false}
+      textAlign={null}
+    >
+      <h3
+        className="ui header"
+      >
+        👥
+      </h3>
+    </Header>
+  </Heading>
+  <IconCard
+    isDisabled={false}
+    isFilled={false}
+    isLeftAligned={true}
+    key="1 king bed0"
+    label="1 king bed"
+    name="single bed"
+    size="large"
+  >
+    <Label
+      basic={true}
+      className="icon-card is-large left aligned"
+    >
+      <div
+        className="ui basic label icon-card is-large left aligned"
+        onClick={[Function]}
+      >
+        <Icon
+          color={null}
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="single bed"
+          path={null}
+          size="big"
+        >
+          <i
+            className="icon big"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </Icon>
+        <Paragraph
+          key="1 king bed0"
+          size="medium"
+          weight={null}
+        >
+          <p
+            className=""
+          >
+            1 king bed
+          </p>
+        </Paragraph>
+      </div>
+    </Label>
+  </IconCard>
+  <IconCard
+    isDisabled={false}
+    isFilled={false}
+    isLeftAligned={true}
+    key="2 single beds1"
+    label="2 single beds"
+    name="single bed"
+    size="large"
+  >
+    <Label
+      basic={true}
+      className="icon-card is-large left aligned"
+    >
+      <div
+        className="ui basic label icon-card is-large left aligned"
+        onClick={[Function]}
+      >
+        <Icon
+          color={null}
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="single bed"
+          path={null}
+          size="big"
+        >
+          <i
+            className="icon big"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </Icon>
+        <Paragraph
+          key="2 single beds0"
+          size="medium"
+          weight={null}
+        >
+          <p
+            className=""
+          >
+            2 single beds
+          </p>
+        </Paragraph>
+      </div>
+    </Label>
+  </IconCard>
+  <IconCard
+    isDisabled={false}
+    isFilled={false}
+    isLeftAligned={true}
+    key="1 kennel2"
+    label="1 kennel"
+    name="paw"
+    size="large"
+  >
+    <Label
+      basic={true}
+      className="icon-card is-large left aligned"
+    >
+      <div
+        className="ui basic label icon-card is-large left aligned"
+        onClick={[Function]}
+      >
+        <Icon
+          color={null}
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="paw"
+          path={null}
+          size="big"
+        >
+          <i
+            className="icon big"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.38,9.25c1.52,0,2.71-1.81,2.71-4.13S16.9,1,15.38,1s-2.7,1.81-2.7,4.12S13.86,9.25,15.38,9.25Zm0-6.87c.64,0,1.36,1.17,1.36,2.74S16,7.88,15.38,7.88,14,6.7,14,5.12,14.74,2.38,15.38,2.38Zm5.41,4.09c-1.51,0-2.7,1.82-2.7,4.14s1.19,4.14,2.7,4.14,2.71-1.82,2.71-4.14S22.31,6.47,20.79,6.47Zm0,6.91c-.63,0-1.35-1.19-1.35-2.77s.72-2.77,1.35-2.77S22.15,9,22.15,10.61,21.43,13.38,20.79,13.38ZM16.73,23ZM5.91,10.61c0-2.32-1.19-4.14-2.7-4.14S.5,8.29.5,10.61s1.19,4.14,2.71,4.14S5.91,12.93,5.91,10.61Zm-2.7,2.77c-.64,0-1.36-1.19-1.36-2.77s.72-2.77,1.36-2.77S4.56,9,4.56,10.61,3.84,13.38,3.21,13.38Zm5.4-4.13c1.52,0,2.71-1.81,2.71-4.13S10.13,1,8.61,1s-2.7,1.81-2.7,4.12S7.1,9.25,8.61,9.25Zm0-6.87C9.25,2.38,10,3.55,10,5.12S9.25,7.88,8.61,7.88,7.26,6.7,7.26,5.12,8,2.38,8.61,2.38ZM12,10.62c-2.79,0-5.23,2.17-6.72,5.94-.82,2.09-.81,4,0,5.3A2.37,2.37,0,0,0,7.26,23a5.49,5.49,0,0,0,2.68-.76A4.19,4.19,0,0,1,12,21.62a4.2,4.2,0,0,1,2.07.62,5.41,5.41,0,0,0,2.66.76,2.38,2.38,0,0,0,1.95-1.14c.85-1.28.86-3.21,0-5.3C17.23,12.79,14.78,10.62,12,10.62Zm5.56,10.47a1,1,0,0,1-.82.53A4.19,4.19,0,0,1,14.67,21,5.42,5.42,0,0,0,12,20.25h0A5.45,5.45,0,0,0,9.33,21a4.19,4.19,0,0,1-2.07.61,1,1,0,0,1-.82-.53c-.58-.88-.55-2.38.1-4C7.81,13.85,9.8,12,12,12s4.19,1.85,5.46,5.07C18.11,18.71,18.14,20.21,17.56,21.09Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </Icon>
+        <Paragraph
+          key="1 kennel0"
+          size="medium"
+          weight={null}
+        >
+          <p
+            className=""
+          >
+            1 kennel
+          </p>
+        </Paragraph>
+      </div>
+    </Label>
+  </IconCard>
+</SleepingArrangements>
+`;

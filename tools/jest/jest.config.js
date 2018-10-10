@@ -24,6 +24,7 @@ module.exports = {
   rootDir: '../../',
   roots: ['<rootDir>/src/components', '<rootDir>/src/utils'],
   setupTestFrameworkScriptFile: '<rootDir>/tools/jest/jest.framework-setup.js',
+  snapshotSerializers: ['enzyme-to-json/serializer'],
   testURL: 'http://some.url/',
   transform: {
     '^.+\\.jsx?$': 'babel-jest',

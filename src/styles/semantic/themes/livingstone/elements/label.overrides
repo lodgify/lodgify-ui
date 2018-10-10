@@ -23,7 +23,13 @@
     flex-direction: column;
     height: @iconCardHeight;
     justify-content: center;
+    margin: 0 @iconCardMarginRight @iconCardMarginBottom 0;
+    vertical-align: top;
     width: @iconCardWidth;
+
+    &.is-large {
+      width: @iconCardLargeWidth;
+    }
 
     & > i.icon {
       margin: 0;
