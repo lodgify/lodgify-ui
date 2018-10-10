@@ -38,7 +38,7 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** An array of [`FeaturedProperty`](/#!/FeaturedProperty) props objects. */
+  /** An array of [`FeaturedProperty`](#/FeaturedProperty) props objects. */
   featuredProperties: PropTypes.arrayOf(PropTypes.object).isRequired,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,

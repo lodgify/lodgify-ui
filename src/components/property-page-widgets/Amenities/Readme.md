@@ -114,7 +114,7 @@ const amenities = [
   },
    {
     name: 'Further Info',
-    iconName: 'furtherinfo',
+    iconName: 'further info',
     items: [
       'Accessible 24/7',
     ],

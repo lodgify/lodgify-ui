@@ -1,3 +1,25 @@
+# [1.64.0](https://github.com/lodgify/lodgify-ui/compare/v1.63.1...v1.64.0) (2018-10-10)
+
+
+### Features
+
+* **RoomTypes:** add component to display a collection of RoomType ([0f33f9d](https://github.com/lodgify/lodgify-ui/commit/0f33f9d))
+
+## [1.63.1](https://github.com/lodgify/lodgify-ui/compare/v1.63.0...v1.63.1) (2018-10-09)
+
+
+### Bug Fixes
+
+* **Icon:** fix pathDescription of furtherInfo ([63b76cf](https://github.com/lodgify/lodgify-ui/commit/63b76cf))
+
+# [1.63.0](https://github.com/lodgify/lodgify-ui/compare/v1.62.1...v1.63.0) (2018-10-09)
+
+
+### Features
+
+* **Amenities:** implement FurtherInfo reference ([46702a3](https://github.com/lodgify/lodgify-ui/commit/46702a3))
+* **Icon:** implement path and constant for FurtherInfo ([6caeb3f](https://github.com/lodgify/lodgify-ui/commit/6caeb3f))
+
 ## [1.62.1](https://github.com/lodgify/lodgify-ui/compare/v1.62.0...v1.62.1) (2018-10-09)
 
 
