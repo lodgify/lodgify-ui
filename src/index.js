@@ -87,6 +87,7 @@ export {
 } from './components/property-page-widgets/PropertyPageHero';
 export { Pictures } from './components/property-page-widgets/Pictures';
 export { RoomType } from './components/property-page-widgets/RoomType';
+export { RoomTypes } from './components/property-page-widgets/RoomTypes';
 export { Rates } from './components/property-page-widgets/Rates';
 export { Reviews } from './components/property-page-widgets/Reviews';
 export { Rules } from './components/property-page-widgets/Rules';
