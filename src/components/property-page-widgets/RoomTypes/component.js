@@ -19,6 +19,6 @@ export const Component = ({ roomTypes }) => (
 Component.displayName = 'RoomTypes';
 
 Component.propTypes = {
-  /** An array of [`RoomType`](#/Property%20page%20widgets/RoomType) props objects */
+  /** An array of [`RoomType`](#/RoomType) props objects */
   roomTypes: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
