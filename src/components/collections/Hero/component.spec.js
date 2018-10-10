@@ -19,7 +19,7 @@ const props = {
   headerLogoSrc: 'https://darkgreen.com',
   headerLogoText: 'Livingstone Cottage',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
-  headerPrimaryCTA: { href: '/book', text: 'Book now' },
+  headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
   headerSearchBarGuestsOptions: [{ href: 'someHref', text: 'someText' }],
   headerSearchBarLocationOptions: [
     { href: 'anotherHref', text: 'anotherText' },

@@ -26,6 +26,7 @@ export const ICON_NAMES = {
   ENTERTAINMENT: 'entertainment',
   FACEBOOK: 'facebook',
   FIRE: 'fire',
+  FURTHER_INFO: 'further info',
   GOOGLE_PLUS: 'google plus',
   GUESTS: 'guests',
   HEATING: 'heating',

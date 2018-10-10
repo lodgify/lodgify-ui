@@ -7,6 +7,7 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 import { List } from 'semantic-ui-react';
 
+import { GridColumn } from 'layout/GridColumn';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Paragraph } from 'typography/Paragraph';
 import { Icon } from 'elements/Icon';
@@ -23,7 +24,7 @@ const getMarkup = (isUserOnMobile = false) =>
   shallow(<div>{getRoomFeaturesMarkup(isUserOnMobile, features)}</div>);
 
 describe('`getRoomFeaturesMarkup`', () => {
-  const getList = () => getMarkup().find(List);
+  const getList = () => getMarkup().find(GridColumn);
 
   it('should return a single wrapping `div`', () => {
     const wrapper = getMarkup();
@@ -37,6 +38,8 @@ describe('`getRoomFeaturesMarkup`', () => {
     expectComponentToHaveProps(wrapper, {
       floated: 'left',
       horizontal: true,
+      as: List,
+      className: 'only-horizontal-padding',
     });
   });
 

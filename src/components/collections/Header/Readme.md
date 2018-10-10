@@ -7,7 +7,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
     logoSrc={logoSrc}
     logoText="Livingstone Cottage"
     navigationItems={navigationItems}
-    primaryCTA={{ href: '/book', text: 'Book now'}}
+    primaryCTA={{ onClick: console.log, text: 'Book now'}}
   />
 </div>
 ```
@@ -93,7 +93,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
     logoSrc={logoSrc}
     logoText="Livingstone Cottage"
     navigationItems={navigationItems}
-    primaryCTA={{ href: '/book', text: 'Book now'}}
+    primaryCTA={{ onClick: console.log, text: 'Book now'}}
   />
 </div>
 ```
@@ -150,6 +150,6 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
   logoSrc={logoSrc}
   logoText="Livingstone Cottage"
   navigationItems={navigationItems}
-  primaryCTA={{ href: '/book', text: 'Book now'}}
+  primaryCTA={{ onClick: console.log, text: 'Book now'}}
 />
 ```

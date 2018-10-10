@@ -110,8 +110,8 @@ Component.propTypes = {
   ).isRequired,
   /** An optional primary call to action to display as a [`<Button />`](#button) in the header. */
   headerPrimaryCTA: PropTypes.shape({
-    /** The href url for the call to action. */
-    href: PropTypes.string.isRequired,
+    /** The on click handler for the call to action. */
+    onClick: PropTypes.func.isRequired,
     /** The  visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),

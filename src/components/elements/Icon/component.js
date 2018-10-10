@@ -30,6 +30,7 @@ export const Component = ({
       circular: isCircular,
       'has-border': hasBorder,
       'inverted grey': isDisabled,
+      'has-label': !!labelText,
       inverted: isColorInverted,
     })}
     // Passing through props is required for

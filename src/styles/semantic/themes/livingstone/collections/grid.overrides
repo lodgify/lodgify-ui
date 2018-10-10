@@ -15,3 +15,14 @@
     padding: (@gutterWidth / 2);
   }
 }
+
+/*--------------
+   Variations
+---------------*/
+
+/*
+  Column with only horizontal padding
+*/
+.ui.grid > .column.only-horizontal-padding {
+  padding: 0 (@gutterWidth / 2);
+}

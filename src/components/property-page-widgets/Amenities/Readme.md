@@ -112,6 +112,13 @@ const amenities = [
       'Laundry Service',
     ],
   },
+   {
+    name: 'Further Info',
+    iconName: 'further info',
+    items: [
+      'Accessible 24/7',
+    ],
+  },
 ];
 
 <Amenities amenities={amenities} modalTriggerText="See more" />

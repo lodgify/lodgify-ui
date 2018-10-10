@@ -60,7 +60,7 @@ describe('getDesktopMenuMarkup', () => {
   });
 
   describe('if `props.primaryCTA` is passed', () => {
-    const primaryCTA = { href: 'someHref', text: 'someText' };
+    const primaryCTA = { onClick: Function.prototype, text: 'someText' };
     const getMenuItem = () =>
       getMarkupAsRenderedComponent({ primaryCTA })
         .find(Menu.Item)
@@ -80,20 +80,30 @@ describe('getDesktopMenuMarkup', () => {
 
         expectComponentToHaveProps(wrapper, {
           className: 'no-underline',
-          href: primaryCTA.href,
           link: true,
         });
       });
 
-      describe('the Lodgify UI `Button`', () => {
-        it('should render a Lodgify UI `Button` component', () => {
-          const wrapper = getMenuItem();
+      it('should render a Lodgify UI `Button` component', () => {
+        const wrapper = getMenuItem();
 
-          expectComponentToHaveChildren(wrapper, Button);
+        expectComponentToHaveChildren(wrapper, Button);
+      });
+
+      describe('the Lodgify UI `Button`', () => {
+        const getButton = () => getMenuItem().find(Button);
+
+        it('should have the right props', () => {
+          const wrapper = getButton();
+
+          expectComponentToHaveProps(wrapper, {
+            isRounded: true,
+            onClick: expect.any(Function),
+          });
         });
 
         it('should have the right children', () => {
-          const wrapper = getMenuItem().find(Button);
+          const wrapper = getButton();
 
           expectComponentToHaveChildren(wrapper, primaryCTA.text);
         });

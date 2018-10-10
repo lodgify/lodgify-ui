@@ -1,3 +1,48 @@
+## [1.63.1](https://github.com/lodgify/lodgify-ui/compare/v1.63.0...v1.63.1) (2018-10-09)
+
+
+### Bug Fixes
+
+* **Icon:** fix pathDescription of furtherInfo ([63b76cf](https://github.com/lodgify/lodgify-ui/commit/63b76cf))
+
+# [1.63.0](https://github.com/lodgify/lodgify-ui/compare/v1.62.1...v1.63.0) (2018-10-09)
+
+
+### Features
+
+* **Amenities:** implement FurtherInfo reference ([46702a3](https://github.com/lodgify/lodgify-ui/commit/46702a3))
+* **Icon:** implement path and constant for FurtherInfo ([6caeb3f](https://github.com/lodgify/lodgify-ui/commit/6caeb3f))
+
+## [1.62.1](https://github.com/lodgify/lodgify-ui/compare/v1.62.0...v1.62.1) (2018-10-09)
+
+
+### Bug Fixes
+
+* **Header:** expose primaryCTA.onClick and unit test ([6df151e](https://github.com/lodgify/lodgify-ui/commit/6df151e))
+* **Hero:** update component to use new primaryCTA onClick ([9bfee94](https://github.com/lodgify/lodgify-ui/commit/9bfee94))
+* **HomepageHero:** update component to use new primaryCTA onClick ([0258796](https://github.com/lodgify/lodgify-ui/commit/0258796))
+* **PropertyPageHero:** update component to use new primaryCTA onClick ([4c1e433](https://github.com/lodgify/lodgify-ui/commit/4c1e433))
+
+# [1.62.0](https://github.com/lodgify/lodgify-ui/compare/v1.61.4...v1.62.0) (2018-10-09)
+
+
+### Bug Fixes
+
+* **Icon:** if label exists, then support the content expanding ([56198d6](https://github.com/lodgify/lodgify-ui/commit/56198d6))
+* **RoomType:** on mobile the amenities should be stacked ([b5c374e](https://github.com/lodgify/lodgify-ui/commit/b5c374e))
+
+
+### Features
+
+* **GridColumn:** add optional class to only have horizontal padding ([c9552ed](https://github.com/lodgify/lodgify-ui/commit/c9552ed))
+
+## [1.61.4](https://github.com/lodgify/lodgify-ui/compare/v1.61.3...v1.61.4) (2018-10-09)
+
+
+### Bug Fixes
+
+* **Header:** add isRounded prop to cta button ([a6705b7](https://github.com/lodgify/lodgify-ui/commit/a6705b7))
+
 ## [1.61.3](https://github.com/lodgify/lodgify-ui/compare/v1.61.2...v1.61.3) (2018-10-05)
 
 

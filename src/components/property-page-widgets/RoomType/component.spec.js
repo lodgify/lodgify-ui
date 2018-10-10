@@ -4,11 +4,9 @@ import { Card, List, Responsive } from 'semantic-ui-react';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
-  expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Button } from 'elements/Button';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -43,7 +41,6 @@ const props = {
   propertyType: 'Bed and breakfast',
   propertyUrl: '/',
   ratingNumber: 4,
-  onClickCheckAvailability: Function.prototype,
   slideShowImages: [
     {
       alternativeText: 'Two cats',
@@ -208,7 +205,7 @@ describe('<RoomType />', () => {
         wrapper,
         GridColumn,
         GridColumn,
-        List,
+        GridColumn,
         GridRow
       );
     });
@@ -285,10 +282,27 @@ describe('<RoomType />', () => {
     const getFifthGridColumn = () =>
       getWrappedRoomType()
         .find(GridColumn)
-        .at(6);
+        .at(5);
 
     it('should have the right props', () => {
       const wrapper = getFifthGridColumn();
+
+      expectComponentToHaveProps(wrapper, {
+        floated: 'left',
+        horizontal: true,
+        as: List,
+      });
+    });
+  });
+
+  describe('the sixth `GridColumn`', () => {
+    const getSixthGridColumn = () =>
+      getWrappedRoomType()
+        .find(GridColumn)
+        .at(6);
+
+    it('should have the right props', () => {
+      const wrapper = getSixthGridColumn();
 
       expectComponentToHaveProps(wrapper, {
         only: 'tablet computer',
@@ -298,7 +312,7 @@ describe('<RoomType />', () => {
     });
 
     it('should have the right children', () => {
-      const wrapper = getFifthGridColumn();
+      const wrapper = getSixthGridColumn();
 
       expectComponentToHaveChildren(wrapper, Modal);
     });
@@ -317,27 +331,22 @@ describe('<RoomType />', () => {
     });
   });
 
-  describe('the sixth `GridColumn`', () => {
-    const getSixthGridColumn = () =>
+  describe('the seventh `GridColumn`', () => {
+    const getSeventhGridColumn = () =>
       getWrappedRoomType()
         .find(GridColumn)
-        .at(9);
+        .at(8);
 
     it('should have the right props', () => {
-      const wrapper = getSixthGridColumn();
+      const wrapper = getSeventhGridColumn();
 
       expectComponentToHaveProps(wrapper, { textAlign: 'right' });
     });
 
     it('should render the right children', () => {
-      const wrapper = getSixthGridColumn();
+      const wrapper = getSeventhGridColumn();
 
-      expectComponentToHaveChildren(
-        wrapper,
-        Card.Description,
-        ShowOnMobile,
-        Button
-      );
+      expectComponentToHaveChildren(wrapper, Card.Description, ShowOnMobile);
     });
 
     describe('if `isUserOnMobile === true`', () => {
@@ -390,35 +399,6 @@ describe('<RoomType />', () => {
       expectComponentToHaveChildren(wrapper, Divider);
     });
   });
-
-  describe('the `Button`', () => {
-    const getButton = () =>
-      getWrappedRoomType()
-        .find(Button)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getButton();
-
-      expectComponentToHaveProps(wrapper, {
-        isPositionedRight: true,
-        isRounded: true,
-        onClick: expect.any(Function),
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getButton();
-
-      expectComponentToHaveChildren(wrapper, 'Check Availability');
-    });
-  });
-
-  it('should have displayName `RoomType`', () => {
-    const component = getRoomType().prop('as');
-
-    expectComponentToHaveDisplayName(component, 'RoomType');
-  });
 });
 
 describe('`RoomType` in mobile view', () => {
@@ -458,16 +438,6 @@ describe('`RoomType` in mobile view', () => {
           />
         ),
       });
-    });
-  });
-
-  describe('the `Button`', () => {
-    it('should have the right props', () => {
-      const wrapper = getWrappedRoomType({ isUserOnMobile: true })
-        .find(Button)
-        .at(2);
-
-      expectComponentToHaveProps(wrapper, { isPositionedRight: false });
     });
   });
 });
