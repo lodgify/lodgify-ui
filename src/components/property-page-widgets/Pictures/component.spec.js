@@ -12,28 +12,36 @@ import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Divider } from 'elements/Divider';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { Heading } from 'typography/Heading';
 import { Gallery } from 'media/Gallery';
 import { Link } from 'elements/Link';
 import { Thumbnail } from 'media/Thumbnail';
 
 import { pictures } from './mock-data/pictures';
-import { Component as Pictures } from './component';
+import { ComponentWithResponsive as Pictures } from './component';
 
-const getPictures = () => shallow(<Pictures pictures={pictures} />);
+const props = {
+  pictures,
+};
+
+const getPictures = () => shallow(<Pictures {...props} />);
+
+const getWrappedPictures = extraProps => {
+  const Child = getPictures().prop('as');
+
+  return shallow(<Child isUserOnMobile={false} {...props} {...extraProps} />);
+};
 
 describe('<Pictures />', () => {
   it('should have `Grid` component as a wrapper', () => {
-    const wrapper = getPictures();
+    const wrapper = getWrappedPictures();
 
     expectComponentToBe(wrapper, Grid);
   });
 
   describe('the `Grid` component', () => {
-    const getGrid = () => getPictures().find(Grid);
+    const getGrid = () => getWrappedPictures().find(Grid);
 
     it('should have the right props', () => {
       const wrapper = getGrid();
@@ -50,7 +58,7 @@ describe('<Pictures />', () => {
 
   describe('the first `GridColumn` component', () => {
     const getFirstGridColumn = () =>
-      getPictures()
+      getWrappedPictures()
         .find(GridColumn)
         .first();
 
@@ -71,7 +79,7 @@ describe('<Pictures />', () => {
 
   describe('the `Heading` component', () => {
     it('should render the right children', () => {
-      const wrapper = getPictures().find(Heading);
+      const wrapper = getWrappedPictures().find(Heading);
 
       expectComponentToHaveChildren(wrapper, PROPERTY_PICTURES);
     });
@@ -79,7 +87,7 @@ describe('<Pictures />', () => {
 
   describe('the `GridRow`', () => {
     it('should have the right children', () => {
-      const wrapper = getPictures().find(GridRow);
+      const wrapper = getWrappedPictures().find(GridRow);
 
       expectComponentToHaveChildren(
         wrapper,
@@ -90,35 +98,17 @@ describe('<Pictures />', () => {
 
   describe('each of the array of `GridColumn`s', () => {
     it('should render the right children', () => {
-      const wrapper = getPictures()
+      const wrapper = getWrappedPictures()
         .find(GridColumn)
         .at(1);
 
-      expectComponentToHaveChildren(
-        wrapper,
-        ShowOnDesktop,
-        ShowOnMobile,
-        Divider
-      );
+      expectComponentToHaveChildren(wrapper, Thumbnail, Divider);
     });
   });
 
-  describe('each of the array of `ShowOnDesktop`s', () => {
-    const getShowOnDesktopInArray = () =>
-      getPictures()
-        .find(ShowOnDesktop)
-        .at(0);
-
-    it('should render the right children', () => {
-      const wrapper = getShowOnDesktopInArray();
-
-      expectComponentToHaveChildren(wrapper, Thumbnail);
-    });
-  });
-
-  describe('each `Thumbnail` component', () => {
+  describe('each `Thumbnail` component on desktop', () => {
     it('should get the right props', () => {
-      const wrapper = getPictures()
+      const wrapper = getWrappedPictures()
         .find(Thumbnail)
         .at(0);
       const { imageUrl, label } = pictures[0];
@@ -126,29 +116,20 @@ describe('<Pictures />', () => {
       expectComponentToHaveProps(wrapper, {
         imageUrl,
         label,
+        hasRoundedCorners: false,
+        isSquare: false,
         size: 'huge',
       });
     });
   });
 
-  describe('each of the array of `ShowOnMobile`s', () => {
-    const getShowOnMobileInArray = () =>
-      getPictures()
-        .find(ShowOnMobile)
-        .at(0);
-
-    it('should render the right children', () => {
-      const wrapper = getShowOnMobileInArray();
-
-      expectComponentToHaveChildren(wrapper, Thumbnail);
-    });
-  });
-
-  describe('each `Thumbnail` component', () => {
+  describe('each `Thumbnail` component on mobile', () => {
     it('should get the right props', () => {
-      const wrapper = getPictures()
+      const wrapper = getWrappedPictures({
+        isUserOnMobile: true,
+      })
         .find(Thumbnail)
-        .at(1);
+        .at(0);
       const { imageUrl, label } = pictures[0];
 
       expectComponentToHaveProps(wrapper, {
@@ -163,7 +144,7 @@ describe('<Pictures />', () => {
 
   describe('the `GridColumn` component wrapping the link', () => {
     const getGridColumnWithLink = () =>
-      getPictures()
+      getWrappedPictures()
         .find(GridColumn)
         .at(6);
 
@@ -184,7 +165,7 @@ describe('<Pictures />', () => {
 
   describe('the `Gallery` component', () => {
     it('should have the right props', () => {
-      const wrapper = getPictures().find(Gallery);
+      const wrapper = getWrappedPictures().find(Gallery);
 
       expectComponentToHaveProps(wrapper, {
         heading: expect.any(Object),
@@ -195,6 +176,8 @@ describe('<Pictures />', () => {
   });
 
   it('should have `displayName` `Pictures`', () => {
-    expectComponentToHaveDisplayName(Pictures, 'Pictures');
+    const component = getPictures().prop('as');
+
+    expectComponentToHaveDisplayName(component, 'Pictures');
   });
 });
