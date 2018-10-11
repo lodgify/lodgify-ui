@@ -1,3 +1,16 @@
+# [1.65.0](https://github.com/lodgify/lodgify-ui/compare/v1.64.1...v1.65.0) (2018-10-10)
+
+
+### Bug Fixes
+
+* **SleepingArrangments:** consume IconCard with props.size and remove Grid ([12fbf24](https://github.com/lodgify/lodgify-ui/commit/12fbf24))
+
+
+### Features
+
+* **IconCard:** add necessary styles to support props.size ([f096cbd](https://github.com/lodgify/lodgify-ui/commit/f096cbd))
+* **IconCard:** add size prop with example and tests ([d5c8308](https://github.com/lodgify/lodgify-ui/commit/d5c8308))
+
 ## [1.64.1](https://github.com/lodgify/lodgify-ui/compare/v1.64.0...v1.64.1) (2018-10-10)
 
 
