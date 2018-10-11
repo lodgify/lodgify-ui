@@ -27,7 +27,6 @@ export const Component = ({
 }) => (
   <Dropdown
     className={isTriggerUnderlined ? 'underlined' : ''}
-    defaultValue={getDefaultValue(children, items, isSelectedDisabled)}
     icon={<Icon name={ICON_NAMES.CARET_DOWN} size="small" />}
     item={isMenuItem}
     name={name}
@@ -38,6 +37,7 @@ export const Component = ({
     trigger={children}
     upward={willOpenAbove}
     {...getValueProperty(isSelectedDisabled)}
+    {...getDefaultValue(children, items, isSelectedDisabled)}
   />
 );
 
