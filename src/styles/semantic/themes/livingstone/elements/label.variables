@@ -23,8 +23,12 @@
 /* Link */
 
 /* Icon */
-@iconCardWidth: 8em;
 @iconCardHeight: 8.5em;
+@iconCardMarginBottom: 1em;
+@iconCardMarginRight: 2em;
+@iconCardWidth: 8em;
+
+@iconCardLargeWidth: 11em;
 
 @iconCardTextLineHeight: @15px;
 @iconCardTextMargin: @12px 0 0;
