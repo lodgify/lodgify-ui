@@ -24,35 +24,35 @@
 .ui.fullscreen.modal.with-horizontal-gutters {
 
   .ui.container > .ui.header {
-    width: ~"calc(100% - 30px)";
+    width: @reducedHeadingWidth;
   }
 
   &:not(.with-heading) {
-    @media (max-width: 599px) {
+    @media (max-width: (@tabletBreakpoint - 1)) {
 
       .grid-column-0 .ui.header {
-        width: ~"calc(100% - 30px)";
+        width: @reducedHeadingWidth;
       }
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: @tabletBreakpoint) {
 
       .grid-column-1 .ui.header {
-        width: ~"calc(100% - 30px)";
+        width: @reducedHeadingWidth;
       }
     }
   }
 
   > i.icon {
-    top: 25px;
+    top: @withHorizontalCloseIconTop;
 
-    @media (min-width: 1121px) {
-      left: ~"calc(50% + 480px)";
+    @media (min-width: (@horizontalGutterMaxWidth + 1)) {
+      left: @withHorizontalCloseIconLeft;
       right: auto;
     }
 
-    @media (max-width: 1120px) {
-      right: 25px;
+    @media (max-width: @horizontalGutterMaxWidth) {
+      right: @withHorizontalCloseIconRight;
     }
   }
 }
