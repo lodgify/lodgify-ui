@@ -1,38 +1,24 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Responsive } from 'semantic-ui-react';
-import {
-  expectComponentToHaveProps,
-  expectComponentToBe,
-  expectComponentToHaveDisplayName,
-} from '@lodgify/enzyme-jest-expect-helpers';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ShowOnDesktop } from './component';
 
 const props = {
-  parent: 'section',
-  parentProps: { width: '🚸' },
   children: 'div',
+  parent: 'section',
+  parentProps: {
+    className: 'you shall pass',
+  },
 };
 
 const getShowOnDesktop = () => shallow(<ShowOnDesktop {...props} />);
 
 describe('<ShowOnDesktop />', () => {
-  it('should render a single Semantic UI `Responsive` component', () => {
-    const wrapper = getShowOnDesktop();
+  it('it should render the right structure', () => {
+    const actual = getShowOnDesktop();
 
-    expectComponentToBe(wrapper, Responsive);
-  });
-
-  describe('the `Responsive` component', () => {
-    it('it should get the right props', () => {
-      const wrapper = getShowOnDesktop();
-
-      expectComponentToHaveProps(wrapper, {
-        as: props.parent,
-        children: props.children,
-      });
-    });
+    expect(actual).toMatchSnapshot();
   });
 
   it('should have `displayName` `ShowOnDesktop`', () => {
