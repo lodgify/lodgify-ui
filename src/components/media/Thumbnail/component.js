@@ -17,8 +17,9 @@ export const Component = ({
   isSquare,
   label,
   size,
+  className,
 }) => (
-  <div className="ui thumbnail">
+  <div className={getClassNames('ui', 'thumbnail', className)}>
     <div
       className={getClassNames('ui', 'image', size, {
         circular: isCircular,
@@ -37,6 +38,7 @@ Component.displayName = 'Thumbnail';
 
 Component.defaultProps = {
   alternativeText: 'Thumbnail element',
+  className: '',
   isCircular: false,
   hasRoundedCorners: false,
   isSquare: false,
@@ -47,6 +49,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** Text to help visually impaired users understand the content of the image. */
   alternativeText: PropTypes.string,
+  /** Custom class name string to customize the resulting thumbnail. */
+  className: PropTypes.string,
   /** Is the thumbnail rounded on the corners */
   hasRoundedCorners: PropTypes.bool,
   /** URL pointing to the image to render */
