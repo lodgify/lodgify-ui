@@ -34,18 +34,20 @@ export const Component = ({
     <GridRow>
       {getFirstSixItems(pictures).map(({ imageUrl, label }, index) => (
         <GridColumn key={buildKeyFromStrings(label, index)}>
-          <ShowOnDesktop>
-            <Thumbnail imageUrl={imageUrl} label={label} size="huge" />
-          </ShowOnDesktop>
-          <ShowOnMobile>
-            <Thumbnail
-              hasRoundedCorners
-              imageUrl={imageUrl}
-              isSquare
-              label={label}
-              size="large"
-            />
-          </ShowOnMobile>
+          <ShowOnDesktop
+            parent={Thumbnail}
+            parentProps={{ imageUrl, label, size: 'huge' }}
+          />
+          <ShowOnMobile
+            parent={Thumbnail}
+            parentProps={{
+              hasRoundedCorners: true,
+              imageUrl,
+              isSquare: true,
+              label,
+              size: 'large',
+            }}
+          />
           <Divider size="small" />
         </GridColumn>
       ))}

@@ -1,0 +1,1068 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pictures /> should render the correct structure 1`] = `
+<Pictures
+  headingText="Property pictures"
+  linkText="Explore all pictures"
+  pictures={
+    Array [
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "label": "Entrance",
+      },
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "label": "Kitchen",
+      },
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "label": "Living room",
+      },
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "label": "Studio",
+      },
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "label": "Garden room",
+      },
+    ]
+  }
+  propertyName={null}
+  ratingNumber={null}
+>
+  <Grid
+    areColumnsCentered={false}
+    columns={3}
+  >
+    <Grid
+      centered={false}
+      columns={3}
+    >
+      <div
+        className="ui three column grid"
+      >
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Heading
+                isColorInverted={false}
+                size="medium"
+                textAlign={null}
+              >
+                <Header
+                  as="h3"
+                  inverted={false}
+                  textAlign={null}
+                >
+                  <h3
+                    className="ui header"
+                  >
+                    Property pictures
+                  </h3>
+                </Header>
+              </Heading>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                key="Entrance0"
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned column"
+                  >
+                    <ShowOnDesktop
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "label": "Entrance",
+                          "size": "huge",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-desktop"
+                        hasRoundedCorners={false}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={false}
+                        label="Entrance"
+                        size="huge"
+                      >
+                        <div
+                          className="ui thumbnail show-on-desktop"
+                        >
+                          <div
+                            className="ui image huge"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Entrance
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnDesktop>
+                    <ShowOnMobile
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "hasRoundedCorners": true,
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "isSquare": true,
+                          "label": "Entrance",
+                          "size": "large",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-mobile"
+                        hasRoundedCorners={true}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={true}
+                        label="Entrance"
+                        size="large"
+                      >
+                        <div
+                          className="ui thumbnail show-on-mobile"
+                        >
+                          <div
+                            className="ui image large square rounded"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Entrance
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnMobile>
+                    <Divider
+                      className=""
+                      hasLine={false}
+                      size="small"
+                    >
+                      <Divider
+                        className="is-size-small"
+                        hidden={true}
+                        section={false}
+                      >
+                        <div
+                          className="ui hidden divider is-size-small"
+                        />
+                      </Divider>
+                    </Divider>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+              <GridColumn
+                key="Kitchen1"
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned column"
+                  >
+                    <ShowOnDesktop
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "label": "Kitchen",
+                          "size": "huge",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-desktop"
+                        hasRoundedCorners={false}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={false}
+                        label="Kitchen"
+                        size="huge"
+                      >
+                        <div
+                          className="ui thumbnail show-on-desktop"
+                        >
+                          <div
+                            className="ui image huge"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Kitchen
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnDesktop>
+                    <ShowOnMobile
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "hasRoundedCorners": true,
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "isSquare": true,
+                          "label": "Kitchen",
+                          "size": "large",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-mobile"
+                        hasRoundedCorners={true}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={true}
+                        label="Kitchen"
+                        size="large"
+                      >
+                        <div
+                          className="ui thumbnail show-on-mobile"
+                        >
+                          <div
+                            className="ui image large square rounded"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Kitchen
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnMobile>
+                    <Divider
+                      className=""
+                      hasLine={false}
+                      size="small"
+                    >
+                      <Divider
+                        className="is-size-small"
+                        hidden={true}
+                        section={false}
+                      >
+                        <div
+                          className="ui hidden divider is-size-small"
+                        />
+                      </Divider>
+                    </Divider>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+              <GridColumn
+                key="Living room2"
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned column"
+                  >
+                    <ShowOnDesktop
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "label": "Living room",
+                          "size": "huge",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-desktop"
+                        hasRoundedCorners={false}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={false}
+                        label="Living room"
+                        size="huge"
+                      >
+                        <div
+                          className="ui thumbnail show-on-desktop"
+                        >
+                          <div
+                            className="ui image huge"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Living room
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnDesktop>
+                    <ShowOnMobile
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "hasRoundedCorners": true,
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "isSquare": true,
+                          "label": "Living room",
+                          "size": "large",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-mobile"
+                        hasRoundedCorners={true}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={true}
+                        label="Living room"
+                        size="large"
+                      >
+                        <div
+                          className="ui thumbnail show-on-mobile"
+                        >
+                          <div
+                            className="ui image large square rounded"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Living room
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnMobile>
+                    <Divider
+                      className=""
+                      hasLine={false}
+                      size="small"
+                    >
+                      <Divider
+                        className="is-size-small"
+                        hidden={true}
+                        section={false}
+                      >
+                        <div
+                          className="ui hidden divider is-size-small"
+                        />
+                      </Divider>
+                    </Divider>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+              <GridColumn
+                key="Studio3"
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned column"
+                  >
+                    <ShowOnDesktop
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "label": "Studio",
+                          "size": "huge",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-desktop"
+                        hasRoundedCorners={false}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={false}
+                        label="Studio"
+                        size="huge"
+                      >
+                        <div
+                          className="ui thumbnail show-on-desktop"
+                        >
+                          <div
+                            className="ui image huge"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Studio
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnDesktop>
+                    <ShowOnMobile
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "hasRoundedCorners": true,
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "isSquare": true,
+                          "label": "Studio",
+                          "size": "large",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-mobile"
+                        hasRoundedCorners={true}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={true}
+                        label="Studio"
+                        size="large"
+                      >
+                        <div
+                          className="ui thumbnail show-on-mobile"
+                        >
+                          <div
+                            className="ui image large square rounded"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Studio
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnMobile>
+                    <Divider
+                      className=""
+                      hasLine={false}
+                      size="small"
+                    >
+                      <Divider
+                        className="is-size-small"
+                        hidden={true}
+                        section={false}
+                      >
+                        <div
+                          className="ui hidden divider is-size-small"
+                        />
+                      </Divider>
+                    </Divider>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+              <GridColumn
+                key="Garden room4"
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned column"
+                  >
+                    <ShowOnDesktop
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "label": "Garden room",
+                          "size": "huge",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-desktop"
+                        hasRoundedCorners={false}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={false}
+                        label="Garden room"
+                        size="huge"
+                      >
+                        <div
+                          className="ui thumbnail show-on-desktop"
+                        >
+                          <div
+                            className="ui image huge"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Garden room
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnDesktop>
+                    <ShowOnMobile
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "hasRoundedCorners": true,
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                          "isSquare": true,
+                          "label": "Garden room",
+                          "size": "large",
+                        }
+                      }
+                    >
+                      <Thumbnail
+                        alternativeText="Thumbnail element"
+                        className="show-on-mobile"
+                        hasRoundedCorners={true}
+                        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                        isCircular={false}
+                        isSquare={true}
+                        label="Garden room"
+                        size="large"
+                      >
+                        <div
+                          className="ui thumbnail show-on-mobile"
+                        >
+                          <div
+                            className="ui image large square rounded"
+                            style={
+                              Object {
+                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
+                              }
+                            }
+                          >
+                            <span
+                              aria-label="Thumbnail element"
+                              role="img"
+                            />
+                          </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Garden room
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Thumbnail>
+                    </ShowOnMobile>
+                    <Divider
+                      className=""
+                      hasLine={false}
+                      size="small"
+                    >
+                      <Divider
+                        className="is-size-small"
+                        hidden={true}
+                        section={false}
+                      >
+                        <div
+                          className="ui hidden divider is-size-small"
+                        />
+                      </Divider>
+                    </Divider>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Gallery
+                heading={null}
+                images={
+                  Array [
+                    Object {
+                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "label": "Entrance",
+                    },
+                    Object {
+                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "label": "Kitchen",
+                    },
+                    Object {
+                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "label": "Living room",
+                    },
+                    Object {
+                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "label": "Studio",
+                    },
+                    Object {
+                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "label": "Garden room",
+                    },
+                  ]
+                }
+                trigger={
+                  <Link
+                    href={null}
+                    isPositionedRight={false}
+                    onClick={[Function]}
+                    willOpenInNewTab={false}
+                  >
+                    Explore all pictures
+                  </Link>
+                }
+              >
+                <Modal
+                  isFullscreen={true}
+                  size="tiny"
+                  trigger={
+                    <Link
+                      href={null}
+                      isPositionedRight={false}
+                      onClick={[Function]}
+                      willOpenInNewTab={false}
+                    >
+                      Explore all pictures
+                    </Link>
+                  }
+                >
+                  <Modal
+                    closeIcon={
+                      <Icon
+                        color={null}
+                        hasBorder={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="close"
+                        path={null}
+                        size={null}
+                      />
+                    }
+                    closeOnDimmerClick={true}
+                    closeOnDocumentClick={false}
+                    content={
+                      <HorizontalGutters>
+                        <Divider
+                          className=""
+                          hasLine={false}
+                          size="medium"
+                        />
+                        <Grid
+                          areColumnsCentered={false}
+                          columns={2}
+                          stackable={true}
+                        >
+                          <GridRow
+                            horizontalAlignContent="left"
+                          >
+                            <GridColumn
+                              verticalAlignContent="top"
+                              width={null}
+                            >
+                              <Heading
+                                isColorInverted={false}
+                                size="small"
+                                textAlign={null}
+                              >
+                                Entrance
+                              </Heading>
+                              <ResponsiveImage
+                                alternativeText="Image Widget"
+                                className={null}
+                                imageNotFoundLabelText="Image not found!"
+                                imageTitle="Image Title"
+                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                isAvatar={false}
+                                isFluid={true}
+                                label={null}
+                                onLoad={[Function]}
+                                sources={Array []}
+                              />
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="medium"
+                              />
+                            </GridColumn>
+                            <GridColumn
+                              verticalAlignContent="top"
+                              width={null}
+                            >
+                              <Heading
+                                isColorInverted={false}
+                                size="small"
+                                textAlign={null}
+                              >
+                                Kitchen
+                              </Heading>
+                              <ResponsiveImage
+                                alternativeText="Image Widget"
+                                className={null}
+                                imageNotFoundLabelText="Image not found!"
+                                imageTitle="Image Title"
+                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                isAvatar={false}
+                                isFluid={true}
+                                label={null}
+                                onLoad={[Function]}
+                                sources={Array []}
+                              />
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="medium"
+                              />
+                            </GridColumn>
+                            <GridColumn
+                              verticalAlignContent="top"
+                              width={null}
+                            >
+                              <Heading
+                                isColorInverted={false}
+                                size="small"
+                                textAlign={null}
+                              >
+                                Living room
+                              </Heading>
+                              <ResponsiveImage
+                                alternativeText="Image Widget"
+                                className={null}
+                                imageNotFoundLabelText="Image not found!"
+                                imageTitle="Image Title"
+                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                isAvatar={false}
+                                isFluid={true}
+                                label={null}
+                                onLoad={[Function]}
+                                sources={Array []}
+                              />
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="medium"
+                              />
+                            </GridColumn>
+                            <GridColumn
+                              verticalAlignContent="top"
+                              width={null}
+                            >
+                              <Heading
+                                isColorInverted={false}
+                                size="small"
+                                textAlign={null}
+                              >
+                                Studio
+                              </Heading>
+                              <ResponsiveImage
+                                alternativeText="Image Widget"
+                                className={null}
+                                imageNotFoundLabelText="Image not found!"
+                                imageTitle="Image Title"
+                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                isAvatar={false}
+                                isFluid={true}
+                                label={null}
+                                onLoad={[Function]}
+                                sources={Array []}
+                              />
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="medium"
+                              />
+                            </GridColumn>
+                            <GridColumn
+                              verticalAlignContent="top"
+                              width={null}
+                            >
+                              <Heading
+                                isColorInverted={false}
+                                size="small"
+                                textAlign={null}
+                              >
+                                Garden room
+                              </Heading>
+                              <ResponsiveImage
+                                alternativeText="Image Widget"
+                                className={null}
+                                imageNotFoundLabelText="Image not found!"
+                                imageTitle="Image Title"
+                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                isAvatar={false}
+                                isFluid={true}
+                                label={null}
+                                onLoad={[Function]}
+                                sources={Array []}
+                              />
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="medium"
+                              />
+                            </GridColumn>
+                          </GridRow>
+                        </Grid>
+                        <Divider
+                          className=""
+                          hasLine={false}
+                          size="large"
+                        />
+                      </HorizontalGutters>
+                    }
+                    dimmer="inverted"
+                    eventPool="Modal"
+                    size="fullscreen"
+                    trigger={
+                      <Link
+                        href={null}
+                        isPositionedRight={false}
+                        onClick={[Function]}
+                        willOpenInNewTab={false}
+                      >
+                        Explore all pictures
+                      </Link>
+                    }
+                  >
+                    <Portal
+                      className="ui inverted page modals dimmer transition visible active"
+                      closeOnDocumentClick={false}
+                      closeOnEscape={true}
+                      closeOnRootNodeClick={true}
+                      eventPool="Modal"
+                      mountNode={<body />}
+                      onClose={[Function]}
+                      onMount={[Function]}
+                      onOpen={[Function]}
+                      onUnmount={[Function]}
+                      openOnTriggerClick={true}
+                      trigger={
+                        <Link
+                          href={null}
+                          isPositionedRight={false}
+                          onClick={[Function]}
+                          willOpenInNewTab={false}
+                        >
+                          Explore all pictures
+                        </Link>
+                      }
+                    >
+                      <Ref
+                        innerRef={[Function]}
+                      >
+                        <Link
+                          href={null}
+                          isPositionedRight={false}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          willOpenInNewTab={false}
+                        >
+                          <Button
+                            as={null}
+                            basic={true}
+                            floated="left"
+                            href={null}
+                            onClick={[Function]}
+                            target="_self"
+                          >
+                            <button
+                              className="ui basic left floated button"
+                              href={null}
+                              onClick={[Function]}
+                              role="button"
+                              target="_self"
+                            >
+                              Explore all pictures
+                            </button>
+                          </Button>
+                        </Link>
+                      </Ref>
+                    </Portal>
+                  </Modal>
+                </Modal>
+              </Gallery>
+            </div>
+          </GridColumn>
+        </GridColumn>
+      </div>
+    </Grid>
+  </Grid>
+</Pictures>
+`;
