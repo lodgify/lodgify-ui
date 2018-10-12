@@ -79,7 +79,11 @@ Library icons
 
 <Icon labelText="bathroom" name="bathroom" />
 <Divider />
+<Icon labelText="baby crib" name="baby crib" />
+<Divider />
 <Icon labelText="bedroom door" name="bedroom door" />
+<Divider />
+<Icon labelText="bed linen" name="bed linen" />
 <Divider />
 <Icon labelText="check in" name="check in" />
 <Divider />
@@ -88,6 +92,8 @@ Library icons
 <Icon labelText="coffee" name="coffee" />
 <Divider />
 <Icon labelText="cooking" name="cooking" />
+<Divider />
+<Icon labelText="couch" name="couch" />
 <Divider />
 <Icon labelText="credit card" name="credit card" />
 <Divider />
@@ -104,6 +110,8 @@ Library icons
 <Icon labelText="laundry" name="laundry" />
 <Divider />
 <Icon labelText="leaf" name="leaf" />
+<Divider />
+<Icon labelText="loft bed" name="loft bed" />
 <Divider />
 <Icon labelText="no children" name="no children" />
 <Divider />

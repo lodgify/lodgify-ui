@@ -1,3 +1,10 @@
+# [1.66.0](https://github.com/lodgify/lodgify-ui/compare/v1.65.0...v1.66.0) (2018-10-11)
+
+
+### Features
+
+* **Icon:** implement missing icon paths and references ([3b7736a](https://github.com/lodgify/lodgify-ui/commit/3b7736a))
+
 # [1.65.0](https://github.com/lodgify/lodgify-ui/compare/v1.64.1...v1.65.0) (2018-10-10)
 
 
