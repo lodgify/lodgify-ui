@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { withResponsive } from 'utils/with-responsive';
+import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
+import { FlexContainer } from 'layout/FlexContainer';
+import { Grid } from 'layout/Grid';
+import { GridRow } from 'layout/GridRow';
+import { Heading } from 'typography/Heading';
 import { Hero } from 'collections/Hero';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
-import { FlexContainer } from 'layout/FlexContainer';
-import { Heading } from 'typography/Heading';
-import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
-
-import { getSearchBarMarkup } from './utils/getSearchBarMarkup';
+import { SearchBar } from 'general-widgets/SearchBar';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 
 /**
  * A homepage hero displays a hero with heading and a search bar on desktop screens.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-const Component = ({
+export const Component = ({
   activeNavigationItemIndex,
   backgroundImageUrl,
   headerLogoSrc,
@@ -22,7 +23,6 @@ const Component = ({
   headerNavigationItems,
   headerPrimaryCTA,
   headingText,
-  isUserOnMobile,
   searchBarGetIsDayBlocked,
   searchBarGuestsOptions,
   searchBarLocationOptions,
@@ -54,17 +54,20 @@ const Component = ({
           {headingText}
         </Heading>
       </HorizontalGutters>
-      {!isUserOnMobile && (
-        <HorizontalGutters>
-          {getSearchBarMarkup({
-            getIsDayBlocked: searchBarGetIsDayBlocked,
-            guestsOptions: searchBarGuestsOptions,
-            locationOptions: searchBarLocationOptions,
-            onSubmit: searchBarOnSubmit,
-            searchButton: searchBarSearchButton,
-          })}
-        </HorizontalGutters>
-      )}
+      <ShowOnDesktop parent={HorizontalGutters}>
+        <Grid areColumnsCentered>
+          <GridRow horizontalAlignContent="center">
+            <SearchBar
+              getIsDayBlocked={searchBarGetIsDayBlocked}
+              guestsOptions={searchBarGuestsOptions}
+              locationOptions={searchBarLocationOptions}
+              onSubmit={searchBarOnSubmit}
+              searchButton={searchBarSearchButton}
+              willDropdownsOpenAbove
+            />
+          </GridRow>
+        </Grid>
+      </ShowOnDesktop>
     </FlexContainer>
   </Hero>
 );
@@ -118,12 +121,6 @@ Component.propTypes = {
   /** The text for the heading displayed in the middle of the hero. */
   headingText: PropTypes.string,
   /**
-   * Is the user on a mobile device.
-   * Provided by `withResponsive` so ignored in the styleguide.
-   * @ignore
-   */
-  isUserOnMobile: PropTypes.bool.isRequired,
-  /**
    * A function called for each day to be displayed in the DateRangePicker.
    * Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
@@ -168,5 +165,3 @@ Component.propTypes = {
   /** The search button the search bar displays. */
   searchBarSearchButton: PropTypes.node,
 };
-
-export const ComponentWithResponsive = withResponsive(Component);
