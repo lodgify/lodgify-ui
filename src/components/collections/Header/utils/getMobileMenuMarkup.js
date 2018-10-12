@@ -1,11 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Menu, Accordion } from 'semantic-ui-react';
 import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
-import { SearchBar } from 'general-widgets/SearchBar';
-import { Modal } from 'elements/Modal';
 import { Icon, ICON_NAMES } from 'elements/Icon';
+import { Modal } from 'elements/Modal';
+import { SearchBar } from 'general-widgets/SearchBar';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 
 import { hasSearchBarOptions } from './hasSearchBarOptions';
 import { getLogoMarkup } from './getLogoMarkup';
@@ -35,7 +36,7 @@ export const getMobileMenuMarkup = ({
   searchBarSearchButton,
   /* eslint-enable react/prop-types */
 }) => (
-  <Fragment>
+  <ShowOnMobile parent={Menu.Menu} parentProps={{ position: 'right' }}>
     {hasSearchBarOptions(searchBarGuestsOptions, searchBarLocationOptions) && (
       <Menu.Item>
         <SearchBar
@@ -86,5 +87,5 @@ export const getMobileMenuMarkup = ({
         </Menu>
       </Modal>
     </Menu.Item>
-  </Fragment>
+  </ShowOnMobile>
 );

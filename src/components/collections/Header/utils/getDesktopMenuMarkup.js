@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Menu } from 'semantic-ui-react';
 import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
-import { Submenu } from 'elements/Submenu';
 import { Button } from 'elements/Button';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { Submenu } from 'elements/Submenu';
 
 import { getSubmenuPointing } from './getSubmenuPointing';
 import { getLinkMarkup } from './getLinkMarkup';
@@ -23,7 +24,7 @@ export const getDesktopMenuMarkup = ({
   primaryCTA,
   /* eslint-enable react/prop-types */
 }) => (
-  <Fragment>
+  <ShowOnDesktop parent={Menu.Menu} parentProps={{ position: 'right' }}>
     {navigationItems.map(
       ({ subItems, text, href }, index) =>
         size(subItems) > 0 ? (
@@ -54,5 +55,5 @@ export const getDesktopMenuMarkup = ({
         </Button>
       </Menu.Item>
     )}
-  </Fragment>
+  </ShowOnDesktop>
 );

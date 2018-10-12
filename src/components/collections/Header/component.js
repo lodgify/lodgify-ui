@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 import { Menu } from 'semantic-ui-react';
 
-import { withResponsive } from 'utils/with-responsive';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { getLogoMarkup } from './utils/getLogoMarkup';
@@ -15,7 +14,7 @@ import { getDesktopMenuMarkup } from './utils/getDesktopMenuMarkup';
  * and an optional primary call to action.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-const Component = props => (
+export const Component = props => (
   <header
     className={getClassNames({
       'is-background-filled': props.isBackgroundFilled,
@@ -23,11 +22,8 @@ const Component = props => (
   >
     <HorizontalGutters as={Menu} borderless text>
       {getLogoMarkup(props.logoSrc, props.logoText)}
-      <Menu.Menu position="right">
-        {props.isUserOnMobile
-          ? getMobileMenuMarkup(props)
-          : getDesktopMenuMarkup(props)}
-      </Menu.Menu>
+      {getMobileMenuMarkup(props)}
+      {getDesktopMenuMarkup(props)}
     </HorizontalGutters>
   </header>
 );
@@ -53,12 +49,6 @@ Component.propTypes = {
   activeNavigationItemIndex: PropTypes.number,
   /** Is the background filled with a color defined in CSS. */
   isBackgroundFilled: PropTypes.bool,
-  /**
-   * Is the user on a mobile device.
-   * Provided by `withResponsive` so ignored in the styleguide.
-   * @ignore
-   */
-  isUserOnMobile: PropTypes.bool.isRequired,
   /** The src url for the logo. */
   logoSrc: PropTypes.string,
   /** The text for the logo. */
@@ -139,5 +129,3 @@ Component.propTypes = {
   // eslint-disable-next-line react/no-unused-prop-types
   searchBarSearchButton: PropTypes.node,
 };
-
-export const ComponentWithResponsive = withResponsive(Component);
