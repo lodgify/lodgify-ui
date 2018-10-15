@@ -5,7 +5,7 @@ describe('getDefaultValue', () => {
     it('should return `null`', () => {
       const actual = getDefaultValue('yo');
 
-      expect(actual).toEqual({});
+      expect(actual).toBe(null);
     });
   });
 
@@ -13,7 +13,7 @@ describe('getDefaultValue', () => {
     it('should return `null`', () => {
       const actual = getDefaultValue('yo', []);
 
-      expect(actual).toEqual({});
+      expect(actual).toBe(null);
     });
   });
 
@@ -24,7 +24,7 @@ describe('getDefaultValue', () => {
       testCases.forEach(testCase => {
         const actual = getDefaultValue('yo', testCase);
 
-        expect(actual).toEqual({});
+        expect(actual).toBe(null);
       });
     });
   });
@@ -34,9 +34,7 @@ describe('getDefaultValue', () => {
       const value = '🐸';
       const actual = getDefaultValue('', [{ value }]);
 
-      expect(actual).toEqual({
-        defaultValue: value,
-      });
+      expect(actual).toBe(value);
     });
   });
 
@@ -46,7 +44,7 @@ describe('getDefaultValue', () => {
       const isSelectedDisabled = true;
       const actual = getDefaultValue('', [{ value }], isSelectedDisabled);
 
-      expect(actual).toEqual({});
+      expect(actual).toBe(null);
     });
   });
 });

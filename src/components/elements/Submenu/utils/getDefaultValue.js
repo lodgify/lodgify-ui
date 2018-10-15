@@ -13,7 +13,5 @@
  */
 export const getDefaultValue = (children, items, isSelectedDisabled) =>
   !children && items.length && items[0].value && !isSelectedDisabled
-    ? {
-        defaultValue: items[0].value,
-      }
-    : {};
+    ? items[0].value
+    : null;
