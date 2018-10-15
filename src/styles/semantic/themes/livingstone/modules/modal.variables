@@ -55,11 +55,9 @@
 /* Derived Responsive Sizes */
 
 /* With the horizontal gutters */
-@reducedHeadingWidth:  ~"calc(100% - 30px)";
+@reducedHeadingWidth: ~"calc(100% - 30px)";
 @withHorizontalCloseIconTop: @25px;
 @withHorizontalCloseIconRight: @25px;
 
-/*
-  480px = (ContainerWidth / 2) - Padding width
-*/
-@withHorizontalCloseIconLeft: ~"calc(50% + 480px)";
+@halfContainerWidthWithPadding: (@horizontalGutterMaxWidth / 2) - (@horizontalGutterLeftRightPadding * 2);
+@withHorizontalCloseIconLeft: ~"calc(50% + @{halfContainerWidthWithPadding})";

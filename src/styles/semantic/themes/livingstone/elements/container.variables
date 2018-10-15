@@ -23,7 +23,7 @@
 
 @computerWidth: 100%;
 @computerGutter: auto;
-@computerPadding: 0 @40px;
+@computerPadding: 0 @horizontalGutterLeftRightPadding;
 
 @largeMonitorWidth: 100%;
 @largeMonitorGutter: auto;
