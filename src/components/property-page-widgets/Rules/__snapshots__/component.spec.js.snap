@@ -103,6 +103,7 @@ exports[`<Rules /> by default should render the right structure 1`] = `
                 </i>
               </Icon>
               <Divider
+                className=""
                 hasLine={false}
                 size="medium"
               >
@@ -354,6 +355,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                 </i>
               </Icon>
               <Divider
+                className=""
                 hasLine={false}
                 size="medium"
               >
