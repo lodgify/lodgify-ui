@@ -1,0 +1,1265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> by default should render the right structure 1`] = `
+<Header
+  activeNavigationItemIndex={null}
+  isBackgroundFilled={false}
+  logoSrc={null}
+  logoText="someLogoText"
+  navigationItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+      Object {
+        "subItems": Array [
+          Object {
+            "href": "/la-casa-viva",
+            "text": "La Casa Viva",
+          },
+          Object {
+            "href": "/la-casa-muerta",
+            "text": "La Casa Muerta",
+          },
+          Object {
+            "href": "/the-white-lodge",
+            "text": "The White Lodge",
+          },
+          Object {
+            "href": "/the-black-lodge",
+            "text": "The Black Lodge",
+          },
+        ],
+        "text": "All properties",
+      },
+    ]
+  }
+  primaryCTA={null}
+  searchBarGetIsDayBlocked={[Function]}
+  searchBarGuestsOptions={Array []}
+  searchBarLocationOptions={Array []}
+>
+  <header
+    className=""
+  >
+    <HorizontalGutters
+      as={[Function]}
+      borderless={true}
+      text={true}
+    >
+      <Container
+        as={[Function]}
+        borderless={true}
+        text={true}
+      >
+        <Menu
+          borderless={true}
+          className="ui text container"
+        >
+          <div
+            className="ui borderless ui text container menu"
+          >
+            <MenuItem
+              href="/"
+              link={true}
+            >
+              <a
+                className="link item"
+                href="/"
+                onClick={[Function]}
+              >
+                <Heading
+                  isColorInverted={false}
+                  size="small"
+                  textAlign={null}
+                >
+                  <Header
+                    as="h4"
+                    inverted={false}
+                    textAlign={null}
+                  >
+                    <h4
+                      className="ui header"
+                    >
+                      someLogoText
+                    </h4>
+                  </Header>
+                </Heading>
+              </a>
+            </MenuItem>
+            <ShowOnMobile
+              parent={[Function]}
+              parentProps={
+                Object {
+                  "position": "right",
+                }
+              }
+            >
+              <MenuMenu
+                className="show-on-mobile"
+                position="right"
+              >
+                <div
+                  className="right menu show-on-mobile"
+                >
+                  <MenuItem>
+                    <div
+                      className="item"
+                      onClick={[Function]}
+                    >
+                      <Modal
+                        isFullscreen={true}
+                        size="tiny"
+                        trigger={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="bars"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                      >
+                        <Modal
+                          closeIcon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                          closeOnDimmerClick={true}
+                          closeOnDocumentClick={false}
+                          content={
+                            <Menu
+                              text={true}
+                              vertical={true}
+                            >
+                              <MenuItem
+                                href="/"
+                                link={true}
+                              >
+                                <Heading
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
+                                >
+                                  someLogoText
+                                </Heading>
+                              </MenuItem>
+                              <MenuItem
+                                active={false}
+                                href="/"
+                                link={true}
+                              >
+                                Home
+                              </MenuItem>
+                              <Accordion
+                                as={[Function]}
+                                panels={
+                                  Array [
+                                    Object {
+                                      "content": Object {
+                                        "content": Array [
+                                          <MenuItem
+                                            active={false}
+                                            href="/la-casa-viva"
+                                            link={true}
+                                          >
+                                            La Casa Viva
+                                          </MenuItem>,
+                                          <MenuItem
+                                            active={false}
+                                            href="/la-casa-muerta"
+                                            link={true}
+                                          >
+                                            La Casa Muerta
+                                          </MenuItem>,
+                                          <MenuItem
+                                            active={false}
+                                            href="/the-white-lodge"
+                                            link={true}
+                                          >
+                                            The White Lodge
+                                          </MenuItem>,
+                                          <MenuItem
+                                            active={false}
+                                            href="/the-black-lodge"
+                                            link={true}
+                                          >
+                                            The Black Lodge
+                                          </MenuItem>,
+                                        ],
+                                        "key": "1All properties",
+                                      },
+                                      "title": Object {
+                                        "content": "All properties",
+                                        "key": "All properties1",
+                                      },
+                                    },
+                                  ]
+                                }
+                              />
+                            </Menu>
+                          }
+                          dimmer="inverted"
+                          eventPool="Modal"
+                          size="fullscreen"
+                          trigger={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="bars"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                        >
+                          <Portal
+                            className="ui inverted page modals dimmer transition visible active"
+                            closeOnDocumentClick={false}
+                            closeOnEscape={true}
+                            closeOnRootNodeClick={true}
+                            eventPool="Modal"
+                            mountNode={<body />}
+                            onClose={[Function]}
+                            onMount={[Function]}
+                            onOpen={[Function]}
+                            onUnmount={[Function]}
+                            openOnTriggerClick={true}
+                            trigger={
+                              <Icon
+                                color={null}
+                                hasBorder={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="bars"
+                                path={null}
+                                size={null}
+                              />
+                            }
+                          >
+                            <Ref
+                              innerRef={[Function]}
+                            >
+                              <Icon
+                                color={null}
+                                hasBorder={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="bars"
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                path={null}
+                                size={null}
+                              >
+                                <i
+                                  className="icon"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                >
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                                      fill="currentColor"
+                                    />
+                                  </svg>
+                                </i>
+                              </Icon>
+                            </Ref>
+                          </Portal>
+                        </Modal>
+                      </Modal>
+                    </div>
+                  </MenuItem>
+                </div>
+              </MenuMenu>
+            </ShowOnMobile>
+            <ShowOnDesktop
+              parent={[Function]}
+              parentProps={
+                Object {
+                  "position": "right",
+                }
+              }
+            >
+              <MenuMenu
+                className="show-on-desktop"
+                position="right"
+              >
+                <div
+                  className="right menu show-on-desktop"
+                >
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    key="Home0"
+                    link={true}
+                  >
+                    <a
+                      className="link item"
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      Home
+                    </a>
+                  </MenuItem>
+                  <Submenu
+                    isMenuItem={true}
+                    isSelectedDisabled={true}
+                    isSimple={true}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={true}
+                    items={
+                      Array [
+                        Object {
+                          "href": "/la-casa-viva",
+                          "text": "La Casa Viva",
+                        },
+                        Object {
+                          "href": "/la-casa-muerta",
+                          "text": "La Casa Muerta",
+                        },
+                        Object {
+                          "href": "/the-white-lodge",
+                          "text": "The White Lodge",
+                        },
+                        Object {
+                          "href": "/the-black-lodge",
+                          "text": "The Black Lodge",
+                        },
+                      ]
+                    }
+                    key="All properties1"
+                    name={null}
+                    onChange={[Function]}
+                    pointing="top right"
+                    willOpenAbove={false}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={true}
+                      minCharacters={1}
+                      name={null}
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "href": "/la-casa-viva",
+                            "key": "La Casa Viva",
+                            "text": "La Casa Viva",
+                          },
+                          Object {
+                            "href": "/la-casa-muerta",
+                            "key": "La Casa Muerta",
+                            "text": "La Casa Muerta",
+                          },
+                          Object {
+                            "href": "/the-white-lodge",
+                            "key": "The White Lodge",
+                            "text": "The White Lodge",
+                          },
+                          Object {
+                            "href": "/the-black-lodge",
+                            "key": "The Black Lodge",
+                            "text": "The Black Lodge",
+                          },
+                        ]
+                      }
+                      pointing="top right"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={true}
+                      trigger="All properties"
+                      upward={false}
+                      value={-999}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui item simple top right pointing dropdown"
+                        name={null}
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        All properties
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              href="/la-casa-viva"
+                              key="La Casa Viva"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="La Casa Viva"
+                            >
+                              <a
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                href="/la-casa-viva"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="La Casa Viva"
+                                >
+                                  La Casa Viva
+                                </span>
+                              </a>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              href="/la-casa-muerta"
+                              key="La Casa Muerta"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="La Casa Muerta"
+                            >
+                              <a
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                href="/la-casa-muerta"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="La Casa Muerta"
+                                >
+                                  La Casa Muerta
+                                </span>
+                              </a>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              href="/the-white-lodge"
+                              key="The White Lodge"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="The White Lodge"
+                            >
+                              <a
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                href="/the-white-lodge"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="The White Lodge"
+                                >
+                                  The White Lodge
+                                </span>
+                              </a>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              href="/the-black-lodge"
+                              key="The Black Lodge"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="The Black Lodge"
+                            >
+                              <a
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                href="/the-black-lodge"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="The Black Lodge"
+                                >
+                                  The Black Lodge
+                                </span>
+                              </a>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuMenu>
+            </ShowOnDesktop>
+          </div>
+        </Menu>
+      </Container>
+    </HorizontalGutters>
+  </header>
+</Header>
+`;
+
+exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the right structure 1`] = `
+<Header
+  activeNavigationItemIndex={null}
+  isBackgroundFilled={true}
+  logoSrc={null}
+  logoText="someLogoText"
+  navigationItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+      Object {
+        "subItems": Array [
+          Object {
+            "href": "/la-casa-viva",
+            "text": "La Casa Viva",
+          },
+          Object {
+            "href": "/la-casa-muerta",
+            "text": "La Casa Muerta",
+          },
+          Object {
+            "href": "/the-white-lodge",
+            "text": "The White Lodge",
+          },
+          Object {
+            "href": "/the-black-lodge",
+            "text": "The Black Lodge",
+          },
+        ],
+        "text": "All properties",
+      },
+    ]
+  }
+  primaryCTA={null}
+  searchBarGetIsDayBlocked={[Function]}
+  searchBarGuestsOptions={Array []}
+  searchBarLocationOptions={Array []}
+>
+  <header
+    className="is-background-filled"
+  >
+    <HorizontalGutters
+      as={[Function]}
+      borderless={true}
+      text={true}
+    >
+      <Container
+        as={[Function]}
+        borderless={true}
+        text={true}
+      >
+        <Menu
+          borderless={true}
+          className="ui text container"
+        >
+          <div
+            className="ui borderless ui text container menu"
+          >
+            <MenuItem
+              href="/"
+              link={true}
+            >
+              <a
+                className="link item"
+                href="/"
+                onClick={[Function]}
+              >
+                <Heading
+                  isColorInverted={false}
+                  size="small"
+                  textAlign={null}
+                >
+                  <Header
+                    as="h4"
+                    inverted={false}
+                    textAlign={null}
+                  >
+                    <h4
+                      className="ui header"
+                    >
+                      someLogoText
+                    </h4>
+                  </Header>
+                </Heading>
+              </a>
+            </MenuItem>
+            <ShowOnMobile
+              parent={[Function]}
+              parentProps={
+                Object {
+                  "position": "right",
+                }
+              }
+            >
+              <MenuMenu
+                className="show-on-mobile"
+                position="right"
+              >
+                <div
+                  className="right menu show-on-mobile"
+                >
+                  <MenuItem>
+                    <div
+                      className="item"
+                      onClick={[Function]}
+                    >
+                      <Modal
+                        isFullscreen={true}
+                        size="tiny"
+                        trigger={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="bars"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                      >
+                        <Modal
+                          closeIcon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                          closeOnDimmerClick={true}
+                          closeOnDocumentClick={false}
+                          content={
+                            <Menu
+                              text={true}
+                              vertical={true}
+                            >
+                              <MenuItem
+                                href="/"
+                                link={true}
+                              >
+                                <Heading
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
+                                >
+                                  someLogoText
+                                </Heading>
+                              </MenuItem>
+                              <MenuItem
+                                active={false}
+                                href="/"
+                                link={true}
+                              >
+                                Home
+                              </MenuItem>
+                              <Accordion
+                                as={[Function]}
+                                panels={
+                                  Array [
+                                    Object {
+                                      "content": Object {
+                                        "content": Array [
+                                          <MenuItem
+                                            active={false}
+                                            href="/la-casa-viva"
+                                            link={true}
+                                          >
+                                            La Casa Viva
+                                          </MenuItem>,
+                                          <MenuItem
+                                            active={false}
+                                            href="/la-casa-muerta"
+                                            link={true}
+                                          >
+                                            La Casa Muerta
+                                          </MenuItem>,
+                                          <MenuItem
+                                            active={false}
+                                            href="/the-white-lodge"
+                                            link={true}
+                                          >
+                                            The White Lodge
+                                          </MenuItem>,
+                                          <MenuItem
+                                            active={false}
+                                            href="/the-black-lodge"
+                                            link={true}
+                                          >
+                                            The Black Lodge
+                                          </MenuItem>,
+                                        ],
+                                        "key": "1All properties",
+                                      },
+                                      "title": Object {
+                                        "content": "All properties",
+                                        "key": "All properties1",
+                                      },
+                                    },
+                                  ]
+                                }
+                              />
+                            </Menu>
+                          }
+                          dimmer="inverted"
+                          eventPool="Modal"
+                          size="fullscreen"
+                          trigger={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="bars"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                        >
+                          <Portal
+                            className="ui inverted page modals dimmer transition visible active"
+                            closeOnDocumentClick={false}
+                            closeOnEscape={true}
+                            closeOnRootNodeClick={true}
+                            eventPool="Modal"
+                            mountNode={<body />}
+                            onClose={[Function]}
+                            onMount={[Function]}
+                            onOpen={[Function]}
+                            onUnmount={[Function]}
+                            openOnTriggerClick={true}
+                            trigger={
+                              <Icon
+                                color={null}
+                                hasBorder={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="bars"
+                                path={null}
+                                size={null}
+                              />
+                            }
+                          >
+                            <Ref
+                              innerRef={[Function]}
+                            >
+                              <Icon
+                                color={null}
+                                hasBorder={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="bars"
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                path={null}
+                                size={null}
+                              >
+                                <i
+                                  className="icon"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                >
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                                      fill="currentColor"
+                                    />
+                                  </svg>
+                                </i>
+                              </Icon>
+                            </Ref>
+                          </Portal>
+                        </Modal>
+                      </Modal>
+                    </div>
+                  </MenuItem>
+                </div>
+              </MenuMenu>
+            </ShowOnMobile>
+            <ShowOnDesktop
+              parent={[Function]}
+              parentProps={
+                Object {
+                  "position": "right",
+                }
+              }
+            >
+              <MenuMenu
+                className="show-on-desktop"
+                position="right"
+              >
+                <div
+                  className="right menu show-on-desktop"
+                >
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    key="Home0"
+                    link={true}
+                  >
+                    <a
+                      className="link item"
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      Home
+                    </a>
+                  </MenuItem>
+                  <Submenu
+                    isMenuItem={true}
+                    isSelectedDisabled={true}
+                    isSimple={true}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={true}
+                    items={
+                      Array [
+                        Object {
+                          "href": "/la-casa-viva",
+                          "text": "La Casa Viva",
+                        },
+                        Object {
+                          "href": "/la-casa-muerta",
+                          "text": "La Casa Muerta",
+                        },
+                        Object {
+                          "href": "/the-white-lodge",
+                          "text": "The White Lodge",
+                        },
+                        Object {
+                          "href": "/the-black-lodge",
+                          "text": "The Black Lodge",
+                        },
+                      ]
+                    }
+                    key="All properties1"
+                    name={null}
+                    onChange={[Function]}
+                    pointing="top right"
+                    willOpenAbove={false}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={true}
+                      minCharacters={1}
+                      name={null}
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "href": "/la-casa-viva",
+                            "key": "La Casa Viva",
+                            "text": "La Casa Viva",
+                          },
+                          Object {
+                            "href": "/la-casa-muerta",
+                            "key": "La Casa Muerta",
+                            "text": "La Casa Muerta",
+                          },
+                          Object {
+                            "href": "/the-white-lodge",
+                            "key": "The White Lodge",
+                            "text": "The White Lodge",
+                          },
+                          Object {
+                            "href": "/the-black-lodge",
+                            "key": "The Black Lodge",
+                            "text": "The Black Lodge",
+                          },
+                        ]
+                      }
+                      pointing="top right"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={true}
+                      trigger="All properties"
+                      upward={false}
+                      value={-999}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui item simple top right pointing dropdown"
+                        name={null}
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        All properties
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              href="/la-casa-viva"
+                              key="La Casa Viva"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="La Casa Viva"
+                            >
+                              <a
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                href="/la-casa-viva"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="La Casa Viva"
+                                >
+                                  La Casa Viva
+                                </span>
+                              </a>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              href="/la-casa-muerta"
+                              key="La Casa Muerta"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="La Casa Muerta"
+                            >
+                              <a
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                href="/la-casa-muerta"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="La Casa Muerta"
+                                >
+                                  La Casa Muerta
+                                </span>
+                              </a>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              href="/the-white-lodge"
+                              key="The White Lodge"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="The White Lodge"
+                            >
+                              <a
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                href="/the-white-lodge"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="The White Lodge"
+                                >
+                                  The White Lodge
+                                </span>
+                              </a>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              href="/the-black-lodge"
+                              key="The Black Lodge"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="The Black Lodge"
+                            >
+                              <a
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                href="/the-black-lodge"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="The Black Lodge"
+                                >
+                                  The Black Lodge
+                                </span>
+                              </a>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuMenu>
+            </ShowOnDesktop>
+          </div>
+        </Menu>
+      </Container>
+    </HorizontalGutters>
+  </header>
+</Header>
+`;

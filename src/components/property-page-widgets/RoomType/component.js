@@ -108,9 +108,7 @@ const Component = ({
                 <Card.Description>
                   {getNightPriceMarkup(nightPrice)}
                 </Card.Description>
-                <ShowOnMobile>
-                  <Divider />
-                </ShowOnMobile>
+                <ShowOnMobile parent={Divider} />
               </GridColumn>
             </GridRow>
           </Grid>

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Divider /> by default should render the right structure 1`] = `
+<Divider
+  className=""
+  hasLine={false}
+  size="medium"
+>
+  <Divider
+    className=""
+    hidden={true}
+    section={false}
+  >
+    <div
+      className="ui hidden divider"
+    />
+  </Divider>
+</Divider>
+`;
+
+exports[`<Divider /> if \`props.hasLine === true\` should render the right structure 1`] = `
+<Divider
+  className=""
+  hasLine={true}
+  size="medium"
+>
+  <Divider
+    className=""
+    hidden={false}
+    section={false}
+  >
+    <div
+      className="ui divider"
+    />
+  </Divider>
+</Divider>
+`;
+
+exports[`<Divider /> if \`props.size === "large"\` should render the right structure 1`] = `
+<Divider
+  className=""
+  hasLine={false}
+  size="large"
+>
+  <Divider
+    className=""
+    hidden={true}
+    section={true}
+  >
+    <div
+      className="ui hidden section divider"
+    />
+  </Divider>
+</Divider>
+`;

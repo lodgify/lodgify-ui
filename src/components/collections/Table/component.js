@@ -10,8 +10,8 @@ import { getTextAlign } from './utils/getTextAlign';
  * Table is the Lodgify UI interface for the Semantic UI Table.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ tableHeadings, tableBody, tableId }) => (
-  <Table basic="very" padded striped>
+export const Component = ({ className, tableHeadings, tableBody, tableId }) => (
+  <Table basic="very" className={className} padded striped>
     <Table.Header>
       <Table.Row>
         {tableHeadings.map((heading, index) => (
@@ -46,12 +46,15 @@ export const Component = ({ tableHeadings, tableBody, tableId }) => (
 );
 
 Component.defaultProps = {
+  className: '',
   tableId: '',
 };
 
 Component.displayName = 'Table';
 
 Component.propTypes = {
+  /** Custom class name string to customize the resulting table. */
+  className: PropTypes.string,
   /** The data making up the body of the table */
   tableBody: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.node)).isRequired,
   /** The column heading represented in the table */

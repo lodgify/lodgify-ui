@@ -1,45 +1,33 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Divider as SemanticDivider } from 'semantic-ui-react';
-import {
-  expectComponentToBe,
-  expectComponentToHaveDisplayName,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Divider } from './component';
 
-const getDivider = props => shallow(<Divider {...props} />);
+const getDivider = props => mount(<Divider {...props} />);
 
 describe('<Divider />', () => {
-  it('should render a single Semantic UI `Divider` component', () => {
-    const wrapper = getDivider();
+  describe('by default', () => {
+    it('should render the right structure', () => {
+      const actual = getDivider();
 
-    expectComponentToBe(wrapper, SemanticDivider);
+      expect(actual).toMatchSnapshot();
+    });
   });
 
-  describe('the Semantic UI `Divider` component', () => {
-    it('should get the right props', () => {
-      const wrapper = getDivider();
+  describe('if `props.hasLine === true`', () => {
+    it('should render the right structure', () => {
+      const actual = getDivider({ hasLine: true });
 
-      expectComponentToHaveProps(wrapper, {
-        hidden: true,
-      });
+      expect(actual).toMatchSnapshot();
     });
+  });
 
-    it('should get `props.hidden` as false if the parent `props.hasLine` is true', () => {
-      const wrapper = getDivider({ hasLine: true });
+  describe('if `props.size === "large"`', () => {
+    it('should render the right structure', () => {
+      const actual = getDivider({ size: 'large' });
 
-      expectComponentToHaveProps(wrapper, { hidden: false });
-    });
-
-    it('should get `props.section` as true if size equals large ', () => {
-      const wrapper = getDivider({ size: 'large' });
-
-      expectComponentToHaveProps(wrapper, {
-        hidden: true,
-        section: true,
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 

@@ -41,7 +41,7 @@ export const Component = ({
           onChangeRoomType,
           roomTypeInputLabel
         )}
-      <ShowOnMobile>
+      <ShowOnMobile parent="div">
         <Dropdown onChange={onChangeCurrency} options={currencyOptions} />
         {rateCategories.map((rateCategory, rateCategoryIndex) => (
           <Card
@@ -71,7 +71,7 @@ export const Component = ({
         ))}
       </ShowOnMobile>
     </Grid>
-    <ShowOnDesktop>
+    <ShowOnDesktop parent="div">
       <Table
         tableBody={rateCategories.map(rateCategory => [
           getRateCategoryHeadingMarkup(rateCategory, costPerExtraGuestLabel),
