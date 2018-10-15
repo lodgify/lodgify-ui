@@ -1,3 +1,10 @@
+## [1.66.1](https://github.com/lodgify/lodgify-ui/compare/v1.66.0...v1.66.1) (2018-10-15)
+
+
+### Bug Fixes
+
+* **Submenu:** only apply defaultValue if not null ([1bb0e6e](https://github.com/lodgify/lodgify-ui/commit/1bb0e6e))
+
 # [1.66.0](https://github.com/lodgify/lodgify-ui/compare/v1.65.0...v1.66.0) (2018-10-11)
 
 
