@@ -1,3 +1,10 @@
+## [1.66.2](https://github.com/lodgify/lodgify-ui/compare/v1.66.1...v1.66.2) (2018-10-15)
+
+
+### Bug Fixes
+
+* **Rules:** add correct icons and only render column if rules exist ([2ea4292](https://github.com/lodgify/lodgify-ui/commit/2ea4292))
+
 ## [1.66.1](https://github.com/lodgify/lodgify-ui/compare/v1.66.0...v1.66.1) (2018-10-15)
 
 
