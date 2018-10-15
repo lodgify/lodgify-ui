@@ -4,10 +4,9 @@ import { Dropdown } from 'semantic-ui-react';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
-import { getDefaultValue } from './utils/getDefaultValue';
 import { adaptOnChange } from './utils/adaptOnChange';
 import { adaptOptions } from './utils/adaptOptions';
-import { getValueProperty } from './utils/getValueProperty';
+import { getAdditionalProps } from './utils/getAdditionalProps';
 
 /**
  * A submenu displays grouped navigation items.
@@ -27,7 +26,6 @@ export const Component = ({
 }) => (
   <Dropdown
     className={isTriggerUnderlined ? 'underlined' : ''}
-    defaultValue={getDefaultValue(children, items, isSelectedDisabled)}
     icon={<Icon name={ICON_NAMES.CARET_DOWN} size="small" />}
     item={isMenuItem}
     name={name}
@@ -37,7 +35,7 @@ export const Component = ({
     simple={isTriggeredOnHover}
     trigger={children}
     upward={willOpenAbove}
-    {...getValueProperty(isSelectedDisabled)}
+    {...getAdditionalProps({ children, items, isSelectedDisabled })}
   />
 );
 
