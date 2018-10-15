@@ -1,3 +1,13 @@
+# [1.67.0](https://github.com/lodgify/lodgify-ui/compare/v1.66.2...v1.67.0) (2018-10-15)
+
+
+### Features
+
+* **Divider:** expose custom class prop ([9e69a89](https://github.com/lodgify/lodgify-ui/commit/9e69a89))
+* **globals/site:** add hide on mobile and desktop helpers ([a4f3eae](https://github.com/lodgify/lodgify-ui/commit/a4f3eae))
+* **Table:** expose custom class prop ([fa5c43d](https://github.com/lodgify/lodgify-ui/commit/fa5c43d))
+* **Thumbnail:** expose custom class prop ([d724f5f](https://github.com/lodgify/lodgify-ui/commit/d724f5f))
+
 ## [1.66.2](https://github.com/lodgify/lodgify-ui/compare/v1.66.1...v1.66.2) (2018-10-15)
 
 
