@@ -9,9 +9,9 @@ import { getIsSizeLarge } from './utils/getIsSizeLarge';
  * A divider adds whitespace between other elements.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ hasLine, size }) => (
+export const Component = ({ className, hasLine, size }) => (
   <Divider
-    className={getClassNames({
+    className={getClassNames(className, {
       'is-size-small': size === 'small',
     })}
     hidden={!hasLine}
@@ -22,11 +22,14 @@ export const Component = ({ hasLine, size }) => (
 Component.displayName = 'Divider';
 
 Component.defaultProps = {
+  className: '',
   hasLine: false,
   size: 'medium',
 };
 
 Component.propTypes = {
+  /** Custom class name string to customize the resulting divider. */
+  className: PropTypes.string,
   /** Does the divider have a visible line. */
   hasLine: PropTypes.bool,
   /** The size of the divider. */

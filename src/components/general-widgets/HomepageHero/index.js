@@ -1,1 +1,1 @@
-export { ComponentWithResponsive as HomepageHero } from './component';
+export { Component as HomepageHero } from './component';

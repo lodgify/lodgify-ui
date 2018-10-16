@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Segment } from 'semantic-ui-react';
 
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { Heading } from 'typography/Heading';
 import { withResponsive } from 'utils/with-responsive';
 
-import { getHeadingMarkup } from './utils/getHeadingMarkup';
 import { getNightPriceAndRatingMarkup } from './utils/getNightPriceAndRatingMarkup';
 import { getNightPriceRatingAndLocationMarkup } from './utils/getNightPriceRatingAndLocationMarkup';
 
@@ -20,16 +22,25 @@ const Component = ({
   isUserOnMobile,
 }) => (
   <Segment.Group compact>
-    {!isUserOnMobile && getHeadingMarkup(propertyName)}
-    <Segment.Group horizontal={!isUserOnMobile}>
-      {isUserOnMobile
-        ? getNightPriceAndRatingMarkup(ratingNumber, nightPrice)
-        : getNightPriceRatingAndLocationMarkup(
-            ratingNumber,
-            nightPrice,
-            locationName
-          )}
-    </Segment.Group>
+    <ShowOnDesktop parent={Segment}>
+      <Heading>{propertyName}</Heading>
+    </ShowOnDesktop>
+    <ShowOnDesktop
+      parent={Segment.Group}
+      parentProps={{ horizontal: !isUserOnMobile }}
+    >
+      {getNightPriceRatingAndLocationMarkup(
+        ratingNumber,
+        nightPrice,
+        locationName
+      )}
+    </ShowOnDesktop>
+    <ShowOnMobile
+      parent={Segment.Group}
+      parentProps={{ horizontal: !isUserOnMobile }}
+    >
+      {getNightPriceAndRatingMarkup(ratingNumber, nightPrice)}
+    </ShowOnMobile>
   </Segment.Group>
 );
 

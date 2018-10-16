@@ -1,1 +1,1 @@
-export { ComponentWithResponsive as Header } from './component';
+export { Component as Header } from './component';

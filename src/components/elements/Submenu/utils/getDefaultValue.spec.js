@@ -5,7 +5,7 @@ describe('getDefaultValue', () => {
     it('should return `null`', () => {
       const actual = getDefaultValue('yo');
 
-      expect(actual).toBeNull();
+      expect(actual).toBe(null);
     });
   });
 
@@ -13,7 +13,7 @@ describe('getDefaultValue', () => {
     it('should return `null`', () => {
       const actual = getDefaultValue('yo', []);
 
-      expect(actual).toBeNull();
+      expect(actual).toBe(null);
     });
   });
 
@@ -24,7 +24,7 @@ describe('getDefaultValue', () => {
       testCases.forEach(testCase => {
         const actual = getDefaultValue('yo', testCase);
 
-        expect(actual).toBeNull();
+        expect(actual).toBe(null);
       });
     });
   });

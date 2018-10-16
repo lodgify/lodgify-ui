@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { List } from 'semantic-ui-react';
+import { size } from 'lodash';
 
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { HOUSE_RULES } from 'utils/default-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -28,22 +30,24 @@ export const Component = ({
     <GridColumn width={12}>
       <Heading>{headingText}</Heading>
     </GridColumn>
-    <GridColumn computer={3} tablet={5}>
-      <List
-        items={rules.map(rule => (
-          <Paragraph>{rule}</Paragraph>
-        ))}
-      />
-    </GridColumn>
+    {size(rules) > 0 && (
+      <GridColumn computer={3} tablet={5}>
+        <List
+          items={rules.map((rule, index) => (
+            <Paragraph key={buildKeyFromStrings(rule, index)}>{rule}</Paragraph>
+          ))}
+        />
+      </GridColumn>
+    )}
     <GridColumn computer={9} tablet={7}>
       <Icon
         labelText={getLabelAndValueString(checkInTimeLabel, checkInTime)}
-        name={ICON_NAMES.QUESTION_MARK}
+        name={ICON_NAMES.CHECK_IN}
       />
       <Divider />
       <Icon
         labelText={getLabelAndValueString(checkOutTimeLabel, checkOutTime)}
-        name={ICON_NAMES.QUESTION_MARK}
+        name={ICON_NAMES.CHECK_OUT}
       />
     </GridColumn>
   </Grid>

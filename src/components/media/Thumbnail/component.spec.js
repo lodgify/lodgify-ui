@@ -14,6 +14,7 @@ import { Component as Thumbnail } from './component';
 
 const props = {
   imageUrl: 'www.⚡️.net',
+  className: '🚥',
 };
 
 const getThumbnail = extraProps =>
@@ -30,7 +31,7 @@ describe('<Thumbnail />', () => {
     const wrapper = getThumbnail();
 
     expectComponentToHaveProps(wrapper, {
-      className: 'ui thumbnail',
+      className: 'ui thumbnail 🚥',
     });
   });
 

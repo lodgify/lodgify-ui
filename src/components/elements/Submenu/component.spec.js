@@ -33,7 +33,6 @@ describe('<Submenu />', () => {
       const wrapper = getSubmenuDropdown();
 
       expectComponentToHaveProps(wrapper, {
-        defaultValue: null,
         icon: <Icon name={ICON_NAMES.CARET_DOWN} size="small" />,
         item: false,
         name: null,

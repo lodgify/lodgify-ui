@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getDesktopMenuMarkup by default should render the right structure 1`] = `
+<div>
+  <ShowOnDesktop
+    parent={[Function]}
+    parentProps={
+      Object {
+        "position": "right",
+      }
+    }
+  >
+    <MenuItem
+      active={false}
+      href="/"
+      key="Home0"
+      link={true}
+    >
+      Home
+    </MenuItem>
+    <Submenu
+      isMenuItem={true}
+      isSelectedDisabled={true}
+      isSimple={true}
+      isTriggerUnderlined={true}
+      isTriggeredOnHover={true}
+      items={
+        Array [
+          Object {
+            "href": "/la-casa-viva",
+            "text": "La Casa Viva",
+          },
+          Object {
+            "href": "/la-casa-muerta",
+            "text": "La Casa Muerta",
+          },
+          Object {
+            "href": "/the-white-lodge",
+            "text": "The White Lodge",
+          },
+          Object {
+            "href": "/the-black-lodge",
+            "text": "The Black Lodge",
+          },
+        ]
+      }
+      key="All properties1"
+      name={null}
+      onChange={[Function]}
+      pointing="top right"
+      willOpenAbove={false}
+    >
+      All properties
+    </Submenu>
+  </ShowOnDesktop>
+</div>
+`;
+
+exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render the right structure 1`] = `
+<div>
+  <ShowOnDesktop
+    parent={[Function]}
+    parentProps={
+      Object {
+        "position": "right",
+      }
+    }
+  >
+    <MenuItem
+      active={false}
+      href="/"
+      key="Home0"
+      link={true}
+    >
+      Home
+    </MenuItem>
+    <Submenu
+      isMenuItem={true}
+      isSelectedDisabled={true}
+      isSimple={true}
+      isTriggerUnderlined={true}
+      isTriggeredOnHover={true}
+      items={
+        Array [
+          Object {
+            "href": "/la-casa-viva",
+            "text": "La Casa Viva",
+          },
+          Object {
+            "href": "/la-casa-muerta",
+            "text": "La Casa Muerta",
+          },
+          Object {
+            "href": "/the-white-lodge",
+            "text": "The White Lodge",
+          },
+          Object {
+            "href": "/the-black-lodge",
+            "text": "The Black Lodge",
+          },
+        ]
+      }
+      key="All properties1"
+      name={null}
+      onChange={[Function]}
+      pointing="top left"
+      willOpenAbove={false}
+    >
+      All properties
+    </Submenu>
+    <MenuItem
+      className="no-underline"
+      link={true}
+    >
+      <Button
+        hasShadow={false}
+        icon={null}
+        isCompact={false}
+        isDisabled={false}
+        isLoading={false}
+        isPositionedRight={false}
+        isRounded={true}
+        isSecondary={false}
+        onClick={[Function]}
+        size={null}
+      >
+        someText
+      </Button>
+    </MenuItem>
+  </ShowOnDesktop>
+</div>
+`;

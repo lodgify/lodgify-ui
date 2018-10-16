@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getMobileMenuMarkup by default should render the right structure 1`] = `
+<ShowOnMobile
+  parent={[Function]}
+  parentProps={
+    Object {
+      "position": "right",
+    }
+  }
+>
+  <MenuItem>
+    <Modal
+      isFullscreen={true}
+      size="tiny"
+      trigger={
+        <Icon
+          color={null}
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="bars"
+          path={null}
+          size={null}
+        />
+      }
+    >
+      <Menu
+        text={true}
+        vertical={true}
+      >
+        <MenuItem
+          href="/"
+          link={true}
+        >
+          <Image
+            alt="someLogoText"
+            as="img"
+            src="someLogoSrc"
+            ui={true}
+          />
+        </MenuItem>
+        <MenuItem
+          active={true}
+          href="/"
+          key="Home0"
+          link={true}
+        >
+          Home
+        </MenuItem>
+        <Accordion
+          as={[Function]}
+          key="All properties1"
+          panels={
+            Array [
+              Object {
+                "content": Object {
+                  "content": Array [
+                    <MenuItem
+                      active={true}
+                      href="/la-casa-viva"
+                      link={true}
+                    >
+                      La Casa Viva
+                    </MenuItem>,
+                    <MenuItem
+                      active={false}
+                      href="/la-casa-muerta"
+                      link={true}
+                    >
+                      La Casa Muerta
+                    </MenuItem>,
+                    <MenuItem
+                      active={false}
+                      href="/the-white-lodge"
+                      link={true}
+                    >
+                      The White Lodge
+                    </MenuItem>,
+                    <MenuItem
+                      active={false}
+                      href="/the-black-lodge"
+                      link={true}
+                    >
+                      The Black Lodge
+                    </MenuItem>,
+                  ],
+                  "key": "1All properties",
+                },
+                "title": Object {
+                  "content": "All properties",
+                  "key": "All properties1",
+                },
+              },
+            ]
+          }
+        />
+      </Menu>
+    </Modal>
+  </MenuItem>
+</ShowOnMobile>
+`;
+
+exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.searchBarLocationOptions\` are defined and populated should render the right structure 1`] = `
+<ShowOnMobile
+  parent={[Function]}
+  parentProps={
+    Object {
+      "position": "right",
+    }
+  }
+>
+  <MenuItem>
+    <SearchBar
+      getIsDayBlocked={[Function]}
+      guestsOptions={
+        Array [
+          Object {
+            "text": "1",
+            "value": 1,
+          },
+        ]
+      }
+      isDisplayedAsModal={true}
+      isFixed={false}
+      isShowingSummary={false}
+      locationOptions={
+        Array [
+          Object {
+            "text": "Catania",
+            "value": "catania",
+          },
+        ]
+      }
+      modalHeadingText="someHeadingText"
+      modalSummaryElement={null}
+      modalTrigger={
+        <Icon
+          color={null}
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="search"
+          path={null}
+          size={null}
+        />
+      }
+      onSubmit={[Function]}
+      searchButton="button boy"
+      summaryElement={null}
+      willDropdownsOpenAbove={false}
+    />
+  </MenuItem>
+  <MenuItem>
+    <Modal
+      isFullscreen={true}
+      size="tiny"
+      trigger={
+        <Icon
+          color={null}
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="bars"
+          path={null}
+          size={null}
+        />
+      }
+    >
+      <Menu
+        text={true}
+        vertical={true}
+      >
+        <MenuItem
+          href="/"
+          link={true}
+        >
+          <Image
+            alt="someLogoText"
+            as="img"
+            src="someLogoSrc"
+            ui={true}
+          />
+        </MenuItem>
+        <MenuItem
+          active={true}
+          href="/"
+          key="Home0"
+          link={true}
+        >
+          Home
+        </MenuItem>
+        <Accordion
+          as={[Function]}
+          key="All properties1"
+          panels={
+            Array [
+              Object {
+                "content": Object {
+                  "content": Array [
+                    <MenuItem
+                      active={true}
+                      href="/la-casa-viva"
+                      link={true}
+                    >
+                      La Casa Viva
+                    </MenuItem>,
+                    <MenuItem
+                      active={false}
+                      href="/la-casa-muerta"
+                      link={true}
+                    >
+                      La Casa Muerta
+                    </MenuItem>,
+                    <MenuItem
+                      active={false}
+                      href="/the-white-lodge"
+                      link={true}
+                    >
+                      The White Lodge
+                    </MenuItem>,
+                    <MenuItem
+                      active={false}
+                      href="/the-black-lodge"
+                      link={true}
+                    >
+                      The Black Lodge
+                    </MenuItem>,
+                  ],
+                  "key": "1All properties",
+                },
+                "title": Object {
+                  "content": "All properties",
+                  "key": "All properties1",
+                },
+              },
+            ]
+          }
+        />
+      </Menu>
+    </Modal>
+  </MenuItem>
+</ShowOnMobile>
+`;

@@ -1,0 +1,2255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RoomType /> by default should render the correct structure 1`] = `
+<RoomType
+  amenities={
+    Array [
+      Object {
+        "iconName": "leaf",
+        "items": Array [
+          "Toaster",
+          "Microwave",
+          "Coffee Machine",
+        ],
+        "name": "Cooking",
+      },
+      Object {
+        "iconName": "paw",
+        "items": Array [
+          "Bidet",
+          "Hair Dryer",
+          "Iron & Board",
+        ],
+        "name": "Bathroom & Laundry",
+      },
+    ]
+  }
+  description="yayayay"
+  extraFeatures={
+    Array [
+      Object {
+        "labelText": "1 Dining-Room",
+      },
+    ]
+  }
+  features={
+    Array [
+      Object {
+        "iconName": "double bed",
+        "labelText": "1 Bedroom",
+      },
+    ]
+  }
+  imageUrl="🐱🐱"
+  isUserOnMobile={false}
+  locationName="Catania"
+  name="The Cat House"
+  nightPrice="$280"
+  propertyType="Bed and breakfast"
+  propertyUrl="/"
+  ratingNumber={4}
+  slideShowImages={
+    Array [
+      Object {
+        "alternativeText": "Two cats",
+        "title": "Two cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Two more cats",
+        "title": "Two more cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Much cats",
+        "title": "Much cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+    ]
+  }
+>
+  <Card
+    fluid={true}
+  >
+    <div
+      className="ui fluid card"
+      onClick={[Function]}
+    >
+      <Grid
+        areColumnsCentered={false}
+      >
+        <Grid
+          centered={false}
+        >
+          <div
+            className="ui grid"
+          >
+            <GridRow
+              horizontalAlignContent="left"
+            >
+              <GridRow
+                textAlign="left"
+              >
+                <div
+                  className="left aligned row"
+                >
+                  <GridColumn
+                    computer={4}
+                    mobile={12}
+                    verticalAlignContent={null}
+                    width={null}
+                  >
+                    <GridColumn
+                      computer={4}
+                      mobile={12}
+                      verticalAlign={null}
+                      width={null}
+                    >
+                      <div
+                        className="four wide computer twelve wide mobile column"
+                      >
+                        <Slideshow
+                          hasShadow={false}
+                          headingText={null}
+                          images={
+                            Array [
+                              Object {
+                                "alternativeText": "Two cats",
+                                "title": "Two cats",
+                                "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                              },
+                              Object {
+                                "alternativeText": "Two more cats",
+                                "title": "Two more cats",
+                                "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                              },
+                              Object {
+                                "alternativeText": "Much cats",
+                                "title": "Much cats",
+                                "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                              },
+                            ]
+                          }
+                          isRounded={false}
+                          isShowingBulletNavigation={false}
+                          isStretched={true}
+                        >
+                          <ImageGallery
+                            additionalClass="fit-height no-shadow no-border-radius"
+                            autoPlay={false}
+                            disableArrowKeys={false}
+                            disableSwipe={false}
+                            disableThumbnailScroll={false}
+                            flickThreshold={0.4}
+                            indexSeparator=" / "
+                            infinite={true}
+                            isRTL={false}
+                            items={
+                              Array [
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two cats",
+                                  "originalTitle": "Two cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two more cats",
+                                  "originalTitle": "Two more cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Much cats",
+                                  "originalTitle": "Much cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                              ]
+                            }
+                            lazyLoad={true}
+                            preventDefaultTouchmoveEvent={false}
+                            renderFullscreenButton={[Function]}
+                            renderLeftNav={[Function]}
+                            renderPlayPauseButton={[Function]}
+                            renderRightNav={[Function]}
+                            showBullets={false}
+                            showFullscreenButton={false}
+                            showIndex={false}
+                            showNav={true}
+                            showPlayButton={false}
+                            showThumbnails={false}
+                            slideDuration={450}
+                            slideInterval={3000}
+                            startIndex={0}
+                            stopPropagation={false}
+                            swipeThreshold={30}
+                            swipingTransitionDuration={0}
+                            thumbnailPosition="bottom"
+                            useBrowserFullscreen={true}
+                            useTranslate3D={true}
+                          >
+                            <div
+                              aria-live="polite"
+                              className="image-gallery fit-height no-shadow no-border-radius "
+                            >
+                              <div
+                                className="image-gallery-content"
+                              >
+                                <div
+                                  className="image-gallery-slide-wrapper bottom "
+                                >
+                                  <span
+                                    key="navigation"
+                                  >
+                                    <Button
+                                      as="button"
+                                      circular={true}
+                                      content={null}
+                                      disabled={false}
+                                      onClick={[Function]}
+                                      primary={true}
+                                    >
+                                      <button
+                                        className="ui circular primary button"
+                                        onClick={[Function]}
+                                        role="button"
+                                      >
+                                        <Icon
+                                          color={null}
+                                          hasBorder={false}
+                                          isCircular={false}
+                                          isColorInverted={true}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="chevron left"
+                                          path={null}
+                                          size={null}
+                                        >
+                                          <i
+                                            className="icon inverted"
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                        </Icon>
+                                      </button>
+                                    </Button>
+                                    <Button
+                                      as="button"
+                                      circular={true}
+                                      content={null}
+                                      disabled={false}
+                                      onClick={[Function]}
+                                      primary={true}
+                                    >
+                                      <button
+                                        className="ui circular primary button"
+                                        onClick={[Function]}
+                                        role="button"
+                                      >
+                                        <Icon
+                                          color={null}
+                                          hasBorder={false}
+                                          isCircular={false}
+                                          isColorInverted={true}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="chevron right"
+                                          path={null}
+                                          size={null}
+                                        >
+                                          <i
+                                            className="icon inverted"
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                        </Icon>
+                                      </button>
+                                    </Button>
+                                  </span>
+                                  <Swipeable
+                                    className="image-gallery-swipe"
+                                    delta={0}
+                                    disabled={false}
+                                    flickThreshold={0.4}
+                                    key="swipeable"
+                                    nodeName="div"
+                                    onSwiped={[Function]}
+                                    onSwiping={[Function]}
+                                    preventDefaultTouchmoveEvent={false}
+                                    rotationAngle={0}
+                                    stopPropagation={false}
+                                  >
+                                    <div
+                                      className="image-gallery-swipe"
+                                      onMouseDown={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                    >
+                                      <div
+                                        className="image-gallery-slides"
+                                      >
+                                        <div
+                                          className="image-gallery-slide center"
+                                          key="0"
+                                          style={
+                                            Object {
+                                              "MozTransform": "translate3d(0%, 0, 0)",
+                                              "OTransform": "translate3d(0%, 0, 0)",
+                                              "WebkitTransform": "translate3d(0%, 0, 0)",
+                                              "msTransform": "translate3d(0%, 0, 0)",
+                                              "transform": "translate3d(0%, 0, 0)",
+                                            }
+                                          }
+                                        >
+                                          <div
+                                            className="image-gallery-image"
+                                          >
+                                            <img
+                                              alt="Two cats"
+                                              onError={[Function]}
+                                              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                                              title="Two cats"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div
+                                          className="image-gallery-slide right"
+                                          key="1"
+                                          style={
+                                            Object {
+                                              "MozTransform": "translate3d(100%, 0, 0)",
+                                              "OTransform": "translate3d(100%, 0, 0)",
+                                              "WebkitTransform": "translate3d(100%, 0, 0)",
+                                              "msTransform": "translate3d(100%, 0, 0)",
+                                              "transform": "translate3d(100%, 0, 0)",
+                                            }
+                                          }
+                                        >
+                                          <div
+                                            className="image-gallery-image"
+                                          >
+                                            <img
+                                              alt="Two more cats"
+                                              onError={[Function]}
+                                              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                                              title="Two more cats"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div
+                                          className="image-gallery-slide left"
+                                          key="2"
+                                          style={
+                                            Object {
+                                              "MozTransform": "translate3d(-100%, 0, 0)",
+                                              "OTransform": "translate3d(-100%, 0, 0)",
+                                              "WebkitTransform": "translate3d(-100%, 0, 0)",
+                                              "msTransform": "translate3d(-100%, 0, 0)",
+                                              "transform": "translate3d(-100%, 0, 0)",
+                                            }
+                                          }
+                                        >
+                                          <div
+                                            className="image-gallery-image"
+                                          >
+                                            <img
+                                              alt="Much cats"
+                                              onError={[Function]}
+                                              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                                              title="Much cats"
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </Swipeable>
+                                </div>
+                              </div>
+                            </div>
+                          </ImageGallery>
+                        </Slideshow>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    computer={8}
+                    mobile={12}
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      computer={8}
+                      mobile={12}
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned eight wide computer twelve wide mobile column"
+                      >
+                        <Grid
+                          areColumnsCentered={false}
+                          padded={true}
+                        >
+                          <Grid
+                            centered={false}
+                            padded={true}
+                          >
+                            <div
+                              className="ui padded grid"
+                            >
+                              <GridColumn
+                                computer={12}
+                                floated="left"
+                                mobile={10}
+                                verticalAlignContent="top"
+                                width={null}
+                              >
+                                <GridColumn
+                                  computer={12}
+                                  floated="left"
+                                  mobile={10}
+                                  verticalAlign="top"
+                                  width={null}
+                                >
+                                  <div
+                                    className="left floated top aligned twelve wide computer ten wide mobile column"
+                                  >
+                                    <Heading
+                                      isColorInverted={false}
+                                      size="medium"
+                                      textAlign={null}
+                                    >
+                                      <Header
+                                        as="h3"
+                                        inverted={false}
+                                        textAlign={null}
+                                      >
+                                        <h3
+                                          className="ui header"
+                                        >
+                                          The Cat House
+                                        </h3>
+                                      </Header>
+                                    </Heading>
+                                  </div>
+                                </GridColumn>
+                              </GridColumn>
+                              <GridColumn
+                                only="mobile"
+                                textAlign="right"
+                                verticalAlignContent="middle"
+                                width={2}
+                              >
+                                <GridColumn
+                                  only="mobile"
+                                  textAlign="right"
+                                  verticalAlign="middle"
+                                  width={2}
+                                >
+                                  <div
+                                    className="mobile only right aligned middle aligned two wide column"
+                                  >
+                                    <Modal
+                                      isFullscreen={false}
+                                      size="tiny"
+                                      trigger={
+                                        <Icon
+                                          color="yellow"
+                                          hasBorder={false}
+                                          isCircular={true}
+                                          isColorInverted={true}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="info"
+                                          path={null}
+                                          size="small"
+                                        />
+                                      }
+                                    >
+                                      <Modal
+                                        closeIcon={
+                                          <Icon
+                                            color={null}
+                                            hasBorder={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="close"
+                                            path={null}
+                                            size={null}
+                                          />
+                                        }
+                                        closeOnDimmerClick={true}
+                                        closeOnDocumentClick={false}
+                                        content={
+                                          <ModalContent>
+                                            <Heading
+                                              isColorInverted={false}
+                                              size="medium"
+                                              textAlign={null}
+                                            >
+                                              The Cat House
+                                            </Heading>
+                                            <Rating
+                                              iconSize="small"
+                                              isShowingNumeral={true}
+                                              ratingNumber={4}
+                                            />
+                                            <Divider
+                                              className=""
+                                              hasLine={false}
+                                              size="small"
+                                            />
+                                            <Slideshow
+                                              additionalClass="no-shadow"
+                                              hasShadow={true}
+                                              headingText={null}
+                                              images={
+                                                Array [
+                                                  Object {
+                                                    "alternativeText": "Two cats",
+                                                    "title": "Two cats",
+                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                  },
+                                                  Object {
+                                                    "alternativeText": "Two more cats",
+                                                    "title": "Two more cats",
+                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                  },
+                                                  Object {
+                                                    "alternativeText": "Much cats",
+                                                    "title": "Much cats",
+                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                  },
+                                                ]
+                                              }
+                                              isRounded={true}
+                                              isShowingBulletNavigation={true}
+                                              isStretched={false}
+                                            />
+                                            <Paragraph
+                                              size="medium"
+                                              weight={null}
+                                            >
+                                              yayayay
+                                            </Paragraph>
+                                            <List
+                                              horizontal={true}
+                                            >
+                                              <ListItem>
+                                                <Paragraph
+                                                  size="medium"
+                                                  weight="heavy"
+                                                >
+                                                  1 Bedroom
+                                                </Paragraph>
+                                              </ListItem>
+                                              <ListItem>
+                                                <Paragraph
+                                                  size="medium"
+                                                  weight="heavy"
+                                                >
+                                                  1 Dining-Room
+                                                </Paragraph>
+                                              </ListItem>
+                                            </List>
+                                            <Divider
+                                              className=""
+                                              hasLine={true}
+                                              size="medium"
+                                            />
+                                            <Amenities
+                                              amenities={
+                                                Array [
+                                                  Object {
+                                                    "iconName": "leaf",
+                                                    "items": Array [
+                                                      "Toaster",
+                                                      "Microwave",
+                                                      "Coffee Machine",
+                                                    ],
+                                                    "name": "Cooking",
+                                                  },
+                                                  Object {
+                                                    "iconName": "paw",
+                                                    "items": Array [
+                                                      "Bidet",
+                                                      "Hair Dryer",
+                                                      "Iron & Board",
+                                                    ],
+                                                    "name": "Bathroom & Laundry",
+                                                  },
+                                                ]
+                                              }
+                                              hasExtraItemsInModal={false}
+                                              headingText="Room Amenities"
+                                              isStacked={false}
+                                              modalTriggerText="View more"
+                                            />
+                                            <Grid
+                                              areColumnsCentered={false}
+                                            >
+                                              <GridColumn
+                                                verticalAlignContent="bottom"
+                                                width={12}
+                                              >
+                                                <Paragraph
+                                                  size="medium"
+                                                  weight={null}
+                                                >
+                                                  from
+                                                  <strong>
+                                                     $280 
+                                                  </strong>
+                                                  /night
+                                                </Paragraph>
+                                              </GridColumn>
+                                            </Grid>
+                                          </ModalContent>
+                                        }
+                                        dimmer="inverted"
+                                        eventPool="Modal"
+                                        size="tiny"
+                                        trigger={
+                                          <Icon
+                                            color="yellow"
+                                            hasBorder={false}
+                                            isCircular={true}
+                                            isColorInverted={true}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="info"
+                                            path={null}
+                                            size="small"
+                                          />
+                                        }
+                                      >
+                                        <Portal
+                                          className="ui inverted page modals dimmer transition visible active"
+                                          closeOnDocumentClick={false}
+                                          closeOnEscape={true}
+                                          closeOnRootNodeClick={true}
+                                          eventPool="Modal"
+                                          mountNode={<body />}
+                                          onClose={[Function]}
+                                          onMount={[Function]}
+                                          onOpen={[Function]}
+                                          onUnmount={[Function]}
+                                          openOnTriggerClick={true}
+                                          trigger={
+                                            <Icon
+                                              color="yellow"
+                                              hasBorder={false}
+                                              isCircular={true}
+                                              isColorInverted={true}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="info"
+                                              path={null}
+                                              size="small"
+                                            />
+                                          }
+                                        >
+                                          <Ref
+                                            innerRef={[Function]}
+                                          >
+                                            <Icon
+                                              color="yellow"
+                                              hasBorder={false}
+                                              isCircular={true}
+                                              isColorInverted={true}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="info"
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                              path={null}
+                                              size="small"
+                                            >
+                                              <i
+                                                className="icon yellow small circular inverted"
+                                                onBlur={[Function]}
+                                                onClick={[Function]}
+                                                onFocus={[Function]}
+                                                onMouseEnter={[Function]}
+                                                onMouseLeave={[Function]}
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M10.86,7.5a1.07,1.07,0,0,1,.31-.8,1.27,1.27,0,0,1,1.66,0,1.07,1.07,0,0,1,.31.8,1.12,1.12,0,0,1-.3.8,1.26,1.26,0,0,1-1.68,0A1.12,1.12,0,0,1,10.86,7.5Zm2.2,10.11H11v-8h2.11Z"
+                                                    fill="currentColor"
+                                                  />
+                                                </svg>
+                                              </i>
+                                            </Icon>
+                                          </Ref>
+                                        </Portal>
+                                      </Modal>
+                                    </Modal>
+                                  </div>
+                                </GridColumn>
+                              </GridColumn>
+                              <GridColumn
+                                as={[Function]}
+                                className="only-horizontal-padding"
+                                floated="left"
+                                horizontal={true}
+                                verticalAlignContent="top"
+                                width={null}
+                              >
+                                <GridColumn
+                                  as={[Function]}
+                                  className="only-horizontal-padding"
+                                  floated="left"
+                                  horizontal={true}
+                                  verticalAlign="top"
+                                  width={null}
+                                >
+                                  <List
+                                    className="left floated top aligned column only-horizontal-padding"
+                                    horizontal={true}
+                                  >
+                                    <div
+                                      className="ui horizontal list left floated top aligned column only-horizontal-padding"
+                                      role="list"
+                                    >
+                                      <ListItem
+                                        key="0"
+                                      >
+                                        <div
+                                          className="item"
+                                          onClick={[Function]}
+                                          role="listitem"
+                                        >
+                                          <Icon
+                                            color={null}
+                                            hasBorder={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText="1 Bedroom"
+                                            labelWeight={null}
+                                            name="double bed"
+                                            path={null}
+                                            size="small"
+                                          >
+                                            <i
+                                              className="icon small has-label"
+                                            >
+                                              <svg
+                                                viewBox="0 0 24 24"
+                                              >
+                                                <path
+                                                  d="M23.08,11h-.31V7.21A4.67,4.67,0,0,0,18.15,2.5H5.85A4.67,4.67,0,0,0,1.23,7.21V11H.92a.93.93,0,0,0-.92.94V15.3a3.3,3.3,0,0,0,3.38,3.2H6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V18.5H18v2.33c0,.37.22.67.5.67s.5-.3.5-.67V18.5h1.62A3.3,3.3,0,0,0,24,15.3V11.91A.93.93,0,0,0,23.08,11ZM2.15,7.21a3.74,3.74,0,0,1,3.7-3.77h12.3a3.74,3.74,0,0,1,3.7,3.77V11h-2.2a1.85,1.85,0,0,0,0-.23V8.38a1.12,1.12,0,0,0-1.07-1.17H14.31a1.12,1.12,0,0,0-1.08,1.17v2.36a1.85,1.85,0,0,0,0,.23H10.73a1.85,1.85,0,0,0,0-.23V8.38A1.12,1.12,0,0,0,9.69,7.21H5.38A1.12,1.12,0,0,0,4.31,8.38v2.36a1.85,1.85,0,0,0,0,.23H2.15Zm12,3.53V8.38c0-.14.09-.23.16-.23h4.31c.07,0,.15.09.15.23v2.36c0,.14-.08.23-.15.23H14.31C14.24,11,14.15,10.88,14.15,10.74Zm-8.92,0V8.38c0-.14.08-.23.15-.23H9.69c.07,0,.16.09.16.23v2.36c0,.14-.09.23-.16.23H5.38C5.31,11,5.23,10.88,5.23,10.74ZM23.08,15.3a2.37,2.37,0,0,1-2.46,2.26H18.7a.36.36,0,0,0-.4,0H6.7a.36.36,0,0,0-.4,0H3.38A2.37,2.37,0,0,1,.92,15.3V11.91H23.08Z"
+                                                  fill="currentColor"
+                                                />
+                                              </svg>
+                                              <Paragraph
+                                                size="medium"
+                                                weight={null}
+                                              >
+                                                <p
+                                                  className=""
+                                                >
+                                                  1 Bedroom
+                                                </p>
+                                              </Paragraph>
+                                            </i>
+                                          </Icon>
+                                        </div>
+                                      </ListItem>
+                                    </div>
+                                  </List>
+                                </GridColumn>
+                              </GridColumn>
+                              <GridRow
+                                horizontalAlignContent="left"
+                              >
+                                <GridRow
+                                  textAlign="left"
+                                >
+                                  <div
+                                    className="left aligned row"
+                                  >
+                                    <GridColumn
+                                      only="tablet computer"
+                                      verticalAlignContent="bottom"
+                                      width={4}
+                                    >
+                                      <GridColumn
+                                        only="tablet computer"
+                                        verticalAlign="bottom"
+                                        width={4}
+                                      >
+                                        <div
+                                          className="tablet only computer only bottom aligned four wide column"
+                                        >
+                                          <Modal
+                                            isFullscreen={false}
+                                            size="small"
+                                            trigger={
+                                              <Link
+                                                href={null}
+                                                isPositionedRight={false}
+                                                onClick={[Function]}
+                                                willOpenInNewTab={false}
+                                              >
+                                                More Info
+                                              </Link>
+                                            }
+                                          >
+                                            <Modal
+                                              closeIcon={
+                                                <Icon
+                                                  color={null}
+                                                  hasBorder={false}
+                                                  isCircular={false}
+                                                  isColorInverted={false}
+                                                  isDisabled={false}
+                                                  isLabelLeft={false}
+                                                  labelText={null}
+                                                  labelWeight={null}
+                                                  name="close"
+                                                  path={null}
+                                                  size={null}
+                                                />
+                                              }
+                                              closeOnDimmerClick={true}
+                                              closeOnDocumentClick={false}
+                                              content={
+                                                <ModalContent>
+                                                  <Heading
+                                                    isColorInverted={false}
+                                                    size="medium"
+                                                    textAlign={null}
+                                                  >
+                                                    The Cat House
+                                                  </Heading>
+                                                  <Rating
+                                                    iconSize="small"
+                                                    isShowingNumeral={true}
+                                                    ratingNumber={4}
+                                                  />
+                                                  <Divider
+                                                    className=""
+                                                    hasLine={false}
+                                                    size="small"
+                                                  />
+                                                  <Slideshow
+                                                    additionalClass="no-shadow"
+                                                    hasShadow={true}
+                                                    headingText={null}
+                                                    images={
+                                                      Array [
+                                                        Object {
+                                                          "alternativeText": "Two cats",
+                                                          "title": "Two cats",
+                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                        },
+                                                        Object {
+                                                          "alternativeText": "Two more cats",
+                                                          "title": "Two more cats",
+                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                        },
+                                                        Object {
+                                                          "alternativeText": "Much cats",
+                                                          "title": "Much cats",
+                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                        },
+                                                      ]
+                                                    }
+                                                    isRounded={true}
+                                                    isShowingBulletNavigation={true}
+                                                    isStretched={false}
+                                                  />
+                                                  <Paragraph
+                                                    size="medium"
+                                                    weight={null}
+                                                  >
+                                                    yayayay
+                                                  </Paragraph>
+                                                  <List
+                                                    horizontal={true}
+                                                  >
+                                                    <ListItem>
+                                                      <Paragraph
+                                                        size="medium"
+                                                        weight="heavy"
+                                                      >
+                                                        1 Bedroom
+                                                      </Paragraph>
+                                                    </ListItem>
+                                                    <ListItem>
+                                                      <Paragraph
+                                                        size="medium"
+                                                        weight="heavy"
+                                                      >
+                                                        1 Dining-Room
+                                                      </Paragraph>
+                                                    </ListItem>
+                                                  </List>
+                                                  <Divider
+                                                    className=""
+                                                    hasLine={true}
+                                                    size="medium"
+                                                  />
+                                                  <Amenities
+                                                    amenities={
+                                                      Array [
+                                                        Object {
+                                                          "iconName": "leaf",
+                                                          "items": Array [
+                                                            "Toaster",
+                                                            "Microwave",
+                                                            "Coffee Machine",
+                                                          ],
+                                                          "name": "Cooking",
+                                                        },
+                                                        Object {
+                                                          "iconName": "paw",
+                                                          "items": Array [
+                                                            "Bidet",
+                                                            "Hair Dryer",
+                                                            "Iron & Board",
+                                                          ],
+                                                          "name": "Bathroom & Laundry",
+                                                        },
+                                                      ]
+                                                    }
+                                                    hasExtraItemsInModal={false}
+                                                    headingText="Room Amenities"
+                                                    isStacked={false}
+                                                    modalTriggerText="View more"
+                                                  />
+                                                  <Grid
+                                                    areColumnsCentered={false}
+                                                  >
+                                                    <GridColumn
+                                                      verticalAlignContent="bottom"
+                                                      width={12}
+                                                    >
+                                                      <Paragraph
+                                                        size="medium"
+                                                        weight={null}
+                                                      >
+                                                        from
+                                                        <strong>
+                                                           $280 
+                                                        </strong>
+                                                        /night
+                                                      </Paragraph>
+                                                    </GridColumn>
+                                                  </Grid>
+                                                </ModalContent>
+                                              }
+                                              dimmer="inverted"
+                                              eventPool="Modal"
+                                              size="small"
+                                              trigger={
+                                                <Link
+                                                  href={null}
+                                                  isPositionedRight={false}
+                                                  onClick={[Function]}
+                                                  willOpenInNewTab={false}
+                                                >
+                                                  More Info
+                                                </Link>
+                                              }
+                                            >
+                                              <Portal
+                                                className="ui inverted page modals dimmer transition visible active"
+                                                closeOnDocumentClick={false}
+                                                closeOnEscape={true}
+                                                closeOnRootNodeClick={true}
+                                                eventPool="Modal"
+                                                mountNode={<body />}
+                                                onClose={[Function]}
+                                                onMount={[Function]}
+                                                onOpen={[Function]}
+                                                onUnmount={[Function]}
+                                                openOnTriggerClick={true}
+                                                trigger={
+                                                  <Link
+                                                    href={null}
+                                                    isPositionedRight={false}
+                                                    onClick={[Function]}
+                                                    willOpenInNewTab={false}
+                                                  >
+                                                    More Info
+                                                  </Link>
+                                                }
+                                              >
+                                                <Ref
+                                                  innerRef={[Function]}
+                                                >
+                                                  <Link
+                                                    href={null}
+                                                    isPositionedRight={false}
+                                                    onBlur={[Function]}
+                                                    onClick={[Function]}
+                                                    onFocus={[Function]}
+                                                    onMouseEnter={[Function]}
+                                                    onMouseLeave={[Function]}
+                                                    willOpenInNewTab={false}
+                                                  >
+                                                    <Button
+                                                      as={null}
+                                                      basic={true}
+                                                      floated="left"
+                                                      href={null}
+                                                      onClick={[Function]}
+                                                      target="_self"
+                                                    >
+                                                      <button
+                                                        className="ui basic left floated button"
+                                                        href={null}
+                                                        onClick={[Function]}
+                                                        role="button"
+                                                        target="_self"
+                                                      >
+                                                        More Info
+                                                      </button>
+                                                    </Button>
+                                                  </Link>
+                                                </Ref>
+                                              </Portal>
+                                            </Modal>
+                                          </Modal>
+                                        </div>
+                                      </GridColumn>
+                                    </GridColumn>
+                                    <GridColumn
+                                      textAlign="right"
+                                      verticalAlignContent="top"
+                                      width={8}
+                                    >
+                                      <GridColumn
+                                        textAlign="right"
+                                        verticalAlign="top"
+                                        width={8}
+                                      >
+                                        <div
+                                          className="right aligned top aligned eight wide column"
+                                        >
+                                          <CardDescription>
+                                            <div
+                                              className="description"
+                                            >
+                                              <span>
+                                                from 
+                                                <Heading
+                                                  isColorInverted={false}
+                                                  size="medium"
+                                                  textAlign={null}
+                                                >
+                                                  <Header
+                                                    as="h3"
+                                                    inverted={false}
+                                                    textAlign={null}
+                                                  >
+                                                    <h3
+                                                      className="ui header"
+                                                    >
+                                                      $280
+                                                    </h3>
+                                                  </Header>
+                                                </Heading>
+                                                /night
+                                              </span>
+                                            </div>
+                                          </CardDescription>
+                                          <ShowOnMobile
+                                            parent={[Function]}
+                                            parentProps={Object {}}
+                                          >
+                                            <Divider
+                                              className="show-on-mobile"
+                                              hasLine={false}
+                                              size="medium"
+                                            >
+                                              <Divider
+                                                className="show-on-mobile"
+                                                hidden={true}
+                                                section={false}
+                                              >
+                                                <div
+                                                  className="ui hidden divider show-on-mobile"
+                                                />
+                                              </Divider>
+                                            </Divider>
+                                          </ShowOnMobile>
+                                        </div>
+                                      </GridColumn>
+                                    </GridColumn>
+                                  </div>
+                                </GridRow>
+                              </GridRow>
+                            </div>
+                          </Grid>
+                        </Grid>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                </div>
+              </GridRow>
+            </GridRow>
+          </div>
+        </Grid>
+      </Grid>
+    </div>
+  </Card>
+</RoomType>
+`;
+
+exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct structure 1`] = `
+<RoomType
+  amenities={
+    Array [
+      Object {
+        "iconName": "leaf",
+        "items": Array [
+          "Toaster",
+          "Microwave",
+          "Coffee Machine",
+        ],
+        "name": "Cooking",
+      },
+      Object {
+        "iconName": "paw",
+        "items": Array [
+          "Bidet",
+          "Hair Dryer",
+          "Iron & Board",
+        ],
+        "name": "Bathroom & Laundry",
+      },
+    ]
+  }
+  description="yayayay"
+  extraFeatures={
+    Array [
+      Object {
+        "labelText": "1 Dining-Room",
+      },
+    ]
+  }
+  features={
+    Array [
+      Object {
+        "iconName": "double bed",
+        "labelText": "1 Bedroom",
+      },
+    ]
+  }
+  imageUrl="🐱🐱"
+  isUserOnMobile={true}
+  locationName="Catania"
+  name="The Cat House"
+  nightPrice="$280"
+  propertyType="Bed and breakfast"
+  propertyUrl="/"
+  ratingNumber={4}
+  slideShowImages={
+    Array [
+      Object {
+        "alternativeText": "Two cats",
+        "title": "Two cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Two more cats",
+        "title": "Two more cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Much cats",
+        "title": "Much cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+    ]
+  }
+>
+  <Card
+    fluid={true}
+  >
+    <div
+      className="ui fluid card"
+      onClick={[Function]}
+    >
+      <Grid
+        areColumnsCentered={false}
+      >
+        <Grid
+          centered={false}
+        >
+          <div
+            className="ui grid"
+          >
+            <GridRow
+              horizontalAlignContent="left"
+            >
+              <GridRow
+                textAlign="left"
+              >
+                <div
+                  className="left aligned row"
+                >
+                  <GridColumn
+                    computer={4}
+                    mobile={12}
+                    verticalAlignContent={null}
+                    width={null}
+                  >
+                    <GridColumn
+                      computer={4}
+                      mobile={12}
+                      verticalAlign={null}
+                      width={null}
+                    >
+                      <div
+                        className="four wide computer twelve wide mobile column"
+                      >
+                        <Slideshow
+                          hasShadow={false}
+                          headingText={null}
+                          images={
+                            Array [
+                              Object {
+                                "alternativeText": "Two cats",
+                                "title": "Two cats",
+                                "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                              },
+                              Object {
+                                "alternativeText": "Two more cats",
+                                "title": "Two more cats",
+                                "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                              },
+                              Object {
+                                "alternativeText": "Much cats",
+                                "title": "Much cats",
+                                "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                              },
+                            ]
+                          }
+                          isRounded={false}
+                          isShowingBulletNavigation={false}
+                          isStretched={true}
+                        >
+                          <ImageGallery
+                            additionalClass="fit-height no-shadow no-border-radius"
+                            autoPlay={false}
+                            disableArrowKeys={false}
+                            disableSwipe={false}
+                            disableThumbnailScroll={false}
+                            flickThreshold={0.4}
+                            indexSeparator=" / "
+                            infinite={true}
+                            isRTL={false}
+                            items={
+                              Array [
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two cats",
+                                  "originalTitle": "Two cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two more cats",
+                                  "originalTitle": "Two more cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Much cats",
+                                  "originalTitle": "Much cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                              ]
+                            }
+                            lazyLoad={true}
+                            preventDefaultTouchmoveEvent={false}
+                            renderFullscreenButton={[Function]}
+                            renderLeftNav={[Function]}
+                            renderPlayPauseButton={[Function]}
+                            renderRightNav={[Function]}
+                            showBullets={false}
+                            showFullscreenButton={false}
+                            showIndex={false}
+                            showNav={true}
+                            showPlayButton={false}
+                            showThumbnails={false}
+                            slideDuration={450}
+                            slideInterval={3000}
+                            startIndex={0}
+                            stopPropagation={false}
+                            swipeThreshold={30}
+                            swipingTransitionDuration={0}
+                            thumbnailPosition="bottom"
+                            useBrowserFullscreen={true}
+                            useTranslate3D={true}
+                          >
+                            <div
+                              aria-live="polite"
+                              className="image-gallery fit-height no-shadow no-border-radius "
+                            >
+                              <div
+                                className="image-gallery-content"
+                              >
+                                <div
+                                  className="image-gallery-slide-wrapper bottom "
+                                >
+                                  <span
+                                    key="navigation"
+                                  >
+                                    <Button
+                                      as="button"
+                                      circular={true}
+                                      content={null}
+                                      disabled={false}
+                                      onClick={[Function]}
+                                      primary={true}
+                                    >
+                                      <button
+                                        className="ui circular primary button"
+                                        onClick={[Function]}
+                                        role="button"
+                                      >
+                                        <Icon
+                                          color={null}
+                                          hasBorder={false}
+                                          isCircular={false}
+                                          isColorInverted={true}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="chevron left"
+                                          path={null}
+                                          size={null}
+                                        >
+                                          <i
+                                            className="icon inverted"
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                        </Icon>
+                                      </button>
+                                    </Button>
+                                    <Button
+                                      as="button"
+                                      circular={true}
+                                      content={null}
+                                      disabled={false}
+                                      onClick={[Function]}
+                                      primary={true}
+                                    >
+                                      <button
+                                        className="ui circular primary button"
+                                        onClick={[Function]}
+                                        role="button"
+                                      >
+                                        <Icon
+                                          color={null}
+                                          hasBorder={false}
+                                          isCircular={false}
+                                          isColorInverted={true}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="chevron right"
+                                          path={null}
+                                          size={null}
+                                        >
+                                          <i
+                                            className="icon inverted"
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                        </Icon>
+                                      </button>
+                                    </Button>
+                                  </span>
+                                  <Swipeable
+                                    className="image-gallery-swipe"
+                                    delta={0}
+                                    disabled={false}
+                                    flickThreshold={0.4}
+                                    key="swipeable"
+                                    nodeName="div"
+                                    onSwiped={[Function]}
+                                    onSwiping={[Function]}
+                                    preventDefaultTouchmoveEvent={false}
+                                    rotationAngle={0}
+                                    stopPropagation={false}
+                                  >
+                                    <div
+                                      className="image-gallery-swipe"
+                                      onMouseDown={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                    >
+                                      <div
+                                        className="image-gallery-slides"
+                                      >
+                                        <div
+                                          className="image-gallery-slide center"
+                                          key="0"
+                                          style={
+                                            Object {
+                                              "MozTransform": "translate3d(0%, 0, 0)",
+                                              "OTransform": "translate3d(0%, 0, 0)",
+                                              "WebkitTransform": "translate3d(0%, 0, 0)",
+                                              "msTransform": "translate3d(0%, 0, 0)",
+                                              "transform": "translate3d(0%, 0, 0)",
+                                            }
+                                          }
+                                        >
+                                          <div
+                                            className="image-gallery-image"
+                                          >
+                                            <img
+                                              alt="Two cats"
+                                              onError={[Function]}
+                                              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                                              title="Two cats"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div
+                                          className="image-gallery-slide right"
+                                          key="1"
+                                          style={
+                                            Object {
+                                              "MozTransform": "translate3d(100%, 0, 0)",
+                                              "OTransform": "translate3d(100%, 0, 0)",
+                                              "WebkitTransform": "translate3d(100%, 0, 0)",
+                                              "msTransform": "translate3d(100%, 0, 0)",
+                                              "transform": "translate3d(100%, 0, 0)",
+                                            }
+                                          }
+                                        >
+                                          <div
+                                            className="image-gallery-image"
+                                          >
+                                            <img
+                                              alt="Two more cats"
+                                              onError={[Function]}
+                                              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                                              title="Two more cats"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div
+                                          className="image-gallery-slide left"
+                                          key="2"
+                                          style={
+                                            Object {
+                                              "MozTransform": "translate3d(-100%, 0, 0)",
+                                              "OTransform": "translate3d(-100%, 0, 0)",
+                                              "WebkitTransform": "translate3d(-100%, 0, 0)",
+                                              "msTransform": "translate3d(-100%, 0, 0)",
+                                              "transform": "translate3d(-100%, 0, 0)",
+                                            }
+                                          }
+                                        >
+                                          <div
+                                            className="image-gallery-image"
+                                          >
+                                            <img
+                                              alt="Much cats"
+                                              onError={[Function]}
+                                              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                                              title="Much cats"
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </Swipeable>
+                                </div>
+                              </div>
+                            </div>
+                          </ImageGallery>
+                        </Slideshow>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    computer={8}
+                    mobile={12}
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      computer={8}
+                      mobile={12}
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned eight wide computer twelve wide mobile column"
+                      >
+                        <Grid
+                          areColumnsCentered={false}
+                          padded={true}
+                        >
+                          <Grid
+                            centered={false}
+                            padded={true}
+                          >
+                            <div
+                              className="ui padded grid"
+                            >
+                              <GridColumn
+                                computer={12}
+                                floated="left"
+                                mobile={10}
+                                verticalAlignContent="top"
+                                width={null}
+                              >
+                                <GridColumn
+                                  computer={12}
+                                  floated="left"
+                                  mobile={10}
+                                  verticalAlign="top"
+                                  width={null}
+                                >
+                                  <div
+                                    className="left floated top aligned twelve wide computer ten wide mobile column"
+                                  >
+                                    <Heading
+                                      isColorInverted={false}
+                                      size="medium"
+                                      textAlign={null}
+                                    >
+                                      <Header
+                                        as="h3"
+                                        inverted={false}
+                                        textAlign={null}
+                                      >
+                                        <h3
+                                          className="ui header"
+                                        >
+                                          The Cat House
+                                        </h3>
+                                      </Header>
+                                    </Heading>
+                                  </div>
+                                </GridColumn>
+                              </GridColumn>
+                              <GridColumn
+                                only="mobile"
+                                textAlign="right"
+                                verticalAlignContent="middle"
+                                width={2}
+                              >
+                                <GridColumn
+                                  only="mobile"
+                                  textAlign="right"
+                                  verticalAlign="middle"
+                                  width={2}
+                                >
+                                  <div
+                                    className="mobile only right aligned middle aligned two wide column"
+                                  >
+                                    <Modal
+                                      isFullscreen={false}
+                                      size="tiny"
+                                      trigger={
+                                        <Icon
+                                          color="yellow"
+                                          hasBorder={false}
+                                          isCircular={true}
+                                          isColorInverted={true}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="info"
+                                          path={null}
+                                          size="small"
+                                        />
+                                      }
+                                    >
+                                      <Modal
+                                        closeIcon={
+                                          <Icon
+                                            color={null}
+                                            hasBorder={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="close"
+                                            path={null}
+                                            size={null}
+                                          />
+                                        }
+                                        closeOnDimmerClick={true}
+                                        closeOnDocumentClick={false}
+                                        content={
+                                          <ModalContent>
+                                            <Heading
+                                              isColorInverted={false}
+                                              size="medium"
+                                              textAlign={null}
+                                            >
+                                              The Cat House
+                                            </Heading>
+                                            <Rating
+                                              iconSize="small"
+                                              isShowingNumeral={true}
+                                              ratingNumber={4}
+                                            />
+                                            <Divider
+                                              className=""
+                                              hasLine={false}
+                                              size="small"
+                                            />
+                                            <Slideshow
+                                              additionalClass="no-shadow"
+                                              hasShadow={true}
+                                              headingText={null}
+                                              images={
+                                                Array [
+                                                  Object {
+                                                    "alternativeText": "Two cats",
+                                                    "title": "Two cats",
+                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                  },
+                                                  Object {
+                                                    "alternativeText": "Two more cats",
+                                                    "title": "Two more cats",
+                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                  },
+                                                  Object {
+                                                    "alternativeText": "Much cats",
+                                                    "title": "Much cats",
+                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                  },
+                                                ]
+                                              }
+                                              isRounded={true}
+                                              isShowingBulletNavigation={true}
+                                              isStretched={false}
+                                            />
+                                            <Paragraph
+                                              size="medium"
+                                              weight={null}
+                                            >
+                                              yayayay
+                                            </Paragraph>
+                                            <List
+                                              horizontal={true}
+                                            >
+                                              <ListItem>
+                                                <Paragraph
+                                                  size="medium"
+                                                  weight="heavy"
+                                                >
+                                                  1 Bedroom
+                                                </Paragraph>
+                                              </ListItem>
+                                              <ListItem>
+                                                <Paragraph
+                                                  size="medium"
+                                                  weight="heavy"
+                                                >
+                                                  1 Dining-Room
+                                                </Paragraph>
+                                              </ListItem>
+                                            </List>
+                                            <Divider
+                                              className=""
+                                              hasLine={true}
+                                              size="medium"
+                                            />
+                                            <Amenities
+                                              amenities={
+                                                Array [
+                                                  Object {
+                                                    "iconName": "leaf",
+                                                    "items": Array [
+                                                      "Toaster",
+                                                      "Microwave",
+                                                      "Coffee Machine",
+                                                    ],
+                                                    "name": "Cooking",
+                                                  },
+                                                  Object {
+                                                    "iconName": "paw",
+                                                    "items": Array [
+                                                      "Bidet",
+                                                      "Hair Dryer",
+                                                      "Iron & Board",
+                                                    ],
+                                                    "name": "Bathroom & Laundry",
+                                                  },
+                                                ]
+                                              }
+                                              hasExtraItemsInModal={false}
+                                              headingText="Room Amenities"
+                                              isStacked={true}
+                                              modalTriggerText="View more"
+                                            />
+                                            <Grid
+                                              areColumnsCentered={false}
+                                            >
+                                              <GridColumn
+                                                verticalAlignContent="bottom"
+                                                width={12}
+                                              >
+                                                <Paragraph
+                                                  size="medium"
+                                                  weight={null}
+                                                >
+                                                  from
+                                                  <strong>
+                                                     $280 
+                                                  </strong>
+                                                  /night
+                                                </Paragraph>
+                                              </GridColumn>
+                                            </Grid>
+                                          </ModalContent>
+                                        }
+                                        dimmer="inverted"
+                                        eventPool="Modal"
+                                        size="tiny"
+                                        trigger={
+                                          <Icon
+                                            color="yellow"
+                                            hasBorder={false}
+                                            isCircular={true}
+                                            isColorInverted={true}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="info"
+                                            path={null}
+                                            size="small"
+                                          />
+                                        }
+                                      >
+                                        <Portal
+                                          className="ui inverted page modals dimmer transition visible active"
+                                          closeOnDocumentClick={false}
+                                          closeOnEscape={true}
+                                          closeOnRootNodeClick={true}
+                                          eventPool="Modal"
+                                          mountNode={<body />}
+                                          onClose={[Function]}
+                                          onMount={[Function]}
+                                          onOpen={[Function]}
+                                          onUnmount={[Function]}
+                                          openOnTriggerClick={true}
+                                          trigger={
+                                            <Icon
+                                              color="yellow"
+                                              hasBorder={false}
+                                              isCircular={true}
+                                              isColorInverted={true}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="info"
+                                              path={null}
+                                              size="small"
+                                            />
+                                          }
+                                        >
+                                          <Ref
+                                            innerRef={[Function]}
+                                          >
+                                            <Icon
+                                              color="yellow"
+                                              hasBorder={false}
+                                              isCircular={true}
+                                              isColorInverted={true}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="info"
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                              path={null}
+                                              size="small"
+                                            >
+                                              <i
+                                                className="icon yellow small circular inverted"
+                                                onBlur={[Function]}
+                                                onClick={[Function]}
+                                                onFocus={[Function]}
+                                                onMouseEnter={[Function]}
+                                                onMouseLeave={[Function]}
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M10.86,7.5a1.07,1.07,0,0,1,.31-.8,1.27,1.27,0,0,1,1.66,0,1.07,1.07,0,0,1,.31.8,1.12,1.12,0,0,1-.3.8,1.26,1.26,0,0,1-1.68,0A1.12,1.12,0,0,1,10.86,7.5Zm2.2,10.11H11v-8h2.11Z"
+                                                    fill="currentColor"
+                                                  />
+                                                </svg>
+                                              </i>
+                                            </Icon>
+                                          </Ref>
+                                        </Portal>
+                                      </Modal>
+                                    </Modal>
+                                  </div>
+                                </GridColumn>
+                              </GridColumn>
+                              <GridColumn
+                                as={[Function]}
+                                className="only-horizontal-padding"
+                                floated="left"
+                                horizontal={true}
+                                verticalAlignContent="top"
+                                width={null}
+                              >
+                                <GridColumn
+                                  as={[Function]}
+                                  className="only-horizontal-padding"
+                                  floated="left"
+                                  horizontal={true}
+                                  verticalAlign="top"
+                                  width={null}
+                                >
+                                  <List
+                                    className="left floated top aligned column only-horizontal-padding"
+                                    horizontal={true}
+                                  >
+                                    <div
+                                      className="ui horizontal list left floated top aligned column only-horizontal-padding"
+                                      role="list"
+                                    >
+                                      <ListItem
+                                        key="0"
+                                      >
+                                        <div
+                                          className="item"
+                                          onClick={[Function]}
+                                          role="listitem"
+                                        >
+                                          <Paragraph
+                                            size="medium"
+                                            weight={null}
+                                          >
+                                            <p
+                                              className=""
+                                            >
+                                              1 Bedroom
+                                            </p>
+                                          </Paragraph>
+                                        </div>
+                                      </ListItem>
+                                    </div>
+                                  </List>
+                                </GridColumn>
+                              </GridColumn>
+                              <GridRow
+                                horizontalAlignContent="left"
+                              >
+                                <GridRow
+                                  textAlign="left"
+                                >
+                                  <div
+                                    className="left aligned row"
+                                  >
+                                    <GridColumn
+                                      only="tablet computer"
+                                      verticalAlignContent="bottom"
+                                      width={4}
+                                    >
+                                      <GridColumn
+                                        only="tablet computer"
+                                        verticalAlign="bottom"
+                                        width={4}
+                                      >
+                                        <div
+                                          className="tablet only computer only bottom aligned four wide column"
+                                        >
+                                          <Modal
+                                            isFullscreen={false}
+                                            size="small"
+                                            trigger={
+                                              <Link
+                                                href={null}
+                                                isPositionedRight={false}
+                                                onClick={[Function]}
+                                                willOpenInNewTab={false}
+                                              >
+                                                More Info
+                                              </Link>
+                                            }
+                                          >
+                                            <Modal
+                                              closeIcon={
+                                                <Icon
+                                                  color={null}
+                                                  hasBorder={false}
+                                                  isCircular={false}
+                                                  isColorInverted={false}
+                                                  isDisabled={false}
+                                                  isLabelLeft={false}
+                                                  labelText={null}
+                                                  labelWeight={null}
+                                                  name="close"
+                                                  path={null}
+                                                  size={null}
+                                                />
+                                              }
+                                              closeOnDimmerClick={true}
+                                              closeOnDocumentClick={false}
+                                              content={
+                                                <ModalContent>
+                                                  <Heading
+                                                    isColorInverted={false}
+                                                    size="medium"
+                                                    textAlign={null}
+                                                  >
+                                                    The Cat House
+                                                  </Heading>
+                                                  <Rating
+                                                    iconSize="small"
+                                                    isShowingNumeral={true}
+                                                    ratingNumber={4}
+                                                  />
+                                                  <Divider
+                                                    className=""
+                                                    hasLine={false}
+                                                    size="small"
+                                                  />
+                                                  <Slideshow
+                                                    additionalClass="no-shadow"
+                                                    hasShadow={true}
+                                                    headingText={null}
+                                                    images={
+                                                      Array [
+                                                        Object {
+                                                          "alternativeText": "Two cats",
+                                                          "title": "Two cats",
+                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                        },
+                                                        Object {
+                                                          "alternativeText": "Two more cats",
+                                                          "title": "Two more cats",
+                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                        },
+                                                        Object {
+                                                          "alternativeText": "Much cats",
+                                                          "title": "Much cats",
+                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                                        },
+                                                      ]
+                                                    }
+                                                    isRounded={true}
+                                                    isShowingBulletNavigation={true}
+                                                    isStretched={false}
+                                                  />
+                                                  <Paragraph
+                                                    size="medium"
+                                                    weight={null}
+                                                  >
+                                                    yayayay
+                                                  </Paragraph>
+                                                  <List
+                                                    horizontal={true}
+                                                  >
+                                                    <ListItem>
+                                                      <Paragraph
+                                                        size="medium"
+                                                        weight="heavy"
+                                                      >
+                                                        1 Bedroom
+                                                      </Paragraph>
+                                                    </ListItem>
+                                                    <ListItem>
+                                                      <Paragraph
+                                                        size="medium"
+                                                        weight="heavy"
+                                                      >
+                                                        1 Dining-Room
+                                                      </Paragraph>
+                                                    </ListItem>
+                                                  </List>
+                                                  <Divider
+                                                    className=""
+                                                    hasLine={true}
+                                                    size="medium"
+                                                  />
+                                                  <Amenities
+                                                    amenities={
+                                                      Array [
+                                                        Object {
+                                                          "iconName": "leaf",
+                                                          "items": Array [
+                                                            "Toaster",
+                                                            "Microwave",
+                                                            "Coffee Machine",
+                                                          ],
+                                                          "name": "Cooking",
+                                                        },
+                                                        Object {
+                                                          "iconName": "paw",
+                                                          "items": Array [
+                                                            "Bidet",
+                                                            "Hair Dryer",
+                                                            "Iron & Board",
+                                                          ],
+                                                          "name": "Bathroom & Laundry",
+                                                        },
+                                                      ]
+                                                    }
+                                                    hasExtraItemsInModal={false}
+                                                    headingText="Room Amenities"
+                                                    isStacked={true}
+                                                    modalTriggerText="View more"
+                                                  />
+                                                  <Grid
+                                                    areColumnsCentered={false}
+                                                  >
+                                                    <GridColumn
+                                                      verticalAlignContent="bottom"
+                                                      width={12}
+                                                    >
+                                                      <Paragraph
+                                                        size="medium"
+                                                        weight={null}
+                                                      >
+                                                        from
+                                                        <strong>
+                                                           $280 
+                                                        </strong>
+                                                        /night
+                                                      </Paragraph>
+                                                    </GridColumn>
+                                                  </Grid>
+                                                </ModalContent>
+                                              }
+                                              dimmer="inverted"
+                                              eventPool="Modal"
+                                              size="small"
+                                              trigger={
+                                                <Link
+                                                  href={null}
+                                                  isPositionedRight={false}
+                                                  onClick={[Function]}
+                                                  willOpenInNewTab={false}
+                                                >
+                                                  More Info
+                                                </Link>
+                                              }
+                                            >
+                                              <Portal
+                                                className="ui inverted page modals dimmer transition visible active"
+                                                closeOnDocumentClick={false}
+                                                closeOnEscape={true}
+                                                closeOnRootNodeClick={true}
+                                                eventPool="Modal"
+                                                mountNode={<body />}
+                                                onClose={[Function]}
+                                                onMount={[Function]}
+                                                onOpen={[Function]}
+                                                onUnmount={[Function]}
+                                                openOnTriggerClick={true}
+                                                trigger={
+                                                  <Link
+                                                    href={null}
+                                                    isPositionedRight={false}
+                                                    onClick={[Function]}
+                                                    willOpenInNewTab={false}
+                                                  >
+                                                    More Info
+                                                  </Link>
+                                                }
+                                              >
+                                                <Ref
+                                                  innerRef={[Function]}
+                                                >
+                                                  <Link
+                                                    href={null}
+                                                    isPositionedRight={false}
+                                                    onBlur={[Function]}
+                                                    onClick={[Function]}
+                                                    onFocus={[Function]}
+                                                    onMouseEnter={[Function]}
+                                                    onMouseLeave={[Function]}
+                                                    willOpenInNewTab={false}
+                                                  >
+                                                    <Button
+                                                      as={null}
+                                                      basic={true}
+                                                      floated="left"
+                                                      href={null}
+                                                      onClick={[Function]}
+                                                      target="_self"
+                                                    >
+                                                      <button
+                                                        className="ui basic left floated button"
+                                                        href={null}
+                                                        onClick={[Function]}
+                                                        role="button"
+                                                        target="_self"
+                                                      >
+                                                        More Info
+                                                      </button>
+                                                    </Button>
+                                                  </Link>
+                                                </Ref>
+                                              </Portal>
+                                            </Modal>
+                                          </Modal>
+                                        </div>
+                                      </GridColumn>
+                                    </GridColumn>
+                                    <GridColumn
+                                      textAlign="left"
+                                      verticalAlignContent="top"
+                                      width={8}
+                                    >
+                                      <GridColumn
+                                        textAlign="left"
+                                        verticalAlign="top"
+                                        width={8}
+                                      >
+                                        <div
+                                          className="left aligned top aligned eight wide column"
+                                        >
+                                          <CardDescription>
+                                            <div
+                                              className="description"
+                                            >
+                                              <span>
+                                                from 
+                                                <Heading
+                                                  isColorInverted={false}
+                                                  size="medium"
+                                                  textAlign={null}
+                                                >
+                                                  <Header
+                                                    as="h3"
+                                                    inverted={false}
+                                                    textAlign={null}
+                                                  >
+                                                    <h3
+                                                      className="ui header"
+                                                    >
+                                                      $280
+                                                    </h3>
+                                                  </Header>
+                                                </Heading>
+                                                /night
+                                              </span>
+                                            </div>
+                                          </CardDescription>
+                                          <ShowOnMobile
+                                            parent={[Function]}
+                                            parentProps={Object {}}
+                                          >
+                                            <Divider
+                                              className="show-on-mobile"
+                                              hasLine={false}
+                                              size="medium"
+                                            >
+                                              <Divider
+                                                className="show-on-mobile"
+                                                hidden={true}
+                                                section={false}
+                                              >
+                                                <div
+                                                  className="ui hidden divider show-on-mobile"
+                                                />
+                                              </Divider>
+                                            </Divider>
+                                          </ShowOnMobile>
+                                        </div>
+                                      </GridColumn>
+                                    </GridColumn>
+                                  </div>
+                                </GridRow>
+                              </GridRow>
+                            </div>
+                          </Grid>
+                        </Grid>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                </div>
+              </GridRow>
+            </GridRow>
+          </div>
+        </Grid>
+      </Grid>
+    </div>
+  </Card>
+</RoomType>
+`;
