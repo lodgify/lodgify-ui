@@ -55,7 +55,7 @@
 /* Derived Responsive Sizes */
 
 /* With the horizontal gutters */
-@reducedHeadingWidth: ~"calc(100% - 30px)";
+@reducedHeadingWidth: ~"calc(100% - @{30px})";
 @withHorizontalCloseIconTop: @25px;
 @withHorizontalCloseIconRight: @25px;
 
