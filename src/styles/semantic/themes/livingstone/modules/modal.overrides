@@ -65,14 +65,14 @@
     }
 
     .ui.divider:first-child + .grid {
-      @media (max-width: (@tabletBreakpoint - 1)) {
+      @media only screen and (max-width: (@tabletBreakpoint - 1)) {
 
         .grid-column-0 .ui.header {
           width: @reducedHeadingWidth;
         }
       }
 
-      @media (min-width: @tabletBreakpoint) {
+      @media only screen and (min-width: @tabletBreakpoint) {
 
         .grid-column-1 .ui.header {
           width: @reducedHeadingWidth;
@@ -82,16 +82,16 @@
   }
 
   > i.icon {
-    @media (min-width: @tabletBreakpoint) {
+    @media only screen and (min-width: @tabletBreakpoint) {
       top: @withHorizontalCloseIconTop;
     }
 
-    @media (min-width: (@horizontalGutterMaxWidth + 1)) {
+    @media only screen and (min-width: (@horizontalGutterMaxWidth + 1)) {
       left: @withHorizontalCloseIconLeft;
       right: auto;
     }
 
-    @media (min-width: @tabletBreakpoint) and (max-width: @horizontalGutterMaxWidth) {
+    @media only screen and (min-width: @tabletBreakpoint) and (max-width: @horizontalGutterMaxWidth) {
       right: @withHorizontalCloseIconRight;
     }
   }
