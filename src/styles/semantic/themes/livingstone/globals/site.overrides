@@ -442,3 +442,20 @@ blockquote.ui.quote .row {
     display: none !important;
   }
 }
+
+/*----------------------
+    Property Page Search
+-----------------------*/
+
+.property-page-searchbar {
+  @media only screen and (max-width: @computerBreakpoint) {
+
+    .show-on-mobile {
+      display: block !important;
+    }
+
+    .show-on-desktop {
+      display: none !important;
+    }
+  }
+}
