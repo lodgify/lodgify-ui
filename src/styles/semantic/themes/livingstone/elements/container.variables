@@ -8,7 +8,7 @@
 
 /* Minimum Gutter is used to determine  the maximum container width for a given device */
 
-@maxWidth: 1120px;
+@maxWidth: @horizontalGutterMaxWidth;
 
 /* Devices */
 @mobileMinimumGutter: 0;
@@ -23,7 +23,7 @@
 
 @computerWidth: 100%;
 @computerGutter: auto;
-@computerPadding: 0 @40px;
+@computerPadding: 0 @horizontalGutterLeftRightPadding;
 
 @largeMonitorWidth: 100%;
 @largeMonitorGutter: auto;

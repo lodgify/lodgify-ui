@@ -57,6 +57,44 @@
     height: 100%;
     overflow: auto;
   }
+
+  .ui.container {
+
+    > .ui.header {
+      width: @reducedHeadingWidth;
+    }
+
+    .ui.divider:first-child + .grid {
+      @media only screen and (max-width: (@tabletBreakpoint - 1)) {
+
+        .grid-column-0 .ui.header {
+          width: @reducedHeadingWidth;
+        }
+      }
+
+      @media only screen and (min-width: @tabletBreakpoint) {
+
+        .grid-column-1 .ui.header {
+          width: @reducedHeadingWidth;
+        }
+      }
+    }
+  }
+
+  > i.icon {
+    @media only screen and (min-width: @tabletBreakpoint) {
+      top: @withHorizontalCloseIconTop;
+    }
+
+    @media only screen and (min-width: (@horizontalGutterMaxWidth + 1)) {
+      left: @withHorizontalCloseIconLeft;
+      right: auto;
+    }
+
+    @media only screen and (min-width: @tabletBreakpoint) and (max-width: @horizontalGutterMaxWidth) {
+      right: @withHorizontalCloseIconRight;
+    }
+  }
 }
 
 /* Coupling */

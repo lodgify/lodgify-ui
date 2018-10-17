@@ -831,6 +831,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                             horizontalAlignContent="left"
                           >
                             <GridColumn
+                              className="grid-column-0"
                               verticalAlignContent="top"
                               width={null}
                             >
@@ -860,6 +861,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               />
                             </GridColumn>
                             <GridColumn
+                              className="grid-column-1"
                               verticalAlignContent="top"
                               width={null}
                             >
@@ -889,6 +891,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               />
                             </GridColumn>
                             <GridColumn
+                              className="grid-column-2"
                               verticalAlignContent="top"
                               width={null}
                             >
@@ -918,6 +921,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               />
                             </GridColumn>
                             <GridColumn
+                              className="grid-column-3"
                               verticalAlignContent="top"
                               width={null}
                             >
@@ -947,6 +951,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               />
                             </GridColumn>
                             <GridColumn
+                              className="grid-column-4"
                               verticalAlignContent="top"
                               width={null}
                             >
