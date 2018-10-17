@@ -53,3 +53,11 @@
 /* Size Widths */
 
 /* Derived Responsive Sizes */
+
+/* With the horizontal gutters */
+@reducedHeadingWidth: ~"calc(100% - @{30px})";
+@withHorizontalCloseIconTop: @25px;
+@withHorizontalCloseIconRight: @25px;
+
+@halfContainerWidthWithPadding: (@horizontalGutterMaxWidth / 2) - (@horizontalGutterLeftRightPadding * 2);
+@withHorizontalCloseIconLeft: ~"calc(50% + @{halfContainerWidthWithPadding})";

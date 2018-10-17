@@ -1,3 +1,15 @@
+# [1.68.0](https://github.com/lodgify/lodgify-ui/compare/v1.67.0...v1.68.0) (2018-10-17)
+
+
+### Bug Fixes
+
+* **Pictures:** update snapshots ([21c434c](https://github.com/lodgify/lodgify-ui/commit/21c434c))
+
+
+### Features
+
+* **Gallery:** move the close icon to align with horizontal gutters ([d8123bd](https://github.com/lodgify/lodgify-ui/commit/d8123bd))
+
 # [1.67.0](https://github.com/lodgify/lodgify-ui/compare/v1.66.2...v1.67.0) (2018-10-15)
 
 

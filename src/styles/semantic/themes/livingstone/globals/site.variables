@@ -429,3 +429,13 @@
 @searchBarFixedZIndex: 999;
 @searchBarFixedPadding: @20px 0;
 @searchBarFixedBoxShadow: 0 -(@4px) @9px -(@6px) rgba(0, 0, 0, 0.29);
+
+/*-------------------
+   Horizontal Gutter
+--------------------*/
+
+/* Minimum Gutter is used to determine the maximum container width for a given device */
+
+@horizontalGutterMaxWidth: 1120px;
+// Must be defined in pixels for accuracy
+@horizontalGutterLeftRightPadding: 40px;
