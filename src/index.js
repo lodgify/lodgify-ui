@@ -86,6 +86,9 @@ export {
   PropertyPageHero,
 } from './components/property-page-widgets/PropertyPageHero';
 export { Pictures } from './components/property-page-widgets/Pictures';
+export {
+  PropertyPageSearchBar,
+} from './components/property-page-widgets/PropertyPageSearchBar';
 export { RoomType } from './components/property-page-widgets/RoomType';
 export { RoomTypes } from './components/property-page-widgets/RoomTypes';
 export { Rates } from './components/property-page-widgets/Rates';
