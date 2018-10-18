@@ -28,7 +28,11 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** Custom class name string to customize the resulting divider. */
+  /**
+   * Custom class name.
+   * Provided by `ShowOnMobile` and `ShowOnDesktop` so ignored in the styleguide.
+   * @ignore
+   */
   className: PropTypes.string,
   /** Does the divider have a visible line. */
   hasLine: PropTypes.bool,
