@@ -11,6 +11,7 @@ import { getDefaultItems } from './utils/getDefaultItems';
 import { hasExtraItems } from './utils/hasExtraItems';
 import { getCategoryMarkup } from './utils/getCategoryMarkup';
 import { getExtraItemsMarkup } from './utils/getExtraItemsMarkup';
+import { getExtraItems } from './utils/getExtraItems';
 
 /**
  * The standard widget for displaying the amenities of a property.
@@ -37,8 +38,7 @@ export const Component = ({
         getExtraItemsMarkup(
           hasExtraItemsInModal,
           modalTriggerText,
-          amenities,
-          isStacked
+          getExtraItems(amenities, isStacked)
         )}
     </GridRow>
   </Grid>
