@@ -1,3 +1,10 @@
+## [1.68.1](https://github.com/lodgify/lodgify-ui/compare/v1.68.0...v1.68.1) (2018-10-18)
+
+
+### Bug Fixes
+
+* **Amenities:** stop items from being duplicated ([80a63dc](https://github.com/lodgify/lodgify-ui/commit/80a63dc))
+
 # [1.68.0](https://github.com/lodgify/lodgify-ui/compare/v1.67.0...v1.68.0) (2018-10-17)
 
 
