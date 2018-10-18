@@ -1,87 +1,56 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Image as SemanticImage, Label } from 'semantic-ui-react';
-import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Paragraph } from 'typography/Paragraph';
-import { IMAGE_NOT_FOUND } from 'utils/default-strings';
-
-import { expectComponentToHaveProps } from '../../../../node_modules/@lodgify/enzyme-jest-expect-helpers/lib/expectComponentToHaveProps';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ResponsiveImage } from './component';
 
-const getResponsiveImage = props => shallow(<ResponsiveImage {...props} />);
+const props = {
+  sources: [],
+  alternativeText: 'Alternative Text 😝',
+  isAvatar: false,
+  isFluid: true,
+  onLoad: Function.prototype,
+  imageTitle: 'ResponsiveImage title',
+};
+
+const getResponsiveImage = extraProps =>
+  mount(<ResponsiveImage {...props} {...extraProps} />);
 
 describe('<ResponsiveImage />', () => {
-  it('should have `picture` component as a wrapper', () => {
-    const wrapper = getResponsiveImage();
+  describe('by default', () => {
+    it('should have the right structure', () => {
+      const actual = getResponsiveImage();
 
-    expectComponentToBe(wrapper, 'picture');
+      expect(actual).toMatchSnapshot();
+    });
   });
 
-  describe('the `ResponsiveImage` component', () => {
-    const props = {
-      imageUrl: 'Dummy URL 🙄',
-      sources: [],
-      alternativeText: 'Alternative Text 😝',
-      className: null,
-      isAvatar: false,
-      isFluid: true,
-      onLoad: Function.prototype,
-      imageTitle: 'ResponsiveImage title',
-    };
+  describe('if `props.imageNotFoundLabelText` is passed', () => {
+    it('should have the right structure', () => {
+      const actual = getResponsiveImage({ imageNotFoundLabelText: 'ayyy' });
 
-    it('should have a <Label> when no imageUrl is provided', () => {
-      const actual = getResponsiveImage().find(Label);
-
-      expect(actual).toHaveLength(1);
+      expect(actual).toMatchSnapshot();
     });
+  });
 
-    describe('the `Label`', () => {
-      const getLabel = props => getResponsiveImage(props).find(Label);
+  describe('if `props.imageUrl` is passed', () => {
+    it('should have the right structure', () => {
+      const actual = getResponsiveImage({ imageUrl: 'Dummy URL 🙄' });
 
-      it('should have the right props', () => {
-        const wrapper = getLabel();
-
-        expectComponentToHaveProps(wrapper, { content: IMAGE_NOT_FOUND });
-      });
-
-      describe('if `props.imageNotFoundLabelText` is passed', () => {
-        it('should have the right props', () => {
-          const wrapper = getLabel({ imageNotFoundLabelText: 'ayyy' });
-
-          expectComponentToHaveProps(wrapper, { content: 'ayyy' });
-        });
-      });
+      expect(actual).toMatchSnapshot();
     });
+  });
 
-    it('should contain a Semantic UI <Image> with the right props', () => {
-      const semanticImage = getResponsiveImage(props).find(SemanticImage);
+  describe('if `props.label` is passed', () => {
+    it('should have the right structure', () => {
+      const actual = getResponsiveImage({ label: '🔷' });
 
-      const actual = semanticImage.props();
-
-      expect(actual).toEqual(
-        expect.objectContaining({
-          src: props.imageUrl,
-          alt: props.alternativeText,
-          avatar: props.isAvatar,
-          className: String.prototype,
-          fluid: props.isFluid,
-          onLoad: props.onLoad,
-          title: props.imageTitle,
-          as: 'img',
-          ui: true,
-        })
-      );
+      expect(actual).toMatchSnapshot();
     });
+  });
 
-    it('should not have any <source> when no imageUrl is provided', () => {
-      const sources = getResponsiveImage(props).find('source');
-
-      expect(sources).toHaveLength(0);
-    });
-
-    it('should have defined the right <source>s when provided', () => {
+  describe('if `props.sources` is passed', () => {
+    it('should have the right structure', () => {
       const sources = [
         {
           srcset:
@@ -94,27 +63,13 @@ describe('<ResponsiveImage />', () => {
           media: '(min-width: 1024px)',
         },
       ];
-      const actual = getResponsiveImage({ ...props, sources }).find('source');
+      const actual = getResponsiveImage({ sources });
 
-      expect(actual).toHaveLength(2);
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  it('should render a single Lodgify UI `Paragraph` component when passed a label prop', () => {
-    const label = '🔷';
-    const wrapper = getResponsiveImage({ label });
-    const actual = wrapper.find(Paragraph);
-
-    expect(actual).toHaveLength(1);
-  });
-
-  describe('the `Paragraph` component', () => {
-    it('should get `props.label` as its children', () => {
-      const label = '🔷';
-      const wrapper = getResponsiveImage({ label });
-      const actual = wrapper.find(Paragraph).prop('children');
-
-      expect(actual).toBe(label);
-    });
+  it('should have `displayName` `ResponsiveImage`', () => {
+    expectComponentToHaveDisplayName(ResponsiveImage, 'ResponsiveImage');
   });
 });

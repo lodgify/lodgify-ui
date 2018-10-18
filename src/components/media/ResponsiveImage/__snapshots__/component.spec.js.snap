@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
+<ResponsiveImage
+  alternativeText="Alternative Text 😝"
+  imageNotFoundLabelText="Image not found!"
+  imageTitle="ResponsiveImage title"
+  imageUrl=""
+  isAvatar={false}
+  isFluid={true}
+  label={null}
+  onLoad={[Function]}
+  sources={Array []}
+>
+  <picture
+    role="figure"
+  >
+    <Image
+      alt="Alternative Text 😝"
+      as="img"
+      avatar={false}
+      fluid={true}
+      onLoad={[Function]}
+      src=""
+      title="ResponsiveImage title"
+      ui={true}
+    >
+      <div
+        alt="Alternative Text 😝"
+        className="ui fluid image"
+        onLoad={[Function]}
+        src=""
+        title="ResponsiveImage title"
+      >
+        <Label
+          content="Image not found!"
+        >
+          <div
+            className="ui label"
+            onClick={[Function]}
+          >
+            Image not found!
+          </div>
+        </Label>
+      </div>
+    </Image>
+  </picture>
+</ResponsiveImage>
+`;
+
+exports[`<ResponsiveImage /> if \`props.imageNotFoundLabelText\` is passed should have the right structure 1`] = `
+<ResponsiveImage
+  alternativeText="Alternative Text 😝"
+  imageNotFoundLabelText="ayyy"
+  imageTitle="ResponsiveImage title"
+  imageUrl=""
+  isAvatar={false}
+  isFluid={true}
+  label={null}
+  onLoad={[Function]}
+  sources={Array []}
+>
+  <picture
+    role="figure"
+  >
+    <Image
+      alt="Alternative Text 😝"
+      as="img"
+      avatar={false}
+      fluid={true}
+      onLoad={[Function]}
+      src=""
+      title="ResponsiveImage title"
+      ui={true}
+    >
+      <div
+        alt="Alternative Text 😝"
+        className="ui fluid image"
+        onLoad={[Function]}
+        src=""
+        title="ResponsiveImage title"
+      >
+        <Label
+          content="ayyy"
+        >
+          <div
+            className="ui label"
+            onClick={[Function]}
+          >
+            ayyy
+          </div>
+        </Label>
+      </div>
+    </Image>
+  </picture>
+</ResponsiveImage>
+`;
+
+exports[`<ResponsiveImage /> if \`props.imageUrl\` is passed should have the right structure 1`] = `
+<ResponsiveImage
+  alternativeText="Alternative Text 😝"
+  imageNotFoundLabelText="Image not found!"
+  imageTitle="ResponsiveImage title"
+  imageUrl="Dummy URL 🙄"
+  isAvatar={false}
+  isFluid={true}
+  label={null}
+  onLoad={[Function]}
+  sources={Array []}
+>
+  <picture
+    role="figure"
+  >
+    <Image
+      alt="Alternative Text 😝"
+      as="img"
+      avatar={false}
+      fluid={true}
+      onLoad={[Function]}
+      src="Dummy URL 🙄"
+      title="ResponsiveImage title"
+      ui={true}
+    >
+      <img
+        alt="Alternative Text 😝"
+        className="ui fluid image"
+        onLoad={[Function]}
+        src="Dummy URL 🙄"
+        title="ResponsiveImage title"
+      />
+    </Image>
+  </picture>
+</ResponsiveImage>
+`;
+
+exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right structure 1`] = `
+<ResponsiveImage
+  alternativeText="Alternative Text 😝"
+  imageNotFoundLabelText="Image not found!"
+  imageTitle="ResponsiveImage title"
+  imageUrl=""
+  isAvatar={false}
+  isFluid={true}
+  label="🔷"
+  onLoad={[Function]}
+  sources={Array []}
+>
+  <picture
+    role="figure"
+  >
+    <Image
+      alt="Alternative Text 😝"
+      as="img"
+      avatar={false}
+      fluid={true}
+      onLoad={[Function]}
+      src=""
+      title="ResponsiveImage title"
+      ui={true}
+    >
+      <div
+        alt="Alternative Text 😝"
+        className="ui fluid image"
+        onLoad={[Function]}
+        src=""
+        title="ResponsiveImage title"
+      >
+        <Label
+          content="Image not found!"
+        >
+          <div
+            className="ui label"
+            onClick={[Function]}
+          >
+            Image not found!
+          </div>
+        </Label>
+      </div>
+    </Image>
+    <Paragraph
+      size="medium"
+      weight={null}
+    >
+      <p
+        className=""
+      >
+        🔷
+      </p>
+    </Paragraph>
+  </picture>
+</ResponsiveImage>
+`;
+
+exports[`<ResponsiveImage /> if \`props.sources\` is passed should have the right structure 1`] = `
+<ResponsiveImage
+  alternativeText="Alternative Text 😝"
+  imageNotFoundLabelText="Image not found!"
+  imageTitle="ResponsiveImage title"
+  imageUrl=""
+  isAvatar={false}
+  isFluid={true}
+  label={null}
+  onLoad={[Function]}
+  sources={
+    Array [
+      Object {
+        "media": "(min-width: 1200px)",
+        "srcset": "https://si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max",
+      },
+      Object {
+        "media": "(min-width: 1024px)",
+        "srcset": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+      },
+    ]
+  }
+>
+  <picture
+    role="figure"
+  >
+    <source
+      key="https://si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max0"
+      media="(min-width: 1200px)"
+      srcSet="https://si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max"
+    />
+    <source
+      key="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max1"
+      media="(min-width: 1024px)"
+      srcSet="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+    />
+    <Image
+      alt="Alternative Text 😝"
+      as="img"
+      avatar={false}
+      fluid={true}
+      onLoad={[Function]}
+      src=""
+      title="ResponsiveImage title"
+      ui={true}
+    >
+      <div
+        alt="Alternative Text 😝"
+        className="ui fluid image"
+        onLoad={[Function]}
+        src=""
+        title="ResponsiveImage title"
+      >
+        <Label
+          content="Image not found!"
+        >
+          <div
+            className="ui label"
+            onClick={[Function]}
+          >
+            Image not found!
+          </div>
+        </Label>
+      </div>
+    </Image>
+  </picture>
+</ResponsiveImage>
+`;
