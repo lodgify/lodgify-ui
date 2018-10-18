@@ -1,62 +1,38 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Segment } from 'semantic-ui-react';
-import {
-  expectComponentToBe,
-  expectComponentToHaveDisplayName,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { getBackgroundImageUrl } from 'utils/get-background-image-url';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as FullBleed } from './component';
 
 const props = {
-  children: '🚸',
   imageUrl: '🐱🐱',
 };
 
 const getFullBleed = extraProps =>
-  shallow(<FullBleed {...props} {...extraProps} />);
-const getSegment = extraProps => getFullBleed(extraProps).find(Segment);
+  mount(<FullBleed {...props} {...extraProps} />);
 
 describe('<FullBleed />', () => {
-  it('should render a single Semantic UI `Segment` component', () => {
-    const wrapper = getFullBleed();
+  describe('by default', () => {
+    it('should have the right structure', () => {
+      const actual = getFullBleed();
 
-    expectComponentToBe(wrapper, Segment);
-  });
-
-  describe('the `Segment` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getSegment();
-
-      expectComponentToHaveProps(wrapper, {
-        children: props.children,
-        className: 'full-bleed',
-        style: { backgroundImage: getBackgroundImageUrl(props.imageUrl) },
-        vertical: true,
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 
   describe('if `hasGradient` is passed', () => {
-    it('should have the correct `props.className`', () => {
-      const wrapper = getSegment({ hasGradient: true });
+    it('should have the right structure', () => {
+      const actual = getFullBleed({ hasGradient: true });
 
-      expectComponentToHaveProps(wrapper, {
-        className: 'full-bleed has-gradient',
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('if `props.className` is passed', () => {
-    it('should have the correct `props.className`', () => {
-      const wrapper = getSegment({ className: '🏛' });
+  describe('if `props.children > 0`', () => {
+    it('should have the right structure', () => {
+      const actual = getFullBleed({ children: '🏛' });
 
-      expectComponentToHaveProps(wrapper, {
-        className: 'full-bleed 🏛',
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 
