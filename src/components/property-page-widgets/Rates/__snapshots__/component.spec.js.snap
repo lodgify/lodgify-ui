@@ -1388,7 +1388,6 @@ exports[`<Rates /> by default should have the right structure 1`] = `
       className="show-on-desktop"
     >
       <Table
-        className=""
         tableBody={
           Array [
             Array [
@@ -1544,7 +1543,6 @@ exports[`<Rates /> by default should have the right structure 1`] = `
         <Table
           as="table"
           basic="very"
-          className=""
           padded={true}
           striped={true}
         >
@@ -4161,7 +4159,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
       className="show-on-desktop"
     >
       <Table
-        className=""
         tableBody={
           Array [
             Array [
@@ -4317,7 +4314,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         <Table
           as="table"
           basic="very"
-          className=""
           padded={true}
           striped={true}
         >
