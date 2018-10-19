@@ -86,7 +86,7 @@
     }
   }
 
-  &.is-hero {
+  &.has-children {
     flex-direction: column;
 
     > * {

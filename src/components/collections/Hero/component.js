@@ -23,7 +23,7 @@ export const Component = ({
   searchBarGetIsDayBlocked,
   searchBarOnSubmit,
 }) => (
-  <FullBleed className="is-hero" hasGradient imageUrl={backgroundImageUrl}>
+  <FullBleed hasGradient imageUrl={backgroundImageUrl}>
     <Header
       activeNavigationItemIndex={activeNavigationItemIndex}
       logoSrc={headerLogoSrc}

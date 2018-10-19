@@ -49,7 +49,11 @@ Component.defaultProps = {
 Component.propTypes = {
   /** Text to help visually impaired users understand the content of the image. */
   alternativeText: PropTypes.string,
-  /** Custom class name string to customize the resulting thumbnail. */
+  /**
+   * Custom class name.
+   * Provided by `ShowOnMobile` and `ShowOnDesktop` so ignored in the styleguide.
+   * @ignore
+   */
   className: PropTypes.string,
   /** Is the thumbnail rounded on the corners */
   hasRoundedCorners: PropTypes.bool,
