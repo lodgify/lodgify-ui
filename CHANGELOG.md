@@ -1,3 +1,15 @@
+## [1.69.1](https://github.com/lodgify/lodgify-ui/compare/v1.69.0...v1.69.1) (2018-10-19)
+
+
+### Bug Fixes
+
+* **Divider:** hide className prop on styleguide ([3a329e5](https://github.com/lodgify/lodgify-ui/commit/3a329e5))
+* **FullBleed:** remove exposed className prop ([08158a6](https://github.com/lodgify/lodgify-ui/commit/08158a6))
+* **Hero:** remove className prop ([5b62e2d](https://github.com/lodgify/lodgify-ui/commit/5b62e2d))
+* **ResponsiveImage:** remove className prop ([5a40db5](https://github.com/lodgify/lodgify-ui/commit/5a40db5))
+* **Table:** unexpose className prop ([67765a4](https://github.com/lodgify/lodgify-ui/commit/67765a4))
+* **Thumbnail:** hide className prop on styleguide ([4125adb](https://github.com/lodgify/lodgify-ui/commit/4125adb))
+
 # [1.69.0](https://github.com/lodgify/lodgify-ui/compare/v1.68.1...v1.69.0) (2018-10-18)
 
 
