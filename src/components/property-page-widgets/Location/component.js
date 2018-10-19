@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { size } from 'lodash';
 
 import { LOCATION } from 'utils/default-strings';
-import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
-import { withResponsive } from 'utils/with-responsive';
 import { Divider } from 'elements/Divider';
+import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { GoogleMap } from 'elements/GoogleMap';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Subheading } from 'typography/Subheading';
+import { withResponsive } from 'utils/with-responsive';
 
 import { getTransportOptionsMarkup } from './utils/getTransportOptionsMarkup';
 import { getGoogleMapHeight } from './utils/getGoogleMapHeight';
@@ -38,21 +39,25 @@ const Component = ({
       <Heading>{headingText}</Heading>
       <Subheading>{locationSummary}</Subheading>
     </GridColumn>
-    <GridColumn computer={6} tablet={12}>
-      {getParagraphsFromStrings(locationDescription).map(
-        (paragraphText, index) => (
-          <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-            {paragraphText}
-          </Paragraph>
-        )
-      )}
-    </GridColumn>
-    <ShowOnDesktop
-      parent={GridColumn}
-      parentProps={{ computer: 6, tablet: 12 }}
-    >
-      {getTransportOptionsMarkup(transportOptions)}
-    </ShowOnDesktop>
+    {!!locationDescription && (
+      <GridColumn computer={6} tablet={12}>
+        {getParagraphsFromStrings(locationDescription).map(
+          (paragraphText, index) => (
+            <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
+              {paragraphText}
+            </Paragraph>
+          )
+        )}
+      </GridColumn>
+    )}
+    {size(transportOptions) > 0 && (
+      <ShowOnDesktop
+        parent={GridColumn}
+        parentProps={{ computer: 6, tablet: 12 }}
+      >
+        {getTransportOptionsMarkup(transportOptions)}
+      </ShowOnDesktop>
+    )}
     <GridColumn width={12}>
       <GoogleMap
         height={getGoogleMapHeight(isUserOnMobile)}
@@ -62,10 +67,12 @@ const Component = ({
         longitude={longitude}
       />
     </GridColumn>
-    <ShowOnMobile parent={GridColumn} parentProps={{ width: 12 }}>
-      <Divider />
-      {getTransportOptionsMarkup(transportOptions)}
-    </ShowOnMobile>
+    {size(transportOptions) > 0 && (
+      <ShowOnMobile parent={GridColumn} parentProps={{ width: 12 }}>
+        <Divider />
+        {getTransportOptionsMarkup(transportOptions)}
+      </ShowOnMobile>
+    )}
   </Grid>
 );
 
@@ -75,6 +82,8 @@ Component.defaultProps = {
   headingText: LOCATION,
   isShowingApproximateLocation: false,
   isShowingExactLocation: false,
+  locationDescription: null,
+  transportOptions: [],
 };
 
 Component.propTypes = {
@@ -93,7 +102,7 @@ Component.propTypes = {
   /** The latitude coordinate for the center of the map and/or location of the marker */
   latitude: PropTypes.number.isRequired,
   /** The text description of the location. */
-  locationDescription: PropTypes.string.isRequired,
+  locationDescription: PropTypes.string,
   /** The summary of the location. */
   locationSummary: PropTypes.string.isRequired,
   /** The longitude coordinate for the center of the map and/or location of the marker */
@@ -111,7 +120,7 @@ Component.propTypes = {
       /** A visible label to display for the transport option. */
       label: PropTypes.string.isRequired,
     })
-  ).isRequired,
+  ),
 };
 
 export const ComponentWithResponsive = withResponsive(Component);

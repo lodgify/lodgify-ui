@@ -13,6 +13,7 @@ import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { IconCard } from 'elements/IconCard';
 import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 import { Divider } from 'elements/Divider';
@@ -36,11 +37,12 @@ const props = {
   longitude: 2.158105,
 };
 
-const getLocation = () => shallow(<Location {...props} />);
-const getWrappedLocation = () => {
-  const Child = getLocation().prop('as');
+const getLocation = extraProps =>
+  shallow(<Location {...props} {...extraProps} />);
+const getWrappedLocation = extraProps => {
+  const Child = getLocation(extraProps).prop('as');
 
-  return shallow(<Child {...props} isUserOnMobile={false} />);
+  return shallow(<Child {...props} {...extraProps} isUserOnMobile={false} />);
 };
 
 describe('<Location />', () => {
@@ -212,6 +214,42 @@ describe('<Location />', () => {
       const wrapper = getShowOnMobile();
 
       expectComponentToHaveChildren(wrapper, Divider, Label.Group);
+    });
+  });
+
+  describe('the `locationDescription`', () => {
+    it('should render the location description markup', () => {
+      const wrapper = getWrappedLocation({
+        locationDescription,
+      }).find(Paragraph);
+
+      expect(wrapper).toHaveLength(1);
+    });
+
+    it('should not render the location description markup if not set', () => {
+      const wrapper = getWrappedLocation({
+        locationDescription: '',
+      }).find(Paragraph);
+
+      expect(wrapper).toHaveLength(0);
+    });
+  });
+
+  describe('the `transportOptions`', () => {
+    it('should render the transport options markup', () => {
+      const wrapper = getWrappedLocation({
+        transportOptions,
+      }).find(IconCard);
+
+      expect(wrapper).toHaveLength(8);
+    });
+
+    it('should not render the transport options markup if not set', () => {
+      const wrapper = getWrappedLocation({
+        transportOptions: [],
+      }).find(IconCard);
+
+      expect(wrapper).toHaveLength(0);
     });
   });
 
