@@ -1,3 +1,17 @@
+# [1.69.0](https://github.com/lodgify/lodgify-ui/compare/v1.68.1...v1.69.0) (2018-10-18)
+
+
+### Bug Fixes
+
+* **SearchBar:**  add Grid as a wrapper to change ui component width ([f2df78d](https://github.com/lodgify/lodgify-ui/commit/f2df78d))
+
+
+### Features
+
+* **PropertyPageSearchBar:** implement property page widget ([4d7b121](https://github.com/lodgify/lodgify-ui/commit/4d7b121))
+* **PropertyPageSearchBar:** implement unit test and snapshot ([f8235fc](https://github.com/lodgify/lodgify-ui/commit/f8235fc))
+* **siteOverrides:** implement PropertyPageSearchBar responsive styles ([820a0c4](https://github.com/lodgify/lodgify-ui/commit/820a0c4))
+
 ## [1.68.1](https://github.com/lodgify/lodgify-ui/compare/v1.68.0...v1.68.1) (2018-10-18)
 
 
