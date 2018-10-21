@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FullBleed /> by default should have the right structure 1`] = `
+<FullBleed
+  hasGradient={false}
+  imageUrl="🐱🐱"
+>
+  <Segment
+    className="full-bleed"
+    style={
+      Object {
+        "backgroundImage": "url(🐱🐱)",
+      }
+    }
+    vertical={true}
+  >
+    <div
+      className="ui vertical segment full-bleed"
+      style={
+        Object {
+          "backgroundImage": "url(🐱🐱)",
+        }
+      }
+    />
+  </Segment>
+</FullBleed>
+`;
+
+exports[`<FullBleed /> if \`hasGradient\` is passed should have the right structure 1`] = `
+<FullBleed
+  hasGradient={true}
+  imageUrl="🐱🐱"
+>
+  <Segment
+    className="full-bleed has-gradient"
+    style={
+      Object {
+        "backgroundImage": "url(🐱🐱)",
+      }
+    }
+    vertical={true}
+  >
+    <div
+      className="ui vertical segment full-bleed has-gradient"
+      style={
+        Object {
+          "backgroundImage": "url(🐱🐱)",
+        }
+      }
+    />
+  </Segment>
+</FullBleed>
+`;
+
+exports[`<FullBleed /> if \`props.children > 0\` should have the right structure 1`] = `
+<FullBleed
+  hasGradient={false}
+  imageUrl="🐱🐱"
+>
+  <Segment
+    className="full-bleed has-children"
+    style={
+      Object {
+        "backgroundImage": "url(🐱🐱)",
+      }
+    }
+    vertical={true}
+  >
+    <div
+      className="ui vertical segment full-bleed has-children"
+      style={
+        Object {
+          "backgroundImage": "url(🐱🐱)",
+        }
+      }
+    >
+      🏛
+    </div>
+  </Segment>
+</FullBleed>
+`;

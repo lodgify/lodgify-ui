@@ -208,7 +208,7 @@ describe('getAmenityMarkup', () => {
 
         expectComponentToHaveChildren(
           wrapper,
-          ...getArrayOfLengthOfItem(5, GridColumn)
+          ...getArrayOfLengthOfItem(2, GridColumn)
         );
       });
     });

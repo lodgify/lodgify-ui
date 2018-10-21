@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
 import { Image, Label } from 'semantic-ui-react';
 
 import {
@@ -17,7 +16,6 @@ import { Paragraph } from 'typography/Paragraph';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   alternativeText,
-  className,
   imageNotFoundLabelText,
   imageTitle,
   imageUrl,
@@ -38,7 +36,6 @@ export const Component = ({
     <Image
       alt={alternativeText}
       avatar={isAvatar}
-      className={cx(className)}
       fluid={isFluid}
       onLoad={onLoad}
       src={imageUrl}
@@ -54,7 +51,6 @@ Component.displayName = 'ResponsiveImage';
 
 Component.defaultProps = {
   alternativeText: IMAGE_WIDGET,
-  className: null,
   imageNotFoundLabelText: IMAGE_NOT_FOUND,
   imageTitle: IMAGE_TITLE,
   imageUrl: '',
@@ -68,8 +64,6 @@ Component.defaultProps = {
 Component.propTypes = {
   /** Alternative text to show if the image can't be loaded by the browser */
   alternativeText: PropTypes.string,
-  /** Custom class name string to customize the resulting img */
-  className: PropTypes.string,
   /** The label text for the when the image is not found. */
   imageNotFoundLabelText: PropTypes.string,
   /** Title of the image to show when hovering it on desktop browsers */

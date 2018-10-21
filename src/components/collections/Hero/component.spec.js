@@ -1,21 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import {
-  expectComponentToBe,
-  expectComponentToHaveChildren,
-  expectComponentToHaveProps,
-  expectComponentToHaveDisplayName,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Header } from 'collections/Header';
-import { FullBleed } from 'media/FullBleed';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Hero } from './component';
 
 const props = {
   activeNavigationItemIndex: 1,
   backgroundImageUrl: 'https://darkpurple.com',
-  heading: 'Heading',
   headerLogoSrc: 'https://darkgreen.com',
   headerLogoText: 'Livingstone Cottage',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
@@ -24,60 +15,19 @@ const props = {
   headerSearchBarLocationOptions: [
     { href: 'anotherHref', text: 'anotherText' },
   ],
+  headerSearchBarModalHeadingText: 'Heading',
   searchBarOnSubmit: Function.prototype,
 };
 
 const getHeroComponent = extraProps =>
-  shallow(<Hero {...props} {...extraProps} />);
+  mount(<Hero {...props} {...extraProps} />);
 
 describe('<Hero />', () => {
-  it('should render a single `FullBleed` component', () => {
-    const wrapper = getHeroComponent();
+  describe('by default', () => {
+    it('should render the right structure', () => {
+      const actual = getHeroComponent();
 
-    expectComponentToBe(wrapper, FullBleed);
-  });
-
-  it('should have the right props', () => {
-    const wrapper = getHeroComponent();
-
-    expectComponentToHaveProps(wrapper, {
-      className: 'is-hero',
-      hasGradient: true,
-      imageUrl: 'https://darkpurple.com',
-    });
-  });
-
-  it('should have the right children', () => {
-    const wrapper = getHeroComponent();
-
-    expectComponentToHaveChildren(wrapper, Header);
-  });
-
-  describe('the `Header` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getHeroComponent().find(Header);
-
-      expectComponentToHaveProps(wrapper, {
-        activeNavigationItemIndex: props.activeNavigationItemIndex,
-        logoSrc: props.headerLogoSrc,
-        logoText: props.headerLogoText,
-        navigationItems: props.headerNavigationItems,
-        primaryCTA: props.headerPrimaryCTA,
-        searchBarGuestsOptions: props.headerSearchBarGuestsOptions,
-        searchBarLocationOptions: props.headerSearchBarLocationOptions,
-        searchBarOnSubmit: props.searchBarOnSubmit,
-      });
-    });
-  });
-
-  describe('if `props.children` is passed', () => {
-    it('should render the right children', () => {
-      const children = '👶👶';
-      const wrapper = getHeroComponent({
-        children,
-      });
-
-      expectComponentToHaveChildren(wrapper, Header, children);
+      expect(actual).toMatchSnapshot();
     });
   });
 

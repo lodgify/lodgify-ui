@@ -58,26 +58,28 @@ export class Component extends PureComponent {
             'is-fixed': isFixed,
           })}
         >
-          <HorizontalGutters as={Grid}>
-            <GridRow verticalAlign="middle">
-              <GridColumn width={5}>{summaryElement}</GridColumn>
-              <GridColumn floated="right" width={7}>
-                {isDisplayedAsModal ? (
-                  searchBarAsModal
-                ) : (
-                  <Form onSubmit={this.handleSubmit}>
-                    <Form.Group>
-                      {getFormFieldMarkup(
-                        this.props,
-                        this.persistInputChange,
-                        false,
-                        true
-                      )}
-                    </Form.Group>
-                  </Form>
-                )}
-              </GridColumn>
-            </GridRow>
+          <HorizontalGutters>
+            <Grid>
+              <GridRow verticalAlign="middle">
+                <GridColumn width={5}>{summaryElement}</GridColumn>
+                <GridColumn floated="right" width={7}>
+                  {isDisplayedAsModal ? (
+                    searchBarAsModal
+                  ) : (
+                    <Form onSubmit={this.handleSubmit}>
+                      <Form.Group>
+                        {getFormFieldMarkup(
+                          this.props,
+                          this.persistInputChange,
+                          false,
+                          true
+                        )}
+                      </Form.Group>
+                    </Form>
+                  )}
+                </GridColumn>
+              </GridRow>
+            </Grid>
           </HorizontalGutters>
         </div>
       );
@@ -124,15 +126,16 @@ Component.defaultProps = {
   summaryElement: null,
   willDropdownsOpenAbove: false,
 };
-/* eslint react/no-unused-prop-types: 0 */
 Component.propTypes = {
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
-   * @returns{boolean}     - Is the day blocked.
+   * @returns {boolean}     - Is the day blocked.
    */
+  // eslint-disable-next-line react/no-unused-prop-types
   getIsDayBlocked: PropTypes.func,
   /** The options which the user can select in the guests field. */
+  // eslint-disable-next-line react/no-unused-prop-types
   guestsOptions: PropTypes.arrayOf(
     PropTypes.shape({
       /** The visible text for the option. */
@@ -150,8 +153,10 @@ Component.propTypes = {
   /** Is the Search Bar fixed to the bottom of the window */
   isFixed: PropTypes.bool,
   /** Is Search Bar showing the Property Summary info. */
+  // eslint-disable-next-line react/no-unused-prop-types
   isShowingSummary: PropTypes.bool,
   /** The options which the user can select in the location field. */
+  // eslint-disable-next-line react/no-unused-prop-types
   locationOptions: PropTypes.arrayOf(
     PropTypes.shape({
       /** The visible text for the option. */
@@ -178,6 +183,7 @@ Component.propTypes = {
    */
   onSubmit: PropTypes.func,
   /** The Search Button the Search Bar displays. */
+  // eslint-disable-next-line react/no-unused-prop-types
   searchButton: PropTypes.node,
   /** The element to display in the fixed container */
   summaryElement: PropTypes.node,
