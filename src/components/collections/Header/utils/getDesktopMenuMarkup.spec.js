@@ -1,12 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 import { navigationItems } from '../mock-data/navigationItems';
 
 import { getDesktopMenuMarkup } from './getDesktopMenuMarkup';
 
 const getMarkupAsRenderedComponent = extraProps =>
-  shallow(
+  mount(
     <div>
       {getDesktopMenuMarkup({
         activeNavigationItemIndex: 1,
