@@ -19,6 +19,7 @@ export const Component = ({ children, parent, parentProps }) =>
 
 Component.defaultProps = {
   children: null,
+  parent: 'div',
   parentProps: {},
 };
 
@@ -28,7 +29,7 @@ Component.propTypes = {
   /** The child components only to be rendered on desktop  */
   children: PropTypes.node,
   /** The parent component that will be rendered. */
-  parent: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
+  parent: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
   /** The props to be passed to the parent component. */
   // eslint-disable-next-line react/forbid-prop-types
   parentProps: PropTypes.object,
