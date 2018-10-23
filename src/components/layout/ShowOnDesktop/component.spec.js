@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ShowOnDesktop } from './component';
@@ -12,7 +12,7 @@ const props = {
   },
 };
 
-const getShowOnDesktop = () => shallow(<ShowOnDesktop {...props} />);
+const getShowOnDesktop = () => mount(<ShowOnDesktop {...props} />);
 
 describe('<ShowOnDesktop />', () => {
   it('it should render the right structure', () => {
