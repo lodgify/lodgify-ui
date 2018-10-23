@@ -14,13 +14,14 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
     >
       <ResponsiveImage
         alternativeText="Image Widget"
+        imageHeight={null}
         imageNotFoundLabelText="Image not found!"
         imageTitle="Image Title"
         imageUrl="🐱🐱"
+        imageWidth={null}
         isAvatar={false}
         isFluid={true}
         label={null}
-        onLoad={[Function]}
         sources={Array []}
       >
         <picture
@@ -32,17 +33,19 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
             as="img"
             avatar={false}
             fluid={true}
-            onLoad={[Function]}
+            height={null}
             src="🐱🐱"
             title="Image Title"
             ui={true}
+            width={null}
           >
             <img
               alt="Image Widget"
               className="ui fluid image"
-              onLoad={[Function]}
+              height={null}
               src="🐱🐱"
               title="Image Title"
+              width={null}
             />
           </Image>
         </picture>
@@ -66,13 +69,14 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
     >
       <ResponsiveImage
         alternativeText="Image Widget"
+        imageHeight={null}
         imageNotFoundLabelText="Image not found!"
         imageTitle="Image Title"
         imageUrl="🐱🐱"
+        imageWidth={null}
         isAvatar={false}
         isFluid={true}
         label={null}
-        onLoad={[Function]}
         sources={Array []}
       >
         <picture
@@ -84,17 +88,19 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
             as="img"
             avatar={false}
             fluid={true}
-            onLoad={[Function]}
+            height={null}
             src="🐱🐱"
             title="Image Title"
             ui={true}
+            width={null}
           >
             <img
               alt="Image Widget"
               className="ui fluid image"
-              onLoad={[Function]}
+              height={null}
               src="🐱🐱"
               title="Image Title"
+              width={null}
             />
           </Image>
         </picture>
@@ -118,13 +124,14 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
     >
       <ResponsiveImage
         alternativeText="Image Widget"
+        imageHeight={null}
         imageNotFoundLabelText="Image not found!"
         imageTitle="Image Title"
         imageUrl="🐱🐱"
+        imageWidth={null}
         isAvatar={false}
         isFluid={true}
         label={null}
-        onLoad={[Function]}
         sources={Array []}
       >
         <picture
@@ -136,17 +143,19 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
             as="img"
             avatar={false}
             fluid={true}
-            onLoad={[Function]}
+            height={null}
             src="🐱🐱"
             title="Image Title"
             ui={true}
+            width={null}
           >
             <img
               alt="Image Widget"
               className="ui fluid image"
-              onLoad={[Function]}
+              height={null}
               src="🐱🐱"
               title="Image Title"
+              width={null}
             />
           </Image>
         </picture>

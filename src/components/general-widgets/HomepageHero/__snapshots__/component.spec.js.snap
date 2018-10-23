@@ -103,13 +103,14 @@ exports[`HomepageHero by default should render the right structure 1`] = `
         >
           <ResponsiveImage
             alternativeText="Image Widget"
+            imageHeight={null}
             imageNotFoundLabelText="Image not found!"
             imageTitle="Image Title"
             imageUrl="url"
+            imageWidth={null}
             isAvatar={false}
             isFluid={true}
             label={null}
-            onLoad={[Function]}
             sources={Array []}
           >
             <picture
@@ -121,17 +122,19 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                 as="img"
                 avatar={false}
                 fluid={true}
-                onLoad={[Function]}
+                height={null}
                 src="url"
                 title="Image Title"
                 ui={true}
+                width={null}
               >
                 <img
                   alt="Image Widget"
                   className="ui fluid image"
-                  onLoad={[Function]}
+                  height={null}
                   src="url"
                   title="Image Title"
+                  width={null}
                 />
               </Image>
             </picture>
