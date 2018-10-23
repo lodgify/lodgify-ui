@@ -1,3 +1,10 @@
+# [1.70.0](https://github.com/lodgify/lodgify-ui/compare/v1.69.1...v1.70.0) (2018-10-23)
+
+
+### Features
+
+* **Location:** locationDescription and transportOptions are now optional ([514c790](https://github.com/lodgify/lodgify-ui/commit/514c790))
+
 ## [1.69.1](https://github.com/lodgify/lodgify-ui/compare/v1.69.0...v1.69.1) (2018-10-19)
 
 
