@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 import { navigationItems } from '../mock-data/navigationItems';
 
@@ -15,7 +15,7 @@ const searchBarModalHeadingText = 'someHeadingText';
 const searchBarSearchButton = 'button boy';
 
 const getMarkupAsRenderedComponent = extraProps =>
-  shallow(
+  mount(
     <div>
       {getMobileMenuMarkup({
         activeNavigationItemIndex: 0,

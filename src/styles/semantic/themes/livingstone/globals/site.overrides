@@ -428,7 +428,7 @@ blockquote.ui.quote .row {
 -----------------------*/
 
 /* Hide on mobile screens */
-@media only screen and (min-width: @smallestComputerBreakpoint) {
+@media @computerScreen {
 
   .show-on-mobile {
     display: none !important;
@@ -436,7 +436,7 @@ blockquote.ui.quote .row {
 }
 
 /* Hide on desktop screens */
-@media only screen and (max-width: @tabletBreakpoint) {
+@media @tabletScreen {
 
   .show-on-desktop {
     display: none !important;

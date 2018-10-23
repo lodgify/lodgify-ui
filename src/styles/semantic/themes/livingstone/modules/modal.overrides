@@ -64,17 +64,10 @@
       width: @reducedHeadingWidth;
     }
 
-    .ui.divider:first-child + .grid {
-      @media only screen and (max-width: (@tabletBreakpoint - 1)) {
-
-        .grid-column-0 .ui.header {
-          width: @reducedHeadingWidth;
-        }
-      }
-
+    .ui.divider:first-child + .grid .top.column {
       @media only screen and (min-width: @tabletBreakpoint) {
 
-        .grid-column-1 .ui.header {
+        &:nth-child(2) .ui.header {
           width: @reducedHeadingWidth;
         }
       }

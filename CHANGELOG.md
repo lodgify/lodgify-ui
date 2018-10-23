@@ -1,3 +1,31 @@
+## [1.70.3](https://github.com/lodgify/lodgify-ui/compare/v1.70.2...v1.70.3) (2018-10-23)
+
+
+### Bug Fixes
+
+* **menu:** add theming to menu item underlines ([c183a2e](https://github.com/lodgify/lodgify-ui/commit/c183a2e))
+
+## [1.70.2](https://github.com/lodgify/lodgify-ui/compare/v1.70.1...v1.70.2) (2018-10-23)
+
+
+### Bug Fixes
+
+* **Promotion:** Promotion code is centered when displayed as stacked ([8ea5cdc](https://github.com/lodgify/lodgify-ui/commit/8ea5cdc))
+
+## [1.70.1](https://github.com/lodgify/lodgify-ui/compare/v1.70.0...v1.70.1) (2018-10-23)
+
+
+### Bug Fixes
+
+* **HostProfile:** remove invalid prop ([2890567](https://github.com/lodgify/lodgify-ui/commit/2890567))
+
+# [1.70.0](https://github.com/lodgify/lodgify-ui/compare/v1.69.1...v1.70.0) (2018-10-23)
+
+
+### Features
+
+* **Location:** locationDescription and transportOptions are now optional ([514c790](https://github.com/lodgify/lodgify-ui/commit/514c790))
+
 ## [1.69.1](https://github.com/lodgify/lodgify-ui/compare/v1.69.0...v1.69.1) (2018-10-19)
 
 

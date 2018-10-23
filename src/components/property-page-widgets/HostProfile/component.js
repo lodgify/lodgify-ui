@@ -45,9 +45,7 @@ export const Component = ({
         <Item.Group unstackable>
           <Item>
             <Item.Image avatar size="tiny" src={avatarUrl} />
-            <Item.Header as="h4" verticalAlign="middle">
-              {name}
-            </Item.Header>
+            <Item.Header as="h4">{name}</Item.Header>
           </Item>
         </Item.Group>
       </GridColumn>

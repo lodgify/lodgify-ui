@@ -17,7 +17,7 @@ export const Component = ({
   searchButton,
 }) => (
   <div className="property-page-searchbar">
-    <ShowOnDesktop parent="div">
+    <ShowOnDesktop>
       <SearchBar
         guestsOptions={guestsOptions}
         isFixed={isFixed}
@@ -25,7 +25,7 @@ export const Component = ({
         summaryElement={summaryElement}
       />
     </ShowOnDesktop>
-    <ShowOnMobile parent="div">
+    <ShowOnMobile>
       <SearchBar
         guestsOptions={guestsOptions}
         isDisplayedAsModal
