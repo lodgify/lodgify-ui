@@ -1,3 +1,10 @@
+## [1.70.2](https://github.com/lodgify/lodgify-ui/compare/v1.70.1...v1.70.2) (2018-10-23)
+
+
+### Bug Fixes
+
+* **Promotion:** Promotion code is centered when displayed as stacked ([8ea5cdc](https://github.com/lodgify/lodgify-ui/commit/8ea5cdc))
+
 ## [1.70.1](https://github.com/lodgify/lodgify-ui/compare/v1.70.0...v1.70.1) (2018-10-23)
 
 
