@@ -45,21 +45,46 @@ exports[`<Hero /> by default should render the right structure 1`] = `
   >
     <Segment
       className="full-bleed has-gradient has-children"
-      style={
-        Object {
-          "backgroundImage": "url(https://darkpurple.com)",
-        }
-      }
       vertical={true}
     >
       <div
         className="ui vertical segment full-bleed has-gradient has-children"
-        style={
-          Object {
-            "backgroundImage": "url(https://darkpurple.com)",
-          }
-        }
       >
+        <ResponsiveImage
+          alternativeText="Image Widget"
+          imageNotFoundLabelText="Image not found!"
+          imageTitle="Image Title"
+          imageUrl="https://darkpurple.com"
+          isAvatar={false}
+          isFluid={true}
+          label={null}
+          onLoad={[Function]}
+          sources={Array []}
+        >
+          <picture
+            className="responsive-image is-fluid"
+            role="figure"
+          >
+            <Image
+              alt="Image Widget"
+              as="img"
+              avatar={false}
+              fluid={true}
+              onLoad={[Function]}
+              src="https://darkpurple.com"
+              title="Image Title"
+              ui={true}
+            >
+              <img
+                alt="Image Widget"
+                className="ui fluid image"
+                onLoad={[Function]}
+                src="https://darkpurple.com"
+                title="Image Title"
+              />
+            </Image>
+          </picture>
+        </ResponsiveImage>
         <Header
           activeNavigationItemIndex={1}
           isBackgroundFilled={false}

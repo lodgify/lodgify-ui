@@ -7,21 +7,47 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
 >
   <Segment
     className="full-bleed"
-    style={
-      Object {
-        "backgroundImage": "url(🐱🐱)",
-      }
-    }
     vertical={true}
   >
     <div
       className="ui vertical segment full-bleed"
-      style={
-        Object {
-          "backgroundImage": "url(🐱🐱)",
-        }
-      }
-    />
+    >
+      <ResponsiveImage
+        alternativeText="Image Widget"
+        imageNotFoundLabelText="Image not found!"
+        imageTitle="Image Title"
+        imageUrl="🐱🐱"
+        isAvatar={false}
+        isFluid={true}
+        label={null}
+        onLoad={[Function]}
+        sources={Array []}
+      >
+        <picture
+          className="responsive-image is-fluid"
+          role="figure"
+        >
+          <Image
+            alt="Image Widget"
+            as="img"
+            avatar={false}
+            fluid={true}
+            onLoad={[Function]}
+            src="🐱🐱"
+            title="Image Title"
+            ui={true}
+          >
+            <img
+              alt="Image Widget"
+              className="ui fluid image"
+              onLoad={[Function]}
+              src="🐱🐱"
+              title="Image Title"
+            />
+          </Image>
+        </picture>
+      </ResponsiveImage>
+    </div>
   </Segment>
 </FullBleed>
 `;
@@ -33,21 +59,47 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
 >
   <Segment
     className="full-bleed has-gradient"
-    style={
-      Object {
-        "backgroundImage": "url(🐱🐱)",
-      }
-    }
     vertical={true}
   >
     <div
       className="ui vertical segment full-bleed has-gradient"
-      style={
-        Object {
-          "backgroundImage": "url(🐱🐱)",
-        }
-      }
-    />
+    >
+      <ResponsiveImage
+        alternativeText="Image Widget"
+        imageNotFoundLabelText="Image not found!"
+        imageTitle="Image Title"
+        imageUrl="🐱🐱"
+        isAvatar={false}
+        isFluid={true}
+        label={null}
+        onLoad={[Function]}
+        sources={Array []}
+      >
+        <picture
+          className="responsive-image is-fluid"
+          role="figure"
+        >
+          <Image
+            alt="Image Widget"
+            as="img"
+            avatar={false}
+            fluid={true}
+            onLoad={[Function]}
+            src="🐱🐱"
+            title="Image Title"
+            ui={true}
+          >
+            <img
+              alt="Image Widget"
+              className="ui fluid image"
+              onLoad={[Function]}
+              src="🐱🐱"
+              title="Image Title"
+            />
+          </Image>
+        </picture>
+      </ResponsiveImage>
+    </div>
   </Segment>
 </FullBleed>
 `;
@@ -59,21 +111,46 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
 >
   <Segment
     className="full-bleed has-children"
-    style={
-      Object {
-        "backgroundImage": "url(🐱🐱)",
-      }
-    }
     vertical={true}
   >
     <div
       className="ui vertical segment full-bleed has-children"
-      style={
-        Object {
-          "backgroundImage": "url(🐱🐱)",
-        }
-      }
     >
+      <ResponsiveImage
+        alternativeText="Image Widget"
+        imageNotFoundLabelText="Image not found!"
+        imageTitle="Image Title"
+        imageUrl="🐱🐱"
+        isAvatar={false}
+        isFluid={true}
+        label={null}
+        onLoad={[Function]}
+        sources={Array []}
+      >
+        <picture
+          className="responsive-image is-fluid"
+          role="figure"
+        >
+          <Image
+            alt="Image Widget"
+            as="img"
+            avatar={false}
+            fluid={true}
+            onLoad={[Function]}
+            src="🐱🐱"
+            title="Image Title"
+            ui={true}
+          >
+            <img
+              alt="Image Widget"
+              className="ui fluid image"
+              onLoad={[Function]}
+              src="🐱🐱"
+              title="Image Title"
+            />
+          </Image>
+        </picture>
+      </ResponsiveImage>
       🏛
     </div>
   </Segment>
