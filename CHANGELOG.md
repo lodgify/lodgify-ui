@@ -1,3 +1,10 @@
+## [1.70.1](https://github.com/lodgify/lodgify-ui/compare/v1.70.0...v1.70.1) (2018-10-23)
+
+
+### Bug Fixes
+
+* **HostProfile:** remove invalid prop ([2890567](https://github.com/lodgify/lodgify-ui/commit/2890567))
+
 # [1.70.0](https://github.com/lodgify/lodgify-ui/compare/v1.69.1...v1.70.0) (2018-10-23)
 
 
