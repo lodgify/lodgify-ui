@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ShowOnMobile } from './component';
@@ -10,7 +10,7 @@ const props = {
   children: 'div',
 };
 
-const getShowOnMobile = () => shallow(<ShowOnMobile {...props} />);
+const getShowOnMobile = () => mount(<ShowOnMobile {...props} />);
 
 describe('<ShowOnMobile />', () => {
   it('it should render the right structure', () => {
