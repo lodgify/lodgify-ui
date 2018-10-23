@@ -1,3 +1,10 @@
+## [1.70.3](https://github.com/lodgify/lodgify-ui/compare/v1.70.2...v1.70.3) (2018-10-23)
+
+
+### Bug Fixes
+
+* **menu:** add theming to menu item underlines ([c183a2e](https://github.com/lodgify/lodgify-ui/commit/c183a2e))
+
 ## [1.70.2](https://github.com/lodgify/lodgify-ui/compare/v1.70.1...v1.70.2) (2018-10-23)
 
 
