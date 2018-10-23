@@ -15,6 +15,7 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
   sources={Array []}
 >
   <picture
+    className="responsive-image is-fluid"
     role="figure"
   >
     <Image
@@ -67,6 +68,7 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
   sources={Array []}
 >
   <picture
+    className="responsive-image is-fluid"
     role="figure"
   >
     <Image
@@ -130,6 +132,7 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` and \`props.imageU
   sources={Array []}
 >
   <picture
+    className="responsive-image is-fluid"
     role="figure"
   >
     <div
@@ -188,6 +191,7 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should h
   sources={Array []}
 >
   <picture
+    className="responsive-image is-fluid"
     role="figure"
   >
     <Image
@@ -251,6 +255,7 @@ exports[`<ResponsiveImage /> if \`props.sources\` is passed should have the righ
   }
 >
   <picture
+    className="responsive-image is-fluid"
     role="figure"
   >
     <source

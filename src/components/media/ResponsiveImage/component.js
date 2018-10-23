@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import getClassNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import {
@@ -24,7 +25,13 @@ export class Component extends PureComponent {
   handleImageLoad = () => this.setState({ isImageLoaded: true });
 
   render = () => {
-    const { label, sources, placeholderImageUrl, imageUrl } = this.props;
+    const {
+      label,
+      sources,
+      placeholderImageUrl,
+      imageUrl,
+      isFluid,
+    } = this.props;
 
     const imageProps = {
       ...this.props,
@@ -33,7 +40,12 @@ export class Component extends PureComponent {
     };
 
     return (
-      <picture role="figure">
+      <picture
+        className={getClassNames('responsive-image', {
+          'is-fluid': isFluid,
+        })}
+        role="figure"
+      >
         {sources.map(({ srcset, media }, index) => (
           <source
             key={buildKeyFromStrings(srcset, index)}
