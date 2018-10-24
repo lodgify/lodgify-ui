@@ -2,7 +2,7 @@
   "env": {
     "production": {
       "comments": false,
-      "ignore": ["spec.js"]
+      "ignore": ["**/*.spec.js"]
     }
   },
   "presets": [ "@babel/react", "@babel/env" ],
