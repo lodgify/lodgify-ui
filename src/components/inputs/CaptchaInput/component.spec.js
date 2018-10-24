@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Form, Image } from 'semantic-ui-react';
+import Form from 'semantic-ui-react/dist/commonjs/collections/Form';
+import Image from 'semantic-ui-react/dist/commonjs/elements/Image';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
