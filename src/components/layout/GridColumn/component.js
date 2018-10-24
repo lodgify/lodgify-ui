@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid } from 'semantic-ui-react';
+import GridColumn from 'semantic-ui-react/dist/commonjs/collections/Grid/GridColumn';
 
 /**
  * GridColumn is the Lodgify UI interface for the
- * Semantic UI Grid.Column.
+ * Semantic UI GridColumn.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ verticalAlignContent, ...props }) => (
-  <Grid.Column {...props} verticalAlign={verticalAlignContent} />
+  <GridColumn {...props} verticalAlign={verticalAlignContent} />
 );
 
 Component.displayName = 'GridColumn';
