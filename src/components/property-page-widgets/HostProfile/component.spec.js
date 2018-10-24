@@ -143,7 +143,6 @@ describe('<HostProfile />', () => {
       it('should be rendered with the right props', () => {
         expectComponentToHaveProps(itemHeader, {
           as: 'h4',
-          verticalAlign: 'middle',
         });
       });
 

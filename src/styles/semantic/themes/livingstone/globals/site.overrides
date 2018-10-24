@@ -29,6 +29,21 @@
 /*--------------
   Page Heading
 ---------------*/
+h1.ui.header {
+  line-height: @h1LineHeight;
+}
+
+h2.ui.header {
+  line-height: @h2LineHeight;
+}
+
+h3.ui.header {
+  line-height: @h3LineHeight;
+}
+
+h4.ui.header {
+  line-height: @h4LineHeight;
+}
 
 /*--------------
    Form Input
@@ -428,7 +443,7 @@ blockquote.ui.quote .row {
 -----------------------*/
 
 /* Hide on mobile screens */
-@media only screen and (min-width: @smallestComputerBreakpoint) {
+@media @computerScreen {
 
   .show-on-mobile {
     display: none !important;
@@ -436,7 +451,7 @@ blockquote.ui.quote .row {
 }
 
 /* Hide on desktop screens */
-@media only screen and (max-width: @tabletBreakpoint) {
+@media @tabletScreen {
 
   .show-on-desktop {
     display: none !important;

@@ -1,9 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ShowOnDesktop /> it should render the right structure 1`] = `
-<section
-  className="you shall pass show-on-desktop"
+<ShowOnDesktop
+  parent="section"
+  parentProps={
+    Object {
+      "className": "you shall pass",
+    }
+  }
 >
-  div
-</section>
+  <section
+    className="you shall pass show-on-desktop"
+  >
+    div
+  </section>
+</ShowOnDesktop>
 `;
