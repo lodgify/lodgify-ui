@@ -20,7 +20,7 @@
   },
   "size-limit": [
     {
-      "limit": "350 KB",
+      "limit": "321 KB",
       "path": "lib/index.js"
     }
   ],
@@ -72,6 +72,7 @@
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.4.2",
     "babel-loader": "^8.0.2",
+    "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-module-resolver": "^3.1.1",
     "commitizen": "^2.9.6",
     "css-loader": "^0.28.10",
