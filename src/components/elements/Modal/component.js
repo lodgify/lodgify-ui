@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Modal } from 'semantic-ui-react';
+import Modal from 'semantic-ui-react/dist/commonjs/modules/Modal';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
