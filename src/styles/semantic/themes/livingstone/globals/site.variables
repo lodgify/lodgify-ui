@@ -62,9 +62,16 @@
 @headerLineHeight: 36px;
 
 @h1: 48px;
+@h1LineHeight: @50px;
+
 @h2: 40px;
+@h2LineHeight: @42px;
+
 @h3: 24px;
+@h3LineHeight: @36px;
+
 @h4: 16px;
+@h4LineHeight: @24px;
 
 /*--------------
    Form Input

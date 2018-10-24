@@ -29,6 +29,21 @@
 /*--------------
   Page Heading
 ---------------*/
+h1.ui.header {
+  line-height: @h1LineHeight;
+}
+
+h2.ui.header {
+  line-height: @h2LineHeight;
+}
+
+h3.ui.header {
+  line-height: @h3LineHeight;
+}
+
+h4.ui.header {
+  line-height: @h4LineHeight;
+}
 
 /*--------------
    Form Input
