@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { isEqual, some } from 'lodash';
-import { Input } from 'semantic-ui-react';
+import Input from 'semantic-ui-react/dist/commonjs/elements/Input';
 import getClassNames from 'classnames';
 
 import { getHasErrorMessage } from 'utils/get-has-error-message';

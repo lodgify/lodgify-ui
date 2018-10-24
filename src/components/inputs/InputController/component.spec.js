@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { Input } from 'semantic-ui-react';
+import Input from 'semantic-ui-react/dist/commonjs/elements/Input';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
