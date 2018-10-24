@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid } from 'semantic-ui-react';
+import GridRow from 'semantic-ui-react/dist/commonjs/collections/Grid/GridRow';
 
 /**
  * GridRow is the Lodgify UI interface for the
- * Semantic UI Grid.Row.
+ * Semantic UI GridRow.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ horizontalAlignContent, ...props }) => (
-  <Grid.Row {...props} textAlign={horizontalAlignContent} />
+  <GridRow {...props} textAlign={horizontalAlignContent} />
 );
 
 Component.displayName = 'GridRow';
