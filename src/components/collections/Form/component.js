@@ -1,6 +1,7 @@
 import React, { PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
-import { Card, Form } from 'semantic-ui-react';
+import Card from 'semantic-ui-react/dist/commonjs/views/Card';
+import Form from 'semantic-ui-react/dist/commonjs/collections/Form';
 import { size, forEach } from 'lodash';
 
 import { Button } from 'elements/Button';

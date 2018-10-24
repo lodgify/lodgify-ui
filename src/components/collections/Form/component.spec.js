@@ -1,6 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Card, Form as SemanticForm, FormField } from 'semantic-ui-react';
+import Card from 'semantic-ui-react/dist/commonjs/views/Card';
+import FormField from 'semantic-ui-react/dist/commonjs/collections/Form/FormField';
+import { default as SemanticForm } from 'semantic-ui-react/dist/commonjs/collections/Form';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,

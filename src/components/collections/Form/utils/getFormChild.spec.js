@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { FormField, FormGroup } from 'semantic-ui-react';
+import FormField from 'semantic-ui-react/dist/commonjs/collections/Form/FormField';
+import FormGroup from 'semantic-ui-react/dist/commonjs/collections/Form/FormGroup';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,

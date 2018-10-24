@@ -1,5 +1,5 @@
 import React, { Children } from 'react';
-import { Form } from 'semantic-ui-react';
+import Form from 'semantic-ui-react/dist/commonjs/collections/Form';
 
 import { getClonedInput } from './getClonedInput';
 
