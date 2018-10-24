@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Table as SemanticUITable } from 'semantic-ui-react';
+import { default as SemanticUITable } from 'semantic-ui-react/dist/commonjs/collections/Table';
 import {
   expectComponentToBe,
   expectComponentToHaveProps,
