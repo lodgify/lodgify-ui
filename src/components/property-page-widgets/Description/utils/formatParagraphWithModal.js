@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Button } from 'semantic-ui-react';
+import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
 
 import { Modal } from 'elements/Modal';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';

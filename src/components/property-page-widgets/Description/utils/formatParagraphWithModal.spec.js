@@ -4,7 +4,7 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import { Button } from 'semantic-ui-react';
+import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List } from 'semantic-ui-react';
+import List from 'semantic-ui-react/dist/commonjs/elements/List';
 
 import { HOME_HIGHLIGHTS } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';

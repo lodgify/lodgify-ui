@@ -6,8 +6,8 @@ import {
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import { List } from 'semantic-ui-react';
-import { ListItem } from 'semantic-ui-react';
+import List from 'semantic-ui-react/dist/commonjs/elements/List';
+import ListItem from 'semantic-ui-react/dist/commonjs/elements/List/ListItem';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
