@@ -1,5 +1,5 @@
 import React from 'react';
-import { Label } from 'semantic-ui-react';
+import Label from 'semantic-ui-react/dist/commonjs/elements/Label';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { getFirstFourItems } from 'utils/get-first-four-items';
