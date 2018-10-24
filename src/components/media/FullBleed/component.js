@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
-import { Segment } from 'semantic-ui-react';
+import Segment from 'semantic-ui-react/dist/commonjs/elements/Segment';
 import { size } from 'lodash';
 
 import { getBackgroundImageUrl } from 'utils/get-background-image-url';
