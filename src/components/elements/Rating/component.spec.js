@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Rating as SemanticRating } from 'semantic-ui-react';
+import { default as SemanticRating } from 'semantic-ui-react/dist/commonjs/modules/Rating';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,

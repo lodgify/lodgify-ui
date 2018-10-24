@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Rating } from 'semantic-ui-react';
+import Rating from 'semantic-ui-react/dist/commonjs/modules/Rating';
 
 /**
  * A rating displays star icons and an optional numeral.
