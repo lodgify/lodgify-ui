@@ -1,6 +1,6 @@
 /* eslint react/prop-types: 0 */
 import React, { Fragment } from 'react';
-import { Form } from 'semantic-ui-react';
+import Form from 'semantic-ui-react/dist/commonjs/collections/Form';
 import { size } from 'lodash';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';

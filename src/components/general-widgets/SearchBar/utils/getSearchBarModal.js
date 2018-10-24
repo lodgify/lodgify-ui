@@ -1,5 +1,6 @@
 import React from 'react';
-import { Modal as SemanticModal, Form } from 'semantic-ui-react';
+import Form from 'semantic-ui-react/dist/commonjs/collections/Form';
+import { default as SemanticModal } from 'semantic-ui-react/dist/commonjs/modules/Modal';
 
 import { Heading } from 'typography/Heading';
 import { Modal } from 'elements/Modal';

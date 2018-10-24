@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import { Form } from 'semantic-ui-react';
+import Form from 'semantic-ui-react/dist/commonjs/collections/Form';
 
 import { CHECK_OUR_AVAILABILITY, SEARCH } from 'utils/default-strings';
 import { HorizontalGutters } from 'layout/HorizontalGutters';

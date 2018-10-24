@@ -4,7 +4,7 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import { Form } from 'semantic-ui-react';
+import Form from 'semantic-ui-react/dist/commonjs/collections/Form';
 
 import { Icon } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';

@@ -4,7 +4,8 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import { Modal as SemanticModal, Form } from 'semantic-ui-react';
+import Form from 'semantic-ui-react/dist/commonjs/collections/Form';
+import { default as SemanticModal } from 'semantic-ui-react/dist/commonjs/modules/Modal';
 import { expectComponentToBe } from '@lodgify/enzyme-jest-expect-helpers/lib/expectComponentToBe';
 
 import { Heading } from 'typography/Heading';
