@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Divider } from 'semantic-ui-react';
+import Divider from 'semantic-ui-react/dist/commonjs/elements/Divider';
 import getClassNames from 'classnames';
 
 import { getIsSizeLarge } from './utils/getIsSizeLarge';
