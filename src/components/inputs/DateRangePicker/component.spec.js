@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { DateRangePicker as ReactDatesDateRangePicker } from 'react-dates';
-import { Responsive } from 'semantic-ui-react';
+import Responsive from 'semantic-ui-react/dist/commonjs/addons/Responsive';
 import moment from 'moment';
 import {
   expectComponentToBe,
