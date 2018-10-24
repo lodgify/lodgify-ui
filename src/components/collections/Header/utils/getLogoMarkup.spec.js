@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import { Image } from 'semantic-ui-react';
+import Image from 'semantic-ui-react/dist/commonjs/elements/Image';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,

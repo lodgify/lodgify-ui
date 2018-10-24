@@ -1,5 +1,6 @@
 import React from 'react';
-import { Menu, Image } from 'semantic-ui-react';
+import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu';
+import Image from 'semantic-ui-react/dist/commonjs/elements/Image';
 
 import { Heading } from 'typography/Heading';
 

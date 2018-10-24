@@ -1,5 +1,6 @@
 import React from 'react';
-import { Menu, Accordion } from 'semantic-ui-react';
+import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu';
+import Accordion from 'semantic-ui-react/dist/commonjs/modules/Accordion';
 import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';

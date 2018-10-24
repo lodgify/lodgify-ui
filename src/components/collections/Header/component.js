@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
-import { Menu } from 'semantic-ui-react';
+import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu';
 
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 
