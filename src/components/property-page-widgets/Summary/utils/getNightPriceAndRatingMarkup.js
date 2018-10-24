@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Segment } from 'semantic-ui-react';
+import Segment from 'semantic-ui-react/dist/commonjs/elements/Segment';
 
 import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 import { Rating } from 'elements/Rating';
