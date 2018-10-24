@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { CalendarMonth, CalendarDay } from 'react-dates';
 import { BLOCKED_MODIFIER } from 'react-dates/constants';
 import moment from 'moment';
-import { Card } from 'semantic-ui-react';
+import Card from 'semantic-ui-react/dist/commonjs/views/Card';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Paragraph } from 'typography/Paragraph';

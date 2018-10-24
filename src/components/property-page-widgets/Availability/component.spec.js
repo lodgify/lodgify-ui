@@ -2,7 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import moment from 'moment';
 import { CalendarMonth } from 'react-dates';
-import { Card, Responsive } from 'semantic-ui-react';
+import Card from 'semantic-ui-react/dist/commonjs/views/Card';
+import Responsive from 'semantic-ui-react/dist/commonjs/addons/Responsive';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
