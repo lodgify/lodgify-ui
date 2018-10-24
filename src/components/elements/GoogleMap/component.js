@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card } from 'semantic-ui-react';
+import Card from 'semantic-ui-react/dist/commonjs/views/Card';
 
 import { ReactGoogleMap } from 'utils/react-google-maps';
 
