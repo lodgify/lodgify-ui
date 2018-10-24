@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'semantic-ui-react';
+import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
 
 /**
  * A link indicates a referred resource.
