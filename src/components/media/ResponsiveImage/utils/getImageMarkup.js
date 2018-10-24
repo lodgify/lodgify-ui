@@ -1,6 +1,8 @@
 import React from 'react';
 import { Image, Label } from 'semantic-ui-react';
 
+import { getIsFluid } from './getIsFluid';
+
 /**
  * @param  {Object}        imageProps
  * @param  {string}        imageProps.alternativeText
@@ -16,19 +18,23 @@ import { Image, Label } from 'semantic-ui-react';
 export const getImageMarkup = ({
   /* eslint-disable react/prop-types */
   alternativeText,
-  isAvatar,
-  isFluid,
+  imageHeight,
+  imageNotFoundLabelText,
   imageTitle,
   imageUrl,
-  imageNotFoundLabelText,
+  imageWidth,
+  isAvatar,
+  isFluid,
   /* eslint-enable react/prop-types */
 }) => (
   <Image
     alt={alternativeText}
     avatar={isAvatar}
-    fluid={isFluid}
+    fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
+    height={imageHeight}
     src={imageUrl}
     title={imageTitle}
+    width={imageWidth}
   >
     {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
   </Image>

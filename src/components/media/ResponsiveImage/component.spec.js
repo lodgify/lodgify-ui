@@ -33,6 +33,17 @@ describe('<ResponsiveImage />', () => {
     });
   });
 
+  describe('if `props.placeholderImageUrl` and `props.imageUrl` are passed', () => {
+    it('should have the right structure', () => {
+      const actual = getResponsiveImage({
+        placeholderImageUrl: 'ayyy',
+        imageUrl: 'yooo',
+      });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   describe('if `props.label` is passed', () => {
     it('should have the right structure', () => {
       const actual = getResponsiveImage({ label: '🔷' });

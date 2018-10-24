@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`getImageMarkup\` should render the right structure 1`] = `
+<Image
+  alt="someAltText"
+  as="img"
+  avatar={false}
+  fluid={true}
+  src="someUrl"
+  title="someTitle"
+  ui={true}
+>
+  <img
+    alt="someAltText"
+    className="ui fluid image"
+    src="someUrl"
+    title="someTitle"
+  />
+</Image>
+`;
