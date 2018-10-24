@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from 'semantic-ui-react';
+import List from 'semantic-ui-react/dist/commonjs/elements/List';
 
 import { GridColumn } from 'layout/GridColumn';
 import { Icon } from 'elements/Icon';

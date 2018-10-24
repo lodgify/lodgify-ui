@@ -4,7 +4,8 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import { List, ListItem } from 'semantic-ui-react';
+import List from 'semantic-ui-react/dist/commonjs/elements/List';
+import ListItem from 'semantic-ui-react/dist/commonjs/elements/List/ListItem';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { Amenities } from 'property-page-widgets/Amenities';

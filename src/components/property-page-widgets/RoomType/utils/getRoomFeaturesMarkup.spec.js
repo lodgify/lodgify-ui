@@ -5,7 +5,7 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import { List } from 'semantic-ui-react';
+import List from 'semantic-ui-react/dist/commonjs/elements/List';
 
 import { GridColumn } from 'layout/GridColumn';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';

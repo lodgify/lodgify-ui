@@ -1,5 +1,6 @@
 import React from 'react';
-import { Modal, List } from 'semantic-ui-react';
+import Modal from 'semantic-ui-react/dist/commonjs/modules/Modal';
+import List from 'semantic-ui-react/dist/commonjs/elements/List';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Amenities } from 'property-page-widgets/Amenities';
