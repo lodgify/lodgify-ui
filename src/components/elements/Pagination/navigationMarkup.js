@@ -1,5 +1,6 @@
 import React from 'react';
-import { Label, Button } from 'semantic-ui-react';
+import Label from 'semantic-ui-react/dist/commonjs/elements/Label';
+import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 

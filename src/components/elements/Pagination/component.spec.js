@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Pagination as SemanticPagination } from 'semantic-ui-react';
+import { default as SemanticPagination } from 'semantic-ui-react/dist/commonjs/addons/Pagination';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,

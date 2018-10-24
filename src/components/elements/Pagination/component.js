@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Pagination } from 'semantic-ui-react';
+import Pagination from 'semantic-ui-react/dist/commonjs/addons/Pagination';
 
 import { nextItem, pageItem, prevItem } from './navigationMarkup';
 
