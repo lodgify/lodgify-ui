@@ -29,7 +29,7 @@
     "build:less": "webpack --config $npm_package_config_less_build_config",
     "build:js": "BABEL_ENV=production babel src/ -d lib/",
     "commit": "git-cz",
-    "install:peers": "npm install react@^16.3.2 react-dom@^16.3.2 --no-save",
+    "install:peers": "npm install react@^16.3.2 react-dom@^16.3.2 moment@^2.18.1 --no-save",
     "lint": "run-p lint:js lint:less",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:debug": "npm run lint:js -- --debug",
@@ -113,7 +113,6 @@
     "is-url": "^1.2.4",
     "libphonenumber-js": "^1.1.9",
     "lodash": "^4.17.5",
-    "moment": "^2.22.1",
     "react-dates": "^17.0.0",
     "react-google-maps": "^9.4.5",
     "react-image-gallery": "^0.8.7",
@@ -123,6 +122,7 @@
     "semantic-ui-react": "^0.79.1"
   },
   "peerDependencies": {
+    "moment": "^2.18.1",
     "react": ">=0.14.0 <= 16",
     "react-dom": ">=0.14.0 <= 16"
   }
