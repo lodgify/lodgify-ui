@@ -1,4 +1,4 @@
-import { Button } from 'semantic-ui-react';
+import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
 
 import { ICON_NAMES } from 'elements/Icon';
 
