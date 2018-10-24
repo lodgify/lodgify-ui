@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'semantic-ui-react';
+import Container from 'semantic-ui-react/dist/commonjs/elements/Container';
 
 /**
  * HorizontalGutters wraps child components with responsive
