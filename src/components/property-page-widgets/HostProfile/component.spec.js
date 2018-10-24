@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { List, Item } from 'semantic-ui-react';
+import List from 'semantic-ui-react/dist/commonjs/elements/List';
+import Item from 'semantic-ui-react/dist/commonjs/views/Item';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,

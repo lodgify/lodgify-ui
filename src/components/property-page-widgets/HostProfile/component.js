@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, Item } from 'semantic-ui-react';
+import List from 'semantic-ui-react/dist/commonjs/elements/List';
+import Item from 'semantic-ui-react/dist/commonjs/views/Item';
 
 import {
   CONTACT_INFORMATION,
