@@ -1,10 +1,10 @@
-import { Form } from 'semantic-ui-react';
+import FormGroup from 'semantic-ui-react/dist/commonjs/collections/Form/FormGroup';
 
 /**
  * InputGroup is the Lodgify UI interface for the
  * Semantic UI Form.Group.
  * @type {Object}
  */
-export const Component = Form.Group;
+export const Component = FormGroup;
 
 Component.displayName = 'InputGroup';
