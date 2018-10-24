@@ -17,3 +17,7 @@
 /*-------------------
        Variations
 --------------------*/
+
+@imageWithPlaceholderBlur: blur(20px);
+@imageWithPlaceholderTransformScale: scale(1.15);
+@imageWithPlaceholderTransition: 0.5s filter linear, 0.5s transform linear;

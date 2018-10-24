@@ -1,5 +1,7 @@
 ```jsx
-<ResponsiveImage imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max" />
+<ResponsiveImage
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+ />
 ```
 
 ### Variations
@@ -38,6 +40,15 @@
     }
   ]}
 />
+```
+
+#### With graceful loading
+
+```jsx
+<ResponsiveImage
+  placeholderImageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=20&mode=max" 
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+ />
 ```
 
 #### Labeled
