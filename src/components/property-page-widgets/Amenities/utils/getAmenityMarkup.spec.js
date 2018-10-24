@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Modal as SemanticModal } from 'semantic-ui-react';
+import { default as SemanticModal } from 'semantic-ui-react/dist/commonjs/modules/Modal';
 import {
   expectComponentToHaveChildren,
   expectComponentToHaveProps,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal as SemanticModal } from 'semantic-ui-react';
+import { default as SemanticModal } from 'semantic-ui-react/dist/commonjs/modules/Modal';
 
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
