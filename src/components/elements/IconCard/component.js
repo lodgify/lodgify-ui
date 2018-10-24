@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Label } from 'semantic-ui-react';
+import Label from 'semantic-ui-react/dist/commonjs/elements/Label';
 import cx from 'classnames';
 
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
