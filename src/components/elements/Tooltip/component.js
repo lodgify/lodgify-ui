@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Popup } from 'semantic-ui-react';
+import Popup from 'semantic-ui-react/dist/commonjs/modules/Popup';
 
 import { getTriggerMarkup } from './getTriggerMarkup';
 
