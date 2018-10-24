@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image, Label } from 'semantic-ui-react';
+import Image from 'semantic-ui-react/dist/commonjs/elements/Image';
+import Label from 'semantic-ui-react/dist/commonjs/elements/Label';
 
 import {
   IMAGE_NOT_FOUND,
