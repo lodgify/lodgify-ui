@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Dropdown as SemanticDropdown } from 'semantic-ui-react';
+import { default as SemanticDropdown } from 'semantic-ui-react/dist/commonjs/modules/Dropdown';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
