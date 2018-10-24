@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu } from 'semantic-ui-react';
+import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 

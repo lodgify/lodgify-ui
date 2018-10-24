@@ -6,7 +6,7 @@ import {
   expectComponentToHaveChildren,
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import { Menu } from 'semantic-ui-react';
+import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu';
 
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';

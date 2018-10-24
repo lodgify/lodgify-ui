@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Menu } from 'semantic-ui-react';
+import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu';
 import { toUpper, size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
