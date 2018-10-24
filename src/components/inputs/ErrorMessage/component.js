@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Label } from 'semantic-ui-react';
+import Label from 'semantic-ui-react/dist/commonjs/elements/Label';
 
 /**
  * Error message for use with input elements
