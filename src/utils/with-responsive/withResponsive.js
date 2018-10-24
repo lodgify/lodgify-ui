@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Responsive } from 'semantic-ui-react';
+import Responsive from 'semantic-ui-react/dist/commonjs/addons/Responsive';
 
 import { TABLET_BREAKPOINT } from './constants';
 
