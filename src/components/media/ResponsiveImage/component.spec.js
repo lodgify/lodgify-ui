@@ -25,17 +25,9 @@ describe('<ResponsiveImage />', () => {
     });
   });
 
-  describe('if `props.imageNotFoundLabelText` is passed', () => {
+  describe('if `props.placeholderImageUrl` is passed', () => {
     it('should have the right structure', () => {
-      const actual = getResponsiveImage({ imageNotFoundLabelText: 'ayyy' });
-
-      expect(actual).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.imageUrl` is passed', () => {
-    it('should have the right structure', () => {
-      const actual = getResponsiveImage({ imageUrl: 'Dummy URL 🙄' });
+      const actual = getResponsiveImage({ placeholderImageUrl: 'ayyy' });
 
       expect(actual).toMatchSnapshot();
     });
@@ -66,6 +58,20 @@ describe('<ResponsiveImage />', () => {
       const actual = getResponsiveImage({ sources });
 
       expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('`handleImageLoad`', () => {
+    it('should set `isImageLoaded` to `true` in the components state', () => {
+      const wrapper = getResponsiveImage();
+
+      wrapper.instance().handleImageLoad();
+
+      const actual = wrapper.state();
+
+      expect(actual).toEqual({
+        isImageLoaded: true,
+      });
     });
   });
 
