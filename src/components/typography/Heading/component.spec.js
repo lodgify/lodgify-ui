@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Header } from 'semantic-ui-react';
+import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 import {
   expectComponentToBe,
   expectComponentToHaveProps,

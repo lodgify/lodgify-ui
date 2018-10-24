@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Header } from 'semantic-ui-react';
+import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 
 import { getHeadingNumber } from './getHeadingNumber';
 
