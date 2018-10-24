@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Image } from 'semantic-ui-react';
+import Card from 'semantic-ui-react/dist/commonjs/views/Card';
+import Image from 'semantic-ui-react/dist/commonjs/elements/Image';
 
 import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
 
