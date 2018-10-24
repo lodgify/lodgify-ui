@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Grid } from 'semantic-ui-react';
+import Grid from 'semantic-ui-react/dist/commonjs/collections/Grid';
 import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,

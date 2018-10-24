@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid } from 'semantic-ui-react';
+import Grid from 'semantic-ui-react/dist/commonjs/collections/Grid';
 
 /**
  * Grid is the Lodgify UI interface for the
