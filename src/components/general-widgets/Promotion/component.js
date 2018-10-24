@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Statistic, Segment } from 'semantic-ui-react';
+import Statistic from 'semantic-ui-react/dist/commonjs/views/Statistic';
+import Segment from 'semantic-ui-react/dist/commonjs/elements/Segment';
 import getClassNames from 'classnames';
 
 import {
