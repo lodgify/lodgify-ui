@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`getPlaceholderImageMarkup\` by default should render the right structure 1`] = `
+<div
+  className="image-with-placeholder-container"
+  style={
+    Object {
+      "height": undefined,
+      "width": undefined,
+    }
+  }
+>
+  <Image
+    alt="someAltText"
+    as="img"
+    avatar={false}
+    fluid={true}
+    onLoad={[Function]}
+    title="someTitle"
+    ui={true}
+  >
+    <div
+      alt="someAltText"
+      className="ui fluid image"
+      onLoad={[Function]}
+      title="someTitle"
+    >
+      <Label
+        content="someLabel"
+      >
+        <div
+          className="ui label"
+          onClick={[Function]}
+        >
+          someLabel
+        </div>
+      </Label>
+    </div>
+  </Image>
+</div>
+`;
+
+exports[`\`getPlaceholderImageMarkup\` if \`imageUrl\` is passed should render the right structure 1`] = `
+<div
+  className="image-with-placeholder-container"
+  style={
+    Object {
+      "height": undefined,
+      "width": undefined,
+    }
+  }
+>
+  <Image
+    alt="someAltText"
+    as="img"
+    avatar={false}
+    fluid={true}
+    onLoad={[Function]}
+    src="yoyoUrl"
+    title="someTitle"
+    ui={true}
+  >
+    <img
+      alt="someAltText"
+      className="ui fluid image"
+      onLoad={[Function]}
+      src="yoyoUrl"
+      title="someTitle"
+    />
+  </Image>
+</div>
+`;
+
+exports[`\`getPlaceholderImageMarkup\` if \`isImageLoaded === false\` should render the right structure 1`] = `
+<div
+  className="image-with-placeholder-container has-blurred-children"
+  style={
+    Object {
+      "height": undefined,
+      "width": undefined,
+    }
+  }
+>
+  <Image
+    alt="someAltText"
+    as="img"
+    avatar={false}
+    fluid={true}
+    onLoad={[Function]}
+    title="someTitle"
+    ui={true}
+  >
+    <div
+      alt="someAltText"
+      className="ui fluid image"
+      onLoad={[Function]}
+      title="someTitle"
+    >
+      <Label
+        content="someLabel"
+      >
+        <div
+          className="ui label"
+          onClick={[Function]}
+        >
+          someLabel
+        </div>
+      </Label>
+    </div>
+  </Image>
+  <img
+    className="placeholder-image"
+    src="anotherUrl"
+  />
+</div>
+`;
