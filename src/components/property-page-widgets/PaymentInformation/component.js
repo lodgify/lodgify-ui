@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Statistic } from 'semantic-ui-react';
+import Statistic from 'semantic-ui-react/dist/commonjs/views/Statistic';
 
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Statistic } from 'semantic-ui-react';
+import Statistic from 'semantic-ui-react/dist/commonjs/views/Statistic';
 import {
   expectComponentToBe,
   expectComponentToHaveChildren,
