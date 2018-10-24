@@ -1,6 +1,6 @@
 import React from 'react';
 import { lowerCase } from 'lodash';
-import { Flag } from 'semantic-ui-react';
+import Flag from 'semantic-ui-react/dist/commonjs/elements/Flag';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
