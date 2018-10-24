@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Checkbox as SemanticCheckbox } from 'semantic-ui-react';
+import { default as SemanticCheckbox } from 'semantic-ui-react/dist/commonjs/modules/Checkbox';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox } from 'semantic-ui-react';
+import Checkbox from 'semantic-ui-react/dist/commonjs/modules/Checkbox';
 
 /**
  * A checkbox allows a user to select a value from a small set of options, often binary.
