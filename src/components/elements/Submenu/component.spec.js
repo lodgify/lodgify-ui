@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Dropdown } from 'semantic-ui-react';
+import Dropdown from 'semantic-ui-react/dist/commonjs/modules/Dropdown';
 import {
   expectComponentToBe,
   expectComponentToHaveDisplayName,

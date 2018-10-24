@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Dropdown } from 'semantic-ui-react';
+import Dropdown from 'semantic-ui-react/dist/commonjs/modules/Dropdown';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
