@@ -2,7 +2,10 @@
   "env": {
     "production": {
       "comments": false,
-      "ignore": ["**/*.spec.js"]
+      "ignore": ["**/*.spec.js"],
+      "plugins": [
+        "semantic-ui-react-transform-imports"
+      ]
     }
   },
   "presets": [ "@babel/react", "@babel/env" ],
