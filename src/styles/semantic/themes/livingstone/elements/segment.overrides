@@ -72,6 +72,15 @@
   height: 100vh;
   padding: 0;
 
+  picture.responsive-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+  }
+
   &.has-gradient {
     position: relative;
 
@@ -83,13 +92,14 @@
       position: absolute;
       right: 0;
       top: 0;
+      z-index: @heroGradientZIndex;
     }
   }
 
   &.has-children {
     flex-direction: column;
 
-    > * {
+    > *:not(.responsive-image):not(header) {
       position: relative;
       z-index: @heroContentZIndex;
     }
@@ -104,6 +114,7 @@
 
 .ui.segment.is-promotion {
   background-color: @promotionBackgroundColor;
+  border-radius: @promotionBorderRadius;
   cursor: pointer;
 
   .ui.grid.first-grid > .row {
@@ -143,7 +154,7 @@
     p,
     p + .button,
     .header,
-    &:before {
+    > picture.responsive-image .ui.image {
       filter: @promotionHoverBlur;
       -ms-filter: @promotionHoverBlur;
       pointer-events: none;
@@ -164,11 +175,10 @@
     overflow: hidden;
 
     > * {
-      position: relative;
+      position: inherit;
       z-index: @promotionContentLayerZIndex;
     }
 
-    &:before,
     &:after {
       position: absolute;
       top: @promotionBackgroundOffset;
@@ -176,25 +186,24 @@
       right: @promotionBackgroundOffset;
       bottom: @promotionBackgroundOffset;
       content: "";
-    }
-
-    &:before {
-      background-image: inherit;
-      background-size: cover;
-      background-position: center;
-      z-index: @promotionBeforeLayerZIndex;
-    }
-
-    &:after {
       background-color: @black;
       opacity: @promotionOverlayOpacity;
       z-index: @promotionAfterLayerZIndex;
     }
 
+    > picture.responsive-image {
+      z-index: @promotionBeforeLayerZIndex;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
     p,
     .button,
     &:after,
-    &:before,
+    > picture.responsive-image .ui.image,
     .ui.header {
       transition: filter @promotionOverlayTransitionTime, -ms-filter @promotionOverlayTransitionTime;
     }

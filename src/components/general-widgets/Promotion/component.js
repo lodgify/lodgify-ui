@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Statistic, Segment } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
+import { ResponsiveImage } from 'media/ResponsiveImage';
 import {
   BOOK_NOW_DISCOUNT,
   SAVE_UP_TO,
@@ -41,9 +42,9 @@ export const Component = ({
       <GridRow verticalAlign="middle">
         <GridColumn
           className="content-section"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
           width={isDisplayedStacked ? 12 : 9}
         >
+          <ResponsiveImage imageUrl={backgroundImage} />
           <Grid padded>
             <GridRow verticalAlign="top">
               <GridColumn

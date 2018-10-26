@@ -4,7 +4,7 @@ import getClassNames from 'classnames';
 import { Segment } from 'semantic-ui-react';
 import { size } from 'lodash';
 
-import { getBackgroundImageUrl } from 'utils/get-background-image-url';
+import { ResponsiveImage } from 'media/ResponsiveImage';
 
 /**
  * A full bleed takes up the width of its containing element
@@ -17,11 +17,9 @@ export const Component = ({ children, hasGradient, imageUrl }) => (
       'has-gradient': hasGradient,
       'has-children': size(children) > 0,
     })}
-    style={{
-      backgroundImage: getBackgroundImageUrl(imageUrl),
-    }}
     vertical
   >
+    <ResponsiveImage imageUrl={imageUrl} />
     {children}
   </Segment>
 );
