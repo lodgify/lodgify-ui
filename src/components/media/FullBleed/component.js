@@ -11,7 +11,12 @@ import { ResponsiveImage } from 'media/ResponsiveImage';
  * and the height of the viewport.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ children, hasGradient, imageUrl }) => (
+export const Component = ({
+  children,
+  hasGradient,
+  imageUrl,
+  placeholderImageUrl,
+}) => (
   <Segment
     className={getClassNames('full-bleed', {
       'has-gradient': hasGradient,
@@ -19,7 +24,10 @@ export const Component = ({ children, hasGradient, imageUrl }) => (
     })}
     vertical
   >
-    <ResponsiveImage imageUrl={imageUrl} />
+    <ResponsiveImage
+      imageUrl={imageUrl}
+      placeholderImageUrl={placeholderImageUrl}
+    />
     {children}
   </Segment>
 );
@@ -30,6 +38,7 @@ Component.defaultProps = {
   children: null,
   hasGradient: false,
   imageUrl: null,
+  placeholderImageUrl: null,
 };
 
 Component.propTypes = {
@@ -39,4 +48,6 @@ Component.propTypes = {
   hasGradient: PropTypes.bool,
   /** URL pointing to the image to render. */
   imageUrl: PropTypes.string,
+  /** URL pointing to the placeholder image to render. */
+  placeholderImageUrl: PropTypes.string,
 };
