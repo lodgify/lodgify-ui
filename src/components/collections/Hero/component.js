@@ -20,10 +20,15 @@ export const Component = ({
   headerSearchBarLocationOptions,
   headerSearchBarModalHeadingText,
   headerSearchBarSearchButton,
+  placeholderBackgroundImageUrl,
   searchBarGetIsDayBlocked,
   searchBarOnSubmit,
 }) => (
-  <FullBleed hasGradient imageUrl={backgroundImageUrl}>
+  <FullBleed
+    hasGradient
+    imageUrl={backgroundImageUrl}
+    placeholderImageUrl={placeholderBackgroundImageUrl}
+  >
     <Header
       activeNavigationItemIndex={activeNavigationItemIndex}
       logoSrc={headerLogoSrc}
@@ -52,6 +57,7 @@ Component.defaultProps = {
   headerSearchBarLocationOptions: [],
   headerSearchBarModalHeadingText: null,
   headerSearchBarSearchButton: undefined,
+  placeholderBackgroundImageUrl: null,
   searchBarGetIsDayBlocked: undefined,
   searchBarOnSubmit: undefined,
 };
@@ -120,6 +126,8 @@ Component.propTypes = {
   headerSearchBarModalHeadingText: PropTypes.string,
   /** The Search Button the Search Bar modal displays. */
   headerSearchBarSearchButton: PropTypes.node,
+  /** The background placeholder image url of the hero. */
+  placeholderBackgroundImageUrl: PropTypes.string,
   /**
    * A function called for each day to be displayed in the DateRangePicker.
    * Returning true blocks that day in the date range picker.
