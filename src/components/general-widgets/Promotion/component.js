@@ -30,6 +30,7 @@ export const Component = ({
   headingText,
   isDisplayedStacked,
   onClick,
+  placeholderBackgroundImage,
 }) => (
   <Segment
     basic
@@ -44,7 +45,10 @@ export const Component = ({
           className="content-section"
           width={isDisplayedStacked ? 12 : 9}
         >
-          <ResponsiveImage imageUrl={backgroundImage} />
+          <ResponsiveImage
+            imageUrl={backgroundImage}
+            placeholderImageUrl={placeholderBackgroundImage}
+          />
           <Grid padded>
             <GridRow verticalAlign="top">
               <GridColumn
@@ -106,6 +110,7 @@ Component.defaultProps = {
   discountCodeParagraphText: USE_COUPON_CODE,
   discountHoverButtonText: BOOK_NOW_DISCOUNT,
   isDisplayedStacked: false,
+  placeholderBackgroundImage: null,
 };
 
 Component.propTypes = {
@@ -127,4 +132,6 @@ Component.propTypes = {
   isDisplayedStacked: PropTypes.bool,
   /** The function to call when the component is clicked */
   onClick: PropTypes.func.isRequired,
+  /** The background placeholder image. */
+  placeholderBackgroundImage: PropTypes.string,
 };

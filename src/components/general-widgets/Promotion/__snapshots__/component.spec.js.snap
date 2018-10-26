@@ -11,6 +11,7 @@ exports[`The \`Promotion\` component \`Promotion\` as stacked \`Segment\` should
   headingText="Hello World!"
   isDisplayedStacked={true}
   onClick={[Function]}
+  placeholderBackgroundImage={null}
 >
   <Segment
     basic={true}
@@ -70,6 +71,7 @@ exports[`The \`Promotion\` component \`Promotion\` as stacked \`Segment\` should
                           isAvatar={false}
                           isFluid={true}
                           label={null}
+                          placeholderImageUrl={null}
                           sources={Array []}
                         >
                           <picture
@@ -327,6 +329,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
   headingText="Hello World!"
   isDisplayedStacked={false}
   onClick={[Function]}
+  placeholderBackgroundImage={null}
 >
   <Segment
     basic={true}
@@ -386,6 +389,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                           isAvatar={false}
                           isFluid={true}
                           label={null}
+                          placeholderImageUrl={null}
                           sources={Array []}
                         >
                           <picture
