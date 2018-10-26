@@ -23,6 +23,7 @@ export const Component = ({
   headerNavigationItems,
   headerPrimaryCTA,
   headingText,
+  placeholderBackgroundImageUrl,
   searchBarGetIsDayBlocked,
   searchBarGuestsOptions,
   searchBarLocationOptions,
@@ -41,6 +42,7 @@ export const Component = ({
     headerSearchBarLocationOptions={searchBarLocationOptions}
     headerSearchBarModalHeadingText={searchBarModalHeadingText}
     headerSearchBarSearchButton={searchBarSearchButton}
+    placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
     searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
     searchBarOnSubmit={searchBarOnSubmit}
   >
@@ -79,6 +81,7 @@ Component.defaultProps = {
   headerLogoSrc: null,
   headerPrimaryCTA: null,
   headingText: null,
+  placeholderBackgroundImageUrl: null,
   searchBarGetIsDayBlocked: undefined,
   searchBarLocationOptions: undefined,
   searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
@@ -120,6 +123,8 @@ Component.propTypes = {
   }),
   /** The text for the heading displayed in the middle of the hero. */
   headingText: PropTypes.string,
+  /** The background placeholder image url of the hero. */
+  placeholderBackgroundImageUrl: PropTypes.string,
   /**
    * A function called for each day to be displayed in the DateRangePicker.
    * Returning true blocks that day in the date range picker.
