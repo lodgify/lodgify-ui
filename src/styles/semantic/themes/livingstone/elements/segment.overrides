@@ -72,7 +72,8 @@
   height: 100vh;
   padding: 0;
 
-  picture.responsive-image {
+  picture.responsive-image,
+  .image-with-placeholder-container {
     position: absolute;
     top: 0;
     bottom: 0;
