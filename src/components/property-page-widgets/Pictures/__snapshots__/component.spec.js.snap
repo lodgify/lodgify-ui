@@ -843,13 +843,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageWidth={null}
                                 isAvatar={false}
                                 isFluid={true}
                                 label={null}
-                                onLoad={[Function]}
                                 sources={Array []}
                               />
                               <Divider
@@ -871,13 +872,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageWidth={null}
                                 isAvatar={false}
                                 isFluid={true}
                                 label={null}
-                                onLoad={[Function]}
                                 sources={Array []}
                               />
                               <Divider
@@ -899,13 +901,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageWidth={null}
                                 isAvatar={false}
                                 isFluid={true}
                                 label={null}
-                                onLoad={[Function]}
                                 sources={Array []}
                               />
                               <Divider
@@ -927,13 +930,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageWidth={null}
                                 isAvatar={false}
                                 isFluid={true}
                                 label={null}
-                                onLoad={[Function]}
                                 sources={Array []}
                               />
                               <Divider
@@ -955,13 +959,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageWidth={null}
                                 isAvatar={false}
                                 isFluid={true}
                                 label={null}
-                                onLoad={[Function]}
                                 sources={Array []}
                               />
                               <Divider

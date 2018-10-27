@@ -1,0 +1,80 @@
+/*******************************
+            Image
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/*-------------------
+       Types
+--------------------*/
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Placeholder image */
+
+.image-with-placeholder-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  &.has-blurred-children {
+
+    > img {
+      filter: @imageWithPlaceholderBlur;
+      -ms-filter: @imageWithPlaceholderBlur;
+      transform: @imageWithPlaceholderTransformScale;
+    }
+  }
+
+  > img {
+    transition: @imageWithPlaceholderTransition;
+  }
+
+  .placeholder-image {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* Responsive Image */
+
+picture.responsive-image {
+
+  &.is-fluid {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    /* Object fit cover Fallback */
+    .ui.fluid.image {
+      min-width: 100%;
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @supports (object-fit: cover) {
+
+      .ui.fluid.image {
+        position: static;
+        object-fit: cover;
+        height: inherit;
+        width: inherit;
+        transform: none;
+      }
+    }
+  }
+}

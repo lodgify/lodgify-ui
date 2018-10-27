@@ -3,9 +3,11 @@
 exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
 <ResponsiveImage
   alternativeText="Alternative Text 😝"
+  imageHeight={null}
   imageNotFoundLabelText="Image not found!"
   imageTitle="ResponsiveImage title"
   imageUrl=""
+  imageWidth={null}
   isAvatar={false}
   isFluid={true}
   label={null}
@@ -13,6 +15,7 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
   sources={Array []}
 >
   <picture
+    className="responsive-image is-fluid"
     role="figure"
   >
     <Image
@@ -20,17 +23,19 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
       as="img"
       avatar={false}
       fluid={true}
-      onLoad={[Function]}
+      height={null}
       src=""
       title="ResponsiveImage title"
       ui={true}
+      width={null}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
-        onLoad={[Function]}
+        height={null}
         src=""
         title="ResponsiveImage title"
+        width={null}
       >
         <Label
           content="Image not found!"
@@ -48,97 +53,14 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
 </ResponsiveImage>
 `;
 
-exports[`<ResponsiveImage /> if \`props.imageNotFoundLabelText\` is passed should have the right structure 1`] = `
-<ResponsiveImage
-  alternativeText="Alternative Text 😝"
-  imageNotFoundLabelText="ayyy"
-  imageTitle="ResponsiveImage title"
-  imageUrl=""
-  isAvatar={false}
-  isFluid={true}
-  label={null}
-  onLoad={[Function]}
-  sources={Array []}
->
-  <picture
-    role="figure"
-  >
-    <Image
-      alt="Alternative Text 😝"
-      as="img"
-      avatar={false}
-      fluid={true}
-      onLoad={[Function]}
-      src=""
-      title="ResponsiveImage title"
-      ui={true}
-    >
-      <div
-        alt="Alternative Text 😝"
-        className="ui fluid image"
-        onLoad={[Function]}
-        src=""
-        title="ResponsiveImage title"
-      >
-        <Label
-          content="ayyy"
-        >
-          <div
-            className="ui label"
-            onClick={[Function]}
-          >
-            ayyy
-          </div>
-        </Label>
-      </div>
-    </Image>
-  </picture>
-</ResponsiveImage>
-`;
-
-exports[`<ResponsiveImage /> if \`props.imageUrl\` is passed should have the right structure 1`] = `
-<ResponsiveImage
-  alternativeText="Alternative Text 😝"
-  imageNotFoundLabelText="Image not found!"
-  imageTitle="ResponsiveImage title"
-  imageUrl="Dummy URL 🙄"
-  isAvatar={false}
-  isFluid={true}
-  label={null}
-  onLoad={[Function]}
-  sources={Array []}
->
-  <picture
-    role="figure"
-  >
-    <Image
-      alt="Alternative Text 😝"
-      as="img"
-      avatar={false}
-      fluid={true}
-      onLoad={[Function]}
-      src="Dummy URL 🙄"
-      title="ResponsiveImage title"
-      ui={true}
-    >
-      <img
-        alt="Alternative Text 😝"
-        className="ui fluid image"
-        onLoad={[Function]}
-        src="Dummy URL 🙄"
-        title="ResponsiveImage title"
-      />
-    </Image>
-  </picture>
-</ResponsiveImage>
-`;
-
 exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right structure 1`] = `
 <ResponsiveImage
   alternativeText="Alternative Text 😝"
+  imageHeight={null}
   imageNotFoundLabelText="Image not found!"
   imageTitle="ResponsiveImage title"
   imageUrl=""
+  imageWidth={null}
   isAvatar={false}
   isFluid={true}
   label="🔷"
@@ -146,6 +68,7 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
   sources={Array []}
 >
   <picture
+    className="responsive-image is-fluid"
     role="figure"
   >
     <Image
@@ -153,17 +76,19 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
       as="img"
       avatar={false}
       fluid={true}
-      onLoad={[Function]}
+      height={null}
       src=""
       title="ResponsiveImage title"
       ui={true}
+      width={null}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
-        onLoad={[Function]}
+        height={null}
         src=""
         title="ResponsiveImage title"
+        width={null}
       >
         <Label
           content="Image not found!"
@@ -191,12 +116,127 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
 </ResponsiveImage>
 `;
 
-exports[`<ResponsiveImage /> if \`props.sources\` is passed should have the right structure 1`] = `
+exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` and \`props.imageUrl\` are passed should have the right structure 1`] = `
 <ResponsiveImage
   alternativeText="Alternative Text 😝"
+  imageHeight={null}
+  imageNotFoundLabelText="Image not found!"
+  imageTitle="ResponsiveImage title"
+  imageUrl="yooo"
+  imageWidth={null}
+  isAvatar={false}
+  isFluid={true}
+  label={null}
+  onLoad={[Function]}
+  placeholderImageUrl="ayyy"
+  sources={Array []}
+>
+  <picture
+    className="responsive-image is-fluid"
+    role="figure"
+  >
+    <div
+      className="image-with-placeholder-container has-blurred-children"
+      style={
+        Object {
+          "height": null,
+          "width": null,
+        }
+      }
+    >
+      <Image
+        alt="Alternative Text 😝"
+        as="img"
+        avatar={false}
+        fluid={true}
+        height={null}
+        onLoad={[Function]}
+        src="yooo"
+        title="ResponsiveImage title"
+        ui={true}
+        width={null}
+      >
+        <img
+          alt="Alternative Text 😝"
+          className="ui fluid image"
+          height={null}
+          onLoad={[Function]}
+          src="yooo"
+          title="ResponsiveImage title"
+          width={null}
+        />
+      </Image>
+      <img
+        className="placeholder-image"
+        src="ayyy"
+      />
+    </div>
+  </picture>
+</ResponsiveImage>
+`;
+
+exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should have the right structure 1`] = `
+<ResponsiveImage
+  alternativeText="Alternative Text 😝"
+  imageHeight={null}
   imageNotFoundLabelText="Image not found!"
   imageTitle="ResponsiveImage title"
   imageUrl=""
+  imageWidth={null}
+  isAvatar={false}
+  isFluid={true}
+  label={null}
+  onLoad={[Function]}
+  placeholderImageUrl="ayyy"
+  sources={Array []}
+>
+  <picture
+    className="responsive-image is-fluid"
+    role="figure"
+  >
+    <Image
+      alt="Alternative Text 😝"
+      as="img"
+      avatar={false}
+      fluid={true}
+      height={null}
+      src=""
+      title="ResponsiveImage title"
+      ui={true}
+      width={null}
+    >
+      <div
+        alt="Alternative Text 😝"
+        className="ui fluid image"
+        height={null}
+        src=""
+        title="ResponsiveImage title"
+        width={null}
+      >
+        <Label
+          content="Image not found!"
+        >
+          <div
+            className="ui label"
+            onClick={[Function]}
+          >
+            Image not found!
+          </div>
+        </Label>
+      </div>
+    </Image>
+  </picture>
+</ResponsiveImage>
+`;
+
+exports[`<ResponsiveImage /> if \`props.sources\` is passed should have the right structure 1`] = `
+<ResponsiveImage
+  alternativeText="Alternative Text 😝"
+  imageHeight={null}
+  imageNotFoundLabelText="Image not found!"
+  imageTitle="ResponsiveImage title"
+  imageUrl=""
+  imageWidth={null}
   isAvatar={false}
   isFluid={true}
   label={null}
@@ -215,6 +255,7 @@ exports[`<ResponsiveImage /> if \`props.sources\` is passed should have the righ
   }
 >
   <picture
+    className="responsive-image is-fluid"
     role="figure"
   >
     <source
@@ -232,17 +273,19 @@ exports[`<ResponsiveImage /> if \`props.sources\` is passed should have the righ
       as="img"
       avatar={false}
       fluid={true}
-      onLoad={[Function]}
+      height={null}
       src=""
       title="ResponsiveImage title"
       ui={true}
+      width={null}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
-        onLoad={[Function]}
+        height={null}
         src=""
         title="ResponsiveImage title"
+        width={null}
       >
         <Label
           content="Image not found!"
