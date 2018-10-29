@@ -107,39 +107,66 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       <Thumbnail
                         alternativeText="Thumbnail element"
                         className="show-on-desktop"
-                        hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={false}
                         label="Entrance"
+                        placeholderImageUrl={null}
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail show-on-desktop huge"
                         >
-                          <div
-                            className="ui image huge"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Entrance"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid"
+                              role="figure"
                             >
-                              Entrance
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Entrance
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnDesktop>
@@ -160,37 +187,65 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={true}
                         label="Entrance"
+                        placeholderImageUrl={null}
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail show-on-mobile large proportional-width-and-height"
                         >
-                          <div
-                            className="ui image large square rounded"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Entrance"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid is-rounded"
+                              role="figure"
                             >
-                              Entrance
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Entrance
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnMobile>
@@ -237,39 +292,66 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       <Thumbnail
                         alternativeText="Thumbnail element"
                         className="show-on-desktop"
-                        hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={false}
                         label="Kitchen"
+                        placeholderImageUrl={null}
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail show-on-desktop huge"
                         >
-                          <div
-                            className="ui image huge"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Kitchen"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid"
+                              role="figure"
                             >
-                              Kitchen
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Kitchen
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnDesktop>
@@ -290,37 +372,65 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={true}
                         label="Kitchen"
+                        placeholderImageUrl={null}
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail show-on-mobile large proportional-width-and-height"
                         >
-                          <div
-                            className="ui image large square rounded"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Kitchen"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid is-rounded"
+                              role="figure"
                             >
-                              Kitchen
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Kitchen
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnMobile>
@@ -367,39 +477,66 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       <Thumbnail
                         alternativeText="Thumbnail element"
                         className="show-on-desktop"
-                        hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={false}
                         label="Living room"
+                        placeholderImageUrl={null}
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail show-on-desktop huge"
                         >
-                          <div
-                            className="ui image huge"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Living room"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid"
+                              role="figure"
                             >
-                              Living room
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Living room
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnDesktop>
@@ -420,37 +557,65 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={true}
                         label="Living room"
+                        placeholderImageUrl={null}
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail show-on-mobile large proportional-width-and-height"
                         >
-                          <div
-                            className="ui image large square rounded"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Living room"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid is-rounded"
+                              role="figure"
                             >
-                              Living room
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Living room
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnMobile>
@@ -497,39 +662,66 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       <Thumbnail
                         alternativeText="Thumbnail element"
                         className="show-on-desktop"
-                        hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={false}
                         label="Studio"
+                        placeholderImageUrl={null}
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail show-on-desktop huge"
                         >
-                          <div
-                            className="ui image huge"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Studio"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid"
+                              role="figure"
                             >
-                              Studio
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Studio
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnDesktop>
@@ -550,37 +742,65 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={true}
                         label="Studio"
+                        placeholderImageUrl={null}
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail show-on-mobile large proportional-width-and-height"
                         >
-                          <div
-                            className="ui image large square rounded"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Studio"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid is-rounded"
+                              role="figure"
                             >
-                              Studio
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Studio
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnMobile>
@@ -627,39 +847,66 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       <Thumbnail
                         alternativeText="Thumbnail element"
                         className="show-on-desktop"
-                        hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={false}
                         label="Garden room"
+                        placeholderImageUrl={null}
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail show-on-desktop huge"
                         >
-                          <div
-                            className="ui image huge"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Garden room"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid"
+                              role="figure"
                             >
-                              Garden room
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Garden room
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnDesktop>
@@ -680,37 +927,65 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                        isCircular={false}
                         isSquare={true}
                         label="Garden room"
+                        placeholderImageUrl={null}
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail show-on-mobile large proportional-width-and-height"
                         >
-                          <div
-                            className="ui image large square rounded"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
+                          <ResponsiveImage
+                            alternativeText="Thumbnail element"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={true}
+                            label="Garden room"
+                            placeholderImageUrl={null}
+                            sources={Array []}
                           >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
-                          <Paragraph
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
+                            <picture
+                              className="responsive-image is-fluid is-rounded"
+                              role="figure"
                             >
-                              Garden room
-                            </p>
-                          </Paragraph>
+                              <Image
+                                alt="Thumbnail element"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                height={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                title="Image Title"
+                                ui={true}
+                                width={null}
+                              >
+                                <img
+                                  alt="Thumbnail element"
+                                  className="ui fluid image"
+                                  height={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  title="Image Title"
+                                  width={null}
+                                />
+                              </Image>
+                              <Paragraph
+                                size="medium"
+                                weight={null}
+                              >
+                                <p
+                                  className=""
+                                >
+                                  Garden room
+                                </p>
+                              </Paragraph>
+                            </picture>
+                          </ResponsiveImage>
                         </div>
                       </Thumbnail>
                     </ShowOnMobile>
@@ -843,12 +1118,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                hasRoundedCorners={false}
                                 imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                                 imageWidth={null}
                                 isAvatar={false}
+                                isCircular={false}
                                 isFluid={true}
                                 label={null}
                                 sources={Array []}
@@ -872,12 +1149,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                hasRoundedCorners={false}
                                 imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                                 imageWidth={null}
                                 isAvatar={false}
+                                isCircular={false}
                                 isFluid={true}
                                 label={null}
                                 sources={Array []}
@@ -901,12 +1180,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                hasRoundedCorners={false}
                                 imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                                 imageWidth={null}
                                 isAvatar={false}
+                                isCircular={false}
                                 isFluid={true}
                                 label={null}
                                 sources={Array []}
@@ -930,12 +1211,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                hasRoundedCorners={false}
                                 imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                                 imageWidth={null}
                                 isAvatar={false}
+                                isCircular={false}
                                 isFluid={true}
                                 label={null}
                                 sources={Array []}
@@ -959,12 +1242,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </Heading>
                               <ResponsiveImage
                                 alternativeText="Image Widget"
+                                hasRoundedCorners={false}
                                 imageHeight={null}
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                                 imageWidth={null}
                                 isAvatar={false}
+                                isCircular={false}
                                 isFluid={true}
                                 label={null}
                                 sources={Array []}

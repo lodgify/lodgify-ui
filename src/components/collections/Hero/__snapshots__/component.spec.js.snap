@@ -54,12 +54,14 @@ exports[`<Hero /> by default should render the right structure 1`] = `
       >
         <ResponsiveImage
           alternativeText="Image Widget"
+          hasRoundedCorners={false}
           imageHeight={null}
           imageNotFoundLabelText="Image not found!"
           imageTitle="Image Title"
           imageUrl="https://darkpurple.com"
           imageWidth={null}
           isAvatar={false}
+          isCircular={false}
           isFluid={true}
           label={null}
           placeholderImageUrl={null}
