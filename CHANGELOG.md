@@ -1,3 +1,10 @@
+## [1.72.1](https://github.com/lodgify/lodgify-ui.git/compare/v1.72.0...v1.72.1) (2018-10-29)
+
+
+### Bug Fixes
+
+* **Babel:** use commonjs when getting Semantic UI react components ([bba2f8b](https://github.com/lodgify/lodgify-ui.git/commit/bba2f8b))
+
 # [1.72.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.71.0...v1.72.0) (2018-10-29)
 
 
