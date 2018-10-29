@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { List } from 'semantic-ui-react';
+import { size } from 'lodash';
 
 import { HOME_HIGHLIGHTS } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
@@ -79,19 +80,23 @@ export const Component = ({
         )
       )}
     </GridColumn>
-    <GridColumn width={12}>
-      <Subheading>{homeHighlightsHeadingText}</Subheading>
-    </GridColumn>
-    <GridColumn width={12}>
-      {homeHighlights.map(({ iconName, text }) => (
-        <Icon
-          hasBorder
-          key={buildKeyFromStrings(iconName, text)}
-          labelText={text}
-          name={iconName}
-        />
-      ))}
-    </GridColumn>
+    {size(homeHighlights) > 0 && (
+      <Fragment>
+        <GridColumn width={12}>
+          <Subheading>{homeHighlightsHeadingText}</Subheading>
+        </GridColumn>
+        <GridColumn width={12}>
+          {homeHighlights.map(({ iconName, text }) => (
+            <Icon
+              hasBorder
+              key={buildKeyFromStrings(iconName, text)}
+              labelText={text}
+              name={iconName}
+            />
+          ))}
+        </GridColumn>
+      </Fragment>
+    )}
   </Grid>
 );
 

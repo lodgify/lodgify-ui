@@ -1,0 +1,2175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`Paragraph\` component should render the right children 1`] = `
+<Description
+  descriptionText="
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+"
+  extraDescriptionText="
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+"
+  homeHighlights={
+    Array [
+      Object {
+        "iconName": "credit card",
+        "text": "credit cards",
+      },
+      Object {
+        "iconName": "no children",
+        "text": "no children allowed",
+      },
+    ]
+  }
+  homeHighlightsHeadingText="Highlights"
+  mainCharacteristicsIcons={
+    Object {
+      "color": null,
+      "hasBorder": false,
+      "isCircular": false,
+      "isColorInverted": false,
+      "isDisabled": false,
+      "isLabelLeft": false,
+      "labelText": Any<String>,
+      "labelWeight": null,
+      "name": Any<String>,
+      "path": null,
+      "size": null,
+    }
+  }
+  propertyMainCharacteristics={
+    Array [
+      Object {
+        "iconName": "users",
+        "text": "2 guests",
+      },
+      Object {
+        "iconName": "home",
+        "text": "1 bedroom",
+      },
+      Object {
+        "iconName": "single bed",
+        "text": "2 beds",
+      },
+      Object {
+        "iconName": "bathroom",
+        "text": "1 bathroom",
+      },
+    ]
+  }
+  propertyName="Yolo"
+  propertyType="Bed & Breakfast"
+>
+  <Grid
+    areColumnsCentered={false}
+    columns={1}
+  >
+    <Grid
+      centered={false}
+      columns={1}
+    >
+      <div
+        className="ui one column grid"
+      >
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Subheading>
+                <span
+                  className="ui sub header"
+                >
+                  Bed & Breakfast
+                </span>
+              </Subheading>
+              <Heading
+                isColorInverted={false}
+                size="large"
+                textAlign={null}
+              >
+                <Header
+                  as="h2"
+                  inverted={false}
+                  textAlign={null}
+                >
+                  <h2
+                    className="ui header"
+                  >
+                    Yolo
+                  </h2>
+                </Header>
+              </Heading>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <ShowOnDesktop
+                parent={[Function]}
+                parentProps={
+                  Object {
+                    "horizontal": true,
+                  }
+                }
+              >
+                <List
+                  className="show-on-desktop"
+                  horizontal={true}
+                >
+                  <div
+                    className="ui horizontal list show-on-desktop"
+                    role="list"
+                  >
+                    <ListItem
+                      key="2 guests0"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="2 guests"
+                          labelWeight={null}
+                          name="users"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M18.63,8.88h-.08a4,4,0,1,0-4.18,0h-.08a2.2,2.2,0,0,0-2.2,2.2v9.35a2.1,2.1,0,0,0,2.1,2.1h4.54a2.11,2.11,0,0,0,2.11-2.1V11.08A2.21,2.21,0,0,0,18.63,8.88Zm-5.18-3.4a3,3,0,1,1,3,3A3,3,0,0,1,13.45,5.48Zm6.39,15a1.11,1.11,0,0,1-1.11,1.1H14.19a1.1,1.1,0,0,1-1.1-1.1V11.08a1.2,1.2,0,0,1,1.2-1.2h4.34a1.21,1.21,0,0,1,1.21,1.2ZM9,11.89a3.27,3.27,0,1,0-3.77,0,2.21,2.21,0,0,0-2.09,2.19v6.24a2.12,2.12,0,0,0,2.11,2.11H9a2.11,2.11,0,0,0,2.1-2.11V14.08A2.21,2.21,0,0,0,9,11.89ZM7.13,7A2.27,2.27,0,1,1,4.87,9.24,2.27,2.27,0,0,1,7.13,7Zm3,13.35A1.11,1.11,0,0,1,9,21.43H5.27a1.11,1.11,0,0,1-1.11-1.11V14.08a1.21,1.21,0,0,1,1.21-1.2H8.9a1.2,1.2,0,0,1,1.2,1.2Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                2 guests
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                    <ListItem
+                      key="1 bedroom1"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="1 bedroom"
+                          labelWeight={null}
+                          name="home"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M22.28,10.9,12.35,1a.52.52,0,0,0-.7,0L1.72,10.9a1.51,1.51,0,0,0,0,2.14,1.48,1.48,0,0,0,1.07.45,1.5,1.5,0,0,0,.8-.27v9.46a.5.5,0,0,0,.5.5H20a.51.51,0,0,0,.5-.5V13.29A1.55,1.55,0,0,0,22.28,13,1.48,1.48,0,0,0,22.72,12,1.5,1.5,0,0,0,22.28,10.9Zm-12,11.27V16.9h3.51v5.27Zm4.51,0V16.4a.5.5,0,0,0-.5-.5H9.8a.5.5,0,0,0-.5.5v5.78H4.59V12.32L12,4.9l7.51,7.52v9.76Zm6.76-9.85a.5.5,0,0,1-.73,0L12.36,3.84a.5.5,0,0,0-.71,0L3.16,12.33a.5.5,0,0,1-.73,0,.51.51,0,0,1,0-.72L12,2l9.57,9.59A.51.51,0,0,1,21.57,12.33Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                1 bedroom
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                    <ListItem
+                      key="2 beds2"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="2 beds"
+                          labelWeight={null}
+                          name="single bed"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                2 beds
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                    <ListItem
+                      key="1 bathroom3"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="1 bathroom"
+                          labelWeight={null}
+                          name="bathroom"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M22.32,11.85H6.3s0-.06,0-.1V2.85A1.78,1.78,0,0,1,7,1.21a1.69,1.69,0,0,1,1.7.23A5.22,5.22,0,0,1,9.43,2c-.71.81-1,2.15-.8,4a.49.49,0,0,0,.28.41.53.53,0,0,0,.5,0l5.08-3.52a.5.5,0,0,0,.22-.43A.52.52,0,0,0,14.46,2c-.11-.06-2.49-1.41-4.23-.62a6.65,6.65,0,0,0-1-.77A2.63,2.63,0,0,0,6.53.34,2.73,2.73,0,0,0,5.32,2.85v8.9a.3.3,0,0,0,0,.1H1.68a.51.51,0,0,0-.5.5v3a.5.5,0,0,0,.5.5H2.5V18.5A4.43,4.43,0,0,0,4,21.76L2.63,23.08a.51.51,0,0,0,0,.71.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15l1.44-1.44a4.39,4.39,0,0,0,2.16.59H17.06a4.42,4.42,0,0,0,2.2-.61l1.46,1.46a.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15.51.51,0,0,0,0-.71l-1.35-1.35A4.39,4.39,0,0,0,21.5,18.5V15.87h.82a.5.5,0,0,0,.5-.5v-3A.5.5,0,0,0,22.32,11.85ZM10.47,2.36a1.82,1.82,0,0,1,1-.26,5,5,0,0,1,1.74.39L9.57,5C9.56,3.94,9.75,2.82,10.47,2.36Zm10,16.14a3.45,3.45,0,0,1-3.44,3.44H6.94A3.45,3.45,0,0,1,3.5,18.5V15.94h17Zm1.32-3.63H2.18v-2H21.82Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                1 bathroom
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                  </div>
+                </List>
+              </ShowOnDesktop>
+              <ShowOnMobile
+                parent={[Function]}
+                parentProps={
+                  Object {
+                    "columns": 1,
+                  }
+                }
+              >
+                <Grid
+                  areColumnsCentered={false}
+                  className="show-on-mobile"
+                  columns={1}
+                >
+                  <Grid
+                    centered={false}
+                    className="show-on-mobile"
+                    columns={1}
+                  >
+                    <div
+                      className="ui one column grid show-on-mobile"
+                    >
+                      <GridColumn
+                        computer={3}
+                        key="2 guests0"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="2 guests"
+                              labelWeight={null}
+                              name="users"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M18.63,8.88h-.08a4,4,0,1,0-4.18,0h-.08a2.2,2.2,0,0,0-2.2,2.2v9.35a2.1,2.1,0,0,0,2.1,2.1h4.54a2.11,2.11,0,0,0,2.11-2.1V11.08A2.21,2.21,0,0,0,18.63,8.88Zm-5.18-3.4a3,3,0,1,1,3,3A3,3,0,0,1,13.45,5.48Zm6.39,15a1.11,1.11,0,0,1-1.11,1.1H14.19a1.1,1.1,0,0,1-1.1-1.1V11.08a1.2,1.2,0,0,1,1.2-1.2h4.34a1.21,1.21,0,0,1,1.21,1.2ZM9,11.89a3.27,3.27,0,1,0-3.77,0,2.21,2.21,0,0,0-2.09,2.19v6.24a2.12,2.12,0,0,0,2.11,2.11H9a2.11,2.11,0,0,0,2.1-2.11V14.08A2.21,2.21,0,0,0,9,11.89ZM7.13,7A2.27,2.27,0,1,1,4.87,9.24,2.27,2.27,0,0,1,7.13,7Zm3,13.35A1.11,1.11,0,0,1,9,21.43H5.27a1.11,1.11,0,0,1-1.11-1.11V14.08a1.21,1.21,0,0,1,1.21-1.2H8.9a1.2,1.2,0,0,1,1.2,1.2Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    2 guests
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        computer={3}
+                        key="1 bedroom1"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="1 bedroom"
+                              labelWeight={null}
+                              name="home"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M22.28,10.9,12.35,1a.52.52,0,0,0-.7,0L1.72,10.9a1.51,1.51,0,0,0,0,2.14,1.48,1.48,0,0,0,1.07.45,1.5,1.5,0,0,0,.8-.27v9.46a.5.5,0,0,0,.5.5H20a.51.51,0,0,0,.5-.5V13.29A1.55,1.55,0,0,0,22.28,13,1.48,1.48,0,0,0,22.72,12,1.5,1.5,0,0,0,22.28,10.9Zm-12,11.27V16.9h3.51v5.27Zm4.51,0V16.4a.5.5,0,0,0-.5-.5H9.8a.5.5,0,0,0-.5.5v5.78H4.59V12.32L12,4.9l7.51,7.52v9.76Zm6.76-9.85a.5.5,0,0,1-.73,0L12.36,3.84a.5.5,0,0,0-.71,0L3.16,12.33a.5.5,0,0,1-.73,0,.51.51,0,0,1,0-.72L12,2l9.57,9.59A.51.51,0,0,1,21.57,12.33Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    1 bedroom
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        computer={3}
+                        key="2 beds2"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="2 beds"
+                              labelWeight={null}
+                              name="single bed"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    2 beds
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        computer={3}
+                        key="1 bathroom3"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="1 bathroom"
+                              labelWeight={null}
+                              name="bathroom"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M22.32,11.85H6.3s0-.06,0-.1V2.85A1.78,1.78,0,0,1,7,1.21a1.69,1.69,0,0,1,1.7.23A5.22,5.22,0,0,1,9.43,2c-.71.81-1,2.15-.8,4a.49.49,0,0,0,.28.41.53.53,0,0,0,.5,0l5.08-3.52a.5.5,0,0,0,.22-.43A.52.52,0,0,0,14.46,2c-.11-.06-2.49-1.41-4.23-.62a6.65,6.65,0,0,0-1-.77A2.63,2.63,0,0,0,6.53.34,2.73,2.73,0,0,0,5.32,2.85v8.9a.3.3,0,0,0,0,.1H1.68a.51.51,0,0,0-.5.5v3a.5.5,0,0,0,.5.5H2.5V18.5A4.43,4.43,0,0,0,4,21.76L2.63,23.08a.51.51,0,0,0,0,.71.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15l1.44-1.44a4.39,4.39,0,0,0,2.16.59H17.06a4.42,4.42,0,0,0,2.2-.61l1.46,1.46a.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15.51.51,0,0,0,0-.71l-1.35-1.35A4.39,4.39,0,0,0,21.5,18.5V15.87h.82a.5.5,0,0,0,.5-.5v-3A.5.5,0,0,0,22.32,11.85ZM10.47,2.36a1.82,1.82,0,0,1,1-.26,5,5,0,0,1,1.74.39L9.57,5C9.56,3.94,9.75,2.82,10.47,2.36Zm10,16.14a3.45,3.45,0,0,1-3.44,3.44H6.94A3.45,3.45,0,0,1,3.5,18.5V15.94h17Zm1.32-3.63H2.18v-2H21.82Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    1 bathroom
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                    </div>
+                  </Grid>
+                </Grid>
+              </ShowOnMobile>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Paragraph
+                key="Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.0"
+                size="medium"
+                weight={null}
+              >
+                <p
+                  className=""
+                >
+                  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+                </p>
+              </Paragraph>
+              <Paragraph
+                key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.1"
+                size="medium"
+                weight={null}
+              >
+                <p
+                  className=""
+                >
+                  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...
+                  <Modal
+                    isFullscreen={false}
+                    size="tiny"
+                    trigger={
+                      <Button
+                        as="button"
+                        basic={true}
+                      >
+                        View more
+                      </Button>
+                    }
+                  >
+                    <Modal
+                      closeIcon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="close"
+                          path={null}
+                          size={null}
+                        />
+                      }
+                      closeOnDimmerClick={true}
+                      closeOnDocumentClick={false}
+                      content={
+                        Array [
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+                          </Paragraph>,
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </Paragraph>,
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </Paragraph>,
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </Paragraph>,
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </Paragraph>,
+                        ]
+                      }
+                      dimmer="inverted"
+                      eventPool="Modal"
+                      size="tiny"
+                      trigger={
+                        <Button
+                          as="button"
+                          basic={true}
+                        >
+                          View more
+                        </Button>
+                      }
+                    >
+                      <Portal
+                        className="ui inverted page modals dimmer transition visible active"
+                        closeOnDocumentClick={false}
+                        closeOnEscape={true}
+                        closeOnRootNodeClick={true}
+                        eventPool="Modal"
+                        mountNode={<body />}
+                        onClose={[Function]}
+                        onMount={[Function]}
+                        onOpen={[Function]}
+                        onUnmount={[Function]}
+                        openOnTriggerClick={true}
+                        trigger={
+                          <Button
+                            as="button"
+                            basic={true}
+                          >
+                            View more
+                          </Button>
+                        }
+                      >
+                        <Ref
+                          innerRef={[Function]}
+                        >
+                          <Button
+                            as="button"
+                            basic={true}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                          >
+                            <button
+                              className="ui basic button"
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              role="button"
+                            >
+                              View more
+                            </button>
+                          </Button>
+                        </Ref>
+                      </Portal>
+                    </Modal>
+                  </Modal>
+                </p>
+              </Paragraph>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Subheading>
+                <span
+                  className="ui sub header"
+                >
+                  Highlights
+                </span>
+              </Subheading>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Icon
+                color={null}
+                hasBorder={true}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                key="credit cardcredit cards"
+                labelText="credit cards"
+                labelWeight={null}
+                name="credit card"
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon has-border has-label"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.84,5.17H4.16A1.82,1.82,0,0,0,2.34,7V17.66a1.81,1.81,0,0,0,1.82,1.81H19.84a1.81,1.81,0,0,0,1.82-1.81V7A1.82,1.82,0,0,0,19.84,5.17Zm-15.68,1H19.84a.82.82,0,0,1,.82.82V7H3.34V7A.82.82,0,0,1,4.16,6.17ZM3.34,8H20.65V9.54H3.34Zm16.5,10.46H4.16a.82.82,0,0,1-.82-.81V10.54H20.66v7.12A.82.82,0,0,1,19.84,18.47Zm-2.29-4.63H14.12A1.13,1.13,0,0,0,13,15v.84a1.12,1.12,0,0,0,1.12,1.12h3.43a1.12,1.12,0,0,0,1.12-1.12V15A1.13,1.13,0,0,0,17.55,13.84Zm.12,2a.12.12,0,0,1-.12.12H14.12a.12.12,0,0,1-.12-.12V15a.12.12,0,0,1,.12-.13h3.43a.13.13,0,0,1,.12.13Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <Paragraph
+                    size="medium"
+                    weight={null}
+                  >
+                    <p
+                      className=""
+                    >
+                      credit cards
+                    </p>
+                  </Paragraph>
+                </i>
+              </Icon>
+              <Icon
+                color={null}
+                hasBorder={true}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                key="no childrenno children allowed"
+                labelText="no children allowed"
+                labelWeight={null}
+                name="no children"
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon has-border has-label"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12,1.79A10.19,10.19,0,0,0,6.13,20.33a.2.2,0,0,0,.07.06,10.15,10.15,0,0,0,11.38.15l0,0A10.2,10.2,0,0,0,12,1.79Zm0,19.42a9.17,9.17,0,0,1-4.94-1.45,3.45,3.45,0,0,1,3.21-2.22h3.17a3.45,3.45,0,0,1,3.28,2.36A9.27,9.27,0,0,1,12,21.21Zm5.58-1.9a4.44,4.44,0,0,0-3.37-2.7l.21-.11a.5.5,0,1,0-.53-.85,3.86,3.86,0,0,1-2,.57,4,4,0,0,1-3.95-3.95,3.74,3.74,0,0,1,.38-1.69.5.5,0,0,0-.23-.67.51.51,0,0,0-.67.23,4.82,4.82,0,0,0-.48,2.13,4.93,4.93,0,0,0,2.61,4.34,4.45,4.45,0,0,0-3.3,2.55A9.18,9.18,0,0,1,5,6L19.09,17.87A9.34,9.34,0,0,1,17.58,19.31ZM5.71,5.29a9.2,9.2,0,0,1,14,11.78ZM15.4,8.81a5,5,0,0,1,1.4,3.46,3.2,3.2,0,0,1-.06.7.45.45,0,0,1-.49.46.53.53,0,0,1-.5-.54s0-.07,0-.1a3,3,0,0,0,0-.52A4,4,0,0,0,14.12,9l-.06,0a3.87,3.87,0,0,0-1.71-.63h-.1l-.39,0a3.26,3.26,0,0,0-.92.12.5.5,0,0,1-.28-1A4.23,4.23,0,0,1,12,7.35a.49.49,0,0,1,.24,0,1.66,1.66,0,0,0,1.21-.24,1.51,1.51,0,0,0,.42-1.22.5.5,0,0,1,.5-.5.5.5,0,0,1,.5.5,2.42,2.42,0,0,1-.78,2c.13.07.26.12.38.2A2,2,0,0,0,16.26,6a.51.51,0,0,1,.5-.5.5.5,0,0,1,.5.5A2.84,2.84,0,0,1,15.4,8.81Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <Paragraph
+                    size="medium"
+                    weight={null}
+                  >
+                    <p
+                      className=""
+                    >
+                      no children allowed
+                    </p>
+                  </Paragraph>
+                </i>
+              </Icon>
+            </div>
+          </GridColumn>
+        </GridColumn>
+      </div>
+    </Grid>
+  </Grid>
+</Description>
+`;
+
+exports[`<Description /> if \`props.homeHighlights\` is empty should not render the home highlights 1`] = `
+<Description
+  descriptionText="
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+"
+  extraDescriptionText={null}
+  homeHighlights={Array []}
+  homeHighlightsHeadingText="Highlights"
+  mainCharacteristicsIcons={
+    Object {
+      "color": null,
+      "hasBorder": false,
+      "isCircular": false,
+      "isColorInverted": false,
+      "isDisabled": false,
+      "isLabelLeft": false,
+      "labelText": Any<String>,
+      "labelWeight": null,
+      "name": Any<String>,
+      "path": null,
+      "size": null,
+    }
+  }
+  propertyMainCharacteristics={
+    Array [
+      Object {
+        "iconName": "users",
+        "text": "2 guests",
+      },
+      Object {
+        "iconName": "home",
+        "text": "1 bedroom",
+      },
+      Object {
+        "iconName": "single bed",
+        "text": "2 beds",
+      },
+      Object {
+        "iconName": "bathroom",
+        "text": "1 bathroom",
+      },
+    ]
+  }
+  propertyName="Yolo"
+  propertyType="Bed & Breakfast"
+>
+  <Grid
+    areColumnsCentered={false}
+    columns={1}
+  >
+    <Grid
+      centered={false}
+      columns={1}
+    >
+      <div
+        className="ui one column grid"
+      >
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Subheading>
+                <span
+                  className="ui sub header"
+                >
+                  Bed & Breakfast
+                </span>
+              </Subheading>
+              <Heading
+                isColorInverted={false}
+                size="large"
+                textAlign={null}
+              >
+                <Header
+                  as="h2"
+                  inverted={false}
+                  textAlign={null}
+                >
+                  <h2
+                    className="ui header"
+                  >
+                    Yolo
+                  </h2>
+                </Header>
+              </Heading>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <ShowOnDesktop
+                parent={[Function]}
+                parentProps={
+                  Object {
+                    "horizontal": true,
+                  }
+                }
+              >
+                <List
+                  className="show-on-desktop"
+                  horizontal={true}
+                >
+                  <div
+                    className="ui horizontal list show-on-desktop"
+                    role="list"
+                  >
+                    <ListItem
+                      key="2 guests0"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="2 guests"
+                          labelWeight={null}
+                          name="users"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M18.63,8.88h-.08a4,4,0,1,0-4.18,0h-.08a2.2,2.2,0,0,0-2.2,2.2v9.35a2.1,2.1,0,0,0,2.1,2.1h4.54a2.11,2.11,0,0,0,2.11-2.1V11.08A2.21,2.21,0,0,0,18.63,8.88Zm-5.18-3.4a3,3,0,1,1,3,3A3,3,0,0,1,13.45,5.48Zm6.39,15a1.11,1.11,0,0,1-1.11,1.1H14.19a1.1,1.1,0,0,1-1.1-1.1V11.08a1.2,1.2,0,0,1,1.2-1.2h4.34a1.21,1.21,0,0,1,1.21,1.2ZM9,11.89a3.27,3.27,0,1,0-3.77,0,2.21,2.21,0,0,0-2.09,2.19v6.24a2.12,2.12,0,0,0,2.11,2.11H9a2.11,2.11,0,0,0,2.1-2.11V14.08A2.21,2.21,0,0,0,9,11.89ZM7.13,7A2.27,2.27,0,1,1,4.87,9.24,2.27,2.27,0,0,1,7.13,7Zm3,13.35A1.11,1.11,0,0,1,9,21.43H5.27a1.11,1.11,0,0,1-1.11-1.11V14.08a1.21,1.21,0,0,1,1.21-1.2H8.9a1.2,1.2,0,0,1,1.2,1.2Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                2 guests
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                    <ListItem
+                      key="1 bedroom1"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="1 bedroom"
+                          labelWeight={null}
+                          name="home"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M22.28,10.9,12.35,1a.52.52,0,0,0-.7,0L1.72,10.9a1.51,1.51,0,0,0,0,2.14,1.48,1.48,0,0,0,1.07.45,1.5,1.5,0,0,0,.8-.27v9.46a.5.5,0,0,0,.5.5H20a.51.51,0,0,0,.5-.5V13.29A1.55,1.55,0,0,0,22.28,13,1.48,1.48,0,0,0,22.72,12,1.5,1.5,0,0,0,22.28,10.9Zm-12,11.27V16.9h3.51v5.27Zm4.51,0V16.4a.5.5,0,0,0-.5-.5H9.8a.5.5,0,0,0-.5.5v5.78H4.59V12.32L12,4.9l7.51,7.52v9.76Zm6.76-9.85a.5.5,0,0,1-.73,0L12.36,3.84a.5.5,0,0,0-.71,0L3.16,12.33a.5.5,0,0,1-.73,0,.51.51,0,0,1,0-.72L12,2l9.57,9.59A.51.51,0,0,1,21.57,12.33Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                1 bedroom
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                    <ListItem
+                      key="2 beds2"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="2 beds"
+                          labelWeight={null}
+                          name="single bed"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                2 beds
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                    <ListItem
+                      key="1 bathroom3"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="1 bathroom"
+                          labelWeight={null}
+                          name="bathroom"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M22.32,11.85H6.3s0-.06,0-.1V2.85A1.78,1.78,0,0,1,7,1.21a1.69,1.69,0,0,1,1.7.23A5.22,5.22,0,0,1,9.43,2c-.71.81-1,2.15-.8,4a.49.49,0,0,0,.28.41.53.53,0,0,0,.5,0l5.08-3.52a.5.5,0,0,0,.22-.43A.52.52,0,0,0,14.46,2c-.11-.06-2.49-1.41-4.23-.62a6.65,6.65,0,0,0-1-.77A2.63,2.63,0,0,0,6.53.34,2.73,2.73,0,0,0,5.32,2.85v8.9a.3.3,0,0,0,0,.1H1.68a.51.51,0,0,0-.5.5v3a.5.5,0,0,0,.5.5H2.5V18.5A4.43,4.43,0,0,0,4,21.76L2.63,23.08a.51.51,0,0,0,0,.71.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15l1.44-1.44a4.39,4.39,0,0,0,2.16.59H17.06a4.42,4.42,0,0,0,2.2-.61l1.46,1.46a.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15.51.51,0,0,0,0-.71l-1.35-1.35A4.39,4.39,0,0,0,21.5,18.5V15.87h.82a.5.5,0,0,0,.5-.5v-3A.5.5,0,0,0,22.32,11.85ZM10.47,2.36a1.82,1.82,0,0,1,1-.26,5,5,0,0,1,1.74.39L9.57,5C9.56,3.94,9.75,2.82,10.47,2.36Zm10,16.14a3.45,3.45,0,0,1-3.44,3.44H6.94A3.45,3.45,0,0,1,3.5,18.5V15.94h17Zm1.32-3.63H2.18v-2H21.82Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                1 bathroom
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                  </div>
+                </List>
+              </ShowOnDesktop>
+              <ShowOnMobile
+                parent={[Function]}
+                parentProps={
+                  Object {
+                    "columns": 1,
+                  }
+                }
+              >
+                <Grid
+                  areColumnsCentered={false}
+                  className="show-on-mobile"
+                  columns={1}
+                >
+                  <Grid
+                    centered={false}
+                    className="show-on-mobile"
+                    columns={1}
+                  >
+                    <div
+                      className="ui one column grid show-on-mobile"
+                    >
+                      <GridColumn
+                        computer={3}
+                        key="2 guests0"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="2 guests"
+                              labelWeight={null}
+                              name="users"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M18.63,8.88h-.08a4,4,0,1,0-4.18,0h-.08a2.2,2.2,0,0,0-2.2,2.2v9.35a2.1,2.1,0,0,0,2.1,2.1h4.54a2.11,2.11,0,0,0,2.11-2.1V11.08A2.21,2.21,0,0,0,18.63,8.88Zm-5.18-3.4a3,3,0,1,1,3,3A3,3,0,0,1,13.45,5.48Zm6.39,15a1.11,1.11,0,0,1-1.11,1.1H14.19a1.1,1.1,0,0,1-1.1-1.1V11.08a1.2,1.2,0,0,1,1.2-1.2h4.34a1.21,1.21,0,0,1,1.21,1.2ZM9,11.89a3.27,3.27,0,1,0-3.77,0,2.21,2.21,0,0,0-2.09,2.19v6.24a2.12,2.12,0,0,0,2.11,2.11H9a2.11,2.11,0,0,0,2.1-2.11V14.08A2.21,2.21,0,0,0,9,11.89ZM7.13,7A2.27,2.27,0,1,1,4.87,9.24,2.27,2.27,0,0,1,7.13,7Zm3,13.35A1.11,1.11,0,0,1,9,21.43H5.27a1.11,1.11,0,0,1-1.11-1.11V14.08a1.21,1.21,0,0,1,1.21-1.2H8.9a1.2,1.2,0,0,1,1.2,1.2Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    2 guests
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        computer={3}
+                        key="1 bedroom1"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="1 bedroom"
+                              labelWeight={null}
+                              name="home"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M22.28,10.9,12.35,1a.52.52,0,0,0-.7,0L1.72,10.9a1.51,1.51,0,0,0,0,2.14,1.48,1.48,0,0,0,1.07.45,1.5,1.5,0,0,0,.8-.27v9.46a.5.5,0,0,0,.5.5H20a.51.51,0,0,0,.5-.5V13.29A1.55,1.55,0,0,0,22.28,13,1.48,1.48,0,0,0,22.72,12,1.5,1.5,0,0,0,22.28,10.9Zm-12,11.27V16.9h3.51v5.27Zm4.51,0V16.4a.5.5,0,0,0-.5-.5H9.8a.5.5,0,0,0-.5.5v5.78H4.59V12.32L12,4.9l7.51,7.52v9.76Zm6.76-9.85a.5.5,0,0,1-.73,0L12.36,3.84a.5.5,0,0,0-.71,0L3.16,12.33a.5.5,0,0,1-.73,0,.51.51,0,0,1,0-.72L12,2l9.57,9.59A.51.51,0,0,1,21.57,12.33Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    1 bedroom
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        computer={3}
+                        key="2 beds2"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="2 beds"
+                              labelWeight={null}
+                              name="single bed"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    2 beds
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        computer={3}
+                        key="1 bathroom3"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="1 bathroom"
+                              labelWeight={null}
+                              name="bathroom"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M22.32,11.85H6.3s0-.06,0-.1V2.85A1.78,1.78,0,0,1,7,1.21a1.69,1.69,0,0,1,1.7.23A5.22,5.22,0,0,1,9.43,2c-.71.81-1,2.15-.8,4a.49.49,0,0,0,.28.41.53.53,0,0,0,.5,0l5.08-3.52a.5.5,0,0,0,.22-.43A.52.52,0,0,0,14.46,2c-.11-.06-2.49-1.41-4.23-.62a6.65,6.65,0,0,0-1-.77A2.63,2.63,0,0,0,6.53.34,2.73,2.73,0,0,0,5.32,2.85v8.9a.3.3,0,0,0,0,.1H1.68a.51.51,0,0,0-.5.5v3a.5.5,0,0,0,.5.5H2.5V18.5A4.43,4.43,0,0,0,4,21.76L2.63,23.08a.51.51,0,0,0,0,.71.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15l1.44-1.44a4.39,4.39,0,0,0,2.16.59H17.06a4.42,4.42,0,0,0,2.2-.61l1.46,1.46a.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15.51.51,0,0,0,0-.71l-1.35-1.35A4.39,4.39,0,0,0,21.5,18.5V15.87h.82a.5.5,0,0,0,.5-.5v-3A.5.5,0,0,0,22.32,11.85ZM10.47,2.36a1.82,1.82,0,0,1,1-.26,5,5,0,0,1,1.74.39L9.57,5C9.56,3.94,9.75,2.82,10.47,2.36Zm10,16.14a3.45,3.45,0,0,1-3.44,3.44H6.94A3.45,3.45,0,0,1,3.5,18.5V15.94h17Zm1.32-3.63H2.18v-2H21.82Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    1 bathroom
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                    </div>
+                  </Grid>
+                </Grid>
+              </ShowOnMobile>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Paragraph
+                key="Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.0"
+                size="medium"
+                weight={null}
+              >
+                <p
+                  className=""
+                >
+                  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+                </p>
+              </Paragraph>
+              <Paragraph
+                key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.1"
+                size="medium"
+                weight={null}
+              >
+                <p
+                  className=""
+                >
+                  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </p>
+              </Paragraph>
+            </div>
+          </GridColumn>
+        </GridColumn>
+      </div>
+    </Grid>
+  </Grid>
+</Description>
+`;
+
+exports[`<Description /> should have the correct structure 1`] = `
+<Description
+  descriptionText="
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+"
+  extraDescriptionText={null}
+  homeHighlights={
+    Array [
+      Object {
+        "iconName": "credit card",
+        "text": "credit cards",
+      },
+      Object {
+        "iconName": "no children",
+        "text": "no children allowed",
+      },
+    ]
+  }
+  homeHighlightsHeadingText="Highlights"
+  mainCharacteristicsIcons={
+    Object {
+      "color": null,
+      "hasBorder": false,
+      "isCircular": false,
+      "isColorInverted": false,
+      "isDisabled": false,
+      "isLabelLeft": false,
+      "labelText": Any<String>,
+      "labelWeight": null,
+      "name": Any<String>,
+      "path": null,
+      "size": null,
+    }
+  }
+  propertyMainCharacteristics={
+    Array [
+      Object {
+        "iconName": "users",
+        "text": "2 guests",
+      },
+      Object {
+        "iconName": "home",
+        "text": "1 bedroom",
+      },
+      Object {
+        "iconName": "single bed",
+        "text": "2 beds",
+      },
+      Object {
+        "iconName": "bathroom",
+        "text": "1 bathroom",
+      },
+    ]
+  }
+  propertyName="Yolo"
+  propertyType="Bed & Breakfast"
+>
+  <Grid
+    areColumnsCentered={false}
+    columns={1}
+  >
+    <Grid
+      centered={false}
+      columns={1}
+    >
+      <div
+        className="ui one column grid"
+      >
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Subheading>
+                <span
+                  className="ui sub header"
+                >
+                  Bed & Breakfast
+                </span>
+              </Subheading>
+              <Heading
+                isColorInverted={false}
+                size="large"
+                textAlign={null}
+              >
+                <Header
+                  as="h2"
+                  inverted={false}
+                  textAlign={null}
+                >
+                  <h2
+                    className="ui header"
+                  >
+                    Yolo
+                  </h2>
+                </Header>
+              </Heading>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <ShowOnDesktop
+                parent={[Function]}
+                parentProps={
+                  Object {
+                    "horizontal": true,
+                  }
+                }
+              >
+                <List
+                  className="show-on-desktop"
+                  horizontal={true}
+                >
+                  <div
+                    className="ui horizontal list show-on-desktop"
+                    role="list"
+                  >
+                    <ListItem
+                      key="2 guests0"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="2 guests"
+                          labelWeight={null}
+                          name="users"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M18.63,8.88h-.08a4,4,0,1,0-4.18,0h-.08a2.2,2.2,0,0,0-2.2,2.2v9.35a2.1,2.1,0,0,0,2.1,2.1h4.54a2.11,2.11,0,0,0,2.11-2.1V11.08A2.21,2.21,0,0,0,18.63,8.88Zm-5.18-3.4a3,3,0,1,1,3,3A3,3,0,0,1,13.45,5.48Zm6.39,15a1.11,1.11,0,0,1-1.11,1.1H14.19a1.1,1.1,0,0,1-1.1-1.1V11.08a1.2,1.2,0,0,1,1.2-1.2h4.34a1.21,1.21,0,0,1,1.21,1.2ZM9,11.89a3.27,3.27,0,1,0-3.77,0,2.21,2.21,0,0,0-2.09,2.19v6.24a2.12,2.12,0,0,0,2.11,2.11H9a2.11,2.11,0,0,0,2.1-2.11V14.08A2.21,2.21,0,0,0,9,11.89ZM7.13,7A2.27,2.27,0,1,1,4.87,9.24,2.27,2.27,0,0,1,7.13,7Zm3,13.35A1.11,1.11,0,0,1,9,21.43H5.27a1.11,1.11,0,0,1-1.11-1.11V14.08a1.21,1.21,0,0,1,1.21-1.2H8.9a1.2,1.2,0,0,1,1.2,1.2Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                2 guests
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                    <ListItem
+                      key="1 bedroom1"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="1 bedroom"
+                          labelWeight={null}
+                          name="home"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M22.28,10.9,12.35,1a.52.52,0,0,0-.7,0L1.72,10.9a1.51,1.51,0,0,0,0,2.14,1.48,1.48,0,0,0,1.07.45,1.5,1.5,0,0,0,.8-.27v9.46a.5.5,0,0,0,.5.5H20a.51.51,0,0,0,.5-.5V13.29A1.55,1.55,0,0,0,22.28,13,1.48,1.48,0,0,0,22.72,12,1.5,1.5,0,0,0,22.28,10.9Zm-12,11.27V16.9h3.51v5.27Zm4.51,0V16.4a.5.5,0,0,0-.5-.5H9.8a.5.5,0,0,0-.5.5v5.78H4.59V12.32L12,4.9l7.51,7.52v9.76Zm6.76-9.85a.5.5,0,0,1-.73,0L12.36,3.84a.5.5,0,0,0-.71,0L3.16,12.33a.5.5,0,0,1-.73,0,.51.51,0,0,1,0-.72L12,2l9.57,9.59A.51.51,0,0,1,21.57,12.33Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                1 bedroom
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                    <ListItem
+                      key="2 beds2"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="2 beds"
+                          labelWeight={null}
+                          name="single bed"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                2 beds
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                    <ListItem
+                      key="1 bathroom3"
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        role="listitem"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="1 bathroom"
+                          labelWeight={null}
+                          name="bathroom"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M22.32,11.85H6.3s0-.06,0-.1V2.85A1.78,1.78,0,0,1,7,1.21a1.69,1.69,0,0,1,1.7.23A5.22,5.22,0,0,1,9.43,2c-.71.81-1,2.15-.8,4a.49.49,0,0,0,.28.41.53.53,0,0,0,.5,0l5.08-3.52a.5.5,0,0,0,.22-.43A.52.52,0,0,0,14.46,2c-.11-.06-2.49-1.41-4.23-.62a6.65,6.65,0,0,0-1-.77A2.63,2.63,0,0,0,6.53.34,2.73,2.73,0,0,0,5.32,2.85v8.9a.3.3,0,0,0,0,.1H1.68a.51.51,0,0,0-.5.5v3a.5.5,0,0,0,.5.5H2.5V18.5A4.43,4.43,0,0,0,4,21.76L2.63,23.08a.51.51,0,0,0,0,.71.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15l1.44-1.44a4.39,4.39,0,0,0,2.16.59H17.06a4.42,4.42,0,0,0,2.2-.61l1.46,1.46a.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15.51.51,0,0,0,0-.71l-1.35-1.35A4.39,4.39,0,0,0,21.5,18.5V15.87h.82a.5.5,0,0,0,.5-.5v-3A.5.5,0,0,0,22.32,11.85ZM10.47,2.36a1.82,1.82,0,0,1,1-.26,5,5,0,0,1,1.74.39L9.57,5C9.56,3.94,9.75,2.82,10.47,2.36Zm10,16.14a3.45,3.45,0,0,1-3.44,3.44H6.94A3.45,3.45,0,0,1,3.5,18.5V15.94h17Zm1.32-3.63H2.18v-2H21.82Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                1 bathroom
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </div>
+                    </ListItem>
+                  </div>
+                </List>
+              </ShowOnDesktop>
+              <ShowOnMobile
+                parent={[Function]}
+                parentProps={
+                  Object {
+                    "columns": 1,
+                  }
+                }
+              >
+                <Grid
+                  areColumnsCentered={false}
+                  className="show-on-mobile"
+                  columns={1}
+                >
+                  <Grid
+                    centered={false}
+                    className="show-on-mobile"
+                    columns={1}
+                  >
+                    <div
+                      className="ui one column grid show-on-mobile"
+                    >
+                      <GridColumn
+                        computer={3}
+                        key="2 guests0"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="2 guests"
+                              labelWeight={null}
+                              name="users"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M18.63,8.88h-.08a4,4,0,1,0-4.18,0h-.08a2.2,2.2,0,0,0-2.2,2.2v9.35a2.1,2.1,0,0,0,2.1,2.1h4.54a2.11,2.11,0,0,0,2.11-2.1V11.08A2.21,2.21,0,0,0,18.63,8.88Zm-5.18-3.4a3,3,0,1,1,3,3A3,3,0,0,1,13.45,5.48Zm6.39,15a1.11,1.11,0,0,1-1.11,1.1H14.19a1.1,1.1,0,0,1-1.1-1.1V11.08a1.2,1.2,0,0,1,1.2-1.2h4.34a1.21,1.21,0,0,1,1.21,1.2ZM9,11.89a3.27,3.27,0,1,0-3.77,0,2.21,2.21,0,0,0-2.09,2.19v6.24a2.12,2.12,0,0,0,2.11,2.11H9a2.11,2.11,0,0,0,2.1-2.11V14.08A2.21,2.21,0,0,0,9,11.89ZM7.13,7A2.27,2.27,0,1,1,4.87,9.24,2.27,2.27,0,0,1,7.13,7Zm3,13.35A1.11,1.11,0,0,1,9,21.43H5.27a1.11,1.11,0,0,1-1.11-1.11V14.08a1.21,1.21,0,0,1,1.21-1.2H8.9a1.2,1.2,0,0,1,1.2,1.2Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    2 guests
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        computer={3}
+                        key="1 bedroom1"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="1 bedroom"
+                              labelWeight={null}
+                              name="home"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M22.28,10.9,12.35,1a.52.52,0,0,0-.7,0L1.72,10.9a1.51,1.51,0,0,0,0,2.14,1.48,1.48,0,0,0,1.07.45,1.5,1.5,0,0,0,.8-.27v9.46a.5.5,0,0,0,.5.5H20a.51.51,0,0,0,.5-.5V13.29A1.55,1.55,0,0,0,22.28,13,1.48,1.48,0,0,0,22.72,12,1.5,1.5,0,0,0,22.28,10.9Zm-12,11.27V16.9h3.51v5.27Zm4.51,0V16.4a.5.5,0,0,0-.5-.5H9.8a.5.5,0,0,0-.5.5v5.78H4.59V12.32L12,4.9l7.51,7.52v9.76Zm6.76-9.85a.5.5,0,0,1-.73,0L12.36,3.84a.5.5,0,0,0-.71,0L3.16,12.33a.5.5,0,0,1-.73,0,.51.51,0,0,1,0-.72L12,2l9.57,9.59A.51.51,0,0,1,21.57,12.33Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    1 bedroom
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        computer={3}
+                        key="2 beds2"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="2 beds"
+                              labelWeight={null}
+                              name="single bed"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M19.08,10h-.31V7.21c0-2.6-2.07-3.71-4.62-3.71H9.85C7.3,3.5,5.23,4.61,5.23,7.21V10H4.92a.93.93,0,0,0-.92.94V14.3a3.3,3.3,0,0,0,3.38,3.2H8v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h6v2.33c0,.37.22.67.5.67s.5-.3.5-.67V17.5h.62A3.3,3.3,0,0,0,20,14.3V10.91A.93.93,0,0,0,19.08,10ZM6.15,7.21c0-2.08,1.66-2.77,3.7-2.77h4.3c2,0,3.7.69,3.7,2.77V10H14.73a.93.93,0,0,0,0-.23V8.38a1.06,1.06,0,0,0-.91-1.17H10.22a1.06,1.06,0,0,0-.91,1.17V9.74a1.81,1.81,0,0,0,0,.23H6.15Zm4.08,2.53V8.38c0-.14.07-.23.12-.23h3.38s.12.09.12.23V9.74c0,.14-.07.23-.12.23H10.35S10.23,9.88,10.23,9.74Zm8.85,4.56a2.37,2.37,0,0,1-2.46,2.26H15.7a.36.36,0,0,0-.4,0H8.7a.36.36,0,0,0-.4,0H7.38A2.37,2.37,0,0,1,4.92,14.3V10.91H19.08Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    2 beds
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        computer={3}
+                        key="1 bathroom3"
+                        mobile={6}
+                        verticalAlignContent="top"
+                        width={null}
+                      >
+                        <GridColumn
+                          computer={3}
+                          mobile={6}
+                          verticalAlign="top"
+                          width={null}
+                        >
+                          <div
+                            className="top aligned three wide computer six wide mobile column"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="1 bathroom"
+                              labelWeight={null}
+                              name="bathroom"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M22.32,11.85H6.3s0-.06,0-.1V2.85A1.78,1.78,0,0,1,7,1.21a1.69,1.69,0,0,1,1.7.23A5.22,5.22,0,0,1,9.43,2c-.71.81-1,2.15-.8,4a.49.49,0,0,0,.28.41.53.53,0,0,0,.5,0l5.08-3.52a.5.5,0,0,0,.22-.43A.52.52,0,0,0,14.46,2c-.11-.06-2.49-1.41-4.23-.62a6.65,6.65,0,0,0-1-.77A2.63,2.63,0,0,0,6.53.34,2.73,2.73,0,0,0,5.32,2.85v8.9a.3.3,0,0,0,0,.1H1.68a.51.51,0,0,0-.5.5v3a.5.5,0,0,0,.5.5H2.5V18.5A4.43,4.43,0,0,0,4,21.76L2.63,23.08a.51.51,0,0,0,0,.71.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15l1.44-1.44a4.39,4.39,0,0,0,2.16.59H17.06a4.42,4.42,0,0,0,2.2-.61l1.46,1.46a.5.5,0,0,0,.35.15.51.51,0,0,0,.36-.15.51.51,0,0,0,0-.71l-1.35-1.35A4.39,4.39,0,0,0,21.5,18.5V15.87h.82a.5.5,0,0,0,.5-.5v-3A.5.5,0,0,0,22.32,11.85ZM10.47,2.36a1.82,1.82,0,0,1,1-.26,5,5,0,0,1,1.74.39L9.57,5C9.56,3.94,9.75,2.82,10.47,2.36Zm10,16.14a3.45,3.45,0,0,1-3.44,3.44H6.94A3.45,3.45,0,0,1,3.5,18.5V15.94h17Zm1.32-3.63H2.18v-2H21.82Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    1 bathroom
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                    </div>
+                  </Grid>
+                </Grid>
+              </ShowOnMobile>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Paragraph
+                key="Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.0"
+                size="medium"
+                weight={null}
+              >
+                <p
+                  className=""
+                >
+                  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+                </p>
+              </Paragraph>
+              <Paragraph
+                key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.1"
+                size="medium"
+                weight={null}
+              >
+                <p
+                  className=""
+                >
+                  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </p>
+              </Paragraph>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Subheading>
+                <span
+                  className="ui sub header"
+                >
+                  Highlights
+                </span>
+              </Subheading>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Icon
+                color={null}
+                hasBorder={true}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                key="credit cardcredit cards"
+                labelText="credit cards"
+                labelWeight={null}
+                name="credit card"
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon has-border has-label"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.84,5.17H4.16A1.82,1.82,0,0,0,2.34,7V17.66a1.81,1.81,0,0,0,1.82,1.81H19.84a1.81,1.81,0,0,0,1.82-1.81V7A1.82,1.82,0,0,0,19.84,5.17Zm-15.68,1H19.84a.82.82,0,0,1,.82.82V7H3.34V7A.82.82,0,0,1,4.16,6.17ZM3.34,8H20.65V9.54H3.34Zm16.5,10.46H4.16a.82.82,0,0,1-.82-.81V10.54H20.66v7.12A.82.82,0,0,1,19.84,18.47Zm-2.29-4.63H14.12A1.13,1.13,0,0,0,13,15v.84a1.12,1.12,0,0,0,1.12,1.12h3.43a1.12,1.12,0,0,0,1.12-1.12V15A1.13,1.13,0,0,0,17.55,13.84Zm.12,2a.12.12,0,0,1-.12.12H14.12a.12.12,0,0,1-.12-.12V15a.12.12,0,0,1,.12-.13h3.43a.13.13,0,0,1,.12.13Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <Paragraph
+                    size="medium"
+                    weight={null}
+                  >
+                    <p
+                      className=""
+                    >
+                      credit cards
+                    </p>
+                  </Paragraph>
+                </i>
+              </Icon>
+              <Icon
+                color={null}
+                hasBorder={true}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                key="no childrenno children allowed"
+                labelText="no children allowed"
+                labelWeight={null}
+                name="no children"
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon has-border has-label"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12,1.79A10.19,10.19,0,0,0,6.13,20.33a.2.2,0,0,0,.07.06,10.15,10.15,0,0,0,11.38.15l0,0A10.2,10.2,0,0,0,12,1.79Zm0,19.42a9.17,9.17,0,0,1-4.94-1.45,3.45,3.45,0,0,1,3.21-2.22h3.17a3.45,3.45,0,0,1,3.28,2.36A9.27,9.27,0,0,1,12,21.21Zm5.58-1.9a4.44,4.44,0,0,0-3.37-2.7l.21-.11a.5.5,0,1,0-.53-.85,3.86,3.86,0,0,1-2,.57,4,4,0,0,1-3.95-3.95,3.74,3.74,0,0,1,.38-1.69.5.5,0,0,0-.23-.67.51.51,0,0,0-.67.23,4.82,4.82,0,0,0-.48,2.13,4.93,4.93,0,0,0,2.61,4.34,4.45,4.45,0,0,0-3.3,2.55A9.18,9.18,0,0,1,5,6L19.09,17.87A9.34,9.34,0,0,1,17.58,19.31ZM5.71,5.29a9.2,9.2,0,0,1,14,11.78ZM15.4,8.81a5,5,0,0,1,1.4,3.46,3.2,3.2,0,0,1-.06.7.45.45,0,0,1-.49.46.53.53,0,0,1-.5-.54s0-.07,0-.1a3,3,0,0,0,0-.52A4,4,0,0,0,14.12,9l-.06,0a3.87,3.87,0,0,0-1.71-.63h-.1l-.39,0a3.26,3.26,0,0,0-.92.12.5.5,0,0,1-.28-1A4.23,4.23,0,0,1,12,7.35a.49.49,0,0,1,.24,0,1.66,1.66,0,0,0,1.21-.24,1.51,1.51,0,0,0,.42-1.22.5.5,0,0,1,.5-.5.5.5,0,0,1,.5.5,2.42,2.42,0,0,1-.78,2c.13.07.26.12.38.2A2,2,0,0,0,16.26,6a.51.51,0,0,1,.5-.5.5.5,0,0,1,.5.5A2.84,2.84,0,0,1,15.4,8.81Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <Paragraph
+                    size="medium"
+                    weight={null}
+                  >
+                    <p
+                      className=""
+                    >
+                      no children allowed
+                    </p>
+                  </Paragraph>
+                </i>
+              </Icon>
+            </div>
+          </GridColumn>
+        </GridColumn>
+      </div>
+    </Grid>
+  </Grid>
+</Description>
+`;
