@@ -3,12 +3,14 @@
 exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
 <ResponsiveImage
   alternativeText="Alternative Text 😝"
+  hasRoundedCorners={false}
   imageHeight={null}
   imageNotFoundLabelText="Image not found!"
   imageTitle="ResponsiveImage title"
   imageUrl=""
   imageWidth={null}
   isAvatar={false}
+  isCircular={false}
   isFluid={true}
   label={null}
   onLoad={[Function]}
@@ -56,12 +58,14 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
 exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right structure 1`] = `
 <ResponsiveImage
   alternativeText="Alternative Text 😝"
+  hasRoundedCorners={false}
   imageHeight={null}
   imageNotFoundLabelText="Image not found!"
   imageTitle="ResponsiveImage title"
   imageUrl=""
   imageWidth={null}
   isAvatar={false}
+  isCircular={false}
   isFluid={true}
   label="🔷"
   onLoad={[Function]}
@@ -119,12 +123,14 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
 exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` and \`props.imageUrl\` are passed should have the right structure 1`] = `
 <ResponsiveImage
   alternativeText="Alternative Text 😝"
+  hasRoundedCorners={false}
   imageHeight={null}
   imageNotFoundLabelText="Image not found!"
   imageTitle="ResponsiveImage title"
   imageUrl="yooo"
   imageWidth={null}
   isAvatar={false}
+  isCircular={false}
   isFluid={true}
   label={null}
   onLoad={[Function]}
@@ -178,12 +184,14 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` and \`props.imageU
 exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should have the right structure 1`] = `
 <ResponsiveImage
   alternativeText="Alternative Text 😝"
+  hasRoundedCorners={false}
   imageHeight={null}
   imageNotFoundLabelText="Image not found!"
   imageTitle="ResponsiveImage title"
   imageUrl=""
   imageWidth={null}
   isAvatar={false}
+  isCircular={false}
   isFluid={true}
   label={null}
   onLoad={[Function]}
@@ -232,12 +240,14 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should h
 exports[`<ResponsiveImage /> if \`props.sources\` is passed should have the right structure 1`] = `
 <ResponsiveImage
   alternativeText="Alternative Text 😝"
+  hasRoundedCorners={false}
   imageHeight={null}
   imageNotFoundLabelText="Image not found!"
   imageTitle="ResponsiveImage title"
   imageUrl=""
   imageWidth={null}
   isAvatar={false}
+  isCircular={false}
   isFluid={true}
   label={null}
   onLoad={[Function]}
