@@ -1,3 +1,10 @@
+# [1.72.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.71.0...v1.72.0) (2018-10-29)
+
+
+### Features
+
+* **ResponsiveImage:** expose isCircular and hasRoundedCorners props ([c3f67fe](https://github.com/lodgify/lodgify-ui.git/commit/c3f67fe))
+
 # [1.71.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.70.3...v1.71.0) (2018-10-29)
 
 
