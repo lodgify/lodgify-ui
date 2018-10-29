@@ -15,12 +15,14 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
     >
       <ResponsiveImage
         alternativeText="Image Widget"
+        hasRoundedCorners={false}
         imageHeight={null}
         imageNotFoundLabelText="Image not found!"
         imageTitle="Image Title"
         imageUrl="🐱🐱"
         imageWidth={null}
         isAvatar={false}
+        isCircular={false}
         isFluid={true}
         label={null}
         placeholderImageUrl={null}
@@ -72,12 +74,14 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
     >
       <ResponsiveImage
         alternativeText="Image Widget"
+        hasRoundedCorners={false}
         imageHeight={null}
         imageNotFoundLabelText="Image not found!"
         imageTitle="Image Title"
         imageUrl="🐱🐱"
         imageWidth={null}
         isAvatar={false}
+        isCircular={false}
         isFluid={true}
         label={null}
         placeholderImageUrl={null}
@@ -129,12 +133,14 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
     >
       <ResponsiveImage
         alternativeText="Image Widget"
+        hasRoundedCorners={false}
         imageHeight={null}
         imageNotFoundLabelText="Image not found!"
         imageTitle="Image Title"
         imageUrl="🐱🐱"
         imageWidth={null}
         isAvatar={false}
+        isCircular={false}
         isFluid={true}
         label={null}
         placeholderImageUrl={null}
