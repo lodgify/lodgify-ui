@@ -4,7 +4,9 @@
       "comments": false,
       "ignore": ["**/*.spec.js"],
       "plugins": [
-        "semantic-ui-react-transform-imports"
+        ["semantic-ui-react-transform-imports", {
+          "importType": "commonjs"
+        }]
       ]
     }
   },
