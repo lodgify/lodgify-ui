@@ -345,47 +345,34 @@ blockquote.ui.quote .row {
 --------------------*/
 
 .ui.thumbnail {
+  width: 100%;
+  height: @thumbnailHeight;
 
-  .image {
-    background: @thumbnailBackground;
-    width: 100%;
-    height: @thumbnailHeight;
+  &.small {
+    height: @smallThumbnailHeight;
+  }
+
+  &.large {
+    height: @largeThumbnailHeight;
+  }
+
+  &.huge {
+    height: @hugeThumbnailHeight;
+  }
+
+  &.proportional-width-and-height {
+    width: @thumbnailWidth;
 
     &.small {
-      height: @smallThumbnailHeight;
+      width: @smallThumbnailWidth;
     }
 
     &.large {
-      height: @largeThumbnailHeight;
+      width: @largeThumbnailWidth;
     }
 
     &.huge {
-      height: @hugeThumbnailHeight;
-    }
-
-    &.circular {
-      border-radius: @circularBorderRadius;
-    }
-
-    &.rounded {
-      border-radius: @thumbnailBorderRadius;
-    }
-
-    &.circular,
-    &.square {
-      width: @thumbnailWidth;
-
-      &.small {
-        width: @smallThumbnailWidth;
-      }
-
-      &.large {
-        width: @largeThumbnailWidth;
-      }
-
-      &.huge {
-        width: @hugeThumbnailWidth;
-      }
+      width: @hugeThumbnailWidth;
     }
   }
 }
