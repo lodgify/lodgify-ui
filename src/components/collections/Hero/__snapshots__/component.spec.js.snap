@@ -37,11 +37,13 @@ exports[`<Hero /> by default should render the right structure 1`] = `
     ]
   }
   headerSearchBarModalHeadingText="Heading"
+  placeholderBackgroundImageUrl={null}
   searchBarOnSubmit={[Function]}
 >
   <FullBleed
     hasGradient={true}
     imageUrl="https://darkpurple.com"
+    placeholderImageUrl={null}
   >
     <Segment
       className="full-bleed has-gradient has-children"
@@ -60,6 +62,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
           isAvatar={false}
           isFluid={true}
           label={null}
+          placeholderImageUrl={null}
           sources={Array []}
         >
           <picture

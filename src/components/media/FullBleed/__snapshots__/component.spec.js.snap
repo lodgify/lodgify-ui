@@ -4,6 +4,7 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
 <FullBleed
   hasGradient={false}
   imageUrl="🐱🐱"
+  placeholderImageUrl={null}
 >
   <Segment
     className="full-bleed"
@@ -22,6 +23,7 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
         isAvatar={false}
         isFluid={true}
         label={null}
+        placeholderImageUrl={null}
         sources={Array []}
       >
         <picture
@@ -59,6 +61,7 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
 <FullBleed
   hasGradient={true}
   imageUrl="🐱🐱"
+  placeholderImageUrl={null}
 >
   <Segment
     className="full-bleed has-gradient"
@@ -77,6 +80,7 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
         isAvatar={false}
         isFluid={true}
         label={null}
+        placeholderImageUrl={null}
         sources={Array []}
       >
         <picture
@@ -114,6 +118,7 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
 <FullBleed
   hasGradient={false}
   imageUrl="🐱🐱"
+  placeholderImageUrl={null}
 >
   <Segment
     className="full-bleed has-children"
@@ -132,6 +137,7 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
         isAvatar={false}
         isFluid={true}
         label={null}
+        placeholderImageUrl={null}
         sources={Array []}
       >
         <picture

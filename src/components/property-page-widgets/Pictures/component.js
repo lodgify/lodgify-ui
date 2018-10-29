@@ -36,7 +36,11 @@ export const Component = ({
         <GridColumn key={buildKeyFromStrings(label, index)}>
           <ShowOnDesktop
             parent={Thumbnail}
-            parentProps={{ imageUrl, label, size: 'huge' }}
+            parentProps={{
+              imageUrl,
+              label,
+              size: 'huge',
+            }}
           />
           <ShowOnMobile
             parent={Thumbnail}
@@ -83,6 +87,8 @@ Component.propTypes = {
       imageUrl: PropTypes.string.isRequired,
       /** A visible label for the image. */
       label: PropTypes.string.isRequired,
+      /** URL pointing to the image to display. */
+      placeholderImageUrl: PropTypes.string,
     })
   ).isRequired,
   /** The name of the property to display in the gallery modal. */
