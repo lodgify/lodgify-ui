@@ -77,4 +77,18 @@ picture.responsive-image {
       }
     }
   }
+
+  &.is-circular {
+
+    .ui.image {
+      border-radius: @circularBorderRadius;
+    }
+  }
+
+  &.is-rounded {
+
+    .ui.image {
+      border-radius: @thumbnailBorderRadius;
+    }
+  }
 }

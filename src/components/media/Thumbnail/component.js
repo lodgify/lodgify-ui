@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 
-import { Paragraph } from 'typography/Paragraph';
-import { getBackgroundImageUrl } from 'utils/get-background-image-url';
+import { ResponsiveImage } from 'media/ResponsiveImage';
 
 /**
  * A thumbnail displays a small image.
@@ -11,26 +10,28 @@ import { getBackgroundImageUrl } from 'utils/get-background-image-url';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   alternativeText,
+  className,
+  hasRoundedCorners,
   imageUrl,
   isCircular,
-  hasRoundedCorners,
   isSquare,
   label,
+  placeholderImageUrl,
   size,
-  className,
 }) => (
-  <div className={getClassNames('ui', 'thumbnail', className)}>
-    <div
-      className={getClassNames('ui', 'image', size, {
-        circular: isCircular,
-        square: isSquare,
-        rounded: hasRoundedCorners,
-      })}
-      style={{ backgroundImage: getBackgroundImageUrl(imageUrl) }}
-    >
-      <span aria-label={alternativeText} role="img" />
-    </div>
-    {!!label ? <Paragraph>{label}</Paragraph> : null}
+  <div
+    className={getClassNames('ui', 'thumbnail', className, size, {
+      'proportional-width-and-height': isSquare || isCircular,
+    })}
+  >
+    <ResponsiveImage
+      alternativeText={alternativeText}
+      hasRoundedCorners={hasRoundedCorners}
+      imageUrl={imageUrl}
+      isCircular={isCircular}
+      label={label}
+      placeholderImageUrl={placeholderImageUrl}
+    />
   </div>
 );
 
@@ -39,10 +40,11 @@ Component.displayName = 'Thumbnail';
 Component.defaultProps = {
   alternativeText: 'Thumbnail element',
   className: '',
-  isCircular: false,
-  hasRoundedCorners: false,
+  isCircular: undefined,
+  hasRoundedCorners: undefined,
   isSquare: false,
   label: null,
+  placeholderImageUrl: null,
   size: null,
 };
 
@@ -65,6 +67,8 @@ Component.propTypes = {
   isSquare: PropTypes.bool,
   /** A visible label for the thumbnail */
   label: PropTypes.string,
+  /** URL pointing to the placeholder image to render. */
+  placeholderImageUrl: PropTypes.string,
   /** The size of the thumbnail */
   size: PropTypes.oneOf(['small', 'large', 'huge']),
 };
