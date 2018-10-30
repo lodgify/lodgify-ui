@@ -36,10 +36,14 @@ export const getModalContentMarkup = (
 ) => (
   <Modal.Content>
     <Heading>{name}</Heading>
-    <Rating ratingNumber={ratingNumber} />
+    {!!ratingNumber && <Rating ratingNumber={ratingNumber} />}
     <Divider size="small" />
     <Slideshow additionalClass="no-shadow" images={slideShowImages} />
-    <Paragraph>{description}</Paragraph>
+    {!!description ? (
+      <Paragraph>{description}</Paragraph>
+    ) : (
+      <Divider size="small" />
+    )}
     <List horizontal>
       {[...features, ...extraFeatures].map(({ labelText }, index) => (
         <List.Item key={buildKeyFromStrings(index, labelText, 'feature')}>
