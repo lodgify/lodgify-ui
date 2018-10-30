@@ -1,3 +1,10 @@
+# [1.73.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.72.1...v1.73.0) (2018-10-30)
+
+
+### Features
+
+* **Description:** only show homeHighlights if they exist ([04dd74b](https://github.com/lodgify/lodgify-ui.git/commit/04dd74b))
+
 ## [1.72.1](https://github.com/lodgify/lodgify-ui.git/compare/v1.72.0...v1.72.1) (2018-10-29)
 
 
