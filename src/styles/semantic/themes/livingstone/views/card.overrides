@@ -89,10 +89,8 @@
   &.has-featured {
     height: @featuredHeight;
 
-    img.ui.image {
+    img {
       flex-grow: @featuredImageFlexGrow;
-      height: @featuredImageHeight;
-      object-fit: cover;
     }
   }
 

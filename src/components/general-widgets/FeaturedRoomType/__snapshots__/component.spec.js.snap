@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeaturedRoomType /> should render the right structure 1`] = `
+<Card
+  className="has-featured"
+  href="/"
+>
+  <ResponsiveImage
+    alternativeText="this alt tag"
+    hasRoundedCorners={false}
+    imageHeight={null}
+    imageNotFoundLabelText="Image not found!"
+    imageTitle="Image Title"
+    imageUrl="🐱🐱"
+    imageWidth={null}
+    isAvatar={false}
+    isCircular={false}
+    isFluid={true}
+    label={null}
+    sources={Array []}
+  />
+  <CardContent>
+    <CardHeader>
+      The Cat House
+    </CardHeader>
+    <CardDescription>
+      Catania
+    </CardDescription>
+    <CardDescription>
+      🙆‍♂️: 3 | 🛏: 3
+    </CardDescription>
+    <CardDescription>
+      <span>
+        from 
+        <Heading
+          isColorInverted={false}
+          size="medium"
+          textAlign={null}
+        >
+          $280
+        </Heading>
+        /night
+      </span>
+    </CardDescription>
+  </CardContent>
+</Card>
+`;
