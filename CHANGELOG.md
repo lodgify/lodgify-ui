@@ -1,3 +1,10 @@
+# [1.74.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.73.0...v1.74.0) (2018-10-31)
+
+
+### Features
+
+* **RoomType:** make description and ratingNumber optional ([340e5d3](https://github.com/lodgify/lodgify-ui.git/commit/340e5d3))
+
 # [1.73.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.72.1...v1.73.0) (2018-10-30)
 
 
