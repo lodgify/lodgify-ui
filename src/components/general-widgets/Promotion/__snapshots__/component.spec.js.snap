@@ -85,19 +85,15 @@ exports[`The \`Promotion\` component \`Promotion\` as stacked \`Segment\` should
                               as="img"
                               avatar={false}
                               fluid={true}
-                              height={null}
                               src="testimage"
                               title="Image Title"
                               ui={true}
-                              width={null}
                             >
                               <img
                                 alt="Image Widget"
                                 className="ui fluid image"
-                                height={null}
                                 src="testimage"
                                 title="Image Title"
-                                width={null}
                               />
                             </Image>
                           </picture>
@@ -405,19 +401,15 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                               as="img"
                               avatar={false}
                               fluid={true}
-                              height={null}
                               src="testimage"
                               title="Image Title"
                               ui={true}
-                              width={null}
                             >
                               <img
                                 alt="Image Widget"
                                 className="ui fluid image"
-                                height={null}
                                 src="testimage"
                                 title="Image Title"
-                                width={null}
                               />
                             </Image>
                           </picture>
