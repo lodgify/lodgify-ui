@@ -31,10 +31,8 @@ export const getImageMarkup = ({
     alt={alternativeText}
     avatar={isAvatar}
     fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
-    height={imageHeight}
     src={imageUrl}
     title={imageTitle}
-    width={imageWidth}
   >
     {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
   </Image>

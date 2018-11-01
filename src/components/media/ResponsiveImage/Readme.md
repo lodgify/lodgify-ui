@@ -6,12 +6,13 @@
 
 ### Variations
 
-#### Fluid by default
+#### Fluid
 
 ```jsx
 <ResponsiveImage
-  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
   alternativeText="Seamlessly fluid image loading amuses me"
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
+  isFluid
 />
 ```
 
@@ -19,8 +20,9 @@
 ```jsx
 <ResponsiveImage
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
-  isFluid={false}
   alternativeText="Seamlessly non-fluid image loading amuses me"
+  imageWidth={100}
+  imageHeight={67}
 />
 ```
 
@@ -48,6 +50,8 @@
 <ResponsiveImage
   placeholderImageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=20&mode=max" 
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+  imageWidth={1024}
+  imageHeight={683}
  />
 ```
 
@@ -57,13 +61,15 @@
 <div>
   <ResponsiveImage
     imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
-    isFluid={false}
+    imageHeight={100}
+    imageWidth={67}
     label="Two cats"
   />
   <Divider />
   <ResponsiveImage
     imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
-    isFluid={false}
+    imageHeight={100}
+    imageWidth={67}
     label="Two more"
   />
 </div>
