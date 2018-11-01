@@ -821,7 +821,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
-                                isFluid={true}
+                                isFluid={false}
                                 label={null}
                                 sources={Array []}
                               />
@@ -852,7 +852,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
-                                isFluid={true}
+                                isFluid={false}
                                 label={null}
                                 sources={Array []}
                               />
@@ -883,7 +883,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
-                                isFluid={true}
+                                isFluid={false}
                                 label={null}
                                 sources={Array []}
                               />
@@ -914,7 +914,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
-                                isFluid={true}
+                                isFluid={false}
                                 label={null}
                                 sources={Array []}
                               />
@@ -945,7 +945,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
-                                isFluid={true}
+                                isFluid={false}
                                 label={null}
                                 sources={Array []}
                               />

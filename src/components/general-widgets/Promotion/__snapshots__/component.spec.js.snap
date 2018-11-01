@@ -71,13 +71,13 @@ exports[`The \`Promotion\` component \`Promotion\` as stacked \`Segment\` should
                           imageWidth={null}
                           isAvatar={false}
                           isCircular={false}
-                          isFluid={true}
+                          isFluid={false}
                           label={null}
                           placeholderImageUrl={null}
                           sources={Array []}
                         >
                           <picture
-                            className="responsive-image is-fluid"
+                            className="responsive-image"
                             role="figure"
                           >
                             <Image
@@ -387,13 +387,13 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                           imageWidth={null}
                           isAvatar={false}
                           isCircular={false}
-                          isFluid={true}
+                          isFluid={false}
                           label={null}
                           placeholderImageUrl={null}
                           sources={Array []}
                         >
                           <picture
-                            className="responsive-image is-fluid"
+                            className="responsive-image"
                             role="figure"
                           >
                             <Image
