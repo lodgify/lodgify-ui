@@ -55,12 +55,16 @@ Component.propTypes = {
     PropTypes.shape({
       /** Alternative text to show if the image can't be loaded by the browser */
       alternativeText: PropTypes.string,
+      /** The natural height of the image in px. */
+      imageHeight: PropTypes.number,
       /** The label text for the when the image is not found. */
       imageNotFoundLabelText: PropTypes.string,
       /** Title of the image to show when hovering it on desktop browsers */
       imageTitle: PropTypes.string,
       /** URL pointing to the image to display. */
       imageUrl: PropTypes.string.isRequired,
+      /** The natural width of the image in px. */
+      imageWidth: PropTypes.number,
       /** A visible label for the image. */
       label: PropTypes.string.isRequired,
       /** URL pointing to the placeholder image to render. */
