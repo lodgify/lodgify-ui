@@ -445,5 +445,6 @@
 /* Minimum Gutter is used to determine the maximum container width for a given device */
 
 @horizontalGutterMaxWidth: 1120px;
-// Must be defined in pixels for accuracy
+
+/* Must be defined in pixels for accuracy */
 @horizontalGutterLeftRightPadding: 40px;

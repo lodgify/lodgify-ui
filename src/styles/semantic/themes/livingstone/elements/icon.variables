@@ -24,7 +24,8 @@
 ---------------*/
 
 /* Icon Variables */
-// default icon size in px / default font size in px = icon size in ems
+
+/* default icon size in px / default font size in px = icon size in ems */
 @iconSize: 1.71428571em;
 @width: @iconSize;
 @height: @iconSize;
