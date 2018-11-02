@@ -1,6 +1,6 @@
 import React, { PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
-import { Card, Form } from 'semantic-ui-react';
+import { Card, Form, Message } from 'semantic-ui-react';
 import { size, forEach } from 'lodash';
 
 import { Button } from 'elements/Button';
@@ -57,7 +57,14 @@ export class Component extends PureComponent {
   };
 
   render = () => {
-    const { children, headingText, submitButtonText, actionLink } = this.props;
+    const {
+      actionLink,
+      children,
+      errorMessage,
+      headingText,
+      submitButtonText,
+      successMessage,
+    } = this.props;
 
     return (
       <Card className="has-form" fluid>
@@ -67,8 +74,14 @@ export class Component extends PureComponent {
           </Card.Content>
         )}
         <Card.Content>
-          <Form onSubmit={this.handleSubmit}>
+          <Form
+            error={!!errorMessage}
+            onSubmit={this.handleSubmit}
+            success={!!successMessage}
+          >
             {Children.map(children, child => getFormChild(child, this))}
+            {!!successMessage && <Message content={successMessage} success />}
+            {!!errorMessage && <Message content={errorMessage} error />}
             {actionLink && (
               <Link onClick={actionLink.onClick}>{actionLink.text}</Link>
             )}
@@ -90,10 +103,12 @@ export class Component extends PureComponent {
 Component.displayName = 'Form';
 
 Component.defaultProps = {
+  errorMessage: '',
   headingText: null,
   onSubmit: Function.prototype,
   actionLink: null,
   submitButtonText: null,
+  successMessage: '',
   validation: {},
 };
 
@@ -107,6 +122,8 @@ Component.propTypes = {
   }),
   /** The child components and elements. */
   children: PropTypes.node.isRequired,
+  /** The message to display when the form has an error */
+  errorMessage: PropTypes.string,
   /** The text to display as a heading at the top of the form. */
   headingText: PropTypes.string,
   /** The function to call when the form is submitted
@@ -115,6 +132,8 @@ Component.propTypes = {
   onSubmit: PropTypes.func,
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
+  /** The message to display when the form is successful */
+  successMessage: PropTypes.string,
   /** Settings for validating inputs. */
   validation: PropTypes.objectOf(
     PropTypes.shape({
