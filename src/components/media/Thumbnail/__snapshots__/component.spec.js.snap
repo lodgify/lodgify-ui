@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Thumbnail /> by default should render the right structure 1`] = `
+<Thumbnail
+  alternativeText="Thumbnail element"
+  className="🚥"
+  hasRoundedCorners={false}
+  imageUrl="www.⚡️.net"
+  isCircular={false}
+  isSquare={false}
+  label={null}
+  size={null}
+>
+  <div
+    className="ui thumbnail 🚥"
+  >
+    <div
+      aria-label="Thumbnail element"
+      className="ui image"
+      role="img"
+      style={
+        Object {
+          "backgroundImage": "url(www.⚡️.net)",
+        }
+      }
+    />
+  </div>
+</Thumbnail>
+`;
+
+exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right structure 1`] = `
+<Thumbnail
+  alternativeText="Thumbnail element"
+  className="🚥"
+  hasRoundedCorners={false}
+  imageUrl="www.⚡️.net"
+  isCircular={true}
+  isSquare={false}
+  label={null}
+  size={null}
+>
+  <div
+    className="ui thumbnail 🚥"
+  >
+    <div
+      aria-label="Thumbnail element"
+      className="ui image is-circular"
+      role="img"
+      style={
+        Object {
+          "backgroundImage": "url(www.⚡️.net)",
+        }
+      }
+    />
+  </div>
+</Thumbnail>
+`;
+
+exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right structure 1`] = `
+<Thumbnail
+  alternativeText="Thumbnail element"
+  className="🚥"
+  hasRoundedCorners={false}
+  imageUrl="www.⚡️.net"
+  isCircular={true}
+  isSquare={false}
+  label={null}
+  size={null}
+>
+  <div
+    className="ui thumbnail 🚥"
+  >
+    <div
+      aria-label="Thumbnail element"
+      className="ui image is-circular"
+      role="img"
+      style={
+        Object {
+          "backgroundImage": "url(www.⚡️.net)",
+        }
+      }
+    />
+  </div>
+</Thumbnail>
+`;
+
+exports[`<Thumbnail /> if \`props.size\` is supplied should render the right structure 1`] = `
+<Thumbnail
+  alternativeText="Thumbnail element"
+  className="🚥"
+  hasRoundedCorners={false}
+  imageUrl="www.⚡️.net"
+  isCircular={false}
+  isSquare={false}
+  label={null}
+  size="small"
+>
+  <div
+    className="ui thumbnail 🚥"
+  >
+    <div
+      aria-label="Thumbnail element"
+      className="ui image small"
+      role="img"
+      style={
+        Object {
+          "backgroundImage": "url(www.⚡️.net)",
+        }
+      }
+    />
+  </div>
+</Thumbnail>
+`;

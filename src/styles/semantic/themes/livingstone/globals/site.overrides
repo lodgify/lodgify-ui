@@ -363,16 +363,16 @@ blockquote.ui.quote .row {
       height: @hugeThumbnailHeight;
     }
 
-    &.circular {
+    &.is-circular {
       border-radius: @circularBorderRadius;
     }
 
-    &.rounded {
+    &.is-rounded {
       border-radius: @thumbnailBorderRadius;
     }
 
-    &.circular,
-    &.square {
+    &.is-circular,
+    &.is-square {
       width: @thumbnailWidth;
 
       &.small {

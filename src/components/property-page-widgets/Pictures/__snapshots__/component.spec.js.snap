@@ -118,18 +118,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-desktop"
                         >
                           <div
+                            aria-label="Thumbnail element"
                             className="ui image huge"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -169,18 +166,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-mobile"
                         >
                           <div
-                            className="ui image large square rounded"
+                            aria-label="Thumbnail element"
+                            className="ui image large is-square is-rounded"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -248,18 +242,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-desktop"
                         >
                           <div
+                            aria-label="Thumbnail element"
                             className="ui image huge"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -299,18 +290,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-mobile"
                         >
                           <div
-                            className="ui image large square rounded"
+                            aria-label="Thumbnail element"
+                            className="ui image large is-square is-rounded"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -378,18 +366,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-desktop"
                         >
                           <div
+                            aria-label="Thumbnail element"
                             className="ui image huge"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -429,18 +414,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-mobile"
                         >
                           <div
-                            className="ui image large square rounded"
+                            aria-label="Thumbnail element"
+                            className="ui image large is-square is-rounded"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -508,18 +490,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-desktop"
                         >
                           <div
+                            aria-label="Thumbnail element"
                             className="ui image huge"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -559,18 +538,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-mobile"
                         >
                           <div
-                            className="ui image large square rounded"
+                            aria-label="Thumbnail element"
+                            className="ui image large is-square is-rounded"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -638,18 +614,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-desktop"
                         >
                           <div
+                            aria-label="Thumbnail element"
                             className="ui image huge"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -689,18 +662,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           className="ui thumbnail show-on-mobile"
                         >
                           <div
-                            className="ui image large square rounded"
+                            aria-label="Thumbnail element"
+                            className="ui image large is-square is-rounded"
+                            role="img"
                             style={
                               Object {
                                 "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
                               }
                             }
-                          >
-                            <span
-                              aria-label="Thumbnail element"
-                              role="img"
-                            />
-                          </div>
+                          />
                           <Paragraph
                             size="medium"
                             weight={null}

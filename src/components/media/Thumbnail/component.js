@@ -11,26 +11,26 @@ import { getBackgroundImageUrl } from 'utils/get-background-image-url';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   alternativeText,
+  className,
+  hasRoundedCorners,
   imageUrl,
   isCircular,
-  hasRoundedCorners,
   isSquare,
   label,
   size,
-  className,
 }) => (
   <div className={getClassNames('ui', 'thumbnail', className)}>
     <div
+      aria-label={alternativeText}
       className={getClassNames('ui', 'image', size, {
-        circular: isCircular,
-        square: isSquare,
-        rounded: hasRoundedCorners,
+        'is-circular': isCircular,
+        'is-square': isSquare,
+        'is-rounded': hasRoundedCorners,
       })}
+      role="img"
       style={{ backgroundImage: getBackgroundImageUrl(imageUrl) }}
-    >
-      <span aria-label={alternativeText} role="img" />
-    </div>
-    {!!label ? <Paragraph>{label}</Paragraph> : null}
+    />
+    {!!label && <Paragraph>{label}</Paragraph>}
   </div>
 );
 
@@ -39,8 +39,8 @@ Component.displayName = 'Thumbnail';
 Component.defaultProps = {
   alternativeText: 'Thumbnail element',
   className: '',
-  isCircular: false,
   hasRoundedCorners: false,
+  isCircular: false,
   isSquare: false,
   label: null,
   size: null,
