@@ -1,3 +1,10 @@
+## [1.74.1](https://github.com/lodgify/lodgify-u/compare/v1.74.0...v1.74.1) (2018-11-02)
+
+
+### Bug Fixes
+
+* **overrides:** linting issues ([e48ac11](https://github.com/lodgify/lodgify-u/commit/e48ac11))
+
 # [1.74.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.73.0...v1.74.0) (2018-10-31)
 
 
