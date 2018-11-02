@@ -1,31 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import {
-  expectComponentToBe,
-  expectComponentToHaveChildren,
-  expectComponentToHaveProps,
-  expectComponentToHaveDisplayName,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import {
-  CALL_ME_BACK,
-  DATE,
-  EMAIL,
-  NAME,
-  NOTES,
-  PHONE,
-  PROPERTY,
-  SEND,
-  TIME_ZONE,
-  TIME,
-} from 'utils/default-strings';
-import { Dropdown } from 'inputs/Dropdown';
-import { Form } from 'collections/Form';
-import { InputGroup } from 'collections/InputGroup';
-import { PhoneInput } from 'inputs/PhoneInput';
-import { SingleDatePicker } from 'inputs/SingleDatePicker';
-import { TextArea } from 'inputs/TextArea';
-import { TextInput } from 'inputs/TextInput';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as CallMeBack } from './component';
 
@@ -63,183 +38,40 @@ export const timeZoneOptions = [
   { text: 'EST', value: 'est' },
 ];
 
-const getCallMeBack = () =>
-  shallow(
+const getCallMeBack = extraProps =>
+  mount(
     <CallMeBack
       propertyOptions={propertyOptions}
       timeOptions={timeOptions}
       timeZoneOptions={timeZoneOptions}
+      {...extraProps}
     />
   );
-const getForm = () => getCallMeBack().find(Form);
 
 describe('<CallMeBack />', () => {
-  it('should have `Form` component as a wrapper', () => {
+  it('should have the correct structure', () => {
     const wrapper = getCallMeBack();
 
-    expectComponentToBe(wrapper, Form);
+    expect(wrapper).toMatchSnapshot();
   });
 
-  describe('the `Form` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm();
-
-      expectComponentToHaveProps(wrapper, {
-        headingText: CALL_ME_BACK,
-        onSubmit: Function.prototype,
-        submitButtonText: SEND,
-        validation: expect.any(Object),
+  describe('if `props.successMessage` is passed', () => {
+    it('should render the success message above the submit button', () => {
+      const wrapper = getCallMeBack({
+        successMessage: 'This is a successful message',
       });
-    });
 
-    it('should render the right children', () => {
-      const wrapper = getForm();
-
-      expectComponentToHaveChildren(
-        wrapper,
-        InputGroup,
-        TextInput,
-        InputGroup,
-        InputGroup,
-        TextArea
-      );
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
-  describe('the first `InputGroup`', () => {
-    it('should have the right children', () => {
-      const wrapper = getForm()
-        .find(InputGroup)
-        .first();
-
-      expectComponentToHaveChildren(wrapper, TextInput, PhoneInput);
-    });
-  });
-
-  describe('the Name `TextInput`', () => {
-    it('should have the right props', () => {
-      const wrapper = getCallMeBack()
-        .find(InputGroup)
-        .find(TextInput);
-
-      expectComponentToHaveProps(wrapper, {
-        label: NAME,
-        name: 'name',
+  describe('if `props.errorMessage` is passed', () => {
+    it('should render the error message above the submit button', () => {
+      const wrapper = getCallMeBack({
+        errorMessage: 'This is an error message',
       });
-    });
-  });
 
-  describe('the Phone `PhoneInput`', () => {
-    it('should have the right props', () => {
-      const wrapper = getCallMeBack().find(PhoneInput);
-
-      expectComponentToHaveProps(wrapper, {
-        label: PHONE,
-        name: 'phone',
-      });
-    });
-  });
-
-  describe('the Email `TextInput`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm()
-        .find(TextInput)
-        .at(1);
-
-      expectComponentToHaveProps(wrapper, {
-        label: EMAIL,
-        name: 'email',
-      });
-    });
-  });
-
-  describe('the second `InputGroup`', () => {
-    it('should have the right children', () => {
-      const wrapper = getForm()
-        .find(InputGroup)
-        .at(1);
-
-      expectComponentToHaveChildren(wrapper, SingleDatePicker, Dropdown);
-    });
-  });
-
-  describe('the `SingleDatePicker`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm().find(SingleDatePicker);
-
-      expectComponentToHaveProps(wrapper, {
-        placeholderText: DATE,
-        name: 'date',
-      });
-    });
-  });
-
-  describe('the Time `Dropdown`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm()
-        .find(InputGroup)
-        .at(1)
-        .find(Dropdown);
-
-      expectComponentToHaveProps(wrapper, {
-        icon: 'clock',
-        label: TIME,
-        name: 'time',
-        options: timeOptions,
-      });
-    });
-  });
-
-  describe('the third `InputGroup`', () => {
-    it('should render two `Dropdown`s', () => {
-      const wrapper = getForm()
-        .find(InputGroup)
-        .at(2);
-
-      expectComponentToHaveChildren(wrapper, Dropdown, Dropdown);
-    });
-  });
-
-  describe('the Time Zone `Dropdown`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm()
-        .find(InputGroup)
-        .at(2)
-        .find(Dropdown)
-        .first();
-
-      expectComponentToHaveProps(wrapper, {
-        label: TIME_ZONE,
-        name: 'timeZone',
-        options: timeZoneOptions,
-      });
-    });
-  });
-
-  describe('the Time `Dropdown`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm()
-        .find(InputGroup)
-        .at(2)
-        .find(Dropdown)
-        .at(1);
-
-      expectComponentToHaveProps(wrapper, {
-        label: PROPERTY,
-        name: 'property',
-        options: propertyOptions,
-      });
-    });
-  });
-
-  describe('the Notes `TextArea`', () => {
-    it('should have the right props', () => {
-      const wrapper = getForm().find(TextArea);
-
-      expectComponentToHaveProps(wrapper, {
-        label: NOTES,
-        name: 'notes',
-      });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
