@@ -127,3 +127,21 @@ const validation = {
   validation={validation}
 />
 ```
+
+### States
+
+#### Success
+
+```jsx
+<Contact
+  successMessage="The contact form has been submitted."
+/>
+```
+
+#### Error
+
+```jsx
+<Contact
+  errorMessage="Request Failed. Please try again."
+/>
+```
