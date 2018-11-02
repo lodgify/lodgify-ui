@@ -220,6 +220,26 @@ describe('<Form />', () => {
     });
   });
 
+  describe('if `props.successMessage` is passed', () => {
+    it('should render the success message above the submit button', () => {
+      const wrapper = getForm(<input />, {
+        successMessage: 'This is a successful message',
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.errorMessage` is passed', () => {
+    it('should render the error message above the submit button', () => {
+      const wrapper = getForm(<input />, {
+        errorMessage: 'This is an error message',
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   it('should have `displayName` Form', () => {
     expectComponentToHaveDisplayName(Form, 'Form');
   });
