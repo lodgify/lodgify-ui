@@ -69,6 +69,24 @@
 </div>
 ```
 
+#### Rounded corners
+
+```jsx
+<ResponsiveImage
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=600&mode=max"
+  hasRoundedCorners
+/>
+```
+
+#### Circular
+
+```jsx
+<ResponsiveImage
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=600&mode=max"
+  isCircular
+/>
+```
+
 #### No url
 
 ```jsx

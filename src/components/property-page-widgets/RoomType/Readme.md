@@ -68,18 +68,13 @@ const roomTypeFeatures = [
 ];
 
 <RoomType
-  bathroomsNumber={2}
-  bedsNumber={3}
   description={description}
-  guestsNumber={3}
   nightPrice="$280"
   name="The Cat House"
-  ratingNumber={3.4}
   ratingNumber={4.8}
   features={roomTypeFeatures}
   extraFeatures={extraRoomTypeFeatures}
   slideShowImages={images}
-  checkAvailability={console.log}
   amenities={availableAmenities}
 />
 ```

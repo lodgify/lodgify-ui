@@ -21,6 +21,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
     }
   }
   headingText="heading text"
+  placeholderBackgroundImageUrl={null}
   searchBarGetIsDayBlocked={[Function]}
   searchBarGuestsOptions={
     Array [
@@ -87,12 +88,14 @@ exports[`HomepageHero by default should render the right structure 1`] = `
         search button
       </button>
     }
+    placeholderBackgroundImageUrl={null}
     searchBarGetIsDayBlocked={[Function]}
     searchBarOnSubmit={[Function]}
   >
     <FullBleed
       hasGradient={true}
       imageUrl="url"
+      placeholderImageUrl={null}
     >
       <Segment
         className="full-bleed has-gradient has-children"
@@ -103,14 +106,17 @@ exports[`HomepageHero by default should render the right structure 1`] = `
         >
           <ResponsiveImage
             alternativeText="Image Widget"
+            hasRoundedCorners={false}
             imageHeight={null}
             imageNotFoundLabelText="Image not found!"
             imageTitle="Image Title"
             imageUrl="url"
             imageWidth={null}
             isAvatar={false}
+            isCircular={false}
             isFluid={true}
             label={null}
+            placeholderImageUrl={null}
             sources={Array []}
           >
             <picture

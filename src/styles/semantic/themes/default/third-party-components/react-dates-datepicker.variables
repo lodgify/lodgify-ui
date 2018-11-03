@@ -14,11 +14,11 @@
 @verticalPadding: @inputVerticalPadding;
 @inputPadding: @6px @10px;
 
-@inputBorderOffset: (@2px/2); // This offsets the border on .picker.
+@inputBorderOffset: (@2px/2); /* This offsets the border on .picker. */
 @inputBorder: @borderWidth solid transparent;
 @borderWidth: 1px;
 
-@iconWidthOffset: 44px; // This offsets the widths of the icons in the date range picker.
+@iconWidthOffset: 44px; /* This offsets the widths of the icons in the date range picker. */
 
 @dateInputPadding: (@verticalPadding - @inputBorderOffset) 0;
 @dateInputWidth: ~"calc(50% - @{iconWidthOffset})";

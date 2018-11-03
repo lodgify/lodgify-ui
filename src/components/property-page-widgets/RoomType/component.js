@@ -121,7 +121,9 @@ const Component = ({
 Component.displayName = 'RoomType';
 
 Component.defaultProps = {
+  description: null,
   extraFeatures: [],
+  ratingNumber: null,
 };
 
 Component.propTypes = {
@@ -140,28 +142,24 @@ Component.propTypes = {
     })
   ).isRequired,
   /** A description to be displayed in the modal */
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   /** The room features to display in the modal */
   extraFeatures: PropTypes.arrayOf(
     PropTypes.shape({
-      /** The feature count to display. */
-      count: PropTypes.number,
-      /** The feature name to display. */
-      name: PropTypes.string,
+      /** The feature label to display. */
+      labelText: PropTypes.string,
     })
   ),
   /** The room features to display in the card and modal */
   features: PropTypes.arrayOf(
     PropTypes.shape({
-      /** The feature count to display. */
-      count: PropTypes.number,
       /**
        * The name of the icon to display.
        * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
        */
       iconName: PropTypes.string,
       /** The feature label to display. */
-      label: PropTypes.string,
+      labelText: PropTypes.string,
     })
   ).isRequired,
   /**
@@ -175,7 +173,7 @@ Component.propTypes = {
   /** The price per night of the room, with currency symbol. */
   nightPrice: PropTypes.string.isRequired,
   /** The numeral rating for the property room given in the review, out of 5. */
-  ratingNumber: PropTypes.number.isRequired,
+  ratingNumber: PropTypes.number,
   /** The images to display for the slideshow */
   slideShowImages: PropTypes.arrayOf(
     PropTypes.shape({

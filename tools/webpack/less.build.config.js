@@ -1,6 +1,7 @@
 const path = require('path');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const ROOT_PATH = path.join(__dirname, '..', '..');
 const SRC_STYLES_PATH = path.join(ROOT_PATH, 'src', 'styles');
@@ -20,6 +21,9 @@ module.exports = {
         loader: 'file-loader',
       },
     ],
+  },
+  optimization: {
+    minimizer: [new OptimizeCSSAssetsPlugin({})],
   },
   output: {
     // For now we need to output (and delete) this orphan js file.

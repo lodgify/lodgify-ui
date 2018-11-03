@@ -17,9 +17,11 @@
 
   /* Icon Input */
 
-  // Partial duplication of declarations
-  // for `.ui.icon.input > i.icon`
-  // in `node_modules/semantic-ui-less/definitions/elements/input.less`
+  /*
+    Partial duplication of declarations
+    for `.ui.icon.input > i.icon`
+    in `node_modules/semantic-ui-less/definitions/elements/input.less`
+  */
   &.left.icon {
 
     & > i.icon {

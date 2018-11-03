@@ -1,6 +1,6 @@
 {
   "name": "@lodgify/ui",
-  "version": "1.70.3",
+  "version": "1.74.1",
   "description": "React components for building amazing websites with Lodgify",
   "main": "lib/index.js",
   "config": {
@@ -20,7 +20,7 @@
   },
   "size-limit": [
     {
-      "limit": "247 KB",
+      "limit": "256 KB",
       "path": "lib/index.js"
     }
   ],
@@ -97,6 +97,7 @@
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.4.0",
     "npm-run-all": "^4.1.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "prettier": "^1.12.1",
     "react-moment-proptypes": "^1.6.0",
     "react-styleguidist": "^7.1.0",
@@ -104,7 +105,7 @@
     "semantic-release": "^15.4.0",
     "size-limit": "^0.20.1",
     "style-loader": "^0.20.2",
-    "stylelint": "^9.2.0",
+    "stylelint": "^9.7.0",
     "stylelint-config-standard": "^18.2.0",
     "webpack": "^4.19.0",
     "webpack-cli": "^3.0.0"

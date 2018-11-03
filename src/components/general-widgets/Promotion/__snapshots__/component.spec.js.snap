@@ -11,6 +11,7 @@ exports[`The \`Promotion\` component \`Promotion\` as stacked \`Segment\` should
   headingText="Hello World!"
   isDisplayedStacked={true}
   onClick={[Function]}
+  placeholderBackgroundImage={null}
 >
   <Segment
     basic={true}
@@ -62,14 +63,17 @@ exports[`The \`Promotion\` component \`Promotion\` as stacked \`Segment\` should
                       >
                         <ResponsiveImage
                           alternativeText="Image Widget"
+                          hasRoundedCorners={false}
                           imageHeight={null}
                           imageNotFoundLabelText="Image not found!"
                           imageTitle="Image Title"
                           imageUrl="testimage"
                           imageWidth={null}
                           isAvatar={false}
+                          isCircular={false}
                           isFluid={true}
                           label={null}
+                          placeholderImageUrl={null}
                           sources={Array []}
                         >
                           <picture
@@ -327,6 +331,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
   headingText="Hello World!"
   isDisplayedStacked={false}
   onClick={[Function]}
+  placeholderBackgroundImage={null}
 >
   <Segment
     basic={true}
@@ -378,14 +383,17 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                       >
                         <ResponsiveImage
                           alternativeText="Image Widget"
+                          hasRoundedCorners={false}
                           imageHeight={null}
                           imageNotFoundLabelText="Image not found!"
                           imageTitle="Image Title"
                           imageUrl="testimage"
                           imageWidth={null}
                           isAvatar={false}
+                          isCircular={false}
                           isFluid={true}
                           label={null}
+                          placeholderImageUrl={null}
                           sources={Array []}
                         >
                           <picture

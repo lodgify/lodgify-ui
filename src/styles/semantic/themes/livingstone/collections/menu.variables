@@ -13,7 +13,8 @@
 @footerMenuHorizontalPadding: 0;
 
 /* Menu Item */
-// Need to use margin rather than padding to implement 'active' state bottom border
+
+/* Need to use margin rather than padding to implement 'active' state bottom border */
 @headerMenuItemHorizontalMargin: @15px;
 @headerMenuItemVerticalPadding: @35px;
 @headerMenuItemMobileVerticalPadding: @15px;

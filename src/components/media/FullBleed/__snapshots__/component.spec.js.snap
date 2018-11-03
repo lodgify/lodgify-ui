@@ -4,6 +4,7 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
 <FullBleed
   hasGradient={false}
   imageUrl="🐱🐱"
+  placeholderImageUrl={null}
 >
   <Segment
     className="full-bleed"
@@ -14,14 +15,17 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
     >
       <ResponsiveImage
         alternativeText="Image Widget"
+        hasRoundedCorners={false}
         imageHeight={null}
         imageNotFoundLabelText="Image not found!"
         imageTitle="Image Title"
         imageUrl="🐱🐱"
         imageWidth={null}
         isAvatar={false}
+        isCircular={false}
         isFluid={true}
         label={null}
+        placeholderImageUrl={null}
         sources={Array []}
       >
         <picture
@@ -59,6 +63,7 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
 <FullBleed
   hasGradient={true}
   imageUrl="🐱🐱"
+  placeholderImageUrl={null}
 >
   <Segment
     className="full-bleed has-gradient"
@@ -69,14 +74,17 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
     >
       <ResponsiveImage
         alternativeText="Image Widget"
+        hasRoundedCorners={false}
         imageHeight={null}
         imageNotFoundLabelText="Image not found!"
         imageTitle="Image Title"
         imageUrl="🐱🐱"
         imageWidth={null}
         isAvatar={false}
+        isCircular={false}
         isFluid={true}
         label={null}
+        placeholderImageUrl={null}
         sources={Array []}
       >
         <picture
@@ -114,6 +122,7 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
 <FullBleed
   hasGradient={false}
   imageUrl="🐱🐱"
+  placeholderImageUrl={null}
 >
   <Segment
     className="full-bleed has-children"
@@ -124,14 +133,17 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
     >
       <ResponsiveImage
         alternativeText="Image Widget"
+        hasRoundedCorners={false}
         imageHeight={null}
         imageNotFoundLabelText="Image not found!"
         imageTitle="Image Title"
         imageUrl="🐱🐱"
         imageWidth={null}
         isAvatar={false}
+        isCircular={false}
         isFluid={true}
         label={null}
+        placeholderImageUrl={null}
         sources={Array []}
       >
         <picture

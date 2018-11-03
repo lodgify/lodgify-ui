@@ -63,6 +63,8 @@ Component.propTypes = {
       imageUrl: PropTypes.string.isRequired,
       /** A visible label for the image. */
       label: PropTypes.string.isRequired,
+      /** URL pointing to the placeholder image to render. */
+      placeholderImageUrl: PropTypes.string,
       /** Collection of objects to specify different image sources
        *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
        */

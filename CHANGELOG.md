@@ -1,3 +1,70 @@
+## [1.74.1](https://github.com/lodgify/lodgify-u/compare/v1.74.0...v1.74.1) (2018-11-02)
+
+
+### Bug Fixes
+
+* **overrides:** linting issues ([e48ac11](https://github.com/lodgify/lodgify-u/commit/e48ac11))
+
+# [1.74.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.73.0...v1.74.0) (2018-10-31)
+
+
+### Features
+
+* **RoomType:** make description and ratingNumber optional ([340e5d3](https://github.com/lodgify/lodgify-ui.git/commit/340e5d3))
+
+# [1.73.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.72.1...v1.73.0) (2018-10-30)
+
+
+### Features
+
+* **Description:** only show homeHighlights if they exist ([04dd74b](https://github.com/lodgify/lodgify-ui.git/commit/04dd74b))
+
+## [1.72.1](https://github.com/lodgify/lodgify-ui.git/compare/v1.72.0...v1.72.1) (2018-10-29)
+
+
+### Bug Fixes
+
+* **Babel:** use commonjs when getting Semantic UI react components ([bba2f8b](https://github.com/lodgify/lodgify-ui.git/commit/bba2f8b))
+
+# [1.72.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.71.0...v1.72.0) (2018-10-29)
+
+
+### Features
+
+* **ResponsiveImage:** expose isCircular and hasRoundedCorners props ([c3f67fe](https://github.com/lodgify/lodgify-ui.git/commit/c3f67fe))
+
+# [1.71.0](https://github.com/lodgify/lodgify-ui.git/compare/v1.70.3...v1.71.0) (2018-10-29)
+
+
+### Bug Fixes
+
+* **babelrc:** correct ignore pattern for spec files ([2bd67e6](https://github.com/lodgify/lodgify-ui.git/commit/2bd67e6))
+* **FullBleed:** fix image size when placeholder image is present ([4ac26ab](https://github.com/lodgify/lodgify-ui.git/commit/4ac26ab))
+* **Heading:** set the line height ([994ff38](https://github.com/lodgify/lodgify-ui.git/commit/994ff38))
+
+
+### Features
+
+* **FullBleed:** apply ResponsiveImage and update snapshots ([e0e667b](https://github.com/lodgify/lodgify-ui.git/commit/e0e667b))
+* **FullBleed:** expose and consume a placeholder image prop ([7281e37](https://github.com/lodgify/lodgify-ui.git/commit/7281e37))
+* **Gallery:** expose and consume a placeholder image url prop ([02f20b7](https://github.com/lodgify/lodgify-ui.git/commit/02f20b7))
+* **Hero:** expose and consume a background placeholder image url prop ([ef1491e](https://github.com/lodgify/lodgify-ui.git/commit/ef1491e))
+* **HomepageHero:** expose and consume a background placeholder image url prop ([d6fd50a](https://github.com/lodgify/lodgify-ui.git/commit/d6fd50a))
+* **Pictures:** expose placeholder image url prop ([8da8139](https://github.com/lodgify/lodgify-ui.git/commit/8da8139))
+* **Promotion:** apply ResponsiveImage and update snapshots ([4dd78a4](https://github.com/lodgify/lodgify-ui.git/commit/4dd78a4))
+* **Promotion:** expose and consume a background placeholder image url ([7a159c9](https://github.com/lodgify/lodgify-ui.git/commit/7a159c9))
+* **PropertyPageHero:** consume background placeholder image url prop in Hero ([344fa67](https://github.com/lodgify/lodgify-ui.git/commit/344fa67))
+* **ResponsiveImage:** apply parent class and is-fluid modifier class ([4f2d5ee](https://github.com/lodgify/lodgify-ui.git/commit/4f2d5ee))
+* **ResponsiveImage:** expose placeholder image prop and gracefully load image url ([cf80ee1](https://github.com/lodgify/lodgify-ui.git/commit/cf80ee1))
+
+
+### Performance Improvements
+
+* **Babel:** add plugin to handle path imports with semantic ui react ([a1298a3](https://github.com/lodgify/lodgify-ui.git/commit/a1298a3))
+* **babel-plugin-lodash:** add tool ([4b74b6f](https://github.com/lodgify/lodgify-ui.git/commit/4b74b6f))
+* **optimize-css-assets-webpack-plugin:** install and add to webpack config ([f9a4ba1](https://github.com/lodgify/lodgify-ui.git/commit/f9a4ba1))
+* **transform-react-remove-prop-types:** add and configure tool ([7f2ba9c](https://github.com/lodgify/lodgify-ui.git/commit/7f2ba9c))
+
 ## [1.70.3](https://github.com/lodgify/lodgify-ui/compare/v1.70.2...v1.70.3) (2018-10-23)
 
 

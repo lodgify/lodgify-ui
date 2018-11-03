@@ -31,6 +31,8 @@ export class Component extends PureComponent {
       placeholderImageUrl,
       imageUrl,
       isFluid,
+      hasRoundedCorners,
+      isCircular,
     } = this.props;
 
     const imageProps = {
@@ -43,6 +45,8 @@ export class Component extends PureComponent {
       <picture
         className={getClassNames('responsive-image', {
           'is-fluid': isFluid,
+          'is-rounded': hasRoundedCorners,
+          'is-circular': isCircular,
         })}
         role="figure"
       >
@@ -66,48 +70,54 @@ Component.displayName = 'ResponsiveImage';
 
 Component.defaultProps = {
   alternativeText: IMAGE_WIDGET,
+  hasRoundedCorners: false,
   imageHeight: null,
   imageNotFoundLabelText: IMAGE_NOT_FOUND,
   imageTitle: IMAGE_TITLE,
   imageUrl: '',
+  imageWidth: null,
   isAvatar: false,
+  isCircular: false,
   isFluid: true,
   label: null,
   placeholderImageUrl: undefined,
   sources: [],
-  imageWidth: null,
 };
 
 Component.propTypes = {
-  /** Alternative text to show if the image can't be loaded by the browser */
+  /** Alternative text to show if the image can't be loaded by the browser. */
   // eslint-disable-next-line react/no-unused-prop-types
   alternativeText: PropTypes.string,
-  /** The height of the image */
+  /** Is the image rounded on the corners. */
+  hasRoundedCorners: PropTypes.bool,
+  /** The height of the image. */
   // eslint-disable-next-line react/no-unused-prop-types
   imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** The label text for the when the image is not found. */
   // eslint-disable-next-line react/no-unused-prop-types
   imageNotFoundLabelText: PropTypes.string,
-  /** Title of the image to show when hovering it on desktop browsers */
+  /** Title of the image to show when hovering it on desktop browsers. */
   // eslint-disable-next-line react/no-unused-prop-types
   imageTitle: PropTypes.string,
-  /** URL pointing to the image to render */
+  /** URL pointing to the image to render. */
   // eslint-disable-next-line react/no-unused-prop-types
   imageUrl: PropTypes.string,
-  /** The width of the image */
+  /** The width of the image. */
   // eslint-disable-next-line react/no-unused-prop-types
   imageWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  /** Whether to render the image as an avatar */
+  /** Whether to render the image as an avatar. */
   // eslint-disable-next-line react/no-unused-prop-types
   isAvatar: PropTypes.bool,
-  /** Whether to render fluidly the image or not */
+  /** Is the image circular. */
+  isCircular: PropTypes.bool,
+  /** Whether to render fluidly the image or not. */
   // eslint-disable-next-line react/no-unused-prop-types
   isFluid: PropTypes.bool,
-  /** A visible label for the image */
+  /** A visible label for the image. */
   label: PropTypes.string,
-  /** URL pointing to the placeholder image to render */
+  /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
-  /** Collection of objects to specify different image sources
+  /** Collection of objects to specify different image sources.
    *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
    */
   sources: PropTypes.arrayOf(
