@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> if \`props.errorMessage\` is passed should render the error message above the submit button 1`] = `
+<Card
+  className="has-form"
+  fluid={true}
+>
+  <CardContent>
+    <Form
+      as="form"
+      error={true}
+      onSubmit={[Function]}
+      success={false}
+    >
+      <FormField
+        key=".0"
+      >
+        <input
+          onBlur={[Function]}
+          onChange={[Function]}
+        />
+      </FormField>
+      <Message
+        content="This is an error message"
+        error={true}
+      />
+    </Form>
+  </CardContent>
+</Card>
+`;
+
+exports[`<Form /> if \`props.successMessage\` is passed should render the success message above the submit button 1`] = `
+<Card
+  className="has-form"
+  fluid={true}
+>
+  <CardContent>
+    <Form
+      as="form"
+      error={false}
+      onSubmit={[Function]}
+      success={true}
+    >
+      <FormField
+        key=".0"
+      >
+        <input
+          onBlur={[Function]}
+          onChange={[Function]}
+        />
+      </FormField>
+      <Message
+        content="This is a successful message"
+        success={true}
+      />
+    </Form>
+  </CardContent>
+</Card>
+`;
