@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Image } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 
+import { ResponsiveImage } from 'media/ResponsiveImage';
 import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
 
 import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
@@ -19,11 +20,17 @@ export const Component = ({
   imageUrl,
   locationName,
   nightPrice,
+  placeholderImageUrl,
   roomTypeName,
   roomTypeUrl,
 }) => (
   <Card className="has-featured" href={roomTypeUrl}>
-    <Image alt={imageAlternativeText} src={imageUrl} />
+    <ResponsiveImage
+      alternativeText={imageAlternativeText}
+      imageUrl={imageUrl}
+      isFluid
+      placeholderImageUrl={placeholderImageUrl}
+    />
     <Card.Content>
       <Card.Header>{roomTypeName}</Card.Header>
       <Card.Description>{locationName}</Card.Description>
@@ -46,6 +53,7 @@ Component.defaultProps = {
   imageAlternativeText: '',
   bedsLabel: 'Beds',
   guestsLabel: 'Guests',
+  placeholderImageUrl: undefined,
 };
 
 Component.propTypes = {
@@ -65,6 +73,8 @@ Component.propTypes = {
   locationName: PropTypes.string.isRequired,
   /** The price per night of the room, with currency symbol. */
   nightPrice: PropTypes.string.isRequired,
+  /** URL pointing to the placeholder image to render. */
+  placeholderImageUrl: PropTypes.string,
   /** The name of the room. */
   roomTypeName: PropTypes.string.isRequired,
   /** URL pointing to a page with details of the room. */

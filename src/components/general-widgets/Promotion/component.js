@@ -22,6 +22,8 @@ import { Button } from 'elements/Button';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   backgroundImage,
+  backgroundImageHeight,
+  backgroundImageWidth,
   discountAmount,
   discountAmountParagraphText,
   discountCode,
@@ -46,7 +48,9 @@ export const Component = ({
           width={isDisplayedStacked ? 12 : 9}
         >
           <ResponsiveImage
+            imageHeight={backgroundImageHeight}
             imageUrl={backgroundImage}
+            imageWidth={backgroundImageWidth}
             placeholderImageUrl={placeholderBackgroundImage}
           />
           <Grid padded>
@@ -106,6 +110,8 @@ export const Component = ({
 Component.displayName = 'Promotion';
 
 Component.defaultProps = {
+  backgroundImageHeight: undefined,
+  backgroundImageWidth: undefined,
   discountAmountParagraphText: SAVE_UP_TO,
   discountCodeParagraphText: USE_COUPON_CODE,
   discountHoverButtonText: BOOK_NOW_DISCOUNT,
@@ -114,23 +120,27 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The background image */
+  /** The background image. */
   backgroundImage: PropTypes.string.isRequired,
-  /** The discount amount to be displayed */
+  /** The natural height of the background image in px. */
+  backgroundImageHeight: PropTypes.number,
+  /** The natural width of the background image in px. */
+  backgroundImageWidth: PropTypes.number,
+  /** The discount amount to be displayed. */
   discountAmount: PropTypes.string.isRequired,
-  /** The text to display above the discount amount */
+  /** The text to display above the discount amount. */
   discountAmountParagraphText: PropTypes.string,
-  /** The discount code to be displayed */
+  /** The discount code to be displayed. */
   discountCode: PropTypes.string.isRequired,
-  /** The text to display above the discount code */
+  /** The text to display above the discount code. */
   discountCodeParagraphText: PropTypes.string,
-  /** The text for the button that shows on hover */
+  /** The text for the button that shows on hover. */
   discountHoverButtonText: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string.isRequired,
-  /** Is the component displayed with each item above one another */
+  /** Is the component displayed with each item above one another. */
   isDisplayedStacked: PropTypes.bool,
-  /** The function to call when the component is clicked */
+  /** The function to call when the component is clicked. */
   onClick: PropTypes.func.isRequired,
   /** The background placeholder image. */
   placeholderBackgroundImage: PropTypes.string,

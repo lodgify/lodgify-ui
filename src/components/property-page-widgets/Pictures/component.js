@@ -83,8 +83,12 @@ Component.propTypes = {
   /** The pictures to display as responsive images. */
   pictures: PropTypes.arrayOf(
     PropTypes.shape({
+      /** The natural height of the image in px. */
+      imageHeight: PropTypes.number,
       /** URL pointing to the image to display. */
       imageUrl: PropTypes.string.isRequired,
+      /** The natural width of the image in px. */
+      imageWidth: PropTypes.number,
       /** A visible label for the image. */
       label: PropTypes.string.isRequired,
       /** URL pointing to the image to display. */

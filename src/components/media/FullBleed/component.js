@@ -26,6 +26,7 @@ export const Component = ({
   >
     <ResponsiveImage
       imageUrl={imageUrl}
+      isFluid
       placeholderImageUrl={placeholderImageUrl}
     />
     {children}

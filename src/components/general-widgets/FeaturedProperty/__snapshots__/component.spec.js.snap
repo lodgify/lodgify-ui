@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeaturedProperty /> should render the right structure 1`] = `
+<Card
+  className="has-featured"
+  href="/"
+>
+  <ResponsiveImage
+    alternativeText=""
+    hasRoundedCorners={false}
+    imageHeight={null}
+    imageNotFoundLabelText="Image not found!"
+    imageTitle="Image Title"
+    imageUrl="🐱🐱"
+    imageWidth={null}
+    isAvatar={false}
+    isCircular={false}
+    isFluid={true}
+    label={null}
+    sources={Array []}
+  />
+  <CardContent>
+    <CardMeta>
+      <Subheading>
+        Bed and breakfast
+      </Subheading>
+    </CardMeta>
+    <CardHeader>
+      The Cat House
+    </CardHeader>
+    <CardDescription>
+      Catania
+    </CardDescription>
+    <CardDescription>
+      Guests: 3 | Bedrooms: 3
+    </CardDescription>
+    <CardDescription>
+      <Rating
+        iconSize="tiny"
+        isShowingNumeral={true}
+        ratingNumber={4.8}
+      />
+    </CardDescription>
+    <CardDescription>
+      <span>
+        from 
+        <Heading
+          isColorInverted={false}
+          size="medium"
+          textAlign={null}
+        >
+          $280
+        </Heading>
+        /night
+      </span>
+    </CardDescription>
+  </CardContent>
+</Card>
+`;

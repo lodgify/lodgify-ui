@@ -7,7 +7,6 @@ const getImage = () => mount(getImageMarkup(imageProps));
 const imageProps = {
   alternativeText: 'someAltText',
   isAvatar: false,
-  isFluid: true,
   imageTitle: 'someTitle',
   imageUrl: 'someUrl',
   imageNotFoundLabelText: 'someLabel',

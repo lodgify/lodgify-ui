@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Image } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 
 import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 import { Subheading } from 'typography/Subheading';
 import { Rating } from 'elements/Rating';
+import { ResponsiveImage } from 'media/ResponsiveImage';
 
 import { getPropertyDescription } from './utils/getPropertyDescription';
 
@@ -19,13 +20,19 @@ export const Component = ({
   imageUrl,
   locationName,
   nightPrice,
+  placeholderImageUrl,
   propertyName,
   propertyType,
   propertyUrl,
   ratingNumber,
 }) => (
   <Card className="has-featured" href={propertyUrl}>
-    <Image alt={imageAlternativeText} src={imageUrl} />
+    <ResponsiveImage
+      alternativeText={imageAlternativeText}
+      imageUrl={imageUrl}
+      isFluid
+      placeholderImageUrl={placeholderImageUrl}
+    />
     <Card.Content>
       <Card.Meta>
         <Subheading>{propertyType}</Subheading>
@@ -48,6 +55,7 @@ Component.displayName = 'FeaturedProperty';
 Component.defaultProps = {
   bedroomsNumber: null,
   imageAlternativeText: '',
+  placeholderImageUrl: undefined,
 };
 
 Component.propTypes = {
@@ -63,6 +71,8 @@ Component.propTypes = {
   locationName: PropTypes.string.isRequired,
   /** The price per night of the property, with currency symbol. */
   nightPrice: PropTypes.string.isRequired,
+  /** URL pointing to the placeholder image to render. */
+  placeholderImageUrl: PropTypes.string,
   /** The name of the property. */
   propertyName: PropTypes.string.isRequired,
   /** The name of the type of the property. */

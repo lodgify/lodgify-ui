@@ -3,12 +3,6 @@
 exports[`\`getPlaceholderImageMarkup\` by default should render the right structure 1`] = `
 <div
   className="image-with-placeholder-container"
-  style={
-    Object {
-      "height": undefined,
-      "width": undefined,
-    }
-  }
 >
   <Image
     alt="someAltText"
@@ -37,18 +31,30 @@ exports[`\`getPlaceholderImageMarkup\` by default should render the right struct
       </Label>
     </div>
   </Image>
+  <div
+    className="placeholder-image-container"
+  >
+    <img
+      className="placeholder-image ui image fluid"
+      src="anotherUrl"
+    />
+    <Label
+      content="someLabel"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        someLabel
+      </div>
+    </Label>
+  </div>
 </div>
 `;
 
 exports[`\`getPlaceholderImageMarkup\` if \`imageUrl\` is passed should render the right structure 1`] = `
 <div
   className="image-with-placeholder-container"
-  style={
-    Object {
-      "height": undefined,
-      "width": undefined,
-    }
-  }
 >
   <Image
     alt="someAltText"
@@ -68,18 +74,20 @@ exports[`\`getPlaceholderImageMarkup\` if \`imageUrl\` is passed should render t
       title="someTitle"
     />
   </Image>
+  <div
+    className="placeholder-image-container"
+  >
+    <img
+      className="placeholder-image ui image fluid"
+      src="anotherUrl"
+    />
+  </div>
 </div>
 `;
 
 exports[`\`getPlaceholderImageMarkup\` if \`isImageLoaded === false\` should render the right structure 1`] = `
 <div
   className="image-with-placeholder-container has-blurred-children"
-  style={
-    Object {
-      "height": undefined,
-      "width": undefined,
-    }
-  }
 >
   <Image
     alt="someAltText"
@@ -108,9 +116,23 @@ exports[`\`getPlaceholderImageMarkup\` if \`isImageLoaded === false\` should ren
       </Label>
     </div>
   </Image>
-  <img
-    className="placeholder-image"
-    src="anotherUrl"
-  />
+  <div
+    className="placeholder-image-container"
+  >
+    <img
+      className="placeholder-image ui image fluid"
+      src="anotherUrl"
+    />
+    <Label
+      content="someLabel"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        someLabel
+      </div>
+    </Label>
+  </div>
 </div>
 `;
