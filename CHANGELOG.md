@@ -1,3 +1,15 @@
+# [1.75.0](https://github.com/lodgify/lodgify-u/compare/v1.74.1...v1.75.0) (2018-11-05)
+
+
+### Bug Fixes
+
+* **PropertyPageSearchBar:** improve markup type props and indentation ([fffb6fb](https://github.com/lodgify/lodgify-u/commit/fffb6fb))
+
+
+### Features
+
+* **Form:** add support for a success and error message ([7dc0c21](https://github.com/lodgify/lodgify-u/commit/7dc0c21))
+
 ## [1.74.1](https://github.com/lodgify/lodgify-u/compare/v1.74.0...v1.74.1) (2018-11-02)
 
 
