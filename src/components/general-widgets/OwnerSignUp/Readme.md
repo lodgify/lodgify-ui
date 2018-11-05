@@ -29,3 +29,21 @@ const validation = {
 
 <OwnerSignUp validation={validation} />
 ```
+
+### States
+
+#### Success
+
+```jsx
+<OwnerSignUp
+  successMessage="An email has been sent to your account to complete the signup process"
+/>
+```
+
+#### Error
+
+```jsx
+<OwnerSignUp
+  errorMessage="Request Failed. Please try again."
+/>
+```
