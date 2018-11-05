@@ -37,3 +37,23 @@ const validation = {
   validation={validation}
 />
 ```
+
+### States
+
+#### Success
+
+```jsx
+<OwnerLogin
+  forgotPasswordSuccessMessage="A reset password email has been sent."
+  successMessage="You have been logged in!"
+/>
+```
+
+#### Error
+
+```jsx
+<OwnerLogin
+  errorMessage="Request Failed. Please try again."
+  forgotPasswordErrorMessage="Something went wrong, please try again."
+/>
+```

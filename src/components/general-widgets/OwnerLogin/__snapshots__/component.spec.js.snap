@@ -1,0 +1,1136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the error message above the submit button 1`] = `
+<OwnerLogin
+  emailInputLabel="Email"
+  errorMessage="This is an error message"
+  forgotPasswordEmailInputLabel="Email"
+  forgotPasswordErrorMessage=""
+  forgotPasswordHeadingText="Forgot password"
+  forgotPasswordModalTriggerText="Forgot password"
+  forgotPasswordSubmitButtonText="Send reset"
+  forgotPasswordSuccessMessage=""
+  forgotPasswordValidation={Object {}}
+  headingText="Owner Login"
+  onForgotPasswordSubmit={[Function]}
+  onSubmit={[Function]}
+  passwordInputLabel="Password"
+  submitButtonText="Log in"
+  successMessage=""
+  validation={Object {}}
+>
+  <Form
+    actionLink={
+      Object {
+        "text": <Modal
+          isFullscreen={false}
+          size="tiny"
+          trigger={
+            <span>
+              Forgot password
+            </span>
+          }
+        >
+          <Form
+            actionLink={null}
+            errorMessage=""
+            headingText="Forgot password"
+            onSubmit={[Function]}
+            submitButtonText="Send reset"
+            successMessage=""
+            validation={Object {}}
+          >
+            <TextInput
+              error={false}
+              isValid={false}
+              label="Email"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+            />
+          </Form>
+        </Modal>,
+      }
+    }
+    errorMessage="This is an error message"
+    headingText="Owner Login"
+    onSubmit={[Function]}
+    submitButtonText="Log in"
+    successMessage=""
+    validation={Object {}}
+  >
+    <Card
+      className="has-form"
+      fluid={true}
+    >
+      <div
+        className="ui fluid card has-form"
+        onClick={[Function]}
+      >
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Heading
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              <Header
+                as="h3"
+                inverted={false}
+                textAlign={null}
+              >
+                <h3
+                  className="ui header"
+                >
+                  Owner Login
+                </h3>
+              </Header>
+            </Heading>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Form
+              as="form"
+              error={true}
+              onSubmit={[Function]}
+              success={false}
+            >
+              <form
+                className="ui error form"
+                onSubmit={[Function]}
+              >
+                <FormField
+                  key=".0"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Email"
+                      name="email"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Email"
+                        name="email"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Email
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".1"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Password"
+                      name="password"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="password"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Password"
+                        name="password"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="password"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Password
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <Message
+                  content="This is an error message"
+                  error={true}
+                >
+                  <div
+                    className="ui error message"
+                  >
+                    <MessageContent>
+                      <div
+                        className="content"
+                      >
+                        <p
+                          key="This is an error message"
+                        >
+                          This is an error message
+                        </p>
+                      </div>
+                    </MessageContent>
+                  </div>
+                </Message>
+                <Link
+                  href={null}
+                  isPositionedRight={false}
+                  onClick={[Function]}
+                  willOpenInNewTab={false}
+                >
+                  <Button
+                    as={null}
+                    basic={true}
+                    floated="left"
+                    href={null}
+                    onClick={[Function]}
+                    target="_self"
+                  >
+                    <button
+                      className="ui basic left floated button"
+                      href={null}
+                      onClick={[Function]}
+                      role="button"
+                      target="_self"
+                    >
+                      <Modal
+                        isFullscreen={false}
+                        size="tiny"
+                        trigger={
+                          <span>
+                            Forgot password
+                          </span>
+                        }
+                      >
+                        <Modal
+                          closeIcon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                          closeOnDimmerClick={true}
+                          closeOnDocumentClick={false}
+                          content={
+                            <Form
+                              actionLink={null}
+                              errorMessage=""
+                              headingText="Forgot password"
+                              onSubmit={[Function]}
+                              submitButtonText="Send reset"
+                              successMessage=""
+                              validation={Object {}}
+                            >
+                              <TextInput
+                                error={false}
+                                isValid={false}
+                                label="Email"
+                                name="email"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                type="text"
+                              />
+                            </Form>
+                          }
+                          dimmer="inverted"
+                          eventPool="Modal"
+                          size="tiny"
+                          trigger={
+                            <span>
+                              Forgot password
+                            </span>
+                          }
+                        >
+                          <Portal
+                            className="ui inverted page modals dimmer transition visible active"
+                            closeOnDocumentClick={false}
+                            closeOnEscape={true}
+                            closeOnRootNodeClick={true}
+                            eventPool="Modal"
+                            mountNode={<body />}
+                            onClose={[Function]}
+                            onMount={[Function]}
+                            onOpen={[Function]}
+                            onUnmount={[Function]}
+                            openOnTriggerClick={true}
+                            trigger={
+                              <span>
+                                Forgot password
+                              </span>
+                            }
+                          >
+                            <Ref
+                              innerRef={[Function]}
+                            >
+                              <span
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                              >
+                                Forgot password
+                              </span>
+                            </Ref>
+                          </Portal>
+                        </Modal>
+                      </Modal>
+                    </button>
+                  </Button>
+                </Link>
+                <Button
+                  hasShadow={false}
+                  icon={null}
+                  isCompact={false}
+                  isDisabled={false}
+                  isLoading={false}
+                  isPositionedRight={true}
+                  isRounded={false}
+                  isSecondary={false}
+                  onClick={[Function]}
+                  size={null}
+                >
+                  <Button
+                    as="button"
+                    circular={false}
+                    className=""
+                    compact={false}
+                    disabled={false}
+                    floated="right"
+                    loading={false}
+                    onClick={[Function]}
+                    secondary={false}
+                    size={null}
+                  >
+                    <button
+                      className="ui right floated button"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      Log in
+                    </button>
+                  </Button>
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </Form>
+</OwnerLogin>
+`;
+
+exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the success message above the submit button 1`] = `
+<OwnerLogin
+  emailInputLabel="Email"
+  errorMessage=""
+  forgotPasswordEmailInputLabel="Email"
+  forgotPasswordErrorMessage=""
+  forgotPasswordHeadingText="Forgot password"
+  forgotPasswordModalTriggerText="Forgot password"
+  forgotPasswordSubmitButtonText="Send reset"
+  forgotPasswordSuccessMessage=""
+  forgotPasswordValidation={Object {}}
+  headingText="Owner Login"
+  onForgotPasswordSubmit={[Function]}
+  onSubmit={[Function]}
+  passwordInputLabel="Password"
+  submitButtonText="Log in"
+  successMessage="This is a successful message"
+  validation={Object {}}
+>
+  <Form
+    actionLink={
+      Object {
+        "text": <Modal
+          isFullscreen={false}
+          size="tiny"
+          trigger={
+            <span>
+              Forgot password
+            </span>
+          }
+        >
+          <Form
+            actionLink={null}
+            errorMessage=""
+            headingText="Forgot password"
+            onSubmit={[Function]}
+            submitButtonText="Send reset"
+            successMessage=""
+            validation={Object {}}
+          >
+            <TextInput
+              error={false}
+              isValid={false}
+              label="Email"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+            />
+          </Form>
+        </Modal>,
+      }
+    }
+    errorMessage=""
+    headingText="Owner Login"
+    onSubmit={[Function]}
+    submitButtonText="Log in"
+    successMessage="This is a successful message"
+    validation={Object {}}
+  >
+    <Card
+      className="has-form"
+      fluid={true}
+    >
+      <div
+        className="ui fluid card has-form"
+        onClick={[Function]}
+      >
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Heading
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              <Header
+                as="h3"
+                inverted={false}
+                textAlign={null}
+              >
+                <h3
+                  className="ui header"
+                >
+                  Owner Login
+                </h3>
+              </Header>
+            </Heading>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Form
+              as="form"
+              error={false}
+              onSubmit={[Function]}
+              success={true}
+            >
+              <form
+                className="ui success form"
+                onSubmit={[Function]}
+              >
+                <FormField
+                  key=".0"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Email"
+                      name="email"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Email"
+                        name="email"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Email
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".1"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Password"
+                      name="password"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="password"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Password"
+                        name="password"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="password"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Password
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <Message
+                  content="This is a successful message"
+                  success={true}
+                >
+                  <div
+                    className="ui success message"
+                  >
+                    <MessageContent>
+                      <div
+                        className="content"
+                      >
+                        <p
+                          key="This is a successful message"
+                        >
+                          This is a successful message
+                        </p>
+                      </div>
+                    </MessageContent>
+                  </div>
+                </Message>
+                <Link
+                  href={null}
+                  isPositionedRight={false}
+                  onClick={[Function]}
+                  willOpenInNewTab={false}
+                >
+                  <Button
+                    as={null}
+                    basic={true}
+                    floated="left"
+                    href={null}
+                    onClick={[Function]}
+                    target="_self"
+                  >
+                    <button
+                      className="ui basic left floated button"
+                      href={null}
+                      onClick={[Function]}
+                      role="button"
+                      target="_self"
+                    >
+                      <Modal
+                        isFullscreen={false}
+                        size="tiny"
+                        trigger={
+                          <span>
+                            Forgot password
+                          </span>
+                        }
+                      >
+                        <Modal
+                          closeIcon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                          closeOnDimmerClick={true}
+                          closeOnDocumentClick={false}
+                          content={
+                            <Form
+                              actionLink={null}
+                              errorMessage=""
+                              headingText="Forgot password"
+                              onSubmit={[Function]}
+                              submitButtonText="Send reset"
+                              successMessage=""
+                              validation={Object {}}
+                            >
+                              <TextInput
+                                error={false}
+                                isValid={false}
+                                label="Email"
+                                name="email"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                type="text"
+                              />
+                            </Form>
+                          }
+                          dimmer="inverted"
+                          eventPool="Modal"
+                          size="tiny"
+                          trigger={
+                            <span>
+                              Forgot password
+                            </span>
+                          }
+                        >
+                          <Portal
+                            className="ui inverted page modals dimmer transition visible active"
+                            closeOnDocumentClick={false}
+                            closeOnEscape={true}
+                            closeOnRootNodeClick={true}
+                            eventPool="Modal"
+                            mountNode={<body />}
+                            onClose={[Function]}
+                            onMount={[Function]}
+                            onOpen={[Function]}
+                            onUnmount={[Function]}
+                            openOnTriggerClick={true}
+                            trigger={
+                              <span>
+                                Forgot password
+                              </span>
+                            }
+                          >
+                            <Ref
+                              innerRef={[Function]}
+                            >
+                              <span
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                              >
+                                Forgot password
+                              </span>
+                            </Ref>
+                          </Portal>
+                        </Modal>
+                      </Modal>
+                    </button>
+                  </Button>
+                </Link>
+                <Button
+                  hasShadow={false}
+                  icon={null}
+                  isCompact={false}
+                  isDisabled={false}
+                  isLoading={false}
+                  isPositionedRight={true}
+                  isRounded={false}
+                  isSecondary={false}
+                  onClick={[Function]}
+                  size={null}
+                >
+                  <Button
+                    as="button"
+                    circular={false}
+                    className=""
+                    compact={false}
+                    disabled={false}
+                    floated="right"
+                    loading={false}
+                    onClick={[Function]}
+                    secondary={false}
+                    size={null}
+                  >
+                    <button
+                      className="ui right floated button"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      Log in
+                    </button>
+                  </Button>
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </Form>
+</OwnerLogin>
+`;
+
+exports[`<OwnerLogin /> should render the correct structure 1`] = `
+<OwnerLogin
+  emailInputLabel="Email"
+  errorMessage=""
+  forgotPasswordEmailInputLabel="Email"
+  forgotPasswordErrorMessage=""
+  forgotPasswordHeadingText="Forgot password"
+  forgotPasswordModalTriggerText="Forgot password"
+  forgotPasswordSubmitButtonText="Send reset"
+  forgotPasswordSuccessMessage=""
+  forgotPasswordValidation={Object {}}
+  headingText="Owner Login"
+  onForgotPasswordSubmit={[Function]}
+  onSubmit={[Function]}
+  passwordInputLabel="Password"
+  submitButtonText="Log in"
+  successMessage=""
+  validation={Object {}}
+>
+  <Form
+    actionLink={
+      Object {
+        "text": <Modal
+          isFullscreen={false}
+          size="tiny"
+          trigger={
+            <span>
+              Forgot password
+            </span>
+          }
+        >
+          <Form
+            actionLink={null}
+            errorMessage=""
+            headingText="Forgot password"
+            onSubmit={[Function]}
+            submitButtonText="Send reset"
+            successMessage=""
+            validation={Object {}}
+          >
+            <TextInput
+              error={false}
+              isValid={false}
+              label="Email"
+              name="email"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="text"
+            />
+          </Form>
+        </Modal>,
+      }
+    }
+    errorMessage=""
+    headingText="Owner Login"
+    onSubmit={[Function]}
+    submitButtonText="Log in"
+    successMessage=""
+    validation={Object {}}
+  >
+    <Card
+      className="has-form"
+      fluid={true}
+    >
+      <div
+        className="ui fluid card has-form"
+        onClick={[Function]}
+      >
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Heading
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              <Header
+                as="h3"
+                inverted={false}
+                textAlign={null}
+              >
+                <h3
+                  className="ui header"
+                >
+                  Owner Login
+                </h3>
+              </Header>
+            </Heading>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Form
+              as="form"
+              error={false}
+              onSubmit={[Function]}
+              success={false}
+            >
+              <form
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <FormField
+                  key=".0"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Email"
+                      name="email"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Email"
+                        name="email"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Email
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".1"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Password"
+                      name="password"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="password"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Password"
+                        name="password"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="password"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Password
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <Link
+                  href={null}
+                  isPositionedRight={false}
+                  onClick={[Function]}
+                  willOpenInNewTab={false}
+                >
+                  <Button
+                    as={null}
+                    basic={true}
+                    floated="left"
+                    href={null}
+                    onClick={[Function]}
+                    target="_self"
+                  >
+                    <button
+                      className="ui basic left floated button"
+                      href={null}
+                      onClick={[Function]}
+                      role="button"
+                      target="_self"
+                    >
+                      <Modal
+                        isFullscreen={false}
+                        size="tiny"
+                        trigger={
+                          <span>
+                            Forgot password
+                          </span>
+                        }
+                      >
+                        <Modal
+                          closeIcon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                          closeOnDimmerClick={true}
+                          closeOnDocumentClick={false}
+                          content={
+                            <Form
+                              actionLink={null}
+                              errorMessage=""
+                              headingText="Forgot password"
+                              onSubmit={[Function]}
+                              submitButtonText="Send reset"
+                              successMessage=""
+                              validation={Object {}}
+                            >
+                              <TextInput
+                                error={false}
+                                isValid={false}
+                                label="Email"
+                                name="email"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                type="text"
+                              />
+                            </Form>
+                          }
+                          dimmer="inverted"
+                          eventPool="Modal"
+                          size="tiny"
+                          trigger={
+                            <span>
+                              Forgot password
+                            </span>
+                          }
+                        >
+                          <Portal
+                            className="ui inverted page modals dimmer transition visible active"
+                            closeOnDocumentClick={false}
+                            closeOnEscape={true}
+                            closeOnRootNodeClick={true}
+                            eventPool="Modal"
+                            mountNode={<body />}
+                            onClose={[Function]}
+                            onMount={[Function]}
+                            onOpen={[Function]}
+                            onUnmount={[Function]}
+                            openOnTriggerClick={true}
+                            trigger={
+                              <span>
+                                Forgot password
+                              </span>
+                            }
+                          >
+                            <Ref
+                              innerRef={[Function]}
+                            >
+                              <span
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                              >
+                                Forgot password
+                              </span>
+                            </Ref>
+                          </Portal>
+                        </Modal>
+                      </Modal>
+                    </button>
+                  </Button>
+                </Link>
+                <Button
+                  hasShadow={false}
+                  icon={null}
+                  isCompact={false}
+                  isDisabled={false}
+                  isLoading={false}
+                  isPositionedRight={true}
+                  isRounded={false}
+                  isSecondary={false}
+                  onClick={[Function]}
+                  size={null}
+                >
+                  <Button
+                    as="button"
+                    circular={false}
+                    className=""
+                    compact={false}
+                    disabled={false}
+                    floated="right"
+                    loading={false}
+                    onClick={[Function]}
+                    secondary={false}
+                    size={null}
+                  >
+                    <button
+                      className="ui right floated button"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      Log in
+                    </button>
+                  </Button>
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </Form>
+</OwnerLogin>
+`;
