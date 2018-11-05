@@ -1,5 +1,3 @@
-
-
 ```jsx
 const { guestsOptions } = require('./mock-data/options');
 
@@ -9,15 +7,9 @@ const displayAsFixed = false;
 <PropertyPageSearchBar
   isFixed={displayAsFixed}
   guestsOptions={guestsOptions}
-  searchButton={
-  <Button isCompact isRounded>
-    Check Availability
-  </Button>
-  }
+  searchButton={<Button isCompact isRounded>Check Availability</Button>}
   summaryElement={<div>Property Information</div>}
   modalTrigger={<Button isPositionedRight isRounded isCompact>Check Availability</Button>}
-  modalSummaryElement={
-    <div>Property information for mobile modal</div>
-  }
+  modalSummaryElement={<div>Property information for mobile modal</div>}
 /> 
 ```
