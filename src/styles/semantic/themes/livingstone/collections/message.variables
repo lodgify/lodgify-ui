@@ -1,0 +1,45 @@
+/*******************************
+            Message
+*******************************/
+
+/*-------------------
+       Elements
+--------------------*/
+
+@verticalMargin: @30px;
+@verticalPadding: @12px;
+@horizontalPadding: @15px;
+
+@borderRadius: 0;
+@borderWidth: 0;
+@borderShadow: none;
+
+/* Header */
+@headerMargin: 0;
+
+/* Paragraph */
+@messageTextOpacity: 1;
+
+/* Close Icon */
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Icon Message */
+
+/* Attached */
+
+/* Floating */
+
+/* Colors */
+
+/* Warning / Positive / Negative / Info */
+
+/* Success */
+@successTextColor: @darkGreen;
+@successBackgroundColor: @lightGreen;
+
+/* Error */
+@errorTextColor: @darkRed;
+@errorBackgroundColor: @lightRed;
