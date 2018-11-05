@@ -11,7 +11,6 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Paragraph } from 'typography/Paragraph';
 
 import { getImageMarkup } from './utils/getImageMarkup';
-import { getIsFluid } from './utils/getIsFluid';
 import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
 
 /**
@@ -34,8 +33,6 @@ export class Component extends PureComponent {
       isFluid,
       hasRoundedCorners,
       isCircular,
-      imageWidth,
-      imageHeight,
     } = this.props;
 
     const imageProps = {
@@ -47,7 +44,7 @@ export class Component extends PureComponent {
     return (
       <picture
         className={getClassNames('responsive-image', {
-          'is-fluid': getIsFluid(isFluid, imageWidth, imageHeight),
+          'is-fluid': isFluid,
           'is-rounded': hasRoundedCorners,
           'is-circular': isCircular,
         })}
@@ -81,7 +78,7 @@ Component.defaultProps = {
   imageWidth: null,
   isAvatar: false,
   isCircular: false,
-  isFluid: true,
+  isFluid: false,
   label: null,
   placeholderImageUrl: undefined,
   sources: [],

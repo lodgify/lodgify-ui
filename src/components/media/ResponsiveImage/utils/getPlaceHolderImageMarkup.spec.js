@@ -11,7 +11,6 @@ const imageProps = {
   imageNotFoundLabelText: 'someLabel',
   imageTitle: 'someTitle',
   isAvatar: false,
-  isFluid: true,
   isImageLoaded: true,
   placeholderImageUrl: 'anotherUrl',
 };

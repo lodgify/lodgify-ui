@@ -4,22 +4,13 @@ describe('`getIsFluid`', () => {
   describe('when `imageWidth` or `imageHeight` are defined', () => {
     const testCases = [
       {
-        props: [true, 1, 1],
+        props: [1, 1],
       },
       {
-        props: [true, 1, undefined],
+        props: [1, undefined],
       },
       {
-        props: [true, undefined, 1],
-      },
-      {
-        props: [false, 1, 1],
-      },
-      {
-        props: [false, 1, undefined],
-      },
-      {
-        props: [false, undefined, 1],
+        props: [undefined, 1],
       },
     ];
 
@@ -27,29 +18,16 @@ describe('`getIsFluid`', () => {
       it(`should return 'false' when arguements are ${props}`, () => {
         const actual = getIsFluid(...props);
 
-        expect(actual).toEqual(false);
+        expect(actual).toMatchSnapshot();
       });
     });
   });
 
   describe('when `imageWidth` and `imageHeight are both undefined', () => {
-    const testCases = [
-      {
-        props: [true, undefined, undefined],
-        expectedValue: true,
-      },
-      {
-        props: [false, undefined, undefined],
-        expectedValue: false,
-      },
-    ];
+    it(`should return the right value`, () => {
+      const actual = getIsFluid(undefined, undefined);
 
-    testCases.forEach(({ props, expectedValue }) => {
-      it(`should return ${expectedValue} when arguements are ${props}`, () => {
-        const actual = getIsFluid(...props);
-
-        expect(actual).toEqual(expectedValue);
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 });

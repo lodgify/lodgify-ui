@@ -30,7 +30,6 @@ export const getPlaceholderImageMarkup = ({
   imageUrl,
   imageWidth,
   isAvatar,
-  isFluid,
   isImageLoaded,
   placeholderImageUrl,
   /* eslint-enable react/prop-types */
@@ -44,7 +43,7 @@ export const getPlaceholderImageMarkup = ({
     <Image
       alt={alternativeText}
       avatar={isAvatar}
-      fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
+      fluid={getIsFluid(imageWidth, imageHeight)}
       onLoad={handleImageLoad}
       src={imageUrl}
       title={imageTitle}
@@ -54,7 +53,7 @@ export const getPlaceholderImageMarkup = ({
     <div className="placeholder-image-container">
       <img
         className={getClassNames('placeholder-image', {
-          'ui image fluid': getIsFluid(isFluid, imageWidth, imageHeight),
+          'ui image fluid': getIsFluid(imageWidth, imageHeight),
         })}
         src={placeholderImageUrl}
       />
