@@ -1,3 +1,21 @@
+# [1.76.0](https://github.com/lodgify/lodgify-u/compare/v1.75.0...v1.76.0) (2018-11-05)
+
+
+### Bug Fixes
+
+* **FullBleed:** pass isFluid to ResponsiveImage ([939d50a](https://github.com/lodgify/lodgify-u/commit/939d50a))
+* **ResponsiveImage:** expose imageWidth and imageHeight props ([71c44fd](https://github.com/lodgify/lodgify-u/commit/71c44fd))
+
+
+### Features
+
+* **FeaturedProperty:** expose placeholderImageUrl and refactor to use ResponsiveImage ([fec39a7](https://github.com/lodgify/lodgify-u/commit/fec39a7))
+* **FeaturedRoomType:** expose placeholderImageProp and refactor to use ResponsiveImage ([524faa8](https://github.com/lodgify/lodgify-u/commit/524faa8))
+* **Gallery:** expose imageHeight and imageWidth for ResponsiveImage ([ac26089](https://github.com/lodgify/lodgify-u/commit/ac26089))
+* **Pictures:** expose imageHeight and imageWidth for Gallery to consume ([9b30b9f](https://github.com/lodgify/lodgify-u/commit/9b30b9f))
+* **Promotion:** expose imageHeight and imageWidth for ResponsiveImage to consume ([edf5d56](https://github.com/lodgify/lodgify-u/commit/edf5d56))
+* **ResponsiveImage:** change default value of isFluid prop ([6e5b53f](https://github.com/lodgify/lodgify-u/commit/6e5b53f))
+
 # [1.75.0](https://github.com/lodgify/lodgify-u/compare/v1.74.1...v1.75.0) (2018-11-05)
 
 
