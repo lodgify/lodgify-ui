@@ -1,3 +1,13 @@
+# [1.77.0](https://github.com/lodgify/lodgify-u/compare/v1.76.0...v1.77.0) (2018-11-05)
+
+
+### Features
+
+* **CallMeBack:** implement success and error message props ([738a9a2](https://github.com/lodgify/lodgify-u/commit/738a9a2))
+* **Contact:** implement error and success message props ([ffbdd1d](https://github.com/lodgify/lodgify-u/commit/ffbdd1d))
+* **OwnerLogin:** implement success and error message props for form and forgot password form ([d8c420f](https://github.com/lodgify/lodgify-u/commit/d8c420f))
+* **OwnerSignup:** implement the success and error message props ([0c362e5](https://github.com/lodgify/lodgify-u/commit/0c362e5))
+
 # [1.76.0](https://github.com/lodgify/lodgify-u/compare/v1.75.0...v1.76.0) (2018-11-05)
 
 
