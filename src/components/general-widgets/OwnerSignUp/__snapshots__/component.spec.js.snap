@@ -1,0 +1,827 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the error message above the submit button 1`] = `
+<OwnerSignUp
+  emailInputLabel="Email"
+  errorMessage="This is an error message"
+  firstNameInputLabel="First Name"
+  headingText="Owner Signup"
+  lastNameInputLabel="Last Name"
+  onSubmit={[Function]}
+  submitButtonText="Sign up"
+  successMessage=""
+  validation={Object {}}
+>
+  <Form
+    actionLink={null}
+    errorMessage="This is an error message"
+    headingText="Owner Signup"
+    onSubmit={[Function]}
+    submitButtonText="Sign up"
+    successMessage=""
+    validation={Object {}}
+  >
+    <Card
+      className="has-form"
+      fluid={true}
+    >
+      <div
+        className="ui fluid card has-form"
+        onClick={[Function]}
+      >
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Heading
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              <Header
+                as="h3"
+                inverted={false}
+                textAlign={null}
+              >
+                <h3
+                  className="ui header"
+                >
+                  Owner Signup
+                </h3>
+              </Header>
+            </Heading>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Form
+              as="form"
+              error={true}
+              onSubmit={[Function]}
+              success={false}
+            >
+              <form
+                className="ui error form"
+                onSubmit={[Function]}
+              >
+                <FormField
+                  key=".0"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="First Name"
+                      name="firstName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="First Name"
+                        name="firstName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              First Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".1"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Last Name"
+                      name="lastName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Last Name"
+                        name="lastName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Last Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Email"
+                      name="email"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Email"
+                        name="email"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Email
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <Message
+                  content="This is an error message"
+                  error={true}
+                >
+                  <div
+                    className="ui error message"
+                  >
+                    <MessageContent>
+                      <div
+                        className="content"
+                      >
+                        <p
+                          key="This is an error message"
+                        >
+                          This is an error message
+                        </p>
+                      </div>
+                    </MessageContent>
+                  </div>
+                </Message>
+                <Button
+                  hasShadow={false}
+                  icon={null}
+                  isCompact={false}
+                  isDisabled={false}
+                  isLoading={false}
+                  isPositionedRight={true}
+                  isRounded={false}
+                  isSecondary={false}
+                  onClick={[Function]}
+                  size={null}
+                >
+                  <Button
+                    as="button"
+                    circular={false}
+                    className=""
+                    compact={false}
+                    disabled={false}
+                    floated="right"
+                    loading={false}
+                    onClick={[Function]}
+                    secondary={false}
+                    size={null}
+                  >
+                    <button
+                      className="ui right floated button"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      Sign up
+                    </button>
+                  </Button>
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </Form>
+</OwnerSignUp>
+`;
+
+exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the success message above the submit button 1`] = `
+<OwnerSignUp
+  emailInputLabel="Email"
+  errorMessage=""
+  firstNameInputLabel="First Name"
+  headingText="Owner Signup"
+  lastNameInputLabel="Last Name"
+  onSubmit={[Function]}
+  submitButtonText="Sign up"
+  successMessage="This is a successful message"
+  validation={Object {}}
+>
+  <Form
+    actionLink={null}
+    errorMessage=""
+    headingText="Owner Signup"
+    onSubmit={[Function]}
+    submitButtonText="Sign up"
+    successMessage="This is a successful message"
+    validation={Object {}}
+  >
+    <Card
+      className="has-form"
+      fluid={true}
+    >
+      <div
+        className="ui fluid card has-form"
+        onClick={[Function]}
+      >
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Heading
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              <Header
+                as="h3"
+                inverted={false}
+                textAlign={null}
+              >
+                <h3
+                  className="ui header"
+                >
+                  Owner Signup
+                </h3>
+              </Header>
+            </Heading>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Form
+              as="form"
+              error={false}
+              onSubmit={[Function]}
+              success={true}
+            >
+              <form
+                className="ui success form"
+                onSubmit={[Function]}
+              >
+                <FormField
+                  key=".0"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="First Name"
+                      name="firstName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="First Name"
+                        name="firstName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              First Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".1"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Last Name"
+                      name="lastName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Last Name"
+                        name="lastName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Last Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Email"
+                      name="email"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Email"
+                        name="email"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Email
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <Message
+                  content="This is a successful message"
+                  success={true}
+                >
+                  <div
+                    className="ui success message"
+                  >
+                    <MessageContent>
+                      <div
+                        className="content"
+                      >
+                        <p
+                          key="This is a successful message"
+                        >
+                          This is a successful message
+                        </p>
+                      </div>
+                    </MessageContent>
+                  </div>
+                </Message>
+                <Button
+                  hasShadow={false}
+                  icon={null}
+                  isCompact={false}
+                  isDisabled={false}
+                  isLoading={false}
+                  isPositionedRight={true}
+                  isRounded={false}
+                  isSecondary={false}
+                  onClick={[Function]}
+                  size={null}
+                >
+                  <Button
+                    as="button"
+                    circular={false}
+                    className=""
+                    compact={false}
+                    disabled={false}
+                    floated="right"
+                    loading={false}
+                    onClick={[Function]}
+                    secondary={false}
+                    size={null}
+                  >
+                    <button
+                      className="ui right floated button"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      Sign up
+                    </button>
+                  </Button>
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </Form>
+</OwnerSignUp>
+`;
+
+exports[`<OwnerSignUp /> should render the correct structure 1`] = `
+<OwnerSignUp
+  emailInputLabel="Email"
+  errorMessage=""
+  firstNameInputLabel="First Name"
+  headingText="Owner Signup"
+  lastNameInputLabel="Last Name"
+  onSubmit={[Function]}
+  submitButtonText="Sign up"
+  successMessage=""
+  validation={Object {}}
+>
+  <Form
+    actionLink={null}
+    errorMessage=""
+    headingText="Owner Signup"
+    onSubmit={[Function]}
+    submitButtonText="Sign up"
+    successMessage=""
+    validation={Object {}}
+  >
+    <Card
+      className="has-form"
+      fluid={true}
+    >
+      <div
+        className="ui fluid card has-form"
+        onClick={[Function]}
+      >
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Heading
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              <Header
+                as="h3"
+                inverted={false}
+                textAlign={null}
+              >
+                <h3
+                  className="ui header"
+                >
+                  Owner Signup
+                </h3>
+              </Header>
+            </Heading>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Form
+              as="form"
+              error={false}
+              onSubmit={[Function]}
+              success={false}
+            >
+              <form
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <FormField
+                  key=".0"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="First Name"
+                      name="firstName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="First Name"
+                        name="firstName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              First Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".1"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Last Name"
+                      name="lastName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Last Name"
+                        name="lastName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Last Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      error={false}
+                      isValid={false}
+                      label="Email"
+                      name="email"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        error={false}
+                        icon={null}
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Email"
+                        name="email"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              key=".2"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Email
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <Button
+                  hasShadow={false}
+                  icon={null}
+                  isCompact={false}
+                  isDisabled={false}
+                  isLoading={false}
+                  isPositionedRight={true}
+                  isRounded={false}
+                  isSecondary={false}
+                  onClick={[Function]}
+                  size={null}
+                >
+                  <Button
+                    as="button"
+                    circular={false}
+                    className=""
+                    compact={false}
+                    disabled={false}
+                    floated="right"
+                    loading={false}
+                    onClick={[Function]}
+                    secondary={false}
+                    size={null}
+                  >
+                    <button
+                      className="ui right floated button"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      Sign up
+                    </button>
+                  </Button>
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </Form>
+</OwnerSignUp>
+`;

@@ -11,6 +11,8 @@ import { TextInput } from 'inputs/TextInput';
  * @param  {string}    forgotPasswordHeadingText
  * @param  {string}    forgotPasswordModalTriggerText
  * @param  {Object}    forgotPasswordValidation
+ * @param  {string}    forgotPasswordErrorMessage
+ * @param  {string}    forgotPasswordSuccessMessage
  * @return {Object}
  */
 export const getForgotPasswordFormMarkup = (
@@ -19,13 +21,17 @@ export const getForgotPasswordFormMarkup = (
   forgotPasswordEmailInputLabel,
   forgotPasswordHeadingText,
   forgotPasswordModalTriggerText,
-  forgotPasswordValidation
+  forgotPasswordValidation,
+  forgotPasswordErrorMessage,
+  forgotPasswordSuccessMessage
 ) => (
   <Modal trigger={<span>{forgotPasswordModalTriggerText}</span>}>
     <Form
+      errorMessage={forgotPasswordErrorMessage}
       headingText={forgotPasswordHeadingText}
       onSubmit={onForgotPasswordSubmit}
       submitButtonText={forgotPasswordSubmitButtonText}
+      successMessage={forgotPasswordSuccessMessage}
       validation={forgotPasswordValidation}
     >
       <TextInput label={forgotPasswordEmailInputLabel} name="email" />

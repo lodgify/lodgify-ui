@@ -29,6 +29,7 @@ import { TextInput } from 'inputs/TextInput';
 export const Component = ({
   dateInputPlaceholder,
   emailInputLabel,
+  errorMessage,
   headingText,
   nameInputLabel,
   notesInputLabel,
@@ -37,6 +38,7 @@ export const Component = ({
   propertyInputLabel,
   propertyOptions,
   submitButtonText,
+  successMessage,
   timeInputLabel,
   timeOptions,
   timeZoneInputLabel,
@@ -44,9 +46,11 @@ export const Component = ({
   validation,
 }) => (
   <Form
+    errorMessage={errorMessage}
     headingText={headingText}
     onSubmit={onSubmit}
     submitButtonText={submitButtonText}
+    successMessage={successMessage}
     validation={validation}
   >
     <InputGroup>
@@ -84,6 +88,7 @@ Component.displayName = 'CallMeBack';
 Component.defaultProps = {
   dateInputPlaceholder: DATE,
   emailInputLabel: EMAIL,
+  errorMessage: '',
   headingText: CALL_ME_BACK,
   nameInputLabel: NAME,
   notesInputLabel: NOTES,
@@ -91,6 +96,7 @@ Component.defaultProps = {
   phoneInputLabel: PHONE,
   propertyInputLabel: PROPERTY,
   submitButtonText: SEND,
+  successMessage: '',
   timeInputLabel: TIME,
   timeZoneInputLabel: TIME_ZONE,
   validation: {},
@@ -101,6 +107,8 @@ Component.propTypes = {
   dateInputPlaceholder: PropTypes.string,
   /** The label for the email input. */
   emailInputLabel: PropTypes.string,
+  /** The message to display when the form has an error. */
+  errorMessage: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
   /** The label for the name input. */
@@ -130,6 +138,8 @@ Component.propTypes = {
   ).isRequired,
   /** The form submit button text */
   submitButtonText: PropTypes.string,
+  /** The message to display when the form is successful. */
+  successMessage: PropTypes.string,
   /** The label for the time input. */
   timeInputLabel: PropTypes.string,
   /** The options which the user can select for the time field. */
