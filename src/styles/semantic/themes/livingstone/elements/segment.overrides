@@ -124,11 +124,12 @@
     padding: 0;
   }
 
-  @media @mobileScreen {
-    padding: 0;
+  .responsive-image img {
+    min-height: 100%;
   }
 
-  &.display-stacked {
+  @media @tabletScreen {
+    padding: 0;
 
     p + .button {
       float: none;
@@ -150,19 +151,22 @@
     }
   }
 
-  &:not(.display-stacked):hover .content-section {
+  @media @computerScreen {
 
-    p,
-    p + .button,
-    .header,
-    > picture.responsive-image .ui.image {
-      filter: @promotionHoverBlur;
-      -ms-filter: @promotionHoverBlur;
-      pointer-events: none;
-    }
+    &:hover .content-section {
 
-    .book-now-button-container .button {
-      opacity: 1;
+      p,
+      p + .button,
+      .header,
+      > picture.responsive-image .ui.image {
+        filter: @promotionHoverBlur;
+        -ms-filter: @promotionHoverBlur;
+        pointer-events: none;
+      }
+
+      .book-now-button-container .button {
+        opacity: 1;
+      }
     }
   }
 
