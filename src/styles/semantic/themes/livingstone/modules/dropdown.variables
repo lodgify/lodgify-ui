@@ -5,6 +5,7 @@
 /*-------------------
        Element
 --------------------*/
+@dropdownContainerMinWidth: 90px;
 
 @borderRadius: @3px;
 
@@ -101,14 +102,20 @@
 @iconPadding: @8px;
 @iconZIndex: @selectionZIndex + 1;
 
+@dropdownWithIconLabelWidth: ~"calc(100% - 75px)";
+
 @dropdownWithIconPaddingLeft: @40px;
 @dropdownWithIconPaddingRight: calc(@30px + @40px);
 
 /* With Image */
+
+@dropdownMinWidthWithImage: 118px;
 @dropdownWithImagesCaretPaddingTop: @15px;
 
 /* With Label */
 @labelColor: @itemColor;
+
+@labelDefaultWidth: ~"calc(100% - 55px)";
 
 @labelFocusColor: @textColor;
 @labelFocusFontSize: @10px;
@@ -165,16 +172,21 @@
 
 @errorMessageFontWeight: 400;
 @errorMessagePadding: @6px @25px;
-@errorMessageRightPosition: -(@1px);
+@errorMessageRightPosition: -(@2px);
 @errorMessageTopPosition: -(@30px);
 
 /* Valid */
+@dropdownValidMinWidth: 126px;
+
 @validBorderColor: @green;
 
 @validIconOpacity: 1;
 @validIconPadding: @8px 0;
 @validIconRight: @40px;
 @validIconZIndex: 1;
+
+@validLabelWidthWithIcon: ~"calc(100% - 105px)";
+@validLabelWidthWithoutIcon: ~"calc(100% - 85px)";
 
 /*-------------------
       Variations

@@ -11,6 +11,14 @@
   /*-------------------
        Content
 --------------------*/
+  > .text,
+  > .text .text,
+  > label {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
 
   .menu {
 
@@ -99,6 +107,7 @@
   position: relative;
   max-width: @inputMaxWidth;
   width: @inputWidth;
+  min-width: @dropdownContainerMinWidth;
 
   .ui.selection.dropdown {
     color: @defaultTextColor;
@@ -151,6 +160,18 @@
   }
 
   /* Visible */
+  .ui.visible.selection {
+
+    .visible.menu .item {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    + label {
+      width: 100%;
+    }
+  }
 
   /* Visible Hover */
 
@@ -166,6 +187,10 @@
       background: @selectionFocusBackground;
       border-color: @selectionFocusBorderColor;
       color: @textColor;
+    }
+
+    label {
+      width: 100%;
     }
   }
 
@@ -183,17 +208,30 @@
     &.green ~ .ui.dropdown {
       padding-right: @dropdownWithIconPaddingRight;
     }
+
+    ~ label {
+      width: @dropdownWithIconLabelWidth;
+    }
+
+    &.dirty ~ label {
+      width: 100%;
+    }
   }
 
   /*  With Image */
   &.has-images {
+    min-width: @dropdownMinWidthWithImage;
 
     & > i.icon {
       top: @dropdownWithImagesCaretPaddingTop;
     }
 
-    .ui.selection.dropdown > i.icon {
-      padding-top: @dropdownWithImagesCaretPaddingTop;
+    .ui.selection.dropdown {
+      display: flex;
+
+      > i.icon {
+        padding-top: @dropdownWithImagesCaretPaddingTop;
+      }
     }
   }
 
@@ -205,6 +243,10 @@
     position: absolute;
     top: @itemVerticalPadding;
     transition: transform @defaultDuration, font-size @defaultDuration;
+    width: @labelDefaultWidth;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   // stylelint-disable-next-line no-duplicate-selectors
@@ -280,16 +322,19 @@
       position: absolute;
       right: @errorMessageRightPosition;
       top: @errorMessageTopPosition;
+      z-index: 1;
+      white-space: nowrap;
 
       &:before {
         left: auto;
-        right: @6px;
+        right: @errorMessageRightPosition;
       }
     }
   }
 
   /* Valid */
   &.valid {
+    min-width: @dropdownValidMinWidth;
 
     .ui.selection.dropdown {
       background: @focusedInputBackground;
@@ -303,6 +348,21 @@
       position: absolute;
       right: @validIconRight;
       z-index: @validIconZIndex;
+    }
+
+    > i.icon {
+
+      &:not(.green) ~ label {
+        width: @validLabelWidthWithIcon;
+      }
+
+      ~ label {
+        width: @validLabelWidthWithoutIcon;
+      }
+
+      &.dirty ~ label {
+        width: 100%;
+      }
     }
   }
 }
