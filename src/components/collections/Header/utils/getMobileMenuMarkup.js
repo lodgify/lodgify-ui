@@ -54,35 +54,34 @@ export const getMobileMenuMarkup = ({
       <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
         <Menu text vertical>
           {getLogoMarkup(logoSrc, logoText)}
-          {navigationItems.map(
-            ({ subItems, text, href }, index) =>
-              size(subItems) ? (
-                <Accordion
-                  as={Menu.Item}
-                  key={buildKeyFromStrings(text, index)}
-                  panels={[
-                    {
-                      title: {
-                        content: text,
-                        key: buildKeyFromStrings(text, index),
-                      },
-                      content: {
-                        content: subItems.map(({ text, href }, index) =>
-                          getLinkMarkup(
-                            text,
-                            href,
-                            index,
-                            activeNavigationItemIndex
-                          )
-                        ),
-                        key: buildKeyFromStrings(index, text),
-                      },
+          {navigationItems.map(({ subItems, text, href }, index) =>
+            size(subItems) ? (
+              <Accordion
+                as={Menu.Item}
+                key={buildKeyFromStrings(text, index)}
+                panels={[
+                  {
+                    title: {
+                      content: text,
+                      key: buildKeyFromStrings(text, index),
                     },
-                  ]}
-                />
-              ) : (
-                getLinkMarkup(text, href, index, activeNavigationItemIndex)
-              )
+                    content: {
+                      content: subItems.map(({ text, href }, index) =>
+                        getLinkMarkup(
+                          text,
+                          href,
+                          index,
+                          activeNavigationItemIndex
+                        )
+                      ),
+                      key: buildKeyFromStrings(index, text),
+                    },
+                  },
+                ]}
+              />
+            ) : (
+              getLinkMarkup(text, href, index, activeNavigationItemIndex)
+            )
           )}
         </Menu>
       </Modal>

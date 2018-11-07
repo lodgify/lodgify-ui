@@ -25,28 +25,27 @@ export const getDesktopMenuMarkup = ({
   /* eslint-enable react/prop-types */
 }) => (
   <ShowOnDesktop parent={Menu.Menu} parentProps={{ position: 'right' }}>
-    {navigationItems.map(
-      ({ subItems, text, href }, index) =>
-        size(subItems) > 0 ? (
-          <Submenu
-            isMenuItem
-            isSelectedDisabled
-            isSimple
-            isTriggerUnderlined={index === activeNavigationItemIndex}
-            isTriggeredOnHover
-            items={subItems}
-            key={buildKeyFromStrings(text, index)}
-            pointing={getSubmenuPointing(
-              index,
-              size(navigationItems),
-              !!primaryCTA
-            )}
-          >
-            {text}
-          </Submenu>
-        ) : (
-          getLinkMarkup(text, href, index, activeNavigationItemIndex)
-        )
+    {navigationItems.map(({ subItems, text, href }, index) =>
+      size(subItems) > 0 ? (
+        <Submenu
+          isMenuItem
+          isSelectedDisabled
+          isSimple
+          isTriggerUnderlined={index === activeNavigationItemIndex}
+          isTriggeredOnHover
+          items={subItems}
+          key={buildKeyFromStrings(text, index)}
+          pointing={getSubmenuPointing(
+            index,
+            size(navigationItems),
+            !!primaryCTA
+          )}
+        >
+          {text}
+        </Submenu>
+      ) : (
+        getLinkMarkup(text, href, index, activeNavigationItemIndex)
+      )
     )}
     {primaryCTA && (
       <Menu.Item className="no-underline" link>

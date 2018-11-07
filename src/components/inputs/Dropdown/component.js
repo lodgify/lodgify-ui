@@ -81,8 +81,9 @@ export class Component extends PureComponent {
           selection
           upward={willOpenAbove}
         />
-        {!hasImages &&
-          label && <label onClick={() => this.handleOpen(true)}>{label}</label>}
+        {!hasImages && label && (
+          <label onClick={() => this.handleOpen(true)}>{label}</label>
+        )}
       </div>
     );
   }
