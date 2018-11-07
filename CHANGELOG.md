@@ -1,3 +1,10 @@
+# [1.78.0](https://github.com/lodgify/lodgify-ui/compare/v1.77.0...v1.78.0) (2018-11-07)
+
+
+### Features
+
+* **Promotion:** make component responsive ([804de5d](https://github.com/lodgify/lodgify-ui/commit/804de5d))
+
 # [1.77.0](https://github.com/lodgify/lodgify-u/compare/v1.76.0...v1.77.0) (2018-11-05)
 
 
