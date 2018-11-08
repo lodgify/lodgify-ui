@@ -72,15 +72,29 @@ describe('<ResponsiveImage />', () => {
     });
   });
 
+  describe('on mount', () => {
+    it('should set `shouldImageLoad` to `true` in the components state', () => {
+      const wrapper = getResponsiveImage();
+
+      wrapper.instance().componentDidMount();
+      const actual = wrapper.state();
+
+      expect(actual).toEqual({
+        isImageLoaded: false,
+        shouldImageLoad: true,
+      });
+    });
+  });
+
   describe('`handleImageLoad`', () => {
     it('should set `isImageLoaded` to `true` in the components state', () => {
       const wrapper = getResponsiveImage();
 
       wrapper.instance().handleImageLoad();
-
       const actual = wrapper.state();
 
       expect(actual).toEqual({
+        shouldImageLoad: true,
         isImageLoaded: true,
       });
     });
