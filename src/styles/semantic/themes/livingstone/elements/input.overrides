@@ -92,6 +92,18 @@
 
   /* Date range picker */
 
+  .DateRangePickerInput {
+    min-width: @dateRangePickerMinWidth;
+
+    input {
+      text-overflow: ellipsis;
+
+      &.DateInput_input__focused {
+        display: flex;
+      }
+    }
+  }
+
   /* Single date picker */
 
   textarea {

@@ -27,6 +27,9 @@
 /* Labeled Input */
 @labelColor: @greySix;
 
+/* Date Range Picker Input */
+@dateRangePickerMinWidth: 135px;
+
 /*-------------------
         States
 --------------------*/
