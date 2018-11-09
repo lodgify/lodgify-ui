@@ -1,3 +1,10 @@
+## [1.78.2](https://github.com/lodgify/lodgify-ui/compare/v1.78.1...v1.78.2) (2018-11-09)
+
+
+### Bug Fixes
+
+* **ResponsiveImage:** load image only after component has mounted ([0bcbbed](https://github.com/lodgify/lodgify-ui/commit/0bcbbed))
+
 ## [1.78.1](https://github.com/lodgify/lodgify-ui/compare/v1.78.0...v1.78.1) (2018-11-08)
 
 
