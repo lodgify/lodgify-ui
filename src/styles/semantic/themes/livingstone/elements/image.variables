@@ -21,3 +21,4 @@
 @imageWithPlaceholderBlur: blur(20px);
 @imageWithPlaceholderTransformScale: scale(1.15);
 @imageWithPlaceholderTransition: 0.5s filter ease-out, 0.5s transform ease-out, 0.5s opacity ease-out;
+@imageWithPlaceholderContainerTransition: opacity 0.3s;

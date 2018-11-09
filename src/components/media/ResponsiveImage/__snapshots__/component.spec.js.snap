@@ -134,7 +134,7 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` and \`props.imageU
     role="figure"
   >
     <div
-      className="image-with-placeholder-container has-blurred-children"
+      className="image-with-placeholder-container has-blurred-children is-visible"
     >
       <Image
         alt="Alternative Text 😝"

@@ -19,11 +19,27 @@ import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
-    shouldImageLoad: false,
     isImageLoaded: false,
+    isImageLoadedFromCache: false,
+    shouldImageLoad: false,
   };
 
-  componentDidMount = () => this.setState({ shouldImageLoad: true });
+  componentDidMount = () => {
+    const { imageUrl, placeholderImageUrl } = this.props;
+
+    if (!!placeholderImageUrl && !!imageUrl) {
+      const fullsizeImage = new Image();
+
+      fullsizeImage.src = imageUrl;
+
+      this.setState({
+        shouldImageLoad: true,
+        isImageLoadedFromCache: fullsizeImage.complete,
+      });
+    } else {
+      this.setState({ shouldImageLoad: true });
+    }
+  };
 
   handleImageLoad = () => this.setState({ isImageLoaded: true });
 
@@ -40,8 +56,9 @@ export class Component extends PureComponent {
 
     const imageProps = {
       ...this.props,
-      isImageLoaded: this.state.isImageLoaded,
       handleImageLoad: this.handleImageLoad,
+      isImageLoaded: this.state.isImageLoaded,
+      isImageLoadedFromCache: this.state.isImageLoadedFromCache,
       shouldImageLoad: this.state.shouldImageLoad,
     };
 

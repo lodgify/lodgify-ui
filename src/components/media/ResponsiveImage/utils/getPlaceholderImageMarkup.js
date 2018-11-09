@@ -17,7 +17,9 @@ import { getAspectRatioPlaceholderMarkup } from './getAspectRatioPlaceholderMark
  * @param  {boolean}       imageProps.isAvatar
  * @param  {boolean}       imageProps.isFluid
  * @param  {boolean}       imageProps.isImageLoaded
+ * @param  {boolean}       imageProps.isImageLoadedFromCache
  * @param  {string}        imageProps.placeholderImageUrl
+ * @param  {boolean}       imageProps.shouldImageLoad
  * @return {Function}
  */
 export const getPlaceholderImageMarkup = ({
@@ -31,13 +33,15 @@ export const getPlaceholderImageMarkup = ({
   imageWidth,
   isAvatar,
   isImageLoaded,
+  isImageLoadedFromCache,
   placeholderImageUrl,
   shouldImageLoad,
   /* eslint-enable react/prop-types */
 }) => (
   <div
     className={getClassNames('image-with-placeholder-container', {
-      'has-blurred-children': !isImageLoaded,
+      'has-blurred-children': !isImageLoaded && !isImageLoadedFromCache,
+      'is-visible': shouldImageLoad,
     })}
   >
     {getAspectRatioPlaceholderMarkup(imageWidth, imageHeight)}
@@ -53,14 +57,16 @@ export const getPlaceholderImageMarkup = ({
         {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
       </Image>
     )}
-    <div className="placeholder-image-container">
-      <img
-        className={getClassNames('placeholder-image', {
-          'ui image fluid': getIsFluid(imageWidth, imageHeight),
-        })}
-        src={placeholderImageUrl}
-      />
-      {!imageUrl && <Label content={imageNotFoundLabelText} />}
-    </div>
+    {!isImageLoadedFromCache && (
+      <div className="placeholder-image-container">
+        <img
+          className={getClassNames('placeholder-image', {
+            'ui image fluid': getIsFluid(imageWidth, imageHeight),
+          })}
+          src={placeholderImageUrl}
+        />
+        {!imageUrl && <Label content={imageNotFoundLabelText} />}
+      </div>
+    )}
   </div>
 );

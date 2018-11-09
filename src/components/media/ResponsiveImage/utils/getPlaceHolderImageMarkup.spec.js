@@ -60,4 +60,26 @@ describe('`getPlaceholderImageMarkup`', () => {
       expect(actual).toMatchSnapshot();
     });
   });
+
+  describe('if `isImageLoadedFromCache === true`', () => {
+    it('should render the right structure', () => {
+      const actual = getPlaceholderImage({
+        isImageLoadedFromCache: true,
+        shouldImageLoad: true,
+      });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `isImageLoadedFromCache === false`', () => {
+    it('should render the right structure', () => {
+      const actual = getPlaceholderImage({
+        isImageLoadedFromCache: false,
+        shouldImageLoad: true,
+      });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
 });
