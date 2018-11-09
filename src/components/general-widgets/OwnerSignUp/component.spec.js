@@ -1,71 +1,35 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import {
-  expectComponentToBe,
-  expectComponentToHaveChildren,
-  expectComponentToHaveDisplayName,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import {
-  EMAIL,
-  FIRST_NAME,
-  LAST_NAME,
-  OWNER_SIGNUP,
-  SIGN_UP,
-} from 'utils/default-strings';
-import { Form } from 'collections/Form';
-import { TextInput } from 'inputs/TextInput';
-
-import { getArrayOfLengthOfItem } from '../../../utils/get-array-of-length-of-item';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as OwnerSignUp } from './component';
 
-const getOwnerSignUp = () => shallow(<OwnerSignUp />);
+const getOwnerSignUp = extraProps => mount(<OwnerSignUp {...extraProps} />);
 
 describe('<OwnerSignUp />', () => {
-  it('should have `Form` component as a wrapper', () => {
+  it('should render the correct structure', () => {
     const wrapper = getOwnerSignUp();
 
-    expectComponentToBe(wrapper, Form);
+    expect(wrapper).toMatchSnapshot();
   });
 
-  describe('the `Form` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getOwnerSignUp().find(Form);
-
-      expectComponentToHaveProps(wrapper, {
-        headingText: OWNER_SIGNUP,
-        onSubmit: Function.prototype,
-        submitButtonText: SIGN_UP,
-        validation: expect.any(Object),
+  describe('if `props.successMessage` is passed', () => {
+    it('should render the success message above the submit button', () => {
+      const wrapper = getOwnerSignUp({
+        successMessage: 'This is a successful message',
       });
-    });
 
-    it('should render three Lodgify UI `TextInput` components', () => {
-      const wrapper = getOwnerSignUp().find(Form);
-
-      expectComponentToHaveChildren(
-        wrapper,
-        ...getArrayOfLengthOfItem(3, TextInput)
-      );
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
-  describe('the `TextInput` components', () => {
-    it('should have the right props', () => {
-      const wrappers = getOwnerSignUp()
-        .find(Form)
-        .find(TextInput);
-      const propSets = [
-        { label: FIRST_NAME, name: 'firstName' },
-        { label: LAST_NAME, name: 'lastName' },
-        { label: EMAIL, name: 'email' },
-      ];
-
-      wrappers.forEach((wrapper, index) => {
-        expectComponentToHaveProps(wrapper, propSets[index]);
+  describe('if `props.errorMessage` is passed', () => {
+    it('should render the error message above the submit button', () => {
+      const wrapper = getOwnerSignUp({
+        errorMessage: 'This is an error message',
       });
+
+      expect(wrapper).toMatchSnapshot();
     });
   });
 

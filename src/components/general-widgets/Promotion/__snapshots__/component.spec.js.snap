@@ -1,325 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The \`Promotion\` component \`Promotion\` as stacked \`Segment\` should have the right structure 1`] = `
-<Promotion
-  backgroundImage="testimage"
-  discountAmount="100%"
-  discountAmountParagraphText="Save up to"
-  discountCode="123"
-  discountCodeParagraphText="Use the coupon code"
-  discountHoverButtonText="Book Now with Discount"
-  headingText="Hello World!"
-  isDisplayedStacked={true}
-  onClick={[Function]}
-  placeholderBackgroundImage={null}
->
-  <Segment
-    basic={true}
-    className="is-promotion display-stacked"
-    onClick={[Function]}
-  >
-    <div
-      className="ui basic segment is-promotion display-stacked"
-      onClick={[Function]}
-    >
-      <Grid
-        areColumnsCentered={false}
-        className="first-grid"
-        stackable={true}
-        stretched={true}
-      >
-        <Grid
-          centered={false}
-          className="first-grid"
-          stackable={true}
-          stretched={true}
-        >
-          <div
-            className="ui stackable stretched grid first-grid"
-          >
-            <GridRow
-              horizontalAlignContent="left"
-              verticalAlign="middle"
-            >
-              <GridRow
-                textAlign="left"
-                verticalAlign="middle"
-              >
-                <div
-                  className="left aligned middle aligned row"
-                >
-                  <GridColumn
-                    className="content-section"
-                    verticalAlignContent="top"
-                    width={12}
-                  >
-                    <GridColumn
-                      className="content-section"
-                      verticalAlign="top"
-                      width={12}
-                    >
-                      <div
-                        className="top aligned twelve wide column content-section"
-                      >
-                        <ResponsiveImage
-                          alternativeText="Image Widget"
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageNotFoundLabelText="Image not found!"
-                          imageTitle="Image Title"
-                          imageUrl="testimage"
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={true}
-                          label={null}
-                          placeholderImageUrl={null}
-                          sources={Array []}
-                        >
-                          <picture
-                            className="responsive-image is-fluid"
-                            role="figure"
-                          >
-                            <Image
-                              alt="Image Widget"
-                              as="img"
-                              avatar={false}
-                              fluid={true}
-                              height={null}
-                              src="testimage"
-                              title="Image Title"
-                              ui={true}
-                              width={null}
-                            >
-                              <img
-                                alt="Image Widget"
-                                className="ui fluid image"
-                                height={null}
-                                src="testimage"
-                                title="Image Title"
-                                width={null}
-                              />
-                            </Image>
-                          </picture>
-                        </ResponsiveImage>
-                        <Grid
-                          areColumnsCentered={false}
-                          padded={true}
-                        >
-                          <Grid
-                            centered={false}
-                            padded={true}
-                          >
-                            <div
-                              className="ui padded grid"
-                            >
-                              <GridRow
-                                horizontalAlignContent="left"
-                                verticalAlign="top"
-                              >
-                                <GridRow
-                                  textAlign="left"
-                                  verticalAlign="top"
-                                >
-                                  <div
-                                    className="left aligned top aligned row"
-                                  >
-                                    <GridColumn
-                                      textAlign="center"
-                                      verticalAlignContent="top"
-                                      width={12}
-                                    >
-                                      <GridColumn
-                                        textAlign="center"
-                                        verticalAlign="top"
-                                        width={12}
-                                      >
-                                        <div
-                                          className="center aligned top aligned twelve wide column"
-                                        >
-                                          <Heading
-                                            isColorInverted={false}
-                                            size="medium"
-                                            textAlign={null}
-                                          >
-                                            <Header
-                                              as="h3"
-                                              inverted={false}
-                                              textAlign={null}
-                                            >
-                                              <h3
-                                                className="ui header"
-                                              >
-                                                Hello World!
-                                              </h3>
-                                            </Header>
-                                          </Heading>
-                                        </div>
-                                      </GridColumn>
-                                    </GridColumn>
-                                  </div>
-                                </GridRow>
-                              </GridRow>
-                              <GridRow
-                                horizontalAlignContent="left"
-                                verticalAlign="top"
-                              >
-                                <GridRow
-                                  textAlign="left"
-                                  verticalAlign="top"
-                                >
-                                  <div
-                                    className="left aligned top aligned row"
-                                  >
-                                    <GridColumn
-                                      floated="right"
-                                      textAlign="center"
-                                      verticalAlignContent="top"
-                                      width={12}
-                                    >
-                                      <GridColumn
-                                        floated="right"
-                                        textAlign="center"
-                                        verticalAlign="top"
-                                        width={12}
-                                      >
-                                        <div
-                                          className="center aligned right floated top aligned twelve wide column"
-                                        >
-                                          <div>
-                                            <Paragraph
-                                              size="tiny"
-                                              weight={null}
-                                            >
-                                              <p
-                                                className="tiny"
-                                              >
-                                                Use the coupon code
-                                              </p>
-                                            </Paragraph>
-                                            <Button
-                                              hasShadow={true}
-                                              icon={null}
-                                              isCompact={false}
-                                              isDisabled={false}
-                                              isLoading={false}
-                                              isPositionedRight={true}
-                                              isRounded={false}
-                                              isSecondary={false}
-                                              onClick={[Function]}
-                                              size={null}
-                                            >
-                                              <Button
-                                                as="button"
-                                                circular={false}
-                                                className="has-shadow"
-                                                compact={false}
-                                                disabled={false}
-                                                floated="right"
-                                                loading={false}
-                                                onClick={[Function]}
-                                                secondary={false}
-                                                size={null}
-                                              >
-                                                <button
-                                                  className="ui right floated button has-shadow"
-                                                  onClick={[Function]}
-                                                  role="button"
-                                                >
-                                                  123
-                                                </button>
-                                              </Button>
-                                            </Button>
-                                          </div>
-                                        </div>
-                                      </GridColumn>
-                                    </GridColumn>
-                                  </div>
-                                </GridRow>
-                              </GridRow>
-                            </div>
-                          </Grid>
-                        </Grid>
-                      </div>
-                    </GridColumn>
-                  </GridColumn>
-                  <GridColumn
-                    className="discount-section"
-                    textAlign="center"
-                    verticalAlign="middle"
-                    verticalAlignContent="top"
-                    width={12}
-                  >
-                    <GridColumn
-                      className="discount-section"
-                      textAlign="center"
-                      verticalAlign="top"
-                      width={12}
-                    >
-                      <div
-                        className="center aligned top aligned twelve wide column discount-section"
-                      >
-                        <Statistic
-                          size="small"
-                        >
-                          <div
-                            className="ui small statistic"
-                          >
-                            <StatisticLabel>
-                              <div
-                                className="label"
-                              >
-                                <Paragraph
-                                  size="medium"
-                                  weight="heavy"
-                                >
-                                  <p
-                                    className="heavy"
-                                  >
-                                    Save up to
-                                  </p>
-                                </Paragraph>
-                              </div>
-                            </StatisticLabel>
-                            <StatisticValue>
-                              <div
-                                className="value"
-                              >
-                                <Heading
-                                  isColorInverted={false}
-                                  size="large"
-                                  textAlign={null}
-                                >
-                                  <Header
-                                    as="h2"
-                                    inverted={false}
-                                    textAlign={null}
-                                  >
-                                    <h2
-                                      className="ui header"
-                                    >
-                                      100%
-                                    </h2>
-                                  </Header>
-                                </Heading>
-                              </div>
-                            </StatisticValue>
-                          </div>
-                        </Statistic>
-                      </div>
-                    </GridColumn>
-                  </GridColumn>
-                </div>
-              </GridRow>
-            </GridRow>
-          </div>
-        </Grid>
-      </Grid>
-    </div>
-  </Segment>
-</Promotion>
-`;
-
 exports[`The \`Promotion\` component should have the right structure 1`] = `
 <Promotion
   backgroundImage="testimage"
@@ -329,7 +9,6 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
   discountCodeParagraphText="Use the coupon code"
   discountHoverButtonText="Book Now with Discount"
   headingText="Hello World!"
-  isDisplayedStacked={false}
   onClick={[Function]}
   placeholderBackgroundImage={null}
 >
@@ -370,16 +49,22 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                 >
                   <GridColumn
                     className="content-section"
+                    computer={9}
+                    mobile={12}
+                    tablet={9}
                     verticalAlignContent="top"
-                    width={9}
+                    width={null}
                   >
                     <GridColumn
                       className="content-section"
+                      computer={9}
+                      mobile={12}
+                      tablet={9}
                       verticalAlign="top"
-                      width={9}
+                      width={null}
                     >
                       <div
-                        className="top aligned nine wide column content-section"
+                        className="top aligned nine wide computer twelve wide mobile nine wide tablet column content-section"
                       >
                         <ResponsiveImage
                           alternativeText="Image Widget"
@@ -391,13 +76,13 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                           imageWidth={null}
                           isAvatar={false}
                           isCircular={false}
-                          isFluid={true}
+                          isFluid={false}
                           label={null}
                           placeholderImageUrl={null}
                           sources={Array []}
                         >
                           <picture
-                            className="responsive-image is-fluid"
+                            className="responsive-image"
                             role="figure"
                           >
                             <Image
@@ -405,19 +90,15 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                               as="img"
                               avatar={false}
                               fluid={true}
-                              height={null}
                               src="testimage"
                               title="Image Title"
                               ui={true}
-                              width={null}
                             >
                               <img
                                 alt="Image Widget"
                                 className="ui fluid image"
-                                height={null}
                                 src="testimage"
                                 title="Image Title"
-                                width={null}
                               />
                             </Image>
                           </picture>
@@ -444,182 +125,347 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                   <div
                                     className="left aligned top aligned row"
                                   >
-                                    <GridColumn
-                                      textAlign="left"
-                                      verticalAlignContent="top"
-                                      width={12}
+                                    <ShowOnDesktop
+                                      parent={[Function]}
+                                      parentProps={
+                                        Object {
+                                          "textAlign": "left",
+                                          "width": 12,
+                                        }
+                                      }
                                     >
                                       <GridColumn
+                                        className="show-on-desktop"
                                         textAlign="left"
-                                        verticalAlign="top"
+                                        verticalAlignContent="top"
                                         width={12}
                                       >
-                                        <div
-                                          className="left aligned top aligned twelve wide column"
+                                        <GridColumn
+                                          className="show-on-desktop"
+                                          textAlign="left"
+                                          verticalAlign="top"
+                                          width={12}
                                         >
-                                          <Heading
-                                            isColorInverted={false}
-                                            size="medium"
-                                            textAlign={null}
+                                          <div
+                                            className="left aligned top aligned twelve wide column show-on-desktop"
                                           >
-                                            <Header
-                                              as="h3"
-                                              inverted={false}
+                                            <Heading
+                                              isColorInverted={false}
+                                              size="medium"
                                               textAlign={null}
                                             >
-                                              <h3
-                                                className="ui header"
+                                              <Header
+                                                as="h3"
+                                                inverted={false}
+                                                textAlign={null}
                                               >
-                                                Hello World!
-                                              </h3>
-                                            </Header>
-                                          </Heading>
-                                        </div>
+                                                <h3
+                                                  className="ui header"
+                                                >
+                                                  Hello World!
+                                                </h3>
+                                              </Header>
+                                            </Heading>
+                                          </div>
+                                        </GridColumn>
                                       </GridColumn>
-                                    </GridColumn>
+                                    </ShowOnDesktop>
+                                    <ShowOnMobile
+                                      parent={[Function]}
+                                      parentProps={
+                                        Object {
+                                          "textAlign": "center",
+                                          "width": 12,
+                                        }
+                                      }
+                                    >
+                                      <GridColumn
+                                        className="show-on-mobile"
+                                        textAlign="center"
+                                        verticalAlignContent="top"
+                                        width={12}
+                                      >
+                                        <GridColumn
+                                          className="show-on-mobile"
+                                          textAlign="center"
+                                          verticalAlign="top"
+                                          width={12}
+                                        >
+                                          <div
+                                            className="center aligned top aligned twelve wide column show-on-mobile"
+                                          >
+                                            <Heading
+                                              isColorInverted={false}
+                                              size="medium"
+                                              textAlign={null}
+                                            >
+                                              <Header
+                                                as="h3"
+                                                inverted={false}
+                                                textAlign={null}
+                                              >
+                                                <h3
+                                                  className="ui header"
+                                                >
+                                                  Hello World!
+                                                </h3>
+                                              </Header>
+                                            </Heading>
+                                          </div>
+                                        </GridColumn>
+                                      </GridColumn>
+                                    </ShowOnMobile>
                                   </div>
                                 </GridRow>
                               </GridRow>
-                              <GridRow
-                                className="book-now-button-container"
-                                horizontalAlignContent="left"
+                              <ShowOnDesktop
+                                parent={[Function]}
+                                parentProps={
+                                  Object {
+                                    "className": "book-now-button-container",
+                                  }
+                                }
                               >
                                 <GridRow
-                                  className="book-now-button-container"
-                                  textAlign="left"
+                                  className="book-now-button-container show-on-desktop"
+                                  horizontalAlignContent="left"
                                 >
-                                  <div
-                                    className="left aligned row book-now-button-container"
+                                  <GridRow
+                                    className="book-now-button-container show-on-desktop"
+                                    textAlign="left"
                                   >
-                                    <GridColumn
-                                      textAlign="center"
-                                      verticalAlignContent="top"
-                                      width={12}
+                                    <div
+                                      className="left aligned row book-now-button-container show-on-desktop"
                                     >
                                       <GridColumn
                                         textAlign="center"
-                                        verticalAlign="top"
+                                        verticalAlignContent="top"
                                         width={12}
                                       >
-                                        <div
-                                          className="center aligned top aligned twelve wide column"
+                                        <GridColumn
+                                          textAlign="center"
+                                          verticalAlign="top"
+                                          width={12}
                                         >
-                                          <Button
-                                            hasShadow={false}
-                                            icon={null}
-                                            isCompact={false}
-                                            isDisabled={false}
-                                            isLoading={false}
-                                            isPositionedRight={false}
-                                            isRounded={true}
-                                            isSecondary={false}
-                                            onClick={[Function]}
-                                            size={null}
+                                          <div
+                                            className="center aligned top aligned twelve wide column"
                                           >
                                             <Button
-                                              as="button"
-                                              circular={true}
-                                              className=""
-                                              compact={false}
-                                              disabled={false}
-                                              floated="left"
-                                              loading={false}
-                                              onClick={[Function]}
-                                              secondary={false}
-                                              size={null}
-                                            >
-                                              <button
-                                                className="ui circular left floated button"
-                                                onClick={[Function]}
-                                                role="button"
-                                              >
-                                                Book Now with Discount
-                                              </button>
-                                            </Button>
-                                          </Button>
-                                        </div>
-                                      </GridColumn>
-                                    </GridColumn>
-                                  </div>
-                                </GridRow>
-                              </GridRow>
-                              <GridRow
-                                horizontalAlignContent="left"
-                                verticalAlign="bottom"
-                              >
-                                <GridRow
-                                  textAlign="left"
-                                  verticalAlign="bottom"
-                                >
-                                  <div
-                                    className="left aligned bottom aligned row"
-                                  >
-                                    <GridColumn
-                                      floated="right"
-                                      textAlign="right"
-                                      verticalAlignContent="top"
-                                      width={6}
-                                    >
-                                      <GridColumn
-                                        floated="right"
-                                        textAlign="right"
-                                        verticalAlign="top"
-                                        width={6}
-                                      >
-                                        <div
-                                          className="right aligned right floated top aligned six wide column"
-                                        >
-                                          <div>
-                                            <Paragraph
-                                              size="tiny"
-                                              weight={null}
-                                            >
-                                              <p
-                                                className="tiny"
-                                              >
-                                                Use the coupon code
-                                              </p>
-                                            </Paragraph>
-                                            <Button
-                                              hasShadow={true}
+                                              hasShadow={false}
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
                                               isLoading={false}
-                                              isPositionedRight={true}
-                                              isRounded={false}
+                                              isPositionedRight={false}
+                                              isRounded={true}
                                               isSecondary={false}
                                               onClick={[Function]}
                                               size={null}
                                             >
                                               <Button
                                                 as="button"
-                                                circular={false}
-                                                className="has-shadow"
+                                                circular={true}
+                                                className=""
                                                 compact={false}
                                                 disabled={false}
-                                                floated="right"
+                                                floated="left"
                                                 loading={false}
                                                 onClick={[Function]}
                                                 secondary={false}
                                                 size={null}
                                               >
                                                 <button
-                                                  className="ui right floated button has-shadow"
+                                                  className="ui circular left floated button"
                                                   onClick={[Function]}
                                                   role="button"
                                                 >
-                                                  123
+                                                  Book Now with Discount
                                                 </button>
                                               </Button>
                                             </Button>
                                           </div>
-                                        </div>
+                                        </GridColumn>
                                       </GridColumn>
-                                    </GridColumn>
-                                  </div>
+                                    </div>
+                                  </GridRow>
                                 </GridRow>
-                              </GridRow>
+                              </ShowOnDesktop>
+                              <ShowOnMobile
+                                parent={[Function]}
+                                parentProps={
+                                  Object {
+                                    "verticalAlign": "top",
+                                  }
+                                }
+                              >
+                                <GridRow
+                                  className="show-on-mobile"
+                                  horizontalAlignContent="left"
+                                  verticalAlign="top"
+                                >
+                                  <GridRow
+                                    className="show-on-mobile"
+                                    textAlign="left"
+                                    verticalAlign="top"
+                                  >
+                                    <div
+                                      className="left aligned top aligned row show-on-mobile"
+                                    >
+                                      <GridColumn
+                                        floated="right"
+                                        textAlign="center"
+                                        verticalAlignContent="top"
+                                        width={12}
+                                      >
+                                        <GridColumn
+                                          floated="right"
+                                          textAlign="center"
+                                          verticalAlign="top"
+                                          width={12}
+                                        >
+                                          <div
+                                            className="center aligned right floated top aligned twelve wide column"
+                                          >
+                                            <div>
+                                              <Paragraph
+                                                size="tiny"
+                                                weight={null}
+                                              >
+                                                <p
+                                                  className="tiny"
+                                                >
+                                                  Use the coupon code
+                                                </p>
+                                              </Paragraph>
+                                              <Button
+                                                hasShadow={true}
+                                                icon={null}
+                                                isCompact={false}
+                                                isDisabled={false}
+                                                isLoading={false}
+                                                isPositionedRight={true}
+                                                isRounded={false}
+                                                isSecondary={false}
+                                                onClick={[Function]}
+                                                size={null}
+                                              >
+                                                <Button
+                                                  as="button"
+                                                  circular={false}
+                                                  className="has-shadow"
+                                                  compact={false}
+                                                  disabled={false}
+                                                  floated="right"
+                                                  loading={false}
+                                                  onClick={[Function]}
+                                                  secondary={false}
+                                                  size={null}
+                                                >
+                                                  <button
+                                                    className="ui right floated button has-shadow"
+                                                    onClick={[Function]}
+                                                    role="button"
+                                                  >
+                                                    123
+                                                  </button>
+                                                </Button>
+                                              </Button>
+                                            </div>
+                                          </div>
+                                        </GridColumn>
+                                      </GridColumn>
+                                    </div>
+                                  </GridRow>
+                                </GridRow>
+                              </ShowOnMobile>
+                              <ShowOnDesktop
+                                parent={[Function]}
+                                parentProps={
+                                  Object {
+                                    "verticalAlign": "bottom",
+                                  }
+                                }
+                              >
+                                <GridRow
+                                  className="show-on-desktop"
+                                  horizontalAlignContent="left"
+                                  verticalAlign="bottom"
+                                >
+                                  <GridRow
+                                    className="show-on-desktop"
+                                    textAlign="left"
+                                    verticalAlign="bottom"
+                                  >
+                                    <div
+                                      className="left aligned bottom aligned row show-on-desktop"
+                                    >
+                                      <GridColumn
+                                        floated="right"
+                                        textAlign="right"
+                                        verticalAlignContent="top"
+                                        width={6}
+                                      >
+                                        <GridColumn
+                                          floated="right"
+                                          textAlign="right"
+                                          verticalAlign="top"
+                                          width={6}
+                                        >
+                                          <div
+                                            className="right aligned right floated top aligned six wide column"
+                                          >
+                                            <div>
+                                              <Paragraph
+                                                size="tiny"
+                                                weight={null}
+                                              >
+                                                <p
+                                                  className="tiny"
+                                                >
+                                                  Use the coupon code
+                                                </p>
+                                              </Paragraph>
+                                              <Button
+                                                hasShadow={true}
+                                                icon={null}
+                                                isCompact={false}
+                                                isDisabled={false}
+                                                isLoading={false}
+                                                isPositionedRight={true}
+                                                isRounded={false}
+                                                isSecondary={false}
+                                                onClick={[Function]}
+                                                size={null}
+                                              >
+                                                <Button
+                                                  as="button"
+                                                  circular={false}
+                                                  className="has-shadow"
+                                                  compact={false}
+                                                  disabled={false}
+                                                  floated="right"
+                                                  loading={false}
+                                                  onClick={[Function]}
+                                                  secondary={false}
+                                                  size={null}
+                                                >
+                                                  <button
+                                                    className="ui right floated button has-shadow"
+                                                    onClick={[Function]}
+                                                    role="button"
+                                                  >
+                                                    123
+                                                  </button>
+                                                </Button>
+                                              </Button>
+                                            </div>
+                                          </div>
+                                        </GridColumn>
+                                      </GridColumn>
+                                    </div>
+                                  </GridRow>
+                                </GridRow>
+                              </ShowOnDesktop>
                             </div>
                           </Grid>
                         </Grid>
@@ -628,19 +474,25 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                   </GridColumn>
                   <GridColumn
                     className="discount-section"
+                    computer={3}
+                    mobile={12}
+                    tablet={3}
                     textAlign="center"
                     verticalAlign="middle"
                     verticalAlignContent="top"
-                    width={3}
+                    width={null}
                   >
                     <GridColumn
                       className="discount-section"
+                      computer={3}
+                      mobile={12}
+                      tablet={3}
                       textAlign="center"
                       verticalAlign="top"
-                      width={3}
+                      width={null}
                     >
                       <div
-                        className="center aligned top aligned three wide column discount-section"
+                        className="center aligned top aligned three wide computer twelve wide mobile three wide tablet column discount-section"
                       >
                         <Statistic
                           size="small"

@@ -86,3 +86,27 @@ const validation = {
   validation={validation}
 />
 ```
+
+### States
+
+#### Success
+
+```jsx
+<CallMeBack
+  successMessage="The call me back form has been successfully submitted"
+  propertyOptions={[]}
+  timeOptions={[]}
+  timeZoneOptions={[]}
+/>
+```
+
+#### Error
+
+```jsx
+<CallMeBack
+  errorMessage="Request Failed. Please try again."
+  propertyOptions={[]}
+  timeOptions={[]}
+  timeZoneOptions={[]}
+/>
+```

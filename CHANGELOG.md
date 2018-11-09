@@ -1,3 +1,58 @@
+## [1.78.1](https://github.com/lodgify/lodgify-ui/compare/v1.78.0...v1.78.1) (2018-11-08)
+
+
+### Bug Fixes
+
+* **Dropdown:** implement ellipsis and width limiting styles ([2983c37](https://github.com/lodgify/lodgify-ui/commit/2983c37))
+* **Input:** implement ellipsis and width limiting styles ([9f83f95](https://github.com/lodgify/lodgify-ui/commit/9f83f95))
+
+# [1.78.0](https://github.com/lodgify/lodgify-ui/compare/v1.77.0...v1.78.0) (2018-11-07)
+
+
+### Features
+
+* **Promotion:** make component responsive ([804de5d](https://github.com/lodgify/lodgify-ui/commit/804de5d))
+
+# [1.77.0](https://github.com/lodgify/lodgify-u/compare/v1.76.0...v1.77.0) (2018-11-05)
+
+
+### Features
+
+* **CallMeBack:** implement success and error message props ([738a9a2](https://github.com/lodgify/lodgify-u/commit/738a9a2))
+* **Contact:** implement error and success message props ([ffbdd1d](https://github.com/lodgify/lodgify-u/commit/ffbdd1d))
+* **OwnerLogin:** implement success and error message props for form and forgot password form ([d8c420f](https://github.com/lodgify/lodgify-u/commit/d8c420f))
+* **OwnerSignup:** implement the success and error message props ([0c362e5](https://github.com/lodgify/lodgify-u/commit/0c362e5))
+
+# [1.76.0](https://github.com/lodgify/lodgify-u/compare/v1.75.0...v1.76.0) (2018-11-05)
+
+
+### Bug Fixes
+
+* **FullBleed:** pass isFluid to ResponsiveImage ([939d50a](https://github.com/lodgify/lodgify-u/commit/939d50a))
+* **ResponsiveImage:** expose imageWidth and imageHeight props ([71c44fd](https://github.com/lodgify/lodgify-u/commit/71c44fd))
+
+
+### Features
+
+* **FeaturedProperty:** expose placeholderImageUrl and refactor to use ResponsiveImage ([fec39a7](https://github.com/lodgify/lodgify-u/commit/fec39a7))
+* **FeaturedRoomType:** expose placeholderImageProp and refactor to use ResponsiveImage ([524faa8](https://github.com/lodgify/lodgify-u/commit/524faa8))
+* **Gallery:** expose imageHeight and imageWidth for ResponsiveImage ([ac26089](https://github.com/lodgify/lodgify-u/commit/ac26089))
+* **Pictures:** expose imageHeight and imageWidth for Gallery to consume ([9b30b9f](https://github.com/lodgify/lodgify-u/commit/9b30b9f))
+* **Promotion:** expose imageHeight and imageWidth for ResponsiveImage to consume ([edf5d56](https://github.com/lodgify/lodgify-u/commit/edf5d56))
+* **ResponsiveImage:** change default value of isFluid prop ([6e5b53f](https://github.com/lodgify/lodgify-u/commit/6e5b53f))
+
+# [1.75.0](https://github.com/lodgify/lodgify-u/compare/v1.74.1...v1.75.0) (2018-11-05)
+
+
+### Bug Fixes
+
+* **PropertyPageSearchBar:** improve markup type props and indentation ([fffb6fb](https://github.com/lodgify/lodgify-u/commit/fffb6fb))
+
+
+### Features
+
+* **Form:** add support for a success and error message ([7dc0c21](https://github.com/lodgify/lodgify-u/commit/7dc0c21))
+
 ## [1.74.1](https://github.com/lodgify/lodgify-u/compare/v1.74.0...v1.74.1) (2018-11-02)
 
 

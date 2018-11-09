@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`getAspectRatioAsPercentage\` if both arguments are not numbers should return the right value 1`] = `undefined`;
+
+exports[`\`getAspectRatioAsPercentage\` if both arguments are numbers should return the right value 1`] = `56.25`;
+
+exports[`\`getAspectRatioAsPercentage\` if height is not a number should return the right value 1`] = `undefined`;
+
+exports[`\`getAspectRatioAsPercentage\` if width is not a number should return the right value 1`] = `undefined`;

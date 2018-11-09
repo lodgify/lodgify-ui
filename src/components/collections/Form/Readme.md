@@ -198,3 +198,31 @@ const dropdownOptions = [{
   />
 </Form>
 ```
+
+### States
+
+#### Success
+
+```jsx
+<Form
+  headingText="Welcome"
+  submitButtonText="Sign up"
+  successMessage="An email has been sent to your account to complete the signup process"
+>
+  <TextInput label="Name" name="name" />
+  <TextInput label="Password" name="password" type="password"/>
+</Form>
+```
+
+#### Error
+
+```jsx
+<Form
+  headingText="Welcome"
+  submitButtonText="Sign up"
+  errorMessage="Request Failed. Please try again."
+>
+  <TextInput label="Name" name="name" />
+  <TextInput label="Password" name="password" type="password"/>
+</Form>
+```

@@ -128,19 +128,15 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                 as="img"
                 avatar={false}
                 fluid={true}
-                height={null}
                 src="url"
                 title="Image Title"
                 ui={true}
-                width={null}
               >
                 <img
                   alt="Image Widget"
                   className="ui fluid image"
-                  height={null}
                   src="url"
                   title="Image Title"
-                  width={null}
                 />
               </Image>
             </picture>

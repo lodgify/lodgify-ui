@@ -25,19 +25,15 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
       as="img"
       avatar={false}
       fluid={true}
-      height={null}
       src=""
       title="ResponsiveImage title"
       ui={true}
-      width={null}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
-        height={null}
         src=""
         title="ResponsiveImage title"
-        width={null}
       >
         <Label
           content="Image not found!"
@@ -80,19 +76,15 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
       as="img"
       avatar={false}
       fluid={true}
-      height={null}
       src=""
       title="ResponsiveImage title"
       ui={true}
-      width={null}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
-        height={null}
         src=""
         title="ResponsiveImage title"
-        width={null}
       >
         <Label
           content="Image not found!"
@@ -143,39 +135,33 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` and \`props.imageU
   >
     <div
       className="image-with-placeholder-container has-blurred-children"
-      style={
-        Object {
-          "height": null,
-          "width": null,
-        }
-      }
     >
       <Image
         alt="Alternative Text 😝"
         as="img"
         avatar={false}
         fluid={true}
-        height={null}
         onLoad={[Function]}
         src="yooo"
         title="ResponsiveImage title"
         ui={true}
-        width={null}
       >
         <img
           alt="Alternative Text 😝"
           className="ui fluid image"
-          height={null}
           onLoad={[Function]}
           src="yooo"
           title="ResponsiveImage title"
-          width={null}
         />
       </Image>
-      <img
-        className="placeholder-image"
-        src="ayyy"
-      />
+      <div
+        className="placeholder-image-container"
+      >
+        <img
+          className="placeholder-image ui image fluid"
+          src="ayyy"
+        />
+      </div>
     </div>
   </picture>
 </ResponsiveImage>
@@ -207,19 +193,15 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should h
       as="img"
       avatar={false}
       fluid={true}
-      height={null}
       src=""
       title="ResponsiveImage title"
       ui={true}
-      width={null}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
-        height={null}
         src=""
         title="ResponsiveImage title"
-        width={null}
       >
         <Label
           content="Image not found!"
@@ -283,19 +265,15 @@ exports[`<ResponsiveImage /> if \`props.sources\` is passed should have the righ
       as="img"
       avatar={false}
       fluid={true}
-      height={null}
       src=""
       title="ResponsiveImage title"
       ui={true}
-      width={null}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
-        height={null}
         src=""
         title="ResponsiveImage title"
-        width={null}
       >
         <Label
           content="Image not found!"

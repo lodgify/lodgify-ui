@@ -35,6 +35,7 @@ export const Component = ({
   commentsInputLabel,
   departureDateInputLabel,
   emailInputLabel,
+  errorMessage,
   guestsInputLabel,
   headingText,
   nameInputLabel,
@@ -46,12 +47,15 @@ export const Component = ({
   roomInputLabel,
   roomOptions,
   submitButtonText,
+  successMessage,
   validation,
 }) => (
   <Form
+    errorMessage={errorMessage}
     headingText={headingText}
     onSubmit={onSubmit}
     submitButtonText={submitButtonText}
+    successMessage={successMessage}
     validation={validation}
   >
     <InputGroup>
@@ -105,6 +109,7 @@ Component.defaultProps = {
   commentsInputLabel: COMMENTS,
   departureDateInputLabel: DEPARTURE,
   emailInputLabel: EMAIL,
+  errorMessage: '',
   guestsInputLabel: GUESTS,
   headingText: CONTACT,
   nameInputLabel: NAME,
@@ -116,6 +121,7 @@ Component.defaultProps = {
   roomInputLabel: ROOM,
   roomOptions: null,
   submitButtonText: SEND,
+  successMessage: '',
   validation: {},
 };
 
@@ -132,6 +138,8 @@ Component.propTypes = {
   departureDateInputLabel: PropTypes.string,
   /** The label for the email input.*/
   emailInputLabel: PropTypes.string,
+  /** The message to display when the form has an error. */
+  errorMessage: PropTypes.string,
   /** The label for the guests input.*/
   guestsInputLabel: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
@@ -147,7 +155,6 @@ Component.propTypes = {
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
-
   /** The label for the phone input.*/
   phoneInputLabel: PropTypes.string,
   /** The label for the property input.*/
@@ -182,6 +189,8 @@ Component.propTypes = {
   ),
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
+  /** The message to display when the form is successful. */
+  successMessage: PropTypes.string,
   /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
   validation: PropTypes.shape({
     captcha: PropTypes.object,

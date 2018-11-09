@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Statistic, Segment } from 'semantic-ui-react';
-import getClassNames from 'classnames';
 
+import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 import {
   BOOK_NOW_DISCOUNT,
@@ -22,55 +23,60 @@ import { Button } from 'elements/Button';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   backgroundImage,
+  backgroundImageHeight,
+  backgroundImageWidth,
   discountAmount,
   discountAmountParagraphText,
   discountCode,
   discountCodeParagraphText,
   discountHoverButtonText,
   headingText,
-  isDisplayedStacked,
   onClick,
   placeholderBackgroundImage,
 }) => (
-  <Segment
-    basic
-    className={getClassNames('is-promotion', {
-      'display-stacked': isDisplayedStacked,
-    })}
-    onClick={onClick}
-  >
+  <Segment basic className="is-promotion" onClick={onClick}>
     <Grid className="first-grid" stackable stretched>
       <GridRow verticalAlign="middle">
         <GridColumn
           className="content-section"
-          width={isDisplayedStacked ? 12 : 9}
+          computer={9}
+          mobile={12}
+          tablet={9}
         >
           <ResponsiveImage
+            imageHeight={backgroundImageHeight}
             imageUrl={backgroundImage}
+            imageWidth={backgroundImageWidth}
             placeholderImageUrl={placeholderBackgroundImage}
           />
           <Grid padded>
             <GridRow verticalAlign="top">
-              <GridColumn
-                textAlign={isDisplayedStacked ? 'center' : 'left'}
-                width={12}
+              <ShowOnDesktop
+                parent={GridColumn}
+                parentProps={{ textAlign: 'left', width: 12 }}
               >
                 <Heading>{headingText}</Heading>
-              </GridColumn>
-            </GridRow>
-            {!isDisplayedStacked && (
-              <GridRow className="book-now-button-container">
-                <GridColumn textAlign="center" width={12}>
-                  <Button isRounded>{discountHoverButtonText}</Button>
-                </GridColumn>
-              </GridRow>
-            )}
-            <GridRow verticalAlign={isDisplayedStacked ? 'top' : 'bottom'}>
-              <GridColumn
-                floated="right"
-                textAlign={isDisplayedStacked ? 'center' : 'right'}
-                width={isDisplayedStacked ? 12 : 6}
+              </ShowOnDesktop>
+              <ShowOnMobile
+                parent={GridColumn}
+                parentProps={{ textAlign: 'center', width: 12 }}
               >
+                <Heading>{headingText}</Heading>
+              </ShowOnMobile>
+            </GridRow>
+            <ShowOnDesktop
+              parent={GridRow}
+              parentProps={{ className: 'book-now-button-container' }}
+            >
+              <GridColumn textAlign="center" width={12}>
+                <Button isRounded>{discountHoverButtonText}</Button>
+              </GridColumn>
+            </ShowOnDesktop>
+            <ShowOnMobile
+              parent={GridRow}
+              parentProps={{ verticalAlign: 'top' }}
+            >
+              <GridColumn floated="right" textAlign="center" width={12}>
                 <div>
                   <Paragraph size="tiny">{discountCodeParagraphText}</Paragraph>
                   <Button hasShadow isPositionedRight>
@@ -78,14 +84,29 @@ export const Component = ({
                   </Button>
                 </div>
               </GridColumn>
-            </GridRow>
+            </ShowOnMobile>
+            <ShowOnDesktop
+              parent={GridRow}
+              parentProps={{ verticalAlign: 'bottom' }}
+            >
+              <GridColumn floated="right" textAlign="right" width={6}>
+                <div>
+                  <Paragraph size="tiny">{discountCodeParagraphText}</Paragraph>
+                  <Button hasShadow isPositionedRight>
+                    {discountCode}
+                  </Button>
+                </div>
+              </GridColumn>
+            </ShowOnDesktop>
           </Grid>
         </GridColumn>
         <GridColumn
           className="discount-section"
+          computer={3}
+          mobile={12}
+          tablet={3}
           textAlign="center"
           verticalAlign="middle"
-          width={isDisplayedStacked ? 12 : 3}
         >
           <Statistic size="small">
             <Statistic.Label>
@@ -106,31 +127,34 @@ export const Component = ({
 Component.displayName = 'Promotion';
 
 Component.defaultProps = {
+  backgroundImageHeight: undefined,
+  backgroundImageWidth: undefined,
   discountAmountParagraphText: SAVE_UP_TO,
   discountCodeParagraphText: USE_COUPON_CODE,
   discountHoverButtonText: BOOK_NOW_DISCOUNT,
-  isDisplayedStacked: false,
   placeholderBackgroundImage: null,
 };
 
 Component.propTypes = {
-  /** The background image */
+  /** The background image. */
   backgroundImage: PropTypes.string.isRequired,
-  /** The discount amount to be displayed */
+  /** The natural height of the background image in px. */
+  backgroundImageHeight: PropTypes.number,
+  /** The natural width of the background image in px. */
+  backgroundImageWidth: PropTypes.number,
+  /** The discount amount to be displayed. */
   discountAmount: PropTypes.string.isRequired,
-  /** The text to display above the discount amount */
+  /** The text to display above the discount amount. */
   discountAmountParagraphText: PropTypes.string,
-  /** The discount code to be displayed */
+  /** The discount code to be displayed. */
   discountCode: PropTypes.string.isRequired,
-  /** The text to display above the discount code */
+  /** The text to display above the discount code. */
   discountCodeParagraphText: PropTypes.string,
-  /** The text for the button that shows on hover */
+  /** The text for the button that shows on hover. */
   discountHoverButtonText: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string.isRequired,
-  /** Is the component displayed with each item above one another */
-  isDisplayedStacked: PropTypes.bool,
-  /** The function to call when the component is clicked */
+  /** The function to call when the component is clicked. */
   onClick: PropTypes.func.isRequired,
   /** The background placeholder image. */
   placeholderBackgroundImage: PropTypes.string,

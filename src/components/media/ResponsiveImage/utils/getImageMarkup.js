@@ -24,17 +24,14 @@ export const getImageMarkup = ({
   imageUrl,
   imageWidth,
   isAvatar,
-  isFluid,
   /* eslint-enable react/prop-types */
 }) => (
   <Image
     alt={alternativeText}
     avatar={isAvatar}
-    fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
-    height={imageHeight}
+    fluid={getIsFluid(imageWidth, imageHeight)}
     src={imageUrl}
     title={imageTitle}
-    width={imageWidth}
   >
     {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
   </Image>

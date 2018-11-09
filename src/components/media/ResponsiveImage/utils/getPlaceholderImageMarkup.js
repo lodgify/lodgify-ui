@@ -3,6 +3,7 @@ import { Image, Label } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
 import { getIsFluid } from './getIsFluid';
+import { getAspectRatioPlaceholderMarkup } from './getAspectRatioPlaceholderMarkup';
 
 /**
  * @param  {Object}        imageProps
@@ -29,7 +30,6 @@ export const getPlaceholderImageMarkup = ({
   imageUrl,
   imageWidth,
   isAvatar,
-  isFluid,
   isImageLoaded,
   placeholderImageUrl,
   /* eslint-enable react/prop-types */
@@ -38,22 +38,26 @@ export const getPlaceholderImageMarkup = ({
     className={getClassNames('image-with-placeholder-container', {
       'has-blurred-children': !isImageLoaded,
     })}
-    style={{ height: imageHeight, width: imageWidth }}
   >
+    {getAspectRatioPlaceholderMarkup(imageWidth, imageHeight)}
     <Image
       alt={alternativeText}
       avatar={isAvatar}
-      fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
-      height={imageHeight}
+      fluid={getIsFluid(imageWidth, imageHeight)}
       onLoad={handleImageLoad}
       src={imageUrl}
       title={imageTitle}
-      width={imageWidth}
     >
       {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
     </Image>
-    {!isImageLoaded && (
-      <img className="placeholder-image" src={placeholderImageUrl} />
-    )}
+    <div className="placeholder-image-container">
+      <img
+        className={getClassNames('placeholder-image', {
+          'ui image fluid': getIsFluid(imageWidth, imageHeight),
+        })}
+        src={placeholderImageUrl}
+      />
+      {!imageUrl && <Label content={imageNotFoundLabelText} />}
+    </div>
   </div>
 );

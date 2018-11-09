@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`getAspectRatioPlaceholderMarkup\` by default should return the right structure 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "paddingBottom": "20%",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`\`getAspectRatioPlaceholderMarkup\` if \`imageHeight === undefined\` should return the right structure 1`] = `<div />`;
+
+exports[`\`getAspectRatioPlaceholderMarkup\` if \`imageWidth === undefined\` should return the right structure 1`] = `<div />`;
+
+exports[`\`getAspectRatioPlaceholderMarkup\` if both arguments are undefined should return the right structure 1`] = `<div />`;

@@ -20,16 +20,20 @@ import { getForgotPasswordFormMarkup } from './utils/getForgotPasswordFormMarkup
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   emailInputLabel,
+  errorMessage,
   forgotPasswordEmailInputLabel,
+  forgotPasswordErrorMessage,
   forgotPasswordHeadingText,
   forgotPasswordModalTriggerText,
   forgotPasswordSubmitButtonText,
+  forgotPasswordSuccessMessage,
   forgotPasswordValidation,
-  submitButtonText,
   headingText,
   onForgotPasswordSubmit,
   onSubmit,
   passwordInputLabel,
+  submitButtonText,
+  successMessage,
   validation,
 }) => (
   <Form
@@ -40,12 +44,16 @@ export const Component = ({
         forgotPasswordEmailInputLabel,
         forgotPasswordHeadingText,
         forgotPasswordModalTriggerText,
-        forgotPasswordValidation
+        forgotPasswordValidation,
+        forgotPasswordErrorMessage,
+        forgotPasswordSuccessMessage
       ),
     }}
+    errorMessage={errorMessage}
     headingText={headingText}
     onSubmit={onSubmit}
     submitButtonText={submitButtonText}
+    successMessage={successMessage}
     validation={validation}
   >
     <TextInput label={emailInputLabel} name="email" />
@@ -57,30 +65,40 @@ Component.displayName = 'OwnerLogin';
 
 Component.defaultProps = {
   emailInputLabel: EMAIL,
+  errorMessage: '',
   forgotPasswordEmailInputLabel: EMAIL,
+  forgotPasswordErrorMessage: '',
   forgotPasswordHeadingText: FORGOT_PASSWORD,
   forgotPasswordModalTriggerText: FORGOT_PASSWORD,
   forgotPasswordSubmitButtonText: SEND_RESET,
+  forgotPasswordSuccessMessage: '',
   forgotPasswordValidation: {},
-  submitButtonText: LOGIN,
   headingText: OWNER_LOGIN,
   onForgotPasswordSubmit: Function.prototype,
   onSubmit: Function.prototype,
   passwordInputLabel: PASSWORD,
+  submitButtonText: LOGIN,
+  successMessage: '',
   validation: {},
 };
 
 Component.propTypes = {
   /** The label for the email input. */
   emailInputLabel: PropTypes.string,
+  /** The message to display when the form has an error. */
+  errorMessage: PropTypes.string,
   /** The label for the email input on the forgot password form. */
   forgotPasswordEmailInputLabel: PropTypes.string,
+  /** The message to display when the forgot password form has an error. */
+  forgotPasswordErrorMessage: PropTypes.string,
   /** The text to display as a heading at the top of the forgot password form. */
   forgotPasswordHeadingText: PropTypes.string,
   /** The text for the forgot password form modal trigger. */
   forgotPasswordModalTriggerText: PropTypes.string,
-  /** The text to display on the submit button on the forgot password form.. */
+  /** The text to display on the submit button on the forgot password form. */
   forgotPasswordSubmitButtonText: PropTypes.string,
+  /** The message to display when the forgot password form is successful. */
+  forgotPasswordSuccessMessage: PropTypes.string,
   /** Settings for validating inputs on the forgot password form. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
   forgotPasswordValidation: PropTypes.shape({
     email: PropTypes.object,
@@ -99,6 +117,8 @@ Component.propTypes = {
   passwordInputLabel: PropTypes.string,
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
+  /** The message to display when the form is successful. */
+  successMessage: PropTypes.string,
   /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
   validation: PropTypes.shape({
     email: PropTypes.object,
