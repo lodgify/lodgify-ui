@@ -19,8 +19,11 @@ import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
+    shouldImageLoad: false,
     isImageLoaded: false,
   };
+
+  componentDidMount = () => this.setState({ shouldImageLoad: true });
 
   handleImageLoad = () => this.setState({ isImageLoaded: true });
 
@@ -39,6 +42,7 @@ export class Component extends PureComponent {
       ...this.props,
       isImageLoaded: this.state.isImageLoaded,
       handleImageLoad: this.handleImageLoad,
+      shouldImageLoad: this.state.shouldImageLoad,
     };
 
     return (

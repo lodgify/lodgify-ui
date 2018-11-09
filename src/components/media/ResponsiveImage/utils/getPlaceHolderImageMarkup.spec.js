@@ -24,9 +24,30 @@ describe('`getPlaceholderImageMarkup`', () => {
     });
   });
 
-  describe('if `imageUrl` is passed', () => {
+  describe('if `shouldImageLoad === true`', () => {
+    const getPlaceholderWithImageLoad = extraProps =>
+      getPlaceholderImage({ shouldImageLoad: true, ...extraProps });
+
     it('should render the right structure', () => {
-      const actual = getPlaceholderImage({ imageUrl: 'yoyoUrl' });
+      const actual = getPlaceholderWithImageLoad();
+
+      expect(actual).toMatchSnapshot();
+    });
+
+    describe('if `imageUrl` is passed', () => {
+      it('should render the right structure', () => {
+        const actual = getPlaceholderWithImageLoad({
+          imageUrl: 'yoyoUrl',
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+  });
+
+  describe('if `shouldImageLoad === false`', () => {
+    it('should render the right structure', () => {
+      const actual = getPlaceholderImage({ shouldImageLoad: false });
 
       expect(actual).toMatchSnapshot();
     });
