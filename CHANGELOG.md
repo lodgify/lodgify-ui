@@ -1,3 +1,11 @@
+## [1.78.1](https://github.com/lodgify/lodgify-ui/compare/v1.78.0...v1.78.1) (2018-11-08)
+
+
+### Bug Fixes
+
+* **Dropdown:** implement ellipsis and width limiting styles ([2983c37](https://github.com/lodgify/lodgify-ui/commit/2983c37))
+* **Input:** implement ellipsis and width limiting styles ([9f83f95](https://github.com/lodgify/lodgify-ui/commit/9f83f95))
+
 # [1.78.0](https://github.com/lodgify/lodgify-ui/compare/v1.77.0...v1.78.0) (2018-11-07)
 
 
