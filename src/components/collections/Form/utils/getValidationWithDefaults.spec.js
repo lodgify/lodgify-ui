@@ -38,4 +38,26 @@ describe('getValidationWithDefaults', () => {
       another,
     });
   });
+
+  describe('getIsEmpty', () => {
+    const validationDefaults = getValidationWithDefaults();
+
+    it('should return true if is empty', () => {
+      const actual = validationDefaults.getIsEmpty('');
+
+      expect(actual).toBe(true);
+    });
+
+    it('should return false if the value is not empty', () => {
+      const actual = validationDefaults.getIsEmpty('🏝');
+
+      expect(actual).toBe(false);
+    });
+
+    it('should return false if the value is `0`', () => {
+      const actual = validationDefaults.getIsEmpty('0');
+
+      expect(actual).toBe(false);
+    });
+  });
 });
