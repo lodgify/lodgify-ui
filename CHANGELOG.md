@@ -1,3 +1,10 @@
+## [1.78.3](https://github.com/lodgify/lodgify-ui/compare/v1.78.2...v1.78.3) (2018-11-12)
+
+
+### Bug Fixes
+
+* **getValidationWithDefaults:** ensure getIsEmpty returns false is value is 0 ([5a25133](https://github.com/lodgify/lodgify-ui/commit/5a25133))
+
 ## [1.78.2](https://github.com/lodgify/lodgify-ui/compare/v1.78.1...v1.78.2) (2018-11-09)
 
 
