@@ -4,33 +4,6 @@ exports[`\`getPlaceholderImageMarkup\` by default should render the right struct
 <div
   className="image-with-placeholder-container"
 >
-  <Image
-    alt="someAltText"
-    as="img"
-    avatar={false}
-    fluid={true}
-    onLoad={[Function]}
-    title="someTitle"
-    ui={true}
-  >
-    <div
-      alt="someAltText"
-      className="ui fluid image"
-      onLoad={[Function]}
-      title="someTitle"
-    >
-      <Label
-        content="someLabel"
-      >
-        <div
-          className="ui label"
-          onClick={[Function]}
-        >
-          someLabel
-        </div>
-      </Label>
-    </div>
-  </Image>
   <div
     className="placeholder-image-container"
   >
@@ -52,7 +25,57 @@ exports[`\`getPlaceholderImageMarkup\` by default should render the right struct
 </div>
 `;
 
-exports[`\`getPlaceholderImageMarkup\` if \`imageUrl\` is passed should render the right structure 1`] = `
+exports[`\`getPlaceholderImageMarkup\` if \`isImageLoaded === false\` should render the right structure 1`] = `
+<div
+  className="image-with-placeholder-container has-blurred-children"
+>
+  <div
+    className="placeholder-image-container"
+  >
+    <img
+      className="placeholder-image ui image fluid"
+      src="anotherUrl"
+    />
+    <Label
+      content="someLabel"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        someLabel
+      </div>
+    </Label>
+  </div>
+</div>
+`;
+
+exports[`\`getPlaceholderImageMarkup\` if \`shouldImageLoad === false\` should render the right structure 1`] = `
+<div
+  className="image-with-placeholder-container"
+>
+  <div
+    className="placeholder-image-container"
+  >
+    <img
+      className="placeholder-image ui image fluid"
+      src="anotherUrl"
+    />
+    <Label
+      content="someLabel"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        someLabel
+      </div>
+    </Label>
+  </div>
+</div>
+`;
+
+exports[`\`getPlaceholderImageMarkup\` if \`shouldImageLoad === true\` if \`imageUrl\` is passed should render the right structure 1`] = `
 <div
   className="image-with-placeholder-container"
 >
@@ -85,9 +108,9 @@ exports[`\`getPlaceholderImageMarkup\` if \`imageUrl\` is passed should render t
 </div>
 `;
 
-exports[`\`getPlaceholderImageMarkup\` if \`isImageLoaded === false\` should render the right structure 1`] = `
+exports[`\`getPlaceholderImageMarkup\` if \`shouldImageLoad === true\` should render the right structure 1`] = `
 <div
-  className="image-with-placeholder-container has-blurred-children"
+  className="image-with-placeholder-container"
 >
   <Image
     alt="someAltText"

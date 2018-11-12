@@ -32,6 +32,7 @@ export const getPlaceholderImageMarkup = ({
   isAvatar,
   isImageLoaded,
   placeholderImageUrl,
+  shouldImageLoad,
   /* eslint-enable react/prop-types */
 }) => (
   <div
@@ -40,16 +41,18 @@ export const getPlaceholderImageMarkup = ({
     })}
   >
     {getAspectRatioPlaceholderMarkup(imageWidth, imageHeight)}
-    <Image
-      alt={alternativeText}
-      avatar={isAvatar}
-      fluid={getIsFluid(imageWidth, imageHeight)}
-      onLoad={handleImageLoad}
-      src={imageUrl}
-      title={imageTitle}
-    >
-      {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
-    </Image>
+    {shouldImageLoad && (
+      <Image
+        alt={alternativeText}
+        avatar={isAvatar}
+        fluid={getIsFluid(imageWidth, imageHeight)}
+        onLoad={handleImageLoad}
+        src={imageUrl}
+        title={imageTitle}
+      >
+        {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}
+      </Image>
+    )}
     <div className="placeholder-image-container">
       <img
         className={getClassNames('placeholder-image', {

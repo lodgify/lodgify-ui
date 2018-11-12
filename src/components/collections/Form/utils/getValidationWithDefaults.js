@@ -9,7 +9,7 @@ import { DEFAULT_IS_REQUIRED_MESSAGE } from '../constants';
  * @return {Object}
  */
 export const getValidationWithDefaults = ({
-  getIsEmpty = value => !value,
+  getIsEmpty = value => !value && value !== 0,
   getIsValid = Function.prototype,
   isRequiredMessage = DEFAULT_IS_REQUIRED_MESSAGE,
   ...rest
