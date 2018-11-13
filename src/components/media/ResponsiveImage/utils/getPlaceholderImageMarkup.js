@@ -15,7 +15,6 @@ import { getAspectRatioPlaceholderMarkup } from './getAspectRatioPlaceholderMark
  * @param  {string}        imageProps.imageUrl
  * @param  {string|number} imageProps.imageWidth
  * @param  {boolean}       imageProps.isAvatar
- * @param  {boolean}       imageProps.isFluid
  * @param  {boolean}       imageProps.isImageLoaded
  * @param  {boolean}       imageProps.isImageLoadedFromCache
  * @param  {string}        imageProps.placeholderImageUrl
