@@ -1,3 +1,10 @@
+## [1.78.4](https://github.com/lodgify/lodgify-ui/compare/v1.78.3...v1.78.4) (2018-11-14)
+
+
+### Bug Fixes
+
+* **Promotion:** appear as expected if nested under Grid in mobile viewport ([2deb2d4](https://github.com/lodgify/lodgify-ui/commit/2deb2d4))
+
 ## [1.78.3](https://github.com/lodgify/lodgify-ui/compare/v1.78.2...v1.78.3) (2018-11-12)
 
 
