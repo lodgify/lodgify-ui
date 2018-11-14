@@ -131,6 +131,11 @@
   @media @tabletScreen {
     padding: 0;
 
+    .ui.stackable.grid {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
     p + .button {
       float: none;
       margin-left: auto;
@@ -146,8 +151,11 @@
     }
 
     .discount-section {
-      padding: @promotionStackedDiscountPadding;
       height: auto;
+
+      .ui.statistic {
+        padding: @promotionStackedDiscountPadding;
+      }
     }
   }
 
