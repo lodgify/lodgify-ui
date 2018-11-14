@@ -261,6 +261,19 @@ describe('<Dropdown />', () => {
         value: data.value,
       });
     });
+
+    it('should apply the `dirty` class if the value is 0', () => {
+      const data = { value: 0 };
+      const wrapper = getDropdown();
+
+      const input = wrapper.find(SemanticDropdown);
+
+      input.simulate('change', undefined, data);
+
+      const actual = wrapper.hasClass('dirty');
+
+      expect(actual).toBe(true);
+    });
   });
 
   describe('Interaction: onClick the dropdown input', () => {
