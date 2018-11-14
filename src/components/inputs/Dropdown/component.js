@@ -60,7 +60,7 @@ export class Component extends PureComponent {
       <div
         className={getClassNames('dropdown-container', {
           'has-images': hasImages,
-          dirty: value,
+          dirty: !!value || value === 0,
           error: error,
           focus: isOpen,
           valid: isValid,
