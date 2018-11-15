@@ -1,3 +1,10 @@
+## [1.78.6](https://github.com/lodgify/lodgify-ui/compare/v1.78.5...v1.78.6) (2018-11-15)
+
+
+### Bug Fixes
+
+* **Form:** use default required message if the passed prop is an empty string ([4e56a64](https://github.com/lodgify/lodgify-ui/commit/4e56a64))
+
 ## [1.78.5](https://github.com/lodgify/lodgify-ui/compare/v1.78.4...v1.78.5) (2018-11-14)
 
 
