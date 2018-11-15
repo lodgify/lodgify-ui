@@ -9,6 +9,7 @@ import {
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { returnFirstArgument } from 'utils/return-first-argument';
 import { InputController } from 'inputs/InputController';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
@@ -28,6 +29,7 @@ describe('<SingleDatePicker />', () => {
       const wrapper = getSingleDatePicker();
 
       expectComponentToHaveProps(wrapper, {
+        adaptOnChangeEvent: returnFirstArgument,
         error: false,
         inputOnChangeFunctionName: 'onDateChange',
         isFocused: false,
