@@ -12,7 +12,6 @@ import { getIsFluid } from './getIsFluid';
  * @param  {string}        imageProps.imageUrl
  * @param  {number|string} imageProps.imageWidth
  * @param  {boolean}       imageProps.isAvatar
- * @param  {boolean}       imageProps.isFluid
  * @return {Function}
  */
 export const getImageMarkup = ({

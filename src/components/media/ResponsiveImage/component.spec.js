@@ -81,6 +81,7 @@ describe('<ResponsiveImage />', () => {
 
       expect(actual).toEqual({
         isImageLoaded: false,
+        isImageLoadedFromCache: false,
         shouldImageLoad: true,
       });
     });
@@ -94,8 +95,9 @@ describe('<ResponsiveImage />', () => {
       const actual = wrapper.state();
 
       expect(actual).toEqual({
-        shouldImageLoad: true,
         isImageLoaded: true,
+        isImageLoadedFromCache: false,
+        shouldImageLoad: true,
       });
     });
   });

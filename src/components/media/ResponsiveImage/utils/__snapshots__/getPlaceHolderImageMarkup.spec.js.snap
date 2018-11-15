@@ -50,6 +50,92 @@ exports[`\`getPlaceholderImageMarkup\` if \`isImageLoaded === false\` should ren
 </div>
 `;
 
+exports[`\`getPlaceholderImageMarkup\` if \`isImageLoadedFromCache === false\` should render the right structure 1`] = `
+<div
+  className="image-with-placeholder-container is-visible"
+>
+  <Image
+    alt="someAltText"
+    as="img"
+    avatar={false}
+    fluid={true}
+    onLoad={[Function]}
+    title="someTitle"
+    ui={true}
+  >
+    <div
+      alt="someAltText"
+      className="ui fluid image"
+      onLoad={[Function]}
+      title="someTitle"
+    >
+      <Label
+        content="someLabel"
+      >
+        <div
+          className="ui label"
+          onClick={[Function]}
+        >
+          someLabel
+        </div>
+      </Label>
+    </div>
+  </Image>
+  <div
+    className="placeholder-image-container"
+  >
+    <img
+      className="placeholder-image ui image fluid"
+      src="anotherUrl"
+    />
+    <Label
+      content="someLabel"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        someLabel
+      </div>
+    </Label>
+  </div>
+</div>
+`;
+
+exports[`\`getPlaceholderImageMarkup\` if \`isImageLoadedFromCache === true\` should render the right structure 1`] = `
+<div
+  className="image-with-placeholder-container is-visible"
+>
+  <Image
+    alt="someAltText"
+    as="img"
+    avatar={false}
+    fluid={true}
+    onLoad={[Function]}
+    title="someTitle"
+    ui={true}
+  >
+    <div
+      alt="someAltText"
+      className="ui fluid image"
+      onLoad={[Function]}
+      title="someTitle"
+    >
+      <Label
+        content="someLabel"
+      >
+        <div
+          className="ui label"
+          onClick={[Function]}
+        >
+          someLabel
+        </div>
+      </Label>
+    </div>
+  </Image>
+</div>
+`;
+
 exports[`\`getPlaceholderImageMarkup\` if \`shouldImageLoad === false\` should render the right structure 1`] = `
 <div
   className="image-with-placeholder-container"
@@ -77,7 +163,7 @@ exports[`\`getPlaceholderImageMarkup\` if \`shouldImageLoad === false\` should r
 
 exports[`\`getPlaceholderImageMarkup\` if \`shouldImageLoad === true\` if \`imageUrl\` is passed should render the right structure 1`] = `
 <div
-  className="image-with-placeholder-container"
+  className="image-with-placeholder-container is-visible"
 >
   <Image
     alt="someAltText"
@@ -110,7 +196,7 @@ exports[`\`getPlaceholderImageMarkup\` if \`shouldImageLoad === true\` if \`imag
 
 exports[`\`getPlaceholderImageMarkup\` if \`shouldImageLoad === true\` should render the right structure 1`] = `
 <div
-  className="image-with-placeholder-container"
+  className="image-with-placeholder-container is-visible"
 >
   <Image
     alt="someAltText"
