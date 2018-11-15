@@ -21,6 +21,18 @@ describe('getValidationWithDefaults', () => {
     );
   });
 
+  it('should set defaults for `isRequiredMessage` if an empty string is passed', () => {
+    const actual = getValidationWithDefaults({
+      isRequiredMessage: '',
+    });
+
+    expect(actual).toEqual(
+      expect.objectContaining({
+        isRequiredMessage: DEFAULT_IS_REQUIRED_MESSAGE,
+      })
+    );
+  });
+
   it('should pass through other properties', () => {
     const getIsEmpty = 'some function';
     const isRequiredMessage = '💁';
