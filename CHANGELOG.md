@@ -1,3 +1,10 @@
+# [1.79.0](https://github.com/lodgify/lodgify-ui/compare/v1.78.6...v1.79.0) (2018-11-15)
+
+
+### Features
+
+* **ResponsiveImage:** only apply image transition if image is not loaded from cache ([681e57d](https://github.com/lodgify/lodgify-ui/commit/681e57d))
+
 ## [1.78.6](https://github.com/lodgify/lodgify-ui/compare/v1.78.5...v1.78.6) (2018-11-15)
 
 
