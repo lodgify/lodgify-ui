@@ -1,3 +1,10 @@
+## [1.78.5](https://github.com/lodgify/lodgify-ui/compare/v1.78.4...v1.78.5) (2018-11-14)
+
+
+### Bug Fixes
+
+* **Dropdown:** The value 0 should set the dropdown as populated ([dd9e5b1](https://github.com/lodgify/lodgify-ui/commit/dd9e5b1))
+
 ## [1.78.4](https://github.com/lodgify/lodgify-ui/compare/v1.78.3...v1.78.4) (2018-11-14)
 
 
