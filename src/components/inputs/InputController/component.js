@@ -9,7 +9,7 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { ErrorMessage } from '../ErrorMessage';
 
-import { getValue } from './utils/getValue';
+import { getValueFromEvent } from './utils/getValueFromEvent';
 
 /**
  * Shared controller for input elements.
@@ -27,8 +27,8 @@ export class Component extends PureComponent {
     !isEqual(prevValue, value) && onChange(name, value);
   }
 
-  handleChange = eventOrValue => {
-    const value = getValue(eventOrValue);
+  handleChange = (...args) => {
+    const value = this.props.adaptOnChangeEvent(...args);
 
     this.setState({ value });
   };
@@ -78,6 +78,7 @@ export class Component extends PureComponent {
 Component.displayName = 'InputController';
 
 Component.defaultProps = {
+  adaptOnChangeEvent: getValueFromEvent,
   icon: null,
   inputOnChangeFunctionName: 'onChange',
   isFocused: false,
@@ -85,6 +86,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** A function called to adapt the child input `onChange` event to a value.  */
+  adaptOnChangeEvent: PropTypes.func,
   /** The input controlled by the input controller */
   children: PropTypes.element.isRequired,
   /** Is input in an error state. */
