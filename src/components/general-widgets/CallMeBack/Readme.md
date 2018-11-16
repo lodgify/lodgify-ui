@@ -15,17 +15,9 @@ const timeOptions = [
   { text: '3 pm', value: '1500' },
 ];
 
-const timeZoneOptions = [
-  { text: 'CET', value: 'cet' },
-  { text: 'GMT', value: 'gmt' },
-  { text: 'EST', value: 'est' },
-];
-
-
 <CallMeBack
   propertyOptions={propertyOptions}
   timeOptions={timeOptions}
-  timeZoneOptions={timeZoneOptions}
 />
 ```
 
@@ -46,8 +38,6 @@ const timeZoneOptions = [
   submitButtonText="Submit form"
   timeInputLabel="Choose an ideal time"
   timeOptions={[]}
-  timeZoneInputLabel="What is your time zone"
-  timeZoneOptions={[]}
 />
 ```
 
@@ -76,13 +66,11 @@ const validation = {
     getIsValid: value => value !== 'error'
   },
   time: { isRequired: true },
-  timeZone: { isRequired: true }
 };
 
 <CallMeBack
   propertyOptions={propertyOptions}
   timeOptions={[]}
-  timeZoneOptions={[]}
   validation={validation}
 />
 ```
@@ -96,7 +84,6 @@ const validation = {
   successMessage="The call me back form has been successfully submitted"
   propertyOptions={[]}
   timeOptions={[]}
-  timeZoneOptions={[]}
 />
 ```
 
@@ -107,6 +94,5 @@ const validation = {
   errorMessage="Request Failed. Please try again."
   propertyOptions={[]}
   timeOptions={[]}
-  timeZoneOptions={[]}
 />
 ```

@@ -10,7 +10,6 @@ import {
   PHONE,
   PROPERTY,
   SEND,
-  TIME_ZONE,
   TIME,
 } from 'utils/default-strings';
 import { Dropdown } from 'inputs/Dropdown';
@@ -41,8 +40,6 @@ export const Component = ({
   successMessage,
   timeInputLabel,
   timeOptions,
-  timeZoneInputLabel,
-  timeZoneOptions,
   validation,
 }) => (
   <Form
@@ -67,18 +64,11 @@ export const Component = ({
         options={timeOptions}
       />
     </InputGroup>
-    <InputGroup>
-      <Dropdown
-        label={timeZoneInputLabel}
-        name="timeZone"
-        options={timeZoneOptions}
-      />
-      <Dropdown
-        label={propertyInputLabel}
-        name="property"
-        options={propertyOptions}
-      />
-    </InputGroup>
+    <Dropdown
+      label={propertyInputLabel}
+      name="property"
+      options={propertyOptions}
+    />
     <TextArea label={notesInputLabel} name="notes" />
   </Form>
 );
@@ -98,7 +88,6 @@ Component.defaultProps = {
   submitButtonText: SEND,
   successMessage: '',
   timeInputLabel: TIME,
-  timeZoneInputLabel: TIME_ZONE,
   validation: {},
 };
 
@@ -155,21 +144,6 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
-  /** The label for the time zone input. */
-  timeZoneInputLabel: PropTypes.string,
-  /** The options which the user can select for the time zone field. */
-  timeZoneOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ).isRequired,
   /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
   validation: PropTypes.shape({
     date: PropTypes.object,
@@ -179,6 +153,5 @@ Component.propTypes = {
     phone: PropTypes.object,
     property: PropTypes.object,
     time: PropTypes.object,
-    timeZone: PropTypes.object,
   }),
 };

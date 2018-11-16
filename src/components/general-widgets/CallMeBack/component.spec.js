@@ -32,18 +32,11 @@ export const timeOptions = [
   { text: '3 pm', value: '1500' },
 ];
 
-export const timeZoneOptions = [
-  { text: 'CET', value: 'cet' },
-  { text: 'GMT', value: 'gmt' },
-  { text: 'EST', value: 'est' },
-];
-
 const getCallMeBack = extraProps =>
   mount(
     <CallMeBack
       propertyOptions={propertyOptions}
       timeOptions={timeOptions}
-      timeZoneOptions={timeZoneOptions}
       {...extraProps}
     />
   );
