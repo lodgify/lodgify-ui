@@ -238,6 +238,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                       windowInnerWidth={1024}
                                                     >
                                                       <InputController
+                                                        adaptOnChangeEvent={[Function]}
                                                         error={false}
                                                         icon={null}
                                                         inputOnChangeFunctionName="onDatesChange"

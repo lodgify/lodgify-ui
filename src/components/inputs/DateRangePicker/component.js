@@ -9,6 +9,7 @@ import { withResponsive } from 'utils/with-responsive';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
 import { isBlurEvent } from 'utils/is-blur-event';
+import { returnFirstArgument } from 'utils/return-first-argument';
 
 import { pickDatesFromState } from './utils/pickDatesFromState';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
@@ -60,6 +61,7 @@ class Component extends PureComponent {
 
     return (
       <InputController
+        adaptOnChangeEvent={returnFirstArgument}
         error={error}
         inputOnChangeFunctionName="onDatesChange"
         isFocused={!!focusedInput}

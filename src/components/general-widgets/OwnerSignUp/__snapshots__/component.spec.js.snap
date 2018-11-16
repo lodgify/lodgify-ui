@@ -82,6 +82,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -133,6 +134,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -184,6 +186,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -364,6 +367,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -415,6 +419,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -466,6 +471,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -646,6 +652,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -697,6 +704,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -748,6 +756,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"

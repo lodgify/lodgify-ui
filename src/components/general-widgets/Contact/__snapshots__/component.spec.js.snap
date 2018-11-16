@@ -134,6 +134,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           type="text"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -184,6 +185,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           onChange={[Function]}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={
                               <Icon
@@ -279,6 +281,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -364,6 +367,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               windowInnerWidth={1024}
                             >
                               <InputController
+                                adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
                                 inputOnChangeFunctionName="onDatesChange"
@@ -2031,6 +2035,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           width="four"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -2083,6 +2088,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                       onChange={[Function]}
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -2723,6 +2729,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 type="text"
                               >
                                 <InputController
+                                  adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
                                   inputOnChangeFunctionName="onChange"
@@ -2906,6 +2913,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                           type="text"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -2956,6 +2964,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                           onChange={[Function]}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={
                               <Icon
@@ -3051,6 +3060,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -3136,6 +3146,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                               windowInnerWidth={1024}
                             >
                               <InputController
+                                adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
                                 inputOnChangeFunctionName="onDatesChange"
@@ -4803,6 +4814,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                           width="four"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -4855,6 +4867,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                       onChange={[Function]}
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -4941,6 +4954,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                                 type="text"
                               >
                                 <InputController
+                                  adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
                                   inputOnChangeFunctionName="onChange"
@@ -5163,6 +5177,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           type="text"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -5213,6 +5228,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           onChange={[Function]}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={
                               <Icon
@@ -5308,6 +5324,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -5393,6 +5410,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               windowInnerWidth={1024}
                             >
                               <InputController
+                                adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
                                 inputOnChangeFunctionName="onDatesChange"
@@ -7060,6 +7078,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           width="four"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -7112,6 +7131,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                       onChange={[Function]}
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -7500,6 +7520,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 type="text"
                               >
                                 <InputController
+                                  adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
                                   inputOnChangeFunctionName="onChange"
@@ -7698,6 +7719,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           type="text"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -7748,6 +7770,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           onChange={[Function]}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={
                               <Icon
@@ -7843,6 +7866,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -7928,6 +7952,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               windowInnerWidth={1024}
                             >
                               <InputController
+                                adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
                                 inputOnChangeFunctionName="onDatesChange"
@@ -9595,6 +9620,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           width="four"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -9647,6 +9673,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                       onChange={[Function]}
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -9994,6 +10021,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 type="text"
                               >
                                 <InputController
+                                  adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
                                   inputOnChangeFunctionName="onChange"
@@ -10177,6 +10205,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                           type="text"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -10227,6 +10256,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                           onChange={[Function]}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={
                               <Icon
@@ -10322,6 +10352,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -10407,6 +10438,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                               windowInnerWidth={1024}
                             >
                               <InputController
+                                adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
                                 inputOnChangeFunctionName="onDatesChange"
@@ -12074,6 +12106,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                           width="four"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -12126,6 +12159,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                       onChange={[Function]}
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -12212,6 +12246,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                                 type="text"
                               >
                                 <InputController
+                                  adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
                                   inputOnChangeFunctionName="onChange"
@@ -12415,6 +12450,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           type="text"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -12465,6 +12501,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           onChange={[Function]}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={
                               <Icon
@@ -12560,6 +12597,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -12645,6 +12683,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               windowInnerWidth={1024}
                             >
                               <InputController
+                                adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
                                 inputOnChangeFunctionName="onDatesChange"
@@ -14312,6 +14351,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           width="four"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -14364,6 +14404,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                       onChange={[Function]}
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -14450,6 +14491,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 type="text"
                               >
                                 <InputController
+                                  adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
                                   inputOnChangeFunctionName="onChange"
@@ -14579,6 +14621,7 @@ exports[`<Contact /> the \`CaptchaInput\` should have the right props 1`] = `
             type="text"
           >
             <InputController
+              adaptOnChangeEvent={[Function]}
               error={false}
               icon={null}
               inputOnChangeFunctionName="onChange"
