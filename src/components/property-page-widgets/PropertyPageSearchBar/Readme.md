@@ -11,5 +11,9 @@ const displayAsFixed = false;
   summaryElement={<div>Property Information</div>}
   modalTrigger={<Button isPositionedRight isRounded isCompact>Check Availability</Button>}
   modalSummaryElement={<div>Property information for mobile modal</div>}
+  summaryLocationName="Barcelona"
+  summaryNightPrice="$200"
+  summaryPropertyName="Property"
+  summaryRatingNumber={2.3}
 /> 
 ```

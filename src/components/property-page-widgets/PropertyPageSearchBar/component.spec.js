@@ -12,25 +12,27 @@ import { Component as PropertyPageSearchBar } from './component';
 
 const { guestsOptions } = require('./mock-data/options');
 
-const getPropertyPageSearchBar = props =>
-  mount(<PropertyPageSearchBar guestsOptions={guestsOptions} {...props} />);
-
 const props = {
   guestsOptions: guestsOptions,
   isFixed: true,
-  summaryElement: null,
   modalTrigger: (
     <Button isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),
-  modalSummaryElement: null,
   searchButton: (
     <Button isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),
+  summaryLocationName: 'Location',
+  summaryNightPrice: '250€',
+  summaryPropertyName: 'Property',
+  summaryRatingNumber: 4.5,
 };
+
+const getPropertyPageSearchBar = extraProps =>
+  mount(<PropertyPageSearchBar {...props} {...extraProps} />);
 
 describe('<PropertyPageSearchBar />', () => {
   it('should have the right structure', () => {
