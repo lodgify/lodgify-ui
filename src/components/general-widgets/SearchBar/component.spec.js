@@ -314,6 +314,22 @@ describe('<SearchBar />', () => {
 
       expect(actual).toBe(value);
     });
+
+    it('should trigger `props.onChangeInput` when a field changes', () => {
+      const name = 'location';
+      const value = '🍰';
+      const onChangeInput = jest.fn();
+      const wrapper = getSearchBar({
+        onChangeInput,
+      });
+      const input = wrapper.find(Dropdown).first();
+
+      input.simulate('change', name, value);
+
+      expect(onChangeInput).toHaveBeenCalledWith({
+        [name]: value,
+      });
+    });
   });
 
   describe('Interaction: onSubmit the form', () => {
