@@ -1,3 +1,10 @@
+## [1.80.1](https://github.com/lodgify/lodgify-ui/compare/v1.80.0...v1.80.1) (2018-11-16)
+
+
+### Bug Fixes
+
+* **Availability:** block dates that are in the past ([61692a8](https://github.com/lodgify/lodgify-ui/commit/61692a8))
+
 # [1.80.0](https://github.com/lodgify/lodgify-ui/compare/v1.79.0...v1.80.0) (2018-11-16)
 
 
