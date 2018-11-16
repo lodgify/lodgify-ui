@@ -4,6 +4,7 @@ import { CalendarMonth, CalendarDay } from 'react-dates';
 import { BLOCKED_MODIFIER } from 'react-dates/constants';
 import moment from 'moment';
 import { Card } from 'semantic-ui-react';
+import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Paragraph } from 'typography/Paragraph';
@@ -74,34 +75,37 @@ class Component extends PureComponent {
         <Heading size="small">Availability</Heading>
         <Grid>
           <GridRow>
+            {size(roomOptionsWithImages) > 0 && (
+              <GridColumn
+                computer={7}
+                mobile={12}
+                tablet={6}
+                verticalAlignContent="middle"
+              >
+                <Grid>
+                  <GridColumn
+                    computer={3}
+                    mobile={5}
+                    tablet={12}
+                    verticalAlignContent="middle"
+                  >
+                    <Paragraph size="tiny" weight="heavy">
+                      View Availability For:
+                    </Paragraph>
+                  </GridColumn>
+                  <GridColumn computer={7} mobile={7} tablet={12}>
+                    <Dropdown
+                      icon={ICON_NAMES.MAP_PIN}
+                      label="Properties"
+                      onChange={this.reloadCalendarOnRoomSelection}
+                      options={roomOptionsWithImages}
+                    />
+                  </GridColumn>
+                </Grid>
+              </GridColumn>
+            )}
             <GridColumn
-              computer={7}
-              mobile={12}
-              tablet={6}
-              verticalAlignContent="middle"
-            >
-              <Grid>
-                <GridColumn
-                  computer={5}
-                  mobile={5}
-                  tablet={12}
-                  verticalAlignContent="middle"
-                >
-                  <Paragraph size="tiny" weight="heavy">
-                    View Availability For:
-                  </Paragraph>
-                </GridColumn>
-                <GridColumn computer={7} mobile={7} tablet={12}>
-                  <Dropdown
-                    icon={ICON_NAMES.MAP_PIN}
-                    label="Properties"
-                    onChange={this.reloadCalendarOnRoomSelection}
-                    options={roomOptionsWithImages}
-                  />
-                </GridColumn>
-              </Grid>
-            </GridColumn>
-            <GridColumn
+              floated="right"
               only="tablet computer"
               textAlign="right"
               verticalAlignContent="middle"
@@ -161,7 +165,7 @@ class Component extends PureComponent {
           <GridColumn only="mobile" textAlign="right" width={12}>
             <GridColumn>
               <Icon
-                color="grey"
+                color="light grey"
                 isLabelLeft
                 labelText="Unavailable"
                 name={ICON_NAMES.SQUARE}
