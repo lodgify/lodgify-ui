@@ -18,13 +18,16 @@ export const Component = ({
   propertyName,
   ratingNumber,
 }) => (
-  <Segment.Group compact>
+  <Segment.Group className="is-summary" compact>
     {!areOnlyNightPriceAndRatingDisplayed && (
       <Segment>
         <Heading>{propertyName}</Heading>
       </Segment>
     )}
-    <Segment.Group horizontal={!areOnlyNightPriceAndRatingDisplayed}>
+    <Segment.Group
+      className="horizontal-wrap"
+      horizontal={!areOnlyNightPriceAndRatingDisplayed}
+    >
       {areOnlyNightPriceAndRatingDisplayed
         ? getNightPriceAndRatingMarkup(ratingNumber, nightPrice)
         : getNightPriceRatingAndLocationMarkup(

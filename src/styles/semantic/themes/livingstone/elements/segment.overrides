@@ -63,6 +63,23 @@
 
 /* Ordinality */
 
+/* Horizontal Group with wrap */
+
+.ui.horizontal.segments.horizontal-wrap {
+  flex-wrap: wrap;
+
+  > .segment {
+    flex: @horizontalWrapFlex;
+    margin-bottom: @horizontalWrapMarginBottom;
+  }
+}
+
+/* Is Summary */
+
+.ui.segments.is-summary {
+  margin: 0;
+}
+
 /* Full bleed */
 
 .ui.segment.full-bleed {

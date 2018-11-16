@@ -9,10 +9,11 @@ exports[`<Summary/> by default should render the right structure 1`] = `
   ratingNumber={4.8}
 >
   <SegmentGroup
+    className="is-summary"
     compact={true}
   >
     <div
-      className="ui compact segments"
+      className="ui compact segments is-summary"
     >
       <Segment>
         <div
@@ -38,10 +39,11 @@ exports[`<Summary/> by default should render the right structure 1`] = `
         </div>
       </Segment>
       <SegmentGroup
+        className="horizontal-wrap"
         horizontal={true}
       >
         <div
-          className="ui horizontal segments"
+          className="ui horizontal segments horizontal-wrap"
         >
           <Segment>
             <div
@@ -266,16 +268,18 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
   ratingNumber={4.8}
 >
   <SegmentGroup
+    className="is-summary"
     compact={true}
   >
     <div
-      className="ui compact segments"
+      className="ui compact segments is-summary"
     >
       <SegmentGroup
+        className="horizontal-wrap"
         horizontal={false}
       >
         <div
-          className="ui segments"
+          className="ui segments horizontal-wrap"
         >
           <Segment>
             <div
