@@ -2,10 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Segment } from 'semantic-ui-react';
 
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
 import { Heading } from 'typography/Heading';
-import { withResponsive } from 'utils/with-responsive';
 
 import { getNightPriceAndRatingMarkup } from './utils/getNightPriceAndRatingMarkup';
 import { getNightPriceRatingAndLocationMarkup } from './utils/getNightPriceRatingAndLocationMarkup';
@@ -14,45 +11,40 @@ import { getNightPriceRatingAndLocationMarkup } from './utils/getNightPriceRatin
  * The standard widget for displaying the summary details of a property.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-const Component = ({
+export const Component = ({
+  areOnlyNightPriceAndRatingDisplayed,
   locationName,
   nightPrice,
   propertyName,
   ratingNumber,
-  isUserOnMobile,
 }) => (
   <Segment.Group compact>
-    <ShowOnDesktop parent={Segment}>
-      <Heading>{propertyName}</Heading>
-    </ShowOnDesktop>
-    <ShowOnDesktop
-      parent={Segment.Group}
-      parentProps={{ horizontal: !isUserOnMobile }}
-    >
-      {getNightPriceRatingAndLocationMarkup(
-        ratingNumber,
-        nightPrice,
-        locationName
-      )}
-    </ShowOnDesktop>
-    <ShowOnMobile
-      parent={Segment.Group}
-      parentProps={{ horizontal: !isUserOnMobile }}
-    >
-      {getNightPriceAndRatingMarkup(ratingNumber, nightPrice)}
-    </ShowOnMobile>
+    {!areOnlyNightPriceAndRatingDisplayed && (
+      <Segment>
+        <Heading>{propertyName}</Heading>
+      </Segment>
+    )}
+    <Segment.Group horizontal={!areOnlyNightPriceAndRatingDisplayed}>
+      {areOnlyNightPriceAndRatingDisplayed
+        ? getNightPriceAndRatingMarkup(ratingNumber, nightPrice)
+        : getNightPriceRatingAndLocationMarkup(
+            ratingNumber,
+            nightPrice,
+            locationName
+          )}
+    </Segment.Group>
   </Segment.Group>
 );
 
 Component.displayName = 'Summary';
 
+Component.defaultProps = {
+  areOnlyNightPriceAndRatingDisplayed: false,
+};
+
 Component.propTypes = {
-  /**
-   * Is the user on a mobile device.
-   * Provided by `withResponsive` so ignored in the styleguide.
-   * @ignore
-   */
-  isUserOnMobile: PropTypes.bool.isRequired,
+  /** Are the rating and the price only displayed */
+  areOnlyNightPriceAndRatingDisplayed: PropTypes.bool,
   /** The name of the location of the property. */
   locationName: PropTypes.string.isRequired,
   /** The price per night of the property, with currency symbol. */
@@ -62,5 +54,3 @@ Component.propTypes = {
   /** The numeral rating for the property, out of 5 */
   ratingNumber: PropTypes.number.isRequired,
 };
-
-export const ComponentWithResponsive = withResponsive(Component);

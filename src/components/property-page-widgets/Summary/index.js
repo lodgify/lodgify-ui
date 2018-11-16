@@ -1,1 +1,1 @@
-export { ComponentWithResponsive as Summary } from './component';
+export { Component as Summary } from './component';

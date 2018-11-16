@@ -1,8 +1,8 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { ComponentWithResponsive as Summary } from './component';
+import { Component as Summary } from './component';
 
 const props = {
   locationName: 'Catania',
@@ -11,34 +11,26 @@ const props = {
   ratingNumber: 4.8,
 };
 
-const getSummary = () => shallow(<Summary {...props} />);
-
-const getWrappedSummary = extraProps => {
-  const Child = getSummary().prop('as');
-
-  return mount(<Child isUserOnMobile={false} {...props} {...extraProps} />);
-};
+const getSummary = extraProps => mount(<Summary {...props} {...extraProps} />);
 
 describe('<Summary/>', () => {
   describe('by default', () => {
     it('should render the right structure', () => {
-      const actual = getWrappedSummary();
+      const actual = getSummary();
 
       expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('if `props.isUserOnMobile` is true', () => {
+  describe('if `props.areOnlyNightPriceAndRatingDisplayed` is true', () => {
     it('should render the right children', () => {
-      const actual = getWrappedSummary({ isUserOnMobile: true });
+      const actual = getSummary({ areOnlyNightPriceAndRatingDisplayed: true });
 
       expect(actual).toMatchSnapshot();
     });
   });
 
   it('should have `displayName` Summary', () => {
-    const component = getSummary().prop('as');
-
-    expectComponentToHaveDisplayName(component, 'Summary');
+    expectComponentToHaveDisplayName(Summary, 'Summary');
   });
 });
