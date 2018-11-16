@@ -1,3 +1,10 @@
+# [1.80.0](https://github.com/lodgify/lodgify-ui/compare/v1.79.0...v1.80.0) (2018-11-16)
+
+
+### Features
+
+* **Availability:** hide dropdown when 0 roomType and add tests and examples ([13624e8](https://github.com/lodgify/lodgify-ui/commit/13624e8))
+
 # [1.79.0](https://github.com/lodgify/lodgify-ui/compare/v1.78.6...v1.79.0) (2018-11-15)
 
 

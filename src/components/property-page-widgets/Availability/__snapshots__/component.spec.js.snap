@@ -1,0 +1,652 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Availability /> by default should render the right structure 1`] = `
+<Responsive
+  as={[Function]}
+  isUserOnMobile={false}
+  onUpdate={[Function]}
+  roomsWithImages={Array []}
+  windowInnerWidth={1024}
+/>
+`;
+
+exports[`<Availability /> if \`size(props.roomOptionsWithImages) > 0\` should render the right structure 1`] = `
+<Responsive
+  as={[Function]}
+  isUserOnMobile={false}
+  onUpdate={[Function]}
+  roomsWithImages={Array []}
+  windowInnerWidth={1024}
+/>
+`;
+
+exports[`<Availability /> the wrapped component by default should render the right structure 1`] = `
+<div>
+  <Heading
+    isColorInverted={false}
+    size="small"
+    textAlign={null}
+  >
+    Availability
+  </Heading>
+  <Grid
+    areColumnsCentered={false}
+  >
+    <GridRow
+      horizontalAlignContent="left"
+    >
+      <GridColumn
+        floated="right"
+        only="tablet computer"
+        textAlign="right"
+        verticalAlignContent="middle"
+        width={5}
+      >
+        <Icon
+          color="light grey"
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={true}
+          labelText="Unavailable"
+          labelWeight={null}
+          name="square"
+          path={null}
+          size={null}
+        />
+      </GridColumn>
+    </GridRow>
+  </Grid>
+  <Card
+    fluid={true}
+  >
+    <Grid
+      areColumnsCentered={false}
+      padded={true}
+    >
+      <GridRow
+        horizontalAlignContent="left"
+      >
+        <GridColumn
+          className="availability-calendar-wrapper"
+          computer={6}
+          key="month-column0"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <withStyles(CalendarMonth)
+            daySize={39}
+            enableOutsideDays={false}
+            firstDayOfWeek={null}
+            focusedDate={null}
+            horizontalMonthPadding={13}
+            isFocused={false}
+            isVisible={true}
+            modifiers={Object {}}
+            month={"2018-11-11T00:00:00.000Z"}
+            monthFormat="MMMM YYYY"
+            onDayClick={[Function]}
+            onDayMouseEnter={[Function]}
+            onDayMouseLeave={[Function]}
+            onMonthSelect={[Function]}
+            onYearSelect={[Function]}
+            orientation="horizontal"
+            phrases={
+              Object {
+                "chooseAvailableDate": [Function],
+                "dateIsSelected": [Function],
+                "dateIsUnavailable": [Function],
+              }
+            }
+            renderCalendarDay={[Function]}
+            renderDayContents={null}
+            renderMonthElement={[Function]}
+            renderMonthText={null}
+            setMonthTitleHeight={null}
+          />
+        </GridColumn>
+        <GridColumn
+          className="availability-calendar-wrapper"
+          computer={6}
+          key="month-column1"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <withStyles(CalendarMonth)
+            daySize={39}
+            enableOutsideDays={false}
+            firstDayOfWeek={null}
+            focusedDate={null}
+            horizontalMonthPadding={13}
+            isFocused={false}
+            isVisible={true}
+            modifiers={Object {}}
+            month={"2018-12-11T00:00:00.000Z"}
+            monthFormat="MMMM YYYY"
+            onDayClick={[Function]}
+            onDayMouseEnter={[Function]}
+            onDayMouseLeave={[Function]}
+            onMonthSelect={[Function]}
+            onYearSelect={[Function]}
+            orientation="horizontal"
+            phrases={
+              Object {
+                "chooseAvailableDate": [Function],
+                "dateIsSelected": [Function],
+                "dateIsUnavailable": [Function],
+              }
+            }
+            renderCalendarDay={[Function]}
+            renderDayContents={null}
+            renderMonthElement={[Function]}
+            renderMonthText={null}
+            setMonthTitleHeight={null}
+          />
+        </GridColumn>
+        <GridColumn
+          className="availability-calendar-wrapper"
+          computer={6}
+          key="month-column2"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <withStyles(CalendarMonth)
+            daySize={39}
+            enableOutsideDays={false}
+            firstDayOfWeek={null}
+            focusedDate={null}
+            horizontalMonthPadding={13}
+            isFocused={false}
+            isVisible={true}
+            modifiers={Object {}}
+            month={"2019-01-11T00:00:00.000Z"}
+            monthFormat="MMMM YYYY"
+            onDayClick={[Function]}
+            onDayMouseEnter={[Function]}
+            onDayMouseLeave={[Function]}
+            onMonthSelect={[Function]}
+            onYearSelect={[Function]}
+            orientation="horizontal"
+            phrases={
+              Object {
+                "chooseAvailableDate": [Function],
+                "dateIsSelected": [Function],
+                "dateIsUnavailable": [Function],
+              }
+            }
+            renderCalendarDay={[Function]}
+            renderDayContents={null}
+            renderMonthElement={[Function]}
+            renderMonthText={null}
+            setMonthTitleHeight={null}
+          />
+        </GridColumn>
+        <GridColumn
+          className="availability-calendar-wrapper"
+          computer={6}
+          key="month-column3"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <withStyles(CalendarMonth)
+            daySize={39}
+            enableOutsideDays={false}
+            firstDayOfWeek={null}
+            focusedDate={null}
+            horizontalMonthPadding={13}
+            isFocused={false}
+            isVisible={true}
+            modifiers={Object {}}
+            month={"2019-02-11T00:00:00.000Z"}
+            monthFormat="MMMM YYYY"
+            onDayClick={[Function]}
+            onDayMouseEnter={[Function]}
+            onDayMouseLeave={[Function]}
+            onMonthSelect={[Function]}
+            onYearSelect={[Function]}
+            orientation="horizontal"
+            phrases={
+              Object {
+                "chooseAvailableDate": [Function],
+                "dateIsSelected": [Function],
+                "dateIsUnavailable": [Function],
+              }
+            }
+            renderCalendarDay={[Function]}
+            renderDayContents={null}
+            renderMonthElement={[Function]}
+            renderMonthText={null}
+            setMonthTitleHeight={null}
+          />
+        </GridColumn>
+      </GridRow>
+      <GridRow
+        horizontalAlignContent="left"
+      >
+        <GridColumn
+          verticalAlignContent="top"
+          width={6}
+        >
+          <Icon
+            color={null}
+            hasBorder={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText="Previous"
+            labelWeight={null}
+            name="arrow left"
+            onClick={[Function]}
+            path={null}
+            size={null}
+          />
+        </GridColumn>
+        <GridColumn
+          textAlign="right"
+          verticalAlignContent="top"
+          width={6}
+        >
+          <Icon
+            color={null}
+            hasBorder={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={true}
+            labelText="Next"
+            labelWeight={null}
+            name="arrow right"
+            onClick={[Function]}
+            path={null}
+            size={null}
+          />
+        </GridColumn>
+      </GridRow>
+    </Grid>
+  </Card>
+  <Grid
+    areColumnsCentered={false}
+  >
+    <GridColumn
+      only="mobile"
+      textAlign="right"
+      verticalAlignContent="top"
+      width={12}
+    >
+      <GridColumn
+        verticalAlignContent="top"
+        width={null}
+      >
+        <Icon
+          color="light grey"
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={true}
+          labelText="Unavailable"
+          labelWeight={null}
+          name="square"
+          path={null}
+          size={null}
+        />
+      </GridColumn>
+    </GridColumn>
+  </Grid>
+</div>
+`;
+
+exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithImages) > 0\` should render the right structure 1`] = `
+<div>
+  <Heading
+    isColorInverted={false}
+    size="small"
+    textAlign={null}
+  >
+    Availability
+  </Heading>
+  <Grid
+    areColumnsCentered={false}
+  >
+    <GridRow
+      horizontalAlignContent="left"
+    >
+      <GridColumn
+        computer={7}
+        mobile={12}
+        tablet={6}
+        verticalAlignContent="middle"
+        width={null}
+      >
+        <Grid
+          areColumnsCentered={false}
+        >
+          <GridColumn
+            computer={3}
+            mobile={5}
+            tablet={12}
+            verticalAlignContent="middle"
+            width={null}
+          >
+            <Paragraph
+              size="tiny"
+              weight="heavy"
+            >
+              View Availability For:
+            </Paragraph>
+          </GridColumn>
+          <GridColumn
+            computer={7}
+            mobile={7}
+            tablet={12}
+            verticalAlignContent="top"
+            width={null}
+          >
+            <Dropdown
+              error={false}
+              icon="map pin"
+              isDisabled={false}
+              isValid={false}
+              label="Properties"
+              name=""
+              onBlur={[Function]}
+              onChange={[Function]}
+              options={
+                Array [
+                  Object {
+                    "image": "imageUrl1",
+                    "text": "room 1",
+                    "value": "1",
+                  },
+                  Object {
+                    "image": "imageUrl2",
+                    "text": "room 2",
+                    "value": "2",
+                  },
+                ]
+              }
+              willOpenAbove={false}
+            />
+          </GridColumn>
+        </Grid>
+      </GridColumn>
+      <GridColumn
+        floated="right"
+        only="tablet computer"
+        textAlign="right"
+        verticalAlignContent="middle"
+        width={5}
+      >
+        <Icon
+          color="light grey"
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={true}
+          labelText="Unavailable"
+          labelWeight={null}
+          name="square"
+          path={null}
+          size={null}
+        />
+      </GridColumn>
+    </GridRow>
+  </Grid>
+  <Card
+    fluid={true}
+  >
+    <Grid
+      areColumnsCentered={false}
+      padded={true}
+    >
+      <GridRow
+        horizontalAlignContent="left"
+      >
+        <GridColumn
+          className="availability-calendar-wrapper"
+          computer={6}
+          key="month-column0"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <withStyles(CalendarMonth)
+            daySize={39}
+            enableOutsideDays={false}
+            firstDayOfWeek={null}
+            focusedDate={null}
+            horizontalMonthPadding={13}
+            isFocused={false}
+            isVisible={true}
+            modifiers={Object {}}
+            month={"2018-11-11T00:00:00.000Z"}
+            monthFormat="MMMM YYYY"
+            onDayClick={[Function]}
+            onDayMouseEnter={[Function]}
+            onDayMouseLeave={[Function]}
+            onMonthSelect={[Function]}
+            onYearSelect={[Function]}
+            orientation="horizontal"
+            phrases={
+              Object {
+                "chooseAvailableDate": [Function],
+                "dateIsSelected": [Function],
+                "dateIsUnavailable": [Function],
+              }
+            }
+            renderCalendarDay={[Function]}
+            renderDayContents={null}
+            renderMonthElement={[Function]}
+            renderMonthText={null}
+            setMonthTitleHeight={null}
+          />
+        </GridColumn>
+        <GridColumn
+          className="availability-calendar-wrapper"
+          computer={6}
+          key="month-column1"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <withStyles(CalendarMonth)
+            daySize={39}
+            enableOutsideDays={false}
+            firstDayOfWeek={null}
+            focusedDate={null}
+            horizontalMonthPadding={13}
+            isFocused={false}
+            isVisible={true}
+            modifiers={Object {}}
+            month={"2018-12-11T00:00:00.000Z"}
+            monthFormat="MMMM YYYY"
+            onDayClick={[Function]}
+            onDayMouseEnter={[Function]}
+            onDayMouseLeave={[Function]}
+            onMonthSelect={[Function]}
+            onYearSelect={[Function]}
+            orientation="horizontal"
+            phrases={
+              Object {
+                "chooseAvailableDate": [Function],
+                "dateIsSelected": [Function],
+                "dateIsUnavailable": [Function],
+              }
+            }
+            renderCalendarDay={[Function]}
+            renderDayContents={null}
+            renderMonthElement={[Function]}
+            renderMonthText={null}
+            setMonthTitleHeight={null}
+          />
+        </GridColumn>
+        <GridColumn
+          className="availability-calendar-wrapper"
+          computer={6}
+          key="month-column2"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <withStyles(CalendarMonth)
+            daySize={39}
+            enableOutsideDays={false}
+            firstDayOfWeek={null}
+            focusedDate={null}
+            horizontalMonthPadding={13}
+            isFocused={false}
+            isVisible={true}
+            modifiers={Object {}}
+            month={"2019-01-11T00:00:00.000Z"}
+            monthFormat="MMMM YYYY"
+            onDayClick={[Function]}
+            onDayMouseEnter={[Function]}
+            onDayMouseLeave={[Function]}
+            onMonthSelect={[Function]}
+            onYearSelect={[Function]}
+            orientation="horizontal"
+            phrases={
+              Object {
+                "chooseAvailableDate": [Function],
+                "dateIsSelected": [Function],
+                "dateIsUnavailable": [Function],
+              }
+            }
+            renderCalendarDay={[Function]}
+            renderDayContents={null}
+            renderMonthElement={[Function]}
+            renderMonthText={null}
+            setMonthTitleHeight={null}
+          />
+        </GridColumn>
+        <GridColumn
+          className="availability-calendar-wrapper"
+          computer={6}
+          key="month-column3"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <withStyles(CalendarMonth)
+            daySize={39}
+            enableOutsideDays={false}
+            firstDayOfWeek={null}
+            focusedDate={null}
+            horizontalMonthPadding={13}
+            isFocused={false}
+            isVisible={true}
+            modifiers={Object {}}
+            month={"2019-02-11T00:00:00.000Z"}
+            monthFormat="MMMM YYYY"
+            onDayClick={[Function]}
+            onDayMouseEnter={[Function]}
+            onDayMouseLeave={[Function]}
+            onMonthSelect={[Function]}
+            onYearSelect={[Function]}
+            orientation="horizontal"
+            phrases={
+              Object {
+                "chooseAvailableDate": [Function],
+                "dateIsSelected": [Function],
+                "dateIsUnavailable": [Function],
+              }
+            }
+            renderCalendarDay={[Function]}
+            renderDayContents={null}
+            renderMonthElement={[Function]}
+            renderMonthText={null}
+            setMonthTitleHeight={null}
+          />
+        </GridColumn>
+      </GridRow>
+      <GridRow
+        horizontalAlignContent="left"
+      >
+        <GridColumn
+          verticalAlignContent="top"
+          width={6}
+        >
+          <Icon
+            color={null}
+            hasBorder={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText="Previous"
+            labelWeight={null}
+            name="arrow left"
+            onClick={[Function]}
+            path={null}
+            size={null}
+          />
+        </GridColumn>
+        <GridColumn
+          textAlign="right"
+          verticalAlignContent="top"
+          width={6}
+        >
+          <Icon
+            color={null}
+            hasBorder={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={true}
+            labelText="Next"
+            labelWeight={null}
+            name="arrow right"
+            onClick={[Function]}
+            path={null}
+            size={null}
+          />
+        </GridColumn>
+      </GridRow>
+    </Grid>
+  </Card>
+  <Grid
+    areColumnsCentered={false}
+  >
+    <GridColumn
+      only="mobile"
+      textAlign="right"
+      verticalAlignContent="top"
+      width={12}
+    >
+      <GridColumn
+        verticalAlignContent="top"
+        width={null}
+      >
+        <Icon
+          color="light grey"
+          hasBorder={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={true}
+          labelText="Unavailable"
+          labelWeight={null}
+          name="square"
+          path={null}
+          size={null}
+        />
+      </GridColumn>
+    </GridColumn>
+  </Grid>
+</div>
+`;
