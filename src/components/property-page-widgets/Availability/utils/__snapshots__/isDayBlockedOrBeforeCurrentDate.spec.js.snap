@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`isDayBlockedOrBeforeCurrentDate\` if day is blocked should return the right value 1`] = `true`;
+
+exports[`\`isDayBlockedOrBeforeCurrentDate\` if day is not blocked should return the right value when date is in the future 1`] = `false`;
+
+exports[`\`isDayBlockedOrBeforeCurrentDate\` if day is not blocked should return the right value when date is in the past 1`] = `true`;
+
+exports[`\`isDayBlockedOrBeforeCurrentDate\` if day is not passed should return the right value 1`] = `false`;

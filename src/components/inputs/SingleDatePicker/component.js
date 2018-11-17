@@ -2,8 +2,9 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { isEqual } from 'lodash';
 import { SingleDatePicker } from 'react-dates';
-import 'react-dates/initialize';
 
+import 'react-dates/initialize';
+import { returnFirstArgument } from 'utils/return-first-argument';
 import { isBlurEvent } from 'utils/is-blur-event';
 import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
 import { Icon, ICON_NAMES } from 'elements/Icon';
@@ -50,6 +51,7 @@ export class Component extends PureComponent {
 
     return (
       <InputController
+        adaptOnChangeEvent={returnFirstArgument}
         error={error}
         inputOnChangeFunctionName="onDateChange"
         isFocused={!!isFocused}

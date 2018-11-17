@@ -1,3 +1,47 @@
+# [1.81.0](https://github.com/lodgify/lodgify-ui/compare/v1.80.1...v1.81.0) (2018-11-16)
+
+
+### Bug Fixes
+
+* **snapshots:** amend component snaps dependant on InputController ([c07a773](https://github.com/lodgify/lodgify-ui/commit/c07a773))
+
+
+### Features
+
+* **getRatingData:** implement util and unit test ([d5a62d1](https://github.com/lodgify/lodgify-ui/commit/d5a62d1))
+* **InputController:** implement adaptOnChangeEvent prop ([43b7055](https://github.com/lodgify/lodgify-ui/commit/43b7055))
+* **RatingInput:** implement component ([06cf0ac](https://github.com/lodgify/lodgify-ui/commit/06cf0ac))
+* **RatingInput:** implement unit tests ([3fe226c](https://github.com/lodgify/lodgify-ui/commit/3fe226c))
+* **returnFirstArgument:** implement util and unit test ([8de9016](https://github.com/lodgify/lodgify-ui/commit/8de9016))
+
+## [1.80.1](https://github.com/lodgify/lodgify-ui/compare/v1.80.0...v1.80.1) (2018-11-16)
+
+
+### Bug Fixes
+
+* **Availability:** block dates that are in the past ([61692a8](https://github.com/lodgify/lodgify-ui/commit/61692a8))
+
+# [1.80.0](https://github.com/lodgify/lodgify-ui/compare/v1.79.0...v1.80.0) (2018-11-16)
+
+
+### Features
+
+* **Availability:** hide dropdown when 0 roomType and add tests and examples ([13624e8](https://github.com/lodgify/lodgify-ui/commit/13624e8))
+
+# [1.79.0](https://github.com/lodgify/lodgify-ui/compare/v1.78.6...v1.79.0) (2018-11-15)
+
+
+### Features
+
+* **ResponsiveImage:** only apply image transition if image is not loaded from cache ([681e57d](https://github.com/lodgify/lodgify-ui/commit/681e57d))
+
+## [1.78.6](https://github.com/lodgify/lodgify-ui/compare/v1.78.5...v1.78.6) (2018-11-15)
+
+
+### Bug Fixes
+
+* **Form:** use default required message if the passed prop is an empty string ([4e56a64](https://github.com/lodgify/lodgify-ui/commit/4e56a64))
+
 ## [1.78.5](https://github.com/lodgify/lodgify-ui/compare/v1.78.4...v1.78.5) (2018-11-14)
 
 

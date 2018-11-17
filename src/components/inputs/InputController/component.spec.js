@@ -233,9 +233,24 @@ describe('<InputController />', () => {
   });
 
   describe('Interaction: onChange', () => {
+    const value = '🐸';
+
+    it('should call `props.adaptOnChangeEvent` with the correct arguments', () => {
+      const adaptOnChangeEvent = jest.fn();
+      const inputController = getInputController({
+        adaptOnChangeEvent,
+      });
+      const htmlInput = inputController.find('input');
+
+      htmlInput.simulate('change', value);
+
+      expect(adaptOnChangeEvent).toHaveBeenCalledWith(value);
+    });
+
     it('should persist the value in component state', () => {
-      const value = '🐸';
-      const inputController = getInputController();
+      const inputController = getInputController({
+        adaptOnChangeEvent: value => value,
+      });
       const htmlInput = inputController.find('input');
 
       htmlInput.simulate('change', value);

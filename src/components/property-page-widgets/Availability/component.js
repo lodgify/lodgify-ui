@@ -4,22 +4,24 @@ import { CalendarMonth, CalendarDay } from 'react-dates';
 import { BLOCKED_MODIFIER } from 'react-dates/constants';
 import moment from 'moment';
 import { Card } from 'semantic-ui-react';
+import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
-import { Paragraph } from 'typography/Paragraph';
-import { Heading } from 'typography/Heading';
-import { Grid } from 'layout/Grid';
-import { GridRow } from 'layout/GridRow';
-import { GridColumn } from 'layout/GridColumn';
-import { withResponsive } from 'utils/with-responsive';
-import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
+import { Grid } from 'layout/Grid';
+import { GridColumn } from 'layout/GridColumn';
+import { GridRow } from 'layout/GridRow';
+import { Heading } from 'typography/Heading';
+import { Icon, ICON_NAMES } from 'elements/Icon';
+import { Paragraph } from 'typography/Paragraph';
+import { withResponsive } from 'utils/with-responsive';
 
+import { BLOCKED_DAY_CLASS } from './constants';
+import { isDayBlockedOrBeforeCurrentDate } from './utils/isDayBlockedOrBeforeCurrentDate';
 import { getMonthsToDisplay } from './utils/getMonthsToDisplay';
 import { getNextStartDate } from './utils/getNextStartDate';
 import { getPreviousStartDate } from './utils/getPreviousStartDate';
 import { renderMonthHeader } from './utils/renderMonthHeader';
-import { BLOCKED_DAY_CLASS } from './constants';
 
 import 'react-dates/initialize';
 
@@ -52,7 +54,7 @@ class Component extends PureComponent {
     const modifiers = new Set([]);
     const { getIsDayBlocked } = this.props;
 
-    if (props.day && getIsDayBlocked(props.day)) {
+    if (isDayBlockedOrBeforeCurrentDate(props.day, getIsDayBlocked)) {
       modifiers.add(BLOCKED_DAY_CLASS);
       modifiers.add(BLOCKED_MODIFIER);
     }
@@ -74,34 +76,37 @@ class Component extends PureComponent {
         <Heading size="small">Availability</Heading>
         <Grid>
           <GridRow>
+            {size(roomOptionsWithImages) > 0 && (
+              <GridColumn
+                computer={7}
+                mobile={12}
+                tablet={6}
+                verticalAlignContent="middle"
+              >
+                <Grid>
+                  <GridColumn
+                    computer={3}
+                    mobile={5}
+                    tablet={12}
+                    verticalAlignContent="middle"
+                  >
+                    <Paragraph size="tiny" weight="heavy">
+                      View Availability For:
+                    </Paragraph>
+                  </GridColumn>
+                  <GridColumn computer={7} mobile={7} tablet={12}>
+                    <Dropdown
+                      icon={ICON_NAMES.MAP_PIN}
+                      label="Properties"
+                      onChange={this.reloadCalendarOnRoomSelection}
+                      options={roomOptionsWithImages}
+                    />
+                  </GridColumn>
+                </Grid>
+              </GridColumn>
+            )}
             <GridColumn
-              computer={7}
-              mobile={12}
-              tablet={6}
-              verticalAlignContent="middle"
-            >
-              <Grid>
-                <GridColumn
-                  computer={5}
-                  mobile={5}
-                  tablet={12}
-                  verticalAlignContent="middle"
-                >
-                  <Paragraph size="tiny" weight="heavy">
-                    View Availability For:
-                  </Paragraph>
-                </GridColumn>
-                <GridColumn computer={7} mobile={7} tablet={12}>
-                  <Dropdown
-                    icon={ICON_NAMES.MAP_PIN}
-                    label="Properties"
-                    onChange={this.reloadCalendarOnRoomSelection}
-                    options={roomOptionsWithImages}
-                  />
-                </GridColumn>
-              </Grid>
-            </GridColumn>
-            <GridColumn
+              floated="right"
               only="tablet computer"
               textAlign="right"
               verticalAlignContent="middle"
@@ -161,7 +166,7 @@ class Component extends PureComponent {
           <GridColumn only="mobile" textAlign="right" width={12}>
             <GridColumn>
               <Icon
-                color="grey"
+                color="light grey"
                 isLabelLeft
                 labelText="Unavailable"
                 name={ICON_NAMES.SQUARE}

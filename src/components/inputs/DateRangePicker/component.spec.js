@@ -12,6 +12,7 @@ import {
 
 import { InputController } from 'inputs/InputController';
 import { Icon, ICON_NAMES } from 'elements/Icon';
+import { returnFirstArgument } from 'utils/return-first-argument';
 
 import { ComponentWithResponsive as DateRangePicker } from './component';
 
@@ -45,6 +46,7 @@ describe('<DateRangePicker />', () => {
       const wrapper = getInputController();
 
       expectComponentToHaveProps(wrapper, {
+        adaptOnChangeEvent: returnFirstArgument,
         error: false,
         inputOnChangeFunctionName: 'onDatesChange',
         isFocused: false,

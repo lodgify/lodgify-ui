@@ -1,4 +1,16 @@
 ```jsx
+const isDayBlocked = (moment) => moment.format('dddd') === 'Friday';
+
+<Availability
+  getIsDayBlocked={isDayBlocked}
+/>
+```
+
+### Variations
+
+#### With multiple room types
+
+```jsx
 const { roomOptionsWithImages } = require('./mock-data/options');
 
 const state ={

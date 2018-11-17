@@ -1,0 +1,1 @@
+export { returnFirstArgument } from './returnFirstArgument';

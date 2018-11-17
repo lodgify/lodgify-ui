@@ -121,6 +121,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -172,6 +173,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       type="password"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -506,6 +508,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -557,6 +560,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       type="password"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -891,6 +895,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -942,6 +947,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                       type="password"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"

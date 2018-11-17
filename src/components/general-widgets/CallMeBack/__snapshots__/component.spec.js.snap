@@ -158,6 +158,7 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                           type="text"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -208,6 +209,7 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                           onChange={[Function]}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={
                               <Icon
@@ -303,6 +305,7 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -363,6 +366,7 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                           willOpenAbove={false}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onDateChange"
@@ -2486,6 +2490,7 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                       onChange={[Function]}
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -2742,6 +2747,7 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                           type="text"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -2792,6 +2798,7 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                           onChange={[Function]}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={
                               <Icon
@@ -2887,6 +2894,7 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -2947,6 +2955,7 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                           willOpenAbove={false}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onDateChange"
@@ -5070,6 +5079,7 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                       onChange={[Function]}
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -5326,6 +5336,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           type="text"
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onChange"
@@ -5376,6 +5387,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           onChange={[Function]}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={
                               <Icon
@@ -5471,6 +5483,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                       type="text"
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
@@ -5531,6 +5544,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           willOpenAbove={false}
                         >
                           <InputController
+                            adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
                             inputOnChangeFunctionName="onDateChange"
@@ -7654,6 +7668,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                       onChange={[Function]}
                     >
                       <InputController
+                        adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
                         inputOnChangeFunctionName="onChange"
