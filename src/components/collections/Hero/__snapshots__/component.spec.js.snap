@@ -38,6 +38,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
   }
   headerSearchBarModalHeadingText="Heading"
   placeholderBackgroundImageUrl={null}
+  searchBarOnChangeInput={[Function]}
   searchBarOnSubmit={[Function]}
 >
   <FullBleed
@@ -126,6 +127,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
             ]
           }
           searchBarModalHeadingText="Heading"
+          searchBarOnChangeInput={[Function]}
           searchBarOnSubmit={[Function]}
         >
           <header
@@ -229,6 +231,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                     size={null}
                                   />
                                 }
+                                onChangeInput={[Function]}
                                 onSubmit={[Function]}
                                 searchButton={
                                   <Button

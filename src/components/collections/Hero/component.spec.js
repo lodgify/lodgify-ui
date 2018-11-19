@@ -16,6 +16,7 @@ const props = {
     { href: 'anotherHref', text: 'anotherText' },
   ],
   headerSearchBarModalHeadingText: 'Heading',
+  searchBarOnChangeInput: Function.prototype,
   searchBarOnSubmit: Function.prototype,
 };
 
