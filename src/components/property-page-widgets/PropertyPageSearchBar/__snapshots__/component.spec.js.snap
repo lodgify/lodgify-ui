@@ -39,6 +39,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       Check our availability
     </Button>
   }
+  onChangeInput={[Function]}
   searchButton={
     <Button
       hasShadow={false}
@@ -113,6 +114,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               size={null}
             />
           }
+          onChangeInput={[Function]}
           onSubmit={[Function]}
           searchButton={
             <Button
@@ -2594,6 +2596,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               Check our availability
             </Button>
           }
+          onChangeInput={[Function]}
           onSubmit={[Function]}
           searchButton={
             <Button

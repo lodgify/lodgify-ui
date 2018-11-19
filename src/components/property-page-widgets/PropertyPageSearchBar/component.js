@@ -14,6 +14,7 @@ export const Component = ({
   guestsOptions,
   isFixed,
   modalTrigger,
+  onChangeInput,
   searchButton,
   summaryLocationName,
   summaryNightPrice,
@@ -33,6 +34,7 @@ export const Component = ({
         <SearchBar
           guestsOptions={guestsOptions}
           isFixed={isFixed}
+          onChangeInput={onChangeInput}
           searchButton={searchButton}
           summaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: false,
@@ -50,6 +52,7 @@ export const Component = ({
             ...summaryProps,
           })}
           modalTrigger={modalTrigger}
+          onChangeInput={onChangeInput}
           summaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: true,
             ...summaryProps,
@@ -69,6 +72,7 @@ Component.defaultProps = {
     </Button>
   ),
   isFixed: true,
+  onChangeInput: undefined,
   searchButton: (
     <Button isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
@@ -98,6 +102,14 @@ Component.propTypes = {
   isFixed: PropTypes.bool,
   /** The element to be clicked to display the modal. */
   modalTrigger: PropTypes.node,
+  /** A function called when a change in an input occurs in the search bar.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  // eslint-disable-next-line react/no-unused-prop-types
+  onChangeInput: PropTypes.func,
   /** The Search Button the Search Bar displays. */
   searchButton: PropTypes.node,
   /** The location name displayed in the summary. */
