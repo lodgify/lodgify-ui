@@ -285,6 +285,7 @@ exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                 size={null}
               />
             }
+            onChangeInput={[Function]}
             onSubmit={[Function]}
             searchButton="button boy"
             summaryElement={null}
