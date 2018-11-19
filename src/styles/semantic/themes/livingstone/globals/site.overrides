@@ -463,6 +463,11 @@ blockquote.ui.quote .row {
 -----------------------*/
 
 .property-page-searchbar {
+
+  .ui.segments > .ui.segments {
+    margin: 0;
+  }
+
   @media only screen and (max-width: @computerBreakpoint) {
 
     .show-on-mobile {
@@ -471,6 +476,17 @@ blockquote.ui.quote .row {
 
     .show-on-desktop {
       display: none !important;
+    }
+  }
+
+  @media @tabletScreen {
+
+    .ui.segments > .ui.segment {
+      padding: 0;
+    }
+
+    .ui.grid > .row > .column:first-child {
+      padding-right: 0;
     }
   }
 }
