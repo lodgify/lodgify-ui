@@ -1,3 +1,12 @@
+# [1.83.0](https://github.com/lodgify/lodgify-ui/compare/v1.82.0...v1.83.0) (2018-11-19)
+
+
+### Features
+
+* **PropertyPageSearchBar:** add the summary element ([ada58b1](https://github.com/lodgify/lodgify-ui/commit/ada58b1))
+* **Summary:** add prop to only show price and rating ([a655917](https://github.com/lodgify/lodgify-ui/commit/a655917))
+* **Summary:** wrap segments in horizontal group if not enough space and remove unnecessary margin ([d260d5f](https://github.com/lodgify/lodgify-ui/commit/d260d5f))
+
 # [1.82.0](https://github.com/lodgify/lodgify-ui/compare/v1.81.0...v1.82.0) (2018-11-19)
 
 
