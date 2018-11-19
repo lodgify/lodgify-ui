@@ -1,3 +1,15 @@
+# [1.84.0](https://github.com/lodgify/lodgify-ui/compare/v1.83.0...v1.84.0) (2018-11-19)
+
+
+### Features
+
+* **Header:** expose the search bar input change prop ([ffafacd](https://github.com/lodgify/lodgify-ui/commit/ffafacd))
+* **Hero:** expose the search bar input change prop ([20de943](https://github.com/lodgify/lodgify-ui/commit/20de943))
+* **HomepageHero:** expose the search bar input change prop ([e165718](https://github.com/lodgify/lodgify-ui/commit/e165718))
+* **PropertyPageHero:** expose the search bar input change prop ([39c1cef](https://github.com/lodgify/lodgify-ui/commit/39c1cef))
+* **PropertyPageSearchBar:** expose the search bar input change prop ([dc3c18b](https://github.com/lodgify/lodgify-ui/commit/dc3c18b))
+* **SearchBar:** expose function prop to trigger when an input changes ([801dba7](https://github.com/lodgify/lodgify-ui/commit/801dba7))
+
 # [1.83.0](https://github.com/lodgify/lodgify-ui/compare/v1.82.0...v1.83.0) (2018-11-19)
 
 
