@@ -1,3 +1,10 @@
+# [1.82.0](https://github.com/lodgify/lodgify-ui/compare/v1.81.0...v1.82.0) (2018-11-19)
+
+
+### Features
+
+* **CallMeBack:** remove time zone dropdown ([cc415ff](https://github.com/lodgify/lodgify-ui/commit/cc415ff))
+
 # [1.81.0](https://github.com/lodgify/lodgify-ui/compare/v1.80.1...v1.81.0) (2018-11-16)
 
 
