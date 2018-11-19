@@ -20,6 +20,7 @@ const props = {
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),
+  onChangeInput: Function.prototype,
   searchButton: (
     <Button isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}

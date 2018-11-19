@@ -28,6 +28,7 @@ export const Component = ({
   searchBarGuestsOptions,
   searchBarLocationOptions,
   searchBarModalHeadingText,
+  searchBarOnChangeInput,
   searchBarOnSubmit,
   searchBarSearchButton,
 }) => (
@@ -44,6 +45,7 @@ export const Component = ({
     headerSearchBarSearchButton={searchBarSearchButton}
     placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
     searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
+    searchBarOnChangeInput={searchBarOnChangeInput}
     searchBarOnSubmit={searchBarOnSubmit}
   >
     <FlexContainer
@@ -63,6 +65,7 @@ export const Component = ({
               getIsDayBlocked={searchBarGetIsDayBlocked}
               guestsOptions={searchBarGuestsOptions}
               locationOptions={searchBarLocationOptions}
+              onChangeInput={searchBarOnChangeInput}
               onSubmit={searchBarOnSubmit}
               searchButton={searchBarSearchButton}
               willDropdownsOpenAbove
@@ -85,6 +88,7 @@ Component.defaultProps = {
   searchBarGetIsDayBlocked: undefined,
   searchBarLocationOptions: undefined,
   searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
+  searchBarOnChangeInput: undefined,
   searchBarOnSubmit: Function.prototype,
   searchBarSearchButton: undefined,
 };
@@ -160,6 +164,13 @@ Component.propTypes = {
   ),
   /* The heading displayed in the search bar modal. */
   searchBarModalHeadingText: PropTypes.string,
+  /** A function called when a change in an input occurs in the search bar.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  searchBarOnChangeInput: PropTypes.func,
   /** The function to call when the search bar is submitted.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates

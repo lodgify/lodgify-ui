@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { Form } from 'semantic-ui-react';
+import { isEqual } from 'lodash';
 
 import { CHECK_OUR_AVAILABILITY, SEARCH } from 'utils/default-strings';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
@@ -20,6 +21,10 @@ import { getSearchBarModal } from './utils/getSearchBarModal';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {};
+
+  componentDidUpdate(previousProps, previousState) {
+    !isEqual(previousState, this.state) && this.props.onChangeInput(this.state);
+  }
 
   persistInputChange = (name, value) => {
     this.setState({ [name]: value });
@@ -113,6 +118,7 @@ Component.defaultProps = {
   modalHeadingText: CHECK_OUR_AVAILABILITY,
   modalSummaryElement: null,
   modalTrigger: <Icon name={ICON_NAMES.SEARCH} />,
+  onChangeInput: Function.prototype,
   onSubmit: Function.prototype,
   isDisplayedAsModal: false,
   isFixed: false,
@@ -126,6 +132,7 @@ Component.defaultProps = {
   summaryElement: null,
   willDropdownsOpenAbove: false,
 };
+
 Component.propTypes = {
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
@@ -175,6 +182,13 @@ Component.propTypes = {
   modalSummaryElement: PropTypes.node,
   /** The element to be clicked to display the modal. */
   modalTrigger: PropTypes.node,
+  /** A function called when a change in an input occurs.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  onChangeInput: PropTypes.func,
   /** The function to call when the search bar is submitted.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates
