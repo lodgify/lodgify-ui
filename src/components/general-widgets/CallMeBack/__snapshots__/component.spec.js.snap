@@ -62,23 +62,6 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
       },
     ]
   }
-  timeZoneInputLabel="Time Zone"
-  timeZoneOptions={
-    Array [
-      Object {
-        "text": "CET",
-        "value": "cet",
-      },
-      Object {
-        "text": "GMT",
-        "value": "gmt",
-      },
-      Object {
-        "text": "EST",
-        "value": "est",
-      },
-    ]
-  }
   validation={Object {}}
 >
   <Form
@@ -1921,280 +1904,75 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                     </FormField>
                   </div>
                 </InputGroup>
-                <InputGroup
+                <FormField
                   key=".3"
-                  widths="equal"
                 >
                   <div
-                    className="equal width fields"
+                    className="field"
                   >
-                    <FormField
-                      key=".0"
+                    <Dropdown
+                      error={false}
+                      icon={null}
+                      isDisabled={false}
+                      isValid={false}
+                      label="Property"
+                      name="property"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      options={
+                        Array [
+                          Object {
+                            "text": "La Casa Viva",
+                            "value": "casaViva",
+                          },
+                          Object {
+                            "text": "La Casa Muerta",
+                            "value": "casaMuerta",
+                          },
+                          Object {
+                            "text": "The White Lodge",
+                            "value": "whiteLodge",
+                          },
+                          Object {
+                            "text": "The Black Lodge",
+                            "value": "blackLodge",
+                          },
+                        ]
+                      }
+                      willOpenAbove={false}
                     >
                       <div
-                        className="field"
+                        className="dropdown-container"
                       >
                         <Dropdown
-                          error={false}
-                          icon={null}
-                          isDisabled={false}
-                          isValid={false}
-                          label="Time Zone"
-                          name="timeZone"
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          options={
-                            Array [
-                              Object {
-                                "text": "CET",
-                                "value": "cet",
-                              },
-                              Object {
-                                "text": "GMT",
-                                "value": "gmt",
-                              },
-                              Object {
-                                "text": "EST",
-                                "value": "est",
-                              },
-                            ]
+                          additionLabel="Add "
+                          additionPosition="top"
+                          closeOnBlur={true}
+                          deburr={false}
+                          defaultValue={null}
+                          disabled={false}
+                          icon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
+                              path={null}
+                              size={null}
+                            />
                           }
-                          willOpenAbove={false}
-                        >
-                          <div
-                            className="dropdown-container"
-                          >
-                            <Dropdown
-                              additionLabel="Add "
-                              additionPosition="top"
-                              closeOnBlur={true}
-                              deburr={false}
-                              defaultValue={null}
-                              disabled={false}
-                              icon={
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
-                                  path={null}
-                                  size={null}
-                                />
-                              }
-                              minCharacters={1}
-                              noResultsMessage="No results found."
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              onClick={[Function]}
-                              open={false}
-                              openOnFocus={true}
-                              options={
-                                Array [
-                                  Object {
-                                    "text": "CET",
-                                    "value": "cet",
-                                  },
-                                  Object {
-                                    "text": "GMT",
-                                    "value": "gmt",
-                                  },
-                                  Object {
-                                    "text": "EST",
-                                    "value": "est",
-                                  },
-                                ]
-                              }
-                              renderLabel={[Function]}
-                              searchInput="text"
-                              selectOnBlur={true}
-                              selectOnNavigation={true}
-                              selection={true}
-                              upward={false}
-                              wrapSelection={true}
-                            >
-                              <div
-                                aria-disabled={false}
-                                aria-expanded={false}
-                                className="ui selection dropdown"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseDown={[Function]}
-                                role="listbox"
-                                tabIndex={0}
-                              >
-                                <div
-                                  aria-live="polite"
-                                  className="text"
-                                  role="alert"
-                                />
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
-                                  onClick={[Function]}
-                                  path={null}
-                                  size={null}
-                                >
-                                  <i
-                                    className="icon"
-                                    onClick={[Function]}
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M20,8.5l-8,7-8-7Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <DropdownMenu
-                                  open={false}
-                                >
-                                  <div
-                                    className="menu transition"
-                                  >
-                                    <DropdownItem
-                                      active={false}
-                                      key="cet"
-                                      onClick={[Function]}
-                                      selected={true}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="CET"
-                                      value="cet"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={true}
-                                        className="selected item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="CET"
-                                        >
-                                          CET
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="gmt"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="GMT"
-                                      value="gmt"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="GMT"
-                                        >
-                                          GMT
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="est"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="EST"
-                                      value="est"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="EST"
-                                        >
-                                          EST
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                  </div>
-                                </DropdownMenu>
-                              </div>
-                            </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Time Zone
-                            </label>
-                          </div>
-                        </Dropdown>
-                      </div>
-                    </FormField>
-                    <FormField
-                      key=".1"
-                    >
-                      <div
-                        className="field"
-                      >
-                        <Dropdown
-                          error={false}
-                          icon={null}
-                          isDisabled={false}
-                          isValid={false}
-                          label="Property"
-                          name="property"
+                          minCharacters={1}
+                          noResultsMessage="No results found."
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onClick={[Function]}
+                          open={false}
+                          openOnFocus={true}
                           options={
                             Array [
                               Object {
@@ -2215,266 +1993,210 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                               },
                             ]
                           }
-                          willOpenAbove={false}
+                          renderLabel={[Function]}
+                          searchInput="text"
+                          selectOnBlur={true}
+                          selectOnNavigation={true}
+                          selection={true}
+                          upward={false}
+                          wrapSelection={true}
                         >
                           <div
-                            className="dropdown-container"
+                            aria-disabled={false}
+                            aria-expanded={false}
+                            className="ui selection dropdown"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseDown={[Function]}
+                            role="listbox"
+                            tabIndex={0}
                           >
-                            <Dropdown
-                              additionLabel="Add "
-                              additionPosition="top"
-                              closeOnBlur={true}
-                              deburr={false}
-                              defaultValue={null}
-                              disabled={false}
-                              icon={
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
-                                  path={null}
-                                  size={null}
-                                />
-                              }
-                              minCharacters={1}
-                              noResultsMessage="No results found."
-                              onBlur={[Function]}
-                              onChange={[Function]}
+                            <div
+                              aria-live="polite"
+                              className="text"
+                              role="alert"
+                            />
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
                               onClick={[Function]}
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon"
+                                onClick={[Function]}
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M20,8.5l-8,7-8-7Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </Icon>
+                            <DropdownMenu
                               open={false}
-                              openOnFocus={true}
-                              options={
-                                Array [
-                                  Object {
-                                    "text": "La Casa Viva",
-                                    "value": "casaViva",
-                                  },
-                                  Object {
-                                    "text": "La Casa Muerta",
-                                    "value": "casaMuerta",
-                                  },
-                                  Object {
-                                    "text": "The White Lodge",
-                                    "value": "whiteLodge",
-                                  },
-                                  Object {
-                                    "text": "The Black Lodge",
-                                    "value": "blackLodge",
-                                  },
-                                ]
-                              }
-                              renderLabel={[Function]}
-                              searchInput="text"
-                              selectOnBlur={true}
-                              selectOnNavigation={true}
-                              selection={true}
-                              upward={false}
-                              wrapSelection={true}
                             >
                               <div
-                                aria-disabled={false}
-                                aria-expanded={false}
-                                className="ui selection dropdown"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseDown={[Function]}
-                                role="listbox"
-                                tabIndex={0}
+                                className="menu transition"
                               >
-                                <div
-                                  aria-live="polite"
-                                  className="text"
-                                  role="alert"
-                                />
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
+                                <DropdownItem
+                                  active={false}
+                                  key="casaViva"
                                   onClick={[Function]}
-                                  path={null}
-                                  size={null}
-                                >
-                                  <i
-                                    className="icon"
-                                    onClick={[Function]}
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M20,8.5l-8,7-8-7Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <DropdownMenu
-                                  open={false}
+                                  selected={true}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="La Casa Viva"
+                                  value="casaViva"
                                 >
                                   <div
-                                    className="menu transition"
+                                    aria-checked={false}
+                                    aria-selected={true}
+                                    className="selected item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
                                   >
-                                    <DropdownItem
-                                      active={false}
-                                      key="casaViva"
-                                      onClick={[Function]}
-                                      selected={true}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="La Casa Viva"
-                                      value="casaViva"
+                                    <span
+                                      className="text"
+                                      key="La Casa Viva"
                                     >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={true}
-                                        className="selected item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="La Casa Viva"
-                                        >
-                                          La Casa Viva
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="casaMuerta"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="La Casa Muerta"
-                                      value="casaMuerta"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="La Casa Muerta"
-                                        >
-                                          La Casa Muerta
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="whiteLodge"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="The White Lodge"
-                                      value="whiteLodge"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="The White Lodge"
-                                        >
-                                          The White Lodge
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="blackLodge"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="The Black Lodge"
-                                      value="blackLodge"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="The Black Lodge"
-                                        >
-                                          The Black Lodge
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
+                                      La Casa Viva
+                                    </span>
                                   </div>
-                                </DropdownMenu>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="casaMuerta"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="La Casa Muerta"
+                                  value="casaMuerta"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="La Casa Muerta"
+                                    >
+                                      La Casa Muerta
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="whiteLodge"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="The White Lodge"
+                                  value="whiteLodge"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="The White Lodge"
+                                    >
+                                      The White Lodge
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="blackLodge"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="The Black Lodge"
+                                  value="blackLodge"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="The Black Lodge"
+                                    >
+                                      The Black Lodge
+                                    </span>
+                                  </div>
+                                </DropdownItem>
                               </div>
-                            </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Property
-                            </label>
+                            </DropdownMenu>
                           </div>
                         </Dropdown>
+                        <label
+                          onClick={[Function]}
+                        >
+                          Property
+                        </label>
                       </div>
-                    </FormField>
+                    </Dropdown>
                   </div>
-                </InputGroup>
+                </FormField>
                 <FormField
                   key=".4"
                 >
@@ -2648,23 +2370,6 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
       Object {
         "text": "3 pm",
         "value": "1500",
-      },
-    ]
-  }
-  timeZoneInputLabel="Time Zone"
-  timeZoneOptions={
-    Array [
-      Object {
-        "text": "CET",
-        "value": "cet",
-      },
-      Object {
-        "text": "GMT",
-        "value": "gmt",
-      },
-      Object {
-        "text": "EST",
-        "value": "est",
       },
     ]
   }
@@ -4510,280 +4215,75 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                     </FormField>
                   </div>
                 </InputGroup>
-                <InputGroup
+                <FormField
                   key=".3"
-                  widths="equal"
                 >
                   <div
-                    className="equal width fields"
+                    className="field"
                   >
-                    <FormField
-                      key=".0"
+                    <Dropdown
+                      error={false}
+                      icon={null}
+                      isDisabled={false}
+                      isValid={false}
+                      label="Property"
+                      name="property"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      options={
+                        Array [
+                          Object {
+                            "text": "La Casa Viva",
+                            "value": "casaViva",
+                          },
+                          Object {
+                            "text": "La Casa Muerta",
+                            "value": "casaMuerta",
+                          },
+                          Object {
+                            "text": "The White Lodge",
+                            "value": "whiteLodge",
+                          },
+                          Object {
+                            "text": "The Black Lodge",
+                            "value": "blackLodge",
+                          },
+                        ]
+                      }
+                      willOpenAbove={false}
                     >
                       <div
-                        className="field"
+                        className="dropdown-container"
                       >
                         <Dropdown
-                          error={false}
-                          icon={null}
-                          isDisabled={false}
-                          isValid={false}
-                          label="Time Zone"
-                          name="timeZone"
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          options={
-                            Array [
-                              Object {
-                                "text": "CET",
-                                "value": "cet",
-                              },
-                              Object {
-                                "text": "GMT",
-                                "value": "gmt",
-                              },
-                              Object {
-                                "text": "EST",
-                                "value": "est",
-                              },
-                            ]
+                          additionLabel="Add "
+                          additionPosition="top"
+                          closeOnBlur={true}
+                          deburr={false}
+                          defaultValue={null}
+                          disabled={false}
+                          icon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
+                              path={null}
+                              size={null}
+                            />
                           }
-                          willOpenAbove={false}
-                        >
-                          <div
-                            className="dropdown-container"
-                          >
-                            <Dropdown
-                              additionLabel="Add "
-                              additionPosition="top"
-                              closeOnBlur={true}
-                              deburr={false}
-                              defaultValue={null}
-                              disabled={false}
-                              icon={
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
-                                  path={null}
-                                  size={null}
-                                />
-                              }
-                              minCharacters={1}
-                              noResultsMessage="No results found."
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              onClick={[Function]}
-                              open={false}
-                              openOnFocus={true}
-                              options={
-                                Array [
-                                  Object {
-                                    "text": "CET",
-                                    "value": "cet",
-                                  },
-                                  Object {
-                                    "text": "GMT",
-                                    "value": "gmt",
-                                  },
-                                  Object {
-                                    "text": "EST",
-                                    "value": "est",
-                                  },
-                                ]
-                              }
-                              renderLabel={[Function]}
-                              searchInput="text"
-                              selectOnBlur={true}
-                              selectOnNavigation={true}
-                              selection={true}
-                              upward={false}
-                              wrapSelection={true}
-                            >
-                              <div
-                                aria-disabled={false}
-                                aria-expanded={false}
-                                className="ui selection dropdown"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseDown={[Function]}
-                                role="listbox"
-                                tabIndex={0}
-                              >
-                                <div
-                                  aria-live="polite"
-                                  className="text"
-                                  role="alert"
-                                />
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
-                                  onClick={[Function]}
-                                  path={null}
-                                  size={null}
-                                >
-                                  <i
-                                    className="icon"
-                                    onClick={[Function]}
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M20,8.5l-8,7-8-7Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <DropdownMenu
-                                  open={false}
-                                >
-                                  <div
-                                    className="menu transition"
-                                  >
-                                    <DropdownItem
-                                      active={false}
-                                      key="cet"
-                                      onClick={[Function]}
-                                      selected={true}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="CET"
-                                      value="cet"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={true}
-                                        className="selected item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="CET"
-                                        >
-                                          CET
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="gmt"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="GMT"
-                                      value="gmt"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="GMT"
-                                        >
-                                          GMT
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="est"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="EST"
-                                      value="est"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="EST"
-                                        >
-                                          EST
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                  </div>
-                                </DropdownMenu>
-                              </div>
-                            </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Time Zone
-                            </label>
-                          </div>
-                        </Dropdown>
-                      </div>
-                    </FormField>
-                    <FormField
-                      key=".1"
-                    >
-                      <div
-                        className="field"
-                      >
-                        <Dropdown
-                          error={false}
-                          icon={null}
-                          isDisabled={false}
-                          isValid={false}
-                          label="Property"
-                          name="property"
+                          minCharacters={1}
+                          noResultsMessage="No results found."
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onClick={[Function]}
+                          open={false}
+                          openOnFocus={true}
                           options={
                             Array [
                               Object {
@@ -4804,266 +4304,210 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                               },
                             ]
                           }
-                          willOpenAbove={false}
+                          renderLabel={[Function]}
+                          searchInput="text"
+                          selectOnBlur={true}
+                          selectOnNavigation={true}
+                          selection={true}
+                          upward={false}
+                          wrapSelection={true}
                         >
                           <div
-                            className="dropdown-container"
+                            aria-disabled={false}
+                            aria-expanded={false}
+                            className="ui selection dropdown"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseDown={[Function]}
+                            role="listbox"
+                            tabIndex={0}
                           >
-                            <Dropdown
-                              additionLabel="Add "
-                              additionPosition="top"
-                              closeOnBlur={true}
-                              deburr={false}
-                              defaultValue={null}
-                              disabled={false}
-                              icon={
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
-                                  path={null}
-                                  size={null}
-                                />
-                              }
-                              minCharacters={1}
-                              noResultsMessage="No results found."
-                              onBlur={[Function]}
-                              onChange={[Function]}
+                            <div
+                              aria-live="polite"
+                              className="text"
+                              role="alert"
+                            />
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
                               onClick={[Function]}
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon"
+                                onClick={[Function]}
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M20,8.5l-8,7-8-7Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </Icon>
+                            <DropdownMenu
                               open={false}
-                              openOnFocus={true}
-                              options={
-                                Array [
-                                  Object {
-                                    "text": "La Casa Viva",
-                                    "value": "casaViva",
-                                  },
-                                  Object {
-                                    "text": "La Casa Muerta",
-                                    "value": "casaMuerta",
-                                  },
-                                  Object {
-                                    "text": "The White Lodge",
-                                    "value": "whiteLodge",
-                                  },
-                                  Object {
-                                    "text": "The Black Lodge",
-                                    "value": "blackLodge",
-                                  },
-                                ]
-                              }
-                              renderLabel={[Function]}
-                              searchInput="text"
-                              selectOnBlur={true}
-                              selectOnNavigation={true}
-                              selection={true}
-                              upward={false}
-                              wrapSelection={true}
                             >
                               <div
-                                aria-disabled={false}
-                                aria-expanded={false}
-                                className="ui selection dropdown"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseDown={[Function]}
-                                role="listbox"
-                                tabIndex={0}
+                                className="menu transition"
                               >
-                                <div
-                                  aria-live="polite"
-                                  className="text"
-                                  role="alert"
-                                />
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
+                                <DropdownItem
+                                  active={false}
+                                  key="casaViva"
                                   onClick={[Function]}
-                                  path={null}
-                                  size={null}
-                                >
-                                  <i
-                                    className="icon"
-                                    onClick={[Function]}
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M20,8.5l-8,7-8-7Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <DropdownMenu
-                                  open={false}
+                                  selected={true}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="La Casa Viva"
+                                  value="casaViva"
                                 >
                                   <div
-                                    className="menu transition"
+                                    aria-checked={false}
+                                    aria-selected={true}
+                                    className="selected item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
                                   >
-                                    <DropdownItem
-                                      active={false}
-                                      key="casaViva"
-                                      onClick={[Function]}
-                                      selected={true}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="La Casa Viva"
-                                      value="casaViva"
+                                    <span
+                                      className="text"
+                                      key="La Casa Viva"
                                     >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={true}
-                                        className="selected item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="La Casa Viva"
-                                        >
-                                          La Casa Viva
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="casaMuerta"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="La Casa Muerta"
-                                      value="casaMuerta"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="La Casa Muerta"
-                                        >
-                                          La Casa Muerta
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="whiteLodge"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="The White Lodge"
-                                      value="whiteLodge"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="The White Lodge"
-                                        >
-                                          The White Lodge
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="blackLodge"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="The Black Lodge"
-                                      value="blackLodge"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="The Black Lodge"
-                                        >
-                                          The Black Lodge
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
+                                      La Casa Viva
+                                    </span>
                                   </div>
-                                </DropdownMenu>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="casaMuerta"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="La Casa Muerta"
+                                  value="casaMuerta"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="La Casa Muerta"
+                                    >
+                                      La Casa Muerta
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="whiteLodge"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="The White Lodge"
+                                  value="whiteLodge"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="The White Lodge"
+                                    >
+                                      The White Lodge
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="blackLodge"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="The Black Lodge"
+                                  value="blackLodge"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="The Black Lodge"
+                                    >
+                                      The Black Lodge
+                                    </span>
+                                  </div>
+                                </DropdownItem>
                               </div>
-                            </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Property
-                            </label>
+                            </DropdownMenu>
                           </div>
                         </Dropdown>
+                        <label
+                          onClick={[Function]}
+                        >
+                          Property
+                        </label>
                       </div>
-                    </FormField>
+                    </Dropdown>
                   </div>
-                </InputGroup>
+                </FormField>
                 <FormField
                   key=".4"
                 >
@@ -5237,23 +4681,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
       Object {
         "text": "3 pm",
         "value": "1500",
-      },
-    ]
-  }
-  timeZoneInputLabel="Time Zone"
-  timeZoneOptions={
-    Array [
-      Object {
-        "text": "CET",
-        "value": "cet",
-      },
-      Object {
-        "text": "GMT",
-        "value": "gmt",
-      },
-      Object {
-        "text": "EST",
-        "value": "est",
       },
     ]
   }
@@ -7099,280 +6526,75 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                     </FormField>
                   </div>
                 </InputGroup>
-                <InputGroup
+                <FormField
                   key=".3"
-                  widths="equal"
                 >
                   <div
-                    className="equal width fields"
+                    className="field"
                   >
-                    <FormField
-                      key=".0"
+                    <Dropdown
+                      error={false}
+                      icon={null}
+                      isDisabled={false}
+                      isValid={false}
+                      label="Property"
+                      name="property"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      options={
+                        Array [
+                          Object {
+                            "text": "La Casa Viva",
+                            "value": "casaViva",
+                          },
+                          Object {
+                            "text": "La Casa Muerta",
+                            "value": "casaMuerta",
+                          },
+                          Object {
+                            "text": "The White Lodge",
+                            "value": "whiteLodge",
+                          },
+                          Object {
+                            "text": "The Black Lodge",
+                            "value": "blackLodge",
+                          },
+                        ]
+                      }
+                      willOpenAbove={false}
                     >
                       <div
-                        className="field"
+                        className="dropdown-container"
                       >
                         <Dropdown
-                          error={false}
-                          icon={null}
-                          isDisabled={false}
-                          isValid={false}
-                          label="Time Zone"
-                          name="timeZone"
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          options={
-                            Array [
-                              Object {
-                                "text": "CET",
-                                "value": "cet",
-                              },
-                              Object {
-                                "text": "GMT",
-                                "value": "gmt",
-                              },
-                              Object {
-                                "text": "EST",
-                                "value": "est",
-                              },
-                            ]
+                          additionLabel="Add "
+                          additionPosition="top"
+                          closeOnBlur={true}
+                          deburr={false}
+                          defaultValue={null}
+                          disabled={false}
+                          icon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
+                              path={null}
+                              size={null}
+                            />
                           }
-                          willOpenAbove={false}
-                        >
-                          <div
-                            className="dropdown-container"
-                          >
-                            <Dropdown
-                              additionLabel="Add "
-                              additionPosition="top"
-                              closeOnBlur={true}
-                              deburr={false}
-                              defaultValue={null}
-                              disabled={false}
-                              icon={
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
-                                  path={null}
-                                  size={null}
-                                />
-                              }
-                              minCharacters={1}
-                              noResultsMessage="No results found."
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              onClick={[Function]}
-                              open={false}
-                              openOnFocus={true}
-                              options={
-                                Array [
-                                  Object {
-                                    "text": "CET",
-                                    "value": "cet",
-                                  },
-                                  Object {
-                                    "text": "GMT",
-                                    "value": "gmt",
-                                  },
-                                  Object {
-                                    "text": "EST",
-                                    "value": "est",
-                                  },
-                                ]
-                              }
-                              renderLabel={[Function]}
-                              searchInput="text"
-                              selectOnBlur={true}
-                              selectOnNavigation={true}
-                              selection={true}
-                              upward={false}
-                              wrapSelection={true}
-                            >
-                              <div
-                                aria-disabled={false}
-                                aria-expanded={false}
-                                className="ui selection dropdown"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseDown={[Function]}
-                                role="listbox"
-                                tabIndex={0}
-                              >
-                                <div
-                                  aria-live="polite"
-                                  className="text"
-                                  role="alert"
-                                />
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
-                                  onClick={[Function]}
-                                  path={null}
-                                  size={null}
-                                >
-                                  <i
-                                    className="icon"
-                                    onClick={[Function]}
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M20,8.5l-8,7-8-7Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <DropdownMenu
-                                  open={false}
-                                >
-                                  <div
-                                    className="menu transition"
-                                  >
-                                    <DropdownItem
-                                      active={false}
-                                      key="cet"
-                                      onClick={[Function]}
-                                      selected={true}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="CET"
-                                      value="cet"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={true}
-                                        className="selected item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="CET"
-                                        >
-                                          CET
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="gmt"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="GMT"
-                                      value="gmt"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="GMT"
-                                        >
-                                          GMT
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="est"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="EST"
-                                      value="est"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="EST"
-                                        >
-                                          EST
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                  </div>
-                                </DropdownMenu>
-                              </div>
-                            </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Time Zone
-                            </label>
-                          </div>
-                        </Dropdown>
-                      </div>
-                    </FormField>
-                    <FormField
-                      key=".1"
-                    >
-                      <div
-                        className="field"
-                      >
-                        <Dropdown
-                          error={false}
-                          icon={null}
-                          isDisabled={false}
-                          isValid={false}
-                          label="Property"
-                          name="property"
+                          minCharacters={1}
+                          noResultsMessage="No results found."
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onClick={[Function]}
+                          open={false}
+                          openOnFocus={true}
                           options={
                             Array [
                               Object {
@@ -7393,266 +6615,210 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               },
                             ]
                           }
-                          willOpenAbove={false}
+                          renderLabel={[Function]}
+                          searchInput="text"
+                          selectOnBlur={true}
+                          selectOnNavigation={true}
+                          selection={true}
+                          upward={false}
+                          wrapSelection={true}
                         >
                           <div
-                            className="dropdown-container"
+                            aria-disabled={false}
+                            aria-expanded={false}
+                            className="ui selection dropdown"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseDown={[Function]}
+                            role="listbox"
+                            tabIndex={0}
                           >
-                            <Dropdown
-                              additionLabel="Add "
-                              additionPosition="top"
-                              closeOnBlur={true}
-                              deburr={false}
-                              defaultValue={null}
-                              disabled={false}
-                              icon={
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
-                                  path={null}
-                                  size={null}
-                                />
-                              }
-                              minCharacters={1}
-                              noResultsMessage="No results found."
-                              onBlur={[Function]}
-                              onChange={[Function]}
+                            <div
+                              aria-live="polite"
+                              className="text"
+                              role="alert"
+                            />
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
                               onClick={[Function]}
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon"
+                                onClick={[Function]}
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M20,8.5l-8,7-8-7Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </Icon>
+                            <DropdownMenu
                               open={false}
-                              openOnFocus={true}
-                              options={
-                                Array [
-                                  Object {
-                                    "text": "La Casa Viva",
-                                    "value": "casaViva",
-                                  },
-                                  Object {
-                                    "text": "La Casa Muerta",
-                                    "value": "casaMuerta",
-                                  },
-                                  Object {
-                                    "text": "The White Lodge",
-                                    "value": "whiteLodge",
-                                  },
-                                  Object {
-                                    "text": "The Black Lodge",
-                                    "value": "blackLodge",
-                                  },
-                                ]
-                              }
-                              renderLabel={[Function]}
-                              searchInput="text"
-                              selectOnBlur={true}
-                              selectOnNavigation={true}
-                              selection={true}
-                              upward={false}
-                              wrapSelection={true}
                             >
                               <div
-                                aria-disabled={false}
-                                aria-expanded={false}
-                                className="ui selection dropdown"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseDown={[Function]}
-                                role="listbox"
-                                tabIndex={0}
+                                className="menu transition"
                               >
-                                <div
-                                  aria-live="polite"
-                                  className="text"
-                                  role="alert"
-                                />
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="caret down"
+                                <DropdownItem
+                                  active={false}
+                                  key="casaViva"
                                   onClick={[Function]}
-                                  path={null}
-                                  size={null}
-                                >
-                                  <i
-                                    className="icon"
-                                    onClick={[Function]}
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M20,8.5l-8,7-8-7Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <DropdownMenu
-                                  open={false}
+                                  selected={true}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="La Casa Viva"
+                                  value="casaViva"
                                 >
                                   <div
-                                    className="menu transition"
+                                    aria-checked={false}
+                                    aria-selected={true}
+                                    className="selected item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
                                   >
-                                    <DropdownItem
-                                      active={false}
-                                      key="casaViva"
-                                      onClick={[Function]}
-                                      selected={true}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="La Casa Viva"
-                                      value="casaViva"
+                                    <span
+                                      className="text"
+                                      key="La Casa Viva"
                                     >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={true}
-                                        className="selected item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="La Casa Viva"
-                                        >
-                                          La Casa Viva
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="casaMuerta"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="La Casa Muerta"
-                                      value="casaMuerta"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="La Casa Muerta"
-                                        >
-                                          La Casa Muerta
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="whiteLodge"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="The White Lodge"
-                                      value="whiteLodge"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="The White Lodge"
-                                        >
-                                          The White Lodge
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
-                                    <DropdownItem
-                                      active={false}
-                                      key="blackLodge"
-                                      onClick={[Function]}
-                                      selected={false}
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
-                                      text="The Black Lodge"
-                                      value="blackLodge"
-                                    >
-                                      <div
-                                        aria-checked={false}
-                                        aria-selected={false}
-                                        className="item"
-                                        onClick={[Function]}
-                                        role="option"
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                      >
-                                        <span
-                                          className="text"
-                                          key="The Black Lodge"
-                                        >
-                                          The Black Lodge
-                                        </span>
-                                      </div>
-                                    </DropdownItem>
+                                      La Casa Viva
+                                    </span>
                                   </div>
-                                </DropdownMenu>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="casaMuerta"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="La Casa Muerta"
+                                  value="casaMuerta"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="La Casa Muerta"
+                                    >
+                                      La Casa Muerta
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="whiteLodge"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="The White Lodge"
+                                  value="whiteLodge"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="The White Lodge"
+                                    >
+                                      The White Lodge
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="blackLodge"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="The Black Lodge"
+                                  value="blackLodge"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="The Black Lodge"
+                                    >
+                                      The Black Lodge
+                                    </span>
+                                  </div>
+                                </DropdownItem>
                               </div>
-                            </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Property
-                            </label>
+                            </DropdownMenu>
                           </div>
                         </Dropdown>
+                        <label
+                          onClick={[Function]}
+                        >
+                          Property
+                        </label>
                       </div>
-                    </FormField>
+                    </Dropdown>
                   </div>
-                </InputGroup>
+                </FormField>
                 <FormField
                   key=".4"
                 >
