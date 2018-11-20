@@ -64,6 +64,9 @@
 /* Full bleed */
 @backgroundImageGradient: linear-gradient(0deg, rgba(255, 255, 255, 0) 51%, rgba(0, 0, 0, 0.5) 100%);
 
+/* Is Summary */
+@summaryLocationNameMaxWidth: 185px;
+
 /* Is Promotion */
 @promotionBackgroundColor: @yellow;
 @promotionBorderRadius: @3px;

@@ -45,9 +45,13 @@ exports[`<Summary/> by default should render the right structure 1`] = `
         <div
           className="ui horizontal segments horizontal-wrap"
         >
-          <Segment>
+          <Segment
+            className="is-location-name"
+            title="Catania"
+          >
             <div
-              className="ui segment"
+              className="ui segment is-location-name"
+              title="Catania"
             >
               Catania
               <Icon
@@ -78,9 +82,11 @@ exports[`<Summary/> by default should render the right structure 1`] = `
               </Icon>
             </div>
           </Segment>
-          <Segment>
+          <Segment
+            className="is-rating-number"
+          >
             <div
-              className="ui segment"
+              className="ui segment is-rating-number"
             >
               <Rating
                 iconSize="tiny"
@@ -308,9 +314,11 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
               </span>
             </div>
           </Segment>
-          <Segment>
+          <Segment
+            className="is-rating-number"
+          >
             <div
-              className="ui segment"
+              className="ui segment is-rating-number"
             >
               <Rating
                 iconSize="tiny"

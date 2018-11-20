@@ -161,7 +161,7 @@ describe('getFormFieldMarkup', () => {
       const wrapper = getField();
 
       expectComponentToHaveProps(wrapper, {
-        width: 'three',
+        width: 'four',
       });
     });
 

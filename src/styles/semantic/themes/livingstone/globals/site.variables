@@ -171,6 +171,7 @@
 @tabletBreakpoint: 600px;
 @computerBreakpoint: 1000px;
 @smallestComputerBreakpoint: (@tabletBreakpoint + 1px);
+@smallestLargeComputerBreakpoint: (@computerBreakpoint + 1px);
 
 @tinyScreen: ~"only screen and (max-width: @{largestTinyScreen})";
 @mobileScreen: ~"only screen and (max-width: @{largestMobileScreen})";
@@ -439,8 +440,11 @@
 --------------------*/
 @searchBarFixedBackgroundColor: @pureWhite;
 @searchBarFixedZIndex: 999;
-@searchBarFixedPadding: @20px 0;
+@searchBarFixedPadding: @10px 0;
+@searchBarFixedHeight: 85px;
 @searchBarFixedBoxShadow: 0 -(@4px) @9px -(@6px) rgba(0, 0, 0, 0.29);
+@searchBarFixedButtonWidth: 180px;
+@searchBarFixedButtonHeight: 42px;
 
 /*-------------------
    Horizontal Gutter
