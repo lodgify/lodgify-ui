@@ -4,9 +4,187 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
 <RatingInput
   error={false}
   iconSize="small"
+  label=""
   name=""
   onChange={[Function]}
 >
+  <InputController
+    adaptOnChangeEvent={[Function]}
+    error={false}
+    icon={null}
+    inputOnChangeFunctionName="onRate"
+    isFocused={false}
+    isValid={false}
+    label={null}
+    name=""
+    onChange={[Function]}
+  >
+    <Input
+      className=""
+      iconPosition={null}
+      type="text"
+    >
+      <div
+        className="ui input"
+      >
+        <Rating
+          clearable="auto"
+          key=".2"
+          maxRating={5}
+          onRate={[Function]}
+          size="small"
+        >
+          <div
+            className="ui small rating"
+            onMouseLeave={[Function]}
+            role="radiogroup"
+          >
+            <RatingIcon
+              active={false}
+              aria-checked={false}
+              aria-posinset={1}
+              aria-setsize={5}
+              as="i"
+              index={0}
+              key="0"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={1}
+                aria-setsize={5}
+                className="icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+            <RatingIcon
+              active={false}
+              aria-checked={false}
+              aria-posinset={2}
+              aria-setsize={5}
+              as="i"
+              index={1}
+              key="1"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={2}
+                aria-setsize={5}
+                className="icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+            <RatingIcon
+              active={false}
+              aria-checked={false}
+              aria-posinset={3}
+              aria-setsize={5}
+              as="i"
+              index={2}
+              key="2"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={3}
+                aria-setsize={5}
+                className="icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+            <RatingIcon
+              active={false}
+              aria-checked={false}
+              aria-posinset={4}
+              aria-setsize={5}
+              as="i"
+              index={3}
+              key="3"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={4}
+                aria-setsize={5}
+                className="icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+            <RatingIcon
+              active={false}
+              aria-checked={false}
+              aria-posinset={5}
+              aria-setsize={5}
+              as="i"
+              index={4}
+              key="4"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={5}
+                aria-setsize={5}
+                className="icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+          </div>
+        </Rating>
+      </div>
+    </Input>
+  </InputController>
+</RatingInput>
+`;
+
+exports[`the \`RatingInput\` component should render a \`Paragraph\` component if the label prop is passed 1`] = `
+<RatingInput
+  error={false}
+  iconSize="small"
+  label="A real label"
+  name=""
+  onChange={[Function]}
+>
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    <p
+      className=""
+    >
+      A real label
+    </p>
+  </Paragraph>
   <InputController
     adaptOnChangeEvent={[Function]}
     error={false}
