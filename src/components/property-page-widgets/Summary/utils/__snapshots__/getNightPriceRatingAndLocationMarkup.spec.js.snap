@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getNightPriceRatingAndLocationMarkup should return the right structure 1`] = `
+Array [
+  <Segment
+    className="is-location-name"
+    title="someLocation"
+  >
+    <div
+      className="ui segment is-location-name"
+      title="someLocation"
+    >
+      someLocation
+      <Icon
+        color="yellow"
+        hasBorder={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="map pin"
+        path={null}
+        size="small"
+      >
+        <i
+          className="icon yellow small"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2.72c-3.17,0-5.74,3-5.74,6.69S12,21.28,12,21.28s5.74-8.17,5.74-11.87S15.17,2.72,12,2.72Zm0,9.74a4,4,0,1,1,4-4A4,4,0,0,1,12,12.46Z"
+              fill="currentColor"
+            />
+          </svg>
+        </i>
+      </Icon>
+    </div>
+  </Segment>,
+  <Segment
+    className="is-rating-number"
+  >
+    <div
+      className="ui segment is-rating-number"
+    >
+      <Rating
+        iconSize="tiny"
+        isShowingNumeral={true}
+        ratingNumber={90}
+      >
+        90
+        <Rating
+          clearable="auto"
+          disabled={true}
+          maxRating={5}
+          rating={90}
+          size="tiny"
+        >
+          <div
+            className="ui tiny disabled rating"
+            onMouseLeave={[Function]}
+            role="radiogroup"
+          >
+            <RatingIcon
+              active={true}
+              aria-checked={false}
+              aria-posinset={1}
+              aria-setsize={5}
+              as="i"
+              index={0}
+              key="0"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={1}
+                aria-setsize={5}
+                className="active icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+            <RatingIcon
+              active={true}
+              aria-checked={false}
+              aria-posinset={2}
+              aria-setsize={5}
+              as="i"
+              index={1}
+              key="1"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={2}
+                aria-setsize={5}
+                className="active icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+            <RatingIcon
+              active={true}
+              aria-checked={false}
+              aria-posinset={3}
+              aria-setsize={5}
+              as="i"
+              index={2}
+              key="2"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={3}
+                aria-setsize={5}
+                className="active icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+            <RatingIcon
+              active={true}
+              aria-checked={false}
+              aria-posinset={4}
+              aria-setsize={5}
+              as="i"
+              index={3}
+              key="3"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={4}
+                aria-setsize={5}
+                className="active icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+            <RatingIcon
+              active={true}
+              aria-checked={false}
+              aria-posinset={5}
+              aria-setsize={5}
+              as="i"
+              index={4}
+              key="4"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              selected={false}
+            >
+              <i
+                aria-checked={false}
+                aria-posinset={5}
+                aria-setsize={5}
+                className="active icon"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                role="radio"
+                tabIndex={0}
+              />
+            </RatingIcon>
+          </div>
+        </Rating>
+      </Rating>
+    </div>
+  </Segment>,
+  <Segment>
+    <div
+      className="ui segment"
+    >
+      <span>
+        from 
+        <Heading
+          isColorInverted={false}
+          size="small"
+          textAlign={null}
+        >
+          <Header
+            as="h4"
+            inverted={false}
+            textAlign={null}
+          >
+            <h4
+              className="ui header"
+            >
+              280$
+            </h4>
+          </Header>
+        </Heading>
+        /night
+      </span>
+    </div>
+  </Segment>,
+]
+`;
+
+exports[`getNightPriceRatingAndLocationMarkup the \`ratingNumber\` should not render the \`Rating\` if the \`ratingNumber\` is 0 1`] = `
+Array [
+  <Segment
+    className="is-location-name"
+    title="someLocation"
+  >
+    <div
+      className="ui segment is-location-name"
+      title="someLocation"
+    >
+      someLocation
+      <Icon
+        color="yellow"
+        hasBorder={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="map pin"
+        path={null}
+        size="small"
+      >
+        <i
+          className="icon yellow small"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2.72c-3.17,0-5.74,3-5.74,6.69S12,21.28,12,21.28s5.74-8.17,5.74-11.87S15.17,2.72,12,2.72Zm0,9.74a4,4,0,1,1,4-4A4,4,0,0,1,12,12.46Z"
+              fill="currentColor"
+            />
+          </svg>
+        </i>
+      </Icon>
+    </div>
+  </Segment>,
+  <Segment>
+    <div
+      className="ui segment"
+    >
+      <span>
+        from 
+        <Heading
+          isColorInverted={false}
+          size="small"
+          textAlign={null}
+        >
+          <Header
+            as="h4"
+            inverted={false}
+            textAlign={null}
+          >
+            <h4
+              className="ui header"
+            >
+              280$
+            </h4>
+          </Header>
+        </Heading>
+        /night
+      </span>
+    </div>
+  </Segment>,
+]
+`;
