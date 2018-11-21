@@ -49,7 +49,6 @@ export const SLEEPING_ARRANGEMENTS = 'Sleeping arrangements';
 export const SUBMIT_REVIEW = 'Submit a review';
 export const TAXES = 'Taxes';
 export const TIME = 'Time';
-export const TIME_ZONE = 'Time Zone';
 export const USE_COUPON_CODE = 'Use the coupon code';
 export const VIEW_MORE = 'View more';
 export const VIEW_MORE_PICTURES = 'View more pictures';

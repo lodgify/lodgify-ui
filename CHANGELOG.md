@@ -1,3 +1,31 @@
+# [1.84.0](https://github.com/lodgify/lodgify-ui/compare/v1.83.0...v1.84.0) (2018-11-19)
+
+
+### Features
+
+* **Header:** expose the search bar input change prop ([ffafacd](https://github.com/lodgify/lodgify-ui/commit/ffafacd))
+* **Hero:** expose the search bar input change prop ([20de943](https://github.com/lodgify/lodgify-ui/commit/20de943))
+* **HomepageHero:** expose the search bar input change prop ([e165718](https://github.com/lodgify/lodgify-ui/commit/e165718))
+* **PropertyPageHero:** expose the search bar input change prop ([39c1cef](https://github.com/lodgify/lodgify-ui/commit/39c1cef))
+* **PropertyPageSearchBar:** expose the search bar input change prop ([dc3c18b](https://github.com/lodgify/lodgify-ui/commit/dc3c18b))
+* **SearchBar:** expose function prop to trigger when an input changes ([801dba7](https://github.com/lodgify/lodgify-ui/commit/801dba7))
+
+# [1.83.0](https://github.com/lodgify/lodgify-ui/compare/v1.82.0...v1.83.0) (2018-11-19)
+
+
+### Features
+
+* **PropertyPageSearchBar:** add the summary element ([ada58b1](https://github.com/lodgify/lodgify-ui/commit/ada58b1))
+* **Summary:** add prop to only show price and rating ([a655917](https://github.com/lodgify/lodgify-ui/commit/a655917))
+* **Summary:** wrap segments in horizontal group if not enough space and remove unnecessary margin ([d260d5f](https://github.com/lodgify/lodgify-ui/commit/d260d5f))
+
+# [1.82.0](https://github.com/lodgify/lodgify-ui/compare/v1.81.0...v1.82.0) (2018-11-19)
+
+
+### Features
+
+* **CallMeBack:** remove time zone dropdown ([cc415ff](https://github.com/lodgify/lodgify-ui/commit/cc415ff))
+
 # [1.81.0](https://github.com/lodgify/lodgify-ui/compare/v1.80.1...v1.81.0) (2018-11-16)
 
 

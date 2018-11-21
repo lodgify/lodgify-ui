@@ -40,6 +40,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
     ]
   }
   searchBarModalHeadingText="Check our availability"
+  searchBarOnChangeInput={[Function]}
   searchBarOnSubmit={[Function]}
   searchBarSearchButton={
     <button>
@@ -90,6 +91,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
     }
     placeholderBackgroundImageUrl={null}
     searchBarGetIsDayBlocked={[Function]}
+    searchBarOnChangeInput={[Function]}
     searchBarOnSubmit={[Function]}
   >
     <FullBleed
@@ -178,6 +180,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
               ]
             }
             searchBarModalHeadingText="Check our availability"
+            searchBarOnChangeInput={[Function]}
             searchBarOnSubmit={[Function]}
             searchBarSearchButton={
               <button>
@@ -286,6 +289,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                       size={null}
                                     />
                                   }
+                                  onChangeInput={[Function]}
                                   onSubmit={[Function]}
                                   searchButton={
                                     <button>
@@ -866,6 +870,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                         size={null}
                                       />
                                     }
+                                    onChangeInput={[Function]}
                                     onSubmit={[Function]}
                                     searchButton={
                                       <button>

@@ -8,54 +8,80 @@ import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
 
 import { SearchBar } from '../../general-widgets/SearchBar/index';
 
+import { getSummaryMarkup } from './utils/getSummaryMarkup';
+
 export const Component = ({
   guestsOptions,
   isFixed,
-  summaryElement,
   modalTrigger,
-  modalSummaryElement,
+  onChangeInput,
   searchButton,
-}) => (
-  <div className="property-page-searchbar">
-    <ShowOnDesktop>
-      <SearchBar
-        guestsOptions={guestsOptions}
-        isFixed={isFixed}
-        searchButton={searchButton}
-        summaryElement={summaryElement}
-      />
-    </ShowOnDesktop>
-    <ShowOnMobile>
-      <SearchBar
-        guestsOptions={guestsOptions}
-        isDisplayedAsModal
-        isFixed={isFixed}
-        modalSummaryElement={modalSummaryElement}
-        modalTrigger={modalTrigger}
-        summaryElement={summaryElement}
-      />
-    </ShowOnMobile>
-  </div>
-);
+  summaryLocationName,
+  summaryNightPrice,
+  summaryPropertyName,
+  summaryRatingNumber,
+}) => {
+  const summaryProps = {
+    locationName: summaryLocationName,
+    nightPrice: summaryNightPrice,
+    propertyName: summaryPropertyName,
+    ratingNumber: summaryRatingNumber,
+  };
+
+  return (
+    <div className="property-page-searchbar">
+      <ShowOnDesktop>
+        <SearchBar
+          guestsOptions={guestsOptions}
+          isFixed={isFixed}
+          onChangeInput={onChangeInput}
+          searchButton={searchButton}
+          summaryElement={getSummaryMarkup({
+            areOnlyNightPriceAndRatingDisplayed: false,
+            ...summaryProps,
+          })}
+        />
+      </ShowOnDesktop>
+      <ShowOnMobile>
+        <SearchBar
+          guestsOptions={guestsOptions}
+          isDisplayedAsModal
+          isFixed={isFixed}
+          modalSummaryElement={getSummaryMarkup({
+            areOnlyNightPriceAndRatingDisplayed: false,
+            ...summaryProps,
+          })}
+          modalTrigger={modalTrigger}
+          onChangeInput={onChangeInput}
+          summaryElement={getSummaryMarkup({
+            areOnlyNightPriceAndRatingDisplayed: true,
+            ...summaryProps,
+          })}
+        />
+      </ShowOnMobile>
+    </div>
+  );
+};
 
 Component.displayName = 'PropertyPageSearchBar';
 
 Component.defaultProps = {
-  modalSummaryElement: null,
   modalTrigger: (
     <Button isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),
   isFixed: true,
+  onChangeInput: undefined,
   searchButton: (
     <Button isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),
-  summaryElement: null,
 };
+
 Component.propTypes = {
+  /** The options that the user can select in the guests field. */
   guestsOptions: PropTypes.arrayOf(
     PropTypes.shape({
       /** The visible text for the option. */
@@ -74,13 +100,24 @@ Component.propTypes = {
    * @ignore
    */
   isFixed: PropTypes.bool,
-  /** The summary element to display in the mobile modal  */
-  modalSummaryElement: PropTypes.node,
   /** The element to be clicked to display the modal. */
   modalTrigger: PropTypes.node,
+  /** A function called when a change in an input occurs in the search bar.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  // eslint-disable-next-line react/no-unused-prop-types
+  onChangeInput: PropTypes.func,
   /** The Search Button the Search Bar displays. */
   searchButton: PropTypes.node,
-  /** The element to display in the fixed container */
-  summaryElement: PropTypes.node,
-  /** The dropdowns will open above the search bar. */
+  /** The location name displayed in the summary. */
+  summaryLocationName: PropTypes.string.isRequired,
+  /** The price per night of the property, with currency symbol, displayed in the summary. */
+  summaryNightPrice: PropTypes.string.isRequired,
+  /** The property name displayed in the summary. */
+  summaryPropertyName: PropTypes.string.isRequired,
+  /** The numeral rating for the property, out of 5, displayed in the summary. */
+  summaryRatingNumber: PropTypes.number.isRequired,
 };

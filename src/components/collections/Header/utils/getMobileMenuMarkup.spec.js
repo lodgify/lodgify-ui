@@ -12,6 +12,7 @@ const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
 const searchBarGetIsDayBlocked = Function.prototype;
 const searchBarOnSubmit = Function.prototype;
 const searchBarModalHeadingText = 'someHeadingText';
+const searchBarOnChangeInput = Function.prototype;
 const searchBarSearchButton = 'button boy';
 
 const getMarkupAsRenderedComponent = extraProps =>
@@ -25,6 +26,7 @@ const getMarkupAsRenderedComponent = extraProps =>
         navigationItems,
         searchBarModalHeadingText,
         searchBarSearchButton,
+        searchBarOnChangeInput,
         searchBarOnSubmit,
         ...extraProps,
       })}

@@ -15,6 +15,7 @@ const props = {
   searchBarGetIsDayBlocked: Function.prototype,
   searchBarGuestsOptions: [{ text: '1', value: '1' }],
   searchBarLocationOptions: [{ text: '1', value: '1' }],
+  searchBarOnChangeInput: Function.prototype,
   searchBarOnSubmit: Function.prototype,
   searchBarSearchButton: <button>search button</button>,
 };

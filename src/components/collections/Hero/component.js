@@ -22,6 +22,7 @@ export const Component = ({
   headerSearchBarSearchButton,
   placeholderBackgroundImageUrl,
   searchBarGetIsDayBlocked,
+  searchBarOnChangeInput,
   searchBarOnSubmit,
 }) => (
   <FullBleed
@@ -39,6 +40,7 @@ export const Component = ({
       searchBarGuestsOptions={headerSearchBarGuestsOptions}
       searchBarLocationOptions={headerSearchBarLocationOptions}
       searchBarModalHeadingText={headerSearchBarModalHeadingText}
+      searchBarOnChangeInput={searchBarOnChangeInput}
       searchBarOnSubmit={searchBarOnSubmit}
       searchBarSearchButton={headerSearchBarSearchButton}
     />
@@ -59,6 +61,7 @@ Component.defaultProps = {
   headerSearchBarSearchButton: undefined,
   placeholderBackgroundImageUrl: null,
   searchBarGetIsDayBlocked: undefined,
+  searchBarOnChangeInput: undefined,
   searchBarOnSubmit: undefined,
 };
 
@@ -135,6 +138,14 @@ Component.propTypes = {
    * @returns {boolean}     - Is the day blocked.
    */
   searchBarGetIsDayBlocked: PropTypes.func,
+  /** A function called when a change in an input occurs in the search bar.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  // eslint-disable-next-line react/no-unused-prop-types
+  searchBarOnChangeInput: PropTypes.func,
   /** The function to call when the search bar is submitted.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates

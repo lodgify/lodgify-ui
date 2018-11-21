@@ -39,6 +39,7 @@ Component.defaultProps = {
   searchBarGuestsOptions: [],
   searchBarLocationOptions: [],
   searchBarModalHeadingText: undefined,
+  searchBarOnChangeInput: undefined,
   searchBarOnSubmit: undefined,
   searchBarSearchButton: undefined,
 };
@@ -117,6 +118,14 @@ Component.propTypes = {
   /** The text displayed in the search bar modal */
   // eslint-disable-next-line react/no-unused-prop-types
   searchBarModalHeadingText: PropTypes.string,
+  /** A function called when a change in an input occurs in the search bar.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  // eslint-disable-next-line react/no-unused-prop-types
+  searchBarOnChangeInput: PropTypes.func,
   /** The function to call when the search bar is submitted.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates
