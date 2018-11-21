@@ -20,6 +20,7 @@ export const Component = ({
   headerSearchBarLocationOptions,
   headerSearchBarModalHeadingText,
   headerSearchBarSearchButton,
+  isFixedSearchBarDisplayed,
   placeholderBackgroundImageUrl,
   searchBarGetIsDayBlocked,
   searchBarOnChangeInput,
@@ -28,6 +29,7 @@ export const Component = ({
   <FullBleed
     hasGradient
     imageUrl={backgroundImageUrl}
+    isFixedSearchBarDisplayed={isFixedSearchBarDisplayed}
     placeholderImageUrl={placeholderBackgroundImageUrl}
   >
     <Header
@@ -59,6 +61,7 @@ Component.defaultProps = {
   headerSearchBarLocationOptions: [],
   headerSearchBarModalHeadingText: null,
   headerSearchBarSearchButton: undefined,
+  isFixedSearchBarDisplayed: false,
   placeholderBackgroundImageUrl: null,
   searchBarGetIsDayBlocked: undefined,
   searchBarOnChangeInput: undefined,
@@ -129,6 +132,8 @@ Component.propTypes = {
   headerSearchBarModalHeadingText: PropTypes.string,
   /** The Search Button the Search Bar modal displays. */
   headerSearchBarSearchButton: PropTypes.node,
+  /** Is a fixed search bar being displayed above the hero. */
+  isFixedSearchBarDisplayed: PropTypes.bool,
   /** The background placeholder image url of the hero. */
   placeholderBackgroundImageUrl: PropTypes.string,
   /**

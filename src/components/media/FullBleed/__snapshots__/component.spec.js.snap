@@ -4,6 +4,7 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
 <FullBleed
   hasGradient={false}
   imageUrl="🐱🐱"
+  isFixedSearchBarDisplayed={false}
   placeholderImageUrl={null}
 >
   <Segment
@@ -59,6 +60,7 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
 <FullBleed
   hasGradient={true}
   imageUrl="🐱🐱"
+  isFixedSearchBarDisplayed={false}
   placeholderImageUrl={null}
 >
   <Segment
@@ -114,6 +116,7 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
 <FullBleed
   hasGradient={false}
   imageUrl="🐱🐱"
+  isFixedSearchBarDisplayed={false}
   placeholderImageUrl={null}
 >
   <Segment

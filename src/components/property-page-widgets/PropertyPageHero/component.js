@@ -46,6 +46,7 @@ const Component = ({
     headerSearchBarLocationOptions={searchBarLocationOptions}
     headerSearchBarModalHeadingText={searchBarModalHeadingText}
     headerSearchBarSearchButton={searchBarSearchButton}
+    isFixedSearchBarDisplayed
     placeholderBackgroundImageUrl={images[0].placeholderImageUrl}
     searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
     searchBarOnChangeInput={searchBarOnChangeInput}

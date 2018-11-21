@@ -125,6 +125,10 @@
     z-index: 0;
   }
 
+  &.is-fixed-search-bar-displayed {
+    height: ~"calc(100vh - @{searchBarFixedHeight})";
+  }
+
   &.has-gradient {
     position: relative;
 

@@ -15,12 +15,14 @@ export const Component = ({
   children,
   hasGradient,
   imageUrl,
+  isFixedSearchBarDisplayed,
   placeholderImageUrl,
 }) => (
   <Segment
     className={getClassNames('full-bleed', {
       'has-gradient': hasGradient,
       'has-children': size(children) > 0,
+      'is-fixed-search-bar-displayed': isFixedSearchBarDisplayed,
     })}
     vertical
   >
@@ -39,6 +41,7 @@ Component.defaultProps = {
   children: null,
   hasGradient: false,
   imageUrl: null,
+  isFixedSearchBarDisplayed: false,
   placeholderImageUrl: null,
 };
 
@@ -49,6 +52,8 @@ Component.propTypes = {
   hasGradient: PropTypes.bool,
   /** URL pointing to the image to render. */
   imageUrl: PropTypes.string,
+  /** Is there a fixed search bar being displayed above the full bleed. */
+  isFixedSearchBarDisplayed: PropTypes.bool,
   /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
 };

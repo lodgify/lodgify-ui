@@ -37,6 +37,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
     ]
   }
   headerSearchBarModalHeadingText="Heading"
+  isFixedSearchBarDisplayed={false}
   placeholderBackgroundImageUrl={null}
   searchBarOnChangeInput={[Function]}
   searchBarOnSubmit={[Function]}
@@ -44,6 +45,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
   <FullBleed
     hasGradient={true}
     imageUrl="https://darkpurple.com"
+    isFixedSearchBarDisplayed={false}
     placeholderImageUrl={null}
   >
     <Segment

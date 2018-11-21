@@ -89,6 +89,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
         search button
       </button>
     }
+    isFixedSearchBarDisplayed={false}
     placeholderBackgroundImageUrl={null}
     searchBarGetIsDayBlocked={[Function]}
     searchBarOnChangeInput={[Function]}
@@ -97,6 +98,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
     <FullBleed
       hasGradient={true}
       imageUrl="url"
+      isFixedSearchBarDisplayed={false}
       placeholderImageUrl={null}
     >
       <Segment
