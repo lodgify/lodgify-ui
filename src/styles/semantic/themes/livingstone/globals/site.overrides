@@ -473,6 +473,7 @@ blockquote.ui.quote .row {
 -----------------------*/
 
 .property-page-searchbar {
+  height: @searchBarFixedHeight;
 
   .ui.segments > .ui.segments {
     margin: 0;
