@@ -51,6 +51,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
   <Hero
     activeNavigationItemIndex={1}
     backgroundImageUrl="url"
+    bottomOffset="0px"
     headerLogoSrc="src"
     headerLogoText="text"
     headerNavigationItems={

@@ -4,6 +4,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
 <Hero
   activeNavigationItemIndex={1}
   backgroundImageUrl="https://darkpurple.com"
+  bottomOffset="0px"
   headerLogoSrc="https://darkgreen.com"
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={
