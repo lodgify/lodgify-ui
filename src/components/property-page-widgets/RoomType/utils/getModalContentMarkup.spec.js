@@ -19,20 +19,19 @@ const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
 const nightPrice = '$1010';
-const slideShowImages = [
+const slideShowImage = [
   {
     alternativeText: 'Two cats',
     url: 'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
     title: 'Two cats',
   },
-  {
-    alternativeText: 'Two more cats',
-    url: 'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
-    title: 'Two more cats',
-  },
 ];
 
-const getMarkup = ({ description = 'yoyo description', ratingNumber = 3.2 }) =>
+const getMarkup = ({
+  description = 'yoyo description',
+  ratingNumber = 3.2,
+  slideShowImages = slideShowImage,
+}) =>
   mount(
     getModalContentMarkup(
       amenities,
@@ -67,6 +66,24 @@ describe('getModalContentMarkup', () => {
     it('should not render the description', () => {
       const wrapper = getMarkup({
         description: null,
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('`props.slideShowImages.length` > 1', () => {
+    it('should render the right structure', () => {
+      const wrapper = getMarkup({
+        slideShowImages: [
+          ...slideShowImage,
+          {
+            alternativeText: 'Two cats',
+            url:
+              'https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg',
+            title: 'Two cats',
+          },
+        ],
       });
 
       expect(wrapper).toMatchSnapshot();

@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getModalContentMarkup \`props.description\` if null should not render the description 1`] = `
-<ModalContent>
+<ModalContent
+  className="room-type"
+>
   <div
-    className="content"
+    className="room-type content"
   >
     <Heading
       isColorInverted={false}
@@ -189,15 +191,10 @@ exports[`getModalContentMarkup \`props.description\` if null should not render t
             "title": "Two cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
-          Object {
-            "alternativeText": "Two more cats",
-            "title": "Two more cats",
-            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          },
         ]
       }
       isRounded={true}
-      isShowingBulletNavigation={true}
+      isShowingBulletNavigation={false}
       isStretched={false}
     >
       <ImageGallery
@@ -219,13 +216,6 @@ exports[`getModalContentMarkup \`props.description\` if null should not render t
               "sizes": undefined,
               "srcSet": undefined,
             },
-            Object {
-              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-              "originalAlt": "Two more cats",
-              "originalTitle": "Two more cats",
-              "sizes": undefined,
-              "srcSet": undefined,
-            },
           ]
         }
         lazyLoad={true}
@@ -234,7 +224,7 @@ exports[`getModalContentMarkup \`props.description\` if null should not render t
         renderLeftNav={[Function]}
         renderPlayPauseButton={[Function]}
         renderRightNav={[Function]}
-        showBullets={true}
+        showBullets={false}
         showFullscreenButton={false}
         showIndex={false}
         showNav={true}
@@ -260,190 +250,32 @@ exports[`getModalContentMarkup \`props.description\` if null should not render t
             <div
               className="image-gallery-slide-wrapper bottom "
             >
-              <span
-                key="navigation"
-              >
-                <Button
-                  as="button"
-                  circular={true}
-                  content={null}
-                  disabled={false}
-                  onClick={[Function]}
-                  primary={true}
-                >
-                  <button
-                    className="ui circular primary button"
-                    onClick={[Function]}
-                    role="button"
-                  >
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isCircular={false}
-                      isColorInverted={true}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="chevron left"
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon inverted"
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </i>
-                    </Icon>
-                  </button>
-                </Button>
-                <Button
-                  as="button"
-                  circular={true}
-                  content={null}
-                  disabled={false}
-                  onClick={[Function]}
-                  primary={true}
-                >
-                  <button
-                    className="ui circular primary button"
-                    onClick={[Function]}
-                    role="button"
-                  >
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isCircular={false}
-                      isColorInverted={true}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="chevron right"
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon inverted"
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </i>
-                    </Icon>
-                  </button>
-                </Button>
-              </span>
-              <Swipeable
-                className="image-gallery-swipe"
-                delta={0}
-                disabled={false}
-                flickThreshold={0.4}
-                key="swipeable"
-                nodeName="div"
-                onSwiped={[Function]}
-                onSwiping={[Function]}
-                preventDefaultTouchmoveEvent={false}
-                rotationAngle={0}
-                stopPropagation={false}
+              <div
+                className="image-gallery-slides"
               >
                 <div
-                  className="image-gallery-swipe"
-                  onMouseDown={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
+                  className="image-gallery-slide center"
+                  key="0"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(0%, 0, 0)",
+                      "OTransform": "translate3d(0%, 0, 0)",
+                      "WebkitTransform": "translate3d(0%, 0, 0)",
+                      "msTransform": "translate3d(0%, 0, 0)",
+                      "transform": "translate3d(0%, 0, 0)",
+                    }
+                  }
                 >
                   <div
-                    className="image-gallery-slides"
+                    className="image-gallery-image"
                   >
-                    <div
-                      className="image-gallery-slide center"
-                      key="0"
-                      style={
-                        Object {
-                          "MozTransform": "translate3d(0%, 0, 0)",
-                          "OTransform": "translate3d(0%, 0, 0)",
-                          "WebkitTransform": "translate3d(0%, 0, 0)",
-                          "msTransform": "translate3d(0%, 0, 0)",
-                          "transform": "translate3d(0%, 0, 0)",
-                        }
-                      }
-                    >
-                      <div
-                        className="image-gallery-image"
-                      >
-                        <img
-                          alt="Two cats"
-                          onError={[Function]}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          title="Two cats"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="image-gallery-slide right"
-                      key="1"
-                      style={
-                        Object {
-                          "MozTransform": "translate3d(100%, 0, 0)",
-                          "OTransform": "translate3d(100%, 0, 0)",
-                          "WebkitTransform": "translate3d(100%, 0, 0)",
-                          "msTransform": "translate3d(100%, 0, 0)",
-                          "transform": "translate3d(100%, 0, 0)",
-                        }
-                      }
-                    >
-                      <div
-                        className="image-gallery-image"
-                      >
-                        <img
-                          alt="Two more cats"
-                          onError={[Function]}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          title="Two more cats"
-                        />
-                      </div>
-                    </div>
+                    <img
+                      alt="Two cats"
+                      onError={[Function]}
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      title="Two cats"
+                    />
                   </div>
-                </div>
-              </Swipeable>
-              <div
-                className="image-gallery-bullets"
-              >
-                <div
-                  aria-label="Bullet Navigation"
-                  className="image-gallery-bullets-container"
-                  role="navigation"
-                >
-                  <button
-                    aria-label="Go to Slide 1"
-                    aria-pressed="true"
-                    className="image-gallery-bullet active "
-                    key="0"
-                    onClick={[Function]}
-                    type="button"
-                  />
-                  <button
-                    aria-label="Go to Slide 2"
-                    aria-pressed="false"
-                    className="image-gallery-bullet  "
-                    key="1"
-                    onClick={[Function]}
-                    type="button"
-                  />
                 </div>
               </div>
             </div>
@@ -789,9 +621,11 @@ exports[`getModalContentMarkup \`props.description\` if null should not render t
 `;
 
 exports[`getModalContentMarkup \`props.ratingNumber\` if null should not render the rating 1`] = `
-<ModalContent>
+<ModalContent
+  className="room-type"
+>
   <div
-    className="content"
+    className="room-type content"
   >
     <Heading
       isColorInverted={false}
@@ -836,10 +670,625 @@ exports[`getModalContentMarkup \`props.ratingNumber\` if null should not render 
             "title": "Two cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
+        ]
+      }
+      isRounded={true}
+      isShowingBulletNavigation={false}
+      isStretched={false}
+    >
+      <ImageGallery
+        additionalClass=""
+        autoPlay={false}
+        disableArrowKeys={false}
+        disableSwipe={false}
+        disableThumbnailScroll={false}
+        flickThreshold={0.4}
+        indexSeparator=" / "
+        infinite={true}
+        isRTL={false}
+        items={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+            },
+          ]
+        }
+        lazyLoad={true}
+        preventDefaultTouchmoveEvent={false}
+        renderFullscreenButton={[Function]}
+        renderLeftNav={[Function]}
+        renderPlayPauseButton={[Function]}
+        renderRightNav={[Function]}
+        showBullets={false}
+        showFullscreenButton={false}
+        showIndex={false}
+        showNav={true}
+        showPlayButton={false}
+        showThumbnails={false}
+        slideDuration={450}
+        slideInterval={3000}
+        startIndex={0}
+        stopPropagation={false}
+        swipeThreshold={30}
+        swipingTransitionDuration={0}
+        thumbnailPosition="bottom"
+        useBrowserFullscreen={true}
+        useTranslate3D={true}
+      >
+        <div
+          aria-live="polite"
+          className="image-gallery  "
+        >
+          <div
+            className="image-gallery-content"
+          >
+            <div
+              className="image-gallery-slide-wrapper bottom "
+            >
+              <div
+                className="image-gallery-slides"
+              >
+                <div
+                  className="image-gallery-slide center"
+                  key="0"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(0%, 0, 0)",
+                      "OTransform": "translate3d(0%, 0, 0)",
+                      "WebkitTransform": "translate3d(0%, 0, 0)",
+                      "msTransform": "translate3d(0%, 0, 0)",
+                      "transform": "translate3d(0%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two cats"
+                      onError={[Function]}
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      title="Two cats"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ImageGallery>
+    </Slideshow>
+    <Paragraph
+      size="medium"
+      weight={null}
+    >
+      <p
+        className=""
+      >
+        yoyo description
+      </p>
+    </Paragraph>
+    <List
+      horizontal={true}
+    >
+      <div
+        className="ui horizontal list"
+        role="list"
+      >
+        <ListItem
+          key="01 Bedroomfeature"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="listitem"
+          >
+            <Paragraph
+              size="medium"
+              weight="heavy"
+            >
+              <p
+                className="heavy"
+              >
+                1 Bedroom
+              </p>
+            </Paragraph>
+          </div>
+        </ListItem>
+        <ListItem
+          key="11 Dining-Roomfeature"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="listitem"
+          >
+            <Paragraph
+              size="medium"
+              weight="heavy"
+            >
+              <p
+                className="heavy"
+              >
+                1 Dining-Room
+              </p>
+            </Paragraph>
+          </div>
+        </ListItem>
+      </div>
+    </List>
+    <Divider
+      className=""
+      hasLine={true}
+      size="medium"
+    >
+      <Divider
+        className=""
+        hidden={false}
+        section={false}
+      >
+        <div
+          className="ui divider"
+        />
+      </Divider>
+    </Divider>
+    <Amenities
+      amenities={
+        Array [
           Object {
-            "alternativeText": "Two more cats",
-            "title": "Two more cats",
+            "iconName": "leaf",
+            "items": Array [
+              "Toaster",
+              "Microwave",
+              "Coffee Machine",
+            ],
+            "name": "Cooking",
+          },
+          Object {
+            "iconName": "paw",
+            "items": Array [
+              "Bidet",
+              "Hair Dryer",
+              "Iron & Board",
+            ],
+            "name": "Bathroom & Laundry",
+          },
+        ]
+      }
+      hasExtraItemsInModal={false}
+      headingText="Room Amenities"
+      isStacked={false}
+      modalTriggerText="View more"
+    >
+      <Grid
+        areColumnsCentered={false}
+        className="is-amenities"
+        columns={3}
+      >
+        <Grid
+          centered={false}
+          className="is-amenities"
+          columns={3}
+        >
+          <div
+            className="ui three column grid is-amenities"
+          >
+            <GridRow
+              horizontalAlignContent="left"
+            >
+              <GridRow
+                textAlign="left"
+              >
+                <div
+                  className="left aligned row"
+                >
+                  <GridColumn
+                    verticalAlignContent="top"
+                    width={12}
+                  >
+                    <GridColumn
+                      verticalAlign="top"
+                      width={12}
+                    >
+                      <div
+                        className="top aligned twelve wide column"
+                      >
+                        <Heading
+                          isColorInverted={false}
+                          size="medium"
+                          textAlign={null}
+                        >
+                          <Header
+                            as="h3"
+                            inverted={false}
+                            textAlign={null}
+                          >
+                            <h3
+                              className="ui header"
+                            >
+                              Room Amenities
+                            </h3>
+                          </Header>
+                        </Heading>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    key="Cooking0"
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned column"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={true}
+                          labelText="Cooking"
+                          labelWeight="heavy"
+                          name="leaf"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <Paragraph
+                              size="medium"
+                              weight="heavy"
+                            >
+                              <p
+                                className="heavy"
+                              >
+                                Cooking
+                              </p>
+                            </Paragraph>
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M23.9.79a33.24,33.24,0,0,1-3.55,10.82,13.35,13.35,0,0,1-4.93,5.13A10,10,0,0,1,10.52,18c-.32,0-.64,0-1,0a11.93,11.93,0,0,1-3.41-.82,7.07,7.07,0,0,1-1-.5.59.59,0,0,1-.21-.81.6.6,0,0,1,.82-.21,7.18,7.18,0,0,0,.83.42,9.63,9.63,0,0,0,8.25-.34c3.75-2.07,6.36-6.92,7.76-14.4-11.73,0-18.2,0-19.9,6.11A8.89,8.89,0,0,0,2.85,12a5.55,5.55,0,0,0,.67,1.44A21.37,21.37,0,0,1,5.63,11a20.16,20.16,0,0,1,4.83-3.61A10.18,10.18,0,0,1,15,6.05a.6.6,0,0,1,0,1.19,9,9,0,0,0-4,1.2,19.12,19.12,0,0,0-4.54,3.39c-1.94,1.93-5.19,6-5.19,11.48a.59.59,0,0,1-.59.6.6.6,0,0,1-.6-.6,16.42,16.42,0,0,1,2.7-8.81,7.19,7.19,0,0,1-1.08-2.14,10.09,10.09,0,0,1-.16-5.28A7.91,7.91,0,0,1,4,3,10.26,10.26,0,0,1,8.47.93C12,.09,16.7.09,22.7.09h.61a.58.58,0,0,1,.45.22h0A.59.59,0,0,1,23.9.79Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <Paragraph
+                          size="medium"
+                          weight={null}
+                        >
+                          <p
+                            className=""
+                          >
+                            Toaster, 
+                            Microwave and 
+                            Coffee Machine
+                          </p>
+                        </Paragraph>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    key="Bathroom & Laundry1"
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned column"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={true}
+                          labelText="Bathroom & Laundry"
+                          labelWeight="heavy"
+                          name="paw"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <Paragraph
+                              size="medium"
+                              weight="heavy"
+                            >
+                              <p
+                                className="heavy"
+                              >
+                                Bathroom & Laundry
+                              </p>
+                            </Paragraph>
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M15.38,9.25c1.52,0,2.71-1.81,2.71-4.13S16.9,1,15.38,1s-2.7,1.81-2.7,4.12S13.86,9.25,15.38,9.25Zm0-6.87c.64,0,1.36,1.17,1.36,2.74S16,7.88,15.38,7.88,14,6.7,14,5.12,14.74,2.38,15.38,2.38Zm5.41,4.09c-1.51,0-2.7,1.82-2.7,4.14s1.19,4.14,2.7,4.14,2.71-1.82,2.71-4.14S22.31,6.47,20.79,6.47Zm0,6.91c-.63,0-1.35-1.19-1.35-2.77s.72-2.77,1.35-2.77S22.15,9,22.15,10.61,21.43,13.38,20.79,13.38ZM16.73,23ZM5.91,10.61c0-2.32-1.19-4.14-2.7-4.14S.5,8.29.5,10.61s1.19,4.14,2.71,4.14S5.91,12.93,5.91,10.61Zm-2.7,2.77c-.64,0-1.36-1.19-1.36-2.77s.72-2.77,1.36-2.77S4.56,9,4.56,10.61,3.84,13.38,3.21,13.38Zm5.4-4.13c1.52,0,2.71-1.81,2.71-4.13S10.13,1,8.61,1s-2.7,1.81-2.7,4.12S7.1,9.25,8.61,9.25Zm0-6.87C9.25,2.38,10,3.55,10,5.12S9.25,7.88,8.61,7.88,7.26,6.7,7.26,5.12,8,2.38,8.61,2.38ZM12,10.62c-2.79,0-5.23,2.17-6.72,5.94-.82,2.09-.81,4,0,5.3A2.37,2.37,0,0,0,7.26,23a5.49,5.49,0,0,0,2.68-.76A4.19,4.19,0,0,1,12,21.62a4.2,4.2,0,0,1,2.07.62,5.41,5.41,0,0,0,2.66.76,2.38,2.38,0,0,0,1.95-1.14c.85-1.28.86-3.21,0-5.3C17.23,12.79,14.78,10.62,12,10.62Zm5.56,10.47a1,1,0,0,1-.82.53A4.19,4.19,0,0,1,14.67,21,5.42,5.42,0,0,0,12,20.25h0A5.45,5.45,0,0,0,9.33,21a4.19,4.19,0,0,1-2.07.61,1,1,0,0,1-.82-.53c-.58-.88-.55-2.38.1-4C7.81,13.85,9.8,12,12,12s4.19,1.85,5.46,5.07C18.11,18.71,18.14,20.21,17.56,21.09Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <Paragraph
+                          size="medium"
+                          weight={null}
+                        >
+                          <p
+                            className=""
+                          >
+                            Bidet, 
+                            Hair Dryer and 
+                            Iron & Board
+                          </p>
+                        </Paragraph>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                </div>
+              </GridRow>
+            </GridRow>
+          </div>
+        </Grid>
+      </Grid>
+    </Amenities>
+    <Grid
+      areColumnsCentered={false}
+    >
+      <Grid
+        centered={false}
+      >
+        <div
+          className="ui grid"
+        >
+          <GridColumn
+            verticalAlignContent="bottom"
+            width={12}
+          >
+            <GridColumn
+              verticalAlign="bottom"
+              width={12}
+            >
+              <div
+                className="bottom aligned twelve wide column"
+              >
+                <Paragraph
+                  size="medium"
+                  weight={null}
+                >
+                  <p
+                    className=""
+                  >
+                    from
+                    <strong>
+                       $1010 
+                    </strong>
+                    /night
+                  </p>
+                </Paragraph>
+              </div>
+            </GridColumn>
+          </GridColumn>
+        </div>
+      </Grid>
+    </Grid>
+  </div>
+</ModalContent>
+`;
+
+exports[`getModalContentMarkup \`props.slideShowImages.length\` > 1 should render the right structure 1`] = `
+<ModalContent
+  className="room-type"
+>
+  <div
+    className="room-type content"
+  >
+    <Heading
+      isColorInverted={false}
+      size="medium"
+      textAlign={null}
+    >
+      <Header
+        as="h3"
+        inverted={false}
+        textAlign={null}
+      >
+        <h3
+          className="ui header"
+        >
+          yoyo name
+        </h3>
+      </Header>
+    </Heading>
+    <Rating
+      iconSize="small"
+      isShowingNumeral={true}
+      ratingNumber={3.2}
+    >
+      3.2
+      <Rating
+        clearable="auto"
+        disabled={true}
+        maxRating={5}
+        rating={3}
+        size="small"
+      >
+        <div
+          className="ui small disabled rating"
+          onMouseLeave={[Function]}
+          role="radiogroup"
+        >
+          <RatingIcon
+            active={true}
+            aria-checked={false}
+            aria-posinset={1}
+            aria-setsize={5}
+            as="i"
+            index={0}
+            key="0"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={false}
+              aria-posinset={1}
+              aria-setsize={5}
+              className="active icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+          <RatingIcon
+            active={true}
+            aria-checked={false}
+            aria-posinset={2}
+            aria-setsize={5}
+            as="i"
+            index={1}
+            key="1"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={false}
+              aria-posinset={2}
+              aria-setsize={5}
+              className="active icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+          <RatingIcon
+            active={true}
+            aria-checked={true}
+            aria-posinset={3}
+            aria-setsize={5}
+            as="i"
+            index={2}
+            key="2"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={true}
+              aria-posinset={3}
+              aria-setsize={5}
+              className="active icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+          <RatingIcon
+            active={false}
+            aria-checked={false}
+            aria-posinset={4}
+            aria-setsize={5}
+            as="i"
+            index={3}
+            key="3"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={false}
+              aria-posinset={4}
+              aria-setsize={5}
+              className="icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+          <RatingIcon
+            active={false}
+            aria-checked={false}
+            aria-posinset={5}
+            aria-setsize={5}
+            as="i"
+            index={4}
+            key="4"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={false}
+              aria-posinset={5}
+              aria-setsize={5}
+              className="icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+        </div>
+      </Rating>
+    </Rating>
+    <Divider
+      className=""
+      hasLine={false}
+      size="small"
+    >
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
+      >
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
+    </Divider>
+    <Slideshow
+      additionalClass="no-shadow"
+      hasShadow={true}
+      headingText={null}
+      images={
+        Array [
+          Object {
+            "alternativeText": "Two cats",
+            "title": "Two cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+          Object {
+            "alternativeText": "Two cats",
+            "title": "Two cats",
+            "url": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
           },
         ]
       }
@@ -867,9 +1316,9 @@ exports[`getModalContentMarkup \`props.ratingNumber\` if null should not render 
               "srcSet": undefined,
             },
             Object {
-              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-              "originalAlt": "Two more cats",
-              "originalTitle": "Two more cats",
+              "original": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
               "sizes": undefined,
               "srcSet": undefined,
             },
@@ -1057,10 +1506,10 @@ exports[`getModalContentMarkup \`props.ratingNumber\` if null should not render 
                         className="image-gallery-image"
                       >
                         <img
-                          alt="Two more cats"
+                          alt="Two cats"
                           onError={[Function]}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          title="Two more cats"
+                          src="https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg"
+                          title="Two cats"
                         />
                       </div>
                     </div>
@@ -1431,9 +1880,11 @@ exports[`getModalContentMarkup \`props.ratingNumber\` if null should not render 
 `;
 
 exports[`getModalContentMarkup should return the correct structure 1`] = `
-<ModalContent>
+<ModalContent
+  className="room-type"
+>
   <div
-    className="content"
+    className="room-type content"
   >
     <Heading
       isColorInverted={false}
@@ -1619,15 +2070,10 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             "title": "Two cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
-          Object {
-            "alternativeText": "Two more cats",
-            "title": "Two more cats",
-            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          },
         ]
       }
       isRounded={true}
-      isShowingBulletNavigation={true}
+      isShowingBulletNavigation={false}
       isStretched={false}
     >
       <ImageGallery
@@ -1649,13 +2095,6 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               "sizes": undefined,
               "srcSet": undefined,
             },
-            Object {
-              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-              "originalAlt": "Two more cats",
-              "originalTitle": "Two more cats",
-              "sizes": undefined,
-              "srcSet": undefined,
-            },
           ]
         }
         lazyLoad={true}
@@ -1664,7 +2103,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
         renderLeftNav={[Function]}
         renderPlayPauseButton={[Function]}
         renderRightNav={[Function]}
-        showBullets={true}
+        showBullets={false}
         showFullscreenButton={false}
         showIndex={false}
         showNav={true}
@@ -1690,190 +2129,32 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             <div
               className="image-gallery-slide-wrapper bottom "
             >
-              <span
-                key="navigation"
-              >
-                <Button
-                  as="button"
-                  circular={true}
-                  content={null}
-                  disabled={false}
-                  onClick={[Function]}
-                  primary={true}
-                >
-                  <button
-                    className="ui circular primary button"
-                    onClick={[Function]}
-                    role="button"
-                  >
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isCircular={false}
-                      isColorInverted={true}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="chevron left"
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon inverted"
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </i>
-                    </Icon>
-                  </button>
-                </Button>
-                <Button
-                  as="button"
-                  circular={true}
-                  content={null}
-                  disabled={false}
-                  onClick={[Function]}
-                  primary={true}
-                >
-                  <button
-                    className="ui circular primary button"
-                    onClick={[Function]}
-                    role="button"
-                  >
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isCircular={false}
-                      isColorInverted={true}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="chevron right"
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon inverted"
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </i>
-                    </Icon>
-                  </button>
-                </Button>
-              </span>
-              <Swipeable
-                className="image-gallery-swipe"
-                delta={0}
-                disabled={false}
-                flickThreshold={0.4}
-                key="swipeable"
-                nodeName="div"
-                onSwiped={[Function]}
-                onSwiping={[Function]}
-                preventDefaultTouchmoveEvent={false}
-                rotationAngle={0}
-                stopPropagation={false}
+              <div
+                className="image-gallery-slides"
               >
                 <div
-                  className="image-gallery-swipe"
-                  onMouseDown={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
+                  className="image-gallery-slide center"
+                  key="0"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(0%, 0, 0)",
+                      "OTransform": "translate3d(0%, 0, 0)",
+                      "WebkitTransform": "translate3d(0%, 0, 0)",
+                      "msTransform": "translate3d(0%, 0, 0)",
+                      "transform": "translate3d(0%, 0, 0)",
+                    }
+                  }
                 >
                   <div
-                    className="image-gallery-slides"
+                    className="image-gallery-image"
                   >
-                    <div
-                      className="image-gallery-slide center"
-                      key="0"
-                      style={
-                        Object {
-                          "MozTransform": "translate3d(0%, 0, 0)",
-                          "OTransform": "translate3d(0%, 0, 0)",
-                          "WebkitTransform": "translate3d(0%, 0, 0)",
-                          "msTransform": "translate3d(0%, 0, 0)",
-                          "transform": "translate3d(0%, 0, 0)",
-                        }
-                      }
-                    >
-                      <div
-                        className="image-gallery-image"
-                      >
-                        <img
-                          alt="Two cats"
-                          onError={[Function]}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          title="Two cats"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="image-gallery-slide right"
-                      key="1"
-                      style={
-                        Object {
-                          "MozTransform": "translate3d(100%, 0, 0)",
-                          "OTransform": "translate3d(100%, 0, 0)",
-                          "WebkitTransform": "translate3d(100%, 0, 0)",
-                          "msTransform": "translate3d(100%, 0, 0)",
-                          "transform": "translate3d(100%, 0, 0)",
-                        }
-                      }
-                    >
-                      <div
-                        className="image-gallery-image"
-                      >
-                        <img
-                          alt="Two more cats"
-                          onError={[Function]}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          title="Two more cats"
-                        />
-                      </div>
-                    </div>
+                    <img
+                      alt="Two cats"
+                      onError={[Function]}
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      title="Two cats"
+                    />
                   </div>
-                </div>
-              </Swipeable>
-              <div
-                className="image-gallery-bullets"
-              >
-                <div
-                  aria-label="Bullet Navigation"
-                  className="image-gallery-bullets-container"
-                  role="navigation"
-                >
-                  <button
-                    aria-label="Go to Slide 1"
-                    aria-pressed="true"
-                    className="image-gallery-bullet active "
-                    key="0"
-                    onClick={[Function]}
-                    type="button"
-                  />
-                  <button
-                    aria-label="Go to Slide 2"
-                    aria-pressed="false"
-                    className="image-gallery-bullet  "
-                    key="1"
-                    onClick={[Function]}
-                    type="button"
-                  />
                 </div>
               </div>
             </div>
