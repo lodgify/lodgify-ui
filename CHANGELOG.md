@@ -1,3 +1,20 @@
+# [1.86.0](https://github.com/lodgify/lodgify-ui/compare/v1.85.0...v1.86.0) (2018-11-22)
+
+
+### Bug Fixes
+
+* **package.json:** extend size limit ([ca16b79](https://github.com/lodgify/lodgify-ui/commit/ca16b79))
+* **RatingInput:** adapt component snap ([5184f6b](https://github.com/lodgify/lodgify-ui/commit/5184f6b))
+
+
+### Features
+
+* **getModalFormMarkup:** implement util and unit tests ([47f7b40](https://github.com/lodgify/lodgify-ui/commit/47f7b40))
+* **RatingInput:** expose label prop ([d754c92](https://github.com/lodgify/lodgify-ui/commit/d754c92))
+* **Reviews:** add component unit test and mock data ([5de4f69](https://github.com/lodgify/lodgify-ui/commit/5de4f69))
+* **Reviews:** implement constant strings ([bed5a40](https://github.com/lodgify/lodgify-ui/commit/bed5a40))
+* **Reviews:** implement submit form ([980f7ca](https://github.com/lodgify/lodgify-ui/commit/980f7ca))
+
 # [1.85.0](https://github.com/lodgify/lodgify-ui/compare/v1.84.1...v1.85.0) (2018-11-22)
 
 
