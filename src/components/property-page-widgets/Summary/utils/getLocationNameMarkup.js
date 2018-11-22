@@ -8,7 +8,7 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
  * @return {Object}
  */
 export const getLocationNameMarkup = locationName => (
-  <Segment>
+  <Segment className="is-location-name" title={locationName}>
     {locationName}
     <Icon color="yellow" name={ICON_NAMES.MAP_PIN} size="small" />
   </Segment>
