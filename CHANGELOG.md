@@ -1,3 +1,10 @@
+## [1.84.1](https://github.com/lodgify/lodgify-ui/compare/v1.84.0...v1.84.1) (2018-11-22)
+
+
+### Bug Fixes
+
+* **PaymentInformation:** hide rows if relevant props are undefined ([8fd604f](https://github.com/lodgify/lodgify-ui/commit/8fd604f))
+
 # [1.84.0](https://github.com/lodgify/lodgify-ui/compare/v1.83.0...v1.84.0) (2018-11-19)
 
 
