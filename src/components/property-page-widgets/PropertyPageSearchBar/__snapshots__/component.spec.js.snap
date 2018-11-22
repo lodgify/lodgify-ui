@@ -263,9 +263,11 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   </Icon>
                                                 </div>
                                               </Segment>
-                                              <Segment>
+                                              <Segment
+                                                className="is-rating"
+                                              >
                                                 <div
-                                                  className="ui segment"
+                                                  className="ui segment is-rating"
                                                 >
                                                   <Rating
                                                     iconSize="tiny"
@@ -2716,9 +2718,11 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   </span>
                                                 </div>
                                               </Segment>
-                                              <Segment>
+                                              <Segment
+                                                className="is-rating"
+                                              >
                                                 <div
-                                                  className="ui segment"
+                                                  className="ui segment is-rating"
                                                 >
                                                   <Rating
                                                     iconSize="tiny"
