@@ -1,78 +1,38 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Segment } from 'semantic-ui-react';
-import {
-  expectComponentToHaveChildren,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Icon } from 'elements/Icon';
-import { Rating } from 'elements/Rating';
 
 import { getNightPriceRatingAndLocationMarkup } from './getNightPriceRatingAndLocationMarkup';
 
-const props = {
-  ratingNumber: 90,
-  nightPrice: '280$',
-  locationName: 'someLocation',
-};
+const nightPrice = '280$';
+const locationName = 'someLocation';
 
-const getMarkupAsRenderedComponent = () =>
+const getMarkupAsRenderedComponent = ratingNumber =>
   shallow(
     <div>
       {getNightPriceRatingAndLocationMarkup(
-        props.ratingNumber,
-        props.nightPrice,
-        props.locationName
+        ratingNumber,
+        nightPrice,
+        locationName
       )}
     </div>
   );
 
 describe('getNightPriceRatingAndLocationMarkup', () => {
-  it('should return the right children', () => {
-    const wrapper = getMarkupAsRenderedComponent();
+  describe('if `ratingNumber` is not `0`', () => {
+    it('should return the right markup', () => {
+      const ratingNumber = 1;
+      const wrapper = getMarkupAsRenderedComponent(ratingNumber);
 
-    expectComponentToHaveChildren(wrapper, Segment, Segment, Segment);
-  });
-
-  describe('the first `Segment` component', () => {
-    it('should have the right children', () => {
-      const wrapper = getMarkupAsRenderedComponent()
-        .find(Segment)
-        .at(0);
-
-      expectComponentToHaveChildren(wrapper, props.locationName, Icon);
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
-  describe('the second `Segment` component', () => {
-    it('should have the right children', () => {
-      const wrapper = getMarkupAsRenderedComponent()
-        .find(Segment)
-        .at(1);
+  describe('if `ratingNumber` is `0`', () => {
+    it('should return the right markup', () => {
+      const ratingNumber = 0;
+      const wrapper = getMarkupAsRenderedComponent(ratingNumber);
 
-      expectComponentToHaveChildren(wrapper, Rating);
-    });
-  });
-
-  describe('the `Rating` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getMarkupAsRenderedComponent().find(Rating);
-
-      expectComponentToHaveProps(wrapper, {
-        ratingNumber: props.ratingNumber,
-        iconSize: 'tiny',
-      });
-    });
-  });
-
-  describe('the third `Segment` component', () => {
-    it('should have the right children', () => {
-      const wrapper = getMarkupAsRenderedComponent()
-        .find(Segment)
-        .at(2);
-
-      expectComponentToHaveChildren(wrapper, 'span');
+      expect(wrapper).toMatchSnapshot();
     });
   });
 });

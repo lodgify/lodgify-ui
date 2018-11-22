@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is \`0\` should return the right markup 1`] = `
+<div>
+  <Segment
+    className="is-location-name"
+    title="someLocation"
+  >
+    someLocation
+    <Icon
+      color="yellow"
+      hasBorder={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="map pin"
+      path={null}
+      size="small"
+    />
+  </Segment>
+  <Segment>
+    <span>
+      from 
+      <Heading
+        isColorInverted={false}
+        size="small"
+        textAlign={null}
+      >
+        280$
+      </Heading>
+      /night
+    </span>
+  </Segment>
+</div>
+`;
+
+exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is not \`0\` should return the right markup 1`] = `
+<div>
+  <Segment
+    className="is-location-name"
+    title="someLocation"
+  >
+    someLocation
+    <Icon
+      color="yellow"
+      hasBorder={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="map pin"
+      path={null}
+      size="small"
+    />
+  </Segment>
+  <Segment
+    className="is-rating"
+  >
+    <Rating
+      iconSize="tiny"
+      isShowingNumeral={true}
+      ratingNumber={1}
+    />
+  </Segment>
+  <Segment>
+    <span>
+      from 
+      <Heading
+        isColorInverted={false}
+        size="small"
+        textAlign={null}
+      >
+        280$
+      </Heading>
+      /night
+    </span>
+  </Segment>
+</div>
+`;
