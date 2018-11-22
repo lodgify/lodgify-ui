@@ -1,3 +1,11 @@
+# [1.85.0](https://github.com/lodgify/lodgify-ui/compare/v1.84.1...v1.85.0) (2018-11-22)
+
+
+### Features
+
+* **GoogleMap:** expose apiKey prop and use constant as default ([a0ad398](https://github.com/lodgify/lodgify-ui/commit/a0ad398))
+* **Location:** expose apiKey prop and use undefined as default ([4a363b2](https://github.com/lodgify/lodgify-ui/commit/4a363b2))
+
 ## [1.84.1](https://github.com/lodgify/lodgify-ui/compare/v1.84.0...v1.84.1) (2018-11-22)
 
 

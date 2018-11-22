@@ -447,6 +447,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
               className="top aligned twelve wide column"
             >
               <GoogleMap
+                apiKey="AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q"
                 height="400px"
                 isShowingApproximateLocation={false}
                 isShowingExactLocation={false}
