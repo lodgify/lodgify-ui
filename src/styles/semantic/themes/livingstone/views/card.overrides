@@ -113,3 +113,36 @@
 
   /* Colored */
 }
+
+/* Room Type Image Gallery */
+.has-room-type-gallery {
+
+  .image-gallery {
+
+    .image-gallery-content {
+
+      .image-gallery-image {
+        position: relative;
+        border-radius: @borderRadius 0 0 @borderRadius;
+        min-height: @roomTypeSlideshowImageHeight;
+
+        > img {
+          position: absolute;
+          height: 100%;
+          top: 50%;
+          left: 50%;
+          width: auto;
+          transform: translate(-50%, -50%);
+
+          @supports (object-fit: cover) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            object-fit: cover;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+}

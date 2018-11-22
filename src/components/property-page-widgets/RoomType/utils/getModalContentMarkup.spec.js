@@ -52,7 +52,7 @@ describe('getModalContentMarkup', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('`props.ratingNumber` if null', () => {
+  describe('if `props.ratingNumber` === null', () => {
     it('should not render the rating', () => {
       const wrapper = getMarkup({
         ratingNumber: null,
@@ -62,7 +62,7 @@ describe('getModalContentMarkup', () => {
     });
   });
 
-  describe('`props.description` if null', () => {
+  describe('if `props.description` === null', () => {
     it('should not render the description', () => {
       const wrapper = getMarkup({
         description: null,
@@ -72,7 +72,7 @@ describe('getModalContentMarkup', () => {
     });
   });
 
-  describe('`props.slideShowImages.length` > 1', () => {
+  describe('if `props.slideShowImages.length` > 1', () => {
     it('should render the right structure', () => {
       const wrapper = getMarkup({
         slideShowImages: [

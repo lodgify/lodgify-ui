@@ -35,7 +35,7 @@ export const getModalContentMarkup = (
   slideShowImages,
   isUserOnMobile
 ) => (
-  <Modal.Content className="room-type">
+  <Modal.Content className="has-room-type-gallery">
     <Heading>{name}</Heading>
     {!!ratingNumber && <Rating ratingNumber={ratingNumber} />}
     <Divider size="small" />

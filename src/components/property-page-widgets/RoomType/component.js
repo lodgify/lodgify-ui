@@ -33,7 +33,7 @@ const Component = ({
   ratingNumber,
   slideShowImages,
 }) => (
-  <Card fluid>
+  <Card className="has-room-type-gallery" fluid>
     <Grid>
       <GridRow>
         <GridColumn computer={4} mobile={12} verticalAlignContent={null}>
