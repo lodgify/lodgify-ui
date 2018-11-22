@@ -264,7 +264,7 @@ describe('<SearchBar />', () => {
       const wrapper = getButtonFormField();
 
       expectComponentToHaveProps(wrapper, {
-        width: 'three',
+        width: 'four',
       });
     });
 
