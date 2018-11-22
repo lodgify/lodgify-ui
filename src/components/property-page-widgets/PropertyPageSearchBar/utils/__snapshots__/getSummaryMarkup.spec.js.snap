@@ -45,9 +45,13 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
         <div
           className="ui horizontal segments horizontal-wrap"
         >
-          <Segment>
+          <Segment
+            className="is-location-name"
+            title="Location"
+          >
             <div
-              className="ui segment"
+              className="ui segment is-location-name"
+              title="Location"
             >
               Location
               <Icon

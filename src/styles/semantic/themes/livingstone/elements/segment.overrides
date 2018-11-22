@@ -78,6 +78,32 @@
 
 .ui.segments.is-summary {
   margin: 0;
+  max-width: 100%;
+
+  @media @smallestWidescreenScreen {
+
+    .ui.horizontal.segments.horizontal-wrap {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .segment {
+    white-space: nowrap;
+
+    &.is-location-name,
+    .ui.header {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &.is-location-name {
+      max-width: @summaryLocationNameMaxWidth;
+    }
+
+    .ui.header {
+      max-width: 100%;
+    }
+  }
 }
 
 /* Full bleed */

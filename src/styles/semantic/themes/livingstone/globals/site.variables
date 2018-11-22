@@ -171,11 +171,13 @@
 @tabletBreakpoint: 600px;
 @computerBreakpoint: 1000px;
 @smallestComputerBreakpoint: (@tabletBreakpoint + 1px);
+@smallestWidescreenBreakpoint: (@computerBreakpoint + 1px);
 
 @tinyScreen: ~"only screen and (max-width: @{largestTinyScreen})";
 @mobileScreen: ~"only screen and (max-width: @{largestMobileScreen})";
 @tabletScreen: ~"only screen and (max-width: @{tabletBreakpoint})";
 @computerScreen: ~"only screen and (min-width: @{smallestComputerBreakpoint})";
+@smallestWidescreenScreen: ~"only screen and (min-width: @{smallestWidescreenBreakpoint})";
 
 /*-------------------
       Site Colors
