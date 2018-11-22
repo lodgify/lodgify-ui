@@ -11,6 +11,7 @@ import { GOOGLE_MAPS_API_KEY } from './constants';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  apiKey,
   height,
   isShowingExactLocation,
   isShowingApproximateLocation,
@@ -18,7 +19,7 @@ export const Component = ({
   longitude,
 }) => (
   <ReactGoogleMap
-    apiKey={GOOGLE_MAPS_API_KEY}
+    apiKey={apiKey}
     containerElement={<Card fluid />}
     height={height}
     isShowingApproximateLocation={isShowingApproximateLocation}
@@ -31,12 +32,15 @@ export const Component = ({
 Component.displayName = 'GoogleMap';
 
 Component.defaultProps = {
+  apiKey: GOOGLE_MAPS_API_KEY,
   height: '400px',
   isShowingExactLocation: false,
   isShowingApproximateLocation: false,
 };
 
 Component.propTypes = {
+  /** An [API key](https://developers.google.com/maps/documentation/javascript/get-api-key) for using Google Maps. */
+  apiKey: PropTypes.string,
   /** A valid CSS value to set the height of the map. */
   height: PropTypes.string,
   /** Is the map showing a marker for the approximate location. */

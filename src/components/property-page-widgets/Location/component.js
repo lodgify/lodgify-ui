@@ -24,6 +24,7 @@ import { getGoogleMapHeight } from './utils/getGoogleMapHeight';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
+  apiKey,
   headingText,
   isShowingApproximateLocation,
   isShowingExactLocation,
@@ -60,6 +61,7 @@ const Component = ({
     )}
     <GridColumn width={12}>
       <GoogleMap
+        apiKey={apiKey}
         height={getGoogleMapHeight(isUserOnMobile)}
         isShowingApproximateLocation={isShowingApproximateLocation}
         isShowingExactLocation={isShowingExactLocation}
@@ -79,6 +81,7 @@ const Component = ({
 Component.displayName = 'Location';
 
 Component.defaultProps = {
+  apiKey: undefined,
   headingText: LOCATION,
   isShowingApproximateLocation: false,
   isShowingExactLocation: false,
@@ -87,6 +90,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** An [API key](https://developers.google.com/maps/documentation/javascript/get-api-key) for using Google Maps. */
+  apiKey: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
   /** Is the map showing a marker for the approximate location. */
