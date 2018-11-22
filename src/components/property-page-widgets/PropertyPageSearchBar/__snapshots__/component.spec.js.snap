@@ -2477,10 +2477,10 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               </div>
                                             </FormField>
                                             <FormField
-                                              width="three"
+                                              width="four"
                                             >
                                               <div
-                                                className="three wide field"
+                                                className="four wide field"
                                               >
                                                 <Button
                                                   hasShadow={false}
