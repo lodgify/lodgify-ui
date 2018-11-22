@@ -1,3 +1,11 @@
+# [1.87.0](https://github.com/lodgify/lodgify-ui/compare/v1.86.0...v1.87.0) (2018-11-22)
+
+
+### Features
+
+* **PropertyPageSearchBar:** set height to 85px and tighten up summary ([0fdcd96](https://github.com/lodgify/lodgify-ui/commit/0fdcd96))
+* **Summary:** truncate location name and property name ([dd66eda](https://github.com/lodgify/lodgify-ui/commit/dd66eda))
+
 # [1.86.0](https://github.com/lodgify/lodgify-ui/compare/v1.85.0...v1.86.0) (2018-11-22)
 
 
