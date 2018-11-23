@@ -69,10 +69,11 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
   }
 >
   <Card
+    className="has-room-type-gallery"
     fluid={true}
   >
     <div
-      className="ui fluid card"
+      className="ui fluid card has-room-type-gallery"
       onClick={[Function]}
     >
       <Grid
@@ -509,7 +510,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                         closeOnDimmerClick={true}
                                         closeOnDocumentClick={false}
                                         content={
-                                          <ModalContent>
+                                          <ModalContent
+                                            className="has-room-type-gallery"
+                                          >
                                             <Heading
                                               isColorInverted={false}
                                               size="medium"
@@ -856,7 +859,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                               closeOnDimmerClick={true}
                                               closeOnDocumentClick={false}
                                               content={
-                                                <ModalContent>
+                                                <ModalContent
+                                                  className="has-room-type-gallery"
+                                                >
                                                   <Heading
                                                     isColorInverted={false}
                                                     size="medium"
@@ -1209,10 +1214,11 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
   }
 >
   <Card
+    className="has-room-type-gallery"
     fluid={true}
   >
     <div
-      className="ui fluid card"
+      className="ui fluid card has-room-type-gallery"
       onClick={[Function]}
     >
       <Grid
@@ -1649,7 +1655,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                         closeOnDimmerClick={true}
                                         closeOnDocumentClick={false}
                                         content={
-                                          <ModalContent>
+                                          <ModalContent
+                                            className="has-room-type-gallery"
+                                          >
                                             <Heading
                                               isColorInverted={false}
                                               size="medium"
@@ -1970,7 +1978,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                               closeOnDimmerClick={true}
                                               closeOnDocumentClick={false}
                                               content={
-                                                <ModalContent>
+                                                <ModalContent
+                                                  className="has-room-type-gallery"
+                                                >
                                                   <Heading
                                                     isColorInverted={false}
                                                     size="medium"

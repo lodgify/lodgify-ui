@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`getModalContentMarkup \`props.description\` if null should not render the description 1`] = `
+exports[`getModalContentMarkup if \`props.description\` === null should not render the description 1`] = `
 <ModalContent
-  className="room-type"
+  className="has-room-type-gallery"
 >
   <div
-    className="room-type content"
+    className="has-room-type-gallery content"
   >
     <Heading
       isColorInverted={false}
@@ -620,12 +620,12 @@ exports[`getModalContentMarkup \`props.description\` if null should not render t
 </ModalContent>
 `;
 
-exports[`getModalContentMarkup \`props.ratingNumber\` if null should not render the rating 1`] = `
+exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not render the rating 1`] = `
 <ModalContent
-  className="room-type"
+  className="has-room-type-gallery"
 >
   <div
-    className="room-type content"
+    className="has-room-type-gallery content"
   >
     <Heading
       isColorInverted={false}
@@ -1094,12 +1094,12 @@ exports[`getModalContentMarkup \`props.ratingNumber\` if null should not render 
 </ModalContent>
 `;
 
-exports[`getModalContentMarkup \`props.slideShowImages.length\` > 1 should render the right structure 1`] = `
+exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should render the right structure 1`] = `
 <ModalContent
-  className="room-type"
+  className="has-room-type-gallery"
 >
   <div
-    className="room-type content"
+    className="has-room-type-gallery content"
   >
     <Heading
       isColorInverted={false}
@@ -1881,10 +1881,10 @@ exports[`getModalContentMarkup \`props.slideShowImages.length\` > 1 should rende
 
 exports[`getModalContentMarkup should return the correct structure 1`] = `
 <ModalContent
-  className="room-type"
+  className="has-room-type-gallery"
 >
   <div
-    className="room-type content"
+    className="has-room-type-gallery content"
   >
     <Heading
       isColorInverted={false}
