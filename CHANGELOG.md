@@ -1,3 +1,12 @@
+## [1.88.1](https://github.com/lodgify/lodgify-ui/compare/v1.88.0...v1.88.1) (2018-11-23)
+
+
+### Bug Fixes
+
+* **RoomType:** remove superfluous prop from Slideshow ([7ee1c02](https://github.com/lodgify/lodgify-ui/commit/7ee1c02))
+* **RoomType:** restrict slideshow image sizes ([33cc3c7](https://github.com/lodgify/lodgify-ui/commit/33cc3c7))
+* **Slideshow:** hide bullet navigation when only one image ([1cd0ad1](https://github.com/lodgify/lodgify-ui/commit/1cd0ad1))
+
 # [1.88.0](https://github.com/lodgify/lodgify-ui/compare/v1.87.1...v1.88.0) (2018-11-23)
 
 
