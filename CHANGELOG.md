@@ -1,3 +1,10 @@
+## [1.87.1](https://github.com/lodgify/lodgify-ui/compare/v1.87.0...v1.87.1) (2018-11-23)
+
+
+### Bug Fixes
+
+* **Dropdown:** add line-height and reduce parent padding to stop resizing on selection ([dc2f240](https://github.com/lodgify/lodgify-ui/commit/dc2f240))
+
 # [1.87.0](https://github.com/lodgify/lodgify-ui/compare/v1.86.0...v1.87.0) (2018-11-22)
 
 
