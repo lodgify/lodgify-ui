@@ -181,7 +181,6 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
       </Divider>
     </Divider>
     <Slideshow
-      additionalClass="no-shadow"
       hasShadow={true}
       headingText={null}
       images={
@@ -660,7 +659,6 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
       </Divider>
     </Divider>
     <Slideshow
-      additionalClass="no-shadow"
       hasShadow={true}
       headingText={null}
       images={
@@ -1275,7 +1273,6 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
       </Divider>
     </Divider>
     <Slideshow
-      additionalClass="no-shadow"
       hasShadow={true}
       headingText={null}
       images={
@@ -2060,7 +2057,6 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
       </Divider>
     </Divider>
     <Slideshow
-      additionalClass="no-shadow"
       hasShadow={true}
       headingText={null}
       images={

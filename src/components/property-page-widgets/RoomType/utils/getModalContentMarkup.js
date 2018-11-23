@@ -40,7 +40,6 @@ export const getModalContentMarkup = (
     {!!ratingNumber && <Rating ratingNumber={ratingNumber} />}
     <Divider size="small" />
     <Slideshow
-      additionalClass="no-shadow"
       images={slideShowImages}
       isShowingBulletNavigation={size(slideShowImages) > 1}
     />

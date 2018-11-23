@@ -531,7 +531,6 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                               size="small"
                                             />
                                             <Slideshow
-                                              additionalClass="no-shadow"
                                               hasShadow={true}
                                               headingText={null}
                                               images={
@@ -880,7 +879,6 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                     size="small"
                                                   />
                                                   <Slideshow
-                                                    additionalClass="no-shadow"
                                                     hasShadow={true}
                                                     headingText={null}
                                                     images={
@@ -1676,7 +1674,6 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                               size="small"
                                             />
                                             <Slideshow
-                                              additionalClass="no-shadow"
                                               hasShadow={true}
                                               headingText={null}
                                               images={
@@ -1999,7 +1996,6 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                     size="small"
                                                   />
                                                   <Slideshow
-                                                    additionalClass="no-shadow"
                                                     hasShadow={true}
                                                     headingText={null}
                                                     images={
