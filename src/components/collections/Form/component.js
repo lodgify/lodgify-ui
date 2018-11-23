@@ -8,7 +8,7 @@ import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 
 import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
-import { getIsRequiredError } from './utils/getIsRequiredError';
+import { getIsRequiredErrorThenSetState } from './utils/getIsRequiredErrorThenSetState';
 import { getIsValidError } from './utils/getIsValidError';
 import { getEmptyRequiredInputs } from './utils/getEmptyRequiredInputs';
 import { getFormChild } from './utils/getFormChild';
@@ -21,15 +21,26 @@ import { getIsSubmitButtonDisabled } from './utils/getIsSubmitButtonDisabled';
 export class Component extends PureComponent {
   state = {};
 
-  handleInputBlur = name => {
-    const validation = getValidationWithDefaults(this.props.validation[name]);
-    const hasError = getIsRequiredError(validation, this.state[name]);
-
-    hasError &&
-      this.setState({ [name]: { error: validation.isRequiredMessage } });
-  };
+  handleInputBlur = name =>
+    getIsRequiredErrorThenSetState(
+      this.setState.bind(this),
+      this.props.validation[name],
+      name,
+      this.state[name]
+    );
 
   handleInputChange = (name, value) => {
+    const hasIsRequiredError = getIsRequiredErrorThenSetState(
+      this.setState.bind(this),
+      this.props.validation[name],
+      name,
+      { value }
+    );
+
+    if (hasIsRequiredError) {
+      return;
+    }
+
     const { invalidMessage, getIsValid } = getValidationWithDefaults(
       this.props.validation[name]
     );

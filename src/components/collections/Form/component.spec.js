@@ -155,6 +155,24 @@ describe('<Form />', () => {
         [name]: { error: false, isValid: undefined, value: '🌴' },
       });
     });
+
+    describe('if there is an `is required` type error', () => {
+      it('should set the error to component state', () => {
+        const name = '🐸';
+        const value = '';
+        const wrapper = getForm(<input />, {
+          validation: { [name]: { isRequired: true } },
+        });
+
+        wrapper.instance().handleInputChange(name, value);
+
+        const actual = wrapper.state();
+
+        expect(actual).toEqual({
+          [name]: { error: DEFAULT_IS_REQUIRED_MESSAGE },
+        });
+      });
+    });
   });
 
   describe('`handleSubmit`', () => {

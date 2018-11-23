@@ -156,6 +156,9 @@ const dropdownOptions = [{
 }, {
   text: 'Is valid',
   value: 'valid'
+}, {
+  text: 'Is empty string',
+  value: ''
 }];
 
 <Form
