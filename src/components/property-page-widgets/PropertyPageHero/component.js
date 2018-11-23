@@ -13,6 +13,8 @@ import { ICON_NAMES } from 'elements/Icon';
 import { VIEW_MORE_PICTURES } from 'utils/default-strings';
 import { Divider } from 'elements/Divider';
 
+import { BOTTOM_OFFSET } from './constants';
+
 /**
  * A homepage hero displays a hero with heading and a search bar on desktop screens.
  */
@@ -38,6 +40,7 @@ const Component = ({
   <Hero
     activeNavigationItemIndex={activeNavigationItemIndex}
     backgroundImageUrl={images[0].imageUrl}
+    bottomOffset={BOTTOM_OFFSET}
     headerLogoSrc={headerLogoSrc}
     headerLogoText={headerLogoText}
     headerNavigationItems={headerNavigationItems}
@@ -46,6 +49,7 @@ const Component = ({
     headerSearchBarLocationOptions={searchBarLocationOptions}
     headerSearchBarModalHeadingText={searchBarModalHeadingText}
     headerSearchBarSearchButton={searchBarSearchButton}
+    isFixedSearchBarDisplayed
     placeholderBackgroundImageUrl={images[0].placeholderImageUrl}
     searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
     searchBarOnChangeInput={searchBarOnChangeInput}

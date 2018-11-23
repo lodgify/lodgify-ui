@@ -2,16 +2,27 @@
 
 exports[`<FullBleed /> by default should have the right structure 1`] = `
 <FullBleed
+  bottomOffset="0px"
   hasGradient={false}
   imageUrl="🐱🐱"
   placeholderImageUrl={null}
 >
   <Segment
     className="full-bleed"
+    style={
+      Object {
+        "--full-bleed-bottom-offset": "0px",
+      }
+    }
     vertical={true}
   >
     <div
       className="ui vertical segment full-bleed"
+      style={
+        Object {
+          "--full-bleed-bottom-offset": "0px",
+        }
+      }
     >
       <ResponsiveImage
         alternativeText="Image Widget"
@@ -57,16 +68,27 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
 
 exports[`<FullBleed /> if \`hasGradient\` is passed should have the right structure 1`] = `
 <FullBleed
+  bottomOffset="0px"
   hasGradient={true}
   imageUrl="🐱🐱"
   placeholderImageUrl={null}
 >
   <Segment
     className="full-bleed has-gradient"
+    style={
+      Object {
+        "--full-bleed-bottom-offset": "0px",
+      }
+    }
     vertical={true}
   >
     <div
       className="ui vertical segment full-bleed has-gradient"
+      style={
+        Object {
+          "--full-bleed-bottom-offset": "0px",
+        }
+      }
     >
       <ResponsiveImage
         alternativeText="Image Widget"
@@ -112,16 +134,27 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
 
 exports[`<FullBleed /> if \`props.children > 0\` should have the right structure 1`] = `
 <FullBleed
+  bottomOffset="0px"
   hasGradient={false}
   imageUrl="🐱🐱"
   placeholderImageUrl={null}
 >
   <Segment
     className="full-bleed has-children"
+    style={
+      Object {
+        "--full-bleed-bottom-offset": "0px",
+      }
+    }
     vertical={true}
   >
     <div
       className="ui vertical segment full-bleed has-children"
+      style={
+        Object {
+          "--full-bleed-bottom-offset": "0px",
+        }
+      }
     >
       <ResponsiveImage
         alternativeText="Image Widget"
