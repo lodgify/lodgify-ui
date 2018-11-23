@@ -1,3 +1,10 @@
+# [1.88.0](https://github.com/lodgify/lodgify-ui/compare/v1.87.1...v1.88.0) (2018-11-23)
+
+
+### Features
+
+* **Summary:** hide rating is props.ratingNumber is 0 ([f99b8f0](https://github.com/lodgify/lodgify-ui/commit/f99b8f0))
+
 ## [1.87.1](https://github.com/lodgify/lodgify-ui/compare/v1.87.0...v1.87.1) (2018-11-23)
 
 
