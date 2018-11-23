@@ -1,3 +1,12 @@
+# [1.89.0](https://github.com/lodgify/lodgify-ui/compare/v1.88.1...v1.89.0) (2018-11-23)
+
+
+### Features
+
+* **FullBleed:** add prop to reduce the height ([0985452](https://github.com/lodgify/lodgify-ui/commit/0985452))
+* **Hero:** support prop to reduce the height of the FullBleed ([3b67e67](https://github.com/lodgify/lodgify-ui/commit/3b67e67))
+* **PropertyPageHero:** ensure the hero has a reduced height ([21577cb](https://github.com/lodgify/lodgify-ui/commit/21577cb))
+
 ## [1.88.1](https://github.com/lodgify/lodgify-ui/compare/v1.88.0...v1.88.1) (2018-11-23)
 
 
