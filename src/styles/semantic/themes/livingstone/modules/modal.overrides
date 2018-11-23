@@ -115,3 +115,34 @@
 /* Size Widths */
 
 /* Derived Responsive Sizes */
+
+/* Room Type Image Gallery */
+.ui.modal > .content {
+
+  &.has-room-type-gallery {
+
+    .image-gallery-image {
+      height: @roomTypeModalSlideshowImageHeight;
+
+      > img {
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      @supports (object-fit: cover) {
+        width: auto;
+
+        > img {
+          height: @roomTypeModalSlideshowImageHeight;
+          object-fit: cover;
+          position: static;
+          width: 100%;
+          transform: none;
+        }
+      }
+    }
+  }
+}
