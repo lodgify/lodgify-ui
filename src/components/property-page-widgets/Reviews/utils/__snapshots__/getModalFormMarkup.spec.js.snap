@@ -1,0 +1,671 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getModalFormMarkup should have the right structure with default props 1`] = `
+<Modal
+  isFullscreen={false}
+  size="tiny"
+  trigger={
+    <Button
+      hasShadow={false}
+      icon={null}
+      isCompact={true}
+      isDisabled={false}
+      isLoading={false}
+      isPositionedRight={true}
+      isRounded={true}
+      isSecondary={false}
+      onClick={[Function]}
+      size="medium"
+    />
+  }
+>
+  <Modal
+    closeIcon={
+      <Icon
+        color={null}
+        hasBorder={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="close"
+        path={null}
+        size={null}
+      />
+    }
+    closeOnDimmerClick={true}
+    closeOnDocumentClick={false}
+    content={
+      <Form
+        actionLink={null}
+        errorMessage=""
+        headingText={null}
+        onSubmit={[Function]}
+        submitButtonText={null}
+        successMessage=""
+        validation={Object {}}
+      >
+        <RatingInput
+          error={false}
+          iconSize="small"
+          label=""
+          name="rating"
+          onChange={[Function]}
+        />
+        <TextInput
+          error={false}
+          isValid={false}
+          label=""
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+        />
+        <InputGroup>
+          <TextInput
+            error={false}
+            isValid={false}
+            label=""
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          />
+          <TextInput
+            error={false}
+            isValid={false}
+            label=""
+            name="location"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          />
+        </InputGroup>
+        <InputGroup>
+          <Dropdown
+            error={false}
+            icon={null}
+            isDisabled={false}
+            isValid={false}
+            label=""
+            name="month"
+            onBlur={[Function]}
+            onChange={[Function]}
+            options={Array []}
+            willOpenAbove={false}
+          />
+          <Dropdown
+            error={false}
+            icon={null}
+            isDisabled={false}
+            isValid={false}
+            label=""
+            name="year"
+            onBlur={[Function]}
+            onChange={[Function]}
+            options={Array []}
+            willOpenAbove={false}
+          />
+        </InputGroup>
+        <InputGroup>
+          <Dropdown
+            error={false}
+            icon={null}
+            isDisabled={false}
+            isValid={false}
+            label=""
+            name="apartment"
+            onBlur={[Function]}
+            onChange={[Function]}
+            options={Array []}
+            willOpenAbove={false}
+          />
+          <Dropdown
+            error={false}
+            icon={null}
+            isDisabled={false}
+            isValid={false}
+            label=""
+            name="guest type"
+            onBlur={[Function]}
+            onChange={[Function]}
+            options={Array []}
+            willOpenAbove={false}
+          />
+        </InputGroup>
+        <TextInput
+          error={false}
+          isValid={false}
+          label=""
+          name="title"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+        />
+        <TextArea
+          error={false}
+          isValid={false}
+          label=""
+          name="comments"
+          onBlur={[Function]}
+          onChange={[Function]}
+        />
+      </Form>
+    }
+    dimmer="inverted"
+    eventPool="Modal"
+    size="tiny"
+    trigger={
+      <Button
+        hasShadow={false}
+        icon={null}
+        isCompact={true}
+        isDisabled={false}
+        isLoading={false}
+        isPositionedRight={true}
+        isRounded={true}
+        isSecondary={false}
+        onClick={[Function]}
+        size="medium"
+      />
+    }
+  >
+    <Portal
+      className="ui inverted page modals dimmer transition visible active"
+      closeOnDocumentClick={false}
+      closeOnEscape={true}
+      closeOnRootNodeClick={true}
+      eventPool="Modal"
+      mountNode={<body />}
+      onClose={[Function]}
+      onMount={[Function]}
+      onOpen={[Function]}
+      onUnmount={[Function]}
+      openOnTriggerClick={true}
+      trigger={
+        <Button
+          hasShadow={false}
+          icon={null}
+          isCompact={true}
+          isDisabled={false}
+          isLoading={false}
+          isPositionedRight={true}
+          isRounded={true}
+          isSecondary={false}
+          onClick={[Function]}
+          size="medium"
+        />
+      }
+    >
+      <Ref
+        innerRef={[Function]}
+      >
+        <Button
+          hasShadow={false}
+          icon={null}
+          isCompact={true}
+          isDisabled={false}
+          isLoading={false}
+          isPositionedRight={true}
+          isRounded={true}
+          isSecondary={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          size="medium"
+        >
+          <Button
+            as="button"
+            circular={true}
+            className=""
+            compact={true}
+            disabled={false}
+            floated="right"
+            loading={false}
+            onClick={[Function]}
+            secondary={false}
+            size="medium"
+          >
+            <button
+              className="ui medium circular compact right floated button"
+              onClick={[Function]}
+              role="button"
+            />
+          </Button>
+        </Button>
+      </Ref>
+    </Portal>
+  </Modal>
+</Modal>
+`;
+
+exports[`getModalFormMarkup should render the right structure when props are passed 1`] = `
+<Modal
+  isFullscreen={false}
+  size="tiny"
+  trigger={
+    <Button
+      hasShadow={false}
+      icon={null}
+      isCompact={true}
+      isDisabled={false}
+      isLoading={false}
+      isPositionedRight={true}
+      isRounded={true}
+      isSecondary={false}
+      onClick={[Function]}
+      size="medium"
+    >
+      sumbmutbuttuntuxt
+    </Button>
+  }
+>
+  <Modal
+    closeIcon={
+      <Icon
+        color={null}
+        hasBorder={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="close"
+        path={null}
+        size={null}
+      />
+    }
+    closeOnDimmerClick={true}
+    closeOnDocumentClick={false}
+    content={
+      <Form
+        actionLink={null}
+        errorMessage="Recue me"
+        headingText="Beheading"
+        onSubmit={[MockFunction]}
+        submitButtonText="sumbmutbuttuntuxt"
+        successMessage="succuss"
+        validation={
+          Object {
+            "comments": Object {
+              "isRequired": true,
+            },
+            "name": Object {
+              "isRequired": true,
+            },
+            "rating": Object {
+              "isRequired": true,
+            },
+            "title": Object {
+              "isRequired": true,
+            },
+          }
+        }
+      >
+        <RatingInput
+          error={false}
+          iconSize="small"
+          label=""
+          name="rating"
+          onChange={[Function]}
+          ratingNumber="0"
+        />
+        <TextInput
+          error={false}
+          isValid={false}
+          label="opl"
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+        />
+        <InputGroup>
+          <TextInput
+            error={false}
+            isValid={false}
+            label="@@"
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          />
+          <TextInput
+            error={false}
+            isValid={false}
+            label="Mullurcu"
+            name="location"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          />
+        </InputGroup>
+        <InputGroup>
+          <Dropdown
+            error={false}
+            icon={null}
+            isDisabled={false}
+            isValid={false}
+            label="Jinuari"
+            name="month"
+            onBlur={[Function]}
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "text": "January",
+                  "value": "january",
+                },
+                Object {
+                  "text": "February",
+                  "value": "february",
+                },
+                Object {
+                  "text": "March",
+                  "value": "march",
+                },
+                Object {
+                  "text": "April",
+                  "value": "April",
+                },
+                Object {
+                  "text": "May",
+                  "value": "May",
+                },
+                Object {
+                  "text": "June",
+                  "value": "june",
+                },
+                Object {
+                  "text": "July",
+                  "value": "July",
+                },
+                Object {
+                  "text": "August",
+                  "value": "August",
+                },
+                Object {
+                  "text": "September",
+                  "value": "September",
+                },
+                Object {
+                  "text": "October",
+                  "value": "October",
+                },
+                Object {
+                  "text": "November",
+                  "value": "November",
+                },
+                Object {
+                  "text": "December",
+                  "value": "December",
+                },
+              ]
+            }
+            willOpenAbove={false}
+          />
+          <Dropdown
+            error={false}
+            icon={null}
+            isDisabled={false}
+            isValid={false}
+            label="yuur"
+            name="year"
+            onBlur={[Function]}
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "text": "2018",
+                  "value": "2018",
+                },
+                Object {
+                  "text": "2017",
+                  "value": "2017",
+                },
+                Object {
+                  "text": "2016",
+                  "value": "2016",
+                },
+                Object {
+                  "text": "2015",
+                  "value": "2015",
+                },
+                Object {
+                  "text": "2014",
+                  "value": "2014",
+                },
+                Object {
+                  "text": "2013",
+                  "value": "2013",
+                },
+                Object {
+                  "text": "2012",
+                  "value": "2012",
+                },
+                Object {
+                  "text": "2011",
+                  "value": "2011",
+                },
+                Object {
+                  "text": "2010",
+                  "value": "2010",
+                },
+                Object {
+                  "text": "2009",
+                  "value": "2009",
+                },
+                Object {
+                  "text": "2008",
+                  "value": "2008",
+                },
+                Object {
+                  "text": "2007",
+                  "value": "2007",
+                },
+                Object {
+                  "text": "2006",
+                  "value": "2006",
+                },
+              ]
+            }
+            willOpenAbove={false}
+          />
+        </InputGroup>
+        <InputGroup>
+          <Dropdown
+            error={false}
+            icon={null}
+            isDisabled={false}
+            isValid={false}
+            label="Sullust"
+            name="apartment"
+            onBlur={[Function]}
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "text": "La Casa Viva",
+                  "value": "casaViva",
+                },
+                Object {
+                  "text": "La Casa Muerta",
+                  "value": "casaMuerta",
+                },
+                Object {
+                  "text": "The White Lodge",
+                  "value": "whiteLodge",
+                },
+                Object {
+                  "text": "The Black Lodge",
+                  "value": "blackLodge",
+                },
+              ]
+            }
+            willOpenAbove={false}
+          />
+          <Dropdown
+            error={false}
+            icon={null}
+            isDisabled={false}
+            isValid={false}
+            label="Foreigner"
+            name="guest type"
+            onBlur={[Function]}
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "text": "Droid",
+                  "value": "droid",
+                },
+                Object {
+                  "text": "Salmon",
+                  "value": "salmon",
+                },
+                Object {
+                  "text": "Pirate",
+                  "value": "pirate",
+                },
+                Object {
+                  "text": "Flautist",
+                  "value": "flautist",
+                },
+                Object {
+                  "text": "K-POP fan",
+                  "value": "K-POP fan",
+                },
+                Object {
+                  "text": "Hipster",
+                  "value": "hipster",
+                },
+                Object {
+                  "text": "Gym guy",
+                  "value": "gym guy",
+                },
+                Object {
+                  "text": "Politician",
+                  "value": "politician",
+                },
+              ]
+            }
+            willOpenAbove={false}
+          />
+        </InputGroup>
+        <TextInput
+          error={false}
+          isValid={false}
+          label="Duke"
+          name="title"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+        />
+        <TextArea
+          error={false}
+          isValid={false}
+          label="blablabla"
+          name="comments"
+          onBlur={[Function]}
+          onChange={[Function]}
+        />
+      </Form>
+    }
+    dimmer="inverted"
+    eventPool="Modal"
+    size="tiny"
+    trigger={
+      <Button
+        hasShadow={false}
+        icon={null}
+        isCompact={true}
+        isDisabled={false}
+        isLoading={false}
+        isPositionedRight={true}
+        isRounded={true}
+        isSecondary={false}
+        onClick={[Function]}
+        size="medium"
+      >
+        sumbmutbuttuntuxt
+      </Button>
+    }
+  >
+    <Portal
+      className="ui inverted page modals dimmer transition visible active"
+      closeOnDocumentClick={false}
+      closeOnEscape={true}
+      closeOnRootNodeClick={true}
+      eventPool="Modal"
+      mountNode={<body />}
+      onClose={[Function]}
+      onMount={[Function]}
+      onOpen={[Function]}
+      onUnmount={[Function]}
+      openOnTriggerClick={true}
+      trigger={
+        <Button
+          hasShadow={false}
+          icon={null}
+          isCompact={true}
+          isDisabled={false}
+          isLoading={false}
+          isPositionedRight={true}
+          isRounded={true}
+          isSecondary={false}
+          onClick={[Function]}
+          size="medium"
+        >
+          sumbmutbuttuntuxt
+        </Button>
+      }
+    >
+      <Ref
+        innerRef={[Function]}
+      >
+        <Button
+          hasShadow={false}
+          icon={null}
+          isCompact={true}
+          isDisabled={false}
+          isLoading={false}
+          isPositionedRight={true}
+          isRounded={true}
+          isSecondary={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          size="medium"
+        >
+          <Button
+            as="button"
+            circular={true}
+            className=""
+            compact={true}
+            disabled={false}
+            floated="right"
+            loading={false}
+            onClick={[Function]}
+            secondary={false}
+            size="medium"
+          >
+            <button
+              className="ui medium circular compact right floated button"
+              onClick={[Function]}
+              role="button"
+            >
+              sumbmutbuttuntuxt
+            </button>
+          </Button>
+        </Button>
+      </Ref>
+    </Portal>
+  </Modal>
+</Modal>
+`;

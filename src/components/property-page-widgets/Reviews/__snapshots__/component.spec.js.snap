@@ -1,0 +1,1366 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Reviews /> should render the right structure 1`] = `
+<Reviews
+  apartmentInputLabel="Apartment"
+  commentInputLabel="Comments"
+  emailInputLabel="Your email"
+  errorMessage=""
+  guestTypeInputLabel="Guest Type"
+  guestTypeOptions={Array []}
+  headingText="Reviews"
+  locationInputLabel="Your location"
+  monthInputLabel="Month"
+  monthOptions={Array []}
+  nameInputLabel="Your name"
+  onSubmit={[Function]}
+  propertyOptions={Array []}
+  ratingAverage={4}
+  ratingInputLabel="Your review"
+  reviewFormHeading="Add a Review"
+  reviews={
+    Array [
+      Object {
+        "ratingNumber": 4.5,
+        "reviewResponse": Object {
+          "dateTime": "10/14/2015 12:22:58 PM",
+          "source": "The Owner",
+          "text": "You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!",
+        },
+        "reviewText": "Beautifully located and well-kept villas in Santorini. Would certainly come back next year.",
+        "reviewTitle": "Great accommodation! Honorable host.",
+        "reviewerCategory": "Young people",
+        "reviewerLocation": "Lithuania",
+        "reviewerName": "Magellan",
+        "reviewerStayDate": "9/2015",
+      },
+      Object {
+        "ratingNumber": 3,
+        "reviewResponse": null,
+        "reviewText": "Beautifully located and well-kept villas in Santorini. Would certainly come back next year.",
+        "reviewTitle": "Great accommodation! Honorable host.",
+        "reviewerCategory": "Young people",
+        "reviewerLocation": "Lithuania",
+        "reviewerName": "Magellan",
+        "reviewerStayDate": "9/2015",
+      },
+    ]
+  }
+  submitButtonText="Submit a review"
+  successMessage=""
+  titleInputLabel="Title"
+  validation={Object {}}
+  yearInputLabel="Year"
+  yearOptions={Array []}
+>
+  <Grid
+    areColumnsCentered={false}
+  >
+    <Grid
+      centered={false}
+    >
+      <div
+        className="ui grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Reviews
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+          verticalAlign="middle"
+        >
+          <GridRow
+            textAlign="left"
+            verticalAlign="middle"
+          >
+            <div
+              className="left aligned middle aligned row"
+            >
+              <GridColumn
+                computer={6}
+                floated="left"
+                mobile={5}
+                tablet={5}
+                textAlign="left"
+                verticalAlign="middle"
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={6}
+                  floated="left"
+                  mobile={5}
+                  tablet={5}
+                  textAlign="left"
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="left aligned left floated top aligned six wide computer five wide mobile five wide tablet column"
+                  >
+                    <Rating
+                      iconSize="small"
+                      isShowingNumeral={true}
+                      ratingNumber={4}
+                    >
+                      4
+                      <Rating
+                        clearable="auto"
+                        disabled={true}
+                        maxRating={5}
+                        rating={4}
+                        size="small"
+                      >
+                        <div
+                          className="ui small disabled rating"
+                          onMouseLeave={[Function]}
+                          role="radiogroup"
+                        >
+                          <RatingIcon
+                            active={true}
+                            aria-checked={false}
+                            aria-posinset={1}
+                            aria-setsize={5}
+                            as="i"
+                            index={0}
+                            key="0"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            selected={false}
+                          >
+                            <i
+                              aria-checked={false}
+                              aria-posinset={1}
+                              aria-setsize={5}
+                              className="active icon"
+                              onClick={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseEnter={[Function]}
+                              role="radio"
+                              tabIndex={0}
+                            />
+                          </RatingIcon>
+                          <RatingIcon
+                            active={true}
+                            aria-checked={false}
+                            aria-posinset={2}
+                            aria-setsize={5}
+                            as="i"
+                            index={1}
+                            key="1"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            selected={false}
+                          >
+                            <i
+                              aria-checked={false}
+                              aria-posinset={2}
+                              aria-setsize={5}
+                              className="active icon"
+                              onClick={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseEnter={[Function]}
+                              role="radio"
+                              tabIndex={0}
+                            />
+                          </RatingIcon>
+                          <RatingIcon
+                            active={true}
+                            aria-checked={false}
+                            aria-posinset={3}
+                            aria-setsize={5}
+                            as="i"
+                            index={2}
+                            key="2"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            selected={false}
+                          >
+                            <i
+                              aria-checked={false}
+                              aria-posinset={3}
+                              aria-setsize={5}
+                              className="active icon"
+                              onClick={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseEnter={[Function]}
+                              role="radio"
+                              tabIndex={0}
+                            />
+                          </RatingIcon>
+                          <RatingIcon
+                            active={true}
+                            aria-checked={true}
+                            aria-posinset={4}
+                            aria-setsize={5}
+                            as="i"
+                            index={3}
+                            key="3"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            selected={false}
+                          >
+                            <i
+                              aria-checked={true}
+                              aria-posinset={4}
+                              aria-setsize={5}
+                              className="active icon"
+                              onClick={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseEnter={[Function]}
+                              role="radio"
+                              tabIndex={0}
+                            />
+                          </RatingIcon>
+                          <RatingIcon
+                            active={false}
+                            aria-checked={false}
+                            aria-posinset={5}
+                            aria-setsize={5}
+                            as="i"
+                            index={4}
+                            key="4"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            selected={false}
+                          >
+                            <i
+                              aria-checked={false}
+                              aria-posinset={5}
+                              aria-setsize={5}
+                              className="icon"
+                              onClick={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseEnter={[Function]}
+                              role="radio"
+                              tabIndex={0}
+                            />
+                          </RatingIcon>
+                        </div>
+                      </Rating>
+                    </Rating>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+              <GridColumn
+                computer={6}
+                floated="right"
+                mobile={7}
+                tablet={7}
+                verticalAlign="middle"
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={6}
+                  floated="right"
+                  mobile={7}
+                  tablet={7}
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="right floated top aligned six wide computer seven wide mobile seven wide tablet column"
+                  >
+                    <Modal
+                      isFullscreen={false}
+                      size="tiny"
+                      trigger={
+                        <Button
+                          hasShadow={false}
+                          icon={null}
+                          isCompact={true}
+                          isDisabled={false}
+                          isLoading={false}
+                          isPositionedRight={true}
+                          isRounded={true}
+                          isSecondary={false}
+                          onClick={[Function]}
+                          size="medium"
+                        >
+                          Submit a review
+                        </Button>
+                      }
+                    >
+                      <Modal
+                        closeIcon={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                        closeOnDimmerClick={true}
+                        closeOnDocumentClick={false}
+                        content={
+                          <Form
+                            actionLink={null}
+                            errorMessage=""
+                            headingText={null}
+                            onSubmit={[Function]}
+                            submitButtonText="Submit a review"
+                            successMessage=""
+                            validation={Object {}}
+                          >
+                            <RatingInput
+                              error={false}
+                              iconSize="small"
+                              label="Your review"
+                              name="rating"
+                              onChange={[Function]}
+                            />
+                            <TextInput
+                              error={false}
+                              isValid={false}
+                              label="Your name"
+                              name="name"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <InputGroup>
+                              <TextInput
+                                error={false}
+                                isValid={false}
+                                label="Your email"
+                                name="email"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                type="text"
+                              />
+                              <TextInput
+                                error={false}
+                                isValid={false}
+                                label="Your location"
+                                name="location"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                type="text"
+                              />
+                            </InputGroup>
+                            <InputGroup>
+                              <Dropdown
+                                error={false}
+                                icon={null}
+                                isDisabled={false}
+                                isValid={false}
+                                label="Month"
+                                name="month"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                options={Array []}
+                                willOpenAbove={false}
+                              />
+                              <Dropdown
+                                error={false}
+                                icon={null}
+                                isDisabled={false}
+                                isValid={false}
+                                label="Year"
+                                name="year"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                options={Array []}
+                                willOpenAbove={false}
+                              />
+                            </InputGroup>
+                            <InputGroup>
+                              <Dropdown
+                                error={false}
+                                icon={null}
+                                isDisabled={false}
+                                isValid={false}
+                                label="Apartment"
+                                name="apartment"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                options={Array []}
+                                willOpenAbove={false}
+                              />
+                              <Dropdown
+                                error={false}
+                                icon={null}
+                                isDisabled={false}
+                                isValid={false}
+                                label="Guest Type"
+                                name="guest type"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                options={Array []}
+                                willOpenAbove={false}
+                              />
+                            </InputGroup>
+                            <TextInput
+                              error={false}
+                              isValid={false}
+                              label="Title"
+                              name="title"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                            />
+                            <TextArea
+                              error={false}
+                              isValid={false}
+                              label="Comments"
+                              name="comments"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                            />
+                          </Form>
+                        }
+                        dimmer="inverted"
+                        eventPool="Modal"
+                        size="tiny"
+                        trigger={
+                          <Button
+                            hasShadow={false}
+                            icon={null}
+                            isCompact={true}
+                            isDisabled={false}
+                            isLoading={false}
+                            isPositionedRight={true}
+                            isRounded={true}
+                            isSecondary={false}
+                            onClick={[Function]}
+                            size="medium"
+                          >
+                            Submit a review
+                          </Button>
+                        }
+                      >
+                        <Portal
+                          className="ui inverted page modals dimmer transition visible active"
+                          closeOnDocumentClick={false}
+                          closeOnEscape={true}
+                          closeOnRootNodeClick={true}
+                          eventPool="Modal"
+                          mountNode={<body />}
+                          onClose={[Function]}
+                          onMount={[Function]}
+                          onOpen={[Function]}
+                          onUnmount={[Function]}
+                          openOnTriggerClick={true}
+                          trigger={
+                            <Button
+                              hasShadow={false}
+                              icon={null}
+                              isCompact={true}
+                              isDisabled={false}
+                              isLoading={false}
+                              isPositionedRight={true}
+                              isRounded={true}
+                              isSecondary={false}
+                              onClick={[Function]}
+                              size="medium"
+                            >
+                              Submit a review
+                            </Button>
+                          }
+                        >
+                          <Ref
+                            innerRef={[Function]}
+                          >
+                            <Button
+                              hasShadow={false}
+                              icon={null}
+                              isCompact={true}
+                              isDisabled={false}
+                              isLoading={false}
+                              isPositionedRight={true}
+                              isRounded={true}
+                              isSecondary={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              size="medium"
+                            >
+                              <Button
+                                as="button"
+                                circular={true}
+                                className=""
+                                compact={true}
+                                disabled={false}
+                                floated="right"
+                                loading={false}
+                                onClick={[Function]}
+                                secondary={false}
+                                size="medium"
+                              >
+                                <button
+                                  className="ui medium circular compact right floated button"
+                                  onClick={[Function]}
+                                  role="button"
+                                >
+                                  Submit a review
+                                </button>
+                              </Button>
+                            </Button>
+                          </Ref>
+                        </Portal>
+                      </Modal>
+                    </Modal>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+          key="Beautifully located and well-kept villas in Santorini. Would certainly come back next year.0"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Review
+                      ratingNumber={4.5}
+                      reviewResponse={
+                        Object {
+                          "dateTime": "10/14/2015 12:22:58 PM",
+                          "source": "The Owner",
+                          "text": "You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!",
+                        }
+                      }
+                      reviewText="Beautifully located and well-kept villas in Santorini. Would certainly come back next year."
+                      reviewTitle="Great accommodation! Honorable host."
+                      reviewerCategory="Young people"
+                      reviewerLocation="Lithuania"
+                      reviewerName="Magellan"
+                      reviewerStayDate="9/2015"
+                    >
+                      <Card
+                        fluid={true}
+                      >
+                        <div
+                          className="ui fluid card"
+                          onClick={[Function]}
+                        >
+                          <CardContent>
+                            <div
+                              className="content"
+                            >
+                              <CardMeta>
+                                <div
+                                  className="meta"
+                                >
+                                  <Grid
+                                    areColumnsCentered={false}
+                                  >
+                                    <Grid
+                                      centered={false}
+                                    >
+                                      <div
+                                        className="ui grid"
+                                      >
+                                        <GridRow
+                                          horizontalAlignContent="left"
+                                          verticalAlign="middle"
+                                        >
+                                          <GridRow
+                                            textAlign="left"
+                                            verticalAlign="middle"
+                                          >
+                                            <div
+                                              className="left aligned middle aligned row"
+                                            >
+                                              <GridColumn
+                                                computer={6}
+                                                mobile={12}
+                                                tablet={7}
+                                                verticalAlignContent="top"
+                                                width={null}
+                                              >
+                                                <GridColumn
+                                                  computer={6}
+                                                  mobile={12}
+                                                  tablet={7}
+                                                  verticalAlign="top"
+                                                  width={null}
+                                                >
+                                                  <div
+                                                    className="top aligned six wide computer twelve wide mobile seven wide tablet column"
+                                                  >
+                                                    <Subheading>
+                                                      <span
+                                                        className="ui sub header"
+                                                      >
+                                                        Lithuania (Magellan)
+                                                      </span>
+                                                    </Subheading>
+                                                  </div>
+                                                </GridColumn>
+                                              </GridColumn>
+                                              <GridColumn
+                                                computer={6}
+                                                mobile={12}
+                                                tablet={5}
+                                                textAlign="right"
+                                                verticalAlign="middle"
+                                                verticalAlignContent="top"
+                                                width={null}
+                                              >
+                                                <GridColumn
+                                                  computer={6}
+                                                  mobile={12}
+                                                  tablet={5}
+                                                  textAlign="right"
+                                                  verticalAlign="top"
+                                                  width={null}
+                                                >
+                                                  <div
+                                                    className="right aligned top aligned six wide computer twelve wide mobile five wide tablet column"
+                                                  >
+                                                    <Rating
+                                                      iconSize="small"
+                                                      isShowingNumeral={false}
+                                                      ratingNumber={4.5}
+                                                    >
+                                                      <Rating
+                                                        clearable="auto"
+                                                        disabled={true}
+                                                        maxRating={5}
+                                                        rating={5}
+                                                        size="small"
+                                                      >
+                                                        <div
+                                                          className="ui small disabled rating"
+                                                          onMouseLeave={[Function]}
+                                                          role="radiogroup"
+                                                        >
+                                                          <RatingIcon
+                                                            active={true}
+                                                            aria-checked={false}
+                                                            aria-posinset={1}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={0}
+                                                            key="0"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={false}
+                                                              aria-posinset={1}
+                                                              aria-setsize={5}
+                                                              className="active icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                          <RatingIcon
+                                                            active={true}
+                                                            aria-checked={false}
+                                                            aria-posinset={2}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={1}
+                                                            key="1"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={false}
+                                                              aria-posinset={2}
+                                                              aria-setsize={5}
+                                                              className="active icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                          <RatingIcon
+                                                            active={true}
+                                                            aria-checked={false}
+                                                            aria-posinset={3}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={2}
+                                                            key="2"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={false}
+                                                              aria-posinset={3}
+                                                              aria-setsize={5}
+                                                              className="active icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                          <RatingIcon
+                                                            active={true}
+                                                            aria-checked={false}
+                                                            aria-posinset={4}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={3}
+                                                            key="3"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={false}
+                                                              aria-posinset={4}
+                                                              aria-setsize={5}
+                                                              className="active icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                          <RatingIcon
+                                                            active={true}
+                                                            aria-checked={true}
+                                                            aria-posinset={5}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={4}
+                                                            key="4"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={true}
+                                                              aria-posinset={5}
+                                                              aria-setsize={5}
+                                                              className="active icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                        </div>
+                                                      </Rating>
+                                                    </Rating>
+                                                  </div>
+                                                </GridColumn>
+                                              </GridColumn>
+                                            </div>
+                                          </GridRow>
+                                        </GridRow>
+                                      </div>
+                                    </Grid>
+                                  </Grid>
+                                </div>
+                              </CardMeta>
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="medium"
+                              >
+                                <Divider
+                                  className=""
+                                  hidden={true}
+                                  section={false}
+                                >
+                                  <div
+                                    className="ui hidden divider"
+                                  />
+                                </Divider>
+                              </Divider>
+                              <CardHeader>
+                                <div
+                                  className="header"
+                                >
+                                  Great accommodation! Honorable host.
+                                </div>
+                              </CardHeader>
+                              <CardDescription>
+                                <div
+                                  className="description"
+                                >
+                                  Beautifully located and well-kept villas in Santorini. Would certainly come back next year.
+                                </div>
+                              </CardDescription>
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="medium"
+                              >
+                                <Divider
+                                  className=""
+                                  hidden={true}
+                                  section={false}
+                                >
+                                  <div
+                                    className="ui hidden divider"
+                                  />
+                                </Divider>
+                              </Divider>
+                              <div>
+                                <Quote
+                                  quoteDateTime="10/14/2015 12:22:58 PM"
+                                  quoteSource="The Owner"
+                                  quoteText="You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!"
+                                >
+                                  <blockquote
+                                    className="ui quote"
+                                  >
+                                    <Grid
+                                      areColumnsCentered={false}
+                                    >
+                                      <Grid
+                                        centered={false}
+                                      >
+                                        <div
+                                          className="ui grid"
+                                        >
+                                          <GridRow
+                                            horizontalAlignContent="left"
+                                          >
+                                            <GridRow
+                                              textAlign="left"
+                                            >
+                                              <div
+                                                className="left aligned row"
+                                              >
+                                                <GridColumn
+                                                  verticalAlignContent="top"
+                                                  width={12}
+                                                >
+                                                  <GridColumn
+                                                    verticalAlign="top"
+                                                    width={12}
+                                                  >
+                                                    <div
+                                                      className="top aligned twelve wide column"
+                                                    >
+                                                      <Paragraph
+                                                        size="medium"
+                                                        weight={null}
+                                                      >
+                                                        <p
+                                                          className=""
+                                                        >
+                                                          You can also personally respond to each review: Thanks for you kind review, James! Hope to welcome you back soon!
+                                                        </p>
+                                                      </Paragraph>
+                                                    </div>
+                                                  </GridColumn>
+                                                </GridColumn>
+                                              </div>
+                                            </GridRow>
+                                          </GridRow>
+                                          <GridRow
+                                            horizontalAlignContent="right"
+                                          >
+                                            <GridRow
+                                              textAlign="right"
+                                            >
+                                              <div
+                                                className="right aligned row"
+                                              >
+                                                <GridColumn
+                                                  verticalAlignContent="top"
+                                                  width={12}
+                                                >
+                                                  <GridColumn
+                                                    verticalAlign="top"
+                                                    width={12}
+                                                  >
+                                                    <div
+                                                      className="top aligned twelve wide column"
+                                                    >
+                                                      <Paragraph
+                                                        size="tiny"
+                                                        weight={null}
+                                                      >
+                                                        <p
+                                                          className="tiny"
+                                                        >
+                                                          The Owner (10/14/2015 12:22:58 PM)
+                                                        </p>
+                                                      </Paragraph>
+                                                    </div>
+                                                  </GridColumn>
+                                                </GridColumn>
+                                              </div>
+                                            </GridRow>
+                                          </GridRow>
+                                        </div>
+                                      </Grid>
+                                    </Grid>
+                                  </blockquote>
+                                </Quote>
+                                <Divider
+                                  className=""
+                                  hasLine={false}
+                                  size="medium"
+                                >
+                                  <Divider
+                                    className=""
+                                    hidden={true}
+                                    section={false}
+                                  >
+                                    <div
+                                      className="ui hidden divider"
+                                    />
+                                  </Divider>
+                                </Divider>
+                              </div>
+                              <CardDescription
+                                textAlign="right"
+                              >
+                                <div
+                                  className="right aligned description"
+                                >
+                                  Young people | stayed in 9/2015
+                                </div>
+                              </CardDescription>
+                            </div>
+                          </CardContent>
+                        </div>
+                      </Card>
+                    </Review>
+                    <Divider
+                      className=""
+                      hasLine={false}
+                      size="medium"
+                    >
+                      <Divider
+                        className=""
+                        hidden={true}
+                        section={false}
+                      >
+                        <div
+                          className="ui hidden divider"
+                        />
+                      </Divider>
+                    </Divider>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+          key="Beautifully located and well-kept villas in Santorini. Would certainly come back next year.1"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Review
+                      ratingNumber={3}
+                      reviewResponse={null}
+                      reviewText="Beautifully located and well-kept villas in Santorini. Would certainly come back next year."
+                      reviewTitle="Great accommodation! Honorable host."
+                      reviewerCategory="Young people"
+                      reviewerLocation="Lithuania"
+                      reviewerName="Magellan"
+                      reviewerStayDate="9/2015"
+                    >
+                      <Card
+                        fluid={true}
+                      >
+                        <div
+                          className="ui fluid card"
+                          onClick={[Function]}
+                        >
+                          <CardContent>
+                            <div
+                              className="content"
+                            >
+                              <CardMeta>
+                                <div
+                                  className="meta"
+                                >
+                                  <Grid
+                                    areColumnsCentered={false}
+                                  >
+                                    <Grid
+                                      centered={false}
+                                    >
+                                      <div
+                                        className="ui grid"
+                                      >
+                                        <GridRow
+                                          horizontalAlignContent="left"
+                                          verticalAlign="middle"
+                                        >
+                                          <GridRow
+                                            textAlign="left"
+                                            verticalAlign="middle"
+                                          >
+                                            <div
+                                              className="left aligned middle aligned row"
+                                            >
+                                              <GridColumn
+                                                computer={6}
+                                                mobile={12}
+                                                tablet={7}
+                                                verticalAlignContent="top"
+                                                width={null}
+                                              >
+                                                <GridColumn
+                                                  computer={6}
+                                                  mobile={12}
+                                                  tablet={7}
+                                                  verticalAlign="top"
+                                                  width={null}
+                                                >
+                                                  <div
+                                                    className="top aligned six wide computer twelve wide mobile seven wide tablet column"
+                                                  >
+                                                    <Subheading>
+                                                      <span
+                                                        className="ui sub header"
+                                                      >
+                                                        Lithuania (Magellan)
+                                                      </span>
+                                                    </Subheading>
+                                                  </div>
+                                                </GridColumn>
+                                              </GridColumn>
+                                              <GridColumn
+                                                computer={6}
+                                                mobile={12}
+                                                tablet={5}
+                                                textAlign="right"
+                                                verticalAlign="middle"
+                                                verticalAlignContent="top"
+                                                width={null}
+                                              >
+                                                <GridColumn
+                                                  computer={6}
+                                                  mobile={12}
+                                                  tablet={5}
+                                                  textAlign="right"
+                                                  verticalAlign="top"
+                                                  width={null}
+                                                >
+                                                  <div
+                                                    className="right aligned top aligned six wide computer twelve wide mobile five wide tablet column"
+                                                  >
+                                                    <Rating
+                                                      iconSize="small"
+                                                      isShowingNumeral={false}
+                                                      ratingNumber={3}
+                                                    >
+                                                      <Rating
+                                                        clearable="auto"
+                                                        disabled={true}
+                                                        maxRating={5}
+                                                        rating={3}
+                                                        size="small"
+                                                      >
+                                                        <div
+                                                          className="ui small disabled rating"
+                                                          onMouseLeave={[Function]}
+                                                          role="radiogroup"
+                                                        >
+                                                          <RatingIcon
+                                                            active={true}
+                                                            aria-checked={false}
+                                                            aria-posinset={1}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={0}
+                                                            key="0"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={false}
+                                                              aria-posinset={1}
+                                                              aria-setsize={5}
+                                                              className="active icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                          <RatingIcon
+                                                            active={true}
+                                                            aria-checked={false}
+                                                            aria-posinset={2}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={1}
+                                                            key="1"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={false}
+                                                              aria-posinset={2}
+                                                              aria-setsize={5}
+                                                              className="active icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                          <RatingIcon
+                                                            active={true}
+                                                            aria-checked={true}
+                                                            aria-posinset={3}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={2}
+                                                            key="2"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={true}
+                                                              aria-posinset={3}
+                                                              aria-setsize={5}
+                                                              className="active icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                          <RatingIcon
+                                                            active={false}
+                                                            aria-checked={false}
+                                                            aria-posinset={4}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={3}
+                                                            key="3"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={false}
+                                                              aria-posinset={4}
+                                                              aria-setsize={5}
+                                                              className="icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                          <RatingIcon
+                                                            active={false}
+                                                            aria-checked={false}
+                                                            aria-posinset={5}
+                                                            aria-setsize={5}
+                                                            as="i"
+                                                            index={4}
+                                                            key="4"
+                                                            onClick={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            selected={false}
+                                                          >
+                                                            <i
+                                                              aria-checked={false}
+                                                              aria-posinset={5}
+                                                              aria-setsize={5}
+                                                              className="icon"
+                                                              onClick={[Function]}
+                                                              onKeyUp={[Function]}
+                                                              onMouseEnter={[Function]}
+                                                              role="radio"
+                                                              tabIndex={0}
+                                                            />
+                                                          </RatingIcon>
+                                                        </div>
+                                                      </Rating>
+                                                    </Rating>
+                                                  </div>
+                                                </GridColumn>
+                                              </GridColumn>
+                                            </div>
+                                          </GridRow>
+                                        </GridRow>
+                                      </div>
+                                    </Grid>
+                                  </Grid>
+                                </div>
+                              </CardMeta>
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="medium"
+                              >
+                                <Divider
+                                  className=""
+                                  hidden={true}
+                                  section={false}
+                                >
+                                  <div
+                                    className="ui hidden divider"
+                                  />
+                                </Divider>
+                              </Divider>
+                              <CardHeader>
+                                <div
+                                  className="header"
+                                >
+                                  Great accommodation! Honorable host.
+                                </div>
+                              </CardHeader>
+                              <CardDescription>
+                                <div
+                                  className="description"
+                                >
+                                  Beautifully located and well-kept villas in Santorini. Would certainly come back next year.
+                                </div>
+                              </CardDescription>
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="medium"
+                              >
+                                <Divider
+                                  className=""
+                                  hidden={true}
+                                  section={false}
+                                >
+                                  <div
+                                    className="ui hidden divider"
+                                  />
+                                </Divider>
+                              </Divider>
+                              <CardDescription
+                                textAlign="right"
+                              >
+                                <div
+                                  className="right aligned description"
+                                >
+                                  Young people | stayed in 9/2015
+                                </div>
+                              </CardDescription>
+                            </div>
+                          </CardContent>
+                        </div>
+                      </Card>
+                    </Review>
+                    <Divider
+                      className=""
+                      hasLine={false}
+                      size="medium"
+                    >
+                      <Divider
+                        className=""
+                        hidden={true}
+                        section={false}
+                      >
+                        <div
+                          className="ui hidden divider"
+                        />
+                      </Divider>
+                    </Divider>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</Reviews>
+`;

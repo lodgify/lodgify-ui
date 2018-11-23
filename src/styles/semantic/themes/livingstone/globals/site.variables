@@ -171,11 +171,15 @@
 @tabletBreakpoint: 600px;
 @computerBreakpoint: 1000px;
 @smallestComputerBreakpoint: (@tabletBreakpoint + 1px);
+@smallestWidescreenBreakpoint: (@computerBreakpoint + 1px);
+@smallestWidescreen100pxOffsetBreakpoint: (@smallestWidescreenBreakpoint + 100px);
 
 @tinyScreen: ~"only screen and (max-width: @{largestTinyScreen})";
 @mobileScreen: ~"only screen and (max-width: @{largestMobileScreen})";
 @tabletScreen: ~"only screen and (max-width: @{tabletBreakpoint})";
 @computerScreen: ~"only screen and (min-width: @{smallestComputerBreakpoint})";
+@smallestWidescreenScreen: ~"only screen and (min-width: @{smallestWidescreenBreakpoint})";
+@smallestWidescreen100pxOffsetScreen: ~"@{smallestWidescreenScreen} and (max-width: @{smallestWidescreen100pxOffsetBreakpoint})";
 
 /*-------------------
       Site Colors
@@ -439,8 +443,15 @@
 --------------------*/
 @searchBarFixedBackgroundColor: @pureWhite;
 @searchBarFixedZIndex: 999;
-@searchBarFixedPadding: @20px 0;
+@searchBarFixedPadding: @10px 0;
+@searchBarFixedHeight: 85px;
 @searchBarFixedBoxShadow: 0 -(@4px) @9px -(@6px) rgba(0, 0, 0, 0.29);
+@searchBarFixedButtonHeight: 42px;
+
+/*--------------------------
+  Property Page Search Bar
+--------------------------*/
+@propertyPageSearchBarHeight: @searchBarFixedHeight;
 
 /*-------------------
    Horizontal Gutter
