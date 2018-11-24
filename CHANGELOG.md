@@ -1,3 +1,75 @@
+# [1.89.0](https://github.com/lodgify/lodgify-ui/compare/v1.88.1...v1.89.0) (2018-11-23)
+
+
+### Features
+
+* **FullBleed:** add prop to reduce the height ([0985452](https://github.com/lodgify/lodgify-ui/commit/0985452))
+* **Hero:** support prop to reduce the height of the FullBleed ([3b67e67](https://github.com/lodgify/lodgify-ui/commit/3b67e67))
+* **PropertyPageHero:** ensure the hero has a reduced height ([21577cb](https://github.com/lodgify/lodgify-ui/commit/21577cb))
+
+## [1.88.1](https://github.com/lodgify/lodgify-ui/compare/v1.88.0...v1.88.1) (2018-11-23)
+
+
+### Bug Fixes
+
+* **RoomType:** remove superfluous prop from Slideshow ([7ee1c02](https://github.com/lodgify/lodgify-ui/commit/7ee1c02))
+* **RoomType:** restrict slideshow image sizes ([33cc3c7](https://github.com/lodgify/lodgify-ui/commit/33cc3c7))
+* **Slideshow:** hide bullet navigation when only one image ([1cd0ad1](https://github.com/lodgify/lodgify-ui/commit/1cd0ad1))
+
+# [1.88.0](https://github.com/lodgify/lodgify-ui/compare/v1.87.1...v1.88.0) (2018-11-23)
+
+
+### Features
+
+* **Summary:** hide rating is props.ratingNumber is 0 ([f99b8f0](https://github.com/lodgify/lodgify-ui/commit/f99b8f0))
+
+## [1.87.1](https://github.com/lodgify/lodgify-ui/compare/v1.87.0...v1.87.1) (2018-11-23)
+
+
+### Bug Fixes
+
+* **Dropdown:** add line-height and reduce parent padding to stop resizing on selection ([dc2f240](https://github.com/lodgify/lodgify-ui/commit/dc2f240))
+
+# [1.87.0](https://github.com/lodgify/lodgify-ui/compare/v1.86.0...v1.87.0) (2018-11-22)
+
+
+### Features
+
+* **PropertyPageSearchBar:** set height to 85px and tighten up summary ([0fdcd96](https://github.com/lodgify/lodgify-ui/commit/0fdcd96))
+* **Summary:** truncate location name and property name ([dd66eda](https://github.com/lodgify/lodgify-ui/commit/dd66eda))
+
+# [1.86.0](https://github.com/lodgify/lodgify-ui/compare/v1.85.0...v1.86.0) (2018-11-22)
+
+
+### Bug Fixes
+
+* **package.json:** extend size limit ([ca16b79](https://github.com/lodgify/lodgify-ui/commit/ca16b79))
+* **RatingInput:** adapt component snap ([5184f6b](https://github.com/lodgify/lodgify-ui/commit/5184f6b))
+
+
+### Features
+
+* **getModalFormMarkup:** implement util and unit tests ([47f7b40](https://github.com/lodgify/lodgify-ui/commit/47f7b40))
+* **RatingInput:** expose label prop ([d754c92](https://github.com/lodgify/lodgify-ui/commit/d754c92))
+* **Reviews:** add component unit test and mock data ([5de4f69](https://github.com/lodgify/lodgify-ui/commit/5de4f69))
+* **Reviews:** implement constant strings ([bed5a40](https://github.com/lodgify/lodgify-ui/commit/bed5a40))
+* **Reviews:** implement submit form ([980f7ca](https://github.com/lodgify/lodgify-ui/commit/980f7ca))
+
+# [1.85.0](https://github.com/lodgify/lodgify-ui/compare/v1.84.1...v1.85.0) (2018-11-22)
+
+
+### Features
+
+* **GoogleMap:** expose apiKey prop and use constant as default ([a0ad398](https://github.com/lodgify/lodgify-ui/commit/a0ad398))
+* **Location:** expose apiKey prop and use undefined as default ([4a363b2](https://github.com/lodgify/lodgify-ui/commit/4a363b2))
+
+## [1.84.1](https://github.com/lodgify/lodgify-ui/compare/v1.84.0...v1.84.1) (2018-11-22)
+
+
+### Bug Fixes
+
+* **PaymentInformation:** hide rows if relevant props are undefined ([8fd604f](https://github.com/lodgify/lodgify-ui/commit/8fd604f))
+
 # [1.84.0](https://github.com/lodgify/lodgify-ui/compare/v1.83.0...v1.84.0) (2018-11-19)
 
 

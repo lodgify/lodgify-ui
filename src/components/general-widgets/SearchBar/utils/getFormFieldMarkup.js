@@ -33,6 +33,7 @@ export const getFormFieldMarkup = (
 ) => {
   const defaultColumnWidth = areColumnsStacked ? 'twelve' : 'three';
   const datePickerColumnWidth = areColumnsStacked ? 'twelve' : 'seven';
+  const buttonColumnWidth = areColumnsStacked ? 'twelve' : 'four';
 
   return (
     <Fragment>
@@ -77,7 +78,7 @@ export const getFormFieldMarkup = (
           willOpenAbove={willDropdownsOpenAbove}
         />
       </Form.Field>
-      <Form.Field width={defaultColumnWidth}>{searchButton}</Form.Field>
+      <Form.Field width={buttonColumnWidth}>{searchButton}</Form.Field>
     </Fragment>
   );
 };

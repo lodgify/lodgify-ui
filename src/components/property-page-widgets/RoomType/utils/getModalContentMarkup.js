@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal, List } from 'semantic-ui-react';
+import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Amenities } from 'property-page-widgets/Amenities';
@@ -34,11 +35,14 @@ export const getModalContentMarkup = (
   slideShowImages,
   isUserOnMobile
 ) => (
-  <Modal.Content>
+  <Modal.Content className="has-room-type-gallery">
     <Heading>{name}</Heading>
     {!!ratingNumber && <Rating ratingNumber={ratingNumber} />}
     <Divider size="small" />
-    <Slideshow additionalClass="no-shadow" images={slideShowImages} />
+    <Slideshow
+      images={slideShowImages}
+      isShowingBulletNavigation={size(slideShowImages) > 1}
+    />
     {!!description ? (
       <Paragraph>{description}</Paragraph>
     ) : (

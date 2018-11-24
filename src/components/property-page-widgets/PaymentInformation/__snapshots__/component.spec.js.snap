@@ -1,0 +1,1161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PaymentInformation /> if \`props.cancellationPolicyText\` is passed should have the right structure 1`] = `
+<PaymentInformation
+  cancellationPolicyHeadingText="Cancellation Policy"
+  cancellationPolicyText="All paid prepayments are non-refundable."
+  cleaningCharge={null}
+  cleaningChargeHeadingText="Cleaning Charge"
+  damageDepositHeadingText="Damage Deposit"
+  damageDepositText={null}
+  extraNotesText={null}
+  headingText="Payment Information"
+  modalTriggerText="View more"
+  notesHeadingText="Notes"
+  notesText={null}
+  paymentScheduleHeadingText="Payment Schedule"
+  paymentScheduleText={null}
+  taxesDescriptionText={null}
+  taxesHeadingText="Taxes"
+  taxesText={null}
+>
+  <Grid
+    areColumnsCentered={false}
+    stackable={true}
+  >
+    <Grid
+      centered={false}
+      stackable={true}
+    >
+      <div
+        className="ui stackable grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Payment Information
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={6}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={6}
+                >
+                  <div
+                    className="top aligned six wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Cancellation Policy
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <Paragraph
+                      size="medium"
+                      weight={null}
+                    >
+                      <p
+                        className=""
+                      >
+                        All paid prepayments are non-refundable.
+                      </p>
+                    </Paragraph>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</PaymentInformation>
+`;
+
+exports[`<PaymentInformation /> if \`props.cleaningCharge\` is passed should have the right structure 1`] = `
+<PaymentInformation
+  cancellationPolicyHeadingText="Cancellation Policy"
+  cancellationPolicyText={null}
+  cleaningCharge="25$ (USD)"
+  cleaningChargeHeadingText="Cleaning Charge"
+  damageDepositHeadingText="Damage Deposit"
+  damageDepositText={null}
+  extraNotesText={null}
+  headingText="Payment Information"
+  modalTriggerText="View more"
+  notesHeadingText="Notes"
+  notesText={null}
+  paymentScheduleHeadingText="Payment Schedule"
+  paymentScheduleText={null}
+  taxesDescriptionText={null}
+  taxesHeadingText="Taxes"
+  taxesText={null}
+>
+  <Grid
+    areColumnsCentered={false}
+    stackable={true}
+  >
+    <Grid
+      centered={false}
+      stackable={true}
+    >
+      <div
+        className="ui stackable grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Payment Information
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={6}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={6}
+                >
+                  <div
+                    className="top aligned six wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Cleaning Charge
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <Statistic
+                      horizontal={true}
+                      size="mini"
+                      text={true}
+                      value="25$ (USD)"
+                    >
+                      <div
+                        className="ui mini horizontal statistic"
+                      >
+                        <StatisticValue
+                          content="25$ (USD)"
+                          key="25$ (USD)"
+                          text={true}
+                        >
+                          <div
+                            className="text value"
+                          >
+                            25$ (USD)
+                          </div>
+                        </StatisticValue>
+                      </div>
+                    </Statistic>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</PaymentInformation>
+`;
+
+exports[`<PaymentInformation /> if \`props.damageDepositText\` is passed should have the right structure 1`] = `
+<PaymentInformation
+  cancellationPolicyHeadingText="Cancellation Policy"
+  cancellationPolicyText={null}
+  cleaningCharge={null}
+  cleaningChargeHeadingText="Cleaning Charge"
+  damageDepositHeadingText="Damage Deposit"
+  damageDepositText="A refundable damage deposit of 200.00 € (EUR) is due."
+  extraNotesText={null}
+  headingText="Payment Information"
+  modalTriggerText="View more"
+  notesHeadingText="Notes"
+  notesText={null}
+  paymentScheduleHeadingText="Payment Schedule"
+  paymentScheduleText={null}
+  taxesDescriptionText={null}
+  taxesHeadingText="Taxes"
+  taxesText={null}
+>
+  <Grid
+    areColumnsCentered={false}
+    stackable={true}
+  >
+    <Grid
+      centered={false}
+      stackable={true}
+    >
+      <div
+        className="ui stackable grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Payment Information
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Damage Deposit
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <Paragraph
+                      size="medium"
+                      weight={null}
+                    >
+                      <p
+                        className=""
+                      >
+                        A refundable damage deposit of 200.00 € (EUR) is due.
+                      </p>
+                    </Paragraph>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</PaymentInformation>
+`;
+
+exports[`<PaymentInformation /> if \`props.extraNotesText\` is passed should have the right structure 1`] = `
+<PaymentInformation
+  cancellationPolicyHeadingText="Cancellation Policy"
+  cancellationPolicyText={null}
+  cleaningCharge={null}
+  cleaningChargeHeadingText="Cleaning Charge"
+  damageDepositHeadingText="Damage Deposit"
+  damageDepositText={null}
+  extraNotesText="
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+"
+  headingText="Payment Information"
+  modalTriggerText="View more"
+  notesHeadingText="Notes"
+  notesText={null}
+  paymentScheduleHeadingText="Payment Schedule"
+  paymentScheduleText={null}
+  taxesDescriptionText={null}
+  taxesHeadingText="Taxes"
+  taxesText={null}
+>
+  <Grid
+    areColumnsCentered={false}
+    stackable={true}
+  >
+    <Grid
+      centered={false}
+      stackable={true}
+    >
+      <div
+        className="ui stackable grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Payment Information
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Modal
+                      isFullscreen={false}
+                      size="tiny"
+                      trigger={
+                        <Link
+                          href={null}
+                          isPositionedRight={false}
+                          onClick={[Function]}
+                          willOpenInNewTab={false}
+                        >
+                          View more
+                        </Link>
+                      }
+                    >
+                      <Modal
+                        closeIcon={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                        closeOnDimmerClick={true}
+                        closeOnDocumentClick={false}
+                        content={
+                          Array [
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+                            </Paragraph>,
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            </Paragraph>,
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+                            </Paragraph>,
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            </Paragraph>,
+                          ]
+                        }
+                        dimmer="inverted"
+                        eventPool="Modal"
+                        size="tiny"
+                        trigger={
+                          <Link
+                            href={null}
+                            isPositionedRight={false}
+                            onClick={[Function]}
+                            willOpenInNewTab={false}
+                          >
+                            View more
+                          </Link>
+                        }
+                      >
+                        <Portal
+                          className="ui inverted page modals dimmer transition visible active"
+                          closeOnDocumentClick={false}
+                          closeOnEscape={true}
+                          closeOnRootNodeClick={true}
+                          eventPool="Modal"
+                          mountNode={<body />}
+                          onClose={[Function]}
+                          onMount={[Function]}
+                          onOpen={[Function]}
+                          onUnmount={[Function]}
+                          openOnTriggerClick={true}
+                          trigger={
+                            <Link
+                              href={null}
+                              isPositionedRight={false}
+                              onClick={[Function]}
+                              willOpenInNewTab={false}
+                            >
+                              View more
+                            </Link>
+                          }
+                        >
+                          <Ref
+                            innerRef={[Function]}
+                          >
+                            <Link
+                              href={null}
+                              isPositionedRight={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              willOpenInNewTab={false}
+                            >
+                              <Button
+                                as={null}
+                                basic={true}
+                                floated="left"
+                                href={null}
+                                onClick={[Function]}
+                                target="_self"
+                              >
+                                <button
+                                  className="ui basic left floated button"
+                                  href={null}
+                                  onClick={[Function]}
+                                  role="button"
+                                  target="_self"
+                                >
+                                  View more
+                                </button>
+                              </Button>
+                            </Link>
+                          </Ref>
+                        </Portal>
+                      </Modal>
+                    </Modal>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</PaymentInformation>
+`;
+
+exports[`<PaymentInformation /> if \`props.notesText\` is passed should have the right structure 1`] = `
+<PaymentInformation
+  cancellationPolicyHeadingText="Cancellation Policy"
+  cancellationPolicyText={null}
+  cleaningCharge={null}
+  cleaningChargeHeadingText="Cleaning Charge"
+  damageDepositHeadingText="Damage Deposit"
+  damageDepositText={null}
+  extraNotesText={null}
+  headingText="Payment Information"
+  modalTriggerText="View more"
+  notesHeadingText="Notes"
+  notesText="
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+"
+  paymentScheduleHeadingText="Payment Schedule"
+  paymentScheduleText={null}
+  taxesDescriptionText={null}
+  taxesHeadingText="Taxes"
+  taxesText={null}
+>
+  <Grid
+    areColumnsCentered={false}
+    stackable={true}
+  >
+    <Grid
+      centered={false}
+      stackable={true}
+    >
+      <div
+        className="ui stackable grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Payment Information
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Notes
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <Paragraph
+                      size="medium"
+                      weight={null}
+                    >
+                      <p
+                        className=""
+                      >
+                        
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+                      </p>
+                    </Paragraph>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</PaymentInformation>
+`;
+
+exports[`<PaymentInformation /> if \`props.paymentScheduleText\` is passed should have the right structure 1`] = `
+<PaymentInformation
+  cancellationPolicyHeadingText="Cancellation Policy"
+  cancellationPolicyText={null}
+  cleaningCharge={null}
+  cleaningChargeHeadingText="Cleaning Charge"
+  damageDepositHeadingText="Damage Deposit"
+  damageDepositText={null}
+  extraNotesText={null}
+  headingText="Payment Information"
+  modalTriggerText="View more"
+  notesHeadingText="Notes"
+  notesText={null}
+  paymentScheduleHeadingText="Payment Schedule"
+  paymentScheduleText="50% due at time of booking. Remaining balance: Due later."
+  taxesDescriptionText={null}
+  taxesHeadingText="Taxes"
+  taxesText={null}
+>
+  <Grid
+    areColumnsCentered={false}
+    stackable={true}
+  >
+    <Grid
+      centered={false}
+      stackable={true}
+    >
+      <div
+        className="ui stackable grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Payment Information
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={6}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={6}
+                >
+                  <div
+                    className="top aligned six wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Payment Schedule
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <Paragraph
+                      size="medium"
+                      weight={null}
+                    >
+                      <p
+                        className=""
+                      >
+                        50% due at time of booking. Remaining balance: Due later.
+                      </p>
+                    </Paragraph>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</PaymentInformation>
+`;
+
+exports[`<PaymentInformation /> if \`props.taxesText\` and \`props.taxesDescriptionText\` are passed should have the right structure 1`] = `
+<PaymentInformation
+  cancellationPolicyHeadingText="Cancellation Policy"
+  cancellationPolicyText={null}
+  cleaningCharge={null}
+  cleaningChargeHeadingText="Cleaning Charge"
+  damageDepositHeadingText="Damage Deposit"
+  damageDepositText={null}
+  extraNotesText={null}
+  headingText="Payment Information"
+  modalTriggerText="View more"
+  notesHeadingText="Notes"
+  notesText={null}
+  paymentScheduleHeadingText="Payment Schedule"
+  paymentScheduleText={null}
+  taxesDescriptionText="of total booking value"
+  taxesHeadingText="Taxes"
+  taxesText="1%"
+>
+  <Grid
+    areColumnsCentered={false}
+    stackable={true}
+  >
+    <Grid
+      centered={false}
+      stackable={true}
+    >
+      <div
+        className="ui stackable grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Payment Information
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={6}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={6}
+                >
+                  <div
+                    className="top aligned six wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Taxes
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <Statistic
+                      horizontal={true}
+                      label="of total booking value"
+                      size="tiny"
+                      text={true}
+                      value="1%"
+                    >
+                      <div
+                        className="ui tiny horizontal statistic"
+                      >
+                        <StatisticValue
+                          content="1%"
+                          key="1%"
+                          text={true}
+                        >
+                          <div
+                            className="text value"
+                          >
+                            1%
+                          </div>
+                        </StatisticValue>
+                        <StatisticLabel
+                          content="of total booking value"
+                          key="of total booking value"
+                        >
+                          <div
+                            className="label"
+                          >
+                            of total booking value
+                          </div>
+                        </StatisticLabel>
+                      </div>
+                    </Statistic>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</PaymentInformation>
+`;
+
+exports[`<PaymentInformation /> should have the right structure 1`] = `
+<PaymentInformation
+  cancellationPolicyHeadingText="Cancellation Policy"
+  cancellationPolicyText={null}
+  cleaningCharge={null}
+  cleaningChargeHeadingText="Cleaning Charge"
+  damageDepositHeadingText="Damage Deposit"
+  damageDepositText={null}
+  extraNotesText={null}
+  headingText="Payment Information"
+  modalTriggerText="View more"
+  notesHeadingText="Notes"
+  notesText={null}
+  paymentScheduleHeadingText="Payment Schedule"
+  paymentScheduleText={null}
+  taxesDescriptionText={null}
+  taxesHeadingText="Taxes"
+  taxesText={null}
+>
+  <Grid
+    areColumnsCentered={false}
+    stackable={true}
+  >
+    <Grid
+      centered={false}
+      stackable={true}
+    >
+      <div
+        className="ui stackable grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Payment Information
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</PaymentInformation>
+`;

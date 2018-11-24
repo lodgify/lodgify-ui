@@ -226,9 +226,13 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             <div
                                               className="ui horizontal segments horizontal-wrap"
                                             >
-                                              <Segment>
+                                              <Segment
+                                                className="is-location-name"
+                                                title="Location"
+                                              >
                                                 <div
-                                                  className="ui segment"
+                                                  className="ui segment is-location-name"
+                                                  title="Location"
                                                 >
                                                   Location
                                                   <Icon
@@ -259,9 +263,11 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   </Icon>
                                                 </div>
                                               </Segment>
-                                              <Segment>
+                                              <Segment
+                                                className="is-rating"
+                                              >
                                                 <div
-                                                  className="ui segment"
+                                                  className="ui segment is-rating"
                                                 >
                                                   <Rating
                                                     iconSize="tiny"
@@ -2477,10 +2483,10 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               </div>
                                             </FormField>
                                             <FormField
-                                              width="three"
+                                              width="four"
                                             >
                                               <div
-                                                className="three wide field"
+                                                className="four wide field"
                                               >
                                                 <Button
                                                   hasShadow={false}
@@ -2712,9 +2718,11 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   </span>
                                                 </div>
                                               </Segment>
-                                              <Segment>
+                                              <Segment
+                                                className="is-rating"
+                                              >
                                                 <div
-                                                  className="ui segment"
+                                                  className="ui segment is-rating"
                                                 >
                                                   <Rating
                                                     iconSize="tiny"

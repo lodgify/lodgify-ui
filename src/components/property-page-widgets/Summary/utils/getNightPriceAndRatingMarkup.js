@@ -12,8 +12,10 @@ import { Rating } from 'elements/Rating';
 export const getNightPriceAndRatingMarkup = (ratingNumber, nightPrice) => (
   <Fragment>
     <Segment>{getNightPriceMarkup(nightPrice, 'small')}</Segment>
-    <Segment>
-      <Rating iconSize="tiny" ratingNumber={ratingNumber} />
-    </Segment>
+    {ratingNumber !== 0 && (
+      <Segment className="is-rating">
+        <Rating iconSize="tiny" ratingNumber={ratingNumber} />
+      </Segment>
+    )}
   </Fragment>
 );

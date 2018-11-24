@@ -429,8 +429,18 @@ blockquote.ui.quote .row {
     right: 0;
     background: @searchBarFixedBackgroundColor;
     z-index: @searchBarFixedZIndex;
-    padding: @searchBarFixedPadding;
     box-shadow: @searchBarFixedBoxShadow;
+    height: @searchBarFixedHeight;
+
+    .ui.grid {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      > .row {
+        height: @searchBarFixedHeight;
+        padding: @searchBarFixedPadding;
+      }
+    }
 
     .ui.form .fields {
       margin: 0;
@@ -463,9 +473,25 @@ blockquote.ui.quote .row {
 -----------------------*/
 
 .property-page-searchbar {
+  height: @propertyPageSearchBarHeight;
 
   .ui.segments > .ui.segments {
     margin: 0;
+
+    @media @smallestWidescreen100pxOffsetScreen {
+
+      .ui.segment.is-rating {
+        display: none;
+      }
+    }
+  }
+
+  @media @smallestWidescreenScreen {
+
+    .button {
+      height: @searchBarFixedButtonHeight;
+      white-space: nowrap;
+    }
   }
 
   @media only screen and (max-width: @computerBreakpoint) {

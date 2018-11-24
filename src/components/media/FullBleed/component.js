@@ -6,12 +6,15 @@ import { size } from 'lodash';
 
 import { ResponsiveImage } from 'media/ResponsiveImage';
 
+import { DEFAULT_BOTTOM_OFFSET } from './constants';
+
 /**
  * A full bleed takes up the width of its containing element
  * and the height of the viewport.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  bottomOffset,
   children,
   hasGradient,
   imageUrl,
@@ -22,6 +25,9 @@ export const Component = ({
       'has-gradient': hasGradient,
       'has-children': size(children) > 0,
     })}
+    style={{
+      '--full-bleed-bottom-offset': bottomOffset,
+    }}
     vertical
   >
     <ResponsiveImage
@@ -36,6 +42,7 @@ export const Component = ({
 Component.displayName = 'FullBleed';
 
 Component.defaultProps = {
+  bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
   hasGradient: false,
   imageUrl: null,
@@ -43,6 +50,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** Reduce the height of the FullBleed with an offset, supports CSS dimensions. */
+  bottomOffset: PropTypes.string,
   /** The children to render inside the full bleed. */
   children: PropTypes.node,
   /** Is there a gradient overlaying the full bleed.  */

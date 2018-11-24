@@ -2,7 +2,7 @@
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 
-<Hero     
+<Hero
   backgroundImageUrl={backgroundImageUrl}
   headerLogoSrc={logoSrc}
   headerLogoText="Livingstone Cottage"
@@ -19,7 +19,7 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 
-<Hero     
+<Hero
   activeNavigationItemIndex={0}
   backgroundImageUrl={backgroundImageUrl}
   headerLogoSrc={logoSrc}
@@ -30,6 +30,24 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
 />
 ```
 
+#### With bottom offset
+
+```jsx
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
+
+<Hero
+  backgroundImageUrl={backgroundImageUrl}
+  bottomOffset="150px"
+  headerLogoSrc={logoSrc}
+  headerLogoText="Livingstone Cottage"
+  headerNavigationItems={navigationItems}
+  headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
+  heading="Super Interesting Heading"
+/>
+```
+
+
 ### Content
 
 #### Children
@@ -37,7 +55,7 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 
-<Hero     
+<Hero
   backgroundImageUrl={backgroundImageUrl}
   headerLogoSrc={logoSrc}
   headerLogoText="Livingstone Cottage"
@@ -51,23 +69,4 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
     <Heading size="huge">The Cat House</Heading>
   </FlexContainer>
 </Hero>
-```
-
-#### Search bar
-
-```jsx
-const logoSrc = require('./mock-data/livingstoneLogo.png');
-const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
-
-<Hero     
-  backgroundImageUrl={backgroundImageUrl}
-  headerLogoSrc={logoSrc}
-  headerLogoText="Livingstone Cottage"
-  headerNavigationItems={navigationItems}
-  headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
-  headerSearchBarGuestsOptions={[{ text: '1', value: '1' }]}
-  headerSearchBarLocationOptions={[{ text: 'New York', value: '2' }]}
-  headerSearchBarModalHeadingText="Custom heading"
-  headerSearchBarSearchButton={<Button>Check now!</Button>}
-/>
 ```

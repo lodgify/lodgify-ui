@@ -19,9 +19,11 @@ export const getNightPriceRatingAndLocationMarkup = (
 ) => (
   <Fragment>
     {getLocationNameMarkup(locationName)}
-    <Segment>
-      <Rating iconSize="tiny" ratingNumber={ratingNumber} />
-    </Segment>
+    {ratingNumber !== 0 && (
+      <Segment className="is-rating">
+        <Rating iconSize="tiny" ratingNumber={ratingNumber} />
+      </Segment>
+    )}
     <Segment>{getNightPriceMarkup(nightPrice, 'small')}</Segment>
   </Fragment>
 );

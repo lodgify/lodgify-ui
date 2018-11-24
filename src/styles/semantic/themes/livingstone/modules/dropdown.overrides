@@ -11,22 +11,23 @@
   /*-------------------
        Content
 --------------------*/
+
+  /* Icon */
+
+  /* Current Text */
   > .text,
   > .text .text,
   > label {
-    text-overflow: ellipsis;
+    line-height: @textLineHeight;
+    min-height: @textLineHeight;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
   }
 
+  /* Menu */
   .menu {
-
-    /* Icon */
-
-    /* Current Text */
-
-    /* Menu */
 
     /* Text */
 

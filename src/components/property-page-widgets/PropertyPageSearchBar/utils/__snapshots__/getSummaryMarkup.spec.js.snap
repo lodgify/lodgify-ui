@@ -45,9 +45,13 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
         <div
           className="ui horizontal segments horizontal-wrap"
         >
-          <Segment>
+          <Segment
+            className="is-location-name"
+            title="Location"
+          >
             <div
-              className="ui segment"
+              className="ui segment is-location-name"
+              title="Location"
             >
               Location
               <Icon
@@ -78,9 +82,11 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
               </Icon>
             </div>
           </Segment>
-          <Segment>
+          <Segment
+            className="is-rating"
+          >
             <div
-              className="ui segment"
+              className="ui segment is-rating"
             >
               <Rating
                 iconSize="tiny"
@@ -308,9 +314,11 @@ exports[`\`getSummaryMarkup\` should render the right structure if \`areOnlyNigh
               </span>
             </div>
           </Segment>
-          <Segment>
+          <Segment
+            className="is-rating"
+          >
             <div
-              className="ui segment"
+              className="ui segment is-rating"
             >
               <Rating
                 iconSize="tiny"

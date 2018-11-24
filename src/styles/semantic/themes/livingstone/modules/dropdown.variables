@@ -17,6 +17,7 @@
 @dropdownIconSize: @18px;
 
 /* Current Text */
+@textLineHeight: @fontSize + 2px;
 
 /* Menu */
 @menuBackground: @selectionFocusBackground;
@@ -66,6 +67,8 @@
 /*------------
    Selection
 --------------*/
+
+@selectionVerticalPadding: @inputVerticalPadding - @2px;
 
 @selectionMaxWidth: 350px;
 @selectionMinWidth: auto;

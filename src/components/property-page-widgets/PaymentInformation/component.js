@@ -50,40 +50,44 @@ export const Component = ({
         <Heading>{headingText}</Heading>
       </GridColumn>
     </GridRow>
-    <GridRow>
-      {!!paymentScheduleText && (
-        <GridColumn width={6}>
-          <Heading size="small">{paymentScheduleHeadingText}</Heading>
-          <Paragraph size="medium">{paymentScheduleText}</Paragraph>
-        </GridColumn>
-      )}
-      {!!cancellationPolicyText && (
-        <GridColumn width={6}>
-          <Heading size="small">{cancellationPolicyHeadingText}</Heading>
-          <Paragraph size="medium">{cancellationPolicyText}</Paragraph>
-        </GridColumn>
-      )}
-    </GridRow>
-    <GridRow>
-      {!!cleaningCharge && (
-        <GridColumn width={6}>
-          <Heading size="small">{cleaningChargeHeadingText}</Heading>
-          <Statistic horizontal size="mini" text value={cleaningCharge} />
-        </GridColumn>
-      )}
-      {!!taxesText && (
-        <GridColumn width={6}>
-          <Heading size="small">{taxesHeadingText}</Heading>
-          <Statistic
-            horizontal
-            label={taxesDescriptionText}
-            size="tiny"
-            text
-            value={taxesText}
-          />
-        </GridColumn>
-      )}
-    </GridRow>
+    {(!!paymentScheduleText || !!cancellationPolicyText) && (
+      <GridRow>
+        {!!paymentScheduleText && (
+          <GridColumn width={6}>
+            <Heading size="small">{paymentScheduleHeadingText}</Heading>
+            <Paragraph size="medium">{paymentScheduleText}</Paragraph>
+          </GridColumn>
+        )}
+        {!!cancellationPolicyText && (
+          <GridColumn width={6}>
+            <Heading size="small">{cancellationPolicyHeadingText}</Heading>
+            <Paragraph size="medium">{cancellationPolicyText}</Paragraph>
+          </GridColumn>
+        )}
+      </GridRow>
+    )}
+    {(!!cleaningCharge || !!taxesText) && (
+      <GridRow>
+        {!!cleaningCharge && (
+          <GridColumn width={6}>
+            <Heading size="small">{cleaningChargeHeadingText}</Heading>
+            <Statistic horizontal size="mini" text value={cleaningCharge} />
+          </GridColumn>
+        )}
+        {!!taxesText && (
+          <GridColumn width={6}>
+            <Heading size="small">{taxesHeadingText}</Heading>
+            <Statistic
+              horizontal
+              label={taxesDescriptionText}
+              size="tiny"
+              text
+              value={taxesText}
+            />
+          </GridColumn>
+        )}
+      </GridRow>
+    )}
     {!!damageDepositText && (
       <GridRow>
         <GridColumn width={12}>
