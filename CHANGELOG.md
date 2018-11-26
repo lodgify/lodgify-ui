@@ -1,3 +1,10 @@
+## [1.89.1](https://github.com/lodgify/lodgify-ui/compare/v1.89.0...v1.89.1) (2018-11-26)
+
+
+### Bug Fixes
+
+* **Form:** handle required error on change ([c7676e8](https://github.com/lodgify/lodgify-ui/commit/c7676e8))
+
 # [1.89.0](https://github.com/lodgify/lodgify-ui/compare/v1.88.1...v1.89.0) (2018-11-23)
 
 
