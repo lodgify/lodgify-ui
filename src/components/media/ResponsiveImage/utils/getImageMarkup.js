@@ -12,24 +12,33 @@ import { getIsFluid } from './getIsFluid';
  * @param  {string}        imageProps.imageUrl
  * @param  {number|string} imageProps.imageWidth
  * @param  {boolean}       imageProps.isAvatar
- * @return {Function}
+ * @param  {Function}      handleImageLoad
+ * @return {Object}
  */
-export const getImageMarkup = ({
-  /* eslint-disable react/prop-types */
-  alternativeText,
-  imageHeight,
-  imageNotFoundLabelText,
-  imageTitle,
-  imageUrl,
-  imageWidth,
-  isAvatar,
-  /* eslint-enable react/prop-types */
-}) => (
+export const getImageMarkup = (
+  {
+    /* eslint-disable react/prop-types */
+    alternativeText,
+    imageHeight,
+    imageNotFoundLabelText,
+    imageTitle,
+    imageUrl,
+    imageWidth,
+    isAvatar,
+    sizes,
+    srcSet,
+    /* eslint-enable react/prop-types */
+  },
+  handleImageLoad
+) => (
   <Image
     alt={alternativeText}
     avatar={isAvatar}
     fluid={getIsFluid(imageWidth, imageHeight)}
+    onLoad={handleImageLoad}
+    sizes={sizes}
     src={imageUrl}
+    srcSet={srcSet}
     title={imageTitle}
   >
     {!imageUrl ? <Label content={imageNotFoundLabelText} /> : null}

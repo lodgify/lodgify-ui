@@ -14,25 +14,32 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
   isFluid={true}
   label={null}
   onLoad={[Function]}
+  sizes={null}
   sources={Array []}
+  srcSet={null}
 >
-  <picture
+  <figure
     className="responsive-image is-fluid"
-    role="figure"
   >
     <Image
       alt="Alternative Text 😝"
       as="img"
       avatar={false}
       fluid={true}
+      onLoad={[Function]}
+      sizes={null}
       src=""
+      srcSet={null}
       title="ResponsiveImage title"
       ui={true}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
+        onLoad={[Function]}
+        sizes={null}
         src=""
+        srcSet={null}
         title="ResponsiveImage title"
       >
         <Label
@@ -47,7 +54,7 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
         </Label>
       </div>
     </Image>
-  </picture>
+  </figure>
 </ResponsiveImage>
 `;
 
@@ -65,25 +72,32 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
   isFluid={true}
   label="🔷"
   onLoad={[Function]}
+  sizes={null}
   sources={Array []}
+  srcSet={null}
 >
-  <picture
+  <figure
     className="responsive-image is-fluid"
-    role="figure"
   >
     <Image
       alt="Alternative Text 😝"
       as="img"
       avatar={false}
       fluid={true}
+      onLoad={[Function]}
+      sizes={null}
       src=""
+      srcSet={null}
       title="ResponsiveImage title"
       ui={true}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
+        onLoad={[Function]}
+        sizes={null}
         src=""
+        srcSet={null}
         title="ResponsiveImage title"
       >
         <Label
@@ -108,62 +122,7 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
         🔷
       </p>
     </Paragraph>
-  </picture>
-</ResponsiveImage>
-`;
-
-exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` and \`props.imageUrl\` are passed should have the right structure 1`] = `
-<ResponsiveImage
-  alternativeText="Alternative Text 😝"
-  hasRoundedCorners={false}
-  imageHeight={null}
-  imageNotFoundLabelText="Image not found!"
-  imageTitle="ResponsiveImage title"
-  imageUrl="yooo"
-  imageWidth={null}
-  isAvatar={false}
-  isCircular={false}
-  isFluid={true}
-  label={null}
-  onLoad={[Function]}
-  placeholderImageUrl="ayyy"
-  sources={Array []}
->
-  <picture
-    className="responsive-image is-fluid"
-    role="figure"
-  >
-    <div
-      className="image-with-placeholder-container has-blurred-children is-visible"
-    >
-      <Image
-        alt="Alternative Text 😝"
-        as="img"
-        avatar={false}
-        fluid={true}
-        onLoad={[Function]}
-        src="yooo"
-        title="ResponsiveImage title"
-        ui={true}
-      >
-        <img
-          alt="Alternative Text 😝"
-          className="ui fluid image"
-          onLoad={[Function]}
-          src="yooo"
-          title="ResponsiveImage title"
-        />
-      </Image>
-      <div
-        className="placeholder-image-container"
-      >
-        <img
-          className="placeholder-image ui image fluid"
-          src="ayyy"
-        />
-      </div>
-    </div>
-  </picture>
+  </figure>
 </ResponsiveImage>
 `;
 
@@ -182,25 +141,32 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should h
   label={null}
   onLoad={[Function]}
   placeholderImageUrl="ayyy"
+  sizes={null}
   sources={Array []}
+  srcSet={null}
 >
-  <picture
-    className="responsive-image is-fluid"
-    role="figure"
+  <figure
+    className="responsive-image has-blurred-children has-placeholder is-fluid"
   >
     <Image
       alt="Alternative Text 😝"
       as="img"
       avatar={false}
       fluid={true}
+      onLoad={[Function]}
+      sizes={null}
       src=""
+      srcSet={null}
       title="ResponsiveImage title"
       ui={true}
     >
       <div
         alt="Alternative Text 😝"
         className="ui fluid image"
+        onLoad={[Function]}
+        sizes={null}
         src=""
+        srcSet={null}
         title="ResponsiveImage title"
       >
         <Label
@@ -215,78 +181,17 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should h
         </Label>
       </div>
     </Image>
-  </picture>
-</ResponsiveImage>
-`;
-
-exports[`<ResponsiveImage /> if \`props.sources\` is passed should have the right structure 1`] = `
-<ResponsiveImage
-  alternativeText="Alternative Text 😝"
-  hasRoundedCorners={false}
-  imageHeight={null}
-  imageNotFoundLabelText="Image not found!"
-  imageTitle="ResponsiveImage title"
-  imageUrl=""
-  imageWidth={null}
-  isAvatar={false}
-  isCircular={false}
-  isFluid={true}
-  label={null}
-  onLoad={[Function]}
-  sources={
-    Array [
-      Object {
-        "media": "(min-width: 1200px)",
-        "srcset": "https://si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max",
-      },
-      Object {
-        "media": "(min-width: 1024px)",
-        "srcset": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
-      },
-    ]
-  }
->
-  <picture
-    className="responsive-image is-fluid"
-    role="figure"
-  >
-    <source
-      key="https://si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max0"
-      media="(min-width: 1200px)"
-      srcSet="https://si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max"
-    />
-    <source
-      key="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max1"
-      media="(min-width: 1024px)"
-      srcSet="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-    />
     <Image
-      alt="Alternative Text 😝"
       as="img"
-      avatar={false}
       fluid={true}
-      src=""
-      title="ResponsiveImage title"
+      src="ayyy"
       ui={true}
     >
-      <div
-        alt="Alternative Text 😝"
+      <img
         className="ui fluid image"
-        src=""
-        title="ResponsiveImage title"
-      >
-        <Label
-          content="Image not found!"
-        >
-          <div
-            className="ui label"
-            onClick={[Function]}
-          >
-            Image not found!
-          </div>
-        </Label>
-      </div>
+        src="ayyy"
+      />
     </Image>
-  </picture>
+  </figure>
 </ResponsiveImage>
 `;
