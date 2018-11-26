@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { Header } from 'collections/Header';
 import { FullBleed } from 'media/FullBleed';
 
+import { DEFAULT_BOTTOM_OFFSET } from './constants';
+
 /**
  * A hero displays a header and optional children with a full bleed image background
  */
@@ -11,6 +13,7 @@ import { FullBleed } from 'media/FullBleed';
 export const Component = ({
   activeNavigationItemIndex,
   backgroundImageUrl,
+  bottomOffset,
   children,
   headerLogoSrc,
   headerLogoText,
@@ -26,6 +29,7 @@ export const Component = ({
   searchBarOnSubmit,
 }) => (
   <FullBleed
+    bottomOffset={bottomOffset}
     hasGradient
     imageUrl={backgroundImageUrl}
     placeholderImageUrl={placeholderBackgroundImageUrl}
@@ -52,6 +56,7 @@ Component.displayName = 'Hero';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
   headerLogoSrc: null,
   headerPrimaryCTA: null,
@@ -70,6 +75,8 @@ Component.propTypes = {
   activeNavigationItemIndex: PropTypes.number,
   /** The background image url of the hero. */
   backgroundImageUrl: PropTypes.string.isRequired,
+  /** Reduce the height of the Hero with an offset, supports CSS dimensions. */
+  bottomOffset: PropTypes.string,
   /** The children displayed between the header and the bottom of the hero. */
   children: PropTypes.node,
   /** The src url for the logo in the header. */

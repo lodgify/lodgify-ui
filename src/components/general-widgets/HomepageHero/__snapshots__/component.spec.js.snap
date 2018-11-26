@@ -51,6 +51,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
   <Hero
     activeNavigationItemIndex={1}
     backgroundImageUrl="url"
+    bottomOffset="0px"
     headerLogoSrc="src"
     headerLogoText="text"
     headerNavigationItems={
@@ -95,16 +96,27 @@ exports[`HomepageHero by default should render the right structure 1`] = `
     searchBarOnSubmit={[Function]}
   >
     <FullBleed
+      bottomOffset="0px"
       hasGradient={true}
       imageUrl="url"
       placeholderImageUrl={null}
     >
       <Segment
         className="full-bleed has-gradient has-children"
+        style={
+          Object {
+            "--full-bleed-bottom-offset": "0px",
+          }
+        }
         vertical={true}
       >
         <div
           className="ui vertical segment full-bleed has-gradient has-children"
+          style={
+            Object {
+              "--full-bleed-bottom-offset": "0px",
+            }
+          }
         >
           <ResponsiveImage
             alternativeText="Image Widget"

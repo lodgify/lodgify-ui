@@ -112,7 +112,7 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  height: 100vh;
+  height: ~"calc(100vh - var(@{fullBleedBottomOffsetIdentifier}, 0))";
   padding: 0;
 
   picture.responsive-image,
