@@ -11,10 +11,12 @@ import { SearchBar } from '../../general-widgets/SearchBar/index';
 import { getSummaryMarkup } from './utils/getSummaryMarkup';
 
 export const Component = ({
+  getIsDayBlocked,
   guestsOptions,
   isFixed,
   modalTrigger,
   onChangeInput,
+  onSubmit,
   searchButton,
   summaryLocationName,
   summaryNightPrice,
@@ -32,9 +34,11 @@ export const Component = ({
     <div className="property-page-searchbar">
       <ShowOnDesktop>
         <SearchBar
+          getIsDayBlocked={getIsDayBlocked}
           guestsOptions={guestsOptions}
           isFixed={isFixed}
           onChangeInput={onChangeInput}
+          onSubmit={onSubmit}
           searchButton={searchButton}
           summaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: false,
@@ -66,6 +70,7 @@ export const Component = ({
 Component.displayName = 'PropertyPageSearchBar';
 
 Component.defaultProps = {
+  getIsDayBlocked: undefined,
   modalTrigger: (
     <Button isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
@@ -73,6 +78,7 @@ Component.defaultProps = {
   ),
   isFixed: true,
   onChangeInput: undefined,
+  onSubmit: undefined,
   searchButton: (
     <Button isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
@@ -81,6 +87,12 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /**
+   * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
+   * @param   {Moment}  day - The day to test.
+   * @returns {boolean}     - Is the day blocked.
+   */
+  getIsDayBlocked: PropTypes.func,
   /** The options that the user can select in the guests field. */
   guestsOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -110,6 +122,13 @@ Component.propTypes = {
    */
   // eslint-disable-next-line react/no-unused-prop-types
   onChangeInput: PropTypes.func,
+  /** The function to call when the search bar is submitted.
+   *  @param {Object} values - The values of the inputs in the search bar.
+   *  @param {Object} values.dates
+   *  @param {String} values.guests
+   *  @param {String} values.location
+   */
+  onSubmit: PropTypes.func,
   /** The Search Button the Search Bar displays. */
   searchButton: PropTypes.node,
   /** The location name displayed in the summary. */
