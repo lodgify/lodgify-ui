@@ -50,36 +50,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The content to display as a heading at the top of the gallery. */
   heading: PropTypes.node,
-  /** The images to display. */
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** Alternative text to show if the image can't be loaded by the browser */
-      alternativeText: PropTypes.string,
-      /** The natural height of the image in px. */
-      imageHeight: PropTypes.number,
-      /** The label text for the when the image is not found. */
-      imageNotFoundLabelText: PropTypes.string,
-      /** Title of the image to show when hovering it on desktop browsers */
-      imageTitle: PropTypes.string,
-      /** URL pointing to the image to display. */
-      imageUrl: PropTypes.string.isRequired,
-      /** The natural width of the image in px. */
-      imageWidth: PropTypes.number,
-      /** A visible label for the image. */
-      label: PropTypes.string.isRequired,
-      /** URL pointing to the placeholder image to render. */
-      placeholderImageUrl: PropTypes.string,
-      /** Collection of objects to specify different image sources
-       *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-       */
-      sources: PropTypes.arrayOf(
-        PropTypes.shape({
-          media: PropTypes.string.isRequired,
-          srcset: PropTypes.string.isRequired,
-        })
-      ),
-    })
-  ).isRequired,
+  /** The images to display. See [the `ResponsiveImage` component for valid props](#/Media/ResponsiveImage).  */
+  images: PropTypes.arrayOf(PropTypes.object).isRequired,
   /** The element to be clicked to display the gallery. */
   trigger: PropTypes.node.isRequired,
 };

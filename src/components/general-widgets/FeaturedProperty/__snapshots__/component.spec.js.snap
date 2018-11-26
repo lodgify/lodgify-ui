@@ -17,7 +17,8 @@ exports[`<FeaturedProperty /> should render the right structure 1`] = `
     isCircular={false}
     isFluid={true}
     label={null}
-    sources={Array []}
+    sizes={null}
+    srcSet={null}
   />
   <CardContent>
     <CardMeta>

@@ -115,8 +115,7 @@
   height: ~"calc(100vh - var(@{fullBleedBottomOffsetIdentifier}, 0))";
   padding: 0;
 
-  picture.responsive-image,
-  .image-with-placeholder-container {
+  figure.responsive-image {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -167,7 +166,7 @@
     padding: 0;
   }
 
-  .responsive-image img {
+  .responsive-image .ui.image {
     min-height: 100%;
   }
 
@@ -209,7 +208,7 @@
       p,
       p + .button,
       .header,
-      > picture.responsive-image .ui.image {
+      > figure.responsive-image .ui.image {
         filter: @promotionHoverBlur;
         -ms-filter: @promotionHoverBlur;
         pointer-events: none;
@@ -247,7 +246,7 @@
       z-index: @promotionAfterLayerZIndex;
     }
 
-    > picture.responsive-image {
+    > figure.responsive-image {
       z-index: @promotionBeforeLayerZIndex;
       position: absolute;
       top: 0;
@@ -259,7 +258,7 @@
     p,
     .button,
     &:after,
-    > picture.responsive-image .ui.image,
+    > figure.responsive-image .ui.image,
     .ui.header {
       transition: filter @promotionOverlayTransitionTime, -ms-filter @promotionOverlayTransitionTime;
     }

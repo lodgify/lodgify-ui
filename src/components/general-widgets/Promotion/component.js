@@ -24,6 +24,8 @@ import { Button } from 'elements/Button';
 export const Component = ({
   backgroundImage,
   backgroundImageHeight,
+  backgroundImageSizes,
+  backgroundImageSrcSet,
   backgroundImageWidth,
   discountAmount,
   discountAmountParagraphText,
@@ -48,6 +50,8 @@ export const Component = ({
             imageUrl={backgroundImage}
             imageWidth={backgroundImageWidth}
             placeholderImageUrl={placeholderBackgroundImage}
+            sizes={backgroundImageSizes}
+            srcSet={backgroundImageSrcSet}
           />
           <Grid padded>
             <GridRow verticalAlign="top">
@@ -128,6 +132,8 @@ Component.displayName = 'Promotion';
 
 Component.defaultProps = {
   backgroundImageHeight: undefined,
+  backgroundImageSizes: null,
+  backgroundImageSrcSet: null,
   backgroundImageWidth: undefined,
   discountAmountParagraphText: SAVE_UP_TO,
   discountCodeParagraphText: USE_COUPON_CODE,
@@ -141,6 +147,10 @@ Component.propTypes = {
   /** The natural height of the background image in px. */
   backgroundImageHeight: PropTypes.number,
   /** The natural width of the background image in px. */
+  backgroundImageSizes: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the background image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  backgroundImageSrcSet: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the background image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   backgroundImageWidth: PropTypes.number,
   /** The discount amount to be displayed. */
   discountAmount: PropTypes.string.isRequired,

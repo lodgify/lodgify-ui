@@ -80,21 +80,8 @@ Component.propTypes = {
   headingText: PropTypes.string,
   /** The text to display on the link at the bottom of the widget. */
   linkText: PropTypes.string,
-  /** The pictures to display as responsive images. */
-  pictures: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The natural height of the image in px. */
-      imageHeight: PropTypes.number,
-      /** URL pointing to the image to display. */
-      imageUrl: PropTypes.string.isRequired,
-      /** The natural width of the image in px. */
-      imageWidth: PropTypes.number,
-      /** A visible label for the image. */
-      label: PropTypes.string.isRequired,
-      /** URL pointing to the image to display. */
-      placeholderImageUrl: PropTypes.string,
-    })
-  ).isRequired,
+  /** The pictures to display. See [the `ResponsiveImage` component for valid props](#/Media/ResponsiveImage).  */
+  pictures: PropTypes.arrayOf(PropTypes.object).isRequired,
   /** The name of the property to display in the gallery modal. */
   propertyName: PropTypes.string,
   /** The numeral rating for the property, out of 5 */

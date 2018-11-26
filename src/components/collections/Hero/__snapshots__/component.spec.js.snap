@@ -47,6 +47,8 @@ exports[`<Hero /> by default should render the right structure 1`] = `
     hasGradient={true}
     imageUrl="https://darkpurple.com"
     placeholderImageUrl={null}
+    sizes={null}
+    srcSet={null}
   >
     <Segment
       className="full-bleed has-gradient has-children"
@@ -78,29 +80,35 @@ exports[`<Hero /> by default should render the right structure 1`] = `
           isFluid={true}
           label={null}
           placeholderImageUrl={null}
-          sources={Array []}
+          sizes={null}
+          srcSet={null}
         >
-          <picture
+          <figure
             className="responsive-image is-fluid"
-            role="figure"
           >
             <Image
               alt="Image Widget"
               as="img"
               avatar={false}
               fluid={true}
+              onLoad={[Function]}
+              sizes={null}
               src="https://darkpurple.com"
+              srcSet={null}
               title="Image Title"
               ui={true}
             >
               <img
                 alt="Image Widget"
                 className="ui fluid image"
+                onLoad={[Function]}
+                sizes={null}
                 src="https://darkpurple.com"
+                srcSet={null}
                 title="Image Title"
               />
             </Image>
-          </picture>
+          </figure>
         </ResponsiveImage>
         <Header
           activeNavigationItemIndex={1}
