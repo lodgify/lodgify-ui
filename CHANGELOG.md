@@ -1,3 +1,10 @@
+# [1.90.0](https://github.com/lodgify/lodgify-ui/compare/v1.89.1...v1.90.0) (2018-11-26)
+
+
+### Features
+
+* **PropertyPageSearchBar:** expose additional props and pass to SearchBar ([4ff30c6](https://github.com/lodgify/lodgify-ui/commit/4ff30c6))
+
 ## [1.89.1](https://github.com/lodgify/lodgify-ui/compare/v1.89.0...v1.89.1) (2018-11-26)
 
 
