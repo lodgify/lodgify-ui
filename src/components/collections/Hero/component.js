@@ -13,6 +13,8 @@ import { DEFAULT_BOTTOM_OFFSET } from './constants';
 export const Component = ({
   activeNavigationItemIndex,
   backgroundImageUrl,
+  backgroundImageSizes,
+  backgroundImageSrcSet,
   bottomOffset,
   children,
   headerLogoSrc,
@@ -33,6 +35,8 @@ export const Component = ({
     hasGradient
     imageUrl={backgroundImageUrl}
     placeholderImageUrl={placeholderBackgroundImageUrl}
+    sizes={backgroundImageSizes}
+    srcSet={backgroundImageSrcSet}
   >
     <Header
       activeNavigationItemIndex={activeNavigationItemIndex}
@@ -56,6 +60,8 @@ Component.displayName = 'Hero';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  backgroundImageSizes: undefined,
+  backgroundImageSrcSet: undefined,
   bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
   headerLogoSrc: null,
@@ -73,7 +79,11 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The index of the active navigation item. */
   activeNavigationItemIndex: PropTypes.number,
-  /** The background image url of the hero. */
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the background image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  backgroundImageSizes: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the background image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  backgroundImageSrcSet: PropTypes.string,
+  /** The source url of the hero's background image. */
   backgroundImageUrl: PropTypes.string.isRequired,
   /** Reduce the height of the Hero with an offset, supports CSS dimensions. */
   bottomOffset: PropTypes.string,
