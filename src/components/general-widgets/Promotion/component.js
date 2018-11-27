@@ -22,10 +22,10 @@ import { Button } from 'elements/Button';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
-  backgroundImage,
   backgroundImageHeight,
   backgroundImageSizes,
   backgroundImageSrcSet,
+  backgroundImageUrl,
   backgroundImageWidth,
   discountAmount,
   discountAmountParagraphText,
@@ -47,7 +47,7 @@ export const Component = ({
         >
           <ResponsiveImage
             imageHeight={backgroundImageHeight}
-            imageUrl={backgroundImage}
+            imageUrl={backgroundImageUrl}
             imageWidth={backgroundImageWidth}
             placeholderImageUrl={placeholderBackgroundImage}
             sizes={backgroundImageSizes}
@@ -132,8 +132,8 @@ Component.displayName = 'Promotion';
 
 Component.defaultProps = {
   backgroundImageHeight: undefined,
-  backgroundImageSizes: null,
-  backgroundImageSrcSet: null,
+  backgroundImageSizes: undefined,
+  backgroundImageSrcSet: undefined,
   backgroundImageWidth: undefined,
   discountAmountParagraphText: SAVE_UP_TO,
   discountCodeParagraphText: USE_COUPON_CODE,
@@ -142,15 +142,15 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The background image. */
-  backgroundImage: PropTypes.string.isRequired,
   /** The natural height of the background image in px. */
   backgroundImageHeight: PropTypes.number,
-  /** The natural width of the background image in px. */
-  backgroundImageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes for the background image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-  backgroundImageSrcSet: PropTypes.string,
+  backgroundImageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the background image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  backgroundImageSrcSet: PropTypes.string,
+  /** URL pointing to the image to display. */
+  backgroundImageUrl: PropTypes.string.isRequired,
+  /** The natural width of the background image in px. */
   backgroundImageWidth: PropTypes.number,
   /** The discount amount to be displayed. */
   discountAmount: PropTypes.string.isRequired,
