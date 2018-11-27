@@ -47,21 +47,21 @@ export const roomTypes = [
   {
     text: '🎅',
     value: '🎅',
-    image: '🎅',
+    imageUrl: '🎅',
   },
   {
     text: '💪',
     value: '💪',
-    image: '💪',
+    imageUrl: '💪',
   },
   {
     text: '👃',
     value: '👃',
-    image: '👃',
+    imageUrl: '👃',
   },
   {
     text: '🧖️',
     value: '🧖️',
-    image: '🧖️',
+    imageUrl: '🧖️',
   },
 ];

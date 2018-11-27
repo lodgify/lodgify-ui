@@ -47,22 +47,22 @@ const roomTypes = [
   {
     text: 'King suite',
     value: 'kingSuite',
-    image: require('./mock-data/king-suite.png'),
+    imageUrl: require('./mock-data/king-suite.png'),
   },
   {
     text: 'Safari Room',
     value: 'safariRoom',
-    image: require('./mock-data/safari-room.png'),
+    imageUrl: require('./mock-data/safari-room.png'),
   },
   {
     text: 'The Red Room',
     value: 'redRoom',
-    image: require('./mock-data/the-red-room.png'),
+    imageUrl: require('./mock-data/the-red-room.png'),
   },
   {
     text: 'Junior Suite',
     value: 'juniorSuite',
-    image: require('./mock-data/junior-suite.png'),
+    imageUrl: require('./mock-data/junior-suite.png'),
   },
 ];
 const rateCategories = [
@@ -105,22 +105,22 @@ const roomTypes = [
   {
     text: 'King suite',
     value: 'kingSuite',
-    image: require('./mock-data/king-suite.png'),
+    imageUrl: require('./mock-data/king-suite.png'),
   },
   {
     text: 'Safari Room',
     value: 'safariRoom',
-    image: require('./mock-data/safari-room.png'),
+    imageUrl: require('./mock-data/safari-room.png'),
   },
   {
     text: 'The Red Room',
     value: 'redRoom',
-    image: require('./mock-data/the-red-room.png'),
+    imageUrl: require('./mock-data/the-red-room.png'),
   },
   {
     text: 'Junior Suite',
     value: 'juniorSuite',
-    image: require('./mock-data/junior-suite.png'),
+    imageUrl: require('./mock-data/junior-suite.png'),
   },
 ];
 const rateCategories = [
