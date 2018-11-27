@@ -7,6 +7,8 @@ import { Component as Hero } from './component';
 const props = {
   activeNavigationItemIndex: 1,
   backgroundImageUrl: 'https://darkpurple.com',
+  backgroundImageSizes: 'a load of sizes',
+  backgroundImageSrcSet: 'a load of sources',
   headerLogoSrc: 'https://darkgreen.com',
   headerLogoText: 'Livingstone Cottage',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
