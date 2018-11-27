@@ -17,6 +17,8 @@ import { ShowOnDesktop } from 'layout/ShowOnDesktop';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   activeNavigationItemIndex,
+  backgroundImageSizes,
+  backgroundImageSrcSet,
   backgroundImageUrl,
   headerLogoSrc,
   headerLogoText,
@@ -34,6 +36,8 @@ export const Component = ({
 }) => (
   <Hero
     activeNavigationItemIndex={activeNavigationItemIndex}
+    backgroundImageSizes={backgroundImageSizes}
+    backgroundImageSrcSet={backgroundImageSrcSet}
     backgroundImageUrl={backgroundImageUrl}
     headerLogoSrc={headerLogoSrc}
     headerLogoText={headerLogoText}
@@ -81,6 +85,8 @@ Component.displayName = 'HomepageHero';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  backgroundImageSizes: undefined,
+  backgroundImageSrcSet: undefined,
   headerLogoSrc: null,
   headerPrimaryCTA: null,
   headingText: null,
@@ -96,7 +102,11 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The index of the active navigation item. */
   activeNavigationItemIndex: PropTypes.number,
-  /** The background image url of the hero. */
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  backgroundImageSizes: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  backgroundImageSrcSet: PropTypes.string,
+  /** The source url of the hero's background image. */
   backgroundImageUrl: PropTypes.string.isRequired,
   /** The src url for the logo in the header. */
   headerLogoSrc: PropTypes.string,
