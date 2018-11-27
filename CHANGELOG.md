@@ -1,3 +1,10 @@
+# [1.91.0](https://github.com/lodgify/lodgify-ui/compare/v1.90.0...v1.91.0) (2018-11-27)
+
+
+### Features
+
+* **ResponsiveImage:** replace props.sources with props.sizes and props.srcSet ([498a56b](https://github.com/lodgify/lodgify-ui/commit/498a56b))
+
 # [1.90.0](https://github.com/lodgify/lodgify-ui/compare/v1.89.1...v1.90.0) (2018-11-26)
 
 
