@@ -36,46 +36,57 @@ const Component = ({
   secondaryButtonText,
   searchBarOnChangeInput,
   searchBarOnSubmit,
-}) => (
-  <Hero
-    activeNavigationItemIndex={activeNavigationItemIndex}
-    backgroundImageUrl={images[0].imageUrl}
-    bottomOffset={BOTTOM_OFFSET}
-    headerLogoSrc={headerLogoSrc}
-    headerLogoText={headerLogoText}
-    headerNavigationItems={headerNavigationItems}
-    headerPrimaryCTA={headerPrimaryCTA}
-    headerSearchBarGuestsOptions={searchBarGuestsOptions}
-    headerSearchBarLocationOptions={searchBarLocationOptions}
-    headerSearchBarModalHeadingText={searchBarModalHeadingText}
-    headerSearchBarSearchButton={searchBarSearchButton}
-    isFixedSearchBarDisplayed
-    placeholderBackgroundImageUrl={images[0].placeholderImageUrl}
-    searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
-    searchBarOnChangeInput={searchBarOnChangeInput}
-    searchBarOnSubmit={searchBarOnSubmit}
-  >
-    <FlexContainer alignItems="flex-end">
-      <HorizontalGutters>
-        <Gallery
-          heading={getGalleryHeadingMarkup(propertyName, ratingNumber)}
-          images={images}
-          trigger={
-            <Button
-              icon={ICON_NAMES.PLACEHOLDER}
-              isCompact
-              isPositionedRight
-              isSecondary
-            >
-              {upperCase(secondaryButtonText)}
-            </Button>
-          }
-        />
-      </HorizontalGutters>
-    </FlexContainer>
-    <Divider />
-  </Hero>
-);
+}) => {
+  const {
+    url: backgroundImageUrl,
+    sizes: backgroundImageSizes,
+    srcSet: backgroundImageSrcSet,
+    placeholderImageUrl,
+  } = images[0];
+
+  return (
+    <Hero
+      activeNavigationItemIndex={activeNavigationItemIndex}
+      backgroundImageSizes={backgroundImageSizes}
+      backgroundImageSrcSet={backgroundImageSrcSet}
+      backgroundImageUrl={backgroundImageUrl}
+      bottomOffset={BOTTOM_OFFSET}
+      headerLogoSrc={headerLogoSrc}
+      headerLogoText={headerLogoText}
+      headerNavigationItems={headerNavigationItems}
+      headerPrimaryCTA={headerPrimaryCTA}
+      headerSearchBarGuestsOptions={searchBarGuestsOptions}
+      headerSearchBarLocationOptions={searchBarLocationOptions}
+      headerSearchBarModalHeadingText={searchBarModalHeadingText}
+      headerSearchBarSearchButton={searchBarSearchButton}
+      isFixedSearchBarDisplayed
+      placeholderBackgroundImageUrl={placeholderImageUrl}
+      searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
+      searchBarOnChangeInput={searchBarOnChangeInput}
+      searchBarOnSubmit={searchBarOnSubmit}
+    >
+      <FlexContainer alignItems="flex-end">
+        <HorizontalGutters>
+          <Gallery
+            heading={getGalleryHeadingMarkup(propertyName, ratingNumber)}
+            images={images}
+            trigger={
+              <Button
+                icon={ICON_NAMES.PLACEHOLDER}
+                isCompact
+                isPositionedRight
+                isSecondary
+              >
+                {upperCase(secondaryButtonText)}
+              </Button>
+            }
+          />
+        </HorizontalGutters>
+      </FlexContainer>
+      <Divider />
+    </Hero>
+  );
+};
 
 Component.displayName = 'PropertyPageHero';
 
@@ -132,21 +143,16 @@ Component.propTypes = {
       imageNotFoundLabelText: PropTypes.string,
       /** Title of the image to show when hovering it on desktop browsers */
       imageTitle: PropTypes.string,
-      /** URL pointing to the image to display. */
-      imageUrl: PropTypes.string.isRequired,
       /** A visible label for the image. */
       label: PropTypes.string.isRequired,
       /** URL pointing to the placeholder image to display. */
       placeholderImageUrl: PropTypes.string,
-      /** Collection of objects to specify different image sources
-       *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-       */
-      sources: PropTypes.arrayOf(
-        PropTypes.shape({
-          media: PropTypes.string.isRequired,
-          srcset: PropTypes.string.isRequired,
-        })
-      ),
+      /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      sizes: PropTypes.string,
+      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      srcSet: PropTypes.string,
+      /** URL pointing to the image to display. */
+      url: PropTypes.string.isRequired,
     })
   ).isRequired,
   /** The name of the property to display in the gallery modal. */
