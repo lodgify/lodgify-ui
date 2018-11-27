@@ -179,14 +179,10 @@ Component.propTypes = {
     PropTypes.shape({
       /** Alternative text to show if the image can't be loaded by the browser. */
       alternativeText: PropTypes.string,
-      /** A set of media conditions indicating to the browser which source to choose.
-       *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-       */
+      /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
       sizes: PropTypes.string,
-      /** The set of images the browser can choose between depending on screen width.
-       *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-       */
-      sourceSet: PropTypes.string,
+      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      srcSet: PropTypes.string,
       /** Title of the image to show when hovering over it on desktop browsers. */
       title: PropTypes.string,
       /** URL pointing to the image to display. */
