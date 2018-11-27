@@ -17,12 +17,12 @@ const roomOptionsWithImages = [
   {
     text: 'room 1',
     value: '1',
-    image: 'imageUrl1',
+    image: { url: 'imageUrl1' },
   },
   {
     text: 'room 2',
     value: '2',
-    image: 'imageUrl2',
+    image: { url: 'imageUrl1' },
   },
 ];
 
