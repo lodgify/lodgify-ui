@@ -15,20 +15,24 @@ import { getHasIndentedOptions } from './getHasIndentedOptions';
  */
 export const adaptOptions = (options, hasImages) => {
   if (hasImages) {
-    return options.map(({ image, text, value }, index) => ({
-      text: [
-        <img
-          alt={text}
-          className="ui image"
-          key={buildKeyFromStrings(`img${text}`, index)}
-          src={image || ''}
-        />,
-        <span className="text" key={buildKeyFromStrings(`spa${text}`, index)}>
-          {text}
-        </span>,
-      ],
-      value,
-    }));
+    return options.map(
+      ({ imageSizes, imageUrl, imageSrcSet, text, value }, index) => ({
+        text: [
+          <img
+            alt={text}
+            className="ui image"
+            key={buildKeyFromStrings(`img${text}`, index)}
+            sizes={imageSizes}
+            src={imageUrl}
+            srcSet={imageSrcSet}
+          />,
+          <span className="text" key={buildKeyFromStrings(`spa${text}`, index)}>
+            {text}
+          </span>,
+        ],
+        value,
+      })
+    );
   }
   if (getHasIndentedOptions(options)) {
     return options.map(({ indent, ...otherProps }) => ({

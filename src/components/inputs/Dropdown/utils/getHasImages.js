@@ -3,4 +3,4 @@
  * @return {boolean}
  */
 export const getHasImages = options =>
-  options.some(option => option.hasOwnProperty('image'));
+  options.some(option => option.hasOwnProperty('imageUrl'));
