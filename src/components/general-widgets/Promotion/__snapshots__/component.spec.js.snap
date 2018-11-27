@@ -2,9 +2,7 @@
 
 exports[`The \`Promotion\` component should have the right structure 1`] = `
 <Promotion
-  backgroundImage="testimage"
-  backgroundImageSizes={null}
-  backgroundImageSrcSet={null}
+  backgroundImageUrl="testimage"
   discountAmount="100%"
   discountAmountParagraphText="Save up to"
   discountCode="123"

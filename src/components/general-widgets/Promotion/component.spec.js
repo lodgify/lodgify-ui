@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 import { Component as Promotion } from './component';
 
 const componentProps = {
-  backgroundImage: 'testimage',
+  backgroundImageUrl: 'testimage',
   headingText: 'Hello World!',
   discountCode: '123',
   discountAmount: '100%',
