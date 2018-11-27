@@ -17,13 +17,13 @@ export const roomTypes = [
     slideShowImages: [
       {
         alternativeText: 'Two more cats',
-        url:
+        imageUrl:
           'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
         title: 'Two more cats',
       },
       {
         alternativeText: 'Some cats',
-        url:
+        imageUrl:
           'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
         title: 'Some cats',
       },
@@ -60,13 +60,13 @@ export const roomTypes = [
     slideShowImages: [
       {
         alternativeText: 'Two more cats',
-        url:
+        imageUrl:
           'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
         title: 'Two more cats',
       },
       {
         alternativeText: 'Some cats',
-        url:
+        imageUrl:
           'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
         title: 'Some cats',
       },
