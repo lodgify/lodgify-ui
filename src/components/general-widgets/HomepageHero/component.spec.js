@@ -6,7 +6,9 @@ import { Component as HomepageHero } from './component';
 
 const props = {
   activeNavigationItemIndex: 1,
-  backgroundImageUrl: 'url',
+  backgroundImageSizes: 'url',
+  backgroundImageSrcSet: 'a load of sizes',
+  backgroundImageUrl: 'bare sources',
   headerLogoSrc: 'src',
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
