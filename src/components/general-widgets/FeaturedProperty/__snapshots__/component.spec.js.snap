@@ -6,7 +6,7 @@ exports[`<FeaturedProperty /> should render the right structure 1`] = `
   href="/"
 >
   <ResponsiveImage
-    alternativeText=""
+    alternativeText="Image Widget"
     hasRoundedCorners={false}
     imageHeight={null}
     imageNotFoundLabelText="Image not found!"
