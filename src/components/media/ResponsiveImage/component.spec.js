@@ -33,40 +33,9 @@ describe('<ResponsiveImage />', () => {
     });
   });
 
-  describe('if `props.placeholderImageUrl` and `props.imageUrl` are passed', () => {
-    it('should have the right structure', () => {
-      const actual = getResponsiveImage({
-        placeholderImageUrl: 'ayyy',
-        imageUrl: 'yooo',
-      });
-
-      expect(actual).toMatchSnapshot();
-    });
-  });
-
   describe('if `props.label` is passed', () => {
     it('should have the right structure', () => {
       const actual = getResponsiveImage({ label: '🔷' });
-
-      expect(actual).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.sources` is passed', () => {
-    it('should have the right structure', () => {
-      const sources = [
-        {
-          srcset:
-            'https://si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max',
-          media: '(min-width: 1200px)',
-        },
-        {
-          srcset:
-            'https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max',
-          media: '(min-width: 1024px)',
-        },
-      ];
-      const actual = getResponsiveImage({ sources });
 
       expect(actual).toMatchSnapshot();
     });
@@ -81,7 +50,6 @@ describe('<ResponsiveImage />', () => {
 
       expect(actual).toEqual({
         isImageLoaded: false,
-        isImageLoadedFromCache: false,
         shouldImageLoad: true,
       });
     });
@@ -96,7 +64,6 @@ describe('<ResponsiveImage />', () => {
 
       expect(actual).toEqual({
         isImageLoaded: true,
-        isImageLoadedFromCache: false,
         shouldImageLoad: true,
       });
     });

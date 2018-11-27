@@ -29,18 +29,12 @@
 #### Responsive
 
 ```jsx
+const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=${width}`;
+
 <ResponsiveImage
-  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=640&mode=max"
-  sources={[
-    {
-      srcset: 'https://si5.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=2400&mode=max',
-      media: '(min-width: 1200px)'
-    },
-    {
-      srcset: 'https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max',
-      media: '(min-width: 1024px)'
-    }
-  ]}
+  imageUrl={getSrc(1200)}
+  sizes="(max-width: 800px) 500px, (max-width: 1000px) 800px, 100vw"
+  srcSet={`${getSrc(500)} 500w, ${getSrc(800)} 800w, ${getSrc(1200)} 1200w`}
 />
 ```
 
@@ -48,7 +42,7 @@
 
 ```jsx
 <ResponsiveImage
-  placeholderImageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=20&mode=max" 
+  placeholderImageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=20&mode=max"
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
   imageWidth={1024}
   imageHeight={683}

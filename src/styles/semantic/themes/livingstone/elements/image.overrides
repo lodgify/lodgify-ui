@@ -14,58 +14,41 @@
       Variations
 --------------------*/
 
-/* Placeholder image */
+/* Responsive Image */
 
-.image-with-placeholder-container {
-  position: relative;
-  display: inline-block;
+figure.responsive-image {
+  margin: 0;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: @imageWithPlaceholderContainerTransition;
+  position: relative;
 
-  &.is-visible {
-    opacity: 1;
+  > .ui.image {
+    transform: none;
+    transition: @imageWithPlaceholderTransition;
   }
 
   &.has-blurred-children {
 
-    > img,
-    .placeholder-image-container {
-      opacity: 1;
+    > .ui.image {
       filter: @imageWithPlaceholderBlur;
       -ms-filter: @imageWithPlaceholderBlur;
       transform: @imageWithPlaceholderTransformScale;
     }
   }
 
-  .placeholder-image-container {
-    opacity: 0;
+  &.has-placeholder {
+
+    > .ui.image {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
   }
-
-  .placeholder-image-container,
-  .placeholder-image,
-  img.ui.image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    transition: @imageWithPlaceholderTransition;
-  }
-}
-
-/* Responsive Image */
-
-picture.responsive-image {
 
   &.is-fluid {
     height: 100%;
     width: 100%;
-    position: relative;
-    overflow: hidden;
 
     /* Object fit cover Fallback */
     .ui.fluid.image {
@@ -79,18 +62,10 @@ picture.responsive-image {
       transform: translate(-50%, -50%);
     }
 
-    .image-with-placeholder-container {
+    &.has-blurred-children {
 
-      .ui.fluid.image {
-        width: auto;
-        max-width: none;
-      }
-
-      &.has-blurred-children {
-
-        > .ui.fluid.image {
-          transform: translate(-50%, -50%) @imageWithPlaceholderTransformScale;
-        }
+      > .ui.fluid.image {
+        transform: translate(-50%, -50%) @imageWithPlaceholderTransformScale;
       }
     }
 
@@ -104,18 +79,10 @@ picture.responsive-image {
         transform: none;
       }
 
-      .image-with-placeholder-container {
+      &.has-blurred-children {
 
-        .ui.fluid.image {
-          width: inherit;
-          max-width: inherit;
-        }
-
-        &.has-blurred-children {
-
-          > .ui.fluid.image {
-            transform: @imageWithPlaceholderTransformScale;
-          }
+        > .ui.fluid.image {
+          transform: @imageWithPlaceholderTransformScale;
         }
       }
     }

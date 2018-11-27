@@ -6,6 +6,8 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
   hasGradient={false}
   imageUrl="🐱🐱"
   placeholderImageUrl={null}
+  sizes={null}
+  srcSet={null}
 >
   <Segment
     className="full-bleed"
@@ -37,29 +39,35 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
         isFluid={true}
         label={null}
         placeholderImageUrl={null}
-        sources={Array []}
+        sizes={null}
+        srcSet={null}
       >
-        <picture
+        <figure
           className="responsive-image is-fluid"
-          role="figure"
         >
           <Image
             alt="Image Widget"
             as="img"
             avatar={false}
             fluid={true}
+            onLoad={[Function]}
+            sizes={null}
             src="🐱🐱"
+            srcSet={null}
             title="Image Title"
             ui={true}
           >
             <img
               alt="Image Widget"
               className="ui fluid image"
+              onLoad={[Function]}
+              sizes={null}
               src="🐱🐱"
+              srcSet={null}
               title="Image Title"
             />
           </Image>
-        </picture>
+        </figure>
       </ResponsiveImage>
     </div>
   </Segment>
@@ -72,6 +80,8 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
   hasGradient={true}
   imageUrl="🐱🐱"
   placeholderImageUrl={null}
+  sizes={null}
+  srcSet={null}
 >
   <Segment
     className="full-bleed has-gradient"
@@ -103,29 +113,35 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
         isFluid={true}
         label={null}
         placeholderImageUrl={null}
-        sources={Array []}
+        sizes={null}
+        srcSet={null}
       >
-        <picture
+        <figure
           className="responsive-image is-fluid"
-          role="figure"
         >
           <Image
             alt="Image Widget"
             as="img"
             avatar={false}
             fluid={true}
+            onLoad={[Function]}
+            sizes={null}
             src="🐱🐱"
+            srcSet={null}
             title="Image Title"
             ui={true}
           >
             <img
               alt="Image Widget"
               className="ui fluid image"
+              onLoad={[Function]}
+              sizes={null}
               src="🐱🐱"
+              srcSet={null}
               title="Image Title"
             />
           </Image>
-        </picture>
+        </figure>
       </ResponsiveImage>
     </div>
   </Segment>
@@ -138,6 +154,8 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
   hasGradient={false}
   imageUrl="🐱🐱"
   placeholderImageUrl={null}
+  sizes={null}
+  srcSet={null}
 >
   <Segment
     className="full-bleed has-children"
@@ -169,29 +187,35 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
         isFluid={true}
         label={null}
         placeholderImageUrl={null}
-        sources={Array []}
+        sizes={null}
+        srcSet={null}
       >
-        <picture
+        <figure
           className="responsive-image is-fluid"
-          role="figure"
         >
           <Image
             alt="Image Widget"
             as="img"
             avatar={false}
             fluid={true}
+            onLoad={[Function]}
+            sizes={null}
             src="🐱🐱"
+            srcSet={null}
             title="Image Title"
             ui={true}
           >
             <img
               alt="Image Widget"
               className="ui fluid image"
+              onLoad={[Function]}
+              sizes={null}
               src="🐱🐱"
+              srcSet={null}
               title="Image Title"
             />
           </Image>
-        </picture>
+        </figure>
       </ResponsiveImage>
       🏛
     </div>

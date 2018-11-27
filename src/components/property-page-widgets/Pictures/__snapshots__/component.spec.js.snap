@@ -823,7 +823,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""
@@ -854,7 +855,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""
@@ -885,7 +887,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""
@@ -916,7 +919,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""
@@ -947,7 +951,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""
