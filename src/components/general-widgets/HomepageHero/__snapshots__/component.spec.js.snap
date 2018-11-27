@@ -3,7 +3,9 @@
 exports[`HomepageHero by default should render the right structure 1`] = `
 <HomepageHero
   activeNavigationItemIndex={1}
-  backgroundImageUrl="url"
+  backgroundImageSizes="url"
+  backgroundImageSrcSet="a load of sizes"
+  backgroundImageUrl="bare sources"
   headerLogoSrc="src"
   headerLogoText="text"
   headerNavigationItems={
@@ -50,7 +52,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
 >
   <Hero
     activeNavigationItemIndex={1}
-    backgroundImageUrl="url"
+    backgroundImageSizes="url"
+    backgroundImageSrcSet="a load of sizes"
+    backgroundImageUrl="bare sources"
     bottomOffset="0px"
     headerLogoSrc="src"
     headerLogoText="text"
@@ -98,10 +102,10 @@ exports[`HomepageHero by default should render the right structure 1`] = `
     <FullBleed
       bottomOffset="0px"
       hasGradient={true}
-      imageUrl="url"
+      imageUrl="bare sources"
       placeholderImageUrl={null}
-      sizes={null}
-      srcSet={null}
+      sizes="url"
+      srcSet="a load of sizes"
     >
       <Segment
         className="full-bleed has-gradient has-children"
@@ -126,15 +130,15 @@ exports[`HomepageHero by default should render the right structure 1`] = `
             imageHeight={null}
             imageNotFoundLabelText="Image not found!"
             imageTitle="Image Title"
-            imageUrl="url"
+            imageUrl="bare sources"
             imageWidth={null}
             isAvatar={false}
             isCircular={false}
             isFluid={true}
             label={null}
             placeholderImageUrl={null}
-            sizes={null}
-            srcSet={null}
+            sizes="url"
+            srcSet="a load of sizes"
           >
             <figure
               className="responsive-image is-fluid"
@@ -145,9 +149,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                 avatar={false}
                 fluid={true}
                 onLoad={[Function]}
-                sizes={null}
-                src="url"
-                srcSet={null}
+                sizes="url"
+                src="bare sources"
+                srcSet="a load of sizes"
                 title="Image Title"
                 ui={true}
               >
@@ -155,9 +159,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                   alt="Image Widget"
                   className="ui fluid image"
                   onLoad={[Function]}
-                  sizes={null}
-                  src="url"
-                  srcSet={null}
+                  sizes="url"
+                  src="bare sources"
+                  srcSet="a load of sizes"
                   title="Image Title"
                 />
               </Image>
