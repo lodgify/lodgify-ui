@@ -364,16 +364,12 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
               options={
                 Array [
                   Object {
-                    "image": Object {
-                      "url": "imageUrl1",
-                    },
+                    "imageUrl": "imageUrl1",
                     "text": "room 1",
                     "value": "1",
                   },
                   Object {
-                    "image": Object {
-                      "url": "imageUrl1",
-                    },
+                    "imageUrl": "imageUrl1",
                     "text": "room 2",
                     "value": "2",
                   },
