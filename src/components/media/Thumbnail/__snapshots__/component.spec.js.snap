@@ -2,7 +2,6 @@
 
 exports[`<Thumbnail /> by default should render the right structure 1`] = `
 <Thumbnail
-  alternativeText="Thumbnail element"
   className="🚥"
   hasRoundedCorners={false}
   imageUrl="www.⚡️.net"
@@ -14,23 +13,55 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
   <div
     className="ui thumbnail 🚥"
   >
-    <div
-      aria-label="Thumbnail element"
-      className="ui image"
-      role="img"
-      style={
-        Object {
-          "backgroundImage": "url(www.⚡️.net)",
-        }
-      }
-    />
+    <ResponsiveImage
+      alternativeText="Image Widget"
+      hasRoundedCorners={false}
+      imageHeight={null}
+      imageNotFoundLabelText="Image not found!"
+      imageTitle="Image Title"
+      imageUrl="www.⚡️.net"
+      imageWidth={null}
+      isAvatar={false}
+      isCircular={false}
+      isFluid={false}
+      isSquare={false}
+      label={null}
+      sizes={null}
+      srcSet={null}
+    >
+      <figure
+        className="responsive-image"
+      >
+        <Image
+          alt="Image Widget"
+          as="img"
+          avatar={false}
+          fluid={true}
+          onLoad={[Function]}
+          sizes={null}
+          src="www.⚡️.net"
+          srcSet={null}
+          title="Image Title"
+          ui={true}
+        >
+          <img
+            alt="Image Widget"
+            className="ui fluid image"
+            onLoad={[Function]}
+            sizes={null}
+            src="www.⚡️.net"
+            srcSet={null}
+            title="Image Title"
+          />
+        </Image>
+      </figure>
+    </ResponsiveImage>
   </div>
 </Thumbnail>
 `;
 
 exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right structure 1`] = `
 <Thumbnail
-  alternativeText="Thumbnail element"
   className="🚥"
   hasRoundedCorners={false}
   imageUrl="www.⚡️.net"
@@ -40,53 +71,117 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
   size={null}
 >
   <div
-    className="ui thumbnail 🚥"
+    className="ui thumbnail 🚥 is-circular"
   >
-    <div
-      aria-label="Thumbnail element"
-      className="ui image is-circular"
-      role="img"
-      style={
-        Object {
-          "backgroundImage": "url(www.⚡️.net)",
-        }
-      }
-    />
+    <ResponsiveImage
+      alternativeText="Image Widget"
+      hasRoundedCorners={false}
+      imageHeight={null}
+      imageNotFoundLabelText="Image not found!"
+      imageTitle="Image Title"
+      imageUrl="www.⚡️.net"
+      imageWidth={null}
+      isAvatar={false}
+      isCircular={true}
+      isFluid={false}
+      isSquare={false}
+      label={null}
+      sizes={null}
+      srcSet={null}
+    >
+      <figure
+        className="responsive-image is-circular"
+      >
+        <Image
+          alt="Image Widget"
+          as="img"
+          avatar={false}
+          fluid={true}
+          onLoad={[Function]}
+          sizes={null}
+          src="www.⚡️.net"
+          srcSet={null}
+          title="Image Title"
+          ui={true}
+        >
+          <img
+            alt="Image Widget"
+            className="ui fluid image"
+            onLoad={[Function]}
+            sizes={null}
+            src="www.⚡️.net"
+            srcSet={null}
+            title="Image Title"
+          />
+        </Image>
+      </figure>
+    </ResponsiveImage>
   </div>
 </Thumbnail>
 `;
 
 exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right structure 1`] = `
 <Thumbnail
-  alternativeText="Thumbnail element"
   className="🚥"
   hasRoundedCorners={false}
   imageUrl="www.⚡️.net"
-  isCircular={true}
-  isSquare={false}
+  isCircular={false}
+  isSquare={true}
   label={null}
   size={null}
 >
   <div
-    className="ui thumbnail 🚥"
+    className="ui thumbnail 🚥 is-square"
   >
-    <div
-      aria-label="Thumbnail element"
-      className="ui image is-circular"
-      role="img"
-      style={
-        Object {
-          "backgroundImage": "url(www.⚡️.net)",
-        }
-      }
-    />
+    <ResponsiveImage
+      alternativeText="Image Widget"
+      hasRoundedCorners={false}
+      imageHeight={null}
+      imageNotFoundLabelText="Image not found!"
+      imageTitle="Image Title"
+      imageUrl="www.⚡️.net"
+      imageWidth={null}
+      isAvatar={false}
+      isCircular={false}
+      isFluid={false}
+      isSquare={true}
+      label={null}
+      sizes={null}
+      srcSet={null}
+    >
+      <figure
+        className="responsive-image"
+      >
+        <Image
+          alt="Image Widget"
+          as="img"
+          avatar={false}
+          fluid={true}
+          onLoad={[Function]}
+          sizes={null}
+          src="www.⚡️.net"
+          srcSet={null}
+          title="Image Title"
+          ui={true}
+        >
+          <img
+            alt="Image Widget"
+            className="ui fluid image"
+            onLoad={[Function]}
+            sizes={null}
+            src="www.⚡️.net"
+            srcSet={null}
+            title="Image Title"
+          />
+        </Image>
+      </figure>
+    </ResponsiveImage>
   </div>
 </Thumbnail>
 `;
 
 exports[`<Thumbnail /> if \`props.size\` is supplied should render the right structure 1`] = `
 <Thumbnail
-  alternativeText="Thumbnail element"
   className="🚥"
   hasRoundedCorners={false}
   imageUrl="www.⚡️.net"
@@ -96,18 +191,51 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
   size="small"
 >
   <div
-    className="ui thumbnail 🚥"
+    className="ui thumbnail small 🚥"
   >
-    <div
-      aria-label="Thumbnail element"
-      className="ui image small"
-      role="img"
-      style={
-        Object {
-          "backgroundImage": "url(www.⚡️.net)",
-        }
-      }
-    />
+    <ResponsiveImage
+      alternativeText="Image Widget"
+      hasRoundedCorners={false}
+      imageHeight={null}
+      imageNotFoundLabelText="Image not found!"
+      imageTitle="Image Title"
+      imageUrl="www.⚡️.net"
+      imageWidth={null}
+      isAvatar={false}
+      isCircular={false}
+      isFluid={false}
+      isSquare={false}
+      label={null}
+      sizes={null}
+      srcSet={null}
+    >
+      <figure
+        className="responsive-image"
+      >
+        <Image
+          alt="Image Widget"
+          as="img"
+          avatar={false}
+          fluid={true}
+          onLoad={[Function]}
+          sizes={null}
+          src="www.⚡️.net"
+          srcSet={null}
+          title="Image Title"
+          ui={true}
+        >
+          <img
+            alt="Image Widget"
+            className="ui fluid image"
+            onLoad={[Function]}
+            sizes={null}
+            src="www.⚡️.net"
+            srcSet={null}
+            title="Image Title"
+          />
+        </Image>
+      </figure>
+    </ResponsiveImage>
   </div>
 </Thumbnail>
 `;
