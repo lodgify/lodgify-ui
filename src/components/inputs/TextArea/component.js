@@ -8,6 +8,7 @@ import { InputController } from '../InputController';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  autoComplete,
   error,
   isValid,
   label,
@@ -22,13 +23,14 @@ export const Component = ({
     name={name}
     onChange={onChange}
   >
-    <textarea onBlur={onBlur} rows="8" />
+    <textarea autoComplete={autoComplete} onBlur={onBlur} rows="8" />
   </InputController>
 );
 
 Component.displayName = 'TextArea';
 
 Component.defaultProps = {
+  autoComplete: null,
   error: false,
   isValid: false,
   label: '',
@@ -38,6 +40,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** Can the text area be completed automatically by the browser. See [MDN docs for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete). */
+  autoComplete: PropTypes.string,
   /** Is the text area in an error state. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   /** Is the text area in a valid state. */

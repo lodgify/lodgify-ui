@@ -70,6 +70,7 @@ export class Component extends PureComponent {
   render = () => {
     const {
       actionLink,
+      autoComplete,
       children,
       errorMessage,
       headingText,
@@ -86,6 +87,7 @@ export class Component extends PureComponent {
         )}
         <Card.Content>
           <Form
+            autoComplete={autoComplete}
             error={!!errorMessage}
             onSubmit={this.handleSubmit}
             success={!!successMessage}
@@ -114,6 +116,7 @@ export class Component extends PureComponent {
 Component.displayName = 'Form';
 
 Component.defaultProps = {
+  autoComplete: null,
   errorMessage: '',
   headingText: null,
   onSubmit: Function.prototype,
@@ -131,6 +134,8 @@ Component.propTypes = {
     /** The visible text for the secondary call to action */
     text: PropTypes.node.isRequired,
   }),
+  /** Can inputs be completed automatically by the browser. See [MDN docs for `<form />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form). */
+  autoComplete: PropTypes.oneOf(['on', 'off']),
   /** The child components and elements. */
   children: PropTypes.node.isRequired,
   /** The message to display when the form has an error */

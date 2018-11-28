@@ -34,9 +34,17 @@ export const Component = ({
     successMessage={successMessage}
     validation={validation}
   >
-    <TextInput label={firstNameInputLabel} name="firstName" />
-    <TextInput label={lastNameInputLabel} name="lastName" />
-    <TextInput label={emailInputLabel} name="email" />
+    <TextInput
+      autoComplete="given-name"
+      label={firstNameInputLabel}
+      name="firstName"
+    />
+    <TextInput
+      autoComplete="family-name"
+      label={lastNameInputLabel}
+      name="lastName"
+    />
+    <TextInput autoComplete="email" label={emailInputLabel} name="email" />
   </Form>
 );
 

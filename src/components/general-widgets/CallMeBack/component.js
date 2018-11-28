@@ -43,6 +43,7 @@ export const Component = ({
   validation,
 }) => (
   <Form
+    autoComplete="off"
     errorMessage={errorMessage}
     headingText={headingText}
     onSubmit={onSubmit}
@@ -51,10 +52,10 @@ export const Component = ({
     validation={validation}
   >
     <InputGroup>
-      <TextInput label={nameInputLabel} name="name" />
-      <PhoneInput label={phoneInputLabel} name="phone" />
+      <TextInput autoComplete="name" label={nameInputLabel} name="name" />
+      <PhoneInput autoComplete="tel" label={phoneInputLabel} name="phone" />
     </InputGroup>
-    <TextInput label={emailInputLabel} name="email" />
+    <TextInput autoComplete="email" label={emailInputLabel} name="email" />
     <InputGroup>
       <SingleDatePicker name="date" placeholderText={dateInputPlaceholder} />
       <Dropdown

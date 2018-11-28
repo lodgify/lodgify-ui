@@ -33,6 +33,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
         >
           <Form
             actionLink={null}
+            autoComplete={null}
             errorMessage=""
             headingText="Forgot password"
             onSubmit={[Function]}
@@ -41,6 +42,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
             validation={Object {}}
           >
             <TextInput
+              autoComplete="email"
               error={false}
               isValid={false}
               label="Email"
@@ -53,6 +55,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
         </Modal>,
       }
     }
+    autoComplete={null}
     errorMessage="This is an error message"
     headingText="Owner Login"
     onSubmit={[Function]}
@@ -97,11 +100,13 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
           >
             <Form
               as="form"
+              autoComplete={null}
               error={true}
               onSubmit={[Function]}
               success={false}
             >
               <form
+                autoComplete={null}
                 className="ui error form"
                 onSubmit={[Function]}
               >
@@ -112,6 +117,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                     className="field"
                   >
                     <TextInput
+                      autoComplete="email"
                       error={false}
                       isValid={false}
                       label="Email"
@@ -140,7 +146,9 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                             className="ui input"
                           >
                             <input
+                              autoComplete="email"
                               key=".2"
+                              name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
@@ -164,6 +172,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                     className="field"
                   >
                     <TextInput
+                      autoComplete="current-password"
                       error={false}
                       isValid={false}
                       label="Password"
@@ -192,7 +201,9 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                             className="ui input"
                           >
                             <input
+                              autoComplete="current-password"
                               key=".2"
+                              name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="password"
@@ -280,6 +291,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                           content={
                             <Form
                               actionLink={null}
+                              autoComplete={null}
                               errorMessage=""
                               headingText="Forgot password"
                               onSubmit={[Function]}
@@ -288,6 +300,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                               validation={Object {}}
                             >
                               <TextInput
+                                autoComplete="email"
                                 error={false}
                                 isValid={false}
                                 label="Email"
@@ -420,6 +433,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
         >
           <Form
             actionLink={null}
+            autoComplete={null}
             errorMessage=""
             headingText="Forgot password"
             onSubmit={[Function]}
@@ -428,6 +442,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
             validation={Object {}}
           >
             <TextInput
+              autoComplete="email"
               error={false}
               isValid={false}
               label="Email"
@@ -440,6 +455,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
         </Modal>,
       }
     }
+    autoComplete={null}
     errorMessage=""
     headingText="Owner Login"
     onSubmit={[Function]}
@@ -484,11 +500,13 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
           >
             <Form
               as="form"
+              autoComplete={null}
               error={false}
               onSubmit={[Function]}
               success={true}
             >
               <form
+                autoComplete={null}
                 className="ui success form"
                 onSubmit={[Function]}
               >
@@ -499,6 +517,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                     className="field"
                   >
                     <TextInput
+                      autoComplete="email"
                       error={false}
                       isValid={false}
                       label="Email"
@@ -527,7 +546,9 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                             className="ui input"
                           >
                             <input
+                              autoComplete="email"
                               key=".2"
+                              name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
@@ -551,6 +572,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                     className="field"
                   >
                     <TextInput
+                      autoComplete="current-password"
                       error={false}
                       isValid={false}
                       label="Password"
@@ -579,7 +601,9 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                             className="ui input"
                           >
                             <input
+                              autoComplete="current-password"
                               key=".2"
+                              name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="password"
@@ -667,6 +691,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                           content={
                             <Form
                               actionLink={null}
+                              autoComplete={null}
                               errorMessage=""
                               headingText="Forgot password"
                               onSubmit={[Function]}
@@ -675,6 +700,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                               validation={Object {}}
                             >
                               <TextInput
+                                autoComplete="email"
                                 error={false}
                                 isValid={false}
                                 label="Email"
@@ -807,6 +833,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
         >
           <Form
             actionLink={null}
+            autoComplete={null}
             errorMessage=""
             headingText="Forgot password"
             onSubmit={[Function]}
@@ -815,6 +842,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
             validation={Object {}}
           >
             <TextInput
+              autoComplete="email"
               error={false}
               isValid={false}
               label="Email"
@@ -827,6 +855,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
         </Modal>,
       }
     }
+    autoComplete={null}
     errorMessage=""
     headingText="Owner Login"
     onSubmit={[Function]}
@@ -871,11 +900,13 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
           >
             <Form
               as="form"
+              autoComplete={null}
               error={false}
               onSubmit={[Function]}
               success={false}
             >
               <form
+                autoComplete={null}
                 className="ui form"
                 onSubmit={[Function]}
               >
@@ -886,6 +917,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                     className="field"
                   >
                     <TextInput
+                      autoComplete="email"
                       error={false}
                       isValid={false}
                       label="Email"
@@ -914,7 +946,9 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                             className="ui input"
                           >
                             <input
+                              autoComplete="email"
                               key=".2"
+                              name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
@@ -938,6 +972,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                     className="field"
                   >
                     <TextInput
+                      autoComplete="current-password"
                       error={false}
                       isValid={false}
                       label="Password"
@@ -966,7 +1001,9 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                             className="ui input"
                           >
                             <input
+                              autoComplete="current-password"
                               key=".2"
+                              name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="password"
@@ -1034,6 +1071,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                           content={
                             <Form
                               actionLink={null}
+                              autoComplete={null}
                               errorMessage=""
                               headingText="Forgot password"
                               onSubmit={[Function]}
@@ -1042,6 +1080,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                               validation={Object {}}
                             >
                               <TextInput
+                                autoComplete="email"
                                 error={false}
                                 isValid={false}
                                 label="Email"

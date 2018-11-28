@@ -59,6 +59,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
 >
   <Form
     actionLink={null}
+    autoComplete="off"
     errorMessage=""
     headingText="Contact"
     onSubmit={[Function]}
@@ -103,11 +104,13 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
           >
             <Form
               as="form"
+              autoComplete="off"
               error={false}
               onSubmit={[Function]}
               success={false}
             >
               <form
+                autoComplete="off"
                 className="ui form"
                 onSubmit={[Function]}
               >
@@ -125,6 +128,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         className="field"
                       >
                         <TextInput
+                          autoComplete="name"
                           error={false}
                           isValid={false}
                           label="Name"
@@ -153,7 +157,9 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete="name"
                                   key=".2"
+                                  name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
@@ -177,6 +183,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         className="field"
                       >
                         <PhoneInput
+                          autoComplete="tel"
                           error={false}
                           isValid={false}
                           label="Phone"
@@ -218,6 +225,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 className="ui left icon input"
                               >
                                 <input
+                                  autoComplete="tel"
                                   key=".2"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -272,6 +280,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                     className="field"
                   >
                     <TextInput
+                      autoComplete="email"
                       error={false}
                       isValid={false}
                       label="Email"
@@ -300,7 +309,9 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             className="ui input"
                           >
                             <input
+                              autoComplete="email"
                               key=".2"
+                              name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
@@ -2025,6 +2036,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         className="four wide field"
                       >
                         <TextInput
+                          autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
@@ -2054,7 +2066,9 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete={null}
                                   key=".2"
+                                  name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
@@ -2080,6 +2094,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                     className="field"
                   >
                     <TextArea
+                      autoComplete={null}
                       error={false}
                       isValid={false}
                       label="Comments"
@@ -2107,6 +2122,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             className="ui input"
                           >
                             <textarea
+                              autoComplete={null}
                               key=".2"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -2720,6 +2736,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               className="field"
                             >
                               <TextInput
+                                autoComplete="off"
                                 error={false}
                                 isValid={false}
                                 label="Security code"
@@ -2748,7 +2765,9 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                       className="ui input"
                                     >
                                       <input
+                                        autoComplete="off"
                                         key=".2"
+                                        name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
@@ -2838,6 +2857,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
 >
   <Form
     actionLink={null}
+    autoComplete="off"
     errorMessage="This is an error message"
     headingText="Contact"
     onSubmit={[Function]}
@@ -2882,11 +2902,13 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
           >
             <Form
               as="form"
+              autoComplete="off"
               error={true}
               onSubmit={[Function]}
               success={false}
             >
               <form
+                autoComplete="off"
                 className="ui error form"
                 onSubmit={[Function]}
               >
@@ -2904,6 +2926,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                         className="field"
                       >
                         <TextInput
+                          autoComplete="name"
                           error={false}
                           isValid={false}
                           label="Name"
@@ -2932,7 +2955,9 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete="name"
                                   key=".2"
+                                  name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
@@ -2956,6 +2981,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                         className="field"
                       >
                         <PhoneInput
+                          autoComplete="tel"
                           error={false}
                           isValid={false}
                           label="Phone"
@@ -2997,6 +3023,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                                 className="ui left icon input"
                               >
                                 <input
+                                  autoComplete="tel"
                                   key=".2"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -3051,6 +3078,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                     className="field"
                   >
                     <TextInput
+                      autoComplete="email"
                       error={false}
                       isValid={false}
                       label="Email"
@@ -3079,7 +3107,9 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                             className="ui input"
                           >
                             <input
+                              autoComplete="email"
                               key=".2"
+                              name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
@@ -4804,6 +4834,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                         className="four wide field"
                       >
                         <TextInput
+                          autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
@@ -4833,7 +4864,9 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete={null}
                                   key=".2"
+                                  name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
@@ -4859,6 +4892,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                     className="field"
                   >
                     <TextArea
+                      autoComplete={null}
                       error={false}
                       isValid={false}
                       label="Comments"
@@ -4886,6 +4920,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                             className="ui input"
                           >
                             <textarea
+                              autoComplete={null}
                               key=".2"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -4945,6 +4980,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                               className="field"
                             >
                               <TextInput
+                                autoComplete="off"
                                 error={false}
                                 isValid={false}
                                 label="Security code"
@@ -4973,7 +5009,9 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                                       className="ui input"
                                     >
                                       <input
+                                        autoComplete="off"
                                         key=".2"
+                                        name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
@@ -5102,6 +5140,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
 >
   <Form
     actionLink={null}
+    autoComplete="off"
     errorMessage=""
     headingText="Contact"
     onSubmit={[Function]}
@@ -5146,11 +5185,13 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
           >
             <Form
               as="form"
+              autoComplete="off"
               error={false}
               onSubmit={[Function]}
               success={false}
             >
               <form
+                autoComplete="off"
                 className="ui form"
                 onSubmit={[Function]}
               >
@@ -5168,6 +5209,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         className="field"
                       >
                         <TextInput
+                          autoComplete="name"
                           error={false}
                           isValid={false}
                           label="Name"
@@ -5196,7 +5238,9 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete="name"
                                   key=".2"
+                                  name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
@@ -5220,6 +5264,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         className="field"
                       >
                         <PhoneInput
+                          autoComplete="tel"
                           error={false}
                           isValid={false}
                           label="Phone"
@@ -5261,6 +5306,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 className="ui left icon input"
                               >
                                 <input
+                                  autoComplete="tel"
                                   key=".2"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -5315,6 +5361,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                     className="field"
                   >
                     <TextInput
+                      autoComplete="email"
                       error={false}
                       isValid={false}
                       label="Email"
@@ -5343,7 +5390,9 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             className="ui input"
                           >
                             <input
+                              autoComplete="email"
                               key=".2"
+                              name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
@@ -7068,6 +7117,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         className="four wide field"
                       >
                         <TextInput
+                          autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
@@ -7097,7 +7147,9 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete={null}
                                   key=".2"
+                                  name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
@@ -7123,6 +7175,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                     className="field"
                   >
                     <TextArea
+                      autoComplete={null}
                       error={false}
                       isValid={false}
                       label="Comments"
@@ -7150,6 +7203,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             className="ui input"
                           >
                             <textarea
+                              autoComplete={null}
                               key=".2"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -7511,6 +7565,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               className="field"
                             >
                               <TextInput
+                                autoComplete="off"
                                 error={false}
                                 isValid={false}
                                 label="Security code"
@@ -7539,7 +7594,9 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                       className="ui input"
                                     >
                                       <input
+                                        autoComplete="off"
                                         key=".2"
+                                        name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
@@ -7644,6 +7701,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
 >
   <Form
     actionLink={null}
+    autoComplete="off"
     errorMessage=""
     headingText="Contact"
     onSubmit={[Function]}
@@ -7688,11 +7746,13 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
           >
             <Form
               as="form"
+              autoComplete="off"
               error={false}
               onSubmit={[Function]}
               success={false}
             >
               <form
+                autoComplete="off"
                 className="ui form"
                 onSubmit={[Function]}
               >
@@ -7710,6 +7770,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         className="field"
                       >
                         <TextInput
+                          autoComplete="name"
                           error={false}
                           isValid={false}
                           label="Name"
@@ -7738,7 +7799,9 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete="name"
                                   key=".2"
+                                  name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
@@ -7762,6 +7825,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         className="field"
                       >
                         <PhoneInput
+                          autoComplete="tel"
                           error={false}
                           isValid={false}
                           label="Phone"
@@ -7803,6 +7867,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 className="ui left icon input"
                               >
                                 <input
+                                  autoComplete="tel"
                                   key=".2"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -7857,6 +7922,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                     className="field"
                   >
                     <TextInput
+                      autoComplete="email"
                       error={false}
                       isValid={false}
                       label="Email"
@@ -7885,7 +7951,9 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             className="ui input"
                           >
                             <input
+                              autoComplete="email"
                               key=".2"
+                              name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
@@ -9610,6 +9678,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         className="four wide field"
                       >
                         <TextInput
+                          autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
@@ -9639,7 +9708,9 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete={null}
                                   key=".2"
+                                  name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
@@ -9665,6 +9736,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                     className="field"
                   >
                     <TextArea
+                      autoComplete={null}
                       error={false}
                       isValid={false}
                       label="Comments"
@@ -9692,6 +9764,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             className="ui input"
                           >
                             <textarea
+                              autoComplete={null}
                               key=".2"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -10012,6 +10085,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               className="field"
                             >
                               <TextInput
+                                autoComplete="off"
                                 error={false}
                                 isValid={false}
                                 label="Security code"
@@ -10040,7 +10114,9 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                       className="ui input"
                                     >
                                       <input
+                                        autoComplete="off"
                                         key=".2"
+                                        name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
@@ -10130,6 +10206,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
 >
   <Form
     actionLink={null}
+    autoComplete="off"
     errorMessage=""
     headingText="Contact"
     onSubmit={[Function]}
@@ -10174,11 +10251,13 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
           >
             <Form
               as="form"
+              autoComplete="off"
               error={false}
               onSubmit={[Function]}
               success={true}
             >
               <form
+                autoComplete="off"
                 className="ui success form"
                 onSubmit={[Function]}
               >
@@ -10196,6 +10275,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                         className="field"
                       >
                         <TextInput
+                          autoComplete="name"
                           error={false}
                           isValid={false}
                           label="Name"
@@ -10224,7 +10304,9 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete="name"
                                   key=".2"
+                                  name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
@@ -10248,6 +10330,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                         className="field"
                       >
                         <PhoneInput
+                          autoComplete="tel"
                           error={false}
                           isValid={false}
                           label="Phone"
@@ -10289,6 +10372,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                                 className="ui left icon input"
                               >
                                 <input
+                                  autoComplete="tel"
                                   key=".2"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -10343,6 +10427,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                     className="field"
                   >
                     <TextInput
+                      autoComplete="email"
                       error={false}
                       isValid={false}
                       label="Email"
@@ -10371,7 +10456,9 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                             className="ui input"
                           >
                             <input
+                              autoComplete="email"
                               key=".2"
+                              name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
@@ -12096,6 +12183,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                         className="four wide field"
                       >
                         <TextInput
+                          autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
@@ -12125,7 +12213,9 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete={null}
                                   key=".2"
+                                  name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
@@ -12151,6 +12241,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                     className="field"
                   >
                     <TextArea
+                      autoComplete={null}
                       error={false}
                       isValid={false}
                       label="Comments"
@@ -12178,6 +12269,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                             className="ui input"
                           >
                             <textarea
+                              autoComplete={null}
                               key=".2"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -12237,6 +12329,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                               className="field"
                             >
                               <TextInput
+                                autoComplete="off"
                                 error={false}
                                 isValid={false}
                                 label="Security code"
@@ -12265,7 +12358,9 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                                       className="ui input"
                                     >
                                       <input
+                                        autoComplete="off"
                                         key=".2"
+                                        name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
@@ -12375,6 +12470,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
 >
   <Form
     actionLink={null}
+    autoComplete="off"
     errorMessage=""
     headingText="Contact"
     onSubmit={[Function]}
@@ -12419,11 +12515,13 @@ exports[`<Contact /> should have the correct structure 1`] = `
           >
             <Form
               as="form"
+              autoComplete="off"
               error={false}
               onSubmit={[Function]}
               success={false}
             >
               <form
+                autoComplete="off"
                 className="ui form"
                 onSubmit={[Function]}
               >
@@ -12441,6 +12539,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         className="field"
                       >
                         <TextInput
+                          autoComplete="name"
                           error={false}
                           isValid={false}
                           label="Name"
@@ -12469,7 +12568,9 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete="name"
                                   key=".2"
+                                  name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
@@ -12493,6 +12594,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         className="field"
                       >
                         <PhoneInput
+                          autoComplete="tel"
                           error={false}
                           isValid={false}
                           label="Phone"
@@ -12534,6 +12636,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 className="ui left icon input"
                               >
                                 <input
+                                  autoComplete="tel"
                                   key=".2"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -12588,6 +12691,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                     className="field"
                   >
                     <TextInput
+                      autoComplete="email"
                       error={false}
                       isValid={false}
                       label="Email"
@@ -12616,7 +12720,9 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             className="ui input"
                           >
                             <input
+                              autoComplete="email"
                               key=".2"
+                              name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
@@ -14341,6 +14447,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         className="four wide field"
                       >
                         <TextInput
+                          autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
@@ -14370,7 +14477,9 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 className="ui input"
                               >
                                 <input
+                                  autoComplete={null}
                                   key=".2"
+                                  name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
@@ -14396,6 +14505,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                     className="field"
                   >
                     <TextArea
+                      autoComplete={null}
                       error={false}
                       isValid={false}
                       label="Comments"
@@ -14423,6 +14533,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             className="ui input"
                           >
                             <textarea
+                              autoComplete={null}
                               key=".2"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -14482,6 +14593,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               className="field"
                             >
                               <TextInput
+                                autoComplete="off"
                                 error={false}
                                 isValid={false}
                                 label="Security code"
@@ -14510,7 +14622,9 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                       className="ui input"
                                     >
                                       <input
+                                        autoComplete="off"
                                         key=".2"
+                                        name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
@@ -14612,6 +14726,7 @@ exports[`<Contact /> the \`CaptchaInput\` should have the right props 1`] = `
           className="field"
         >
           <TextInput
+            autoComplete="off"
             error={false}
             isValid={false}
             label="Security code"
@@ -14640,7 +14755,9 @@ exports[`<Contact /> the \`CaptchaInput\` should have the right props 1`] = `
                   className="ui input"
                 >
                   <input
+                    autoComplete="off"
                     key=".2"
+                    name="captcha"
                     onBlur={[Function]}
                     onChange={[Function]}
                     type="text"

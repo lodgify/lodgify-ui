@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextArea /> should render the right structure 1`] = `
+<TextArea
+  autoComplete={null}
+  error={false}
+  isValid={false}
+  label=""
+  name=""
+  onBlur={[Function]}
+  onChange={[Function]}
+>
+  <InputController
+    adaptOnChangeEvent={[Function]}
+    error={false}
+    icon={null}
+    inputOnChangeFunctionName="onChange"
+    isFocused={false}
+    isValid={false}
+    label=""
+    name=""
+    onChange={[Function]}
+  >
+    <Input
+      className=""
+      iconPosition={null}
+      type="text"
+    >
+      <div
+        className="ui input"
+      >
+        <textarea
+          autoComplete={null}
+          key=".2"
+          onBlur={[Function]}
+          onChange={[Function]}
+          rows="8"
+        />
+      </div>
+    </Input>
+  </InputController>
+</TextArea>
+`;

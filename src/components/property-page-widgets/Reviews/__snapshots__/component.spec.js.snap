@@ -343,6 +343,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                         content={
                           <Form
                             actionLink={null}
+                            autoComplete="off"
                             errorMessage=""
                             headingText={null}
                             onSubmit={[Function]}
@@ -358,6 +359,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               onChange={[Function]}
                             />
                             <TextInput
+                              autoComplete="name"
                               error={false}
                               isValid={false}
                               label="Your name"
@@ -368,6 +370,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                             />
                             <InputGroup>
                               <TextInput
+                                autoComplete="email"
                                 error={false}
                                 isValid={false}
                                 label="Your email"
@@ -377,6 +380,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 type="text"
                               />
                               <TextInput
+                                autoComplete="country-name"
                                 error={false}
                                 isValid={false}
                                 label="Your location"
@@ -439,6 +443,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               />
                             </InputGroup>
                             <TextInput
+                              autoComplete={null}
                               error={false}
                               isValid={false}
                               label="Title"
@@ -448,6 +453,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               type="text"
                             />
                             <TextArea
+                              autoComplete={null}
                               error={false}
                               isValid={false}
                               label="Comments"

@@ -34,7 +34,11 @@ export const getForgotPasswordFormMarkup = (
       successMessage={forgotPasswordSuccessMessage}
       validation={forgotPasswordValidation}
     >
-      <TextInput label={forgotPasswordEmailInputLabel} name="email" />
+      <TextInput
+        autoComplete="email"
+        label={forgotPasswordEmailInputLabel}
+        name="email"
+      />
     </Form>
   </Modal>
 );
