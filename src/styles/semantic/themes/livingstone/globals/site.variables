@@ -170,6 +170,12 @@
 @tinyBreakpoint: 400px;
 @tabletBreakpoint: 600px;
 @computerBreakpoint: 1000px;
+@widescreenBreakpoint: 1440px;
+
+@largestMobileBreakpoint: (@tabletBreakpoint - 1px);
+@lartgestTabletBreakpoint: (@computerBreakpoint - 1px);
+@largestComputerBreakpoint: (@widescreenBreakpoint - 1px);
+
 @smallestComputerBreakpoint: (@tabletBreakpoint + 1px);
 @smallestWidescreenBreakpoint: (@computerBreakpoint + 1px);
 @smallestWidescreen100pxOffsetBreakpoint: (@smallestWidescreenBreakpoint + 100px);
@@ -180,6 +186,11 @@
 @computerScreen: ~"only screen and (min-width: @{smallestComputerBreakpoint})";
 @smallestWidescreenScreen: ~"only screen and (min-width: @{smallestWidescreenBreakpoint})";
 @smallestWidescreen100pxOffsetScreen: ~"@{smallestWidescreenScreen} and (max-width: @{smallestWidescreen100pxOffsetBreakpoint})";
+
+@mobileViewport: ~"only screen and (max-width: @{largestMobileBreakpoint})";
+@tabletViewport: ~"only screen and (min-width: @{tabletBreakpoint}) and (max-width: @{lartgestTabletBreakpoint})";
+@computerViewport: ~"only screen and (min-width: @{computerBreakpoint}) and (max-width: @{largestComputerBreakpoint})";
+@widescreenViewport: ~"only screen and (min-width: @{widescreenBreakpoint})";
 
 /*-------------------
       Site Colors
