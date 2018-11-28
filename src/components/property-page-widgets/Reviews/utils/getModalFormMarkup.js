@@ -66,6 +66,7 @@ export const getModalFormMarkup = ({
     }
   >
     <Form
+      autoComplete="off"
       errorMessage={errorMessage}
       headingText={formHeadingText}
       onSubmit={onSubmit}
@@ -78,10 +79,14 @@ export const getModalFormMarkup = ({
         name="rating"
         ratingNumber={ratingAverage}
       />
-      <TextInput label={nameInputLabel} name="name" />
+      <TextInput autoComplete="name" label={nameInputLabel} name="name" />
       <InputGroup>
-        <TextInput label={emailInputLabel} name="email" />
-        <TextInput label={locationInputLabel} name="location" />
+        <TextInput autoComplete="email" label={emailInputLabel} name="email" />
+        <TextInput
+          autoComplete="country-name"
+          label={locationInputLabel}
+          name="location"
+        />
       </InputGroup>
       <InputGroup>
         <Dropdown label={monthInputLabel} name="month" options={monthOptions} />
