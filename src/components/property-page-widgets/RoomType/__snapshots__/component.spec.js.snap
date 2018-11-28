@@ -40,7 +40,6 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
       },
     ]
   }
-  imageUrl="🐱🐱"
   isUserOnMobile={false}
   locationName="Catania"
   name="The Cat House"
@@ -1183,7 +1182,6 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
       },
     ]
   }
-  imageUrl="🐱🐱"
   isUserOnMobile={true}
   locationName="Catania"
   name="The Cat House"
