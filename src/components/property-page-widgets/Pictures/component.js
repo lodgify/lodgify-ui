@@ -32,29 +32,35 @@ export const Component = ({
       <Heading>{headingText}</Heading>
     </GridColumn>
     <GridRow>
-      {getFirstSixItems(pictures).map(({ imageUrl, label }, index) => (
-        <GridColumn key={buildKeyFromStrings(label, index)}>
-          <ShowOnDesktop
-            parent={Thumbnail}
-            parentProps={{
-              imageUrl,
-              label,
-              size: 'huge',
-            }}
-          />
-          <ShowOnMobile
-            parent={Thumbnail}
-            parentProps={{
-              hasRoundedCorners: true,
-              imageUrl,
-              isSquare: true,
-              label,
-              size: 'large',
-            }}
-          />
-          <Divider size="small" />
-        </GridColumn>
-      ))}
+      {getFirstSixItems(pictures).map(
+        ({ imageUrl, imageSizes, imageSrcSet, label }, index) => (
+          <GridColumn key={buildKeyFromStrings(label, index)}>
+            <ShowOnDesktop
+              parent={Thumbnail}
+              parentProps={{
+                imageUrl,
+                imageSizes,
+                imageSrcSet,
+                label,
+                size: 'huge',
+              }}
+            />
+            <ShowOnMobile
+              parent={Thumbnail}
+              parentProps={{
+                hasRoundedCorners: true,
+                imageUrl,
+                imageSizes,
+                imageSrcSet,
+                isSquare: true,
+                label,
+                size: 'large',
+              }}
+            />
+            <Divider size="small" />
+          </GridColumn>
+        )
+      )}
     </GridRow>
     <GridColumn width={12}>
       <Gallery
