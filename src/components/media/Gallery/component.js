@@ -27,10 +27,10 @@ export const Component = ({ heading, images, trigger }) => (
       )}
       <Grid columns={2} stackable>
         <GridRow>
-          {images.map(({ label, ...otherImageProps }, index) => (
+          {images.map(({ label, url, ...otherProps }, index) => (
             <GridColumn key={buildKeyFromStrings(label, index)}>
               <Heading size="small">{label}</Heading>
-              <ResponsiveImage {...otherImageProps} />
+              <ResponsiveImage imageUrl={url} {...otherProps} />
               <Divider />
             </GridColumn>
           ))}
