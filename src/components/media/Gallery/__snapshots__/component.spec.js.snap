@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Gallery /> by default should render the right structure 1`] = `
+<Modal
+  isFullscreen={true}
+  size="tiny"
+  trigger="someTrigger"
+>
+  <HorizontalGutters>
+    <Divider
+      className=""
+      hasLine={false}
+      size="medium"
+    />
+    <Grid
+      areColumnsCentered={false}
+      columns={2}
+      stackable={true}
+    >
+      <GridRow
+        horizontalAlignContent="left"
+      >
+        <GridColumn
+          key="🔷0"
+          verticalAlignContent="top"
+          width={null}
+        >
+          <Heading
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            🔷
+          </Heading>
+          <ResponsiveImage
+            alternativeText="Image Widget"
+            hasRoundedCorners={false}
+            imageHeight={null}
+            imageNotFoundLabelText="Image not found!"
+            imageTitle="Image Title"
+            imageUrl="💻"
+            imageWidth={null}
+            isAvatar={false}
+            isCircular={false}
+            isFluid={false}
+            label={null}
+            sizes={null}
+            srcSet={null}
+          />
+          <Divider
+            className=""
+            hasLine={false}
+            size="medium"
+          />
+        </GridColumn>
+        <GridColumn
+          key="🔷1"
+          verticalAlignContent="top"
+          width={null}
+        >
+          <Heading
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            🔷
+          </Heading>
+          <ResponsiveImage
+            alternativeText="Image Widget"
+            hasRoundedCorners={false}
+            imageHeight={null}
+            imageNotFoundLabelText="Image not found!"
+            imageTitle="Image Title"
+            imageUrl="💻"
+            imageWidth={null}
+            isAvatar={false}
+            isCircular={false}
+            isFluid={false}
+            label={null}
+            sizes={null}
+            srcSet={null}
+          />
+          <Divider
+            className=""
+            hasLine={false}
+            size="medium"
+          />
+        </GridColumn>
+      </GridRow>
+    </Grid>
+    <Divider
+      className=""
+      hasLine={false}
+      size="large"
+    />
+  </HorizontalGutters>
+</Modal>
+`;
+
+exports[`<Gallery /> if \`props.heading\` is defined should render the right structure 1`] = `
+<Modal
+  isFullscreen={true}
+  size="tiny"
+  trigger="someTrigger"
+>
+  <HorizontalGutters>
+    <Divider
+      className=""
+      hasLine={false}
+      size="medium"
+    />
+    :hurtrealbad:
+    <Divider
+      className=""
+      hasLine={true}
+      size="medium"
+    />
+    <Grid
+      areColumnsCentered={false}
+      columns={2}
+      stackable={true}
+    >
+      <GridRow
+        horizontalAlignContent="left"
+      >
+        <GridColumn
+          key="🔷0"
+          verticalAlignContent="top"
+          width={null}
+        >
+          <Heading
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            🔷
+          </Heading>
+          <ResponsiveImage
+            alternativeText="Image Widget"
+            hasRoundedCorners={false}
+            imageHeight={null}
+            imageNotFoundLabelText="Image not found!"
+            imageTitle="Image Title"
+            imageUrl="💻"
+            imageWidth={null}
+            isAvatar={false}
+            isCircular={false}
+            isFluid={false}
+            label={null}
+            sizes={null}
+            srcSet={null}
+          />
+          <Divider
+            className=""
+            hasLine={false}
+            size="medium"
+          />
+        </GridColumn>
+        <GridColumn
+          key="🔷1"
+          verticalAlignContent="top"
+          width={null}
+        >
+          <Heading
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            🔷
+          </Heading>
+          <ResponsiveImage
+            alternativeText="Image Widget"
+            hasRoundedCorners={false}
+            imageHeight={null}
+            imageNotFoundLabelText="Image not found!"
+            imageTitle="Image Title"
+            imageUrl="💻"
+            imageWidth={null}
+            isAvatar={false}
+            isCircular={false}
+            isFluid={false}
+            label={null}
+            sizes={null}
+            srcSet={null}
+          />
+          <Divider
+            className=""
+            hasLine={false}
+            size="medium"
+          />
+        </GridColumn>
+      </GridRow>
+    </Grid>
+    <Divider
+      className=""
+      hasLine={false}
+      size="large"
+    />
+  </HorizontalGutters>
+</Modal>
+`;
