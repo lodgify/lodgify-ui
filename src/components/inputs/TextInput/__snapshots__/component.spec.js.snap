@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInput /> should render the right structure 1`] = `
+<TextInput
+  autoComplete={null}
+  error={false}
+  isValid={false}
+  label=""
+  name=""
+  onBlur={[Function]}
+  onChange={[Function]}
+  type="text"
+>
+  <InputController
+    adaptOnChangeEvent={[Function]}
+    error={false}
+    icon={null}
+    inputOnChangeFunctionName="onChange"
+    isFocused={false}
+    isValid={false}
+    label=""
+    name=""
+    onChange={[Function]}
+  >
+    <Input
+      className=""
+      iconPosition={null}
+      type="text"
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          autoComplete={null}
+          key=".2"
+          name=""
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+    </Input>
+  </InputController>
+</TextInput>
+`;
