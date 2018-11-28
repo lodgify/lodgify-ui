@@ -31,7 +31,7 @@ export class Component extends PureComponent {
   };
 
   render() {
-    const { error, isValid, label, name, onBlur } = this.props;
+    const { autoComplete, error, isValid, label, name, onBlur } = this.props;
     const { country, value } = this.state;
 
     return (
@@ -43,7 +43,12 @@ export class Component extends PureComponent {
         name={name}
         onChange={this.handleChange}
       >
-        <input onBlur={onBlur} type="tel" value={value} />
+        <input
+          autoComplete={autoComplete}
+          onBlur={onBlur}
+          type="tel"
+          value={value}
+        />
       </InputController>
     );
   }
@@ -52,6 +57,7 @@ export class Component extends PureComponent {
 Component.displayName = 'PhoneInput';
 
 Component.defaultProps = {
+  autoComplete: null,
   error: false,
   isValid: false,
   label: '',
@@ -61,6 +67,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** Can the phone input be completed automatically by the browser. See [MDN docs for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete). */
+  autoComplete: PropTypes.string,
   /** Is the phone input in an error state. A string is displayed as an error message. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   /** Is the phone input in a valid state. */
