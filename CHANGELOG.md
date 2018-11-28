@@ -1,3 +1,12 @@
+# [1.92.0](https://github.com/lodgify/lodgify-ui/compare/v1.91.0...v1.92.0) (2018-11-28)
+
+
+### Features
+
+* **Form:** expose props.autoComplete ([e69a966](https://github.com/lodgify/lodgify-ui/commit/e69a966))
+* **forms:** consume props.autoComplete on inputs and Form ([1272d57](https://github.com/lodgify/lodgify-ui/commit/1272d57))
+* **Inputs:** expose props.autoComplete ([0f2401d](https://github.com/lodgify/lodgify-ui/commit/0f2401d))
+
 # [1.91.0](https://github.com/lodgify/lodgify-ui/compare/v1.90.0...v1.91.0) (2018-11-27)
 
 
