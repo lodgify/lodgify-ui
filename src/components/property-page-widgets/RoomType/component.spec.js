@@ -18,7 +18,6 @@ const props = {
     },
   ],
   description: 'yayayay',
-  imageUrl: '🐱🐱',
   locationName: 'Catania',
   nightPrice: '$280',
   name: 'The Cat House',
