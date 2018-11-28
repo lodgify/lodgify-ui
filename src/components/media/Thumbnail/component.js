@@ -2,33 +2,39 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 
+import { ResponsiveImage } from 'media/ResponsiveImage';
 import { Paragraph } from 'typography/Paragraph';
-import { getBackgroundImageUrl } from 'utils/get-background-image-url';
 
 /**
  * A thumbnail displays a small image.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
-  alternativeText,
   className,
   hasRoundedCorners,
+  imageAlternativeText,
+  imageSizes,
+  imageSrcSet,
   imageUrl,
   isCircular,
   isSquare,
   label,
   size,
 }) => (
-  <div className={getClassNames('ui', 'thumbnail', className)}>
-    <div
-      aria-label={alternativeText}
-      className={getClassNames('ui', 'image', size, {
-        'is-circular': isCircular,
-        'is-square': isSquare,
-        'is-rounded': hasRoundedCorners,
-      })}
-      role="img"
-      style={{ backgroundImage: getBackgroundImageUrl(imageUrl) }}
+  <div
+    className={getClassNames('ui', 'thumbnail', size, className, {
+      'is-square': isSquare,
+      'is-circular': isCircular,
+    })}
+  >
+    <ResponsiveImage
+      alternativeText={imageAlternativeText}
+      hasRoundedCorners={hasRoundedCorners}
+      imageUrl={imageUrl}
+      isCircular={isCircular}
+      isSquare={isSquare}
+      sizes={imageSizes}
+      srcSet={imageSrcSet}
     />
     {!!label && <Paragraph>{label}</Paragraph>}
   </div>
@@ -37,9 +43,11 @@ export const Component = ({
 Component.displayName = 'Thumbnail';
 
 Component.defaultProps = {
-  alternativeText: 'Thumbnail element',
   className: '',
   hasRoundedCorners: false,
+  imageAlternativeText: undefined,
+  imageSizes: undefined,
+  imageSrcSet: undefined,
   isCircular: false,
   isSquare: false,
   label: null,
@@ -47,8 +55,6 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** Text to help visually impaired users understand the content of the image. */
-  alternativeText: PropTypes.string,
   /**
    * Custom class name.
    * Provided by `ShowOnMobile` and `ShowOnDesktop` so ignored in the styleguide.
@@ -57,7 +63,13 @@ Component.propTypes = {
   className: PropTypes.string,
   /** Is the thumbnail rounded on the corners */
   hasRoundedCorners: PropTypes.bool,
-  /** URL pointing to the image to render */
+  /** Text to help visually impaired users understand the content of the image. */
+  imageAlternativeText: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  imageSizes: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  imageSrcSet: PropTypes.string,
+  /** URL pointing to the image to render. */
   imageUrl: PropTypes.string.isRequired,
   /** Is the thumbnail circular */
   isCircular: PropTypes.bool,
