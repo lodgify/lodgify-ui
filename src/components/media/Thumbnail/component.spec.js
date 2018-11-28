@@ -31,7 +31,7 @@ describe('<Thumbnail />', () => {
 
   describe('if `props.isSquare` is true', () => {
     it('should render the right structure', () => {
-      const actual = getThumbnail({ isCircular: true });
+      const actual = getThumbnail({ isSquare: true });
 
       expect(actual).toMatchSnapshot();
     });
