@@ -9,7 +9,7 @@ import { Heading } from 'typography/Heading';
 import { Hero } from 'collections/Hero';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { SearchBar } from 'general-widgets/SearchBar';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOn } from 'layout/ShowOn';
 
 /**
  * A homepage hero displays a hero with heading and a search bar on desktop screens.
@@ -62,7 +62,7 @@ export const Component = ({
           {headingText}
         </Heading>
       </HorizontalGutters>
-      <ShowOnDesktop parent={HorizontalGutters}>
+      <ShowOn computer parent={HorizontalGutters} tablet widescreen>
         <Grid areColumnsCentered>
           <GridRow horizontalAlignContent="center">
             <SearchBar
@@ -76,7 +76,7 @@ export const Component = ({
             />
           </GridRow>
         </Grid>
-      </ShowOnDesktop>
+      </ShowOn>
     </FlexContainer>
   </Hero>
 );
