@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShowOn /> if all devices are set as false should only return \`hide-on-all-devices\` as default class for the wrapper 1`] = `
+<ShowOn
+  computer={false}
+  mobile={false}
+  parent="section"
+  parentProps={
+    Object {
+      "className": "",
+    }
+  }
+  tablet={false}
+  widescreen={false}
+>
+  <section
+    className="hide-on-all-devices"
+  >
+    div
+  </section>
+</ShowOn>
+`;
+
+exports[`<ShowOn /> it should render the right structure 1`] = `
+<ShowOn
+  computer={true}
+  mobile={true}
+  parent="section"
+  parentProps={
+    Object {
+      "className": "",
+    }
+  }
+  tablet={true}
+  widescreen={true}
+>
+  <section
+    className="hide-on-all-devices show-on-mobile show-on-tablet show-on-computer show-on-widescreen"
+  >
+    div
+  </section>
+</ShowOn>
+`;
