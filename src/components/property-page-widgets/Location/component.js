@@ -9,10 +9,10 @@ import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { GoogleMap } from 'elements/GoogleMap';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
+import { GridRow } from 'layout/GridRow';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOn } from 'layout/ShowOn';
 import { Subheading } from 'typography/Subheading';
 import { withResponsive } from 'utils/with-responsive';
 
@@ -41,23 +41,24 @@ const Component = ({
       <Subheading>{locationSummary}</Subheading>
     </GridColumn>
     {!!locationDescription && (
-      <GridColumn computer={6} tablet={12}>
-        {getParagraphsFromStrings(locationDescription).map(
-          (paragraphText, index) => (
-            <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-              {paragraphText}
-            </Paragraph>
-          )
-        )}
-      </GridColumn>
+      <GridRow>
+        <GridColumn computer={12} tablet={12}>
+          {getParagraphsFromStrings(locationDescription).map(
+            (paragraphText, index) => (
+              <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
+                {paragraphText}
+              </Paragraph>
+            )
+          )}
+        </GridColumn>
+      </GridRow>
     )}
     {size(transportOptions) > 0 && (
-      <ShowOnDesktop
-        parent={GridColumn}
-        parentProps={{ computer: 6, tablet: 12 }}
-      >
-        {getTransportOptionsMarkup(transportOptions)}
-      </ShowOnDesktop>
+      <ShowOn computers parent={GridRow} tablet widescreen>
+        <GridColumn computer={12} tablet={12}>
+          {getTransportOptionsMarkup(transportOptions)}
+        </GridColumn>
+      </ShowOn>
     )}
     <GridColumn width={12}>
       <GoogleMap
@@ -70,10 +71,10 @@ const Component = ({
       />
     </GridColumn>
     {size(transportOptions) > 0 && (
-      <ShowOnMobile parent={GridColumn} parentProps={{ width: 12 }}>
+      <ShowOn mobile parent={GridColumn} parentProps={{ width: 12 }}>
         <Divider />
         {getTransportOptionsMarkup(transportOptions)}
-      </ShowOnMobile>
+      </ShowOn>
     )}
   </Grid>
 );
