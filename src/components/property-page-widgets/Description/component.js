@@ -13,8 +13,7 @@ import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOn } from 'layout/ShowOn';
 
 import { formatParagraphWithModal } from './utils/formatParagraphWithModal';
 import { isDescriptionDisplayingWithEllipsis } from './utils/isDescriptionDisplayingWithEllipsis';
@@ -38,7 +37,13 @@ export const Component = ({
       <Heading size="large">{propertyName}</Heading>
     </GridColumn>
     <GridColumn width={12}>
-      <ShowOnDesktop parent={List} parentProps={{ horizontal: true }}>
+      <ShowOn
+        computer
+        parent={List}
+        parentProps={{ horizontal: true }}
+        tablet
+        widescreen
+      >
         {getFirstFourItems(propertyMainCharacteristics).map(
           ({ iconName, text }, index) => (
             <List.Item key={buildKeyFromStrings(text, index)}>
@@ -46,8 +51,8 @@ export const Component = ({
             </List.Item>
           )
         )}
-      </ShowOnDesktop>
-      <ShowOnMobile parent={Grid} parentProps={{ columns: 1 }}>
+      </ShowOn>
+      <ShowOn mobile parent={Grid} parentProps={{ columns: 1 }}>
         {getFirstFourItems(propertyMainCharacteristics).map(
           ({ iconName, text }, index) => (
             <GridColumn
@@ -59,7 +64,7 @@ export const Component = ({
             </GridColumn>
           )
         )}
-      </ShowOnMobile>
+      </ShowOn>
     </GridColumn>
     <GridColumn width={12}>
       {getParagraphsFromStrings(descriptionText).map(
