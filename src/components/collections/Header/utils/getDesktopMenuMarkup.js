@@ -4,7 +4,7 @@ import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Button } from 'elements/Button';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOn } from 'layout/ShowOn';
 import { Submenu } from 'elements/Submenu';
 
 import { getSubmenuPointing } from './getSubmenuPointing';
@@ -24,35 +24,37 @@ export const getDesktopMenuMarkup = ({
   primaryCTA,
   /* eslint-enable react/prop-types */
 }) => (
-  <ShowOnDesktop parent={Menu.Menu} parentProps={{ position: 'right' }}>
-    {navigationItems.map(({ subItems, text, href }, index) =>
-      size(subItems) > 0 ? (
-        <Submenu
-          isMenuItem
-          isSelectedDisabled
-          isSimple
-          isTriggerUnderlined={index === activeNavigationItemIndex}
-          isTriggeredOnHover
-          items={subItems}
-          key={buildKeyFromStrings(text, index)}
-          pointing={getSubmenuPointing(
-            index,
-            size(navigationItems),
-            !!primaryCTA
-          )}
-        >
-          {text}
-        </Submenu>
-      ) : (
-        getLinkMarkup(text, href, index, activeNavigationItemIndex)
-      )
-    )}
-    {primaryCTA && (
-      <Menu.Item className="no-underline" link>
-        <Button isRounded onClick={primaryCTA.onClick}>
-          {primaryCTA.text}
-        </Button>
-      </Menu.Item>
-    )}
-  </ShowOnDesktop>
+  <ShowOn computer parent="div" tablet widescreen>
+    <Menu.Menu position="right">
+      {navigationItems.map(({ subItems, text, href }, index) =>
+        size(subItems) > 0 ? (
+          <Submenu
+            isMenuItem
+            isSelectedDisabled
+            isSimple
+            isTriggerUnderlined={index === activeNavigationItemIndex}
+            isTriggeredOnHover
+            items={subItems}
+            key={buildKeyFromStrings(text, index)}
+            pointing={getSubmenuPointing(
+              index,
+              size(navigationItems),
+              !!primaryCTA
+            )}
+          >
+            {text}
+          </Submenu>
+        ) : (
+          getLinkMarkup(text, href, index, activeNavigationItemIndex)
+        )
+      )}
+      {primaryCTA && (
+        <Menu.Item className="no-underline" link>
+          <Button isRounded onClick={primaryCTA.onClick}>
+            {primaryCTA.text}
+          </Button>
+        </Menu.Item>
+      )}
+    </Menu.Menu>
+  </ShowOn>
 );

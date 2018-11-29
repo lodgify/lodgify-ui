@@ -6,7 +6,7 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { SearchBar } from 'general-widgets/SearchBar';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOn } from 'layout/ShowOn';
 
 import { hasSearchBarOptions } from './hasSearchBarOptions';
 import { getLogoMarkup } from './getLogoMarkup';
@@ -42,56 +42,61 @@ export const getMobileMenuMarkup = ({
   searchBarSearchButton,
   /* eslint-enable react/prop-types */
 }) => (
-  <ShowOnMobile parent={Menu.Menu} parentProps={{ position: 'right' }}>
-    {hasSearchBarOptions(searchBarGuestsOptions, searchBarLocationOptions) && (
+  <ShowOn mobile parent="div">
+    <Menu.Menu position="right">
+      {hasSearchBarOptions(
+        searchBarGuestsOptions,
+        searchBarLocationOptions
+      ) && (
+        <Menu.Item>
+          <SearchBar
+            getIsDayBlocked={searchBarGetIsDayBlocked}
+            guestsOptions={searchBarGuestsOptions}
+            isDisplayedAsModal
+            locationOptions={searchBarLocationOptions}
+            modalHeadingText={searchBarModalHeadingText}
+            onChangeInput={searchBarOnChangeInput}
+            onSubmit={searchBarOnSubmit}
+            searchButton={searchBarSearchButton}
+          />
+        </Menu.Item>
+      )}
       <Menu.Item>
-        <SearchBar
-          getIsDayBlocked={searchBarGetIsDayBlocked}
-          guestsOptions={searchBarGuestsOptions}
-          isDisplayedAsModal
-          locationOptions={searchBarLocationOptions}
-          modalHeadingText={searchBarModalHeadingText}
-          onChangeInput={searchBarOnChangeInput}
-          onSubmit={searchBarOnSubmit}
-          searchButton={searchBarSearchButton}
-        />
+        <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
+          <Menu text vertical>
+            {getLogoMarkup(logoSrc, logoText)}
+            {navigationItems.map(({ subItems, text, href }, index) =>
+              size(subItems) ? (
+                <Accordion
+                  as={Menu.Item}
+                  key={buildKeyFromStrings(text, index)}
+                  panels={[
+                    {
+                      title: {
+                        content: text,
+                        key: buildKeyFromStrings(text, index),
+                      },
+                      content: {
+                        content: subItems.map(({ text, href }, index) =>
+                          getLinkMarkup(
+                            text,
+                            href,
+                            index,
+                            activeNavigationItemIndex
+                          )
+                        ),
+                        key: buildKeyFromStrings(index, text),
+                      },
+                    },
+                  ]}
+                />
+              ) : (
+                getLinkMarkup(text, href, index, activeNavigationItemIndex)
+              )
+            )}
+          </Menu>
+        </Modal>
       </Menu.Item>
-    )}
-    <Menu.Item>
-      <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
-        <Menu text vertical>
-          {getLogoMarkup(logoSrc, logoText)}
-          {navigationItems.map(({ subItems, text, href }, index) =>
-            size(subItems) ? (
-              <Accordion
-                as={Menu.Item}
-                key={buildKeyFromStrings(text, index)}
-                panels={[
-                  {
-                    title: {
-                      content: text,
-                      key: buildKeyFromStrings(text, index),
-                    },
-                    content: {
-                      content: subItems.map(({ text, href }, index) =>
-                        getLinkMarkup(
-                          text,
-                          href,
-                          index,
-                          activeNavigationItemIndex
-                        )
-                      ),
-                      key: buildKeyFromStrings(index, text),
-                    },
-                  },
-                ]}
-              />
-            ) : (
-              getLinkMarkup(text, href, index, activeNavigationItemIndex)
-            )
-          )}
-        </Menu>
-      </Modal>
-    </Menu.Item>
-  </ShowOnMobile>
+    </Menu.Menu>
+  </ShowOn>
 );
