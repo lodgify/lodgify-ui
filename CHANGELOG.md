@@ -1,3 +1,13 @@
+# [1.93.0](https://github.com/lodgify/lodgify-ui/compare/v1.92.0...v1.93.0) (2018-11-29)
+
+
+### Features
+
+* **ShowOn:** implement component ([50cd73d](https://github.com/lodgify/lodgify-ui/commit/50cd73d))
+* **ShowOn:** implement component unit test and snap ([6b6e94b](https://github.com/lodgify/lodgify-ui/commit/6b6e94b))
+* **site.overrides:** add media queries for ShowOn component ([da42599](https://github.com/lodgify/lodgify-ui/commit/da42599))
+* **site.variables:** add breakpoints and responsive viewports ([077e3cd](https://github.com/lodgify/lodgify-ui/commit/077e3cd))
+
 # [1.92.0](https://github.com/lodgify/lodgify-ui/compare/v1.91.0...v1.92.0) (2018-11-28)
 
 
