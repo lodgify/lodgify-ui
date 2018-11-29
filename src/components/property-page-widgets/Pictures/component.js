@@ -7,8 +7,7 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOn } from 'layout/ShowOn';
 import { Divider } from 'elements/Divider';
 import { Thumbnail } from 'media/Thumbnail';
 import { Heading } from 'typography/Heading';
@@ -35,28 +34,26 @@ export const Component = ({
       {getFirstSixItems(pictures).map(
         ({ imageUrl, imageSizes, imageSrcSet, label }, index) => (
           <GridColumn key={buildKeyFromStrings(label, index)}>
-            <ShowOnDesktop
-              parent={Thumbnail}
-              parentProps={{
-                imageUrl,
-                imageSizes,
-                imageSrcSet,
-                label,
-                size: 'huge',
-              }}
-            />
-            <ShowOnMobile
-              parent={Thumbnail}
-              parentProps={{
-                hasRoundedCorners: true,
-                imageUrl,
-                imageSizes,
-                imageSrcSet,
-                isSquare: true,
-                label,
-                size: 'large',
-              }}
-            />
+            <ShowOn computer parent="div" tablet widescreen>
+              <Thumbnail
+                imageSizes={imageSizes}
+                imageSrcSet={imageSrcSet}
+                imageUrl={imageUrl}
+                label={label}
+                size="huge"
+              />
+            </ShowOn>
+            <ShowOn mobile parent="div">
+              <Thumbnail
+                hasRoundedCorners
+                imageSizes={imageSizes}
+                imageSrcSet={imageSrcSet}
+                imageUrl={imageUrl}
+                isSquare
+                label={label}
+                size="huge"
+              />
+            </ShowOn>
             <Divider size="small" />
           </GridColumn>
         )
