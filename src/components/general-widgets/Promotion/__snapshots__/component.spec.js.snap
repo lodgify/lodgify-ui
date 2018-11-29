@@ -131,52 +131,55 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                   <div
                                     className="left aligned top aligned row"
                                   >
-                                    <ShowOnDesktop
-                                      parent={[Function]}
-                                      parentProps={
-                                        Object {
-                                          "textAlign": "left",
-                                          "width": 12,
-                                        }
-                                      }
+                                    <ShowOn
+                                      computer={true}
+                                      mobile={false}
+                                      parent="div"
+                                      parentProps={Object {}}
+                                      tablet={true}
+                                      widescreen={true}
                                     >
-                                      <GridColumn
-                                        className="show-on-desktop"
-                                        textAlign="left"
-                                        verticalAlignContent="top"
-                                        width={12}
+                                      <div
+                                        className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
                                       >
                                         <GridColumn
-                                          className="show-on-desktop"
                                           textAlign="left"
-                                          verticalAlign="top"
+                                          verticalAlignContent="top"
                                           width={12}
                                         >
-                                          <div
-                                            className="left aligned top aligned twelve wide column show-on-desktop"
+                                          <GridColumn
+                                            textAlign="left"
+                                            verticalAlign="top"
+                                            width={12}
                                           >
-                                            <Heading
-                                              isColorInverted={false}
-                                              size="medium"
-                                              textAlign={null}
+                                            <div
+                                              className="left aligned top aligned twelve wide column"
                                             >
-                                              <Header
-                                                as="h3"
-                                                inverted={false}
+                                              <Heading
+                                                isColorInverted={false}
+                                                size="medium"
                                                 textAlign={null}
                                               >
-                                                <h3
-                                                  className="ui header"
+                                                <Header
+                                                  as="h3"
+                                                  inverted={false}
+                                                  textAlign={null}
                                                 >
-                                                  Hello World!
-                                                </h3>
-                                              </Header>
-                                            </Heading>
-                                          </div>
+                                                  <h3
+                                                    className="ui header"
+                                                  >
+                                                    Hello World!
+                                                  </h3>
+                                                </Header>
+                                              </Heading>
+                                            </div>
+                                          </GridColumn>
                                         </GridColumn>
-                                      </GridColumn>
-                                    </ShowOnDesktop>
-                                    <ShowOnMobile
+                                      </div>
+                                    </ShowOn>
+                                    <ShowOn
+                                      computer={false}
+                                      mobile={true}
                                       parent={[Function]}
                                       parentProps={
                                         Object {
@@ -184,21 +187,23 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                           "width": 12,
                                         }
                                       }
+                                      tablet={false}
+                                      widescreen={false}
                                     >
                                       <GridColumn
-                                        className="show-on-mobile"
+                                        className="hide-on-all-devices show-on-mobile"
                                         textAlign="center"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
-                                          className="show-on-mobile"
+                                          className="hide-on-all-devices show-on-mobile"
                                           textAlign="center"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
-                                            className="center aligned top aligned twelve wide column show-on-mobile"
+                                            className="center aligned top aligned twelve wide column hide-on-all-devices show-on-mobile"
                                           >
                                             <Heading
                                               isColorInverted={false}
@@ -220,28 +225,32 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                           </div>
                                         </GridColumn>
                                       </GridColumn>
-                                    </ShowOnMobile>
+                                    </ShowOn>
                                   </div>
                                 </GridRow>
                               </GridRow>
-                              <ShowOnDesktop
+                              <ShowOn
+                                computer={true}
+                                mobile={false}
                                 parent={[Function]}
                                 parentProps={
                                   Object {
                                     "className": "book-now-button-container",
                                   }
                                 }
+                                tablet={true}
+                                widescreen={true}
                               >
                                 <GridRow
-                                  className="book-now-button-container show-on-desktop"
+                                  className="book-now-button-container hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
                                   horizontalAlignContent="left"
                                 >
                                   <GridRow
-                                    className="book-now-button-container show-on-desktop"
+                                    className="book-now-button-container hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
                                     textAlign="left"
                                   >
                                     <div
-                                      className="left aligned row book-now-button-container show-on-desktop"
+                                      className="left aligned row book-now-button-container hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
                                     >
                                       <GridColumn
                                         textAlign="center"
@@ -295,27 +304,31 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                     </div>
                                   </GridRow>
                                 </GridRow>
-                              </ShowOnDesktop>
-                              <ShowOnMobile
+                              </ShowOn>
+                              <ShowOn
+                                computer={false}
+                                mobile={true}
                                 parent={[Function]}
                                 parentProps={
                                   Object {
                                     "verticalAlign": "top",
                                   }
                                 }
+                                tablet={false}
+                                widescreen={false}
                               >
                                 <GridRow
-                                  className="show-on-mobile"
+                                  className="hide-on-all-devices show-on-mobile"
                                   horizontalAlignContent="left"
                                   verticalAlign="top"
                                 >
                                   <GridRow
-                                    className="show-on-mobile"
+                                    className="hide-on-all-devices show-on-mobile"
                                     textAlign="left"
                                     verticalAlign="top"
                                   >
                                     <div
-                                      className="left aligned top aligned row show-on-mobile"
+                                      className="left aligned top aligned row hide-on-all-devices show-on-mobile"
                                     >
                                       <GridColumn
                                         floated="right"
@@ -383,27 +396,32 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                     </div>
                                   </GridRow>
                                 </GridRow>
-                              </ShowOnMobile>
-                              <ShowOnDesktop
+                              </ShowOn>
+                              <ShowOn
+                                computer={true}
+                                desktop={true}
+                                mobile={false}
                                 parent={[Function]}
                                 parentProps={
                                   Object {
                                     "verticalAlign": "bottom",
                                   }
                                 }
+                                tablet={true}
+                                widescreen={false}
                               >
                                 <GridRow
-                                  className="show-on-desktop"
+                                  className="hide-on-all-devices show-on-tablet show-on-computer"
                                   horizontalAlignContent="left"
                                   verticalAlign="bottom"
                                 >
                                   <GridRow
-                                    className="show-on-desktop"
+                                    className="hide-on-all-devices show-on-tablet show-on-computer"
                                     textAlign="left"
                                     verticalAlign="bottom"
                                   >
                                     <div
-                                      className="left aligned bottom aligned row show-on-desktop"
+                                      className="left aligned bottom aligned row hide-on-all-devices show-on-tablet show-on-computer"
                                     >
                                       <GridColumn
                                         floated="right"
@@ -471,7 +489,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                     </div>
                                   </GridRow>
                                 </GridRow>
-                              </ShowOnDesktop>
+                              </ShowOn>
                             </div>
                           </Grid>
                         </Grid>
