@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Button } from 'elements/Button';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOn } from 'layout/ShowOn';
 import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
 
 import { SearchBar } from '../../general-widgets/SearchBar/index';
@@ -32,7 +31,7 @@ export const Component = ({
 
   return (
     <div className="property-page-searchbar">
-      <ShowOnDesktop>
+      <ShowOn computer widescreen>
         <SearchBar
           getIsDayBlocked={getIsDayBlocked}
           guestsOptions={guestsOptions}
@@ -45,8 +44,8 @@ export const Component = ({
             ...summaryProps,
           })}
         />
-      </ShowOnDesktop>
-      <ShowOnMobile>
+      </ShowOn>
+      <ShowOn mobile tablet>
         <SearchBar
           guestsOptions={guestsOptions}
           isDisplayedAsModal
@@ -62,7 +61,7 @@ export const Component = ({
             ...summaryProps,
           })}
         />
-      </ShowOnMobile>
+      </ShowOn>
     </div>
   );
 };
