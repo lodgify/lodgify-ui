@@ -346,6 +346,7 @@ blockquote.ui.quote .row {
 
 .ui.thumbnail {
   height: @thumbnailHeight;
+  max-width: 100%;
 
   figure.responsive-image {
     width: inherit;
@@ -452,13 +453,14 @@ blockquote.ui.quote .row {
 
 .hide-on-all-devices {
   display: none !important;
+  width: 100%;
 }
 
 /* Shown on mobileViewport */
 @media @mobileViewport {
 
   .show-on-mobile {
-    display: block !important;
+    display: flex !important;
   }
 }
 
@@ -466,7 +468,7 @@ blockquote.ui.quote .row {
 @media @tabletViewport {
 
   .show-on-tablet {
-    display: block !important;
+    display: flex !important;
   }
 }
 
@@ -474,7 +476,7 @@ blockquote.ui.quote .row {
 @media @computerViewport {
 
   .show-on-computer {
-    display: block !important;
+    display: flex !important;
   }
 }
 
@@ -482,7 +484,7 @@ blockquote.ui.quote .row {
 @media @widescreenViewport {
 
   .show-on-widescreen {
-    display: block !important;
+    display: flex !important;
   }
 }
 
