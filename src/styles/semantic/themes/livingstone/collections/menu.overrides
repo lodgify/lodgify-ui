@@ -89,6 +89,12 @@
      Types
 ---------------*/
 
+  /* Horizontal */
+  &:not(.vertical) .right.menu {
+    height: 100%;
+    justify-content: flex-end;
+  }
+
   /* Vertical */
   .ui.modal &.vertical {
     width: @verticalMenuInModalWidth;
