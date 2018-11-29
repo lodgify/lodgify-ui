@@ -11,8 +11,7 @@ import { Dropdown } from 'inputs/Dropdown';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOn } from 'layout/ShowOn';
 import { Table } from 'collections/Table';
 
 import { getMobileRateRowMarkup } from './utils/getMobileRateRowMarkup';
@@ -41,37 +40,41 @@ export const Component = ({
           onChangeRoomType,
           roomTypeInputLabel
         )}
-      <ShowOnMobile>
-        <Dropdown onChange={onChangeCurrency} options={currencyOptions} />
-        {rateCategories.map((rateCategory, rateCategoryIndex) => (
-          <Card
-            fluid
-            key={buildKeyFromStrings(rateCategory.name, rateCategoryIndex)}
-          >
-            <Card.Content>
-              <Grid padded>
-                <GridRow>
-                  <GridColumn width={12}>
-                    {getRateCategoryHeadingMarkup(
-                      rateCategory,
-                      costPerExtraGuestLabel
+      <ShowOn mobile>
+        <Grid>
+          <GridColumn>
+            <Dropdown onChange={onChangeCurrency} options={currencyOptions} />
+            {rateCategories.map((rateCategory, rateCategoryIndex) => (
+              <Card
+                fluid
+                key={buildKeyFromStrings(rateCategory.name, rateCategoryIndex)}
+              >
+                <Card.Content>
+                  <Grid padded>
+                    <GridRow>
+                      <GridColumn width={12}>
+                        {getRateCategoryHeadingMarkup(
+                          rateCategory,
+                          costPerExtraGuestLabel
+                        )}
+                      </GridColumn>
+                    </GridRow>
+                    {rateCategory.rates.map((rate, rateIndex) =>
+                      getMobileRateRowMarkup(
+                        rate,
+                        rateHeadings[rateIndex],
+                        buildKeyFromStrings(rateCategory.name, rate, rateIndex)
+                      )
                     )}
-                  </GridColumn>
-                </GridRow>
-                {rateCategory.rates.map((rate, rateIndex) =>
-                  getMobileRateRowMarkup(
-                    rate,
-                    rateHeadings[rateIndex],
-                    buildKeyFromStrings(rateCategory.name, rate, rateIndex)
-                  )
-                )}
-              </Grid>
-            </Card.Content>
-          </Card>
-        ))}
-      </ShowOnMobile>
+                  </Grid>
+                </Card.Content>
+              </Card>
+            ))}
+          </GridColumn>
+        </Grid>
+      </ShowOn>
     </Grid>
-    <ShowOnDesktop>
+    <ShowOn computer tablet widescreen>
       <Table
         tableBody={rateCategories.map(rateCategory => [
           getRateCategoryHeadingMarkup(rateCategory, costPerExtraGuestLabel),
@@ -82,7 +85,7 @@ export const Component = ({
           ...rateHeadings,
         ]}
       />
-    </ShowOnDesktop>
+    </ShowOn>
   </Fragment>
 );
 
