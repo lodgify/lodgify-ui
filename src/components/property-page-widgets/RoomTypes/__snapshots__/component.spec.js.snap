@@ -1407,26 +1407,30 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                     </span>
                                                   </div>
                                                 </CardDescription>
-                                                <ShowOnMobile
+                                                <ShowOn
+                                                  computer={false}
+                                                  mobile={true}
                                                   parent={[Function]}
                                                   parentProps={Object {}}
+                                                  tablet={false}
+                                                  widescreen={false}
                                                 >
                                                   <Divider
-                                                    className="show-on-mobile"
+                                                    className="hide-on-all-devices show-on-mobile"
                                                     hasLine={false}
                                                     size="medium"
                                                   >
                                                     <Divider
-                                                      className="show-on-mobile"
+                                                      className="hide-on-all-devices show-on-mobile"
                                                       hidden={true}
                                                       section={false}
                                                     >
                                                       <div
-                                                        className="ui hidden divider show-on-mobile"
+                                                        className="ui hidden divider hide-on-all-devices show-on-mobile"
                                                       />
                                                     </Divider>
                                                   </Divider>
-                                                </ShowOnMobile>
+                                                </ShowOn>
                                               </div>
                                             </GridColumn>
                                           </GridColumn>
@@ -2698,26 +2702,30 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                     </span>
                                                   </div>
                                                 </CardDescription>
-                                                <ShowOnMobile
+                                                <ShowOn
+                                                  computer={false}
+                                                  mobile={true}
                                                   parent={[Function]}
                                                   parentProps={Object {}}
+                                                  tablet={false}
+                                                  widescreen={false}
                                                 >
                                                   <Divider
-                                                    className="show-on-mobile"
+                                                    className="hide-on-all-devices show-on-mobile"
                                                     hasLine={false}
                                                     size="medium"
                                                   >
                                                     <Divider
-                                                      className="show-on-mobile"
+                                                      className="hide-on-all-devices show-on-mobile"
                                                       hidden={true}
                                                       section={false}
                                                     >
                                                       <div
-                                                        className="ui hidden divider show-on-mobile"
+                                                        className="ui hidden divider hide-on-all-devices show-on-mobile"
                                                       />
                                                     </Divider>
                                                   </Divider>
-                                                </ShowOnMobile>
+                                                </ShowOn>
                                               </div>
                                             </GridColumn>
                                           </GridColumn>
