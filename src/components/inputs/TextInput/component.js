@@ -8,6 +8,7 @@ import { InputController } from '../InputController';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  autoComplete,
   error,
   isValid,
   label,
@@ -23,13 +24,19 @@ export const Component = ({
     name={name}
     onChange={onChange}
   >
-    <input onBlur={onBlur} type={type} />
+    <input
+      autoComplete={autoComplete}
+      name={name}
+      onBlur={onBlur}
+      type={type}
+    />
   </InputController>
 );
 
 Component.displayName = 'TextInput';
 
 Component.defaultProps = {
+  autoComplete: null,
   error: false,
   isValid: false,
   label: '',
@@ -40,6 +47,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** Can the text input be completed automatically by the browser. See [MDN docs for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete). */
+  autoComplete: PropTypes.string,
   /** Is the text input in an error state. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   /** Is the text input in a valid state. */

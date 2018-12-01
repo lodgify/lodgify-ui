@@ -6,7 +6,7 @@ exports[`<FeaturedProperty /> should render the right structure 1`] = `
   href="/"
 >
   <ResponsiveImage
-    alternativeText=""
+    alternativeText="Image Widget"
     hasRoundedCorners={false}
     imageHeight={null}
     imageNotFoundLabelText="Image not found!"
@@ -17,7 +17,8 @@ exports[`<FeaturedProperty /> should render the right structure 1`] = `
     isCircular={false}
     isFluid={true}
     label={null}
-    sources={Array []}
+    sizes={null}
+    srcSet={null}
   />
   <CardContent>
     <CardMeta>

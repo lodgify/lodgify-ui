@@ -8,22 +8,27 @@ exports[`<Pictures /> should render the correct structure 1`] = `
     Array [
       Object {
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Entrance",
         "label": "Entrance",
       },
       Object {
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Kitchen",
         "label": "Kitchen",
       },
       Object {
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Living room",
         "label": "Living room",
       },
       Object {
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Studio",
         "label": "Studio",
       },
       Object {
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Garden room",
         "label": "Garden room",
       },
     ]
@@ -98,6 +103,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parent={[Function]}
                       parentProps={
                         Object {
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "label": "Entrance",
                           "size": "huge",
@@ -105,7 +112,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-desktop"
                         hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -115,18 +121,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail huge show-on-desktop"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image huge"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={false}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -145,6 +184,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parentProps={
                         Object {
                           "hasRoundedCorners": true,
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "isSquare": true,
                           "label": "Entrance",
@@ -153,7 +194,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -163,18 +203,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail large show-on-mobile is-square"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image large is-square is-rounded"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={true}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image is-rounded"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -222,6 +295,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parent={[Function]}
                       parentProps={
                         Object {
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "label": "Kitchen",
                           "size": "huge",
@@ -229,7 +304,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-desktop"
                         hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -239,18 +313,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail huge show-on-desktop"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image huge"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={false}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -269,6 +376,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parentProps={
                         Object {
                           "hasRoundedCorners": true,
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "isSquare": true,
                           "label": "Kitchen",
@@ -277,7 +386,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -287,18 +395,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail large show-on-mobile is-square"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image large is-square is-rounded"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={true}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image is-rounded"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -346,6 +487,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parent={[Function]}
                       parentProps={
                         Object {
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "label": "Living room",
                           "size": "huge",
@@ -353,7 +496,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-desktop"
                         hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -363,18 +505,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail huge show-on-desktop"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image huge"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={false}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -393,6 +568,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parentProps={
                         Object {
                           "hasRoundedCorners": true,
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "isSquare": true,
                           "label": "Living room",
@@ -401,7 +578,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -411,18 +587,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail large show-on-mobile is-square"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image large is-square is-rounded"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={true}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image is-rounded"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -470,6 +679,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parent={[Function]}
                       parentProps={
                         Object {
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "label": "Studio",
                           "size": "huge",
@@ -477,7 +688,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-desktop"
                         hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -487,18 +697,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail huge show-on-desktop"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image huge"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={false}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -517,6 +760,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parentProps={
                         Object {
                           "hasRoundedCorners": true,
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "isSquare": true,
                           "label": "Studio",
@@ -525,7 +770,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -535,18 +779,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail large show-on-mobile is-square"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image large is-square is-rounded"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={true}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image is-rounded"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -594,6 +871,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parent={[Function]}
                       parentProps={
                         Object {
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "label": "Garden room",
                           "size": "huge",
@@ -601,7 +880,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-desktop"
                         hasRoundedCorners={false}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -611,18 +889,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="huge"
                       >
                         <div
-                          className="ui thumbnail show-on-desktop"
+                          className="ui thumbnail huge show-on-desktop"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image huge"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={false}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -641,6 +952,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       parentProps={
                         Object {
                           "hasRoundedCorners": true,
+                          "imageSizes": undefined,
+                          "imageSrcSet": undefined,
                           "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
                           "isSquare": true,
                           "label": "Garden room",
@@ -649,7 +962,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       }
                     >
                       <Thumbnail
-                        alternativeText="Thumbnail element"
                         className="show-on-mobile"
                         hasRoundedCorners={true}
                         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -659,18 +971,51 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         size="large"
                       >
                         <div
-                          className="ui thumbnail show-on-mobile"
+                          className="ui thumbnail large show-on-mobile is-square"
                         >
-                          <div
-                            aria-label="Thumbnail element"
-                            className="ui image large is-square is-rounded"
-                            role="img"
-                            style={
-                              Object {
-                                "backgroundImage": "url(https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max)",
-                              }
-                            }
-                          />
+                          <ResponsiveImage
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={true}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            isSquare={true}
+                            label={null}
+                            sizes={null}
+                            srcSet={null}
+                          >
+                            <figure
+                              className="responsive-image is-rounded"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes={null}
+                                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                srcSet={null}
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                           <Paragraph
                             size="medium"
                             weight={null}
@@ -722,22 +1067,27 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                   Array [
                     Object {
                       "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "imageUrlAlternativeText": "Entrance",
                       "label": "Entrance",
                     },
                     Object {
                       "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "imageUrlAlternativeText": "Kitchen",
                       "label": "Kitchen",
                     },
                     Object {
                       "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "imageUrlAlternativeText": "Living room",
                       "label": "Living room",
                     },
                     Object {
                       "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "imageUrlAlternativeText": "Studio",
                       "label": "Studio",
                     },
                     Object {
                       "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+                      "imageUrlAlternativeText": "Garden room",
                       "label": "Garden room",
                     },
                   ]
@@ -818,12 +1168,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageUrlAlternativeText="Entrance"
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""
@@ -849,12 +1201,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageUrlAlternativeText="Kitchen"
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""
@@ -880,12 +1234,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageUrlAlternativeText="Living room"
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""
@@ -911,12 +1267,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageUrlAlternativeText="Studio"
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""
@@ -942,12 +1300,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 imageNotFoundLabelText="Image not found!"
                                 imageTitle="Image Title"
                                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                imageUrlAlternativeText="Garden room"
                                 imageWidth={null}
                                 isAvatar={false}
                                 isCircular={false}
                                 isFluid={false}
                                 label={null}
-                                sources={Array []}
+                                sizes={null}
+                                srcSet={null}
                               />
                               <Divider
                                 className=""

@@ -1,0 +1,682 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] = `
+<FeaturedRoomTypes
+  featuredRoomTypes={
+    Array [
+      Object {
+        "bedsNumber": 3,
+        "guestsNumber": 3,
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "locationName": "Catania",
+        "nightPrice": "$280",
+        "ratingNumber": 4.8,
+        "roomTypeName": "The Cat House",
+        "roomTypeUrl": "/",
+      },
+      Object {
+        "bedsNumber": 3,
+        "guestsNumber": 3,
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "locationName": "Catania",
+        "nightPrice": "$280",
+        "ratingNumber": 4.8,
+        "roomTypeName": "The Cat House",
+        "roomTypeUrl": "/",
+      },
+    ]
+  }
+  headingText={null}
+>
+  <Grid
+    areColumnsCentered={false}
+  >
+    <Grid
+      centered={false}
+    >
+      <div
+        className="ui grid"
+      >
+        <GridColumn
+          computer={4}
+          key="The Cat House0"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedRoomType
+                bedsLabel="Beds"
+                bedsNumber={3}
+                guestsLabel="Guests"
+                guestsNumber={3}
+                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                locationName="Catania"
+                nightPrice="$280"
+                ratingNumber={4.8}
+                roomTypeName="The Cat House"
+                roomTypeUrl="/"
+              >
+                <Card
+                  className="has-featured"
+                  href="/"
+                >
+                  <a
+                    className="ui card has-featured"
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    <ResponsiveImage
+                      alternativeText="Image Widget"
+                      hasRoundedCorners={false}
+                      imageHeight={null}
+                      imageNotFoundLabelText="Image not found!"
+                      imageTitle="Image Title"
+                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      imageWidth={null}
+                      isAvatar={false}
+                      isCircular={false}
+                      isFluid={true}
+                      label={null}
+                      sizes={null}
+                      srcSet={null}
+                    >
+                      <figure
+                        className="responsive-image is-fluid"
+                      >
+                        <Image
+                          alt="Image Widget"
+                          as="img"
+                          avatar={false}
+                          fluid={true}
+                          onLoad={[Function]}
+                          sizes={null}
+                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                          srcSet={null}
+                          title="Image Title"
+                          ui={true}
+                        >
+                          <img
+                            alt="Image Widget"
+                            className="ui fluid image"
+                            onLoad={[Function]}
+                            sizes={null}
+                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                            srcSet={null}
+                            title="Image Title"
+                          />
+                        </Image>
+                      </figure>
+                    </ResponsiveImage>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            The Cat House
+                          </div>
+                        </CardHeader>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            Catania
+                          </div>
+                        </CardDescription>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            Guests: 3 | Beds: 3
+                          </div>
+                        </CardDescription>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            <span>
+                              from 
+                              <Heading
+                                isColorInverted={false}
+                                size="medium"
+                                textAlign={null}
+                              >
+                                <Header
+                                  as="h3"
+                                  inverted={false}
+                                  textAlign={null}
+                                >
+                                  <h3
+                                    className="ui header"
+                                  >
+                                    $280
+                                  </h3>
+                                </Header>
+                              </Heading>
+                              /night
+                            </span>
+                          </div>
+                        </CardDescription>
+                      </div>
+                    </CardContent>
+                  </a>
+                </Card>
+              </FeaturedRoomType>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          computer={4}
+          key="The Cat House1"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedRoomType
+                bedsLabel="Beds"
+                bedsNumber={3}
+                guestsLabel="Guests"
+                guestsNumber={3}
+                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                locationName="Catania"
+                nightPrice="$280"
+                ratingNumber={4.8}
+                roomTypeName="The Cat House"
+                roomTypeUrl="/"
+              >
+                <Card
+                  className="has-featured"
+                  href="/"
+                >
+                  <a
+                    className="ui card has-featured"
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    <ResponsiveImage
+                      alternativeText="Image Widget"
+                      hasRoundedCorners={false}
+                      imageHeight={null}
+                      imageNotFoundLabelText="Image not found!"
+                      imageTitle="Image Title"
+                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      imageWidth={null}
+                      isAvatar={false}
+                      isCircular={false}
+                      isFluid={true}
+                      label={null}
+                      sizes={null}
+                      srcSet={null}
+                    >
+                      <figure
+                        className="responsive-image is-fluid"
+                      >
+                        <Image
+                          alt="Image Widget"
+                          as="img"
+                          avatar={false}
+                          fluid={true}
+                          onLoad={[Function]}
+                          sizes={null}
+                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                          srcSet={null}
+                          title="Image Title"
+                          ui={true}
+                        >
+                          <img
+                            alt="Image Widget"
+                            className="ui fluid image"
+                            onLoad={[Function]}
+                            sizes={null}
+                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                            srcSet={null}
+                            title="Image Title"
+                          />
+                        </Image>
+                      </figure>
+                    </ResponsiveImage>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            The Cat House
+                          </div>
+                        </CardHeader>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            Catania
+                          </div>
+                        </CardDescription>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            Guests: 3 | Beds: 3
+                          </div>
+                        </CardDescription>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            <span>
+                              from 
+                              <Heading
+                                isColorInverted={false}
+                                size="medium"
+                                textAlign={null}
+                              >
+                                <Header
+                                  as="h3"
+                                  inverted={false}
+                                  textAlign={null}
+                                >
+                                  <h3
+                                    className="ui header"
+                                  >
+                                    $280
+                                  </h3>
+                                </Header>
+                              </Heading>
+                              /night
+                            </span>
+                          </div>
+                        </CardDescription>
+                      </div>
+                    </CardContent>
+                  </a>
+                </Card>
+              </FeaturedRoomType>
+            </div>
+          </GridColumn>
+        </GridColumn>
+      </div>
+    </Grid>
+  </Grid>
+</FeaturedRoomTypes>
+`;
+
+exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render the right structure 1`] = `
+<FeaturedRoomTypes
+  featuredRoomTypes={
+    Array [
+      Object {
+        "bedsNumber": 3,
+        "guestsNumber": 3,
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "locationName": "Catania",
+        "nightPrice": "$280",
+        "ratingNumber": 4.8,
+        "roomTypeName": "The Cat House",
+        "roomTypeUrl": "/",
+      },
+      Object {
+        "bedsNumber": 3,
+        "guestsNumber": 3,
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "locationName": "Catania",
+        "nightPrice": "$280",
+        "ratingNumber": 4.8,
+        "roomTypeName": "The Cat House",
+        "roomTypeUrl": "/",
+      },
+    ]
+  }
+  headingText="My god I love Elton John"
+>
+  <Grid
+    areColumnsCentered={false}
+  >
+    <Grid
+      centered={false}
+    >
+      <div
+        className="ui grid"
+      >
+        <GridColumn
+          verticalAlignContent="top"
+          width={12}
+        >
+          <GridColumn
+            verticalAlign="top"
+            width={12}
+          >
+            <div
+              className="top aligned twelve wide column"
+            >
+              <Heading
+                isColorInverted={false}
+                size="medium"
+                textAlign={null}
+              >
+                <Header
+                  as="h3"
+                  inverted={false}
+                  textAlign={null}
+                >
+                  <h3
+                    className="ui header"
+                  >
+                    My god I love Elton John
+                  </h3>
+                </Header>
+              </Heading>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          computer={4}
+          key="The Cat House0"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedRoomType
+                bedsLabel="Beds"
+                bedsNumber={3}
+                guestsLabel="Guests"
+                guestsNumber={3}
+                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                locationName="Catania"
+                nightPrice="$280"
+                ratingNumber={4.8}
+                roomTypeName="The Cat House"
+                roomTypeUrl="/"
+              >
+                <Card
+                  className="has-featured"
+                  href="/"
+                >
+                  <a
+                    className="ui card has-featured"
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    <ResponsiveImage
+                      alternativeText="Image Widget"
+                      hasRoundedCorners={false}
+                      imageHeight={null}
+                      imageNotFoundLabelText="Image not found!"
+                      imageTitle="Image Title"
+                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      imageWidth={null}
+                      isAvatar={false}
+                      isCircular={false}
+                      isFluid={true}
+                      label={null}
+                      sizes={null}
+                      srcSet={null}
+                    >
+                      <figure
+                        className="responsive-image is-fluid"
+                      >
+                        <Image
+                          alt="Image Widget"
+                          as="img"
+                          avatar={false}
+                          fluid={true}
+                          onLoad={[Function]}
+                          sizes={null}
+                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                          srcSet={null}
+                          title="Image Title"
+                          ui={true}
+                        >
+                          <img
+                            alt="Image Widget"
+                            className="ui fluid image"
+                            onLoad={[Function]}
+                            sizes={null}
+                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                            srcSet={null}
+                            title="Image Title"
+                          />
+                        </Image>
+                      </figure>
+                    </ResponsiveImage>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            The Cat House
+                          </div>
+                        </CardHeader>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            Catania
+                          </div>
+                        </CardDescription>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            Guests: 3 | Beds: 3
+                          </div>
+                        </CardDescription>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            <span>
+                              from 
+                              <Heading
+                                isColorInverted={false}
+                                size="medium"
+                                textAlign={null}
+                              >
+                                <Header
+                                  as="h3"
+                                  inverted={false}
+                                  textAlign={null}
+                                >
+                                  <h3
+                                    className="ui header"
+                                  >
+                                    $280
+                                  </h3>
+                                </Header>
+                              </Heading>
+                              /night
+                            </span>
+                          </div>
+                        </CardDescription>
+                      </div>
+                    </CardContent>
+                  </a>
+                </Card>
+              </FeaturedRoomType>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          computer={4}
+          key="The Cat House1"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedRoomType
+                bedsLabel="Beds"
+                bedsNumber={3}
+                guestsLabel="Guests"
+                guestsNumber={3}
+                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                locationName="Catania"
+                nightPrice="$280"
+                ratingNumber={4.8}
+                roomTypeName="The Cat House"
+                roomTypeUrl="/"
+              >
+                <Card
+                  className="has-featured"
+                  href="/"
+                >
+                  <a
+                    className="ui card has-featured"
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    <ResponsiveImage
+                      alternativeText="Image Widget"
+                      hasRoundedCorners={false}
+                      imageHeight={null}
+                      imageNotFoundLabelText="Image not found!"
+                      imageTitle="Image Title"
+                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      imageWidth={null}
+                      isAvatar={false}
+                      isCircular={false}
+                      isFluid={true}
+                      label={null}
+                      sizes={null}
+                      srcSet={null}
+                    >
+                      <figure
+                        className="responsive-image is-fluid"
+                      >
+                        <Image
+                          alt="Image Widget"
+                          as="img"
+                          avatar={false}
+                          fluid={true}
+                          onLoad={[Function]}
+                          sizes={null}
+                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                          srcSet={null}
+                          title="Image Title"
+                          ui={true}
+                        >
+                          <img
+                            alt="Image Widget"
+                            className="ui fluid image"
+                            onLoad={[Function]}
+                            sizes={null}
+                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                            srcSet={null}
+                            title="Image Title"
+                          />
+                        </Image>
+                      </figure>
+                    </ResponsiveImage>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            The Cat House
+                          </div>
+                        </CardHeader>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            Catania
+                          </div>
+                        </CardDescription>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            Guests: 3 | Beds: 3
+                          </div>
+                        </CardDescription>
+                        <CardDescription>
+                          <div
+                            className="description"
+                          >
+                            <span>
+                              from 
+                              <Heading
+                                isColorInverted={false}
+                                size="medium"
+                                textAlign={null}
+                              >
+                                <Header
+                                  as="h3"
+                                  inverted={false}
+                                  textAlign={null}
+                                >
+                                  <h3
+                                    className="ui header"
+                                  >
+                                    $280
+                                  </h3>
+                                </Header>
+                              </Heading>
+                              /night
+                            </span>
+                          </div>
+                        </CardDescription>
+                      </div>
+                    </CardContent>
+                  </a>
+                </Card>
+              </FeaturedRoomType>
+            </div>
+          </GridColumn>
+        </GridColumn>
+      </div>
+    </Grid>
+  </Grid>
+</FeaturedRoomTypes>
+`;

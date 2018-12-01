@@ -56,8 +56,13 @@ export const Component = ({
     successMessage={successMessage}
     validation={validation}
   >
-    <TextInput label={emailInputLabel} name="email" />
-    <TextInput label={passwordInputLabel} name="password" type="password" />
+    <TextInput autoComplete="email" label={emailInputLabel} name="email" />
+    <TextInput
+      autoComplete="current-password"
+      label={passwordInputLabel}
+      name="password"
+      type="password"
+    />
   </Form>
 );
 

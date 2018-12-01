@@ -17,6 +17,8 @@ export const Component = ({
   guestsLabel,
   guestsNumber,
   imageAlternativeText,
+  imageSizes,
+  imageSrcSet,
   imageUrl,
   locationName,
   nightPrice,
@@ -30,6 +32,8 @@ export const Component = ({
       imageUrl={imageUrl}
       isFluid
       placeholderImageUrl={placeholderImageUrl}
+      sizes={imageSizes}
+      srcSet={imageSrcSet}
     />
     <Card.Content>
       <Card.Header>{roomTypeName}</Card.Header>
@@ -50,9 +54,11 @@ export const Component = ({
 Component.displayName = 'FeaturedRoomType';
 
 Component.defaultProps = {
-  imageAlternativeText: '',
   bedsLabel: 'Beds',
   guestsLabel: 'Guests',
+  imageAlternativeText: undefined,
+  imageSizes: undefined,
+  imageSrcSet: undefined,
   placeholderImageUrl: undefined,
 };
 
@@ -67,6 +73,10 @@ Component.propTypes = {
   guestsNumber: PropTypes.number.isRequired,
   /** The alternative text for the image to display. */
   imageAlternativeText: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  imageSizes: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  imageSrcSet: PropTypes.string,
   /** URL pointing to the image to display. */
   imageUrl: PropTypes.string.isRequired,
   /** The name of the location of the room. */

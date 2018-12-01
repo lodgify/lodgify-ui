@@ -2,7 +2,7 @@
 
 exports[`The \`Promotion\` component should have the right structure 1`] = `
 <Promotion
-  backgroundImage="testimage"
+  backgroundImageUrl="testimage"
   discountAmount="100%"
   discountAmountParagraphText="Save up to"
   discountCode="123"
@@ -79,29 +79,35 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                           isFluid={false}
                           label={null}
                           placeholderImageUrl={null}
-                          sources={Array []}
+                          sizes={null}
+                          srcSet={null}
                         >
-                          <picture
+                          <figure
                             className="responsive-image"
-                            role="figure"
                           >
                             <Image
                               alt="Image Widget"
                               as="img"
                               avatar={false}
                               fluid={true}
+                              onLoad={[Function]}
+                              sizes={null}
                               src="testimage"
+                              srcSet={null}
                               title="Image Title"
                               ui={true}
                             >
                               <img
                                 alt="Image Widget"
                                 className="ui fluid image"
+                                onLoad={[Function]}
+                                sizes={null}
                                 src="testimage"
+                                srcSet={null}
                                 title="Image Title"
                               />
                             </Image>
-                          </picture>
+                          </figure>
                         </ResponsiveImage>
                         <Grid
                           areColumnsCentered={false}

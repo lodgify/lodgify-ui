@@ -32,29 +32,35 @@ export const Component = ({
       <Heading>{headingText}</Heading>
     </GridColumn>
     <GridRow>
-      {getFirstSixItems(pictures).map(({ imageUrl, label }, index) => (
-        <GridColumn key={buildKeyFromStrings(label, index)}>
-          <ShowOnDesktop
-            parent={Thumbnail}
-            parentProps={{
-              imageUrl,
-              label,
-              size: 'huge',
-            }}
-          />
-          <ShowOnMobile
-            parent={Thumbnail}
-            parentProps={{
-              hasRoundedCorners: true,
-              imageUrl,
-              isSquare: true,
-              label,
-              size: 'large',
-            }}
-          />
-          <Divider size="small" />
-        </GridColumn>
-      ))}
+      {getFirstSixItems(pictures).map(
+        ({ imageUrl, imageSizes, imageSrcSet, label }, index) => (
+          <GridColumn key={buildKeyFromStrings(label, index)}>
+            <ShowOnDesktop
+              parent={Thumbnail}
+              parentProps={{
+                imageUrl,
+                imageSizes,
+                imageSrcSet,
+                label,
+                size: 'huge',
+              }}
+            />
+            <ShowOnMobile
+              parent={Thumbnail}
+              parentProps={{
+                hasRoundedCorners: true,
+                imageUrl,
+                imageSizes,
+                imageSrcSet,
+                isSquare: true,
+                label,
+                size: 'large',
+              }}
+            />
+            <Divider size="small" />
+          </GridColumn>
+        )
+      )}
     </GridRow>
     <GridColumn width={12}>
       <Gallery
@@ -80,21 +86,8 @@ Component.propTypes = {
   headingText: PropTypes.string,
   /** The text to display on the link at the bottom of the widget. */
   linkText: PropTypes.string,
-  /** The pictures to display as responsive images. */
-  pictures: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The natural height of the image in px. */
-      imageHeight: PropTypes.number,
-      /** URL pointing to the image to display. */
-      imageUrl: PropTypes.string.isRequired,
-      /** The natural width of the image in px. */
-      imageWidth: PropTypes.number,
-      /** A visible label for the image. */
-      label: PropTypes.string.isRequired,
-      /** URL pointing to the image to display. */
-      placeholderImageUrl: PropTypes.string,
-    })
-  ).isRequired,
+  /** The pictures to display. See [the `ResponsiveImage` component for valid props](#/Media/ResponsiveImage).  */
+  pictures: PropTypes.arrayOf(PropTypes.object).isRequired,
   /** The name of the property to display in the gallery modal. */
   propertyName: PropTypes.string,
   /** The numeral rating for the property, out of 5 */

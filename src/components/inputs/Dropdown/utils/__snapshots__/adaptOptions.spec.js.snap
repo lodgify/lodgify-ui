@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adaptOptions by default should return the right \`options\` structure 1`] = `
+Array [
+  Object {
+    "some": "option",
+  },
+  Object {
+    "no": "image",
+  },
+]
+`;
+
+exports[`adaptOptions if one or more options have an \`indent\` should return the right \`options\` structure 1`] = `"indent-1"`;
+
+exports[`adaptOptions if one or more options specify an \`image\` should return the right \`options\` structure 1`] = `
+Array [
+  Object {
+    "text": Array [
+      <img
+        className="ui image"
+        sizes="someSizes"
+        src="someImage"
+        srcSet="someSrcSets"
+      />,
+      <span
+        className="text"
+      />,
+    ],
+    "value": undefined,
+  },
+  Object {
+    "text": Array [
+      <img
+        className="ui image"
+      />,
+      <span
+        className="text"
+      />,
+    ],
+    "value": undefined,
+  },
+]
+`;

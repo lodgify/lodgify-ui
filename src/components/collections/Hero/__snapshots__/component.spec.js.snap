@@ -3,6 +3,8 @@
 exports[`<Hero /> by default should render the right structure 1`] = `
 <Hero
   activeNavigationItemIndex={1}
+  backgroundImageSizes="a load of sizes"
+  backgroundImageSrcSet="a load of sources"
   backgroundImageUrl="https://darkpurple.com"
   bottomOffset="0px"
   headerLogoSrc="https://darkgreen.com"
@@ -47,6 +49,8 @@ exports[`<Hero /> by default should render the right structure 1`] = `
     hasGradient={true}
     imageUrl="https://darkpurple.com"
     placeholderImageUrl={null}
+    sizes="a load of sizes"
+    srcSet="a load of sources"
   >
     <Segment
       className="full-bleed has-gradient has-children"
@@ -78,29 +82,35 @@ exports[`<Hero /> by default should render the right structure 1`] = `
           isFluid={true}
           label={null}
           placeholderImageUrl={null}
-          sources={Array []}
+          sizes="a load of sizes"
+          srcSet="a load of sources"
         >
-          <picture
+          <figure
             className="responsive-image is-fluid"
-            role="figure"
           >
             <Image
               alt="Image Widget"
               as="img"
               avatar={false}
               fluid={true}
+              onLoad={[Function]}
+              sizes="a load of sizes"
               src="https://darkpurple.com"
+              srcSet="a load of sources"
               title="Image Title"
               ui={true}
             >
               <img
                 alt="Image Widget"
                 className="ui fluid image"
+                onLoad={[Function]}
+                sizes="a load of sizes"
                 src="https://darkpurple.com"
+                srcSet="a load of sources"
                 title="Image Title"
               />
             </Image>
-          </picture>
+          </figure>
         </ResponsiveImage>
         <Header
           activeNavigationItemIndex={1}

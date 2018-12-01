@@ -2,6 +2,7 @@
 
 exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
 <PropertyPageSearchBar
+  getIsDayBlocked={[Function]}
   guestsOptions={
     Array [
       Object {
@@ -40,6 +41,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
     </Button>
   }
   onChangeInput={[Function]}
+  onSubmit={[Function]}
   searchButton={
     <Button
       hasShadow={false}

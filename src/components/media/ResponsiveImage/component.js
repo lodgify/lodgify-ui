@@ -7,7 +7,6 @@ import {
   IMAGE_TITLE,
   IMAGE_WIDGET,
 } from 'utils/default-strings';
-import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Paragraph } from 'typography/Paragraph';
 
 import { getImageMarkup } from './utils/getImageMarkup';
@@ -20,69 +19,57 @@ import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
 export class Component extends PureComponent {
   state = {
     isImageLoaded: false,
-    isImageLoadedFromCache: false,
     shouldImageLoad: false,
   };
 
   componentDidMount = () => {
-    const { imageUrl, placeholderImageUrl } = this.props;
+    const { imageUrl, placeholderImageUrl, sizes, srcSet } = this.props;
 
-    if (!!placeholderImageUrl && !!imageUrl) {
+    if (!!placeholderImageUrl) {
       const fullsizeImage = new Image();
 
+      fullsizeImage.sizes = sizes;
       fullsizeImage.src = imageUrl;
+      fullsizeImage.srcset = srcSet;
 
       this.setState({
         shouldImageLoad: true,
-        isImageLoadedFromCache: fullsizeImage.complete,
+        isImageLoaded: fullsizeImage.complete,
       });
-    } else {
-      this.setState({ shouldImageLoad: true });
+
+      return;
     }
+
+    this.setState({ shouldImageLoad: true });
   };
 
   handleImageLoad = () => this.setState({ isImageLoaded: true });
 
   render = () => {
     const {
-      label,
-      sources,
-      placeholderImageUrl,
-      imageUrl,
-      isFluid,
       hasRoundedCorners,
       isCircular,
+      isFluid,
+      label,
+      placeholderImageUrl,
     } = this.props;
-
-    const imageProps = {
-      ...this.props,
-      handleImageLoad: this.handleImageLoad,
-      isImageLoaded: this.state.isImageLoaded,
-      isImageLoadedFromCache: this.state.isImageLoadedFromCache,
-      shouldImageLoad: this.state.shouldImageLoad,
-    };
+    const { isImageLoaded, shouldImageLoad } = this.state;
 
     return (
-      <picture
+      <figure
         className={getClassNames('responsive-image', {
+          'has-blurred-children': !!placeholderImageUrl && !isImageLoaded,
+          'has-placeholder': !!placeholderImageUrl,
           'is-fluid': isFluid,
           'is-rounded': hasRoundedCorners,
           'is-circular': isCircular,
         })}
-        role="figure"
       >
-        {sources.map(({ srcset, media }, index) => (
-          <source
-            key={buildKeyFromStrings(srcset, index)}
-            media={media}
-            srcSet={srcset}
-          />
-        ))}
-        {!!placeholderImageUrl && !!imageUrl
-          ? getPlaceholderImageMarkup(imageProps)
-          : getImageMarkup(imageProps)}
+        {shouldImageLoad && getImageMarkup(this.props, this.handleImageLoad)}
+        {!!placeholderImageUrl &&
+          getPlaceholderImageMarkup(this.props, isImageLoaded)}
         {label ? <Paragraph>{label}</Paragraph> : null}
-      </picture>
+      </figure>
     );
   };
 }
@@ -102,7 +89,8 @@ Component.defaultProps = {
   isFluid: false,
   label: null,
   placeholderImageUrl: undefined,
-  sources: [],
+  sizes: null,
+  srcSet: null,
 };
 
 Component.propTypes = {
@@ -138,13 +126,8 @@ Component.propTypes = {
   label: PropTypes.string,
   /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
-  /** Collection of objects to specify different image sources.
-   *  [See this for more info](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-   */
-  sources: PropTypes.arrayOf(
-    PropTypes.shape({
-      media: PropTypes.string.isRequired,
-      srcset: PropTypes.string.isRequired,
-    })
-  ),
+  /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  sizes: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  srcSet: PropTypes.string,
 };

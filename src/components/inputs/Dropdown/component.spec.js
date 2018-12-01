@@ -16,7 +16,7 @@ import { Component as Dropdown } from './component';
 
 const OPTIONS = [{ text: 'someText', value: 'someValue' }];
 const OPTIONS_WITH_IMAGES = [
-  { text: 'someText', value: 'someValue', image: 'someImage' },
+  { text: 'someText', value: 'someValue', imageUrl: 'someImage' },
 ];
 
 const getDropdown = extraProps => shallow(<Dropdown {...extraProps} />);

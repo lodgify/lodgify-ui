@@ -19,6 +19,8 @@ export const Component = ({
   hasGradient,
   imageUrl,
   placeholderImageUrl,
+  sizes,
+  srcSet,
 }) => (
   <Segment
     className={getClassNames('full-bleed', {
@@ -34,6 +36,8 @@ export const Component = ({
       imageUrl={imageUrl}
       isFluid
       placeholderImageUrl={placeholderImageUrl}
+      sizes={sizes}
+      srcSet={srcSet}
     />
     {children}
   </Segment>
@@ -47,6 +51,8 @@ Component.defaultProps = {
   hasGradient: false,
   imageUrl: null,
   placeholderImageUrl: null,
+  sizes: null,
+  srcSet: null,
 };
 
 Component.propTypes = {
@@ -60,4 +66,8 @@ Component.propTypes = {
   imageUrl: PropTypes.string,
   /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  sizes: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  srcSet: PropTypes.string,
 };

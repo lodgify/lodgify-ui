@@ -345,47 +345,45 @@ blockquote.ui.quote .row {
 --------------------*/
 
 .ui.thumbnail {
+  height: @thumbnailHeight;
 
-  .image {
-    background: @thumbnailBackground;
-    width: 100%;
-    height: @thumbnailHeight;
+  figure.responsive-image {
+    width: inherit;
+    height: inherit;
+
+    > img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
+  &.small {
+    height: @smallThumbnailHeight;
+  }
+
+  &.large {
+    height: @largeThumbnailHeight;
+  }
+
+  &.huge {
+    height: @hugeThumbnailHeight;
+  }
+
+  &.is-circular,
+  &.is-square {
+    width: @thumbnailWidth;
 
     &.small {
-      height: @smallThumbnailHeight;
+      width: @smallThumbnailWidth;
     }
 
     &.large {
-      height: @largeThumbnailHeight;
+      width: @largeThumbnailWidth;
     }
 
     &.huge {
-      height: @hugeThumbnailHeight;
-    }
-
-    &.is-circular {
-      border-radius: @circularBorderRadius;
-    }
-
-    &.is-rounded {
-      border-radius: @thumbnailBorderRadius;
-    }
-
-    &.is-circular,
-    &.is-square {
-      width: @thumbnailWidth;
-
-      &.small {
-        width: @smallThumbnailWidth;
-      }
-
-      &.large {
-        width: @largeThumbnailWidth;
-      }
-
-      &.huge {
-        width: @hugeThumbnailWidth;
-      }
+      width: @hugeThumbnailWidth;
     }
   }
 }
@@ -449,22 +447,42 @@ blockquote.ui.quote .row {
 }
 
 /*----------------------
-    Hide on devices
+    Show on devices
 -----------------------*/
 
-/* Hide on mobile screens */
-@media @computerScreen {
+.hide-on-all-devices {
+  display: none !important;
+}
+
+/* Shown on mobileViewport */
+@media @mobileViewport {
 
   .show-on-mobile {
-    display: none !important;
+    display: block !important;
   }
 }
 
-/* Hide on desktop screens */
-@media @tabletScreen {
+/* Shown on tabletViewport */
+@media @tabletViewport {
 
-  .show-on-desktop {
-    display: none !important;
+  .show-on-tablet {
+    display: block !important;
+  }
+}
+
+/* Shown on computerViewport */
+@media @computerViewport {
+
+  .show-on-computer {
+    display: block !important;
+  }
+}
+
+/* Shown on widescreenViewport */
+@media @widescreenViewport {
+
+  .show-on-widescreen {
+    display: block !important;
   }
 }
 
@@ -494,7 +512,7 @@ blockquote.ui.quote .row {
     }
   }
 
-  @media only screen and (max-width: @computerBreakpoint) {
+  @media only screen and (max-height: @computerBreakpoint) {
 
     .show-on-mobile {
       display: block !important;

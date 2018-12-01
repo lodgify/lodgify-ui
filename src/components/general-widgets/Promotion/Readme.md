@@ -1,7 +1,7 @@
 
 ```jsx
 <Promotion
-  backgroundImage="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  backgroundImageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
   discountCode="F1KDH193S"
   discountAmount="200€"
   headingText="Summertime Festival"
@@ -14,7 +14,7 @@
 
 ```jsx
 <Promotion
-  backgroundImage="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  backgroundImageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
   discountAmount="200€"
   discountAmountParagraphText="The amount"
   discountCode="F1KDH193S"

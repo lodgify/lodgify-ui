@@ -1,19 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`\`getImageMarkup\` if no \`imageUrl\` is passed should render the right structure 1`] = `
+<Image
+  alt="someAltText"
+  as="img"
+  avatar={false}
+  fluid={false}
+  onLoad={[Function]}
+  sizes="someSizes"
+  src={null}
+  srcSet="someSrcs"
+  title="someTitle"
+  ui={true}
+>
+  <div
+    alt="someAltText"
+    className="ui image"
+    onLoad={[Function]}
+    sizes="someSizes"
+    src={null}
+    srcSet="someSrcs"
+    title="someTitle"
+  >
+    <Label
+      content="someLabel"
+    >
+      <div
+        className="ui label"
+        onClick={[Function]}
+      >
+        someLabel
+      </div>
+    </Label>
+  </div>
+</Image>
+`;
+
 exports[`\`getImageMarkup\` should render the right structure 1`] = `
 <Image
   alt="someAltText"
   as="img"
   avatar={false}
-  fluid={true}
+  fluid={false}
+  onLoad={[Function]}
+  sizes="someSizes"
   src="someUrl"
+  srcSet="someSrcs"
   title="someTitle"
   ui={true}
 >
   <img
     alt="someAltText"
-    className="ui fluid image"
+    className="ui image"
+    onLoad={[Function]}
+    sizes="someSizes"
     src="someUrl"
+    srcSet="someSrcs"
     title="someTitle"
   />
 </Image>

@@ -211,8 +211,12 @@ Component.propTypes = {
   /** The options which the user can select for the room field. */
   roomOptionsWithImages: PropTypes.PropTypes.arrayOf(
     PropTypes.shape({
-      /** The source url for the image to display with the option. */
-      image: PropTypes.string,
+      /** A list of one or more strings separated by commas indicating a set of source sizes for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      imageSizes: PropTypes.string,
+      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      imageSrcSet: PropTypes.string,
+      /** The source url of the image to display with the option. */
+      imageUrl: PropTypes.string,
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */

@@ -1,3 +1,69 @@
+# [1.94.0](https://github.com/lodgify/lodgify-ui/compare/v1.93.0...v1.94.0) (2018-11-29)
+
+
+### Bug Fixes
+
+* **Availability:** update roomOptionsWithImages prop shape ([73d015c](https://github.com/lodgify/lodgify-ui/commit/73d015c))
+* **Rates:** update roomTypes.image prop shape ([b3f845f](https://github.com/lodgify/lodgify-ui/commit/b3f845f))
+* **Roomtypes:** update mockdata slideshow shape ([7ea11d8](https://github.com/lodgify/lodgify-ui/commit/7ea11d8))
+
+
+### Features
+
+* **Dropdown:** add srcset and sizes to image options ([8d06803](https://github.com/lodgify/lodgify-ui/commit/8d06803))
+* **FeaturedProperty:** expose image sizes and srcSet props ([41beb67](https://github.com/lodgify/lodgify-ui/commit/41beb67))
+* **FeaturedRoomType:** expose image sizes and srcSet props ([4d710a3](https://github.com/lodgify/lodgify-ui/commit/4d710a3))
+* **Gallery:** pass correct image prop structure to ResponsiveImage ([2c8265d](https://github.com/lodgify/lodgify-ui/commit/2c8265d))
+* **getHasImages:** add extra case for imageSrcSet and imageSizes ([f4f8931](https://github.com/lodgify/lodgify-ui/commit/f4f8931))
+* **Hero:** expose sizes and srcSet for background image ([7f354df](https://github.com/lodgify/lodgify-ui/commit/7f354df))
+* **HomepageHero:** expose background image srcSet and sizes ([532352a](https://github.com/lodgify/lodgify-ui/commit/532352a))
+* **Pictures:** pass correct image prop structure to Thumbnail ([6c5ed2c](https://github.com/lodgify/lodgify-ui/commit/6c5ed2c))
+* **Promotion:** expose background image sizes and srcSet props ([925ac2e](https://github.com/lodgify/lodgify-ui/commit/925ac2e))
+* **PropertyPageHero:** expose images sizes and srcSet props ([c05e60d](https://github.com/lodgify/lodgify-ui/commit/c05e60d))
+* **RoomType:** update prop names and descriptions ([529605b](https://github.com/lodgify/lodgify-ui/commit/529605b))
+* **Slideshow:** rename sourceSet prop and update prop descriptions ([0564bf2](https://github.com/lodgify/lodgify-ui/commit/0564bf2))
+* **Thumbnail:** expose image sizes and srcSet and refactor to use ResponsiveImage ([2dfaa9d](https://github.com/lodgify/lodgify-ui/commit/2dfaa9d))
+
+# [1.93.0](https://github.com/lodgify/lodgify-ui/compare/v1.92.0...v1.93.0) (2018-11-29)
+
+
+### Features
+
+* **ShowOn:** implement component ([50cd73d](https://github.com/lodgify/lodgify-ui/commit/50cd73d))
+* **ShowOn:** implement component unit test and snap ([6b6e94b](https://github.com/lodgify/lodgify-ui/commit/6b6e94b))
+* **site.overrides:** add media queries for ShowOn component ([da42599](https://github.com/lodgify/lodgify-ui/commit/da42599))
+* **site.variables:** add breakpoints and responsive viewports ([077e3cd](https://github.com/lodgify/lodgify-ui/commit/077e3cd))
+
+# [1.92.0](https://github.com/lodgify/lodgify-ui/compare/v1.91.0...v1.92.0) (2018-11-28)
+
+
+### Features
+
+* **Form:** expose props.autoComplete ([e69a966](https://github.com/lodgify/lodgify-ui/commit/e69a966))
+* **forms:** consume props.autoComplete on inputs and Form ([1272d57](https://github.com/lodgify/lodgify-ui/commit/1272d57))
+* **Inputs:** expose props.autoComplete ([0f2401d](https://github.com/lodgify/lodgify-ui/commit/0f2401d))
+
+# [1.91.0](https://github.com/lodgify/lodgify-ui/compare/v1.90.0...v1.91.0) (2018-11-27)
+
+
+### Features
+
+* **ResponsiveImage:** replace props.sources with props.sizes and props.srcSet ([498a56b](https://github.com/lodgify/lodgify-ui/commit/498a56b))
+
+# [1.90.0](https://github.com/lodgify/lodgify-ui/compare/v1.89.1...v1.90.0) (2018-11-26)
+
+
+### Features
+
+* **PropertyPageSearchBar:** expose additional props and pass to SearchBar ([4ff30c6](https://github.com/lodgify/lodgify-ui/commit/4ff30c6))
+
+## [1.89.1](https://github.com/lodgify/lodgify-ui/compare/v1.89.0...v1.89.1) (2018-11-26)
+
+
+### Bug Fixes
+
+* **Form:** handle required error on change ([c7676e8](https://github.com/lodgify/lodgify-ui/commit/c7676e8))
+
 # [1.89.0](https://github.com/lodgify/lodgify-ui/compare/v1.88.1...v1.89.0) (2018-11-23)
 
 

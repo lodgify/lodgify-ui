@@ -2328,22 +2328,22 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
   roomTypes={
     Array [
       Object {
-        "image": "🎅",
+        "imageUrl": "🎅",
         "text": "🎅",
         "value": "🎅",
       },
       Object {
-        "image": "💪",
+        "imageUrl": "💪",
         "text": "💪",
         "value": "💪",
       },
       Object {
-        "image": "👃",
+        "imageUrl": "👃",
         "text": "👃",
         "value": "👃",
       },
       Object {
-        "image": "🧖️",
+        "imageUrl": "🧖️",
         "text": "🧖️",
         "value": "🧖️",
       },
@@ -2427,22 +2427,22 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                       options={
                         Array [
                           Object {
-                            "image": "🎅",
+                            "imageUrl": "🎅",
                             "text": "🎅",
                             "value": "🎅",
                           },
                           Object {
-                            "image": "💪",
+                            "imageUrl": "💪",
                             "text": "💪",
                             "value": "💪",
                           },
                           Object {
-                            "image": "👃",
+                            "imageUrl": "👃",
                             "text": "👃",
                             "value": "👃",
                           },
                           Object {
-                            "image": "🧖️",
+                            "imageUrl": "🧖️",
                             "text": "🧖️",
                             "value": "🧖️",
                           },

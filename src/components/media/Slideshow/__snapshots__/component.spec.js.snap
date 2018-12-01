@@ -1,0 +1,1998 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slideshow /> by default should return the right structure 1`] = `
+<Slideshow
+  hasShadow={true}
+  headingText={null}
+  images={
+    Array [
+      Object {
+        "alternativeText": "Two cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Two more cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two more cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Much cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Much cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "No dogs",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "No dogs",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+    ]
+  }
+  isRounded={true}
+  isShowingBulletNavigation={true}
+  isStretched={false}
+>
+  <ImageGallery
+    additionalClass=""
+    autoPlay={false}
+    disableArrowKeys={false}
+    disableSwipe={false}
+    disableThumbnailScroll={false}
+    flickThreshold={0.4}
+    indexSeparator=" / "
+    infinite={true}
+    isRTL={false}
+    items={
+      Array [
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two cats",
+          "originalTitle": "Two cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two more cats",
+          "originalTitle": "Two more cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Much cats",
+          "originalTitle": "Much cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "No dogs",
+          "originalTitle": "No dogs",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+      ]
+    }
+    lazyLoad={true}
+    preventDefaultTouchmoveEvent={false}
+    renderFullscreenButton={[Function]}
+    renderLeftNav={[Function]}
+    renderPlayPauseButton={[Function]}
+    renderRightNav={[Function]}
+    showBullets={true}
+    showFullscreenButton={false}
+    showIndex={false}
+    showNav={true}
+    showPlayButton={false}
+    showThumbnails={false}
+    slideDuration={450}
+    slideInterval={3000}
+    startIndex={0}
+    stopPropagation={false}
+    swipeThreshold={30}
+    swipingTransitionDuration={0}
+    thumbnailPosition="bottom"
+    useBrowserFullscreen={true}
+    useTranslate3D={true}
+  >
+    <div
+      aria-live="polite"
+      className="image-gallery  "
+    >
+      <div
+        className="image-gallery-content"
+      >
+        <div
+          className="image-gallery-slide-wrapper bottom "
+        >
+          <span
+            key="navigation"
+          >
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron left"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron right"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+          </span>
+          <Swipeable
+            className="image-gallery-swipe"
+            delta={0}
+            disabled={false}
+            flickThreshold={0.4}
+            key="swipeable"
+            nodeName="div"
+            onSwiped={[Function]}
+            onSwiping={[Function]}
+            preventDefaultTouchmoveEvent={false}
+            rotationAngle={0}
+            stopPropagation={false}
+          >
+            <div
+              className="image-gallery-swipe"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="image-gallery-slides"
+              >
+                <div
+                  className="image-gallery-slide center"
+                  key="0"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(0%, 0, 0)",
+                      "OTransform": "translate3d(0%, 0, 0)",
+                      "WebkitTransform": "translate3d(0%, 0, 0)",
+                      "msTransform": "translate3d(0%, 0, 0)",
+                      "transform": "translate3d(0%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide right"
+                  key="1"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(100%, 0, 0)",
+                      "OTransform": "translate3d(100%, 0, 0)",
+                      "WebkitTransform": "translate3d(100%, 0, 0)",
+                      "msTransform": "translate3d(100%, 0, 0)",
+                      "transform": "translate3d(100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two more cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two more cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide"
+                  key="2"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(200%, 0, 0)",
+                      "OTransform": "translate3d(200%, 0, 0)",
+                      "WebkitTransform": "translate3d(200%, 0, 0)",
+                      "msTransform": "translate3d(200%, 0, 0)",
+                      "transform": "translate3d(200%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "height": "100%",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="image-gallery-slide left"
+                  key="3"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(-100%, 0, 0)",
+                      "OTransform": "translate3d(-100%, 0, 0)",
+                      "WebkitTransform": "translate3d(-100%, 0, 0)",
+                      "msTransform": "translate3d(-100%, 0, 0)",
+                      "transform": "translate3d(-100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="No dogs"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="No dogs"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Swipeable>
+          <div
+            className="image-gallery-bullets"
+          >
+            <div
+              aria-label="Bullet Navigation"
+              className="image-gallery-bullets-container"
+              role="navigation"
+            >
+              <button
+                aria-label="Go to Slide 1"
+                aria-pressed="true"
+                className="image-gallery-bullet active "
+                key="0"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 2"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="1"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 3"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="2"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 4"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="3"
+                onClick={[Function]}
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ImageGallery>
+</Slideshow>
+`;
+
+exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should get the right props 1`] = `
+<Slideshow
+  hasShadow={false}
+  headingText={null}
+  images={
+    Array [
+      Object {
+        "alternativeText": "Two cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Two more cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two more cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Much cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Much cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "No dogs",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "No dogs",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+    ]
+  }
+  isRounded={true}
+  isShowingBulletNavigation={true}
+  isStretched={false}
+>
+  <ImageGallery
+    additionalClass="no-shadow"
+    autoPlay={false}
+    disableArrowKeys={false}
+    disableSwipe={false}
+    disableThumbnailScroll={false}
+    flickThreshold={0.4}
+    indexSeparator=" / "
+    infinite={true}
+    isRTL={false}
+    items={
+      Array [
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two cats",
+          "originalTitle": "Two cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two more cats",
+          "originalTitle": "Two more cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Much cats",
+          "originalTitle": "Much cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "No dogs",
+          "originalTitle": "No dogs",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+      ]
+    }
+    lazyLoad={true}
+    preventDefaultTouchmoveEvent={false}
+    renderFullscreenButton={[Function]}
+    renderLeftNav={[Function]}
+    renderPlayPauseButton={[Function]}
+    renderRightNav={[Function]}
+    showBullets={true}
+    showFullscreenButton={false}
+    showIndex={false}
+    showNav={true}
+    showPlayButton={false}
+    showThumbnails={false}
+    slideDuration={450}
+    slideInterval={3000}
+    startIndex={0}
+    stopPropagation={false}
+    swipeThreshold={30}
+    swipingTransitionDuration={0}
+    thumbnailPosition="bottom"
+    useBrowserFullscreen={true}
+    useTranslate3D={true}
+  >
+    <div
+      aria-live="polite"
+      className="image-gallery no-shadow "
+    >
+      <div
+        className="image-gallery-content"
+      >
+        <div
+          className="image-gallery-slide-wrapper bottom "
+        >
+          <span
+            key="navigation"
+          >
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron left"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron right"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+          </span>
+          <Swipeable
+            className="image-gallery-swipe"
+            delta={0}
+            disabled={false}
+            flickThreshold={0.4}
+            key="swipeable"
+            nodeName="div"
+            onSwiped={[Function]}
+            onSwiping={[Function]}
+            preventDefaultTouchmoveEvent={false}
+            rotationAngle={0}
+            stopPropagation={false}
+          >
+            <div
+              className="image-gallery-swipe"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="image-gallery-slides"
+              >
+                <div
+                  className="image-gallery-slide center"
+                  key="0"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(0%, 0, 0)",
+                      "OTransform": "translate3d(0%, 0, 0)",
+                      "WebkitTransform": "translate3d(0%, 0, 0)",
+                      "msTransform": "translate3d(0%, 0, 0)",
+                      "transform": "translate3d(0%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide right"
+                  key="1"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(100%, 0, 0)",
+                      "OTransform": "translate3d(100%, 0, 0)",
+                      "WebkitTransform": "translate3d(100%, 0, 0)",
+                      "msTransform": "translate3d(100%, 0, 0)",
+                      "transform": "translate3d(100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two more cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two more cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide"
+                  key="2"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(200%, 0, 0)",
+                      "OTransform": "translate3d(200%, 0, 0)",
+                      "WebkitTransform": "translate3d(200%, 0, 0)",
+                      "msTransform": "translate3d(200%, 0, 0)",
+                      "transform": "translate3d(200%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "height": "100%",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="image-gallery-slide left"
+                  key="3"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(-100%, 0, 0)",
+                      "OTransform": "translate3d(-100%, 0, 0)",
+                      "WebkitTransform": "translate3d(-100%, 0, 0)",
+                      "msTransform": "translate3d(-100%, 0, 0)",
+                      "transform": "translate3d(-100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="No dogs"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="No dogs"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Swipeable>
+          <div
+            className="image-gallery-bullets"
+          >
+            <div
+              aria-label="Bullet Navigation"
+              className="image-gallery-bullets-container"
+              role="navigation"
+            >
+              <button
+                aria-label="Go to Slide 1"
+                aria-pressed="true"
+                className="image-gallery-bullet active "
+                key="0"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 2"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="1"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 3"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="2"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 4"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="3"
+                onClick={[Function]}
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ImageGallery>
+</Slideshow>
+`;
+
+exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should get the right props 1`] = `
+<Slideshow
+  hasShadow={true}
+  headingText={null}
+  images={
+    Array [
+      Object {
+        "alternativeText": "Two cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Two more cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two more cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Much cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Much cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "No dogs",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "No dogs",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+    ]
+  }
+  isRounded={false}
+  isShowingBulletNavigation={true}
+  isStretched={false}
+>
+  <ImageGallery
+    additionalClass="no-border-radius"
+    autoPlay={false}
+    disableArrowKeys={false}
+    disableSwipe={false}
+    disableThumbnailScroll={false}
+    flickThreshold={0.4}
+    indexSeparator=" / "
+    infinite={true}
+    isRTL={false}
+    items={
+      Array [
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two cats",
+          "originalTitle": "Two cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two more cats",
+          "originalTitle": "Two more cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Much cats",
+          "originalTitle": "Much cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "No dogs",
+          "originalTitle": "No dogs",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+      ]
+    }
+    lazyLoad={true}
+    preventDefaultTouchmoveEvent={false}
+    renderFullscreenButton={[Function]}
+    renderLeftNav={[Function]}
+    renderPlayPauseButton={[Function]}
+    renderRightNav={[Function]}
+    showBullets={true}
+    showFullscreenButton={false}
+    showIndex={false}
+    showNav={true}
+    showPlayButton={false}
+    showThumbnails={false}
+    slideDuration={450}
+    slideInterval={3000}
+    startIndex={0}
+    stopPropagation={false}
+    swipeThreshold={30}
+    swipingTransitionDuration={0}
+    thumbnailPosition="bottom"
+    useBrowserFullscreen={true}
+    useTranslate3D={true}
+  >
+    <div
+      aria-live="polite"
+      className="image-gallery no-border-radius "
+    >
+      <div
+        className="image-gallery-content"
+      >
+        <div
+          className="image-gallery-slide-wrapper bottom "
+        >
+          <span
+            key="navigation"
+          >
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron left"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron right"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+          </span>
+          <Swipeable
+            className="image-gallery-swipe"
+            delta={0}
+            disabled={false}
+            flickThreshold={0.4}
+            key="swipeable"
+            nodeName="div"
+            onSwiped={[Function]}
+            onSwiping={[Function]}
+            preventDefaultTouchmoveEvent={false}
+            rotationAngle={0}
+            stopPropagation={false}
+          >
+            <div
+              className="image-gallery-swipe"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="image-gallery-slides"
+              >
+                <div
+                  className="image-gallery-slide center"
+                  key="0"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(0%, 0, 0)",
+                      "OTransform": "translate3d(0%, 0, 0)",
+                      "WebkitTransform": "translate3d(0%, 0, 0)",
+                      "msTransform": "translate3d(0%, 0, 0)",
+                      "transform": "translate3d(0%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide right"
+                  key="1"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(100%, 0, 0)",
+                      "OTransform": "translate3d(100%, 0, 0)",
+                      "WebkitTransform": "translate3d(100%, 0, 0)",
+                      "msTransform": "translate3d(100%, 0, 0)",
+                      "transform": "translate3d(100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two more cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two more cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide"
+                  key="2"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(200%, 0, 0)",
+                      "OTransform": "translate3d(200%, 0, 0)",
+                      "WebkitTransform": "translate3d(200%, 0, 0)",
+                      "msTransform": "translate3d(200%, 0, 0)",
+                      "transform": "translate3d(200%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "height": "100%",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="image-gallery-slide left"
+                  key="3"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(-100%, 0, 0)",
+                      "OTransform": "translate3d(-100%, 0, 0)",
+                      "WebkitTransform": "translate3d(-100%, 0, 0)",
+                      "msTransform": "translate3d(-100%, 0, 0)",
+                      "transform": "translate3d(-100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="No dogs"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="No dogs"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Swipeable>
+          <div
+            className="image-gallery-bullets"
+          >
+            <div
+              aria-label="Bullet Navigation"
+              className="image-gallery-bullets-container"
+              role="navigation"
+            >
+              <button
+                aria-label="Go to Slide 1"
+                aria-pressed="true"
+                className="image-gallery-bullet active "
+                key="0"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 2"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="1"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 3"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="2"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 4"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="3"
+                onClick={[Function]}
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ImageGallery>
+</Slideshow>
+`;
+
+exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should return the right structure 1`] = `
+<Slideshow
+  hasShadow={true}
+  headingText={null}
+  images={
+    Array [
+      Object {
+        "alternativeText": "Two cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Two more cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two more cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Much cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Much cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "No dogs",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "No dogs",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+    ]
+  }
+  isRounded={true}
+  isShowingBulletNavigation={true}
+  isStretched={true}
+>
+  <ImageGallery
+    additionalClass="fit-height"
+    autoPlay={false}
+    disableArrowKeys={false}
+    disableSwipe={false}
+    disableThumbnailScroll={false}
+    flickThreshold={0.4}
+    indexSeparator=" / "
+    infinite={true}
+    isRTL={false}
+    items={
+      Array [
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two cats",
+          "originalTitle": "Two cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two more cats",
+          "originalTitle": "Two more cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Much cats",
+          "originalTitle": "Much cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "No dogs",
+          "originalTitle": "No dogs",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+      ]
+    }
+    lazyLoad={true}
+    preventDefaultTouchmoveEvent={false}
+    renderFullscreenButton={[Function]}
+    renderLeftNav={[Function]}
+    renderPlayPauseButton={[Function]}
+    renderRightNav={[Function]}
+    showBullets={true}
+    showFullscreenButton={false}
+    showIndex={false}
+    showNav={true}
+    showPlayButton={false}
+    showThumbnails={false}
+    slideDuration={450}
+    slideInterval={3000}
+    startIndex={0}
+    stopPropagation={false}
+    swipeThreshold={30}
+    swipingTransitionDuration={0}
+    thumbnailPosition="bottom"
+    useBrowserFullscreen={true}
+    useTranslate3D={true}
+  >
+    <div
+      aria-live="polite"
+      className="image-gallery fit-height "
+    >
+      <div
+        className="image-gallery-content"
+      >
+        <div
+          className="image-gallery-slide-wrapper bottom "
+        >
+          <span
+            key="navigation"
+          >
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron left"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron right"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+          </span>
+          <Swipeable
+            className="image-gallery-swipe"
+            delta={0}
+            disabled={false}
+            flickThreshold={0.4}
+            key="swipeable"
+            nodeName="div"
+            onSwiped={[Function]}
+            onSwiping={[Function]}
+            preventDefaultTouchmoveEvent={false}
+            rotationAngle={0}
+            stopPropagation={false}
+          >
+            <div
+              className="image-gallery-swipe"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="image-gallery-slides"
+              >
+                <div
+                  className="image-gallery-slide center"
+                  key="0"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(0%, 0, 0)",
+                      "OTransform": "translate3d(0%, 0, 0)",
+                      "WebkitTransform": "translate3d(0%, 0, 0)",
+                      "msTransform": "translate3d(0%, 0, 0)",
+                      "transform": "translate3d(0%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide right"
+                  key="1"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(100%, 0, 0)",
+                      "OTransform": "translate3d(100%, 0, 0)",
+                      "WebkitTransform": "translate3d(100%, 0, 0)",
+                      "msTransform": "translate3d(100%, 0, 0)",
+                      "transform": "translate3d(100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two more cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two more cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide"
+                  key="2"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(200%, 0, 0)",
+                      "OTransform": "translate3d(200%, 0, 0)",
+                      "WebkitTransform": "translate3d(200%, 0, 0)",
+                      "msTransform": "translate3d(200%, 0, 0)",
+                      "transform": "translate3d(200%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "height": "100%",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="image-gallery-slide left"
+                  key="3"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(-100%, 0, 0)",
+                      "OTransform": "translate3d(-100%, 0, 0)",
+                      "WebkitTransform": "translate3d(-100%, 0, 0)",
+                      "msTransform": "translate3d(-100%, 0, 0)",
+                      "transform": "translate3d(-100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="No dogs"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="No dogs"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Swipeable>
+          <div
+            className="image-gallery-bullets"
+          >
+            <div
+              aria-label="Bullet Navigation"
+              className="image-gallery-bullets-container"
+              role="navigation"
+            >
+              <button
+                aria-label="Go to Slide 1"
+                aria-pressed="true"
+                className="image-gallery-bullet active "
+                key="0"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 2"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="1"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 3"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="2"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 4"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="3"
+                onClick={[Function]}
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ImageGallery>
+</Slideshow>
+`;
+
+exports[`<Slideshow /> if \`props.headingText\` is passed should return the right structure 1`] = `
+<Slideshow
+  hasShadow={true}
+  headingText="🎧"
+  images={
+    Array [
+      Object {
+        "alternativeText": "Two cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Two more cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Two more cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Much cats",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "Much cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "No dogs",
+        "sizes": "100w",
+        "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        "title": "No dogs",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+    ]
+  }
+  isRounded={true}
+  isShowingBulletNavigation={true}
+  isStretched={false}
+>
+  <Heading
+    isColorInverted={false}
+    size="medium"
+    textAlign={null}
+  >
+    <Header
+      as="h3"
+      inverted={false}
+      textAlign={null}
+    >
+      <h3
+        className="ui header"
+      >
+        🎧
+      </h3>
+    </Header>
+  </Heading>
+  <ImageGallery
+    additionalClass=""
+    autoPlay={false}
+    disableArrowKeys={false}
+    disableSwipe={false}
+    disableThumbnailScroll={false}
+    flickThreshold={0.4}
+    indexSeparator=" / "
+    infinite={true}
+    isRTL={false}
+    items={
+      Array [
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two cats",
+          "originalTitle": "Two cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Two more cats",
+          "originalTitle": "Two more cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "Much cats",
+          "originalTitle": "Much cats",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+        Object {
+          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          "originalAlt": "No dogs",
+          "originalTitle": "No dogs",
+          "sizes": "100w",
+          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+        },
+      ]
+    }
+    lazyLoad={true}
+    preventDefaultTouchmoveEvent={false}
+    renderFullscreenButton={[Function]}
+    renderLeftNav={[Function]}
+    renderPlayPauseButton={[Function]}
+    renderRightNav={[Function]}
+    showBullets={true}
+    showFullscreenButton={false}
+    showIndex={false}
+    showNav={true}
+    showPlayButton={false}
+    showThumbnails={false}
+    slideDuration={450}
+    slideInterval={3000}
+    startIndex={0}
+    stopPropagation={false}
+    swipeThreshold={30}
+    swipingTransitionDuration={0}
+    thumbnailPosition="bottom"
+    useBrowserFullscreen={true}
+    useTranslate3D={true}
+  >
+    <div
+      aria-live="polite"
+      className="image-gallery  "
+    >
+      <div
+        className="image-gallery-content"
+      >
+        <div
+          className="image-gallery-slide-wrapper bottom "
+        >
+          <span
+            key="navigation"
+          >
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron left"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+            <Button
+              as="button"
+              circular={true}
+              content={null}
+              disabled={false}
+              onClick={[Function]}
+              primary={true}
+            >
+              <button
+                className="ui circular primary button"
+                onClick={[Function]}
+                role="button"
+              >
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isCircular={false}
+                  isColorInverted={true}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="chevron right"
+                  path={null}
+                  size={null}
+                >
+                  <i
+                    className="icon inverted"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </button>
+            </Button>
+          </span>
+          <Swipeable
+            className="image-gallery-swipe"
+            delta={0}
+            disabled={false}
+            flickThreshold={0.4}
+            key="swipeable"
+            nodeName="div"
+            onSwiped={[Function]}
+            onSwiping={[Function]}
+            preventDefaultTouchmoveEvent={false}
+            rotationAngle={0}
+            stopPropagation={false}
+          >
+            <div
+              className="image-gallery-swipe"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="image-gallery-slides"
+              >
+                <div
+                  className="image-gallery-slide center"
+                  key="0"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(0%, 0, 0)",
+                      "OTransform": "translate3d(0%, 0, 0)",
+                      "WebkitTransform": "translate3d(0%, 0, 0)",
+                      "msTransform": "translate3d(0%, 0, 0)",
+                      "transform": "translate3d(0%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide right"
+                  key="1"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(100%, 0, 0)",
+                      "OTransform": "translate3d(100%, 0, 0)",
+                      "WebkitTransform": "translate3d(100%, 0, 0)",
+                      "msTransform": "translate3d(100%, 0, 0)",
+                      "transform": "translate3d(100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two more cats"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="Two more cats"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="image-gallery-slide"
+                  key="2"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(200%, 0, 0)",
+                      "OTransform": "translate3d(200%, 0, 0)",
+                      "WebkitTransform": "translate3d(200%, 0, 0)",
+                      "msTransform": "translate3d(200%, 0, 0)",
+                      "transform": "translate3d(200%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "height": "100%",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="image-gallery-slide left"
+                  key="3"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(-100%, 0, 0)",
+                      "OTransform": "translate3d(-100%, 0, 0)",
+                      "WebkitTransform": "translate3d(-100%, 0, 0)",
+                      "msTransform": "translate3d(-100%, 0, 0)",
+                      "transform": "translate3d(-100%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="No dogs"
+                      onError={[Function]}
+                      sizes="100w"
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w"
+                      title="No dogs"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Swipeable>
+          <div
+            className="image-gallery-bullets"
+          >
+            <div
+              aria-label="Bullet Navigation"
+              className="image-gallery-bullets-container"
+              role="navigation"
+            >
+              <button
+                aria-label="Go to Slide 1"
+                aria-pressed="true"
+                className="image-gallery-bullet active "
+                key="0"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 2"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="1"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 3"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="2"
+                onClick={[Function]}
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 4"
+                aria-pressed="false"
+                className="image-gallery-bullet  "
+                key="3"
+                onClick={[Function]}
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ImageGallery>
+</Slideshow>
+`;
