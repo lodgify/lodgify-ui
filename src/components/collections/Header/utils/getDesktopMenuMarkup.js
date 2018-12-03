@@ -24,9 +24,15 @@ export const getDesktopMenuMarkup = ({
   primaryCTA,
   /* eslint-enable react/prop-types */
 }) => (
-  <ShowOn computer parent="div" tablet widescreen>
-    <Menu.Menu position="right">
-      {navigationItems.map(({ subItems, text, href }, index) =>
+  <ShowOn
+    computer
+    parent={Menu.Menu}
+    parentProps={{ position: 'right' }}
+    tablet
+    widescreen
+  >
+    {navigationItems.map(
+      ({ subItems, text, href }, index) =>
         size(subItems) > 0 ? (
           <Submenu
             isMenuItem
@@ -47,14 +53,13 @@ export const getDesktopMenuMarkup = ({
         ) : (
           getLinkMarkup(text, href, index, activeNavigationItemIndex)
         )
-      )}
-      {primaryCTA && (
-        <Menu.Item className="no-underline" link>
-          <Button isRounded onClick={primaryCTA.onClick}>
-            {primaryCTA.text}
-          </Button>
-        </Menu.Item>
-      )}
-    </Menu.Menu>
+    )}
+    {primaryCTA && (
+      <Menu.Item className="no-underline" link>
+        <Button isRounded onClick={primaryCTA.onClick}>
+          {primaryCTA.text}
+        </Button>
+      </Menu.Item>
+    )}
   </ShowOn>
 );

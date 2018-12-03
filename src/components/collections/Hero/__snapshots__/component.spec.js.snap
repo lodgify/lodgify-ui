@@ -198,312 +198,85 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                     <ShowOn
                       computer={false}
                       mobile={true}
-                      parent="div"
-                      parentProps={Object {}}
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "position": "right",
+                        }
+                      }
                       tablet={false}
                       widescreen={false}
                     >
-                      <div
+                      <MenuMenu
                         className="hide-on-all-devices show-on-mobile"
+                        position="right"
                       >
-                        <MenuMenu
-                          position="right"
+                        <div
+                          className="right menu hide-on-all-devices show-on-mobile"
                         >
-                          <div
-                            className="right menu"
-                          >
-                            <MenuItem>
-                              <div
-                                className="item"
-                                onClick={[Function]}
-                              >
-                                <SearchBar
-                                  getIsDayBlocked={[Function]}
-                                  guestsOptions={
-                                    Array [
-                                      Object {
-                                        "href": "someHref",
-                                        "text": "someText",
-                                      },
-                                    ]
-                                  }
-                                  isDisplayedAsModal={true}
-                                  isFixed={false}
-                                  isShowingSummary={false}
-                                  locationOptions={
-                                    Array [
-                                      Object {
-                                        "href": "anotherHref",
-                                        "text": "anotherText",
-                                      },
-                                    ]
-                                  }
-                                  modalHeadingText="Heading"
-                                  modalSummaryElement={null}
-                                  modalTrigger={
-                                    <Icon
-                                      color={null}
-                                      hasBorder={false}
-                                      isCircular={false}
-                                      isColorInverted={false}
-                                      isDisabled={false}
-                                      isLabelLeft={false}
-                                      labelText={null}
-                                      labelWeight={null}
-                                      name="search"
-                                      path={null}
-                                      size={null}
-                                    />
-                                  }
-                                  onChangeInput={[Function]}
-                                  onSubmit={[Function]}
-                                  searchButton={
-                                    <Button
-                                      hasShadow={false}
-                                      icon="search"
-                                      isCompact={false}
-                                      isDisabled={false}
-                                      isLoading={false}
-                                      isPositionedRight={true}
-                                      isRounded={true}
-                                      isSecondary={false}
-                                      onClick={[Function]}
-                                      size={null}
-                                    >
-                                      Search
-                                    </Button>
-                                  }
-                                  summaryElement={null}
-                                  willDropdownsOpenAbove={false}
-                                >
-                                  <Modal
-                                    isFullscreen={true}
-                                    size="tiny"
-                                    trigger={
-                                      <Icon
-                                        color={null}
-                                        hasBorder={false}
-                                        isCircular={false}
-                                        isColorInverted={false}
-                                        isDisabled={false}
-                                        isLabelLeft={false}
-                                        labelText={null}
-                                        labelWeight={null}
-                                        name="search"
-                                        path={null}
-                                        size={null}
-                                      />
-                                    }
+                          <MenuItem>
+                            <div
+                              className="item"
+                              onClick={[Function]}
+                            >
+                              <SearchBar
+                                getIsDayBlocked={[Function]}
+                                guestsOptions={
+                                  Array [
+                                    Object {
+                                      "href": "someHref",
+                                      "text": "someText",
+                                    },
+                                  ]
+                                }
+                                isDisplayedAsModal={true}
+                                isFixed={false}
+                                isShowingSummary={false}
+                                locationOptions={
+                                  Array [
+                                    Object {
+                                      "href": "anotherHref",
+                                      "text": "anotherText",
+                                    },
+                                  ]
+                                }
+                                modalHeadingText="Heading"
+                                modalSummaryElement={null}
+                                modalTrigger={
+                                  <Icon
+                                    color={null}
+                                    hasBorder={false}
+                                    isCircular={false}
+                                    isColorInverted={false}
+                                    isDisabled={false}
+                                    isLabelLeft={false}
+                                    labelText={null}
+                                    labelWeight={null}
+                                    name="search"
+                                    path={null}
+                                    size={null}
+                                  />
+                                }
+                                onChangeInput={[Function]}
+                                onSubmit={[Function]}
+                                searchButton={
+                                  <Button
+                                    hasShadow={false}
+                                    icon="search"
+                                    isCompact={false}
+                                    isDisabled={false}
+                                    isLoading={false}
+                                    isPositionedRight={true}
+                                    isRounded={true}
+                                    isSecondary={false}
+                                    onClick={[Function]}
+                                    size={null}
                                   >
-                                    <Modal
-                                      closeIcon={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="close"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      closeOnDimmerClick={true}
-                                      closeOnDocumentClick={false}
-                                      content={
-                                        <ModalContent>
-                                          <Heading
-                                            isColorInverted={false}
-                                            size="small"
-                                            textAlign={null}
-                                          >
-                                            Heading
-                                          </Heading>
-                                          <Form
-                                            as="form"
-                                            onSubmit={[Function]}
-                                          >
-                                            <React.Fragment>
-                                              <FormField
-                                                width="twelve"
-                                              >
-                                                <Dropdown
-                                                  error={false}
-                                                  icon="map pin"
-                                                  isDisabled={false}
-                                                  isValid={false}
-                                                  label="Location"
-                                                  name="location"
-                                                  onBlur={[Function]}
-                                                  onChange={[Function]}
-                                                  options={
-                                                    Array [
-                                                      Object {
-                                                        "href": "anotherHref",
-                                                        "text": "anotherText",
-                                                      },
-                                                    ]
-                                                  }
-                                                  willOpenAbove={false}
-                                                />
-                                              </FormField>
-                                              <FormField
-                                                width="twelve"
-                                              >
-                                                <WithResponsive(DateRangePicker)
-                                                  endDatePlaceholderText="Check-out"
-                                                  getIsDayBlocked={[Function]}
-                                                  name="dates"
-                                                  onChange={[Function]}
-                                                  startDatePlaceholderText="Check-in"
-                                                  willOpenAbove={false}
-                                                />
-                                              </FormField>
-                                              <FormField
-                                                width="twelve"
-                                              >
-                                                <Dropdown
-                                                  error={false}
-                                                  icon="users"
-                                                  isDisabled={false}
-                                                  isValid={false}
-                                                  label="Guests"
-                                                  name="guests"
-                                                  onBlur={[Function]}
-                                                  onChange={[Function]}
-                                                  options={
-                                                    Array [
-                                                      Object {
-                                                        "href": "someHref",
-                                                        "text": "someText",
-                                                      },
-                                                    ]
-                                                  }
-                                                  willOpenAbove={false}
-                                                />
-                                              </FormField>
-                                              <FormField
-                                                width="twelve"
-                                              >
-                                                <Button
-                                                  hasShadow={false}
-                                                  icon="search"
-                                                  isCompact={false}
-                                                  isDisabled={false}
-                                                  isLoading={false}
-                                                  isPositionedRight={true}
-                                                  isRounded={true}
-                                                  isSecondary={false}
-                                                  onClick={[Function]}
-                                                  size={null}
-                                                >
-                                                  Search
-                                                </Button>
-                                              </FormField>
-                                            </React.Fragment>
-                                          </Form>
-                                        </ModalContent>
-                                      }
-                                      dimmer="inverted"
-                                      eventPool="Modal"
-                                      size="fullscreen"
-                                      trigger={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="search"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                    >
-                                      <Portal
-                                        className="ui inverted page modals dimmer transition visible active"
-                                        closeOnDocumentClick={false}
-                                        closeOnEscape={true}
-                                        closeOnRootNodeClick={true}
-                                        eventPool="Modal"
-                                        mountNode={<body />}
-                                        onClose={[Function]}
-                                        onMount={[Function]}
-                                        onOpen={[Function]}
-                                        onUnmount={[Function]}
-                                        openOnTriggerClick={true}
-                                        trigger={
-                                          <Icon
-                                            color={null}
-                                            hasBorder={false}
-                                            isCircular={false}
-                                            isColorInverted={false}
-                                            isDisabled={false}
-                                            isLabelLeft={false}
-                                            labelText={null}
-                                            labelWeight={null}
-                                            name="search"
-                                            path={null}
-                                            size={null}
-                                          />
-                                        }
-                                      >
-                                        <Ref
-                                          innerRef={[Function]}
-                                        >
-                                          <Icon
-                                            color={null}
-                                            hasBorder={false}
-                                            isCircular={false}
-                                            isColorInverted={false}
-                                            isDisabled={false}
-                                            isLabelLeft={false}
-                                            labelText={null}
-                                            labelWeight={null}
-                                            name="search"
-                                            onBlur={[Function]}
-                                            onClick={[Function]}
-                                            onFocus={[Function]}
-                                            onMouseEnter={[Function]}
-                                            onMouseLeave={[Function]}
-                                            path={null}
-                                            size={null}
-                                          >
-                                            <i
-                                              className="icon"
-                                              onBlur={[Function]}
-                                              onClick={[Function]}
-                                              onFocus={[Function]}
-                                              onMouseEnter={[Function]}
-                                              onMouseLeave={[Function]}
-                                            >
-                                              <svg
-                                                viewBox="0 0 24 24"
-                                              >
-                                                <path
-                                                  d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
-                                                  fill="currentColor"
-                                                />
-                                              </svg>
-                                            </i>
-                                          </Icon>
-                                        </Ref>
-                                      </Portal>
-                                    </Modal>
-                                  </Modal>
-                                </SearchBar>
-                              </div>
-                            </MenuItem>
-                            <MenuItem>
-                              <div
-                                className="item"
-                                onClick={[Function]}
+                                    Search
+                                  </Button>
+                                }
+                                summaryElement={null}
+                                willDropdownsOpenAbove={false}
                               >
                                 <Modal
                                   isFullscreen={true}
@@ -518,7 +291,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                       isLabelLeft={false}
                                       labelText={null}
                                       labelWeight={null}
-                                      name="bars"
+                                      name="search"
                                       path={null}
                                       size={null}
                                     />
@@ -543,29 +316,98 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                     closeOnDimmerClick={true}
                                     closeOnDocumentClick={false}
                                     content={
-                                      <Menu
-                                        text={true}
-                                        vertical={true}
-                                      >
-                                        <MenuItem
-                                          href="/"
-                                          link={true}
+                                      <ModalContent>
+                                        <Heading
+                                          isColorInverted={false}
+                                          size="small"
+                                          textAlign={null}
                                         >
-                                          <Image
-                                            alt="Livingstone Cottage"
-                                            as="img"
-                                            src="https://darkgreen.com"
-                                            ui={true}
-                                          />
-                                        </MenuItem>
-                                        <MenuItem
-                                          active={false}
-                                          href="/"
-                                          link={true}
+                                          Heading
+                                        </Heading>
+                                        <Form
+                                          as="form"
+                                          onSubmit={[Function]}
                                         >
-                                          Home
-                                        </MenuItem>
-                                      </Menu>
+                                          <React.Fragment>
+                                            <FormField
+                                              width="twelve"
+                                            >
+                                              <Dropdown
+                                                error={false}
+                                                icon="map pin"
+                                                isDisabled={false}
+                                                isValid={false}
+                                                label="Location"
+                                                name="location"
+                                                onBlur={[Function]}
+                                                onChange={[Function]}
+                                                options={
+                                                  Array [
+                                                    Object {
+                                                      "href": "anotherHref",
+                                                      "text": "anotherText",
+                                                    },
+                                                  ]
+                                                }
+                                                willOpenAbove={false}
+                                              />
+                                            </FormField>
+                                            <FormField
+                                              width="twelve"
+                                            >
+                                              <WithResponsive(DateRangePicker)
+                                                endDatePlaceholderText="Check-out"
+                                                getIsDayBlocked={[Function]}
+                                                name="dates"
+                                                onChange={[Function]}
+                                                startDatePlaceholderText="Check-in"
+                                                willOpenAbove={false}
+                                              />
+                                            </FormField>
+                                            <FormField
+                                              width="twelve"
+                                            >
+                                              <Dropdown
+                                                error={false}
+                                                icon="users"
+                                                isDisabled={false}
+                                                isValid={false}
+                                                label="Guests"
+                                                name="guests"
+                                                onBlur={[Function]}
+                                                onChange={[Function]}
+                                                options={
+                                                  Array [
+                                                    Object {
+                                                      "href": "someHref",
+                                                      "text": "someText",
+                                                    },
+                                                  ]
+                                                }
+                                                willOpenAbove={false}
+                                              />
+                                            </FormField>
+                                            <FormField
+                                              width="twelve"
+                                            >
+                                              <Button
+                                                hasShadow={false}
+                                                icon="search"
+                                                isCompact={false}
+                                                isDisabled={false}
+                                                isLoading={false}
+                                                isPositionedRight={true}
+                                                isRounded={true}
+                                                isSecondary={false}
+                                                onClick={[Function]}
+                                                size={null}
+                                              >
+                                                Search
+                                              </Button>
+                                            </FormField>
+                                          </React.Fragment>
+                                        </Form>
+                                      </ModalContent>
                                     }
                                     dimmer="inverted"
                                     eventPool="Modal"
@@ -580,7 +422,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                         isLabelLeft={false}
                                         labelText={null}
                                         labelWeight={null}
-                                        name="bars"
+                                        name="search"
                                         path={null}
                                         size={null}
                                       />
@@ -608,7 +450,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                           isLabelLeft={false}
                                           labelText={null}
                                           labelWeight={null}
-                                          name="bars"
+                                          name="search"
                                           path={null}
                                           size={null}
                                         />
@@ -626,7 +468,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                           isLabelLeft={false}
                                           labelText={null}
                                           labelWeight={null}
-                                          name="bars"
+                                          name="search"
                                           onBlur={[Function]}
                                           onClick={[Function]}
                                           onFocus={[Function]}
@@ -647,7 +489,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                               viewBox="0 0 24 24"
                                             >
                                               <path
-                                                d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                                                d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
                                                 fill="currentColor"
                                               />
                                             </svg>
@@ -657,89 +499,249 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                     </Portal>
                                   </Modal>
                                 </Modal>
-                              </div>
-                            </MenuItem>
-                          </div>
-                        </MenuMenu>
-                      </div>
+                              </SearchBar>
+                            </div>
+                          </MenuItem>
+                          <MenuItem>
+                            <div
+                              className="item"
+                              onClick={[Function]}
+                            >
+                              <Modal
+                                isFullscreen={true}
+                                size="tiny"
+                                trigger={
+                                  <Icon
+                                    color={null}
+                                    hasBorder={false}
+                                    isCircular={false}
+                                    isColorInverted={false}
+                                    isDisabled={false}
+                                    isLabelLeft={false}
+                                    labelText={null}
+                                    labelWeight={null}
+                                    name="bars"
+                                    path={null}
+                                    size={null}
+                                  />
+                                }
+                              >
+                                <Modal
+                                  closeIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="close"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  closeOnDimmerClick={true}
+                                  closeOnDocumentClick={false}
+                                  content={
+                                    <Menu
+                                      text={true}
+                                      vertical={true}
+                                    >
+                                      <MenuItem
+                                        href="/"
+                                        link={true}
+                                      >
+                                        <Image
+                                          alt="Livingstone Cottage"
+                                          as="img"
+                                          src="https://darkgreen.com"
+                                          ui={true}
+                                        />
+                                      </MenuItem>
+                                      <MenuItem
+                                        active={false}
+                                        href="/"
+                                        link={true}
+                                      >
+                                        Home
+                                      </MenuItem>
+                                    </Menu>
+                                  }
+                                  dimmer="inverted"
+                                  eventPool="Modal"
+                                  size="fullscreen"
+                                  trigger={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="bars"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                >
+                                  <Portal
+                                    className="ui inverted page modals dimmer transition visible active"
+                                    closeOnDocumentClick={false}
+                                    closeOnEscape={true}
+                                    closeOnRootNodeClick={true}
+                                    eventPool="Modal"
+                                    mountNode={<body />}
+                                    onClose={[Function]}
+                                    onMount={[Function]}
+                                    onOpen={[Function]}
+                                    onUnmount={[Function]}
+                                    openOnTriggerClick={true}
+                                    trigger={
+                                      <Icon
+                                        color={null}
+                                        hasBorder={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="bars"
+                                        path={null}
+                                        size={null}
+                                      />
+                                    }
+                                  >
+                                    <Ref
+                                      innerRef={[Function]}
+                                    >
+                                      <Icon
+                                        color={null}
+                                        hasBorder={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="bars"
+                                        onBlur={[Function]}
+                                        onClick={[Function]}
+                                        onFocus={[Function]}
+                                        onMouseEnter={[Function]}
+                                        onMouseLeave={[Function]}
+                                        path={null}
+                                        size={null}
+                                      >
+                                        <i
+                                          className="icon"
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseEnter={[Function]}
+                                          onMouseLeave={[Function]}
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                      </Icon>
+                                    </Ref>
+                                  </Portal>
+                                </Modal>
+                              </Modal>
+                            </div>
+                          </MenuItem>
+                        </div>
+                      </MenuMenu>
                     </ShowOn>
                     <ShowOn
                       computer={true}
                       mobile={false}
-                      parent="div"
-                      parentProps={Object {}}
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "position": "right",
+                        }
+                      }
                       tablet={true}
                       widescreen={true}
                     >
-                      <div
+                      <MenuMenu
                         className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                        position="right"
                       >
-                        <MenuMenu
-                          position="right"
+                        <div
+                          className="right menu hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
                         >
-                          <div
-                            className="right menu"
+                          <MenuItem
+                            active={false}
+                            href="/"
+                            key="Home0"
+                            link={true}
                           >
-                            <MenuItem
-                              active={false}
+                            <a
+                              className="link item"
                               href="/"
-                              key="Home0"
-                              link={true}
+                              onClick={[Function]}
                             >
-                              <a
-                                className="link item"
-                                href="/"
-                                onClick={[Function]}
-                              >
-                                Home
-                              </a>
-                            </MenuItem>
-                            <MenuItem
-                              className="no-underline"
-                              link={true}
+                              Home
+                            </a>
+                          </MenuItem>
+                          <MenuItem
+                            className="no-underline"
+                            link={true}
+                          >
+                            <div
+                              className="link item no-underline"
+                              onClick={[Function]}
                             >
-                              <div
-                                className="link item no-underline"
+                              <Button
+                                hasShadow={false}
+                                icon={null}
+                                isCompact={false}
+                                isDisabled={false}
+                                isLoading={false}
+                                isPositionedRight={false}
+                                isRounded={true}
+                                isSecondary={false}
                                 onClick={[Function]}
+                                size={null}
                               >
                                 <Button
-                                  hasShadow={false}
-                                  icon={null}
-                                  isCompact={false}
-                                  isDisabled={false}
-                                  isLoading={false}
-                                  isPositionedRight={false}
-                                  isRounded={true}
-                                  isSecondary={false}
+                                  as="button"
+                                  circular={true}
+                                  className=""
+                                  compact={false}
+                                  disabled={false}
+                                  floated="left"
+                                  loading={false}
                                   onClick={[Function]}
+                                  secondary={false}
                                   size={null}
                                 >
-                                  <Button
-                                    as="button"
-                                    circular={true}
-                                    className=""
-                                    compact={false}
-                                    disabled={false}
-                                    floated="left"
-                                    loading={false}
+                                  <button
+                                    className="ui circular left floated button"
                                     onClick={[Function]}
-                                    secondary={false}
-                                    size={null}
+                                    role="button"
                                   >
-                                    <button
-                                      className="ui circular left floated button"
-                                      onClick={[Function]}
-                                      role="button"
-                                    >
-                                      Book now
-                                    </button>
-                                  </Button>
+                                    Book now
+                                  </button>
                                 </Button>
-                              </div>
-                            </MenuItem>
-                          </div>
-                        </MenuMenu>
-                      </div>
+                              </Button>
+                            </div>
+                          </MenuItem>
+                        </div>
+                      </MenuMenu>
                     </ShowOn>
                   </div>
                 </Menu>

@@ -86,378 +86,358 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
             </div>
           </GridColumn>
         </GridColumn>
-        <GridRow
-          horizontalAlignContent="left"
+        <GridColumn
+          computer={6}
+          tablet={12}
+          verticalAlignContent="top"
+          width={null}
         >
-          <GridRow
-            textAlign="left"
+          <GridColumn
+            computer={6}
+            tablet={12}
+            verticalAlign="top"
+            width={null}
           >
             <div
-              className="left aligned row"
+              className="top aligned six wide computer twelve wide tablet column"
             >
-              <GridColumn
-                computer={12}
-                tablet={12}
-                verticalAlignContent="top"
-                width={null}
+              <Paragraph
+                key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.0"
+                size="medium"
+                weight={null}
               >
-                <GridColumn
-                  computer={12}
-                  tablet={12}
-                  verticalAlign="top"
-                  width={null}
+                <p
+                  className=""
                 >
-                  <div
-                    className="top aligned twelve wide computer twelve wide tablet column"
-                  >
-                    <Paragraph
-                      key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.0"
-                      size="medium"
-                      weight={null}
-                    >
-                      <p
-                        className=""
-                      >
-                        Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                      </p>
-                    </Paragraph>
-                  </div>
-                </GridColumn>
-              </GridColumn>
+                  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </p>
+              </Paragraph>
             </div>
-          </GridRow>
-        </GridRow>
+          </GridColumn>
+        </GridColumn>
         <ShowOn
-          computer={false}
-          computers={true}
+          computer={true}
           mobile={false}
           parent={[Function]}
-          parentProps={Object {}}
+          parentProps={
+            Object {
+              "computer": 6,
+              "tablet": 12,
+            }
+          }
           tablet={true}
           widescreen={true}
         >
-          <GridRow
-            className="hide-on-all-devices show-on-tablet show-on-widescreen"
-            horizontalAlignContent="left"
+          <GridColumn
+            className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+            computer={6}
+            tablet={12}
+            verticalAlignContent="top"
+            width={null}
           >
-            <GridRow
-              className="hide-on-all-devices show-on-tablet show-on-widescreen"
-              textAlign="left"
+            <GridColumn
+              className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+              computer={6}
+              tablet={12}
+              verticalAlign="top"
+              width={null}
             >
               <div
-                className="left aligned row hide-on-all-devices show-on-tablet show-on-widescreen"
+                className="top aligned six wide computer twelve wide tablet column hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
               >
-                <GridColumn
-                  computer={12}
-                  tablet={12}
-                  verticalAlignContent="top"
-                  width={null}
-                >
-                  <GridColumn
-                    computer={12}
-                    tablet={12}
-                    verticalAlign="top"
-                    width={null}
+                <LabelGroup>
+                  <div
+                    className="ui labels"
                   >
-                    <div
-                      className="top aligned twelve wide computer twelve wide tablet column"
-                    >
-                      <LabelGroup>
-                        <div
-                          className="ui labels"
-                        >
-                          <IconCard
-                            isDisabled={false}
-                            isFilled={true}
-                            isLeftAligned={false}
-                            key="Airport0"
-                            label="
+                    <IconCard
+                      isDisabled={false}
+                      isFilled={true}
+                      isLeftAligned={false}
+                      key="Airport0"
+                      label="
   20km
   Airport
 "
-                            name="plane"
-                            size="medium"
-                          >
-                            <Label
-                              basic={false}
-                              className="icon-card"
-                            >
-                              <div
-                                className="ui label icon-card"
-                                onClick={[Function]}
-                              >
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="plane"
-                                  path={null}
-                                  size="big"
-                                >
-                                  <i
-                                    className="icon big"
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M21.33,15.12,14.5,9.27a18,18,0,0,0-.65-5.5C13.33,2.31,12.56,2,12,2s-1.33.31-1.85,1.77a18,18,0,0,0-.65,5.5L2.67,15.12a.5.5,0,0,0-.17.38v2a.48.48,0,0,0,.25.43.5.5,0,0,0,.5,0l6.33-3.61.34,3.42L7.74,19.07a.51.51,0,0,0-.24.43v2a.49.49,0,0,0,.19.39.48.48,0,0,0,.43.09L12,21l3.88,1L16,22h0a.51.51,0,0,0,.31-.11.49.49,0,0,0,.19-.39v-2a.51.51,0,0,0-.24-.43l-2.18-1.33.34-3.42,6.33,3.61a.5.5,0,0,0,.5,0,.48.48,0,0,0,.25-.43v-2A.5.5,0,0,0,21.33,15.12Zm-.83,1.52-6.25-3.57a.5.5,0,0,0-.75.38L13.05,18a.5.5,0,0,0,.24.48l2.21,1.35v1.08L12.12,20h-.24l-3.38.85V19.78l2.21-1.35A.51.51,0,0,0,11,18l-.45-4.5a.52.52,0,0,0-.27-.4.54.54,0,0,0-.48,0L3.5,16.64v-.91l6.82-5.85a.51.51,0,0,0,.18-.38c0-4.8.81-6.5,1.5-6.5s1.5,1.7,1.5,6.5a.5.5,0,0,0,.17.38l6.83,5.85Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <Paragraph
-                                  key="20km0"
-                                  size="medium"
-                                  weight={null}
-                                >
-                                  <p
-                                    className=""
-                                  >
-                                    20km
-                                  </p>
-                                </Paragraph>
-                                <Paragraph
-                                  key="Airport1"
-                                  size="medium"
-                                  weight={null}
-                                >
-                                  <p
-                                    className=""
-                                  >
-                                    Airport
-                                  </p>
-                                </Paragraph>
-                              </div>
-                            </Label>
-                          </IconCard>
-                          <IconCard
+                      name="plane"
+                      size="medium"
+                    >
+                      <Label
+                        basic={false}
+                        className="icon-card"
+                      >
+                        <div
+                          className="ui label icon-card"
+                          onClick={[Function]}
+                        >
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isCircular={false}
+                            isColorInverted={false}
                             isDisabled={false}
-                            isFilled={true}
-                            isLeftAligned={false}
-                            key="Bus1"
-                            label="
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="plane"
+                            path={null}
+                            size="big"
+                          >
+                            <i
+                              className="icon big"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M21.33,15.12,14.5,9.27a18,18,0,0,0-.65-5.5C13.33,2.31,12.56,2,12,2s-1.33.31-1.85,1.77a18,18,0,0,0-.65,5.5L2.67,15.12a.5.5,0,0,0-.17.38v2a.48.48,0,0,0,.25.43.5.5,0,0,0,.5,0l6.33-3.61.34,3.42L7.74,19.07a.51.51,0,0,0-.24.43v2a.49.49,0,0,0,.19.39.48.48,0,0,0,.43.09L12,21l3.88,1L16,22h0a.51.51,0,0,0,.31-.11.49.49,0,0,0,.19-.39v-2a.51.51,0,0,0-.24-.43l-2.18-1.33.34-3.42,6.33,3.61a.5.5,0,0,0,.5,0,.48.48,0,0,0,.25-.43v-2A.5.5,0,0,0,21.33,15.12Zm-.83,1.52-6.25-3.57a.5.5,0,0,0-.75.38L13.05,18a.5.5,0,0,0,.24.48l2.21,1.35v1.08L12.12,20h-.24l-3.38.85V19.78l2.21-1.35A.51.51,0,0,0,11,18l-.45-4.5a.52.52,0,0,0-.27-.4.54.54,0,0,0-.48,0L3.5,16.64v-.91l6.82-5.85a.51.51,0,0,0,.18-.38c0-4.8.81-6.5,1.5-6.5s1.5,1.7,1.5,6.5a.5.5,0,0,0,.17.38l6.83,5.85Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                          <Paragraph
+                            key="20km0"
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              20km
+                            </p>
+                          </Paragraph>
+                          <Paragraph
+                            key="Airport1"
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Airport
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Label>
+                    </IconCard>
+                    <IconCard
+                      isDisabled={false}
+                      isFilled={true}
+                      isLeftAligned={false}
+                      key="Bus1"
+                      label="
   2km
   Bus
 "
-                            name="bus"
-                            size="medium"
-                          >
-                            <Label
-                              basic={false}
-                              className="icon-card"
-                            >
-                              <div
-                                className="ui label icon-card"
-                                onClick={[Function]}
-                              >
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="bus"
-                                  path={null}
-                                  size="big"
-                                >
-                                  <i
-                                    className="icon big"
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M21.85,11.94h0l-.71-5A1.69,1.69,0,0,0,19.5,5.5H4.5A2.5,2.5,0,0,0,2,8v8a1.5,1.5,0,0,0,1.5,1.5h.77a2,2,0,0,0,3.46,0h7.54a2,2,0,0,0,3.46,0H20.5A1.5,1.5,0,0,0,22,16V14A17.84,17.84,0,0,0,21.85,11.94ZM20.64,10.5H17v-2h3.35ZM3,8A1.5,1.5,0,0,1,4.5,6.5h15a.7.7,0,0,1,.65.56l.06.44H16.5A.5.5,0,0,0,16,8v3a.5.5,0,0,0,.5.5h4.28l.08.58c0,.12,0,.27.05.42H3Zm3,9.5a1,1,0,1,1,1-1A1,1,0,0,1,6,17.5Zm11,0a1,1,0,1,1,1-1A1,1,0,0,1,17,17.5Zm4-3h-.5a.5.5,0,0,0,0,1H21V16a.5.5,0,0,1-.5.5H19a2,2,0,0,0-4,0H8a2,2,0,0,0-4,0H3.5A.5.5,0,0,1,3,16V13.5H21c0,.18,0,.36,0,.5ZM8.5,7.5h-4A.5.5,0,0,0,4,8v3a.5.5,0,0,0,.5.5h4A.5.5,0,0,0,9,11V8A.5.5,0,0,0,8.5,7.5Zm-.5,3H5v-2H8Zm6.5-3h-4A.5.5,0,0,0,10,8v3a.5.5,0,0,0,.5.5h4A.5.5,0,0,0,15,11V8A.5.5,0,0,0,14.5,7.5Zm-.5,3H11v-2h3Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <Paragraph
-                                  key="2km0"
-                                  size="medium"
-                                  weight={null}
-                                >
-                                  <p
-                                    className=""
-                                  >
-                                    2km
-                                  </p>
-                                </Paragraph>
-                                <Paragraph
-                                  key="Bus1"
-                                  size="medium"
-                                  weight={null}
-                                >
-                                  <p
-                                    className=""
-                                  >
-                                    Bus
-                                  </p>
-                                </Paragraph>
-                              </div>
-                            </Label>
-                          </IconCard>
-                          <IconCard
+                      name="bus"
+                      size="medium"
+                    >
+                      <Label
+                        basic={false}
+                        className="icon-card"
+                      >
+                        <div
+                          className="ui label icon-card"
+                          onClick={[Function]}
+                        >
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isCircular={false}
+                            isColorInverted={false}
                             isDisabled={false}
-                            isFilled={true}
-                            isLeftAligned={false}
-                            key="Motorway2"
-                            label="
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="bus"
+                            path={null}
+                            size="big"
+                          >
+                            <i
+                              className="icon big"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M21.85,11.94h0l-.71-5A1.69,1.69,0,0,0,19.5,5.5H4.5A2.5,2.5,0,0,0,2,8v8a1.5,1.5,0,0,0,1.5,1.5h.77a2,2,0,0,0,3.46,0h7.54a2,2,0,0,0,3.46,0H20.5A1.5,1.5,0,0,0,22,16V14A17.84,17.84,0,0,0,21.85,11.94ZM20.64,10.5H17v-2h3.35ZM3,8A1.5,1.5,0,0,1,4.5,6.5h15a.7.7,0,0,1,.65.56l.06.44H16.5A.5.5,0,0,0,16,8v3a.5.5,0,0,0,.5.5h4.28l.08.58c0,.12,0,.27.05.42H3Zm3,9.5a1,1,0,1,1,1-1A1,1,0,0,1,6,17.5Zm11,0a1,1,0,1,1,1-1A1,1,0,0,1,17,17.5Zm4-3h-.5a.5.5,0,0,0,0,1H21V16a.5.5,0,0,1-.5.5H19a2,2,0,0,0-4,0H8a2,2,0,0,0-4,0H3.5A.5.5,0,0,1,3,16V13.5H21c0,.18,0,.36,0,.5ZM8.5,7.5h-4A.5.5,0,0,0,4,8v3a.5.5,0,0,0,.5.5h4A.5.5,0,0,0,9,11V8A.5.5,0,0,0,8.5,7.5Zm-.5,3H5v-2H8Zm6.5-3h-4A.5.5,0,0,0,10,8v3a.5.5,0,0,0,.5.5h4A.5.5,0,0,0,15,11V8A.5.5,0,0,0,14.5,7.5Zm-.5,3H11v-2h3Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                          <Paragraph
+                            key="2km0"
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              2km
+                            </p>
+                          </Paragraph>
+                          <Paragraph
+                            key="Bus1"
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Bus
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Label>
+                    </IconCard>
+                    <IconCard
+                      isDisabled={false}
+                      isFilled={true}
+                      isLeftAligned={false}
+                      key="Motorway2"
+                      label="
   12km
   Motorway
 "
-                            name="road"
-                            size="medium"
-                          >
-                            <Label
-                              basic={false}
-                              className="icon-card"
-                            >
-                              <div
-                                className="ui label icon-card"
-                                onClick={[Function]}
-                              >
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="road"
-                                  path={null}
-                                  size="big"
-                                >
-                                  <i
-                                    className="icon big"
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M12.5,7.5v4a.5.5,0,0,1-1,0v-4a.5.5,0,0,1,1,0ZM7.1,2a.5.5,0,0,0-.59.39l-4,19A.51.51,0,0,0,2.9,22H3a.5.5,0,0,0,.49-.4l4-19A.5.5,0,0,0,7.1,2ZM12,15a.5.5,0,0,0-.5.5v6a.5.5,0,0,0,1,0v-6A.5.5,0,0,0,12,15ZM12,2a.5.5,0,0,0-.5.5v2a.5.5,0,0,0,1,0v-2A.5.5,0,0,0,12,2Zm9.49,19.4-4-19a.5.5,0,1,0-1,.2l4,19A.5.5,0,0,0,21,22h.1A.51.51,0,0,0,21.49,21.4Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <Paragraph
-                                  key="12km0"
-                                  size="medium"
-                                  weight={null}
-                                >
-                                  <p
-                                    className=""
-                                  >
-                                    12km
-                                  </p>
-                                </Paragraph>
-                                <Paragraph
-                                  key="Motorway1"
-                                  size="medium"
-                                  weight={null}
-                                >
-                                  <p
-                                    className=""
-                                  >
-                                    Motorway
-                                  </p>
-                                </Paragraph>
-                              </div>
-                            </Label>
-                          </IconCard>
-                          <IconCard
+                      name="road"
+                      size="medium"
+                    >
+                      <Label
+                        basic={false}
+                        className="icon-card"
+                      >
+                        <div
+                          className="ui label icon-card"
+                          onClick={[Function]}
+                        >
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isCircular={false}
+                            isColorInverted={false}
                             isDisabled={false}
-                            isFilled={true}
-                            isLeftAligned={false}
-                            key="Underground3"
-                            label="
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="road"
+                            path={null}
+                            size="big"
+                          >
+                            <i
+                              className="icon big"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M12.5,7.5v4a.5.5,0,0,1-1,0v-4a.5.5,0,0,1,1,0ZM7.1,2a.5.5,0,0,0-.59.39l-4,19A.51.51,0,0,0,2.9,22H3a.5.5,0,0,0,.49-.4l4-19A.5.5,0,0,0,7.1,2ZM12,15a.5.5,0,0,0-.5.5v6a.5.5,0,0,0,1,0v-6A.5.5,0,0,0,12,15ZM12,2a.5.5,0,0,0-.5.5v2a.5.5,0,0,0,1,0v-2A.5.5,0,0,0,12,2Zm9.49,19.4-4-19a.5.5,0,1,0-1,.2l4,19A.5.5,0,0,0,21,22h.1A.51.51,0,0,0,21.49,21.4Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                          <Paragraph
+                            key="12km0"
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              12km
+                            </p>
+                          </Paragraph>
+                          <Paragraph
+                            key="Motorway1"
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Motorway
+                            </p>
+                          </Paragraph>
+                        </div>
+                      </Label>
+                    </IconCard>
+                    <IconCard
+                      isDisabled={false}
+                      isFilled={true}
+                      isLeftAligned={false}
+                      key="Underground3"
+                      label="
   2km
   Underground
 "
+                      name="train"
+                      size="medium"
+                    >
+                      <Label
+                        basic={false}
+                        className="icon-card"
+                      >
+                        <div
+                          className="ui label icon-card"
+                          onClick={[Function]}
+                        >
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
                             name="train"
-                            size="medium"
+                            path={null}
+                            size="big"
                           >
-                            <Label
-                              basic={false}
-                              className="icon-card"
+                            <i
+                              className="icon big"
                             >
-                              <div
-                                className="ui label icon-card"
-                                onClick={[Function]}
+                              <svg
+                                viewBox="0 0 24 24"
                               >
-                                <Icon
-                                  color={null}
-                                  hasBorder={false}
-                                  isCircular={false}
-                                  isColorInverted={false}
-                                  isDisabled={false}
-                                  isLabelLeft={false}
-                                  labelText={null}
-                                  labelWeight={null}
-                                  name="train"
-                                  path={null}
-                                  size="big"
-                                >
-                                  <i
-                                    className="icon big"
-                                  >
-                                    <svg
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M7,11H17a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,17,6H7a.5.5,0,0,0-.5.5v4A.5.5,0,0,0,7,11Zm5.5-4h4v3h-4Zm-5,0h4v3h-4ZM8,15a1.5,1.5,0,1,0-1.5-1.5A1.5,1.5,0,0,0,8,15Zm0-2a.5.5,0,1,1-.5.5A.5.5,0,0,1,8,13Zm.5-8.5A.5.5,0,0,1,9,4h6a.5.5,0,0,1,0,1H9A.5.5,0,0,1,8.5,4.5ZM16,12a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,12Zm0,2a.5.5,0,1,1,.5-.5A.5.5,0,0,1,16,14ZM7,17H17a2.5,2.5,0,0,0,2.5-2.5V4.5A2.5,2.5,0,0,0,17,2H7A2.5,2.5,0,0,0,4.5,4.5v10A2.5,2.5,0,0,0,7,17ZM5.5,4.5A1.5,1.5,0,0,1,7,3H17a1.5,1.5,0,0,1,1.5,1.5v10A1.5,1.5,0,0,1,17,16H7a1.5,1.5,0,0,1-1.5-1.5Zm16,16.78-2-4a.5.5,0,1,0-.9.44l.14.28H5.31l.14-.28a.5.5,0,1,0-.9-.44l-2,4a.51.51,0,0,0,.23.67A.54.54,0,0,0,3,22a.5.5,0,0,0,.45-.28L3.81,21H20.19l.36.72A.5.5,0,0,0,21,22a.54.54,0,0,0,.22-.05A.51.51,0,0,0,21.45,21.28ZM4.31,20l.5-1H19.19l.5,1Z"
-                                        fill="currentColor"
-                                      />
-                                    </svg>
-                                  </i>
-                                </Icon>
-                                <Paragraph
-                                  key="2km0"
-                                  size="medium"
-                                  weight={null}
-                                >
-                                  <p
-                                    className=""
-                                  >
-                                    2km
-                                  </p>
-                                </Paragraph>
-                                <Paragraph
-                                  key="Underground1"
-                                  size="medium"
-                                  weight={null}
-                                >
-                                  <p
-                                    className=""
-                                  >
-                                    Underground
-                                  </p>
-                                </Paragraph>
-                              </div>
-                            </Label>
-                          </IconCard>
+                                <path
+                                  d="M7,11H17a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,17,6H7a.5.5,0,0,0-.5.5v4A.5.5,0,0,0,7,11Zm5.5-4h4v3h-4Zm-5,0h4v3h-4ZM8,15a1.5,1.5,0,1,0-1.5-1.5A1.5,1.5,0,0,0,8,15Zm0-2a.5.5,0,1,1-.5.5A.5.5,0,0,1,8,13Zm.5-8.5A.5.5,0,0,1,9,4h6a.5.5,0,0,1,0,1H9A.5.5,0,0,1,8.5,4.5ZM16,12a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,12Zm0,2a.5.5,0,1,1,.5-.5A.5.5,0,0,1,16,14ZM7,17H17a2.5,2.5,0,0,0,2.5-2.5V4.5A2.5,2.5,0,0,0,17,2H7A2.5,2.5,0,0,0,4.5,4.5v10A2.5,2.5,0,0,0,7,17ZM5.5,4.5A1.5,1.5,0,0,1,7,3H17a1.5,1.5,0,0,1,1.5,1.5v10A1.5,1.5,0,0,1,17,16H7a1.5,1.5,0,0,1-1.5-1.5Zm16,16.78-2-4a.5.5,0,1,0-.9.44l.14.28H5.31l.14-.28a.5.5,0,1,0-.9-.44l-2,4a.51.51,0,0,0,.23.67A.54.54,0,0,0,3,22a.5.5,0,0,0,.45-.28L3.81,21H20.19l.36.72A.5.5,0,0,0,21,22a.54.54,0,0,0,.22-.05A.51.51,0,0,0,21.45,21.28ZM4.31,20l.5-1H19.19l.5,1Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                          <Paragraph
+                            key="2km0"
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              2km
+                            </p>
+                          </Paragraph>
+                          <Paragraph
+                            key="Underground1"
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Underground
+                            </p>
+                          </Paragraph>
                         </div>
-                      </LabelGroup>
-                    </div>
-                  </GridColumn>
-                </GridColumn>
+                      </Label>
+                    </IconCard>
+                  </div>
+                </LabelGroup>
               </div>
-            </GridRow>
-          </GridRow>
+            </GridColumn>
+          </GridColumn>
         </ShowOn>
         <GridColumn
           verticalAlignContent="top"
