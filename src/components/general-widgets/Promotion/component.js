@@ -54,10 +54,14 @@ export const Component = ({
           />
           <Grid padded>
             <GridRow verticalAlign="top">
-              <ShowOn computer tablet widescreen>
-                <GridColumn textAlign="left" width={12}>
-                  <Heading>{headingText}</Heading>
-                </GridColumn>
+              <ShowOn
+                computer
+                parent={GridColumn}
+                parentProps={{ textAlign: 'left', width: 12 }}
+                tablet
+                widescreen
+              >
+                <Heading>{headingText}</Heading>
               </ShowOn>
               <ShowOn
                 mobile

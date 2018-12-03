@@ -9,7 +9,6 @@ import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { GoogleMap } from 'elements/GoogleMap';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
-import { GridRow } from 'layout/GridRow';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { ShowOn } from 'layout/ShowOn';
@@ -41,23 +40,25 @@ const Component = ({
       <Subheading>{locationSummary}</Subheading>
     </GridColumn>
     {!!locationDescription && (
-      <GridRow>
-        <GridColumn computer={12} tablet={12}>
-          {getParagraphsFromStrings(locationDescription).map(
-            (paragraphText, index) => (
-              <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-                {paragraphText}
-              </Paragraph>
-            )
-          )}
-        </GridColumn>
-      </GridRow>
+      <GridColumn computer={6} tablet={12}>
+        {getParagraphsFromStrings(locationDescription).map(
+          (paragraphText, index) => (
+            <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
+              {paragraphText}
+            </Paragraph>
+          )
+        )}
+      </GridColumn>
     )}
     {size(transportOptions) > 0 && (
-      <ShowOn computers parent={GridRow} tablet widescreen>
-        <GridColumn computer={12} tablet={12}>
-          {getTransportOptionsMarkup(transportOptions)}
-        </GridColumn>
+      <ShowOn
+        computer
+        parent={GridColumn}
+        parentProps={{ computer: 6, tablet: 12 }}
+        tablet
+        widescreen
+      >
+        {getTransportOptionsMarkup(transportOptions)}
       </ShowOn>
     )}
     <GridColumn width={12}>

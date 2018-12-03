@@ -57,7 +57,7 @@ Component.defaultProps = {
 Component.propTypes = {
   /**
    * Custom class name.
-   * Provided by `ShowOnMobile` and `ShowOnDesktop` so ignored in the styleguide.
+   * Provided by `ShowOn` so ignored in the styleguide.
    * @ignore
    */
   className: PropTypes.string,

@@ -134,48 +134,51 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                     <ShowOn
                                       computer={true}
                                       mobile={false}
-                                      parent="div"
-                                      parentProps={Object {}}
+                                      parent={[Function]}
+                                      parentProps={
+                                        Object {
+                                          "textAlign": "left",
+                                          "width": 12,
+                                        }
+                                      }
                                       tablet={true}
                                       widescreen={true}
                                     >
-                                      <div
+                                      <GridColumn
                                         className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                                        textAlign="left"
+                                        verticalAlignContent="top"
+                                        width={12}
                                       >
                                         <GridColumn
+                                          className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
                                           textAlign="left"
-                                          verticalAlignContent="top"
+                                          verticalAlign="top"
                                           width={12}
                                         >
-                                          <GridColumn
-                                            textAlign="left"
-                                            verticalAlign="top"
-                                            width={12}
+                                          <div
+                                            className="left aligned top aligned twelve wide column hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
                                           >
-                                            <div
-                                              className="left aligned top aligned twelve wide column"
+                                            <Heading
+                                              isColorInverted={false}
+                                              size="medium"
+                                              textAlign={null}
                                             >
-                                              <Heading
-                                                isColorInverted={false}
-                                                size="medium"
+                                              <Header
+                                                as="h3"
+                                                inverted={false}
                                                 textAlign={null}
                                               >
-                                                <Header
-                                                  as="h3"
-                                                  inverted={false}
-                                                  textAlign={null}
+                                                <h3
+                                                  className="ui header"
                                                 >
-                                                  <h3
-                                                    className="ui header"
-                                                  >
-                                                    Hello World!
-                                                  </h3>
-                                                </Header>
-                                              </Heading>
-                                            </div>
-                                          </GridColumn>
+                                                  Hello World!
+                                                </h3>
+                                              </Header>
+                                            </Heading>
+                                          </div>
                                         </GridColumn>
-                                      </div>
+                                      </GridColumn>
                                     </ShowOn>
                                     <ShowOn
                                       computer={false}

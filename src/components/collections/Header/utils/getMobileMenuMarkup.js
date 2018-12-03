@@ -42,30 +42,27 @@ export const getMobileMenuMarkup = ({
   searchBarSearchButton,
   /* eslint-enable react/prop-types */
 }) => (
-  <ShowOn mobile parent="div">
-    <Menu.Menu position="right">
-      {hasSearchBarOptions(
-        searchBarGuestsOptions,
-        searchBarLocationOptions
-      ) && (
-        <Menu.Item>
-          <SearchBar
-            getIsDayBlocked={searchBarGetIsDayBlocked}
-            guestsOptions={searchBarGuestsOptions}
-            isDisplayedAsModal
-            locationOptions={searchBarLocationOptions}
-            modalHeadingText={searchBarModalHeadingText}
-            onChangeInput={searchBarOnChangeInput}
-            onSubmit={searchBarOnSubmit}
-            searchButton={searchBarSearchButton}
-          />
-        </Menu.Item>
-      )}
+  <ShowOn mobile parent={Menu.Menu} parentProps={{ position: 'right' }}>
+    {hasSearchBarOptions(searchBarGuestsOptions, searchBarLocationOptions) && (
       <Menu.Item>
-        <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
-          <Menu text vertical>
-            {getLogoMarkup(logoSrc, logoText)}
-            {navigationItems.map(({ subItems, text, href }, index) =>
+        <SearchBar
+          getIsDayBlocked={searchBarGetIsDayBlocked}
+          guestsOptions={searchBarGuestsOptions}
+          isDisplayedAsModal
+          locationOptions={searchBarLocationOptions}
+          modalHeadingText={searchBarModalHeadingText}
+          onChangeInput={searchBarOnChangeInput}
+          onSubmit={searchBarOnSubmit}
+          searchButton={searchBarSearchButton}
+        />
+      </Menu.Item>
+    )}
+    <Menu.Item>
+      <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
+        <Menu text vertical>
+          {getLogoMarkup(logoSrc, logoText)}
+          {navigationItems.map(
+            ({ subItems, text, href }, index) =>
               size(subItems) ? (
                 <Accordion
                   as={Menu.Item}
@@ -93,10 +90,9 @@ export const getMobileMenuMarkup = ({
               ) : (
                 getLinkMarkup(text, href, index, activeNavigationItemIndex)
               )
-            )}
-          </Menu>
-        </Modal>
-      </Menu.Item>
-    </Menu.Menu>
+          )}
+        </Menu>
+      </Modal>
+    </Menu.Item>
   </ShowOn>
 );
