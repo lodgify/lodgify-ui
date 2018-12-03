@@ -60,8 +60,7 @@ export { Grid } from './components/layout/Grid';
 export { GridColumn } from './components/layout/GridColumn';
 export { GridRow } from './components/layout/GridRow';
 export { HorizontalGutters } from './components/layout/HorizontalGutters';
-export { ShowOnDesktop } from './components/layout/ShowOnDesktop';
-export { ShowOnMobile } from './components/layout/ShowOnMobile';
+export { ShowOn } from './components/layout/ShowOn';
 export { VerticalGutters } from './components/layout/VerticalGutters';
 
 // Media
