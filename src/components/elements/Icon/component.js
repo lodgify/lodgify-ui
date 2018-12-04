@@ -37,15 +37,13 @@ export const Component = ({
     // compatibility with dynamic components e.g. `ToolTip`
     {...otherProps}
   >
-    {!!labelText && isLabelLeft && (
-      <Paragraph weight={labelWeight}>{labelText}</Paragraph>
-    )}
+    {!!labelText &&
+      isLabelLeft && <Paragraph weight={labelWeight}>{labelText}</Paragraph>}
     <svg viewBox="0 0 24 24">
       <path d={getPath(name, path)} fill="currentColor" />
     </svg>
-    {!!labelText && !isLabelLeft && (
-      <Paragraph weight={labelWeight}>{labelText}</Paragraph>
-    )}
+    {!!labelText &&
+      !isLabelLeft && <Paragraph weight={labelWeight}>{labelText}</Paragraph>}
   </i>
 );
 
