@@ -33,7 +33,7 @@ export const Component = ({
     <GridRow>
       {getFirstSixItems(pictures).map(
         ({ imageUrl, imageSizes, imageSrcSet, label }, index) => (
-          <GridColumn key={buildKeyFromStrings(label, index)}>
+          <GridColumn key={buildKeyFromStrings(imageUrl, index)}>
             <ShowOn computer parent="div" tablet widescreen>
               <Thumbnail
                 imageSizes={imageSizes}
