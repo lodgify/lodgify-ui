@@ -1,3 +1,19 @@
+# [1.95.0](https://github.com/lodgify/lodgify-ui/compare/v1.94.1...v1.95.0) (2018-12-06)
+
+
+### Bug Fixes
+
+* **Gallery:** key uses imageUrl instead of label ([304fe90](https://github.com/lodgify/lodgify-ui/commit/304fe90))
+* **PropertyPageHero:** pass through imageUrl prop ([a99cf09](https://github.com/lodgify/lodgify-ui/commit/a99cf09))
+
+
+### Features
+
+* **buildKeyFromStrings:** add default value to avoid toString failing ([cd33ee9](https://github.com/lodgify/lodgify-ui/commit/cd33ee9))
+* **Description:** use text prop for key ([2c01a82](https://github.com/lodgify/lodgify-ui/commit/2c01a82))
+* **Rates:** name prop is required ([e9ce5c7](https://github.com/lodgify/lodgify-ui/commit/e9ce5c7))
+* **RoomType:** labelText is required ([ceccba7](https://github.com/lodgify/lodgify-ui/commit/ceccba7))
+
 ## [1.94.1](https://github.com/lodgify/lodgify-ui/compare/v1.94.0...v1.94.1) (2018-12-06)
 
 
