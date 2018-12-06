@@ -1,18 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import {
-  expectComponentToBe,
-  expectComponentToHaveProps,
-  expectComponentToHaveChildren,
-  expectComponentToHaveDisplayName,
-} from '@lodgify/enzyme-jest-expect-helpers';
-import { Menu } from 'semantic-ui-react';
-
-import { HorizontalGutters } from 'layout/HorizontalGutters';
-import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
-import { Divider } from 'elements/Divider';
-import { Submenu } from 'elements/Submenu';
-import { Icon } from 'elements/Icon';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Footer } from './component';
 
@@ -44,7 +32,7 @@ const socialMediaLinks = [
 ];
 
 const getFooter = otherProps =>
-  shallow(
+  mount(
     <Footer
       currencyOptions={currencyOptions}
       languageOptions={languageOptions}
@@ -58,390 +46,33 @@ const getFooter = otherProps =>
   );
 
 describe('<Footer />', () => {
-  it('should render a single `footer` element', () => {
+  it('should render the right structure', () => {
     const wrapper = getFooter();
 
-    expectComponentToBe(wrapper, 'footer');
-  });
-
-  describe('the `footer` element', () => {
-    it('should have the right children', () => {
-      const wrapper = getFooter();
-
-      expectComponentToHaveChildren(wrapper, 'div', 'div');
-    });
-  });
-
-  describe('the `div.top-navigation`', () => {
-    it('should have the right children', () => {
-      const wrapper = getFooter()
-        .find('div.top-navigation')
-        .at(0);
-
-      expectComponentToHaveChildren(wrapper, HorizontalGutters);
-    });
-
-    it('should have the right props', () => {
-      const wrapper = getFooter()
-        .find('div.top-navigation')
-        .at(0);
-
-      expectComponentToHaveProps(wrapper, {
-        className: 'top-navigation',
-      });
-    });
-  });
-
-  describe('the `div.bottom-navigation`', () => {
-    it('should have the right children', () => {
-      const wrapper = getFooter()
-        .find('div.bottom-navigation')
-        .at(0);
-
-      expectComponentToHaveChildren(wrapper, HorizontalGutters);
-    });
-
-    it('should have the right props', () => {
-      const wrapper = getFooter()
-        .find('div.bottom-navigation')
-        .at(0);
-
-      expectComponentToHaveProps(wrapper, {
-        className: 'bottom-navigation',
-      });
-    });
-  });
-
-  describe('the first `HorizontalGutters` component', () => {
-    const getFirstMenu = () =>
-      getFooter()
-        .find(HorizontalGutters)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getFirstMenu();
-
-      expectComponentToHaveProps(wrapper, {
-        borderless: true,
-        inverted: true,
-        stackable: true,
-        as: Menu,
-      });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getFirstMenu();
-
-      expectComponentToHaveChildren(wrapper, Menu.Item);
-    });
+    expect(wrapper).toMatchSnapshot();
   });
 
   describe('if `props.navigationItems` are grouped', () => {
-    const getFirstMenuWithGroupeNavigationItems = () =>
-      getFooter({ navigationItems: groupedNavigationItems })
-        .find(HorizontalGutters)
-        .at(0);
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ navigationItems: groupedNavigationItems });
 
-    describe('the first `Menu` component', () => {
-      it('should have the right children', () => {
-        const wrapper = getFirstMenuWithGroupeNavigationItems();
-
-        expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Item);
-      });
-    });
-
-    describe('each `Menu.Item` component in the first `Menu` component', () => {
-      it('should have a child `Menu.Menu` component', () => {
-        const wrappers = [
-          getFirstMenuWithGroupeNavigationItems()
-            .children(Menu.Item)
-            .at(0),
-          getFirstMenuWithGroupeNavigationItems()
-            .children(Menu.Item)
-            .at(1),
-        ];
-
-        wrappers.forEach(wrapper => {
-          expectComponentToHaveChildren(wrapper, Menu.Menu);
-        });
-      });
-    });
-
-    describe('each `Menu.Menu` component in the first `Menu` component', () => {
-      describe('if the navigation item group as no `text` property', () => {
-        it('should have the right children', () => {
-          const wrapper = getFirstMenuWithGroupeNavigationItems()
-            .find(Menu.Menu)
-            .at(0);
-
-          expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Item);
-        });
-      });
-
-      describe('if the navigation item group has a `text` property', () => {
-        it('should have the right children', () => {
-          const wrapper = getFirstMenuWithGroupeNavigationItems()
-            .find(Menu.Menu)
-            .at(1);
-
-          expectComponentToHaveChildren(wrapper, Menu.Header, Menu.Item);
-        });
-      });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
-  const getSecondMenu = otherProps =>
-    getFooter(otherProps)
-      .find(HorizontalGutters)
-      .at(1);
+  describe('if `socialMediaLinks` has length > 0', () => {
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ socialMediaLinks });
 
-  describe('the second `Menu` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getSecondMenu();
-
-      expectComponentToHaveProps(wrapper, {
-        borderless: true,
-        inverted: true,
-        stackable: true,
-        as: Menu,
-      });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getSecondMenu();
-
-      expectComponentToHaveChildren(
-        wrapper,
-        ...getArrayOfLengthOfItem(3, Menu.Item),
-        Divider,
-        Menu.Item
-      );
-    });
-
-    describe('if `socialMediaLinks` has length > 0', () => {
-      it('should have the right children', () => {
-        const wrapper = getSecondMenu({ socialMediaLinks });
-
-        expectComponentToHaveChildren(
-          wrapper,
-          ...getArrayOfLengthOfItem(3, Menu.Item),
-          Menu.Menu,
-          Divider,
-          Menu.Item
-        );
-      });
-    });
-  });
-
-  describe('the first `Menu.Item` component in the second `Menu` component', () => {
-    it('should have the right children', () => {
-      const wrapper = getSecondMenu()
-        .children(Menu.Item)
-        .at(0);
-
-      expectComponentToHaveChildren(wrapper, Submenu);
-    });
-  });
-
-  describe('the first `Submenu` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getFooter()
-        .find(Submenu)
-        .at(0);
-
-      expectComponentToHaveProps(wrapper, {
-        items: languageOptions,
-        name: 'language',
-        onChange: onChangeLanguage,
-        willOpenAbove: true,
-      });
-    });
-  });
-
-  describe('the second `Menu.Item` component in the second `Menu` component', () => {
-    it('should have the right children', () => {
-      const wrapper = getSecondMenu()
-        .children(Menu.Item)
-        .at(1);
-
-      expectComponentToHaveChildren(wrapper, Submenu);
-    });
-  });
-
-  describe('the second `Submenu` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getFooter()
-        .find(Submenu)
-        .at(1);
-
-      expectComponentToHaveProps(wrapper, {
-        items: currencyOptions,
-        name: 'currency',
-        onChange: onChangeCurrency,
-        willOpenAbove: true,
-      });
-    });
-  });
-
-  describe('the third `Menu.Item` component in the second `Menu` component', () => {
-    const getThirdMenuItem = () =>
-      getSecondMenu()
-        .children(Menu.Item)
-        .at(2);
-
-    it('should have the right children', () => {
-      const wrapper = getThirdMenuItem();
-
-      expectComponentToHaveChildren(wrapper, Icon);
-    });
-
-    it('should have the right props', () => {
-      const wrapper = getThirdMenuItem();
-
-      expectComponentToHaveProps(wrapper, { className: 'is-selectable' });
-    });
-  });
-
-  describe('the `Icon` component in the third `Menu.Item`', () => {
-    it('should have the right props', () => {
-      const wrapper = getFooter()
-        .find(Icon)
-        .at(0);
-
-      expectComponentToHaveProps(wrapper, {
-        labelText: phoneNumber,
-        name: 'phone',
-      });
-    });
-
-    it('should hide the icon if the phone number is an empty string', () => {
-      const actual = getFooter({
-        phoneNumber: '',
-      }).find(Icon);
-
-      expect(actual).toHaveLength(0);
-    });
-  });
-
-  const getSocialMediaMenuMenu = () =>
-    getSecondMenu({ socialMediaLinks }).children(Menu.Menu);
-
-  describe('the `Menu.Menu` component containing the `socialMediaLinks`', () => {
-    it('should have the right props', () => {
-      const wrapper = getSocialMediaMenuMenu();
-
-      expectComponentToHaveProps(wrapper, { position: 'right' });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getSocialMediaMenuMenu();
-
-      expectComponentToHaveChildren(wrapper, Menu.Item, Menu.Item);
-    });
-  });
-
-  describe('each `Menu.Item` component containing a social media link', () => {
-    const getSocialMediaMenuItem = () =>
-      getSocialMediaMenuMenu()
-        .children(Menu.Item)
-        .at(0);
-
-    it('should have the right props', () => {
-      const wrapper = getSocialMediaMenuItem();
-
-      expectComponentToHaveProps(wrapper, {
-        href: socialMediaLinks[0].href,
-        link: true,
-      });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getSocialMediaMenuItem();
-
-      expectComponentToHaveChildren(wrapper, Icon);
-    });
-  });
-
-  describe('each `Icon` component representing a social media link', () => {
-    it('should have the right props', () => {
-      const wrapper = getSocialMediaMenuMenu()
-        .find(Icon)
-        .at(0);
-
-      expectComponentToHaveProps(wrapper, {
-        name: socialMediaLinks[0].iconName,
-        path: null,
-      });
-    });
-  });
-
-  describe('the `Divider` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getSecondMenu().find(Divider);
-
-      expectComponentToHaveProps(wrapper, {
-        hasLine: true,
-      });
-    });
-  });
-
-  describe('the `Menu.Item` displaying the `propertyAddress`', () => {
-    const getPropertyAddressMenuItem = () =>
-      getSecondMenu()
-        .children(Menu.Item)
-        .at(3);
-
-    it('should have the right children', () => {
-      const wrapper = getPropertyAddressMenuItem();
-
-      expectComponentToHaveChildren(wrapper, propertyAddress);
-    });
-
-    it('should have the right props', () => {
-      const wrapper = getPropertyAddressMenuItem();
-
-      expectComponentToHaveProps(wrapper, { className: 'is-selectable' });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
   describe('if `props.copyrightText` is passed', () => {
-    const getSecondMenuWithCopyright = () => getSecondMenu({ copyrightText });
-    const getCopyrightMenuItem = () =>
-      getSecondMenuWithCopyright()
-        .children(Menu.Item)
-        .at(4);
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ copyrightText });
 
-    describe('the second `Menu` component', () => {
-      it('should render the right children', () => {
-        const wrapper = getSecondMenu({ copyrightText });
-
-        expectComponentToHaveChildren(
-          wrapper,
-          ...getArrayOfLengthOfItem(3, Menu.Item),
-          Divider,
-          ...getArrayOfLengthOfItem(2, Menu.Item)
-        );
-      });
-    });
-
-    describe('the extra `Menu.Item`', () => {
-      it('should have the right props', () => {
-        const wrapper = getCopyrightMenuItem();
-
-        expectComponentToHaveProps(wrapper, {
-          className: 'is-selectable',
-          position: 'right',
-        });
-      });
-
-      it('should have the right children', () => {
-        const wrapper = getCopyrightMenuItem();
-
-        expectComponentToHaveChildren(
-          wrapper,
-          '© 2018 Feline Vacations. All rights reserved.'
-        );
-      });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 

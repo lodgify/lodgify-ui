@@ -1,0 +1,2547 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> if \`props.copyrightText\` is passed should render the right structure 1`] = `
+<Footer
+  copyrightText="© 2018 Feline Vacations. All rights reserved."
+  currencyOptions={
+    Array [
+      Object {
+        "text": "EUR",
+        "value": "EUR",
+      },
+      Object {
+        "text": "USD",
+        "value": "USD",
+      },
+    ]
+  }
+  currencyValue={null}
+  languageOptions={
+    Array [
+      Object {
+        "text": "English",
+        "value": "en",
+      },
+      Object {
+        "text": "German",
+        "value": "de",
+      },
+    ]
+  }
+  languageValue={null}
+  navigationItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+    ]
+  }
+  onChangeCurrency={[Function]}
+  onChangeLanguage={[Function]}
+  phoneNumber="+1 2345 678912"
+  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
+  socialMediaLinks={Array []}
+>
+  <footer>
+    <div
+      className="top-navigation"
+    >
+      <HorizontalGutters
+        as={[Function]}
+        borderless={true}
+        inverted={true}
+        stackable={true}
+      >
+        <Container
+          as={[Function]}
+          borderless={true}
+          inverted={true}
+          stackable={true}
+        >
+          <Menu
+            borderless={true}
+            className="ui container"
+            inverted={true}
+            stackable={true}
+          >
+            <div
+              className="ui borderless inverted stackable ui container menu"
+            >
+              <MenuItem
+                href="/"
+                key="Home0"
+                link={true}
+              >
+                <a
+                  className="link item"
+                  href="/"
+                  onClick={[Function]}
+                >
+                  Home
+                </a>
+              </MenuItem>
+            </div>
+          </Menu>
+        </Container>
+      </HorizontalGutters>
+    </div>
+    <div
+      className="bottom-navigation"
+    >
+      <HorizontalGutters
+        as={[Function]}
+        borderless={true}
+        inverted={true}
+        stackable={true}
+      >
+        <Container
+          as={[Function]}
+          borderless={true}
+          inverted={true}
+          stackable={true}
+        >
+          <Menu
+            borderless={true}
+            className="ui container"
+            inverted={true}
+            stackable={true}
+          >
+            <div
+              className="ui borderless inverted stackable ui container menu"
+            >
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Submenu
+                    isMenuItem={false}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={false}
+                    items={
+                      Array [
+                        Object {
+                          "text": "English",
+                          "value": "en",
+                        },
+                        Object {
+                          "text": "German",
+                          "value": "de",
+                        },
+                      ]
+                    }
+                    name="language"
+                    onChange={[Function]}
+                    pointing="top left"
+                    value={null}
+                    willOpenAbove={true}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={false}
+                      minCharacters={1}
+                      name="language"
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "key": "English",
+                            "text": "English",
+                            "value": "en",
+                          },
+                          Object {
+                            "key": "German",
+                            "text": "German",
+                            "value": "de",
+                          },
+                        ]
+                      }
+                      pointing="top left"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={false}
+                      trigger={null}
+                      upward={true}
+                      value={null}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui upward top left pointing dropdown"
+                        name="language"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="English"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="English"
+                              value="en"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="English"
+                                >
+                                  English
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="German"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="German"
+                              value="de"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="German"
+                                >
+                                  German
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuItem>
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Submenu
+                    isMenuItem={false}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={false}
+                    items={
+                      Array [
+                        Object {
+                          "text": "EUR",
+                          "value": "EUR",
+                        },
+                        Object {
+                          "text": "USD",
+                          "value": "USD",
+                        },
+                      ]
+                    }
+                    name="currency"
+                    onChange={[Function]}
+                    pointing="top left"
+                    value={null}
+                    willOpenAbove={true}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={false}
+                      minCharacters={1}
+                      name="currency"
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "key": "EUR",
+                            "text": "EUR",
+                            "value": "EUR",
+                          },
+                          Object {
+                            "key": "USD",
+                            "text": "USD",
+                            "value": "USD",
+                          },
+                        ]
+                      }
+                      pointing="top left"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={false}
+                      trigger={null}
+                      upward={true}
+                      value={null}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui upward top left pointing dropdown"
+                        name="currency"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="EUR"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="EUR"
+                              value="EUR"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="EUR"
+                                >
+                                  EUR
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="USD"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="USD"
+                              value="USD"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="USD"
+                                >
+                                  USD
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuItem>
+              <MenuItem
+                className="is-selectable"
+              >
+                <div
+                  className="item is-selectable"
+                  onClick={[Function]}
+                >
+                  <Icon
+                    color={null}
+                    hasBorder={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText="+1 2345 678912"
+                    labelWeight={null}
+                    name="phone"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon has-label"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.26,20.77a10.82,10.82,0,0,1-4.91-1.31,18.17,18.17,0,0,1-4.5-3.31,18.36,18.36,0,0,1-3.31-4.5,11,11,0,0,1-1.3-4.91A3.72,3.72,0,0,1,4.58,4.39,4,4,0,0,1,6.73,3.23,2,2,0,0,1,8,3.91,11.34,11.34,0,0,1,9.16,5.26c.25.33,1.52,2,1.52,2.79s-.74,1.11-1.53,1.6a7.2,7.2,0,0,0-.84.56c-.24.19-.28.29-.29.32A11.62,11.62,0,0,0,13.47,16a.94.94,0,0,0,.32-.3,9.4,9.4,0,0,0,.56-.84c.48-.78.93-1.52,1.59-1.52s2.46,1.26,2.79,1.51a10.53,10.53,0,0,1,1.35,1.22,2,2,0,0,1,.68,1.21,4,4,0,0,1-1.15,2.16,3.78,3.78,0,0,1-2.35,1.35ZM6.73,4.11A3.25,3.25,0,0,0,5.17,5,2.86,2.86,0,0,0,4.11,6.74c0,5.9,7.25,13.15,13.15,13.15A2.84,2.84,0,0,0,19,18.83a3.35,3.35,0,0,0,.93-1.56c0-.17-.49-.82-1.75-1.79A7.23,7.23,0,0,0,16,14.19s-.12,0-.32.3-.36.52-.54.81c-.49.8-.95,1.55-1.62,1.55a.87.87,0,0,1-.32-.06A12.44,12.44,0,0,1,7.2,10.85c-.11-.28-.13-.71.42-1.21A8.34,8.34,0,0,1,8.69,8.9a9,9,0,0,0,.82-.54c.25-.2.29-.3.29-.31A6.78,6.78,0,0,0,8.51,5.86c-1-1.27-1.62-1.73-1.78-1.76Zm13.6,7a.43.43,0,0,1-.44-.44,6.58,6.58,0,0,0-6.58-6.57.44.44,0,1,1,0-.88,7.44,7.44,0,0,1,7.45,7.45A.43.43,0,0,1,20.33,11.12Zm-2.64,0a.43.43,0,0,1-.43-.44,4,4,0,0,0-4-3.94.44.44,0,1,1,0-.88,4.82,4.82,0,0,1,4.82,4.82A.43.43,0,0,1,17.69,11.12Zm-2.63,0a.43.43,0,0,1-.43-.44,1.32,1.32,0,0,0-1.32-1.31.44.44,0,0,1,0-.88,2.2,2.2,0,0,1,2.19,2.19A.43.43,0,0,1,15.06,11.12Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <Paragraph
+                        size="medium"
+                        weight={null}
+                      >
+                        <p
+                          className=""
+                        >
+                          +1 2345 678912
+                        </p>
+                      </Paragraph>
+                    </i>
+                  </Icon>
+                </div>
+              </MenuItem>
+              <Divider
+                className=""
+                hasLine={true}
+                size="medium"
+              >
+                <Divider
+                  className=""
+                  hidden={false}
+                  section={false}
+                >
+                  <div
+                    className="ui divider"
+                  />
+                </Divider>
+              </Divider>
+              <MenuItem
+                className="is-selectable"
+              >
+                <div
+                  className="item is-selectable"
+                  onClick={[Function]}
+                >
+                  The Cat House, Pawprint Way, Catania 08012
+                </div>
+              </MenuItem>
+              <MenuItem
+                className="is-selectable"
+                position="right"
+              >
+                <div
+                  className="right item is-selectable"
+                  onClick={[Function]}
+                >
+                  © 2018 Feline Vacations. All rights reserved.
+                </div>
+              </MenuItem>
+            </div>
+          </Menu>
+        </Container>
+      </HorizontalGutters>
+    </div>
+  </footer>
+</Footer>
+`;
+
+exports[`<Footer /> if \`props.navigationItems\` are grouped should render the right structure 1`] = `
+<Footer
+  copyrightText={null}
+  currencyOptions={
+    Array [
+      Object {
+        "text": "EUR",
+        "value": "EUR",
+      },
+      Object {
+        "text": "USD",
+        "value": "USD",
+      },
+    ]
+  }
+  currencyValue={null}
+  languageOptions={
+    Array [
+      Object {
+        "text": "English",
+        "value": "en",
+      },
+      Object {
+        "text": "German",
+        "value": "de",
+      },
+    ]
+  }
+  languageValue={null}
+  navigationItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+      Object {
+        "href": "/contact",
+        "text": "Contact",
+      },
+      Object {
+        "subItems": Array [
+          Object {
+            "href": "/pool",
+            "text": "Pool",
+          },
+        ],
+        "text": "The Property",
+      },
+    ]
+  }
+  onChangeCurrency={[Function]}
+  onChangeLanguage={[Function]}
+  phoneNumber="+1 2345 678912"
+  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
+  socialMediaLinks={Array []}
+>
+  <footer>
+    <div
+      className="top-navigation"
+    >
+      <HorizontalGutters
+        as={[Function]}
+        borderless={true}
+        inverted={true}
+        stackable={true}
+      >
+        <Container
+          as={[Function]}
+          borderless={true}
+          inverted={true}
+          stackable={true}
+        >
+          <Menu
+            borderless={true}
+            className="ui container"
+            inverted={true}
+            stackable={true}
+          >
+            <div
+              className="ui borderless inverted stackable ui container menu"
+            >
+              <MenuItem
+                key="Home0"
+              >
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <MenuMenu>
+                    <div
+                      className="menu"
+                    >
+                      <MenuItem
+                        href="/"
+                        key="Home0"
+                        link={true}
+                      >
+                        <a
+                          className="link item"
+                          href="/"
+                          onClick={[Function]}
+                        >
+                          Home
+                        </a>
+                      </MenuItem>
+                      <MenuItem
+                        href="/contact"
+                        key="Contact1"
+                        link={true}
+                      >
+                        <a
+                          className="link item"
+                          href="/contact"
+                          onClick={[Function]}
+                        >
+                          Contact
+                        </a>
+                      </MenuItem>
+                    </div>
+                  </MenuMenu>
+                </div>
+              </MenuItem>
+              <MenuItem
+                key="The Property1"
+              >
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <MenuMenu>
+                    <div
+                      className="menu"
+                    >
+                      <MenuHeader>
+                        <div
+                          className="header"
+                        >
+                          THE PROPERTY
+                        </div>
+                      </MenuHeader>
+                      <MenuItem
+                        href="/pool"
+                        key="Pool0"
+                        link={true}
+                      >
+                        <a
+                          className="link item"
+                          href="/pool"
+                          onClick={[Function]}
+                        >
+                          Pool
+                        </a>
+                      </MenuItem>
+                    </div>
+                  </MenuMenu>
+                </div>
+              </MenuItem>
+            </div>
+          </Menu>
+        </Container>
+      </HorizontalGutters>
+    </div>
+    <div
+      className="bottom-navigation"
+    >
+      <HorizontalGutters
+        as={[Function]}
+        borderless={true}
+        inverted={true}
+        stackable={true}
+      >
+        <Container
+          as={[Function]}
+          borderless={true}
+          inverted={true}
+          stackable={true}
+        >
+          <Menu
+            borderless={true}
+            className="ui container"
+            inverted={true}
+            stackable={true}
+          >
+            <div
+              className="ui borderless inverted stackable ui container menu"
+            >
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Submenu
+                    isMenuItem={false}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={false}
+                    items={
+                      Array [
+                        Object {
+                          "text": "English",
+                          "value": "en",
+                        },
+                        Object {
+                          "text": "German",
+                          "value": "de",
+                        },
+                      ]
+                    }
+                    name="language"
+                    onChange={[Function]}
+                    pointing="top left"
+                    value={null}
+                    willOpenAbove={true}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={false}
+                      minCharacters={1}
+                      name="language"
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "key": "English",
+                            "text": "English",
+                            "value": "en",
+                          },
+                          Object {
+                            "key": "German",
+                            "text": "German",
+                            "value": "de",
+                          },
+                        ]
+                      }
+                      pointing="top left"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={false}
+                      trigger={null}
+                      upward={true}
+                      value={null}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui upward top left pointing dropdown"
+                        name="language"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="English"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="English"
+                              value="en"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="English"
+                                >
+                                  English
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="German"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="German"
+                              value="de"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="German"
+                                >
+                                  German
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuItem>
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Submenu
+                    isMenuItem={false}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={false}
+                    items={
+                      Array [
+                        Object {
+                          "text": "EUR",
+                          "value": "EUR",
+                        },
+                        Object {
+                          "text": "USD",
+                          "value": "USD",
+                        },
+                      ]
+                    }
+                    name="currency"
+                    onChange={[Function]}
+                    pointing="top left"
+                    value={null}
+                    willOpenAbove={true}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={false}
+                      minCharacters={1}
+                      name="currency"
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "key": "EUR",
+                            "text": "EUR",
+                            "value": "EUR",
+                          },
+                          Object {
+                            "key": "USD",
+                            "text": "USD",
+                            "value": "USD",
+                          },
+                        ]
+                      }
+                      pointing="top left"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={false}
+                      trigger={null}
+                      upward={true}
+                      value={null}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui upward top left pointing dropdown"
+                        name="currency"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="EUR"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="EUR"
+                              value="EUR"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="EUR"
+                                >
+                                  EUR
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="USD"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="USD"
+                              value="USD"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="USD"
+                                >
+                                  USD
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuItem>
+              <MenuItem
+                className="is-selectable"
+              >
+                <div
+                  className="item is-selectable"
+                  onClick={[Function]}
+                >
+                  <Icon
+                    color={null}
+                    hasBorder={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText="+1 2345 678912"
+                    labelWeight={null}
+                    name="phone"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon has-label"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.26,20.77a10.82,10.82,0,0,1-4.91-1.31,18.17,18.17,0,0,1-4.5-3.31,18.36,18.36,0,0,1-3.31-4.5,11,11,0,0,1-1.3-4.91A3.72,3.72,0,0,1,4.58,4.39,4,4,0,0,1,6.73,3.23,2,2,0,0,1,8,3.91,11.34,11.34,0,0,1,9.16,5.26c.25.33,1.52,2,1.52,2.79s-.74,1.11-1.53,1.6a7.2,7.2,0,0,0-.84.56c-.24.19-.28.29-.29.32A11.62,11.62,0,0,0,13.47,16a.94.94,0,0,0,.32-.3,9.4,9.4,0,0,0,.56-.84c.48-.78.93-1.52,1.59-1.52s2.46,1.26,2.79,1.51a10.53,10.53,0,0,1,1.35,1.22,2,2,0,0,1,.68,1.21,4,4,0,0,1-1.15,2.16,3.78,3.78,0,0,1-2.35,1.35ZM6.73,4.11A3.25,3.25,0,0,0,5.17,5,2.86,2.86,0,0,0,4.11,6.74c0,5.9,7.25,13.15,13.15,13.15A2.84,2.84,0,0,0,19,18.83a3.35,3.35,0,0,0,.93-1.56c0-.17-.49-.82-1.75-1.79A7.23,7.23,0,0,0,16,14.19s-.12,0-.32.3-.36.52-.54.81c-.49.8-.95,1.55-1.62,1.55a.87.87,0,0,1-.32-.06A12.44,12.44,0,0,1,7.2,10.85c-.11-.28-.13-.71.42-1.21A8.34,8.34,0,0,1,8.69,8.9a9,9,0,0,0,.82-.54c.25-.2.29-.3.29-.31A6.78,6.78,0,0,0,8.51,5.86c-1-1.27-1.62-1.73-1.78-1.76Zm13.6,7a.43.43,0,0,1-.44-.44,6.58,6.58,0,0,0-6.58-6.57.44.44,0,1,1,0-.88,7.44,7.44,0,0,1,7.45,7.45A.43.43,0,0,1,20.33,11.12Zm-2.64,0a.43.43,0,0,1-.43-.44,4,4,0,0,0-4-3.94.44.44,0,1,1,0-.88,4.82,4.82,0,0,1,4.82,4.82A.43.43,0,0,1,17.69,11.12Zm-2.63,0a.43.43,0,0,1-.43-.44,1.32,1.32,0,0,0-1.32-1.31.44.44,0,0,1,0-.88,2.2,2.2,0,0,1,2.19,2.19A.43.43,0,0,1,15.06,11.12Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <Paragraph
+                        size="medium"
+                        weight={null}
+                      >
+                        <p
+                          className=""
+                        >
+                          +1 2345 678912
+                        </p>
+                      </Paragraph>
+                    </i>
+                  </Icon>
+                </div>
+              </MenuItem>
+              <Divider
+                className=""
+                hasLine={true}
+                size="medium"
+              >
+                <Divider
+                  className=""
+                  hidden={false}
+                  section={false}
+                >
+                  <div
+                    className="ui divider"
+                  />
+                </Divider>
+              </Divider>
+              <MenuItem
+                className="is-selectable"
+              >
+                <div
+                  className="item is-selectable"
+                  onClick={[Function]}
+                >
+                  The Cat House, Pawprint Way, Catania 08012
+                </div>
+              </MenuItem>
+            </div>
+          </Menu>
+        </Container>
+      </HorizontalGutters>
+    </div>
+  </footer>
+</Footer>
+`;
+
+exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the right structure 1`] = `
+<Footer
+  copyrightText={null}
+  currencyOptions={
+    Array [
+      Object {
+        "text": "EUR",
+        "value": "EUR",
+      },
+      Object {
+        "text": "USD",
+        "value": "USD",
+      },
+    ]
+  }
+  currencyValue={null}
+  languageOptions={
+    Array [
+      Object {
+        "text": "English",
+        "value": "en",
+      },
+      Object {
+        "text": "German",
+        "value": "de",
+      },
+    ]
+  }
+  languageValue={null}
+  navigationItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+    ]
+  }
+  onChangeCurrency={[Function]}
+  onChangeLanguage={[Function]}
+  phoneNumber="+1 2345 678912"
+  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
+  socialMediaLinks={
+    Array [
+      Object {
+        "href": "https://twitter.com/lodgify",
+        "iconName": "leaf",
+      },
+      Object {
+        "href": "https://instagram.com/lodgify",
+        "iconName": "paw",
+      },
+    ]
+  }
+>
+  <footer>
+    <div
+      className="top-navigation"
+    >
+      <HorizontalGutters
+        as={[Function]}
+        borderless={true}
+        inverted={true}
+        stackable={true}
+      >
+        <Container
+          as={[Function]}
+          borderless={true}
+          inverted={true}
+          stackable={true}
+        >
+          <Menu
+            borderless={true}
+            className="ui container"
+            inverted={true}
+            stackable={true}
+          >
+            <div
+              className="ui borderless inverted stackable ui container menu"
+            >
+              <MenuItem
+                href="/"
+                key="Home0"
+                link={true}
+              >
+                <a
+                  className="link item"
+                  href="/"
+                  onClick={[Function]}
+                >
+                  Home
+                </a>
+              </MenuItem>
+            </div>
+          </Menu>
+        </Container>
+      </HorizontalGutters>
+    </div>
+    <div
+      className="bottom-navigation"
+    >
+      <HorizontalGutters
+        as={[Function]}
+        borderless={true}
+        inverted={true}
+        stackable={true}
+      >
+        <Container
+          as={[Function]}
+          borderless={true}
+          inverted={true}
+          stackable={true}
+        >
+          <Menu
+            borderless={true}
+            className="ui container"
+            inverted={true}
+            stackable={true}
+          >
+            <div
+              className="ui borderless inverted stackable ui container menu"
+            >
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Submenu
+                    isMenuItem={false}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={false}
+                    items={
+                      Array [
+                        Object {
+                          "text": "English",
+                          "value": "en",
+                        },
+                        Object {
+                          "text": "German",
+                          "value": "de",
+                        },
+                      ]
+                    }
+                    name="language"
+                    onChange={[Function]}
+                    pointing="top left"
+                    value={null}
+                    willOpenAbove={true}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={false}
+                      minCharacters={1}
+                      name="language"
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "key": "English",
+                            "text": "English",
+                            "value": "en",
+                          },
+                          Object {
+                            "key": "German",
+                            "text": "German",
+                            "value": "de",
+                          },
+                        ]
+                      }
+                      pointing="top left"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={false}
+                      trigger={null}
+                      upward={true}
+                      value={null}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui upward top left pointing dropdown"
+                        name="language"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="English"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="English"
+                              value="en"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="English"
+                                >
+                                  English
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="German"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="German"
+                              value="de"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="German"
+                                >
+                                  German
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuItem>
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Submenu
+                    isMenuItem={false}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={false}
+                    items={
+                      Array [
+                        Object {
+                          "text": "EUR",
+                          "value": "EUR",
+                        },
+                        Object {
+                          "text": "USD",
+                          "value": "USD",
+                        },
+                      ]
+                    }
+                    name="currency"
+                    onChange={[Function]}
+                    pointing="top left"
+                    value={null}
+                    willOpenAbove={true}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={false}
+                      minCharacters={1}
+                      name="currency"
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "key": "EUR",
+                            "text": "EUR",
+                            "value": "EUR",
+                          },
+                          Object {
+                            "key": "USD",
+                            "text": "USD",
+                            "value": "USD",
+                          },
+                        ]
+                      }
+                      pointing="top left"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={false}
+                      trigger={null}
+                      upward={true}
+                      value={null}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui upward top left pointing dropdown"
+                        name="currency"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="EUR"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="EUR"
+                              value="EUR"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="EUR"
+                                >
+                                  EUR
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="USD"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="USD"
+                              value="USD"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="USD"
+                                >
+                                  USD
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuItem>
+              <MenuItem
+                className="is-selectable"
+              >
+                <div
+                  className="item is-selectable"
+                  onClick={[Function]}
+                >
+                  <Icon
+                    color={null}
+                    hasBorder={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText="+1 2345 678912"
+                    labelWeight={null}
+                    name="phone"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon has-label"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.26,20.77a10.82,10.82,0,0,1-4.91-1.31,18.17,18.17,0,0,1-4.5-3.31,18.36,18.36,0,0,1-3.31-4.5,11,11,0,0,1-1.3-4.91A3.72,3.72,0,0,1,4.58,4.39,4,4,0,0,1,6.73,3.23,2,2,0,0,1,8,3.91,11.34,11.34,0,0,1,9.16,5.26c.25.33,1.52,2,1.52,2.79s-.74,1.11-1.53,1.6a7.2,7.2,0,0,0-.84.56c-.24.19-.28.29-.29.32A11.62,11.62,0,0,0,13.47,16a.94.94,0,0,0,.32-.3,9.4,9.4,0,0,0,.56-.84c.48-.78.93-1.52,1.59-1.52s2.46,1.26,2.79,1.51a10.53,10.53,0,0,1,1.35,1.22,2,2,0,0,1,.68,1.21,4,4,0,0,1-1.15,2.16,3.78,3.78,0,0,1-2.35,1.35ZM6.73,4.11A3.25,3.25,0,0,0,5.17,5,2.86,2.86,0,0,0,4.11,6.74c0,5.9,7.25,13.15,13.15,13.15A2.84,2.84,0,0,0,19,18.83a3.35,3.35,0,0,0,.93-1.56c0-.17-.49-.82-1.75-1.79A7.23,7.23,0,0,0,16,14.19s-.12,0-.32.3-.36.52-.54.81c-.49.8-.95,1.55-1.62,1.55a.87.87,0,0,1-.32-.06A12.44,12.44,0,0,1,7.2,10.85c-.11-.28-.13-.71.42-1.21A8.34,8.34,0,0,1,8.69,8.9a9,9,0,0,0,.82-.54c.25-.2.29-.3.29-.31A6.78,6.78,0,0,0,8.51,5.86c-1-1.27-1.62-1.73-1.78-1.76Zm13.6,7a.43.43,0,0,1-.44-.44,6.58,6.58,0,0,0-6.58-6.57.44.44,0,1,1,0-.88,7.44,7.44,0,0,1,7.45,7.45A.43.43,0,0,1,20.33,11.12Zm-2.64,0a.43.43,0,0,1-.43-.44,4,4,0,0,0-4-3.94.44.44,0,1,1,0-.88,4.82,4.82,0,0,1,4.82,4.82A.43.43,0,0,1,17.69,11.12Zm-2.63,0a.43.43,0,0,1-.43-.44,1.32,1.32,0,0,0-1.32-1.31.44.44,0,0,1,0-.88,2.2,2.2,0,0,1,2.19,2.19A.43.43,0,0,1,15.06,11.12Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <Paragraph
+                        size="medium"
+                        weight={null}
+                      >
+                        <p
+                          className=""
+                        >
+                          +1 2345 678912
+                        </p>
+                      </Paragraph>
+                    </i>
+                  </Icon>
+                </div>
+              </MenuItem>
+              <MenuMenu
+                position="right"
+              >
+                <div
+                  className="right menu"
+                >
+                  <MenuItem
+                    href="https://twitter.com/lodgify"
+                    key="https://twitter.com/lodgify0"
+                    link={true}
+                  >
+                    <a
+                      className="link item"
+                      href="https://twitter.com/lodgify"
+                      onClick={[Function]}
+                    >
+                      <Icon
+                        color={null}
+                        hasBorder={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="leaf"
+                        path={null}
+                        size={null}
+                      >
+                        <i
+                          className="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M23.9.79a33.24,33.24,0,0,1-3.55,10.82,13.35,13.35,0,0,1-4.93,5.13A10,10,0,0,1,10.52,18c-.32,0-.64,0-1,0a11.93,11.93,0,0,1-3.41-.82,7.07,7.07,0,0,1-1-.5.59.59,0,0,1-.21-.81.6.6,0,0,1,.82-.21,7.18,7.18,0,0,0,.83.42,9.63,9.63,0,0,0,8.25-.34c3.75-2.07,6.36-6.92,7.76-14.4-11.73,0-18.2,0-19.9,6.11A8.89,8.89,0,0,0,2.85,12a5.55,5.55,0,0,0,.67,1.44A21.37,21.37,0,0,1,5.63,11a20.16,20.16,0,0,1,4.83-3.61A10.18,10.18,0,0,1,15,6.05a.6.6,0,0,1,0,1.19,9,9,0,0,0-4,1.2,19.12,19.12,0,0,0-4.54,3.39c-1.94,1.93-5.19,6-5.19,11.48a.59.59,0,0,1-.59.6.6.6,0,0,1-.6-.6,16.42,16.42,0,0,1,2.7-8.81,7.19,7.19,0,0,1-1.08-2.14,10.09,10.09,0,0,1-.16-5.28A7.91,7.91,0,0,1,4,3,10.26,10.26,0,0,1,8.47.93C12,.09,16.7.09,22.7.09h.61a.58.58,0,0,1,.45.22h0A.59.59,0,0,1,23.9.79Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                    </a>
+                  </MenuItem>
+                  <MenuItem
+                    href="https://instagram.com/lodgify"
+                    key="https://instagram.com/lodgify1"
+                    link={true}
+                  >
+                    <a
+                      className="link item"
+                      href="https://instagram.com/lodgify"
+                      onClick={[Function]}
+                    >
+                      <Icon
+                        color={null}
+                        hasBorder={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="paw"
+                        path={null}
+                        size={null}
+                      >
+                        <i
+                          className="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15.38,9.25c1.52,0,2.71-1.81,2.71-4.13S16.9,1,15.38,1s-2.7,1.81-2.7,4.12S13.86,9.25,15.38,9.25Zm0-6.87c.64,0,1.36,1.17,1.36,2.74S16,7.88,15.38,7.88,14,6.7,14,5.12,14.74,2.38,15.38,2.38Zm5.41,4.09c-1.51,0-2.7,1.82-2.7,4.14s1.19,4.14,2.7,4.14,2.71-1.82,2.71-4.14S22.31,6.47,20.79,6.47Zm0,6.91c-.63,0-1.35-1.19-1.35-2.77s.72-2.77,1.35-2.77S22.15,9,22.15,10.61,21.43,13.38,20.79,13.38ZM16.73,23ZM5.91,10.61c0-2.32-1.19-4.14-2.7-4.14S.5,8.29.5,10.61s1.19,4.14,2.71,4.14S5.91,12.93,5.91,10.61Zm-2.7,2.77c-.64,0-1.36-1.19-1.36-2.77s.72-2.77,1.36-2.77S4.56,9,4.56,10.61,3.84,13.38,3.21,13.38Zm5.4-4.13c1.52,0,2.71-1.81,2.71-4.13S10.13,1,8.61,1s-2.7,1.81-2.7,4.12S7.1,9.25,8.61,9.25Zm0-6.87C9.25,2.38,10,3.55,10,5.12S9.25,7.88,8.61,7.88,7.26,6.7,7.26,5.12,8,2.38,8.61,2.38ZM12,10.62c-2.79,0-5.23,2.17-6.72,5.94-.82,2.09-.81,4,0,5.3A2.37,2.37,0,0,0,7.26,23a5.49,5.49,0,0,0,2.68-.76A4.19,4.19,0,0,1,12,21.62a4.2,4.2,0,0,1,2.07.62,5.41,5.41,0,0,0,2.66.76,2.38,2.38,0,0,0,1.95-1.14c.85-1.28.86-3.21,0-5.3C17.23,12.79,14.78,10.62,12,10.62Zm5.56,10.47a1,1,0,0,1-.82.53A4.19,4.19,0,0,1,14.67,21,5.42,5.42,0,0,0,12,20.25h0A5.45,5.45,0,0,0,9.33,21a4.19,4.19,0,0,1-2.07.61,1,1,0,0,1-.82-.53c-.58-.88-.55-2.38.1-4C7.81,13.85,9.8,12,12,12s4.19,1.85,5.46,5.07C18.11,18.71,18.14,20.21,17.56,21.09Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuMenu>
+              <Divider
+                className=""
+                hasLine={true}
+                size="medium"
+              >
+                <Divider
+                  className=""
+                  hidden={false}
+                  section={false}
+                >
+                  <div
+                    className="ui divider"
+                  />
+                </Divider>
+              </Divider>
+              <MenuItem
+                className="is-selectable"
+              >
+                <div
+                  className="item is-selectable"
+                  onClick={[Function]}
+                >
+                  The Cat House, Pawprint Way, Catania 08012
+                </div>
+              </MenuItem>
+            </div>
+          </Menu>
+        </Container>
+      </HorizontalGutters>
+    </div>
+  </footer>
+</Footer>
+`;
+
+exports[`<Footer /> should render the right structure 1`] = `
+<Footer
+  copyrightText={null}
+  currencyOptions={
+    Array [
+      Object {
+        "text": "EUR",
+        "value": "EUR",
+      },
+      Object {
+        "text": "USD",
+        "value": "USD",
+      },
+    ]
+  }
+  currencyValue={null}
+  languageOptions={
+    Array [
+      Object {
+        "text": "English",
+        "value": "en",
+      },
+      Object {
+        "text": "German",
+        "value": "de",
+      },
+    ]
+  }
+  languageValue={null}
+  navigationItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+    ]
+  }
+  onChangeCurrency={[Function]}
+  onChangeLanguage={[Function]}
+  phoneNumber="+1 2345 678912"
+  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
+  socialMediaLinks={Array []}
+>
+  <footer>
+    <div
+      className="top-navigation"
+    >
+      <HorizontalGutters
+        as={[Function]}
+        borderless={true}
+        inverted={true}
+        stackable={true}
+      >
+        <Container
+          as={[Function]}
+          borderless={true}
+          inverted={true}
+          stackable={true}
+        >
+          <Menu
+            borderless={true}
+            className="ui container"
+            inverted={true}
+            stackable={true}
+          >
+            <div
+              className="ui borderless inverted stackable ui container menu"
+            >
+              <MenuItem
+                href="/"
+                key="Home0"
+                link={true}
+              >
+                <a
+                  className="link item"
+                  href="/"
+                  onClick={[Function]}
+                >
+                  Home
+                </a>
+              </MenuItem>
+            </div>
+          </Menu>
+        </Container>
+      </HorizontalGutters>
+    </div>
+    <div
+      className="bottom-navigation"
+    >
+      <HorizontalGutters
+        as={[Function]}
+        borderless={true}
+        inverted={true}
+        stackable={true}
+      >
+        <Container
+          as={[Function]}
+          borderless={true}
+          inverted={true}
+          stackable={true}
+        >
+          <Menu
+            borderless={true}
+            className="ui container"
+            inverted={true}
+            stackable={true}
+          >
+            <div
+              className="ui borderless inverted stackable ui container menu"
+            >
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Submenu
+                    isMenuItem={false}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={false}
+                    items={
+                      Array [
+                        Object {
+                          "text": "English",
+                          "value": "en",
+                        },
+                        Object {
+                          "text": "German",
+                          "value": "de",
+                        },
+                      ]
+                    }
+                    name="language"
+                    onChange={[Function]}
+                    pointing="top left"
+                    value={null}
+                    willOpenAbove={true}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={false}
+                      minCharacters={1}
+                      name="language"
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "key": "English",
+                            "text": "English",
+                            "value": "en",
+                          },
+                          Object {
+                            "key": "German",
+                            "text": "German",
+                            "value": "de",
+                          },
+                        ]
+                      }
+                      pointing="top left"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={false}
+                      trigger={null}
+                      upward={true}
+                      value={null}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui upward top left pointing dropdown"
+                        name="language"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="English"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="English"
+                              value="en"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="English"
+                                >
+                                  English
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="German"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="German"
+                              value="de"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="German"
+                                >
+                                  German
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuItem>
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Submenu
+                    isMenuItem={false}
+                    isTriggerUnderlined={false}
+                    isTriggeredOnHover={false}
+                    items={
+                      Array [
+                        Object {
+                          "text": "EUR",
+                          "value": "EUR",
+                        },
+                        Object {
+                          "text": "USD",
+                          "value": "USD",
+                        },
+                      ]
+                    }
+                    name="currency"
+                    onChange={[Function]}
+                    pointing="top left"
+                    value={null}
+                    willOpenAbove={true}
+                  >
+                    <Dropdown
+                      additionLabel="Add "
+                      additionPosition="top"
+                      className=""
+                      closeOnBlur={true}
+                      deburr={false}
+                      icon={
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          path={null}
+                          size="small"
+                        />
+                      }
+                      item={false}
+                      minCharacters={1}
+                      name="currency"
+                      noResultsMessage="No results found."
+                      onChange={[Function]}
+                      openOnFocus={true}
+                      options={
+                        Array [
+                          Object {
+                            "key": "EUR",
+                            "text": "EUR",
+                            "value": "EUR",
+                          },
+                          Object {
+                            "key": "USD",
+                            "text": "USD",
+                            "value": "USD",
+                          },
+                        ]
+                      }
+                      pointing="top left"
+                      renderLabel={[Function]}
+                      searchInput="text"
+                      selectOnBlur={true}
+                      selectOnNavigation={true}
+                      simple={false}
+                      trigger={null}
+                      upward={true}
+                      value={null}
+                      wrapSelection={true}
+                    >
+                      <div
+                        aria-expanded={false}
+                        className="ui upward top left pointing dropdown"
+                        name="currency"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
+                      >
+                        <div
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
+                          onClick={[Function]}
+                          path={null}
+                          size="small"
+                        >
+                          <i
+                            className="icon small"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu>
+                          <div
+                            className="menu transition"
+                          >
+                            <DropdownItem
+                              active={false}
+                              key="EUR"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="EUR"
+                              value="EUR"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="EUR"
+                                >
+                                  EUR
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="USD"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="USD"
+                              value="USD"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                  key="USD"
+                                >
+                                  USD
+                                </span>
+                              </div>
+                            </DropdownItem>
+                          </div>
+                        </DropdownMenu>
+                      </div>
+                    </Dropdown>
+                  </Submenu>
+                </div>
+              </MenuItem>
+              <MenuItem
+                className="is-selectable"
+              >
+                <div
+                  className="item is-selectable"
+                  onClick={[Function]}
+                >
+                  <Icon
+                    color={null}
+                    hasBorder={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText="+1 2345 678912"
+                    labelWeight={null}
+                    name="phone"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon has-label"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.26,20.77a10.82,10.82,0,0,1-4.91-1.31,18.17,18.17,0,0,1-4.5-3.31,18.36,18.36,0,0,1-3.31-4.5,11,11,0,0,1-1.3-4.91A3.72,3.72,0,0,1,4.58,4.39,4,4,0,0,1,6.73,3.23,2,2,0,0,1,8,3.91,11.34,11.34,0,0,1,9.16,5.26c.25.33,1.52,2,1.52,2.79s-.74,1.11-1.53,1.6a7.2,7.2,0,0,0-.84.56c-.24.19-.28.29-.29.32A11.62,11.62,0,0,0,13.47,16a.94.94,0,0,0,.32-.3,9.4,9.4,0,0,0,.56-.84c.48-.78.93-1.52,1.59-1.52s2.46,1.26,2.79,1.51a10.53,10.53,0,0,1,1.35,1.22,2,2,0,0,1,.68,1.21,4,4,0,0,1-1.15,2.16,3.78,3.78,0,0,1-2.35,1.35ZM6.73,4.11A3.25,3.25,0,0,0,5.17,5,2.86,2.86,0,0,0,4.11,6.74c0,5.9,7.25,13.15,13.15,13.15A2.84,2.84,0,0,0,19,18.83a3.35,3.35,0,0,0,.93-1.56c0-.17-.49-.82-1.75-1.79A7.23,7.23,0,0,0,16,14.19s-.12,0-.32.3-.36.52-.54.81c-.49.8-.95,1.55-1.62,1.55a.87.87,0,0,1-.32-.06A12.44,12.44,0,0,1,7.2,10.85c-.11-.28-.13-.71.42-1.21A8.34,8.34,0,0,1,8.69,8.9a9,9,0,0,0,.82-.54c.25-.2.29-.3.29-.31A6.78,6.78,0,0,0,8.51,5.86c-1-1.27-1.62-1.73-1.78-1.76Zm13.6,7a.43.43,0,0,1-.44-.44,6.58,6.58,0,0,0-6.58-6.57.44.44,0,1,1,0-.88,7.44,7.44,0,0,1,7.45,7.45A.43.43,0,0,1,20.33,11.12Zm-2.64,0a.43.43,0,0,1-.43-.44,4,4,0,0,0-4-3.94.44.44,0,1,1,0-.88,4.82,4.82,0,0,1,4.82,4.82A.43.43,0,0,1,17.69,11.12Zm-2.63,0a.43.43,0,0,1-.43-.44,1.32,1.32,0,0,0-1.32-1.31.44.44,0,0,1,0-.88,2.2,2.2,0,0,1,2.19,2.19A.43.43,0,0,1,15.06,11.12Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      <Paragraph
+                        size="medium"
+                        weight={null}
+                      >
+                        <p
+                          className=""
+                        >
+                          +1 2345 678912
+                        </p>
+                      </Paragraph>
+                    </i>
+                  </Icon>
+                </div>
+              </MenuItem>
+              <Divider
+                className=""
+                hasLine={true}
+                size="medium"
+              >
+                <Divider
+                  className=""
+                  hidden={false}
+                  section={false}
+                >
+                  <div
+                    className="ui divider"
+                  />
+                </Divider>
+              </Divider>
+              <MenuItem
+                className="is-selectable"
+              >
+                <div
+                  className="item is-selectable"
+                  onClick={[Function]}
+                >
+                  The Cat House, Pawprint Way, Catania 08012
+                </div>
+              </MenuItem>
+            </div>
+          </Menu>
+        </Container>
+      </HorizontalGutters>
+    </div>
+  </footer>
+</Footer>
+`;

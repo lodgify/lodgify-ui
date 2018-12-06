@@ -21,7 +21,9 @@ import { getMenuItemMarkup } from './utils/getMenuItemMarkup';
 export const Component = ({
   copyrightText,
   currencyOptions,
+  currencyValue,
   languageOptions,
+  languageValue,
   navigationItems,
   onChangeCurrency,
   onChangeLanguage,
@@ -55,6 +57,7 @@ export const Component = ({
             items={languageOptions}
             name="language"
             onChange={onChangeLanguage}
+            value={languageValue}
             willOpenAbove
           />
         </Menu.Item>
@@ -63,6 +66,7 @@ export const Component = ({
             items={currencyOptions}
             name="currency"
             onChange={onChangeCurrency}
+            value={currencyValue}
             willOpenAbove
           />
         </Menu.Item>
@@ -100,6 +104,8 @@ Component.displayName = 'Footer';
 
 Component.defaultProps = {
   copyrightText: null,
+  currencyValue: null,
+  languageValue: null,
   socialMediaLinks: [],
 };
 
@@ -119,6 +125,12 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The current value of the currency dropdown. */
+  currencyValue: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   /** The options which the user can select for the language dropdown. */
   languageOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -132,6 +144,12 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The current value of the language dropdown. */
+  languageValue: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   /** The items for a user to navigate the site. */
   navigationItems: PropTypes.arrayOf(
     PropTypes.shape({
