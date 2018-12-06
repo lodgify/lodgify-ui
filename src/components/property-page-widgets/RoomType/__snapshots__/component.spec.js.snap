@@ -753,7 +753,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                       role="list"
                                     >
                                       <ListItem
-                                        key="0"
+                                        key="1 Bedroom0"
                                       >
                                         <div
                                           className="item"
@@ -1899,7 +1899,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                       role="list"
                                     >
                                       <ListItem
-                                        key="0"
+                                        key="1 Bedroom0"
                                       >
                                         <div
                                           className="item"

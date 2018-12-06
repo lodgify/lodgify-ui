@@ -127,7 +127,7 @@ Component.propTypes = {
       /** The date range the rate category applies to */
       dateRange: PropTypes.string,
       /** The name of the rate category */
-      name: PropTypes.string,
+      name: PropTypes.string.isRequired,
       /** The number of guests the rate category applies to */
       numberOfGuests: PropTypes.string,
       /** The rate category rates */

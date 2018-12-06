@@ -4,7 +4,7 @@ import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-he
 
 import { ComponentWithResponsive as PropertyPageHero } from './component';
 
-const url = '🚞';
+const imageUrl = '🚞';
 
 const props = {
   activeNavigationItemIndex: 1,
@@ -12,7 +12,7 @@ const props = {
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
   headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
-  images: [{ url, label: 'Entrance' }, { url, label: 'Kitchen' }],
+  images: [{ imageUrl, label: 'Entrance' }, { imageUrl, label: 'Kitchen' }],
   searchBarGuestsOptions: [{ text: '1', value: '1' }],
   searchBarLocationOptions: [{ text: '1', value: '1' }],
   searchBarModalHeadingText: '😹',

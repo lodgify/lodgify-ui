@@ -22,12 +22,12 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
   images={
     Array [
       Object {
+        "imageUrl": "🚞",
         "label": "Entrance",
-        "url": "🚞",
       },
       Object {
+        "imageUrl": "🚞",
         "label": "Kitchen",
-        "url": "🚞",
       },
     ]
   }
@@ -810,12 +810,12 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                       images={
                         Array [
                           Object {
+                            "imageUrl": "🚞",
                             "label": "Entrance",
-                            "url": "🚞",
                           },
                           Object {
+                            "imageUrl": "🚞",
                             "label": "Kitchen",
-                            "url": "🚞",
                           },
                         ]
                       }

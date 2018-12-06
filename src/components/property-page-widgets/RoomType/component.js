@@ -159,7 +159,7 @@ Component.propTypes = {
        */
       iconName: PropTypes.string,
       /** The feature label to display. */
-      labelText: PropTypes.string,
+      labelText: PropTypes.string.isRequired,
     })
   ).isRequired,
   /**
