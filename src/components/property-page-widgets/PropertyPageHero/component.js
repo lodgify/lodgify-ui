@@ -38,7 +38,7 @@ const Component = ({
   searchBarOnSubmit,
 }) => {
   const {
-    url: backgroundImageUrl,
+    imageUrl: backgroundImageUrl,
     sizes: backgroundImageSizes,
     srcSet: backgroundImageSrcSet,
     placeholderImageUrl,
@@ -143,6 +143,8 @@ Component.propTypes = {
       imageNotFoundLabelText: PropTypes.string,
       /** Title of the image to show when hovering it on desktop browsers */
       imageTitle: PropTypes.string,
+      /** URL pointing to the image to display. */
+      imageUrl: PropTypes.string.isRequired,
       /** A visible label for the image. */
       label: PropTypes.string.isRequired,
       /** URL pointing to the placeholder image to display. */
@@ -151,8 +153,6 @@ Component.propTypes = {
       sizes: PropTypes.string,
       /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
       srcSet: PropTypes.string,
-      /** URL pointing to the image to display. */
-      url: PropTypes.string.isRequired,
     })
   ).isRequired,
   /** The name of the property to display in the gallery modal. */
