@@ -94,7 +94,7 @@ export const Component = ({
           {homeHighlights.map(({ iconName, text }) => (
             <Icon
               hasBorder
-              key={buildKeyFromStrings(iconName, text)}
+              key={buildKeyFromStrings(text)}
               labelText={text}
               name={iconName}
             />
@@ -126,7 +126,7 @@ Component.propTypes = {
        */
       iconName: PropTypes.string,
       /** A visible label to display. */
-      text: PropTypes.string,
+      text: PropTypes.string.isRequired,
     })
   ).isRequired,
   /** The heading displayed above the home highlights. */
