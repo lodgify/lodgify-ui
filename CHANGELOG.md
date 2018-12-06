@@ -1,3 +1,10 @@
+# [1.96.0](https://github.com/lodgify/lodgify-ui/compare/v1.95.0...v1.96.0) (2018-12-06)
+
+
+### Features
+
+* **Submenu:** simplify API, scrap defaultValue and use only value ([32c55c2](https://github.com/lodgify/lodgify-ui/commit/32c55c2))
+
 # [1.95.0](https://github.com/lodgify/lodgify-ui/compare/v1.94.1...v1.95.0) (2018-12-06)
 
 
