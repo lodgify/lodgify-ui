@@ -36,7 +36,6 @@ export const getDesktopMenuMarkup = ({
         size(subItems) > 0 ? (
           <Submenu
             isMenuItem
-            isSelectedDisabled
             isSimple
             isTriggerUnderlined={index === activeNavigationItemIndex}
             isTriggeredOnHover

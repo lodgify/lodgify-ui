@@ -37,7 +37,6 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
         </MenuItem>
         <Submenu
           isMenuItem={true}
-          isSelectedDisabled={true}
           isSimple={true}
           isTriggerUnderlined={true}
           isTriggeredOnHover={true}
@@ -65,6 +64,7 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
           name={null}
           onChange={[Function]}
           pointing="top right"
+          value={null}
           willOpenAbove={false}
         >
           <Dropdown
@@ -126,7 +126,7 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
             simple={true}
             trigger="All properties"
             upward={false}
-            value={-999}
+            value={null}
             wrapSelection={true}
           >
             <div
@@ -358,7 +358,6 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
         </MenuItem>
         <Submenu
           isMenuItem={true}
-          isSelectedDisabled={true}
           isSimple={true}
           isTriggerUnderlined={true}
           isTriggeredOnHover={true}
@@ -386,6 +385,7 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
           name={null}
           onChange={[Function]}
           pointing="top left"
+          value={null}
           willOpenAbove={false}
         >
           <Dropdown
@@ -447,7 +447,7 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
             simple={true}
             trigger="All properties"
             upward={false}
-            value={-999}
+            value={null}
             wrapSelection={true}
           >
             <div

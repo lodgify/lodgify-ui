@@ -25,7 +25,9 @@ const socialMediaLinks = [
 
 <Footer
   currencyOptions={currencyOptions}
+  currencyValue={currencyOptions[0].value}
   languageOptions={languageOptions}
+  languageValue={languageOptions[0].value}
   navigationItems={navigationItems}
   onChangeCurrency={console.log}
   onChangeLanguage={console.log}
@@ -80,7 +82,9 @@ const socialMediaLinks = [
 
 <Footer
   currencyOptions={currencyOptions}
+  currencyValue={currencyOptions[0].value}
   languageOptions={languageOptions}
+  languageValue={languageOptions[0].value}
   navigationItems={navigationItems}
   onChangeCurrency={console.log}
   onChangeLanguage={console.log}
@@ -112,7 +116,9 @@ const socialMediaLinks = [
 <Footer
   copyrightText="\u00A9 2018 Feline Vacations. All rights reserved."
   currencyOptions={currencyOptions}
+  currencyValue={currencyOptions[0].value}
   languageOptions={languageOptions}
+  languageValue={languageOptions[0].value}
   navigationItems={navigationItems}
   onChangeCurrency={console.log}
   onChangeLanguage={console.log}
@@ -120,4 +126,60 @@ const socialMediaLinks = [
   propertyAddress={'The Cat House, Pawprint Way, Catania 08012'}
   socialMediaLinks={socialMediaLinks}
 />
+```
+
+### Usage
+
+#### Control dropdown values
+
+```jsx
+const currencyOptions = [
+  { text: 'EUR', value: 'EUR' },
+  { text: 'USD', value: 'USD' },
+];
+const languageOptions = [
+  { text: 'English', value: 'en' },
+  { text: 'German', value: 'de' },
+];
+const navigationItems = [
+  { href: '/', text: 'Home' },
+];
+
+class FooterController extends React.Component {
+  constructor () {
+    super();
+    this.state = {
+      currencyValue: null,
+      languageValue: null
+    }
+    this.handleChangeCurrency = this.handleChangeCurrency.bind(this)
+    this.handleChangeLanguage = this.handleChangeLanguage.bind(this)
+  }
+
+  handleChangeCurrency ({ value }) {
+    this.setState({ currencyValue: value })
+  }
+
+  handleChangeLanguage ({ value }) {
+    this.setState({ languageValue: value })
+  }
+
+  render () {
+    return (
+      <Footer
+        currencyOptions={currencyOptions}
+        currencyValue={this.state.currencyValue || currencyOptions[0].value}
+        languageOptions={languageOptions}
+        languageValue={this.state.languageValue || languageOptions[0].value}
+        navigationItems={navigationItems}
+        onChangeCurrency={this.handleChangeCurrency}
+        onChangeLanguage={this.handleChangeLanguage}
+        phoneNumber={'+1 2345 678912'}
+        propertyAddress={'The Cat House, Pawprint Way, Catania 08012'}
+      />
+    );
+  };
+}
+
+<FooterController />
 ```

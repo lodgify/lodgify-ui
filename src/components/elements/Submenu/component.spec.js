@@ -6,7 +6,6 @@ import {
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { Component as Submenu } from './component';
@@ -43,16 +42,7 @@ describe('<Submenu />', () => {
         pointing: 'top left',
         trigger: children,
         upward: false,
-      });
-    });
-
-    it('should get `isSelectedDisabled` to set the `value` to `-999`', () => {
-      const wrapper = getSubmenuDropdown({
-        isSelectedDisabled: true,
-      });
-
-      expectComponentToHaveProps(wrapper, {
-        value: -999,
+        value: null,
       });
     });
 
