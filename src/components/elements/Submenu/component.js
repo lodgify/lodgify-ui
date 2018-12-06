@@ -6,7 +6,6 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { adaptOnChange } from './utils/adaptOnChange';
 import { adaptOptions } from './utils/adaptOptions';
-import { getAdditionalProps } from './utils/getAdditionalProps';
 
 /**
  * A submenu displays grouped navigation items.
@@ -15,13 +14,13 @@ import { getAdditionalProps } from './utils/getAdditionalProps';
 export const Component = ({
   children,
   isMenuItem,
-  isSelectedDisabled,
   isTriggeredOnHover,
   isTriggerUnderlined,
   items,
   name,
   onChange,
   pointing,
+  value,
   willOpenAbove,
 }) => (
   <Dropdown
@@ -35,7 +34,7 @@ export const Component = ({
     simple={isTriggeredOnHover}
     trigger={children}
     upward={willOpenAbove}
-    {...getAdditionalProps({ children, items, isSelectedDisabled })}
+    value={value}
   />
 );
 
@@ -44,12 +43,12 @@ Component.displayName = 'Submenu';
 Component.defaultProps = {
   children: null,
   isMenuItem: false,
-  isSelectedDisabled: false,
   isTriggeredOnHover: false,
   isTriggerUnderlined: false,
   name: null,
   onChange: Function.prototype,
   pointing: 'top left',
+  value: null,
   willOpenAbove: false,
 };
 
@@ -58,8 +57,6 @@ Component.propTypes = {
   children: PropTypes.string,
   /** Is it an item in a Semantic UI Menu.  */
   isMenuItem: PropTypes.bool,
-  /** Is the selected state disabled */
-  isSelectedDisabled: PropTypes.bool,
   /** Is the trigger underlined for emphasis.  */
   isTriggerUnderlined: PropTypes.bool,
   /** Is it triggered on hover rather than click.  */
@@ -93,6 +90,12 @@ Component.propTypes = {
     'bottom',
     'bottom left',
     'bottom right',
+  ]),
+  /** The current value of the submenu where it is consumed as a controlled component. */
+  value: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
   ]),
   /** Will the submenu open above the input. */
   willOpenAbove: PropTypes.bool,
