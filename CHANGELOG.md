@@ -1,3 +1,22 @@
+## [1.94.1](https://github.com/lodgify/lodgify-ui/compare/v1.94.0...v1.94.1) (2018-12-06)
+
+
+### Bug Fixes
+
+* **Description:** implement ShowOn component ([52d4f4c](https://github.com/lodgify/lodgify-ui/commit/52d4f4c))
+* **Divider:** adapt component description ([b894cf5](https://github.com/lodgify/lodgify-ui/commit/b894cf5))
+* **Header:** adapt header utils with ShowOn component ([f1ab103](https://github.com/lodgify/lodgify-ui/commit/f1ab103))
+* **HomepageHero:** implement ShowOn component ([95103d0](https://github.com/lodgify/lodgify-ui/commit/95103d0))
+* **Location:** implement ShowOn component ([967fcfa](https://github.com/lodgify/lodgify-ui/commit/967fcfa))
+* **menu.overrides:** align container with flex wrapper display ([8b283da](https://github.com/lodgify/lodgify-ui/commit/8b283da))
+* **Pictures:** implement ShowOn component ([35a5b1b](https://github.com/lodgify/lodgify-ui/commit/35a5b1b))
+* **Pictures:** use imageUrl to build key ([1e92a54](https://github.com/lodgify/lodgify-ui/commit/1e92a54))
+* **Promotion:** implement ShowOn component ([01d16c0](https://github.com/lodgify/lodgify-ui/commit/01d16c0))
+* **PropertyPageSearchBar:** implement ShowOn component ([9d9c42b](https://github.com/lodgify/lodgify-ui/commit/9d9c42b))
+* **Rates:** implement ShowOn component ([50cc140](https://github.com/lodgify/lodgify-ui/commit/50cc140))
+* **RoomType:** implement ShowOn component ([c2f7165](https://github.com/lodgify/lodgify-ui/commit/c2f7165))
+* **site.overrides:** change responsive wrapper display property and fix thumbnail ([b7ae54c](https://github.com/lodgify/lodgify-ui/commit/b7ae54c))
+
 # [1.94.0](https://github.com/lodgify/lodgify-ui/compare/v1.93.0...v1.94.0) (2018-11-29)
 
 
