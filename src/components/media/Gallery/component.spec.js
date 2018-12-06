@@ -4,7 +4,10 @@ import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-he
 
 import { Component as Gallery } from './component';
 
-const images = [{ url: '💻', label: '🔷' }, { url: '💻', label: '🔷' }];
+const images = [
+  { imageUrl: '💻', label: '🔷' },
+  { imageUrl: '💻', label: '🔷' },
+];
 const trigger = 'someTrigger';
 
 const getGallery = props =>
