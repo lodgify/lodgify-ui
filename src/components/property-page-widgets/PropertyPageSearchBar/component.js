@@ -47,6 +47,7 @@ export const Component = ({
       </ShowOn>
       <ShowOn mobile tablet>
         <SearchBar
+          getIsDayBlocked={getIsDayBlocked}
           guestsOptions={guestsOptions}
           isDisplayedAsModal
           isFixed={isFixed}
