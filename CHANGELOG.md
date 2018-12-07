@@ -1,3 +1,10 @@
+## [1.97.1](https://github.com/lodgify/lodgify-ui/compare/v1.97.0...v1.97.1) (2018-12-07)
+
+
+### Bug Fixes
+
+* **Reviews:** correct references to roomType ([50935b2](https://github.com/lodgify/lodgify-ui/commit/50935b2))
+
 # [1.97.0](https://github.com/lodgify/lodgify-ui/compare/v1.96.0...v1.97.0) (2018-12-07)
 
 
