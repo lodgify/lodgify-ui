@@ -92,7 +92,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
           widescreen={false}
         >
           <div
-            className="hide-on-all-devices show-on-mobile"
+            className="show-on-mobile"
           >
             <Grid
               areColumnsCentered={false}
@@ -1419,7 +1419,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
     widescreen={true}
   >
     <div
-      className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+      className="show-on-tablet show-on-computer show-on-widescreen"
     >
       <Table
         tableBody={
@@ -2897,7 +2897,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
           widescreen={false}
         >
           <div
-            className="hide-on-all-devices show-on-mobile"
+            className="show-on-mobile"
           >
             <Grid
               areColumnsCentered={false}
@@ -4224,7 +4224,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
     widescreen={true}
   >
     <div
-      className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+      className="show-on-tablet show-on-computer show-on-widescreen"
     >
       <Table
         tableBody={

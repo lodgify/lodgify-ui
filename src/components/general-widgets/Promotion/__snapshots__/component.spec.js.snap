@@ -145,19 +145,19 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                       widescreen={true}
                                     >
                                       <GridColumn
-                                        className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                                        className="show-on-tablet show-on-computer show-on-widescreen"
                                         textAlign="left"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
-                                          className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                                          className="show-on-tablet show-on-computer show-on-widescreen"
                                           textAlign="left"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
-                                            className="left aligned top aligned twelve wide column hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                                            className="left aligned top aligned twelve wide column show-on-tablet show-on-computer show-on-widescreen"
                                           >
                                             <Heading
                                               isColorInverted={false}
@@ -194,19 +194,19 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                       widescreen={false}
                                     >
                                       <GridColumn
-                                        className="hide-on-all-devices show-on-mobile"
+                                        className="show-on-mobile"
                                         textAlign="center"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
-                                          className="hide-on-all-devices show-on-mobile"
+                                          className="show-on-mobile"
                                           textAlign="center"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
-                                            className="center aligned top aligned twelve wide column hide-on-all-devices show-on-mobile"
+                                            className="center aligned top aligned twelve wide column show-on-mobile"
                                           >
                                             <Heading
                                               isColorInverted={false}
@@ -245,15 +245,15 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                 widescreen={true}
                               >
                                 <GridRow
-                                  className="book-now-button-container hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                                  className="book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                   horizontalAlignContent="left"
                                 >
                                   <GridRow
-                                    className="book-now-button-container hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                                    className="book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                     textAlign="left"
                                   >
                                     <div
-                                      className="left aligned row book-now-button-container hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                                      className="left aligned row book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                     >
                                       <GridColumn
                                         textAlign="center"
@@ -321,17 +321,17 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                 widescreen={false}
                               >
                                 <GridRow
-                                  className="hide-on-all-devices show-on-mobile"
+                                  className="show-on-mobile"
                                   horizontalAlignContent="left"
                                   verticalAlign="top"
                                 >
                                   <GridRow
-                                    className="hide-on-all-devices show-on-mobile"
+                                    className="show-on-mobile"
                                     textAlign="left"
                                     verticalAlign="top"
                                   >
                                     <div
-                                      className="left aligned top aligned row hide-on-all-devices show-on-mobile"
+                                      className="left aligned top aligned row show-on-mobile"
                                     >
                                       <GridColumn
                                         floated="right"
@@ -414,17 +414,17 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                 widescreen={false}
                               >
                                 <GridRow
-                                  className="hide-on-all-devices show-on-tablet show-on-computer"
+                                  className="show-on-tablet show-on-computer"
                                   horizontalAlignContent="left"
                                   verticalAlign="bottom"
                                 >
                                   <GridRow
-                                    className="hide-on-all-devices show-on-tablet show-on-computer"
+                                    className="show-on-tablet show-on-computer"
                                     textAlign="left"
                                     verticalAlign="bottom"
                                   >
                                     <div
-                                      className="left aligned bottom aligned row hide-on-all-devices show-on-tablet show-on-computer"
+                                      className="left aligned bottom aligned row show-on-tablet show-on-computer"
                                     >
                                       <GridColumn
                                         floated="right"

@@ -14,11 +14,11 @@ exports[`getMobileMenuMarkup by default should render the right structure 1`] = 
   widescreen={false}
 >
   <MenuMenu
-    className="hide-on-all-devices show-on-mobile"
+    className="show-on-mobile"
     position="right"
   >
     <div
-      className="right menu hide-on-all-devices show-on-mobile"
+      className="right menu show-on-mobile"
     >
       <MenuItem>
         <div
@@ -244,11 +244,11 @@ exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
   widescreen={false}
 >
   <MenuMenu
-    className="hide-on-all-devices show-on-mobile"
+    className="show-on-mobile"
     position="right"
   >
     <div
-      className="right menu hide-on-all-devices show-on-mobile"
+      className="right menu show-on-mobile"
     >
       <MenuItem>
         <div
