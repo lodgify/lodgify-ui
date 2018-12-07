@@ -1,43 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ShowOn /> if all devices are set as false should only return \`hide-on-all-devices\` as default class for the wrapper 1`] = `
+exports[`<ShowOn /> if \`props.computer\` is \`true\` should render the right structure 1`] = `
 <ShowOn
-  computer={false}
+  computer={true}
   mobile={false}
-  parent="section"
-  parentProps={
-    Object {
-      "className": "",
-    }
-  }
+  parent="div"
+  parentProps={Object {}}
   tablet={false}
   widescreen={false}
 >
-  <section
-    className="hide-on-all-devices"
-  >
-    div
-  </section>
+  <div
+    className="show-on-computer"
+  />
 </ShowOn>
 `;
 
-exports[`<ShowOn /> it should render the right structure 1`] = `
+exports[`<ShowOn /> if \`props.mobile\` is \`true\` should render the right structure 1`] = `
 <ShowOn
-  computer={true}
+  computer={false}
   mobile={true}
-  parent="section"
-  parentProps={
-    Object {
-      "className": "",
-    }
-  }
+  parent="div"
+  parentProps={Object {}}
+  tablet={false}
+  widescreen={false}
+>
+  <div
+    className="show-on-mobile"
+  />
+</ShowOn>
+`;
+
+exports[`<ShowOn /> if \`props.tablet\` is \`true\` should render the right structure 1`] = `
+<ShowOn
+  computer={false}
+  mobile={false}
+  parent="div"
+  parentProps={Object {}}
   tablet={true}
+  widescreen={false}
+>
+  <div
+    className="show-on-tablet"
+  />
+</ShowOn>
+`;
+
+exports[`<ShowOn /> if \`props.widescreen\` is \`true\` should render the right structure 1`] = `
+<ShowOn
+  computer={false}
+  mobile={false}
+  parent="div"
+  parentProps={Object {}}
+  tablet={false}
   widescreen={true}
 >
-  <section
-    className="hide-on-all-devices show-on-mobile show-on-tablet show-on-computer show-on-widescreen"
-  >
-    div
-  </section>
+  <div
+    className="show-on-widescreen"
+  />
+</ShowOn>
+`;
+
+exports[`<ShowOn /> should render the right structure 1`] = `
+<ShowOn
+  computer={false}
+  mobile={false}
+  parent="div"
+  parentProps={Object {}}
+  tablet={false}
+  widescreen={false}
+>
+  <div
+    className=""
+  />
 </ShowOn>
 `;

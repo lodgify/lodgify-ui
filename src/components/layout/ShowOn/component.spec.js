@@ -4,42 +4,42 @@ import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-he
 
 import { Component as ShowOn } from './component';
 
-const propsWithDevices = {
-  children: 'div',
-  parent: 'section',
-  parentProps: {
-    className: '',
-  },
-  mobile: true,
-  tablet: true,
-  computer: true,
-  widescreen: true,
-};
-
-const propsWithoutDevices = {
-  children: 'div',
-  parent: 'section',
-  parentProps: {
-    className: '',
-  },
-  mobile: false,
-  tablet: false,
-  computer: false,
-  widescreen: false,
-};
-
 const getShowOn = props => mount(<ShowOn {...props} />);
 
 describe('<ShowOn />', () => {
-  it('it should render the right structure', () => {
-    const actual = getShowOn(propsWithDevices);
+  it('should render the right structure', () => {
+    const actual = getShowOn();
 
     expect(actual).toMatchSnapshot();
   });
 
-  describe('if all devices are set as false', () => {
-    it('should only return `hide-on-all-devices` as default class for the wrapper', () => {
-      const actual = getShowOn(propsWithoutDevices);
+  describe('if `props.mobile` is `true`', () => {
+    it('should render the right structure', () => {
+      const actual = getShowOn({ mobile: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.tablet` is `true`', () => {
+    it('should render the right structure', () => {
+      const actual = getShowOn({ tablet: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.computer` is `true`', () => {
+    it('should render the right structure', () => {
+      const actual = getShowOn({ computer: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.widescreen` is `true`', () => {
+    it('should render the right structure', () => {
+      const actual = getShowOn({ widescreen: true });
 
       expect(actual).toMatchSnapshot();
     });

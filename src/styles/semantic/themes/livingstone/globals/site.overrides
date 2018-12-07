@@ -448,42 +448,58 @@ blockquote.ui.quote .row {
 }
 
 /*----------------------
-    Show on devices
+    Hide on devices
 -----------------------*/
 
-.hide-on-all-devices {
-  display: none !important;
-}
-
-/* Shown on mobileViewport */
+/* Hide on mobileViewport */
 @media @mobileViewport {
 
-  .show-on-mobile {
-    display: flex !important;
+  .show-on-tablet,
+  .show-on-computer,
+  .show-on-widescreen {
+
+    &:not(.show-on-mobile) {
+      display: none !important;
+    }
   }
 }
 
-/* Shown on tabletViewport */
+/* Hide on tabletViewport */
 @media @tabletViewport {
 
-  .show-on-tablet {
-    display: flex !important;
+  .show-on-mobile,
+  .show-on-computer,
+  .show-on-widescreen {
+
+    &:not(.show-on-tablet) {
+      display: none !important;
+    }
   }
 }
 
-/* Shown on computerViewport */
+/* Hide on computerViewport */
 @media @computerViewport {
 
-  .show-on-computer {
-    display: flex !important;
+  .show-on-mobile,
+  .show-on-tablet,
+  .show-on-widescreen {
+
+    &:not(.show-on-computer) {
+      display: none !important;
+    }
   }
 }
 
-/* Shown on widescreenViewport */
+/* Hide on widescreenViewport */
 @media @widescreenViewport {
 
-  .show-on-widescreen {
-    display: flex !important;
+  .show-on-mobile,
+  .show-on-tablet,
+  .show-on-computer {
+
+    &:not(.show-on-widescreen) {
+      display: none !important;
+    }
   }
 }
 
