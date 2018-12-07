@@ -1,23 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PaymentInformation /> if \`props.cancellationPolicyText\` is passed should have the right structure 1`] = `
-<PaymentInformation
+exports[`<PolicyAndNotes /> if \`props.cancellationPolicyText\` is passed should have the right structure 1`] = `
+<PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
   cancellationPolicyText="All paid prepayments are non-refundable."
-  cleaningCharge={null}
-  cleaningChargeHeadingText="Cleaning Charge"
   damageDepositHeadingText="Damage Deposit"
   damageDepositText={null}
   extraNotesText={null}
-  headingText="Payment Information"
+  headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
   paymentScheduleText={null}
-  taxesDescriptionText={null}
-  taxesHeadingText="Taxes"
-  taxesText={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -63,7 +58,7 @@ exports[`<PaymentInformation /> if \`props.cancellationPolicyText\` is passed sh
                         <h3
                           className="ui header"
                         >
-                          Payment Information
+                          Policy and Notes
                         </h3>
                       </Header>
                     </Heading>
@@ -129,171 +124,22 @@ exports[`<PaymentInformation /> if \`props.cancellationPolicyText\` is passed sh
       </div>
     </Grid>
   </Grid>
-</PaymentInformation>
+</PolicyAndNotes>
 `;
 
-exports[`<PaymentInformation /> if \`props.cleaningCharge\` is passed should have the right structure 1`] = `
-<PaymentInformation
+exports[`<PolicyAndNotes /> if \`props.damageDepositText\` is passed should have the right structure 1`] = `
+<PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
   cancellationPolicyText={null}
-  cleaningCharge="25$ (USD)"
-  cleaningChargeHeadingText="Cleaning Charge"
-  damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
-  extraNotesText={null}
-  headingText="Payment Information"
-  modalTriggerText="View more"
-  notesHeadingText="Notes"
-  notesText={null}
-  paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
-  taxesDescriptionText={null}
-  taxesHeadingText="Taxes"
-  taxesText={null}
->
-  <Grid
-    areColumnsCentered={false}
-    stackable={true}
-  >
-    <Grid
-      centered={false}
-      stackable={true}
-    >
-      <div
-        className="ui stackable grid"
-      >
-        <GridRow
-          horizontalAlignContent="left"
-        >
-          <GridRow
-            textAlign="left"
-          >
-            <div
-              className="left aligned row"
-            >
-              <GridColumn
-                verticalAlignContent="top"
-                width={12}
-              >
-                <GridColumn
-                  verticalAlign="top"
-                  width={12}
-                >
-                  <div
-                    className="top aligned twelve wide column"
-                  >
-                    <Heading
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          Payment Information
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-            </div>
-          </GridRow>
-        </GridRow>
-        <GridRow
-          horizontalAlignContent="left"
-        >
-          <GridRow
-            textAlign="left"
-          >
-            <div
-              className="left aligned row"
-            >
-              <GridColumn
-                verticalAlignContent="top"
-                width={6}
-              >
-                <GridColumn
-                  verticalAlign="top"
-                  width={6}
-                >
-                  <div
-                    className="top aligned six wide column"
-                  >
-                    <Heading
-                      isColorInverted={false}
-                      size="small"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h4"
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h4
-                          className="ui header"
-                        >
-                          Cleaning Charge
-                        </h4>
-                      </Header>
-                    </Heading>
-                    <Statistic
-                      horizontal={true}
-                      size="mini"
-                      text={true}
-                      value="25$ (USD)"
-                    >
-                      <div
-                        className="ui mini horizontal statistic"
-                      >
-                        <StatisticValue
-                          content="25$ (USD)"
-                          key="25$ (USD)"
-                          text={true}
-                        >
-                          <div
-                            className="text value"
-                          >
-                            25$ (USD)
-                          </div>
-                        </StatisticValue>
-                      </div>
-                    </Statistic>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-            </div>
-          </GridRow>
-        </GridRow>
-      </div>
-    </Grid>
-  </Grid>
-</PaymentInformation>
-`;
-
-exports[`<PaymentInformation /> if \`props.damageDepositText\` is passed should have the right structure 1`] = `
-<PaymentInformation
-  cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
-  cleaningCharge={null}
-  cleaningChargeHeadingText="Cleaning Charge"
   damageDepositHeadingText="Damage Deposit"
   damageDepositText="A refundable damage deposit of 200.00 € (EUR) is due."
   extraNotesText={null}
-  headingText="Payment Information"
+  headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
   paymentScheduleText={null}
-  taxesDescriptionText={null}
-  taxesHeadingText="Taxes"
-  taxesText={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -339,7 +185,7 @@ exports[`<PaymentInformation /> if \`props.damageDepositText\` is passed should 
                         <h3
                           className="ui header"
                         >
-                          Payment Information
+                          Policy and Notes
                         </h3>
                       </Header>
                     </Heading>
@@ -405,15 +251,13 @@ exports[`<PaymentInformation /> if \`props.damageDepositText\` is passed should 
       </div>
     </Grid>
   </Grid>
-</PaymentInformation>
+</PolicyAndNotes>
 `;
 
-exports[`<PaymentInformation /> if \`props.extraNotesText\` is passed should have the right structure 1`] = `
-<PaymentInformation
+exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have the right structure 1`] = `
+<PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
   cancellationPolicyText={null}
-  cleaningCharge={null}
-  cleaningChargeHeadingText="Cleaning Charge"
   damageDepositHeadingText="Damage Deposit"
   damageDepositText={null}
   extraNotesText="
@@ -425,15 +269,12 @@ exports[`<PaymentInformation /> if \`props.extraNotesText\` is passed should hav
 
   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 "
-  headingText="Payment Information"
+  headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
   paymentScheduleText={null}
-  taxesDescriptionText={null}
-  taxesHeadingText="Taxes"
-  taxesText={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -479,7 +320,7 @@ exports[`<PaymentInformation /> if \`props.extraNotesText\` is passed should hav
                         <h3
                           className="ui header"
                         >
-                          Payment Information
+                          Policy and Notes
                         </h3>
                       </Header>
                     </Heading>
@@ -651,19 +492,17 @@ exports[`<PaymentInformation /> if \`props.extraNotesText\` is passed should hav
       </div>
     </Grid>
   </Grid>
-</PaymentInformation>
+</PolicyAndNotes>
 `;
 
-exports[`<PaymentInformation /> if \`props.notesText\` is passed should have the right structure 1`] = `
-<PaymentInformation
+exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the right structure 1`] = `
+<PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
   cancellationPolicyText={null}
-  cleaningCharge={null}
-  cleaningChargeHeadingText="Cleaning Charge"
   damageDepositHeadingText="Damage Deposit"
   damageDepositText={null}
   extraNotesText={null}
-  headingText="Payment Information"
+  headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText="
@@ -673,9 +512,6 @@ exports[`<PaymentInformation /> if \`props.notesText\` is passed should have the
 "
   paymentScheduleHeadingText="Payment Schedule"
   paymentScheduleText={null}
-  taxesDescriptionText={null}
-  taxesHeadingText="Taxes"
-  taxesText={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -721,7 +557,7 @@ exports[`<PaymentInformation /> if \`props.notesText\` is passed should have the
                         <h3
                           className="ui header"
                         >
-                          Payment Information
+                          Policy and Notes
                         </h3>
                       </Header>
                     </Heading>
@@ -791,27 +627,22 @@ exports[`<PaymentInformation /> if \`props.notesText\` is passed should have the
       </div>
     </Grid>
   </Grid>
-</PaymentInformation>
+</PolicyAndNotes>
 `;
 
-exports[`<PaymentInformation /> if \`props.paymentScheduleText\` is passed should have the right structure 1`] = `
-<PaymentInformation
+exports[`<PolicyAndNotes /> if \`props.paymentScheduleText\` is passed should have the right structure 1`] = `
+<PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
   cancellationPolicyText={null}
-  cleaningCharge={null}
-  cleaningChargeHeadingText="Cleaning Charge"
   damageDepositHeadingText="Damage Deposit"
   damageDepositText={null}
   extraNotesText={null}
-  headingText="Payment Information"
+  headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
   paymentScheduleText="50% due at time of booking. Remaining balance: Due later."
-  taxesDescriptionText={null}
-  taxesHeadingText="Taxes"
-  taxesText={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -857,7 +688,7 @@ exports[`<PaymentInformation /> if \`props.paymentScheduleText\` is passed shoul
                         <h3
                           className="ui header"
                         >
-                          Payment Information
+                          Policy and Notes
                         </h3>
                       </Header>
                     </Heading>
@@ -923,27 +754,22 @@ exports[`<PaymentInformation /> if \`props.paymentScheduleText\` is passed shoul
       </div>
     </Grid>
   </Grid>
-</PaymentInformation>
+</PolicyAndNotes>
 `;
 
-exports[`<PaymentInformation /> if \`props.taxesText\` and \`props.taxesDescriptionText\` are passed should have the right structure 1`] = `
-<PaymentInformation
+exports[`<PolicyAndNotes /> should have the right structure 1`] = `
+<PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
   cancellationPolicyText={null}
-  cleaningCharge={null}
-  cleaningChargeHeadingText="Cleaning Charge"
   damageDepositHeadingText="Damage Deposit"
   damageDepositText={null}
   extraNotesText={null}
-  headingText="Payment Information"
+  headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
   paymentScheduleText={null}
-  taxesDescriptionText="of total booking value"
-  taxesHeadingText="Taxes"
-  taxesText="1%"
 >
   <Grid
     areColumnsCentered={false}
@@ -989,162 +815,7 @@ exports[`<PaymentInformation /> if \`props.taxesText\` and \`props.taxesDescript
                         <h3
                           className="ui header"
                         >
-                          Payment Information
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-            </div>
-          </GridRow>
-        </GridRow>
-        <GridRow
-          horizontalAlignContent="left"
-        >
-          <GridRow
-            textAlign="left"
-          >
-            <div
-              className="left aligned row"
-            >
-              <GridColumn
-                verticalAlignContent="top"
-                width={6}
-              >
-                <GridColumn
-                  verticalAlign="top"
-                  width={6}
-                >
-                  <div
-                    className="top aligned six wide column"
-                  >
-                    <Heading
-                      isColorInverted={false}
-                      size="small"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h4"
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h4
-                          className="ui header"
-                        >
-                          Taxes
-                        </h4>
-                      </Header>
-                    </Heading>
-                    <Statistic
-                      horizontal={true}
-                      label="of total booking value"
-                      size="tiny"
-                      text={true}
-                      value="1%"
-                    >
-                      <div
-                        className="ui tiny horizontal statistic"
-                      >
-                        <StatisticValue
-                          content="1%"
-                          key="1%"
-                          text={true}
-                        >
-                          <div
-                            className="text value"
-                          >
-                            1%
-                          </div>
-                        </StatisticValue>
-                        <StatisticLabel
-                          content="of total booking value"
-                          key="of total booking value"
-                        >
-                          <div
-                            className="label"
-                          >
-                            of total booking value
-                          </div>
-                        </StatisticLabel>
-                      </div>
-                    </Statistic>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-            </div>
-          </GridRow>
-        </GridRow>
-      </div>
-    </Grid>
-  </Grid>
-</PaymentInformation>
-`;
-
-exports[`<PaymentInformation /> should have the right structure 1`] = `
-<PaymentInformation
-  cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
-  cleaningCharge={null}
-  cleaningChargeHeadingText="Cleaning Charge"
-  damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
-  extraNotesText={null}
-  headingText="Payment Information"
-  modalTriggerText="View more"
-  notesHeadingText="Notes"
-  notesText={null}
-  paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
-  taxesDescriptionText={null}
-  taxesHeadingText="Taxes"
-  taxesText={null}
->
-  <Grid
-    areColumnsCentered={false}
-    stackable={true}
-  >
-    <Grid
-      centered={false}
-      stackable={true}
-    >
-      <div
-        className="ui stackable grid"
-      >
-        <GridRow
-          horizontalAlignContent="left"
-        >
-          <GridRow
-            textAlign="left"
-          >
-            <div
-              className="left aligned row"
-            >
-              <GridColumn
-                verticalAlignContent="top"
-                width={12}
-              >
-                <GridColumn
-                  verticalAlign="top"
-                  width={12}
-                >
-                  <div
-                    className="top aligned twelve wide column"
-                  >
-                    <Heading
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          Payment Information
+                          Policy and Notes
                         </h3>
                       </Header>
                     </Heading>
@@ -1157,5 +828,5 @@ exports[`<PaymentInformation /> should have the right structure 1`] = `
       </div>
     </Grid>
   </Grid>
-</PaymentInformation>
+</PolicyAndNotes>
 `;
