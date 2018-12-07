@@ -1108,17 +1108,17 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                             widescreen={false}
                                           >
                                             <Divider
-                                              className="hide-on-all-devices show-on-mobile"
+                                              className="show-on-mobile"
                                               hasLine={false}
                                               size="medium"
                                             >
                                               <Divider
-                                                className="hide-on-all-devices show-on-mobile"
+                                                className="show-on-mobile"
                                                 hidden={true}
                                                 section={false}
                                               >
                                                 <div
-                                                  className="ui hidden divider hide-on-all-devices show-on-mobile"
+                                                  className="ui hidden divider show-on-mobile"
                                                 />
                                               </Divider>
                                             </Divider>
@@ -2228,17 +2228,17 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                             widescreen={false}
                                           >
                                             <Divider
-                                              className="hide-on-all-devices show-on-mobile"
+                                              className="show-on-mobile"
                                               hasLine={false}
                                               size="medium"
                                             >
                                               <Divider
-                                                className="hide-on-all-devices show-on-mobile"
+                                                className="show-on-mobile"
                                                 hidden={true}
                                                 section={false}
                                               >
                                                 <div
-                                                  className="ui hidden divider hide-on-all-devices show-on-mobile"
+                                                  className="ui hidden divider show-on-mobile"
                                                 />
                                               </Divider>
                                             </Divider>

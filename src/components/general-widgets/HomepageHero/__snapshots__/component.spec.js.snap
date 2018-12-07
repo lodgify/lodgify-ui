@@ -268,11 +268,11 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                         widescreen={false}
                       >
                         <MenuMenu
-                          className="hide-on-all-devices show-on-mobile"
+                          className="show-on-mobile"
                           position="right"
                         >
                           <div
-                            className="right menu hide-on-all-devices show-on-mobile"
+                            className="right menu show-on-mobile"
                           >
                             <MenuItem>
                               <div
@@ -715,11 +715,11 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                         widescreen={true}
                       >
                         <MenuMenu
-                          className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                          className="show-on-tablet show-on-computer show-on-widescreen"
                           position="right"
                         >
                           <div
-                            className="right menu hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                            className="right menu show-on-tablet show-on-computer show-on-widescreen"
                           >
                             <MenuItem
                               active={false}
@@ -842,13 +842,13 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                 widescreen={true}
               >
                 <HorizontalGutters
-                  className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                  className="show-on-tablet show-on-computer show-on-widescreen"
                 >
                   <Container
-                    className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                    className="show-on-tablet show-on-computer show-on-widescreen"
                   >
                     <div
-                      className="ui container hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                      className="ui container show-on-tablet show-on-computer show-on-widescreen"
                     >
                       <Grid
                         areColumnsCentered={true}

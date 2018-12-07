@@ -138,11 +138,11 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                 widescreen={true}
               >
                 <List
-                  className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                  className="show-on-tablet show-on-computer show-on-widescreen"
                   horizontal={true}
                 >
                   <div
-                    className="ui horizontal list hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                    className="ui horizontal list show-on-tablet show-on-computer show-on-widescreen"
                     role="list"
                   >
                     <ListItem
@@ -346,16 +346,16 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
               >
                 <Grid
                   areColumnsCentered={false}
-                  className="hide-on-all-devices show-on-mobile"
+                  className="show-on-mobile"
                   columns={1}
                 >
                   <Grid
                     centered={false}
-                    className="hide-on-all-devices show-on-mobile"
+                    className="show-on-mobile"
                     columns={1}
                   >
                     <div
-                      className="ui one column grid hide-on-all-devices show-on-mobile"
+                      className="ui one column grid show-on-mobile"
                     >
                       <GridColumn
                         computer={3}
@@ -981,11 +981,11 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                 widescreen={true}
               >
                 <List
-                  className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                  className="show-on-tablet show-on-computer show-on-widescreen"
                   horizontal={true}
                 >
                   <div
-                    className="ui horizontal list hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                    className="ui horizontal list show-on-tablet show-on-computer show-on-widescreen"
                     role="list"
                   >
                     <ListItem
@@ -1189,16 +1189,16 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
               >
                 <Grid
                   areColumnsCentered={false}
-                  className="hide-on-all-devices show-on-mobile"
+                  className="show-on-mobile"
                   columns={1}
                 >
                   <Grid
                     centered={false}
-                    className="hide-on-all-devices show-on-mobile"
+                    className="show-on-mobile"
                     columns={1}
                   >
                     <div
-                      className="ui one column grid hide-on-all-devices show-on-mobile"
+                      className="ui one column grid show-on-mobile"
                     >
                       <GridColumn
                         computer={3}
@@ -1601,11 +1601,11 @@ exports[`<Description /> should have the correct structure 1`] = `
                 widescreen={true}
               >
                 <List
-                  className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                  className="show-on-tablet show-on-computer show-on-widescreen"
                   horizontal={true}
                 >
                   <div
-                    className="ui horizontal list hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                    className="ui horizontal list show-on-tablet show-on-computer show-on-widescreen"
                     role="list"
                   >
                     <ListItem
@@ -1809,16 +1809,16 @@ exports[`<Description /> should have the correct structure 1`] = `
               >
                 <Grid
                   areColumnsCentered={false}
-                  className="hide-on-all-devices show-on-mobile"
+                  className="show-on-mobile"
                   columns={1}
                 >
                   <Grid
                     centered={false}
-                    className="hide-on-all-devices show-on-mobile"
+                    className="show-on-mobile"
                     columns={1}
                   >
                     <div
-                      className="ui one column grid hide-on-all-devices show-on-mobile"
+                      className="ui one column grid show-on-mobile"
                     >
                       <GridColumn
                         computer={3}

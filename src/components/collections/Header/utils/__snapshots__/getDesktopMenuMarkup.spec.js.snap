@@ -15,11 +15,11 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
     widescreen={true}
   >
     <MenuMenu
-      className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+      className="show-on-tablet show-on-computer show-on-widescreen"
       position="right"
     >
       <div
-        className="right menu hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+        className="right menu show-on-tablet show-on-computer show-on-widescreen"
       >
         <MenuItem
           active={false}
@@ -336,11 +336,11 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
     widescreen={true}
   >
     <MenuMenu
-      className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+      className="show-on-tablet show-on-computer show-on-widescreen"
       position="right"
     >
       <div
-        className="right menu hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+        className="right menu show-on-tablet show-on-computer show-on-widescreen"
       >
         <MenuItem
           active={false}

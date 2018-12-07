@@ -129,21 +129,21 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
           widescreen={true}
         >
           <GridColumn
-            className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+            className="show-on-tablet show-on-computer show-on-widescreen"
             computer={6}
             tablet={12}
             verticalAlignContent="top"
             width={null}
           >
             <GridColumn
-              className="hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+              className="show-on-tablet show-on-computer show-on-widescreen"
               computer={6}
               tablet={12}
               verticalAlign="top"
               width={null}
             >
               <div
-                className="top aligned six wide computer twelve wide tablet column hide-on-all-devices show-on-tablet show-on-computer show-on-widescreen"
+                className="top aligned six wide computer twelve wide tablet column show-on-tablet show-on-computer show-on-widescreen"
               >
                 <LabelGroup>
                   <div
@@ -529,17 +529,17 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
           widescreen={false}
         >
           <GridColumn
-            className="hide-on-all-devices show-on-mobile"
+            className="show-on-mobile"
             verticalAlignContent="top"
             width={12}
           >
             <GridColumn
-              className="hide-on-all-devices show-on-mobile"
+              className="show-on-mobile"
               verticalAlign="top"
               width={12}
             >
               <div
-                className="top aligned twelve wide column hide-on-all-devices show-on-mobile"
+                className="top aligned twelve wide column show-on-mobile"
               >
                 <Divider
                   className=""

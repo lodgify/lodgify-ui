@@ -75,7 +75,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       widescreen={true}
     >
       <div
-        className="hide-on-all-devices show-on-computer show-on-widescreen"
+        className="show-on-computer show-on-widescreen"
       >
         <SearchBar
           getIsDayBlocked={[Function]}
@@ -2558,7 +2558,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       widescreen={false}
     >
       <div
-        className="hide-on-all-devices show-on-mobile show-on-tablet"
+        className="show-on-mobile show-on-tablet"
       >
         <SearchBar
           getIsDayBlocked={[Function]}
