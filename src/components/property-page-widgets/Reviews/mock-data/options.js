@@ -1,4 +1,4 @@
-export const propertyOptions = [
+export const roomTypeOptions = [
   {
     text: 'La Casa Viva',
     value: 'casaViva',

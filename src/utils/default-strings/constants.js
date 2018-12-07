@@ -1,6 +1,5 @@
 export const ADD_A_REVIEW = 'Add a Review';
 export const AND = 'and';
-export const APARTMENT = 'Apartment';
 export const ARRIVAL = 'Arrival';
 export const BOOK_NOW_DISCOUNT = 'Book Now with Discount';
 export const CALL_ME_BACK = 'Call me back';

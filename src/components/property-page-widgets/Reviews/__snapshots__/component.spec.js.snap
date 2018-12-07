@@ -2,7 +2,6 @@
 
 exports[`<Reviews /> should render the right structure 1`] = `
 <Reviews
-  apartmentInputLabel="Apartment"
   commentInputLabel="Comments"
   emailInputLabel="Your email"
   errorMessage=""
@@ -14,7 +13,6 @@ exports[`<Reviews /> should render the right structure 1`] = `
   monthOptions={Array []}
   nameInputLabel="Your name"
   onSubmit={[Function]}
-  propertyOptions={Array []}
   ratingAverage={4}
   ratingInputLabel="Your review"
   reviewFormHeading="Add a Review"
@@ -46,6 +44,8 @@ exports[`<Reviews /> should render the right structure 1`] = `
       },
     ]
   }
+  roomTypeInputLabel="Room"
+  roomTypeOptions={Array []}
   submitButtonText="Submit a review"
   successMessage=""
   titleInputLabel="Title"
@@ -422,8 +422,8 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 icon={null}
                                 isDisabled={false}
                                 isValid={false}
-                                label="Apartment"
-                                name="apartment"
+                                label="Room"
+                                name="roomType"
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 options={Array []}
@@ -435,7 +435,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 isDisabled={false}
                                 isValid={false}
                                 label="Guest Type"
-                                name="guest type"
+                                name="guestType"
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 options={Array []}
