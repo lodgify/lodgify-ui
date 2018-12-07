@@ -1,3 +1,10 @@
+# [1.97.0](https://github.com/lodgify/lodgify-ui/compare/v1.96.0...v1.97.0) (2018-12-07)
+
+
+### Features
+
+* **PropertyPageSearchBar:** pass getIsDayBlocked to modal search bar ([b53db09](https://github.com/lodgify/lodgify-ui/commit/b53db09))
+
 # [1.96.0](https://github.com/lodgify/lodgify-ui/compare/v1.95.0...v1.96.0) (2018-12-06)
 
 
