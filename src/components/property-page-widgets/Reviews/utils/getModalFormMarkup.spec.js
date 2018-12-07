@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import {
   guestTypeOptions,
   monthOptions,
-  propertyOptions,
+  roomTypeOptions,
   validation,
   yearOptions,
 } from '../mock-data/options';
@@ -11,7 +11,7 @@ import {
 import { getModalFormMarkup } from './getModalFormMarkup';
 
 const props = {
-  apartmentInputLabel: 'Sullust',
+  roomTypeInputLabel: 'Sullust',
   commentInputLabel: 'blablabla',
   emailInputLabel: '@@',
   errorMessage: 'Recue me',
@@ -23,7 +23,7 @@ const props = {
   monthOptions,
   nameInputLabel: 'opl',
   onSubmit: jest.fn(),
-  propertyOptions,
+  roomTypeOptions,
   ratingAverage: '0',
   submitButtonText: 'sumbmutbuttuntuxt',
   successMessage: 'succuss',

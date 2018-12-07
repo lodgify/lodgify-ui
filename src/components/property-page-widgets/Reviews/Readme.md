@@ -1,10 +1,10 @@
 ```jsx
-const { 
-  guestTypeOptions, 
-  monthOptions, 
-  propertyOptions,
-  yearOptions, 
-  } = require('./mock-data/options');
+const {
+  guestTypeOptions,
+  monthOptions,
+  roomTypeOptions,
+  yearOptions,
+} = require('./mock-data/options');
 const ratingAverage = 4.4;
 const reviews = [
   {
@@ -25,12 +25,12 @@ const reviews = [
   },
 ];
 
-<Reviews 
+<Reviews
   guestTypeOptions={guestTypeOptions}
   monthOptions={monthOptions}
-  propertyOptions={propertyOptions}
-  ratingAverage={ratingAverage} 
+  ratingAverage={ratingAverage}
   reviews={reviews}
+  roomTypeOptions={roomTypeOptions}
   yearOptions={yearOptions}
 />;
 ```
@@ -40,12 +40,12 @@ const reviews = [
 #### Strings
 
 ```jsx
-const { 
+const {
   guestTypeOptions,
   monthOptions,
-  propertyOptions,
+  roomTypeOptions,
   yearOptions,
-  } = require('./mock-data/options');
+} = require('./mock-data/options');
 const ratingAverage = 4.4;
 const reviews = [
   {
@@ -61,21 +61,22 @@ const reviews = [
 ];
 
 <Reviews
-  apartmentInputLabel="appartment"
+
   commentInputLabel="How did it go?"
-  emailInputLabel="email"
+  emailInputLabel="Email"
   formHeadingText="Tell us"
-  guestTypeInputLabel="guest" 
+  guestTypeInputLabel="Guest"
   guestTypeOptions={guestTypeOptions}
-  headingText="Write your review" 
-  locationInputLabel="loaction"
+  headingText="Write your review"
+  locationInputLabel="Location"
   monthInputLabel="month"
   monthOptions={monthOptions}
   nameInputLabel="name"
-  propertyOptions={propertyOptions}
   ratingAverage={ratingAverage}
   ratingInputLabel="Input your rating"
   reviews={reviews}
+  roomTypeInputLabel="Room"
+  roomTypeOptions={roomTypeOptions}
   submitButtonText="Submit"
   titleInputLabel="title"
   yearInputLabel="year"
@@ -88,12 +89,12 @@ const reviews = [
 #### Validation
 
 ```jsx
-const { 
+const {
   guestTypeOptions,
   monthOptions,
-  propertyOptions,
+  roomTypeOptions,
   yearOptions,
-  } = require('./mock-data/options');
+} = require('./mock-data/options');
 const ratingAverage = 4.4;
 const reviews = [
   {
@@ -114,12 +115,12 @@ const validation = {
   title: { isRequired: true },
 };
 
-<Reviews 
+<Reviews
   guestTypeOptions={guestTypeOptions}
   monthOptions={monthOptions}
-  propertyOptions={propertyOptions}
   ratingAverage={ratingAverage}
   reviews={reviews}
+  roomTypeOptions={roomTypeOptions}
   validation={validation}
   yearOptions={yearOptions}
 />;
@@ -130,12 +131,12 @@ const validation = {
 #### Success
 
 ```jsx
-const { 
+const {
   guestTypeOptions,
   monthOptions,
-  propertyOptions,
+  roomTypeOptions,
   yearOptions,
-  } = require('./mock-data/options');
+} = require('./mock-data/options');
 const ratingAverage = 4.4;
 const reviews = [
   {
@@ -150,12 +151,12 @@ const reviews = [
   },
 ];
 
-<Reviews 
+<Reviews
   guestTypeOptions={guestTypeOptions}
   monthOptions={monthOptions}
-  propertyOptions={propertyOptions}
-  ratingAverage={ratingAverage} 
+  ratingAverage={ratingAverage}
   reviews={reviews}
+  roomTypeOptions={roomTypeOptions}
   successMessage="The contact form has been submitted."
   yearOptions={yearOptions}
 />;
@@ -164,12 +165,12 @@ const reviews = [
 #### Error
 
 ```jsx
-const { 
+const {
   guestTypeOptions,
   monthOptions,
-  propertyOptions,
+  roomTypeOptions,
   yearOptions,
-  } = require('./mock-data/options');
+} = require('./mock-data/options');
 const ratingAverage = 4.4;
 const reviews = [
   {
@@ -188,9 +189,9 @@ const reviews = [
   errorMessage="Request Failed. Please try again."
   guestTypeOptions={guestTypeOptions}
   monthOptions={monthOptions}
-  propertyOptions={propertyOptions}
-  ratingAverage={ratingAverage} 
+  ratingAverage={ratingAverage}
   reviews={reviews}
+  roomTypeOptions={roomTypeOptions}
   yearOptions={yearOptions}
 />;
 ```

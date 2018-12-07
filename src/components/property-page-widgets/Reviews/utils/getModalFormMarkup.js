@@ -11,7 +11,6 @@ import { RatingInput } from 'inputs/RatingInput';
 
 /**
  * @param {Object}   props
- * @param {string}   props.apartmentInputLabel
  * @param {string}   props.commentInputLabel
  * @param {string}   props.emailInputLabel
  * @param {string}   props.errorMessage
@@ -22,10 +21,11 @@ import { RatingInput } from 'inputs/RatingInput';
  * @param {Object[]} props.monthOptions
  * @param {string}   props.nameInputLabel
  * @param {Function} props.onSubmit
- * @param {Object[]} props.propertyOptions
  * @param {number}   props.ratingAverage
  * @param {string}   props.ratingInputLabel
  * @param {string}   props.formHeadingText
+ * @param {string}   props.roomTypeInputLabel
+ * @param {Object[]} props.roomTypeOptions
  * @param {string}   props.submitButtonText
  * @param {string}   props.successMessage
  * @param {string}   props.titleInputLabel
@@ -35,7 +35,6 @@ import { RatingInput } from 'inputs/RatingInput';
  */
 export const getModalFormMarkup = ({
   /* eslint-disable react/prop-types */
-  apartmentInputLabel,
   commentInputLabel,
   emailInputLabel,
   errorMessage,
@@ -47,9 +46,10 @@ export const getModalFormMarkup = ({
   monthOptions,
   nameInputLabel,
   onSubmit,
-  propertyOptions,
   ratingAverage,
   ratingInputLabel,
+  roomTypeInputLabel,
+  roomTypeOptions,
   submitButtonText,
   successMessage,
   titleInputLabel,
@@ -94,13 +94,13 @@ export const getModalFormMarkup = ({
       </InputGroup>
       <InputGroup>
         <Dropdown
-          label={apartmentInputLabel}
-          name="apartment"
-          options={propertyOptions}
+          label={roomTypeInputLabel}
+          name="roomType"
+          options={roomTypeOptions}
         />
         <Dropdown
           label={guestTypeInputLabel}
-          name="guest type"
+          name="guestType"
           options={guestTypeOptions}
         />
       </InputGroup>

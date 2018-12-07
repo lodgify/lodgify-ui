@@ -11,11 +11,11 @@ import { GridColumn } from 'layout/GridColumn';
 import { Review } from 'general-widgets/Review';
 import {
   ADD_A_REVIEW,
-  APARTMENT,
   COMMENTS,
   GUEST_TYPE,
   MONTH,
   REVIEWS,
+  ROOM,
   SUBMIT_REVIEW,
   TITLE,
   YEAR,
@@ -78,7 +78,7 @@ export const Component = ({
 Component.displayName = 'Reviews';
 
 Component.defaultProps = {
-  apartmentInputLabel: APARTMENT,
+  roomTypeInputLabel: ROOM,
   commentInputLabel: COMMENTS,
   emailInputLabel: YOUR_EMAIL,
   errorMessage: '',
@@ -90,7 +90,7 @@ Component.defaultProps = {
   monthOptions: [],
   nameInputLabel: YOUR_NAME,
   onSubmit: Function.prototype,
-  propertyOptions: [],
+  roomTypeOptions: [],
   ratingInputLabel: YOUR_REVIEW,
   reviewFormHeading: ADD_A_REVIEW,
   reviews: [],
@@ -103,9 +103,6 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The label for the apartment input. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  apartmentInputLabel: PropTypes.string,
   /** The label for the comment input. */
   // eslint-disable-next-line react/no-unused-prop-types
   commentInputLabel: PropTypes.string,
@@ -162,20 +159,6 @@ Component.propTypes = {
    */
   // eslint-disable-next-line react/no-unused-prop-types
   onSubmit: PropTypes.func,
-  /** The options which the user can select for the property field. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  propertyOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ),
   /** The average numeral rating for the properties. */
   ratingAverage: PropTypes.number.isRequired,
   /** A visible label to display with the rating stars. */
@@ -210,6 +193,23 @@ Component.propTypes = {
       reviewerName: PropTypes.string.isRequired,
       /** The date the reviewer stayed. */
       reviewerStayDate: PropTypes.string.isRequired,
+    })
+  ),
+  /** The label for the room type input. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  roomTypeInputLabel: PropTypes.string,
+  /** The options which the user can select for the room type field. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  roomTypeOptions: PropTypes.arrayOf(
+    PropTypes.shape({
+      /** The visible text for the option. */
+      text: PropTypes.string.isRequired,
+      /** The underlying value for the option. */
+      value: PropTypes.oneOfType([
+        PropTypes.bool,
+        PropTypes.number,
+        PropTypes.string,
+      ]),
     })
   ),
   /** The text to display on the submit button. */
