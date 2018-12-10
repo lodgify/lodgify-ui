@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getLogoMarkup by default should render the right structure 1`] = `
+<MenuItem
+  href="/"
+  link={true}
+>
+  <a
+    className="link item"
+    href="/"
+    onClick={[Function]}
+  >
+    <Heading
+      isColorInverted={false}
+      size="small"
+      textAlign={null}
+    >
+      <Header
+        as="h4"
+        inverted={false}
+        textAlign={null}
+      >
+        <h4
+          className="ui header"
+        >
+          someLogoText
+        </h4>
+      </Header>
+    </Heading>
+  </a>
+</MenuItem>
+`;
+
+exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are passed should render the right structure 1`] = `
+<MenuItem
+  href="/"
+  link={true}
+>
+  <a
+    className="link item"
+    href="/"
+    onClick={[Function]}
+  >
+    <ResponsiveImage
+      alt="someLogoText"
+      alternativeText="Image Widget"
+      hasRoundedCorners={false}
+      imageHeight={null}
+      imageNotFoundLabelText="Image not found!"
+      imageTitle="Image Title"
+      imageUrl="someLogoSrc"
+      imageWidth={null}
+      isAvatar={false}
+      isCircular={false}
+      isFluid={false}
+      label={null}
+      sizes="someSizes"
+      srcSet="someSrcSet"
+    >
+      <figure
+        className="responsive-image"
+      >
+        <Image
+          alt="Image Widget"
+          as="img"
+          avatar={false}
+          fluid={true}
+          onLoad={[Function]}
+          sizes="someSizes"
+          src="someLogoSrc"
+          srcSet="someSrcSet"
+          title="Image Title"
+          ui={true}
+        >
+          <img
+            alt="Image Widget"
+            className="ui fluid image"
+            onLoad={[Function]}
+            sizes="someSizes"
+            src="someLogoSrc"
+            srcSet="someSrcSet"
+            title="Image Title"
+          />
+        </Image>
+      </figure>
+    </ResponsiveImage>
+  </a>
+</MenuItem>
+`;
