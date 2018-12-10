@@ -8,7 +8,9 @@ const imageUrl = '🚞';
 
 const props = {
   activeNavigationItemIndex: 1,
+  headerLogoSizes: 'a load of logo sizes',
   headerLogoSrc: 'src',
+  headerLogoSrcSet: 'a load of logo src sets',
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
   headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
