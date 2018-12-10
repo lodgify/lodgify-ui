@@ -6,7 +6,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
   backgroundImageSizes="url"
   backgroundImageSrcSet="a load of sizes"
   backgroundImageUrl="bare sources"
+  headerLogoSizes="a load of logo sizes"
   headerLogoSrc="src"
+  headerLogoSrcSet="a load of logo src sets"
   headerLogoText="text"
   headerNavigationItems={
     Array [
@@ -56,7 +58,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
     backgroundImageSrcSet="a load of sizes"
     backgroundImageUrl="bare sources"
     bottomOffset="0px"
+    headerLogoSizes="a load of logo sizes"
     headerLogoSrc="src"
+    headerLogoSrcSet="a load of logo src sets"
     headerLogoText="text"
     headerNavigationItems={
       Array [
@@ -170,7 +174,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
           <Header
             activeNavigationItemIndex={1}
             isBackgroundFilled={false}
+            logoSizes="a load of logo sizes"
             logoSrc="src"
+            logoSrcSet="a load of logo src sets"
             logoText="text"
             navigationItems={
               Array [
@@ -241,18 +247,49 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                           href="/"
                           onClick={[Function]}
                         >
-                          <Image
+                          <ResponsiveImage
                             alt="text"
-                            as="img"
-                            src="src"
-                            ui={true}
+                            alternativeText="Image Widget"
+                            hasRoundedCorners={false}
+                            imageHeight={null}
+                            imageNotFoundLabelText="Image not found!"
+                            imageTitle="Image Title"
+                            imageUrl="src"
+                            imageWidth={null}
+                            isAvatar={false}
+                            isCircular={false}
+                            isFluid={false}
+                            label={null}
+                            sizes="a load of logo sizes"
+                            srcSet="a load of logo src sets"
                           >
-                            <img
-                              alt="text"
-                              className="ui image"
-                              src="src"
-                            />
-                          </Image>
+                            <figure
+                              className="responsive-image"
+                            >
+                              <Image
+                                alt="Image Widget"
+                                as="img"
+                                avatar={false}
+                                fluid={true}
+                                onLoad={[Function]}
+                                sizes="a load of logo sizes"
+                                src="src"
+                                srcSet="a load of logo src sets"
+                                title="Image Title"
+                                ui={true}
+                              >
+                                <img
+                                  alt="Image Widget"
+                                  className="ui fluid image"
+                                  onLoad={[Function]}
+                                  sizes="a load of logo sizes"
+                                  src="src"
+                                  srcSet="a load of logo src sets"
+                                  title="Image Title"
+                                />
+                              </Image>
+                            </figure>
+                          </ResponsiveImage>
                         </a>
                       </MenuItem>
                       <ShowOn
@@ -591,11 +628,21 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                           href="/"
                                           link={true}
                                         >
-                                          <Image
+                                          <ResponsiveImage
                                             alt="text"
-                                            as="img"
-                                            src="src"
-                                            ui={true}
+                                            alternativeText="Image Widget"
+                                            hasRoundedCorners={false}
+                                            imageHeight={null}
+                                            imageNotFoundLabelText="Image not found!"
+                                            imageTitle="Image Title"
+                                            imageUrl="src"
+                                            imageWidth={null}
+                                            isAvatar={false}
+                                            isCircular={false}
+                                            isFluid={false}
+                                            label={null}
+                                            sizes="a load of logo sizes"
+                                            srcSet="a load of logo src sets"
                                           />
                                         </MenuItem>
                                         <MenuItem
