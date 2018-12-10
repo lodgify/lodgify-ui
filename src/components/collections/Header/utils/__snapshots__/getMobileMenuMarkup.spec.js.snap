@@ -71,11 +71,21 @@ exports[`getMobileMenuMarkup by default should render the right structure 1`] = 
                     href="/"
                     link={true}
                   >
-                    <Image
+                    <ResponsiveImage
                       alt="someLogoText"
-                      as="img"
-                      src="someLogoSrc"
-                      ui={true}
+                      alternativeText="Image Widget"
+                      hasRoundedCorners={false}
+                      imageHeight={null}
+                      imageNotFoundLabelText="Image not found!"
+                      imageTitle="Image Title"
+                      imageUrl="someLogoSrc"
+                      imageWidth={null}
+                      isAvatar={false}
+                      isCircular={false}
+                      isFluid={false}
+                      label={null}
+                      sizes="someLogoSizes"
+                      srcSet="someLogoSrcSet"
                     />
                   </MenuItem>
                   <MenuItem
@@ -561,11 +571,21 @@ exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                     href="/"
                     link={true}
                   >
-                    <Image
+                    <ResponsiveImage
                       alt="someLogoText"
-                      as="img"
-                      src="someLogoSrc"
-                      ui={true}
+                      alternativeText="Image Widget"
+                      hasRoundedCorners={false}
+                      imageHeight={null}
+                      imageNotFoundLabelText="Image not found!"
+                      imageTitle="Image Title"
+                      imageUrl="someLogoSrc"
+                      imageWidth={null}
+                      isAvatar={false}
+                      isCircular={false}
+                      isFluid={false}
+                      label={null}
+                      sizes="someLogoSizes"
+                      srcSet="someLogoSrcSet"
                     />
                   </MenuItem>
                   <MenuItem

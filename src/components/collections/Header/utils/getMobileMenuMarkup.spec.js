@@ -5,7 +5,9 @@ import { navigationItems } from '../mock-data/navigationItems';
 
 import { getMobileMenuMarkup } from './getMobileMenuMarkup';
 
+const logoSizes = 'someLogoSizes';
 const logoSrc = 'someLogoSrc';
+const logoSrcSet = 'someLogoSrcSet';
 const logoText = 'someLogoText';
 const searchBarGuestsOptions = [{ text: '1', value: 1 }];
 const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
@@ -21,7 +23,9 @@ const getMarkupAsRenderedComponent = extraProps =>
       {getMobileMenuMarkup({
         activeNavigationItemIndex: 0,
         searchBarGetIsDayBlocked,
+        logoSizes,
         logoSrc,
+        logoSrcSet,
         logoText,
         navigationItems,
         searchBarModalHeadingText,
