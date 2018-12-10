@@ -1,3 +1,10 @@
+# [1.98.0](https://github.com/lodgify/lodgify-ui/compare/v1.97.3...v1.98.0) (2018-12-10)
+
+
+### Features
+
+* **PaymentInformation:** rename component to PolicyAndNotes and remove tax and cleaning related pro ([2963a0c](https://github.com/lodgify/lodgify-ui/commit/2963a0c))
+
 ## [1.97.3](https://github.com/lodgify/lodgify-ui/compare/v1.97.2...v1.97.3) (2018-12-10)
 
 
