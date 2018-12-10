@@ -7,7 +7,9 @@ exports[`<Hero /> by default should render the right structure 1`] = `
   backgroundImageSrcSet="a load of sources"
   backgroundImageUrl="https://darkpurple.com"
   bottomOffset="0px"
+  headerLogoSizes="a load of logo sizes"
   headerLogoSrc="https://darkgreen.com"
+  headerLogoSrcSet="a load of logo src sets"
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={
     Array [
@@ -115,7 +117,9 @@ exports[`<Hero /> by default should render the right structure 1`] = `
         <Header
           activeNavigationItemIndex={1}
           isBackgroundFilled={false}
+          logoSizes="a load of logo sizes"
           logoSrc="https://darkgreen.com"
+          logoSrcSet="a load of logo src sets"
           logoText="Livingstone Cottage"
           navigationItems={
             Array [
@@ -181,18 +185,49 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                         href="/"
                         onClick={[Function]}
                       >
-                        <Image
+                        <ResponsiveImage
                           alt="Livingstone Cottage"
-                          as="img"
-                          src="https://darkgreen.com"
-                          ui={true}
+                          alternativeText="Image Widget"
+                          hasRoundedCorners={false}
+                          imageHeight={null}
+                          imageNotFoundLabelText="Image not found!"
+                          imageTitle="Image Title"
+                          imageUrl="https://darkgreen.com"
+                          imageWidth={null}
+                          isAvatar={false}
+                          isCircular={false}
+                          isFluid={false}
+                          label={null}
+                          sizes="a load of logo sizes"
+                          srcSet="a load of logo src sets"
                         >
-                          <img
-                            alt="Livingstone Cottage"
-                            className="ui image"
-                            src="https://darkgreen.com"
-                          />
-                        </Image>
+                          <figure
+                            className="responsive-image"
+                          >
+                            <Image
+                              alt="Image Widget"
+                              as="img"
+                              avatar={false}
+                              fluid={true}
+                              onLoad={[Function]}
+                              sizes="a load of logo sizes"
+                              src="https://darkgreen.com"
+                              srcSet="a load of logo src sets"
+                              title="Image Title"
+                              ui={true}
+                            >
+                              <img
+                                alt="Image Widget"
+                                className="ui fluid image"
+                                onLoad={[Function]}
+                                sizes="a load of logo sizes"
+                                src="https://darkgreen.com"
+                                srcSet="a load of logo src sets"
+                                title="Image Title"
+                              />
+                            </Image>
+                          </figure>
+                        </ResponsiveImage>
                       </a>
                     </MenuItem>
                     <ShowOn
@@ -553,11 +588,21 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                         href="/"
                                         link={true}
                                       >
-                                        <Image
+                                        <ResponsiveImage
                                           alt="Livingstone Cottage"
-                                          as="img"
-                                          src="https://darkgreen.com"
-                                          ui={true}
+                                          alternativeText="Image Widget"
+                                          hasRoundedCorners={false}
+                                          imageHeight={null}
+                                          imageNotFoundLabelText="Image not found!"
+                                          imageTitle="Image Title"
+                                          imageUrl="https://darkgreen.com"
+                                          imageWidth={null}
+                                          isAvatar={false}
+                                          isCircular={false}
+                                          isFluid={false}
+                                          label={null}
+                                          sizes="a load of logo sizes"
+                                          srcSet="a load of logo src sets"
                                         />
                                       </MenuItem>
                                       <MenuItem
