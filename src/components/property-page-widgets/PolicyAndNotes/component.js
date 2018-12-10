@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Statistic } from 'semantic-ui-react';
 
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
@@ -12,25 +11,21 @@ import { Paragraph } from 'typography/Paragraph';
 import { Link } from 'elements/Link';
 import { Modal } from 'elements/Modal';
 import {
-  PAYMENT_INFORMATION,
-  PAYMENT_SCHEDULE,
   CANCELLATION_POLICY,
-  CLEANING_CHARGE,
-  TAXES,
   DAMAGE_DEPOSIT,
   NOTES,
+  PAYMENT_SCHEDULE,
+  POLICY_AND_NOTES,
   VIEW_MORE,
 } from 'utils/default-strings';
 
 /**
- * The standard widget for displaying the payment information of a property.
+ * The standard widget for displaying the policy information and notes of a property.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   cancellationPolicyHeadingText,
   cancellationPolicyText,
-  cleaningCharge,
-  cleaningChargeHeadingText,
   damageDepositHeadingText,
   damageDepositText,
   extraNotesText,
@@ -40,9 +35,6 @@ export const Component = ({
   headingText,
   paymentScheduleHeadingText,
   paymentScheduleText,
-  taxesDescriptionText,
-  taxesText,
-  taxesHeadingText,
 }) => (
   <Grid stackable>
     <GridRow>
@@ -62,28 +54,6 @@ export const Component = ({
           <GridColumn width={6}>
             <Heading size="small">{cancellationPolicyHeadingText}</Heading>
             <Paragraph size="medium">{cancellationPolicyText}</Paragraph>
-          </GridColumn>
-        )}
-      </GridRow>
-    )}
-    {(!!cleaningCharge || !!taxesText) && (
-      <GridRow>
-        {!!cleaningCharge && (
-          <GridColumn width={6}>
-            <Heading size="small">{cleaningChargeHeadingText}</Heading>
-            <Statistic horizontal size="mini" text value={cleaningCharge} />
-          </GridColumn>
-        )}
-        {!!taxesText && (
-          <GridColumn width={6}>
-            <Heading size="small">{taxesHeadingText}</Heading>
-            <Statistic
-              horizontal
-              label={taxesDescriptionText}
-              size="tiny"
-              text
-              value={taxesText}
-            />
           </GridColumn>
         )}
       </GridRow>
@@ -122,25 +92,20 @@ export const Component = ({
   </Grid>
 );
 
-Component.displayName = 'PaymentInformation';
+Component.displayName = 'PolicyAndNotes';
 
 Component.defaultProps = {
   cancellationPolicyHeadingText: CANCELLATION_POLICY,
   cancellationPolicyText: null,
-  cleaningCharge: null,
-  cleaningChargeHeadingText: CLEANING_CHARGE,
   damageDepositHeadingText: DAMAGE_DEPOSIT,
   damageDepositText: null,
   extraNotesText: null,
   modalTriggerText: VIEW_MORE,
   notesHeadingText: NOTES,
   notesText: null,
-  headingText: PAYMENT_INFORMATION,
+  headingText: POLICY_AND_NOTES,
   paymentScheduleHeadingText: PAYMENT_SCHEDULE,
   paymentScheduleText: null,
-  taxesDescriptionText: null,
-  taxesHeadingText: TAXES,
-  taxesText: null,
 };
 
 Component.propTypes = {
@@ -148,10 +113,6 @@ Component.propTypes = {
   cancellationPolicyHeadingText: PropTypes.string,
   /** The Cancellation Policy text to display. */
   cancellationPolicyText: PropTypes.string,
-  /** The Cleaning Charge text to display. */
-  cleaningCharge: PropTypes.string,
-  /** The Cleaning Charge heading text */
-  cleaningChargeHeadingText: PropTypes.string,
   /** The Damage Deposit heading text */
   damageDepositHeadingText: PropTypes.string,
   /** The Damage Deposit text to display. */
@@ -170,10 +131,4 @@ Component.propTypes = {
   paymentScheduleHeadingText: PropTypes.string,
   /** The Payment Schedule text to display. */
   paymentScheduleText: PropTypes.string,
-  /** The Taxes Description text to display. */
-  taxesDescriptionText: PropTypes.string,
-  /** The Taxes heading text */
-  taxesHeadingText: PropTypes.string,
-  /** The Taxes text to display. */
-  taxesText: PropTypes.string,
 };

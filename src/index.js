@@ -79,8 +79,8 @@ export { HostProfile } from './components/property-page-widgets/HostProfile';
 export { KeyFacts } from './components/property-page-widgets/KeyFacts';
 export { Location } from './components/property-page-widgets/Location';
 export {
-  PaymentInformation,
-} from './components/property-page-widgets/PaymentInformation';
+  PolicyAndNotes,
+} from './components/property-page-widgets/PolicyAndNotes';
 export {
   PropertyPageHero,
 } from './components/property-page-widgets/PropertyPageHero';
