@@ -1,3 +1,10 @@
+## [1.97.2](https://github.com/lodgify/lodgify-ui/compare/v1.97.1...v1.97.2) (2018-12-10)
+
+
+### Bug Fixes
+
+* **ShowOn:** remove display flex ([5d0e50b](https://github.com/lodgify/lodgify-ui/commit/5d0e50b))
+
 ## [1.97.1](https://github.com/lodgify/lodgify-ui/compare/v1.97.0...v1.97.1) (2018-12-07)
 
 
