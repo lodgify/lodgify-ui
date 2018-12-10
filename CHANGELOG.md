@@ -1,3 +1,10 @@
+## [1.97.3](https://github.com/lodgify/lodgify-ui/compare/v1.97.2...v1.97.3) (2018-12-10)
+
+
+### Bug Fixes
+
+* **Availability:** disable calendar hover styles ([b29fa29](https://github.com/lodgify/lodgify-ui/commit/b29fa29))
+
 ## [1.97.2](https://github.com/lodgify/lodgify-ui/compare/v1.97.1...v1.97.2) (2018-12-10)
 
 
