@@ -21,7 +21,12 @@ export const Component = props => (
     })}
   >
     <HorizontalGutters as={Menu} borderless text>
-      {getLogoMarkup(props.logoSrc, props.logoText)}
+      {getLogoMarkup(
+        props.logoText,
+        props.logoSrc,
+        props.logoSizes,
+        props.logoSrcSet
+      )}
       {getMobileMenuMarkup(props)}
       {getDesktopMenuMarkup(props)}
     </HorizontalGutters>
@@ -33,7 +38,9 @@ Component.displayName = 'Header';
 Component.defaultProps = {
   activeNavigationItemIndex: null,
   isBackgroundFilled: false,
+  logoSizes: undefined,
   logoSrc: null,
+  logoSrcSet: undefined,
   primaryCTA: null,
   searchBarGetIsDayBlocked: Function.prototype,
   searchBarGuestsOptions: [],
@@ -50,8 +57,12 @@ Component.propTypes = {
   activeNavigationItemIndex: PropTypes.number,
   /** Is the background filled with a color defined in CSS. */
   isBackgroundFilled: PropTypes.bool,
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  logoSizes: PropTypes.string,
   /** The src url for the logo. */
   logoSrc: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  logoSrcSet: PropTypes.string,
   /** The text for the logo. */
   logoText: PropTypes.string.isRequired,
   /** The items for a user to navigate the site. */
