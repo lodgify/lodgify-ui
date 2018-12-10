@@ -164,6 +164,21 @@
       }
     }
   }
+
+  table.CalendarMonth_table {
+
+    td.CalendarDay {     
+      cursor: default;
+
+      &.CalendarDay__default:hover {
+        background: inherit;
+      }
+
+     &.CalendarDay__blocked_calendar:hover {
+        background: @pickerDayBlockedBackground;
+      }
+    }
+  }
 }
 
 /*
