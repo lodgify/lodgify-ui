@@ -1,3 +1,14 @@
+# [1.99.0](https://github.com/lodgify/lodgify-ui/compare/v1.98.0...v1.99.0) (2018-12-11)
+
+
+### Features
+
+* **Header:** expose sizes and src props for the logo ([07ba728](https://github.com/lodgify/lodgify-ui/commit/07ba728))
+* **Hero:** expose responsive image props for header logo ([fc094fe](https://github.com/lodgify/lodgify-ui/commit/fc094fe))
+* **HomepageHero:** expose responsive image props for header logo ([c5eee57](https://github.com/lodgify/lodgify-ui/commit/c5eee57))
+* **PropertyPageHero:** add unit tests for header logo responsive props ([4e7964d](https://github.com/lodgify/lodgify-ui/commit/4e7964d))
+* **PropertyPageHero:** expose responsive image props for header logo ([d2f0e9a](https://github.com/lodgify/lodgify-ui/commit/d2f0e9a))
+
 # [1.98.0](https://github.com/lodgify/lodgify-ui/compare/v1.97.3...v1.98.0) (2018-12-10)
 
 
