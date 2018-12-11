@@ -1,7 +1,6 @@
 import React from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Image } from 'semantic-ui-react';
 
-import { ResponsiveImage } from 'media/ResponsiveImage';
 import { Heading } from 'typography/Heading';
 
 /**
@@ -14,10 +13,10 @@ import { Heading } from 'typography/Heading';
 export const getLogoMarkup = (logoText, logoSrc, logoSizes, logoSrcSet) => (
   <Menu.Item href="/" link>
     {logoSrc ? (
-      <ResponsiveImage
+      <Image
         alt={logoText}
-        imageUrl={logoSrc}
         sizes={logoSizes}
+        src={logoSrc}
         srcSet={logoSrcSet}
       />
     ) : (
