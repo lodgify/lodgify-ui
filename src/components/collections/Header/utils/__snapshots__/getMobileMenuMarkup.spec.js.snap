@@ -71,21 +71,13 @@ exports[`getMobileMenuMarkup by default should render the right structure 1`] = 
                     href="/"
                     link={true}
                   >
-                    <ResponsiveImage
+                    <Image
                       alt="someLogoText"
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="someLogoSrc"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={false}
-                      label={null}
+                      as="img"
                       sizes="someLogoSizes"
+                      src="someLogoSrc"
                       srcSet="someLogoSrcSet"
+                      ui={true}
                     />
                   </MenuItem>
                   <MenuItem
@@ -571,21 +563,13 @@ exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                     href="/"
                     link={true}
                   >
-                    <ResponsiveImage
+                    <Image
                       alt="someLogoText"
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="someLogoSrc"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={false}
-                      label={null}
+                      as="img"
                       sizes="someLogoSizes"
+                      src="someLogoSrc"
                       srcSet="someLogoSrcSet"
+                      ui={true}
                     />
                   </MenuItem>
                   <MenuItem
