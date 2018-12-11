@@ -1,3 +1,10 @@
+## [1.99.1](https://github.com/lodgify/lodgify-ui/compare/v1.99.0...v1.99.1) (2018-12-11)
+
+
+### Bug Fixes
+
+* **Header:** revert to Image to prevent ResponsiveImage effecting image size ([7ef21da](https://github.com/lodgify/lodgify-ui/commit/7ef21da))
+
 # [1.99.0](https://github.com/lodgify/lodgify-ui/compare/v1.98.0...v1.99.0) (2018-12-11)
 
 
