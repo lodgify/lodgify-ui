@@ -225,9 +225,15 @@ Component.propTypes = {
   // eslint-disable-next-line react/no-unused-prop-types
   validation: PropTypes.shape({
     comments: PropTypes.object,
+    email: PropTypes.object,
+    guestType: PropTypes.object,
+    location: PropTypes.object,
+    month: PropTypes.object,
     name: PropTypes.object,
     rating: PropTypes.object,
+    roomType: PropTypes.object,
     title: PropTypes.object,
+    year: PropTypes.object,
   }),
   /** The label for the year input. */
   // eslint-disable-next-line react/no-unused-prop-types
