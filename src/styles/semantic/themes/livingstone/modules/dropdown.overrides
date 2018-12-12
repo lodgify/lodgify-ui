@@ -7,6 +7,7 @@
 --------------------*/
 
 .ui.dropdown {
+  display: inline-flex;
 
   /*-------------------
        Content
@@ -112,6 +113,7 @@
 
   .ui.selection.dropdown {
     color: @defaultTextColor;
+    display: inline-flex;
     max-width: @selectionMaxWidth;
     width: @selectionWidth;
 
