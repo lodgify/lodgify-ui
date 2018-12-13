@@ -1,3 +1,10 @@
+## [1.99.2](https://github.com/lodgify/lodgify-ui/compare/v1.99.1...v1.99.2) (2018-12-13)
+
+
+### Bug Fixes
+
+* **Reviews:** add remaining fields for props.validation ([76e3018](https://github.com/lodgify/lodgify-ui/commit/76e3018))
+
 ## [1.99.1](https://github.com/lodgify/lodgify-ui/compare/v1.99.0...v1.99.1) (2018-12-11)
 
 
