@@ -57,6 +57,7 @@ export const Component = ({
           })}
           modalTrigger={modalTrigger}
           onChangeInput={onChangeInput}
+          onSubmit={onSubmit}
           summaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: true,
             ...summaryProps,
