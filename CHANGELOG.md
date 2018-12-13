@@ -1,3 +1,10 @@
+## [1.99.3](https://github.com/lodgify/lodgify-ui/compare/v1.99.2...v1.99.3) (2018-12-13)
+
+
+### Bug Fixes
+
+* **dropdown.overrides:** change dropdown display property ([e173580](https://github.com/lodgify/lodgify-ui/commit/e173580))
+
 ## [1.99.2](https://github.com/lodgify/lodgify-ui/compare/v1.99.1...v1.99.2) (2018-12-13)
 
 
