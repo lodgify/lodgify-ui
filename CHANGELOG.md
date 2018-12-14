@@ -1,3 +1,10 @@
+## [1.99.4](https://github.com/lodgify/lodgify-ui/compare/v1.99.3...v1.99.4) (2018-12-14)
+
+
+### Bug Fixes
+
+* **PropertyPageSearchBar:** pass onSubmit prop to modal search bar onSubmit ([f71e2f1](https://github.com/lodgify/lodgify-ui/commit/f71e2f1))
+
 ## [1.99.3](https://github.com/lodgify/lodgify-ui/compare/v1.99.2...v1.99.3) (2018-12-13)
 
 
