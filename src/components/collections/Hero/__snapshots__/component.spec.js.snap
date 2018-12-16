@@ -7,7 +7,9 @@ exports[`<Hero /> by default should render the right structure 1`] = `
   backgroundImageSrcSet="a load of sources"
   backgroundImageUrl="https://darkpurple.com"
   bottomOffset="0px"
+  headerLogoSizes="a load of logo sizes"
   headerLogoSrc="https://darkgreen.com"
+  headerLogoSrcSet="a load of logo src sets"
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={
     Array [
@@ -115,7 +117,9 @@ exports[`<Hero /> by default should render the right structure 1`] = `
         <Header
           activeNavigationItemIndex={1}
           isBackgroundFilled={false}
+          logoSizes="a load of logo sizes"
           logoSrc="https://darkgreen.com"
+          logoSrcSet="a load of logo src sets"
           logoText="Livingstone Cottage"
           navigationItems={
             Array [
@@ -184,24 +188,32 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                         <Image
                           alt="Livingstone Cottage"
                           as="img"
+                          sizes="a load of logo sizes"
                           src="https://darkgreen.com"
+                          srcSet="a load of logo src sets"
                           ui={true}
                         >
                           <img
                             alt="Livingstone Cottage"
                             className="ui image"
+                            sizes="a load of logo sizes"
                             src="https://darkgreen.com"
+                            srcSet="a load of logo src sets"
                           />
                         </Image>
                       </a>
                     </MenuItem>
-                    <ShowOnMobile
+                    <ShowOn
+                      computer={false}
+                      mobile={true}
                       parent={[Function]}
                       parentProps={
                         Object {
                           "position": "right",
                         }
                       }
+                      tablet={false}
+                      widescreen={false}
                     >
                       <MenuMenu
                         className="show-on-mobile"
@@ -552,7 +564,9 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                         <Image
                                           alt="Livingstone Cottage"
                                           as="img"
+                                          sizes="a load of logo sizes"
                                           src="https://darkgreen.com"
+                                          srcSet="a load of logo src sets"
                                           ui={true}
                                         />
                                       </MenuItem>
@@ -659,21 +673,25 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                           </MenuItem>
                         </div>
                       </MenuMenu>
-                    </ShowOnMobile>
-                    <ShowOnDesktop
+                    </ShowOn>
+                    <ShowOn
+                      computer={true}
+                      mobile={false}
                       parent={[Function]}
                       parentProps={
                         Object {
                           "position": "right",
                         }
                       }
+                      tablet={true}
+                      widescreen={true}
                     >
                       <MenuMenu
-                        className="show-on-desktop"
+                        className="show-on-tablet show-on-computer show-on-widescreen"
                         position="right"
                       >
                         <div
-                          className="right menu show-on-desktop"
+                          className="right menu show-on-tablet show-on-computer show-on-widescreen"
                         >
                           <MenuItem
                             active={false}
@@ -734,7 +752,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                           </MenuItem>
                         </div>
                       </MenuMenu>
-                    </ShowOnDesktop>
+                    </ShowOn>
                   </div>
                 </Menu>
               </Container>

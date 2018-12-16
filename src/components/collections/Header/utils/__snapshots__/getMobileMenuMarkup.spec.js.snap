@@ -1,13 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getMobileMenuMarkup by default should render the right structure 1`] = `
-<ShowOnMobile
+<ShowOn
+  computer={false}
+  mobile={true}
   parent={[Function]}
   parentProps={
     Object {
       "position": "right",
     }
   }
+  tablet={false}
+  widescreen={false}
 >
   <MenuMenu
     className="show-on-mobile"
@@ -70,7 +74,9 @@ exports[`getMobileMenuMarkup by default should render the right structure 1`] = 
                     <Image
                       alt="someLogoText"
                       as="img"
+                      sizes="someLogoSizes"
                       src="someLogoSrc"
+                      srcSet="someLogoSrcSet"
                       ui={true}
                     />
                   </MenuItem>
@@ -223,17 +229,21 @@ exports[`getMobileMenuMarkup by default should render the right structure 1`] = 
       </MenuItem>
     </div>
   </MenuMenu>
-</ShowOnMobile>
+</ShowOn>
 `;
 
 exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.searchBarLocationOptions\` are defined and populated should render the right structure 1`] = `
-<ShowOnMobile
+<ShowOn
+  computer={false}
+  mobile={true}
   parent={[Function]}
   parentProps={
     Object {
       "position": "right",
     }
   }
+  tablet={false}
+  widescreen={false}
 >
   <MenuMenu
     className="show-on-mobile"
@@ -556,7 +566,9 @@ exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                     <Image
                       alt="someLogoText"
                       as="img"
+                      sizes="someLogoSizes"
                       src="someLogoSrc"
+                      srcSet="someLogoSrcSet"
                       ui={true}
                     />
                   </MenuItem>
@@ -709,5 +721,5 @@ exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
       </MenuItem>
     </div>
   </MenuMenu>
-</ShowOnMobile>
+</ShowOn>
 `;

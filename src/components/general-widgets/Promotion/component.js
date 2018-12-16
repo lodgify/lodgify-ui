@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Statistic, Segment } from 'semantic-ui-react';
 
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOn } from 'layout/ShowOn';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 import {
   BOOK_NOW_DISCOUNT,
@@ -55,28 +54,36 @@ export const Component = ({
           />
           <Grid padded>
             <GridRow verticalAlign="top">
-              <ShowOnDesktop
+              <ShowOn
+                computer
                 parent={GridColumn}
                 parentProps={{ textAlign: 'left', width: 12 }}
+                tablet
+                widescreen
               >
                 <Heading>{headingText}</Heading>
-              </ShowOnDesktop>
-              <ShowOnMobile
+              </ShowOn>
+              <ShowOn
+                mobile
                 parent={GridColumn}
                 parentProps={{ textAlign: 'center', width: 12 }}
               >
                 <Heading>{headingText}</Heading>
-              </ShowOnMobile>
+              </ShowOn>
             </GridRow>
-            <ShowOnDesktop
+            <ShowOn
+              computer
               parent={GridRow}
               parentProps={{ className: 'book-now-button-container' }}
+              tablet
+              widescreen
             >
               <GridColumn textAlign="center" width={12}>
                 <Button isRounded>{discountHoverButtonText}</Button>
               </GridColumn>
-            </ShowOnDesktop>
-            <ShowOnMobile
+            </ShowOn>
+            <ShowOn
+              mobile
               parent={GridRow}
               parentProps={{ verticalAlign: 'top' }}
             >
@@ -88,10 +95,13 @@ export const Component = ({
                   </Button>
                 </div>
               </GridColumn>
-            </ShowOnMobile>
-            <ShowOnDesktop
+            </ShowOn>
+            <ShowOn
+              computer
+              desktop
               parent={GridRow}
               parentProps={{ verticalAlign: 'bottom' }}
+              tablet
             >
               <GridColumn floated="right" textAlign="right" width={6}>
                 <div>
@@ -101,7 +111,7 @@ export const Component = ({
                   </Button>
                 </div>
               </GridColumn>
-            </ShowOnDesktop>
+            </ShowOn>
           </Grid>
         </GridColumn>
         <GridColumn

@@ -753,7 +753,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                       role="list"
                                     >
                                       <ListItem
-                                        key="0"
+                                        key="1 Bedroom0"
                                       >
                                         <div
                                           className="item"
@@ -1099,9 +1099,13 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                               </span>
                                             </div>
                                           </CardDescription>
-                                          <ShowOnMobile
+                                          <ShowOn
+                                            computer={false}
+                                            mobile={true}
                                             parent={[Function]}
                                             parentProps={Object {}}
+                                            tablet={false}
+                                            widescreen={false}
                                           >
                                             <Divider
                                               className="show-on-mobile"
@@ -1118,7 +1122,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                 />
                                               </Divider>
                                             </Divider>
-                                          </ShowOnMobile>
+                                          </ShowOn>
                                         </div>
                                       </GridColumn>
                                     </GridColumn>
@@ -1895,7 +1899,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                       role="list"
                                     >
                                       <ListItem
-                                        key="0"
+                                        key="1 Bedroom0"
                                       >
                                         <div
                                           className="item"
@@ -2215,9 +2219,13 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                               </span>
                                             </div>
                                           </CardDescription>
-                                          <ShowOnMobile
+                                          <ShowOn
+                                            computer={false}
+                                            mobile={true}
                                             parent={[Function]}
                                             parentProps={Object {}}
+                                            tablet={false}
+                                            widescreen={false}
                                           >
                                             <Divider
                                               className="show-on-mobile"
@@ -2234,7 +2242,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                 />
                                               </Divider>
                                             </Divider>
-                                          </ShowOnMobile>
+                                          </ShowOn>
                                         </div>
                                       </GridColumn>
                                     </GridColumn>

@@ -1,6 +1,6 @@
 {
   "name": "@lodgify/ui",
-  "version": "1.94.0",
+  "version": "1.99.4",
   "description": "React components for building amazing websites with Lodgify",
   "main": "lib/index.js",
   "config": {
@@ -30,7 +30,7 @@
     "build:js": "BABEL_ENV=production babel src/ -d lib/",
     "commit": "git-cz",
     "install:peers": "npm install react@^16.3.2 react-dom@^16.3.2 moment@^2.18.1 --no-save",
-    "lint": "run-p lint:js lint:less",
+    "lint": "run-p lint:js:fix lint:less",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:debug": "npm run lint:js -- --debug",
     "lint:js:fix": "npm run lint:js -- --fix",

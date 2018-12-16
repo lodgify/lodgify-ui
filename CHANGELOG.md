@@ -1,3 +1,119 @@
+## [1.99.4](https://github.com/lodgify/lodgify-ui/compare/v1.99.3...v1.99.4) (2018-12-14)
+
+
+### Bug Fixes
+
+* **PropertyPageSearchBar:** pass onSubmit prop to modal search bar onSubmit ([f71e2f1](https://github.com/lodgify/lodgify-ui/commit/f71e2f1))
+
+## [1.99.3](https://github.com/lodgify/lodgify-ui/compare/v1.99.2...v1.99.3) (2018-12-13)
+
+
+### Bug Fixes
+
+* **dropdown.overrides:** change dropdown display property ([e173580](https://github.com/lodgify/lodgify-ui/commit/e173580))
+
+## [1.99.2](https://github.com/lodgify/lodgify-ui/compare/v1.99.1...v1.99.2) (2018-12-13)
+
+
+### Bug Fixes
+
+* **Reviews:** add remaining fields for props.validation ([76e3018](https://github.com/lodgify/lodgify-ui/commit/76e3018))
+
+## [1.99.1](https://github.com/lodgify/lodgify-ui/compare/v1.99.0...v1.99.1) (2018-12-11)
+
+
+### Bug Fixes
+
+* **Header:** revert to Image to prevent ResponsiveImage effecting image size ([7ef21da](https://github.com/lodgify/lodgify-ui/commit/7ef21da))
+
+# [1.99.0](https://github.com/lodgify/lodgify-ui/compare/v1.98.0...v1.99.0) (2018-12-11)
+
+
+### Features
+
+* **Header:** expose sizes and src props for the logo ([07ba728](https://github.com/lodgify/lodgify-ui/commit/07ba728))
+* **Hero:** expose responsive image props for header logo ([fc094fe](https://github.com/lodgify/lodgify-ui/commit/fc094fe))
+* **HomepageHero:** expose responsive image props for header logo ([c5eee57](https://github.com/lodgify/lodgify-ui/commit/c5eee57))
+* **PropertyPageHero:** add unit tests for header logo responsive props ([4e7964d](https://github.com/lodgify/lodgify-ui/commit/4e7964d))
+* **PropertyPageHero:** expose responsive image props for header logo ([d2f0e9a](https://github.com/lodgify/lodgify-ui/commit/d2f0e9a))
+
+# [1.98.0](https://github.com/lodgify/lodgify-ui/compare/v1.97.3...v1.98.0) (2018-12-10)
+
+
+### Features
+
+* **PaymentInformation:** rename component to PolicyAndNotes and remove tax and cleaning related pro ([2963a0c](https://github.com/lodgify/lodgify-ui/commit/2963a0c))
+
+## [1.97.3](https://github.com/lodgify/lodgify-ui/compare/v1.97.2...v1.97.3) (2018-12-10)
+
+
+### Bug Fixes
+
+* **Availability:** disable calendar hover styles ([b29fa29](https://github.com/lodgify/lodgify-ui/commit/b29fa29))
+
+## [1.97.2](https://github.com/lodgify/lodgify-ui/compare/v1.97.1...v1.97.2) (2018-12-10)
+
+
+### Bug Fixes
+
+* **ShowOn:** remove display flex ([5d0e50b](https://github.com/lodgify/lodgify-ui/commit/5d0e50b))
+
+## [1.97.1](https://github.com/lodgify/lodgify-ui/compare/v1.97.0...v1.97.1) (2018-12-07)
+
+
+### Bug Fixes
+
+* **Reviews:** correct references to roomType ([50935b2](https://github.com/lodgify/lodgify-ui/commit/50935b2))
+
+# [1.97.0](https://github.com/lodgify/lodgify-ui/compare/v1.96.0...v1.97.0) (2018-12-07)
+
+
+### Features
+
+* **PropertyPageSearchBar:** pass getIsDayBlocked to modal search bar ([b53db09](https://github.com/lodgify/lodgify-ui/commit/b53db09))
+
+# [1.96.0](https://github.com/lodgify/lodgify-ui/compare/v1.95.0...v1.96.0) (2018-12-06)
+
+
+### Features
+
+* **Submenu:** simplify API, scrap defaultValue and use only value ([32c55c2](https://github.com/lodgify/lodgify-ui/commit/32c55c2))
+
+# [1.95.0](https://github.com/lodgify/lodgify-ui/compare/v1.94.1...v1.95.0) (2018-12-06)
+
+
+### Bug Fixes
+
+* **Gallery:** key uses imageUrl instead of label ([304fe90](https://github.com/lodgify/lodgify-ui/commit/304fe90))
+* **PropertyPageHero:** pass through imageUrl prop ([a99cf09](https://github.com/lodgify/lodgify-ui/commit/a99cf09))
+
+
+### Features
+
+* **buildKeyFromStrings:** add default value to avoid toString failing ([cd33ee9](https://github.com/lodgify/lodgify-ui/commit/cd33ee9))
+* **Description:** use text prop for key ([2c01a82](https://github.com/lodgify/lodgify-ui/commit/2c01a82))
+* **Rates:** name prop is required ([e9ce5c7](https://github.com/lodgify/lodgify-ui/commit/e9ce5c7))
+* **RoomType:** labelText is required ([ceccba7](https://github.com/lodgify/lodgify-ui/commit/ceccba7))
+
+## [1.94.1](https://github.com/lodgify/lodgify-ui/compare/v1.94.0...v1.94.1) (2018-12-06)
+
+
+### Bug Fixes
+
+* **Description:** implement ShowOn component ([52d4f4c](https://github.com/lodgify/lodgify-ui/commit/52d4f4c))
+* **Divider:** adapt component description ([b894cf5](https://github.com/lodgify/lodgify-ui/commit/b894cf5))
+* **Header:** adapt header utils with ShowOn component ([f1ab103](https://github.com/lodgify/lodgify-ui/commit/f1ab103))
+* **HomepageHero:** implement ShowOn component ([95103d0](https://github.com/lodgify/lodgify-ui/commit/95103d0))
+* **Location:** implement ShowOn component ([967fcfa](https://github.com/lodgify/lodgify-ui/commit/967fcfa))
+* **menu.overrides:** align container with flex wrapper display ([8b283da](https://github.com/lodgify/lodgify-ui/commit/8b283da))
+* **Pictures:** implement ShowOn component ([35a5b1b](https://github.com/lodgify/lodgify-ui/commit/35a5b1b))
+* **Pictures:** use imageUrl to build key ([1e92a54](https://github.com/lodgify/lodgify-ui/commit/1e92a54))
+* **Promotion:** implement ShowOn component ([01d16c0](https://github.com/lodgify/lodgify-ui/commit/01d16c0))
+* **PropertyPageSearchBar:** implement ShowOn component ([9d9c42b](https://github.com/lodgify/lodgify-ui/commit/9d9c42b))
+* **Rates:** implement ShowOn component ([50cc140](https://github.com/lodgify/lodgify-ui/commit/50cc140))
+* **RoomType:** implement ShowOn component ([c2f7165](https://github.com/lodgify/lodgify-ui/commit/c2f7165))
+* **site.overrides:** change responsive wrapper display property and fix thumbnail ([b7ae54c](https://github.com/lodgify/lodgify-ui/commit/b7ae54c))
+
 # [1.94.0](https://github.com/lodgify/lodgify-ui/compare/v1.93.0...v1.94.0) (2018-11-29)
 
 

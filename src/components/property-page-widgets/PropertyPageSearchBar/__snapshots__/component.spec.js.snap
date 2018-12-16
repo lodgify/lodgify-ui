@@ -66,12 +66,16 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
   <div
     className="property-page-searchbar"
   >
-    <ShowOnDesktop
+    <ShowOn
+      computer={true}
+      mobile={false}
       parent="div"
       parentProps={Object {}}
+      tablet={false}
+      widescreen={true}
     >
       <div
-        className="show-on-desktop"
+        className="show-on-computer show-on-widescreen"
       >
         <SearchBar
           getIsDayBlocked={[Function]}
@@ -2544,13 +2548,17 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
           </div>
         </SearchBar>
       </div>
-    </ShowOnDesktop>
-    <ShowOnMobile
+    </ShowOn>
+    <ShowOn
+      computer={false}
+      mobile={true}
       parent="div"
       parentProps={Object {}}
+      tablet={true}
+      widescreen={false}
     >
       <div
-        className="show-on-mobile"
+        className="show-on-mobile show-on-tablet"
       >
         <SearchBar
           getIsDayBlocked={[Function]}
@@ -3126,7 +3134,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
           </div>
         </SearchBar>
       </div>
-    </ShowOnMobile>
+    </ShowOn>
   </div>
 </PropertyPageSearchBar>
 `;

@@ -2,20 +2,24 @@
 
 exports[`getDesktopMenuMarkup by default should render the right structure 1`] = `
 <div>
-  <ShowOnDesktop
+  <ShowOn
+    computer={true}
+    mobile={false}
     parent={[Function]}
     parentProps={
       Object {
         "position": "right",
       }
     }
+    tablet={true}
+    widescreen={true}
   >
     <MenuMenu
-      className="show-on-desktop"
+      className="show-on-tablet show-on-computer show-on-widescreen"
       position="right"
     >
       <div
-        className="right menu show-on-desktop"
+        className="right menu show-on-tablet show-on-computer show-on-widescreen"
       >
         <MenuItem
           active={false}
@@ -33,7 +37,6 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
         </MenuItem>
         <Submenu
           isMenuItem={true}
-          isSelectedDisabled={true}
           isSimple={true}
           isTriggerUnderlined={true}
           isTriggeredOnHover={true}
@@ -61,6 +64,7 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
           name={null}
           onChange={[Function]}
           pointing="top right"
+          value={null}
           willOpenAbove={false}
         >
           <Dropdown
@@ -122,7 +126,7 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
             simple={true}
             trigger="All properties"
             upward={false}
-            value={-999}
+            value={null}
             wrapSelection={true}
           >
             <div
@@ -313,26 +317,30 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
         </Submenu>
       </div>
     </MenuMenu>
-  </ShowOnDesktop>
+  </ShowOn>
 </div>
 `;
 
 exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render the right structure 1`] = `
 <div>
-  <ShowOnDesktop
+  <ShowOn
+    computer={true}
+    mobile={false}
     parent={[Function]}
     parentProps={
       Object {
         "position": "right",
       }
     }
+    tablet={true}
+    widescreen={true}
   >
     <MenuMenu
-      className="show-on-desktop"
+      className="show-on-tablet show-on-computer show-on-widescreen"
       position="right"
     >
       <div
-        className="right menu show-on-desktop"
+        className="right menu show-on-tablet show-on-computer show-on-widescreen"
       >
         <MenuItem
           active={false}
@@ -350,7 +358,6 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
         </MenuItem>
         <Submenu
           isMenuItem={true}
-          isSelectedDisabled={true}
           isSimple={true}
           isTriggerUnderlined={true}
           isTriggeredOnHover={true}
@@ -378,6 +385,7 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
           name={null}
           onChange={[Function]}
           pointing="top left"
+          value={null}
           willOpenAbove={false}
         >
           <Dropdown
@@ -439,7 +447,7 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
             simple={true}
             trigger="All properties"
             upward={false}
-            value={-999}
+            value={null}
             wrapSelection={true}
           >
             <div
@@ -673,6 +681,6 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
         </MenuItem>
       </div>
     </MenuMenu>
-  </ShowOnDesktop>
+  </ShowOn>
 </div>
 `;

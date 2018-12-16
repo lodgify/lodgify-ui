@@ -120,7 +120,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
             isDisabled={false}
             isValid={false}
             label=""
-            name="apartment"
+            name="roomType"
             onBlur={[Function]}
             onChange={[Function]}
             options={Array []}
@@ -132,7 +132,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
             isDisabled={false}
             isValid={false}
             label=""
-            name="guest type"
+            name="guestType"
             onBlur={[Function]}
             onChange={[Function]}
             options={Array []}
@@ -493,7 +493,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
             isDisabled={false}
             isValid={false}
             label="Sullust"
-            name="apartment"
+            name="roomType"
             onBlur={[Function]}
             onChange={[Function]}
             options={
@@ -524,7 +524,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
             isDisabled={false}
             isValid={false}
             label="Foreigner"
-            name="guest type"
+            name="guestType"
             onBlur={[Function]}
             onChange={[Function]}
             options={

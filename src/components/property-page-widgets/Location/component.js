@@ -11,8 +11,7 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOn } from 'layout/ShowOn';
 import { Subheading } from 'typography/Subheading';
 import { withResponsive } from 'utils/with-responsive';
 
@@ -52,12 +51,15 @@ const Component = ({
       </GridColumn>
     )}
     {size(transportOptions) > 0 && (
-      <ShowOnDesktop
+      <ShowOn
+        computer
         parent={GridColumn}
         parentProps={{ computer: 6, tablet: 12 }}
+        tablet
+        widescreen
       >
         {getTransportOptionsMarkup(transportOptions)}
-      </ShowOnDesktop>
+      </ShowOn>
     )}
     <GridColumn width={12}>
       <GoogleMap
@@ -70,10 +72,10 @@ const Component = ({
       />
     </GridColumn>
     {size(transportOptions) > 0 && (
-      <ShowOnMobile parent={GridColumn} parentProps={{ width: 12 }}>
+      <ShowOn mobile parent={GridColumn} parentProps={{ width: 12 }}>
         <Divider />
         {getTransportOptionsMarkup(transportOptions)}
-      </ShowOnMobile>
+      </ShowOn>
     )}
   </Grid>
 );

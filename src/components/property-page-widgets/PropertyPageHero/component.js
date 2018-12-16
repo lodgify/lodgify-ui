@@ -21,7 +21,9 @@ import { BOTTOM_OFFSET } from './constants';
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
   activeNavigationItemIndex,
+  headerLogoSizes,
   headerLogoSrc,
+  headerLogoSrcSet,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
@@ -38,7 +40,7 @@ const Component = ({
   searchBarOnSubmit,
 }) => {
   const {
-    url: backgroundImageUrl,
+    imageUrl: backgroundImageUrl,
     sizes: backgroundImageSizes,
     srcSet: backgroundImageSrcSet,
     placeholderImageUrl,
@@ -51,7 +53,9 @@ const Component = ({
       backgroundImageSrcSet={backgroundImageSrcSet}
       backgroundImageUrl={backgroundImageUrl}
       bottomOffset={BOTTOM_OFFSET}
+      headerLogoSizes={headerLogoSizes}
       headerLogoSrc={headerLogoSrc}
+      headerLogoSrcSet={headerLogoSrcSet}
       headerLogoText={headerLogoText}
       headerNavigationItems={headerNavigationItems}
       headerPrimaryCTA={headerPrimaryCTA}
@@ -92,7 +96,9 @@ Component.displayName = 'PropertyPageHero';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  headerLogoSizes: undefined,
   headerLogoSrc: null,
+  headerLogoSrcSet: undefined,
   headerPrimaryCTA: null,
   propertyName: null,
   ratingNumber: null,
@@ -107,8 +113,12 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The index of the active navigation item. */
   activeNavigationItemIndex: PropTypes.number,
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  headerLogoSizes: PropTypes.string,
   /** The src url for the logo in the header. */
   headerLogoSrc: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  headerLogoSrcSet: PropTypes.string,
   /** The text for the logo in the header. */
   headerLogoText: PropTypes.string.isRequired,
   /** The items for a user to navigate the site. */
@@ -143,6 +153,8 @@ Component.propTypes = {
       imageNotFoundLabelText: PropTypes.string,
       /** Title of the image to show when hovering it on desktop browsers */
       imageTitle: PropTypes.string,
+      /** URL pointing to the image to display. */
+      imageUrl: PropTypes.string.isRequired,
       /** A visible label for the image. */
       label: PropTypes.string.isRequired,
       /** URL pointing to the placeholder image to display. */
@@ -151,8 +163,6 @@ Component.propTypes = {
       sizes: PropTypes.string,
       /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
       srcSet: PropTypes.string,
-      /** URL pointing to the image to display. */
-      url: PropTypes.string.isRequired,
     })
   ).isRequired,
   /** The name of the property to display in the gallery modal. */

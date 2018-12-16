@@ -4,7 +4,6 @@ import getClassNames from 'classnames';
 
 /**
  * Shows child components on specified screen sizes.
- * Hides child components otherwise.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
@@ -20,7 +19,7 @@ export const Component = ({
     parent,
     {
       ...parentProps,
-      className: getClassNames(parentProps.className, 'hide-on-all-devices', {
+      className: getClassNames(parentProps.className, {
         'show-on-mobile': mobile,
         'show-on-tablet': tablet,
         'show-on-computer': computer,

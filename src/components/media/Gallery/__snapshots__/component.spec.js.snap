@@ -21,7 +21,7 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
         horizontalAlignContent="left"
       >
         <GridColumn
-          key="🔷0"
+          key="💻0"
           verticalAlignContent="top"
           width={null}
         >
@@ -54,7 +54,7 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
           />
         </GridColumn>
         <GridColumn
-          key="🔷1"
+          key="💻1"
           verticalAlignContent="top"
           width={null}
         >
@@ -124,7 +124,7 @@ exports[`<Gallery /> if \`props.heading\` is defined should render the right str
         horizontalAlignContent="left"
       >
         <GridColumn
-          key="🔷0"
+          key="💻0"
           verticalAlignContent="top"
           width={null}
         >
@@ -157,7 +157,7 @@ exports[`<Gallery /> if \`props.heading\` is defined should render the right str
           />
         </GridColumn>
         <GridColumn
-          key="🔷1"
+          key="💻1"
           verticalAlignContent="top"
           width={null}
         >

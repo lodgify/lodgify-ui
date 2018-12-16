@@ -9,7 +9,7 @@ import { Heading } from 'typography/Heading';
 import { Hero } from 'collections/Hero';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { SearchBar } from 'general-widgets/SearchBar';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOn } from 'layout/ShowOn';
 
 /**
  * A homepage hero displays a hero with heading and a search bar on desktop screens.
@@ -20,7 +20,9 @@ export const Component = ({
   backgroundImageSizes,
   backgroundImageSrcSet,
   backgroundImageUrl,
+  headerLogoSizes,
   headerLogoSrc,
+  headerLogoSrcSet,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
@@ -39,7 +41,9 @@ export const Component = ({
     backgroundImageSizes={backgroundImageSizes}
     backgroundImageSrcSet={backgroundImageSrcSet}
     backgroundImageUrl={backgroundImageUrl}
+    headerLogoSizes={headerLogoSizes}
     headerLogoSrc={headerLogoSrc}
+    headerLogoSrcSet={headerLogoSrcSet}
     headerLogoText={headerLogoText}
     headerNavigationItems={headerNavigationItems}
     headerPrimaryCTA={headerPrimaryCTA}
@@ -62,7 +66,7 @@ export const Component = ({
           {headingText}
         </Heading>
       </HorizontalGutters>
-      <ShowOnDesktop parent={HorizontalGutters}>
+      <ShowOn computer parent={HorizontalGutters} tablet widescreen>
         <Grid areColumnsCentered>
           <GridRow horizontalAlignContent="center">
             <SearchBar
@@ -76,7 +80,7 @@ export const Component = ({
             />
           </GridRow>
         </Grid>
-      </ShowOnDesktop>
+      </ShowOn>
     </FlexContainer>
   </Hero>
 );
@@ -87,7 +91,9 @@ Component.defaultProps = {
   activeNavigationItemIndex: null,
   backgroundImageSizes: undefined,
   backgroundImageSrcSet: undefined,
+  headerLogoSizes: undefined,
   headerLogoSrc: null,
+  headerLogoSrcSet: undefined,
   headerPrimaryCTA: null,
   headingText: null,
   placeholderBackgroundImageUrl: null,
@@ -108,8 +114,12 @@ Component.propTypes = {
   backgroundImageSrcSet: PropTypes.string,
   /** The source url of the hero's background image. */
   backgroundImageUrl: PropTypes.string.isRequired,
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  headerLogoSizes: PropTypes.string,
   /** The src url for the logo in the header. */
   headerLogoSrc: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  headerLogoSrcSet: PropTypes.string,
   /** The text for the logo in the header. */
   headerLogoText: PropTypes.string.isRequired,
   /** The items for a user to navigate the site. */

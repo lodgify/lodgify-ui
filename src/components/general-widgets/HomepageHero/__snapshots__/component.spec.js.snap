@@ -6,7 +6,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
   backgroundImageSizes="url"
   backgroundImageSrcSet="a load of sizes"
   backgroundImageUrl="bare sources"
+  headerLogoSizes="a load of logo sizes"
   headerLogoSrc="src"
+  headerLogoSrcSet="a load of logo src sets"
   headerLogoText="text"
   headerNavigationItems={
     Array [
@@ -56,7 +58,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
     backgroundImageSrcSet="a load of sizes"
     backgroundImageUrl="bare sources"
     bottomOffset="0px"
+    headerLogoSizes="a load of logo sizes"
     headerLogoSrc="src"
+    headerLogoSrcSet="a load of logo src sets"
     headerLogoText="text"
     headerNavigationItems={
       Array [
@@ -170,7 +174,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
           <Header
             activeNavigationItemIndex={1}
             isBackgroundFilled={false}
+            logoSizes="a load of logo sizes"
             logoSrc="src"
+            logoSrcSet="a load of logo src sets"
             logoText="text"
             navigationItems={
               Array [
@@ -244,24 +250,32 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                           <Image
                             alt="text"
                             as="img"
+                            sizes="a load of logo sizes"
                             src="src"
+                            srcSet="a load of logo src sets"
                             ui={true}
                           >
                             <img
                               alt="text"
                               className="ui image"
+                              sizes="a load of logo sizes"
                               src="src"
+                              srcSet="a load of logo src sets"
                             />
                           </Image>
                         </a>
                       </MenuItem>
-                      <ShowOnMobile
+                      <ShowOn
+                        computer={false}
+                        mobile={true}
                         parent={[Function]}
                         parentProps={
                           Object {
                             "position": "right",
                           }
                         }
+                        tablet={false}
+                        widescreen={false}
                       >
                         <MenuMenu
                           className="show-on-mobile"
@@ -590,7 +604,9 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                           <Image
                                             alt="text"
                                             as="img"
+                                            sizes="a load of logo sizes"
                                             src="src"
+                                            srcSet="a load of logo src sets"
                                             ui={true}
                                           />
                                         </MenuItem>
@@ -697,21 +713,25 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                             </MenuItem>
                           </div>
                         </MenuMenu>
-                      </ShowOnMobile>
-                      <ShowOnDesktop
+                      </ShowOn>
+                      <ShowOn
+                        computer={true}
+                        mobile={false}
                         parent={[Function]}
                         parentProps={
                           Object {
                             "position": "right",
                           }
                         }
+                        tablet={true}
+                        widescreen={true}
                       >
                         <MenuMenu
-                          className="show-on-desktop"
+                          className="show-on-tablet show-on-computer show-on-widescreen"
                           position="right"
                         >
                           <div
-                            className="right menu show-on-desktop"
+                            className="right menu show-on-tablet show-on-computer show-on-widescreen"
                           >
                             <MenuItem
                               active={false}
@@ -772,7 +792,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                             </MenuItem>
                           </div>
                         </MenuMenu>
-                      </ShowOnDesktop>
+                      </ShowOn>
                     </div>
                   </Menu>
                 </Container>
@@ -825,18 +845,22 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                   </div>
                 </Container>
               </HorizontalGutters>
-              <ShowOnDesktop
+              <ShowOn
+                computer={true}
+                mobile={false}
                 parent={[Function]}
                 parentProps={Object {}}
+                tablet={true}
+                widescreen={true}
               >
                 <HorizontalGutters
-                  className="show-on-desktop"
+                  className="show-on-tablet show-on-computer show-on-widescreen"
                 >
                   <Container
-                    className="show-on-desktop"
+                    className="show-on-tablet show-on-computer show-on-widescreen"
                   >
                     <div
-                      className="ui container show-on-desktop"
+                      className="ui container show-on-tablet show-on-computer show-on-widescreen"
                     >
                       <Grid
                         areColumnsCentered={true}
@@ -3028,7 +3052,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                     </div>
                   </Container>
                 </HorizontalGutters>
-              </ShowOnDesktop>
+              </ShowOn>
             </div>
           </FlexContainer>
         </div>

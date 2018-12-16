@@ -1,9 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import {
-  expectComponentToHaveDisplayName,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
 import { Button } from 'elements/Button';
@@ -42,12 +39,6 @@ describe('<PropertyPageSearchBar />', () => {
     const actual = getPropertyPageSearchBar();
 
     expect(actual).toMatchSnapshot();
-  });
-
-  it('should have the right props', () => {
-    const wrapper = getPropertyPageSearchBar();
-
-    expectComponentToHaveProps(wrapper, props);
   });
 
   it('should have the right `displayName`', () => {

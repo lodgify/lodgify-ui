@@ -4,14 +4,21 @@ import { Menu, Image } from 'semantic-ui-react';
 import { Heading } from 'typography/Heading';
 
 /**
- * @param  {string} logoSrc
  * @param  {string} logoText
+ * @param  {string} logoSrc
+ * @param  {string} logoSizes
+ * @param  {string} logoSrcSet
  * @return {Object}
  */
-export const getLogoMarkup = (logoSrc, logoText) => (
+export const getLogoMarkup = (logoText, logoSrc, logoSizes, logoSrcSet) => (
   <Menu.Item href="/" link>
     {logoSrc ? (
-      <Image alt={logoText} src={logoSrc} />
+      <Image
+        alt={logoText}
+        sizes={logoSizes}
+        src={logoSrc}
+        srcSet={logoSrcSet}
+      />
     ) : (
       <Heading size="small">{logoText}</Heading>
     )}

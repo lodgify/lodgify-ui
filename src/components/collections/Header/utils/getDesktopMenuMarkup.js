@@ -4,7 +4,7 @@ import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Button } from 'elements/Button';
-import { ShowOnDesktop } from 'layout/ShowOnDesktop';
+import { ShowOn } from 'layout/ShowOn';
 import { Submenu } from 'elements/Submenu';
 
 import { getSubmenuPointing } from './getSubmenuPointing';
@@ -24,28 +24,34 @@ export const getDesktopMenuMarkup = ({
   primaryCTA,
   /* eslint-enable react/prop-types */
 }) => (
-  <ShowOnDesktop parent={Menu.Menu} parentProps={{ position: 'right' }}>
-    {navigationItems.map(({ subItems, text, href }, index) =>
-      size(subItems) > 0 ? (
-        <Submenu
-          isMenuItem
-          isSelectedDisabled
-          isSimple
-          isTriggerUnderlined={index === activeNavigationItemIndex}
-          isTriggeredOnHover
-          items={subItems}
-          key={buildKeyFromStrings(text, index)}
-          pointing={getSubmenuPointing(
-            index,
-            size(navigationItems),
-            !!primaryCTA
-          )}
-        >
-          {text}
-        </Submenu>
-      ) : (
-        getLinkMarkup(text, href, index, activeNavigationItemIndex)
-      )
+  <ShowOn
+    computer
+    parent={Menu.Menu}
+    parentProps={{ position: 'right' }}
+    tablet
+    widescreen
+  >
+    {navigationItems.map(
+      ({ subItems, text, href }, index) =>
+        size(subItems) > 0 ? (
+          <Submenu
+            isMenuItem
+            isSimple
+            isTriggerUnderlined={index === activeNavigationItemIndex}
+            isTriggeredOnHover
+            items={subItems}
+            key={buildKeyFromStrings(text, index)}
+            pointing={getSubmenuPointing(
+              index,
+              size(navigationItems),
+              !!primaryCTA
+            )}
+          >
+            {text}
+          </Submenu>
+        ) : (
+          getLinkMarkup(text, href, index, activeNavigationItemIndex)
+        )
     )}
     {primaryCTA && (
       <Menu.Item className="no-underline" link>
@@ -54,5 +60,5 @@ export const getDesktopMenuMarkup = ({
         </Button>
       </Menu.Item>
     )}
-  </ShowOnDesktop>
+  </ShowOn>
 );

@@ -3,7 +3,9 @@
 exports[`PropertyPageHero by default should render the right structure 1`] = `
 <PropertyPageHero
   activeNavigationItemIndex={1}
+  headerLogoSizes="a load of logo sizes"
   headerLogoSrc="src"
+  headerLogoSrcSet="a load of logo src sets"
   headerLogoText="text"
   headerNavigationItems={
     Array [
@@ -22,12 +24,12 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
   images={
     Array [
       Object {
+        "imageUrl": "🚞",
         "label": "Entrance",
-        "url": "🚞",
       },
       Object {
+        "imageUrl": "🚞",
         "label": "Kitchen",
-        "url": "🚞",
       },
     ]
   }
@@ -61,7 +63,9 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
     activeNavigationItemIndex={1}
     backgroundImageUrl="🚞"
     bottomOffset="85px"
+    headerLogoSizes="a load of logo sizes"
     headerLogoSrc="src"
+    headerLogoSrcSet="a load of logo src sets"
     headerLogoText="text"
     headerNavigationItems={
       Array [
@@ -172,7 +176,9 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
           <Header
             activeNavigationItemIndex={1}
             isBackgroundFilled={false}
+            logoSizes="a load of logo sizes"
             logoSrc="src"
+            logoSrcSet="a load of logo src sets"
             logoText="text"
             navigationItems={
               Array [
@@ -242,24 +248,32 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                           <Image
                             alt="text"
                             as="img"
+                            sizes="a load of logo sizes"
                             src="src"
+                            srcSet="a load of logo src sets"
                             ui={true}
                           >
                             <img
                               alt="text"
                               className="ui image"
+                              sizes="a load of logo sizes"
                               src="src"
+                              srcSet="a load of logo src sets"
                             />
                           </Image>
                         </a>
                       </MenuItem>
-                      <ShowOnMobile
+                      <ShowOn
+                        computer={false}
+                        mobile={true}
                         parent={[Function]}
                         parentProps={
                           Object {
                             "position": "right",
                           }
                         }
+                        tablet={false}
+                        widescreen={false}
                       >
                         <MenuMenu
                           className="show-on-mobile"
@@ -582,7 +596,9 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                           <Image
                                             alt="text"
                                             as="img"
+                                            sizes="a load of logo sizes"
                                             src="src"
+                                            srcSet="a load of logo src sets"
                                             ui={true}
                                           />
                                         </MenuItem>
@@ -689,21 +705,25 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                             </MenuItem>
                           </div>
                         </MenuMenu>
-                      </ShowOnMobile>
-                      <ShowOnDesktop
+                      </ShowOn>
+                      <ShowOn
+                        computer={true}
+                        mobile={false}
                         parent={[Function]}
                         parentProps={
                           Object {
                             "position": "right",
                           }
                         }
+                        tablet={true}
+                        widescreen={true}
                       >
                         <MenuMenu
-                          className="show-on-desktop"
+                          className="show-on-tablet show-on-computer show-on-widescreen"
                           position="right"
                         >
                           <div
-                            className="right menu show-on-desktop"
+                            className="right menu show-on-tablet show-on-computer show-on-widescreen"
                           >
                             <MenuItem
                               active={false}
@@ -764,7 +784,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                             </MenuItem>
                           </div>
                         </MenuMenu>
-                      </ShowOnDesktop>
+                      </ShowOn>
                     </div>
                   </Menu>
                 </Container>
@@ -802,12 +822,12 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                       images={
                         Array [
                           Object {
+                            "imageUrl": "🚞",
                             "label": "Entrance",
-                            "url": "🚞",
                           },
                           Object {
+                            "imageUrl": "🚞",
                             "label": "Kitchen",
-                            "url": "🚞",
                           },
                         ]
                       }

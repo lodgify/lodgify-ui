@@ -6,7 +6,7 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { SearchBar } from 'general-widgets/SearchBar';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOn } from 'layout/ShowOn';
 
 import { hasSearchBarOptions } from './hasSearchBarOptions';
 import { getLogoMarkup } from './getLogoMarkup';
@@ -30,7 +30,9 @@ import { getLinkMarkup } from './getLinkMarkup';
 export const getMobileMenuMarkup = ({
   /* eslint-disable react/prop-types */
   activeNavigationItemIndex,
+  logoSizes,
   logoSrc,
+  logoSrcSet,
   logoText,
   navigationItems,
   searchBarGetIsDayBlocked,
@@ -42,7 +44,7 @@ export const getMobileMenuMarkup = ({
   searchBarSearchButton,
   /* eslint-enable react/prop-types */
 }) => (
-  <ShowOnMobile parent={Menu.Menu} parentProps={{ position: 'right' }}>
+  <ShowOn mobile parent={Menu.Menu} parentProps={{ position: 'right' }}>
     {hasSearchBarOptions(searchBarGuestsOptions, searchBarLocationOptions) && (
       <Menu.Item>
         <SearchBar
@@ -60,7 +62,7 @@ export const getMobileMenuMarkup = ({
     <Menu.Item>
       <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
         <Menu text vertical>
-          {getLogoMarkup(logoSrc, logoText)}
+          {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
           {navigationItems.map(({ subItems, text, href }, index) =>
             size(subItems) ? (
               <Accordion
@@ -93,5 +95,5 @@ export const getMobileMenuMarkup = ({
         </Menu>
       </Modal>
     </Menu.Item>
-  </ShowOnMobile>
+  </ShowOn>
 );

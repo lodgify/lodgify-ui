@@ -115,7 +115,9 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
             </div>
           </GridColumn>
         </GridColumn>
-        <ShowOnDesktop
+        <ShowOn
+          computer={true}
+          mobile={false}
           parent={[Function]}
           parentProps={
             Object {
@@ -123,23 +125,25 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
               "tablet": 12,
             }
           }
+          tablet={true}
+          widescreen={true}
         >
           <GridColumn
-            className="show-on-desktop"
+            className="show-on-tablet show-on-computer show-on-widescreen"
             computer={6}
             tablet={12}
             verticalAlignContent="top"
             width={null}
           >
             <GridColumn
-              className="show-on-desktop"
+              className="show-on-tablet show-on-computer show-on-widescreen"
               computer={6}
               tablet={12}
               verticalAlign="top"
               width={null}
             >
               <div
-                className="top aligned six wide computer twelve wide tablet column show-on-desktop"
+                className="top aligned six wide computer twelve wide tablet column show-on-tablet show-on-computer show-on-widescreen"
               >
                 <LabelGroup>
                   <div
@@ -434,7 +438,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
               </div>
             </GridColumn>
           </GridColumn>
-        </ShowOnDesktop>
+        </ShowOn>
         <GridColumn
           verticalAlignContent="top"
           width={12}
@@ -512,13 +516,17 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
             </div>
           </GridColumn>
         </GridColumn>
-        <ShowOnMobile
+        <ShowOn
+          computer={false}
+          mobile={true}
           parent={[Function]}
           parentProps={
             Object {
               "width": 12,
             }
           }
+          tablet={false}
+          widescreen={false}
         >
           <GridColumn
             className="show-on-mobile"
@@ -841,7 +849,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
               </div>
             </GridColumn>
           </GridColumn>
-        </ShowOnMobile>
+        </ShowOn>
       </div>
     </Grid>
   </Grid>

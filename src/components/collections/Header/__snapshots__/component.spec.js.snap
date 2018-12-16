@@ -88,13 +88,17 @@ exports[`<Header /> by default should render the right structure 1`] = `
                 </Heading>
               </a>
             </MenuItem>
-            <ShowOnMobile
+            <ShowOn
+              computer={false}
+              mobile={true}
               parent={[Function]}
               parentProps={
                 Object {
                   "position": "right",
                 }
               }
+              tablet={false}
+              widescreen={false}
             >
               <MenuMenu
                 className="show-on-mobile"
@@ -311,21 +315,25 @@ exports[`<Header /> by default should render the right structure 1`] = `
                   </MenuItem>
                 </div>
               </MenuMenu>
-            </ShowOnMobile>
-            <ShowOnDesktop
+            </ShowOn>
+            <ShowOn
+              computer={true}
+              mobile={false}
               parent={[Function]}
               parentProps={
                 Object {
                   "position": "right",
                 }
               }
+              tablet={true}
+              widescreen={true}
             >
               <MenuMenu
-                className="show-on-desktop"
+                className="show-on-tablet show-on-computer show-on-widescreen"
                 position="right"
               >
                 <div
-                  className="right menu show-on-desktop"
+                  className="right menu show-on-tablet show-on-computer show-on-widescreen"
                 >
                   <MenuItem
                     active={false}
@@ -343,7 +351,6 @@ exports[`<Header /> by default should render the right structure 1`] = `
                   </MenuItem>
                   <Submenu
                     isMenuItem={true}
-                    isSelectedDisabled={true}
                     isSimple={true}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={true}
@@ -371,6 +378,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                     name={null}
                     onChange={[Function]}
                     pointing="top right"
+                    value={null}
                     willOpenAbove={false}
                   >
                     <Dropdown
@@ -432,7 +440,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       simple={true}
                       trigger="All properties"
                       upward={false}
-                      value={-999}
+                      value={null}
                       wrapSelection={true}
                     >
                       <div
@@ -623,7 +631,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                   </Submenu>
                 </div>
               </MenuMenu>
-            </ShowOnDesktop>
+            </ShowOn>
           </div>
         </Menu>
       </Container>
@@ -720,13 +728,17 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                 </Heading>
               </a>
             </MenuItem>
-            <ShowOnMobile
+            <ShowOn
+              computer={false}
+              mobile={true}
               parent={[Function]}
               parentProps={
                 Object {
                   "position": "right",
                 }
               }
+              tablet={false}
+              widescreen={false}
             >
               <MenuMenu
                 className="show-on-mobile"
@@ -943,21 +955,25 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                   </MenuItem>
                 </div>
               </MenuMenu>
-            </ShowOnMobile>
-            <ShowOnDesktop
+            </ShowOn>
+            <ShowOn
+              computer={true}
+              mobile={false}
               parent={[Function]}
               parentProps={
                 Object {
                   "position": "right",
                 }
               }
+              tablet={true}
+              widescreen={true}
             >
               <MenuMenu
-                className="show-on-desktop"
+                className="show-on-tablet show-on-computer show-on-widescreen"
                 position="right"
               >
                 <div
-                  className="right menu show-on-desktop"
+                  className="right menu show-on-tablet show-on-computer show-on-widescreen"
                 >
                   <MenuItem
                     active={false}
@@ -975,7 +991,6 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                   </MenuItem>
                   <Submenu
                     isMenuItem={true}
-                    isSelectedDisabled={true}
                     isSimple={true}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={true}
@@ -1003,6 +1018,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                     name={null}
                     onChange={[Function]}
                     pointing="top right"
+                    value={null}
                     willOpenAbove={false}
                   >
                     <Dropdown
@@ -1064,7 +1080,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       simple={true}
                       trigger="All properties"
                       upward={false}
-                      value={-999}
+                      value={null}
                       wrapSelection={true}
                     >
                       <div
@@ -1255,7 +1271,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                   </Submenu>
                 </div>
               </MenuMenu>
-            </ShowOnDesktop>
+            </ShowOn>
           </div>
         </Menu>
       </Container>

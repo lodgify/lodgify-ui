@@ -17,7 +17,9 @@ export const Component = ({
   backgroundImageSrcSet,
   bottomOffset,
   children,
+  headerLogoSizes,
   headerLogoSrc,
+  headerLogoSrcSet,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
@@ -40,7 +42,9 @@ export const Component = ({
   >
     <Header
       activeNavigationItemIndex={activeNavigationItemIndex}
+      logoSizes={headerLogoSizes}
       logoSrc={headerLogoSrc}
+      logoSrcSet={headerLogoSrcSet}
       logoText={headerLogoText}
       navigationItems={headerNavigationItems}
       primaryCTA={headerPrimaryCTA}
@@ -64,7 +68,9 @@ Component.defaultProps = {
   backgroundImageSrcSet: undefined,
   bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
+  headerLogoSizes: undefined,
   headerLogoSrc: null,
+  headerLogoSrcSet: undefined,
   headerPrimaryCTA: null,
   headerSearchBarGuestsOptions: [],
   headerSearchBarLocationOptions: [],
@@ -89,8 +95,12 @@ Component.propTypes = {
   bottomOffset: PropTypes.string,
   /** The children displayed between the header and the bottom of the hero. */
   children: PropTypes.node,
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  headerLogoSizes: PropTypes.string,
   /** The src url for the logo in the header. */
   headerLogoSrc: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  headerLogoSrcSet: PropTypes.string,
   /** The text for the logo in the header. */
   headerLogoText: PropTypes.string.isRequired,
   /** The items for a user to navigate the site. */

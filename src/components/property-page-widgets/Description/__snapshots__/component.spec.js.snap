@@ -125,20 +125,24 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
             <div
               className="top aligned twelve wide column"
             >
-              <ShowOnDesktop
+              <ShowOn
+                computer={true}
+                mobile={false}
                 parent={[Function]}
                 parentProps={
                   Object {
                     "horizontal": true,
                   }
                 }
+                tablet={true}
+                widescreen={true}
               >
                 <List
-                  className="show-on-desktop"
+                  className="show-on-tablet show-on-computer show-on-widescreen"
                   horizontal={true}
                 >
                   <div
-                    className="ui horizontal list show-on-desktop"
+                    className="ui horizontal list show-on-tablet show-on-computer show-on-widescreen"
                     role="list"
                   >
                     <ListItem
@@ -327,14 +331,18 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                     </ListItem>
                   </div>
                 </List>
-              </ShowOnDesktop>
-              <ShowOnMobile
+              </ShowOn>
+              <ShowOn
+                computer={false}
+                mobile={true}
                 parent={[Function]}
                 parentProps={
                   Object {
                     "columns": 1,
                   }
                 }
+                tablet={false}
+                widescreen={false}
               >
                 <Grid
                   areColumnsCentered={false}
@@ -572,7 +580,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                     </div>
                   </Grid>
                 </Grid>
-              </ShowOnMobile>
+              </ShowOn>
             </div>
           </GridColumn>
         </GridColumn>
@@ -776,7 +784,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                 isColorInverted={false}
                 isDisabled={false}
                 isLabelLeft={false}
-                key="credit cardcredit cards"
+                key="credit cards"
                 labelText="credit cards"
                 labelWeight={null}
                 name="credit card"
@@ -813,7 +821,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                 isColorInverted={false}
                 isDisabled={false}
                 isLabelLeft={false}
-                key="no childrenno children allowed"
+                key="no children allowed"
                 labelText="no children allowed"
                 labelWeight={null}
                 name="no children"
@@ -960,20 +968,24 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
             <div
               className="top aligned twelve wide column"
             >
-              <ShowOnDesktop
+              <ShowOn
+                computer={true}
+                mobile={false}
                 parent={[Function]}
                 parentProps={
                   Object {
                     "horizontal": true,
                   }
                 }
+                tablet={true}
+                widescreen={true}
               >
                 <List
-                  className="show-on-desktop"
+                  className="show-on-tablet show-on-computer show-on-widescreen"
                   horizontal={true}
                 >
                   <div
-                    className="ui horizontal list show-on-desktop"
+                    className="ui horizontal list show-on-tablet show-on-computer show-on-widescreen"
                     role="list"
                   >
                     <ListItem
@@ -1162,14 +1174,18 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                     </ListItem>
                   </div>
                 </List>
-              </ShowOnDesktop>
-              <ShowOnMobile
+              </ShowOn>
+              <ShowOn
+                computer={false}
+                mobile={true}
                 parent={[Function]}
                 parentProps={
                   Object {
                     "columns": 1,
                   }
                 }
+                tablet={false}
+                widescreen={false}
               >
                 <Grid
                   areColumnsCentered={false}
@@ -1407,7 +1423,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                     </div>
                   </Grid>
                 </Grid>
-              </ShowOnMobile>
+              </ShowOn>
             </div>
           </GridColumn>
         </GridColumn>
@@ -1572,20 +1588,24 @@ exports[`<Description /> should have the correct structure 1`] = `
             <div
               className="top aligned twelve wide column"
             >
-              <ShowOnDesktop
+              <ShowOn
+                computer={true}
+                mobile={false}
                 parent={[Function]}
                 parentProps={
                   Object {
                     "horizontal": true,
                   }
                 }
+                tablet={true}
+                widescreen={true}
               >
                 <List
-                  className="show-on-desktop"
+                  className="show-on-tablet show-on-computer show-on-widescreen"
                   horizontal={true}
                 >
                   <div
-                    className="ui horizontal list show-on-desktop"
+                    className="ui horizontal list show-on-tablet show-on-computer show-on-widescreen"
                     role="list"
                   >
                     <ListItem
@@ -1774,14 +1794,18 @@ exports[`<Description /> should have the correct structure 1`] = `
                     </ListItem>
                   </div>
                 </List>
-              </ShowOnDesktop>
-              <ShowOnMobile
+              </ShowOn>
+              <ShowOn
+                computer={false}
+                mobile={true}
                 parent={[Function]}
                 parentProps={
                   Object {
                     "columns": 1,
                   }
                 }
+                tablet={false}
+                widescreen={false}
               >
                 <Grid
                   areColumnsCentered={false}
@@ -2019,7 +2043,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                     </div>
                   </Grid>
                 </Grid>
-              </ShowOnMobile>
+              </ShowOn>
             </div>
           </GridColumn>
         </GridColumn>
@@ -2098,7 +2122,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                 isColorInverted={false}
                 isDisabled={false}
                 isLabelLeft={false}
-                key="credit cardcredit cards"
+                key="credit cards"
                 labelText="credit cards"
                 labelWeight={null}
                 name="credit card"
@@ -2135,7 +2159,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                 isColorInverted={false}
                 isDisabled={false}
                 isLabelLeft={false}
-                key="no childrenno children allowed"
+                key="no children allowed"
                 labelText="no children allowed"
                 labelWeight={null}
                 name="no children"

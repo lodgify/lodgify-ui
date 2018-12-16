@@ -9,7 +9,7 @@ import { GridRow } from 'layout/GridRow';
 import { Link } from 'elements/Link';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
-import { ShowOnMobile } from 'layout/ShowOnMobile';
+import { ShowOn } from 'layout/ShowOn';
 import { Heading } from 'typography/Heading';
 import { Slideshow } from 'media/Slideshow';
 import { withResponsive } from 'utils/with-responsive';
@@ -108,7 +108,7 @@ const Component = ({
                 <Card.Description>
                   {getNightPriceMarkup(nightPrice)}
                 </Card.Description>
-                <ShowOnMobile parent={Divider} />
+                <ShowOn mobile parent={Divider} />
               </GridColumn>
             </GridRow>
           </Grid>
@@ -159,7 +159,7 @@ Component.propTypes = {
        */
       iconName: PropTypes.string,
       /** The feature label to display. */
-      labelText: PropTypes.string,
+      labelText: PropTypes.string.isRequired,
     })
   ).isRequired,
   /**
