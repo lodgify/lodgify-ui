@@ -1,3 +1,4 @@
+import moment from 'moment';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { isEqual, uniqueId } from 'lodash';
@@ -25,6 +26,8 @@ class Component extends PureComponent {
     focusedInput: null,
     startDate: null,
   };
+
+  componentDidMount = () => moment.locale(this.props.localeCode);
 
   componentDidUpdate = (prevProps, prevState) => {
     const prevDates = pickDatesFromState(prevState);
@@ -110,6 +113,7 @@ Component.defaultProps = {
   error: false,
   getIsDayBlocked: Function.prototype,
   isValid: false,
+  localeCode: 'en',
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
@@ -128,11 +132,13 @@ Component.propTypes = {
   /**
    * A function called for each day to be displayed. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
-   * @returns{boolean}     - Is the day blocked.
+   * @returns {boolean}     - Is the day blocked.
    */
   getIsDayBlocked: PropTypes.func,
   /** Is the date range picker in a valid state. */
   isValid: PropTypes.bool,
+  /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year. */
+  localeCode: PropTypes.string,
   /** The name for the date range picker. */
   name: PropTypes.string,
   /**
