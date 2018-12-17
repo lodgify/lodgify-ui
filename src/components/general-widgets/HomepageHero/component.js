@@ -28,6 +28,7 @@ export const Component = ({
   headerPrimaryCTA,
   headingText,
   placeholderBackgroundImageUrl,
+  searchBarDateRangePickerLocaleCode,
   searchBarGetIsDayBlocked,
   searchBarGuestsOptions,
   searchBarLocationOptions,
@@ -70,6 +71,7 @@ export const Component = ({
         <Grid areColumnsCentered>
           <GridRow horizontalAlignContent="center">
             <SearchBar
+              dateRangePickerLocaleCode={searchBarDateRangePickerLocaleCode}
               getIsDayBlocked={searchBarGetIsDayBlocked}
               guestsOptions={searchBarGuestsOptions}
               locationOptions={searchBarLocationOptions}
@@ -97,6 +99,7 @@ Component.defaultProps = {
   headerPrimaryCTA: null,
   headingText: null,
   placeholderBackgroundImageUrl: null,
+  searchBarDateRangePickerLocaleCode: undefined,
   searchBarGetIsDayBlocked: undefined,
   searchBarLocationOptions: undefined,
   searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
@@ -149,6 +152,8 @@ Component.propTypes = {
   headingText: PropTypes.string,
   /** The background placeholder image url of the hero. */
   placeholderBackgroundImageUrl: PropTypes.string,
+  /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the search bars date range picker. */
+  searchBarDateRangePickerLocaleCode: PropTypes.string,
   /**
    * A function called for each day to be displayed in the DateRangePicker.
    * Returning true blocks that day in the date range picker.
