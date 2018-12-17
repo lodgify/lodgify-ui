@@ -1172,6 +1172,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                                         getIsDayBlocked={[Function]}
                                                         isUserOnMobile={false}
                                                         isValid={false}
+                                                        localeCode="en"
                                                         name="dates"
                                                         onBlur={[Function]}
                                                         onChange={[Function]}
