@@ -10,6 +10,7 @@ const logoText = 'someLogoText';
 const props = {
   logoText,
   navigationItems,
+  dateRangePickerLocaleCode: 'ko',
 };
 
 const getHeader = extraProps => mount(<Header {...props} {...extraProps} />);

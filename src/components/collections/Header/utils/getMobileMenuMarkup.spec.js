@@ -21,6 +21,7 @@ const getMarkupAsRenderedComponent = extraProps =>
   mount(
     <div>
       {getMobileMenuMarkup({
+        dateRangePickerLocaleCode: 'ko',
         activeNavigationItemIndex: 0,
         searchBarGetIsDayBlocked,
         logoSizes,

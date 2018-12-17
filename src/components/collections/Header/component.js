@@ -42,6 +42,7 @@ Component.defaultProps = {
   logoSrc: null,
   logoSrcSet: undefined,
   primaryCTA: null,
+  searchBarDateRangePickerLocaleCode: undefined,
   searchBarGetIsDayBlocked: Function.prototype,
   searchBarGuestsOptions: [],
   searchBarLocationOptions: [],
@@ -90,6 +91,9 @@ Component.propTypes = {
     /** The visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),
+  /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the search bars date range picker. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  searchBarDateRangePickerLocaleCode: PropTypes.string,
   /**
    * A function called for each day to be displayed in the DateRangePicker.
    * Returning true blocks that day in the date range picker.

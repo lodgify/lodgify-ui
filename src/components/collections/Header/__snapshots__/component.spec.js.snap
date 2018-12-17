@@ -3,6 +3,7 @@
 exports[`<Header /> by default should render the right structure 1`] = `
 <Header
   activeNavigationItemIndex={null}
+  dateRangePickerLocaleCode="ko"
   isBackgroundFilled={false}
   logoSrc={null}
   logoText="someLogoText"
@@ -643,6 +644,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
 exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the right structure 1`] = `
 <Header
   activeNavigationItemIndex={null}
+  dateRangePickerLocaleCode="ko"
   isBackgroundFilled={true}
   logoSrc={null}
   logoText="someLogoText"
