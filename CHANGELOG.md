@@ -1,3 +1,18 @@
+# [1.100.0](https://github.com/lodgify/lodgify-ui/compare/v1.99.4...v1.100.0) (2018-12-17)
+
+
+### Features
+
+* **Availability:** expose localeCode prop ([47d1999](https://github.com/lodgify/lodgify-ui/commit/47d1999))
+* **Availability:** expose string props ([d968931](https://github.com/lodgify/lodgify-ui/commit/d968931))
+* **Contact:** expose dateRangePickerLocaleCode prop ([6a7954a](https://github.com/lodgify/lodgify-ui/commit/6a7954a))
+* **DateRangePicker:** expose localeCode prop ([25949bb](https://github.com/lodgify/lodgify-ui/commit/25949bb))
+* **default-strings:** add extra strings for Availability ([d6440f9](https://github.com/lodgify/lodgify-ui/commit/d6440f9))
+* **Header:** expose searchBarDateRangePickerLocaleCode prop ([07f03a3](https://github.com/lodgify/lodgify-ui/commit/07f03a3))
+* **HomepageHero:** expose searchBarDateRangePickerLocaleCode prop ([27ca619](https://github.com/lodgify/lodgify-ui/commit/27ca619))
+* **PropertyPageSearchBar:** expose searchBarDateRangePickerLocaleCode prop ([e58f761](https://github.com/lodgify/lodgify-ui/commit/e58f761))
+* **SearchBar:** expose localeCode for date range picker ([defe5b3](https://github.com/lodgify/lodgify-ui/commit/defe5b3))
+
 ## [1.99.4](https://github.com/lodgify/lodgify-ui/compare/v1.99.3...v1.99.4) (2018-12-14)
 
 
