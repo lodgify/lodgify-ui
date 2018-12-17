@@ -30,6 +30,18 @@ describe('<DateRangePicker />', () => {
     expectComponentToBe(wrapper, Responsive);
   });
 
+  describe('on mount', () => {
+    it('should set the correct `moment.locale`', () => {
+      const localeCode = 'ko';
+      const dateRangePicker = getWrappedDateRangePicker({ localeCode });
+
+      dateRangePicker.instance().componentDidMount();
+      const actual = moment.locale();
+
+      expect(actual).toEqual(localeCode);
+    });
+  });
+
   describe('the wrapped `DateRangePicker` component', () => {
     it('should be a Semantic UI `InputController`', () => {
       const wrapper = getWrappedDateRangePicker();
