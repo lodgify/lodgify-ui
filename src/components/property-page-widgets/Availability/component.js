@@ -42,6 +42,8 @@ class Component extends PureComponent {
     startDate: moment(),
   };
 
+  componentDidMount = () => moment.locale(this.props.localeCode);
+
   handleClickNextMonth = () =>
     this.setState({
       startDate: getNextStartDate(
@@ -204,6 +206,7 @@ Component.defaultProps = {
   getIsDayBlocked: () => false,
   headingText: AVAILABILITY,
   legendLabel: UNAVAILABLE,
+  localeCode: 'en',
   nextMonthsButtonLabel: NEXT,
   onChangeRoomDropdown: Function.prototype,
   previousMonthsButtonLabel: PREVIOUS,
@@ -229,6 +232,8 @@ Component.propTypes = {
   isUserOnMobile: PropTypes.bool.isRequired,
   /** The label for the legend. */
   legendLabel: PropTypes.string,
+  /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year. */
+  localeCode: PropTypes.string,
   /** The label for the next months button. */
   nextMonthsButtonLabel: PropTypes.string,
   /**
