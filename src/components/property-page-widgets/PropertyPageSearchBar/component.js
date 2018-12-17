@@ -10,6 +10,7 @@ import { SearchBar } from '../../general-widgets/SearchBar/index';
 import { getSummaryMarkup } from './utils/getSummaryMarkup';
 
 export const Component = ({
+  dateRangePickerLocaleCode,
   getIsDayBlocked,
   guestsOptions,
   isFixed,
@@ -33,6 +34,7 @@ export const Component = ({
     <div className="property-page-searchbar">
       <ShowOn computer widescreen>
         <SearchBar
+          dateRangePickerLocaleCode={dateRangePickerLocaleCode}
           getIsDayBlocked={getIsDayBlocked}
           guestsOptions={guestsOptions}
           isFixed={isFixed}
@@ -47,6 +49,7 @@ export const Component = ({
       </ShowOn>
       <ShowOn mobile tablet>
         <SearchBar
+          dateRangePickerLocaleCode={dateRangePickerLocaleCode}
           getIsDayBlocked={getIsDayBlocked}
           guestsOptions={guestsOptions}
           isDisplayedAsModal
@@ -71,6 +74,7 @@ export const Component = ({
 Component.displayName = 'PropertyPageSearchBar';
 
 Component.defaultProps = {
+  dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: undefined,
   modalTrigger: (
     <Button isPositionedRight isRounded>
@@ -88,6 +92,9 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  dateRangePickerLocaleCode: PropTypes.string,
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
