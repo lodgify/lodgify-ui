@@ -529,17 +529,6 @@ blockquote.ui.quote .row {
     }
   }
 
-  @media only screen and (max-height: @computerBreakpoint) {
-
-    .show-on-mobile {
-      display: block !important;
-    }
-
-    .show-on-desktop {
-      display: none !important;
-    }
-  }
-
   @media @tabletScreen {
 
     .ui.segments > .ui.segment {
