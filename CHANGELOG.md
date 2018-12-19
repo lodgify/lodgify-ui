@@ -1,3 +1,10 @@
+## [1.100.1](https://github.com/lodgify/lodgify-ui/compare/v1.100.0...v1.100.1) (2018-12-19)
+
+
+### Bug Fixes
+
+* **site.overrides:**  remove obsolete desktop breakpoint ([fe5bcd9](https://github.com/lodgify/lodgify-ui/commit/fe5bcd9))
+
 # [1.100.0](https://github.com/lodgify/lodgify-ui/compare/v1.99.4...v1.100.0) (2018-12-17)
 
 
