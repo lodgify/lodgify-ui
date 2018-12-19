@@ -1,0 +1,997 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HostProfile /> if \`props.email\` is defined should render the right structure 1`] = `
+<HostProfile
+  avatarUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+  contactInformationHeadingText="Contact Information"
+  description="We do love cats"
+  email="welovecats@lodgify.com"
+  emailLabel="Email"
+  headingText="Your Host"
+  languages={null}
+  languagesLabel="Languages"
+  name="Mitjons & Kira"
+  phone={null}
+  phoneLabel="Phone"
+>
+  <Grid
+    areColumnsCentered={false}
+    textAlign="left"
+  >
+    <Grid
+      centered={false}
+      textAlign="left"
+    >
+      <div
+        className="ui left aligned grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Your Host
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <ItemGroup
+                      unstackable={true}
+                    >
+                      <div
+                        className="ui unstackable items"
+                      >
+                        <Item>
+                          <div
+                            className="item"
+                          >
+                            <ItemImage
+                              avatar={true}
+                              size="tiny"
+                              src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                            >
+                              <Image
+                                as="img"
+                                avatar={true}
+                                size="tiny"
+                                src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                ui={true}
+                                wrapped={true}
+                              >
+                                <div
+                                  className="ui tiny avatar image"
+                                >
+                                  <img
+                                    src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  />
+                                </div>
+                              </Image>
+                            </ItemImage>
+                            <ItemHeader
+                              as="h4"
+                            >
+                              <h4
+                                className="header"
+                              >
+                                Mitjons & Kira
+                              </h4>
+                            </ItemHeader>
+                          </div>
+                        </Item>
+                      </div>
+                    </ItemGroup>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+          verticalAlign="top"
+        >
+          <GridRow
+            textAlign="left"
+            verticalAlign="top"
+          >
+            <div
+              className="left aligned top aligned row"
+            >
+              <GridColumn
+                computer={7}
+                mobile={12}
+                tablet={12}
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={7}
+                  mobile={12}
+                  tablet={12}
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                  >
+                    <Paragraph
+                      size="medium"
+                      weight={null}
+                    >
+                      <p
+                        className=""
+                      >
+                        We do love cats
+                      </p>
+                    </Paragraph>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+              <GridColumn
+                computer={5}
+                mobile={12}
+                tablet={12}
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={5}
+                  mobile={12}
+                  tablet={12}
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Contact Information
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <List
+                      relaxed={true}
+                      size="medium"
+                    >
+                      <div
+                        className="ui medium relaxed list"
+                        role="list"
+                      >
+                        <ListItem>
+                          <div
+                            className="item"
+                            onClick={[Function]}
+                            role="listitem"
+                          >
+                            <span>
+                              Email: 
+                            </span>
+                            <span>
+                              welovecats@lodgify.com
+                            </span>
+                          </div>
+                        </ListItem>
+                      </div>
+                    </List>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</HostProfile>
+`;
+
+exports[`<HostProfile /> if \`props.languages\` is defined should render the right structure 1`] = `
+<HostProfile
+  avatarUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+  contactInformationHeadingText="Contact Information"
+  description="We do love cats"
+  email={null}
+  emailLabel="Email"
+  headingText="Your Host"
+  languages={
+    Array [
+      "English",
+      "Italian",
+      "German",
+      "Spanish",
+    ]
+  }
+  languagesLabel="Languages"
+  name="Mitjons & Kira"
+  phone={null}
+  phoneLabel="Phone"
+>
+  <Grid
+    areColumnsCentered={false}
+    textAlign="left"
+  >
+    <Grid
+      centered={false}
+      textAlign="left"
+    >
+      <div
+        className="ui left aligned grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Your Host
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <ItemGroup
+                      unstackable={true}
+                    >
+                      <div
+                        className="ui unstackable items"
+                      >
+                        <Item>
+                          <div
+                            className="item"
+                          >
+                            <ItemImage
+                              avatar={true}
+                              size="tiny"
+                              src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                            >
+                              <Image
+                                as="img"
+                                avatar={true}
+                                size="tiny"
+                                src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                ui={true}
+                                wrapped={true}
+                              >
+                                <div
+                                  className="ui tiny avatar image"
+                                >
+                                  <img
+                                    src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  />
+                                </div>
+                              </Image>
+                            </ItemImage>
+                            <ItemHeader
+                              as="h4"
+                            >
+                              <h4
+                                className="header"
+                              >
+                                Mitjons & Kira
+                              </h4>
+                            </ItemHeader>
+                          </div>
+                        </Item>
+                      </div>
+                    </ItemGroup>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+          verticalAlign="top"
+        >
+          <GridRow
+            textAlign="left"
+            verticalAlign="top"
+          >
+            <div
+              className="left aligned top aligned row"
+            >
+              <GridColumn
+                computer={7}
+                mobile={12}
+                tablet={12}
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={7}
+                  mobile={12}
+                  tablet={12}
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                  >
+                    <Paragraph
+                      size="medium"
+                      weight={null}
+                    >
+                      <p
+                        className=""
+                      >
+                        We do love cats
+                      </p>
+                    </Paragraph>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+              <GridColumn
+                computer={5}
+                mobile={12}
+                tablet={12}
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={5}
+                  mobile={12}
+                  tablet={12}
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Contact Information
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <List
+                      relaxed={true}
+                      size="medium"
+                    >
+                      <div
+                        className="ui medium relaxed list"
+                        role="list"
+                      >
+                        <ListItem>
+                          <div
+                            className="item"
+                            onClick={[Function]}
+                            role="listitem"
+                          >
+                            <span>
+                              Languages: 
+                            </span>
+                            <span>
+                              English, Italian, German, Spanish
+                            </span>
+                          </div>
+                        </ListItem>
+                      </div>
+                    </List>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</HostProfile>
+`;
+
+exports[`<HostProfile /> if \`props.phone\` is defined should render the right structure 1`] = `
+<HostProfile
+  avatarUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+  contactInformationHeadingText="Contact Information"
+  description="We do love cats"
+  email={null}
+  emailLabel="Email"
+  headingText="Your Host"
+  languages={null}
+  languagesLabel="Languages"
+  name="Mitjons & Kira"
+  phone="+34932206524"
+  phoneLabel="Phone"
+>
+  <Grid
+    areColumnsCentered={false}
+    textAlign="left"
+  >
+    <Grid
+      centered={false}
+      textAlign="left"
+    >
+      <div
+        className="ui left aligned grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Your Host
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <ItemGroup
+                      unstackable={true}
+                    >
+                      <div
+                        className="ui unstackable items"
+                      >
+                        <Item>
+                          <div
+                            className="item"
+                          >
+                            <ItemImage
+                              avatar={true}
+                              size="tiny"
+                              src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                            >
+                              <Image
+                                as="img"
+                                avatar={true}
+                                size="tiny"
+                                src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                ui={true}
+                                wrapped={true}
+                              >
+                                <div
+                                  className="ui tiny avatar image"
+                                >
+                                  <img
+                                    src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  />
+                                </div>
+                              </Image>
+                            </ItemImage>
+                            <ItemHeader
+                              as="h4"
+                            >
+                              <h4
+                                className="header"
+                              >
+                                Mitjons & Kira
+                              </h4>
+                            </ItemHeader>
+                          </div>
+                        </Item>
+                      </div>
+                    </ItemGroup>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+          verticalAlign="top"
+        >
+          <GridRow
+            textAlign="left"
+            verticalAlign="top"
+          >
+            <div
+              className="left aligned top aligned row"
+            >
+              <GridColumn
+                computer={7}
+                mobile={12}
+                tablet={12}
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={7}
+                  mobile={12}
+                  tablet={12}
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                  >
+                    <Paragraph
+                      size="medium"
+                      weight={null}
+                    >
+                      <p
+                        className=""
+                      >
+                        We do love cats
+                      </p>
+                    </Paragraph>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+              <GridColumn
+                computer={5}
+                mobile={12}
+                tablet={12}
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={5}
+                  mobile={12}
+                  tablet={12}
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Contact Information
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <List
+                      relaxed={true}
+                      size="medium"
+                    >
+                      <div
+                        className="ui medium relaxed list"
+                        role="list"
+                      >
+                        <ListItem>
+                          <div
+                            className="item"
+                            onClick={[Function]}
+                            role="listitem"
+                          >
+                            <span>
+                              Phone: 
+                            </span>
+                            <span>
+                              <a
+                                href="tel:+34932206524"
+                              >
+                                +34932206524
+                              </a>
+                            </span>
+                          </div>
+                        </ListItem>
+                      </div>
+                    </List>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</HostProfile>
+`;
+
+exports[`<HostProfile /> should render the right structure 1`] = `
+<HostProfile
+  avatarUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+  contactInformationHeadingText="Contact Information"
+  description="We do love cats"
+  email={null}
+  emailLabel="Email"
+  headingText="Your Host"
+  languages={null}
+  languagesLabel="Languages"
+  name="Mitjons & Kira"
+  phone={null}
+  phoneLabel="Phone"
+>
+  <Grid
+    areColumnsCentered={false}
+    textAlign="left"
+  >
+    <Grid
+      centered={false}
+      textAlign="left"
+    >
+      <div
+        className="ui left aligned grid"
+      >
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Your Host
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+        >
+          <GridRow
+            textAlign="left"
+          >
+            <div
+              className="left aligned row"
+            >
+              <GridColumn
+                verticalAlignContent="top"
+                width={12}
+              >
+                <GridColumn
+                  verticalAlign="top"
+                  width={12}
+                >
+                  <div
+                    className="top aligned twelve wide column"
+                  >
+                    <ItemGroup
+                      unstackable={true}
+                    >
+                      <div
+                        className="ui unstackable items"
+                      >
+                        <Item>
+                          <div
+                            className="item"
+                          >
+                            <ItemImage
+                              avatar={true}
+                              size="tiny"
+                              src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                            >
+                              <Image
+                                as="img"
+                                avatar={true}
+                                size="tiny"
+                                src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                ui={true}
+                                wrapped={true}
+                              >
+                                <div
+                                  className="ui tiny avatar image"
+                                >
+                                  <img
+                                    src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  />
+                                </div>
+                              </Image>
+                            </ItemImage>
+                            <ItemHeader
+                              as="h4"
+                            >
+                              <h4
+                                className="header"
+                              >
+                                Mitjons & Kira
+                              </h4>
+                            </ItemHeader>
+                          </div>
+                        </Item>
+                      </div>
+                    </ItemGroup>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+        <GridRow
+          horizontalAlignContent="left"
+          verticalAlign="top"
+        >
+          <GridRow
+            textAlign="left"
+            verticalAlign="top"
+          >
+            <div
+              className="left aligned top aligned row"
+            >
+              <GridColumn
+                computer={7}
+                mobile={12}
+                tablet={12}
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={7}
+                  mobile={12}
+                  tablet={12}
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                  >
+                    <Paragraph
+                      size="medium"
+                      weight={null}
+                    >
+                      <p
+                        className=""
+                      >
+                        We do love cats
+                      </p>
+                    </Paragraph>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+              <GridColumn
+                computer={5}
+                mobile={12}
+                tablet={12}
+                verticalAlignContent="top"
+                width={null}
+              >
+                <GridColumn
+                  computer={5}
+                  mobile={12}
+                  tablet={12}
+                  verticalAlign="top"
+                  width={null}
+                >
+                  <div
+                    className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                  >
+                    <Heading
+                      isColorInverted={false}
+                      size="small"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h4"
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h4
+                          className="ui header"
+                        >
+                          Contact Information
+                        </h4>
+                      </Header>
+                    </Heading>
+                    <List
+                      relaxed={true}
+                      size="medium"
+                    >
+                      <div
+                        className="ui medium relaxed list"
+                        role="list"
+                      />
+                    </List>
+                  </div>
+                </GridColumn>
+              </GridColumn>
+            </div>
+          </GridRow>
+        </GridRow>
+      </div>
+    </Grid>
+  </Grid>
+</HostProfile>
+`;
