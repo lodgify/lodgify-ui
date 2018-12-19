@@ -1,85 +1,65 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import ReactPlayer from 'react-player';
-import {
-  expectComponentToBe,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
+jest.mock('react-player', () => {
+  const Component = props => <div {...props} />;
 
+  Component.displayName = 'ReactPlayer';
+  return Component;
+});
+jest.mock('./utils/logWarning');
+
+import React from 'react';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+
+import { logWarning } from './utils/logWarning';
 import { Component as Video } from './component';
 
-const getVideo = (props = {}) => shallow(<Video {...props} />);
+const getVideo = props => mount(<Video {...props} />);
 
 describe('<Video />', () => {
-  it('should throw an error if nothing is provided', () => {
-    expect(() => getVideo()).toThrow();
-  });
-
-  it('should render a single `div.video` element', () => {
-    const wrapper = getVideo({ videoSource: '<iframe></iframe>' });
-
-    expectComponentToBe(wrapper, 'div.video');
-  });
-
-  describe('the `Video` component', () => {
-    it('should render a `div.video.is-url` element if an url is provided', () => {
+  describe('if `props.videoSource` is a valid URL', () => {
+    it('should render the right structure', () => {
       const props = { videoSource: 'https://lodgify.com' };
-      const wrapper = getVideo(props);
+      const actual = getVideo(props);
 
-      expectComponentToBe(wrapper, 'div.video.is-url.player-wrapper');
+      expect(actual).toMatchSnapshot();
     });
+  });
 
-    it('should have the right props', () => {
-      const wrapper = getVideo({ videoSource: 'https://lodgify.com' });
-
-      expectComponentToHaveProps(wrapper, {
-        style: expect.any(Object),
-      });
-    });
-
-    it('should render a `div.video.is-html` if an HTML snippet is provided', () => {
+  describe('if `props.videoSource` is valid HTML', () => {
+    it('should render the right structure', () => {
       const props = { videoSource: '<iframe></iframe>' };
-      const wrapper = getVideo(props);
+      const actual = getVideo(props);
 
-      expectComponentToBe(wrapper, 'div.video.is-html.player-wrapper');
-    });
-
-    it('should render a <ReactPlayer> if HTML is provided', () => {
-      const props = { videoSource: 'https://lodgify.com' };
-      const video = getVideo(props);
-
-      expect(video.find(ReactPlayer)).toHaveLength(1);
-    });
-
-    it('should have a <ReactPlayer> with the right props', () => {
-      const props = { videoSource: 'https://lodgify.com' };
-      const video = getVideo(props);
-      const videoProps = video.find(ReactPlayer).props();
-
-      expect(videoProps).toEqual(
-        expect.objectContaining({ url: props.videoSource })
-      );
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('the responsive capabilities', () => {
-    it('should correctly be responsive if the prop is set', () => {
-      const props = [
-        {
-          videoSource: 'https://lodgify.com',
-          isResponsive: true,
-        },
-        {
-          videoSource: '<iframe></iframe>',
-          isResponsive: true,
-        },
-      ];
+  describe('if `props.videoSource` is not a valid URL or valid HTML', () => {
+    const props = { videoSource: undefined };
 
-      props.forEach(({ videoSource, isResponsive }) => {
-        const wrapper = getVideo({ videoSource, isResponsive });
+    it('should call `logWarning` with the right arguments', () => {
+      getVideo(props);
 
-        expect(wrapper.find('.is-responsive')).toHaveLength(1);
-      });
+      expect(logWarning).toHaveBeenCalledWith(null);
     });
+
+    it('should render the right structure', () => {
+      const actual = getVideo(props);
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.isResponsive` is `true`', () => {
+    it('should render the right structure', () => {
+      const props = { isResponsive: true };
+      const actual = getVideo(props);
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  it('should have the right `displayName`', () => {
+    expectComponentToHaveDisplayName(Video, 'Video');
   });
 });
