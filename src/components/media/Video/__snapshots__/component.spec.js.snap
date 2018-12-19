@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Video /> if \`props.isResponsive\` is \`true\` should render the right structure 1`] = `
+<Video
+  height={315}
+  isResponsive={true}
+  videoSource={null}
+  width={560}
+/>
+`;
+
+exports[`<Video /> if \`props.videoSource\` is a valid URL should render the right structure 1`] = `
+<Video
+  height={315}
+  isResponsive={false}
+  videoSource="https://lodgify.com"
+  width={560}
+>
+  <div
+    className="video player-wrapper is-url"
+    style={Object {}}
+  >
+    <ReactPlayer
+      className="react-player"
+      controls={true}
+      url="https://lodgify.com"
+    >
+      <div
+        className="react-player"
+        controls={true}
+        url="https://lodgify.com"
+      />
+    </ReactPlayer>
+  </div>
+</Video>
+`;
+
+exports[`<Video /> if \`props.videoSource\` is not a valid URL or valid HTML should render the right structure 1`] = `
+<Video
+  height={315}
+  isResponsive={false}
+  videoSource={null}
+  width={560}
+/>
+`;
+
+exports[`<Video /> if \`props.videoSource\` is valid HTML should render the right structure 1`] = `
+<Video
+  height={315}
+  isResponsive={false}
+  videoSource="<iframe></iframe>"
+  width={560}
+>
+  <div
+    className="video player-wrapper is-html"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<iframe></iframe>",
+      }
+    }
+    style={Object {}}
+  />
+</Video>
+`;
