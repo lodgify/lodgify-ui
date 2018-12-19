@@ -8,6 +8,7 @@ import getClassNames from 'classnames';
 
 import { getPlayerCss } from './utils/getPlayerCss';
 import { getReactPlayerProps } from './utils/getReactPlayerProps';
+import { logWarning } from './utils/logWarning';
 
 /**
  * The Video widget. It allows the consumer to render videos given a URL or
@@ -47,28 +48,26 @@ export class Component extends PureComponent {
       style: getPlayerCss(isResponsive, width, height),
     };
 
-    // In case a URL is informed
-    if (isValidUrl(videoSource)) {
-      return (
-        <div {...playerWrapperProps}>
-          <ReactPlayer {...getReactPlayerProps(isResponsive, videoSource)} />
-        </div>
-      );
+    switch (true) {
+      case isValidUrl(videoSource):
+        return (
+          <div {...playerWrapperProps}>
+            <ReactPlayer {...getReactPlayerProps(isResponsive, videoSource)} />
+          </div>
+        );
+      case isValidHTML(videoSource):
+        return (
+          <div
+            {...playerWrapperProps}
+            dangerouslySetInnerHTML={{
+              __html: this.state.cleanHTMLString,
+            }}
+          />
+        );
+      default:
+        logWarning(videoSource);
+        return null;
     }
-
-    // Case where it's not an URL -> Expected to be HTML content
-    if (isValidHTML(videoSource)) {
-      return (
-        <div
-          {...playerWrapperProps}
-          dangerouslySetInnerHTML={{
-            __html: this.state.cleanHTMLString,
-          }}
-        />
-      );
-    }
-
-    throw new Error('getVideoContent - wrong videoSource provided');
   }
 }
 
