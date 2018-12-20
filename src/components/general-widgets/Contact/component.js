@@ -33,6 +33,7 @@ export const Component = ({
   captchaInputImage,
   captchaInputLabel,
   commentsInputLabel,
+  dateRangePickerLocaleCode,
   departureDateInputLabel,
   emailInputLabel,
   errorMessage,
@@ -67,6 +68,7 @@ export const Component = ({
     <InputGroup>
       <DateRangePicker
         endDatePlaceholderText={departureDateInputLabel}
+        localeCode={dateRangePickerLocaleCode}
         name="dates"
         startDatePlaceholderText={arrivalDateInputLabel}
         width="eight"
@@ -108,6 +110,7 @@ Component.defaultProps = {
   arrivalDateInputLabel: ARRIVAL,
   captchaInputLabel: SECURITY_CODE,
   commentsInputLabel: COMMENTS,
+  dateRangePickerLocaleCode: undefined,
   departureDateInputLabel: DEPARTURE,
   emailInputLabel: EMAIL,
   errorMessage: '',
@@ -135,6 +138,8 @@ Component.propTypes = {
   captchaInputLabel: PropTypes.string,
   /** The label for the comments input.*/
   commentsInputLabel: PropTypes.string,
+  /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
+  dateRangePickerLocaleCode: PropTypes.string,
   /** The label for the departure date input.*/
   departureDateInputLabel: PropTypes.string,
   /** The label for the email input.*/

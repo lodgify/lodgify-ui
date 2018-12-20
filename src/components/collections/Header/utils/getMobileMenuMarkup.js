@@ -35,6 +35,7 @@ export const getMobileMenuMarkup = ({
   logoSrcSet,
   logoText,
   navigationItems,
+  searchBarDateRangePickerLocaleCode,
   searchBarGetIsDayBlocked,
   searchBarGuestsOptions,
   searchBarLocationOptions,
@@ -48,6 +49,7 @@ export const getMobileMenuMarkup = ({
     {hasSearchBarOptions(searchBarGuestsOptions, searchBarLocationOptions) && (
       <Menu.Item>
         <SearchBar
+          dateRangePickerLocaleCode={searchBarDateRangePickerLocaleCode}
           getIsDayBlocked={searchBarGetIsDayBlocked}
           guestsOptions={searchBarGuestsOptions}
           isDisplayedAsModal

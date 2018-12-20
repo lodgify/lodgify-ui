@@ -50,6 +50,18 @@ describe('<Availability />', () => {
     });
   });
 
+  describe('on mount', () => {
+    it('should set the correct `moment.locale`', () => {
+      const localeCode = 'ko';
+      const dateRangePicker = getWrappedAvailability({ localeCode });
+
+      dateRangePicker.instance().componentDidMount();
+      const actual = moment.locale();
+
+      expect(actual).toEqual(localeCode);
+    });
+  });
+
   describe('if `size(props.roomOptionsWithImages) > 0`', () => {
     it('should render the right structure', () => {
       const actual = getAvailability({ roomOptionsWithImages });

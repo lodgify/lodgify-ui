@@ -9,6 +9,7 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
 
 /**
  * @param  {Object}   props
+ * @param  {string}   props.dateRangePickerLocaleCode
  * @param  {boolean}  props.isShowingSummary
  * @param  {Function} props.getIsDayBlocked
  * @param  {Object[]} props.locationOptions
@@ -21,6 +22,7 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
  */
 export const getFormFieldMarkup = (
   {
+    dateRangePickerLocaleCode,
     isShowingSummary,
     getIsDayBlocked,
     locationOptions,
@@ -62,6 +64,7 @@ export const getFormFieldMarkup = (
         <DateRangePicker
           endDatePlaceholderText="Check-out"
           getIsDayBlocked={getIsDayBlocked}
+          localeCode={dateRangePickerLocaleCode}
           name="dates"
           onChange={onDatePickerChange}
           startDatePlaceholderText="Check-in"

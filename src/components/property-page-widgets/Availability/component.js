@@ -15,6 +15,14 @@ import { Heading } from 'typography/Heading';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 import { withResponsive } from 'utils/with-responsive';
+import {
+  AVAILABILITY,
+  NEXT,
+  PREVIOUS,
+  PROPERTIES,
+  UNAVAILABLE,
+  VIEW_AVAILABILITY_FOR,
+} from 'utils/default-strings';
 
 import { BLOCKED_DAY_CLASS } from './constants';
 import { isDayBlockedOrBeforeCurrentDate } from './utils/isDayBlockedOrBeforeCurrentDate';
@@ -33,6 +41,8 @@ class Component extends PureComponent {
   state = {
     startDate: moment(),
   };
+
+  componentDidMount = () => moment.locale(this.props.localeCode);
 
   handleClickNextMonth = () =>
     this.setState({
@@ -69,11 +79,20 @@ class Component extends PureComponent {
 
   render() {
     const { startDate } = this.state;
-    const { isUserOnMobile, roomOptionsWithImages } = this.props;
+    const {
+      headingText,
+      isUserOnMobile,
+      legendLabel,
+      nextMonthsButtonLabel,
+      previousMonthsButtonLabel,
+      propertyDropdownLabel,
+      propertyDropdownPlaceholderLabel,
+      roomOptionsWithImages,
+    } = this.props;
 
     return (
       <div>
-        <Heading size="small">Availability</Heading>
+        <Heading size="small">{headingText}</Heading>
         <Grid>
           <GridRow>
             {size(roomOptionsWithImages) > 0 && (
@@ -91,13 +110,13 @@ class Component extends PureComponent {
                     verticalAlignContent="middle"
                   >
                     <Paragraph size="tiny" weight="heavy">
-                      View Availability For:
+                      {propertyDropdownLabel}
                     </Paragraph>
                   </GridColumn>
                   <GridColumn computer={7} mobile={7} tablet={12}>
                     <Dropdown
                       icon={ICON_NAMES.MAP_PIN}
-                      label="Properties"
+                      label={propertyDropdownPlaceholderLabel}
                       onChange={this.reloadCalendarOnRoomSelection}
                       options={roomOptionsWithImages}
                     />
@@ -115,7 +134,7 @@ class Component extends PureComponent {
               <Icon
                 color="light grey"
                 isLabelLeft
-                labelText="Unavailable"
+                labelText={legendLabel}
                 name={ICON_NAMES.SQUARE}
               />
             </GridColumn>
@@ -146,7 +165,7 @@ class Component extends PureComponent {
             <GridRow>
               <GridColumn width={6}>
                 <Icon
-                  labelText="Previous"
+                  labelText={previousMonthsButtonLabel}
                   name={ICON_NAMES.ARROW_LEFT}
                   onClick={this.handleClickPreviousMonth}
                 />
@@ -154,7 +173,7 @@ class Component extends PureComponent {
               <GridColumn textAlign="right" width={6}>
                 <Icon
                   isLabelLeft
-                  labelText="Next"
+                  labelText={nextMonthsButtonLabel}
                   name={ICON_NAMES.ARROW_RIGHT}
                   onClick={this.handleClickNextMonth}
                 />
@@ -168,7 +187,7 @@ class Component extends PureComponent {
               <Icon
                 color="light grey"
                 isLabelLeft
-                labelText="Unavailable"
+                labelText={legendLabel}
                 name={ICON_NAMES.SQUARE}
               />
             </GridColumn>
@@ -185,7 +204,14 @@ Component.displayName = 'Availability';
 
 Component.defaultProps = {
   getIsDayBlocked: () => false,
+  headingText: AVAILABILITY,
+  legendLabel: UNAVAILABLE,
+  localeCode: 'en',
+  nextMonthsButtonLabel: NEXT,
   onChangeRoomDropdown: Function.prototype,
+  previousMonthsButtonLabel: PREVIOUS,
+  propertyDropdownLabel: VIEW_AVAILABILITY_FOR,
+  propertyDropdownPlaceholderLabel: PROPERTIES,
   roomOptionsWithImages: [],
 };
 
@@ -196,18 +222,32 @@ Component.propTypes = {
    * @returns{boolean}
    */
   getIsDayBlocked: PropTypes.func,
+  /** The text to display as a heading at the top of the widget. */
+  headingText: PropTypes.string,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.
    * @ignore
    */
   isUserOnMobile: PropTypes.bool.isRequired,
+  /** The label for the legend. */
+  legendLabel: PropTypes.string,
+  /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year. */
+  localeCode: PropTypes.string,
+  /** The label for the next months button. */
+  nextMonthsButtonLabel: PropTypes.string,
   /**
    * A function that triggered when a room is changed in the room dropdown
    * @param {Event} event
    * @param {String} currentRoomValue
    */
   onChangeRoomDropdown: PropTypes.func,
+  /** The label for the previous months button. */
+  previousMonthsButtonLabel: PropTypes.string,
+  /** The label that goes next to the property dropdown. */
+  propertyDropdownLabel: PropTypes.string,
+  /** The label that goes inside the dropdown when there are no options. */
+  propertyDropdownPlaceholderLabel: PropTypes.string,
   /** The options which the user can select for the room field. */
   roomOptionsWithImages: PropTypes.PropTypes.arrayOf(
     PropTypes.shape({

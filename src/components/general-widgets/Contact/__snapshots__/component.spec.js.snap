@@ -369,6 +369,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               isValid={false}
+                              localeCode="en"
                               name="dates"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -3167,6 +3168,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               isValid={false}
+                              localeCode="en"
                               name="dates"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -5450,6 +5452,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               isValid={false}
+                              localeCode="en"
                               name="dates"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -8011,6 +8014,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               isValid={false}
+                              localeCode="en"
                               name="dates"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -10516,6 +10520,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               isValid={false}
+                              localeCode="en"
                               name="dates"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -12780,6 +12785,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               isValid={false}
+                              localeCode="en"
                               name="dates"
                               onBlur={[Function]}
                               onChange={[Function]}

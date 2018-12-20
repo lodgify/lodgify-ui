@@ -25,3 +25,19 @@ const isDayBlocked = (moment) => moment.format('dddd') === 'Friday' && state.cur
   onChangeRoomDropdown={(evt, currentRoomValue) => state.currentRoomSelection = currentRoomValue}
 />
 ```
+
+### Content
+
+#### Strings
+
+```jsx
+<Availability
+  roomOptionsWithImages={[{}]}
+  headingText="Unavailability"
+  legendLabel="Available"
+  nextMonthsButtonLabel="Next months"
+  previousMonthsButtonLabel="Previous months"
+  propertyDropdownLabel="Houses"
+  propertyDropdownPlaceholderLabel="View different house"
+/>
+```
