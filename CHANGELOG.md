@@ -1,3 +1,10 @@
+## [1.101.1](https://github.com/lodgify/lodgify-ui/compare/v1.101.0...v1.101.1) (2018-12-20)
+
+
+### Bug Fixes
+
+* **Video:** handle props.videoSource failure case gracefully ([0c79382](https://github.com/lodgify/lodgify-ui/commit/0c79382))
+
 # [1.101.0](https://github.com/lodgify/lodgify-ui/compare/v1.100.1...v1.101.0) (2018-12-20)
 
 
