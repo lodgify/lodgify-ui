@@ -2,9 +2,7 @@
 
 exports[`<Pictures /> should render the correct structure 1`] = `
 <Pictures
-  headingText="Property pictures"
-  linkText="Explore all pictures"
-  pictures={
+  galleryImages={
     Array [
       Object {
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
@@ -33,8 +31,39 @@ exports[`<Pictures /> should render the correct structure 1`] = `
       },
     ]
   }
+  headingText="Property pictures"
+  linkText="Explore all pictures"
   propertyName={null}
   ratingNumber={null}
+  thumbnailImages={
+    Array [
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Entrance",
+        "label": "Entrance",
+      },
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Kitchen",
+        "label": "Kitchen",
+      },
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Living room",
+        "label": "Living room",
+      },
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Studio",
+        "label": "Studio",
+      },
+      Object {
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
+        "imageUrlAlternativeText": "Garden room",
+        "label": "Garden room",
+      },
+    ]
+  }
 >
   <Grid
     areColumnsCentered={false}
