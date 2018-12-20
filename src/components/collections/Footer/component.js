@@ -8,6 +8,7 @@ import { Submenu } from 'elements/Submenu';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Divider } from 'elements/Divider';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
+import { getHrefTelString } from 'utils/get-href-tel-string';
 
 import { getAreNavigationItemsGrouped } from './utils/getAreNavigationItemsGrouped';
 import { getGroupedNavigationItems } from './utils/getGroupedNavigationItems';
@@ -72,7 +73,9 @@ export const Component = ({
         </Menu.Item>
         {!!phoneNumber && (
           <Menu.Item className="is-selectable">
-            <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
+            <a href={getHrefTelString(phoneNumber)}>
+              <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
+            </a>
           </Menu.Item>
         )}
         {size(socialMediaLinks) > 0 && (
