@@ -1,7 +1,10 @@
 ```jsx
-const { pictures } = require('./mock-data/pictures');
+const { images } = require('./mock-data/images');
 
-<Pictures pictures={pictures} />
+<Pictures
+  galleryImages={images}
+  thumbnailImages={images}
+/>
 ```
 
 ### Content
@@ -9,12 +12,13 @@ const { pictures } = require('./mock-data/pictures');
 #### Heading in gallery modal
 
 ```jsx
-const { pictures } = require('./mock-data/pictures');
+const { images } = require('./mock-data/images');
 
 <Pictures
-  pictures={pictures}
+  galleryImages={images}
   propertyName="The Cat House"
   ratingNumber={4.3}
+  thumbnailImages={images}
 />
 ```
 
@@ -22,11 +26,12 @@ const { pictures } = require('./mock-data/pictures');
 #### Strings
 
 ```jsx
-const { pictures } = require('./mock-data/pictures');
+const { images } = require('./mock-data/images');
 
 <Pictures
-  pictures={pictures}
+  galleryImages={images}
   headingText="Photos of the property"
   linkText="Click here for more"
+  thumbnailImages={images}
 />
 ```
