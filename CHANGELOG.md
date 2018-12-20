@@ -1,3 +1,12 @@
+# [1.101.0](https://github.com/lodgify/lodgify-ui/compare/v1.100.1...v1.101.0) (2018-12-20)
+
+
+### Features
+
+* **Footer:** wrap phone number with anchor tag ([c9787b3](https://github.com/lodgify/lodgify-ui/commit/c9787b3))
+* **getHrefTelString:** expose util ([9035fb0](https://github.com/lodgify/lodgify-ui/commit/9035fb0))
+* **HostProfile:** wrap phone number with anchor tag ([dd2ff7a](https://github.com/lodgify/lodgify-ui/commit/dd2ff7a))
+
 ## [1.100.1](https://github.com/lodgify/lodgify-ui/compare/v1.100.0...v1.100.1) (2018-12-19)
 
 

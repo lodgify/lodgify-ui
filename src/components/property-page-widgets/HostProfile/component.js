@@ -14,6 +14,7 @@ import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
+import { getHrefTelString } from 'utils/get-href-tel-string';
 
 import { getStringWithColonSuffix } from './utils/getStringWithColonSuffix';
 
@@ -66,7 +67,9 @@ export const Component = ({
           {!!phone && (
             <List.Item>
               <span>{getStringWithColonSuffix(phoneLabel)}</span>
-              <span>{phone}</span>
+              <span>
+                <a href={getHrefTelString(phone)}>{phone}</a>
+              </span>
             </List.Item>
           )}
           {!!languages && (
