@@ -20,18 +20,19 @@ import { Link } from 'elements/Link';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  galleryImages,
   headingText,
   linkText,
-  pictures,
   propertyName,
   ratingNumber,
+  thumbnailImages,
 }) => (
   <Grid columns={3}>
     <GridColumn width={12}>
       <Heading>{headingText}</Heading>
     </GridColumn>
     <GridRow>
-      {getFirstSixItems(pictures).map(
+      {getFirstSixItems(thumbnailImages).map(
         ({ imageUrl, imageSizes, imageSrcSet, label }, index) => (
           <GridColumn key={buildKeyFromStrings(imageUrl, index)}>
             <ShowOn computer parent="div" tablet widescreen>
@@ -62,7 +63,7 @@ export const Component = ({
     <GridColumn width={12}>
       <Gallery
         heading={getGalleryHeadingMarkup(propertyName, ratingNumber)}
-        images={pictures}
+        images={galleryImages}
         trigger={<Link>{linkText}</Link>}
       />
     </GridColumn>
@@ -79,14 +80,16 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** The images to display in the gallery modal. See [the `ResponsiveImage` component for valid props](#/Media/ResponsiveImage).  */
+  galleryImages: PropTypes.arrayOf(PropTypes.object).isRequired,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
   /** The text to display on the link at the bottom of the widget. */
   linkText: PropTypes.string,
-  /** The pictures to display. See [the `ResponsiveImage` component for valid props](#/Media/ResponsiveImage).  */
-  pictures: PropTypes.arrayOf(PropTypes.object).isRequired,
   /** The name of the property to display in the gallery modal. */
   propertyName: PropTypes.string,
   /** The numeral rating for the property, out of 5 */
   ratingNumber: PropTypes.number,
+  /** The images to display as thumbnails. See [the `ResponsiveImage` component for valid props](#/Media/ResponsiveImage).  */
+  thumbnailImages: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
