@@ -6,8 +6,6 @@ import { Container } from 'semantic-ui-react';
  * horizontal gutters on the left and right.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ textAlign, ...props }) => (
-  <Container {...props} textAlign={textAlign} />
-);
+export const Component = props => <Container {...props} />;
 
 Component.displayName = 'HorizontalGutters';
