@@ -1,3 +1,10 @@
+## [1.101.2](https://github.com/lodgify/lodgify-ui/compare/v1.101.1...v1.101.2) (2019-01-07)
+
+
+### Bug Fixes
+
+* **HorizontalGutters:** remove orphan textAlign prop ([d490e83](https://github.com/lodgify/lodgify-ui/commit/d490e83))
+
 ## [1.101.1](https://github.com/lodgify/lodgify-ui/compare/v1.101.0...v1.101.1) (2018-12-20)
 
 
