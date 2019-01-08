@@ -3,12 +3,12 @@ import { mount } from 'enzyme';
 
 import { navigationItems } from '../mock-data/navigationItems';
 
-import { getDesktopMenuMarkup } from './getDesktopMenuMarkup';
+import { getStandardMenuMarkup } from './getStandardMenuMarkup';
 
 const getMarkupAsRenderedComponent = extraProps =>
   mount(
     <div>
-      {getDesktopMenuMarkup({
+      {getStandardMenuMarkup({
         activeNavigationItemIndex: 1,
         navigationItems,
         ...extraProps,
@@ -16,7 +16,7 @@ const getMarkupAsRenderedComponent = extraProps =>
     </div>
   );
 
-describe('getDesktopMenuMarkup', () => {
+describe('getStandardMenuMarkup', () => {
   describe('by default', () => {
     it('should render the right structure', () => {
       const actual = getMarkupAsRenderedComponent();
