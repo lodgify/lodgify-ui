@@ -1,3 +1,10 @@
+# [1.102.0](https://github.com/lodgify/lodgify-ui/compare/v1.101.2...v1.102.0) (2019-01-08)
+
+
+### Features
+
+* **Submenu:** add props.scrolling ([e50b4ac](https://github.com/lodgify/lodgify-ui/commit/e50b4ac))
+
 ## [1.101.2](https://github.com/lodgify/lodgify-ui/compare/v1.101.1...v1.101.2) (2019-01-07)
 
 
