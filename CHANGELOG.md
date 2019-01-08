@@ -1,3 +1,10 @@
+## [1.103.1](https://github.com/lodgify/lodgify-ui/compare/v1.103.0...v1.103.1) (2019-01-08)
+
+
+### Bug Fixes
+
+* **DateRangePicker:** allow for valid icon in input with calculation ([98a9a5c](https://github.com/lodgify/lodgify-ui/commit/98a9a5c))
+
 # [1.103.0](https://github.com/lodgify/lodgify-ui/compare/v1.102.0...v1.103.0) (2019-01-08)
 
 
