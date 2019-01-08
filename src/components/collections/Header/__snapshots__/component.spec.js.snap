@@ -435,6 +435,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       }
                       pointing="top right"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -446,7 +447,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                     >
                       <div
                         aria-expanded={false}
-                        className="ui item simple top right pointing dropdown"
+                        className="ui item simple scrolling top right pointing dropdown"
                         name={null}
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -1076,6 +1077,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       }
                       pointing="top right"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -1087,7 +1089,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                     >
                       <div
                         aria-expanded={false}
-                        className="ui item simple top right pointing dropdown"
+                        className="ui item simple scrolling top right pointing dropdown"
                         name={null}
                         onBlur={[Function]}
                         onChange={[Function]}
