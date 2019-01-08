@@ -11,13 +11,13 @@ import { getSubmenuPointing } from './getSubmenuPointing';
 import { getLinkMarkup } from './getLinkMarkup';
 
 /**
- * @param  {Object} props
- * @param  {number} props.activeNavigationItemIndex
+ * @param  {Object}   props
+ * @param  {number}   props.activeNavigationItemIndex
  * @param  {Object[]} props.navigationItems
- * @param  {Object} props.primaryCTA
+ * @param  {Object}   props.primaryCTA
  * @return {Object}
  */
-export const getDesktopMenuMarkup = ({
+export const getStandardMenuMarkup = ({
   /* eslint-disable react/prop-types */
   activeNavigationItemIndex,
   navigationItems,
@@ -31,27 +31,26 @@ export const getDesktopMenuMarkup = ({
     tablet
     widescreen
   >
-    {navigationItems.map(
-      ({ subItems, text, href }, index) =>
-        size(subItems) > 0 ? (
-          <Submenu
-            isMenuItem
-            isSimple
-            isTriggerUnderlined={index === activeNavigationItemIndex}
-            isTriggeredOnHover
-            items={subItems}
-            key={buildKeyFromStrings(text, index)}
-            pointing={getSubmenuPointing(
-              index,
-              size(navigationItems),
-              !!primaryCTA
-            )}
-          >
-            {text}
-          </Submenu>
-        ) : (
-          getLinkMarkup(text, href, index, activeNavigationItemIndex)
-        )
+    {navigationItems.map(({ subItems, text, href }, index) =>
+      size(subItems) > 0 ? (
+        <Submenu
+          isMenuItem
+          isSimple
+          isTriggerUnderlined={index === activeNavigationItemIndex}
+          isTriggeredOnHover
+          items={subItems}
+          key={buildKeyFromStrings(text, index)}
+          pointing={getSubmenuPointing(
+            index,
+            size(navigationItems),
+            !!primaryCTA
+          )}
+        >
+          {text}
+        </Submenu>
+      ) : (
+        getLinkMarkup(text, href, index, activeNavigationItemIndex)
+      )
     )}
     {primaryCTA && (
       <Menu.Item className="no-underline" link>

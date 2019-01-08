@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`getMobileMenuMarkup by default should render the right structure 1`] = `
+exports[`getHiddenMenuMarkup by default should render the right structure 1`] = `
 <ShowOn
   computer={false}
   mobile={true}
@@ -133,6 +133,20 @@ exports[`getMobileMenuMarkup by default should render the right structure 1`] = 
                       ]
                     }
                   />
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    link={true}
+                  >
+                    Contact Us
+                  </MenuItem>
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    link={true}
+                  >
+                    What to do
+                  </MenuItem>
                 </Menu>
               }
               dimmer="inverted"
@@ -232,7 +246,7 @@ exports[`getMobileMenuMarkup by default should render the right structure 1`] = 
 </ShowOn>
 `;
 
-exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.searchBarLocationOptions\` are defined and populated should render the right structure 1`] = `
+exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.searchBarLocationOptions\` are defined and populated should render the right structure 1`] = `
 <ShowOn
   computer={false}
   mobile={true}
@@ -625,6 +639,20 @@ exports[`getMobileMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                       ]
                     }
                   />
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    link={true}
+                  >
+                    Contact Us
+                  </MenuItem>
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    link={true}
+                  >
+                    What to do
+                  </MenuItem>
                 </Menu>
               }
               dimmer="inverted"

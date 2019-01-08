@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 import { Menu } from 'semantic-ui-react';
@@ -6,9 +6,9 @@ import { Menu } from 'semantic-ui-react';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { getLogoMarkup } from './utils/getLogoMarkup';
-import { getMobileMenuMarkup } from './utils/getMobileMenuMarkup';
-import { getDesktopMenuMarkup } from './utils/getDesktopMenuMarkup';
-
+import { getHiddenMenuMarkup } from './utils/getHiddenMenuMarkup';
+import { getStandardMenuMarkup } from './utils/getStandardMenuMarkup';
+import { areNavigationItemsExceedingHeaderMaxWidth } from './utils/areNavigationItemsExceedingHeaderMaxWidth';
 /**
  * A header displays a logo, grouped navigation items
  * and an optional primary call to action.
@@ -27,8 +27,17 @@ export const Component = props => (
         props.logoSizes,
         props.logoSrcSet
       )}
-      {getMobileMenuMarkup(props)}
-      {getDesktopMenuMarkup(props)}
+      {areNavigationItemsExceedingHeaderMaxWidth(
+        props.navigationItems,
+        props.primaryCTA
+      ) ? (
+        getHiddenMenuMarkup(props, true)
+      ) : (
+        <Fragment>
+          {getHiddenMenuMarkup(props, false)}
+          {getStandardMenuMarkup(props)}
+        </Fragment>
+      )}
     </HorizontalGutters>
   </header>
 );

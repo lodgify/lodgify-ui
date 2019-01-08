@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 
 import { navigationItems } from '../mock-data/navigationItems';
 
-import { getMobileMenuMarkup } from './getMobileMenuMarkup';
+import { getHiddenMenuMarkup } from './getHiddenMenuMarkup';
 
 const logoSizes = 'someLogoSizes';
 const logoSrc = 'someLogoSrc';
@@ -20,7 +20,7 @@ const searchBarSearchButton = 'button boy';
 const getMarkupAsRenderedComponent = extraProps =>
   mount(
     <div>
-      {getMobileMenuMarkup({
+      {getHiddenMenuMarkup({
         dateRangePickerLocaleCode: 'ko',
         activeNavigationItemIndex: 0,
         searchBarGetIsDayBlocked,
@@ -40,7 +40,7 @@ const getMarkupAsRenderedComponent = extraProps =>
     .children()
     .first();
 
-describe('getMobileMenuMarkup', () => {
+describe('getHiddenMenuMarkup', () => {
   describe('by default', () => {
     it('should render the right structure', () => {
       const actual = getMarkupAsRenderedComponent();
