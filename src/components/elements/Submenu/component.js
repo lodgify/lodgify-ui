@@ -31,6 +31,7 @@ export const Component = ({
     onChange={adaptOnChange(onChange, name)}
     options={adaptOptions(items)}
     pointing={pointing}
+    scrolling
     simple={isTriggeredOnHover}
     trigger={children}
     upward={willOpenAbove}
