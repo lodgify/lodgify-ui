@@ -120,6 +120,7 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
             }
             pointing="top right"
             renderLabel={[Function]}
+            scrolling={true}
             searchInput="text"
             selectOnBlur={true}
             selectOnNavigation={true}
@@ -131,7 +132,7 @@ exports[`getDesktopMenuMarkup by default should render the right structure 1`] =
           >
             <div
               aria-expanded={false}
-              className="ui item simple top right pointing dropdown underlined"
+              className="ui item simple scrolling top right pointing dropdown underlined"
               name={null}
               onBlur={[Function]}
               onChange={[Function]}
@@ -441,6 +442,7 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
             }
             pointing="top left"
             renderLabel={[Function]}
+            scrolling={true}
             searchInput="text"
             selectOnBlur={true}
             selectOnNavigation={true}
@@ -452,7 +454,7 @@ exports[`getDesktopMenuMarkup if \`props.primaryCTA\` is passed should render th
           >
             <div
               aria-expanded={false}
-              className="ui item simple top left pointing dropdown underlined"
+              className="ui item simple scrolling top left pointing dropdown underlined"
               name={null}
               onBlur={[Function]}
               onChange={[Function]}
