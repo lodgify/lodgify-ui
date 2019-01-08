@@ -6,7 +6,6 @@ import {
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
 import { Component as Submenu } from './component';
@@ -41,6 +40,7 @@ describe('<Submenu />', () => {
         className: '',
         options: expect.arrayContaining([expect.any(Object)]),
         pointing: 'top left',
+        scrolling: true,
         trigger: children,
         upward: false,
         value: null,
