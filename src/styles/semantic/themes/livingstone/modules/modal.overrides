@@ -87,6 +87,12 @@
     @media only screen and (min-width: @tabletBreakpoint) and (max-width: @horizontalGutterMaxWidth) {
       right: @withHorizontalCloseIconRight;
     }
+
+    > svg {
+      background: @closeBackgroundColor;
+      border-radius: @closeBorderRadius;
+      box-shadow: @closeBoxShadow;
+    }
   }
 }
 
