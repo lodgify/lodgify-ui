@@ -2036,15 +2036,15 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                       <div
                         className="four wide field"
                       >
-                        <TextInput
+                        <NumberInput
                           autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
+                          min={1}
                           name="guests"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          type="number"
                           width="four"
                         >
                           <InputController
@@ -2069,6 +2069,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 <input
                                   autoComplete={null}
                                   key=".2"
+                                  min={1}
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -2083,7 +2084,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               </div>
                             </Input>
                           </InputController>
-                        </TextInput>
+                        </NumberInput>
                       </div>
                     </FormField>
                   </div>
@@ -4835,15 +4836,15 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                       <div
                         className="four wide field"
                       >
-                        <TextInput
+                        <NumberInput
                           autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
+                          min={1}
                           name="guests"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          type="number"
                           width="four"
                         >
                           <InputController
@@ -4868,6 +4869,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                                 <input
                                   autoComplete={null}
                                   key=".2"
+                                  min={1}
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -4882,7 +4884,7 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
                               </div>
                             </Input>
                           </InputController>
-                        </TextInput>
+                        </NumberInput>
                       </div>
                     </FormField>
                   </div>
@@ -7119,15 +7121,15 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                       <div
                         className="four wide field"
                       >
-                        <TextInput
+                        <NumberInput
                           autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
+                          min={1}
                           name="guests"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          type="number"
                           width="four"
                         >
                           <InputController
@@ -7152,6 +7154,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 <input
                                   autoComplete={null}
                                   key=".2"
+                                  min={1}
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -7166,7 +7169,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               </div>
                             </Input>
                           </InputController>
-                        </TextInput>
+                        </NumberInput>
                       </div>
                     </FormField>
                   </div>
@@ -9681,15 +9684,15 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                       <div
                         className="four wide field"
                       >
-                        <TextInput
+                        <NumberInput
                           autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
+                          min={1}
                           name="guests"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          type="number"
                           width="four"
                         >
                           <InputController
@@ -9714,6 +9717,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 <input
                                   autoComplete={null}
                                   key=".2"
+                                  min={1}
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -9728,7 +9732,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               </div>
                             </Input>
                           </InputController>
-                        </TextInput>
+                        </NumberInput>
                       </div>
                     </FormField>
                   </div>
@@ -12187,15 +12191,15 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                       <div
                         className="four wide field"
                       >
-                        <TextInput
+                        <NumberInput
                           autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
+                          min={1}
                           name="guests"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          type="number"
                           width="four"
                         >
                           <InputController
@@ -12220,6 +12224,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                                 <input
                                   autoComplete={null}
                                   key=".2"
+                                  min={1}
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -12234,7 +12239,7 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
                               </div>
                             </Input>
                           </InputController>
-                        </TextInput>
+                        </NumberInput>
                       </div>
                     </FormField>
                   </div>
@@ -14452,15 +14457,15 @@ exports[`<Contact /> should have the correct structure 1`] = `
                       <div
                         className="four wide field"
                       >
-                        <TextInput
+                        <NumberInput
                           autoComplete={null}
                           error={false}
                           isValid={false}
                           label="Guests"
+                          min={1}
                           name="guests"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          type="number"
                           width="four"
                         >
                           <InputController
@@ -14485,6 +14490,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 <input
                                   autoComplete={null}
                                   key=".2"
+                                  min={1}
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -14499,7 +14505,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               </div>
                             </Input>
                           </InputController>
-                        </TextInput>
+                        </NumberInput>
                       </div>
                     </FormField>
                   </div>

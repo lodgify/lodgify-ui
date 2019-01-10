@@ -5,6 +5,7 @@ import { Form } from 'collections/Form';
 import { InputGroup } from 'collections/InputGroup';
 import { TextInput } from 'inputs/TextInput';
 import { PhoneInput } from 'inputs/PhoneInput';
+import { NumberInput } from 'inputs/NumberInput';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { TextArea } from 'inputs/TextArea';
 import { CaptchaInput } from 'inputs/CaptchaInput';
@@ -73,10 +74,10 @@ export const Component = ({
         startDatePlaceholderText={arrivalDateInputLabel}
         width="eight"
       />
-      <TextInput
+      <NumberInput
         label={guestsInputLabel}
+        min={1}
         name="guests"
-        type="number"
         width="four"
       />
     </InputGroup>
