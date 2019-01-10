@@ -1,8 +1,9 @@
 import moment from 'moment';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { isEqual, uniqueId } from 'lodash';
+import { isEqual, uniqueId, debounce } from 'lodash';
 import { DateRangePicker } from 'react-dates';
+
 import 'react-dates/initialize';
 
 import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
@@ -11,6 +12,8 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
 import { isBlurEvent } from 'utils/is-blur-event';
 import { returnFirstArgument } from 'utils/return-first-argument';
+import { getWindowHeight } from 'utils/get-window-height';
+import { isDisplayedAsModal } from 'utils/is-displayed-as-modal';
 
 import { pickDatesFromState } from './utils/pickDatesFromState';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
@@ -24,10 +27,14 @@ class Component extends PureComponent {
   state = {
     endDate: null,
     focusedInput: null,
+    windowHeight: getWindowHeight(),
     startDate: null,
   };
 
-  componentDidMount = () => moment.locale(this.props.localeCode);
+  componentDidMount = () => {
+    moment.locale(this.props.localeCode);
+    global.addEventListener('resize', debounce(this.handleHeightChange, 150));
+  };
 
   componentDidUpdate = (prevProps, prevState) => {
     const prevDates = pickDatesFromState(prevState);
@@ -46,6 +53,16 @@ class Component extends PureComponent {
 
   handleInputControllerChange = (name, value) => {
     this.setState(value);
+  };
+
+  handleHeightChange = () => {
+    const windowHeight = getWindowHeight();
+
+    if (windowHeight !== this.state.windowHeight) {
+      this.setState({
+        windowHeight,
+      });
+    }
   };
 
   render() {
@@ -98,6 +115,7 @@ class Component extends PureComponent {
           navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
           navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
           numberOfMonths={getNumberOfMonths(windowInnerWidth)}
+          withPortal={isDisplayedAsModal(this.state.windowHeight)}
           /* eslint-enable react/jsx-sort-props */
         />
       </InputController>
