@@ -24,6 +24,17 @@ describe('<SingleDatePicker />', () => {
     expectComponentToBe(wrapper, InputController);
   });
 
+  it('should bind handleHeightChange to global resize event after the component is mounted', () => {
+    global.addEventListener = jest.fn();
+    const wrapper = getSingleDatePicker();
+
+    wrapper.instance().componentDidMount();
+    expect(global.addEventListener).toHaveBeenCalledWith(
+      'resize',
+      wrapper.instance().handleHeightChange
+    );
+  });
+
   describe('the `InputController` component', () => {
     it('should get the right props', () => {
       const wrapper = getSingleDatePicker();

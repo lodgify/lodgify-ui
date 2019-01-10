@@ -9,6 +9,8 @@ import { isBlurEvent } from 'utils/is-blur-event';
 import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
+import { getWindowHeight } from 'utils/get-window-height';
+import { isDisplayedAsModal } from 'utils/is-displayed-as-modal';
 
 /**
  * A single date picker lets a user pick a date.
@@ -18,6 +20,11 @@ export class Component extends PureComponent {
   state = {
     date: null,
     isFocused: null,
+    windowHeight: getWindowHeight(),
+  };
+
+  componentDidMount = () => {
+    global.addEventListener('resize', this.handleHeightChange);
   };
 
   componentDidUpdate = (prevProps, prevState) => {
@@ -35,6 +42,14 @@ export class Component extends PureComponent {
 
   handleInputControllerChange = (name, date) => {
     this.setState({ date });
+  };
+
+  handleHeightChange = () => {
+    if (getWindowHeight() !== this.state.windowHeight) {
+      this.setState({
+        windowHeight: window.innerHeight,
+      });
+    }
   };
 
   render = () => {
@@ -79,6 +94,7 @@ export class Component extends PureComponent {
           navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
           navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
           numberOfMonths={1}
+          withPortal={isDisplayedAsModal(this.state.windowHeight)}
           /* eslint-enable react/jsx-sort-props */
         />
       </InputController>
