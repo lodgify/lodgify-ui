@@ -40,6 +40,17 @@ describe('<DateRangePicker />', () => {
 
       expect(actual).toEqual(localeCode);
     });
+
+    it('should bind handleHeightChange to global resize event after the component is mounted', () => {
+      global.addEventListener = jest.fn();
+      const wrapper = getWrappedDateRangePicker();
+
+      wrapper.instance().componentDidMount();
+      expect(global.addEventListener).toHaveBeenCalledWith(
+        'resize',
+        wrapper.instance().handleHeightChange
+      );
+    });
   });
 
   describe('the wrapped `DateRangePicker` component', () => {
