@@ -10,6 +10,38 @@
 /*******************************
             Datepicker
 *******************************/
+
+/* 
+  Portal date picker 
+*/
+.DateRangePicker_picker__portal {
+  z-index: @pickerZIndex;
+}
+
+.DayPicker_portal__horizontal .DayPickerNavigation__horizontal {
+
+  .DayPickerNavigation_button:first-child {
+    left: @pickerButtonFirstLeft;
+    position: absolute;
+    top: @pickerButtonTop;
+    line-height: @pickerButtonLineHeight;
+    border-radius: @pickerButtonBorderRadius;
+    padding: @pickerButtonPadding;
+  }
+
+  .DayPickerNavigation_button:last-child {
+    right: @pickerButtonLastRight;
+    position: absolute;
+    top: @pickerButtonTop;
+    line-height: @pickerButtonLineHeight;
+    border-radius: @pickerButtonBorderRadius;
+    padding: @pickerButtonPadding;
+  }
+}
+
+/* 
+  Date range picker/Single date picker
+*/
 .DateRangePicker,
 .SingleDatePicker {
 
