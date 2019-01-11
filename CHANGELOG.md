@@ -1,3 +1,47 @@
+## [1.103.1](https://github.com/lodgify/lodgify-ui/compare/v1.103.0...v1.103.1) (2019-01-08)
+
+
+### Bug Fixes
+
+* **DateRangePicker:** allow for valid icon in input with calculation ([98a9a5c](https://github.com/lodgify/lodgify-ui/commit/98a9a5c))
+
+# [1.103.0](https://github.com/lodgify/lodgify-ui/compare/v1.102.0...v1.103.0) (2019-01-08)
+
+
+### Bug Fixes
+
+* **components:** clear linting warnings ([50cfaa3](https://github.com/lodgify/lodgify-ui/commit/50cfaa3))
+
+
+### Features
+
+* **areNavigationItemsExceedingHeaderMaxWidth:** implement util and unit test ([415f3d5](https://github.com/lodgify/lodgify-ui/commit/415f3d5))
+* **constants:** implement navigation measures ([0887bd7](https://github.com/lodgify/lodgify-ui/commit/0887bd7))
+* **getHiddenMenuMarkup:** pass isHiddenMenuShowingInAllDevices to ShowOn device props ([5a6cd0d](https://github.com/lodgify/lodgify-ui/commit/5a6cd0d))
+* **getNavigationItemsWidth:** implement util and unit tests ([400b01d](https://github.com/lodgify/lodgify-ui/commit/400b01d))
+* **getPrimaryCTAWidth:** implement util and unit test ([7018cd2](https://github.com/lodgify/lodgify-ui/commit/7018cd2))
+* **getStandardMenuMarkup:** pass isStandardMenuShowingInAllDevices to ShowOn device props ([2c6a958](https://github.com/lodgify/lodgify-ui/commit/2c6a958))
+* **Header:** implement areNavigationItemsExceedingHeaderMaxWidth util ([1a90181](https://github.com/lodgify/lodgify-ui/commit/1a90181))
+
+
+### Performance Improvements
+
+* **get*MenuMarkup:** remove obsolete utils and tests ([5b2c4ca](https://github.com/lodgify/lodgify-ui/commit/5b2c4ca))
+
+# [1.102.0](https://github.com/lodgify/lodgify-ui/compare/v1.101.2...v1.102.0) (2019-01-08)
+
+
+### Features
+
+* **Submenu:** add props.scrolling ([e50b4ac](https://github.com/lodgify/lodgify-ui/commit/e50b4ac))
+
+## [1.101.2](https://github.com/lodgify/lodgify-ui/compare/v1.101.1...v1.101.2) (2019-01-07)
+
+
+### Bug Fixes
+
+* **HorizontalGutters:** remove orphan textAlign prop ([d490e83](https://github.com/lodgify/lodgify-ui/commit/d490e83))
+
 ## [1.101.1](https://github.com/lodgify/lodgify-ui/compare/v1.101.0...v1.101.1) (2018-12-20)
 
 

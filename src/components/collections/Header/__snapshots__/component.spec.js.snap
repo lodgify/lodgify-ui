@@ -34,6 +34,14 @@ exports[`<Header /> by default should render the right structure 1`] = `
         ],
         "text": "All properties",
       },
+      Object {
+        "href": "/",
+        "text": "Contact Us",
+      },
+      Object {
+        "href": "/",
+        "text": "What to do",
+      },
     ]
   }
   primaryCTA={null}
@@ -220,6 +228,20 @@ exports[`<Header /> by default should render the right structure 1`] = `
                                   ]
                                 }
                               />
+                              <MenuItem
+                                active={false}
+                                href="/"
+                                link={true}
+                              >
+                                Contact Us
+                              </MenuItem>
+                              <MenuItem
+                                active={false}
+                                href="/"
+                                link={true}
+                              >
+                                What to do
+                              </MenuItem>
                             </Menu>
                           }
                           dimmer="inverted"
@@ -378,7 +400,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                     key="All properties1"
                     name={null}
                     onChange={[Function]}
-                    pointing="top right"
+                    pointing="top left"
                     value={null}
                     willOpenAbove={false}
                   >
@@ -433,8 +455,9 @@ exports[`<Header /> by default should render the right structure 1`] = `
                           },
                         ]
                       }
-                      pointing="top right"
+                      pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -446,7 +469,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                     >
                       <div
                         aria-expanded={false}
-                        className="ui item simple top right pointing dropdown"
+                        className="ui item simple scrolling top left pointing dropdown"
                         name={null}
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -630,6 +653,34 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       </div>
                     </Dropdown>
                   </Submenu>
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    key="Contact Us2"
+                    link={true}
+                  >
+                    <a
+                      className="link item"
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      Contact Us
+                    </a>
+                  </MenuItem>
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    key="What to do3"
+                    link={true}
+                  >
+                    <a
+                      className="link item"
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      What to do
+                    </a>
+                  </MenuItem>
                 </div>
               </MenuMenu>
             </ShowOn>
@@ -674,6 +725,14 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
           },
         ],
         "text": "All properties",
+      },
+      Object {
+        "href": "/",
+        "text": "Contact Us",
+      },
+      Object {
+        "href": "/",
+        "text": "What to do",
       },
     ]
   }
@@ -861,6 +920,20 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                                   ]
                                 }
                               />
+                              <MenuItem
+                                active={false}
+                                href="/"
+                                link={true}
+                              >
+                                Contact Us
+                              </MenuItem>
+                              <MenuItem
+                                active={false}
+                                href="/"
+                                link={true}
+                              >
+                                What to do
+                              </MenuItem>
                             </Menu>
                           }
                           dimmer="inverted"
@@ -1019,7 +1092,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                     key="All properties1"
                     name={null}
                     onChange={[Function]}
-                    pointing="top right"
+                    pointing="top left"
                     value={null}
                     willOpenAbove={false}
                   >
@@ -1074,8 +1147,9 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                           },
                         ]
                       }
-                      pointing="top right"
+                      pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -1087,7 +1161,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                     >
                       <div
                         aria-expanded={false}
-                        className="ui item simple top right pointing dropdown"
+                        className="ui item simple scrolling top left pointing dropdown"
                         name={null}
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -1271,6 +1345,381 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       </div>
                     </Dropdown>
                   </Submenu>
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    key="Contact Us2"
+                    link={true}
+                  >
+                    <a
+                      className="link item"
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      Contact Us
+                    </a>
+                  </MenuItem>
+                  <MenuItem
+                    active={false}
+                    href="/"
+                    key="What to do3"
+                    link={true}
+                  >
+                    <a
+                      className="link item"
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      What to do
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuMenu>
+            </ShowOn>
+          </div>
+        </Menu>
+      </Container>
+    </HorizontalGutters>
+  </header>
+</Header>
+`;
+
+exports[`<Header /> if navigation items exceed the header max width should render the right structure 1`] = `
+<Header
+  activeNavigationItemIndex={null}
+  dateRangePickerLocaleCode="ko"
+  isBackgroundFilled={true}
+  logoSrc={null}
+  logoText="someLogoText"
+  navigationItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+      Object {
+        "subItems": Array [
+          Object {
+            "href": "/la-casa-viva",
+            "text": "La Casa Viva",
+          },
+          Object {
+            "href": "/la-casa-muerta",
+            "text": "La Casa Muerta",
+          },
+          Object {
+            "href": "/the-white-lodge",
+            "text": "The White Lodge",
+          },
+          Object {
+            "href": "/the-black-lodge",
+            "text": "The Black Lodge",
+          },
+        ],
+        "text": "All properties",
+      },
+      Object {
+        "href": "/",
+        "text": "Contact Us",
+      },
+      Object {
+        "href": "/",
+        "text": "What to do when you go out on a Sunday and then somebody attacks you with big floppy fish",
+      },
+    ]
+  }
+  primaryCTA={null}
+  searchBarGetIsDayBlocked={[Function]}
+  searchBarGuestsOptions={Array []}
+  searchBarLocationOptions={Array []}
+>
+  <header
+    className="is-background-filled"
+  >
+    <HorizontalGutters
+      as={[Function]}
+      borderless={true}
+      text={true}
+    >
+      <Container
+        as={[Function]}
+        borderless={true}
+        text={true}
+      >
+        <Menu
+          borderless={true}
+          className="ui text container"
+        >
+          <div
+            className="ui borderless ui text container menu"
+          >
+            <MenuItem
+              href="/"
+              link={true}
+            >
+              <a
+                className="link item"
+                href="/"
+                onClick={[Function]}
+              >
+                <Heading
+                  isColorInverted={false}
+                  size="small"
+                  textAlign={null}
+                >
+                  <Header
+                    as="h4"
+                    inverted={false}
+                    textAlign={null}
+                  >
+                    <h4
+                      className="ui header"
+                    >
+                      someLogoText
+                    </h4>
+                  </Header>
+                </Heading>
+              </a>
+            </MenuItem>
+            <ShowOn
+              computer={true}
+              mobile={true}
+              parent={[Function]}
+              parentProps={
+                Object {
+                  "position": "right",
+                }
+              }
+              tablet={true}
+              widescreen={true}
+            >
+              <MenuMenu
+                className="show-on-mobile show-on-tablet show-on-computer show-on-widescreen"
+                position="right"
+              >
+                <div
+                  className="right menu show-on-mobile show-on-tablet show-on-computer show-on-widescreen"
+                >
+                  <MenuItem>
+                    <div
+                      className="item"
+                      onClick={[Function]}
+                    >
+                      <Modal
+                        isFullscreen={true}
+                        size="tiny"
+                        trigger={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="bars"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                      >
+                        <Modal
+                          closeIcon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                          closeOnDimmerClick={true}
+                          closeOnDocumentClick={false}
+                          content={
+                            <Menu
+                              text={true}
+                              vertical={true}
+                            >
+                              <MenuItem
+                                href="/"
+                                link={true}
+                              >
+                                <Heading
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
+                                >
+                                  someLogoText
+                                </Heading>
+                              </MenuItem>
+                              <MenuItem
+                                active={false}
+                                href="/"
+                                link={true}
+                              >
+                                Home
+                              </MenuItem>
+                              <Accordion
+                                as={[Function]}
+                                panels={
+                                  Array [
+                                    Object {
+                                      "content": Object {
+                                        "content": Array [
+                                          <MenuItem
+                                            active={false}
+                                            href="/la-casa-viva"
+                                            link={true}
+                                          >
+                                            La Casa Viva
+                                          </MenuItem>,
+                                          <MenuItem
+                                            active={false}
+                                            href="/la-casa-muerta"
+                                            link={true}
+                                          >
+                                            La Casa Muerta
+                                          </MenuItem>,
+                                          <MenuItem
+                                            active={false}
+                                            href="/the-white-lodge"
+                                            link={true}
+                                          >
+                                            The White Lodge
+                                          </MenuItem>,
+                                          <MenuItem
+                                            active={false}
+                                            href="/the-black-lodge"
+                                            link={true}
+                                          >
+                                            The Black Lodge
+                                          </MenuItem>,
+                                        ],
+                                        "key": "1All properties",
+                                      },
+                                      "title": Object {
+                                        "content": "All properties",
+                                        "key": "All properties1",
+                                      },
+                                    },
+                                  ]
+                                }
+                              />
+                              <MenuItem
+                                active={false}
+                                href="/"
+                                link={true}
+                              >
+                                Contact Us
+                              </MenuItem>
+                              <MenuItem
+                                active={false}
+                                href="/"
+                                link={true}
+                              >
+                                What to do when you go out on a Sunday and then somebody attacks you with big floppy fish
+                              </MenuItem>
+                            </Menu>
+                          }
+                          dimmer="inverted"
+                          eventPool="Modal"
+                          size="fullscreen"
+                          trigger={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="bars"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                        >
+                          <Portal
+                            className="ui inverted page modals dimmer transition visible active"
+                            closeOnDocumentClick={false}
+                            closeOnEscape={true}
+                            closeOnRootNodeClick={true}
+                            eventPool="Modal"
+                            mountNode={<body />}
+                            onClose={[Function]}
+                            onMount={[Function]}
+                            onOpen={[Function]}
+                            onUnmount={[Function]}
+                            openOnTriggerClick={true}
+                            trigger={
+                              <Icon
+                                color={null}
+                                hasBorder={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="bars"
+                                path={null}
+                                size={null}
+                              />
+                            }
+                          >
+                            <Ref
+                              innerRef={[Function]}
+                            >
+                              <Icon
+                                color={null}
+                                hasBorder={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="bars"
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                path={null}
+                                size={null}
+                              >
+                                <i
+                                  className="icon"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                >
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                                      fill="currentColor"
+                                    />
+                                  </svg>
+                                </i>
+                              </Icon>
+                            </Ref>
+                          </Portal>
+                        </Modal>
+                      </Modal>
+                    </div>
+                  </MenuItem>
                 </div>
               </MenuMenu>
             </ShowOn>

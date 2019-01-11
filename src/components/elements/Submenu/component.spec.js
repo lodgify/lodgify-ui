@@ -41,6 +41,7 @@ describe('<Submenu />', () => {
         className: '',
         options: expect.arrayContaining([expect.any(Object)]),
         pointing: 'top left',
+        scrolling: true,
         trigger: children,
         upward: false,
         value: null,

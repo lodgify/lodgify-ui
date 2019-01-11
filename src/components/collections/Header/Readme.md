@@ -153,3 +153,52 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
   primaryCTA={{ onClick: console.log, text: 'Book now'}}
 />
 ```
+
+#### Wide navigation items
+
+If the total width of the navigation items exceeds 900px, the header will display only a clickable burger icon to reveal the navigation items.
+
+```jsx
+const { largeNavigationItems } = require('./mock-data/navigationItems');
+// [
+//   { text: 'Home', href: '/' },
+//   {
+//     text: 'All properties',
+//     subItems: [
+//       {
+//         href: '/la-casa-viva',
+//         text: 'La Casa Viva',
+//       },
+//       {
+//         href: '/la-casa-muerta',
+//         text: 'La Casa Muerta',
+//       },
+//       {
+//         href: '/the-white-lodge',
+//         text: 'The White Lodge',
+//       },
+//       {
+//         href: '/the-black-lodge',
+//         text: 'The Black Lodge',
+//       },
+//     ],
+//   },
+//   { text: 'Contact Us', href: '/' },
+//   {
+//     text:
+//       'What to do when you go out on a Sunday and then somebody attacks you with big floppy fish',
+//     href: '/',
+//   },
+// ];
+
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+
+<div style={{ backgroundColor: 'grey'}}>
+  <Header
+    logoSrc={logoSrc}
+    logoText="Livingstone Cottage"
+    navigationItems={largeNavigationItems}
+    primaryCTA={{ onClick: console.log, text: 'Book now'}}
+  />
+</div>
+```

@@ -18,7 +18,7 @@
 @inputBorder: @borderWidth solid transparent;
 @borderWidth: 1px;
 
-@iconWidthOffset: 44px; /* This offsets the widths of the icons in the date range picker. */
+@iconWidthOffset: 66px; /* This offsets the widths of the icons in the date range picker. */
 
 @dateInputPadding: (@verticalPadding - @inputBorderOffset) 0;
 @dateInputWidth: ~"calc(50% - @{iconWidthOffset})";

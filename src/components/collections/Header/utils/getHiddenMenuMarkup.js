@@ -25,27 +25,38 @@ import { getLinkMarkup } from './getLinkMarkup';
  * @param  {Function} props.searchBarOnChangeInput
  * @param  {Function} props.searchBarOnSubmit
  * @param  {Object}   props.searchBarSearchButton
+ * @param  {boolean}  isHiddenMenuShowingInAllDevices
  * @return {Object}
  */
-export const getMobileMenuMarkup = ({
-  /* eslint-disable react/prop-types */
-  activeNavigationItemIndex,
-  logoSizes,
-  logoSrc,
-  logoSrcSet,
-  logoText,
-  navigationItems,
-  searchBarDateRangePickerLocaleCode,
-  searchBarGetIsDayBlocked,
-  searchBarGuestsOptions,
-  searchBarLocationOptions,
-  searchBarModalHeadingText,
-  searchBarOnChangeInput,
-  searchBarOnSubmit,
-  searchBarSearchButton,
-  /* eslint-enable react/prop-types */
-}) => (
-  <ShowOn mobile parent={Menu.Menu} parentProps={{ position: 'right' }}>
+export const getHiddenMenuMarkup = (
+  {
+    /* eslint-disable react/prop-types */
+    activeNavigationItemIndex,
+    logoSizes,
+    logoSrc,
+    logoSrcSet,
+    logoText,
+    navigationItems,
+    searchBarDateRangePickerLocaleCode,
+    searchBarGetIsDayBlocked,
+    searchBarGuestsOptions,
+    searchBarLocationOptions,
+    searchBarModalHeadingText,
+    searchBarOnChangeInput,
+    searchBarOnSubmit,
+    searchBarSearchButton,
+    /* eslint-enable react/prop-types */
+  },
+  isHiddenMenuShowingInAllDevices
+) => (
+  <ShowOn
+    computer={isHiddenMenuShowingInAllDevices}
+    mobile
+    parent={Menu.Menu}
+    parentProps={{ position: 'right' }}
+    tablet={isHiddenMenuShowingInAllDevices}
+    widescreen={isHiddenMenuShowingInAllDevices}
+  >
     {hasSearchBarOptions(searchBarGuestsOptions, searchBarLocationOptions) && (
       <Menu.Item>
         <SearchBar

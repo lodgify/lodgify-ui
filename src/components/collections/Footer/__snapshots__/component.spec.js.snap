@@ -180,6 +180,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                       }
                       pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -191,7 +192,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                     >
                       <div
                         aria-expanded={false}
-                        className="ui upward top left pointing dropdown"
+                        className="ui scrolling upward top left pointing dropdown"
                         name="language"
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -381,6 +382,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                       }
                       pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -392,7 +394,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                     >
                       <div
                         aria-expanded={false}
-                        className="ui upward top left pointing dropdown"
+                        className="ui scrolling upward top left pointing dropdown"
                         name="currency"
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -862,6 +864,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                       }
                       pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -873,7 +876,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                     >
                       <div
                         aria-expanded={false}
-                        className="ui upward top left pointing dropdown"
+                        className="ui scrolling upward top left pointing dropdown"
                         name="language"
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -1063,6 +1066,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                       }
                       pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -1074,7 +1078,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                     >
                       <div
                         aria-expanded={false}
-                        className="ui upward top left pointing dropdown"
+                        className="ui scrolling upward top left pointing dropdown"
                         name="currency"
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -1468,6 +1472,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                       }
                       pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -1479,7 +1484,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                     >
                       <div
                         aria-expanded={false}
-                        className="ui upward top left pointing dropdown"
+                        className="ui scrolling upward top left pointing dropdown"
                         name="language"
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -1669,6 +1674,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                       }
                       pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -1680,7 +1686,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                     >
                       <div
                         aria-expanded={false}
-                        className="ui upward top left pointing dropdown"
+                        className="ui scrolling upward top left pointing dropdown"
                         name="currency"
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -2147,6 +2153,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                       }
                       pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -2158,7 +2165,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                     >
                       <div
                         aria-expanded={false}
-                        className="ui upward top left pointing dropdown"
+                        className="ui scrolling upward top left pointing dropdown"
                         name="language"
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -2348,6 +2355,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                       }
                       pointing="top left"
                       renderLabel={[Function]}
+                      scrolling={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -2359,7 +2367,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                     >
                       <div
                         aria-expanded={false}
-                        className="ui upward top left pointing dropdown"
+                        className="ui scrolling upward top left pointing dropdown"
                         name="currency"
                         onBlur={[Function]}
                         onChange={[Function]}
