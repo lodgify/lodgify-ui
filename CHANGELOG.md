@@ -1,3 +1,10 @@
+# [1.104.0](https://github.com/lodgify/lodgify-ui/compare/v1.103.1...v1.104.0) (2019-01-11)
+
+
+### Features
+
+* **modal.*:** implement close button background and shadow ([cd8e606](https://github.com/lodgify/lodgify-ui/commit/cd8e606))
+
 ## [1.103.1](https://github.com/lodgify/lodgify-ui/compare/v1.103.0...v1.103.1) (2019-01-08)
 
 
