@@ -1,0 +1,1 @@
+export { getWindowHeight } from './getWindowHeight';
