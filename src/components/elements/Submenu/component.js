@@ -54,8 +54,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The clickable text to open the submenu.  */
-  children: PropTypes.string,
+  /** The clickable element to open the submenu.  */
+  children: PropTypes.node,
   /** Is it an item in a Semantic UI Menu.  */
   isMenuItem: PropTypes.bool,
   /** Is the trigger underlined for emphasis.  */
