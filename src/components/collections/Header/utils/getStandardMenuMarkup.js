@@ -46,7 +46,14 @@ export const getStandardMenuMarkup = ({
             !!primaryCTA
           )}
         >
-          {text}
+          <Menu.Item
+            active={index === activeNavigationItemIndex}
+            href={href}
+            key={buildKeyFromStrings(text, index)}
+            link
+          >
+            {text}
+          </Menu.Item>
         </Submenu>
       ) : (
         getLinkMarkup(text, href, index, activeNavigationItemIndex)
