@@ -1,3 +1,10 @@
+# [1.106.0](https://github.com/lodgify/lodgify-ui/compare/v1.105.0...v1.106.0) (2019-01-14)
+
+
+### Features
+
+* **grid:** remove styles conflicting with column width ([569874e](https://github.com/lodgify/lodgify-ui/commit/569874e))
+
 # [1.105.0](https://github.com/lodgify/lodgify-ui/compare/v1.104.0...v1.105.0) (2019-01-14)
 
 
