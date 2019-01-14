@@ -23,17 +23,15 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
       >
         <MenuItem
           active={false}
-          href="/"
           key="Home0"
           link={true}
         >
-          <a
+          <div
             className="link item"
-            href="/"
             onClick={[Function]}
           >
             Home
-          </a>
+          </div>
         </MenuItem>
         <Submenu
           isMenuItem={true}
@@ -125,7 +123,15 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
             selectOnBlur={true}
             selectOnNavigation={true}
             simple={true}
-            trigger="All properties"
+            trigger={
+              <MenuItem
+                active={true}
+                href="/all-properties"
+                link={true}
+              >
+                All properties
+              </MenuItem>
+            }
             upward={false}
             value={null}
             wrapSelection={true}
@@ -142,7 +148,20 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
               role="listbox"
               tabIndex={0}
             >
-              All properties
+              <MenuItem
+                active={true}
+                href="/all-properties"
+                key="All properties1"
+                link={true}
+              >
+                <a
+                  className="active link item"
+                  href="/all-properties"
+                  onClick={[Function]}
+                >
+                  All properties
+                </a>
+              </MenuItem>
               <Icon
                 color={null}
                 hasBorder={false}
@@ -373,17 +392,15 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
       >
         <MenuItem
           active={false}
-          href="/"
           key="Home0"
           link={true}
         >
-          <a
+          <div
             className="link item"
-            href="/"
             onClick={[Function]}
           >
             Home
-          </a>
+          </div>
         </MenuItem>
         <Submenu
           isMenuItem={true}
@@ -475,7 +492,15 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
             selectOnBlur={true}
             selectOnNavigation={true}
             simple={true}
-            trigger="All properties"
+            trigger={
+              <MenuItem
+                active={true}
+                href="/all-properties"
+                link={true}
+              >
+                All properties
+              </MenuItem>
+            }
             upward={false}
             value={null}
             wrapSelection={true}
@@ -492,7 +517,20 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
               role="listbox"
               tabIndex={0}
             >
-              All properties
+              <MenuItem
+                active={true}
+                href="/all-properties"
+                key="All properties1"
+                link={true}
+              >
+                <a
+                  className="active link item"
+                  href="/all-properties"
+                  onClick={[Function]}
+                >
+                  All properties
+                </a>
+              </MenuItem>
               <Icon
                 color={null}
                 hasBorder={false}
