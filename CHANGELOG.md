@@ -1,3 +1,15 @@
+# [1.108.0](https://github.com/lodgify/lodgify-ui/compare/v1.107.0...v1.108.0) (2019-01-14)
+
+
+### Bug Fixes
+
+* **Contact:** prevent guests input from going below 1 ([93c932c](https://github.com/lodgify/lodgify-ui/commit/93c932c))
+
+
+### Features
+
+* **NumberInput:** expose component ([3acc2d3](https://github.com/lodgify/lodgify-ui/commit/3acc2d3))
+
 # [1.107.0](https://github.com/lodgify/lodgify-ui/compare/v1.106.0...v1.107.0) (2019-01-14)
 
 
