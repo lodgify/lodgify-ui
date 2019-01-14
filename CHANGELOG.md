@@ -1,3 +1,14 @@
+# [1.107.0](https://github.com/lodgify/lodgify-ui/compare/v1.106.0...v1.107.0) (2019-01-14)
+
+
+### Features
+
+* **DateRangePicker:** implement withPortal prop and update unit test ([88fae8f](https://github.com/lodgify/lodgify-ui/commit/88fae8f))
+* **getWindowHeight:** implement global util and unit test ([380323e](https://github.com/lodgify/lodgify-ui/commit/380323e))
+* **isDisplayedAsModal:** implement global util and unit test ([7f0b504](https://github.com/lodgify/lodgify-ui/commit/7f0b504))
+* **react-dates-datepicker:** implement styles for portal datepicker ([7a293a7](https://github.com/lodgify/lodgify-ui/commit/7a293a7))
+* **SingleDatePicker:** implement withPortal prop and update unit test ([b3c5a5e](https://github.com/lodgify/lodgify-ui/commit/b3c5a5e))
+
 # [1.106.0](https://github.com/lodgify/lodgify-ui/compare/v1.105.0...v1.106.0) (2019-01-14)
 
 
