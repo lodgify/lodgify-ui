@@ -1,3 +1,29 @@
+# [1.107.0](https://github.com/lodgify/lodgify-ui/compare/v1.106.0...v1.107.0) (2019-01-14)
+
+
+### Features
+
+* **DateRangePicker:** implement withPortal prop and update unit test ([88fae8f](https://github.com/lodgify/lodgify-ui/commit/88fae8f))
+* **getWindowHeight:** implement global util and unit test ([380323e](https://github.com/lodgify/lodgify-ui/commit/380323e))
+* **isDisplayedAsModal:** implement global util and unit test ([7f0b504](https://github.com/lodgify/lodgify-ui/commit/7f0b504))
+* **react-dates-datepicker:** implement styles for portal datepicker ([7a293a7](https://github.com/lodgify/lodgify-ui/commit/7a293a7))
+* **SingleDatePicker:** implement withPortal prop and update unit test ([b3c5a5e](https://github.com/lodgify/lodgify-ui/commit/b3c5a5e))
+
+# [1.106.0](https://github.com/lodgify/lodgify-ui/compare/v1.105.0...v1.106.0) (2019-01-14)
+
+
+### Features
+
+* **grid:** remove styles conflicting with column width ([569874e](https://github.com/lodgify/lodgify-ui/commit/569874e))
+
+# [1.105.0](https://github.com/lodgify/lodgify-ui/compare/v1.104.0...v1.105.0) (2019-01-14)
+
+
+### Features
+
+* **Header:** submenu title can also be a link ([60afec1](https://github.com/lodgify/lodgify-ui/commit/60afec1))
+* **menu:** add styles to give dropdown toggle space ([04da776](https://github.com/lodgify/lodgify-ui/commit/04da776))
+
 # [1.104.0](https://github.com/lodgify/lodgify-ui/compare/v1.103.1...v1.104.0) (2019-01-11)
 
 

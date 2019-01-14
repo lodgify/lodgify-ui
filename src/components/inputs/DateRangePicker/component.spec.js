@@ -1,3 +1,6 @@
+jest.mock('utils/get-window-height');
+jest.mock('lodash/debounce');
+
 import React from 'react';
 import { shallow } from 'enzyme';
 import { DateRangePicker as ReactDatesDateRangePicker } from 'react-dates';
@@ -9,12 +12,17 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
+import { debounce } from 'lodash';
 
 import { InputController } from 'inputs/InputController';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { returnFirstArgument } from 'utils/return-first-argument';
+import { getWindowHeight } from 'utils/get-window-height';
 
 import { ComponentWithResponsive as DateRangePicker } from './component';
+
+const STARTING_WINDOW_HEIGHT = 900;
+const NEXT_WINDOW_HEIGHT = 800;
 
 const getDateRangePicker = () => shallow(<DateRangePicker />);
 const getWrappedDateRangePicker = props => {
@@ -24,6 +32,12 @@ const getWrappedDateRangePicker = props => {
 };
 
 describe('<DateRangePicker />', () => {
+  beforeEach(() => {
+    getWindowHeight.mockReset();
+    getWindowHeight.mockReturnValueOnce(STARTING_WINDOW_HEIGHT);
+    getWindowHeight.mockReturnValueOnce(NEXT_WINDOW_HEIGHT);
+  });
+
   it('should be wrapped in a Semantic UI `Responsive` component', () => {
     const wrapper = getDateRangePicker();
 
@@ -39,6 +53,28 @@ describe('<DateRangePicker />', () => {
       const actual = moment.locale();
 
       expect(actual).toEqual(localeCode);
+    });
+
+    it('should bind handleHeightChange to global resize event after the component is mounted', () => {
+      global.addEventListener = jest.fn();
+      const wrapper = getWrappedDateRangePicker();
+
+      debounce.mockReturnValueOnce(wrapper.instance().handleHeightChange, 150);
+
+      wrapper.instance().componentDidMount();
+      expect(global.addEventListener).toHaveBeenCalledWith(
+        'resize',
+        debounce()
+      );
+    });
+  });
+
+  describe('the `addEventListener` method', () => {
+    it('should call `debounce` with the right arguments', () => {
+      const wrapper = getWrappedDateRangePicker();
+      const handler = wrapper.instance().handleHeightChange;
+
+      expect(debounce).toHaveBeenCalledWith(handler, 150);
     });
   });
 
@@ -123,6 +159,7 @@ describe('<DateRangePicker />', () => {
         navNext: <Icon name={ICON_NAMES.ARROW_RIGHT} />,
         navPrev: <Icon name={ICON_NAMES.ARROW_LEFT} />,
         numberOfMonths: ReactDatesDateRangePicker.defaultProps.numberOfMonths,
+        withPortal: expect.any(Boolean),
       });
     });
   });
@@ -153,6 +190,41 @@ describe('<DateRangePicker />', () => {
           focusedInput: value,
         })
       );
+    });
+  });
+
+  describe('Interaction: onHeightChange', () => {
+    describe('if window height has changed', () => {
+      it('should persist the value in component state', () => {
+        const dateRangePicker = getWrappedDateRangePicker();
+
+        dateRangePicker.instance().handleHeightChange();
+        const actual = dateRangePicker.state();
+
+        expect(actual).toEqual(
+          expect.objectContaining({
+            windowHeight: NEXT_WINDOW_HEIGHT,
+          })
+        );
+      });
+    });
+
+    describe('if window height has not changed', () => {
+      it('should do nothing', () => {
+        getWindowHeight.mockReset();
+        getWindowHeight.mockReturnValue(STARTING_WINDOW_HEIGHT);
+
+        const dateRangePicker = getWrappedDateRangePicker();
+
+        dateRangePicker.instance().handleHeightChange();
+        const actual = dateRangePicker.state();
+
+        expect(actual).toEqual(
+          expect.objectContaining({
+            windowHeight: STARTING_WINDOW_HEIGHT,
+          })
+        );
+      });
     });
   });
 
