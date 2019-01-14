@@ -49,6 +49,7 @@ export { DateRangePicker } from './components/inputs/DateRangePicker';
 export { Dropdown } from './components/inputs/Dropdown';
 export { ErrorMessage } from './components/inputs/ErrorMessage';
 export { InputController } from './components/inputs/InputController';
+export { NumberInput } from './components/inputs/NumberInput';
 export { PhoneInput } from './components/inputs/PhoneInput';
 export { RadioButton } from './components/inputs/RadioButton';
 export { TextInput } from './components/inputs/TextInput';
