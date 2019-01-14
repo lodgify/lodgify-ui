@@ -1,0 +1,1 @@
+export { isDisplayedAsModal } from './isDisplayedAsModal';

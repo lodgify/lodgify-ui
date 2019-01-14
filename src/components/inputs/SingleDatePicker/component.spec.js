@@ -1,3 +1,6 @@
+jest.mock('utils/get-window-height');
+jest.mock('lodash/debounce');
+
 import React from 'react';
 import { shallow } from 'enzyme';
 import { SingleDatePicker as ReactDatesSingleDatePicker } from 'react-dates';
@@ -8,20 +11,55 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
+import { debounce } from 'lodash';
 
 import { returnFirstArgument } from 'utils/return-first-argument';
 import { InputController } from 'inputs/InputController';
 import { Icon, ICON_NAMES } from 'elements/Icon';
+import { getWindowHeight } from 'utils/get-window-height';
 
 import { Component as SingleDatePicker } from './component';
+
+const STARTING_WINDOW_HEIGHT = 900;
+const NEXT_WINDOW_HEIGHT = 800;
 
 const getSingleDatePicker = props => shallow(<SingleDatePicker {...props} />);
 
 describe('<SingleDatePicker />', () => {
+  beforeEach(() => {
+    getWindowHeight.mockReset();
+    getWindowHeight.mockReturnValueOnce(STARTING_WINDOW_HEIGHT);
+    getWindowHeight.mockReturnValueOnce(NEXT_WINDOW_HEIGHT);
+  });
+
   it('should render a Semantic UI `InputController`', () => {
     const wrapper = getSingleDatePicker();
 
     expectComponentToBe(wrapper, InputController);
+  });
+
+  it('should bind handleHeightChange to global resize event after the component is mounted', () => {
+    global.addEventListener = jest.fn();
+    const wrapper = getSingleDatePicker();
+
+    const DEBOUNCE_CONFIRMATION = 'I got debounced';
+
+    debounce.mockReturnValue(DEBOUNCE_CONFIRMATION);
+
+    wrapper.instance().componentDidMount();
+    expect(global.addEventListener).toHaveBeenCalledWith(
+      'resize',
+      DEBOUNCE_CONFIRMATION
+    );
+  });
+
+  describe('the `addEventListener` method', () => {
+    it('should call `debounce` with the right arguments', () => {
+      const wrapper = getSingleDatePicker();
+      const handler = wrapper.instance().handleHeightChange;
+
+      expect(debounce).toHaveBeenCalledWith(handler, 150);
+    });
   });
 
   describe('the `InputController` component', () => {
@@ -82,6 +120,7 @@ describe('<SingleDatePicker />', () => {
         navNext: <Icon name={ICON_NAMES.ARROW_RIGHT} />,
         navPrev: <Icon name={ICON_NAMES.ARROW_LEFT} />,
         numberOfMonths: 1,
+        withPortal: expect.any(Boolean),
       });
     });
   });
@@ -111,6 +150,41 @@ describe('<SingleDatePicker />', () => {
           isFocused: value,
         })
       );
+    });
+  });
+
+  describe('Interaction: onHeightChange', () => {
+    describe('if window height has changed', () => {
+      it('should persist the value in component state', () => {
+        const singleDatePicker = getSingleDatePicker();
+
+        singleDatePicker.instance().handleHeightChange();
+        const actual = singleDatePicker.state();
+
+        expect(actual).toEqual(
+          expect.objectContaining({
+            windowHeight: NEXT_WINDOW_HEIGHT,
+          })
+        );
+      });
+    });
+
+    describe('if window height has not changed', () => {
+      it('should do nothing', () => {
+        getWindowHeight.mockReset();
+        getWindowHeight.mockReturnValue(STARTING_WINDOW_HEIGHT);
+
+        const singleDatePicker = getSingleDatePicker();
+
+        singleDatePicker.instance().handleHeightChange();
+        const actual = singleDatePicker.state();
+
+        expect(actual).toEqual(
+          expect.objectContaining({
+            windowHeight: STARTING_WINDOW_HEIGHT,
+          })
+        );
+      });
     });
   });
 

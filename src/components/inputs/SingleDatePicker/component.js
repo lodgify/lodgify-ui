@@ -1,14 +1,17 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { isEqual } from 'lodash';
+import { isEqual, debounce } from 'lodash';
 import { SingleDatePicker } from 'react-dates';
 
 import 'react-dates/initialize';
+
 import { returnFirstArgument } from 'utils/return-first-argument';
 import { isBlurEvent } from 'utils/is-blur-event';
 import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
+import { getWindowHeight } from 'utils/get-window-height';
+import { isDisplayedAsModal } from 'utils/is-displayed-as-modal';
 
 /**
  * A single date picker lets a user pick a date.
@@ -18,6 +21,11 @@ export class Component extends PureComponent {
   state = {
     date: null,
     isFocused: null,
+    windowHeight: getWindowHeight(),
+  };
+
+  componentDidMount = () => {
+    global.addEventListener('resize', debounce(this.handleHeightChange, 150));
   };
 
   componentDidUpdate = (prevProps, prevState) => {
@@ -35,6 +43,16 @@ export class Component extends PureComponent {
 
   handleInputControllerChange = (name, date) => {
     this.setState({ date });
+  };
+
+  handleHeightChange = () => {
+    const windowHeight = getWindowHeight();
+
+    if (windowHeight !== this.state.windowHeight) {
+      this.setState({
+        windowHeight,
+      });
+    }
   };
 
   render = () => {
@@ -79,6 +97,7 @@ export class Component extends PureComponent {
           navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
           navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
           numberOfMonths={1}
+          withPortal={isDisplayedAsModal(this.state.windowHeight)}
           /* eslint-enable react/jsx-sort-props */
         />
       </InputController>
