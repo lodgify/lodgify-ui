@@ -369,6 +369,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                           <Icon
                             color={null}
                             hasBorder={false}
+                            isButton={false}
                             isCircular={false}
                             isColorInverted={false}
                             isDisabled={false}

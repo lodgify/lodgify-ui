@@ -75,6 +75,7 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
               <Icon
                 color={null}
                 hasBorder={false}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}
@@ -165,6 +166,7 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
               <Icon
                 color={null}
                 hasBorder={false}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}
@@ -444,6 +446,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
               <Icon
                 color={null}
                 hasBorder={false}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}
@@ -534,6 +537,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
               <Icon
                 color={null}
                 hasBorder={false}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}

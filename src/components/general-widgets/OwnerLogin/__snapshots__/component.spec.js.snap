@@ -275,6 +275,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -675,6 +676,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1055,6 +1057,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}

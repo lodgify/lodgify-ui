@@ -24,6 +24,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
       <Icon
         color={null}
         hasBorder={false}
+        isButton={false}
         isCircular={false}
         isColorInverted={false}
         isDisabled={false}
@@ -275,6 +276,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
       <Icon
         color={null}
         hasBorder={false}
+        isButton={false}
         isCircular={false}
         isColorInverted={false}
         isDisabled={false}

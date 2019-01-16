@@ -20,6 +20,7 @@ exports[`<IconCard /> by default should render the right structure 1`] = `
       <Icon
         color={null}
         hasBorder={false}
+        isButton={false}
         isCircular={false}
         isColorInverted={false}
         isDisabled={false}
@@ -68,6 +69,7 @@ exports[`<IconCard /> if \`props.isDisabled\` is \`true\` should render the righ
       <Icon
         color={null}
         hasBorder={false}
+        isButton={false}
         isCircular={false}
         isColorInverted={false}
         isDisabled={true}
@@ -116,6 +118,7 @@ exports[`<IconCard /> if \`props.isFilled\` is \`true\` should render the right 
       <Icon
         color={null}
         hasBorder={false}
+        isButton={false}
         isCircular={false}
         isColorInverted={false}
         isDisabled={false}
@@ -164,6 +167,7 @@ exports[`<IconCard /> if \`props.isLeftAligned\` is \`true\` should render the r
       <Icon
         color={null}
         hasBorder={false}
+        isButton={false}
         isCircular={false}
         isColorInverted={false}
         isDisabled={false}
@@ -212,6 +216,7 @@ exports[`<IconCard /> if \`props.label\` is defined should render the right stru
       <Icon
         color={null}
         hasBorder={false}
+        isButton={false}
         isCircular={false}
         isColorInverted={false}
         isDisabled={false}
@@ -271,6 +276,7 @@ exports[`<IconCard /> if \`props.size\` is \`large\` should render the right str
       <Icon
         color={null}
         hasBorder={false}
+        isButton={false}
         isCircular={false}
         isColorInverted={false}
         isDisabled={false}

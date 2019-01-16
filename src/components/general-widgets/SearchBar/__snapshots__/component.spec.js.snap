@@ -53,6 +53,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
     <Icon
       color={null}
       hasBorder={false}
+      isButton={false}
       isCircular={false}
       isColorInverted={false}
       isDisabled={false}
@@ -143,6 +144,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     <Icon
                       color={null}
                       hasBorder={false}
+                      isButton={false}
                       isCircular={false}
                       isColorInverted={false}
                       isDisabled={false}
@@ -177,6 +179,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -243,6 +246,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -490,6 +494,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -506,6 +511,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -544,6 +550,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -559,6 +566,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -643,6 +651,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -659,6 +668,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -696,6 +706,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -711,6 +722,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -984,6 +996,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                       <Icon
                                         color={null}
                                         hasBorder={false}
+                                        isButton={false}
                                         isCircular={false}
                                         isColorInverted={false}
                                         isDisabled={false}
@@ -1000,6 +1013,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                       <Icon
                                         color={null}
                                         hasBorder={false}
+                                        isButton={false}
                                         isCircular={false}
                                         isColorInverted={false}
                                         isDisabled={false}
@@ -1085,6 +1099,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                         <Icon
                                           color={null}
                                           hasBorder={false}
+                                          isButton={false}
                                           isCircular={false}
                                           isColorInverted={false}
                                           isDisabled={false}
@@ -1101,6 +1116,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                         <Icon
                                           color={null}
                                           hasBorder={false}
+                                          isButton={false}
                                           isCircular={false}
                                           isColorInverted={false}
                                           isDisabled={false}
@@ -1185,6 +1201,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                           <Icon
                                             color={null}
                                             hasBorder={false}
+                                            isButton={false}
                                             isCircular={false}
                                             isColorInverted={false}
                                             isDisabled={false}
@@ -1201,6 +1218,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                           <Icon
                                             color={null}
                                             hasBorder={false}
+                                            isButton={false}
                                             isCircular={false}
                                             isColorInverted={false}
                                             isDisabled={false}
@@ -1487,6 +1505,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -1792,6 +1811,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -2147,6 +2167,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     <Icon
                       color={null}
                       hasBorder={false}
+                      isButton={false}
                       isCircular={false}
                       isColorInverted={false}
                       isDisabled={false}
@@ -2181,6 +2202,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -2247,6 +2269,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -2461,6 +2484,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       <Icon
                         color={null}
                         hasBorder={false}
+                        isButton={false}
                         isCircular={false}
                         isColorInverted={false}
                         isDisabled={false}
@@ -2579,6 +2603,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal === true\` should render the righ
         <Icon
           color={null}
           hasBorder={false}
+          isButton={false}
           isCircular={false}
           isColorInverted={false}
           isDisabled={false}
@@ -2768,6 +2793,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
           <Icon
             color={null}
             hasBorder={false}
+            isButton={false}
             isCircular={false}
             isColorInverted={false}
             isDisabled={false}
@@ -2785,6 +2811,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
             <Icon
               color={null}
               hasBorder={false}
+              isButton={false}
               isCircular={false}
               isColorInverted={false}
               isDisabled={false}
@@ -2924,6 +2951,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
             <Icon
               color={null}
               hasBorder={false}
+              isButton={false}
               isCircular={false}
               isColorInverted={false}
               isDisabled={false}
@@ -2952,6 +2980,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
               <Icon
                 color={null}
                 hasBorder={false}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}
@@ -2970,6 +2999,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
               <Icon
                 color={null}
                 hasBorder={false}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}
@@ -3065,6 +3095,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
     <Icon
       color={null}
       hasBorder={false}
+      isButton={false}
       isCircular={false}
       isColorInverted={false}
       isDisabled={false}
@@ -3206,6 +3237,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -3240,6 +3272,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -3306,6 +3339,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -3553,6 +3587,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -3569,6 +3604,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -3607,6 +3643,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -3622,6 +3659,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -3706,6 +3744,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                           <Icon
                                                             color={null}
                                                             hasBorder={false}
+                                                            isButton={false}
                                                             isCircular={false}
                                                             isColorInverted={false}
                                                             isDisabled={false}
@@ -3722,6 +3761,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                           <Icon
                                                             color={null}
                                                             hasBorder={false}
+                                                            isButton={false}
                                                             isCircular={false}
                                                             isColorInverted={false}
                                                             isDisabled={false}
@@ -3759,6 +3799,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                           <Icon
                                                             color={null}
                                                             hasBorder={false}
+                                                            isButton={false}
                                                             isCircular={false}
                                                             isColorInverted={false}
                                                             isDisabled={false}
@@ -3774,6 +3815,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                           <Icon
                                                             color={null}
                                                             hasBorder={false}
+                                                            isButton={false}
                                                             isCircular={false}
                                                             isColorInverted={false}
                                                             isDisabled={false}
@@ -4047,6 +4089,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                               <Icon
                                                                 color={null}
                                                                 hasBorder={false}
+                                                                isButton={false}
                                                                 isCircular={false}
                                                                 isColorInverted={false}
                                                                 isDisabled={false}
@@ -4063,6 +4106,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                               <Icon
                                                                 color={null}
                                                                 hasBorder={false}
+                                                                isButton={false}
                                                                 isCircular={false}
                                                                 isColorInverted={false}
                                                                 isDisabled={false}
@@ -4148,6 +4192,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                 <Icon
                                                                   color={null}
                                                                   hasBorder={false}
+                                                                  isButton={false}
                                                                   isCircular={false}
                                                                   isColorInverted={false}
                                                                   isDisabled={false}
@@ -4164,6 +4209,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                 <Icon
                                                                   color={null}
                                                                   hasBorder={false}
+                                                                  isButton={false}
                                                                   isCircular={false}
                                                                   isColorInverted={false}
                                                                   isDisabled={false}
@@ -4248,6 +4294,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                   <Icon
                                                                     color={null}
                                                                     hasBorder={false}
+                                                                    isButton={false}
                                                                     isCircular={false}
                                                                     isColorInverted={false}
                                                                     isDisabled={false}
@@ -4264,6 +4311,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                   <Icon
                                                                     color={null}
                                                                     hasBorder={false}
+                                                                    isButton={false}
                                                                     isCircular={false}
                                                                     isColorInverted={false}
                                                                     isDisabled={false}
@@ -4550,6 +4598,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                     <Icon
                                                                       color={null}
                                                                       hasBorder={false}
+                                                                      isButton={false}
                                                                       isCircular={false}
                                                                       isColorInverted={false}
                                                                       isDisabled={false}
@@ -4855,6 +4904,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                     <Icon
                                                                       color={null}
                                                                       hasBorder={false}
+                                                                      isButton={false}
                                                                       isCircular={false}
                                                                       isColorInverted={false}
                                                                       isDisabled={false}
@@ -5210,6 +5260,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -5244,6 +5295,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -5310,6 +5362,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -5524,6 +5577,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                               <Icon
                                                 color={null}
                                                 hasBorder={false}
+                                                isButton={false}
                                                 isCircular={false}
                                                 isColorInverted={false}
                                                 isDisabled={false}
@@ -5626,6 +5680,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
     <Icon
       color={null}
       hasBorder={false}
+      isButton={false}
       isCircular={false}
       isColorInverted={false}
       isDisabled={false}
@@ -5682,6 +5737,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={false}
                   isDisabled={true}
@@ -5760,6 +5816,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     <Icon
                       color={null}
                       hasBorder={false}
+                      isButton={false}
                       isCircular={false}
                       isColorInverted={false}
                       isDisabled={false}
@@ -5794,6 +5851,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -5860,6 +5918,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -6107,6 +6166,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -6123,6 +6183,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -6161,6 +6222,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -6176,6 +6238,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -6260,6 +6323,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -6276,6 +6340,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -6313,6 +6378,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -6328,6 +6394,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -6601,6 +6668,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                       <Icon
                                         color={null}
                                         hasBorder={false}
+                                        isButton={false}
                                         isCircular={false}
                                         isColorInverted={false}
                                         isDisabled={false}
@@ -6617,6 +6685,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                       <Icon
                                         color={null}
                                         hasBorder={false}
+                                        isButton={false}
                                         isCircular={false}
                                         isColorInverted={false}
                                         isDisabled={false}
@@ -6702,6 +6771,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                         <Icon
                                           color={null}
                                           hasBorder={false}
+                                          isButton={false}
                                           isCircular={false}
                                           isColorInverted={false}
                                           isDisabled={false}
@@ -6718,6 +6788,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                         <Icon
                                           color={null}
                                           hasBorder={false}
+                                          isButton={false}
                                           isCircular={false}
                                           isColorInverted={false}
                                           isDisabled={false}
@@ -6802,6 +6873,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                           <Icon
                                             color={null}
                                             hasBorder={false}
+                                            isButton={false}
                                             isCircular={false}
                                             isColorInverted={false}
                                             isDisabled={false}
@@ -6818,6 +6890,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                           <Icon
                                             color={null}
                                             hasBorder={false}
+                                            isButton={false}
                                             isCircular={false}
                                             isColorInverted={false}
                                             isDisabled={false}
@@ -7104,6 +7177,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -7409,6 +7483,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -7764,6 +7839,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     <Icon
                       color={null}
                       hasBorder={false}
+                      isButton={false}
                       isCircular={false}
                       isColorInverted={false}
                       isDisabled={false}
@@ -7798,6 +7874,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -7864,6 +7941,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -8078,6 +8156,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       <Icon
                         color={null}
                         hasBorder={false}
+                        isButton={false}
                         isCircular={false}
                         isColorInverted={false}
                         isDisabled={false}
@@ -8149,6 +8228,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
     <Icon
       color={null}
       hasBorder={false}
+      isButton={false}
       isCircular={false}
       isColorInverted={false}
       isDisabled={false}
@@ -8267,6 +8347,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -8283,6 +8364,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -8321,6 +8403,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -8336,6 +8419,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -8420,6 +8504,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -8436,6 +8521,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -8473,6 +8559,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -8488,6 +8575,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -8761,6 +8849,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                       <Icon
                                         color={null}
                                         hasBorder={false}
+                                        isButton={false}
                                         isCircular={false}
                                         isColorInverted={false}
                                         isDisabled={false}
@@ -8777,6 +8866,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                       <Icon
                                         color={null}
                                         hasBorder={false}
+                                        isButton={false}
                                         isCircular={false}
                                         isColorInverted={false}
                                         isDisabled={false}
@@ -8862,6 +8952,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                         <Icon
                                           color={null}
                                           hasBorder={false}
+                                          isButton={false}
                                           isCircular={false}
                                           isColorInverted={false}
                                           isDisabled={false}
@@ -8878,6 +8969,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                         <Icon
                                           color={null}
                                           hasBorder={false}
+                                          isButton={false}
                                           isCircular={false}
                                           isColorInverted={false}
                                           isDisabled={false}
@@ -8962,6 +9054,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                           <Icon
                                             color={null}
                                             hasBorder={false}
+                                            isButton={false}
                                             isCircular={false}
                                             isColorInverted={false}
                                             isDisabled={false}
@@ -8978,6 +9071,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                           <Icon
                                             color={null}
                                             hasBorder={false}
+                                            isButton={false}
                                             isCircular={false}
                                             isColorInverted={false}
                                             isDisabled={false}
@@ -9264,6 +9358,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -9569,6 +9664,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -9924,6 +10020,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     <Icon
                       color={null}
                       hasBorder={false}
+                      isButton={false}
                       isCircular={false}
                       isColorInverted={false}
                       isDisabled={false}
@@ -9958,6 +10055,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -10024,6 +10122,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -10238,6 +10337,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       <Icon
                         color={null}
                         hasBorder={false}
+                        isButton={false}
                         isCircular={false}
                         isColorInverted={false}
                         isDisabled={false}
@@ -10328,6 +10428,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
     <Icon
       color={null}
       hasBorder={false}
+      isButton={false}
       isCircular={false}
       isColorInverted={false}
       isDisabled={false}
@@ -10403,6 +10504,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     <Icon
                       color={null}
                       hasBorder={false}
+                      isButton={false}
                       isCircular={false}
                       isColorInverted={false}
                       isDisabled={false}
@@ -10437,6 +10539,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -10503,6 +10606,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -10750,6 +10854,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -10766,6 +10871,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -10804,6 +10910,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -10819,6 +10926,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -10903,6 +11011,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -10919,6 +11028,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -10956,6 +11066,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -10971,6 +11082,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -11244,6 +11356,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                       <Icon
                                         color={null}
                                         hasBorder={false}
+                                        isButton={false}
                                         isCircular={false}
                                         isColorInverted={false}
                                         isDisabled={false}
@@ -11260,6 +11373,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                       <Icon
                                         color={null}
                                         hasBorder={false}
+                                        isButton={false}
                                         isCircular={false}
                                         isColorInverted={false}
                                         isDisabled={false}
@@ -11345,6 +11459,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                         <Icon
                                           color={null}
                                           hasBorder={false}
+                                          isButton={false}
                                           isCircular={false}
                                           isColorInverted={false}
                                           isDisabled={false}
@@ -11361,6 +11476,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                         <Icon
                                           color={null}
                                           hasBorder={false}
+                                          isButton={false}
                                           isCircular={false}
                                           isColorInverted={false}
                                           isDisabled={false}
@@ -11445,6 +11561,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                           <Icon
                                             color={null}
                                             hasBorder={false}
+                                            isButton={false}
                                             isCircular={false}
                                             isColorInverted={false}
                                             isDisabled={false}
@@ -11461,6 +11578,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                           <Icon
                                             color={null}
                                             hasBorder={false}
+                                            isButton={false}
                                             isCircular={false}
                                             isColorInverted={false}
                                             isDisabled={false}
@@ -11747,6 +11865,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -12052,6 +12171,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                             <Icon
                                               color={null}
                                               hasBorder={false}
+                                              isButton={false}
                                               isCircular={false}
                                               isColorInverted={false}
                                               isDisabled={false}
@@ -12407,6 +12527,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     <Icon
                       color={null}
                       hasBorder={false}
+                      isButton={false}
                       isCircular={false}
                       isColorInverted={false}
                       isDisabled={false}
@@ -12441,6 +12562,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -12507,6 +12629,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
