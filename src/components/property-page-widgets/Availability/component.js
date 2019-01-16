@@ -165,6 +165,7 @@ class Component extends PureComponent {
             <GridRow>
               <GridColumn width={6}>
                 <Icon
+                  isButton
                   labelText={previousMonthsButtonLabel}
                   name={ICON_NAMES.ARROW_LEFT}
                   onClick={this.handleClickPreviousMonth}
@@ -172,6 +173,7 @@ class Component extends PureComponent {
               </GridColumn>
               <GridColumn textAlign="right" width={6}>
                 <Icon
+                  isButton
                   isLabelLeft
                   labelText={nextMonthsButtonLabel}
                   name={ICON_NAMES.ARROW_RIGHT}
