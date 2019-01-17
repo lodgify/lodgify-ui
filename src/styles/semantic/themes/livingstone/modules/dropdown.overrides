@@ -416,3 +416,15 @@
 .indent-2 span {
   margin-left: @indentationLevelTwo;
 }
+
+.indent-3 span {
+  margin-left: @indentationLevelThree;
+}
+
+.indent-4 span {
+  margin-left: @indentationLevelFour;
+}
+
+.indent-5 span {
+  margin-left: @indentationLevelFive;
+}
