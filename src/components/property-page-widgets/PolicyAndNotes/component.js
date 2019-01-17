@@ -25,16 +25,16 @@ import {
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   cancellationPolicyHeadingText,
-  cancellationPolicyText,
+  cancellationPolicyRules,
   damageDepositHeadingText,
-  damageDepositText,
+  damageDepositRules,
   extraNotesText,
   modalTriggerText,
   notesHeadingText,
   notesText,
   headingText,
   paymentScheduleHeadingText,
-  paymentScheduleText,
+  paymentScheduleRules,
 }) => (
   <Grid stackable>
     <GridRow>
@@ -42,27 +42,27 @@ export const Component = ({
         <Heading>{headingText}</Heading>
       </GridColumn>
     </GridRow>
-    {(!!paymentScheduleText || !!cancellationPolicyText) && (
+    {(!!paymentScheduleRules || !!cancellationPolicyRules) && (
       <GridRow>
-        {!!paymentScheduleText && (
+        {!!paymentScheduleRules && (
           <GridColumn width={6}>
             <Heading size="small">{paymentScheduleHeadingText}</Heading>
-            <Paragraph size="medium">{paymentScheduleText}</Paragraph>
+            <Paragraph size="medium">{paymentScheduleRules}</Paragraph>
           </GridColumn>
         )}
-        {!!cancellationPolicyText && (
+        {!!cancellationPolicyRules && (
           <GridColumn width={6}>
             <Heading size="small">{cancellationPolicyHeadingText}</Heading>
-            <Paragraph size="medium">{cancellationPolicyText}</Paragraph>
+            <Paragraph size="medium">{cancellationPolicyRules}</Paragraph>
           </GridColumn>
         )}
       </GridRow>
     )}
-    {!!damageDepositText && (
+    {!!damageDepositRules && (
       <GridRow>
         <GridColumn width={12}>
           <Heading size="small">{damageDepositHeadingText}</Heading>
-          <Paragraph size="medium">{damageDepositText}</Paragraph>
+          <Paragraph size="medium">{damageDepositRules}</Paragraph>
         </GridColumn>
       </GridRow>
     )}
@@ -96,27 +96,27 @@ Component.displayName = 'PolicyAndNotes';
 
 Component.defaultProps = {
   cancellationPolicyHeadingText: CANCELLATION_POLICY,
-  cancellationPolicyText: null,
+  cancellationPolicyRules: null,
   damageDepositHeadingText: DAMAGE_DEPOSIT,
-  damageDepositText: null,
+  damageDepositRules: null,
   extraNotesText: null,
   modalTriggerText: VIEW_MORE,
   notesHeadingText: NOTES,
   notesText: null,
   headingText: POLICY_AND_NOTES,
   paymentScheduleHeadingText: PAYMENT_SCHEDULE,
-  paymentScheduleText: null,
+  paymentScheduleRules: null,
 };
 
 Component.propTypes = {
   /** The Cancellation policy heading text */
   cancellationPolicyHeadingText: PropTypes.string,
-  /** The Cancellation Policy text to display. */
-  cancellationPolicyText: PropTypes.string,
+  /** The list of Cancellation Policy rules to display. */
+  cancellationPolicyRules: PropTypes.arrayOf(PropTypes.string),
   /** The Damage Deposit heading text */
   damageDepositHeadingText: PropTypes.string,
-  /** The Damage Deposit text to display. */
-  damageDepositText: PropTypes.string,
+  /** The list of Damage Deposit rules to display. */
+  damageDepositRules: PropTypes.arrayOf(PropTypes.string),
   /** The Extra Notes text to display. */
   extraNotesText: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
@@ -129,6 +129,6 @@ Component.propTypes = {
   notesText: PropTypes.string,
   /** The Payment Schedule heading text */
   paymentScheduleHeadingText: PropTypes.string,
-  /** The Payment Schedule text to display. */
-  paymentScheduleText: PropTypes.string,
+  /** The list of Payment Schedule rules to display. */
+  paymentScheduleRules: PropTypes.arrayOf(PropTypes.string),
 };

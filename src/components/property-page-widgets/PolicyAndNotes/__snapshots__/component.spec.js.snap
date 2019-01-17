@@ -3,16 +3,17 @@
 exports[`<PolicyAndNotes /> if \`props.cancellationPolicyText\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
+  cancellationPolicyRules={null}
   cancellationPolicyText="All paid prepayments are non-refundable."
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText={null}
   headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -62,59 +63,6 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyText\` is passed should
                         </h3>
                       </Header>
                     </Heading>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-            </div>
-          </GridRow>
-        </GridRow>
-        <GridRow
-          horizontalAlignContent="left"
-        >
-          <GridRow
-            textAlign="left"
-          >
-            <div
-              className="left aligned row"
-            >
-              <GridColumn
-                verticalAlignContent="top"
-                width={6}
-              >
-                <GridColumn
-                  verticalAlign="top"
-                  width={6}
-                >
-                  <div
-                    className="top aligned six wide column"
-                  >
-                    <Heading
-                      isColorInverted={false}
-                      size="small"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h4"
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h4
-                          className="ui header"
-                        >
-                          Cancellation Policy
-                        </h4>
-                      </Header>
-                    </Heading>
-                    <Paragraph
-                      size="medium"
-                      weight={null}
-                    >
-                      <p
-                        className=""
-                      >
-                        All paid prepayments are non-refundable.
-                      </p>
-                    </Paragraph>
                   </div>
                 </GridColumn>
               </GridColumn>
@@ -130,8 +78,9 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyText\` is passed should
 exports[`<PolicyAndNotes /> if \`props.damageDepositText\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
+  damageDepositRules={null}
   damageDepositText="A refundable damage deposit of 200.00 € (EUR) is due."
   extraNotesText={null}
   headingText="Policy and Notes"
@@ -139,7 +88,7 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositText\` is passed should have
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -195,59 +144,6 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositText\` is passed should have
             </div>
           </GridRow>
         </GridRow>
-        <GridRow
-          horizontalAlignContent="left"
-        >
-          <GridRow
-            textAlign="left"
-          >
-            <div
-              className="left aligned row"
-            >
-              <GridColumn
-                verticalAlignContent="top"
-                width={12}
-              >
-                <GridColumn
-                  verticalAlign="top"
-                  width={12}
-                >
-                  <div
-                    className="top aligned twelve wide column"
-                  >
-                    <Heading
-                      isColorInverted={false}
-                      size="small"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h4"
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h4
-                          className="ui header"
-                        >
-                          Damage Deposit
-                        </h4>
-                      </Header>
-                    </Heading>
-                    <Paragraph
-                      size="medium"
-                      weight={null}
-                    >
-                      <p
-                        className=""
-                      >
-                        A refundable damage deposit of 200.00 € (EUR) is due.
-                      </p>
-                    </Paragraph>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-            </div>
-          </GridRow>
-        </GridRow>
       </div>
     </Grid>
   </Grid>
@@ -257,9 +153,9 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositText\` is passed should have
 exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText="
   Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
 
@@ -274,7 +170,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -499,9 +395,9 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
 exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText={null}
   headingText="Policy and Notes"
   modalTriggerText="View more"
@@ -512,7 +408,7 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 "
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -634,15 +530,16 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
 exports[`<PolicyAndNotes /> if \`props.paymentScheduleText\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText={null}
   headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
+  paymentScheduleRules={null}
   paymentScheduleText="50% due at time of booking. Remaining balance: Due later."
 >
   <Grid
@@ -699,59 +596,6 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleText\` is passed should ha
             </div>
           </GridRow>
         </GridRow>
-        <GridRow
-          horizontalAlignContent="left"
-        >
-          <GridRow
-            textAlign="left"
-          >
-            <div
-              className="left aligned row"
-            >
-              <GridColumn
-                verticalAlignContent="top"
-                width={6}
-              >
-                <GridColumn
-                  verticalAlign="top"
-                  width={6}
-                >
-                  <div
-                    className="top aligned six wide column"
-                  >
-                    <Heading
-                      isColorInverted={false}
-                      size="small"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h4"
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h4
-                          className="ui header"
-                        >
-                          Payment Schedule
-                        </h4>
-                      </Header>
-                    </Heading>
-                    <Paragraph
-                      size="medium"
-                      weight={null}
-                    >
-                      <p
-                        className=""
-                      >
-                        50% due at time of booking. Remaining balance: Due later.
-                      </p>
-                    </Paragraph>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-            </div>
-          </GridRow>
-        </GridRow>
       </div>
     </Grid>
   </Grid>
@@ -761,16 +605,16 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleText\` is passed should ha
 exports[`<PolicyAndNotes /> should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText={null}
   headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
