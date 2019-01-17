@@ -327,6 +327,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                           <Icon
                             color={null}
                             hasBorder={false}
+                            isButton={false}
                             isCircular={false}
                             isColorInverted={false}
                             isDisabled={false}

@@ -45,6 +45,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
         <Icon
           color="light grey"
           hasBorder={false}
+          isButton={false}
           isCircular={false}
           isColorInverted={false}
           isDisabled={false}
@@ -239,6 +240,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
           <Icon
             color={null}
             hasBorder={false}
+            isButton={true}
             isCircular={false}
             isColorInverted={false}
             isDisabled={false}
@@ -259,6 +261,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
           <Icon
             color={null}
             hasBorder={false}
+            isButton={true}
             isCircular={false}
             isColorInverted={false}
             isDisabled={false}
@@ -290,6 +293,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
         <Icon
           color="light grey"
           hasBorder={false}
+          isButton={false}
           isCircular={false}
           isColorInverted={false}
           isDisabled={false}
@@ -390,6 +394,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
         <Icon
           color="light grey"
           hasBorder={false}
+          isButton={false}
           isCircular={false}
           isColorInverted={false}
           isDisabled={false}
@@ -584,6 +589,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
           <Icon
             color={null}
             hasBorder={false}
+            isButton={true}
             isCircular={false}
             isColorInverted={false}
             isDisabled={false}
@@ -604,6 +610,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
           <Icon
             color={null}
             hasBorder={false}
+            isButton={true}
             isCircular={false}
             isColorInverted={false}
             isDisabled={false}
@@ -635,6 +642,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
         <Icon
           color="light grey"
           hasBorder={false}
+          isButton={false}
           isCircular={false}
           isColorInverted={false}
           isDisabled={false}

@@ -128,6 +128,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                           <Icon
                             color={null}
                             hasBorder={false}
+                            isButton={false}
                             isCircular={false}
                             isColorInverted={false}
                             isDisabled={false}
@@ -145,6 +146,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -256,6 +258,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -284,6 +287,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -302,6 +306,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -417,6 +422,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -507,6 +513,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -844,6 +851,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                           <Icon
                             color={null}
                             hasBorder={false}
+                            isButton={false}
                             isCircular={false}
                             isColorInverted={false}
                             isDisabled={false}
@@ -861,6 +869,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -972,6 +981,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1000,6 +1010,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -1018,6 +1029,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -1133,6 +1145,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1223,6 +1236,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1560,6 +1574,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                           <Icon
                             color={null}
                             hasBorder={false}
+                            isButton={false}
                             isCircular={false}
                             isColorInverted={false}
                             isDisabled={false}
@@ -1577,6 +1592,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1688,6 +1704,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1716,6 +1733,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -1734,6 +1752,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}

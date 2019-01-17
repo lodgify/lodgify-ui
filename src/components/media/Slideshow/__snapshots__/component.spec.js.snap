@@ -149,6 +149,7 @@ exports[`<Slideshow /> by default should return the right structure 1`] = `
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}
@@ -190,6 +191,7 @@ exports[`<Slideshow /> by default should return the right structure 1`] = `
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}
@@ -545,6 +547,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}
@@ -586,6 +589,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}
@@ -941,6 +945,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}
@@ -982,6 +987,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}
@@ -1337,6 +1343,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}
@@ -1378,6 +1385,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}
@@ -1750,6 +1758,7 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}
@@ -1791,6 +1800,7 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
                 <Icon
                   color={null}
                   hasBorder={false}
+                  isButton={false}
                   isCircular={false}
                   isColorInverted={true}
                   isDisabled={false}

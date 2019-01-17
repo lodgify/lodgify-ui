@@ -155,6 +155,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -219,6 +220,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -421,6 +423,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -769,6 +772,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -1117,6 +1121,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -1441,6 +1446,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                   <Icon
                     color={null}
                     hasBorder={false}
+                    isButton={false}
                     isCircular={false}
                     isColorInverted={false}
                     isDisabled={false}
@@ -1478,6 +1484,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                   <Icon
                     color={null}
                     hasBorder={false}
+                    isButton={false}
                     isCircular={false}
                     isColorInverted={false}
                     isDisabled={false}
@@ -1515,6 +1522,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                   <Icon
                     color={null}
                     hasBorder={false}
+                    isButton={false}
                     isCircular={false}
                     isColorInverted={false}
                     isDisabled={false}
@@ -1650,6 +1658,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -1714,6 +1723,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -1970,6 +1980,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -2086,6 +2097,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -2202,6 +2214,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -2498,6 +2511,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -2621,6 +2635,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -2960,6 +2975,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -3024,6 +3040,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 <Icon
                                   color={null}
                                   hasBorder={false}
+                                  isButton={false}
                                   isCircular={false}
                                   isColorInverted={false}
                                   isDisabled={false}
@@ -3226,6 +3243,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -3574,6 +3592,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -3922,6 +3941,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                                         <Icon
                                                           color={null}
                                                           hasBorder={false}
+                                                          isButton={false}
                                                           isCircular={false}
                                                           isColorInverted={false}
                                                           isDisabled={false}
@@ -4246,6 +4266,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   <Icon
                     color={null}
                     hasBorder={false}
+                    isButton={false}
                     isCircular={false}
                     isColorInverted={false}
                     isDisabled={false}
@@ -4283,6 +4304,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   <Icon
                     color={null}
                     hasBorder={false}
+                    isButton={false}
                     isCircular={false}
                     isColorInverted={false}
                     isDisabled={false}
@@ -4320,6 +4342,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   <Icon
                     color={null}
                     hasBorder={false}
+                    isButton={false}
                     isCircular={false}
                     isColorInverted={false}
                     isDisabled={false}
@@ -4455,6 +4478,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -4519,6 +4543,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                   <Icon
                                     color={null}
                                     hasBorder={false}
+                                    isButton={false}
                                     isCircular={false}
                                     isColorInverted={false}
                                     isDisabled={false}
@@ -4775,6 +4800,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -4891,6 +4917,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
@@ -5007,6 +5034,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               <Icon
                                 color={null}
                                 hasBorder={false}
+                                isButton={false}
                                 isCircular={false}
                                 isColorInverted={false}
                                 isDisabled={false}
