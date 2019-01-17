@@ -1,3 +1,16 @@
+# [1.109.0](https://github.com/lodgify/lodgify-ui/compare/v1.108.0...v1.109.0) (2019-01-17)
+
+
+### Bug Fixes
+
+* **Availability:** consume Icon isButton prop ([31c2d92](https://github.com/lodgify/lodgify-ui/commit/31c2d92))
+* **Availability:** set min width and height for calendar months ([bd1e8d3](https://github.com/lodgify/lodgify-ui/commit/bd1e8d3))
+
+
+### Features
+
+* **Icon:** expose isButton prop ([dcaad8d](https://github.com/lodgify/lodgify-ui/commit/dcaad8d))
+
 # [1.108.0](https://github.com/lodgify/lodgify-ui/compare/v1.107.0...v1.108.0) (2019-01-14)
 
 
