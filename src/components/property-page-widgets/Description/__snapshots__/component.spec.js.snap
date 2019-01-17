@@ -156,6 +156,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -202,6 +203,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -248,6 +250,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -294,6 +297,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -376,6 +380,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -431,6 +436,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -486,6 +492,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -541,6 +548,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -632,6 +640,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -780,6 +789,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
               <Icon
                 color={null}
                 hasBorder={true}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}
@@ -817,6 +827,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
               <Icon
                 color={null}
                 hasBorder={true}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}
@@ -999,6 +1010,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1045,6 +1057,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1091,6 +1104,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1137,6 +1151,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1219,6 +1234,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1274,6 +1290,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1329,6 +1346,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1384,6 +1402,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1619,6 +1638,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1665,6 +1685,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1711,6 +1732,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1757,6 +1779,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1839,6 +1862,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1894,6 +1918,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -1949,6 +1974,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -2004,6 +2030,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                             <Icon
                               color={null}
                               hasBorder={false}
+                              isButton={false}
                               isCircular={false}
                               isColorInverted={false}
                               isDisabled={false}
@@ -2118,6 +2145,7 @@ exports[`<Description /> should have the correct structure 1`] = `
               <Icon
                 color={null}
                 hasBorder={true}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}
@@ -2155,6 +2183,7 @@ exports[`<Description /> should have the correct structure 1`] = `
               <Icon
                 color={null}
                 hasBorder={true}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}

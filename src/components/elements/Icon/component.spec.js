@@ -1,13 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import {
-  expectComponentToBe,
-  expectComponentToHaveChildren,
-  expectComponentToHaveDisplayName,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Paragraph } from 'typography/Paragraph';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Icon } from './component';
 
@@ -24,105 +17,45 @@ const props = {
 const getIcon = extraProps => shallow(<Icon {...props} {...extraProps} />);
 
 describe('<Icon />', () => {
-  it('should render a `i.icon` element', () => {
-    const wrapper = getIcon();
+  describe('by default', () => {
+    it('should render the right structure', () => {
+      const actual = getIcon();
 
-    expectComponentToBe(wrapper, 'i.icon');
+      expect(actual).toMatchSnapshot();
+    });
   });
 
-  describe('the `i.icon` element', () => {
-    it('should get the right props', () => {
-      const wrapper = getIcon();
-      const { color, size } = props;
-
-      expectComponentToHaveProps(wrapper, {
-        className: `icon ${color} ${size} circular has-border inverted grey inverted`,
-        some: 'otherProps',
-      });
-    });
-
-    it('should get the right props if `labelText` is passed', () => {
-      const wrapper = getIcon({
+  describe('if `labelText` is passed', () => {
+    it('should render the right structure', () => {
+      const actual = getIcon({
         labelText: 'hello world',
       });
-      const { color, size } = props;
 
-      expectComponentToHaveProps(wrapper, {
-        className: `icon ${color} ${size} circular has-border inverted grey has-label inverted`,
-        some: 'otherProps',
-      });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getIcon();
-
-      expectComponentToHaveChildren(wrapper, 'svg');
-    });
-
-    describe('if `props.labelText` is passed', () => {
-      it('should have the right children', () => {
-        const wrapper = getIcon({ labelText: 'someLabel' });
-
-        expectComponentToHaveChildren(wrapper, 'svg', Paragraph);
-      });
-    });
-
-    describe('if `props.isReversed` is true', () => {
-      it('should correctly render the label on the left side of the icon', () => {
-        const wrapper = getIcon({ labelText: 'somelabel', isLabelLeft: true });
-
-        expectComponentToHaveChildren(wrapper, Paragraph, 'svg');
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('the `svg` element', () => {
-    const getSvg = () => getIcon().find('svg');
+  describe('if `labelWeight` and `labelText` is passed', () => {
+    it('should render the right structure', () => {
+      const actual = getIcon({ labelText: 'someLabel', labelWeight: 'heavy' });
 
-    it('should get the right props', () => {
-      const wrapper = getSvg();
-
-      expectComponentToHaveProps(wrapper, {
-        viewBox: '0 0 24 24',
-      });
-    });
-
-    it('should have the right children', () => {
-      const wrapper = getSvg();
-
-      expectComponentToHaveChildren(wrapper, 'path');
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('the `path` element', () => {
-    it('should get the right props', () => {
-      const wrapper = getIcon().find('path');
+  describe('if `isReversed` is true', () => {
+    it('should render the right structure', () => {
+      const actual = getIcon({ labelText: 'somelabel', isLabelLeft: true });
 
-      expectComponentToHaveProps(wrapper, {
-        d: expect.any(String),
-        fill: 'currentColor',
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('the `Paragraph` component', () => {
-    const getIconWithLabel = props =>
-      getIcon({ labelText: 'someLabel', ...props }).find(Paragraph);
+  describe('if `isButton` is true', () => {
+    it('should render the right structure', () => {
+      const actual = getIcon({ isButton: true });
 
-    it('should have the right children', () => {
-      const wrapper = getIconWithLabel();
-
-      expectComponentToHaveChildren(wrapper, 'someLabel');
-    });
-
-    describe('if `props.labelWeight` is passed', () => {
-      it('should have the right props', () => {
-        const wrapper = getIconWithLabel({
-          labelWeight: 'heavy',
-        });
-
-        expectComponentToHaveProps(wrapper, { weight: 'heavy' });
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 

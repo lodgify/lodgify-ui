@@ -10,6 +10,7 @@ exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is \`0\` shoul
     <Icon
       color="yellow"
       hasBorder={false}
+      isButton={false}
       isCircular={false}
       isColorInverted={false}
       isDisabled={false}
@@ -47,6 +48,7 @@ exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is not \`0\` s
     <Icon
       color="yellow"
       hasBorder={false}
+      isButton={false}
       isCircular={false}
       isColorInverted={false}
       isDisabled={false}

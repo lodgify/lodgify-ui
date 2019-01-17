@@ -457,6 +457,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -520,6 +521,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -930,6 +932,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -993,6 +996,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1372,6 +1376,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                     <Icon
                       color={null}
                       hasBorder={false}
+                      isButton={false}
                       isCircular={false}
                       isColorInverted={true}
                       isDisabled={false}
@@ -1413,6 +1418,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                     <Icon
                       color={null}
                       hasBorder={false}
+                      isButton={false}
                       isCircular={false}
                       isColorInverted={true}
                       isDisabled={false}
@@ -1714,6 +1720,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -1777,6 +1784,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -2328,6 +2336,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}
@@ -2391,6 +2400,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                         <Icon
                           color={null}
                           hasBorder={false}
+                          isButton={false}
                           isCircular={false}
                           isColorInverted={false}
                           isDisabled={false}

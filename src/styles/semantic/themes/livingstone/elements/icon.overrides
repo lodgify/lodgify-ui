@@ -59,6 +59,11 @@ i.icon {
     p {
       display: inline;
     }
+
+    &.is-button {
+      cursor: pointer;
+      outline: none;
+    }
   }
 
   /*-------------------
