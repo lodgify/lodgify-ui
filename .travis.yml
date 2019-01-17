@@ -19,13 +19,13 @@ deploy:
     keep-history: true
     local-dir: './styleguide/dist'
     on:
-      branch: production
+      branch: master
     provider: pages
     skip_cleanup: true
   # Release npm
   - provider: script
     on:
-      branch: production
+      branch: master
     skip_cleanup: true
     script:
-      - npx semantic-release --branch production
+      - npx semantic-release
