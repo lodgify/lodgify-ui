@@ -109,11 +109,11 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The Cancellation policy heading text */
+  /** The Cancellation policy heading text. */
   cancellationPolicyHeadingText: PropTypes.string,
   /** The list of Cancellation Policy rules to display. */
   cancellationPolicyRules: PropTypes.arrayOf(PropTypes.string),
-  /** The Damage Deposit heading text */
+  /** The Damage Deposit heading text. */
   damageDepositHeadingText: PropTypes.string,
   /** The list of Damage Deposit rules to display. */
   damageDepositRules: PropTypes.arrayOf(PropTypes.string),
@@ -121,13 +121,13 @@ Component.propTypes = {
   extraNotesText: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
-  /** The View More trigger text */
+  /** The View More trigger text. */
   modalTriggerText: PropTypes.string,
-  /** The Notes heading text */
+  /** The Notes heading text. */
   notesHeadingText: PropTypes.string,
   /** The Notes text to display. */
   notesText: PropTypes.string,
-  /** The Payment Schedule heading text */
+  /** The Payment Schedule heading text. */
   paymentScheduleHeadingText: PropTypes.string,
   /** The list of Payment Schedule rules to display. */
   paymentScheduleRules: PropTypes.arrayOf(PropTypes.string),
