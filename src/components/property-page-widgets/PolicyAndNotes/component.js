@@ -19,6 +19,8 @@ import {
   VIEW_MORE,
 } from 'utils/default-strings';
 
+import { getRuleMarkup } from './utils/getRuleMarkup';
+
 /**
  * The standard widget for displaying the policy information and notes of a property.
  */
@@ -47,13 +49,13 @@ export const Component = ({
         {!!paymentScheduleRules && (
           <GridColumn width={6}>
             <Heading size="small">{paymentScheduleHeadingText}</Heading>
-            <Paragraph size="medium">{paymentScheduleRules}</Paragraph>
+            {paymentScheduleRules.map(getRuleMarkup)}
           </GridColumn>
         )}
         {!!cancellationPolicyRules && (
           <GridColumn width={6}>
             <Heading size="small">{cancellationPolicyHeadingText}</Heading>
-            <Paragraph size="medium">{cancellationPolicyRules}</Paragraph>
+            {cancellationPolicyRules.map(getRuleMarkup)}
           </GridColumn>
         )}
       </GridRow>
@@ -62,7 +64,7 @@ export const Component = ({
       <GridRow>
         <GridColumn width={12}>
           <Heading size="small">{damageDepositHeadingText}</Heading>
-          <Paragraph size="medium">{damageDepositRules}</Paragraph>
+          {damageDepositRules.map(getRuleMarkup)}
         </GridColumn>
       </GridRow>
     )}
