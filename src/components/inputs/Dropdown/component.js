@@ -133,8 +133,8 @@ Component.propTypes = {
       imageSrcSet: PropTypes.string,
       /** The source url of the image. */
       imageUrl: PropTypes.string,
-      /** The indent level of an option. One of: 1, 2 */
-      indent: PropTypes.oneOf([1, 2]),
+      /** The indent level of an option. One of: 0, 1, 2, 3, 4, 5 */
+      indent: PropTypes.oneOf([0, 1, 2, 3, 4, 5]),
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
