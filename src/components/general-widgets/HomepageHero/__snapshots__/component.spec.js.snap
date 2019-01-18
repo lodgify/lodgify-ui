@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HomepageHero by default should render the right structure 1`] = `
+exports[`HomepageHero should render the right structure 1`] = `
 <HomepageHero
   activeNavigationItemIndex={1}
   backgroundImageSizes="url"
@@ -70,6 +70,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
         },
       ]
     }
+    headerOnCloseSearchBarModal={[Function]}
     headerPrimaryCTA={
       Object {
         "onClick": [Function],
@@ -186,6 +187,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                 },
               ]
             }
+            onCloseSearchBarModal={[Function]}
             primaryCTA={
               Object {
                 "onClick": [Function],
@@ -290,6 +292,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                 onClick={[Function]}
                               >
                                 <SearchBar
+                                  className={null}
                                   getIsDayBlocked={[Function]}
                                   guestsOptions={
                                     Array [
@@ -329,6 +332,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                     />
                                   }
                                   onChangeInput={[Function]}
+                                  onCloseModal={[Function]}
                                   onSubmit={[Function]}
                                   searchButton={
                                     <button>
@@ -340,6 +344,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                 >
                                   <Modal
                                     isFullscreen={true}
+                                    onClose={[Function]}
                                     size="tiny"
                                     trigger={
                                       <Icon
@@ -380,6 +385,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                       content={
                                         <ModalContent>
                                           <Heading
+                                            className={null}
                                             isColorInverted={false}
                                             size="small"
                                             textAlign={null}
@@ -462,6 +468,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                       }
                                       dimmer="inverted"
                                       eventPool="Modal"
+                                      onClose={[Function]}
                                       size="fullscreen"
                                       trigger={
                                         <Icon
@@ -563,6 +570,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                               >
                                 <Modal
                                   isFullscreen={true}
+                                  onClose={[Function]}
                                   size="tiny"
                                   trigger={
                                     <Icon
@@ -629,6 +637,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                     }
                                     dimmer="inverted"
                                     eventPool="Modal"
+                                    onClose={[Function]}
                                     size="fullscreen"
                                     trigger={
                                       <Icon
@@ -836,62 +845,133 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                   <div
                     className="ui container"
                   >
-                    <Heading
-                      isColorInverted={true}
-                      size="huge"
-                      textAlign="center"
+                    <ShowOn
+                      computer={true}
+                      mobile={false}
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "isColorInverted": true,
+                          "size": "huge",
+                          "textAlign": "center",
+                        }
+                      }
+                      tablet={true}
+                      widescreen={true}
                     >
-                      <Header
-                        as="h1"
-                        inverted={true}
+                      <Heading
+                        className="show-on-tablet show-on-computer show-on-widescreen"
+                        isColorInverted={true}
+                        size="huge"
                         textAlign="center"
                       >
-                        <h1
-                          className="ui inverted center aligned header"
+                        <Header
+                          as="h1"
+                          className="show-on-tablet show-on-computer show-on-widescreen"
+                          inverted={true}
+                          textAlign="center"
                         >
-                          heading text
-                        </h1>
-                      </Header>
-                    </Heading>
+                          <h1
+                            className="ui inverted center aligned header show-on-tablet show-on-computer show-on-widescreen"
+                          >
+                            heading text
+                          </h1>
+                        </Header>
+                      </Heading>
+                    </ShowOn>
+                    <ShowOn
+                      computer={false}
+                      mobile={true}
+                      parent={[Function]}
+                      parentProps={
+                        Object {
+                          "isColorInverted": true,
+                          "size": "large",
+                          "textAlign": "center",
+                        }
+                      }
+                      tablet={false}
+                      widescreen={false}
+                    >
+                      <Heading
+                        className="show-on-mobile"
+                        isColorInverted={true}
+                        size="large"
+                        textAlign="center"
+                      >
+                        <Header
+                          as="h2"
+                          className="show-on-mobile"
+                          inverted={true}
+                          textAlign="center"
+                        >
+                          <h2
+                            className="ui inverted center aligned header show-on-mobile"
+                          >
+                            heading text
+                          </h2>
+                        </Header>
+                      </Heading>
+                    </ShowOn>
                   </div>
                 </Container>
               </HorizontalGutters>
-              <ShowOn
-                computer={true}
-                mobile={false}
-                parent={[Function]}
-                parentProps={Object {}}
-                tablet={true}
-                widescreen={true}
-              >
-                <HorizontalGutters
-                  className="show-on-tablet show-on-computer show-on-widescreen"
-                >
-                  <Container
-                    className="show-on-tablet show-on-computer show-on-widescreen"
+              <HorizontalGutters>
+                <Container>
+                  <div
+                    className="ui container"
                   >
-                    <div
-                      className="ui container show-on-tablet show-on-computer show-on-widescreen"
+                    <Grid
+                      areColumnsCentered={true}
                     >
                       <Grid
-                        areColumnsCentered={true}
+                        centered={true}
                       >
-                        <Grid
-                          centered={true}
+                        <div
+                          className="ui centered grid"
                         >
-                          <div
-                            className="ui centered grid"
+                          <GridRow
+                            horizontalAlignContent="center"
                           >
                             <GridRow
-                              horizontalAlignContent="center"
+                              textAlign="center"
                             >
-                              <GridRow
-                                textAlign="center"
+                              <div
+                                className="center aligned row"
                               >
-                                <div
-                                  className="center aligned row"
+                                <ShowOn
+                                  computer={true}
+                                  mobile={false}
+                                  parent={[Function]}
+                                  parentProps={
+                                    Object {
+                                      "dateRangePickerLocaleCode": undefined,
+                                      "getIsDayBlocked": [Function],
+                                      "guestsOptions": Array [
+                                        Object {
+                                          "text": "1",
+                                          "value": "1",
+                                        },
+                                      ],
+                                      "locationOptions": Array [
+                                        Object {
+                                          "text": "1",
+                                          "value": "1",
+                                        },
+                                      ],
+                                      "onChangeInput": [Function],
+                                      "onSubmit": [Function],
+                                      "searchButton": <button>
+                                        search button
+                                      </button>,
+                                      "willDropdownsOpenAbove": true,
+                                    }
+                                  }
+                                  tablet={true}
+                                  widescreen={true}
                                 >
                                   <SearchBar
+                                    className="show-on-tablet show-on-computer show-on-widescreen"
                                     getIsDayBlocked={[Function]}
                                     guestsOptions={
                                       Array [
@@ -931,6 +1011,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                       />
                                     }
                                     onChangeInput={[Function]}
+                                    onCloseModal={[Function]}
                                     onSubmit={[Function]}
                                     searchButton={
                                       <button>
@@ -941,7 +1022,7 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                     willDropdownsOpenAbove={true}
                                   >
                                     <div
-                                      className="search-bar"
+                                      className="show-on-tablet show-on-computer show-on-widescreen search-bar"
                                     >
                                       <Form
                                         as="form"
@@ -3069,16 +3150,34 @@ exports[`HomepageHero by default should render the right structure 1`] = `
                                       </Form>
                                     </div>
                                   </SearchBar>
-                                </div>
-                              </GridRow>
+                                </ShowOn>
+                                <ShowOn
+                                  computer={false}
+                                  mobile={true}
+                                  parent="div"
+                                  parentProps={Object {}}
+                                  tablet={false}
+                                  widescreen={false}
+                                >
+                                  <div
+                                    className="show-on-mobile"
+                                  >
+                                    <button
+                                      onClick={[Function]}
+                                    >
+                                      search button
+                                    </button>
+                                  </div>
+                                </ShowOn>
+                              </div>
                             </GridRow>
-                          </div>
-                        </Grid>
+                          </GridRow>
+                        </div>
                       </Grid>
-                    </div>
-                  </Container>
-                </HorizontalGutters>
-              </ShowOn>
+                    </Grid>
+                  </div>
+                </Container>
+              </HorizontalGutters>
             </div>
           </FlexContainer>
         </div>

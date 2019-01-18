@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as HomepageHero } from './component';
@@ -24,16 +24,40 @@ const props = {
   searchBarSearchButton: <button>search button</button>,
 };
 
-const getHomepageHero = () => mount(<HomepageHero {...props} />);
+const getHomepageHero = () => shallow(<HomepageHero {...props} />);
 
 describe('HomepageHero', () => {
-  describe('by default', () => {
-    it('should render the right structure', () => {
-      const actual = getHomepageHero();
+  describe('`handleClickSearchBarSearchButton`', () => {
+    it('should set state with the right value', () => {
+      const wrapper = getHomepageHero();
 
-      expect(actual).toMatchSnapshot();
+      wrapper.instance().handleClickSearchBarSearchButton();
+
+      const actual = wrapper.state('isSearchBarModalOpen');
+
+      expect(actual).toBe(true);
     });
   });
+
+  describe('`handleCloseModal`', () => {
+    it('should set state with the right value', () => {
+      const wrapper = getHomepageHero();
+
+      wrapper.setState({ isSearchBarModalOpen: true });
+      wrapper.instance().handleCloseModal();
+
+      const actual = wrapper.state('isSearchBarModalOpen');
+
+      expect(actual).toBe(undefined);
+    });
+  });
+
+  it('should render the right structure', () => {
+    const actual = mount(<HomepageHero {...props} />);
+
+    expect(actual).toMatchSnapshot();
+  });
+
   it('should have the displayName `HomepageHero`', () => {
     expectComponentToHaveDisplayName(HomepageHero, 'HomepageHero');
   });
