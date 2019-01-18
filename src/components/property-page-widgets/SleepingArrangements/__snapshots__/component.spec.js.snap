@@ -21,12 +21,14 @@ exports[`<SleepingArrangements /> by default should render the right structure 1
   }
 >
   <Heading
+    className={null}
     isColorInverted={false}
     size="medium"
     textAlign={null}
   >
     <Header
       as="h3"
+      className={null}
       inverted={false}
       textAlign={null}
     >
@@ -235,12 +237,14 @@ exports[`<SleepingArrangements /> if \`props.headingText\` is defined should ren
   }
 >
   <Heading
+    className={null}
     isColorInverted={false}
     size="medium"
     textAlign={null}
   >
     <Header
       as="h3"
+      className={null}
       inverted={false}
       textAlign={null}
     >

@@ -60,12 +60,14 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
               className="top aligned twelve wide column"
             >
               <Heading
+                className={null}
                 isColorInverted={false}
                 size="medium"
                 textAlign={null}
               >
                 <Header
                   as="h3"
+                  className={null}
                   inverted={false}
                   textAlign={null}
                 >

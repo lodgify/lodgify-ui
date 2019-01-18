@@ -20,12 +20,14 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
           className="ui segment"
         >
           <Heading
+            className={null}
             isColorInverted={false}
             size="medium"
             textAlign={null}
           >
             <Header
               as="h3"
+              className={null}
               inverted={false}
               textAlign={null}
             >
@@ -239,12 +241,14 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
               <span>
                 from 
                 <Heading
+                  className={null}
                   isColorInverted={false}
                   size="small"
                   textAlign={null}
                 >
                   <Header
                     as="h4"
+                    className={null}
                     inverted={false}
                     textAlign={null}
                   >
@@ -295,12 +299,14 @@ exports[`\`getSummaryMarkup\` should render the right structure if \`areOnlyNigh
               <span>
                 from 
                 <Heading
+                  className={null}
                   isColorInverted={false}
                   size="small"
                   textAlign={null}
                 >
                   <Header
                     as="h4"
+                    className={null}
                     inverted={false}
                     textAlign={null}
                   >

@@ -46,12 +46,14 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -198,12 +200,14 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                     className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -303,12 +307,14 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -455,12 +461,14 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                     className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -553,12 +561,14 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -705,12 +715,14 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                     className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -807,12 +819,14 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -959,12 +973,14 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                     className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >

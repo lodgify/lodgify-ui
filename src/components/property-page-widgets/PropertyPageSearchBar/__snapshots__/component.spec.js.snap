@@ -78,6 +78,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
         className="show-on-computer show-on-widescreen"
       >
         <SearchBar
+          className={null}
           getIsDayBlocked={[Function]}
           guestsOptions={
             Array [
@@ -122,6 +123,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
             />
           }
           onChangeInput={[Function]}
+          onCloseModal={[Function]}
           onSubmit={[Function]}
           searchButton={
             <Button
@@ -208,12 +210,14 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               className="ui segment"
                                             >
                                               <Heading
+                                                className={null}
                                                 isColorInverted={false}
                                                 size="medium"
                                                 textAlign={null}
                                               >
                                                 <Header
                                                   as="h3"
+                                                  className={null}
                                                   inverted={false}
                                                   textAlign={null}
                                                 >
@@ -427,12 +431,14 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   <span>
                                                     from 
                                                     <Heading
+                                                      className={null}
                                                       isColorInverted={false}
                                                       size="small"
                                                       textAlign={null}
                                                     >
                                                       <Header
                                                         as="h4"
+                                                        className={null}
                                                         inverted={false}
                                                         textAlign={null}
                                                       >
@@ -2574,6 +2580,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
         className="show-on-mobile show-on-tablet"
       >
         <SearchBar
+          className={null}
           getIsDayBlocked={[Function]}
           guestsOptions={
             Array [
@@ -2626,6 +2633,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
             </Button>
           }
           onChangeInput={[Function]}
+          onCloseModal={[Function]}
           onSubmit={[Function]}
           searchButton={
             <Button
@@ -2721,12 +2729,14 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   <span>
                                                     from 
                                                     <Heading
+                                                      className={null}
                                                       isColorInverted={false}
                                                       size="small"
                                                       textAlign={null}
                                                     >
                                                       <Header
                                                         as="h4"
+                                                        className={null}
                                                         inverted={false}
                                                         textAlign={null}
                                                       >
@@ -2913,6 +2923,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                   >
                                     <Modal
                                       isFullscreen={true}
+                                      onClose={[Function]}
                                       size="tiny"
                                       trigger={
                                         <Button
@@ -3042,6 +3053,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         }
                                         dimmer="inverted"
                                         eventPool="Modal"
+                                        onClose={[Function]}
                                         size="fullscreen"
                                         trigger={
                                           <Button

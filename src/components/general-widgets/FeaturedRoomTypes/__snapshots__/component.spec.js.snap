@@ -150,12 +150,14 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                             <span>
                               from 
                               <Heading
+                                className={null}
                                 isColorInverted={false}
                                 size="medium"
                                 textAlign={null}
                               >
                                 <Header
                                   as="h3"
+                                  className={null}
                                   inverted={false}
                                   textAlign={null}
                                 >
@@ -291,12 +293,14 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                             <span>
                               from 
                               <Heading
+                                className={null}
                                 isColorInverted={false}
                                 size="medium"
                                 textAlign={null}
                               >
                                 <Header
                                   as="h3"
+                                  className={null}
                                   inverted={false}
                                   textAlign={null}
                                 >
@@ -374,12 +378,14 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
               className="top aligned twelve wide column"
             >
               <Heading
+                className={null}
                 isColorInverted={false}
                 size="medium"
                 textAlign={null}
               >
                 <Header
                   as="h3"
+                  className={null}
                   inverted={false}
                   textAlign={null}
                 >
@@ -506,12 +512,14 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                             <span>
                               from 
                               <Heading
+                                className={null}
                                 isColorInverted={false}
                                 size="medium"
                                 textAlign={null}
                               >
                                 <Header
                                   as="h3"
+                                  className={null}
                                   inverted={false}
                                   textAlign={null}
                                 >
@@ -647,12 +655,14 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                             <span>
                               from 
                               <Heading
+                                className={null}
                                 isColorInverted={false}
                                 size="medium"
                                 textAlign={null}
                               >
                                 <Header
                                   as="h3"
+                                  className={null}
                                   inverted={false}
                                   textAlign={null}
                                 >

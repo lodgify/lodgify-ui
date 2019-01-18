@@ -50,12 +50,14 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyRules\` is passed shoul
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -93,12 +95,14 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyRules\` is passed shoul
                     className="top aligned six wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -182,12 +186,14 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositRules\` is passed should hav
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -225,12 +231,14 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositRules\` is passed should hav
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -318,12 +326,14 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -362,6 +372,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                   >
                     <Modal
                       isFullscreen={false}
+                      onClose={[Function]}
                       size="tiny"
                       trigger={
                         <Link
@@ -423,6 +434,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                         }
                         dimmer="inverted"
                         eventPool="Modal"
+                        onClose={[Function]}
                         size="tiny"
                         trigger={
                           <Link
@@ -556,12 +568,14 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -599,12 +613,14 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -692,12 +708,14 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should h
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -735,12 +753,14 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should h
                     className="top aligned six wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >
@@ -831,12 +851,14 @@ exports[`<PolicyAndNotes /> should have the right structure 1`] = `
                     className="top aligned twelve wide column"
                   >
                     <Heading
+                      className={null}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
+                        className={null}
                         inverted={false}
                         textAlign={null}
                       >

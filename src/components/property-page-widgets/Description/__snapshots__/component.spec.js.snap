@@ -95,12 +95,14 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                 </span>
               </Subheading>
               <Heading
+                className={null}
                 isColorInverted={false}
                 size="large"
                 textAlign={null}
               >
                 <Header
                   as="h2"
+                  className={null}
                   inverted={false}
                   textAlign={null}
                 >
@@ -625,6 +627,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...
                   <Modal
                     isFullscreen={false}
+                    onClose={[Function]}
                     size="tiny"
                     trigger={
                       <Button
@@ -690,6 +693,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                       }
                       dimmer="inverted"
                       eventPool="Modal"
+                      onClose={[Function]}
                       size="tiny"
                       trigger={
                         <Button
@@ -949,12 +953,14 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                 </span>
               </Subheading>
               <Heading
+                className={null}
                 isColorInverted={false}
                 size="large"
                 textAlign={null}
               >
                 <Header
                   as="h2"
+                  className={null}
                   inverted={false}
                   textAlign={null}
                 >
@@ -1577,12 +1583,14 @@ exports[`<Description /> should have the correct structure 1`] = `
                 </span>
               </Subheading>
               <Heading
+                className={null}
                 isColorInverted={false}
                 size="large"
                 textAlign={null}
               >
                 <Header
                   as="h2"
+                  className={null}
                   inverted={false}
                   textAlign={null}
                 >

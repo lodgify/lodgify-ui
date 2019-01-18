@@ -35,12 +35,14 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
             className="content"
           >
             <Heading
+              className={null}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
+                className={null}
                 inverted={false}
                 textAlign={null}
               >
@@ -332,12 +334,14 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
             className="content"
           >
             <Heading
+              className={null}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
+                className={null}
                 inverted={false}
                 textAlign={null}
               >
@@ -629,12 +633,14 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
             className="content"
           >
             <Heading
+              className={null}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
+                className={null}
                 inverted={false}
                 textAlign={null}
               >
