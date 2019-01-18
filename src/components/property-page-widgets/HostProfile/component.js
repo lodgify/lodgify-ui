@@ -13,9 +13,9 @@ import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
-import { Paragraph } from 'typography/Paragraph';
 import { getHrefTelString } from 'utils/get-href-tel-string';
 
+import { getDescription } from './utils/getDescription';
 import { getStringWithColonSuffix } from './utils/getStringWithColonSuffix';
 
 /**
@@ -52,9 +52,7 @@ export const Component = ({
       </GridColumn>
     </GridRow>
     <GridRow verticalAlign="top">
-      <GridColumn computer={7} mobile={12} tablet={12}>
-        <Paragraph size="medium">{description}</Paragraph>
-      </GridColumn>
+      {getDescription(description)}
       <GridColumn computer={5} mobile={12} tablet={12}>
         <Heading size="small">{contactInformationHeadingText}</Heading>
         <List relaxed size="medium">
@@ -96,6 +94,7 @@ Component.defaultProps = {
   languagesLabel: LANGUAGES,
   phone: null,
   phoneLabel: PHONE,
+  description: null,
 };
 
 Component.propTypes = {
@@ -104,7 +103,7 @@ Component.propTypes = {
   /** The text for the contact information heading. */
   contactInformationHeadingText: PropTypes.string,
   /** The description of the property host. */
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   /** The email of the property host. */
   email: PropTypes.string,
   /** The label for the contact email address. */
