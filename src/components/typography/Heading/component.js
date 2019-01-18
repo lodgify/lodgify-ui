@@ -10,9 +10,16 @@ const SIZES = ['huge', 'large', 'medium', 'small'];
  * A heading identifies a block of content.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ children, isColorInverted, size, textAlign }) => (
+export const Component = ({
+  children,
+  className,
+  isColorInverted,
+  size,
+  textAlign,
+}) => (
   <Header
     as={`h${getHeadingNumber(SIZES, size)}`}
+    className={className}
     inverted={isColorInverted}
     textAlign={textAlign}
   >
@@ -23,6 +30,7 @@ export const Component = ({ children, isColorInverted, size, textAlign }) => (
 Component.displayName = 'Heading';
 
 Component.defaultProps = {
+  className: null,
   isColorInverted: false,
   textAlign: null,
   size: 'medium',
@@ -31,6 +39,12 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The heading text. */
   children: PropTypes.string.isRequired,
+  /**
+   * Custom class name.
+   * Provided by `ShowOn` so ignored in the styleguide.
+   * @ignore
+   */
+  className: PropTypes.string,
   /** Is the color of the heading inverted for contrast. */
   isColorInverted: PropTypes.bool,
   /** The size of the heading. */
