@@ -1,19 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { upperCase } from 'lodash';
 
 import { withResponsive } from 'utils/with-responsive';
 import { Hero } from 'collections/Hero';
-import { HorizontalGutters } from 'layout/HorizontalGutters';
-import { FlexContainer } from 'layout/FlexContainer';
-import { Gallery } from 'media/Gallery';
-import { getGalleryHeadingMarkup } from 'utils/get-gallery-heading-markup';
-import { Button } from 'elements/Button';
-import { ICON_NAMES } from 'elements/Icon';
 import { VIEW_MORE_PICTURES } from 'utils/default-strings';
-import { Divider } from 'elements/Divider';
+import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
 
 import { BOTTOM_OFFSET } from './constants';
+import { getGalleryMarkup } from './utils/getGalleryMarkup';
 
 /**
  * A homepage hero displays a hero with heading and a search bar on desktop screens.
@@ -69,25 +63,12 @@ const Component = ({
       searchBarOnChangeInput={searchBarOnChangeInput}
       searchBarOnSubmit={searchBarOnSubmit}
     >
-      <FlexContainer alignItems="flex-end">
-        <HorizontalGutters>
-          <Gallery
-            heading={getGalleryHeadingMarkup(propertyName, ratingNumber)}
-            images={images}
-            trigger={
-              <Button
-                icon={ICON_NAMES.PLACEHOLDER}
-                isCompact
-                isPositionedRight
-                isSecondary
-              >
-                {upperCase(secondaryButtonText)}
-              </Button>
-            }
-          />
-        </HorizontalGutters>
-      </FlexContainer>
-      <Divider />
+      {getGalleryMarkup(
+        images,
+        propertyName,
+        ratingNumber,
+        secondaryButtonText
+      )}
     </Hero>
   );
 };
@@ -103,7 +84,7 @@ Component.defaultProps = {
   propertyName: null,
   ratingNumber: null,
   searchBarGetIsDayBlocked: undefined,
-  searchBarModalHeadingText: undefined,
+  searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
   searchBarSearchButton: undefined,
   secondaryButtonText: VIEW_MORE_PICTURES,
   searchBarOnChangeInput: undefined,
