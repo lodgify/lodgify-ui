@@ -1,18 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PolicyAndNotes /> if \`props.cancellationPolicyText\` is passed should have the right structure 1`] = `
+exports[`<PolicyAndNotes /> if \`props.cancellationPolicyRules\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText="All paid prepayments are non-refundable."
+  cancellationPolicyRules={
+    Array [
+      "All paid prepayments are non-refundable.",
+    ]
+  }
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText={null}
   headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -106,6 +110,7 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyText\` is passed should
                       </Header>
                     </Heading>
                     <Paragraph
+                      key="All paid prepayments are non-refundable.0"
                       size="medium"
                       weight={null}
                     >
@@ -127,19 +132,23 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyText\` is passed should
 </PolicyAndNotes>
 `;
 
-exports[`<PolicyAndNotes /> if \`props.damageDepositText\` is passed should have the right structure 1`] = `
+exports[`<PolicyAndNotes /> if \`props.damageDepositRules\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText="A refundable damage deposit of 200.00 € (EUR) is due."
+  damageDepositRules={
+    Array [
+      "A refundable damage deposit of 200.00 € (EUR) is due.",
+    ]
+  }
   extraNotesText={null}
   headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -233,6 +242,7 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositText\` is passed should have
                       </Header>
                     </Heading>
                     <Paragraph
+                      key="A refundable damage deposit of 200.00 € (EUR) is due.0"
                       size="medium"
                       weight={null}
                     >
@@ -257,9 +267,9 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositText\` is passed should have
 exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText="
   Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
 
@@ -274,7 +284,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -499,9 +509,9 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
 exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText={null}
   headingText="Policy and Notes"
   modalTriggerText="View more"
@@ -512,7 +522,7 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 "
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
@@ -631,19 +641,24 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
 </PolicyAndNotes>
 `;
 
-exports[`<PolicyAndNotes /> if \`props.paymentScheduleText\` is passed should have the right structure 1`] = `
+exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText={null}
   headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText="50% due at time of booking. Remaining balance: Due later."
+  paymentScheduleRules={
+    Array [
+      "50% due at time of booking.",
+      "Remaining balance: Due later.",
+    ]
+  }
 >
   <Grid
     areColumnsCentered={false}
@@ -737,13 +752,25 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleText\` is passed should ha
                       </Header>
                     </Heading>
                     <Paragraph
+                      key="50% due at time of booking.0"
                       size="medium"
                       weight={null}
                     >
                       <p
                         className=""
                       >
-                        50% due at time of booking. Remaining balance: Due later.
+                        50% due at time of booking.
+                      </p>
+                    </Paragraph>
+                    <Paragraph
+                      key="Remaining balance: Due later.1"
+                      size="medium"
+                      weight={null}
+                    >
+                      <p
+                        className=""
+                      >
+                        Remaining balance: Due later.
                       </p>
                     </Paragraph>
                   </div>
@@ -761,16 +788,16 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleText\` is passed should ha
 exports[`<PolicyAndNotes /> should have the right structure 1`] = `
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancellation Policy"
-  cancellationPolicyText={null}
+  cancellationPolicyRules={null}
   damageDepositHeadingText="Damage Deposit"
-  damageDepositText={null}
+  damageDepositRules={null}
   extraNotesText={null}
   headingText="Policy and Notes"
   modalTriggerText="View more"
   notesHeadingText="Notes"
   notesText={null}
   paymentScheduleHeadingText="Payment Schedule"
-  paymentScheduleText={null}
+  paymentScheduleRules={null}
 >
   <Grid
     areColumnsCentered={false}
