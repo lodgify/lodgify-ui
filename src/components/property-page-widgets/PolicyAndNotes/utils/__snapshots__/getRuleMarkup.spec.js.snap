@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`getRuleMarkup\` should return the right structure 1`] = `
+<Paragraph
+  size="medium"
+  weight={null}
+>
+  yo
+</Paragraph>
+`;
