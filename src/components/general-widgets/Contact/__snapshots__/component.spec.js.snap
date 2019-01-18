@@ -80,12 +80,14 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
             className="content"
           >
             <Heading
+              className={null}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
+                className={null}
                 inverted={false}
                 textAlign={null}
               >
@@ -2893,12 +2895,14 @@ exports[`<Contact /> if \`props.errorMessage\` is passed should render the error
             className="content"
           >
             <Heading
+              className={null}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
+                className={null}
                 inverted={false}
                 textAlign={null}
               >
@@ -5187,12 +5191,14 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
             className="content"
           >
             <Heading
+              className={null}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
+                className={null}
                 inverted={false}
                 textAlign={null}
               >
@@ -7761,12 +7767,14 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
             className="content"
           >
             <Heading
+              className={null}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
+                className={null}
                 inverted={false}
                 textAlign={null}
               >
@@ -10279,12 +10287,14 @@ exports[`<Contact /> if \`props.successMessage\` is passed should render the suc
             className="content"
           >
             <Heading
+              className={null}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
+                className={null}
                 inverted={false}
                 textAlign={null}
               >
@@ -12554,12 +12564,14 @@ exports[`<Contact /> should have the correct structure 1`] = `
             className="content"
           >
             <Heading
+              className={null}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
+                className={null}
                 inverted={false}
                 textAlign={null}
               >

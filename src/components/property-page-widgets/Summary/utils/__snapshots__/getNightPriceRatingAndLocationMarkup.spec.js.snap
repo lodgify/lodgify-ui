@@ -26,6 +26,7 @@ exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is \`0\` shoul
     <span>
       from 
       <Heading
+        className={null}
         isColorInverted={false}
         size="small"
         textAlign={null}
@@ -73,6 +74,7 @@ exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is not \`0\` s
     <span>
       from 
       <Heading
+        className={null}
         isColorInverted={false}
         size="small"
         textAlign={null}

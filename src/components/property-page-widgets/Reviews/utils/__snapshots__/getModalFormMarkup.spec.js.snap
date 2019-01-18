@@ -3,6 +3,7 @@
 exports[`getModalFormMarkup should have the right structure with default props 1`] = `
 <Modal
   isFullscreen={false}
+  onClose={[Function]}
   size="tiny"
   trigger={
     <Button
@@ -163,6 +164,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
     }
     dimmer="inverted"
     eventPool="Modal"
+    onClose={[Function]}
     size="tiny"
     trigger={
       <Button
@@ -253,6 +255,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
 exports[`getModalFormMarkup should render the right structure when props are passed 1`] = `
 <Modal
   isFullscreen={false}
+  onClose={[Function]}
   size="tiny"
   trigger={
     <Button
@@ -591,6 +594,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
     }
     dimmer="inverted"
     eventPool="Modal"
+    onClose={[Function]}
     size="tiny"
     trigger={
       <Button

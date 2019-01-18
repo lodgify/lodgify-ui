@@ -288,6 +288,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                 onClick={[Function]}
                               >
                                 <SearchBar
+                                  className={null}
                                   getIsDayBlocked={[Function]}
                                   guestsOptions={
                                     Array [
@@ -327,6 +328,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                     />
                                   }
                                   onChangeInput={[Function]}
+                                  onCloseModal={[Function]}
                                   onSubmit={[Function]}
                                   searchButton="hey"
                                   summaryElement={null}
@@ -334,6 +336,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                 >
                                   <Modal
                                     isFullscreen={true}
+                                    onClose={[Function]}
                                     size="tiny"
                                     trigger={
                                       <Icon
@@ -374,6 +377,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                       content={
                                         <ModalContent>
                                           <Heading
+                                            className={null}
                                             isColorInverted={false}
                                             size="small"
                                             textAlign={null}
@@ -454,6 +458,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                       }
                                       dimmer="inverted"
                                       eventPool="Modal"
+                                      onClose={[Function]}
                                       size="fullscreen"
                                       trigger={
                                         <Icon
@@ -555,6 +560,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                               >
                                 <Modal
                                   isFullscreen={true}
+                                  onClose={[Function]}
                                   size="tiny"
                                   trigger={
                                     <Icon
@@ -621,6 +627,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                     }
                                     dimmer="inverted"
                                     eventPool="Modal"
+                                    onClose={[Function]}
                                     size="fullscreen"
                                     trigger={
                                       <Icon
@@ -861,6 +868,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                     >
                       <Modal
                         isFullscreen={true}
+                        onClose={[Function]}
                         size="tiny"
                         trigger={
                           <Button
@@ -918,6 +926,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                     width={null}
                                   >
                                     <Heading
+                                      className={null}
                                       isColorInverted={false}
                                       size="small"
                                       textAlign={null}
@@ -950,6 +959,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                     width={null}
                                   >
                                     <Heading
+                                      className={null}
                                       isColorInverted={false}
                                       size="small"
                                       textAlign={null}
@@ -988,6 +998,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                           }
                           dimmer="inverted"
                           eventPool="Modal"
+                          onClose={[Function]}
                           size="fullscreen"
                           trigger={
                             <Button

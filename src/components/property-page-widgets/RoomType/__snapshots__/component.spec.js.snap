@@ -439,12 +439,14 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                     className="left floated top aligned twelve wide computer ten wide mobile column"
                                   >
                                     <Heading
+                                      className={null}
                                       isColorInverted={false}
                                       size="medium"
                                       textAlign={null}
                                     >
                                       <Header
                                         as="h3"
+                                        className={null}
                                         inverted={false}
                                         textAlign={null}
                                       >
@@ -475,6 +477,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   >
                                     <Modal
                                       isFullscreen={false}
+                                      onClose={[Function]}
                                       size="tiny"
                                       trigger={
                                         <Icon
@@ -517,6 +520,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                             className="has-room-type-gallery"
                                           >
                                             <Heading
+                                              className={null}
                                               isColorInverted={false}
                                               size="medium"
                                               textAlign={null}
@@ -641,6 +645,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                         }
                                         dimmer="inverted"
                                         eventPool="Modal"
+                                        onClose={[Function]}
                                         size="tiny"
                                         trigger={
                                           <Icon
@@ -834,6 +839,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                         >
                                           <Modal
                                             isFullscreen={false}
+                                            onClose={[Function]}
                                             size="small"
                                             trigger={
                                               <Link
@@ -870,6 +876,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                   className="has-room-type-gallery"
                                                 >
                                                   <Heading
+                                                    className={null}
                                                     isColorInverted={false}
                                                     size="medium"
                                                     textAlign={null}
@@ -994,6 +1001,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                               }
                                               dimmer="inverted"
                                               eventPool="Modal"
+                                              onClose={[Function]}
                                               size="small"
                                               trigger={
                                                 <Link
@@ -1088,12 +1096,14 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                               <span>
                                                 from 
                                                 <Heading
+                                                  className={null}
                                                   isColorInverted={false}
                                                   size="medium"
                                                   textAlign={null}
                                                 >
                                                   <Header
                                                     as="h3"
+                                                    className={null}
                                                     inverted={false}
                                                     textAlign={null}
                                                   >
@@ -1594,12 +1604,14 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                     className="left floated top aligned twelve wide computer ten wide mobile column"
                                   >
                                     <Heading
+                                      className={null}
                                       isColorInverted={false}
                                       size="medium"
                                       textAlign={null}
                                     >
                                       <Header
                                         as="h3"
+                                        className={null}
                                         inverted={false}
                                         textAlign={null}
                                       >
@@ -1630,6 +1642,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   >
                                     <Modal
                                       isFullscreen={false}
+                                      onClose={[Function]}
                                       size="tiny"
                                       trigger={
                                         <Icon
@@ -1672,6 +1685,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                             className="has-room-type-gallery"
                                           >
                                             <Heading
+                                              className={null}
                                               isColorInverted={false}
                                               size="medium"
                                               textAlign={null}
@@ -1796,6 +1810,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                         }
                                         dimmer="inverted"
                                         eventPool="Modal"
+                                        onClose={[Function]}
                                         size="tiny"
                                         trigger={
                                           <Icon
@@ -1962,6 +1977,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                         >
                                           <Modal
                                             isFullscreen={false}
+                                            onClose={[Function]}
                                             size="small"
                                             trigger={
                                               <Link
@@ -1998,6 +2014,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                   className="has-room-type-gallery"
                                                 >
                                                   <Heading
+                                                    className={null}
                                                     isColorInverted={false}
                                                     size="medium"
                                                     textAlign={null}
@@ -2122,6 +2139,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                               }
                                               dimmer="inverted"
                                               eventPool="Modal"
+                                              onClose={[Function]}
                                               size="small"
                                               trigger={
                                                 <Link
@@ -2216,12 +2234,14 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                               <span>
                                                 from 
                                                 <Heading
+                                                  className={null}
                                                   isColorInverted={false}
                                                   size="medium"
                                                   textAlign={null}
                                                 >
                                                   <Header
                                                     as="h3"
+                                                    className={null}
                                                     inverted={false}
                                                     textAlign={null}
                                                   >

@@ -23,6 +23,7 @@ exports[`<Availability /> if \`size(props.roomOptionsWithImages) > 0\` should re
 exports[`<Availability /> the wrapped component by default should render the right structure 1`] = `
 <div>
   <Heading
+    className={null}
     isColorInverted={false}
     size="small"
     textAlign={null}
@@ -313,6 +314,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
 exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithImages) > 0\` should render the right structure 1`] = `
 <div>
   <Heading
+    className={null}
     isColorInverted={false}
     size="small"
     textAlign={null}

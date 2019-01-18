@@ -9,12 +9,14 @@ exports[`getNightPriceAndRatingMarkup if \`ratingNumber\` is \`0\` should return
       <span>
         from 
         <Heading
+          className={null}
           isColorInverted={false}
           size="small"
           textAlign={null}
         >
           <Header
             as="h4"
+            className={null}
             inverted={false}
             textAlign={null}
           >
@@ -41,12 +43,14 @@ exports[`getNightPriceAndRatingMarkup if \`ratingNumber\` is not \`0\` should re
       <span>
         from 
         <Heading
+          className={null}
           isColorInverted={false}
           size="small"
           textAlign={null}
         >
           <Header
             as="h4"
+            className={null}
             inverted={false}
             textAlign={null}
           >

@@ -8,12 +8,14 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
     className="has-room-type-gallery content"
   >
     <Heading
+      className={null}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
+        className={null}
         inverted={false}
         textAlign={null}
       >
@@ -423,12 +425,14 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                         className="top aligned twelve wide column"
                       >
                         <Heading
+                          className={null}
                           isColorInverted={false}
                           size="medium"
                           textAlign={null}
                         >
                           <Header
                             as="h3"
+                            className={null}
                             inverted={false}
                             textAlign={null}
                           >
@@ -629,12 +633,14 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
     className="has-room-type-gallery content"
   >
     <Heading
+      className={null}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
+        className={null}
         inverted={false}
         textAlign={null}
       >
@@ -898,12 +904,14 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                         className="top aligned twelve wide column"
                       >
                         <Heading
+                          className={null}
                           isColorInverted={false}
                           size="medium"
                           textAlign={null}
                         >
                           <Header
                             as="h3"
+                            className={null}
                             inverted={false}
                             textAlign={null}
                           >
@@ -1104,12 +1112,14 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
     className="has-room-type-gallery content"
   >
     <Heading
+      className={null}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
+        className={null}
         inverted={false}
         textAlign={null}
       >
@@ -1686,12 +1696,14 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                         className="top aligned twelve wide column"
                       >
                         <Heading
+                          className={null}
                           isColorInverted={false}
                           size="medium"
                           textAlign={null}
                         >
                           <Header
                             as="h3"
+                            className={null}
                             inverted={false}
                             textAlign={null}
                           >
@@ -1892,12 +1904,14 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
     className="has-room-type-gallery content"
   >
     <Heading
+      className={null}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
+        className={null}
         inverted={false}
         textAlign={null}
       >
@@ -2302,12 +2316,14 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                         className="top aligned twelve wide column"
                       >
                         <Heading
+                          className={null}
                           isColorInverted={false}
                           size="medium"
                           textAlign={null}
                         >
                           <Header
                             as="h3"
+                            className={null}
                             inverted={false}
                             textAlign={null}
                           >

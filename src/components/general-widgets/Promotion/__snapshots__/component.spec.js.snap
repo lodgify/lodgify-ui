@@ -160,12 +160,14 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                             className="left aligned top aligned twelve wide column show-on-tablet show-on-computer show-on-widescreen"
                                           >
                                             <Heading
+                                              className={null}
                                               isColorInverted={false}
                                               size="medium"
                                               textAlign={null}
                                             >
                                               <Header
                                                 as="h3"
+                                                className={null}
                                                 inverted={false}
                                                 textAlign={null}
                                               >
@@ -209,12 +211,14 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                             className="center aligned top aligned twelve wide column show-on-mobile"
                                           >
                                             <Heading
+                                              className={null}
                                               isColorInverted={false}
                                               size="medium"
                                               textAlign={null}
                                             >
                                               <Header
                                                 as="h3"
+                                                className={null}
                                                 inverted={false}
                                                 textAlign={null}
                                               >
@@ -548,12 +552,14 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                 className="value"
                               >
                                 <Heading
+                                  className={null}
                                   isColorInverted={false}
                                   size="large"
                                   textAlign={null}
                                 >
                                   <Header
                                     as="h2"
+                                    className={null}
                                     inverted={false}
                                     textAlign={null}
                                   >
