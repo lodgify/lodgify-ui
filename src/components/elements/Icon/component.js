@@ -6,6 +6,7 @@ import { Paragraph } from 'typography/Paragraph';
 
 import { ICON_NAMES_LIST } from './constants';
 import { getPath } from './utils/getPath';
+import { getButtonProps } from './utils/getButtonProps';
 
 /**
  * An icon is a glyph used to represent something else.
@@ -18,6 +19,7 @@ export const Component = ({
   isColorInverted,
   isDisabled,
   isLabelLeft,
+  isButton,
   labelText,
   labelWeight,
   name,
@@ -32,7 +34,9 @@ export const Component = ({
       'inverted grey': isDisabled,
       'has-label': !!labelText,
       inverted: isColorInverted,
+      'is-button': isButton,
     })}
+    {...getButtonProps(isButton)}
     // Passing through props is required for
     // compatibility with dynamic components e.g. `ToolTip`
     {...otherProps}
@@ -58,6 +62,7 @@ Component.defaultProps = {
   isColorInverted: false,
   isDisabled: false,
   isLabelLeft: false,
+  isButton: false,
   labelText: null,
   labelWeight: null,
   name: null,
@@ -83,15 +88,17 @@ Component.propTypes = {
     'light grey',
     'black',
   ]),
-  /** Is the icon formatted to have a border  */
+  /** Is the icon formatted to have a border. */
   hasBorder: PropTypes.bool,
-  /** Is the icon formatted to appear circular  */
+  /** Is the icon a button. */
+  isButton: PropTypes.bool,
+  /** Is the icon formatted to appear circular. */
   isCircular: PropTypes.bool,
-  /** Is the color of the icon inverted for contrast */
+  /** Is the color of the icon inverted for contrast. */
   isColorInverted: PropTypes.bool,
   /** Is the icon disabled. */
   isDisabled: PropTypes.bool,
-  /** Is the label on the left hand side of the icon */
+  /** Is the label on the left hand side of the icon. */
   isLabelLeft: PropTypes.bool,
   /** A visible label to display with the icon. */
   labelText: PropTypes.string,
@@ -99,7 +106,7 @@ Component.propTypes = {
   labelWeight: PropTypes.oneOf(['heavy', 'light']),
   /**
    * The name of the icon to display. Takes priority over `props.path`.
-   * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
+   * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/master/src/components/elements/Icon/constants.js)
    */
   name: PropTypes.oneOf(ICON_NAMES_LIST),
   /**

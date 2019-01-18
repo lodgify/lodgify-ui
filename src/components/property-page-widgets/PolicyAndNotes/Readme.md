@@ -1,13 +1,13 @@
 ```jsx
-const paymentScheduleText = `50% due at time of booking. Remaining balance: Due later.`;
-const cancellationPolicyText = `All paid prepayments are non-refundable.`;
-const damageDepositText = `A refundable damage deposit of 200.00 € (EUR) is due.`;
+const paymentScheduleRules = ['50% due at time of booking.', 'Remaining balance: Due later.'];
+const cancellationPolicyRules = ['All paid prepayments are non-refundable.'];
+const damageDepositRules = ['A refundable damage deposit of 200.00 € (EUR) is due.'];
 const notesText = null;
 
 <PolicyAndNotes
-  paymentScheduleText={paymentScheduleText}
-  cancellationPolicyText={cancellationPolicyText}
-  damageDepositText={damageDepositText}
+  paymentScheduleRules={paymentScheduleRules}
+  cancellationPolicyRules={cancellationPolicyRules}
+  damageDepositRules={damageDepositRules}
   notesText={notesText}
 />
 ```
@@ -17,9 +17,9 @@ const notesText = null;
 #### Extra description text
 
 ```jsx
-const paymentScheduleText = `50% due at time of booking. Remaining balance: Due later.`;
-const cancellationPolicyText = `All paid prepayments are non-refundable.`;
-const damageDepositText = `A refundable damage deposit of 200.00 € (EUR) is due.`;
+const paymentScheduleRules = ['50% due at time of booking.', 'Remaining balance: Due later.'];
+const cancellationPolicyRules = ['All paid prepayments are non-refundable.'];
+const damageDepositRules = ['A refundable damage deposit of 200.00 € (EUR) is due.'];
 const notesText = `
   Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
 
@@ -36,9 +36,9 @@ const extraNotesText = `
 `;
 
 <PolicyAndNotes
-  paymentScheduleText={paymentScheduleText}
-  cancellationPolicyText={cancellationPolicyText}
-  damageDepositText={damageDepositText}
+  paymentScheduleRules={paymentScheduleRules}
+  cancellationPolicyRules={cancellationPolicyRules}
+  damageDepositRules={damageDepositRules}
   notesText={notesText}
   extraNotesText={extraNotesText}
 />
@@ -47,21 +47,21 @@ const extraNotesText = `
 #### Strings
 
 ```jsx
-const paymentScheduleText = `50% due at time of booking. Remaining balance: Due later.`;
-const cancellationPolicyText = `All paid prepayments are non-refundable.`;
-const damageDepositText = `A refundable damage deposit of 200.00 € (EUR) is due.`;
+const paymentScheduleRules = ['50% due at time of booking.', 'Remaining balance: Due later.'];
+const cancellationPolicyRules = ['All paid prepayments are non-refundable.'];
+const damageDepositRules = ['A refundable damage deposit of 200.00 € (EUR) is due.'];
 const notesText = null;
 
 <PolicyAndNotes
   cancellationPolicyHeadingText="Cancel"
-  cancellationPolicyText={cancellationPolicyText}
+  cancellationPolicyRules={cancellationPolicyRules}
   damageDepositHeadingText="Damage"
-  damageDepositText={damageDepositText}
+  damageDepositRules={damageDepositRules}
   headingText="How we charge"
   modalTriggerText="See more"
   notesHeadingText="Notes"
   notesText={notesText}
   paymentScheduleHeadingText="Payment"
-  paymentScheduleText={paymentScheduleText}
+  paymentScheduleRules={paymentScheduleRules}
 />
 ```

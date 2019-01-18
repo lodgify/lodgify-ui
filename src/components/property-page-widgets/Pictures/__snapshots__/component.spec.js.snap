@@ -1141,6 +1141,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       <Icon
                         color={null}
                         hasBorder={false}
+                        isButton={false}
                         isCircular={false}
                         isColorInverted={false}
                         isDisabled={false}

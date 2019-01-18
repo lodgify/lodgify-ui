@@ -57,6 +57,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
               <Icon
                 color="yellow"
                 hasBorder={false}
+                isButton={false}
                 isCircular={false}
                 isColorInverted={false}
                 isDisabled={false}

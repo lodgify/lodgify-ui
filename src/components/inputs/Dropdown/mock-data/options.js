@@ -29,9 +29,10 @@ export const optionsWithImages = [
 ];
 
 export const indentedOptions = [
-  { text: 'United Kingdom', value: 'gb' },
-  { text: 'United States', value: 'us' },
+  { text: 'United States', value: 'us', indent: 0 },
   { text: 'Texas', value: 'tx', indent: 1 },
-  { text: 'California', value: 'ca', indent: 1 },
-  { text: 'Los Angeles', value: 'la', indent: 2 },
+  { text: 'Colorado', value: 'co', indent: 2 },
+  { text: 'New York', value: 'ny', indent: 3 },
+  { text: 'Minessota', value: 'mi', indent: 4 },
+  { text: 'California', value: 'ca', indent: 5 },
 ];

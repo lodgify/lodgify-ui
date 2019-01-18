@@ -108,6 +108,6 @@ The organisation and format of the directory and files is prescribed by the [Sem
 
 If you add a new `*.overrides` or `*.variables` file in the livingstone theme directory, you need to:
 
-1. add an `@import` statement for the component to  [semantic.less](https://github.com/lodgify/lodgify-ui/blob/production/src/styles/semantic/semantic.less).
-1. change the value of the component entry in [src/styles/semantic/theme.config](https://github.com/lodgify/lodgify-ui/blob/production/src/styles/semantic/theme.config) from `'default'` to `'livingstone'`.
+1. add an `@import` statement for the component to  [semantic.less](https://github.com/lodgify/lodgify-ui/blob/master/src/styles/semantic/semantic.less).
+1. change the value of the component entry in [src/styles/semantic/theme.config](https://github.com/lodgify/lodgify-ui/blob/master/src/styles/semantic/theme.config) from `'default'` to `'livingstone'`.
 1. follow the comment structure used in the default theme variables file for that component.

@@ -37,6 +37,8 @@
 
 @pickerMonthCaptionPaddingTop: @34px;
 @pickerMonthCaptionPaddingBottom: @59px;
+@pickerMonthMaxWidth: 360px;
+@pickerMonthMinHeight: 420px;
 
 @pickerWeekHeaderTopSpace: 75px;
 @pickerWeekHeaderWidth: @48px !important;

@@ -1,3 +1,33 @@
+# [1.110.0](https://github.com/lodgify/lodgify-ui/compare/v1.109.0...v1.110.0) (2019-01-18)
+
+
+### Bug Fixes
+
+* **dropdown.overrides:** align input label left by default ([7922d68](https://github.com/lodgify/lodgify-ui/commit/7922d68))
+* **FullBleed:** remove border bottom from full bleed segment ([9f000af](https://github.com/lodgify/lodgify-ui/commit/9f000af))
+
+
+### Features
+
+* **Dropdown:** upgrade indent prop to accept values between 0 and 5 ([a0361c0](https://github.com/lodgify/lodgify-ui/commit/a0361c0))
+* **dropdown.overrides:** remove ellipsis from active label ([666bfae](https://github.com/lodgify/lodgify-ui/commit/666bfae))
+* **dropdown*:** implement indentation variables and overrides ([d8f187d](https://github.com/lodgify/lodgify-ui/commit/d8f187d))
+* **PolicyAndNotes:** map over array of rules ([ef4b0a0](https://github.com/lodgify/lodgify-ui/commit/ef4b0a0))
+* **PolicyAndNotes:** update prop name and types ([07fcbea](https://github.com/lodgify/lodgify-ui/commit/07fcbea))
+
+# [1.109.0](https://github.com/lodgify/lodgify-ui/compare/v1.108.0...v1.109.0) (2019-01-17)
+
+
+### Bug Fixes
+
+* **Availability:** consume Icon isButton prop ([31c2d92](https://github.com/lodgify/lodgify-ui/commit/31c2d92))
+* **Availability:** set min width and height for calendar months ([bd1e8d3](https://github.com/lodgify/lodgify-ui/commit/bd1e8d3))
+
+
+### Features
+
+* **Icon:** expose isButton prop ([dcaad8d](https://github.com/lodgify/lodgify-ui/commit/dcaad8d))
+
 # [1.108.0](https://github.com/lodgify/lodgify-ui/compare/v1.107.0...v1.108.0) (2019-01-14)
 
 

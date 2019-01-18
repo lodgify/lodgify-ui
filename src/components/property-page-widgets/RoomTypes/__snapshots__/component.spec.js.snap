@@ -454,6 +454,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                               <Icon
                                                 color={null}
                                                 hasBorder={false}
+                                                isButton={false}
                                                 isCircular={false}
                                                 isColorInverted={true}
                                                 isDisabled={false}
@@ -495,6 +496,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                               <Icon
                                                 color={null}
                                                 hasBorder={false}
+                                                isButton={false}
                                                 isCircular={false}
                                                 isColorInverted={true}
                                                 isDisabled={false}
@@ -688,6 +690,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                               <Icon
                                                 color="yellow"
                                                 hasBorder={false}
+                                                isButton={false}
                                                 isCircular={true}
                                                 isColorInverted={true}
                                                 isDisabled={false}
@@ -705,6 +708,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -855,6 +859,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color="yellow"
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={true}
                                                   isColorInverted={true}
                                                   isDisabled={false}
@@ -883,6 +888,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   <Icon
                                                     color="yellow"
                                                     hasBorder={false}
+                                                    isButton={false}
                                                     isCircular={true}
                                                     isColorInverted={true}
                                                     isDisabled={false}
@@ -901,6 +907,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   <Icon
                                                     color="yellow"
                                                     hasBorder={false}
+                                                    isButton={false}
                                                     isCircular={true}
                                                     isColorInverted={true}
                                                     isDisabled={false}
@@ -976,6 +983,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -1022,6 +1030,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -1068,6 +1077,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -1148,6 +1158,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       <Icon
                                                         color={null}
                                                         hasBorder={false}
+                                                        isButton={false}
                                                         isCircular={false}
                                                         isColorInverted={false}
                                                         isDisabled={false}
@@ -1767,6 +1778,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                               <Icon
                                                 color={null}
                                                 hasBorder={false}
+                                                isButton={false}
                                                 isCircular={false}
                                                 isColorInverted={true}
                                                 isDisabled={false}
@@ -1808,6 +1820,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                               <Icon
                                                 color={null}
                                                 hasBorder={false}
+                                                isButton={false}
                                                 isCircular={false}
                                                 isColorInverted={true}
                                                 isDisabled={false}
@@ -2001,6 +2014,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                               <Icon
                                                 color="yellow"
                                                 hasBorder={false}
+                                                isButton={false}
                                                 isCircular={true}
                                                 isColorInverted={true}
                                                 isDisabled={false}
@@ -2018,6 +2032,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -2159,6 +2174,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color="yellow"
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={true}
                                                   isColorInverted={true}
                                                   isDisabled={false}
@@ -2187,6 +2203,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   <Icon
                                                     color="yellow"
                                                     hasBorder={false}
+                                                    isButton={false}
                                                     isCircular={true}
                                                     isColorInverted={true}
                                                     isDisabled={false}
@@ -2205,6 +2222,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   <Icon
                                                     color="yellow"
                                                     hasBorder={false}
+                                                    isButton={false}
                                                     isCircular={true}
                                                     isColorInverted={true}
                                                     isDisabled={false}
@@ -2280,6 +2298,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -2326,6 +2345,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -2372,6 +2392,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 <Icon
                                                   color={null}
                                                   hasBorder={false}
+                                                  isButton={false}
                                                   isCircular={false}
                                                   isColorInverted={false}
                                                   isDisabled={false}
@@ -2452,6 +2473,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       <Icon
                                                         color={null}
                                                         hasBorder={false}
+                                                        isButton={false}
                                                         isCircular={false}
                                                         isColorInverted={false}
                                                         isDisabled={false}
