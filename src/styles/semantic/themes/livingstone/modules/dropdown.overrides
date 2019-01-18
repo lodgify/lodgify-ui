@@ -194,6 +194,8 @@
 
     label {
       width: 100%;
+      text-overflow: clip;
+      overflow: visible;
     }
   }
 
