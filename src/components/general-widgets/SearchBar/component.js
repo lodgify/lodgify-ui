@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
+import getClassNames from 'classnames';
 import { Form } from 'semantic-ui-react';
 import { isEqual } from 'lodash';
 
@@ -36,10 +36,8 @@ export class Component extends PureComponent {
 
   render = () => {
     const {
+      className,
       isDisplayedAsModal,
-      modalHeadingText,
-      modalSummaryElement,
-      modalTrigger,
       isFixed,
       summaryElement,
       willDropdownsOpenAbove,
@@ -47,19 +45,12 @@ export class Component extends PureComponent {
 
     const searchBarAsModal =
       isDisplayedAsModal &&
-      getSearchBarModal(
-        modalHeadingText,
-        modalTrigger,
-        modalSummaryElement,
-        this.handleSubmit,
-        this.persistInputChange,
-        this.props
-      );
+      getSearchBarModal(this.props, this.handleSubmit, this.persistInputChange);
 
     if (isFixed) {
       return (
         <div
-          className={cx('search-bar', {
+          className={getClassNames(className, 'search-bar', {
             'is-fixed': isFixed,
           })}
         >
@@ -95,7 +86,7 @@ export class Component extends PureComponent {
     }
 
     return (
-      <div className="search-bar">
+      <div className={getClassNames(className, 'search-bar')}>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
             {getFormFieldMarkup(
@@ -114,27 +105,36 @@ export class Component extends PureComponent {
 Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
+  className: null,
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: Function.prototype,
+  isDisplayedAsModal: false,
+  isFixed: false,
+  isShowingSummary: false,
+  isModalOpen: undefined,
+  locationOptions: null,
   modalHeadingText: CHECK_OUR_AVAILABILITY,
   modalSummaryElement: null,
   modalTrigger: <Icon name={ICON_NAMES.SEARCH} />,
   onChangeInput: Function.prototype,
+  onCloseModal: Function.prototype,
   onSubmit: Function.prototype,
-  isDisplayedAsModal: false,
-  isFixed: false,
-  isShowingSummary: false,
   searchButton: (
     <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
       {SEARCH}
     </Button>
   ),
-  locationOptions: null,
   summaryElement: null,
   willDropdownsOpenAbove: false,
 };
 
 Component.propTypes = {
+  /**
+   * Custom class name.
+   * Provided by `ShowOn` so ignored in the styleguide.
+   * @ignore
+   */
+  className: PropTypes.string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
   // eslint-disable-next-line react/no-unused-prop-types
   dateRangePickerLocaleCode: PropTypes.string,
@@ -163,6 +163,9 @@ Component.propTypes = {
   isDisplayedAsModal: PropTypes.bool,
   /** Is the Search Bar fixed to the bottom of the window */
   isFixed: PropTypes.bool,
+  /** Is the modal open. Used when consuming `SearchBar` as a controlled component. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  isModalOpen: PropTypes.bool,
   /** Is Search Bar showing the Property Summary info. */
   // eslint-disable-next-line react/no-unused-prop-types
   isShowingSummary: PropTypes.bool,
@@ -181,10 +184,13 @@ Component.propTypes = {
     })
   ),
   /** The heading text to display in the modal */
+  // eslint-disable-next-line react/no-unused-prop-types
   modalHeadingText: PropTypes.string,
   /** The summary element to display in the mobile modal  */
+  // eslint-disable-next-line react/no-unused-prop-types
   modalSummaryElement: PropTypes.node,
   /** The element to be clicked to display the modal. */
+  // eslint-disable-next-line react/no-unused-prop-types
   modalTrigger: PropTypes.node,
   /** A function called when a change in an input occurs.
    *  @param {Object} values - The values of the inputs in the search bar.
@@ -193,6 +199,9 @@ Component.propTypes = {
    *  @param {String} values.location
    */
   onChangeInput: PropTypes.func,
+  /** A function called when a close event happens on the modal. Used when consuming `SearchBar` as a controlled component. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  onCloseModal: PropTypes.func,
   /** The function to call when the search bar is submitted.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates

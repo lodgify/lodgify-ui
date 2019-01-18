@@ -79,12 +79,14 @@ exports[`<Header /> by default should render the right structure 1`] = `
                 onClick={[Function]}
               >
                 <Heading
+                  className={null}
                   isColorInverted={false}
                   size="small"
                   textAlign={null}
                 >
                   <Header
                     as="h4"
+                    className={null}
                     inverted={false}
                     textAlign={null}
                   >
@@ -123,6 +125,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                     >
                       <Modal
                         isFullscreen={true}
+                        onClose={[Function]}
                         size="tiny"
                         trigger={
                           <Icon
@@ -170,6 +173,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                                 link={true}
                               >
                                 <Heading
+                                  className={null}
                                   isColorInverted={false}
                                   size="small"
                                   textAlign={null}
@@ -253,6 +257,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                           }
                           dimmer="inverted"
                           eventPool="Modal"
+                          onClose={[Function]}
                           size="fullscreen"
                           trigger={
                             <Icon
@@ -802,12 +807,14 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                 onClick={[Function]}
               >
                 <Heading
+                  className={null}
                   isColorInverted={false}
                   size="small"
                   textAlign={null}
                 >
                   <Header
                     as="h4"
+                    className={null}
                     inverted={false}
                     textAlign={null}
                   >
@@ -846,6 +853,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                     >
                       <Modal
                         isFullscreen={true}
+                        onClose={[Function]}
                         size="tiny"
                         trigger={
                           <Icon
@@ -893,6 +901,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                                 link={true}
                               >
                                 <Heading
+                                  className={null}
                                   isColorInverted={false}
                                   size="small"
                                   textAlign={null}
@@ -976,6 +985,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                           }
                           dimmer="inverted"
                           eventPool="Modal"
+                          onClose={[Function]}
                           size="fullscreen"
                           trigger={
                             <Icon
@@ -1525,12 +1535,14 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                 onClick={[Function]}
               >
                 <Heading
+                  className={null}
                   isColorInverted={false}
                   size="small"
                   textAlign={null}
                 >
                   <Header
                     as="h4"
+                    className={null}
                     inverted={false}
                     textAlign={null}
                   >
@@ -1569,6 +1581,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                     >
                       <Modal
                         isFullscreen={true}
+                        onClose={[Function]}
                         size="tiny"
                         trigger={
                           <Icon
@@ -1616,6 +1629,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                                 link={true}
                               >
                                 <Heading
+                                  className={null}
                                   isColorInverted={false}
                                   size="small"
                                   textAlign={null}
@@ -1699,6 +1713,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                           }
                           dimmer="inverted"
                           eventPool="Modal"
+                          onClose={[Function]}
                           size="fullscreen"
                           trigger={
                             <Icon

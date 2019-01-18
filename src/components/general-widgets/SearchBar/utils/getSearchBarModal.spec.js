@@ -13,28 +13,31 @@ import { Divider } from 'elements/Divider';
 
 import { getSearchBarModal } from './getSearchBarModal';
 
-const modalHeadingText = 'Hello world';
-const modalTrigger = <div />;
-const modalSummaryElement = null;
+const props = {
+  isModalOpen: false,
+  modalHeadingText: 'Hello world',
+  modalTrigger: <div />,
+  modalSummaryElement: null,
+  onCloseModal: Function.prototype,
+};
 const handleSubmit = () => {};
 const persistInputChange = () => {};
-const props = {};
 
-const getModalMarkup = (alternativeProps = {}) =>
+const getModalMarkup = extraProps =>
   shallow(
     <div>
       {getSearchBarModal(
-        modalHeadingText,
-        modalTrigger,
-        alternativeProps.modalSummaryElement || modalSummaryElement,
+        {
+          ...props,
+          ...extraProps,
+        },
         handleSubmit,
-        persistInputChange,
-        props
+        persistInputChange
       )}
     </div>
   ).children();
 
-describe('getFormFieldMarkup', () => {
+describe('getSearchBarModal', () => {
   it('should return a `Modal`', () => {
     const wrapper = getModalMarkup();
 
@@ -44,9 +47,12 @@ describe('getFormFieldMarkup', () => {
   describe('the `Modal`', () => {
     it('should have the right props', () => {
       const wrapper = getModalMarkup();
+      const { isModalOpen, onCloseModal, modalTrigger } = props;
 
       expectComponentToHaveProps(wrapper, {
         isFullscreen: true,
+        isOpen: isModalOpen,
+        onClose: onCloseModal,
         trigger: modalTrigger,
       });
     });
@@ -95,7 +101,7 @@ describe('getFormFieldMarkup', () => {
     it('should have the right children', () => {
       const wrapper = getHeading();
 
-      expectComponentToHaveChildren(wrapper, modalHeadingText);
+      expectComponentToHaveChildren(wrapper, props.modalHeadingText);
     });
   });
 

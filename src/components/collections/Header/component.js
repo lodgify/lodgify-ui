@@ -47,9 +47,11 @@ Component.displayName = 'Header';
 Component.defaultProps = {
   activeNavigationItemIndex: null,
   isBackgroundFilled: false,
+  isSearchBarModalOpen: undefined,
   logoSizes: undefined,
   logoSrc: null,
   logoSrcSet: undefined,
+  onCloseSearchBarModal: undefined,
   primaryCTA: null,
   searchBarDateRangePickerLocaleCode: undefined,
   searchBarGetIsDayBlocked: Function.prototype,
@@ -67,6 +69,9 @@ Component.propTypes = {
   activeNavigationItemIndex: PropTypes.number,
   /** Is the background filled with a color defined in CSS. */
   isBackgroundFilled: PropTypes.bool,
+  /** Is the search bar modal open. Used when consuming `Header` as a controlled component. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  isSearchBarModalOpen: PropTypes.bool,
   /** A list of one or more strings separated by commas indicating a set of source sizes for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   logoSizes: PropTypes.string,
   /** The src url for the logo. */
@@ -92,6 +97,9 @@ Component.propTypes = {
       text: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** A function called when a close event happens on the search bar modal. Used when consuming `Header` as a controlled component. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  onCloseSearchBarModal: PropTypes.func,
   /** An optional primary call to action to display as a [`<Button />`](#button). */
   // eslint-disable-next-line react/no-unused-prop-types
   primaryCTA: PropTypes.shape({

@@ -15,9 +15,11 @@ import { getLinkMarkup } from './getLinkMarkup';
 /**
  * @param  {Object}   props
  * @param  {number}   props.activeNavigationItemIndex
+ * @param  {boolean}  props.isSearchBarModalOpen
  * @param  {string}   props.logoSrc
  * @param  {string}   props.logoText
  * @param  {Object[]} props.navigationItems
+ * @param  {Function} props.onCloseSearchBarModal
  * @param  {Function} props.searchBarGetIsDayBlocked
  * @param  {Object[]} props.searchBarGuestsOptions
  * @param  {Object[]} props.searchBarLocationOptions
@@ -32,11 +34,13 @@ export const getHiddenMenuMarkup = (
   {
     /* eslint-disable react/prop-types */
     activeNavigationItemIndex,
+    isSearchBarModalOpen,
     logoSizes,
     logoSrc,
     logoSrcSet,
     logoText,
     navigationItems,
+    onCloseSearchBarModal,
     searchBarDateRangePickerLocaleCode,
     searchBarGetIsDayBlocked,
     searchBarGuestsOptions,
@@ -64,9 +68,11 @@ export const getHiddenMenuMarkup = (
           getIsDayBlocked={searchBarGetIsDayBlocked}
           guestsOptions={searchBarGuestsOptions}
           isDisplayedAsModal
+          isModalOpen={isSearchBarModalOpen}
           locationOptions={searchBarLocationOptions}
           modalHeadingText={searchBarModalHeadingText}
           onChangeInput={searchBarOnChangeInput}
+          onCloseModal={onCloseSearchBarModal}
           onSubmit={searchBarOnSubmit}
           searchButton={searchBarSearchButton}
         />

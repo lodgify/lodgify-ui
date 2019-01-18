@@ -228,6 +228,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                               onClick={[Function]}
                             >
                               <SearchBar
+                                className={null}
                                 getIsDayBlocked={[Function]}
                                 guestsOptions={
                                   Array [
@@ -267,6 +268,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                   />
                                 }
                                 onChangeInput={[Function]}
+                                onCloseModal={[Function]}
                                 onSubmit={[Function]}
                                 searchButton={
                                   <Button
@@ -289,6 +291,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                               >
                                 <Modal
                                   isFullscreen={true}
+                                  onClose={[Function]}
                                   size="tiny"
                                   trigger={
                                     <Icon
@@ -329,6 +332,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                     content={
                                       <ModalContent>
                                         <Heading
+                                          className={null}
                                           isColorInverted={false}
                                           size="small"
                                           textAlign={null}
@@ -422,6 +426,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                     }
                                     dimmer="inverted"
                                     eventPool="Modal"
+                                    onClose={[Function]}
                                     size="fullscreen"
                                     trigger={
                                       <Icon
@@ -523,6 +528,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                             >
                               <Modal
                                 isFullscreen={true}
+                                onClose={[Function]}
                                 size="tiny"
                                 trigger={
                                   <Icon
@@ -589,6 +595,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                   }
                                   dimmer="inverted"
                                   eventPool="Modal"
+                                  onClose={[Function]}
                                   size="fullscreen"
                                   trigger={
                                     <Icon

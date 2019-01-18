@@ -2,6 +2,7 @@
 
 exports[`<SearchBar /> by default should render the right structure 1`] = `
 <SearchBar
+  className={null}
   dateRangePickerLocaleCode="ko"
   getIsDayBlocked={[Function]}
   guestsOptions={
@@ -66,6 +67,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
     />
   }
   onChangeInput={[Function]}
+  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -2524,6 +2526,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
 
 exports[`<SearchBar /> if \`isDisplayedAsModal === true\` should render the right structure 1`] = `
 <SearchBar
+  className={null}
   dateRangePickerLocaleCode="ko"
   getIsDayBlocked={[Function]}
   guestsOptions={
@@ -2573,6 +2576,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal === true\` should render the righ
   modalSummaryElement={null}
   modalTrigger={<div />}
   onChangeInput={[Function]}
+  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -2595,6 +2599,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal === true\` should render the righ
 >
   <Modal
     isFullscreen={true}
+    onClose={[Function]}
     size="tiny"
     trigger={<div />}
   >
@@ -2620,6 +2625,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal === true\` should render the righ
       content={
         <ModalContent>
           <Heading
+            className={null}
             isColorInverted={false}
             size="small"
             textAlign={null}
@@ -2738,6 +2744,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal === true\` should render the righ
       }
       dimmer="inverted"
       eventPool="Modal"
+      onClose={[Function]}
       size="fullscreen"
       trigger={<div />}
     >
@@ -2788,6 +2795,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
     >
       <Modal
         isFullscreen={true}
+        onClose={[Function]}
         size="tiny"
         trigger={
           <Icon
@@ -2828,6 +2836,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
           content={
             <ModalContent>
               <Heading
+                className={null}
                 isColorInverted={false}
                 size="small"
                 textAlign={null}
@@ -2946,6 +2955,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
           }
           dimmer="inverted"
           eventPool="Modal"
+          onClose={[Function]}
           size="fullscreen"
           trigger={
             <Icon
@@ -3044,6 +3054,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
 
 exports[`<SearchBar /> if \`props.isFixed\` is true should render the right structure 1`] = `
 <SearchBar
+  className={null}
   dateRangePickerLocaleCode="ko"
   getIsDayBlocked={[Function]}
   guestsOptions={
@@ -3108,6 +3119,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
     />
   }
   onChangeInput={[Function]}
+  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -5629,6 +5641,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
 
 exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the right structure 1`] = `
 <SearchBar
+  className={null}
   dateRangePickerLocaleCode="ko"
   getIsDayBlocked={[Function]}
   guestsOptions={
@@ -5693,6 +5706,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
     />
   }
   onChangeInput={[Function]}
+  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -8196,6 +8210,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
 
 exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render the right structure 1`] = `
 <SearchBar
+  className={null}
   dateRangePickerLocaleCode="ko"
   getIsDayBlocked={[Function]}
   guestsOptions={
@@ -8241,6 +8256,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
     />
   }
   onChangeInput={[Function]}
+  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -10377,6 +10393,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
 
 exports[`<SearchBar /> if \`props.searchButton\` is passed should render the right children 1`] = `
 <SearchBar
+  className={null}
   dateRangePickerLocaleCode="ko"
   getIsDayBlocked={[Function]}
   guestsOptions={
@@ -10441,6 +10458,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
     />
   }
   onChangeInput={[Function]}
+  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton="Yo!"
   summaryElement={null}
