@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
@@ -15,77 +15,127 @@ import { ShowOn } from 'layout/ShowOn';
  * A homepage hero displays a hero with heading and a search bar on desktop screens.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({
-  activeNavigationItemIndex,
-  backgroundImageSizes,
-  backgroundImageSrcSet,
-  backgroundImageUrl,
-  headerLogoSizes,
-  headerLogoSrc,
-  headerLogoSrcSet,
-  headerLogoText,
-  headerNavigationItems,
-  headerPrimaryCTA,
-  headingText,
-  placeholderBackgroundImageUrl,
-  searchBarDateRangePickerLocaleCode,
-  searchBarGetIsDayBlocked,
-  searchBarGuestsOptions,
-  searchBarLocationOptions,
-  searchBarModalHeadingText,
-  searchBarOnChangeInput,
-  searchBarOnSubmit,
-  searchBarSearchButton,
-}) => (
-  <Hero
-    activeNavigationItemIndex={activeNavigationItemIndex}
-    backgroundImageSizes={backgroundImageSizes}
-    backgroundImageSrcSet={backgroundImageSrcSet}
-    backgroundImageUrl={backgroundImageUrl}
-    headerLogoSizes={headerLogoSizes}
-    headerLogoSrc={headerLogoSrc}
-    headerLogoSrcSet={headerLogoSrcSet}
-    headerLogoText={headerLogoText}
-    headerNavigationItems={headerNavigationItems}
-    headerPrimaryCTA={headerPrimaryCTA}
-    headerSearchBarGuestsOptions={searchBarGuestsOptions}
-    headerSearchBarLocationOptions={searchBarLocationOptions}
-    headerSearchBarModalHeadingText={searchBarModalHeadingText}
-    headerSearchBarSearchButton={searchBarSearchButton}
-    placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
-    searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
-    searchBarOnChangeInput={searchBarOnChangeInput}
-    searchBarOnSubmit={searchBarOnSubmit}
-  >
-    <FlexContainer
-      alignItems="center"
-      flexDirection="column"
-      justifyContent="space-evenly"
-    >
-      <HorizontalGutters>
-        <Heading isColorInverted size="huge" textAlign="center">
-          {headingText}
-        </Heading>
-      </HorizontalGutters>
-      <ShowOn computer parent={HorizontalGutters} tablet widescreen>
-        <Grid areColumnsCentered>
-          <GridRow horizontalAlignContent="center">
-            <SearchBar
-              dateRangePickerLocaleCode={searchBarDateRangePickerLocaleCode}
-              getIsDayBlocked={searchBarGetIsDayBlocked}
-              guestsOptions={searchBarGuestsOptions}
-              locationOptions={searchBarLocationOptions}
-              onChangeInput={searchBarOnChangeInput}
-              onSubmit={searchBarOnSubmit}
-              searchButton={searchBarSearchButton}
-              willDropdownsOpenAbove
-            />
-          </GridRow>
-        </Grid>
-      </ShowOn>
-    </FlexContainer>
-  </Hero>
-);
+export class Component extends PureComponent {
+  state = {
+    isSearchBarModalOpen: undefined,
+  };
+
+  handleClickSearchBarSearchButton = () =>
+    this.setState({ isSearchBarModalOpen: true });
+
+  handleCloseModal = () => this.setState({ isSearchBarModalOpen: undefined });
+
+  render = () => {
+    const {
+      activeNavigationItemIndex,
+      backgroundImageSizes,
+      backgroundImageSrcSet,
+      backgroundImageUrl,
+      headerLogoSizes,
+      headerLogoSrc,
+      headerLogoSrcSet,
+      headerLogoText,
+      headerNavigationItems,
+      headerPrimaryCTA,
+      headingText,
+      placeholderBackgroundImageUrl,
+      searchBarDateRangePickerLocaleCode,
+      searchBarGetIsDayBlocked,
+      searchBarGuestsOptions,
+      searchBarLocationOptions,
+      searchBarModalHeadingText,
+      searchBarOnChangeInput,
+      searchBarOnSubmit,
+      searchBarSearchButton,
+    } = this.props;
+
+    return (
+      <Hero
+        activeNavigationItemIndex={activeNavigationItemIndex}
+        backgroundImageSizes={backgroundImageSizes}
+        backgroundImageSrcSet={backgroundImageSrcSet}
+        backgroundImageUrl={backgroundImageUrl}
+        headerLogoSizes={headerLogoSizes}
+        headerLogoSrc={headerLogoSrc}
+        headerLogoSrcSet={headerLogoSrcSet}
+        headerLogoText={headerLogoText}
+        headerNavigationItems={headerNavigationItems}
+        headerOnCloseSearchBarModal={this.handleCloseModal}
+        headerPrimaryCTA={headerPrimaryCTA}
+        headerSearchBarGuestsOptions={searchBarGuestsOptions}
+        headerSearchBarLocationOptions={searchBarLocationOptions}
+        headerSearchBarModalHeadingText={searchBarModalHeadingText}
+        headerSearchBarSearchButton={searchBarSearchButton}
+        isHeaderSearchBarModalOpen={this.state.isSearchBarModalOpen}
+        placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
+        searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
+        searchBarOnChangeInput={searchBarOnChangeInput}
+        searchBarOnSubmit={searchBarOnSubmit}
+      >
+        <FlexContainer
+          alignItems="center"
+          flexDirection="column"
+          justifyContent="space-evenly"
+        >
+          <HorizontalGutters>
+            <ShowOn
+              computer
+              parent={Heading}
+              parentProps={{
+                isColorInverted: true,
+                size: 'huge',
+                textAlign: 'center',
+              }}
+              tablet
+              widescreen
+            >
+              {headingText}
+            </ShowOn>
+            <ShowOn
+              mobile
+              parent={Heading}
+              parentProps={{
+                isColorInverted: true,
+                size: 'large',
+                textAlign: 'center',
+              }}
+            >
+              {headingText}
+            </ShowOn>
+          </HorizontalGutters>
+          <HorizontalGutters>
+            <Grid areColumnsCentered>
+              <GridRow horizontalAlignContent="center">
+                <ShowOn
+                  computer
+                  parent={SearchBar}
+                  parentProps={{
+                    dateRangePickerLocaleCode: searchBarDateRangePickerLocaleCode,
+                    getIsDayBlocked: searchBarGetIsDayBlocked,
+                    guestsOptions: searchBarGuestsOptions,
+                    locationOptions: searchBarLocationOptions,
+                    onChangeInput: searchBarOnChangeInput,
+                    onSubmit: searchBarOnSubmit,
+                    searchButton: searchBarSearchButton,
+                    willDropdownsOpenAbove: true,
+                  }}
+                  tablet
+                  widescreen
+                />
+                <ShowOn mobile>
+                  {searchBarSearchButton &&
+                    React.cloneElement(searchBarSearchButton, {
+                      onClick: this.handleClickSearchBarSearchButton,
+                    })}
+                </ShowOn>
+              </GridRow>
+            </Grid>
+          </HorizontalGutters>
+        </FlexContainer>
+      </Hero>
+    );
+  };
+}
 
 Component.displayName = 'HomepageHero';
 
