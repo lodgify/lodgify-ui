@@ -58,7 +58,7 @@ Component.propTypes = {
   label: PropTypes.string,
   /**
    * The name of the icon to display.
-   * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
+   * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/master/src/components/elements/Icon/constants.js)
    */
   name: PropTypes.string.isRequired,
   /** The size of the icon card. */

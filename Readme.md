@@ -66,4 +66,4 @@ import '@lodgify/ui/lib/styles/lodgify-ui.css';
 
 ### Contributing
 
-See  [contributing](https://github.com/lodgify/lodgify-ui/blob/production/docs/CONTRIBUTING.md).
+See  [contributing](https://github.com/lodgify/lodgify-ui/blob/master/docs/CONTRIBUTING.md).
