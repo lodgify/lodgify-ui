@@ -22,11 +22,13 @@ export const Component = ({
   headerLogoSrcSet,
   headerLogoText,
   headerNavigationItems,
+  headerOnCloseSearchBarModal,
   headerPrimaryCTA,
   headerSearchBarGuestsOptions,
   headerSearchBarLocationOptions,
   headerSearchBarModalHeadingText,
   headerSearchBarSearchButton,
+  isHeaderSearchBarModalOpen,
   placeholderBackgroundImageUrl,
   searchBarGetIsDayBlocked,
   searchBarOnChangeInput,
@@ -42,11 +44,13 @@ export const Component = ({
   >
     <Header
       activeNavigationItemIndex={activeNavigationItemIndex}
+      isSearchBarModalOpen={isHeaderSearchBarModalOpen}
       logoSizes={headerLogoSizes}
       logoSrc={headerLogoSrc}
       logoSrcSet={headerLogoSrcSet}
       logoText={headerLogoText}
       navigationItems={headerNavigationItems}
+      onCloseSearchBarModal={headerOnCloseSearchBarModal}
       primaryCTA={headerPrimaryCTA}
       searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
       searchBarGuestsOptions={headerSearchBarGuestsOptions}
@@ -71,11 +75,13 @@ Component.defaultProps = {
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
+  headerOnCloseSearchBarModal: undefined,
   headerPrimaryCTA: null,
   headerSearchBarGuestsOptions: [],
   headerSearchBarLocationOptions: [],
   headerSearchBarModalHeadingText: null,
   headerSearchBarSearchButton: undefined,
+  isHeaderSearchBarModalOpen: undefined,
   placeholderBackgroundImageUrl: null,
   searchBarGetIsDayBlocked: undefined,
   searchBarOnChangeInput: undefined,
@@ -119,6 +125,9 @@ Component.propTypes = {
       text: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** A function called when a close event happens on the search bar modal in the header. Used when consuming `Hero` as a controlled component. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  headerOnCloseSearchBarModal: PropTypes.func,
   /** An optional primary call to action to display as a [`<Button />`](#button) in the header. */
   headerPrimaryCTA: PropTypes.shape({
     /** The on click handler for the call to action. */
@@ -156,6 +165,9 @@ Component.propTypes = {
   headerSearchBarModalHeadingText: PropTypes.string,
   /** The Search Button the Search Bar modal displays. */
   headerSearchBarSearchButton: PropTypes.node,
+  /** Is the search bar modal in the header open. Used when consuming `Hero` as a controlled component. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  isHeaderSearchBarModalOpen: PropTypes.bool,
   /** The background placeholder image url of the hero. */
   placeholderBackgroundImageUrl: PropTypes.string,
   /**

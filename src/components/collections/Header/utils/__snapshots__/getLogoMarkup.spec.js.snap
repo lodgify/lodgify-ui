@@ -11,12 +11,14 @@ exports[`getLogoMarkup by default should render the right structure 1`] = `
     onClick={[Function]}
   >
     <Heading
+      className={null}
       isColorInverted={false}
       size="small"
       textAlign={null}
     >
       <Header
         as="h4"
+        className={null}
         inverted={false}
         textAlign={null}
       >
