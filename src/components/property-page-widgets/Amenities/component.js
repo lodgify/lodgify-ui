@@ -58,7 +58,7 @@ Component.propTypes = {
   amenities: PropTypes.arrayOf(
     PropTypes.shape({
       /** The name of the icon to display for the category.
-       * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
+       * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/master/src/components/elements/Icon/constants.js)
        */
       iconName: PropTypes.string.isRequired,
       /** The list of amenities */

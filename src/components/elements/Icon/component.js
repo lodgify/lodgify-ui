@@ -106,7 +106,7 @@ Component.propTypes = {
   labelWeight: PropTypes.oneOf(['heavy', 'light']),
   /**
    * The name of the icon to display. Takes priority over `props.path`.
-   * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/production/src/components/elements/Icon/constants.js)
+   * [See here for the full list of valid icon names](https://github.com/lodgify/lodgify-ui/blob/master/src/components/elements/Icon/constants.js)
    */
   name: PropTypes.oneOf(ICON_NAMES_LIST),
   /**
