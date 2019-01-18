@@ -1,3 +1,15 @@
+# [1.111.0](https://github.com/lodgify/lodgify-ui/compare/v1.110.0...v1.111.0) (2019-01-18)
+
+
+### Bug Fixes
+
+* **HostProfile:** implement getDescription util ([746d505](https://github.com/lodgify/lodgify-ui/commit/746d505))
+
+
+### Features
+
+* **getDescription:** implement util ([b69b117](https://github.com/lodgify/lodgify-ui/commit/b69b117))
+
 # [1.110.0](https://github.com/lodgify/lodgify-ui/compare/v1.109.0...v1.110.0) (2019-01-18)
 
 
