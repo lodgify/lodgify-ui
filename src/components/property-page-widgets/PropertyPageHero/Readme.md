@@ -38,11 +38,11 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { images, navigationItems, guestsOptions, locationOptions } = require('./mock-data/mock-data');
 
 <PropertyPageHero
-  images={images}
   headerLogoSrc={logoSrc}
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={navigationItems}
   headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
+  images={images}
   searchBarGuestsOptions={guestsOptions}
   searchBarLocationOptions={locationOptions}
   searchBarSearchButton={<Button>Check now!</Button>}
@@ -55,15 +55,37 @@ const { images, navigationItems, guestsOptions, locationOptions } = require('./m
 // Viewport width needs to be less than 600px to trigger modal
 
 const logoSrc = require('./mock-data/livingstoneLogo.png');
-const { images, navigationItems, guestsOptions } = require('./mock-data/mock-data');
+const { images, navigationItems, guestsOptions, locationOptions } = require('./mock-data/mock-data');
 
 <PropertyPageHero
-  images={images}
   headerLogoSrc={logoSrc}
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={navigationItems}
   headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
+  images={images}
   searchBarGuestsOptions={guestsOptions}
+  searchBarLocationOptions={locationOptions}
+  searchBarModalHeadingText="Custom modal heading"
+/>
+```
+
+#### With fewer than two images
+
+```jsx
+// If there are fewer than two images, the gallery won't be displayed
+
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+const { image, navigationItems, guestsOptions, locationOptions } = require('./mock-data/mock-data');
+
+
+<PropertyPageHero
+  headerLogoSrc={logoSrc}
+  headerLogoText="Livingstone Cottage"
+  headerNavigationItems={navigationItems}
+  headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
+  images={image}
+  searchBarGuestsOptions={guestsOptions}
+  searchBarLocationOptions={locationOptions}
   searchBarModalHeadingText="Custom modal heading"
 />
 ```
