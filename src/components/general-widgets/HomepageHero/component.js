@@ -227,6 +227,8 @@ Component.propTypes = {
   /** The options which the user can select in the location field of the search bar. */
   searchBarLocationOptions: PropTypes.arrayOf(
     PropTypes.shape({
+      /** The indent level of a location option. One of: 0, 1, 2, 3, 4, 5 */
+      indent: PropTypes.oneOf([0, 1, 2, 3, 4, 5]),
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
