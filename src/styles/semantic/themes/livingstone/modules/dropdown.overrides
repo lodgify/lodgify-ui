@@ -47,7 +47,8 @@
       }
 
       &.selected:hover {
-        background: @hoveredItemBackground;
+        background: @themeActionDarkerColorDefault;
+        background: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
         color: @hoveredItemColor;
       }
     }
