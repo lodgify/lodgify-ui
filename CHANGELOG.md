@@ -1,3 +1,12 @@
+# [1.112.0](https://github.com/lodgify/lodgify-ui/compare/v1.111.0...v1.112.0) (2019-01-21)
+
+
+### Features
+
+* **Heading:** expose props.className to play nicely with ([3c60d2b](https://github.com/lodgify/lodgify-ui/commit/3c60d2b))
+* **HomePageHero:** add mobile views and modal opening logic ([49b36a5](https://github.com/lodgify/lodgify-ui/commit/49b36a5))
+* **HomePageHero:** pass through props to control search bar modal ([2c16581](https://github.com/lodgify/lodgify-ui/commit/2c16581))
+
 # [1.111.0](https://github.com/lodgify/lodgify-ui/compare/v1.110.0...v1.111.0) (2019-01-18)
 
 
