@@ -1,3 +1,11 @@
+# [1.113.0](https://github.com/lodgify/lodgify-ui/compare/v1.112.0...v1.113.0) (2019-01-21)
+
+
+### Features
+
+* **getGalleryMarkup:** implement util ([ff0fbec](https://github.com/lodgify/lodgify-ui/commit/ff0fbec))
+* **PropertyPageHero:** implement getGalleryMarkup util ([ba721b2](https://github.com/lodgify/lodgify-ui/commit/ba721b2))
+
 # [1.112.0](https://github.com/lodgify/lodgify-ui/compare/v1.111.0...v1.112.0) (2019-01-21)
 
 
