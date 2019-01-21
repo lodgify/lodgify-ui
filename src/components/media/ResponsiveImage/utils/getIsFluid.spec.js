@@ -1,33 +1,66 @@
 import { getIsFluid } from './getIsFluid';
 
 describe('`getIsFluid`', () => {
-  describe('when `imageWidth` or `imageHeight` are defined', () => {
-    const testCases = [
-      {
-        props: [1, 1],
-      },
-      {
-        props: [1, undefined],
-      },
-      {
-        props: [undefined, 1],
-      },
-    ];
+  describe('whenever `isFluid` is `true`', () => {
+    it('should return `true`', () => {
+      const testCases = [
+        {
+          props: [true, 1, 1],
+        },
+        {
+          props: [true, '1', '1'],
+        },
+        {
+          props: [true, 0, 0],
+        },
+      ];
 
-    testCases.forEach(({ props }) => {
-      it(`should return 'false' when arguements are ${props}`, () => {
+      testCases.forEach(({ props }) => {
         const actual = getIsFluid(...props);
 
-        expect(actual).toMatchSnapshot();
+        expect(actual).toEqual(true);
       });
     });
   });
 
-  describe('when `imageWidth` and `imageHeight are both undefined', () => {
-    it(`should return the right value`, () => {
-      const actual = getIsFluid(undefined, undefined);
+  describe('whenever `isFluid` is `false` and `imageWidth` and `imageHeight` are falsy values', () => {
+    it('should return `true`', () => {
+      const testCases = [
+        {
+          props: [false, 0, 0],
+        },
+        {
+          props: [false, '', ''],
+        },
+        {
+          props: [false, null, null],
+        },
+      ];
 
-      expect(actual).toMatchSnapshot();
+      testCases.forEach(({ props }) => {
+        const actual = getIsFluid(...props);
+
+        expect(actual).toEqual(true);
+      });
+    });
+  });
+
+  describe('whenever `isFluid` is `false` and `imageWidth` and `imageHeight` are truthy values', () => {
+    it('should return `false`', () => {
+      const testCases = [
+        {
+          props: [false, 1, 1],
+        },
+        {
+          props: [false, '2', '2'],
+        },
+      ];
+
+      testCases.forEach(({ props }) => {
+        const actual = getIsFluid(...props);
+
+        expect(actual).toEqual(false);
+      });
     });
   });
 });
