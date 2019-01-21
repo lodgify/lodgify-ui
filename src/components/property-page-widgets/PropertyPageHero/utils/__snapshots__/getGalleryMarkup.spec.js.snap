@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`getViewMoreButtonMarkup\` if there are fewer than two images should return null 1`] = `null`;
+
+exports[`\`getViewMoreButtonMarkup\` if there are two images or more should return the right structure 1`] = `
+<React.Fragment>
+  <FlexContainer
+    alignContent={null}
+    alignItems="flex-end"
+    flexDirection={null}
+    flexWrap={null}
+    justifyContent={null}
+  >
+    <HorizontalGutters>
+      <Gallery
+        heading={
+          <React.Fragment>
+            <Heading
+              className={null}
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              ShoopDaWoop
+            </Heading>
+            <Rating
+              iconSize="small"
+              isShowingNumeral={true}
+              ratingNumber={9.9}
+            />
+          </React.Fragment>
+        }
+        images={
+          Array [
+            Object {
+              "imageUrl": "url",
+              "label": "Entrance",
+            },
+            Object {
+              "imageUrl": "url",
+              "label": "Kitchen",
+            },
+          ]
+        }
+        trigger={
+          <Button
+            hasShadow={false}
+            icon="placeholder"
+            isCompact={true}
+            isDisabled={false}
+            isLoading={false}
+            isPositionedRight={true}
+            isRounded={false}
+            isSecondary={true}
+            onClick={[Function]}
+            size={null}
+          >
+            WADSWORTH CONSTANT
+          </Button>
+        }
+      />
+    </HorizontalGutters>
+  </FlexContainer>
+  <Divider
+    className=""
+    hasLine={false}
+    size="medium"
+  />
+</React.Fragment>
+`;
