@@ -173,6 +173,8 @@ Component.propTypes = {
   // eslint-disable-next-line react/no-unused-prop-types
   locationOptions: PropTypes.arrayOf(
     PropTypes.shape({
+      /** The indent level of a location option. One of: 0, 1, 2, 3, 4, 5 */
+      indent: PropTypes.oneOf([0, 1, 2, 3, 4, 5]),
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
