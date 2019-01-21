@@ -12,9 +12,11 @@ import { DEFAULT_BOTTOM_OFFSET } from './constants';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   activeNavigationItemIndex,
-  backgroundImageUrl,
+  backgroundImageHeight,
   backgroundImageSizes,
   backgroundImageSrcSet,
+  backgroundImageUrl,
+  backgroundImageWidth,
   bottomOffset,
   children,
   headerLogoSizes,
@@ -37,7 +39,9 @@ export const Component = ({
   <FullBleed
     bottomOffset={bottomOffset}
     hasGradient
+    imageHeight={backgroundImageHeight}
     imageUrl={backgroundImageUrl}
+    imageWidth={backgroundImageWidth}
     placeholderImageUrl={placeholderBackgroundImageUrl}
     sizes={backgroundImageSizes}
     srcSet={backgroundImageSrcSet}
@@ -68,8 +72,10 @@ Component.displayName = 'Hero';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  backgroundImageHeight: undefined,
   backgroundImageSizes: undefined,
   backgroundImageSrcSet: undefined,
+  backgroundImageWidth: undefined,
   bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
   headerLogoSizes: undefined,
@@ -91,12 +97,22 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The index of the active navigation item. */
   activeNavigationItemIndex: PropTypes.number,
+  /** The natural height of the background image. */
+  backgroundImageHeight: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
   /** A list of one or more strings separated by commas indicating a set of source sizes for the background image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   backgroundImageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the background image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   backgroundImageSrcSet: PropTypes.string,
   /** The source url of the hero's background image. */
   backgroundImageUrl: PropTypes.string.isRequired,
+  /** The natural width of the background image. */
+  backgroundImageWidth: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
   /** Reduce the height of the Hero with an offset, supports CSS dimensions. */
   bottomOffset: PropTypes.string,
   /** The children displayed between the header and the bottom of the hero. */
