@@ -1,3 +1,10 @@
+## [1.115.1](https://github.com/lodgify/lodgify-ui/compare/v1.115.0...v1.115.1) (2019-01-22)
+
+
+### Bug Fixes
+
+* **Header:** revert to submenu trigger having no link ([ee226f5](https://github.com/lodgify/lodgify-ui/commit/ee226f5))
+
 # [1.115.0](https://github.com/lodgify/lodgify-ui/compare/v1.114.0...v1.115.0) (2019-01-22)
 
 
