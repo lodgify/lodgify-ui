@@ -127,16 +127,6 @@
           border-bottom-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
         }
       }
-
-      &.accordion {
-
-        .title {
-
-          .link.item {
-            display: inline;
-          }
-        }
-      }
     }
   }
 
@@ -317,10 +307,6 @@ header {
         @media @mobileScreen {
           border: none;
         }
-      }
-
-      > .item.dropdown {
-        padding: 0;
       }
 
       > .active.item,

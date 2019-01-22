@@ -1,10 +1,7 @@
 export const navigationItems = [
-  {
-    text: 'Home',
-  },
+  { text: 'Home', href: '/' },
   {
     text: 'All properties',
-    href: '/all-properties',
     subItems: [
       {
         href: '/la-casa-viva',

@@ -10,10 +10,10 @@ exports[`<Header /> by default should render the right structure 1`] = `
   navigationItems={
     Array [
       Object {
+        "href": "/",
         "text": "Home",
       },
       Object {
-        "href": "/all-properties",
         "subItems": Array [
           Object {
             "href": "/la-casa-viva",
@@ -183,6 +183,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                               </MenuItem>
                               <MenuItem
                                 active={false}
+                                href="/"
                                 link={true}
                               >
                                 Home
@@ -226,13 +227,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                                         "key": "1All properties",
                                       },
                                       "title": Object {
-                                        "content": <MenuItem
-                                          active={false}
-                                          href="/all-properties"
-                                          link={true}
-                                        >
-                                          All properties
-                                        </MenuItem>,
+                                        "content": "All properties",
                                         "key": "All properties1",
                                       },
                                     },
@@ -375,15 +370,17 @@ exports[`<Header /> by default should render the right structure 1`] = `
                 >
                   <MenuItem
                     active={false}
+                    href="/"
                     key="Home0"
                     link={true}
                   >
-                    <div
+                    <a
                       className="link item"
+                      href="/"
                       onClick={[Function]}
                     >
                       Home
-                    </div>
+                    </a>
                   </MenuItem>
                   <Submenu
                     isMenuItem={true}
@@ -476,15 +473,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       selectOnBlur={true}
                       selectOnNavigation={true}
                       simple={true}
-                      trigger={
-                        <MenuItem
-                          active={false}
-                          href="/all-properties"
-                          link={true}
-                        >
-                          All properties
-                        </MenuItem>
-                      }
+                      trigger="All properties"
                       upward={false}
                       value={null}
                       wrapSelection={true}
@@ -501,20 +490,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                         role="listbox"
                         tabIndex={0}
                       >
-                        <MenuItem
-                          active={false}
-                          href="/all-properties"
-                          key="All properties1"
-                          link={true}
-                        >
-                          <a
-                            className="link item"
-                            href="/all-properties"
-                            onClick={[Function]}
-                          >
-                            All properties
-                          </a>
-                        </MenuItem>
+                        All properties
                         <Icon
                           color={null}
                           hasBorder={false}
@@ -738,10 +714,10 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
   navigationItems={
     Array [
       Object {
+        "href": "/",
         "text": "Home",
       },
       Object {
-        "href": "/all-properties",
         "subItems": Array [
           Object {
             "href": "/la-casa-viva",
@@ -911,6 +887,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                               </MenuItem>
                               <MenuItem
                                 active={false}
+                                href="/"
                                 link={true}
                               >
                                 Home
@@ -954,13 +931,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                                         "key": "1All properties",
                                       },
                                       "title": Object {
-                                        "content": <MenuItem
-                                          active={false}
-                                          href="/all-properties"
-                                          link={true}
-                                        >
-                                          All properties
-                                        </MenuItem>,
+                                        "content": "All properties",
                                         "key": "All properties1",
                                       },
                                     },
@@ -1103,15 +1074,17 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                 >
                   <MenuItem
                     active={false}
+                    href="/"
                     key="Home0"
                     link={true}
                   >
-                    <div
+                    <a
                       className="link item"
+                      href="/"
                       onClick={[Function]}
                     >
                       Home
-                    </div>
+                    </a>
                   </MenuItem>
                   <Submenu
                     isMenuItem={true}
@@ -1204,15 +1177,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       selectOnBlur={true}
                       selectOnNavigation={true}
                       simple={true}
-                      trigger={
-                        <MenuItem
-                          active={false}
-                          href="/all-properties"
-                          link={true}
-                        >
-                          All properties
-                        </MenuItem>
-                      }
+                      trigger="All properties"
                       upward={false}
                       value={null}
                       wrapSelection={true}
@@ -1229,20 +1194,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                         role="listbox"
                         tabIndex={0}
                       >
-                        <MenuItem
-                          active={false}
-                          href="/all-properties"
-                          key="All properties1"
-                          link={true}
-                        >
-                          <a
-                            className="link item"
-                            href="/all-properties"
-                            onClick={[Function]}
-                          >
-                            All properties
-                          </a>
-                        </MenuItem>
+                        All properties
                         <Icon
                           color={null}
                           hasBorder={false}
@@ -1683,12 +1635,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                                         "key": "1All properties",
                                       },
                                       "title": Object {
-                                        "content": <MenuItem
-                                          active={false}
-                                          link={true}
-                                        >
-                                          All properties
-                                        </MenuItem>,
+                                        "content": "All properties",
                                         "key": "All properties1",
                                       },
                                     },
