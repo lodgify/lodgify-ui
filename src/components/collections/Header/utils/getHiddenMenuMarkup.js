@@ -90,16 +90,7 @@ export const getHiddenMenuMarkup = (
                 panels={[
                   {
                     title: {
-                      content: (
-                        <Menu.Item
-                          active={index === activeNavigationItemIndex}
-                          href={href}
-                          key={buildKeyFromStrings(text, index)}
-                          link
-                        >
-                          {text}
-                        </Menu.Item>
-                      ),
+                      content: text,
                       key: buildKeyFromStrings(text, index),
                     },
                     content: {
