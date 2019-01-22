@@ -18,6 +18,8 @@ export const Component = ({
   children,
   hasGradient,
   imageUrl,
+  imageHeight,
+  imageWidth,
   placeholderImageUrl,
   sizes,
   srcSet,
@@ -33,7 +35,9 @@ export const Component = ({
     vertical
   >
     <ResponsiveImage
+      imageHeight={imageHeight}
       imageUrl={imageUrl}
+      imageWidth={imageWidth}
       isFluid
       placeholderImageUrl={placeholderImageUrl}
       sizes={sizes}
@@ -49,7 +53,9 @@ Component.defaultProps = {
   bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
   hasGradient: false,
+  imageHeight: undefined,
   imageUrl: null,
+  imageWidth: undefined,
   placeholderImageUrl: null,
   sizes: null,
   srcSet: null,
@@ -62,8 +68,12 @@ Component.propTypes = {
   children: PropTypes.node,
   /** Is there a gradient overlaying the full bleed.  */
   hasGradient: PropTypes.bool,
+  /** The natural height of the image. */
+  imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** URL pointing to the image to render. */
   imageUrl: PropTypes.string,
+  /** The natural width of the image. */
+  imageWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */

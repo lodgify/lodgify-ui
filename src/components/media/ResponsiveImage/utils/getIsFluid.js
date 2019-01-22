@@ -1,7 +1,8 @@
 /**
- * @param  {number} imageWidth
- * @param  {number} imageHeight
+ * @param  {boolean} isFluid
+ * @param  {number}  imageWidth
+ * @param  {number}  imageHeight
  * @return {boolean}
  */
-export const getIsFluid = (imageWidth, imageHeight) =>
-  !(imageWidth || imageHeight);
+export const getIsFluid = (isFluid, imageWidth, imageHeight) =>
+  isFluid || !(imageWidth || imageHeight);

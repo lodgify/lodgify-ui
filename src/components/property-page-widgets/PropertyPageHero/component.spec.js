@@ -40,6 +40,16 @@ describe('PropertyPageHero', () => {
 
       expect(actual).toMatchSnapshot();
     });
+
+    describe('if there are fewer than two images', () => {
+      it('should render the right structure', () => {
+        const actual = getWrappedPropertyPageHero({
+          images: [{ imageUrl, label: 'Entrance' }],
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
   });
 
   it('should have the displayName `PropertyPageHero`', () => {
