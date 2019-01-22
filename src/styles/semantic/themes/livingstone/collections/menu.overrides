@@ -56,7 +56,8 @@
 
     & > .selected.item:hover,
     & > .active.item:hover {
-      background: @dropdownHoveredItemBackground !important;
+      background: @themeActionDarkerColorDefault !important;
+      background: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault) !important;
     }
   }
 
