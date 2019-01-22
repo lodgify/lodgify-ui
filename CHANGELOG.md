@@ -1,3 +1,11 @@
+# [1.115.0](https://github.com/lodgify/lodgify-ui/compare/v1.114.0...v1.115.0) (2019-01-22)
+
+
+### Features
+
+* **dropdown.overrides:** apply theme background on hover ([05344f9](https://github.com/lodgify/lodgify-ui/commit/05344f9))
+* **menu.overrides:** apply theme background on hover ([84c1db2](https://github.com/lodgify/lodgify-ui/commit/84c1db2))
+
 # [1.114.0](https://github.com/lodgify/lodgify-ui/compare/v1.113.0...v1.114.0) (2019-01-22)
 
 
