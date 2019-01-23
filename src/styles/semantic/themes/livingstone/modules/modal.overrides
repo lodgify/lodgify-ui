@@ -45,17 +45,26 @@
 .ui.fullscreen.modal {
   bottom: 0;
   height: @fullScreenHeight;
-  overflow-y: scroll;
   position: absolute;
   top: 0;
+  width: 100%;
 
   &.scrolling.modal {
     margin: 0 !important;
   }
 
-  .content {
+  > .content > .link.item {
+    display: inline-block;
+  }
+
+  > .content {
     height: 100%;
     overflow: auto;
+    padding: @contentPadding;
+
+    @media only screen and (max-width: @largeMonitorBreakpoint) {
+      padding: @contentPaddingMobile !important;
+    }
   }
 
   .ui.container {
@@ -75,17 +84,12 @@
   }
 
   > i.icon {
-    @media only screen and (min-width: @tabletBreakpoint) {
-      top: @withHorizontalCloseIconTop;
-    }
+    right: @withHorizontalCloseIconRight;
+    top: @withHorizontalCloseIconTop;
 
-    @media only screen and (min-width: (@horizontalGutterMaxWidth + 1)) {
-      left: @withHorizontalCloseIconLeft;
-      right: auto;
-    }
-
-    @media only screen and (min-width: @tabletBreakpoint) and (max-width: @horizontalGutterMaxWidth) {
-      right: @withHorizontalCloseIconRight;
+    @media only screen and (max-width: @largeMonitorBreakpoint) {
+      right: @withHorizontalCloseIconRightMobile;
+      top: @withHorizontalCloseIconTopMobile;
     }
 
     > svg {

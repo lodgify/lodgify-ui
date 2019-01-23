@@ -17,7 +17,8 @@
 /* Header */
 
 /* Content */
-@contentPadding: @32px @36px;
+@contentPadding: 30px 15%;
+@contentPaddingMobile: 15px 5%;
 
 /* Image / Description */
 
@@ -60,7 +61,9 @@
 /* With the horizontal gutters */
 @reducedHeadingWidth: ~"calc(100% - @{30px})";
 @withHorizontalCloseIconTop: @25px;
-@withHorizontalCloseIconRight: @25px;
+@withHorizontalCloseIconTopMobile: @5px;
+@withHorizontalCloseIconRight: 15%;
+@withHorizontalCloseIconRightMobile: 3%;
 
 @halfContainerWidthWithPadding: (@horizontalGutterMaxWidth / 2) - (@horizontalGutterLeftRightPadding * 2);
 @withHorizontalCloseIconLeft: ~"calc(50% + @{halfContainerWidthWithPadding})";
