@@ -55,9 +55,10 @@
   .ui.dropdown .menu {
 
     & > .selected.item:hover,
-    & > .active.item:hover {
-      background: @themeActionDarkerColorDefault !important;
-      background: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault) !important;
+    & > .active.item:hover,
+    & > .item:hover, {
+      background: @themeActionColorDefault !important;
+      background: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
     }
   }
 
