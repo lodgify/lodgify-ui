@@ -5,4 +5,4 @@ import { MAXIMUM_WINDOW_HEIGHT_FOR_MODAL_CALENDAR } from './constants';
  * @return {boolean}
  */
 export const isDisplayedAsModal = windowHeight =>
-  windowHeight < MAXIMUM_WINDOW_HEIGHT_FOR_MODAL_CALENDAR;
+  !!windowHeight && windowHeight < MAXIMUM_WINDOW_HEIGHT_FOR_MODAL_CALENDAR;

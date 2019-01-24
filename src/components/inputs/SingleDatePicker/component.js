@@ -21,10 +21,11 @@ export class Component extends PureComponent {
   state = {
     date: null,
     isFocused: null,
-    windowHeight: getWindowHeight(),
+    windowHeight: null,
   };
 
   componentDidMount = () => {
+    this.handleHeightChange();
     global.addEventListener('resize', debounce(this.handleHeightChange, 150));
   };
 
