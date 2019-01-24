@@ -9,6 +9,10 @@ import { SearchBar } from '../../general-widgets/SearchBar/index';
 
 import { getSummaryMarkup } from './utils/getSummaryMarkup';
 
+/**
+ * A property page search bar displays a sticky footer with a property summary and an availability search.
+ */
+// eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   dateRangePickerLocaleCode,
   getIsDayBlocked,

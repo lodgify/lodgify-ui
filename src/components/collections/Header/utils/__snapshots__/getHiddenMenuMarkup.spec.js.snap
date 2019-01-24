@@ -85,6 +85,7 @@ exports[`getHiddenMenuMarkup by default should render the right structure 1`] = 
                   </MenuItem>
                   <MenuItem
                     active={true}
+                    href="/"
                     link={true}
                   >
                     Home
@@ -128,13 +129,7 @@ exports[`getHiddenMenuMarkup by default should render the right structure 1`] = 
                             "key": "1All properties",
                           },
                           "title": Object {
-                            "content": <MenuItem
-                              active={false}
-                              href="/all-properties"
-                              link={true}
-                            >
-                              All properties
-                            </MenuItem>,
+                            "content": "All properties",
                             "key": "All properties1",
                           },
                         },
@@ -614,6 +609,7 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                   </MenuItem>
                   <MenuItem
                     active={true}
+                    href="/"
                     link={true}
                   >
                     Home
@@ -657,13 +653,7 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                             "key": "1All properties",
                           },
                           "title": Object {
-                            "content": <MenuItem
-                              active={false}
-                              href="/all-properties"
-                              link={true}
-                            >
-                              All properties
-                            </MenuItem>,
+                            "content": "All properties",
                             "key": "All properties1",
                           },
                         },

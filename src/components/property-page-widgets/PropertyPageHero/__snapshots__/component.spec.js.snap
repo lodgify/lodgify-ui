@@ -1,5 +1,817 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`PropertyPageHero by default if there are fewer than two images should render the right structure 1`] = `
+<PropertyPageHero
+  activeNavigationItemIndex={1}
+  headerLogoSizes="a load of logo sizes"
+  headerLogoSrc="src"
+  headerLogoSrcSet="a load of logo src sets"
+  headerLogoText="text"
+  headerNavigationItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+    ]
+  }
+  headerPrimaryCTA={
+    Object {
+      "onClick": [Function],
+      "text": "Book now",
+    }
+  }
+  images={
+    Array [
+      Object {
+        "imageUrl": "🚞",
+        "label": "Entrance",
+      },
+    ]
+  }
+  isUserOnMobile={false}
+  propertyName={null}
+  ratingNumber={null}
+  searchBarGetIsDayBlocked={[Function]}
+  searchBarGuestsOptions={
+    Array [
+      Object {
+        "text": "1",
+        "value": "1",
+      },
+    ]
+  }
+  searchBarLocationOptions={
+    Array [
+      Object {
+        "text": "1",
+        "value": "1",
+      },
+    ]
+  }
+  searchBarModalHeadingText="😹"
+  searchBarOnChangeInput={[Function]}
+  searchBarOnSubmit={[Function]}
+  searchBarSearchButton="hey"
+  secondaryButtonText="🐸"
+>
+  <Hero
+    activeNavigationItemIndex={1}
+    backgroundImageUrl="🚞"
+    bottomOffset="85px"
+    headerLogoSizes="a load of logo sizes"
+    headerLogoSrc="src"
+    headerLogoSrcSet="a load of logo src sets"
+    headerLogoText="text"
+    headerNavigationItems={
+      Array [
+        Object {
+          "href": "/",
+          "text": "Home",
+        },
+      ]
+    }
+    headerPrimaryCTA={
+      Object {
+        "onClick": [Function],
+        "text": "Book now",
+      }
+    }
+    headerSearchBarGuestsOptions={
+      Array [
+        Object {
+          "text": "1",
+          "value": "1",
+        },
+      ]
+    }
+    headerSearchBarLocationOptions={
+      Array [
+        Object {
+          "text": "1",
+          "value": "1",
+        },
+      ]
+    }
+    headerSearchBarModalHeadingText="😹"
+    headerSearchBarSearchButton="hey"
+    isFixedSearchBarDisplayed={true}
+    placeholderBackgroundImageUrl={null}
+    searchBarGetIsDayBlocked={[Function]}
+    searchBarOnChangeInput={[Function]}
+    searchBarOnSubmit={[Function]}
+  >
+    <FullBleed
+      bottomOffset="85px"
+      hasGradient={true}
+      imageUrl="🚞"
+      placeholderImageUrl={null}
+      sizes={null}
+      srcSet={null}
+    >
+      <Segment
+        className="full-bleed has-gradient has-children"
+        style={
+          Object {
+            "--full-bleed-bottom-offset": "85px",
+          }
+        }
+        vertical={true}
+      >
+        <div
+          className="ui vertical segment full-bleed has-gradient has-children"
+          style={
+            Object {
+              "--full-bleed-bottom-offset": "85px",
+            }
+          }
+        >
+          <ResponsiveImage
+            alternativeText="Image Widget"
+            hasRoundedCorners={false}
+            imageHeight={null}
+            imageNotFoundLabelText="Image not found!"
+            imageTitle="Image Title"
+            imageUrl="🚞"
+            imageWidth={null}
+            isAvatar={false}
+            isCircular={false}
+            isFluid={true}
+            label={null}
+            placeholderImageUrl={null}
+            sizes={null}
+            srcSet={null}
+          >
+            <figure
+              className="responsive-image is-fluid"
+            >
+              <Image
+                alt="Image Widget"
+                as="img"
+                avatar={false}
+                fluid={true}
+                onLoad={[Function]}
+                sizes={null}
+                src="🚞"
+                srcSet={null}
+                title="Image Title"
+                ui={true}
+              >
+                <img
+                  alt="Image Widget"
+                  className="ui fluid image"
+                  onLoad={[Function]}
+                  sizes={null}
+                  src="🚞"
+                  srcSet={null}
+                  title="Image Title"
+                />
+              </Image>
+            </figure>
+          </ResponsiveImage>
+          <Header
+            activeNavigationItemIndex={1}
+            isBackgroundFilled={false}
+            logoSizes="a load of logo sizes"
+            logoSrc="src"
+            logoSrcSet="a load of logo src sets"
+            logoText="text"
+            navigationItems={
+              Array [
+                Object {
+                  "href": "/",
+                  "text": "Home",
+                },
+              ]
+            }
+            primaryCTA={
+              Object {
+                "onClick": [Function],
+                "text": "Book now",
+              }
+            }
+            searchBarGetIsDayBlocked={[Function]}
+            searchBarGuestsOptions={
+              Array [
+                Object {
+                  "text": "1",
+                  "value": "1",
+                },
+              ]
+            }
+            searchBarLocationOptions={
+              Array [
+                Object {
+                  "text": "1",
+                  "value": "1",
+                },
+              ]
+            }
+            searchBarModalHeadingText="😹"
+            searchBarOnChangeInput={[Function]}
+            searchBarOnSubmit={[Function]}
+            searchBarSearchButton="hey"
+          >
+            <header
+              className=""
+            >
+              <HorizontalGutters
+                as={[Function]}
+                borderless={true}
+                text={true}
+              >
+                <Container
+                  as={[Function]}
+                  borderless={true}
+                  text={true}
+                >
+                  <Menu
+                    borderless={true}
+                    className="ui text container"
+                  >
+                    <div
+                      className="ui borderless ui text container menu"
+                    >
+                      <MenuItem
+                        href="/"
+                        link={true}
+                      >
+                        <a
+                          className="link item"
+                          href="/"
+                          onClick={[Function]}
+                        >
+                          <Image
+                            alt="text"
+                            as="img"
+                            sizes="a load of logo sizes"
+                            src="src"
+                            srcSet="a load of logo src sets"
+                            ui={true}
+                          >
+                            <img
+                              alt="text"
+                              className="ui image"
+                              sizes="a load of logo sizes"
+                              src="src"
+                              srcSet="a load of logo src sets"
+                            />
+                          </Image>
+                        </a>
+                      </MenuItem>
+                      <ShowOn
+                        computer={false}
+                        mobile={true}
+                        parent={[Function]}
+                        parentProps={
+                          Object {
+                            "position": "right",
+                          }
+                        }
+                        tablet={false}
+                        widescreen={false}
+                      >
+                        <MenuMenu
+                          className="show-on-mobile"
+                          position="right"
+                        >
+                          <div
+                            className="right menu show-on-mobile"
+                          >
+                            <MenuItem>
+                              <div
+                                className="item"
+                                onClick={[Function]}
+                              >
+                                <SearchBar
+                                  className={null}
+                                  getIsDayBlocked={[Function]}
+                                  guestsOptions={
+                                    Array [
+                                      Object {
+                                        "text": "1",
+                                        "value": "1",
+                                      },
+                                    ]
+                                  }
+                                  isDisplayedAsModal={true}
+                                  isFixed={false}
+                                  isShowingSummary={false}
+                                  locationOptions={
+                                    Array [
+                                      Object {
+                                        "text": "1",
+                                        "value": "1",
+                                      },
+                                    ]
+                                  }
+                                  modalHeadingText="😹"
+                                  modalSummaryElement={null}
+                                  modalTrigger={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="search"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  onChangeInput={[Function]}
+                                  onCloseModal={[Function]}
+                                  onSubmit={[Function]}
+                                  searchButton="hey"
+                                  summaryElement={null}
+                                  willDropdownsOpenAbove={false}
+                                >
+                                  <Modal
+                                    isFullscreen={true}
+                                    onClose={[Function]}
+                                    size="tiny"
+                                    trigger={
+                                      <Icon
+                                        color={null}
+                                        hasBorder={false}
+                                        isButton={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="search"
+                                        path={null}
+                                        size={null}
+                                      />
+                                    }
+                                  >
+                                    <Modal
+                                      closeIcon={
+                                        <Icon
+                                          color={null}
+                                          hasBorder={false}
+                                          isButton={false}
+                                          isCircular={false}
+                                          isColorInverted={false}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="close"
+                                          path={null}
+                                          size={null}
+                                        />
+                                      }
+                                      closeOnDimmerClick={true}
+                                      closeOnDocumentClick={false}
+                                      content={
+                                        <ModalContent>
+                                          <Heading
+                                            className={null}
+                                            isColorInverted={false}
+                                            size="small"
+                                            textAlign={null}
+                                          >
+                                            😹
+                                          </Heading>
+                                          <Form
+                                            as="form"
+                                            onSubmit={[Function]}
+                                          >
+                                            <React.Fragment>
+                                              <FormField
+                                                width="twelve"
+                                              >
+                                                <Dropdown
+                                                  error={false}
+                                                  icon="map pin"
+                                                  isDisabled={false}
+                                                  isValid={false}
+                                                  label="Location"
+                                                  name="location"
+                                                  onBlur={[Function]}
+                                                  onChange={[Function]}
+                                                  options={
+                                                    Array [
+                                                      Object {
+                                                        "text": "1",
+                                                        "value": "1",
+                                                      },
+                                                    ]
+                                                  }
+                                                  willOpenAbove={false}
+                                                />
+                                              </FormField>
+                                              <FormField
+                                                width="twelve"
+                                              >
+                                                <WithResponsive(DateRangePicker)
+                                                  endDatePlaceholderText="Check-out"
+                                                  getIsDayBlocked={[Function]}
+                                                  name="dates"
+                                                  onChange={[Function]}
+                                                  startDatePlaceholderText="Check-in"
+                                                  willOpenAbove={false}
+                                                />
+                                              </FormField>
+                                              <FormField
+                                                width="twelve"
+                                              >
+                                                <Dropdown
+                                                  error={false}
+                                                  icon="users"
+                                                  isDisabled={false}
+                                                  isValid={false}
+                                                  label="Guests"
+                                                  name="guests"
+                                                  onBlur={[Function]}
+                                                  onChange={[Function]}
+                                                  options={
+                                                    Array [
+                                                      Object {
+                                                        "text": "1",
+                                                        "value": "1",
+                                                      },
+                                                    ]
+                                                  }
+                                                  willOpenAbove={false}
+                                                />
+                                              </FormField>
+                                              <FormField
+                                                width="twelve"
+                                              >
+                                                hey
+                                              </FormField>
+                                            </React.Fragment>
+                                          </Form>
+                                        </ModalContent>
+                                      }
+                                      dimmer="inverted"
+                                      eventPool="Modal"
+                                      onClose={[Function]}
+                                      size="fullscreen"
+                                      trigger={
+                                        <Icon
+                                          color={null}
+                                          hasBorder={false}
+                                          isButton={false}
+                                          isCircular={false}
+                                          isColorInverted={false}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="search"
+                                          path={null}
+                                          size={null}
+                                        />
+                                      }
+                                    >
+                                      <Portal
+                                        className="ui inverted page modals dimmer transition visible active"
+                                        closeOnDocumentClick={false}
+                                        closeOnEscape={true}
+                                        closeOnRootNodeClick={true}
+                                        eventPool="Modal"
+                                        mountNode={<body />}
+                                        onClose={[Function]}
+                                        onMount={[Function]}
+                                        onOpen={[Function]}
+                                        onUnmount={[Function]}
+                                        openOnTriggerClick={true}
+                                        trigger={
+                                          <Icon
+                                            color={null}
+                                            hasBorder={false}
+                                            isButton={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="search"
+                                            path={null}
+                                            size={null}
+                                          />
+                                        }
+                                      >
+                                        <Ref
+                                          innerRef={[Function]}
+                                        >
+                                          <Icon
+                                            color={null}
+                                            hasBorder={false}
+                                            isButton={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="search"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            path={null}
+                                            size={null}
+                                          >
+                                            <i
+                                              className="icon"
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                            >
+                                              <svg
+                                                viewBox="0 0 24 24"
+                                              >
+                                                <path
+                                                  d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                                  fill="currentColor"
+                                                />
+                                              </svg>
+                                            </i>
+                                          </Icon>
+                                        </Ref>
+                                      </Portal>
+                                    </Modal>
+                                  </Modal>
+                                </SearchBar>
+                              </div>
+                            </MenuItem>
+                            <MenuItem>
+                              <div
+                                className="item"
+                                onClick={[Function]}
+                              >
+                                <Modal
+                                  isFullscreen={true}
+                                  onClose={[Function]}
+                                  size="tiny"
+                                  trigger={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="bars"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                >
+                                  <Modal
+                                    closeIcon={
+                                      <Icon
+                                        color={null}
+                                        hasBorder={false}
+                                        isButton={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="close"
+                                        path={null}
+                                        size={null}
+                                      />
+                                    }
+                                    closeOnDimmerClick={true}
+                                    closeOnDocumentClick={false}
+                                    content={
+                                      <Menu
+                                        text={true}
+                                        vertical={true}
+                                      >
+                                        <MenuItem
+                                          href="/"
+                                          link={true}
+                                        >
+                                          <Image
+                                            alt="text"
+                                            as="img"
+                                            sizes="a load of logo sizes"
+                                            src="src"
+                                            srcSet="a load of logo src sets"
+                                            ui={true}
+                                          />
+                                        </MenuItem>
+                                        <MenuItem
+                                          active={false}
+                                          href="/"
+                                          link={true}
+                                        >
+                                          Home
+                                        </MenuItem>
+                                      </Menu>
+                                    }
+                                    dimmer="inverted"
+                                    eventPool="Modal"
+                                    onClose={[Function]}
+                                    size="fullscreen"
+                                    trigger={
+                                      <Icon
+                                        color={null}
+                                        hasBorder={false}
+                                        isButton={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="bars"
+                                        path={null}
+                                        size={null}
+                                      />
+                                    }
+                                  >
+                                    <Portal
+                                      className="ui inverted page modals dimmer transition visible active"
+                                      closeOnDocumentClick={false}
+                                      closeOnEscape={true}
+                                      closeOnRootNodeClick={true}
+                                      eventPool="Modal"
+                                      mountNode={<body />}
+                                      onClose={[Function]}
+                                      onMount={[Function]}
+                                      onOpen={[Function]}
+                                      onUnmount={[Function]}
+                                      openOnTriggerClick={true}
+                                      trigger={
+                                        <Icon
+                                          color={null}
+                                          hasBorder={false}
+                                          isButton={false}
+                                          isCircular={false}
+                                          isColorInverted={false}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="bars"
+                                          path={null}
+                                          size={null}
+                                        />
+                                      }
+                                    >
+                                      <Ref
+                                        innerRef={[Function]}
+                                      >
+                                        <Icon
+                                          color={null}
+                                          hasBorder={false}
+                                          isButton={false}
+                                          isCircular={false}
+                                          isColorInverted={false}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="bars"
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseEnter={[Function]}
+                                          onMouseLeave={[Function]}
+                                          path={null}
+                                          size={null}
+                                        >
+                                          <i
+                                            className="icon"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                        </Icon>
+                                      </Ref>
+                                    </Portal>
+                                  </Modal>
+                                </Modal>
+                              </div>
+                            </MenuItem>
+                          </div>
+                        </MenuMenu>
+                      </ShowOn>
+                      <ShowOn
+                        computer={true}
+                        mobile={false}
+                        parent={[Function]}
+                        parentProps={
+                          Object {
+                            "position": "right",
+                          }
+                        }
+                        tablet={true}
+                        widescreen={true}
+                      >
+                        <MenuMenu
+                          className="show-on-tablet show-on-computer show-on-widescreen"
+                          position="right"
+                        >
+                          <div
+                            className="right menu show-on-tablet show-on-computer show-on-widescreen"
+                          >
+                            <MenuItem
+                              active={false}
+                              href="/"
+                              key="Home0"
+                              link={true}
+                            >
+                              <a
+                                className="link item"
+                                href="/"
+                                onClick={[Function]}
+                              >
+                                Home
+                              </a>
+                            </MenuItem>
+                            <MenuItem
+                              className="no-underline"
+                              link={true}
+                            >
+                              <div
+                                className="link item no-underline"
+                                onClick={[Function]}
+                              >
+                                <Button
+                                  hasShadow={false}
+                                  icon={null}
+                                  isCompact={false}
+                                  isDisabled={false}
+                                  isLoading={false}
+                                  isPositionedRight={false}
+                                  isRounded={true}
+                                  isSecondary={false}
+                                  onClick={[Function]}
+                                  size={null}
+                                >
+                                  <Button
+                                    as="button"
+                                    circular={true}
+                                    className=""
+                                    compact={false}
+                                    disabled={false}
+                                    floated="left"
+                                    loading={false}
+                                    onClick={[Function]}
+                                    secondary={false}
+                                    size={null}
+                                  >
+                                    <button
+                                      className="ui circular left floated button"
+                                      onClick={[Function]}
+                                      role="button"
+                                    >
+                                      Book now
+                                    </button>
+                                  </Button>
+                                </Button>
+                              </div>
+                            </MenuItem>
+                          </div>
+                        </MenuMenu>
+                      </ShowOn>
+                    </div>
+                  </Menu>
+                </Container>
+              </HorizontalGutters>
+            </header>
+          </Header>
+        </div>
+      </Segment>
+    </FullBleed>
+  </Hero>
+</PropertyPageHero>
+`;
+
 exports[`PropertyPageHero by default should render the right structure 1`] = `
 <PropertyPageHero
   activeNavigationItemIndex={1}

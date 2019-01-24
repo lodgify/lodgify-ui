@@ -28,9 +28,11 @@ export class Component extends PureComponent {
   render = () => {
     const {
       activeNavigationItemIndex,
+      backgroundImageHeight,
       backgroundImageSizes,
       backgroundImageSrcSet,
       backgroundImageUrl,
+      backgroundImageWidth,
       headerLogoSizes,
       headerLogoSrc,
       headerLogoSrcSet,
@@ -52,9 +54,11 @@ export class Component extends PureComponent {
     return (
       <Hero
         activeNavigationItemIndex={activeNavigationItemIndex}
+        backgroundImageHeight={backgroundImageHeight}
         backgroundImageSizes={backgroundImageSizes}
         backgroundImageSrcSet={backgroundImageSrcSet}
         backgroundImageUrl={backgroundImageUrl}
+        backgroundImageWidth={backgroundImageWidth}
         headerLogoSizes={headerLogoSizes}
         headerLogoSrc={headerLogoSrc}
         headerLogoSrcSet={headerLogoSrcSet}
@@ -141,8 +145,10 @@ Component.displayName = 'HomepageHero';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  backgroundImageHeight: undefined,
   backgroundImageSizes: undefined,
   backgroundImageSrcSet: undefined,
+  backgroundImageWidth: undefined,
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
@@ -161,12 +167,22 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The index of the active navigation item. */
   activeNavigationItemIndex: PropTypes.number,
+  /** The natural height of the background image. */
+  backgroundImageHeight: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
   /** A list of one or more strings separated by commas indicating a set of source sizes for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   backgroundImageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   backgroundImageSrcSet: PropTypes.string,
   /** The source url of the hero's background image. */
   backgroundImageUrl: PropTypes.string.isRequired,
+  /** The natural width of the background image. */
+  backgroundImageWidth: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
   /** A list of one or more strings separated by commas indicating a set of source sizes for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   headerLogoSizes: PropTypes.string,
   /** The src url for the logo in the header. */
@@ -227,6 +243,8 @@ Component.propTypes = {
   /** The options which the user can select in the location field of the search bar. */
   searchBarLocationOptions: PropTypes.arrayOf(
     PropTypes.shape({
+      /** The indent level of a location option. One of: 0, 1, 2, 3, 4, 5 */
+      indent: PropTypes.oneOf([0, 1, 2, 3, 4, 5]),
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
