@@ -1,3 +1,11 @@
+## [1.115.2](https://github.com/lodgify/lodgify-ui/compare/v1.115.1...v1.115.2) (2019-01-24)
+
+
+### Bug Fixes
+
+* **dropdown.overrides:** fix theme background on hover ([c9791a3](https://github.com/lodgify/lodgify-ui/commit/c9791a3))
+* **menu.overrides:** fix theme background on hover ([836203a](https://github.com/lodgify/lodgify-ui/commit/836203a))
+
 ## [1.115.1](https://github.com/lodgify/lodgify-ui/compare/v1.115.0...v1.115.1) (2019-01-22)
 
 
