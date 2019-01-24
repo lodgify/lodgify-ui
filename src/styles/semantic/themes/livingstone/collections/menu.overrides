@@ -337,6 +337,8 @@ header {
 
 /* Footer */
 footer {
+  margin-top: auto;
+  position: relative;
 
   .top-navigation {
     background-color: @footerTopBackground;
