@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Image } from 'semantic-ui-react';
+import { Item, Image } from 'semantic-ui-react';
 
 import { Heading } from 'typography/Heading';
 
@@ -11,7 +11,7 @@ import { Heading } from 'typography/Heading';
  * @return {Object}
  */
 export const getLogoMarkup = (logoText, logoSrc, logoSizes, logoSrcSet) => (
-  <Menu.Item href="/" link>
+  <Item href="/">
     {logoSrc ? (
       <Image
         alt={logoText}
@@ -22,5 +22,5 @@ export const getLogoMarkup = (logoText, logoSrc, logoSizes, logoSrcSet) => (
     ) : (
       <Heading size="small">{logoText}</Heading>
     )}
-  </Menu.Item>
+  </Item>
 );
