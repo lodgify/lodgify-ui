@@ -3,5 +3,5 @@
  * @param {string} costPerExtraGuestLabel
  * @return {string}
  */
-export const buildPricePerExtraGuestString = (cost, costPerExtraGuestLabel) =>
+export const getCostPerExtraGuestString = (cost, costPerExtraGuestLabel) =>
   `${cost} / ${costPerExtraGuestLabel}`;
