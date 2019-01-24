@@ -3,6 +3,7 @@
 *******************************/
 
 @type     : 'third-party-component';
+
 @element  : 'react-dates-datepicker';
 
 @import (multiple) '../../theme.config';
@@ -11,8 +12,8 @@
             Datepicker
 *******************************/
 
-/* 
-  Portal date picker 
+/*
+  Portal date picker
 */
 .DateRangePicker_picker__portal {
   z-index: @pickerZIndex;
@@ -39,7 +40,7 @@
   }
 }
 
-/* 
+/*
   Date range picker/Single date picker
 */
 .DateRangePicker,
@@ -201,14 +202,14 @@
 
   table.CalendarMonth_table {
 
-    td.CalendarDay {     
+    td.CalendarDay {
       cursor: default;
 
       &.CalendarDay__default:hover {
         background: inherit;
       }
 
-     &.CalendarDay__blocked_calendar:hover {
+      &.CalendarDay__blocked_calendar:hover {
         background: @pickerDayBlockedBackground;
       }
     }
@@ -228,7 +229,10 @@
 
     .DateRangePickerInput,
     .SingleDatePickerInput {
+      align-items: center;
+      border-radius: 0;
       color: @labelColor;
+      display: inline-flex;
 
       button.DateRangePickerInput_calendarIcon,
       .DateRangePickerInput_arrow,
