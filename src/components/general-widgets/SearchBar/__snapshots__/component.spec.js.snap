@@ -531,7 +531,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                               displayFormat="DD/MM/YYYY"
                               enableOutsideDays={false}
                               endDate={null}
-                              endDateId="end_date_id_1"
+                              endDateId="end_date_id_3"
                               endDatePlaceholderText="Check-out"
                               firstDayOfWeek={null}
                               focusedInput={null}
@@ -635,7 +635,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                               showDefaultInputIcon={false}
                               small={false}
                               startDate={null}
-                              startDateId="start_date_id_2"
+                              startDateId="start_date_id_4"
                               startDatePlaceholderText="Check-in"
                               verticalHeight={null}
                               verticalSpacing={22}
@@ -688,7 +688,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                 displayFormat="DD/MM/YYYY"
                                 enableOutsideDays={false}
                                 endDate={null}
-                                endDateId="end_date_id_1"
+                                endDateId="end_date_id_3"
                                 endDatePlaceholderText="Check-out"
                                 firstDayOfWeek={null}
                                 focusedInput={null}
@@ -791,7 +791,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                 showDefaultInputIcon={false}
                                 small={false}
                                 startDate={null}
-                                startDateId="start_date_id_2"
+                                startDateId="start_date_id_4"
                                 startDatePlaceholderText="Check-in"
                                 styles={
                                   Object {
@@ -1030,7 +1030,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                     disabled={false}
                                     displayFormat="DD/MM/YYYY"
                                     endDate={null}
-                                    endDateId="end_date_id_1"
+                                    endDateId="end_date_id_3"
                                     endDatePlaceholderText="Check-out"
                                     inputIconPosition="before"
                                     isEndDateFocused={false}
@@ -1090,7 +1090,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                     showDefaultInputIcon={false}
                                     small={false}
                                     startDate={null}
-                                    startDateId="start_date_id_2"
+                                    startDateId="start_date_id_4"
                                     startDatePlaceholderText="Check-in"
                                     verticalSpacing={22}
                                     withFullScreenPortal={false}
@@ -1132,7 +1132,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                       }
                                       disabled={false}
                                       endDate={null}
-                                      endDateId="end_date_id_1"
+                                      endDateId="end_date_id_3"
                                       endDatePlaceholderText="Check-out"
                                       inputIconPosition="before"
                                       isEndDateFocused={false}
@@ -1192,7 +1192,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                       showDefaultInputIcon={false}
                                       small={false}
                                       startDate={null}
-                                      startDateId="start_date_id_2"
+                                      startDateId="start_date_id_4"
                                       startDatePlaceholderText="Check-in"
                                       verticalSpacing={22}
                                     >
@@ -1234,7 +1234,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                         }
                                         disabled={false}
                                         endDate={null}
-                                        endDateId="end_date_id_1"
+                                        endDateId="end_date_id_3"
                                         endDatePlaceholderText="Check-out"
                                         inputIconPosition="before"
                                         isEndDateFocused={false}
@@ -1294,7 +1294,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                         showDefaultInputIcon={false}
                                         small={false}
                                         startDate={null}
-                                        startDateId="start_date_id_2"
+                                        startDateId="start_date_id_4"
                                         startDatePlaceholderText="Check-in"
                                         styles={
                                           Object {
@@ -1537,7 +1537,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                             disabled={false}
                                             displayValue={null}
                                             focused={false}
-                                            id="start_date_id_2"
+                                            id="start_date_id_4"
                                             isFocused={false}
                                             onChange={[Function]}
                                             onFocus={[Function]}
@@ -1562,7 +1562,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                               disabled={false}
                                               displayValue={null}
                                               focused={false}
-                                              id="start_date_id_2"
+                                              id="start_date_id_4"
                                               isFocused={false}
                                               onChange={[Function]}
                                               onFocus={[Function]}
@@ -1779,13 +1779,13 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                                 className="DateInput DateInput_1"
                                               >
                                                 <input
-                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_2"
+                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_4"
                                                   aria-label="Check-in"
                                                   autoComplete="off"
                                                   className="DateInput_input DateInput_input_1"
                                                   disabled={false}
-                                                  id="start_date_id_2"
-                                                  name="start_date_id_2"
+                                                  id="start_date_id_4"
+                                                  name="start_date_id_4"
                                                   onChange={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
@@ -1797,7 +1797,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                                 />
                                                 <p
                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                  id="DateInput__screen-reader-message-start_date_id_2"
+                                                  id="DateInput__screen-reader-message-start_date_id_4"
                                                 >
                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -1843,7 +1843,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                             disabled={false}
                                             displayValue={null}
                                             focused={false}
-                                            id="end_date_id_1"
+                                            id="end_date_id_3"
                                             isFocused={false}
                                             onChange={[Function]}
                                             onFocus={[Function]}
@@ -1868,7 +1868,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                               disabled={false}
                                               displayValue={null}
                                               focused={false}
-                                              id="end_date_id_1"
+                                              id="end_date_id_3"
                                               isFocused={false}
                                               onChange={[Function]}
                                               onFocus={[Function]}
@@ -2085,13 +2085,13 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                                 className="DateInput DateInput_1"
                                               >
                                                 <input
-                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_1"
+                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_3"
                                                   aria-label="Check-out"
                                                   autoComplete="off"
                                                   className="DateInput_input DateInput_input_1"
                                                   disabled={false}
-                                                  id="end_date_id_1"
-                                                  name="end_date_id_1"
+                                                  id="end_date_id_3"
+                                                  name="end_date_id_3"
                                                   onChange={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
@@ -2103,7 +2103,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                                                 />
                                                 <p
                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                  id="DateInput__screen-reader-message-end_date_id_1"
+                                                  id="DateInput__screen-reader-message-end_date_id_3"
                                                 >
                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -3634,7 +3634,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                       displayFormat="DD/MM/YYYY"
                                                       enableOutsideDays={false}
                                                       endDate={null}
-                                                      endDateId="end_date_id_3"
+                                                      endDateId="end_date_id_7"
                                                       endDatePlaceholderText="Check-out"
                                                       firstDayOfWeek={null}
                                                       focusedInput={null}
@@ -3738,7 +3738,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                       showDefaultInputIcon={false}
                                                       small={false}
                                                       startDate={null}
-                                                      startDateId="start_date_id_4"
+                                                      startDateId="start_date_id_8"
                                                       startDatePlaceholderText="Check-in"
                                                       verticalHeight={null}
                                                       verticalSpacing={22}
@@ -3791,7 +3791,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                         displayFormat="DD/MM/YYYY"
                                                         enableOutsideDays={false}
                                                         endDate={null}
-                                                        endDateId="end_date_id_3"
+                                                        endDateId="end_date_id_7"
                                                         endDatePlaceholderText="Check-out"
                                                         firstDayOfWeek={null}
                                                         focusedInput={null}
@@ -3894,7 +3894,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                         showDefaultInputIcon={false}
                                                         small={false}
                                                         startDate={null}
-                                                        startDateId="start_date_id_4"
+                                                        startDateId="start_date_id_8"
                                                         startDatePlaceholderText="Check-in"
                                                         styles={
                                                           Object {
@@ -4133,7 +4133,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                             disabled={false}
                                                             displayFormat="DD/MM/YYYY"
                                                             endDate={null}
-                                                            endDateId="end_date_id_3"
+                                                            endDateId="end_date_id_7"
                                                             endDatePlaceholderText="Check-out"
                                                             inputIconPosition="before"
                                                             isEndDateFocused={false}
@@ -4193,7 +4193,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                             showDefaultInputIcon={false}
                                                             small={false}
                                                             startDate={null}
-                                                            startDateId="start_date_id_4"
+                                                            startDateId="start_date_id_8"
                                                             startDatePlaceholderText="Check-in"
                                                             verticalSpacing={22}
                                                             withFullScreenPortal={false}
@@ -4235,7 +4235,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                               }
                                                               disabled={false}
                                                               endDate={null}
-                                                              endDateId="end_date_id_3"
+                                                              endDateId="end_date_id_7"
                                                               endDatePlaceholderText="Check-out"
                                                               inputIconPosition="before"
                                                               isEndDateFocused={false}
@@ -4295,7 +4295,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                               showDefaultInputIcon={false}
                                                               small={false}
                                                               startDate={null}
-                                                              startDateId="start_date_id_4"
+                                                              startDateId="start_date_id_8"
                                                               startDatePlaceholderText="Check-in"
                                                               verticalSpacing={22}
                                                             >
@@ -4337,7 +4337,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                 }
                                                                 disabled={false}
                                                                 endDate={null}
-                                                                endDateId="end_date_id_3"
+                                                                endDateId="end_date_id_7"
                                                                 endDatePlaceholderText="Check-out"
                                                                 inputIconPosition="before"
                                                                 isEndDateFocused={false}
@@ -4397,7 +4397,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                 showDefaultInputIcon={false}
                                                                 small={false}
                                                                 startDate={null}
-                                                                startDateId="start_date_id_4"
+                                                                startDateId="start_date_id_8"
                                                                 startDatePlaceholderText="Check-in"
                                                                 styles={
                                                                   Object {
@@ -4640,7 +4640,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                     disabled={false}
                                                                     displayValue={null}
                                                                     focused={false}
-                                                                    id="start_date_id_4"
+                                                                    id="start_date_id_8"
                                                                     isFocused={false}
                                                                     onChange={[Function]}
                                                                     onFocus={[Function]}
@@ -4665,7 +4665,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                       disabled={false}
                                                                       displayValue={null}
                                                                       focused={false}
-                                                                      id="start_date_id_4"
+                                                                      id="start_date_id_8"
                                                                       isFocused={false}
                                                                       onChange={[Function]}
                                                                       onFocus={[Function]}
@@ -4882,13 +4882,13 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                         className="DateInput DateInput_1"
                                                                       >
                                                                         <input
-                                                                          aria-describedby="DateInput__screen-reader-message-start_date_id_4"
+                                                                          aria-describedby="DateInput__screen-reader-message-start_date_id_8"
                                                                           aria-label="Check-in"
                                                                           autoComplete="off"
                                                                           className="DateInput_input DateInput_input_1"
                                                                           disabled={false}
-                                                                          id="start_date_id_4"
-                                                                          name="start_date_id_4"
+                                                                          id="start_date_id_8"
+                                                                          name="start_date_id_8"
                                                                           onChange={[Function]}
                                                                           onFocus={[Function]}
                                                                           onKeyDown={[Function]}
@@ -4900,7 +4900,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                         />
                                                                         <p
                                                                           className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                                          id="DateInput__screen-reader-message-start_date_id_4"
+                                                                          id="DateInput__screen-reader-message-start_date_id_8"
                                                                         >
                                                                           Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -4946,7 +4946,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                     disabled={false}
                                                                     displayValue={null}
                                                                     focused={false}
-                                                                    id="end_date_id_3"
+                                                                    id="end_date_id_7"
                                                                     isFocused={false}
                                                                     onChange={[Function]}
                                                                     onFocus={[Function]}
@@ -4971,7 +4971,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                       disabled={false}
                                                                       displayValue={null}
                                                                       focused={false}
-                                                                      id="end_date_id_3"
+                                                                      id="end_date_id_7"
                                                                       isFocused={false}
                                                                       onChange={[Function]}
                                                                       onFocus={[Function]}
@@ -5188,13 +5188,13 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                         className="DateInput DateInput_1"
                                                                       >
                                                                         <input
-                                                                          aria-describedby="DateInput__screen-reader-message-end_date_id_3"
+                                                                          aria-describedby="DateInput__screen-reader-message-end_date_id_7"
                                                                           aria-label="Check-out"
                                                                           autoComplete="off"
                                                                           className="DateInput_input DateInput_input_1"
                                                                           disabled={false}
-                                                                          id="end_date_id_3"
-                                                                          name="end_date_id_3"
+                                                                          id="end_date_id_7"
+                                                                          name="end_date_id_7"
                                                                           onChange={[Function]}
                                                                           onFocus={[Function]}
                                                                           onKeyDown={[Function]}
@@ -5206,7 +5206,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                                         />
                                                                         <p
                                                                           className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                                          id="DateInput__screen-reader-message-end_date_id_3"
+                                                                          id="DateInput__screen-reader-message-end_date_id_7"
                                                                         >
                                                                           Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -6215,7 +6215,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                               displayFormat="DD/MM/YYYY"
                               enableOutsideDays={false}
                               endDate={null}
-                              endDateId="end_date_id_5"
+                              endDateId="end_date_id_11"
                               endDatePlaceholderText="Check-out"
                               firstDayOfWeek={null}
                               focusedInput={null}
@@ -6319,7 +6319,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                               showDefaultInputIcon={false}
                               small={false}
                               startDate={null}
-                              startDateId="start_date_id_6"
+                              startDateId="start_date_id_12"
                               startDatePlaceholderText="Check-in"
                               verticalHeight={null}
                               verticalSpacing={22}
@@ -6372,7 +6372,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                 displayFormat="DD/MM/YYYY"
                                 enableOutsideDays={false}
                                 endDate={null}
-                                endDateId="end_date_id_5"
+                                endDateId="end_date_id_11"
                                 endDatePlaceholderText="Check-out"
                                 firstDayOfWeek={null}
                                 focusedInput={null}
@@ -6475,7 +6475,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                 showDefaultInputIcon={false}
                                 small={false}
                                 startDate={null}
-                                startDateId="start_date_id_6"
+                                startDateId="start_date_id_12"
                                 startDatePlaceholderText="Check-in"
                                 styles={
                                   Object {
@@ -6714,7 +6714,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                     disabled={false}
                                     displayFormat="DD/MM/YYYY"
                                     endDate={null}
-                                    endDateId="end_date_id_5"
+                                    endDateId="end_date_id_11"
                                     endDatePlaceholderText="Check-out"
                                     inputIconPosition="before"
                                     isEndDateFocused={false}
@@ -6774,7 +6774,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                     showDefaultInputIcon={false}
                                     small={false}
                                     startDate={null}
-                                    startDateId="start_date_id_6"
+                                    startDateId="start_date_id_12"
                                     startDatePlaceholderText="Check-in"
                                     verticalSpacing={22}
                                     withFullScreenPortal={false}
@@ -6816,7 +6816,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                       }
                                       disabled={false}
                                       endDate={null}
-                                      endDateId="end_date_id_5"
+                                      endDateId="end_date_id_11"
                                       endDatePlaceholderText="Check-out"
                                       inputIconPosition="before"
                                       isEndDateFocused={false}
@@ -6876,7 +6876,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                       showDefaultInputIcon={false}
                                       small={false}
                                       startDate={null}
-                                      startDateId="start_date_id_6"
+                                      startDateId="start_date_id_12"
                                       startDatePlaceholderText="Check-in"
                                       verticalSpacing={22}
                                     >
@@ -6918,7 +6918,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                         }
                                         disabled={false}
                                         endDate={null}
-                                        endDateId="end_date_id_5"
+                                        endDateId="end_date_id_11"
                                         endDatePlaceholderText="Check-out"
                                         inputIconPosition="before"
                                         isEndDateFocused={false}
@@ -6978,7 +6978,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                         showDefaultInputIcon={false}
                                         small={false}
                                         startDate={null}
-                                        startDateId="start_date_id_6"
+                                        startDateId="start_date_id_12"
                                         startDatePlaceholderText="Check-in"
                                         styles={
                                           Object {
@@ -7221,7 +7221,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                             disabled={false}
                                             displayValue={null}
                                             focused={false}
-                                            id="start_date_id_6"
+                                            id="start_date_id_12"
                                             isFocused={false}
                                             onChange={[Function]}
                                             onFocus={[Function]}
@@ -7246,7 +7246,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                               disabled={false}
                                               displayValue={null}
                                               focused={false}
-                                              id="start_date_id_6"
+                                              id="start_date_id_12"
                                               isFocused={false}
                                               onChange={[Function]}
                                               onFocus={[Function]}
@@ -7463,13 +7463,13 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                                 className="DateInput DateInput_1"
                                               >
                                                 <input
-                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_6"
+                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_12"
                                                   aria-label="Check-in"
                                                   autoComplete="off"
                                                   className="DateInput_input DateInput_input_1"
                                                   disabled={false}
-                                                  id="start_date_id_6"
-                                                  name="start_date_id_6"
+                                                  id="start_date_id_12"
+                                                  name="start_date_id_12"
                                                   onChange={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
@@ -7481,7 +7481,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                                 />
                                                 <p
                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                  id="DateInput__screen-reader-message-start_date_id_6"
+                                                  id="DateInput__screen-reader-message-start_date_id_12"
                                                 >
                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -7527,7 +7527,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                             disabled={false}
                                             displayValue={null}
                                             focused={false}
-                                            id="end_date_id_5"
+                                            id="end_date_id_11"
                                             isFocused={false}
                                             onChange={[Function]}
                                             onFocus={[Function]}
@@ -7552,7 +7552,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                               disabled={false}
                                               displayValue={null}
                                               focused={false}
-                                              id="end_date_id_5"
+                                              id="end_date_id_11"
                                               isFocused={false}
                                               onChange={[Function]}
                                               onFocus={[Function]}
@@ -7769,13 +7769,13 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                                 className="DateInput DateInput_1"
                                               >
                                                 <input
-                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_5"
+                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_11"
                                                   aria-label="Check-out"
                                                   autoComplete="off"
                                                   className="DateInput_input DateInput_input_1"
                                                   disabled={false}
-                                                  id="end_date_id_5"
-                                                  name="end_date_id_5"
+                                                  id="end_date_id_11"
+                                                  name="end_date_id_11"
                                                   onChange={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
@@ -7787,7 +7787,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                                                 />
                                                 <p
                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                  id="DateInput__screen-reader-message-end_date_id_5"
+                                                  id="DateInput__screen-reader-message-end_date_id_11"
                                                 >
                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -8398,7 +8398,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                               displayFormat="DD/MM/YYYY"
                               enableOutsideDays={false}
                               endDate={null}
-                              endDateId="end_date_id_7"
+                              endDateId="end_date_id_15"
                               endDatePlaceholderText="Check-out"
                               firstDayOfWeek={null}
                               focusedInput={null}
@@ -8502,7 +8502,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                               showDefaultInputIcon={false}
                               small={false}
                               startDate={null}
-                              startDateId="start_date_id_8"
+                              startDateId="start_date_id_16"
                               startDatePlaceholderText="Check-in"
                               verticalHeight={null}
                               verticalSpacing={22}
@@ -8555,7 +8555,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                 displayFormat="DD/MM/YYYY"
                                 enableOutsideDays={false}
                                 endDate={null}
-                                endDateId="end_date_id_7"
+                                endDateId="end_date_id_15"
                                 endDatePlaceholderText="Check-out"
                                 firstDayOfWeek={null}
                                 focusedInput={null}
@@ -8658,7 +8658,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                 showDefaultInputIcon={false}
                                 small={false}
                                 startDate={null}
-                                startDateId="start_date_id_8"
+                                startDateId="start_date_id_16"
                                 startDatePlaceholderText="Check-in"
                                 styles={
                                   Object {
@@ -8897,7 +8897,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                     disabled={false}
                                     displayFormat="DD/MM/YYYY"
                                     endDate={null}
-                                    endDateId="end_date_id_7"
+                                    endDateId="end_date_id_15"
                                     endDatePlaceholderText="Check-out"
                                     inputIconPosition="before"
                                     isEndDateFocused={false}
@@ -8957,7 +8957,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                     showDefaultInputIcon={false}
                                     small={false}
                                     startDate={null}
-                                    startDateId="start_date_id_8"
+                                    startDateId="start_date_id_16"
                                     startDatePlaceholderText="Check-in"
                                     verticalSpacing={22}
                                     withFullScreenPortal={false}
@@ -8999,7 +8999,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                       }
                                       disabled={false}
                                       endDate={null}
-                                      endDateId="end_date_id_7"
+                                      endDateId="end_date_id_15"
                                       endDatePlaceholderText="Check-out"
                                       inputIconPosition="before"
                                       isEndDateFocused={false}
@@ -9059,7 +9059,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                       showDefaultInputIcon={false}
                                       small={false}
                                       startDate={null}
-                                      startDateId="start_date_id_8"
+                                      startDateId="start_date_id_16"
                                       startDatePlaceholderText="Check-in"
                                       verticalSpacing={22}
                                     >
@@ -9101,7 +9101,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                         }
                                         disabled={false}
                                         endDate={null}
-                                        endDateId="end_date_id_7"
+                                        endDateId="end_date_id_15"
                                         endDatePlaceholderText="Check-out"
                                         inputIconPosition="before"
                                         isEndDateFocused={false}
@@ -9161,7 +9161,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                         showDefaultInputIcon={false}
                                         small={false}
                                         startDate={null}
-                                        startDateId="start_date_id_8"
+                                        startDateId="start_date_id_16"
                                         startDatePlaceholderText="Check-in"
                                         styles={
                                           Object {
@@ -9404,7 +9404,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                             disabled={false}
                                             displayValue={null}
                                             focused={false}
-                                            id="start_date_id_8"
+                                            id="start_date_id_16"
                                             isFocused={false}
                                             onChange={[Function]}
                                             onFocus={[Function]}
@@ -9429,7 +9429,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                               disabled={false}
                                               displayValue={null}
                                               focused={false}
-                                              id="start_date_id_8"
+                                              id="start_date_id_16"
                                               isFocused={false}
                                               onChange={[Function]}
                                               onFocus={[Function]}
@@ -9646,13 +9646,13 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                                 className="DateInput DateInput_1"
                                               >
                                                 <input
-                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_8"
+                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_16"
                                                   aria-label="Check-in"
                                                   autoComplete="off"
                                                   className="DateInput_input DateInput_input_1"
                                                   disabled={false}
-                                                  id="start_date_id_8"
-                                                  name="start_date_id_8"
+                                                  id="start_date_id_16"
+                                                  name="start_date_id_16"
                                                   onChange={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
@@ -9664,7 +9664,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                                 />
                                                 <p
                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                  id="DateInput__screen-reader-message-start_date_id_8"
+                                                  id="DateInput__screen-reader-message-start_date_id_16"
                                                 >
                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -9710,7 +9710,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                             disabled={false}
                                             displayValue={null}
                                             focused={false}
-                                            id="end_date_id_7"
+                                            id="end_date_id_15"
                                             isFocused={false}
                                             onChange={[Function]}
                                             onFocus={[Function]}
@@ -9735,7 +9735,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                               disabled={false}
                                               displayValue={null}
                                               focused={false}
-                                              id="end_date_id_7"
+                                              id="end_date_id_15"
                                               isFocused={false}
                                               onChange={[Function]}
                                               onFocus={[Function]}
@@ -9952,13 +9952,13 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                                 className="DateInput DateInput_1"
                                               >
                                                 <input
-                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_7"
+                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_15"
                                                   aria-label="Check-out"
                                                   autoComplete="off"
                                                   className="DateInput_input DateInput_input_1"
                                                   disabled={false}
-                                                  id="end_date_id_7"
-                                                  name="end_date_id_7"
+                                                  id="end_date_id_15"
+                                                  name="end_date_id_15"
                                                   onChange={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
@@ -9970,7 +9970,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                                                 />
                                                 <p
                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                  id="DateInput__screen-reader-message-end_date_id_7"
+                                                  id="DateInput__screen-reader-message-end_date_id_15"
                                                 >
                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -10907,7 +10907,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                               displayFormat="DD/MM/YYYY"
                               enableOutsideDays={false}
                               endDate={null}
-                              endDateId="end_date_id_9"
+                              endDateId="end_date_id_19"
                               endDatePlaceholderText="Check-out"
                               firstDayOfWeek={null}
                               focusedInput={null}
@@ -11011,7 +11011,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                               showDefaultInputIcon={false}
                               small={false}
                               startDate={null}
-                              startDateId="start_date_id_10"
+                              startDateId="start_date_id_20"
                               startDatePlaceholderText="Check-in"
                               verticalHeight={null}
                               verticalSpacing={22}
@@ -11064,7 +11064,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                 displayFormat="DD/MM/YYYY"
                                 enableOutsideDays={false}
                                 endDate={null}
-                                endDateId="end_date_id_9"
+                                endDateId="end_date_id_19"
                                 endDatePlaceholderText="Check-out"
                                 firstDayOfWeek={null}
                                 focusedInput={null}
@@ -11167,7 +11167,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                 showDefaultInputIcon={false}
                                 small={false}
                                 startDate={null}
-                                startDateId="start_date_id_10"
+                                startDateId="start_date_id_20"
                                 startDatePlaceholderText="Check-in"
                                 styles={
                                   Object {
@@ -11406,7 +11406,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                     disabled={false}
                                     displayFormat="DD/MM/YYYY"
                                     endDate={null}
-                                    endDateId="end_date_id_9"
+                                    endDateId="end_date_id_19"
                                     endDatePlaceholderText="Check-out"
                                     inputIconPosition="before"
                                     isEndDateFocused={false}
@@ -11466,7 +11466,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                     showDefaultInputIcon={false}
                                     small={false}
                                     startDate={null}
-                                    startDateId="start_date_id_10"
+                                    startDateId="start_date_id_20"
                                     startDatePlaceholderText="Check-in"
                                     verticalSpacing={22}
                                     withFullScreenPortal={false}
@@ -11508,7 +11508,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                       }
                                       disabled={false}
                                       endDate={null}
-                                      endDateId="end_date_id_9"
+                                      endDateId="end_date_id_19"
                                       endDatePlaceholderText="Check-out"
                                       inputIconPosition="before"
                                       isEndDateFocused={false}
@@ -11568,7 +11568,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                       showDefaultInputIcon={false}
                                       small={false}
                                       startDate={null}
-                                      startDateId="start_date_id_10"
+                                      startDateId="start_date_id_20"
                                       startDatePlaceholderText="Check-in"
                                       verticalSpacing={22}
                                     >
@@ -11610,7 +11610,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                         }
                                         disabled={false}
                                         endDate={null}
-                                        endDateId="end_date_id_9"
+                                        endDateId="end_date_id_19"
                                         endDatePlaceholderText="Check-out"
                                         inputIconPosition="before"
                                         isEndDateFocused={false}
@@ -11670,7 +11670,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                         showDefaultInputIcon={false}
                                         small={false}
                                         startDate={null}
-                                        startDateId="start_date_id_10"
+                                        startDateId="start_date_id_20"
                                         startDatePlaceholderText="Check-in"
                                         styles={
                                           Object {
@@ -11913,7 +11913,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                             disabled={false}
                                             displayValue={null}
                                             focused={false}
-                                            id="start_date_id_10"
+                                            id="start_date_id_20"
                                             isFocused={false}
                                             onChange={[Function]}
                                             onFocus={[Function]}
@@ -11938,7 +11938,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                               disabled={false}
                                               displayValue={null}
                                               focused={false}
-                                              id="start_date_id_10"
+                                              id="start_date_id_20"
                                               isFocused={false}
                                               onChange={[Function]}
                                               onFocus={[Function]}
@@ -12155,13 +12155,13 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                                 className="DateInput DateInput_1"
                                               >
                                                 <input
-                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_10"
+                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_20"
                                                   aria-label="Check-in"
                                                   autoComplete="off"
                                                   className="DateInput_input DateInput_input_1"
                                                   disabled={false}
-                                                  id="start_date_id_10"
-                                                  name="start_date_id_10"
+                                                  id="start_date_id_20"
+                                                  name="start_date_id_20"
                                                   onChange={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
@@ -12173,7 +12173,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                                 />
                                                 <p
                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                  id="DateInput__screen-reader-message-start_date_id_10"
+                                                  id="DateInput__screen-reader-message-start_date_id_20"
                                                 >
                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -12219,7 +12219,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                             disabled={false}
                                             displayValue={null}
                                             focused={false}
-                                            id="end_date_id_9"
+                                            id="end_date_id_19"
                                             isFocused={false}
                                             onChange={[Function]}
                                             onFocus={[Function]}
@@ -12244,7 +12244,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                               disabled={false}
                                               displayValue={null}
                                               focused={false}
-                                              id="end_date_id_9"
+                                              id="end_date_id_19"
                                               isFocused={false}
                                               onChange={[Function]}
                                               onFocus={[Function]}
@@ -12461,13 +12461,13 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                                 className="DateInput DateInput_1"
                                               >
                                                 <input
-                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_9"
+                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_19"
                                                   aria-label="Check-out"
                                                   autoComplete="off"
                                                   className="DateInput_input DateInput_input_1"
                                                   disabled={false}
-                                                  id="end_date_id_9"
-                                                  name="end_date_id_9"
+                                                  id="end_date_id_19"
+                                                  name="end_date_id_19"
                                                   onChange={[Function]}
                                                   onFocus={[Function]}
                                                   onKeyDown={[Function]}
@@ -12479,7 +12479,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                                                 />
                                                 <p
                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                  id="DateInput__screen-reader-message-end_date_id_9"
+                                                  id="DateInput__screen-reader-message-end_date_id_19"
                                                 >
                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
