@@ -9,7 +9,7 @@ import { Icon } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
 import { getRateCategoryHeadingMarkup } from './getRateCategoryHeadingMarkup';
-import { buildPricePerExtraGuestString } from './buildPricePerExtraGuestString';
+import { getCostPerExtraGuestString } from './getCostPerExtraGuestString';
 
 const rate = {
   name: 'Mid Season',
@@ -77,7 +77,7 @@ describe('getRateCategoryHeadingMarkup', () => {
         Icon,
         numberOfGuests,
         'br',
-        buildPricePerExtraGuestString(costPerExtraGuest)
+        getCostPerExtraGuestString(costPerExtraGuest)
       );
     });
   });
