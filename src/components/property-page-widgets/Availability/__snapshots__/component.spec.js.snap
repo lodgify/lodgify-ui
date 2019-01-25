@@ -10,7 +10,7 @@ exports[`<Availability /> by default should render the right structure 1`] = `
 />
 `;
 
-exports[`<Availability /> if \`size(props.roomOptionsWithImages) > 0\` should render the right structure 1`] = `
+exports[`<Availability /> if \`props.roomOptionsWithImages\` is passed should render the right structure 1`] = `
 <Responsive
   as={[Function]}
   isUserOnMobile={false}

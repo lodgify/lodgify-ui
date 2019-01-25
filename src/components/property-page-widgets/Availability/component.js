@@ -4,7 +4,6 @@ import { CalendarMonth, CalendarDay } from 'react-dates';
 import { BLOCKED_MODIFIER } from 'react-dates/constants';
 import moment from 'moment';
 import { Card } from 'semantic-ui-react';
-import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Dropdown } from 'inputs/Dropdown';
@@ -95,7 +94,7 @@ class Component extends PureComponent {
         <Heading size="small">{headingText}</Heading>
         <Grid>
           <GridRow>
-            {size(roomOptionsWithImages) > 0 && (
+            {roomOptionsWithImages && (
               <GridColumn
                 computer={7}
                 mobile={12}
@@ -214,7 +213,7 @@ Component.defaultProps = {
   previousMonthsButtonLabel: PREVIOUS,
   propertyDropdownLabel: VIEW_AVAILABILITY_FOR,
   propertyDropdownPlaceholderLabel: PROPERTIES,
-  roomOptionsWithImages: [],
+  roomOptionsWithImages: null,
 };
 
 Component.propTypes = {

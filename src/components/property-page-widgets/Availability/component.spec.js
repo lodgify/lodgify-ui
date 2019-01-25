@@ -62,7 +62,7 @@ describe('<Availability />', () => {
     });
   });
 
-  describe('if `size(props.roomOptionsWithImages) > 0`', () => {
+  describe('if `props.roomOptionsWithImages` is passed', () => {
     it('should render the right structure', () => {
       const actual = getAvailability({ roomOptionsWithImages });
 
