@@ -863,7 +863,16 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 <div
                                   className="description"
                                 >
-                                  Beautifully located and well-kept villas in Santorini. Would certainly come back next year.
+                                  <Paragraph
+                                    size="medium"
+                                    weight={null}
+                                  >
+                                    <p
+                                      className=""
+                                    >
+                                      Beautifully located and well-kept villas in Santorini. Would certainly come back next year.
+                                    </p>
+                                  </Paragraph>
                                 </div>
                               </CardDescription>
                               <Divider
@@ -1317,7 +1326,16 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 <div
                                   className="description"
                                 >
-                                  Beautifully located and well-kept villas in Santorini. Would certainly come back next year.
+                                  <Paragraph
+                                    size="medium"
+                                    weight={null}
+                                  >
+                                    <p
+                                      className=""
+                                    >
+                                      Beautifully located and well-kept villas in Santorini. Would certainly come back next year.
+                                    </p>
+                                  </Paragraph>
                                 </div>
                               </CardDescription>
                               <Divider
