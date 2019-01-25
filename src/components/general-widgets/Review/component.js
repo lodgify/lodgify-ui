@@ -6,6 +6,7 @@ import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
+import { Paragraph } from 'typography/Paragraph';
 import { Quote } from 'elements/Quote';
 import { Rating } from 'elements/Rating';
 import { Subheading } from 'typography/Subheading';
@@ -54,7 +55,9 @@ export const Component = ({
       </Card.Meta>
       <Divider />
       <Card.Header>{reviewTitle}</Card.Header>
-      <Card.Description>{reviewText}</Card.Description>
+      <Card.Description>
+        <Paragraph>{reviewText}</Paragraph>
+      </Card.Description>
       <Divider />
       {!!reviewResponse && (
         <div>
