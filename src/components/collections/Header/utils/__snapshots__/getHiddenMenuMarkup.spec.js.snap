@@ -66,13 +66,9 @@ exports[`getHiddenMenuMarkup by default should render the right structure 1`] = 
               closeOnDimmerClick={true}
               closeOnDocumentClick={false}
               content={
-                <Menu
-                  text={true}
-                  vertical={true}
-                >
-                  <MenuItem
+                Array [
+                  <Item
                     href="/"
-                    link={true}
                   >
                     <Image
                       alt="someLogoText"
@@ -82,75 +78,80 @@ exports[`getHiddenMenuMarkup by default should render the right structure 1`] = 
                       srcSet="someLogoSrcSet"
                       ui={true}
                     />
-                  </MenuItem>
-                  <MenuItem
-                    active={true}
-                    href="/"
-                    link={true}
+                  </Item>,
+                  <Menu
+                    text={true}
+                    vertical={true}
                   >
-                    Home
-                  </MenuItem>
-                  <Accordion
-                    as={[Function]}
-                    panels={
-                      Array [
-                        Object {
-                          "content": Object {
-                            "content": Array [
-                              <MenuItem
-                                active={true}
-                                href="/la-casa-viva"
-                                link={true}
-                              >
-                                La Casa Viva
-                              </MenuItem>,
-                              <MenuItem
-                                active={false}
-                                href="/la-casa-muerta"
-                                link={true}
-                              >
-                                La Casa Muerta
-                              </MenuItem>,
-                              <MenuItem
-                                active={false}
-                                href="/the-white-lodge"
-                                link={true}
-                              >
-                                The White Lodge
-                              </MenuItem>,
-                              <MenuItem
-                                active={false}
-                                href="/the-black-lodge"
-                                link={true}
-                              >
-                                The Black Lodge
-                              </MenuItem>,
-                            ],
-                            "key": "1All properties",
+                    <MenuItem
+                      active={true}
+                      href="/"
+                      link={true}
+                    >
+                      Home
+                    </MenuItem>
+                    <Accordion
+                      as={[Function]}
+                      panels={
+                        Array [
+                          Object {
+                            "content": Object {
+                              "content": Array [
+                                <MenuItem
+                                  active={true}
+                                  href="/la-casa-viva"
+                                  link={true}
+                                >
+                                  La Casa Viva
+                                </MenuItem>,
+                                <MenuItem
+                                  active={false}
+                                  href="/la-casa-muerta"
+                                  link={true}
+                                >
+                                  La Casa Muerta
+                                </MenuItem>,
+                                <MenuItem
+                                  active={false}
+                                  href="/the-white-lodge"
+                                  link={true}
+                                >
+                                  The White Lodge
+                                </MenuItem>,
+                                <MenuItem
+                                  active={false}
+                                  href="/the-black-lodge"
+                                  link={true}
+                                >
+                                  The Black Lodge
+                                </MenuItem>,
+                              ],
+                              "key": "1All properties",
+                            },
+                            "title": Object {
+                              "content": "All properties",
+                              "key": "All properties1",
+                            },
                           },
-                          "title": Object {
-                            "content": "All properties",
-                            "key": "All properties1",
-                          },
-                        },
-                      ]
-                    }
-                  />
-                  <MenuItem
-                    active={false}
-                    href="/"
-                    link={true}
-                  >
-                    Contact Us
-                  </MenuItem>
-                  <MenuItem
-                    active={false}
-                    href="/"
-                    link={true}
-                  >
-                    What to do
-                  </MenuItem>
-                </Menu>
+                        ]
+                      }
+                    />
+                    <MenuItem
+                      active={false}
+                      href="/"
+                      link={true}
+                    >
+                      Contact Us
+                    </MenuItem>
+                    <MenuItem
+                      active={false}
+                      href="/"
+                      link={true}
+                    >
+                      What to do
+                    </MenuItem>
+                  </Menu>,
+                ]
               }
               dimmer="inverted"
               eventPool="Modal"
@@ -590,13 +591,9 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
               closeOnDimmerClick={true}
               closeOnDocumentClick={false}
               content={
-                <Menu
-                  text={true}
-                  vertical={true}
-                >
-                  <MenuItem
+                Array [
+                  <Item
                     href="/"
-                    link={true}
                   >
                     <Image
                       alt="someLogoText"
@@ -606,75 +603,80 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                       srcSet="someLogoSrcSet"
                       ui={true}
                     />
-                  </MenuItem>
-                  <MenuItem
-                    active={true}
-                    href="/"
-                    link={true}
+                  </Item>,
+                  <Menu
+                    text={true}
+                    vertical={true}
                   >
-                    Home
-                  </MenuItem>
-                  <Accordion
-                    as={[Function]}
-                    panels={
-                      Array [
-                        Object {
-                          "content": Object {
-                            "content": Array [
-                              <MenuItem
-                                active={true}
-                                href="/la-casa-viva"
-                                link={true}
-                              >
-                                La Casa Viva
-                              </MenuItem>,
-                              <MenuItem
-                                active={false}
-                                href="/la-casa-muerta"
-                                link={true}
-                              >
-                                La Casa Muerta
-                              </MenuItem>,
-                              <MenuItem
-                                active={false}
-                                href="/the-white-lodge"
-                                link={true}
-                              >
-                                The White Lodge
-                              </MenuItem>,
-                              <MenuItem
-                                active={false}
-                                href="/the-black-lodge"
-                                link={true}
-                              >
-                                The Black Lodge
-                              </MenuItem>,
-                            ],
-                            "key": "1All properties",
+                    <MenuItem
+                      active={true}
+                      href="/"
+                      link={true}
+                    >
+                      Home
+                    </MenuItem>
+                    <Accordion
+                      as={[Function]}
+                      panels={
+                        Array [
+                          Object {
+                            "content": Object {
+                              "content": Array [
+                                <MenuItem
+                                  active={true}
+                                  href="/la-casa-viva"
+                                  link={true}
+                                >
+                                  La Casa Viva
+                                </MenuItem>,
+                                <MenuItem
+                                  active={false}
+                                  href="/la-casa-muerta"
+                                  link={true}
+                                >
+                                  La Casa Muerta
+                                </MenuItem>,
+                                <MenuItem
+                                  active={false}
+                                  href="/the-white-lodge"
+                                  link={true}
+                                >
+                                  The White Lodge
+                                </MenuItem>,
+                                <MenuItem
+                                  active={false}
+                                  href="/the-black-lodge"
+                                  link={true}
+                                >
+                                  The Black Lodge
+                                </MenuItem>,
+                              ],
+                              "key": "1All properties",
+                            },
+                            "title": Object {
+                              "content": "All properties",
+                              "key": "All properties1",
+                            },
                           },
-                          "title": Object {
-                            "content": "All properties",
-                            "key": "All properties1",
-                          },
-                        },
-                      ]
-                    }
-                  />
-                  <MenuItem
-                    active={false}
-                    href="/"
-                    link={true}
-                  >
-                    Contact Us
-                  </MenuItem>
-                  <MenuItem
-                    active={false}
-                    href="/"
-                    link={true}
-                  >
-                    What to do
-                  </MenuItem>
-                </Menu>
+                        ]
+                      }
+                    />
+                    <MenuItem
+                      active={false}
+                      href="/"
+                      link={true}
+                    >
+                      Contact Us
+                    </MenuItem>
+                    <MenuItem
+                      active={false}
+                      href="/"
+                      link={true}
+                    >
+                      What to do
+                    </MenuItem>
+                  </Menu>,
+                ]
               }
               dimmer="inverted"
               eventPool="Modal"

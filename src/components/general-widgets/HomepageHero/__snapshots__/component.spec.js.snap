@@ -240,14 +240,12 @@ exports[`HomepageHero should render the right structure 1`] = `
                     <div
                       className="ui borderless ui text container menu"
                     >
-                      <MenuItem
+                      <Item
                         href="/"
-                        link={true}
                       >
                         <a
-                          className="link item"
+                          className="item"
                           href="/"
-                          onClick={[Function]}
                         >
                           <Image
                             alt="text"
@@ -266,7 +264,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                             />
                           </Image>
                         </a>
-                      </MenuItem>
+                      </Item>
                       <ShowOn
                         computer={false}
                         mobile={true}
@@ -609,13 +607,9 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     closeOnDimmerClick={true}
                                     closeOnDocumentClick={false}
                                     content={
-                                      <Menu
-                                        text={true}
-                                        vertical={true}
-                                      >
-                                        <MenuItem
+                                      Array [
+                                        <Item
                                           href="/"
-                                          link={true}
                                         >
                                           <Image
                                             alt="text"
@@ -625,15 +619,20 @@ exports[`HomepageHero should render the right structure 1`] = `
                                             srcSet="a load of logo src sets"
                                             ui={true}
                                           />
-                                        </MenuItem>
-                                        <MenuItem
-                                          active={false}
-                                          href="/"
-                                          link={true}
+                                        </Item>,
+                                        <Menu
+                                          text={true}
+                                          vertical={true}
                                         >
-                                          Home
-                                        </MenuItem>
-                                      </Menu>
+                                          <MenuItem
+                                            active={false}
+                                            href="/"
+                                            link={true}
+                                          >
+                                            Home
+                                          </MenuItem>
+                                        </Menu>,
+                                      ]
                                     }
                                     dimmer="inverted"
                                     eventPool="Modal"

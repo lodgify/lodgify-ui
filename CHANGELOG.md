@@ -1,3 +1,21 @@
+# [1.116.0](https://github.com/lodgify/lodgify-ui/compare/v1.115.2...v1.116.0) (2019-01-24)
+
+
+### Features
+
+* **getHiddenMenuMarkup:** isolate getLogoMarkup from menu ([cec5973](https://github.com/lodgify/lodgify-ui/commit/cec5973))
+* **getLogoMarkup:** extract menu from logo wrapper ([70108e3](https://github.com/lodgify/lodgify-ui/commit/70108e3))
+* **menu.*:** implement modal layout styles ([05e4c94](https://github.com/lodgify/lodgify-ui/commit/05e4c94))
+* **modal.*:** implement modal layout styles ([e346f74](https://github.com/lodgify/lodgify-ui/commit/e346f74))
+
+## [1.115.2](https://github.com/lodgify/lodgify-ui/compare/v1.115.1...v1.115.2) (2019-01-24)
+
+
+### Bug Fixes
+
+* **dropdown.overrides:** fix theme background on hover ([c9791a3](https://github.com/lodgify/lodgify-ui/commit/c9791a3))
+* **menu.overrides:** fix theme background on hover ([836203a](https://github.com/lodgify/lodgify-ui/commit/836203a))
+
 ## [1.115.1](https://github.com/lodgify/lodgify-ui/compare/v1.115.0...v1.115.1) (2019-01-22)
 
 

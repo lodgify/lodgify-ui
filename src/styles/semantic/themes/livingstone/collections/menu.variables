@@ -115,14 +115,25 @@
 /* Vertical */
 @verticalMenuInModalWidthOffset: 2 * @textVerticalMenuHorizontalMargin;
 @verticalMenuInModalWidth: ~"calc(100% - @{verticalMenuInModalWidthOffset})";
+@verticalMenuInModalMaxWidth: 500px;
+
+@verticalMenuInModalMinHeight: ~"calc(100% - 117px)";
 
 @verticalMenuInModalItemLineHeight: @30px;
 @verticalMenuInModalItemPaddingLeft: @10px;
+@verticalMenuInModalItemPaddingTop: 20px;
+@verticalMenuInModalItemPaddingBottom: 20px;
 @verticalMenuInModalItemBorderBottom: @1px solid @greyFour;
+
+@verticalMenuInModalSubItemPaddingTop: 10px;
+@verticalMenuInModalSubItemPaddingBottom: 10px;
 
 @verticalMenuInModalAccordionIconMargin: @8px @verticalMenuInModalItemPaddingLeft 0;
 
 @verticalMenuInModalSubItemPaddingLeft: @10px;
+
+@verticalMenuInModalMarginTop: 50px;
+@verticalMenuInModalMarginTopMobile: 20px;
 
 /* Secondary */
 
