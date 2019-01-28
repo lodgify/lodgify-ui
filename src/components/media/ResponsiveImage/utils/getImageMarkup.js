@@ -25,6 +25,7 @@ export const getImageMarkup = (
     imageUrl,
     imageWidth,
     isAvatar,
+    isFluid,
     sizes,
     srcSet,
     /* eslint-enable react/prop-types */
@@ -34,7 +35,7 @@ export const getImageMarkup = (
   <Image
     alt={alternativeText}
     avatar={isAvatar}
-    fluid={getIsFluid(imageWidth, imageHeight)}
+    fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
     onLoad={handleImageLoad}
     sizes={sizes}
     src={imageUrl}

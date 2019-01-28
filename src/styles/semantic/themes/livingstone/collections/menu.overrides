@@ -55,8 +55,10 @@
   .ui.dropdown .menu {
 
     & > .selected.item:hover,
-    & > .active.item:hover {
-      background: @dropdownHoveredItemBackground !important;
+    & > .active.item:hover,
+    & > .item:hover, {
+      background: @themeActionColorDefault !important;
+      background: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
     }
   }
 
@@ -90,19 +92,41 @@
 ---------------*/
 
   /* Vertical */
+
   .ui.modal &.vertical {
     width: @verticalMenuInModalWidth;
+    max-width: @verticalMenuInModalMaxWidth;
+    min-height: @verticalMenuInModalMinHeight;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: @verticalMenuInModalMarginTop;
+
+    @media only screen and (max-width: @largeMonitorBreakpoint) {
+      margin-top: @verticalMenuInModalMarginTopMobile;
+      justify-content: flex-start;
+    }
+
+    &:not(.accordion) > .item {
+      border-bottom: @verticalMenuInModalItemBorderBottom;
+      line-height: @verticalMenuInModalItemLineHeight;
+      padding-left: @verticalMenuInModalItemPaddingLeft;
+      font-weight: bold;
+    }
 
     > .item {
+      align-self: flex-start;
+      width: 100%;
+      margin: 0;
+      padding-top: @verticalMenuInModalItemPaddingTop;
+      padding-bottom: @verticalMenuInModalItemPaddingBottom;
 
       &:first-child {
         padding-top: 0;
       }
 
       &:not(:first-child) {
-        border-bottom: @verticalMenuInModalItemBorderBottom;
-        line-height: @verticalMenuInModalItemLineHeight;
-        padding-left: @verticalMenuInModalItemPaddingLeft;
 
         > .title {
           padding: 0;
@@ -118,22 +142,15 @@
 
           > .item {
             padding-left: @verticalMenuInModalSubItemPaddingLeft;
+            margin: 0;
+            padding-top: @verticalMenuInModalSubItemPaddingTop;
+            padding-bottom: @verticalMenuInModalSubItemPaddingBottom;
           }
         }
 
         &.active {
           border-bottom: @activeItemUnderlineBorder;
           border-bottom-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
-        }
-      }
-
-      &.accordion {
-
-        .title {
-
-          .link.item {
-            display: inline;
-          }
         }
       }
     }
@@ -316,10 +333,6 @@ header {
         @media @mobileScreen {
           border: none;
         }
-      }
-
-      > .item.dropdown {
-        padding: 0;
       }
 
       > .active.item,

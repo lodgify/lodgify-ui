@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`\`getIsFluid\` when \`imageWidth\` and \`imageHeight are both undefined should return the right value 1`] = `true`;
-
-exports[`\`getIsFluid\` when \`imageWidth\` or \`imageHeight\` are defined should return 'false' when arguements are ,1 1`] = `false`;
-
-exports[`\`getIsFluid\` when \`imageWidth\` or \`imageHeight\` are defined should return 'false' when arguements are 1, 1`] = `false`;
-
-exports[`\`getIsFluid\` when \`imageWidth\` or \`imageHeight\` are defined should return 'false' when arguements are 1,1 1`] = `false`;

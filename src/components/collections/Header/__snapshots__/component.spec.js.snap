@@ -10,10 +10,10 @@ exports[`<Header /> by default should render the right structure 1`] = `
   navigationItems={
     Array [
       Object {
+        "href": "/",
         "text": "Home",
       },
       Object {
-        "href": "/all-properties",
         "subItems": Array [
           Object {
             "href": "/la-casa-viva",
@@ -69,14 +69,12 @@ exports[`<Header /> by default should render the right structure 1`] = `
           <div
             className="ui borderless ui text container menu"
           >
-            <MenuItem
+            <Item
               href="/"
-              link={true}
             >
               <a
-                className="link item"
+                className="item"
                 href="/"
-                onClick={[Function]}
               >
                 <Heading
                   className={null}
@@ -98,7 +96,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                   </Header>
                 </Heading>
               </a>
-            </MenuItem>
+            </Item>
             <ShowOn
               computer={false}
               mobile={true}
@@ -164,13 +162,9 @@ exports[`<Header /> by default should render the right structure 1`] = `
                           closeOnDimmerClick={true}
                           closeOnDocumentClick={false}
                           content={
-                            <Menu
-                              text={true}
-                              vertical={true}
-                            >
-                              <MenuItem
+                            Array [
+                              <Item
                                 href="/"
-                                link={true}
                               >
                                 <Heading
                                   className={null}
@@ -180,80 +174,80 @@ exports[`<Header /> by default should render the right structure 1`] = `
                                 >
                                   someLogoText
                                 </Heading>
-                              </MenuItem>
-                              <MenuItem
-                                active={false}
-                                link={true}
+                              </Item>,
+                              <Menu
+                                text={true}
+                                vertical={true}
                               >
-                                Home
-                              </MenuItem>
-                              <Accordion
-                                as={[Function]}
-                                panels={
-                                  Array [
-                                    Object {
-                                      "content": Object {
-                                        "content": Array [
-                                          <MenuItem
-                                            active={false}
-                                            href="/la-casa-viva"
-                                            link={true}
-                                          >
-                                            La Casa Viva
-                                          </MenuItem>,
-                                          <MenuItem
-                                            active={false}
-                                            href="/la-casa-muerta"
-                                            link={true}
-                                          >
-                                            La Casa Muerta
-                                          </MenuItem>,
-                                          <MenuItem
-                                            active={false}
-                                            href="/the-white-lodge"
-                                            link={true}
-                                          >
-                                            The White Lodge
-                                          </MenuItem>,
-                                          <MenuItem
-                                            active={false}
-                                            href="/the-black-lodge"
-                                            link={true}
-                                          >
-                                            The Black Lodge
-                                          </MenuItem>,
-                                        ],
-                                        "key": "1All properties",
+                                <MenuItem
+                                  active={false}
+                                  href="/"
+                                  link={true}
+                                >
+                                  Home
+                                </MenuItem>
+                                <Accordion
+                                  as={[Function]}
+                                  panels={
+                                    Array [
+                                      Object {
+                                        "content": Object {
+                                          "content": Array [
+                                            <MenuItem
+                                              active={false}
+                                              href="/la-casa-viva"
+                                              link={true}
+                                            >
+                                              La Casa Viva
+                                            </MenuItem>,
+                                            <MenuItem
+                                              active={false}
+                                              href="/la-casa-muerta"
+                                              link={true}
+                                            >
+                                              La Casa Muerta
+                                            </MenuItem>,
+                                            <MenuItem
+                                              active={false}
+                                              href="/the-white-lodge"
+                                              link={true}
+                                            >
+                                              The White Lodge
+                                            </MenuItem>,
+                                            <MenuItem
+                                              active={false}
+                                              href="/the-black-lodge"
+                                              link={true}
+                                            >
+                                              The Black Lodge
+                                            </MenuItem>,
+                                          ],
+                                          "key": "1All properties",
+                                        },
+                                        "title": Object {
+                                          "content": "All properties",
+                                          "key": "All properties1",
+                                        },
                                       },
-                                      "title": Object {
-                                        "content": <MenuItem
-                                          active={false}
-                                          href="/all-properties"
-                                          link={true}
-                                        >
-                                          All properties
-                                        </MenuItem>,
-                                        "key": "All properties1",
-                                      },
-                                    },
-                                  ]
-                                }
-                              />
-                              <MenuItem
-                                active={false}
-                                href="/"
-                                link={true}
-                              >
-                                Contact Us
-                              </MenuItem>
-                              <MenuItem
-                                active={false}
-                                href="/"
-                                link={true}
-                              >
-                                What to do
-                              </MenuItem>
-                            </Menu>
+                                    ]
+                                  }
+                                />
+                                <MenuItem
+                                  active={false}
+                                  href="/"
+                                  link={true}
+                                >
+                                  Contact Us
+                                </MenuItem>
+                                <MenuItem
+                                  active={false}
+                                  href="/"
+                                  link={true}
+                                >
+                                  What to do
+                                </MenuItem>
+                              </Menu>,
+                            ]
                           }
                           dimmer="inverted"
                           eventPool="Modal"
@@ -375,15 +369,17 @@ exports[`<Header /> by default should render the right structure 1`] = `
                 >
                   <MenuItem
                     active={false}
+                    href="/"
                     key="Home0"
                     link={true}
                   >
-                    <div
+                    <a
                       className="link item"
+                      href="/"
                       onClick={[Function]}
                     >
                       Home
-                    </div>
+                    </a>
                   </MenuItem>
                   <Submenu
                     isMenuItem={true}
@@ -476,15 +472,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       selectOnBlur={true}
                       selectOnNavigation={true}
                       simple={true}
-                      trigger={
-                        <MenuItem
-                          active={false}
-                          href="/all-properties"
-                          link={true}
-                        >
-                          All properties
-                        </MenuItem>
-                      }
+                      trigger="All properties"
                       upward={false}
                       value={null}
                       wrapSelection={true}
@@ -501,20 +489,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                         role="listbox"
                         tabIndex={0}
                       >
-                        <MenuItem
-                          active={false}
-                          href="/all-properties"
-                          key="All properties1"
-                          link={true}
-                        >
-                          <a
-                            className="link item"
-                            href="/all-properties"
-                            onClick={[Function]}
-                          >
-                            All properties
-                          </a>
-                        </MenuItem>
+                        All properties
                         <Icon
                           color={null}
                           hasBorder={false}
@@ -738,10 +713,10 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
   navigationItems={
     Array [
       Object {
+        "href": "/",
         "text": "Home",
       },
       Object {
-        "href": "/all-properties",
         "subItems": Array [
           Object {
             "href": "/la-casa-viva",
@@ -797,14 +772,12 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
           <div
             className="ui borderless ui text container menu"
           >
-            <MenuItem
+            <Item
               href="/"
-              link={true}
             >
               <a
-                className="link item"
+                className="item"
                 href="/"
-                onClick={[Function]}
               >
                 <Heading
                   className={null}
@@ -826,7 +799,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                   </Header>
                 </Heading>
               </a>
-            </MenuItem>
+            </Item>
             <ShowOn
               computer={false}
               mobile={true}
@@ -892,13 +865,9 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                           closeOnDimmerClick={true}
                           closeOnDocumentClick={false}
                           content={
-                            <Menu
-                              text={true}
-                              vertical={true}
-                            >
-                              <MenuItem
+                            Array [
+                              <Item
                                 href="/"
-                                link={true}
                               >
                                 <Heading
                                   className={null}
@@ -908,80 +877,80 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                                 >
                                   someLogoText
                                 </Heading>
-                              </MenuItem>
-                              <MenuItem
-                                active={false}
-                                link={true}
+                              </Item>,
+                              <Menu
+                                text={true}
+                                vertical={true}
                               >
-                                Home
-                              </MenuItem>
-                              <Accordion
-                                as={[Function]}
-                                panels={
-                                  Array [
-                                    Object {
-                                      "content": Object {
-                                        "content": Array [
-                                          <MenuItem
-                                            active={false}
-                                            href="/la-casa-viva"
-                                            link={true}
-                                          >
-                                            La Casa Viva
-                                          </MenuItem>,
-                                          <MenuItem
-                                            active={false}
-                                            href="/la-casa-muerta"
-                                            link={true}
-                                          >
-                                            La Casa Muerta
-                                          </MenuItem>,
-                                          <MenuItem
-                                            active={false}
-                                            href="/the-white-lodge"
-                                            link={true}
-                                          >
-                                            The White Lodge
-                                          </MenuItem>,
-                                          <MenuItem
-                                            active={false}
-                                            href="/the-black-lodge"
-                                            link={true}
-                                          >
-                                            The Black Lodge
-                                          </MenuItem>,
-                                        ],
-                                        "key": "1All properties",
+                                <MenuItem
+                                  active={false}
+                                  href="/"
+                                  link={true}
+                                >
+                                  Home
+                                </MenuItem>
+                                <Accordion
+                                  as={[Function]}
+                                  panels={
+                                    Array [
+                                      Object {
+                                        "content": Object {
+                                          "content": Array [
+                                            <MenuItem
+                                              active={false}
+                                              href="/la-casa-viva"
+                                              link={true}
+                                            >
+                                              La Casa Viva
+                                            </MenuItem>,
+                                            <MenuItem
+                                              active={false}
+                                              href="/la-casa-muerta"
+                                              link={true}
+                                            >
+                                              La Casa Muerta
+                                            </MenuItem>,
+                                            <MenuItem
+                                              active={false}
+                                              href="/the-white-lodge"
+                                              link={true}
+                                            >
+                                              The White Lodge
+                                            </MenuItem>,
+                                            <MenuItem
+                                              active={false}
+                                              href="/the-black-lodge"
+                                              link={true}
+                                            >
+                                              The Black Lodge
+                                            </MenuItem>,
+                                          ],
+                                          "key": "1All properties",
+                                        },
+                                        "title": Object {
+                                          "content": "All properties",
+                                          "key": "All properties1",
+                                        },
                                       },
-                                      "title": Object {
-                                        "content": <MenuItem
-                                          active={false}
-                                          href="/all-properties"
-                                          link={true}
-                                        >
-                                          All properties
-                                        </MenuItem>,
-                                        "key": "All properties1",
-                                      },
-                                    },
-                                  ]
-                                }
-                              />
-                              <MenuItem
-                                active={false}
-                                href="/"
-                                link={true}
-                              >
-                                Contact Us
-                              </MenuItem>
-                              <MenuItem
-                                active={false}
-                                href="/"
-                                link={true}
-                              >
-                                What to do
-                              </MenuItem>
-                            </Menu>
+                                    ]
+                                  }
+                                />
+                                <MenuItem
+                                  active={false}
+                                  href="/"
+                                  link={true}
+                                >
+                                  Contact Us
+                                </MenuItem>
+                                <MenuItem
+                                  active={false}
+                                  href="/"
+                                  link={true}
+                                >
+                                  What to do
+                                </MenuItem>
+                              </Menu>,
+                            ]
                           }
                           dimmer="inverted"
                           eventPool="Modal"
@@ -1103,15 +1072,17 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                 >
                   <MenuItem
                     active={false}
+                    href="/"
                     key="Home0"
                     link={true}
                   >
-                    <div
+                    <a
                       className="link item"
+                      href="/"
                       onClick={[Function]}
                     >
                       Home
-                    </div>
+                    </a>
                   </MenuItem>
                   <Submenu
                     isMenuItem={true}
@@ -1204,15 +1175,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       selectOnBlur={true}
                       selectOnNavigation={true}
                       simple={true}
-                      trigger={
-                        <MenuItem
-                          active={false}
-                          href="/all-properties"
-                          link={true}
-                        >
-                          All properties
-                        </MenuItem>
-                      }
+                      trigger="All properties"
                       upward={false}
                       value={null}
                       wrapSelection={true}
@@ -1229,20 +1192,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                         role="listbox"
                         tabIndex={0}
                       >
-                        <MenuItem
-                          active={false}
-                          href="/all-properties"
-                          key="All properties1"
-                          link={true}
-                        >
-                          <a
-                            className="link item"
-                            href="/all-properties"
-                            onClick={[Function]}
-                          >
-                            All properties
-                          </a>
-                        </MenuItem>
+                        All properties
                         <Icon
                           color={null}
                           hasBorder={false}
@@ -1525,14 +1475,12 @@ exports[`<Header /> if navigation items exceed the header max width should rende
           <div
             className="ui borderless ui text container menu"
           >
-            <MenuItem
+            <Item
               href="/"
-              link={true}
             >
               <a
-                className="link item"
+                className="item"
                 href="/"
-                onClick={[Function]}
               >
                 <Heading
                   className={null}
@@ -1554,7 +1502,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                   </Header>
                 </Heading>
               </a>
-            </MenuItem>
+            </Item>
             <ShowOn
               computer={true}
               mobile={true}
@@ -1620,13 +1568,9 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                           closeOnDimmerClick={true}
                           closeOnDocumentClick={false}
                           content={
-                            <Menu
-                              text={true}
-                              vertical={true}
-                            >
-                              <MenuItem
+                            Array [
+                              <Item
                                 href="/"
-                                link={true}
                               >
                                 <Heading
                                   className={null}
@@ -1636,80 +1580,80 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                                 >
                                   someLogoText
                                 </Heading>
-                              </MenuItem>
-                              <MenuItem
-                                active={false}
-                                href="/"
-                                link={true}
+                              </Item>,
+                              <Menu
+                                text={true}
+                                vertical={true}
                               >
-                                Home
-                              </MenuItem>
-                              <Accordion
-                                as={[Function]}
-                                panels={
-                                  Array [
-                                    Object {
-                                      "content": Object {
-                                        "content": Array [
-                                          <MenuItem
-                                            active={false}
-                                            href="/la-casa-viva"
-                                            link={true}
-                                          >
-                                            La Casa Viva
-                                          </MenuItem>,
-                                          <MenuItem
-                                            active={false}
-                                            href="/la-casa-muerta"
-                                            link={true}
-                                          >
-                                            La Casa Muerta
-                                          </MenuItem>,
-                                          <MenuItem
-                                            active={false}
-                                            href="/the-white-lodge"
-                                            link={true}
-                                          >
-                                            The White Lodge
-                                          </MenuItem>,
-                                          <MenuItem
-                                            active={false}
-                                            href="/the-black-lodge"
-                                            link={true}
-                                          >
-                                            The Black Lodge
-                                          </MenuItem>,
-                                        ],
-                                        "key": "1All properties",
+                                <MenuItem
+                                  active={false}
+                                  href="/"
+                                  link={true}
+                                >
+                                  Home
+                                </MenuItem>
+                                <Accordion
+                                  as={[Function]}
+                                  panels={
+                                    Array [
+                                      Object {
+                                        "content": Object {
+                                          "content": Array [
+                                            <MenuItem
+                                              active={false}
+                                              href="/la-casa-viva"
+                                              link={true}
+                                            >
+                                              La Casa Viva
+                                            </MenuItem>,
+                                            <MenuItem
+                                              active={false}
+                                              href="/la-casa-muerta"
+                                              link={true}
+                                            >
+                                              La Casa Muerta
+                                            </MenuItem>,
+                                            <MenuItem
+                                              active={false}
+                                              href="/the-white-lodge"
+                                              link={true}
+                                            >
+                                              The White Lodge
+                                            </MenuItem>,
+                                            <MenuItem
+                                              active={false}
+                                              href="/the-black-lodge"
+                                              link={true}
+                                            >
+                                              The Black Lodge
+                                            </MenuItem>,
+                                          ],
+                                          "key": "1All properties",
+                                        },
+                                        "title": Object {
+                                          "content": "All properties",
+                                          "key": "All properties1",
+                                        },
                                       },
-                                      "title": Object {
-                                        "content": <MenuItem
-                                          active={false}
-                                          link={true}
-                                        >
-                                          All properties
-                                        </MenuItem>,
-                                        "key": "All properties1",
-                                      },
-                                    },
-                                  ]
-                                }
-                              />
-                              <MenuItem
-                                active={false}
-                                href="/"
-                                link={true}
-                              >
-                                Contact Us
-                              </MenuItem>
-                              <MenuItem
-                                active={false}
-                                href="/"
-                                link={true}
-                              >
-                                What to do when you go out on a Sunday and then somebody attacks you with big floppy fish
-                              </MenuItem>
-                            </Menu>
+                                    ]
+                                  }
+                                />
+                                <MenuItem
+                                  active={false}
+                                  href="/"
+                                  link={true}
+                                >
+                                  Contact Us
+                                </MenuItem>
+                                <MenuItem
+                                  active={false}
+                                  href="/"
+                                  link={true}
+                                >
+                                  What to do when you go out on a Sunday and then somebody attacks you with big floppy fish
+                                </MenuItem>
+                              </Menu>,
+                            ]
                           }
                           dimmer="inverted"
                           eventPool="Modal"

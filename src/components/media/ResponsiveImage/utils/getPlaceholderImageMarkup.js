@@ -17,6 +17,7 @@ export const getPlaceholderImageMarkup = (
     /* eslint-disable react/prop-types */
     imageHeight,
     imageWidth,
+    isFluid,
     placeholderImageUrl,
     /* eslint-enable react/prop-types */
   },
@@ -26,7 +27,7 @@ export const getPlaceholderImageMarkup = (
     {getAspectRatioPlaceholderMarkup(imageWidth, imageHeight)}
     {!isImageLoaded && (
       <Image
-        fluid={getIsFluid(imageWidth, imageHeight)}
+        fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
         src={placeholderImageUrl}
       />
     )}

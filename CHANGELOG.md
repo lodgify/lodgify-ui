@@ -1,3 +1,69 @@
+## [1.116.1](https://github.com/lodgify/lodgify-ui/compare/v1.116.0...v1.116.1) (2019-01-25)
+
+
+### Bug Fixes
+
+* **Rates:** hide number of guests and cost per extra guest if values are null or undefined ([e3dad09](https://github.com/lodgify/lodgify-ui/commit/e3dad09))
+
+# [1.116.0](https://github.com/lodgify/lodgify-ui/compare/v1.115.2...v1.116.0) (2019-01-24)
+
+
+### Features
+
+* **getHiddenMenuMarkup:** isolate getLogoMarkup from menu ([cec5973](https://github.com/lodgify/lodgify-ui/commit/cec5973))
+* **getLogoMarkup:** extract menu from logo wrapper ([70108e3](https://github.com/lodgify/lodgify-ui/commit/70108e3))
+* **menu.*:** implement modal layout styles ([05e4c94](https://github.com/lodgify/lodgify-ui/commit/05e4c94))
+* **modal.*:** implement modal layout styles ([e346f74](https://github.com/lodgify/lodgify-ui/commit/e346f74))
+
+## [1.115.2](https://github.com/lodgify/lodgify-ui/compare/v1.115.1...v1.115.2) (2019-01-24)
+
+
+### Bug Fixes
+
+* **dropdown.overrides:** fix theme background on hover ([c9791a3](https://github.com/lodgify/lodgify-ui/commit/c9791a3))
+* **menu.overrides:** fix theme background on hover ([836203a](https://github.com/lodgify/lodgify-ui/commit/836203a))
+
+## [1.115.1](https://github.com/lodgify/lodgify-ui/compare/v1.115.0...v1.115.1) (2019-01-22)
+
+
+### Bug Fixes
+
+* **Header:** revert to submenu trigger having no link ([ee226f5](https://github.com/lodgify/lodgify-ui/commit/ee226f5))
+
+# [1.115.0](https://github.com/lodgify/lodgify-ui/compare/v1.114.0...v1.115.0) (2019-01-22)
+
+
+### Features
+
+* **dropdown.overrides:** apply theme background on hover ([05344f9](https://github.com/lodgify/lodgify-ui/commit/05344f9))
+* **menu.overrides:** apply theme background on hover ([84c1db2](https://github.com/lodgify/lodgify-ui/commit/84c1db2))
+
+# [1.114.0](https://github.com/lodgify/lodgify-ui/compare/v1.113.0...v1.114.0) (2019-01-22)
+
+
+### Bug Fixes
+
+* **FullBleed:** pass imageHeight and imageWidth props to ResponsiveImage ([17f9202](https://github.com/lodgify/lodgify-ui/commit/17f9202))
+* **getImageMarkup:** pass correct arguments to getIsFluid ([bac5722](https://github.com/lodgify/lodgify-ui/commit/bac5722))
+* **getPlaceholderImageMarkup:** pass correct arguments to getIsFluid ([b1592c7](https://github.com/lodgify/lodgify-ui/commit/b1592c7))
+* **Hero:** pass imageHeight and imageWidth props to FullBleed ([5bf9fff](https://github.com/lodgify/lodgify-ui/commit/5bf9fff))
+* **HomepageHero:** pass background image height and width props to Hero ([2318d74](https://github.com/lodgify/lodgify-ui/commit/2318d74))
+* **PropertyPageHero:** pass image width and height props to Gallery and Hero ([22be55f](https://github.com/lodgify/lodgify-ui/commit/22be55f))
+* **ResponsiveImage:** prevent image from pushing placeholder out of view ([ad50f7b](https://github.com/lodgify/lodgify-ui/commit/ad50f7b))
+
+
+### Features
+
+* **getIsFluid:** add isFluid to condition ([d379d8e](https://github.com/lodgify/lodgify-ui/commit/d379d8e))
+
+# [1.113.0](https://github.com/lodgify/lodgify-ui/compare/v1.112.0...v1.113.0) (2019-01-21)
+
+
+### Features
+
+* **getGalleryMarkup:** implement util ([ff0fbec](https://github.com/lodgify/lodgify-ui/commit/ff0fbec))
+* **PropertyPageHero:** implement getGalleryMarkup util ([ba721b2](https://github.com/lodgify/lodgify-ui/commit/ba721b2))
+
 # [1.112.0](https://github.com/lodgify/lodgify-ui/compare/v1.111.0...v1.112.0) (2019-01-21)
 
 

@@ -80,8 +80,8 @@ export const getHiddenMenuMarkup = (
     )}
     <Menu.Item>
       <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
+        {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
         <Menu text vertical>
-          {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
           {navigationItems.map(({ subItems, text, href }, index) =>
             size(subItems) ? (
               <Accordion
@@ -90,16 +90,7 @@ export const getHiddenMenuMarkup = (
                 panels={[
                   {
                     title: {
-                      content: (
-                        <Menu.Item
-                          active={index === activeNavigationItemIndex}
-                          href={href}
-                          key={buildKeyFromStrings(text, index)}
-                          link
-                        >
-                          {text}
-                        </Menu.Item>
-                      ),
+                      content: text,
                       key: buildKeyFromStrings(text, index),
                     },
                     content: {
