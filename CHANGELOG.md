@@ -1,3 +1,11 @@
+# [1.118.0](https://github.com/lodgify/lodgify-ui/compare/v1.117.1...v1.118.0) (2019-01-28)
+
+
+### Features
+
+* **getCheckInAndCheckOutMarkup:** implement util and unit test ([dbcf85b](https://github.com/lodgify/lodgify-ui/commit/dbcf85b))
+* **Rules:** implement getCheckInAndCheckOutMarkup util ([ba4b468](https://github.com/lodgify/lodgify-ui/commit/ba4b468))
+
 ## [1.117.1](https://github.com/lodgify/lodgify-ui/compare/v1.117.0...v1.117.1) (2019-01-28)
 
 
