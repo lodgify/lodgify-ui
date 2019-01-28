@@ -11,6 +11,7 @@ import { ErrorMessage } from '../ErrorMessage';
 import { adaptOptions } from './utils/adaptOptions';
 import { getDefaultValue } from './utils/getDefaultValue';
 import { getHasImages } from './utils/getHasImages';
+import { isValueValid } from './utils/isValueValid';
 
 /**
  * A dropdown allows a user to select a value from a series of options.
@@ -19,7 +20,7 @@ import { getHasImages } from './utils/getHasImages';
 export class Component extends PureComponent {
   state = {
     isOpen: false,
-    value: '',
+    value: undefined,
   };
 
   componentDidUpdate(prevProps, { value: prevValue }) {
@@ -30,7 +31,10 @@ export class Component extends PureComponent {
   }
 
   handleChange = (event, data) => {
-    this.setState({ value: data.value, isOpen: false });
+    this.setState({
+      value: this.props.currentValue || data.value,
+      isOpen: false,
+    });
   };
 
   handleOpen = isOpen => this.setState({ isOpen });
@@ -50,17 +54,17 @@ export class Component extends PureComponent {
       isValid,
       label,
       options,
+      currentValue,
     } = this.props;
     const hasImages = getHasImages(options);
     const adaptedOptions = adaptOptions(options, hasImages);
-    const defaultValue = getDefaultValue(adaptedOptions, hasImages, !!label);
     const hasErrorMessage = getHasErrorMessage(error);
 
     return (
       <div
         className={getClassNames('dropdown-container', {
           'has-images': hasImages,
-          dirty: !!value || value === 0,
+          dirty: isValueValid(currentValue) || isValueValid(value),
           error: error,
           focus: isOpen,
           valid: isValid,
@@ -70,7 +74,13 @@ export class Component extends PureComponent {
         {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
         {!hasImages && icon && <Icon name={icon} />}
         <Dropdown
-          defaultValue={defaultValue}
+          defaultValue={getDefaultValue(
+            adaptedOptions,
+            hasImages,
+            !!label,
+            currentValue,
+            value
+          )}
           disabled={isDisabled || !adaptedOptions.length}
           icon={<Icon name={ICON_NAMES.CARET_DOWN} />}
           onBlur={this.handleBlur}
@@ -80,6 +90,7 @@ export class Component extends PureComponent {
           options={adaptedOptions}
           selection
           upward={willOpenAbove}
+          value={currentValue || value}
         />
         {!hasImages && label && (
           <label onClick={() => this.handleOpen(true)}>{label}</label>
@@ -102,9 +113,16 @@ Component.defaultProps = {
   onChange: Function.prototype,
   options: [],
   willOpenAbove: false,
+  currentValue: undefined,
 };
 
 Component.propTypes = {
+  /** The current value of the dropdown where it is consumed as a controlled component. */
+  currentValue: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   /** Is the dropdown in an error state. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   /** Icon for the dropdown. Not displayed if options have images. */
