@@ -10,7 +10,7 @@
 @background: @primaryColor;
 
 /* Button defaults to using same height as input globally */
-@verticalPadding: @12px;
+@verticalPadding: @13px;
 @horizontalPadding: @40px;
 
 /* Text */

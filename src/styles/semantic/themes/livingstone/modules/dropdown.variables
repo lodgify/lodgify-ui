@@ -68,7 +68,7 @@
    Selection
 --------------*/
 
-@selectionVerticalPadding: @inputVerticalPadding - @2px;
+@selectionVerticalPadding: @inputVerticalPadding - @1px;
 
 @selectionMaxWidth: 350px;
 @selectionMinWidth: auto;

@@ -1443,22 +1443,24 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                 >
                   01/05/2018 - 01/08/2018
                   <br />
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="guests"
-                    path={null}
-                    size={null}
-                  />
-                  2
-                  <br />
+                  <React.Fragment>
+                    <Icon
+                      color={null}
+                      hasBorder={false}
+                      isButton={false}
+                      isCircular={false}
+                      isColorInverted={false}
+                      isDisabled={false}
+                      isLabelLeft={false}
+                      labelText={null}
+                      labelWeight={null}
+                      name="guests"
+                      path={null}
+                      size={null}
+                    />
+                    2
+                    <br />
+                  </React.Fragment>
                   1€ / Price per extra per.
                 </Paragraph>
               </div>,
@@ -1481,22 +1483,24 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                 >
                   01/02/2018 - 01/08/2018
                   <br />
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="guests"
-                    path={null}
-                    size={null}
-                  />
-                  3
-                  <br />
+                  <React.Fragment>
+                    <Icon
+                      color={null}
+                      hasBorder={false}
+                      isButton={false}
+                      isCircular={false}
+                      isColorInverted={false}
+                      isDisabled={false}
+                      isLabelLeft={false}
+                      labelText={null}
+                      labelWeight={null}
+                      name="guests"
+                      path={null}
+                      size={null}
+                    />
+                    3
+                    <br />
+                  </React.Fragment>
                   2€ / Price per extra per.
                 </Paragraph>
               </div>,
@@ -1519,22 +1523,24 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                 >
                   01/03/2018 - 01/08/2018
                   <br />
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="guests"
-                    path={null}
-                    size={null}
-                  />
-                  4
-                  <br />
+                  <React.Fragment>
+                    <Icon
+                      color={null}
+                      hasBorder={false}
+                      isButton={false}
+                      isCircular={false}
+                      isColorInverted={false}
+                      isDisabled={false}
+                      isLabelLeft={false}
+                      labelText={null}
+                      labelWeight={null}
+                      name="guests"
+                      path={null}
+                      size={null}
+                    />
+                    4
+                    <br />
+                  </React.Fragment>
                   3€ / Price per extra per.
                 </Paragraph>
               </div>,
@@ -4263,22 +4269,24 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                 >
                   01/05/2018 - 01/08/2018
                   <br />
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="guests"
-                    path={null}
-                    size={null}
-                  />
-                  2
-                  <br />
+                  <React.Fragment>
+                    <Icon
+                      color={null}
+                      hasBorder={false}
+                      isButton={false}
+                      isCircular={false}
+                      isColorInverted={false}
+                      isDisabled={false}
+                      isLabelLeft={false}
+                      labelText={null}
+                      labelWeight={null}
+                      name="guests"
+                      path={null}
+                      size={null}
+                    />
+                    2
+                    <br />
+                  </React.Fragment>
                   1€ / Price per extra per.
                 </Paragraph>
               </div>,
@@ -4301,22 +4309,24 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                 >
                   01/02/2018 - 01/08/2018
                   <br />
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="guests"
-                    path={null}
-                    size={null}
-                  />
-                  3
-                  <br />
+                  <React.Fragment>
+                    <Icon
+                      color={null}
+                      hasBorder={false}
+                      isButton={false}
+                      isCircular={false}
+                      isColorInverted={false}
+                      isDisabled={false}
+                      isLabelLeft={false}
+                      labelText={null}
+                      labelWeight={null}
+                      name="guests"
+                      path={null}
+                      size={null}
+                    />
+                    3
+                    <br />
+                  </React.Fragment>
                   2€ / Price per extra per.
                 </Paragraph>
               </div>,
@@ -4339,22 +4349,24 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                 >
                   01/03/2018 - 01/08/2018
                   <br />
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="guests"
-                    path={null}
-                    size={null}
-                  />
-                  4
-                  <br />
+                  <React.Fragment>
+                    <Icon
+                      color={null}
+                      hasBorder={false}
+                      isButton={false}
+                      isCircular={false}
+                      isColorInverted={false}
+                      isDisabled={false}
+                      isLabelLeft={false}
+                      labelText={null}
+                      labelWeight={null}
+                      name="guests"
+                      path={null}
+                      size={null}
+                    />
+                    4
+                    <br />
+                  </React.Fragment>
                   3€ / Price per extra per.
                 </Paragraph>
               </div>,

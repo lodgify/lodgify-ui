@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { isNil } from 'lodash';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 
-import { buildPricePerExtraGuestString } from './buildPricePerExtraGuestString';
+import { getCostPerExtraGuestString } from './getCostPerExtraGuestString';
 
 /**
  * @param {Object} rateCategory
@@ -30,10 +31,15 @@ export const getRateCategoryHeadingMarkup = (
     <Paragraph weight="light">
       {dateRange}
       <br />
-      <Icon name={ICON_NAMES.GUESTS} />
-      {numberOfGuests}
-      <br />
-      {buildPricePerExtraGuestString(costPerExtraGuest, costPerExtraGuestLabel)}
+      {!isNil(numberOfGuests) && (
+        <Fragment>
+          <Icon name={ICON_NAMES.GUESTS} />
+          {numberOfGuests}
+          <br />
+        </Fragment>
+      )}
+      {!isNil(costPerExtraGuest) &&
+        getCostPerExtraGuestString(costPerExtraGuest, costPerExtraGuestLabel)}
     </Paragraph>
   </div>
 );

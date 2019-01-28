@@ -1,3 +1,36 @@
+# [1.118.0](https://github.com/lodgify/lodgify-ui/compare/v1.117.1...v1.118.0) (2019-01-28)
+
+
+### Features
+
+* **getCheckInAndCheckOutMarkup:** implement util and unit test ([dbcf85b](https://github.com/lodgify/lodgify-ui/commit/dbcf85b))
+* **Rules:** implement getCheckInAndCheckOutMarkup util ([ba4b468](https://github.com/lodgify/lodgify-ui/commit/ba4b468))
+
+## [1.117.1](https://github.com/lodgify/lodgify-ui/compare/v1.117.0...v1.117.1) (2019-01-28)
+
+
+### Bug Fixes
+
+* ***Picker:** add border radius and display inline-flex ([8436bd2](https://github.com/lodgify/lodgify-ui/commit/8436bd2))
+* ***Picker:** call handleHeightChange on mount to avoid buggy render behaviour ([4da3de8](https://github.com/lodgify/lodgify-ui/commit/4da3de8))
+* **Button:** give button same height as inputs ([d90b7e4](https://github.com/lodgify/lodgify-ui/commit/d90b7e4))
+* **Dropdown:** give dropdown same height as inputs ([901a0e2](https://github.com/lodgify/lodgify-ui/commit/901a0e2))
+
+# [1.117.0](https://github.com/lodgify/lodgify-ui/compare/v1.116.1...v1.117.0) (2019-01-28)
+
+
+### Features
+
+* **menu.overrides:** implement Footer styles ([a072207](https://github.com/lodgify/lodgify-ui/commit/a072207))
+* **Viewport:** implement component ([84ddf60](https://github.com/lodgify/lodgify-ui/commit/84ddf60))
+
+## [1.116.1](https://github.com/lodgify/lodgify-ui/compare/v1.116.0...v1.116.1) (2019-01-25)
+
+
+### Bug Fixes
+
+* **Rates:** hide number of guests and cost per extra guest if values are null or undefined ([e3dad09](https://github.com/lodgify/lodgify-ui/commit/e3dad09))
+
 # [1.116.0](https://github.com/lodgify/lodgify-ui/compare/v1.115.2...v1.116.0) (2019-01-24)
 
 
