@@ -1,92 +1,71 @@
 import { shallow } from 'enzyme';
-import {
-  expectComponentToBe,
-  expectComponentToHaveChildren,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Icon } from 'elements/Icon';
-import { Paragraph } from 'typography/Paragraph';
 
 import { getRateCategoryHeadingMarkup } from './getRateCategoryHeadingMarkup';
-import { buildPricePerExtraGuestString } from './buildPricePerExtraGuestString';
 
-const rate = {
-  name: 'Mid Season',
-  dateRange: '01/05/2018 - 01/08/2018',
-  numberOfGuests: '2',
-  costPerExtraGuest: '5€',
-};
+const costPerExtraGuestLabel = 'laaaabel';
 
-const getRateHeading = () => shallow(getRateCategoryHeadingMarkup(rate));
+const getRateHeading = rateCategory =>
+  shallow(getRateCategoryHeadingMarkup(rateCategory, costPerExtraGuestLabel));
 
 describe('getRateCategoryHeadingMarkup', () => {
-  it('should render a single `div` element', () => {
-    const wrapper = getRateHeading();
+  describe('if all values are defined', () => {
+    it('should return the right markup', () => {
+      const actual = getRateHeading({
+        name: 'Mid Season',
+        dateRange: '01/05/2018 - 01/08/2018',
+        numberOfGuests: '2',
+        costPerExtraGuest: '5€',
+      });
 
-    expectComponentToBe(wrapper, 'div');
-  });
-
-  describe('the single `div` element', () => {
-    it('should render the right children', () => {
-      const wrapper = getRateHeading();
-
-      expectComponentToHaveChildren(wrapper, Paragraph, Paragraph);
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('the first `Paragraph`', () => {
-    const getFirstParagraph = () =>
-      getRateHeading()
-        .find(Paragraph)
-        .first();
+  describe('if `rateCategory.numberOfGuests` is `null` or `undefined`', () => {
+    it('should return the right markup', () => {
+      const testCases = [
+        {
+          name: 'Mid Season',
+          dateRange: '01/05/2018 - 01/08/2018',
+          numberOfGuests: null,
+          costPerExtraGuest: '5€',
+        },
+        {
+          name: 'High Season',
+          dateRange: '01/08/2018 - 01/10/2018',
+          costPerExtraGuest: '50€',
+        },
+      ];
 
-    it('should have the right props', () => {
-      const wrapper = getFirstParagraph();
+      testCases.forEach(testCase => {
+        const actual = getRateHeading(testCase);
 
-      expectComponentToHaveProps(wrapper, { weight: 'heavy' });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getFirstParagraph();
-
-      expectComponentToHaveChildren(wrapper, rate.name);
-    });
-  });
-
-  describe('the second `Paragraph`', () => {
-    const getSecondParagraph = () =>
-      getRateHeading()
-        .find(Paragraph)
-        .at(1);
-
-    it('should have the right props', () => {
-      const wrapper = getSecondParagraph();
-
-      expectComponentToHaveProps(wrapper, { weight: 'light' });
-    });
-
-    it('should render the right children', () => {
-      const { dateRange, numberOfGuests, costPerExtraGuest } = rate;
-      const wrapper = getSecondParagraph();
-
-      expectComponentToHaveChildren(
-        wrapper,
-        dateRange,
-        'br',
-        Icon,
-        numberOfGuests,
-        'br',
-        buildPricePerExtraGuestString(costPerExtraGuest)
-      );
+        expect(actual).toMatchSnapshot();
+      });
     });
   });
 
-  describe('the `Icon` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getRateHeading().find(Icon);
+  describe('if `rateCategory.costPerExtraGuest` is `null` or `undefined`', () => {
+    it('should return the right markup', () => {
+      const testCases = [
+        {
+          name: 'Mid Season',
+          dateRange: '01/05/2018 - 01/08/2018',
+          numberOfGuests: '5',
+          costPerExtraGuest: null,
+        },
+        {
+          name: 'High Season',
+          dateRange: '01/08/2018 - 01/10/2018',
+          numberOfGuests: '19',
+        },
+      ];
 
-      expectComponentToHaveProps(wrapper, { name: 'guests' });
+      testCases.forEach(testCase => {
+        const actual = getRateHeading(testCase);
+
+        expect(actual).toMatchSnapshot();
+      });
     });
   });
 });
