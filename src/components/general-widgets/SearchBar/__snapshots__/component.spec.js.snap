@@ -113,9 +113,11 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   error={false}
                   icon="map pin"
                   isDisabled={false}
+                  isSearchable={false}
                   isValid={false}
                   label="Location"
                   name="location"
+                  noResultsText="No results"
                   onBlur={[Function]}
                   onChange={[Function]}
                   options={
@@ -194,7 +196,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         />
                       }
                       minCharacters={1}
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       onClick={[Function]}
@@ -221,6 +223,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         ]
                       }
                       renderLabel={[Function]}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -2136,9 +2139,11 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   error={false}
                   icon="users"
                   isDisabled={false}
+                  isSearchable={false}
                   isValid={false}
                   label="Guests"
                   name="guests"
+                  noResultsText="No results"
                   onBlur={[Function]}
                   onChange={[Function]}
                   options={
@@ -2217,7 +2222,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         />
                       }
                       minCharacters={1}
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       onClick={[Function]}
@@ -2244,6 +2249,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         ]
                       }
                       renderLabel={[Function]}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -2644,9 +2650,11 @@ exports[`<SearchBar /> if \`isDisplayedAsModal === true\` should render the righ
                   error={false}
                   icon="map pin"
                   isDisabled={false}
+                  isSearchable={false}
                   isValid={false}
                   label="Location"
                   name="location"
+                  noResultsText="No results"
                   onBlur={[Function]}
                   onChange={[Function]}
                   options={
@@ -2692,9 +2700,11 @@ exports[`<SearchBar /> if \`isDisplayedAsModal === true\` should render the righ
                   error={false}
                   icon="users"
                   isDisabled={false}
+                  isSearchable={false}
                   isValid={false}
                   label="Guests"
                   name="guests"
+                  noResultsText="No results"
                   onBlur={[Function]}
                   onChange={[Function]}
                   options={
@@ -2855,9 +2865,11 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
                       error={false}
                       icon="map pin"
                       isDisabled={false}
+                      isSearchable={false}
                       isValid={false}
                       label="Location"
                       name="location"
+                      noResultsText="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       options={
@@ -2903,9 +2915,11 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
                       error={false}
                       icon="users"
                       isDisabled={false}
+                      isSearchable={false}
                       isValid={false}
                       label="Guests"
                       name="guests"
+                      noResultsText="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       options={
@@ -3216,9 +3230,11 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                           error={false}
                                           icon="map pin"
                                           isDisabled={false}
+                                          isSearchable={false}
                                           isValid={false}
                                           label="Location"
                                           name="location"
+                                          noResultsText="No results"
                                           onBlur={[Function]}
                                           onChange={[Function]}
                                           options={
@@ -3297,7 +3313,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 />
                                               }
                                               minCharacters={1}
-                                              noResultsMessage="No results found."
+                                              noResultsMessage="No results"
                                               onBlur={[Function]}
                                               onChange={[Function]}
                                               onClick={[Function]}
@@ -3324,6 +3340,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 ]
                                               }
                                               renderLabel={[Function]}
+                                              search={false}
                                               searchInput="text"
                                               selectOnBlur={true}
                                               selectOnNavigation={true}
@@ -5239,9 +5256,11 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                           error={false}
                                           icon="users"
                                           isDisabled={false}
+                                          isSearchable={false}
                                           isValid={false}
                                           label="Guests"
                                           name="guests"
+                                          noResultsText="No results"
                                           onBlur={[Function]}
                                           onChange={[Function]}
                                           options={
@@ -5320,7 +5339,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 />
                                               }
                                               minCharacters={1}
-                                              noResultsMessage="No results found."
+                                              noResultsMessage="No results"
                                               onBlur={[Function]}
                                               onChange={[Function]}
                                               onClick={[Function]}
@@ -5347,6 +5366,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 ]
                                               }
                                               renderLabel={[Function]}
+                                              search={false}
                                               searchInput="text"
                                               selectOnBlur={true}
                                               selectOnNavigation={true}
@@ -5797,9 +5817,11 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   error={false}
                   icon="map pin"
                   isDisabled={false}
+                  isSearchable={false}
                   isValid={false}
                   label="Location"
                   name="location"
+                  noResultsText="No results"
                   onBlur={[Function]}
                   onChange={[Function]}
                   options={
@@ -5878,7 +5900,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         />
                       }
                       minCharacters={1}
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       onClick={[Function]}
@@ -5905,6 +5927,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         ]
                       }
                       renderLabel={[Function]}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -7820,9 +7843,11 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   error={false}
                   icon="users"
                   isDisabled={false}
+                  isSearchable={false}
                   isValid={false}
                   label="Guests"
                   name="guests"
+                  noResultsText="No results"
                   onBlur={[Function]}
                   onChange={[Function]}
                   options={
@@ -7901,7 +7926,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         />
                       }
                       minCharacters={1}
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       onClick={[Function]}
@@ -7928,6 +7953,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         ]
                       }
                       renderLabel={[Function]}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -10003,9 +10029,11 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   error={false}
                   icon="users"
                   isDisabled={false}
+                  isSearchable={false}
                   isValid={false}
                   label="Guests"
                   name="guests"
+                  noResultsText="No results"
                   onBlur={[Function]}
                   onChange={[Function]}
                   options={
@@ -10084,7 +10112,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         />
                       }
                       minCharacters={1}
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       onClick={[Function]}
@@ -10111,6 +10139,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         ]
                       }
                       renderLabel={[Function]}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -10489,9 +10518,11 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   error={false}
                   icon="map pin"
                   isDisabled={false}
+                  isSearchable={false}
                   isValid={false}
                   label="Location"
                   name="location"
+                  noResultsText="No results"
                   onBlur={[Function]}
                   onChange={[Function]}
                   options={
@@ -10570,7 +10601,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         />
                       }
                       minCharacters={1}
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       onClick={[Function]}
@@ -10597,6 +10628,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         ]
                       }
                       renderLabel={[Function]}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -12512,9 +12544,11 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   error={false}
                   icon="users"
                   isDisabled={false}
+                  isSearchable={false}
                   isValid={false}
                   label="Guests"
                   name="guests"
+                  noResultsText="No results"
                   onBlur={[Function]}
                   onChange={[Function]}
                   options={
@@ -12593,7 +12627,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         />
                       }
                       minCharacters={1}
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       onClick={[Function]}
@@ -12620,6 +12654,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         ]
                       }
                       renderLabel={[Function]}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}

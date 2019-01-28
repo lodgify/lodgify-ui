@@ -388,9 +388,11 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                             error={false}
                             icon="map pin"
                             isDisabled={false}
+                            isSearchable={false}
                             isValid={false}
                             label="Location"
                             name="location"
+                            noResultsText="No results"
                             onBlur={[Function]}
                             onChange={[Function]}
                             options={
@@ -423,9 +425,11 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                             error={false}
                             icon="users"
                             isDisabled={false}
+                            isSearchable={false}
                             isValid={false}
                             label="Guests"
                             name="guests"
+                            noResultsText="No results"
                             onBlur={[Function]}
                             onChange={[Function]}
                             options={

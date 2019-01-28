@@ -383,6 +383,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                   </MenuItem>
                   <Submenu
                     isMenuItem={true}
+                    isSearchable={false}
                     isSimple={true}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={true}
@@ -408,6 +409,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                     }
                     key="All properties1"
                     name={null}
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -438,7 +440,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       item={true}
                       minCharacters={1}
                       name={null}
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -468,6 +470,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -1086,6 +1089,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                   </MenuItem>
                   <Submenu
                     isMenuItem={true}
+                    isSearchable={false}
                     isSimple={true}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={true}
@@ -1111,6 +1115,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                     }
                     key="All properties1"
                     name={null}
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -1141,7 +1146,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       item={true}
                       minCharacters={1}
                       name={null}
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -1171,6 +1176,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}

@@ -362,9 +362,11 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
               error={false}
               icon="map pin"
               isDisabled={false}
+              isSearchable={false}
               isValid={false}
               label="Properties"
               name=""
+              noResultsText="No results"
               onBlur={[Function]}
               onChange={[Function]}
               options={
