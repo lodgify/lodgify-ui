@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \`null\` or \`undefined\` should return the right markup 1`] = `
+<div>
+  <Paragraph
+    size="medium"
+    weight="heavy"
+  >
+    Mid Season
+  </Paragraph>
+  <Paragraph
+    size="medium"
+    weight="light"
+  >
+    01/05/2018 - 01/08/2018
+    <br />
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="guests"
+      path={null}
+      size={null}
+    />
+    5
+    <br />
+  </Paragraph>
+</div>
+`;
+
+exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \`null\` or \`undefined\` should return the right markup 2`] = `
+<div>
+  <Paragraph
+    size="medium"
+    weight="heavy"
+  >
+    High Season
+  </Paragraph>
+  <Paragraph
+    size="medium"
+    weight="light"
+  >
+    01/08/2018 - 01/10/2018
+    <br />
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="guests"
+      path={null}
+      size={null}
+    />
+    19
+    <br />
+  </Paragraph>
+</div>
+`;
+
+exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`null\` or \`undefined\` should return the right markup 1`] = `
+<div>
+  <Paragraph
+    size="medium"
+    weight="heavy"
+  >
+    Mid Season
+  </Paragraph>
+  <Paragraph
+    size="medium"
+    weight="light"
+  >
+    01/05/2018 - 01/08/2018
+    <br />
+    5€ / laaaabel
+  </Paragraph>
+</div>
+`;
+
+exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`null\` or \`undefined\` should return the right markup 2`] = `
+<div>
+  <Paragraph
+    size="medium"
+    weight="heavy"
+  >
+    High Season
+  </Paragraph>
+  <Paragraph
+    size="medium"
+    weight="light"
+  >
+    01/08/2018 - 01/10/2018
+    <br />
+    50€ / laaaabel
+  </Paragraph>
+</div>
+`;
+
+exports[`getRateCategoryHeadingMarkup if all values are defined should return the right markup 1`] = `
+<div>
+  <Paragraph
+    size="medium"
+    weight="heavy"
+  >
+    Mid Season
+  </Paragraph>
+  <Paragraph
+    size="medium"
+    weight="light"
+  >
+    01/05/2018 - 01/08/2018
+    <br />
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="guests"
+      path={null}
+      size={null}
+    />
+    2
+    <br />
+    5€ / laaaabel
+  </Paragraph>
+</div>
+`;

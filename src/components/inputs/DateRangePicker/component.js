@@ -27,12 +27,13 @@ class Component extends PureComponent {
   state = {
     endDate: null,
     focusedInput: null,
-    windowHeight: getWindowHeight(),
+    windowHeight: null,
     startDate: null,
   };
 
   componentDidMount = () => {
     moment.locale(this.props.localeCode);
+    this.handleHeightChange();
     global.addEventListener('resize', debounce(this.handleHeightChange, 150));
   };
 
