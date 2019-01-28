@@ -1,3 +1,13 @@
+## [1.117.1](https://github.com/lodgify/lodgify-ui/compare/v1.117.0...v1.117.1) (2019-01-28)
+
+
+### Bug Fixes
+
+* ***Picker:** add border radius and display inline-flex ([8436bd2](https://github.com/lodgify/lodgify-ui/commit/8436bd2))
+* ***Picker:** call handleHeightChange on mount to avoid buggy render behaviour ([4da3de8](https://github.com/lodgify/lodgify-ui/commit/4da3de8))
+* **Button:** give button same height as inputs ([d90b7e4](https://github.com/lodgify/lodgify-ui/commit/d90b7e4))
+* **Dropdown:** give dropdown same height as inputs ([901a0e2](https://github.com/lodgify/lodgify-ui/commit/901a0e2))
+
 # [1.117.0](https://github.com/lodgify/lodgify-ui/compare/v1.116.1...v1.117.0) (2019-01-28)
 
 
