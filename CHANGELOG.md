@@ -1,3 +1,11 @@
+## [1.118.1](https://github.com/lodgify/lodgify-ui/compare/v1.118.0...v1.118.1) (2019-01-28)
+
+
+### Bug Fixes
+
+* **getPrimaryCTAWidth:** multiply button text length by standard character width ([38b8d35](https://github.com/lodgify/lodgify-ui/commit/38b8d35))
+* **Header:** change standard character width and tolerance for max header width ([35dd138](https://github.com/lodgify/lodgify-ui/commit/35dd138))
+
 # [1.118.0](https://github.com/lodgify/lodgify-ui/compare/v1.117.1...v1.118.0) (2019-01-28)
 
 
