@@ -1,3 +1,10 @@
+## [1.118.3](https://github.com/lodgify/lodgify-ui/compare/v1.118.2...v1.118.3) (2019-01-28)
+
+
+### Bug Fixes
+
+* **Review:** consume Paragraph for review text ([ab487f2](https://github.com/lodgify/lodgify-ui/commit/ab487f2))
+
 ## [1.118.2](https://github.com/lodgify/lodgify-ui/compare/v1.118.1...v1.118.2) (2019-01-28)
 
 
