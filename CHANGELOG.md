@@ -1,3 +1,18 @@
+# [1.117.0](https://github.com/lodgify/lodgify-ui/compare/v1.116.1...v1.117.0) (2019-01-28)
+
+
+### Features
+
+* **menu.overrides:** implement Footer styles ([a072207](https://github.com/lodgify/lodgify-ui/commit/a072207))
+* **Viewport:** implement component ([84ddf60](https://github.com/lodgify/lodgify-ui/commit/84ddf60))
+
+## [1.116.1](https://github.com/lodgify/lodgify-ui/compare/v1.116.0...v1.116.1) (2019-01-25)
+
+
+### Bug Fixes
+
+* **Rates:** hide number of guests and cost per extra guest if values are null or undefined ([e3dad09](https://github.com/lodgify/lodgify-ui/commit/e3dad09))
+
 # [1.116.0](https://github.com/lodgify/lodgify-ui/compare/v1.115.2...v1.116.0) (2019-01-24)
 
 
