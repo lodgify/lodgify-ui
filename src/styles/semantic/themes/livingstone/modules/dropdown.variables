@@ -132,7 +132,12 @@
      Search
 --------------*/
 
+@submenuSearchInputHeight: @18px;
+@submenuSearchHeight: @23px;
+
 /* Search Selection */
+
+@dropdownSearchInputPaddingTop: @10px;
 
 /* Inline */
 
