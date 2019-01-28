@@ -138,7 +138,9 @@
 
 /* Primary */
 .ui.button.primary {
+  background-color: @themeActionColorDefault;
   background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+  color: @themeActionContrastColorDefault;
   color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
 }
 
