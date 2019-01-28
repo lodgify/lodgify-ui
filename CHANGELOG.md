@@ -1,3 +1,11 @@
+## [1.118.2](https://github.com/lodgify/lodgify-ui/compare/v1.118.1...v1.118.2) (2019-01-28)
+
+
+### Bug Fixes
+
+* **Availability:** change default prop value and check on props.roomOptionsWithImages ([c63395d](https://github.com/lodgify/lodgify-ui/commit/c63395d))
+* **CallMeBack:** hide property dropdown if no property options passed ([e075c08](https://github.com/lodgify/lodgify-ui/commit/e075c08))
+
 ## [1.118.1](https://github.com/lodgify/lodgify-ui/compare/v1.118.0...v1.118.1) (2019-01-28)
 
 
