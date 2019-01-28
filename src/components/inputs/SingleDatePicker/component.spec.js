@@ -38,19 +38,31 @@ describe('<SingleDatePicker />', () => {
     expectComponentToBe(wrapper, InputController);
   });
 
-  it('should bind handleHeightChange to global resize event after the component is mounted', () => {
-    global.addEventListener = jest.fn();
-    const wrapper = getSingleDatePicker();
+  describe('on mount', () => {
+    it('should call `this.handleHeightChange`', () => {
+      const wrapper = getSingleDatePicker();
 
-    const DEBOUNCE_CONFIRMATION = 'I got debounced';
+      wrapper.instance().handleHeightChange = jest.fn();
+      wrapper.update();
+      wrapper.instance().componentDidMount();
 
-    debounce.mockReturnValue(DEBOUNCE_CONFIRMATION);
+      expect(wrapper.instance().handleHeightChange).toHaveBeenCalled();
+    });
 
-    wrapper.instance().componentDidMount();
-    expect(global.addEventListener).toHaveBeenCalledWith(
-      'resize',
-      DEBOUNCE_CONFIRMATION
-    );
+    it('should bind handleHeightChange to global resize event', () => {
+      global.addEventListener = jest.fn();
+      const wrapper = getSingleDatePicker();
+
+      const DEBOUNCE_CONFIRMATION = 'I got debounced';
+
+      debounce.mockReturnValue(DEBOUNCE_CONFIRMATION);
+
+      wrapper.instance().componentDidMount();
+      expect(global.addEventListener).toHaveBeenCalledWith(
+        'resize',
+        DEBOUNCE_CONFIRMATION
+      );
+    });
   });
 
   describe('the `addEventListener` method', () => {
