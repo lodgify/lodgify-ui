@@ -25,12 +25,14 @@ import { getRoomTypeDropdownMarkup } from './utils/getRoomTypeDropdownMarkup';
 export const Component = ({
   costPerExtraGuestLabel,
   currencyOptions,
+  currencyValue,
   onChangeCurrency,
   onChangeRoomType,
   rateCategories,
   rateHeadings,
   roomTypeInputLabel,
   roomTypes,
+  roomTypesValue,
 }) => (
   <Fragment>
     <Grid padded>
@@ -38,12 +40,17 @@ export const Component = ({
         getRoomTypeDropdownMarkup(
           roomTypes,
           onChangeRoomType,
-          roomTypeInputLabel
+          roomTypeInputLabel,
+          roomTypesValue
         )}
       <ShowOn mobile>
         <Grid>
           <GridColumn>
-            <Dropdown onChange={onChangeCurrency} options={currencyOptions} />
+            <Dropdown
+              currentValue={currencyValue}
+              onChange={onChangeCurrency}
+              options={currencyOptions}
+            />
             {rateCategories.map((rateCategory, rateCategoryIndex) => (
               <Card
                 fluid
@@ -81,7 +88,11 @@ export const Component = ({
           ...rateCategory.rates,
         ])}
         tableHeadings={[
-          <Dropdown onChange={onChangeCurrency} options={currencyOptions} />,
+          <Dropdown
+            currentValue={currencyValue}
+            onChange={onChangeCurrency}
+            options={currencyOptions}
+          />,
           ...rateHeadings,
         ]}
       />
@@ -91,10 +102,12 @@ export const Component = ({
 
 Component.defaultProps = {
   costPerExtraGuestLabel: PRICE_PER_EXTRA_PER,
+  currencyValue: undefined,
   onChangeCurrency: Function.prototype,
   onChangeRoomType: Function.prototype,
   roomTypeInputLabel: VIEW_RATE_INFORMATION_FOR,
   roomTypes: null,
+  roomTypesValue: undefined,
 };
 
 Component.displayName = 'Rates';
@@ -115,6 +128,12 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The current value of the currency dropdown. */
+  currencyValue: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   /** A function called when the currency type value changes. */
   onChangeCurrency: PropTypes.func,
   /** A function called when the room type value changes. */
@@ -157,4 +176,10 @@ Component.propTypes = {
       ]),
     })
   ),
+  /** The current value of the room type dropdown. */
+  roomTypesValue: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
 };

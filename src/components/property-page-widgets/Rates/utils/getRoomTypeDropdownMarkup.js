@@ -7,15 +7,17 @@ import { Paragraph } from 'typography/Paragraph';
 
 import { getStringWithColonSuffix } from './getStringWithColonSuffix';
 /**
- * @param {Object[]} options
- * @param {Function} onChange
- * @param {string}   roomTypeInputLabel
+ * @param  {Object[]} options
+ * @param  {Function} onChange
+ * @param  {string}   roomTypeInputLabel
+ * @param  {string|boolean|number} roomTypesValue
  * @return {Object}
  */
 export const getRoomTypeDropdownMarkup = (
   options,
   onChange,
-  roomTypeInputLabel
+  roomTypeInputLabel,
+  roomTypesValue
 ) => (
   <GridRow verticalAlign="middle">
     <GridColumn computer={4} mobile={12}>
@@ -24,7 +26,11 @@ export const getRoomTypeDropdownMarkup = (
       </Paragraph>
     </GridColumn>
     <GridColumn computer={4} mobile={12}>
-      <Dropdown onChange={onChange} options={options} />
+      <Dropdown
+        currentValue={roomTypesValue}
+        onChange={onChange}
+        options={options}
+      />
     </GridColumn>
   </GridRow>
 );
