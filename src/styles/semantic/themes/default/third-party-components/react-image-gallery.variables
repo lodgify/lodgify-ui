@@ -15,7 +15,6 @@
 @imageGalleryButtonTopPosition: ~"calc(50% - @{imageGalleryButtonHeightOffset})";
 @imageGalleryButtonDiameter: @35px;
 @imageGalleryButtonBackground: @greyFive;
-@imageGalleryButtonActiveBackground: var(@themeActionColorIdentifier, @themeActionColorDefault);
 @imageGalleryButtonHorizontalMargin: @8px;
 
 @imageGalleryBulletsBottomPosition: -(@20px);

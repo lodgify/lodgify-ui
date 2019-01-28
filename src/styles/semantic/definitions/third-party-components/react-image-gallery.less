@@ -59,7 +59,8 @@
         margin: 0 0 0 @imageGalleryButtonHorizontalMargin;
 
         &.active {
-          background-color: @imageGalleryButtonActiveBackground;
+          background-color: @themeActionColorDefault;
+          background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
         }
       }
     }
