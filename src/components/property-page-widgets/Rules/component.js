@@ -7,12 +7,10 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { HOUSE_RULES } from 'utils/default-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
-import { Divider } from 'elements/Divider';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
-import { Icon, ICON_NAMES } from 'elements/Icon';
 
-import { getLabelAndValueString } from './utils/getLabelAndValueString';
+import { getCheckInAndCheckOutMarkup } from './utils/getCheckInAndCheckOutMarkup';
 
 /**
  * The standard widget for displaying the rules of a property.
@@ -39,17 +37,12 @@ export const Component = ({
         />
       </GridColumn>
     )}
-    <GridColumn computer={9} tablet={7}>
-      <Icon
-        labelText={getLabelAndValueString(checkInTimeLabel, checkInTime)}
-        name={ICON_NAMES.CHECK_IN}
-      />
-      <Divider />
-      <Icon
-        labelText={getLabelAndValueString(checkOutTimeLabel, checkOutTime)}
-        name={ICON_NAMES.CHECK_OUT}
-      />
-    </GridColumn>
+    {getCheckInAndCheckOutMarkup(
+      checkInTimeLabel,
+      checkInTime,
+      checkOutTimeLabel,
+      checkOutTime
+    )}
   </Grid>
 );
 

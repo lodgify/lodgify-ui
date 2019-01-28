@@ -590,7 +590,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                               displayFormat="DD/MM/YYYY"
                                                               enableOutsideDays={false}
                                                               endDate={null}
-                                                              endDateId="end_date_id_1"
+                                                              endDateId="end_date_id_3"
                                                               endDatePlaceholderText="Check-out"
                                                               firstDayOfWeek={null}
                                                               focusedInput={null}
@@ -694,7 +694,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                               showDefaultInputIcon={false}
                                                               small={false}
                                                               startDate={null}
-                                                              startDateId="start_date_id_2"
+                                                              startDateId="start_date_id_4"
                                                               startDatePlaceholderText="Check-in"
                                                               verticalHeight={null}
                                                               verticalSpacing={22}
@@ -747,7 +747,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                 displayFormat="DD/MM/YYYY"
                                                                 enableOutsideDays={false}
                                                                 endDate={null}
-                                                                endDateId="end_date_id_1"
+                                                                endDateId="end_date_id_3"
                                                                 endDatePlaceholderText="Check-out"
                                                                 firstDayOfWeek={null}
                                                                 focusedInput={null}
@@ -850,7 +850,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                 showDefaultInputIcon={false}
                                                                 small={false}
                                                                 startDate={null}
-                                                                startDateId="start_date_id_2"
+                                                                startDateId="start_date_id_4"
                                                                 startDatePlaceholderText="Check-in"
                                                                 styles={
                                                                   Object {
@@ -1089,7 +1089,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                     disabled={false}
                                                                     displayFormat="DD/MM/YYYY"
                                                                     endDate={null}
-                                                                    endDateId="end_date_id_1"
+                                                                    endDateId="end_date_id_3"
                                                                     endDatePlaceholderText="Check-out"
                                                                     inputIconPosition="before"
                                                                     isEndDateFocused={false}
@@ -1149,7 +1149,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                     showDefaultInputIcon={false}
                                                                     small={false}
                                                                     startDate={null}
-                                                                    startDateId="start_date_id_2"
+                                                                    startDateId="start_date_id_4"
                                                                     startDatePlaceholderText="Check-in"
                                                                     verticalSpacing={22}
                                                                     withFullScreenPortal={false}
@@ -1191,7 +1191,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                       }
                                                                       disabled={false}
                                                                       endDate={null}
-                                                                      endDateId="end_date_id_1"
+                                                                      endDateId="end_date_id_3"
                                                                       endDatePlaceholderText="Check-out"
                                                                       inputIconPosition="before"
                                                                       isEndDateFocused={false}
@@ -1251,7 +1251,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                       showDefaultInputIcon={false}
                                                                       small={false}
                                                                       startDate={null}
-                                                                      startDateId="start_date_id_2"
+                                                                      startDateId="start_date_id_4"
                                                                       startDatePlaceholderText="Check-in"
                                                                       verticalSpacing={22}
                                                                     >
@@ -1293,7 +1293,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                         }
                                                                         disabled={false}
                                                                         endDate={null}
-                                                                        endDateId="end_date_id_1"
+                                                                        endDateId="end_date_id_3"
                                                                         endDatePlaceholderText="Check-out"
                                                                         inputIconPosition="before"
                                                                         isEndDateFocused={false}
@@ -1353,7 +1353,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                         showDefaultInputIcon={false}
                                                                         small={false}
                                                                         startDate={null}
-                                                                        startDateId="start_date_id_2"
+                                                                        startDateId="start_date_id_4"
                                                                         startDatePlaceholderText="Check-in"
                                                                         styles={
                                                                           Object {
@@ -1596,7 +1596,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                             disabled={false}
                                                                             displayValue={null}
                                                                             focused={false}
-                                                                            id="start_date_id_2"
+                                                                            id="start_date_id_4"
                                                                             isFocused={false}
                                                                             onChange={[Function]}
                                                                             onFocus={[Function]}
@@ -1621,7 +1621,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                               disabled={false}
                                                                               displayValue={null}
                                                                               focused={false}
-                                                                              id="start_date_id_2"
+                                                                              id="start_date_id_4"
                                                                               isFocused={false}
                                                                               onChange={[Function]}
                                                                               onFocus={[Function]}
@@ -1838,13 +1838,13 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                                 className="DateInput DateInput_1"
                                                                               >
                                                                                 <input
-                                                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_2"
+                                                                                  aria-describedby="DateInput__screen-reader-message-start_date_id_4"
                                                                                   aria-label="Check-in"
                                                                                   autoComplete="off"
                                                                                   className="DateInput_input DateInput_input_1"
                                                                                   disabled={false}
-                                                                                  id="start_date_id_2"
-                                                                                  name="start_date_id_2"
+                                                                                  id="start_date_id_4"
+                                                                                  name="start_date_id_4"
                                                                                   onChange={[Function]}
                                                                                   onFocus={[Function]}
                                                                                   onKeyDown={[Function]}
@@ -1856,7 +1856,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                                 />
                                                                                 <p
                                                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                                                  id="DateInput__screen-reader-message-start_date_id_2"
+                                                                                  id="DateInput__screen-reader-message-start_date_id_4"
                                                                                 >
                                                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
@@ -1902,7 +1902,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                             disabled={false}
                                                                             displayValue={null}
                                                                             focused={false}
-                                                                            id="end_date_id_1"
+                                                                            id="end_date_id_3"
                                                                             isFocused={false}
                                                                             onChange={[Function]}
                                                                             onFocus={[Function]}
@@ -1927,7 +1927,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                               disabled={false}
                                                                               displayValue={null}
                                                                               focused={false}
-                                                                              id="end_date_id_1"
+                                                                              id="end_date_id_3"
                                                                               isFocused={false}
                                                                               onChange={[Function]}
                                                                               onFocus={[Function]}
@@ -2144,13 +2144,13 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                                 className="DateInput DateInput_1"
                                                                               >
                                                                                 <input
-                                                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_1"
+                                                                                  aria-describedby="DateInput__screen-reader-message-end_date_id_3"
                                                                                   aria-label="Check-out"
                                                                                   autoComplete="off"
                                                                                   className="DateInput_input DateInput_input_1"
                                                                                   disabled={false}
-                                                                                  id="end_date_id_1"
-                                                                                  name="end_date_id_1"
+                                                                                  id="end_date_id_3"
+                                                                                  name="end_date_id_3"
                                                                                   onChange={[Function]}
                                                                                   onFocus={[Function]}
                                                                                   onKeyDown={[Function]}
@@ -2162,7 +2162,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                                                 />
                                                                                 <p
                                                                                   className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
-                                                                                  id="DateInput__screen-reader-message-end_date_id_1"
+                                                                                  id="DateInput__screen-reader-message-end_date_id_3"
                                                                                 >
                                                                                   Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
