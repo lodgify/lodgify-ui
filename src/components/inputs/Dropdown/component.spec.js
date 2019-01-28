@@ -9,6 +9,7 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
+import { NO_RESULTS } from 'utils/default-strings';
 
 import { ErrorMessage } from '../ErrorMessage';
 
@@ -110,11 +111,13 @@ describe('<Dropdown />', () => {
       expectComponentToHaveProps(wrapper, {
         defaultValue: null,
         icon: <Icon name={ICON_NAMES.CARET_DOWN} />,
+        noResultsMessage: NO_RESULTS,
         onBlur: expect.any(Function),
         onChange: expect.any(Function),
         onClick: expect.any(Function),
         open: false,
         options: expect.any(Array),
+        search: false,
         selection: true,
       });
     });

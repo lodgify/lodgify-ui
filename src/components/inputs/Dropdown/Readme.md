@@ -78,28 +78,28 @@ Options can contain images
 ```jsx
 const { optionsWithImages } = require('./mock-data/options');
 // [
-//  { 
+//  {
 //    text: 'La Casa Viva', value: 'casaViva',
 //    imageUrl: '/path/to/image.png',
-//    imageSrcSet: '/path/to/image.png?w=20 20w', 
+//    imageSrcSet: '/path/to/image.png?w=20 20w',
 //    imageSizes: '(max-width: 320px) 20px'
 //  },
-//  { 
+//  {
 //    text: 'La Casa Muerta', value: 'casaMuerta',
 //    imageUrl: '/path/to/image.png',
-//    imageSrcSet: '/path/to/image.png?w=20 20w', 
+//    imageSrcSet: '/path/to/image.png?w=20 20w',
 //    imageSizes: '(max-width: 320px) 20px'
 //  },
-//  { 
+//  {
 //    text: 'The White Lodge', value: 'whiteLodge',
 //    imageUrl: '/path/to/image.png',
-//    imageSrcSet: '/path/to/image.png?w=20 20w', 
+//    imageSrcSet: '/path/to/image.png?w=20 20w',
 //    imageSizes: '(max-width: 320px) 20px'
 //  },
-//  { 
+//  {
 //    text: 'The Black Lodge', value: 'blackLodge',
 //    imageUrl: '/path/to/image.png',
-//    imageSrcSet: '/path/to/image.png?w=20 20w', 
+//    imageSrcSet: '/path/to/image.png?w=20 20w',
 //    imageSizes: '(max-width: 320px) 20px'
 //  },
 // ];
@@ -121,4 +121,17 @@ const { indentedOptions } = require('./mock-data/options');
 // ];
 
 <Dropdown label="Properties" options={indentedOptions} />;
+```
+
+#### Searchable
+
+```jsx
+const { options } = require('./mock-data/options');
+
+<Dropdown
+  isSearchable
+  label="Location"
+  noResultsText="Nothing found"
+  options={options}
+/>;
 ```
