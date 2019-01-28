@@ -21,6 +21,7 @@ import { getMenuItemMarkup } from './utils/getMenuItemMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   copyrightText,
+  currencyNoResultsText,
   currencyOptions,
   currencyValue,
   languageOptions,
@@ -64,8 +65,10 @@ export const Component = ({
         </Menu.Item>
         <Menu.Item>
           <Submenu
+            isSearchable
             items={currencyOptions}
             name="currency"
+            noResultsText={currencyNoResultsText}
             onChange={onChangeCurrency}
             value={currencyValue}
             willOpenAbove
@@ -107,6 +110,7 @@ Component.displayName = 'Footer';
 
 Component.defaultProps = {
   copyrightText: null,
+  currencyNoResultsText: undefined,
   currencyValue: null,
   languageValue: null,
   socialMediaLinks: [],
@@ -115,6 +119,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The text to display as a copyright notice */
   copyrightText: PropTypes.string,
+  /** The text to display when no results are returned from the currency dropdown. */
+  currencyNoResultsText: PropTypes.string,
   /** The options which the user can select for the currency dropdown. */
   currencyOptions: PropTypes.arrayOf(
     PropTypes.shape({
