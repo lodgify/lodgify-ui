@@ -136,6 +136,12 @@
 
 /* Animated */
 
+/* Primary */
+.ui.button.primary {
+  background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+  color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+}
+
 /* Secondary */
 .ui.button.secondary {
   color: @secondaryTextColor;
