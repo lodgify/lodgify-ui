@@ -6,6 +6,6 @@ describe('`getNavigationItemsTextLength`', () => {
   it('should return the number of pixels corresponding to the length of the navigation items including margins', () => {
     const actual = getNavigationItemsWidth(navigationItems);
 
-    expect(actual).toBe(386);
+    expect(actual).toBe(424);
   });
 });
