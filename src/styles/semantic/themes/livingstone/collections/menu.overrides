@@ -223,6 +223,10 @@
 .ui.inverted.menu {
   background-color: @invertedBottomBackground;
 
+  input.search {
+    color: @invertedBottomMenuColor;
+  }
+
   /* Inverted Sub Menu */
 
   .right.menu {

@@ -280,42 +280,74 @@
       }
     }
   }
+}
 
-  /*--------------
-      Search
-  --------------*/
+/*--------------
+    Search
+--------------*/
 
-  /* Search Selection */
+.ui.search.dropdown {
 
-  /* Inline */
+  > input.search {
+    font-family: @fontName;
+  }
+}
 
-  /*--------------
-      Multiple
-  --------------*/
+.ui.search.dropdown:not(.selection) {
+  height: @submenuSearchHeight;
 
-  /* Split Actual Padding Between Child and Parent (allows for label spacing) */
+  > input.search {
+    font-family: @fontName;
+  }
 
-  /* Child Elements */
+  > input.search,
+  > div.text {
+    height: @submenuSearchInputHeight;
+    line-height: @submenuSearchInputHeight;
+  }
+}
 
-  /* Dropdown Icon */
+/* Search Selection */
 
-  /* Selection Label */
+.ui.search.selection.dropdown {
 
-  /*-------------------
-        States
+  > input.search {
+    padding-top: @dropdownSearchInputPaddingTop;
+  }
+}
+
+/* Inline */
+
+/*--------------
+    Multiple
+--------------*/
+
+/* Split Actual Padding Between Child and Parent (allows for label spacing) */
+
+/* Child Elements */
+
+/* Dropdown Icon */
+
+/* Selection Label */
+
+/*-------------------
+      States
 --------------------*/
 
-  /* Hovered */
+/* Hovered */
 
-  /* Default Text */
+/* Default Text */
 
-  /* Loading */
+/* Loading */
 
-  /* Active Menu Item */
+/* Active Menu Item */
 
-  /* Selected */
+/* Selected */
 
-  /* Error */
+/* Error */
+// stylelint-disable-next-line no-duplicate-selectors
+.dropdown-container {
+
   &.error {
 
     .ui.selection.dropdown {
