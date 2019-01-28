@@ -118,9 +118,11 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           error={false}
                           icon={null}
                           isDisabled={false}
+                          isSearchable={true}
                           isValid={false}
                           label=""
                           name=""
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -168,7 +170,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -191,6 +193,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={true}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
@@ -201,15 +204,42 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               <div
                                 aria-disabled={false}
                                 aria-expanded={false}
-                                className="ui selection dropdown"
+                                className="ui search selection dropdown"
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onClick={[Function]}
                                 onFocus={[Function]}
                                 onMouseDown={[Function]}
-                                role="listbox"
-                                tabIndex={0}
+                                role="combobox"
                               >
+                                <DropdownSearchInput
+                                  inputRef={[Function]}
+                                  key="text"
+                                  onChange={[Function]}
+                                  style={
+                                    Object {
+                                      "width": undefined,
+                                    }
+                                  }
+                                  tabIndex={0}
+                                  type="text"
+                                  value=""
+                                >
+                                  <input
+                                    aria-autocomplete="list"
+                                    autoComplete="off"
+                                    className="search"
+                                    onChange={[Function]}
+                                    style={
+                                      Object {
+                                        "width": undefined,
+                                      }
+                                    }
+                                    tabIndex={0}
+                                    type="text"
+                                    value=""
+                                  />
+                                </DropdownSearchInput>
                                 <div
                                   aria-live="polite"
                                   className="text"
@@ -248,9 +278,11 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 </Icon>
                                 <DropdownMenu
                                   open={false}
+                                  role="listbox"
                                 >
                                   <div
                                     className="menu transition"
+                                    role="listbox"
                                   >
                                     <DropdownItem
                                       active={true}
@@ -1557,9 +1589,11 @@ exports[`<Rates /> by default should have the right structure 1`] = `
               error={false}
               icon={null}
               isDisabled={false}
+              isSearchable={true}
               isValid={false}
               label=""
               name=""
+              noResultsText="No results"
               onBlur={[Function]}
               onChange={[Function]}
               options={
@@ -1627,9 +1661,11 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                             error={false}
                             icon={null}
                             isDisabled={false}
+                            isSearchable={true}
                             isValid={false}
                             label=""
                             name=""
+                            noResultsText="No results"
                             onBlur={[Function]}
                             onChange={[Function]}
                             options={
@@ -1677,7 +1713,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                   />
                                 }
                                 minCharacters={1}
-                                noResultsMessage="No results found."
+                                noResultsMessage="No results"
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onClick={[Function]}
@@ -1700,6 +1736,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                   ]
                                 }
                                 renderLabel={[Function]}
+                                search={true}
                                 searchInput="text"
                                 selectOnBlur={true}
                                 selectOnNavigation={true}
@@ -1710,15 +1747,42 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 <div
                                   aria-disabled={false}
                                   aria-expanded={false}
-                                  className="ui selection dropdown"
+                                  className="ui search selection dropdown"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onClick={[Function]}
                                   onFocus={[Function]}
                                   onMouseDown={[Function]}
-                                  role="listbox"
-                                  tabIndex={0}
+                                  role="combobox"
                                 >
+                                  <DropdownSearchInput
+                                    inputRef={[Function]}
+                                    key="text"
+                                    onChange={[Function]}
+                                    style={
+                                      Object {
+                                        "width": undefined,
+                                      }
+                                    }
+                                    tabIndex={0}
+                                    type="text"
+                                    value=""
+                                  >
+                                    <input
+                                      aria-autocomplete="list"
+                                      autoComplete="off"
+                                      className="search"
+                                      onChange={[Function]}
+                                      style={
+                                        Object {
+                                          "width": undefined,
+                                        }
+                                      }
+                                      tabIndex={0}
+                                      type="text"
+                                      value=""
+                                    />
+                                  </DropdownSearchInput>
                                   <div
                                     aria-live="polite"
                                     className="text"
@@ -1757,9 +1821,11 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                   </Icon>
                                   <DropdownMenu
                                     open={false}
+                                    role="listbox"
                                   >
                                     <div
                                       className="menu transition"
+                                      role="listbox"
                                     >
                                       <DropdownItem
                                         active={true}
@@ -2472,9 +2538,11 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                       error={false}
                       icon={null}
                       isDisabled={false}
+                      isSearchable={false}
                       isValid={false}
                       label=""
                       name=""
+                      noResultsText="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       options={
@@ -2530,7 +2598,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             />
                           }
                           minCharacters={1}
-                          noResultsMessage="No results found."
+                          noResultsMessage="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           onClick={[Function]}
@@ -2601,6 +2669,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             ]
                           }
                           renderLabel={[Function]}
+                          search={false}
                           searchInput="text"
                           selectOnBlur={true}
                           selectOnNavigation={true}
@@ -2944,9 +3013,11 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           error={false}
                           icon={null}
                           isDisabled={false}
+                          isSearchable={true}
                           isValid={false}
                           label=""
                           name=""
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -2994,7 +3065,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -3017,6 +3088,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={true}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
@@ -3027,15 +3099,42 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               <div
                                 aria-disabled={false}
                                 aria-expanded={false}
-                                className="ui selection dropdown"
+                                className="ui search selection dropdown"
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onClick={[Function]}
                                 onFocus={[Function]}
                                 onMouseDown={[Function]}
-                                role="listbox"
-                                tabIndex={0}
+                                role="combobox"
                               >
+                                <DropdownSearchInput
+                                  inputRef={[Function]}
+                                  key="text"
+                                  onChange={[Function]}
+                                  style={
+                                    Object {
+                                      "width": undefined,
+                                    }
+                                  }
+                                  tabIndex={0}
+                                  type="text"
+                                  value=""
+                                >
+                                  <input
+                                    aria-autocomplete="list"
+                                    autoComplete="off"
+                                    className="search"
+                                    onChange={[Function]}
+                                    style={
+                                      Object {
+                                        "width": undefined,
+                                      }
+                                    }
+                                    tabIndex={0}
+                                    type="text"
+                                    value=""
+                                  />
+                                </DropdownSearchInput>
                                 <div
                                   aria-live="polite"
                                   className="text"
@@ -3074,9 +3173,11 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 </Icon>
                                 <DropdownMenu
                                   open={false}
+                                  role="listbox"
                                 >
                                   <div
                                     className="menu transition"
+                                    role="listbox"
                                   >
                                     <DropdownItem
                                       active={true}
@@ -4383,9 +4484,11 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
               error={false}
               icon={null}
               isDisabled={false}
+              isSearchable={true}
               isValid={false}
               label=""
               name=""
+              noResultsText="No results"
               onBlur={[Function]}
               onChange={[Function]}
               options={
@@ -4453,9 +4556,11 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             error={false}
                             icon={null}
                             isDisabled={false}
+                            isSearchable={true}
                             isValid={false}
                             label=""
                             name=""
+                            noResultsText="No results"
                             onBlur={[Function]}
                             onChange={[Function]}
                             options={
@@ -4503,7 +4608,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                   />
                                 }
                                 minCharacters={1}
-                                noResultsMessage="No results found."
+                                noResultsMessage="No results"
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onClick={[Function]}
@@ -4526,6 +4631,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                   ]
                                 }
                                 renderLabel={[Function]}
+                                search={true}
                                 searchInput="text"
                                 selectOnBlur={true}
                                 selectOnNavigation={true}
@@ -4536,15 +4642,42 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 <div
                                   aria-disabled={false}
                                   aria-expanded={false}
-                                  className="ui selection dropdown"
+                                  className="ui search selection dropdown"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onClick={[Function]}
                                   onFocus={[Function]}
                                   onMouseDown={[Function]}
-                                  role="listbox"
-                                  tabIndex={0}
+                                  role="combobox"
                                 >
+                                  <DropdownSearchInput
+                                    inputRef={[Function]}
+                                    key="text"
+                                    onChange={[Function]}
+                                    style={
+                                      Object {
+                                        "width": undefined,
+                                      }
+                                    }
+                                    tabIndex={0}
+                                    type="text"
+                                    value=""
+                                  >
+                                    <input
+                                      aria-autocomplete="list"
+                                      autoComplete="off"
+                                      className="search"
+                                      onChange={[Function]}
+                                      style={
+                                        Object {
+                                          "width": undefined,
+                                        }
+                                      }
+                                      tabIndex={0}
+                                      type="text"
+                                      value=""
+                                    />
+                                  </DropdownSearchInput>
                                   <div
                                     aria-live="polite"
                                     className="text"
@@ -4583,9 +4716,11 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                   </Icon>
                                   <DropdownMenu
                                     open={false}
+                                    role="listbox"
                                   >
                                     <div
                                       className="menu transition"
+                                      role="listbox"
                                     >
                                       <DropdownItem
                                         active={true}
