@@ -37,6 +37,7 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
         </MenuItem>
         <Submenu
           isMenuItem={true}
+          isSearchable={false}
           isSimple={true}
           isTriggerUnderlined={true}
           isTriggeredOnHover={true}
@@ -62,6 +63,7 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
           }
           key="All properties1"
           name={null}
+          noResultsText="No results"
           onChange={[Function]}
           pointing="top left"
           value={null}
@@ -92,7 +94,7 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
             item={true}
             minCharacters={1}
             name={null}
-            noResultsMessage="No results found."
+            noResultsMessage="No results"
             onChange={[Function]}
             openOnFocus={true}
             options={
@@ -122,6 +124,7 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
             pointing="top left"
             renderLabel={[Function]}
             scrolling={true}
+            search={false}
             searchInput="text"
             selectOnBlur={true}
             selectOnNavigation={true}
@@ -389,6 +392,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
         </MenuItem>
         <Submenu
           isMenuItem={true}
+          isSearchable={false}
           isSimple={true}
           isTriggerUnderlined={true}
           isTriggeredOnHover={true}
@@ -414,6 +418,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
           }
           key="All properties1"
           name={null}
+          noResultsText="No results"
           onChange={[Function]}
           pointing="top left"
           value={null}
@@ -444,7 +449,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
             item={true}
             minCharacters={1}
             name={null}
-            noResultsMessage="No results found."
+            noResultsMessage="No results"
             onChange={[Function]}
             openOnFocus={true}
             options={
@@ -474,6 +479,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
             pointing="top left"
             renderLabel={[Function]}
             scrolling={true}
+            search={false}
             searchInput="text"
             selectOnBlur={true}
             selectOnNavigation={true}

@@ -402,9 +402,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   error={false}
                                                   icon="map pin"
                                                   isDisabled={false}
+                                                  isSearchable={false}
                                                   isValid={false}
                                                   label="Location"
                                                   name="location"
+                                                  noResultsText="No results"
                                                   onBlur={[Function]}
                                                   onChange={[Function]}
                                                   options={
@@ -437,9 +439,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   error={false}
                                                   icon="users"
                                                   isDisabled={false}
+                                                  isSearchable={false}
                                                   isValid={false}
                                                   label="Guests"
                                                   name="guests"
+                                                  noResultsText="No results"
                                                   onBlur={[Function]}
                                                   onChange={[Function]}
                                                   options={
@@ -1045,9 +1049,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     error={false}
                                                     icon="map pin"
                                                     isDisabled={false}
+                                                    isSearchable={false}
                                                     isValid={false}
                                                     label="Location"
                                                     name="location"
+                                                    noResultsText="No results"
                                                     onBlur={[Function]}
                                                     onChange={[Function]}
                                                     options={
@@ -1114,7 +1120,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           />
                                                         }
                                                         minCharacters={1}
-                                                        noResultsMessage="No results found."
+                                                        noResultsMessage="No results"
                                                         onBlur={[Function]}
                                                         onChange={[Function]}
                                                         onClick={[Function]}
@@ -1129,6 +1135,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           ]
                                                         }
                                                         renderLabel={[Function]}
+                                                        search={false}
                                                         searchInput="text"
                                                         selectOnBlur={true}
                                                         selectOnNavigation={true}
@@ -2943,9 +2950,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     error={false}
                                                     icon="users"
                                                     isDisabled={false}
+                                                    isSearchable={false}
                                                     isValid={false}
                                                     label="Guests"
                                                     name="guests"
+                                                    noResultsText="No results"
                                                     onBlur={[Function]}
                                                     onChange={[Function]}
                                                     options={
@@ -3012,7 +3021,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           />
                                                         }
                                                         minCharacters={1}
-                                                        noResultsMessage="No results found."
+                                                        noResultsMessage="No results"
                                                         onBlur={[Function]}
                                                         onChange={[Function]}
                                                         onClick={[Function]}
@@ -3027,6 +3036,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           ]
                                                         }
                                                         renderLabel={[Function]}
+                                                        search={false}
                                                         searchInput="text"
                                                         selectOnBlur={true}
                                                         selectOnNavigation={true}

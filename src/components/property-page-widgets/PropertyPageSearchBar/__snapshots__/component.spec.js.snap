@@ -2195,9 +2195,11 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   error={false}
                                                   icon="users"
                                                   isDisabled={false}
+                                                  isSearchable={false}
                                                   isValid={false}
                                                   label="Guests"
                                                   name="guests"
+                                                  noResultsText="No results"
                                                   onBlur={[Function]}
                                                   onChange={[Function]}
                                                   options={
@@ -2276,7 +2278,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                         />
                                                       }
                                                       minCharacters={1}
-                                                      noResultsMessage="No results found."
+                                                      noResultsMessage="No results"
                                                       onBlur={[Function]}
                                                       onChange={[Function]}
                                                       onClick={[Function]}
@@ -2303,6 +2305,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                         ]
                                                       }
                                                       renderLabel={[Function]}
+                                                      search={false}
                                                       searchInput="text"
                                                       selectOnBlur={true}
                                                       selectOnNavigation={true}
@@ -3001,9 +3004,11 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     error={false}
                                                     icon="users"
                                                     isDisabled={false}
+                                                    isSearchable={false}
                                                     isValid={false}
                                                     label="Guests"
                                                     name="guests"
+                                                    noResultsText="No results"
                                                     onBlur={[Function]}
                                                     onChange={[Function]}
                                                     options={

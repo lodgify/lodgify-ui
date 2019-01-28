@@ -2170,9 +2170,11 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           error={false}
                           icon={null}
                           isDisabled={false}
+                          isSearchable={false}
                           isValid={false}
                           label="Property"
                           name="property"
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -2224,7 +2226,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -2251,6 +2253,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={false}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
@@ -2465,9 +2468,11 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           error={false}
                           icon={null}
                           isDisabled={false}
+                          isSearchable={false}
                           isValid={false}
                           label="Room"
                           name="room"
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -2515,7 +2520,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -2538,6 +2543,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={false}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
@@ -7281,9 +7287,11 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           error={false}
                           icon={null}
                           isDisabled={false}
+                          isSearchable={false}
                           isValid={false}
                           label="Property"
                           name="property"
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -7335,7 +7343,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -7362,6 +7370,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={false}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
@@ -9857,9 +9866,11 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           error={false}
                           icon={null}
                           isDisabled={false}
+                          isSearchable={false}
                           isValid={false}
                           label="Room"
                           name="room"
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -9907,7 +9918,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -9930,6 +9941,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={false}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
