@@ -8,6 +8,7 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
+import { NO_RESULTS } from 'utils/default-strings';
 
 import { Component as Submenu } from './component';
 
@@ -34,14 +35,17 @@ describe('<Submenu />', () => {
 
       expectComponentToHaveProps(wrapper, {
         icon: <Icon name={ICON_NAMES.CARET_DOWN} size="small" />,
+        className: '',
         item: false,
         name: null,
+        noResultsMessage: NO_RESULTS,
         onChange: expect.any(Function),
+        search: false,
         simple: false,
-        className: '',
         options: expect.arrayContaining([expect.any(Object)]),
         pointing: 'top left',
         scrolling: true,
+        style: undefined,
         trigger: children,
         upward: false,
         value: null,

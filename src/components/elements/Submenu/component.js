@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
+import { NO_RESULTS } from 'utils/default-strings';
 
 import { adaptOnChange } from './utils/adaptOnChange';
 import { adaptOptions } from './utils/adaptOptions';
+import { getMinWidth } from './utils/getMinWidth';
 
 /**
  * A submenu displays grouped navigation items.
@@ -14,10 +16,12 @@ import { adaptOptions } from './utils/adaptOptions';
 export const Component = ({
   children,
   isMenuItem,
+  isSearchable,
   isTriggeredOnHover,
   isTriggerUnderlined,
   items,
   name,
+  noResultsText,
   onChange,
   pointing,
   value,
@@ -28,11 +32,14 @@ export const Component = ({
     icon={<Icon name={ICON_NAMES.CARET_DOWN} size="small" />}
     item={isMenuItem}
     name={name}
+    noResultsMessage={noResultsText}
     onChange={adaptOnChange(onChange, name)}
     options={adaptOptions(items)}
     pointing={pointing}
     scrolling
+    search={isSearchable}
     simple={isTriggeredOnHover}
+    style={getMinWidth(isSearchable, items)}
     trigger={children}
     upward={willOpenAbove}
     value={value}
@@ -44,9 +51,11 @@ Component.displayName = 'Submenu';
 Component.defaultProps = {
   children: null,
   isMenuItem: false,
+  isSearchable: false,
   isTriggeredOnHover: false,
   isTriggerUnderlined: false,
   name: null,
+  noResultsText: NO_RESULTS,
   onChange: Function.prototype,
   pointing: 'top left',
   value: null,
@@ -58,6 +67,8 @@ Component.propTypes = {
   children: PropTypes.node,
   /** Is it an item in a Semantic UI Menu.  */
   isMenuItem: PropTypes.bool,
+  /** Is the submenu searchable with keyboard input */
+  isSearchable: PropTypes.bool,
   /** Is the trigger underlined for emphasis.  */
   isTriggerUnderlined: PropTypes.bool,
   /** Is it triggered on hover rather than click.  */
@@ -79,6 +90,8 @@ Component.propTypes = {
   ).isRequired,
   /** The name of submenu, used when `props.onChange` is called. */
   name: PropTypes.string,
+  /** The text to display when no results are returned from a searchable submenu. */
+  noResultsText: PropTypes.string,
   /** A function called when the dropdown value changes. */
   onChange: PropTypes.func,
   /** The pointing direction of the dropdown */
