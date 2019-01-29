@@ -122,7 +122,32 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       onClick={[Function]}
                     >
                       <Modal
+<<<<<<< Updated upstream
+                        dimmer="inverted"
+                        hasMargin={false}
+                        isAlignedBottom={false}
+=======
+                        closeIcon={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                        hasRoundedCorners={false}
+>>>>>>> Stashed changes
                         isFullscreen={true}
+                        isJustifiedRight={false}
+                        isModalRounded={false}
                         onClose={[Function]}
                         size="tiny"
                         trigger={
@@ -143,6 +168,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}
@@ -825,7 +851,32 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       onClick={[Function]}
                     >
                       <Modal
+<<<<<<< Updated upstream
+                        dimmer="inverted"
+                        hasMargin={false}
+                        isAlignedBottom={false}
+=======
+                        closeIcon={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                        hasRoundedCorners={false}
+>>>>>>> Stashed changes
                         isFullscreen={true}
+                        isJustifiedRight={false}
+                        isModalRounded={false}
                         onClose={[Function]}
                         size="tiny"
                         trigger={
@@ -846,6 +897,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}
@@ -1528,7 +1580,32 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                       onClick={[Function]}
                     >
                       <Modal
+<<<<<<< Updated upstream
+                        dimmer="inverted"
+                        hasMargin={false}
+                        isAlignedBottom={false}
+=======
+                        closeIcon={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                        hasRoundedCorners={false}
+>>>>>>> Stashed changes
                         isFullscreen={true}
+                        isJustifiedRight={false}
+                        isModalRounded={false}
                         onClose={[Function]}
                         size="tiny"
                         trigger={
@@ -1549,6 +1626,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}

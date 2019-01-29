@@ -23,7 +23,32 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
     actionLink={
       Object {
         "text": <Modal
+<<<<<<< Updated upstream
+          dimmer="inverted"
+          hasMargin={false}
+          isAlignedBottom={false}
+=======
+          closeIcon={
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="close"
+              path={null}
+              size={null}
+            />
+          }
+          hasRoundedCorners={false}
+>>>>>>> Stashed changes
           isFullscreen={false}
+          isJustifiedRight={false}
+          isModalRounded={false}
           onClose={[Function]}
           size="tiny"
           trigger={
@@ -265,7 +290,32 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       target="_self"
                     >
                       <Modal
+<<<<<<< Updated upstream
+                        dimmer="inverted"
+                        hasMargin={false}
+                        isAlignedBottom={false}
+=======
+                        closeIcon={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                        hasRoundedCorners={false}
+>>>>>>> Stashed changes
                         isFullscreen={false}
+                        isJustifiedRight={false}
+                        isModalRounded={false}
                         onClose={[Function]}
                         size="tiny"
                         trigger={
@@ -275,6 +325,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}
@@ -429,7 +480,32 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
     actionLink={
       Object {
         "text": <Modal
+<<<<<<< Updated upstream
+          dimmer="inverted"
+          hasMargin={false}
+          isAlignedBottom={false}
+=======
+          closeIcon={
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="close"
+              path={null}
+              size={null}
+            />
+          }
+          hasRoundedCorners={false}
+>>>>>>> Stashed changes
           isFullscreen={false}
+          isJustifiedRight={false}
+          isModalRounded={false}
           onClose={[Function]}
           size="tiny"
           trigger={
@@ -671,7 +747,32 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       target="_self"
                     >
                       <Modal
+<<<<<<< Updated upstream
+                        dimmer="inverted"
+                        hasMargin={false}
+                        isAlignedBottom={false}
+=======
+                        closeIcon={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                        hasRoundedCorners={false}
+>>>>>>> Stashed changes
                         isFullscreen={false}
+                        isJustifiedRight={false}
+                        isModalRounded={false}
                         onClose={[Function]}
                         size="tiny"
                         trigger={
@@ -681,6 +782,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}
@@ -835,7 +937,32 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
     actionLink={
       Object {
         "text": <Modal
+<<<<<<< Updated upstream
+          dimmer="inverted"
+          hasMargin={false}
+          isAlignedBottom={false}
+=======
+          closeIcon={
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="close"
+              path={null}
+              size={null}
+            />
+          }
+          hasRoundedCorners={false}
+>>>>>>> Stashed changes
           isFullscreen={false}
+          isJustifiedRight={false}
+          isModalRounded={false}
           onClose={[Function]}
           size="tiny"
           trigger={
@@ -1057,7 +1184,32 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                       target="_self"
                     >
                       <Modal
+<<<<<<< Updated upstream
+                        dimmer="inverted"
+                        hasMargin={false}
+                        isAlignedBottom={false}
+=======
+                        closeIcon={
+                          <Icon
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                        hasRoundedCorners={false}
+>>>>>>> Stashed changes
                         isFullscreen={false}
+                        isJustifiedRight={false}
+                        isModalRounded={false}
                         onClose={[Function]}
                         size="tiny"
                         trigger={
@@ -1067,6 +1219,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}

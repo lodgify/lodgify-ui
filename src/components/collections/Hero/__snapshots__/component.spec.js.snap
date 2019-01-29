@@ -288,7 +288,32 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                 willDropdownsOpenAbove={false}
                               >
                                 <Modal
+<<<<<<< Updated upstream
+                                  dimmer="inverted"
+                                  hasMargin={false}
+                                  isAlignedBottom={false}
+=======
+                                  closeIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="close"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  hasRoundedCorners={false}
+>>>>>>> Stashed changes
                                   isFullscreen={true}
+                                  isJustifiedRight={false}
+                                  isModalRounded={false}
                                   onClose={[Function]}
                                   size="tiny"
                                   trigger={
@@ -309,6 +334,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                   }
                                 >
                                   <Modal
+                                    className=""
                                     closeIcon={
                                       <Icon
                                         color={null}
@@ -525,7 +551,32 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                               onClick={[Function]}
                             >
                               <Modal
+<<<<<<< Updated upstream
+                                dimmer="inverted"
+                                hasMargin={false}
+                                isAlignedBottom={false}
+=======
+                                closeIcon={
+                                  <Icon
+                                    color={null}
+                                    hasBorder={false}
+                                    isButton={false}
+                                    isCircular={false}
+                                    isColorInverted={false}
+                                    isDisabled={false}
+                                    isLabelLeft={false}
+                                    labelText={null}
+                                    labelWeight={null}
+                                    name="close"
+                                    path={null}
+                                    size={null}
+                                  />
+                                }
+                                hasRoundedCorners={false}
+>>>>>>> Stashed changes
                                 isFullscreen={true}
+                                isJustifiedRight={false}
+                                isModalRounded={false}
                                 onClose={[Function]}
                                 size="tiny"
                                 trigger={
@@ -546,6 +597,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                 }
                               >
                                 <Modal
+                                  className=""
                                   closeIcon={
                                     <Icon
                                       color={null}

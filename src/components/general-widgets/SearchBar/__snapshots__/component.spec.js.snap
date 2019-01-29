@@ -2598,12 +2598,18 @@ exports[`<SearchBar /> if \`isDisplayedAsModal === true\` should render the righ
   willDropdownsOpenAbove={false}
 >
   <Modal
+    dimmer="inverted"
+    hasMargin={false}
+    isAlignedBottom={false}
     isFullscreen={true}
+    isJustifiedRight={false}
+    isModalRounded={false}
     onClose={[Function]}
     size="tiny"
     trigger={<div />}
   >
     <Modal
+      className=""
       closeIcon={
         <Icon
           color={null}
@@ -2794,7 +2800,12 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
       className="right floated top aligned seven wide column"
     >
       <Modal
+        dimmer="inverted"
+        hasMargin={false}
+        isAlignedBottom={false}
         isFullscreen={true}
+        isJustifiedRight={false}
+        isModalRounded={false}
         onClose={[Function]}
         size="tiny"
         trigger={
@@ -2815,6 +2826,7 @@ exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right
         }
       >
         <Modal
+          className=""
           closeIcon={
             <Icon
               color={null}

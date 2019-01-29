@@ -626,7 +626,32 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                 >
                   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...
                   <Modal
+<<<<<<< Updated upstream
+                    dimmer="inverted"
+                    hasMargin={false}
+                    isAlignedBottom={false}
+=======
+                    closeIcon={
+                      <Icon
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="close"
+                        path={null}
+                        size={null}
+                      />
+                    }
+                    hasRoundedCorners={false}
+>>>>>>> Stashed changes
                     isFullscreen={false}
+                    isJustifiedRight={false}
+                    isModalRounded={false}
                     onClose={[Function]}
                     size="tiny"
                     trigger={
@@ -639,6 +664,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                     }
                   >
                     <Modal
+                      className=""
                       closeIcon={
                         <Icon
                           color={null}
