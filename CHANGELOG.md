@@ -1,3 +1,13 @@
+# [1.119.0](https://github.com/lodgify/lodgify-ui/compare/v1.118.3...v1.119.0) (2019-01-29)
+
+
+### Features
+
+* **Dropdown:** default value should consider current value as you can't pass both ([3551129](https://github.com/lodgify/lodgify-ui/commit/3551129))
+* **Dropdown:** expose currentValue ([7cba72e](https://github.com/lodgify/lodgify-ui/commit/7cba72e))
+* **isValueValid:** add util to check if value is a valid dropdown value ([d26d9b0](https://github.com/lodgify/lodgify-ui/commit/d26d9b0))
+* **Rates:** expose currencyValue prop and pass to dropdowns ([722ad5e](https://github.com/lodgify/lodgify-ui/commit/722ad5e))
+
 ## [1.118.3](https://github.com/lodgify/lodgify-ui/compare/v1.118.2...v1.118.3) (2019-01-28)
 
 
