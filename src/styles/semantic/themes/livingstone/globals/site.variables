@@ -475,3 +475,14 @@
 
 /* Must be defined in pixels for accuracy */
 @horizontalGutterLeftRightPadding: 40px;
+
+/*----------------------
+       Placeholder
+-----------------------*/
+
+@placeholderBackgroundColor: @greyTwo;
+@placeholderMaxWidth: 30rem;
+
+/* Block placeholder */
+@blockPlaceholderDefaultHeight: 100px;
+@blockPlaceholderRectanglePadding: 75%;

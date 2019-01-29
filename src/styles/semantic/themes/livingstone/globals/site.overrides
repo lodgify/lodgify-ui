@@ -547,3 +547,29 @@ blockquote.ui.quote .row {
     }
   }
 }
+
+/*----------------------
+       Placeholder
+-----------------------*/
+
+.placeholder {
+  background-color: @placeholderBackgroundColor;
+  max-width: @placeholderMaxWidth;
+
+  &.fluid {
+    max-width: none;
+  }
+}
+
+/* Block placeholder */
+.placeholder.block {
+  height: @blockPlaceholderDefaultHeight;
+
+  &.square {
+    padding-top: 100%;
+  }
+
+  &.rectangle {
+    padding-top: @blockPlaceholderRectanglePadding;
+  }
+}
