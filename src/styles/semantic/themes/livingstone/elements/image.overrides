@@ -91,16 +91,10 @@ figure.responsive-image {
   }
 
   &.is-circular {
-
-    .ui.image {
-      border-radius: @circularBorderRadius;
-    }
+    border-radius: @circularBorderRadius;
   }
 
   &.is-rounded {
-
-    .ui.image {
-      border-radius: @thumbnailBorderRadius;
-    }
+    border-radius: @thumbnailBorderRadius;
   }
 }

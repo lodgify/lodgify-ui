@@ -437,6 +437,7 @@
 @thumbnailHeight: 75px;
 @thumbnailWidth: @thumbnailHeight;
 @thumbnailBorderRadius: @3px;
+@thumbnailMarginRight: 1.5em;
 
 @circularBorderRadius: 50%;
 
