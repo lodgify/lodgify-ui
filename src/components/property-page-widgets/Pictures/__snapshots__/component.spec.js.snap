@@ -143,6 +143,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
@@ -223,6 +224,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
@@ -333,6 +335,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
@@ -413,6 +416,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
@@ -523,6 +527,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
@@ -603,6 +608,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
@@ -713,6 +719,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
@@ -793,6 +800,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
@@ -903,6 +911,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
@@ -983,6 +992,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Thumbnail
                           className=""
+                          hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                           isCircular={false}
