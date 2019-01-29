@@ -64,7 +64,7 @@ Component.propTypes = {
    * @ignore
    */
   className: PropTypes.string,
-  /** Does the thumbnail have margin to separate it visually from siblings. */
+  /** Does the thumbnail have a margin to separate it visually from siblings. */
   hasMargin: PropTypes.bool,
   /** Is the thumbnail rounded on the corners */
   hasRoundedCorners: PropTypes.bool,
