@@ -554,6 +554,7 @@ blockquote.ui.quote .row {
 
 .placeholder {
   background-color: @placeholderBackgroundColor;
+  border-radius: @placeholderBorderRadius;
   max-width: @placeholderMaxWidth;
 
   &.fluid {
@@ -571,5 +572,30 @@ blockquote.ui.quote .row {
 
   &.rectangle {
     padding-top: @blockPlaceholderRectanglePadding;
+  }
+}
+
+/* Text placeholder */
+.placeholder.text {
+  height: @textPlaceholderHeight;
+
+  &.short {
+    width: @textPlaceholderShortLength;
+  }
+
+  &.medium {
+    width: @textPlaceholderMediumLength;
+  }
+
+  &.long {
+    width: @textPlaceholderLongLength;
+  }
+
+  &.full {
+    width: @textPlaceholderFullLength;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: @textPlaceholderMarginBottom;
   }
 }

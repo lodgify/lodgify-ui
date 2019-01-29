@@ -482,7 +482,16 @@
 
 @placeholderBackgroundColor: @greyTwo;
 @placeholderMaxWidth: 30rem;
+@placeholderBorderRadius: 2px;
 
 /* Block placeholder */
 @blockPlaceholderDefaultHeight: 100px;
 @blockPlaceholderRectanglePadding: 75%;
+
+/* Text placeholder */
+@textPlaceholderHeight: 0.7em;
+@textPlaceholderMarginBottom: 1em;
+@textPlaceholderShortLength: 25%;
+@textPlaceholderMediumLength: 50%;
+@textPlaceholderLongLength: 75%;
+@textPlaceholderFullLength: 100%;
