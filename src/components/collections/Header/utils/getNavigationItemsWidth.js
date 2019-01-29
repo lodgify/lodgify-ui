@@ -1,4 +1,4 @@
-import { CHARACTER_WIDTH, MARGIN_WIDTH } from '../constants';
+import { CHARACTER_WIDTH, MENU_ITEM_MARGIN_WIDTH } from '../constants';
 
 /**
  * @param {Array} navigationItems
@@ -7,8 +7,7 @@ import { CHARACTER_WIDTH, MARGIN_WIDTH } from '../constants';
 export const getNavigationItemsWidth = navigationItems => {
   const textWidth =
     navigationItems.map(item => item.text).join('').length * CHARACTER_WIDTH;
-  const marginWidth =
-    navigationItems.map(item => item.text).length * MARGIN_WIDTH;
+  const marginWidth = navigationItems.length * MENU_ITEM_MARGIN_WIDTH;
 
   return textWidth + marginWidth;
 };

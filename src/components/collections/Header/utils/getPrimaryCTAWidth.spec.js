@@ -6,7 +6,7 @@ describe('`getPrimaryCTAWidth`', () => {
   it('should return the width of the primaryCTA if available', () => {
     const actual = getPrimaryCTAWidth(primaryCTA);
 
-    expect(actual).toBe(103);
+    expect(actual).toBe(159);
   });
 
   it('should return zero if primaryCTA is not available', () => {

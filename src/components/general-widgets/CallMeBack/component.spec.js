@@ -48,6 +48,14 @@ describe('<CallMeBack />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  describe('if there is no `props.propertyOptions`', () => {
+    it('should have the correct structure', () => {
+      const wrapper = getCallMeBack({ propertyOptions: null });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   describe('if `props.successMessage` is passed', () => {
     it('should render the success message above the submit button', () => {
       const wrapper = getCallMeBack({

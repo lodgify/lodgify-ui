@@ -1,4 +1,4 @@
-export const CHARACTER_WIDTH = 7;
-export const HEADER_MAX_WIDTH = 900;
-export const MARGIN_WIDTH = 30;
-export const PRIMARY_CTA_WIDTH = 95;
+export const CHARACTER_WIDTH = 8;
+export const CTA_MARGIN_WIDTH = 95;
+export const HEADER_MAX_WIDTH = 875;
+export const MENU_ITEM_MARGIN_WIDTH = 30;

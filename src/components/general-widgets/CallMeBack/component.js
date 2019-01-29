@@ -65,11 +65,13 @@ export const Component = ({
         options={timeOptions}
       />
     </InputGroup>
-    <Dropdown
-      label={propertyInputLabel}
-      name="property"
-      options={propertyOptions}
-    />
+    {propertyOptions && (
+      <Dropdown
+        label={propertyInputLabel}
+        name="property"
+        options={propertyOptions}
+      />
+    )}
     <TextArea label={notesInputLabel} name="notes" />
   </Form>
 );
@@ -86,6 +88,7 @@ Component.defaultProps = {
   onSubmit: Function.prototype,
   phoneInputLabel: PHONE,
   propertyInputLabel: PROPERTY,
+  propertyOptions: null,
   submitButtonText: SEND,
   successMessage: '',
   timeInputLabel: TIME,
@@ -127,7 +130,7 @@ Component.propTypes = {
         PropTypes.string,
       ]),
     })
-  ).isRequired,
+  ),
   /** The form submit button text */
   submitButtonText: PropTypes.string,
   /** The message to display when the form is successful. */

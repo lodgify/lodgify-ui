@@ -1,3 +1,34 @@
+## [1.118.3](https://github.com/lodgify/lodgify-ui/compare/v1.118.2...v1.118.3) (2019-01-28)
+
+
+### Bug Fixes
+
+* **Review:** consume Paragraph for review text ([ab487f2](https://github.com/lodgify/lodgify-ui/commit/ab487f2))
+
+## [1.118.2](https://github.com/lodgify/lodgify-ui/compare/v1.118.1...v1.118.2) (2019-01-28)
+
+
+### Bug Fixes
+
+* **Availability:** change default prop value and check on props.roomOptionsWithImages ([c63395d](https://github.com/lodgify/lodgify-ui/commit/c63395d))
+* **CallMeBack:** hide property dropdown if no property options passed ([e075c08](https://github.com/lodgify/lodgify-ui/commit/e075c08))
+
+## [1.118.1](https://github.com/lodgify/lodgify-ui/compare/v1.118.0...v1.118.1) (2019-01-28)
+
+
+### Bug Fixes
+
+* **getPrimaryCTAWidth:** multiply button text length by standard character width ([38b8d35](https://github.com/lodgify/lodgify-ui/commit/38b8d35))
+* **Header:** change standard character width and tolerance for max header width ([35dd138](https://github.com/lodgify/lodgify-ui/commit/35dd138))
+
+# [1.118.0](https://github.com/lodgify/lodgify-ui/compare/v1.117.1...v1.118.0) (2019-01-28)
+
+
+### Features
+
+* **getCheckInAndCheckOutMarkup:** implement util and unit test ([dbcf85b](https://github.com/lodgify/lodgify-ui/commit/dbcf85b))
+* **Rules:** implement getCheckInAndCheckOutMarkup util ([ba4b468](https://github.com/lodgify/lodgify-ui/commit/ba4b468))
+
 ## [1.117.1](https://github.com/lodgify/lodgify-ui/compare/v1.117.0...v1.117.1) (2019-01-28)
 
 
