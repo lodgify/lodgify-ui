@@ -1,23 +1,67 @@
+By default `Thumbnail` fills the width of its container.
+
 ```jsx
-<Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg" />
+<div style={{ width: 100 }}>
+  <Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100" />
+</div>
+<Divider />
+<div style={{ width: 300 }}>
+  <Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=300" />
+</div>
+<Divider />
+<Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1000" />
 ```
 
 ### Variations
 
+#### Size
+
+```jsx
+<div style={{ width: 100 }}>
+  <Thumbnail
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+    size="small"
+  />
+</div>
+<Divider />
+<div style={{ width: 100 }}>
+  <Thumbnail
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+    size="medium"
+  />
+</div>
+<Divider />
+<div style={{ width: 100 }}>
+  <Thumbnail
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+    size="large"
+  />
+</div>
+<Divider />
+<div style={{ width: 100 }}>
+  <Thumbnail
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+    size="huge"
+  />
+</div>
+```
+
 #### Rounded corners
 
 ```jsx
-<Thumbnail
-  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-  hasRoundedCorners
-/>
+<div style={{ width: 100 }}>
+  <Thumbnail
+    hasRoundedCorners
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+  />
+</div>
 ```
 
 #### Circular
 
 ```jsx
 <Thumbnail
-  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
   isCircular
 />
 ```
@@ -26,7 +70,7 @@
 
 ```jsx
 <Thumbnail
-  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
   isSquare
 />
 ```
@@ -34,29 +78,30 @@
 #### Labeled
 
 ```jsx
-<Grid columns={3}>
-  <GridColumn>
-    <Thumbnail
-      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-      isSquare
-      label="small"
-      size="small"
-    />
-  </GridColumn>
-  <GridColumn>
-    <Thumbnail
-      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-      isSquare
-      label="medium"
-    />
-  </GridColumn>
-  <GridColumn>
-    <Thumbnail
-      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-      isSquare
-      label="large"
-      size="large"
-    />
-  </GridColumn>
-</Grid>
+<Thumbnail
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+  isSquare
+  label="small"
+  size="small"
+/>
+<Divider />
+<Thumbnail
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+  isSquare
+  label="medium"
+/>
+<Divider />
+<Thumbnail
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+  isSquare
+  label="large"
+  size="large"
+/>
+<Divider />
+<Thumbnail
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+  isSquare
+  label="huge"
+  size="huge"
+/>
 ```
