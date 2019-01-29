@@ -51,6 +51,7 @@
 
   &.scrolling.modal {
     margin: 0 !important;
+    overflow: auto;
   }
 
   > .content > .link.item {
@@ -153,6 +154,47 @@
           transform: none;
         }
       }
+    }
+  }
+}
+
+/* Cookie Alert */
+
+.ui.modals.dimmer {
+  padding: 0;
+
+  @media screen and (min-width: @largeMonitorBreakpoint) {
+    background-color: transparent !important;
+  }
+
+  &:not(.inverted) {
+    background-color: rgba(51, 51, 51, 0.35);
+  }
+}
+
+.ui.modal.active {
+  position: relative;
+
+  &.is-modal-rounded {
+    border-radius: 4px;
+
+    .ui.basic.button {
+      padding: 0;
+    }
+  }
+
+  @media only screen and (min-width: @largeMonitorBreakpoint) {
+
+    &.is-justified-right {
+      align-self: flex-end;
+    }
+
+    &.is-aligned-bottom {
+      margin-top: auto !important;
+    }
+
+    &.has-margin {
+      margin: 30px;
     }
   }
 }

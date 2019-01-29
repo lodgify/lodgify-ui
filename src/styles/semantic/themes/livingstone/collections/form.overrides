@@ -97,3 +97,26 @@
        Groups
 --------------------*/
 }
+
+/*-------------------
+       Cookies Form
+--------------------*/
+
+.cookies-form {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  max-width: 300px;
+  z-index: 3;
+
+  .ui.card.has-form {
+    padding: 30px;
+
+    .ui.button {
+      border-radius: 30px;
+      float: none;
+      margin: 0 auto;
+    }
+  }
+}
