@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, Item } from 'semantic-ui-react';
+import { List } from 'semantic-ui-react';
 
 import {
   CONTACT_INFORMATION,
@@ -13,6 +13,8 @@ import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
+import { Thumbnail } from 'media/Thumbnail';
+import { FlexContainer } from 'layout/FlexContainer';
 import { getHrefTelString } from 'utils/get-href-tel-string';
 
 import { getDescription } from './utils/getDescription';
@@ -43,12 +45,10 @@ export const Component = ({
     </GridRow>
     <GridRow>
       <GridColumn width={12}>
-        <Item.Group unstackable>
-          <Item>
-            <Item.Image avatar size="tiny" src={avatarUrl} />
-            <Item.Header as="h4">{name}</Item.Header>
-          </Item>
-        </Item.Group>
+        <FlexContainer alignItems="center">
+          <Thumbnail hasMargin imageUrl={avatarUrl} isCircular />
+          <Heading size="small">{name}</Heading>
+        </FlexContainer>
       </GridColumn>
     </GridRow>
     <GridRow verticalAlign="top">
