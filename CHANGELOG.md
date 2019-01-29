@@ -1,3 +1,17 @@
+# [1.120.0](https://github.com/lodgify/lodgify-ui/compare/v1.119.0...v1.120.0) (2019-01-29)
+
+
+### Bug Fixes
+
+* **button:** add fallback styles if var is not supported ([dcf1a37](https://github.com/lodgify/lodgify-ui/commit/dcf1a37))
+* **react-image-gallery:** add fallback styles if var is not supported ([d0f2117](https://github.com/lodgify/lodgify-ui/commit/d0f2117))
+
+
+### Features
+
+* **Button:** primary button takes theme colour ([55a6fc8](https://github.com/lodgify/lodgify-ui/commit/55a6fc8))
+* **Slideshow:** slideshow bullets take the theme colour ([69026dc](https://github.com/lodgify/lodgify-ui/commit/69026dc))
+
 # [1.119.0](https://github.com/lodgify/lodgify-ui/compare/v1.118.3...v1.119.0) (2019-01-29)
 
 
