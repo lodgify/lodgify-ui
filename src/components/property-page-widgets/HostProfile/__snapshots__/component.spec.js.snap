@@ -90,51 +90,106 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                   <div
                     className="top aligned twelve wide column"
                   >
-                    <ItemGroup
-                      unstackable={true}
+                    <FlexContainer
+                      alignContent={null}
+                      alignItems="center"
+                      flexDirection={null}
+                      flexWrap={null}
+                      justifyContent={null}
                     >
                       <div
-                        className="ui unstackable items"
+                        style={
+                          Object {
+                            "alignContent": null,
+                            "alignItems": "center",
+                            "display": "flex",
+                            "flexDirection": null,
+                            "flexGrow": "1",
+                            "flexWrap": null,
+                            "height": "100%",
+                            "justifyContent": null,
+                          }
+                        }
                       >
-                        <Item>
+                        <Thumbnail
+                          className=""
+                          hasMargin={true}
+                          hasRoundedCorners={false}
+                          imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                          isCircular={true}
+                          isSquare={false}
+                          label={null}
+                          size={null}
+                        >
                           <div
-                            className="item"
+                            className="ui thumbnail has-margin is-circular"
                           >
-                            <ItemImage
-                              avatar={true}
-                              size="tiny"
-                              src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                            <ResponsiveImage
+                              alternativeText="Image Widget"
+                              hasRoundedCorners={false}
+                              imageHeight={null}
+                              imageNotFoundLabelText="Image not found!"
+                              imageTitle="Image Title"
+                              imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                              imageWidth={null}
+                              isAvatar={false}
+                              isCircular={true}
+                              isFluid={false}
+                              isSquare={false}
+                              label={null}
+                              sizes={null}
+                              srcSet={null}
                             >
-                              <Image
-                                as="img"
-                                avatar={true}
-                                size="tiny"
-                                src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                ui={true}
-                                wrapped={true}
+                              <figure
+                                className="responsive-image is-circular"
                               >
-                                <div
-                                  className="ui tiny avatar image"
+                                <Image
+                                  alt="Image Widget"
+                                  as="img"
+                                  avatar={false}
+                                  fluid={true}
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                  ui={true}
                                 >
                                   <img
+                                    alt="Image Widget"
+                                    className="ui fluid image"
+                                    onLoad={[Function]}
+                                    sizes={null}
                                     src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                    srcSet={null}
+                                    title="Image Title"
                                   />
-                                </div>
-                              </Image>
-                            </ItemImage>
-                            <ItemHeader
-                              as="h4"
-                            >
-                              <h4
-                                className="header"
-                              >
-                                Mitjons & Kira
-                              </h4>
-                            </ItemHeader>
+                                </Image>
+                              </figure>
+                            </ResponsiveImage>
                           </div>
-                        </Item>
+                        </Thumbnail>
+                        <Heading
+                          className={null}
+                          isColorInverted={false}
+                          size="small"
+                          textAlign={null}
+                        >
+                          <Header
+                            as="h4"
+                            className={null}
+                            inverted={false}
+                            textAlign={null}
+                          >
+                            <h4
+                              className="ui header"
+                            >
+                              Mitjons & Kira
+                            </h4>
+                          </Header>
+                        </Heading>
                       </div>
-                    </ItemGroup>
+                    </FlexContainer>
                   </div>
                 </GridColumn>
               </GridColumn>
@@ -351,51 +406,106 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                   <div
                     className="top aligned twelve wide column"
                   >
-                    <ItemGroup
-                      unstackable={true}
+                    <FlexContainer
+                      alignContent={null}
+                      alignItems="center"
+                      flexDirection={null}
+                      flexWrap={null}
+                      justifyContent={null}
                     >
                       <div
-                        className="ui unstackable items"
+                        style={
+                          Object {
+                            "alignContent": null,
+                            "alignItems": "center",
+                            "display": "flex",
+                            "flexDirection": null,
+                            "flexGrow": "1",
+                            "flexWrap": null,
+                            "height": "100%",
+                            "justifyContent": null,
+                          }
+                        }
                       >
-                        <Item>
+                        <Thumbnail
+                          className=""
+                          hasMargin={true}
+                          hasRoundedCorners={false}
+                          imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                          isCircular={true}
+                          isSquare={false}
+                          label={null}
+                          size={null}
+                        >
                           <div
-                            className="item"
+                            className="ui thumbnail has-margin is-circular"
                           >
-                            <ItemImage
-                              avatar={true}
-                              size="tiny"
-                              src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                            <ResponsiveImage
+                              alternativeText="Image Widget"
+                              hasRoundedCorners={false}
+                              imageHeight={null}
+                              imageNotFoundLabelText="Image not found!"
+                              imageTitle="Image Title"
+                              imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                              imageWidth={null}
+                              isAvatar={false}
+                              isCircular={true}
+                              isFluid={false}
+                              isSquare={false}
+                              label={null}
+                              sizes={null}
+                              srcSet={null}
                             >
-                              <Image
-                                as="img"
-                                avatar={true}
-                                size="tiny"
-                                src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                ui={true}
-                                wrapped={true}
+                              <figure
+                                className="responsive-image is-circular"
                               >
-                                <div
-                                  className="ui tiny avatar image"
+                                <Image
+                                  alt="Image Widget"
+                                  as="img"
+                                  avatar={false}
+                                  fluid={true}
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                  ui={true}
                                 >
                                   <img
+                                    alt="Image Widget"
+                                    className="ui fluid image"
+                                    onLoad={[Function]}
+                                    sizes={null}
                                     src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                    srcSet={null}
+                                    title="Image Title"
                                   />
-                                </div>
-                              </Image>
-                            </ItemImage>
-                            <ItemHeader
-                              as="h4"
-                            >
-                              <h4
-                                className="header"
-                              >
-                                Mitjons & Kira
-                              </h4>
-                            </ItemHeader>
+                                </Image>
+                              </figure>
+                            </ResponsiveImage>
                           </div>
-                        </Item>
+                        </Thumbnail>
+                        <Heading
+                          className={null}
+                          isColorInverted={false}
+                          size="small"
+                          textAlign={null}
+                        >
+                          <Header
+                            as="h4"
+                            className={null}
+                            inverted={false}
+                            textAlign={null}
+                          >
+                            <h4
+                              className="ui header"
+                            >
+                              Mitjons & Kira
+                            </h4>
+                          </Header>
+                        </Heading>
                       </div>
-                    </ItemGroup>
+                    </FlexContainer>
                   </div>
                 </GridColumn>
               </GridColumn>
@@ -605,51 +715,106 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                   <div
                     className="top aligned twelve wide column"
                   >
-                    <ItemGroup
-                      unstackable={true}
+                    <FlexContainer
+                      alignContent={null}
+                      alignItems="center"
+                      flexDirection={null}
+                      flexWrap={null}
+                      justifyContent={null}
                     >
                       <div
-                        className="ui unstackable items"
+                        style={
+                          Object {
+                            "alignContent": null,
+                            "alignItems": "center",
+                            "display": "flex",
+                            "flexDirection": null,
+                            "flexGrow": "1",
+                            "flexWrap": null,
+                            "height": "100%",
+                            "justifyContent": null,
+                          }
+                        }
                       >
-                        <Item>
+                        <Thumbnail
+                          className=""
+                          hasMargin={true}
+                          hasRoundedCorners={false}
+                          imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                          isCircular={true}
+                          isSquare={false}
+                          label={null}
+                          size={null}
+                        >
                           <div
-                            className="item"
+                            className="ui thumbnail has-margin is-circular"
                           >
-                            <ItemImage
-                              avatar={true}
-                              size="tiny"
-                              src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                            <ResponsiveImage
+                              alternativeText="Image Widget"
+                              hasRoundedCorners={false}
+                              imageHeight={null}
+                              imageNotFoundLabelText="Image not found!"
+                              imageTitle="Image Title"
+                              imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                              imageWidth={null}
+                              isAvatar={false}
+                              isCircular={true}
+                              isFluid={false}
+                              isSquare={false}
+                              label={null}
+                              sizes={null}
+                              srcSet={null}
                             >
-                              <Image
-                                as="img"
-                                avatar={true}
-                                size="tiny"
-                                src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                ui={true}
-                                wrapped={true}
+                              <figure
+                                className="responsive-image is-circular"
                               >
-                                <div
-                                  className="ui tiny avatar image"
+                                <Image
+                                  alt="Image Widget"
+                                  as="img"
+                                  avatar={false}
+                                  fluid={true}
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                  ui={true}
                                 >
                                   <img
+                                    alt="Image Widget"
+                                    className="ui fluid image"
+                                    onLoad={[Function]}
+                                    sizes={null}
                                     src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                    srcSet={null}
+                                    title="Image Title"
                                   />
-                                </div>
-                              </Image>
-                            </ItemImage>
-                            <ItemHeader
-                              as="h4"
-                            >
-                              <h4
-                                className="header"
-                              >
-                                Mitjons & Kira
-                              </h4>
-                            </ItemHeader>
+                                </Image>
+                              </figure>
+                            </ResponsiveImage>
                           </div>
-                        </Item>
+                        </Thumbnail>
+                        <Heading
+                          className={null}
+                          isColorInverted={false}
+                          size="small"
+                          textAlign={null}
+                        >
+                          <Header
+                            as="h4"
+                            className={null}
+                            inverted={false}
+                            textAlign={null}
+                          >
+                            <h4
+                              className="ui header"
+                            >
+                              Mitjons & Kira
+                            </h4>
+                          </Header>
+                        </Heading>
                       </div>
-                    </ItemGroup>
+                    </FlexContainer>
                   </div>
                 </GridColumn>
               </GridColumn>
@@ -863,51 +1028,106 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                   <div
                     className="top aligned twelve wide column"
                   >
-                    <ItemGroup
-                      unstackable={true}
+                    <FlexContainer
+                      alignContent={null}
+                      alignItems="center"
+                      flexDirection={null}
+                      flexWrap={null}
+                      justifyContent={null}
                     >
                       <div
-                        className="ui unstackable items"
+                        style={
+                          Object {
+                            "alignContent": null,
+                            "alignItems": "center",
+                            "display": "flex",
+                            "flexDirection": null,
+                            "flexGrow": "1",
+                            "flexWrap": null,
+                            "height": "100%",
+                            "justifyContent": null,
+                          }
+                        }
                       >
-                        <Item>
+                        <Thumbnail
+                          className=""
+                          hasMargin={true}
+                          hasRoundedCorners={false}
+                          imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                          isCircular={true}
+                          isSquare={false}
+                          label={null}
+                          size={null}
+                        >
                           <div
-                            className="item"
+                            className="ui thumbnail has-margin is-circular"
                           >
-                            <ItemImage
-                              avatar={true}
-                              size="tiny"
-                              src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                            <ResponsiveImage
+                              alternativeText="Image Widget"
+                              hasRoundedCorners={false}
+                              imageHeight={null}
+                              imageNotFoundLabelText="Image not found!"
+                              imageTitle="Image Title"
+                              imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                              imageWidth={null}
+                              isAvatar={false}
+                              isCircular={true}
+                              isFluid={false}
+                              isSquare={false}
+                              label={null}
+                              sizes={null}
+                              srcSet={null}
                             >
-                              <Image
-                                as="img"
-                                avatar={true}
-                                size="tiny"
-                                src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                ui={true}
-                                wrapped={true}
+                              <figure
+                                className="responsive-image is-circular"
                               >
-                                <div
-                                  className="ui tiny avatar image"
+                                <Image
+                                  alt="Image Widget"
+                                  as="img"
+                                  avatar={false}
+                                  fluid={true}
+                                  onLoad={[Function]}
+                                  sizes={null}
+                                  src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  srcSet={null}
+                                  title="Image Title"
+                                  ui={true}
                                 >
                                   <img
+                                    alt="Image Widget"
+                                    className="ui fluid image"
+                                    onLoad={[Function]}
+                                    sizes={null}
                                     src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                    srcSet={null}
+                                    title="Image Title"
                                   />
-                                </div>
-                              </Image>
-                            </ItemImage>
-                            <ItemHeader
-                              as="h4"
-                            >
-                              <h4
-                                className="header"
-                              >
-                                Mitjons & Kira
-                              </h4>
-                            </ItemHeader>
+                                </Image>
+                              </figure>
+                            </ResponsiveImage>
                           </div>
-                        </Item>
+                        </Thumbnail>
+                        <Heading
+                          className={null}
+                          isColorInverted={false}
+                          size="small"
+                          textAlign={null}
+                        >
+                          <Header
+                            as="h4"
+                            className={null}
+                            inverted={false}
+                            textAlign={null}
+                          >
+                            <h4
+                              className="ui header"
+                            >
+                              Mitjons & Kira
+                            </h4>
+                          </Header>
+                        </Heading>
                       </div>
-                    </ItemGroup>
+                    </FlexContainer>
                   </div>
                 </GridColumn>
               </GridColumn>

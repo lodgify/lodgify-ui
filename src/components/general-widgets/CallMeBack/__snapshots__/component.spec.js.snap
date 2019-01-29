@@ -1526,9 +1526,11 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                           error={false}
                           icon="clock"
                           isDisabled={false}
+                          isSearchable={false}
                           isValid={false}
                           label="Time"
                           name="time"
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -1615,7 +1617,7 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -1650,6 +1652,7 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={false}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
@@ -1932,9 +1935,11 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                       error={false}
                       icon={null}
                       isDisabled={false}
+                      isSearchable={false}
                       isValid={false}
                       label="Property"
                       name="property"
+                      noResultsText="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       options={
@@ -1986,7 +1991,7 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                             />
                           }
                           minCharacters={1}
-                          noResultsMessage="No results found."
+                          noResultsMessage="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           onClick={[Function]}
@@ -2013,6 +2018,7 @@ exports[`<CallMeBack /> if \`props.errorMessage\` is passed should render the er
                             ]
                           }
                           renderLabel={[Function]}
+                          search={false}
                           searchInput="text"
                           selectOnBlur={true}
                           selectOnNavigation={true}
@@ -3859,9 +3865,11 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                           error={false}
                           icon="clock"
                           isDisabled={false}
+                          isSearchable={false}
                           isValid={false}
                           label="Time"
                           name="time"
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -3948,7 +3956,7 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -3983,6 +3991,7 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={false}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
@@ -4265,9 +4274,11 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                       error={false}
                       icon={null}
                       isDisabled={false}
+                      isSearchable={false}
                       isValid={false}
                       label="Property"
                       name="property"
+                      noResultsText="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       options={
@@ -4319,7 +4330,7 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                             />
                           }
                           minCharacters={1}
-                          noResultsMessage="No results found."
+                          noResultsMessage="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           onClick={[Function]}
@@ -4346,6 +4357,7 @@ exports[`<CallMeBack /> if \`props.successMessage\` is passed should render the 
                             ]
                           }
                           renderLabel={[Function]}
+                          search={false}
                           searchInput="text"
                           selectOnBlur={true}
                           selectOnNavigation={true}
@@ -6173,9 +6185,11 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                           error={false}
                           icon="clock"
                           isDisabled={false}
+                          isSearchable={false}
                           isValid={false}
                           label="Time"
                           name="time"
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -6262,7 +6276,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -6297,6 +6311,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={false}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
@@ -8191,9 +8206,11 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           error={false}
                           icon="clock"
                           isDisabled={false}
+                          isSearchable={false}
                           isValid={false}
                           label="Time"
                           name="time"
+                          noResultsText="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           options={
@@ -8280,7 +8297,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                 />
                               }
                               minCharacters={1}
-                              noResultsMessage="No results found."
+                              noResultsMessage="No results"
                               onBlur={[Function]}
                               onChange={[Function]}
                               onClick={[Function]}
@@ -8315,6 +8332,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                 ]
                               }
                               renderLabel={[Function]}
+                              search={false}
                               searchInput="text"
                               selectOnBlur={true}
                               selectOnNavigation={true}
@@ -8597,9 +8615,11 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                       error={false}
                       icon={null}
                       isDisabled={false}
+                      isSearchable={false}
                       isValid={false}
                       label="Property"
                       name="property"
+                      noResultsText="No results"
                       onBlur={[Function]}
                       onChange={[Function]}
                       options={
@@ -8651,7 +8671,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             />
                           }
                           minCharacters={1}
-                          noResultsMessage="No results found."
+                          noResultsMessage="No results"
                           onBlur={[Function]}
                           onChange={[Function]}
                           onClick={[Function]}
@@ -8678,6 +8698,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             ]
                           }
                           renderLabel={[Function]}
+                          search={false}
                           searchInput="text"
                           selectOnBlur={true}
                           selectOnNavigation={true}

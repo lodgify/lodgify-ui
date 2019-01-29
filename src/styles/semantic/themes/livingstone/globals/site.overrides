@@ -349,13 +349,16 @@ blockquote.ui.quote .row {
   max-width: 100%;
 
   figure.responsive-image {
-    width: inherit;
-    height: inherit;
+    height: 100%;
 
     > img {
-      width: inherit;
-      height: inherit;
-      object-fit: cover;
+      left: 50%;
+      max-width: none;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
     }
   }
 
@@ -369,6 +372,10 @@ blockquote.ui.quote .row {
 
   &.huge {
     height: @hugeThumbnailHeight;
+  }
+
+  &.has-margin {
+    margin-right: @thumbnailMarginRight;
   }
 
   &.is-circular,

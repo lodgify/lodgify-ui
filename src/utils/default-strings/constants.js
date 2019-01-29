@@ -31,6 +31,7 @@ export const LOGIN = 'Log in';
 export const MONTH = 'Month';
 export const NAME = 'Name';
 export const NEXT = 'Next';
+export const NO_RESULTS = 'No results';
 export const NOTES = 'Notes';
 export const OWNER_LOGIN = 'Owner Login';
 export const OWNER_SIGNUP = 'Owner Signup';

@@ -5,6 +5,7 @@ import getClassNames from 'classnames';
 
 import { getHasErrorMessage } from 'utils/get-has-error-message';
 import { Icon, ICON_NAMES } from 'elements/Icon';
+import { NO_RESULTS } from 'utils/default-strings';
 
 import { ErrorMessage } from '../ErrorMessage';
 
@@ -47,14 +48,16 @@ export class Component extends PureComponent {
   render() {
     const { isOpen, value } = this.state;
     const {
+      currentValue,
       error,
       icon,
       isDisabled,
-      willOpenAbove,
+      isSearchable,
       isValid,
+      noResultsText,
       label,
       options,
-      currentValue,
+      willOpenAbove,
     } = this.props;
     const hasImages = getHasImages(options);
     const adaptedOptions = adaptOptions(options, hasImages);
@@ -83,11 +86,13 @@ export class Component extends PureComponent {
           )}
           disabled={isDisabled || !adaptedOptions.length}
           icon={<Icon name={ICON_NAMES.CARET_DOWN} />}
+          noResultsMessage={noResultsText}
           onBlur={this.handleBlur}
           onChange={this.handleChange}
           onClick={() => this.handleOpen(!isOpen)}
           open={isOpen}
           options={adaptedOptions}
+          search={isSearchable}
           selection
           upward={willOpenAbove}
           value={currentValue || value}
@@ -106,9 +111,11 @@ Component.defaultProps = {
   error: false,
   icon: null,
   isDisabled: false,
+  isSearchable: false,
   isValid: false,
   label: '',
   name: '',
+  noResultsText: NO_RESULTS,
   onBlur: Function.prototype,
   onChange: Function.prototype,
   options: [],
@@ -129,12 +136,16 @@ Component.propTypes = {
   icon: PropTypes.string,
   /** A disabled dropdown does not allow user interaction. */
   isDisabled: PropTypes.bool,
+  /** Is the dropdown searchable with keyboard input */
+  isSearchable: PropTypes.bool,
   /** Is the dropdown in a valid state. */
   isValid: PropTypes.bool,
   /** The label for the dropdown. Not displayed if options have images. */
   label: PropTypes.string,
   /** The name for the dropdown. */
   name: PropTypes.string,
+  /** The text to display when no results are returned from a searchable dropdown. */
+  noResultsText: PropTypes.string,
   /**
    * Used internally by `Form` so ignored in the styleguide.
    * @ignore

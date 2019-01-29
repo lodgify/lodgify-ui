@@ -9,3 +9,38 @@ const { items } = require('./mock-data/items');
 
 <Submenu items={items}>Western Europe</Submenu>
 ```
+
+### Variations
+
+#### Searchable
+
+```jsx
+const items = [
+ { text: 'France', value: 'france' },
+ { text: 'Spain', value: 'espanya' },
+ { text: 'Germany', value: 'deutschland' },
+ { text: 'United Kingdom', value: 'unitedkingdom' },
+];
+
+class Controller extends React.Component {
+
+  constructor () {
+    super();
+    this.state = { value: 'france' }
+  }
+
+  render () {
+    return (
+      <Submenu
+        isSearchable
+        items={items}
+        noResultsText="Nothing found"
+        onChange={({ value }) => this.setState({ value })}
+        value={this.state.value}
+      />
+    );
+  }
+}
+
+<Controller />
+```

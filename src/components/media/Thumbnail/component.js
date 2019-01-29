@@ -11,6 +11,7 @@ import { Paragraph } from 'typography/Paragraph';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   className,
+  hasMargin,
   hasRoundedCorners,
   imageAlternativeText,
   imageSizes,
@@ -23,6 +24,7 @@ export const Component = ({
 }) => (
   <div
     className={getClassNames('ui', 'thumbnail', size, className, {
+      'has-margin': hasMargin,
       'is-square': isSquare,
       'is-circular': isCircular,
     })}
@@ -44,6 +46,7 @@ Component.displayName = 'Thumbnail';
 
 Component.defaultProps = {
   className: '',
+  hasMargin: false,
   hasRoundedCorners: false,
   imageAlternativeText: undefined,
   imageSizes: undefined,
@@ -61,6 +64,8 @@ Component.propTypes = {
    * @ignore
    */
   className: PropTypes.string,
+  /** Does the thumbnail have a margin to separate it visually from siblings. */
+  hasMargin: PropTypes.bool,
   /** Is the thumbnail rounded on the corners */
   hasRoundedCorners: PropTypes.bool,
   /** Text to help visually impaired users understand the content of the image. */
@@ -78,5 +83,5 @@ Component.propTypes = {
   /** A visible label for the thumbnail */
   label: PropTypes.string,
   /** The size of the thumbnail */
-  size: PropTypes.oneOf(['small', 'large', 'huge']),
+  size: PropTypes.oneOf(['small', 'medium', 'large', 'huge']),
 };

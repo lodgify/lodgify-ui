@@ -117,6 +117,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                 >
                   <Submenu
                     isMenuItem={false}
+                    isSearchable={false}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={false}
                     items={
@@ -132,6 +133,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                       ]
                     }
                     name="language"
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -162,7 +164,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                       item={false}
                       minCharacters={1}
                       name="language"
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -182,6 +184,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -321,6 +324,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                 >
                   <Submenu
                     isMenuItem={false}
+                    isSearchable={true}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={false}
                     items={
@@ -336,6 +340,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                       ]
                     }
                     name="currency"
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -366,7 +371,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                       item={false}
                       minCharacters={1}
                       name="currency"
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -386,10 +391,16 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
                       simple={false}
+                      style={
+                        Object {
+                          "minWidth": 56,
+                        }
+                      }
                       trigger={null}
                       upward={true}
                       value={null}
@@ -397,16 +408,48 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                     >
                       <div
                         aria-expanded={false}
-                        className="ui scrolling upward top left pointing dropdown"
+                        className="ui search scrolling upward top left pointing dropdown"
                         name="currency"
                         onBlur={[Function]}
                         onChange={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
                         onMouseDown={[Function]}
-                        role="listbox"
-                        tabIndex={0}
+                        role="combobox"
+                        style={
+                          Object {
+                            "minWidth": 56,
+                          }
+                        }
                       >
+                        <DropdownSearchInput
+                          inputRef={[Function]}
+                          key="text"
+                          onChange={[Function]}
+                          style={
+                            Object {
+                              "width": undefined,
+                            }
+                          }
+                          tabIndex={0}
+                          type="text"
+                          value=""
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoComplete="off"
+                            className="search"
+                            onChange={[Function]}
+                            style={
+                              Object {
+                                "width": undefined,
+                              }
+                            }
+                            tabIndex={0}
+                            type="text"
+                            value=""
+                          />
+                        </DropdownSearchInput>
                         <div
                           aria-live="polite"
                           className="text"
@@ -441,9 +484,12 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                             </svg>
                           </i>
                         </Icon>
-                        <DropdownMenu>
+                        <DropdownMenu
+                          role="listbox"
+                        >
                           <div
                             className="menu transition"
+                            role="listbox"
                           >
                             <DropdownItem
                               active={false}
@@ -806,6 +852,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                 >
                   <Submenu
                     isMenuItem={false}
+                    isSearchable={false}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={false}
                     items={
@@ -821,6 +868,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                       ]
                     }
                     name="language"
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -851,7 +899,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                       item={false}
                       minCharacters={1}
                       name="language"
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -871,6 +919,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -1010,6 +1059,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                 >
                   <Submenu
                     isMenuItem={false}
+                    isSearchable={true}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={false}
                     items={
@@ -1025,6 +1075,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                       ]
                     }
                     name="currency"
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -1055,7 +1106,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                       item={false}
                       minCharacters={1}
                       name="currency"
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -1075,10 +1126,16 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
                       simple={false}
+                      style={
+                        Object {
+                          "minWidth": 56,
+                        }
+                      }
                       trigger={null}
                       upward={true}
                       value={null}
@@ -1086,16 +1143,48 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                     >
                       <div
                         aria-expanded={false}
-                        className="ui scrolling upward top left pointing dropdown"
+                        className="ui search scrolling upward top left pointing dropdown"
                         name="currency"
                         onBlur={[Function]}
                         onChange={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
                         onMouseDown={[Function]}
-                        role="listbox"
-                        tabIndex={0}
+                        role="combobox"
+                        style={
+                          Object {
+                            "minWidth": 56,
+                          }
+                        }
                       >
+                        <DropdownSearchInput
+                          inputRef={[Function]}
+                          key="text"
+                          onChange={[Function]}
+                          style={
+                            Object {
+                              "width": undefined,
+                            }
+                          }
+                          tabIndex={0}
+                          type="text"
+                          value=""
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoComplete="off"
+                            className="search"
+                            onChange={[Function]}
+                            style={
+                              Object {
+                                "width": undefined,
+                              }
+                            }
+                            tabIndex={0}
+                            type="text"
+                            value=""
+                          />
+                        </DropdownSearchInput>
                         <div
                           aria-live="polite"
                           className="text"
@@ -1130,9 +1219,12 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                             </svg>
                           </i>
                         </Icon>
-                        <DropdownMenu>
+                        <DropdownMenu
+                          role="listbox"
+                        >
                           <div
                             className="menu transition"
+                            role="listbox"
                           >
                             <DropdownItem
                               active={false}
@@ -1419,6 +1511,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                 >
                   <Submenu
                     isMenuItem={false}
+                    isSearchable={false}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={false}
                     items={
@@ -1434,6 +1527,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                       ]
                     }
                     name="language"
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -1464,7 +1558,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                       item={false}
                       minCharacters={1}
                       name="language"
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -1484,6 +1578,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -1623,6 +1718,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                 >
                   <Submenu
                     isMenuItem={false}
+                    isSearchable={true}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={false}
                     items={
@@ -1638,6 +1734,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                       ]
                     }
                     name="currency"
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -1668,7 +1765,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                       item={false}
                       minCharacters={1}
                       name="currency"
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -1688,10 +1785,16 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
                       simple={false}
+                      style={
+                        Object {
+                          "minWidth": 56,
+                        }
+                      }
                       trigger={null}
                       upward={true}
                       value={null}
@@ -1699,16 +1802,48 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                     >
                       <div
                         aria-expanded={false}
-                        className="ui scrolling upward top left pointing dropdown"
+                        className="ui search scrolling upward top left pointing dropdown"
                         name="currency"
                         onBlur={[Function]}
                         onChange={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
                         onMouseDown={[Function]}
-                        role="listbox"
-                        tabIndex={0}
+                        role="combobox"
+                        style={
+                          Object {
+                            "minWidth": 56,
+                          }
+                        }
                       >
+                        <DropdownSearchInput
+                          inputRef={[Function]}
+                          key="text"
+                          onChange={[Function]}
+                          style={
+                            Object {
+                              "width": undefined,
+                            }
+                          }
+                          tabIndex={0}
+                          type="text"
+                          value=""
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoComplete="off"
+                            className="search"
+                            onChange={[Function]}
+                            style={
+                              Object {
+                                "width": undefined,
+                              }
+                            }
+                            tabIndex={0}
+                            type="text"
+                            value=""
+                          />
+                        </DropdownSearchInput>
                         <div
                           aria-live="polite"
                           className="text"
@@ -1743,9 +1878,12 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                             </svg>
                           </i>
                         </Icon>
-                        <DropdownMenu>
+                        <DropdownMenu
+                          role="listbox"
+                        >
                           <div
                             className="menu transition"
+                            role="listbox"
                           >
                             <DropdownItem
                               active={false}
@@ -2107,6 +2245,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                 >
                   <Submenu
                     isMenuItem={false}
+                    isSearchable={false}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={false}
                     items={
@@ -2122,6 +2261,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                       ]
                     }
                     name="language"
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -2152,7 +2292,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                       item={false}
                       minCharacters={1}
                       name="language"
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -2172,6 +2312,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={false}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
@@ -2311,6 +2452,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                 >
                   <Submenu
                     isMenuItem={false}
+                    isSearchable={true}
                     isTriggerUnderlined={false}
                     isTriggeredOnHover={false}
                     items={
@@ -2326,6 +2468,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                       ]
                     }
                     name="currency"
+                    noResultsText="No results"
                     onChange={[Function]}
                     pointing="top left"
                     value={null}
@@ -2356,7 +2499,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                       item={false}
                       minCharacters={1}
                       name="currency"
-                      noResultsMessage="No results found."
+                      noResultsMessage="No results"
                       onChange={[Function]}
                       openOnFocus={true}
                       options={
@@ -2376,10 +2519,16 @@ exports[`<Footer /> should render the right structure 1`] = `
                       pointing="top left"
                       renderLabel={[Function]}
                       scrolling={true}
+                      search={true}
                       searchInput="text"
                       selectOnBlur={true}
                       selectOnNavigation={true}
                       simple={false}
+                      style={
+                        Object {
+                          "minWidth": 56,
+                        }
+                      }
                       trigger={null}
                       upward={true}
                       value={null}
@@ -2387,16 +2536,48 @@ exports[`<Footer /> should render the right structure 1`] = `
                     >
                       <div
                         aria-expanded={false}
-                        className="ui scrolling upward top left pointing dropdown"
+                        className="ui search scrolling upward top left pointing dropdown"
                         name="currency"
                         onBlur={[Function]}
                         onChange={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
                         onMouseDown={[Function]}
-                        role="listbox"
-                        tabIndex={0}
+                        role="combobox"
+                        style={
+                          Object {
+                            "minWidth": 56,
+                          }
+                        }
                       >
+                        <DropdownSearchInput
+                          inputRef={[Function]}
+                          key="text"
+                          onChange={[Function]}
+                          style={
+                            Object {
+                              "width": undefined,
+                            }
+                          }
+                          tabIndex={0}
+                          type="text"
+                          value=""
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoComplete="off"
+                            className="search"
+                            onChange={[Function]}
+                            style={
+                              Object {
+                                "width": undefined,
+                              }
+                            }
+                            tabIndex={0}
+                            type="text"
+                            value=""
+                          />
+                        </DropdownSearchInput>
                         <div
                           aria-live="polite"
                           className="text"
@@ -2431,9 +2612,12 @@ exports[`<Footer /> should render the right structure 1`] = `
                             </svg>
                           </i>
                         </Icon>
-                        <DropdownMenu>
+                        <DropdownMenu
+                          role="listbox"
+                        >
                           <div
                             className="menu transition"
+                            role="listbox"
                           >
                             <DropdownItem
                               active={false}

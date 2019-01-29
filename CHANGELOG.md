@@ -1,3 +1,21 @@
+# [1.121.0](https://github.com/lodgify/lodgify-ui/compare/v1.120.0...v1.121.0) (2019-01-29)
+
+
+### Bug Fixes
+
+* **Thumbnail:** add styles to make images fill thumbnail ([b7a8023](https://github.com/lodgify/lodgify-ui/commit/b7a8023))
+* **Thumbnail:** tidy up component api and add props.hasMargin ([85d1c25](https://github.com/lodgify/lodgify-ui/commit/85d1c25))
+
+
+### Features
+
+* **default-strings:** add no results string ([21e39ec](https://github.com/lodgify/lodgify-ui/commit/21e39ec))
+* **Dropdown:** expose props.isSearchable with example and tests ([b3225be](https://github.com/lodgify/lodgify-ui/commit/b3225be))
+* **Footer:** consume searchable submenu ([c38ab83](https://github.com/lodgify/lodgify-ui/commit/c38ab83))
+* **Rates:** consume searchable dropdown ([f1f2de0](https://github.com/lodgify/lodgify-ui/commit/f1f2de0))
+* **Submenu:** expose props.isSearchable with example and tests ([4310c2e](https://github.com/lodgify/lodgify-ui/commit/4310c2e))
+* **Submenu/Dropdown:** add search input styles ([3f41917](https://github.com/lodgify/lodgify-ui/commit/3f41917))
+
 # [1.120.0](https://github.com/lodgify/lodgify-ui/compare/v1.119.0...v1.120.0) (2019-01-29)
 
 

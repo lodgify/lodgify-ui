@@ -24,6 +24,7 @@ import { getRoomTypeDropdownMarkup } from './utils/getRoomTypeDropdownMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   costPerExtraGuestLabel,
+  currencyNoResultsText,
   currencyOptions,
   currencyValue,
   onChangeCurrency,
@@ -48,6 +49,8 @@ export const Component = ({
           <GridColumn>
             <Dropdown
               currentValue={currencyValue}
+              isSearchable
+              noResultsText={currencyNoResultsText}
               onChange={onChangeCurrency}
               options={currencyOptions}
             />
@@ -90,6 +93,8 @@ export const Component = ({
         tableHeadings={[
           <Dropdown
             currentValue={currencyValue}
+            isSearchable
+            noResultsText={currencyNoResultsText}
             onChange={onChangeCurrency}
             options={currencyOptions}
           />,
@@ -102,6 +107,7 @@ export const Component = ({
 
 Component.defaultProps = {
   costPerExtraGuestLabel: PRICE_PER_EXTRA_PER,
+  currencyNoResultsText: undefined,
   currencyValue: undefined,
   onChangeCurrency: Function.prototype,
   onChangeRoomType: Function.prototype,
@@ -115,6 +121,8 @@ Component.displayName = 'Rates';
 Component.propTypes = {
   /** The text to display for the cost per additional guest */
   costPerExtraGuestLabel: PropTypes.string,
+  /** The text to display when no results are returned from the currency dropdown. */
+  currencyNoResultsText: PropTypes.string,
   /** The currency options which the user can select. */
   currencyOptions: PropTypes.arrayOf(
     PropTypes.shape({
