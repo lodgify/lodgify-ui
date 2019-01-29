@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextPlaceholder /> should render a single Semantic UI \`TextPlaceholder\` component 1`] = `
+<TextPlaceholder
+  isFluid={true}
+  length="full"
+>
+  <Placeholder
+    fluid={true}
+  >
+    <div
+      className="ui fluid placeholder"
+    >
+      <PlaceholderHeader>
+        <div
+          className="header"
+        >
+          <PlaceholderLine
+            length="full"
+          >
+            <div
+              className="line full"
+            />
+          </PlaceholderLine>
+        </div>
+      </PlaceholderHeader>
+    </div>
+  </Placeholder>
+</TextPlaceholder>
+`;
