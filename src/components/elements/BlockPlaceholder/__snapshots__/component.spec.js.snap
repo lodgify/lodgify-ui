@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockPlaceholder /> should have the right structure 1`] = `
+<BlockPlaceholder
+  isFluid={true}
+  isRectangular={false}
+  isSquare={false}
+>
+  <Placeholder
+    fluid={true}
+  >
+    <div
+      className="ui fluid placeholder"
+    >
+      <PlaceholderImage
+        rectangular={false}
+        square={false}
+      >
+        <div
+          className="image"
+        />
+      </PlaceholderImage>
+    </div>
+  </Placeholder>
+</BlockPlaceholder>
+`;
