@@ -1,3 +1,15 @@
+jest.mock('react-dates', () => {
+  const { Component } = require('react');
+
+  class SingleDatePicker extends Component {
+    render() {
+      return <div />;
+    }
+  }
+
+  return { SingleDatePicker };
+});
+
 import React from 'react';
 import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
@@ -51,26 +63,6 @@ describe('<CallMeBack />', () => {
   describe('if there is no `props.propertyOptions`', () => {
     it('should have the correct structure', () => {
       const wrapper = getCallMeBack({ propertyOptions: null });
-
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.successMessage` is passed', () => {
-    it('should render the success message above the submit button', () => {
-      const wrapper = getCallMeBack({
-        successMessage: 'This is a successful message',
-      });
-
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.errorMessage` is passed', () => {
-    it('should render the error message above the submit button', () => {
-      const wrapper = getCallMeBack({
-        errorMessage: 'This is an error message',
-      });
 
       expect(wrapper).toMatchSnapshot();
     });

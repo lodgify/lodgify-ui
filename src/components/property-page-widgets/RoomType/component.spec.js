@@ -1,3 +1,15 @@
+jest.mock('react-image-gallery', () => {
+  const { Component } = require('react');
+
+  class ImageGallery extends Component {
+    render() {
+      return <div />;
+    }
+  }
+
+  return ImageGallery;
+});
+
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';

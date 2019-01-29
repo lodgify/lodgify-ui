@@ -1,3 +1,15 @@
+jest.mock('react-dates', () => {
+  const { Component } = require('react');
+
+  class DateRangePicker extends Component {
+    render() {
+      return <div />;
+    }
+  }
+
+  return { DateRangePicker };
+});
+
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { Form } from 'semantic-ui-react';
@@ -40,7 +52,7 @@ describe('<SearchBar />', () => {
   describe('if `isDisplayedAsModal` is true', () => {
     it('should render the right structure', () => {
       const actual = getSearchBar({
-        isFixed: true,
+        isFixed: false,
         isDisplayedAsModal: true,
       })
         .find(GridColumn)
@@ -116,17 +128,6 @@ describe('<SearchBar />', () => {
 
       form.simulate('submit');
       expect(onSubmit).toHaveBeenCalledWith(wrapper.state());
-    });
-  });
-
-  describe('if `isDisplayedAsModal === true`', () => {
-    it('should render the right structure', () => {
-      const actual = getSearchBar({
-        isDisplayedAsModal: true,
-        modalTrigger: <div />,
-      });
-
-      expect(actual).toMatchSnapshot();
     });
   });
 });
