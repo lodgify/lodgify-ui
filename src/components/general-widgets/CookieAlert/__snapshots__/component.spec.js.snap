@@ -1,0 +1,299 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+<<<<<<< Updated upstream
+exports[`The \`CookieAlert\` component should return the right structure 1`] = `
+<Modal
+  dimmer={true}
+  hasMargin={true}
+  isAlignedBottom={true}
+  isBackgroundTransparent={true}
+  isFullscreen={false}
+  isJustifiedRight={true}
+  isModalRounded={true}
+  isOpen={false}
+  onClose={[MockFunction]}
+  size="tiny"
+  trigger={<div />}
+>
+  <HorizontalGutters>
+    <FlexContainer
+      alignContent={null}
+      alignItems="center"
+      flexDirection="column"
+      flexWrap={null}
+      justifyContent="center"
+    >
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+      <Paragraph
+        size="medium"
+        weight={null}
+      >
+        some text
+      </Paragraph>
+      <Link
+        href="/"
+        isPositionedRight={false}
+        onClick={[Function]}
+        willOpenInNewTab={false}
+      >
+        A link
+      </Link>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+      <Button
+        hasShadow={false}
+        icon={null}
+        isCompact={false}
+        isDisabled={false}
+        isLoading={false}
+        isPositionedRight={false}
+        isRounded={true}
+        isSecondary={false}
+        onClick={[MockFunction]}
+        size={null}
+      >
+        There is some text
+      </Button>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+    </FlexContainer>
+  </HorizontalGutters>
+</Modal>
+=======
+exports[`The \`CookieAlert\` component if isUserOnMobile is false should return the right structure 1`] = `
+<CookieAlert
+  buttonText="There is some text"
+  isFormOpen={true}
+  isOpen={false}
+  isUserOnMobile={false}
+  linkText="A link"
+  linkUrl="/"
+  onClick={[MockFunction]}
+  onSubmit={[MockFunction]}
+  text="some text"
+  trigger={<div />}
+>
+  <div
+    className="cookies-form"
+  >
+    <Form
+      actionLink={null}
+      autoComplete={null}
+      errorMessage=""
+      headingText={null}
+      onSubmit={[MockFunction]}
+      submitButtonText="There is some text"
+      successMessage=""
+      validation={Object {}}
+    >
+      <Card
+        className="has-form"
+        fluid={true}
+      >
+        <div
+          className="ui fluid card has-form"
+          onClick={[Function]}
+        >
+          <CardContent>
+            <div
+              className="content"
+            >
+              <Form
+                as="form"
+                autoComplete={null}
+                error={false}
+                onSubmit={[Function]}
+                success={false}
+              >
+                <form
+                  autoComplete={null}
+                  className="ui form"
+                  onSubmit={[Function]}
+                >
+                  <FormField
+                    key=".0"
+                  >
+                    <div
+                      className="field"
+                    >
+                      <Paragraph
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        size="medium"
+                        weight={null}
+                      >
+                        <p
+                          className=""
+                        >
+                          some text
+                        </p>
+                      </Paragraph>
+                    </div>
+                  </FormField>
+                  <Button
+                    hasShadow={false}
+                    icon={null}
+                    isCompact={false}
+                    isDisabled={false}
+                    isLoading={false}
+                    isPositionedRight={true}
+                    isRounded={false}
+                    isSecondary={false}
+                    onClick={[Function]}
+                    size={null}
+                  >
+                    <Button
+                      as="button"
+                      circular={false}
+                      className=""
+                      compact={false}
+                      disabled={false}
+                      floated="right"
+                      loading={false}
+                      onClick={[Function]}
+                      secondary={false}
+                      size={null}
+                    >
+                      <button
+                        className="ui right floated button"
+                        onClick={[Function]}
+                        role="button"
+                      >
+                        There is some text
+                      </button>
+                    </Button>
+                  </Button>
+                </form>
+              </Form>
+            </div>
+          </CardContent>
+        </div>
+      </Card>
+    </Form>
+  </div>
+</CookieAlert>
+`;
+
+exports[`The \`CookieAlert\` component if isUserOnMobile is true should return the right structure 1`] = `
+<CookieAlert
+  buttonText="There is some text"
+  isFormOpen={true}
+  isOpen={false}
+  isUserOnMobile={true}
+  linkText="A link"
+  linkUrl="/"
+  onClick={[MockFunction]}
+  onSubmit={[MockFunction]}
+  text="some text"
+  trigger={<div />}
+>
+  <Modal
+    closeIcon={null}
+    hasRoundedCorners={true}
+    isFullscreen={false}
+    isOpen={false}
+    onClose={[Function]}
+    size="tiny"
+    trigger={<div />}
+  >
+    <Modal
+      className="has-rounded-corners"
+      closeIcon={null}
+      closeOnDimmerClick={true}
+      closeOnDocumentClick={false}
+      content={
+        <HorizontalGutters>
+          <FlexContainer
+            alignContent={null}
+            alignItems="center"
+            flexDirection="column"
+            flexWrap={null}
+            justifyContent="center"
+          >
+            <Divider
+              className=""
+              hasLine={false}
+              size="medium"
+            />
+            <Paragraph
+              size="medium"
+              weight={null}
+            >
+              some text
+            </Paragraph>
+            <Divider
+              className=""
+              hasLine={false}
+              size="medium"
+            />
+            <Button
+              hasShadow={false}
+              icon={null}
+              isCompact={false}
+              isDisabled={false}
+              isLoading={false}
+              isPositionedRight={false}
+              isRounded={true}
+              isSecondary={false}
+              onClick={[MockFunction]}
+              size={null}
+            >
+              There is some text
+            </Button>
+            <Divider
+              className=""
+              hasLine={false}
+              size="medium"
+            />
+          </FlexContainer>
+        </HorizontalGutters>
+      }
+      dimmer="inverted"
+      eventPool="Modal"
+      onClose={[Function]}
+      open={false}
+      size="tiny"
+      trigger={<div />}
+    >
+      <Portal
+        className="ui inverted page modals dimmer transition visible active"
+        closeOnDocumentClick={false}
+        closeOnEscape={true}
+        closeOnRootNodeClick={true}
+        eventPool="Modal"
+        mountNode={<body />}
+        onClose={[Function]}
+        onMount={[Function]}
+        onOpen={[Function]}
+        onUnmount={[Function]}
+        open={false}
+        openOnTriggerClick={true}
+        trigger={<div />}
+      >
+        <Ref
+          innerRef={[Function]}
+        >
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          />
+        </Ref>
+      </Portal>
+    </Modal>
+  </Modal>
+</CookieAlert>
+>>>>>>> Stashed changes
+`;
