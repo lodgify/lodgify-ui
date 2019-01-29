@@ -1,6 +1,21 @@
 import { getDefaultValue } from './getDefaultValue';
 
 describe('getDefaultValue', () => {
+  describe('if `currentValue` or `value` are valid dropdown values', () => {
+    it('should return `undefined`', () => {
+      const options = [{}, {}];
+      const actual = getDefaultValue(
+        options,
+        true,
+        true,
+        'im a valid value',
+        'so am i'
+      );
+
+      expect(actual).toBe(undefined);
+    });
+  });
+
   describe('if `hasImages` equals true or `hasLabel` equals false', () => {
     it('should return the `value` property of the first index', () => {
       const options = [

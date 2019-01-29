@@ -240,7 +240,7 @@ describe('<Dropdown />', () => {
 
       expect(actual).toEqual({
         isOpen: false,
-        value: '',
+        value: undefined,
       });
     });
   });
@@ -286,7 +286,7 @@ describe('<Dropdown />', () => {
 
       expect(actual).toEqual({
         isOpen: true,
-        value: '',
+        value: undefined,
       });
     });
   });
@@ -301,7 +301,7 @@ describe('<Dropdown />', () => {
 
       expect(actual).toEqual({
         isOpen: true,
-        value: '',
+        value: undefined,
       });
     });
   });
