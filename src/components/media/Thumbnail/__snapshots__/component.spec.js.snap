@@ -3,6 +3,7 @@
 exports[`<Thumbnail /> by default should render the right structure 1`] = `
 <Thumbnail
   className="🚥"
+  hasMargin={false}
   hasRoundedCorners={false}
   imageUrl="www.⚡️.net"
   isCircular={false}
@@ -63,6 +64,7 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
 exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right structure 1`] = `
 <Thumbnail
   className="🚥"
+  hasMargin={false}
   hasRoundedCorners={false}
   imageUrl="www.⚡️.net"
   isCircular={true}
@@ -123,6 +125,7 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
 exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right structure 1`] = `
 <Thumbnail
   className="🚥"
+  hasMargin={false}
   hasRoundedCorners={false}
   imageUrl="www.⚡️.net"
   isCircular={false}
@@ -183,6 +186,7 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
 exports[`<Thumbnail /> if \`props.size\` is supplied should render the right structure 1`] = `
 <Thumbnail
   className="🚥"
+  hasMargin={false}
   hasRoundedCorners={false}
   imageUrl="www.⚡️.net"
   isCircular={false}
