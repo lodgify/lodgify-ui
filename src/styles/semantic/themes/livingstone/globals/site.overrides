@@ -556,6 +556,11 @@ blockquote.ui.quote .row {
   background-color: @placeholderBackgroundColor;
   border-radius: @placeholderBorderRadius;
   max-width: @placeholderMaxWidth;
+  overflow: hidden;
+  animation: @placeholderAnimation;
+  animation-iteration-count: infinite;
+  background-image: @placeholderBackgroundImageGradient;
+  background-size: @placeholderBackgroundSize;
 
   &.fluid {
     max-width: none;

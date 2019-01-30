@@ -480,9 +480,25 @@
        Placeholder
 -----------------------*/
 
-@placeholderBackgroundColor: @greyTwo;
+@placeholderBackgroundColor: @white;
 @placeholderMaxWidth: 30rem;
 @placeholderBorderRadius: 2px;
+@placeholderBackgroundImageGradient: linear-gradient(to right, rgba(0, 0, 0, 0.08) 0, rgba(0, 0, 0, 0.15) 15%, rgba(0, 0, 0, 0.08) 30%);
+@placeholderBackgroundStartPosition: -1200px;
+@placeholderBackgroundEndPosition: 1200px;
+@placeholderBackgroundSize: @placeholderBackgroundEndPosition 100%;
+@placeholderAnimation: placeholderShimmer 2s linear;
+
+@keyframes placeholderShimmer {
+
+  0% {
+    background-position: @placeholderBackgroundStartPosition 0;
+  }
+
+  100% {
+    background-position: @placeholderBackgroundEndPosition 0;
+  }
+}
 
 /* Block placeholder */
 @blockPlaceholderDefaultHeight: 100px;
