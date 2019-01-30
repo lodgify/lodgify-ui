@@ -51,10 +51,15 @@
 
   &.scrolling.modal {
     margin: 0 !important;
+    overflow: auto;
   }
 
   > .content > .link.item {
     display: inline-block;
+
+    > img:only-of-type {
+      max-height: @modalLogoMaxHeight;
+    }
   }
 
   > .content {
