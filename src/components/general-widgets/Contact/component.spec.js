@@ -1,8 +1,18 @@
+jest.mock('react-dates', () => {
+  const { Component } = require('react');
+
+  class DateRangePicker extends Component {
+    render() {
+      return <div />;
+    }
+  }
+
+  return { DateRangePicker };
+});
+
 import React from 'react';
 import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
-
-import { CaptchaInput } from 'inputs/CaptchaInput';
 
 import { roomOptions, propertyOptions } from './mock-data/options';
 import { Component as Contact } from './component';
@@ -38,34 +48,6 @@ describe('<Contact />', () => {
   describe('if `propertyOptions` and `roomOptions` are passed', () => {
     it('should have the correct structure', () => {
       const wrapper = getContact({ propertyOptions, roomOptions });
-
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
-  describe('the `CaptchaInput`', () => {
-    it('should have the right props', () => {
-      const wrapper = getContact().find(CaptchaInput);
-
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.successMessage` is passed', () => {
-    it('should render the success message above the submit button', () => {
-      const wrapper = getContact({
-        successMessage: 'This is a successful message',
-      });
-
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.errorMessage` is passed', () => {
-    it('should render the error message above the submit button', () => {
-      const wrapper = getContact({
-        errorMessage: 'This is an error message',
-      });
 
       expect(wrapper).toMatchSnapshot();
     });

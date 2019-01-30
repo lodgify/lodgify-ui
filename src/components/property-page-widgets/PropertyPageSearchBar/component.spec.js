@@ -1,3 +1,15 @@
+jest.mock('react-dates', () => {
+  const { Component } = require('react');
+
+  class DateRangePicker extends Component {
+    render() {
+      return <div />;
+    }
+  }
+
+  return { DateRangePicker };
+});
+
 import React from 'react';
 import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
