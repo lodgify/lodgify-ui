@@ -104,7 +104,6 @@
     margin-top: @verticalMenuInModalMarginTop;
 
     @media only screen and (max-width: @largeMonitorBreakpoint) {
-      margin-top: @verticalMenuInModalMarginTopMobile;
       justify-content: flex-start;
     }
 
