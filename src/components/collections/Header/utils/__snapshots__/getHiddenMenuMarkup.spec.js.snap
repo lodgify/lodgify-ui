@@ -67,8 +67,9 @@ exports[`getHiddenMenuMarkup by default should render the right structure 1`] = 
               closeOnDocumentClick={false}
               content={
                 Array [
-                  <Item
+                  <MenuItem
                     href="/"
+                    link={true}
                   >
                     <Image
                       alt="someLogoText"
@@ -78,7 +79,7 @@ exports[`getHiddenMenuMarkup by default should render the right structure 1`] = 
                       srcSet="someLogoSrcSet"
                       ui={true}
                     />
-                  </Item>,
+                  </MenuItem>,
                   <Menu
                     text={true}
                     vertical={true}
@@ -596,8 +597,9 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
               closeOnDocumentClick={false}
               content={
                 Array [
-                  <Item
+                  <MenuItem
                     href="/"
+                    link={true}
                   >
                     <Image
                       alt="someLogoText"
@@ -607,7 +609,7 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
                       srcSet="someLogoSrcSet"
                       ui={true}
                     />
-                  </Item>,
+                  </MenuItem>,
                   <Menu
                     text={true}
                     vertical={true}

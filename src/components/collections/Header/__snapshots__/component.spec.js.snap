@@ -69,12 +69,14 @@ exports[`<Header /> by default should render the right structure 1`] = `
           <div
             className="ui borderless ui text container menu"
           >
-            <Item
+            <MenuItem
               href="/"
+              link={true}
             >
               <a
-                className="item"
+                className="link item"
                 href="/"
+                onClick={[Function]}
               >
                 <Heading
                   className={null}
@@ -96,7 +98,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                   </Header>
                 </Heading>
               </a>
-            </Item>
+            </MenuItem>
             <ShowOn
               computer={false}
               mobile={true}
@@ -163,8 +165,9 @@ exports[`<Header /> by default should render the right structure 1`] = `
                           closeOnDocumentClick={false}
                           content={
                             Array [
-                              <Item
+                              <MenuItem
                                 href="/"
+                                link={true}
                               >
                                 <Heading
                                   className={null}
@@ -174,7 +177,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                                 >
                                   someLogoText
                                 </Heading>
-                              </Item>,
+                              </MenuItem>,
                               <Menu
                                 text={true}
                                 vertical={true}
@@ -775,12 +778,14 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
           <div
             className="ui borderless ui text container menu"
           >
-            <Item
+            <MenuItem
               href="/"
+              link={true}
             >
               <a
-                className="item"
+                className="link item"
                 href="/"
+                onClick={[Function]}
               >
                 <Heading
                   className={null}
@@ -802,7 +807,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                   </Header>
                 </Heading>
               </a>
-            </Item>
+            </MenuItem>
             <ShowOn
               computer={false}
               mobile={true}
@@ -869,8 +874,9 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                           closeOnDocumentClick={false}
                           content={
                             Array [
-                              <Item
+                              <MenuItem
                                 href="/"
+                                link={true}
                               >
                                 <Heading
                                   className={null}
@@ -880,7 +886,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                                 >
                                   someLogoText
                                 </Heading>
-                              </Item>,
+                              </MenuItem>,
                               <Menu
                                 text={true}
                                 vertical={true}
@@ -1481,12 +1487,14 @@ exports[`<Header /> if navigation items exceed the header max width should rende
           <div
             className="ui borderless ui text container menu"
           >
-            <Item
+            <MenuItem
               href="/"
+              link={true}
             >
               <a
-                className="item"
+                className="link item"
                 href="/"
+                onClick={[Function]}
               >
                 <Heading
                   className={null}
@@ -1508,7 +1516,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                   </Header>
                 </Heading>
               </a>
-            </Item>
+            </MenuItem>
             <ShowOn
               computer={true}
               mobile={true}
@@ -1575,8 +1583,9 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                           closeOnDocumentClick={false}
                           content={
                             Array [
-                              <Item
+                              <MenuItem
                                 href="/"
+                                link={true}
                               >
                                 <Heading
                                   className={null}
@@ -1586,7 +1595,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                                 >
                                   someLogoText
                                 </Heading>
-                              </Item>,
+                              </MenuItem>,
                               <Menu
                                 text={true}
                                 vertical={true}

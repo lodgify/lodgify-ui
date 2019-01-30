@@ -240,12 +240,14 @@ exports[`HomepageHero should render the right structure 1`] = `
                     <div
                       className="ui borderless ui text container menu"
                     >
-                      <Item
+                      <MenuItem
                         href="/"
+                        link={true}
                       >
                         <a
-                          className="item"
+                          className="link item"
                           href="/"
+                          onClick={[Function]}
                         >
                           <Image
                             alt="text"
@@ -264,7 +266,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                             />
                           </Image>
                         </a>
-                      </Item>
+                      </MenuItem>
                       <ShowOn
                         computer={false}
                         mobile={true}
@@ -612,8 +614,9 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     closeOnDocumentClick={false}
                                     content={
                                       Array [
-                                        <Item
+                                        <MenuItem
                                           href="/"
+                                          link={true}
                                         >
                                           <Image
                                             alt="text"
@@ -623,7 +626,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                             srcSet="a load of logo src sets"
                                             ui={true}
                                           />
-                                        </Item>,
+                                        </MenuItem>,
                                         <Menu
                                           text={true}
                                           vertical={true}
