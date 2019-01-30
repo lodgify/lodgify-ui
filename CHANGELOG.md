@@ -1,3 +1,10 @@
+# [1.122.0](https://github.com/lodgify/lodgify-ui/compare/v1.121.1...v1.122.0) (2019-01-30)
+
+
+### Features
+
+* **index:** implement missing component export ([aecfec3](https://github.com/lodgify/lodgify-ui/commit/aecfec3))
+
 ## [1.121.1](https://github.com/lodgify/lodgify-ui/compare/v1.121.0...v1.121.1) (2019-01-30)
 
 
