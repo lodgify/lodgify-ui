@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getLogoMarkup by default should render the right structure 1`] = `
-<Item
+<MenuItem
   href="/"
+  link={true}
 >
   <a
-    className="item"
+    className="link item"
     href="/"
+    onClick={[Function]}
   >
     <Heading
       className={null}
@@ -28,16 +30,18 @@ exports[`getLogoMarkup by default should render the right structure 1`] = `
       </Header>
     </Heading>
   </a>
-</Item>
+</MenuItem>
 `;
 
 exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are passed should render the right structure 1`] = `
-<Item
+<MenuItem
   href="/"
+  link={true}
 >
   <a
-    className="item"
+    className="link item"
     href="/"
+    onClick={[Function]}
   >
     <Image
       alt="someLogoText"
@@ -56,5 +60,5 @@ exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are pass
       />
     </Image>
   </a>
-</Item>
+</MenuItem>
 `;
