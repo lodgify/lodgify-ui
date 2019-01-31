@@ -6,6 +6,7 @@ export { Hero } from './components/collections/Hero';
 export { InputGroup } from './components/collections/InputGroup';
 
 // Elements
+export { BlockPlaceholder } from './components/elements/BlockPlaceholder';
 export { Button } from './components/elements/Button';
 export { Divider } from './components/elements/Divider';
 export { GoogleMap } from './components/elements/GoogleMap';
@@ -17,6 +18,7 @@ export { Pagination } from './components/elements/Pagination';
 export { Quote } from './components/elements/Quote';
 export { Rating } from './components/elements/Rating';
 export { Submenu } from './components/elements/Submenu';
+export { TextPlaceholder } from './components/elements/TextPlaceholder';
 export { Tooltip } from './components/elements/Tooltip';
 
 // General Widgets

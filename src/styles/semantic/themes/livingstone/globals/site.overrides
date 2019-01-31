@@ -547,3 +547,60 @@ blockquote.ui.quote .row {
     }
   }
 }
+
+/*----------------------
+       Placeholder
+-----------------------*/
+
+.placeholder {
+  background-color: @placeholderBackgroundColor;
+  border-radius: @placeholderBorderRadius;
+  max-width: @placeholderMaxWidth;
+  overflow: hidden;
+  animation: @placeholderAnimation;
+  animation-iteration-count: infinite;
+  background-image: @placeholderBackgroundImageGradient;
+  background-size: @placeholderBackgroundSize;
+
+  &.fluid {
+    max-width: none;
+  }
+}
+
+/* Block placeholder */
+.placeholder.block {
+  height: @blockPlaceholderDefaultHeight;
+
+  &.square {
+    padding-top: 100%;
+  }
+
+  &.rectangle {
+    padding-top: @blockPlaceholderRectanglePadding;
+  }
+}
+
+/* Text placeholder */
+.placeholder.text {
+  height: @textPlaceholderHeight;
+
+  &.short {
+    width: @textPlaceholderShortLength;
+  }
+
+  &.medium {
+    width: @textPlaceholderMediumLength;
+  }
+
+  &.long {
+    width: @textPlaceholderLongLength;
+  }
+
+  &.full {
+    width: @textPlaceholderFullLength;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: @textPlaceholderMarginBottom;
+  }
+}
