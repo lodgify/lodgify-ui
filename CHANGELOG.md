@@ -1,3 +1,13 @@
+# [1.123.0](https://github.com/lodgify/lodgify-ui/compare/v1.122.0...v1.123.0) (2019-01-31)
+
+
+### Features
+
+* **BlockPlaceholder:** add placeholder component ([b1d598b](https://github.com/lodgify/lodgify-ui/commit/b1d598b))
+* **index.js:** expose BlockPlaceholder and TextPlaceholder ([56fd281](https://github.com/lodgify/lodgify-ui/commit/56fd281))
+* **placeholder:** add animation ([b4b0aad](https://github.com/lodgify/lodgify-ui/commit/b4b0aad))
+* **TextPlaceholder:** add placeholder component ([60eeda5](https://github.com/lodgify/lodgify-ui/commit/60eeda5))
+
 # [1.122.0](https://github.com/lodgify/lodgify-ui/compare/v1.121.1...v1.122.0) (2019-01-30)
 
 
