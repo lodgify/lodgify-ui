@@ -65,6 +65,7 @@ export { GridRow } from './components/layout/GridRow';
 export { HorizontalGutters } from './components/layout/HorizontalGutters';
 export { ShowOn } from './components/layout/ShowOn';
 export { VerticalGutters } from './components/layout/VerticalGutters';
+export { Viewport } from './components/layout/Viewport';
 
 // Media
 export { FullBleed } from './components/media/FullBleed';

@@ -1,3 +1,19 @@
+# [1.122.0](https://github.com/lodgify/lodgify-ui/compare/v1.121.1...v1.122.0) (2019-01-30)
+
+
+### Features
+
+* **index:** implement missing component export ([aecfec3](https://github.com/lodgify/lodgify-ui/commit/aecfec3))
+
+## [1.121.1](https://github.com/lodgify/lodgify-ui/compare/v1.121.0...v1.121.1) (2019-01-30)
+
+
+### Bug Fixes
+
+* **getLogoMarkup:** revert logo wrapper structure ([7479bc9](https://github.com/lodgify/lodgify-ui/commit/7479bc9))
+* **menu.*:** improve hidden menu top margin on mobile ([a4dd603](https://github.com/lodgify/lodgify-ui/commit/a4dd603))
+* **modal.overrides:** add missing styles for header modal ([0ed8a0a](https://github.com/lodgify/lodgify-ui/commit/0ed8a0a))
+
 # [1.121.0](https://github.com/lodgify/lodgify-ui/compare/v1.120.0...v1.121.0) (2019-01-29)
 
 
