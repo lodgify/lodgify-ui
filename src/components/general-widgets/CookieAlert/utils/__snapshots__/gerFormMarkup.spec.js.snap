@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`getFormMarkup\` if isOpen is false should return false 1`] = `false`;
+
+exports[`\`getFormMarkup\` if isOpen is true should render the right structure 1`] = `
+<Form
+  actionLink={null}
+  autoComplete={null}
+  errorMessage=""
+  headingText={null}
+  onSubmit={[MockFunction]}
+  submitButtonText="Le Goose"
+  successMessage=""
+  validation={Object {}}
+>
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    eau
+  </Paragraph>
+</Form>
+`;
