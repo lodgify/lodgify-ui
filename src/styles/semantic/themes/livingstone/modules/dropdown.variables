@@ -119,6 +119,7 @@
 @labelColor: @itemColor;
 
 @labelDefaultWidth: ~"calc(100% - 55px)";
+@labelMinwWidth: 20px;
 
 @labelFocusColor: @textColor;
 @labelFocusFontSize: @10px;
@@ -127,6 +128,11 @@
 
 @withIconLabelLeftPosition: @dropdownWithIconPaddingLeft;
 @withIconLabelFocusXTranslate: @withIconLabelLeftPosition - @1px;
+
+@withLabelPadding: 5px;
+@withLabelFontSize: 14px;
+@withLabelTextMarginRight: 20px;
+@withLabelTextColor: @black;
 
 /*--------------
      Search
