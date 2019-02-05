@@ -93,6 +93,7 @@ export class Component extends PureComponent {
           open={isOpen}
           options={adaptedOptions}
           search={isSearchable}
+          selectOnBlur={false}
           selection
           upward={willOpenAbove}
           value={currentValue || value}
