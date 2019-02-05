@@ -2,6 +2,8 @@
 
 exports[`<Gallery /> by default should render the right structure 1`] = `
 <Modal
+  hasCloseIcon={true}
+  hasRoundedCorners={false}
   isFullscreen={true}
   onClose={[Function]}
   size="tiny"
@@ -102,6 +104,8 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
 
 exports[`<Gallery /> if \`props.heading\` is defined should render the right structure 1`] = `
 <Modal
+  hasCloseIcon={true}
+  hasRoundedCorners={false}
   isFullscreen={true}
   onClose={[Function]}
   size="tiny"
