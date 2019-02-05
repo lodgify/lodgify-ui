@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adaptOptions if any of the options has a label should return the right structure 1`] = `
+Array [
+  Object {
+    "className": "has-label",
+    "label": "Euro",
+    "text": "Eur",
+    "value": "eur",
+  },
+]
+`;

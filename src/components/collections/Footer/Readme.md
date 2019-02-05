@@ -1,8 +1,8 @@
 ```jsx
 const currencyOptions = [
-  { text: 'EUR', value: 'EUR' },
-  { text: 'USD', value: 'USD' },
-  { text: 'JPY', value: 'JPY' },
+  { text: 'EUR', value: 'EUR', label: 'Euro' },
+  { text: 'USD', value: 'USD', label: 'US Dollar' },
+  { text: 'JPY', value: 'JPY', label: 'Japanese Yen' },
 ];
 const languageOptions = [
   { text: 'English', value: 'en' },
@@ -43,9 +43,9 @@ const socialMediaLinks = [
 
 ```jsx
 const currencyOptions = [
-  { text: 'EUR', value: 'EUR' },
-  { text: 'USD', value: 'USD' },
-  { text: 'JPY', value: 'JPY' },
+  { text: 'EUR', value: 'EUR', label: 'Euro' },
+  { text: 'USD', value: 'USD', label: 'US Dollar' },
+  { text: 'JPY', value: 'JPY', label: 'Japanese Yen' },
 ];
 const languageOptions = [
   { text: 'English', value: 'en' },
@@ -98,7 +98,7 @@ const socialMediaLinks = [
 
 ```jsx
 const currencyOptions = [
-  { text: 'EUR', value: 'EUR' },
+  { text: 'EUR', value: 'EUR', label: 'Euro' },
 ];
 const languageOptions = [
   { text: 'English', value: 'en' },
@@ -134,8 +134,9 @@ const socialMediaLinks = [
 
 ```jsx
 const currencyOptions = [
-  { text: 'EUR', value: 'EUR' },
-  { text: 'USD', value: 'USD' },
+  { text: 'EUR', value: 'EUR', label: 'Euro' },
+  { text: 'USD', value: 'USD', label: 'US Dollar' },
+  { text: 'JPY', value: 'JPY', label: 'Japanese Yen' },
 ];
 const languageOptions = [
   { text: 'English', value: 'en' },
