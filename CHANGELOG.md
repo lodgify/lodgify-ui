@@ -1,3 +1,18 @@
+# [1.124.0](https://github.com/lodgify/lodgify-ui/compare/v1.123.0...v1.124.0) (2019-02-05)
+
+
+### Features
+
+* **adaptOptions:** implement label and update unit test ([a5aef49](https://github.com/lodgify/lodgify-ui/commit/a5aef49))
+* **Dropdown:** implement label prop inside options ([be86913](https://github.com/lodgify/lodgify-ui/commit/be86913))
+* **dropdown.*:** implement styles for dropdown label option ([26aad25](https://github.com/lodgify/lodgify-ui/commit/26aad25))
+* **getHasObjectProperty:** implement util and unit test ([f8baa2f](https://github.com/lodgify/lodgify-ui/commit/f8baa2f))
+
+
+### Performance Improvements
+
+* **getHas*Options:** remove obsolete logic ([f745d7b](https://github.com/lodgify/lodgify-ui/commit/f745d7b))
+
 # [1.123.0](https://github.com/lodgify/lodgify-ui/compare/v1.122.0...v1.123.0) (2019-01-31)
 
 
