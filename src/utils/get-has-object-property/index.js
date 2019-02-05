@@ -1,0 +1,1 @@
+export { getHasObjectProperty } from './getHasObjectProperty';
