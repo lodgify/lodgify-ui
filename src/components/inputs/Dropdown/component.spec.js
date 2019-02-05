@@ -118,7 +118,9 @@ describe('<Dropdown />', () => {
         open: false,
         options: expect.any(Array),
         search: false,
+        selectOnBlur: false,
         selection: true,
+        upward: false,
       });
     });
 
