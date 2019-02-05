@@ -72,3 +72,6 @@
 @withHorizontalCloseIconLeft: ~"calc(50% + @{halfContainerWidthWithPadding})";
 
 @roomTypeModalSlideshowImageHeight: 270px;
+
+/*Has rounded corners*/
+@modalBorderRadius: 5px;
