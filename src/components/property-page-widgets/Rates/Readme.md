@@ -1,8 +1,8 @@
 ```jsx
 const currencyOptions = [
-  { text: 'EUR €', value: 'eur' },
-  { text: 'GBP £', value: 'gbp' },
-  { text: 'USD $', value: 'usd' },
+  { text: 'EUR €', value: 'eur', label: 'Euro' },
+  { text: 'GBP £', value: 'gbp', label: 'British Pound' },
+  { text: 'USD $', value: 'usd', label: 'US Dollar' },
 ];
 const rateCategories = [
   {
@@ -39,9 +39,9 @@ With multi room type selector
 
 ```jsx
 const currencyOptions = [
-  { text: 'EUR €', value: 'eur' },
-  { text: 'GBP £', value: 'gbp' },
-  { text: 'USD $', value: 'usd' },
+  { text: 'EUR €', value: 'eur', label: 'Euro' },
+  { text: 'GBP £', value: 'gbp', label: 'British Pound' },
+  { text: 'USD $', value: 'usd', label: 'US Dollar' },
 ];
 const roomTypes = [
   {
@@ -99,7 +99,7 @@ const rateHeadings = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Weekly',
 
 ```jsx
 const currencyOptions = [
-  { text: 'EUR €', value: 'eur' },
+  { text: 'EUR €', value: 'eur', label: 'Euro' },
 ];
 const roomTypes = [
   {
