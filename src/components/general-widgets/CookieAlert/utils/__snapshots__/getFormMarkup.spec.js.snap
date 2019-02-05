@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`getFormMarkup\` should render the right structure 1`] = `
+<Form
+  actionLink={null}
+  autoComplete={null}
+  errorMessage=""
+  headingText={null}
+  onSubmit={[MockFunction]}
+  submitButtonText="Le Goose"
+  successMessage=""
+  validation={Object {}}
+>
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    eau
+  </Paragraph>
+  <Link
+    href="Bup"
+    isPositionedRight={false}
+    onClick={[Function]}
+    willOpenInNewTab={false}
+  >
+    Bip
+  </Link>
+</Form>
+`;
