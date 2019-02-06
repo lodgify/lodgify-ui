@@ -60,6 +60,22 @@ describe('<Footer />', () => {
     });
   });
 
+  describe('if `props.currencyOptions` is an empty array or undefined', () => {
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ currencyOptions: [] });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.languageOptions` is an empty array or undefined', () => {
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ languageOptions: undefined });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   describe('if `socialMediaLinks` has length > 0', () => {
     it('should render the right structure', () => {
       const wrapper = getFooter({ socialMediaLinks });
