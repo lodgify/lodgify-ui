@@ -164,6 +164,8 @@ Component.propTypes = {
       imageUrl: PropTypes.string,
       /** The indent level of an option. One of: 0, 1, 2, 3, 4, 5 */
       indent: PropTypes.oneOf([0, 1, 2, 3, 4, 5]),
+      /** The visible label for the option. */
+      label: PropTypes.string,
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */

@@ -11,6 +11,8 @@ Array [
 ]
 `;
 
+exports[`adaptOptions if one or more options have a \`label\` should return the right \`options\` structure 1`] = `"has-label"`;
+
 exports[`adaptOptions if one or more options have an \`indent\` should return the right \`options\` structure 1`] = `"indent-1"`;
 
 exports[`adaptOptions if one or more options specify an \`image\` should return the right \`options\` structure 1`] = `
