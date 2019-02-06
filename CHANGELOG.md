@@ -1,3 +1,10 @@
+# [1.126.0](https://github.com/lodgify/lodgify-ui/compare/v1.125.1...v1.126.0) (2019-02-06)
+
+
+### Features
+
+* **react-dates-datepicker.*:** implement minimum height for DayPicker ([f17a770](https://github.com/lodgify/lodgify-ui/commit/f17a770))
+
 ## [1.125.1](https://github.com/lodgify/lodgify-ui/compare/v1.125.0...v1.125.1) (2019-02-06)
 
 
