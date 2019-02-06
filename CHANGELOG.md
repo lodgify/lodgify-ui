@@ -1,3 +1,19 @@
+# [1.125.0](https://github.com/lodgify/lodgify-ui/compare/v1.124.0...v1.125.0) (2019-02-06)
+
+
+### Bug Fixes
+
+* **package:** temporarily install terser 3.14.1 to avoid breaking changes ([7f71e13](https://github.com/lodgify/lodgify-ui/commit/7f71e13))
+
+
+### Features
+
+* **CookieAlert:** implement component ([37f3d63](https://github.com/lodgify/lodgify-ui/commit/37f3d63))
+* **form.*:** implement CookieAlert form styles ([5bb5f7e](https://github.com/lodgify/lodgify-ui/commit/5bb5f7e))
+* **getFormMarkup:** implement util and unit test ([aaebe8e](https://github.com/lodgify/lodgify-ui/commit/aaebe8e))
+* **Modal:** expose required props for CookieAlert implementation ([4d2b978](https://github.com/lodgify/lodgify-ui/commit/4d2b978))
+* **modal.*:** implement rounded corner variation and margin ([b533a39](https://github.com/lodgify/lodgify-ui/commit/b533a39))
+
 # [1.124.0](https://github.com/lodgify/lodgify-ui/compare/v1.123.0...v1.124.0) (2019-02-05)
 
 
