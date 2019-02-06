@@ -47,6 +47,7 @@
         border-radius: 0 0 @borderRadius @borderRadius;
       }
 
+      &.selected,
       &.selected:hover,
       &.active:hover,
       &.item:hover {
