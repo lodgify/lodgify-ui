@@ -14,6 +14,7 @@ export const getRoomFeaturesMarkup = (showIcons, features) => (
   <GridColumn
     as={List}
     className="only-horizontal-padding"
+    computer={12}
     floated="left"
     horizontal
   >
