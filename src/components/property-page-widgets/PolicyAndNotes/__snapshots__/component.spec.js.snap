@@ -371,6 +371,8 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                     className="top aligned twelve wide column"
                   >
                     <Modal
+                      hasCloseIcon={true}
+                      hasRoundedCorners={false}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"
@@ -386,6 +388,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                       }
                     >
                       <Modal
+                        className=""
                         closeIcon={
                           <Icon
                             color={null}

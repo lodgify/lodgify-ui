@@ -343,6 +343,8 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   willDropdownsOpenAbove={false}
                                 >
                                   <Modal
+                                    hasCloseIcon={true}
+                                    hasRoundedCorners={false}
                                     isFullscreen={true}
                                     onClose={[Function]}
                                     size="tiny"
@@ -364,6 +366,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     }
                                   >
                                     <Modal
+                                      className=""
                                       closeIcon={
                                         <Icon
                                           color={null}
@@ -573,6 +576,8 @@ exports[`HomepageHero should render the right structure 1`] = `
                                 onClick={[Function]}
                               >
                                 <Modal
+                                  hasCloseIcon={true}
+                                  hasRoundedCorners={false}
                                   isFullscreen={true}
                                   onClose={[Function]}
                                   size="tiny"
@@ -594,6 +599,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   }
                                 >
                                   <Modal
+                                    className=""
                                     closeIcon={
                                       <Icon
                                         color={null}
@@ -1140,7 +1146,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         renderLabel={[Function]}
                                                         search={false}
                                                         searchInput="text"
-                                                        selectOnBlur={true}
+                                                        selectOnBlur={false}
                                                         selectOnNavigation={true}
                                                         selection={true}
                                                         upward={true}
@@ -1494,7 +1500,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         renderLabel={[Function]}
                                                         search={false}
                                                         searchInput="text"
-                                                        selectOnBlur={true}
+                                                        selectOnBlur={false}
                                                         selectOnNavigation={true}
                                                         selection={true}
                                                         upward={true}

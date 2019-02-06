@@ -80,3 +80,13 @@
 /*-------------------
        Groups
 --------------------*/
+
+/*-------------------
+       Cookie Alert
+--------------------*/
+
+@cookieAlertFormPadding: 30px;
+@cookieAlertFormMargin: 30px;
+@cookieAlertFormMaxWidth: 300px;
+@cookieAlertFormZIndex: 3;
+@cookieAlertFormFieldMarginBottom: 10px;

@@ -305,6 +305,8 @@ exports[`<Reviews /> should render the right structure 1`] = `
                     className="right floated top aligned six wide computer seven wide mobile seven wide tablet column"
                   >
                     <Modal
+                      hasCloseIcon={true}
+                      hasRoundedCorners={false}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"
@@ -326,6 +328,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                       }
                     >
                       <Modal
+                        className=""
                         closeIcon={
                           <Icon
                             color={null}
