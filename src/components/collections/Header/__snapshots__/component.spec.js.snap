@@ -124,6 +124,8 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       onClick={[Function]}
                     >
                       <Modal
+                        hasCloseIcon={true}
+                        hasRoundedCorners={false}
                         isFullscreen={true}
                         onClose={[Function]}
                         size="tiny"
@@ -145,6 +147,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}
@@ -833,6 +836,8 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       onClick={[Function]}
                     >
                       <Modal
+                        hasCloseIcon={true}
+                        hasRoundedCorners={false}
                         isFullscreen={true}
                         onClose={[Function]}
                         size="tiny"
@@ -854,6 +859,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}
@@ -1542,6 +1548,8 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                       onClick={[Function]}
                     >
                       <Modal
+                        hasCloseIcon={true}
+                        hasRoundedCorners={false}
                         isFullscreen={true}
                         onClose={[Function]}
                         size="tiny"
@@ -1563,6 +1571,7 @@ exports[`<Header /> if navigation items exceed the header max width should rende
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}

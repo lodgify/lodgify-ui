@@ -161,3 +161,13 @@
     }
   }
 }
+
+/* Has rounded corners */
+.ui.modal.has-rounded-corners {
+  border-radius: @modalBorderRadius;
+
+  & p + .ui.basic.button:only-of-type {
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}

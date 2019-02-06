@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal } from 'semantic-ui-react';
+import getClassNames from 'classnames';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
@@ -11,6 +12,8 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   children,
+  hasCloseIcon,
+  hasRoundedCorners,
   isFullscreen,
   isOpen,
   onClose,
@@ -18,7 +21,10 @@ export const Component = ({
   trigger,
 }) => (
   <Modal
-    closeIcon={<Icon name={ICON_NAMES.CLOSE} />}
+    className={getClassNames({
+      'has-rounded-corners': hasRoundedCorners,
+    })}
+    closeIcon={hasCloseIcon && <Icon name={ICON_NAMES.CLOSE} />}
     content={children}
     dimmer="inverted"
     onClose={onClose}
@@ -31,23 +37,30 @@ export const Component = ({
 Component.displayName = 'Modal';
 
 Component.defaultProps = {
+  hasCloseIcon: true,
+  hasRoundedCorners: false,
   isFullscreen: false,
   isOpen: undefined,
   onClose: Function.prototype,
+  trigger: null,
   size: 'tiny',
 };
 
 Component.propTypes = {
   /** The content of the modal when displayed. */
   children: PropTypes.node.isRequired,
+  /** Does the modal have a close icon. */
+  hasCloseIcon: PropTypes.bool,
+  /** Does the modal have round corners. */
+  hasRoundedCorners: PropTypes.bool,
   /** Is the modal filling the whole screen when displayed. */
   isFullscreen: PropTypes.bool,
   /** Is the modal open. Used when consuming `Modal` as a controlled component. */
   isOpen: PropTypes.bool,
   /** A function called when a close event happens. Used when consuming `Modal` as a controlled component. */
   onClose: PropTypes.func,
-  /** The size of the modal */
+  /** The size of the modal. */
   size: PropTypes.oneOf(['mini', 'tiny', 'small', 'large']),
   /** The element to be clicked to display the modal. */
-  trigger: PropTypes.node.isRequired,
+  trigger: PropTypes.node,
 };

@@ -331,6 +331,8 @@ exports[`PropertyPageHero by default if there are fewer than two images should r
                                   willDropdownsOpenAbove={false}
                                 >
                                   <Modal
+                                    hasCloseIcon={true}
+                                    hasRoundedCorners={false}
                                     isFullscreen={true}
                                     onClose={[Function]}
                                     size="tiny"
@@ -352,6 +354,7 @@ exports[`PropertyPageHero by default if there are fewer than two images should r
                                     }
                                   >
                                     <Modal
+                                      className=""
                                       closeIcon={
                                         <Icon
                                           color={null}
@@ -559,6 +562,8 @@ exports[`PropertyPageHero by default if there are fewer than two images should r
                                 onClick={[Function]}
                               >
                                 <Modal
+                                  hasCloseIcon={true}
+                                  hasRoundedCorners={false}
                                   isFullscreen={true}
                                   onClose={[Function]}
                                   size="tiny"
@@ -580,6 +585,7 @@ exports[`PropertyPageHero by default if there are fewer than two images should r
                                   }
                                 >
                                   <Modal
+                                    className=""
                                     closeIcon={
                                       <Icon
                                         color={null}
@@ -1153,6 +1159,8 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                   willDropdownsOpenAbove={false}
                                 >
                                   <Modal
+                                    hasCloseIcon={true}
+                                    hasRoundedCorners={false}
                                     isFullscreen={true}
                                     onClose={[Function]}
                                     size="tiny"
@@ -1174,6 +1182,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                     }
                                   >
                                     <Modal
+                                      className=""
                                       closeIcon={
                                         <Icon
                                           color={null}
@@ -1381,6 +1390,8 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                 onClick={[Function]}
                               >
                                 <Modal
+                                  hasCloseIcon={true}
+                                  hasRoundedCorners={false}
                                   isFullscreen={true}
                                   onClose={[Function]}
                                   size="tiny"
@@ -1402,6 +1413,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                                   }
                                 >
                                   <Modal
+                                    className=""
                                     closeIcon={
                                       <Icon
                                         color={null}
@@ -1691,6 +1703,8 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                       }
                     >
                       <Modal
+                        hasCloseIcon={true}
+                        hasRoundedCorners={false}
                         isFullscreen={true}
                         onClose={[Function]}
                         size="tiny"
@@ -1712,6 +1726,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}

@@ -1378,6 +1378,8 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                     className="right floated top aligned seven wide column"
                                   >
                                     <Modal
+                                      hasCloseIcon={true}
+                                      hasRoundedCorners={false}
                                       isFullscreen={true}
                                       onClose={[Function]}
                                       size="tiny"
@@ -1399,6 +1401,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                       }
                                     >
                                       <Modal
+                                        className=""
                                         closeIcon={
                                           <Icon
                                             color={null}

@@ -26,6 +26,8 @@ exports[`getHiddenMenuMarkup by default should render the right structure 1`] = 
           onClick={[Function]}
         >
           <Modal
+            hasCloseIcon={true}
+            hasRoundedCorners={false}
             isFullscreen={true}
             onClose={[Function]}
             size="tiny"
@@ -47,6 +49,7 @@ exports[`getHiddenMenuMarkup by default should render the right structure 1`] = 
             }
           >
             <Modal
+              className=""
               closeIcon={
                 <Icon
                   color={null}
@@ -328,6 +331,8 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
             willDropdownsOpenAbove={false}
           >
             <Modal
+              hasCloseIcon={true}
+              hasRoundedCorners={false}
               isFullscreen={true}
               onClose={[Function]}
               size="tiny"
@@ -349,6 +354,7 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
               }
             >
               <Modal
+                className=""
                 closeIcon={
                   <Icon
                     color={null}
@@ -556,6 +562,8 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
           onClick={[Function]}
         >
           <Modal
+            hasCloseIcon={true}
+            hasRoundedCorners={false}
             isFullscreen={true}
             onClose={[Function]}
             size="tiny"
@@ -577,6 +585,7 @@ exports[`getHiddenMenuMarkup if \`props.searchBarGuestsOptions\` and \`props.sea
             }
           >
             <Modal
+              className=""
               closeIcon={
                 <Icon
                   color={null}

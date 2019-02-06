@@ -97,3 +97,33 @@
        Groups
 --------------------*/
 }
+
+/*-------------------
+       Cookie Alert
+--------------------*/
+
+.cookies-form {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: @cookieAlertFormMargin;
+  max-width: @cookieAlertFormMaxWidth;
+  z-index: @cookieAlertFormZIndex;
+
+  .ui.card.has-form {
+    padding: @cookieAlertFormPadding;
+
+    .field {
+      margin-bottom: @cookieAlertFormFieldMarginBottom;
+    }
+
+    .ui.button {
+      float: none;
+      margin: 0 auto;
+    }
+
+    .ui.basic.floated.button {
+      padding: 0;
+    }
+  }
+}

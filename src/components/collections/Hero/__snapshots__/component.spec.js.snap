@@ -290,6 +290,8 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                 willDropdownsOpenAbove={false}
                               >
                                 <Modal
+                                  hasCloseIcon={true}
+                                  hasRoundedCorners={false}
                                   isFullscreen={true}
                                   onClose={[Function]}
                                   size="tiny"
@@ -311,6 +313,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                   }
                                 >
                                   <Modal
+                                    className=""
                                     closeIcon={
                                       <Icon
                                         color={null}
@@ -531,6 +534,8 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                               onClick={[Function]}
                             >
                               <Modal
+                                hasCloseIcon={true}
+                                hasRoundedCorners={false}
                                 isFullscreen={true}
                                 onClose={[Function]}
                                 size="tiny"
@@ -552,6 +557,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                 }
                               >
                                 <Modal
+                                  className=""
                                   closeIcon={
                                     <Icon
                                       color={null}
