@@ -1,3 +1,10 @@
+## [1.126.1](https://github.com/lodgify/lodgify-ui/compare/v1.126.0...v1.126.1) (2019-02-06)
+
+
+### Bug Fixes
+
+* **Dropdown:** apply theme colors to all items in all states ([ccf6458](https://github.com/lodgify/lodgify-ui/commit/ccf6458))
+
 # [1.126.0](https://github.com/lodgify/lodgify-ui/compare/v1.125.1...v1.126.0) (2019-02-06)
 
 
