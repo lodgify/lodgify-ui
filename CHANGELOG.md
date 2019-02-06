@@ -1,3 +1,10 @@
+## [1.125.1](https://github.com/lodgify/lodgify-ui/compare/v1.125.0...v1.125.1) (2019-02-06)
+
+
+### Bug Fixes
+
+* **Dropdown:** add props.selectOnBlur={false} ([2f0ed56](https://github.com/lodgify/lodgify-ui/commit/2f0ed56))
+
 # [1.125.0](https://github.com/lodgify/lodgify-ui/compare/v1.124.0...v1.125.0) (2019-02-06)
 
 
