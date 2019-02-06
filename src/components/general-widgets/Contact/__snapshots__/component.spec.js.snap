@@ -708,7 +708,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               renderLabel={[Function]}
                               search={false}
                               searchInput="text"
-                              selectOnBlur={true}
+                              selectOnBlur={false}
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
@@ -998,7 +998,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               renderLabel={[Function]}
                               search={false}
                               searchInput="text"
-                              selectOnBlur={true}
+                              selectOnBlur={false}
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
@@ -2001,7 +2001,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               renderLabel={[Function]}
                               search={false}
                               searchInput="text"
-                              selectOnBlur={true}
+                              selectOnBlur={false}
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
@@ -3025,7 +3025,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               renderLabel={[Function]}
                               search={false}
                               searchInput="text"
-                              selectOnBlur={true}
+                              selectOnBlur={false}
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
