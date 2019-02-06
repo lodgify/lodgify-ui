@@ -56,9 +56,11 @@
 
     & > .selected.item:hover,
     & > .active.item:hover,
-    & > .item:hover, {
+    & > .item:hover {
       background: @themeActionColorDefault !important;
       background: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+      color: @themeActionContrastColorDefault !important;
+      color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault) !important;
     }
   }
 
