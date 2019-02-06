@@ -54,26 +54,30 @@ export const Component = ({
     </div>
     <div className="bottom-navigation">
       <HorizontalGutters as={Menu} borderless inverted stackable>
-        <Menu.Item>
-          <Submenu
-            items={languageOptions}
-            name="language"
-            onChange={onChangeLanguage}
-            value={languageValue}
-            willOpenAbove
-          />
-        </Menu.Item>
-        <Menu.Item>
-          <Submenu
-            isSearchable
-            items={currencyOptions}
-            name="currency"
-            noResultsText={currencyNoResultsText}
-            onChange={onChangeCurrency}
-            value={currencyValue}
-            willOpenAbove
-          />
-        </Menu.Item>
+        {size(languageOptions) > 1 && (
+          <Menu.Item>
+            <Submenu
+              items={languageOptions}
+              name="language"
+              onChange={onChangeLanguage}
+              value={languageValue}
+              willOpenAbove
+            />
+          </Menu.Item>
+        )}
+        {size(currencyOptions) > 1 && (
+          <Menu.Item>
+            <Submenu
+              isSearchable
+              items={currencyOptions}
+              name="currency"
+              noResultsText={currencyNoResultsText}
+              onChange={onChangeCurrency}
+              value={currencyValue}
+              willOpenAbove
+            />
+          </Menu.Item>
+        )}
         {!!phoneNumber && (
           <Menu.Item className="is-selectable">
             <a href={getHrefTelString(phoneNumber)}>
@@ -111,7 +115,9 @@ Component.displayName = 'Footer';
 Component.defaultProps = {
   copyrightText: null,
   currencyNoResultsText: undefined,
+  currencyOptions: [],
   currencyValue: null,
+  languageOptions: [],
   languageValue: null,
   socialMediaLinks: [],
 };
@@ -133,7 +139,7 @@ Component.propTypes = {
         PropTypes.string,
       ]),
     })
-  ).isRequired,
+  ),
   /** The current value of the currency dropdown. */
   currencyValue: PropTypes.oneOfType([
     PropTypes.bool,
@@ -152,7 +158,7 @@ Component.propTypes = {
         PropTypes.string,
       ]),
     })
-  ).isRequired,
+  ),
   /** The current value of the language dropdown. */
   languageValue: PropTypes.oneOfType([
     PropTypes.bool,
