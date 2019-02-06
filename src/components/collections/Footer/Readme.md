@@ -128,6 +128,68 @@ const socialMediaLinks = [
 />
 ```
 
+#### Without Currency Options
+
+```jsx
+const currencyOptions = [];
+const languageOptions = [
+  { text: 'English', value: 'en' },
+  { text: 'Italian', value: 'it' },
+];
+const navigationItems = [
+  { href: '/', text: 'Home' },
+  { href: '/contact', text: 'Contact' },
+  { href: '/gym', text: 'Gym' },
+];
+const socialMediaLinks = [
+  { href: 'https://twitter.com/lodgify', iconName: 'twitter' },
+];
+
+<Footer
+  copyrightText="\u00A9 2018 Feline Vacations. All rights reserved."
+  currencyOptions={currencyOptions}
+  languageOptions={languageOptions}
+  languageValue={languageOptions[0].value}
+  navigationItems={navigationItems}
+  onChangeCurrency={console.log}
+  onChangeLanguage={console.log}
+  phoneNumber={'+1 2345 678912'}
+  propertyAddress={'The Cat House, Pawprint Way, Catania 08012'}
+  socialMediaLinks={socialMediaLinks}
+/>
+```
+
+#### Without Language Options
+
+```jsx
+const currencyOptions = [
+  { text: 'EUR', value: 'EUR', label: 'Euro' },
+  { text: 'USD', value: 'USD', label: 'US Dollar' },
+];
+const languageOptions = [];
+const navigationItems = [
+  { href: '/', text: 'Home' },
+  { href: '/contact', text: 'Contact' },
+  { href: '/gym', text: 'Gym' },
+];
+const socialMediaLinks = [
+  { href: 'https://twitter.com/lodgify', iconName: 'twitter' },
+];
+
+<Footer
+  copyrightText="\u00A9 2018 Feline Vacations. All rights reserved."
+  currencyOptions={currencyOptions}
+  currencyValue={currencyOptions[0].value}
+  languageOptions={languageOptions}
+  navigationItems={navigationItems}
+  onChangeCurrency={console.log}
+  onChangeLanguage={console.log}
+  phoneNumber={'+1 2345 678912'}
+  propertyAddress={'The Cat House, Pawprint Way, Catania 08012'}
+  socialMediaLinks={socialMediaLinks}
+/>
+```
+
 ### Usage
 
 #### Control dropdown values
