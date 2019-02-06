@@ -18,7 +18,8 @@
   /* Current Text */
   > .text,
   > .text .text,
-  > label {
+  > label,
+  .has-label .label {
     line-height: @textLineHeight;
     min-height: @textLineHeight;
     overflow: hidden;
@@ -50,6 +51,30 @@
         background: @themeActionColorDefault;
         background: var(@themeActionColorIdentifier, @themeActionColorDefault);
         color: @hoveredItemColor;
+      }
+
+      /*With label*/
+      &.has-label {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+
+        .ui.label {
+          background: transparent;
+          padding: @withLabelPadding;
+          color: @itemColor;
+          font-size: @withLabelFontSize;
+          text-align: left;
+          min-width: @labelMinwWidth;
+        }
+
+        .text {
+          margin-right: @withLabelTextMarginRight;
+          font-weight: bold;
+          color: @withLabelTextColor;
+          font-size: @withLabelFontSize;
+        }
       }
     }
   }

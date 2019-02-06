@@ -44,3 +44,17 @@ class Controller extends React.Component {
 
 <Controller />
 ```
+
+#### Label
+
+```jsx
+const items = [
+  { text: 'EUR', value: 'eur', label: 'Euro' },
+  { text: 'GBP', value: 'gbp', label: 'British Pound' },
+  { text: 'USD', value: 'usd', label: 'US Dollar' },
+  { text: 'ZAR', value: 'zar', label: 'South African Rand' },
+];
+
+<Submenu items={items}>EUR</Submenu>
+```
+

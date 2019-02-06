@@ -44,4 +44,20 @@ describe('adaptOptions', () => {
       expect(actual).toMatchSnapshot();
     });
   });
+
+  describe('if one or more options have a `label`', () => {
+    it('should return the right `options` structure', () => {
+      const options = [
+        {
+          label: 'Euro',
+          text: 'Eur',
+          value: 'eur',
+        },
+      ];
+      const adaptedOptions = adaptOptions(options, false);
+      const actual = adaptedOptions[0].className;
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
 });
