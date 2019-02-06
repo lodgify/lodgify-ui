@@ -1,0 +1,518 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The \`CookieAlert\` component if \`isOpen\` is false should return the right structure 1`] = `
+<CookieAlert
+  buttonText="There is some text"
+  isOpen={false}
+  isUserOnMobile={false}
+  linkText="A link"
+  linkUrl="/"
+  onAccept={[MockFunction]}
+  text="some text"
+/>
+`;
+
+exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the right structure 1`] = `
+<CookieAlert
+  buttonText="There is some text"
+  isOpen={true}
+  isUserOnMobile={true}
+  linkText="A link"
+  linkUrl="/"
+  onAccept={[MockFunction]}
+  text="some text"
+>
+  <Modal
+    hasCloseIcon={false}
+    hasRoundedCorners={true}
+    isFullscreen={false}
+    isOpen={true}
+    onClose={[Function]}
+    size="tiny"
+    trigger={null}
+  >
+    <Modal
+      className="has-rounded-corners"
+      closeIcon={false}
+      closeOnDimmerClick={true}
+      closeOnDocumentClick={false}
+      content={
+        <HorizontalGutters>
+          <FlexContainer
+            alignContent={null}
+            alignItems="center"
+            flexDirection="column"
+            flexWrap={null}
+            justifyContent="center"
+          >
+            <Divider
+              className=""
+              hasLine={false}
+              size="medium"
+            />
+            <Paragraph
+              size="medium"
+              weight={null}
+            >
+              some text
+            </Paragraph>
+            <Link
+              href="/"
+              isPositionedRight={false}
+              onClick={[Function]}
+              willOpenInNewTab={false}
+            >
+              A link
+            </Link>
+            <Divider
+              className=""
+              hasLine={false}
+              size="medium"
+            />
+            <Button
+              hasShadow={false}
+              icon={null}
+              isCompact={false}
+              isDisabled={false}
+              isLoading={false}
+              isPositionedRight={false}
+              isRounded={false}
+              isSecondary={false}
+              onClick={[MockFunction]}
+              size={null}
+            >
+              There is some text
+            </Button>
+             
+            <Divider
+              className=""
+              hasLine={false}
+              size="medium"
+            />
+          </FlexContainer>
+        </HorizontalGutters>
+      }
+      dimmer="inverted"
+      eventPool="Modal"
+      onClose={[Function]}
+      open={true}
+      size="tiny"
+      trigger={null}
+    >
+      <Portal
+        className="ui inverted page modals dimmer transition visible active"
+        closeOnDocumentClick={false}
+        closeOnEscape={true}
+        closeOnRootNodeClick={true}
+        eventPool="Modal"
+        mountNode={
+          <body
+            class="dimmable dimmed"
+          >
+            <div
+              class="ui inverted page modals dimmer transition visible active"
+            >
+              <div
+                class="ui tiny modal transition visible active has-rounded-corners"
+              >
+                <div
+                  class="ui container"
+                >
+                  <div
+                    style="display: flex; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                  >
+                    <div
+                      class="ui hidden divider"
+                    />
+                    <p
+                      class=""
+                    >
+                      some text
+                    </p>
+                    <a
+                      class="ui basic left floated button"
+                      href="/"
+                      role="button"
+                      target="_self"
+                    >
+                      A link
+                    </a>
+                    <div
+                      class="ui hidden divider"
+                    />
+                    <button
+                      class="ui left floated button"
+                      role="button"
+                    >
+                      There is some text
+                    </button>
+                     
+                    <div
+                      class="ui hidden divider"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </body>
+        }
+        onClose={[Function]}
+        onMount={[Function]}
+        onOpen={[Function]}
+        onUnmount={[Function]}
+        open={true}
+        openOnTriggerClick={true}
+        trigger={null}
+      />
+    </Modal>
+  </Modal>
+</CookieAlert>
+`;
+
+exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should return the right structure 1`] = `
+<CookieAlert
+  buttonText="There is some text"
+  isOpen={true}
+  isUserOnMobile={false}
+  linkText="A link"
+  linkUrl="/"
+  onAccept={[MockFunction]}
+  text="some text"
+>
+  <div
+    className="cookies-form"
+  >
+    <Form
+      actionLink={null}
+      autoComplete={null}
+      errorMessage=""
+      headingText={null}
+      onSubmit={[MockFunction]}
+      submitButtonText="There is some text"
+      successMessage=""
+      validation={Object {}}
+    >
+      <Card
+        className="has-form"
+        fluid={true}
+      >
+        <div
+          className="ui fluid card has-form"
+          onClick={[Function]}
+        >
+          <CardContent>
+            <div
+              className="content"
+            >
+              <Form
+                as="form"
+                autoComplete={null}
+                error={false}
+                onSubmit={[Function]}
+                success={false}
+              >
+                <form
+                  autoComplete={null}
+                  className="ui form"
+                  onSubmit={[Function]}
+                >
+                  <FormField
+                    key=".0"
+                  >
+                    <div
+                      className="field"
+                    >
+                      <Paragraph
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        size="medium"
+                        weight={null}
+                      >
+                        <p
+                          className=""
+                        >
+                          some text
+                        </p>
+                      </Paragraph>
+                    </div>
+                  </FormField>
+                  <FormField
+                    key=".1"
+                  >
+                    <div
+                      className="field"
+                    >
+                      <Link
+                        href="/"
+                        isPositionedRight={false}
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        willOpenInNewTab={false}
+                      >
+                        <Button
+                          as="a"
+                          basic={true}
+                          floated="left"
+                          href="/"
+                          onClick={[Function]}
+                          target="_self"
+                        >
+                          <a
+                            className="ui basic left floated button"
+                            href="/"
+                            onClick={[Function]}
+                            role="button"
+                            target="_self"
+                          >
+                            A link
+                          </a>
+                        </Button>
+                      </Link>
+                    </div>
+                  </FormField>
+                  <Button
+                    hasShadow={false}
+                    icon={null}
+                    isCompact={false}
+                    isDisabled={false}
+                    isLoading={false}
+                    isPositionedRight={true}
+                    isRounded={false}
+                    isSecondary={false}
+                    onClick={[Function]}
+                    size={null}
+                  >
+                    <Button
+                      as="button"
+                      circular={false}
+                      className=""
+                      compact={false}
+                      disabled={false}
+                      floated="right"
+                      loading={false}
+                      onClick={[Function]}
+                      secondary={false}
+                      size={null}
+                    >
+                      <button
+                        className="ui right floated button"
+                        onClick={[Function]}
+                        role="button"
+                      >
+                        There is some text
+                      </button>
+                    </Button>
+                  </Button>
+                </form>
+              </Form>
+            </div>
+          </CardContent>
+        </div>
+      </Card>
+    </Form>
+  </div>
+</CookieAlert>
+`;
+
+exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should return the right structure 1`] = `
+<CookieAlert
+  buttonText="There is some text"
+  isOpen={true}
+  isUserOnMobile={true}
+  linkText="A link"
+  linkUrl="/"
+  onAccept={[MockFunction]}
+  text="some text"
+>
+  <Modal
+    hasCloseIcon={false}
+    hasRoundedCorners={true}
+    isFullscreen={false}
+    isOpen={true}
+    onClose={[Function]}
+    size="tiny"
+    trigger={null}
+  >
+    <Modal
+      className="has-rounded-corners"
+      closeIcon={false}
+      closeOnDimmerClick={true}
+      closeOnDocumentClick={false}
+      content={
+        <HorizontalGutters>
+          <FlexContainer
+            alignContent={null}
+            alignItems="center"
+            flexDirection="column"
+            flexWrap={null}
+            justifyContent="center"
+          >
+            <Divider
+              className=""
+              hasLine={false}
+              size="medium"
+            />
+            <Paragraph
+              size="medium"
+              weight={null}
+            >
+              some text
+            </Paragraph>
+            <Link
+              href="/"
+              isPositionedRight={false}
+              onClick={[Function]}
+              willOpenInNewTab={false}
+            >
+              A link
+            </Link>
+            <Divider
+              className=""
+              hasLine={false}
+              size="medium"
+            />
+            <Button
+              hasShadow={false}
+              icon={null}
+              isCompact={false}
+              isDisabled={false}
+              isLoading={false}
+              isPositionedRight={false}
+              isRounded={false}
+              isSecondary={false}
+              onClick={[MockFunction]}
+              size={null}
+            >
+              There is some text
+            </Button>
+             
+            <Divider
+              className=""
+              hasLine={false}
+              size="medium"
+            />
+          </FlexContainer>
+        </HorizontalGutters>
+      }
+      dimmer="inverted"
+      eventPool="Modal"
+      onClose={[Function]}
+      open={true}
+      size="tiny"
+      trigger={null}
+    >
+      <Portal
+        className="ui inverted page modals dimmer transition visible active"
+        closeOnDocumentClick={false}
+        closeOnEscape={true}
+        closeOnRootNodeClick={true}
+        eventPool="Modal"
+        mountNode={
+          <body
+            class="dimmable dimmed"
+          >
+            <div
+              class="ui inverted page modals dimmer transition visible active"
+            >
+              <div
+                class="ui tiny modal transition visible active has-rounded-corners"
+              >
+                <div
+                  class="ui container"
+                >
+                  <div
+                    style="display: flex; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                  >
+                    <div
+                      class="ui hidden divider"
+                    />
+                    <p
+                      class=""
+                    >
+                      some text
+                    </p>
+                    <a
+                      class="ui basic left floated button"
+                      href="/"
+                      role="button"
+                      target="_self"
+                    >
+                      A link
+                    </a>
+                    <div
+                      class="ui hidden divider"
+                    />
+                    <button
+                      class="ui left floated button"
+                      role="button"
+                    >
+                      There is some text
+                    </button>
+                     
+                    <div
+                      class="ui hidden divider"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="ui inverted page modals dimmer transition visible active"
+            >
+              <div
+                class="ui tiny modal transition visible active has-rounded-corners"
+              >
+                <div
+                  class="ui container"
+                >
+                  <div
+                    style="display: flex; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                  >
+                    <div
+                      class="ui hidden divider"
+                    />
+                    <p
+                      class=""
+                    >
+                      some text
+                    </p>
+                    <a
+                      class="ui basic left floated button"
+                      href="/"
+                      role="button"
+                      target="_self"
+                    >
+                      A link
+                    </a>
+                    <div
+                      class="ui hidden divider"
+                    />
+                    <button
+                      class="ui left floated button"
+                      role="button"
+                    >
+                      There is some text
+                    </button>
+                     
+                    <div
+                      class="ui hidden divider"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </body>
+        }
+        onClose={[Function]}
+        onMount={[Function]}
+        onOpen={[Function]}
+        onUnmount={[Function]}
+        open={true}
+        openOnTriggerClick={true}
+        trigger={null}
+      />
+    </Modal>
+  </Modal>
+</CookieAlert>
+`;

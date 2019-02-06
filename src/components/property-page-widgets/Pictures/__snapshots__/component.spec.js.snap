@@ -1135,6 +1135,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                 }
               >
                 <Modal
+                  hasCloseIcon={true}
+                  hasRoundedCorners={false}
                   isFullscreen={true}
                   onClose={[Function]}
                   size="tiny"
@@ -1150,6 +1152,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                   }
                 >
                   <Modal
+                    className=""
                     closeIcon={
                       <Icon
                         color={null}

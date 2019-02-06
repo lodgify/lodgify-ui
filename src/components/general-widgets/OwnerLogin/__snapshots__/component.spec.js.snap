@@ -23,6 +23,8 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
     actionLink={
       Object {
         "text": <Modal
+          hasCloseIcon={true}
+          hasRoundedCorners={false}
           isFullscreen={false}
           onClose={[Function]}
           size="tiny"
@@ -265,6 +267,8 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       target="_self"
                     >
                       <Modal
+                        hasCloseIcon={true}
+                        hasRoundedCorners={false}
                         isFullscreen={false}
                         onClose={[Function]}
                         size="tiny"
@@ -275,6 +279,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}
@@ -429,6 +434,8 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
     actionLink={
       Object {
         "text": <Modal
+          hasCloseIcon={true}
+          hasRoundedCorners={false}
           isFullscreen={false}
           onClose={[Function]}
           size="tiny"
@@ -671,6 +678,8 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       target="_self"
                     >
                       <Modal
+                        hasCloseIcon={true}
+                        hasRoundedCorners={false}
                         isFullscreen={false}
                         onClose={[Function]}
                         size="tiny"
@@ -681,6 +690,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}
@@ -835,6 +845,8 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
     actionLink={
       Object {
         "text": <Modal
+          hasCloseIcon={true}
+          hasRoundedCorners={false}
           isFullscreen={false}
           onClose={[Function]}
           size="tiny"
@@ -1057,6 +1069,8 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                       target="_self"
                     >
                       <Modal
+                        hasCloseIcon={true}
+                        hasRoundedCorners={false}
                         isFullscreen={false}
                         onClose={[Function]}
                         size="tiny"
@@ -1067,6 +1081,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                         }
                       >
                         <Modal
+                          className=""
                           closeIcon={
                             <Icon
                               color={null}
