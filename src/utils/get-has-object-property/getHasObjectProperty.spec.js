@@ -17,4 +17,11 @@ describe('getHasObjectProperty', () => {
 
     expect(actual).toBe(false);
   });
+
+  it('should return `false` if options are `undefined`', () => {
+    const options = undefined;
+    const actual = getHasObjectProperty(options, 'label');
+
+    expect(actual).toBe(false);
+  });
 });
