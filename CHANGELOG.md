@@ -1,3 +1,11 @@
+## [1.127.1](https://github.com/lodgify/lodgify-ui/compare/v1.127.0...v1.127.1) (2019-02-07)
+
+
+### Bug Fixes
+
+* **getHasObjectProperty:** make the util handle undefined and update test ([508f4e0](https://github.com/lodgify/lodgify-ui/commit/508f4e0))
+* **getObjectHasProperty:** clean up check ([ba8331f](https://github.com/lodgify/lodgify-ui/commit/ba8331f))
+
 # [1.127.0](https://github.com/lodgify/lodgify-ui/compare/v1.126.2...v1.127.0) (2019-02-07)
 
 
