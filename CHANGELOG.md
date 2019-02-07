@@ -1,3 +1,15 @@
+# [1.129.0](https://github.com/lodgify/lodgify-ui/compare/v1.128.0...v1.129.0) (2019-02-07)
+
+
+### Bug Fixes
+
+* **FlexContainer:** set margin on text children ([056b591](https://github.com/lodgify/lodgify-ui/commit/056b591))
+
+
+### Features
+
+* **Rates:** expose props.isShowingPlaceholder and add placeholder markup ([227f531](https://github.com/lodgify/lodgify-ui/commit/227f531))
+
 # [1.128.0](https://github.com/lodgify/lodgify-ui/compare/v1.127.1...v1.128.0) (2019-02-07)
 
 
