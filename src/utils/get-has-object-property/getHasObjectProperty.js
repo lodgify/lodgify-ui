@@ -4,4 +4,4 @@
  * @return {boolean}
  */
 export const getHasObjectProperty = (options, property) =>
-  options.some(option => option.hasOwnProperty(property));
+  !!options ? options.some(option => option.hasOwnProperty(property)) : false;
