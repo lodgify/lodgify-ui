@@ -1,3 +1,10 @@
+## [1.126.2](https://github.com/lodgify/lodgify-ui/compare/v1.126.1...v1.126.2) (2019-02-07)
+
+
+### Bug Fixes
+
+* **RoomType:** room features should be 12 wide column ([4699ceb](https://github.com/lodgify/lodgify-ui/commit/4699ceb))
+
 ## [1.126.1](https://github.com/lodgify/lodgify-ui/compare/v1.126.0...v1.126.1) (2019-02-06)
 
 
