@@ -11,7 +11,11 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
  * The standard widget for displaying a list of featured rooms.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ featuredRoomTypes, headingText }) => (
+export const Component = ({
+  featuredRoomTypes,
+  headingText,
+  isShowingPlaceholder,
+}) => (
   <Grid>
     {headingText && (
       <GridColumn width={12}>
@@ -25,7 +29,10 @@ export const Component = ({ featuredRoomTypes, headingText }) => (
         mobile={12}
         tablet={6}
       >
-        <FeaturedRoomType {...featuredRoomType} />
+        <FeaturedRoomType
+          {...featuredRoomType}
+          isShowingPlaceholder={isShowingPlaceholder}
+        />
       </GridColumn>
     ))}
   </Grid>
@@ -35,6 +42,7 @@ Component.displayName = 'FeaturedRoomTypes';
 
 Component.defaultProps = {
   headingText: null,
+  isShowingPlaceholder: false,
 };
 
 Component.propTypes = {
@@ -42,4 +50,6 @@ Component.propTypes = {
   featuredRoomTypes: PropTypes.arrayOf(PropTypes.object).isRequired,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** Is the component showing placeholders to reserve space for content which will appear. */
+  isShowingPlaceholder: PropTypes.bool,
 };
