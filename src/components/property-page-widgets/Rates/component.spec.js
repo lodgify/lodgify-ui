@@ -45,6 +45,14 @@ describe('<Rates />', () => {
     });
   });
 
+  describe('if `props.isShowingPlaceholder` is true', () => {
+    it('should have the right structure', () => {
+      const actual = getRatesWidget({ isShowingPlaceholder: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   it('should have the right `displayName`', () => {
     expectComponentToHaveDisplayName(Rates, 'Rates');
   });

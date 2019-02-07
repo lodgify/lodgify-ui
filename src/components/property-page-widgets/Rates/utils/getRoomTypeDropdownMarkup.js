@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
+import { TextPlaceholder } from 'elements/TextPlaceholder';
+import { Divider } from 'elements/Divider';
 import { Dropdown } from 'inputs/Dropdown';
-import { GridColumn } from 'layout/GridColumn';
-import { GridRow } from 'layout/GridRow';
+import { FlexContainer } from 'layout/FlexContainer';
 import { Paragraph } from 'typography/Paragraph';
 
 import { getStringWithColonSuffix } from './getStringWithColonSuffix';
+
 /**
+ * @param  {boolean}  isShowingPlaceholder
  * @param  {Object[]} options
  * @param  {Function} onChange
  * @param  {string}   roomTypeInputLabel
@@ -14,23 +17,31 @@ import { getStringWithColonSuffix } from './getStringWithColonSuffix';
  * @return {Object}
  */
 export const getRoomTypeDropdownMarkup = (
+  isShowingPlaceholder,
   options,
   onChange,
   roomTypeInputLabel,
   roomTypesValue
-) => (
-  <GridRow verticalAlign="middle">
-    <GridColumn computer={4} mobile={12}>
-      <Paragraph weight="heavy">
-        {getStringWithColonSuffix(roomTypeInputLabel)}
-      </Paragraph>
-    </GridColumn>
-    <GridColumn computer={4} mobile={12}>
-      <Dropdown
-        currentValue={roomTypesValue}
-        onChange={onChange}
-        options={options}
-      />
-    </GridColumn>
-  </GridRow>
-);
+) =>
+  isShowingPlaceholder ? (
+    <Fragment>
+      <Divider />
+      <TextPlaceholder length="medium" />
+      <TextPlaceholder length="medium" />
+      <Divider />
+    </Fragment>
+  ) : (
+    <Fragment>
+      <FlexContainer alignItems="center" flexWrap="wrap">
+        <Paragraph weight="heavy">
+          {getStringWithColonSuffix(roomTypeInputLabel)}
+        </Paragraph>
+        <Dropdown
+          currentValue={roomTypesValue}
+          onChange={onChange}
+          options={options}
+        />
+      </FlexContainer>
+      <Divider size="small" />
+    </Fragment>
+  );

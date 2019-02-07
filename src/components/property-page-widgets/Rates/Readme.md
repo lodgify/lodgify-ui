@@ -146,3 +146,17 @@ const costPerExtraGuestLabel = 'Price per extra guest';
   roomTypes={roomTypes}
 />
 ```
+
+### States
+
+#### Showing placeholder
+
+```jsx
+<Rates
+  currencyOptions={[]}
+  isShowingPlaceholder
+  rateCategories={[]}
+  rateHeadings={[]}
+  roomTypes={[]}
+/>
+```

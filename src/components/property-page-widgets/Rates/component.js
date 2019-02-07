@@ -14,9 +14,12 @@ import { GridRow } from 'layout/GridRow';
 import { ShowOn } from 'layout/ShowOn';
 import { Table } from 'collections/Table';
 
-import { getMobileRateRowMarkup } from './utils/getMobileRateRowMarkup';
-import { getRateCategoryHeadingMarkup } from './utils/getRateCategoryHeadingMarkup';
 import { getRoomTypeDropdownMarkup } from './utils/getRoomTypeDropdownMarkup';
+import { getCurrencyDropdownPlaceholderMarkup } from './utils/getCurrencyDropdownPlaceholderMarkup';
+import { getCardsPlaceholderMarkup } from './utils/getCardsPlaceholderMarkup';
+import { getMobileRateRowMarkup } from './utils/getMobileRateRowMarkup';
+import { getTablePlaceholderMarkup } from './utils/getTablePlaceholderMarkup';
+import { getRateCategoryHeadingMarkup } from './utils/getRateCategoryHeadingMarkup';
 
 /**
  * The standard widget for displaying the rates of a property.
@@ -27,6 +30,7 @@ export const Component = ({
   currencyNoResultsText,
   currencyOptions,
   currencyValue,
+  isShowingPlaceholder,
   onChangeCurrency,
   onChangeRoomType,
   rateCategories,
@@ -36,71 +40,76 @@ export const Component = ({
   roomTypesValue,
 }) => (
   <Fragment>
-    <Grid padded>
-      {roomTypes &&
-        getRoomTypeDropdownMarkup(
-          roomTypes,
-          onChangeRoomType,
-          roomTypeInputLabel,
-          roomTypesValue
-        )}
-      <ShowOn mobile>
-        <Grid>
-          <GridColumn>
+    {roomTypes &&
+      getRoomTypeDropdownMarkup(
+        isShowingPlaceholder,
+        roomTypes,
+        onChangeRoomType,
+        roomTypeInputLabel,
+        roomTypesValue
+      )}
+    <ShowOn mobile>
+      {isShowingPlaceholder ? (
+        getCurrencyDropdownPlaceholderMarkup()
+      ) : (
+        <Dropdown
+          currentValue={currencyValue}
+          isSearchable
+          noResultsText={currencyNoResultsText}
+          onChange={onChangeCurrency}
+          options={currencyOptions}
+        />
+      )}
+      {isShowingPlaceholder
+        ? getCardsPlaceholderMarkup()
+        : rateCategories.map((rateCategory, rateCategoryIndex) => (
+            <Card
+              fluid
+              key={buildKeyFromStrings(rateCategory.name, rateCategoryIndex)}
+            >
+              <Card.Content>
+                <Grid padded>
+                  <GridRow>
+                    <GridColumn width={12}>
+                      {getRateCategoryHeadingMarkup(
+                        rateCategory,
+                        costPerExtraGuestLabel
+                      )}
+                    </GridColumn>
+                  </GridRow>
+                  {rateCategory.rates.map((rate, rateIndex) =>
+                    getMobileRateRowMarkup(
+                      rate,
+                      rateHeadings[rateIndex],
+                      buildKeyFromStrings(rateCategory.name, rate, rateIndex)
+                    )
+                  )}
+                </Grid>
+              </Card.Content>
+            </Card>
+          ))}
+    </ShowOn>
+    <ShowOn computer tablet widescreen>
+      {isShowingPlaceholder ? (
+        getTablePlaceholderMarkup()
+      ) : (
+        <Table
+          tableBody={rateCategories.map(rateCategory => [
+            getRateCategoryHeadingMarkup(rateCategory, costPerExtraGuestLabel),
+            ...rateCategory.rates,
+          ])}
+          tableHeadings={[
             <Dropdown
               currentValue={currencyValue}
               isSearchable
               noResultsText={currencyNoResultsText}
               onChange={onChangeCurrency}
               options={currencyOptions}
-            />
-            {rateCategories.map((rateCategory, rateCategoryIndex) => (
-              <Card
-                fluid
-                key={buildKeyFromStrings(rateCategory.name, rateCategoryIndex)}
-              >
-                <Card.Content>
-                  <Grid padded>
-                    <GridRow>
-                      <GridColumn width={12}>
-                        {getRateCategoryHeadingMarkup(
-                          rateCategory,
-                          costPerExtraGuestLabel
-                        )}
-                      </GridColumn>
-                    </GridRow>
-                    {rateCategory.rates.map((rate, rateIndex) =>
-                      getMobileRateRowMarkup(
-                        rate,
-                        rateHeadings[rateIndex],
-                        buildKeyFromStrings(rateCategory.name, rate, rateIndex)
-                      )
-                    )}
-                  </Grid>
-                </Card.Content>
-              </Card>
-            ))}
-          </GridColumn>
-        </Grid>
-      </ShowOn>
-    </Grid>
-    <ShowOn computer tablet widescreen>
-      <Table
-        tableBody={rateCategories.map(rateCategory => [
-          getRateCategoryHeadingMarkup(rateCategory, costPerExtraGuestLabel),
-          ...rateCategory.rates,
-        ])}
-        tableHeadings={[
-          <Dropdown
-            currentValue={currencyValue}
-            isSearchable
-            noResultsText={currencyNoResultsText}
-            onChange={onChangeCurrency}
-            options={currencyOptions}
-          />,
-          ...rateHeadings,
-        ]}
-      />
+            />,
+            ...rateHeadings,
+          ]}
+        />
+      )}
     </ShowOn>
   </Fragment>
 );
@@ -109,6 +118,7 @@ Component.defaultProps = {
   costPerExtraGuestLabel: PRICE_PER_EXTRA_PER,
   currencyNoResultsText: undefined,
   currencyValue: undefined,
+  isShowingPlaceholder: false,
   onChangeCurrency: Function.prototype,
   onChangeRoomType: Function.prototype,
   roomTypeInputLabel: VIEW_RATE_INFORMATION_FOR,
@@ -142,6 +152,8 @@ Component.propTypes = {
     PropTypes.number,
     PropTypes.string,
   ]),
+  /** Is the component showing placeholders to reserve space for content which will appear. */
+  isShowingPlaceholder: PropTypes.bool,
   /** A function called when the currency type value changes. */
   onChangeCurrency: PropTypes.func,
   /** A function called when the room type value changes. */
