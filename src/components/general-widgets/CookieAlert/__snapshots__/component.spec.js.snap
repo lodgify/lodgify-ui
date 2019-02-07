@@ -119,6 +119,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                   class="ui container"
                 >
                   <div
+                    class="flex-container"
                     style="display: flex; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
                   >
                     <div
@@ -422,6 +423,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                   class="ui container"
                 >
                   <div
+                    class="flex-container"
                     style="display: flex; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
                   >
                     <div
@@ -467,6 +469,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                   class="ui container"
                 >
                   <div
+                    class="flex-container"
                     style="display: flex; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
                   >
                     <div

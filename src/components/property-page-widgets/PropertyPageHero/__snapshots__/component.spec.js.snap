@@ -1653,6 +1653,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
             justifyContent={null}
           >
             <div
+              className="flex-container"
               style={
                 Object {
                   "alignContent": null,
