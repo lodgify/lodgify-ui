@@ -585,14 +585,17 @@ blockquote.ui.quote .row {
   height: @textPlaceholderHeight;
 
   &.short {
+    margin-right: @textPlaceholderShortMarginRight;
     width: @textPlaceholderShortLength;
   }
 
   &.medium {
+    margin-right: @textPlaceholderMediumMarginRight;
     width: @textPlaceholderMediumLength;
   }
 
   &.long {
+    margin-right: @textPlaceholderLongMarginRight;
     width: @textPlaceholderLongLength;
   }
 
@@ -602,5 +605,23 @@ blockquote.ui.quote .row {
 
   &:not(:last-of-type) {
     margin-bottom: @textPlaceholderMarginBottom;
+  }
+}
+
+/*----------------------
+       Placeholder
+-----------------------*/
+
+.flex-container {
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+    margin-right: 1em;
   }
 }
