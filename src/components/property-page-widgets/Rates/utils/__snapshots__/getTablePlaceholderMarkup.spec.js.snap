@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getTablePlaceholderMarkup should render the right structure 1`] = `
+Array [
+  <TextPlaceholder
+    isFluid={true}
+    length="full"
+  >
+    <div
+      className="placeholder text full fluid"
+    />
+  </TextPlaceholder>,
+  <TextPlaceholder
+    isFluid={true}
+    length="full"
+  >
+    <div
+      className="placeholder text full fluid"
+    />
+  </TextPlaceholder>,
+  <Divider
+    className=""
+    hasLine={false}
+    size="medium"
+  >
+    <Divider
+      className=""
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider"
+      />
+    </Divider>
+  </Divider>,
+  <BlockPlaceholder
+    isFluid={true}
+    isRectangular={false}
+    isSquare={false}
+  >
+    <div
+      className="placeholder block fluid"
+    />
+  </BlockPlaceholder>,
+  <Divider
+    className=""
+    hasLine={false}
+    size="medium"
+  >
+    <Divider
+      className=""
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider"
+      />
+    </Divider>
+  </Divider>,
+  <BlockPlaceholder
+    isFluid={true}
+    isRectangular={false}
+    isSquare={false}
+  >
+    <div
+      className="placeholder block fluid"
+    />
+  </BlockPlaceholder>,
+  <Divider
+    className=""
+    hasLine={false}
+    size="medium"
+  >
+    <Divider
+      className=""
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider"
+      />
+    </Divider>
+  </Divider>,
+  <BlockPlaceholder
+    isFluid={true}
+    isRectangular={false}
+    isSquare={false}
+  >
+    <div
+      className="placeholder block fluid"
+    />
+  </BlockPlaceholder>,
+  <Divider
+    className=""
+    hasLine={false}
+    size="medium"
+  >
+    <Divider
+      className=""
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider"
+      />
+    </Divider>
+  </Divider>,
+]
+`;

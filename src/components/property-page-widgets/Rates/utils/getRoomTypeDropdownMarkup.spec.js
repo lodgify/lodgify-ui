@@ -1,17 +1,6 @@
-import { shallow } from 'enzyme';
-import {
-  expectComponentToBe,
-  expectComponentToHaveChildren,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
-import { Dropdown } from 'inputs/Dropdown';
-import { GridColumn } from 'layout/GridColumn';
-import { Paragraph } from 'typography/Paragraph';
+import { mount } from 'enzyme';
 
 import { getRoomTypeDropdownMarkup } from './getRoomTypeDropdownMarkup';
-import { getStringWithColonSuffix } from './getStringWithColonSuffix';
 
 const options = [
   {
@@ -30,103 +19,33 @@ const options = [
 
 const onChange = () => '😼';
 const roomTypeInputLabel = 'A';
+const roomTypesValue = 'eur';
 
-const getRoomTypeDropdown = () =>
-  shallow(getRoomTypeDropdownMarkup(options, onChange, roomTypeInputLabel));
+const getRoomTypeDropdown = isShowingPlaceholder =>
+  mount(
+    getRoomTypeDropdownMarkup(
+      isShowingPlaceholder,
+      options,
+      onChange,
+      roomTypeInputLabel,
+      roomTypesValue
+    )
+  );
 
 describe('getRoomTypeDropdownMarkup', () => {
-  it('should return a `GridRow`', () => {
-    const wrapper = getRoomTypeDropdown();
+  describe('if `isShowingPlaceholder` is `true`', () => {
+    it('should render the right structure', () => {
+      const actual = getRoomTypeDropdown(true);
 
-    expectComponentToBe(wrapper, 'GridRow');
-  });
-
-  describe('the `GridRow` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getRoomTypeDropdown();
-
-      expectComponentToHaveProps(wrapper, {
-        verticalAlign: 'middle',
-      });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getRoomTypeDropdown();
-
-      expectComponentToHaveChildren(
-        wrapper,
-        ...getArrayOfLengthOfItem(2, GridColumn)
-      );
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('the first `GridColumn` component', () => {
-    const getFirstGridColumn = () =>
-      getRoomTypeDropdown()
-        .find(GridColumn)
-        .first();
+  describe('if `isShowingPlaceholder` is `false`', () => {
+    it('should render the right structure', () => {
+      const actual = getRoomTypeDropdown(false);
 
-    it('should have the right props', () => {
-      const wrapper = getFirstGridColumn();
-
-      expectComponentToHaveProps(wrapper, { computer: 4, mobile: 12 });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getFirstGridColumn();
-
-      expectComponentToHaveChildren(wrapper, Paragraph);
-    });
-  });
-
-  describe('the `Paragraph`', () => {
-    const getParagraph = () =>
-      getRoomTypeDropdown()
-        .find(Paragraph)
-        .first();
-
-    it('should have the right props', () => {
-      const wrapper = getParagraph();
-
-      expectComponentToHaveProps(wrapper, { weight: 'heavy' });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getParagraph();
-
-      expectComponentToHaveChildren(
-        wrapper,
-        getStringWithColonSuffix(roomTypeInputLabel)
-      );
-    });
-  });
-
-  describe('the second `GridColumn` component', () => {
-    const getSecondGridColumn = () =>
-      getRoomTypeDropdown()
-        .find(GridColumn)
-        .at(1);
-
-    it('should have the right props', () => {
-      const wrapper = getSecondGridColumn();
-
-      expectComponentToHaveProps(wrapper, { computer: 4, mobile: 12 });
-    });
-
-    it('should render the right children', () => {
-      const wrapper = getSecondGridColumn();
-
-      expectComponentToHaveChildren(wrapper, Dropdown);
-    });
-  });
-
-  describe('the `Dropdown` component', () => {
-    it('should have the right props', () => {
-      const wrapper = getRoomTypeDropdown()
-        .find(Dropdown)
-        .first();
-
-      expectComponentToHaveProps(wrapper, { onChange, options });
+      expect(actual).toMatchSnapshot();
     });
   });
 });
