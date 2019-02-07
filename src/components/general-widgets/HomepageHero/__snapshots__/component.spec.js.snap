@@ -839,6 +839,7 @@ exports[`HomepageHero should render the right structure 1`] = `
             justifyContent="space-evenly"
           >
             <div
+              className="flex-container"
               style={
                 Object {
                   "alignContent": null,

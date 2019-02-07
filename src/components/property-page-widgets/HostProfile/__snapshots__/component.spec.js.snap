@@ -98,6 +98,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                       justifyContent={null}
                     >
                       <div
+                        className="flex-container"
                         style={
                           Object {
                             "alignContent": null,
@@ -414,6 +415,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                       justifyContent={null}
                     >
                       <div
+                        className="flex-container"
                         style={
                           Object {
                             "alignContent": null,
@@ -723,6 +725,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                       justifyContent={null}
                     >
                       <div
+                        className="flex-container"
                         style={
                           Object {
                             "alignContent": null,
@@ -1036,6 +1039,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                       justifyContent={null}
                     >
                       <div
+                        className="flex-container"
                         style={
                           Object {
                             "alignContent": null,
