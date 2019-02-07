@@ -1,3 +1,5 @@
+jest.mock('./utils/getIsOpenAfterChange');
+
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Dropdown as SemanticDropdown } from 'semantic-ui-react';
@@ -13,6 +15,7 @@ import { NO_RESULTS } from 'utils/default-strings';
 
 import { ErrorMessage } from '../ErrorMessage';
 
+import { getIsOpenAfterChange } from './utils/getIsOpenAfterChange';
 import { Component as Dropdown } from './component';
 
 const OPTIONS = [{ text: 'someText', value: 'someValue' }];
@@ -23,6 +26,10 @@ const OPTIONS_WITH_IMAGES = [
 const getDropdown = extraProps => shallow(<Dropdown {...extraProps} />);
 const getDropdownContainer = extraProps =>
   getDropdown(extraProps).find('div.dropdown-container');
+
+const IS_OPEN = false;
+
+getIsOpenAfterChange.mockReturnValue(IS_OPEN);
 
 describe('<Dropdown />', () => {
   it('should render a single `div` with class `.dropdown-container`', () => {
@@ -118,7 +125,9 @@ describe('<Dropdown />', () => {
         open: false,
         options: expect.any(Array),
         search: false,
+        selectOnBlur: false,
         selection: true,
+        upward: false,
       });
     });
 
@@ -249,18 +258,27 @@ describe('<Dropdown />', () => {
   });
 
   describe('Interaction: onChange', () => {
-    it('should persist the value in component state and set `state.isOpen` to false', () => {
+    it('should call `getIsOpenAfterChange` with the right arguments', () => {
+      const key = '🔑';
+      const wrapper = getDropdown();
+
+      wrapper.instance().handleChange({ key }, {});
+
+      expect(getIsOpenAfterChange).toHaveBeenCalledWith(key);
+    });
+
+    it('should persist the value in component state and set `state.isOpen` to whatever `getIsOpenAfterChange` returns', () => {
       const data = { value: '🐯' };
       const wrapper = getDropdown();
 
       wrapper.setState({ isOpen: true });
       const input = wrapper.find(SemanticDropdown);
 
-      input.simulate('change', undefined, data);
+      input.simulate('change', {}, data);
       const actual = wrapper.state();
 
       expect(actual).toEqual({
-        isOpen: false,
+        isOpen: IS_OPEN,
         value: data.value,
       });
     });
@@ -271,7 +289,7 @@ describe('<Dropdown />', () => {
 
       const input = wrapper.find(SemanticDropdown);
 
-      input.simulate('change', undefined, data);
+      input.simulate('change', {}, data);
 
       const actual = wrapper.hasClass('dirty');
 

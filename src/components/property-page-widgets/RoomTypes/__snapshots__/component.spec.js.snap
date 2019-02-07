@@ -490,6 +490,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                           className="mobile only right aligned middle aligned two wide column"
                                         >
                                           <Modal
+                                            hasCloseIcon={true}
+                                            hasRoundedCorners={false}
                                             isFullscreen={false}
                                             onClose={[Function]}
                                             size="tiny"
@@ -511,6 +513,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                             }
                                           >
                                             <Modal
+                                              className=""
                                               closeIcon={
                                                 <Icon
                                                   color={null}
@@ -760,6 +763,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     <GridColumn
                                       as={[Function]}
                                       className="only-horizontal-padding"
+                                      computer={12}
                                       floated="left"
                                       horizontal={true}
                                       verticalAlignContent="top"
@@ -768,17 +772,18 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       <GridColumn
                                         as={[Function]}
                                         className="only-horizontal-padding"
+                                        computer={12}
                                         floated="left"
                                         horizontal={true}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <List
-                                          className="left floated top aligned column only-horizontal-padding"
+                                          className="left floated top aligned twelve wide computer column only-horizontal-padding"
                                           horizontal={true}
                                         >
                                           <div
-                                            className="ui horizontal list left floated top aligned column only-horizontal-padding"
+                                            className="ui horizontal list left floated top aligned twelve wide computer column only-horizontal-padding"
                                             role="list"
                                           >
                                             <ListItem
@@ -949,6 +954,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 className="tablet only computer only bottom aligned four wide column"
                                               >
                                                 <Modal
+                                                  hasCloseIcon={true}
+                                                  hasRoundedCorners={false}
                                                   isFullscreen={false}
                                                   onClose={[Function]}
                                                   size="small"
@@ -964,6 +971,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   }
                                                 >
                                                   <Modal
+                                                    className=""
                                                     closeIcon={
                                                       <Icon
                                                         color={null}
@@ -1628,6 +1636,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                           className="mobile only right aligned middle aligned two wide column"
                                         >
                                           <Modal
+                                            hasCloseIcon={true}
+                                            hasRoundedCorners={false}
                                             isFullscreen={false}
                                             onClose={[Function]}
                                             size="tiny"
@@ -1649,6 +1659,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                             }
                                           >
                                             <Modal
+                                              className=""
                                               closeIcon={
                                                 <Icon
                                                   color={null}
@@ -1889,6 +1900,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     <GridColumn
                                       as={[Function]}
                                       className="only-horizontal-padding"
+                                      computer={12}
                                       floated="left"
                                       horizontal={true}
                                       verticalAlignContent="top"
@@ -1897,17 +1909,18 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       <GridColumn
                                         as={[Function]}
                                         className="only-horizontal-padding"
+                                        computer={12}
                                         floated="left"
                                         horizontal={true}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <List
-                                          className="left floated top aligned column only-horizontal-padding"
+                                          className="left floated top aligned twelve wide computer column only-horizontal-padding"
                                           horizontal={true}
                                         >
                                           <div
-                                            className="ui horizontal list left floated top aligned column only-horizontal-padding"
+                                            className="ui horizontal list left floated top aligned twelve wide computer column only-horizontal-padding"
                                             role="list"
                                           >
                                             <ListItem
@@ -2078,6 +2091,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 className="tablet only computer only bottom aligned four wide column"
                                               >
                                                 <Modal
+                                                  hasCloseIcon={true}
+                                                  hasRoundedCorners={false}
                                                   isFullscreen={false}
                                                   onClose={[Function]}
                                                   size="small"
@@ -2093,6 +2108,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   }
                                                 >
                                                   <Modal
+                                                    className=""
                                                     closeIcon={
                                                       <Icon
                                                         color={null}

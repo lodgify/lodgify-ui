@@ -32,6 +32,7 @@
 @pickerFontColor: @greyEight;
 @pickerZIndex: 3;
 @pickerBoxShadow: @spreadShadow;
+@pickerMinHeight: 445px;
 
 @pickerNavigationButtonTopSpace: (@pickerMonthCaptionPaddingTop - @2px);
 

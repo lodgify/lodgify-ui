@@ -9,6 +9,7 @@ import { NO_RESULTS } from 'utils/default-strings';
 
 import { ErrorMessage } from '../ErrorMessage';
 
+import { getIsOpenAfterChange } from './utils/getIsOpenAfterChange';
 import { adaptOptions } from './utils/adaptOptions';
 import { getDefaultValue } from './utils/getDefaultValue';
 import { getHasImages } from './utils/getHasImages';
@@ -31,10 +32,10 @@ export class Component extends PureComponent {
     prevValue !== value && onChange(name, value);
   }
 
-  handleChange = (event, data) => {
+  handleChange = ({ key }, data) => {
     this.setState({
       value: this.props.currentValue || data.value,
-      isOpen: false,
+      isOpen: getIsOpenAfterChange(key),
     });
   };
 
@@ -93,6 +94,7 @@ export class Component extends PureComponent {
           open={isOpen}
           options={adaptedOptions}
           search={isSearchable}
+          selectOnBlur={false}
           selection
           upward={willOpenAbove}
           value={currentValue || value}

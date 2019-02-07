@@ -626,6 +626,8 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                 >
                   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...
                   <Modal
+                    hasCloseIcon={true}
+                    hasRoundedCorners={false}
                     isFullscreen={false}
                     onClose={[Function]}
                     size="tiny"
@@ -639,6 +641,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                     }
                   >
                     <Modal
+                      className=""
                       closeIcon={
                         <Icon
                           color={null}

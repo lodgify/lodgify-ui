@@ -2,6 +2,8 @@
 
 exports[`getModalFormMarkup should have the right structure with default props 1`] = `
 <Modal
+  hasCloseIcon={true}
+  hasRoundedCorners={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -21,6 +23,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
   }
 >
   <Modal
+    className=""
     closeIcon={
       <Icon
         color={null}
@@ -262,6 +265,8 @@ exports[`getModalFormMarkup should have the right structure with default props 1
 
 exports[`getModalFormMarkup should render the right structure when props are passed 1`] = `
 <Modal
+  hasCloseIcon={true}
+  hasRoundedCorners={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -283,6 +288,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
   }
 >
   <Modal
+    className=""
     closeIcon={
       <Icon
         color={null}

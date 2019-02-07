@@ -1,3 +1,69 @@
+# [1.127.0](https://github.com/lodgify/lodgify-ui/compare/v1.126.2...v1.127.0) (2019-02-07)
+
+
+### Features
+
+* **Dropdown:** enable arrow key navigation of options ([3f4b959](https://github.com/lodgify/lodgify-ui/commit/3f4b959))
+
+## [1.126.2](https://github.com/lodgify/lodgify-ui/compare/v1.126.1...v1.126.2) (2019-02-07)
+
+
+### Bug Fixes
+
+* **RoomType:** room features should be 12 wide column ([4699ceb](https://github.com/lodgify/lodgify-ui/commit/4699ceb))
+
+## [1.126.1](https://github.com/lodgify/lodgify-ui/compare/v1.126.0...v1.126.1) (2019-02-06)
+
+
+### Bug Fixes
+
+* **Dropdown:** apply theme colors to all items in all states ([ccf6458](https://github.com/lodgify/lodgify-ui/commit/ccf6458))
+
+# [1.126.0](https://github.com/lodgify/lodgify-ui/compare/v1.125.1...v1.126.0) (2019-02-06)
+
+
+### Features
+
+* **react-dates-datepicker.*:** implement minimum height for DayPicker ([f17a770](https://github.com/lodgify/lodgify-ui/commit/f17a770))
+
+## [1.125.1](https://github.com/lodgify/lodgify-ui/compare/v1.125.0...v1.125.1) (2019-02-06)
+
+
+### Bug Fixes
+
+* **Dropdown:** add props.selectOnBlur={false} ([2f0ed56](https://github.com/lodgify/lodgify-ui/commit/2f0ed56))
+
+# [1.125.0](https://github.com/lodgify/lodgify-ui/compare/v1.124.0...v1.125.0) (2019-02-06)
+
+
+### Bug Fixes
+
+* **package:** temporarily install terser 3.14.1 to avoid breaking changes ([7f71e13](https://github.com/lodgify/lodgify-ui/commit/7f71e13))
+
+
+### Features
+
+* **CookieAlert:** implement component ([37f3d63](https://github.com/lodgify/lodgify-ui/commit/37f3d63))
+* **form.*:** implement CookieAlert form styles ([5bb5f7e](https://github.com/lodgify/lodgify-ui/commit/5bb5f7e))
+* **getFormMarkup:** implement util and unit test ([aaebe8e](https://github.com/lodgify/lodgify-ui/commit/aaebe8e))
+* **Modal:** expose required props for CookieAlert implementation ([4d2b978](https://github.com/lodgify/lodgify-ui/commit/4d2b978))
+* **modal.*:** implement rounded corner variation and margin ([b533a39](https://github.com/lodgify/lodgify-ui/commit/b533a39))
+
+# [1.124.0](https://github.com/lodgify/lodgify-ui/compare/v1.123.0...v1.124.0) (2019-02-05)
+
+
+### Features
+
+* **adaptOptions:** implement label and update unit test ([a5aef49](https://github.com/lodgify/lodgify-ui/commit/a5aef49))
+* **Dropdown:** implement label prop inside options ([be86913](https://github.com/lodgify/lodgify-ui/commit/be86913))
+* **dropdown.*:** implement styles for dropdown label option ([26aad25](https://github.com/lodgify/lodgify-ui/commit/26aad25))
+* **getHasObjectProperty:** implement util and unit test ([f8baa2f](https://github.com/lodgify/lodgify-ui/commit/f8baa2f))
+
+
+### Performance Improvements
+
+* **getHas*Options:** remove obsolete logic ([f745d7b](https://github.com/lodgify/lodgify-ui/commit/f745d7b))
+
 # [1.123.0](https://github.com/lodgify/lodgify-ui/compare/v1.122.0...v1.123.0) (2019-01-31)
 
 

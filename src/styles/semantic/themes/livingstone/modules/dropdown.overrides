@@ -47,10 +47,14 @@
         border-radius: 0 0 @borderRadius @borderRadius;
       }
 
-      &.selected:hover {
+      &.selected,
+      &.selected:hover,
+      &.active:hover,
+      &.item:hover {
         background: @themeActionColorDefault;
         background: var(@themeActionColorIdentifier, @themeActionColorDefault);
-        color: @hoveredItemColor;
+        color: @themeActionContrastColorDefault;
+        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
       }
 
       /*With label*/
