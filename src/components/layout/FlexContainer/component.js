@@ -16,6 +16,7 @@ export const Component = ({
   justifyContent,
 }) => (
   <div
+    className="flex-container"
     style={{
       display: 'flex',
       flexGrow: '1',

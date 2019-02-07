@@ -511,3 +511,6 @@
 @textPlaceholderMediumLength: 50%;
 @textPlaceholderLongLength: 75%;
 @textPlaceholderFullLength: 100%;
+@textPlaceholderShortMarginRight: @textPlaceholderFullLength - @textPlaceholderShortLength;
+@textPlaceholderMediumMarginRight: @textPlaceholderFullLength - @textPlaceholderMediumLength;
+@textPlaceholderLongMarginRight: @textPlaceholderFullLength - @textPlaceholderLongLength;
