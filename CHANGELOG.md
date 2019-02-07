@@ -1,3 +1,10 @@
+# [1.128.0](https://github.com/lodgify/lodgify-ui/compare/v1.127.1...v1.128.0) (2019-02-07)
+
+
+### Features
+
+* **Footer:** make currencyOptions and languaOptions not required ([d74548b](https://github.com/lodgify/lodgify-ui/commit/d74548b))
+
 ## [1.127.1](https://github.com/lodgify/lodgify-ui/compare/v1.127.0...v1.127.1) (2019-02-07)
 
 
