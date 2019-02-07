@@ -1,3 +1,10 @@
+# [1.127.0](https://github.com/lodgify/lodgify-ui/compare/v1.126.2...v1.127.0) (2019-02-07)
+
+
+### Features
+
+* **Dropdown:** enable arrow key navigation of options ([3f4b959](https://github.com/lodgify/lodgify-ui/commit/3f4b959))
+
 ## [1.126.2](https://github.com/lodgify/lodgify-ui/compare/v1.126.1...v1.126.2) (2019-02-07)
 
 
