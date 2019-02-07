@@ -61,6 +61,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 guestsLabel="Guests"
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 ratingNumber={4.8}
@@ -204,6 +205,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 guestsLabel="Guests"
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 ratingNumber={4.8}
@@ -423,6 +425,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 guestsLabel="Guests"
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 ratingNumber={4.8}
@@ -566,6 +569,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 guestsLabel="Guests"
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 ratingNumber={4.8}
