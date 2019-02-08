@@ -48,6 +48,7 @@ describe('<HTML />', () => {
           .at(0);
 
         expectComponentToHaveProps(wrapper, {
+          className: 'html-container',
           dangerouslySetInnerHTML: expect.objectContaining({
             __html: expect.any(String),
           }),
@@ -67,6 +68,7 @@ describe('<HTML />', () => {
         const wrapper = getHTMLWidget({ headings });
 
         expectComponentToHaveProps(wrapper, {
+          className: 'html-container',
           dangerouslySetInnerHTML: expect.objectContaining({
             __html: expect.any(String),
           }),
