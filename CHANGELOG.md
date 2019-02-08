@@ -1,3 +1,12 @@
+# [1.130.0](https://github.com/lodgify/lodgify-ui/compare/v1.129.0...v1.130.0) (2019-02-08)
+
+
+### Features
+
+* **FeaturedRoomType:** add placeholder and expose isShowingPlaceholder ([d6846a5](https://github.com/lodgify/lodgify-ui/commit/d6846a5))
+* **FeaturedRoomTypes:** expose isShowingPlaceholders ([f9be6fa](https://github.com/lodgify/lodgify-ui/commit/f9be6fa))
+* **FeaturedRoomTypes:** render 3 placeholders when no featuredRoomTypes ([78aad69](https://github.com/lodgify/lodgify-ui/commit/78aad69))
+
 # [1.129.0](https://github.com/lodgify/lodgify-ui/compare/v1.128.0...v1.129.0) (2019-02-07)
 
 
