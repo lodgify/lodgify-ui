@@ -514,3 +514,9 @@
 @textPlaceholderShortMarginRight: @textPlaceholderFullLength - @textPlaceholderShortLength;
 @textPlaceholderMediumMarginRight: @textPlaceholderFullLength - @textPlaceholderMediumLength;
 @textPlaceholderLongMarginRight: @textPlaceholderFullLength - @textPlaceholderLongLength;
+
+/*----------------------
+       HTML Container
+-----------------------*/
+@htmlContainerImmediateImageChildMaxWidth: 100%;
+@htmlContainerImageChildWidth: 100%;
