@@ -27,11 +27,17 @@ export class Component extends PureComponent {
 
     return children ? (
       <div>
-        <div dangerouslySetInnerHTML={{ __html: cleanHTMLString }} />
+        <div
+          className="html-container"
+          dangerouslySetInnerHTML={{ __html: cleanHTMLString }}
+        />
         {children}
       </div>
     ) : (
-      <div dangerouslySetInnerHTML={{ __html: cleanHTMLString }} />
+      <div
+        className="html-container"
+        dangerouslySetInnerHTML={{ __html: cleanHTMLString }}
+      />
     );
   }
 }
