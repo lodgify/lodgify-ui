@@ -29,6 +29,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
     ]
   }
   headingText={null}
+  isShowingPlaceholder={false}
 >
   <Grid
     areColumnsCentered={false}
@@ -61,6 +62,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                 bedroomsNumber={3}
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 propertyName="The Cat House"
@@ -363,6 +365,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                 bedroomsNumber={3}
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 propertyName="The Cat House"
@@ -678,6 +681,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
     ]
   }
   headingText="My god I love Cliff Richard"
+  isShowingPlaceholder={false}
 >
   <Grid
     areColumnsCentered={false}
@@ -743,6 +747,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                 bedroomsNumber={3}
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 propertyName="The Cat House"
@@ -1045,6 +1050,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                 bedroomsNumber={3}
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 propertyName="The Cat House"
@@ -1320,6 +1326,387 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                       </div>
                     </CardContent>
                   </a>
+                </Card>
+              </FeaturedProperty>
+            </div>
+          </GridColumn>
+        </GridColumn>
+      </div>
+    </Grid>
+  </Grid>
+</FeaturedProperties>
+`;
+
+exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \`props.featuredProperties.length\` === 0 should render the right structure 1`] = `
+<FeaturedProperties
+  featuredProperties={Array []}
+  headingText={null}
+  isShowingPlaceholder={true}
+>
+  <Grid
+    areColumnsCentered={false}
+  >
+    <Grid
+      centered={false}
+    >
+      <div
+        className="ui grid"
+      >
+        <GridColumn
+          computer={4}
+          key="0"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedProperty
+                bedroomsNumber={0}
+                guestsNumber={0}
+                imageUrl=""
+                isShowingPlaceholder={true}
+                locationName=""
+                nightPrice=""
+                propertyName=""
+                propertyType=""
+                propertyUrl=""
+                ratingNumber={0}
+              >
+                <Card
+                  className="has-featured"
+                  href=""
+                >
+                  <div
+                    className="ui card has-featured"
+                    href=""
+                    onClick={[Function]}
+                  >
+                    <BlockPlaceholder
+                      isFluid={false}
+                      isRectangular={true}
+                      isSquare={false}
+                    >
+                      <div
+                        className="placeholder block rectangle"
+                      />
+                    </BlockPlaceholder>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="medium"
+                            >
+                              <div
+                                className="placeholder text medium fluid"
+                              />
+                            </TextPlaceholder>
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                          </div>
+                        </CardHeader>
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+              </FeaturedProperty>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          computer={4}
+          key="1"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedProperty
+                bedroomsNumber={0}
+                guestsNumber={0}
+                imageUrl=""
+                isShowingPlaceholder={true}
+                locationName=""
+                nightPrice=""
+                propertyName=""
+                propertyType=""
+                propertyUrl=""
+                ratingNumber={0}
+              >
+                <Card
+                  className="has-featured"
+                  href=""
+                >
+                  <div
+                    className="ui card has-featured"
+                    href=""
+                    onClick={[Function]}
+                  >
+                    <BlockPlaceholder
+                      isFluid={false}
+                      isRectangular={true}
+                      isSquare={false}
+                    >
+                      <div
+                        className="placeholder block rectangle"
+                      />
+                    </BlockPlaceholder>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="medium"
+                            >
+                              <div
+                                className="placeholder text medium fluid"
+                              />
+                            </TextPlaceholder>
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                          </div>
+                        </CardHeader>
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+              </FeaturedProperty>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          computer={4}
+          key="2"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedProperty
+                bedroomsNumber={0}
+                guestsNumber={0}
+                imageUrl=""
+                isShowingPlaceholder={true}
+                locationName=""
+                nightPrice=""
+                propertyName=""
+                propertyType=""
+                propertyUrl=""
+                ratingNumber={0}
+              >
+                <Card
+                  className="has-featured"
+                  href=""
+                >
+                  <div
+                    className="ui card has-featured"
+                    href=""
+                    onClick={[Function]}
+                  >
+                    <BlockPlaceholder
+                      isFluid={false}
+                      isRectangular={true}
+                      isSquare={false}
+                    >
+                      <div
+                        className="placeholder block rectangle"
+                      />
+                    </BlockPlaceholder>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="medium"
+                            >
+                              <div
+                                className="placeholder text medium fluid"
+                              />
+                            </TextPlaceholder>
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                          </div>
+                        </CardHeader>
+                      </div>
+                    </CardContent>
+                  </div>
                 </Card>
               </FeaturedProperty>
             </div>
