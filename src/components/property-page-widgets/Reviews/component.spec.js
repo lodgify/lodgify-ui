@@ -49,6 +49,22 @@ describe('<Reviews />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  describe('if `props.isShowingPlaceholder` is `true`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getReviews({ isShowingPlaceholder: true });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    describe('if `props.reviews` has length `0`', () => {
+      it('should render the right structure', () => {
+        const wrapper = getReviews({ isShowingPlaceholder: true, reviews: [] });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+  });
+
   it('should have displayName `Reviews`', () => {
     expectComponentToHaveDisplayName(Reviews, 'Reviews');
   });

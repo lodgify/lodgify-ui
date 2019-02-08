@@ -33,7 +33,8 @@ const props = {
   yearOptions,
 };
 
-const getModalForm = props => mount(getModalFormMarkup(props));
+const getModalForm = (props, isShowingPlaceholder) =>
+  mount(getModalFormMarkup(props, isShowingPlaceholder));
 
 describe('getModalFormMarkup', () => {
   it('should have the right structure with default props', () => {
@@ -41,9 +42,18 @@ describe('getModalFormMarkup', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
   it('should render the right structure when props are passed', () => {
     const wrapper = getModalForm(props);
 
     expect(wrapper).toMatchSnapshot();
+  });
+
+  describe('if `isShowingPlaceholder` is `true`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getModalForm(props, true);
+
+      expect(wrapper).toMatchSnapshot();
+    });
   });
 });

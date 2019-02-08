@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
+import { TextPlaceholder } from 'elements/TextPlaceholder';
 import { Heading } from 'typography/Heading';
 import { Rating } from 'elements/Rating';
 import { Divider } from 'elements/Divider';
@@ -25,6 +26,7 @@ import {
   YOUR_REVIEW,
 } from 'utils/default-strings/constants';
 
+import { PLACEHOLDERS } from './constants';
 import { getModalFormMarkup } from './utils/getModalFormMarkup';
 
 /**
@@ -33,47 +35,57 @@ import { getModalFormMarkup } from './utils/getModalFormMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   headingText,
+  isShowingPlaceholder,
   ratingAverage,
   reviews,
   ...props
-}) => (
-  <Grid>
-    <GridRow>
-      <GridColumn width={12}>
-        <Heading>{headingText}</Heading>
-      </GridColumn>
-    </GridRow>
-    <GridRow verticalAlign="middle">
-      <GridColumn
-        computer={6}
-        floated="left"
-        mobile={5}
-        tablet={5}
-        textAlign="left"
-        verticalAlign="middle"
-      >
-        <Rating ratingNumber={ratingAverage} />
-      </GridColumn>
-      <GridColumn
-        computer={6}
-        floated="right"
-        mobile={7}
-        tablet={7}
-        verticalAlign="middle"
-      >
-        {getModalFormMarkup(props)}
-      </GridColumn>
-    </GridRow>
-    {reviews.map((review, index) => (
-      <GridRow key={buildKeyFromStrings(review.reviewText, index)}>
+}) => {
+  const reviewsToMap =
+    isShowingPlaceholder && reviews.length === 0 ? PLACEHOLDERS : reviews;
+
+  return (
+    <Grid>
+      <GridRow>
         <GridColumn width={12}>
-          <Review {...review} />
-          <Divider />
+          <Heading>{headingText}</Heading>
         </GridColumn>
       </GridRow>
-    ))}
-  </Grid>
-);
+      <GridRow verticalAlign="middle">
+        <GridColumn
+          computer={6}
+          floated="left"
+          mobile={5}
+          tablet={5}
+          textAlign="left"
+          verticalAlign="middle"
+        >
+          {isShowingPlaceholder ? (
+            <TextPlaceholder length="medium" />
+          ) : (
+            <Rating ratingNumber={ratingAverage} />
+          )}
+        </GridColumn>
+        <GridColumn
+          computer={6}
+          floated="right"
+          mobile={7}
+          tablet={7}
+          verticalAlign="middle"
+        >
+          {getModalFormMarkup(props, isShowingPlaceholder)}
+        </GridColumn>
+      </GridRow>
+      {reviewsToMap.map((review, index) => (
+        <GridRow key={buildKeyFromStrings(review.reviewText, index)}>
+          <GridColumn width={12}>
+            <Review isShowingPlaceholder={isShowingPlaceholder} {...review} />
+            <Divider />
+          </GridColumn>
+        </GridRow>
+      ))}
+    </Grid>
+  );
+};
 
 Component.displayName = 'Reviews';
 
@@ -85,6 +97,7 @@ Component.defaultProps = {
   guestTypeInputLabel: GUEST_TYPE,
   guestTypeOptions: [],
   headingText: REVIEWS,
+  isShowingPlaceholder: false,
   locationInputLabel: YOUR_LOCATION,
   monthInputLabel: MONTH,
   monthOptions: [],
@@ -131,6 +144,8 @@ Component.propTypes = {
   ),
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** Is the component showing placeholders to reserve space for content which will appear. */
+  isShowingPlaceholder: PropTypes.bool,
   /** The label for the location input. */
   // eslint-disable-next-line react/no-unused-prop-types
   locationInputLabel: PropTypes.string,

@@ -195,3 +195,12 @@ const reviews = [
   yearOptions={yearOptions}
 />;
 ```
+
+#### Showing placeholders
+
+```jsx
+<Reviews
+  isShowingPlaceholder
+  ratingAverage={0}
+/>
+```
