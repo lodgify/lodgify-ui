@@ -84,6 +84,14 @@ describe('<RoomType />', () => {
     });
   });
 
+  describe('if `isShowingPlaceholder` is `true`', () => {
+    it('should render the correct structure', () => {
+      const actual = getWrappedRoomType({ isShowingPlaceholder: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   it('should have the right `displayName`', () => {
     const component = getRoomType().prop('as');
 

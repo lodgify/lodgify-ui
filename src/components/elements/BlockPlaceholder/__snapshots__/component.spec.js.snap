@@ -2,12 +2,12 @@
 
 exports[`<BlockPlaceholder /> should have the right structure 1`] = `
 <BlockPlaceholder
-  isFluid={true}
+  isFluid={false}
   isRectangular={false}
   isSquare={false}
 >
   <div
-    className="placeholder block fluid"
+    className="placeholder block"
   />
 </BlockPlaceholder>
 `;

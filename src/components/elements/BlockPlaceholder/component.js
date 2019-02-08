@@ -19,13 +19,13 @@ export const Component = ({ isFluid, isRectangular, isSquare }) => (
 Component.displayName = 'BlockPlaceholder';
 
 Component.defaultProps = {
-  isFluid: true,
+  isFluid: false,
   isSquare: false,
   isRectangular: false,
 };
 
 Component.propTypes = {
-  /** The placeholder fills the width of its parent. */
+  /** The placeholder fills the height and width of its parent. */
   isFluid: PropTypes.bool,
   /** The placeholder maintains 4:3 proportions. */
   isRectangular: PropTypes.bool,

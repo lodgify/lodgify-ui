@@ -5,3 +5,14 @@ const { roomTypes } = require('./mock-data/roomTypes');
   roomTypes={roomTypes}
 />
 ```
+
+### States
+
+#### Showing placeholder
+
+```jsx
+<RoomTypes
+  isShowingPlaceholder
+  roomTypes={[]}
+/>
+```

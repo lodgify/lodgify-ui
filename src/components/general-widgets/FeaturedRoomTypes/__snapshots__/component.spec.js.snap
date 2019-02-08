@@ -387,12 +387,12 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
                     onClick={[Function]}
                   >
                     <BlockPlaceholder
-                      isFluid={true}
+                      isFluid={false}
                       isRectangular={true}
                       isSquare={false}
                     >
                       <div
-                        className="placeholder block fluid rectangle"
+                        className="placeholder block rectangle"
                       />
                     </BlockPlaceholder>
                     <CardContent>
@@ -492,12 +492,12 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
                     onClick={[Function]}
                   >
                     <BlockPlaceholder
-                      isFluid={true}
+                      isFluid={false}
                       isRectangular={true}
                       isSquare={false}
                     >
                       <div
-                        className="placeholder block fluid rectangle"
+                        className="placeholder block rectangle"
                       />
                     </BlockPlaceholder>
                     <CardContent>
@@ -597,12 +597,12 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
                     onClick={[Function]}
                   >
                     <BlockPlaceholder
-                      isFluid={true}
+                      isFluid={false}
                       isRectangular={true}
                       isSquare={false}
                     >
                       <div
-                        className="placeholder block fluid rectangle"
+                        className="placeholder block rectangle"
                       />
                     </BlockPlaceholder>
                     <CardContent>

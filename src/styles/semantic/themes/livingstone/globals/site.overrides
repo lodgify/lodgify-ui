@@ -571,6 +571,10 @@ blockquote.ui.quote .row {
 .placeholder.block {
   height: @blockPlaceholderDefaultHeight;
 
+  &.fluid {
+    min-height: 100%;
+  }
+
   &.square {
     padding-top: 100%;
   }

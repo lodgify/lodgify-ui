@@ -40,6 +40,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
       },
     ]
   }
+  isShowingPlaceholder={false}
   isUserOnMobile={false}
   locationName="Catania"
   name="The Cat House"
@@ -953,6 +954,253 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
 </RoomType>
 `;
 
+exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the correct structure 1`] = `
+<RoomType
+  amenities={
+    Array [
+      Object {
+        "iconName": "leaf",
+        "items": Array [
+          "Toaster",
+          "Microwave",
+          "Coffee Machine",
+        ],
+        "name": "Cooking",
+      },
+      Object {
+        "iconName": "paw",
+        "items": Array [
+          "Bidet",
+          "Hair Dryer",
+          "Iron & Board",
+        ],
+        "name": "Bathroom & Laundry",
+      },
+    ]
+  }
+  description="yayayay"
+  extraFeatures={
+    Array [
+      Object {
+        "labelText": "1 Dining-Room",
+      },
+    ]
+  }
+  features={
+    Array [
+      Object {
+        "iconName": "double bed",
+        "labelText": "1 Bedroom",
+      },
+    ]
+  }
+  isShowingPlaceholder={true}
+  isUserOnMobile={false}
+  locationName="Catania"
+  name="The Cat House"
+  nightPrice="$280"
+  propertyType="Bed and breakfast"
+  propertyUrl="/"
+  ratingNumber={4}
+  slideShowImages={
+    Array [
+      Object {
+        "alternativeText": "Two cats",
+        "title": "Two cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Two more cats",
+        "title": "Two more cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+      Object {
+        "alternativeText": "Much cats",
+        "title": "Much cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+      },
+    ]
+  }
+>
+  <Card
+    className="has-room-type-gallery"
+    fluid={true}
+  >
+    <div
+      className="ui fluid card has-room-type-gallery"
+      onClick={[Function]}
+    >
+      <Grid
+        areColumnsCentered={false}
+      >
+        <Grid
+          centered={false}
+        >
+          <div
+            className="ui grid"
+          >
+            <GridRow
+              horizontalAlignContent="left"
+            >
+              <GridRow
+                textAlign="left"
+              >
+                <div
+                  className="left aligned row"
+                >
+                  <GridColumn
+                    computer={4}
+                    mobile={12}
+                    verticalAlignContent={null}
+                    width={null}
+                  >
+                    <GridColumn
+                      computer={4}
+                      mobile={12}
+                      verticalAlign={null}
+                      width={null}
+                    >
+                      <div
+                        className="four wide computer twelve wide mobile column"
+                      >
+                        <BlockPlaceholder
+                          isFluid={true}
+                          isRectangular={false}
+                          isSquare={false}
+                        >
+                          <div
+                            className="placeholder block fluid"
+                          />
+                        </BlockPlaceholder>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    computer={8}
+                    mobile={12}
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      computer={8}
+                      mobile={12}
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned eight wide computer twelve wide mobile column"
+                      >
+                        <Grid
+                          areColumnsCentered={false}
+                          padded={true}
+                        >
+                          <Grid
+                            centered={false}
+                            padded={true}
+                          >
+                            <div
+                              className="ui padded grid"
+                            >
+                              <GridColumn
+                                verticalAlignContent="top"
+                                width={null}
+                              >
+                                <GridColumn
+                                  verticalAlign="top"
+                                  width={null}
+                                >
+                                  <div
+                                    className="top aligned column"
+                                  >
+                                    <Divider
+                                      className=""
+                                      hasLine={false}
+                                      size="medium"
+                                    >
+                                      <Divider
+                                        className=""
+                                        hidden={true}
+                                        section={false}
+                                      >
+                                        <div
+                                          className="ui hidden divider"
+                                        />
+                                      </Divider>
+                                    </Divider>
+                                    <TextPlaceholder
+                                      isFluid={true}
+                                      length="short"
+                                    >
+                                      <div
+                                        className="placeholder text short fluid"
+                                      />
+                                    </TextPlaceholder>
+                                    <TextPlaceholder
+                                      isFluid={true}
+                                      length="medium"
+                                    >
+                                      <div
+                                        className="placeholder text medium fluid"
+                                      />
+                                    </TextPlaceholder>
+                                    <Divider
+                                      className=""
+                                      hasLine={false}
+                                      size="medium"
+                                    >
+                                      <Divider
+                                        className=""
+                                        hidden={true}
+                                        section={false}
+                                      >
+                                        <div
+                                          className="ui hidden divider"
+                                        />
+                                      </Divider>
+                                    </Divider>
+                                    <TextPlaceholder
+                                      isFluid={true}
+                                      length="short"
+                                    >
+                                      <div
+                                        className="placeholder text short fluid"
+                                      />
+                                    </TextPlaceholder>
+                                    <Divider
+                                      className=""
+                                      hasLine={false}
+                                      size="medium"
+                                    >
+                                      <Divider
+                                        className=""
+                                        hidden={true}
+                                        section={false}
+                                      >
+                                        <div
+                                          className="ui hidden divider"
+                                        />
+                                      </Divider>
+                                    </Divider>
+                                  </div>
+                                </GridColumn>
+                              </GridColumn>
+                            </div>
+                          </Grid>
+                        </Grid>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                </div>
+              </GridRow>
+            </GridRow>
+          </div>
+        </Grid>
+      </Grid>
+    </div>
+  </Card>
+</RoomType>
+`;
+
 exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct structure 1`] = `
 <RoomType
   amenities={
@@ -993,6 +1241,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
       },
     ]
   }
+  isShowingPlaceholder={false}
   isUserOnMobile={true}
   locationName="Catania"
   name="The Cat House"
