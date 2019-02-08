@@ -12,11 +12,11 @@ export const getTablePlaceholderMarkup = () => (
     <TextPlaceholder length="full" />
     <TextPlaceholder length="full" />
     <Divider />
-    <BlockPlaceholder />
+    <BlockPlaceholder isFluid />
     <Divider />
-    <BlockPlaceholder />
+    <BlockPlaceholder isFluid />
     <Divider />
-    <BlockPlaceholder />
+    <BlockPlaceholder isFluid />
     <Divider />
   </Fragment>
 );

@@ -6,7 +6,7 @@ exports[`<FeaturedRoomType /> if \`props.isShowingPlaceholder\` is \`true\` shou
   href="/"
 >
   <BlockPlaceholder
-    isFluid={true}
+    isFluid={false}
     isRectangular={true}
     isSquare={false}
   />
