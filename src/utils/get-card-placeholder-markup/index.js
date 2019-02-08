@@ -1,0 +1,1 @@
+export { getCardPlaceholderMarkup } from './getCardPlaceholderMarkup';

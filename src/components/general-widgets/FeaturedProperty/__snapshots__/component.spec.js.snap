@@ -1,5 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<FeaturedProperty /> if \`props.isShowingPlaceholder\` is passed should return the right structure 1`] = `
+<Card
+  className="has-featured"
+  href="/"
+>
+  <BlockPlaceholder
+    isFluid={false}
+    isRectangular={true}
+    isSquare={false}
+  />
+  <CardContent>
+    <CardHeader>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+      <TextPlaceholder
+        isFluid={true}
+        length="medium"
+      />
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+      <TextPlaceholder
+        isFluid={true}
+        length="long"
+      />
+      <TextPlaceholder
+        isFluid={true}
+        length="long"
+      />
+    </CardHeader>
+  </CardContent>
+</Card>
+`;
+
 exports[`<FeaturedProperty /> should render the right structure 1`] = `
 <Card
   className="has-featured"

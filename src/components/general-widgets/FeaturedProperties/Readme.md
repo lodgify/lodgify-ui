@@ -29,3 +29,14 @@ const featuredProperties = [
   headingText="Featured properties"
 />
 ```
+
+### States
+
+#### Showing placeholder
+
+```jsx
+<FeaturedProperties
+  headingText="Featured properties"
+  isShowingPlaceholder
+/>
+```

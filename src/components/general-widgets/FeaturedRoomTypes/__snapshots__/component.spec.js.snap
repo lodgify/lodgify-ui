@@ -426,6 +426,21 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
                                 className="placeholder text medium fluid"
                               />
                             </TextPlaceholder>
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
                             <TextPlaceholder
                               isFluid={true}
                               length="long"
@@ -531,6 +546,21 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
                                 className="placeholder text medium fluid"
                               />
                             </TextPlaceholder>
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
                             <TextPlaceholder
                               isFluid={true}
                               length="long"
@@ -636,6 +666,21 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
                                 className="placeholder text medium fluid"
                               />
                             </TextPlaceholder>
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
                             <TextPlaceholder
                               isFluid={true}
                               length="long"
