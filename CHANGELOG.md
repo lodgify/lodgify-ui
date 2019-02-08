@@ -1,3 +1,12 @@
+# [1.132.0](https://github.com/lodgify/lodgify-ui/compare/v1.131.0...v1.132.0) (2019-02-08)
+
+
+### Features
+
+* **BlockPlaceholder:** fluid placeholder takes full height of container ([9271d97](https://github.com/lodgify/lodgify-ui/commit/9271d97))
+* **RoomType:** expose props.isShowingPlaceholder and implement placeholders ([ea67c53](https://github.com/lodgify/lodgify-ui/commit/ea67c53))
+* **RoomTypes:** expose props.isShowingPlaceholder and implement placeholders ([b247670](https://github.com/lodgify/lodgify-ui/commit/b247670))
+
 # [1.131.0](https://github.com/lodgify/lodgify-ui/compare/v1.130.0...v1.131.0) (2019-02-08)
 
 
