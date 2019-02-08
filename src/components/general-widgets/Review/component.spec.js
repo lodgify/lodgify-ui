@@ -38,6 +38,14 @@ describe('<Review />', () => {
     });
   });
 
+  describe('if `props.isShowingPlaceholder`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getReview({ isShowingPlaceholder: true });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   it('should have displayName `Review`', () => {
     expectComponentToHaveDisplayName(Review, 'Review');
   });

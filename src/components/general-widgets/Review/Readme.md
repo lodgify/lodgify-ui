@@ -25,3 +25,20 @@ const reviewTitle = 'Great accommodation! Honorable host.';
   reviewTitle={reviewTitle}
 />;
 ```
+
+### States
+
+#### Showing placeholder
+
+```jsx
+<Review
+  isShowingPlaceholder
+  ratingNumber={0}
+  reviewerCategory=""
+  reviewerLocation=""
+  reviewerName=""
+  reviewerStayDate=""
+  reviewText=""
+  reviewTitle=""
+/>
+```
