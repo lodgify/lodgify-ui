@@ -16,7 +16,8 @@ const props = {
   ratingNumber: 4.8,
 };
 
-const getFeaturedProperty = () => shallow(<FeaturedProperty {...props} />);
+const getFeaturedProperty = extraProps =>
+  shallow(<FeaturedProperty {...props} {...extraProps} />);
 
 describe('<FeaturedProperty />', () => {
   it('should render the right structure', () => {
@@ -27,5 +28,13 @@ describe('<FeaturedProperty />', () => {
 
   it('should have `displayName` `FeaturedProperty`', () => {
     expectComponentToHaveDisplayName(FeaturedProperty, 'FeaturedProperty');
+  });
+
+  describe('if `props.isShowingPlaceholder` is passed', () => {
+    it('should return the right structure', () => {
+      const actual = getFeaturedProperty({ isShowingPlaceholder: true });
+
+      expect(actual).toMatchSnapshot();
+    });
   });
 });
