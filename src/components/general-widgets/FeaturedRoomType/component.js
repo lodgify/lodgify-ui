@@ -2,11 +2,9 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
-import { BlockPlaceholder } from 'elements/BlockPlaceholder';
-import { Divider } from 'elements/Divider';
+import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup/';
 import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
 import { ResponsiveImage } from 'media/ResponsiveImage';
-import { TextPlaceholder } from 'elements/TextPlaceholder';
 
 import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
 
@@ -32,17 +30,7 @@ export const Component = ({
 }) => (
   <Card className="has-featured" href={roomTypeUrl}>
     {isShowingPlaceholder ? (
-      <Fragment>
-        <BlockPlaceholder isRectangular />
-        <Card.Content>
-          <Card.Header>
-            <Divider />
-            <TextPlaceholder length="medium" />
-            <TextPlaceholder length="long" />
-            <TextPlaceholder length="long" />
-          </Card.Header>
-        </Card.Content>
-      </Fragment>
+      getCardPlaceholderMarkup()
     ) : (
       <Fragment>
         <ResponsiveImage
