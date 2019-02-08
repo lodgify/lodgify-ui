@@ -28,6 +28,25 @@ describe('<RoomTypes />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  describe('if `isShowingPlaceholder` is `true`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getRoomTypes({ isShowingPlaceholder: true });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    describe('if `roomTypes.length` is `0`', () => {
+      it('should render the right structure', () => {
+        const wrapper = getRoomTypes({
+          isShowingPlaceholder: true,
+          roomTypes: [],
+        });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+  });
+
   it('should have `displayName` `RoomTypes`', () => {
     expectComponentToHaveDisplayName(RoomTypes, 'RoomTypes');
   });
