@@ -20,6 +20,19 @@ const {
 </HTML>
 ```
 
+#### Image Nesting
+
+```jsx
+const { image, nestedImage, flexWrappedImage } = require('./mock-data/examples');
+
+<HTML htmlString={image}>
+  <HTML htmlString={nestedImage}>
+    <HTML htmlString={flexWrappedImage}>
+    </HTML>
+  </HTML>
+</HTML>
+```
+
 #### Wrong HTML
 
 ```jsx
