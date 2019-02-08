@@ -57,6 +57,17 @@ describe('<FeaturedProperties />', () => {
     });
   });
 
+  describe('if `props.isShowingPlaceholder` === true and `props.featuredProperties.length` === 0', () => {
+    it('should render the right structure', () => {
+      const actual = getFeaturedProperties({
+        isShowingPlaceholder: true,
+        featuredProperties: [],
+      });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   it('should have `displayName` `FeaturedProperties`', () => {
     expectComponentToHaveDisplayName(FeaturedProperties, 'FeaturedProperties');
   });
