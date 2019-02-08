@@ -11,3 +11,22 @@
   ratingNumber={4.8}
 />
 ```
+
+### States
+
+#### Showing placeholder
+
+```jsx
+<FeaturedProperty
+  bedroomsNumber={0}
+  guestsNumber={0}
+  imageUrl=""
+  isShowingPlaceholder
+  locationName=""
+  nightPrice=""
+  propertyName=""
+  propertyType=""
+  propertyUrl=""
+  ratingNumber={0}
+/>
+```
