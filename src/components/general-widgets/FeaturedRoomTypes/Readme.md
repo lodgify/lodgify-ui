@@ -27,3 +27,14 @@ const featuredRoomTypes = [
   headingText="Featured rooms"
 />
 ```
+
+### States
+
+#### Showing placeholder
+
+```jsx
+<FeaturedRoomTypes
+  headingText="Featured rooms"
+  isShowingPlaceholder
+/>
+```
