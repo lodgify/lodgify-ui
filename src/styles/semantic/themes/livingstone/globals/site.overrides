@@ -625,3 +625,22 @@ blockquote.ui.quote .row {
     margin-right: 1em;
   }
 }
+
+/*----------------------
+       HTML Container
+-----------------------*/
+
+.html-container {
+  overflow: auto;
+
+  > img {
+    max-width: @htmlContainerImmediateImageChildMaxWidth;
+  }
+
+  & * {
+
+    img {
+      width: @htmlContainerImageChildWidth;
+    }
+  }
+}
