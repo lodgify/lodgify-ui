@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
@@ -6,6 +6,7 @@ import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
+import { TextPlaceholder } from 'elements/TextPlaceholder';
 import { Paragraph } from 'typography/Paragraph';
 import { Quote } from 'elements/Quote';
 import { Rating } from 'elements/Rating';
@@ -19,6 +20,7 @@ import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLoca
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  isShowingPlaceholder,
   ratingNumber,
   reviewerCategory,
   reviewerLocation,
@@ -34,12 +36,16 @@ export const Component = ({
         <Grid>
           <GridRow verticalAlign="middle">
             <GridColumn computer={6} mobile={12} tablet={7}>
-              <Subheading>
-                {getReviewerNameAndLocationString(
-                  reviewerName,
-                  reviewerLocation
-                )}
-              </Subheading>
+              {isShowingPlaceholder ? (
+                <TextPlaceholder length="medium" />
+              ) : (
+                <Subheading>
+                  {getReviewerNameAndLocationString(
+                    reviewerName,
+                    reviewerLocation
+                  )}
+                </Subheading>
+              )}
             </GridColumn>
             <GridColumn
               computer={6}
@@ -48,16 +54,30 @@ export const Component = ({
               textAlign="right"
               verticalAlign="middle"
             >
-              <Rating isShowingNumeral={false} ratingNumber={ratingNumber} />
+              {!isShowingPlaceholder && (
+                <Rating isShowingNumeral={false} ratingNumber={ratingNumber} />
+              )}
             </GridColumn>
           </GridRow>
         </Grid>
       </Card.Meta>
       <Divider />
-      <Card.Header>{reviewTitle}</Card.Header>
-      <Card.Description>
-        <Paragraph>{reviewText}</Paragraph>
-      </Card.Description>
+      {isShowingPlaceholder ? (
+        <Fragment>
+          <TextPlaceholder length="medium" />
+          <Divider />
+          <TextPlaceholder />
+          <TextPlaceholder />
+          <TextPlaceholder length="short" />
+        </Fragment>
+      ) : (
+        <Fragment>
+          <Card.Header>{reviewTitle}</Card.Header>
+          <Card.Description>
+            <Paragraph>{reviewText}</Paragraph>
+          </Card.Description>
+        </Fragment>
+      )}
       <Divider />
       {!!reviewResponse && (
         <div>
@@ -70,10 +90,11 @@ export const Component = ({
         </div>
       )}
       <Card.Description textAlign="right">
-        {getReviewerCategoryAndStayDateString(
-          reviewerCategory,
-          reviewerStayDate
-        )}
+        {!isShowingPlaceholder &&
+          getReviewerCategoryAndStayDateString(
+            reviewerCategory,
+            reviewerStayDate
+          )}
       </Card.Description>
     </Card.Content>
   </Card>
@@ -82,10 +103,13 @@ export const Component = ({
 Component.displayName = 'Review';
 
 Component.defaultProps = {
+  isShowingPlaceholder: false,
   reviewResponse: null,
 };
 
 Component.propTypes = {
+  /** Is the component showing placeholders to reserve space for content which will appear. */
+  isShowingPlaceholder: PropTypes.bool,
   /** The numeral rating for the property given in the review, out of 5. */
   ratingNumber: PropTypes.number.isRequired,
   /** The response to the review. */
