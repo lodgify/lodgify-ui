@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
@@ -6,6 +6,8 @@ import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
+import { BlockPlaceholder } from 'elements/BlockPlaceholder';
+import { TextPlaceholder } from 'elements/TextPlaceholder';
 import { Link } from 'elements/Link';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
@@ -27,6 +29,7 @@ const Component = ({
   description,
   extraFeatures,
   features,
+  isShowingPlaceholder,
   isUserOnMobile,
   name,
   nightPrice,
@@ -37,80 +40,98 @@ const Component = ({
     <Grid>
       <GridRow>
         <GridColumn computer={4} mobile={12} verticalAlignContent={null}>
-          <Slideshow
-            hasShadow={false}
-            images={slideShowImages}
-            isRounded={false}
-            isShowingBulletNavigation={false}
-            isStretched
-          />
+          {isShowingPlaceholder ? (
+            <BlockPlaceholder isFluid />
+          ) : (
+            <Slideshow
+              hasShadow={false}
+              images={slideShowImages}
+              isRounded={false}
+              isShowingBulletNavigation={false}
+              isStretched
+            />
+          )}
         </GridColumn>
         <GridColumn computer={8} mobile={12}>
           <Grid padded>
-            <GridColumn computer={12} floated="left" mobile={10}>
-              <Heading>{name}</Heading>
-            </GridColumn>
-            <GridColumn
-              only="mobile"
-              textAlign="right"
-              verticalAlignContent="middle"
-              width={2}
-            >
-              <Modal
-                trigger={
-                  <Icon
-                    color="yellow"
-                    isCircular
-                    isColorInverted
-                    name={ICON_NAMES.INFO}
-                    size="small"
-                  />
-                }
-              >
-                {getModalContentMarkup(
-                  amenities,
-                  description,
-                  extraFeatures,
-                  features,
-                  name,
-                  nightPrice,
-                  ratingNumber,
-                  slideShowImages,
-                  isUserOnMobile
-                )}
-              </Modal>
-            </GridColumn>
-            {getRoomFeaturesMarkup(isUserOnMobile, features)}
-            <GridRow>
-              <GridColumn
-                only="tablet computer"
-                verticalAlignContent="bottom"
-                width={4}
-              >
-                <Modal size="small" trigger={<Link>More Info</Link>}>
-                  {getModalContentMarkup(
-                    amenities,
-                    description,
-                    extraFeatures,
-                    features,
-                    name,
-                    nightPrice,
-                    ratingNumber,
-                    slideShowImages,
-                    isUserOnMobile
-                  )}
-                </Modal>
+            {isShowingPlaceholder ? (
+              <GridColumn>
+                <Divider />
+                <TextPlaceholder length="short" />
+                <TextPlaceholder length="medium" />
+                <Divider />
+                <TextPlaceholder length="short" />
+                <Divider />
               </GridColumn>
-              <GridColumn
-                textAlign={isUserOnMobile ? 'left' : 'right'}
-                width={8}
-              >
-                <Card.Description>
-                  {getNightPriceMarkup(nightPrice)}
-                </Card.Description>
-                <ShowOn mobile parent={Divider} />
-              </GridColumn>
-            </GridRow>
+            ) : (
+              <Fragment>
+                <GridColumn computer={12} floated="left" mobile={10}>
+                  <Heading>{name}</Heading>
+                </GridColumn>
+                <GridColumn
+                  only="mobile"
+                  textAlign="right"
+                  verticalAlignContent="middle"
+                  width={2}
+                >
+                  <Modal
+                    trigger={
+                      <Icon
+                        color="yellow"
+                        isCircular
+                        isColorInverted
+                        name={ICON_NAMES.INFO}
+                        size="small"
+                      />
+                    }
+                  >
+                    {getModalContentMarkup(
+                      amenities,
+                      description,
+                      extraFeatures,
+                      features,
+                      name,
+                      nightPrice,
+                      ratingNumber,
+                      slideShowImages,
+                      isUserOnMobile
+                    )}
+                  </Modal>
+                </GridColumn>
+
+                {getRoomFeaturesMarkup(isUserOnMobile, features)}
+                <GridRow>
+                  <GridColumn
+                    only="tablet computer"
+                    verticalAlignContent="bottom"
+                    width={4}
+                  >
+                    <Modal size="small" trigger={<Link>More Info</Link>}>
+                      {getModalContentMarkup(
+                        amenities,
+                        description,
+                        extraFeatures,
+                        features,
+                        name,
+                        nightPrice,
+                        ratingNumber,
+                        slideShowImages,
+                        isUserOnMobile
+                      )}
+                    </Modal>
+                  </GridColumn>
+                  <GridColumn
+                    textAlign={isUserOnMobile ? 'left' : 'right'}
+                    width={8}
+                  >
+                    <Card.Description>
+                      {getNightPriceMarkup(nightPrice)}
+                    </Card.Description>
+                    <ShowOn mobile parent={Divider} />
+                  </GridColumn>
+                </GridRow>
+              </Fragment>
+            )}
           </Grid>
         </GridColumn>
       </GridRow>
@@ -123,6 +144,7 @@ Component.displayName = 'RoomType';
 Component.defaultProps = {
   description: null,
   extraFeatures: [],
+  isShowingPlaceholder: false,
   ratingNumber: null,
 };
 
@@ -162,6 +184,8 @@ Component.propTypes = {
       labelText: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** Is the component showing placeholders to reserve space for content which will appear. */
+  isShowingPlaceholder: PropTypes.bool,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.
