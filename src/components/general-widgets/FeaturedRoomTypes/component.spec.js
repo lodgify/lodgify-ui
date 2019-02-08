@@ -29,15 +29,12 @@ const featuredRoomTypes = [
   },
 ];
 
-const getFeaturedRoomTypes = otherProps =>
-  mount(
-    <FeaturedRoomTypes featuredRoomTypes={featuredRoomTypes} {...otherProps} />
-  );
+const getFeaturedRoomTypes = props => mount(<FeaturedRoomTypes {...props} />);
 
 describe('<FeaturedRoomTypes />', () => {
   describe('by default', () => {
     it('should render the right structure', () => {
-      const actual = getFeaturedRoomTypes();
+      const actual = getFeaturedRoomTypes({ featuredRoomTypes });
 
       expect(actual).toMatchSnapshot();
     });
@@ -46,7 +43,15 @@ describe('<FeaturedRoomTypes />', () => {
   describe('if `props.headingText` is passed', () => {
     it('should render the right structure', () => {
       const headingText = 'My god I love Elton John';
-      const actual = getFeaturedRoomTypes({ headingText });
+      const actual = getFeaturedRoomTypes({ featuredRoomTypes, headingText });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.featuredRoomTypes` length === 0 and `props.isShowingPlaceholder` === true', () => {
+    it('should render the right structure', () => {
+      const actual = getFeaturedRoomTypes({ isShowingPlaceholder: true });
 
       expect(actual).toMatchSnapshot();
     });
