@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getCardPlaceholderMarkup should return the right structure 1`] = `
+<React.Fragment>
+  <BlockPlaceholder
+    isFluid={false}
+    isRectangular={true}
+    isSquare={false}
+  />
+  <CardContent>
+    <CardHeader>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+      <TextPlaceholder
+        isFluid={true}
+        length="medium"
+      />
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+      <TextPlaceholder
+        isFluid={true}
+        length="long"
+      />
+      <TextPlaceholder
+        isFluid={true}
+        length="long"
+      />
+    </CardHeader>
+  </CardContent>
+</React.Fragment>
+`;
