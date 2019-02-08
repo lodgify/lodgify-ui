@@ -32,35 +32,45 @@ import { RatingInput } from 'inputs/RatingInput';
  * @param {Object}   props.validation
  * @param {string}   props.yearInputLabel
  * @param {Object[]} props.yearOptions
+ * @param {boolean}  isShowingPlaceholder
  */
-export const getModalFormMarkup = ({
-  /* eslint-disable react/prop-types */
-  commentInputLabel,
-  emailInputLabel,
-  errorMessage,
-  formHeadingText,
-  guestTypeInputLabel,
-  guestTypeOptions,
-  locationInputLabel,
-  monthInputLabel,
-  monthOptions,
-  nameInputLabel,
-  onSubmit,
-  ratingAverage,
-  ratingInputLabel,
-  roomTypeInputLabel,
-  roomTypeOptions,
-  submitButtonText,
-  successMessage,
-  titleInputLabel,
-  validation,
-  yearInputLabel,
-  yearOptions,
-  /* eslint-enable react/prop-types */
-}) => (
+export const getModalFormMarkup = (
+  {
+    /* eslint-disable react/prop-types */
+    commentInputLabel,
+    emailInputLabel,
+    errorMessage,
+    formHeadingText,
+    guestTypeInputLabel,
+    guestTypeOptions,
+    locationInputLabel,
+    monthInputLabel,
+    monthOptions,
+    nameInputLabel,
+    onSubmit,
+    ratingAverage,
+    ratingInputLabel,
+    roomTypeInputLabel,
+    roomTypeOptions,
+    submitButtonText,
+    successMessage,
+    titleInputLabel,
+    validation,
+    yearInputLabel,
+    yearOptions,
+    /* eslint-enable react/prop-types */
+  },
+  isShowingPlaceholder
+) => (
   <Modal
     trigger={
-      <Button isCompact isPositionedRight isRounded size="medium">
+      <Button
+        isCompact
+        isDisabled={isShowingPlaceholder}
+        isPositionedRight
+        isRounded
+        size="medium"
+      >
         {submitButtonText}
       </Button>
     }
