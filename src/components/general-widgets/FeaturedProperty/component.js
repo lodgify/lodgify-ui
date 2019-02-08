@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
+import { BlockPlaceholder } from 'elements/BlockPlaceholder';
+import { Divider } from 'elements/Divider';
 import { getNightPriceMarkup } from 'utils/get-night-price-markup';
-import { Subheading } from 'typography/Subheading';
 import { Rating } from 'elements/Rating';
 import { ResponsiveImage } from 'media/ResponsiveImage';
+import { Subheading } from 'typography/Subheading';
+import { TextPlaceholder } from 'elements/TextPlaceholder';
 
 import { getPropertyDescription } from './utils/getPropertyDescription';
 
@@ -20,6 +23,7 @@ export const Component = ({
   imageSizes,
   imageSrcSet,
   imageUrl,
+  isShowingPlaceholder,
   locationName,
   nightPrice,
   placeholderImageUrl,
@@ -29,27 +33,55 @@ export const Component = ({
   ratingNumber,
 }) => (
   <Card className="has-featured" href={propertyUrl}>
-    <ResponsiveImage
-      alternativeText={imageAlternativeText}
-      imageUrl={imageUrl}
-      isFluid
-      placeholderImageUrl={placeholderImageUrl}
-      sizes={imageSizes}
-      srcSet={imageSrcSet}
-    />
+    {isShowingPlaceholder ? (
+      <BlockPlaceholder />
+    ) : (
+      <ResponsiveImage
+        alternativeText={imageAlternativeText}
+        imageUrl={imageUrl}
+        isFluid
+        placeholderImageUrl={placeholderImageUrl}
+        sizes={imageSizes}
+        srcSet={imageSrcSet}
+      />
+    )}
     <Card.Content>
-      <Card.Meta>
-        <Subheading>{propertyType}</Subheading>
-      </Card.Meta>
-      <Card.Header>{propertyName}</Card.Header>
-      <Card.Description>{locationName}</Card.Description>
-      <Card.Description>
-        {getPropertyDescription(guestsNumber, bedroomsNumber)}
-      </Card.Description>
-      <Card.Description>
-        <Rating iconSize="tiny" ratingNumber={ratingNumber} />
-      </Card.Description>
-      <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
+      {isShowingPlaceholder ? (
+        <Fragment>
+          <Divider />
+          <Card.Header>
+            <TextPlaceholder length="medium" />
+          </Card.Header>
+          <Divider />
+          <Card.Header>
+            <TextPlaceholder length="long" />
+          </Card.Header>
+          <Divider />
+          <Card.Header>
+            <TextPlaceholder length="long" />
+          </Card.Header>
+          <Divider />
+          <Divider />
+          <Card.Header>
+            <TextPlaceholder length="long" />
+          </Card.Header>
+        </Fragment>
+      ) : (
+        <Fragment>
+          <Card.Meta>
+            <Subheading>{propertyType}</Subheading>
+          </Card.Meta>
+          <Card.Header>{propertyName}</Card.Header>
+          <Card.Description>{locationName}</Card.Description>
+          <Card.Description>
+            {getPropertyDescription(guestsNumber, bedroomsNumber)}
+          </Card.Description>
+          <Card.Description>
+            <Rating iconSize="tiny" ratingNumber={ratingNumber} />
+          </Card.Description>
+          <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
+        </Fragment>
+      )}
     </Card.Content>
   </Card>
 );
@@ -61,6 +93,7 @@ Component.defaultProps = {
   imageAlternativeText: undefined,
   imageSizes: undefined,
   imageSrcSet: undefined,
+  isShowingPlaceholder: false,
   placeholderImageUrl: undefined,
 };
 
@@ -77,6 +110,8 @@ Component.propTypes = {
   imageSrcSet: PropTypes.string,
   /** URL pointing to the image to display. */
   imageUrl: PropTypes.string.isRequired,
+  /** Is the component showing placeholders to reserve space for content which will appear. */
+  isShowingPlaceholder: PropTypes.bool,
   /** The name of the location of the property. */
   locationName: PropTypes.string.isRequired,
   /** The price per night of the property, with currency symbol. */
