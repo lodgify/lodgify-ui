@@ -1,3 +1,11 @@
+# [1.131.0](https://github.com/lodgify/lodgify-ui/compare/v1.130.0...v1.131.0) (2019-02-08)
+
+
+### Features
+
+* **HTML:** implement html-container className ([f90842f](https://github.com/lodgify/lodgify-ui/commit/f90842f))
+* **site.*:** implement styles for HTML component ([c2d38a1](https://github.com/lodgify/lodgify-ui/commit/c2d38a1))
+
 # [1.130.0](https://github.com/lodgify/lodgify-ui/compare/v1.129.0...v1.130.0) (2019-02-08)
 
 
