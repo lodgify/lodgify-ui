@@ -27,6 +27,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
     ]
   }
   headingText={null}
+  isShowingPlaceholder={false}
 >
   <Grid
     areColumnsCentered={false}
@@ -61,6 +62,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 guestsLabel="Guests"
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 ratingNumber={4.8}
@@ -204,6 +206,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 guestsLabel="Guests"
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 ratingNumber={4.8}
@@ -329,6 +332,342 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
 </FeaturedRoomTypes>
 `;
 
+exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \`props.isShowingPlaceholder\` === true should render the right structure 1`] = `
+<FeaturedRoomTypes
+  featuredRoomTypes={Array []}
+  headingText={null}
+  isShowingPlaceholder={true}
+>
+  <Grid
+    areColumnsCentered={false}
+  >
+    <Grid
+      centered={false}
+    >
+      <div
+        className="ui grid"
+      >
+        <GridColumn
+          computer={4}
+          key="0"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedRoomType
+                bedsLabel="Beds"
+                bedsNumber={0}
+                guestsLabel="Guests"
+                guestsNumber={0}
+                imageUrl=""
+                isShowingPlaceholder={true}
+                locationName=""
+                nightPrice=""
+                roomTypeName=""
+                roomTypeUrl=""
+              >
+                <Card
+                  className="has-featured"
+                  href=""
+                >
+                  <div
+                    className="ui card has-featured"
+                    href=""
+                    onClick={[Function]}
+                  >
+                    <BlockPlaceholder
+                      isFluid={true}
+                      isRectangular={true}
+                      isSquare={false}
+                    >
+                      <div
+                        className="placeholder block fluid rectangle"
+                      />
+                    </BlockPlaceholder>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="medium"
+                            >
+                              <div
+                                className="placeholder text medium fluid"
+                              />
+                            </TextPlaceholder>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                          </div>
+                        </CardHeader>
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+              </FeaturedRoomType>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          computer={4}
+          key="1"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedRoomType
+                bedsLabel="Beds"
+                bedsNumber={0}
+                guestsLabel="Guests"
+                guestsNumber={0}
+                imageUrl=""
+                isShowingPlaceholder={true}
+                locationName=""
+                nightPrice=""
+                roomTypeName=""
+                roomTypeUrl=""
+              >
+                <Card
+                  className="has-featured"
+                  href=""
+                >
+                  <div
+                    className="ui card has-featured"
+                    href=""
+                    onClick={[Function]}
+                  >
+                    <BlockPlaceholder
+                      isFluid={true}
+                      isRectangular={true}
+                      isSquare={false}
+                    >
+                      <div
+                        className="placeholder block fluid rectangle"
+                      />
+                    </BlockPlaceholder>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="medium"
+                            >
+                              <div
+                                className="placeholder text medium fluid"
+                              />
+                            </TextPlaceholder>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                          </div>
+                        </CardHeader>
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+              </FeaturedRoomType>
+            </div>
+          </GridColumn>
+        </GridColumn>
+        <GridColumn
+          computer={4}
+          key="2"
+          mobile={12}
+          tablet={6}
+          verticalAlignContent="top"
+          width={null}
+        >
+          <GridColumn
+            computer={4}
+            mobile={12}
+            tablet={6}
+            verticalAlign="top"
+            width={null}
+          >
+            <div
+              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            >
+              <FeaturedRoomType
+                bedsLabel="Beds"
+                bedsNumber={0}
+                guestsLabel="Guests"
+                guestsNumber={0}
+                imageUrl=""
+                isShowingPlaceholder={true}
+                locationName=""
+                nightPrice=""
+                roomTypeName=""
+                roomTypeUrl=""
+              >
+                <Card
+                  className="has-featured"
+                  href=""
+                >
+                  <div
+                    className="ui card has-featured"
+                    href=""
+                    onClick={[Function]}
+                  >
+                    <BlockPlaceholder
+                      isFluid={true}
+                      isRectangular={true}
+                      isSquare={false}
+                    >
+                      <div
+                        className="placeholder block fluid rectangle"
+                      />
+                    </BlockPlaceholder>
+                    <CardContent>
+                      <div
+                        className="content"
+                      >
+                        <CardHeader>
+                          <div
+                            className="header"
+                          >
+                            <Divider
+                              className=""
+                              hasLine={false}
+                              size="medium"
+                            >
+                              <Divider
+                                className=""
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider"
+                                />
+                              </Divider>
+                            </Divider>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="medium"
+                            >
+                              <div
+                                className="placeholder text medium fluid"
+                              />
+                            </TextPlaceholder>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                            <TextPlaceholder
+                              isFluid={true}
+                              length="long"
+                            >
+                              <div
+                                className="placeholder text long fluid"
+                              />
+                            </TextPlaceholder>
+                          </div>
+                        </CardHeader>
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+              </FeaturedRoomType>
+            </div>
+          </GridColumn>
+        </GridColumn>
+      </div>
+    </Grid>
+  </Grid>
+</FeaturedRoomTypes>
+`;
+
 exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render the right structure 1`] = `
 <FeaturedRoomTypes
   featuredRoomTypes={
@@ -356,6 +695,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
     ]
   }
   headingText="My god I love Elton John"
+  isShowingPlaceholder={false}
 >
   <Grid
     areColumnsCentered={false}
@@ -423,6 +763,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 guestsLabel="Guests"
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 ratingNumber={4.8}
@@ -566,6 +907,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 guestsLabel="Guests"
                 guestsNumber={3}
                 imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                isShowingPlaceholder={false}
                 locationName="Catania"
                 nightPrice="$280"
                 ratingNumber={4.8}

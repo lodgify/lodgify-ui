@@ -17,7 +17,8 @@ const props = {
   roomTypeUrl: '/',
 };
 
-const getFeaturedRoomType = () => shallow(<FeaturedRoomType {...props} />);
+const getFeaturedRoomType = extraProps =>
+  shallow(<FeaturedRoomType {...props} {...extraProps} />);
 
 describe('<FeaturedRoomType />', () => {
   it('should render the right structure', () => {
@@ -28,5 +29,13 @@ describe('<FeaturedRoomType />', () => {
 
   it('should have `displayName` `FeaturedRoomType`', () => {
     expectComponentToHaveDisplayName(FeaturedRoomType, 'FeaturedRoomType');
+  });
+
+  describe('if `props.isShowingPlaceholder` is `true`', () => {
+    it('should render the right structure', () => {
+      const actual = getFeaturedRoomType({ isShowingPlaceholder: true });
+
+      expect(actual).toMatchSnapshot();
+    });
   });
 });

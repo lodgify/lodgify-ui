@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
-import { ResponsiveImage } from 'media/ResponsiveImage';
+import { BlockPlaceholder } from 'elements/BlockPlaceholder';
+import { Divider } from 'elements/Divider';
 import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
+import { ResponsiveImage } from 'media/ResponsiveImage';
+import { TextPlaceholder } from 'elements/TextPlaceholder';
 
 import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
 
@@ -20,6 +23,7 @@ export const Component = ({
   imageSizes,
   imageSrcSet,
   imageUrl,
+  isShowingPlaceholder,
   locationName,
   nightPrice,
   placeholderImageUrl,
@@ -27,27 +31,43 @@ export const Component = ({
   roomTypeUrl,
 }) => (
   <Card className="has-featured" href={roomTypeUrl}>
-    <ResponsiveImage
-      alternativeText={imageAlternativeText}
-      imageUrl={imageUrl}
-      isFluid
-      placeholderImageUrl={placeholderImageUrl}
-      sizes={imageSizes}
-      srcSet={imageSrcSet}
-    />
-    <Card.Content>
-      <Card.Header>{roomTypeName}</Card.Header>
-      <Card.Description>{locationName}</Card.Description>
-      <Card.Description>
-        {getRoomTypeDescription(
-          guestsLabel,
-          guestsNumber,
-          bedsLabel,
-          bedsNumber
-        )}
-      </Card.Description>
-      <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
-    </Card.Content>
+    {isShowingPlaceholder ? (
+      <Fragment>
+        <BlockPlaceholder isRectangular />
+        <Card.Content>
+          <Card.Header>
+            <Divider />
+            <TextPlaceholder length="medium" />
+            <TextPlaceholder length="long" />
+            <TextPlaceholder length="long" />
+          </Card.Header>
+        </Card.Content>
+      </Fragment>
+    ) : (
+      <Fragment>
+        <ResponsiveImage
+          alternativeText={imageAlternativeText}
+          imageUrl={imageUrl}
+          isFluid
+          placeholderImageUrl={placeholderImageUrl}
+          sizes={imageSizes}
+          srcSet={imageSrcSet}
+        />
+        <Card.Content>
+          <Card.Header>{roomTypeName}</Card.Header>
+          <Card.Description>{locationName}</Card.Description>
+          <Card.Description>
+            {getRoomTypeDescription(
+              guestsLabel,
+              guestsNumber,
+              bedsLabel,
+              bedsNumber
+            )}
+          </Card.Description>
+          <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
+        </Card.Content>
+      </Fragment>
+    )}
   </Card>
 );
 
@@ -60,6 +80,7 @@ Component.defaultProps = {
   imageSizes: undefined,
   imageSrcSet: undefined,
   placeholderImageUrl: undefined,
+  isShowingPlaceholder: false,
 };
 
 Component.propTypes = {
@@ -79,6 +100,8 @@ Component.propTypes = {
   imageSrcSet: PropTypes.string,
   /** URL pointing to the image to display. */
   imageUrl: PropTypes.string.isRequired,
+  /** Is the component showing placeholders to reserve space for content which will appear. */
+  isShowingPlaceholder: PropTypes.bool,
   /** The name of the location of the room. */
   locationName: PropTypes.string.isRequired,
   /** The price per night of the room, with currency symbol. */
