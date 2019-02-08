@@ -1,3 +1,12 @@
+# [1.133.0](https://github.com/lodgify/lodgify-ui/compare/v1.132.0...v1.133.0) (2019-02-08)
+
+
+### Features
+
+* **FeaturedProperties:** expose isShowingPlaceholder prop ([42cff4e](https://github.com/lodgify/lodgify-ui/commit/42cff4e))
+* **FeaturedProperty:** expose isShowingPlaceholder ([ab599e7](https://github.com/lodgify/lodgify-ui/commit/ab599e7))
+* **get-card-placeholder-markup:** add card placeholder util ([6b99aee](https://github.com/lodgify/lodgify-ui/commit/6b99aee))
+
 # [1.132.0](https://github.com/lodgify/lodgify-ui/compare/v1.131.0...v1.132.0) (2019-02-08)
 
 
