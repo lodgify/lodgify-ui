@@ -295,15 +295,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                     <Divider
                       className=""
                       hasLine={false}
-                      size="small"
+                      size="medium"
                     >
                       <Divider
-                        className="is-size-small"
+                        className=""
                         hidden={true}
                         section={false}
                       >
                         <div
-                          className="ui hidden divider is-size-small"
+                          className="ui hidden divider"
                         />
                       </Divider>
                     </Divider>
@@ -487,15 +487,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                     <Divider
                       className=""
                       hasLine={false}
-                      size="small"
+                      size="medium"
                     >
                       <Divider
-                        className="is-size-small"
+                        className=""
                         hidden={true}
                         section={false}
                       >
                         <div
-                          className="ui hidden divider is-size-small"
+                          className="ui hidden divider"
                         />
                       </Divider>
                     </Divider>
@@ -679,15 +679,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                     <Divider
                       className=""
                       hasLine={false}
-                      size="small"
+                      size="medium"
                     >
                       <Divider
-                        className="is-size-small"
+                        className=""
                         hidden={true}
                         section={false}
                       >
                         <div
-                          className="ui hidden divider is-size-small"
+                          className="ui hidden divider"
                         />
                       </Divider>
                     </Divider>
@@ -871,15 +871,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                     <Divider
                       className=""
                       hasLine={false}
-                      size="small"
+                      size="medium"
                     >
                       <Divider
-                        className="is-size-small"
+                        className=""
                         hidden={true}
                         section={false}
                       >
                         <div
-                          className="ui hidden divider is-size-small"
+                          className="ui hidden divider"
                         />
                       </Divider>
                     </Divider>
@@ -1063,15 +1063,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                     <Divider
                       className=""
                       hasLine={false}
-                      size="small"
+                      size="medium"
                     >
                       <Divider
-                        className="is-size-small"
+                        className=""
                         hidden={true}
                         section={false}
                       >
                         <div
-                          className="ui hidden divider is-size-small"
+                          className="ui hidden divider"
                         />
                       </Divider>
                     </Divider>
@@ -1361,7 +1361,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         <Divider
                           className=""
                           hasLine={false}
-                          size="large"
+                          size="huge"
                         />
                       </HorizontalGutters>
                     }

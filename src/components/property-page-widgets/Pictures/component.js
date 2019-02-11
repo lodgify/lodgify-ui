@@ -55,7 +55,7 @@ export const Component = ({
                 size="huge"
               />
             </ShowOn>
-            <Divider size="small" />
+            <Divider />
           </GridColumn>
         )
       )}
