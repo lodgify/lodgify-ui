@@ -1832,7 +1832,7 @@ exports[`PropertyPageHero by default should render the right structure 1`] = `
                               <Divider
                                 className=""
                                 hasLine={false}
-                                size="large"
+                                size="huge"
                               />
                             </HorizontalGutters>
                           }
