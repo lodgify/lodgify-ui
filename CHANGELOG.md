@@ -1,3 +1,11 @@
+# [1.134.0](https://github.com/lodgify/lodgify-ui/compare/v1.133.0...v1.134.0) (2019-02-11)
+
+
+### Features
+
+* **Review:** expose props.isShowingPlaceholder and implement placeholders ([c507219](https://github.com/lodgify/lodgify-ui/commit/c507219))
+* **Reviews:** expose props.isShowingPlaceholder and implement placeholders ([ccb0867](https://github.com/lodgify/lodgify-ui/commit/ccb0867))
+
 # [1.133.0](https://github.com/lodgify/lodgify-ui/compare/v1.132.0...v1.133.0) (2019-02-08)
 
 
