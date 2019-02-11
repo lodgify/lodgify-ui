@@ -96,7 +96,7 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
     <Divider
       className=""
       hasLine={false}
-      size="large"
+      size="huge"
     />
   </HorizontalGutters>
 </Modal>
@@ -204,7 +204,7 @@ exports[`<Gallery /> if \`props.heading\` is defined should render the right str
     <Divider
       className=""
       hasLine={false}
-      size="large"
+      size="huge"
     />
   </HorizontalGutters>
 </Modal>

@@ -36,7 +36,7 @@ export const Component = ({ heading, images, trigger }) => (
           ))}
         </GridRow>
       </Grid>
-      <Divider size="large" />
+      <Divider size="huge" />
     </HorizontalGutters>
   </Modal>
 );
