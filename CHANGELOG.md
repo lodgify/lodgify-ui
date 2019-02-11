@@ -1,3 +1,17 @@
+# [1.135.0](https://github.com/lodgify/lodgify-ui/compare/v1.134.0...v1.135.0) (2019-02-11)
+
+
+### Bug Fixes
+
+* **Gallery:** update divider size ([801cdfb](https://github.com/lodgify/lodgify-ui/commit/801cdfb))
+* **Rates:** update divider size ([3d3201f](https://github.com/lodgify/lodgify-ui/commit/3d3201f))
+
+
+### Features
+
+* **Divider:** decrease large margin size ([4526f02](https://github.com/lodgify/lodgify-ui/commit/4526f02))
+* **Divider:** expose size huge ([6c60bd2](https://github.com/lodgify/lodgify-ui/commit/6c60bd2))
+
 # [1.134.0](https://github.com/lodgify/lodgify-ui/compare/v1.133.0...v1.134.0) (2019-02-11)
 
 
