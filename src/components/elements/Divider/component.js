@@ -13,6 +13,7 @@ export const Component = ({ className, hasLine, size }) => (
   <Divider
     className={getClassNames(className, {
       'is-size-small': size === 'small',
+      'is-size-huge': size === 'huge',
     })}
     hidden={!hasLine}
     section={getIsSizeLarge(size)}
@@ -37,5 +38,5 @@ Component.propTypes = {
   /** Does the divider have a visible line. */
   hasLine: PropTypes.bool,
   /** The size of the divider. */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['small', 'medium', 'large', 'huge']),
 };

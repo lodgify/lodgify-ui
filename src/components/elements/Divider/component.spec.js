@@ -31,6 +31,14 @@ describe('<Divider />', () => {
     });
   });
 
+  describe('if `props.size === "huge"`', () => {
+    it('should render the right structure', () => {
+      const actual = getDivider({ size: 'huge' });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   it('should have `displayName` Divider', () => {
     expectComponentToHaveDisplayName(Divider, 'Divider');
   });
