@@ -18,7 +18,7 @@ export const getCardsPlaceholderMarkup = () => (
           <TextPlaceholder length="medium" />
           <TextPlaceholder length="medium" />
           <TextPlaceholder length="medium" />
-          <Divider size="large" />
+          <Divider size="huge" />
           <TextPlaceholder />
           <Divider />
           <TextPlaceholder />

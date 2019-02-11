@@ -79,15 +79,15 @@ Array [
           <Divider
             className=""
             hasLine={false}
-            size="large"
+            size="huge"
           >
             <Divider
-              className=""
+              className="is-size-huge"
               hidden={true}
-              section={true}
+              section={false}
             >
               <div
-                className="ui hidden section divider"
+                className="ui hidden divider is-size-huge"
               />
             </Divider>
           </Divider>
@@ -241,15 +241,15 @@ Array [
           <Divider
             className=""
             hasLine={false}
-            size="large"
+            size="huge"
           >
             <Divider
-              className=""
+              className="is-size-huge"
               hidden={true}
-              section={true}
+              section={false}
             >
               <div
-                className="ui hidden section divider"
+                className="ui hidden divider is-size-huge"
               />
             </Divider>
           </Divider>
@@ -403,15 +403,15 @@ Array [
           <Divider
             className=""
             hasLine={false}
-            size="large"
+            size="huge"
           >
             <Divider
-              className=""
+              className="is-size-huge"
               hidden={true}
-              section={true}
+              section={false}
             >
               <div
-                className="ui hidden section divider"
+                className="ui hidden divider is-size-huge"
               />
             </Divider>
           </Divider>
