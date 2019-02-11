@@ -36,6 +36,24 @@ exports[`<Divider /> if \`props.hasLine === true\` should render the right struc
 </Divider>
 `;
 
+exports[`<Divider /> if \`props.size === "huge"\` should render the right structure 1`] = `
+<Divider
+  className=""
+  hasLine={false}
+  size="huge"
+>
+  <Divider
+    className="is-size-huge"
+    hidden={true}
+    section={false}
+  >
+    <div
+      className="ui hidden divider is-size-huge"
+    />
+  </Divider>
+</Divider>
+`;
+
 exports[`<Divider /> if \`props.size === "large"\` should render the right structure 1`] = `
 <Divider
   className=""
