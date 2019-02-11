@@ -2,7 +2,7 @@
          Theme Overrides
 *******************************/
 
-.ui.horizontal.divider {
+.ui.divider {
 
   &.is-size-small {
     margin: @sizeSmallMargin;
