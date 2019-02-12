@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Statistic, Segment } from 'semantic-ui-react';
 
+import { Divider } from 'elements/Divider';
 import { ShowOn } from 'layout/ShowOn';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 import {
@@ -44,33 +45,39 @@ export const Component = ({
           mobile={12}
           tablet={9}
         >
-          <ResponsiveImage
-            imageHeight={backgroundImageHeight}
-            imageUrl={backgroundImageUrl}
-            imageWidth={backgroundImageWidth}
-            placeholderImageUrl={placeholderBackgroundImage}
-            sizes={backgroundImageSizes}
-            srcSet={backgroundImageSrcSet}
-          />
+          {!!backgroundImageUrl && (
+            <ResponsiveImage
+              imageHeight={backgroundImageHeight}
+              imageUrl={backgroundImageUrl}
+              imageWidth={backgroundImageWidth}
+              placeholderImageUrl={placeholderBackgroundImage}
+              sizes={backgroundImageSizes}
+              srcSet={backgroundImageSrcSet}
+            />
+          )}
           <Grid padded>
-            <GridRow verticalAlign="top">
-              <ShowOn
-                computer
-                parent={GridColumn}
-                parentProps={{ textAlign: 'left', width: 12 }}
-                tablet
-                widescreen
-              >
-                <Heading>{headingText}</Heading>
-              </ShowOn>
-              <ShowOn
-                mobile
-                parent={GridColumn}
-                parentProps={{ textAlign: 'center', width: 12 }}
-              >
-                <Heading>{headingText}</Heading>
-              </ShowOn>
-            </GridRow>
+            {!!headingText ? (
+              <GridRow verticalAlign="top">
+                <ShowOn
+                  computer
+                  parent={GridColumn}
+                  parentProps={{ textAlign: 'left', width: 12 }}
+                  tablet
+                  widescreen
+                >
+                  <Heading>{headingText}</Heading>
+                </ShowOn>
+                <ShowOn
+                  mobile
+                  parent={GridColumn}
+                  parentProps={{ textAlign: 'center', width: 12 }}
+                >
+                  <Heading>{headingText}</Heading>
+                </ShowOn>
+              </GridRow>
+            ) : (
+              <Divider size="huge" />
+            )}
             <ShowOn
               computer
               parent={GridRow}
@@ -82,36 +89,47 @@ export const Component = ({
                 <Button isRounded>{discountHoverButtonText}</Button>
               </GridColumn>
             </ShowOn>
-            <ShowOn
-              mobile
-              parent={GridRow}
-              parentProps={{ verticalAlign: 'top' }}
-            >
-              <GridColumn floated="right" textAlign="center" width={12}>
-                <div>
-                  <Paragraph size="tiny">{discountCodeParagraphText}</Paragraph>
-                  <Button hasShadow isPositionedRight>
-                    {discountCode}
-                  </Button>
-                </div>
-              </GridColumn>
-            </ShowOn>
-            <ShowOn
-              computer
-              desktop
-              parent={GridRow}
-              parentProps={{ verticalAlign: 'bottom' }}
-              tablet
-            >
-              <GridColumn floated="right" textAlign="right" width={6}>
-                <div>
-                  <Paragraph size="tiny">{discountCodeParagraphText}</Paragraph>
-                  <Button hasShadow isPositionedRight>
-                    {discountCode}
-                  </Button>
-                </div>
-              </GridColumn>
-            </ShowOn>
+            {!!discountCode && (
+              <Fragment>
+                <ShowOn
+                  mobile
+                  parent={GridRow}
+                  parentProps={{ verticalAlign: 'top' }}
+                >
+                  <GridColumn floated="right" textAlign="center" width={12}>
+                    <div>
+                      <Paragraph size="tiny">
+                        {discountCodeParagraphText}
+                      </Paragraph>
+                      {!!discountCode && (
+                        <Button hasShadow isPositionedRight>
+                          {discountCode}
+                        </Button>
+                      )}
+                    </div>
+                  </GridColumn>
+                </ShowOn>
+                <ShowOn
+                  computer
+                  desktop
+                  parent={GridRow}
+                  parentProps={{ verticalAlign: 'bottom' }}
+                  tablet
+                  widescreen
+                >
+                  <GridColumn floated="right" textAlign="right" width={6}>
+                    <div>
+                      <Paragraph size="tiny">
+                        {discountCodeParagraphText}
+                      </Paragraph>
+                      <Button hasShadow isPositionedRight>
+                        {discountCode}
+                      </Button>
+                    </div>
+                  </GridColumn>
+                </ShowOn>
+              </Fragment>
+            )}
           </Grid>
         </GridColumn>
         <GridColumn
@@ -145,9 +163,12 @@ Component.defaultProps = {
   backgroundImageSizes: undefined,
   backgroundImageSrcSet: undefined,
   backgroundImageWidth: undefined,
+  backgroundImageUrl: undefined,
   discountAmountParagraphText: SAVE_UP_TO,
+  discountCode: undefined,
   discountCodeParagraphText: USE_COUPON_CODE,
   discountHoverButtonText: BOOK_NOW_DISCOUNT,
+  headingText: undefined,
   placeholderBackgroundImage: null,
 };
 
@@ -159,7 +180,7 @@ Component.propTypes = {
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the background image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   backgroundImageSrcSet: PropTypes.string,
   /** URL pointing to the image to display. */
-  backgroundImageUrl: PropTypes.string.isRequired,
+  backgroundImageUrl: PropTypes.string,
   /** The natural width of the background image in px. */
   backgroundImageWidth: PropTypes.number,
   /** The discount amount to be displayed. */
@@ -167,13 +188,13 @@ Component.propTypes = {
   /** The text to display above the discount amount. */
   discountAmountParagraphText: PropTypes.string,
   /** The discount code to be displayed. */
-  discountCode: PropTypes.string.isRequired,
+  discountCode: PropTypes.string,
   /** The text to display above the discount code. */
   discountCodeParagraphText: PropTypes.string,
   /** The text for the button that shows on hover. */
   discountHoverButtonText: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
-  headingText: PropTypes.string.isRequired,
+  headingText: PropTypes.string,
   /** The function to call when the component is clicked. */
   onClick: PropTypes.func.isRequired,
   /** The background placeholder image. */
