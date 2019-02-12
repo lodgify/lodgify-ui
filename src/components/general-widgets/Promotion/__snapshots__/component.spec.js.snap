@@ -1,14 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The \`Promotion\` component should have the right structure 1`] = `
+exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed should have the right structure 1`] = `
 <Promotion
   backgroundImageUrl="testimage"
   discountAmount="100%"
   discountAmountParagraphText="Save up to"
-  discountCode="123"
   discountCodeParagraphText="Use the coupon code"
   discountHoverButtonText="Book Now with Discount"
-  headingText="Hello World!"
   onClick={[Function]}
   placeholderBackgroundImage={null}
 >
@@ -109,6 +107,705 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                             </Image>
                           </figure>
                         </ResponsiveImage>
+                        <Grid
+                          areColumnsCentered={false}
+                          padded={true}
+                        >
+                          <Grid
+                            centered={false}
+                            padded={true}
+                          >
+                            <div
+                              className="ui padded grid"
+                            >
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="huge"
+                              >
+                                <Divider
+                                  className="is-size-huge"
+                                  hidden={true}
+                                  section={false}
+                                >
+                                  <div
+                                    className="ui hidden divider is-size-huge"
+                                  />
+                                </Divider>
+                              </Divider>
+                              <ShowOn
+                                computer={true}
+                                mobile={false}
+                                parent={[Function]}
+                                parentProps={
+                                  Object {
+                                    "className": "book-now-button-container",
+                                  }
+                                }
+                                tablet={true}
+                                widescreen={true}
+                              >
+                                <GridRow
+                                  className="book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
+                                  horizontalAlignContent="left"
+                                >
+                                  <GridRow
+                                    className="book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
+                                    textAlign="left"
+                                  >
+                                    <div
+                                      className="left aligned row book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
+                                    >
+                                      <GridColumn
+                                        textAlign="center"
+                                        verticalAlignContent="top"
+                                        width={12}
+                                      >
+                                        <GridColumn
+                                          textAlign="center"
+                                          verticalAlign="top"
+                                          width={12}
+                                        >
+                                          <div
+                                            className="center aligned top aligned twelve wide column"
+                                          >
+                                            <Button
+                                              hasShadow={false}
+                                              icon={null}
+                                              isCompact={false}
+                                              isDisabled={false}
+                                              isLoading={false}
+                                              isPositionedRight={false}
+                                              isRounded={true}
+                                              isSecondary={false}
+                                              onClick={[Function]}
+                                              size={null}
+                                            >
+                                              <Button
+                                                as="button"
+                                                circular={true}
+                                                className=""
+                                                compact={false}
+                                                disabled={false}
+                                                floated="left"
+                                                loading={false}
+                                                onClick={[Function]}
+                                                secondary={false}
+                                                size={null}
+                                              >
+                                                <button
+                                                  className="ui circular left floated button"
+                                                  onClick={[Function]}
+                                                  role="button"
+                                                >
+                                                  Book Now with Discount
+                                                </button>
+                                              </Button>
+                                            </Button>
+                                          </div>
+                                        </GridColumn>
+                                      </GridColumn>
+                                    </div>
+                                  </GridRow>
+                                </GridRow>
+                              </ShowOn>
+                            </div>
+                          </Grid>
+                        </Grid>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    className="discount-section"
+                    computer={3}
+                    mobile={12}
+                    tablet={3}
+                    textAlign="center"
+                    verticalAlign="middle"
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      className="discount-section"
+                      computer={3}
+                      mobile={12}
+                      tablet={3}
+                      textAlign="center"
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="center aligned top aligned three wide computer twelve wide mobile three wide tablet column discount-section"
+                      >
+                        <Statistic
+                          size="small"
+                        >
+                          <div
+                            className="ui small statistic"
+                          >
+                            <StatisticLabel>
+                              <div
+                                className="label"
+                              >
+                                <Paragraph
+                                  size="medium"
+                                  weight="heavy"
+                                >
+                                  <p
+                                    className="heavy"
+                                  >
+                                    Save up to
+                                  </p>
+                                </Paragraph>
+                              </div>
+                            </StatisticLabel>
+                            <StatisticValue>
+                              <div
+                                className="value"
+                              >
+                                <Heading
+                                  className={null}
+                                  isColorInverted={false}
+                                  size="large"
+                                  textAlign={null}
+                                >
+                                  <Header
+                                    as="h2"
+                                    className={null}
+                                    inverted={false}
+                                    textAlign={null}
+                                  >
+                                    <h2
+                                      className="ui header"
+                                    >
+                                      100%
+                                    </h2>
+                                  </Header>
+                                </Heading>
+                              </div>
+                            </StatisticValue>
+                          </div>
+                        </Statistic>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                </div>
+              </GridRow>
+            </GridRow>
+          </div>
+        </Grid>
+      </Grid>
+    </div>
+  </Segment>
+</Promotion>
+`;
+
+exports[`The \`Promotion\` component if \`discountCode\` prop is passed should have the right structure 1`] = `
+<Promotion
+  discountAmount="100%"
+  discountAmountParagraphText="Save up to"
+  discountCode="123"
+  discountCodeParagraphText="Use the coupon code"
+  discountHoverButtonText="Book Now with Discount"
+  onClick={[Function]}
+  placeholderBackgroundImage={null}
+>
+  <Segment
+    basic={true}
+    className="is-promotion"
+    onClick={[Function]}
+  >
+    <div
+      className="ui basic segment is-promotion"
+      onClick={[Function]}
+    >
+      <Grid
+        areColumnsCentered={false}
+        className="first-grid"
+        stackable={true}
+        stretched={true}
+      >
+        <Grid
+          centered={false}
+          className="first-grid"
+          stackable={true}
+          stretched={true}
+        >
+          <div
+            className="ui stackable stretched grid first-grid"
+          >
+            <GridRow
+              horizontalAlignContent="left"
+              verticalAlign="middle"
+            >
+              <GridRow
+                textAlign="left"
+                verticalAlign="middle"
+              >
+                <div
+                  className="left aligned middle aligned row"
+                >
+                  <GridColumn
+                    className="content-section"
+                    computer={9}
+                    mobile={12}
+                    tablet={9}
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      className="content-section"
+                      computer={9}
+                      mobile={12}
+                      tablet={9}
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned nine wide computer twelve wide mobile nine wide tablet column content-section"
+                      >
+                        <Grid
+                          areColumnsCentered={false}
+                          padded={true}
+                        >
+                          <Grid
+                            centered={false}
+                            padded={true}
+                          >
+                            <div
+                              className="ui padded grid"
+                            >
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="huge"
+                              >
+                                <Divider
+                                  className="is-size-huge"
+                                  hidden={true}
+                                  section={false}
+                                >
+                                  <div
+                                    className="ui hidden divider is-size-huge"
+                                  />
+                                </Divider>
+                              </Divider>
+                              <ShowOn
+                                computer={true}
+                                mobile={false}
+                                parent={[Function]}
+                                parentProps={
+                                  Object {
+                                    "className": "book-now-button-container",
+                                  }
+                                }
+                                tablet={true}
+                                widescreen={true}
+                              >
+                                <GridRow
+                                  className="book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
+                                  horizontalAlignContent="left"
+                                >
+                                  <GridRow
+                                    className="book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
+                                    textAlign="left"
+                                  >
+                                    <div
+                                      className="left aligned row book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
+                                    >
+                                      <GridColumn
+                                        textAlign="center"
+                                        verticalAlignContent="top"
+                                        width={12}
+                                      >
+                                        <GridColumn
+                                          textAlign="center"
+                                          verticalAlign="top"
+                                          width={12}
+                                        >
+                                          <div
+                                            className="center aligned top aligned twelve wide column"
+                                          >
+                                            <Button
+                                              hasShadow={false}
+                                              icon={null}
+                                              isCompact={false}
+                                              isDisabled={false}
+                                              isLoading={false}
+                                              isPositionedRight={false}
+                                              isRounded={true}
+                                              isSecondary={false}
+                                              onClick={[Function]}
+                                              size={null}
+                                            >
+                                              <Button
+                                                as="button"
+                                                circular={true}
+                                                className=""
+                                                compact={false}
+                                                disabled={false}
+                                                floated="left"
+                                                loading={false}
+                                                onClick={[Function]}
+                                                secondary={false}
+                                                size={null}
+                                              >
+                                                <button
+                                                  className="ui circular left floated button"
+                                                  onClick={[Function]}
+                                                  role="button"
+                                                >
+                                                  Book Now with Discount
+                                                </button>
+                                              </Button>
+                                            </Button>
+                                          </div>
+                                        </GridColumn>
+                                      </GridColumn>
+                                    </div>
+                                  </GridRow>
+                                </GridRow>
+                              </ShowOn>
+                              <ShowOn
+                                computer={false}
+                                mobile={true}
+                                parent={[Function]}
+                                parentProps={
+                                  Object {
+                                    "verticalAlign": "top",
+                                  }
+                                }
+                                tablet={false}
+                                widescreen={false}
+                              >
+                                <GridRow
+                                  className="show-on-mobile"
+                                  horizontalAlignContent="left"
+                                  verticalAlign="top"
+                                >
+                                  <GridRow
+                                    className="show-on-mobile"
+                                    textAlign="left"
+                                    verticalAlign="top"
+                                  >
+                                    <div
+                                      className="left aligned top aligned row show-on-mobile"
+                                    >
+                                      <GridColumn
+                                        floated="right"
+                                        textAlign="center"
+                                        verticalAlignContent="top"
+                                        width={12}
+                                      >
+                                        <GridColumn
+                                          floated="right"
+                                          textAlign="center"
+                                          verticalAlign="top"
+                                          width={12}
+                                        >
+                                          <div
+                                            className="center aligned right floated top aligned twelve wide column"
+                                          >
+                                            <div>
+                                              <Paragraph
+                                                size="tiny"
+                                                weight={null}
+                                              >
+                                                <p
+                                                  className="tiny"
+                                                >
+                                                  Use the coupon code
+                                                </p>
+                                              </Paragraph>
+                                              <Button
+                                                hasShadow={true}
+                                                icon={null}
+                                                isCompact={false}
+                                                isDisabled={false}
+                                                isLoading={false}
+                                                isPositionedRight={true}
+                                                isRounded={false}
+                                                isSecondary={false}
+                                                onClick={[Function]}
+                                                size={null}
+                                              >
+                                                <Button
+                                                  as="button"
+                                                  circular={false}
+                                                  className="has-shadow"
+                                                  compact={false}
+                                                  disabled={false}
+                                                  floated="right"
+                                                  loading={false}
+                                                  onClick={[Function]}
+                                                  secondary={false}
+                                                  size={null}
+                                                >
+                                                  <button
+                                                    className="ui right floated button has-shadow"
+                                                    onClick={[Function]}
+                                                    role="button"
+                                                  >
+                                                    123
+                                                  </button>
+                                                </Button>
+                                              </Button>
+                                            </div>
+                                          </div>
+                                        </GridColumn>
+                                      </GridColumn>
+                                    </div>
+                                  </GridRow>
+                                </GridRow>
+                              </ShowOn>
+                              <ShowOn
+                                computer={true}
+                                desktop={true}
+                                mobile={false}
+                                parent={[Function]}
+                                parentProps={
+                                  Object {
+                                    "verticalAlign": "bottom",
+                                  }
+                                }
+                                tablet={true}
+                                widescreen={true}
+                              >
+                                <GridRow
+                                  className="show-on-tablet show-on-computer show-on-widescreen"
+                                  horizontalAlignContent="left"
+                                  verticalAlign="bottom"
+                                >
+                                  <GridRow
+                                    className="show-on-tablet show-on-computer show-on-widescreen"
+                                    textAlign="left"
+                                    verticalAlign="bottom"
+                                  >
+                                    <div
+                                      className="left aligned bottom aligned row show-on-tablet show-on-computer show-on-widescreen"
+                                    >
+                                      <GridColumn
+                                        floated="right"
+                                        textAlign="right"
+                                        verticalAlignContent="top"
+                                        width={6}
+                                      >
+                                        <GridColumn
+                                          floated="right"
+                                          textAlign="right"
+                                          verticalAlign="top"
+                                          width={6}
+                                        >
+                                          <div
+                                            className="right aligned right floated top aligned six wide column"
+                                          >
+                                            <div>
+                                              <Paragraph
+                                                size="tiny"
+                                                weight={null}
+                                              >
+                                                <p
+                                                  className="tiny"
+                                                >
+                                                  Use the coupon code
+                                                </p>
+                                              </Paragraph>
+                                              <Button
+                                                hasShadow={true}
+                                                icon={null}
+                                                isCompact={false}
+                                                isDisabled={false}
+                                                isLoading={false}
+                                                isPositionedRight={true}
+                                                isRounded={false}
+                                                isSecondary={false}
+                                                onClick={[Function]}
+                                                size={null}
+                                              >
+                                                <Button
+                                                  as="button"
+                                                  circular={false}
+                                                  className="has-shadow"
+                                                  compact={false}
+                                                  disabled={false}
+                                                  floated="right"
+                                                  loading={false}
+                                                  onClick={[Function]}
+                                                  secondary={false}
+                                                  size={null}
+                                                >
+                                                  <button
+                                                    className="ui right floated button has-shadow"
+                                                    onClick={[Function]}
+                                                    role="button"
+                                                  >
+                                                    123
+                                                  </button>
+                                                </Button>
+                                              </Button>
+                                            </div>
+                                          </div>
+                                        </GridColumn>
+                                      </GridColumn>
+                                    </div>
+                                  </GridRow>
+                                </GridRow>
+                              </ShowOn>
+                            </div>
+                          </Grid>
+                        </Grid>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    className="discount-section"
+                    computer={3}
+                    mobile={12}
+                    tablet={3}
+                    textAlign="center"
+                    verticalAlign="middle"
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      className="discount-section"
+                      computer={3}
+                      mobile={12}
+                      tablet={3}
+                      textAlign="center"
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="center aligned top aligned three wide computer twelve wide mobile three wide tablet column discount-section"
+                      >
+                        <Statistic
+                          size="small"
+                        >
+                          <div
+                            className="ui small statistic"
+                          >
+                            <StatisticLabel>
+                              <div
+                                className="label"
+                              >
+                                <Paragraph
+                                  size="medium"
+                                  weight="heavy"
+                                >
+                                  <p
+                                    className="heavy"
+                                  >
+                                    Save up to
+                                  </p>
+                                </Paragraph>
+                              </div>
+                            </StatisticLabel>
+                            <StatisticValue>
+                              <div
+                                className="value"
+                              >
+                                <Heading
+                                  className={null}
+                                  isColorInverted={false}
+                                  size="large"
+                                  textAlign={null}
+                                >
+                                  <Header
+                                    as="h2"
+                                    className={null}
+                                    inverted={false}
+                                    textAlign={null}
+                                  >
+                                    <h2
+                                      className="ui header"
+                                    >
+                                      100%
+                                    </h2>
+                                  </Header>
+                                </Heading>
+                              </div>
+                            </StatisticValue>
+                          </div>
+                        </Statistic>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                </div>
+              </GridRow>
+            </GridRow>
+          </div>
+        </Grid>
+      </Grid>
+    </div>
+  </Segment>
+</Promotion>
+`;
+
+exports[`The \`Promotion\` component if \`headingText\` prop is passed should have the right structure 1`] = `
+<Promotion
+  discountAmount="100%"
+  discountAmountParagraphText="Save up to"
+  discountCodeParagraphText="Use the coupon code"
+  discountHoverButtonText="Book Now with Discount"
+  headingText="Hello World!"
+  onClick={[Function]}
+  placeholderBackgroundImage={null}
+>
+  <Segment
+    basic={true}
+    className="is-promotion"
+    onClick={[Function]}
+  >
+    <div
+      className="ui basic segment is-promotion"
+      onClick={[Function]}
+    >
+      <Grid
+        areColumnsCentered={false}
+        className="first-grid"
+        stackable={true}
+        stretched={true}
+      >
+        <Grid
+          centered={false}
+          className="first-grid"
+          stackable={true}
+          stretched={true}
+        >
+          <div
+            className="ui stackable stretched grid first-grid"
+          >
+            <GridRow
+              horizontalAlignContent="left"
+              verticalAlign="middle"
+            >
+              <GridRow
+                textAlign="left"
+                verticalAlign="middle"
+              >
+                <div
+                  className="left aligned middle aligned row"
+                >
+                  <GridColumn
+                    className="content-section"
+                    computer={9}
+                    mobile={12}
+                    tablet={9}
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      className="content-section"
+                      computer={9}
+                      mobile={12}
+                      tablet={9}
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned nine wide computer twelve wide mobile nine wide tablet column content-section"
+                      >
                         <Grid
                           areColumnsCentered={false}
                           padded={true}
@@ -312,184 +1009,255 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                   </GridRow>
                                 </GridRow>
                               </ShowOn>
+                            </div>
+                          </Grid>
+                        </Grid>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    className="discount-section"
+                    computer={3}
+                    mobile={12}
+                    tablet={3}
+                    textAlign="center"
+                    verticalAlign="middle"
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      className="discount-section"
+                      computer={3}
+                      mobile={12}
+                      tablet={3}
+                      textAlign="center"
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="center aligned top aligned three wide computer twelve wide mobile three wide tablet column discount-section"
+                      >
+                        <Statistic
+                          size="small"
+                        >
+                          <div
+                            className="ui small statistic"
+                          >
+                            <StatisticLabel>
+                              <div
+                                className="label"
+                              >
+                                <Paragraph
+                                  size="medium"
+                                  weight="heavy"
+                                >
+                                  <p
+                                    className="heavy"
+                                  >
+                                    Save up to
+                                  </p>
+                                </Paragraph>
+                              </div>
+                            </StatisticLabel>
+                            <StatisticValue>
+                              <div
+                                className="value"
+                              >
+                                <Heading
+                                  className={null}
+                                  isColorInverted={false}
+                                  size="large"
+                                  textAlign={null}
+                                >
+                                  <Header
+                                    as="h2"
+                                    className={null}
+                                    inverted={false}
+                                    textAlign={null}
+                                  >
+                                    <h2
+                                      className="ui header"
+                                    >
+                                      100%
+                                    </h2>
+                                  </Header>
+                                </Heading>
+                              </div>
+                            </StatisticValue>
+                          </div>
+                        </Statistic>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                </div>
+              </GridRow>
+            </GridRow>
+          </div>
+        </Grid>
+      </Grid>
+    </div>
+  </Segment>
+</Promotion>
+`;
+
+exports[`The \`Promotion\` component should have the right structure 1`] = `
+<Promotion
+  discountAmount="100%"
+  discountAmountParagraphText="Save up to"
+  discountCodeParagraphText="Use the coupon code"
+  discountHoverButtonText="Book Now with Discount"
+  onClick={[Function]}
+  placeholderBackgroundImage={null}
+>
+  <Segment
+    basic={true}
+    className="is-promotion"
+    onClick={[Function]}
+  >
+    <div
+      className="ui basic segment is-promotion"
+      onClick={[Function]}
+    >
+      <Grid
+        areColumnsCentered={false}
+        className="first-grid"
+        stackable={true}
+        stretched={true}
+      >
+        <Grid
+          centered={false}
+          className="first-grid"
+          stackable={true}
+          stretched={true}
+        >
+          <div
+            className="ui stackable stretched grid first-grid"
+          >
+            <GridRow
+              horizontalAlignContent="left"
+              verticalAlign="middle"
+            >
+              <GridRow
+                textAlign="left"
+                verticalAlign="middle"
+              >
+                <div
+                  className="left aligned middle aligned row"
+                >
+                  <GridColumn
+                    className="content-section"
+                    computer={9}
+                    mobile={12}
+                    tablet={9}
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      className="content-section"
+                      computer={9}
+                      mobile={12}
+                      tablet={9}
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned nine wide computer twelve wide mobile nine wide tablet column content-section"
+                      >
+                        <Grid
+                          areColumnsCentered={false}
+                          padded={true}
+                        >
+                          <Grid
+                            centered={false}
+                            padded={true}
+                          >
+                            <div
+                              className="ui padded grid"
+                            >
+                              <Divider
+                                className=""
+                                hasLine={false}
+                                size="huge"
+                              >
+                                <Divider
+                                  className="is-size-huge"
+                                  hidden={true}
+                                  section={false}
+                                >
+                                  <div
+                                    className="ui hidden divider is-size-huge"
+                                  />
+                                </Divider>
+                              </Divider>
                               <ShowOn
-                                computer={false}
-                                mobile={true}
+                                computer={true}
+                                mobile={false}
                                 parent={[Function]}
                                 parentProps={
                                   Object {
-                                    "verticalAlign": "top",
+                                    "className": "book-now-button-container",
                                   }
                                 }
-                                tablet={false}
-                                widescreen={false}
+                                tablet={true}
+                                widescreen={true}
                               >
                                 <GridRow
-                                  className="show-on-mobile"
+                                  className="book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                   horizontalAlignContent="left"
-                                  verticalAlign="top"
                                 >
                                   <GridRow
-                                    className="show-on-mobile"
+                                    className="book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                     textAlign="left"
-                                    verticalAlign="top"
                                   >
                                     <div
-                                      className="left aligned top aligned row show-on-mobile"
+                                      className="left aligned row book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                     >
                                       <GridColumn
-                                        floated="right"
                                         textAlign="center"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
-                                          floated="right"
                                           textAlign="center"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
-                                            className="center aligned right floated top aligned twelve wide column"
+                                            className="center aligned top aligned twelve wide column"
                                           >
-                                            <div>
-                                              <Paragraph
-                                                size="tiny"
-                                                weight={null}
-                                              >
-                                                <p
-                                                  className="tiny"
-                                                >
-                                                  Use the coupon code
-                                                </p>
-                                              </Paragraph>
+                                            <Button
+                                              hasShadow={false}
+                                              icon={null}
+                                              isCompact={false}
+                                              isDisabled={false}
+                                              isLoading={false}
+                                              isPositionedRight={false}
+                                              isRounded={true}
+                                              isSecondary={false}
+                                              onClick={[Function]}
+                                              size={null}
+                                            >
                                               <Button
-                                                hasShadow={true}
-                                                icon={null}
-                                                isCompact={false}
-                                                isDisabled={false}
-                                                isLoading={false}
-                                                isPositionedRight={true}
-                                                isRounded={false}
-                                                isSecondary={false}
+                                                as="button"
+                                                circular={true}
+                                                className=""
+                                                compact={false}
+                                                disabled={false}
+                                                floated="left"
+                                                loading={false}
                                                 onClick={[Function]}
+                                                secondary={false}
                                                 size={null}
                                               >
-                                                <Button
-                                                  as="button"
-                                                  circular={false}
-                                                  className="has-shadow"
-                                                  compact={false}
-                                                  disabled={false}
-                                                  floated="right"
-                                                  loading={false}
+                                                <button
+                                                  className="ui circular left floated button"
                                                   onClick={[Function]}
-                                                  secondary={false}
-                                                  size={null}
+                                                  role="button"
                                                 >
-                                                  <button
-                                                    className="ui right floated button has-shadow"
-                                                    onClick={[Function]}
-                                                    role="button"
-                                                  >
-                                                    123
-                                                  </button>
-                                                </Button>
+                                                  Book Now with Discount
+                                                </button>
                                               </Button>
-                                            </div>
-                                          </div>
-                                        </GridColumn>
-                                      </GridColumn>
-                                    </div>
-                                  </GridRow>
-                                </GridRow>
-                              </ShowOn>
-                              <ShowOn
-                                computer={true}
-                                desktop={true}
-                                mobile={false}
-                                parent={[Function]}
-                                parentProps={
-                                  Object {
-                                    "verticalAlign": "bottom",
-                                  }
-                                }
-                                tablet={true}
-                                widescreen={false}
-                              >
-                                <GridRow
-                                  className="show-on-tablet show-on-computer"
-                                  horizontalAlignContent="left"
-                                  verticalAlign="bottom"
-                                >
-                                  <GridRow
-                                    className="show-on-tablet show-on-computer"
-                                    textAlign="left"
-                                    verticalAlign="bottom"
-                                  >
-                                    <div
-                                      className="left aligned bottom aligned row show-on-tablet show-on-computer"
-                                    >
-                                      <GridColumn
-                                        floated="right"
-                                        textAlign="right"
-                                        verticalAlignContent="top"
-                                        width={6}
-                                      >
-                                        <GridColumn
-                                          floated="right"
-                                          textAlign="right"
-                                          verticalAlign="top"
-                                          width={6}
-                                        >
-                                          <div
-                                            className="right aligned right floated top aligned six wide column"
-                                          >
-                                            <div>
-                                              <Paragraph
-                                                size="tiny"
-                                                weight={null}
-                                              >
-                                                <p
-                                                  className="tiny"
-                                                >
-                                                  Use the coupon code
-                                                </p>
-                                              </Paragraph>
-                                              <Button
-                                                hasShadow={true}
-                                                icon={null}
-                                                isCompact={false}
-                                                isDisabled={false}
-                                                isLoading={false}
-                                                isPositionedRight={true}
-                                                isRounded={false}
-                                                isSecondary={false}
-                                                onClick={[Function]}
-                                                size={null}
-                                              >
-                                                <Button
-                                                  as="button"
-                                                  circular={false}
-                                                  className="has-shadow"
-                                                  compact={false}
-                                                  disabled={false}
-                                                  floated="right"
-                                                  loading={false}
-                                                  onClick={[Function]}
-                                                  secondary={false}
-                                                  size={null}
-                                                >
-                                                  <button
-                                                    className="ui right floated button has-shadow"
-                                                    onClick={[Function]}
-                                                    role="button"
-                                                  >
-                                                    123
-                                                  </button>
-                                                </Button>
-                                              </Button>
-                                            </div>
+                                            </Button>
                                           </div>
                                         </GridColumn>
                                       </GridColumn>
