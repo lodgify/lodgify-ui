@@ -1,61 +1,704 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Form /> if \`props.errorMessage\` is passed should render the error message above the submit button 1`] = `
-<Card
-  className="has-form"
-  fluid={true}
+exports[`<Form /> by default should render the correct structure 1`] = `
+<Form
+  actionLink={null}
+  autoComplete={null}
+  errorMessage=""
+  headingText={null}
+  onSubmit={[Function]}
+  submitButtonText="Send"
+  successMessage=""
+  validation={Object {}}
 >
-  <CardContent>
-    <Form
-      as="form"
-      autoComplete={null}
-      error={true}
-      onSubmit={[Function]}
-      success={false}
+  <Card
+    className="has-form"
+    fluid={true}
+  >
+    <div
+      className="ui fluid card has-form"
+      onClick={[Function]}
     >
-      <FormField
-        key=".0"
-      >
-        <input
-          onBlur={[Function]}
-          onChange={[Function]}
-        />
-      </FormField>
-      <Message
-        content="This is an error message"
-        error={true}
-      />
-    </Form>
-  </CardContent>
-</Card>
+      <CardContent>
+        <div
+          className="content"
+        >
+          <Form
+            as="form"
+            autoComplete={null}
+            error={false}
+            onSubmit={[Function]}
+            success={false}
+          >
+            <form
+              autoComplete={null}
+              className="ui form"
+              onSubmit={[Function]}
+            >
+              <FormField
+                key=".0"
+              >
+                <div
+                  className="field"
+                >
+                  🚸
+                </div>
+              </FormField>
+              <Button
+                hasShadow={false}
+                icon={null}
+                isCompact={false}
+                isDisabled={false}
+                isLoading={false}
+                isPositionedRight={true}
+                isRounded={false}
+                isSecondary={false}
+                onClick={[Function]}
+                size={null}
+              >
+                <Button
+                  as="button"
+                  circular={false}
+                  className=""
+                  compact={false}
+                  disabled={false}
+                  floated="right"
+                  loading={false}
+                  onClick={[Function]}
+                  secondary={false}
+                  size={null}
+                >
+                  <button
+                    className="ui right floated button"
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    Send
+                  </button>
+                </Button>
+              </Button>
+            </form>
+          </Form>
+        </div>
+      </CardContent>
+    </div>
+  </Card>
+</Form>
 `;
 
-exports[`<Form /> if \`props.successMessage\` is passed should render the success message above the submit button 1`] = `
-<Card
-  className="has-form"
-  fluid={true}
+exports[`<Form /> if \`props.actionLink\` is passed should render the correct structure 1`] = `
+<Form
+  actionLink={
+    Object {
+      "onClick": [Function],
+      "text": "mayday",
+    }
+  }
+  autoComplete={null}
+  errorMessage=""
+  headingText={null}
+  onSubmit={[Function]}
+  submitButtonText="Send"
+  successMessage=""
+  validation={Object {}}
 >
-  <CardContent>
-    <Form
-      as="form"
-      autoComplete={null}
-      error={false}
-      onSubmit={[Function]}
-      success={true}
+  <Card
+    className="has-form"
+    fluid={true}
+  >
+    <div
+      className="ui fluid card has-form"
+      onClick={[Function]}
     >
-      <FormField
-        key=".0"
-      >
-        <input
-          onBlur={[Function]}
-          onChange={[Function]}
-        />
-      </FormField>
-      <Message
-        content="This is a successful message"
-        success={true}
-      />
-    </Form>
-  </CardContent>
-</Card>
+      <CardContent>
+        <div
+          className="content"
+        >
+          <Form
+            as="form"
+            autoComplete={null}
+            error={false}
+            onSubmit={[Function]}
+            success={false}
+          >
+            <form
+              autoComplete={null}
+              className="ui form"
+              onSubmit={[Function]}
+            >
+              <FormField
+                key=".0"
+              >
+                <div
+                  className="field"
+                >
+                  🚸
+                </div>
+              </FormField>
+              <Link
+                href={null}
+                isPositionedRight={false}
+                onClick={[Function]}
+                willOpenInNewTab={false}
+              >
+                <Button
+                  as={null}
+                  basic={true}
+                  floated="left"
+                  href={null}
+                  onClick={[Function]}
+                  target="_self"
+                >
+                  <button
+                    className="ui basic left floated button"
+                    href={null}
+                    onClick={[Function]}
+                    role="button"
+                    target="_self"
+                  >
+                    mayday
+                  </button>
+                </Button>
+              </Link>
+              <Button
+                hasShadow={false}
+                icon={null}
+                isCompact={false}
+                isDisabled={false}
+                isLoading={false}
+                isPositionedRight={true}
+                isRounded={false}
+                isSecondary={false}
+                onClick={[Function]}
+                size={null}
+              >
+                <Button
+                  as="button"
+                  circular={false}
+                  className=""
+                  compact={false}
+                  disabled={false}
+                  floated="right"
+                  loading={false}
+                  onClick={[Function]}
+                  secondary={false}
+                  size={null}
+                >
+                  <button
+                    className="ui right floated button"
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    Send
+                  </button>
+                </Button>
+              </Button>
+            </form>
+          </Form>
+        </div>
+      </CardContent>
+    </div>
+  </Card>
+</Form>
+`;
+
+exports[`<Form /> if \`props.errorMessage\` is passed should render the correct structure 1`] = `
+<Form
+  actionLink={null}
+  autoComplete={null}
+  errorMessage="This is an error message"
+  headingText={null}
+  onSubmit={[Function]}
+  submitButtonText="Send"
+  successMessage=""
+  validation={Object {}}
+>
+  <Card
+    className="has-form"
+    fluid={true}
+  >
+    <div
+      className="ui fluid card has-form"
+      onClick={[Function]}
+    >
+      <CardContent>
+        <div
+          className="content"
+        >
+          <Form
+            as="form"
+            autoComplete={null}
+            error={true}
+            onSubmit={[Function]}
+            success={false}
+          >
+            <form
+              autoComplete={null}
+              className="ui error form"
+              onSubmit={[Function]}
+            >
+              <FormField
+                key=".0"
+              >
+                <div
+                  className="field"
+                >
+                  <input
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                  />
+                </div>
+              </FormField>
+              <Message
+                content="This is an error message"
+                error={true}
+              >
+                <div
+                  className="ui error message"
+                >
+                  <MessageContent>
+                    <div
+                      className="content"
+                    >
+                      <p
+                        key="This is an error message"
+                      >
+                        This is an error message
+                      </p>
+                    </div>
+                  </MessageContent>
+                </div>
+              </Message>
+              <Button
+                hasShadow={false}
+                icon={null}
+                isCompact={false}
+                isDisabled={false}
+                isLoading={false}
+                isPositionedRight={true}
+                isRounded={false}
+                isSecondary={false}
+                onClick={[Function]}
+                size={null}
+              >
+                <Button
+                  as="button"
+                  circular={false}
+                  className=""
+                  compact={false}
+                  disabled={false}
+                  floated="right"
+                  loading={false}
+                  onClick={[Function]}
+                  secondary={false}
+                  size={null}
+                >
+                  <button
+                    className="ui right floated button"
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    Send
+                  </button>
+                </Button>
+              </Button>
+            </form>
+          </Form>
+        </div>
+      </CardContent>
+    </div>
+  </Card>
+</Form>
+`;
+
+exports[`<Form /> if \`props.headingText\` is passed should render the correct structure 1`] = `
+<Form
+  actionLink={null}
+  autoComplete={null}
+  errorMessage=""
+  headingText="👥"
+  onSubmit={[Function]}
+  submitButtonText="Send"
+  successMessage=""
+  validation={Object {}}
+>
+  <Card
+    className="has-form"
+    fluid={true}
+  >
+    <div
+      className="ui fluid card has-form"
+      onClick={[Function]}
+    >
+      <CardContent>
+        <div
+          className="content"
+        >
+          <Heading
+            className={null}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            <Header
+              as="h3"
+              className={null}
+              inverted={false}
+              textAlign={null}
+            >
+              <h3
+                className="ui header"
+              >
+                👥
+              </h3>
+            </Header>
+          </Heading>
+        </div>
+      </CardContent>
+      <CardContent>
+        <div
+          className="content"
+        >
+          <Form
+            as="form"
+            autoComplete={null}
+            error={false}
+            onSubmit={[Function]}
+            success={false}
+          >
+            <form
+              autoComplete={null}
+              className="ui form"
+              onSubmit={[Function]}
+            >
+              <FormField
+                key=".0"
+              >
+                <div
+                  className="field"
+                >
+                  🚸
+                </div>
+              </FormField>
+              <Button
+                hasShadow={false}
+                icon={null}
+                isCompact={false}
+                isDisabled={false}
+                isLoading={false}
+                isPositionedRight={true}
+                isRounded={false}
+                isSecondary={false}
+                onClick={[Function]}
+                size={null}
+              >
+                <Button
+                  as="button"
+                  circular={false}
+                  className=""
+                  compact={false}
+                  disabled={false}
+                  floated="right"
+                  loading={false}
+                  onClick={[Function]}
+                  secondary={false}
+                  size={null}
+                >
+                  <button
+                    className="ui right floated button"
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    Send
+                  </button>
+                </Button>
+              </Button>
+            </form>
+          </Form>
+        </div>
+      </CardContent>
+    </div>
+  </Card>
+</Form>
+`;
+
+exports[`<Form /> if \`props.submitButtonText\` is an empty string should render the correct structure 1`] = `
+<Form
+  actionLink={null}
+  autoComplete={null}
+  errorMessage=""
+  headingText={null}
+  onSubmit={[Function]}
+  submitButtonText=""
+  successMessage=""
+  validation={Object {}}
+>
+  <Card
+    className="has-form"
+    fluid={true}
+  >
+    <div
+      className="ui fluid card has-form"
+      onClick={[Function]}
+    >
+      <CardContent>
+        <div
+          className="content"
+        >
+          <Form
+            as="form"
+            autoComplete={null}
+            error={false}
+            onSubmit={[Function]}
+            success={false}
+          >
+            <form
+              autoComplete={null}
+              className="ui form"
+              onSubmit={[Function]}
+            >
+              <FormField
+                key=".0"
+              >
+                <div
+                  className="field"
+                >
+                  🚸
+                </div>
+              </FormField>
+              <Button
+                hasShadow={false}
+                icon={null}
+                isCompact={false}
+                isDisabled={false}
+                isLoading={false}
+                isPositionedRight={true}
+                isRounded={false}
+                isSecondary={false}
+                onClick={[Function]}
+                size={null}
+              >
+                <Button
+                  as="button"
+                  circular={false}
+                  className=""
+                  compact={false}
+                  disabled={false}
+                  floated="right"
+                  loading={false}
+                  onClick={[Function]}
+                  secondary={false}
+                  size={null}
+                >
+                  <button
+                    className="ui right floated button"
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    Send
+                  </button>
+                </Button>
+              </Button>
+            </form>
+          </Form>
+        </div>
+      </CardContent>
+    </div>
+  </Card>
+</Form>
+`;
+
+exports[`<Form /> if \`props.submitButtonText\` is passed should render the correct structure 1`] = `
+<Form
+  actionLink={null}
+  autoComplete={null}
+  errorMessage=""
+  headingText={null}
+  onSubmit={[Function]}
+  submitButtonText="someText"
+  successMessage=""
+  validation={Object {}}
+>
+  <Card
+    className="has-form"
+    fluid={true}
+  >
+    <div
+      className="ui fluid card has-form"
+      onClick={[Function]}
+    >
+      <CardContent>
+        <div
+          className="content"
+        >
+          <Form
+            as="form"
+            autoComplete={null}
+            error={false}
+            onSubmit={[Function]}
+            success={false}
+          >
+            <form
+              autoComplete={null}
+              className="ui form"
+              onSubmit={[Function]}
+            >
+              <FormField
+                key=".0"
+              >
+                <div
+                  className="field"
+                >
+                  🚸
+                </div>
+              </FormField>
+              <Button
+                hasShadow={false}
+                icon={null}
+                isCompact={false}
+                isDisabled={false}
+                isLoading={false}
+                isPositionedRight={true}
+                isRounded={false}
+                isSecondary={false}
+                onClick={[Function]}
+                size={null}
+              >
+                <Button
+                  as="button"
+                  circular={false}
+                  className=""
+                  compact={false}
+                  disabled={false}
+                  floated="right"
+                  loading={false}
+                  onClick={[Function]}
+                  secondary={false}
+                  size={null}
+                >
+                  <button
+                    className="ui right floated button"
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    someText
+                  </button>
+                </Button>
+              </Button>
+            </form>
+          </Form>
+        </div>
+      </CardContent>
+    </div>
+  </Card>
+</Form>
+`;
+
+exports[`<Form /> if \`props.successMessage\` is passed should render the correct structure 1`] = `
+<Form
+  actionLink={null}
+  autoComplete={null}
+  errorMessage=""
+  headingText={null}
+  onSubmit={[Function]}
+  submitButtonText="Send"
+  successMessage="This is a successful message"
+  validation={Object {}}
+>
+  <Card
+    className="has-form"
+    fluid={true}
+  >
+    <div
+      className="ui fluid card has-form"
+      onClick={[Function]}
+    >
+      <CardContent>
+        <div
+          className="content"
+        >
+          <Form
+            as="form"
+            autoComplete={null}
+            error={false}
+            onSubmit={[Function]}
+            success={true}
+          >
+            <form
+              autoComplete={null}
+              className="ui success form"
+              onSubmit={[Function]}
+            >
+              <FormField
+                key=".0"
+              >
+                <div
+                  className="field"
+                >
+                  <input
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                  />
+                </div>
+              </FormField>
+              <Message
+                content="This is a successful message"
+                success={true}
+              >
+                <div
+                  className="ui success message"
+                >
+                  <MessageContent>
+                    <div
+                      className="content"
+                    >
+                      <p
+                        key="This is a successful message"
+                      >
+                        This is a successful message
+                      </p>
+                    </div>
+                  </MessageContent>
+                </div>
+              </Message>
+              <Button
+                hasShadow={false}
+                icon={null}
+                isCompact={false}
+                isDisabled={false}
+                isLoading={false}
+                isPositionedRight={true}
+                isRounded={false}
+                isSecondary={false}
+                onClick={[Function]}
+                size={null}
+              >
+                <Button
+                  as="button"
+                  circular={false}
+                  className=""
+                  compact={false}
+                  disabled={false}
+                  floated="right"
+                  loading={false}
+                  onClick={[Function]}
+                  secondary={false}
+                  size={null}
+                >
+                  <button
+                    className="ui right floated button"
+                    onClick={[Function]}
+                    role="button"
+                  >
+                    Send
+                  </button>
+                </Button>
+              </Button>
+            </form>
+          </Form>
+        </div>
+      </CardContent>
+    </div>
+  </Card>
+</Form>
 `;
