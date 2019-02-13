@@ -8,6 +8,7 @@ import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
 import { SEND } from 'utils/default-strings';
 
+import { getEmptyState } from './utils/getEmptyState';
 import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
 import { getIsRequiredErrorThenSetState } from './utils/getIsRequiredErrorThenSetState';
 import { getIsValidError } from './utils/getIsValidError';
@@ -21,6 +22,14 @@ import { getIsSubmitButtonDisabled } from './utils/getIsSubmitButtonDisabled';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {};
+
+  componentDidUpdate = previousProps => {
+    if (!previousProps.successMessage && !!this.props.successMessage) {
+      const emptyState = getEmptyState(this.state);
+
+      this.setState(emptyState);
+    }
+  };
 
   handleInputBlur = name =>
     getIsRequiredErrorThenSetState(
