@@ -1,3 +1,10 @@
+# [1.137.0](https://github.com/lodgify/lodgify-ui/compare/v1.136.1...v1.137.0) (2019-02-13)
+
+
+### Features
+
+* **CookieAlert:** expose to package API ([b51fcc6](https://github.com/lodgify/lodgify-ui/commit/b51fcc6))
+
 ## [1.136.1](https://github.com/lodgify/lodgify-ui/compare/v1.136.0...v1.136.1) (2019-02-13)
 
 
