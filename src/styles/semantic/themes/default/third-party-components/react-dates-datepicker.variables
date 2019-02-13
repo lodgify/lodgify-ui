@@ -30,7 +30,7 @@
 
 /* Picker */
 @pickerFontColor: @greyEight;
-@pickerZIndex: 3;
+@pickerZIndex: 15;
 @pickerBoxShadow: @spreadShadow;
 @pickerMinHeight: 445px;
 
