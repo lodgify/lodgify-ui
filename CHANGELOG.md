@@ -1,3 +1,10 @@
+# [1.136.0](https://github.com/lodgify/lodgify-ui/compare/v1.135.1...v1.136.0) (2019-02-13)
+
+
+### Features
+
+* **Promotion:** remove isRequired from backgroundImageUrl headingText and discountCode ([1a5ee25](https://github.com/lodgify/lodgify-ui/commit/1a5ee25))
+
 ## [1.135.1](https://github.com/lodgify/lodgify-ui/compare/v1.135.0...v1.135.1) (2019-02-13)
 
 
