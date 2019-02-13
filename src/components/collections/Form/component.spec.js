@@ -1,7 +1,10 @@
+jest.mock('./utils/getEmptyState');
+
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { getEmptyState } from './utils/getEmptyState';
 import { Component as Form } from './component';
 import { DEFAULT_IS_REQUIRED_MESSAGE } from './constants';
 
@@ -76,6 +79,53 @@ describe('<Form />', () => {
       });
 
       expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('`componentDidUpdate`', () => {
+    describe('if a fresh `props.successMessage` has been passed', () => {
+      it('should call `getEmptyState` with the right arguments', () => {
+        const wrapper = getShallowForm(stringChild, {
+          successMessage: 'some message',
+        });
+
+        wrapper.instance().componentDidUpdate({ successMessage: undefined });
+
+        expect(getEmptyState).toHaveBeenCalledWith(wrapper.state());
+      });
+
+      it('should call `setState` with the right arguments', () => {
+        const EMPTY_STATE = 'nuthin here';
+        const wrapper = getShallowForm(stringChild, {
+          successMessage: 'some message',
+        });
+
+        getEmptyState.mockReturnValue(EMPTY_STATE);
+        wrapper.instance().setState = jest.fn();
+        wrapper.update();
+        wrapper.instance().componentDidUpdate({ successMessage: undefined });
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith(EMPTY_STATE);
+      });
+    });
+
+    describe('if a fresh `props.successMessage` has not been passed', () => {
+      it('should do nothing', () => {
+        const successMessage = 'some message';
+        const wrapper = getShallowForm(stringChild, {
+          successMessage,
+        });
+
+        getEmptyState.mockClear();
+
+        wrapper.instance().setState = jest.fn();
+        wrapper.update();
+
+        wrapper.instance().componentDidUpdate({ successMessage });
+
+        expect(getEmptyState).not.toHaveBeenCalled();
+        expect(wrapper.instance().setState).not.toHaveBeenCalled();
+      });
     });
   });
 
