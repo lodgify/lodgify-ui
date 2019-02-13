@@ -143,10 +143,12 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Name"
+                            mapValueToProps={[Function]}
                             name="name"
                             onChange={[Function]}
                           >
@@ -165,6 +167,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -212,12 +215,15 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 size={null}
                               />
                             }
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Phone"
+                            mapValueToProps={[Function]}
                             name="phone"
                             onChange={[Function]}
+                            value=""
                           >
                             <Input
                               className=""
@@ -297,10 +303,12 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Email"
+                        mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
                       >
@@ -319,6 +327,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -386,10 +395,12 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
+                                initialValue={null}
                                 inputOnChangeFunctionName="onDatesChange"
                                 isFocused={false}
                                 isValid={false}
                                 label={null}
+                                mapValueToProps={[Function]}
                                 name="dates"
                                 onChange={[Function]}
                               >
@@ -515,10 +526,12 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Guests"
+                            mapValueToProps={[Function]}
                             name="guests"
                             onChange={[Function]}
                           >
@@ -538,6 +551,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -572,10 +586,12 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Comments"
+                        mapValueToProps={[Function]}
                         name="comments"
                         onChange={[Function]}
                       >
@@ -593,6 +609,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -1225,10 +1242,12 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                   adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
+                                  initialValue=""
                                   inputOnChangeFunctionName="onChange"
                                   isFocused={false}
                                   isValid={false}
                                   label="Security code"
+                                  mapValueToProps={[Function]}
                                   name="captcha"
                                   onChange={[Function]}
                                 >
@@ -1247,6 +1266,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
+                                        value=""
                                       />
                                       <label
                                         key=".3"
@@ -1436,10 +1456,12 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Name"
+                            mapValueToProps={[Function]}
                             name="name"
                             onChange={[Function]}
                           >
@@ -1458,6 +1480,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -1505,12 +1528,15 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 size={null}
                               />
                             }
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Phone"
+                            mapValueToProps={[Function]}
                             name="phone"
                             onChange={[Function]}
+                            value=""
                           >
                             <Input
                               className=""
@@ -1590,10 +1616,12 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Email"
+                        mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
                       >
@@ -1612,6 +1640,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -1679,10 +1708,12 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
+                                initialValue={null}
                                 inputOnChangeFunctionName="onDatesChange"
                                 isFocused={false}
                                 isValid={false}
                                 label={null}
+                                mapValueToProps={[Function]}
                                 name="dates"
                                 onChange={[Function]}
                               >
@@ -1808,10 +1839,12 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Guests"
+                            mapValueToProps={[Function]}
                             name="guests"
                             onChange={[Function]}
                           >
@@ -1831,6 +1864,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -1865,10 +1899,12 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Comments"
+                        mapValueToProps={[Function]}
                         name="comments"
                         onChange={[Function]}
                       >
@@ -1886,6 +1922,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -2261,10 +2298,12 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
+                                  initialValue=""
                                   inputOnChangeFunctionName="onChange"
                                   isFocused={false}
                                   isValid={false}
                                   label="Security code"
+                                  mapValueToProps={[Function]}
                                   name="captcha"
                                   onChange={[Function]}
                                 >
@@ -2283,6 +2322,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
+                                        value=""
                                       />
                                       <label
                                         key=".3"
@@ -2468,10 +2508,12 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Name"
+                            mapValueToProps={[Function]}
                             name="name"
                             onChange={[Function]}
                           >
@@ -2490,6 +2532,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -2537,12 +2580,15 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 size={null}
                               />
                             }
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Phone"
+                            mapValueToProps={[Function]}
                             name="phone"
                             onChange={[Function]}
+                            value=""
                           >
                             <Input
                               className=""
@@ -2622,10 +2668,12 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Email"
+                        mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
                       >
@@ -2644,6 +2692,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -2711,10 +2760,12 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
+                                initialValue={null}
                                 inputOnChangeFunctionName="onDatesChange"
                                 isFocused={false}
                                 isValid={false}
                                 label={null}
+                                mapValueToProps={[Function]}
                                 name="dates"
                                 onChange={[Function]}
                               >
@@ -2840,10 +2891,12 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Guests"
+                            mapValueToProps={[Function]}
                             name="guests"
                             onChange={[Function]}
                           >
@@ -2863,6 +2916,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -2897,10 +2951,12 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Comments"
+                        mapValueToProps={[Function]}
                         name="comments"
                         onChange={[Function]}
                       >
@@ -2918,6 +2974,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -3252,10 +3309,12 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                   adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
+                                  initialValue=""
                                   inputOnChangeFunctionName="onChange"
                                   isFocused={false}
                                   isValid={false}
                                   label="Security code"
+                                  mapValueToProps={[Function]}
                                   name="captcha"
                                   onChange={[Function]}
                                 >
@@ -3274,6 +3333,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
+                                        value=""
                                       />
                                       <label
                                         key=".3"
@@ -3444,10 +3504,12 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Name"
+                            mapValueToProps={[Function]}
                             name="name"
                             onChange={[Function]}
                           >
@@ -3466,6 +3528,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -3513,12 +3576,15 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 size={null}
                               />
                             }
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Phone"
+                            mapValueToProps={[Function]}
                             name="phone"
                             onChange={[Function]}
+                            value=""
                           >
                             <Input
                               className=""
@@ -3598,10 +3664,12 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Email"
+                        mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
                       >
@@ -3620,6 +3688,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -3687,10 +3756,12 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 adaptOnChangeEvent={[Function]}
                                 error={false}
                                 icon={null}
+                                initialValue={null}
                                 inputOnChangeFunctionName="onDatesChange"
                                 isFocused={false}
                                 isValid={false}
                                 label={null}
+                                mapValueToProps={[Function]}
                                 name="dates"
                                 onChange={[Function]}
                               >
@@ -3816,10 +3887,12 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Guests"
+                            mapValueToProps={[Function]}
                             name="guests"
                             onChange={[Function]}
                           >
@@ -3839,6 +3912,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -3873,10 +3947,12 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Comments"
+                        mapValueToProps={[Function]}
                         name="comments"
                         onChange={[Function]}
                       >
@@ -3894,6 +3970,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -3962,10 +4039,12 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   adaptOnChangeEvent={[Function]}
                                   error={false}
                                   icon={null}
+                                  initialValue=""
                                   inputOnChangeFunctionName="onChange"
                                   isFocused={false}
                                   isValid={false}
                                   label="Security code"
+                                  mapValueToProps={[Function]}
                                   name="captcha"
                                   onChange={[Function]}
                                 >
@@ -3984,6 +4063,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         type="text"
+                                        value=""
                                       />
                                       <label
                                         key=".3"

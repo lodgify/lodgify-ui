@@ -475,10 +475,12 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue={null}
                         inputOnChangeFunctionName="onDatesChange"
                         isFocused={false}
                         isValid={false}
                         label={null}
+                        mapValueToProps={[Function]}
                         name="dates"
                         onChange={[Function]}
                       >
@@ -1511,10 +1513,12 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 adaptOnChangeEvent={[Function]}
                                                 error={false}
                                                 icon={null}
+                                                initialValue={null}
                                                 inputOnChangeFunctionName="onDatesChange"
                                                 isFocused={false}
                                                 isValid={false}
                                                 label={null}
+                                                mapValueToProps={[Function]}
                                                 name="dates"
                                                 onChange={[Function]}
                                               >
@@ -2551,10 +2555,12 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue={null}
                         inputOnChangeFunctionName="onDatesChange"
                         isFocused={false}
                         isValid={false}
                         label={null}
+                        mapValueToProps={[Function]}
                         name="dates"
                         onChange={[Function]}
                       >
@@ -3190,10 +3196,12 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue={null}
                         inputOnChangeFunctionName="onDatesChange"
                         isFocused={false}
                         isValid={false}
                         label={null}
+                        mapValueToProps={[Function]}
                         name="dates"
                         onChange={[Function]}
                       >
@@ -4158,10 +4166,12 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue={null}
                         inputOnChangeFunctionName="onDatesChange"
                         isFocused={false}
                         isValid={false}
                         label={null}
+                        mapValueToProps={[Function]}
                         name="dates"
                         onChange={[Function]}
                       >

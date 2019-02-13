@@ -135,10 +135,12 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Email"
+                        mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
                       >
@@ -157,6 +159,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -190,10 +193,12 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Password"
+                        mapValueToProps={[Function]}
                         name="password"
                         onChange={[Function]}
                       >
@@ -212,6 +217,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="password"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -546,10 +552,12 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Email"
+                        mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
                       >
@@ -568,6 +576,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -601,10 +610,12 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Password"
+                        mapValueToProps={[Function]}
                         name="password"
                         onChange={[Function]}
                       >
@@ -623,6 +634,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="password"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -957,10 +969,12 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Email"
+                        mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
                       >
@@ -979,6 +993,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -1012,10 +1027,12 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Password"
+                        mapValueToProps={[Function]}
                         name="password"
                         onChange={[Function]}
                       >
@@ -1034,6 +1051,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="password"
+                              value=""
                             />
                             <label
                               key=".3"

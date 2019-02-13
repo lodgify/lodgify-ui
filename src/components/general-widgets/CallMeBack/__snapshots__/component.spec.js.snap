@@ -131,10 +131,12 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Name"
+                            mapValueToProps={[Function]}
                             name="name"
                             onChange={[Function]}
                           >
@@ -153,6 +155,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -200,12 +203,15 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                 size={null}
                               />
                             }
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Phone"
+                            mapValueToProps={[Function]}
                             name="phone"
                             onChange={[Function]}
+                            value=""
                           >
                             <Input
                               className=""
@@ -285,10 +291,12 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Email"
+                        mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
                       >
@@ -307,6 +315,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -348,10 +357,12 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue={null}
                             inputOnChangeFunctionName="onDateChange"
                             isFocused={false}
                             isValid={false}
                             label={null}
+                            mapValueToProps={[Function]}
                             name="date"
                             onChange={[Function]}
                           >
@@ -862,10 +873,12 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Notes"
+                        mapValueToProps={[Function]}
                         name="notes"
                         onChange={[Function]}
                       >
@@ -883,6 +896,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -1089,10 +1103,12 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Name"
+                            mapValueToProps={[Function]}
                             name="name"
                             onChange={[Function]}
                           >
@@ -1111,6 +1127,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
+                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -1158,12 +1175,15 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                 size={null}
                               />
                             }
+                            initialValue=""
                             inputOnChangeFunctionName="onChange"
                             isFocused={false}
                             isValid={false}
                             label="Phone"
+                            mapValueToProps={[Function]}
                             name="phone"
                             onChange={[Function]}
+                            value=""
                           >
                             <Input
                               className=""
@@ -1243,10 +1263,12 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Email"
+                        mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
                       >
@@ -1265,6 +1287,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
+                              value=""
                             />
                             <label
                               key=".3"
@@ -1306,10 +1329,12 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
+                            initialValue={null}
                             inputOnChangeFunctionName="onDateChange"
                             isFocused={false}
                             isValid={false}
                             label={null}
+                            mapValueToProps={[Function]}
                             name="date"
                             onChange={[Function]}
                           >
@@ -2118,10 +2143,12 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
+                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isFocused={false}
                         isValid={false}
                         label="Notes"
+                        mapValueToProps={[Function]}
                         name="notes"
                         onChange={[Function]}
                       >
@@ -2139,6 +2166,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
+                              value=""
                             />
                             <label
                               key=".3"
