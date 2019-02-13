@@ -24,6 +24,7 @@ export { Tooltip } from './components/elements/Tooltip';
 // General Widgets
 export { CallMeBack } from './components/general-widgets/CallMeBack';
 export { Contact } from './components/general-widgets/Contact';
+export { CookieAlert } from './components/general-widgets/CookieAlert';
 export {
   FeaturedProperties,
 } from './components/general-widgets/FeaturedProperties';

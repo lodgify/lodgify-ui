@@ -1,3 +1,18 @@
+# [1.137.0](https://github.com/lodgify/lodgify-ui/compare/v1.136.1...v1.137.0) (2019-02-13)
+
+
+### Features
+
+* **CookieAlert:** expose to package API ([b51fcc6](https://github.com/lodgify/lodgify-ui/commit/b51fcc6))
+
+## [1.136.1](https://github.com/lodgify/lodgify-ui/compare/v1.136.0...v1.136.1) (2019-02-13)
+
+
+### Bug Fixes
+
+* **Dropdown:** menus when focused appear above other menus ([48aa355](https://github.com/lodgify/lodgify-ui/commit/48aa355))
+* **react-dates-datepicker:** increase z-index to 15 ([7e304cd](https://github.com/lodgify/lodgify-ui/commit/7e304cd))
+
 # [1.136.0](https://github.com/lodgify/lodgify-ui/compare/v1.135.1...v1.136.0) (2019-02-13)
 
 
