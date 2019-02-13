@@ -1,0 +1,1 @@
+export { getControlledInputValue } from './getControlledInputValue';
