@@ -498,7 +498,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
         errorMessage=""
         headingText={null}
         onSubmit={[Function]}
-        submitButtonText={null}
+        submitButtonText="Send"
         successMessage=""
         validation={Object {}}
       >

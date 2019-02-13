@@ -1,16 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Card, Form as SemanticForm, FormField } from 'semantic-ui-react';
-import {
-  expectComponentToBe,
-  expectComponentToHaveChildren,
-  expectComponentToHaveDisplayName,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Button } from 'elements/Button';
-import { Heading } from 'typography/Heading';
-import { Link } from 'elements/Link';
+import { shallow, mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Form } from './component';
 import { DEFAULT_IS_REQUIRED_MESSAGE } from './constants';
@@ -18,94 +8,74 @@ import { DEFAULT_IS_REQUIRED_MESSAGE } from './constants';
 const stringChild = '🚸';
 const headingText = '👥';
 
-const getForm = (children, props) =>
+const getShallowForm = (children, props) =>
   shallow(<Form {...props}>{children}</Form>);
 
+const getMountedForm = (children, props) =>
+  mount(<Form {...props}>{children}</Form>);
+
 describe('<Form />', () => {
-  it('should render a single Semantic UI `Card` component', () => {
-    const wrapper = getForm(stringChild);
+  describe('by default', () => {
+    it('should render the correct structure', () => {
+      const actual = getMountedForm(stringChild);
 
-    expectComponentToBe(wrapper, Card);
-  });
-
-  it('should render a single Semantic UI Card.Content component by default', () => {
-    const wrapper = getForm(stringChild);
-
-    expectComponentToHaveChildren(wrapper, Card.Content);
-  });
-
-  describe('Semantic UI Card.Content', () => {
-    it('should render a single Semantic UI Form component', () => {
-      const wrapper = getForm(stringChild).find(Card.Content);
-
-      expectComponentToHaveChildren(wrapper, SemanticForm);
+      expect(actual).toMatchSnapshot();
     });
   });
 
-  describe('Semantic UI Form', () => {
-    const getSemanticForm = () => getForm(stringChild).find(SemanticForm);
-
-    it('should have the right props', () => {
-      const wrapper = getSemanticForm();
-
-      expectComponentToHaveProps(wrapper, { onSubmit: expect.any(Function) });
-    });
-
-    it('should render whatever `getFormChild` returns', () => {
-      const wrapper = getSemanticForm();
-
-      expectComponentToHaveChildren(wrapper, FormField);
-    });
-
-    describe('if `props.actionLink` is passed', () => {
-      const getFormWithActionLink = () =>
-        getForm(stringChild, {
-          actionLink: { text: 'mayday', onClick: () => {} },
-        }).find(SemanticForm);
-
-      it('should render the right children', () => {
-        const wrapper = getFormWithActionLink();
-
-        expectComponentToHaveChildren(wrapper, FormField, Link);
+  describe('if `props.actionLink` is passed', () => {
+    it('should render the correct structure', () => {
+      const actual = getMountedForm(stringChild, {
+        actionLink: { text: 'mayday', onClick: () => {} },
       });
 
-      describe('the `actionLink`', () => {
-        const getActionLink = () => getFormWithActionLink().find(Link);
-
-        it('should have the right props', () => {
-          const wrapper = getActionLink();
-
-          expectComponentToHaveProps(wrapper, {
-            onClick: expect.any(Function),
-          });
-        });
-
-        it('should have the right children', () => {
-          const wrapper = getActionLink();
-
-          expectComponentToHaveChildren(wrapper, 'mayday');
-        });
-      });
+      expect(actual).toMatchSnapshot();
     });
+  });
 
-    describe('if `props.submitButtonText` is passed', () => {
-      it('should render a Button with the right props', () => {
-        const submitButtonText = 'someText';
-        const wrapper = getForm(stringChild, { submitButtonText }).find(Button);
+  describe('if `props.submitButtonText` is passed', () => {
+    it('should render the correct structure', () => {
+      const submitButtonText = 'someText';
+      const actual = getMountedForm(stringChild, { submitButtonText });
 
-        expectComponentToHaveProps(wrapper, {
-          isPositionedRight: true,
-        });
-      });
+      expect(actual).toMatchSnapshot();
     });
+  });
 
-    describe('Button', () => {
-      it('should have the right children', () => {
-        const submitButtonText = 'someText';
-        const wrapper = getForm(stringChild, { submitButtonText }).find(Button);
+  describe('if `props.submitButtonText` is an empty string', () => {
+    it('should render the correct structure', () => {
+      const submitButtonText = '';
+      const actual = getMountedForm(stringChild, { submitButtonText });
 
-        expectComponentToHaveChildren(wrapper, submitButtonText);
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.headingText` is passed', () => {
+    it('should render the correct structure', () => {
+      const actual = getMountedForm(stringChild, { headingText });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.successMessage` is passed', () => {
+    it('should render the correct structure', () => {
+      const actual = getMountedForm(<input />, {
+        successMessage: 'This is a successful message',
       });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.errorMessage` is passed', () => {
+    it('should render the correct structure', () => {
+      const actual = getMountedForm(<input />, {
+        errorMessage: 'This is an error message',
+      });
+
+      expect(actual).toMatchSnapshot();
     });
   });
 
@@ -113,7 +83,7 @@ describe('<Form />', () => {
     describe('if there is an `is required` type error', () => {
       it('should set the error to component state', () => {
         const name = '🐸';
-        const wrapper = getForm(<input />, {
+        const wrapper = getShallowForm(<input />, {
           validation: { [name]: { isRequired: true } },
         });
 
@@ -130,7 +100,7 @@ describe('<Form />', () => {
     describe('if there is no `is required` type error', () => {
       it('should set the error to component state', () => {
         const name = '🐸';
-        const wrapper = getForm(<input />);
+        const wrapper = getShallowForm(<input />);
 
         wrapper.instance().handleInputBlur(name);
 
@@ -145,7 +115,7 @@ describe('<Form />', () => {
     it('should set `error`, `isValid` and `value` to component state', () => {
       const name = '🐸';
       const value = '🌴';
-      const wrapper = getForm(<input />);
+      const wrapper = getShallowForm(<input />);
 
       wrapper.instance().handleInputChange(name, value);
 
@@ -160,7 +130,7 @@ describe('<Form />', () => {
       it('should set the error to component state', () => {
         const name = '🐸';
         const value = '';
-        const wrapper = getForm(<input />, {
+        const wrapper = getShallowForm(<input />, {
           validation: { [name]: { isRequired: true } },
         });
 
@@ -179,7 +149,7 @@ describe('<Form />', () => {
     describe('if any input is required and is empty', () => {
       it('should set the error to component state', () => {
         const name = '🐸';
-        const wrapper = getForm(<input />, {
+        const wrapper = getShallowForm(<input />, {
           validation: { [name]: { isRequired: true } },
         });
 
@@ -195,7 +165,7 @@ describe('<Form />', () => {
       it('should not call `props.onSubmit`', () => {
         const onSubmit = jest.fn();
         const name = '🐸';
-        const wrapper = getForm(<input />, {
+        const wrapper = getShallowForm(<input />, {
           onSubmit,
           validation: { [name]: { isRequired: true } },
         });
@@ -209,52 +179,12 @@ describe('<Form />', () => {
     describe('if no input is required and is empty', () => {
       it('should call `props.onSubmit` with the state', () => {
         const onSubmit = jest.fn();
-        const wrapper = getForm(<input />, { onSubmit });
+        const wrapper = getShallowForm(<input />, { onSubmit });
 
         wrapper.instance().handleSubmit();
 
         expect(onSubmit).toHaveBeenCalledWith(wrapper.state());
       });
-    });
-  });
-
-  describe('if `props.headingText` is passed', () => {
-    const getFormWithHeading = () => getForm(stringChild, { headingText });
-
-    it('should render it in `CardContent` > `Heading`', () => {
-      const wrapper = getFormWithHeading()
-        .children(Card.Content)
-        .at(0);
-
-      expectComponentToHaveChildren(wrapper, Heading);
-    });
-
-    describe('Heading', () => {
-      it('should have the right children', () => {
-        const wrapper = getFormWithHeading().find(Heading);
-
-        expectComponentToHaveChildren(wrapper, headingText);
-      });
-    });
-  });
-
-  describe('if `props.successMessage` is passed', () => {
-    it('should render the success message above the submit button', () => {
-      const wrapper = getForm(<input />, {
-        successMessage: 'This is a successful message',
-      });
-
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.errorMessage` is passed', () => {
-    it('should render the error message above the submit button', () => {
-      const wrapper = getForm(<input />, {
-        errorMessage: 'This is an error message',
-      });
-
-      expect(wrapper).toMatchSnapshot();
     });
   });
 

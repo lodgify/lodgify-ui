@@ -6,6 +6,7 @@ import { size, forEach } from 'lodash';
 import { Button } from 'elements/Button';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';
+import { SEND } from 'utils/default-strings';
 
 import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
 import { getIsRequiredErrorThenSetState } from './utils/getIsRequiredErrorThenSetState';
@@ -98,14 +99,12 @@ export class Component extends PureComponent {
             {actionLink && (
               <Link onClick={actionLink.onClick}>{actionLink.text}</Link>
             )}
-            {submitButtonText && (
-              <Button
-                isDisabled={getIsSubmitButtonDisabled(this.state)}
-                isPositionedRight
-              >
-                {submitButtonText}
-              </Button>
-            )}
+            <Button
+              isDisabled={getIsSubmitButtonDisabled(this.state)}
+              isPositionedRight
+            >
+              {submitButtonText || SEND}
+            </Button>
           </Form>
         </Card.Content>
       </Card>
@@ -121,7 +120,7 @@ Component.defaultProps = {
   headingText: null,
   onSubmit: Function.prototype,
   actionLink: null,
-  submitButtonText: null,
+  submitButtonText: SEND,
   successMessage: '',
   validation: {},
 };
