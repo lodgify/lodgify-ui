@@ -50,10 +50,12 @@ exports[`<CaptchaInput /> should render the right structure 1`] = `
               adaptOnChangeEvent={[Function]}
               error={false}
               icon={null}
+              initialValue=""
               inputOnChangeFunctionName="onChange"
               isFocused={false}
               isValid={false}
               label=""
+              mapValueToProps={[Function]}
               name=""
               onChange={[Function]}
             >
@@ -72,6 +74,7 @@ exports[`<CaptchaInput /> should render the right structure 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     type="text"
+                    value=""
                   />
                 </div>
               </Input>

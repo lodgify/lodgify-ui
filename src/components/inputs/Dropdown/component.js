@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
+import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { getHasErrorMessage } from 'utils/get-has-error-message';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { NO_RESULTS } from 'utils/default-strings';
+import { getControlledInputValue } from 'utils/get-controlled-input-value';
 
 import { ErrorMessage } from '../ErrorMessage';
 
@@ -25,16 +27,21 @@ export class Component extends PureComponent {
     value: undefined,
   };
 
-  componentDidUpdate(prevProps, { value: prevValue }) {
+  componentDidUpdate(previousProps, previousState) {
+    if (getIsInputValueReset(previousProps.value, this.props.value)) {
+      this.setState({ value: undefined });
+      return;
+    }
+
     const { value } = this.state;
     const { name, onChange } = this.props;
 
-    prevValue !== value && onChange(name, value);
+    previousState.value !== value && onChange(name, value);
   }
 
-  handleChange = ({ key }, data) => {
+  handleChange = ({ key }, { value }) => {
     this.setState({
-      value: this.props.currentValue || data.value,
+      value,
       isOpen: getIsOpenAfterChange(key),
     });
   };
@@ -47,9 +54,8 @@ export class Component extends PureComponent {
   };
 
   render() {
-    const { isOpen, value } = this.state;
+    const { isOpen } = this.state;
     const {
-      currentValue,
       error,
       icon,
       isDisabled,
@@ -60,6 +66,11 @@ export class Component extends PureComponent {
       options,
       willOpenAbove,
     } = this.props;
+    const value = getControlledInputValue(
+      this.props.value,
+      undefined,
+      this.state.value
+    );
     const hasImages = getHasImages(options);
     const adaptedOptions = adaptOptions(options, hasImages);
     const hasErrorMessage = getHasErrorMessage(error);
@@ -68,7 +79,7 @@ export class Component extends PureComponent {
       <div
         className={getClassNames('dropdown-container', {
           'has-images': hasImages,
-          dirty: isValueValid(currentValue) || isValueValid(value),
+          dirty: isValueValid(value),
           error: error,
           focus: isOpen,
           valid: isValid,
@@ -82,7 +93,6 @@ export class Component extends PureComponent {
             adaptedOptions,
             hasImages,
             !!label,
-            currentValue,
             value
           )}
           disabled={isDisabled || !adaptedOptions.length}
@@ -97,7 +107,7 @@ export class Component extends PureComponent {
           selectOnBlur={false}
           selection
           upward={willOpenAbove}
-          value={currentValue || value}
+          value={value}
         />
         {!hasImages && label && (
           <label onClick={() => this.handleOpen(true)}>{label}</label>
@@ -121,17 +131,11 @@ Component.defaultProps = {
   onBlur: Function.prototype,
   onChange: Function.prototype,
   options: [],
+  value: undefined,
   willOpenAbove: false,
-  currentValue: undefined,
 };
 
 Component.propTypes = {
-  /** The current value of the dropdown where it is consumed as a controlled component. */
-  currentValue: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.number,
-    PropTypes.string,
-  ]),
   /** Is the dropdown in an error state. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   /** Icon for the dropdown. Not displayed if options have images. */
@@ -178,6 +182,12 @@ Component.propTypes = {
       ]),
     })
   ),
+  /** The current value of the dropdown where it is consumed as a controlled component. */
+  value: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   /** Should the dropdown display upward */
   willOpenAbove: PropTypes.bool,
 };

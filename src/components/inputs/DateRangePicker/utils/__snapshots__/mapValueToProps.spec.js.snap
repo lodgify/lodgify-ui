@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 1`] = `
+Object {
+  "endDate": undefined,
+  "startDate": undefined,
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 2`] = `
+Object {
+  "endDate": undefined,
+  "startDate": undefined,
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 3`] = `
+Object {
+  "endDate": undefined,
+  "startDate": undefined,
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 4`] = `
+Object {
+  "endDate": undefined,
+  "startDate": undefined,
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 5`] = `
+Object {
+  "endDate": undefined,
+  "startDate": "some date",
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 6`] = `
+Object {
+  "endDate": "some other date",
+  "startDate": undefined,
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 7`] = `
+Object {
+  "endDate": "also a date",
+  "startDate": "not another date",
+}
+`;

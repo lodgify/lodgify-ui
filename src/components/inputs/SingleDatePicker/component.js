@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { isEqual, debounce } from 'lodash';
+import { debounce } from 'lodash';
 import { SingleDatePicker } from 'react-dates';
 
 import 'react-dates/initialize';
@@ -13,13 +13,14 @@ import { InputController } from 'inputs/InputController';
 import { getWindowHeight } from 'utils/get-window-height';
 import { isDisplayedAsModal } from 'utils/is-displayed-as-modal';
 
+import { mapValueToProps } from './utils/mapValueToProps';
+
 /**
  * A single date picker lets a user pick a date.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
-    date: null,
     isFocused: null,
     windowHeight: null,
   };
@@ -30,20 +31,15 @@ export class Component extends PureComponent {
   };
 
   componentDidUpdate = (prevProps, prevState) => {
-    const { date: prevDate, isFocused: prevIsFocused } = prevState;
-    const { date, isFocused } = this.state;
-    const { name, onBlur, onChange } = this.props;
+    const { isFocused: prevIsFocused } = prevState;
+    const { isFocused } = this.state;
+    const { onBlur } = this.props;
 
-    !isEqual(prevDate, date) && onChange(name, date);
     isBlurEvent(prevIsFocused, isFocused) && onBlur();
   };
 
   handleFocusChange = ({ focused }) => {
     this.setState({ isFocused: focused });
-  };
-
-  handleInputControllerChange = (name, date) => {
-    this.setState({ date });
   };
 
   handleHeightChange = () => {
@@ -63,20 +59,25 @@ export class Component extends PureComponent {
       getIsDayBlocked,
       isValid,
       name,
+      onChange,
+      value,
       willOpenAbove,
       placeholderText,
     } = this.props;
-    const { date, isFocused } = this.state;
+    const { isFocused } = this.state;
 
     return (
       <InputController
         adaptOnChangeEvent={returnFirstArgument}
         error={error}
+        initialValue={null}
         inputOnChangeFunctionName="onDateChange"
         isFocused={!!isFocused}
         isValid={isValid}
+        mapValueToProps={mapValueToProps}
         name={name}
-        onChange={this.handleInputControllerChange}
+        onChange={onChange}
+        value={value}
       >
         <SingleDatePicker
           /* eslint-disable react/jsx-sort-props */
@@ -86,7 +87,6 @@ export class Component extends PureComponent {
           openDirection={getUpOrDownFromBoolean(willOpenAbove)}
           placeholder={placeholderText}
           // Controlled props
-          date={date}
           focused={isFocused}
           // NOTE onDateChange is required by SingleDatePicker but is set in `InputController`
           onDateChange={Function.prototype}
@@ -117,6 +117,7 @@ Component.defaultProps = {
   onBlur: Function.prototype,
   onChange: Function.prototype,
   placeholderText: '',
+  value: undefined,
   willOpenAbove: false,
 };
 
@@ -148,6 +149,9 @@ Component.propTypes = {
   onChange: PropTypes.func,
   /** The visible placeholder text for the date input. */
   placeholderText: PropTypes.string,
+  /** The current value of the input where it is consumed as a controlled component. */
+  // eslint-disable-next-line react/forbid-prop-types
+  value: PropTypes.object,
   /** Will the calendar open above the input. */
   willOpenAbove: PropTypes.bool,
 };

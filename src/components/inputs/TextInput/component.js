@@ -16,6 +16,7 @@ export const Component = ({
   onBlur,
   onChange,
   type,
+  value,
 }) => (
   <InputController
     error={error}
@@ -23,6 +24,7 @@ export const Component = ({
     label={label}
     name={name}
     onChange={onChange}
+    value={value}
   >
     <input
       autoComplete={autoComplete}
@@ -44,6 +46,7 @@ Component.defaultProps = {
   onBlur: Function.prototype,
   onChange: Function.prototype,
   type: 'text',
+  value: undefined,
 };
 
 Component.propTypes = {
@@ -70,4 +73,6 @@ Component.propTypes = {
   onChange: PropTypes.func,
   /** The [HTML input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types). */
   type: PropTypes.string,
+  /** The current value of the input where it is consumed as a controlled component. */
+  value: PropTypes.string,
 };

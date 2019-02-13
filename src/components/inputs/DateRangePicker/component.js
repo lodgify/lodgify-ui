@@ -1,7 +1,7 @@
 import moment from 'moment';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { isEqual, uniqueId, debounce } from 'lodash';
+import { uniqueId, debounce } from 'lodash';
 import { DateRangePicker } from 'react-dates';
 
 import 'react-dates/initialize';
@@ -15,7 +15,7 @@ import { returnFirstArgument } from 'utils/return-first-argument';
 import { getWindowHeight } from 'utils/get-window-height';
 import { isDisplayedAsModal } from 'utils/is-displayed-as-modal';
 
-import { pickDatesFromState } from './utils/pickDatesFromState';
+import { mapValueToProps } from './utils/mapValueToProps';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
 import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 
@@ -25,10 +25,8 @@ import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 // eslint-disable-next-line jsdoc/require-jsdoc
 class Component extends PureComponent {
   state = {
-    endDate: null,
     focusedInput: null,
     windowHeight: null,
-    startDate: null,
   };
 
   componentDidMount = () => {
@@ -38,22 +36,15 @@ class Component extends PureComponent {
   };
 
   componentDidUpdate = (prevProps, prevState) => {
-    const prevDates = pickDatesFromState(prevState);
-    const dates = pickDatesFromState(this.state);
     const { focusedInput: prevFocusedInput } = prevState;
     const { focusedInput } = this.state;
-    const { name, onBlur, onChange } = this.props;
+    const { onBlur } = this.props;
 
-    !isEqual(prevDates, dates) && onChange(name, dates);
     isBlurEvent(prevFocusedInput, focusedInput) && onBlur();
   };
 
   handleFocusChange = focusedInput => {
     this.setState({ focusedInput });
-  };
-
-  handleInputControllerChange = (name, value) => {
-    this.setState(value);
   };
 
   handleHeightChange = () => {
@@ -74,21 +65,26 @@ class Component extends PureComponent {
       getIsDayBlocked,
       isValid,
       name,
+      onChange,
       startDatePlaceholderText,
+      value,
       willOpenAbove,
       windowInnerWidth,
     } = this.props;
-    const { endDate, focusedInput, startDate } = this.state;
+    const { focusedInput } = this.state;
 
     return (
       <InputController
         adaptOnChangeEvent={returnFirstArgument}
         error={error}
+        initialValue={null}
         inputOnChangeFunctionName="onDatesChange"
         isFocused={!!focusedInput}
         isValid={isValid}
+        mapValueToProps={mapValueToProps}
         name={name}
-        onChange={this.handleInputControllerChange}
+        onChange={onChange}
+        value={value}
       >
         <DateRangePicker
           /* eslint-disable react/jsx-sort-props */
@@ -99,12 +95,10 @@ class Component extends PureComponent {
           openDirection={getUpOrDownFromBoolean(willOpenAbove)}
           startDatePlaceholderText={startDatePlaceholderText}
           // Controlled props
-          endDate={endDate}
           focusedInput={focusedInput}
           // NOTE onDatesChange is required by DateRangePicker but is set in `InputController`
           onDatesChange={Function.prototype}
           onFocusChange={this.handleFocusChange}
-          startDate={startDate}
           // Static required props.
           endDateId={uniqueId('end_date_id_')}
           startDateId={uniqueId('start_date_id_')}
@@ -137,6 +131,7 @@ Component.defaultProps = {
   onBlur: Function.prototype,
   onChange: Function.prototype,
   startDatePlaceholderText: '',
+  value: undefined,
   willOpenAbove: false,
   windowInnerWidth: MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR,
 };
@@ -175,6 +170,11 @@ Component.propTypes = {
   onChange: PropTypes.func,
   /** The visible placeholder text for the start date input. */
   startDatePlaceholderText: PropTypes.string,
+  /** The current value of the input where it is consumed as a controlled component. */
+  value: PropTypes.shape({
+    endDate: PropTypes.object,
+    startDate: PropTypes.object,
+  }),
   /** Will the calendar open above the input. */
   willOpenAbove: PropTypes.bool,
   /**

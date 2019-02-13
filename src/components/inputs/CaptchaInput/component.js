@@ -9,6 +9,7 @@ import { TextInput } from 'inputs/TextInput';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  value,
   error,
   image,
   isValid,
@@ -30,6 +31,7 @@ export const Component = ({
         name={name}
         onBlur={onBlur}
         onChange={onChange}
+        value={value}
       />
     </Form.Field>
   </Form.Group>
@@ -44,6 +46,7 @@ Component.defaultProps = {
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
+  value: undefined,
 };
 
 Component.propTypes = {
@@ -68,4 +71,10 @@ Component.propTypes = {
    * @param {String} value
    */
   onChange: PropTypes.func,
+  /** The current value of the input where it is consumed as a controlled component. */
+  value: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+    PropTypes.number,
+  ]),
 };

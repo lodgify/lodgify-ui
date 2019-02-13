@@ -13,7 +13,14 @@ import { MAX_RATING, ON_RATE_HANDLER } from './constants';
  * A rating input that allows the user to input a value based on stars.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ error, iconSize, label, name, onChange }) => (
+export const Component = ({
+  error,
+  iconSize,
+  label,
+  name,
+  onChange,
+  value,
+}) => (
   <Fragment>
     {!!label && <Paragraph>{label}</Paragraph>}
     <InputController
@@ -23,8 +30,9 @@ export const Component = ({ error, iconSize, label, name, onChange }) => (
       isValid={false}
       name={name}
       onChange={onChange}
+      value={value}
     >
-      <Rating maxRating={MAX_RATING} size={iconSize} />
+      <Rating maxRating={MAX_RATING} rating={value} size={iconSize} />
     </InputController>
   </Fragment>
 );
@@ -37,6 +45,7 @@ Component.defaultProps = {
   label: '',
   name: '',
   onChange: Function.prototype,
+  value: undefined,
 };
 
 Component.propTypes = {
@@ -54,4 +63,6 @@ Component.propTypes = {
    * @param {String} value
    */
   onChange: PropTypes.func,
+  /** The current value of the input where it is consumed as a controlled component. */
+  value: PropTypes.number,
 };

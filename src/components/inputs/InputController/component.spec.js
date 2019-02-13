@@ -1,3 +1,6 @@
+jest.mock('utils/get-is-input-value-reset');
+jest.mock('utils/get-controlled-input-value');
+
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Input } from 'semantic-ui-react';
@@ -8,7 +11,9 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { Icon, ICON_NAMES } from 'elements/Icon';
+import { getControlledInputValue } from 'utils/get-controlled-input-value';
 
 import { Component as InputController } from './component';
 
@@ -54,8 +59,10 @@ describe('<InputController />', () => {
     });
 
     describe('the children', () => {
+      const getChildInput = props => getInputController(props).find('input');
+
       it('should get a function as `props.onChange` by default', () => {
-        const wrapper = getInputController().find('input');
+        const wrapper = getChildInput();
 
         expectComponentToHaveProps(wrapper, {
           onChange: expect.any(Function),
@@ -64,12 +71,41 @@ describe('<InputController />', () => {
 
       it('should get a function as `props[inputOnChangeFunctionName]` if specified', () => {
         const inputOnChangeFunctionName = 'whoopDeDooo';
-        const wrapper = getInputController({
+        const wrapper = getChildInput({
           inputOnChangeFunctionName,
-        }).find('input');
+        });
 
         expectComponentToHaveProps(wrapper, {
           [inputOnChangeFunctionName]: expect.any(Function),
+        });
+      });
+
+      it('should call `props.mapValueToProps` with the right arguments', () => {
+        const mapValueToProps = jest.fn();
+        const VALUE = '💤';
+
+        getControlledInputValue.mockReturnValueOnce(VALUE);
+        getChildInput({ mapValueToProps });
+
+        expect(mapValueToProps).toHaveBeenCalledWith(VALUE);
+      });
+
+      it('should spread whatever `props.mapValueToProps` returns as props', () => {
+        const mapValueToProps = jest.fn();
+        const valueOne = '1';
+        const valueTwo = '2';
+        const MAPPED_VALUES = {
+          valueOne,
+          valueTwo,
+        };
+
+        mapValueToProps.mockReturnValueOnce(MAPPED_VALUES);
+
+        const wrapper = getChildInput({ mapValueToProps });
+
+        expectComponentToHaveProps(wrapper, {
+          valueOne,
+          valueTwo,
         });
       });
     });
@@ -232,6 +268,66 @@ describe('<InputController />', () => {
     });
   });
 
+  describe('`componentDidUpdate`', () => {
+    it('should call `getIsInputValueReset` with the right arguments', () => {
+      const PROPS_VALUE = '🌴';
+      const PREVIOUS_PROPS_VALUE = '🌲';
+      const wrapper = getInputController({ value: PROPS_VALUE });
+
+      wrapper
+        .instance()
+        .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
+
+      expect(getIsInputValueReset).toHaveBeenCalledWith(
+        PREVIOUS_PROPS_VALUE,
+        PROPS_VALUE
+      );
+    });
+
+    describe('if `getIsInputValueReset` returns `true`', () => {
+      it('should call `setState` with the right arguments', () => {
+        const wrapper = getInputController();
+
+        getIsInputValueReset.mockReturnValueOnce(true);
+
+        wrapper.instance().setState = jest.fn();
+        wrapper.update();
+        wrapper.instance().componentDidUpdate({}, {});
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          value: '',
+        });
+      });
+
+      it('should not call `props.onChange`', () => {
+        const onChange = jest.fn();
+        const wrapper = getInputController({ onChange });
+
+        getIsInputValueReset.mockReturnValueOnce(true);
+
+        wrapper
+          .instance()
+          .componentDidUpdate({}, { value: 'some changed value' });
+
+        expect(onChange).not.toHaveBeenCalled();
+      });
+    });
+
+    describe('if `getIsInputValueReset` returns `false`', () => {
+      it('should not call `setState`', () => {
+        const wrapper = getInputController();
+
+        getIsInputValueReset.mockReturnValueOnce(false);
+
+        wrapper.instance().setState = jest.fn();
+        wrapper.update();
+        wrapper.instance().componentDidUpdate({}, {});
+
+        expect(wrapper.instance().setState).not.toHaveBeenCalled();
+      });
+    });
+  });
+
   describe('Interaction: onChange', () => {
     const value = '🐸';
 
@@ -283,6 +379,27 @@ describe('<InputController />', () => {
 
       htmlLabel.simulate('click');
       expect(htmlInput).toBe(document.activeElement);
+    });
+  });
+
+  describe('`render`', () => {
+    it('should call `getControlledInputValue` with the right arguments', () => {
+      const INITIAL_VALUE = '👶';
+      const PROPS_VALUE = '🎅';
+      const STATE_VALUE = '😎';
+      const wrapper = getInputController({
+        initialValue: INITIAL_VALUE,
+        value: PROPS_VALUE,
+      });
+
+      wrapper.setState({ value: STATE_VALUE });
+      wrapper.instance().render();
+
+      expect(getControlledInputValue).toHaveBeenCalledWith(
+        PROPS_VALUE,
+        INITIAL_VALUE,
+        STATE_VALUE
+      );
     });
   });
 
