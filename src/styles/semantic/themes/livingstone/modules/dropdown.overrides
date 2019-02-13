@@ -186,6 +186,7 @@
   }
 
   &.focus {
+    z-index: @dropdownContainerFocusZIndex;
 
     & > i.icon {
       color: @textColor;
