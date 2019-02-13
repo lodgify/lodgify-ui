@@ -6,6 +6,7 @@
        Element
 --------------------*/
 @dropdownContainerMinWidth: 90px;
+@dropdownContainerFocusZIndex: 14;
 
 @borderRadius: @3px;
 
