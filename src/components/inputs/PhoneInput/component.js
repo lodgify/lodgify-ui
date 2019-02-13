@@ -2,9 +2,13 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { isEqual } from 'lodash';
 
+import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
+import { getControlledInputValue } from 'utils/get-controlled-input-value';
+
 import { InputController } from '../InputController';
 
 import { parseValue } from './utils/parseValue';
+import { INITIAL_VALUE } from './constants';
 import { getIconOrFlag } from './utils/getIconOrFlag';
 
 /**
@@ -14,14 +18,19 @@ import { getIconOrFlag } from './utils/getIconOrFlag';
 export class Component extends PureComponent {
   state = {
     country: undefined,
-    value: '',
+    value: INITIAL_VALUE,
   };
 
-  componentDidUpdate(prevProps, { value: prevValue }) {
+  componentDidUpdate(previousProps, previousState) {
+    if (getIsInputValueReset(previousProps.value, this.props.value)) {
+      this.setState({ country: undefined, value: INITIAL_VALUE });
+      return;
+    }
+
     const { value } = this.state;
     const { name, onChange } = this.props;
 
-    !isEqual(prevValue, value) && onChange(name, value);
+    !isEqual(previousState.value, value) && onChange(name, value);
   }
 
   handleChange = (name, value) => {
@@ -32,7 +41,12 @@ export class Component extends PureComponent {
 
   render() {
     const { autoComplete, error, isValid, label, name, onBlur } = this.props;
-    const { country, value } = this.state;
+    const { country } = this.state;
+    const value = getControlledInputValue(
+      this.props.value,
+      INITIAL_VALUE,
+      this.state.value
+    );
 
     return (
       <InputController
@@ -42,13 +56,9 @@ export class Component extends PureComponent {
         label={label}
         name={name}
         onChange={this.handleChange}
+        value={value}
       >
-        <input
-          autoComplete={autoComplete}
-          onBlur={onBlur}
-          type="tel"
-          value={value}
-        />
+        <input autoComplete={autoComplete} onBlur={onBlur} type="tel" />
       </InputController>
     );
   }
@@ -64,6 +74,7 @@ Component.defaultProps = {
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
+  value: undefined,
 };
 
 Component.propTypes = {
@@ -88,4 +99,6 @@ Component.propTypes = {
    * @param {String} value
    */
   onChange: PropTypes.func,
+  /** The current value of the input where it is consumed as a controlled component. */
+  value: PropTypes.string,
 };

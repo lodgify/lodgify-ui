@@ -5,18 +5,11 @@ import { isValueValid } from './isValueValid';
  * @param   {Object[]} options
  * @param   {boolean} hasImages
  * @param   {boolean} hasLabel
- * @param   {string|boolean|number} currentValue
  * @param   {string|boolean|number} value
  * @return  {string|number|undefined|null}
  */
-export const getDefaultValue = (
-  options,
-  hasImages,
-  hasLabel,
-  currentValue,
-  value
-) => {
-  if (isValueValid(currentValue) || isValueValid(value)) {
+export const getDefaultValue = (options, hasImages, hasLabel, value) => {
+  if (isValueValid(value)) {
     return undefined;
   }
 

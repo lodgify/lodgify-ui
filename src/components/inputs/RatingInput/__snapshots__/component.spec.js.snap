@@ -12,10 +12,12 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
     adaptOnChangeEvent={[Function]}
     error={false}
     icon={null}
+    initialValue=""
     inputOnChangeFunctionName="onRate"
     isFocused={false}
     isValid={false}
     label={null}
+    mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
   >
@@ -33,11 +35,13 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
           maxRating={5}
           onRate={[Function]}
           size="small"
+          value=""
         >
           <div
             className="ui small rating"
             onMouseLeave={[Function]}
             role="radiogroup"
+            value=""
           >
             <RatingIcon
               active={false}
@@ -189,10 +193,12 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
     adaptOnChangeEvent={[Function]}
     error={false}
     icon={null}
+    initialValue=""
     inputOnChangeFunctionName="onRate"
     isFocused={false}
     isValid={false}
     label={null}
+    mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
   >
@@ -210,11 +216,13 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
           maxRating={5}
           onRate={[Function]}
           size="small"
+          value=""
         >
           <div
             className="ui small rating"
             onMouseLeave={[Function]}
             role="radiogroup"
+            value=""
           >
             <RatingIcon
               active={false}

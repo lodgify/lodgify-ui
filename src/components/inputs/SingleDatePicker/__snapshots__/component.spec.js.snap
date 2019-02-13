@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SingleDatePicker /> should render the right structure 1`] = `
+<SingleDatePicker
+  displayFormat="DD/MM/YYYY"
+  error={false}
+  getIsDayBlocked={[Function]}
+  isValid={false}
+  name=""
+  onBlur={[Function]}
+  onChange={[Function]}
+  placeholderText=""
+  willOpenAbove={false}
+>
+  <InputController
+    adaptOnChangeEvent={[Function]}
+    error={false}
+    icon={null}
+    initialValue={null}
+    inputOnChangeFunctionName="onDateChange"
+    isFocused={false}
+    isValid={false}
+    label={null}
+    mapValueToProps={[Function]}
+    name=""
+    onChange={[Function]}
+  >
+    <Input
+      className=""
+      iconPosition={null}
+      type="text"
+    >
+      <div
+        className="ui input"
+      >
+        <SingleDatePicker
+          customInputIcon={
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="calendar"
+              path={null}
+              size={null}
+            />
+          }
+          date={null}
+          daySize={52}
+          displayFormat="DD/MM/YYYY"
+          focused={null}
+          hideKeyboardShortcutsPanel={true}
+          isDayBlocked={[Function]}
+          key=".2"
+          navNext={
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="arrow right"
+              path={null}
+              size={null}
+            />
+          }
+          navPrev={
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="arrow left"
+              path={null}
+              size={null}
+            />
+          }
+          numberOfMonths={1}
+          onDateChange={[Function]}
+          onFocusChange={[Function]}
+          openDirection="down"
+          placeholder=""
+          withPortal={false}
+        >
+          <div />
+        </SingleDatePicker>
+      </div>
+    </Input>
+  </InputController>
+</SingleDatePicker>
+`;
