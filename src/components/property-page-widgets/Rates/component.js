@@ -53,11 +53,11 @@ export const Component = ({
         getCurrencyDropdownPlaceholderMarkup()
       ) : (
         <Dropdown
-          currentValue={currencyValue}
           isSearchable
           noResultsText={currencyNoResultsText}
           onChange={onChangeCurrency}
           options={currencyOptions}
+          value={currencyValue}
         />
       )}
       {isShowingPlaceholder
@@ -100,11 +100,11 @@ export const Component = ({
           ])}
           tableHeadings={[
             <Dropdown
-              currentValue={currencyValue}
               isSearchable
               noResultsText={currencyNoResultsText}
               onChange={onChangeCurrency}
               options={currencyOptions}
+              value={currencyValue}
             />,
             ...rateHeadings,
           ]}
