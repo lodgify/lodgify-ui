@@ -1,3 +1,10 @@
+# [1.139.0](https://github.com/lodgify/lodgify-ui/compare/v1.138.2...v1.139.0) (2019-02-14)
+
+
+### Features
+
+* **Header:** header max width increase to 1430px ([c7dc4a7](https://github.com/lodgify/lodgify-ui/commit/c7dc4a7))
+
 ## [1.138.2](https://github.com/lodgify/lodgify-ui/compare/v1.138.1...v1.138.2) (2019-02-14)
 
 
