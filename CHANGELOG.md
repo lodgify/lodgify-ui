@@ -1,3 +1,12 @@
+# [1.138.0](https://github.com/lodgify/lodgify-ui/compare/v1.137.0...v1.138.0) (2019-02-14)
+
+
+### Features
+
+* **Form:** reset input values when fresh success message passed ([de974d0](https://github.com/lodgify/lodgify-ui/commit/de974d0))
+* **inputs:** add controlled props.value ([6b2181a](https://github.com/lodgify/lodgify-ui/commit/6b2181a))
+* **inputs:** add controlled value helpers ([9258b2e](https://github.com/lodgify/lodgify-ui/commit/9258b2e))
+
 # [1.137.0](https://github.com/lodgify/lodgify-ui/compare/v1.136.1...v1.137.0) (2019-02-13)
 
 
