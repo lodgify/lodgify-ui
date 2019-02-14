@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 1`] = `
+Object {
+  "date": true,
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 2`] = `
+Object {
+  "date": "some string",
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 3`] = `
+Object {
+  "date": 1,
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 4`] = `
+Object {
+  "date": Object {},
+}
+`;
+
+exports[`mapValueToProps if \`value\` is truthy should return the right object 5`] = `
+Object {
+  "date": Object {
+    "date": "some date",
+  },
+}
+`;

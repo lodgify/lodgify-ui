@@ -531,10 +531,12 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                         adaptOnChangeEvent={[Function]}
                                                         error={false}
                                                         icon={null}
+                                                        initialValue={null}
                                                         inputOnChangeFunctionName="onDatesChange"
                                                         isFocused={false}
                                                         isValid={false}
                                                         label={null}
+                                                        mapValueToProps={[Function]}
                                                         name="dates"
                                                         onChange={[Function]}
                                                       >

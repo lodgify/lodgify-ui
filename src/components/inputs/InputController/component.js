@@ -4,6 +4,8 @@ import { isEqual, some } from 'lodash';
 import { Input } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
+import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
+import { getControlledInputValue } from 'utils/get-controlled-input-value';
 import { getHasErrorMessage } from 'utils/get-has-error-message';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 
@@ -17,14 +19,19 @@ import { getValueFromEvent } from './utils/getValueFromEvent';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
-    value: '',
+    value: this.props.initialValue,
   };
 
-  componentDidUpdate(prevProps, { value: prevValue }) {
+  componentDidUpdate(previousProps, previousState) {
+    if (getIsInputValueReset(previousProps.value, this.props.value)) {
+      this.setState({ value: this.props.initialValue });
+      return;
+    }
+
     const { value } = this.state;
     const { name, onChange } = this.props;
 
-    !isEqual(prevValue, value) && onChange(name, value);
+    !isEqual(previousState.value, value) && onChange(name, value);
   }
 
   handleChange = (...args) => {
@@ -39,17 +46,23 @@ export class Component extends PureComponent {
   handleClick = () => this.htmlInput.focus();
 
   render() {
-    const { value } = this.state;
-    const isDirty = some(value);
     const {
       children,
       error,
       icon,
+      initialValue,
       inputOnChangeFunctionName,
       isFocused,
       isValid,
       label,
+      mapValueToProps,
     } = this.props;
+    const value = getControlledInputValue(
+      this.props.value,
+      initialValue,
+      this.state.value
+    );
+    const isDirty = some(value);
     const hasErrorMessage = getHasErrorMessage(error);
 
     return (
@@ -67,6 +80,7 @@ export class Component extends PureComponent {
         {React.cloneElement(children, {
           [inputOnChangeFunctionName]: this.handleChange,
           ref: input => (this.htmlInput = input),
+          ...mapValueToProps(value),
         })}
         {label && <label onClick={this.handleClick}>{label}</label>}
         {icon}
@@ -80,9 +94,12 @@ Component.displayName = 'InputController';
 Component.defaultProps = {
   adaptOnChangeEvent: getValueFromEvent,
   icon: null,
+  initialValue: '',
   inputOnChangeFunctionName: 'onChange',
   isFocused: false,
   label: null,
+  mapValueToProps: value => ({ value }),
+  value: undefined,
 };
 
 Component.propTypes = {
@@ -94,6 +111,9 @@ Component.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   /** An icon to display in the input */
   icon: PropTypes.element,
+  /** The value of the input on first render when it is consumed as a controlled component. */
+  // eslint-disable-next-line react/forbid-prop-types
+  initialValue: PropTypes.any,
   /** The name of the change function on the input, if not `onChange`.  */
   inputOnChangeFunctionName: PropTypes.string,
   /** Is input in a focused state. */
@@ -102,6 +122,12 @@ Component.propTypes = {
   isValid: PropTypes.bool.isRequired,
   /** The visible label for the input. */
   label: PropTypes.string,
+  /**
+   * A function which maps the value persisted in the input controller state to the props passed to the input.
+   * @param  {any} value
+   * @return {Object}
+   */
+  mapValueToProps: PropTypes.func,
   /** The name for the input. */
   name: PropTypes.string.isRequired,
   /**
@@ -110,4 +136,7 @@ Component.propTypes = {
    * @param {String} value
    */
   onChange: PropTypes.func.isRequired,
+  /** The current value of the input where it is consumed as a controlled component. */
+  // eslint-disable-next-line react/forbid-prop-types
+  value: PropTypes.any,
 };

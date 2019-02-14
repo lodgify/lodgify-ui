@@ -1,16 +1,10 @@
 import { getDefaultValue } from './getDefaultValue';
 
 describe('getDefaultValue', () => {
-  describe('if `currentValue` or `value` are valid dropdown values', () => {
+  describe('if `value` is a valid dropdown value', () => {
     it('should return `undefined`', () => {
       const options = [{}, {}];
-      const actual = getDefaultValue(
-        options,
-        true,
-        true,
-        'im a valid value',
-        'so am i'
-      );
+      const actual = getDefaultValue(options, true, true, 'im a valid value');
 
       expect(actual).toBe(undefined);
     });

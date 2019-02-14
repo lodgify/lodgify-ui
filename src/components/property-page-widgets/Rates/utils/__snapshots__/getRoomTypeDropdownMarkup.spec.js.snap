@@ -65,13 +65,14 @@ Array [
         willOpenAbove={false}
       >
         <div
-          className="dropdown-container dirty"
+          className="dropdown-container"
         >
           <Dropdown
             additionLabel="Add "
             additionPosition="top"
             closeOnBlur={true}
             deburr={false}
+            defaultValue="eur"
             disabled={false}
             icon={
               <Icon
@@ -119,7 +120,6 @@ Array [
             selectOnNavigation={true}
             selection={true}
             upward={false}
-            value="eur"
             wrapSelection={true}
           >
             <div

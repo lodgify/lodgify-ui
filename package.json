@@ -1,6 +1,6 @@
 {
   "name": "@lodgify/ui",
-  "version": "1.137.0",
+  "version": "1.138.0",
   "description": "React components for building amazing websites with Lodgify",
   "main": "lib/index.js",
   "config": {
@@ -20,7 +20,7 @@
   },
   "size-limit": [
     {
-      "limit": "265 KB",
+      "limit": "270 KB",
       "path": "lib/index.js"
     }
   ],

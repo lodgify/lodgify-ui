@@ -76,7 +76,6 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
           label=""
           name="rating"
           onChange={[Function]}
-          ratingNumber="0"
         />
         <TextInput
           autoComplete="name"
@@ -788,7 +787,6 @@ exports[`getModalFormMarkup should render the right structure when props are pas
           label=""
           name="rating"
           onChange={[Function]}
-          ratingNumber="0"
         />
         <TextInput
           autoComplete="name"

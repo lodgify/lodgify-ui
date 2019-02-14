@@ -15,6 +15,7 @@ export const Component = ({
   name,
   onBlur,
   onChange,
+  value,
 }) => (
   <InputController
     error={error}
@@ -22,6 +23,7 @@ export const Component = ({
     label={label}
     name={name}
     onChange={onChange}
+    value={value}
   >
     <textarea autoComplete={autoComplete} onBlur={onBlur} rows="8" />
   </InputController>
@@ -37,6 +39,7 @@ Component.defaultProps = {
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
+  value: undefined,
 };
 
 Component.propTypes = {
@@ -61,4 +64,6 @@ Component.propTypes = {
    * @param {String} value
    */
   onChange: PropTypes.func,
+  /** The current value of the input where it is consumed as a controlled component. */
+  value: PropTypes.string,
 };

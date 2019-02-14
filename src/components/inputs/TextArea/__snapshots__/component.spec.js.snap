@@ -14,10 +14,12 @@ exports[`<TextArea /> should render the right structure 1`] = `
     adaptOnChangeEvent={[Function]}
     error={false}
     icon={null}
+    initialValue=""
     inputOnChangeFunctionName="onChange"
     isFocused={false}
     isValid={false}
     label=""
+    mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
   >
@@ -35,6 +37,7 @@ exports[`<TextArea /> should render the right structure 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           rows="8"
+          value=""
         />
       </div>
     </Input>
