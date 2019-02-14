@@ -1,3 +1,10 @@
+## [1.138.1](https://github.com/lodgify/lodgify-ui/compare/v1.138.0...v1.138.1) (2019-02-14)
+
+
+### Bug Fixes
+
+* **Container:** width is 100% in mobile ([8ec1f23](https://github.com/lodgify/lodgify-ui/commit/8ec1f23))
+
 # [1.138.0](https://github.com/lodgify/lodgify-ui/compare/v1.137.0...v1.138.0) (2019-02-14)
 
 
