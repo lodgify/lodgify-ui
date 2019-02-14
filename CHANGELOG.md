@@ -1,3 +1,10 @@
+## [1.138.2](https://github.com/lodgify/lodgify-ui/compare/v1.138.1...v1.138.2) (2019-02-14)
+
+
+### Bug Fixes
+
+* **Rates:** pass props.value not props.currentValue ([353351d](https://github.com/lodgify/lodgify-ui/commit/353351d))
+
 ## [1.138.1](https://github.com/lodgify/lodgify-ui/compare/v1.138.0...v1.138.1) (2019-02-14)
 
 
