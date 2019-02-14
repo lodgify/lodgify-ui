@@ -65,13 +65,11 @@ export const Component = ({
       <TextInput autoComplete="name" label={nameInputLabel} name="name" />
       <PhoneInput autoComplete="tel" label={phoneInputLabel} name="phone" />
     </InputGroup>
-    <TextInput autoComplete="email" label={emailInputLabel} name="email" />
     <InputGroup>
-      <DateRangePicker
-        endDatePlaceholderText={departureDateInputLabel}
-        localeCode={dateRangePickerLocaleCode}
-        name="dates"
-        startDatePlaceholderText={arrivalDateInputLabel}
+      <TextInput
+        autoComplete="email"
+        label={emailInputLabel}
+        name="email"
         width="eight"
       />
       <NumberInput
@@ -81,6 +79,12 @@ export const Component = ({
         width="four"
       />
     </InputGroup>
+    <DateRangePicker
+      endDatePlaceholderText={departureDateInputLabel}
+      localeCode={dateRangePickerLocaleCode}
+      name="dates"
+      startDatePlaceholderText={arrivalDateInputLabel}
+    />
     <TextArea label={commentsInputLabel} name="comments" />
     {(roomOptions || propertyOptions) && (
       <InputGroup>
