@@ -1,3 +1,10 @@
+# [1.140.0](https://github.com/lodgify/lodgify-ui/compare/v1.139.0...v1.140.0) (2019-02-14)
+
+
+### Features
+
+* **Contact:** DateRangePicker is a 12 wide input ([9f90800](https://github.com/lodgify/lodgify-ui/commit/9f90800))
+
 # [1.139.0](https://github.com/lodgify/lodgify-ui/compare/v1.138.2...v1.139.0) (2019-02-14)
 
 
