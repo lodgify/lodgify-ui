@@ -37,9 +37,9 @@ export const getRoomTypeDropdownMarkup = (
           {getStringWithColonSuffix(roomTypeInputLabel)}
         </Paragraph>
         <Dropdown
-          currentValue={roomTypesValue}
           onChange={onChange}
           options={options}
+          value={roomTypesValue}
         />
       </FlexContainer>
       <Divider size="small" />

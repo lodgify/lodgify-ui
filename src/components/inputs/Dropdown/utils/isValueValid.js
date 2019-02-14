@@ -1,6 +1,5 @@
 /**
- * @param  {boolean|number|string} currentValue
+ * @param  {boolean|number|string} value
  * @return {boolean}
  */
-export const isValueValid = currentValue =>
-  !!currentValue || currentValue === 0;
+export const isValueValid = value => !!value || value === 0;

@@ -35,7 +35,6 @@ Array [
         </p>
       </Paragraph>
       <Dropdown
-        currentValue="eur"
         error={false}
         icon={null}
         isDisabled={false}
@@ -62,17 +61,17 @@ Array [
             },
           ]
         }
+        value="eur"
         willOpenAbove={false}
       >
         <div
-          className="dropdown-container"
+          className="dropdown-container dirty"
         >
           <Dropdown
             additionLabel="Add "
             additionPosition="top"
             closeOnBlur={true}
             deburr={false}
-            defaultValue="eur"
             disabled={false}
             icon={
               <Icon
@@ -120,6 +119,7 @@ Array [
             selectOnNavigation={true}
             selection={true}
             upward={false}
+            value="eur"
             wrapSelection={true}
           >
             <div
