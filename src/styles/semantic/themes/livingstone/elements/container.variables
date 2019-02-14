@@ -32,3 +32,10 @@
        Grid
 --------------------*/
 @gridColumnGutter: 0 2rem;
+
+/*--------------
+   Variations
+---------------*/
+
+/* with menu */
+@containerWithMenuMaxWidth: 1430px;

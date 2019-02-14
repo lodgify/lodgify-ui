@@ -37,5 +37,5 @@
 /* with menu */
 
 .container.ui.menu.text {
-  max-width: @maxWidth !important;
+  max-width: @containerWithMenuMaxWidth !important;
 }
