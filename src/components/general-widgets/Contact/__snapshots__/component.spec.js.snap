@@ -283,66 +283,8 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                     </FormField>
                   </div>
                 </InputGroup>
-                <FormField
-                  key=".1"
-                >
-                  <div
-                    className="field"
-                  >
-                    <TextInput
-                      autoComplete="email"
-                      error={false}
-                      isValid={false}
-                      label="Email"
-                      name="email"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      type="text"
-                    >
-                      <InputController
-                        adaptOnChangeEvent={[Function]}
-                        error={false}
-                        icon={null}
-                        initialValue=""
-                        inputOnChangeFunctionName="onChange"
-                        isFocused={false}
-                        isValid={false}
-                        label="Email"
-                        mapValueToProps={[Function]}
-                        name="email"
-                        onChange={[Function]}
-                      >
-                        <Input
-                          className=""
-                          iconPosition={null}
-                          type="text"
-                        >
-                          <div
-                            className="ui input"
-                          >
-                            <input
-                              autoComplete="email"
-                              key=".2"
-                              name="email"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              type="text"
-                              value=""
-                            />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
-                          </div>
-                        </Input>
-                      </InputController>
-                    </TextInput>
-                  </div>
-                </FormField>
                 <InputGroup
-                  key=".2"
+                  key=".1"
                   widths="equal"
                 >
                   <div
@@ -355,153 +297,57 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                       <div
                         className="eight wide field"
                       >
-                        <WithResponsive(DateRangePicker)
-                          endDatePlaceholderText="Departure"
-                          name="dates"
+                        <TextInput
+                          autoComplete="email"
+                          error={false}
+                          isValid={false}
+                          label="Email"
+                          name="email"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          startDatePlaceholderText="Arrival"
+                          type="text"
                           width="eight"
                         >
-                          <Responsive
-                            as={[Function]}
-                            endDatePlaceholderText="Departure"
-                            isUserOnMobile={false}
-                            name="dates"
-                            onBlur={[Function]}
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue=""
+                            inputOnChangeFunctionName="onChange"
+                            isFocused={false}
+                            isValid={false}
+                            label="Email"
+                            mapValueToProps={[Function]}
+                            name="email"
                             onChange={[Function]}
-                            onUpdate={[Function]}
-                            startDatePlaceholderText="Arrival"
-                            width="eight"
-                            windowInnerWidth={1024}
                           >
-                            <DateRangePicker
-                              displayFormat="DD/MM/YYYY"
-                              endDatePlaceholderText="Departure"
-                              error={false}
-                              getIsDayBlocked={[Function]}
-                              isUserOnMobile={false}
-                              isValid={false}
-                              localeCode="en"
-                              name="dates"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              startDatePlaceholderText="Arrival"
-                              width="eight"
-                              willOpenAbove={false}
-                              windowInnerWidth={1024}
+                            <Input
+                              className=""
+                              iconPosition={null}
+                              type="text"
                             >
-                              <InputController
-                                adaptOnChangeEvent={[Function]}
-                                error={false}
-                                icon={null}
-                                initialValue={null}
-                                inputOnChangeFunctionName="onDatesChange"
-                                isFocused={false}
-                                isValid={false}
-                                label={null}
-                                mapValueToProps={[Function]}
-                                name="dates"
-                                onChange={[Function]}
+                              <div
+                                className="ui input"
                               >
-                                <Input
-                                  className=""
-                                  iconPosition={null}
+                                <input
+                                  autoComplete="email"
+                                  key=".2"
+                                  name="email"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
                                   type="text"
+                                  value=""
+                                />
+                                <label
+                                  key=".3"
+                                  onClick={[Function]}
                                 >
-                                  <div
-                                    className="ui input"
-                                  >
-                                    <DateRangePicker
-                                      customArrowIcon={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow right"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      customInputIcon={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="calendar"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      daySize={52}
-                                      displayFormat="DD/MM/YYYY"
-                                      endDate={null}
-                                      endDateId="end_date_id_15"
-                                      endDatePlaceholderText="Departure"
-                                      focusedInput={null}
-                                      hideKeyboardShortcutsPanel={true}
-                                      isDayBlocked={[Function]}
-                                      key=".2"
-                                      navNext={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow right"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      navPrev={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow left"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      onDatesChange={[Function]}
-                                      onFocusChange={[Function]}
-                                      openDirection="down"
-                                      startDate={null}
-                                      startDateId="start_date_id_16"
-                                      startDatePlaceholderText="Arrival"
-                                      withPortal={true}
-                                    >
-                                      <div />
-                                    </DateRangePicker>
-                                  </div>
-                                </Input>
-                              </InputController>
-                            </DateRangePicker>
-                          </Responsive>
-                        </WithResponsive(DateRangePicker)>
+                                  Email
+                                </label>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </TextInput>
                       </div>
                     </FormField>
                     <FormField
@@ -567,6 +413,158 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                     </FormField>
                   </div>
                 </InputGroup>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <WithResponsive(DateRangePicker)
+                      endDatePlaceholderText="Departure"
+                      name="dates"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      startDatePlaceholderText="Arrival"
+                    >
+                      <Responsive
+                        as={[Function]}
+                        endDatePlaceholderText="Departure"
+                        isUserOnMobile={false}
+                        name="dates"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onUpdate={[Function]}
+                        startDatePlaceholderText="Arrival"
+                        windowInnerWidth={1024}
+                      >
+                        <DateRangePicker
+                          displayFormat="DD/MM/YYYY"
+                          endDatePlaceholderText="Departure"
+                          error={false}
+                          getIsDayBlocked={[Function]}
+                          isUserOnMobile={false}
+                          isValid={false}
+                          localeCode="en"
+                          name="dates"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          startDatePlaceholderText="Arrival"
+                          willOpenAbove={false}
+                          windowInnerWidth={1024}
+                        >
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue={null}
+                            inputOnChangeFunctionName="onDatesChange"
+                            isFocused={false}
+                            isValid={false}
+                            label={null}
+                            mapValueToProps={[Function]}
+                            name="dates"
+                            onChange={[Function]}
+                          >
+                            <Input
+                              className=""
+                              iconPosition={null}
+                              type="text"
+                            >
+                              <div
+                                className="ui input"
+                              >
+                                <DateRangePicker
+                                  customArrowIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  customInputIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="calendar"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  daySize={52}
+                                  displayFormat="DD/MM/YYYY"
+                                  endDate={null}
+                                  endDateId="end_date_id_15"
+                                  endDatePlaceholderText="Departure"
+                                  focusedInput={null}
+                                  hideKeyboardShortcutsPanel={true}
+                                  isDayBlocked={[Function]}
+                                  key=".2"
+                                  navNext={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  navPrev={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow left"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  onDatesChange={[Function]}
+                                  onFocusChange={[Function]}
+                                  openDirection="down"
+                                  startDate={null}
+                                  startDateId="start_date_id_16"
+                                  startDatePlaceholderText="Arrival"
+                                  withPortal={true}
+                                >
+                                  <div />
+                                </DateRangePicker>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </DateRangePicker>
+                      </Responsive>
+                    </WithResponsive(DateRangePicker)>
+                  </div>
+                </FormField>
                 <FormField
                   key=".3"
                 >
@@ -1596,66 +1594,8 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                     </FormField>
                   </div>
                 </InputGroup>
-                <FormField
-                  key=".1"
-                >
-                  <div
-                    className="field"
-                  >
-                    <TextInput
-                      autoComplete="email"
-                      error={false}
-                      isValid={false}
-                      label="Email"
-                      name="email"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      type="text"
-                    >
-                      <InputController
-                        adaptOnChangeEvent={[Function]}
-                        error={false}
-                        icon={null}
-                        initialValue=""
-                        inputOnChangeFunctionName="onChange"
-                        isFocused={false}
-                        isValid={false}
-                        label="Email"
-                        mapValueToProps={[Function]}
-                        name="email"
-                        onChange={[Function]}
-                      >
-                        <Input
-                          className=""
-                          iconPosition={null}
-                          type="text"
-                        >
-                          <div
-                            className="ui input"
-                          >
-                            <input
-                              autoComplete="email"
-                              key=".2"
-                              name="email"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              type="text"
-                              value=""
-                            />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
-                          </div>
-                        </Input>
-                      </InputController>
-                    </TextInput>
-                  </div>
-                </FormField>
                 <InputGroup
-                  key=".2"
+                  key=".1"
                   widths="equal"
                 >
                   <div
@@ -1668,153 +1608,57 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                       <div
                         className="eight wide field"
                       >
-                        <WithResponsive(DateRangePicker)
-                          endDatePlaceholderText="Departure"
-                          name="dates"
+                        <TextInput
+                          autoComplete="email"
+                          error={false}
+                          isValid={false}
+                          label="Email"
+                          name="email"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          startDatePlaceholderText="Arrival"
+                          type="text"
                           width="eight"
                         >
-                          <Responsive
-                            as={[Function]}
-                            endDatePlaceholderText="Departure"
-                            isUserOnMobile={false}
-                            name="dates"
-                            onBlur={[Function]}
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue=""
+                            inputOnChangeFunctionName="onChange"
+                            isFocused={false}
+                            isValid={false}
+                            label="Email"
+                            mapValueToProps={[Function]}
+                            name="email"
                             onChange={[Function]}
-                            onUpdate={[Function]}
-                            startDatePlaceholderText="Arrival"
-                            width="eight"
-                            windowInnerWidth={1024}
                           >
-                            <DateRangePicker
-                              displayFormat="DD/MM/YYYY"
-                              endDatePlaceholderText="Departure"
-                              error={false}
-                              getIsDayBlocked={[Function]}
-                              isUserOnMobile={false}
-                              isValid={false}
-                              localeCode="en"
-                              name="dates"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              startDatePlaceholderText="Arrival"
-                              width="eight"
-                              willOpenAbove={false}
-                              windowInnerWidth={1024}
+                            <Input
+                              className=""
+                              iconPosition={null}
+                              type="text"
                             >
-                              <InputController
-                                adaptOnChangeEvent={[Function]}
-                                error={false}
-                                icon={null}
-                                initialValue={null}
-                                inputOnChangeFunctionName="onDatesChange"
-                                isFocused={false}
-                                isValid={false}
-                                label={null}
-                                mapValueToProps={[Function]}
-                                name="dates"
-                                onChange={[Function]}
+                              <div
+                                className="ui input"
                               >
-                                <Input
-                                  className=""
-                                  iconPosition={null}
+                                <input
+                                  autoComplete="email"
+                                  key=".2"
+                                  name="email"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
                                   type="text"
+                                  value=""
+                                />
+                                <label
+                                  key=".3"
+                                  onClick={[Function]}
                                 >
-                                  <div
-                                    className="ui input"
-                                  >
-                                    <DateRangePicker
-                                      customArrowIcon={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow right"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      customInputIcon={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="calendar"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      daySize={52}
-                                      displayFormat="DD/MM/YYYY"
-                                      endDate={null}
-                                      endDateId="end_date_id_7"
-                                      endDatePlaceholderText="Departure"
-                                      focusedInput={null}
-                                      hideKeyboardShortcutsPanel={true}
-                                      isDayBlocked={[Function]}
-                                      key=".2"
-                                      navNext={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow right"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      navPrev={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow left"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      onDatesChange={[Function]}
-                                      onFocusChange={[Function]}
-                                      openDirection="down"
-                                      startDate={null}
-                                      startDateId="start_date_id_8"
-                                      startDatePlaceholderText="Arrival"
-                                      withPortal={true}
-                                    >
-                                      <div />
-                                    </DateRangePicker>
-                                  </div>
-                                </Input>
-                              </InputController>
-                            </DateRangePicker>
-                          </Responsive>
-                        </WithResponsive(DateRangePicker)>
+                                  Email
+                                </label>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </TextInput>
                       </div>
                     </FormField>
                     <FormField
@@ -1880,6 +1724,158 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                     </FormField>
                   </div>
                 </InputGroup>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <WithResponsive(DateRangePicker)
+                      endDatePlaceholderText="Departure"
+                      name="dates"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      startDatePlaceholderText="Arrival"
+                    >
+                      <Responsive
+                        as={[Function]}
+                        endDatePlaceholderText="Departure"
+                        isUserOnMobile={false}
+                        name="dates"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onUpdate={[Function]}
+                        startDatePlaceholderText="Arrival"
+                        windowInnerWidth={1024}
+                      >
+                        <DateRangePicker
+                          displayFormat="DD/MM/YYYY"
+                          endDatePlaceholderText="Departure"
+                          error={false}
+                          getIsDayBlocked={[Function]}
+                          isUserOnMobile={false}
+                          isValid={false}
+                          localeCode="en"
+                          name="dates"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          startDatePlaceholderText="Arrival"
+                          willOpenAbove={false}
+                          windowInnerWidth={1024}
+                        >
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue={null}
+                            inputOnChangeFunctionName="onDatesChange"
+                            isFocused={false}
+                            isValid={false}
+                            label={null}
+                            mapValueToProps={[Function]}
+                            name="dates"
+                            onChange={[Function]}
+                          >
+                            <Input
+                              className=""
+                              iconPosition={null}
+                              type="text"
+                            >
+                              <div
+                                className="ui input"
+                              >
+                                <DateRangePicker
+                                  customArrowIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  customInputIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="calendar"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  daySize={52}
+                                  displayFormat="DD/MM/YYYY"
+                                  endDate={null}
+                                  endDateId="end_date_id_7"
+                                  endDatePlaceholderText="Departure"
+                                  focusedInput={null}
+                                  hideKeyboardShortcutsPanel={true}
+                                  isDayBlocked={[Function]}
+                                  key=".2"
+                                  navNext={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  navPrev={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow left"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  onDatesChange={[Function]}
+                                  onFocusChange={[Function]}
+                                  openDirection="down"
+                                  startDate={null}
+                                  startDateId="start_date_id_8"
+                                  startDatePlaceholderText="Arrival"
+                                  withPortal={true}
+                                >
+                                  <div />
+                                </DateRangePicker>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </DateRangePicker>
+                      </Responsive>
+                    </WithResponsive(DateRangePicker)>
+                  </div>
+                </FormField>
                 <FormField
                   key=".3"
                 >
@@ -2648,66 +2644,8 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                     </FormField>
                   </div>
                 </InputGroup>
-                <FormField
-                  key=".1"
-                >
-                  <div
-                    className="field"
-                  >
-                    <TextInput
-                      autoComplete="email"
-                      error={false}
-                      isValid={false}
-                      label="Email"
-                      name="email"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      type="text"
-                    >
-                      <InputController
-                        adaptOnChangeEvent={[Function]}
-                        error={false}
-                        icon={null}
-                        initialValue=""
-                        inputOnChangeFunctionName="onChange"
-                        isFocused={false}
-                        isValid={false}
-                        label="Email"
-                        mapValueToProps={[Function]}
-                        name="email"
-                        onChange={[Function]}
-                      >
-                        <Input
-                          className=""
-                          iconPosition={null}
-                          type="text"
-                        >
-                          <div
-                            className="ui input"
-                          >
-                            <input
-                              autoComplete="email"
-                              key=".2"
-                              name="email"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              type="text"
-                              value=""
-                            />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
-                          </div>
-                        </Input>
-                      </InputController>
-                    </TextInput>
-                  </div>
-                </FormField>
                 <InputGroup
-                  key=".2"
+                  key=".1"
                   widths="equal"
                 >
                   <div
@@ -2720,153 +2658,57 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                       <div
                         className="eight wide field"
                       >
-                        <WithResponsive(DateRangePicker)
-                          endDatePlaceholderText="Departure"
-                          name="dates"
+                        <TextInput
+                          autoComplete="email"
+                          error={false}
+                          isValid={false}
+                          label="Email"
+                          name="email"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          startDatePlaceholderText="Arrival"
+                          type="text"
                           width="eight"
                         >
-                          <Responsive
-                            as={[Function]}
-                            endDatePlaceholderText="Departure"
-                            isUserOnMobile={false}
-                            name="dates"
-                            onBlur={[Function]}
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue=""
+                            inputOnChangeFunctionName="onChange"
+                            isFocused={false}
+                            isValid={false}
+                            label="Email"
+                            mapValueToProps={[Function]}
+                            name="email"
                             onChange={[Function]}
-                            onUpdate={[Function]}
-                            startDatePlaceholderText="Arrival"
-                            width="eight"
-                            windowInnerWidth={1024}
                           >
-                            <DateRangePicker
-                              displayFormat="DD/MM/YYYY"
-                              endDatePlaceholderText="Departure"
-                              error={false}
-                              getIsDayBlocked={[Function]}
-                              isUserOnMobile={false}
-                              isValid={false}
-                              localeCode="en"
-                              name="dates"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              startDatePlaceholderText="Arrival"
-                              width="eight"
-                              willOpenAbove={false}
-                              windowInnerWidth={1024}
+                            <Input
+                              className=""
+                              iconPosition={null}
+                              type="text"
                             >
-                              <InputController
-                                adaptOnChangeEvent={[Function]}
-                                error={false}
-                                icon={null}
-                                initialValue={null}
-                                inputOnChangeFunctionName="onDatesChange"
-                                isFocused={false}
-                                isValid={false}
-                                label={null}
-                                mapValueToProps={[Function]}
-                                name="dates"
-                                onChange={[Function]}
+                              <div
+                                className="ui input"
                               >
-                                <Input
-                                  className=""
-                                  iconPosition={null}
+                                <input
+                                  autoComplete="email"
+                                  key=".2"
+                                  name="email"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
                                   type="text"
+                                  value=""
+                                />
+                                <label
+                                  key=".3"
+                                  onClick={[Function]}
                                 >
-                                  <div
-                                    className="ui input"
-                                  >
-                                    <DateRangePicker
-                                      customArrowIcon={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow right"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      customInputIcon={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="calendar"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      daySize={52}
-                                      displayFormat="DD/MM/YYYY"
-                                      endDate={null}
-                                      endDateId="end_date_id_11"
-                                      endDatePlaceholderText="Departure"
-                                      focusedInput={null}
-                                      hideKeyboardShortcutsPanel={true}
-                                      isDayBlocked={[Function]}
-                                      key=".2"
-                                      navNext={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow right"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      navPrev={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow left"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      onDatesChange={[Function]}
-                                      onFocusChange={[Function]}
-                                      openDirection="down"
-                                      startDate={null}
-                                      startDateId="start_date_id_12"
-                                      startDatePlaceholderText="Arrival"
-                                      withPortal={true}
-                                    >
-                                      <div />
-                                    </DateRangePicker>
-                                  </div>
-                                </Input>
-                              </InputController>
-                            </DateRangePicker>
-                          </Responsive>
-                        </WithResponsive(DateRangePicker)>
+                                  Email
+                                </label>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </TextInput>
                       </div>
                     </FormField>
                     <FormField
@@ -2932,6 +2774,158 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                     </FormField>
                   </div>
                 </InputGroup>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <WithResponsive(DateRangePicker)
+                      endDatePlaceholderText="Departure"
+                      name="dates"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      startDatePlaceholderText="Arrival"
+                    >
+                      <Responsive
+                        as={[Function]}
+                        endDatePlaceholderText="Departure"
+                        isUserOnMobile={false}
+                        name="dates"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onUpdate={[Function]}
+                        startDatePlaceholderText="Arrival"
+                        windowInnerWidth={1024}
+                      >
+                        <DateRangePicker
+                          displayFormat="DD/MM/YYYY"
+                          endDatePlaceholderText="Departure"
+                          error={false}
+                          getIsDayBlocked={[Function]}
+                          isUserOnMobile={false}
+                          isValid={false}
+                          localeCode="en"
+                          name="dates"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          startDatePlaceholderText="Arrival"
+                          willOpenAbove={false}
+                          windowInnerWidth={1024}
+                        >
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue={null}
+                            inputOnChangeFunctionName="onDatesChange"
+                            isFocused={false}
+                            isValid={false}
+                            label={null}
+                            mapValueToProps={[Function]}
+                            name="dates"
+                            onChange={[Function]}
+                          >
+                            <Input
+                              className=""
+                              iconPosition={null}
+                              type="text"
+                            >
+                              <div
+                                className="ui input"
+                              >
+                                <DateRangePicker
+                                  customArrowIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  customInputIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="calendar"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  daySize={52}
+                                  displayFormat="DD/MM/YYYY"
+                                  endDate={null}
+                                  endDateId="end_date_id_11"
+                                  endDatePlaceholderText="Departure"
+                                  focusedInput={null}
+                                  hideKeyboardShortcutsPanel={true}
+                                  isDayBlocked={[Function]}
+                                  key=".2"
+                                  navNext={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  navPrev={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow left"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  onDatesChange={[Function]}
+                                  onFocusChange={[Function]}
+                                  openDirection="down"
+                                  startDate={null}
+                                  startDateId="start_date_id_12"
+                                  startDatePlaceholderText="Arrival"
+                                  withPortal={true}
+                                >
+                                  <div />
+                                </DateRangePicker>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </DateRangePicker>
+                      </Responsive>
+                    </WithResponsive(DateRangePicker)>
+                  </div>
+                </FormField>
                 <FormField
                   key=".3"
                 >
@@ -3644,66 +3638,8 @@ exports[`<Contact /> should have the correct structure 1`] = `
                     </FormField>
                   </div>
                 </InputGroup>
-                <FormField
-                  key=".1"
-                >
-                  <div
-                    className="field"
-                  >
-                    <TextInput
-                      autoComplete="email"
-                      error={false}
-                      isValid={false}
-                      label="Email"
-                      name="email"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      type="text"
-                    >
-                      <InputController
-                        adaptOnChangeEvent={[Function]}
-                        error={false}
-                        icon={null}
-                        initialValue=""
-                        inputOnChangeFunctionName="onChange"
-                        isFocused={false}
-                        isValid={false}
-                        label="Email"
-                        mapValueToProps={[Function]}
-                        name="email"
-                        onChange={[Function]}
-                      >
-                        <Input
-                          className=""
-                          iconPosition={null}
-                          type="text"
-                        >
-                          <div
-                            className="ui input"
-                          >
-                            <input
-                              autoComplete="email"
-                              key=".2"
-                              name="email"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              type="text"
-                              value=""
-                            />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
-                          </div>
-                        </Input>
-                      </InputController>
-                    </TextInput>
-                  </div>
-                </FormField>
                 <InputGroup
-                  key=".2"
+                  key=".1"
                   widths="equal"
                 >
                   <div
@@ -3716,153 +3652,57 @@ exports[`<Contact /> should have the correct structure 1`] = `
                       <div
                         className="eight wide field"
                       >
-                        <WithResponsive(DateRangePicker)
-                          endDatePlaceholderText="Departure"
-                          name="dates"
+                        <TextInput
+                          autoComplete="email"
+                          error={false}
+                          isValid={false}
+                          label="Email"
+                          name="email"
                           onBlur={[Function]}
                           onChange={[Function]}
-                          startDatePlaceholderText="Arrival"
+                          type="text"
                           width="eight"
                         >
-                          <Responsive
-                            as={[Function]}
-                            endDatePlaceholderText="Departure"
-                            isUserOnMobile={false}
-                            name="dates"
-                            onBlur={[Function]}
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue=""
+                            inputOnChangeFunctionName="onChange"
+                            isFocused={false}
+                            isValid={false}
+                            label="Email"
+                            mapValueToProps={[Function]}
+                            name="email"
                             onChange={[Function]}
-                            onUpdate={[Function]}
-                            startDatePlaceholderText="Arrival"
-                            width="eight"
-                            windowInnerWidth={1024}
                           >
-                            <DateRangePicker
-                              displayFormat="DD/MM/YYYY"
-                              endDatePlaceholderText="Departure"
-                              error={false}
-                              getIsDayBlocked={[Function]}
-                              isUserOnMobile={false}
-                              isValid={false}
-                              localeCode="en"
-                              name="dates"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              startDatePlaceholderText="Arrival"
-                              width="eight"
-                              willOpenAbove={false}
-                              windowInnerWidth={1024}
+                            <Input
+                              className=""
+                              iconPosition={null}
+                              type="text"
                             >
-                              <InputController
-                                adaptOnChangeEvent={[Function]}
-                                error={false}
-                                icon={null}
-                                initialValue={null}
-                                inputOnChangeFunctionName="onDatesChange"
-                                isFocused={false}
-                                isValid={false}
-                                label={null}
-                                mapValueToProps={[Function]}
-                                name="dates"
-                                onChange={[Function]}
+                              <div
+                                className="ui input"
                               >
-                                <Input
-                                  className=""
-                                  iconPosition={null}
+                                <input
+                                  autoComplete="email"
+                                  key=".2"
+                                  name="email"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
                                   type="text"
+                                  value=""
+                                />
+                                <label
+                                  key=".3"
+                                  onClick={[Function]}
                                 >
-                                  <div
-                                    className="ui input"
-                                  >
-                                    <DateRangePicker
-                                      customArrowIcon={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow right"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      customInputIcon={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="calendar"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      daySize={52}
-                                      displayFormat="DD/MM/YYYY"
-                                      endDate={null}
-                                      endDateId="end_date_id_3"
-                                      endDatePlaceholderText="Departure"
-                                      focusedInput={null}
-                                      hideKeyboardShortcutsPanel={true}
-                                      isDayBlocked={[Function]}
-                                      key=".2"
-                                      navNext={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow right"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      navPrev={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="arrow left"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                      onDatesChange={[Function]}
-                                      onFocusChange={[Function]}
-                                      openDirection="down"
-                                      startDate={null}
-                                      startDateId="start_date_id_4"
-                                      startDatePlaceholderText="Arrival"
-                                      withPortal={true}
-                                    >
-                                      <div />
-                                    </DateRangePicker>
-                                  </div>
-                                </Input>
-                              </InputController>
-                            </DateRangePicker>
-                          </Responsive>
-                        </WithResponsive(DateRangePicker)>
+                                  Email
+                                </label>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </TextInput>
                       </div>
                     </FormField>
                     <FormField
@@ -3928,6 +3768,158 @@ exports[`<Contact /> should have the correct structure 1`] = `
                     </FormField>
                   </div>
                 </InputGroup>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <WithResponsive(DateRangePicker)
+                      endDatePlaceholderText="Departure"
+                      name="dates"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      startDatePlaceholderText="Arrival"
+                    >
+                      <Responsive
+                        as={[Function]}
+                        endDatePlaceholderText="Departure"
+                        isUserOnMobile={false}
+                        name="dates"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onUpdate={[Function]}
+                        startDatePlaceholderText="Arrival"
+                        windowInnerWidth={1024}
+                      >
+                        <DateRangePicker
+                          displayFormat="DD/MM/YYYY"
+                          endDatePlaceholderText="Departure"
+                          error={false}
+                          getIsDayBlocked={[Function]}
+                          isUserOnMobile={false}
+                          isValid={false}
+                          localeCode="en"
+                          name="dates"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          startDatePlaceholderText="Arrival"
+                          willOpenAbove={false}
+                          windowInnerWidth={1024}
+                        >
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue={null}
+                            inputOnChangeFunctionName="onDatesChange"
+                            isFocused={false}
+                            isValid={false}
+                            label={null}
+                            mapValueToProps={[Function]}
+                            name="dates"
+                            onChange={[Function]}
+                          >
+                            <Input
+                              className=""
+                              iconPosition={null}
+                              type="text"
+                            >
+                              <div
+                                className="ui input"
+                              >
+                                <DateRangePicker
+                                  customArrowIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  customInputIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="calendar"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  daySize={52}
+                                  displayFormat="DD/MM/YYYY"
+                                  endDate={null}
+                                  endDateId="end_date_id_3"
+                                  endDatePlaceholderText="Departure"
+                                  focusedInput={null}
+                                  hideKeyboardShortcutsPanel={true}
+                                  isDayBlocked={[Function]}
+                                  key=".2"
+                                  navNext={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  navPrev={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow left"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  onDatesChange={[Function]}
+                                  onFocusChange={[Function]}
+                                  openDirection="down"
+                                  startDate={null}
+                                  startDateId="start_date_id_4"
+                                  startDatePlaceholderText="Arrival"
+                                  withPortal={true}
+                                >
+                                  <div />
+                                </DateRangePicker>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </DateRangePicker>
+                      </Responsive>
+                    </WithResponsive(DateRangePicker)>
+                  </div>
+                </FormField>
                 <FormField
                   key=".3"
                 >
