@@ -106,22 +106,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
           locationOptions={null}
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
-          modalTrigger={
-            <Icon
-              color={null}
-              hasBorder={false}
-              isButton={false}
-              isCircular={false}
-              isColorInverted={false}
-              isDisabled={false}
-              isLabelLeft={false}
-              labelText={null}
-              labelWeight={null}
-              name="search"
-              path={null}
-              size={null}
-            />
-          }
           onChangeInput={[Function]}
           onCloseModal={[Function]}
           onSubmit={[Function]}
@@ -1074,7 +1058,10 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               ratingNumber={4.5}
             />
           }
-          modalTrigger={
+          onChangeInput={[Function]}
+          onCloseModal={[Function]}
+          onSubmit={[Function]}
+          searchButton={
             <Button
               hasShadow={false}
               icon={null}
@@ -1088,25 +1075,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               size={null}
             >
               Check our availability
-            </Button>
-          }
-          onChangeInput={[Function]}
-          onCloseModal={[Function]}
-          onSubmit={[Function]}
-          searchButton={
-            <Button
-              hasShadow={false}
-              icon="search"
-              isCompact={false}
-              isDisabled={false}
-              isLoading={false}
-              isPositionedRight={true}
-              isRounded={true}
-              isSecondary={false}
-              onClick={[Function]}
-              size={null}
-            >
-              Search
             </Button>
           }
           summaryElement={
@@ -1497,7 +1465,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                 >
                                                   <Button
                                                     hasShadow={false}
-                                                    icon="search"
+                                                    icon={null}
                                                     isCompact={false}
                                                     isDisabled={false}
                                                     isLoading={false}
@@ -1507,7 +1475,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     onClick={[Function]}
                                                     size={null}
                                                   >
-                                                    Search
+                                                    Check our availability
                                                   </Button>
                                                 </FormField>
                                               </React.Fragment>
