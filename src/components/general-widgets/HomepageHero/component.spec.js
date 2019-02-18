@@ -11,7 +11,7 @@ jest.mock('react-dates', () => {
 });
 
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as HomepageHero } from './component';
@@ -36,34 +36,7 @@ const props = {
   searchBarSearchButton: <button>search button</button>,
 };
 
-const getHomepageHero = () => shallow(<HomepageHero {...props} />);
-
 describe('HomepageHero', () => {
-  describe('`handleClickSearchBarSearchButton`', () => {
-    it('should set state with the right value', () => {
-      const wrapper = getHomepageHero();
-
-      wrapper.instance().handleClickSearchBarSearchButton();
-
-      const actual = wrapper.state('isSearchBarModalOpen');
-
-      expect(actual).toBe(true);
-    });
-  });
-
-  describe('`handleCloseModal`', () => {
-    it('should set state with the right value', () => {
-      const wrapper = getHomepageHero();
-
-      wrapper.setState({ isSearchBarModalOpen: true });
-      wrapper.instance().handleCloseModal();
-
-      const actual = wrapper.state('isSearchBarModalOpen');
-
-      expect(actual).toBe(undefined);
-    });
-  });
-
   it('should render the right structure', () => {
     const actual = mount(<HomepageHero {...props} />);
 

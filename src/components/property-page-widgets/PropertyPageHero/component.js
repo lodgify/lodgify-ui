@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { withResponsive } from 'utils/with-responsive';
 import { Hero } from 'collections/Hero';
 import { VIEW_MORE_PICTURES } from 'utils/default-strings';
-import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
 
 import { BOTTOM_OFFSET } from './constants';
 import { getGalleryMarkup } from './utils/getGalleryMarkup';
@@ -24,14 +23,7 @@ const Component = ({
   images,
   propertyName,
   ratingNumber,
-  searchBarGetIsDayBlocked,
-  searchBarGuestsOptions,
-  searchBarLocationOptions,
-  searchBarModalHeadingText,
-  searchBarSearchButton,
   secondaryButtonText,
-  searchBarOnChangeInput,
-  searchBarOnSubmit,
 }) => {
   const {
     imageUrl: backgroundImageUrl,
@@ -57,15 +49,8 @@ const Component = ({
       headerLogoText={headerLogoText}
       headerNavigationItems={headerNavigationItems}
       headerPrimaryCTA={headerPrimaryCTA}
-      headerSearchBarGuestsOptions={searchBarGuestsOptions}
-      headerSearchBarLocationOptions={searchBarLocationOptions}
-      headerSearchBarModalHeadingText={searchBarModalHeadingText}
-      headerSearchBarSearchButton={searchBarSearchButton}
       isFixedSearchBarDisplayed
       placeholderBackgroundImageUrl={placeholderImageUrl}
-      searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
-      searchBarOnChangeInput={searchBarOnChangeInput}
-      searchBarOnSubmit={searchBarOnSubmit}
     >
       {getGalleryMarkup(
         images,
@@ -87,12 +72,7 @@ Component.defaultProps = {
   headerPrimaryCTA: null,
   propertyName: null,
   ratingNumber: null,
-  searchBarGetIsDayBlocked: undefined,
-  searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
-  searchBarSearchButton: undefined,
   secondaryButtonText: VIEW_MORE_PICTURES,
-  searchBarOnChangeInput: undefined,
-  searchBarOnSubmit: undefined,
 };
 
 Component.propTypes = {
@@ -158,60 +138,6 @@ Component.propTypes = {
   propertyName: PropTypes.string,
   /** The numeral rating for the property, out of 5 */
   ratingNumber: PropTypes.number,
-  /**
-   * A function called for each day to be displayed in the DateRangePicker.
-   * Returning true blocks that day in the date range picker.
-   * @param   {Moment}  day - The day to test.
-   * @returns {boolean}     - Is the day blocked.
-   */
-  searchBarGetIsDayBlocked: PropTypes.func,
-  /** The options which the user can select in the guests fields of the search bar. */
-  searchBarGuestsOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ).isRequired,
-  /** The options which the user can select in the location field of the search bar. */
-  searchBarLocationOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The indent level of a location option. One of: 0, 1, 2, 3, 4, 5 */
-      indent: PropTypes.oneOf([0, 1, 2, 3, 4, 5]),
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ).isRequired,
-  /* The heading displayed in the search bar modal. */
-  searchBarModalHeadingText: PropTypes.string,
-  /** A function called when a change in an input occurs in the search bar.
-   *  @param {Object} values - The values of the inputs in the search bar.
-   *  @param {Object} values.dates
-   *  @param {String} values.guests
-   *  @param {String} values.location
-   */
-  // eslint-disable-next-line react/no-unused-prop-types
-  searchBarOnChangeInput: PropTypes.func,
-  /** The function to call when the search bar is submitted.
-   *  @param {Object} values - The values of the inputs in the search bar.
-   *  @param {Object} values.dates
-   *  @param {String} values.guests
-   *  @param {String} values.location
-   */
-  searchBarOnSubmit: PropTypes.func,
-  /** The search button the search bar displays. */
-  searchBarSearchButton: PropTypes.node,
   /** The text to display on the secondary button at the bottom of the hero. */
   secondaryButtonText: PropTypes.string,
 };

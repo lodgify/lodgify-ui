@@ -24,17 +24,8 @@ export const Component = ({
   headerLogoSrcSet,
   headerLogoText,
   headerNavigationItems,
-  headerOnCloseSearchBarModal,
   headerPrimaryCTA,
-  headerSearchBarGuestsOptions,
-  headerSearchBarLocationOptions,
-  headerSearchBarModalHeadingText,
-  headerSearchBarSearchButton,
-  isHeaderSearchBarModalOpen,
   placeholderBackgroundImageUrl,
-  searchBarGetIsDayBlocked,
-  searchBarOnChangeInput,
-  searchBarOnSubmit,
 }) => (
   <FullBleed
     bottomOffset={bottomOffset}
@@ -48,21 +39,12 @@ export const Component = ({
   >
     <Header
       activeNavigationItemIndex={activeNavigationItemIndex}
-      isSearchBarModalOpen={isHeaderSearchBarModalOpen}
       logoSizes={headerLogoSizes}
       logoSrc={headerLogoSrc}
       logoSrcSet={headerLogoSrcSet}
       logoText={headerLogoText}
       navigationItems={headerNavigationItems}
-      onCloseSearchBarModal={headerOnCloseSearchBarModal}
       primaryCTA={headerPrimaryCTA}
-      searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
-      searchBarGuestsOptions={headerSearchBarGuestsOptions}
-      searchBarLocationOptions={headerSearchBarLocationOptions}
-      searchBarModalHeadingText={headerSearchBarModalHeadingText}
-      searchBarOnChangeInput={searchBarOnChangeInput}
-      searchBarOnSubmit={searchBarOnSubmit}
-      searchBarSearchButton={headerSearchBarSearchButton}
     />
     {children}
   </FullBleed>
@@ -81,17 +63,8 @@ Component.defaultProps = {
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
-  headerOnCloseSearchBarModal: undefined,
   headerPrimaryCTA: null,
-  headerSearchBarGuestsOptions: [],
-  headerSearchBarLocationOptions: [],
-  headerSearchBarModalHeadingText: null,
-  headerSearchBarSearchButton: undefined,
-  isHeaderSearchBarModalOpen: undefined,
   placeholderBackgroundImageUrl: null,
-  searchBarGetIsDayBlocked: undefined,
-  searchBarOnChangeInput: undefined,
-  searchBarOnSubmit: undefined,
 };
 
 Component.propTypes = {
@@ -141,9 +114,6 @@ Component.propTypes = {
       text: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** A function called when a close event happens on the search bar modal in the header. Used when consuming `Hero` as a controlled component. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  headerOnCloseSearchBarModal: PropTypes.func,
   /** An optional primary call to action to display as a [`<Button />`](#button) in the header. */
   headerPrimaryCTA: PropTypes.shape({
     /** The on click handler for the call to action. */
@@ -151,61 +121,6 @@ Component.propTypes = {
     /** The  visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),
-  /** The options which the user can select in the guests field in the search bar. */
-  headerSearchBarGuestsOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ),
-  /** The options which the user can select in the location field in the search bar. */
-  headerSearchBarLocationOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ),
-  /** The heading displayed in the Search Bar modal. */
-  headerSearchBarModalHeadingText: PropTypes.string,
-  /** The Search Button the Search Bar modal displays. */
-  headerSearchBarSearchButton: PropTypes.node,
-  /** Is the search bar modal in the header open. Used when consuming `Hero` as a controlled component. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  isHeaderSearchBarModalOpen: PropTypes.bool,
   /** The background placeholder image url of the hero. */
   placeholderBackgroundImageUrl: PropTypes.string,
-  /**
-   * A function called for each day to be displayed in the DateRangePicker.
-   * Returning true blocks that day in the date range picker.
-   * @param   {Moment}  day - The day to test.
-   * @returns {boolean}     - Is the day blocked.
-   */
-  searchBarGetIsDayBlocked: PropTypes.func,
-  /** A function called when a change in an input occurs in the search bar.
-   *  @param {Object} values - The values of the inputs in the search bar.
-   *  @param {Object} values.dates
-   *  @param {String} values.guests
-   *  @param {String} values.location
-   */
-  // eslint-disable-next-line react/no-unused-prop-types
-  searchBarOnChangeInput: PropTypes.func,
-  /** The function to call when the search bar is submitted.
-   *  @param {Object} values - The values of the inputs in the search bar.
-   *  @param {Object} values.dates
-   *  @param {String} values.guests
-   *  @param {String} values.location
-   */
-  searchBarOnSubmit: PropTypes.func,
 };

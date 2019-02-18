@@ -18,7 +18,6 @@ export const Component = ({
   getIsDayBlocked,
   guestsOptions,
   isFixed,
-  modalTrigger,
   onChangeInput,
   onSubmit,
   searchButton,
@@ -62,9 +61,9 @@ export const Component = ({
             areOnlyNightPriceAndRatingDisplayed: false,
             ...summaryProps,
           })}
-          modalTrigger={modalTrigger}
           onChangeInput={onChangeInput}
           onSubmit={onSubmit}
+          searchButton={searchButton}
           summaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: true,
             ...summaryProps,
@@ -80,11 +79,6 @@ Component.displayName = 'PropertyPageSearchBar';
 Component.defaultProps = {
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: undefined,
-  modalTrigger: (
-    <Button isPositionedRight isRounded>
-      {CHECK_OUR_AVAILABILITY}
-    </Button>
-  ),
   isFixed: true,
   onChangeInput: undefined,
   onSubmit: undefined,
@@ -124,8 +118,6 @@ Component.propTypes = {
    * @ignore
    */
   isFixed: PropTypes.bool,
-  /** The element to be clicked to display the modal. */
-  modalTrigger: PropTypes.node,
   /** A function called when a change in an input occurs in the search bar.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates

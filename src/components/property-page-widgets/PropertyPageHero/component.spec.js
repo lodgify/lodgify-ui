@@ -27,14 +27,7 @@ const props = {
   headerNavigationItems: [{ text: 'Home', href: '/' }],
   headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
   images: [{ imageUrl, label: 'Entrance' }, { imageUrl, label: 'Kitchen' }],
-  searchBarGuestsOptions: [{ text: '1', value: '1' }],
-  searchBarLocationOptions: [{ text: '1', value: '1' }],
-  searchBarModalHeadingText: '😹',
-  searchBarSearchButton: 'hey',
   secondaryButtonText: '🐸',
-  searchBarGetIsDayBlocked: Function.prototype,
-  searchBarOnChangeInput: Function.prototype,
-  searchBarOnSubmit: Function.prototype,
 };
 
 const getPropertyPageHero = () => shallow(<PropertyPageHero {...props} />);
@@ -46,21 +39,19 @@ const getWrappedPropertyPageHero = extraProps => {
 };
 
 describe('PropertyPageHero', () => {
-  describe('by default', () => {
+  it('should render the right structure', () => {
+    const actual = getWrappedPropertyPageHero();
+
+    expect(actual).toMatchSnapshot();
+  });
+
+  describe('if there are fewer than two images', () => {
     it('should render the right structure', () => {
-      const actual = getWrappedPropertyPageHero();
+      const actual = getWrappedPropertyPageHero({
+        images: [{ imageUrl, label: 'Entrance' }],
+      });
 
       expect(actual).toMatchSnapshot();
-    });
-
-    describe('if there are fewer than two images', () => {
-      it('should render the right structure', () => {
-        const actual = getWrappedPropertyPageHero({
-          images: [{ imageUrl, label: 'Entrance' }],
-        });
-
-        expect(actual).toMatchSnapshot();
-      });
     });
   });
 
