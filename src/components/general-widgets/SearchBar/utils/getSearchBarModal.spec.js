@@ -16,9 +16,9 @@ import { getSearchBarModal } from './getSearchBarModal';
 const props = {
   isModalOpen: false,
   modalHeadingText: 'Hello world',
-  modalTrigger: <div />,
   modalSummaryElement: null,
   onCloseModal: Function.prototype,
+  searchButton: <div />,
 };
 const handleSubmit = () => {};
 const persistInputChange = () => {};
@@ -47,13 +47,13 @@ describe('getSearchBarModal', () => {
   describe('the `Modal`', () => {
     it('should have the right props', () => {
       const wrapper = getModalMarkup();
-      const { isModalOpen, onCloseModal, modalTrigger } = props;
+      const { isModalOpen, onCloseModal, searchButton } = props;
 
       expectComponentToHaveProps(wrapper, {
         isFullscreen: true,
         isOpen: isModalOpen,
         onClose: onCloseModal,
-        trigger: modalTrigger,
+        trigger: searchButton,
       });
     });
 

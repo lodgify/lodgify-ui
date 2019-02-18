@@ -18,9 +18,9 @@ export const getSearchBarModal = (props, handleSubmit, persistInputChange) => {
   const {
     isModalOpen,
     modalHeadingText,
-    modalTrigger,
     modalSummaryElement,
     onCloseModal,
+    searchButton,
   } = props;
   /* eslint-enable react/prop-types */
 
@@ -29,7 +29,7 @@ export const getSearchBarModal = (props, handleSubmit, persistInputChange) => {
       isFullscreen
       isOpen={isModalOpen}
       onClose={onCloseModal}
-      trigger={modalTrigger}
+      trigger={searchButton}
     >
       <SemanticModal.Content>
         {modalSummaryElement ? (

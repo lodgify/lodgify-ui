@@ -98,27 +98,6 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 </div>
 ```
 
-#### Search bar
-
-The header can display a clickable icon to reveal the search bar on mobile screens
-
-```jsx
-const { navigationItems } = require('./mock-data/navigationItems');
-const searchBarGuestsOptions = [{ text: '1', value: 1 }];
-const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
-
-<div style={{ backgroundColor: 'grey'}}>
-  <Header
-    logoText="Livingstone Cottage"
-    navigationItems={navigationItems}
-    searchBarGuestsOptions={searchBarGuestsOptions}
-    searchBarLocationOptions={searchBarLocationOptions}
-    searchBarHeadingText="Search for a date!"
-    searchBarSearchButton={<Button>Custom button</Button>}
-  />
-</div>
-```
-
 ### States
 
 #### with active navigation item
