@@ -45,9 +45,6 @@ exports[`<Header /> by default should render the right structure 1`] = `
     ]
   }
   primaryCTA={null}
-  searchBarGetIsDayBlocked={[Function]}
-  searchBarGuestsOptions={Array []}
-  searchBarLocationOptions={Array []}
 >
   <header
     className=""
@@ -757,9 +754,6 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
     ]
   }
   primaryCTA={null}
-  searchBarGetIsDayBlocked={[Function]}
-  searchBarGuestsOptions={Array []}
-  searchBarLocationOptions={Array []}
 >
   <header
     className="is-background-filled"
@@ -1469,9 +1463,6 @@ exports[`<Header /> if navigation items exceed the header max width should rende
     ]
   }
   primaryCTA={null}
-  searchBarGetIsDayBlocked={[Function]}
-  searchBarGuestsOptions={Array []}
-  searchBarLocationOptions={Array []}
 >
   <header
     className="is-background-filled"

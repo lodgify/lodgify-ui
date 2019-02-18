@@ -66,7 +66,7 @@ const displayAsFixed = false;
   summaryElement={
     <div>Property information</div>
   }
-/> 
+/>
 ```
 
 #### With summary element in modal and search bar fixed
@@ -80,7 +80,6 @@ const displayAsFixed = false;
   isFixed={displayAsFixed}
   isDisplayedAsModal
   guestsOptions={guestsOptions}
-  modalTrigger={<Button isPositionedRight isRounded isCompact>Availability</Button>}
   modalSummaryElement={
     <div>Property information for mobile modal</div>
   }
@@ -98,20 +97,6 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
 <SearchBar
   guestsOptions={guestsOptions}
   locationOptions={locationOptions}
-  isDisplayedAsModal
-/>
-```
-
-#### Custom modal trigger
-
-```jsx
-const { Button } = require('../../elements/Button');
-const { guestsOptions, locationOptions } = require('./mock-data/options');
-
-<SearchBar
-  guestsOptions={guestsOptions}
-  locationOptions={locationOptions}
-  modalTrigger={<Button>Show Search bar</Button>}
   isDisplayedAsModal
 />
 ```

@@ -5,28 +5,19 @@ import { size } from 'lodash';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
-import { SearchBar } from 'general-widgets/SearchBar';
 import { ShowOn } from 'layout/ShowOn';
 
-import { hasSearchBarOptions } from './hasSearchBarOptions';
 import { getLogoMarkup } from './getLogoMarkup';
 import { getLinkMarkup } from './getLinkMarkup';
 
 /**
  * @param  {Object}   props
  * @param  {number}   props.activeNavigationItemIndex
- * @param  {boolean}  props.isSearchBarModalOpen
+ * @param  {string}   props.logoSizes
  * @param  {string}   props.logoSrc
+ * @param  {string}   props.logoSrcSet
  * @param  {string}   props.logoText
  * @param  {Object[]} props.navigationItems
- * @param  {Function} props.onCloseSearchBarModal
- * @param  {Function} props.searchBarGetIsDayBlocked
- * @param  {Object[]} props.searchBarGuestsOptions
- * @param  {Object[]} props.searchBarLocationOptions
- * @param  {string}   props.searchBarModalHeadingText
- * @param  {Function} props.searchBarOnChangeInput
- * @param  {Function} props.searchBarOnSubmit
- * @param  {Object}   props.searchBarSearchButton
  * @param  {boolean}  isHiddenMenuShowingInAllDevices
  * @return {Object}
  */
@@ -34,21 +25,11 @@ export const getHiddenMenuMarkup = (
   {
     /* eslint-disable react/prop-types */
     activeNavigationItemIndex,
-    isSearchBarModalOpen,
     logoSizes,
     logoSrc,
     logoSrcSet,
     logoText,
     navigationItems,
-    onCloseSearchBarModal,
-    searchBarDateRangePickerLocaleCode,
-    searchBarGetIsDayBlocked,
-    searchBarGuestsOptions,
-    searchBarLocationOptions,
-    searchBarModalHeadingText,
-    searchBarOnChangeInput,
-    searchBarOnSubmit,
-    searchBarSearchButton,
     /* eslint-enable react/prop-types */
   },
   isHiddenMenuShowingInAllDevices
@@ -61,23 +42,6 @@ export const getHiddenMenuMarkup = (
     tablet={isHiddenMenuShowingInAllDevices}
     widescreen={isHiddenMenuShowingInAllDevices}
   >
-    {hasSearchBarOptions(searchBarGuestsOptions, searchBarLocationOptions) && (
-      <Menu.Item>
-        <SearchBar
-          dateRangePickerLocaleCode={searchBarDateRangePickerLocaleCode}
-          getIsDayBlocked={searchBarGetIsDayBlocked}
-          guestsOptions={searchBarGuestsOptions}
-          isDisplayedAsModal
-          isModalOpen={isSearchBarModalOpen}
-          locationOptions={searchBarLocationOptions}
-          modalHeadingText={searchBarModalHeadingText}
-          onChangeInput={searchBarOnChangeInput}
-          onCloseModal={onCloseSearchBarModal}
-          onSubmit={searchBarOnSubmit}
-          searchButton={searchBarSearchButton}
-        />
-      </Menu.Item>
-    )}
     <Menu.Item>
       <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
         {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}

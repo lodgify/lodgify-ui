@@ -9,7 +9,7 @@ import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
-import { Icon, ICON_NAMES } from 'elements/Icon';
+import { ICON_NAMES } from 'elements/Icon';
 import { Button } from 'elements/Button';
 
 import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
@@ -115,12 +115,11 @@ Component.defaultProps = {
   locationOptions: null,
   modalHeadingText: CHECK_OUR_AVAILABILITY,
   modalSummaryElement: null,
-  modalTrigger: <Icon name={ICON_NAMES.SEARCH} />,
   onChangeInput: Function.prototype,
   onCloseModal: Function.prototype,
   onSubmit: Function.prototype,
   searchButton: (
-    <Button icon={ICON_NAMES.SEARCH} isPositionedRight isRounded>
+    <Button icon={ICON_NAMES.SEARCH} isRounded>
       {SEARCH}
     </Button>
   ),
@@ -191,9 +190,6 @@ Component.propTypes = {
   /** The summary element to display in the mobile modal  */
   // eslint-disable-next-line react/no-unused-prop-types
   modalSummaryElement: PropTypes.node,
-  /** The element to be clicked to display the modal. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  modalTrigger: PropTypes.node,
   /** A function called when a change in an input occurs.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates

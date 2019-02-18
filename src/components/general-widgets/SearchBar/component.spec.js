@@ -80,7 +80,7 @@ describe('<SearchBar />', () => {
 
   describe('if `props.searchButton` is passed', () => {
     it('should render the right children', () => {
-      const actual = getSearchBar({ searchButton: 'Yo!' });
+      const actual = getSearchBar({ searchButton: <div /> });
 
       expect(actual).toMatchSnapshot();
     });

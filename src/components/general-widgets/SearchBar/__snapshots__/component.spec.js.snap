@@ -50,22 +50,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
   }
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
-  modalTrigger={
-    <Icon
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={false}
-      isLabelLeft={false}
-      labelText={null}
-      labelWeight={null}
-      name="search"
-      path={null}
-      size={null}
-    />
-  }
   onChangeInput={[Function]}
   onCloseModal={[Function]}
   onSubmit={[Function]}
@@ -76,7 +60,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
       isCompact={false}
       isDisabled={false}
       isLoading={false}
-      isPositionedRight={true}
+      isPositionedRight={false}
       isRounded={true}
       isSecondary={false}
       onClick={[Function]}
@@ -921,7 +905,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   isCompact={false}
                   isDisabled={false}
                   isLoading={false}
-                  isPositionedRight={true}
+                  isPositionedRight={false}
                   isRounded={true}
                   isSecondary={false}
                   onClick={[Function]}
@@ -933,14 +917,14 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     className=""
                     compact={false}
                     disabled={false}
-                    floated="right"
+                    floated="left"
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
                     size={null}
                   >
                     <button
-                      className="ui circular right floated button"
+                      className="ui circular left floated button"
                       onClick={[Function]}
                       role="button"
                     >
@@ -1037,22 +1021,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
   }
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
-  modalTrigger={
-    <Icon
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={false}
-      isLabelLeft={false}
-      labelText={null}
-      labelWeight={null}
-      name="search"
-      path={null}
-      size={null}
-    />
-  }
   onChangeInput={[Function]}
   onCloseModal={[Function]}
   onSubmit={[Function]}
@@ -1063,7 +1031,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
       isCompact={false}
       isDisabled={false}
       isLoading={false}
-      isPositionedRight={true}
+      isPositionedRight={false}
       isRounded={true}
       isSecondary={false}
       onClick={[Function]}
@@ -1959,7 +1927,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                           isCompact={false}
                                           isDisabled={false}
                                           isLoading={false}
-                                          isPositionedRight={true}
+                                          isPositionedRight={false}
                                           isRounded={true}
                                           isSecondary={false}
                                           onClick={[Function]}
@@ -1971,14 +1939,14 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                             className=""
                                             compact={false}
                                             disabled={false}
-                                            floated="right"
+                                            floated="left"
                                             loading={false}
                                             onClick={[Function]}
                                             secondary={false}
                                             size={null}
                                           >
                                             <button
-                                              className="ui circular right floated button"
+                                              className="ui circular left floated button"
                                               onClick={[Function]}
                                               role="button"
                                             >
@@ -2085,22 +2053,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
   }
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
-  modalTrigger={
-    <Icon
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={false}
-      isLabelLeft={false}
-      labelText={null}
-      labelWeight={null}
-      name="search"
-      path={null}
-      size={null}
-    />
-  }
   onChangeInput={[Function]}
   onCloseModal={[Function]}
   onSubmit={[Function]}
@@ -2111,7 +2063,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
       isCompact={false}
       isDisabled={false}
       isLoading={false}
-      isPositionedRight={true}
+      isPositionedRight={false}
       isRounded={true}
       isSecondary={false}
       onClick={[Function]}
@@ -3001,7 +2953,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   isCompact={false}
                   isDisabled={false}
                   isLoading={false}
-                  isPositionedRight={true}
+                  isPositionedRight={false}
                   isRounded={true}
                   isSecondary={false}
                   onClick={[Function]}
@@ -3013,14 +2965,14 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     className=""
                     compact={false}
                     disabled={false}
-                    floated="right"
+                    floated="left"
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
                     size={null}
                   >
                     <button
-                      className="ui circular right floated button"
+                      className="ui circular left floated button"
                       onClick={[Function]}
                       role="button"
                     >
@@ -3096,22 +3048,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
   locationOptions={null}
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
-  modalTrigger={
-    <Icon
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={false}
-      isLabelLeft={false}
-      labelText={null}
-      labelWeight={null}
-      name="search"
-      path={null}
-      size={null}
-    />
-  }
   onChangeInput={[Function]}
   onCloseModal={[Function]}
   onSubmit={[Function]}
@@ -3122,7 +3058,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
       isCompact={false}
       isDisabled={false}
       isLoading={false}
-      isPositionedRight={true}
+      isPositionedRight={false}
       isRounded={true}
       isSecondary={false}
       onClick={[Function]}
@@ -3642,7 +3578,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   isCompact={false}
                   isDisabled={false}
                   isLoading={false}
-                  isPositionedRight={true}
+                  isPositionedRight={false}
                   isRounded={true}
                   isSecondary={false}
                   onClick={[Function]}
@@ -3654,14 +3590,14 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     className=""
                     compact={false}
                     disabled={false}
-                    floated="right"
+                    floated="left"
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
                     size={null}
                   >
                     <button
-                      className="ui circular right floated button"
+                      className="ui circular left floated button"
                       onClick={[Function]}
                       role="button"
                     >
@@ -3756,26 +3692,10 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
   }
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
-  modalTrigger={
-    <Icon
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={false}
-      isLabelLeft={false}
-      labelText={null}
-      labelWeight={null}
-      name="search"
-      path={null}
-      size={null}
-    />
-  }
   onChangeInput={[Function]}
   onCloseModal={[Function]}
   onSubmit={[Function]}
-  searchButton="Yo!"
+  searchButton={<div />}
   summaryElement={null}
   willDropdownsOpenAbove={false}
 >
@@ -4606,7 +4526,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
               <div
                 className="four wide field"
               >
-                Yo!
+                <div />
               </div>
             </FormField>
           </div>

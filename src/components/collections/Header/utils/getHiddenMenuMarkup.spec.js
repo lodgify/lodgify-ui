@@ -9,13 +9,6 @@ const logoSizes = 'someLogoSizes';
 const logoSrc = 'someLogoSrc';
 const logoSrcSet = 'someLogoSrcSet';
 const logoText = 'someLogoText';
-const searchBarGuestsOptions = [{ text: '1', value: 1 }];
-const searchBarLocationOptions = [{ text: 'Catania', value: 'catania' }];
-const searchBarGetIsDayBlocked = Function.prototype;
-const searchBarOnSubmit = Function.prototype;
-const searchBarModalHeadingText = 'someHeadingText';
-const searchBarOnChangeInput = Function.prototype;
-const searchBarSearchButton = 'button boy';
 
 const getMarkupAsRenderedComponent = extraProps =>
   mount(
@@ -23,16 +16,11 @@ const getMarkupAsRenderedComponent = extraProps =>
       {getHiddenMenuMarkup({
         dateRangePickerLocaleCode: 'ko',
         activeNavigationItemIndex: 0,
-        searchBarGetIsDayBlocked,
         logoSizes,
         logoSrc,
         logoSrcSet,
         logoText,
         navigationItems,
-        searchBarModalHeadingText,
-        searchBarSearchButton,
-        searchBarOnChangeInput,
-        searchBarOnSubmit,
         ...extraProps,
       })}
     </div>
@@ -41,25 +29,9 @@ const getMarkupAsRenderedComponent = extraProps =>
     .first();
 
 describe('getHiddenMenuMarkup', () => {
-  describe('by default', () => {
-    it('should render the right structure', () => {
-      const actual = getMarkupAsRenderedComponent();
+  it('should render the right structure', () => {
+    const actual = getMarkupAsRenderedComponent();
 
-      expect(actual).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.searchBarGuestsOptions` and `props.searchBarLocationOptions` are defined and populated', () => {
-    const getSearchBarMenuItem = () =>
-      getMarkupAsRenderedComponent({
-        searchBarGuestsOptions,
-        searchBarLocationOptions,
-      });
-
-    it('should render the right structure', () => {
-      const actual = getSearchBarMenuItem();
-
-      expect(actual).toMatchSnapshot();
-    });
+    expect(actual).toMatchSnapshot();
   });
 });
