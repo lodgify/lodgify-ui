@@ -74,9 +74,11 @@ export class Component extends PureComponent {
       >
         <HorizontalGutters as={Menu} borderless text>
           {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
-          {isMenuHidden
-            ? getHiddenMenuMarkup(this.props, true)
-            : getStandardMenuMarkup(this.props)}
+          <Menu.Menu position="right">
+            {isMenuHidden
+              ? getHiddenMenuMarkup(this.props)
+              : getStandardMenuMarkup(this.props)}
+          </Menu.Menu>
         </HorizontalGutters>
       </header>
     );

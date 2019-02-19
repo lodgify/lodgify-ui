@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Menu } from 'semantic-ui-react';
 import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Button } from 'elements/Button';
-import { ShowOn } from 'layout/ShowOn';
 import { Submenu } from 'elements/Submenu';
 
 import { getSubmenuPointing } from './getSubmenuPointing';
@@ -24,13 +23,7 @@ export const getStandardMenuMarkup = ({
   primaryCTA,
   /* eslint-enable react/prop-types */
 }) => (
-  <ShowOn
-    computer
-    parent={Menu.Menu}
-    parentProps={{ position: 'right' }}
-    tablet
-    widescreen
-  >
+  <Fragment>
     {navigationItems.map(({ subItems, text, href }, index) =>
       size(subItems) > 0 ? (
         <Submenu
@@ -59,5 +52,5 @@ export const getStandardMenuMarkup = ({
         </Button>
       </Menu.Item>
     )}
-  </ShowOn>
+  </Fragment>
 );
