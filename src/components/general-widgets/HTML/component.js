@@ -17,7 +17,9 @@ export class Component extends PureComponent {
       // `DOMPurify.sanitize` is in `componentDidMount` so that it
       // is not called during server side rendering.
       // Reason: DOMPurify depends on browser features.
-      cleanHTMLString: DOMPurify.sanitize(this.props.htmlString),
+      cleanHTMLString: DOMPurify.sanitize(this.props.htmlString, {
+        ADD_ATTR: ['target'],
+      }),
     });
   };
 
