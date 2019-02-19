@@ -9,6 +9,8 @@
 /* Menu */
 @background: transparent;
 
+@headerMenuOpacityTransition: opacity 0.5s ease-in;
+
 @footerMenuVerticalPadding: @30px;
 @footerMenuHorizontalPadding: 0;
 
