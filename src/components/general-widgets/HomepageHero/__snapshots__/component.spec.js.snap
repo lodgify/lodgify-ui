@@ -215,280 +215,71 @@ exports[`HomepageHero should render the right structure 1`] = `
                           </Image>
                         </a>
                       </MenuItem>
-                      <ShowOn
-                        computer={false}
-                        mobile={true}
-                        parent={[Function]}
-                        parentProps={
-                          Object {
-                            "position": "right",
-                          }
-                        }
-                        tablet={false}
-                        widescreen={false}
+                      <MenuMenu
+                        position="right"
                       >
-                        <MenuMenu
-                          className="show-on-mobile"
-                          position="right"
+                        <div
+                          className="right menu"
                         >
-                          <div
-                            className="right menu show-on-mobile"
+                          <MenuItem
+                            active={false}
+                            href="/"
+                            key="Home0"
+                            link={true}
                           >
-                            <MenuItem>
-                              <div
-                                className="item"
-                                onClick={[Function]}
-                              >
-                                <Modal
-                                  hasCloseIcon={true}
-                                  hasRoundedCorners={false}
-                                  isFullscreen={true}
-                                  onClose={[Function]}
-                                  size="tiny"
-                                  trigger={
-                                    <Icon
-                                      color={null}
-                                      hasBorder={false}
-                                      isButton={false}
-                                      isCircular={false}
-                                      isColorInverted={false}
-                                      isDisabled={false}
-                                      isLabelLeft={false}
-                                      labelText={null}
-                                      labelWeight={null}
-                                      name="bars"
-                                      path={null}
-                                      size={null}
-                                    />
-                                  }
-                                >
-                                  <Modal
-                                    className=""
-                                    closeIcon={
-                                      <Icon
-                                        color={null}
-                                        hasBorder={false}
-                                        isButton={false}
-                                        isCircular={false}
-                                        isColorInverted={false}
-                                        isDisabled={false}
-                                        isLabelLeft={false}
-                                        labelText={null}
-                                        labelWeight={null}
-                                        name="close"
-                                        path={null}
-                                        size={null}
-                                      />
-                                    }
-                                    closeOnDimmerClick={true}
-                                    closeOnDocumentClick={false}
-                                    content={
-                                      Array [
-                                        <MenuItem
-                                          href="/"
-                                          link={true}
-                                        >
-                                          <Image
-                                            alt="text"
-                                            as="img"
-                                            sizes="a load of logo sizes"
-                                            src="src"
-                                            srcSet="a load of logo src sets"
-                                            ui={true}
-                                          />
-                                        </MenuItem>,
-                                        <Menu
-                                          text={true}
-                                          vertical={true}
-                                        >
-                                          <MenuItem
-                                            active={false}
-                                            href="/"
-                                            link={true}
-                                          >
-                                            Home
-                                          </MenuItem>
-                                        </Menu>,
-                                      ]
-                                    }
-                                    dimmer="inverted"
-                                    eventPool="Modal"
-                                    onClose={[Function]}
-                                    size="fullscreen"
-                                    trigger={
-                                      <Icon
-                                        color={null}
-                                        hasBorder={false}
-                                        isButton={false}
-                                        isCircular={false}
-                                        isColorInverted={false}
-                                        isDisabled={false}
-                                        isLabelLeft={false}
-                                        labelText={null}
-                                        labelWeight={null}
-                                        name="bars"
-                                        path={null}
-                                        size={null}
-                                      />
-                                    }
-                                  >
-                                    <Portal
-                                      className="ui inverted page modals dimmer transition visible active"
-                                      closeOnDocumentClick={false}
-                                      closeOnEscape={true}
-                                      closeOnRootNodeClick={true}
-                                      eventPool="Modal"
-                                      mountNode={<body />}
-                                      onClose={[Function]}
-                                      onMount={[Function]}
-                                      onOpen={[Function]}
-                                      onUnmount={[Function]}
-                                      openOnTriggerClick={true}
-                                      trigger={
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="bars"
-                                          path={null}
-                                          size={null}
-                                        />
-                                      }
-                                    >
-                                      <Ref
-                                        innerRef={[Function]}
-                                      >
-                                        <Icon
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="bars"
-                                          onBlur={[Function]}
-                                          onClick={[Function]}
-                                          onFocus={[Function]}
-                                          onMouseEnter={[Function]}
-                                          onMouseLeave={[Function]}
-                                          path={null}
-                                          size={null}
-                                        >
-                                          <i
-                                            className="icon"
-                                            onBlur={[Function]}
-                                            onClick={[Function]}
-                                            onFocus={[Function]}
-                                            onMouseEnter={[Function]}
-                                            onMouseLeave={[Function]}
-                                          >
-                                            <svg
-                                              viewBox="0 0 24 24"
-                                            >
-                                              <path
-                                                d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
-                                                fill="currentColor"
-                                              />
-                                            </svg>
-                                          </i>
-                                        </Icon>
-                                      </Ref>
-                                    </Portal>
-                                  </Modal>
-                                </Modal>
-                              </div>
-                            </MenuItem>
-                          </div>
-                        </MenuMenu>
-                      </ShowOn>
-                      <ShowOn
-                        computer={true}
-                        mobile={false}
-                        parent={[Function]}
-                        parentProps={
-                          Object {
-                            "position": "right",
-                          }
-                        }
-                        tablet={true}
-                        widescreen={true}
-                      >
-                        <MenuMenu
-                          className="show-on-tablet show-on-computer show-on-widescreen"
-                          position="right"
-                        >
-                          <div
-                            className="right menu show-on-tablet show-on-computer show-on-widescreen"
-                          >
-                            <MenuItem
-                              active={false}
+                            <a
+                              className="link item"
                               href="/"
-                              key="Home0"
-                              link={true}
+                              onClick={[Function]}
                             >
-                              <a
-                                className="link item"
-                                href="/"
-                                onClick={[Function]}
-                              >
-                                Home
-                              </a>
-                            </MenuItem>
-                            <MenuItem
-                              className="no-underline"
-                              link={true}
+                              Home
+                            </a>
+                          </MenuItem>
+                          <MenuItem
+                            className="no-underline"
+                            link={true}
+                          >
+                            <div
+                              className="link item no-underline"
+                              onClick={[Function]}
                             >
-                              <div
-                                className="link item no-underline"
+                              <Button
+                                hasShadow={false}
+                                icon={null}
+                                isCompact={false}
+                                isDisabled={false}
+                                isLoading={false}
+                                isPositionedRight={false}
+                                isRounded={true}
+                                isSecondary={false}
                                 onClick={[Function]}
+                                size={null}
                               >
                                 <Button
-                                  hasShadow={false}
-                                  icon={null}
-                                  isCompact={false}
-                                  isDisabled={false}
-                                  isLoading={false}
-                                  isPositionedRight={false}
-                                  isRounded={true}
-                                  isSecondary={false}
+                                  as="button"
+                                  circular={true}
+                                  className=""
+                                  compact={false}
+                                  disabled={false}
+                                  floated="left"
+                                  loading={false}
                                   onClick={[Function]}
+                                  secondary={false}
                                   size={null}
                                 >
-                                  <Button
-                                    as="button"
-                                    circular={true}
-                                    className=""
-                                    compact={false}
-                                    disabled={false}
-                                    floated="left"
-                                    loading={false}
+                                  <button
+                                    className="ui circular left floated button"
                                     onClick={[Function]}
-                                    secondary={false}
-                                    size={null}
+                                    role="button"
                                   >
-                                    <button
-                                      className="ui circular left floated button"
-                                      onClick={[Function]}
-                                      role="button"
-                                    >
-                                      Book now
-                                    </button>
-                                  </Button>
+                                    Book now
+                                  </button>
                                 </Button>
-                              </div>
-                            </MenuItem>
-                          </div>
-                        </MenuMenu>
-                      </ShowOn>
+                              </Button>
+                            </div>
+                          </MenuItem>
+                        </div>
+                      </MenuMenu>
                     </div>
                   </Menu>
                 </Container>
