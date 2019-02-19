@@ -42,7 +42,7 @@ export const getHiddenMenuMarkup = (
     tablet={isHiddenMenuShowingInAllDevices}
     widescreen={isHiddenMenuShowingInAllDevices}
   >
-    <Menu.Item>
+    <Menu.Item className="no-underline">
       <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
         {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
         <Menu text vertical>

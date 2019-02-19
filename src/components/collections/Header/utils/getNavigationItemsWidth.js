@@ -1,13 +1,20 @@
-import { CHARACTER_WIDTH, MENU_ITEM_MARGIN_WIDTH } from '../constants';
+import { get } from 'lodash';
+
+import { getWidthPlusMargin } from './getWidthPlusMargin';
 
 /**
- * @param {Array} navigationItems
- * @return {number}
+ * @typedef {Object}      HTMLElement
+ * @param   {HTMLElement} headerElement
+ * @return  {number}
  */
-export const getNavigationItemsWidth = navigationItems => {
-  const textWidth =
-    navigationItems.map(item => item.text).join('').length * CHARACTER_WIDTH;
-  const marginWidth = navigationItems.length * MENU_ITEM_MARGIN_WIDTH;
+export const getNavigationItemsWidth = headerElement => {
+  const navigationElement = get(headerElement, ['children', 0, 'children', 1]);
 
-  return textWidth + marginWidth;
+  return navigationElement
+    ? Array.from(navigationElement.children).reduce(
+        (accumulator, navigationItem) =>
+          accumulator + getWidthPlusMargin(navigationItem),
+        0
+      )
+    : 0;
 };

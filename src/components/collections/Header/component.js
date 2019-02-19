@@ -1,46 +1,87 @@
-import React, { Fragment } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import { debounce } from 'lodash';
 import getClassNames from 'classnames';
 import { Menu } from 'semantic-ui-react';
 
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 
+import { getNavigationItemsWidth } from './utils/getNavigationItemsWidth';
+import { getMenuWidth } from './utils/getMenuWidth';
 import { getLogoMarkup } from './utils/getLogoMarkup';
+import { getIsMenuHidden } from './utils/getIsMenuHidden';
 import { getHiddenMenuMarkup } from './utils/getHiddenMenuMarkup';
 import { getStandardMenuMarkup } from './utils/getStandardMenuMarkup';
-import { areNavigationItemsExceedingHeaderMaxWidth } from './utils/areNavigationItemsExceedingHeaderMaxWidth';
+
 /**
  * A header displays a logo, grouped navigation items
  * and an optional primary call to action.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = props => (
-  <header
-    className={getClassNames({
-      'is-background-filled': props.isBackgroundFilled,
-    })}
-  >
-    <HorizontalGutters as={Menu} borderless text>
-      {getLogoMarkup(
-        props.logoText,
-        props.logoSrc,
-        props.logoSizes,
-        props.logoSrcSet
-      )}
-      {areNavigationItemsExceedingHeaderMaxWidth(
-        props.navigationItems,
-        props.primaryCTA
-      ) ? (
-        getHiddenMenuMarkup(props, true)
-      ) : (
-        <Fragment>
-          {getHiddenMenuMarkup(props, false)}
-          {getStandardMenuMarkup(props)}
-        </Fragment>
-      )}
-    </HorizontalGutters>
-  </header>
-);
+export class Component extends PureComponent {
+  state = {
+    isMenuHidden: false,
+    isTransparent: true,
+    navigationItemsWidth: null,
+    windowInnerWidth: null,
+  };
+
+  componentDidMount = () => {
+    global.window.addEventListener('resize', debounce(this.handleResize, 150));
+    this.handleResize();
+    this.setState({
+      navigationItemsWidth: getNavigationItemsWidth(this.header),
+      isTransparent: false,
+    });
+  };
+
+  componentDidUpdate = (previousProps, previousState) => {
+    if (previousState.windowInnerWidth !== this.state.windowInnerWidth) {
+      const menuWidth = getMenuWidth(this.header);
+
+      this.setState({
+        isMenuHidden: getIsMenuHidden(
+          menuWidth,
+          this.state.navigationItemsWidth
+        ),
+      });
+    }
+  };
+
+  createHeaderRef = header => (this.header = header);
+
+  handleResize = event => {
+    this.setState({ windowInnerWidth: event && event.target.innerWidth });
+  };
+
+  render = () => {
+    const {
+      isBackgroundFilled,
+      logoText,
+      logoSrc,
+      logoSizes,
+      logoSrcSet,
+    } = this.props;
+    const { isMenuHidden, isTransparent } = this.state;
+
+    return (
+      <header
+        className={getClassNames({
+          'is-background-filled': isBackgroundFilled,
+          'is-transparent': isTransparent,
+        })}
+        ref={this.createHeaderRef}
+      >
+        <HorizontalGutters as={Menu} borderless text>
+          {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
+          {isMenuHidden
+            ? getHiddenMenuMarkup(this.props, true)
+            : getStandardMenuMarkup(this.props)}
+        </HorizontalGutters>
+      </header>
+    );
+  };
+}
 
 Component.displayName = 'Header';
 
