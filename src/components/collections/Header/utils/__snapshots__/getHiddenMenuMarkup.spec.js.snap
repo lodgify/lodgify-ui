@@ -20,9 +20,11 @@ exports[`getHiddenMenuMarkup should render the right structure 1`] = `
     <div
       className="right menu show-on-mobile"
     >
-      <MenuItem>
+      <MenuItem
+        className="no-underline"
+      >
         <div
-          className="item"
+          className="item no-underline"
           onClick={[Function]}
         >
           <Modal
