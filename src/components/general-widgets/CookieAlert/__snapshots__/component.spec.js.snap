@@ -120,7 +120,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                 >
                   <div
                     class="flex-container"
-                    style="display: flex; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                    style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
                   >
                     <div
                       class="ui hidden divider"
@@ -424,7 +424,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                 >
                   <div
                     class="flex-container"
-                    style="display: flex; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                    style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
                   >
                     <div
                       class="ui hidden divider"
@@ -470,7 +470,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                 >
                   <div
                     class="flex-container"
-                    style="display: flex; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                    style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
                   >
                     <div
                       class="ui hidden divider"
