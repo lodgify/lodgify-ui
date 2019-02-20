@@ -1,3 +1,10 @@
+# [1.141.0](https://github.com/lodgify/lodgify-ui/compare/v1.140.1...v1.141.0) (2019-02-20)
+
+
+### Features
+
+* **Header:** add opacity transition to mask first change on mount ([bd9cb0c](https://github.com/lodgify/lodgify-ui/commit/bd9cb0c))
+
 ## [1.140.1](https://github.com/lodgify/lodgify-ui/compare/v1.140.0...v1.140.1) (2019-02-20)
 
 
