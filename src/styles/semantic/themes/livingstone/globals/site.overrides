@@ -29,6 +29,10 @@
 /*--------------
   Page Heading
 ---------------*/
+.ui.header {
+  word-wrap: break-word;
+}
+
 h1.ui.header {
   line-height: @h1LineHeight;
 }
