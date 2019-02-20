@@ -111,6 +111,12 @@
        States
 --------------------*/
 
+/* Active */
+
+.ui.page.modals.active {
+  z-index: @activeModalZIndex;
+}
+
 /*-------------------
         Types
 --------------------*/
