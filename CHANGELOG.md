@@ -1,3 +1,10 @@
+## [1.140.1](https://github.com/lodgify/lodgify-ui/compare/v1.140.0...v1.140.1) (2019-02-20)
+
+
+### Bug Fixes
+
+* **HTML:** add target to dompurify accepted attributes ([56db5b4](https://github.com/lodgify/lodgify-ui/commit/56db5b4))
+
 # [1.140.0](https://github.com/lodgify/lodgify-ui/compare/v1.139.0...v1.140.0) (2019-02-14)
 
 
