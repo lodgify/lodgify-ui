@@ -1,3 +1,10 @@
+# [1.142.0](https://github.com/lodgify/lodgify-ui/compare/v1.141.0...v1.142.0) (2019-02-21)
+
+
+### Features
+
+* **site.overrides:** implement word-break for every header ([f5eb3f8](https://github.com/lodgify/lodgify-ui/commit/f5eb3f8))
+
 # [1.141.0](https://github.com/lodgify/lodgify-ui/compare/v1.140.1...v1.141.0) (2019-02-20)
 
 
