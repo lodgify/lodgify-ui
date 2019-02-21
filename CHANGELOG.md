@@ -1,3 +1,10 @@
+# [1.143.0](https://github.com/lodgify/lodgify-ui/compare/v1.142.0...v1.143.0) (2019-02-21)
+
+
+### Features
+
+* **modal.*:** implement z-index for active modal ([3889ded](https://github.com/lodgify/lodgify-ui/commit/3889ded))
+
 # [1.142.0](https://github.com/lodgify/lodgify-ui/compare/v1.141.0...v1.142.0) (2019-02-21)
 
 
