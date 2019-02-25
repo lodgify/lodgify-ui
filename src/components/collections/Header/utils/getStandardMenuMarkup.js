@@ -24,7 +24,7 @@ export const getStandardMenuMarkup = ({
   /* eslint-enable react/prop-types */
 }) => (
   <Fragment>
-    {navigationItems.map(({ subItems, text, href }, index) =>
+    {navigationItems.map(({ subItems, text, href, target }, index) =>
       size(subItems) > 0 ? (
         <Submenu
           isMenuItem
@@ -42,7 +42,7 @@ export const getStandardMenuMarkup = ({
           {text}
         </Submenu>
       ) : (
-        getLinkMarkup(text, href, index, activeNavigationItemIndex)
+        getLinkMarkup(text, href, target, index, activeNavigationItemIndex)
       )
     )}
     {primaryCTA && (

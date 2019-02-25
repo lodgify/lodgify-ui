@@ -33,34 +33,43 @@ export const getHiddenMenuMarkup = ({
     <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
       {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
       <Menu text vertical>
-        {navigationItems.map(({ subItems, text, href }, index) =>
-          size(subItems) ? (
-            <Accordion
-              as={Menu.Item}
-              key={buildKeyFromStrings(text, index)}
-              panels={[
-                {
-                  title: {
-                    content: text,
-                    key: buildKeyFromStrings(text, index),
+        {navigationItems.map(
+          ({ subItems, text, target: navigationItemTarget, href }, index) =>
+            size(subItems) ? (
+              <Accordion
+                as={Menu.Item}
+                key={buildKeyFromStrings(text, index)}
+                panels={[
+                  {
+                    title: {
+                      content: text,
+                      key: buildKeyFromStrings(text, index),
+                    },
+                    content: {
+                      content: subItems.map(
+                        ({ text, target: subItemTarget, href }, index) =>
+                          getLinkMarkup(
+                            text,
+                            href,
+                            subItemTarget,
+                            index,
+                            activeNavigationItemIndex
+                          )
+                      ),
+                      key: buildKeyFromStrings(index, text),
+                    },
                   },
-                  content: {
-                    content: subItems.map(({ text, href }, index) =>
-                      getLinkMarkup(
-                        text,
-                        href,
-                        index,
-                        activeNavigationItemIndex
-                      )
-                    ),
-                    key: buildKeyFromStrings(index, text),
-                  },
-                },
-              ]}
-            />
-          ) : (
-            getLinkMarkup(text, href, index, activeNavigationItemIndex)
-          )
+                ]}
+              />
+            ) : (
+              getLinkMarkup(
+                text,
+                href,
+                navigationItemTarget,
+                index,
+                activeNavigationItemIndex
+              )
+            )
         )}
       </Menu>
     </Modal>
