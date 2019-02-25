@@ -70,16 +70,19 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                 propertyName="The Cat House"
                 propertyType="Bed and breakfast"
                 propertyUrl="/"
+                propertyUrlTarget="_self"
                 ratingNumber={4.8}
               >
                 <Card
                   className="has-featured"
                   href="/"
+                  target="_self"
                 >
                   <a
                     className="ui card has-featured"
                     href="/"
                     onClick={[Function]}
+                    target="_self"
                   >
                     <ResponsiveImage
                       alternativeText="Image Widget"
@@ -373,16 +376,19 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                 propertyName="The Cat House"
                 propertyType="Bed and breakfast"
                 propertyUrl="/"
+                propertyUrlTarget="_self"
                 ratingNumber={4.8}
               >
                 <Card
                   className="has-featured"
                   href="/"
+                  target="_self"
                 >
                   <a
                     className="ui card has-featured"
                     href="/"
                     onClick={[Function]}
+                    target="_self"
                   >
                     <ResponsiveImage
                       alternativeText="Image Widget"
@@ -757,16 +763,19 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                 propertyName="The Cat House"
                 propertyType="Bed and breakfast"
                 propertyUrl="/"
+                propertyUrlTarget="_self"
                 ratingNumber={4.8}
               >
                 <Card
                   className="has-featured"
                   href="/"
+                  target="_self"
                 >
                   <a
                     className="ui card has-featured"
                     href="/"
                     onClick={[Function]}
+                    target="_self"
                   >
                     <ResponsiveImage
                       alternativeText="Image Widget"
@@ -1060,16 +1069,19 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                 propertyName="The Cat House"
                 propertyType="Bed and breakfast"
                 propertyUrl="/"
+                propertyUrlTarget="_self"
                 ratingNumber={4.8}
               >
                 <Card
                   className="has-featured"
                   href="/"
+                  target="_self"
                 >
                   <a
                     className="ui card has-featured"
                     href="/"
                     onClick={[Function]}
+                    target="_self"
                   >
                     <ResponsiveImage
                       alternativeText="Image Widget"
@@ -1386,16 +1398,19 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
                 propertyName=""
                 propertyType=""
                 propertyUrl=""
+                propertyUrlTarget="_self"
                 ratingNumber={0}
               >
                 <Card
                   className="has-featured"
                   href=""
+                  target="_self"
                 >
                   <div
                     className="ui card has-featured"
                     href=""
                     onClick={[Function]}
+                    target="_self"
                   >
                     <BlockPlaceholder
                       isFluid={false}
@@ -1506,16 +1521,19 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
                 propertyName=""
                 propertyType=""
                 propertyUrl=""
+                propertyUrlTarget="_self"
                 ratingNumber={0}
               >
                 <Card
                   className="has-featured"
                   href=""
+                  target="_self"
                 >
                   <div
                     className="ui card has-featured"
                     href=""
                     onClick={[Function]}
+                    target="_self"
                   >
                     <BlockPlaceholder
                       isFluid={false}
@@ -1626,16 +1644,19 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
                 propertyName=""
                 propertyType=""
                 propertyUrl=""
+                propertyUrlTarget="_self"
                 ratingNumber={0}
               >
                 <Card
                   className="has-featured"
                   href=""
+                  target="_self"
                 >
                   <div
                     className="ui card has-featured"
                     href=""
                     onClick={[Function]}
+                    target="_self"
                   >
                     <BlockPlaceholder
                       isFluid={false}
