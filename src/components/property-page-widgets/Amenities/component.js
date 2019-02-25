@@ -24,7 +24,7 @@ export const Component = ({
   isStacked,
   modalTriggerText,
 }) => (
-  <Grid className="is-amenities" columns={isStacked ? 1 : 3}>
+  <Grid className="is-amenities" columns={isStacked ? 1 : 3} isStackable>
     <GridRow>
       {headingText && (
         <GridColumn width={12}>
