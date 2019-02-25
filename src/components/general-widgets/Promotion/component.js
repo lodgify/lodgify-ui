@@ -37,7 +37,7 @@ export const Component = ({
   placeholderBackgroundImage,
 }) => (
   <Segment basic className="is-promotion" onClick={onClick}>
-    <Grid className="first-grid" stackable stretched>
+    <Grid className="first-grid" isStackable stretched>
       <GridRow verticalAlign="middle">
         <GridColumn
           className="content-section"

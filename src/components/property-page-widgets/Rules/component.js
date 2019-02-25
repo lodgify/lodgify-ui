@@ -24,7 +24,7 @@ export const Component = ({
   headingText,
   rules,
 }) => (
-  <Grid stackable>
+  <Grid isStackable>
     <GridColumn width={12}>
       <Heading>{headingText}</Heading>
     </GridColumn>

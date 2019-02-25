@@ -39,7 +39,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
 >
   <Grid
     areColumnsCentered={false}
-    stackable={true}
+    isStackable={true}
   >
     <Grid
       centered={false}

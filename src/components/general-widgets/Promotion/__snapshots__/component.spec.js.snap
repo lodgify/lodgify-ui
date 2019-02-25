@@ -22,7 +22,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
       <Grid
         areColumnsCentered={false}
         className="first-grid"
-        stackable={true}
+        isStackable={true}
         stretched={true}
       >
         <Grid
@@ -109,11 +109,13 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                         </ResponsiveImage>
                         <Grid
                           areColumnsCentered={false}
+                          isStackable={false}
                           padded={true}
                         >
                           <Grid
                             centered={false}
                             padded={true}
+                            stackable={false}
                           >
                             <div
                               className="ui padded grid"
@@ -322,7 +324,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
       <Grid
         areColumnsCentered={false}
         className="first-grid"
-        stackable={true}
+        isStackable={true}
         stretched={true}
       >
         <Grid
@@ -366,11 +368,13 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                       >
                         <Grid
                           areColumnsCentered={false}
+                          isStackable={false}
                           padded={true}
                         >
                           <Grid
                             centered={false}
                             padded={true}
+                            stackable={false}
                           >
                             <div
                               className="ui padded grid"
@@ -764,7 +768,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
       <Grid
         areColumnsCentered={false}
         className="first-grid"
-        stackable={true}
+        isStackable={true}
         stretched={true}
       >
         <Grid
@@ -808,11 +812,13 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                       >
                         <Grid
                           areColumnsCentered={false}
+                          isStackable={false}
                           padded={true}
                         >
                           <Grid
                             centered={false}
                             padded={true}
+                            stackable={false}
                           >
                             <div
                               className="ui padded grid"
@@ -1121,7 +1127,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
       <Grid
         areColumnsCentered={false}
         className="first-grid"
-        stackable={true}
+        isStackable={true}
         stretched={true}
       >
         <Grid
@@ -1165,11 +1171,13 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                       >
                         <Grid
                           areColumnsCentered={false}
+                          isStackable={false}
                           padded={true}
                         >
                           <Grid
                             centered={false}
                             padded={true}
+                            stackable={false}
                           >
                             <div
                               className="ui padded grid"

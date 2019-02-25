@@ -38,7 +38,7 @@ export const Component = ({
   paymentScheduleHeadingText,
   paymentScheduleRules,
 }) => (
-  <Grid stackable>
+  <Grid isStackable>
     <GridRow>
       <GridColumn width={12}>
         <Heading>{headingText}</Heading>

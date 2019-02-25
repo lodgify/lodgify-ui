@@ -11,7 +11,7 @@ exports[`<Rules /> by default should render the right structure 1`] = `
 >
   <Grid
     areColumnsCentered={false}
-    stackable={true}
+    isStackable={true}
   >
     <Grid
       centered={false}
@@ -183,7 +183,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
 >
   <Grid
     areColumnsCentered={false}
-    stackable={true}
+    isStackable={true}
   >
     <Grid
       centered={false}

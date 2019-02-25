@@ -34,7 +34,7 @@ const Component = ({
   longitude,
   transportOptions,
 }) => (
-  <Grid stackable>
+  <Grid isStackable>
     <GridColumn width={12}>
       <Heading>{headingText}</Heading>
       <Subheading>{locationSummary}</Subheading>
