@@ -25,7 +25,7 @@ export const Component = ({ heading, images, trigger }) => (
           <Divider hasLine />
         </Fragment>
       )}
-      <Grid columns={2} stackable>
+      <Grid columns={2} isStackable>
         <GridRow>
           {images.map(({ label, imageUrl, ...otherProps }, index) => (
             <GridColumn key={buildKeyFromStrings(imageUrl, index)}>

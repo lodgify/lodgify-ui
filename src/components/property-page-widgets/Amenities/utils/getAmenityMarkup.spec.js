@@ -8,12 +8,12 @@ import {
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
 import { VIEW_MORE } from 'utils/default-strings';
+import { Link } from 'elements/Link';
+import { Modal } from 'elements/Modal';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { GridRow } from 'layout/GridRow';
 import { Heading } from 'typography/Heading';
-import { Link } from 'elements/Link';
-import { Modal } from 'elements/Modal';
 
 import { twoAmenities, sixAmenities } from '../mock-data/amenities';
 
@@ -192,7 +192,10 @@ describe('getAmenityMarkup', () => {
       it('should have the right props', () => {
         const wrapper = getSecondGrid();
 
-        expectComponentToHaveProps(wrapper, { padded: true, stackable: true });
+        expectComponentToHaveProps(wrapper, {
+          padded: true,
+          isStackable: true,
+        });
       });
 
       it('should render the right children', () => {

@@ -20,7 +20,7 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyRules\` is passed shoul
 >
   <Grid
     areColumnsCentered={false}
-    stackable={true}
+    isStackable={true}
   >
     <Grid
       centered={false}
@@ -156,7 +156,7 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositRules\` is passed should hav
 >
   <Grid
     areColumnsCentered={false}
-    stackable={true}
+    isStackable={true}
   >
     <Grid
       centered={false}
@@ -296,7 +296,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
 >
   <Grid
     areColumnsCentered={false}
-    stackable={true}
+    isStackable={true}
   >
     <Grid
       centered={false}
@@ -541,7 +541,7 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
 >
   <Grid
     areColumnsCentered={false}
-    stackable={true}
+    isStackable={true}
   >
     <Grid
       centered={false}
@@ -681,7 +681,7 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should h
 >
   <Grid
     areColumnsCentered={false}
-    stackable={true}
+    isStackable={true}
   >
     <Grid
       centered={false}
@@ -824,7 +824,7 @@ exports[`<PolicyAndNotes /> should have the right structure 1`] = `
 >
   <Grid
     areColumnsCentered={false}
-    stackable={true}
+    isStackable={true}
   >
     <Grid
       centered={false}

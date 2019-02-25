@@ -18,7 +18,7 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
     <Grid
       areColumnsCentered={false}
       columns={2}
-      stackable={true}
+      isStackable={true}
     >
       <GridRow
         horizontalAlignContent="left"
@@ -126,7 +126,7 @@ exports[`<Gallery /> if \`props.heading\` is defined should render the right str
     <Grid
       areColumnsCentered={false}
       columns={2}
-      stackable={true}
+      isStackable={true}
     >
       <GridRow
         horizontalAlignContent="left"
