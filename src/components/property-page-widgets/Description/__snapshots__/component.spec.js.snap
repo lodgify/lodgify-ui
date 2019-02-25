@@ -68,10 +68,12 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
   <Grid
     areColumnsCentered={false}
     columns={1}
+    isStackable={false}
   >
     <Grid
       centered={false}
       columns={1}
+      stackable={false}
     >
       <div
         className="ui one column grid"
@@ -354,11 +356,13 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
                   areColumnsCentered={false}
                   className="show-on-mobile"
                   columns={1}
+                  isStackable={false}
                 >
                   <Grid
                     centered={false}
                     className="show-on-mobile"
                     columns={1}
+                    stackable={false}
                   >
                     <div
                       className="ui one column grid show-on-mobile"
@@ -929,10 +933,12 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
   <Grid
     areColumnsCentered={false}
     columns={1}
+    isStackable={false}
   >
     <Grid
       centered={false}
       columns={1}
+      stackable={false}
     >
       <div
         className="ui one column grid"
@@ -1215,11 +1221,13 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                   areColumnsCentered={false}
                   className="show-on-mobile"
                   columns={1}
+                  isStackable={false}
                 >
                   <Grid
                     centered={false}
                     className="show-on-mobile"
                     columns={1}
+                    stackable={false}
                   >
                     <div
                       className="ui one column grid show-on-mobile"
@@ -1559,10 +1567,12 @@ exports[`<Description /> should have the correct structure 1`] = `
   <Grid
     areColumnsCentered={false}
     columns={1}
+    isStackable={false}
   >
     <Grid
       centered={false}
       columns={1}
+      stackable={false}
     >
       <div
         className="ui one column grid"
@@ -1845,11 +1855,13 @@ exports[`<Description /> should have the correct structure 1`] = `
                   areColumnsCentered={false}
                   className="show-on-mobile"
                   columns={1}
+                  isStackable={false}
                 >
                   <Grid
                     centered={false}
                     className="show-on-mobile"
                     columns={1}
+                    stackable={false}
                   >
                     <div
                       className="ui one column grid show-on-mobile"

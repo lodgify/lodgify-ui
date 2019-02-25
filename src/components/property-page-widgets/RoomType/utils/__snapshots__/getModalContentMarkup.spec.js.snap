@@ -395,14 +395,16 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
         areColumnsCentered={false}
         className="is-amenities"
         columns={3}
+        isStackable={true}
       >
         <Grid
           centered={false}
           className="is-amenities"
           columns={3}
+          stackable={true}
         >
           <div
-            className="ui three column grid is-amenities"
+            className="ui stackable three column grid is-amenities"
           >
             <GridRow
               horizontalAlignContent="left"
@@ -583,9 +585,11 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
     </Amenities>
     <Grid
       areColumnsCentered={false}
+      isStackable={false}
     >
       <Grid
         centered={false}
+        stackable={false}
       >
         <div
           className="ui grid"
@@ -874,14 +878,16 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
         areColumnsCentered={false}
         className="is-amenities"
         columns={3}
+        isStackable={true}
       >
         <Grid
           centered={false}
           className="is-amenities"
           columns={3}
+          stackable={true}
         >
           <div
-            className="ui three column grid is-amenities"
+            className="ui stackable three column grid is-amenities"
           >
             <GridRow
               horizontalAlignContent="left"
@@ -1062,9 +1068,11 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
     </Amenities>
     <Grid
       areColumnsCentered={false}
+      isStackable={false}
     >
       <Grid
         centered={false}
+        stackable={false}
       >
         <div
           className="ui grid"
@@ -1666,14 +1674,16 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
         areColumnsCentered={false}
         className="is-amenities"
         columns={3}
+        isStackable={true}
       >
         <Grid
           centered={false}
           className="is-amenities"
           columns={3}
+          stackable={true}
         >
           <div
-            className="ui three column grid is-amenities"
+            className="ui stackable three column grid is-amenities"
           >
             <GridRow
               horizontalAlignContent="left"
@@ -1854,9 +1864,11 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
     </Amenities>
     <Grid
       areColumnsCentered={false}
+      isStackable={false}
     >
       <Grid
         centered={false}
+        stackable={false}
       >
         <div
           className="ui grid"
@@ -2286,14 +2298,16 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
         areColumnsCentered={false}
         className="is-amenities"
         columns={3}
+        isStackable={true}
       >
         <Grid
           centered={false}
           className="is-amenities"
           columns={3}
+          stackable={true}
         >
           <div
-            className="ui three column grid is-amenities"
+            className="ui stackable three column grid is-amenities"
           >
             <GridRow
               horizontalAlignContent="left"
@@ -2474,9 +2488,11 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
     </Amenities>
     <Grid
       areColumnsCentered={false}
+      isStackable={false}
     >
       <Grid
         centered={false}
+        stackable={false}
       >
         <div
           className="ui grid"
