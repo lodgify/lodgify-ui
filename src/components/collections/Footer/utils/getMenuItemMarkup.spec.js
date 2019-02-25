@@ -7,7 +7,7 @@ import {
 
 import { getMenuItemMarkup } from './getMenuItemMarkup';
 
-const menuItem = { href: 'someHref', text: 'someText' };
+const menuItem = { href: 'someHref', text: 'someText', target: '🎯' };
 
 const getMenuItem = () => shallow(getMenuItemMarkup(menuItem, 0));
 
@@ -31,6 +31,7 @@ describe('getMenuItemMarkup', () => {
       expectComponentToHaveProps(wrapper, {
         href: menuItem.href,
         className: 'link item',
+        target: '🎯',
       });
     });
   });

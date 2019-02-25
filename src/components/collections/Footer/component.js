@@ -87,15 +87,18 @@ export const Component = ({
         )}
         {size(socialMediaLinks) > 0 && (
           <Menu.Menu position="right">
-            {socialMediaLinks.map(({ href, iconName, iconPath }, index) => (
-              <Menu.Item
-                href={href}
-                key={buildKeyFromStrings(href, index)}
-                link
-              >
-                <Icon name={iconName} path={iconPath} />
-              </Menu.Item>
-            ))}
+            {socialMediaLinks.map(
+              ({ href, iconName, iconPath, target }, index) => (
+                <Menu.Item
+                  href={href}
+                  key={buildKeyFromStrings(href, index)}
+                  link
+                  target={target}
+                >
+                  <Icon name={iconName} path={iconPath} />
+                </Menu.Item>
+              )
+            )}
           </Menu.Menu>
         )}
         <Divider hasLine />
@@ -174,9 +177,12 @@ Component.propTypes = {
       subItems: PropTypes.arrayOf(
         PropTypes.shape({
           href: PropTypes.string.isRequired,
+          target: PropTypes.string,
           text: PropTypes.string.isRequired,
         })
       ),
+      /** Specifies where to display the linked navigation items URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
+      target: PropTypes.string,
       /** The visible text for an item. */
       text: PropTypes.string.isRequired,
     })
@@ -206,6 +212,8 @@ Component.propTypes = {
       iconName: PropTypes.string,
       /** The path of the icon to display. See [`Icon` props](#/Icon) for guidance. */
       iconPath: PropTypes.string,
+      /** Specifies where to display the social media links URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
+      target: PropTypes.string,
     })
   ),
 };
