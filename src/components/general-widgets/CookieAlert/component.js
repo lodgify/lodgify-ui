@@ -32,7 +32,9 @@ const Component = ({
         >
           <Divider />
           <Paragraph>{text}</Paragraph>
-          <Link href={linkUrl}>{linkText}</Link>
+          <Link href={linkUrl} willOpenInNewTab>
+            {linkText}
+          </Link>
           <Divider />
           <Button onClick={onAccept}>{buttonText}</Button> <Divider />
         </FlexContainer>
