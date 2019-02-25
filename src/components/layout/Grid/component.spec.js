@@ -23,7 +23,8 @@ describe('<Grid />', () => {
       const wrapper = getGrid();
 
       expectComponentToHaveProps(wrapper, {
-        centered: expect.any(Boolean),
+        centered: false,
+        stackable: false,
       });
     });
   });
