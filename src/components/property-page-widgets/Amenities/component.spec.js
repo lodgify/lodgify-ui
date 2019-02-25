@@ -8,13 +8,13 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { getArrayOfLengthOfItem } from 'utils/get-array-of-length-of-item';
+import { Link } from 'elements/Link';
+import { Modal } from 'elements/Modal';
 import { VIEW_MORE } from 'utils/default-strings';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
-import { Link } from 'elements/Link';
-import { Modal } from 'elements/Modal';
 
 import { twoAmenities, sixAmenities } from './mock-data/amenities';
 import { Component as Amenities } from './component';
@@ -187,7 +187,10 @@ describe('getAmenityMarkup', () => {
       it('should have the right props', () => {
         const wrapper = getSecondGrid();
 
-        expectComponentToHaveProps(wrapper, { padded: true, stackable: true });
+        expectComponentToHaveProps(wrapper, {
+          padded: true,
+          isStackable: true,
+        });
       });
 
       it('should render the right children', () => {
