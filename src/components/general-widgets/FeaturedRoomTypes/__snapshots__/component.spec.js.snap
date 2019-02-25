@@ -70,15 +70,18 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 ratingNumber={4.8}
                 roomTypeName="The Cat House"
                 roomTypeUrl="/"
+                roomTypeUrlTarget="_self"
               >
                 <Card
                   className="has-featured"
                   href="/"
+                  target="_self"
                 >
                   <a
                     className="ui card has-featured"
                     href="/"
                     onClick={[Function]}
+                    target="_self"
                   >
                     <ResponsiveImage
                       alternativeText="Image Widget"
@@ -214,15 +217,18 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 ratingNumber={4.8}
                 roomTypeName="The Cat House"
                 roomTypeUrl="/"
+                roomTypeUrlTarget="_self"
               >
                 <Card
                   className="has-featured"
                   href="/"
+                  target="_self"
                 >
                   <a
                     className="ui card has-featured"
                     href="/"
                     onClick={[Function]}
+                    target="_self"
                   >
                     <ResponsiveImage
                       alternativeText="Image Widget"
@@ -380,15 +386,18 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
                 nightPrice=""
                 roomTypeName=""
                 roomTypeUrl=""
+                roomTypeUrlTarget="_self"
               >
                 <Card
                   className="has-featured"
                   href=""
+                  target="_self"
                 >
                   <div
                     className="ui card has-featured"
                     href=""
                     onClick={[Function]}
+                    target="_self"
                   >
                     <BlockPlaceholder
                       isFluid={false}
@@ -500,15 +509,18 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
                 nightPrice=""
                 roomTypeName=""
                 roomTypeUrl=""
+                roomTypeUrlTarget="_self"
               >
                 <Card
                   className="has-featured"
                   href=""
+                  target="_self"
                 >
                   <div
                     className="ui card has-featured"
                     href=""
                     onClick={[Function]}
+                    target="_self"
                   >
                     <BlockPlaceholder
                       isFluid={false}
@@ -620,15 +632,18 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
                 nightPrice=""
                 roomTypeName=""
                 roomTypeUrl=""
+                roomTypeUrlTarget="_self"
               >
                 <Card
                   className="has-featured"
                   href=""
+                  target="_self"
                 >
                   <div
                     className="ui card has-featured"
                     href=""
                     onClick={[Function]}
+                    target="_self"
                   >
                     <BlockPlaceholder
                       isFluid={false}
@@ -820,15 +835,18 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 ratingNumber={4.8}
                 roomTypeName="The Cat House"
                 roomTypeUrl="/"
+                roomTypeUrlTarget="_self"
               >
                 <Card
                   className="has-featured"
                   href="/"
+                  target="_self"
                 >
                   <a
                     className="ui card has-featured"
                     href="/"
                     onClick={[Function]}
+                    target="_self"
                   >
                     <ResponsiveImage
                       alternativeText="Image Widget"
@@ -964,15 +982,18 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 ratingNumber={4.8}
                 roomTypeName="The Cat House"
                 roomTypeUrl="/"
+                roomTypeUrlTarget="_self"
               >
                 <Card
                   className="has-featured"
                   href="/"
+                  target="_self"
                 >
                   <a
                     className="ui card has-featured"
                     href="/"
                     onClick={[Function]}
+                    target="_self"
                   >
                     <ResponsiveImage
                       alternativeText="Image Widget"

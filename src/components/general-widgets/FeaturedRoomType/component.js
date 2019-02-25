@@ -27,8 +27,9 @@ export const Component = ({
   placeholderImageUrl,
   roomTypeName,
   roomTypeUrl,
+  roomTypeUrlTarget,
 }) => (
-  <Card className="has-featured" href={roomTypeUrl}>
+  <Card className="has-featured" href={roomTypeUrl} target={roomTypeUrlTarget}>
     {isShowingPlaceholder ? (
       getCardPlaceholderMarkup()
     ) : (
@@ -69,6 +70,7 @@ Component.defaultProps = {
   imageSrcSet: undefined,
   placeholderImageUrl: undefined,
   isShowingPlaceholder: false,
+  roomTypeUrlTarget: '_self',
 };
 
 Component.propTypes = {
@@ -100,4 +102,6 @@ Component.propTypes = {
   roomTypeName: PropTypes.string.isRequired,
   /** URL pointing to a page with details of the room. */
   roomTypeUrl: PropTypes.string.isRequired,
+  /** Specifies where to display the linked featured room type URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
+  roomTypeUrlTarget: PropTypes.string,
 };
