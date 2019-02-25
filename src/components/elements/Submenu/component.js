@@ -78,6 +78,8 @@ Component.propTypes = {
     PropTypes.shape({
       /** The url for a link item. */
       href: PropTypes.string,
+      /** Specifies where to display the linked items URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
+      target: PropTypes.string,
       /** The visible text for the item. */
       text: PropTypes.string,
       /** The underlying value for the item. */
