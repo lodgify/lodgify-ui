@@ -29,9 +29,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <Grid
       centered={false}
+      stackable={false}
     >
       <div
         className="ui grid"
@@ -470,9 +472,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                                 >
                                   <Grid
                                     areColumnsCentered={false}
+                                    isStackable={false}
                                   >
                                     <Grid
                                       centered={false}
+                                      stackable={false}
                                     >
                                       <div
                                         className="ui grid"
@@ -705,9 +709,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                                 >
                                   <Grid
                                     areColumnsCentered={false}
+                                    isStackable={false}
                                   >
                                     <Grid
                                       centered={false}
+                                      stackable={false}
                                     >
                                       <div
                                         className="ui grid"
@@ -940,9 +946,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                                 >
                                   <Grid
                                     areColumnsCentered={false}
+                                    isStackable={false}
                                   >
                                     <Grid
                                       centered={false}
+                                      stackable={false}
                                     >
                                       <div
                                         className="ui grid"
@@ -1188,9 +1196,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <Grid
       centered={false}
+      stackable={false}
     >
       <div
         className="ui grid"
@@ -1635,9 +1645,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                                 >
                                   <Grid
                                     areColumnsCentered={false}
+                                    isStackable={false}
                                   >
                                     <Grid
                                       centered={false}
+                                      stackable={false}
                                     >
                                       <div
                                         className="ui grid"
@@ -1799,9 +1811,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                                   >
                                     <Grid
                                       areColumnsCentered={false}
+                                      isStackable={false}
                                     >
                                       <Grid
                                         centered={false}
+                                        stackable={false}
                                       >
                                         <div
                                           className="ui grid"
@@ -1981,9 +1995,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                                 >
                                   <Grid
                                     areColumnsCentered={false}
+                                    isStackable={false}
                                   >
                                     <Grid
                                       centered={false}
+                                      stackable={false}
                                     >
                                       <div
                                         className="ui grid"
@@ -2229,9 +2245,11 @@ exports[`<Reviews /> should render the right structure 1`] = `
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <Grid
       centered={false}
+      stackable={false}
     >
       <div
         className="ui grid"
@@ -2807,9 +2825,11 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 >
                                   <Grid
                                     areColumnsCentered={false}
+                                    isStackable={false}
                                   >
                                     <Grid
                                       centered={false}
+                                      stackable={false}
                                     >
                                       <div
                                         className="ui grid"
@@ -3087,9 +3107,11 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                   >
                                     <Grid
                                       areColumnsCentered={false}
+                                      isStackable={false}
                                     >
                                       <Grid
                                         centered={false}
+                                        stackable={false}
                                       >
                                         <div
                                           className="ui grid"
@@ -3271,9 +3293,11 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 >
                                   <Grid
                                     areColumnsCentered={false}
+                                    isStackable={false}
                                   >
                                     <Grid
                                       centered={false}
+                                      stackable={false}
                                     >
                                       <div
                                         className="ui grid"

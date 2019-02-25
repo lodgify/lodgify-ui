@@ -1053,9 +1053,11 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
         >
           <Grid
             areColumnsCentered={false}
+            isStackable={false}
           >
             <Grid
               centered={false}
+              stackable={false}
             >
               <div
                 className="ui grid"

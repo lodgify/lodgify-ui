@@ -16,10 +16,12 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
     textAlign="left"
   >
     <Grid
       centered={false}
+      stackable={false}
       textAlign="left"
     >
       <div
@@ -333,10 +335,12 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
     textAlign="left"
   >
     <Grid
       centered={false}
+      stackable={false}
       textAlign="left"
     >
       <div
@@ -643,10 +647,12 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
     textAlign="left"
   >
     <Grid
       centered={false}
+      stackable={false}
       textAlign="left"
     >
       <div
@@ -957,10 +963,12 @@ exports[`<HostProfile /> should render the right structure 1`] = `
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
     textAlign="left"
   >
     <Grid
       centered={false}
+      stackable={false}
       textAlign="left"
     >
       <div

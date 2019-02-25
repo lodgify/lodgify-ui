@@ -78,9 +78,11 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
     >
       <Grid
         areColumnsCentered={false}
+        isStackable={false}
       >
         <Grid
           centered={false}
+          stackable={false}
         >
           <div
             className="ui grid"
@@ -193,11 +195,13 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                       >
                         <Grid
                           areColumnsCentered={false}
+                          isStackable={false}
                           padded={true}
                         >
                           <Grid
                             centered={false}
                             padded={true}
+                            stackable={false}
                           >
                             <div
                               className="ui padded grid"
@@ -408,6 +412,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                             />
                                             <Grid
                                               areColumnsCentered={false}
+                                              isStackable={false}
                                             >
                                               <GridColumn
                                                 verticalAlignContent="bottom"
@@ -769,6 +774,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                   />
                                                   <Grid
                                                     areColumnsCentered={false}
+                                                    isStackable={false}
                                                   >
                                                     <GridColumn
                                                       verticalAlignContent="bottom"
@@ -1032,9 +1038,11 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
     >
       <Grid
         areColumnsCentered={false}
+        isStackable={false}
       >
         <Grid
           centered={false}
+          stackable={false}
         >
           <div
             className="ui grid"
@@ -1092,11 +1100,13 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
                       >
                         <Grid
                           areColumnsCentered={false}
+                          isStackable={false}
                           padded={true}
                         >
                           <Grid
                             centered={false}
                             padded={true}
+                            stackable={false}
                           >
                             <div
                               className="ui padded grid"
@@ -1279,9 +1289,11 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
     >
       <Grid
         areColumnsCentered={false}
+        isStackable={false}
       >
         <Grid
           centered={false}
+          stackable={false}
         >
           <div
             className="ui grid"
@@ -1394,11 +1406,13 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                       >
                         <Grid
                           areColumnsCentered={false}
+                          isStackable={false}
                           padded={true}
                         >
                           <Grid
                             centered={false}
                             padded={true}
+                            stackable={false}
                           >
                             <div
                               className="ui padded grid"
@@ -1609,6 +1623,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                             />
                                             <Grid
                                               areColumnsCentered={false}
+                                              isStackable={false}
                                             >
                                               <GridColumn
                                                 verticalAlignContent="bottom"
@@ -1943,6 +1958,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                   />
                                                   <Grid
                                                     areColumnsCentered={false}
+                                                    isStackable={false}
                                                   >
                                                     <GridColumn
                                                       verticalAlignContent="bottom"

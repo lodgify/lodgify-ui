@@ -391,9 +391,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                   >
                     <Grid
                       areColumnsCentered={true}
+                      isStackable={false}
                     >
                       <Grid
                         centered={true}
+                        stackable={false}
                       >
                         <div
                           className="ui centered grid"

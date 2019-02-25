@@ -68,10 +68,12 @@ exports[`<Pictures /> should render the correct structure 1`] = `
   <Grid
     areColumnsCentered={false}
     columns={3}
+    isStackable={false}
   >
     <Grid
       centered={false}
       columns={3}
+      stackable={false}
     >
       <div
         className="ui three column grid"
@@ -1181,7 +1183,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         <Grid
                           areColumnsCentered={false}
                           columns={2}
-                          stackable={true}
+                          isStackable={true}
                         >
                           <GridRow
                             horizontalAlignContent="left"

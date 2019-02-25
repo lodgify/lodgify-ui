@@ -32,6 +32,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
   </Heading>
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <GridRow
       horizontalAlignContent="left"
@@ -65,6 +66,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
   >
     <Grid
       areColumnsCentered={false}
+      isStackable={false}
       padded={true}
     >
       <GridRow
@@ -280,6 +282,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
   </Card>
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <GridColumn
       only="mobile"
@@ -323,6 +326,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
   </Heading>
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <GridRow
       horizontalAlignContent="left"
@@ -336,6 +340,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
       >
         <Grid
           areColumnsCentered={false}
+          isStackable={false}
         >
           <GridColumn
             computer={3}
@@ -417,6 +422,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
   >
     <Grid
       areColumnsCentered={false}
+      isStackable={false}
       padded={true}
     >
       <GridRow
@@ -632,6 +638,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
   </Card>
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <GridColumn
       only="mobile"

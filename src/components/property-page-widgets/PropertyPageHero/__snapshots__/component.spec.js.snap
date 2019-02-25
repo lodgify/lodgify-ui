@@ -656,7 +656,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                               <Grid
                                 areColumnsCentered={false}
                                 columns={2}
-                                stackable={true}
+                                isStackable={true}
                               >
                                 <GridRow
                                   horizontalAlignContent="left"

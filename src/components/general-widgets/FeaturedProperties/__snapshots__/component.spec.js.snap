@@ -33,9 +33,11 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <Grid
       centered={false}
+      stackable={false}
     >
       <div
         className="ui grid"
@@ -685,9 +687,11 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <Grid
       centered={false}
+      stackable={false}
     >
       <div
         className="ui grid"
@@ -1345,9 +1349,11 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
 >
   <Grid
     areColumnsCentered={false}
+    isStackable={false}
   >
     <Grid
       centered={false}
+      stackable={false}
     >
       <div
         className="ui grid"
