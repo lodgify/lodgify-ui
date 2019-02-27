@@ -120,9 +120,12 @@ Component.propTypes = {
       subItems: PropTypes.arrayOf(
         PropTypes.shape({
           href: PropTypes.string.isRequired,
+          target: PropTypes.string,
           text: PropTypes.string.isRequired,
         })
       ),
+      /** Specifies where to display the linked navigation items URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
+      target: PropTypes.string,
       /** The visible text for an item. */
       text: PropTypes.string.isRequired,
     })

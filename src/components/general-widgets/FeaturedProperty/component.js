@@ -29,8 +29,9 @@ export const Component = ({
   propertyType,
   propertyUrl,
   ratingNumber,
+  propertyUrlTarget,
 }) => (
-  <Card className="has-featured" href={propertyUrl}>
+  <Card className="has-featured" href={propertyUrl} target={propertyUrlTarget}>
     {isShowingPlaceholder ? (
       getCardPlaceholderMarkup()
     ) : (
@@ -71,6 +72,7 @@ Component.defaultProps = {
   imageSrcSet: undefined,
   isShowingPlaceholder: false,
   placeholderImageUrl: undefined,
+  propertyUrlTarget: '_self',
 };
 
 Component.propTypes = {
@@ -100,6 +102,8 @@ Component.propTypes = {
   propertyType: PropTypes.string.isRequired,
   /** URL pointing to a page with details of the property. */
   propertyUrl: PropTypes.string.isRequired,
+  /** Specifies where to display the linked featured property URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
+  propertyUrlTarget: PropTypes.string,
   /** The numeral rating for the property, out of 5 */
   ratingNumber: PropTypes.number.isRequired,
 };

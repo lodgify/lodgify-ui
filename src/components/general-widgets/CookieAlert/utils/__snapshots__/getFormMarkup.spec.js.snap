@@ -21,7 +21,7 @@ exports[`\`getFormMarkup\` should render the right structure 1`] = `
     href="Bup"
     isPositionedRight={false}
     onClick={[Function]}
-    willOpenInNewTab={false}
+    willOpenInNewTab={true}
   >
     Bip
   </Link>

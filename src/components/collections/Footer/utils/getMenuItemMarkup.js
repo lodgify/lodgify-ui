@@ -11,8 +11,13 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
  * @return {Object}
  */
 // eslint-disable-next-line react/prop-types
-export const getMenuItemMarkup = ({ href, text }, index) => (
-  <Menu.Item href={href} key={buildKeyFromStrings(text, index)} link>
+export const getMenuItemMarkup = ({ href, text, target }, index) => (
+  <Menu.Item
+    href={href}
+    key={buildKeyFromStrings(text, index)}
+    link
+    target={target}
+  >
     {text}
   </Menu.Item>
 );

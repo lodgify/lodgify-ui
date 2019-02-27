@@ -21,6 +21,8 @@ export const getFormMarkup = (
 ) => (
   <Form onSubmit={onAccept} submitButtonText={buttonText}>
     <Paragraph>{text}</Paragraph>
-    <Link href={linkUrl}>{linkText}</Link>
+    <Link href={linkUrl} willOpenInNewTab>
+      {linkText}
+    </Link>
   </Form>
 );

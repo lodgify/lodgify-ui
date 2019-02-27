@@ -4,6 +4,7 @@ exports[`<FeaturedProperty /> if \`props.isShowingPlaceholder\` is passed should
 <Card
   className="has-featured"
   href="/"
+  target="_self"
 >
   <BlockPlaceholder
     isFluid={false}
@@ -43,6 +44,7 @@ exports[`<FeaturedProperty /> should render the right structure 1`] = `
 <Card
   className="has-featured"
   href="/"
+  target="_self"
 >
   <ResponsiveImage
     alternativeText="Image Widget"

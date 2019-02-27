@@ -60,7 +60,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
               href="/"
               isPositionedRight={false}
               onClick={[Function]}
-              willOpenInNewTab={false}
+              willOpenInNewTab={true}
             >
               A link
             </Link>
@@ -134,7 +134,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                       class="ui basic left floated button"
                       href="/"
                       role="button"
-                      target="_self"
+                      target="_blank"
                     >
                       A link
                     </a>
@@ -249,7 +249,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                         onBlur={[Function]}
                         onChange={[Function]}
                         onClick={[Function]}
-                        willOpenInNewTab={false}
+                        willOpenInNewTab={true}
                       >
                         <Button
                           as="a"
@@ -257,14 +257,14 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                           floated="left"
                           href="/"
                           onClick={[Function]}
-                          target="_self"
+                          target="_blank"
                         >
                           <a
                             className="ui basic left floated button"
                             href="/"
                             onClick={[Function]}
                             role="button"
-                            target="_self"
+                            target="_blank"
                           >
                             A link
                           </a>
@@ -364,7 +364,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
               href="/"
               isPositionedRight={false}
               onClick={[Function]}
-              willOpenInNewTab={false}
+              willOpenInNewTab={true}
             >
               A link
             </Link>
@@ -438,7 +438,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                       class="ui basic left floated button"
                       href="/"
                       role="button"
-                      target="_self"
+                      target="_blank"
                     >
                       A link
                     </a>
@@ -484,7 +484,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                       class="ui basic left floated button"
                       href="/"
                       role="button"
-                      target="_self"
+                      target="_blank"
                     >
                       A link
                     </a>

@@ -10,9 +10,10 @@ import { getLinkMarkup } from './getLinkMarkup';
 const text = 'someText';
 const href = 'someHref';
 const index = 0;
+const target = '🎯';
 
 const getLinkMarkupAsComponent = activeNavigationItemIndex =>
-  shallow(getLinkMarkup(text, href, index, activeNavigationItemIndex));
+  shallow(getLinkMarkup(text, href, target, index, activeNavigationItemIndex));
 
 describe('getLinkMarkup', () => {
   it('should return a Semantic UI `Menu.Item` link component', () => {
