@@ -1,3 +1,11 @@
+# [1.144.0](https://github.com/lodgify/lodgify-ui/compare/v1.143.0...v1.144.0) (2019-02-26)
+
+
+### Features
+
+* **Amenities:** add props.isStackable to grid ([d02a362](https://github.com/lodgify/lodgify-ui/commit/d02a362))
+* **Grid:** expose props.isStackable ([225f6b8](https://github.com/lodgify/lodgify-ui/commit/225f6b8))
+
 # [1.143.0](https://github.com/lodgify/lodgify-ui/compare/v1.142.0...v1.143.0) (2019-02-21)
 
 
