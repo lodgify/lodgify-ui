@@ -1,3 +1,17 @@
+# [1.145.0](https://github.com/lodgify/lodgify-ui/compare/v1.144.0...v1.145.0) (2019-02-27)
+
+
+### Features
+
+* **CookieAlert:** more info link opens in new tab ([5467308](https://github.com/lodgify/lodgify-ui/commit/5467308))
+* **FeaturedProperty:** expose propertyUrlTarget prop ([66985ea](https://github.com/lodgify/lodgify-ui/commit/66985ea))
+* **FeaturedRoomType:** expose roomTypeUrlTarget prop ([b1e700f](https://github.com/lodgify/lodgify-ui/commit/b1e700f))
+* **Footer:** expose target prop for  menu items ([9d4e6d8](https://github.com/lodgify/lodgify-ui/commit/9d4e6d8))
+* **Header:** expose target props for menu items ([084c961](https://github.com/lodgify/lodgify-ui/commit/084c961))
+* **HomepageHero:** expose target prop for headerNavigationItems ([874348a](https://github.com/lodgify/lodgify-ui/commit/874348a))
+* **PropertyPageHero:** expose target prop from headerNavigationItems ([dffef0f](https://github.com/lodgify/lodgify-ui/commit/dffef0f))
+* **Submenu:** expose target prop for menu items ([8aeb8a4](https://github.com/lodgify/lodgify-ui/commit/8aeb8a4))
+
 # [1.144.0](https://github.com/lodgify/lodgify-ui/compare/v1.143.0...v1.144.0) (2019-02-26)
 
 
