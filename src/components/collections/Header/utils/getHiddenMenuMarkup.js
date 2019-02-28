@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Menu, Accordion } from 'semantic-ui-react';
 import { size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
+import { Button } from 'elements/Button';
 
 import { getLogoMarkup } from './getLogoMarkup';
 import { getLinkMarkup } from './getLinkMarkup';
@@ -27,51 +28,61 @@ export const getHiddenMenuMarkup = ({
   logoSrcSet,
   logoText,
   navigationItems,
+  primaryCTA,
   /* eslint-enable react/prop-types */
 }) => (
-  <Menu.Item className="no-underline">
-    <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
-      {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
-      <Menu text vertical>
-        {navigationItems.map(
-          ({ subItems, text, target: navigationItemTarget, href }, index) =>
-            size(subItems) ? (
-              <Accordion
-                as={Menu.Item}
-                key={buildKeyFromStrings(text, index)}
-                panels={[
-                  {
-                    title: {
-                      content: text,
-                      key: buildKeyFromStrings(text, index),
+  <Fragment>
+    {primaryCTA && (
+      <Menu.Item className="no-underline" link>
+        <Button isRounded onClick={primaryCTA.onClick}>
+          {primaryCTA.text}
+        </Button>
+      </Menu.Item>
+    )}
+    <Menu.Item className="no-underline">
+      <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
+        {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
+        <Menu text vertical>
+          {navigationItems.map(
+            ({ subItems, text, target: navigationItemTarget, href }, index) =>
+              size(subItems) ? (
+                <Accordion
+                  as={Menu.Item}
+                  key={buildKeyFromStrings(text, index)}
+                  panels={[
+                    {
+                      title: {
+                        content: text,
+                        key: buildKeyFromStrings(text, index),
+                      },
+                      content: {
+                        content: subItems.map(
+                          ({ text, target: subItemTarget, href }, index) =>
+                            getLinkMarkup(
+                              text,
+                              href,
+                              subItemTarget,
+                              index,
+                              activeNavigationItemIndex
+                            )
+                        ),
+                        key: buildKeyFromStrings(index, text),
+                      },
                     },
-                    content: {
-                      content: subItems.map(
-                        ({ text, target: subItemTarget, href }, index) =>
-                          getLinkMarkup(
-                            text,
-                            href,
-                            subItemTarget,
-                            index,
-                            activeNavigationItemIndex
-                          )
-                      ),
-                      key: buildKeyFromStrings(index, text),
-                    },
-                  },
-                ]}
-              />
-            ) : (
-              getLinkMarkup(
-                text,
-                href,
-                navigationItemTarget,
-                index,
-                activeNavigationItemIndex
+                  ]}
+                />
+              ) : (
+                getLinkMarkup(
+                  text,
+                  href,
+                  navigationItemTarget,
+                  index,
+                  activeNavigationItemIndex
+                )
               )
-            )
-        )}
-      </Menu>
-    </Modal>
-  </Menu.Item>
+          )}
+        </Menu>
+      </Modal>
+    </Menu.Item>
+  </Fragment>
 );
