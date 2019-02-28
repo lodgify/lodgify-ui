@@ -9,6 +9,10 @@ const logoSizes = 'someLogoSizes';
 const logoSrc = 'someLogoSrc';
 const logoSrcSet = 'someLogoSrcSet';
 const logoText = 'someLogoText';
+const primaryCTA = {
+  onClick: Function,
+  text: 'some Elisabeth',
+};
 
 const getMarkupAsRenderedComponent = extraProps =>
   mount(
@@ -21,12 +25,11 @@ const getMarkupAsRenderedComponent = extraProps =>
         logoSrcSet,
         logoText,
         navigationItems,
+        primaryCTA,
         ...extraProps,
       })}
     </div>
-  )
-    .children()
-    .first();
+  ).children();
 
 describe('getHiddenMenuMarkup', () => {
   it('should render the right structure', () => {

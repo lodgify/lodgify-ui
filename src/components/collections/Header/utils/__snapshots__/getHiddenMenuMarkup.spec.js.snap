@@ -1,149 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getHiddenMenuMarkup should render the right structure 1`] = `
-<MenuItem
-  className="no-underline"
->
-  <div
-    className="item no-underline"
-    onClick={[Function]}
+Array [
+  <MenuItem
+    className="no-underline"
+    link={true}
   >
-    <Modal
-      hasCloseIcon={true}
-      hasRoundedCorners={false}
-      isFullscreen={true}
-      onClose={[Function]}
-      size="tiny"
-      trigger={
-        <Icon
-          color={null}
-          hasBorder={false}
-          isButton={false}
-          isCircular={false}
-          isColorInverted={false}
-          isDisabled={false}
-          isLabelLeft={false}
-          labelText={null}
-          labelWeight={null}
-          name="bars"
-          path={null}
+    <div
+      className="link item no-underline"
+      onClick={[Function]}
+    >
+      <Button
+        hasShadow={false}
+        icon={null}
+        isCompact={false}
+        isDisabled={false}
+        isLoading={false}
+        isPositionedRight={false}
+        isRounded={true}
+        isSecondary={false}
+        onClick={[Function]}
+        size={null}
+      >
+        <Button
+          as="button"
+          circular={true}
+          className=""
+          compact={false}
+          disabled={false}
+          floated="left"
+          loading={false}
+          onClick={[Function]}
+          secondary={false}
           size={null}
-        />
-      }
+        >
+          <button
+            className="ui circular left floated button"
+            onClick={[Function]}
+            role="button"
+          >
+            some Elisabeth
+          </button>
+        </Button>
+      </Button>
+    </div>
+  </MenuItem>,
+  <MenuItem
+    className="no-underline"
+  >
+    <div
+      className="item no-underline"
+      onClick={[Function]}
     >
       <Modal
-        className=""
-        closeIcon={
-          <Icon
-            color={null}
-            hasBorder={false}
-            isButton={false}
-            isCircular={false}
-            isColorInverted={false}
-            isDisabled={false}
-            isLabelLeft={false}
-            labelText={null}
-            labelWeight={null}
-            name="close"
-            path={null}
-            size={null}
-          />
-        }
-        closeOnDimmerClick={true}
-        closeOnDocumentClick={false}
-        content={
-          Array [
-            <MenuItem
-              href="/"
-              link={true}
-            >
-              <Image
-                alt="someLogoText"
-                as="img"
-                sizes="someLogoSizes"
-                src="someLogoSrc"
-                srcSet="someLogoSrcSet"
-                ui={true}
-              />
-            </MenuItem>,
-            <Menu
-              text={true}
-              vertical={true}
-            >
-              <MenuItem
-                active={true}
-                href="/"
-                link={true}
-              >
-                Home
-              </MenuItem>
-              <Accordion
-                as={[Function]}
-                panels={
-                  Array [
-                    Object {
-                      "content": Object {
-                        "content": Array [
-                          <MenuItem
-                            active={true}
-                            href="/la-casa-viva"
-                            link={true}
-                          >
-                            La Casa Viva
-                          </MenuItem>,
-                          <MenuItem
-                            active={false}
-                            href="/la-casa-muerta"
-                            link={true}
-                          >
-                            La Casa Muerta
-                          </MenuItem>,
-                          <MenuItem
-                            active={false}
-                            href="/the-white-lodge"
-                            link={true}
-                          >
-                            The White Lodge
-                          </MenuItem>,
-                          <MenuItem
-                            active={false}
-                            href="/the-black-lodge"
-                            link={true}
-                          >
-                            The Black Lodge
-                          </MenuItem>,
-                        ],
-                        "key": "1All properties",
-                      },
-                      "title": Object {
-                        "content": "All properties",
-                        "key": "All properties1",
-                      },
-                    },
-                  ]
-                }
-              />
-              <MenuItem
-                active={false}
-                href="/"
-                link={true}
-              >
-                Contact Us
-              </MenuItem>
-              <MenuItem
-                active={false}
-                href="/"
-                link={true}
-              >
-                What to do
-              </MenuItem>
-            </Menu>,
-          ]
-        }
-        dimmer="inverted"
-        eventPool="Modal"
+        hasCloseIcon={true}
+        hasRoundedCorners={false}
+        isFullscreen={true}
         onClose={[Function]}
-        size="fullscreen"
+        size="tiny"
         trigger={
           <Icon
             color={null}
@@ -161,18 +75,119 @@ exports[`getHiddenMenuMarkup should render the right structure 1`] = `
           />
         }
       >
-        <Portal
-          className="ui inverted page modals dimmer transition visible active"
+        <Modal
+          className=""
+          closeIcon={
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="close"
+              path={null}
+              size={null}
+            />
+          }
+          closeOnDimmerClick={true}
           closeOnDocumentClick={false}
-          closeOnEscape={true}
-          closeOnRootNodeClick={true}
+          content={
+            Array [
+              <MenuItem
+                href="/"
+                link={true}
+              >
+                <Image
+                  alt="someLogoText"
+                  as="img"
+                  sizes="someLogoSizes"
+                  src="someLogoSrc"
+                  srcSet="someLogoSrcSet"
+                  ui={true}
+                />
+              </MenuItem>,
+              <Menu
+                text={true}
+                vertical={true}
+              >
+                <MenuItem
+                  active={true}
+                  href="/"
+                  link={true}
+                >
+                  Home
+                </MenuItem>
+                <Accordion
+                  as={[Function]}
+                  panels={
+                    Array [
+                      Object {
+                        "content": Object {
+                          "content": Array [
+                            <MenuItem
+                              active={true}
+                              href="/la-casa-viva"
+                              link={true}
+                            >
+                              La Casa Viva
+                            </MenuItem>,
+                            <MenuItem
+                              active={false}
+                              href="/la-casa-muerta"
+                              link={true}
+                            >
+                              La Casa Muerta
+                            </MenuItem>,
+                            <MenuItem
+                              active={false}
+                              href="/the-white-lodge"
+                              link={true}
+                            >
+                              The White Lodge
+                            </MenuItem>,
+                            <MenuItem
+                              active={false}
+                              href="/the-black-lodge"
+                              link={true}
+                            >
+                              The Black Lodge
+                            </MenuItem>,
+                          ],
+                          "key": "1All properties",
+                        },
+                        "title": Object {
+                          "content": "All properties",
+                          "key": "All properties1",
+                        },
+                      },
+                    ]
+                  }
+                />
+                <MenuItem
+                  active={false}
+                  href="/"
+                  link={true}
+                >
+                  Contact Us
+                </MenuItem>
+                <MenuItem
+                  active={false}
+                  href="/"
+                  link={true}
+                >
+                  What to do
+                </MenuItem>
+              </Menu>,
+            ]
+          }
+          dimmer="inverted"
           eventPool="Modal"
-          mountNode={<body />}
           onClose={[Function]}
-          onMount={[Function]}
-          onOpen={[Function]}
-          onUnmount={[Function]}
-          openOnTriggerClick={true}
+          size="fullscreen"
           trigger={
             <Icon
               color={null}
@@ -190,50 +205,80 @@ exports[`getHiddenMenuMarkup should render the right structure 1`] = `
             />
           }
         >
-          <Ref
-            innerRef={[Function]}
+          <Portal
+            className="ui inverted page modals dimmer transition visible active"
+            closeOnDocumentClick={false}
+            closeOnEscape={true}
+            closeOnRootNodeClick={true}
+            eventPool="Modal"
+            mountNode={<body />}
+            onClose={[Function]}
+            onMount={[Function]}
+            onOpen={[Function]}
+            onUnmount={[Function]}
+            openOnTriggerClick={true}
+            trigger={
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="bars"
+                path={null}
+                size={null}
+              />
+            }
           >
-            <Icon
-              color={null}
-              hasBorder={false}
-              isButton={false}
-              isCircular={false}
-              isColorInverted={false}
-              isDisabled={false}
-              isLabelLeft={false}
-              labelText={null}
-              labelWeight={null}
-              name="bars"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              path={null}
-              size={null}
+            <Ref
+              innerRef={[Function]}
             >
-              <i
-                className="icon"
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="bars"
                 onBlur={[Function]}
                 onClick={[Function]}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
+                path={null}
+                size={null}
               >
-                <svg
-                  viewBox="0 0 24 24"
+                <i
+                  className="icon"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
                 >
-                  <path
-                    d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </i>
-            </Icon>
-          </Ref>
-        </Portal>
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </i>
+              </Icon>
+            </Ref>
+          </Portal>
+        </Modal>
       </Modal>
-    </Modal>
-  </div>
-</MenuItem>
+    </div>
+  </MenuItem>,
+]
 `;
