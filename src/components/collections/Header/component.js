@@ -57,6 +57,7 @@ export class Component extends PureComponent {
   render = () => {
     const {
       isBackgroundFilled,
+      logoHref,
       logoText,
       logoSrc,
       logoSizes,
@@ -73,7 +74,7 @@ export class Component extends PureComponent {
         ref={this.createHeaderRef}
       >
         <HorizontalGutters as={Menu} borderless text>
-          {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
+          {getLogoMarkup(logoHref, logoText, logoSrc, logoSizes, logoSrcSet)}
           <Menu.Menu position="right">
             {isMenuHidden
               ? getHiddenMenuMarkup(this.props)
@@ -90,6 +91,7 @@ Component.displayName = 'Header';
 Component.defaultProps = {
   activeNavigationItemIndex: null,
   isBackgroundFilled: false,
+  logoHref: '/',
   logoSizes: undefined,
   logoSrc: null,
   logoSrcSet: undefined,
@@ -102,6 +104,8 @@ Component.propTypes = {
   activeNavigationItemIndex: PropTypes.number,
   /** Is the background filled with a color defined in CSS. */
   isBackgroundFilled: PropTypes.bool,
+  /** The href for the logo link. */
+  logoHref: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   logoSizes: PropTypes.string,
   /** The src url for the logo. */
