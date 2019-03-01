@@ -91,6 +91,7 @@ exports[`<Slideshow /> by default should return the right structure 1`] = `
       ]
     }
     lazyLoad={true}
+    onSlide={[Function]}
     renderLeftNav={[Function]}
     renderRightNav={[Function]}
     showBullets={true}
@@ -194,6 +195,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
       ]
     }
     lazyLoad={true}
+    onSlide={[Function]}
     renderLeftNav={[Function]}
     renderRightNav={[Function]}
     showBullets={true}
@@ -297,6 +299,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
       ]
     }
     lazyLoad={true}
+    onSlide={[Function]}
     renderLeftNav={[Function]}
     renderRightNav={[Function]}
     showBullets={true}
@@ -400,6 +403,60 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
       ]
     }
     lazyLoad={true}
+    onSlide={[Function]}
+    renderLeftNav={[Function]}
+    renderRightNav={[Function]}
+    showBullets={true}
+    showFullscreenButton={false}
+    showPlayButton={false}
+    showThumbnails={false}
+  >
+    <div />
+  </ImageGallery>
+</Slideshow>
+`;
+
+exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the right structure 1`] = `
+<Slideshow
+  hasShadow={true}
+  headingText={null}
+  images={
+    Array [
+      Object {
+        "descriptionText": "frrrrrp",
+        "url": "some url",
+      },
+    ]
+  }
+  isRounded={true}
+  isShowingBulletNavigation={true}
+  isStretched={false}
+>
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    <p
+      className=""
+    >
+      frrrrrp
+    </p>
+  </Paragraph>
+  <ImageGallery
+    additionalClass=""
+    items={
+      Array [
+        Object {
+          "original": "some url",
+          "originalAlt": undefined,
+          "originalTitle": undefined,
+          "sizes": undefined,
+          "srcSet": undefined,
+        },
+      ]
+    }
+    lazyLoad={true}
+    onSlide={[Function]}
     renderLeftNav={[Function]}
     renderRightNav={[Function]}
     showBullets={true}
@@ -522,6 +579,7 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
       ]
     }
     lazyLoad={true}
+    onSlide={[Function]}
     renderLeftNav={[Function]}
     renderRightNav={[Function]}
     showBullets={true}
