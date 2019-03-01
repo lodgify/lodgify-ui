@@ -2,12 +2,12 @@
 
 exports[`getLogoMarkup by default should render the right structure 1`] = `
 <MenuItem
-  href="/"
+  href="someLogoHref"
   link={true}
 >
   <a
     className="link item"
-    href="/"
+    href="someLogoHref"
     onClick={[Function]}
   >
     <Heading
@@ -35,12 +35,12 @@ exports[`getLogoMarkup by default should render the right structure 1`] = `
 
 exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are passed should render the right structure 1`] = `
 <MenuItem
-  href="/"
+  href="someLogoHref"
   link={true}
 >
   <a
     className="link item"
-    href="/"
+    href="someLogoHref"
     onClick={[Function]}
   >
     <Image

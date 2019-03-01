@@ -19,6 +19,7 @@ export const Component = ({
   backgroundImageWidth,
   bottomOffset,
   children,
+  headerLogoHref,
   headerLogoSizes,
   headerLogoSrc,
   headerLogoSrcSet,
@@ -39,6 +40,7 @@ export const Component = ({
   >
     <Header
       activeNavigationItemIndex={activeNavigationItemIndex}
+      logoHref={headerLogoHref}
       logoSizes={headerLogoSizes}
       logoSrc={headerLogoSrc}
       logoSrcSet={headerLogoSrcSet}
@@ -60,6 +62,7 @@ Component.defaultProps = {
   backgroundImageWidth: undefined,
   bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
+  headerLogoHref: undefined,
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
@@ -90,6 +93,8 @@ Component.propTypes = {
   bottomOffset: PropTypes.string,
   /** The children displayed between the header and the bottom of the hero. */
   children: PropTypes.node,
+  /** The href for the header logo link. */
+  headerLogoHref: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   headerLogoSizes: PropTypes.string,
   /** The src url for the logo in the header. */

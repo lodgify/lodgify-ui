@@ -2,13 +2,14 @@ import { mount } from 'enzyme';
 
 import { getLogoMarkup } from './getLogoMarkup';
 
+const logoHref = 'someLogoHref';
 const logoText = 'someLogoText';
 const logoSrc = 'someLogoSrc';
 const sizes = 'someSizes';
 const srcSet = 'someSrcSet';
 
 const getLogoMarkupAsComponent = (props = []) =>
-  mount(getLogoMarkup(logoText, ...props));
+  mount(getLogoMarkup(logoHref, logoText, ...props));
 
 describe('getLogoMarkup', () => {
   describe('by default', () => {
