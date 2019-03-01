@@ -1705,6 +1705,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     ]
                                   }
                                   lazyLoad={true}
+                                  onSlide={[Function]}
                                   renderLeftNav={[Function]}
                                   renderRightNav={[Function]}
                                   showBullets={false}
@@ -2860,6 +2861,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     ]
                                   }
                                   lazyLoad={true}
+                                  onSlide={[Function]}
                                   renderLeftNav={[Function]}
                                   renderRightNav={[Function]}
                                   showBullets={false}

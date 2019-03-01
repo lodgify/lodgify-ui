@@ -220,6 +220,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
           ]
         }
         lazyLoad={true}
+        onSlide={[Function]}
         preventDefaultTouchmoveEvent={false}
         renderFullscreenButton={[Function]}
         renderLeftNav={[Function]}
@@ -708,6 +709,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
           ]
         }
         lazyLoad={true}
+        onSlide={[Function]}
         preventDefaultTouchmoveEvent={false}
         renderFullscreenButton={[Function]}
         renderLeftNav={[Function]}
@@ -1344,6 +1346,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
           ]
         }
         lazyLoad={true}
+        onSlide={[Function]}
         preventDefaultTouchmoveEvent={false}
         renderFullscreenButton={[Function]}
         renderLeftNav={[Function]}
@@ -2128,6 +2131,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
           ]
         }
         lazyLoad={true}
+        onSlide={[Function]}
         preventDefaultTouchmoveEvent={false}
         renderFullscreenButton={[Function]}
         renderLeftNav={[Function]}

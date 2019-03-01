@@ -165,6 +165,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                               ]
                             }
                             lazyLoad={true}
+                            onSlide={[Function]}
                             renderLeftNav={[Function]}
                             renderRightNav={[Function]}
                             showBullets={false}
@@ -1376,6 +1377,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                               ]
                             }
                             lazyLoad={true}
+                            onSlide={[Function]}
                             renderLeftNav={[Function]}
                             renderRightNav={[Function]}
                             showBullets={false}
