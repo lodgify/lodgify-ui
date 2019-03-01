@@ -6,4 +6,4 @@
 export const getReviewerNameAndLocationString = (
   reviewerLocation,
   reviewerName
-) => `${reviewerName} (${reviewerLocation})`;
+) => `${reviewerLocation} (${reviewerName})`;

@@ -274,7 +274,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                   <span
                                     className="ui sub header"
                                   >
-                                    someLocation (someName)
+                                    someName (someLocation)
                                   </span>
                                 </Subheading>
                               </div>
@@ -703,7 +703,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                   <span
                                     className="ui sub header"
                                   >
-                                    someLocation (someName)
+                                    someName (someLocation)
                                   </span>
                                 </Subheading>
                               </div>
