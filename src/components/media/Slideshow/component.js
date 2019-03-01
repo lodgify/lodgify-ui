@@ -1,9 +1,11 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ImageGallery from 'react-image-gallery';
+import { get } from 'lodash';
 import getClassNames from 'classnames';
 
 import { Heading } from 'typography/Heading';
+import { Paragraph } from 'typography/Paragraph';
 import { ICON_NAMES } from 'elements/Icon';
 
 import { adaptImages } from './utils/adaptImages';
@@ -13,35 +15,50 @@ import { renderNavButton } from './utils/renderNavButton';
  * A slideshow displays a series of images.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({
-  hasShadow,
-  headingText,
-  images,
-  isRounded,
-  isShowingBulletNavigation,
-  isStretched,
-}) => (
-  <Fragment>
-    {headingText && <Heading>{headingText}</Heading>}
-    <ImageGallery
-      additionalClass={getClassNames('', {
-        'fit-height': isStretched,
-        'no-shadow': !hasShadow,
-        'no-border-radius': !isRounded,
-      })}
-      // Note: styles for the pagination controls
-      // live in `styles/semantic/themes/livingstone/collections/menu.*`
-      items={adaptImages(images)}
-      lazyLoad
-      renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
-      renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
-      showBullets={isShowingBulletNavigation}
-      showFullscreenButton={false}
-      showPlayButton={false}
-      showThumbnails={false}
-    />
-  </Fragment>
-);
+export class Component extends PureComponent {
+  state = {
+    index: 0,
+  };
+
+  handleSlide = index => this.setState({ index });
+
+  render = () => {
+    const {
+      hasShadow,
+      headingText,
+      images,
+      isRounded,
+      isShowingBulletNavigation,
+      isStretched,
+    } = this.props;
+    const descriptionText = get(images, [this.state.index, 'descriptionText']);
+
+    return (
+      <Fragment>
+        {headingText && <Heading>{headingText}</Heading>}
+        {descriptionText && <Paragraph>{descriptionText}</Paragraph>}
+        <ImageGallery
+          additionalClass={getClassNames('', {
+            'fit-height': isStretched,
+            'no-shadow': !hasShadow,
+            'no-border-radius': !isRounded,
+          })}
+          // Note: styles for the pagination controls
+          // live in `styles/semantic/themes/livingstone/collections/menu.*`
+          items={adaptImages(images)}
+          lazyLoad
+          onSlide={this.handleSlide}
+          renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
+          renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
+          showBullets={isShowingBulletNavigation}
+          showFullscreenButton={false}
+          showPlayButton={false}
+          showThumbnails={false}
+        />
+      </Fragment>
+    );
+  };
+}
 
 Component.displayName = 'Slideshow';
 
@@ -63,6 +80,8 @@ Component.propTypes = {
     PropTypes.shape({
       /** Alternative text to show if the image can't be loaded by the browser. */
       alternativeText: PropTypes.string,
+      /** A description of the image to show above the slideshow when the image is showing. */
+      descriptionText: PropTypes.string,
       /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
       sizes: PropTypes.string,
       /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
