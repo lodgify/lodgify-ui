@@ -1,3 +1,10 @@
+# [1.149.0](https://github.com/lodgify/lodgify-ui/compare/v1.148.0...v1.149.0) (2019-03-01)
+
+
+### Features
+
+* **Slideshow:** expose props.images[n].descriptionText ([0c56aed](https://github.com/lodgify/lodgify-ui/commit/0c56aed))
+
 # [1.148.0](https://github.com/lodgify/lodgify-ui/compare/v1.147.1...v1.148.0) (2019-03-01)
 
 
