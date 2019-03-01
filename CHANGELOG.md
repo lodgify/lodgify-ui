@@ -1,3 +1,10 @@
+# [1.146.0](https://github.com/lodgify/lodgify-ui/compare/v1.145.0...v1.146.0) (2019-03-01)
+
+
+### Features
+
+* **getHiddenMenuMarkup:** implement primaryCTA for hidden menu markup ([89744fb](https://github.com/lodgify/lodgify-ui/commit/89744fb))
+
 # [1.145.0](https://github.com/lodgify/lodgify-ui/compare/v1.144.0...v1.145.0) (2019-02-27)
 
 
