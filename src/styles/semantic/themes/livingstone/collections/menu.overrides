@@ -268,9 +268,11 @@ header {
     background-color: var(@themeBackgroundColorIdentifier, @themeBackgroundColorDefault);
   }
 
-  transition: @headerMenuOpacityTransition;
+  > * {
+    transition: @headerMenuOpacityTransition;
+  }
 
-  &.is-transparent {
+  &.is-transparent > * {
     opacity: 0;
   }
 
