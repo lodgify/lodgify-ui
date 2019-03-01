@@ -1,3 +1,10 @@
+## [1.149.1](https://github.com/lodgify/lodgify-ui/compare/v1.149.0...v1.149.1) (2019-03-01)
+
+
+### Bug Fixes
+
+* **livingstone:** adjust zindex of propertysearch and cookie modal ([cfd81ba](https://github.com/lodgify/lodgify-ui/commit/cfd81ba))
+
 # [1.149.0](https://github.com/lodgify/lodgify-ui/compare/v1.148.0...v1.149.0) (2019-03-01)
 
 
