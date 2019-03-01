@@ -1,3 +1,15 @@
+# [1.148.0](https://github.com/lodgify/lodgify-ui/compare/v1.147.1...v1.148.0) (2019-03-01)
+
+
+### Bug Fixes
+
+* **Form:** skip isRequired checks when form is cleared ([d068144](https://github.com/lodgify/lodgify-ui/commit/d068144))
+
+
+### Features
+
+* **rating.overrides:**  remove outline for static ratings ([080ccdb](https://github.com/lodgify/lodgify-ui/commit/080ccdb))
+
 ## [1.147.1](https://github.com/lodgify/lodgify-ui/compare/v1.147.0...v1.147.1) (2019-03-01)
 
 
