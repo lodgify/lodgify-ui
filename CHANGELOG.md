@@ -1,3 +1,10 @@
+## [1.149.2](https://github.com/lodgify/lodgify-ui/compare/v1.149.1...v1.149.2) (2019-03-01)
+
+
+### Bug Fixes
+
+* **Header:** apply opacity transition to child menu not header ([16e72d6](https://github.com/lodgify/lodgify-ui/commit/16e72d6))
+
 ## [1.149.1](https://github.com/lodgify/lodgify-ui/compare/v1.149.0...v1.149.1) (2019-03-01)
 
 
