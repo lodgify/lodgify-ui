@@ -11,7 +11,7 @@ jest.mock('react-image-gallery', () => {
 });
 
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Slideshow } from './component';
@@ -33,6 +33,20 @@ describe('<Slideshow />', () => {
 
     it('should return the right structure', () => {
       const actual = getSlideshow({ headingText });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `images` have `descriptionText`', () => {
+    it('should return the right structure', () => {
+      const images = [
+        {
+          descriptionText: 'frrrrrp',
+          url: 'some url',
+        },
+      ];
+      const actual = getSlideshow({ images });
 
       expect(actual).toMatchSnapshot();
     });
@@ -65,6 +79,19 @@ describe('<Slideshow />', () => {
       });
 
       expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('`handleSlide`', () => {
+    it('should call `setState` with the right arguments', () => {
+      const wrapper = shallow(<Slideshow images={images} />);
+      const index = 999;
+
+      wrapper.instance().setState = jest.fn();
+      wrapper.update();
+      wrapper.instance().handleSlide(index);
+
+      expect(wrapper.instance().setState).toHaveBeenCalledWith({ index });
     });
   });
 

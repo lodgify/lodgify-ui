@@ -1,7 +1,7 @@
 import React, { PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Form, Message } from 'semantic-ui-react';
-import { size, forEach } from 'lodash';
+import { isEqual, size, forEach } from 'lodash';
 
 import { Button } from 'elements/Button';
 import { Heading } from 'typography/Heading';
@@ -9,9 +9,10 @@ import { Link } from 'elements/Link';
 import { SEND } from 'utils/default-strings';
 
 import { getEmptyState } from './utils/getEmptyState';
+import { getValidationState } from './utils/getValidationState';
+import { setInputState } from './utils/setInputState';
+import { getIsRequiredState } from './utils/getIsRequiredState';
 import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
-import { getIsRequiredErrorThenSetState } from './utils/getIsRequiredErrorThenSetState';
-import { getIsValidError } from './utils/getIsValidError';
 import { getEmptyRequiredInputs } from './utils/getEmptyRequiredInputs';
 import { getFormChild } from './utils/getFormChild';
 import { getIsSubmitButtonDisabled } from './utils/getIsSubmitButtonDisabled';
@@ -23,42 +24,43 @@ import { getIsSubmitButtonDisabled } from './utils/getIsSubmitButtonDisabled';
 export class Component extends PureComponent {
   state = {};
 
-  componentDidUpdate = previousProps => {
+  componentDidUpdate = (previousProps, previousState) => {
     if (!previousProps.successMessage && !!this.props.successMessage) {
       const emptyState = getEmptyState(this.state);
 
       this.setState(emptyState);
     }
+
+    Object.entries(this.state).forEach(([inputName, inputState]) => {
+      const previousInputState = previousState[inputName] || {};
+
+      if (isEqual(previousInputState, inputState)) return;
+
+      if (previousInputState.value !== inputState.value) {
+        const validationState = getValidationState(
+          this.props.validation[inputName],
+          inputState.value
+        );
+
+        setInputState(this, inputName, validationState);
+        return;
+      }
+
+      if (!previousInputState.isBlurred && inputState.isBlurred) {
+        const isRequiredState = getIsRequiredState(
+          this.props.validation[inputName],
+          inputState
+        );
+
+        setInputState(this, inputName, isRequiredState);
+      }
+    });
   };
 
-  handleInputBlur = name =>
-    getIsRequiredErrorThenSetState(
-      this.setState.bind(this),
-      this.props.validation[name],
-      name,
-      this.state[name]
-    );
+  handleInputBlur = name => setInputState(this, name, { isBlurred: true });
 
-  handleInputChange = (name, value) => {
-    const hasIsRequiredError = getIsRequiredErrorThenSetState(
-      this.setState.bind(this),
-      this.props.validation[name],
-      name,
-      { value }
-    );
-
-    if (hasIsRequiredError) {
-      return;
-    }
-
-    const { invalidMessage, getIsValid } = getValidationWithDefaults(
-      this.props.validation[name]
-    );
-    const isValid = getIsValid(value);
-    const error = getIsValidError(value, isValid, invalidMessage);
-
-    this.setState({ [name]: { error, isValid, value } });
-  };
+  handleInputChange = (name, value) =>
+    setInputState(this, name, { isBlurred: false, value });
 
   handleSubmit = () => {
     const emptyRequiredInputs = getEmptyRequiredInputs(

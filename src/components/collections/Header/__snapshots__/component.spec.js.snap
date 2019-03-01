@@ -5,6 +5,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
   activeNavigationItemIndex={null}
   dateRangePickerLocaleCode="ko"
   isBackgroundFilled={false}
+  logoHref="/"
   logoSrc={null}
   logoText="someLogoText"
   navigationItems={
@@ -445,6 +446,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
   activeNavigationItemIndex={null}
   dateRangePickerLocaleCode="ko"
   isBackgroundFilled={false}
+  logoHref="/"
   logoSrc={null}
   logoText="someLogoText"
   navigationItems={
@@ -792,6 +794,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
   activeNavigationItemIndex={null}
   dateRangePickerLocaleCode="ko"
   isBackgroundFilled={true}
+  logoHref="/"
   logoSrc={null}
   logoText="someLogoText"
   navigationItems={

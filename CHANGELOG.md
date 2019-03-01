@@ -1,3 +1,39 @@
+# [1.149.0](https://github.com/lodgify/lodgify-ui/compare/v1.148.0...v1.149.0) (2019-03-01)
+
+
+### Features
+
+* **Slideshow:** expose props.images[n].descriptionText ([0c56aed](https://github.com/lodgify/lodgify-ui/commit/0c56aed))
+
+# [1.148.0](https://github.com/lodgify/lodgify-ui/compare/v1.147.1...v1.148.0) (2019-03-01)
+
+
+### Bug Fixes
+
+* **Form:** skip isRequired checks when form is cleared ([d068144](https://github.com/lodgify/lodgify-ui/commit/d068144))
+
+
+### Features
+
+* **rating.overrides:**  remove outline for static ratings ([080ccdb](https://github.com/lodgify/lodgify-ui/commit/080ccdb))
+
+## [1.147.1](https://github.com/lodgify/lodgify-ui/compare/v1.147.0...v1.147.1) (2019-03-01)
+
+
+### Bug Fixes
+
+* **getReviewerNameAndLocationString:** swap reviewerLocation and reviewerName ([5ede0d9](https://github.com/lodgify/lodgify-ui/commit/5ede0d9))
+
+# [1.147.0](https://github.com/lodgify/lodgify-ui/compare/v1.146.0...v1.147.0) (2019-03-01)
+
+
+### Features
+
+* **Header:** expose logoHref prop ([bc70f92](https://github.com/lodgify/lodgify-ui/commit/bc70f92))
+* **Hero:** pass through headerLogoHref to Header ([742ef3a](https://github.com/lodgify/lodgify-ui/commit/742ef3a))
+* **HomepageHero:** pass through headerLogoHref to Hero ([c6e3181](https://github.com/lodgify/lodgify-ui/commit/c6e3181))
+* **PropertyPageHero:** pass through headerLogoHref to Hero ([914bdbd](https://github.com/lodgify/lodgify-ui/commit/914bdbd))
+
 # [1.146.0](https://github.com/lodgify/lodgify-ui/compare/v1.145.0...v1.146.0) (2019-03-01)
 
 

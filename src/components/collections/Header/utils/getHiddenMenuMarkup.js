@@ -23,6 +23,7 @@ import { getLinkMarkup } from './getLinkMarkup';
 export const getHiddenMenuMarkup = ({
   /* eslint-disable react/prop-types */
   activeNavigationItemIndex,
+  logoHref,
   logoSizes,
   logoSrc,
   logoSrcSet,
@@ -41,7 +42,7 @@ export const getHiddenMenuMarkup = ({
     )}
     <Menu.Item className="no-underline">
       <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
-        {getLogoMarkup(logoText, logoSrc, logoSizes, logoSrcSet)}
+        {getLogoMarkup(logoHref, logoText, logoSrc, logoSizes, logoSrcSet)}
         <Menu text vertical>
           {navigationItems.map(
             ({ subItems, text, target: navigationItemTarget, href }, index) =>

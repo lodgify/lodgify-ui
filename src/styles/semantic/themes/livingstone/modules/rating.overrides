@@ -10,8 +10,12 @@
   --------------------*/
 
   /* Standard */
-  .icon:before {
-    content: '\2605';
+  .icon {
+    outline-width: 0;
+
+    &:before {
+      content: '\2605';
+    }
   }
 
   /* Star */
@@ -25,4 +29,7 @@
   /*-------------------
         Variations
   --------------------*/
+  .modal & .icon {
+    outline-width: @inputRatingOutline;
+  }
 }
