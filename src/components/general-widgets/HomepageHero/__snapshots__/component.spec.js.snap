@@ -149,6 +149,7 @@ exports[`HomepageHero should render the right structure 1`] = `
           <Header
             activeNavigationItemIndex={1}
             isBackgroundFilled={false}
+            logoHref="/"
             logoSizes="a load of logo sizes"
             logoSrc="src"
             logoSrcSet="a load of logo src sets"

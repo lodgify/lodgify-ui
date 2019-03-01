@@ -14,6 +14,7 @@ import { getGalleryMarkup } from './utils/getGalleryMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
   activeNavigationItemIndex,
+  headerLogoHref,
   headerLogoSizes,
   headerLogoSrc,
   headerLogoSrcSet,
@@ -43,6 +44,7 @@ const Component = ({
       backgroundImageUrl={backgroundImageUrl}
       backgroundImageWidth={backgroundImageWidth}
       bottomOffset={BOTTOM_OFFSET}
+      headerLogoHref={headerLogoHref}
       headerLogoSizes={headerLogoSizes}
       headerLogoSrc={headerLogoSrc}
       headerLogoSrcSet={headerLogoSrcSet}
@@ -66,6 +68,7 @@ Component.displayName = 'PropertyPageHero';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  headerLogoHref: undefined,
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
@@ -78,6 +81,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The index of the active navigation item. */
   activeNavigationItemIndex: PropTypes.number,
+  /** The href for the header logo link. */
+  headerLogoHref: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   headerLogoSizes: PropTypes.string,
   /** The src url for the logo in the header. */

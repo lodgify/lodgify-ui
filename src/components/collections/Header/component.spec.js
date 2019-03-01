@@ -15,7 +15,6 @@ import { getMenuWidth } from './utils/getMenuWidth';
 import { getIsMenuHidden } from './utils/getIsMenuHidden';
 
 const logoText = 'someLogoText';
-
 const props = {
   logoText,
   navigationItems,
