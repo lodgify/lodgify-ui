@@ -15,7 +15,9 @@ import { getSummaryMarkup } from './utils/getSummaryMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   dateRangePickerLocaleCode,
+  datesInputInitialValue,
   getIsDayBlocked,
+  guestsInputInitialValue,
   guestsOptions,
   isFixed,
   onChangeInput,
@@ -38,7 +40,9 @@ export const Component = ({
       <ShowOn computer widescreen>
         <SearchBar
           dateRangePickerLocaleCode={dateRangePickerLocaleCode}
+          datesInputInitialValue={datesInputInitialValue}
           getIsDayBlocked={getIsDayBlocked}
+          guestsInputInitialValue={guestsInputInitialValue}
           guestsOptions={guestsOptions}
           isFixed={isFixed}
           onChangeInput={onChangeInput}
@@ -53,7 +57,9 @@ export const Component = ({
       <ShowOn mobile tablet>
         <SearchBar
           dateRangePickerLocaleCode={dateRangePickerLocaleCode}
+          datesInputInitialValue={datesInputInitialValue}
           getIsDayBlocked={getIsDayBlocked}
+          guestsInputInitialValue={guestsInputInitialValue}
           guestsOptions={guestsOptions}
           isDisplayedAsModal
           isFixed={isFixed}
@@ -77,8 +83,10 @@ export const Component = ({
 Component.displayName = 'PropertyPageSearchBar';
 
 Component.defaultProps = {
+  datesInputInitialValue: undefined,
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: undefined,
+  guestsInputInitialValue: undefined,
   isFixed: true,
   onChangeInput: undefined,
   onSubmit: undefined,
@@ -93,12 +101,19 @@ Component.propTypes = {
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
   // eslint-disable-next-line react/no-unused-prop-types
   dateRangePickerLocaleCode: PropTypes.string,
+  /** The initial value for the dates input of the search bar. */
+  datesInputInitialValue: PropTypes.shape({
+    endDate: PropTypes.object,
+    startDate: PropTypes.object,
+  }),
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
    * @returns {boolean}     - Is the day blocked.
    */
   getIsDayBlocked: PropTypes.func,
+  /** The initial value for the guests input of the search bar. */
+  guestsInputInitialValue: PropTypes.string,
   /** The options that the user can select in the guests field. */
   guestsOptions: PropTypes.arrayOf(
     PropTypes.shape({
