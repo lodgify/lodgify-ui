@@ -1,3 +1,10 @@
+## [1.150.1](https://github.com/lodgify/lodgify-ui/compare/v1.150.0...v1.150.1) (2019-03-04)
+
+
+### Bug Fixes
+
+* **Promotion:** respect background image aspect ratio ([25f7e22](https://github.com/lodgify/lodgify-ui/commit/25f7e22))
+
 # [1.150.0](https://github.com/lodgify/lodgify-ui/compare/v1.149.3...v1.150.0) (2019-03-04)
 
 
