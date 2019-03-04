@@ -32,8 +32,11 @@ export const Component = ({
   headingText,
   placeholderBackgroundImageUrl,
   searchBarDateRangePickerLocaleCode,
+  searchBarDatesInputInitialValue,
   searchBarGetIsDayBlocked,
+  searchBarGuestsInputInitialValue,
   searchBarGuestsOptions,
+  searchBarLocationInputInitialValue,
   searchBarLocationOptions,
   searchBarModalHeadingText,
   searchBarOnChangeInput,
@@ -94,9 +97,12 @@ export const Component = ({
               computer
               parent={SearchBar}
               parentProps={{
+                datesInputInitialValue: searchBarDatesInputInitialValue,
                 dateRangePickerLocaleCode: searchBarDateRangePickerLocaleCode,
                 getIsDayBlocked: searchBarGetIsDayBlocked,
+                guestsInputInitialValue: searchBarGuestsInputInitialValue,
                 guestsOptions: searchBarGuestsOptions,
+                locationInputInitialValue: searchBarLocationInputInitialValue,
                 locationOptions: searchBarLocationOptions,
                 onChangeInput: searchBarOnChangeInput,
                 onSubmit: searchBarOnSubmit,
@@ -109,9 +115,12 @@ export const Component = ({
             <ShowOn mobile>
               <SearchBar
                 dateRangePickerLocaleCode={searchBarDateRangePickerLocaleCode}
+                datesInputInitialValue={searchBarDatesInputInitialValue}
                 getIsDayBlocked={searchBarGetIsDayBlocked}
+                guestsInputInitialValue={searchBarGuestsInputInitialValue}
                 guestsOptions={searchBarGuestsOptions}
                 isDisplayedAsModal
+                locationInputInitialValue={searchBarLocationInputInitialValue}
                 locationOptions={searchBarLocationOptions}
                 modalHeadingText={searchBarModalHeadingText}
                 onChangeInput={searchBarOnChangeInput}
@@ -134,12 +143,15 @@ Component.defaultProps = {
   backgroundImageSizes: undefined,
   backgroundImageSrcSet: undefined,
   backgroundImageWidth: undefined,
+  searchBarDatesInputInitialValue: undefined,
+  searchBarGuestsInputInitialValue: undefined,
   headerLogoHref: undefined,
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
   headerPrimaryCTA: null,
   headingText: null,
+  searchBarLocationInputInitialValue: undefined,
   placeholderBackgroundImageUrl: null,
   searchBarDateRangePickerLocaleCode: undefined,
   searchBarGetIsDayBlocked: undefined,
@@ -211,6 +223,11 @@ Component.propTypes = {
   placeholderBackgroundImageUrl: PropTypes.string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the search bars date range picker. */
   searchBarDateRangePickerLocaleCode: PropTypes.string,
+  /** The initial value for the dates input of the search bar. */
+  searchBarDatesInputInitialValue: PropTypes.shape({
+    endDate: PropTypes.object,
+    startDate: PropTypes.object,
+  }),
   /**
    * A function called for each day to be displayed in the DateRangePicker.
    * Returning true blocks that day in the date range picker.
@@ -218,6 +235,8 @@ Component.propTypes = {
    * @returns {boolean}     - Is the day blocked.
    */
   searchBarGetIsDayBlocked: PropTypes.func,
+  /** The initial value for the guests input of the search bar. */
+  searchBarGuestsInputInitialValue: PropTypes.string,
   /** The options which the user can select in the guests fields of the search bar. */
   searchBarGuestsOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -231,6 +250,8 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
+  /** The initial value for the location input of the search bar. */
+  searchBarLocationInputInitialValue: PropTypes.string,
   /** The options which the user can select in the location field of the search bar. */
   searchBarLocationOptions: PropTypes.arrayOf(
     PropTypes.shape({
