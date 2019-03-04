@@ -1,3 +1,10 @@
+# [1.150.0](https://github.com/lodgify/lodgify-ui/compare/v1.149.3...v1.150.0) (2019-03-04)
+
+
+### Features
+
+* **Pictures:** expose props.numberOfThumnbails and update tests and example ([eea6af2](https://github.com/lodgify/lodgify-ui/commit/eea6af2))
+
 ## [1.149.3](https://github.com/lodgify/lodgify-ui/compare/v1.149.2...v1.149.3) (2019-03-04)
 
 
