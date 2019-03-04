@@ -1,0 +1,1 @@
+export { getFirstNItems } from './getFirstNItems';
