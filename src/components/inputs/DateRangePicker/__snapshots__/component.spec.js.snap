@@ -27,7 +27,6 @@ exports[`<DateRangePicker /> should render the right structure 1`] = `
         adaptOnChangeEvent={[Function]}
         error={false}
         icon={null}
-        initialValue={null}
         inputOnChangeFunctionName="onDatesChange"
         isFocused={false}
         isValid={false}
