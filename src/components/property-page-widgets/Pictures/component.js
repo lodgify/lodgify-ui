@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { EXPLORE_ALL_PICTURES, PROPERTY_PICTURES } from 'utils/default-strings';
-import { getFirstSixItems } from 'utils/get-first-six-items';
+import { getFirstNItems } from 'utils/get-first-n-items';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
@@ -23,6 +23,7 @@ export const Component = ({
   galleryImages,
   headingText,
   linkText,
+  numberOfThumbnails,
   propertyName,
   ratingNumber,
   thumbnailImages,
@@ -32,7 +33,7 @@ export const Component = ({
       <Heading>{headingText}</Heading>
     </GridColumn>
     <GridRow>
-      {getFirstSixItems(thumbnailImages).map(
+      {getFirstNItems(numberOfThumbnails, thumbnailImages).map(
         ({ imageUrl, imageSizes, imageSrcSet, label }, index) => (
           <GridColumn key={buildKeyFromStrings(imageUrl, index)}>
             <ShowOn computer parent="div" tablet widescreen>
@@ -75,6 +76,7 @@ Component.displayName = 'Pictures';
 Component.defaultProps = {
   headingText: PROPERTY_PICTURES,
   linkText: EXPLORE_ALL_PICTURES,
+  numberOfThumbnails: 6,
   propertyName: null,
   ratingNumber: null,
 };
@@ -86,6 +88,8 @@ Component.propTypes = {
   headingText: PropTypes.string,
   /** The text to display on the link at the bottom of the widget. */
   linkText: PropTypes.string,
+  /** The number of images to display as thumbnails. */
+  numberOfThumbnails: PropTypes.number,
   /** The name of the property to display in the gallery modal. */
   propertyName: PropTypes.string,
   /** The numeral rating for the property, out of 5 */
