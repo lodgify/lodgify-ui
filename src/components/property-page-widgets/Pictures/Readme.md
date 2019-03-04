@@ -9,6 +9,18 @@ const { images } = require('./mock-data/images');
 
 ### Content
 
+#### Number of thumbnails
+
+```jsx
+const { images } = require('./mock-data/images');
+
+<Pictures
+  galleryImages={images}
+  numberOfThumbnails={3}
+  thumbnailImages={images}
+/>
+```
+
 #### Heading in gallery modal
 
 ```jsx
@@ -21,7 +33,6 @@ const { images } = require('./mock-data/images');
   thumbnailImages={images}
 />
 ```
-
 
 #### Strings
 

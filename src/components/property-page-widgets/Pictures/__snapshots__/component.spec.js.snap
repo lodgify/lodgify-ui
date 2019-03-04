@@ -33,6 +33,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
   }
   headingText="Property pictures"
   linkText="Explore all pictures"
+  numberOfThumbnails={6}
   propertyName={null}
   ratingNumber={null}
   thumbnailImages={
