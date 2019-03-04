@@ -248,12 +248,22 @@
     }
 
     > figure.responsive-image {
-      z-index: @promotionBeforeLayerZIndex;
+      height: 100%;
+      left: 0;
       position: absolute;
       top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
+      width: 100%;
+      z-index: @promotionBeforeLayerZIndex;
+
+      > img {
+        left: 50%;
+        max-width: none;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+      }
     }
 
     p,
