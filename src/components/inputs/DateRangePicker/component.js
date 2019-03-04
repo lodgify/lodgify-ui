@@ -63,6 +63,7 @@ class Component extends PureComponent {
       endDatePlaceholderText,
       error,
       getIsDayBlocked,
+      initialValue,
       isValid,
       name,
       onChange,
@@ -77,7 +78,7 @@ class Component extends PureComponent {
       <InputController
         adaptOnChangeEvent={returnFirstArgument}
         error={error}
-        initialValue={null}
+        initialValue={initialValue}
         inputOnChangeFunctionName="onDatesChange"
         isFocused={!!focusedInput}
         isValid={isValid}
@@ -125,6 +126,7 @@ Component.defaultProps = {
   endDatePlaceholderText: '',
   error: false,
   getIsDayBlocked: Function.prototype,
+  initialValue: undefined,
   isValid: false,
   localeCode: 'en',
   name: '',
@@ -149,6 +151,11 @@ Component.propTypes = {
    * @returns {boolean}     - Is the day blocked.
    */
   getIsDayBlocked: PropTypes.func,
+  /** The initial value of the input. */
+  initialValue: PropTypes.shape({
+    endDate: PropTypes.object,
+    startDate: PropTypes.object,
+  }),
   /** Is the date range picker in a valid state. */
   isValid: PropTypes.bool,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year. */
