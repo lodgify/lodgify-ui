@@ -24,7 +24,7 @@ import { isValueValid } from './utils/isValueValid';
 export class Component extends PureComponent {
   state = {
     isOpen: false,
-    value: undefined,
+    value: this.props.initialValue,
   };
 
   componentDidUpdate(previousProps, previousState) {
@@ -133,6 +133,7 @@ Component.defaultProps = {
   options: [],
   value: undefined,
   willOpenAbove: false,
+  initialValue: undefined,
 };
 
 Component.propTypes = {
@@ -140,6 +141,12 @@ Component.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   /** Icon for the dropdown. Not displayed if options have images. */
   icon: PropTypes.string,
+  /** The default value of the dropdown. */
+  initialValue: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   /** A disabled dropdown does not allow user interaction. */
   isDisabled: PropTypes.bool,
   /** Is the dropdown searchable with keyboard input */
