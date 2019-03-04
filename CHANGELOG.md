@@ -1,3 +1,10 @@
+## [1.149.3](https://github.com/lodgify/lodgify-ui/compare/v1.149.2...v1.149.3) (2019-03-04)
+
+
+### Bug Fixes
+
+* **Form:** pass function to setState to order state changes correctly ([44d8e86](https://github.com/lodgify/lodgify-ui/commit/44d8e86))
+
 ## [1.149.2](https://github.com/lodgify/lodgify-ui/compare/v1.149.1...v1.149.2) (2019-03-01)
 
 
