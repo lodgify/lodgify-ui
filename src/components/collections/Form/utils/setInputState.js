@@ -4,6 +4,6 @@
  * @param {Object} nextInputState
  */
 export const setInputState = (component, inputName, nextInputState) =>
-  component.setState({
-    [inputName]: { ...component.state[inputName], ...nextInputState },
-  });
+  component.setState(previousState => ({
+    [inputName]: { ...previousState[inputName], ...nextInputState },
+  }));
