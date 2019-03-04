@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 should render the right structure 1`] = `
+<div>
+  <FormField
+    width="three"
+  >
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={true}
+      isLabelLeft={false}
+      labelText="Property Summary"
+      labelWeight={null}
+      name="home"
+      path={null}
+      size={null}
+    />
+  </FormField>
+  <FormField
+    width="three"
+  >
+    <Dropdown
+      error={false}
+      icon="map pin"
+      isDisabled={false}
+      isSearchable={false}
+      isValid={false}
+      label="Location"
+      name="location"
+      noResultsText="No results"
+      onBlur={[Function]}
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "text": "yo",
+          },
+        ]
+      }
+      willOpenAbove={false}
+    />
+  </FormField>
+  <FormField
+    width="seven"
+  >
+    <WithResponsive(DateRangePicker)
+      endDatePlaceholderText="Check-out"
+      getIsDayBlocked={[Function]}
+      initialValue={true}
+      name="dates"
+      onChange={[Function]}
+      startDatePlaceholderText="Check-in"
+    />
+  </FormField>
+  <FormField
+    width="three"
+  >
+    <Dropdown
+      error={false}
+      icon="users"
+      isDisabled={false}
+      isSearchable={false}
+      isValid={false}
+      label="Guests"
+      name="guests"
+      noResultsText="No results"
+      onBlur={[Function]}
+      onChange={[Function]}
+      options={Array []}
+      willOpenAbove={false}
+    />
+  </FormField>
+  <FormField
+    width="four"
+  >
+    <div />
+  </FormField>
+</div>
+`;
+
+exports[`getFormFieldMarkup should render the right structure\` 1`] = `
+<div>
+  <FormField
+    width="three"
+  >
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={true}
+      isLabelLeft={false}
+      labelText="Property Summary"
+      labelWeight={null}
+      name="home"
+      path={null}
+      size={null}
+    />
+  </FormField>
+  <FormField
+    width="seven"
+  >
+    <WithResponsive(DateRangePicker)
+      endDatePlaceholderText="Check-out"
+      getIsDayBlocked={[Function]}
+      initialValue={true}
+      name="dates"
+      onChange={[Function]}
+      startDatePlaceholderText="Check-in"
+    />
+  </FormField>
+  <FormField
+    width="three"
+  >
+    <Dropdown
+      error={false}
+      icon="users"
+      isDisabled={false}
+      isSearchable={false}
+      isValid={false}
+      label="Guests"
+      name="guests"
+      noResultsText="No results"
+      onBlur={[Function]}
+      onChange={[Function]}
+      options={Array []}
+      willOpenAbove={false}
+    />
+  </FormField>
+  <FormField
+    width="four"
+  >
+    <div />
+  </FormField>
+</div>
+`;
