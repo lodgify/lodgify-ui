@@ -456,7 +456,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
-                            initialValue={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
                             isFocused={false}
                             isValid={false}
@@ -1767,7 +1767,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
-                            initialValue={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
                             isFocused={false}
                             isValid={false}
@@ -2817,7 +2817,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
-                            initialValue={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
                             isFocused={false}
                             isValid={false}
@@ -3811,7 +3811,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             adaptOnChangeEvent={[Function]}
                             error={false}
                             icon={null}
-                            initialValue={null}
+                            initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
                             isFocused={false}
                             isValid={false}
