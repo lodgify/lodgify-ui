@@ -1,14 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import {
-  expectComponentToHaveChildren,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Heading } from 'typography/Heading';
-import { Rating } from 'elements/Rating';
+import { mount } from 'enzyme';
 
 import { getGalleryHeadingMarkup } from './getGalleryHeadingMarkup';
+
+const propertyName = 'Wurp';
+
+const getGalleryHeadingMarkupAsComponent = ratingNumber =>
+  mount(<div>{getGalleryHeadingMarkup(propertyName, ratingNumber)}</div>);
 
 describe('getGalleryHeadingMarkup', () => {
   describe('if `propertyName` is not defined', () => {
@@ -20,31 +18,17 @@ describe('getGalleryHeadingMarkup', () => {
   });
 
   describe('if `propertyName` is defined', () => {
-    const propertyName = 'Wurp';
-    const ratingNumber = 3;
+    it('should return the right structure', () => {
+      const actual = getGalleryHeadingMarkupAsComponent(0);
 
-    const getGalleryHeadingMarkupAsComponent = () =>
-      shallow(<div>{getGalleryHeadingMarkup(propertyName, ratingNumber)}</div>);
-
-    it('should return the right children', () => {
-      const wrapper = getGalleryHeadingMarkupAsComponent();
-
-      expectComponentToHaveChildren(wrapper, Heading, Rating);
+      expect(actual).toMatchSnapshot();
     });
 
-    describe('the `Heading`', () => {
-      it('should have the right children', () => {
-        const wrapper = getGalleryHeadingMarkupAsComponent().find(Heading);
+    describe('if `ratingNumber` is greater than 0', () => {
+      it('should return the right structure', () => {
+        const actual = getGalleryHeadingMarkupAsComponent(1);
 
-        expectComponentToHaveChildren(wrapper, propertyName);
-      });
-    });
-
-    describe('the `Rating`', () => {
-      it('should have the right props', () => {
-        const wrapper = getGalleryHeadingMarkupAsComponent().find(Rating);
-
-        expectComponentToHaveProps(wrapper, { ratingNumber });
+        expect(actual).toMatchSnapshot();
       });
     });
   });
