@@ -1353,7 +1353,17 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                   >
                                     <Modal
                                       hasCloseIcon={true}
+                                      hasPadding={true}
                                       hasRoundedCorners={false}
+                                      header={
+                                        <Summary
+                                          areOnlyNightPriceAndRatingDisplayed={false}
+                                          locationName="Location"
+                                          nightPrice="250€"
+                                          propertyName="Property"
+                                          ratingNumber={4.5}
+                                        />
+                                      }
                                       isFullscreen={true}
                                       onClose={[Function]}
                                       size="tiny"
@@ -1375,7 +1385,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                       }
                                     >
                                       <Modal
-                                        className=""
+                                        className="has-padding"
                                         closeIcon={
                                           <Icon
                                             color={null}
@@ -1394,98 +1404,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         }
                                         closeOnDimmerClick={true}
                                         closeOnDocumentClick={false}
-                                        content={
-                                          <ModalContent>
-                                            <div>
-                                              <Summary
-                                                areOnlyNightPriceAndRatingDisplayed={false}
-                                                locationName="Location"
-                                                nightPrice="250€"
-                                                propertyName="Property"
-                                                ratingNumber={4.5}
-                                              />
-                                              <Divider
-                                                className=""
-                                                hasLine={true}
-                                                size="medium"
-                                              />
-                                            </div>
-                                            <Form
-                                              as="form"
-                                              onSubmit={[Function]}
-                                            >
-                                              <React.Fragment>
-                                                <FormField
-                                                  width="twelve"
-                                                >
-                                                  <WithResponsive(DateRangePicker)
-                                                    endDatePlaceholderText="Check-out"
-                                                    getIsDayBlocked={[Function]}
-                                                    name="dates"
-                                                    onChange={[Function]}
-                                                    startDatePlaceholderText="Check-in"
-                                                    willOpenAbove={false}
-                                                  />
-                                                </FormField>
-                                                <FormField
-                                                  width="twelve"
-                                                >
-                                                  <Dropdown
-                                                    error={false}
-                                                    icon="users"
-                                                    isDisabled={false}
-                                                    isSearchable={false}
-                                                    isValid={false}
-                                                    label="Guests"
-                                                    name="guests"
-                                                    noResultsText="No results"
-                                                    onBlur={[Function]}
-                                                    onChange={[Function]}
-                                                    options={
-                                                      Array [
-                                                        Object {
-                                                          "text": "1",
-                                                          "value": "1",
-                                                        },
-                                                        Object {
-                                                          "text": "2",
-                                                          "value": "2",
-                                                        },
-                                                        Object {
-                                                          "text": "3",
-                                                          "value": "3",
-                                                        },
-                                                        Object {
-                                                          "text": "4",
-                                                          "value": "4",
-                                                        },
-                                                      ]
-                                                    }
-                                                    willOpenAbove={false}
-                                                  />
-                                                </FormField>
-                                                <FormField
-                                                  width="twelve"
-                                                >
-                                                  <Button
-                                                    hasShadow={false}
-                                                    icon={null}
-                                                    isCompact={false}
-                                                    isDisabled={false}
-                                                    isLoading={false}
-                                                    isPositionedRight={true}
-                                                    isRounded={true}
-                                                    isSecondary={false}
-                                                    onClick={[Function]}
-                                                    size={null}
-                                                  >
-                                                    Check our availability
-                                                  </Button>
-                                                </FormField>
-                                              </React.Fragment>
-                                            </Form>
-                                          </ModalContent>
-                                        }
                                         dimmer="inverted"
                                         eventPool="Modal"
                                         onClose={[Function]}

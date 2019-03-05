@@ -14,7 +14,9 @@ exports[`\`getViewMoreButtonMarkup\` if there are two images or more should retu
     <HorizontalGutters>
       <Gallery
         heading={
-          <React.Fragment>
+          <div
+            className="heading-with-rating"
+          >
             <Heading
               className={null}
               isColorInverted={false}
@@ -28,7 +30,7 @@ exports[`\`getViewMoreButtonMarkup\` if there are two images or more should retu
               isShowingNumeral={true}
               ratingNumber={9.9}
             />
-          </React.Fragment>
+          </div>
         }
         images={
           Array [

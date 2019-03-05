@@ -607,7 +607,9 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                     >
                       <Modal
                         hasCloseIcon={true}
+                        hasPadding={true}
                         hasRoundedCorners={false}
+                        header={null}
                         isFullscreen={true}
                         onClose={[Function]}
                         size="tiny"
@@ -629,7 +631,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                         }
                       >
                         <Modal
-                          className=""
+                          className="has-padding"
                           closeIcon={
                             <Icon
                               color={null}
@@ -648,96 +650,6 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                           }
                           closeOnDimmerClick={true}
                           closeOnDocumentClick={false}
-                          content={
-                            <HorizontalGutters>
-                              <Divider
-                                className=""
-                                hasLine={false}
-                                size="medium"
-                              />
-                              <Grid
-                                areColumnsCentered={false}
-                                columns={2}
-                                isStackable={true}
-                              >
-                                <GridRow
-                                  horizontalAlignContent="left"
-                                >
-                                  <GridColumn
-                                    verticalAlignContent="top"
-                                    width={null}
-                                  >
-                                    <Heading
-                                      className={null}
-                                      isColorInverted={false}
-                                      size="small"
-                                      textAlign={null}
-                                    >
-                                      Entrance
-                                    </Heading>
-                                    <ResponsiveImage
-                                      alternativeText="Image Widget"
-                                      hasRoundedCorners={false}
-                                      imageHeight={null}
-                                      imageNotFoundLabelText="Image not found!"
-                                      imageTitle="Image Title"
-                                      imageUrl="🚞"
-                                      imageWidth={null}
-                                      isAvatar={false}
-                                      isCircular={false}
-                                      isFluid={false}
-                                      label={null}
-                                      sizes={null}
-                                      srcSet={null}
-                                    />
-                                    <Divider
-                                      className=""
-                                      hasLine={false}
-                                      size="medium"
-                                    />
-                                  </GridColumn>
-                                  <GridColumn
-                                    verticalAlignContent="top"
-                                    width={null}
-                                  >
-                                    <Heading
-                                      className={null}
-                                      isColorInverted={false}
-                                      size="small"
-                                      textAlign={null}
-                                    >
-                                      Kitchen
-                                    </Heading>
-                                    <ResponsiveImage
-                                      alternativeText="Image Widget"
-                                      hasRoundedCorners={false}
-                                      imageHeight={null}
-                                      imageNotFoundLabelText="Image not found!"
-                                      imageTitle="Image Title"
-                                      imageUrl="🚞"
-                                      imageWidth={null}
-                                      isAvatar={false}
-                                      isCircular={false}
-                                      isFluid={false}
-                                      label={null}
-                                      sizes={null}
-                                      srcSet={null}
-                                    />
-                                    <Divider
-                                      className=""
-                                      hasLine={false}
-                                      size="medium"
-                                    />
-                                  </GridColumn>
-                                </GridRow>
-                              </Grid>
-                              <Divider
-                                className=""
-                                hasLine={false}
-                                size="huge"
-                              />
-                            </HorizontalGutters>
-                          }
                           dimmer="inverted"
                           eventPool="Modal"
                           onClose={[Function]}
