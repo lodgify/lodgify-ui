@@ -1,3 +1,10 @@
+## [1.150.2](https://github.com/lodgify/lodgify-ui/compare/v1.150.1...v1.150.2) (2019-03-05)
+
+
+### Bug Fixes
+
+* **Footer:** remove .isRequired from props.phoneNumber ([31321be](https://github.com/lodgify/lodgify-ui/commit/31321be))
+
 ## [1.150.1](https://github.com/lodgify/lodgify-ui/compare/v1.150.0...v1.150.1) (2019-03-04)
 
 
