@@ -122,6 +122,7 @@ Component.defaultProps = {
   currencyValue: null,
   languageOptions: [],
   languageValue: null,
+  phoneNumber: null,
   socialMediaLinks: [],
 };
 
@@ -198,7 +199,7 @@ Component.propTypes = {
    */
   onChangeLanguage: PropTypes.func.isRequired,
   /** The phone number to display */
-  phoneNumber: PropTypes.string.isRequired,
+  phoneNumber: PropTypes.string,
   /** The address of the property */
   propertyAddress: PropTypes.string.isRequired,
   /** The links to social media accounts to display. */
