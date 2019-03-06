@@ -26,6 +26,11 @@
           States
   --------------------*/
 
+  /* Disabled */
+  &.disabled .icon {
+    outline-width: 0;
+  }
+
   /*-------------------
         Variations
   --------------------*/
