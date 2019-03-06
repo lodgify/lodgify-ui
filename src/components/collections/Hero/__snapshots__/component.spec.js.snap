@@ -138,7 +138,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
           }
         >
           <header
-            className=""
+            className="is-opaque"
           >
             <HorizontalGutters
               as={[Function]}
