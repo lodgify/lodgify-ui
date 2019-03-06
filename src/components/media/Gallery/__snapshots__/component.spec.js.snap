@@ -99,7 +99,7 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
 </Modal>
 `;
 
-exports[`<Gallery /> if \`props.heading\` is defined should render the right structure 1`] = `
+exports[`<Gallery /> if \`props.headingText\` is defined should render the right structure 1`] = `
 <Modal
   hasCloseIcon={true}
   hasPadding={true}
@@ -186,6 +186,70 @@ exports[`<Gallery /> if \`props.heading\` is defined should render the right str
             hasLine={false}
             size="medium"
           />
+        </GridColumn>
+      </GridRow>
+    </Grid>
+    <Divider
+      className=""
+      hasLine={false}
+      size="huge"
+    />
+  </HorizontalGutters>
+</Modal>
+`;
+
+exports[`<Gallery /> if any \`images\` have \`categoryText\` should render the right structure 1`] = `
+<Modal
+  hasCloseIcon={true}
+  hasPadding={true}
+  hasRoundedCorners={false}
+  header={null}
+  isFullscreen={true}
+  onClose={[Function]}
+  size="tiny"
+  trigger="someTrigger"
+>
+  <HorizontalGutters>
+    <Grid
+      areColumnsCentered={false}
+      columns={2}
+      isStackable={true}
+    >
+      <GridRow
+        horizontalAlignContent="left"
+      >
+        <GridColumn
+          key="cattata0"
+          verticalAlignContent="top"
+          width={12}
+        >
+          <Divider
+            className=""
+            hasLine={false}
+            size="large"
+          />
+          <Heading
+            className={null}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            cattata
+          </Heading>
+          <ShowOn
+            computer={true}
+            mobile={false}
+            parent="div"
+            parentProps={Object {}}
+            tablet={true}
+            widescreen={true}
+          >
+            <Divider
+              className=""
+              hasLine={false}
+              size="small"
+            />
+          </ShowOn>
         </GridColumn>
       </GridRow>
     </Grid>

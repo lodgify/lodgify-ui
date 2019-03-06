@@ -22,10 +22,19 @@ describe('<Gallery />', () => {
     });
   });
 
-  describe('if `props.heading` is defined', () => {
+  describe('if `props.headingText` is defined', () => {
     it('should render the right structure', () => {
-      const heading = ':hurtrealbad:';
-      const actual = getGallery({ heading });
+      const headingText = ':hurtrealbad:';
+      const actual = getGallery({ headingText });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if any `images` have `categoryText`', () => {
+    it('should render the right structure', () => {
+      const categoryText = 'cattata';
+      const actual = getGallery({ images: [{ categoryText }] });
 
       expect(actual).toMatchSnapshot();
     });
