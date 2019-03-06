@@ -51,6 +51,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
               error={false}
               isValid={false}
               label="Email"
+              maxCharacters={null}
               name="email"
               onBlur={[Function]}
               onChange={[Function]}
@@ -128,6 +129,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       error={false}
                       isValid={false}
                       label="Email"
+                      maxCharacters={255}
                       name="email"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -157,6 +159,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                             <input
                               autoComplete="email"
                               key=".2"
+                              maxLength={255}
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -186,6 +189,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       error={false}
                       isValid={false}
                       label="Password"
+                      maxCharacters={255}
                       name="password"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -215,6 +219,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                             <input
                               autoComplete="current-password"
                               key=".2"
+                              maxLength={255}
                               name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -449,6 +454,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
               error={false}
               isValid={false}
               label="Email"
+              maxCharacters={null}
               name="email"
               onBlur={[Function]}
               onChange={[Function]}
@@ -526,6 +532,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       error={false}
                       isValid={false}
                       label="Email"
+                      maxCharacters={255}
                       name="email"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -555,6 +562,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                             <input
                               autoComplete="email"
                               key=".2"
+                              maxLength={255}
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -584,6 +592,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       error={false}
                       isValid={false}
                       label="Password"
+                      maxCharacters={255}
                       name="password"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -613,6 +622,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                             <input
                               autoComplete="current-password"
                               key=".2"
+                              maxLength={255}
                               name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -847,6 +857,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
               error={false}
               isValid={false}
               label="Email"
+              maxCharacters={null}
               name="email"
               onBlur={[Function]}
               onChange={[Function]}
@@ -924,6 +935,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                       error={false}
                       isValid={false}
                       label="Email"
+                      maxCharacters={255}
                       name="email"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -953,6 +965,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                             <input
                               autoComplete="email"
                               key=".2"
+                              maxLength={255}
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -982,6 +995,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                       error={false}
                       isValid={false}
                       label="Password"
+                      maxCharacters={255}
                       name="password"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -1011,6 +1025,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                             <input
                               autoComplete="current-password"
                               key=".2"
+                              maxLength={255}
                               name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
