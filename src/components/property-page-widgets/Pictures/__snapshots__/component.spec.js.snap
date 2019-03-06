@@ -1096,7 +1096,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
               className="top aligned twelve wide column"
             >
               <Gallery
-                heading={null}
+                headingText={null}
                 images={
                   Array [
                     Object {
