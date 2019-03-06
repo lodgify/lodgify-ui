@@ -1,3 +1,25 @@
+# [1.151.0](https://github.com/lodgify/lodgify-ui/compare/v1.150.3...v1.151.0) (2019-03-06)
+
+
+### Features
+
+* **Amenities:** consume hasPadding in modal ([1fe7b3e](https://github.com/lodgify/lodgify-ui/commit/1fe7b3e))
+* **Description:** consume hasPadding prop in modal ([49f1214](https://github.com/lodgify/lodgify-ui/commit/49f1214))
+* **Gallery:** consume hasPadding prop in modal ([984e32a](https://github.com/lodgify/lodgify-ui/commit/984e32a))
+* **getGalleryHeadingMarkup:** consume header prop in modal ([4af300e](https://github.com/lodgify/lodgify-ui/commit/4af300e))
+* **Header:** consume header prop in modal ([17efc54](https://github.com/lodgify/lodgify-ui/commit/17efc54))
+* **Modal:** expose header prop ([18465e2](https://github.com/lodgify/lodgify-ui/commit/18465e2))
+* **PolicyAndNotes:** consume header prop in modal ([6b73e9c](https://github.com/lodgify/lodgify-ui/commit/6b73e9c))
+* **RoomType:** consume header prop in modal ([42315f6](https://github.com/lodgify/lodgify-ui/commit/42315f6))
+* **SearchBar:** consume header and hasPadding props in modal ([99bcc82](https://github.com/lodgify/lodgify-ui/commit/99bcc82))
+
+## [1.150.3](https://github.com/lodgify/lodgify-ui/compare/v1.150.2...v1.150.3) (2019-03-06)
+
+
+### Bug Fixes
+
+* **Header:** make header content transparent by default with no dependency on JS ([bb7918d](https://github.com/lodgify/lodgify-ui/commit/bb7918d))
+
 ## [1.150.2](https://github.com/lodgify/lodgify-ui/compare/v1.150.1...v1.150.2) (2019-03-05)
 
 

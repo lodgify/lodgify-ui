@@ -22,7 +22,7 @@ export const getExtraItemsMarkup = (
 ) =>
   hasExtraItemsInModal ? (
     <GridColumn width={12}>
-      <Modal trigger={<Link>{modalTriggerText}</Link>}>
+      <Modal hasPadding trigger={<Link>{modalTriggerText}</Link>}>
         <SemanticModal.Content>
           <Grid className="is-amenities" columns={1} isStackable padded>
             <GridRow>{amenities.map(getCategoryMarkup)}</GridRow>

@@ -54,7 +54,22 @@ Array [
     >
       <Modal
         hasCloseIcon={true}
+        hasPadding={false}
         hasRoundedCorners={false}
+        header={
+          <MenuItem
+            link={true}
+          >
+            <Image
+              alt="someLogoText"
+              as="img"
+              sizes="someLogoSizes"
+              src="someLogoSrc"
+              srcSet="someLogoSrcSet"
+              ui={true}
+            />
+          </MenuItem>
+        }
         isFullscreen={true}
         onClose={[Function]}
         size="tiny"
@@ -95,94 +110,6 @@ Array [
           }
           closeOnDimmerClick={true}
           closeOnDocumentClick={false}
-          content={
-            Array [
-              <MenuItem
-                link={true}
-              >
-                <Image
-                  alt="someLogoText"
-                  as="img"
-                  sizes="someLogoSizes"
-                  src="someLogoSrc"
-                  srcSet="someLogoSrcSet"
-                  ui={true}
-                />
-              </MenuItem>,
-              <Menu
-                text={true}
-                vertical={true}
-              >
-                <MenuItem
-                  active={true}
-                  href="/"
-                  link={true}
-                >
-                  Home
-                </MenuItem>
-                <Accordion
-                  as={[Function]}
-                  panels={
-                    Array [
-                      Object {
-                        "content": Object {
-                          "content": Array [
-                            <MenuItem
-                              active={true}
-                              href="/la-casa-viva"
-                              link={true}
-                            >
-                              La Casa Viva
-                            </MenuItem>,
-                            <MenuItem
-                              active={false}
-                              href="/la-casa-muerta"
-                              link={true}
-                            >
-                              La Casa Muerta
-                            </MenuItem>,
-                            <MenuItem
-                              active={false}
-                              href="/the-white-lodge"
-                              link={true}
-                            >
-                              The White Lodge
-                            </MenuItem>,
-                            <MenuItem
-                              active={false}
-                              href="/the-black-lodge"
-                              link={true}
-                            >
-                              The Black Lodge
-                            </MenuItem>,
-                          ],
-                          "key": "1All properties",
-                        },
-                        "title": Object {
-                          "content": "All properties",
-                          "key": "All properties1",
-                        },
-                      },
-                    ]
-                  }
-                />
-                <MenuItem
-                  active={false}
-                  href="/"
-                  link={true}
-                >
-                  Contact Us
-                </MenuItem>
-                <MenuItem
-                  active={false}
-                  href="/"
-                  link={true}
-                >
-                  What to do
-                </MenuItem>
-              </Menu>,
-            ]
-          }
           dimmer="inverted"
           eventPool="Modal"
           onClose={[Function]}

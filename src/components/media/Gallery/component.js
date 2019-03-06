@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Modal } from 'elements/Modal';
@@ -16,15 +16,8 @@ import { ResponsiveImage } from 'media/ResponsiveImage';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ heading, images, trigger }) => (
-  <Modal isFullscreen trigger={trigger}>
+  <Modal hasPadding header={heading} isFullscreen trigger={trigger}>
     <HorizontalGutters>
-      <Divider />
-      {heading && (
-        <Fragment>
-          {heading}
-          <Divider hasLine />
-        </Fragment>
-      )}
       <Grid columns={2} isStackable>
         <GridRow>
           {images.map(({ label, imageUrl, ...otherProps }, index) => (

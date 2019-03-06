@@ -6,6 +6,7 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Button } from 'elements/Button';
+import { Divider } from 'elements/Divider';
 
 import { getLogoMarkup } from './getLogoMarkup';
 import { getLinkMarkup } from './getLinkMarkup';
@@ -41,8 +42,17 @@ export const getHiddenMenuMarkup = ({
       </Menu.Item>
     )}
     <Menu.Item className="no-underline">
-      <Modal isFullscreen trigger={<Icon name={ICON_NAMES.BARS} />}>
-        {getLogoMarkup(logoHref, logoText, logoSrc, logoSizes, logoSrcSet)}
+      <Modal
+        header={getLogoMarkup(
+          logoHref,
+          logoText,
+          logoSrc,
+          logoSizes,
+          logoSrcSet
+        )}
+        isFullscreen
+        trigger={<Icon name={ICON_NAMES.BARS} />}
+      >
         <Menu text vertical>
           {navigationItems.map(
             ({ subItems, text, target: navigationItemTarget, href }, index) =>
@@ -82,6 +92,7 @@ export const getHiddenMenuMarkup = ({
                 )
               )
           )}
+          <Divider size="huge" />
         </Menu>
       </Modal>
     </Menu.Item>

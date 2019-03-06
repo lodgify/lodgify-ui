@@ -269,11 +269,12 @@ header {
   }
 
   > * {
+    opacity: 0;
     transition: @headerMenuOpacityTransition;
   }
 
-  &.is-transparent > * {
-    opacity: 0;
+  &.is-opaque > * {
+    opacity: 1;
   }
 
   > .ui.menu.text {

@@ -263,7 +263,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   >
                                     <Modal
                                       hasCloseIcon={true}
+                                      hasPadding={true}
                                       hasRoundedCorners={false}
+                                      header={null}
                                       isFullscreen={false}
                                       onClose={[Function]}
                                       size="tiny"
@@ -285,7 +287,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                       }
                                     >
                                       <Modal
-                                        className=""
+                                        className="has-padding"
                                         closeIcon={
                                           <Icon
                                             color={null}
@@ -304,135 +306,6 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                         }
                                         closeOnDimmerClick={true}
                                         closeOnDocumentClick={false}
-                                        content={
-                                          <ModalContent
-                                            className="has-room-type-gallery"
-                                          >
-                                            <Heading
-                                              className={null}
-                                              isColorInverted={false}
-                                              size="medium"
-                                              textAlign={null}
-                                            >
-                                              The Cat House
-                                            </Heading>
-                                            <Rating
-                                              iconSize="small"
-                                              isShowingNumeral={true}
-                                              ratingNumber={4}
-                                            />
-                                            <Divider
-                                              className=""
-                                              hasLine={false}
-                                              size="small"
-                                            />
-                                            <Slideshow
-                                              hasShadow={true}
-                                              headingText={null}
-                                              images={
-                                                Array [
-                                                  Object {
-                                                    "alternativeText": "Two cats",
-                                                    "title": "Two cats",
-                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                  },
-                                                  Object {
-                                                    "alternativeText": "Two more cats",
-                                                    "title": "Two more cats",
-                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                  },
-                                                  Object {
-                                                    "alternativeText": "Much cats",
-                                                    "title": "Much cats",
-                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                  },
-                                                ]
-                                              }
-                                              isRounded={true}
-                                              isShowingBulletNavigation={true}
-                                              isStretched={false}
-                                            />
-                                            <Paragraph
-                                              size="medium"
-                                              weight={null}
-                                            >
-                                              yayayay
-                                            </Paragraph>
-                                            <List
-                                              horizontal={true}
-                                            >
-                                              <ListItem>
-                                                <Paragraph
-                                                  size="medium"
-                                                  weight="heavy"
-                                                >
-                                                  1 Bedroom
-                                                </Paragraph>
-                                              </ListItem>
-                                              <ListItem>
-                                                <Paragraph
-                                                  size="medium"
-                                                  weight="heavy"
-                                                >
-                                                  1 Dining-Room
-                                                </Paragraph>
-                                              </ListItem>
-                                            </List>
-                                            <Divider
-                                              className=""
-                                              hasLine={true}
-                                              size="medium"
-                                            />
-                                            <Amenities
-                                              amenities={
-                                                Array [
-                                                  Object {
-                                                    "iconName": "leaf",
-                                                    "items": Array [
-                                                      "Toaster",
-                                                      "Microwave",
-                                                      "Coffee Machine",
-                                                    ],
-                                                    "name": "Cooking",
-                                                  },
-                                                  Object {
-                                                    "iconName": "paw",
-                                                    "items": Array [
-                                                      "Bidet",
-                                                      "Hair Dryer",
-                                                      "Iron & Board",
-                                                    ],
-                                                    "name": "Bathroom & Laundry",
-                                                  },
-                                                ]
-                                              }
-                                              hasExtraItemsInModal={false}
-                                              headingText="Room Amenities"
-                                              isStacked={false}
-                                              modalTriggerText="View more"
-                                            />
-                                            <Grid
-                                              areColumnsCentered={false}
-                                              isStackable={false}
-                                            >
-                                              <GridColumn
-                                                verticalAlignContent="bottom"
-                                                width={12}
-                                              >
-                                                <Paragraph
-                                                  size="medium"
-                                                  weight={null}
-                                                >
-                                                  from
-                                                  <strong>
-                                                     $280 
-                                                  </strong>
-                                                  /night
-                                                </Paragraph>
-                                              </GridColumn>
-                                            </Grid>
-                                          </ModalContent>
-                                        }
                                         dimmer="inverted"
                                         eventPool="Modal"
                                         onClose={[Function]}
@@ -631,7 +504,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                         >
                                           <Modal
                                             hasCloseIcon={true}
+                                            hasPadding={true}
                                             hasRoundedCorners={false}
+                                            header={null}
                                             isFullscreen={false}
                                             onClose={[Function]}
                                             size="small"
@@ -647,7 +522,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                             }
                                           >
                                             <Modal
-                                              className=""
+                                              className="has-padding"
                                               closeIcon={
                                                 <Icon
                                                   color={null}
@@ -666,135 +541,6 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                               }
                                               closeOnDimmerClick={true}
                                               closeOnDocumentClick={false}
-                                              content={
-                                                <ModalContent
-                                                  className="has-room-type-gallery"
-                                                >
-                                                  <Heading
-                                                    className={null}
-                                                    isColorInverted={false}
-                                                    size="medium"
-                                                    textAlign={null}
-                                                  >
-                                                    The Cat House
-                                                  </Heading>
-                                                  <Rating
-                                                    iconSize="small"
-                                                    isShowingNumeral={true}
-                                                    ratingNumber={4}
-                                                  />
-                                                  <Divider
-                                                    className=""
-                                                    hasLine={false}
-                                                    size="small"
-                                                  />
-                                                  <Slideshow
-                                                    hasShadow={true}
-                                                    headingText={null}
-                                                    images={
-                                                      Array [
-                                                        Object {
-                                                          "alternativeText": "Two cats",
-                                                          "title": "Two cats",
-                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                        },
-                                                        Object {
-                                                          "alternativeText": "Two more cats",
-                                                          "title": "Two more cats",
-                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                        },
-                                                        Object {
-                                                          "alternativeText": "Much cats",
-                                                          "title": "Much cats",
-                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                        },
-                                                      ]
-                                                    }
-                                                    isRounded={true}
-                                                    isShowingBulletNavigation={true}
-                                                    isStretched={false}
-                                                  />
-                                                  <Paragraph
-                                                    size="medium"
-                                                    weight={null}
-                                                  >
-                                                    yayayay
-                                                  </Paragraph>
-                                                  <List
-                                                    horizontal={true}
-                                                  >
-                                                    <ListItem>
-                                                      <Paragraph
-                                                        size="medium"
-                                                        weight="heavy"
-                                                      >
-                                                        1 Bedroom
-                                                      </Paragraph>
-                                                    </ListItem>
-                                                    <ListItem>
-                                                      <Paragraph
-                                                        size="medium"
-                                                        weight="heavy"
-                                                      >
-                                                        1 Dining-Room
-                                                      </Paragraph>
-                                                    </ListItem>
-                                                  </List>
-                                                  <Divider
-                                                    className=""
-                                                    hasLine={true}
-                                                    size="medium"
-                                                  />
-                                                  <Amenities
-                                                    amenities={
-                                                      Array [
-                                                        Object {
-                                                          "iconName": "leaf",
-                                                          "items": Array [
-                                                            "Toaster",
-                                                            "Microwave",
-                                                            "Coffee Machine",
-                                                          ],
-                                                          "name": "Cooking",
-                                                        },
-                                                        Object {
-                                                          "iconName": "paw",
-                                                          "items": Array [
-                                                            "Bidet",
-                                                            "Hair Dryer",
-                                                            "Iron & Board",
-                                                          ],
-                                                          "name": "Bathroom & Laundry",
-                                                        },
-                                                      ]
-                                                    }
-                                                    hasExtraItemsInModal={false}
-                                                    headingText="Room Amenities"
-                                                    isStacked={false}
-                                                    modalTriggerText="View more"
-                                                  />
-                                                  <Grid
-                                                    areColumnsCentered={false}
-                                                    isStackable={false}
-                                                  >
-                                                    <GridColumn
-                                                      verticalAlignContent="bottom"
-                                                      width={12}
-                                                    >
-                                                      <Paragraph
-                                                        size="medium"
-                                                        weight={null}
-                                                      >
-                                                        from
-                                                        <strong>
-                                                           $280 
-                                                        </strong>
-                                                        /night
-                                                      </Paragraph>
-                                                    </GridColumn>
-                                                  </Grid>
-                                                </ModalContent>
-                                              }
                                               dimmer="inverted"
                                               eventPool="Modal"
                                               onClose={[Function]}
@@ -1475,7 +1221,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   >
                                     <Modal
                                       hasCloseIcon={true}
+                                      hasPadding={true}
                                       hasRoundedCorners={false}
+                                      header={null}
                                       isFullscreen={false}
                                       onClose={[Function]}
                                       size="tiny"
@@ -1497,7 +1245,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                       }
                                     >
                                       <Modal
-                                        className=""
+                                        className="has-padding"
                                         closeIcon={
                                           <Icon
                                             color={null}
@@ -1516,135 +1264,6 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                         }
                                         closeOnDimmerClick={true}
                                         closeOnDocumentClick={false}
-                                        content={
-                                          <ModalContent
-                                            className="has-room-type-gallery"
-                                          >
-                                            <Heading
-                                              className={null}
-                                              isColorInverted={false}
-                                              size="medium"
-                                              textAlign={null}
-                                            >
-                                              The Cat House
-                                            </Heading>
-                                            <Rating
-                                              iconSize="small"
-                                              isShowingNumeral={true}
-                                              ratingNumber={4}
-                                            />
-                                            <Divider
-                                              className=""
-                                              hasLine={false}
-                                              size="small"
-                                            />
-                                            <Slideshow
-                                              hasShadow={true}
-                                              headingText={null}
-                                              images={
-                                                Array [
-                                                  Object {
-                                                    "alternativeText": "Two cats",
-                                                    "title": "Two cats",
-                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                  },
-                                                  Object {
-                                                    "alternativeText": "Two more cats",
-                                                    "title": "Two more cats",
-                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                  },
-                                                  Object {
-                                                    "alternativeText": "Much cats",
-                                                    "title": "Much cats",
-                                                    "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                  },
-                                                ]
-                                              }
-                                              isRounded={true}
-                                              isShowingBulletNavigation={true}
-                                              isStretched={false}
-                                            />
-                                            <Paragraph
-                                              size="medium"
-                                              weight={null}
-                                            >
-                                              yayayay
-                                            </Paragraph>
-                                            <List
-                                              horizontal={true}
-                                            >
-                                              <ListItem>
-                                                <Paragraph
-                                                  size="medium"
-                                                  weight="heavy"
-                                                >
-                                                  1 Bedroom
-                                                </Paragraph>
-                                              </ListItem>
-                                              <ListItem>
-                                                <Paragraph
-                                                  size="medium"
-                                                  weight="heavy"
-                                                >
-                                                  1 Dining-Room
-                                                </Paragraph>
-                                              </ListItem>
-                                            </List>
-                                            <Divider
-                                              className=""
-                                              hasLine={true}
-                                              size="medium"
-                                            />
-                                            <Amenities
-                                              amenities={
-                                                Array [
-                                                  Object {
-                                                    "iconName": "leaf",
-                                                    "items": Array [
-                                                      "Toaster",
-                                                      "Microwave",
-                                                      "Coffee Machine",
-                                                    ],
-                                                    "name": "Cooking",
-                                                  },
-                                                  Object {
-                                                    "iconName": "paw",
-                                                    "items": Array [
-                                                      "Bidet",
-                                                      "Hair Dryer",
-                                                      "Iron & Board",
-                                                    ],
-                                                    "name": "Bathroom & Laundry",
-                                                  },
-                                                ]
-                                              }
-                                              hasExtraItemsInModal={false}
-                                              headingText="Room Amenities"
-                                              isStacked={true}
-                                              modalTriggerText="View more"
-                                            />
-                                            <Grid
-                                              areColumnsCentered={false}
-                                              isStackable={false}
-                                            >
-                                              <GridColumn
-                                                verticalAlignContent="bottom"
-                                                width={12}
-                                              >
-                                                <Paragraph
-                                                  size="medium"
-                                                  weight={null}
-                                                >
-                                                  from
-                                                  <strong>
-                                                     $280 
-                                                  </strong>
-                                                  /night
-                                                </Paragraph>
-                                              </GridColumn>
-                                            </Grid>
-                                          </ModalContent>
-                                        }
                                         dimmer="inverted"
                                         eventPool="Modal"
                                         onClose={[Function]}
@@ -1816,7 +1435,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                         >
                                           <Modal
                                             hasCloseIcon={true}
+                                            hasPadding={true}
                                             hasRoundedCorners={false}
+                                            header={null}
                                             isFullscreen={false}
                                             onClose={[Function]}
                                             size="small"
@@ -1832,7 +1453,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                             }
                                           >
                                             <Modal
-                                              className=""
+                                              className="has-padding"
                                               closeIcon={
                                                 <Icon
                                                   color={null}
@@ -1851,135 +1472,6 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                               }
                                               closeOnDimmerClick={true}
                                               closeOnDocumentClick={false}
-                                              content={
-                                                <ModalContent
-                                                  className="has-room-type-gallery"
-                                                >
-                                                  <Heading
-                                                    className={null}
-                                                    isColorInverted={false}
-                                                    size="medium"
-                                                    textAlign={null}
-                                                  >
-                                                    The Cat House
-                                                  </Heading>
-                                                  <Rating
-                                                    iconSize="small"
-                                                    isShowingNumeral={true}
-                                                    ratingNumber={4}
-                                                  />
-                                                  <Divider
-                                                    className=""
-                                                    hasLine={false}
-                                                    size="small"
-                                                  />
-                                                  <Slideshow
-                                                    hasShadow={true}
-                                                    headingText={null}
-                                                    images={
-                                                      Array [
-                                                        Object {
-                                                          "alternativeText": "Two cats",
-                                                          "title": "Two cats",
-                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                        },
-                                                        Object {
-                                                          "alternativeText": "Two more cats",
-                                                          "title": "Two more cats",
-                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                        },
-                                                        Object {
-                                                          "alternativeText": "Much cats",
-                                                          "title": "Much cats",
-                                                          "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                                        },
-                                                      ]
-                                                    }
-                                                    isRounded={true}
-                                                    isShowingBulletNavigation={true}
-                                                    isStretched={false}
-                                                  />
-                                                  <Paragraph
-                                                    size="medium"
-                                                    weight={null}
-                                                  >
-                                                    yayayay
-                                                  </Paragraph>
-                                                  <List
-                                                    horizontal={true}
-                                                  >
-                                                    <ListItem>
-                                                      <Paragraph
-                                                        size="medium"
-                                                        weight="heavy"
-                                                      >
-                                                        1 Bedroom
-                                                      </Paragraph>
-                                                    </ListItem>
-                                                    <ListItem>
-                                                      <Paragraph
-                                                        size="medium"
-                                                        weight="heavy"
-                                                      >
-                                                        1 Dining-Room
-                                                      </Paragraph>
-                                                    </ListItem>
-                                                  </List>
-                                                  <Divider
-                                                    className=""
-                                                    hasLine={true}
-                                                    size="medium"
-                                                  />
-                                                  <Amenities
-                                                    amenities={
-                                                      Array [
-                                                        Object {
-                                                          "iconName": "leaf",
-                                                          "items": Array [
-                                                            "Toaster",
-                                                            "Microwave",
-                                                            "Coffee Machine",
-                                                          ],
-                                                          "name": "Cooking",
-                                                        },
-                                                        Object {
-                                                          "iconName": "paw",
-                                                          "items": Array [
-                                                            "Bidet",
-                                                            "Hair Dryer",
-                                                            "Iron & Board",
-                                                          ],
-                                                          "name": "Bathroom & Laundry",
-                                                        },
-                                                      ]
-                                                    }
-                                                    hasExtraItemsInModal={false}
-                                                    headingText="Room Amenities"
-                                                    isStacked={true}
-                                                    modalTriggerText="View more"
-                                                  />
-                                                  <Grid
-                                                    areColumnsCentered={false}
-                                                    isStackable={false}
-                                                  >
-                                                    <GridColumn
-                                                      verticalAlignContent="bottom"
-                                                      width={12}
-                                                    >
-                                                      <Paragraph
-                                                        size="medium"
-                                                        weight={null}
-                                                      >
-                                                        from
-                                                        <strong>
-                                                           $280 
-                                                        </strong>
-                                                        /night
-                                                      </Paragraph>
-                                                    </GridColumn>
-                                                  </Grid>
-                                                </ModalContent>
-                                              }
                                               dimmer="inverted"
                                               eventPool="Modal"
                                               onClose={[Function]}
