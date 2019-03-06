@@ -1139,7 +1139,9 @@ exports[`<Pictures /> should render the correct structure 1`] = `
               >
                 <Modal
                   hasCloseIcon={true}
+                  hasPadding={true}
                   hasRoundedCorners={false}
+                  header={null}
                   isFullscreen={true}
                   onClose={[Function]}
                   size="tiny"
@@ -1155,7 +1157,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                   }
                 >
                   <Modal
-                    className=""
+                    className="has-padding"
                     closeIcon={
                       <Icon
                         color={null}
@@ -1174,200 +1176,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                     }
                     closeOnDimmerClick={true}
                     closeOnDocumentClick={false}
-                    content={
-                      <HorizontalGutters>
-                        <Divider
-                          className=""
-                          hasLine={false}
-                          size="medium"
-                        />
-                        <Grid
-                          areColumnsCentered={false}
-                          columns={2}
-                          isStackable={true}
-                        >
-                          <GridRow
-                            horizontalAlignContent="left"
-                          >
-                            <GridColumn
-                              verticalAlignContent="top"
-                              width={null}
-                            >
-                              <Heading
-                                className={null}
-                                isColorInverted={false}
-                                size="small"
-                                textAlign={null}
-                              >
-                                Entrance
-                              </Heading>
-                              <ResponsiveImage
-                                alternativeText="Image Widget"
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageNotFoundLabelText="Image not found!"
-                                imageTitle="Image Title"
-                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                                imageUrlAlternativeText="Entrance"
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={false}
-                                isFluid={false}
-                                label={null}
-                                sizes={null}
-                                srcSet={null}
-                              />
-                              <Divider
-                                className=""
-                                hasLine={false}
-                                size="medium"
-                              />
-                            </GridColumn>
-                            <GridColumn
-                              verticalAlignContent="top"
-                              width={null}
-                            >
-                              <Heading
-                                className={null}
-                                isColorInverted={false}
-                                size="small"
-                                textAlign={null}
-                              >
-                                Kitchen
-                              </Heading>
-                              <ResponsiveImage
-                                alternativeText="Image Widget"
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageNotFoundLabelText="Image not found!"
-                                imageTitle="Image Title"
-                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                                imageUrlAlternativeText="Kitchen"
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={false}
-                                isFluid={false}
-                                label={null}
-                                sizes={null}
-                                srcSet={null}
-                              />
-                              <Divider
-                                className=""
-                                hasLine={false}
-                                size="medium"
-                              />
-                            </GridColumn>
-                            <GridColumn
-                              verticalAlignContent="top"
-                              width={null}
-                            >
-                              <Heading
-                                className={null}
-                                isColorInverted={false}
-                                size="small"
-                                textAlign={null}
-                              >
-                                Living room
-                              </Heading>
-                              <ResponsiveImage
-                                alternativeText="Image Widget"
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageNotFoundLabelText="Image not found!"
-                                imageTitle="Image Title"
-                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                                imageUrlAlternativeText="Living room"
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={false}
-                                isFluid={false}
-                                label={null}
-                                sizes={null}
-                                srcSet={null}
-                              />
-                              <Divider
-                                className=""
-                                hasLine={false}
-                                size="medium"
-                              />
-                            </GridColumn>
-                            <GridColumn
-                              verticalAlignContent="top"
-                              width={null}
-                            >
-                              <Heading
-                                className={null}
-                                isColorInverted={false}
-                                size="small"
-                                textAlign={null}
-                              >
-                                Studio
-                              </Heading>
-                              <ResponsiveImage
-                                alternativeText="Image Widget"
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageNotFoundLabelText="Image not found!"
-                                imageTitle="Image Title"
-                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                                imageUrlAlternativeText="Studio"
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={false}
-                                isFluid={false}
-                                label={null}
-                                sizes={null}
-                                srcSet={null}
-                              />
-                              <Divider
-                                className=""
-                                hasLine={false}
-                                size="medium"
-                              />
-                            </GridColumn>
-                            <GridColumn
-                              verticalAlignContent="top"
-                              width={null}
-                            >
-                              <Heading
-                                className={null}
-                                isColorInverted={false}
-                                size="small"
-                                textAlign={null}
-                              >
-                                Garden room
-                              </Heading>
-                              <ResponsiveImage
-                                alternativeText="Image Widget"
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageNotFoundLabelText="Image not found!"
-                                imageTitle="Image Title"
-                                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                                imageUrlAlternativeText="Garden room"
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={false}
-                                isFluid={false}
-                                label={null}
-                                sizes={null}
-                                srcSet={null}
-                              />
-                              <Divider
-                                className=""
-                                hasLine={false}
-                                size="medium"
-                              />
-                            </GridColumn>
-                          </GridRow>
-                        </Grid>
-                        <Divider
-                          className=""
-                          hasLine={false}
-                          size="huge"
-                        />
-                      </HorizontalGutters>
-                    }
                     dimmer="inverted"
                     eventPool="Modal"
                     onClose={[Function]}

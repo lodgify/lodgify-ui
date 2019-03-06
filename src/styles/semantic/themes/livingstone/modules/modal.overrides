@@ -23,8 +23,19 @@
 /* Header */
 
 /* Content */
-.ui.modal > .ui.card {
-  margin-top: 0;
+.ui.modal > .content {
+  padding: 0;
+
+  > .ui.card {
+    margin-top: 0;
+  }
+}
+
+.ui.modal.has-padding {
+
+  > .content {
+    padding: @contentPadding;
+  }
 }
 
 .ui.modal .content:after {
@@ -48,10 +59,10 @@
   position: absolute;
   top: 0;
   width: 100%;
+  overflow: hidden;
 
   &.scrolling.modal {
     margin: 0 !important;
-    overflow: auto;
   }
 
   > .content > .link.item {
@@ -59,6 +70,18 @@
 
     > img:only-of-type {
       max-height: @modalLogoMaxHeight;
+    }
+  }
+
+  > .header {
+    font-size: inherit;
+
+    .heading-with-rating {
+
+      .header {
+        margin-bottom: @headerWithHeadingAndRatingMarginBottom;
+        padding: 0;
+      }
     }
   }
 
@@ -138,31 +161,28 @@
 /* Derived Responsive Sizes */
 
 /* Room Type Image Gallery */
-.ui.modal > .content {
+.ui.modal > .content.has-room-type-gallery {
 
-  &.has-room-type-gallery {
+  .image-gallery-image {
+    height: @roomTypeModalSlideshowImageHeight;
 
-    .image-gallery-image {
-      height: @roomTypeModalSlideshowImageHeight;
+    > img {
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @supports (object-fit: cover) {
+      width: auto;
 
       > img {
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      @supports (object-fit: cover) {
-        width: auto;
-
-        > img {
-          height: @roomTypeModalSlideshowImageHeight;
-          object-fit: cover;
-          position: static;
-          width: 100%;
-          transform: none;
-        }
+        height: @roomTypeModalSlideshowImageHeight;
+        object-fit: cover;
+        position: static;
+        width: 100%;
+        transform: none;
       }
     }
   }

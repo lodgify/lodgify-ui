@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should return the right structure 1`] = `
+<div>
+  <Modal
+    hasCloseIcon={true}
+    hasPadding={true}
+    hasRoundedCorners={false}
+    header={<div />}
+    isFullscreen={true}
+    isOpen={false}
+    onClose={[Function]}
+    size="tiny"
+    trigger={<div />}
+  >
+    <Modal
+      className="has-padding"
+      closeIcon={
+        <Icon
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="close"
+          path={null}
+          size={null}
+        />
+      }
+      closeOnDimmerClick={true}
+      closeOnDocumentClick={false}
+      dimmer="inverted"
+      eventPool="Modal"
+      onClose={[Function]}
+      open={false}
+      size="fullscreen"
+      trigger={<div />}
+    >
+      <Portal
+        className="ui inverted page modals dimmer transition visible active"
+        closeOnDocumentClick={false}
+        closeOnEscape={true}
+        closeOnRootNodeClick={true}
+        eventPool="Modal"
+        mountNode={<body />}
+        onClose={[Function]}
+        onMount={[Function]}
+        onOpen={[Function]}
+        onUnmount={[Function]}
+        open={false}
+        openOnTriggerClick={true}
+        trigger={<div />}
+      >
+        <Ref
+          innerRef={[Function]}
+        >
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          />
+        </Ref>
+      </Portal>
+    </Modal>
+  </Modal>
+</div>
+`;
+
+exports[`getSearchBarModal should return the right structure 1`] = `
+<div>
+  <Modal
+    hasCloseIcon={true}
+    hasPadding={true}
+    hasRoundedCorners={false}
+    header={
+      <Heading
+        className={null}
+        isColorInverted={false}
+        size="small"
+        textAlign={null}
+      >
+        Hello world
+      </Heading>
+    }
+    isFullscreen={true}
+    isOpen={false}
+    onClose={[Function]}
+    size="tiny"
+    trigger={<div />}
+  >
+    <Modal
+      className="has-padding"
+      closeIcon={
+        <Icon
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="close"
+          path={null}
+          size={null}
+        />
+      }
+      closeOnDimmerClick={true}
+      closeOnDocumentClick={false}
+      dimmer="inverted"
+      eventPool="Modal"
+      onClose={[Function]}
+      open={false}
+      size="fullscreen"
+      trigger={<div />}
+    >
+      <Portal
+        className="ui inverted page modals dimmer transition visible active"
+        closeOnDocumentClick={false}
+        closeOnEscape={true}
+        closeOnRootNodeClick={true}
+        eventPool="Modal"
+        mountNode={<body />}
+        onClose={[Function]}
+        onMount={[Function]}
+        onOpen={[Function]}
+        onUnmount={[Function]}
+        open={false}
+        openOnTriggerClick={true}
+        trigger={<div />}
+      >
+        <Ref
+          innerRef={[Function]}
+        >
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          />
+        </Ref>
+      </Portal>
+    </Modal>
+  </Modal>
+</div>
+`;

@@ -24,7 +24,9 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
 >
   <Modal
     hasCloseIcon={false}
+    hasPadding={false}
     hasRoundedCorners={true}
+    header={null}
     isFullscreen={false}
     isOpen={true}
     onClose={[Function]}
@@ -36,62 +38,6 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
       closeIcon={false}
       closeOnDimmerClick={true}
       closeOnDocumentClick={false}
-      content={
-        <HorizontalGutters>
-          <FlexContainer
-            alignContent={null}
-            alignItems="center"
-            flexDirection="column"
-            flexWrap={null}
-            justifyContent="center"
-          >
-            <Divider
-              className=""
-              hasLine={false}
-              size="medium"
-            />
-            <Paragraph
-              size="medium"
-              weight={null}
-            >
-              some text
-            </Paragraph>
-            <Link
-              href="/"
-              isPositionedRight={false}
-              onClick={[Function]}
-              willOpenInNewTab={true}
-            >
-              A link
-            </Link>
-            <Divider
-              className=""
-              hasLine={false}
-              size="medium"
-            />
-            <Button
-              hasShadow={false}
-              icon={null}
-              isCompact={false}
-              isDisabled={false}
-              isLoading={false}
-              isPositionedRight={false}
-              isRounded={false}
-              isSecondary={false}
-              onClick={[MockFunction]}
-              size={null}
-            >
-              There is some text
-            </Button>
-             
-            <Divider
-              className=""
-              hasLine={false}
-              size="medium"
-            />
-          </FlexContainer>
-        </HorizontalGutters>
-      }
       dimmer="inverted"
       eventPool="Modal"
       onClose={[Function]}
@@ -116,41 +62,45 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                 class="ui tiny modal transition visible active has-rounded-corners"
               >
                 <div
-                  class="ui container"
+                  class="content"
                 >
                   <div
-                    class="flex-container"
-                    style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                    class="ui container"
                   >
                     <div
-                      class="ui hidden divider"
-                    />
-                    <p
-                      class=""
+                      class="flex-container"
+                      style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
                     >
-                      some text
-                    </p>
-                    <a
-                      class="ui basic left floated button"
-                      href="/"
-                      role="button"
-                      target="_blank"
-                    >
-                      A link
-                    </a>
-                    <div
-                      class="ui hidden divider"
-                    />
-                    <button
-                      class="ui left floated button"
-                      role="button"
-                    >
-                      There is some text
-                    </button>
-                     
-                    <div
-                      class="ui hidden divider"
-                    />
+                      <div
+                        class="ui hidden divider"
+                      />
+                      <p
+                        class=""
+                      >
+                        some text
+                      </p>
+                      <a
+                        class="ui basic left floated button"
+                        href="/"
+                        role="button"
+                        target="_blank"
+                      >
+                        A link
+                      </a>
+                      <div
+                        class="ui hidden divider"
+                      />
+                      <button
+                        class="ui left floated button"
+                        role="button"
+                      >
+                        There is some text
+                      </button>
+                       
+                      <div
+                        class="ui hidden divider"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -328,7 +278,9 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
 >
   <Modal
     hasCloseIcon={false}
+    hasPadding={false}
     hasRoundedCorners={true}
+    header={null}
     isFullscreen={false}
     isOpen={true}
     onClose={[Function]}
@@ -340,62 +292,6 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
       closeIcon={false}
       closeOnDimmerClick={true}
       closeOnDocumentClick={false}
-      content={
-        <HorizontalGutters>
-          <FlexContainer
-            alignContent={null}
-            alignItems="center"
-            flexDirection="column"
-            flexWrap={null}
-            justifyContent="center"
-          >
-            <Divider
-              className=""
-              hasLine={false}
-              size="medium"
-            />
-            <Paragraph
-              size="medium"
-              weight={null}
-            >
-              some text
-            </Paragraph>
-            <Link
-              href="/"
-              isPositionedRight={false}
-              onClick={[Function]}
-              willOpenInNewTab={true}
-            >
-              A link
-            </Link>
-            <Divider
-              className=""
-              hasLine={false}
-              size="medium"
-            />
-            <Button
-              hasShadow={false}
-              icon={null}
-              isCompact={false}
-              isDisabled={false}
-              isLoading={false}
-              isPositionedRight={false}
-              isRounded={false}
-              isSecondary={false}
-              onClick={[MockFunction]}
-              size={null}
-            >
-              There is some text
-            </Button>
-             
-            <Divider
-              className=""
-              hasLine={false}
-              size="medium"
-            />
-          </FlexContainer>
-        </HorizontalGutters>
-      }
       dimmer="inverted"
       eventPool="Modal"
       onClose={[Function]}
@@ -420,41 +316,45 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                 class="ui tiny modal transition visible active has-rounded-corners"
               >
                 <div
-                  class="ui container"
+                  class="content"
                 >
                   <div
-                    class="flex-container"
-                    style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                    class="ui container"
                   >
                     <div
-                      class="ui hidden divider"
-                    />
-                    <p
-                      class=""
+                      class="flex-container"
+                      style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
                     >
-                      some text
-                    </p>
-                    <a
-                      class="ui basic left floated button"
-                      href="/"
-                      role="button"
-                      target="_blank"
-                    >
-                      A link
-                    </a>
-                    <div
-                      class="ui hidden divider"
-                    />
-                    <button
-                      class="ui left floated button"
-                      role="button"
-                    >
-                      There is some text
-                    </button>
-                     
-                    <div
-                      class="ui hidden divider"
-                    />
+                      <div
+                        class="ui hidden divider"
+                      />
+                      <p
+                        class=""
+                      >
+                        some text
+                      </p>
+                      <a
+                        class="ui basic left floated button"
+                        href="/"
+                        role="button"
+                        target="_blank"
+                      >
+                        A link
+                      </a>
+                      <div
+                        class="ui hidden divider"
+                      />
+                      <button
+                        class="ui left floated button"
+                        role="button"
+                      >
+                        There is some text
+                      </button>
+                       
+                      <div
+                        class="ui hidden divider"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -466,41 +366,45 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                 class="ui tiny modal transition visible active has-rounded-corners"
               >
                 <div
-                  class="ui container"
+                  class="content"
                 >
                   <div
-                    class="flex-container"
-                    style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                    class="ui container"
                   >
                     <div
-                      class="ui hidden divider"
-                    />
-                    <p
-                      class=""
+                      class="flex-container"
+                      style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
                     >
-                      some text
-                    </p>
-                    <a
-                      class="ui basic left floated button"
-                      href="/"
-                      role="button"
-                      target="_blank"
-                    >
-                      A link
-                    </a>
-                    <div
-                      class="ui hidden divider"
-                    />
-                    <button
-                      class="ui left floated button"
-                      role="button"
-                    >
-                      There is some text
-                    </button>
-                     
-                    <div
-                      class="ui hidden divider"
-                    />
+                      <div
+                        class="ui hidden divider"
+                      />
+                      <p
+                        class=""
+                      >
+                        some text
+                      </p>
+                      <a
+                        class="ui basic left floated button"
+                        href="/"
+                        role="button"
+                        target="_blank"
+                      >
+                        A link
+                      </a>
+                      <div
+                        class="ui hidden divider"
+                      />
+                      <button
+                        class="ui left floated button"
+                        role="button"
+                      >
+                        There is some text
+                      </button>
+                       
+                      <div
+                        class="ui hidden divider"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

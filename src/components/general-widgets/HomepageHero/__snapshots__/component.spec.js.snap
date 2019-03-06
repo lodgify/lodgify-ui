@@ -1115,7 +1115,18 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     >
                                       <Modal
                                         hasCloseIcon={true}
+                                        hasPadding={true}
                                         hasRoundedCorners={false}
+                                        header={
+                                          <Heading
+                                            className={null}
+                                            isColorInverted={false}
+                                            size="small"
+                                            textAlign={null}
+                                          >
+                                            Check our availability
+                                          </Heading>
+                                        }
                                         isFullscreen={true}
                                         onClose={[Function]}
                                         size="tiny"
@@ -1126,7 +1137,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                         }
                                       >
                                         <Modal
-                                          className=""
+                                          className="has-padding"
                                           closeIcon={
                                             <Icon
                                               color={null}
@@ -1145,94 +1156,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                           }
                                           closeOnDimmerClick={true}
                                           closeOnDocumentClick={false}
-                                          content={
-                                            <ModalContent>
-                                              <Heading
-                                                className={null}
-                                                isColorInverted={false}
-                                                size="small"
-                                                textAlign={null}
-                                              >
-                                                Check our availability
-                                              </Heading>
-                                              <Form
-                                                as="form"
-                                                onSubmit={[Function]}
-                                              >
-                                                <React.Fragment>
-                                                  <FormField
-                                                    width="twelve"
-                                                  >
-                                                    <Dropdown
-                                                      error={false}
-                                                      icon="map pin"
-                                                      isDisabled={false}
-                                                      isSearchable={false}
-                                                      isValid={false}
-                                                      label="Location"
-                                                      name="location"
-                                                      noResultsText="No results"
-                                                      onBlur={[Function]}
-                                                      onChange={[Function]}
-                                                      options={
-                                                        Array [
-                                                          Object {
-                                                            "text": "1",
-                                                            "value": "1",
-                                                          },
-                                                        ]
-                                                      }
-                                                      willOpenAbove={false}
-                                                    />
-                                                  </FormField>
-                                                  <FormField
-                                                    width="twelve"
-                                                  >
-                                                    <WithResponsive(DateRangePicker)
-                                                      endDatePlaceholderText="Check-out"
-                                                      getIsDayBlocked={[Function]}
-                                                      name="dates"
-                                                      onChange={[Function]}
-                                                      startDatePlaceholderText="Check-in"
-                                                      willOpenAbove={false}
-                                                    />
-                                                  </FormField>
-                                                  <FormField
-                                                    width="twelve"
-                                                  >
-                                                    <Dropdown
-                                                      error={false}
-                                                      icon="users"
-                                                      isDisabled={false}
-                                                      isSearchable={false}
-                                                      isValid={false}
-                                                      label="Guests"
-                                                      name="guests"
-                                                      noResultsText="No results"
-                                                      onBlur={[Function]}
-                                                      onChange={[Function]}
-                                                      options={
-                                                        Array [
-                                                          Object {
-                                                            "text": "1",
-                                                            "value": "1",
-                                                          },
-                                                        ]
-                                                      }
-                                                      willOpenAbove={false}
-                                                    />
-                                                  </FormField>
-                                                  <FormField
-                                                    width="twelve"
-                                                  >
-                                                    <button>
-                                                      search button
-                                                    </button>
-                                                  </FormField>
-                                                </React.Fragment>
-                                              </Form>
-                                            </ModalContent>
-                                          }
                                           dimmer="inverted"
                                           eventPool="Modal"
                                           onClose={[Function]}

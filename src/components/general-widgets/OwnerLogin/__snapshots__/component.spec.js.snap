@@ -24,7 +24,9 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
       Object {
         "text": <Modal
           hasCloseIcon={true}
+          hasPadding={false}
           hasRoundedCorners={false}
+          header={null}
           isFullscreen={false}
           onClose={[Function]}
           size="tiny"
@@ -274,7 +276,9 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                     >
                       <Modal
                         hasCloseIcon={true}
+                        hasPadding={false}
                         hasRoundedCorners={false}
+                        header={null}
                         isFullscreen={false}
                         onClose={[Function]}
                         size="tiny"
@@ -304,29 +308,6 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                           }
                           closeOnDimmerClick={true}
                           closeOnDocumentClick={false}
-                          content={
-                            <Form
-                              actionLink={null}
-                              autoComplete={null}
-                              errorMessage=""
-                              headingText="Forgot password"
-                              onSubmit={[Function]}
-                              submitButtonText="Send reset"
-                              successMessage=""
-                              validation={Object {}}
-                            >
-                              <TextInput
-                                autoComplete="email"
-                                error={false}
-                                isValid={false}
-                                label="Email"
-                                name="email"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                type="text"
-                              />
-                            </Form>
-                          }
                           dimmer="inverted"
                           eventPool="Modal"
                           onClose={[Function]}
@@ -441,7 +422,9 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
       Object {
         "text": <Modal
           hasCloseIcon={true}
+          hasPadding={false}
           hasRoundedCorners={false}
+          header={null}
           isFullscreen={false}
           onClose={[Function]}
           size="tiny"
@@ -691,7 +674,9 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                     >
                       <Modal
                         hasCloseIcon={true}
+                        hasPadding={false}
                         hasRoundedCorners={false}
+                        header={null}
                         isFullscreen={false}
                         onClose={[Function]}
                         size="tiny"
@@ -721,29 +706,6 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                           }
                           closeOnDimmerClick={true}
                           closeOnDocumentClick={false}
-                          content={
-                            <Form
-                              actionLink={null}
-                              autoComplete={null}
-                              errorMessage=""
-                              headingText="Forgot password"
-                              onSubmit={[Function]}
-                              submitButtonText="Send reset"
-                              successMessage=""
-                              validation={Object {}}
-                            >
-                              <TextInput
-                                autoComplete="email"
-                                error={false}
-                                isValid={false}
-                                label="Email"
-                                name="email"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                type="text"
-                              />
-                            </Form>
-                          }
                           dimmer="inverted"
                           eventPool="Modal"
                           onClose={[Function]}
@@ -858,7 +820,9 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
       Object {
         "text": <Modal
           hasCloseIcon={true}
+          hasPadding={false}
           hasRoundedCorners={false}
+          header={null}
           isFullscreen={false}
           onClose={[Function]}
           size="tiny"
@@ -1088,7 +1052,9 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                     >
                       <Modal
                         hasCloseIcon={true}
+                        hasPadding={false}
                         hasRoundedCorners={false}
+                        header={null}
                         isFullscreen={false}
                         onClose={[Function]}
                         size="tiny"
@@ -1118,29 +1084,6 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                           }
                           closeOnDimmerClick={true}
                           closeOnDocumentClick={false}
-                          content={
-                            <Form
-                              actionLink={null}
-                              autoComplete={null}
-                              errorMessage=""
-                              headingText="Forgot password"
-                              onSubmit={[Function]}
-                              submitButtonText="Send reset"
-                              successMessage=""
-                              validation={Object {}}
-                            >
-                              <TextInput
-                                autoComplete="email"
-                                error={false}
-                                isValid={false}
-                                label="Email"
-                                name="email"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                type="text"
-                              />
-                            </Form>
-                          }
                           dimmer="inverted"
                           eventPool="Modal"
                           onClose={[Function]}

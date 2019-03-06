@@ -372,7 +372,9 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                   >
                     <Modal
                       hasCloseIcon={true}
+                      hasPadding={true}
                       hasRoundedCorners={false}
+                      header={null}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"
@@ -388,7 +390,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                       }
                     >
                       <Modal
-                        className=""
+                        className="has-padding"
                         closeIcon={
                           <Icon
                             color={null}
@@ -407,34 +409,6 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                         }
                         closeOnDimmerClick={true}
                         closeOnDocumentClick={false}
-                        content={
-                          Array [
-                            <Paragraph
-                              size="medium"
-                              weight={null}
-                            >
-                              Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
-                            </Paragraph>,
-                            <Paragraph
-                              size="medium"
-                              weight={null}
-                            >
-                              Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                            </Paragraph>,
-                            <Paragraph
-                              size="medium"
-                              weight={null}
-                            >
-                              Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
-                            </Paragraph>,
-                            <Paragraph
-                              size="medium"
-                              weight={null}
-                            >
-                              Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                            </Paragraph>,
-                          ]
-                        }
                         dimmer="inverted"
                         eventPool="Modal"
                         onClose={[Function]}

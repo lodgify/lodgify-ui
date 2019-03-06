@@ -79,7 +79,7 @@ export const Component = ({
     {!!extraNotesText && (
       <GridRow>
         <GridColumn width={12}>
-          <Modal trigger={<Link>{modalTriggerText}</Link>}>
+          <Modal hasPadding trigger={<Link>{modalTriggerText}</Link>}>
             {getParagraphsFromStrings(extraNotesText).map(
               (paragraphText, index) => (
                 <Paragraph key={buildKeyFromStrings(paragraphText, index)}>

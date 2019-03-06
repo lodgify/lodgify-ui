@@ -4,6 +4,7 @@ import { Modal } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 /**
  * A modal displays content that temporarily
@@ -12,7 +13,9 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   children,
+  header,
   hasCloseIcon,
+  hasPadding,
   hasRoundedCorners,
   isFullscreen,
   isOpen,
@@ -22,22 +25,31 @@ export const Component = ({
 }) => (
   <Modal
     className={getClassNames({
+      'has-padding': hasPadding,
       'has-rounded-corners': hasRoundedCorners,
     })}
     closeIcon={hasCloseIcon && <Icon name={ICON_NAMES.CLOSE} />}
-    content={children}
     dimmer="inverted"
     onClose={onClose}
     open={isOpen}
     size={isFullscreen ? 'fullscreen' : size}
     trigger={trigger}
-  />
+  >
+    {!!header && (
+      <Modal.Header>
+        <HorizontalGutters>{header}</HorizontalGutters>
+      </Modal.Header>
+    )}
+    <Modal.Content>{children}</Modal.Content>
+  </Modal>
 );
 
 Component.displayName = 'Modal';
 
 Component.defaultProps = {
+  header: null,
   hasCloseIcon: true,
+  hasPadding: false,
   hasRoundedCorners: false,
   isFullscreen: false,
   isOpen: undefined,
@@ -51,8 +63,12 @@ Component.propTypes = {
   children: PropTypes.node.isRequired,
   /** Does the modal have a close icon. */
   hasCloseIcon: PropTypes.bool,
+  /** Does the modal have padding around its content. */
+  hasPadding: PropTypes.bool,
   /** Does the modal have round corners. */
   hasRoundedCorners: PropTypes.bool,
+  /** The header fixed at the top of the modal. */
+  header: PropTypes.node,
   /** Is the modal filling the whole screen when displayed. */
   isFullscreen: PropTypes.bool,
   /** Is the modal open. Used when consuming `Modal` as a controlled component. */

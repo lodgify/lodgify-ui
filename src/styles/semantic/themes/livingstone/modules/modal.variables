@@ -15,6 +15,8 @@
 @closePadding: @10px @8px;
 
 /* Header */
+@headerHeight: 90px;
+@headerWithHeadingAndRatingMarginBottom: -10px;
 
 /* Logo */
 @modalLogoMaxHeight: 60px;
@@ -66,9 +68,9 @@
 
 /* With the horizontal gutters */
 @reducedHeadingWidth: ~"calc(100% - @{30px})";
-@withHorizontalCloseIconTop: @25px;
+@withHorizontalCloseIconTop: 1em;
 @withHorizontalCloseIconTopMobile: @5px;
-@withHorizontalCloseIconRight: 15%;
+@withHorizontalCloseIconRight: ~"calc(15% - 20px)";
 @withHorizontalCloseIconRightMobile: 3%;
 
 @halfContainerWidthWithPadding: (@horizontalGutterMaxWidth / 2) - (@horizontalGutterLeftRightPadding * 2);

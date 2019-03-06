@@ -75,6 +75,7 @@ const Component = ({
                   width={2}
                 >
                   <Modal
+                    hasPadding
                     trigger={
                       <Icon
                         color="yellow"
@@ -106,7 +107,11 @@ const Component = ({
                     verticalAlignContent="bottom"
                     width={4}
                   >
-                    <Modal size="small" trigger={<Link>More Info</Link>}>
+                    <Modal
+                      hasPadding
+                      size="small"
+                      trigger={<Link>More Info</Link>}
+                    >
                       {getModalContentMarkup(
                         amenities,
                         description,

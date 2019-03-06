@@ -1,9 +1,9 @@
 import React from 'react';
-import { Modal as SemanticModal, Form } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 
 import { Heading } from 'typography/Heading';
 import { Modal } from 'elements/Modal';
-import { Divider } from 'elements/Divider';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { getFormFieldMarkup } from './getFormFieldMarkup';
 
@@ -26,24 +26,24 @@ export const getSearchBarModal = (props, handleSubmit, persistInputChange) => {
 
   return (
     <Modal
+      hasPadding
+      header={
+        modalSummaryElement ? (
+          modalSummaryElement
+        ) : (
+          <Heading size="small">{modalHeadingText}</Heading>
+        )
+      }
       isFullscreen
       isOpen={isModalOpen}
       onClose={onCloseModal}
       trigger={searchButton}
     >
-      <SemanticModal.Content>
-        {modalSummaryElement ? (
-          <div>
-            {modalSummaryElement}
-            <Divider hasLine />
-          </div>
-        ) : (
-          <Heading size="small">{modalHeadingText}</Heading>
-        )}
+      <HorizontalGutters>
         <Form onSubmit={handleSubmit}>
           {getFormFieldMarkup(props, persistInputChange, true, false)}
         </Form>
-      </SemanticModal.Content>
+      </HorizontalGutters>
     </Modal>
   );
 };

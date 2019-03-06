@@ -21,7 +21,7 @@ export const formatParagraphWithModal = (
 ) => (
   <Fragment>
     {getParagraphWithEllipsis(paragraphText)}
-    <Modal trigger={<Button basic>View more</Button>}>
+    <Modal hasPadding trigger={<Button basic>View more</Button>}>
       {getParagraphsFromStrings(descriptionText, extraDescriptionText).map(
         (paragraphText, index) => (
           <Paragraph key={buildKeyFromStrings(paragraphText, index)}>

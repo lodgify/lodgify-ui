@@ -1,13 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Modal as SemanticModal } from 'semantic-ui-react';
-import {
-  expectComponentToBe,
-  expectComponentToHaveDisplayName,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Icon, ICON_NAMES } from 'elements/Icon';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Modal } from './component';
 
@@ -22,51 +15,33 @@ const getModal = props =>
   );
 
 describe('<Modal />', () => {
-  it('should render a single Semantic UI `Modal` component', () => {
-    const wrapper = getModal();
+  it('render the right structure', () => {
+    const actual = getModal();
 
-    expectComponentToBe(wrapper, SemanticModal);
+    expect(actual).toMatchSnapshot();
   });
 
-  describe('the Semantic UI `Modal` component', () => {
+  describe('if `props.isFullscreen` is `true`', () => {
+    it('render the right structure', () => {
+      const actual = getModal({ isFullscreen: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.size` is `small`', () => {
+    it('render the right structure', () => {
+      const actual = getModal({ size: 'small' });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.header` is passed', () => {
     it('should get the right props', () => {
-      const wrapper = getModal();
+      const actual = getModal({ header: 'yo' });
 
-      expectComponentToHaveProps(wrapper, {
-        closeIcon: <Icon name={ICON_NAMES.CLOSE} />,
-        content,
-        dimmer: 'inverted',
-        size: 'tiny',
-        trigger,
-      });
-    });
-
-    describe('if `props.isFullscreen` is `true`', () => {
-      it('should get the right props', () => {
-        const wrapper = getModal({ isFullscreen: true });
-
-        expectComponentToHaveProps(wrapper, {
-          closeIcon: <Icon name={ICON_NAMES.CLOSE} />,
-          content,
-          dimmer: 'inverted',
-          size: 'fullscreen',
-          trigger,
-        });
-      });
-    });
-
-    describe('if `props.size` is `small`', () => {
-      it('should get the right props', () => {
-        const wrapper = getModal({ size: 'small' });
-
-        expectComponentToHaveProps(wrapper, {
-          closeIcon: <Icon name={ICON_NAMES.CLOSE} />,
-          content,
-          dimmer: 'inverted',
-          size: 'small',
-          trigger,
-        });
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 

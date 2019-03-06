@@ -3,18 +3,15 @@
 exports[`<Gallery /> by default should render the right structure 1`] = `
 <Modal
   hasCloseIcon={true}
+  hasPadding={true}
   hasRoundedCorners={false}
+  header={null}
   isFullscreen={true}
   onClose={[Function]}
   size="tiny"
   trigger="someTrigger"
 >
   <HorizontalGutters>
-    <Divider
-      className=""
-      hasLine={false}
-      size="medium"
-    />
     <Grid
       areColumnsCentered={false}
       columns={2}
@@ -105,24 +102,15 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
 exports[`<Gallery /> if \`props.heading\` is defined should render the right structure 1`] = `
 <Modal
   hasCloseIcon={true}
+  hasPadding={true}
   hasRoundedCorners={false}
+  header=":hurtrealbad:"
   isFullscreen={true}
   onClose={[Function]}
   size="tiny"
   trigger="someTrigger"
 >
   <HorizontalGutters>
-    <Divider
-      className=""
-      hasLine={false}
-      size="medium"
-    />
-    :hurtrealbad:
-    <Divider
-      className=""
-      hasLine={true}
-      size="medium"
-    />
     <Grid
       areColumnsCentered={false}
       columns={2}

@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> if \`props.header\` is passed should get the right props 1`] = `
+<Modal
+  className=""
+  closeIcon={
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
+  closeOnDimmerClick={true}
+  closeOnDocumentClick={false}
+  dimmer="inverted"
+  eventPool="Modal"
+  onClose={[Function]}
+  size="tiny"
+  trigger="someTrigger"
+>
+  <ModalHeader>
+    <HorizontalGutters>
+      yo
+    </HorizontalGutters>
+  </ModalHeader>
+  <ModalContent>
+    someContent
+  </ModalContent>
+</Modal>
+`;
+
+exports[`<Modal /> if \`props.isFullscreen\` is \`true\` render the right structure 1`] = `
+<Modal
+  className=""
+  closeIcon={
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
+  closeOnDimmerClick={true}
+  closeOnDocumentClick={false}
+  dimmer="inverted"
+  eventPool="Modal"
+  onClose={[Function]}
+  size="fullscreen"
+  trigger="someTrigger"
+>
+  <ModalContent>
+    someContent
+  </ModalContent>
+</Modal>
+`;
+
+exports[`<Modal /> if \`props.size\` is \`small\` render the right structure 1`] = `
+<Modal
+  className=""
+  closeIcon={
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
+  closeOnDimmerClick={true}
+  closeOnDocumentClick={false}
+  dimmer="inverted"
+  eventPool="Modal"
+  onClose={[Function]}
+  size="small"
+  trigger="someTrigger"
+>
+  <ModalContent>
+    someContent
+  </ModalContent>
+</Modal>
+`;
+
+exports[`<Modal /> render the right structure 1`] = `
+<Modal
+  className=""
+  closeIcon={
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
+  closeOnDimmerClick={true}
+  closeOnDocumentClick={false}
+  dimmer="inverted"
+  eventPool="Modal"
+  onClose={[Function]}
+  size="tiny"
+  trigger="someTrigger"
+>
+  <ModalContent>
+    someContent
+  </ModalContent>
+</Modal>
+`;
