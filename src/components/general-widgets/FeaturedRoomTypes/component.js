@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import { Grid } from 'layout/Grid';
-import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { FeaturedRoomType } from 'general-widgets/FeaturedRoomType';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
@@ -24,26 +22,16 @@ export const Component = ({
       : featuredRoomTypes;
 
   return (
-    <Grid>
-      {headingText && (
-        <GridColumn width={12}>
-          <Heading>{headingText}</Heading>
-        </GridColumn>
-      )}
+    <Fragment>
+      {headingText && <Heading>{headingText}</Heading>}
       {featuredRoomTypesToMap.map((featuredRoomType, index) => (
-        <GridColumn
-          computer={4}
+        <FeaturedRoomType
+          isShowingPlaceholder={isShowingPlaceholder}
           key={buildKeyFromStrings(featuredRoomType.roomTypeName, index)}
-          mobile={12}
-          tablet={6}
-        >
-          <FeaturedRoomType
-            isShowingPlaceholder={isShowingPlaceholder}
-            {...featuredRoomType}
-          />
-        </GridColumn>
+          {...featuredRoomType}
+        />
       ))}
-    </Grid>
+    </Fragment>
   );
 };
 

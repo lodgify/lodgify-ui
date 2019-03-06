@@ -29,314 +29,260 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
   headingText={null}
   isShowingPlaceholder={false}
 >
-  <Grid
-    areColumnsCentered={false}
-    isStackable={false}
+  <FeaturedRoomType
+    bedsLabel="Beds"
+    bedsNumber={3}
+    guestsLabel="Guests"
+    guestsNumber={3}
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+    isShowingPlaceholder={false}
+    key="The Cat House0"
+    locationName="Catania"
+    nightPrice="$280"
+    ratingNumber={4.8}
+    roomTypeName="The Cat House"
+    roomTypeUrl="/"
+    roomTypeUrlTarget="_self"
   >
-    <Grid
-      centered={false}
-      stackable={false}
+    <Card
+      className="has-featured"
+      href="/"
+      target="_self"
     >
-      <div
-        className="ui grid"
+      <a
+        className="ui card has-featured"
+        href="/"
+        onClick={[Function]}
+        target="_self"
       >
-        <GridColumn
-          computer={4}
-          key="The Cat House0"
-          mobile={12}
-          tablet={6}
-          verticalAlignContent="top"
-          width={null}
+        <ResponsiveImage
+          alternativeText="Image Widget"
+          hasRoundedCorners={false}
+          imageHeight={null}
+          imageNotFoundLabelText="Image not found!"
+          imageTitle="Image Title"
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageWidth={null}
+          isAvatar={false}
+          isCircular={false}
+          isFluid={true}
+          label={null}
+          sizes={null}
+          srcSet={null}
         >
-          <GridColumn
-            computer={4}
-            mobile={12}
-            tablet={6}
-            verticalAlign="top"
-            width={null}
+          <figure
+            className="responsive-image is-fluid"
           >
-            <div
-              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            <Image
+              alt="Image Widget"
+              as="img"
+              avatar={false}
+              fluid={true}
+              onLoad={[Function]}
+              sizes={null}
+              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+              srcSet={null}
+              title="Image Title"
+              ui={true}
             >
-              <FeaturedRoomType
-                bedsLabel="Beds"
-                bedsNumber={3}
-                guestsLabel="Guests"
-                guestsNumber={3}
-                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                isShowingPlaceholder={false}
-                locationName="Catania"
-                nightPrice="$280"
-                ratingNumber={4.8}
-                roomTypeName="The Cat House"
-                roomTypeUrl="/"
-                roomTypeUrlTarget="_self"
+              <img
+                alt="Image Widget"
+                className="ui fluid image"
+                onLoad={[Function]}
+                sizes={null}
+                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                srcSet={null}
+                title="Image Title"
+              />
+            </Image>
+          </figure>
+        </ResponsiveImage>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <CardHeader>
+              <div
+                className="header"
               >
-                <Card
-                  className="has-featured"
-                  href="/"
-                  target="_self"
-                >
-                  <a
-                    className="ui card has-featured"
-                    href="/"
-                    onClick={[Function]}
-                    target="_self"
+                The Cat House
+              </div>
+            </CardHeader>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                Catania
+              </div>
+            </CardDescription>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                Guests: 3 | Beds: 3
+              </div>
+            </CardDescription>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                <span>
+                  from 
+                  <Heading
+                    className={null}
+                    isColorInverted={false}
+                    size="medium"
+                    textAlign={null}
                   >
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
+                    <Header
+                      as="h3"
+                      className={null}
+                      inverted={false}
+                      textAlign={null}
                     >
-                      <figure
-                        className="responsive-image is-fluid"
+                      <h3
+                        className="ui header"
                       >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <CardContent>
-                      <div
-                        className="content"
-                      >
-                        <CardHeader>
-                          <div
-                            className="header"
-                          >
-                            The Cat House
-                          </div>
-                        </CardHeader>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            Catania
-                          </div>
-                        </CardDescription>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            Guests: 3 | Beds: 3
-                          </div>
-                        </CardDescription>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            <span>
-                              from 
-                              <Heading
-                                className={null}
-                                isColorInverted={false}
-                                size="medium"
-                                textAlign={null}
-                              >
-                                <Header
-                                  as="h3"
-                                  className={null}
-                                  inverted={false}
-                                  textAlign={null}
-                                >
-                                  <h3
-                                    className="ui header"
-                                  >
-                                    $280
-                                  </h3>
-                                </Header>
-                              </Heading>
-                              /night
-                            </span>
-                          </div>
-                        </CardDescription>
-                      </div>
-                    </CardContent>
-                  </a>
-                </Card>
-              </FeaturedRoomType>
-            </div>
-          </GridColumn>
-        </GridColumn>
-        <GridColumn
-          computer={4}
-          key="The Cat House1"
-          mobile={12}
-          tablet={6}
-          verticalAlignContent="top"
-          width={null}
+                        $280
+                      </h3>
+                    </Header>
+                  </Heading>
+                  /night
+                </span>
+              </div>
+            </CardDescription>
+          </div>
+        </CardContent>
+      </a>
+    </Card>
+  </FeaturedRoomType>
+  <FeaturedRoomType
+    bedsLabel="Beds"
+    bedsNumber={3}
+    guestsLabel="Guests"
+    guestsNumber={3}
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+    isShowingPlaceholder={false}
+    key="The Cat House1"
+    locationName="Catania"
+    nightPrice="$280"
+    ratingNumber={4.8}
+    roomTypeName="The Cat House"
+    roomTypeUrl="/"
+    roomTypeUrlTarget="_self"
+  >
+    <Card
+      className="has-featured"
+      href="/"
+      target="_self"
+    >
+      <a
+        className="ui card has-featured"
+        href="/"
+        onClick={[Function]}
+        target="_self"
+      >
+        <ResponsiveImage
+          alternativeText="Image Widget"
+          hasRoundedCorners={false}
+          imageHeight={null}
+          imageNotFoundLabelText="Image not found!"
+          imageTitle="Image Title"
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageWidth={null}
+          isAvatar={false}
+          isCircular={false}
+          isFluid={true}
+          label={null}
+          sizes={null}
+          srcSet={null}
         >
-          <GridColumn
-            computer={4}
-            mobile={12}
-            tablet={6}
-            verticalAlign="top"
-            width={null}
+          <figure
+            className="responsive-image is-fluid"
           >
-            <div
-              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            <Image
+              alt="Image Widget"
+              as="img"
+              avatar={false}
+              fluid={true}
+              onLoad={[Function]}
+              sizes={null}
+              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+              srcSet={null}
+              title="Image Title"
+              ui={true}
             >
-              <FeaturedRoomType
-                bedsLabel="Beds"
-                bedsNumber={3}
-                guestsLabel="Guests"
-                guestsNumber={3}
-                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                isShowingPlaceholder={false}
-                locationName="Catania"
-                nightPrice="$280"
-                ratingNumber={4.8}
-                roomTypeName="The Cat House"
-                roomTypeUrl="/"
-                roomTypeUrlTarget="_self"
+              <img
+                alt="Image Widget"
+                className="ui fluid image"
+                onLoad={[Function]}
+                sizes={null}
+                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                srcSet={null}
+                title="Image Title"
+              />
+            </Image>
+          </figure>
+        </ResponsiveImage>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <CardHeader>
+              <div
+                className="header"
               >
-                <Card
-                  className="has-featured"
-                  href="/"
-                  target="_self"
-                >
-                  <a
-                    className="ui card has-featured"
-                    href="/"
-                    onClick={[Function]}
-                    target="_self"
+                The Cat House
+              </div>
+            </CardHeader>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                Catania
+              </div>
+            </CardDescription>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                Guests: 3 | Beds: 3
+              </div>
+            </CardDescription>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                <span>
+                  from 
+                  <Heading
+                    className={null}
+                    isColorInverted={false}
+                    size="medium"
+                    textAlign={null}
                   >
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
+                    <Header
+                      as="h3"
+                      className={null}
+                      inverted={false}
+                      textAlign={null}
                     >
-                      <figure
-                        className="responsive-image is-fluid"
+                      <h3
+                        className="ui header"
                       >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <CardContent>
-                      <div
-                        className="content"
-                      >
-                        <CardHeader>
-                          <div
-                            className="header"
-                          >
-                            The Cat House
-                          </div>
-                        </CardHeader>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            Catania
-                          </div>
-                        </CardDescription>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            Guests: 3 | Beds: 3
-                          </div>
-                        </CardDescription>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            <span>
-                              from 
-                              <Heading
-                                className={null}
-                                isColorInverted={false}
-                                size="medium"
-                                textAlign={null}
-                              >
-                                <Header
-                                  as="h3"
-                                  className={null}
-                                  inverted={false}
-                                  textAlign={null}
-                                >
-                                  <h3
-                                    className="ui header"
-                                  >
-                                    $280
-                                  </h3>
-                                </Header>
-                              </Heading>
-                              /night
-                            </span>
-                          </div>
-                        </CardDescription>
-                      </div>
-                    </CardContent>
-                  </a>
-                </Card>
-              </FeaturedRoomType>
-            </div>
-          </GridColumn>
-        </GridColumn>
-      </div>
-    </Grid>
-  </Grid>
+                        $280
+                      </h3>
+                    </Header>
+                  </Heading>
+                  /night
+                </span>
+              </div>
+            </CardDescription>
+          </div>
+        </CardContent>
+      </a>
+    </Card>
+  </FeaturedRoomType>
 </FeaturedRoomTypes>
 `;
 
@@ -346,389 +292,270 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
   headingText={null}
   isShowingPlaceholder={true}
 >
-  <Grid
-    areColumnsCentered={false}
-    isStackable={false}
+  <FeaturedRoomType
+    bedsLabel="Beds"
+    bedsNumber={0}
+    guestsLabel="Guests"
+    guestsNumber={0}
+    imageUrl=""
+    isShowingPlaceholder={true}
+    key="0"
+    locationName=""
+    nightPrice=""
+    roomTypeName=""
+    roomTypeUrl=""
+    roomTypeUrlTarget="_self"
   >
-    <Grid
-      centered={false}
-      stackable={false}
+    <Card
+      className="has-featured"
+      href=""
+      target="_self"
     >
       <div
-        className="ui grid"
+        className="ui card has-featured"
+        href=""
+        onClick={[Function]}
+        target="_self"
       >
-        <GridColumn
-          computer={4}
-          key="0"
-          mobile={12}
-          tablet={6}
-          verticalAlignContent="top"
-          width={null}
+        <BlockPlaceholder
+          isFluid={false}
+          isRectangular={true}
+          isSquare={false}
         >
-          <GridColumn
-            computer={4}
-            mobile={12}
-            tablet={6}
-            verticalAlign="top"
-            width={null}
+          <div
+            className="placeholder block rectangle"
+          />
+        </BlockPlaceholder>
+        <CardContent>
+          <div
+            className="content"
           >
-            <div
-              className="top aligned four wide computer twelve wide mobile six wide tablet column"
-            >
-              <FeaturedRoomType
-                bedsLabel="Beds"
-                bedsNumber={0}
-                guestsLabel="Guests"
-                guestsNumber={0}
-                imageUrl=""
-                isShowingPlaceholder={true}
-                locationName=""
-                nightPrice=""
-                roomTypeName=""
-                roomTypeUrl=""
-                roomTypeUrlTarget="_self"
+            <CardHeader>
+              <div
+                className="header"
               >
-                <Card
-                  className="has-featured"
-                  href=""
-                  target="_self"
+                <Divider
+                  className=""
+                  hasLine={false}
+                  size="small"
+                >
+                  <Divider
+                    className="is-size-small"
+                    hidden={true}
+                    section={false}
+                  >
+                    <div
+                      className="ui hidden divider is-size-small"
+                    />
+                  </Divider>
+                </Divider>
+                <TextPlaceholder
+                  isFluid={true}
+                  length="medium"
                 >
                   <div
-                    className="ui card has-featured"
-                    href=""
-                    onClick={[Function]}
-                    target="_self"
-                  >
-                    <BlockPlaceholder
-                      isFluid={false}
-                      isRectangular={true}
-                      isSquare={false}
-                    >
-                      <div
-                        className="placeholder block rectangle"
-                      />
-                    </BlockPlaceholder>
-                    <CardContent>
-                      <div
-                        className="content"
-                      >
-                        <CardHeader>
-                          <div
-                            className="header"
-                          >
-                            <Divider
-                              className=""
-                              hasLine={false}
-                              size="medium"
-                            >
-                              <Divider
-                                className=""
-                                hidden={true}
-                                section={false}
-                              >
-                                <div
-                                  className="ui hidden divider"
-                                />
-                              </Divider>
-                            </Divider>
-                            <TextPlaceholder
-                              isFluid={true}
-                              length="medium"
-                            >
-                              <div
-                                className="placeholder text medium fluid"
-                              />
-                            </TextPlaceholder>
-                            <Divider
-                              className=""
-                              hasLine={false}
-                              size="medium"
-                            >
-                              <Divider
-                                className=""
-                                hidden={true}
-                                section={false}
-                              >
-                                <div
-                                  className="ui hidden divider"
-                                />
-                              </Divider>
-                            </Divider>
-                            <TextPlaceholder
-                              isFluid={true}
-                              length="long"
-                            >
-                              <div
-                                className="placeholder text long fluid"
-                              />
-                            </TextPlaceholder>
-                            <TextPlaceholder
-                              isFluid={true}
-                              length="long"
-                            >
-                              <div
-                                className="placeholder text long fluid"
-                              />
-                            </TextPlaceholder>
-                          </div>
-                        </CardHeader>
-                      </div>
-                    </CardContent>
-                  </div>
-                </Card>
-              </FeaturedRoomType>
-            </div>
-          </GridColumn>
-        </GridColumn>
-        <GridColumn
-          computer={4}
-          key="1"
-          mobile={12}
-          tablet={6}
-          verticalAlignContent="top"
-          width={null}
-        >
-          <GridColumn
-            computer={4}
-            mobile={12}
-            tablet={6}
-            verticalAlign="top"
-            width={null}
-          >
-            <div
-              className="top aligned four wide computer twelve wide mobile six wide tablet column"
-            >
-              <FeaturedRoomType
-                bedsLabel="Beds"
-                bedsNumber={0}
-                guestsLabel="Guests"
-                guestsNumber={0}
-                imageUrl=""
-                isShowingPlaceholder={true}
-                locationName=""
-                nightPrice=""
-                roomTypeName=""
-                roomTypeUrl=""
-                roomTypeUrlTarget="_self"
-              >
-                <Card
-                  className="has-featured"
-                  href=""
-                  target="_self"
+                    className="placeholder text medium fluid"
+                  />
+                </TextPlaceholder>
+                <TextPlaceholder
+                  isFluid={true}
+                  length="long"
                 >
                   <div
-                    className="ui card has-featured"
-                    href=""
-                    onClick={[Function]}
-                    target="_self"
-                  >
-                    <BlockPlaceholder
-                      isFluid={false}
-                      isRectangular={true}
-                      isSquare={false}
-                    >
-                      <div
-                        className="placeholder block rectangle"
-                      />
-                    </BlockPlaceholder>
-                    <CardContent>
-                      <div
-                        className="content"
-                      >
-                        <CardHeader>
-                          <div
-                            className="header"
-                          >
-                            <Divider
-                              className=""
-                              hasLine={false}
-                              size="medium"
-                            >
-                              <Divider
-                                className=""
-                                hidden={true}
-                                section={false}
-                              >
-                                <div
-                                  className="ui hidden divider"
-                                />
-                              </Divider>
-                            </Divider>
-                            <TextPlaceholder
-                              isFluid={true}
-                              length="medium"
-                            >
-                              <div
-                                className="placeholder text medium fluid"
-                              />
-                            </TextPlaceholder>
-                            <Divider
-                              className=""
-                              hasLine={false}
-                              size="medium"
-                            >
-                              <Divider
-                                className=""
-                                hidden={true}
-                                section={false}
-                              >
-                                <div
-                                  className="ui hidden divider"
-                                />
-                              </Divider>
-                            </Divider>
-                            <TextPlaceholder
-                              isFluid={true}
-                              length="long"
-                            >
-                              <div
-                                className="placeholder text long fluid"
-                              />
-                            </TextPlaceholder>
-                            <TextPlaceholder
-                              isFluid={true}
-                              length="long"
-                            >
-                              <div
-                                className="placeholder text long fluid"
-                              />
-                            </TextPlaceholder>
-                          </div>
-                        </CardHeader>
-                      </div>
-                    </CardContent>
-                  </div>
-                </Card>
-              </FeaturedRoomType>
-            </div>
-          </GridColumn>
-        </GridColumn>
-        <GridColumn
-          computer={4}
-          key="2"
-          mobile={12}
-          tablet={6}
-          verticalAlignContent="top"
-          width={null}
-        >
-          <GridColumn
-            computer={4}
-            mobile={12}
-            tablet={6}
-            verticalAlign="top"
-            width={null}
-          >
-            <div
-              className="top aligned four wide computer twelve wide mobile six wide tablet column"
-            >
-              <FeaturedRoomType
-                bedsLabel="Beds"
-                bedsNumber={0}
-                guestsLabel="Guests"
-                guestsNumber={0}
-                imageUrl=""
-                isShowingPlaceholder={true}
-                locationName=""
-                nightPrice=""
-                roomTypeName=""
-                roomTypeUrl=""
-                roomTypeUrlTarget="_self"
-              >
-                <Card
-                  className="has-featured"
-                  href=""
-                  target="_self"
+                    className="placeholder text long fluid"
+                  />
+                </TextPlaceholder>
+                <TextPlaceholder
+                  isFluid={true}
+                  length="long"
                 >
                   <div
-                    className="ui card has-featured"
-                    href=""
-                    onClick={[Function]}
-                    target="_self"
-                  >
-                    <BlockPlaceholder
-                      isFluid={false}
-                      isRectangular={true}
-                      isSquare={false}
-                    >
-                      <div
-                        className="placeholder block rectangle"
-                      />
-                    </BlockPlaceholder>
-                    <CardContent>
-                      <div
-                        className="content"
-                      >
-                        <CardHeader>
-                          <div
-                            className="header"
-                          >
-                            <Divider
-                              className=""
-                              hasLine={false}
-                              size="medium"
-                            >
-                              <Divider
-                                className=""
-                                hidden={true}
-                                section={false}
-                              >
-                                <div
-                                  className="ui hidden divider"
-                                />
-                              </Divider>
-                            </Divider>
-                            <TextPlaceholder
-                              isFluid={true}
-                              length="medium"
-                            >
-                              <div
-                                className="placeholder text medium fluid"
-                              />
-                            </TextPlaceholder>
-                            <Divider
-                              className=""
-                              hasLine={false}
-                              size="medium"
-                            >
-                              <Divider
-                                className=""
-                                hidden={true}
-                                section={false}
-                              >
-                                <div
-                                  className="ui hidden divider"
-                                />
-                              </Divider>
-                            </Divider>
-                            <TextPlaceholder
-                              isFluid={true}
-                              length="long"
-                            >
-                              <div
-                                className="placeholder text long fluid"
-                              />
-                            </TextPlaceholder>
-                            <TextPlaceholder
-                              isFluid={true}
-                              length="long"
-                            >
-                              <div
-                                className="placeholder text long fluid"
-                              />
-                            </TextPlaceholder>
-                          </div>
-                        </CardHeader>
-                      </div>
-                    </CardContent>
-                  </div>
-                </Card>
-              </FeaturedRoomType>
-            </div>
-          </GridColumn>
-        </GridColumn>
+                    className="placeholder text long fluid"
+                  />
+                </TextPlaceholder>
+              </div>
+            </CardHeader>
+          </div>
+        </CardContent>
       </div>
-    </Grid>
-  </Grid>
+    </Card>
+  </FeaturedRoomType>
+  <FeaturedRoomType
+    bedsLabel="Beds"
+    bedsNumber={0}
+    guestsLabel="Guests"
+    guestsNumber={0}
+    imageUrl=""
+    isShowingPlaceholder={true}
+    key="1"
+    locationName=""
+    nightPrice=""
+    roomTypeName=""
+    roomTypeUrl=""
+    roomTypeUrlTarget="_self"
+  >
+    <Card
+      className="has-featured"
+      href=""
+      target="_self"
+    >
+      <div
+        className="ui card has-featured"
+        href=""
+        onClick={[Function]}
+        target="_self"
+      >
+        <BlockPlaceholder
+          isFluid={false}
+          isRectangular={true}
+          isSquare={false}
+        >
+          <div
+            className="placeholder block rectangle"
+          />
+        </BlockPlaceholder>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <CardHeader>
+              <div
+                className="header"
+              >
+                <Divider
+                  className=""
+                  hasLine={false}
+                  size="small"
+                >
+                  <Divider
+                    className="is-size-small"
+                    hidden={true}
+                    section={false}
+                  >
+                    <div
+                      className="ui hidden divider is-size-small"
+                    />
+                  </Divider>
+                </Divider>
+                <TextPlaceholder
+                  isFluid={true}
+                  length="medium"
+                >
+                  <div
+                    className="placeholder text medium fluid"
+                  />
+                </TextPlaceholder>
+                <TextPlaceholder
+                  isFluid={true}
+                  length="long"
+                >
+                  <div
+                    className="placeholder text long fluid"
+                  />
+                </TextPlaceholder>
+                <TextPlaceholder
+                  isFluid={true}
+                  length="long"
+                >
+                  <div
+                    className="placeholder text long fluid"
+                  />
+                </TextPlaceholder>
+              </div>
+            </CardHeader>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </FeaturedRoomType>
+  <FeaturedRoomType
+    bedsLabel="Beds"
+    bedsNumber={0}
+    guestsLabel="Guests"
+    guestsNumber={0}
+    imageUrl=""
+    isShowingPlaceholder={true}
+    key="2"
+    locationName=""
+    nightPrice=""
+    roomTypeName=""
+    roomTypeUrl=""
+    roomTypeUrlTarget="_self"
+  >
+    <Card
+      className="has-featured"
+      href=""
+      target="_self"
+    >
+      <div
+        className="ui card has-featured"
+        href=""
+        onClick={[Function]}
+        target="_self"
+      >
+        <BlockPlaceholder
+          isFluid={false}
+          isRectangular={true}
+          isSquare={false}
+        >
+          <div
+            className="placeholder block rectangle"
+          />
+        </BlockPlaceholder>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <CardHeader>
+              <div
+                className="header"
+              >
+                <Divider
+                  className=""
+                  hasLine={false}
+                  size="small"
+                >
+                  <Divider
+                    className="is-size-small"
+                    hidden={true}
+                    section={false}
+                  >
+                    <div
+                      className="ui hidden divider is-size-small"
+                    />
+                  </Divider>
+                </Divider>
+                <TextPlaceholder
+                  isFluid={true}
+                  length="medium"
+                >
+                  <div
+                    className="placeholder text medium fluid"
+                  />
+                </TextPlaceholder>
+                <TextPlaceholder
+                  isFluid={true}
+                  length="long"
+                >
+                  <div
+                    className="placeholder text long fluid"
+                  />
+                </TextPlaceholder>
+                <TextPlaceholder
+                  isFluid={true}
+                  length="long"
+                >
+                  <div
+                    className="placeholder text long fluid"
+                  />
+                </TextPlaceholder>
+              </div>
+            </CardHeader>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </FeaturedRoomType>
 </FeaturedRoomTypes>
 `;
 
@@ -761,346 +588,278 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
   headingText="My god I love Elton John"
   isShowingPlaceholder={false}
 >
-  <Grid
-    areColumnsCentered={false}
-    isStackable={false}
+  <Heading
+    className={null}
+    isColorInverted={false}
+    size="medium"
+    textAlign={null}
   >
-    <Grid
-      centered={false}
-      stackable={false}
+    <Header
+      as="h3"
+      className={null}
+      inverted={false}
+      textAlign={null}
     >
-      <div
-        className="ui grid"
+      <h3
+        className="ui header"
       >
-        <GridColumn
-          verticalAlignContent="top"
-          width={12}
+        My god I love Elton John
+      </h3>
+    </Header>
+  </Heading>
+  <FeaturedRoomType
+    bedsLabel="Beds"
+    bedsNumber={3}
+    guestsLabel="Guests"
+    guestsNumber={3}
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+    isShowingPlaceholder={false}
+    key="The Cat House0"
+    locationName="Catania"
+    nightPrice="$280"
+    ratingNumber={4.8}
+    roomTypeName="The Cat House"
+    roomTypeUrl="/"
+    roomTypeUrlTarget="_self"
+  >
+    <Card
+      className="has-featured"
+      href="/"
+      target="_self"
+    >
+      <a
+        className="ui card has-featured"
+        href="/"
+        onClick={[Function]}
+        target="_self"
+      >
+        <ResponsiveImage
+          alternativeText="Image Widget"
+          hasRoundedCorners={false}
+          imageHeight={null}
+          imageNotFoundLabelText="Image not found!"
+          imageTitle="Image Title"
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageWidth={null}
+          isAvatar={false}
+          isCircular={false}
+          isFluid={true}
+          label={null}
+          sizes={null}
+          srcSet={null}
         >
-          <GridColumn
-            verticalAlign="top"
-            width={12}
+          <figure
+            className="responsive-image is-fluid"
           >
-            <div
-              className="top aligned twelve wide column"
+            <Image
+              alt="Image Widget"
+              as="img"
+              avatar={false}
+              fluid={true}
+              onLoad={[Function]}
+              sizes={null}
+              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+              srcSet={null}
+              title="Image Title"
+              ui={true}
             >
-              <Heading
-                className={null}
-                isColorInverted={false}
-                size="medium"
-                textAlign={null}
-              >
-                <Header
-                  as="h3"
-                  className={null}
-                  inverted={false}
-                  textAlign={null}
-                >
-                  <h3
-                    className="ui header"
-                  >
-                    My god I love Elton John
-                  </h3>
-                </Header>
-              </Heading>
-            </div>
-          </GridColumn>
-        </GridColumn>
-        <GridColumn
-          computer={4}
-          key="The Cat House0"
-          mobile={12}
-          tablet={6}
-          verticalAlignContent="top"
-          width={null}
-        >
-          <GridColumn
-            computer={4}
-            mobile={12}
-            tablet={6}
-            verticalAlign="top"
-            width={null}
+              <img
+                alt="Image Widget"
+                className="ui fluid image"
+                onLoad={[Function]}
+                sizes={null}
+                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                srcSet={null}
+                title="Image Title"
+              />
+            </Image>
+          </figure>
+        </ResponsiveImage>
+        <CardContent>
+          <div
+            className="content"
           >
-            <div
-              className="top aligned four wide computer twelve wide mobile six wide tablet column"
-            >
-              <FeaturedRoomType
-                bedsLabel="Beds"
-                bedsNumber={3}
-                guestsLabel="Guests"
-                guestsNumber={3}
-                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                isShowingPlaceholder={false}
-                locationName="Catania"
-                nightPrice="$280"
-                ratingNumber={4.8}
-                roomTypeName="The Cat House"
-                roomTypeUrl="/"
-                roomTypeUrlTarget="_self"
+            <CardHeader>
+              <div
+                className="header"
               >
-                <Card
-                  className="has-featured"
-                  href="/"
-                  target="_self"
-                >
-                  <a
-                    className="ui card has-featured"
-                    href="/"
-                    onClick={[Function]}
-                    target="_self"
+                The Cat House
+              </div>
+            </CardHeader>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                Catania
+              </div>
+            </CardDescription>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                Guests: 3 | Beds: 3
+              </div>
+            </CardDescription>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                <span>
+                  from 
+                  <Heading
+                    className={null}
+                    isColorInverted={false}
+                    size="medium"
+                    textAlign={null}
                   >
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
+                    <Header
+                      as="h3"
+                      className={null}
+                      inverted={false}
+                      textAlign={null}
                     >
-                      <figure
-                        className="responsive-image is-fluid"
+                      <h3
+                        className="ui header"
                       >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <CardContent>
-                      <div
-                        className="content"
-                      >
-                        <CardHeader>
-                          <div
-                            className="header"
-                          >
-                            The Cat House
-                          </div>
-                        </CardHeader>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            Catania
-                          </div>
-                        </CardDescription>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            Guests: 3 | Beds: 3
-                          </div>
-                        </CardDescription>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            <span>
-                              from 
-                              <Heading
-                                className={null}
-                                isColorInverted={false}
-                                size="medium"
-                                textAlign={null}
-                              >
-                                <Header
-                                  as="h3"
-                                  className={null}
-                                  inverted={false}
-                                  textAlign={null}
-                                >
-                                  <h3
-                                    className="ui header"
-                                  >
-                                    $280
-                                  </h3>
-                                </Header>
-                              </Heading>
-                              /night
-                            </span>
-                          </div>
-                        </CardDescription>
-                      </div>
-                    </CardContent>
-                  </a>
-                </Card>
-              </FeaturedRoomType>
-            </div>
-          </GridColumn>
-        </GridColumn>
-        <GridColumn
-          computer={4}
-          key="The Cat House1"
-          mobile={12}
-          tablet={6}
-          verticalAlignContent="top"
-          width={null}
+                        $280
+                      </h3>
+                    </Header>
+                  </Heading>
+                  /night
+                </span>
+              </div>
+            </CardDescription>
+          </div>
+        </CardContent>
+      </a>
+    </Card>
+  </FeaturedRoomType>
+  <FeaturedRoomType
+    bedsLabel="Beds"
+    bedsNumber={3}
+    guestsLabel="Guests"
+    guestsNumber={3}
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+    isShowingPlaceholder={false}
+    key="The Cat House1"
+    locationName="Catania"
+    nightPrice="$280"
+    ratingNumber={4.8}
+    roomTypeName="The Cat House"
+    roomTypeUrl="/"
+    roomTypeUrlTarget="_self"
+  >
+    <Card
+      className="has-featured"
+      href="/"
+      target="_self"
+    >
+      <a
+        className="ui card has-featured"
+        href="/"
+        onClick={[Function]}
+        target="_self"
+      >
+        <ResponsiveImage
+          alternativeText="Image Widget"
+          hasRoundedCorners={false}
+          imageHeight={null}
+          imageNotFoundLabelText="Image not found!"
+          imageTitle="Image Title"
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageWidth={null}
+          isAvatar={false}
+          isCircular={false}
+          isFluid={true}
+          label={null}
+          sizes={null}
+          srcSet={null}
         >
-          <GridColumn
-            computer={4}
-            mobile={12}
-            tablet={6}
-            verticalAlign="top"
-            width={null}
+          <figure
+            className="responsive-image is-fluid"
           >
-            <div
-              className="top aligned four wide computer twelve wide mobile six wide tablet column"
+            <Image
+              alt="Image Widget"
+              as="img"
+              avatar={false}
+              fluid={true}
+              onLoad={[Function]}
+              sizes={null}
+              src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+              srcSet={null}
+              title="Image Title"
+              ui={true}
             >
-              <FeaturedRoomType
-                bedsLabel="Beds"
-                bedsNumber={3}
-                guestsLabel="Guests"
-                guestsNumber={3}
-                imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                isShowingPlaceholder={false}
-                locationName="Catania"
-                nightPrice="$280"
-                ratingNumber={4.8}
-                roomTypeName="The Cat House"
-                roomTypeUrl="/"
-                roomTypeUrlTarget="_self"
+              <img
+                alt="Image Widget"
+                className="ui fluid image"
+                onLoad={[Function]}
+                sizes={null}
+                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                srcSet={null}
+                title="Image Title"
+              />
+            </Image>
+          </figure>
+        </ResponsiveImage>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <CardHeader>
+              <div
+                className="header"
               >
-                <Card
-                  className="has-featured"
-                  href="/"
-                  target="_self"
-                >
-                  <a
-                    className="ui card has-featured"
-                    href="/"
-                    onClick={[Function]}
-                    target="_self"
+                The Cat House
+              </div>
+            </CardHeader>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                Catania
+              </div>
+            </CardDescription>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                Guests: 3 | Beds: 3
+              </div>
+            </CardDescription>
+            <CardDescription>
+              <div
+                className="description"
+              >
+                <span>
+                  from 
+                  <Heading
+                    className={null}
+                    isColorInverted={false}
+                    size="medium"
+                    textAlign={null}
                   >
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
+                    <Header
+                      as="h3"
+                      className={null}
+                      inverted={false}
+                      textAlign={null}
                     >
-                      <figure
-                        className="responsive-image is-fluid"
+                      <h3
+                        className="ui header"
                       >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <CardContent>
-                      <div
-                        className="content"
-                      >
-                        <CardHeader>
-                          <div
-                            className="header"
-                          >
-                            The Cat House
-                          </div>
-                        </CardHeader>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            Catania
-                          </div>
-                        </CardDescription>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            Guests: 3 | Beds: 3
-                          </div>
-                        </CardDescription>
-                        <CardDescription>
-                          <div
-                            className="description"
-                          >
-                            <span>
-                              from 
-                              <Heading
-                                className={null}
-                                isColorInverted={false}
-                                size="medium"
-                                textAlign={null}
-                              >
-                                <Header
-                                  as="h3"
-                                  className={null}
-                                  inverted={false}
-                                  textAlign={null}
-                                >
-                                  <h3
-                                    className="ui header"
-                                  >
-                                    $280
-                                  </h3>
-                                </Header>
-                              </Heading>
-                              /night
-                            </span>
-                          </div>
-                        </CardDescription>
-                      </div>
-                    </CardContent>
-                  </a>
-                </Card>
-              </FeaturedRoomType>
-            </div>
-          </GridColumn>
-        </GridColumn>
-      </div>
-    </Grid>
-  </Grid>
+                        $280
+                      </h3>
+                    </Header>
+                  </Heading>
+                  /night
+                </span>
+              </div>
+            </CardDescription>
+          </div>
+        </CardContent>
+      </a>
+    </Card>
+  </FeaturedRoomType>
 </FeaturedRoomTypes>
 `;
