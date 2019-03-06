@@ -48,7 +48,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
   primaryCTA={null}
 >
   <header
-    className=""
+    className="is-opaque"
   >
     <HorizontalGutters
       as={[Function]}
@@ -489,7 +489,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
   primaryCTA={null}
 >
   <header
-    className=""
+    className="is-opaque"
   >
     <HorizontalGutters
       as={[Function]}
@@ -837,7 +837,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
   primaryCTA={null}
 >
   <header
-    className="is-background-filled"
+    className="is-background-filled is-opaque"
   >
     <HorizontalGutters
       as={[Function]}

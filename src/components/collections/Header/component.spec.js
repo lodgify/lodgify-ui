@@ -97,7 +97,7 @@ describe('<Header />', () => {
 
       expect(wrapper.instance().setState).toHaveBeenCalledWith({
         navigationItemsWidth: NAVIGATION_ITEMS_WIDTH,
-        isTransparent: false,
+        isOpaque: true,
       });
     });
   });

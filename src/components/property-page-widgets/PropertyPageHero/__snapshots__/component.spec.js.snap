@@ -151,7 +151,7 @@ exports[`PropertyPageHero if there are fewer than two images should render the r
             }
           >
             <header
-              className=""
+              className="is-opaque"
             >
               <HorizontalGutters
                 as={[Function]}
@@ -430,7 +430,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
             }
           >
             <header
-              className=""
+              className="is-opaque"
             >
               <HorizontalGutters
                 as={[Function]}
