@@ -134,6 +134,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           error={false}
                           isValid={false}
                           label="Name"
+                          maxCharacters={80}
                           name="name"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -163,6 +164,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 <input
                                   autoComplete="name"
                                   key=".2"
+                                  maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -192,6 +194,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           error={false}
                           isValid={false}
                           label="Phone"
+                          maxCharacters={15}
                           name="phone"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -236,6 +239,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 <input
                                   autoComplete="tel"
                                   key=".2"
+                                  maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="tel"
@@ -302,6 +306,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           error={false}
                           isValid={false}
                           label="Email"
+                          maxCharacters={255}
                           name="email"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -332,6 +337,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 <input
                                   autoComplete="email"
                                   key=".2"
+                                  maxLength={255}
                                   name="email"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -576,6 +582,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                       error={false}
                       isValid={false}
                       label="Comments"
+                      maxCharacters={800}
                       name="comments"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -604,6 +611,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             <textarea
                               autoComplete={null}
                               key=".2"
+                              maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
@@ -1231,6 +1239,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                 error={false}
                                 isValid={false}
                                 label="Security code"
+                                maxCharacters={null}
                                 name="captcha"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -1260,6 +1269,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                       <input
                                         autoComplete="off"
                                         key=".2"
+                                        maxLength={null}
                                         name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
@@ -1445,6 +1455,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           error={false}
                           isValid={false}
                           label="Name"
+                          maxCharacters={80}
                           name="name"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -1474,6 +1485,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 <input
                                   autoComplete="name"
                                   key=".2"
+                                  maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -1503,6 +1515,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           error={false}
                           isValid={false}
                           label="Phone"
+                          maxCharacters={15}
                           name="phone"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -1547,6 +1560,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 <input
                                   autoComplete="tel"
                                   key=".2"
+                                  maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="tel"
@@ -1613,6 +1627,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           error={false}
                           isValid={false}
                           label="Email"
+                          maxCharacters={255}
                           name="email"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -1643,6 +1658,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 <input
                                   autoComplete="email"
                                   key=".2"
+                                  maxLength={255}
                                   name="email"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -1887,6 +1903,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                       error={false}
                       isValid={false}
                       label="Comments"
+                      maxCharacters={800}
                       name="comments"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -1915,6 +1932,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             <textarea
                               autoComplete={null}
                               key=".2"
+                              maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
@@ -2285,6 +2303,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 error={false}
                                 isValid={false}
                                 label="Security code"
+                                maxCharacters={null}
                                 name="captcha"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -2314,6 +2333,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                       <input
                                         autoComplete="off"
                                         key=".2"
+                                        maxLength={null}
                                         name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
@@ -2495,6 +2515,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           error={false}
                           isValid={false}
                           label="Name"
+                          maxCharacters={80}
                           name="name"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -2524,6 +2545,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 <input
                                   autoComplete="name"
                                   key=".2"
+                                  maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -2553,6 +2575,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           error={false}
                           isValid={false}
                           label="Phone"
+                          maxCharacters={15}
                           name="phone"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -2597,6 +2620,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 <input
                                   autoComplete="tel"
                                   key=".2"
+                                  maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="tel"
@@ -2663,6 +2687,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           error={false}
                           isValid={false}
                           label="Email"
+                          maxCharacters={255}
                           name="email"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -2693,6 +2718,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 <input
                                   autoComplete="email"
                                   key=".2"
+                                  maxLength={255}
                                   name="email"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -2937,6 +2963,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                       error={false}
                       isValid={false}
                       label="Comments"
+                      maxCharacters={800}
                       name="comments"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -2965,6 +2992,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             <textarea
                               autoComplete={null}
                               key=".2"
+                              maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
@@ -3294,6 +3322,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                 error={false}
                                 isValid={false}
                                 label="Security code"
+                                maxCharacters={null}
                                 name="captcha"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -3323,6 +3352,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                       <input
                                         autoComplete="off"
                                         key=".2"
+                                        maxLength={null}
                                         name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
@@ -3489,6 +3519,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           error={false}
                           isValid={false}
                           label="Name"
+                          maxCharacters={80}
                           name="name"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -3518,6 +3549,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 <input
                                   autoComplete="name"
                                   key=".2"
+                                  maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -3547,6 +3579,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           error={false}
                           isValid={false}
                           label="Phone"
+                          maxCharacters={15}
                           name="phone"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -3591,6 +3624,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 <input
                                   autoComplete="tel"
                                   key=".2"
+                                  maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="tel"
@@ -3657,6 +3691,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           error={false}
                           isValid={false}
                           label="Email"
+                          maxCharacters={255}
                           name="email"
                           onBlur={[Function]}
                           onChange={[Function]}
@@ -3687,6 +3722,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 <input
                                   autoComplete="email"
                                   key=".2"
+                                  maxLength={255}
                                   name="email"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -3931,6 +3967,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                       error={false}
                       isValid={false}
                       label="Comments"
+                      maxCharacters={800}
                       name="comments"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -3959,6 +3996,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             <textarea
                               autoComplete={null}
                               key=".2"
+                              maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
@@ -4022,6 +4060,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 error={false}
                                 isValid={false}
                                 label="Security code"
+                                maxCharacters={null}
                                 name="captcha"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -4051,6 +4090,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                       <input
                                         autoComplete="off"
                                         key=".2"
+                                        maxLength={null}
                                         name="captcha"
                                         onBlur={[Function]}
                                         onChange={[Function]}
