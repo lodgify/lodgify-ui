@@ -12,16 +12,11 @@ exports[`getCardPlaceholderMarkup should return the right structure 1`] = `
       <Divider
         className=""
         hasLine={false}
-        size="medium"
+        size="small"
       />
       <TextPlaceholder
         isFluid={true}
         length="medium"
-      />
-      <Divider
-        className=""
-        hasLine={false}
-        size="medium"
       />
       <TextPlaceholder
         isFluid={true}

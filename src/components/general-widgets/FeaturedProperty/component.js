@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
-import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup/';
+import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
 import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 import { Rating } from 'elements/Rating';
 import { ResponsiveImage } from 'media/ResponsiveImage';
