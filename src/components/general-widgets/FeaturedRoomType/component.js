@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
-import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup/';
-import { getNightPriceMarkup } from 'utils/get-night-price-markup/';
+import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
+import { getNightPriceMarkup } from 'utils/get-night-price-markup';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 
 import { getRoomTypeDescription } from './utils/getRoomTypeDescription';

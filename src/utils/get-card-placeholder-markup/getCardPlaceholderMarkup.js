@@ -13,9 +13,8 @@ export const getCardPlaceholderMarkup = () => (
     <BlockPlaceholder isRectangular />
     <Card.Content>
       <Card.Header>
-        <Divider />
+        <Divider size="small" />
         <TextPlaceholder length="medium" />
-        <Divider />
         <TextPlaceholder length="long" />
         <TextPlaceholder length="long" />
       </Card.Header>
