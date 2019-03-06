@@ -87,7 +87,23 @@
 
   /* Featured */
   &.has-featured {
+    display: inline-flex;
     height: @featuredHeight;
+    margin-right: @featuredMarginRight;
+    max-width: @featuredMaxWidth;
+    min-width: @featuredMinWidth;
+    width: 100%;
+
+    .content {
+
+      > .meta,
+      > .header,
+      > .description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
 
     img {
       flex-grow: @featuredImageFlexGrow;
