@@ -1,3 +1,10 @@
+## [1.150.3](https://github.com/lodgify/lodgify-ui/compare/v1.150.2...v1.150.3) (2019-03-06)
+
+
+### Bug Fixes
+
+* **Header:** make header content transparent by default with no dependency on JS ([bb7918d](https://github.com/lodgify/lodgify-ui/commit/bb7918d))
+
 ## [1.150.2](https://github.com/lodgify/lodgify-ui/compare/v1.150.1...v1.150.2) (2019-03-05)
 
 
