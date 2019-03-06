@@ -41,6 +41,7 @@ exports[`<CaptchaInput /> should render the right structure 1`] = `
             error={false}
             isValid={false}
             label=""
+            maxCharacters={null}
             name=""
             onBlur={[Function]}
             onChange={[Function]}
@@ -70,6 +71,7 @@ exports[`<CaptchaInput /> should render the right structure 1`] = `
                   <input
                     autoComplete="off"
                     key=".2"
+                    maxLength={null}
                     name=""
                     onBlur={[Function]}
                     onChange={[Function]}
