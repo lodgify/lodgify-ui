@@ -119,28 +119,34 @@ Component.propTypes = {
   }),
   /** The images to display in the gallery modal. */
   images: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** Alternative text to show if the image can't be loaded by the browser */
-      alternativeText: PropTypes.string,
-      /** The natural height of the image. */
-      imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-      /** The label text for the when the image is not found. */
-      imageNotFoundLabelText: PropTypes.string,
-      /** Title of the image to show when hovering it on desktop browsers */
-      imageTitle: PropTypes.string,
-      /** URL pointing to the image to display. */
-      imageUrl: PropTypes.string.isRequired,
-      /** The natural width of the image. */
-      imageWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-      /** A visible label for the image. */
-      label: PropTypes.string.isRequired,
-      /** URL pointing to the placeholder image to display. */
-      placeholderImageUrl: PropTypes.string,
-      /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-      sizes: PropTypes.string,
-      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-      srcSet: PropTypes.string,
-    })
+    PropTypes.oneOfType([
+      PropTypes.shape({
+        /** The text to display above an isolated category of images. */
+        categoryText: PropTypes.string,
+      }),
+      PropTypes.shape({
+        /** Alternative text to show if the image can't be loaded by the browser */
+        alternativeText: PropTypes.string,
+        /** The natural height of the image. */
+        imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        /** The label text for the when the image is not found. */
+        imageNotFoundLabelText: PropTypes.string,
+        /** Title of the image to show when hovering it on desktop browsers */
+        imageTitle: PropTypes.string,
+        /** URL pointing to the image to display. */
+        imageUrl: PropTypes.string.isRequired,
+        /** The natural width of the image. */
+        imageWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        /** A visible label for the image. */
+        label: PropTypes.string.isRequired,
+        /** URL pointing to the placeholder image to display. */
+        placeholderImageUrl: PropTypes.string,
+        /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+        sizes: PropTypes.string,
+        /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+        srcSet: PropTypes.string,
+      }),
+    ])
   ).isRequired,
   /** The name of the property to display in the gallery modal. */
   propertyName: PropTypes.string,

@@ -13,7 +13,7 @@ exports[`\`getViewMoreButtonMarkup\` if there are two images or more should retu
   >
     <HorizontalGutters>
       <Gallery
-        heading={
+        headingText={
           <div
             className="heading-with-rating"
           >

@@ -575,7 +575,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                     className="ui container"
                   >
                     <Gallery
-                      heading={null}
+                      headingText={null}
                       images={
                         Array [
                           Object {
