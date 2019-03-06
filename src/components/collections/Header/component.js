@@ -21,7 +21,7 @@ import { getStandardMenuMarkup } from './utils/getStandardMenuMarkup';
 export class Component extends PureComponent {
   state = {
     isMenuHidden: false,
-    isTransparent: true,
+    isOpaque: false,
     navigationItemsWidth: null,
     windowInnerWidth: null,
   };
@@ -31,7 +31,7 @@ export class Component extends PureComponent {
     this.handleResize();
     this.setState({
       navigationItemsWidth: getNavigationItemsWidth(this.header),
-      isTransparent: false,
+      isOpaque: true,
     });
   };
 
@@ -63,13 +63,13 @@ export class Component extends PureComponent {
       logoSizes,
       logoSrcSet,
     } = this.props;
-    const { isMenuHidden, isTransparent } = this.state;
+    const { isMenuHidden, isOpaque } = this.state;
 
     return (
       <header
         className={getClassNames({
           'is-background-filled': isBackgroundFilled,
-          'is-transparent': isTransparent,
+          'is-opaque': isOpaque,
         })}
         ref={this.createHeaderRef}
       >
