@@ -28,7 +28,7 @@ export const getGalleryMarkup = (
       <FlexContainer alignItems="flex-end">
         <HorizontalGutters>
           <Gallery
-            heading={getGalleryHeadingMarkup(propertyName, ratingNumber)}
+            headingText={getGalleryHeadingMarkup(propertyName, ratingNumber)}
             images={images}
             trigger={
               <Button
