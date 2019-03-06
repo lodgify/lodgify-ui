@@ -75,6 +75,9 @@
 @featuredHeight: 400px;
 @featuredImageHeight: 200px;
 @featuredImageFlexGrow: 1;
+@featuredMarginRight: @16px;
+@featuredMaxWidth: 340px;
+@featuredMinWidth: 250px;
 
 /*-------------------
       Variations
