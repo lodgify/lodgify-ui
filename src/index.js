@@ -46,7 +46,6 @@ export { Review } from './components/general-widgets/Review';
 export { SearchBar } from './components/general-widgets/SearchBar';
 
 // Inputs
-export { CaptchaInput } from './components/inputs/CaptchaInput';
 export { Checkbox } from './components/inputs/Checkbox';
 export { DateRangePicker } from './components/inputs/DateRangePicker';
 export { Dropdown } from './components/inputs/Dropdown';
