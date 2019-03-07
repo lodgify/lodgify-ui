@@ -19,7 +19,6 @@ export const Component = ({
   getIsDayBlocked,
   guestsInputInitialValue,
   guestsOptions,
-  isFixed,
   isShowingPlaceholder,
   onChangeInput,
   onSubmit,
@@ -46,7 +45,7 @@ export const Component = ({
           getIsDayBlocked={getIsDayBlocked}
           guestsInputInitialValue={guestsInputInitialValue}
           guestsOptions={guestsOptions}
-          isFixed={isFixed}
+          isFixed
           onChangeInput={onChangeInput}
           onSubmit={onSubmit}
           searchButton={searchButton}
@@ -64,7 +63,7 @@ export const Component = ({
           guestsInputInitialValue={guestsInputInitialValue}
           guestsOptions={guestsOptions}
           isDisplayedAsModal
-          isFixed={isFixed}
+          isFixed
           modalSummaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: false,
             ...summaryProps,
@@ -89,7 +88,6 @@ Component.defaultProps = {
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: undefined,
   guestsInputInitialValue: undefined,
-  isFixed: true,
   isShowingPlaceholder: false,
   onChangeInput: undefined,
   onSubmit: undefined,
@@ -132,12 +130,6 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
-  /**
-   * Is the Search Bar fixed to the bottom of the window
-   * Used for demo purposes
-   * @ignore
-   */
-  isFixed: PropTypes.bool,
   /** A function called when a change in an input occurs in the search bar.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates
