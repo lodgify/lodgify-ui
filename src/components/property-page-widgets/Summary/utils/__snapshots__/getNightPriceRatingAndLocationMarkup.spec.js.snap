@@ -1,5 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`getNightPriceRatingAndLocationMarkup if \`isShowingPlaceholder\` === true should return the right structure 1`] = `
+<div>
+  <Segment
+    className="is-location-name"
+    title="someLocation"
+  >
+    someLocation
+    <Icon
+      color="yellow"
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="map pin"
+      path={null}
+      size="small"
+    />
+  </Segment>
+  <div
+    className="inline-placeholder-wrapper"
+  >
+    <TextPlaceholder
+      isFluid={true}
+      length="full"
+    />
+    <TextPlaceholder
+      isFluid={true}
+      length="full"
+    />
+  </div>
+</div>
+`;
+
 exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is \`0\` should return the right markup 1`] = `
 <div>
   <Segment

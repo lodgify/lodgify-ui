@@ -20,6 +20,7 @@ export const Component = ({
   guestsInputInitialValue,
   guestsOptions,
   isFixed,
+  isShowingPlaceholder,
   onChangeInput,
   onSubmit,
   searchButton,
@@ -33,6 +34,7 @@ export const Component = ({
     nightPrice: summaryNightPrice,
     propertyName: summaryPropertyName,
     ratingNumber: summaryRatingNumber,
+    isShowingPlaceholder,
   };
 
   return (
@@ -88,6 +90,7 @@ Component.defaultProps = {
   getIsDayBlocked: undefined,
   guestsInputInitialValue: undefined,
   isFixed: true,
+  isShowingPlaceholder: false,
   onChangeInput: undefined,
   onSubmit: undefined,
   searchButton: (
@@ -95,6 +98,8 @@ Component.defaultProps = {
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),
+  summaryNightPrice: undefined,
+  summaryRatingNumber: undefined,
 };
 
 Component.propTypes = {
@@ -139,6 +144,8 @@ Component.propTypes = {
    *  @param {String} values.guests
    *  @param {String} values.location
    */
+  /** Is the component showing placeholders to reserve space for content which will appear. */
+  isShowingPlaceholder: PropTypes.bool,
   // eslint-disable-next-line react/no-unused-prop-types
   onChangeInput: PropTypes.func,
   /** The function to call when the search bar is submitted.
@@ -153,9 +160,9 @@ Component.propTypes = {
   /** The location name displayed in the summary. */
   summaryLocationName: PropTypes.string.isRequired,
   /** The price per night of the property, with currency symbol, displayed in the summary. */
-  summaryNightPrice: PropTypes.string.isRequired,
+  summaryNightPrice: PropTypes.string,
   /** The property name displayed in the summary. */
   summaryPropertyName: PropTypes.string.isRequired,
   /** The numeral rating for the property, out of 5, displayed in the summary. */
-  summaryRatingNumber: PropTypes.number.isRequired,
+  summaryRatingNumber: PropTypes.number,
 };

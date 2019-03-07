@@ -3,6 +3,7 @@
 exports[`<Summary/> by default should render the right structure 1`] = `
 <Summary
   areOnlyNightPriceAndRatingDisplayed={false}
+  isShowingPlaceholder={false}
   locationName="Catania"
   nightPrice="$280"
   propertyName="The Cat House"
@@ -273,6 +274,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
 exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true should render the right children 1`] = `
 <Summary
   areOnlyNightPriceAndRatingDisplayed={true}
+  isShowingPlaceholder={false}
   locationName="Catania"
   nightPrice="$280"
   propertyName="The Cat House"

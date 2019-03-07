@@ -3,6 +3,7 @@
 exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
 <Summary
   areOnlyNightPriceAndRatingDisplayed={false}
+  isShowingPlaceholder={false}
   locationName="Location"
   nightPrice="200€"
   propertyName="My property"
@@ -273,6 +274,7 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
 exports[`\`getSummaryMarkup\` should render the right structure if \`areOnlyNightPriceAndRatingDisplayed\` is \`true\` 1`] = `
 <Summary
   areOnlyNightPriceAndRatingDisplayed={true}
+  isShowingPlaceholder={false}
   locationName="Location"
   nightPrice="200€"
   propertyName="My property"

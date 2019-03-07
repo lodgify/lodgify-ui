@@ -59,4 +59,12 @@ describe('<PropertyPageSearchBar />', () => {
       'PropertyPageSearchBar'
     );
   });
+
+  describe('if `isShowingPlaceholder` === true', () => {
+    it('should have the right structure', () => {
+      const actual = getPropertyPageSearchBar({ isShowingPlaceholder: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
 });
