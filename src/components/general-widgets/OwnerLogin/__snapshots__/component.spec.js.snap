@@ -158,7 +158,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                           >
                             <input
                               autoComplete="email"
-                              key=".2"
+                              key=".1"
                               maxLength={255}
                               name="email"
                               onBlur={[Function]}
@@ -218,7 +218,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                           >
                             <input
                               autoComplete="current-password"
-                              key=".2"
+                              key=".1"
                               maxLength={255}
                               name="password"
                               onBlur={[Function]}
@@ -561,7 +561,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                           >
                             <input
                               autoComplete="email"
-                              key=".2"
+                              key=".1"
                               maxLength={255}
                               name="email"
                               onBlur={[Function]}
@@ -621,7 +621,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                           >
                             <input
                               autoComplete="current-password"
-                              key=".2"
+                              key=".1"
                               maxLength={255}
                               name="password"
                               onBlur={[Function]}
@@ -964,7 +964,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                           >
                             <input
                               autoComplete="email"
-                              key=".2"
+                              key=".1"
                               maxLength={255}
                               name="email"
                               onBlur={[Function]}
@@ -1024,7 +1024,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                           >
                             <input
                               autoComplete="current-password"
-                              key=".2"
+                              key=".1"
                               maxLength={255}
                               name="password"
                               onBlur={[Function]}

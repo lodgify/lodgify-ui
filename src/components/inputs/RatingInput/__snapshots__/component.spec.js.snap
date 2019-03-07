@@ -31,7 +31,7 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
       >
         <Rating
           clearable="auto"
-          key=".2"
+          key=".1"
           maxRating={5}
           onRate={[Function]}
           size="small"
@@ -212,7 +212,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
       >
         <Rating
           clearable="auto"
-          key=".2"
+          key=".1"
           maxRating={5}
           onRate={[Function]}
           size="small"

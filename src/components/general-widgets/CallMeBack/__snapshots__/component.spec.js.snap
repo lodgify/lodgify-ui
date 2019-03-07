@@ -151,7 +151,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               >
                                 <input
                                   autoComplete="name"
-                                  key=".2"
+                                  key=".1"
                                   maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
@@ -226,7 +226,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               >
                                 <input
                                   autoComplete="tel"
-                                  key=".2"
+                                  key=".1"
                                   maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -315,7 +315,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                           >
                             <input
                               autoComplete="email"
-                              key=".2"
+                              key=".1"
                               maxLength={255}
                               name="email"
                               onBlur={[Function]}
@@ -403,7 +403,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                   focused={null}
                                   hideKeyboardShortcutsPanel={true}
                                   isDayBlocked={[Function]}
-                                  key=".2"
+                                  key=".1"
                                   navNext={
                                     <Icon
                                       color={null}
@@ -899,7 +899,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                           >
                             <textarea
                               autoComplete={null}
-                              key=".2"
+                              key=".1"
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -1131,7 +1131,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               >
                                 <input
                                   autoComplete="name"
-                                  key=".2"
+                                  key=".1"
                                   maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
@@ -1206,7 +1206,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               >
                                 <input
                                   autoComplete="tel"
-                                  key=".2"
+                                  key=".1"
                                   maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -1295,7 +1295,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           >
                             <input
                               autoComplete="email"
-                              key=".2"
+                              key=".1"
                               maxLength={255}
                               name="email"
                               onBlur={[Function]}
@@ -1383,7 +1383,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                   focused={null}
                                   hideKeyboardShortcutsPanel={true}
                                   isDayBlocked={[Function]}
-                                  key=".2"
+                                  key=".1"
                                   navNext={
                                     <Icon
                                       color={null}
@@ -2177,7 +2177,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           >
                             <textarea
                               autoComplete={null}
-                              key=".2"
+                              key=".1"
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
