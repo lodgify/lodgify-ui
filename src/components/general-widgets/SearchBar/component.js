@@ -52,11 +52,7 @@ export class Component extends PureComponent {
 
     if (isFixed) {
       return (
-        <div
-          className={getClassNames(className, 'search-bar', {
-            'is-fixed': isFixed,
-          })}
-        >
+        <div className={getClassNames(className, 'search-bar', 'is-fixed')}>
           <HorizontalGutters>
             <Grid>
               <GridRow verticalAlign="middle">
