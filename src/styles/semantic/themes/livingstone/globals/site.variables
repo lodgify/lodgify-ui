@@ -330,6 +330,14 @@
 
 @largestTinyScreen: (@tinyBreakpoint - 1px);
 
+/* Z index */
+
+@zIndexLevelOne: 0;
+@zIndexLevelTwo: @zIndexLevelOne + 100;
+@zIndexLevelThree: @zIndexLevelTwo + 100;
+@zIndexLevelFour: @zIndexLevelThree + 100;
+@zIndexLevelFive: @zIndexLevelFour + 100;
+
 /*-------------------
   Exact Pixel Values
 --------------------*/
@@ -454,7 +462,7 @@
      Search Bar
 --------------------*/
 @searchBarFixedBackgroundColor: @pureWhite;
-@searchBarFixedZIndex: 4;
+@searchBarFixedZIndex: @zIndexLevelTwo;
 @searchBarFixedPadding: @10px 0;
 @searchBarFixedHeight: 85px;
 @searchBarFixedBoxShadow: 0 -(@4px) @9px -(@6px) rgba(0, 0, 0, 0.29);
