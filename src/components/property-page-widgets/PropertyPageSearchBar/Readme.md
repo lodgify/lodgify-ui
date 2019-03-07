@@ -1,21 +1,40 @@
 ```jsx
 const { guestsOptions } = require('./mock-data/options');
 
-// Please set this to true to see the example
-const displayAsFixed = false;
+class Controller extends React.Component {
+  constructor() {
+    this.state = {
+      isShowing: false
+    };
+  }
 
-<PropertyPageSearchBar
-  isFixed={displayAsFixed}
-  guestsOptions={guestsOptions}
-  searchButton={<Button isCompact isRounded>Check Availability</Button>}
-  summaryElement={<div>Property Information</div>}
-  modalTrigger={<Button isPositionedRight isRounded isCompact>Check Availability</Button>}
-  modalSummaryElement={<div>Property information for mobile modal</div>}
-  summaryLocationName="Barcelona"
-  summaryNightPrice="$200"
-  summaryPropertyName="Property"
-  summaryRatingNumber={2.3}
-/> 
+  render() {
+    const { isShowing } = this.state;
+
+    return (
+      <React.Fragment>
+        <Button onClick={() => this.setState({ isShowing: !this.state.isShowing })}>
+          {isShowing ? 'Hide' : 'Show'} search bar
+        </Button>
+        {isShowing && (
+          <PropertyPageSearchBar
+            guestsOptions={guestsOptions}
+            searchButton={<Button isCompact isRounded>Check Availability</Button>}
+            summaryElement={<div>Property Information</div>}
+            modalTrigger={<Button isPositionedRight isRounded isCompact>Check Availability</Button>}
+            modalSummaryElement={<div>Property information for mobile modal</div>}
+            summaryLocationName="Barcelona"
+            summaryNightPrice="$200"
+            summaryPropertyName="Property"
+            summaryRatingNumber={2.3}
+          />
+        )}
+      </React.Fragment>
+    )
+  }
+}
+
+<Controller />
 ```
 
 ### States
@@ -25,18 +44,37 @@ const displayAsFixed = false;
 ```jsx
 const { guestsOptions } = require('./mock-data/options');
 
-// Please set this to true to see the example
-const displayAsFixed = true;
+class Controller extends React.Component {
+  constructor() {
+    this.state = {
+      isShowing: false
+    };
+  }
 
-<PropertyPageSearchBar
-  isFixed={displayAsFixed}
-  guestsOptions={guestsOptions}
-  searchButton={<Button isCompact isRounded>Check Availability</Button>}
-  summaryElement={<div>Property Information</div>}
-  modalTrigger={<Button isPositionedRight isRounded isCompact>Check Availability</Button>}
-  modalSummaryElement={<div>Property information for mobile modal</div>}
-  summaryLocationName="Barcelona"
-  summaryPropertyName="Property"
-  isShowingPlaceholder
-/> 
+  render() {
+    const { isShowing } = this.state;
+
+    return (
+      <React.Fragment>
+        <Button onClick={() => this.setState({ isShowing: !this.state.isShowing })}>
+          {isShowing ? 'Hide' : 'Show'} search bar
+        </Button>
+        {isShowing && (
+          <PropertyPageSearchBar
+            guestsOptions={guestsOptions}
+            searchButton={<Button isCompact isRounded>Check Availability</Button>}
+            summaryElement={<div>Property Information</div>}
+            modalTrigger={<Button isPositionedRight isRounded isCompact>Check Availability</Button>}
+            modalSummaryElement={<div>Property information for mobile modal</div>}
+            summaryLocationName="Barcelona"
+            summaryPropertyName="Property"
+            isShowingPlaceholder
+          />
+        )}
+      </React.Fragment>
+    )
+  }
+}
+
+<Controller />
 ```
