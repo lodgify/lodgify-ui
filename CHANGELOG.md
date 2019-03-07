@@ -1,3 +1,15 @@
+# [1.153.0](https://github.com/lodgify/lodgify-ui/compare/v1.152.0...v1.153.0) (2019-03-07)
+
+
+### Features
+
+* **DateRangePicker:** expose initalValue prop ([1f7c2a1](https://github.com/lodgify/lodgify-ui/commit/1f7c2a1))
+* **Dropdown:** expose initialValue prop ([5d3d9ce](https://github.com/lodgify/lodgify-ui/commit/5d3d9ce))
+* **getFormFieldMarkup:** consume intial value props for each input ([503e37e](https://github.com/lodgify/lodgify-ui/commit/503e37e))
+* **HomepageHero:** consume inital value props for SearchBar component ([f440842](https://github.com/lodgify/lodgify-ui/commit/f440842))
+* **PropertyPageSearchBar:** consume inital value props for SearchBar component ([f816bc7](https://github.com/lodgify/lodgify-ui/commit/f816bc7))
+* **SearchBar:** implement initial value props for all inputs ([d4aacb5](https://github.com/lodgify/lodgify-ui/commit/d4aacb5))
+
 # [1.152.0](https://github.com/lodgify/lodgify-ui/compare/v1.151.0...v1.152.0) (2019-03-06)
 
 
