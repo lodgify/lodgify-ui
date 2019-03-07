@@ -1,5 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`getNightPriceAndRatingMarkup if \`isShowingPlaceholder\` === true should return the correct structure 1`] = `
+<div>
+  <div
+    className="placeholder-wrapper"
+  >
+    <TextPlaceholder
+      isFluid={true}
+      length="medium"
+    >
+      <div
+        className="placeholder text medium fluid"
+      />
+    </TextPlaceholder>
+    <TextPlaceholder
+      isFluid={true}
+      length="short"
+    >
+      <div
+        className="placeholder text short fluid"
+      />
+    </TextPlaceholder>
+  </div>
+</div>
+`;
+
 exports[`getNightPriceAndRatingMarkup if \`ratingNumber\` is \`0\` should return the right markup 1`] = `
 <div>
   <Segment>
