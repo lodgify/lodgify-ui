@@ -1,3 +1,11 @@
+# [1.154.0](https://github.com/lodgify/lodgify-ui/compare/v1.153.0...v1.154.0) (2019-03-07)
+
+
+### Features
+
+* **PropertyPageSearchBar:** consume isShowingPlaceholder in Summary and expose prop ([5326583](https://github.com/lodgify/lodgify-ui/commit/5326583))
+* **Summary:** expose isshowingPlaceholder ([03f3124](https://github.com/lodgify/lodgify-ui/commit/03f3124))
+
 # [1.153.0](https://github.com/lodgify/lodgify-ui/compare/v1.152.0...v1.153.0) (2019-03-07)
 
 
