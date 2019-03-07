@@ -26,7 +26,7 @@ const displayAsFixed = false;
 const { guestsOptions } = require('./mock-data/options');
 
 // Please set this to true to see the example
-const displayAsFixed = true;
+const displayAsFixed = false;
 
 <PropertyPageSearchBar
   isFixed={displayAsFixed}
