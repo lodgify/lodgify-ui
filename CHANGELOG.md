@@ -1,3 +1,15 @@
+# [1.156.0](https://github.com/lodgify/lodgify-ui/compare/v1.155.0...v1.156.0) (2019-03-07)
+
+
+### Bug Fixes
+
+* **Availability:** centre months in containing columns ([40fec25](https://github.com/lodgify/lodgify-ui/commit/40fec25))
+
+
+### Features
+
+* **CaptchaInput:** remove from library ([7fec519](https://github.com/lodgify/lodgify-ui/commit/7fec519))
+
 # [1.155.0](https://github.com/lodgify/lodgify-ui/compare/v1.154.0...v1.155.0) (2019-03-07)
 
 
