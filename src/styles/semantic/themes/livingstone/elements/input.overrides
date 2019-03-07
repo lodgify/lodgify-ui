@@ -197,7 +197,6 @@
       padding: @validIconPadding;
       position: absolute;
       right: @inputHorizontalPadding;
-      z-index: @validIconZIndex;
     }
   }
 
