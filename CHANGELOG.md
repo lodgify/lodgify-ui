@@ -1,3 +1,10 @@
+# [1.152.0](https://github.com/lodgify/lodgify-ui/compare/v1.151.0...v1.152.0) (2019-03-06)
+
+
+### Features
+
+* **rating.overrides:**  remove outline for static ratings ([3a19891](https://github.com/lodgify/lodgify-ui/commit/3a19891))
+
 # [1.151.0](https://github.com/lodgify/lodgify-ui/compare/v1.150.3...v1.151.0) (2019-03-06)
 
 
