@@ -1,3 +1,17 @@
+# [1.155.0](https://github.com/lodgify/lodgify-ui/compare/v1.154.0...v1.155.0) (2019-03-07)
+
+
+### Features
+
+* **CallMeBack:** consume maxCharacters for the required inputs ([fd55143](https://github.com/lodgify/lodgify-ui/commit/fd55143))
+* **Contact:** consume maxCharacters for the required inputs ([11015b4](https://github.com/lodgify/lodgify-ui/commit/11015b4))
+* **OwnerLogin:** consume maxCharacters for the required inputs ([21ad260](https://github.com/lodgify/lodgify-ui/commit/21ad260))
+* **OwnerSignUp:** consume maxCharacters for the required inputs ([93be523](https://github.com/lodgify/lodgify-ui/commit/93be523))
+* **PhoneInput:** implement maxCharacters prop ([440c68e](https://github.com/lodgify/lodgify-ui/commit/440c68e))
+* **Reviews:** consume maxCharacters for the required inputs ([acb8704](https://github.com/lodgify/lodgify-ui/commit/acb8704))
+* **TextArea:** implement maxCharacters prop ([fa64371](https://github.com/lodgify/lodgify-ui/commit/fa64371))
+* **TextInput:** implement maxCharacters prop ([e3cc8b5](https://github.com/lodgify/lodgify-ui/commit/e3cc8b5))
+
 # [1.154.0](https://github.com/lodgify/lodgify-ui/compare/v1.153.0...v1.154.0) (2019-03-07)
 
 
