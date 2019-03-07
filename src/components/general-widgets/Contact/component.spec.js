@@ -17,10 +17,7 @@ import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-he
 import { roomOptions, propertyOptions } from './mock-data/options';
 import { Component as Contact } from './component';
 
-const captchaInputImage = 'someImage';
-
-const getContact = extraProps =>
-  mount(<Contact captchaInputImage={captchaInputImage} {...extraProps} />);
+const getContact = extraProps => mount(<Contact {...extraProps} />);
 
 describe('<Contact />', () => {
   it('should have the correct structure', () => {

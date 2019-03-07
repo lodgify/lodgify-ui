@@ -8,7 +8,6 @@ import { PhoneInput } from 'inputs/PhoneInput';
 import { NumberInput } from 'inputs/NumberInput';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 import { TextArea } from 'inputs/TextArea';
-import { CaptchaInput } from 'inputs/CaptchaInput';
 import { Dropdown } from 'inputs/Dropdown';
 import {
   ARRIVAL,
@@ -21,7 +20,6 @@ import {
   PHONE,
   PROPERTY,
   ROOM,
-  SECURITY_CODE,
   SEND,
 } from 'utils/default-strings';
 
@@ -38,8 +36,6 @@ import {
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   arrivalDateInputLabel,
-  captchaInputImage,
-  captchaInputLabel,
   commentsInputLabel,
   dateRangePickerLocaleCode,
   departureDateInputLabel,
@@ -123,11 +119,6 @@ export const Component = ({
         )}
       </InputGroup>
     )}
-    <CaptchaInput
-      image={captchaInputImage}
-      label={captchaInputLabel}
-      name="captcha"
-    />
   </Form>
 );
 
@@ -135,7 +126,6 @@ Component.displayName = 'Contact';
 
 Component.defaultProps = {
   arrivalDateInputLabel: ARRIVAL,
-  captchaInputLabel: SECURITY_CODE,
   commentsInputLabel: COMMENTS,
   dateRangePickerLocaleCode: undefined,
   departureDateInputLabel: DEPARTURE,
@@ -159,10 +149,6 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The label for the arrival date input.*/
   arrivalDateInputLabel: PropTypes.string,
-  /** The source url for the image to display. */
-  captchaInputImage: PropTypes.string.isRequired,
-  /** The label for the captcha input.*/
-  captchaInputLabel: PropTypes.string,
   /** The label for the comments input.*/
   commentsInputLabel: PropTypes.string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
@@ -228,7 +214,6 @@ Component.propTypes = {
   successMessage: PropTypes.string,
   /** Settings for validating inputs. Each value should match [the shape documented in `Form`](https://lodgify.github.io/lodgify-ui/#/Collections/Form) */
   validation: PropTypes.shape({
-    captcha: PropTypes.object,
     comments: PropTypes.object,
     dates: PropTypes.object,
     email: PropTypes.object,
