@@ -12,6 +12,7 @@ export const Component = ({
   error,
   isValid,
   label,
+  maxCharacters,
   name,
   onBlur,
   onChange,
@@ -28,6 +29,7 @@ export const Component = ({
   >
     <input
       autoComplete={autoComplete}
+      maxLength={maxCharacters}
       name={name}
       onBlur={onBlur}
       type={type}
@@ -42,6 +44,7 @@ Component.defaultProps = {
   error: false,
   isValid: false,
   label: '',
+  maxCharacters: null,
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
@@ -58,6 +61,8 @@ Component.propTypes = {
   isValid: PropTypes.bool,
   /** The visible label for the text input. */
   label: PropTypes.string,
+  /** The maximum amount of characters accepted by the input. */
+  maxCharacters: PropTypes.number,
   /** The name for the text input. */
   name: PropTypes.string,
   /**

@@ -21,6 +21,13 @@ import { SingleDatePicker } from 'inputs/SingleDatePicker';
 import { TextArea } from 'inputs/TextArea';
 import { TextInput } from 'inputs/TextInput';
 
+import {
+  EMAIL_MAX_CHARACTERS,
+  NAME_MAX_CHARACTERS,
+  NOTES_MAX_CHARACTERS,
+  PHONE_MAX_CHARACTERS,
+} from './constants';
+
 /**
  * The standard widget for a user to request a call back.
  */
@@ -52,10 +59,25 @@ export const Component = ({
     validation={validation}
   >
     <InputGroup>
-      <TextInput autoComplete="name" label={nameInputLabel} name="name" />
-      <PhoneInput autoComplete="tel" label={phoneInputLabel} name="phone" />
+      <TextInput
+        autoComplete="name"
+        label={nameInputLabel}
+        maxCharacters={NAME_MAX_CHARACTERS}
+        name="name"
+      />
+      <PhoneInput
+        autoComplete="tel"
+        label={phoneInputLabel}
+        maxCharacters={PHONE_MAX_CHARACTERS}
+        name="phone"
+      />
     </InputGroup>
-    <TextInput autoComplete="email" label={emailInputLabel} name="email" />
+    <TextInput
+      autoComplete="email"
+      label={emailInputLabel}
+      maxCharacters={EMAIL_MAX_CHARACTERS}
+      name="email"
+    />
     <InputGroup>
       <SingleDatePicker name="date" placeholderText={dateInputPlaceholder} />
       <Dropdown
@@ -72,7 +94,11 @@ export const Component = ({
         options={propertyOptions}
       />
     )}
-    <TextArea label={notesInputLabel} name="notes" />
+    <TextArea
+      label={notesInputLabel}
+      maxCharacters={NOTES_MAX_CHARACTERS}
+      name="notes"
+    />
   </Form>
 );
 

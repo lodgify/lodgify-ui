@@ -40,7 +40,15 @@ export class Component extends PureComponent {
   };
 
   render() {
-    const { autoComplete, error, isValid, label, name, onBlur } = this.props;
+    const {
+      autoComplete,
+      error,
+      isValid,
+      label,
+      maxCharacters,
+      name,
+      onBlur,
+    } = this.props;
     const { country } = this.state;
     const value = getControlledInputValue(
       this.props.value,
@@ -58,7 +66,12 @@ export class Component extends PureComponent {
         onChange={this.handleChange}
         value={value}
       >
-        <input autoComplete={autoComplete} onBlur={onBlur} type="tel" />
+        <input
+          autoComplete={autoComplete}
+          maxLength={maxCharacters}
+          onBlur={onBlur}
+          type="tel"
+        />
       </InputController>
     );
   }
@@ -71,6 +84,7 @@ Component.defaultProps = {
   error: false,
   isValid: false,
   label: '',
+  maxCharacters: null,
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
@@ -86,6 +100,8 @@ Component.propTypes = {
   isValid: PropTypes.bool,
   /** The visible label for the phone input. */
   label: PropTypes.string,
+  /** The maximum amount of characters accepted by the input. */
+  maxCharacters: PropTypes.number,
   /** The name for the phone input. */
   name: PropTypes.string,
   /**

@@ -16,6 +16,7 @@ export const Component = ({
   onBlur,
   onChange,
   value,
+  maxCharacters,
 }) => (
   <InputController
     error={error}
@@ -25,7 +26,12 @@ export const Component = ({
     onChange={onChange}
     value={value}
   >
-    <textarea autoComplete={autoComplete} onBlur={onBlur} rows="8" />
+    <textarea
+      autoComplete={autoComplete}
+      maxLength={maxCharacters}
+      onBlur={onBlur}
+      rows="8"
+    />
   </InputController>
 );
 
@@ -36,6 +42,7 @@ Component.defaultProps = {
   error: false,
   isValid: false,
   label: '',
+  maxCharacters: null,
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
@@ -51,6 +58,8 @@ Component.propTypes = {
   isValid: PropTypes.bool,
   /** The visible label for the text area. */
   label: PropTypes.string,
+  /** The maximum amount of characters accepted by the input. */
+  maxCharacters: PropTypes.number,
   /** The name for the text area. */
   name: PropTypes.string,
   /**

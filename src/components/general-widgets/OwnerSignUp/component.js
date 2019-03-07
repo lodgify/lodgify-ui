@@ -11,6 +11,12 @@ import {
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
 
+import {
+  EMAIL_MAX_CHARACTERS,
+  FIRST_NAME_MAX_CHARACTERS,
+  LAST_NAME_MAX_CHARACTERS,
+} from './constants';
+
 /**
  * The standard widget for owner sign up.
  */
@@ -37,14 +43,21 @@ export const Component = ({
     <TextInput
       autoComplete="given-name"
       label={firstNameInputLabel}
+      maxCharacters={EMAIL_MAX_CHARACTERS}
       name="firstName"
     />
     <TextInput
       autoComplete="family-name"
       label={lastNameInputLabel}
+      maxCharacters={LAST_NAME_MAX_CHARACTERS}
       name="lastName"
     />
-    <TextInput autoComplete="email" label={emailInputLabel} name="email" />
+    <TextInput
+      autoComplete="email"
+      label={emailInputLabel}
+      maxCharacters={FIRST_NAME_MAX_CHARACTERS}
+      name="email"
+    />
   </Form>
 );
 

@@ -1,0 +1,3 @@
+export const EMAIL_MAX_CHARACTERS = 255;
+export const FIRST_NAME_MAX_CHARACTERS = 80;
+export const LAST_NAME_MAX_CHARACTERS = 80;

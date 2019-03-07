@@ -1,0 +1,2 @@
+export const EMAIL_MAX_CHARACTERS = 255;
+export const PASSWORD_MAX_CHARACTERS = 255;

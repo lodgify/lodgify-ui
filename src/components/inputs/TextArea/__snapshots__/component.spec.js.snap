@@ -6,6 +6,7 @@ exports[`<TextArea /> should render the right structure 1`] = `
   error={false}
   isValid={false}
   label=""
+  maxCharacters={null}
   name=""
   onBlur={[Function]}
   onChange={[Function]}
@@ -34,6 +35,7 @@ exports[`<TextArea /> should render the right structure 1`] = `
         <textarea
           autoComplete={null}
           key=".2"
+          maxLength={null}
           onBlur={[Function]}
           onChange={[Function]}
           rows="8"

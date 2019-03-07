@@ -9,6 +9,14 @@ import { TextArea } from 'inputs/TextArea';
 import { Dropdown } from 'inputs/Dropdown';
 import { RatingInput } from 'inputs/RatingInput';
 
+import {
+  EMAIL_MAX_CHARACTERS,
+  COMMENT_MAX_CHARACTERS,
+  NAME_MAX_CHARACTERS,
+  TITLE_MAX_CHARACTERS,
+  LOCATION_MAX_CHARACTERS,
+} from '../constants';
+
 /**
  * @param {Object}   props
  * @param {string}   props.commentInputLabel
@@ -84,12 +92,23 @@ export const getModalFormMarkup = (
       validation={validation}
     >
       <RatingInput label={ratingInputLabel} name="rating" />
-      <TextInput autoComplete="name" label={nameInputLabel} name="name" />
+      <TextInput
+        autoComplete="name"
+        label={nameInputLabel}
+        maxCharacters={NAME_MAX_CHARACTERS}
+        name="name"
+      />
       <InputGroup>
-        <TextInput autoComplete="email" label={emailInputLabel} name="email" />
+        <TextInput
+          autoComplete="email"
+          label={emailInputLabel}
+          maxCharacters={EMAIL_MAX_CHARACTERS}
+          name="email"
+        />
         <TextInput
           autoComplete="country-name"
           label={locationInputLabel}
+          maxCharacters={LOCATION_MAX_CHARACTERS}
           name="location"
         />
       </InputGroup>
@@ -109,8 +128,16 @@ export const getModalFormMarkup = (
           options={guestTypeOptions}
         />
       </InputGroup>
-      <TextInput label={titleInputLabel} name="title" />
-      <TextArea label={commentInputLabel} name="comments" />
+      <TextInput
+        label={titleInputLabel}
+        maxCharacters={TITLE_MAX_CHARACTERS}
+        name="title"
+      />
+      <TextArea
+        label={commentInputLabel}
+        maxCharacters={COMMENT_MAX_CHARACTERS}
+        name="comments"
+      />
     </Form>
   </Modal>
 );
