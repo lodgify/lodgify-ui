@@ -37,8 +37,11 @@ export class Component extends PureComponent {
   render = () => {
     const {
       className,
+      datesInputInitialValue,
+      guestsInputInitialValue,
       isDisplayedAsModal,
       isFixed,
+      locationInputInitialValue,
       summaryElement,
       willDropdownsOpenAbove,
     } = this.props;
@@ -68,6 +71,9 @@ export class Component extends PureComponent {
                           this.props,
                           this.persistInputChange,
                           false,
+                          datesInputInitialValue,
+                          guestsInputInitialValue,
+                          locationInputInitialValue,
                           true
                         )}
                       </Form.Group>
@@ -93,6 +99,9 @@ export class Component extends PureComponent {
               this.props,
               this.persistInputChange,
               false,
+              datesInputInitialValue,
+              guestsInputInitialValue,
+              locationInputInitialValue,
               willDropdownsOpenAbove
             )}
           </Form.Group>
@@ -106,12 +115,15 @@ Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   className: null,
+  datesInputInitialValue: undefined,
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: Function.prototype,
+  guestsInputInitialValue: undefined,
   isDisplayedAsModal: false,
   isFixed: false,
-  isShowingSummary: false,
   isModalOpen: undefined,
+  isShowingSummary: false,
+  locationInputInitialValue: undefined,
   locationOptions: null,
   modalHeadingText: CHECK_OUR_AVAILABILITY,
   modalSummaryElement: null,
@@ -137,6 +149,11 @@ Component.propTypes = {
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
   // eslint-disable-next-line react/no-unused-prop-types
   dateRangePickerLocaleCode: PropTypes.string,
+  /** The initial value for the dates input. */
+  datesInputInitialValue: PropTypes.shape({
+    endDate: PropTypes.object,
+    startDate: PropTypes.object,
+  }),
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
@@ -144,6 +161,8 @@ Component.propTypes = {
    */
   // eslint-disable-next-line react/no-unused-prop-types
   getIsDayBlocked: PropTypes.func,
+  /** The initial value for the guests input. */
+  guestsInputInitialValue: PropTypes.string,
   /** The options which the user can select in the guests field. */
   // eslint-disable-next-line react/no-unused-prop-types
   guestsOptions: PropTypes.arrayOf(
@@ -168,6 +187,8 @@ Component.propTypes = {
   /** Is Search Bar showing the Property Summary info. */
   // eslint-disable-next-line react/no-unused-prop-types
   isShowingSummary: PropTypes.bool,
+  /** The initial value for the location input. */
+  locationInputInitialValue: PropTypes.string,
   /** The options which the user can select in the location field. */
   // eslint-disable-next-line react/no-unused-prop-types
   locationOptions: PropTypes.arrayOf(

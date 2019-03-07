@@ -100,3 +100,19 @@ const { guestsOptions, locationOptions } = require('./mock-data/options');
   isDisplayedAsModal
 />
 ```
+
+#### Inputs with initial values
+
+```jsx
+const { guestsOptions, locationOptions } = require('./mock-data/options');
+const  moment = require('moment');
+const initialValue = {endDate: moment().day(7) , startDate: moment().day(-7)};
+
+<SearchBar
+  guestsOptions={guestsOptions}
+  locationOptions={locationOptions}
+  guestsInputInitialValue="3"
+  locationInputInitialValue="valencia"
+  datesInputInitialValue={initialValue}
+/>
+```

@@ -16,16 +16,11 @@ exports[`<FeaturedRoomType /> if \`props.isShowingPlaceholder\` is \`true\` shou
       <Divider
         className=""
         hasLine={false}
-        size="medium"
+        size="small"
       />
       <TextPlaceholder
         isFluid={true}
         length="medium"
-      />
-      <Divider
-        className=""
-        hasLine={false}
-        size="medium"
       />
       <TextPlaceholder
         isFluid={true}

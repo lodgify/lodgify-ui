@@ -417,13 +417,16 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   parentProps={
                                     Object {
                                       "dateRangePickerLocaleCode": undefined,
+                                      "datesInputInitialValue": undefined,
                                       "getIsDayBlocked": [Function],
+                                      "guestsInputInitialValue": undefined,
                                       "guestsOptions": Array [
                                         Object {
                                           "text": "1",
                                           "value": "1",
                                         },
                                       ],
+                                      "locationInputInitialValue": undefined,
                                       "locationOptions": Array [
                                         Object {
                                           "text": "1",
@@ -738,7 +741,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           adaptOnChangeEvent={[Function]}
                                                           error={false}
                                                           icon={null}
-                                                          initialValue={null}
+                                                          initialValue=""
                                                           inputOnChangeFunctionName="onDatesChange"
                                                           isFocused={false}
                                                           isValid={false}
