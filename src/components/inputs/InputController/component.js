@@ -76,12 +76,12 @@ export class Component extends PureComponent {
         iconPosition={icon && 'left'}
       >
         {hasErrorMessage && <ErrorMessage errorMessage={error} />}
-        {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
         {React.cloneElement(children, {
           [inputOnChangeFunctionName]: this.handleChange,
           ref: input => (this.htmlInput = input),
           ...mapValueToProps(value),
         })}
+        {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
         {label && <label onClick={this.handleClick}>{label}</label>}
         {icon}
       </Input>

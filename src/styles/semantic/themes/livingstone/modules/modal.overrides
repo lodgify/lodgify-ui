@@ -14,10 +14,10 @@
   position: absolute;
   top: @closeTop;
   right: @closeRight;
-  z-index: 1;
   color: @closeColor;
   margin: 0;
   padding: @closePadding;
+  z-index: @closeZIndex;
 }
 
 /* Header */

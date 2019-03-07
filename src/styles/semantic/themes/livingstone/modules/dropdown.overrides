@@ -391,7 +391,7 @@
       position: absolute;
       right: @errorMessageRightPosition;
       top: @errorMessageTopPosition;
-      z-index: 1;
+      z-index: @iconZIndex;
       white-space: nowrap;
 
       &:before {
@@ -416,7 +416,6 @@
       padding: @validIconPadding;
       position: absolute;
       right: @validIconRight;
-      z-index: @validIconZIndex;
     }
 
     > i.icon {

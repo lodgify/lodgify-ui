@@ -13,6 +13,7 @@
 @closeRight: 0;
 
 @closePadding: @10px @8px;
+@closeZIndex: @activeModalZIndex + 1;
 
 /* Header */
 @headerHeight: 90px;
@@ -44,7 +45,7 @@
 --------------------*/
 
 /* Active */
-@activeModalZIndex: 5;
+@activeModalZIndex: @zIndexLevelFour;
 
 /*-------------------
         Types

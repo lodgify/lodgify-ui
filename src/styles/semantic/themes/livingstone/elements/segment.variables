@@ -85,10 +85,14 @@
 @promotionStackedHeadingMarginTop: @15px;
 @promotionStackedDiscountPadding: @10px 0 @20px;
 
-@promotionBeforeLayerZIndex: 1;
-@promotionAfterLayerZIndex: 2;
-@promotionContentLayerZIndex: 3;
+@promotionZIndex: @zIndexLevelOne;
+@promotionBeforeLayerZIndex: @promotionZIndex + 1;
+@promotionAfterLayerZIndex: @promotionBeforeLayerZIndex + 1;
+@promotionContentLayerZIndex: @promotionAfterLayerZIndex + 1;
 
 /* Is Hero */
-@heroGradientZIndex: 1;
-@heroContentZIndex: 2;
+@heroZIndex: @zIndexLevelOne;
+@heroImageZIndex: @heroZIndex + 1;
+@heroGradientZIndex: @heroImageZIndex + 1;
+@heroContentZIndex: @heroGradientZIndex + 1;
+@heroHeaderZIndex: @heroContentZIndex + 1;

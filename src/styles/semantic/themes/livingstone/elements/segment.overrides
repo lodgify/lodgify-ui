@@ -137,6 +137,7 @@
   height: ~"calc(100vh - var(@{fullBleedBottomOffsetIdentifier}, 0))";
   padding: 0;
   border-bottom: none;
+  z-index: @heroZIndex;
 
   figure.responsive-image {
     position: absolute;
@@ -144,7 +145,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 0;
+    z-index: @heroImageZIndex;
   }
 
   &.has-gradient {
@@ -171,7 +172,7 @@
     }
 
     > header {
-      z-index: @heroContentZIndex + 1;
+      z-index: @heroHeaderZIndex;
     }
   }
 }
@@ -182,6 +183,7 @@
   background-color: @promotionBackgroundColor;
   border-radius: @promotionBorderRadius;
   cursor: pointer;
+  z-index: @promotionZIndex;
 
   .ui.grid.first-grid > .row {
     overflow: hidden;

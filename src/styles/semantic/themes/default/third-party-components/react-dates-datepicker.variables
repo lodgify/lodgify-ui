@@ -30,7 +30,7 @@
 
 /* Picker */
 @pickerFontColor: @greyEight;
-@pickerZIndex: 15;
+@pickerZIndex: @zIndexLevelFive;
 @pickerBoxShadow: @spreadShadow;
 @pickerMinHeight: 445px;
 
@@ -89,10 +89,6 @@
 
 /* Valid */
 @validBorderColor: @green;
-
-@validIconOpacity: 1;
-@validIconPadding: @8px 0;
-@validIconZIndex: 1;
 
 /* Error */
 @errorBackground: @negativeBackgroundColor;
