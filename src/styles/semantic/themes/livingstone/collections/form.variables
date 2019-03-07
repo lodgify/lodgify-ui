@@ -88,5 +88,5 @@
 @cookieAlertFormPadding: 30px;
 @cookieAlertFormMargin: 30px;
 @cookieAlertFormMaxWidth: 300px;
-@cookieAlertFormZIndex: 5;
+@cookieAlertFormZIndex: @zIndexLevelThree;
 @cookieAlertFormFieldMarginBottom: 10px;
