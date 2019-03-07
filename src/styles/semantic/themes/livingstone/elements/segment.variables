@@ -67,6 +67,9 @@
 
 /* Is Summary */
 @summaryLocationNameMaxWidth: 185px;
+@placeholderWrapperWidth: 150px;
+@placeholderWrapperPaddingTop: @5px;
+@placeholderMarginRight: 1em;
 
 /* Is Promotion */
 @promotionBackgroundColor: @yellow;

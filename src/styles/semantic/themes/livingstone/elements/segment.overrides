@@ -87,6 +87,28 @@
     }
   }
 
+  .segments.horizontal-wrap {
+
+    .placeholder-wrapper,
+    .inline-placeholder-wrapper {
+      display: flex;
+      width: @placeholderWrapperWidth;
+      padding-top: @placeholderWrapperPaddingTop;
+    }
+
+    .placeholder-wrapper {
+      flex-direction: column;
+    }
+
+    .inline-placeholder-wrapper {
+      flex-direction: row;
+
+      .placeholder {
+        margin-right: @placeholderMarginRight;
+      }
+    }
+  }
+
   .segment {
     white-space: nowrap;
 
