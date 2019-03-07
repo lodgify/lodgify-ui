@@ -34,8 +34,9 @@
    Variations
 ---------------*/
 
-/* with menu */
+/* Wider */
 
-.container.ui.menu.text {
-  max-width: @containerWithMenuMaxWidth !important;
+.container.ui.menu.text,
+.search-bar.is-fixed .container {
+  max-width: @widerMaxWidth !important;
 }
