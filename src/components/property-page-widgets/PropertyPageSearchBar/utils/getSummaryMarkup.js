@@ -18,10 +18,12 @@ export const getSummaryMarkup = ({
   nightPrice,
   propertyName,
   ratingNumber,
+  isShowingPlaceholder,
   /* eslint-enable react/prop-types */
 }) => (
   <Summary
     areOnlyNightPriceAndRatingDisplayed={areOnlyNightPriceAndRatingDisplayed}
+    isShowingPlaceholder={isShowingPlaceholder}
     locationName={locationName}
     nightPrice={nightPrice}
     propertyName={propertyName}

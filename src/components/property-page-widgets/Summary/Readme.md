@@ -6,6 +6,17 @@
   ratingNumber={4.8}
 />
 ```
+#### State
+
+##### Showing placeholders
+
+```jsx
+<Summary
+  isShowingPlaceholder
+  locationName="Catania"
+  propertyName="The Cat House"
+/>
+```
 
 ### Variations
 
@@ -18,5 +29,17 @@
   nightPrice="$280"
   propertyName="The Cat House"
   ratingNumber={4.8}
+/>
+```
+#### State
+
+##### Showing placeholders
+
+```jsx
+<Summary
+  areOnlyNightPriceAndRatingDisplayed
+  isShowingPlaceholder
+  locationName="Catania"
+  propertyName="The Cat House"
 />
 ```
