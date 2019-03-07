@@ -6,7 +6,7 @@
        Element
 --------------------*/
 @dropdownContainerMinWidth: 90px;
-@dropdownContainerFocusZIndex: 14;
+@dropdownContainerFocusZIndex: 12;
 
 @borderRadius: @3px;
 
@@ -198,7 +198,6 @@
 @validIconOpacity: 1;
 @validIconPadding: @8px 0;
 @validIconRight: @40px;
-@validIconZIndex: 1;
 
 @validLabelWidthWithIcon: ~"calc(100% - 105px)";
 @validLabelWidthWithoutIcon: ~"calc(100% - 85px)";
