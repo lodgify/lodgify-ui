@@ -3,8 +3,6 @@
 exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed should have the correct structure 1`] = `
 <Contact
   arrivalDateInputLabel="Arrival"
-  captchaInputImage="someImage"
-  captchaInputLabel="Security code"
   commentsInputLabel="Comments"
   departureDateInputLabel="Departure"
   emailInputLabel="Email"
@@ -1193,106 +1191,6 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                     </FormField>
                   </div>
                 </InputGroup>
-                <FormField
-                  key=".5"
-                >
-                  <div
-                    className="field"
-                  >
-                    <CaptchaInput
-                      error={false}
-                      image="someImage"
-                      isValid={false}
-                      label="Security code"
-                      name="captcha"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                    >
-                      <InputGroup
-                        widths="equal"
-                      >
-                        <div
-                          className="equal width fields"
-                        >
-                          <FormField>
-                            <div
-                              className="field"
-                            >
-                              <Image
-                                as="img"
-                                src="someImage"
-                                ui={true}
-                              >
-                                <img
-                                  className="ui image"
-                                  src="someImage"
-                                />
-                              </Image>
-                            </div>
-                          </FormField>
-                          <FormField>
-                            <div
-                              className="field"
-                            >
-                              <TextInput
-                                autoComplete="off"
-                                error={false}
-                                isValid={false}
-                                label="Security code"
-                                maxCharacters={null}
-                                name="captcha"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                type="text"
-                              >
-                                <InputController
-                                  adaptOnChangeEvent={[Function]}
-                                  error={false}
-                                  icon={null}
-                                  initialValue=""
-                                  inputOnChangeFunctionName="onChange"
-                                  isFocused={false}
-                                  isValid={false}
-                                  label="Security code"
-                                  mapValueToProps={[Function]}
-                                  name="captcha"
-                                  onChange={[Function]}
-                                >
-                                  <Input
-                                    className=""
-                                    iconPosition={null}
-                                    type="text"
-                                  >
-                                    <div
-                                      className="ui input"
-                                    >
-                                      <input
-                                        autoComplete="off"
-                                        key=".1"
-                                        maxLength={null}
-                                        name="captcha"
-                                        onBlur={[Function]}
-                                        onChange={[Function]}
-                                        type="text"
-                                        value=""
-                                      />
-                                      <label
-                                        key=".3"
-                                        onClick={[Function]}
-                                      >
-                                        Security code
-                                      </label>
-                                    </div>
-                                  </Input>
-                                </InputController>
-                              </TextInput>
-                            </div>
-                          </FormField>
-                        </div>
-                      </InputGroup>
-                    </CaptchaInput>
-                  </div>
-                </FormField>
                 <Button
                   hasShadow={false}
                   icon={null}
@@ -1339,8 +1237,6 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
 exports[`<Contact /> if \`props.propertyOptions\` is passed should have the correct structure 1`] = `
 <Contact
   arrivalDateInputLabel="Arrival"
-  captchaInputImage="someImage"
-  captchaInputLabel="Security code"
   commentsInputLabel="Comments"
   departureDateInputLabel="Departure"
   emailInputLabel="Email"
@@ -2257,106 +2153,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                     </FormField>
                   </div>
                 </InputGroup>
-                <FormField
-                  key=".5"
-                >
-                  <div
-                    className="field"
-                  >
-                    <CaptchaInput
-                      error={false}
-                      image="someImage"
-                      isValid={false}
-                      label="Security code"
-                      name="captcha"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                    >
-                      <InputGroup
-                        widths="equal"
-                      >
-                        <div
-                          className="equal width fields"
-                        >
-                          <FormField>
-                            <div
-                              className="field"
-                            >
-                              <Image
-                                as="img"
-                                src="someImage"
-                                ui={true}
-                              >
-                                <img
-                                  className="ui image"
-                                  src="someImage"
-                                />
-                              </Image>
-                            </div>
-                          </FormField>
-                          <FormField>
-                            <div
-                              className="field"
-                            >
-                              <TextInput
-                                autoComplete="off"
-                                error={false}
-                                isValid={false}
-                                label="Security code"
-                                maxCharacters={null}
-                                name="captcha"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                type="text"
-                              >
-                                <InputController
-                                  adaptOnChangeEvent={[Function]}
-                                  error={false}
-                                  icon={null}
-                                  initialValue=""
-                                  inputOnChangeFunctionName="onChange"
-                                  isFocused={false}
-                                  isValid={false}
-                                  label="Security code"
-                                  mapValueToProps={[Function]}
-                                  name="captcha"
-                                  onChange={[Function]}
-                                >
-                                  <Input
-                                    className=""
-                                    iconPosition={null}
-                                    type="text"
-                                  >
-                                    <div
-                                      className="ui input"
-                                    >
-                                      <input
-                                        autoComplete="off"
-                                        key=".1"
-                                        maxLength={null}
-                                        name="captcha"
-                                        onBlur={[Function]}
-                                        onChange={[Function]}
-                                        type="text"
-                                        value=""
-                                      />
-                                      <label
-                                        key=".3"
-                                        onClick={[Function]}
-                                      >
-                                        Security code
-                                      </label>
-                                    </div>
-                                  </Input>
-                                </InputController>
-                              </TextInput>
-                            </div>
-                          </FormField>
-                        </div>
-                      </InputGroup>
-                    </CaptchaInput>
-                  </div>
-                </FormField>
                 <Button
                   hasShadow={false}
                   icon={null}
@@ -2403,8 +2199,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
 exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct structure 1`] = `
 <Contact
   arrivalDateInputLabel="Arrival"
-  captchaInputImage="someImage"
-  captchaInputLabel="Security code"
   commentsInputLabel="Comments"
   departureDateInputLabel="Departure"
   emailInputLabel="Email"
@@ -3276,106 +3070,6 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                     </FormField>
                   </div>
                 </InputGroup>
-                <FormField
-                  key=".5"
-                >
-                  <div
-                    className="field"
-                  >
-                    <CaptchaInput
-                      error={false}
-                      image="someImage"
-                      isValid={false}
-                      label="Security code"
-                      name="captcha"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                    >
-                      <InputGroup
-                        widths="equal"
-                      >
-                        <div
-                          className="equal width fields"
-                        >
-                          <FormField>
-                            <div
-                              className="field"
-                            >
-                              <Image
-                                as="img"
-                                src="someImage"
-                                ui={true}
-                              >
-                                <img
-                                  className="ui image"
-                                  src="someImage"
-                                />
-                              </Image>
-                            </div>
-                          </FormField>
-                          <FormField>
-                            <div
-                              className="field"
-                            >
-                              <TextInput
-                                autoComplete="off"
-                                error={false}
-                                isValid={false}
-                                label="Security code"
-                                maxCharacters={null}
-                                name="captcha"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                type="text"
-                              >
-                                <InputController
-                                  adaptOnChangeEvent={[Function]}
-                                  error={false}
-                                  icon={null}
-                                  initialValue=""
-                                  inputOnChangeFunctionName="onChange"
-                                  isFocused={false}
-                                  isValid={false}
-                                  label="Security code"
-                                  mapValueToProps={[Function]}
-                                  name="captcha"
-                                  onChange={[Function]}
-                                >
-                                  <Input
-                                    className=""
-                                    iconPosition={null}
-                                    type="text"
-                                  >
-                                    <div
-                                      className="ui input"
-                                    >
-                                      <input
-                                        autoComplete="off"
-                                        key=".1"
-                                        maxLength={null}
-                                        name="captcha"
-                                        onBlur={[Function]}
-                                        onChange={[Function]}
-                                        type="text"
-                                        value=""
-                                      />
-                                      <label
-                                        key=".3"
-                                        onClick={[Function]}
-                                      >
-                                        Security code
-                                      </label>
-                                    </div>
-                                  </Input>
-                                </InputController>
-                              </TextInput>
-                            </div>
-                          </FormField>
-                        </div>
-                      </InputGroup>
-                    </CaptchaInput>
-                  </div>
-                </FormField>
                 <Button
                   hasShadow={false}
                   icon={null}
@@ -3422,8 +3116,6 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
 exports[`<Contact /> should have the correct structure 1`] = `
 <Contact
   arrivalDateInputLabel="Arrival"
-  captchaInputImage="someImage"
-  captchaInputLabel="Security code"
   commentsInputLabel="Comments"
   departureDateInputLabel="Departure"
   emailInputLabel="Email"
@@ -4012,106 +3704,6 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         </Input>
                       </InputController>
                     </TextArea>
-                  </div>
-                </FormField>
-                <FormField
-                  key=".5"
-                >
-                  <div
-                    className="field"
-                  >
-                    <CaptchaInput
-                      error={false}
-                      image="someImage"
-                      isValid={false}
-                      label="Security code"
-                      name="captcha"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                    >
-                      <InputGroup
-                        widths="equal"
-                      >
-                        <div
-                          className="equal width fields"
-                        >
-                          <FormField>
-                            <div
-                              className="field"
-                            >
-                              <Image
-                                as="img"
-                                src="someImage"
-                                ui={true}
-                              >
-                                <img
-                                  className="ui image"
-                                  src="someImage"
-                                />
-                              </Image>
-                            </div>
-                          </FormField>
-                          <FormField>
-                            <div
-                              className="field"
-                            >
-                              <TextInput
-                                autoComplete="off"
-                                error={false}
-                                isValid={false}
-                                label="Security code"
-                                maxCharacters={null}
-                                name="captcha"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                type="text"
-                              >
-                                <InputController
-                                  adaptOnChangeEvent={[Function]}
-                                  error={false}
-                                  icon={null}
-                                  initialValue=""
-                                  inputOnChangeFunctionName="onChange"
-                                  isFocused={false}
-                                  isValid={false}
-                                  label="Security code"
-                                  mapValueToProps={[Function]}
-                                  name="captcha"
-                                  onChange={[Function]}
-                                >
-                                  <Input
-                                    className=""
-                                    iconPosition={null}
-                                    type="text"
-                                  >
-                                    <div
-                                      className="ui input"
-                                    >
-                                      <input
-                                        autoComplete="off"
-                                        key=".1"
-                                        maxLength={null}
-                                        name="captcha"
-                                        onBlur={[Function]}
-                                        onChange={[Function]}
-                                        type="text"
-                                        value=""
-                                      />
-                                      <label
-                                        key=".3"
-                                        onClick={[Function]}
-                                      >
-                                        Security code
-                                      </label>
-                                    </div>
-                                  </Input>
-                                </InputController>
-                              </TextInput>
-                            </div>
-                          </FormField>
-                        </div>
-                      </InputGroup>
-                    </CaptchaInput>
                   </div>
                 </FormField>
                 <Button

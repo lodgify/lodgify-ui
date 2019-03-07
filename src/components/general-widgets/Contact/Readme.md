@@ -1,12 +1,10 @@
 ```jsx
-const mockCaptcha = require('./mock-data/signupcode.jpeg');
 const {
   propertyOptions,
   roomOptions,
 } = require('./mock-data/options');
 
 <Contact
-  captchaInputImage={mockCaptcha}
   propertyOptions={propertyOptions}
   roomOptions={roomOptions}
 />
@@ -20,13 +18,11 @@ const {
 No dropdown will be rendered if there is no options prop.
 
 ```jsx
-const mockCaptcha = require('./mock-data/signupcode.jpeg');
 const {
   roomOptions,
 } = require('./mock-data/options');
 
 <Contact
-  captchaInputImage={mockCaptcha}
   roomOptions={roomOptions}
 />
 ```
@@ -34,13 +30,11 @@ const {
 A disabled dropdown will be rendered if the options array is empty.
 
 ```jsx
-const mockCaptcha = require('./mock-data/signupcode.jpeg');
 const {
   roomOptions,
 } = require('./mock-data/options');
 
 <Contact
-  captchaInputImage={mockCaptcha}
   propertyOptions={[]}
   roomOptions={roomOptions}
 />
@@ -49,14 +43,12 @@ const {
 A dropdown will be rendered if the options array is populated.
 
 ```jsx
-const mockCaptcha = require('./mock-data/signupcode.jpeg');
 const {
   propertyOptions,
   roomOptions,
 } = require('./mock-data/options');
 
 <Contact
-  captchaInputImage={mockCaptcha}
   propertyOptions={propertyOptions}
   roomOptions={roomOptions}
 />
@@ -65,7 +57,6 @@ const {
 #### Strings
 
 ```jsx
-const mockCaptcha = require('./mock-data/signupcode.jpeg');
 const {
   propertyOptions,
   roomOptions,
@@ -73,8 +64,6 @@ const {
 
 <Contact
   arrivalDateInputLabel="Check-in"
-  captchaInputImage={mockCaptcha}
-  captchaInputLabel="Enter Code"
   commentsInputLabel="Other notes"
   departureDateInputLabel="Check-out"
   emailInputLabel="Your email"
@@ -95,14 +84,12 @@ const {
 #### Validation
 
 ```jsx
-const mockCaptcha = require('./mock-data/signupcode.jpeg');
 const {
   propertyOptions,
   roomOptions,
 } = require('./mock-data/options');
 
 const validation = {
-  captcha: { isRequired: true },
   comments: { isRequired: true },
   dates: {
     getIsEmpty: value => !value || [value.startDate, value.endDate].includes(null),
@@ -121,7 +108,6 @@ const validation = {
 };
 
 <Contact
-  captchaInputImage={mockCaptcha}
   propertyOptions={propertyOptions}
   roomOptions={roomOptions}
   validation={validation}
