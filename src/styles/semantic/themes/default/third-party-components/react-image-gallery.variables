@@ -6,6 +6,7 @@
       Element
 --------------------*/
 @imageGalleryBottomMargin: @30px;
+@imageGalleryZindex: @zIndexLevelOne;
 
 @imageGalleryImagesBorderRadius: @4px;
 @imageGalleryImageMaxHeight: 390px;
@@ -16,5 +17,6 @@
 @imageGalleryButtonDiameter: @35px;
 @imageGalleryButtonBackground: @greyFive;
 @imageGalleryButtonHorizontalMargin: @8px;
+@imageGalleryButtonZIndex: @imageGalleryZindex + 1;
 
 @imageGalleryBulletsBottomPosition: -(@20px);

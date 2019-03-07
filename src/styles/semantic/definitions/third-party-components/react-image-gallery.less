@@ -3,6 +3,7 @@
 *******************************/
 
 @type     : 'third-party-component';
+
 @element  : 'react-image-gallery';
 
 @import (multiple) '../../theme.config';
@@ -13,6 +14,8 @@
 
 .image-gallery {
   margin-bottom: @imageGalleryBottomMargin;
+  position: relative;
+  z-index: @imageGalleryZindex;
 
   > .image-gallery-content .image-gallery-slide-wrapper {
 
@@ -36,7 +39,7 @@
       position: absolute;
       top: @imageGalleryButtonTopPosition;
       width: 100%;
-      z-index: 1;
+      z-index: @imageGalleryButtonZIndex;
 
       .button {
         height: @imageGalleryButtonDiameter;
