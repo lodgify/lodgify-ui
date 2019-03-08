@@ -34,7 +34,4 @@
   /*-------------------
         Variations
   --------------------*/
-  .modal & .icon {
-    outline-width: @inputRatingOutline;
-  }
 }
