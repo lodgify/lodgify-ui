@@ -1,3 +1,10 @@
+## [1.156.1](https://github.com/lodgify/lodgify-ui/compare/v1.156.0...v1.156.1) (2019-03-11)
+
+
+### Bug Fixes
+
+* **Rating.*:** remove obsolete styles for rating input ([d053535](https://github.com/lodgify/lodgify-ui/commit/d053535))
+
 # [1.156.0](https://github.com/lodgify/lodgify-ui/compare/v1.155.0...v1.156.0) (2019-03-07)
 
 
