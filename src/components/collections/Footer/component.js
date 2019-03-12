@@ -34,24 +34,26 @@ export const Component = ({
   socialMediaLinks,
 }) => (
   <footer>
-    <div className="top-navigation">
-      <HorizontalGutters as={Menu} borderless inverted stackable>
-        {getAreNavigationItemsGrouped(navigationItems)
-          ? getGroupedNavigationItems(navigationItems).map(
-              ({ text, subItems }, index) => (
-                <Menu.Item
-                  key={buildKeyFromStrings(text || subItems[0].text, index)}
-                >
-                  <Menu.Menu>
-                    {text && <Menu.Header>{toUpper(text)}</Menu.Header>}
-                    {subItems.map(getMenuItemMarkup)}
-                  </Menu.Menu>
-                </Menu.Item>
+    {size(navigationItems) > 0 && (
+      <div className="top-navigation">
+        <HorizontalGutters as={Menu} borderless inverted stackable>
+          {getAreNavigationItemsGrouped(navigationItems)
+            ? getGroupedNavigationItems(navigationItems).map(
+                ({ text, subItems }, index) => (
+                  <Menu.Item
+                    key={buildKeyFromStrings(text || subItems[0].text, index)}
+                  >
+                    <Menu.Menu>
+                      {text && <Menu.Header>{toUpper(text)}</Menu.Header>}
+                      {subItems.map(getMenuItemMarkup)}
+                    </Menu.Menu>
+                  </Menu.Item>
+                )
               )
-            )
-          : navigationItems.map(getMenuItemMarkup)}
-      </HorizontalGutters>
-    </div>
+            : navigationItems.map(getMenuItemMarkup)}
+        </HorizontalGutters>
+      </div>
+    )}
     <div className="bottom-navigation">
       <HorizontalGutters as={Menu} borderless inverted stackable>
         {size(languageOptions) > 1 && (
@@ -122,6 +124,7 @@ Component.defaultProps = {
   currencyValue: null,
   languageOptions: [],
   languageValue: null,
+  navigationItems: null,
   phoneNumber: null,
   socialMediaLinks: [],
 };
@@ -187,7 +190,7 @@ Component.propTypes = {
       /** The visible text for an item. */
       text: PropTypes.string.isRequired,
     })
-  ).isRequired,
+  ),
   /** The function called when the currency dropdown is changed.
    *  @param {String} name
    *  @param {String} value

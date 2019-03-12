@@ -1,3 +1,18 @@
+## [1.156.3](https://github.com/lodgify/lodgify-ui/compare/v1.156.2...v1.156.3) (2019-03-12)
+
+
+### Bug Fixes
+
+* **Footer:** hide navigation bar when no items ([1bf4b3a](https://github.com/lodgify/lodgify-ui/commit/1bf4b3a))
+* **Submenu:** remove unnecessary styles ([7676452](https://github.com/lodgify/lodgify-ui/commit/7676452))
+
+## [1.156.2](https://github.com/lodgify/lodgify-ui/compare/v1.156.1...v1.156.2) (2019-03-12)
+
+
+### Bug Fixes
+
+* **cards:** no longer have text underlines on safari ([7377dbf](https://github.com/lodgify/lodgify-ui/commit/7377dbf))
+
 ## [1.156.1](https://github.com/lodgify/lodgify-ui/compare/v1.156.0...v1.156.1) (2019-03-11)
 
 
