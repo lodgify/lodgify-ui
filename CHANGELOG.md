@@ -1,3 +1,13 @@
+## [1.156.5](https://github.com/lodgify/lodgify-ui/compare/v1.156.4...v1.156.5) (2019-03-12)
+
+
+### Bug Fixes
+
+* **Dropdown:** remove defaultValue ([082b037](https://github.com/lodgify/lodgify-ui/commit/082b037))
+* **HomepageHero:** fix PropTypes for searchBarGuestsInputInitialValue ([996729a](https://github.com/lodgify/lodgify-ui/commit/996729a))
+* **PropertyPageSearchBar:** fix PropTypes for searchBarGuestsInputInitialValue ([fa9c899](https://github.com/lodgify/lodgify-ui/commit/fa9c899))
+* **SearchBar:** add input default values to state ([93ad72c](https://github.com/lodgify/lodgify-ui/commit/93ad72c))
+
 ## [1.156.4](https://github.com/lodgify/lodgify-ui/compare/v1.156.3...v1.156.4) (2019-03-12)
 
 
