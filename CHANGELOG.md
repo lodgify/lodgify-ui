@@ -1,3 +1,11 @@
+## [1.156.3](https://github.com/lodgify/lodgify-ui/compare/v1.156.2...v1.156.3) (2019-03-12)
+
+
+### Bug Fixes
+
+* **Footer:** hide navigation bar when no items ([1bf4b3a](https://github.com/lodgify/lodgify-ui/commit/1bf4b3a))
+* **Submenu:** remove unnecessary styles ([7676452](https://github.com/lodgify/lodgify-ui/commit/7676452))
+
 ## [1.156.2](https://github.com/lodgify/lodgify-ui/compare/v1.156.1...v1.156.2) (2019-03-12)
 
 
