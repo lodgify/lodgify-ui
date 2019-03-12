@@ -1,3 +1,10 @@
+## [1.156.2](https://github.com/lodgify/lodgify-ui/compare/v1.156.1...v1.156.2) (2019-03-12)
+
+
+### Bug Fixes
+
+* **cards:** no longer have text underlines on safari ([7377dbf](https://github.com/lodgify/lodgify-ui/commit/7377dbf))
+
 ## [1.156.1](https://github.com/lodgify/lodgify-ui/compare/v1.156.0...v1.156.1) (2019-03-11)
 
 
