@@ -111,7 +111,9 @@ describe('<SearchBar />', () => {
       input.simulate('change', name, value);
 
       expect(onChangeInput).toHaveBeenCalledWith({
-        [name]: value,
+        dates: null,
+        guests: null,
+        location: '🍰',
       });
     });
   });

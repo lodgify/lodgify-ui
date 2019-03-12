@@ -20,7 +20,11 @@ import { getSearchBarModal } from './utils/getSearchBarModal';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
-  state = {};
+  state = {
+    dates: this.props.datesInputInitialValue,
+    guests: this.props.guestsInputInitialValue,
+    location: this.props.locationInputInitialValue,
+  };
 
   componentDidUpdate(previousProps, previousState) {
     !isEqual(previousState, this.state) && this.props.onChangeInput(this.state);
@@ -111,15 +115,15 @@ Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   className: null,
-  datesInputInitialValue: undefined,
+  datesInputInitialValue: null,
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: Function.prototype,
-  guestsInputInitialValue: undefined,
+  guestsInputInitialValue: null,
   isDisplayedAsModal: false,
   isFixed: false,
   isModalOpen: undefined,
   isShowingSummary: false,
-  locationInputInitialValue: undefined,
+  locationInputInitialValue: null,
   locationOptions: null,
   modalHeadingText: CHECK_OUR_AVAILABILITY,
   modalSummaryElement: null,

@@ -460,6 +460,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                         <Dropdown
                           error={false}
                           icon="clock"
+                          initialValue={null}
                           isDisabled={false}
                           isSearchable={false}
                           isValid={false}
@@ -533,7 +534,6 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               additionPosition="top"
                               closeOnBlur={true}
                               deburr={false}
-                              defaultValue={null}
                               disabled={false}
                               icon={
                                 <Icon
@@ -593,6 +593,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
+                              value={null}
                               wrapSelection={true}
                             >
                               <div
@@ -1440,6 +1441,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                         <Dropdown
                           error={false}
                           icon="clock"
+                          initialValue={null}
                           isDisabled={false}
                           isSearchable={false}
                           isValid={false}
@@ -1513,7 +1515,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               additionPosition="top"
                               closeOnBlur={true}
                               deburr={false}
-                              defaultValue={null}
                               disabled={false}
                               icon={
                                 <Icon
@@ -1573,6 +1574,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
+                              value={null}
                               wrapSelection={true}
                             >
                               <div
@@ -1849,6 +1851,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                     <Dropdown
                       error={false}
                       icon={null}
+                      initialValue={null}
                       isDisabled={false}
                       isSearchable={false}
                       isValid={false}
@@ -1887,7 +1890,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           additionPosition="top"
                           closeOnBlur={true}
                           deburr={false}
-                          defaultValue={null}
                           disabled={false}
                           icon={
                             <Icon
@@ -1939,6 +1941,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           selectOnNavigation={true}
                           selection={true}
                           upward={false}
+                          value={null}
                           wrapSelection={true}
                         >
                           <div
