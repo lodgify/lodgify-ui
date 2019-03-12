@@ -324,7 +324,6 @@
 }
 
 .ui.search.dropdown:not(.selection) {
-  height: @submenuSearchHeight;
 
   > input.search {
     font-family: @fontName;

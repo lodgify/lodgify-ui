@@ -36,7 +36,6 @@ const getFooter = otherProps =>
     <Footer
       currencyOptions={currencyOptions}
       languageOptions={languageOptions}
-      navigationItems={navigationItems}
       onChangeCurrency={onChangeCurrency}
       onChangeLanguage={onChangeLanguage}
       phoneNumber={phoneNumber}
@@ -50,6 +49,14 @@ describe('<Footer />', () => {
     const wrapper = getFooter();
 
     expect(wrapper).toMatchSnapshot();
+  });
+
+  describe('if `props.navigationItems` are passed', () => {
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ navigationItems });
+
+      expect(wrapper).toMatchSnapshot();
+    });
   });
 
   describe('if `props.navigationItems` are grouped', () => {
