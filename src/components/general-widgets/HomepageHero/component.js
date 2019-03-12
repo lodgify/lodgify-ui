@@ -236,7 +236,11 @@ Component.propTypes = {
    */
   searchBarGetIsDayBlocked: PropTypes.func,
   /** The initial value for the guests input of the search bar. */
-  searchBarGuestsInputInitialValue: PropTypes.string,
+  searchBarGuestsInputInitialValue: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   /** The options which the user can select in the guests fields of the search bar. */
   searchBarGuestsOptions: PropTypes.arrayOf(
     PropTypes.shape({
