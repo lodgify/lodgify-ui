@@ -120,7 +120,6 @@ describe('<Dropdown />', () => {
       const wrapper = getSemanticDropdown();
 
       expectComponentToHaveProps(wrapper, {
-        defaultValue: null,
         icon: <Icon name={ICON_NAMES.CARET_DOWN} />,
         noResultsMessage: NO_RESULTS,
         onBlur: expect.any(Function),
@@ -285,7 +284,7 @@ describe('<Dropdown />', () => {
           .instance()
           .componentDidUpdate({}, { value: 'some changed value' });
 
-        expect(onChange).not.toHaveBeenCalled();
+        expect(onChange).toHaveBeenCalledWith('', undefined);
       });
     });
 
@@ -316,7 +315,7 @@ describe('<Dropdown />', () => {
 
       expect(actual).toEqual({
         isOpen: false,
-        value: undefined,
+        value: null,
       });
     });
   });
@@ -367,7 +366,7 @@ describe('<Dropdown />', () => {
 
       expect(actual).toEqual({
         isOpen: true,
-        value: undefined,
+        value: null,
       });
     });
   });
@@ -382,7 +381,7 @@ describe('<Dropdown />', () => {
 
       expect(actual).toEqual({
         isOpen: true,
-        value: undefined,
+        value: null,
       });
     });
   });
