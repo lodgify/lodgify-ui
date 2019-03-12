@@ -1,3 +1,10 @@
+## [1.156.4](https://github.com/lodgify/lodgify-ui/compare/v1.156.3...v1.156.4) (2019-03-12)
+
+
+### Bug Fixes
+
+* **Modal:** header image regression ([b85dc9f](https://github.com/lodgify/lodgify-ui/commit/b85dc9f))
+
 ## [1.156.3](https://github.com/lodgify/lodgify-ui/compare/v1.156.2...v1.156.3) (2019-03-12)
 
 
