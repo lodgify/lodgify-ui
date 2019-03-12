@@ -26,6 +26,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
     <Dropdown
       error={false}
       icon="map pin"
+      initialValue={null}
       isDisabled={false}
       isSearchable={false}
       isValid={false}
@@ -62,6 +63,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
     <Dropdown
       error={false}
       icon="users"
+      initialValue={null}
       isDisabled={false}
       isSearchable={false}
       isValid={false}
@@ -120,6 +122,7 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
     <Dropdown
       error={false}
       icon="users"
+      initialValue={null}
       isDisabled={false}
       isSearchable={false}
       isValid={false}

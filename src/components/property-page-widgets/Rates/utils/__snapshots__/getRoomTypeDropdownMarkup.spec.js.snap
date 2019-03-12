@@ -37,6 +37,7 @@ Array [
       <Dropdown
         error={false}
         icon={null}
+        initialValue={null}
         isDisabled={false}
         isSearchable={false}
         isValid={false}

@@ -87,6 +87,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
       <Dropdown
         error={false}
         icon={null}
+        initialValue={null}
         isDisabled={false}
         isSearchable={true}
         isValid={false}
@@ -121,7 +122,6 @@ exports[`<Rates /> by default should have the right structure 1`] = `
             additionPosition="top"
             closeOnBlur={true}
             deburr={false}
-            defaultValue="eur"
             disabled={false}
             icon={
               <Icon
@@ -169,6 +169,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
             selectOnNavigation={true}
             selection={true}
             upward={false}
+            value={null}
             wrapSelection={true}
           >
             <div
@@ -214,9 +215,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                 aria-live="polite"
                 className="text"
                 role="alert"
-              >
-                EUR €
-              </div>
+              />
               <Icon
                 color={null}
                 hasBorder={false}
@@ -255,7 +254,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                   role="listbox"
                 >
                   <DropdownItem
-                    active={true}
+                    active={false}
                     key="eur"
                     onClick={[Function]}
                     selected={true}
@@ -268,9 +267,9 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                     value="eur"
                   >
                     <div
-                      aria-checked={true}
+                      aria-checked={false}
                       aria-selected={true}
-                      className="active selected item"
+                      className="selected item"
                       onClick={[Function]}
                       role="option"
                       style={
@@ -1555,6 +1554,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
             <Dropdown
               error={false}
               icon={null}
+              initialValue={null}
               isDisabled={false}
               isSearchable={true}
               isValid={false}
@@ -1627,6 +1627,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           <Dropdown
                             error={false}
                             icon={null}
+                            initialValue={null}
                             isDisabled={false}
                             isSearchable={true}
                             isValid={false}
@@ -1661,7 +1662,6 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 additionPosition="top"
                                 closeOnBlur={true}
                                 deburr={false}
-                                defaultValue="eur"
                                 disabled={false}
                                 icon={
                                   <Icon
@@ -1709,6 +1709,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 selectOnNavigation={true}
                                 selection={true}
                                 upward={false}
+                                value={null}
                                 wrapSelection={true}
                               >
                                 <div
@@ -1754,9 +1755,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                     aria-live="polite"
                                     className="text"
                                     role="alert"
-                                  >
-                                    EUR €
-                                  </div>
+                                  />
                                   <Icon
                                     color={null}
                                     hasBorder={false}
@@ -1795,7 +1794,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                       role="listbox"
                                     >
                                       <DropdownItem
-                                        active={true}
+                                        active={false}
                                         key="eur"
                                         onClick={[Function]}
                                         selected={true}
@@ -1808,9 +1807,9 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                         value="eur"
                                       >
                                         <div
-                                          aria-checked={true}
+                                          aria-checked={false}
                                           aria-selected={true}
-                                          className="active selected item"
+                                          className="selected item"
                                           onClick={[Function]}
                                           role="option"
                                           style={
@@ -3194,6 +3193,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
       <Dropdown
         error={false}
         icon={null}
+        initialValue={null}
         isDisabled={false}
         isSearchable={false}
         isValid={false}
@@ -3236,7 +3236,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             additionPosition="top"
             closeOnBlur={true}
             deburr={false}
-            defaultValue="🎅"
             disabled={false}
             icon={
               <Icon
@@ -3332,6 +3331,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             selectOnNavigation={true}
             selection={true}
             upward={false}
+            value={null}
             wrapSelection={true}
           >
             <div
@@ -3350,20 +3350,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                 aria-live="polite"
                 className="text"
                 role="alert"
-              >
-                <img
-                  alt="🎅"
-                  className="ui image"
-                  key="img🎅0"
-                  src="🎅"
-                />
-                <span
-                  className="text"
-                  key="spa🎅0"
-                >
-                  🎅
-                </span>
-              </div>
+              />
               <Icon
                 color={null}
                 hasBorder={false}
@@ -3400,7 +3387,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   className="menu transition"
                 >
                   <DropdownItem
-                    active={true}
+                    active={false}
                     key="🎅"
                     onClick={[Function]}
                     selected={true}
@@ -3426,9 +3413,9 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                     value="🎅"
                   >
                     <div
-                      aria-checked={true}
+                      aria-checked={false}
                       aria-selected={true}
-                      className="active selected item"
+                      className="selected item"
                       onClick={[Function]}
                       role="option"
                       style={
@@ -3660,6 +3647,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
       <Dropdown
         error={false}
         icon={null}
+        initialValue={null}
         isDisabled={false}
         isSearchable={true}
         isValid={false}
@@ -3694,7 +3682,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             additionPosition="top"
             closeOnBlur={true}
             deburr={false}
-            defaultValue="eur"
             disabled={false}
             icon={
               <Icon
@@ -3742,6 +3729,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             selectOnNavigation={true}
             selection={true}
             upward={false}
+            value={null}
             wrapSelection={true}
           >
             <div
@@ -3787,9 +3775,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                 aria-live="polite"
                 className="text"
                 role="alert"
-              >
-                EUR €
-              </div>
+              />
               <Icon
                 color={null}
                 hasBorder={false}
@@ -3828,7 +3814,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   role="listbox"
                 >
                   <DropdownItem
-                    active={true}
+                    active={false}
                     key="eur"
                     onClick={[Function]}
                     selected={true}
@@ -3841,9 +3827,9 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                     value="eur"
                   >
                     <div
-                      aria-checked={true}
+                      aria-checked={false}
                       aria-selected={true}
-                      className="active selected item"
+                      className="selected item"
                       onClick={[Function]}
                       role="option"
                       style={
@@ -5128,6 +5114,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             <Dropdown
               error={false}
               icon={null}
+              initialValue={null}
               isDisabled={false}
               isSearchable={true}
               isValid={false}
@@ -5200,6 +5187,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           <Dropdown
                             error={false}
                             icon={null}
+                            initialValue={null}
                             isDisabled={false}
                             isSearchable={true}
                             isValid={false}
@@ -5234,7 +5222,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 additionPosition="top"
                                 closeOnBlur={true}
                                 deburr={false}
-                                defaultValue="eur"
                                 disabled={false}
                                 icon={
                                   <Icon
@@ -5282,6 +5269,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 selectOnNavigation={true}
                                 selection={true}
                                 upward={false}
+                                value={null}
                                 wrapSelection={true}
                               >
                                 <div
@@ -5327,9 +5315,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                     aria-live="polite"
                                     className="text"
                                     role="alert"
-                                  >
-                                    EUR €
-                                  </div>
+                                  />
                                   <Icon
                                     color={null}
                                     hasBorder={false}
@@ -5368,7 +5354,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                       role="listbox"
                                     >
                                       <DropdownItem
-                                        active={true}
+                                        active={false}
                                         key="eur"
                                         onClick={[Function]}
                                         selected={true}
@@ -5381,9 +5367,9 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                         value="eur"
                                       >
                                         <div
-                                          aria-checked={true}
+                                          aria-checked={false}
                                           aria-selected={true}
-                                          className="active selected item"
+                                          className="selected item"
                                           onClick={[Function]}
                                           role="option"
                                           style={

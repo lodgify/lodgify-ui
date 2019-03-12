@@ -99,6 +99,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 <Dropdown
                   error={false}
                   icon="map pin"
+                  initialValue={null}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -164,7 +165,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       additionPosition="top"
                       closeOnBlur={true}
                       deburr={false}
-                      defaultValue={null}
                       disabled={false}
                       icon={
                         <Icon
@@ -216,6 +216,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       selectOnNavigation={true}
                       selection={true}
                       upward={false}
+                      value={null}
                       wrapSelection={true}
                     >
                       <div
@@ -583,6 +584,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 <Dropdown
                   error={false}
                   icon="users"
+                  initialValue={null}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -648,7 +650,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       additionPosition="top"
                       closeOnBlur={true}
                       deburr={false}
-                      defaultValue={null}
                       disabled={false}
                       icon={
                         <Icon
@@ -700,6 +701,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       selectOnNavigation={true}
                       selection={true}
                       upward={false}
+                      value={null}
                       wrapSelection={true}
                     >
                       <div
@@ -1129,6 +1131,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                         <Dropdown
                                           error={false}
                                           icon="map pin"
+                                          initialValue={null}
                                           isDisabled={false}
                                           isSearchable={false}
                                           isValid={false}
@@ -1194,7 +1197,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                               additionPosition="top"
                                               closeOnBlur={true}
                                               deburr={false}
-                                              defaultValue={null}
                                               disabled={false}
                                               icon={
                                                 <Icon
@@ -1246,6 +1248,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                               selectOnNavigation={true}
                                               selection={true}
                                               upward={true}
+                                              value={null}
                                               wrapSelection={true}
                                             >
                                               <div
@@ -1613,6 +1616,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                         <Dropdown
                                           error={false}
                                           icon="users"
+                                          initialValue={null}
                                           isDisabled={false}
                                           isSearchable={false}
                                           isValid={false}
@@ -1678,7 +1682,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                               additionPosition="top"
                                               closeOnBlur={true}
                                               deburr={false}
-                                              defaultValue={null}
                                               disabled={false}
                                               icon={
                                                 <Icon
@@ -1730,6 +1733,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                               selectOnNavigation={true}
                                               selection={true}
                                               upward={true}
+                                              value={null}
                                               wrapSelection={true}
                                             >
                                               <div
@@ -2161,6 +2165,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 <Dropdown
                   error={false}
                   icon="map pin"
+                  initialValue={null}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -2226,7 +2231,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       additionPosition="top"
                       closeOnBlur={true}
                       deburr={false}
-                      defaultValue={null}
                       disabled={false}
                       icon={
                         <Icon
@@ -2278,6 +2282,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       selectOnNavigation={true}
                       selection={true}
                       upward={false}
+                      value={null}
                       wrapSelection={true}
                     >
                       <div
@@ -2645,6 +2650,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 <Dropdown
                   error={false}
                   icon="users"
+                  initialValue={null}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -2710,7 +2716,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       additionPosition="top"
                       closeOnBlur={true}
                       deburr={false}
-                      defaultValue={null}
                       disabled={false}
                       icon={
                         <Icon
@@ -2762,6 +2767,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       selectOnNavigation={true}
                       selection={true}
                       upward={false}
+                      value={null}
                       wrapSelection={true}
                     >
                       <div
@@ -3276,6 +3282,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 <Dropdown
                   error={false}
                   icon="users"
+                  initialValue={null}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -3341,7 +3348,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       additionPosition="top"
                       closeOnBlur={true}
                       deburr={false}
-                      defaultValue={null}
                       disabled={false}
                       icon={
                         <Icon
@@ -3393,6 +3399,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       selectOnNavigation={true}
                       selection={true}
                       upward={false}
+                      value={null}
                       wrapSelection={true}
                     >
                       <div
@@ -3752,6 +3759,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 <Dropdown
                   error={false}
                   icon="map pin"
+                  initialValue={null}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -3817,7 +3825,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       additionPosition="top"
                       closeOnBlur={true}
                       deburr={false}
-                      defaultValue={null}
                       disabled={false}
                       icon={
                         <Icon
@@ -3869,6 +3876,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       selectOnNavigation={true}
                       selection={true}
                       upward={false}
+                      value={null}
                       wrapSelection={true}
                     >
                       <div
@@ -4236,6 +4244,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 <Dropdown
                   error={false}
                   icon="users"
+                  initialValue={null}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -4301,7 +4310,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       additionPosition="top"
                       closeOnBlur={true}
                       deburr={false}
-                      defaultValue={null}
                       disabled={false}
                       icon={
                         <Icon
@@ -4353,6 +4361,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       selectOnNavigation={true}
                       selection={true}
                       upward={false}
+                      value={null}
                       wrapSelection={true}
                     >
                       <div

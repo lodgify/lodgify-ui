@@ -643,6 +643,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         <Dropdown
                           error={false}
                           icon={null}
+                          initialValue={null}
                           isDisabled={false}
                           isSearchable={false}
                           isValid={false}
@@ -681,7 +682,6 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               additionPosition="top"
                               closeOnBlur={true}
                               deburr={false}
-                              defaultValue={null}
                               disabled={false}
                               icon={
                                 <Icon
@@ -733,6 +733,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
+                              value={null}
                               wrapSelection={true}
                             >
                               <div
@@ -941,6 +942,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         <Dropdown
                           error={false}
                           icon={null}
+                          initialValue={null}
                           isDisabled={false}
                           isSearchable={false}
                           isValid={false}
@@ -975,7 +977,6 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               additionPosition="top"
                               closeOnBlur={true}
                               deburr={false}
-                              defaultValue={null}
                               disabled={false}
                               icon={
                                 <Icon
@@ -1023,6 +1024,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
+                              value={null}
                               wrapSelection={true}
                             >
                               <div
@@ -1862,6 +1864,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         <Dropdown
                           error={false}
                           icon={null}
+                          initialValue={null}
                           isDisabled={false}
                           isSearchable={false}
                           isValid={false}
@@ -1900,7 +1903,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               additionPosition="top"
                               closeOnBlur={true}
                               deburr={false}
-                              defaultValue={null}
                               disabled={false}
                               icon={
                                 <Icon
@@ -1952,6 +1954,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
+                              value={null}
                               wrapSelection={true}
                             >
                               <div
@@ -2820,6 +2823,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         <Dropdown
                           error={false}
                           icon={null}
+                          initialValue={null}
                           isDisabled={false}
                           isSearchable={false}
                           isValid={false}
@@ -2854,7 +2858,6 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               additionPosition="top"
                               closeOnBlur={true}
                               deburr={false}
-                              defaultValue={null}
                               disabled={false}
                               icon={
                                 <Icon
@@ -2902,6 +2905,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
+                              value={null}
                               wrapSelection={true}
                             >
                               <div

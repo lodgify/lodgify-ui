@@ -366,6 +366,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
             <Dropdown
               error={false}
               icon="map pin"
+              initialValue={null}
               isDisabled={false}
               isSearchable={false}
               isValid={false}

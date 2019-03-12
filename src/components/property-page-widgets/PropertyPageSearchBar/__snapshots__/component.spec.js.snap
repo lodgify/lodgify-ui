@@ -80,7 +80,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       >
         <SearchBar
           className={null}
+          datesInputInitialValue={null}
           getIsDayBlocked={[Function]}
+          guestsInputInitialValue={null}
           guestsOptions={
             Array [
               Object {
@@ -104,6 +106,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
           isDisplayedAsModal={false}
           isFixed={true}
           isShowingSummary={false}
+          locationInputInitialValue={null}
           locationOptions={null}
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
@@ -326,6 +329,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                 <WithResponsive(DateRangePicker)
                                                   endDatePlaceholderText="Check-out"
                                                   getIsDayBlocked={[Function]}
+                                                  initialValue={null}
                                                   name="dates"
                                                   onChange={[Function]}
                                                   startDatePlaceholderText="Check-in"
@@ -335,6 +339,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                     as={[Function]}
                                                     endDatePlaceholderText="Check-out"
                                                     getIsDayBlocked={[Function]}
+                                                    initialValue={null}
                                                     isUserOnMobile={false}
                                                     name="dates"
                                                     onChange={[Function]}
@@ -348,6 +353,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                       endDatePlaceholderText="Check-out"
                                                       error={false}
                                                       getIsDayBlocked={[Function]}
+                                                      initialValue={null}
                                                       isUserOnMobile={false}
                                                       isValid={false}
                                                       localeCode="en"
@@ -362,7 +368,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                         adaptOnChangeEvent={[Function]}
                                                         error={false}
                                                         icon={null}
-                                                        initialValue=""
+                                                        initialValue={null}
                                                         inputOnChangeFunctionName="onDatesChange"
                                                         isFocused={false}
                                                         isValid={false}
@@ -480,6 +486,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                 <Dropdown
                                                   error={false}
                                                   icon="users"
+                                                  initialValue={null}
                                                   isDisabled={false}
                                                   isSearchable={false}
                                                   isValid={false}
@@ -545,7 +552,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                       additionPosition="top"
                                                       closeOnBlur={true}
                                                       deburr={false}
-                                                      defaultValue={null}
                                                       disabled={false}
                                                       icon={
                                                         <Icon
@@ -597,6 +603,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                       selectOnNavigation={true}
                                                       selection={true}
                                                       upward={true}
+                                                      value={null}
                                                       wrapSelection={true}
                                                     >
                                                       <div
@@ -870,7 +877,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       >
         <SearchBar
           className={null}
+          datesInputInitialValue={null}
           getIsDayBlocked={[Function]}
+          guestsInputInitialValue={null}
           guestsOptions={
             Array [
               Object {
@@ -894,6 +903,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
           isDisplayedAsModal={true}
           isFixed={true}
           isShowingSummary={false}
+          locationInputInitialValue={null}
           locationOptions={null}
           modalHeadingText="Check our availability"
           modalSummaryElement={
@@ -1289,7 +1299,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       >
         <SearchBar
           className={null}
+          datesInputInitialValue={null}
           getIsDayBlocked={[Function]}
+          guestsInputInitialValue={null}
           guestsOptions={
             Array [
               Object {
@@ -1313,6 +1325,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
           isDisplayedAsModal={false}
           isFixed={true}
           isShowingSummary={false}
+          locationInputInitialValue={null}
           locationOptions={null}
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
@@ -1693,6 +1706,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                 <WithResponsive(DateRangePicker)
                                                   endDatePlaceholderText="Check-out"
                                                   getIsDayBlocked={[Function]}
+                                                  initialValue={null}
                                                   name="dates"
                                                   onChange={[Function]}
                                                   startDatePlaceholderText="Check-in"
@@ -1702,6 +1716,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     as={[Function]}
                                                     endDatePlaceholderText="Check-out"
                                                     getIsDayBlocked={[Function]}
+                                                    initialValue={null}
                                                     isUserOnMobile={false}
                                                     name="dates"
                                                     onChange={[Function]}
@@ -1715,6 +1730,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                       endDatePlaceholderText="Check-out"
                                                       error={false}
                                                       getIsDayBlocked={[Function]}
+                                                      initialValue={null}
                                                       isUserOnMobile={false}
                                                       isValid={false}
                                                       localeCode="en"
@@ -1729,7 +1745,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                         adaptOnChangeEvent={[Function]}
                                                         error={false}
                                                         icon={null}
-                                                        initialValue=""
+                                                        initialValue={null}
                                                         inputOnChangeFunctionName="onDatesChange"
                                                         isFocused={false}
                                                         isValid={false}
@@ -1847,6 +1863,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                 <Dropdown
                                                   error={false}
                                                   icon="users"
+                                                  initialValue={null}
                                                   isDisabled={false}
                                                   isSearchable={false}
                                                   isValid={false}
@@ -1912,7 +1929,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                       additionPosition="top"
                                                       closeOnBlur={true}
                                                       deburr={false}
-                                                      defaultValue={null}
                                                       disabled={false}
                                                       icon={
                                                         <Icon
@@ -1964,6 +1980,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                       selectOnNavigation={true}
                                                       selection={true}
                                                       upward={true}
+                                                      value={null}
                                                       wrapSelection={true}
                                                     >
                                                       <div
@@ -2237,7 +2254,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       >
         <SearchBar
           className={null}
+          datesInputInitialValue={null}
           getIsDayBlocked={[Function]}
+          guestsInputInitialValue={null}
           guestsOptions={
             Array [
               Object {
@@ -2261,6 +2280,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
           isDisplayedAsModal={true}
           isFixed={true}
           isShowingSummary={false}
+          locationInputInitialValue={null}
           locationOptions={null}
           modalHeadingText="Check our availability"
           modalSummaryElement={

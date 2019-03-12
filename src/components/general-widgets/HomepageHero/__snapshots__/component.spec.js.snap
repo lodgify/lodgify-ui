@@ -446,7 +446,9 @@ exports[`HomepageHero should render the right structure 1`] = `
                                 >
                                   <SearchBar
                                     className="show-on-tablet show-on-computer show-on-widescreen"
+                                    datesInputInitialValue={null}
                                     getIsDayBlocked={[Function]}
+                                    guestsInputInitialValue={null}
                                     guestsOptions={
                                       Array [
                                         Object {
@@ -458,6 +460,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     isDisplayedAsModal={false}
                                     isFixed={false}
                                     isShowingSummary={false}
+                                    locationInputInitialValue={null}
                                     locationOptions={
                                       Array [
                                         Object {
@@ -503,6 +506,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   <Dropdown
                                                     error={false}
                                                     icon="map pin"
+                                                    initialValue={null}
                                                     isDisabled={false}
                                                     isSearchable={false}
                                                     isValid={false}
@@ -556,7 +560,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         additionPosition="top"
                                                         closeOnBlur={true}
                                                         deburr={false}
-                                                        defaultValue={null}
                                                         disabled={false}
                                                         icon={
                                                           <Icon
@@ -596,6 +599,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         selectOnNavigation={true}
                                                         selection={true}
                                                         upward={true}
+                                                        value={null}
                                                         wrapSelection={true}
                                                       >
                                                         <div
@@ -705,6 +709,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   <WithResponsive(DateRangePicker)
                                                     endDatePlaceholderText="Check-out"
                                                     getIsDayBlocked={[Function]}
+                                                    initialValue={null}
                                                     name="dates"
                                                     onChange={[Function]}
                                                     startDatePlaceholderText="Check-in"
@@ -714,6 +719,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       as={[Function]}
                                                       endDatePlaceholderText="Check-out"
                                                       getIsDayBlocked={[Function]}
+                                                      initialValue={null}
                                                       isUserOnMobile={false}
                                                       name="dates"
                                                       onChange={[Function]}
@@ -727,6 +733,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         endDatePlaceholderText="Check-out"
                                                         error={false}
                                                         getIsDayBlocked={[Function]}
+                                                        initialValue={null}
                                                         isUserOnMobile={false}
                                                         isValid={false}
                                                         localeCode="en"
@@ -741,7 +748,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           adaptOnChangeEvent={[Function]}
                                                           error={false}
                                                           icon={null}
-                                                          initialValue=""
+                                                          initialValue={null}
                                                           inputOnChangeFunctionName="onDatesChange"
                                                           isFocused={false}
                                                           isValid={false}
@@ -859,6 +866,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   <Dropdown
                                                     error={false}
                                                     icon="users"
+                                                    initialValue={null}
                                                     isDisabled={false}
                                                     isSearchable={false}
                                                     isValid={false}
@@ -912,7 +920,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         additionPosition="top"
                                                         closeOnBlur={true}
                                                         deburr={false}
-                                                        defaultValue={null}
                                                         disabled={false}
                                                         icon={
                                                           <Icon
@@ -952,6 +959,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         selectOnNavigation={true}
                                                         selection={true}
                                                         upward={true}
+                                                        value={null}
                                                         wrapSelection={true}
                                                       >
                                                         <div
@@ -1083,7 +1091,9 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   >
                                     <SearchBar
                                       className={null}
+                                      datesInputInitialValue={null}
                                       getIsDayBlocked={[Function]}
+                                      guestsInputInitialValue={null}
                                       guestsOptions={
                                         Array [
                                           Object {
@@ -1095,6 +1105,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                       isDisplayedAsModal={true}
                                       isFixed={false}
                                       isShowingSummary={false}
+                                      locationInputInitialValue={null}
                                       locationOptions={
                                         Array [
                                           Object {
