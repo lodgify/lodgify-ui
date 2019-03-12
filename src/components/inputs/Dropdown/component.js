@@ -13,7 +13,6 @@ import { ErrorMessage } from '../ErrorMessage';
 
 import { getIsOpenAfterChange } from './utils/getIsOpenAfterChange';
 import { adaptOptions } from './utils/adaptOptions';
-import { getDefaultValue } from './utils/getDefaultValue';
 import { getHasImages } from './utils/getHasImages';
 import { isValueValid } from './utils/isValueValid';
 
@@ -89,12 +88,6 @@ export class Component extends PureComponent {
         {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
         {!hasImages && icon && <Icon name={icon} />}
         <Dropdown
-          defaultValue={getDefaultValue(
-            adaptedOptions,
-            hasImages,
-            !!label,
-            value
-          )}
           disabled={isDisabled || !adaptedOptions.length}
           icon={<Icon name={ICON_NAMES.CARET_DOWN} />}
           noResultsMessage={noResultsText}
@@ -133,7 +126,7 @@ Component.defaultProps = {
   options: [],
   value: undefined,
   willOpenAbove: false,
-  initialValue: undefined,
+  initialValue: null,
 };
 
 Component.propTypes = {
