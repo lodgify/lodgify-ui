@@ -4,7 +4,9 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesInputInitialValue={null}
   getIsDayBlocked={[Function]}
+  guestsInputInitialValue={null}
   guestsOptions={
     Array [
       Object {
@@ -28,6 +30,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
   isDisplayedAsModal={false}
   isFixed={false}
   isShowingSummary={false}
+  locationInputInitialValue={null}
   locationOptions={
     Array [
       Object {
@@ -421,6 +424,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 <WithResponsive(DateRangePicker)
                   endDatePlaceholderText="Check-out"
                   getIsDayBlocked={[Function]}
+                  initialValue={null}
                   localeCode="ko"
                   name="dates"
                   onChange={[Function]}
@@ -431,6 +435,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     as={[Function]}
                     endDatePlaceholderText="Check-out"
                     getIsDayBlocked={[Function]}
+                    initialValue={null}
                     isUserOnMobile={false}
                     localeCode="ko"
                     name="dates"
@@ -445,6 +450,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       endDatePlaceholderText="Check-out"
                       error={false}
                       getIsDayBlocked={[Function]}
+                      initialValue={null}
                       isUserOnMobile={false}
                       isValid={false}
                       localeCode="ko"
@@ -459,7 +465,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
+                        initialValue={null}
                         inputOnChangeFunctionName="onDatesChange"
                         isFocused={false}
                         isValid={false}
@@ -975,7 +981,9 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesInputInitialValue={null}
   getIsDayBlocked={[Function]}
+  guestsInputInitialValue={null}
   guestsOptions={
     Array [
       Object {
@@ -999,6 +1007,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
   isDisplayedAsModal={false}
   isFixed={true}
   isShowingSummary={false}
+  locationInputInitialValue={null}
   locationOptions={
     Array [
       Object {
@@ -1445,6 +1454,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                         <WithResponsive(DateRangePicker)
                                           endDatePlaceholderText="Check-out"
                                           getIsDayBlocked={[Function]}
+                                          initialValue={null}
                                           localeCode="ko"
                                           name="dates"
                                           onChange={[Function]}
@@ -1455,6 +1465,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                             as={[Function]}
                                             endDatePlaceholderText="Check-out"
                                             getIsDayBlocked={[Function]}
+                                            initialValue={null}
                                             isUserOnMobile={false}
                                             localeCode="ko"
                                             name="dates"
@@ -1469,6 +1480,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                               endDatePlaceholderText="Check-out"
                                               error={false}
                                               getIsDayBlocked={[Function]}
+                                              initialValue={null}
                                               isUserOnMobile={false}
                                               isValid={false}
                                               localeCode="ko"
@@ -1483,7 +1495,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 adaptOnChangeEvent={[Function]}
                                                 error={false}
                                                 icon={null}
-                                                initialValue=""
+                                                initialValue={null}
                                                 inputOnChangeFunctionName="onDatesChange"
                                                 isFocused={false}
                                                 isValid={false}
@@ -2009,7 +2021,9 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesInputInitialValue={null}
   getIsDayBlocked={[Function]}
+  guestsInputInitialValue={null}
   guestsOptions={
     Array [
       Object {
@@ -2033,6 +2047,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
   isDisplayedAsModal={false}
   isFixed={false}
   isShowingSummary={true}
+  locationInputInitialValue={null}
   locationOptions={
     Array [
       Object {
@@ -2471,6 +2486,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 <WithResponsive(DateRangePicker)
                   endDatePlaceholderText="Check-out"
                   getIsDayBlocked={[Function]}
+                  initialValue={null}
                   localeCode="ko"
                   name="dates"
                   onChange={[Function]}
@@ -2481,6 +2497,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     as={[Function]}
                     endDatePlaceholderText="Check-out"
                     getIsDayBlocked={[Function]}
+                    initialValue={null}
                     isUserOnMobile={false}
                     localeCode="ko"
                     name="dates"
@@ -2495,6 +2512,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       endDatePlaceholderText="Check-out"
                       error={false}
                       getIsDayBlocked={[Function]}
+                      initialValue={null}
                       isUserOnMobile={false}
                       isValid={false}
                       localeCode="ko"
@@ -2509,7 +2527,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
+                        initialValue={null}
                         inputOnChangeFunctionName="onDatesChange"
                         isFocused={false}
                         isValid={false}
@@ -3023,7 +3041,9 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesInputInitialValue={null}
   getIsDayBlocked={[Function]}
+  guestsInputInitialValue={null}
   guestsOptions={
     Array [
       Object {
@@ -3047,6 +3067,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
   isDisplayedAsModal={false}
   isFixed={false}
   isShowingSummary={false}
+  locationInputInitialValue={null}
   locationOptions={null}
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
@@ -3096,6 +3117,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 <WithResponsive(DateRangePicker)
                   endDatePlaceholderText="Check-out"
                   getIsDayBlocked={[Function]}
+                  initialValue={null}
                   localeCode="ko"
                   name="dates"
                   onChange={[Function]}
@@ -3106,6 +3128,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     as={[Function]}
                     endDatePlaceholderText="Check-out"
                     getIsDayBlocked={[Function]}
+                    initialValue={null}
                     isUserOnMobile={false}
                     localeCode="ko"
                     name="dates"
@@ -3120,6 +3143,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       endDatePlaceholderText="Check-out"
                       error={false}
                       getIsDayBlocked={[Function]}
+                      initialValue={null}
                       isUserOnMobile={false}
                       isValid={false}
                       localeCode="ko"
@@ -3134,7 +3158,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
+                        initialValue={null}
                         inputOnChangeFunctionName="onDatesChange"
                         isFocused={false}
                         isValid={false}
@@ -3648,7 +3672,9 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesInputInitialValue={null}
   getIsDayBlocked={[Function]}
+  guestsInputInitialValue={null}
   guestsOptions={
     Array [
       Object {
@@ -3672,6 +3698,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
   isDisplayedAsModal={false}
   isFixed={false}
   isShowingSummary={false}
+  locationInputInitialValue={null}
   locationOptions={
     Array [
       Object {
@@ -4050,6 +4077,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 <WithResponsive(DateRangePicker)
                   endDatePlaceholderText="Check-out"
                   getIsDayBlocked={[Function]}
+                  initialValue={null}
                   localeCode="ko"
                   name="dates"
                   onChange={[Function]}
@@ -4060,6 +4088,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     as={[Function]}
                     endDatePlaceholderText="Check-out"
                     getIsDayBlocked={[Function]}
+                    initialValue={null}
                     isUserOnMobile={false}
                     localeCode="ko"
                     name="dates"
@@ -4074,6 +4103,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       endDatePlaceholderText="Check-out"
                       error={false}
                       getIsDayBlocked={[Function]}
+                      initialValue={null}
                       isUserOnMobile={false}
                       isValid={false}
                       localeCode="ko"
@@ -4088,7 +4118,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
+                        initialValue={null}
                         inputOnChangeFunctionName="onDatesChange"
                         isFocused={false}
                         isValid={false}
