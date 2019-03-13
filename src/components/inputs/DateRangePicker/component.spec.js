@@ -154,8 +154,8 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('if there is a no blur event', () => {
-      it('should note call `props.onBlur`', () => {
+    describe('if there is no blur event', () => {
+      it('should not call `props.onBlur`', () => {
         const onBlur = jest.fn();
         const dateRangePicker = getWrappedDateRangePicker({ onBlur });
 
@@ -166,6 +166,57 @@ describe('<DateRangePicker />', () => {
         dateRangePicker.setState(state);
 
         expect(onBlur).not.toHaveBeenCalled();
+      });
+    });
+
+    describe('if the focused input has changed', () => {
+      it('should call `props.onFocusChange` with the right arguments', () => {
+        const onFocusChange = jest.fn();
+        const dateRangePicker = getWrappedDateRangePicker({ onFocusChange });
+
+        const testCases = [
+          { previousFocusedInput: null, focusedInput: 'startDate' },
+          { previousFocusedInput: null, focusedInput: 'endDate' },
+          { previousFocusedInput: 'startDate', focusedInput: null },
+          { previousFocusedInput: 'startDate', focusedInput: 'endDate' },
+          { previousFocusedInput: 'endDate', focusedInput: null },
+          { previousFocusedInput: 'endDate', focusedInput: 'startDate' },
+        ];
+
+        testCases.forEach(({ previousFocusedInput, focusedInput }) => {
+          const prevState = { focusedInput: previousFocusedInput };
+          const state = { focusedInput };
+
+          dateRangePicker.setState(prevState);
+          onFocusChange.mockClear();
+          dateRangePicker.setState(state);
+
+          expect(onFocusChange).toHaveBeenCalledWith(focusedInput);
+        });
+      });
+    });
+
+    describe('if the focused input has not changed', () => {
+      it('should not call `props.onFocusChange`', () => {
+        const onFocusChange = jest.fn();
+        const dateRangePicker = getWrappedDateRangePicker({ onFocusChange });
+
+        const testCases = [
+          { previousFocusedInput: null, focusedInput: null },
+          { previousFocusedInput: 'startDate', focusedInput: 'startDate' },
+          { previousFocusedInput: 'endDate', focusedInput: 'endDate' },
+        ];
+
+        testCases.forEach(({ previousFocusedInput, focusedInput }) => {
+          const prevState = { focusedInput: previousFocusedInput };
+          const state = { focusedInput };
+
+          dateRangePicker.setState(prevState);
+          onFocusChange.mockClear();
+          dateRangePicker.setState(state);
+
+          expect(onFocusChange).not.toHaveBeenCalled();
+        });
       });
     });
   });

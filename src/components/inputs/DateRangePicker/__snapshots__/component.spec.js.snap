@@ -19,6 +19,7 @@ exports[`<DateRangePicker /> should render the right structure 1`] = `
       name=""
       onBlur={[Function]}
       onChange={[Function]}
+      onFocusChange={[Function]}
       startDatePlaceholderText=""
       willOpenAbove={false}
       windowInnerWidth={1024}
