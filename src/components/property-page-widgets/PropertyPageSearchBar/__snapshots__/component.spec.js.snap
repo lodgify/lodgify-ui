@@ -2,6 +2,7 @@
 
 exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should have the right structure 1`] = `
 <PropertyPageSearchBar
+  datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
   guestsOptions={
     Array [
@@ -81,6 +82,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
         <SearchBar
           className={null}
           datesInputInitialValue={null}
+          datesInputOnFocusChange={[Function]}
           getIsDayBlocked={[Function]}
           guestsInputInitialValue={null}
           guestsOptions={
@@ -332,6 +334,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                   initialValue={null}
                                                   name="dates"
                                                   onChange={[Function]}
+                                                  onFocusChange={[Function]}
                                                   startDatePlaceholderText="Check-in"
                                                   willOpenAbove={true}
                                                 >
@@ -343,6 +346,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                     isUserOnMobile={false}
                                                     name="dates"
                                                     onChange={[Function]}
+                                                    onFocusChange={[Function]}
                                                     onUpdate={[Function]}
                                                     startDatePlaceholderText="Check-in"
                                                     willOpenAbove={true}
@@ -360,6 +364,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                       name="dates"
                                                       onBlur={[Function]}
                                                       onChange={[Function]}
+                                                      onFocusChange={[Function]}
                                                       startDatePlaceholderText="Check-in"
                                                       willOpenAbove={true}
                                                       windowInnerWidth={1024}
@@ -878,6 +883,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
         <SearchBar
           className={null}
           datesInputInitialValue={null}
+          datesInputOnFocusChange={[Function]}
           getIsDayBlocked={[Function]}
           guestsInputInitialValue={null}
           guestsOptions={
@@ -1221,6 +1227,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
 
 exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
 <PropertyPageSearchBar
+  datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
   guestsOptions={
     Array [
@@ -1300,6 +1307,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
         <SearchBar
           className={null}
           datesInputInitialValue={null}
+          datesInputOnFocusChange={[Function]}
           getIsDayBlocked={[Function]}
           guestsInputInitialValue={null}
           guestsOptions={
@@ -1709,6 +1717,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   initialValue={null}
                                                   name="dates"
                                                   onChange={[Function]}
+                                                  onFocusChange={[Function]}
                                                   startDatePlaceholderText="Check-in"
                                                   willOpenAbove={true}
                                                 >
@@ -1720,6 +1729,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     isUserOnMobile={false}
                                                     name="dates"
                                                     onChange={[Function]}
+                                                    onFocusChange={[Function]}
                                                     onUpdate={[Function]}
                                                     startDatePlaceholderText="Check-in"
                                                     willOpenAbove={true}
@@ -1737,6 +1747,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                       name="dates"
                                                       onBlur={[Function]}
                                                       onChange={[Function]}
+                                                      onFocusChange={[Function]}
                                                       startDatePlaceholderText="Check-in"
                                                       willOpenAbove={true}
                                                       windowInnerWidth={1024}
@@ -2255,6 +2266,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
         <SearchBar
           className={null}
           datesInputInitialValue={null}
+          datesInputOnFocusChange={[Function]}
           getIsDayBlocked={[Function]}
           guestsInputInitialValue={null}
           guestsOptions={
