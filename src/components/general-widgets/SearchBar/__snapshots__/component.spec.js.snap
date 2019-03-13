@@ -5,6 +5,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
   className={null}
   dateRangePickerLocaleCode="ko"
   datesInputInitialValue={null}
+  datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
   guestsInputInitialValue={null}
   guestsOptions={
@@ -429,6 +430,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   localeCode="ko"
                   name="dates"
                   onChange={[Function]}
+                  onFocusChange={[Function]}
                   startDatePlaceholderText="Check-in"
                   willOpenAbove={false}
                 >
@@ -441,6 +443,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     localeCode="ko"
                     name="dates"
                     onChange={[Function]}
+                    onFocusChange={[Function]}
                     onUpdate={[Function]}
                     startDatePlaceholderText="Check-in"
                     willOpenAbove={false}
@@ -458,6 +461,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       name="dates"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocusChange={[Function]}
                       startDatePlaceholderText="Check-in"
                       willOpenAbove={false}
                       windowInnerWidth={1024}
@@ -984,6 +988,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
   className={null}
   dateRangePickerLocaleCode="ko"
   datesInputInitialValue={null}
+  datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
   guestsInputInitialValue={null}
   guestsOptions={
@@ -1461,6 +1466,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                           localeCode="ko"
                                           name="dates"
                                           onChange={[Function]}
+                                          onFocusChange={[Function]}
                                           startDatePlaceholderText="Check-in"
                                           willOpenAbove={true}
                                         >
@@ -1473,6 +1479,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                             localeCode="ko"
                                             name="dates"
                                             onChange={[Function]}
+                                            onFocusChange={[Function]}
                                             onUpdate={[Function]}
                                             startDatePlaceholderText="Check-in"
                                             willOpenAbove={true}
@@ -1490,6 +1497,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                               name="dates"
                                               onBlur={[Function]}
                                               onChange={[Function]}
+                                              onFocusChange={[Function]}
                                               startDatePlaceholderText="Check-in"
                                               willOpenAbove={true}
                                               windowInnerWidth={1024}
@@ -2026,6 +2034,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
   className={null}
   dateRangePickerLocaleCode="ko"
   datesInputInitialValue={null}
+  datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
   guestsInputInitialValue={null}
   guestsOptions={
@@ -2495,6 +2504,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   localeCode="ko"
                   name="dates"
                   onChange={[Function]}
+                  onFocusChange={[Function]}
                   startDatePlaceholderText="Check-in"
                   willOpenAbove={false}
                 >
@@ -2507,6 +2517,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     localeCode="ko"
                     name="dates"
                     onChange={[Function]}
+                    onFocusChange={[Function]}
                     onUpdate={[Function]}
                     startDatePlaceholderText="Check-in"
                     willOpenAbove={false}
@@ -2524,6 +2535,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       name="dates"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocusChange={[Function]}
                       startDatePlaceholderText="Check-in"
                       willOpenAbove={false}
                       windowInnerWidth={1024}
@@ -3048,6 +3060,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
   className={null}
   dateRangePickerLocaleCode="ko"
   datesInputInitialValue={null}
+  datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
   guestsInputInitialValue={null}
   guestsOptions={
@@ -3127,6 +3140,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   localeCode="ko"
                   name="dates"
                   onChange={[Function]}
+                  onFocusChange={[Function]}
                   startDatePlaceholderText="Check-in"
                   willOpenAbove={false}
                 >
@@ -3139,6 +3153,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     localeCode="ko"
                     name="dates"
                     onChange={[Function]}
+                    onFocusChange={[Function]}
                     onUpdate={[Function]}
                     startDatePlaceholderText="Check-in"
                     willOpenAbove={false}
@@ -3156,6 +3171,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       name="dates"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocusChange={[Function]}
                       startDatePlaceholderText="Check-in"
                       willOpenAbove={false}
                       windowInnerWidth={1024}
@@ -3680,6 +3696,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
   className={null}
   dateRangePickerLocaleCode="ko"
   datesInputInitialValue={null}
+  datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
   guestsInputInitialValue={null}
   guestsOptions={
@@ -4089,6 +4106,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   localeCode="ko"
                   name="dates"
                   onChange={[Function]}
+                  onFocusChange={[Function]}
                   startDatePlaceholderText="Check-in"
                   willOpenAbove={false}
                 >
@@ -4101,6 +4119,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     localeCode="ko"
                     name="dates"
                     onChange={[Function]}
+                    onFocusChange={[Function]}
                     onUpdate={[Function]}
                     startDatePlaceholderText="Check-in"
                     willOpenAbove={false}
@@ -4118,6 +4137,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       name="dates"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onFocusChange={[Function]}
                       startDatePlaceholderText="Check-in"
                       willOpenAbove={false}
                       windowInnerWidth={1024}

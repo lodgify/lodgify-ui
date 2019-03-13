@@ -10,33 +10,35 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
 /**
  * @param  {Object}   props
  * @param  {string}   props.dateRangePickerLocaleCode
- * @param  {boolean}  props.isShowingSummary
+ * @param  {Object}   props.datesInputInitialValue
+ * @param  {Function} props.datesInputOnFocusChange
  * @param  {Function} props.getIsDayBlocked
- * @param  {Object[]} props.locationOptions
  * @param  {Object[]} props.guestsOptions
+ * @param  {string}   props.guestsInputInitialValue
+ * @param  {boolean}  props.isShowingSummary
+ * @param  {string}   props.locationInputInitialValue
+ * @param  {Object[]} props.locationOptions
  * @param  {Node}     props.searchButton
- * @param  {Function} onDatePickerChange
+ * @param  {Function} persistInputChange
  * @param  {boolean}  areColumnsStacked
- * @param  {Object}   datesInputInitialValue
- * @param  {string}   guestsInputInitialValue
- * @param  {string}   locationInputInitialValue
  * @param  {boolean}  willDropdownsOpenAbove
  * @return {Object}
  */
 export const getFormFieldMarkup = (
   {
     dateRangePickerLocaleCode,
-    isShowingSummary,
+    datesInputInitialValue,
+    datesInputOnFocusChange,
     getIsDayBlocked,
-    locationOptions,
+    guestsInputInitialValue,
     guestsOptions,
+    isShowingSummary,
+    locationInputInitialValue,
+    locationOptions,
     searchButton,
   },
-  onDatePickerChange,
+  persistInputChange,
   areColumnsStacked,
-  datesInputInitialValue,
-  guestsInputInitialValue,
-  locationInputInitialValue,
   willDropdownsOpenAbove
 ) => {
   const defaultColumnWidth = areColumnsStacked ? 'twelve' : 'three';
@@ -61,7 +63,7 @@ export const getFormFieldMarkup = (
             initialValue={locationInputInitialValue}
             label="Location"
             name="location"
-            onChange={onDatePickerChange}
+            onChange={persistInputChange}
             options={locationOptions}
             willOpenAbove={willDropdownsOpenAbove}
           />
@@ -74,7 +76,8 @@ export const getFormFieldMarkup = (
           initialValue={datesInputInitialValue}
           localeCode={dateRangePickerLocaleCode}
           name="dates"
-          onChange={onDatePickerChange}
+          onChange={persistInputChange}
+          onFocusChange={datesInputOnFocusChange}
           startDatePlaceholderText="Check-in"
           willOpenAbove={willDropdownsOpenAbove}
         />
@@ -85,7 +88,7 @@ export const getFormFieldMarkup = (
           initialValue={guestsInputInitialValue}
           label="Guests"
           name="guests"
-          onChange={onDatePickerChange}
+          onChange={persistInputChange}
           options={guestsOptions}
           willOpenAbove={willDropdownsOpenAbove}
         />
