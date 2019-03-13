@@ -452,6 +452,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           name="dates"
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocusChange={[Function]}
                           startDatePlaceholderText="Arrival"
                           willOpenAbove={false}
                           windowInnerWidth={1024}
@@ -1673,6 +1674,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           name="dates"
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocusChange={[Function]}
                           startDatePlaceholderText="Arrival"
                           willOpenAbove={false}
                           windowInnerWidth={1024}
@@ -2632,6 +2634,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           name="dates"
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocusChange={[Function]}
                           startDatePlaceholderText="Arrival"
                           willOpenAbove={false}
                           windowInnerWidth={1024}
@@ -3535,6 +3538,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           name="dates"
                           onBlur={[Function]}
                           onChange={[Function]}
+                          onFocusChange={[Function]}
                           startDatePlaceholderText="Arrival"
                           willOpenAbove={false}
                           windowInnerWidth={1024}
