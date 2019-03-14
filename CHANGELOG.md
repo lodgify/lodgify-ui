@@ -1,3 +1,13 @@
+# [1.157.0](https://github.com/lodgify/lodgify-ui/compare/v1.156.5...v1.157.0) (2019-03-14)
+
+
+### Features
+
+* **DateRangePicker:** expose props.onFocusChange ([a5c6264](https://github.com/lodgify/lodgify-ui/commit/a5c6264))
+* **HomepageHero:** consume SearchBar.props.datesInputOnFocusChange and reexpose ([bad5bbe](https://github.com/lodgify/lodgify-ui/commit/bad5bbe))
+* **PropertyPageSearchBar:** consume SearchBar.props.datesInputOnFocusChange and reexpose ([f5d841d](https://github.com/lodgify/lodgify-ui/commit/f5d841d))
+* **SearchBar:** consume DateRangePicker.props.onFocusChange and reexpose ([62eed6d](https://github.com/lodgify/lodgify-ui/commit/62eed6d))
+
 ## [1.156.5](https://github.com/lodgify/lodgify-ui/compare/v1.156.4...v1.156.5) (2019-03-12)
 
 
