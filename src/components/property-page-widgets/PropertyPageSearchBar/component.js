@@ -16,6 +16,7 @@ import { getSummaryMarkup } from './utils/getSummaryMarkup';
 export const Component = ({
   dateRangePickerLocaleCode,
   datesInputInitialValue,
+  datesInputOnFocusChange,
   getIsDayBlocked,
   guestsInputInitialValue,
   guestsOptions,
@@ -28,6 +29,24 @@ export const Component = ({
   summaryPropertyName,
   summaryRatingNumber,
 }) => {
+  const sharedProps = {
+    dateRangePickerLocaleCode,
+    datesInputInitialValue,
+    datesInputOnFocusChange,
+    getIsDayBlocked,
+    guestsInputInitialValue,
+    guestsOptions,
+    dateRangePickerLocaleCode,
+    datesInputInitialValue,
+    datesInputOnFocusChange,
+    getIsDayBlocked,
+    guestsInputInitialValue,
+    guestsOptions,
+    isFixed: true,
+    onChangeInput,
+    onSubmit,
+    searchButton,
+  };
   const summaryProps = {
     locationName: summaryLocationName,
     nightPrice: summaryNightPrice,
@@ -40,15 +59,7 @@ export const Component = ({
     <div className="property-page-searchbar">
       <ShowOn computer widescreen>
         <SearchBar
-          dateRangePickerLocaleCode={dateRangePickerLocaleCode}
-          datesInputInitialValue={datesInputInitialValue}
-          getIsDayBlocked={getIsDayBlocked}
-          guestsInputInitialValue={guestsInputInitialValue}
-          guestsOptions={guestsOptions}
-          isFixed
-          onChangeInput={onChangeInput}
-          onSubmit={onSubmit}
-          searchButton={searchButton}
+          {...sharedProps}
           summaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: false,
             ...summaryProps,
@@ -57,20 +68,12 @@ export const Component = ({
       </ShowOn>
       <ShowOn mobile tablet>
         <SearchBar
-          dateRangePickerLocaleCode={dateRangePickerLocaleCode}
-          datesInputInitialValue={datesInputInitialValue}
-          getIsDayBlocked={getIsDayBlocked}
-          guestsInputInitialValue={guestsInputInitialValue}
-          guestsOptions={guestsOptions}
+          {...sharedProps}
           isDisplayedAsModal
-          isFixed
           modalSummaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: false,
             ...summaryProps,
           })}
-          onChangeInput={onChangeInput}
-          onSubmit={onSubmit}
-          searchButton={searchButton}
           summaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: true,
             ...summaryProps,
@@ -85,6 +88,7 @@ Component.displayName = 'PropertyPageSearchBar';
 
 Component.defaultProps = {
   datesInputInitialValue: undefined,
+  datesInputOnFocusChange: Function.prototype,
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: undefined,
   guestsInputInitialValue: undefined,
@@ -109,6 +113,11 @@ Component.propTypes = {
     endDate: PropTypes.object,
     startDate: PropTypes.object,
   }),
+  /**
+   * A function called when the focus state of the dates input changes.
+   * @param {String} inputName
+   */
+  datesInputOnFocusChange: PropTypes.func,
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.

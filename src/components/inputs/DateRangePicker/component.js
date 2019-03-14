@@ -38,9 +38,10 @@ class Component extends PureComponent {
   componentDidUpdate = (prevProps, prevState) => {
     const { focusedInput: prevFocusedInput } = prevState;
     const { focusedInput } = this.state;
-    const { onBlur } = this.props;
+    const { onBlur, onFocusChange } = this.props;
 
     isBlurEvent(prevFocusedInput, focusedInput) && onBlur();
+    prevFocusedInput !== focusedInput && onFocusChange(focusedInput);
   };
 
   handleFocusChange = focusedInput => {
@@ -132,6 +133,7 @@ Component.defaultProps = {
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
+  onFocusChange: Function.prototype,
   startDatePlaceholderText: '',
   value: undefined,
   willOpenAbove: false,
@@ -175,6 +177,11 @@ Component.propTypes = {
    * @param {Moment} value.startDate
    */
   onChange: PropTypes.func,
+  /**
+   * A function called when the focus state of the date range picker changes.
+   * @param {String} inputName
+   */
+  onFocusChange: PropTypes.func,
   /** The visible placeholder text for the start date input. */
   startDatePlaceholderText: PropTypes.string,
   /** The current value of the input where it is consumed as a controlled component. */

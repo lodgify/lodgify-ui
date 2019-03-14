@@ -41,11 +41,8 @@ export class Component extends PureComponent {
   render = () => {
     const {
       className,
-      datesInputInitialValue,
-      guestsInputInitialValue,
       isDisplayedAsModal,
       isFixed,
-      locationInputInitialValue,
       summaryElement,
       willDropdownsOpenAbove,
     } = this.props;
@@ -71,9 +68,6 @@ export class Component extends PureComponent {
                           this.props,
                           this.persistInputChange,
                           false,
-                          datesInputInitialValue,
-                          guestsInputInitialValue,
-                          locationInputInitialValue,
                           true
                         )}
                       </Form.Group>
@@ -99,9 +93,6 @@ export class Component extends PureComponent {
               this.props,
               this.persistInputChange,
               false,
-              datesInputInitialValue,
-              guestsInputInitialValue,
-              locationInputInitialValue,
               willDropdownsOpenAbove
             )}
           </Form.Group>
@@ -116,6 +107,7 @@ Component.displayName = 'SearchBar';
 Component.defaultProps = {
   className: null,
   datesInputInitialValue: null,
+  datesInputOnFocusChange: Function.prototype,
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: Function.prototype,
   guestsInputInitialValue: null,
@@ -154,6 +146,12 @@ Component.propTypes = {
     endDate: PropTypes.object,
     startDate: PropTypes.object,
   }),
+  /**
+   * A function called when the focus state of the dates input changes.
+   * @param {String} inputName
+   */
+  // eslint-disable-next-line react/no-unused-prop-types
+  datesInputOnFocusChange: PropTypes.func,
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.

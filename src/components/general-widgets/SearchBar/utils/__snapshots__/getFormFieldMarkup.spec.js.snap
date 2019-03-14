@@ -42,7 +42,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
           },
         ]
       }
-      willOpenAbove={false}
+      willOpenAbove={true}
     />
   </FormField>
   <FormField
@@ -51,10 +51,10 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
     <WithResponsive(DateRangePicker)
       endDatePlaceholderText="Check-out"
       getIsDayBlocked={[Function]}
-      initialValue={true}
       name="dates"
       onChange={[Function]}
       startDatePlaceholderText="Check-in"
+      willOpenAbove={true}
     />
   </FormField>
   <FormField
@@ -73,7 +73,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
       onBlur={[Function]}
       onChange={[Function]}
       options={Array []}
-      willOpenAbove={false}
+      willOpenAbove={true}
     />
   </FormField>
   <FormField
@@ -110,10 +110,10 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
     <WithResponsive(DateRangePicker)
       endDatePlaceholderText="Check-out"
       getIsDayBlocked={[Function]}
-      initialValue={true}
       name="dates"
       onChange={[Function]}
       startDatePlaceholderText="Check-in"
+      willOpenAbove={true}
     />
   </FormField>
   <FormField
@@ -132,7 +132,7 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       options={Array []}
-      willOpenAbove={false}
+      willOpenAbove={true}
     />
   </FormField>
   <FormField

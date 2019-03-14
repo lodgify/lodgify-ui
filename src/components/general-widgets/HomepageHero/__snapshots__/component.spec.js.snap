@@ -26,6 +26,7 @@ exports[`HomepageHero should render the right structure 1`] = `
   }
   headingText="heading text"
   placeholderBackgroundImageUrl={null}
+  searchBarDatesInputOnFocusChange={[Function]}
   searchBarGetIsDayBlocked={[Function]}
   searchBarGuestsOptions={
     Array [
@@ -418,6 +419,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     Object {
                                       "dateRangePickerLocaleCode": undefined,
                                       "datesInputInitialValue": undefined,
+                                      "datesInputOnFocusChange": [Function],
                                       "getIsDayBlocked": [Function],
                                       "guestsInputInitialValue": undefined,
                                       "guestsOptions": Array [
@@ -447,6 +449,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   <SearchBar
                                     className="show-on-tablet show-on-computer show-on-widescreen"
                                     datesInputInitialValue={null}
+                                    datesInputOnFocusChange={[Function]}
                                     getIsDayBlocked={[Function]}
                                     guestsInputInitialValue={null}
                                     guestsOptions={
@@ -712,6 +715,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     initialValue={null}
                                                     name="dates"
                                                     onChange={[Function]}
+                                                    onFocusChange={[Function]}
                                                     startDatePlaceholderText="Check-in"
                                                     willOpenAbove={true}
                                                   >
@@ -723,6 +727,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       isUserOnMobile={false}
                                                       name="dates"
                                                       onChange={[Function]}
+                                                      onFocusChange={[Function]}
                                                       onUpdate={[Function]}
                                                       startDatePlaceholderText="Check-in"
                                                       willOpenAbove={true}
@@ -740,6 +745,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         name="dates"
                                                         onBlur={[Function]}
                                                         onChange={[Function]}
+                                                        onFocusChange={[Function]}
                                                         startDatePlaceholderText="Check-in"
                                                         willOpenAbove={true}
                                                         windowInnerWidth={1024}
@@ -1092,6 +1098,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     <SearchBar
                                       className={null}
                                       datesInputInitialValue={null}
+                                      datesInputOnFocusChange={[Function]}
                                       getIsDayBlocked={[Function]}
                                       guestsInputInitialValue={null}
                                       guestsOptions={
