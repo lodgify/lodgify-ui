@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LazyLoader by default should render the right structure 1`] = `
+<LazyLoader
+  lazyComponent={<div />}
+>
+  <div />
+</LazyLoader>
+`;
+
+exports[`LazyLoader if \`componentProps\` !== undefined should render the right structure 1`] = `
+<LazyLoader
+  componentProps={
+    Object {
+      "mad": "props",
+    }
+  }
+  lazyComponent={<div />}
+>
+  <div>
+    <div
+      mad="props"
+    />
+  </div>
+</LazyLoader>
+`;
+
+exports[`LazyLoader if \`lazyProps\` is passed by default should render the right structure 1`] = `
+<LazyLoader
+  lazyComponent={<div />}
+  lazyProps={
+    Object {
+      "whut": "whut",
+    }
+  }
+>
+  <div>
+    <div />
+  </div>
+</LazyLoader>
+`;
+
+exports[`LazyLoader if \`lazyProps\` is passed if \`shouldRender\` === true should render the right structure 1`] = `
+<LazyLoader
+  lazyComponent={<div />}
+  lazyProps={
+    Object {
+      "whut": "whut",
+    }
+  }
+>
+  <div>
+    <div />
+  </div>
+</LazyLoader>
+`;
+
+exports[`LazyLoader if \`shouldRender\` === true should render the right structure 1`] = `
+<LazyLoader
+  lazyComponent={<div />}
+>
+  <div>
+    <div />
+  </div>
+</LazyLoader>
+`;
