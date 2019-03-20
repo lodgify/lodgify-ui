@@ -1,1 +1,1 @@
-export { Component as ResponsiveImage } from './component';
+export { ComponentWithLazyLoad as ResponsiveImage } from './component';

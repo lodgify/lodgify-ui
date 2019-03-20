@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import getClassNames from 'classnames';
 import PropTypes from 'prop-types';
 
+import { withLazyLoad } from 'utils/with-lazy-load';
 import {
   IMAGE_NOT_FOUND,
   IMAGE_TITLE,
@@ -16,7 +17,7 @@ import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
  * The standard widget for displaying an image.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export class Component extends PureComponent {
+class Component extends PureComponent {
   state = {
     isImageLoaded: false,
     shouldImageLoad: false,
@@ -87,6 +88,7 @@ Component.defaultProps = {
   isAvatar: false,
   isCircular: false,
   isFluid: false,
+  isLazyLoaded: false,
   label: null,
   placeholderImageUrl: undefined,
   sizes: null,
@@ -122,6 +124,9 @@ Component.propTypes = {
   /** Whether to render fluidly the image or not. */
   // eslint-disable-next-line react/no-unused-prop-types
   isFluid: PropTypes.bool,
+  /** The high resolution image will load when scrolled to the component's position. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  isLazyLoaded: PropTypes.bool,
   /** A visible label for the image. */
   label: PropTypes.string,
   /** URL pointing to the placeholder image to render. */
@@ -131,3 +136,5 @@ Component.propTypes = {
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   srcSet: PropTypes.string,
 };
+
+export const ComponentWithLazyLoad = withLazyLoad('imageUrl')(Component);
