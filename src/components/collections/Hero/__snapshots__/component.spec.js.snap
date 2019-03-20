@@ -71,49 +71,59 @@ exports[`<Hero /> by default should render the right structure 1`] = `
           }
         }
       >
-        <ResponsiveImage
-          alternativeText="Image Widget"
-          hasRoundedCorners={false}
-          imageHeight={null}
-          imageNotFoundLabelText="Image not found!"
-          imageTitle="Image Title"
+        <withLazyLoad(ResponsiveImage)
           imageUrl="https://darkpurple.com"
-          imageWidth={null}
-          isAvatar={false}
-          isCircular={false}
           isFluid={true}
-          label={null}
+          isLazyLoaded={false}
           placeholderImageUrl={null}
           sizes="a load of sizes"
           srcSet="a load of sources"
         >
-          <figure
-            className="responsive-image is-fluid"
+          <ResponsiveImage
+            alternativeText="Image Widget"
+            hasRoundedCorners={false}
+            imageHeight={null}
+            imageNotFoundLabelText="Image not found!"
+            imageTitle="Image Title"
+            imageUrl="https://darkpurple.com"
+            imageWidth={null}
+            isAvatar={false}
+            isCircular={false}
+            isFluid={true}
+            isLazyLoaded={false}
+            label={null}
+            placeholderImageUrl={null}
+            sizes="a load of sizes"
+            srcSet="a load of sources"
           >
-            <Image
-              alt="Image Widget"
-              as="img"
-              avatar={false}
-              fluid={true}
-              onLoad={[Function]}
-              sizes="a load of sizes"
-              src="https://darkpurple.com"
-              srcSet="a load of sources"
-              title="Image Title"
-              ui={true}
+            <figure
+              className="responsive-image is-fluid"
             >
-              <img
+              <Image
                 alt="Image Widget"
-                className="ui fluid image"
+                as="img"
+                avatar={false}
+                fluid={true}
                 onLoad={[Function]}
                 sizes="a load of sizes"
                 src="https://darkpurple.com"
                 srcSet="a load of sources"
                 title="Image Title"
-              />
-            </Image>
-          </figure>
-        </ResponsiveImage>
+                ui={true}
+              >
+                <img
+                  alt="Image Widget"
+                  className="ui fluid image"
+                  onLoad={[Function]}
+                  sizes="a load of sizes"
+                  src="https://darkpurple.com"
+                  srcSet="a load of sources"
+                  title="Image Title"
+                />
+              </Image>
+            </figure>
+          </ResponsiveImage>
+        </withLazyLoad(ResponsiveImage)>
         <Header
           activeNavigationItemIndex={1}
           isBackgroundFilled={false}

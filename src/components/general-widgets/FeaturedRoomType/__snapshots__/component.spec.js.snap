@@ -41,20 +41,11 @@ exports[`<FeaturedRoomType /> should render the right structure 1`] = `
   href="/"
   target="_self"
 >
-  <ResponsiveImage
+  <withLazyLoad(ResponsiveImage)
     alternativeText="this alt tag"
-    hasRoundedCorners={false}
-    imageHeight={null}
-    imageNotFoundLabelText="Image not found!"
-    imageTitle="Image Title"
     imageUrl="🐱🐱"
-    imageWidth={null}
-    isAvatar={false}
-    isCircular={false}
     isFluid={true}
-    label={null}
-    sizes={null}
-    srcSet={null}
+    isLazyLoaded={false}
   />
   <CardContent>
     <CardHeader>
