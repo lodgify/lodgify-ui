@@ -1,3 +1,13 @@
+# [1.158.0](https://github.com/lodgify/lodgify-ui/compare/v1.157.0...v1.158.0) (2019-03-21)
+
+
+### Features
+
+* **Gallery:** images lazy load ([f82b1db](https://github.com/lodgify/lodgify-ui/commit/f82b1db))
+* **LazyLoader:** expose component to api ([5b5b6ab](https://github.com/lodgify/lodgify-ui/commit/5b5b6ab))
+* **ResponsiveImage:** implement lazy loading ([8349b09](https://github.com/lodgify/lodgify-ui/commit/8349b09))
+* **with-lazy-load:** expose LazyLoader consumer ([2995b4c](https://github.com/lodgify/lodgify-ui/commit/2995b4c))
+
 # [1.157.0](https://github.com/lodgify/lodgify-ui/compare/v1.156.5...v1.157.0) (2019-03-14)
 
 
