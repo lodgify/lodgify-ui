@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withLazyLoad WrapperComponent should pass the right props to \`Component\` 1`] = `
+<withLazyLoad(🚜)
+  isLazyLoaded={false}
+  lazyProp="😴"
+  other="otherProps"
+>
+  <🚜
+    isLazyLoaded={false}
+    lazyProp="😴"
+    other="otherProps"
+  >
+    <div />
+  </🚜>
+</withLazyLoad(🚜)>
+`;

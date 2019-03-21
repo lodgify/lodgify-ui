@@ -53,6 +53,18 @@ const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536
  />
 ```
 
+#### With lazy loading
+
+```jsx
+<ResponsiveImage
+  placeholderImageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=10&mode=max"
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1023&mode=max"
+  imageWidth={1024}
+  imageHeight={683}
+  isLazyLoaded
+ />
+```
+
 #### Labeled
 
 ```jsx

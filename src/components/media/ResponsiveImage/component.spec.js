@@ -1,8 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Component as ResponsiveImage } from './component';
+import { ComponentWithLazyLoad as ResponsiveImage } from './component';
 
 const props = {
   sources: [],
@@ -16,6 +15,8 @@ const props = {
 const getResponsiveImage = extraProps =>
   mount(<ResponsiveImage {...props} {...extraProps} />);
 
+const getWrappedResponsiveImage = () => getResponsiveImage().childAt(0);
+
 describe('<ResponsiveImage />', () => {
   describe('by default', () => {
     it('should have the right structure', () => {
@@ -27,7 +28,9 @@ describe('<ResponsiveImage />', () => {
 
   describe('if `props.placeholderImageUrl` is passed', () => {
     it('should have the right structure', () => {
-      const actual = getResponsiveImage({ placeholderImageUrl: 'ayyy' });
+      const actual = getResponsiveImage({
+        placeholderImageUrl: 'ayyy',
+      });
 
       expect(actual).toMatchSnapshot();
     });
@@ -41,9 +44,17 @@ describe('<ResponsiveImage />', () => {
     });
   });
 
+  describe('if `props.isLazyLoaded` is true', () => {
+    it('should have the right structure', () => {
+      const actual = getResponsiveImage({ isLazyLoaded: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   describe('on mount', () => {
     it('should set `shouldImageLoad` to `true` in the components state', () => {
-      const wrapper = getResponsiveImage();
+      const wrapper = getWrappedResponsiveImage();
 
       wrapper.instance().componentDidMount();
       const actual = wrapper.state();
@@ -57,7 +68,7 @@ describe('<ResponsiveImage />', () => {
 
   describe('`handleImageLoad`', () => {
     it('should set `isImageLoaded` to `true` in the components state', () => {
-      const wrapper = getResponsiveImage();
+      const wrapper = getWrappedResponsiveImage();
 
       wrapper.instance().handleImageLoad();
       const actual = wrapper.state();
@@ -67,9 +78,5 @@ describe('<ResponsiveImage />', () => {
         shouldImageLoad: true,
       });
     });
-  });
-
-  it('should have `displayName` `ResponsiveImage`', () => {
-    expectComponentToHaveDisplayName(ResponsiveImage, 'ResponsiveImage');
   });
 });

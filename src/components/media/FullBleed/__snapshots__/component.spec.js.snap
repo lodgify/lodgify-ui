@@ -26,49 +26,59 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
         }
       }
     >
-      <ResponsiveImage
-        alternativeText="Image Widget"
-        hasRoundedCorners={false}
-        imageHeight={null}
-        imageNotFoundLabelText="Image not found!"
-        imageTitle="Image Title"
+      <withLazyLoad(ResponsiveImage)
         imageUrl="🐱🐱"
-        imageWidth={null}
-        isAvatar={false}
-        isCircular={false}
         isFluid={true}
-        label={null}
+        isLazyLoaded={false}
         placeholderImageUrl={null}
         sizes={null}
         srcSet={null}
       >
-        <figure
-          className="responsive-image is-fluid"
+        <ResponsiveImage
+          alternativeText="Image Widget"
+          hasRoundedCorners={false}
+          imageHeight={null}
+          imageNotFoundLabelText="Image not found!"
+          imageTitle="Image Title"
+          imageUrl="🐱🐱"
+          imageWidth={null}
+          isAvatar={false}
+          isCircular={false}
+          isFluid={true}
+          isLazyLoaded={false}
+          label={null}
+          placeholderImageUrl={null}
+          sizes={null}
+          srcSet={null}
         >
-          <Image
-            alt="Image Widget"
-            as="img"
-            avatar={false}
-            fluid={true}
-            onLoad={[Function]}
-            sizes={null}
-            src="🐱🐱"
-            srcSet={null}
-            title="Image Title"
-            ui={true}
+          <figure
+            className="responsive-image is-fluid"
           >
-            <img
+            <Image
               alt="Image Widget"
-              className="ui fluid image"
+              as="img"
+              avatar={false}
+              fluid={true}
               onLoad={[Function]}
               sizes={null}
               src="🐱🐱"
               srcSet={null}
               title="Image Title"
-            />
-          </Image>
-        </figure>
-      </ResponsiveImage>
+              ui={true}
+            >
+              <img
+                alt="Image Widget"
+                className="ui fluid image"
+                onLoad={[Function]}
+                sizes={null}
+                src="🐱🐱"
+                srcSet={null}
+                title="Image Title"
+              />
+            </Image>
+          </figure>
+        </ResponsiveImage>
+      </withLazyLoad(ResponsiveImage)>
     </div>
   </Segment>
 </FullBleed>
@@ -100,49 +110,59 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
         }
       }
     >
-      <ResponsiveImage
-        alternativeText="Image Widget"
-        hasRoundedCorners={false}
-        imageHeight={null}
-        imageNotFoundLabelText="Image not found!"
-        imageTitle="Image Title"
+      <withLazyLoad(ResponsiveImage)
         imageUrl="🐱🐱"
-        imageWidth={null}
-        isAvatar={false}
-        isCircular={false}
         isFluid={true}
-        label={null}
+        isLazyLoaded={false}
         placeholderImageUrl={null}
         sizes={null}
         srcSet={null}
       >
-        <figure
-          className="responsive-image is-fluid"
+        <ResponsiveImage
+          alternativeText="Image Widget"
+          hasRoundedCorners={false}
+          imageHeight={null}
+          imageNotFoundLabelText="Image not found!"
+          imageTitle="Image Title"
+          imageUrl="🐱🐱"
+          imageWidth={null}
+          isAvatar={false}
+          isCircular={false}
+          isFluid={true}
+          isLazyLoaded={false}
+          label={null}
+          placeholderImageUrl={null}
+          sizes={null}
+          srcSet={null}
         >
-          <Image
-            alt="Image Widget"
-            as="img"
-            avatar={false}
-            fluid={true}
-            onLoad={[Function]}
-            sizes={null}
-            src="🐱🐱"
-            srcSet={null}
-            title="Image Title"
-            ui={true}
+          <figure
+            className="responsive-image is-fluid"
           >
-            <img
+            <Image
               alt="Image Widget"
-              className="ui fluid image"
+              as="img"
+              avatar={false}
+              fluid={true}
               onLoad={[Function]}
               sizes={null}
               src="🐱🐱"
               srcSet={null}
               title="Image Title"
-            />
-          </Image>
-        </figure>
-      </ResponsiveImage>
+              ui={true}
+            >
+              <img
+                alt="Image Widget"
+                className="ui fluid image"
+                onLoad={[Function]}
+                sizes={null}
+                src="🐱🐱"
+                srcSet={null}
+                title="Image Title"
+              />
+            </Image>
+          </figure>
+        </ResponsiveImage>
+      </withLazyLoad(ResponsiveImage)>
     </div>
   </Segment>
 </FullBleed>
@@ -174,49 +194,59 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
         }
       }
     >
-      <ResponsiveImage
-        alternativeText="Image Widget"
-        hasRoundedCorners={false}
-        imageHeight={null}
-        imageNotFoundLabelText="Image not found!"
-        imageTitle="Image Title"
+      <withLazyLoad(ResponsiveImage)
         imageUrl="🐱🐱"
-        imageWidth={null}
-        isAvatar={false}
-        isCircular={false}
         isFluid={true}
-        label={null}
+        isLazyLoaded={false}
         placeholderImageUrl={null}
         sizes={null}
         srcSet={null}
       >
-        <figure
-          className="responsive-image is-fluid"
+        <ResponsiveImage
+          alternativeText="Image Widget"
+          hasRoundedCorners={false}
+          imageHeight={null}
+          imageNotFoundLabelText="Image not found!"
+          imageTitle="Image Title"
+          imageUrl="🐱🐱"
+          imageWidth={null}
+          isAvatar={false}
+          isCircular={false}
+          isFluid={true}
+          isLazyLoaded={false}
+          label={null}
+          placeholderImageUrl={null}
+          sizes={null}
+          srcSet={null}
         >
-          <Image
-            alt="Image Widget"
-            as="img"
-            avatar={false}
-            fluid={true}
-            onLoad={[Function]}
-            sizes={null}
-            src="🐱🐱"
-            srcSet={null}
-            title="Image Title"
-            ui={true}
+          <figure
+            className="responsive-image is-fluid"
           >
-            <img
+            <Image
               alt="Image Widget"
-              className="ui fluid image"
+              as="img"
+              avatar={false}
+              fluid={true}
               onLoad={[Function]}
               sizes={null}
               src="🐱🐱"
               srcSet={null}
               title="Image Title"
-            />
-          </Image>
-        </figure>
-      </ResponsiveImage>
+              ui={true}
+            >
+              <img
+                alt="Image Widget"
+                className="ui fluid image"
+                onLoad={[Function]}
+                sizes={null}
+                src="🐱🐱"
+                srcSet={null}
+                title="Image Title"
+              />
+            </Image>
+          </figure>
+        </ResponsiveImage>
+      </withLazyLoad(ResponsiveImage)>
       🏛
     </div>
   </Segment>

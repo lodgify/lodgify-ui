@@ -33,20 +33,9 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
           >
             🔷
           </Heading>
-          <ResponsiveImage
-            alternativeText="Image Widget"
-            hasRoundedCorners={false}
-            imageHeight={null}
-            imageNotFoundLabelText="Image not found!"
-            imageTitle="Image Title"
+          <withLazyLoad(ResponsiveImage)
             imageUrl="💻"
-            imageWidth={null}
-            isAvatar={false}
-            isCircular={false}
-            isFluid={false}
-            label={null}
-            sizes={null}
-            srcSet={null}
+            isLazyLoaded={true}
           />
           <Divider
             className=""
@@ -67,20 +56,9 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
           >
             🔷
           </Heading>
-          <ResponsiveImage
-            alternativeText="Image Widget"
-            hasRoundedCorners={false}
-            imageHeight={null}
-            imageNotFoundLabelText="Image not found!"
-            imageTitle="Image Title"
+          <withLazyLoad(ResponsiveImage)
             imageUrl="💻"
-            imageWidth={null}
-            isAvatar={false}
-            isCircular={false}
-            isFluid={false}
-            label={null}
-            sizes={null}
-            srcSet={null}
+            isLazyLoaded={true}
           />
           <Divider
             className=""
@@ -132,20 +110,9 @@ exports[`<Gallery /> if \`props.headingText\` is defined should render the right
           >
             🔷
           </Heading>
-          <ResponsiveImage
-            alternativeText="Image Widget"
-            hasRoundedCorners={false}
-            imageHeight={null}
-            imageNotFoundLabelText="Image not found!"
-            imageTitle="Image Title"
+          <withLazyLoad(ResponsiveImage)
             imageUrl="💻"
-            imageWidth={null}
-            isAvatar={false}
-            isCircular={false}
-            isFluid={false}
-            label={null}
-            sizes={null}
-            srcSet={null}
+            isLazyLoaded={true}
           />
           <Divider
             className=""
@@ -166,20 +133,9 @@ exports[`<Gallery /> if \`props.headingText\` is defined should render the right
           >
             🔷
           </Heading>
-          <ResponsiveImage
-            alternativeText="Image Widget"
-            hasRoundedCorners={false}
-            imageHeight={null}
-            imageNotFoundLabelText="Image not found!"
-            imageTitle="Image Title"
+          <withLazyLoad(ResponsiveImage)
             imageUrl="💻"
-            imageWidth={null}
-            isAvatar={false}
-            isCircular={false}
-            isFluid={false}
-            label={null}
-            sizes={null}
-            srcSet={null}
+            isLazyLoaded={true}
           />
           <Divider
             className=""

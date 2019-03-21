@@ -37,7 +37,11 @@ export const Component = ({ headingText, images, trigger }) => (
               ) : (
                 <GridColumn key={buildKeyFromStrings(imageUrl, index)}>
                   <Heading size="small">{label}</Heading>
-                  <ResponsiveImage imageUrl={imageUrl} {...otherProps} />
+                  <ResponsiveImage
+                    imageUrl={imageUrl}
+                    isLazyLoaded
+                    {...otherProps}
+                  />
                   <Divider />
                 </GridColumn>
               )

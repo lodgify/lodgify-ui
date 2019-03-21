@@ -14,49 +14,58 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
   <div
     className="ui thumbnail 🚥"
   >
-    <ResponsiveImage
-      alternativeText="Image Widget"
+    <withLazyLoad(ResponsiveImage)
       hasRoundedCorners={false}
-      imageHeight={null}
-      imageNotFoundLabelText="Image not found!"
-      imageTitle="Image Title"
       imageUrl="www.⚡️.net"
-      imageWidth={null}
-      isAvatar={false}
       isCircular={false}
-      isFluid={false}
+      isLazyLoaded={false}
       isSquare={false}
-      label={null}
-      sizes={null}
-      srcSet={null}
     >
-      <figure
-        className="responsive-image"
+      <ResponsiveImage
+        alternativeText="Image Widget"
+        hasRoundedCorners={false}
+        imageHeight={null}
+        imageNotFoundLabelText="Image not found!"
+        imageTitle="Image Title"
+        imageUrl="www.⚡️.net"
+        imageWidth={null}
+        isAvatar={false}
+        isCircular={false}
+        isFluid={false}
+        isLazyLoaded={false}
+        isSquare={false}
+        label={null}
+        sizes={null}
+        srcSet={null}
       >
-        <Image
-          alt="Image Widget"
-          as="img"
-          avatar={false}
-          fluid={true}
-          onLoad={[Function]}
-          sizes={null}
-          src="www.⚡️.net"
-          srcSet={null}
-          title="Image Title"
-          ui={true}
+        <figure
+          className="responsive-image"
         >
-          <img
+          <Image
             alt="Image Widget"
-            className="ui fluid image"
+            as="img"
+            avatar={false}
+            fluid={true}
             onLoad={[Function]}
             sizes={null}
             src="www.⚡️.net"
             srcSet={null}
             title="Image Title"
-          />
-        </Image>
-      </figure>
-    </ResponsiveImage>
+            ui={true}
+          >
+            <img
+              alt="Image Widget"
+              className="ui fluid image"
+              onLoad={[Function]}
+              sizes={null}
+              src="www.⚡️.net"
+              srcSet={null}
+              title="Image Title"
+            />
+          </Image>
+        </figure>
+      </ResponsiveImage>
+    </withLazyLoad(ResponsiveImage)>
   </div>
 </Thumbnail>
 `;
@@ -75,49 +84,58 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
   <div
     className="ui thumbnail 🚥 is-circular"
   >
-    <ResponsiveImage
-      alternativeText="Image Widget"
+    <withLazyLoad(ResponsiveImage)
       hasRoundedCorners={false}
-      imageHeight={null}
-      imageNotFoundLabelText="Image not found!"
-      imageTitle="Image Title"
       imageUrl="www.⚡️.net"
-      imageWidth={null}
-      isAvatar={false}
       isCircular={true}
-      isFluid={false}
+      isLazyLoaded={false}
       isSquare={false}
-      label={null}
-      sizes={null}
-      srcSet={null}
     >
-      <figure
-        className="responsive-image is-circular"
+      <ResponsiveImage
+        alternativeText="Image Widget"
+        hasRoundedCorners={false}
+        imageHeight={null}
+        imageNotFoundLabelText="Image not found!"
+        imageTitle="Image Title"
+        imageUrl="www.⚡️.net"
+        imageWidth={null}
+        isAvatar={false}
+        isCircular={true}
+        isFluid={false}
+        isLazyLoaded={false}
+        isSquare={false}
+        label={null}
+        sizes={null}
+        srcSet={null}
       >
-        <Image
-          alt="Image Widget"
-          as="img"
-          avatar={false}
-          fluid={true}
-          onLoad={[Function]}
-          sizes={null}
-          src="www.⚡️.net"
-          srcSet={null}
-          title="Image Title"
-          ui={true}
+        <figure
+          className="responsive-image is-circular"
         >
-          <img
+          <Image
             alt="Image Widget"
-            className="ui fluid image"
+            as="img"
+            avatar={false}
+            fluid={true}
             onLoad={[Function]}
             sizes={null}
             src="www.⚡️.net"
             srcSet={null}
             title="Image Title"
-          />
-        </Image>
-      </figure>
-    </ResponsiveImage>
+            ui={true}
+          >
+            <img
+              alt="Image Widget"
+              className="ui fluid image"
+              onLoad={[Function]}
+              sizes={null}
+              src="www.⚡️.net"
+              srcSet={null}
+              title="Image Title"
+            />
+          </Image>
+        </figure>
+      </ResponsiveImage>
+    </withLazyLoad(ResponsiveImage)>
   </div>
 </Thumbnail>
 `;
@@ -136,49 +154,58 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
   <div
     className="ui thumbnail 🚥 is-square"
   >
-    <ResponsiveImage
-      alternativeText="Image Widget"
+    <withLazyLoad(ResponsiveImage)
       hasRoundedCorners={false}
-      imageHeight={null}
-      imageNotFoundLabelText="Image not found!"
-      imageTitle="Image Title"
       imageUrl="www.⚡️.net"
-      imageWidth={null}
-      isAvatar={false}
       isCircular={false}
-      isFluid={false}
+      isLazyLoaded={false}
       isSquare={true}
-      label={null}
-      sizes={null}
-      srcSet={null}
     >
-      <figure
-        className="responsive-image"
+      <ResponsiveImage
+        alternativeText="Image Widget"
+        hasRoundedCorners={false}
+        imageHeight={null}
+        imageNotFoundLabelText="Image not found!"
+        imageTitle="Image Title"
+        imageUrl="www.⚡️.net"
+        imageWidth={null}
+        isAvatar={false}
+        isCircular={false}
+        isFluid={false}
+        isLazyLoaded={false}
+        isSquare={true}
+        label={null}
+        sizes={null}
+        srcSet={null}
       >
-        <Image
-          alt="Image Widget"
-          as="img"
-          avatar={false}
-          fluid={true}
-          onLoad={[Function]}
-          sizes={null}
-          src="www.⚡️.net"
-          srcSet={null}
-          title="Image Title"
-          ui={true}
+        <figure
+          className="responsive-image"
         >
-          <img
+          <Image
             alt="Image Widget"
-            className="ui fluid image"
+            as="img"
+            avatar={false}
+            fluid={true}
             onLoad={[Function]}
             sizes={null}
             src="www.⚡️.net"
             srcSet={null}
             title="Image Title"
-          />
-        </Image>
-      </figure>
-    </ResponsiveImage>
+            ui={true}
+          >
+            <img
+              alt="Image Widget"
+              className="ui fluid image"
+              onLoad={[Function]}
+              sizes={null}
+              src="www.⚡️.net"
+              srcSet={null}
+              title="Image Title"
+            />
+          </Image>
+        </figure>
+      </ResponsiveImage>
+    </withLazyLoad(ResponsiveImage)>
   </div>
 </Thumbnail>
 `;
@@ -197,49 +224,58 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
   <div
     className="ui thumbnail small 🚥"
   >
-    <ResponsiveImage
-      alternativeText="Image Widget"
+    <withLazyLoad(ResponsiveImage)
       hasRoundedCorners={false}
-      imageHeight={null}
-      imageNotFoundLabelText="Image not found!"
-      imageTitle="Image Title"
       imageUrl="www.⚡️.net"
-      imageWidth={null}
-      isAvatar={false}
       isCircular={false}
-      isFluid={false}
+      isLazyLoaded={false}
       isSquare={false}
-      label={null}
-      sizes={null}
-      srcSet={null}
     >
-      <figure
-        className="responsive-image"
+      <ResponsiveImage
+        alternativeText="Image Widget"
+        hasRoundedCorners={false}
+        imageHeight={null}
+        imageNotFoundLabelText="Image not found!"
+        imageTitle="Image Title"
+        imageUrl="www.⚡️.net"
+        imageWidth={null}
+        isAvatar={false}
+        isCircular={false}
+        isFluid={false}
+        isLazyLoaded={false}
+        isSquare={false}
+        label={null}
+        sizes={null}
+        srcSet={null}
       >
-        <Image
-          alt="Image Widget"
-          as="img"
-          avatar={false}
-          fluid={true}
-          onLoad={[Function]}
-          sizes={null}
-          src="www.⚡️.net"
-          srcSet={null}
-          title="Image Title"
-          ui={true}
+        <figure
+          className="responsive-image"
         >
-          <img
+          <Image
             alt="Image Widget"
-            className="ui fluid image"
+            as="img"
+            avatar={false}
+            fluid={true}
             onLoad={[Function]}
             sizes={null}
             src="www.⚡️.net"
             srcSet={null}
             title="Image Title"
-          />
-        </Image>
-      </figure>
-    </ResponsiveImage>
+            ui={true}
+          >
+            <img
+              alt="Image Widget"
+              className="ui fluid image"
+              onLoad={[Function]}
+              sizes={null}
+              src="www.⚡️.net"
+              srcSet={null}
+              title="Image Title"
+            />
+          </Image>
+        </figure>
+      </ResponsiveImage>
+    </withLazyLoad(ResponsiveImage)>
   </div>
 </Thumbnail>
 `;
