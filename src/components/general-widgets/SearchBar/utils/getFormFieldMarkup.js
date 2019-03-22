@@ -10,13 +10,13 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
 /**
  * @param  {Object}   props
  * @param  {string}   props.dateRangePickerLocaleCode
- * @param  {Object}   props.datesInputInitialValue
+ * @param  {Object}   props.datesInputValue
  * @param  {Function} props.datesInputOnFocusChange
  * @param  {Function} props.getIsDayBlocked
  * @param  {Object[]} props.guestsOptions
- * @param  {string}   props.guestsInputInitialValue
+ * @param  {string}   props.guestsInputValue
  * @param  {boolean}  props.isShowingSummary
- * @param  {string}   props.locationInputInitialValue
+ * @param  {string}   props.locationInputValue
  * @param  {Object[]} props.locationOptions
  * @param  {Node}     props.searchButton
  * @param  {Function} persistInputChange
@@ -27,13 +27,13 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
 export const getFormFieldMarkup = (
   {
     dateRangePickerLocaleCode,
-    datesInputInitialValue,
+    datesInputValue,
     datesInputOnFocusChange,
     getIsDayBlocked,
-    guestsInputInitialValue,
+    guestsInputValue,
     guestsOptions,
     isShowingSummary,
-    locationInputInitialValue,
+    locationInputValue,
     locationOptions,
     searchButton,
   },
@@ -60,11 +60,11 @@ export const getFormFieldMarkup = (
         <Form.Field width={defaultColumnWidth}>
           <Dropdown
             icon={ICON_NAMES.MAP_PIN}
-            initialValue={locationInputInitialValue}
             label="Location"
             name="location"
             onChange={persistInputChange}
             options={locationOptions}
+            value={locationInputValue}
             willOpenAbove={willDropdownsOpenAbove}
           />
         </Form.Field>
@@ -73,23 +73,23 @@ export const getFormFieldMarkup = (
         <DateRangePicker
           endDatePlaceholderText="Check-out"
           getIsDayBlocked={getIsDayBlocked}
-          initialValue={datesInputInitialValue}
           localeCode={dateRangePickerLocaleCode}
           name="dates"
           onChange={persistInputChange}
           onFocusChange={datesInputOnFocusChange}
           startDatePlaceholderText="Check-in"
+          value={datesInputValue}
           willOpenAbove={willDropdownsOpenAbove}
         />
       </Form.Field>
       <Form.Field width={defaultColumnWidth}>
         <Dropdown
           icon={ICON_NAMES.USERS}
-          initialValue={guestsInputInitialValue}
           label="Guests"
           name="guests"
           onChange={persistInputChange}
           options={guestsOptions}
+          value={guestsInputValue}
           willOpenAbove={willDropdownsOpenAbove}
         />
       </Form.Field>
