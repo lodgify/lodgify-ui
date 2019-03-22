@@ -33,6 +33,7 @@ const getMarkup = ({
   description = 'yoyo description',
   ratingNumber = 3.2,
   slideShowImages = slideShowImage,
+  amenities = amenities,
 }) =>
   mount(
     getModalContentMarkup(
@@ -51,7 +52,7 @@ const getMarkup = ({
 
 describe('getModalContentMarkup', () => {
   it('should return the correct structure', () => {
-    const wrapper = getMarkup({});
+    const wrapper = getMarkup({ amenities });
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -60,6 +61,7 @@ describe('getModalContentMarkup', () => {
     it('should not render the rating', () => {
       const wrapper = getMarkup({
         ratingNumber: null,
+        amenities,
       });
 
       expect(wrapper).toMatchSnapshot();
@@ -70,6 +72,17 @@ describe('getModalContentMarkup', () => {
     it('should not render the description', () => {
       const wrapper = getMarkup({
         description: null,
+        amenities,
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.amenities` size is zero', () => {
+    it('should not render the `Amenities` component', () => {
+      const wrapper = getMarkup({
+        amenities: [],
       });
 
       expect(wrapper).toMatchSnapshot();
@@ -79,6 +92,7 @@ describe('getModalContentMarkup', () => {
   describe('if `props.slideShowImages.length` > 1', () => {
     it('should render the right structure', () => {
       const wrapper = getMarkup({
+        amenities,
         slideShowImages: [
           ...slideShowImage,
           {
