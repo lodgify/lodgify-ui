@@ -4,8 +4,8 @@ import { Segment } from 'semantic-ui-react';
 
 import { Heading } from 'typography/Heading';
 
-import { getNightPriceAndRatingMarkup } from './utils/getNightPriceAndRatingMarkup';
-import { getNightPriceRatingAndLocationMarkup } from './utils/getNightPriceRatingAndLocationMarkup';
+import { getPricePerPeriodAndRatingMarkup } from './utils/getPricePerPeriodAndRatingMarkup';
+import { getPricePerPeriodAndLocationMarkup } from './utils/getPricePerPeriodAndLocationMarkup';
 
 /**
  * The standard widget for displaying the summary details of a property.
@@ -15,7 +15,8 @@ export const Component = ({
   areOnlyNightPriceAndRatingDisplayed,
   isShowingPlaceholder,
   locationName,
-  nightPrice,
+  periodText,
+  pricePerPeriod,
   propertyName,
   ratingNumber,
 }) => (
@@ -30,16 +31,18 @@ export const Component = ({
       horizontal={!areOnlyNightPriceAndRatingDisplayed}
     >
       {areOnlyNightPriceAndRatingDisplayed
-        ? getNightPriceAndRatingMarkup(
-            ratingNumber,
-            nightPrice,
-            isShowingPlaceholder
+        ? getPricePerPeriodAndRatingMarkup(
+            isShowingPlaceholder,
+            periodText,
+            pricePerPeriod,
+            ratingNumber
           )
-        : getNightPriceRatingAndLocationMarkup(
-            ratingNumber,
-            nightPrice,
+        : getPricePerPeriodAndLocationMarkup(
+            isShowingPlaceholder,
             locationName,
-            isShowingPlaceholder
+            periodText,
+            pricePerPeriod,
+            ratingNumber
           )}
     </Segment.Group>
   </Segment.Group>
@@ -50,7 +53,8 @@ Component.displayName = 'Summary';
 Component.defaultProps = {
   areOnlyNightPriceAndRatingDisplayed: false,
   isShowingPlaceholder: false,
-  nightPrice: undefined,
+  periodText: 'night',
+  pricePerPeriod: undefined,
   ratingNumber: undefined,
 };
 
@@ -61,8 +65,10 @@ Component.propTypes = {
   isShowingPlaceholder: PropTypes.bool,
   /** The name of the location of the property. */
   locationName: PropTypes.string.isRequired,
+  /** The text describing the pricing period */
+  periodText: PropTypes.string,
   /** The price per night of the property, with currency symbol. */
-  nightPrice: PropTypes.string,
+  pricePerPeriod: PropTypes.string,
   /** The name of the property. */
   propertyName: PropTypes.string.isRequired,
   /** The numeral rating for the property, out of 5 */

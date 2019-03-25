@@ -1,7 +1,7 @@
 ```jsx
 <Summary
   locationName="Catania"
-  nightPrice="$280"
+  pricePerPeriod="$280"
   propertyName="The Cat House"
   ratingNumber={4.8}
 />
@@ -26,7 +26,7 @@
 <Summary
   areOnlyNightPriceAndRatingDisplayed
   locationName="Catania"
-  nightPrice="$280"
+  pricePerPeriod="$280"
   propertyName="The Cat House"
   ratingNumber={4.8}
 />
