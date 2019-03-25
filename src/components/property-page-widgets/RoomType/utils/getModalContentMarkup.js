@@ -14,11 +14,13 @@ import { Slideshow } from 'media/Slideshow';
 
 /**
  * @param  {Object[]}    amenities
+ * @param  {string}      amenitiesHeadingText
  * @param  {string}      description
  * @param  {Object[]}    extraFeatures
  * @param  {Object[]}    features
  * @param  {string}      name
- * @param  {string}      nightPrice
+ * @param  {string}      periodText
+ * @param  {string}      pricePerPeriod
  * @param  {number}      ratingNumber
  * @param  {Object[]}    slideShowImages
  * @param  {boolean}     isUserOnMobile
@@ -26,11 +28,13 @@ import { Slideshow } from 'media/Slideshow';
  */
 export const getModalContentMarkup = (
   amenities,
+  amenitiesHeadingText,
   description,
   extraFeatures,
   features,
   name,
-  nightPrice,
+  periodText,
+  pricePerPeriod,
   ratingNumber,
   slideShowImages,
   isUserOnMobile
@@ -58,15 +62,15 @@ export const getModalContentMarkup = (
     <Divider hasLine />
     <Amenities
       amenities={amenities}
-      headingText="Room Amenities"
+      headingText={amenitiesHeadingText}
       isStacked={isUserOnMobile}
     />
     <Grid>
       <GridColumn verticalAlignContent="bottom" width={12}>
         <Paragraph>
           from
-          <strong>{` ${nightPrice} `}</strong>
-          /night
+          <strong>{` ${pricePerPeriod} `}</strong>
+          {`/${periodText}`}
         </Paragraph>
       </GridColumn>
     </Grid>
