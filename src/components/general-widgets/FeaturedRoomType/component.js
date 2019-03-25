@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
 import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
-import { getNightPriceMarkup } from 'utils/get-night-price-markup';
+import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 
 import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
@@ -23,7 +23,8 @@ export const Component = ({
   imageUrl,
   isShowingPlaceholder,
   locationName,
-  nightPrice,
+  periodText,
+  pricePerPeriod,
   placeholderImageUrl,
   roomTypeName,
   roomTypeUrl,
@@ -53,7 +54,9 @@ export const Component = ({
               bedsNumber
             )}
           </Card.Description>
-          <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
+          <Card.Description>
+            {getPricePerPeriodMarkup(pricePerPeriod, periodText)}
+          </Card.Description>
         </Card.Content>
       </Fragment>
     )}
@@ -68,6 +71,7 @@ Component.defaultProps = {
   imageAlternativeText: undefined,
   imageSizes: undefined,
   imageSrcSet: undefined,
+  periodText: 'night',
   placeholderImageUrl: undefined,
   isShowingPlaceholder: false,
   roomTypeUrlTarget: '_self',
@@ -94,10 +98,12 @@ Component.propTypes = {
   isShowingPlaceholder: PropTypes.bool,
   /** The name of the location of the room. */
   locationName: PropTypes.string.isRequired,
-  /** The price per night of the room, with currency symbol. */
-  nightPrice: PropTypes.string.isRequired,
+  /** The text describing the pricing period. */
+  periodText: PropTypes.string,
   /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
+  /** The price per period of the room, with currency symbol. */
+  pricePerPeriod: PropTypes.string.isRequired,
   /** The name of the room. */
   roomTypeName: PropTypes.string.isRequired,
   /** URL pointing to a page with details of the room. */
