@@ -40,6 +40,8 @@ Library icons
 <Divider />
 <Icon labelText="checkmark" name="checkmark" />
 <Divider />
+<Icon labelText="checkmark circle" name="checkmark circle" />
+<Divider />
 <Icon labelText="close" name="close" />
 <Divider />
 <Icon labelText="info" name="info" />

@@ -18,6 +18,7 @@ export const ICON_NAMES = {
   CHECK_IN: 'check in',
   CHECK_OUT: 'check out',
   CHECKMARK: 'checkmark',
+  CHECKMARK_CIRCLE: 'checkmark circle',
   CHEVRON_LEFT: 'chevron left',
   CHEVRON_RIGHT: 'chevron right',
   CLOCK: 'clock',
