@@ -9,7 +9,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
         "guestsNumber": 3,
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "locationName": "Catania",
-        "nightPrice": "$280",
+        "pricePerPeriod": "$280",
         "ratingNumber": 4.8,
         "roomTypeName": "The Cat House",
         "roomTypeUrl": "/",
@@ -19,7 +19,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
         "guestsNumber": 3,
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "locationName": "Catania",
-        "nightPrice": "$280",
+        "pricePerPeriod": "$280",
         "ratingNumber": 4.8,
         "roomTypeName": "The Cat House",
         "roomTypeUrl": "/",
@@ -38,7 +38,8 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
     isShowingPlaceholder={false}
     key="The Cat House0"
     locationName="Catania"
-    nightPrice="$280"
+    periodText="night"
+    pricePerPeriod="$280"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
     roomTypeUrl="/"
@@ -172,7 +173,8 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
     isShowingPlaceholder={false}
     key="The Cat House1"
     locationName="Catania"
-    nightPrice="$280"
+    periodText="night"
+    pricePerPeriod="$280"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
     roomTypeUrl="/"
@@ -315,7 +317,8 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
     isShowingPlaceholder={true}
     key="0"
     locationName=""
-    nightPrice=""
+    periodText="night"
+    pricePerPeriod=""
     roomTypeName=""
     roomTypeUrl=""
     roomTypeUrlTarget="_self"
@@ -403,7 +406,8 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
     isShowingPlaceholder={true}
     key="1"
     locationName=""
-    nightPrice=""
+    periodText="night"
+    pricePerPeriod=""
     roomTypeName=""
     roomTypeUrl=""
     roomTypeUrlTarget="_self"
@@ -491,7 +495,8 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
     isShowingPlaceholder={true}
     key="2"
     locationName=""
-    nightPrice=""
+    periodText="night"
+    pricePerPeriod=""
     roomTypeName=""
     roomTypeUrl=""
     roomTypeUrlTarget="_self"
@@ -582,7 +587,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
         "guestsNumber": 3,
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "locationName": "Catania",
-        "nightPrice": "$280",
+        "pricePerPeriod": "$280",
         "ratingNumber": 4.8,
         "roomTypeName": "The Cat House",
         "roomTypeUrl": "/",
@@ -592,7 +597,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
         "guestsNumber": 3,
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "locationName": "Catania",
-        "nightPrice": "$280",
+        "pricePerPeriod": "$280",
         "ratingNumber": 4.8,
         "roomTypeName": "The Cat House",
         "roomTypeUrl": "/",
@@ -630,7 +635,8 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
     isShowingPlaceholder={false}
     key="The Cat House0"
     locationName="Catania"
-    nightPrice="$280"
+    periodText="night"
+    pricePerPeriod="$280"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
     roomTypeUrl="/"
@@ -764,7 +770,8 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
     isShowingPlaceholder={false}
     key="The Cat House1"
     locationName="Catania"
-    nightPrice="$280"
+    periodText="night"
+    pricePerPeriod="$280"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
     roomTypeUrl="/"
