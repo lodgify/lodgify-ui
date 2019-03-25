@@ -31,7 +31,7 @@ const props = {
   ],
   description: 'yayayay',
   locationName: 'Catania',
-  nightPrice: '$280',
+  pricePerPeriod: '$280',
   name: 'The Cat House',
   propertyType: 'Bed and breakfast',
   propertyUrl: '/',

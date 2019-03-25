@@ -24,6 +24,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
       },
     ]
   }
+  amenitiesHeadingText="Room Amenities"
   description="yayayay"
   extraFeatures={
     Array [
@@ -44,7 +45,8 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
   isUserOnMobile={false}
   locationName="Catania"
   name="The Cat House"
-  nightPrice="$280"
+  periodText="night"
+  pricePerPeriod="$280"
   propertyType="Bed and breakfast"
   propertyUrl="/"
   ratingNumber={4}
@@ -731,6 +733,7 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
       },
     ]
   }
+  amenitiesHeadingText="Room Amenities"
   description="yayayay"
   extraFeatures={
     Array [
@@ -751,7 +754,8 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
   isUserOnMobile={false}
   locationName="Catania"
   name="The Cat House"
-  nightPrice="$280"
+  periodText="night"
+  pricePerPeriod="$280"
   propertyType="Bed and breakfast"
   propertyUrl="/"
   ratingNumber={4}
@@ -982,6 +986,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
       },
     ]
   }
+  amenitiesHeadingText="Room Amenities"
   description="yayayay"
   extraFeatures={
     Array [
@@ -1002,7 +1007,8 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
   isUserOnMobile={true}
   locationName="Catania"
   name="The Cat House"
-  nightPrice="$280"
+  periodText="night"
+  pricePerPeriod="$280"
   propertyType="Bed and breakfast"
   propertyUrl="/"
   ratingNumber={4}
