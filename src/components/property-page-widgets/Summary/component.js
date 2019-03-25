@@ -65,7 +65,7 @@ Component.propTypes = {
   isShowingPlaceholder: PropTypes.bool,
   /** The name of the location of the property. */
   locationName: PropTypes.string.isRequired,
-  /** The text describing the pricing period */
+  /** The text describing the pricing period. */
   periodText: PropTypes.string,
   /** The price per night of the property, with currency symbol. */
   pricePerPeriod: PropTypes.string,
