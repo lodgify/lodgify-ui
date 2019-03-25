@@ -46,6 +46,13 @@
         padding: 0;
         width: @imageGalleryButtonDiameter;
 
+        &:hover {
+          background: @themeActionColorDefault;
+          background: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
+          color: @themeActionContrastColorDefault;
+          color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+        }
+
         .icon {
           margin: 0;
         }
