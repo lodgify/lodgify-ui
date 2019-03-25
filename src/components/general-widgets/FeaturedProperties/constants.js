@@ -3,7 +3,7 @@ const PLACEHOLDER_DATA = {
   guestsNumber: 0,
   imageUrl: '',
   locationName: '',
-  nightPrice: '',
+  pricePerPeriod: '',
   propertyName: '',
   propertyType: '',
   propertyUrl: '',
