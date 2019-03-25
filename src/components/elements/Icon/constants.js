@@ -8,6 +8,7 @@ export const ICON_NAMES = {
   BABY_CRIB: 'baby crib',
   BEDROOM_DOOR: 'bedroom door',
   BED_LINEN: 'bed linen',
+  BLOG: 'blog',
   BUS: 'bus',
   CALENDAR: 'calendar',
   CARET_DOWN: 'caret down',
