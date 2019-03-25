@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
 import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
-import { getNightPriceMarkup } from 'utils/get-night-price-markup';
+import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 import { Rating } from 'elements/Rating';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 import { Subheading } from 'typography/Subheading';
@@ -23,7 +23,8 @@ export const Component = ({
   imageUrl,
   isShowingPlaceholder,
   locationName,
-  nightPrice,
+  periodText,
+  pricePerPeriod,
   placeholderImageUrl,
   propertyName,
   propertyType,
@@ -56,7 +57,9 @@ export const Component = ({
           <Card.Description>
             <Rating iconSize="tiny" ratingNumber={ratingNumber} />
           </Card.Description>
-          <Card.Description>{getNightPriceMarkup(nightPrice)}</Card.Description>
+          <Card.Description>
+            {getPricePerPeriodMarkup(pricePerPeriod, periodText)}
+          </Card.Description>
         </Card.Content>
       </Fragment>
     )}
@@ -71,6 +74,7 @@ Component.defaultProps = {
   imageSizes: undefined,
   imageSrcSet: undefined,
   isShowingPlaceholder: false,
+  periodText: 'night',
   placeholderImageUrl: undefined,
   propertyUrlTarget: '_self',
 };
@@ -92,10 +96,12 @@ Component.propTypes = {
   isShowingPlaceholder: PropTypes.bool,
   /** The name of the location of the property. */
   locationName: PropTypes.string.isRequired,
-  /** The price per night of the property, with currency symbol. */
-  nightPrice: PropTypes.string.isRequired,
+  /** The text describing the pricing period. */
+  periodText: PropTypes.string,
   /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
+  /** The price per period of the property, with currency symbol. */
+  pricePerPeriod: PropTypes.string.isRequired,
   /** The name of the property. */
   propertyName: PropTypes.string.isRequired,
   /** The name of the type of the property. */
