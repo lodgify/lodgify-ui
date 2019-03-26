@@ -428,17 +428,17 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   parentProps={
                                     Object {
                                       "dateRangePickerLocaleCode": undefined,
-                                      "datesInputInitialValue": undefined,
                                       "datesInputOnFocusChange": [Function],
+                                      "datesInputValue": undefined,
                                       "getIsDayBlocked": [Function],
-                                      "guestsInputInitialValue": undefined,
+                                      "guestsInputValue": undefined,
                                       "guestsOptions": Array [
                                         Object {
                                           "text": "1",
                                           "value": "1",
                                         },
                                       ],
-                                      "locationInputInitialValue": undefined,
+                                      "locationInputValue": undefined,
                                       "locationOptions": Array [
                                         Object {
                                           "text": "1",
@@ -458,10 +458,8 @@ exports[`HomepageHero should render the right structure 1`] = `
                                 >
                                   <SearchBar
                                     className="show-on-tablet show-on-computer show-on-widescreen"
-                                    datesInputInitialValue={null}
                                     datesInputOnFocusChange={[Function]}
                                     getIsDayBlocked={[Function]}
-                                    guestsInputInitialValue={null}
                                     guestsOptions={
                                       Array [
                                         Object {
@@ -473,7 +471,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     isDisplayedAsModal={false}
                                     isFixed={false}
                                     isShowingSummary={false}
-                                    locationInputInitialValue={null}
                                     locationOptions={
                                       Array [
                                         Object {
@@ -722,7 +719,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   <WithResponsive(DateRangePicker)
                                                     endDatePlaceholderText="Check-out"
                                                     getIsDayBlocked={[Function]}
-                                                    initialValue={null}
                                                     name="dates"
                                                     onChange={[Function]}
                                                     onFocusChange={[Function]}
@@ -733,7 +729,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       as={[Function]}
                                                       endDatePlaceholderText="Check-out"
                                                       getIsDayBlocked={[Function]}
-                                                      initialValue={null}
                                                       isUserOnMobile={false}
                                                       name="dates"
                                                       onChange={[Function]}
@@ -748,7 +743,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         endDatePlaceholderText="Check-out"
                                                         error={false}
                                                         getIsDayBlocked={[Function]}
-                                                        initialValue={null}
                                                         isUserOnMobile={false}
                                                         isValid={false}
                                                         localeCode="en"
@@ -764,7 +758,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           adaptOnChangeEvent={[Function]}
                                                           error={false}
                                                           icon={null}
-                                                          initialValue={null}
+                                                          initialValue=""
                                                           inputOnChangeFunctionName="onDatesChange"
                                                           isFocused={false}
                                                           isValid={false}
@@ -1107,10 +1101,8 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   >
                                     <SearchBar
                                       className={null}
-                                      datesInputInitialValue={null}
                                       datesInputOnFocusChange={[Function]}
                                       getIsDayBlocked={[Function]}
-                                      guestsInputInitialValue={null}
                                       guestsOptions={
                                         Array [
                                           Object {
@@ -1122,7 +1114,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                       isDisplayedAsModal={true}
                                       isFixed={false}
                                       isShowingSummary={false}
-                                      locationInputInitialValue={null}
                                       locationOptions={
                                         Array [
                                           Object {
