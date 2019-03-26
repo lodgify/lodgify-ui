@@ -1,3 +1,10 @@
+# [1.160.0](https://github.com/lodgify/lodgify-ui/compare/v1.159.0...v1.160.0) (2019-03-26)
+
+
+### Features
+
+* **react-dates-datepicker:** add styles for blocked and unblocked dates ([3b09984](https://github.com/lodgify/lodgify-ui/commit/3b09984))
+
 # [1.159.0](https://github.com/lodgify/lodgify-ui/compare/v1.158.0...v1.159.0) (2019-03-26)
 
 
