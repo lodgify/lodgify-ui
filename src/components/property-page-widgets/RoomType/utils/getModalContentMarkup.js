@@ -60,11 +60,13 @@ export const getModalContentMarkup = (
       ))}
     </List>
     <Divider hasLine />
-    <Amenities
-      amenities={amenities}
-      headingText={amenitiesHeadingText}
-      isStacked={isUserOnMobile}
-    />
+    {!!size(amenities) && (
+      <Amenities
+        amenities={amenities}
+        headingText="Room Amenities"
+        isStacked={isUserOnMobile}
+      />
+    )}
     <Grid>
       <GridColumn verticalAlignContent="bottom" width={12}>
         <Paragraph>

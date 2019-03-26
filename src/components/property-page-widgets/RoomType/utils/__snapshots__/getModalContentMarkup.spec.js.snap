@@ -1,5 +1,410 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`getModalContentMarkup if \`props.amenities\` size is zero should not render the \`Amenities\` component 1`] = `
+<ModalContent
+  className="has-room-type-gallery"
+>
+  <div
+    className="has-room-type-gallery content"
+  >
+    <Heading
+      className={null}
+      isColorInverted={false}
+      size="medium"
+      textAlign={null}
+    >
+      <Header
+        as="h3"
+        className={null}
+        inverted={false}
+        textAlign={null}
+      >
+        <h3
+          className="ui header"
+        >
+          yoyo name
+        </h3>
+      </Header>
+    </Heading>
+    <Rating
+      iconSize="small"
+      isShowingNumeral={true}
+      ratingNumber={3.2}
+    >
+      3.2
+      <Rating
+        clearable="auto"
+        disabled={true}
+        maxRating={5}
+        rating={3}
+        size="small"
+      >
+        <div
+          className="ui small disabled rating"
+          onMouseLeave={[Function]}
+          role="radiogroup"
+        >
+          <RatingIcon
+            active={true}
+            aria-checked={false}
+            aria-posinset={1}
+            aria-setsize={5}
+            as="i"
+            index={0}
+            key="0"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={false}
+              aria-posinset={1}
+              aria-setsize={5}
+              className="active icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+          <RatingIcon
+            active={true}
+            aria-checked={false}
+            aria-posinset={2}
+            aria-setsize={5}
+            as="i"
+            index={1}
+            key="1"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={false}
+              aria-posinset={2}
+              aria-setsize={5}
+              className="active icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+          <RatingIcon
+            active={true}
+            aria-checked={true}
+            aria-posinset={3}
+            aria-setsize={5}
+            as="i"
+            index={2}
+            key="2"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={true}
+              aria-posinset={3}
+              aria-setsize={5}
+              className="active icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+          <RatingIcon
+            active={false}
+            aria-checked={false}
+            aria-posinset={4}
+            aria-setsize={5}
+            as="i"
+            index={3}
+            key="3"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={false}
+              aria-posinset={4}
+              aria-setsize={5}
+              className="icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+          <RatingIcon
+            active={false}
+            aria-checked={false}
+            aria-posinset={5}
+            aria-setsize={5}
+            as="i"
+            index={4}
+            key="4"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            selected={false}
+          >
+            <i
+              aria-checked={false}
+              aria-posinset={5}
+              aria-setsize={5}
+              className="icon"
+              onClick={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              role="radio"
+              tabIndex={0}
+            />
+          </RatingIcon>
+        </div>
+      </Rating>
+    </Rating>
+    <Divider
+      className=""
+      hasLine={false}
+      size="small"
+    >
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
+      >
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
+    </Divider>
+    <Slideshow
+      hasShadow={true}
+      headingText={null}
+      images={
+        Array [
+          Object {
+            "alternativeText": "Two cats",
+            "title": "Two cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+        ]
+      }
+      isRounded={true}
+      isShowingBulletNavigation={false}
+      isStretched={false}
+    >
+      <ImageGallery
+        additionalClass=""
+        autoPlay={false}
+        disableArrowKeys={false}
+        disableSwipe={false}
+        disableThumbnailScroll={false}
+        flickThreshold={0.4}
+        indexSeparator=" / "
+        infinite={true}
+        isRTL={false}
+        items={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+            },
+          ]
+        }
+        lazyLoad={true}
+        onSlide={[Function]}
+        preventDefaultTouchmoveEvent={false}
+        renderFullscreenButton={[Function]}
+        renderLeftNav={[Function]}
+        renderPlayPauseButton={[Function]}
+        renderRightNav={[Function]}
+        showBullets={false}
+        showFullscreenButton={false}
+        showIndex={false}
+        showNav={true}
+        showPlayButton={false}
+        showThumbnails={false}
+        slideDuration={450}
+        slideInterval={3000}
+        startIndex={0}
+        stopPropagation={false}
+        swipeThreshold={30}
+        swipingTransitionDuration={0}
+        thumbnailPosition="bottom"
+        useBrowserFullscreen={true}
+        useTranslate3D={true}
+      >
+        <div
+          aria-live="polite"
+          className="image-gallery  "
+        >
+          <div
+            className="image-gallery-content"
+          >
+            <div
+              className="image-gallery-slide-wrapper bottom "
+            >
+              <div
+                className="image-gallery-slides"
+              >
+                <div
+                  className="image-gallery-slide center"
+                  key="0"
+                  style={
+                    Object {
+                      "MozTransform": "translate3d(0%, 0, 0)",
+                      "OTransform": "translate3d(0%, 0, 0)",
+                      "WebkitTransform": "translate3d(0%, 0, 0)",
+                      "msTransform": "translate3d(0%, 0, 0)",
+                      "transform": "translate3d(0%, 0, 0)",
+                    }
+                  }
+                >
+                  <div
+                    className="image-gallery-image"
+                  >
+                    <img
+                      alt="Two cats"
+                      onError={[Function]}
+                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      title="Two cats"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ImageGallery>
+    </Slideshow>
+    <Paragraph
+      size="medium"
+      weight={null}
+    >
+      <p
+        className=""
+      >
+        yoyo description
+      </p>
+    </Paragraph>
+    <List
+      horizontal={true}
+    >
+      <div
+        className="ui horizontal list"
+        role="list"
+      >
+        <ListItem
+          key="01 Bedroomfeature"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="listitem"
+          >
+            <Paragraph
+              size="medium"
+              weight="heavy"
+            >
+              <p
+                className="heavy"
+              >
+                1 Bedroom
+              </p>
+            </Paragraph>
+          </div>
+        </ListItem>
+        <ListItem
+          key="11 Dining-Roomfeature"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="listitem"
+          >
+            <Paragraph
+              size="medium"
+              weight="heavy"
+            >
+              <p
+                className="heavy"
+              >
+                1 Dining-Room
+              </p>
+            </Paragraph>
+          </div>
+        </ListItem>
+      </div>
+    </List>
+    <Divider
+      className=""
+      hasLine={true}
+      size="medium"
+    >
+      <Divider
+        className=""
+        hidden={false}
+        section={false}
+      >
+        <div
+          className="ui divider"
+        />
+      </Divider>
+    </Divider>
+    <Grid
+      areColumnsCentered={false}
+      isStackable={false}
+    >
+      <Grid
+        centered={false}
+        stackable={false}
+      >
+        <div
+          className="ui grid"
+        >
+          <GridColumn
+            verticalAlignContent="bottom"
+            width={12}
+          >
+            <GridColumn
+              verticalAlign="bottom"
+              width={12}
+            >
+              <div
+                className="bottom aligned twelve wide column"
+              >
+                <Paragraph
+                  size="medium"
+                  weight={null}
+                >
+                  <p
+                    className=""
+                  >
+                    from
+                    <strong>
+                       $1010 
+                    </strong>
+                    /ich, burp...
+                  </p>
+                </Paragraph>
+              </div>
+            </GridColumn>
+          </GridColumn>
+        </div>
+      </Grid>
+    </Grid>
+  </div>
+</ModalContent>
+`;
+
 exports[`getModalContentMarkup if \`props.description\` === null should not render the description 1`] = `
 <ModalContent
   className="has-room-type-gallery"
@@ -388,7 +793,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
         ]
       }
       hasExtraItemsInModal={false}
-      headingText="bibip-bop"
+      headingText="Room Amenities"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -442,7 +847,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                             <h3
                               className="ui header"
                             >
-                              bibip-bop
+                              Room Amenities
                             </h3>
                           </Header>
                         </Heading>
@@ -872,7 +1277,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
         ]
       }
       hasExtraItemsInModal={false}
-      headingText="bibip-bop"
+      headingText="Room Amenities"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -926,7 +1331,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                             <h3
                               className="ui header"
                             >
-                              bibip-bop
+                              Room Amenities
                             </h3>
                           </Header>
                         </Heading>
@@ -1669,7 +2074,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
         ]
       }
       hasExtraItemsInModal={false}
-      headingText="bibip-bop"
+      headingText="Room Amenities"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -1723,7 +2128,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                             <h3
                               className="ui header"
                             >
-                              bibip-bop
+                              Room Amenities
                             </h3>
                           </Header>
                         </Heading>
@@ -2294,7 +2699,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
         ]
       }
       hasExtraItemsInModal={false}
-      headingText="bibip-bop"
+      headingText="Room Amenities"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -2348,7 +2753,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                             <h3
                               className="ui header"
                             >
-                              bibip-bop
+                              Room Amenities
                             </h3>
                           </Header>
                         </Heading>
