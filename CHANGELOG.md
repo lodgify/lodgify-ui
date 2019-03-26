@@ -1,3 +1,18 @@
+# [1.162.0](https://github.com/lodgify/lodgify-ui/compare/v1.161.0...v1.162.0) (2019-03-26)
+
+
+### Bug Fixes
+
+* **Slideshow:** hovered buttons take theme color ([f5822f4](https://github.com/lodgify/lodgify-ui/commit/f5822f4))
+
+
+### Features
+
+* **Featured*:** update max width of cards to 320px ([0a8694c](https://github.com/lodgify/lodgify-ui/commit/0a8694c))
+* **Icon:** expose blog icon ([a9d7545](https://github.com/lodgify/lodgify-ui/commit/a9d7545))
+* **Icon:** expose checkmark circle icon ([867e368](https://github.com/lodgify/lodgify-ui/commit/867e368))
+* **Icon:** expose linkedin icon and order keys ([54d941c](https://github.com/lodgify/lodgify-ui/commit/54d941c))
+
 # [1.161.0](https://github.com/lodgify/lodgify-ui/compare/v1.160.0...v1.161.0) (2019-03-26)
 
 
