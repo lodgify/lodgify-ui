@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 import { Button } from 'elements/Button';
 import { ShowOn } from 'layout/ShowOn';
 import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
-
-import { SearchBar } from '../../general-widgets/SearchBar/index';
+import { SearchBar } from 'general-widgets/SearchBar';
 
 import { getSummaryMarkup } from './utils/getSummaryMarkup';
 
@@ -15,10 +14,10 @@ import { getSummaryMarkup } from './utils/getSummaryMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   dateRangePickerLocaleCode,
-  datesInputInitialValue,
+  datesInputValue,
   datesInputOnFocusChange,
   getIsDayBlocked,
-  guestsInputInitialValue,
+  guestsInputValue,
   guestsOptions,
   isShowingPlaceholder,
   onChangeInput,
@@ -31,16 +30,16 @@ export const Component = ({
 }) => {
   const sharedProps = {
     dateRangePickerLocaleCode,
-    datesInputInitialValue,
+    datesInputValue,
     datesInputOnFocusChange,
     getIsDayBlocked,
-    guestsInputInitialValue,
+    guestsInputValue,
     guestsOptions,
     dateRangePickerLocaleCode,
-    datesInputInitialValue,
+    datesInputValue,
     datesInputOnFocusChange,
     getIsDayBlocked,
-    guestsInputInitialValue,
+    guestsInputValue,
     guestsOptions,
     isFixed: true,
     onChangeInput,
@@ -87,11 +86,11 @@ export const Component = ({
 Component.displayName = 'PropertyPageSearchBar';
 
 Component.defaultProps = {
-  datesInputInitialValue: undefined,
+  datesInputValue: undefined,
   datesInputOnFocusChange: Function.prototype,
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: undefined,
-  guestsInputInitialValue: undefined,
+  guestsInputValue: undefined,
   isShowingPlaceholder: false,
   onChangeInput: undefined,
   onSubmit: undefined,
@@ -108,24 +107,24 @@ Component.propTypes = {
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
   // eslint-disable-next-line react/no-unused-prop-types
   dateRangePickerLocaleCode: PropTypes.string,
-  /** The initial value for the dates input of the search bar. */
-  datesInputInitialValue: PropTypes.shape({
-    endDate: PropTypes.object,
-    startDate: PropTypes.object,
-  }),
   /**
    * A function called when the focus state of the dates input changes.
    * @param {String} inputName
    */
   datesInputOnFocusChange: PropTypes.func,
+  /** The value for the dates input of the search bar. Used when consuming `PropertyPageSearchBar` as a controlled component. */
+  datesInputValue: PropTypes.shape({
+    endDate: PropTypes.object,
+    startDate: PropTypes.object,
+  }),
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
    * @returns {boolean}     - Is the day blocked.
    */
   getIsDayBlocked: PropTypes.func,
-  /** The initial value for the guests input of the search bar. */
-  guestsInputInitialValue: PropTypes.oneOfType([
+  /** The value for the guests input of the search bar. Used when consuming `PropertyPageSearchBar` as a controlled component. */
+  guestsInputValue: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.number,
     PropTypes.string,

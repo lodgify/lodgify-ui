@@ -12,6 +12,7 @@ import { GridRow } from 'layout/GridRow';
 import { ICON_NAMES } from 'elements/Icon';
 import { Button } from 'elements/Button';
 
+import { getInitialValue } from './utils/getInitialValue';
 import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
 import { getSearchBarModal } from './utils/getSearchBarModal';
 
@@ -21,9 +22,9 @@ import { getSearchBarModal } from './utils/getSearchBarModal';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
-    dates: this.props.datesInputInitialValue,
-    guests: this.props.guestsInputInitialValue,
-    location: this.props.locationInputInitialValue,
+    dates: getInitialValue(this.props.datesInputValue),
+    guests: getInitialValue(this.props.guestsInputValue),
+    location: getInitialValue(this.props.locationInputValue),
   };
 
   componentDidUpdate(previousProps, previousState) {
@@ -106,16 +107,16 @@ Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   className: null,
-  datesInputInitialValue: null,
+  datesInputValue: undefined,
   datesInputOnFocusChange: Function.prototype,
   dateRangePickerLocaleCode: undefined,
   getIsDayBlocked: Function.prototype,
-  guestsInputInitialValue: null,
+  guestsInputValue: undefined,
   isDisplayedAsModal: false,
   isFixed: false,
   isModalOpen: undefined,
   isShowingSummary: false,
-  locationInputInitialValue: null,
+  locationInputValue: undefined,
   locationOptions: null,
   modalHeadingText: CHECK_OUR_AVAILABILITY,
   modalSummaryElement: null,
@@ -141,17 +142,17 @@ Component.propTypes = {
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
   // eslint-disable-next-line react/no-unused-prop-types
   dateRangePickerLocaleCode: PropTypes.string,
-  /** The initial value for the dates input. */
-  datesInputInitialValue: PropTypes.shape({
-    endDate: PropTypes.object,
-    startDate: PropTypes.object,
-  }),
   /**
    * A function called when the focus state of the dates input changes.
    * @param {String} inputName
    */
   // eslint-disable-next-line react/no-unused-prop-types
   datesInputOnFocusChange: PropTypes.func,
+  /** The value for the dates input. Used when consuming `SearchBar` as a controlled component. */
+  datesInputValue: PropTypes.shape({
+    endDate: PropTypes.object,
+    startDate: PropTypes.object,
+  }),
   /**
    * A function called for each day to be displayed in the DateRangePicker. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
@@ -159,8 +160,8 @@ Component.propTypes = {
    */
   // eslint-disable-next-line react/no-unused-prop-types
   getIsDayBlocked: PropTypes.func,
-  /** The initial value for the guests input. */
-  guestsInputInitialValue: PropTypes.string,
+  /** The value for the guests input. Used when consuming `SearchBar` as a controlled component. */
+  guestsInputValue: PropTypes.string,
   /** The options which the user can select in the guests field. */
   // eslint-disable-next-line react/no-unused-prop-types
   guestsOptions: PropTypes.arrayOf(
@@ -185,8 +186,8 @@ Component.propTypes = {
   /** Is Search Bar showing the Property Summary info. */
   // eslint-disable-next-line react/no-unused-prop-types
   isShowingSummary: PropTypes.bool,
-  /** The initial value for the location input. */
-  locationInputInitialValue: PropTypes.string,
+  /** The value for the location input. Used when consuming `SearchBar` as a controlled component. */
+  locationInputValue: PropTypes.string,
   /** The options which the user can select in the location field. */
   // eslint-disable-next-line react/no-unused-prop-types
   locationOptions: PropTypes.arrayOf(
