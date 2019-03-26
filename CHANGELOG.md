@@ -1,3 +1,10 @@
+# [1.163.0](https://github.com/lodgify/lodgify-ui/compare/v1.162.0...v1.163.0) (2019-03-26)
+
+
+### Features
+
+* **getModalContentMarkup:** hide headingText when amenities is zero ([62d7dfa](https://github.com/lodgify/lodgify-ui/commit/62d7dfa))
+
 # [1.162.0](https://github.com/lodgify/lodgify-ui/compare/v1.161.0...v1.162.0) (2019-03-26)
 
 
