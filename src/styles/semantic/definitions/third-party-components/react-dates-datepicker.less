@@ -144,6 +144,16 @@
       &.CalendarDay__hovered_span {
         background: @pickerDayHoveredBackground;
         color: inherit;
+
+        &.CalendarDay__blocked_calendar {
+          background: @pickerDayHoveredBackground;
+          color: inherit;
+
+          &:hover {
+            background: @pickerDayBlockedBackground;
+            color: @pickerDayBlockedFontColor;
+          }
+        }
       }
 
       &.CalendarDay__selected {
@@ -167,8 +177,8 @@
       }
     }
 
-    tr:not(:first-child) td.CalendarDay {
-      border-top: @pickerTableCellBorder;
+    tr td.CalendarDay {
+      border: @pickerTableCellBorder;
     }
   }
 }
