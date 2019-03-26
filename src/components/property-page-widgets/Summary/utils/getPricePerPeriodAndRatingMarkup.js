@@ -1,20 +1,22 @@
 import React, { Fragment } from 'react';
 import { Segment } from 'semantic-ui-react';
 
-import { getNightPriceMarkup } from 'utils/get-night-price-markup';
+import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 import { Rating } from 'elements/Rating';
 import { TextPlaceholder } from 'elements/TextPlaceholder';
 
 /**
- * @param  {number} ratingNumber
- * @param  {string} nightPrice
  * @param  {boolean} isShowingPlaceholder
+ * @param  {string}  periodText
+ * @param  {string}  pricePerPeriod
+ * @param  {number}  ratingNumber
  * @return {Object}
  */
-export const getNightPriceAndRatingMarkup = (
-  ratingNumber,
-  nightPrice,
-  isShowingPlaceholder
+export const getPricePerPeriodAndRatingMarkup = (
+  isShowingPlaceholder,
+  periodText,
+  pricePerPeriod,
+  ratingNumber
 ) =>
   isShowingPlaceholder ? (
     <div className="placeholder-wrapper">
@@ -23,7 +25,9 @@ export const getNightPriceAndRatingMarkup = (
     </div>
   ) : (
     <Fragment>
-      <Segment>{getNightPriceMarkup(nightPrice, 'small')}</Segment>
+      <Segment>
+        {getPricePerPeriodMarkup(pricePerPeriod, periodText, 'small')}
+      </Segment>
       {ratingNumber !== 0 && (
         <Segment className="is-rating">
           <Rating iconSize="tiny" ratingNumber={ratingNumber} />

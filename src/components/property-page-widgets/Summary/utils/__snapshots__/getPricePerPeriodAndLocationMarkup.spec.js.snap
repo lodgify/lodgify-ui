@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`getNightPriceRatingAndLocationMarkup if \`isShowingPlaceholder\` === true should return the right structure 1`] = `
+exports[`getPricePerPeriodAndLocationMarkup if \`isShowingPlaceholder\` === true should return the right structure 1`] = `
 <div>
   <Segment
     className="is-location-name"
@@ -37,7 +37,7 @@ exports[`getNightPriceRatingAndLocationMarkup if \`isShowingPlaceholder\` === tr
 </div>
 `;
 
-exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is \`0\` should return the right markup 1`] = `
+exports[`getPricePerPeriodAndLocationMarkup if \`ratingNumber\` is \`0\` should return the right markup 1`] = `
 <div>
   <Segment
     className="is-location-name"
@@ -59,24 +59,22 @@ exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is \`0\` shoul
       size="small"
     />
   </Segment>
-  <Segment>
-    <span>
-      from 
-      <Heading
-        className={null}
-        isColorInverted={false}
-        size="small"
-        textAlign={null}
-      >
-        280$
-      </Heading>
-      /night
-    </span>
-  </Segment>
+  <div
+    className="inline-placeholder-wrapper"
+  >
+    <TextPlaceholder
+      isFluid={true}
+      length="full"
+    />
+    <TextPlaceholder
+      isFluid={true}
+      length="full"
+    />
+  </div>
 </div>
 `;
 
-exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is not \`0\` should return the right markup 1`] = `
+exports[`getPricePerPeriodAndLocationMarkup if \`ratingNumber\` is not \`0\` should return the right markup 1`] = `
 <div>
   <Segment
     className="is-location-name"
@@ -98,28 +96,17 @@ exports[`getNightPriceRatingAndLocationMarkup if \`ratingNumber\` is not \`0\` s
       size="small"
     />
   </Segment>
-  <Segment
-    className="is-rating"
+  <div
+    className="inline-placeholder-wrapper"
   >
-    <Rating
-      iconSize="tiny"
-      isShowingNumeral={true}
-      ratingNumber={1}
+    <TextPlaceholder
+      isFluid={true}
+      length="full"
     />
-  </Segment>
-  <Segment>
-    <span>
-      from 
-      <Heading
-        className={null}
-        isColorInverted={false}
-        size="small"
-        textAlign={null}
-      >
-        280$
-      </Heading>
-      /night
-    </span>
-  </Segment>
+    <TextPlaceholder
+      isFluid={true}
+      length="full"
+    />
+  </div>
 </div>
 `;

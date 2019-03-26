@@ -4,7 +4,7 @@ import { getSummaryMarkup } from './getSummaryMarkup';
 
 const props = {
   locationName: 'Location',
-  nightPrice: '200€',
+  pricePerPeriod: '200€',
   propertyName: 'My property',
   ratingNumber: 4.3,
 };

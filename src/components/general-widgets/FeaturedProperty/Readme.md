@@ -4,7 +4,7 @@
   guestsNumber={3}
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
   locationName="Catania"
-  nightPrice="$280"
+  pricePerPeriod="$280"
   propertyName="The Cat House"
   propertyType="Bed and breakfast"
   propertyUrl="/"
@@ -23,7 +23,7 @@
   imageUrl=""
   isShowingPlaceholder
   locationName=""
-  nightPrice=""
+  pricePerPeriod=""
   propertyName=""
   propertyType=""
   propertyUrl=""

@@ -15,7 +15,7 @@ import { ShowOn } from 'layout/ShowOn';
 import { Heading } from 'typography/Heading';
 import { Slideshow } from 'media/Slideshow';
 import { withResponsive } from 'utils/with-responsive';
-import { getNightPriceMarkup } from 'utils/get-night-price-markup';
+import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 
 import { getRoomFeaturesMarkup } from './utils/getRoomFeaturesMarkup';
 import { getModalContentMarkup } from './utils/getModalContentMarkup';
@@ -26,13 +26,15 @@ import { getModalContentMarkup } from './utils/getModalContentMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
   amenities,
+  amenitiesHeadingText,
   description,
   extraFeatures,
   features,
   isShowingPlaceholder,
   isUserOnMobile,
   name,
-  nightPrice,
+  periodText,
+  pricePerPeriod,
   ratingNumber,
   slideShowImages,
 }) => (
@@ -88,11 +90,13 @@ const Component = ({
                   >
                     {getModalContentMarkup(
                       amenities,
+                      amenitiesHeadingText,
                       description,
                       extraFeatures,
                       features,
                       name,
-                      nightPrice,
+                      periodText,
+                      pricePerPeriod,
                       ratingNumber,
                       slideShowImages,
                       isUserOnMobile
@@ -114,11 +118,13 @@ const Component = ({
                     >
                       {getModalContentMarkup(
                         amenities,
+                        amenitiesHeadingText,
                         description,
                         extraFeatures,
                         features,
                         name,
-                        nightPrice,
+                        periodText,
+                        pricePerPeriod,
                         ratingNumber,
                         slideShowImages,
                         isUserOnMobile
@@ -130,7 +136,7 @@ const Component = ({
                     width={8}
                   >
                     <Card.Description>
-                      {getNightPriceMarkup(nightPrice)}
+                      {getPricePerPeriodMarkup(pricePerPeriod, periodText)}
                     </Card.Description>
                     <ShowOn mobile parent={Divider} />
                   </GridColumn>
@@ -148,8 +154,10 @@ Component.displayName = 'RoomType';
 
 Component.defaultProps = {
   description: null,
+  amenitiesHeadingText: 'Room Amenities',
   extraFeatures: [],
   isShowingPlaceholder: false,
+  periodText: 'night',
   ratingNumber: null,
 };
 
@@ -168,6 +176,8 @@ Component.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** The text displayed when amenities are available. */
+  amenitiesHeadingText: PropTypes.string,
   /** A description to be displayed in the modal */
   description: PropTypes.string,
   /** The room features to display in the modal */
@@ -199,8 +209,10 @@ Component.propTypes = {
   isUserOnMobile: PropTypes.bool.isRequired,
   /** The name of the room. */
   name: PropTypes.string.isRequired,
-  /** The price per night of the room, with currency symbol. */
-  nightPrice: PropTypes.string.isRequired,
+  /** The text describing the pricing period. */
+  periodText: PropTypes.string,
+  /** The price per period of the room, with currency symbol. */
+  pricePerPeriod: PropTypes.string.isRequired,
   /** The numeral rating for the property room given in the review, out of 5. */
   ratingNumber: PropTypes.number,
   /** The images to display for the slideshow */

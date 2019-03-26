@@ -1,24 +1,26 @@
 import React, { Fragment } from 'react';
 import { Segment } from 'semantic-ui-react';
 
-import { getNightPriceMarkup } from 'utils/get-night-price-markup';
+import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 import { Rating } from 'elements/Rating';
 import { TextPlaceholder } from 'elements/TextPlaceholder';
 
-import { getLocationNameMarkup } from '../utils/getLocationNameMarkup';
+import { getLocationNameMarkup } from './getLocationNameMarkup';
 
 /**
- * @param  {number} ratingNumber
- * @param  {string} nightPrice
- * @param  {string} locationName
  * @param  {boolean} isShowingPlaceholder
+ * @param  {string} locationName
+ * @param  {string} periodText
+ * @param  {string} pricePerPeriod
+ * @param  {number} ratingNumber
  * @return {Object}
  */
-export const getNightPriceRatingAndLocationMarkup = (
-  ratingNumber,
-  nightPrice,
+export const getPricePerPeriodAndLocationMarkup = (
+  isShowingPlaceholder,
   locationName,
-  isShowingPlaceholder
+  periodText,
+  pricePerPeriod,
+  ratingNumber
 ) => (
   <Fragment>
     {getLocationNameMarkup(locationName)}
@@ -34,7 +36,9 @@ export const getNightPriceRatingAndLocationMarkup = (
             <Rating iconSize="tiny" ratingNumber={ratingNumber} />
           </Segment>
         )}
-        <Segment>{getNightPriceMarkup(nightPrice, 'small')}</Segment>
+        <Segment>
+          {getPricePerPeriodMarkup(pricePerPeriod, periodText, 'small')}
+        </Segment>
       </Fragment>
     )}
   </Fragment>

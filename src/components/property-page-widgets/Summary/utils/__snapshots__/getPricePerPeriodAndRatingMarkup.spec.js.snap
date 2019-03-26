@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`getNightPriceAndRatingMarkup if \`isShowingPlaceholder\` === true should return the correct structure 1`] = `
+exports[`getPricePerPeriodAndRatingMarkup if \`isShowingPlaceholder\` === true should return the correct structure 1`] = `
 <div>
   <div
     className="placeholder-wrapper"
@@ -25,7 +25,7 @@ exports[`getNightPriceAndRatingMarkup if \`isShowingPlaceholder\` === true shoul
 </div>
 `;
 
-exports[`getNightPriceAndRatingMarkup if \`ratingNumber\` is \`0\` should return the right markup 1`] = `
+exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is \`0\` should return the right markup 1`] = `
 <div>
   <Segment>
     <div
@@ -52,14 +52,14 @@ exports[`getNightPriceAndRatingMarkup if \`ratingNumber\` is \`0\` should return
             </h4>
           </Header>
         </Heading>
-        /night
+        /wooble
       </span>
     </div>
   </Segment>
 </div>
 `;
 
-exports[`getNightPriceAndRatingMarkup if \`ratingNumber\` is not \`0\` should return the right markup 1`] = `
+exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is not \`0\` should return the right markup 1`] = `
 <div>
   <Segment>
     <div
@@ -86,7 +86,7 @@ exports[`getNightPriceAndRatingMarkup if \`ratingNumber\` is not \`0\` should re
             </h4>
           </Header>
         </Heading>
-        /night
+        /wooble
       </span>
     </div>
   </Segment>

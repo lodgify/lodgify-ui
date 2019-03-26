@@ -6,7 +6,7 @@ import { Summary } from 'property-page-widgets/Summary';
  * @param   {Object}    props
  * @param   {boolean}   props.areOnlyNightPriceAndRatingDisplayed
  * @param   {string}    props.locationName
- * @param   {string}    props.nightPrice
+ * @param   {string}    props.pricePerPeriod
  * @param   {string}    props.propertyName
  * @param   {number}    props.ratingNumber
  * @return  {Function}
@@ -15,7 +15,8 @@ export const getSummaryMarkup = ({
   /* eslint-disable react/prop-types */
   areOnlyNightPriceAndRatingDisplayed,
   locationName,
-  nightPrice,
+  periodText,
+  pricePerPeriod,
   propertyName,
   ratingNumber,
   isShowingPlaceholder,
@@ -25,7 +26,8 @@ export const getSummaryMarkup = ({
     areOnlyNightPriceAndRatingDisplayed={areOnlyNightPriceAndRatingDisplayed}
     isShowingPlaceholder={isShowingPlaceholder}
     locationName={locationName}
-    nightPrice={nightPrice}
+    periodText={periodText}
+    pricePerPeriod={pricePerPeriod}
     propertyName={propertyName}
     ratingNumber={ratingNumber}
   />

@@ -1,24 +1,30 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { getNightPriceRatingAndLocationMarkup } from './getNightPriceRatingAndLocationMarkup';
+import { getPricePerPeriodAndLocationMarkup } from './getPricePerPeriodAndLocationMarkup';
 
-const nightPrice = '280$';
+const pricePerPeriod = '280$';
 const locationName = 'someLocation';
+const periodText = 'night';
 
-const getMarkupAsRenderedComponent = (ratingNumber, isShowingPlaceholder) =>
+const getMarkupAsRenderedComponent = (
+  ratingNumber,
+  isShowingPlaceholder,
+  periodText
+) =>
   shallow(
     <div>
-      {getNightPriceRatingAndLocationMarkup(
-        ratingNumber,
-        nightPrice,
+      {getPricePerPeriodAndLocationMarkup(
+        isShowingPlaceholder,
         locationName,
-        isShowingPlaceholder
+        periodText,
+        pricePerPeriod,
+        ratingNumber
       )}
     </div>
   );
 
-describe('getNightPriceRatingAndLocationMarkup', () => {
+describe('getPricePerPeriodAndLocationMarkup', () => {
   describe('if `isShowingPlaceholder` === true', () => {
     it('should return the right structure', () => {
       const wrapper = getMarkupAsRenderedComponent(undefined, true);
@@ -30,7 +36,7 @@ describe('getNightPriceRatingAndLocationMarkup', () => {
   describe('if `ratingNumber` is not `0`', () => {
     it('should return the right markup', () => {
       const ratingNumber = 1;
-      const wrapper = getMarkupAsRenderedComponent(ratingNumber);
+      const wrapper = getMarkupAsRenderedComponent(ratingNumber, periodText);
 
       expect(wrapper).toMatchSnapshot();
     });
@@ -39,7 +45,7 @@ describe('getNightPriceRatingAndLocationMarkup', () => {
   describe('if `ratingNumber` is `0`', () => {
     it('should return the right markup', () => {
       const ratingNumber = 0;
-      const wrapper = getMarkupAsRenderedComponent(ratingNumber);
+      const wrapper = getMarkupAsRenderedComponent(ratingNumber, periodText);
 
       expect(wrapper).toMatchSnapshot();
     });
