@@ -1,22 +1,25 @@
+/* eslint sort-keys: 2 */
 export const ICON_NAMES = {
   ARROW_DOWN: 'arrow down',
   ARROW_LEFT: 'arrow left',
   ARROW_RIGHT: 'arrow right',
   ARROW_UP: 'arrow up',
+  BABY_CRIB: 'baby crib',
   BARS: 'bars',
   BATHROOM: 'bathroom',
-  BABY_CRIB: 'baby crib',
   BEDROOM_DOOR: 'bedroom door',
   BED_LINEN: 'bed linen',
+  BLOG: 'blog',
   BUS: 'bus',
   CALENDAR: 'calendar',
   CARET_DOWN: 'caret down',
   CARET_LEFT: 'caret left',
   CARET_RIGHT: 'caret right',
   CARET_UP: 'caret up',
+  CHECKMARK: 'checkmark',
+  CHECKMARK_CIRCLE: 'checkmark circle',
   CHECK_IN: 'check in',
   CHECK_OUT: 'check out',
-  CHECKMARK: 'checkmark',
   CHEVRON_LEFT: 'chevron left',
   CHEVRON_RIGHT: 'chevron right',
   CLOCK: 'clock',
@@ -38,8 +41,9 @@ export const ICON_NAMES = {
   INSTAGRAM: 'instagram',
   LAUNDRY: 'laundry',
   LEAF: 'leaf',
-  LOFT_BED: 'loft bed',
+  LINKEDIN: 'linkedin',
   LOCATION: 'location',
+  LOFT_BED: 'loft bed',
   MAP_PIN: 'map pin',
   NO_CHILDREN: 'no children',
   PARKING: 'parking',
@@ -64,5 +68,6 @@ export const ICON_NAMES = {
   WIFI: 'wifi',
   YOUTUBE: 'youtube',
 };
+/* eslint-disable sort-keys */
 
 export const ICON_NAMES_LIST = Object.values(ICON_NAMES);

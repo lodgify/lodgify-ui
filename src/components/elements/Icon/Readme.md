@@ -40,6 +40,8 @@ Library icons
 <Divider />
 <Icon labelText="checkmark" name="checkmark" />
 <Divider />
+<Icon labelText="checkmark circle" name="checkmark circle" />
+<Divider />
 <Icon labelText="close" name="close" />
 <Divider />
 <Icon labelText="info" name="info" />
@@ -145,6 +147,10 @@ Library icons
 
 <Heading size="small">Social media</Heading>
 
+<Icon labelText="blog" name="blog" />
+<Divider />
+<Icon labelText="linkedin" name="linkedin" />
+<Divider />
 <Icon labelText="facebook" name="facebook" />
 <Divider />
 <Icon labelText="further info" name="further info" />
