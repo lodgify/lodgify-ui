@@ -1,3 +1,10 @@
+# [1.159.0](https://github.com/lodgify/lodgify-ui/compare/v1.158.0...v1.159.0) (2019-03-26)
+
+
+### Features
+
+* **SearchBar:** expose props to control input values ([1b3172b](https://github.com/lodgify/lodgify-ui/commit/1b3172b))
+
 # [1.158.0](https://github.com/lodgify/lodgify-ui/compare/v1.157.0...v1.158.0) (2019-03-21)
 
 
