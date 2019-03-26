@@ -24,7 +24,7 @@ class Controller extends React.Component {
             modalTrigger={<Button isPositionedRight isRounded isCompact>Check Availability</Button>}
             modalSummaryElement={<div>Property information for mobile modal</div>}
             summaryLocationName="Barcelona"
-            summaryNightPrice="$200"
+            summaryPricePerPeriod="$200"
             summaryPropertyName="Property"
             summaryRatingNumber={2.3}
           />

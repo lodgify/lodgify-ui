@@ -2,7 +2,7 @@ const PLACEHOLDER_DATA = {
   amenities: [],
   features: [],
   name: '',
-  nightPrice: '',
+  pricePerPeriod: '',
   slideShowImages: [],
 };
 

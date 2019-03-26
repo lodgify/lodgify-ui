@@ -1,3 +1,27 @@
+# [1.161.0](https://github.com/lodgify/lodgify-ui/compare/v1.160.0...v1.161.0) (2019-03-26)
+
+
+### Features
+
+* **FeaturedProperties:** consume props.pricePerPeriod and props.periodText ([0e8d390](https://github.com/lodgify/lodgify-ui/commit/0e8d390))
+* **FeaturedProperty:** rename props.nightPrice and expose props.periodText ([f51fc72](https://github.com/lodgify/lodgify-ui/commit/f51fc72))
+* **FeaturedRoomType:** rename props.nightPrice and expose props.periodText ([aaa1bc8](https://github.com/lodgify/lodgify-ui/commit/aaa1bc8))
+* **FeaturedRoomTypes:** consume props.pricePerPeriod and props.periodText ([05054a6](https://github.com/lodgify/lodgify-ui/commit/05054a6))
+* **getModalContentMarkup:** consume props.periodText and props.pricePerPeriod ([f2802d4](https://github.com/lodgify/lodgify-ui/commit/f2802d4))
+* **getPricePerPeriodAndLocationMarkup:** : rename props.nightPrice and expose props.periodText ([456fae1](https://github.com/lodgify/lodgify-ui/commit/456fae1))
+* **getPricePerPeriodAndRatingMarkup:** rename props.nightPrice and expose props.periodText ([ac99fdb](https://github.com/lodgify/lodgify-ui/commit/ac99fdb))
+* **getPricePerPeriodMarkup:** consume periodText and rename util ([7b7ce62](https://github.com/lodgify/lodgify-ui/commit/7b7ce62))
+* **getSummaryMarkup:** rename props.nightPrice and expose props.periodText ([ed62ee3](https://github.com/lodgify/lodgify-ui/commit/ed62ee3))
+* **PropertyPageSearchBar:** rename props.nightPrice and expose props.periodText ([043bda7](https://github.com/lodgify/lodgify-ui/commit/043bda7))
+* **RoomType:** rename props.nightPrice and expose props.periodText ([5281ce4](https://github.com/lodgify/lodgify-ui/commit/5281ce4))
+* **RoomTypes:** consume props.pricePerPeriod and props.periodText ([c22fe77](https://github.com/lodgify/lodgify-ui/commit/c22fe77))
+* **Summary:** rename props.nightPrice and expose props.summaryPeriodText ([e665ebf](https://github.com/lodgify/lodgify-ui/commit/e665ebf))
+
+
+### Performance Improvements
+
+* **utils:** remove obsolete utilities and unit tests ([377e315](https://github.com/lodgify/lodgify-ui/commit/377e315))
+
 # [1.160.0](https://github.com/lodgify/lodgify-ui/compare/v1.159.0...v1.160.0) (2019-03-26)
 
 

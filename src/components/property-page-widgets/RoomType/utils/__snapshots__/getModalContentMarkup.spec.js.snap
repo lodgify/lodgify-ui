@@ -388,7 +388,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
         ]
       }
       hasExtraItemsInModal={false}
-      headingText="Room Amenities"
+      headingText="bibip-bop"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -442,7 +442,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                             <h3
                               className="ui header"
                             >
-                              Room Amenities
+                              bibip-bop
                             </h3>
                           </Header>
                         </Heading>
@@ -617,7 +617,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                     <strong>
                        $1010 
                     </strong>
-                    /night
+                    /ich, burp...
                   </p>
                 </Paragraph>
               </div>
@@ -872,7 +872,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
         ]
       }
       hasExtraItemsInModal={false}
-      headingText="Room Amenities"
+      headingText="bibip-bop"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -926,7 +926,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                             <h3
                               className="ui header"
                             >
-                              Room Amenities
+                              bibip-bop
                             </h3>
                           </Header>
                         </Heading>
@@ -1101,7 +1101,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                     <strong>
                        $1010 
                     </strong>
-                    /night
+                    /ich, burp...
                   </p>
                 </Paragraph>
               </div>
@@ -1669,7 +1669,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
         ]
       }
       hasExtraItemsInModal={false}
-      headingText="Room Amenities"
+      headingText="bibip-bop"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -1723,7 +1723,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                             <h3
                               className="ui header"
                             >
-                              Room Amenities
+                              bibip-bop
                             </h3>
                           </Header>
                         </Heading>
@@ -1898,7 +1898,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                     <strong>
                        $1010 
                     </strong>
-                    /night
+                    /ich, burp...
                   </p>
                 </Paragraph>
               </div>
@@ -2294,7 +2294,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
         ]
       }
       hasExtraItemsInModal={false}
-      headingText="Room Amenities"
+      headingText="bibip-bop"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -2348,7 +2348,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                             <h3
                               className="ui header"
                             >
-                              Room Amenities
+                              bibip-bop
                             </h3>
                           </Header>
                         </Heading>
@@ -2523,7 +2523,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                     <strong>
                        $1010 
                     </strong>
-                    /night
+                    /ich, burp...
                   </p>
                 </Paragraph>
               </div>

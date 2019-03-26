@@ -15,10 +15,12 @@ const amenities = [
   },
 ];
 
+const amenitiesHeadingText = 'bibip-bop';
 const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
-const nightPrice = '$1010';
+const periodText = 'ich, burp...';
+const pricePerPeriod = '$1010';
 const slideShowImage = [
   {
     alternativeText: 'Two cats',
@@ -35,11 +37,13 @@ const getMarkup = ({
   mount(
     getModalContentMarkup(
       amenities,
+      amenitiesHeadingText,
       description,
       extraFeatures,
       features,
       name,
-      nightPrice,
+      periodText,
+      pricePerPeriod,
       ratingNumber,
       slideShowImages
     )

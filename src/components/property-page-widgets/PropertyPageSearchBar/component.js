@@ -24,7 +24,8 @@ export const Component = ({
   onSubmit,
   searchButton,
   summaryLocationName,
-  summaryNightPrice,
+  summaryPeriodText,
+  summaryPricePerPeriod,
   summaryPropertyName,
   summaryRatingNumber,
 }) => {
@@ -48,7 +49,8 @@ export const Component = ({
   };
   const summaryProps = {
     locationName: summaryLocationName,
-    nightPrice: summaryNightPrice,
+    periodText: summaryPeriodText,
+    pricePerPeriod: summaryPricePerPeriod,
     propertyName: summaryPropertyName,
     ratingNumber: summaryRatingNumber,
     isShowingPlaceholder,
@@ -99,7 +101,8 @@ Component.defaultProps = {
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),
-  summaryNightPrice: undefined,
+  summaryPeriodText: 'night',
+  summaryPricePerPeriod: undefined,
   summaryRatingNumber: undefined,
 };
 
@@ -163,8 +166,10 @@ Component.propTypes = {
   searchButton: PropTypes.node,
   /** The location name displayed in the summary. */
   summaryLocationName: PropTypes.string.isRequired,
+  /** The text describing the pricing period */
+  summaryPeriodText: PropTypes.string,
   /** The price per night of the property, with currency symbol, displayed in the summary. */
-  summaryNightPrice: PropTypes.string,
+  summaryPricePerPeriod: PropTypes.string,
   /** The property name displayed in the summary. */
   summaryPropertyName: PropTypes.string.isRequired,
   /** The numeral rating for the property, out of 5, displayed in the summary. */

@@ -12,7 +12,7 @@ const props = {
   imageAlternativeText: 'this alt tag',
   imageUrl: '🐱🐱',
   locationName: 'Catania',
-  nightPrice: '$280',
+  pricePerPeriod: '$280',
   roomTypeName: 'The Cat House',
   roomTypeUrl: '/',
 };

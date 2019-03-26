@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getPricePerPeriodMarkup should have the right structure 1`] = `
+<div>
+  <span>
+    from 
+    <Heading
+      className={null}
+      isColorInverted={false}
+      size="small"
+      textAlign={null}
+    >
+      $250
+    </Heading>
+    /century
+  </span>
+</div>
+`;

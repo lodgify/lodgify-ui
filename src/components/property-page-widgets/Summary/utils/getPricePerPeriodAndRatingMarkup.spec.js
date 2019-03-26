@@ -1,22 +1,24 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import { getNightPriceAndRatingMarkup } from './getNightPriceAndRatingMarkup';
+import { getPricePerPeriodAndRatingMarkup } from './getPricePerPeriodAndRatingMarkup';
 
-const nightPrice = '280$';
+const pricePerPeriod = '280$';
+const periodText = 'wooble';
 
 const getMarkupAsRenderedComponent = (ratingNumber, isShowingPlaceholder) =>
   mount(
     <div>
-      {getNightPriceAndRatingMarkup(
-        ratingNumber,
-        nightPrice,
-        isShowingPlaceholder
+      {getPricePerPeriodAndRatingMarkup(
+        isShowingPlaceholder,
+        periodText,
+        pricePerPeriod,
+        ratingNumber
       )}
     </div>
   );
 
-describe('getNightPriceAndRatingMarkup', () => {
+describe('getPricePerPeriodAndRatingMarkup', () => {
   describe('if `isShowingPlaceholder` === true', () => {
     it('should return the correct structure', () => {
       const actual = getMarkupAsRenderedComponent(undefined, true);

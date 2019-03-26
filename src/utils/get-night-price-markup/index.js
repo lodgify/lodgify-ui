@@ -1,1 +1,0 @@
-export { getNightPriceMarkup } from './getNightPriceMarkup';

@@ -38,7 +38,7 @@ const props = {
     </Button>
   ),
   summaryLocationName: 'Location',
-  summaryNightPrice: '250€',
+  summaryPricePerPeriod: '250€',
   summaryPropertyName: 'Property',
   summaryRatingNumber: 4.5,
 };
