@@ -32,12 +32,12 @@ export const Component = ({
   headingText,
   placeholderBackgroundImageUrl,
   searchBarDateRangePickerLocaleCode,
-  searchBarDatesInputInitialValue,
+  searchBarDatesInputValue,
   searchBarDatesInputOnFocusChange,
   searchBarGetIsDayBlocked,
-  searchBarGuestsInputInitialValue,
+  searchBarGuestsInputValue,
   searchBarGuestsOptions,
-  searchBarLocationInputInitialValue,
+  searchBarLocationInputValue,
   searchBarLocationOptions,
   searchBarModalHeadingText,
   searchBarOnChangeInput,
@@ -46,12 +46,12 @@ export const Component = ({
 }) => {
   const searchBarSharedProps = {
     dateRangePickerLocaleCode: searchBarDateRangePickerLocaleCode,
-    datesInputInitialValue: searchBarDatesInputInitialValue,
+    datesInputValue: searchBarDatesInputValue,
     datesInputOnFocusChange: searchBarDatesInputOnFocusChange,
     getIsDayBlocked: searchBarGetIsDayBlocked,
-    guestsInputInitialValue: searchBarGuestsInputInitialValue,
+    guestsInputValue: searchBarGuestsInputValue,
     guestsOptions: searchBarGuestsOptions,
-    locationInputInitialValue: searchBarLocationInputInitialValue,
+    locationInputValue: searchBarLocationInputValue,
     locationOptions: searchBarLocationOptions,
     onChangeInput: searchBarOnChangeInput,
     onSubmit: searchBarOnSubmit,
@@ -142,15 +142,15 @@ Component.defaultProps = {
   backgroundImageSizes: undefined,
   backgroundImageSrcSet: undefined,
   backgroundImageWidth: undefined,
-  searchBarDatesInputInitialValue: undefined,
-  searchBarGuestsInputInitialValue: undefined,
+  searchBarDatesInputValue: undefined,
+  searchBarGuestsInputValue: undefined,
   headerLogoHref: undefined,
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
   headerPrimaryCTA: null,
   headingText: null,
-  searchBarLocationInputInitialValue: undefined,
+  searchBarLocationInputValue: undefined,
   placeholderBackgroundImageUrl: null,
   searchBarDateRangePickerLocaleCode: undefined,
   searchBarDatesInputOnFocusChange: Function.prototype,
@@ -223,17 +223,17 @@ Component.propTypes = {
   placeholderBackgroundImageUrl: PropTypes.string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the search bars date range picker. */
   searchBarDateRangePickerLocaleCode: PropTypes.string,
-  /** The initial value for the dates input of the search bar. */
-  searchBarDatesInputInitialValue: PropTypes.shape({
-    endDate: PropTypes.object,
-    startDate: PropTypes.object,
-  }),
   /**
    * A function called when the focus state of the dates input in the search bar changes.
    * @param {String} inputName
    */
   // eslint-disable-next-line react/no-unused-prop-types
   searchBarDatesInputOnFocusChange: PropTypes.func,
+  /** The value for the dates input of the search bar. Used when consuming `HomepageHero` as a controlled component. */
+  searchBarDatesInputValue: PropTypes.shape({
+    endDate: PropTypes.object,
+    startDate: PropTypes.object,
+  }),
   /**
    * A function called for each day to be displayed in the DateRangePicker.
    * Returning true blocks that day in the date range picker.
@@ -241,8 +241,8 @@ Component.propTypes = {
    * @returns {boolean}     - Is the day blocked.
    */
   searchBarGetIsDayBlocked: PropTypes.func,
-  /** The initial value for the guests input of the search bar. */
-  searchBarGuestsInputInitialValue: PropTypes.oneOfType([
+  /** The value for the guests input of the search bar. Used when consuming `HomepageHero` as a controlled component. */
+  searchBarGuestsInputValue: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.number,
     PropTypes.string,
@@ -260,8 +260,8 @@ Component.propTypes = {
       ]),
     })
   ).isRequired,
-  /** The initial value for the location input of the search bar. */
-  searchBarLocationInputInitialValue: PropTypes.string,
+  /** The value for the location input of the search bar. Used when consuming `HomepageHero` as a controlled component. */
+  searchBarLocationInputValue: PropTypes.string,
   /** The options which the user can select in the location field of the search bar. */
   searchBarLocationOptions: PropTypes.arrayOf(
     PropTypes.shape({

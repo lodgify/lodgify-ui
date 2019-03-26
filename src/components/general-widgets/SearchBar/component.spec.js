@@ -9,6 +9,7 @@ jest.mock('react-dates', () => {
 
   return { DateRangePicker };
 });
+jest.mock('./utils/getInitialValue');
 
 import React from 'react';
 import { mount, shallow } from 'enzyme';
@@ -19,6 +20,11 @@ import { GridColumn } from 'layout/GridColumn';
 
 import { Component as SearchBar } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
+import { getInitialValue } from './utils/getInitialValue';
+
+const INITIAL_VALUE = 'some value';
+
+getInitialValue.mockReturnValue(INITIAL_VALUE);
 
 const props = {
   dateRangePickerLocaleCode: 'ko',
@@ -34,6 +40,33 @@ const getSearchBarShallow = overrideProps =>
 
 describe('<SearchBar />', () => {
   describe('by default', () => {
+    it('should call `getInitialValue` with the right arguments', () => {
+      const datesInputValue = {};
+      const guestsInputValue = 'some guestsInputValue ';
+      const locationInputValue = 'some locationInputValue ';
+
+      getSearchBarShallow({
+        datesInputValue,
+        guestsInputValue,
+        locationInputValue,
+      });
+
+      expect(getInitialValue).toHaveBeenNthCalledWith(1, datesInputValue);
+      expect(getInitialValue).toHaveBeenNthCalledWith(2, guestsInputValue);
+      expect(getInitialValue).toHaveBeenNthCalledWith(3, locationInputValue);
+    });
+
+    it('should set the initial state with the right values', () => {
+      const wrapper = getSearchBarShallow();
+      const actual = wrapper.state();
+
+      expect(actual).toEqual({
+        dates: INITIAL_VALUE,
+        guests: INITIAL_VALUE,
+        location: INITIAL_VALUE,
+      });
+    });
+
     it('should render the right structure', () => {
       const actual = getSearchBar();
 
@@ -111,8 +144,8 @@ describe('<SearchBar />', () => {
       input.simulate('change', name, value);
 
       expect(onChangeInput).toHaveBeenCalledWith({
-        dates: null,
-        guests: null,
+        dates: INITIAL_VALUE,
+        guests: INITIAL_VALUE,
         location: '🍰',
       });
     });
