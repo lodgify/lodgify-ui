@@ -16,6 +16,7 @@ import { getWindowHeight } from 'utils/get-window-height';
 import { isDisplayedAsModal } from 'utils/is-displayed-as-modal';
 
 import { mapValueToProps } from './utils/mapValueToProps';
+import { getFocusedInput } from './utils/getFocusedInput';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
 import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 
@@ -63,6 +64,7 @@ class Component extends PureComponent {
       displayFormat,
       endDatePlaceholderText,
       error,
+      focusedInput: controlledFocusedInput,
       getIsDayBlocked,
       initialValue,
       isValid,
@@ -73,7 +75,11 @@ class Component extends PureComponent {
       willOpenAbove,
       windowInnerWidth,
     } = this.props;
-    const { focusedInput } = this.state;
+    const { focusedInput: uncontrolledFocusedInput } = this.state;
+    const focusedInput = getFocusedInput(
+      controlledFocusedInput,
+      uncontrolledFocusedInput
+    );
 
     return (
       <InputController
@@ -126,6 +132,7 @@ Component.defaultProps = {
   displayFormat: 'DD/MM/YYYY',
   endDatePlaceholderText: '',
   error: false,
+  focusedInput: undefined,
   getIsDayBlocked: Function.prototype,
   initialValue: undefined,
   isValid: false,
@@ -147,6 +154,8 @@ Component.propTypes = {
   endDatePlaceholderText: PropTypes.string,
   /** Is the date range picker in an error state. A string is displayed as an error message. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  /** The input field which is currently focused where the input is consumed as a controlled component. */
+  focusedInput: PropTypes.oneOf([null, 'startDate', 'endDate']),
   /**
    * A function called for each day to be displayed. Returning true blocks that day in the date range picker.
    * @param   {Moment}  day - The day to test.
