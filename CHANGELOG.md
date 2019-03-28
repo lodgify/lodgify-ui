@@ -1,3 +1,10 @@
+# [1.164.0](https://github.com/lodgify/lodgify-ui/compare/v1.163.0...v1.164.0) (2019-03-28)
+
+
+### Features
+
+* **PropertyPageHero:** accept gallery images with categories ([46e569f](https://github.com/lodgify/lodgify-ui/commit/46e569f))
+
 # [1.163.0](https://github.com/lodgify/lodgify-ui/compare/v1.162.0...v1.163.0) (2019-03-26)
 
 
