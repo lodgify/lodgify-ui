@@ -1,8 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PropertyPageHero if there are fewer than two images should render the right structure 1`] = `
+exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\` should render the right structure 1`] = `
 <PropertyPageHero
   activeNavigationItemIndex={1}
+  backgroundImageUrl="some url"
+  galleryImages={
+    Array [
+      Object {
+        "imageUrl": "🚞",
+        "label": "Entrance",
+      },
+    ]
+  }
   headerLogoSizes="a load of logo sizes"
   headerLogoSrc="src"
   headerLogoSrcSet="a load of logo src sets"
@@ -21,22 +30,15 @@ exports[`PropertyPageHero if there are fewer than two images should render the r
       "text": "Book now",
     }
   }
-  images={
-    Array [
-      Object {
-        "imageUrl": "🚞",
-        "label": "Entrance",
-      },
-    ]
-  }
   isUserOnMobile={false}
+  placeholderBackgroundImageUrl={null}
   propertyName={null}
   ratingNumber={null}
   secondaryButtonText="🐸"
 >
   <Hero
     activeNavigationItemIndex={1}
-    backgroundImageUrl="🚞"
+    backgroundImageUrl="some url"
     bottomOffset="85px"
     headerLogoSizes="a load of logo sizes"
     headerLogoSrc="src"
@@ -62,7 +64,7 @@ exports[`PropertyPageHero if there are fewer than two images should render the r
     <FullBleed
       bottomOffset="85px"
       hasGradient={true}
-      imageUrl="🚞"
+      imageUrl="some url"
       placeholderImageUrl={null}
       sizes={null}
       srcSet={null}
@@ -85,7 +87,7 @@ exports[`PropertyPageHero if there are fewer than two images should render the r
           }
         >
           <withLazyLoad(ResponsiveImage)
-            imageUrl="🚞"
+            imageUrl="some url"
             isFluid={true}
             isLazyLoaded={false}
             placeholderImageUrl={null}
@@ -98,7 +100,7 @@ exports[`PropertyPageHero if there are fewer than two images should render the r
               imageHeight={null}
               imageNotFoundLabelText="Image not found!"
               imageTitle="Image Title"
-              imageUrl="🚞"
+              imageUrl="some url"
               imageWidth={null}
               isAvatar={false}
               isCircular={false}
@@ -119,7 +121,7 @@ exports[`PropertyPageHero if there are fewer than two images should render the r
                   fluid={true}
                   onLoad={[Function]}
                   sizes={null}
-                  src="🚞"
+                  src="some url"
                   srcSet={null}
                   title="Image Title"
                   ui={true}
@@ -129,7 +131,7 @@ exports[`PropertyPageHero if there are fewer than two images should render the r
                     className="ui fluid image"
                     onLoad={[Function]}
                     sizes={null}
-                    src="🚞"
+                    src="some url"
                     srcSet={null}
                     title="Image Title"
                   />
@@ -288,6 +290,19 @@ exports[`PropertyPageHero if there are fewer than two images should render the r
 exports[`PropertyPageHero should render the right structure 1`] = `
 <PropertyPageHero
   activeNavigationItemIndex={1}
+  backgroundImageUrl="some url"
+  galleryImages={
+    Array [
+      Object {
+        "imageUrl": "🚞",
+        "label": "Entrance",
+      },
+      Object {
+        "imageUrl": "🚞",
+        "label": "Kitchen",
+      },
+    ]
+  }
   headerLogoSizes="a load of logo sizes"
   headerLogoSrc="src"
   headerLogoSrcSet="a load of logo src sets"
@@ -306,26 +321,15 @@ exports[`PropertyPageHero should render the right structure 1`] = `
       "text": "Book now",
     }
   }
-  images={
-    Array [
-      Object {
-        "imageUrl": "🚞",
-        "label": "Entrance",
-      },
-      Object {
-        "imageUrl": "🚞",
-        "label": "Kitchen",
-      },
-    ]
-  }
   isUserOnMobile={false}
+  placeholderBackgroundImageUrl={null}
   propertyName={null}
   ratingNumber={null}
   secondaryButtonText="🐸"
 >
   <Hero
     activeNavigationItemIndex={1}
-    backgroundImageUrl="🚞"
+    backgroundImageUrl="some url"
     bottomOffset="85px"
     headerLogoSizes="a load of logo sizes"
     headerLogoSrc="src"
@@ -351,7 +355,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
     <FullBleed
       bottomOffset="85px"
       hasGradient={true}
-      imageUrl="🚞"
+      imageUrl="some url"
       placeholderImageUrl={null}
       sizes={null}
       srcSet={null}
@@ -374,7 +378,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
           }
         >
           <withLazyLoad(ResponsiveImage)
-            imageUrl="🚞"
+            imageUrl="some url"
             isFluid={true}
             isLazyLoaded={false}
             placeholderImageUrl={null}
@@ -387,7 +391,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
               imageHeight={null}
               imageNotFoundLabelText="Image not found!"
               imageTitle="Image Title"
-              imageUrl="🚞"
+              imageUrl="some url"
               imageWidth={null}
               isAvatar={false}
               isCircular={false}
@@ -408,7 +412,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                   fluid={true}
                   onLoad={[Function]}
                   sizes={null}
-                  src="🚞"
+                  src="some url"
                   srcSet={null}
                   title="Image Title"
                   ui={true}
@@ -418,7 +422,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                     className="ui fluid image"
                     onLoad={[Function]}
                     sizes={null}
-                    src="🚞"
+                    src="some url"
                     srcSet={null}
                     title="Image Title"
                   />

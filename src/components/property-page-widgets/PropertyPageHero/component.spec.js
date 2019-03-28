@@ -20,13 +20,17 @@ const imageUrl = '🚞';
 
 const props = {
   activeNavigationItemIndex: 1,
+  backgroundImageUrl: 'some url',
   headerLogoSizes: 'a load of logo sizes',
   headerLogoSrc: 'src',
   headerLogoSrcSet: 'a load of logo src sets',
   headerLogoText: 'text',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
   headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
-  images: [{ imageUrl, label: 'Entrance' }, { imageUrl, label: 'Kitchen' }],
+  galleryImages: [
+    { imageUrl, label: 'Entrance' },
+    { imageUrl, label: 'Kitchen' },
+  ],
   secondaryButtonText: '🐸',
 };
 
@@ -45,10 +49,10 @@ describe('PropertyPageHero', () => {
     expect(actual).toMatchSnapshot();
   });
 
-  describe('if there are fewer than two images', () => {
+  describe('if there are fewer than two items in `galleryImages`', () => {
     it('should render the right structure', () => {
       const actual = getWrappedPropertyPageHero({
-        images: [{ imageUrl, label: 'Entrance' }],
+        galleryImages: [{ imageUrl, label: 'Entrance' }],
       });
 
       expect(actual).toMatchSnapshot();

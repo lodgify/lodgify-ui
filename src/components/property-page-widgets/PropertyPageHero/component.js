@@ -14,6 +14,12 @@ import { getGalleryMarkup } from './utils/getGalleryMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
   activeNavigationItemIndex,
+  backgroundImageHeight,
+  backgroundImageSizes,
+  backgroundImageSrcSet,
+  backgroundImageUrl,
+  backgroundImageWidth,
+  galleryImages,
   headerLogoHref,
   headerLogoSizes,
   headerLogoSrc,
@@ -21,58 +27,53 @@ const Component = ({
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
-  images,
+  placeholderBackgroundImageUrl,
   propertyName,
   ratingNumber,
   secondaryButtonText,
-}) => {
-  const {
-    imageUrl: backgroundImageUrl,
-    sizes: backgroundImageSizes,
-    srcSet: backgroundImageSrcSet,
-    placeholderImageUrl,
-    imageWidth: backgroundImageHeight,
-    imageHeight: backgroundImageWidth,
-  } = images[0];
-
-  return (
-    <Hero
-      activeNavigationItemIndex={activeNavigationItemIndex}
-      backgroundImageHeight={backgroundImageHeight}
-      backgroundImageSizes={backgroundImageSizes}
-      backgroundImageSrcSet={backgroundImageSrcSet}
-      backgroundImageUrl={backgroundImageUrl}
-      backgroundImageWidth={backgroundImageWidth}
-      bottomOffset={BOTTOM_OFFSET}
-      headerLogoHref={headerLogoHref}
-      headerLogoSizes={headerLogoSizes}
-      headerLogoSrc={headerLogoSrc}
-      headerLogoSrcSet={headerLogoSrcSet}
-      headerLogoText={headerLogoText}
-      headerNavigationItems={headerNavigationItems}
-      headerPrimaryCTA={headerPrimaryCTA}
-      isFixedSearchBarDisplayed
-      placeholderBackgroundImageUrl={placeholderImageUrl}
-    >
-      {getGalleryMarkup(
-        images,
-        propertyName,
-        ratingNumber,
-        secondaryButtonText
-      )}
-    </Hero>
-  );
-};
+}) => (
+  <Hero
+    activeNavigationItemIndex={activeNavigationItemIndex}
+    backgroundImageHeight={backgroundImageHeight}
+    backgroundImageSizes={backgroundImageSizes}
+    backgroundImageSrcSet={backgroundImageSrcSet}
+    backgroundImageUrl={backgroundImageUrl}
+    backgroundImageWidth={backgroundImageWidth}
+    bottomOffset={BOTTOM_OFFSET}
+    headerLogoHref={headerLogoHref}
+    headerLogoSizes={headerLogoSizes}
+    headerLogoSrc={headerLogoSrc}
+    headerLogoSrcSet={headerLogoSrcSet}
+    headerLogoText={headerLogoText}
+    headerNavigationItems={headerNavigationItems}
+    headerPrimaryCTA={headerPrimaryCTA}
+    isFixedSearchBarDisplayed
+    placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
+  >
+    {getGalleryMarkup(
+      galleryImages,
+      propertyName,
+      ratingNumber,
+      secondaryButtonText
+    )}
+  </Hero>
+);
 
 Component.displayName = 'PropertyPageHero';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  backgroundImageHeight: undefined,
+  backgroundImageSizes: undefined,
+  backgroundImageSrcSet: undefined,
+  backgroundImageWidth: undefined,
+  galleryImages: [],
   headerLogoHref: undefined,
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
   headerPrimaryCTA: null,
+  placeholderBackgroundImageUrl: null,
   propertyName: null,
   ratingNumber: null,
   secondaryButtonText: VIEW_MORE_PICTURES,
@@ -81,6 +82,53 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The index of the active navigation item. */
   activeNavigationItemIndex: PropTypes.number,
+  /** The natural height of the background image. */
+  backgroundImageHeight: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  backgroundImageSizes: PropTypes.string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  backgroundImageSrcSet: PropTypes.string,
+  /** The source url of the hero's background image. */
+  backgroundImageUrl: PropTypes.string.isRequired,
+  /** The natural width of the background image. */
+  backgroundImageWidth: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+  /** The images to display in the gallery modal. */
+  galleryImages: PropTypes.arrayOf(
+    PropTypes.oneOfType([
+      PropTypes.shape({
+        /** The text to display above an isolated category of images. */
+        categoryText: PropTypes.string,
+      }),
+      PropTypes.shape({
+        /** Alternative text to show if the image can't be loaded by the browser */
+        alternativeText: PropTypes.string,
+        /** The natural height of the image. */
+        imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        /** The label text for the when the image is not found. */
+        imageNotFoundLabelText: PropTypes.string,
+        /** Title of the image to show when hovering it on desktop browsers */
+        imageTitle: PropTypes.string,
+        /** URL pointing to the image to display. */
+        imageUrl: PropTypes.string.isRequired,
+        /** The natural width of the image. */
+        imageWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        /** A visible label for the image. */
+        label: PropTypes.string.isRequired,
+        /** URL pointing to the placeholder image to display. */
+        placeholderImageUrl: PropTypes.string,
+        /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+        sizes: PropTypes.string,
+        /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+        srcSet: PropTypes.string,
+      }),
+    ])
+  ),
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
@@ -117,37 +165,8 @@ Component.propTypes = {
     /** The  visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),
-  /** The images to display in the gallery modal. */
-  images: PropTypes.arrayOf(
-    PropTypes.oneOfType([
-      PropTypes.shape({
-        /** The text to display above an isolated category of images. */
-        categoryText: PropTypes.string,
-      }),
-      PropTypes.shape({
-        /** Alternative text to show if the image can't be loaded by the browser */
-        alternativeText: PropTypes.string,
-        /** The natural height of the image. */
-        imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        /** The label text for the when the image is not found. */
-        imageNotFoundLabelText: PropTypes.string,
-        /** Title of the image to show when hovering it on desktop browsers */
-        imageTitle: PropTypes.string,
-        /** URL pointing to the image to display. */
-        imageUrl: PropTypes.string.isRequired,
-        /** The natural width of the image. */
-        imageWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        /** A visible label for the image. */
-        label: PropTypes.string.isRequired,
-        /** URL pointing to the placeholder image to display. */
-        placeholderImageUrl: PropTypes.string,
-        /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-        sizes: PropTypes.string,
-        /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-        srcSet: PropTypes.string,
-      }),
-    ])
-  ).isRequired,
+  /** The background placeholder image url of the hero. */
+  placeholderBackgroundImageUrl: PropTypes.string,
   /** The name of the property to display in the gallery modal. */
   propertyName: PropTypes.string,
   /** The numeral rating for the property, out of 5 */
