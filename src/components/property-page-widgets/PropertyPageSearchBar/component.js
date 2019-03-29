@@ -14,8 +14,9 @@ import { getSummaryMarkup } from './utils/getSummaryMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   dateRangePickerLocaleCode,
-  datesInputValue,
+  datesInputFocusedInput,
   datesInputOnFocusChange,
+  datesInputValue,
   getIsDayBlocked,
   guestsInputValue,
   guestsOptions,
@@ -31,8 +32,9 @@ export const Component = ({
 }) => {
   const sharedProps = {
     dateRangePickerLocaleCode,
-    datesInputValue,
+    datesInputFocusedInput,
     datesInputOnFocusChange,
+    datesInputValue,
     getIsDayBlocked,
     guestsInputValue,
     guestsOptions,
@@ -88,9 +90,10 @@ export const Component = ({
 Component.displayName = 'PropertyPageSearchBar';
 
 Component.defaultProps = {
-  datesInputValue: undefined,
-  datesInputOnFocusChange: Function.prototype,
   dateRangePickerLocaleCode: undefined,
+  datesInputFocusedInput: undefined,
+  datesInputOnFocusChange: Function.prototype,
+  datesInputValue: undefined,
   getIsDayBlocked: undefined,
   guestsInputValue: undefined,
   isShowingPlaceholder: false,
@@ -110,6 +113,8 @@ Component.propTypes = {
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
   // eslint-disable-next-line react/no-unused-prop-types
   dateRangePickerLocaleCode: PropTypes.string,
+  /** The field of the dates input which is currently focused. Used when consuming `PropertyPageSearchBar` as a controlled component. */
+  datesInputFocusedInput: PropTypes.oneOf([null, 'startDate', 'endDate']),
   /**
    * A function called when the focus state of the dates input changes.
    * @param {String} inputName

@@ -107,9 +107,10 @@ Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
   className: null,
-  datesInputValue: undefined,
-  datesInputOnFocusChange: Function.prototype,
   dateRangePickerLocaleCode: undefined,
+  datesInputFocusedInput: undefined,
+  datesInputOnFocusChange: Function.prototype,
+  datesInputValue: undefined,
   getIsDayBlocked: Function.prototype,
   guestsInputValue: undefined,
   isDisplayedAsModal: false,
@@ -142,6 +143,9 @@ Component.propTypes = {
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
   // eslint-disable-next-line react/no-unused-prop-types
   dateRangePickerLocaleCode: PropTypes.string,
+  /** The field of the dates input which is currently focused. Used when consuming `SearchBar` as a controlled component. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  datesInputFocusedInput: PropTypes.oneOf([null, 'startDate', 'endDate']),
   /**
    * A function called when the focus state of the dates input changes.
    * @param {String} inputName

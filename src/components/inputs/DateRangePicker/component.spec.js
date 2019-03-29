@@ -17,6 +17,7 @@ import { mount, shallow } from 'enzyme';
 import moment from 'moment';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 import { debounce } from 'lodash';
+
 import { getWindowHeight } from 'utils/get-window-height';
 
 import { ComponentWithResponsive as DateRangePicker } from './component';

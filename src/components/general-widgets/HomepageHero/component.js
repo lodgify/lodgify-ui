@@ -32,8 +32,9 @@ export const Component = ({
   headingText,
   placeholderBackgroundImageUrl,
   searchBarDateRangePickerLocaleCode,
-  searchBarDatesInputValue,
+  searchBarDatesInputFocusedInput,
   searchBarDatesInputOnFocusChange,
+  searchBarDatesInputValue,
   searchBarGetIsDayBlocked,
   searchBarGuestsInputValue,
   searchBarGuestsOptions,
@@ -46,8 +47,9 @@ export const Component = ({
 }) => {
   const searchBarSharedProps = {
     dateRangePickerLocaleCode: searchBarDateRangePickerLocaleCode,
-    datesInputValue: searchBarDatesInputValue,
+    datesInputFocusedInput: searchBarDatesInputFocusedInput,
     datesInputOnFocusChange: searchBarDatesInputOnFocusChange,
+    datesInputValue: searchBarDatesInputValue,
     getIsDayBlocked: searchBarGetIsDayBlocked,
     guestsInputValue: searchBarGuestsInputValue,
     guestsOptions: searchBarGuestsOptions,
@@ -153,6 +155,7 @@ Component.defaultProps = {
   searchBarLocationInputValue: undefined,
   placeholderBackgroundImageUrl: null,
   searchBarDateRangePickerLocaleCode: undefined,
+  searchBarDatesInputFocusedInput: undefined,
   searchBarDatesInputOnFocusChange: Function.prototype,
   searchBarGetIsDayBlocked: undefined,
   searchBarLocationOptions: undefined,
@@ -223,11 +226,16 @@ Component.propTypes = {
   placeholderBackgroundImageUrl: PropTypes.string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the search bars date range picker. */
   searchBarDateRangePickerLocaleCode: PropTypes.string,
+  /** The field of the dates input which is currently focused. Used when consuming `PropertyPageSearchBar` as a controlled component. */
+  searchBarDatesInputFocusedInput: PropTypes.oneOf([
+    null,
+    'startDate',
+    'endDate',
+  ]),
   /**
    * A function called when the focus state of the dates input in the search bar changes.
    * @param {String} inputName
    */
-  // eslint-disable-next-line react/no-unused-prop-types
   searchBarDatesInputOnFocusChange: PropTypes.func,
   /** The value for the dates input of the search bar. Used when consuming `HomepageHero` as a controlled component. */
   searchBarDatesInputValue: PropTypes.shape({
