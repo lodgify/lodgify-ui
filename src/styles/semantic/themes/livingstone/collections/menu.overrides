@@ -54,6 +54,10 @@
 
   .ui.dropdown .menu {
 
+    .simple.scrolling& {
+      overflow: auto;
+    }
+
     & > .selected.item:hover,
     & > .active.item:hover,
     & > .item:hover {
