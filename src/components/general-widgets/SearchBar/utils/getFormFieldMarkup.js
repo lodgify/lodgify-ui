@@ -27,6 +27,7 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
 export const getFormFieldMarkup = (
   {
     dateRangePickerLocaleCode,
+    datesInputFocusedInput,
     datesInputValue,
     datesInputOnFocusChange,
     getIsDayBlocked,
@@ -72,6 +73,7 @@ export const getFormFieldMarkup = (
       <Form.Field width={datePickerColumnWidth}>
         <DateRangePicker
           endDatePlaceholderText="Check-out"
+          focusedInput={datesInputFocusedInput}
           getIsDayBlocked={getIsDayBlocked}
           localeCode={dateRangePickerLocaleCode}
           name="dates"

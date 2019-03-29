@@ -25,7 +25,8 @@ import { ComponentWithResponsive as DateRangePicker } from './component';
 const STARTING_WINDOW_HEIGHT = 900;
 const NEXT_WINDOW_HEIGHT = 800;
 
-const getDateRangePicker = () => mount(<DateRangePicker />);
+const getDateRangePicker = extraProps =>
+  mount(<DateRangePicker {...extraProps} />);
 const getWrappedDateRangePicker = props => {
   const Child = shallow(<DateRangePicker />).prop('as');
 
@@ -43,6 +44,14 @@ describe('<DateRangePicker />', () => {
     const wrapper = getDateRangePicker();
 
     expect(wrapper).toMatchSnapshot();
+  });
+
+  describe('if `props.focusedInput` is passed', () => {
+    it('should render the right structure', () => {
+      const wrapper = getDateRangePicker({ focusedInput: 'startDate' });
+
+      expect(wrapper).toMatchSnapshot();
+    });
   });
 
   describe('`componentDidMount`', () => {

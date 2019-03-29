@@ -428,6 +428,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   parentProps={
                                     Object {
                                       "dateRangePickerLocaleCode": undefined,
+                                      "datesInputFocusedInput": undefined,
                                       "datesInputOnFocusChange": [Function],
                                       "datesInputValue": undefined,
                                       "getIsDayBlocked": [Function],
