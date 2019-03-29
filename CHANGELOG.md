@@ -1,3 +1,11 @@
+# [1.165.0](https://github.com/lodgify/lodgify-ui/compare/v1.164.0...v1.165.0) (2019-03-29)
+
+
+### Features
+
+* **DateRangePicker:** expose controllable props.focusedInput ([d77c7d4](https://github.com/lodgify/lodgify-ui/commit/d77c7d4))
+* **DateRangePicker:** pass props.focusedInput through consuming components ([638bc0f](https://github.com/lodgify/lodgify-ui/commit/638bc0f))
+
 # [1.164.0](https://github.com/lodgify/lodgify-ui/compare/v1.163.0...v1.164.0) (2019-03-28)
 
 
