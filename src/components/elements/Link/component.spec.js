@@ -32,6 +32,7 @@ describe('<Link />', () => {
       as: 'a',
       href: URL,
       target: '_self',
+      type: 'button',
       floated: 'left',
       onClick: Function.prototype,
     });
