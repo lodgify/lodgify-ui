@@ -1,3 +1,10 @@
+## [1.166.1](https://github.com/lodgify/lodgify-ui/compare/v1.166.0...v1.166.1) (2019-04-01)
+
+
+### Bug Fixes
+
+* **button.overrides:** prevent text wrapping ([78da318](https://github.com/lodgify/lodgify-ui/commit/78da318))
+
 # [1.166.0](https://github.com/lodgify/lodgify-ui/compare/v1.165.0...v1.166.0) (2019-04-01)
 
 
