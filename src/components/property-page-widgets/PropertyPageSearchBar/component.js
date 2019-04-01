@@ -100,7 +100,7 @@ Component.defaultProps = {
   onChangeInput: undefined,
   onSubmit: undefined,
   searchButton: (
-    <Button isPositionedRight isRounded>
+    <Button isFormSubmit isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),

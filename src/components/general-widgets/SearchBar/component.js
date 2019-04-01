@@ -125,7 +125,7 @@ Component.defaultProps = {
   onCloseModal: Function.prototype,
   onSubmit: Function.prototype,
   searchButton: (
-    <Button icon={ICON_NAMES.SEARCH} isRounded>
+    <Button icon={ICON_NAMES.SEARCH} isFormSubmit isRounded>
       {SEARCH}
     </Button>
   ),
