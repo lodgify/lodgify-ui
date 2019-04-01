@@ -1,3 +1,18 @@
+# [1.166.0](https://github.com/lodgify/lodgify-ui/compare/v1.165.0...v1.166.0) (2019-04-01)
+
+
+### Bug Fixes
+
+* **Form:** consume Button.props.isFormSubmit to identify unique submit button ([10d6901](https://github.com/lodgify/lodgify-ui/commit/10d6901))
+* **Link:** set Button.props.type to button ([f44541b](https://github.com/lodgify/lodgify-ui/commit/f44541b))
+* **menu.overrides:**  remove first child folder styles ([0c2d206](https://github.com/lodgify/lodgify-ui/commit/0c2d206))
+* **menu.overrides:** implement overflow for menu dropdowns ([ec160da](https://github.com/lodgify/lodgify-ui/commit/ec160da))
+
+
+### Features
+
+* **Button:** expose props.isFormSubmit ([8ba8c00](https://github.com/lodgify/lodgify-ui/commit/8ba8c00))
+
 # [1.165.0](https://github.com/lodgify/lodgify-ui/compare/v1.164.0...v1.165.0) (2019-03-29)
 
 
