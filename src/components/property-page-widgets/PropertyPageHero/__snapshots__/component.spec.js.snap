@@ -242,6 +242,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                                 icon={null}
                                 isCompact={false}
                                 isDisabled={false}
+                                isFormSubmit={false}
                                 isLoading={false}
                                 isPositionedRight={false}
                                 isRounded={true}
@@ -260,11 +261,13 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                                   onClick={[Function]}
                                   secondary={false}
                                   size={null}
+                                  type="button"
                                 >
                                   <button
                                     className="ui circular left floated button"
                                     onClick={[Function]}
                                     role="button"
+                                    type="button"
                                   >
                                     Book now
                                   </button>
@@ -533,6 +536,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                 icon={null}
                                 isCompact={false}
                                 isDisabled={false}
+                                isFormSubmit={false}
                                 isLoading={false}
                                 isPositionedRight={false}
                                 isRounded={true}
@@ -551,11 +555,13 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                   onClick={[Function]}
                                   secondary={false}
                                   size={null}
+                                  type="button"
                                 >
                                   <button
                                     className="ui circular left floated button"
                                     onClick={[Function]}
                                     role="button"
+                                    type="button"
                                   >
                                     Book now
                                   </button>
@@ -618,6 +624,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                           icon="placeholder"
                           isCompact={true}
                           isDisabled={false}
+                          isFormSubmit={false}
                           isLoading={false}
                           isPositionedRight={true}
                           isRounded={false}
@@ -643,6 +650,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                             icon="placeholder"
                             isCompact={true}
                             isDisabled={false}
+                            isFormSubmit={false}
                             isLoading={false}
                             isPositionedRight={true}
                             isRounded={false}
@@ -684,6 +692,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                               icon="placeholder"
                               isCompact={true}
                               isDisabled={false}
+                              isFormSubmit={false}
                               isLoading={false}
                               isPositionedRight={true}
                               isRounded={false}
@@ -713,6 +722,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                 icon="placeholder"
                                 isCompact={true}
                                 isDisabled={false}
+                                isFormSubmit={false}
                                 isLoading={false}
                                 isPositionedRight={true}
                                 isRounded={false}
@@ -732,6 +742,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                 icon="placeholder"
                                 isCompact={true}
                                 isDisabled={false}
+                                isFormSubmit={false}
                                 isLoading={false}
                                 isPositionedRight={true}
                                 isRounded={false}
@@ -754,11 +765,13 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                   onClick={[Function]}
                                   secondary={true}
                                   size={null}
+                                  type="button"
                                 >
                                   <button
                                     className="ui compact secondary right floated button"
                                     onClick={[Function]}
                                     role="button"
+                                    type="button"
                                   >
                                     <Icon
                                       color={null}

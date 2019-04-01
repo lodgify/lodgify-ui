@@ -276,6 +276,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -294,11 +295,13 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Sign up
                     </button>
@@ -590,6 +593,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -608,11 +612,13 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Sign up
                     </button>
@@ -884,6 +890,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -902,11 +909,13 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Sign up
                     </button>

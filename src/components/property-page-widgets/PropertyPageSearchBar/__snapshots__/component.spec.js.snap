@@ -32,6 +32,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       icon={null}
       isCompact={false}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
       isRounded={true}
@@ -50,6 +51,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       icon={null}
       isCompact={false}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
       isRounded={true}
@@ -119,6 +121,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               icon={null}
               isCompact={false}
               isDisabled={false}
+              isFormSubmit={false}
               isLoading={false}
               isPositionedRight={true}
               isRounded={true}
@@ -816,6 +819,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                   icon={null}
                                                   isCompact={false}
                                                   isDisabled={false}
+                                                  isFormSubmit={false}
                                                   isLoading={false}
                                                   isPositionedRight={true}
                                                   isRounded={true}
@@ -834,11 +838,13 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                     onClick={[Function]}
                                                     secondary={false}
                                                     size={null}
+                                                    type="button"
                                                   >
                                                     <button
                                                       className="ui circular right floated button"
                                                       onClick={[Function]}
                                                       role="button"
+                                                      type="button"
                                                     >
                                                       Check our availability
                                                     </button>
@@ -926,6 +932,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               icon={null}
               isCompact={false}
               isDisabled={false}
+              isFormSubmit={false}
               isLoading={false}
               isPositionedRight={true}
               isRounded={true}
@@ -1078,6 +1085,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                           icon={null}
                                           isCompact={false}
                                           isDisabled={false}
+                                          isFormSubmit={false}
                                           isLoading={false}
                                           isPositionedRight={true}
                                           isRounded={true}
@@ -1119,6 +1127,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             icon={null}
                                             isCompact={false}
                                             isDisabled={false}
+                                            isFormSubmit={false}
                                             isLoading={false}
                                             isPositionedRight={true}
                                             isRounded={true}
@@ -1148,6 +1157,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={true}
                                               isRounded={true}
@@ -1167,6 +1177,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={true}
                                               isRounded={true}
@@ -1189,11 +1200,13 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                 onClick={[Function]}
                                                 secondary={false}
                                                 size={null}
+                                                type="button"
                                               >
                                                 <button
                                                   className="ui circular right floated button"
                                                   onClick={[Function]}
                                                   role="button"
+                                                  type="button"
                                                 >
                                                   Check our availability
                                                 </button>
@@ -1255,6 +1268,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       icon={null}
       isCompact={false}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
       isRounded={true}
@@ -1273,6 +1287,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       icon={null}
       isCompact={false}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
       isRounded={true}
@@ -1342,6 +1357,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               icon={null}
               isCompact={false}
               isDisabled={false}
+              isFormSubmit={false}
               isLoading={false}
               isPositionedRight={true}
               isRounded={true}
@@ -2197,6 +2213,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   icon={null}
                                                   isCompact={false}
                                                   isDisabled={false}
+                                                  isFormSubmit={false}
                                                   isLoading={false}
                                                   isPositionedRight={true}
                                                   isRounded={true}
@@ -2215,11 +2232,13 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     onClick={[Function]}
                                                     secondary={false}
                                                     size={null}
+                                                    type="button"
                                                   >
                                                     <button
                                                       className="ui circular right floated button"
                                                       onClick={[Function]}
                                                       role="button"
+                                                      type="button"
                                                     >
                                                       Check our availability
                                                     </button>
@@ -2307,6 +2326,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               icon={null}
               isCompact={false}
               isDisabled={false}
+              isFormSubmit={false}
               isLoading={false}
               isPositionedRight={true}
               isRounded={true}
@@ -2617,6 +2637,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                           icon={null}
                                           isCompact={false}
                                           isDisabled={false}
+                                          isFormSubmit={false}
                                           isLoading={false}
                                           isPositionedRight={true}
                                           isRounded={true}
@@ -2658,6 +2679,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             icon={null}
                                             isCompact={false}
                                             isDisabled={false}
+                                            isFormSubmit={false}
                                             isLoading={false}
                                             isPositionedRight={true}
                                             isRounded={true}
@@ -2687,6 +2709,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={true}
                                               isRounded={true}
@@ -2706,6 +2729,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={true}
                                               isRounded={true}
@@ -2728,11 +2752,13 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                 onClick={[Function]}
                                                 secondary={false}
                                                 size={null}
+                                                type="button"
                                               >
                                                 <button
                                                   className="ui circular right floated button"
                                                   onClick={[Function]}
                                                   role="button"
+                                                  type="button"
                                                 >
                                                   Check our availability
                                                 </button>

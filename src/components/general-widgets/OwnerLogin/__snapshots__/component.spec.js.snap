@@ -271,6 +271,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                     href={null}
                     onClick={[Function]}
                     target="_self"
+                    type="button"
                   >
                     <button
                       className="ui basic left floated button"
@@ -278,6 +279,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       onClick={[Function]}
                       role="button"
                       target="_self"
+                      type="button"
                     >
                       <Modal
                         hasCloseIcon={true}
@@ -365,6 +367,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -383,11 +386,13 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Log in
                     </button>
@@ -674,6 +679,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                     href={null}
                     onClick={[Function]}
                     target="_self"
+                    type="button"
                   >
                     <button
                       className="ui basic left floated button"
@@ -681,6 +687,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       onClick={[Function]}
                       role="button"
                       target="_self"
+                      type="button"
                     >
                       <Modal
                         hasCloseIcon={true}
@@ -768,6 +775,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -786,11 +794,13 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Log in
                     </button>
@@ -1057,6 +1067,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                     href={null}
                     onClick={[Function]}
                     target="_self"
+                    type="button"
                   >
                     <button
                       className="ui basic left floated button"
@@ -1064,6 +1075,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                       onClick={[Function]}
                       role="button"
                       target="_self"
+                      type="button"
                     >
                       <Modal
                         hasCloseIcon={true}
@@ -1151,6 +1163,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -1169,11 +1182,13 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Log in
                     </button>

@@ -1324,6 +1324,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                             href={null}
                             onClick={[Function]}
                             target="_self"
+                            type="button"
                           >
                             <button
                               className="ui basic left floated button"
@@ -1331,6 +1332,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               onClick={[Function]}
                               role="button"
                               target="_self"
+                              type="button"
                             >
                               Explore all pictures
                             </button>

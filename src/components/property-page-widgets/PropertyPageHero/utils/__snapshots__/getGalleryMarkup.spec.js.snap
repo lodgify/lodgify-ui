@@ -50,6 +50,7 @@ exports[`\`getViewMoreButtonMarkup\` if there are two images or more should retu
             icon="placeholder"
             isCompact={true}
             isDisabled={false}
+            isFormSubmit={false}
             isLoading={false}
             isPositionedRight={true}
             isRounded={false}

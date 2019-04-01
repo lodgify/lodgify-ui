@@ -60,6 +60,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
       icon="search"
       isCompact={false}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={false}
       isRounded={true}
@@ -910,6 +911,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   icon="search"
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={false}
                   isLoading={false}
                   isPositionedRight={false}
                   isRounded={true}
@@ -928,11 +930,13 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="button"
                   >
                     <button
                       className="ui circular left floated button"
                       onClick={[Function]}
                       role="button"
+                      type="button"
                     >
                       <Icon
                         color={null}
@@ -1037,6 +1041,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
       icon="search"
       isCompact={false}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={false}
       isRounded={true}
@@ -1940,6 +1945,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                           icon="search"
                                           isCompact={false}
                                           isDisabled={false}
+                                          isFormSubmit={false}
                                           isLoading={false}
                                           isPositionedRight={false}
                                           isRounded={true}
@@ -1958,11 +1964,13 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                             onClick={[Function]}
                                             secondary={false}
                                             size={null}
+                                            type="button"
                                           >
                                             <button
                                               className="ui circular left floated button"
                                               onClick={[Function]}
                                               role="button"
+                                              type="button"
                                             >
                                               <Icon
                                                 color={null}
@@ -2077,6 +2085,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
       icon="search"
       isCompact={false}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={false}
       isRounded={true}
@@ -2972,6 +2981,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   icon="search"
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={false}
                   isLoading={false}
                   isPositionedRight={false}
                   isRounded={true}
@@ -2990,11 +3000,13 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="button"
                   >
                     <button
                       className="ui circular left floated button"
                       onClick={[Function]}
                       role="button"
+                      type="button"
                     >
                       <Icon
                         color={null}
@@ -3078,6 +3090,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
       icon="search"
       isCompact={false}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={false}
       isRounded={true}
@@ -3602,6 +3615,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   icon="search"
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={false}
                   isLoading={false}
                   isPositionedRight={false}
                   isRounded={true}
@@ -3620,11 +3634,13 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="button"
                   >
                     <button
                       className="ui circular left floated button"
                       onClick={[Function]}
                       role="button"
+                      type="button"
                     >
                       <Icon
                         color={null}

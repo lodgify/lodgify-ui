@@ -15,6 +15,7 @@ Array [
         icon={null}
         isCompact={false}
         isDisabled={false}
+        isFormSubmit={false}
         isLoading={false}
         isPositionedRight={false}
         isRounded={true}
@@ -33,11 +34,13 @@ Array [
           onClick={[Function]}
           secondary={false}
           size={null}
+          type="button"
         >
           <button
             className="ui circular left floated button"
             onClick={[Function]}
             role="button"
+            type="button"
           >
             some Elisabeth
           </button>

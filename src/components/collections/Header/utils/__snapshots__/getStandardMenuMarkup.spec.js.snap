@@ -676,6 +676,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
         icon={null}
         isCompact={false}
         isDisabled={false}
+        isFormSubmit={false}
         isLoading={false}
         isPositionedRight={false}
         isRounded={true}
@@ -694,11 +695,13 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
           onClick={[Function]}
           secondary={false}
           size={null}
+          type="button"
         >
           <button
             className="ui circular left floated button"
             onClick={[Function]}
             role="button"
+            type="button"
           >
             someText
           </button>
