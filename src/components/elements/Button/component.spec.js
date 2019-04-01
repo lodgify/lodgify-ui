@@ -7,6 +7,7 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
+
 import { Icon } from 'elements/Icon';
 
 import { Component as Button } from './component';

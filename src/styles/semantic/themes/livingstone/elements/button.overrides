@@ -102,6 +102,8 @@
 
   a& {
     text-decoration: underline;
+    -moz-appearance: none;
+    -webkit-appearance: none;
   }
 }
 
