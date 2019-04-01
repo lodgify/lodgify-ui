@@ -7,7 +7,6 @@ import {
   expectComponentToHaveProps,
   expectComponentToHaveDisplayName,
 } from '@lodgify/enzyme-jest-expect-helpers';
-
 import { Icon } from 'elements/Icon';
 
 import { Component as Button } from './component';
@@ -30,6 +29,7 @@ describe('<Button />', () => {
       loading: false,
       circular: false,
       compact: false,
+      type: 'button',
     });
   });
 
@@ -38,6 +38,16 @@ describe('<Button />', () => {
 
     expectComponentToHaveProps(wrapper, {
       circular: true,
+    });
+  });
+
+  describe('if `props.isFormSubmit` is true', () => {
+    it('should pass the `Button` component `floated="right"`', () => {
+      const wrapper = getButton({ isFormSubmit: true });
+
+      expectComponentToHaveProps(wrapper, {
+        type: 'submit',
+      });
     });
   });
 

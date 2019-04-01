@@ -161,6 +161,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                           icon={null}
                           isCompact={true}
                           isDisabled={true}
+                          isFormSubmit={false}
                           isLoading={false}
                           isPositionedRight={true}
                           isRounded={true}
@@ -202,6 +203,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                             icon={null}
                             isCompact={true}
                             isDisabled={true}
+                            isFormSubmit={false}
                             isLoading={false}
                             isPositionedRight={true}
                             isRounded={true}
@@ -231,6 +233,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                               icon={null}
                               isCompact={true}
                               isDisabled={true}
+                              isFormSubmit={false}
                               isLoading={false}
                               isPositionedRight={true}
                               isRounded={true}
@@ -250,6 +253,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                               icon={null}
                               isCompact={true}
                               isDisabled={true}
+                              isFormSubmit={false}
                               isLoading={false}
                               isPositionedRight={true}
                               isRounded={true}
@@ -272,6 +276,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                                 onClick={[Function]}
                                 secondary={false}
                                 size="medium"
+                                type="button"
                               >
                                 <button
                                   className="ui medium circular compact disabled right floated button"
@@ -279,6 +284,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                                   onClick={[Function]}
                                   role="button"
                                   tabIndex={-1}
+                                  type="button"
                                 >
                                   Submit a review
                                 </button>
@@ -1199,6 +1205,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                           icon={null}
                           isCompact={true}
                           isDisabled={true}
+                          isFormSubmit={false}
                           isLoading={false}
                           isPositionedRight={true}
                           isRounded={true}
@@ -1240,6 +1247,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                             icon={null}
                             isCompact={true}
                             isDisabled={true}
+                            isFormSubmit={false}
                             isLoading={false}
                             isPositionedRight={true}
                             isRounded={true}
@@ -1269,6 +1277,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                               icon={null}
                               isCompact={true}
                               isDisabled={true}
+                              isFormSubmit={false}
                               isLoading={false}
                               isPositionedRight={true}
                               isRounded={true}
@@ -1288,6 +1297,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                               icon={null}
                               isCompact={true}
                               isDisabled={true}
+                              isFormSubmit={false}
                               isLoading={false}
                               isPositionedRight={true}
                               isRounded={true}
@@ -1310,6 +1320,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                                 onClick={[Function]}
                                 secondary={false}
                                 size="medium"
+                                type="button"
                               >
                                 <button
                                   className="ui medium circular compact disabled right floated button"
@@ -1317,6 +1328,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                                   onClick={[Function]}
                                   role="button"
                                   tabIndex={-1}
+                                  type="button"
                                 >
                                   Submit a review
                                 </button>
@@ -2252,6 +2264,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                           icon={null}
                           isCompact={true}
                           isDisabled={false}
+                          isFormSubmit={false}
                           isLoading={false}
                           isPositionedRight={true}
                           isRounded={true}
@@ -2293,6 +2306,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                             icon={null}
                             isCompact={true}
                             isDisabled={false}
+                            isFormSubmit={false}
                             isLoading={false}
                             isPositionedRight={true}
                             isRounded={true}
@@ -2322,6 +2336,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               icon={null}
                               isCompact={true}
                               isDisabled={false}
+                              isFormSubmit={false}
                               isLoading={false}
                               isPositionedRight={true}
                               isRounded={true}
@@ -2341,6 +2356,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               icon={null}
                               isCompact={true}
                               isDisabled={false}
+                              isFormSubmit={false}
                               isLoading={false}
                               isPositionedRight={true}
                               isRounded={true}
@@ -2363,11 +2379,13 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 onClick={[Function]}
                                 secondary={false}
                                 size="medium"
+                                type="button"
                               >
                                 <button
                                   className="ui medium circular compact right floated button"
                                   onClick={[Function]}
                                   role="button"
+                                  type="button"
                                 >
                                   Submit a review
                                 </button>

@@ -11,15 +11,16 @@ import { Icon } from 'elements/Icon';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   children,
-  isDisabled,
-  isLoading,
-  isPositionedRight,
-  onClick,
-  isRounded,
-  isSecondary,
-  isCompact,
   hasShadow,
   icon,
+  isCompact,
+  isDisabled,
+  isFormSubmit,
+  isLoading,
+  isPositionedRight,
+  isRounded,
+  isSecondary,
+  onClick,
   size,
 }) => (
   <Button
@@ -34,6 +35,7 @@ export const Component = ({
     onClick={onClick}
     secondary={isSecondary}
     size={size}
+    type={isFormSubmit ? 'submit' : 'button'}
   >
     {!!icon && <Icon name={icon} />}
     {children}
@@ -44,15 +46,16 @@ Component.displayName = 'Button';
 
 Component.defaultProps = {
   children: null,
-  onClick: Function.prototype,
-  isDisabled: false,
-  isPositionedRight: false,
-  isLoading: false,
-  isRounded: false,
-  isSecondary: false,
-  isCompact: false,
   hasShadow: false,
   icon: null,
+  isCompact: false,
+  isDisabled: false,
+  isFormSubmit: false,
+  isLoading: false,
+  isPositionedRight: false,
+  isRounded: false,
+  isSecondary: false,
+  onClick: Function.prototype,
   size: null,
 };
 
@@ -69,6 +72,8 @@ Component.propTypes = {
   isCompact: PropTypes.bool,
   /** Is the button disabled. */
   isDisabled: PropTypes.bool,
+  /** Is the button for submitting the form in which it is rendered. */
+  isFormSubmit: PropTypes.bool,
   /** Is the button in loading state. */
   isLoading: PropTypes.bool,
   /** Is the button positioned on the right hand side of its container. */

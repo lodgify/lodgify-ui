@@ -84,6 +84,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                         href="/"
                         role="button"
                         target="_blank"
+                        type="button"
                       >
                         A link
                       </a>
@@ -93,6 +94,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                       <button
                         class="ui left floated button"
                         role="button"
+                        type="button"
                       >
                         There is some text
                       </button>
@@ -208,6 +210,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                           href="/"
                           onClick={[Function]}
                           target="_blank"
+                          type="button"
                         >
                           <a
                             className="ui basic left floated button"
@@ -215,6 +218,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                             onClick={[Function]}
                             role="button"
                             target="_blank"
+                            type="button"
                           >
                             A link
                           </a>
@@ -227,6 +231,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                     icon={null}
                     isCompact={false}
                     isDisabled={false}
+                    isFormSubmit={true}
                     isLoading={false}
                     isPositionedRight={true}
                     isRounded={false}
@@ -245,11 +250,13 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                       onClick={[Function]}
                       secondary={false}
                       size={null}
+                      type="submit"
                     >
                       <button
                         className="ui right floated button"
                         onClick={[Function]}
                         role="button"
+                        type="submit"
                       >
                         There is some text
                       </button>
@@ -338,6 +345,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                         href="/"
                         role="button"
                         target="_blank"
+                        type="button"
                       >
                         A link
                       </a>
@@ -347,6 +355,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                       <button
                         class="ui left floated button"
                         role="button"
+                        type="button"
                       >
                         There is some text
                       </button>
@@ -388,6 +397,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                         href="/"
                         role="button"
                         target="_blank"
+                        type="button"
                       >
                         A link
                       </a>
@@ -397,6 +407,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                       <button
                         class="ui left floated button"
                         role="button"
+                        type="button"
                       >
                         There is some text
                       </button>

@@ -467,6 +467,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                                 href={null}
                                 onClick={[Function]}
                                 target="_self"
+                                type="button"
                               >
                                 <button
                                   className="ui basic left floated button"
@@ -474,6 +475,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                                   onClick={[Function]}
                                   role="button"
                                   target="_self"
+                                  type="button"
                                 >
                                   View more
                                 </button>

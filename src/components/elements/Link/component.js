@@ -20,6 +20,7 @@ export const Component = ({
     href={href}
     onClick={onClick}
     target={willOpenInNewTab ? '_blank' : '_self'}
+    type="button"
   >
     {children}
   </Button>

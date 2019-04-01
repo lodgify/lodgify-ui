@@ -227,6 +227,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                               icon={null}
                               isCompact={false}
                               isDisabled={false}
+                              isFormSubmit={false}
                               isLoading={false}
                               isPositionedRight={false}
                               isRounded={true}
@@ -245,11 +246,13 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                 onClick={[Function]}
                                 secondary={false}
                                 size={null}
+                                type="button"
                               >
                                 <button
                                   className="ui circular left floated button"
                                   onClick={[Function]}
                                   role="button"
+                                  type="button"
                                 >
                                   Book now
                                 </button>

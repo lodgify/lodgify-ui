@@ -601,6 +601,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                       href={null}
                                                       onClick={[Function]}
                                                       target="_self"
+                                                      type="button"
                                                     >
                                                       <button
                                                         className="ui basic left floated button"
@@ -608,6 +609,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                         onClick={[Function]}
                                                         role="button"
                                                         target="_self"
+                                                        type="button"
                                                       >
                                                         More Info
                                                       </button>
@@ -1536,6 +1538,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                       href={null}
                                                       onClick={[Function]}
                                                       target="_self"
+                                                      type="button"
                                                     >
                                                       <button
                                                         className="ui basic left floated button"
@@ -1543,6 +1546,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                         onClick={[Function]}
                                                         role="button"
                                                         target="_self"
+                                                        type="button"
                                                       >
                                                         More Info
                                                       </button>

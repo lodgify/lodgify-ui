@@ -200,14 +200,6 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
     >
       <ImageGallery
         additionalClass=""
-        autoPlay={false}
-        disableArrowKeys={false}
-        disableSwipe={false}
-        disableThumbnailScroll={false}
-        flickThreshold={0.4}
-        indexSeparator=" / "
-        infinite={true}
-        isRTL={false}
         items={
           Array [
             Object {
@@ -221,68 +213,14 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
         }
         lazyLoad={true}
         onSlide={[Function]}
-        preventDefaultTouchmoveEvent={false}
-        renderFullscreenButton={[Function]}
         renderLeftNav={[Function]}
-        renderPlayPauseButton={[Function]}
         renderRightNav={[Function]}
         showBullets={false}
         showFullscreenButton={false}
-        showIndex={false}
-        showNav={true}
         showPlayButton={false}
         showThumbnails={false}
-        slideDuration={450}
-        slideInterval={3000}
-        startIndex={0}
-        stopPropagation={false}
-        swipeThreshold={30}
-        swipingTransitionDuration={0}
-        thumbnailPosition="bottom"
-        useBrowserFullscreen={true}
-        useTranslate3D={true}
       >
-        <div
-          aria-live="polite"
-          className="image-gallery  "
-        >
-          <div
-            className="image-gallery-content"
-          >
-            <div
-              className="image-gallery-slide-wrapper bottom "
-            >
-              <div
-                className="image-gallery-slides"
-              >
-                <div
-                  className="image-gallery-slide center"
-                  key="0"
-                  style={
-                    Object {
-                      "MozTransform": "translate3d(0%, 0, 0)",
-                      "OTransform": "translate3d(0%, 0, 0)",
-                      "WebkitTransform": "translate3d(0%, 0, 0)",
-                      "msTransform": "translate3d(0%, 0, 0)",
-                      "transform": "translate3d(0%, 0, 0)",
-                    }
-                  }
-                >
-                  <div
-                    className="image-gallery-image"
-                  >
-                    <img
-                      alt="Two cats"
-                      onError={[Function]}
-                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      title="Two cats"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
       </ImageGallery>
     </Slideshow>
     <Paragraph
@@ -605,14 +543,6 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
     >
       <ImageGallery
         additionalClass=""
-        autoPlay={false}
-        disableArrowKeys={false}
-        disableSwipe={false}
-        disableThumbnailScroll={false}
-        flickThreshold={0.4}
-        indexSeparator=" / "
-        infinite={true}
-        isRTL={false}
         items={
           Array [
             Object {
@@ -626,68 +556,14 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
         }
         lazyLoad={true}
         onSlide={[Function]}
-        preventDefaultTouchmoveEvent={false}
-        renderFullscreenButton={[Function]}
         renderLeftNav={[Function]}
-        renderPlayPauseButton={[Function]}
         renderRightNav={[Function]}
         showBullets={false}
         showFullscreenButton={false}
-        showIndex={false}
-        showNav={true}
         showPlayButton={false}
         showThumbnails={false}
-        slideDuration={450}
-        slideInterval={3000}
-        startIndex={0}
-        stopPropagation={false}
-        swipeThreshold={30}
-        swipingTransitionDuration={0}
-        thumbnailPosition="bottom"
-        useBrowserFullscreen={true}
-        useTranslate3D={true}
       >
-        <div
-          aria-live="polite"
-          className="image-gallery  "
-        >
-          <div
-            className="image-gallery-content"
-          >
-            <div
-              className="image-gallery-slide-wrapper bottom "
-            >
-              <div
-                className="image-gallery-slides"
-              >
-                <div
-                  className="image-gallery-slide center"
-                  key="0"
-                  style={
-                    Object {
-                      "MozTransform": "translate3d(0%, 0, 0)",
-                      "OTransform": "translate3d(0%, 0, 0)",
-                      "WebkitTransform": "translate3d(0%, 0, 0)",
-                      "msTransform": "translate3d(0%, 0, 0)",
-                      "transform": "translate3d(0%, 0, 0)",
-                    }
-                  }
-                >
-                  <div
-                    className="image-gallery-image"
-                  >
-                    <img
-                      alt="Two cats"
-                      onError={[Function]}
-                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      title="Two cats"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
       </ImageGallery>
     </Slideshow>
     <Divider
@@ -1094,14 +970,6 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
     >
       <ImageGallery
         additionalClass=""
-        autoPlay={false}
-        disableArrowKeys={false}
-        disableSwipe={false}
-        disableThumbnailScroll={false}
-        flickThreshold={0.4}
-        indexSeparator=" / "
-        infinite={true}
-        isRTL={false}
         items={
           Array [
             Object {
@@ -1115,68 +983,14 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
         }
         lazyLoad={true}
         onSlide={[Function]}
-        preventDefaultTouchmoveEvent={false}
-        renderFullscreenButton={[Function]}
         renderLeftNav={[Function]}
-        renderPlayPauseButton={[Function]}
         renderRightNav={[Function]}
         showBullets={false}
         showFullscreenButton={false}
-        showIndex={false}
-        showNav={true}
         showPlayButton={false}
         showThumbnails={false}
-        slideDuration={450}
-        slideInterval={3000}
-        startIndex={0}
-        stopPropagation={false}
-        swipeThreshold={30}
-        swipingTransitionDuration={0}
-        thumbnailPosition="bottom"
-        useBrowserFullscreen={true}
-        useTranslate3D={true}
       >
-        <div
-          aria-live="polite"
-          className="image-gallery  "
-        >
-          <div
-            className="image-gallery-content"
-          >
-            <div
-              className="image-gallery-slide-wrapper bottom "
-            >
-              <div
-                className="image-gallery-slides"
-              >
-                <div
-                  className="image-gallery-slide center"
-                  key="0"
-                  style={
-                    Object {
-                      "MozTransform": "translate3d(0%, 0, 0)",
-                      "OTransform": "translate3d(0%, 0, 0)",
-                      "WebkitTransform": "translate3d(0%, 0, 0)",
-                      "msTransform": "translate3d(0%, 0, 0)",
-                      "transform": "translate3d(0%, 0, 0)",
-                    }
-                  }
-                >
-                  <div
-                    className="image-gallery-image"
-                  >
-                    <img
-                      alt="Two cats"
-                      onError={[Function]}
-                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      title="Two cats"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
       </ImageGallery>
     </Slideshow>
     <Paragraph
@@ -1724,14 +1538,6 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
     >
       <ImageGallery
         additionalClass=""
-        autoPlay={false}
-        disableArrowKeys={false}
-        disableSwipe={false}
-        disableThumbnailScroll={false}
-        flickThreshold={0.4}
-        indexSeparator=" / "
-        infinite={true}
-        isRTL={false}
         items={
           Array [
             Object {
@@ -1752,228 +1558,14 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
         }
         lazyLoad={true}
         onSlide={[Function]}
-        preventDefaultTouchmoveEvent={false}
-        renderFullscreenButton={[Function]}
         renderLeftNav={[Function]}
-        renderPlayPauseButton={[Function]}
         renderRightNav={[Function]}
         showBullets={true}
         showFullscreenButton={false}
-        showIndex={false}
-        showNav={true}
         showPlayButton={false}
         showThumbnails={false}
-        slideDuration={450}
-        slideInterval={3000}
-        startIndex={0}
-        stopPropagation={false}
-        swipeThreshold={30}
-        swipingTransitionDuration={0}
-        thumbnailPosition="bottom"
-        useBrowserFullscreen={true}
-        useTranslate3D={true}
       >
-        <div
-          aria-live="polite"
-          className="image-gallery  "
-        >
-          <div
-            className="image-gallery-content"
-          >
-            <div
-              className="image-gallery-slide-wrapper bottom "
-            >
-              <span
-                key="navigation"
-              >
-                <Button
-                  as="button"
-                  circular={true}
-                  content={null}
-                  disabled={false}
-                  onClick={[Function]}
-                  primary={true}
-                >
-                  <button
-                    className="ui circular primary button"
-                    onClick={[Function]}
-                    role="button"
-                  >
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isButton={false}
-                      isCircular={false}
-                      isColorInverted={true}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="chevron left"
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon inverted"
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </i>
-                    </Icon>
-                  </button>
-                </Button>
-                <Button
-                  as="button"
-                  circular={true}
-                  content={null}
-                  disabled={false}
-                  onClick={[Function]}
-                  primary={true}
-                >
-                  <button
-                    className="ui circular primary button"
-                    onClick={[Function]}
-                    role="button"
-                  >
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isButton={false}
-                      isCircular={false}
-                      isColorInverted={true}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="chevron right"
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon inverted"
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </i>
-                    </Icon>
-                  </button>
-                </Button>
-              </span>
-              <Swipeable
-                className="image-gallery-swipe"
-                delta={0}
-                disabled={false}
-                flickThreshold={0.4}
-                key="swipeable"
-                nodeName="div"
-                onSwiped={[Function]}
-                onSwiping={[Function]}
-                preventDefaultTouchmoveEvent={false}
-                rotationAngle={0}
-                stopPropagation={false}
-              >
-                <div
-                  className="image-gallery-swipe"
-                  onMouseDown={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                >
-                  <div
-                    className="image-gallery-slides"
-                  >
-                    <div
-                      className="image-gallery-slide center"
-                      key="0"
-                      style={
-                        Object {
-                          "MozTransform": "translate3d(0%, 0, 0)",
-                          "OTransform": "translate3d(0%, 0, 0)",
-                          "WebkitTransform": "translate3d(0%, 0, 0)",
-                          "msTransform": "translate3d(0%, 0, 0)",
-                          "transform": "translate3d(0%, 0, 0)",
-                        }
-                      }
-                    >
-                      <div
-                        className="image-gallery-image"
-                      >
-                        <img
-                          alt="Two cats"
-                          onError={[Function]}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          title="Two cats"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="image-gallery-slide right"
-                      key="1"
-                      style={
-                        Object {
-                          "MozTransform": "translate3d(100%, 0, 0)",
-                          "OTransform": "translate3d(100%, 0, 0)",
-                          "WebkitTransform": "translate3d(100%, 0, 0)",
-                          "msTransform": "translate3d(100%, 0, 0)",
-                          "transform": "translate3d(100%, 0, 0)",
-                        }
-                      }
-                    >
-                      <div
-                        className="image-gallery-image"
-                      >
-                        <img
-                          alt="Two cats"
-                          onError={[Function]}
-                          src="https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg"
-                          title="Two cats"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Swipeable>
-              <div
-                className="image-gallery-bullets"
-              >
-                <div
-                  aria-label="Bullet Navigation"
-                  className="image-gallery-bullets-container"
-                  role="navigation"
-                >
-                  <button
-                    aria-label="Go to Slide 1"
-                    aria-pressed="true"
-                    className="image-gallery-bullet active "
-                    key="0"
-                    onClick={[Function]}
-                    type="button"
-                  />
-                  <button
-                    aria-label="Go to Slide 2"
-                    aria-pressed="false"
-                    className="image-gallery-bullet  "
-                    key="1"
-                    onClick={[Function]}
-                    type="button"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
       </ImageGallery>
     </Slideshow>
     <Paragraph
@@ -2516,14 +2108,6 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
     >
       <ImageGallery
         additionalClass=""
-        autoPlay={false}
-        disableArrowKeys={false}
-        disableSwipe={false}
-        disableThumbnailScroll={false}
-        flickThreshold={0.4}
-        indexSeparator=" / "
-        infinite={true}
-        isRTL={false}
         items={
           Array [
             Object {
@@ -2537,68 +2121,14 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
         }
         lazyLoad={true}
         onSlide={[Function]}
-        preventDefaultTouchmoveEvent={false}
-        renderFullscreenButton={[Function]}
         renderLeftNav={[Function]}
-        renderPlayPauseButton={[Function]}
         renderRightNav={[Function]}
         showBullets={false}
         showFullscreenButton={false}
-        showIndex={false}
-        showNav={true}
         showPlayButton={false}
         showThumbnails={false}
-        slideDuration={450}
-        slideInterval={3000}
-        startIndex={0}
-        stopPropagation={false}
-        swipeThreshold={30}
-        swipingTransitionDuration={0}
-        thumbnailPosition="bottom"
-        useBrowserFullscreen={true}
-        useTranslate3D={true}
       >
-        <div
-          aria-live="polite"
-          className="image-gallery  "
-        >
-          <div
-            className="image-gallery-content"
-          >
-            <div
-              className="image-gallery-slide-wrapper bottom "
-            >
-              <div
-                className="image-gallery-slides"
-              >
-                <div
-                  className="image-gallery-slide center"
-                  key="0"
-                  style={
-                    Object {
-                      "MozTransform": "translate3d(0%, 0, 0)",
-                      "OTransform": "translate3d(0%, 0, 0)",
-                      "WebkitTransform": "translate3d(0%, 0, 0)",
-                      "msTransform": "translate3d(0%, 0, 0)",
-                      "transform": "translate3d(0%, 0, 0)",
-                    }
-                  }
-                >
-                  <div
-                    className="image-gallery-image"
-                  >
-                    <img
-                      alt="Two cats"
-                      onError={[Function]}
-                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      title="Two cats"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div />
       </ImageGallery>
     </Slideshow>
     <Paragraph

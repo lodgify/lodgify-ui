@@ -2243,6 +2243,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                             href={null}
                                                             onClick={[Function]}
                                                             target="_self"
+                                                            type="button"
                                                           >
                                                             <button
                                                               className="ui basic left floated button"
@@ -2250,6 +2251,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                               onClick={[Function]}
                                                               role="button"
                                                               target="_self"
+                                                              type="button"
                                                             >
                                                               More Info
                                                             </button>
@@ -3141,6 +3143,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                             href={null}
                                                             onClick={[Function]}
                                                             target="_self"
+                                                            type="button"
                                                           >
                                                             <button
                                                               className="ui basic left floated button"
@@ -3148,6 +3151,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                               onClick={[Function]}
                                                               role="button"
                                                               target="_self"
+                                                              type="button"
                                                             >
                                                               More Info
                                                             </button>

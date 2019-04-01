@@ -1199,6 +1199,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -1217,11 +1218,13 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Send
                     </button>
@@ -2163,6 +2166,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -2181,11 +2185,13 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Send
                     </button>
@@ -3082,6 +3088,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -3100,11 +3107,13 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Send
                     </button>
@@ -3719,6 +3728,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -3737,11 +3747,13 @@ exports[`<Contact /> should have the correct structure 1`] = `
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Send
                     </button>

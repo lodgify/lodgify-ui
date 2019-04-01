@@ -924,6 +924,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -942,11 +943,13 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Send
                     </button>
@@ -2204,6 +2207,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
                   isRounded={false}
@@ -2222,11 +2226,13 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                     onClick={[Function]}
                     secondary={false}
                     size={null}
+                    type="submit"
                   >
                     <button
                       className="ui right floated button"
                       onClick={[Function]}
                       role="button"
+                      type="submit"
                     >
                       Send
                     </button>

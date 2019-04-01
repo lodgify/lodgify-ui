@@ -183,6 +183,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={false}
                                               isRounded={true}
@@ -201,11 +202,13 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                                                 onClick={[Function]}
                                                 secondary={false}
                                                 size={null}
+                                                type="button"
                                               >
                                                 <button
                                                   className="ui circular left floated button"
                                                   onClick={[Function]}
                                                   role="button"
+                                                  type="button"
                                                 >
                                                   Book Now with Discount
                                                 </button>
@@ -442,6 +445,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={false}
                                               isRounded={true}
@@ -460,11 +464,13 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                 onClick={[Function]}
                                                 secondary={false}
                                                 size={null}
+                                                type="button"
                                               >
                                                 <button
                                                   className="ui circular left floated button"
                                                   onClick={[Function]}
                                                   role="button"
+                                                  type="button"
                                                 >
                                                   Book Now with Discount
                                                 </button>
@@ -533,6 +539,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                 icon={null}
                                                 isCompact={false}
                                                 isDisabled={false}
+                                                isFormSubmit={false}
                                                 isLoading={false}
                                                 isPositionedRight={true}
                                                 isRounded={false}
@@ -551,11 +558,13 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                   onClick={[Function]}
                                                   secondary={false}
                                                   size={null}
+                                                  type="button"
                                                 >
                                                   <button
                                                     className="ui right floated button has-shadow"
                                                     onClick={[Function]}
                                                     role="button"
+                                                    type="button"
                                                   >
                                                     123
                                                   </button>
@@ -626,6 +635,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                 icon={null}
                                                 isCompact={false}
                                                 isDisabled={false}
+                                                isFormSubmit={false}
                                                 isLoading={false}
                                                 isPositionedRight={true}
                                                 isRounded={false}
@@ -644,11 +654,13 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                   onClick={[Function]}
                                                   secondary={false}
                                                   size={null}
+                                                  type="button"
                                                 >
                                                   <button
                                                     className="ui right floated button has-shadow"
                                                     onClick={[Function]}
                                                     role="button"
+                                                    type="button"
                                                   >
                                                     123
                                                   </button>
@@ -987,6 +999,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={false}
                                               isRounded={true}
@@ -1005,11 +1018,13 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                                                 onClick={[Function]}
                                                 secondary={false}
                                                 size={null}
+                                                type="button"
                                               >
                                                 <button
                                                   className="ui circular left floated button"
                                                   onClick={[Function]}
                                                   role="button"
+                                                  type="button"
                                                 >
                                                   Book Now with Discount
                                                 </button>
@@ -1245,6 +1260,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={false}
                                               isRounded={true}
@@ -1263,11 +1279,13 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                                 onClick={[Function]}
                                                 secondary={false}
                                                 size={null}
+                                                type="button"
                                               >
                                                 <button
                                                   className="ui circular left floated button"
                                                   onClick={[Function]}
                                                   role="button"
+                                                  type="button"
                                                 >
                                                   Book Now with Discount
                                                 </button>

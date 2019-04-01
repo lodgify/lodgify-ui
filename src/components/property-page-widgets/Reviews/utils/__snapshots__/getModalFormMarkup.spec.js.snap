@@ -15,6 +15,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
       icon={null}
       isCompact={true}
       isDisabled={true}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
       isRounded={true}
@@ -56,6 +57,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
         icon={null}
         isCompact={true}
         isDisabled={true}
+        isFormSubmit={false}
         isLoading={false}
         isPositionedRight={true}
         isRounded={true}
@@ -85,6 +87,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
           icon={null}
           isCompact={true}
           isDisabled={true}
+          isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
           isRounded={true}
@@ -104,6 +107,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
           icon={null}
           isCompact={true}
           isDisabled={true}
+          isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
           isRounded={true}
@@ -126,6 +130,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
             onClick={[Function]}
             secondary={false}
             size="medium"
+            type="button"
           >
             <button
               className="ui medium circular compact disabled right floated button"
@@ -133,6 +138,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
               onClick={[Function]}
               role="button"
               tabIndex={-1}
+              type="button"
             >
               sumbmutbuttuntuxt
             </button>
@@ -159,6 +165,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
       icon={null}
       isCompact={true}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
       isRounded={true}
@@ -198,6 +205,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
         icon={null}
         isCompact={true}
         isDisabled={false}
+        isFormSubmit={false}
         isLoading={false}
         isPositionedRight={true}
         isRounded={true}
@@ -225,6 +233,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
           isRounded={true}
@@ -242,6 +251,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
           isRounded={true}
@@ -264,11 +274,13 @@ exports[`getModalFormMarkup should have the right structure with default props 1
             onClick={[Function]}
             secondary={false}
             size="medium"
+            type="button"
           >
             <button
               className="ui medium circular compact right floated button"
               onClick={[Function]}
               role="button"
+              type="button"
             />
           </Button>
         </Button>
@@ -293,6 +305,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
       icon={null}
       isCompact={true}
       isDisabled={false}
+      isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
       isRounded={true}
@@ -334,6 +347,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
         icon={null}
         isCompact={true}
         isDisabled={false}
+        isFormSubmit={false}
         isLoading={false}
         isPositionedRight={true}
         isRounded={true}
@@ -363,6 +377,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
           isRounded={true}
@@ -382,6 +397,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
           isRounded={true}
@@ -404,11 +420,13 @@ exports[`getModalFormMarkup should render the right structure when props are pas
             onClick={[Function]}
             secondary={false}
             size="medium"
+            type="button"
           >
             <button
               className="ui medium circular compact right floated button"
               onClick={[Function]}
               role="button"
+              type="button"
             >
               sumbmutbuttuntuxt
             </button>
