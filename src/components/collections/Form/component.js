@@ -112,6 +112,7 @@ export class Component extends PureComponent {
             )}
             <Button
               isDisabled={getIsSubmitButtonDisabled(this.state)}
+              isFormSubmit
               isPositionedRight
             >
               {submitButtonText || SEND}
