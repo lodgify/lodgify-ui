@@ -52,19 +52,22 @@
     border-radius: @dropdownMenuBorderRadius;
   }
 
-  .ui.dropdown .menu {
+  .ui.dropdown {
 
-    .simple.scrolling& {
+    &.simple.scrolling .menu {
       overflow: auto;
     }
 
-    & > .selected.item:hover,
-    & > .active.item:hover,
-    & > .item:hover {
-      background: @themeActionColorDefault !important;
-      background: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
-      color: @themeActionContrastColorDefault !important;
-      color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault) !important;
+    .menu {
+
+      & > .selected.item:hover,
+      & > .active.item:hover,
+      & > .item:hover {
+        background: @themeActionColorDefault !important;
+        background: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+        color: @themeActionContrastColorDefault !important;
+        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault) !important;
+      }
     }
   }
 
