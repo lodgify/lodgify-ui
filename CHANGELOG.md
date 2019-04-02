@@ -1,3 +1,10 @@
+## [1.166.2](https://github.com/lodgify/lodgify-ui/compare/v1.166.1...v1.166.2) (2019-04-02)
+
+
+### Bug Fixes
+
+* **menu.overrides:** change overflow selector ([7a4f74c](https://github.com/lodgify/lodgify-ui/commit/7a4f74c))
+
 ## [1.166.1](https://github.com/lodgify/lodgify-ui/compare/v1.166.0...v1.166.1) (2019-04-01)
 
 
