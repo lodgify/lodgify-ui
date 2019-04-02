@@ -20,6 +20,7 @@ import { getStandardMenuMarkup } from './utils/getStandardMenuMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
+    activeNavigationItemIndex: null,
     isMenuHidden: false,
     isOpaque: false,
     navigationItemsWidth: null,
@@ -30,6 +31,7 @@ export class Component extends PureComponent {
     global.window.addEventListener('resize', debounce(this.handleResize, 150));
     this.handleResize();
     this.setState({
+      activeNavigationItemIndex: this.props.activeNavigationItemIndex,
       navigationItemsWidth: getNavigationItemsWidth(this.header),
       isOpaque: true,
     });
@@ -63,7 +65,7 @@ export class Component extends PureComponent {
       logoSizes,
       logoSrcSet,
     } = this.props;
-    const { isMenuHidden, isOpaque } = this.state;
+    const { activeNavigationItemIndex, isMenuHidden, isOpaque } = this.state;
 
     return (
       <header
@@ -77,8 +79,8 @@ export class Component extends PureComponent {
           {getLogoMarkup(logoHref, logoText, logoSrc, logoSizes, logoSrcSet)}
           <Menu.Menu position="right">
             {isMenuHidden
-              ? getHiddenMenuMarkup(this.props)
-              : getStandardMenuMarkup(this.props)}
+              ? getHiddenMenuMarkup(this.props, activeNavigationItemIndex)
+              : getStandardMenuMarkup(this.props, activeNavigationItemIndex)}
           </Menu.Menu>
         </HorizontalGutters>
       </header>
