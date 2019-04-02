@@ -13,26 +13,28 @@ import { getLinkMarkup } from './getLinkMarkup';
 
 /**
  * @param  {Object}   props
- * @param  {number}   props.activeNavigationItemIndex
  * @param  {string}   props.logoSizes
  * @param  {string}   props.logoSrc
  * @param  {string}   props.logoSrcSet
  * @param  {string}   props.logoText
  * @param  {Object[]} props.navigationItems
+ * @param  {number}   activeNavigationItemIndex
  * @return {Object}
  */
-export const getHiddenMenuMarkup = ({
-  /* eslint-disable react/prop-types */
-  activeNavigationItemIndex,
-  logoHref,
-  logoSizes,
-  logoSrc,
-  logoSrcSet,
-  logoText,
-  navigationItems,
-  primaryCTA,
-  /* eslint-enable react/prop-types */
-}) => (
+export const getHiddenMenuMarkup = (
+  {
+    /* eslint-disable react/prop-types */
+    logoHref,
+    logoSizes,
+    logoSrc,
+    logoSrcSet,
+    logoText,
+    navigationItems,
+    primaryCTA,
+    /* eslint-enable react/prop-types */
+  },
+  activeNavigationItemIndex
+) => (
   <Fragment>
     {primaryCTA && (
       <Menu.Item className="no-underline" link>
