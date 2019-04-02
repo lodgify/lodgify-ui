@@ -20,7 +20,7 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
     isMenuItem={true}
     isSearchable={false}
     isSimple={true}
-    isTriggerUnderlined={true}
+    isTriggerUnderlined={false}
     isTriggeredOnHover={true}
     items={
       Array [
@@ -53,7 +53,7 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
     <Dropdown
       additionLabel="Add "
       additionPosition="top"
-      className="underlined"
+      className=""
       closeOnBlur={true}
       deburr={false}
       icon={
@@ -117,7 +117,7 @@ exports[`getStandardMenuMarkup by default should render the right structure 1`] 
     >
       <div
         aria-expanded={false}
-        className="ui item simple scrolling top left pointing dropdown underlined"
+        className="ui item simple scrolling top left pointing dropdown"
         name={null}
         onBlur={[Function]}
         onChange={[Function]}
@@ -353,7 +353,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
     isMenuItem={true}
     isSearchable={false}
     isSimple={true}
-    isTriggerUnderlined={true}
+    isTriggerUnderlined={false}
     isTriggeredOnHover={true}
     items={
       Array [
@@ -386,7 +386,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
     <Dropdown
       additionLabel="Add "
       additionPosition="top"
-      className="underlined"
+      className=""
       closeOnBlur={true}
       deburr={false}
       icon={
@@ -450,7 +450,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
     >
       <div
         aria-expanded={false}
-        className="ui item simple scrolling top left pointing dropdown underlined"
+        className="ui item simple scrolling top left pointing dropdown"
         name={null}
         onBlur={[Function]}
         onChange={[Function]}
