@@ -96,6 +96,7 @@ describe('<Header />', () => {
       wrapper.instance().componentDidMount();
 
       expect(wrapper.instance().setState).toHaveBeenCalledWith({
+        activeNavigationItemIndex: null,
         navigationItemsWidth: NAVIGATION_ITEMS_WIDTH,
         isOpaque: true,
       });
