@@ -11,18 +11,20 @@ import { getLinkMarkup } from './getLinkMarkup';
 
 /**
  * @param  {Object}   props
- * @param  {number}   props.activeNavigationItemIndex
  * @param  {Object[]} props.navigationItems
  * @param  {Object}   props.primaryCTA
+ * @param  {number}   activeNavigationItemIndex
  * @return {Object}
  */
-export const getStandardMenuMarkup = ({
-  /* eslint-disable react/prop-types */
-  activeNavigationItemIndex,
-  navigationItems,
-  primaryCTA,
-  /* eslint-enable react/prop-types */
-}) => (
+export const getStandardMenuMarkup = (
+  {
+    /* eslint-disable react/prop-types */
+    navigationItems,
+    primaryCTA,
+    /* eslint-enable react/prop-types */
+  },
+  activeNavigationItemIndex
+) => (
   <Fragment>
     {navigationItems.map(({ subItems, text, href, target }, index) =>
       size(subItems) > 0 ? (
