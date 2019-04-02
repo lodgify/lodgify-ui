@@ -1,3 +1,11 @@
+## [1.166.3](https://github.com/lodgify/lodgify-ui/compare/v1.166.2...v1.166.3) (2019-04-02)
+
+
+### Bug Fixes
+
+* **Button:** add props.isFormSubmit to button in search bars ([af3833b](https://github.com/lodgify/lodgify-ui/commit/af3833b))
+* **Link:** stop browser native styles pollution ([d61deab](https://github.com/lodgify/lodgify-ui/commit/d61deab))
+
 ## [1.166.2](https://github.com/lodgify/lodgify-ui/compare/v1.166.1...v1.166.2) (2019-04-02)
 
 
