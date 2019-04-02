@@ -1,3 +1,12 @@
+# [1.167.0](https://github.com/lodgify/lodgify-ui/compare/v1.166.3...v1.167.0) (2019-04-02)
+
+
+### Features
+
+* **getHiddenMenuMarkup:**  pass activeNavigationItemIndex from state ([b53738b](https://github.com/lodgify/lodgify-ui/commit/b53738b))
+* **getStandardMenuMarkup:** pass activeNavigationItemIndex from state ([793d255](https://github.com/lodgify/lodgify-ui/commit/793d255))
+* **Header:** set activeNavigationItemIndex on mount ([cb4fc5b](https://github.com/lodgify/lodgify-ui/commit/cb4fc5b))
+
 ## [1.166.3](https://github.com/lodgify/lodgify-ui/compare/v1.166.2...v1.166.3) (2019-04-02)
 
 
