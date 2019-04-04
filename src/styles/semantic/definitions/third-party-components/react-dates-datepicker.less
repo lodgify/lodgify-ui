@@ -164,6 +164,15 @@
           background: @pickerDaySelectedBackground;
           color: inherit;
         }
+
+        &.CalendarDay__blocked_minimum_nights.CalendarDay__blocked_calendar {
+
+          &.CalendarDay__selected_start,
+          &.CalendarDay__selected_end {
+            background: @pickerDaySelectedBackground;
+            color: inherit;
+          }
+        }
       }
 
       &.CalendarDay__blocked_calendar,
