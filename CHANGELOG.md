@@ -1,3 +1,10 @@
+## [1.167.1](https://github.com/lodgify/lodgify-ui/compare/v1.167.0...v1.167.1) (2019-04-04)
+
+
+### Bug Fixes
+
+* **react-dates-datepicker:** persist selected date ([9fd5b50](https://github.com/lodgify/lodgify-ui/commit/9fd5b50))
+
 # [1.167.0](https://github.com/lodgify/lodgify-ui/compare/v1.166.3...v1.167.0) (2019-04-02)
 
 
