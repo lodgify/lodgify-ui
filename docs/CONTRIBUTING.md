@@ -12,6 +12,15 @@ $ npm start
 
 Then go to http://localhost:6060/
 
+#### Commiting
+
+Our git commits follow strict formatting so that they can be analysed by [semantic-release](https://github.com/semantic-release/semantic-release). We use [commitizen](https://github.com/commitizen/cz-cli) to control [the format](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines). 
+
+To create a commit through commitzen:
+
+```bash
+$ npm run commit
+```
 
 #### Pull requests
 
