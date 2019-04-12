@@ -1,3 +1,18 @@
+# [1.168.0](https://github.com/lodgify/lodgify-ui/compare/v1.167.1...v1.168.0) (2019-04-12)
+
+
+### Bug Fixes
+
+* **modal:** update selector to prevent regression ([5ce56ae](https://github.com/lodgify/lodgify-ui/commit/5ce56ae))
+
+
+### Features
+
+* **Header:** expose tagline prop ([edd4dde](https://github.com/lodgify/lodgify-ui/commit/edd4dde))
+* **Hero:** expose headerTagline prop ([1522db7](https://github.com/lodgify/lodgify-ui/commit/1522db7))
+* **HomepageHero:** expose headerTagline prop ([ee9823c](https://github.com/lodgify/lodgify-ui/commit/ee9823c))
+* **PropertyPageHero:** expose headerTagline prop ([90b8400](https://github.com/lodgify/lodgify-ui/commit/90b8400))
+
 ## [1.167.1](https://github.com/lodgify/lodgify-ui/compare/v1.167.0...v1.167.1) (2019-04-04)
 
 
