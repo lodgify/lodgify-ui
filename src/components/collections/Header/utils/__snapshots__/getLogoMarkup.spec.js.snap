@@ -2,63 +2,133 @@
 
 exports[`getLogoMarkup by default should render the right structure 1`] = `
 <MenuItem
+  className="has-sub-text"
   href="someLogoHref"
   link={true}
 >
   <a
-    className="link item"
+    className="link item has-sub-text"
     href="someLogoHref"
     onClick={[Function]}
   >
-    <Heading
-      className={null}
-      isColorInverted={false}
-      size="small"
-      textAlign={null}
+    <FlexContainer
+      alignContent={null}
+      alignItems={null}
+      flexDirection="column"
+      flexWrap={null}
+      justifyContent="center"
     >
-      <Header
-        as="h4"
-        className={null}
-        inverted={false}
-        textAlign={null}
+      <div
+        className="flex-container"
+        style={
+          Object {
+            "alignContent": null,
+            "alignItems": null,
+            "display": "flex",
+            "flexDirection": "column",
+            "flexGrow": "1",
+            "flexWrap": null,
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
       >
-        <h4
-          className="ui header"
+        <Heading
+          className={null}
+          isColorInverted={false}
+          size="small"
+          textAlign={null}
         >
-          someLogoText
-        </h4>
-      </Header>
-    </Heading>
+          <Header
+            as="h4"
+            className={null}
+            inverted={false}
+            textAlign={null}
+          >
+            <h4
+              className="ui header"
+            >
+              someLogoText
+            </h4>
+          </Header>
+        </Heading>
+        <Paragraph
+          size="tiny"
+          weight={null}
+        >
+          <p
+            className="tiny"
+          >
+            someLogoTagline
+          </p>
+        </Paragraph>
+      </div>
+    </FlexContainer>
   </a>
 </MenuItem>
 `;
 
 exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are passed should render the right structure 1`] = `
 <MenuItem
+  className="has-sub-text"
   href="someLogoHref"
   link={true}
 >
   <a
-    className="link item"
+    className="link item has-sub-text"
     href="someLogoHref"
     onClick={[Function]}
   >
-    <Image
-      alt="someLogoText"
-      as="img"
-      sizes="someSizes"
-      src="someLogoSrc"
-      srcSet="someSrcSet"
-      ui={true}
+    <FlexContainer
+      alignContent={null}
+      alignItems={null}
+      flexDirection="column"
+      flexWrap={null}
+      justifyContent="center"
     >
-      <img
-        alt="someLogoText"
-        className="ui image"
-        sizes="someSizes"
-        src="someLogoSrc"
-        srcSet="someSrcSet"
-      />
-    </Image>
+      <div
+        className="flex-container"
+        style={
+          Object {
+            "alignContent": null,
+            "alignItems": null,
+            "display": "flex",
+            "flexDirection": "column",
+            "flexGrow": "1",
+            "flexWrap": null,
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Image
+          alt="someLogoText"
+          as="img"
+          sizes="someSizes"
+          src="someLogoSrc"
+          srcSet="someSrcSet"
+          ui={true}
+        >
+          <img
+            alt="someLogoText"
+            className="ui image"
+            sizes="someSizes"
+            src="someLogoSrc"
+            srcSet="someSrcSet"
+          />
+        </Image>
+        <Paragraph
+          size="tiny"
+          weight={null}
+        >
+          <p
+            className="tiny"
+          >
+            someLogoTagline
+          </p>
+        </Paragraph>
+      </div>
+    </FlexContainer>
   </a>
 </MenuItem>
 `;
