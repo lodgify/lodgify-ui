@@ -90,7 +90,7 @@ exports[`<DateRangePicker /> if \`props.focusedInput\` is passed should render t
               focusedInput="startDate"
               hideKeyboardShortcutsPanel={true}
               isDayBlocked={[Function]}
-              key=".1"
+              key=".0"
               navNext={
                 <Icon
                   color={null}
@@ -227,7 +227,7 @@ exports[`<DateRangePicker /> should render the right structure 1`] = `
               focusedInput={null}
               hideKeyboardShortcutsPanel={true}
               isDayBlocked={[Function]}
-              key=".1"
+              key=".0"
               navNext={
                 <Icon
                   color={null}
