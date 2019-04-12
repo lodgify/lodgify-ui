@@ -40,6 +40,33 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 </div>
 ```
 
+#### Logo sub text
+Sub text can be displayed underneath the logo or logo text.
+
+```jsx
+const { navigationItems } = require('./mock-data/navigationItems');
+const logoSrc = require('./mock-data/livingstoneLogo.png');
+
+<div>
+  <div style={{ backgroundColor: 'grey'}}>
+    <Header
+      logoSrc={logoSrc}
+      logoText="Livingstone Cottage"
+      logoSubText="A cottage built from living stones."
+      navigationItems={navigationItems}
+    />
+  </div>
+  <Divider />
+  <div style={{ backgroundColor: 'grey'}}>
+    <Header
+      logoText="Livingstone Cottage"
+      logoSubText="A cottage built from living stones."
+      navigationItems={navigationItems}
+    />
+  </div>
+</div>
+```
+
 #### Navigation items
 
 Navigation items can be links or groups of subitems.
