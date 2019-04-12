@@ -20,6 +20,18 @@
 <Checkbox isChecked label="I am checked" />
 ```
 
+#### Error
+
+```jsx
+<div>
+  <Checkbox error />
+  <Divider />
+  <Divider />
+  <Checkbox error="Something's not right" />
+</div>
+```
+
+
 #### Disabled
 
 ```jsx
