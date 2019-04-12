@@ -131,6 +131,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
           logoSizes="a load of logo sizes"
           logoSrc="https://darkgreen.com"
           logoSrcSet="a load of logo src sets"
+          logoSubText={null}
           logoText="Livingstone Cottage"
           navigationItems={
             Array [
@@ -168,6 +169,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                     className="ui borderless ui text container menu"
                   >
                     <MenuItem
+                      className=""
                       href="/"
                       link={true}
                     >
@@ -176,22 +178,46 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                         href="/"
                         onClick={[Function]}
                       >
-                        <Image
-                          alt="Livingstone Cottage"
-                          as="img"
-                          sizes="a load of logo sizes"
-                          src="https://darkgreen.com"
-                          srcSet="a load of logo src sets"
-                          ui={true}
+                        <FlexContainer
+                          alignContent={null}
+                          alignItems={null}
+                          flexDirection="column"
+                          flexWrap={null}
+                          justifyContent="center"
                         >
-                          <img
-                            alt="Livingstone Cottage"
-                            className="ui image"
-                            sizes="a load of logo sizes"
-                            src="https://darkgreen.com"
-                            srcSet="a load of logo src sets"
-                          />
-                        </Image>
+                          <div
+                            className="flex-container"
+                            style={
+                              Object {
+                                "alignContent": null,
+                                "alignItems": null,
+                                "display": "flex",
+                                "flexDirection": "column",
+                                "flexGrow": "1",
+                                "flexWrap": null,
+                                "height": "100%",
+                                "justifyContent": "center",
+                              }
+                            }
+                          >
+                            <Image
+                              alt="Livingstone Cottage"
+                              as="img"
+                              sizes="a load of logo sizes"
+                              src="https://darkgreen.com"
+                              srcSet="a load of logo src sets"
+                              ui={true}
+                            >
+                              <img
+                                alt="Livingstone Cottage"
+                                className="ui image"
+                                sizes="a load of logo sizes"
+                                src="https://darkgreen.com"
+                                srcSet="a load of logo src sets"
+                              />
+                            </Image>
+                          </div>
+                        </FlexContainer>
                       </a>
                     </MenuItem>
                     <MenuMenu
