@@ -19,10 +19,12 @@
 /* Need to use margin rather than padding to implement 'active' state bottom border */
 @headerMenuItemHorizontalMargin: @15px;
 @headerMenuItemVerticalPadding: @35px;
+@headerMenuItemVerticalPaddingWithSubText: @11px;
 @headerMenuItemMobileVerticalPadding: @15px;
 @headerMenuItemTextColor: @pureWhite;
 @headerLogoMaxWidth: 125px;
 @headerLogoMaxHeight: 55px;
+@headerLogoSubTextMargin: @5px 0 0;
 
 @footerMenuItemVerticalPadding: @8px;
 @footerMenuItemHorizontalPadding: @35px;

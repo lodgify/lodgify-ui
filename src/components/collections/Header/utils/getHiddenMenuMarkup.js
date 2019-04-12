@@ -47,6 +47,7 @@ export const getHiddenMenuMarkup = (
       <Modal
         header={getLogoMarkup(
           logoHref,
+          null,
           logoText,
           logoSrc,
           logoSizes,
