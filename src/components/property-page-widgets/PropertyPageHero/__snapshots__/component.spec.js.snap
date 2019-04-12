@@ -146,6 +146,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
             logoSizes="a load of logo sizes"
             logoSrc="src"
             logoSrcSet="a load of logo src sets"
+            logoSubText={null}
             logoText="text"
             navigationItems={
               Array [
@@ -183,6 +184,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                       className="ui borderless ui text container menu"
                     >
                       <MenuItem
+                        className=""
                         href="/"
                         link={true}
                       >
@@ -191,22 +193,46 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                           href="/"
                           onClick={[Function]}
                         >
-                          <Image
-                            alt="text"
-                            as="img"
-                            sizes="a load of logo sizes"
-                            src="src"
-                            srcSet="a load of logo src sets"
-                            ui={true}
+                          <FlexContainer
+                            alignContent={null}
+                            alignItems={null}
+                            flexDirection="column"
+                            flexWrap={null}
+                            justifyContent="center"
                           >
-                            <img
-                              alt="text"
-                              className="ui image"
-                              sizes="a load of logo sizes"
-                              src="src"
-                              srcSet="a load of logo src sets"
-                            />
-                          </Image>
+                            <div
+                              className="flex-container"
+                              style={
+                                Object {
+                                  "alignContent": null,
+                                  "alignItems": null,
+                                  "display": "flex",
+                                  "flexDirection": "column",
+                                  "flexGrow": "1",
+                                  "flexWrap": null,
+                                  "height": "100%",
+                                  "justifyContent": "center",
+                                }
+                              }
+                            >
+                              <Image
+                                alt="text"
+                                as="img"
+                                sizes="a load of logo sizes"
+                                src="src"
+                                srcSet="a load of logo src sets"
+                                ui={true}
+                              >
+                                <img
+                                  alt="text"
+                                  className="ui image"
+                                  sizes="a load of logo sizes"
+                                  src="src"
+                                  srcSet="a load of logo src sets"
+                                />
+                              </Image>
+                            </div>
+                          </FlexContainer>
                         </a>
                       </MenuItem>
                       <MenuMenu
@@ -440,6 +466,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
             logoSizes="a load of logo sizes"
             logoSrc="src"
             logoSrcSet="a load of logo src sets"
+            logoSubText={null}
             logoText="text"
             navigationItems={
               Array [
@@ -477,6 +504,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                       className="ui borderless ui text container menu"
                     >
                       <MenuItem
+                        className=""
                         href="/"
                         link={true}
                       >
@@ -485,22 +513,46 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                           href="/"
                           onClick={[Function]}
                         >
-                          <Image
-                            alt="text"
-                            as="img"
-                            sizes="a load of logo sizes"
-                            src="src"
-                            srcSet="a load of logo src sets"
-                            ui={true}
+                          <FlexContainer
+                            alignContent={null}
+                            alignItems={null}
+                            flexDirection="column"
+                            flexWrap={null}
+                            justifyContent="center"
                           >
-                            <img
-                              alt="text"
-                              className="ui image"
-                              sizes="a load of logo sizes"
-                              src="src"
-                              srcSet="a load of logo src sets"
-                            />
-                          </Image>
+                            <div
+                              className="flex-container"
+                              style={
+                                Object {
+                                  "alignContent": null,
+                                  "alignItems": null,
+                                  "display": "flex",
+                                  "flexDirection": "column",
+                                  "flexGrow": "1",
+                                  "flexWrap": null,
+                                  "height": "100%",
+                                  "justifyContent": "center",
+                                }
+                              }
+                            >
+                              <Image
+                                alt="text"
+                                as="img"
+                                sizes="a load of logo sizes"
+                                src="src"
+                                srcSet="a load of logo src sets"
+                                ui={true}
+                              >
+                                <img
+                                  alt="text"
+                                  className="ui image"
+                                  sizes="a load of logo sizes"
+                                  src="src"
+                                  srcSet="a load of logo src sets"
+                                />
+                              </Image>
+                            </div>
+                          </FlexContainer>
                         </a>
                       </MenuItem>
                       <MenuMenu
