@@ -2,60 +2,71 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Checkbox } from 'semantic-ui-react';
 
+import { InputController } from '../InputController';
+
+import { mapValueToProps } from './utils/mapValueToProps';
+import { adaptOnChangeEvent } from './utils/adaptOnChangeEvent';
+
 /**
  * A checkbox allows a user to select a value from a small set of options, often binary.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  error,
   isDisabled,
   isChecked,
-  isCheckedByDefault,
   isRadioButton,
   isToggle,
+  isValid,
   label,
   name,
   onChange,
 }) => (
-  <Checkbox
-    checked={isChecked}
-    defaultChecked={isCheckedByDefault}
-    disabled={isDisabled}
-    label={label}
+  <InputController
+    adaptOnChangeEvent={adaptOnChangeEvent}
+    error={error}
+    isValid={isValid}
+    mapValueToProps={mapValueToProps}
     name={name}
-    onChange={(event, { checked }) => onChange(name, checked)}
-    radio={isRadioButton}
-    toggle={isToggle}
-  />
+    onChange={onChange}
+    value={isChecked}
+  >
+    <Checkbox
+      disabled={isDisabled}
+      label={label}
+      radio={isRadioButton}
+      toggle={isToggle}
+    />
+  </InputController>
 );
 
 Component.displayName = 'Checkbox';
 
 Component.defaultProps = {
+  error: false,
   isChecked: undefined,
-  isCheckedByDefault: undefined,
   isDisabled: false,
   isToggle: false,
   isRadioButton: false,
+  isValid: false,
   label: '',
   name: '',
   onChange: Function.prototype,
 };
 
 Component.propTypes = {
+  /** Is the checkbox input in an error state. */
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   /** Is the checkbox checked. */
   isChecked: PropTypes.bool,
-  /**
-   * Is the checkbox initially checked.
-   * This property is used only for uncontrolled checkboxes (when isChecked is not specified).
-   * Refer to: https://reactjs.org/docs/uncontrolled-components.html
-   * */
-  isCheckedByDefault: PropTypes.bool,
   /** Is the checkbox disabled. */
   isDisabled: PropTypes.bool,
   /** Is the checkbox formatted as a radio button. Prefer using the <RadioButton> component instead */
   isRadioButton: PropTypes.bool,
   /** Format to show an on or off choice. */
   isToggle: PropTypes.bool,
+  /** Is the checkbox in a valid state. */
+  isValid: PropTypes.bool,
   /** The label for the checkbox */
   label: PropTypes.string,
   /** The HTML input name. */
