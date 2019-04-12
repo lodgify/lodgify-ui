@@ -288,6 +288,19 @@ header {
       margin: 0 @headerMenuItemHorizontalMargin;
       padding: @headerMenuItemVerticalPadding 0;
 
+      &.has-sub-text {
+        padding: @headerMenuItemVerticalPaddingWithSubText 0;
+
+        .header {
+          margin-bottom: 0;
+        }
+
+        p {
+          margin: @headerLogoSubTextMargin;
+          color: @offWhite;
+        }
+      }
+
       &,
       &:hover,
       &.active {
@@ -317,6 +330,7 @@ header {
       &.link {
 
         .ui.image {
+          align-self: flex-start;
           max-height: @headerLogoMaxHeight;
           max-width: @headerLogoMaxWidth;
         }

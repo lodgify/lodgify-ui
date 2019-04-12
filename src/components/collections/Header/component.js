@@ -60,10 +60,11 @@ export class Component extends PureComponent {
     const {
       isBackgroundFilled,
       logoHref,
-      logoText,
-      logoSrc,
       logoSizes,
+      logoSrc,
       logoSrcSet,
+      logoSubText,
+      logoText,
     } = this.props;
     const { activeNavigationItemIndex, isMenuHidden, isOpaque } = this.state;
 
@@ -76,7 +77,14 @@ export class Component extends PureComponent {
         ref={this.createHeaderRef}
       >
         <HorizontalGutters as={Menu} borderless text>
-          {getLogoMarkup(logoHref, logoText, logoSrc, logoSizes, logoSrcSet)}
+          {getLogoMarkup(
+            logoHref,
+            logoSubText,
+            logoText,
+            logoSrc,
+            logoSizes,
+            logoSrcSet
+          )}
           <Menu.Menu position="right">
             {isMenuHidden
               ? getHiddenMenuMarkup(this.props, activeNavigationItemIndex)
@@ -97,6 +105,7 @@ Component.defaultProps = {
   logoSizes: undefined,
   logoSrc: null,
   logoSrcSet: undefined,
+  logoSubText: null,
   primaryCTA: null,
 };
 
@@ -114,6 +123,8 @@ Component.propTypes = {
   logoSrc: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   logoSrcSet: PropTypes.string,
+  /** The text that appears under the logo or logo text. */
+  logoSubText: PropTypes.string,
   /** The text for the logo. */
   logoText: PropTypes.string.isRequired,
   /** The items for a user to navigate the site. */
