@@ -61,16 +61,25 @@ Array [
         hasRoundedCorners={false}
         header={
           <MenuItem
+            className=""
             link={true}
           >
-            <Image
-              alt="someLogoText"
-              as="img"
-              sizes="someLogoSizes"
-              src="someLogoSrc"
-              srcSet="someLogoSrcSet"
-              ui={true}
-            />
+            <FlexContainer
+              alignContent={null}
+              alignItems={null}
+              flexDirection="column"
+              flexWrap={null}
+              justifyContent="center"
+            >
+              <Image
+                alt="someLogoText"
+                as="img"
+                sizes="someLogoSizes"
+                src="someLogoSrc"
+                srcSet="someLogoSrcSet"
+                ui={true}
+              />
+            </FlexContainer>
           </MenuItem>
         }
         isFullscreen={true}
