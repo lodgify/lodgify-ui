@@ -76,9 +76,10 @@
       }
     }
 
-    .ui.container > .link.item {
+    .ui.container > .link.item > .flex-container {
 
       > img:only-of-type {
+        align-self: flex-start;
         max-height: @modalLogoMaxHeight;
       }
     }
