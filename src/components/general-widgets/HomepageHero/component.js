@@ -29,6 +29,7 @@ export const Component = ({
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
+  headerLogoSubText,
   headingText,
   placeholderBackgroundImageUrl,
   searchBarDateRangePickerLocaleCode,
@@ -72,6 +73,7 @@ export const Component = ({
       headerLogoSizes={headerLogoSizes}
       headerLogoSrc={headerLogoSrc}
       headerLogoSrcSet={headerLogoSrcSet}
+      headerLogoSubText={headerLogoSubText}
       headerLogoText={headerLogoText}
       headerNavigationItems={headerNavigationItems}
       headerPrimaryCTA={headerPrimaryCTA}
@@ -151,6 +153,7 @@ Component.defaultProps = {
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
   headerPrimaryCTA: null,
+  headerLogoSubText: undefined,
   headingText: null,
   searchBarLocationInputValue: undefined,
   placeholderBackgroundImageUrl: null,
@@ -192,6 +195,8 @@ Component.propTypes = {
   headerLogoSrc: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   headerLogoSrcSet: PropTypes.string,
+  /** The sub text that appears under the logo or logo text in the header. */
+  headerLogoSubText: PropTypes.string,
   /** The text for the logo in the header. */
   headerLogoText: PropTypes.string.isRequired,
   /** The items for a user to navigate the site. */
