@@ -35,13 +35,14 @@ exports[`getLogoMarkup by default should render the right structure 1`] = `
       >
         <Heading
           className={null}
+          hasMargin={true}
           isColorInverted={false}
           size="small"
           textAlign={null}
         >
           <Header
             as="h4"
-            className={null}
+            className=""
             inverted={false}
             textAlign={null}
           >
@@ -68,7 +69,9 @@ exports[`getLogoMarkup by default should render the right structure 1`] = `
 </MenuItem>
 `;
 
-exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are passed should render the right structure 1`] = `
+exports[
+  `getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are passed should render the right structure 1`
+] = `
 <MenuItem
   className="has-sub-text"
   href="someLogoHref"

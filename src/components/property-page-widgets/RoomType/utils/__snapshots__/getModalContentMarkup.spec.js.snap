@@ -9,13 +9,14 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
   >
     <Heading
       className={null}
+      hasMargin={true}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
-        className={null}
+        className=""
         inverted={false}
         textAlign={null}
       >
@@ -352,13 +353,14 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
   >
     <Heading
       className={null}
+      hasMargin={true}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
-        className={null}
+        className=""
         inverted={false}
         textAlign={null}
       >
@@ -710,13 +712,14 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                       >
                         <Heading
                           className={null}
+                          hasMargin={true}
                           isColorInverted={false}
                           size="medium"
                           textAlign={null}
                         >
                           <Header
                             as="h3"
-                            className={null}
+                            className=""
                             inverted={false}
                             textAlign={null}
                           >
@@ -920,13 +923,14 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
   >
     <Heading
       className={null}
+      hasMargin={true}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
-        className={null}
+        className=""
         inverted={false}
         textAlign={null}
       >
@@ -1132,13 +1136,14 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                       >
                         <Heading
                           className={null}
+                          hasMargin={true}
                           isColorInverted={false}
                           size="medium"
                           textAlign={null}
                         >
                           <Header
                             as="h3"
-                            className={null}
+                            className=""
                             inverted={false}
                             textAlign={null}
                           >
@@ -1342,13 +1347,14 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
   >
     <Heading
       className={null}
+      hasMargin={true}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
-        className={null}
+        className=""
         inverted={false}
         textAlign={null}
       >
@@ -1707,13 +1713,14 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                       >
                         <Heading
                           className={null}
+                          hasMargin={true}
                           isColorInverted={false}
                           size="medium"
                           textAlign={null}
                         >
                           <Header
                             as="h3"
-                            className={null}
+                            className=""
                             inverted={false}
                             textAlign={null}
                           >
@@ -1917,13 +1924,14 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
   >
     <Heading
       className={null}
+      hasMargin={true}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
-        className={null}
+        className=""
         inverted={false}
         textAlign={null}
       >
@@ -2270,13 +2278,14 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                       >
                         <Heading
                           className={null}
+                          hasMargin={true}
                           isColorInverted={false}
                           size="medium"
                           textAlign={null}
                         >
                           <Header
                             as="h3"
-                            className={null}
+                            className=""
                             inverted={false}
                             textAlign={null}
                           >

@@ -81,6 +81,7 @@ exports[`getSearchBarModal should return the right structure 1`] = `
     header={
       <Heading
         className={null}
+        hasMargin={true}
         isColorInverted={false}
         size="small"
         textAlign={null}
