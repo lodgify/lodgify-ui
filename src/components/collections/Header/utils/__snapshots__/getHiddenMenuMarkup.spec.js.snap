@@ -15,6 +15,7 @@ Array [
         icon={null}
         isCompact={false}
         isDisabled={false}
+        isFluid={false}
         isFormSubmit={false}
         isLoading={false}
         isPositionedRight={false}
@@ -30,6 +31,7 @@ Array [
           compact={false}
           disabled={false}
           floated="left"
+          fluid={false}
           loading={false}
           onClick={[Function]}
           secondary={false}

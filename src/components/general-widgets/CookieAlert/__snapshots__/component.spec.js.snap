@@ -231,6 +231,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                     icon={null}
                     isCompact={false}
                     isDisabled={false}
+                    isFluid={false}
                     isFormSubmit={true}
                     isLoading={false}
                     isPositionedRight={true}
@@ -246,6 +247,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                       compact={false}
                       disabled={false}
                       floated="right"
+                      fluid={false}
                       loading={false}
                       onClick={[Function]}
                       secondary={false}
