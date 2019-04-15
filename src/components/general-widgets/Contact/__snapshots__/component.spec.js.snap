@@ -161,7 +161,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               >
                                 <input
                                   autoComplete="name"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
@@ -236,7 +236,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               >
                                 <input
                                   autoComplete="tel"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -334,7 +334,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               >
                                 <input
                                   autoComplete="email"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={255}
                                   name="email"
                                   onBlur={[Function]}
@@ -395,7 +395,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                               >
                                 <input
                                   autoComplete={null}
-                                  key=".1"
+                                  key=".0"
                                   min={1}
                                   name="guests"
                                   onBlur={[Function]}
@@ -519,7 +519,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                   focusedInput={null}
                                   hideKeyboardShortcutsPanel={true}
                                   isDayBlocked={[Function]}
-                                  key=".1"
+                                  key=".0"
                                   navNext={
                                     <Icon
                                       color={null}
@@ -609,7 +609,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           >
                             <textarea
                               autoComplete={null}
-                              key=".1"
+                              key=".0"
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -1386,7 +1386,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               >
                                 <input
                                   autoComplete="name"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
@@ -1461,7 +1461,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               >
                                 <input
                                   autoComplete="tel"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -1559,7 +1559,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               >
                                 <input
                                   autoComplete="email"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={255}
                                   name="email"
                                   onBlur={[Function]}
@@ -1620,7 +1620,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               >
                                 <input
                                   autoComplete={null}
-                                  key=".1"
+                                  key=".0"
                                   min={1}
                                   name="guests"
                                   onBlur={[Function]}
@@ -1744,7 +1744,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   focusedInput={null}
                                   hideKeyboardShortcutsPanel={true}
                                   isDayBlocked={[Function]}
-                                  key=".1"
+                                  key=".0"
                                   navNext={
                                     <Icon
                                       color={null}
@@ -1834,7 +1834,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           >
                             <textarea
                               autoComplete={null}
-                              key=".1"
+                              key=".0"
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -2349,7 +2349,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               >
                                 <input
                                   autoComplete="name"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
@@ -2424,7 +2424,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               >
                                 <input
                                   autoComplete="tel"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -2522,7 +2522,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               >
                                 <input
                                   autoComplete="email"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={255}
                                   name="email"
                                   onBlur={[Function]}
@@ -2583,7 +2583,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                               >
                                 <input
                                   autoComplete={null}
-                                  key=".1"
+                                  key=".0"
                                   min={1}
                                   name="guests"
                                   onBlur={[Function]}
@@ -2707,7 +2707,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                   focusedInput={null}
                                   hideKeyboardShortcutsPanel={true}
                                   isDayBlocked={[Function]}
-                                  key=".1"
+                                  key=".0"
                                   navNext={
                                     <Icon
                                       color={null}
@@ -2797,7 +2797,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           >
                             <textarea
                               autoComplete={null}
-                              key=".1"
+                              key=".0"
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -3256,7 +3256,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               >
                                 <input
                                   autoComplete="name"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={80}
                                   name="name"
                                   onBlur={[Function]}
@@ -3331,7 +3331,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               >
                                 <input
                                   autoComplete="tel"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={15}
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -3429,7 +3429,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               >
                                 <input
                                   autoComplete="email"
-                                  key=".1"
+                                  key=".0"
                                   maxLength={255}
                                   name="email"
                                   onBlur={[Function]}
@@ -3490,7 +3490,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               >
                                 <input
                                   autoComplete={null}
-                                  key=".1"
+                                  key=".0"
                                   min={1}
                                   name="guests"
                                   onBlur={[Function]}
@@ -3614,7 +3614,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   focusedInput={null}
                                   hideKeyboardShortcutsPanel={true}
                                   isDayBlocked={[Function]}
-                                  key=".1"
+                                  key=".0"
                                   navNext={
                                     <Icon
                                       color={null}
@@ -3704,7 +3704,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           >
                             <textarea
                               autoComplete={null}
-                              key=".1"
+                              key=".0"
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}

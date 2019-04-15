@@ -62,6 +62,7 @@ export class Component extends PureComponent {
       initialValue,
       this.state.value
     );
+
     const isDirty = some(value);
     const hasErrorMessage = getHasErrorMessage(error);
 
@@ -75,12 +76,12 @@ export class Component extends PureComponent {
         })}
         iconPosition={icon && 'left'}
       >
-        {hasErrorMessage && <ErrorMessage errorMessage={error} />}
         {React.cloneElement(children, {
           [inputOnChangeFunctionName]: this.handleChange,
           ref: input => (this.htmlInput = input),
           ...mapValueToProps(value),
         })}
+        {hasErrorMessage && <ErrorMessage errorMessage={error} />}
         {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
         {label && <label onClick={this.handleClick}>{label}</label>}
         {icon}

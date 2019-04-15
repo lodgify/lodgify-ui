@@ -134,8 +134,8 @@
   &.error {
 
     input,
-    textarea {
-      background: @errorBackground;
+    textarea,
+    .ui.checkbox label:before {
       border-color: @errorBorder;
     }
 
@@ -205,4 +205,17 @@
 --------------------*/
 
   /* Inverted */
+}
+
+.ui.input.error {
+
+  .ui.checkbox ~ .ui.pointing.below.label {
+    left: 0;
+    right: auto;
+
+    &:before {
+      left: @7px;
+      right: auto;
+    }
+  }
 }

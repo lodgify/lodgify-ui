@@ -523,7 +523,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                               focusedInput={null}
                               hideKeyboardShortcutsPanel={true}
                               isDayBlocked={[Function]}
-                              key=".1"
+                              key=".0"
                               navNext={
                                 <Icon
                                   color={null}
@@ -1557,7 +1557,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                       focusedInput={null}
                                                       hideKeyboardShortcutsPanel={true}
                                                       isDayBlocked={[Function]}
-                                                      key=".1"
+                                                      key=".0"
                                                       navNext={
                                                         <Icon
                                                           color={null}
@@ -2593,7 +2593,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                               focusedInput={null}
                               hideKeyboardShortcutsPanel={true}
                               isDayBlocked={[Function]}
-                              key=".1"
+                              key=".0"
                               navNext={
                                 <Icon
                                   color={null}
@@ -3227,7 +3227,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                               focusedInput={null}
                               hideKeyboardShortcutsPanel={true}
                               isDayBlocked={[Function]}
-                              key=".1"
+                              key=".0"
                               navNext={
                                 <Icon
                                   color={null}
@@ -4190,7 +4190,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                               focusedInput={null}
                               hideKeyboardShortcutsPanel={true}
                               isDayBlocked={[Function]}
-                              key=".1"
+                              key=".0"
                               navNext={
                                 <Icon
                                   color={null}

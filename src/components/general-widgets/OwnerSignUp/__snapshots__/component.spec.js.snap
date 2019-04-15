@@ -111,7 +111,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                           >
                             <input
                               autoComplete="given-name"
-                              key=".1"
+                              key=".0"
                               maxLength={255}
                               name="firstName"
                               onBlur={[Function]}
@@ -171,7 +171,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                           >
                             <input
                               autoComplete="family-name"
-                              key=".1"
+                              key=".0"
                               maxLength={80}
                               name="lastName"
                               onBlur={[Function]}
@@ -231,7 +231,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                           >
                             <input
                               autoComplete="email"
-                              key=".1"
+                              key=".0"
                               maxLength={80}
                               name="email"
                               onBlur={[Function]}
@@ -428,7 +428,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                           >
                             <input
                               autoComplete="given-name"
-                              key=".1"
+                              key=".0"
                               maxLength={255}
                               name="firstName"
                               onBlur={[Function]}
@@ -488,7 +488,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                           >
                             <input
                               autoComplete="family-name"
-                              key=".1"
+                              key=".0"
                               maxLength={80}
                               name="lastName"
                               onBlur={[Function]}
@@ -548,7 +548,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                           >
                             <input
                               autoComplete="email"
-                              key=".1"
+                              key=".0"
                               maxLength={80}
                               name="email"
                               onBlur={[Function]}
@@ -745,7 +745,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                           >
                             <input
                               autoComplete="given-name"
-                              key=".1"
+                              key=".0"
                               maxLength={255}
                               name="firstName"
                               onBlur={[Function]}
@@ -805,7 +805,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                           >
                             <input
                               autoComplete="family-name"
-                              key=".1"
+                              key=".0"
                               maxLength={80}
                               name="lastName"
                               onBlur={[Function]}
@@ -865,7 +865,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                           >
                             <input
                               autoComplete="email"
-                              key=".1"
+                              key=".0"
                               maxLength={80}
                               name="email"
                               onBlur={[Function]}

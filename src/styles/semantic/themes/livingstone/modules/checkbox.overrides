@@ -5,6 +5,14 @@
 .ui.checkbox {
 
   /* Label */
+  input {
+
+    & ~ label {
+      top: 0;
+      left: 0;
+    }
+  }
+
   input:checked,
   &.radio input:checked {
 
@@ -38,6 +46,13 @@
   /* Pressed */
 
   /* Focus */
+  input:focus {
+
+    & + label {
+      font-size: inherit;
+      transform: none;
+    }
+  }
 
   /* Active */
 
@@ -114,4 +129,10 @@
   /*-------------------
       Variations
 --------------------*/
+}
+
+/* Label */
+.ui.checkbox + label {
+  left: 0;
+  top: 0;
 }

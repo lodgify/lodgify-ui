@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> should return the right structure 1`] = `
+<InputController
+  adaptOnChangeEvent={[Function]}
+  error={false}
+  icon={null}
+  initialValue=""
+  inputOnChangeFunctionName="onChange"
+  isFocused={false}
+  isValid={false}
+  label={null}
+  mapValueToProps={[Function]}
+  name=""
+  onChange={[Function]}
+>
+  <Checkbox
+    disabled={false}
+    label=""
+    radio={false}
+    toggle={false}
+    type="checkbox"
+  />
+</InputController>
+`;
