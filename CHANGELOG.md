@@ -1,3 +1,15 @@
+# [1.169.0](https://github.com/lodgify/lodgify-ui/compare/v1.168.0...v1.169.0) (2019-04-15)
+
+
+### Bug Fixes
+
+* **InputController:** reorder error to fit with checkbox ([5ca7431](https://github.com/lodgify/lodgify-ui/commit/5ca7431))
+
+
+### Features
+
+* **Checkbox:** wrap with an input controller ([d46ef2d](https://github.com/lodgify/lodgify-ui/commit/d46ef2d))
+
 # [1.168.0](https://github.com/lodgify/lodgify-ui/compare/v1.167.1...v1.168.0) (2019-04-12)
 
 
