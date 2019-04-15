@@ -8,6 +8,7 @@
 
 /* Button */
 .ui.button {
+  font-family: @bodyFont;
   background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
   color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
   will-change: @willChange;
