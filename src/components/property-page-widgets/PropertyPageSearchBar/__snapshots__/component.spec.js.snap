@@ -32,6 +32,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       icon={null}
       isCompact={false}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
@@ -51,6 +52,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       icon={null}
       isCompact={false}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
@@ -121,6 +123,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               icon={null}
               isCompact={false}
               isDisabled={false}
+              isFluid={false}
               isFormSubmit={false}
               isLoading={false}
               isPositionedRight={true}
@@ -208,13 +211,14 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             >
                                               <Heading
                                                 className={null}
+                                                hasMargin={true}
                                                 isColorInverted={false}
                                                 size="medium"
                                                 textAlign={null}
                                               >
                                                 <Header
                                                   as="h3"
-                                                  className={null}
+                                                  className=""
                                                   inverted={false}
                                                   textAlign={null}
                                                 >
@@ -375,6 +379,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                         icon={null}
                                                         initialValue=""
                                                         inputOnChangeFunctionName="onDatesChange"
+                                                        isFluid={false}
                                                         isFocused={false}
                                                         isValid={false}
                                                         label={null}
@@ -384,6 +389,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                       >
                                                         <Input
                                                           className=""
+                                                          fluid={false}
                                                           iconPosition={null}
                                                           type="text"
                                                         >
@@ -819,6 +825,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                   icon={null}
                                                   isCompact={false}
                                                   isDisabled={false}
+                                                  isFluid={false}
                                                   isFormSubmit={false}
                                                   isLoading={false}
                                                   isPositionedRight={true}
@@ -834,6 +841,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                     compact={false}
                                                     disabled={false}
                                                     floated="right"
+                                                    fluid={false}
                                                     loading={false}
                                                     onClick={[Function]}
                                                     secondary={false}
@@ -932,6 +940,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               icon={null}
               isCompact={false}
               isDisabled={false}
+              isFluid={false}
               isFormSubmit={false}
               isLoading={false}
               isPositionedRight={true}
@@ -1085,6 +1094,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                           icon={null}
                                           isCompact={false}
                                           isDisabled={false}
+                                          isFluid={false}
                                           isFormSubmit={false}
                                           isLoading={false}
                                           isPositionedRight={true}
@@ -1127,6 +1137,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             icon={null}
                                             isCompact={false}
                                             isDisabled={false}
+                                            isFluid={false}
                                             isFormSubmit={false}
                                             isLoading={false}
                                             isPositionedRight={true}
@@ -1157,6 +1168,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={true}
@@ -1177,6 +1189,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={true}
@@ -1196,6 +1209,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                 compact={false}
                                                 disabled={false}
                                                 floated="right"
+                                                fluid={false}
                                                 loading={false}
                                                 onClick={[Function]}
                                                 secondary={false}
@@ -1268,6 +1282,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       icon={null}
       isCompact={false}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
@@ -1287,6 +1302,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       icon={null}
       isCompact={false}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
@@ -1357,6 +1373,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               icon={null}
               isCompact={false}
               isDisabled={false}
+              isFluid={false}
               isFormSubmit={false}
               isLoading={false}
               isPositionedRight={true}
@@ -1444,13 +1461,14 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             >
                                               <Heading
                                                 className={null}
+                                                hasMargin={true}
                                                 isColorInverted={false}
                                                 size="medium"
                                                 textAlign={null}
                                               >
                                                 <Header
                                                   as="h3"
-                                                  className={null}
+                                                  className=""
                                                   inverted={false}
                                                   textAlign={null}
                                                 >
@@ -1665,13 +1683,14 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     from 
                                                     <Heading
                                                       className={null}
+                                                      hasMargin={true}
                                                       isColorInverted={false}
                                                       size="small"
                                                       textAlign={null}
                                                     >
                                                       <Header
                                                         as="h4"
-                                                        className={null}
+                                                        className=""
                                                         inverted={false}
                                                         textAlign={null}
                                                       >
@@ -1769,6 +1788,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                         icon={null}
                                                         initialValue=""
                                                         inputOnChangeFunctionName="onDatesChange"
+                                                        isFluid={false}
                                                         isFocused={false}
                                                         isValid={false}
                                                         label={null}
@@ -1778,6 +1798,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                       >
                                                         <Input
                                                           className=""
+                                                          fluid={false}
                                                           iconPosition={null}
                                                           type="text"
                                                         >
@@ -2213,6 +2234,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   icon={null}
                                                   isCompact={false}
                                                   isDisabled={false}
+                                                  isFluid={false}
                                                   isFormSubmit={false}
                                                   isLoading={false}
                                                   isPositionedRight={true}
@@ -2228,6 +2250,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     compact={false}
                                                     disabled={false}
                                                     floated="right"
+                                                    fluid={false}
                                                     loading={false}
                                                     onClick={[Function]}
                                                     secondary={false}
@@ -2326,6 +2349,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               icon={null}
               isCompact={false}
               isDisabled={false}
+              isFluid={false}
               isFormSubmit={false}
               isLoading={false}
               isPositionedRight={true}
@@ -2422,13 +2446,14 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     from 
                                                     <Heading
                                                       className={null}
+                                                      hasMargin={true}
                                                       isColorInverted={false}
                                                       size="small"
                                                       textAlign={null}
                                                     >
                                                       <Header
                                                         as="h4"
-                                                        className={null}
+                                                        className=""
                                                         inverted={false}
                                                         textAlign={null}
                                                       >
@@ -2637,6 +2662,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                           icon={null}
                                           isCompact={false}
                                           isDisabled={false}
+                                          isFluid={false}
                                           isFormSubmit={false}
                                           isLoading={false}
                                           isPositionedRight={true}
@@ -2679,6 +2705,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             icon={null}
                                             isCompact={false}
                                             isDisabled={false}
+                                            isFluid={false}
                                             isFormSubmit={false}
                                             isLoading={false}
                                             isPositionedRight={true}
@@ -2709,6 +2736,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={true}
@@ -2729,6 +2757,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={true}
@@ -2748,6 +2777,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                 compact={false}
                                                 disabled={false}
                                                 floated="right"
+                                                fluid={false}
                                                 loading={false}
                                                 onClick={[Function]}
                                                 secondary={false}

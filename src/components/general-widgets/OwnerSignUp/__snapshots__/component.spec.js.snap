@@ -36,13 +36,14 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -80,6 +81,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                     <TextInput
                       autoComplete="given-name"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="First Name"
                       maxCharacters={255}
@@ -94,6 +96,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="First Name"
@@ -103,6 +106,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -140,6 +144,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                     <TextInput
                       autoComplete="family-name"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="Last Name"
                       maxCharacters={80}
@@ -154,6 +159,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Last Name"
@@ -163,6 +169,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -200,6 +207,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                     <TextInput
                       autoComplete="email"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="Email"
                       maxCharacters={80}
@@ -214,6 +222,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Email"
@@ -223,6 +232,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -276,6 +286,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
@@ -291,6 +302,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -353,13 +365,14 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -397,6 +410,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                     <TextInput
                       autoComplete="given-name"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="First Name"
                       maxCharacters={255}
@@ -411,6 +425,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="First Name"
@@ -420,6 +435,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -457,6 +473,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                     <TextInput
                       autoComplete="family-name"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="Last Name"
                       maxCharacters={80}
@@ -471,6 +488,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Last Name"
@@ -480,6 +498,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -517,6 +536,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                     <TextInput
                       autoComplete="email"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="Email"
                       maxCharacters={80}
@@ -531,6 +551,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Email"
@@ -540,6 +561,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -593,6 +615,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
@@ -608,6 +631,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -670,13 +694,14 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -714,6 +739,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                     <TextInput
                       autoComplete="given-name"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="First Name"
                       maxCharacters={255}
@@ -728,6 +754,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="First Name"
@@ -737,6 +764,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -774,6 +802,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                     <TextInput
                       autoComplete="family-name"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="Last Name"
                       maxCharacters={80}
@@ -788,6 +817,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Last Name"
@@ -797,6 +827,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -834,6 +865,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                     <TextInput
                       autoComplete="email"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="Email"
                       maxCharacters={80}
@@ -848,6 +880,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Email"
@@ -857,6 +890,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -890,6 +924,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
@@ -905,6 +940,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}

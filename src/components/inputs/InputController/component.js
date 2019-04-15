@@ -52,6 +52,7 @@ export class Component extends PureComponent {
       icon,
       initialValue,
       inputOnChangeFunctionName,
+      isFluid,
       isFocused,
       isValid,
       label,
@@ -74,6 +75,7 @@ export class Component extends PureComponent {
           error: error,
           focus: isFocused,
         })}
+        fluid={isFluid}
         iconPosition={icon && 'left'}
       >
         {React.cloneElement(children, {
@@ -97,6 +99,7 @@ Component.defaultProps = {
   icon: null,
   initialValue: '',
   inputOnChangeFunctionName: 'onChange',
+  isFluid: false,
   isFocused: false,
   label: null,
   mapValueToProps: value => ({ value }),
@@ -117,6 +120,8 @@ Component.propTypes = {
   initialValue: PropTypes.any,
   /** The name of the change function on the input, if not `onChange`.  */
   inputOnChangeFunctionName: PropTypes.string,
+  /** Does the input fill the width of its container. */
+  isFluid: PropTypes.bool,
   /** Is input in a focused state. */
   isFocused: PropTypes.bool,
   /** Is input in a valid state. */

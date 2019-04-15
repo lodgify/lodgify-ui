@@ -69,13 +69,14 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -120,6 +121,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                         <TextInput
                           autoComplete="name"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Name"
                           maxCharacters={80}
@@ -134,6 +136,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Name"
@@ -143,6 +146,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -208,6 +212,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Phone"
@@ -218,6 +223,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition="left"
                               type="text"
                             >
@@ -284,6 +290,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                     <TextInput
                       autoComplete="email"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="Email"
                       maxCharacters={255}
@@ -298,6 +305,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Email"
@@ -307,6 +315,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -365,6 +374,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                             icon={null}
                             initialValue={null}
                             inputOnChangeFunctionName="onDateChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label={null}
@@ -374,6 +384,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -883,6 +894,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Notes"
@@ -892,6 +904,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -924,6 +937,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
@@ -939,6 +953,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -1053,13 +1068,14 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -1104,6 +1120,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                         <TextInput
                           autoComplete="name"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Name"
                           maxCharacters={80}
@@ -1118,6 +1135,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Name"
@@ -1127,6 +1145,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -1192,6 +1211,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Phone"
@@ -1202,6 +1222,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition="left"
                               type="text"
                             >
@@ -1268,6 +1289,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                     <TextInput
                       autoComplete="email"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="Email"
                       maxCharacters={255}
@@ -1282,6 +1304,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Email"
@@ -1291,6 +1314,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -1349,6 +1373,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue={null}
                             inputOnChangeFunctionName="onDateChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label={null}
@@ -1358,6 +1383,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -2166,6 +2192,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Notes"
@@ -2175,6 +2202,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -2207,6 +2235,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
@@ -2222,6 +2251,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
