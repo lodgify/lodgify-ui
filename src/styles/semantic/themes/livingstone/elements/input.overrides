@@ -11,6 +11,11 @@
   max-width: @inputMaxWidth;
   width: @inputWidth;
 
+  &,
+  & > input {
+    font-family: @bodyFont;
+  }
+
   /*-------------------
         Types
 --------------------*/
