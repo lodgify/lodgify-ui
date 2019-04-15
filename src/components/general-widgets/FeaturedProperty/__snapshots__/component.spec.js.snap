@@ -53,7 +53,14 @@ exports[`<FeaturedProperty /> should render the right structure 1`] = `
       </Subheading>
     </CardMeta>
     <CardHeader>
-      The Cat House
+      <Heading
+        className={null}
+        isColorInverted={false}
+        size="medium"
+        textAlign={null}
+      >
+        The Cat House
+      </Heading>
     </CardHeader>
     <CardDescription>
       Catania

@@ -127,7 +127,25 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
               <div
                 className="header"
               >
-                The Cat House
+                <Heading
+                  className={null}
+                  isColorInverted={false}
+                  size="medium"
+                  textAlign={null}
+                >
+                  <Header
+                    as="h3"
+                    className={null}
+                    inverted={false}
+                    textAlign={null}
+                  >
+                    <h3
+                      className="ui header"
+                    >
+                      The Cat House
+                    </h3>
+                  </Header>
+                </Heading>
               </div>
             </CardHeader>
             <CardDescription>
@@ -421,7 +439,25 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
               <div
                 className="header"
               >
-                The Cat House
+                <Heading
+                  className={null}
+                  isColorInverted={false}
+                  size="medium"
+                  textAlign={null}
+                >
+                  <Header
+                    as="h3"
+                    className={null}
+                    inverted={false}
+                    textAlign={null}
+                  >
+                    <h3
+                      className="ui header"
+                    >
+                      The Cat House
+                    </h3>
+                  </Header>
+                </Heading>
               </div>
             </CardHeader>
             <CardDescription>
@@ -768,7 +804,25 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
               <div
                 className="header"
               >
-                The Cat House
+                <Heading
+                  className={null}
+                  isColorInverted={false}
+                  size="medium"
+                  textAlign={null}
+                >
+                  <Header
+                    as="h3"
+                    className={null}
+                    inverted={false}
+                    textAlign={null}
+                  >
+                    <h3
+                      className="ui header"
+                    >
+                      The Cat House
+                    </h3>
+                  </Header>
+                </Heading>
               </div>
             </CardHeader>
             <CardDescription>
@@ -1062,7 +1116,25 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
               <div
                 className="header"
               >
-                The Cat House
+                <Heading
+                  className={null}
+                  isColorInverted={false}
+                  size="medium"
+                  textAlign={null}
+                >
+                  <Header
+                    as="h3"
+                    className={null}
+                    inverted={false}
+                    textAlign={null}
+                  >
+                    <h3
+                      className="ui header"
+                    >
+                      The Cat House
+                    </h3>
+                  </Header>
+                </Heading>
               </div>
             </CardHeader>
             <CardDescription>

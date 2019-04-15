@@ -259,16 +259,25 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                               <div
                                 className="label"
                               >
-                                <Paragraph
-                                  size="medium"
-                                  weight="heavy"
+                                <Heading
+                                  className={null}
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
                                 >
-                                  <p
-                                    className="heavy"
+                                  <Header
+                                    as="h4"
+                                    className={null}
+                                    inverted={false}
+                                    textAlign={null}
                                   >
-                                    Save up to
-                                  </p>
-                                </Paragraph>
+                                    <h4
+                                      className="ui header"
+                                    >
+                                      Save up to
+                                    </h4>
+                                  </Header>
+                                </Heading>
                               </div>
                             </StatisticLabel>
                             <StatisticValue>
@@ -712,16 +721,25 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                               <div
                                 className="label"
                               >
-                                <Paragraph
-                                  size="medium"
-                                  weight="heavy"
+                                <Heading
+                                  className={null}
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
                                 >
-                                  <p
-                                    className="heavy"
+                                  <Header
+                                    as="h4"
+                                    className={null}
+                                    inverted={false}
+                                    textAlign={null}
                                   >
-                                    Save up to
-                                  </p>
-                                </Paragraph>
+                                    <h4
+                                      className="ui header"
+                                    >
+                                      Save up to
+                                    </h4>
+                                  </Header>
+                                </Heading>
                               </div>
                             </StatisticLabel>
                             <StatisticValue>
@@ -1075,16 +1093,25 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                               <div
                                 className="label"
                               >
-                                <Paragraph
-                                  size="medium"
-                                  weight="heavy"
+                                <Heading
+                                  className={null}
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
                                 >
-                                  <p
-                                    className="heavy"
+                                  <Header
+                                    as="h4"
+                                    className={null}
+                                    inverted={false}
+                                    textAlign={null}
                                   >
-                                    Save up to
-                                  </p>
-                                </Paragraph>
+                                    <h4
+                                      className="ui header"
+                                    >
+                                      Save up to
+                                    </h4>
+                                  </Header>
+                                </Heading>
                               </div>
                             </StatisticLabel>
                             <StatisticValue>
@@ -1336,16 +1363,25 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                               <div
                                 className="label"
                               >
-                                <Paragraph
-                                  size="medium"
-                                  weight="heavy"
+                                <Heading
+                                  className={null}
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
                                 >
-                                  <p
-                                    className="heavy"
+                                  <Header
+                                    as="h4"
+                                    className={null}
+                                    inverted={false}
+                                    textAlign={null}
                                   >
-                                    Save up to
-                                  </p>
-                                </Paragraph>
+                                    <h4
+                                      className="ui header"
+                                    >
+                                      Save up to
+                                    </h4>
+                                  </Header>
+                                </Heading>
                               </div>
                             </StatisticLabel>
                             <StatisticValue>

@@ -470,7 +470,25 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
             <div
               className="header"
             >
-              someTitle
+              <Heading
+                className={null}
+                isColorInverted={false}
+                size="medium"
+                textAlign={null}
+              >
+                <Header
+                  as="h3"
+                  className={null}
+                  inverted={false}
+                  textAlign={null}
+                >
+                  <h3
+                    className="ui header"
+                  >
+                    someTitle
+                  </h3>
+                </Header>
+              </Heading>
             </div>
           </CardHeader>
           <CardDescription>
@@ -899,7 +917,25 @@ exports[`<Review /> should render the right structure 1`] = `
             <div
               className="header"
             >
-              someTitle
+              <Heading
+                className={null}
+                isColorInverted={false}
+                size="medium"
+                textAlign={null}
+              >
+                <Header
+                  as="h3"
+                  className={null}
+                  inverted={false}
+                  textAlign={null}
+                >
+                  <h3
+                    className="ui header"
+                  >
+                    someTitle
+                  </h3>
+                </Header>
+              </Heading>
             </div>
           </CardHeader>
           <CardDescription>
