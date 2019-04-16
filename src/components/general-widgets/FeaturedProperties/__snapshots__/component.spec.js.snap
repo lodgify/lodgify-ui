@@ -38,7 +38,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
     isShowingPlaceholder={false}
     key="The Cat House0"
     locationName="Catania"
-    periodText="night"
+    periodText="per night"
     pricePerPeriod="$280"
     propertyName="The Cat House"
     propertyType="Bed and breakfast"
@@ -317,7 +317,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                       </h3>
                     </Header>
                   </Heading>
-                  /night
+                  per night
                 </span>
               </div>
             </CardDescription>
@@ -333,7 +333,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
     isShowingPlaceholder={false}
     key="The Cat House1"
     locationName="Catania"
-    periodText="night"
+    periodText="per night"
     pricePerPeriod="$280"
     propertyName="The Cat House"
     propertyType="Bed and breakfast"
@@ -612,7 +612,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                       </h3>
                     </Header>
                   </Heading>
-                  /night
+                  per night
                 </span>
               </div>
             </CardDescription>
@@ -682,7 +682,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
     isShowingPlaceholder={false}
     key="The Cat House0"
     locationName="Catania"
-    periodText="night"
+    periodText="per night"
     pricePerPeriod="$280"
     propertyName="The Cat House"
     propertyType="Bed and breakfast"
@@ -961,7 +961,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                       </h3>
                     </Header>
                   </Heading>
-                  /night
+                  per night
                 </span>
               </div>
             </CardDescription>
@@ -977,7 +977,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
     isShowingPlaceholder={false}
     key="The Cat House1"
     locationName="Catania"
-    periodText="night"
+    periodText="per night"
     pricePerPeriod="$280"
     propertyName="The Cat House"
     propertyType="Bed and breakfast"
@@ -1256,7 +1256,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                       </h3>
                     </Header>
                   </Heading>
-                  /night
+                  per night
                 </span>
               </div>
             </CardDescription>
@@ -1281,7 +1281,7 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
     isShowingPlaceholder={true}
     key="0"
     locationName=""
-    periodText="night"
+    periodText="per night"
     pricePerPeriod=""
     propertyName=""
     propertyType=""
@@ -1370,7 +1370,7 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
     isShowingPlaceholder={true}
     key="1"
     locationName=""
-    periodText="night"
+    periodText="per night"
     pricePerPeriod=""
     propertyName=""
     propertyType=""
@@ -1459,7 +1459,7 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
     isShowingPlaceholder={true}
     key="2"
     locationName=""
-    periodText="night"
+    periodText="per night"
     pricePerPeriod=""
     propertyName=""
     propertyType=""
