@@ -74,7 +74,7 @@ Component.defaultProps = {
   imageSizes: undefined,
   imageSrcSet: undefined,
   isShowingPlaceholder: false,
-  periodText: 'night',
+  periodText: 'per night',
   placeholderImageUrl: undefined,
   propertyUrlTarget: '_self',
 };
