@@ -26,6 +26,7 @@
 
 /* Labeled Input */
 @labelColor: @greySix;
+@checkboxLabelColor: @black;
 
 /* Date Range Picker Input */
 @dateRangePickerMinWidth: 135px;
