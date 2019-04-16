@@ -93,6 +93,12 @@
     transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
   }
 
+  input[type=checkbox] ~ label {
+    color: @checkboxLabelColor;
+    top: 0;
+    left: 0;
+  }
+
   /* textarea */
 
   /* Date range picker */
