@@ -48,59 +48,65 @@ exports[`<Slideshow /> by default should return the right structure 1`] = `
   isShowingBulletNavigation={true}
   isStretched={false}
 >
-  <ImageGallery
-    additionalClass=""
-    items={
-      Array [
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two cats",
-          "originalTitle": "Two cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two more cats",
-          "originalTitle": "Two more cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Much cats",
-          "originalTitle": "Much cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "No dogs",
-          "originalTitle": "No dogs",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-      ]
-    }
-    lazyLoad={true}
-    onSlide={[Function]}
-    renderLeftNav={[Function]}
-    renderRightNav={[Function]}
-    showBullets={true}
-    showFullscreenButton={false}
-    showPlayButton={false}
-    showThumbnails={false}
+  <div
+    className="image-gallery-wrapper"
   >
-    <div />
-  </ImageGallery>
+    <ImageGallery
+      additionalClass=""
+      items={
+        Array [
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two cats",
+            "originalTitle": "Two cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two more cats",
+            "originalTitle": "Two more cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Much cats",
+            "originalTitle": "Much cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "No dogs",
+            "originalTitle": "No dogs",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+        ]
+      }
+      lazyLoad={true}
+      onImageError={[Function]}
+      onImageLoad={[Function]}
+      onSlide={[Function]}
+      renderLeftNav={[Function]}
+      renderRightNav={[Function]}
+      showBullets={true}
+      showFullscreenButton={false}
+      showPlayButton={false}
+      showThumbnails={false}
+    >
+      <div />
+    </ImageGallery>
+  </div>
 </Slideshow>
 `;
 
@@ -152,59 +158,65 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
   isShowingBulletNavigation={true}
   isStretched={false}
 >
-  <ImageGallery
-    additionalClass="no-shadow"
-    items={
-      Array [
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two cats",
-          "originalTitle": "Two cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two more cats",
-          "originalTitle": "Two more cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Much cats",
-          "originalTitle": "Much cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "No dogs",
-          "originalTitle": "No dogs",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-      ]
-    }
-    lazyLoad={true}
-    onSlide={[Function]}
-    renderLeftNav={[Function]}
-    renderRightNav={[Function]}
-    showBullets={true}
-    showFullscreenButton={false}
-    showPlayButton={false}
-    showThumbnails={false}
+  <div
+    className="image-gallery-wrapper"
   >
-    <div />
-  </ImageGallery>
+    <ImageGallery
+      additionalClass="no-shadow"
+      items={
+        Array [
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two cats",
+            "originalTitle": "Two cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two more cats",
+            "originalTitle": "Two more cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Much cats",
+            "originalTitle": "Much cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "No dogs",
+            "originalTitle": "No dogs",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+        ]
+      }
+      lazyLoad={true}
+      onImageError={[Function]}
+      onImageLoad={[Function]}
+      onSlide={[Function]}
+      renderLeftNav={[Function]}
+      renderRightNav={[Function]}
+      showBullets={true}
+      showFullscreenButton={false}
+      showPlayButton={false}
+      showThumbnails={false}
+    >
+      <div />
+    </ImageGallery>
+  </div>
 </Slideshow>
 `;
 
@@ -256,59 +268,65 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
   isShowingBulletNavigation={true}
   isStretched={false}
 >
-  <ImageGallery
-    additionalClass="no-border-radius"
-    items={
-      Array [
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two cats",
-          "originalTitle": "Two cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two more cats",
-          "originalTitle": "Two more cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Much cats",
-          "originalTitle": "Much cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "No dogs",
-          "originalTitle": "No dogs",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-      ]
-    }
-    lazyLoad={true}
-    onSlide={[Function]}
-    renderLeftNav={[Function]}
-    renderRightNav={[Function]}
-    showBullets={true}
-    showFullscreenButton={false}
-    showPlayButton={false}
-    showThumbnails={false}
+  <div
+    className="image-gallery-wrapper"
   >
-    <div />
-  </ImageGallery>
+    <ImageGallery
+      additionalClass="no-border-radius"
+      items={
+        Array [
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two cats",
+            "originalTitle": "Two cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two more cats",
+            "originalTitle": "Two more cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Much cats",
+            "originalTitle": "Much cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "No dogs",
+            "originalTitle": "No dogs",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+        ]
+      }
+      lazyLoad={true}
+      onImageError={[Function]}
+      onImageLoad={[Function]}
+      onSlide={[Function]}
+      renderLeftNav={[Function]}
+      renderRightNav={[Function]}
+      showBullets={true}
+      showFullscreenButton={false}
+      showPlayButton={false}
+      showThumbnails={false}
+    >
+      <div />
+    </ImageGallery>
+  </div>
 </Slideshow>
 `;
 
@@ -360,59 +378,65 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
   isShowingBulletNavigation={true}
   isStretched={true}
 >
-  <ImageGallery
-    additionalClass="fit-height"
-    items={
-      Array [
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two cats",
-          "originalTitle": "Two cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two more cats",
-          "originalTitle": "Two more cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Much cats",
-          "originalTitle": "Much cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "No dogs",
-          "originalTitle": "No dogs",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-      ]
-    }
-    lazyLoad={true}
-    onSlide={[Function]}
-    renderLeftNav={[Function]}
-    renderRightNav={[Function]}
-    showBullets={true}
-    showFullscreenButton={false}
-    showPlayButton={false}
-    showThumbnails={false}
+  <div
+    className="image-gallery-wrapper"
   >
-    <div />
-  </ImageGallery>
+    <ImageGallery
+      additionalClass="fit-height"
+      items={
+        Array [
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two cats",
+            "originalTitle": "Two cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two more cats",
+            "originalTitle": "Two more cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Much cats",
+            "originalTitle": "Much cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "No dogs",
+            "originalTitle": "No dogs",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+        ]
+      }
+      lazyLoad={true}
+      onImageError={[Function]}
+      onImageLoad={[Function]}
+      onSlide={[Function]}
+      renderLeftNav={[Function]}
+      renderRightNav={[Function]}
+      showBullets={true}
+      showFullscreenButton={false}
+      showPlayButton={false}
+      showThumbnails={false}
+    >
+      <div />
+    </ImageGallery>
+  </div>
 </Slideshow>
 `;
 
@@ -442,30 +466,36 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
       frrrrrp
     </p>
   </Paragraph>
-  <ImageGallery
-    additionalClass=""
-    items={
-      Array [
-        Object {
-          "original": "some url",
-          "originalAlt": undefined,
-          "originalTitle": undefined,
-          "sizes": undefined,
-          "srcSet": undefined,
-        },
-      ]
-    }
-    lazyLoad={true}
-    onSlide={[Function]}
-    renderLeftNav={[Function]}
-    renderRightNav={[Function]}
-    showBullets={true}
-    showFullscreenButton={false}
-    showPlayButton={false}
-    showThumbnails={false}
+  <div
+    className="image-gallery-wrapper"
   >
-    <div />
-  </ImageGallery>
+    <ImageGallery
+      additionalClass=""
+      items={
+        Array [
+          Object {
+            "original": "some url",
+            "originalAlt": undefined,
+            "originalTitle": undefined,
+            "sizes": undefined,
+            "srcSet": undefined,
+          },
+        ]
+      }
+      lazyLoad={true}
+      onImageError={[Function]}
+      onImageLoad={[Function]}
+      onSlide={[Function]}
+      renderLeftNav={[Function]}
+      renderRightNav={[Function]}
+      showBullets={true}
+      showFullscreenButton={false}
+      showPlayButton={false}
+      showThumbnails={false}
+    >
+      <div />
+    </ImageGallery>
+  </div>
 </Slideshow>
 `;
 
@@ -537,58 +567,64 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
       </h3>
     </Header>
   </Heading>
-  <ImageGallery
-    additionalClass=""
-    items={
-      Array [
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two cats",
-          "originalTitle": "Two cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Two more cats",
-          "originalTitle": "Two more cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "Much cats",
-          "originalTitle": "Much cats",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-        Object {
-          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          "originalAlt": "No dogs",
-          "originalTitle": "No dogs",
-          "sizes": "100w",
-          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
-        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
-        },
-      ]
-    }
-    lazyLoad={true}
-    onSlide={[Function]}
-    renderLeftNav={[Function]}
-    renderRightNav={[Function]}
-    showBullets={true}
-    showFullscreenButton={false}
-    showPlayButton={false}
-    showThumbnails={false}
+  <div
+    className="image-gallery-wrapper"
   >
-    <div />
-  </ImageGallery>
+    <ImageGallery
+      additionalClass=""
+      items={
+        Array [
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two cats",
+            "originalTitle": "Two cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Two more cats",
+            "originalTitle": "Two more cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "Much cats",
+            "originalTitle": "Much cats",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+          Object {
+            "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+            "originalAlt": "No dogs",
+            "originalTitle": "No dogs",
+            "sizes": "100w",
+            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
+        https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&h=1000&mode=max 1024w",
+          },
+        ]
+      }
+      lazyLoad={true}
+      onImageError={[Function]}
+      onImageLoad={[Function]}
+      onSlide={[Function]}
+      renderLeftNav={[Function]}
+      renderRightNav={[Function]}
+      showBullets={true}
+      showFullscreenButton={false}
+      showPlayButton={false}
+      showThumbnails={false}
+    >
+      <div />
+    </ImageGallery>
+  </div>
 </Slideshow>
 `;
