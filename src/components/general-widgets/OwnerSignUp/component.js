@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
+  ACCEPT_PRIVACY_POLICY,
   EMAIL,
   FIRST_NAME,
   LAST_NAME,
@@ -10,6 +11,7 @@ import {
 } from 'utils/default-strings';
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
+import { Checkbox } from 'inputs/Checkbox';
 
 import {
   EMAIL_MAX_CHARACTERS,
@@ -26,8 +28,10 @@ export const Component = ({
   errorMessage,
   firstNameInputLabel,
   headingText,
+  isPrivacyConsentRequired,
   lastNameInputLabel,
   onSubmit,
+  privacyConsentLabel,
   submitButtonText,
   successMessage,
   validation,
@@ -58,6 +62,9 @@ export const Component = ({
       maxCharacters={FIRST_NAME_MAX_CHARACTERS}
       name="email"
     />
+    {isPrivacyConsentRequired && (
+      <Checkbox label={privacyConsentLabel} name="privacyConsent" />
+    )}
   </Form>
 );
 
@@ -68,8 +75,10 @@ Component.defaultProps = {
   errorMessage: '',
   firstNameInputLabel: FIRST_NAME,
   headingText: OWNER_SIGNUP,
+  isPrivacyConsentRequired: false,
   lastNameInputLabel: LAST_NAME,
   onSubmit: Function.prototype,
+  privacyConsentLabel: ACCEPT_PRIVACY_POLICY,
   submitButtonText: SIGN_UP,
   successMessage: '',
   validation: {},
@@ -84,12 +93,16 @@ Component.propTypes = {
   firstNameInputLabel: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** Displays a privacy consent checkbox in the form. */
+  isPrivacyConsentRequired: PropTypes.bool,
   /** The label for the last name input */
   lastNameInputLabel: PropTypes.string,
   /** The function to call when the form is submitted
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
+  /** The text to display next to the privacy consent checkbox. */
+  privacyConsentLabel: PropTypes.node,
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
   /** The message to display when the form is successful. */
@@ -99,5 +112,6 @@ Component.propTypes = {
     email: PropTypes.object,
     firstName: PropTypes.object,
     lastName: PropTypes.object,
+    privacyConsent: PropTypes.object,
   }),
 };

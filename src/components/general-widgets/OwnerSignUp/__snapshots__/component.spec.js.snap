@@ -1,13 +1,389 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should render the right structure 1`] = `
+<OwnerSignUp
+  emailInputLabel="Email"
+  errorMessage=""
+  firstNameInputLabel="First Name"
+  headingText="Owner Signup"
+  isPrivacyConsentRequired={true}
+  lastNameInputLabel="Last Name"
+  onSubmit={[Function]}
+  privacyConsentLabel="I accept the privacy policy"
+  submitButtonText="Sign up"
+  successMessage=""
+  validation={Object {}}
+>
+  <Form
+    actionLink={null}
+    autoComplete={null}
+    errorMessage=""
+    headingText="Owner Signup"
+    onSubmit={[Function]}
+    submitButtonText="Sign up"
+    successMessage=""
+    validation={Object {}}
+  >
+    <Card
+      className="has-form"
+      fluid={true}
+    >
+      <div
+        className="ui fluid card has-form"
+        onClick={[Function]}
+      >
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Heading
+              className={null}
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              <Header
+                as="h3"
+                className={null}
+                inverted={false}
+                textAlign={null}
+              >
+                <h3
+                  className="ui header"
+                >
+                  Owner Signup
+                </h3>
+              </Header>
+            </Heading>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Form
+              as="form"
+              autoComplete={null}
+              error={false}
+              onSubmit={[Function]}
+              success={false}
+            >
+              <form
+                autoComplete={null}
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <FormField
+                  key=".0"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      autoComplete="given-name"
+                      error={false}
+                      isValid={false}
+                      label="First Name"
+                      maxCharacters={255}
+                      name="firstName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        adaptOnChangeEvent={[Function]}
+                        error={false}
+                        icon={null}
+                        initialValue=""
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="First Name"
+                        mapValueToProps={[Function]}
+                        name="firstName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              autoComplete="given-name"
+                              key=".0"
+                              maxLength={255}
+                              name="firstName"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                              value=""
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              First Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".1"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      autoComplete="family-name"
+                      error={false}
+                      isValid={false}
+                      label="Last Name"
+                      maxCharacters={80}
+                      name="lastName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        adaptOnChangeEvent={[Function]}
+                        error={false}
+                        icon={null}
+                        initialValue=""
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Last Name"
+                        mapValueToProps={[Function]}
+                        name="lastName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              autoComplete="family-name"
+                              key=".0"
+                              maxLength={80}
+                              name="lastName"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                              value=""
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Last Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      autoComplete="email"
+                      error={false}
+                      isValid={false}
+                      label="Email"
+                      maxCharacters={80}
+                      name="email"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        adaptOnChangeEvent={[Function]}
+                        error={false}
+                        icon={null}
+                        initialValue=""
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label="Email"
+                        mapValueToProps={[Function]}
+                        name="email"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              autoComplete="email"
+                              key=".0"
+                              maxLength={80}
+                              name="email"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                              value=""
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Email
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".3"
+                >
+                  <div
+                    className="field"
+                  >
+                    <Checkbox
+                      error={false}
+                      isDisabled={false}
+                      isRadioButton={false}
+                      isToggle={false}
+                      isValid={false}
+                      label="I accept the privacy policy"
+                      name="privacyConsent"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                    >
+                      <InputController
+                        adaptOnChangeEvent={[Function]}
+                        error={false}
+                        icon={null}
+                        initialValue=""
+                        inputOnChangeFunctionName="onChange"
+                        isFocused={false}
+                        isValid={false}
+                        label={null}
+                        mapValueToProps={[Function]}
+                        name="privacyConsent"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <Checkbox
+                              checked={false}
+                              disabled={false}
+                              key=".0"
+                              label="I accept the privacy policy"
+                              onChange={[Function]}
+                              radio={false}
+                              toggle={false}
+                              type="checkbox"
+                            >
+                              <div
+                                className="ui checkbox"
+                                onChange={[Function]}
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                              >
+                                <input
+                                  checked={false}
+                                  className="hidden"
+                                  onClick={[Function]}
+                                  readOnly={true}
+                                  tabIndex={0}
+                                  type="checkbox"
+                                />
+                                <label
+                                  key="I accept the privacy policy"
+                                >
+                                  I accept the privacy policy
+                                </label>
+                              </div>
+                            </Checkbox>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </Checkbox>
+                  </div>
+                </FormField>
+                <Button
+                  hasShadow={false}
+                  icon={null}
+                  isCompact={false}
+                  isDisabled={false}
+                  isFormSubmit={true}
+                  isLoading={false}
+                  isPositionedRight={true}
+                  isRounded={false}
+                  isSecondary={false}
+                  onClick={[Function]}
+                  size={null}
+                >
+                  <Button
+                    as="button"
+                    circular={false}
+                    className=""
+                    compact={false}
+                    disabled={false}
+                    floated="right"
+                    loading={false}
+                    onClick={[Function]}
+                    secondary={false}
+                    size={null}
+                    type="submit"
+                  >
+                    <button
+                      className="ui right floated button"
+                      onClick={[Function]}
+                      role="button"
+                      type="submit"
+                    >
+                      Sign up
+                    </button>
+                  </Button>
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </Form>
+</OwnerSignUp>
+`;
+
 exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the error message above the submit button 1`] = `
 <OwnerSignUp
   emailInputLabel="Email"
   errorMessage="This is an error message"
   firstNameInputLabel="First Name"
   headingText="Owner Signup"
+  isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
+  privacyConsentLabel="I accept the privacy policy"
   submitButtonText="Sign up"
   successMessage=""
   validation={Object {}}
@@ -335,8 +711,10 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
   errorMessage=""
   firstNameInputLabel="First Name"
   headingText="Owner Signup"
+  isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
+  privacyConsentLabel="I accept the privacy policy"
   submitButtonText="Sign up"
   successMessage="This is a successful message"
   validation={Object {}}
@@ -664,8 +1042,10 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
   errorMessage=""
   firstNameInputLabel="First Name"
   headingText="Owner Signup"
+  isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
+  privacyConsentLabel="I accept the privacy policy"
   submitButtonText="Sign up"
   successMessage=""
   validation={Object {}}
