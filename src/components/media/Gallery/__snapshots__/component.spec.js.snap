@@ -27,6 +27,7 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
         >
           <Heading
             className={null}
+            hasMargin={true}
             isColorInverted={false}
             size="small"
             textAlign={null}
@@ -50,6 +51,7 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
         >
           <Heading
             className={null}
+            hasMargin={true}
             isColorInverted={false}
             size="small"
             textAlign={null}
@@ -104,6 +106,7 @@ exports[`<Gallery /> if \`props.headingText\` is defined should render the right
         >
           <Heading
             className={null}
+            hasMargin={true}
             isColorInverted={false}
             size="small"
             textAlign={null}
@@ -127,6 +130,7 @@ exports[`<Gallery /> if \`props.headingText\` is defined should render the right
         >
           <Heading
             className={null}
+            hasMargin={true}
             isColorInverted={false}
             size="small"
             textAlign={null}
@@ -186,6 +190,7 @@ exports[`<Gallery /> if any \`images\` have \`categoryText\` should render the r
           />
           <Heading
             className={null}
+            hasMargin={true}
             isColorInverted={false}
             size="medium"
             textAlign={null}

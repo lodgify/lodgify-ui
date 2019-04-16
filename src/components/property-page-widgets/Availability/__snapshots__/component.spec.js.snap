@@ -24,6 +24,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
 <div>
   <Heading
     className={null}
+    hasMargin={true}
     isColorInverted={false}
     size="small"
     textAlign={null}
@@ -318,6 +319,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
 <div>
   <Heading
     className={null}
+    hasMargin={true}
     isColorInverted={false}
     size="small"
     textAlign={null}

@@ -98,13 +98,14 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
               </Subheading>
               <Heading
                 className={null}
+                hasMargin={true}
                 isColorInverted={false}
                 size="large"
                 textAlign={null}
               >
                 <Header
                   as="h2"
-                  className={null}
+                  className=""
                   inverted={false}
                   textAlign={null}
                 >
@@ -931,13 +932,14 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
               </Subheading>
               <Heading
                 className={null}
+                hasMargin={true}
                 isColorInverted={false}
                 size="large"
                 textAlign={null}
               >
                 <Header
                   as="h2"
-                  className={null}
+                  className=""
                   inverted={false}
                   textAlign={null}
                 >
@@ -1565,13 +1567,14 @@ exports[`<Description /> should have the correct structure 1`] = `
               </Subheading>
               <Heading
                 className={null}
+                hasMargin={true}
                 isColorInverted={false}
                 size="large"
                 textAlign={null}
               >
                 <Header
                   as="h2"
-                  className={null}
+                  className=""
                   inverted={false}
                   textAlign={null}
                 >

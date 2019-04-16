@@ -18,6 +18,7 @@ exports[`<SingleDatePicker /> should render the right structure 1`] = `
     icon={null}
     initialValue={null}
     inputOnChangeFunctionName="onDateChange"
+    isFluid={false}
     isFocused={false}
     isValid={false}
     label={null}
@@ -27,6 +28,7 @@ exports[`<SingleDatePicker /> should render the right structure 1`] = `
   >
     <Input
       className=""
+      fluid={false}
       iconPosition={null}
       type="text"
     >

@@ -519,13 +519,14 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
 >
   <Heading
     className={null}
+    hasMargin={true}
     isColorInverted={false}
     size="medium"
     textAlign={null}
   >
     <Header
       as="h3"
-      className={null}
+      className=""
       inverted={false}
       textAlign={null}
     >

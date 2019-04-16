@@ -30,20 +30,18 @@ const socialMediaLinks = [
 
 ### Content
 
+#### Email capture
+
+```jsx
+<Footer
+  hasEmailCapture
+  propertyAddress={'The Cat House, Pawprint Way, Catania 08012'}
+/>
+```
+
 #### Navigation bar
 
 ```jsx
-const currencyOptions = [
-  { text: 'EUR', value: 'EUR', label: 'Euro' },
-  { text: 'USD', value: 'USD', label: 'US Dollar' },
-  { text: 'JPY', value: 'JPY', label: 'Japanese Yen' },
-];
-const languageOptions = [
-  { text: 'English', value: 'en' },
-  { text: 'German', value: 'de' },
-  { text: 'Japanese', value: 'jp' },
-  { text: 'Italian', value: 'it' },
-];
 const navigationItems = [
   { href: '/', text: 'Home' },
   { href: '/contact', text: 'Contact' },
@@ -52,22 +50,12 @@ const navigationItems = [
   { href: '/tennis-court', text: 'Tennis Court' },
   { href: '/gym', text: 'Gym' },
 ];
-const socialMediaLinks = [
-  { href: 'https://twitter.com/lodgify', iconName: 'twitter' },
-  { href: 'https://instagram.com/lodgify', iconName: 'instagram' },
-];
 
 <Footer
-  currencyOptions={currencyOptions}
-  currencyValue={currencyOptions[0].value}
-  languageOptions={languageOptions}
-  languageValue={languageOptions[0].value}
   navigationItems={navigationItems}
   onChangeCurrency={console.log}
   onChangeLanguage={console.log}
-  phoneNumber={'+1 2345 678912'}
   propertyAddress={'The Cat House, Pawprint Way, Catania 08012'}
-  socialMediaLinks={socialMediaLinks}
 />
 ```
 

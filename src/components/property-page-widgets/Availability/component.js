@@ -86,6 +86,7 @@ class Component extends PureComponent {
       previousMonthsButtonLabel,
       propertyDropdownLabel,
       propertyDropdownPlaceholderLabel,
+      roomOptionsValue,
       roomOptionsWithImages,
     } = this.props;
 
@@ -118,6 +119,7 @@ class Component extends PureComponent {
                       label={propertyDropdownPlaceholderLabel}
                       onChange={this.reloadCalendarOnRoomSelection}
                       options={roomOptionsWithImages}
+                      value={roomOptionsValue}
                     />
                   </GridColumn>
                 </Grid>
@@ -213,6 +215,7 @@ Component.defaultProps = {
   previousMonthsButtonLabel: PREVIOUS,
   propertyDropdownLabel: VIEW_AVAILABILITY_FOR,
   propertyDropdownPlaceholderLabel: PROPERTIES,
+  roomOptionsValue: undefined,
   roomOptionsWithImages: null,
 };
 
@@ -249,6 +252,12 @@ Component.propTypes = {
   propertyDropdownLabel: PropTypes.string,
   /** The label that goes inside the dropdown when there are no options. */
   propertyDropdownPlaceholderLabel: PropTypes.string,
+  /** The current value of the room options dropdown. */
+  roomOptionsValue: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
   /** The options which the user can select for the room field. */
   roomOptionsWithImages: PropTypes.PropTypes.arrayOf(
     PropTypes.shape({

@@ -24,3 +24,15 @@
   </Heading>
 </div>
 ```
+
+#### Margin
+
+```jsx
+<Heading>We</Heading>
+<Heading>have</Heading>
+<Heading>margin</Heading>
+<Divider />
+<Heading hasMargin={false}>But</Heading>
+<Heading hasMargin={false}>we</Heading>
+<Heading hasMargin={false}>don't</Heading>
+```

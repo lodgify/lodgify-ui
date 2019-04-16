@@ -15,6 +15,7 @@ export const Component = ({
   icon,
   isCompact,
   isDisabled,
+  isFluid,
   isFormSubmit,
   isLoading,
   isPositionedRight,
@@ -31,6 +32,7 @@ export const Component = ({
     compact={isCompact}
     disabled={isDisabled}
     floated={isPositionedRight ? 'right' : 'left'}
+    fluid={isFluid}
     loading={isLoading}
     onClick={onClick}
     secondary={isSecondary}
@@ -50,6 +52,7 @@ Component.defaultProps = {
   icon: null,
   isCompact: false,
   isDisabled: false,
+  isFluid: false,
   isFormSubmit: false,
   isLoading: false,
   isPositionedRight: false,
@@ -72,6 +75,8 @@ Component.propTypes = {
   isCompact: PropTypes.bool,
   /** Is the button disabled. */
   isDisabled: PropTypes.bool,
+  /** Does the button fill the width of its container. */
+  isFluid: PropTypes.bool,
   /** Is the button for submitting the form in which it is rendered. */
   isFormSubmit: PropTypes.bool,
   /** Is the button in loading state. */

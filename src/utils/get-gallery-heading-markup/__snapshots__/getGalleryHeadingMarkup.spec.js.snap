@@ -7,13 +7,14 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
   >
     <Heading
       className={null}
+      hasMargin={true}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
-        className={null}
+        className=""
         inverted={false}
         textAlign={null}
       >
@@ -176,13 +177,14 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined should return th
   >
     <Heading
       className={null}
+      hasMargin={true}
       isColorInverted={false}
       size="medium"
       textAlign={null}
     >
       <Header
         as="h3"
-        className={null}
+        className=""
         inverted={false}
         textAlign={null}
       >

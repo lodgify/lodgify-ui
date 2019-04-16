@@ -286,6 +286,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                 icon={null}
                                 isCompact={false}
                                 isDisabled={false}
+                                isFluid={false}
                                 isFormSubmit={false}
                                 isLoading={false}
                                 isPositionedRight={false}
@@ -301,6 +302,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   compact={false}
                                   disabled={false}
                                   floated="left"
+                                  fluid={false}
                                   loading={false}
                                   onClick={[Function]}
                                   secondary={false}
@@ -370,6 +372,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                     >
                       <Heading
                         className="show-on-tablet show-on-computer show-on-widescreen"
+                        hasMargin={true}
                         isColorInverted={true}
                         size="huge"
                         textAlign="center"
@@ -404,6 +407,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                     >
                       <Heading
                         className="show-on-mobile"
+                        hasMargin={true}
                         isColorInverted={true}
                         size="large"
                         textAlign="center"
@@ -790,6 +794,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           icon={null}
                                                           initialValue=""
                                                           inputOnChangeFunctionName="onDatesChange"
+                                                          isFluid={false}
                                                           isFocused={false}
                                                           isValid={false}
                                                           label={null}
@@ -799,6 +804,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         >
                                                           <Input
                                                             className=""
+                                                            fluid={false}
                                                             iconPosition={null}
                                                             type="text"
                                                           >
@@ -1172,6 +1178,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                         header={
                                           <Heading
                                             className={null}
+                                            hasMargin={true}
                                             isColorInverted={false}
                                             size="small"
                                             textAlign={null}

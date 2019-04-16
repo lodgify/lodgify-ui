@@ -1776,13 +1776,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         >
                                           <Heading
                                             className={null}
+                                            hasMargin={true}
                                             isColorInverted={false}
                                             size="medium"
                                             textAlign={null}
                                           >
                                             <Header
                                               as="h3"
-                                              className={null}
+                                              className=""
                                               inverted={false}
                                               textAlign={null}
                                             >
@@ -2285,13 +2286,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       from 
                                                       <Heading
                                                         className={null}
+                                                        hasMargin={true}
                                                         isColorInverted={false}
                                                         size="medium"
                                                         textAlign={null}
                                                       >
                                                         <Header
                                                           as="h3"
-                                                          className={null}
+                                                          className=""
                                                           inverted={false}
                                                           textAlign={null}
                                                         >
@@ -2676,13 +2678,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         >
                                           <Heading
                                             className={null}
+                                            hasMargin={true}
                                             isColorInverted={false}
                                             size="medium"
                                             textAlign={null}
                                           >
                                             <Header
                                               as="h3"
-                                              className={null}
+                                              className=""
                                               inverted={false}
                                               textAlign={null}
                                             >
@@ -3185,13 +3188,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       from 
                                                       <Heading
                                                         className={null}
+                                                        hasMargin={true}
                                                         isColorInverted={false}
                                                         size="medium"
                                                         textAlign={null}
                                                       >
                                                         <Header
                                                           as="h3"
-                                                          className={null}
+                                                          className=""
                                                           inverted={false}
                                                           textAlign={null}
                                                         >

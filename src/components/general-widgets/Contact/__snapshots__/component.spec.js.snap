@@ -79,13 +79,14 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -130,6 +131,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         <TextInput
                           autoComplete="name"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Name"
                           maxCharacters={80}
@@ -144,6 +146,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Name"
@@ -153,6 +156,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -218,6 +222,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Phone"
@@ -228,6 +233,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition="left"
                               type="text"
                             >
@@ -302,6 +308,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         <TextInput
                           autoComplete="email"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Email"
                           maxCharacters={255}
@@ -317,6 +324,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Email"
@@ -326,6 +334,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -378,6 +387,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Guests"
@@ -387,6 +397,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -463,6 +474,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label={null}
@@ -472,6 +484,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -592,6 +605,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Comments"
@@ -601,6 +615,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -1199,6 +1214,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
@@ -1214,6 +1230,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -1304,13 +1321,14 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -1355,6 +1373,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         <TextInput
                           autoComplete="name"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Name"
                           maxCharacters={80}
@@ -1369,6 +1388,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Name"
@@ -1378,6 +1398,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -1443,6 +1464,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Phone"
@@ -1453,6 +1475,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition="left"
                               type="text"
                             >
@@ -1527,6 +1550,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         <TextInput
                           autoComplete="email"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Email"
                           maxCharacters={255}
@@ -1542,6 +1566,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Email"
@@ -1551,6 +1576,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -1603,6 +1629,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Guests"
@@ -1612,6 +1639,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -1688,6 +1716,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label={null}
@@ -1697,6 +1726,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -1817,6 +1847,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Comments"
@@ -1826,6 +1857,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -2166,6 +2198,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
@@ -2181,6 +2214,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -2267,13 +2301,14 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -2318,6 +2353,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         <TextInput
                           autoComplete="name"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Name"
                           maxCharacters={80}
@@ -2332,6 +2368,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Name"
@@ -2341,6 +2378,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -2406,6 +2444,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Phone"
@@ -2416,6 +2455,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition="left"
                               type="text"
                             >
@@ -2490,6 +2530,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         <TextInput
                           autoComplete="email"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Email"
                           maxCharacters={255}
@@ -2505,6 +2546,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Email"
@@ -2514,6 +2556,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -2566,6 +2609,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Guests"
@@ -2575,6 +2619,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -2651,6 +2696,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label={null}
@@ -2660,6 +2706,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -2780,6 +2827,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Comments"
@@ -2789,6 +2837,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -3088,6 +3137,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
@@ -3103,6 +3153,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -3174,13 +3225,14 @@ exports[`<Contact /> should have the correct structure 1`] = `
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -3225,6 +3277,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         <TextInput
                           autoComplete="name"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Name"
                           maxCharacters={80}
@@ -3239,6 +3292,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Name"
@@ -3248,6 +3302,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -3313,6 +3368,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Phone"
@@ -3323,6 +3379,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition="left"
                               type="text"
                             >
@@ -3397,6 +3454,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         <TextInput
                           autoComplete="email"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Email"
                           maxCharacters={255}
@@ -3412,6 +3470,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Email"
@@ -3421,6 +3480,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -3473,6 +3533,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Guests"
@@ -3482,6 +3543,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -3558,6 +3620,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label={null}
@@ -3567,6 +3630,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -3687,6 +3751,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Comments"
@@ -3696,6 +3761,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -3728,6 +3794,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
@@ -3743,6 +3810,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}

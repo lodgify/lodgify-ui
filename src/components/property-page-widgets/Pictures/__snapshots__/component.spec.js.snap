@@ -92,13 +92,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
             >
               <Heading
                 className={null}
+                hasMargin={true}
                 isColorInverted={false}
                 size="medium"
                 textAlign={null}
               >
                 <Header
                   as="h3"
-                  className={null}
+                  className=""
                   inverted={false}
                   textAlign={null}
                 >

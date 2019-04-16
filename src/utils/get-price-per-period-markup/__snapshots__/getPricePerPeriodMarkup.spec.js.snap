@@ -6,6 +6,7 @@ exports[`getPricePerPeriodMarkup should have the right structure 1`] = `
     from 
     <Heading
       className={null}
+      hasMargin={true}
       isColorInverted={false}
       size="small"
       textAlign={null}
