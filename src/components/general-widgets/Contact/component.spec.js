@@ -50,6 +50,16 @@ describe('<Contact />', () => {
     });
   });
 
+  describe('if `isPrivacyConsentRequired` is `truthy`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getContact({
+        isPrivacyConsentRequired: true,
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   it('should have `displayName` `Contact`', () => {
     expectComponentToHaveDisplayName(Contact, 'Contact');
   });
