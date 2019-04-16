@@ -456,6 +456,17 @@ blockquote.ui.quote .row {
       margin: 0;
     }
   }
+
+  .location-dropdown {
+
+    .dropdown-container {
+
+      .ui.selection.dropdown {
+        width: @searchBarLocationDropdownMinWidth;
+        padding-right: @38px;
+      }
+    }
+  }
 }
 
 /*----------------------

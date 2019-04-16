@@ -58,7 +58,7 @@ export const getFormFieldMarkup = (
         </Form.Field>
       )}
       {!!size(locationOptions) > 0 && (
-        <Form.Field width={defaultColumnWidth}>
+        <Form.Field className="location-dropdown">
           <Dropdown
             icon={ICON_NAMES.MAP_PIN}
             label="Location"
