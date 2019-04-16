@@ -71,6 +71,8 @@
 @placeholderWrapperPaddingTop: @5px;
 @placeholderMarginRight: 1em;
 
+@priceTextPadding: @5px;
+
 /* Is Promotion */
 @promotionBackgroundColor: @yellow;
 @promotionBorderRadius: @3px;
