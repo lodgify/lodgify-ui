@@ -33,6 +33,16 @@ describe('<OwnerSignUp />', () => {
     });
   });
 
+  describe('if `isPrivacyConsentRequired` is `truthy`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getOwnerSignUp({
+        isPrivacyConsentRequired: true,
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   it('should have displayName `OwnerSignUp`', () => {
     expectComponentToHaveDisplayName(OwnerSignUp, 'OwnerSignUp');
   });
