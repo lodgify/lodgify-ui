@@ -435,6 +435,10 @@ blockquote.ui.quote .row {
     }
   }
 
+  .image-gallery-slide {
+    background: transparent;
+  }
+
   &.no-shadow .image-gallery-content .image-gallery-slide-wrapper > .image-gallery-swipe {
     box-shadow: none;
   }
