@@ -104,10 +104,12 @@ const validation = {
     invalidMessage: 'Garden is invalid',
     getIsValid: value => value !== 'garden'
   },
+  privacyConsent: { isRequired: true },
   property: { isRequired: true },
 };
 
 <Contact
+  isPrivacyConsentRequired
   propertyOptions={propertyOptions}
   roomOptions={roomOptions}
   validation={validation}
