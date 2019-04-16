@@ -69,6 +69,7 @@
     font-size: inherit;
 
     .heading-with-rating {
+      font-family: @bodyFont;
 
       .header {
         margin-bottom: @headerWithHeadingAndRatingMarginBottom;

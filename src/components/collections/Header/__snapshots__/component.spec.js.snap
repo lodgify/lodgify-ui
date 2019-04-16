@@ -600,6 +600,18 @@ exports[
               <div
                 className="right menu"
               >
+                <ShowOn
+                  computer={true}
+                  mobile={false}
+                  parent="div"
+                  parentProps={Object {}}
+                  tablet={true}
+                  widescreen={true}
+                >
+                  <div
+                    className="show-on-tablet show-on-computer show-on-widescreen"
+                  />
+                </ShowOn>
                 <MenuItem
                   className="no-underline"
                 >

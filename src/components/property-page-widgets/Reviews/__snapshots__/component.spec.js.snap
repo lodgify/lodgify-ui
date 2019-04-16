@@ -2711,7 +2711,26 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 <div
                                   className="header"
                                 >
-                                  Great accommodation! Honorable host.
+                                  <Heading
+                                    className={null}
+                                    hasMargin={true}
+                                    isColorInverted={false}
+                                    size="medium"
+                                    textAlign={null}
+                                  >
+                                    <Header
+                                      as="h3"
+                                      className=""
+                                      inverted={false}
+                                      textAlign={null}
+                                    >
+                                      <h3
+                                        className="ui header"
+                                      >
+                                        Great accommodation! Honorable host.
+                                      </h3>
+                                    </Header>
+                                  </Heading>
                                 </div>
                               </CardHeader>
                               <CardDescription>
@@ -3179,7 +3198,26 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                 <div
                                   className="header"
                                 >
-                                  Great accommodation! Honorable host.
+                                  <Heading
+                                    className={null}
+                                    hasMargin={true}
+                                    isColorInverted={false}
+                                    size="medium"
+                                    textAlign={null}
+                                  >
+                                    <Header
+                                      as="h3"
+                                      className=""
+                                      inverted={false}
+                                      textAlign={null}
+                                    >
+                                      <h3
+                                        className="ui header"
+                                      >
+                                        Great accommodation! Honorable host.
+                                      </h3>
+                                    </Header>
+                                  </Heading>
                                 </div>
                               </CardHeader>
                               <CardDescription>

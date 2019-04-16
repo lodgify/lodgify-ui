@@ -1,3 +1,31 @@
+# [1.173.0](https://github.com/lodgify/lodgify-ui/compare/v1.172.0...v1.173.0) (2019-04-16)
+
+
+### Features
+
+* **getHiddenMenuMarkup:** hidde primaryCTA on mobile ([b2b6515](https://github.com/lodgify/lodgify-ui/commit/b2b6515))
+
+# [1.172.0](https://github.com/lodgify/lodgify-ui/compare/v1.171.0...v1.172.0) (2019-04-16)
+
+
+### Bug Fixes
+
+* **general-widgets:** use typography components ([5f51374](https://github.com/lodgify/lodgify-ui/commit/5f51374))
+
+
+### Features
+
+* **button:** consume typography variables ([31396e2](https://github.com/lodgify/lodgify-ui/commit/31396e2))
+* **form:** consume typography variables ([83bd73a](https://github.com/lodgify/lodgify-ui/commit/83bd73a))
+* **input:** consume typography variables ([5ad7eeb](https://github.com/lodgify/lodgify-ui/commit/5ad7eeb))
+* **menu:** consume typography variables ([3affae3](https://github.com/lodgify/lodgify-ui/commit/3affae3))
+* **modal:** consume typography variables ([c9c620d](https://github.com/lodgify/lodgify-ui/commit/c9c620d))
+* **react-dates-datepicker:** consume typography variables ([81f6899](https://github.com/lodgify/lodgify-ui/commit/81f6899))
+* **segment:** consume typography variables ([552a711](https://github.com/lodgify/lodgify-ui/commit/552a711))
+* **site.overrides:** consume typography variables ([cad9408](https://github.com/lodgify/lodgify-ui/commit/cad9408))
+* **site.variables:** expose typography variables ([33eadb7](https://github.com/lodgify/lodgify-ui/commit/33eadb7))
+* **styles:** expose font custom properties ([81cb677](https://github.com/lodgify/lodgify-ui/commit/81cb677))
+
 # [1.171.0](https://github.com/lodgify/lodgify-ui/compare/v1.170.0...v1.171.0) (2019-04-16)
 
 
