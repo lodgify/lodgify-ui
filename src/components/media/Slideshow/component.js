@@ -8,6 +8,8 @@ import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { ICON_NAMES } from 'elements/Icon';
 
+import { getImageHeight } from './utils/getImageHeight';
+import { setImageGallerySlidesHeight } from './utils/setImageGallerySlidesHeight';
 import { adaptImages } from './utils/adaptImages';
 import { renderNavButton } from './utils/renderNavButton';
 
@@ -18,9 +20,28 @@ import { renderNavButton } from './utils/renderNavButton';
 export class Component extends PureComponent {
   state = {
     index: 0,
+    brokenImageSource: null,
+  };
+
+  componentDidMount = () => {
+    global.window.addEventListener('resize', this.handleResize);
   };
 
   handleSlide = index => this.setState({ index });
+
+  handleResize = () => {
+    const imageHeight = getImageHeight(this.component);
+
+    setImageGallerySlidesHeight(imageHeight, this.component);
+  };
+
+  handleImageLoad = event =>
+    setImageGallerySlidesHeight(event.target.height, this.component);
+
+  handleImageError = event =>
+    this.setState({ brokenImageSource: event.target.src });
+
+  createComponentRef = component => (this.component = component);
 
   render = () => {
     const {
@@ -37,24 +58,28 @@ export class Component extends PureComponent {
       <Fragment>
         {headingText && <Heading>{headingText}</Heading>}
         {descriptionText && <Paragraph>{descriptionText}</Paragraph>}
-        <ImageGallery
-          additionalClass={getClassNames('', {
-            'fit-height': isStretched,
-            'no-shadow': !hasShadow,
-            'no-border-radius': !isRounded,
-          })}
-          // Note: styles for the pagination controls
-          // live in `styles/semantic/themes/livingstone/collections/menu.*`
-          items={adaptImages(images)}
-          lazyLoad
-          onSlide={this.handleSlide}
-          renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
-          renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
-          showBullets={isShowingBulletNavigation}
-          showFullscreenButton={false}
-          showPlayButton={false}
-          showThumbnails={false}
-        />
+        <div className="image-gallery-wrapper" ref={this.createComponentRef}>
+          <ImageGallery
+            additionalClass={getClassNames('', {
+              'fit-height': isStretched,
+              'no-shadow': !hasShadow,
+              'no-border-radius': !isRounded,
+            })}
+            // Note: styles for the pagination controls
+            // live in `styles/semantic/themes/livingstone/collections/menu.*`
+            items={adaptImages(images, this.state.brokenImageSource)}
+            lazyLoad
+            onImageError={this.handleImageError}
+            onImageLoad={this.handleImageLoad}
+            onSlide={this.handleSlide}
+            renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
+            renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
+            showBullets={isShowingBulletNavigation}
+            showFullscreenButton={false}
+            showPlayButton={false}
+            showThumbnails={false}
+          />
+        </div>
       </Fragment>
     );
   };
