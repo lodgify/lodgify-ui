@@ -157,7 +157,7 @@ Component.defaultProps = {
   amenitiesHeadingText: 'Room Amenities',
   extraFeatures: [],
   isShowingPlaceholder: false,
-  periodText: 'night',
+  periodText: 'per night',
   ratingNumber: null,
 };
 

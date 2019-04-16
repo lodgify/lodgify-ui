@@ -45,7 +45,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
   isUserOnMobile={false}
   locationName="Catania"
   name="The Cat House"
-  periodText="night"
+  periodText="per night"
   pricePerPeriod="$280"
   propertyType="Bed and breakfast"
   propertyUrl="/"
@@ -662,7 +662,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                     </h3>
                                                   </Header>
                                                 </Heading>
-                                                /night
+                                                per night
                                               </span>
                                             </div>
                                           </CardDescription>
@@ -758,7 +758,7 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
   isUserOnMobile={false}
   locationName="Catania"
   name="The Cat House"
-  periodText="night"
+  periodText="per night"
   pricePerPeriod="$280"
   propertyType="Bed and breakfast"
   propertyUrl="/"
@@ -1011,7 +1011,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
   isUserOnMobile={true}
   locationName="Catania"
   name="The Cat House"
-  periodText="night"
+  periodText="per night"
   pricePerPeriod="$280"
   propertyType="Bed and breakfast"
   propertyUrl="/"
@@ -1601,7 +1601,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                     </h3>
                                                   </Header>
                                                 </Heading>
-                                                /night
+                                                per night
                                               </span>
                                             </div>
                                           </CardDescription>
