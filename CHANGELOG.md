@@ -1,3 +1,10 @@
+# [1.170.0](https://github.com/lodgify/lodgify-ui/compare/v1.169.0...v1.170.0) (2019-04-16)
+
+
+### Features
+
+* **Availability:** room options can be controlled by prop value ([4460297](https://github.com/lodgify/lodgify-ui/commit/4460297))
+
 # [1.169.0](https://github.com/lodgify/lodgify-ui/compare/v1.168.0...v1.169.0) (2019-04-15)
 
 
