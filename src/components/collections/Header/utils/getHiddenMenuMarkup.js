@@ -7,6 +7,7 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Button } from 'elements/Button';
 import { Divider } from 'elements/Divider';
+import { ShowOn } from 'layout/ShowOn';
 
 import { getLogoMarkup } from './getLogoMarkup';
 import { getLinkMarkup } from './getLinkMarkup';
@@ -36,13 +37,15 @@ export const getHiddenMenuMarkup = (
   activeNavigationItemIndex
 ) => (
   <Fragment>
-    {primaryCTA && (
-      <Menu.Item className="no-underline" link>
-        <Button isRounded onClick={primaryCTA.onClick}>
-          {primaryCTA.text}
-        </Button>
-      </Menu.Item>
-    )}
+    <ShowOn computer tablet widescreen>
+      {primaryCTA && (
+        <Menu.Item className="no-underline" link>
+          <Button isRounded onClick={primaryCTA.onClick}>
+            {primaryCTA.text}
+          </Button>
+        </Menu.Item>
+      )}
+    </ShowOn>
     <Menu.Item className="no-underline">
       <Modal
         header={getLogoMarkup(

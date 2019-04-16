@@ -2,54 +2,67 @@
 
 exports[`getHiddenMenuMarkup should render the right structure 1`] = `
 Array [
-  <MenuItem
-    className="no-underline"
-    link={true}
+  <ShowOn
+    computer={true}
+    mobile={false}
+    parent="div"
+    parentProps={Object {}}
+    tablet={true}
+    widescreen={true}
   >
     <div
-      className="link item no-underline"
-      onClick={[Function]}
+      className="show-on-tablet show-on-computer show-on-widescreen"
     >
-      <Button
-        hasShadow={false}
-        icon={null}
-        isCompact={false}
-        isDisabled={false}
-        isFluid={false}
-        isFormSubmit={false}
-        isLoading={false}
-        isPositionedRight={false}
-        isRounded={true}
-        isSecondary={false}
-        onClick={[Function]}
-        size={null}
+      <MenuItem
+        className="no-underline"
+        link={true}
       >
-        <Button
-          as="button"
-          circular={true}
-          className=""
-          compact={false}
-          disabled={false}
-          floated="left"
-          fluid={false}
-          loading={false}
+        <div
+          className="link item no-underline"
           onClick={[Function]}
-          secondary={false}
-          size={null}
-          type="button"
         >
-          <button
-            className="ui circular left floated button"
+          <Button
+            hasShadow={false}
+            icon={null}
+            isCompact={false}
+            isDisabled={false}
+            isFluid={false}
+            isFormSubmit={false}
+            isLoading={false}
+            isPositionedRight={false}
+            isRounded={true}
+            isSecondary={false}
             onClick={[Function]}
-            role="button"
-            type="button"
+            size={null}
           >
-            some Elisabeth
-          </button>
-        </Button>
-      </Button>
+            <Button
+              as="button"
+              circular={true}
+              className=""
+              compact={false}
+              disabled={false}
+              floated="left"
+              fluid={false}
+              loading={false}
+              onClick={[Function]}
+              secondary={false}
+              size={null}
+              type="button"
+            >
+              <button
+                className="ui circular left floated button"
+                onClick={[Function]}
+                role="button"
+                type="button"
+              >
+                some Elisabeth
+              </button>
+            </Button>
+          </Button>
+        </div>
+      </MenuItem>
     </div>
-  </MenuItem>,
+  </ShowOn>,
   <MenuItem
     className="no-underline"
   >
