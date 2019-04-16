@@ -10,6 +10,11 @@
 
 .ui.form {
 
+  &,
+  input {
+    font-family: @bodyFont;
+  }
+
   /* Text */
 
   /* Field */

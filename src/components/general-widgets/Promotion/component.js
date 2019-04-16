@@ -142,9 +142,7 @@ export const Component = ({
         >
           <Statistic size="small">
             <Statistic.Label>
-              <Paragraph weight="heavy">
-                {discountAmountParagraphText}
-              </Paragraph>
+              <Heading size="small">{discountAmountParagraphText}</Heading>
             </Statistic.Label>
             <Statistic.Value>
               <Heading size="large">{discountAmount}</Heading>
