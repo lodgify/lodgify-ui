@@ -263,13 +263,14 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                               >
                                 <Heading
                                   className={null}
+                                  hasMargin={true}
                                   isColorInverted={false}
                                   size="small"
                                   textAlign={null}
                                 >
                                   <Header
                                     as="h4"
-                                    className={null}
+                                    className=""
                                     inverted={false}
                                     textAlign={null}
                                   >
@@ -732,13 +733,14 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                               >
                                 <Heading
                                   className={null}
+                                  hasMargin={true}
                                   isColorInverted={false}
                                   size="small"
                                   textAlign={null}
                                 >
                                   <Header
                                     as="h4"
-                                    className={null}
+                                    className=""
                                     inverted={false}
                                     textAlign={null}
                                   >
@@ -1109,13 +1111,14 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                               >
                                 <Heading
                                   className={null}
+                                  hasMargin={true}
                                   isColorInverted={false}
                                   size="small"
                                   textAlign={null}
                                 >
                                   <Header
                                     as="h4"
-                                    className={null}
+                                    className=""
                                     inverted={false}
                                     textAlign={null}
                                   >
@@ -1382,13 +1385,14 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                               >
                                 <Heading
                                   className={null}
+                                  hasMargin={true}
                                   isColorInverted={false}
                                   size="small"
                                   textAlign={null}
                                 >
                                   <Header
                                     as="h4"
-                                    className={null}
+                                    className=""
                                     inverted={false}
                                     textAlign={null}
                                   >

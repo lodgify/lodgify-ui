@@ -472,13 +472,14 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
             >
               <Heading
                 className={null}
+                hasMargin={true}
                 isColorInverted={false}
                 size="medium"
                 textAlign={null}
               >
                 <Header
                   as="h3"
-                  className={null}
+                  className=""
                   inverted={false}
                   textAlign={null}
                 >
@@ -919,13 +920,14 @@ exports[`<Review /> should render the right structure 1`] = `
             >
               <Heading
                 className={null}
+                hasMargin={true}
                 isColorInverted={false}
                 size="medium"
                 textAlign={null}
               >
                 <Header
                   as="h3"
-                  className={null}
+                  className=""
                   inverted={false}
                   textAlign={null}
                 >

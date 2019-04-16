@@ -55,6 +55,7 @@ exports[`<FeaturedProperty /> should render the right structure 1`] = `
     <CardHeader>
       <Heading
         className={null}
+        hasMargin={true}
         isColorInverted={false}
         size="medium"
         textAlign={null}
