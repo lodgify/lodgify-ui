@@ -72,7 +72,7 @@ export const getModalContentMarkup = (
         <Paragraph>
           from
           <strong>{` ${pricePerPeriod} `}</strong>
-          {`/${periodText}`}
+          {`${periodText}`}
         </Paragraph>
       </GridColumn>
     </Grid>

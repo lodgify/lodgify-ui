@@ -331,7 +331,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
                     <strong>
                        $1010 
                     </strong>
-                    /ich, burp...
+                    ich, burp...
                   </p>
                 </Paragraph>
               </div>
@@ -901,7 +901,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                     <strong>
                        $1010 
                     </strong>
-                    /ich, burp...
+                    ich, burp...
                   </p>
                 </Paragraph>
               </div>
@@ -1325,7 +1325,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                     <strong>
                        $1010 
                     </strong>
-                    /ich, burp...
+                    ich, burp...
                   </p>
                 </Paragraph>
               </div>
@@ -1902,7 +1902,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                     <strong>
                        $1010 
                     </strong>
-                    /ich, burp...
+                    ich, burp...
                   </p>
                 </Paragraph>
               </div>
@@ -2467,7 +2467,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                     <strong>
                        $1010 
                     </strong>
-                    /ich, burp...
+                    ich, burp...
                   </p>
                 </Paragraph>
               </div>
