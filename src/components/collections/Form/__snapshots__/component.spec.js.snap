@@ -52,14 +52,14 @@ exports[`<Form /> by default should render the correct structure 1`] = `
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
-                isRounded={false}
+                isRounded={true}
                 isSecondary={false}
                 onClick={[Function]}
                 size={null}
               >
                 <Button
                   as="button"
-                  circular={false}
+                  circular={true}
                   className=""
                   compact={false}
                   disabled={false}
@@ -71,7 +71,7 @@ exports[`<Form /> by default should render the correct structure 1`] = `
                   type="submit"
                 >
                   <button
-                    className="ui right floated button"
+                    className="ui circular right floated button"
                     onClick={[Function]}
                     role="button"
                     type="submit"
@@ -173,14 +173,14 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
-                isRounded={false}
+                isRounded={true}
                 isSecondary={false}
                 onClick={[Function]}
                 size={null}
               >
                 <Button
                   as="button"
-                  circular={false}
+                  circular={true}
                   className=""
                   compact={false}
                   disabled={false}
@@ -192,7 +192,7 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
                   type="submit"
                 >
                   <button
-                    className="ui right floated button"
+                    className="ui circular right floated button"
                     onClick={[Function]}
                     role="button"
                     type="submit"
@@ -285,14 +285,14 @@ exports[`<Form /> if \`props.errorMessage\` is passed should render the correct 
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
-                isRounded={false}
+                isRounded={true}
                 isSecondary={false}
                 onClick={[Function]}
                 size={null}
               >
                 <Button
                   as="button"
-                  circular={false}
+                  circular={true}
                   className=""
                   compact={false}
                   disabled={false}
@@ -304,7 +304,7 @@ exports[`<Form /> if \`props.errorMessage\` is passed should render the correct 
                   type="submit"
                 >
                   <button
-                    className="ui right floated button"
+                    className="ui circular right floated button"
                     onClick={[Function]}
                     role="button"
                     type="submit"
@@ -399,14 +399,14 @@ exports[`<Form /> if \`props.headingText\` is passed should render the correct s
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
-                isRounded={false}
+                isRounded={true}
                 isSecondary={false}
                 onClick={[Function]}
                 size={null}
               >
                 <Button
                   as="button"
-                  circular={false}
+                  circular={true}
                   className=""
                   compact={false}
                   disabled={false}
@@ -418,7 +418,7 @@ exports[`<Form /> if \`props.headingText\` is passed should render the correct s
                   type="submit"
                 >
                   <button
-                    className="ui right floated button"
+                    className="ui circular right floated button"
                     onClick={[Function]}
                     role="button"
                     type="submit"
@@ -488,14 +488,14 @@ exports[`<Form /> if \`props.submitButtonText\` is an empty string should render
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
-                isRounded={false}
+                isRounded={true}
                 isSecondary={false}
                 onClick={[Function]}
                 size={null}
               >
                 <Button
                   as="button"
-                  circular={false}
+                  circular={true}
                   className=""
                   compact={false}
                   disabled={false}
@@ -507,7 +507,7 @@ exports[`<Form /> if \`props.submitButtonText\` is an empty string should render
                   type="submit"
                 >
                   <button
-                    className="ui right floated button"
+                    className="ui circular right floated button"
                     onClick={[Function]}
                     role="button"
                     type="submit"
@@ -577,14 +577,14 @@ exports[`<Form /> if \`props.submitButtonText\` is passed should render the corr
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
-                isRounded={false}
+                isRounded={true}
                 isSecondary={false}
                 onClick={[Function]}
                 size={null}
               >
                 <Button
                   as="button"
-                  circular={false}
+                  circular={true}
                   className=""
                   compact={false}
                   disabled={false}
@@ -596,7 +596,7 @@ exports[`<Form /> if \`props.submitButtonText\` is passed should render the corr
                   type="submit"
                 >
                   <button
-                    className="ui right floated button"
+                    className="ui circular right floated button"
                     onClick={[Function]}
                     role="button"
                     type="submit"
@@ -689,14 +689,14 @@ exports[`<Form /> if \`props.successMessage\` is passed should render the correc
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
-                isRounded={false}
+                isRounded={true}
                 isSecondary={false}
                 onClick={[Function]}
                 size={null}
               >
                 <Button
                   as="button"
-                  circular={false}
+                  circular={true}
                   className=""
                   compact={false}
                   disabled={false}
@@ -708,7 +708,7 @@ exports[`<Form /> if \`props.successMessage\` is passed should render the correc
                   type="submit"
                 >
                   <button
-                    className="ui right floated button"
+                    className="ui circular right floated button"
                     onClick={[Function]}
                     role="button"
                     type="submit"
