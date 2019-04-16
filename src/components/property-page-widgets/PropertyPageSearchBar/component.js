@@ -104,7 +104,7 @@ Component.defaultProps = {
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),
-  summaryPeriodText: 'night',
+  summaryPeriodText: 'per night',
   summaryPricePerPeriod: undefined,
   summaryRatingNumber: undefined,
 };
