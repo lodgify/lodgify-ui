@@ -38,7 +38,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
     isShowingPlaceholder={false}
     key="The Cat House0"
     locationName="Catania"
-    periodText="night"
+    periodText="per night"
     pricePerPeriod="$280"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
@@ -156,7 +156,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                       </h3>
                     </Header>
                   </Heading>
-                  /night
+                  per night
                 </span>
               </div>
             </CardDescription>
@@ -174,7 +174,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
     isShowingPlaceholder={false}
     key="The Cat House1"
     locationName="Catania"
-    periodText="night"
+    periodText="per night"
     pricePerPeriod="$280"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
@@ -292,7 +292,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                       </h3>
                     </Header>
                   </Heading>
-                  /night
+                  per night
                 </span>
               </div>
             </CardDescription>
@@ -319,7 +319,7 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
     isShowingPlaceholder={true}
     key="0"
     locationName=""
-    periodText="night"
+    periodText="per night"
     pricePerPeriod=""
     roomTypeName=""
     roomTypeUrl=""
@@ -408,7 +408,7 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
     isShowingPlaceholder={true}
     key="1"
     locationName=""
-    periodText="night"
+    periodText="per night"
     pricePerPeriod=""
     roomTypeName=""
     roomTypeUrl=""
@@ -497,7 +497,7 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
     isShowingPlaceholder={true}
     key="2"
     locationName=""
-    periodText="night"
+    periodText="per night"
     pricePerPeriod=""
     roomTypeName=""
     roomTypeUrl=""
@@ -638,7 +638,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
     isShowingPlaceholder={false}
     key="The Cat House0"
     locationName="Catania"
-    periodText="night"
+    periodText="per night"
     pricePerPeriod="$280"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
@@ -756,7 +756,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                       </h3>
                     </Header>
                   </Heading>
-                  /night
+                  per night
                 </span>
               </div>
             </CardDescription>
@@ -774,7 +774,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
     isShowingPlaceholder={false}
     key="The Cat House1"
     locationName="Catania"
-    periodText="night"
+    periodText="per night"
     pricePerPeriod="$280"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
@@ -892,7 +892,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                       </h3>
                     </Header>
                   </Heading>
-                  /night
+                  per night
                 </span>
               </div>
             </CardDescription>
