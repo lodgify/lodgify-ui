@@ -111,12 +111,14 @@ const reviews = [
 const validation = {
   comments: { isRequired: true },
   name: { isRequired: true },
+  privacyConsent: { isRequired: true },
   rating: { isRequired: true },
   title: { isRequired: true },
 };
 
 <Reviews
   guestTypeOptions={guestTypeOptions}
+  isPrivacyConsentRequired
   monthOptions={monthOptions}
   ratingAverage={ratingAverage}
   reviews={reviews}

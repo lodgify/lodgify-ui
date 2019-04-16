@@ -49,6 +49,17 @@ describe('getModalFormMarkup', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  describe('if `isPrivacyConsentRequired` is `truthy`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getModalForm({
+        ...props,
+        isPrivacyConsentRequired: true,
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   describe('if `isShowingPlaceholder` is `true`', () => {
     it('should render the right structure', () => {
       const wrapper = getModalForm(props, true);

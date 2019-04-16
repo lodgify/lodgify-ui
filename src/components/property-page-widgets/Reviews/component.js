@@ -11,6 +11,7 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Review } from 'general-widgets/Review';
 import {
+  ACCEPT_PRIVACY_POLICY,
   ADD_A_REVIEW,
   COMMENTS,
   GUEST_TYPE,
@@ -97,12 +98,14 @@ Component.defaultProps = {
   guestTypeInputLabel: GUEST_TYPE,
   guestTypeOptions: [],
   headingText: REVIEWS,
+  isPrivacyConsentRequired: false,
   isShowingPlaceholder: false,
   locationInputLabel: YOUR_LOCATION,
   monthInputLabel: MONTH,
   monthOptions: [],
   nameInputLabel: YOUR_NAME,
   onSubmit: Function.prototype,
+  privacyConsentLabel: ACCEPT_PRIVACY_POLICY,
   roomTypeOptions: [],
   ratingInputLabel: YOUR_REVIEW,
   reviewFormHeading: ADD_A_REVIEW,
@@ -144,6 +147,8 @@ Component.propTypes = {
   ),
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** Displays a privacy consent checkbox to the review form. */
+  isPrivacyConsentRequired: PropTypes.bool,
   /** Is the component showing placeholders to reserve space for content which will appear. */
   isShowingPlaceholder: PropTypes.bool,
   /** The label for the location input. */
@@ -174,6 +179,8 @@ Component.propTypes = {
    */
   // eslint-disable-next-line react/no-unused-prop-types
   onSubmit: PropTypes.func,
+  /** The text to display next to the privacy consent checkbox. */
+  privacyConsentLabel: PropTypes.node,
   /** The average numeral rating for the properties. */
   ratingAverage: PropTypes.number.isRequired,
   /** A visible label to display with the rating stars. */
@@ -245,6 +252,7 @@ Component.propTypes = {
     location: PropTypes.object,
     month: PropTypes.object,
     name: PropTypes.object,
+    privacyConsent: PropTypes.object,
     rating: PropTypes.object,
     roomType: PropTypes.object,
     title: PropTypes.object,
