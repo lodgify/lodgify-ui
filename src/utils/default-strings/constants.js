@@ -1,3 +1,4 @@
+export const ACCEPT_PRIVACY_POLICY = 'I accept the privacy policy';
 export const ADD_A_REVIEW = 'Add a Review';
 export const AND = 'and';
 export const ARRIVAL = 'Arrival';

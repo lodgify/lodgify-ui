@@ -60,6 +60,7 @@ const validation = {
   name: { isRequired: true },
   notes: { isRequired: true },
   phone: { isRequired: true },
+  privacyConsent: { isRequired: true },
   property: {
     isRequired: true,
     invalidMessage: 'A property is required',
@@ -69,6 +70,7 @@ const validation = {
 };
 
 <CallMeBack
+  isPrivacyConsentRequired
   propertyOptions={propertyOptions}
   timeOptions={[]}
   validation={validation}

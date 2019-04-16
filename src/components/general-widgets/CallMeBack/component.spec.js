@@ -68,6 +68,16 @@ describe('<CallMeBack />', () => {
     });
   });
 
+  describe('if `isPrivacyConsentRequired` is `truthy`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getCallMeBack({
+        isPrivacyConsentRequired: true,
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   it('should have `displayName` `CallMeBack`', () => {
     expectComponentToHaveDisplayName(CallMeBack, 'CallMeBack');
   });
