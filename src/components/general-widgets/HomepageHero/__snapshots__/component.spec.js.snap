@@ -538,10 +538,10 @@ exports[`HomepageHero should render the right structure 1`] = `
                                               className="fields"
                                             >
                                               <FormField
-                                                width="three"
+                                                className="location-dropdown"
                                               >
                                                 <div
-                                                  className="three wide field"
+                                                  className="field location-dropdown"
                                                 >
                                                   <Dropdown
                                                     error={false}

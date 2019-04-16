@@ -21,7 +21,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
     />
   </FormField>
   <FormField
-    width="three"
+    className="location-dropdown"
   >
     <Dropdown
       error={false}
