@@ -53,7 +53,7 @@ Component.displayName = 'Summary';
 Component.defaultProps = {
   areOnlyNightPriceAndRatingDisplayed: false,
   isShowingPlaceholder: false,
-  periodText: 'night',
+  periodText: 'per night',
   pricePerPeriod: undefined,
   ratingNumber: undefined,
 };
