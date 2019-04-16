@@ -15,6 +15,6 @@ export const getPricePerPeriodMarkup = (
 ) => (
   <span>
     from <Heading size={size}>{pricePerPeriod}</Heading>
-    {`/${periodText}`}
+    {`${periodText}`}
   </span>
 );
