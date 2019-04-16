@@ -49,6 +49,7 @@ exports[`<Form /> by default should render the correct structure 1`] = `
                 icon={null}
                 isCompact={false}
                 isDisabled={false}
+                isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
@@ -64,6 +65,7 @@ exports[`<Form /> by default should render the correct structure 1`] = `
                   compact={false}
                   disabled={false}
                   floated="right"
+                  fluid={false}
                   loading={false}
                   onClick={[Function]}
                   secondary={false}
@@ -170,6 +172,7 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
                 icon={null}
                 isCompact={false}
                 isDisabled={false}
+                isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
@@ -185,6 +188,7 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
                   compact={false}
                   disabled={false}
                   floated="right"
+                  fluid={false}
                   loading={false}
                   onClick={[Function]}
                   secondary={false}
@@ -282,6 +286,7 @@ exports[`<Form /> if \`props.errorMessage\` is passed should render the correct 
                 icon={null}
                 isCompact={false}
                 isDisabled={false}
+                isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
@@ -297,6 +302,7 @@ exports[`<Form /> if \`props.errorMessage\` is passed should render the correct 
                   compact={false}
                   disabled={false}
                   floated="right"
+                  fluid={false}
                   loading={false}
                   onClick={[Function]}
                   secondary={false}
@@ -347,13 +353,14 @@ exports[`<Form /> if \`props.headingText\` is passed should render the correct s
         >
           <Heading
             className={null}
+            hasMargin={true}
             isColorInverted={false}
             size="medium"
             textAlign={null}
           >
             <Header
               as="h3"
-              className={null}
+              className=""
               inverted={false}
               textAlign={null}
             >
@@ -396,6 +403,7 @@ exports[`<Form /> if \`props.headingText\` is passed should render the correct s
                 icon={null}
                 isCompact={false}
                 isDisabled={false}
+                isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
@@ -411,6 +419,7 @@ exports[`<Form /> if \`props.headingText\` is passed should render the correct s
                   compact={false}
                   disabled={false}
                   floated="right"
+                  fluid={false}
                   loading={false}
                   onClick={[Function]}
                   secondary={false}
@@ -485,6 +494,7 @@ exports[`<Form /> if \`props.submitButtonText\` is an empty string should render
                 icon={null}
                 isCompact={false}
                 isDisabled={false}
+                isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
@@ -500,6 +510,7 @@ exports[`<Form /> if \`props.submitButtonText\` is an empty string should render
                   compact={false}
                   disabled={false}
                   floated="right"
+                  fluid={false}
                   loading={false}
                   onClick={[Function]}
                   secondary={false}
@@ -574,6 +585,7 @@ exports[`<Form /> if \`props.submitButtonText\` is passed should render the corr
                 icon={null}
                 isCompact={false}
                 isDisabled={false}
+                isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
@@ -589,6 +601,7 @@ exports[`<Form /> if \`props.submitButtonText\` is passed should render the corr
                   compact={false}
                   disabled={false}
                   floated="right"
+                  fluid={false}
                   loading={false}
                   onClick={[Function]}
                   secondary={false}
@@ -686,6 +699,7 @@ exports[`<Form /> if \`props.successMessage\` is passed should render the correc
                 icon={null}
                 isCompact={false}
                 isDisabled={false}
+                isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
                 isPositionedRight={true}
@@ -701,6 +715,7 @@ exports[`<Form /> if \`props.successMessage\` is passed should render the correc
                   compact={false}
                   disabled={false}
                   floated="right"
+                  fluid={false}
                   loading={false}
                   onClick={[Function]}
                   secondary={false}

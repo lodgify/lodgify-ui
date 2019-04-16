@@ -62,6 +62,7 @@ exports[`<FeaturedRoomType /> should render the right structure 1`] = `
         from 
         <Heading
           className={null}
+          hasMargin={true}
           isColorInverted={false}
           size="medium"
           textAlign={null}

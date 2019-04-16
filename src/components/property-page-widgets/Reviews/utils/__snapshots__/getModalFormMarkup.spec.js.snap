@@ -15,6 +15,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
       icon={null}
       isCompact={true}
       isDisabled={true}
+      isFluid={false}
       isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
@@ -57,6 +58,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
         icon={null}
         isCompact={true}
         isDisabled={true}
+        isFluid={false}
         isFormSubmit={false}
         isLoading={false}
         isPositionedRight={true}
@@ -87,6 +89,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
           icon={null}
           isCompact={true}
           isDisabled={true}
+          isFluid={false}
           isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
@@ -107,6 +110,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
           icon={null}
           isCompact={true}
           isDisabled={true}
+          isFluid={false}
           isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
@@ -126,6 +130,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
             compact={true}
             disabled={true}
             floated="right"
+            fluid={false}
             loading={false}
             onClick={[Function]}
             secondary={false}
@@ -165,6 +170,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
       icon={null}
       isCompact={true}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
@@ -205,6 +211,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
         icon={null}
         isCompact={true}
         isDisabled={false}
+        isFluid={false}
         isFormSubmit={false}
         isLoading={false}
         isPositionedRight={true}
@@ -233,6 +240,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFluid={false}
           isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
@@ -251,6 +259,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFluid={false}
           isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
@@ -270,6 +279,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
             compact={true}
             disabled={false}
             floated="right"
+            fluid={false}
             loading={false}
             onClick={[Function]}
             secondary={false}
@@ -305,6 +315,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
       icon={null}
       isCompact={true}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
@@ -347,6 +358,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
         icon={null}
         isCompact={true}
         isDisabled={false}
+        isFluid={false}
         isFormSubmit={false}
         isLoading={false}
         isPositionedRight={true}
@@ -377,6 +389,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFluid={false}
           isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
@@ -397,6 +410,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFluid={false}
           isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
@@ -416,6 +430,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
             compact={true}
             disabled={false}
             floated="right"
+            fluid={false}
             loading={false}
             onClick={[Function]}
             secondary={false}

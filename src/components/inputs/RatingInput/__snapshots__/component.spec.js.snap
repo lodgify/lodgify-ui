@@ -14,6 +14,7 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
     icon={null}
     initialValue=""
     inputOnChangeFunctionName="onRate"
+    isFluid={false}
     isFocused={false}
     isValid={false}
     label={null}
@@ -23,6 +24,7 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
   >
     <Input
       className=""
+      fluid={false}
       iconPosition={null}
       type="text"
     >
@@ -195,6 +197,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
     icon={null}
     initialValue=""
     inputOnChangeFunctionName="onRate"
+    isFluid={false}
     isFocused={false}
     isValid={false}
     label={null}
@@ -204,6 +207,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
   >
     <Input
       className=""
+      fluid={false}
       iconPosition={null}
       type="text"
     >

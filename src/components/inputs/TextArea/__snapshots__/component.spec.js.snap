@@ -17,6 +17,7 @@ exports[`<TextArea /> should render the right structure 1`] = `
     icon={null}
     initialValue=""
     inputOnChangeFunctionName="onChange"
+    isFluid={false}
     isFocused={false}
     isValid={false}
     label=""
@@ -26,6 +27,7 @@ exports[`<TextArea /> should render the right structure 1`] = `
   >
     <Input
       className=""
+      fluid={false}
       iconPosition={null}
       type="text"
     >

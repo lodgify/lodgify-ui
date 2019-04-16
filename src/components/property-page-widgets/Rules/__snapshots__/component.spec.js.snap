@@ -33,13 +33,14 @@ exports[`<Rules /> by default should render the right structure 1`] = `
             >
               <Heading
                 className={null}
+                hasMargin={true}
                 isColorInverted={false}
                 size="medium"
                 textAlign={null}
               >
                 <Header
                   as="h3"
-                  className={null}
+                  className=""
                   inverted={false}
                   textAlign={null}
                 >
@@ -205,13 +206,14 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
             >
               <Heading
                 className={null}
+                hasMargin={true}
                 isColorInverted={false}
                 size="medium"
                 textAlign={null}
               >
                 <Header
                   as="h3"
-                  className={null}
+                  className=""
                   inverted={false}
                   textAlign={null}
                 >

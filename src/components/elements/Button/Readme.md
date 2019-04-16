@@ -85,3 +85,13 @@
   </GridRow>
 </Grid>
 ```
+ 
+#### Fluid
+
+A fluid button fills the width of its container.
+
+```jsx
+<Button isFluid>
+  Submit
+</Button>
+```

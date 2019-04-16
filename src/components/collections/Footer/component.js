@@ -4,6 +4,7 @@ import { Menu } from 'semantic-ui-react';
 import { toUpper, size } from 'lodash';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
+import { EmailCapture } from 'general-widgets/EmailCapture';
 import { Submenu } from 'elements/Submenu';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Divider } from 'elements/Divider';
@@ -24,6 +25,16 @@ export const Component = ({
   currencyNoResultsText,
   currencyOptions,
   currencyValue,
+  emailCaptureButtonText,
+  emailCaptureErrorMessage,
+  emailCaptureHeadingText,
+  emailCaptureInputError,
+  emailCaptureInputLabel,
+  emailCaptureInputValue,
+  emailCaptureOnChangeInput,
+  emailCaptureOnClickButton,
+  emailCaptureSuccessMessage,
+  hasEmailCapture,
   languageOptions,
   languageValue,
   navigationItems,
@@ -34,6 +45,19 @@ export const Component = ({
   socialMediaLinks,
 }) => (
   <footer>
+    {hasEmailCapture && (
+      <EmailCapture
+        buttonText={emailCaptureButtonText}
+        errorMessage={emailCaptureErrorMessage}
+        headingText={emailCaptureHeadingText}
+        inputError={emailCaptureInputError}
+        inputLabel={emailCaptureInputLabel}
+        inputValue={emailCaptureInputValue}
+        onChangeInput={emailCaptureOnChangeInput}
+        onClickButton={emailCaptureOnClickButton}
+        successMessage={emailCaptureSuccessMessage}
+      />
+    )}
     {size(navigationItems) > 0 && (
       <div className="top-navigation">
         <HorizontalGutters as={Menu} borderless inverted stackable>
@@ -122,6 +146,16 @@ Component.defaultProps = {
   currencyNoResultsText: undefined,
   currencyOptions: [],
   currencyValue: null,
+  emailCaptureButtonText: undefined,
+  emailCaptureErrorMessage: undefined,
+  emailCaptureHeadingText: undefined,
+  emailCaptureInputError: undefined,
+  emailCaptureInputLabel: undefined,
+  emailCaptureInputValue: undefined,
+  emailCaptureOnChangeInput: undefined,
+  emailCaptureOnClickButton: undefined,
+  emailCaptureSuccessMessage: undefined,
+  hasEmailCapture: false,
   languageOptions: [],
   languageValue: null,
   navigationItems: null,
@@ -153,6 +187,34 @@ Component.propTypes = {
     PropTypes.number,
     PropTypes.string,
   ]),
+  /** The text to display on the button on the email capture form. */
+  emailCaptureButtonText: PropTypes.string,
+  /** An error message to display in place of the email capture form. */
+  emailCaptureErrorMessage: PropTypes.string,
+  /** The text to display as a heading on the email capture form. */
+  emailCaptureHeadingText: PropTypes.string,
+  /** Is the text input on the email capture form in an error state. */
+  emailCaptureInputError: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+  ]),
+  /** The visible label for the text input on the email capture form. */
+  emailCaptureInputLabel: PropTypes.string,
+  /** The value of the text input on the email capture form. */
+  emailCaptureInputValue: PropTypes.string,
+  /** The function called when the text input on the email capture form is changed.
+   *  @param {String} name
+   *  @param {String} value
+   */
+  emailCaptureOnChangeInput: PropTypes.func,
+  /** The function called when the button on the email capture form is clicked.
+   *  @param {Object} event
+   */
+  emailCaptureOnClickButton: PropTypes.func,
+  /** A success message to display in place of the button. */
+  emailCaptureSuccessMessage: PropTypes.string,
+  /** Does the footer have an email capture form showing. */
+  hasEmailCapture: PropTypes.bool,
   /** The options which the user can select for the language dropdown. */
   languageOptions: PropTypes.arrayOf(
     PropTypes.shape({

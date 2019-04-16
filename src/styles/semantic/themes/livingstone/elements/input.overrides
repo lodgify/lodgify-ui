@@ -205,6 +205,11 @@
 --------------------*/
 
   /* Inverted */
+
+  /* Fluid */
+  &.fluid {
+    max-width: none;
+  }
 }
 
 .ui.input.error {

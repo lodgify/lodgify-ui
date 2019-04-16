@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Header } from 'semantic-ui-react';
+import getClassNames from 'classnames';
 
 import { getHeadingNumber } from './getHeadingNumber';
 
@@ -13,13 +14,14 @@ const SIZES = ['huge', 'large', 'medium', 'small'];
 export const Component = ({
   children,
   className,
+  hasMargin,
   isColorInverted,
   size,
   textAlign,
 }) => (
   <Header
     as={`h${getHeadingNumber(SIZES, size)}`}
-    className={className}
+    className={getClassNames(className, { 'has-no-margin': !hasMargin })}
     inverted={isColorInverted}
     textAlign={textAlign}
   >
@@ -31,6 +33,7 @@ Component.displayName = 'Heading';
 
 Component.defaultProps = {
   className: null,
+  hasMargin: true,
   isColorInverted: false,
   textAlign: null,
   size: 'medium',
@@ -45,6 +48,8 @@ Component.propTypes = {
    * @ignore
    */
   className: PropTypes.string,
+  /** Does the heading have a margin. */
+  hasMargin: PropTypes.bool,
   /** Is the color of the heading inverted for contrast. */
   isColorInverted: PropTypes.bool,
   /** The size of the heading. */

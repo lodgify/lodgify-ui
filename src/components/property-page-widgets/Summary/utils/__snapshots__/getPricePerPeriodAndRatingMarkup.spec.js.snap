@@ -35,13 +35,14 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is \`0\` should re
         from 
         <Heading
           className={null}
+          hasMargin={true}
           isColorInverted={false}
           size="small"
           textAlign={null}
         >
           <Header
             as="h4"
-            className={null}
+            className=""
             inverted={false}
             textAlign={null}
           >
@@ -69,13 +70,14 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is not \`0\` shoul
         from 
         <Heading
           className={null}
+          hasMargin={true}
           isColorInverted={false}
           size="small"
           textAlign={null}
         >
           <Header
             as="h4"
-            className={null}
+            className=""
             inverted={false}
             textAlign={null}
           >
