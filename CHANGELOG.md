@@ -1,3 +1,10 @@
+# [1.173.0](https://github.com/lodgify/lodgify-ui/compare/v1.172.0...v1.173.0) (2019-04-16)
+
+
+### Features
+
+* **getHiddenMenuMarkup:** hidde primaryCTA on mobile ([b2b6515](https://github.com/lodgify/lodgify-ui/commit/b2b6515))
+
 # [1.172.0](https://github.com/lodgify/lodgify-ui/compare/v1.171.0...v1.172.0) (2019-04-16)
 
 
