@@ -8,6 +8,7 @@ import { InputGroup } from 'collections/InputGroup';
 import { TextArea } from 'inputs/TextArea';
 import { Dropdown } from 'inputs/Dropdown';
 import { RatingInput } from 'inputs/RatingInput';
+import { Checkbox } from 'inputs/Checkbox';
 
 import {
   EMAIL_MAX_CHARACTERS,
@@ -24,6 +25,7 @@ import {
  * @param {string}   props.errorMessage
  * @param {string}   props.guestTypeInputLabel
  * @param {Object[]} props.guestTypeOptions
+ * @param {boolean}  props.isPrivacyConsentRequired
  * @param {string}   props.locationInputLabel
  * @param {string}   props.monthInputLabel
  * @param {Object[]} props.monthOptions
@@ -40,6 +42,7 @@ import {
  * @param {Object}   props.validation
  * @param {string}   props.yearInputLabel
  * @param {Object[]} props.yearOptions
+ * @param {string|Function}   props.privacyConsentLabel
  * @param {boolean}  isShowingPlaceholder
  */
 export const getModalFormMarkup = (
@@ -51,6 +54,7 @@ export const getModalFormMarkup = (
     formHeadingText,
     guestTypeInputLabel,
     guestTypeOptions,
+    isPrivacyConsentRequired,
     locationInputLabel,
     monthInputLabel,
     monthOptions,
@@ -65,6 +69,7 @@ export const getModalFormMarkup = (
     validation,
     yearInputLabel,
     yearOptions,
+    privacyConsentLabel,
     /* eslint-enable react/prop-types */
   },
   isShowingPlaceholder
@@ -138,6 +143,9 @@ export const getModalFormMarkup = (
         maxCharacters={COMMENT_MAX_CHARACTERS}
         name="comments"
       />
+      {isPrivacyConsentRequired && (
+        <Checkbox label={privacyConsentLabel} name="privacyConsent" />
+      )}
     </Form>
   </Modal>
 );
