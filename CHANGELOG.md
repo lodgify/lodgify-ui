@@ -1,3 +1,14 @@
+# [1.171.0](https://github.com/lodgify/lodgify-ui/compare/v1.170.0...v1.171.0) (2019-04-16)
+
+
+### Features
+
+* **Button:** expose props.isFluid ([a83ae44](https://github.com/lodgify/lodgify-ui/commit/a83ae44))
+* **EmailCapture:** expose new component with tests and examples ([961d44c](https://github.com/lodgify/lodgify-ui/commit/961d44c))
+* **Footer:** consume EmailCapture and expose appropriate props ([11c61f4](https://github.com/lodgify/lodgify-ui/commit/11c61f4))
+* **Heading:** expose props.hasMargin ([3105f8a](https://github.com/lodgify/lodgify-ui/commit/3105f8a))
+* **TextInput:** expose props.isFluid ([a5d4682](https://github.com/lodgify/lodgify-ui/commit/a5d4682))
+
 # [1.170.0](https://github.com/lodgify/lodgify-ui/compare/v1.169.0...v1.170.0) (2019-04-16)
 
 
