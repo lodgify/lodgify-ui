@@ -1,3 +1,12 @@
+## [1.174.1](https://github.com/lodgify/lodgify-ui/compare/v1.174.0...v1.174.1) (2019-04-17)
+
+
+### Bug Fixes
+
+* **CookieAlert:** popup submit button is rounded ([a160c3c](https://github.com/lodgify/lodgify-ui/commit/a160c3c))
+* **Form:** submit buttons are rounded ([ccf981b](https://github.com/lodgify/lodgify-ui/commit/ccf981b))
+* **SearchBar:** set location dropdown width ([08b8ae7](https://github.com/lodgify/lodgify-ui/commit/08b8ae7))
+
 # [1.174.0](https://github.com/lodgify/lodgify-ui/compare/v1.173.0...v1.174.0) (2019-04-17)
 
 
