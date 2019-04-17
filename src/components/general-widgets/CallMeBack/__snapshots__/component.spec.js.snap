@@ -90,13 +90,14 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -141,6 +142,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                         <TextInput
                           autoComplete="name"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Name"
                           maxCharacters={80}
@@ -155,6 +157,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Name"
@@ -164,6 +167,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -229,6 +233,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Phone"
@@ -239,6 +244,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition="left"
                               type="text"
                             >
@@ -305,6 +311,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                     <TextInput
                       autoComplete="email"
                       error={false}
+                      isFluid={false}
                       isValid={false}
                       label="Email"
                       maxCharacters={255}
@@ -319,6 +326,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Email"
@@ -328,6 +336,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -386,6 +395,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                             icon={null}
                             initialValue={null}
                             inputOnChangeFunctionName="onDateChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label={null}
@@ -395,6 +405,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -1203,6 +1214,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Notes"
@@ -1212,6 +1224,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -1262,6 +1275,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label={null}
@@ -1271,6 +1285,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -1319,21 +1334,23 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
-                  isRounded={false}
+                  isRounded={true}
                   isSecondary={false}
                   onClick={[Function]}
                   size={null}
                 >
                   <Button
                     as="button"
-                    circular={false}
+                    circular={true}
                     className=""
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -1341,7 +1358,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                     type="submit"
                   >
                     <button
-                      className="ui right floated button"
+                      className="ui circular right floated button"
                       onClick={[Function]}
                       role="button"
                       type="submit"
