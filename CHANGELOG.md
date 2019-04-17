@@ -1,3 +1,10 @@
+# [1.174.0](https://github.com/lodgify/lodgify-ui/compare/v1.173.0...v1.174.0) (2019-04-17)
+
+
+### Features
+
+* **SearchBar:** dropdowns open depending on scroll position ([55e9a93](https://github.com/lodgify/lodgify-ui/commit/55e9a93))
+
 # [1.173.0](https://github.com/lodgify/lodgify-ui/compare/v1.172.0...v1.173.0) (2019-04-16)
 
 
