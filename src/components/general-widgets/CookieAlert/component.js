@@ -36,7 +36,10 @@ const Component = ({
             {linkText}
           </Link>
           <Divider />
-          <Button onClick={onAccept}>{buttonText}</Button> <Divider />
+          <Button isRounded onClick={onAccept}>
+            {buttonText}
+          </Button>{' '}
+          <Divider />
         </FlexContainer>
       </HorizontalGutters>
     </Modal>

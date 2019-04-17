@@ -92,7 +92,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                         class="ui hidden divider"
                       />
                       <button
-                        class="ui left floated button"
+                        class="ui circular left floated button"
                         role="button"
                         type="button"
                       >
@@ -235,14 +235,14 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                     isFormSubmit={true}
                     isLoading={false}
                     isPositionedRight={true}
-                    isRounded={false}
+                    isRounded={true}
                     isSecondary={false}
                     onClick={[Function]}
                     size={null}
                   >
                     <Button
                       as="button"
-                      circular={false}
+                      circular={true}
                       className=""
                       compact={false}
                       disabled={false}
@@ -255,7 +255,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                       type="submit"
                     >
                       <button
-                        className="ui right floated button"
+                        className="ui circular right floated button"
                         onClick={[Function]}
                         role="button"
                         type="submit"
@@ -355,7 +355,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                         class="ui hidden divider"
                       />
                       <button
-                        class="ui left floated button"
+                        class="ui circular left floated button"
                         role="button"
                         type="button"
                       >
@@ -407,7 +407,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                         class="ui hidden divider"
                       />
                       <button
-                        class="ui left floated button"
+                        class="ui circular left floated button"
                         role="button"
                         type="button"
                       >

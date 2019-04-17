@@ -91,10 +91,10 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
             className="fields"
           >
             <FormField
-              width="three"
+              className="location-dropdown"
             >
               <div
-                className="three wide field"
+                className="field location-dropdown"
               >
                 <Dropdown
                   error={false}
@@ -1464,10 +1464,10 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     className="fields"
                                   >
                                     <FormField
-                                      width="three"
+                                      className="location-dropdown"
                                     >
                                       <div
-                                        className="three wide field"
+                                        className="field location-dropdown"
                                       >
                                         <Dropdown
                                           error={false}
@@ -2505,10 +2505,10 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
               </div>
             </FormField>
             <FormField
-              width="three"
+              className="location-dropdown"
             >
               <div
-                className="three wide field"
+                className="field location-dropdown"
               >
                 <Dropdown
                   error={false}
@@ -4111,10 +4111,10 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
             className="fields"
           >
             <FormField
-              width="three"
+              className="location-dropdown"
             >
               <div
-                className="three wide field"
+                className="field location-dropdown"
               >
                 <Dropdown
                   error={false}

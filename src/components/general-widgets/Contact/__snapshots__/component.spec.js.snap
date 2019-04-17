@@ -1218,14 +1218,14 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
-                  isRounded={false}
+                  isRounded={true}
                   isSecondary={false}
                   onClick={[Function]}
                   size={null}
                 >
                   <Button
                     as="button"
-                    circular={false}
+                    circular={true}
                     className=""
                     compact={false}
                     disabled={false}
@@ -1238,7 +1238,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                     type="submit"
                   >
                     <button
-                      className="ui right floated button"
+                      className="ui circular right floated button"
                       onClick={[Function]}
                       role="button"
                       type="submit"
@@ -2202,14 +2202,14 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
-                  isRounded={false}
+                  isRounded={true}
                   isSecondary={false}
                   onClick={[Function]}
                   size={null}
                 >
                   <Button
                     as="button"
-                    circular={false}
+                    circular={true}
                     className=""
                     compact={false}
                     disabled={false}
@@ -2222,7 +2222,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                     type="submit"
                   >
                     <button
-                      className="ui right floated button"
+                      className="ui circular right floated button"
                       onClick={[Function]}
                       role="button"
                       type="submit"
@@ -3141,14 +3141,14 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
-                  isRounded={false}
+                  isRounded={true}
                   isSecondary={false}
                   onClick={[Function]}
                   size={null}
                 >
                   <Button
                     as="button"
-                    circular={false}
+                    circular={true}
                     className=""
                     compact={false}
                     disabled={false}
@@ -3161,7 +3161,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                     type="submit"
                   >
                     <button
-                      className="ui right floated button"
+                      className="ui circular right floated button"
                       onClick={[Function]}
                       role="button"
                       type="submit"
@@ -3798,14 +3798,14 @@ exports[`<Contact /> should have the correct structure 1`] = `
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
-                  isRounded={false}
+                  isRounded={true}
                   isSecondary={false}
                   onClick={[Function]}
                   size={null}
                 >
                   <Button
                     as="button"
-                    circular={false}
+                    circular={true}
                     className=""
                     compact={false}
                     disabled={false}
@@ -3818,7 +3818,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                     type="submit"
                   >
                     <button
-                      className="ui right floated button"
+                      className="ui circular right floated button"
                       onClick={[Function]}
                       role="button"
                       type="submit"
