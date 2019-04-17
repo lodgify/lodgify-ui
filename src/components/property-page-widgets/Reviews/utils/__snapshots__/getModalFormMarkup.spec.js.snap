@@ -15,6 +15,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
       icon={null}
       isCompact={true}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={false}
       isLoading={false}
       isPositionedRight={true}
@@ -57,6 +58,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
         icon={null}
         isCompact={true}
         isDisabled={false}
+        isFluid={false}
         isFormSubmit={false}
         isLoading={false}
         isPositionedRight={true}
@@ -87,6 +89,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFluid={false}
           isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
@@ -107,6 +110,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
           icon={null}
           isCompact={true}
           isDisabled={false}
+          isFluid={false}
           isFormSubmit={false}
           isLoading={false}
           isPositionedRight={true}
@@ -126,6 +130,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
             compact={true}
             disabled={false}
             floated="right"
+            fluid={false}
             loading={false}
             onClick={[Function]}
             secondary={false}

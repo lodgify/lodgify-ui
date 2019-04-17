@@ -47,13 +47,14 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
             >
               <Header
                 as="h3"
-                className={null}
+                className=""
                 inverted={false}
                 textAlign={null}
               >
@@ -98,6 +99,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                         <TextInput
                           autoComplete="name"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Name"
                           maxCharacters={80}
@@ -112,6 +114,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Name"
@@ -121,6 +124,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -186,6 +190,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Phone"
@@ -196,6 +201,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition="left"
                               type="text"
                             >
@@ -270,6 +276,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                         <TextInput
                           autoComplete="email"
                           error={false}
+                          isFluid={false}
                           isValid={false}
                           label="Email"
                           maxCharacters={255}
@@ -285,6 +292,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Email"
@@ -294,6 +302,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -346,6 +355,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label="Guests"
@@ -355,6 +365,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -431,6 +442,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isFluid={false}
                             isFocused={false}
                             isValid={false}
                             label={null}
@@ -440,6 +452,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           >
                             <Input
                               className=""
+                              fluid={false}
                               iconPosition={null}
                               type="text"
                             >
@@ -560,6 +573,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label="Comments"
@@ -569,6 +583,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -619,6 +634,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label={null}
@@ -628,6 +644,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -676,21 +693,23 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                   icon={null}
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={true}
-                  isRounded={false}
+                  isRounded={true}
                   isSecondary={false}
                   onClick={[Function]}
                   size={null}
                 >
                   <Button
                     as="button"
-                    circular={false}
+                    circular={true}
                     className=""
                     compact={false}
                     disabled={false}
                     floated="right"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -698,7 +717,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                     type="submit"
                   >
                     <button
-                      className="ui right floated button"
+                      className="ui circular right floated button"
                       onClick={[Function]}
                       role="button"
                       type="submit"
