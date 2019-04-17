@@ -9,6 +9,7 @@
 /* Menu */
 
 .ui.menu {
+  font-family: @bodyFont;
 
   /* Text Item */
 
@@ -292,12 +293,14 @@ header {
         padding: @headerMenuItemVerticalPaddingWithSubText 0;
 
         .header {
+          font-family: var(@titleFontIdentifier, @titleFontDefault) !important;
           margin-bottom: 0;
         }
 
         p {
           margin: @headerLogoSubTextMargin;
           color: @offWhite;
+          font-family: var(@subtitleFontIdentifier, @subtitleFontDefault);
         }
       }
 

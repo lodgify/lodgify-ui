@@ -102,13 +102,14 @@ exports[`<Header /> by default should render the right structure 1`] = `
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -467,7 +468,9 @@ exports[`<Header /> by default should render the right structure 1`] = `
 </Header>
 `;
 
-exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right structure 1`] = `
+exports[
+  `<Header /> if \`isMenuHidden\` is \`true\` should render the right structure 1`
+] = `
 <Header
   activeNavigationItemIndex={null}
   dateRangePickerLocaleCode="ko"
@@ -569,13 +572,14 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -596,6 +600,18 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
               <div
                 className="right menu"
               >
+                <ShowOn
+                  computer={true}
+                  mobile={false}
+                  parent="div"
+                  parentProps={Object {}}
+                  tablet={true}
+                  widescreen={true}
+                >
+                  <div
+                    className="show-on-tablet show-on-computer show-on-widescreen"
+                  />
+                </ShowOn>
                 <MenuItem
                   className="no-underline"
                 >
@@ -622,6 +638,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                           >
                             <Heading
                               className={null}
+                              hasMargin={true}
                               isColorInverted={false}
                               size="small"
                               textAlign={null}
@@ -777,7 +794,9 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
 </Header>
 `;
 
-exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the right structure 1`] = `
+exports[
+  `<Header /> if \`props.isBackgroundFilled\` is true should render the right structure 1`
+] = `
 <Header
   activeNavigationItemIndex={null}
   dateRangePickerLocaleCode="ko"
@@ -879,13 +898,14 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >

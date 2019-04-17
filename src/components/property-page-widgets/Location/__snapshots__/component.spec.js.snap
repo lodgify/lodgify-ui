@@ -61,13 +61,14 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
             >
               <Heading
                 className={null}
+                hasMargin={true}
                 isColorInverted={false}
                 size="medium"
                 textAlign={null}
               >
                 <Header
                   as="h3"
-                  className={null}
+                  className=""
                   inverted={false}
                   textAlign={null}
                 >

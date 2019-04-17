@@ -676,6 +676,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
         icon={null}
         isCompact={false}
         isDisabled={false}
+        isFluid={false}
         isFormSubmit={false}
         isLoading={false}
         isPositionedRight={false}
@@ -691,6 +692,7 @@ exports[`getStandardMenuMarkup if \`props.primaryCTA\` is passed should render t
           compact={false}
           disabled={false}
           floated="left"
+          fluid={false}
           loading={false}
           onClick={[Function]}
           secondary={false}

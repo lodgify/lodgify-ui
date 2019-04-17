@@ -7,6 +7,7 @@ exports[`<Checkbox /> should return the right structure 1`] = `
   icon={null}
   initialValue=""
   inputOnChangeFunctionName="onChange"
+  isFluid={false}
   isFocused={false}
   isValid={false}
   label={null}

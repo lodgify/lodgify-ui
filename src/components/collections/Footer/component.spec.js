@@ -51,6 +51,14 @@ describe('<Footer />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  describe('if `props.hasEmailCapture` is `true`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ hasEmailCapture: true });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   describe('if `props.navigationItems` are passed', () => {
     it('should render the right structure', () => {
       const wrapper = getFooter({ navigationItems });

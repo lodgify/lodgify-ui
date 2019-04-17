@@ -183,6 +183,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={false}
@@ -198,6 +199,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                                                 compact={false}
                                                 disabled={false}
                                                 floated="left"
+                                                fluid={false}
                                                 loading={false}
                                                 onClick={[Function]}
                                                 secondary={false}
@@ -259,16 +261,26 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                               <div
                                 className="label"
                               >
-                                <Paragraph
-                                  size="medium"
-                                  weight="heavy"
+                                <Heading
+                                  className={null}
+                                  hasMargin={true}
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
                                 >
-                                  <p
-                                    className="heavy"
+                                  <Header
+                                    as="h4"
+                                    className=""
+                                    inverted={false}
+                                    textAlign={null}
                                   >
-                                    Save up to
-                                  </p>
-                                </Paragraph>
+                                    <h4
+                                      className="ui header"
+                                    >
+                                      Save up to
+                                    </h4>
+                                  </Header>
+                                </Heading>
                               </div>
                             </StatisticLabel>
                             <StatisticValue>
@@ -277,13 +289,14 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                               >
                                 <Heading
                                   className={null}
+                                  hasMargin={true}
                                   isColorInverted={false}
                                   size="large"
                                   textAlign={null}
                                 >
                                   <Header
                                     as="h2"
-                                    className={null}
+                                    className=""
                                     inverted={false}
                                     textAlign={null}
                                   >
@@ -445,6 +458,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={false}
@@ -460,6 +474,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                 compact={false}
                                                 disabled={false}
                                                 floated="left"
+                                                fluid={false}
                                                 loading={false}
                                                 onClick={[Function]}
                                                 secondary={false}
@@ -539,6 +554,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                 icon={null}
                                                 isCompact={false}
                                                 isDisabled={false}
+                                                isFluid={false}
                                                 isFormSubmit={false}
                                                 isLoading={false}
                                                 isPositionedRight={true}
@@ -554,6 +570,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                   compact={false}
                                                   disabled={false}
                                                   floated="right"
+                                                  fluid={false}
                                                   loading={false}
                                                   onClick={[Function]}
                                                   secondary={false}
@@ -635,6 +652,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                 icon={null}
                                                 isCompact={false}
                                                 isDisabled={false}
+                                                isFluid={false}
                                                 isFormSubmit={false}
                                                 isLoading={false}
                                                 isPositionedRight={true}
@@ -650,6 +668,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                                   compact={false}
                                                   disabled={false}
                                                   floated="right"
+                                                  fluid={false}
                                                   loading={false}
                                                   onClick={[Function]}
                                                   secondary={false}
@@ -712,16 +731,26 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                               <div
                                 className="label"
                               >
-                                <Paragraph
-                                  size="medium"
-                                  weight="heavy"
+                                <Heading
+                                  className={null}
+                                  hasMargin={true}
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
                                 >
-                                  <p
-                                    className="heavy"
+                                  <Header
+                                    as="h4"
+                                    className=""
+                                    inverted={false}
+                                    textAlign={null}
                                   >
-                                    Save up to
-                                  </p>
-                                </Paragraph>
+                                    <h4
+                                      className="ui header"
+                                    >
+                                      Save up to
+                                    </h4>
+                                  </Header>
+                                </Heading>
                               </div>
                             </StatisticLabel>
                             <StatisticValue>
@@ -730,13 +759,14 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                               >
                                 <Heading
                                   className={null}
+                                  hasMargin={true}
                                   isColorInverted={false}
                                   size="large"
                                   textAlign={null}
                                 >
                                   <Header
                                     as="h2"
-                                    className={null}
+                                    className=""
                                     inverted={false}
                                     textAlign={null}
                                   >
@@ -883,13 +913,14 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                                           >
                                             <Heading
                                               className={null}
+                                              hasMargin={true}
                                               isColorInverted={false}
                                               size="medium"
                                               textAlign={null}
                                             >
                                               <Header
                                                 as="h3"
-                                                className={null}
+                                                className=""
                                                 inverted={false}
                                                 textAlign={null}
                                               >
@@ -934,13 +965,14 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                                           >
                                             <Heading
                                               className={null}
+                                              hasMargin={true}
                                               isColorInverted={false}
                                               size="medium"
                                               textAlign={null}
                                             >
                                               <Header
                                                 as="h3"
-                                                className={null}
+                                                className=""
                                                 inverted={false}
                                                 textAlign={null}
                                               >
@@ -999,6 +1031,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={false}
@@ -1014,6 +1047,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                                                 compact={false}
                                                 disabled={false}
                                                 floated="left"
+                                                fluid={false}
                                                 loading={false}
                                                 onClick={[Function]}
                                                 secondary={false}
@@ -1075,16 +1109,26 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                               <div
                                 className="label"
                               >
-                                <Paragraph
-                                  size="medium"
-                                  weight="heavy"
+                                <Heading
+                                  className={null}
+                                  hasMargin={true}
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
                                 >
-                                  <p
-                                    className="heavy"
+                                  <Header
+                                    as="h4"
+                                    className=""
+                                    inverted={false}
+                                    textAlign={null}
                                   >
-                                    Save up to
-                                  </p>
-                                </Paragraph>
+                                    <h4
+                                      className="ui header"
+                                    >
+                                      Save up to
+                                    </h4>
+                                  </Header>
+                                </Heading>
                               </div>
                             </StatisticLabel>
                             <StatisticValue>
@@ -1093,13 +1137,14 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                               >
                                 <Heading
                                   className={null}
+                                  hasMargin={true}
                                   isColorInverted={false}
                                   size="large"
                                   textAlign={null}
                                 >
                                   <Header
                                     as="h2"
-                                    className={null}
+                                    className=""
                                     inverted={false}
                                     textAlign={null}
                                   >
@@ -1260,6 +1305,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                               icon={null}
                                               isCompact={false}
                                               isDisabled={false}
+                                              isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
                                               isPositionedRight={false}
@@ -1275,6 +1321,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                                 compact={false}
                                                 disabled={false}
                                                 floated="left"
+                                                fluid={false}
                                                 loading={false}
                                                 onClick={[Function]}
                                                 secondary={false}
@@ -1336,16 +1383,26 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                               <div
                                 className="label"
                               >
-                                <Paragraph
-                                  size="medium"
-                                  weight="heavy"
+                                <Heading
+                                  className={null}
+                                  hasMargin={true}
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
                                 >
-                                  <p
-                                    className="heavy"
+                                  <Header
+                                    as="h4"
+                                    className=""
+                                    inverted={false}
+                                    textAlign={null}
                                   >
-                                    Save up to
-                                  </p>
-                                </Paragraph>
+                                    <h4
+                                      className="ui header"
+                                    >
+                                      Save up to
+                                    </h4>
+                                  </Header>
+                                </Heading>
                               </div>
                             </StatisticLabel>
                             <StatisticValue>
@@ -1354,13 +1411,14 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                               >
                                 <Heading
                                   className={null}
+                                  hasMargin={true}
                                   isColorInverted={false}
                                   size="large"
                                   textAlign={null}
                                 >
                                   <Header
                                     as="h2"
-                                    className={null}
+                                    className=""
                                     inverted={false}
                                     textAlign={null}
                                   >

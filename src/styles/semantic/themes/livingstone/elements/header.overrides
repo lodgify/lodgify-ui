@@ -47,3 +47,8 @@
 }
 
 /* Floated */
+
+/* No Margin */
+.ui.header.has-no-margin {
+  margin: 0;
+}

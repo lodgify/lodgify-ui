@@ -51,13 +51,14 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyRules\` is passed shoul
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -96,13 +97,14 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyRules\` is passed shoul
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -187,13 +189,14 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositRules\` is passed should hav
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -232,13 +235,14 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositRules\` is passed should hav
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -327,13 +331,14 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -548,13 +553,14 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -593,13 +599,14 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -688,13 +695,14 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should h
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -733,13 +741,14 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should h
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -831,13 +840,14 @@ exports[`<PolicyAndNotes /> should have the right structure 1`] = `
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >

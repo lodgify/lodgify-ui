@@ -34,6 +34,7 @@ exports[`<DateRangePicker /> if \`props.focusedInput\` is passed should render t
         icon={null}
         initialValue=""
         inputOnChangeFunctionName="onDatesChange"
+        isFluid={false}
         isFocused={true}
         isValid={false}
         label={null}
@@ -43,6 +44,7 @@ exports[`<DateRangePicker /> if \`props.focusedInput\` is passed should render t
       >
         <Input
           className="focus"
+          fluid={false}
           iconPosition={null}
           type="text"
         >
@@ -171,6 +173,7 @@ exports[`<DateRangePicker /> should render the right structure 1`] = `
         icon={null}
         initialValue=""
         inputOnChangeFunctionName="onDatesChange"
+        isFluid={false}
         isFocused={false}
         isValid={false}
         label={null}
@@ -180,6 +183,7 @@ exports[`<DateRangePicker /> should render the right structure 1`] = `
       >
         <Input
           className=""
+          fluid={false}
           iconPosition={null}
           type="text"
         >

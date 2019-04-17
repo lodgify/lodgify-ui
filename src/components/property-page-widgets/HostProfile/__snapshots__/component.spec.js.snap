@@ -49,13 +49,14 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -183,13 +184,14 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                         </Thumbnail>
                         <Heading
                           className={null}
+                          hasMargin={true}
                           isColorInverted={false}
                           size="small"
                           textAlign={null}
                         >
                           <Header
                             as="h4"
-                            className={null}
+                            className=""
                             inverted={false}
                             textAlign={null}
                           >
@@ -268,13 +270,14 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -377,13 +380,14 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -511,13 +515,14 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                         </Thumbnail>
                         <Heading
                           className={null}
+                          hasMargin={true}
                           isColorInverted={false}
                           size="small"
                           textAlign={null}
                         >
                           <Header
                             as="h4"
-                            className={null}
+                            className=""
                             inverted={false}
                             textAlign={null}
                           >
@@ -596,13 +601,14 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -698,13 +704,14 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -832,13 +839,14 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                         </Thumbnail>
                         <Heading
                           className={null}
+                          hasMargin={true}
                           isColorInverted={false}
                           size="small"
                           textAlign={null}
                         >
                           <Header
                             as="h4"
-                            className={null}
+                            className=""
                             inverted={false}
                             textAlign={null}
                           >
@@ -917,13 +925,14 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -1023,13 +1032,14 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="medium"
                       textAlign={null}
                     >
                       <Header
                         as="h3"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >
@@ -1157,13 +1167,14 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                         </Thumbnail>
                         <Heading
                           className={null}
+                          hasMargin={true}
                           isColorInverted={false}
                           size="small"
                           textAlign={null}
                         >
                           <Header
                             as="h4"
-                            className={null}
+                            className=""
                             inverted={false}
                             textAlign={null}
                           >
@@ -1242,13 +1253,14 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                   >
                     <Heading
                       className={null}
+                      hasMargin={true}
                       isColorInverted={false}
                       size="small"
                       textAlign={null}
                     >
                       <Header
                         as="h4"
-                        className={null}
+                        className=""
                         inverted={false}
                         textAlign={null}
                       >

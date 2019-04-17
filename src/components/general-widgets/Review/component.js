@@ -11,6 +11,7 @@ import { Paragraph } from 'typography/Paragraph';
 import { Quote } from 'elements/Quote';
 import { Rating } from 'elements/Rating';
 import { Subheading } from 'typography/Subheading';
+import { Heading } from 'typography/Heading';
 
 import { getReviewerCategoryAndStayDateString } from './utils/getReviewerCategoryAndStayDateString';
 import { getReviewerNameAndLocationString } from './utils/getReviewerNameAndLocationString';
@@ -72,7 +73,9 @@ export const Component = ({
         </Fragment>
       ) : (
         <Fragment>
-          <Card.Header>{reviewTitle}</Card.Header>
+          <Card.Header>
+            <Heading>{reviewTitle}</Heading>
+          </Card.Header>
           <Card.Description>
             <Paragraph>{reviewText}</Paragraph>
           </Card.Description>

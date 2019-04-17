@@ -9,11 +9,14 @@ jest.mock('react-dates', () => {
 
   return { DateRangePicker };
 });
+jest.mock('lodash/debounce');
 jest.mock('./utils/getInitialValue');
+jest.mock('./utils/getWillDropdownsOpenAbove');
 
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { Form } from 'semantic-ui-react';
+import { debounce } from 'lodash';
 
 import { Dropdown } from 'inputs/Dropdown';
 import { GridColumn } from 'layout/GridColumn';
@@ -21,10 +24,15 @@ import { GridColumn } from 'layout/GridColumn';
 import { Component as SearchBar } from './component';
 import { guestsOptions, locationOptions } from './mock-data/options';
 import { getInitialValue } from './utils/getInitialValue';
+import { getWillDropdownsOpenAbove } from './utils/getWillDropdownsOpenAbove';
 
 const INITIAL_VALUE = 'some value';
+const WILL_THEY_OPEN_ABOVE = false;
 
+global.document.addEventListener = jest.fn();
+debounce.mockImplementation(func => func);
 getInitialValue.mockReturnValue(INITIAL_VALUE);
+getWillDropdownsOpenAbove.mockReturnValue(WILL_THEY_OPEN_ABOVE);
 
 const props = {
   dateRangePickerLocaleCode: 'ko',
@@ -64,6 +72,7 @@ describe('<SearchBar />', () => {
         dates: INITIAL_VALUE,
         guests: INITIAL_VALUE,
         location: INITIAL_VALUE,
+        willDropdownsOpenAbove: false,
       });
     });
 
@@ -74,11 +83,126 @@ describe('<SearchBar />', () => {
     });
   });
 
+  describe('componentDidMount', () => {
+    describe('if `this.props.isDisplayedAsModal` is `true`', () => {
+      it('should not call `global.document.addEventListener`', () => {
+        const wrapper = getSearchBarShallow({ isDisplayedAsModal: true });
+
+        global.document.addEventListener.mockClear();
+        wrapper.instance().componentDidMount();
+
+        expect(global.document.addEventListener).not.toHaveBeenCalledWith(
+          'scroll',
+          wrapper.instance().handleScroll
+        );
+      });
+    });
+
+    describe('if `this.props.isDisplayedAsModal` is `false`', () => {
+      it('should call `global.document.addEventListener`', () => {
+        const wrapper = getSearchBarShallow({ isDisplayedAsModal: false });
+
+        global.document.addEventListener.mockClear();
+        wrapper.instance().componentDidMount();
+
+        expect(global.document.addEventListener).toHaveBeenCalledWith(
+          'scroll',
+          wrapper.instance().handleScroll
+        );
+      });
+
+      it('should call `handleScroll`', () => {
+        const wrapper = getSearchBarShallow({ isDisplayedAsModal: false });
+
+        wrapper.instance().handleScroll = jest.fn();
+        wrapper.update();
+        wrapper.instance().componentDidMount();
+
+        expect(wrapper.instance().handleScroll).toHaveBeenCalled();
+      });
+    });
+  });
+
+  describe('componentWillUnmount', () => {
+    describe('if `this.props.isDisplayedAsModal` is `true`', () => {
+      it('should not call `global.document.removeEventListener`', () => {
+        const wrapper = getSearchBarShallow({ isDisplayedAsModal: true });
+
+        global.document.removeEventListener = jest.fn();
+        wrapper.instance().componentWillUnmount();
+
+        expect(global.document.removeEventListener).not.toHaveBeenCalledWith(
+          'scroll',
+          wrapper.instance().handleScroll
+        );
+      });
+    });
+
+    describe('if `this.props.isDisplayedAsModal` is `false`', () => {
+      it('should call `global.document.removeEventListener`', () => {
+        const wrapper = getSearchBarShallow({ isDisplayedAsModal: false });
+
+        global.document.removeEventListener = jest.fn();
+        wrapper.instance().componentWillUnmount();
+
+        expect(global.document.removeEventListener).toHaveBeenCalledWith(
+          'scroll',
+          wrapper.instance().handleScroll
+        );
+      });
+    });
+  });
+
+  describe('`handleScroll`', () => {
+    it('should call `debounce` with the right arguments', () => {
+      getSearchBarShallow();
+
+      expect(debounce).toHaveBeenCalledWith(expect.any(Function), 100);
+    });
+
+    describe('the debounced function', () => {
+      it('should call `getWillDropdownsOpenAbove` with the right arguments', () => {
+        const willDropdownsOpenAbove = true;
+        const wrapper = getSearchBarShallow({ willDropdownsOpenAbove });
+
+        wrapper.instance().handleScroll();
+
+        expect(getWillDropdownsOpenAbove).toHaveBeenCalledWith(
+          wrapper.instance().container,
+          willDropdownsOpenAbove
+        );
+      });
+
+      it('should call `this.setState` with the right arguments', () => {
+        const wrapper = getSearchBarShallow();
+
+        wrapper.instance().setState = jest.fn();
+        wrapper.update();
+        wrapper.instance().handleScroll();
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          willDropdownsOpenAbove: WILL_THEY_OPEN_ABOVE,
+        });
+      });
+    });
+  });
+
   describe('if `props.isFixed` is true', () => {
     it('should render the right structure', () => {
       const actual = getSearchBar({ isFixed: true });
 
       expect(actual).toMatchSnapshot();
+    });
+
+    describe('if `isDisplayedAsModal` is true', () => {
+      it('should render the right structure', () => {
+        const actual = getSearchBar({
+          isFixed: true,
+          isDisplayedAsModal: true,
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
     });
   });
 
@@ -147,6 +271,7 @@ describe('<SearchBar />', () => {
         dates: INITIAL_VALUE,
         guests: INITIAL_VALUE,
         location: '🍰',
+        willDropdownsOpenAbove: false,
       });
     });
   });

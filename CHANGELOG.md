@@ -1,3 +1,49 @@
+# [1.174.0](https://github.com/lodgify/lodgify-ui/compare/v1.173.0...v1.174.0) (2019-04-17)
+
+
+### Features
+
+* **SearchBar:** dropdowns open depending on scroll position ([55e9a93](https://github.com/lodgify/lodgify-ui/commit/55e9a93))
+
+# [1.173.0](https://github.com/lodgify/lodgify-ui/compare/v1.172.0...v1.173.0) (2019-04-16)
+
+
+### Features
+
+* **getHiddenMenuMarkup:** hidde primaryCTA on mobile ([b2b6515](https://github.com/lodgify/lodgify-ui/commit/b2b6515))
+
+# [1.172.0](https://github.com/lodgify/lodgify-ui/compare/v1.171.0...v1.172.0) (2019-04-16)
+
+
+### Bug Fixes
+
+* **general-widgets:** use typography components ([5f51374](https://github.com/lodgify/lodgify-ui/commit/5f51374))
+
+
+### Features
+
+* **button:** consume typography variables ([31396e2](https://github.com/lodgify/lodgify-ui/commit/31396e2))
+* **form:** consume typography variables ([83bd73a](https://github.com/lodgify/lodgify-ui/commit/83bd73a))
+* **input:** consume typography variables ([5ad7eeb](https://github.com/lodgify/lodgify-ui/commit/5ad7eeb))
+* **menu:** consume typography variables ([3affae3](https://github.com/lodgify/lodgify-ui/commit/3affae3))
+* **modal:** consume typography variables ([c9c620d](https://github.com/lodgify/lodgify-ui/commit/c9c620d))
+* **react-dates-datepicker:** consume typography variables ([81f6899](https://github.com/lodgify/lodgify-ui/commit/81f6899))
+* **segment:** consume typography variables ([552a711](https://github.com/lodgify/lodgify-ui/commit/552a711))
+* **site.overrides:** consume typography variables ([cad9408](https://github.com/lodgify/lodgify-ui/commit/cad9408))
+* **site.variables:** expose typography variables ([33eadb7](https://github.com/lodgify/lodgify-ui/commit/33eadb7))
+* **styles:** expose font custom properties ([81cb677](https://github.com/lodgify/lodgify-ui/commit/81cb677))
+
+# [1.171.0](https://github.com/lodgify/lodgify-ui/compare/v1.170.0...v1.171.0) (2019-04-16)
+
+
+### Features
+
+* **Button:** expose props.isFluid ([a83ae44](https://github.com/lodgify/lodgify-ui/commit/a83ae44))
+* **EmailCapture:** expose new component with tests and examples ([961d44c](https://github.com/lodgify/lodgify-ui/commit/961d44c))
+* **Footer:** consume EmailCapture and expose appropriate props ([11c61f4](https://github.com/lodgify/lodgify-ui/commit/11c61f4))
+* **Heading:** expose props.hasMargin ([3105f8a](https://github.com/lodgify/lodgify-ui/commit/3105f8a))
+* **TextInput:** expose props.isFluid ([a5d4682](https://github.com/lodgify/lodgify-ui/commit/a5d4682))
+
 # [1.170.0](https://github.com/lodgify/lodgify-ui/compare/v1.169.0...v1.170.0) (2019-04-16)
 
 

@@ -19,6 +19,7 @@ exports[`\`getViewMoreButtonMarkup\` if there are two images or more should retu
           >
             <Heading
               className={null}
+              hasMargin={true}
               isColorInverted={false}
               size="medium"
               textAlign={null}
@@ -50,6 +51,7 @@ exports[`\`getViewMoreButtonMarkup\` if there are two images or more should retu
             icon="placeholder"
             isCompact={true}
             isDisabled={false}
+            isFluid={false}
             isFormSubmit={false}
             isLoading={false}
             isPositionedRight={true}

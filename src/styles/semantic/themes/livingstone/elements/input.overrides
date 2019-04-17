@@ -11,6 +11,11 @@
   max-width: @inputMaxWidth;
   width: @inputWidth;
 
+  &,
+  & > input {
+    font-family: @bodyFont;
+  }
+
   /*-------------------
         Types
 --------------------*/
@@ -205,6 +210,11 @@
 --------------------*/
 
   /* Inverted */
+
+  /* Fluid */
+  &.fluid {
+    max-width: none;
+  }
 }
 
 .ui.input.error {

@@ -10,6 +10,7 @@ import { InputController } from '../InputController';
 export const Component = ({
   autoComplete,
   error,
+  isFluid,
   isValid,
   label,
   maxCharacters,
@@ -21,6 +22,7 @@ export const Component = ({
 }) => (
   <InputController
     error={error}
+    isFluid={isFluid}
     isValid={isValid}
     label={label}
     name={name}
@@ -42,6 +44,7 @@ Component.displayName = 'TextInput';
 Component.defaultProps = {
   autoComplete: null,
   error: false,
+  isFluid: false,
   isValid: false,
   label: '',
   maxCharacters: null,
@@ -57,6 +60,8 @@ Component.propTypes = {
   autoComplete: PropTypes.string,
   /** Is the text input in an error state. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  /** Does the text input fill the width of its container. */
+  isFluid: PropTypes.bool,
   /** Is the text input in a valid state. */
   isValid: PropTypes.bool,
   /** The visible label for the text input. */

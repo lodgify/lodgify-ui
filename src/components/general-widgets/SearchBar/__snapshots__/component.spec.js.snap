@@ -60,6 +60,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
       icon="search"
       isCompact={false}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={true}
       isLoading={false}
       isPositionedRight={false}
@@ -467,6 +468,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onDatesChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label={null}
@@ -476,6 +478,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -911,6 +914,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   icon="search"
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={false}
@@ -926,6 +930,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     compact={false}
                     disabled={false}
                     floated="left"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -980,6 +985,340 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
 `;
 
 exports[`<SearchBar /> if \`isDisplayedAsModal\` is true should render the right structure 1`] = `null`;
+
+exports[`<SearchBar /> if \`props.isFixed\` is true if \`isDisplayedAsModal\` is true should render the right structure 1`] = `
+<SearchBar
+  className={null}
+  dateRangePickerLocaleCode="ko"
+  datesInputOnFocusChange={[Function]}
+  getIsDayBlocked={[Function]}
+  guestsOptions={
+    Array [
+      Object {
+        "text": "1",
+        "value": "1",
+      },
+      Object {
+        "text": "2",
+        "value": "2",
+      },
+      Object {
+        "text": "3",
+        "value": "3",
+      },
+      Object {
+        "text": "4",
+        "value": "4",
+      },
+    ]
+  }
+  isDisplayedAsModal={true}
+  isFixed={true}
+  isShowingSummary={false}
+  locationOptions={
+    Array [
+      Object {
+        "text": "Barcelona",
+        "value": "barcelona",
+      },
+      Object {
+        "text": "Valencia",
+        "value": "valencia",
+      },
+      Object {
+        "text": "Madrid",
+        "value": "madrid",
+      },
+      Object {
+        "text": "Bilbao",
+        "value": "bilbao",
+      },
+    ]
+  }
+  modalHeadingText="Check our availability"
+  modalSummaryElement={null}
+  onChangeInput={[Function]}
+  onCloseModal={[Function]}
+  onSubmit={[Function]}
+  searchButton={
+    <Button
+      hasShadow={false}
+      icon="search"
+      isCompact={false}
+      isDisabled={false}
+      isFluid={false}
+      isFormSubmit={true}
+      isLoading={false}
+      isPositionedRight={false}
+      isRounded={true}
+      isSecondary={false}
+      onClick={[Function]}
+      size={null}
+    >
+      Search
+    </Button>
+  }
+  summaryElement={null}
+  willDropdownsOpenAbove={false}
+>
+  <div
+    className="search-bar is-fixed"
+  >
+    <HorizontalGutters>
+      <Container>
+        <div
+          className="ui container"
+        >
+          <Grid
+            areColumnsCentered={false}
+            isStackable={false}
+          >
+            <Grid
+              centered={false}
+              stackable={false}
+            >
+              <div
+                className="ui grid"
+              >
+                <GridRow
+                  horizontalAlignContent="left"
+                  verticalAlign="middle"
+                >
+                  <GridRow
+                    textAlign="left"
+                    verticalAlign="middle"
+                  >
+                    <div
+                      className="left aligned middle aligned row"
+                    >
+                      <GridColumn
+                        verticalAlignContent="top"
+                        width={5}
+                      >
+                        <GridColumn
+                          verticalAlign="top"
+                          width={5}
+                        >
+                          <div
+                            className="top aligned five wide column"
+                          />
+                        </GridColumn>
+                      </GridColumn>
+                      <GridColumn
+                        floated="right"
+                        verticalAlignContent="top"
+                        width={7}
+                      >
+                        <GridColumn
+                          floated="right"
+                          verticalAlign="top"
+                          width={7}
+                        >
+                          <div
+                            className="right floated top aligned seven wide column"
+                          >
+                            <Modal
+                              hasCloseIcon={true}
+                              hasPadding={true}
+                              hasRoundedCorners={false}
+                              header={
+                                <Heading
+                                  className={null}
+                                  hasMargin={true}
+                                  isColorInverted={false}
+                                  size="small"
+                                  textAlign={null}
+                                >
+                                  Check our availability
+                                </Heading>
+                              }
+                              isFullscreen={true}
+                              onClose={[Function]}
+                              size="tiny"
+                              trigger={
+                                <Button
+                                  hasShadow={false}
+                                  icon="search"
+                                  isCompact={false}
+                                  isDisabled={false}
+                                  isFluid={false}
+                                  isFormSubmit={true}
+                                  isLoading={false}
+                                  isPositionedRight={false}
+                                  isRounded={true}
+                                  isSecondary={false}
+                                  onClick={[Function]}
+                                  size={null}
+                                >
+                                  Search
+                                </Button>
+                              }
+                            >
+                              <Modal
+                                className="has-padding"
+                                closeIcon={
+                                  <Icon
+                                    color={null}
+                                    hasBorder={false}
+                                    isButton={false}
+                                    isCircular={false}
+                                    isColorInverted={false}
+                                    isDisabled={false}
+                                    isLabelLeft={false}
+                                    labelText={null}
+                                    labelWeight={null}
+                                    name="close"
+                                    path={null}
+                                    size={null}
+                                  />
+                                }
+                                closeOnDimmerClick={true}
+                                closeOnDocumentClick={false}
+                                dimmer="inverted"
+                                eventPool="Modal"
+                                onClose={[Function]}
+                                size="fullscreen"
+                                trigger={
+                                  <Button
+                                    hasShadow={false}
+                                    icon="search"
+                                    isCompact={false}
+                                    isDisabled={false}
+                                    isFluid={false}
+                                    isFormSubmit={true}
+                                    isLoading={false}
+                                    isPositionedRight={false}
+                                    isRounded={true}
+                                    isSecondary={false}
+                                    onClick={[Function]}
+                                    size={null}
+                                  >
+                                    Search
+                                  </Button>
+                                }
+                              >
+                                <Portal
+                                  className="ui inverted page modals dimmer transition visible active"
+                                  closeOnDocumentClick={false}
+                                  closeOnEscape={true}
+                                  closeOnRootNodeClick={true}
+                                  eventPool="Modal"
+                                  mountNode={<body />}
+                                  onClose={[Function]}
+                                  onMount={[Function]}
+                                  onOpen={[Function]}
+                                  onUnmount={[Function]}
+                                  openOnTriggerClick={true}
+                                  trigger={
+                                    <Button
+                                      hasShadow={false}
+                                      icon="search"
+                                      isCompact={false}
+                                      isDisabled={false}
+                                      isFluid={false}
+                                      isFormSubmit={true}
+                                      isLoading={false}
+                                      isPositionedRight={false}
+                                      isRounded={true}
+                                      isSecondary={false}
+                                      onClick={[Function]}
+                                      size={null}
+                                    >
+                                      Search
+                                    </Button>
+                                  }
+                                >
+                                  <Ref
+                                    innerRef={[Function]}
+                                  >
+                                    <Button
+                                      hasShadow={false}
+                                      icon="search"
+                                      isCompact={false}
+                                      isDisabled={false}
+                                      isFluid={false}
+                                      isFormSubmit={true}
+                                      isLoading={false}
+                                      isPositionedRight={false}
+                                      isRounded={true}
+                                      isSecondary={false}
+                                      onBlur={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseEnter={[Function]}
+                                      onMouseLeave={[Function]}
+                                      size={null}
+                                    >
+                                      <Button
+                                        as="button"
+                                        circular={true}
+                                        className=""
+                                        compact={false}
+                                        disabled={false}
+                                        floated="left"
+                                        fluid={false}
+                                        loading={false}
+                                        onClick={[Function]}
+                                        secondary={false}
+                                        size={null}
+                                        type="submit"
+                                      >
+                                        <button
+                                          className="ui circular left floated button"
+                                          onClick={[Function]}
+                                          role="button"
+                                          type="submit"
+                                        >
+                                          <Icon
+                                            color={null}
+                                            hasBorder={false}
+                                            isButton={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="search"
+                                            path={null}
+                                            size={null}
+                                          >
+                                            <i
+                                              className="icon"
+                                            >
+                                              <svg
+                                                viewBox="0 0 24 24"
+                                              >
+                                                <path
+                                                  d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                                  fill="currentColor"
+                                                />
+                                              </svg>
+                                            </i>
+                                          </Icon>
+                                          Search
+                                        </button>
+                                      </Button>
+                                    </Button>
+                                  </Ref>
+                                </Portal>
+                              </Modal>
+                            </Modal>
+                          </div>
+                        </GridColumn>
+                      </GridColumn>
+                    </div>
+                  </GridRow>
+                </GridRow>
+              </div>
+            </Grid>
+          </Grid>
+        </div>
+      </Container>
+    </HorizontalGutters>
+  </div>
+</SearchBar>
+`;
 
 exports[`<SearchBar /> if \`props.isFixed\` is true should render the right structure 1`] = `
 <SearchBar
@@ -1041,6 +1380,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
       icon="search"
       isCompact={false}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={true}
       isLoading={false}
       isPositionedRight={false}
@@ -1501,6 +1841,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 icon={null}
                                                 initialValue=""
                                                 inputOnChangeFunctionName="onDatesChange"
+                                                isFluid={false}
                                                 isFocused={false}
                                                 isValid={false}
                                                 label={null}
@@ -1510,6 +1851,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                               >
                                                 <Input
                                                   className=""
+                                                  fluid={false}
                                                   iconPosition={null}
                                                   type="text"
                                                 >
@@ -1945,6 +2287,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                           icon="search"
                                           isCompact={false}
                                           isDisabled={false}
+                                          isFluid={false}
                                           isFormSubmit={true}
                                           isLoading={false}
                                           isPositionedRight={false}
@@ -1960,6 +2303,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                             compact={false}
                                             disabled={false}
                                             floated="left"
+                                            fluid={false}
                                             loading={false}
                                             onClick={[Function]}
                                             secondary={false}
@@ -2085,6 +2429,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
       icon="search"
       isCompact={false}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={true}
       isLoading={false}
       isPositionedRight={false}
@@ -2537,6 +2882,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onDatesChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label={null}
@@ -2546,6 +2892,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -2981,6 +3328,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   icon="search"
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={false}
@@ -2996,6 +3344,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     compact={false}
                     disabled={false}
                     floated="left"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -3090,6 +3439,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
       icon="search"
       isCompact={false}
       isDisabled={false}
+      isFluid={false}
       isFormSubmit={true}
       isLoading={false}
       isPositionedRight={false}
@@ -3171,6 +3521,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onDatesChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label={null}
@@ -3180,6 +3531,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
@@ -3615,6 +3967,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   icon="search"
                   isCompact={false}
                   isDisabled={false}
+                  isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
                   isPositionedRight={false}
@@ -3630,6 +3983,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     compact={false}
                     disabled={false}
                     floated="left"
+                    fluid={false}
                     loading={false}
                     onClick={[Function]}
                     secondary={false}
@@ -4134,6 +4488,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onDatesChange"
+                        isFluid={false}
                         isFocused={false}
                         isValid={false}
                         label={null}
@@ -4143,6 +4498,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       >
                         <Input
                           className=""
+                          fluid={false}
                           iconPosition={null}
                           type="text"
                         >
