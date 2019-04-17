@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 import { Form } from 'semantic-ui-react';
-import { isEqual } from 'lodash';
+import { debounce, isEqual } from 'lodash';
 
 import { CHECK_OUR_AVAILABILITY, SEARCH } from 'utils/default-strings';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
@@ -13,6 +13,7 @@ import { ICON_NAMES } from 'elements/Icon';
 import { Button } from 'elements/Button';
 
 import { getInitialValue } from './utils/getInitialValue';
+import { getWillDropdownsOpenAbove } from './utils/getWillDropdownsOpenAbove';
 import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
 import { getSearchBarModal } from './utils/getSearchBarModal';
 
@@ -25,11 +26,36 @@ export class Component extends PureComponent {
     dates: getInitialValue(this.props.datesInputValue),
     guests: getInitialValue(this.props.guestsInputValue),
     location: getInitialValue(this.props.locationInputValue),
+    willDropdownsOpenAbove: this.props.willDropdownsOpenAbove,
+  };
+
+  componentDidMount = () => {
+    if (this.props.isDisplayedAsModal) return;
+    global.document.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();
   };
 
   componentDidUpdate(previousProps, previousState) {
     !isEqual(previousState, this.state) && this.props.onChangeInput(this.state);
   }
+
+  componentWillUnmount = () => {
+    if (this.props.isDisplayedAsModal) return;
+    global.document.removeEventListener('scroll', this.handleScroll);
+  };
+
+  createRef = container => {
+    this.container = container;
+  };
+
+  handleScroll = debounce(() => {
+    this.setState({
+      willDropdownsOpenAbove: getWillDropdownsOpenAbove(
+        this.container,
+        this.props.willDropdownsOpenAbove
+      ),
+    });
+  }, 100);
 
   persistInputChange = (name, value) => {
     this.setState({ [name]: value });
@@ -45,7 +71,6 @@ export class Component extends PureComponent {
       isDisplayedAsModal,
       isFixed,
       summaryElement,
-      willDropdownsOpenAbove,
     } = this.props;
 
     const searchBarAsModal =
@@ -54,7 +79,10 @@ export class Component extends PureComponent {
 
     if (isFixed) {
       return (
-        <div className={getClassNames(className, 'search-bar', 'is-fixed')}>
+        <div
+          className={getClassNames(className, 'search-bar', 'is-fixed')}
+          ref={this.createRef}
+        >
           <HorizontalGutters>
             <Grid>
               <GridRow verticalAlign="middle">
@@ -87,14 +115,17 @@ export class Component extends PureComponent {
     }
 
     return (
-      <div className={getClassNames(className, 'search-bar')}>
+      <div
+        className={getClassNames(className, 'search-bar')}
+        ref={this.createRef}
+      >
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
             {getFormFieldMarkup(
               this.props,
               this.persistInputChange,
               false,
-              willDropdownsOpenAbove
+              this.state.willDropdownsOpenAbove
             )}
           </Form.Group>
         </Form>
