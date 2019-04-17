@@ -1,3 +1,20 @@
+# [1.175.0](https://github.com/lodgify/lodgify-ui/compare/v1.174.1...v1.175.0) (2019-04-17)
+
+
+### Bug Fixes
+
+* **checkbox:** fits its container ([50f5d89](https://github.com/lodgify/lodgify-ui/commit/50f5d89))
+* **form:** stop checkbox from transforming when in form ([39772eb](https://github.com/lodgify/lodgify-ui/commit/39772eb))
+* **input:** checkbox label font color ([6bea481](https://github.com/lodgify/lodgify-ui/commit/6bea481))
+
+
+### Features
+
+* **CallMeBack:** expose privacy consent prop ([35ba6e1](https://github.com/lodgify/lodgify-ui/commit/35ba6e1))
+* **Contact:** expose privacy consent prop ([2805477](https://github.com/lodgify/lodgify-ui/commit/2805477))
+* **OwnerSignUp:** expose privacy consent prop ([da8e5a5](https://github.com/lodgify/lodgify-ui/commit/da8e5a5))
+* **Reviews:** expose privacy consent prop ([095da87](https://github.com/lodgify/lodgify-ui/commit/095da87))
+
 ## [1.174.1](https://github.com/lodgify/lodgify-ui/compare/v1.174.0...v1.174.1) (2019-04-17)
 
 
