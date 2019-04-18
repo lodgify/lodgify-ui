@@ -10,7 +10,10 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Divider } from 'elements/Divider';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { getHrefTelString } from 'utils/get-href-tel-string';
+import { EMAIL, FAX } from 'utils/default-strings/constants';
 
+import { getHrefFaxString } from './utils/getHrefFaxString';
+import { getHrefMailToString } from './utils/getHrefMailToString';
 import { getAreNavigationItemsGrouped } from './utils/getAreNavigationItemsGrouped';
 import { getGroupedNavigationItems } from './utils/getGroupedNavigationItems';
 import { getMenuItemMarkup } from './utils/getMenuItemMarkup';
@@ -25,6 +28,8 @@ export const Component = ({
   currencyNoResultsText,
   currencyOptions,
   currencyValue,
+  emailAddress,
+  emailAddressLabel,
   emailCaptureButtonText,
   emailCaptureErrorMessage,
   emailCaptureHeadingText,
@@ -34,6 +39,8 @@ export const Component = ({
   emailCaptureOnChangeInput,
   emailCaptureOnClickButton,
   emailCaptureSuccessMessage,
+  faxNumberLabel,
+  faxNumber,
   hasEmailCapture,
   languageOptions,
   languageValue,
@@ -129,6 +136,18 @@ export const Component = ({
         )}
         <Divider hasLine />
         <Menu.Item className="is-selectable">{propertyAddress}</Menu.Item>
+        {faxNumber && (
+          <Menu.Item className="is-selectable">
+            <label>{faxNumberLabel}</label>
+            <a href={getHrefFaxString(faxNumber)}>{faxNumber}</a>
+          </Menu.Item>
+        )}
+        {emailAddress && (
+          <Menu.Item className="is-selectable">
+            <label>{emailAddressLabel}</label>
+            <a href={getHrefMailToString(faxNumber)}>{emailAddress}</a>
+          </Menu.Item>
+        )}
         {copyrightText && (
           <Menu.Item className="is-selectable" position="right">
             {copyrightText}
@@ -146,6 +165,8 @@ Component.defaultProps = {
   currencyNoResultsText: undefined,
   currencyOptions: [],
   currencyValue: null,
+  emailAddress: undefined,
+  emailAddressLabel: EMAIL,
   emailCaptureButtonText: undefined,
   emailCaptureErrorMessage: undefined,
   emailCaptureHeadingText: undefined,
@@ -155,6 +176,8 @@ Component.defaultProps = {
   emailCaptureOnChangeInput: undefined,
   emailCaptureOnClickButton: undefined,
   emailCaptureSuccessMessage: undefined,
+  faxNumber: undefined,
+  faxNumberLabel: FAX,
   hasEmailCapture: false,
   languageOptions: [],
   languageValue: null,
@@ -187,6 +210,10 @@ Component.propTypes = {
     PropTypes.number,
     PropTypes.string,
   ]),
+  /** The email address to display. */
+  emailAddress: PropTypes.string,
+  /** The label for the email address. */
+  emailAddressLabel: PropTypes.string,
   /** The text to display on the button on the email capture form. */
   emailCaptureButtonText: PropTypes.string,
   /** An error message to display in place of the email capture form. */
@@ -213,6 +240,10 @@ Component.propTypes = {
   emailCaptureOnClickButton: PropTypes.func,
   /** A success message to display in place of the button. */
   emailCaptureSuccessMessage: PropTypes.string,
+  /** The fax number to display. */
+  faxNumber: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  /** The label for the fax number. */
+  faxNumberLabel: PropTypes.string,
   /** Does the footer have an email capture form showing. */
   hasEmailCapture: PropTypes.bool,
   /** The options which the user can select for the language dropdown. */

@@ -351,6 +351,7 @@ header {
     /* Active Item */
     /* stylelint-disable-next-line no-duplicate-selectors */
     > .right.menu {
+      align-items: center;
 
       > .item:not(.no-underline):after {
         border-bottom: @activeItemUnderlineBorder;
@@ -405,11 +406,19 @@ footer {
       /* Menu Item */
       .item {
         color: @footerBottomMenuColor;
+        line-height: @menuItemLineHeight;
 
         .icon {
 
           p {
             color: inherit;
+          }
+        }
+
+        &.is-selectable {
+
+          label {
+            margin: @menuItemLabelMargin;
           }
         }
       }

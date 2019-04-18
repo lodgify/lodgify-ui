@@ -14,6 +14,7 @@ module.exports = {
   },
   fontFamily: {
     base: '"Roboto", sans-serif',
+    code: 'Consolas, "Liberation Mono", Menlo, monospace !important',
   },
   fontSize: {
     h2: 34,
