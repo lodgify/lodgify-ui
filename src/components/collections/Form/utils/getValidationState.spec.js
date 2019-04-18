@@ -6,11 +6,13 @@ import { getValidationWithDefaults } from './getValidationWithDefaults';
 import { getIsValidError } from './getIsValidError';
 
 const getIsValid = jest.fn();
+const getIsEmpty = jest.fn();
 const invalidMessage = 'some message';
 const validation = { some: 'validation' };
 
 getValidationWithDefaults.mockReturnValue({
   getIsValid,
+  getIsEmpty,
   invalidMessage,
   ...validation,
 });

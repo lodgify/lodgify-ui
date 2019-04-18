@@ -14,10 +14,12 @@ const onChange = jest.fn();
 const input = <input name={name} onChange={onChange} width={width} />;
 const someOtherProperty = '👋';
 const handleInputBlur = jest.fn();
+const handleInputFocus = jest.fn();
 const handleInputChange = jest.fn();
 const parent = {
   handleInputBlur,
   handleInputChange,
+  handleInputFocus,
   state: {
     [name]: { someOtherProperty },
   },

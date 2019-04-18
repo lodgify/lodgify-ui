@@ -7,10 +7,10 @@ import { getIsValidError } from './getIsValidError';
  * @return {Object}
  */
 export const getValidationState = (inputValidation, inputValue) => {
-  const { invalidMessage, getIsValid } = getValidationWithDefaults(
+  const { invalidMessage, getIsValid, getIsEmpty } = getValidationWithDefaults(
     inputValidation
   );
-  const isValid = getIsValid(inputValue);
+  const isValid = !getIsEmpty(inputValue) && getIsValid(inputValue);
   const error = getIsValidError(inputValue, isValid, invalidMessage);
 
   return { error, isValid };
