@@ -351,6 +351,7 @@ header {
     /* Active Item */
     /* stylelint-disable-next-line no-duplicate-selectors */
     > .right.menu {
+      align-items: center;
 
       > .item:not(.no-underline):after {
         border-bottom: @activeItemUnderlineBorder;
