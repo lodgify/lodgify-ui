@@ -25,6 +25,8 @@ const socialMediaLinks = [
   phoneNumber={'+1 2345 678912'}
   propertyAddress={'The Cat House, Pawprint Way, Catania 08012'}
   socialMediaLinks={socialMediaLinks}
+  faxNumber={'+1 2345 678912'}
+  emailAddress={'mrtom@pur.com'}
 />
 ```
 
@@ -137,6 +139,10 @@ const socialMediaLinks = [
   copyrightText="\u00A9 2018 Feline Vacations. All rights reserved."
   currencyOptions={currencyOptions}
   currencyValue={currencyOptions[0].value}
+  emailAddress="john@snow.com"
+  emailAddressLabel="Email >"
+  faxNumber="+9 8765 432101"
+  faxNumberLabel="Fax >"
   languageOptions={languageOptions}
   languageValue={languageOptions[0].value}
   navigationItems={navigationItems}
