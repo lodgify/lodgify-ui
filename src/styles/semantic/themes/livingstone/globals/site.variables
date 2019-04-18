@@ -8,7 +8,7 @@
        Fonts
 --------------------*/
 
-@fontName: 'Roboto';
+@fontName: 'Arial';
 
 @bodyFontIdentifier: ~"@{themeCustomPropertyPrefix}-body-font";
 @bodyFontDefault: @fontName;
