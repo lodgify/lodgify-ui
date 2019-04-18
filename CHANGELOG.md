@@ -1,3 +1,19 @@
+# [1.176.0](https://github.com/lodgify/lodgify-ui/compare/v1.175.0...v1.176.0) (2019-04-18)
+
+
+### Bug Fixes
+
+* **Checkbox:** cursor is pointer when hovered ([c05dcef](https://github.com/lodgify/lodgify-ui/commit/c05dcef))
+* **Header:** center align book now button ([fd8059b](https://github.com/lodgify/lodgify-ui/commit/fd8059b))
+
+
+### Features
+
+* **Footer:** add utils for creating contact hrefs ([928c2ea](https://github.com/lodgify/lodgify-ui/commit/928c2ea))
+* **Footer:** adjust menu item alignment and color ([d4bd449](https://github.com/lodgify/lodgify-ui/commit/d4bd449))
+* **Footer:** expose fax and email props ([315cea5](https://github.com/lodgify/lodgify-ui/commit/315cea5))
+* **globals:** typography defaults to a websafe font ([f93413a](https://github.com/lodgify/lodgify-ui/commit/f93413a))
+
 # [1.175.0](https://github.com/lodgify/lodgify-ui/compare/v1.174.1...v1.175.0) (2019-04-17)
 
 
