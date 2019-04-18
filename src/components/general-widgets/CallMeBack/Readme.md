@@ -66,7 +66,6 @@ const validation = {
     invalidMessage: 'A property is required',
     getIsValid: value => value !== 'error'
   },
-  time: { isRequired: true },
 };
 
 <CallMeBack
