@@ -69,4 +69,11 @@ module.exports = {
       },
     },
   },
+  Editor: {
+    root: {
+      '& .CodeMirror span': {
+        fontFamily: fontFamily.code,
+      },
+    },
+  },
 };
