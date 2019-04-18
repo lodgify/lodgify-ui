@@ -72,4 +72,14 @@ describe('getValidationWithDefaults', () => {
       expect(actual).toBe(false);
     });
   });
+
+  describe('getIsValid', () => {
+    const validationDefaults = getValidationWithDefaults();
+
+    it('should return true', () => {
+      const actual = validationDefaults.getIsValid('');
+
+      expect(actual).toBe(true);
+    });
+  });
 });
