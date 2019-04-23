@@ -1,3 +1,23 @@
+# [1.177.0](https://github.com/lodgify/lodgify-ui/compare/v1.176.0...v1.177.0) (2019-04-23)
+
+
+### Bug Fixes
+
+* **component:** create a constant for every defaultProp string ([7b7be40](https://github.com/lodgify/lodgify-ui/commit/7b7be40))
+* **FeaturedProperties:** change default periodText ([69d436c](https://github.com/lodgify/lodgify-ui/commit/69d436c))
+* **FeaturedProperty:** change default periodText ([d20d091](https://github.com/lodgify/lodgify-ui/commit/d20d091))
+* **FeaturedRoomType:** change default periodText ([34edc57](https://github.com/lodgify/lodgify-ui/commit/34edc57))
+* **getModalContentMarkup:** remove forward slash ([1e43db0](https://github.com/lodgify/lodgify-ui/commit/1e43db0))
+* **getPricePerPeriodMarkup:** remove forward slash ([2fd64d0](https://github.com/lodgify/lodgify-ui/commit/2fd64d0))
+* **PropertyPageSearchBar:** change default summaryPeriodText ([503e1b2](https://github.com/lodgify/lodgify-ui/commit/503e1b2))
+* **RoomType:** change default periodText ([18d6f2e](https://github.com/lodgify/lodgify-ui/commit/18d6f2e))
+* **Summary:** change default periodText ([24f410c](https://github.com/lodgify/lodgify-ui/commit/24f410c))
+
+
+### Features
+
+* **segment*:** implement priceTextPadding for h4 ui header ([f6794fa](https://github.com/lodgify/lodgify-ui/commit/f6794fa))
+
 # [1.176.0](https://github.com/lodgify/lodgify-ui/compare/v1.175.0...v1.176.0) (2019-04-18)
 
 
