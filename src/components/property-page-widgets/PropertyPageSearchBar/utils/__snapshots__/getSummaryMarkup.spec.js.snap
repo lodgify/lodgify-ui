@@ -5,7 +5,7 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
   areOnlyNightPriceAndRatingDisplayed={false}
   isShowingPlaceholder={false}
   locationName="Location"
-  periodText="night"
+  periodText="per night"
   pricePerPeriod="200€"
   propertyName="My property"
   ratingNumber={4.3}
@@ -263,7 +263,7 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
                     </h4>
                   </Header>
                 </Heading>
-                /night
+                per night
               </span>
             </div>
           </Segment>
@@ -279,7 +279,7 @@ exports[`\`getSummaryMarkup\` should render the right structure if \`areOnlyNigh
   areOnlyNightPriceAndRatingDisplayed={true}
   isShowingPlaceholder={false}
   locationName="Location"
-  periodText="night"
+  periodText="per night"
   pricePerPeriod="200€"
   propertyName="My property"
   ratingNumber={4.3}
@@ -324,7 +324,7 @@ exports[`\`getSummaryMarkup\` should render the right structure if \`areOnlyNigh
                     </h4>
                   </Header>
                 </Heading>
-                /night
+                per night
               </span>
             </div>
           </Segment>

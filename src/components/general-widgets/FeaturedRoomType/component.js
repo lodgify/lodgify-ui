@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
+import { PER_NIGHT, BEDS, GUESTS } from 'utils/default-strings';
 import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
 import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 import { ResponsiveImage } from 'media/ResponsiveImage';
@@ -69,12 +70,12 @@ export const Component = ({
 Component.displayName = 'FeaturedRoomType';
 
 Component.defaultProps = {
-  bedsLabel: 'Beds',
-  guestsLabel: 'Guests',
+  bedsLabel: BEDS,
+  guestsLabel: GUESTS,
   imageAlternativeText: undefined,
   imageSizes: undefined,
   imageSrcSet: undefined,
-  periodText: 'night',
+  periodText: PER_NIGHT,
   placeholderImageUrl: undefined,
   isShowingPlaceholder: false,
   roomTypeUrlTarget: '_self',

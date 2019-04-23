@@ -5,7 +5,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
   areOnlyNightPriceAndRatingDisplayed={false}
   isShowingPlaceholder={false}
   locationName="Catania"
-  periodText="night"
+  periodText="per night"
   pricePerPeriod="$280"
   propertyName="The Cat House"
   ratingNumber={4.8}
@@ -263,7 +263,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                     </h4>
                   </Header>
                 </Heading>
-                /night
+                per night
               </span>
             </div>
           </Segment>
@@ -279,7 +279,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
   areOnlyNightPriceAndRatingDisplayed={true}
   isShowingPlaceholder={false}
   locationName="Catania"
-  periodText="night"
+  periodText="per night"
   pricePerPeriod="$280"
   propertyName="The Cat House"
   ratingNumber={4.8}
@@ -324,7 +324,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                     </h4>
                   </Header>
                 </Heading>
-                /night
+                per night
               </span>
             </div>
           </Segment>

@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
+import { PER_NIGHT, ROOM_AMENITIES } from 'utils/default-strings';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -154,10 +155,10 @@ Component.displayName = 'RoomType';
 
 Component.defaultProps = {
   description: null,
-  amenitiesHeadingText: 'Room Amenities',
+  amenitiesHeadingText: ROOM_AMENITIES,
   extraFeatures: [],
   isShowingPlaceholder: false,
-  periodText: 'night',
+  periodText: PER_NIGHT,
   ratingNumber: null,
 };
 

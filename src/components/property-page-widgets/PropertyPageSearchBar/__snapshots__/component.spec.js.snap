@@ -65,7 +65,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
     </Button>
   }
   summaryLocationName="Location"
-  summaryPeriodText="night"
+  summaryPeriodText="per night"
   summaryPricePerPeriod="250€"
   summaryPropertyName="Property"
   summaryRatingNumber={4.5}
@@ -140,7 +140,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               areOnlyNightPriceAndRatingDisplayed={false}
               isShowingPlaceholder={true}
               locationName="Location"
-              periodText="night"
+              periodText="per night"
               pricePerPeriod="250€"
               propertyName="Property"
               ratingNumber={4.5}
@@ -193,7 +193,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                       areOnlyNightPriceAndRatingDisplayed={false}
                                       isShowingPlaceholder={true}
                                       locationName="Location"
-                                      periodText="night"
+                                      periodText="per night"
                                       pricePerPeriod="250€"
                                       propertyName="Property"
                                       ratingNumber={4.5}
@@ -925,7 +925,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               areOnlyNightPriceAndRatingDisplayed={false}
               isShowingPlaceholder={true}
               locationName="Location"
-              periodText="night"
+              periodText="per night"
               pricePerPeriod="250€"
               propertyName="Property"
               ratingNumber={4.5}
@@ -957,7 +957,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               areOnlyNightPriceAndRatingDisplayed={true}
               isShowingPlaceholder={true}
               locationName="Location"
-              periodText="night"
+              periodText="per night"
               pricePerPeriod="250€"
               propertyName="Property"
               ratingNumber={4.5}
@@ -1010,7 +1010,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                       areOnlyNightPriceAndRatingDisplayed={true}
                                       isShowingPlaceholder={true}
                                       locationName="Location"
-                                      periodText="night"
+                                      periodText="per night"
                                       pricePerPeriod="250€"
                                       propertyName="Property"
                                       ratingNumber={4.5}
@@ -1079,7 +1079,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                           areOnlyNightPriceAndRatingDisplayed={false}
                                           isShowingPlaceholder={true}
                                           locationName="Location"
-                                          periodText="night"
+                                          periodText="per night"
                                           pricePerPeriod="250€"
                                           propertyName="Property"
                                           ratingNumber={4.5}
@@ -1315,7 +1315,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
     </Button>
   }
   summaryLocationName="Location"
-  summaryPeriodText="night"
+  summaryPeriodText="per night"
   summaryPricePerPeriod="250€"
   summaryPropertyName="Property"
   summaryRatingNumber={4.5}
@@ -1390,7 +1390,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               areOnlyNightPriceAndRatingDisplayed={false}
               isShowingPlaceholder={false}
               locationName="Location"
-              periodText="night"
+              periodText="per night"
               pricePerPeriod="250€"
               propertyName="Property"
               ratingNumber={4.5}
@@ -1443,7 +1443,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                       areOnlyNightPriceAndRatingDisplayed={false}
                                       isShowingPlaceholder={false}
                                       locationName="Location"
-                                      periodText="night"
+                                      periodText="per night"
                                       pricePerPeriod="250€"
                                       propertyName="Property"
                                       ratingNumber={4.5}
@@ -1701,7 +1701,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                         </h4>
                                                       </Header>
                                                     </Heading>
-                                                    /night
+                                                    per night
                                                   </span>
                                                 </div>
                                               </Segment>
@@ -2334,7 +2334,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               areOnlyNightPriceAndRatingDisplayed={false}
               isShowingPlaceholder={false}
               locationName="Location"
-              periodText="night"
+              periodText="per night"
               pricePerPeriod="250€"
               propertyName="Property"
               ratingNumber={4.5}
@@ -2366,7 +2366,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               areOnlyNightPriceAndRatingDisplayed={true}
               isShowingPlaceholder={false}
               locationName="Location"
-              periodText="night"
+              periodText="per night"
               pricePerPeriod="250€"
               propertyName="Property"
               ratingNumber={4.5}
@@ -2419,7 +2419,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                       areOnlyNightPriceAndRatingDisplayed={true}
                                       isShowingPlaceholder={false}
                                       locationName="Location"
-                                      periodText="night"
+                                      periodText="per night"
                                       pricePerPeriod="250€"
                                       propertyName="Property"
                                       ratingNumber={4.5}
@@ -2464,7 +2464,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                         </h4>
                                                       </Header>
                                                     </Heading>
-                                                    /night
+                                                    per night
                                                   </span>
                                                 </div>
                                               </Segment>
@@ -2647,7 +2647,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                           areOnlyNightPriceAndRatingDisplayed={false}
                                           isShowingPlaceholder={false}
                                           locationName="Location"
-                                          periodText="night"
+                                          periodText="per night"
                                           pricePerPeriod="250€"
                                           propertyName="Property"
                                           ratingNumber={4.5}

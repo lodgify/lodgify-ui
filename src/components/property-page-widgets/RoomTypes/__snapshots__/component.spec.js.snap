@@ -35,7 +35,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         isShowingPlaceholder={true}
         isUserOnMobile={false}
         name=""
-        periodText="night"
+        periodText="per night"
         pricePerPeriod=""
         ratingNumber={null}
         slideShowImages={Array []}
@@ -254,7 +254,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         isShowingPlaceholder={true}
         isUserOnMobile={false}
         name=""
-        periodText="night"
+        periodText="per night"
         pricePerPeriod=""
         ratingNumber={null}
         slideShowImages={Array []}
@@ -746,7 +746,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         isUserOnMobile={false}
         name="The Cat House"
         onClickCheckAvailability={[Function]}
-        periodText="night"
+        periodText="per night"
         pricePerPeriod="$280"
         ratingNumber={3.4}
         slideShowImages={
@@ -1106,7 +1106,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         isUserOnMobile={false}
         name="The Other Cat House"
         onClickCheckAvailability={[Function]}
-        periodText="night"
+        periodText="per night"
         pricePerPeriod="$280"
         ratingNumber={3.4}
         slideShowImages={
@@ -1611,7 +1611,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         isUserOnMobile={false}
         name="The Cat House"
         onClickCheckAvailability={[Function]}
-        periodText="night"
+        periodText="per night"
         pricePerPeriod="$280"
         ratingNumber={3.4}
         slideShowImages={
@@ -2304,7 +2304,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                           </h3>
                                                         </Header>
                                                       </Heading>
-                                                      /night
+                                                      per night
                                                     </span>
                                                   </div>
                                                 </CardDescription>
@@ -2513,7 +2513,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         isUserOnMobile={false}
         name="The Other Cat House"
         onClickCheckAvailability={[Function]}
-        periodText="night"
+        periodText="per night"
         pricePerPeriod="$280"
         ratingNumber={3.4}
         slideShowImages={
@@ -3206,7 +3206,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                           </h3>
                                                         </Header>
                                                       </Heading>
-                                                      /night
+                                                      per night
                                                     </span>
                                                   </div>
                                                 </CardDescription>

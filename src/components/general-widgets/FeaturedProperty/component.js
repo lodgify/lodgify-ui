@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
+import { PER_NIGHT } from 'utils/default-strings';
 import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
 import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 import { Rating } from 'elements/Rating';
@@ -77,7 +78,7 @@ Component.defaultProps = {
   imageSizes: undefined,
   imageSrcSet: undefined,
   isShowingPlaceholder: false,
-  periodText: 'night',
+  periodText: PER_NIGHT,
   placeholderImageUrl: undefined,
   propertyUrlTarget: '_self',
 };

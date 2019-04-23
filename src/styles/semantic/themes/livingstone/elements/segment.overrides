@@ -93,6 +93,10 @@
 
   .segments.horizontal-wrap {
 
+    .ui.segment .ui.header {
+      padding: @priceTextPadding @priceTextPadding 0 @priceTextPadding;
+    }
+
     .placeholder-wrapper,
     .inline-placeholder-wrapper {
       display: flex;

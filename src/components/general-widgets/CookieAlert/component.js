@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { ACCEPT, LEARN_MORE } from 'utils/default-strings';
 import { Modal } from 'elements/Modal';
 import { FlexContainer } from 'layout/FlexContainer';
 import { Button } from 'elements/Button';
@@ -53,9 +54,9 @@ const Component = ({
 Component.displayName = 'CookieAlert';
 
 Component.defaultProps = {
-  buttonText: 'Accept',
+  buttonText: ACCEPT,
   isOpen: false,
-  linkText: 'Learn More',
+  linkText: LEARN_MORE,
   linkUrl: '/',
 };
 
