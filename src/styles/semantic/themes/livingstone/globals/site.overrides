@@ -5,6 +5,17 @@
 /*-------------------
        Fonts
 --------------------*/
+body,
+span,
+p,
+button,
+a,
+textarea,
+input::placeholder,
+.ui.accordion > .title,
+.ui.text-container {
+  font-family: @bodyFont;
+}
 
 /*-------------------
       Base Sizes
@@ -29,7 +40,13 @@
 /*--------------
   Page Heading
 ---------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
 .ui.header {
+  font-family: var(@headingFontIdentifier, @headingFontDefault) !important;
   word-wrap: break-word;
 }
 
@@ -454,6 +471,17 @@ blockquote.ui.quote .row {
 
     .ui.form .fields {
       margin: 0;
+    }
+  }
+
+  .location-dropdown {
+
+    .dropdown-container {
+
+      .ui.selection.dropdown {
+        width: @searchBarLocationDropdownMinWidth;
+        padding-right: @38px;
+      }
     }
   }
 }

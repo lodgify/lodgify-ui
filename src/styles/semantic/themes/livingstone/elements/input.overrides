@@ -11,6 +11,11 @@
   max-width: @inputMaxWidth;
   width: @inputWidth;
 
+  &,
+  & > input {
+    font-family: @bodyFont;
+  }
+
   /*-------------------
         Types
 --------------------*/
@@ -86,6 +91,17 @@
     color: @labelFocusColor;
     font-size: @labelFocusFontSize;
     transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
+  }
+
+  input[type=checkbox] ~ label {
+    color: @checkboxLabelColor;
+    top: 0;
+    left: 0;
+
+    &:before,
+    &:after {
+      cursor: pointer;
+    }
   }
 
   /* textarea */

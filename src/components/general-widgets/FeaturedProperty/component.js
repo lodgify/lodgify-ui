@@ -8,6 +8,7 @@ import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 import { Rating } from 'elements/Rating';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 import { Subheading } from 'typography/Subheading';
+import { Heading } from 'typography/Heading';
 
 import { getPropertyDescription } from './utils/getPropertyDescription';
 
@@ -50,7 +51,9 @@ export const Component = ({
           <Card.Meta>
             <Subheading>{propertyType}</Subheading>
           </Card.Meta>
-          <Card.Header>{propertyName}</Card.Header>
+          <Card.Header>
+            <Heading>{propertyName}</Heading>
+          </Card.Header>
           <Card.Description>{locationName}</Card.Description>
           <Card.Description>
             {getPropertyDescription(guestsNumber, bedroomsNumber)}

@@ -49,7 +49,15 @@ exports[`<FeaturedRoomType /> should render the right structure 1`] = `
   />
   <CardContent>
     <CardHeader>
-      The Cat House
+      <Heading
+        className={null}
+        hasMargin={true}
+        isColorInverted={false}
+        size="medium"
+        textAlign={null}
+      >
+        The Cat House
+      </Heading>
     </CardHeader>
     <CardDescription>
       Catania

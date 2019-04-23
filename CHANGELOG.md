@@ -1,3 +1,80 @@
+# [1.176.0](https://github.com/lodgify/lodgify-ui/compare/v1.175.0...v1.176.0) (2019-04-18)
+
+
+### Bug Fixes
+
+* **Checkbox:** cursor is pointer when hovered ([c05dcef](https://github.com/lodgify/lodgify-ui/commit/c05dcef))
+* **Header:** center align book now button ([fd8059b](https://github.com/lodgify/lodgify-ui/commit/fd8059b))
+
+
+### Features
+
+* **Footer:** add utils for creating contact hrefs ([928c2ea](https://github.com/lodgify/lodgify-ui/commit/928c2ea))
+* **Footer:** adjust menu item alignment and color ([d4bd449](https://github.com/lodgify/lodgify-ui/commit/d4bd449))
+* **Footer:** expose fax and email props ([315cea5](https://github.com/lodgify/lodgify-ui/commit/315cea5))
+* **globals:** typography defaults to a websafe font ([f93413a](https://github.com/lodgify/lodgify-ui/commit/f93413a))
+
+# [1.175.0](https://github.com/lodgify/lodgify-ui/compare/v1.174.1...v1.175.0) (2019-04-17)
+
+
+### Bug Fixes
+
+* **checkbox:** fits its container ([50f5d89](https://github.com/lodgify/lodgify-ui/commit/50f5d89))
+* **form:** stop checkbox from transforming when in form ([39772eb](https://github.com/lodgify/lodgify-ui/commit/39772eb))
+* **input:** checkbox label font color ([6bea481](https://github.com/lodgify/lodgify-ui/commit/6bea481))
+
+
+### Features
+
+* **CallMeBack:** expose privacy consent prop ([35ba6e1](https://github.com/lodgify/lodgify-ui/commit/35ba6e1))
+* **Contact:** expose privacy consent prop ([2805477](https://github.com/lodgify/lodgify-ui/commit/2805477))
+* **OwnerSignUp:** expose privacy consent prop ([da8e5a5](https://github.com/lodgify/lodgify-ui/commit/da8e5a5))
+* **Reviews:** expose privacy consent prop ([095da87](https://github.com/lodgify/lodgify-ui/commit/095da87))
+
+## [1.174.1](https://github.com/lodgify/lodgify-ui/compare/v1.174.0...v1.174.1) (2019-04-17)
+
+
+### Bug Fixes
+
+* **CookieAlert:** popup submit button is rounded ([a160c3c](https://github.com/lodgify/lodgify-ui/commit/a160c3c))
+* **Form:** submit buttons are rounded ([ccf981b](https://github.com/lodgify/lodgify-ui/commit/ccf981b))
+* **SearchBar:** set location dropdown width ([08b8ae7](https://github.com/lodgify/lodgify-ui/commit/08b8ae7))
+
+# [1.174.0](https://github.com/lodgify/lodgify-ui/compare/v1.173.0...v1.174.0) (2019-04-17)
+
+
+### Features
+
+* **SearchBar:** dropdowns open depending on scroll position ([55e9a93](https://github.com/lodgify/lodgify-ui/commit/55e9a93))
+
+# [1.173.0](https://github.com/lodgify/lodgify-ui/compare/v1.172.0...v1.173.0) (2019-04-16)
+
+
+### Features
+
+* **getHiddenMenuMarkup:** hidde primaryCTA on mobile ([b2b6515](https://github.com/lodgify/lodgify-ui/commit/b2b6515))
+
+# [1.172.0](https://github.com/lodgify/lodgify-ui/compare/v1.171.0...v1.172.0) (2019-04-16)
+
+
+### Bug Fixes
+
+* **general-widgets:** use typography components ([5f51374](https://github.com/lodgify/lodgify-ui/commit/5f51374))
+
+
+### Features
+
+* **button:** consume typography variables ([31396e2](https://github.com/lodgify/lodgify-ui/commit/31396e2))
+* **form:** consume typography variables ([83bd73a](https://github.com/lodgify/lodgify-ui/commit/83bd73a))
+* **input:** consume typography variables ([5ad7eeb](https://github.com/lodgify/lodgify-ui/commit/5ad7eeb))
+* **menu:** consume typography variables ([3affae3](https://github.com/lodgify/lodgify-ui/commit/3affae3))
+* **modal:** consume typography variables ([c9c620d](https://github.com/lodgify/lodgify-ui/commit/c9c620d))
+* **react-dates-datepicker:** consume typography variables ([81f6899](https://github.com/lodgify/lodgify-ui/commit/81f6899))
+* **segment:** consume typography variables ([552a711](https://github.com/lodgify/lodgify-ui/commit/552a711))
+* **site.overrides:** consume typography variables ([cad9408](https://github.com/lodgify/lodgify-ui/commit/cad9408))
+* **site.variables:** expose typography variables ([33eadb7](https://github.com/lodgify/lodgify-ui/commit/33eadb7))
+* **styles:** expose font custom properties ([81cb677](https://github.com/lodgify/lodgify-ui/commit/81cb677))
+
 # [1.171.0](https://github.com/lodgify/lodgify-ui/compare/v1.170.0...v1.171.0) (2019-04-16)
 
 

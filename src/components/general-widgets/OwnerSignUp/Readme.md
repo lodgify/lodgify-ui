@@ -25,9 +25,10 @@ const validation = {
   email: { isRequired: true },
   firstName: { isRequired: true },
   lastName: { isRequired: true },
+  privacyConsent: { isRequired: true },
 };
 
-<OwnerSignUp validation={validation} />
+<OwnerSignUp validation={validation} isPrivacyConsentRequired />
 ```
 
 ### States

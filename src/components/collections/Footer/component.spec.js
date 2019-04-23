@@ -5,6 +5,8 @@ import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-he
 import { Component as Footer } from './component';
 
 const copyrightText = '\u00A9 2018 Feline Vacations. All rights reserved.';
+const faxNumber = '123456';
+const emailAddress = 'adsf@asdf.com';
 const currencyOptions = [
   { text: 'EUR', value: 'EUR' },
   { text: 'USD', value: 'USD' },
@@ -94,6 +96,22 @@ describe('<Footer />', () => {
   describe('if `socialMediaLinks` has length > 0', () => {
     it('should render the right structure', () => {
       const wrapper = getFooter({ socialMediaLinks });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.faxNumber` is passed', () => {
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ faxNumber });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.emailAddress` is passed', () => {
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ emailAddress });
 
       expect(wrapper).toMatchSnapshot();
     });

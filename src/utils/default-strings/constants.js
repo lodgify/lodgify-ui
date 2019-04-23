@@ -1,4 +1,5 @@
 export const ACCEPT = 'Accept';
+export const ACCEPT_PRIVACY_POLICY = 'I accept the privacy policy';
 export const ADD_A_REVIEW = 'Add a Review';
 export const AND = 'and';
 export const ARRIVAL = 'Arrival';
@@ -18,6 +19,7 @@ export const DATE = 'Date';
 export const DEPARTURE = 'Departure';
 export const EMAIL = 'Email';
 export const EXPLORE_ALL_PICTURES = 'Explore all pictures';
+export const FAX = 'Fax';
 export const FIRST_NAME = 'First Name';
 export const FORGOT_PASSWORD = 'Forgot password';
 export const GUEST_TYPE = 'Guest Type';

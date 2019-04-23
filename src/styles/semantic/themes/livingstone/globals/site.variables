@@ -2,11 +2,26 @@
          Site Settings
 *******************************/
 
+@themeCustomPropertyPrefix: --lodgify-ui;
+
 /*-------------------
        Fonts
 --------------------*/
 
-@fontName: 'Roboto';
+@fontName: 'Arial';
+
+@bodyFontIdentifier: ~"@{themeCustomPropertyPrefix}-body-font";
+@bodyFontDefault: @fontName;
+@bodyFont: var(@bodyFontIdentifier, @bodyFontDefault) !important;
+
+@headingFontIdentifier: ~"@{themeCustomPropertyPrefix}-heading-font";
+@headingFontDefault: @fontName;
+
+@titleFontIdentifier: ~"@{themeCustomPropertyPrefix}-title-font";
+@titleFontDefault: @fontName;
+
+@subtitleFontIdentifier: ~"@{themeCustomPropertyPrefix}-subtitle-font";
+@subtitleFontDefault: @fontName;
 
 /*-------------------
       Base Sizes
@@ -34,8 +49,6 @@
 @lightPrimaryColor: @lightYellow;
 
 @secondaryColor: @white;
-
-@themeCustomPropertyPrefix: --lodgify-ui;
 
 @themeLinkColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-color";
 @themeLinkColorDefault: @primaryColor;
@@ -120,7 +133,6 @@
 /*-------------------
       Paragraph
 --------------------*/
-
 @paragraphColor: @greySeven;
 @paragraphLineHeight: 26px;
 
@@ -467,6 +479,7 @@
 @searchBarFixedHeight: 85px;
 @searchBarFixedBoxShadow: 0 -(@4px) @9px -(@6px) rgba(0, 0, 0, 0.29);
 @searchBarFixedButtonHeight: 42px;
+@searchBarLocationDropdownMinWidth: 170px;
 
 /*--------------------------
   Property Page Search Bar

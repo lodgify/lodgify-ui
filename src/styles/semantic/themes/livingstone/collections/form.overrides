@@ -10,6 +10,11 @@
 
 .ui.form {
 
+  &,
+  input {
+    font-family: @bodyFont;
+  }
+
   /* Text */
 
   /* Field */
@@ -26,6 +31,17 @@
     .ui.dropdown,
     .dropdown-container {
       max-width: 100%;
+    }
+  }
+
+  .ui.input {
+
+    input[type="checkbox"]:focus {
+
+      & ~ label {
+        font-size: inherit;
+        transform: none;
+      }
     }
   }
 

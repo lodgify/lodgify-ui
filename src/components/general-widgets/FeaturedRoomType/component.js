@@ -6,6 +6,7 @@ import { PER_NIGHT, BEDS, GUESTS } from 'utils/default-strings';
 import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
 import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 import { ResponsiveImage } from 'media/ResponsiveImage';
+import { Heading } from 'typography/Heading';
 
 import { getRoomTypeDescription } from './utils/getRoomTypeDescription';
 
@@ -45,7 +46,9 @@ export const Component = ({
           srcSet={imageSrcSet}
         />
         <Card.Content>
-          <Card.Header>{roomTypeName}</Card.Header>
+          <Card.Header>
+            <Heading>{roomTypeName}</Heading>
+          </Card.Header>
           <Card.Description>{locationName}</Card.Description>
           <Card.Description>
             {getRoomTypeDescription(

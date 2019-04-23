@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
+  ACCEPT_PRIVACY_POLICY,
   CALL_ME_BACK,
   DATE,
   EMAIL,
@@ -20,6 +21,7 @@ import { PhoneInput } from 'inputs/PhoneInput';
 import { SingleDatePicker } from 'inputs/SingleDatePicker';
 import { TextArea } from 'inputs/TextArea';
 import { TextInput } from 'inputs/TextInput';
+import { Checkbox } from 'inputs/Checkbox';
 
 import {
   EMAIL_MAX_CHARACTERS,
@@ -37,10 +39,12 @@ export const Component = ({
   emailInputLabel,
   errorMessage,
   headingText,
+  isPrivacyConsentRequired,
   nameInputLabel,
   notesInputLabel,
   onSubmit,
   phoneInputLabel,
+  privacyConsentLabel,
   propertyInputLabel,
   propertyOptions,
   submitButtonText,
@@ -99,6 +103,9 @@ export const Component = ({
       maxCharacters={NOTES_MAX_CHARACTERS}
       name="notes"
     />
+    {isPrivacyConsentRequired && (
+      <Checkbox label={privacyConsentLabel} name="privacyConsent" />
+    )}
   </Form>
 );
 
@@ -109,6 +116,8 @@ Component.defaultProps = {
   emailInputLabel: EMAIL,
   errorMessage: '',
   headingText: CALL_ME_BACK,
+  isPrivacyConsentRequired: false,
+  privacyConsentLabel: ACCEPT_PRIVACY_POLICY,
   nameInputLabel: NAME,
   notesInputLabel: NOTES,
   onSubmit: Function.prototype,
@@ -130,6 +139,8 @@ Component.propTypes = {
   errorMessage: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** Displays a privacy consent checkbox in the form. */
+  isPrivacyConsentRequired: PropTypes.bool,
   /** The label for the name input. */
   nameInputLabel: PropTypes.string,
   /** The label for the notes input. */
@@ -140,6 +151,8 @@ Component.propTypes = {
   onSubmit: PropTypes.func,
   /** The label for the phone input */
   phoneInputLabel: PropTypes.string,
+  /** The text to display next to the privacy consent checkbox. */
+  privacyConsentLabel: PropTypes.node,
   /** The label for the property input. */
   propertyInputLabel: PropTypes.string,
   /** The options which the user can select for the property field. */
@@ -183,6 +196,7 @@ Component.propTypes = {
     name: PropTypes.object,
     notes: PropTypes.object,
     phone: PropTypes.object,
+    privacyConsent: PropTypes.object,
     property: PropTypes.object,
     time: PropTypes.object,
   }),
