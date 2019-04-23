@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { PER_NIGHT } from 'utils/default-strings';
 import { Button } from 'elements/Button';
 import { ShowOn } from 'layout/ShowOn';
 import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
@@ -104,7 +105,7 @@ Component.defaultProps = {
       {CHECK_OUR_AVAILABILITY}
     </Button>
   ),
-  summaryPeriodText: 'per night',
+  summaryPeriodText: PER_NIGHT,
   summaryPricePerPeriod: undefined,
   summaryRatingNumber: undefined,
 };

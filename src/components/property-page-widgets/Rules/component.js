@@ -9,6 +9,7 @@ import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
+import { CHECK_IN, CHECK_OUT } from 'utils/default-strings';
 
 import { getCheckInAndCheckOutMarkup } from './utils/getCheckInAndCheckOutMarkup';
 
@@ -49,8 +50,8 @@ export const Component = ({
 Component.displayName = 'Rules';
 
 Component.defaultProps = {
-  checkInTimeLabel: 'Check in',
-  checkOutTimeLabel: 'Check out',
+  checkInTimeLabel: CHECK_IN,
+  checkOutTimeLabel: CHECK_OUT,
   headingText: HOUSE_RULES,
 };
 

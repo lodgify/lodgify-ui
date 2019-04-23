@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Segment } from 'semantic-ui-react';
 
+import { PER_NIGHT } from 'utils/default-strings';
 import { Heading } from 'typography/Heading';
 
 import { getPricePerPeriodAndRatingMarkup } from './utils/getPricePerPeriodAndRatingMarkup';
@@ -53,7 +54,7 @@ Component.displayName = 'Summary';
 Component.defaultProps = {
   areOnlyNightPriceAndRatingDisplayed: false,
   isShowingPlaceholder: false,
-  periodText: 'per night',
+  periodText: PER_NIGHT,
   pricePerPeriod: undefined,
   ratingNumber: undefined,
 };
