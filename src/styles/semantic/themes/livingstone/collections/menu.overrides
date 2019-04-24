@@ -391,6 +391,12 @@ footer {
 
   .top-navigation {
     background-color: @footerTopBackground;
+
+    .ui.menu.inverted > .item {
+      @media @mobileScreen {
+        width: auto !important;
+      }
+    }
   }
 
   .bottom-navigation {
@@ -398,6 +404,21 @@ footer {
     &,
     .menu {
       background-color: @greyEight;
+    }
+
+    & > .menu {
+
+      .menu:first-child,
+      .menu:last-child {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+
+    .ui.menu.inverted .menu > .item {
+      @media @mobileScreen {
+        width: auto !important;
+      }
     }
 
     .menu {
@@ -426,6 +447,12 @@ footer {
       .right.menu {
         flex-direction: row;
 
+        @media @mobileScreen {
+          width: 100%;
+          flex-direction: row !important;
+          justify-content: center;
+        }
+
         .item {
           flex: 0;
           padding-right: 0;
@@ -450,6 +477,11 @@ footer {
 
     > .ui.inverted.menu {
       background-color: inherit;
+      flex-wrap: wrap;
+
+      @media @mobileScreen {
+        flex-direction: row;
+      }
     }
 
     /* Menu Item */
