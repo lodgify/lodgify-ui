@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getLocationNameMarkup should render the right structure 1`] = `
+<Segment
+  className="is-location-name"
+  title="Alpha-Centauri"
+>
+  Alpha-Centauri
+  <Icon
+    color="primary"
+    hasBorder={false}
+    isButton={false}
+    isCircular={false}
+    isColorInverted={false}
+    isDisabled={false}
+    isLabelLeft={false}
+    labelText={null}
+    labelWeight={null}
+    name="map pin"
+    path={null}
+    size="small"
+  />
+</Segment>
+`;

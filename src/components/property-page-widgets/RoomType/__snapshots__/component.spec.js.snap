@@ -274,9 +274,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                       size="tiny"
                                       trigger={
                                         <Icon
-                                          color="yellow"
+                                          color="primary"
                                           hasBorder={false}
-                                          isButton={false}
+                                          isButton={true}
                                           isCircular={true}
                                           isColorInverted={true}
                                           isDisabled={false}
@@ -315,9 +315,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                         size="tiny"
                                         trigger={
                                           <Icon
-                                            color="yellow"
+                                            color="primary"
                                             hasBorder={false}
-                                            isButton={false}
+                                            isButton={true}
                                             isCircular={true}
                                             isColorInverted={true}
                                             isDisabled={false}
@@ -344,9 +344,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                           openOnTriggerClick={true}
                                           trigger={
                                             <Icon
-                                              color="yellow"
+                                              color="primary"
                                               hasBorder={false}
-                                              isButton={false}
+                                              isButton={true}
                                               isCircular={true}
                                               isColorInverted={true}
                                               isDisabled={false}
@@ -363,9 +363,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                             innerRef={[Function]}
                                           >
                                             <Icon
-                                              color="yellow"
+                                              color="primary"
                                               hasBorder={false}
-                                              isButton={false}
+                                              isButton={true}
                                               isCircular={true}
                                               isColorInverted={true}
                                               isDisabled={false}
@@ -382,12 +382,14 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                               size="small"
                                             >
                                               <i
-                                                className="icon yellow small circular inverted"
+                                                className="icon primary small circular inverted is-button"
                                                 onBlur={[Function]}
                                                 onClick={[Function]}
                                                 onFocus={[Function]}
                                                 onMouseEnter={[Function]}
                                                 onMouseLeave={[Function]}
+                                                role="button"
+                                                tabIndex={0}
                                               >
                                                 <svg
                                                   viewBox="0 0 24 24"
@@ -1240,9 +1242,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                       size="tiny"
                                       trigger={
                                         <Icon
-                                          color="yellow"
+                                          color="primary"
                                           hasBorder={false}
-                                          isButton={false}
+                                          isButton={true}
                                           isCircular={true}
                                           isColorInverted={true}
                                           isDisabled={false}
@@ -1281,9 +1283,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                         size="tiny"
                                         trigger={
                                           <Icon
-                                            color="yellow"
+                                            color="primary"
                                             hasBorder={false}
-                                            isButton={false}
+                                            isButton={true}
                                             isCircular={true}
                                             isColorInverted={true}
                                             isDisabled={false}
@@ -1310,9 +1312,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                           openOnTriggerClick={true}
                                           trigger={
                                             <Icon
-                                              color="yellow"
+                                              color="primary"
                                               hasBorder={false}
-                                              isButton={false}
+                                              isButton={true}
                                               isCircular={true}
                                               isColorInverted={true}
                                               isDisabled={false}
@@ -1329,9 +1331,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                             innerRef={[Function]}
                                           >
                                             <Icon
-                                              color="yellow"
+                                              color="primary"
                                               hasBorder={false}
-                                              isButton={false}
+                                              isButton={true}
                                               isCircular={true}
                                               isColorInverted={true}
                                               isDisabled={false}
@@ -1348,12 +1350,14 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                               size="small"
                                             >
                                               <i
-                                                className="icon yellow small circular inverted"
+                                                className="icon primary small circular inverted is-button"
                                                 onBlur={[Function]}
                                                 onClick={[Function]}
                                                 onFocus={[Function]}
                                                 onMouseEnter={[Function]}
                                                 onMouseLeave={[Function]}
+                                                role="button"
+                                                tabIndex={0}
                                               >
                                                 <svg
                                                   viewBox="0 0 24 24"

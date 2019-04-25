@@ -52,6 +52,11 @@ i.icon {
     }
   }
 
+  &.is-button {
+    cursor: pointer;
+    outline: none;
+  }
+
   &.has-label {
     height: auto;
     min-height: @height;
@@ -82,6 +87,24 @@ i.icon {
       &.circular {
         background-color: @greyTwo !important;
         color: @white !important;
+      }
+    }
+  }
+
+  /* Primary color */
+  &.primary {
+    color: @primaryColor !important;
+    color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+
+    &.circular {
+      background-color: @primaryColor !important;
+      background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+
+      &.is-button:hover,
+      &.is-button:focus {
+        background-color: @darkPrimaryColor !important;
+        background-color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault) !important;
+        outline: none;
       }
     }
   }

@@ -60,7 +60,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
             >
               Catania
               <Icon
-                color="yellow"
+                color="primary"
                 hasBorder={false}
                 isButton={false}
                 isCircular={false}
@@ -74,7 +74,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                 size="small"
               >
                 <i
-                  className="icon yellow small"
+                  className="icon primary small"
                 >
                   <svg
                     viewBox="0 0 24 24"
