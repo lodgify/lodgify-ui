@@ -65,8 +65,8 @@
 
 /* Focused */
 .ui.button:focus {
-  background-color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
-  color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+  background-color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault) !important;
+  color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
 }
 
 /* Disabled */
