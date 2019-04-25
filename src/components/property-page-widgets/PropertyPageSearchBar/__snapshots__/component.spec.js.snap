@@ -248,7 +248,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                 >
                                                   Location
                                                   <Icon
-                                                    color="yellow"
+                                                    color="primary"
                                                     hasBorder={false}
                                                     isButton={false}
                                                     isCircular={false}
@@ -262,7 +262,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                     size="small"
                                                   >
                                                     <i
-                                                      className="icon yellow small"
+                                                      className="icon primary small"
                                                     >
                                                       <svg
                                                         viewBox="0 0 24 24"
@@ -1498,7 +1498,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                 >
                                                   Location
                                                   <Icon
-                                                    color="yellow"
+                                                    color="primary"
                                                     hasBorder={false}
                                                     isButton={false}
                                                     isCircular={false}
@@ -1512,7 +1512,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     size="small"
                                                   >
                                                     <i
-                                                      className="icon yellow small"
+                                                      className="icon primary small"
                                                     >
                                                       <svg
                                                         viewBox="0 0 24 24"

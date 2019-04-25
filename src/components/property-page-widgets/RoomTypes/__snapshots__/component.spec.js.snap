@@ -1822,9 +1822,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                             size="tiny"
                                             trigger={
                                               <Icon
-                                                color="yellow"
+                                                color="primary"
                                                 hasBorder={false}
-                                                isButton={false}
+                                                isButton={true}
                                                 isCircular={true}
                                                 isColorInverted={true}
                                                 isDisabled={false}
@@ -1863,9 +1863,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                               size="tiny"
                                               trigger={
                                                 <Icon
-                                                  color="yellow"
+                                                  color="primary"
                                                   hasBorder={false}
-                                                  isButton={false}
+                                                  isButton={true}
                                                   isCircular={true}
                                                   isColorInverted={true}
                                                   isDisabled={false}
@@ -1892,9 +1892,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 openOnTriggerClick={true}
                                                 trigger={
                                                   <Icon
-                                                    color="yellow"
+                                                    color="primary"
                                                     hasBorder={false}
-                                                    isButton={false}
+                                                    isButton={true}
                                                     isCircular={true}
                                                     isColorInverted={true}
                                                     isDisabled={false}
@@ -1911,9 +1911,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   innerRef={[Function]}
                                                 >
                                                   <Icon
-                                                    color="yellow"
+                                                    color="primary"
                                                     hasBorder={false}
-                                                    isButton={false}
+                                                    isButton={true}
                                                     isCircular={true}
                                                     isColorInverted={true}
                                                     isDisabled={false}
@@ -1930,12 +1930,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                     size="small"
                                                   >
                                                     <i
-                                                      className="icon yellow small circular inverted"
+                                                      className="icon primary small circular inverted is-button"
                                                       onBlur={[Function]}
                                                       onClick={[Function]}
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      role="button"
+                                                      tabIndex={0}
                                                     >
                                                       <svg
                                                         viewBox="0 0 24 24"
@@ -2724,9 +2726,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                             size="tiny"
                                             trigger={
                                               <Icon
-                                                color="yellow"
+                                                color="primary"
                                                 hasBorder={false}
-                                                isButton={false}
+                                                isButton={true}
                                                 isCircular={true}
                                                 isColorInverted={true}
                                                 isDisabled={false}
@@ -2765,9 +2767,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                               size="tiny"
                                               trigger={
                                                 <Icon
-                                                  color="yellow"
+                                                  color="primary"
                                                   hasBorder={false}
-                                                  isButton={false}
+                                                  isButton={true}
                                                   isCircular={true}
                                                   isColorInverted={true}
                                                   isDisabled={false}
@@ -2794,9 +2796,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 openOnTriggerClick={true}
                                                 trigger={
                                                   <Icon
-                                                    color="yellow"
+                                                    color="primary"
                                                     hasBorder={false}
-                                                    isButton={false}
+                                                    isButton={true}
                                                     isCircular={true}
                                                     isColorInverted={true}
                                                     isDisabled={false}
@@ -2813,9 +2815,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   innerRef={[Function]}
                                                 >
                                                   <Icon
-                                                    color="yellow"
+                                                    color="primary"
                                                     hasBorder={false}
-                                                    isButton={false}
+                                                    isButton={true}
                                                     isCircular={true}
                                                     isColorInverted={true}
                                                     isDisabled={false}
@@ -2832,12 +2834,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                     size="small"
                                                   >
                                                     <i
-                                                      className="icon yellow small circular inverted"
+                                                      className="icon primary small circular inverted is-button"
                                                       onBlur={[Function]}
                                                       onClick={[Function]}
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      role="button"
+                                                      tabIndex={0}
                                                     >
                                                       <svg
                                                         viewBox="0 0 24 24"
