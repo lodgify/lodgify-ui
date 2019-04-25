@@ -213,6 +213,8 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
           ]
         }
         lazyLoad={true}
+        onImageError={[Function]}
+        onImageLoad={[Function]}
         onSlide={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}
@@ -557,6 +559,8 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
           ]
         }
         lazyLoad={true}
+        onImageError={[Function]}
+        onImageLoad={[Function]}
         onSlide={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}
@@ -986,6 +990,8 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
           ]
         }
         lazyLoad={true}
+        onImageError={[Function]}
+        onImageLoad={[Function]}
         onSlide={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}
@@ -1563,6 +1569,8 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
           ]
         }
         lazyLoad={true}
+        onImageError={[Function]}
+        onImageLoad={[Function]}
         onSlide={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}
@@ -2128,6 +2136,8 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
           ]
         }
         lazyLoad={true}
+        onImageError={[Function]}
+        onImageLoad={[Function]}
         onSlide={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}

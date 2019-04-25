@@ -1715,6 +1715,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     ]
                                   }
                                   lazyLoad={true}
+                                  onImageError={[Function]}
+                                  onImageLoad={[Function]}
                                   onSlide={[Function]}
                                   renderLeftNav={[Function]}
                                   renderRightNav={[Function]}
@@ -2619,6 +2621,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     ]
                                   }
                                   lazyLoad={true}
+                                  onImageError={[Function]}
+                                  onImageLoad={[Function]}
                                   onSlide={[Function]}
                                   renderLeftNav={[Function]}
                                   renderRightNav={[Function]}
