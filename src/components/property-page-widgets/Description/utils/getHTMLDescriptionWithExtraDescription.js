@@ -1,21 +1,19 @@
 import React, { Fragment } from 'react';
 
-import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
+import { HTML } from 'general-widgets/HTML';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
+import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { Paragraph } from 'typography/Paragraph';
 
-import { getParagraphWithEllipsis } from './getParagraphWithEllipsis';
 import { getExtraDescriptionModal } from './getExtraDescriptionModal';
 
 /**
- * @param  {string} paragraphText
  * @param  {string} descriptionText
  * @param  {string} extraDescriptionText
  * @param  {string} extraDescriptionButtonText
  * @return {Object}
  */
-export const formatParagraphWithModal = (
-  paragraphText,
+export const getHTMLDescriptionWithExtraDescription = (
   descriptionText,
   extraDescriptionText,
   extraDescriptionButtonText
@@ -31,7 +29,7 @@ export const formatParagraphWithModal = (
 
   return (
     <Fragment>
-      {getParagraphWithEllipsis(paragraphText)}
+      <HTML htmlString={descriptionText} />
       {getExtraDescriptionModal(extraDescription, extraDescriptionButtonText)}
     </Fragment>
   );

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getDescriptionWithExtraDescription should return the right structure 1`] = `
+Array [
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    <React.Fragment>
+      yo...
+      <Modal
+        hasCloseIcon={true}
+        hasPadding={true}
+        hasRoundedCorners={false}
+        header={null}
+        isFullscreen={false}
+        onClose={[Function]}
+        size="tiny"
+        trigger={
+          <Button
+            as="button"
+            basic={true}
+          >
+            go
+          </Button>
+        }
+      >
+        <Paragraph
+          size="medium"
+          weight={null}
+        >
+          yo
+        </Paragraph>
+        <Paragraph
+          size="medium"
+          weight={null}
+        >
+          bro
+        </Paragraph>
+      </Modal>
+    </React.Fragment>
+  </Paragraph>,
+]
+`;
