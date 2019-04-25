@@ -100,6 +100,7 @@
 /* Basic */
 .ui.basic.button {
   padding: @basicVerticalPadding @basicHorizontalPadding @basicVerticalPadding 0;
+  color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
 
   a& {
     text-decoration: underline;
@@ -109,8 +110,14 @@
 }
 
 /* Basic Hover */
+.ui.basic.button:hover {
+  color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault) !important;
+}
 
 /* Basic Focus */
+.ui.basic.button:focus {
+  color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault) !important;
+}
 
 /* Basic Down */
 
