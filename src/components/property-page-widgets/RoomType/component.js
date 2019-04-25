@@ -81,7 +81,8 @@ const Component = ({
                     hasPadding
                     trigger={
                       <Icon
-                        color="yellow"
+                        color="primary"
+                        isButton
                         isCircular
                         isColorInverted
                         name={ICON_NAMES.INFO}

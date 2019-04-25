@@ -468,9 +468,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
 </Header>
 `;
 
-exports[
-  `<Header /> if \`isMenuHidden\` is \`true\` should render the right structure 1`
-] = `
+exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right structure 1`] = `
 <Header
   activeNavigationItemIndex={null}
   dateRangePickerLocaleCode="ko"
@@ -794,9 +792,7 @@ exports[
 </Header>
 `;
 
-exports[
-  `<Header /> if \`props.isBackgroundFilled\` is true should render the right structure 1`
-] = `
+exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the right structure 1`] = `
 <Header
   activeNavigationItemIndex={null}
   dateRangePickerLocaleCode="ko"

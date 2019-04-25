@@ -8,7 +8,7 @@ exports[`getPricePerPeriodAndLocationMarkup if \`isShowingPlaceholder\` === true
   >
     someLocation
     <Icon
-      color="yellow"
+      color="primary"
       hasBorder={false}
       isButton={false}
       isCircular={false}
@@ -45,7 +45,7 @@ exports[`getPricePerPeriodAndLocationMarkup if \`ratingNumber\` is \`0\` should 
   >
     someLocation
     <Icon
-      color="yellow"
+      color="primary"
       hasBorder={false}
       isButton={false}
       isCircular={false}
@@ -82,7 +82,7 @@ exports[`getPricePerPeriodAndLocationMarkup if \`ratingNumber\` is not \`0\` sho
   >
     someLocation
     <Icon
-      color="yellow"
+      color="primary"
       hasBorder={false}
       isButton={false}
       isCircular={false}
