@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getHTMLDescriptionWithHTMLExtraDescription should return the right structure 1`] = `
+<React.Fragment>
+  <HTML
+    htmlString="<h1>html description</h1>"
+  />
+  <Modal
+    hasCloseIcon={true}
+    hasPadding={true}
+    hasRoundedCorners={false}
+    header={null}
+    isFullscreen={false}
+    onClose={[Function]}
+    size="tiny"
+    trigger={
+      <Button
+        as="button"
+        basic={true}
+      >
+        button text
+      </Button>
+    }
+  >
+    <HTML
+      htmlString="<p>extra description</p>"
+    />
+  </Modal>
+</React.Fragment>
+`;

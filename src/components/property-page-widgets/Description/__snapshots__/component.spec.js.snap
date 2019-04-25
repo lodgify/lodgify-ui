@@ -7,6 +7,7 @@ exports[`<Description /> if \`props.extraDescriptionText\` is passed the last \`
 
   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 "
+  extraDescriptionButtonText="View more"
   extraDescriptionText="
   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
@@ -858,6 +859,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
 
   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 "
+  extraDescriptionButtonText="View more"
   extraDescriptionText={null}
   homeHighlights={Array []}
   homeHighlightsHeadingText="Highlights"
@@ -1482,6 +1484,7 @@ exports[`<Description /> should have the correct structure 1`] = `
 
   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 "
+  extraDescriptionButtonText="View more"
   extraDescriptionText={null}
   homeHighlights={
     Array [

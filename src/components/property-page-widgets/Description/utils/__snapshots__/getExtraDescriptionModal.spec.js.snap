@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getExtraDescriptionModal should render the right structure 1`] = `
+<Modal
+  hasCloseIcon={true}
+  hasPadding={true}
+  hasRoundedCorners={false}
+  header={null}
+  isFullscreen={false}
+  onClose={[Function]}
+  size="tiny"
+  trigger={
+    <Button
+      as="button"
+      basic={true}
+    >
+      text
+    </Button>
+  }
+>
+  button
+</Modal>
+`;
