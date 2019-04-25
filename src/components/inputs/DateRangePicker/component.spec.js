@@ -10,16 +10,21 @@ jest.mock('react-dates', () => {
   return { DateRangePicker };
 });
 jest.mock('utils/get-window-height');
+jest.mock('utils/is-blur-event');
 jest.mock('lodash/debounce');
+jest.mock('lodash/uniqueId');
+jest.mock('./utils/getIsFocusControlled');
 
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import moment from 'moment';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
-import { debounce } from 'lodash';
+import { debounce, uniqueId } from 'lodash';
 
 import { getWindowHeight } from 'utils/get-window-height';
+import { isBlurEvent } from 'utils/is-blur-event';
 
+import { getIsFocusControlled } from './utils/getIsFocusControlled';
 import { ComponentWithResponsive as DateRangePicker } from './component';
 
 const STARTING_WINDOW_HEIGHT = 900;
@@ -33,25 +38,13 @@ const getWrappedDateRangePicker = props => {
   return shallow(<Child {...props} />);
 };
 
+uniqueId.mockImplementation(value => value);
+
 describe('<DateRangePicker />', () => {
   beforeEach(() => {
     getWindowHeight.mockReset();
     getWindowHeight.mockReturnValueOnce(STARTING_WINDOW_HEIGHT);
     getWindowHeight.mockReturnValueOnce(NEXT_WINDOW_HEIGHT);
-  });
-
-  it('should render the right structure', () => {
-    const wrapper = getDateRangePicker();
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  describe('if `props.focusedInput` is passed', () => {
-    it('should render the right structure', () => {
-      const wrapper = getDateRangePicker({ focusedInput: 'startDate' });
-
-      expect(wrapper).toMatchSnapshot();
-    });
   });
 
   describe('`componentDidMount`', () => {
@@ -96,19 +89,165 @@ describe('<DateRangePicker />', () => {
     });
   });
 
-  describe('Interaction: onFocusChange', () => {
-    it('should persist the value in component state', () => {
-      const value = 'startDate';
-      const dateRangePicker = getWrappedDateRangePicker();
+  describe('`componentDidUpdate`', () => {
+    it('should call `getIsFocusControlled` with the right arguments', () => {
+      const focusedInput = 'endDate';
+      const wrapper = getWrappedDateRangePicker({ focusedInput });
 
-      dateRangePicker.instance().handleFocusChange(value);
-      const actual = dateRangePicker.state();
+      getIsFocusControlled.mockClear();
+      wrapper.instance().componentDidUpdate({}, {});
 
-      expect(actual).toEqual(
-        expect.objectContaining({
-          focusedInput: value,
-        })
-      );
+      expect(getIsFocusControlled).toHaveBeenCalledWith(focusedInput);
+    });
+
+    describe('if `getIsFocusControlled` returns `true`', () => {
+      it('should call `isBlurEvent` with the right arguments', () => {
+        const previousFocusedInput = 'startDate';
+        const focusedInput = 'endDate';
+        const wrapper = getWrappedDateRangePicker({ focusedInput });
+
+        getIsFocusControlled.mockReturnValueOnce(true);
+        wrapper
+          .instance()
+          .componentDidUpdate({ focusedInput: previousFocusedInput }, {});
+
+        expect(isBlurEvent).toHaveBeenCalledWith(
+          previousFocusedInput,
+          focusedInput
+        );
+      });
+
+      describe('if `isBlurEvent` returns `true`', () => {
+        it('should call `props.onBlur`', () => {
+          const onBlur = jest.fn();
+          const wrapper = getWrappedDateRangePicker({ onBlur });
+
+          isBlurEvent.mockClear();
+          isBlurEvent.mockReturnValueOnce(true);
+          getIsFocusControlled.mockReturnValueOnce(true);
+          wrapper.instance().componentDidUpdate({}, {});
+
+          expect(isBlurEvent).toHaveBeenCalled();
+        });
+      });
+
+      it('should not call `props.onFocusChange`', () => {
+        const onFocusChange = jest.fn();
+        const previousFocusedInput = 'startDate';
+        const focusedInput = 'endDate';
+        const wrapper = getWrappedDateRangePicker({
+          focusedInput,
+          onFocusChange,
+        });
+
+        getIsFocusControlled.mockReturnValueOnce(true);
+        wrapper
+          .instance()
+          .componentDidUpdate({ focusedInput: previousFocusedInput }, {});
+
+        expect(onFocusChange).not.toHaveBeenCalled();
+      });
+    });
+
+    describe('if `getIsFocusControlled` returns `false`', () => {
+      it('should call `isBlurEvent` with the right arguments', () => {
+        const previousFocusedInput = 'startDate';
+        const focusedInput = 'endDate';
+        const wrapper = getWrappedDateRangePicker({ focusedInput });
+
+        wrapper.setState({ focusedInput });
+        isBlurEvent.mockClear();
+        getIsFocusControlled.mockReturnValueOnce(false);
+        wrapper
+          .instance()
+          .componentDidUpdate({}, { focusedInput: previousFocusedInput });
+
+        expect(isBlurEvent).toHaveBeenCalledWith(
+          previousFocusedInput,
+          focusedInput
+        );
+      });
+
+      describe('if the focused input has not changed', () => {
+        it('should not call `props.onFocusChange`', () => {
+          const onFocusChange = jest.fn();
+          const previousFocusedInput = 'startDate';
+          const focusedInput = 'startDate';
+          const wrapper = getWrappedDateRangePicker({
+            onFocusChange,
+          });
+
+          wrapper.setState({ focusedInput });
+          onFocusChange.mockClear();
+          getIsFocusControlled.mockReturnValueOnce(false);
+          wrapper
+            .instance()
+            .componentDidUpdate({}, { focusedInput: previousFocusedInput });
+
+          expect(onFocusChange).not.toHaveBeenCalled();
+        });
+      });
+
+      describe('if the focused input has changed', () => {
+        it('should call `props.onFocusChange` with the right arguments', () => {
+          const onFocusChange = jest.fn();
+          const previousFocusedInput = 'startDate';
+          const focusedInput = 'endDate';
+          const wrapper = getWrappedDateRangePicker({
+            onFocusChange,
+          });
+
+          wrapper.setState({ focusedInput });
+          onFocusChange.mockClear();
+          getIsFocusControlled.mockReturnValueOnce(false);
+          wrapper
+            .instance()
+            .componentDidUpdate({}, { focusedInput: previousFocusedInput });
+
+          expect(onFocusChange).toHaveBeenCalledWith(focusedInput);
+        });
+      });
+    });
+  });
+
+  describe('`handleFocusChange`', () => {
+    it('should call `getIsFocusControlled` with the right arguments', () => {
+      const focusedInput = 'endDate';
+      const wrapper = getWrappedDateRangePicker({ focusedInput });
+
+      getIsFocusControlled.mockClear();
+      wrapper.instance().handleFocusChange();
+
+      expect(getIsFocusControlled).toHaveBeenCalledWith(focusedInput);
+    });
+
+    describe('if `getIsFocusControlled` returns `true`', () => {
+      it('should call `props.onFocusChange` with the right arguments', () => {
+        const onFocusChange = jest.fn();
+        const focusedInput = 'startDate';
+        const wrapper = getWrappedDateRangePicker({ onFocusChange });
+
+        getIsFocusControlled.mockReturnValueOnce(true);
+        wrapper.instance().handleFocusChange(focusedInput);
+
+        expect(onFocusChange).toHaveBeenCalledWith(focusedInput);
+      });
+    });
+
+    describe('if `getIsFocusControlled` returns `false`', () => {
+      it('should call `setState` with the right arguments', () => {
+        const wrapper = getWrappedDateRangePicker();
+        const focusedInput = 'startDate';
+
+        getIsFocusControlled.mockReturnValueOnce(false);
+        wrapper.instance().setState = jest.fn();
+        wrapper.update();
+        wrapper.instance().handleFocusChange(focusedInput);
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          focusedInput,
+        });
+      });
     });
   });
 
@@ -147,85 +286,32 @@ describe('<DateRangePicker />', () => {
     });
   });
 
-  describe('State change: focusedInput', () => {
-    describe('if there is a blur event', () => {
-      it('should call `props.onBlur`', () => {
-        const onBlur = jest.fn();
-        const dateRangePicker = getWrappedDateRangePicker({ onBlur });
+  describe('`render`', () => {
+    it('should call `getIsFocusControlled` with the right arguments', () => {
+      const focusedInput = 'endDate';
+      const wrapper = getWrappedDateRangePicker({ focusedInput });
 
-        const prevState = { focusedInput: 'startDate' };
-        const state = { focusedInput: null };
+      getIsFocusControlled.mockClear();
+      wrapper.instance().render();
 
-        dateRangePicker.setState(prevState);
-        dateRangePicker.setState(state);
+      expect(getIsFocusControlled).toHaveBeenCalledWith(focusedInput);
+    });
 
-        expect(onBlur).toHaveBeenCalled();
+    describe('if `getIsFocusControlled` returns `true`', () => {
+      it('should render the right structure', () => {
+        getIsFocusControlled.mockReturnValueOnce(true);
+        const wrapper = getDateRangePicker();
+
+        expect(wrapper).toMatchSnapshot();
       });
     });
 
-    describe('if there is no blur event', () => {
-      it('should not call `props.onBlur`', () => {
-        const onBlur = jest.fn();
-        const dateRangePicker = getWrappedDateRangePicker({ onBlur });
+    describe('if `getIsFocusControlled` returns `false`', () => {
+      it('should render the right structure', () => {
+        getIsFocusControlled.mockReturnValueOnce(false);
+        const wrapper = getDateRangePicker();
 
-        const prevState = { focusedInput: null };
-        const state = { focusedInput: null };
-
-        dateRangePicker.setState(prevState);
-        dateRangePicker.setState(state);
-
-        expect(onBlur).not.toHaveBeenCalled();
-      });
-    });
-
-    describe('if the focused input has changed', () => {
-      it('should call `props.onFocusChange` with the right arguments', () => {
-        const onFocusChange = jest.fn();
-        const dateRangePicker = getWrappedDateRangePicker({ onFocusChange });
-
-        const testCases = [
-          { previousFocusedInput: null, focusedInput: 'startDate' },
-          { previousFocusedInput: null, focusedInput: 'endDate' },
-          { previousFocusedInput: 'startDate', focusedInput: null },
-          { previousFocusedInput: 'startDate', focusedInput: 'endDate' },
-          { previousFocusedInput: 'endDate', focusedInput: null },
-          { previousFocusedInput: 'endDate', focusedInput: 'startDate' },
-        ];
-
-        testCases.forEach(({ previousFocusedInput, focusedInput }) => {
-          const prevState = { focusedInput: previousFocusedInput };
-          const state = { focusedInput };
-
-          dateRangePicker.setState(prevState);
-          onFocusChange.mockClear();
-          dateRangePicker.setState(state);
-
-          expect(onFocusChange).toHaveBeenCalledWith(focusedInput);
-        });
-      });
-    });
-
-    describe('if the focused input has not changed', () => {
-      it('should not call `props.onFocusChange`', () => {
-        const onFocusChange = jest.fn();
-        const dateRangePicker = getWrappedDateRangePicker({ onFocusChange });
-
-        const testCases = [
-          { previousFocusedInput: null, focusedInput: null },
-          { previousFocusedInput: 'startDate', focusedInput: 'startDate' },
-          { previousFocusedInput: 'endDate', focusedInput: 'endDate' },
-        ];
-
-        testCases.forEach(({ previousFocusedInput, focusedInput }) => {
-          const prevState = { focusedInput: previousFocusedInput };
-          const state = { focusedInput };
-
-          dateRangePicker.setState(prevState);
-          onFocusChange.mockClear();
-          dateRangePicker.setState(state);
-
-          expect(onFocusChange).not.toHaveBeenCalled();
-        });
+        expect(wrapper).toMatchSnapshot();
       });
     });
   });
