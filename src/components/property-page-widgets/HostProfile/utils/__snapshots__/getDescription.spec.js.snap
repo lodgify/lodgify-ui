@@ -1,5 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`\`getDescription\` if \`description\` is valid html should render the right structure 1`] = `
+<GridColumn
+  computer={7}
+  mobile={12}
+  tablet={12}
+  verticalAlignContent="top"
+  width={null}
+>
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    <HTML
+      htmlString="<strong>bc</strong>"
+    />
+  </Paragraph>
+</GridColumn>
+`;
+
 exports[`\`getDescription\` should have the right structure 1`] = `
 <GridColumn
   computer={7}
