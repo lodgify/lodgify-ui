@@ -1,6 +1,8 @@
 import React from 'react';
 import { size } from 'lodash';
+import isValidHTML from 'is-html';
 
+import { HTML } from 'general-widgets/HTML';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';
 
@@ -12,6 +14,12 @@ import { Paragraph } from 'typography/Paragraph';
 export const getDescription = description =>
   size(description) > 0 ? (
     <GridColumn computer={7} mobile={12} tablet={12}>
-      <Paragraph size="medium">{description}</Paragraph>
+      <Paragraph size="medium">
+        {isValidHTML(description) ? (
+          <HTML htmlString={description} />
+        ) : (
+          description
+        )}
+      </Paragraph>
     </GridColumn>
   ) : null;
