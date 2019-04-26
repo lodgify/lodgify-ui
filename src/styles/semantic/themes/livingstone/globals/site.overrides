@@ -667,7 +667,6 @@ blockquote.ui.quote .row {
 -----------------------*/
 
 .html-container {
-  overflow: auto;
 
   > img {
     max-width: @htmlContainerImmediateImageChildMaxWidth;
