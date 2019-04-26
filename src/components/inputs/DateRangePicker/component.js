@@ -15,8 +15,8 @@ import { returnFirstArgument } from 'utils/return-first-argument';
 import { getWindowHeight } from 'utils/get-window-height';
 import { isDisplayedAsModal } from 'utils/is-displayed-as-modal';
 
+import { getIsFocusControlled } from './utils/getIsFocusControlled';
 import { mapValueToProps } from './utils/mapValueToProps';
-import { getFocusedInput } from './utils/getFocusedInput';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
 import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 
@@ -36,17 +36,25 @@ class Component extends PureComponent {
     global.addEventListener('resize', debounce(this.handleHeightChange, 150));
   };
 
-  componentDidUpdate = (prevProps, prevState) => {
-    const { focusedInput: prevFocusedInput } = prevState;
-    const { focusedInput } = this.state;
+  componentDidUpdate = (previousProps, previousState) => {
+    const isFocusControlled = getIsFocusControlled(this.props.focusedInput);
+    const { focusedInput: previousFocusedInput } = isFocusControlled
+      ? previousProps
+      : previousState;
+    const { focusedInput } = isFocusControlled ? this.props : this.state;
     const { onBlur, onFocusChange } = this.props;
 
-    isBlurEvent(prevFocusedInput, focusedInput) && onBlur();
-    prevFocusedInput !== focusedInput && onFocusChange(focusedInput);
+    isBlurEvent(previousFocusedInput, focusedInput) && onBlur();
+
+    if (isFocusControlled) return;
+
+    previousFocusedInput !== focusedInput && onFocusChange(focusedInput);
   };
 
   handleFocusChange = focusedInput => {
-    this.setState({ focusedInput });
+    getIsFocusControlled(this.props.focusedInput)
+      ? this.props.onFocusChange(focusedInput)
+      : this.setState({ focusedInput });
   };
 
   handleHeightChange = () => {
@@ -64,7 +72,6 @@ class Component extends PureComponent {
       displayFormat,
       endDatePlaceholderText,
       error,
-      focusedInput: controlledFocusedInput,
       getIsDayBlocked,
       initialValue,
       isValid,
@@ -75,11 +82,9 @@ class Component extends PureComponent {
       willOpenAbove,
       windowInnerWidth,
     } = this.props;
-    const { focusedInput: uncontrolledFocusedInput } = this.state;
-    const focusedInput = getFocusedInput(
-      controlledFocusedInput,
-      uncontrolledFocusedInput
-    );
+    const { focusedInput } = getIsFocusControlled(this.props.focusedInput)
+      ? this.props
+      : this.state;
 
     return (
       <InputController
