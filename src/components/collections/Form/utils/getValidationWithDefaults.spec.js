@@ -15,7 +15,7 @@ describe('getValidationWithDefaults', () => {
     expect(actual).toEqual(
       expect.objectContaining({
         getIsEmpty: expect.any(Function),
-        getIsValid: Function.prototype,
+        getIsValid: expect.any(Function),
         isRequiredMessage: DEFAULT_IS_REQUIRED_MESSAGE,
       })
     );
@@ -45,7 +45,7 @@ describe('getValidationWithDefaults', () => {
 
     expect(actual).toEqual({
       getIsEmpty,
-      getIsValid: Function.prototype,
+      getIsValid: expect.any(Function),
       isRequiredMessage,
       another,
     });
@@ -70,6 +70,16 @@ describe('getValidationWithDefaults', () => {
       const actual = validationDefaults.getIsEmpty('0');
 
       expect(actual).toBe(false);
+    });
+  });
+
+  describe('getIsValid', () => {
+    const validationDefaults = getValidationWithDefaults();
+
+    it('should return true', () => {
+      const actual = validationDefaults.getIsValid('');
+
+      expect(actual).toBe(true);
     });
   });
 });

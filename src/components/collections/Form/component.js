@@ -1,7 +1,7 @@
 import React, { PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Form, Message } from 'semantic-ui-react';
-import { isEqual, size, forEach } from 'lodash';
+import { size, forEach } from 'lodash';
 
 import { Button } from 'elements/Button';
 import { Heading } from 'typography/Heading';
@@ -9,12 +9,11 @@ import { Link } from 'elements/Link';
 import { SEND } from 'utils/default-strings';
 
 import { getEmptyState } from './utils/getEmptyState';
-import { getValidationState } from './utils/getValidationState';
 import { setInputState } from './utils/setInputState';
-import { getIsRequiredState } from './utils/getIsRequiredState';
 import { getValidationWithDefaults } from './utils/getValidationWithDefaults';
 import { getEmptyRequiredInputs } from './utils/getEmptyRequiredInputs';
 import { getFormChild } from './utils/getFormChild';
+import { getFormInputsState } from './utils/getFormInputsState';
 import { getIsSubmitButtonDisabled } from './utils/getIsSubmitButtonDisabled';
 
 /**
@@ -32,28 +31,9 @@ export class Component extends PureComponent {
     }
 
     Object.entries(this.state).forEach(([inputName, inputState]) => {
-      const previousInputState = previousState[inputName] || {};
+      const previousInputState = previousState[inputName];
 
-      if (isEqual(previousInputState, inputState)) return;
-
-      if (previousInputState.value !== inputState.value) {
-        const validationState = getValidationState(
-          this.props.validation[inputName],
-          inputState.value
-        );
-
-        setInputState(this, inputName, validationState);
-        return;
-      }
-
-      if (!previousInputState.isBlurred && inputState.isBlurred) {
-        const isRequiredState = getIsRequiredState(
-          this.props.validation[inputName],
-          inputState
-        );
-
-        setInputState(this, inputName, isRequiredState);
-      }
+      getFormInputsState(this, inputName, inputState, previousInputState);
     });
   };
 

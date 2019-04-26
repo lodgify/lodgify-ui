@@ -32,10 +32,13 @@ export class Component extends PureComponent {
       return;
     }
 
-    const { value } = this.state;
-    const { name, onChange } = this.props;
+    const { value, isBlurred } = this.state;
+    const { name, onChange, onBlur } = this.props;
 
-    previousState.value !== value && onChange(name, value);
+    if (previousState.value !== value && !isBlurred) {
+      onChange(name, value);
+      onBlur(name);
+    }
   }
 
   handleChange = ({ key }, { value }) => {
@@ -45,12 +48,9 @@ export class Component extends PureComponent {
     });
   };
 
-  handleOpen = isOpen => this.setState({ isOpen });
+  handleOpen = isOpen => this.setState({ isOpen, isBlurred: false });
 
-  handleBlur = (event, data) => {
-    this.props.onBlur(event, data);
-    this.handleOpen(false);
-  };
+  handleBlur = isBlurred => this.setState({ isBlurred, isOpen: false });
 
   render() {
     const { isOpen } = this.state;
@@ -91,7 +91,7 @@ export class Component extends PureComponent {
           disabled={isDisabled || !adaptedOptions.length}
           icon={<Icon name={ICON_NAMES.CARET_DOWN} />}
           noResultsMessage={noResultsText}
-          onBlur={this.handleBlur}
+          onBlur={() => this.handleBlur(true)}
           onChange={this.handleChange}
           onClick={() => this.handleOpen(!isOpen)}
           open={isOpen}
