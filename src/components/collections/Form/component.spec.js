@@ -1,23 +1,20 @@
-jest.mock('lodash/isEqual');
 jest.mock('./utils/getEmptyState');
 jest.mock('./utils/setInputState');
-jest.mock('./utils/getValidationState');
-jest.mock('./utils/getIsRequiredState');
+jest.mock('./utils/getFormInputsState');
 
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
-import { isEqual } from 'lodash';
 
 import { getEmptyState } from './utils/getEmptyState';
 import { setInputState } from './utils/setInputState';
-import { getValidationState } from './utils/getValidationState';
-import { getIsRequiredState } from './utils/getIsRequiredState';
+import { getFormInputsState } from './utils/getFormInputsState';
 import { Component as Form } from './component';
 import { DEFAULT_IS_REQUIRED_MESSAGE } from './constants';
 
 const stringChild = '🚸';
 const headingText = '👥';
+const successMessage = 'some message';
 
 const getShallowForm = (children = '', props) =>
   shallow(<Form {...props}>{children}</Form>);
@@ -120,7 +117,6 @@ describe('<Form />', () => {
     describe('if a fresh `props.successMessage` has not been passed', () => {
       it('should call `Object.entries` with the right arguments', () => {
         Object.entries = jest.fn(Object.entries);
-        const successMessage = 'some message';
         const wrapper = getShallowForm(stringChild, {
           successMessage,
         });
@@ -130,132 +126,17 @@ describe('<Form />', () => {
         expect(Object.entries).toHaveBeenCalledWith(wrapper.state());
       });
 
-      it('should call `isEqual` with the `previousInputState` and `inputState` for each input', () => {
-        const wrapper = getShallowForm(stringChild);
-        const previousState = {
-          inputOne: {},
-          inputTwo: {},
+      describe('`Object.entries.forEach` should call `getFormInputsState` the right number of times', () => {
+        const wrapper = getShallowForm(stringChild, {
+          successMessage,
+        });
+
+        wrapper.instance().state = {
+          yo: {},
+          bro: {},
         };
-        const state = {
-          inputOne: {},
-          inputTwo: {},
-        };
-
-        wrapper.setState(state);
-        wrapper.instance().componentDidUpdate({}, previousState);
-
-        expect(isEqual).toHaveBeenCalledWith(
-          previousState.inputOne,
-          state.inputOne
-        );
-        expect(isEqual).toHaveBeenCalledWith(
-          previousState.inputTwo,
-          state.inputTwo
-        );
-      });
-    });
-
-    describe('if `isEqual` returns `true`', () => {
-      it('should not call `getValidationState`', () => {
-        const wrapper = getShallowForm(stringChild, {});
-        const previousState = {
-          someName: {
-            value: 1,
-          },
-        };
-
-        isEqual.mockReturnValueOnce(true);
-        wrapper.instance().componentDidUpdate({}, previousState);
-
-        expect(getValidationState).not.toHaveBeenCalled();
-      });
-    });
-
-    describe('if the input value has changed', () => {
-      const inputName = 'some name';
-      const previousState = {
-        [inputName]: {
-          value: 1,
-        },
-      };
-      const state = {
-        [inputName]: {
-          value: 2,
-        },
-      };
-
-      it('should call `getValidationState` with the right arguments', () => {
-        const validation = { [inputName]: {} };
-        const wrapper = getShallowForm(stringChild, { validation });
-
-        wrapper.setState(state);
-        wrapper.instance().componentDidUpdate({}, previousState);
-
-        expect(getValidationState).toHaveBeenCalledWith(
-          validation[inputName],
-          state[inputName].value
-        );
-      });
-
-      it('should call `setInputState` with the right arguments', () => {
-        const validationState = 'some state';
-        const wrapper = getShallowForm(stringChild, {});
-        const instance = wrapper.instance();
-
-        getValidationState.mockReturnValue(validationState);
-
-        wrapper.setState(state);
-        instance.componentDidUpdate({}, previousState);
-
-        expect(setInputState).toHaveBeenCalledWith(
-          instance,
-          inputName,
-          validationState
-        );
-      });
-    });
-
-    describe('if the input has been blurred', () => {
-      const inputName = 'some name';
-      const previousState = {
-        [inputName]: {
-          isBlurred: false,
-        },
-      };
-      const state = {
-        [inputName]: {
-          isBlurred: true,
-        },
-      };
-
-      it('should call `getIsRequiredState` with the right arguments', () => {
-        const validation = { [inputName]: {} };
-        const wrapper = getShallowForm(stringChild, { validation });
-
-        wrapper.setState(state);
-        wrapper.instance().componentDidUpdate({}, previousState);
-
-        expect(getIsRequiredState).toHaveBeenCalledWith(
-          validation[inputName],
-          state[inputName]
-        );
-      });
-
-      it('should call `setInputState` with the right arguments', () => {
-        const isRequiredState = 'some state';
-        const wrapper = getShallowForm(stringChild, { validation: {} });
-        const instance = wrapper.instance();
-
-        getIsRequiredState.mockReturnValue(isRequiredState);
-
-        wrapper.setState(state);
-        instance.componentDidUpdate({}, previousState);
-
-        expect(setInputState).toHaveBeenCalledWith(
-          instance,
-          inputName,
-          isRequiredState
-        );
+        wrapper.instance().componentDidUpdate({}, {});
+        expect(getFormInputsState).toHaveBeenCalledTimes(2);
       });
     });
   });
@@ -294,17 +175,16 @@ describe('<Form />', () => {
 
   describe('`handleSubmit`', () => {
     describe('if any input is required and is empty', () => {
-      it('should set the error to component state', () => {
+      it('should call `this.setState` with the correct arguments', () => {
         const name = '🐸';
         const wrapper = getShallowForm(<input />, {
           validation: { [name]: { isRequired: true } },
         });
 
+        wrapper.instance().setState = jest.fn();
         wrapper.instance().handleSubmit();
 
-        const actual = wrapper.state();
-
-        expect(actual).toEqual({
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
           [name]: { error: DEFAULT_IS_REQUIRED_MESSAGE },
         });
       });

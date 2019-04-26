@@ -1,3 +1,22 @@
+# [1.179.0](https://github.com/lodgify/lodgify-ui/compare/v1.178.0...v1.179.0) (2019-04-26)
+
+
+### Features
+
+* **Dropdown:** control onBlur in componentDidUpdate ([59883c5](https://github.com/lodgify/lodgify-ui/commit/59883c5))
+* **Form:** add default validation ([4e0e6b2](https://github.com/lodgify/lodgify-ui/commit/4e0e6b2))
+* **Form:** control inputs on onBlur ([48fc8dc](https://github.com/lodgify/lodgify-ui/commit/48fc8dc))
+
+# [1.178.0](https://github.com/lodgify/lodgify-ui/compare/v1.177.0...v1.178.0) (2019-04-25)
+
+
+### Features
+
+* **Button:** background color is theme color on focus ([69746f4](https://github.com/lodgify/lodgify-ui/commit/69746f4))
+* **Icon:** accepts primary colour ([29ab1de](https://github.com/lodgify/lodgify-ui/commit/29ab1de))
+* **Links:** inherit theme primary color ([fa003ba](https://github.com/lodgify/lodgify-ui/commit/fa003ba))
+* **property-page-widgets:** consume primary color prop ([e82280e](https://github.com/lodgify/lodgify-ui/commit/e82280e))
+
 # [1.177.0](https://github.com/lodgify/lodgify-ui/compare/v1.176.0...v1.177.0) (2019-04-23)
 
 

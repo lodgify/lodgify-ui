@@ -314,6 +314,7 @@ describe('<Dropdown />', () => {
       const actual = wrapper.state();
 
       expect(actual).toEqual({
+        isBlurred: true,
         isOpen: false,
         value: null,
       });
@@ -366,6 +367,7 @@ describe('<Dropdown />', () => {
 
       expect(actual).toEqual({
         isOpen: true,
+        isBlurred: false,
         value: null,
       });
     });
@@ -381,6 +383,7 @@ describe('<Dropdown />', () => {
 
       expect(actual).toEqual({
         isOpen: true,
+        isBlurred: false,
         value: null,
       });
     });
