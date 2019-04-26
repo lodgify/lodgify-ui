@@ -1,3 +1,10 @@
+## [1.179.1](https://github.com/lodgify/lodgify-ui/compare/v1.179.0...v1.179.1) (2019-04-26)
+
+
+### Bug Fixes
+
+* **DateRangePicker:** control focusedInput directly ([5430969](https://github.com/lodgify/lodgify-ui/commit/5430969))
+
 # [1.179.0](https://github.com/lodgify/lodgify-ui/compare/v1.178.0...v1.179.0) (2019-04-26)
 
 
