@@ -4,7 +4,6 @@ import { getReactGoogleMapsRequiredProps } from './getReactGoogleMapsRequiredPro
 
 const usedProps = {
   apiKey: '🔑',
-  containerElement: 'someElement',
   height: '📏',
 };
 
@@ -26,7 +25,7 @@ describe('getReactGoogleMapsRequiredProps', () => {
           usedProps.apiKey
         }&v=3.exp&libraries=geometry,drawing,places`,
         loadingElement: <div style={{ height: usedProps.height }} />,
-        containerElement: usedProps.containerElement,
+        containerElement: <div />,
         mapElement: <div style={{ height: usedProps.height }} />,
         ...otherProps,
       })

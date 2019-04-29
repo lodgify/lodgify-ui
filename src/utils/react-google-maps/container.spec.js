@@ -25,7 +25,7 @@ describe('<ReactGoogleMaps />', () => {
       expect.objectContaining({
         googleMapURL: expect.any(String),
         loadingElement: expect.any(Object),
-        containerElement: undefined,
+        containerElement: expect.any(Object),
         mapElement: expect.any(Object),
         ...props,
       })
