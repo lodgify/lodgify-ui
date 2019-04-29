@@ -41,8 +41,6 @@ class Component extends PureComponent {
     startDate: moment(),
   };
 
-  componentDidMount = () => moment.locale(this.props.localeCode);
-
   handleClickNextMonth = () =>
     this.setState({
       startDate: getNextStartDate(
@@ -89,6 +87,8 @@ class Component extends PureComponent {
       roomOptionsValue,
       roomOptionsWithImages,
     } = this.props;
+
+    moment.locale(this.props.localeCode);
 
     return (
       <div>
@@ -157,7 +157,9 @@ class Component extends PureComponent {
                       isVisible
                       month={month}
                       renderCalendarDay={this.renderCalendarDay}
-                      renderMonthElement={renderMonthHeader}
+                      renderMonthElement={renderMonthHeader(
+                        this.props.localeCode
+                      )}
                     />
                   </GridColumn>
                 )

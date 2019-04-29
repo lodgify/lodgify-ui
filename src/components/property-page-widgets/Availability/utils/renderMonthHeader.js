@@ -1,6 +1,5 @@
 import React from 'react';
 import moment from 'moment';
-import momentPropTypes from 'react-moment-proptypes';
 
 import { WEEKDAY_LENGTH } from '../constants';
 
@@ -21,20 +20,21 @@ const buildWeekDayMappingMarkup = () => (
 );
 
 /**
- * @typedef {Object} Moment
- * @param   {Object} header
- * @param   {Moment} header.month
- * @return  {Object}
+ * @param   {string} localeCode
+ * @return  {Function}
  */
-export const renderMonthHeader = ({ month }) => (
-  <div className="CalendarMonth_caption">
-    <strong>{month.format('MMMM YYYY')}</strong>
-    <div className="DayPicker_weekHeaders">
-      <div className="DayPicker_weekHeader">{buildWeekDayMappingMarkup()}</div>
-    </div>
-  </div>
-);
+// eslint-disable-next-line react/prop-types
+export const renderMonthHeader = localeCode => ({ month }) => {
+  month.locale(localeCode);
 
-renderMonthHeader.propTypes = {
-  month: momentPropTypes.momentObj.isRequired,
+  return (
+    <div className="CalendarMonth_caption">
+      <strong>{month.format('MMMM YYYY')}</strong>
+      <div className="DayPicker_weekHeaders">
+        <div className="DayPicker_weekHeader">
+          {buildWeekDayMappingMarkup()}
+        </div>
+      </div>
+    </div>
+  );
 };
