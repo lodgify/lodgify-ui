@@ -102,7 +102,7 @@ Component.propTypes = {
   avatarUrl: PropTypes.string,
   /** The text for the contact information heading. */
   contactInformationHeadingText: PropTypes.string,
-  /** The description of the property host. */
+  /** The description of the property host. Respects HTML markup. */
   description: PropTypes.string,
   /** The email of the property host. */
   email: PropTypes.string,

@@ -3,20 +3,17 @@ import PropTypes from 'prop-types';
 import { List } from 'semantic-ui-react';
 import { size } from 'lodash';
 
-import { HOME_HIGHLIGHTS } from 'utils/default-strings';
+import { HOME_HIGHLIGHTS, VIEW_MORE } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { getFirstFourItems } from 'utils/get-first-four-items';
-import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
-import { Paragraph } from 'typography/Paragraph';
 import { Subheading } from 'typography/Subheading';
 import { ShowOn } from 'layout/ShowOn';
 
-import { formatParagraphWithModal } from './utils/formatParagraphWithModal';
-import { isDescriptionDisplayingWithEllipsis } from './utils/isDescriptionDisplayingWithEllipsis';
+import { getDescriptions } from './utils/getDescriptions';
 
 /**
  * The standard widget for displaying the description of a property.
@@ -24,6 +21,7 @@ import { isDescriptionDisplayingWithEllipsis } from './utils/isDescriptionDispla
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   descriptionText,
+  extraDescriptionButtonText,
   extraDescriptionText,
   homeHighlights,
   homeHighlightsHeadingText,
@@ -67,22 +65,10 @@ export const Component = ({
       </ShowOn>
     </GridColumn>
     <GridColumn width={12}>
-      {getParagraphsFromStrings(descriptionText).map(
-        (paragraphText, index, descriptionTextArray) => (
-          <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-            {isDescriptionDisplayingWithEllipsis(
-              index,
-              descriptionTextArray,
-              extraDescriptionText
-            )
-              ? formatParagraphWithModal(
-                  paragraphText,
-                  descriptionText,
-                  extraDescriptionText
-                )
-              : paragraphText}
-          </Paragraph>
-        )
+      {getDescriptions(
+        descriptionText,
+        extraDescriptionText,
+        extraDescriptionButtonText
       )}
     </GridColumn>
     {size(homeHighlights) > 0 && (
@@ -110,12 +96,15 @@ Component.displayName = 'Description';
 Component.defaultProps = {
   extraDescriptionText: null,
   homeHighlightsHeadingText: HOME_HIGHLIGHTS,
+  extraDescriptionButtonText: VIEW_MORE,
 };
 
 Component.propTypes = {
-  /** The description text to display. */
+  /** The description text to display. Respects HTML markup. */
   descriptionText: PropTypes.string.isRequired,
-  /** Extra text to display in a modal. */
+  /** The text for the button that opens the extra description modal. */
+  extraDescriptionButtonText: PropTypes.string,
+  /** Extra text to display in a modal. The description can be rendered as HTML strings. */
   extraDescriptionText: PropTypes.string,
   /** The home highlights to display. */
   homeHighlights: PropTypes.arrayOf(

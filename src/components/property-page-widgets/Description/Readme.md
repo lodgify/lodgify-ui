@@ -49,6 +49,7 @@ const {
 
 <Description
   descriptionText={descriptionText}
+  extraDescriptionButtonText="See more words"
   extraDescriptionText={extraDescriptionText}
   homeHighlights={homeHighlights}
   homeHighlightsHeadingText="Highlights"

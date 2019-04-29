@@ -18,14 +18,15 @@ import { formatParagraphWithModal } from './formatParagraphWithModal';
 
 const paragraphText =
   'Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.';
-
+const extraDescriptionButtonText = 'view more text';
 const getMarkupAsRenderedComponent = () =>
   shallow(
     <div>
       {formatParagraphWithModal(
         paragraphText,
         descriptionText,
-        extraDescriptionText
+        extraDescriptionText,
+        extraDescriptionButtonText
       )}
     </div>
   );
@@ -45,7 +46,7 @@ describe('`formatParagraphWithModal`', () => {
       const wrapper = getModal(1);
 
       expectComponentToHaveProps(wrapper, {
-        trigger: <Button basic>View more</Button>,
+        trigger: <Button basic>{extraDescriptionButtonText}</Button>,
       });
     });
 

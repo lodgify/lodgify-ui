@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { size } from 'lodash';
+import isValidHTML from 'is-html';
 
 import { LOCATION } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
@@ -14,6 +15,7 @@ import { Paragraph } from 'typography/Paragraph';
 import { ShowOn } from 'layout/ShowOn';
 import { Subheading } from 'typography/Subheading';
 import { withResponsive } from 'utils/with-responsive';
+import { HTML } from 'general-widgets/HTML';
 
 import { getTransportOptionsMarkup } from './utils/getTransportOptionsMarkup';
 import { getGoogleMapHeight } from './utils/getGoogleMapHeight';
@@ -37,7 +39,11 @@ const Component = ({
   <Grid isStackable>
     <GridColumn width={12}>
       <Heading>{headingText}</Heading>
-      <Subheading>{locationSummary}</Subheading>
+      {isValidHTML(locationSummary) ? (
+        <HTML htmlString={locationSummary} />
+      ) : (
+        <Subheading>{locationSummary}</Subheading>
+      )}
     </GridColumn>
     {!!locationDescription && (
       <GridColumn computer={6} tablet={12}>
@@ -110,7 +116,7 @@ Component.propTypes = {
   latitude: PropTypes.number.isRequired,
   /** The text description of the location. */
   locationDescription: PropTypes.string,
-  /** The summary of the location. */
+  /** The summary of the location. Respects HTML markup. */
   locationSummary: PropTypes.string.isRequired,
   /** The longitude coordinate for the center of the map and/or location of the marker */
   longitude: PropTypes.number.isRequired,

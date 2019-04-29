@@ -48,6 +48,16 @@ describe('<Location />', () => {
     });
   });
 
+  describe('if `locationSummary` is valid html', () => {
+    it('should render the correct structure', () => {
+      const locationSummary = '<strong>bc</strong>';
+
+      const wrapper = getWrappedLocation({ locationSummary });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   describe('the `locationDescription`', () => {
     it('should render the location description markup', () => {
       const wrapper = getWrappedLocation({
