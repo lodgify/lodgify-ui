@@ -463,67 +463,35 @@ exports[`<Location /> if \`locationSummary\` is valid html should render the cor
               className="top aligned twelve wide column"
             >
               <GoogleMap
-                apiKey="AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q"
+                apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
                 height="400px"
                 isShowingApproximateLocation={false}
                 isShowingExactLocation={false}
                 latitude={41.387863}
                 longitude={2.158105}
               >
-                <withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))
-                  apiKey="AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q"
-                  containerElement={
-                    <Card
-                      fluid={true}
-                    />
+                <Card
+                  fluid={true}
+                  style={
+                    Object {
+                      "height": "400px",
+                      "maxWidth": "640px",
+                    }
                   }
-                  height="400px"
-                  isShowingApproximateLocation={false}
-                  isShowingExactLocation={false}
-                  latitude={41.387863}
-                  longitude={2.158105}
                 >
-                  <withScriptjs(withGoogleMap(ReactGoogleMap))
-                    apiKey="AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q"
-                    containerElement={
-                      <Card
-                        fluid={true}
-                      />
-                    }
-                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q&v=3.exp&libraries=geometry,drawing,places"
-                    height="400px"
-                    isShowingApproximateLocation={false}
-                    isShowingExactLocation={false}
-                    latitude={41.387863}
-                    loadingElement={
-                      <div
-                        style={
-                          Object {
-                            "height": "400px",
-                          }
-                        }
-                      />
-                    }
-                    longitude={2.158105}
-                    mapElement={
-                      <div
-                        style={
-                          Object {
-                            "height": "400px",
-                          }
-                        }
-                      />
+                  <div
+                    className="ui fluid card"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "height": "400px",
+                        "maxWidth": "640px",
+                      }
                     }
                   >
-                    <div
-                      style={
-                        Object {
-                          "height": "400px",
-                        }
-                      }
-                    />
-                  </withScriptjs(withGoogleMap(ReactGoogleMap))>
-                </withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))>
+                    <img />
+                  </div>
+                </Card>
               </GoogleMap>
             </div>
           </GridColumn>
@@ -1330,67 +1298,35 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
               className="top aligned twelve wide column"
             >
               <GoogleMap
-                apiKey="AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q"
+                apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
                 height="400px"
                 isShowingApproximateLocation={false}
                 isShowingExactLocation={false}
                 latitude={41.387863}
                 longitude={2.158105}
               >
-                <withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))
-                  apiKey="AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q"
-                  containerElement={
-                    <Card
-                      fluid={true}
-                    />
+                <Card
+                  fluid={true}
+                  style={
+                    Object {
+                      "height": "400px",
+                      "maxWidth": "640px",
+                    }
                   }
-                  height="400px"
-                  isShowingApproximateLocation={false}
-                  isShowingExactLocation={false}
-                  latitude={41.387863}
-                  longitude={2.158105}
                 >
-                  <withScriptjs(withGoogleMap(ReactGoogleMap))
-                    apiKey="AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q"
-                    containerElement={
-                      <Card
-                        fluid={true}
-                      />
-                    }
-                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyADAwsct9hJOd8t4ljkqGvo59nvTkBZh3Q&v=3.exp&libraries=geometry,drawing,places"
-                    height="400px"
-                    isShowingApproximateLocation={false}
-                    isShowingExactLocation={false}
-                    latitude={41.387863}
-                    loadingElement={
-                      <div
-                        style={
-                          Object {
-                            "height": "400px",
-                          }
-                        }
-                      />
-                    }
-                    longitude={2.158105}
-                    mapElement={
-                      <div
-                        style={
-                          Object {
-                            "height": "400px",
-                          }
-                        }
-                      />
+                  <div
+                    className="ui fluid card"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "height": "400px",
+                        "maxWidth": "640px",
+                      }
                     }
                   >
-                    <div
-                      style={
-                        Object {
-                          "height": "400px",
-                        }
-                      }
-                    />
-                  </withScriptjs(withGoogleMap(ReactGoogleMap))>
-                </withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))>
+                    <img />
+                  </div>
+                </Card>
               </GoogleMap>
             </div>
           </GridColumn>
