@@ -1,3 +1,17 @@
+# [1.180.0](https://github.com/lodgify/lodgify-ui/compare/v1.179.1...v1.180.0) (2019-04-29)
+
+
+### Bug Fixes
+
+* **HTML:** stop showing scroll bars if overflow ([be9605a](https://github.com/lodgify/lodgify-ui/commit/be9605a))
+
+
+### Features
+
+* **Description:** description and extraDescription accept html ([5991131](https://github.com/lodgify/lodgify-ui/commit/5991131))
+* **HostProfile:** description now accepts html ([a05d5c8](https://github.com/lodgify/lodgify-ui/commit/a05d5c8))
+* **Location:** description now accepts html ([5a51646](https://github.com/lodgify/lodgify-ui/commit/5a51646))
+
 ## [1.179.1](https://github.com/lodgify/lodgify-ui/compare/v1.179.0...v1.179.1) (2019-04-26)
 
 
