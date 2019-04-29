@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` should return the right structure 1`] = `
+<GoogleMap
+  apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+  height="400px"
+  isShowingApproximateLocation={false}
+  isShowingExactLocation={false}
+  latitude={0}
+  longitude={0}
+>
+  <Card
+    fluid={true}
+    style={
+      Object {
+        "height": "400px",
+        "maxWidth": "640px",
+      }
+    }
+  >
+    <div
+      className="ui fluid card"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": "400px",
+          "maxWidth": "640px",
+        }
+      }
+    >
+      <img
+        src="immmaaage"
+      />
+    </div>
+  </Card>
+</GoogleMap>
+`;
+
+exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` should return the right structure 2`] = `
+<GoogleMap
+  apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+  height="400px"
+  isShowingApproximateLocation={false}
+  isShowingExactLocation={false}
+  latitude={0}
+  longitude={0}
+>
+  <Card
+    fluid={true}
+    style={
+      Object {
+        "height": "400px",
+        "maxWidth": "640px",
+      }
+    }
+  >
+    <div
+      className="ui fluid card"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": "400px",
+          "maxWidth": "640px",
+        }
+      }
+    >
+      <withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))
+        apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+        height="400px"
+        isShowingApproximateLocation={false}
+        isShowingExactLocation={false}
+        latitude={0}
+        longitude={0}
+      >
+        <withScriptjs(withGoogleMap(ReactGoogleMap))
+          apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+          containerElement={<div />}
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4&v=3.exp&libraries=geometry,drawing,places"
+          height="400px"
+          isShowingApproximateLocation={false}
+          isShowingExactLocation={false}
+          latitude={0}
+          loadingElement={
+            <div
+              style={
+                Object {
+                  "height": "400px",
+                }
+              }
+            />
+          }
+          longitude={0}
+          mapElement={
+            <div
+              style={
+                Object {
+                  "height": "400px",
+                }
+              }
+            />
+          }
+        >
+          <div
+            style={
+              Object {
+                "height": "400px",
+              }
+            }
+          />
+        </withScriptjs(withGoogleMap(ReactGoogleMap))>
+      </withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))>
+    </div>
+  </Card>
+</GoogleMap>
+`;
