@@ -1,3 +1,16 @@
+# [1.182.0](https://github.com/lodgify/lodgify-ui/compare/v1.181.0...v1.182.0) (2019-04-30)
+
+
+### Features
+
+* **adaptImages:** add broken image BlockPlaceholder ([61faab6](https://github.com/lodgify/lodgify-ui/commit/61faab6))
+* **getImageHeight:** implement util and unit test ([7518569](https://github.com/lodgify/lodgify-ui/commit/7518569))
+* **react-image-gallery:** add grey background for the slider ([05f7d0c](https://github.com/lodgify/lodgify-ui/commit/05f7d0c))
+* **renderBlockPlaceholder:** implement util and unit test ([2c6629a](https://github.com/lodgify/lodgify-ui/commit/2c6629a))
+* **setImageGallerySlidesHeight:** implement util and unit test ([45dd4cb](https://github.com/lodgify/lodgify-ui/commit/45dd4cb))
+* **site.overrides:** remove white background from slides ([b144a48](https://github.com/lodgify/lodgify-ui/commit/b144a48))
+* **Slideshow:** implement fixed height for the slider ([144d76a](https://github.com/lodgify/lodgify-ui/commit/144d76a))
+
 # [1.181.0](https://github.com/lodgify/lodgify-ui/compare/v1.180.0...v1.181.0) (2019-04-30)
 
 
