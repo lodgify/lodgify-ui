@@ -69,8 +69,12 @@ const {
   emailInputLabel="Your email"
   guestsInputLabel="Visitors"
   headingText="Get in touch"
+  isPrivacyConsentRequired
   nameInputLabel="Your name"
   phoneInputLabel="Your phone"
+  privacyConsentLabelLinkText="call me back"
+  privacyConsentLabelLinkUrl="erl"
+  privacyConsentLabelText="I give my consent if you "
   propertyInputLabel="Chalet"
   propertyOptions={propertyOptions}
   roomInputLabel="Salon"
