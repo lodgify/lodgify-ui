@@ -127,7 +127,7 @@ Component.propTypes = {
   /** Is input in a valid state. */
   isValid: PropTypes.bool.isRequired,
   /** The visible label for the input. */
-  label: PropTypes.string,
+  label: PropTypes.node,
   /**
    * A function which maps the value persisted in the input controller state to the props passed to the input.
    * @param  {any} value

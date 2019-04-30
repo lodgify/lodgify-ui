@@ -1,0 +1,1 @@
+export { getPrivacyConsentLabel } from './getPrivacyConsentLabel';

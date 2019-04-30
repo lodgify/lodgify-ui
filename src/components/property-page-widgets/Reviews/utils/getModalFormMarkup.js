@@ -9,6 +9,7 @@ import { TextArea } from 'inputs/TextArea';
 import { Dropdown } from 'inputs/Dropdown';
 import { RatingInput } from 'inputs/RatingInput';
 import { Checkbox } from 'inputs/Checkbox';
+import { getPrivacyConsentLabel } from 'utils/get-privacy-consent-label';
 
 import {
   EMAIL_MAX_CHARACTERS,
@@ -69,7 +70,9 @@ export const getModalFormMarkup = (
     validation,
     yearInputLabel,
     yearOptions,
-    privacyConsentLabel,
+    privacyConsentLabelText,
+    privacyConsentLabelLinkUrl,
+    privacyConsentLabelLinkText,
     /* eslint-enable react/prop-types */
   },
   isShowingPlaceholder
@@ -144,7 +147,14 @@ export const getModalFormMarkup = (
         name="comments"
       />
       {isPrivacyConsentRequired && (
-        <Checkbox label={privacyConsentLabel} name="privacyConsent" />
+        <Checkbox
+          label={getPrivacyConsentLabel(
+            privacyConsentLabelText,
+            privacyConsentLabelLinkUrl,
+            privacyConsentLabelLinkText
+          )}
+          name="privacyConsent"
+        />
       )}
     </Form>
   </Modal>

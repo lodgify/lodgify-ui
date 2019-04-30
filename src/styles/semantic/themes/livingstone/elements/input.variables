@@ -27,6 +27,10 @@
 /* Labeled Input */
 @labelColor: @greySix;
 @checkboxLabelColor: @black;
+@checkboxLabelLineHeight: @16px;
+@checkboxLabelLeftPosition: @22px;
+
+@checkboxPrivacyConsentLabelButtonPadding:  0 0 0 @6px;
 
 /* Date Range Picker Input */
 @dateRangePickerMinWidth: 135px;
@@ -70,6 +74,8 @@
 
 @validIconOpacity: 1;
 @validIconPadding: @8px 0;
+
+@validCheckBoxIconTopPosition: -(@12px);
 
 /*-------------------
       Variations

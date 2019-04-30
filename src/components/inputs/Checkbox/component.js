@@ -26,17 +26,13 @@ export const Component = ({
     adaptOnChangeEvent={adaptOnChangeEvent}
     error={error}
     isValid={isValid}
+    label={label}
     mapValueToProps={mapValueToProps}
     name={name}
     onChange={onChange}
     value={isChecked}
   >
-    <Checkbox
-      disabled={isDisabled}
-      label={label}
-      radio={isRadioButton}
-      toggle={isToggle}
-    />
+    <Checkbox disabled={isDisabled} radio={isRadioButton} toggle={isToggle} />
   </InputController>
 );
 
@@ -68,7 +64,7 @@ Component.propTypes = {
   /** Is the checkbox in a valid state. */
   isValid: PropTypes.bool,
   /** The label for the checkbox */
-  label: PropTypes.string,
+  label: PropTypes.node,
   /** The HTML input name. */
   name: PropTypes.string,
   /**

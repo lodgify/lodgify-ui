@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { getPrivacyConsentLabel } from 'utils/get-privacy-consent-label';
 import {
   ACCEPT_PRIVACY_POLICY,
   CALL_ME_BACK,
@@ -44,7 +45,9 @@ export const Component = ({
   notesInputLabel,
   onSubmit,
   phoneInputLabel,
-  privacyConsentLabel,
+  privacyConsentLabelText,
+  privacyConsentLabelLinkText,
+  privacyConsentLabelLinkUrl,
   propertyInputLabel,
   propertyOptions,
   submitButtonText,
@@ -104,7 +107,14 @@ export const Component = ({
       name="notes"
     />
     {isPrivacyConsentRequired && (
-      <Checkbox label={privacyConsentLabel} name="privacyConsent" />
+      <Checkbox
+        label={getPrivacyConsentLabel(
+          privacyConsentLabelText,
+          privacyConsentLabelLinkUrl,
+          privacyConsentLabelLinkText
+        )}
+        name="privacyConsent"
+      />
     )}
   </Form>
 );
@@ -117,11 +127,13 @@ Component.defaultProps = {
   errorMessage: '',
   headingText: CALL_ME_BACK,
   isPrivacyConsentRequired: false,
-  privacyConsentLabel: ACCEPT_PRIVACY_POLICY,
   nameInputLabel: NAME,
   notesInputLabel: NOTES,
   onSubmit: Function.prototype,
   phoneInputLabel: PHONE,
+  privacyConsentLabelText: ACCEPT_PRIVACY_POLICY,
+  privacyConsentLabelLinkText: undefined,
+  privacyConsentLabelLinkUrl: undefined,
   propertyInputLabel: PROPERTY,
   propertyOptions: null,
   submitButtonText: SEND,
@@ -151,8 +163,12 @@ Component.propTypes = {
   onSubmit: PropTypes.func,
   /** The label for the phone input */
   phoneInputLabel: PropTypes.string,
+  /** The text to display as the privacy policy link next to the privacy consent checkbox. */
+  privacyConsentLabelLinkText: PropTypes.string,
+  /** The location the privacy policy link next to the privacy consent checkbox. */
+  privacyConsentLabelLinkUrl: PropTypes.string,
   /** The text to display next to the privacy consent checkbox. */
-  privacyConsentLabel: PropTypes.node,
+  privacyConsentLabelText: PropTypes.node,
   /** The label for the property input. */
   propertyInputLabel: PropTypes.string,
   /** The options which the user can select for the property field. */
