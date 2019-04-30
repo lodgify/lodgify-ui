@@ -30,9 +30,13 @@ const timeOptions = [
   dateInputPlaceholder="The Date"
   emailInputLabel="Your email address"
   headingText="Can you call me back?"
+  isPrivacyConsentRequired
   nameInputLabel="Your name"
   notesInputLabel="Some notes?"
   phoneInputLabel="Your phone number"
+  privacyConsentLabelLinkText="click here"
+  privacyConsentLabelLinkUrl="erl"
+  privacyConsentLabelText="I give my consent if you "
   propertyInputLabel="What property?"
   propertyOptions={[]}
   submitButtonText="Submit form"

@@ -1,5 +1,5 @@
 export const ACCEPT = 'Accept';
-export const ACCEPT_PRIVACY_POLICY = 'I accept the privacy policy';
+export const ACCEPT_PRIVACY_POLICY = 'I accept the privacy policy.';
 export const ADD_A_REVIEW = 'Add a Review';
 export const AND = 'and';
 export const ARRIVAL = 'Arrival';
@@ -49,6 +49,7 @@ export const PHONE = 'Phone';
 export const POLICY_AND_NOTES = 'Policy and Notes';
 export const PREVIOUS = 'Previous';
 export const PRICE_PER_EXTRA_PER = 'Price per extra per.';
+export const PRIVACY_POLICY = 'Privacy policy';
 export const PROPERTIES = 'Properties';
 export const PROPERTY = 'Property';
 export const PROPERTY_PICTURES = 'Property pictures';

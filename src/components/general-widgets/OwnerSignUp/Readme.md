@@ -11,8 +11,12 @@
   emailInputLabel="Enter email"
   firstNameInputLabel="Your first name"
   headingText="Sign up today!"
+  isPrivacyConsentRequired
   lastNameInputLabel="Your last name"
   submitButtonText="Submit here"
+  privacyConsentLabelLinkText="sign here"
+  privacyConsentLabelLinkUrl="erl"
+  privacyConsentLabelText="please"
 />
 ```
 

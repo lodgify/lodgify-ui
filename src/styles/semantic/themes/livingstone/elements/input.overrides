@@ -85,6 +85,14 @@
     transition: transform @defaultDuration, font-size @defaultDuration;
   }
 
+  .ui.checkbox {
+
+    label {
+      left: 0;
+      top: 0;
+    }
+  }
+
   input:focus + label,
   textarea:focus + label,
   &.dirty > label {
@@ -93,10 +101,21 @@
     transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
   }
 
-  input[type=checkbox] ~ label {
+  .ui.checkbox ~ label {
+    width: 100%;
     color: @checkboxLabelColor;
+    left: @checkboxLabelLeftPosition;
     top: 0;
-    left: 0;
+
+    .privacy-consent-label {
+      line-height: @checkboxLabelLineHeight;
+      display: flex;
+
+      .ui.button {
+        padding: @checkboxPrivacyConsentLabelButtonPadding;
+        line-height: inherit;
+      }
+    }
 
     &:before,
     &:after {
@@ -213,6 +232,10 @@
       padding: @validIconPadding;
       position: absolute;
       right: @inputHorizontalPadding;
+    }
+
+    .ui.checkbox ~ i.green.icon {
+      top: @validCheckBoxIconTopPosition;
     }
   }
 

@@ -15,7 +15,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
   monthOptions={Array []}
   nameInputLabel="Your name"
   onSubmit={[Function]}
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   ratingAverage={4}
   ratingInputLabel="Your review"
   reviewFormHeading="Add a Review"
@@ -1040,7 +1040,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
   monthOptions={Array []}
   nameInputLabel="Your name"
   onSubmit={[Function]}
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   ratingAverage={4}
   ratingInputLabel="Your review"
   reviewFormHeading="Add a Review"
@@ -1974,7 +1974,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
   monthOptions={Array []}
   nameInputLabel="Your name"
   onSubmit={[Function]}
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   ratingAverage={4}
   ratingInputLabel="Your review"
   reviewFormHeading="Add a Review"

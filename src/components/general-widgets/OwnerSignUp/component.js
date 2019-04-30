@@ -12,6 +12,7 @@ import {
 import { Form } from 'collections/Form';
 import { TextInput } from 'inputs/TextInput';
 import { Checkbox } from 'inputs/Checkbox';
+import { getPrivacyConsentLabel } from 'utils/get-privacy-consent-label';
 
 import {
   EMAIL_MAX_CHARACTERS,
@@ -31,7 +32,9 @@ export const Component = ({
   isPrivacyConsentRequired,
   lastNameInputLabel,
   onSubmit,
-  privacyConsentLabel,
+  privacyConsentLabelText,
+  privacyConsentLabelLinkText,
+  privacyConsentLabelLinkUrl,
   submitButtonText,
   successMessage,
   validation,
@@ -63,7 +66,14 @@ export const Component = ({
       name="email"
     />
     {isPrivacyConsentRequired && (
-      <Checkbox label={privacyConsentLabel} name="privacyConsent" />
+      <Checkbox
+        label={getPrivacyConsentLabel(
+          privacyConsentLabelText,
+          privacyConsentLabelLinkUrl,
+          privacyConsentLabelLinkText
+        )}
+        name="privacyConsent"
+      />
     )}
   </Form>
 );
@@ -78,7 +88,9 @@ Component.defaultProps = {
   isPrivacyConsentRequired: false,
   lastNameInputLabel: LAST_NAME,
   onSubmit: Function.prototype,
-  privacyConsentLabel: ACCEPT_PRIVACY_POLICY,
+  privacyConsentLabelLinkText: undefined,
+  privacyConsentLabelLinkUrl: undefined,
+  privacyConsentLabelText: ACCEPT_PRIVACY_POLICY,
   submitButtonText: SIGN_UP,
   successMessage: '',
   validation: {},
@@ -101,8 +113,12 @@ Component.propTypes = {
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
+  /** The text to display as the privacy policy link next to the privacy consent checkbox. */
+  privacyConsentLabelLinkText: PropTypes.string,
+  /** The location the privacy policy link next to the privacy consent checkbox. */
+  privacyConsentLabelLinkUrl: PropTypes.string,
   /** The text to display next to the privacy consent checkbox. */
-  privacyConsentLabel: PropTypes.node,
+  privacyConsentLabelText: PropTypes.node,
   /** The text to display on the submit button. */
   submitButtonText: PropTypes.string,
   /** The message to display when the form is successful. */

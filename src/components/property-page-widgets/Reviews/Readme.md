@@ -61,17 +61,20 @@ const reviews = [
 ];
 
 <Reviews
-
   commentInputLabel="How did it go?"
   emailInputLabel="Email"
   formHeadingText="Tell us"
   guestTypeInputLabel="Guest"
   guestTypeOptions={guestTypeOptions}
   headingText="Write your review"
+  isPrivacyConsentRequired
   locationInputLabel="Location"
   monthInputLabel="month"
   monthOptions={monthOptions}
   nameInputLabel="name"
+  privacyConsentLabelLinkText="clicking there"
+  privacyConsentLabelLinkUrl="erl"
+  privacyConsentLabelText="I accept by"
   ratingAverage={ratingAverage}
   ratingInputLabel="Input your rating"
   reviews={reviews}

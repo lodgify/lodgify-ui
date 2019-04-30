@@ -24,6 +24,7 @@ import {
   ROOM,
   SEND,
 } from 'utils/default-strings';
+import { getPrivacyConsentLabel } from 'utils/get-privacy-consent-label';
 
 import {
   COMMENT_MAX_CHARACTERS,
@@ -50,7 +51,9 @@ export const Component = ({
   onChangeProperty,
   onSubmit,
   phoneInputLabel,
-  privacyConsentLabel,
+  privacyConsentLabelLinkText,
+  privacyConsentLabelLinkUrl,
+  privacyConsentLabelText,
   propertyInputLabel,
   propertyOptions,
   roomInputLabel,
@@ -124,7 +127,14 @@ export const Component = ({
       </InputGroup>
     )}
     {isPrivacyConsentRequired && (
-      <Checkbox label={privacyConsentLabel} name="privacyConsent" />
+      <Checkbox
+        label={getPrivacyConsentLabel(
+          privacyConsentLabelText,
+          privacyConsentLabelLinkUrl,
+          privacyConsentLabelLinkText
+        )}
+        name="privacyConsent"
+      />
     )}
   </Form>
 );
@@ -145,7 +155,9 @@ Component.defaultProps = {
   onChangeProperty: Function.prototype,
   onSubmit: Function.prototype,
   phoneInputLabel: PHONE,
-  privacyConsentLabel: ACCEPT_PRIVACY_POLICY,
+  privacyConsentLabelLinkText: undefined,
+  privacyConsentLabelLinkUrl: undefined,
+  privacyConsentLabelText: ACCEPT_PRIVACY_POLICY,
   propertyInputLabel: PROPERTY,
   propertyOptions: null,
   roomInputLabel: ROOM,
@@ -187,8 +199,12 @@ Component.propTypes = {
   onSubmit: PropTypes.func,
   /** The label for the phone input.*/
   phoneInputLabel: PropTypes.string,
+  /** The text to display as the privacy policy link next to the privacy consent checkbox. */
+  privacyConsentLabelLinkText: PropTypes.string,
+  /** The location the privacy policy link next to the privacy consent checkbox. */
+  privacyConsentLabelLinkUrl: PropTypes.string,
   /** The text to display next to the privacy consent checkbox. */
-  privacyConsentLabel: PropTypes.node,
+  privacyConsentLabelText: PropTypes.node,
   /** The label for the property input.*/
   propertyInputLabel: PropTypes.string,
   /** The options which the user can select for the property field. */

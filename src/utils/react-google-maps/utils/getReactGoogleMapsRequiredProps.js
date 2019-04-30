@@ -5,13 +5,11 @@ import React from 'react';
  * See https://tomchentw.github.io/react-google-maps/#usage--configuration
  * @param  {Object} props
  * @param  {string} props.apiKey
- * @param  {Object} props.containerElement
  * @param  {string} props.height
  * @return {Object}
  */
 export const getReactGoogleMapsRequiredProps = ({
   apiKey,
-  containerElement,
   height,
   ...props
 }) => ({
@@ -19,7 +17,7 @@ export const getReactGoogleMapsRequiredProps = ({
   googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`,
   loadingElement: <div style={{ height }} />,
   // react-google-maps `withGoogleMap` props
-  containerElement,
+  containerElement: <div />,
   mapElement: <div style={{ height }} />,
   ...props,
 });

@@ -9,7 +9,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
   isPrivacyConsentRequired={true}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   submitButtonText="Sign up"
   successMessage=""
   validation={Object {}}
@@ -275,7 +275,13 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                       isRadioButton={false}
                       isToggle={false}
                       isValid={false}
-                      label="I accept the privacy policy"
+                      label={
+                        <div
+                          className="privacy-consent-label"
+                        >
+                          I accept the privacy policy.
+                        </div>
+                      }
                       name="privacyConsent"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -289,7 +295,13 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
-                        label={null}
+                        label={
+                          <div
+                            className="privacy-consent-label"
+                          >
+                            I accept the privacy policy.
+                          </div>
+                        }
                         mapValueToProps={[Function]}
                         name="privacyConsent"
                         onChange={[Function]}
@@ -307,14 +319,13 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               checked={false}
                               disabled={false}
                               key=".0"
-                              label="I accept the privacy policy"
                               onChange={[Function]}
                               radio={false}
                               toggle={false}
                               type="checkbox"
                             >
                               <div
-                                className="ui checkbox"
+                                className="ui fitted checkbox"
                                 onChange={[Function]}
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
@@ -327,13 +338,19 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                   tabIndex={0}
                                   type="checkbox"
                                 />
-                                <label
-                                  key="I accept the privacy policy"
-                                >
-                                  I accept the privacy policy
-                                </label>
+                                <label />
                               </div>
                             </Checkbox>
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              <div
+                                className="privacy-consent-label"
+                              >
+                                I accept the privacy policy.
+                              </div>
+                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -397,7 +414,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
   isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   submitButtonText="Sign up"
   successMessage=""
   validation={Object {}}
@@ -728,7 +745,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
   isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   submitButtonText="Sign up"
   successMessage="This is a successful message"
   validation={Object {}}
@@ -1059,7 +1076,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
   isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   submitButtonText="Sign up"
   successMessage=""
   validation={Object {}}

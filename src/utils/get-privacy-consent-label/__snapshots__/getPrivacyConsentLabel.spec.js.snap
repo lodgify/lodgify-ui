@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getPrivacyConsentLabel if \`privacyConsentLabelLinkUrl\` is passed should return the right structure 1`] = `
+<div
+  className="privacy-consent-label"
+>
+  labelText
+  <Link
+    href="labelLinkUrl"
+    isPositionedRight={false}
+    onClick={[Function]}
+    willOpenInNewTab={true}
+  >
+    <Button
+      as="a"
+      basic={true}
+      floated="left"
+      href="labelLinkUrl"
+      onClick={[Function]}
+      target="_blank"
+      type="button"
+    >
+      <a
+        className="ui basic left floated button"
+        href="labelLinkUrl"
+        onClick={[Function]}
+        role="button"
+        target="_blank"
+        type="button"
+      >
+        Privacy policy
+      </a>
+    </Button>
+  </Link>
+</div>
+`;
+
+exports[`getPrivacyConsentLabel if both \`privacyConsentLabelLinkUrl\` and \`privacyConsentLabelLinkText\` are passed should return the right structure 1`] = `
+<div
+  className="privacy-consent-label"
+>
+  labelText
+  <Link
+    href="labelLinkUrl"
+    isPositionedRight={false}
+    onClick={[Function]}
+    willOpenInNewTab={true}
+  >
+    <Button
+      as="a"
+      basic={true}
+      floated="left"
+      href="labelLinkUrl"
+      onClick={[Function]}
+      target="_blank"
+      type="button"
+    >
+      <a
+        className="ui basic left floated button"
+        href="labelLinkUrl"
+        onClick={[Function]}
+        role="button"
+        target="_blank"
+        type="button"
+      >
+        labelLinkText
+      </a>
+    </Button>
+  </Link>
+</div>
+`;
+
+exports[`getPrivacyConsentLabel should return the right structure 1`] = `
+<div
+  className="privacy-consent-label"
+>
+  labelText
+</div>
+`;
