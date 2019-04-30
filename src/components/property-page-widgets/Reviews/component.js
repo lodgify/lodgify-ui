@@ -105,7 +105,9 @@ Component.defaultProps = {
   monthOptions: [],
   nameInputLabel: YOUR_NAME,
   onSubmit: Function.prototype,
-  privacyConsentLabel: ACCEPT_PRIVACY_POLICY,
+  privacyConsentLabelLinkText: undefined,
+  privacyConsentLabelLinkUrl: undefined,
+  privacyConsentLabelText: ACCEPT_PRIVACY_POLICY,
   roomTypeOptions: [],
   ratingInputLabel: YOUR_REVIEW,
   reviewFormHeading: ADD_A_REVIEW,
@@ -179,8 +181,12 @@ Component.propTypes = {
    */
   // eslint-disable-next-line react/no-unused-prop-types
   onSubmit: PropTypes.func,
+  /** The text to display as the privacy policy link next to the privacy consent checkbox. */
+  privacyConsentLabelLinkText: PropTypes.string,
+  /** The location the privacy policy link next to the privacy consent checkbox. */
+  privacyConsentLabelLinkUrl: PropTypes.string,
   /** The text to display next to the privacy consent checkbox. */
-  privacyConsentLabel: PropTypes.node,
+  privacyConsentLabelText: PropTypes.node,
   /** The average numeral rating for the properties. */
   ratingAverage: PropTypes.number.isRequired,
   /** A visible label to display with the rating stars. */
