@@ -87,37 +87,39 @@ export const Component = ({
     )}
     <div className="bottom-navigation">
       <HorizontalGutters as={Menu} borderless inverted stackable>
-        {size(languageOptions) > 1 && (
-          <Menu.Item>
-            <Submenu
-              items={languageOptions}
-              name="language"
-              onChange={onChangeLanguage}
-              value={languageValue}
-              willOpenAbove
-            />
-          </Menu.Item>
-        )}
-        {size(currencyOptions) > 1 && (
-          <Menu.Item>
-            <Submenu
-              isSearchable
-              items={currencyOptions}
-              name="currency"
-              noResultsText={currencyNoResultsText}
-              onChange={onChangeCurrency}
-              value={currencyValue}
-              willOpenAbove
-            />
-          </Menu.Item>
-        )}
-        {!!phoneNumber && (
-          <Menu.Item className="is-selectable">
-            <a href={getHrefTelString(phoneNumber)}>
-              <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
-            </a>
-          </Menu.Item>
-        )}
+        <Menu.Menu>
+          {size(languageOptions) > 1 && (
+            <Menu.Item>
+              <Submenu
+                items={languageOptions}
+                name="language"
+                onChange={onChangeLanguage}
+                value={languageValue}
+                willOpenAbove
+              />
+            </Menu.Item>
+          )}
+          {size(currencyOptions) > 1 && (
+            <Menu.Item>
+              <Submenu
+                isSearchable
+                items={currencyOptions}
+                name="currency"
+                noResultsText={currencyNoResultsText}
+                onChange={onChangeCurrency}
+                value={currencyValue}
+                willOpenAbove
+              />
+            </Menu.Item>
+          )}
+          {!!phoneNumber && (
+            <Menu.Item className="is-selectable">
+              <a href={getHrefTelString(phoneNumber)}>
+                <Icon labelText={phoneNumber} name={ICON_NAMES.PHONE} />
+              </a>
+            </Menu.Item>
+          )}
+        </Menu.Menu>
         {size(socialMediaLinks) > 0 && (
           <Menu.Menu position="right">
             {socialMediaLinks.map(
@@ -135,24 +137,26 @@ export const Component = ({
           </Menu.Menu>
         )}
         <Divider hasLine />
-        <Menu.Item className="is-selectable">{propertyAddress}</Menu.Item>
-        {faxNumber && (
-          <Menu.Item className="is-selectable">
-            <label>{faxNumberLabel}</label>
-            <a href={getHrefFaxString(faxNumber)}>{faxNumber}</a>
-          </Menu.Item>
-        )}
-        {emailAddress && (
-          <Menu.Item className="is-selectable">
-            <label>{emailAddressLabel}</label>
-            <a href={getHrefMailToString(faxNumber)}>{emailAddress}</a>
-          </Menu.Item>
-        )}
-        {copyrightText && (
-          <Menu.Item className="is-selectable" position="right">
-            {copyrightText}
-          </Menu.Item>
-        )}
+        <Menu.Menu>
+          <Menu.Item className="is-selectable">{propertyAddress}</Menu.Item>
+          {faxNumber && (
+            <Menu.Item className="is-selectable">
+              <label>{faxNumberLabel}</label>
+              <a href={getHrefFaxString(faxNumber)}>{faxNumber}</a>
+            </Menu.Item>
+          )}
+          {emailAddress && (
+            <Menu.Item className="is-selectable">
+              <label>{emailAddressLabel}</label>
+              <a href={getHrefMailToString(faxNumber)}>{emailAddress}</a>
+            </Menu.Item>
+          )}
+          {copyrightText && (
+            <Menu.Item className="is-selectable" position="right">
+              {copyrightText}
+            </Menu.Item>
+          )}
+        </Menu.Menu>
       </HorizontalGutters>
     </div>
   </footer>
