@@ -11,7 +11,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
   notesInputLabel="Notes"
   onSubmit={[Function]}
   phoneInputLabel="Phone"
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   propertyInputLabel="Property"
   propertyOptions={
     Array [
@@ -1264,7 +1264,13 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                       isRadioButton={false}
                       isToggle={false}
                       isValid={false}
-                      label="I accept the privacy policy"
+                      label={
+                        <div
+                          className="privacy-consent-label"
+                        >
+                          I accept the privacy policy.
+                        </div>
+                      }
                       name="privacyConsent"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -1278,7 +1284,13 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
-                        label={null}
+                        label={
+                          <div
+                            className="privacy-consent-label"
+                          >
+                            I accept the privacy policy.
+                          </div>
+                        }
                         mapValueToProps={[Function]}
                         name="privacyConsent"
                         onChange={[Function]}
@@ -1296,14 +1308,13 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                               checked={false}
                               disabled={false}
                               key=".0"
-                              label="I accept the privacy policy"
                               onChange={[Function]}
                               radio={false}
                               toggle={false}
                               type="checkbox"
                             >
                               <div
-                                className="ui checkbox"
+                                className="ui fitted checkbox"
                                 onChange={[Function]}
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
@@ -1316,13 +1327,19 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   tabIndex={0}
                                   type="checkbox"
                                 />
-                                <label
-                                  key="I accept the privacy policy"
-                                >
-                                  I accept the privacy policy
-                                </label>
+                                <label />
                               </div>
                             </Checkbox>
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              <div
+                                className="privacy-consent-label"
+                              >
+                                I accept the privacy policy.
+                              </div>
+                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1388,7 +1405,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
   notesInputLabel="Notes"
   onSubmit={[Function]}
   phoneInputLabel="Phone"
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   propertyInputLabel="Property"
   propertyOptions={null}
   submitButtonText="Send"
@@ -2370,7 +2387,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
   notesInputLabel="Notes"
   onSubmit={[Function]}
   phoneInputLabel="Phone"
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   propertyInputLabel="Property"
   propertyOptions={
     Array [
