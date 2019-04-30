@@ -1,3 +1,21 @@
+# [1.184.0](https://github.com/lodgify/lodgify-ui/compare/v1.183.0...v1.184.0) (2019-04-30)
+
+
+### Bug Fixes
+
+* **Checkbox:** styles to work with input controller label ([c19e606](https://github.com/lodgify/lodgify-ui/commit/c19e606))
+* **Checkbox:** use input group label ([062fe5d](https://github.com/lodgify/lodgify-ui/commit/062fe5d))
+
+
+### Features
+
+* **CallMeBack:** pass node label to checkbox ([9a785f7](https://github.com/lodgify/lodgify-ui/commit/9a785f7))
+* **Contact:** pass node label to Checkbox ([e9fad4a](https://github.com/lodgify/lodgify-ui/commit/e9fad4a))
+* **default-strings:** add privacy consent url text constant ([622fe46](https://github.com/lodgify/lodgify-ui/commit/622fe46))
+* **get-privacy-consent-label:** add util to be consumed by all forms ([daacce5](https://github.com/lodgify/lodgify-ui/commit/daacce5))
+* **OwnerSignup:** pass node label to Checkbox ([81b4b2e](https://github.com/lodgify/lodgify-ui/commit/81b4b2e))
+* **Reviews:** pass node label to checkbox ([6890ac1](https://github.com/lodgify/lodgify-ui/commit/6890ac1))
+
 # [1.183.0](https://github.com/lodgify/lodgify-ui/compare/v1.182.0...v1.183.0) (2019-04-30)
 
 
