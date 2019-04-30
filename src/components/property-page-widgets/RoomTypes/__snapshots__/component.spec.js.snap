@@ -1694,39 +1694,43 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 isShowingBulletNavigation={false}
                                 isStretched={true}
                               >
-                                <ImageGallery
-                                  additionalClass="fit-height no-shadow no-border-radius"
-                                  items={
-                                    Array [
-                                      Object {
-                                        "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                        "originalAlt": "Two more cats",
-                                        "originalTitle": "Two more cats",
-                                        "sizes": undefined,
-                                        "srcSet": undefined,
-                                      },
-                                      Object {
-                                        "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                        "originalAlt": "Some cats",
-                                        "originalTitle": "Some cats",
-                                        "sizes": undefined,
-                                        "srcSet": undefined,
-                                      },
-                                    ]
-                                  }
-                                  lazyLoad={true}
-                                  onImageError={[Function]}
-                                  onImageLoad={[Function]}
-                                  onSlide={[Function]}
-                                  renderLeftNav={[Function]}
-                                  renderRightNav={[Function]}
-                                  showBullets={false}
-                                  showFullscreenButton={false}
-                                  showPlayButton={false}
-                                  showThumbnails={false}
+                                <div
+                                  className="image-gallery-wrapper"
                                 >
-                                  <div />
-                                </ImageGallery>
+                                  <ImageGallery
+                                    additionalClass="fit-height no-shadow no-border-radius"
+                                    items={
+                                      Array [
+                                        Object {
+                                          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                          "originalAlt": "Two more cats",
+                                          "originalTitle": "Two more cats",
+                                          "sizes": undefined,
+                                          "srcSet": undefined,
+                                        },
+                                        Object {
+                                          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                          "originalAlt": "Some cats",
+                                          "originalTitle": "Some cats",
+                                          "sizes": undefined,
+                                          "srcSet": undefined,
+                                        },
+                                      ]
+                                    }
+                                    lazyLoad={true}
+                                    onImageError={[Function]}
+                                    onImageLoad={[Function]}
+                                    onSlide={[Function]}
+                                    renderLeftNav={[Function]}
+                                    renderRightNav={[Function]}
+                                    showBullets={false}
+                                    showFullscreenButton={false}
+                                    showPlayButton={false}
+                                    showThumbnails={false}
+                                  >
+                                    <div />
+                                  </ImageGallery>
+                                </div>
                               </Slideshow>
                             </div>
                           </GridColumn>
@@ -2600,39 +2604,43 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 isShowingBulletNavigation={false}
                                 isStretched={true}
                               >
-                                <ImageGallery
-                                  additionalClass="fit-height no-shadow no-border-radius"
-                                  items={
-                                    Array [
-                                      Object {
-                                        "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                        "originalAlt": "Two more cats",
-                                        "originalTitle": "Two more cats",
-                                        "sizes": undefined,
-                                        "srcSet": undefined,
-                                      },
-                                      Object {
-                                        "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                        "originalAlt": "Some cats",
-                                        "originalTitle": "Some cats",
-                                        "sizes": undefined,
-                                        "srcSet": undefined,
-                                      },
-                                    ]
-                                  }
-                                  lazyLoad={true}
-                                  onImageError={[Function]}
-                                  onImageLoad={[Function]}
-                                  onSlide={[Function]}
-                                  renderLeftNav={[Function]}
-                                  renderRightNav={[Function]}
-                                  showBullets={false}
-                                  showFullscreenButton={false}
-                                  showPlayButton={false}
-                                  showThumbnails={false}
+                                <div
+                                  className="image-gallery-wrapper"
                                 >
-                                  <div />
-                                </ImageGallery>
+                                  <ImageGallery
+                                    additionalClass="fit-height no-shadow no-border-radius"
+                                    items={
+                                      Array [
+                                        Object {
+                                          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                          "originalAlt": "Two more cats",
+                                          "originalTitle": "Two more cats",
+                                          "sizes": undefined,
+                                          "srcSet": undefined,
+                                        },
+                                        Object {
+                                          "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                          "originalAlt": "Some cats",
+                                          "originalTitle": "Some cats",
+                                          "sizes": undefined,
+                                          "srcSet": undefined,
+                                        },
+                                      ]
+                                    }
+                                    lazyLoad={true}
+                                    onImageError={[Function]}
+                                    onImageLoad={[Function]}
+                                    onSlide={[Function]}
+                                    renderLeftNav={[Function]}
+                                    renderRightNav={[Function]}
+                                    showBullets={false}
+                                    showFullscreenButton={false}
+                                    showPlayButton={false}
+                                    showThumbnails={false}
+                                  >
+                                    <div />
+                                  </ImageGallery>
+                                </div>
                               </Slideshow>
                             </div>
                           </GridColumn>
