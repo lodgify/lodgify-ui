@@ -5,35 +5,27 @@ import { renderMonthHeader } from './renderMonthHeader';
 
 const today = moment();
 
+const localeCode = 'ko';
+
+const getMonthHeader = () =>
+  shallow(
+    renderMonthHeader(localeCode)({
+      month: today,
+    })
+  );
+
 describe('renderMonthHeader', () => {
-  const getMonthHeader = () =>
-    shallow(
-      renderMonthHeader({
-        month: today,
-      })
-    );
+  it('should return a function', () => {
+    const actual = renderMonthHeader();
 
-  it('should correctly render 7 list items for each day', () => {
-    const wrapper = getMonthHeader().find('li');
-
-    expect(wrapper).toHaveLength(7);
-    expect(
-      wrapper
-        .at(0)
-        .find('small')
-        .text()
-    ).toContain('Su');
-    expect(
-      wrapper
-        .at(6)
-        .find('small')
-        .text()
-    ).toContain('Sa');
+    expect(actual).toBeInstanceOf(Function);
   });
 
-  it('should correctly render the month title', () => {
-    const wrapper = getMonthHeader().find('strong');
+  describe('the returned function', () => {
+    it('should return the correct structure', () => {
+      const actual = getMonthHeader();
 
-    expect(wrapper.text()).toBe(today.format('MMMM YYYY'));
+      expect(actual).toMatchSnapshot();
+    });
   });
 });
