@@ -1,3 +1,11 @@
+## [1.184.1](https://github.com/lodgify/lodgify-ui/compare/v1.184.0...v1.184.1) (2019-04-30)
+
+
+### Bug Fixes
+
+* **Footer:** wrap footer items in Menu.Menu components ([9b8f5e0](https://github.com/lodgify/lodgify-ui/commit/9b8f5e0))
+* **menu.overrides:** wrap footer navigation items ([a830dee](https://github.com/lodgify/lodgify-ui/commit/a830dee))
+
 # [1.184.0](https://github.com/lodgify/lodgify-ui/compare/v1.183.0...v1.184.0) (2019-04-30)
 
 
