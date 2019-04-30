@@ -14,7 +14,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
   onChangeProperty={[Function]}
   onSubmit={[Function]}
   phoneInputLabel="Phone"
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   propertyInputLabel="Property"
   propertyOptions={null}
   roomInputLabel="Room"
@@ -623,7 +623,13 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                       isRadioButton={false}
                       isToggle={false}
                       isValid={false}
-                      label="I accept the privacy policy"
+                      label={
+                        <div
+                          className="privacy-consent-label"
+                        >
+                          I accept the privacy policy.
+                        </div>
+                      }
                       name="privacyConsent"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -637,7 +643,13 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
-                        label={null}
+                        label={
+                          <div
+                            className="privacy-consent-label"
+                          >
+                            I accept the privacy policy.
+                          </div>
+                        }
                         mapValueToProps={[Function]}
                         name="privacyConsent"
                         onChange={[Function]}
@@ -655,14 +667,13 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                               checked={false}
                               disabled={false}
                               key=".0"
-                              label="I accept the privacy policy"
                               onChange={[Function]}
                               radio={false}
                               toggle={false}
                               type="checkbox"
                             >
                               <div
-                                className="ui checkbox"
+                                className="ui fitted checkbox"
                                 onChange={[Function]}
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
@@ -675,13 +686,19 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   tabIndex={0}
                                   type="checkbox"
                                 />
-                                <label
-                                  key="I accept the privacy policy"
-                                >
-                                  I accept the privacy policy
-                                </label>
+                                <label />
                               </div>
                             </Checkbox>
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              <div
+                                className="privacy-consent-label"
+                              >
+                                I accept the privacy policy.
+                              </div>
+                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -750,7 +767,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
   onChangeProperty={[Function]}
   onSubmit={[Function]}
   phoneInputLabel="Phone"
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   propertyInputLabel="Property"
   propertyOptions={
     Array [
@@ -2009,7 +2026,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
   onChangeProperty={[Function]}
   onSubmit={[Function]}
   phoneInputLabel="Phone"
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   propertyInputLabel="Property"
   propertyOptions={
     Array [
@@ -2995,7 +3012,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
   onChangeProperty={[Function]}
   onSubmit={[Function]}
   phoneInputLabel="Phone"
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   propertyInputLabel="Property"
   propertyOptions={null}
   roomInputLabel="Room"
@@ -3936,7 +3953,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
   onChangeProperty={[Function]}
   onSubmit={[Function]}
   phoneInputLabel="Phone"
-  privacyConsentLabel="I accept the privacy policy"
+  privacyConsentLabelText="I accept the privacy policy."
   propertyInputLabel="Property"
   propertyOptions={null}
   roomInputLabel="Room"
