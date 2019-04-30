@@ -11,6 +11,11 @@
     & ~ label {
       top: 0;
       left: 0;
+
+      &:before,
+      &:after {
+        cursor: pointer;
+      }
     }
   }
 
@@ -133,7 +138,3 @@
 }
 
 /* Label */
-.ui.checkbox + label {
-  left: 0;
-  top: 0;
-}
