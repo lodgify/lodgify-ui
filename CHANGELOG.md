@@ -1,3 +1,10 @@
+# [1.181.0](https://github.com/lodgify/lodgify-ui/compare/v1.180.0...v1.181.0) (2019-04-30)
+
+
+### Features
+
+* **Availability:** pass localeCode to month header ([47f8506](https://github.com/lodgify/lodgify-ui/commit/47f8506))
+
 # [1.180.0](https://github.com/lodgify/lodgify-ui/compare/v1.179.1...v1.180.0) (2019-04-29)
 
 
