@@ -31,6 +31,10 @@
 @footerMenuItemVerticalPadding: @8px;
 @footerMenuItemHorizontalPadding: @35px;
 
+@mobileFooterMenuItemHorizontalPadding: @15px;
+@mobileFooterMenuItemLineHeight: 15px;
+@mobileFooterMenuGroupedItemFlexBasis: 50%;
+
 @footerBottomBackground: @greyEight;
 @footerBottomMenuColor: @greySix;
 
