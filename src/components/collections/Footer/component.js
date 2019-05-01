@@ -72,6 +72,7 @@ export const Component = ({
             ? getGroupedNavigationItems(navigationItems).map(
                 ({ text, subItems }, index) => (
                   <Menu.Item
+                    className="grouped"
                     key={buildKeyFromStrings(text || subItems[0].text, index)}
                   >
                     <Menu.Menu>
