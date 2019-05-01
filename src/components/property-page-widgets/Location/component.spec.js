@@ -1,3 +1,5 @@
+jest.mock('./utils/getLocationDescription');
+
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { Responsive } from 'semantic-ui-react';
@@ -7,7 +9,6 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { IconCard } from 'elements/IconCard';
-import { Paragraph } from 'typography/Paragraph';
 
 import {
   locationDescription,
@@ -15,6 +16,7 @@ import {
   transportOptions,
 } from './mock-data/props';
 import { ComponentWithResponsive as Location } from './component';
+import { getLocationDescription } from './utils/getLocationDescription';
 
 const props = {
   locationDescription,
@@ -48,31 +50,13 @@ describe('<Location />', () => {
     });
   });
 
-  describe('if `locationSummary` is valid html', () => {
-    it('should render the correct structure', () => {
-      const locationSummary = '<strong>bc</strong>';
-
-      const wrapper = getWrappedLocation({ locationSummary });
-
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
-  describe('the `locationDescription`', () => {
-    it('should render the location description markup', () => {
-      const wrapper = getWrappedLocation({
+  describe('if `locationDescription` is defined', () => {
+    it('should call getLocationDescription with the correct arguments', () => {
+      getWrappedLocation({
         locationDescription,
-      }).find(Paragraph);
+      });
 
-      expect(wrapper).toMatchSnapshot();
-    });
-
-    it('should not render the location description markup if not set', () => {
-      const wrapper = getWrappedLocation({
-        locationDescription: '',
-      }).find(Paragraph);
-
-      expect(wrapper).toMatchSnapshot();
+      expect(getLocationDescription).toHaveBeenCalledWith(locationDescription);
     });
   });
 

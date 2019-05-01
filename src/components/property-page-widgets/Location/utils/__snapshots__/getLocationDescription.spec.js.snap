@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getLocationDescription if passed a string containing HTML elements should render the right structure 1`] = `
+<GridColumn
+  computer={6}
+  tablet={12}
+  verticalAlignContent="top"
+  width={null}
+>
+  <HTML
+    htmlString="<a>linky boi</b>"
+  />
+</GridColumn>
+`;
+
+exports[`getLocationDescription if passed a string that doesnt contain any HTML elements should render the right structure 1`] = `
+<GridColumn
+  computer={6}
+  tablet={12}
+  verticalAlignContent="top"
+  width={null}
+>
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    vanilla string boi
+  </Paragraph>
+</GridColumn>
+`;

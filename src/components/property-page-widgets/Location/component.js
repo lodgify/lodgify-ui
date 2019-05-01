@@ -1,24 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { size } from 'lodash';
-import isValidHTML from 'is-html';
 
 import { LOCATION } from 'utils/default-strings';
-import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Divider } from 'elements/Divider';
-import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { GoogleMap } from 'elements/GoogleMap';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
-import { Paragraph } from 'typography/Paragraph';
 import { ShowOn } from 'layout/ShowOn';
 import { Subheading } from 'typography/Subheading';
 import { withResponsive } from 'utils/with-responsive';
-import { HTML } from 'general-widgets/HTML';
 
 import { getTransportOptionsMarkup } from './utils/getTransportOptionsMarkup';
 import { getGoogleMapHeight } from './utils/getGoogleMapHeight';
+import { getLocationDescription } from './utils/getLocationDescription';
 
 /**
  * The standard widget for displaying the location of a property.
@@ -39,23 +35,9 @@ const Component = ({
   <Grid isStackable>
     <GridColumn width={12}>
       <Heading>{headingText}</Heading>
-      {isValidHTML(locationSummary) ? (
-        <HTML htmlString={locationSummary} />
-      ) : (
-        <Subheading>{locationSummary}</Subheading>
-      )}
+      <Subheading>{locationSummary}</Subheading>
     </GridColumn>
-    {!!locationDescription && (
-      <GridColumn computer={6} tablet={12}>
-        {getParagraphsFromStrings(locationDescription).map(
-          (paragraphText, index) => (
-            <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-              {paragraphText}
-            </Paragraph>
-          )
-        )}
-      </GridColumn>
-    )}
+    {!!locationDescription && getLocationDescription(locationDescription)}
     {size(transportOptions) > 0 && (
       <ShowOn
         computer
@@ -114,9 +96,9 @@ Component.propTypes = {
   isUserOnMobile: PropTypes.bool.isRequired,
   /** The latitude coordinate for the center of the map and/or location of the marker */
   latitude: PropTypes.number.isRequired,
-  /** The text description of the location. */
+  /** The text description of the location. Respects HTML markup. */
   locationDescription: PropTypes.string,
-  /** The summary of the location. Respects HTML markup. */
+  /** The summary of the location. */
   locationSummary: PropTypes.string.isRequired,
   /** The longitude coordinate for the center of the map and/or location of the marker */
   longitude: PropTypes.number.isRequired,

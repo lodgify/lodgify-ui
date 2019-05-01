@@ -3,14 +3,14 @@ import { shallow } from 'enzyme';
 
 import { renderMonthHeader } from './renderMonthHeader';
 
-const today = moment();
+const month = moment('2018-11-11');
 
 const localeCode = 'ko';
 
 const getMonthHeader = () =>
   shallow(
     renderMonthHeader(localeCode)({
-      month: today,
+      month,
     })
   );
 
