@@ -1,3 +1,11 @@
+# [1.186.0](https://github.com/lodgify/lodgify-ui/compare/v1.185.0...v1.186.0) (2019-05-01)
+
+
+### Features
+
+* **Footer:** add class for grouped items ([359ef8c](https://github.com/lodgify/lodgify-ui/commit/359ef8c))
+* **menu.*:** add missing query for bottom navigation item ([7bdefef](https://github.com/lodgify/lodgify-ui/commit/7bdefef))
+
 # [1.185.0](https://github.com/lodgify/lodgify-ui/compare/v1.184.1...v1.185.0) (2019-05-01)
 
 
