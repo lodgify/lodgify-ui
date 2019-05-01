@@ -392,6 +392,21 @@ footer {
   .top-navigation {
     background-color: @footerTopBackground;
 
+    .item.grouped {
+      @media @mobileScreen {
+        flex-basis: @mobileFooterMenuGroupedItemFlexBasis;
+
+        .header {
+          line-height: @mobileFooterMenuItemLineHeight;
+        }
+
+        .item.link {
+          line-height: @mobileFooterMenuItemLineHeight;
+          padding-right: 0;
+        }
+      }
+    }
+
     .ui.menu.inverted > .item {
       @media @mobileScreen {
         width: auto !important;
@@ -410,14 +425,22 @@ footer {
 
       .menu:first-child,
       .menu:last-child {
-        justify-content: center;
-        width: 100%;
+        @media @mobileScreen {
+          justify-content: center;
+          width: 100%;
+        }
       }
     }
 
     .ui.menu.inverted .menu > .item {
       @media @mobileScreen {
         width: auto !important;
+        max-width: 100%;
+        padding:
+          @footerMenuItemVerticalPadding
+          0
+          @footerMenuItemVerticalPadding
+          @mobileFooterMenuItemHorizontalPadding;
       }
     }
 

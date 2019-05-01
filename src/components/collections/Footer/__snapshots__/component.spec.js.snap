@@ -3578,10 +3578,11 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
               className="ui borderless inverted stackable ui container menu"
             >
               <MenuItem
+                className="grouped"
                 key="Home0"
               >
                 <div
-                  className="item"
+                  className="item grouped"
                   onClick={[Function]}
                 >
                   <MenuMenu>
@@ -3619,10 +3620,11 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                 </div>
               </MenuItem>
               <MenuItem
+                className="grouped"
                 key="The Property1"
               >
                 <div
-                  className="item"
+                  className="item grouped"
                   onClick={[Function]}
                 >
                   <MenuMenu>
