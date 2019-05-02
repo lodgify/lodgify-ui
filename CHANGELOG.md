@@ -1,3 +1,10 @@
+## [1.186.1](https://github.com/lodgify/lodgify-ui/compare/v1.186.0...v1.186.1) (2019-05-02)
+
+
+### Bug Fixes
+
+* **Footer:** propertyAddress is not required ([6b10dfb](https://github.com/lodgify/lodgify-ui/commit/6b10dfb))
+
 # [1.186.0](https://github.com/lodgify/lodgify-ui/compare/v1.185.0...v1.186.0) (2019-05-01)
 
 
