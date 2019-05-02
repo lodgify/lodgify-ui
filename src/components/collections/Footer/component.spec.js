@@ -41,7 +41,6 @@ const getFooter = otherProps =>
       onChangeCurrency={onChangeCurrency}
       onChangeLanguage={onChangeLanguage}
       phoneNumber={phoneNumber}
-      propertyAddress={propertyAddress}
       {...otherProps}
     />
   );
@@ -96,6 +95,14 @@ describe('<Footer />', () => {
   describe('if `socialMediaLinks` has length > 0', () => {
     it('should render the right structure', () => {
       const wrapper = getFooter({ socialMediaLinks });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.propertyAddress` is passed', () => {
+    it('should render the right structure', () => {
+      const wrapper = getFooter({ propertyAddress });
 
       expect(wrapper).toMatchSnapshot();
     });

@@ -36,7 +36,6 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={Array []}
 >
   <footer>
@@ -593,16 +592,6 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                 <div
                   className="menu"
                 >
-                  <MenuItem
-                    className="is-selectable"
-                  >
-                    <div
-                      className="item is-selectable"
-                      onClick={[Function]}
-                    >
-                      The Cat House, Pawprint Way, Catania 08012
-                    </div>
-                  </MenuItem>
                   <MenuItem
                     className="is-selectable"
                     position="right"
@@ -650,7 +639,6 @@ exports[`<Footer /> if \`props.currencyOptions\` is an empty array or undefined 
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={Array []}
 >
   <footer>
@@ -959,18 +947,7 @@ exports[`<Footer /> if \`props.currencyOptions\` is an empty array or undefined 
               <MenuMenu>
                 <div
                   className="menu"
-                >
-                  <MenuItem
-                    className="is-selectable"
-                  >
-                    <div
-                      className="item is-selectable"
-                      onClick={[Function]}
-                    >
-                      The Cat House, Pawprint Way, Catania 08012
-                    </div>
-                  </MenuItem>
-                </div>
+                />
               </MenuMenu>
             </div>
           </Menu>
@@ -1018,7 +995,6 @@ exports[`<Footer /> if \`props.emailAddress\` is passed should render the right 
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={Array []}
 >
   <footer>
@@ -1575,16 +1551,6 @@ exports[`<Footer /> if \`props.emailAddress\` is passed should render the right 
                 <div
                   className="menu"
                 >
-                  <MenuItem
-                    className="is-selectable"
-                  >
-                    <div
-                      className="item is-selectable"
-                      onClick={[Function]}
-                    >
-                      The Cat House, Pawprint Way, Catania 08012
-                    </div>
-                  </MenuItem>
                   <MenuItem
                     className="is-selectable"
                   >
@@ -1650,7 +1616,6 @@ exports[`<Footer /> if \`props.faxNumber\` is passed should render the right str
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={Array []}
 >
   <footer>
@@ -2214,16 +2179,6 @@ exports[`<Footer /> if \`props.faxNumber\` is passed should render the right str
                       className="item is-selectable"
                       onClick={[Function]}
                     >
-                      The Cat House, Pawprint Way, Catania 08012
-                    </div>
-                  </MenuItem>
-                  <MenuItem
-                    className="is-selectable"
-                  >
-                    <div
-                      className="item is-selectable"
-                      onClick={[Function]}
-                    >
                       <label>
                         Fax
                       </label>
@@ -2281,7 +2236,6 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={Array []}
 >
   <footer>
@@ -3145,18 +3099,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
               <MenuMenu>
                 <div
                   className="menu"
-                >
-                  <MenuItem
-                    className="is-selectable"
-                  >
-                    <div
-                      className="item is-selectable"
-                      onClick={[Function]}
-                    >
-                      The Cat House, Pawprint Way, Catania 08012
-                    </div>
-                  </MenuItem>
-                </div>
+                />
               </MenuMenu>
             </div>
           </Menu>
@@ -3192,7 +3135,6 @@ exports[`<Footer /> if \`props.languageOptions\` is an empty array or undefined 
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={Array []}
 >
   <footer>
@@ -3541,18 +3483,7 @@ exports[`<Footer /> if \`props.languageOptions\` is an empty array or undefined 
               <MenuMenu>
                 <div
                   className="menu"
-                >
-                  <MenuItem
-                    className="is-selectable"
-                  >
-                    <div
-                      className="item is-selectable"
-                      onClick={[Function]}
-                    >
-                      The Cat House, Pawprint Way, Catania 08012
-                    </div>
-                  </MenuItem>
-                </div>
+                />
               </MenuMenu>
             </div>
           </Menu>
@@ -3619,7 +3550,6 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={Array []}
 >
   <footer>
@@ -4282,18 +4212,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
               <MenuMenu>
                 <div
                   className="menu"
-                >
-                  <MenuItem
-                    className="is-selectable"
-                  >
-                    <div
-                      className="item is-selectable"
-                      onClick={[Function]}
-                    >
-                      The Cat House, Pawprint Way, Catania 08012
-                    </div>
-                  </MenuItem>
-                </div>
+                />
               </MenuMenu>
             </div>
           </Menu>
@@ -4347,7 +4266,6 @@ exports[`<Footer /> if \`props.navigationItems\` are passed should render the ri
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={Array []}
 >
   <footer>
@@ -4393,6 +4311,609 @@ exports[`<Footer /> if \`props.navigationItems\` are passed should render the ri
         </Container>
       </HorizontalGutters>
     </div>
+    <div
+      className="bottom-navigation"
+    >
+      <HorizontalGutters
+        as={[Function]}
+        borderless={true}
+        inverted={true}
+        stackable={true}
+      >
+        <Container
+          as={[Function]}
+          borderless={true}
+          inverted={true}
+          stackable={true}
+        >
+          <Menu
+            borderless={true}
+            className="ui container"
+            inverted={true}
+            stackable={true}
+          >
+            <div
+              className="ui borderless inverted stackable ui container menu"
+            >
+              <MenuMenu>
+                <div
+                  className="menu"
+                >
+                  <MenuItem>
+                    <div
+                      className="item"
+                      onClick={[Function]}
+                    >
+                      <Submenu
+                        isMenuItem={false}
+                        isSearchable={false}
+                        isTriggerUnderlined={false}
+                        isTriggeredOnHover={false}
+                        items={
+                          Array [
+                            Object {
+                              "text": "English",
+                              "value": "en",
+                            },
+                            Object {
+                              "text": "German",
+                              "value": "de",
+                            },
+                          ]
+                        }
+                        name="language"
+                        noResultsText="No results"
+                        onChange={[Function]}
+                        pointing="top left"
+                        value={null}
+                        willOpenAbove={true}
+                      >
+                        <Dropdown
+                          additionLabel="Add "
+                          additionPosition="top"
+                          className=""
+                          closeOnBlur={true}
+                          deburr={false}
+                          icon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
+                              path={null}
+                              size="small"
+                            />
+                          }
+                          item={false}
+                          minCharacters={1}
+                          name="language"
+                          noResultsMessage="No results"
+                          onChange={[Function]}
+                          openOnFocus={true}
+                          options={
+                            Array [
+                              Object {
+                                "key": "English",
+                                "text": "English",
+                                "value": "en",
+                              },
+                              Object {
+                                "key": "German",
+                                "text": "German",
+                                "value": "de",
+                              },
+                            ]
+                          }
+                          pointing="top left"
+                          renderLabel={[Function]}
+                          scrolling={true}
+                          search={false}
+                          searchInput="text"
+                          selectOnBlur={true}
+                          selectOnNavigation={true}
+                          simple={false}
+                          trigger={null}
+                          upward={true}
+                          value={null}
+                          wrapSelection={true}
+                        >
+                          <div
+                            aria-expanded={false}
+                            className="ui scrolling upward top left pointing dropdown"
+                            name="language"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseDown={[Function]}
+                            role="listbox"
+                            tabIndex={0}
+                          >
+                            <div
+                              aria-live="polite"
+                              className="text"
+                              role="alert"
+                            />
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
+                              onClick={[Function]}
+                              path={null}
+                              size="small"
+                            >
+                              <i
+                                className="icon small"
+                                onClick={[Function]}
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M20,8.5l-8,7-8-7Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </Icon>
+                            <DropdownMenu>
+                              <div
+                                className="menu transition"
+                              >
+                                <DropdownItem
+                                  active={false}
+                                  key="English"
+                                  onClick={[Function]}
+                                  selected={true}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="English"
+                                  value="en"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={true}
+                                    className="selected item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="English"
+                                    >
+                                      English
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="German"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="German"
+                                  value="de"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="German"
+                                    >
+                                      German
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                              </div>
+                            </DropdownMenu>
+                          </div>
+                        </Dropdown>
+                      </Submenu>
+                    </div>
+                  </MenuItem>
+                  <MenuItem>
+                    <div
+                      className="item"
+                      onClick={[Function]}
+                    >
+                      <Submenu
+                        isMenuItem={false}
+                        isSearchable={true}
+                        isTriggerUnderlined={false}
+                        isTriggeredOnHover={false}
+                        items={
+                          Array [
+                            Object {
+                              "text": "EUR",
+                              "value": "EUR",
+                            },
+                            Object {
+                              "text": "USD",
+                              "value": "USD",
+                            },
+                          ]
+                        }
+                        name="currency"
+                        noResultsText="No results"
+                        onChange={[Function]}
+                        pointing="top left"
+                        value={null}
+                        willOpenAbove={true}
+                      >
+                        <Dropdown
+                          additionLabel="Add "
+                          additionPosition="top"
+                          className=""
+                          closeOnBlur={true}
+                          deburr={false}
+                          icon={
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
+                              path={null}
+                              size="small"
+                            />
+                          }
+                          item={false}
+                          minCharacters={1}
+                          name="currency"
+                          noResultsMessage="No results"
+                          onChange={[Function]}
+                          openOnFocus={true}
+                          options={
+                            Array [
+                              Object {
+                                "key": "EUR",
+                                "text": "EUR",
+                                "value": "EUR",
+                              },
+                              Object {
+                                "key": "USD",
+                                "text": "USD",
+                                "value": "USD",
+                              },
+                            ]
+                          }
+                          pointing="top left"
+                          renderLabel={[Function]}
+                          scrolling={true}
+                          search={true}
+                          searchInput="text"
+                          selectOnBlur={true}
+                          selectOnNavigation={true}
+                          simple={false}
+                          style={
+                            Object {
+                              "minWidth": 56,
+                            }
+                          }
+                          trigger={null}
+                          upward={true}
+                          value={null}
+                          wrapSelection={true}
+                        >
+                          <div
+                            aria-expanded={false}
+                            className="ui search scrolling upward top left pointing dropdown"
+                            name="currency"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseDown={[Function]}
+                            role="combobox"
+                            style={
+                              Object {
+                                "minWidth": 56,
+                              }
+                            }
+                          >
+                            <DropdownSearchInput
+                              inputRef={[Function]}
+                              key="text"
+                              onChange={[Function]}
+                              style={
+                                Object {
+                                  "width": undefined,
+                                }
+                              }
+                              tabIndex={0}
+                              type="text"
+                              value=""
+                            >
+                              <input
+                                aria-autocomplete="list"
+                                autoComplete="off"
+                                className="search"
+                                onChange={[Function]}
+                                style={
+                                  Object {
+                                    "width": undefined,
+                                  }
+                                }
+                                tabIndex={0}
+                                type="text"
+                                value=""
+                              />
+                            </DropdownSearchInput>
+                            <div
+                              aria-live="polite"
+                              className="text"
+                              role="alert"
+                            />
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="caret down"
+                              onClick={[Function]}
+                              path={null}
+                              size="small"
+                            >
+                              <i
+                                className="icon small"
+                                onClick={[Function]}
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M20,8.5l-8,7-8-7Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </Icon>
+                            <DropdownMenu
+                              role="listbox"
+                            >
+                              <div
+                                className="menu transition"
+                                role="listbox"
+                              >
+                                <DropdownItem
+                                  active={false}
+                                  key="EUR"
+                                  onClick={[Function]}
+                                  selected={true}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="EUR"
+                                  value="EUR"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={true}
+                                    className="selected item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="EUR"
+                                    >
+                                      EUR
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                                <DropdownItem
+                                  active={false}
+                                  key="USD"
+                                  onClick={[Function]}
+                                  selected={false}
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                  text="USD"
+                                  value="USD"
+                                >
+                                  <div
+                                    aria-checked={false}
+                                    aria-selected={false}
+                                    className="item"
+                                    onClick={[Function]}
+                                    role="option"
+                                    style={
+                                      Object {
+                                        "pointerEvents": "all",
+                                      }
+                                    }
+                                  >
+                                    <span
+                                      className="text"
+                                      key="USD"
+                                    >
+                                      USD
+                                    </span>
+                                  </div>
+                                </DropdownItem>
+                              </div>
+                            </DropdownMenu>
+                          </div>
+                        </Dropdown>
+                      </Submenu>
+                    </div>
+                  </MenuItem>
+                  <MenuItem
+                    className="is-selectable"
+                  >
+                    <div
+                      className="item is-selectable"
+                      onClick={[Function]}
+                    >
+                      <a
+                        href="tel:+12345678912"
+                      >
+                        <Icon
+                          color={null}
+                          hasBorder={false}
+                          isButton={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText="+1 2345 678912"
+                          labelWeight={null}
+                          name="phone"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M17.26,20.77a10.82,10.82,0,0,1-4.91-1.31,18.17,18.17,0,0,1-4.5-3.31,18.36,18.36,0,0,1-3.31-4.5,11,11,0,0,1-1.3-4.91A3.72,3.72,0,0,1,4.58,4.39,4,4,0,0,1,6.73,3.23,2,2,0,0,1,8,3.91,11.34,11.34,0,0,1,9.16,5.26c.25.33,1.52,2,1.52,2.79s-.74,1.11-1.53,1.6a7.2,7.2,0,0,0-.84.56c-.24.19-.28.29-.29.32A11.62,11.62,0,0,0,13.47,16a.94.94,0,0,0,.32-.3,9.4,9.4,0,0,0,.56-.84c.48-.78.93-1.52,1.59-1.52s2.46,1.26,2.79,1.51a10.53,10.53,0,0,1,1.35,1.22,2,2,0,0,1,.68,1.21,4,4,0,0,1-1.15,2.16,3.78,3.78,0,0,1-2.35,1.35ZM6.73,4.11A3.25,3.25,0,0,0,5.17,5,2.86,2.86,0,0,0,4.11,6.74c0,5.9,7.25,13.15,13.15,13.15A2.84,2.84,0,0,0,19,18.83a3.35,3.35,0,0,0,.93-1.56c0-.17-.49-.82-1.75-1.79A7.23,7.23,0,0,0,16,14.19s-.12,0-.32.3-.36.52-.54.81c-.49.8-.95,1.55-1.62,1.55a.87.87,0,0,1-.32-.06A12.44,12.44,0,0,1,7.2,10.85c-.11-.28-.13-.71.42-1.21A8.34,8.34,0,0,1,8.69,8.9a9,9,0,0,0,.82-.54c.25-.2.29-.3.29-.31A6.78,6.78,0,0,0,8.51,5.86c-1-1.27-1.62-1.73-1.78-1.76Zm13.6,7a.43.43,0,0,1-.44-.44,6.58,6.58,0,0,0-6.58-6.57.44.44,0,1,1,0-.88,7.44,7.44,0,0,1,7.45,7.45A.43.43,0,0,1,20.33,11.12Zm-2.64,0a.43.43,0,0,1-.43-.44,4,4,0,0,0-4-3.94.44.44,0,1,1,0-.88,4.82,4.82,0,0,1,4.82,4.82A.43.43,0,0,1,17.69,11.12Zm-2.63,0a.43.43,0,0,1-.43-.44,1.32,1.32,0,0,0-1.32-1.31.44.44,0,0,1,0-.88,2.2,2.2,0,0,1,2.19,2.19A.43.43,0,0,1,15.06,11.12Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                            <Paragraph
+                              size="medium"
+                              weight={null}
+                            >
+                              <p
+                                className=""
+                              >
+                                +1 2345 678912
+                              </p>
+                            </Paragraph>
+                          </i>
+                        </Icon>
+                      </a>
+                    </div>
+                  </MenuItem>
+                </div>
+              </MenuMenu>
+              <Divider
+                className=""
+                hasLine={true}
+                size="medium"
+              >
+                <Divider
+                  className=""
+                  hidden={false}
+                  section={false}
+                >
+                  <div
+                    className="ui divider"
+                  />
+                </Divider>
+              </Divider>
+              <MenuMenu>
+                <div
+                  className="menu"
+                />
+              </MenuMenu>
+            </div>
+          </Menu>
+        </Container>
+      </HorizontalGutters>
+    </div>
+  </footer>
+</Footer>
+`;
+
+exports[`<Footer /> if \`props.propertyAddress\` is passed should render the right structure 1`] = `
+<Footer
+  copyrightText={null}
+  currencyOptions={
+    Array [
+      Object {
+        "text": "EUR",
+        "value": "EUR",
+      },
+      Object {
+        "text": "USD",
+        "value": "USD",
+      },
+    ]
+  }
+  currencyValue={null}
+  emailAddressLabel="Email"
+  faxNumberLabel="Fax"
+  hasEmailCapture={false}
+  languageOptions={
+    Array [
+      Object {
+        "text": "English",
+        "value": "en",
+      },
+      Object {
+        "text": "German",
+        "value": "de",
+      },
+    ]
+  }
+  languageValue={null}
+  navigationItems={null}
+  onChangeCurrency={[Function]}
+  onChangeLanguage={[Function]}
+  phoneNumber="+1 2345 678912"
+  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
+  socialMediaLinks={Array []}
+>
+  <footer>
     <div
       className="bottom-navigation"
     >
@@ -5003,7 +5524,6 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={
     Array [
       Object {
@@ -5656,18 +6176,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
               <MenuMenu>
                 <div
                   className="menu"
-                >
-                  <MenuItem
-                    className="is-selectable"
-                  >
-                    <div
-                      className="item is-selectable"
-                      onClick={[Function]}
-                    >
-                      The Cat House, Pawprint Way, Catania 08012
-                    </div>
-                  </MenuItem>
-                </div>
+                />
               </MenuMenu>
             </div>
           </Menu>
@@ -5714,7 +6223,6 @@ exports[`<Footer /> should render the right structure 1`] = `
   onChangeCurrency={[Function]}
   onChangeLanguage={[Function]}
   phoneNumber="+1 2345 678912"
-  propertyAddress="The Cat House, Pawprint Way, Catania 08012"
   socialMediaLinks={Array []}
 >
   <footer>
@@ -6270,18 +6778,7 @@ exports[`<Footer /> should render the right structure 1`] = `
               <MenuMenu>
                 <div
                   className="menu"
-                >
-                  <MenuItem
-                    className="is-selectable"
-                  >
-                    <div
-                      className="item is-selectable"
-                      onClick={[Function]}
-                    >
-                      The Cat House, Pawprint Way, Catania 08012
-                    </div>
-                  </MenuItem>
-                </div>
+                />
               </MenuMenu>
             </div>
           </Menu>

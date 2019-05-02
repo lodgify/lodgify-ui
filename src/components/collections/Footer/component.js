@@ -139,7 +139,9 @@ export const Component = ({
         )}
         <Divider hasLine />
         <Menu.Menu>
-          <Menu.Item className="is-selectable">{propertyAddress}</Menu.Item>
+          {propertyAddress && (
+            <Menu.Item className="is-selectable">{propertyAddress}</Menu.Item>
+          )}
           {faxNumber && (
             <Menu.Item className="is-selectable">
               <label>{faxNumberLabel}</label>
@@ -188,6 +190,7 @@ Component.defaultProps = {
   languageValue: null,
   navigationItems: null,
   phoneNumber: null,
+  propertyAddress: undefined,
   socialMediaLinks: [],
 };
 
@@ -302,7 +305,7 @@ Component.propTypes = {
   /** The phone number to display */
   phoneNumber: PropTypes.string,
   /** The address of the property */
-  propertyAddress: PropTypes.string.isRequired,
+  propertyAddress: PropTypes.string,
   /** The links to social media accounts to display. */
   socialMediaLinks: PropTypes.arrayOf(
     PropTypes.shape({
