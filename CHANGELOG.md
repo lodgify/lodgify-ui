@@ -1,3 +1,22 @@
+# [1.187.0](https://github.com/lodgify/lodgify-ui/compare/v1.186.1...v1.187.0) (2019-05-03)
+
+
+### Bug Fixes
+
+* **adaptImages:**  remove brokenImage ([90f10b3](https://github.com/lodgify/lodgify-ui/commit/90f10b3))
+* **Slideshow:** amend image request loop and remove superfluous handlers ([a04b016](https://github.com/lodgify/lodgify-ui/commit/a04b016))
+
+
+### Features
+
+* **getAdaptedImagesWithPlaceholders:** implement util and unit test ([ce9c1fa](https://github.com/lodgify/lodgify-ui/commit/ce9c1fa))
+* **react-image-gallery:** implement slideshow breakpoints ([5ee4665](https://github.com/lodgify/lodgify-ui/commit/5ee4665))
+
+
+### Performance Improvements
+
+* **utils:** remove superfluous utils ([ba5f829](https://github.com/lodgify/lodgify-ui/commit/ba5f829))
+
 ## [1.186.1](https://github.com/lodgify/lodgify-ui/compare/v1.186.0...v1.186.1) (2019-05-02)
 
 
