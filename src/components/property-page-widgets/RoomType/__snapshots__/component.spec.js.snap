@@ -139,50 +139,45 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                           isShowingBulletNavigation={false}
                           isStretched={true}
                         >
-                          <div
-                            className="image-gallery-wrapper"
+                          <ImageGallery
+                            additionalClass="fit-height no-shadow no-border-radius"
+                            items={
+                              Array [
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two cats",
+                                  "originalTitle": "Two cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two more cats",
+                                  "originalTitle": "Two more cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Much cats",
+                                  "originalTitle": "Much cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                              ]
+                            }
+                            lazyLoad={true}
+                            onImageError={[Function]}
+                            onSlide={[Function]}
+                            renderLeftNav={[Function]}
+                            renderRightNav={[Function]}
+                            showBullets={false}
+                            showFullscreenButton={false}
+                            showPlayButton={false}
+                            showThumbnails={false}
                           >
-                            <ImageGallery
-                              additionalClass="fit-height no-shadow no-border-radius"
-                              items={
-                                Array [
-                                  Object {
-                                    "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                    "originalAlt": "Two cats",
-                                    "originalTitle": "Two cats",
-                                    "sizes": undefined,
-                                    "srcSet": undefined,
-                                  },
-                                  Object {
-                                    "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                    "originalAlt": "Two more cats",
-                                    "originalTitle": "Two more cats",
-                                    "sizes": undefined,
-                                    "srcSet": undefined,
-                                  },
-                                  Object {
-                                    "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                    "originalAlt": "Much cats",
-                                    "originalTitle": "Much cats",
-                                    "sizes": undefined,
-                                    "srcSet": undefined,
-                                  },
-                                ]
-                              }
-                              lazyLoad={true}
-                              onImageError={[Function]}
-                              onImageLoad={[Function]}
-                              onSlide={[Function]}
-                              renderLeftNav={[Function]}
-                              renderRightNav={[Function]}
-                              showBullets={false}
-                              showFullscreenButton={false}
-                              showPlayButton={false}
-                              showThumbnails={false}
-                            >
-                              <div />
-                            </ImageGallery>
-                          </div>
+                            <div />
+                          </ImageGallery>
                         </Slideshow>
                       </div>
                     </GridColumn>
@@ -1113,50 +1108,45 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                           isShowingBulletNavigation={false}
                           isStretched={true}
                         >
-                          <div
-                            className="image-gallery-wrapper"
+                          <ImageGallery
+                            additionalClass="fit-height no-shadow no-border-radius"
+                            items={
+                              Array [
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two cats",
+                                  "originalTitle": "Two cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two more cats",
+                                  "originalTitle": "Two more cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Much cats",
+                                  "originalTitle": "Much cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                },
+                              ]
+                            }
+                            lazyLoad={true}
+                            onImageError={[Function]}
+                            onSlide={[Function]}
+                            renderLeftNav={[Function]}
+                            renderRightNav={[Function]}
+                            showBullets={false}
+                            showFullscreenButton={false}
+                            showPlayButton={false}
+                            showThumbnails={false}
                           >
-                            <ImageGallery
-                              additionalClass="fit-height no-shadow no-border-radius"
-                              items={
-                                Array [
-                                  Object {
-                                    "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                    "originalAlt": "Two cats",
-                                    "originalTitle": "Two cats",
-                                    "sizes": undefined,
-                                    "srcSet": undefined,
-                                  },
-                                  Object {
-                                    "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                    "originalAlt": "Two more cats",
-                                    "originalTitle": "Two more cats",
-                                    "sizes": undefined,
-                                    "srcSet": undefined,
-                                  },
-                                  Object {
-                                    "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                                    "originalAlt": "Much cats",
-                                    "originalTitle": "Much cats",
-                                    "sizes": undefined,
-                                    "srcSet": undefined,
-                                  },
-                                ]
-                              }
-                              lazyLoad={true}
-                              onImageError={[Function]}
-                              onImageLoad={[Function]}
-                              onSlide={[Function]}
-                              renderLeftNav={[Function]}
-                              renderRightNav={[Function]}
-                              showBullets={false}
-                              showFullscreenButton={false}
-                              showPlayButton={false}
-                              showThumbnails={false}
-                            >
-                              <div />
-                            </ImageGallery>
-                          </div>
+                            <div />
+                          </ImageGallery>
                         </Slideshow>
                       </div>
                     </GridColumn>

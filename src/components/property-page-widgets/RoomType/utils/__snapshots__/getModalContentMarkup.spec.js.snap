@@ -199,36 +199,31 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
       isShowingBulletNavigation={false}
       isStretched={false}
     >
-      <div
-        className="image-gallery-wrapper"
+      <ImageGallery
+        additionalClass=""
+        items={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+            },
+          ]
+        }
+        lazyLoad={true}
+        onImageError={[Function]}
+        onSlide={[Function]}
+        renderLeftNav={[Function]}
+        renderRightNav={[Function]}
+        showBullets={false}
+        showFullscreenButton={false}
+        showPlayButton={false}
+        showThumbnails={false}
       >
-        <ImageGallery
-          additionalClass=""
-          items={
-            Array [
-              Object {
-                "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                "originalAlt": "Two cats",
-                "originalTitle": "Two cats",
-                "sizes": undefined,
-                "srcSet": undefined,
-              },
-            ]
-          }
-          lazyLoad={true}
-          onImageError={[Function]}
-          onImageLoad={[Function]}
-          onSlide={[Function]}
-          renderLeftNav={[Function]}
-          renderRightNav={[Function]}
-          showBullets={false}
-          showFullscreenButton={false}
-          showPlayButton={false}
-          showThumbnails={false}
-        >
-          <div />
-        </ImageGallery>
-      </div>
+        <div />
+      </ImageGallery>
     </Slideshow>
     <Paragraph
       size="medium"
@@ -549,36 +544,31 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
       isShowingBulletNavigation={false}
       isStretched={false}
     >
-      <div
-        className="image-gallery-wrapper"
+      <ImageGallery
+        additionalClass=""
+        items={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+            },
+          ]
+        }
+        lazyLoad={true}
+        onImageError={[Function]}
+        onSlide={[Function]}
+        renderLeftNav={[Function]}
+        renderRightNav={[Function]}
+        showBullets={false}
+        showFullscreenButton={false}
+        showPlayButton={false}
+        showThumbnails={false}
       >
-        <ImageGallery
-          additionalClass=""
-          items={
-            Array [
-              Object {
-                "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                "originalAlt": "Two cats",
-                "originalTitle": "Two cats",
-                "sizes": undefined,
-                "srcSet": undefined,
-              },
-            ]
-          }
-          lazyLoad={true}
-          onImageError={[Function]}
-          onImageLoad={[Function]}
-          onSlide={[Function]}
-          renderLeftNav={[Function]}
-          renderRightNav={[Function]}
-          showBullets={false}
-          showFullscreenButton={false}
-          showPlayButton={false}
-          showThumbnails={false}
-        >
-          <div />
-        </ImageGallery>
-      </div>
+        <div />
+      </ImageGallery>
     </Slideshow>
     <Divider
       className=""
@@ -984,36 +974,31 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
       isShowingBulletNavigation={false}
       isStretched={false}
     >
-      <div
-        className="image-gallery-wrapper"
+      <ImageGallery
+        additionalClass=""
+        items={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+            },
+          ]
+        }
+        lazyLoad={true}
+        onImageError={[Function]}
+        onSlide={[Function]}
+        renderLeftNav={[Function]}
+        renderRightNav={[Function]}
+        showBullets={false}
+        showFullscreenButton={false}
+        showPlayButton={false}
+        showThumbnails={false}
       >
-        <ImageGallery
-          additionalClass=""
-          items={
-            Array [
-              Object {
-                "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                "originalAlt": "Two cats",
-                "originalTitle": "Two cats",
-                "sizes": undefined,
-                "srcSet": undefined,
-              },
-            ]
-          }
-          lazyLoad={true}
-          onImageError={[Function]}
-          onImageLoad={[Function]}
-          onSlide={[Function]}
-          renderLeftNav={[Function]}
-          renderRightNav={[Function]}
-          showBullets={false}
-          showFullscreenButton={false}
-          showPlayButton={false}
-          showThumbnails={false}
-        >
-          <div />
-        </ImageGallery>
-      </div>
+        <div />
+      </ImageGallery>
     </Slideshow>
     <Paragraph
       size="medium"
@@ -1560,43 +1545,38 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
       isShowingBulletNavigation={true}
       isStretched={false}
     >
-      <div
-        className="image-gallery-wrapper"
+      <ImageGallery
+        additionalClass=""
+        items={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+            },
+            Object {
+              "original": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+            },
+          ]
+        }
+        lazyLoad={true}
+        onImageError={[Function]}
+        onSlide={[Function]}
+        renderLeftNav={[Function]}
+        renderRightNav={[Function]}
+        showBullets={true}
+        showFullscreenButton={false}
+        showPlayButton={false}
+        showThumbnails={false}
       >
-        <ImageGallery
-          additionalClass=""
-          items={
-            Array [
-              Object {
-                "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                "originalAlt": "Two cats",
-                "originalTitle": "Two cats",
-                "sizes": undefined,
-                "srcSet": undefined,
-              },
-              Object {
-                "original": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
-                "originalAlt": "Two cats",
-                "originalTitle": "Two cats",
-                "sizes": undefined,
-                "srcSet": undefined,
-              },
-            ]
-          }
-          lazyLoad={true}
-          onImageError={[Function]}
-          onImageLoad={[Function]}
-          onSlide={[Function]}
-          renderLeftNav={[Function]}
-          renderRightNav={[Function]}
-          showBullets={true}
-          showFullscreenButton={false}
-          showPlayButton={false}
-          showThumbnails={false}
-        >
-          <div />
-        </ImageGallery>
-      </div>
+        <div />
+      </ImageGallery>
     </Slideshow>
     <Paragraph
       size="medium"
@@ -2138,36 +2118,31 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
       isShowingBulletNavigation={false}
       isStretched={false}
     >
-      <div
-        className="image-gallery-wrapper"
+      <ImageGallery
+        additionalClass=""
+        items={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+            },
+          ]
+        }
+        lazyLoad={true}
+        onImageError={[Function]}
+        onSlide={[Function]}
+        renderLeftNav={[Function]}
+        renderRightNav={[Function]}
+        showBullets={false}
+        showFullscreenButton={false}
+        showPlayButton={false}
+        showThumbnails={false}
       >
-        <ImageGallery
-          additionalClass=""
-          items={
-            Array [
-              Object {
-                "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                "originalAlt": "Two cats",
-                "originalTitle": "Two cats",
-                "sizes": undefined,
-                "srcSet": undefined,
-              },
-            ]
-          }
-          lazyLoad={true}
-          onImageError={[Function]}
-          onImageLoad={[Function]}
-          onSlide={[Function]}
-          renderLeftNav={[Function]}
-          renderRightNav={[Function]}
-          showBullets={false}
-          showFullscreenButton={false}
-          showPlayButton={false}
-          showThumbnails={false}
-        >
-          <div />
-        </ImageGallery>
-      </div>
+        <div />
+      </ImageGallery>
     </Slideshow>
     <Paragraph
       size="medium"
