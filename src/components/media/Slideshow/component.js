@@ -8,10 +8,9 @@ import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { ICON_NAMES } from 'elements/Icon';
 
-import { getImageHeight } from './utils/getImageHeight';
-import { setImageGallerySlidesHeight } from './utils/setImageGallerySlidesHeight';
 import { adaptImages } from './utils/adaptImages';
 import { renderNavButton } from './utils/renderNavButton';
+import { getAdaptedImagesWithPlaceholders } from './utils/getAdaptedImagesWithPlaceholders';
 
 /**
  * A slideshow displays a series of images.
@@ -19,29 +18,20 @@ import { renderNavButton } from './utils/renderNavButton';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
+    adaptedImages: adaptImages(this.props.images),
     index: 0,
-    brokenImageSource: null,
-  };
-
-  componentDidMount = () => {
-    global.window.addEventListener('resize', this.handleResize);
   };
 
   handleSlide = index => this.setState({ index });
 
-  handleResize = () => {
-    const imageHeight = getImageHeight(this.component);
+  handleImageError = event => {
+    const adaptedImagesAndBlockPlaceholders = getAdaptedImagesWithPlaceholders(
+      this.state.adaptedImages,
+      event.target.src
+    );
 
-    setImageGallerySlidesHeight(imageHeight, this.component);
+    this.setState({ adaptedImages: adaptedImagesAndBlockPlaceholders });
   };
-
-  handleImageLoad = event =>
-    setImageGallerySlidesHeight(event.target.height, this.component);
-
-  handleImageError = event =>
-    this.setState({ brokenImageSource: event.target.src });
-
-  createComponentRef = component => (this.component = component);
 
   render = () => {
     const {
@@ -58,28 +48,25 @@ export class Component extends PureComponent {
       <Fragment>
         {headingText && <Heading>{headingText}</Heading>}
         {descriptionText && <Paragraph>{descriptionText}</Paragraph>}
-        <div className="image-gallery-wrapper" ref={this.createComponentRef}>
-          <ImageGallery
-            additionalClass={getClassNames('', {
-              'fit-height': isStretched,
-              'no-shadow': !hasShadow,
-              'no-border-radius': !isRounded,
-            })}
-            // Note: styles for the pagination controls
-            // live in `styles/semantic/themes/livingstone/collections/menu.*`
-            items={adaptImages(images, this.state.brokenImageSource)}
-            lazyLoad
-            onImageError={this.handleImageError}
-            onImageLoad={this.handleImageLoad}
-            onSlide={this.handleSlide}
-            renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
-            renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
-            showBullets={isShowingBulletNavigation}
-            showFullscreenButton={false}
-            showPlayButton={false}
-            showThumbnails={false}
-          />
-        </div>
+        <ImageGallery
+          additionalClass={getClassNames('', {
+            'fit-height': isStretched,
+            'no-shadow': !hasShadow,
+            'no-border-radius': !isRounded,
+          })}
+          // Note: styles for the pagination controls
+          // live in `styles/semantic/themes/livingstone/collections/menu.*`
+          items={this.state.adaptedImages}
+          lazyLoad
+          onImageError={this.handleImageError}
+          onSlide={this.handleSlide}
+          renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
+          renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
+          showBullets={isShowingBulletNavigation}
+          showFullscreenButton={false}
+          showPlayButton={false}
+          showThumbnails={false}
+        />
       </Fragment>
     );
   };
