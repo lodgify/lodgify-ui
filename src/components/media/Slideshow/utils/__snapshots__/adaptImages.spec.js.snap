@@ -40,11 +40,3 @@ Array [
   },
 ]
 `;
-
-exports[`adaptImages if any image has a broken url should return an Object with \`renderItem\` as its only entry 1`] = `
-Array [
-  Object {
-    "renderItem": [Function],
-  },
-]
-`;
