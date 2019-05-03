@@ -10,17 +10,23 @@ jest.mock('react-image-gallery', () => {
   return ImageGallery;
 });
 
-jest.mock('./utils/setImageGallerySlidesHeight');
-jest.mock('./utils/getImageHeight');
+jest.mock('./utils/getAdaptedImagesWithPlaceholders');
+jest.mock('./utils/adaptImages');
 
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { getAdaptedImagesWithPlaceholders } from './utils/getAdaptedImagesWithPlaceholders';
+import { adaptImages } from './utils/adaptImages';
 import { Component as Slideshow } from './component';
-import { images } from './mock-data/images';
-import { setImageGallerySlidesHeight } from './utils/setImageGallerySlidesHeight';
-import { getImageHeight } from './utils/getImageHeight';
+import {
+  images,
+  adaptedImages,
+  adaptedImagesAndBlockPlaceholders,
+} from './mock-data/images';
+
+adaptImages.mockReturnValue(adaptedImages);
 
 const getSlideshow = props => mount(<Slideshow images={images} {...props} />);
 
@@ -100,58 +106,37 @@ describe('<Slideshow />', () => {
     });
   });
 
-  describe('`handleResize`', () => {
-    it('should call `getImageHeight` with the right argument', () => {
-      const wrapper = shallow(<Slideshow images={images} />);
-
-      wrapper.instance().createComponentRef(<div />);
-      wrapper.update();
-      wrapper.instance().handleResize();
-
-      expect(getImageHeight).toHaveBeenCalledWith(<div />);
-    });
-
-    it('should call `setImageGallerySlidesHeight`', () => {
-      const wrapper = shallow(<Slideshow images={images} />);
-
-      getImageHeight.mockReturnValueOnce(100);
-
-      wrapper.update();
-      wrapper.instance().handleResize();
-      expect(setImageGallerySlidesHeight).toHaveBeenCalledWith(100, undefined);
-    });
-  });
-
-  describe('`handleImageLoad`', () => {
-    it('should call `setImageGallerySlidesHeight`', () => {
-      const wrapper = shallow(<Slideshow images={images} />);
-
-      const event = { target: { height: 10 } };
-
-      wrapper.instance().createComponentRef(<div />);
-      wrapper.update();
-      wrapper.instance().handleImageLoad(event, <div />);
-
-      expect(setImageGallerySlidesHeight).toHaveBeenCalledWith(
-        event.target.height,
-        <div />
-      );
-    });
-  });
-
   describe('`handleImageError`', () => {
-    it('should call `setState` with the right arguments', () => {
+    it('should call `getAdaptedImagesWithPlaceholders` with the right arguments', () => {
       const wrapper = shallow(<Slideshow images={images} />);
       const event = {
         target: { src: 'bellbottoms=the?john&spencer=blues&h=explosion' },
       };
+
+      wrapper.instance().handleImageError(event);
+
+      expect(getAdaptedImagesWithPlaceholders).toHaveBeenCalledWith(
+        adaptedImages,
+        event.target.src
+      );
+    });
+
+    it('should `setState` with whatever `getAdaptedImagesWithPlaceholders` returns', () => {
+      const wrapper = shallow(<Slideshow images={images} />);
+      const event = {
+        target: { src: 'bellbottoms=the?john&spencer=blues&h=explosion' },
+      };
+
+      getAdaptedImagesWithPlaceholders.mockReturnValueOnce(
+        adaptedImagesAndBlockPlaceholders
+      );
 
       wrapper.instance().setState = jest.fn();
       wrapper.update();
       wrapper.instance().handleImageError(event);
 
       expect(wrapper.instance().setState).toHaveBeenCalledWith({
-        brokenImageSource: event.target.src,
+        adaptedImages: adaptedImagesAndBlockPlaceholders,
       });
     });
   });
