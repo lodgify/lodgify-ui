@@ -17,67 +17,114 @@
   position: relative;
   z-index: @imageGalleryZindex;
 
-  > .image-gallery-content .image-gallery-slide-wrapper {
+  > .image-gallery-content {
+    height: @imageGalleryImageMaxHeight;
 
-    > .image-gallery-swipe {
-      border-radius: @imageGalleryImagesBorderRadius;
-      box-shadow: @floatingShadow;
-      overflow: hidden;
-      background: @greyTwo;
+    @media @tabletViewport {
+      height: @imageGalleryImageMaxHeightTablet;
+    }
 
-      .image-gallery-slides {
-        max-height: @imageGalleryImageMaxHeight;
+    @media @mobileViewport {
+      height: @imageGalleryImageMaxHeightMobile;
+    }
+
+    .image-gallery-slide-wrapper {
+      height: 100%;
+
+      > .image-gallery-swipe {
+        border-radius: @imageGalleryImagesBorderRadius;
+        box-shadow: @floatingShadow;
+        overflow: hidden;
+        background: @greyTwo;
+        height: 100%;
+
+        .image-gallery-slides {
+          height: 100%;
+
+          .image-gallery-slide {
+            height: 100%;
+          }
+        }
+
+        .placeholder.block.rectangle {
+          padding-top: 100%;
+        }
+
+        .image-gallery-image {
+          height: 100%;
+          align-items: center;
+          display: flex;
+
+          @supports (object-fit: cover) {
+            align-items: normal;
+            display: inline;
+          }
+
+          > img {
+            width: 100%;
+
+            @supports (object-fit: cover) {
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
       }
 
-      .image-gallery-image {
-        align-items: center;
+      // This `span` wraps the left and right nav buttons.
+      > span:first-child {
         display: flex;
-        max-height: @imageGalleryImageMaxHeight;
-      }
-    }
+        justify-content: space-between;
+        padding: 0 @imageGalleryButtonHorizontalPadding;
+        position: absolute;
+        top: @imageGalleryButtonTopPosition;
+        width: 100%;
+        z-index: @imageGalleryButtonZIndex;
 
-    // This `span` wraps the left and right nav buttons.
-    > span:first-child {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 @imageGalleryButtonHorizontalPadding;
-      position: absolute;
-      top: @imageGalleryButtonTopPosition;
-      width: 100%;
-      z-index: @imageGalleryButtonZIndex;
+        .button {
+          height: @imageGalleryButtonDiameter;
+          padding: 0;
+          width: @imageGalleryButtonDiameter;
 
-      .button {
-        height: @imageGalleryButtonDiameter;
-        padding: 0;
-        width: @imageGalleryButtonDiameter;
+          &:hover {
+            background: @themeActionColorDefault;
+            background: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
+            color: @themeActionContrastColorDefault;
+            color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+          }
 
-        &:hover {
-          background: @themeActionColorDefault;
-          background: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
-          color: @themeActionContrastColorDefault;
-          color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
-        }
-
-        .icon {
-          margin: 0;
+          .icon {
+            margin: 0;
+          }
         }
       }
-    }
 
-    > .image-gallery-bullets {
-      bottom: @imageGalleryBulletsBottomPosition;
+      > .image-gallery-bullets {
+        bottom: @imageGalleryBulletsBottomPosition;
 
-      > .image-gallery-bullets-container button.image-gallery-bullet {
-        background-color: @imageGalleryButtonBackground;
-        border: none;
-        box-shadow: none;
-        margin: 0 0 0 @imageGalleryButtonHorizontalMargin;
+        > .image-gallery-bullets-container button.image-gallery-bullet {
+          background-color: @imageGalleryButtonBackground;
+          border: none;
+          box-shadow: none;
+          margin: 0 0 0 @imageGalleryButtonHorizontalMargin;
 
-        &.active {
-          background-color: @themeActionColorDefault;
-          background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+          &.active {
+            background-color: @themeActionColorDefault;
+            background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+          }
         }
       }
     }
+  }
+}
+
+/*******************************
+      RoomType Image Gallery
+*******************************/
+
+.ui.fluid.card.has-room-type-gallery {
+
+  .placeholder.block.rectangle {
+    padding-top: @roomTypeImageGalleryPlaceholderHeight;
   }
 }
