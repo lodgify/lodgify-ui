@@ -10,6 +10,8 @@
 
 @imageGalleryImagesBorderRadius: @4px;
 @imageGalleryImageMaxHeight: 390px;
+@imageGalleryImageMaxHeightTablet: 325px;
+@imageGalleryImageMaxHeightMobile: 245px;
 
 @imageGalleryButtonHorizontalPadding: @30px;
 @imageGalleryButtonHeightOffset: (@38px / 2);
@@ -20,3 +22,8 @@
 @imageGalleryButtonZIndex: @imageGalleryZindex + 1;
 
 @imageGalleryBulletsBottomPosition: -(@20px);
+
+/*******************************
+      RoomType Image Gallery
+*******************************/
+@roomTypeImageGalleryPlaceholderHeight: 180px;

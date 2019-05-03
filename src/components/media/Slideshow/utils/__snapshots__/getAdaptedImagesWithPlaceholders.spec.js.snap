@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getAdaptedImagesWithPlaceholders if any image does not have a broken url should return an Object with the adaptesImages 1`] = `
+Array [
+  Object {
+    "original": "https://glue.cdbcdn.com/bicep/bicep.jpg",
+  },
+]
+`;
+
+exports[`getAdaptedImagesWithPlaceholders if any image has a broken url should return an Object with \`renderItem\` as its only entry 1`] = `
+Array [
+  Object {
+    "renderItem": [Function],
+  },
+]
+`;
