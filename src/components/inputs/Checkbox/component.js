@@ -21,6 +21,7 @@ export const Component = ({
   label,
   name,
   onChange,
+  onClick,
 }) => (
   <InputController
     adaptOnChangeEvent={adaptOnChangeEvent}
@@ -32,7 +33,12 @@ export const Component = ({
     onChange={onChange}
     value={isChecked}
   >
-    <Checkbox disabled={isDisabled} radio={isRadioButton} toggle={isToggle} />
+    <Checkbox
+      disabled={isDisabled}
+      onClick={onClick}
+      radio={isRadioButton}
+      toggle={isToggle}
+    />
   </InputController>
 );
 
@@ -48,6 +54,7 @@ Component.defaultProps = {
   label: '',
   name: '',
   onChange: Function.prototype,
+  onClick: Function.prototype,
 };
 
 Component.propTypes = {
@@ -73,4 +80,9 @@ Component.propTypes = {
    * @param{boolean} value
    */
   onChange: PropTypes.func,
+  /**
+   * Event called when the checkbox is clicked.
+   * @param {Object} event
+   */
+  onClick: PropTypes.func,
 };
