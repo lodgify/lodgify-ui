@@ -1,3 +1,12 @@
+# [1.188.0](https://github.com/lodgify/lodgify-ui/compare/v1.187.0...v1.188.0) (2019-05-06)
+
+
+### Features
+
+* **Checkbox:** expose onClick prop ([f2aebc5](https://github.com/lodgify/lodgify-ui/commit/f2aebc5))
+* **EmailCapture:** expose privacy consent props ([8af683f](https://github.com/lodgify/lodgify-ui/commit/8af683f))
+* **Footer:** expose props for newsletter privacy consent ([a4ce84b](https://github.com/lodgify/lodgify-ui/commit/a4ce84b))
+
 # [1.187.0](https://github.com/lodgify/lodgify-ui/compare/v1.186.1...v1.187.0) (2019-05-03)
 
 
