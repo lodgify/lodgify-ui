@@ -2239,314 +2239,329 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
   socialMediaLinks={Array []}
 >
   <footer>
-    <EmailCapture
-      buttonText="Subscribe"
-      errorMessage={null}
-      headingText="Subscribe to our newsletter"
-      inputError={false}
-      inputLabel="Your email"
-      onChangeInput={[Function]}
-      onClickButton={[Function]}
-      successMessage={null}
-    >
-      <HorizontalGutters>
-        <Container>
-          <div
-            className="ui container"
-          >
-            <Divider
-              className=""
-              hasLine={false}
-              size="medium"
-            >
-              <Divider
-                className=""
-                hidden={true}
-                section={false}
+    <WithResponsive(undefined)>
+      <Responsive
+        as={[Function]}
+        isUserOnMobile={false}
+        onUpdate={[Function]}
+        windowInnerWidth={1024}
+      >
+        <EmailCapture
+          buttonText="Subscribe"
+          emailInputError={false}
+          emailInputLabel="Your email"
+          errorMessage={null}
+          headingText="Subscribe to our newsletter"
+          isPrivacyConsentInputChecked={false}
+          isPrivacyConsentRequired={false}
+          isUserOnMobile={false}
+          onChangeEmailInput={[Function]}
+          onClickButton={[Function]}
+          onClickPrivacyConsentInput={[Function]}
+          privacyConsentLabelText="I accept the privacy policy."
+          successMessage={null}
+          windowInnerWidth={1024}
+        >
+          <HorizontalGutters>
+            <Container>
+              <div
+                className="ui container"
               >
-                <div
-                  className="ui hidden divider"
-                />
-              </Divider>
-            </Divider>
-            <Grid
-              areColumnsCentered={false}
-              isStackable={false}
-            >
-              <Grid
-                centered={false}
-                stackable={false}
-              >
-                <div
-                  className="ui grid"
+                <Divider
+                  className=""
+                  hasLine={false}
+                  size="medium"
                 >
-                  <GridRow
-                    horizontalAlignContent="left"
-                    verticalAlign="middle"
+                  <Divider
+                    className=""
+                    hidden={true}
+                    section={false}
                   >
-                    <GridRow
-                      textAlign="left"
-                      verticalAlign="middle"
+                    <div
+                      className="ui hidden divider"
+                    />
+                  </Divider>
+                </Divider>
+                <Grid
+                  areColumnsCentered={false}
+                  isStackable={false}
+                >
+                  <Grid
+                    centered={false}
+                    stackable={false}
+                  >
+                    <div
+                      className="ui grid"
                     >
-                      <div
-                        className="left aligned middle aligned row"
+                      <GridRow
+                        horizontalAlignContent="left"
+                        verticalAlign="middle"
                       >
-                        <GridColumn
-                          computer={5}
-                          mobile={12}
-                          tablet={12}
-                          textAlign="center"
-                          verticalAlignContent="top"
-                          width={null}
+                        <GridRow
+                          textAlign="left"
+                          verticalAlign="middle"
                         >
-                          <GridColumn
-                            computer={5}
-                            mobile={12}
-                            tablet={12}
-                            textAlign="center"
-                            verticalAlign="top"
-                            width={null}
+                          <div
+                            className="left aligned middle aligned row"
                           >
-                            <div
-                              className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                            <GridColumn
+                              computer={5}
+                              mobile={12}
+                              tablet={12}
+                              textAlign="center"
+                              verticalAlignContent="top"
+                              width={null}
                             >
-                              <Heading
-                                className={null}
-                                hasMargin={false}
-                                isColorInverted={false}
-                                size="small"
-                                textAlign={null}
+                              <GridColumn
+                                computer={5}
+                                mobile={12}
+                                tablet={12}
+                                textAlign="center"
+                                verticalAlign="top"
+                                width={null}
                               >
-                                <Header
-                                  as="h4"
-                                  className="has-no-margin"
-                                  inverted={false}
-                                  textAlign={null}
+                                <div
+                                  className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
                                 >
-                                  <h4
-                                    className="ui header has-no-margin"
+                                  <Heading
+                                    className={null}
+                                    hasMargin={false}
+                                    isColorInverted={false}
+                                    size="small"
+                                    textAlign={null}
                                   >
-                                    Subscribe to our newsletter
-                                  </h4>
-                                </Header>
-                              </Heading>
-                              <ShowOn
-                                computer={false}
-                                mobile={true}
-                                parent={[Function]}
-                                parentProps={
-                                  Object {
-                                    "size": "small",
-                                  }
-                                }
-                                tablet={true}
-                                widescreen={false}
-                              >
-                                <Divider
-                                  className="show-on-mobile show-on-tablet"
-                                  hasLine={false}
-                                  size="small"
-                                >
-                                  <Divider
-                                    className="show-on-mobile show-on-tablet is-size-small"
-                                    hidden={true}
-                                    section={false}
+                                    <Header
+                                      as="h4"
+                                      className="has-no-margin"
+                                      inverted={false}
+                                      textAlign={null}
+                                    >
+                                      <h4
+                                        className="ui header has-no-margin"
+                                      >
+                                        Subscribe to our newsletter
+                                      </h4>
+                                    </Header>
+                                  </Heading>
+                                  <ShowOn
+                                    computer={false}
+                                    mobile={true}
+                                    parent={[Function]}
+                                    parentProps={
+                                      Object {
+                                        "size": "small",
+                                      }
+                                    }
+                                    tablet={true}
+                                    widescreen={false}
                                   >
-                                    <div
-                                      className="ui hidden divider show-on-mobile show-on-tablet is-size-small"
-                                    />
-                                  </Divider>
-                                </Divider>
-                              </ShowOn>
-                            </div>
-                          </GridColumn>
-                        </GridColumn>
-                        <GridColumn
-                          computer={4}
-                          mobile={12}
-                          tablet={7}
-                          verticalAlignContent="top"
-                          width={null}
-                        >
-                          <GridColumn
-                            computer={4}
-                            mobile={12}
-                            tablet={7}
-                            verticalAlign="top"
-                            width={null}
-                          >
-                            <div
-                              className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                                    <Divider
+                                      className="show-on-mobile show-on-tablet"
+                                      hasLine={false}
+                                      size="small"
+                                    >
+                                      <Divider
+                                        className="show-on-mobile show-on-tablet is-size-small"
+                                        hidden={true}
+                                        section={false}
+                                      >
+                                        <div
+                                          className="ui hidden divider show-on-mobile show-on-tablet is-size-small"
+                                        />
+                                      </Divider>
+                                    </Divider>
+                                  </ShowOn>
+                                </div>
+                              </GridColumn>
+                            </GridColumn>
+                            <GridColumn
+                              computer={4}
+                              mobile={12}
+                              tablet={7}
+                              verticalAlignContent="top"
+                              width={null}
                             >
-                              <TextInput
-                                autoComplete={null}
-                                error={false}
-                                isFluid={true}
-                                isValid={false}
-                                label="Your email"
-                                maxCharacters={null}
-                                name=""
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                type="text"
+                              <GridColumn
+                                computer={4}
+                                mobile={12}
+                                tablet={7}
+                                verticalAlign="top"
+                                width={null}
                               >
-                                <InputController
-                                  adaptOnChangeEvent={[Function]}
-                                  error={false}
-                                  icon={null}
-                                  initialValue=""
-                                  inputOnChangeFunctionName="onChange"
-                                  isFluid={true}
-                                  isFocused={false}
-                                  isValid={false}
-                                  label="Your email"
-                                  mapValueToProps={[Function]}
-                                  name=""
-                                  onChange={[Function]}
+                                <div
+                                  className="top aligned four wide computer twelve wide mobile seven wide tablet column"
                                 >
-                                  <Input
-                                    className=""
-                                    fluid={true}
-                                    iconPosition={null}
+                                  <TextInput
+                                    autoComplete={null}
+                                    error={false}
+                                    isFluid={true}
+                                    isValid={false}
+                                    label="Your email"
+                                    maxCharacters={null}
+                                    name=""
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
                                     type="text"
                                   >
-                                    <div
-                                      className="ui fluid input"
+                                    <InputController
+                                      adaptOnChangeEvent={[Function]}
+                                      error={false}
+                                      icon={null}
+                                      initialValue=""
+                                      inputOnChangeFunctionName="onChange"
+                                      isFluid={true}
+                                      isFocused={false}
+                                      isValid={false}
+                                      label="Your email"
+                                      mapValueToProps={[Function]}
+                                      name=""
+                                      onChange={[Function]}
                                     >
-                                      <input
-                                        autoComplete={null}
-                                        key=".0"
-                                        maxLength={null}
-                                        name=""
-                                        onBlur={[Function]}
-                                        onChange={[Function]}
+                                      <Input
+                                        className=""
+                                        fluid={true}
+                                        iconPosition={null}
                                         type="text"
-                                        value=""
-                                      />
-                                      <label
-                                        key=".3"
-                                        onClick={[Function]}
                                       >
-                                        Your email
-                                      </label>
-                                    </div>
-                                  </Input>
-                                </InputController>
-                              </TextInput>
-                              <ShowOn
-                                computer={false}
-                                mobile={true}
-                                parent={[Function]}
-                                parentProps={
-                                  Object {
-                                    "size": "small",
-                                  }
-                                }
-                                tablet={false}
-                                widescreen={false}
-                              >
-                                <Divider
-                                  className="show-on-mobile"
-                                  hasLine={false}
-                                  size="small"
-                                >
-                                  <Divider
-                                    className="show-on-mobile is-size-small"
-                                    hidden={true}
-                                    section={false}
+                                        <div
+                                          className="ui fluid input"
+                                        >
+                                          <input
+                                            autoComplete={null}
+                                            key=".0"
+                                            maxLength={null}
+                                            name=""
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            type="text"
+                                            value=""
+                                          />
+                                          <label
+                                            key=".3"
+                                            onClick={[Function]}
+                                          >
+                                            Your email
+                                          </label>
+                                        </div>
+                                      </Input>
+                                    </InputController>
+                                  </TextInput>
+                                  <ShowOn
+                                    computer={false}
+                                    mobile={true}
+                                    parent={[Function]}
+                                    parentProps={
+                                      Object {
+                                        "size": "small",
+                                      }
+                                    }
+                                    tablet={false}
+                                    widescreen={false}
                                   >
-                                    <div
-                                      className="ui hidden divider show-on-mobile is-size-small"
-                                    />
-                                  </Divider>
-                                </Divider>
-                              </ShowOn>
-                            </div>
-                          </GridColumn>
-                        </GridColumn>
-                        <GridColumn
-                          computer={3}
-                          mobile={12}
-                          tablet={5}
-                          verticalAlignContent="top"
-                          width={null}
-                        >
-                          <GridColumn
-                            computer={3}
-                            mobile={12}
-                            tablet={5}
-                            verticalAlign="top"
-                            width={null}
-                          >
-                            <div
-                              className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                                    <Divider
+                                      className="show-on-mobile"
+                                      hasLine={false}
+                                      size="small"
+                                    >
+                                      <Divider
+                                        className="show-on-mobile is-size-small"
+                                        hidden={true}
+                                        section={false}
+                                      >
+                                        <div
+                                          className="ui hidden divider show-on-mobile is-size-small"
+                                        />
+                                      </Divider>
+                                    </Divider>
+                                  </ShowOn>
+                                </div>
+                              </GridColumn>
+                            </GridColumn>
+                            <GridColumn
+                              computer={3}
+                              mobile={12}
+                              tablet={5}
+                              verticalAlignContent="top"
+                              width={null}
                             >
-                              <Button
-                                hasShadow={false}
-                                icon={null}
-                                isCompact={false}
-                                isDisabled={false}
-                                isFluid={true}
-                                isFormSubmit={false}
-                                isLoading={false}
-                                isPositionedRight={false}
-                                isRounded={true}
-                                isSecondary={false}
-                                onClick={[Function]}
-                                size={null}
+                              <GridColumn
+                                computer={3}
+                                mobile={12}
+                                tablet={5}
+                                verticalAlign="top"
+                                width={null}
                               >
-                                <Button
-                                  as="button"
-                                  circular={true}
-                                  className=""
-                                  compact={false}
-                                  disabled={false}
-                                  floated="left"
-                                  fluid={true}
-                                  loading={false}
-                                  onClick={[Function]}
-                                  secondary={false}
-                                  size={null}
-                                  type="button"
+                                <div
+                                  className="top aligned three wide computer twelve wide mobile five wide tablet column"
                                 >
-                                  <button
-                                    className="ui circular fluid left floated button"
+                                  <Button
+                                    hasShadow={false}
+                                    icon={null}
+                                    isCompact={false}
+                                    isDisabled={false}
+                                    isFluid={true}
+                                    isFormSubmit={false}
+                                    isLoading={false}
+                                    isPositionedRight={false}
+                                    isRounded={true}
+                                    isSecondary={false}
                                     onClick={[Function]}
-                                    role="button"
-                                    type="button"
+                                    size={null}
                                   >
-                                    Subscribe
-                                  </button>
-                                </Button>
-                              </Button>
-                            </div>
-                          </GridColumn>
-                        </GridColumn>
-                      </div>
-                    </GridRow>
-                  </GridRow>
-                </div>
-              </Grid>
-            </Grid>
-            <Divider
-              className=""
-              hasLine={false}
-              size="medium"
-            >
-              <Divider
-                className=""
-                hidden={true}
-                section={false}
-              >
-                <div
-                  className="ui hidden divider"
-                />
-              </Divider>
-            </Divider>
-          </div>
-        </Container>
-      </HorizontalGutters>
-    </EmailCapture>
+                                    <Button
+                                      as="button"
+                                      circular={true}
+                                      className=""
+                                      compact={false}
+                                      disabled={false}
+                                      floated="left"
+                                      fluid={true}
+                                      loading={false}
+                                      onClick={[Function]}
+                                      secondary={false}
+                                      size={null}
+                                      type="button"
+                                    >
+                                      <button
+                                        className="ui circular fluid left floated button"
+                                        onClick={[Function]}
+                                        role="button"
+                                        type="button"
+                                      >
+                                        Subscribe
+                                      </button>
+                                    </Button>
+                                  </Button>
+                                </div>
+                              </GridColumn>
+                            </GridColumn>
+                          </div>
+                        </GridRow>
+                      </GridRow>
+                    </div>
+                  </Grid>
+                </Grid>
+                <Divider
+                  className=""
+                  hasLine={false}
+                  size="medium"
+                >
+                  <Divider
+                    className=""
+                    hidden={true}
+                    section={false}
+                  >
+                    <div
+                      className="ui hidden divider"
+                    />
+                  </Divider>
+                </Divider>
+              </div>
+            </Container>
+          </HorizontalGutters>
+        </EmailCapture>
+      </Responsive>
+    </WithResponsive(undefined)>
     <div
       className="bottom-navigation"
     >
