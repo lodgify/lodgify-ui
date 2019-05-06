@@ -1,1 +1,1 @@
-export { Component as EmailCapture } from './component';
+export { ComponentWithResponsive as EmailCapture } from './component';

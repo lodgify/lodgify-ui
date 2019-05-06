@@ -1,14 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<EmailCapture /> if \`props.errorMessage\` is passed should render the right structure 1`] = `
+exports[`<EmailCapture /> should render the right structure 1`] = `
+<Responsive
+  as={[Function]}
+  isUserOnMobile={false}
+  onUpdate={[Function]}
+  windowInnerWidth={1024}
+/>
+`;
+
+exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is passed should render the right structure 1`] = `
 <EmailCapture
   buttonText="Subscribe"
+  emailInputError={false}
+  emailInputLabel="Your email"
   errorMessage="Nurrrrrrr"
   headingText="Subscribe to our newsletter"
-  inputError={false}
-  inputLabel="Your email"
-  onChangeInput={[Function]}
+  isPrivacyConsentInputChecked={false}
+  isPrivacyConsentRequired={false}
+  isUserOnMobile={false}
+  onChangeEmailInput={[Function]}
   onClickButton={[Function]}
+  onClickPrivacyConsentInput={[Function]}
+  privacyConsentLabelText="I accept the privacy policy."
   successMessage={null}
 >
   <HorizontalGutters>
@@ -114,15 +128,892 @@ exports[`<EmailCapture /> if \`props.errorMessage\` is passed should render the 
 </EmailCapture>
 `;
 
-exports[`<EmailCapture /> if \`props.successMessage\` is passed should render the right structure 1`] = `
+exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === false\` and \`props.isPrivacyConsentRequired === true\` should render the right structure 1`] = `
 <EmailCapture
   buttonText="Subscribe"
+  emailInputError={false}
+  emailInputLabel="Your email"
   errorMessage={null}
   headingText="Subscribe to our newsletter"
-  inputError={false}
-  inputLabel="Your email"
-  onChangeInput={[Function]}
+  isPrivacyConsentInputChecked={false}
+  isPrivacyConsentRequired={true}
+  isUserOnMobile={false}
+  onChangeEmailInput={[Function]}
   onClickButton={[Function]}
+  onClickPrivacyConsentInput={[Function]}
+  privacyConsentLabelText="I accept the privacy policy."
+  successMessage={null}
+>
+  <HorizontalGutters>
+    <Container>
+      <div
+        className="ui container"
+      >
+        <Divider
+          className=""
+          hasLine={false}
+          size="medium"
+        >
+          <Divider
+            className=""
+            hidden={true}
+            section={false}
+          >
+            <div
+              className="ui hidden divider"
+            />
+          </Divider>
+        </Divider>
+        <Grid
+          areColumnsCentered={false}
+          isStackable={false}
+        >
+          <Grid
+            centered={false}
+            stackable={false}
+          >
+            <div
+              className="ui grid"
+            >
+              <GridRow
+                horizontalAlignContent="left"
+                verticalAlign="middle"
+              >
+                <GridRow
+                  textAlign="left"
+                  verticalAlign="middle"
+                >
+                  <div
+                    className="left aligned middle aligned row"
+                  >
+                    <GridColumn
+                      computer={5}
+                      mobile={12}
+                      tablet={12}
+                      textAlign="center"
+                      verticalAlignContent="top"
+                      width={null}
+                    >
+                      <GridColumn
+                        computer={5}
+                        mobile={12}
+                        tablet={12}
+                        textAlign="center"
+                        verticalAlign="top"
+                        width={null}
+                      >
+                        <div
+                          className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                        >
+                          <Heading
+                            className={null}
+                            hasMargin={false}
+                            isColorInverted={false}
+                            size="small"
+                            textAlign={null}
+                          >
+                            <Header
+                              as="h4"
+                              className="has-no-margin"
+                              inverted={false}
+                              textAlign={null}
+                            >
+                              <h4
+                                className="ui header has-no-margin"
+                              >
+                                Subscribe to our newsletter
+                              </h4>
+                            </Header>
+                          </Heading>
+                          <ShowOn
+                            computer={false}
+                            mobile={true}
+                            parent={[Function]}
+                            parentProps={
+                              Object {
+                                "size": "small",
+                              }
+                            }
+                            tablet={true}
+                            widescreen={false}
+                          >
+                            <Divider
+                              className="show-on-mobile show-on-tablet"
+                              hasLine={false}
+                              size="small"
+                            >
+                              <Divider
+                                className="show-on-mobile show-on-tablet is-size-small"
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider show-on-mobile show-on-tablet is-size-small"
+                                />
+                              </Divider>
+                            </Divider>
+                          </ShowOn>
+                        </div>
+                      </GridColumn>
+                    </GridColumn>
+                    <GridColumn
+                      computer={4}
+                      mobile={12}
+                      tablet={7}
+                      verticalAlignContent="top"
+                      width={null}
+                    >
+                      <GridColumn
+                        computer={4}
+                        mobile={12}
+                        tablet={7}
+                        verticalAlign="top"
+                        width={null}
+                      >
+                        <div
+                          className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                        >
+                          <TextInput
+                            autoComplete={null}
+                            error={false}
+                            isFluid={true}
+                            isValid={false}
+                            label="Your email"
+                            maxCharacters={null}
+                            name=""
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            type="text"
+                          >
+                            <InputController
+                              adaptOnChangeEvent={[Function]}
+                              error={false}
+                              icon={null}
+                              initialValue=""
+                              inputOnChangeFunctionName="onChange"
+                              isFluid={true}
+                              isFocused={false}
+                              isValid={false}
+                              label="Your email"
+                              mapValueToProps={[Function]}
+                              name=""
+                              onChange={[Function]}
+                            >
+                              <Input
+                                className=""
+                                fluid={true}
+                                iconPosition={null}
+                                type="text"
+                              >
+                                <div
+                                  className="ui fluid input"
+                                >
+                                  <input
+                                    autoComplete={null}
+                                    key=".0"
+                                    maxLength={null}
+                                    name=""
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    type="text"
+                                    value=""
+                                  />
+                                  <label
+                                    key=".3"
+                                    onClick={[Function]}
+                                  >
+                                    Your email
+                                  </label>
+                                </div>
+                              </Input>
+                            </InputController>
+                          </TextInput>
+                          <ShowOn
+                            computer={false}
+                            mobile={true}
+                            parent={[Function]}
+                            parentProps={
+                              Object {
+                                "size": "small",
+                              }
+                            }
+                            tablet={false}
+                            widescreen={false}
+                          >
+                            <Divider
+                              className="show-on-mobile"
+                              hasLine={false}
+                              size="small"
+                            >
+                              <Divider
+                                className="show-on-mobile is-size-small"
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider show-on-mobile is-size-small"
+                                />
+                              </Divider>
+                            </Divider>
+                          </ShowOn>
+                        </div>
+                      </GridColumn>
+                    </GridColumn>
+                    <GridColumn
+                      computer={3}
+                      mobile={12}
+                      tablet={5}
+                      verticalAlignContent="top"
+                      width={null}
+                    >
+                      <GridColumn
+                        computer={3}
+                        mobile={12}
+                        tablet={5}
+                        verticalAlign="top"
+                        width={null}
+                      >
+                        <div
+                          className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                        >
+                          <Button
+                            hasShadow={false}
+                            icon={null}
+                            isCompact={false}
+                            isDisabled={false}
+                            isFluid={true}
+                            isFormSubmit={false}
+                            isLoading={false}
+                            isPositionedRight={false}
+                            isRounded={true}
+                            isSecondary={false}
+                            onClick={[Function]}
+                            size={null}
+                          >
+                            <Button
+                              as="button"
+                              circular={true}
+                              className=""
+                              compact={false}
+                              disabled={false}
+                              floated="left"
+                              fluid={true}
+                              loading={false}
+                              onClick={[Function]}
+                              secondary={false}
+                              size={null}
+                              type="button"
+                            >
+                              <button
+                                className="ui circular fluid left floated button"
+                                onClick={[Function]}
+                                role="button"
+                                type="button"
+                              >
+                                Subscribe
+                              </button>
+                            </Button>
+                          </Button>
+                        </div>
+                      </GridColumn>
+                    </GridColumn>
+                  </div>
+                </GridRow>
+              </GridRow>
+              <GridRow
+                horizontalAlignContent="left"
+              >
+                <GridRow
+                  textAlign="left"
+                >
+                  <div
+                    className="left aligned row"
+                  >
+                    <GridColumn
+                      computer={5}
+                      verticalAlignContent="top"
+                      width={null}
+                    >
+                      <GridColumn
+                        computer={5}
+                        verticalAlign="top"
+                        width={null}
+                      >
+                        <div
+                          className="top aligned five wide computer column"
+                        />
+                      </GridColumn>
+                    </GridColumn>
+                    <GridColumn
+                      computer={4}
+                      mobile={12}
+                      tablet={12}
+                      verticalAlignContent="top"
+                      width={null}
+                    >
+                      <GridColumn
+                        computer={4}
+                        mobile={12}
+                        tablet={12}
+                        verticalAlign="top"
+                        width={null}
+                      >
+                        <div
+                          className="top aligned four wide computer twelve wide mobile twelve wide tablet column"
+                        >
+                          <Checkbox
+                            error={false}
+                            isChecked={false}
+                            isDisabled={false}
+                            isRadioButton={false}
+                            isToggle={false}
+                            isValid={false}
+                            label={
+                              <div
+                                className="privacy-consent-label"
+                              >
+                                I accept the privacy policy.
+                              </div>
+                            }
+                            name=""
+                            onChange={[Function]}
+                            onClick={[Function]}
+                          >
+                            <InputController
+                              adaptOnChangeEvent={[Function]}
+                              error={false}
+                              icon={null}
+                              initialValue=""
+                              inputOnChangeFunctionName="onChange"
+                              isFluid={false}
+                              isFocused={false}
+                              isValid={false}
+                              label={
+                                <div
+                                  className="privacy-consent-label"
+                                >
+                                  I accept the privacy policy.
+                                </div>
+                              }
+                              mapValueToProps={[Function]}
+                              name=""
+                              onChange={[Function]}
+                              value={false}
+                            >
+                              <Input
+                                className=""
+                                fluid={false}
+                                iconPosition={null}
+                                type="text"
+                              >
+                                <div
+                                  className="ui input"
+                                >
+                                  <Checkbox
+                                    checked={false}
+                                    disabled={false}
+                                    key=".0"
+                                    onChange={[Function]}
+                                    onClick={[Function]}
+                                    radio={false}
+                                    toggle={false}
+                                    type="checkbox"
+                                  >
+                                    <div
+                                      className="ui fitted checkbox"
+                                      onChange={[Function]}
+                                      onClick={[Function]}
+                                      onMouseDown={[Function]}
+                                    >
+                                      <input
+                                        checked={false}
+                                        className="hidden"
+                                        onClick={[Function]}
+                                        readOnly={true}
+                                        tabIndex={0}
+                                        type="checkbox"
+                                      />
+                                      <label />
+                                    </div>
+                                  </Checkbox>
+                                  <label
+                                    key=".3"
+                                    onClick={[Function]}
+                                  >
+                                    <div
+                                      className="privacy-consent-label"
+                                    >
+                                      I accept the privacy policy.
+                                    </div>
+                                  </label>
+                                </div>
+                              </Input>
+                            </InputController>
+                          </Checkbox>
+                        </div>
+                      </GridColumn>
+                    </GridColumn>
+                  </div>
+                </GridRow>
+              </GridRow>
+            </div>
+          </Grid>
+        </Grid>
+        <Divider
+          className=""
+          hasLine={false}
+          size="medium"
+        >
+          <Divider
+            className=""
+            hidden={true}
+            section={false}
+          >
+            <div
+              className="ui hidden divider"
+            />
+          </Divider>
+        </Divider>
+      </div>
+    </Container>
+  </HorizontalGutters>
+</EmailCapture>
+`;
+
+exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === true\` and \`props.isPrivacyConsentRequired === true\` should render the right structure 1`] = `
+<EmailCapture
+  buttonText="Subscribe"
+  emailInputError={false}
+  emailInputLabel="Your email"
+  errorMessage={null}
+  headingText="Subscribe to our newsletter"
+  isPrivacyConsentInputChecked={false}
+  isPrivacyConsentRequired={true}
+  isUserOnMobile={true}
+  onChangeEmailInput={[Function]}
+  onClickButton={[Function]}
+  onClickPrivacyConsentInput={[Function]}
+  privacyConsentLabelText="I accept the privacy policy."
+  successMessage={null}
+>
+  <HorizontalGutters>
+    <Container>
+      <div
+        className="ui container"
+      >
+        <Divider
+          className=""
+          hasLine={false}
+          size="medium"
+        >
+          <Divider
+            className=""
+            hidden={true}
+            section={false}
+          >
+            <div
+              className="ui hidden divider"
+            />
+          </Divider>
+        </Divider>
+        <Grid
+          areColumnsCentered={false}
+          isStackable={false}
+        >
+          <Grid
+            centered={false}
+            stackable={false}
+          >
+            <div
+              className="ui grid"
+            >
+              <GridRow
+                horizontalAlignContent="left"
+                verticalAlign="middle"
+              >
+                <GridRow
+                  textAlign="left"
+                  verticalAlign="middle"
+                >
+                  <div
+                    className="left aligned middle aligned row"
+                  >
+                    <GridColumn
+                      computer={5}
+                      mobile={12}
+                      tablet={12}
+                      textAlign="center"
+                      verticalAlignContent="top"
+                      width={null}
+                    >
+                      <GridColumn
+                        computer={5}
+                        mobile={12}
+                        tablet={12}
+                        textAlign="center"
+                        verticalAlign="top"
+                        width={null}
+                      >
+                        <div
+                          className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                        >
+                          <Heading
+                            className={null}
+                            hasMargin={false}
+                            isColorInverted={false}
+                            size="small"
+                            textAlign={null}
+                          >
+                            <Header
+                              as="h4"
+                              className="has-no-margin"
+                              inverted={false}
+                              textAlign={null}
+                            >
+                              <h4
+                                className="ui header has-no-margin"
+                              >
+                                Subscribe to our newsletter
+                              </h4>
+                            </Header>
+                          </Heading>
+                          <ShowOn
+                            computer={false}
+                            mobile={true}
+                            parent={[Function]}
+                            parentProps={
+                              Object {
+                                "size": "small",
+                              }
+                            }
+                            tablet={true}
+                            widescreen={false}
+                          >
+                            <Divider
+                              className="show-on-mobile show-on-tablet"
+                              hasLine={false}
+                              size="small"
+                            >
+                              <Divider
+                                className="show-on-mobile show-on-tablet is-size-small"
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider show-on-mobile show-on-tablet is-size-small"
+                                />
+                              </Divider>
+                            </Divider>
+                          </ShowOn>
+                        </div>
+                      </GridColumn>
+                    </GridColumn>
+                    <GridColumn
+                      computer={4}
+                      mobile={12}
+                      tablet={7}
+                      verticalAlignContent="top"
+                      width={null}
+                    >
+                      <GridColumn
+                        computer={4}
+                        mobile={12}
+                        tablet={7}
+                        verticalAlign="top"
+                        width={null}
+                      >
+                        <div
+                          className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                        >
+                          <TextInput
+                            autoComplete={null}
+                            error={false}
+                            isFluid={true}
+                            isValid={false}
+                            label="Your email"
+                            maxCharacters={null}
+                            name=""
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            type="text"
+                          >
+                            <InputController
+                              adaptOnChangeEvent={[Function]}
+                              error={false}
+                              icon={null}
+                              initialValue=""
+                              inputOnChangeFunctionName="onChange"
+                              isFluid={true}
+                              isFocused={false}
+                              isValid={false}
+                              label="Your email"
+                              mapValueToProps={[Function]}
+                              name=""
+                              onChange={[Function]}
+                            >
+                              <Input
+                                className=""
+                                fluid={true}
+                                iconPosition={null}
+                                type="text"
+                              >
+                                <div
+                                  className="ui fluid input"
+                                >
+                                  <input
+                                    autoComplete={null}
+                                    key=".0"
+                                    maxLength={null}
+                                    name=""
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    type="text"
+                                    value=""
+                                  />
+                                  <label
+                                    key=".3"
+                                    onClick={[Function]}
+                                  >
+                                    Your email
+                                  </label>
+                                </div>
+                              </Input>
+                            </InputController>
+                          </TextInput>
+                          <ShowOn
+                            computer={false}
+                            mobile={true}
+                            parent={[Function]}
+                            parentProps={
+                              Object {
+                                "size": "small",
+                              }
+                            }
+                            tablet={false}
+                            widescreen={false}
+                          >
+                            <Divider
+                              className="show-on-mobile"
+                              hasLine={false}
+                              size="small"
+                            >
+                              <Divider
+                                className="show-on-mobile is-size-small"
+                                hidden={true}
+                                section={false}
+                              >
+                                <div
+                                  className="ui hidden divider show-on-mobile is-size-small"
+                                />
+                              </Divider>
+                            </Divider>
+                          </ShowOn>
+                        </div>
+                      </GridColumn>
+                    </GridColumn>
+                    <GridColumn
+                      computer={3}
+                      mobile={12}
+                      tablet={5}
+                      verticalAlignContent="top"
+                      width={null}
+                    >
+                      <GridColumn
+                        computer={3}
+                        mobile={12}
+                        tablet={5}
+                        verticalAlign="top"
+                        width={null}
+                      >
+                        <div
+                          className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                        >
+                          <Checkbox
+                            error={false}
+                            isChecked={false}
+                            isDisabled={false}
+                            isRadioButton={false}
+                            isToggle={false}
+                            isValid={false}
+                            label={
+                              <div
+                                className="privacy-consent-label"
+                              >
+                                I accept the privacy policy.
+                              </div>
+                            }
+                            name=""
+                            onChange={[Function]}
+                            onClick={[Function]}
+                          >
+                            <InputController
+                              adaptOnChangeEvent={[Function]}
+                              error={false}
+                              icon={null}
+                              initialValue=""
+                              inputOnChangeFunctionName="onChange"
+                              isFluid={false}
+                              isFocused={false}
+                              isValid={false}
+                              label={
+                                <div
+                                  className="privacy-consent-label"
+                                >
+                                  I accept the privacy policy.
+                                </div>
+                              }
+                              mapValueToProps={[Function]}
+                              name=""
+                              onChange={[Function]}
+                              value={false}
+                            >
+                              <Input
+                                className=""
+                                fluid={false}
+                                iconPosition={null}
+                                type="text"
+                              >
+                                <div
+                                  className="ui input"
+                                >
+                                  <Checkbox
+                                    checked={false}
+                                    disabled={false}
+                                    key=".0"
+                                    onChange={[Function]}
+                                    onClick={[Function]}
+                                    radio={false}
+                                    toggle={false}
+                                    type="checkbox"
+                                  >
+                                    <div
+                                      className="ui fitted checkbox"
+                                      onChange={[Function]}
+                                      onClick={[Function]}
+                                      onMouseDown={[Function]}
+                                    >
+                                      <input
+                                        checked={false}
+                                        className="hidden"
+                                        onClick={[Function]}
+                                        readOnly={true}
+                                        tabIndex={0}
+                                        type="checkbox"
+                                      />
+                                      <label />
+                                    </div>
+                                  </Checkbox>
+                                  <label
+                                    key=".3"
+                                    onClick={[Function]}
+                                  >
+                                    <div
+                                      className="privacy-consent-label"
+                                    >
+                                      I accept the privacy policy.
+                                    </div>
+                                  </label>
+                                </div>
+                              </Input>
+                            </InputController>
+                          </Checkbox>
+                          <Divider
+                            className=""
+                            hasLine={false}
+                            size="medium"
+                          >
+                            <Divider
+                              className=""
+                              hidden={true}
+                              section={false}
+                            >
+                              <div
+                                className="ui hidden divider"
+                              />
+                            </Divider>
+                          </Divider>
+                          <Button
+                            hasShadow={false}
+                            icon={null}
+                            isCompact={false}
+                            isDisabled={false}
+                            isFluid={true}
+                            isFormSubmit={false}
+                            isLoading={false}
+                            isPositionedRight={false}
+                            isRounded={true}
+                            isSecondary={false}
+                            onClick={[Function]}
+                            size={null}
+                          >
+                            <Button
+                              as="button"
+                              circular={true}
+                              className=""
+                              compact={false}
+                              disabled={false}
+                              floated="left"
+                              fluid={true}
+                              loading={false}
+                              onClick={[Function]}
+                              secondary={false}
+                              size={null}
+                              type="button"
+                            >
+                              <button
+                                className="ui circular fluid left floated button"
+                                onClick={[Function]}
+                                role="button"
+                                type="button"
+                              >
+                                Subscribe
+                              </button>
+                            </Button>
+                          </Button>
+                        </div>
+                      </GridColumn>
+                    </GridColumn>
+                  </div>
+                </GridRow>
+              </GridRow>
+            </div>
+          </Grid>
+        </Grid>
+        <Divider
+          className=""
+          hasLine={false}
+          size="medium"
+        >
+          <Divider
+            className=""
+            hidden={true}
+            section={false}
+          >
+            <div
+              className="ui hidden divider"
+            />
+          </Divider>
+        </Divider>
+      </div>
+    </Container>
+  </HorizontalGutters>
+</EmailCapture>
+`;
+
+exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is passed should render the right structure 1`] = `
+<EmailCapture
+  buttonText="Subscribe"
+  emailInputError={false}
+  emailInputLabel="Your email"
+  errorMessage={null}
+  headingText="Subscribe to our newsletter"
+  isPrivacyConsentInputChecked={false}
+  isPrivacyConsentRequired={false}
+  isUserOnMobile={false}
+  onChangeEmailInput={[Function]}
+  onClickButton={[Function]}
+  onClickPrivacyConsentInput={[Function]}
+  privacyConsentLabelText="I accept the privacy policy."
   successMessage="Yurrrrrrr"
 >
   <HorizontalGutters>
@@ -407,15 +1298,20 @@ exports[`<EmailCapture /> if \`props.successMessage\` is passed should render th
 </EmailCapture>
 `;
 
-exports[`<EmailCapture /> should render the right structure 1`] = `
+exports[`<EmailCapture /> the wrapped component should render the right structure 1`] = `
 <EmailCapture
   buttonText="Subscribe"
+  emailInputError={false}
+  emailInputLabel="Your email"
   errorMessage={null}
   headingText="Subscribe to our newsletter"
-  inputError={false}
-  inputLabel="Your email"
-  onChangeInput={[Function]}
+  isPrivacyConsentInputChecked={false}
+  isPrivacyConsentRequired={false}
+  isUserOnMobile={false}
+  onChangeEmailInput={[Function]}
   onClickButton={[Function]}
+  onClickPrivacyConsentInput={[Function]}
+  privacyConsentLabelText="I accept the privacy policy."
   successMessage={null}
 >
   <HorizontalGutters>

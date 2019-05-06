@@ -1,10 +1,21 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Component as EmailCapture } from './component';
+import { ComponentWithResponsive as EmailCapture } from './component';
 
-const getEmailCapture = props => mount(<EmailCapture {...props} />);
+const props = {
+  isUserOnMobile: false,
+};
+
+const getEmailCapture = overrideProps =>
+  shallow(<EmailCapture {...overrideProps} />);
+
+const getWrappedEmailCapture = (overrideProps = {}) => {
+  const Child = getEmailCapture().prop('as');
+
+  return mount(<Child {...props} {...overrideProps} />);
+};
 
 describe('<EmailCapture />', () => {
   it('should render the right structure', () => {
@@ -13,23 +24,54 @@ describe('<EmailCapture />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('if `props.errorMessage` is passed', () => {
+  describe('the wrapped component', () => {
     it('should render the right structure', () => {
-      const wrapper = getEmailCapture({ errorMessage: 'Nurrrrrrr' });
+      const wrapper = getWrappedEmailCapture();
 
       expect(wrapper).toMatchSnapshot();
     });
-  });
 
-  describe('if `props.successMessage` is passed', () => {
-    it('should render the right structure', () => {
-      const wrapper = getEmailCapture({ successMessage: 'Yurrrrrrr' });
+    describe('if `props.errorMessage` is passed', () => {
+      it('should render the right structure', () => {
+        const wrapper = getWrappedEmailCapture({ errorMessage: 'Nurrrrrrr' });
 
-      expect(wrapper).toMatchSnapshot();
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.isUserOnMobile === true` and `props.isPrivacyConsentRequired === true`', () => {
+      it('should render the right structure', () => {
+        const actual = getWrappedEmailCapture({
+          isPrivacyConsentRequired: true,
+          isUserOnMobile: true,
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.successMessage` is passed', () => {
+      it('should render the right structure', () => {
+        const wrapper = getWrappedEmailCapture({ successMessage: 'Yurrrrrrr' });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.isUserOnMobile === false` and `props.isPrivacyConsentRequired === true`', () => {
+      it('should render the right structure', () => {
+        const actual = getWrappedEmailCapture({
+          isPrivacyConsentRequired: true,
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
     });
   });
 
   it('should have `displayName` EmailCapture', () => {
-    expectComponentToHaveDisplayName(EmailCapture, 'EmailCapture');
+    const component = getEmailCapture().prop('as');
+
+    expectComponentToHaveDisplayName(component, 'EmailCapture');
   });
 });

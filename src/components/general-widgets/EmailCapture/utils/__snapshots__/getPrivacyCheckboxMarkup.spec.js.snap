@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getPrivacyCheckboxMarkup should return the correct structure 1`] = `
+<Checkbox
+  error="privacyConsentInputError"
+  isChecked={true}
+  isDisabled={false}
+  isRadioButton={false}
+  isToggle={false}
+  isValid={false}
+  label={
+    <div
+      className="privacy-consent-label"
+    >
+      privacyConsentLabelText
+      <Link
+        href="privacyConsentLabelLinkUrl"
+        isPositionedRight={false}
+        onClick={[Function]}
+        willOpenInNewTab={true}
+      >
+        privacyConsentLabelLinkText
+      </Link>
+    </div>
+  }
+  name=""
+  onChange={[Function]}
+  onClick={[Function]}
+/>
+`;
