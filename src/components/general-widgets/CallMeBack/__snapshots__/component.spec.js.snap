@@ -1274,6 +1274,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                       name="privacyConsent"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onClick={[Function]}
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
@@ -1309,6 +1310,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                               disabled={false}
                               key=".0"
                               onChange={[Function]}
+                              onClick={[Function]}
                               radio={false}
                               toggle={false}
                               type="checkbox"

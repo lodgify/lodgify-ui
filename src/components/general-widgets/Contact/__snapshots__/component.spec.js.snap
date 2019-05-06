@@ -633,6 +633,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                       name="privacyConsent"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onClick={[Function]}
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
@@ -668,6 +669,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                               disabled={false}
                               key=".0"
                               onChange={[Function]}
+                              onClick={[Function]}
                               radio={false}
                               toggle={false}
                               type="checkbox"
