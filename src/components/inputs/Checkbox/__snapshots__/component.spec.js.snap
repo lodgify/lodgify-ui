@@ -17,6 +17,7 @@ exports[`<Checkbox /> should return the right structure 1`] = `
 >
   <Checkbox
     disabled={false}
+    onClick={[Function]}
     radio={false}
     toggle={false}
     type="checkbox"

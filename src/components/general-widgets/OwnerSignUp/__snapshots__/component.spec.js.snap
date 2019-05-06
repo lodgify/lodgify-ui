@@ -285,6 +285,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                       name="privacyConsent"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      onClick={[Function]}
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
@@ -320,6 +321,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               disabled={false}
                               key=".0"
                               onChange={[Function]}
+                              onClick={[Function]}
                               radio={false}
                               toggle={false}
                               type="checkbox"

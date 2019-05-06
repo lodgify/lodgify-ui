@@ -1,6 +1,13 @@
 ```jsx
 <EmailCapture />
 ```
+### Variations
+
+#### Privacy consent
+
+```jsx
+<EmailCapture isPrivacyConsentRequired />
+```
 
 ### States
 
@@ -22,8 +29,13 @@
 
 ```jsx
 <EmailCapture
+  isPrivacyConsentRequired
+  privacyConsentLabelLinkText="thing"
+  privacyConsentLabelLinkUrl="/"
+  privacyConsentInputError="You forgot this"
+  privacyConsentLabelText="You've just gotta click this"
   buttonText="Send"
   headingText="Go on, give us your email..."
-  inputLabel="Type it here"
+  emailInputLabel="Type it here"
 />
 ```

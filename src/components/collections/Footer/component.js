@@ -36,17 +36,24 @@ export const Component = ({
   emailCaptureInputError,
   emailCaptureInputLabel,
   emailCaptureInputValue,
-  emailCaptureOnChangeInput,
   emailCaptureOnClickButton,
+  emailCapturePrivacyConsentInputError,
+  emailCapturePrivacyConsentLabelLinkText,
+  emailCapturePrivacyConsentLabelLinkUrl,
+  emailCapturePrivacyConsentLabelText,
   emailCaptureSuccessMessage,
-  faxNumberLabel,
   faxNumber,
+  faxNumberLabel,
   hasEmailCapture,
+  isEmailCapturePrivacyConsentInputChecked,
+  isEmailCapturePrivacyConsentRequired,
   languageOptions,
   languageValue,
   navigationItems,
   onChangeCurrency,
+  onChangeEmailCaptureInput,
   onChangeLanguage,
+  onClickEmailCapturePrivacyConsentInput,
   phoneNumber,
   propertyAddress,
   socialMediaLinks,
@@ -55,13 +62,20 @@ export const Component = ({
     {hasEmailCapture && (
       <EmailCapture
         buttonText={emailCaptureButtonText}
+        emailInputError={emailCaptureInputError}
+        emailInputLabel={emailCaptureInputLabel}
+        emailInputValue={emailCaptureInputValue}
         errorMessage={emailCaptureErrorMessage}
         headingText={emailCaptureHeadingText}
-        inputError={emailCaptureInputError}
-        inputLabel={emailCaptureInputLabel}
-        inputValue={emailCaptureInputValue}
-        onChangeInput={emailCaptureOnChangeInput}
+        isPrivacyConsentInputChecked={isEmailCapturePrivacyConsentInputChecked}
+        isPrivacyConsentRequired={isEmailCapturePrivacyConsentRequired}
+        onChangeEmailInput={onChangeEmailCaptureInput}
         onClickButton={emailCaptureOnClickButton}
+        onClickPrivacyConsentInput={onClickEmailCapturePrivacyConsentInput}
+        privacyConsentInputError={emailCapturePrivacyConsentInputError}
+        privacyConsentLabelLinkText={emailCapturePrivacyConsentLabelLinkText}
+        privacyConsentLabelLinkUrl={emailCapturePrivacyConsentLabelLinkUrl}
+        privacyConsentLabelText={emailCapturePrivacyConsentLabelText}
         successMessage={emailCaptureSuccessMessage}
       />
     )}
@@ -180,15 +194,22 @@ Component.defaultProps = {
   emailCaptureInputError: undefined,
   emailCaptureInputLabel: undefined,
   emailCaptureInputValue: undefined,
-  emailCaptureOnChangeInput: undefined,
   emailCaptureOnClickButton: undefined,
+  emailCapturePrivacyConsentInputError: undefined,
+  emailCapturePrivacyConsentLabelLinkText: undefined,
+  emailCapturePrivacyConsentLabelLinkUrl: undefined,
+  emailCapturePrivacyConsentLabelText: undefined,
   emailCaptureSuccessMessage: undefined,
   faxNumber: undefined,
   faxNumberLabel: FAX,
   hasEmailCapture: false,
+  isEmailCapturePrivacyConsentInputChecked: undefined,
+  isEmailCapturePrivacyConsentRequired: undefined,
   languageOptions: [],
   languageValue: null,
   navigationItems: null,
+  onChangeEmailCaptureInput: undefined,
+  onClickEmailCapturePrivacyConsentInput: undefined,
   phoneNumber: null,
   propertyAddress: undefined,
   socialMediaLinks: [],
@@ -237,15 +258,18 @@ Component.propTypes = {
   emailCaptureInputLabel: PropTypes.string,
   /** The value of the text input on the email capture form. */
   emailCaptureInputValue: PropTypes.string,
-  /** The function called when the text input on the email capture form is changed.
-   *  @param {String} name
-   *  @param {String} value
-   */
-  emailCaptureOnChangeInput: PropTypes.func,
   /** The function called when the button on the email capture form is clicked.
    *  @param {Object} event
    */
   emailCaptureOnClickButton: PropTypes.func,
+  /** The text to display in the privacy consent error message. */
+  emailCapturePrivacyConsentInputError: PropTypes.string,
+  /** The text to display as the link next to the privacy consent checkbox. */
+  emailCapturePrivacyConsentLabelLinkText: PropTypes.string,
+  /** The location of the link next to the privacy consent checkbox. */
+  emailCapturePrivacyConsentLabelLinkUrl: PropTypes.string,
+  /** The text to display next to the privacy consent checkbox. */
+  emailCapturePrivacyConsentLabelText: PropTypes.string,
   /** A success message to display in place of the button. */
   emailCaptureSuccessMessage: PropTypes.string,
   /** The fax number to display. */
@@ -254,6 +278,10 @@ Component.propTypes = {
   faxNumberLabel: PropTypes.string,
   /** Does the footer have an email capture form showing. */
   hasEmailCapture: PropTypes.bool,
+  /** The value of the privacy consent checkbox. */
+  isEmailCapturePrivacyConsentInputChecked: PropTypes.bool,
+  /** Displays a privacy consent checkbox in the email capture form. */
+  isEmailCapturePrivacyConsentRequired: PropTypes.bool,
   /** The options which the user can select for the language dropdown. */
   languageOptions: PropTypes.arrayOf(
     PropTypes.shape({
@@ -297,11 +325,20 @@ Component.propTypes = {
    *  @param {String} value
    */
   onChangeCurrency: PropTypes.func.isRequired,
+  /** The function called when the text input on the email capture form is changed.
+   *  @param {String} name
+   *  @param {String} value
+   */
+  onChangeEmailCaptureInput: PropTypes.func,
   /** The function called when the language dropdown is changed.
    *  @param {String} name
    *  @param {String} value
    */
   onChangeLanguage: PropTypes.func.isRequired,
+  /** The function called when the privacy consent checkbox on the email capture form is clicked.
+   *  @param {Object} event
+   */
+  onClickEmailCapturePrivacyConsentInput: PropTypes.func,
   /** The phone number to display */
   phoneNumber: PropTypes.string,
   /** The address of the property */
