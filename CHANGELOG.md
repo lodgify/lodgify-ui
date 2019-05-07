@@ -1,3 +1,10 @@
+## [1.188.2](https://github.com/lodgify/lodgify-ui/compare/v1.188.1...v1.188.2) (2019-05-07)
+
+
+### Bug Fixes
+
+* **EmailCapture:** hide privacy checkbox if error is passed ([e96f50b](https://github.com/lodgify/lodgify-ui/commit/e96f50b))
+
 ## [1.188.1](https://github.com/lodgify/lodgify-ui/compare/v1.188.0...v1.188.1) (2019-05-07)
 
 
