@@ -100,7 +100,7 @@ const Component = ({
           </GridColumn>
         )}
       </GridRow>
-      {!isUserOnMobile && isPrivacyConsentRequired && (
+      {!errorMessage && !isUserOnMobile && isPrivacyConsentRequired && (
         <GridRow>
           <GridColumn computer={5} />
           <GridColumn computer={4} mobile={12} tablet={12}>
