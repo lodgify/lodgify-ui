@@ -10,6 +10,8 @@
 
 @fontName: 'Arial';
 
+@importGoogleFonts: false;
+
 @bodyFontIdentifier: ~"@{themeCustomPropertyPrefix}-body-font";
 @bodyFontDefault: @fontName;
 @bodyFont: var(@bodyFontIdentifier, @bodyFontDefault) !important;
