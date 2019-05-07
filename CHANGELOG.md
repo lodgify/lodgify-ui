@@ -1,3 +1,10 @@
+## [1.188.1](https://github.com/lodgify/lodgify-ui/compare/v1.188.0...v1.188.1) (2019-05-07)
+
+
+### Bug Fixes
+
+* **globals:** disable loading of google fonts ([d0a6b3d](https://github.com/lodgify/lodgify-ui/commit/d0a6b3d))
+
 # [1.188.0](https://github.com/lodgify/lodgify-ui/compare/v1.187.0...v1.188.0) (2019-05-06)
 
 
