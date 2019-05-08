@@ -1,3 +1,5 @@
+import 'semantic-ui-styles/statistic.less';
+import 'semantic-ui-styles/segment.less';
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Statistic, Segment } from 'semantic-ui-react';

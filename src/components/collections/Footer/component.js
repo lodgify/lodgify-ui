@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/menu.less';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Menu } from 'semantic-ui-react';

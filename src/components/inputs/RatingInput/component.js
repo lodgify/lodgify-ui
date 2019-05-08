@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/rating.less';
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Rating } from 'semantic-ui-react';

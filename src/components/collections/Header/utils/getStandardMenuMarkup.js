@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/menu.less';
 import React, { Fragment } from 'react';
 import { Menu } from 'semantic-ui-react';
 import { size } from 'lodash';

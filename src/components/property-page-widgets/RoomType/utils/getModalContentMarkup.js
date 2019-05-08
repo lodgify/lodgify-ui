@@ -1,3 +1,5 @@
+import 'semantic-ui-styles/modal.less';
+import 'semantic-ui-styles/list.less';
 import React from 'react';
 import { Modal, List } from 'semantic-ui-react';
 import { size } from 'lodash';

@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/list.less';
 import React from 'react';
 import { List } from 'semantic-ui-react';
 

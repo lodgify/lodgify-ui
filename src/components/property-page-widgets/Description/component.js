@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/list.less';
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { List } from 'semantic-ui-react';

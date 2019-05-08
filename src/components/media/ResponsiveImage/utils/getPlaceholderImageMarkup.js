@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/image.less';
 import React, { Fragment } from 'react';
 import { Image } from 'semantic-ui-react';
 

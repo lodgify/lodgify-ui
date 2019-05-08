@@ -1,3 +1,5 @@
+import 'semantic-ui-styles/menu.less';
+import 'semantic-ui-styles/accordion.less';
 import React, { Fragment } from 'react';
 import { Menu, Accordion } from 'semantic-ui-react';
 import { size } from 'lodash';

@@ -1,4 +1,5 @@
 /* eslint react/prop-types: 0 */
+import 'semantic-ui-styles/form.less';
 import React, { Fragment } from 'react';
 import { Form } from 'semantic-ui-react';
 import { size } from 'lodash';

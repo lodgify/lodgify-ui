@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/form.less';
 import { Form } from 'semantic-ui-react';
 
 /**

@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/segment.less';
 import React, { Fragment } from 'react';
 import { Segment } from 'semantic-ui-react';
 

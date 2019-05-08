@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/label.less';
 import React from 'react';
 import { Label } from 'semantic-ui-react';
 

@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/form.less';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';

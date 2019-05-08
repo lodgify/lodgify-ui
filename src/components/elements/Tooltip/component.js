@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/popup.less';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Popup } from 'semantic-ui-react';

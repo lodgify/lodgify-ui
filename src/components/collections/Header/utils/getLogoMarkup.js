@@ -1,3 +1,5 @@
+import 'semantic-ui-styles/menu.less';
+import 'semantic-ui-styles/image.less';
 import React from 'react';
 import { Menu, Image } from 'semantic-ui-react';
 import getClassNames from 'classnames';

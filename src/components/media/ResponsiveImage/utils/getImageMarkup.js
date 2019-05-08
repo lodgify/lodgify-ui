@@ -1,3 +1,5 @@
+import 'semantic-ui-styles/image.less';
+import 'semantic-ui-styles/label.less';
 import React from 'react';
 import { Image, Label } from 'semantic-ui-react';
 

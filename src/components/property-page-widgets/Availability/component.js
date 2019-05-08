@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/card.less';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { CalendarMonth, CalendarDay } from 'react-dates';

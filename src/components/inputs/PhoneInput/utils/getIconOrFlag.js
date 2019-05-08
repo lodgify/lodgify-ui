@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/flag.less';
 import React from 'react';
 import { lowerCase } from 'lodash';
 import { Flag } from 'semantic-ui-react';

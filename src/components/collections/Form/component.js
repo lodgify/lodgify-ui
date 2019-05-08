@@ -1,3 +1,6 @@
+import 'semantic-ui-styles/card.less';
+import 'semantic-ui-styles/form.less';
+import 'semantic-ui-styles/message.less';
 import React, { PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Form, Message } from 'semantic-ui-react';

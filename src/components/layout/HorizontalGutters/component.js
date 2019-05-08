@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/container.less';
 import React from 'react';
 import { Container } from 'semantic-ui-react';
 

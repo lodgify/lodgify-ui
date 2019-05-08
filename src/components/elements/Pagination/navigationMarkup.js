@@ -1,3 +1,5 @@
+import 'semantic-ui-styles/button.less';
+import 'semantic-ui-styles/label.less';
 import React from 'react';
 import { Label, Button } from 'semantic-ui-react';
 

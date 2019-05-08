@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/modal.less';
 import React from 'react';
 import { Modal as SemanticModal } from 'semantic-ui-react';
 

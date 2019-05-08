@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/segment.less';
 import React from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';

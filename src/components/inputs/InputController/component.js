@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/input.less';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { isEqual, some } from 'lodash';

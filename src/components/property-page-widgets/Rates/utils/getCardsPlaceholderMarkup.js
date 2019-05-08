@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/card.less';
 import React, { Fragment } from 'react';
 import { Card } from 'semantic-ui-react';
 

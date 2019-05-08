@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/form.less';
 import React, { Children } from 'react';
 import { Form } from 'semantic-ui-react';
 
