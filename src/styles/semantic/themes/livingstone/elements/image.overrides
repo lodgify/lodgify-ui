@@ -95,6 +95,6 @@ figure.responsive-image {
   }
 
   &.is-rounded {
-    border-radius: @thumbnailBorderRadius;
+    border-radius: @roundedBorderRadius;
   }
 }
