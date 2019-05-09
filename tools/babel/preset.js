@@ -27,6 +27,18 @@ module.exports = () => ({
         importType: isESBuild ? 'es' : 'commonjs',
       },
     ],
+    isProductionBuild && [
+      'transform-rename-import',
+      {
+        replacements: [
+          { original: '^(.+?)\\.less$', replacement: '../$1.css' },
+          {
+            original: '^(.+?)/semantic',
+            replacement: '$1',
+          },
+        ],
+      },
+    ],
     '@babel/plugin-proposal-object-rest-spread',
     '@babel/plugin-proposal-class-properties',
     'lodash',
@@ -43,6 +55,7 @@ module.exports = () => ({
           media: './src/components/media',
           'property-page-widgets': './src/components/property-page-widgets',
           typography: './src/components/typography',
+          'semantic-ui-styles': './src/styles/semantic',
           utils: './src/utils',
         },
       },
