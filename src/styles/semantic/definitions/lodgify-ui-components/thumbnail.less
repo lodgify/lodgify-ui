@@ -1,0 +1,65 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'thumbnail';
+
+@import (multiple) '../../theme.config';
+
+/*-------------------
+       Thumbnail
+--------------------*/
+
+.ui.thumbnail {
+  height: @thumbnailHeight;
+  max-width: 100%;
+
+  figure.responsive-image {
+    height: 100%;
+
+    > img {
+      left: 50%;
+      max-width: none;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+    }
+  }
+
+  &.small {
+    height: @smallThumbnailHeight;
+  }
+
+  &.large {
+    height: @largeThumbnailHeight;
+  }
+
+  &.huge {
+    height: @hugeThumbnailHeight;
+  }
+
+  &.has-margin {
+    margin-right: @thumbnailMarginRight;
+  }
+
+  &.is-circular,
+  &.is-square {
+    width: @thumbnailWidth;
+
+    &.small {
+      width: @smallThumbnailWidth;
+    }
+
+    &.large {
+      width: @largeThumbnailWidth;
+    }
+
+    &.huge {
+      width: @hugeThumbnailWidth;
+    }
+  }
+}

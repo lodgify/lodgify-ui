@@ -1,0 +1,18 @@
+/*-------------------
+       Thumbnail
+--------------------*/
+
+@thumbnailBackground: center/cover;
+@thumbnailHeight: 75px;
+@thumbnailWidth: @thumbnailHeight;
+@thumbnailBorderRadius: @roundedBorderRadius;
+@thumbnailMarginRight: 1.5em;
+
+@smallThumbnailHeight: 50px;
+@smallThumbnailWidth: @smallThumbnailHeight;
+
+@largeThumbnailHeight: 100px;
+@largeThumbnailWidth: @largeThumbnailHeight;
+
+@hugeThumbnailHeight: 150px;
+@hugeThumbnailWidth: @hugeThumbnailHeight;
