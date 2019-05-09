@@ -1,0 +1,27 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'html';
+
+@import (multiple) '../../theme.config';
+
+/*----------------------
+          HTML
+-----------------------*/
+
+.html-container {
+
+  > img {
+    max-width: @htmlContainerImmediateImageChildMaxWidth;
+  }
+
+  & * {
+
+    img {
+      width: @htmlContainerImageChildWidth;
+    }
+  }
+}
