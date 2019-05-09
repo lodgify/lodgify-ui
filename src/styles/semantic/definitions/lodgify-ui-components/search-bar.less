@@ -1,0 +1,51 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'search-bar';
+
+@import (multiple) '../../theme.config';
+
+/*-------------------
+      Search Bar
+--------------------*/
+.search-bar {
+
+  &.is-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: @searchBarFixedBackgroundColor;
+    z-index: @searchBarFixedZIndex;
+    box-shadow: @searchBarFixedBoxShadow;
+    height: @searchBarFixedHeight;
+
+    .ui.grid {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      > .row {
+        height: @searchBarFixedHeight;
+        padding: @searchBarFixedPadding;
+      }
+    }
+
+    .ui.form .fields {
+      margin: 0;
+    }
+  }
+
+  .location-dropdown {
+
+    .dropdown-container {
+
+      .ui.selection.dropdown {
+        width: @searchBarLocationDropdownMinWidth;
+        padding-right: @38px;
+      }
+    }
+  }
+}

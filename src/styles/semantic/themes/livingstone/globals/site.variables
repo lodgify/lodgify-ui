@@ -447,13 +447,8 @@
 /*-------------------
      Search Bar
 --------------------*/
-@searchBarFixedBackgroundColor: @pureWhite;
-@searchBarFixedZIndex: @zIndexLevelTwo;
-@searchBarFixedPadding: @10px 0;
 @searchBarFixedHeight: 85px;
-@searchBarFixedBoxShadow: 0 -(@4px) @9px -(@6px) rgba(0, 0, 0, 0.29);
 @searchBarFixedButtonHeight: 42px;
-@searchBarLocationDropdownMinWidth: 170px;
 
 /*--------------------------
   Property Page Search Bar
