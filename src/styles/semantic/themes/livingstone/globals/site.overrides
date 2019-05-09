@@ -347,21 +347,6 @@ a:hover {
 *******************************/
 
 /*-------------------
-        Quote
---------------------*/
-
-blockquote.ui.quote {
-  border-left: @quoteBorderLeft;
-  box-shadow: @quoteBoxShadow;
-  padding: @quotePadding;
-  margin: @quoteMargin;
-}
-
-blockquote.ui.quote .row {
-  padding: @quoteRowPadding;
-}
-
-/*-------------------
        Slideshow
 --------------------*/
 
