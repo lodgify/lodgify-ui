@@ -450,11 +450,6 @@
 @searchBarFixedHeight: 85px;
 @searchBarFixedButtonHeight: 42px;
 
-/*--------------------------
-  Property Page Search Bar
---------------------------*/
-@propertyPageSearchBarHeight: @searchBarFixedHeight;
-
 /*-------------------
    Horizontal Gutter
 --------------------*/
