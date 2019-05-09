@@ -1,0 +1,9 @@
+/*-------------------
+     Search Bar
+--------------------*/
+
+@searchBarFixedBackgroundColor: @pureWhite;
+@searchBarFixedZIndex: @zIndexLevelTwo;
+@searchBarFixedPadding: @10px 0;
+@searchBarFixedBoxShadow: 0 -(@4px) @9px -(@6px) rgba(0, 0, 0, 0.29);
+@searchBarLocationDropdownMinWidth: 170px;
