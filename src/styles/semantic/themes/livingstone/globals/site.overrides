@@ -403,44 +403,6 @@ a:hover {
 }
 
 /*----------------------
-    Property Page Search
------------------------*/
-
-.property-page-searchbar {
-  height: @propertyPageSearchBarHeight;
-
-  .ui.segments > .ui.segments {
-    margin: 0;
-
-    @media @smallestWidescreen100pxOffsetScreen {
-
-      .ui.segment.is-rating {
-        display: none;
-      }
-    }
-  }
-
-  @media @smallestWidescreenScreen {
-
-    .button {
-      height: @searchBarFixedButtonHeight;
-      white-space: nowrap;
-    }
-  }
-
-  @media @tabletScreen {
-
-    .ui.segments > .ui.segment {
-      padding: 0;
-    }
-
-    .ui.grid > .row > .column:first-child {
-      padding-right: 0;
-    }
-  }
-}
-
-/*----------------------
        Placeholder
 -----------------------*/
 
