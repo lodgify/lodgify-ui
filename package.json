@@ -6,7 +6,7 @@
   "config": {
     "jest_config": "tools/jest/jest.config.js",
     "less_build_config": "tools/webpack/less.build.config.js",
-    "less_build_orphan": "lib/styles/orphan.js",
+    "less_build_orphan": "-rf lib/styles/*-orphan.js",
     "styleguide_config": "styleguide/config",
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -25,7 +25,7 @@
     }
   ],
   "scripts": {
-    "build": "npm-run-all -p build:less build:js -s rm:build-orphan",
+    "build": "npm-run-all build:js build:less rm:build-orphan",
     "build:less": "webpack --config $npm_package_config_less_build_config",
     "build:js": "BABEL_ENV=production babel src/ -d lib/",
     "commit": "git-cz",
@@ -74,8 +74,10 @@
     "babel-loader": "^8.0.2",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-replace-imports": "^1.0.2",
     "babel-plugin-semantic-ui-react-transform-imports": "^1.3.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.19",
+    "babel-plugin-transform-rename-import": "^2.3.0",
     "commitizen": "^2.9.6",
     "css-loader": "^0.28.10",
     "cz-conventional-changelog": "^2.1.0",

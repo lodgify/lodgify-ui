@@ -6,11 +6,15 @@
       "plugins": [
         ["semantic-ui-react-transform-imports", {
           "importType": "commonjs"
+        }],
+        ["transform-rename-import", {
+          "original": "^(.+?)\\.less$",
+          "replacement": "$1.css"
         }]
       ]
     }
   },
-  "presets": [ "@babel/react", "@babel/env" ],
+  "presets": ["@babel/react", "@babel/env"],
   "plugins": [
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-proposal-class-properties",
@@ -32,7 +36,6 @@
     }],
     ["transform-react-remove-prop-types", {
         "mode": "wrap"
-      }
-    ]
+    }]
   ]
 }
