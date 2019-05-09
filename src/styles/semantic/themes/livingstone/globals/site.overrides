@@ -500,21 +500,3 @@ a:hover {
     max-width: none;
   }
 }
-
-/*----------------------
-       HTML Container
------------------------*/
-
-.html-container {
-
-  > img {
-    max-width: @htmlContainerImmediateImageChildMaxWidth;
-  }
-
-  & * {
-
-    img {
-      width: @htmlContainerImageChildWidth;
-    }
-  }
-}

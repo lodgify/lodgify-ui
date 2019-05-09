@@ -494,9 +494,3 @@
     background-position: @placeholderBackgroundEndPosition 0;
   }
 }
-
-/*----------------------
-       HTML Container
------------------------*/
-@htmlContainerImmediateImageChildMaxWidth: 100%;
-@htmlContainerImageChildWidth: 100%;
