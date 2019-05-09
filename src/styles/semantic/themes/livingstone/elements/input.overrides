@@ -123,6 +123,10 @@
     }
   }
 
+  .ui.checkbox.toggle ~ label {
+    left: @48px;
+  }
+
   /* textarea */
 
   /* Date range picker */
