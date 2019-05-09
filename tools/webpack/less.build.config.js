@@ -4,16 +4,16 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const ROOT_PATH = path.join(__dirname, '..', '..');
-const SRC_STYLES_PATH = path.join(ROOT_PATH, 'src', 'styles');
 const LIB_STYLES_PATH = path.join(ROOT_PATH, 'lib', 'styles');
 
+const entries = require('./entries');
+
 module.exports = {
-  entry: path.join(SRC_STYLES_PATH, 'lodgify-ui.less'),
+  entry: entries,
   module: {
     rules: [
       {
-        test: /\.less$/,
-        include: SRC_STYLES_PATH,
+        test: /\.(less|css)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader'],
       },
       {
@@ -30,12 +30,12 @@ module.exports = {
     // Webpack has support for CSS-only modules on the way.
     // https://github.com/webpack/webpack/pull/6448
     // When this is released we can kill the orphan 🔪
-    filename: 'orphan.js',
+    filename: '[name]-orphan.js',
     path: LIB_STYLES_PATH,
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'lodgify-ui.css',
+      filename: '[name].css',
     }),
   ],
   resolve: {
