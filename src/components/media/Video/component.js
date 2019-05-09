@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/react-player.less';
 import ReactPlayer from 'react-player';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';

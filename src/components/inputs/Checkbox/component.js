@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/input.less';
 import 'semantic-ui-styles/checkbox.less';
 import React from 'react';
 import PropTypes from 'prop-types';

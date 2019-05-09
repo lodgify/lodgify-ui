@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/dimmer.less';
 import 'semantic-ui-styles/modal.less';
 import React from 'react';
 import PropTypes from 'prop-types';

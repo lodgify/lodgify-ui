@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/html.less';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import DOMPurify from 'dompurify';

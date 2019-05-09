@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/flex-container.less';
 import React from 'react';
 import PropTypes from 'prop-types';
 

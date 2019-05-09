@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/react-dates-datepicker.less';
 import moment from 'moment';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';

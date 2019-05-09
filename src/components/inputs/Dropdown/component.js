@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/transition.less';
 import 'semantic-ui-styles/dropdown.less';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';

@@ -1,3 +1,5 @@
+import 'semantic-ui-styles/search-bar.less';
+import 'semantic-ui-styles/property-page-search-bar.less';
 import React from 'react';
 import PropTypes from 'prop-types';
 

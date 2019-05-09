@@ -1,4 +1,6 @@
+import 'semantic-ui-styles/modal.less';
 import 'semantic-ui-styles/card.less';
+import 'semantic-ui-styles/react-image-gallery.less';
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';

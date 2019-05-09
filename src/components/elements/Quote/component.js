@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/quote.less';
 import React from 'react';
 import PropTypes from 'prop-types';
 

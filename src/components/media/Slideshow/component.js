@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/react-image-gallery.less';
 import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ImageGallery from 'react-image-gallery';

@@ -1,3 +1,4 @@
+import 'semantic-ui-styles/block-placeholder.less';
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import getClassNames from 'classnames';
