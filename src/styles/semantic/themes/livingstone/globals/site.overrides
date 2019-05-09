@@ -549,34 +549,6 @@ a:hover {
   }
 }
 
-/* Text placeholder */
-.placeholder.text {
-  height: @textPlaceholderHeight;
-
-  &.short {
-    margin-right: @textPlaceholderShortMarginRight;
-    width: @textPlaceholderShortLength;
-  }
-
-  &.medium {
-    margin-right: @textPlaceholderMediumMarginRight;
-    width: @textPlaceholderMediumLength;
-  }
-
-  &.long {
-    margin-right: @textPlaceholderLongMarginRight;
-    width: @textPlaceholderLongLength;
-  }
-
-  &.full {
-    width: @textPlaceholderFullLength;
-  }
-
-  &:not(:last-of-type) {
-    margin-bottom: @textPlaceholderMarginBottom;
-  }
-}
-
 /*----------------------
        Placeholder
 -----------------------*/
