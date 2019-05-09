@@ -1,0 +1,29 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'block-placeholder';
+
+@import (multiple) '../../theme.config';
+
+/*----------------------
+    Block Placeholder
+-----------------------*/
+
+.placeholder.block {
+  height: @blockPlaceholderDefaultHeight;
+
+  &.fluid {
+    min-height: 100%;
+  }
+
+  &.square {
+    padding-top: 100%;
+  }
+
+  &.rectangle {
+    padding-top: @blockPlaceholderRectanglePadding;
+  }
+}

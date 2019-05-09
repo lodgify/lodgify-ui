@@ -501,23 +501,6 @@ a:hover {
   }
 }
 
-/* Block placeholder */
-.placeholder.block {
-  height: @blockPlaceholderDefaultHeight;
-
-  &.fluid {
-    min-height: 100%;
-  }
-
-  &.square {
-    padding-top: 100%;
-  }
-
-  &.rectangle {
-    padding-top: @blockPlaceholderRectanglePadding;
-  }
-}
-
 /*----------------------
        Placeholder
 -----------------------*/
