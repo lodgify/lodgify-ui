@@ -1,3 +1,10 @@
+## [1.188.3](https://github.com/lodgify/lodgify-ui/compare/v1.188.2...v1.188.3) (2019-05-10)
+
+
+### Bug Fixes
+
+* **Slideshow:** images display if object-fit is supported ([11428b1](https://github.com/lodgify/lodgify-ui/commit/11428b1))
+
 ## [1.188.2](https://github.com/lodgify/lodgify-ui/compare/v1.188.1...v1.188.2) (2019-05-07)
 
 
