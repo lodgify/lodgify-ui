@@ -1,7 +1,7 @@
 import React from 'react';
-import { size } from 'lodash';
 import isValidHTML from 'is-html';
 
+import { size } from 'utils/size';
 import { HTML } from 'general-widgets/HTML';
 import { GridColumn } from 'layout/GridColumn';
 import { Paragraph } from 'typography/Paragraph';

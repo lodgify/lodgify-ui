@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { List } from 'semantic-ui-react';
-import { size } from 'lodash';
 
+import { size } from 'utils/size';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { HOUSE_RULES } from 'utils/default-strings';
 import { Grid } from 'layout/Grid';

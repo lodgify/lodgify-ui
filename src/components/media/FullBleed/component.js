@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 import { Segment } from 'semantic-ui-react';
-import { size } from 'lodash';
 
+import { size } from 'utils/size';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 
 import { DEFAULT_BOTTOM_OFFSET } from './constants';

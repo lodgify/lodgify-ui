@@ -1,8 +1,8 @@
 /* eslint react/prop-types: 0 */
 import React, { Fragment } from 'react';
 import { Form } from 'semantic-ui-react';
-import { size } from 'lodash';
 
+import { size } from 'utils/size';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
 import { NumberInput } from 'inputs/NumberInput';
