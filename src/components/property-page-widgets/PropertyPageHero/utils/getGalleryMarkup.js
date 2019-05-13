@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import { upperCase, size } from 'lodash';
-
+import { size } from 'lodash';
+import { toUpper } from 'utils/to-upper';
 import { Button } from 'elements/Button';
 import { ICON_NAMES } from 'elements/Icon';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
@@ -37,7 +37,7 @@ export const getGalleryMarkup = (
                 isPositionedRight
                 isSecondary
               >
-                {upperCase(secondaryButtonText)}
+                {toUpper(secondaryButtonText)}
               </Button>
             }
           />

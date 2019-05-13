@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Menu } from 'semantic-ui-react';
-import { toUpper, size } from 'lodash';
+import { size } from 'lodash';
 
+import { toUpper } from 'utils/to-upper';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { EmailCapture } from 'general-widgets/EmailCapture';
 import { Submenu } from 'elements/Submenu';
