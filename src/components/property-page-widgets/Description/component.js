@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { List } from 'semantic-ui-react';
-import { size } from 'lodash';
 import isValidHTML from 'is-html';
 
+import { size } from 'utils/size';
 import { HOME_HIGHLIGHTS, VIEW_MORE } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { getFirstFourItems } from 'utils/get-first-four-items';

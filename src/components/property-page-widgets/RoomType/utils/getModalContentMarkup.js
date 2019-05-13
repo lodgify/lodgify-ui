@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal, List } from 'semantic-ui-react';
-import { size } from 'lodash';
 
+import { size } from 'utils/size';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Amenities } from 'property-page-widgets/Amenities';
 import { Divider } from 'elements/Divider';

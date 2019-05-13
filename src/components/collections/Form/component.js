@@ -1,8 +1,9 @@
 import React, { PureComponent, Children } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Form, Message } from 'semantic-ui-react';
-import { size, forEach } from 'lodash';
+import { forEach } from 'lodash';
 
+import { size } from 'utils/size';
 import { Button } from 'elements/Button';
 import { Heading } from 'typography/Heading';
 import { Link } from 'elements/Link';

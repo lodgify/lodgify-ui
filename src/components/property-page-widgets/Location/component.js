@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { size } from 'lodash';
 
+import { size } from 'utils/size';
 import { LOCATION } from 'utils/default-strings';
 import { Divider } from 'elements/Divider';
 import { GoogleMap } from 'elements/GoogleMap';

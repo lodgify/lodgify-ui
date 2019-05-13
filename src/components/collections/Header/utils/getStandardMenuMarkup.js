@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Menu } from 'semantic-ui-react';
-import { size } from 'lodash';
 
+import { size } from 'utils/size';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Button } from 'elements/Button';
 import { Submenu } from 'elements/Submenu';
