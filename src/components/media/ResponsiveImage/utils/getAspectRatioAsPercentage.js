@@ -1,5 +1,3 @@
-import { isNumber } from 'lodash';
-
 import { getLowestCommonDenominator } from './getLowestCommonDenominator';
 
 /**
@@ -8,7 +6,7 @@ import { getLowestCommonDenominator } from './getLowestCommonDenominator';
  * @return {number|undefined}
  */
 export const getAspectRatioAsPercentage = (width, height) => {
-  if (isNumber(width) && isNumber(height)) {
+  if (typeof width === 'number' && typeof height === 'number') {
     const lowestCommonDenominator = getLowestCommonDenominator(width, height);
 
     const heightAspect = height / lowestCommonDenominator;
