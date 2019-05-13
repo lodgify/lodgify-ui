@@ -1,5 +1,3 @@
-import { fill } from 'lodash';
-
 /**
  * Returns a new array:
  * - of the required `length`; and
@@ -9,4 +7,4 @@ import { fill } from 'lodash';
  * @return {any[]}
  */
 export const getArrayOfLengthOfItem = (length, item) =>
-  fill(Array(length), item);
+  Array(length).fill(item);
