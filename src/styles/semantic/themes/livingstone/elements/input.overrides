@@ -123,6 +123,11 @@
     }
   }
 
+  .ui.checkbox.toggle ~ label {
+    left: @checkboxToggleLabelLeftPosition;
+    top: @checkboxToggleLabelTopPosition;
+  }
+
   /* textarea */
 
   /* Date range picker */
