@@ -17,7 +17,6 @@ export const Component = ({
   isChecked,
   isRadioButton,
   isToggle,
-  isValid,
   label,
   name,
   onChange,
@@ -26,7 +25,7 @@ export const Component = ({
   <InputController
     adaptOnChangeEvent={adaptOnChangeEvent}
     error={error}
-    isValid={isValid}
+    isValid={false}
     label={label}
     mapValueToProps={mapValueToProps}
     name={name}
@@ -50,7 +49,6 @@ Component.defaultProps = {
   isDisabled: false,
   isToggle: false,
   isRadioButton: false,
-  isValid: false,
   label: '',
   name: '',
   onChange: Function.prototype,
@@ -68,8 +66,6 @@ Component.propTypes = {
   isRadioButton: PropTypes.bool,
   /** Format to show an on or off choice. */
   isToggle: PropTypes.bool,
-  /** Is the checkbox in a valid state. */
-  isValid: PropTypes.bool,
   /** The label for the checkbox */
   label: PropTypes.node,
   /** The HTML input name. */
