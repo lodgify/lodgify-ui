@@ -54,6 +54,7 @@ describe('getModalFormMarkup', () => {
       const wrapper = getModalForm({
         ...props,
         isPrivacyConsentRequired: true,
+        privacyConsentLabelText: 'adhd',
       });
 
       expect(wrapper).toMatchSnapshot();

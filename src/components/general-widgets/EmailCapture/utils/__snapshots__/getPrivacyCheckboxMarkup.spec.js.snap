@@ -7,12 +7,16 @@ exports[`getPrivacyCheckboxMarkup should return the correct structure 1`] = `
   isDisabled={false}
   isRadioButton={false}
   isToggle={false}
-  isValid={false}
   label={
-    <div
+    <label
       className="privacy-consent-label"
     >
-      privacyConsentLabelText
+      <Paragraph
+        size="medium"
+        weight={null}
+      >
+        privacyConsentLabelText
+      </Paragraph>
       <Link
         href="privacyConsentLabelLinkUrl"
         isPositionedRight={false}
@@ -21,7 +25,7 @@ exports[`getPrivacyCheckboxMarkup should return the correct structure 1`] = `
       >
         privacyConsentLabelLinkText
       </Link>
-    </div>
+    </label>
   }
   name=""
   onChange={[Function]}

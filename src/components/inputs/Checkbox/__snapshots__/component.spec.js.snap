@@ -10,13 +10,14 @@ exports[`<Checkbox /> should return the right structure 1`] = `
   isFluid={false}
   isFocused={false}
   isValid={false}
-  label=""
+  label={null}
   mapValueToProps={[Function]}
   name=""
   onChange={[Function]}
 >
   <Checkbox
     disabled={false}
+    label=""
     onClick={[Function]}
     radio={false}
     toggle={false}
