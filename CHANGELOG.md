@@ -1,3 +1,13 @@
+## [1.188.4](https://github.com/lodgify/lodgify-ui/compare/v1.188.3...v1.188.4) (2019-05-15)
+
+
+### Bug Fixes
+
+* **Checkbox:** remove isValid prop ([5248a48](https://github.com/lodgify/lodgify-ui/commit/5248a48))
+* **Checkbox:** use semantic ui label ([ffd05ad](https://github.com/lodgify/lodgify-ui/commit/ffd05ad))
+* **getPrivacyConsentLabel:** update markup to work with semantic ui checkbox label ([8790c7c](https://github.com/lodgify/lodgify-ui/commit/8790c7c))
+* **Toggle:** label position is now visible ([28bea8a](https://github.com/lodgify/lodgify-ui/commit/28bea8a))
+
 ## [1.188.3](https://github.com/lodgify/lodgify-ui/compare/v1.188.2...v1.188.3) (2019-05-10)
 
 
