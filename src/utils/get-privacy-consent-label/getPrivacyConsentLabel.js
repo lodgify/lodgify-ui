@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Link } from 'elements/Link';
+import { Paragraph } from 'typography/Paragraph';
 import { PRIVACY_POLICY } from 'utils/default-strings/constants';
 
 /**
@@ -14,12 +15,12 @@ export const getPrivacyConsentLabel = (
   privacyConsentLabelLinkUrl,
   privacyConsentLabelLinkText = PRIVACY_POLICY
 ) => (
-  <div className="privacy-consent-label">
-    {privacyConsentLabelText}
+  <label className="privacy-consent-label">
+    <Paragraph>{privacyConsentLabelText}</Paragraph>
     {privacyConsentLabelLinkUrl && (
       <Link href={privacyConsentLabelLinkUrl} willOpenInNewTab>
         {privacyConsentLabelLinkText}
       </Link>
     )}
-  </div>
+  </label>
 );
