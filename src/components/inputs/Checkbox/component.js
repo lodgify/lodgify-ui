@@ -26,7 +26,6 @@ export const Component = ({
     adaptOnChangeEvent={adaptOnChangeEvent}
     error={error}
     isValid={false}
-    label={label}
     mapValueToProps={mapValueToProps}
     name={name}
     onChange={onChange}
@@ -34,6 +33,7 @@ export const Component = ({
   >
     <Checkbox
       disabled={isDisabled}
+      label={label}
       onClick={onClick}
       radio={isRadioButton}
       toggle={isToggle}

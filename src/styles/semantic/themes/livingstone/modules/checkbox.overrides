@@ -6,6 +6,11 @@
   width: 100%;
 
   /* Label */
+  & ~ label {
+    cursor: pointer;
+    user-select: none;
+  }
+
   input {
 
     & ~ label {
