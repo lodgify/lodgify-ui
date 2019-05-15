@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { GoogleMap, Marker, Circle } from 'react-google-maps';
+import { GoogleMap, Marker } from 'react-google-maps';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ReactGoogleMap } from './component';
@@ -71,32 +71,32 @@ describe('<ReactGoogleMaps />', () => {
   });
 
   describe('if `props.isShowingApproximateLocation` is false', () => {
-    it('should not render a `Circle`', () => {
+    it('should not render a `Marker`', () => {
       const wrapper = getGoogleMap();
-      const actual = wrapper.find(Circle);
+      const actual = wrapper.find(Marker);
 
       expect(actual).toHaveLength(0);
     });
   });
 
   describe('if `props.isShowingApproximateLocation` is true', () => {
-    it('should render a `Circle`', () => {
+    it('should render a `Marker`', () => {
       const wrapper = getGoogleMap({ isShowingApproximateLocation: true });
-      const actual = wrapper.find(Circle);
+      const actual = wrapper.find(Marker);
 
       expect(actual).toHaveLength(1);
     });
   });
 
-  describe('the `Circle` component', () => {
+  describe('the `Marker` component', () => {
     it('should get the right props', () => {
       const wrapper = getGoogleMap({ isShowingApproximateLocation: true });
-      const actual = wrapper.find(Circle).props();
+      const actual = wrapper.find(Marker).props();
 
       expect(actual).toEqual(
         expect.objectContaining({
-          center: expect.any(Object),
-          options: expect.any(Object),
+          position: expect.any(Object),
+          icon: expect.any(String),
         })
       );
     });
