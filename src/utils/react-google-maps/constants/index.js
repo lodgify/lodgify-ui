@@ -1,2 +1,2 @@
 export { mapOptions } from './mapOptions';
-export { circleOptions } from './circleOptions';
+export { MARKER_ICON } from './markerIcon';
