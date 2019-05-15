@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { GoogleMap, Marker, Circle } from 'react-google-maps';
+import { GoogleMap, Marker } from 'react-google-maps';
 
-import { mapOptions, circleOptions } from './constants';
+import { mapOptions } from './constants';
 import { adaptCoordinates } from './utils/adaptCoordinates';
+import { MARKER_ICON } from './constants';
 
 /**
  * Canonical implementation for react-google-maps.
@@ -25,9 +26,9 @@ export const Component = ({
         <Marker position={adaptCoordinates(latitude, longitude)} />
       )}
       {!!isShowingApproximateLocation && (
-        <Circle
-          center={adaptCoordinates(latitude, longitude)}
-          options={circleOptions}
+        <Marker
+          icon={MARKER_ICON}
+          position={adaptCoordinates(latitude, longitude)}
         />
       )}
     </GoogleMap>
