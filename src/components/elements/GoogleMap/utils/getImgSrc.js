@@ -3,6 +3,7 @@ import { mapOptions } from 'utils/react-google-maps';
 /**
  * @param  {string}  apiKey
  * @param  {string}  height
+ * @param  {boolean} isShowingApproximateLocation
  * @param  {boolean} isShowingExactLocation
  * @param  {number}  latitude
  * @param  {number}  longitude
@@ -12,6 +13,7 @@ import { mapOptions } from 'utils/react-google-maps';
 export const getImgSrc = (
   apiKey,
   height,
+  isShowingApproximateLocation,
   isShowingExactLocation,
   latitude,
   longitude,
@@ -34,6 +36,9 @@ export const getImgSrc = (
           ),
           isShowingExactLocation
             ? `&markers=icon:https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png|${latitude},${longitude}`
+            : '',
+          isShowingApproximateLocation
+            ? `&markers=anchor:center|icon:http://i1.cdbcdn.com/images/google-maps-approximate-location.png|${latitude},${longitude}`
             : '',
           `&key=${apiKey}`,
         ].join('')
