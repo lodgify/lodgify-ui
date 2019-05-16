@@ -8,7 +8,7 @@ export const circleOptions = {
   clickable: false,
   fillColor: circleColor,
   fillOpacity: 0.5,
-  radius: 500, // in metres
+  radius: 420, // in metres
   strokeColor: circleColor,
   strokeOpacity: 1,
 };
