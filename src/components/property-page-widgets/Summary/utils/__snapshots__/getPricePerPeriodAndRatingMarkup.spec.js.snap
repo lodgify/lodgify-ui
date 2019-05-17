@@ -25,7 +25,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`isShowingPlaceholder\` === true s
 </div>
 `;
 
-exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is \`0\` should return the right markup 1`] = `
+exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is falsy should return the right markup 1`] = `
 <div>
   <Segment>
     <div
@@ -60,7 +60,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is \`0\` should re
 </div>
 `;
 
-exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is not \`0\` should return the right markup 1`] = `
+exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should return the right markup 1`] = `
 <div>
   <Segment>
     <div
