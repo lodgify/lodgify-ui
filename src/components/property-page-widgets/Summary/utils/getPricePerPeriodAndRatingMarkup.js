@@ -28,7 +28,7 @@ export const getPricePerPeriodAndRatingMarkup = (
       <Segment>
         {getPricePerPeriodMarkup(pricePerPeriod, periodText, 'small')}
       </Segment>
-      {ratingNumber !== 0 && (
+      {!!ratingNumber && (
         <Segment className="is-rating">
           <Rating iconSize="tiny" ratingNumber={ratingNumber} />
         </Segment>

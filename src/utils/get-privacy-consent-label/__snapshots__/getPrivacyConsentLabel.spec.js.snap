@@ -1,10 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getPrivacyConsentLabel if \`privacyConsentLabelLinkUrl\` is passed should return the right structure 1`] = `
-<div
+<label
   className="privacy-consent-label"
 >
-  labelText
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    <p
+      className=""
+    >
+      labelText
+    </p>
+  </Paragraph>
   <Link
     href="labelLinkUrl"
     isPositionedRight={false}
@@ -32,14 +41,23 @@ exports[`getPrivacyConsentLabel if \`privacyConsentLabelLinkUrl\` is passed shou
       </a>
     </Button>
   </Link>
-</div>
+</label>
 `;
 
 exports[`getPrivacyConsentLabel if both \`privacyConsentLabelLinkUrl\` and \`privacyConsentLabelLinkText\` are passed should return the right structure 1`] = `
-<div
+<label
   className="privacy-consent-label"
 >
-  labelText
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    <p
+      className=""
+    >
+      labelText
+    </p>
+  </Paragraph>
   <Link
     href="labelLinkUrl"
     isPositionedRight={false}
@@ -67,13 +85,22 @@ exports[`getPrivacyConsentLabel if both \`privacyConsentLabelLinkUrl\` and \`pri
       </a>
     </Button>
   </Link>
-</div>
+</label>
 `;
 
 exports[`getPrivacyConsentLabel should return the right structure 1`] = `
-<div
+<label
   className="privacy-consent-label"
 >
-  labelText
-</div>
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    <p
+      className=""
+    >
+      labelText
+    </p>
+  </Paragraph>
+</label>
 `;

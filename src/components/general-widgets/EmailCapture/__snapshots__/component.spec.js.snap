@@ -467,13 +467,17 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                             isDisabled={false}
                             isRadioButton={false}
                             isToggle={false}
-                            isValid={false}
                             label={
-                              <div
+                              <label
                                 className="privacy-consent-label"
                               >
-                                I accept the privacy policy.
-                              </div>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  I accept the privacy policy.
+                                </Paragraph>
+                              </label>
                             }
                             name=""
                             onChange={[Function]}
@@ -488,13 +492,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                               isFluid={false}
                               isFocused={false}
                               isValid={false}
-                              label={
-                                <div
-                                  className="privacy-consent-label"
-                                >
-                                  I accept the privacy policy.
-                                </div>
-                              }
+                              label={null}
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
@@ -513,6 +511,18 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                     checked={false}
                                     disabled={false}
                                     key=".0"
+                                    label={
+                                      <label
+                                        className="privacy-consent-label"
+                                      >
+                                        <Paragraph
+                                          size="medium"
+                                          weight={null}
+                                        >
+                                          I accept the privacy policy.
+                                        </Paragraph>
+                                      </label>
+                                    }
                                     onChange={[Function]}
                                     onClick={[Function]}
                                     radio={false}
@@ -520,7 +530,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                     type="checkbox"
                                   >
                                     <div
-                                      className="ui fitted checkbox"
+                                      className="ui checkbox"
                                       onChange={[Function]}
                                       onClick={[Function]}
                                       onMouseDown={[Function]}
@@ -533,19 +543,22 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                         tabIndex={0}
                                         type="checkbox"
                                       />
-                                      <label />
+                                      <label
+                                        className="privacy-consent-label"
+                                      >
+                                        <Paragraph
+                                          size="medium"
+                                          weight={null}
+                                        >
+                                          <p
+                                            className=""
+                                          >
+                                            I accept the privacy policy.
+                                          </p>
+                                        </Paragraph>
+                                      </label>
                                     </div>
                                   </Checkbox>
-                                  <label
-                                    key=".3"
-                                    onClick={[Function]}
-                                  >
-                                    <div
-                                      className="privacy-consent-label"
-                                    >
-                                      I accept the privacy policy.
-                                    </div>
-                                  </label>
                                 </div>
                               </Input>
                             </InputController>
@@ -834,13 +847,17 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                             isDisabled={false}
                             isRadioButton={false}
                             isToggle={false}
-                            isValid={false}
                             label={
-                              <div
+                              <label
                                 className="privacy-consent-label"
                               >
-                                I accept the privacy policy.
-                              </div>
+                                <Paragraph
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  I accept the privacy policy.
+                                </Paragraph>
+                              </label>
                             }
                             name=""
                             onChange={[Function]}
@@ -855,13 +872,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               isFluid={false}
                               isFocused={false}
                               isValid={false}
-                              label={
-                                <div
-                                  className="privacy-consent-label"
-                                >
-                                  I accept the privacy policy.
-                                </div>
-                              }
+                              label={null}
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
@@ -880,6 +891,18 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                     checked={false}
                                     disabled={false}
                                     key=".0"
+                                    label={
+                                      <label
+                                        className="privacy-consent-label"
+                                      >
+                                        <Paragraph
+                                          size="medium"
+                                          weight={null}
+                                        >
+                                          I accept the privacy policy.
+                                        </Paragraph>
+                                      </label>
+                                    }
                                     onChange={[Function]}
                                     onClick={[Function]}
                                     radio={false}
@@ -887,7 +910,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                     type="checkbox"
                                   >
                                     <div
-                                      className="ui fitted checkbox"
+                                      className="ui checkbox"
                                       onChange={[Function]}
                                       onClick={[Function]}
                                       onMouseDown={[Function]}
@@ -900,19 +923,22 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                         tabIndex={0}
                                         type="checkbox"
                                       />
-                                      <label />
+                                      <label
+                                        className="privacy-consent-label"
+                                      >
+                                        <Paragraph
+                                          size="medium"
+                                          weight={null}
+                                        >
+                                          <p
+                                            className=""
+                                          >
+                                            I accept the privacy policy.
+                                          </p>
+                                        </Paragraph>
+                                      </label>
                                     </div>
                                   </Checkbox>
-                                  <label
-                                    key=".3"
-                                    onClick={[Function]}
-                                  >
-                                    <div
-                                      className="privacy-consent-label"
-                                    >
-                                      I accept the privacy policy.
-                                    </div>
-                                  </label>
                                 </div>
                               </Input>
                             </InputController>

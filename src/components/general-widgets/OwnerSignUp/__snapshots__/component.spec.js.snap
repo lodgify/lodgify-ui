@@ -274,13 +274,17 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                       isDisabled={false}
                       isRadioButton={false}
                       isToggle={false}
-                      isValid={false}
                       label={
-                        <div
+                        <label
                           className="privacy-consent-label"
                         >
-                          I accept the privacy policy.
-                        </div>
+                          <Paragraph
+                            size="medium"
+                            weight={null}
+                          >
+                            I accept the privacy policy.
+                          </Paragraph>
+                        </label>
                       }
                       name="privacyConsent"
                       onBlur={[Function]}
@@ -296,13 +300,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
-                        label={
-                          <div
-                            className="privacy-consent-label"
-                          >
-                            I accept the privacy policy.
-                          </div>
-                        }
+                        label={null}
                         mapValueToProps={[Function]}
                         name="privacyConsent"
                         onChange={[Function]}
@@ -320,6 +318,18 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               checked={false}
                               disabled={false}
                               key=".0"
+                              label={
+                                <label
+                                  className="privacy-consent-label"
+                                >
+                                  <Paragraph
+                                    size="medium"
+                                    weight={null}
+                                  >
+                                    I accept the privacy policy.
+                                  </Paragraph>
+                                </label>
+                              }
                               onChange={[Function]}
                               onClick={[Function]}
                               radio={false}
@@ -327,7 +337,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               type="checkbox"
                             >
                               <div
-                                className="ui fitted checkbox"
+                                className="ui checkbox"
                                 onChange={[Function]}
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
@@ -340,19 +350,22 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                   tabIndex={0}
                                   type="checkbox"
                                 />
-                                <label />
+                                <label
+                                  className="privacy-consent-label"
+                                >
+                                  <Paragraph
+                                    size="medium"
+                                    weight={null}
+                                  >
+                                    <p
+                                      className=""
+                                    >
+                                      I accept the privacy policy.
+                                    </p>
+                                  </Paragraph>
+                                </label>
                               </div>
                             </Checkbox>
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              <div
-                                className="privacy-consent-label"
-                              >
-                                I accept the privacy policy.
-                              </div>
-                            </label>
                           </div>
                         </Input>
                       </InputController>

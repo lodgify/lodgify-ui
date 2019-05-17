@@ -101,26 +101,26 @@
     transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
   }
 
-  .ui.checkbox ~ label {
-    width: 100%;
-    color: @checkboxLabelColor;
-    left: @checkboxLabelLeftPosition;
-    top: 0;
+  .ui.checkbox > label.privacy-consent-label {
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
 
-    .privacy-consent-label {
-      line-height: @checkboxLabelLineHeight;
-      display: flex;
-
-      .ui.button {
-        padding: @checkboxPrivacyConsentLabelButtonPadding;
-        line-height: inherit;
-      }
+    .ui.button {
+      padding: @checkboxPrivacyConsentLabelButtonPadding;
+      line-height: inherit;
+      margin-bottom: @checkboxPrivacyConsentButtonBottomMargin;
     }
 
-    &:before,
-    &:after {
-      cursor: pointer;
+    .ui.button,
+    p {
+      line-height: @checkboxPrivacyConsentParagraphLineHeight;
     }
+  }
+
+  .ui.checkbox.toggle ~ label {
+    left: @checkboxToggleLabelLeftPosition;
+    top: @checkboxToggleLabelTopPosition;
   }
 
   /* textarea */
