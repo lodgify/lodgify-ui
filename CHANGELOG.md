@@ -1,3 +1,12 @@
+# [1.189.0](https://github.com/lodgify/lodgify-ui/compare/v1.188.5...v1.189.0) (2019-05-17)
+
+
+### Features
+
+* **circleOptions:** reduce Circle radius ([a31629c](https://github.com/lodgify/lodgify-ui/commit/a31629c))
+* **getImgSrc:** add marker for static map ([c74f927](https://github.com/lodgify/lodgify-ui/commit/c74f927))
+* **GoogleMap:** pass isShowingApproximateLocation to getImageSrc ([ed88db6](https://github.com/lodgify/lodgify-ui/commit/ed88db6))
+
 ## [1.188.5](https://github.com/lodgify/lodgify-ui/compare/v1.188.4...v1.188.5) (2019-05-17)
 
 
