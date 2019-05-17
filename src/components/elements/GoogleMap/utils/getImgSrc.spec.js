@@ -16,11 +16,12 @@ describe('getImgSrc', () => {
   });
 
   describe('if `parentNodeWidth` is not `0`', () => {
-    describe('if `isShowingExactLocation` is `false`', () => {
+    describe('if `isShowingExactLocation` and `isShowingApproximateLocation` are `false`', () => {
       it('should return the right string', () => {
         const actual = getImgSrc(
           apiKey,
           height,
+          false,
           false,
           latitude,
           longitude,
@@ -36,7 +37,24 @@ describe('getImgSrc', () => {
         const actual = getImgSrc(
           apiKey,
           height,
+          false,
           true,
+          latitude,
+          longitude,
+          parentNodeWidth
+        );
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
+    describe('if `isShowingApproximateLocation` is `true`', () => {
+      it('should return the right string', () => {
+        const actual = getImgSrc(
+          apiKey,
+          height,
+          true,
+          false,
           latitude,
           longitude,
           parentNodeWidth

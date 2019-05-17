@@ -88,6 +88,7 @@ export class Component extends PureComponent {
             src={getImgSrc(
               apiKey,
               height,
+              isShowingApproximateLocation,
               isShowingExactLocation,
               latitude,
               longitude,
