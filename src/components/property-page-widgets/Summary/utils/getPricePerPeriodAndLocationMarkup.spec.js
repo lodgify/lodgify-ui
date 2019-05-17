@@ -33,7 +33,7 @@ describe('getPricePerPeriodAndLocationMarkup', () => {
     });
   });
 
-  describe('if `ratingNumber` is not `0`', () => {
+  describe('if `ratingNumber` is not truthy', () => {
     it('should return the right markup', () => {
       const ratingNumber = 1;
       const wrapper = getMarkupAsRenderedComponent(ratingNumber, periodText);
@@ -42,7 +42,7 @@ describe('getPricePerPeriodAndLocationMarkup', () => {
     });
   });
 
-  describe('if `ratingNumber` is `0`', () => {
+  describe('if `ratingNumber` is falsy', () => {
     it('should return the right markup', () => {
       const ratingNumber = 0;
       const wrapper = getMarkupAsRenderedComponent(ratingNumber, periodText);
