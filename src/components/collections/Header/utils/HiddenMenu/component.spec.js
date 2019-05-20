@@ -115,14 +115,18 @@ describe('HiddenMenu', () => {
   });
 
   describe('handleAccordionTitleClick', () => {
-    describe('if `this.state.activeAccordionItem` is truthy', () => {
+    describe('if `this.state.activeAccordionItem` is equal to `event.currentTarget.offsetParent`', () => {
       it('should call `this.forceUpdate`', () => {
         const wrapper = getHiddenMenuShallow();
 
         wrapper.instance().forceUpdate = jest.fn();
         wrapper.setState({ activeAccordionItem });
 
-        wrapper.instance().handleAccordionTitleClick();
+        wrapper.instance().handleAccordionTitleClick({
+          currentTarget: {
+            offsetParent: activeAccordionItem,
+          },
+        });
 
         expect(wrapper.instance().forceUpdate).toHaveBeenCalled();
       });
