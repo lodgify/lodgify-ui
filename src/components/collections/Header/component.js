@@ -10,8 +10,8 @@ import { getNavigationItemsWidth } from './utils/getNavigationItemsWidth';
 import { getMenuWidth } from './utils/getMenuWidth';
 import { getLogoMarkup } from './utils/getLogoMarkup';
 import { getIsMenuHidden } from './utils/getIsMenuHidden';
-import { getHiddenMenuMarkup } from './utils/getHiddenMenuMarkup';
 import { getStandardMenuMarkup } from './utils/getStandardMenuMarkup';
+import { HiddenMenu } from './utils/HiddenMenu';
 
 /**
  * A header displays a logo, grouped navigation items
@@ -86,9 +86,14 @@ export class Component extends PureComponent {
             logoSrcSet
           )}
           <Menu.Menu position="right">
-            {isMenuHidden
-              ? getHiddenMenuMarkup(this.props, activeNavigationItemIndex)
-              : getStandardMenuMarkup(this.props, activeNavigationItemIndex)}
+            {isMenuHidden ? (
+              <HiddenMenu
+                {...this.props}
+                activeNavigationItemIndex={activeNavigationItemIndex}
+              />
+            ) : (
+              getStandardMenuMarkup(this.props, activeNavigationItemIndex)
+            )}
           </Menu.Menu>
         </HorizontalGutters>
       </header>
@@ -111,7 +116,6 @@ Component.defaultProps = {
 
 Component.propTypes = {
   /** The index of the active navigation item. */
-  // eslint-disable-next-line react/no-unused-prop-types
   activeNavigationItemIndex: PropTypes.number,
   /** Is the background filled with a color defined in CSS. */
   isBackgroundFilled: PropTypes.bool,
@@ -128,7 +132,6 @@ Component.propTypes = {
   /** The text for the logo. */
   logoText: PropTypes.string.isRequired,
   /** The items for a user to navigate the site. */
-  // eslint-disable-next-line react/no-unused-prop-types
   navigationItems: PropTypes.arrayOf(
     PropTypes.shape({
       /** The href url for an item which is a link. */
@@ -148,7 +151,6 @@ Component.propTypes = {
     })
   ).isRequired,
   /** An optional primary call to action to display as a [`<Button />`](#button). */
-  // eslint-disable-next-line react/no-unused-prop-types
   primaryCTA: PropTypes.shape({
     /** The on click handler for the call to action. */
     onClick: PropTypes.func.isRequired,
