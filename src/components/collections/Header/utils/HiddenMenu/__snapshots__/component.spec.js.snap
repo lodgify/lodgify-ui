@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HiddenMenu by default should render the right structure 1`] = `
+<Component
+  activeNavigationItemIndex={null}
+  logoHref="/"
+  logoSrc={null}
+  logoText="yo"
+  navigationItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+      Object {
+        "subItems": Array [
+          Object {
+            "href": "/la-casa-viva",
+            "text": "La Casa Viva",
+          },
+          Object {
+            "href": "/la-casa-muerta",
+            "text": "La Casa Muerta",
+          },
+          Object {
+            "href": "/the-white-lodge",
+            "text": "The White Lodge",
+          },
+          Object {
+            "href": "/the-black-lodge",
+            "text": "The Black Lodge",
+          },
+        ],
+        "text": "All properties",
+      },
+      Object {
+        "href": "/",
+        "text": "Contact Us",
+      },
+      Object {
+        "href": "/",
+        "text": "What to do",
+      },
+    ]
+  }
+  primaryCTA={
+    Object {
+      "onClick": [Function],
+      "text": "Book now",
+    }
+  }
+>
+  <MenuItem>
+    <div
+      className="item"
+      onClick={[Function]}
+    >
+      <Modal
+        hasCloseIcon={true}
+        hasPadding={false}
+        hasRoundedCorners={false}
+        header={
+          <MenuItem
+            className=""
+            href="/"
+            link={true}
+          >
+            <FlexContainer
+              alignContent={null}
+              alignItems={null}
+              flexDirection="column"
+              flexWrap={null}
+              justifyContent="center"
+            >
+              <Heading
+                className={null}
+                hasMargin={true}
+                isColorInverted={false}
+                size="small"
+                textAlign={null}
+              >
+                yo
+              </Heading>
+            </FlexContainer>
+          </MenuItem>
+        }
+        isFullscreen={true}
+        onClose={[Function]}
+        size="tiny"
+        trigger={
+          <Icon
+            color={null}
+            hasBorder={false}
+            isButton={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText={null}
+            labelWeight={null}
+            name="bars"
+            path={null}
+            size={null}
+          />
+        }
+      >
+        <Modal
+          className=""
+          closeIcon={
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="close"
+              path={null}
+              size={null}
+            />
+          }
+          closeOnDimmerClick={true}
+          closeOnDocumentClick={false}
+          dimmer="inverted"
+          eventPool="Modal"
+          onClose={[Function]}
+          size="fullscreen"
+          trigger={
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="bars"
+              path={null}
+              size={null}
+            />
+          }
+        >
+          <Portal
+            className="ui inverted page modals dimmer transition visible active"
+            closeOnDocumentClick={false}
+            closeOnEscape={true}
+            closeOnRootNodeClick={true}
+            eventPool="Modal"
+            mountNode={<body />}
+            onClose={[Function]}
+            onMount={[Function]}
+            onOpen={[Function]}
+            onUnmount={[Function]}
+            openOnTriggerClick={true}
+            trigger={
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="bars"
+                path={null}
+                size={null}
+              />
+            }
+          >
+            <Ref
+              innerRef={[Function]}
+            >
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="bars"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </i>
+              </Icon>
+            </Ref>
+          </Portal>
+        </Modal>
+      </Modal>
+    </div>
+  </MenuItem>
+</Component>
+`;
