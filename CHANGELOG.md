@@ -1,3 +1,10 @@
+## [1.190.1](https://github.com/lodgify/lodgify-ui/compare/v1.190.0...v1.190.1) (2019-05-20)
+
+
+### Bug Fixes
+
+* **HiddenMenu:** check if same event target before setting state ([b939864](https://github.com/lodgify/lodgify-ui/commit/b939864))
+
 # [1.190.0](https://github.com/lodgify/lodgify-ui/compare/v1.189.0...v1.190.0) (2019-05-20)
 
 
