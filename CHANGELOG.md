@@ -1,3 +1,15 @@
+# [1.190.0](https://github.com/lodgify/lodgify-ui/compare/v1.189.0...v1.190.0) (2019-05-20)
+
+
+### Bug Fixes
+
+* **Header:** consume HiddenMenu ([ab9051b](https://github.com/lodgify/lodgify-ui/commit/ab9051b))
+
+
+### Features
+
+* **Header:** expose HiddenMenu component ([497b33b](https://github.com/lodgify/lodgify-ui/commit/497b33b))
+
 # [1.189.0](https://github.com/lodgify/lodgify-ui/compare/v1.188.5...v1.189.0) (2019-05-17)
 
 
