@@ -1,8 +1,8 @@
 const path = require('path');
 
-const { kebabCase } = require('lodash');
-
 const { SRC_DIR } = require('../constants');
+
+const kebabCase = require('./utils/kebabeCase');
 
 const buildComponentsPath = category =>
   path.join(SRC_DIR, `components/${category}/**/component.js`);
