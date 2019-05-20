@@ -1,0 +1,1 @@
+export { lowerCase } from './lowerCase';
