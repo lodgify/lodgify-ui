@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import { isNil } from 'lodash';
 
+import { isNil } from 'utils/is-nil';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Paragraph } from 'typography/Paragraph';
 

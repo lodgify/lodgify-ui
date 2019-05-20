@@ -1,4 +1,4 @@
-import { isNil } from 'lodash';
+import { isNil } from 'utils/is-nil';
 
 /**
  * @param  {any} previousValue
