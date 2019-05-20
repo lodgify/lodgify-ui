@@ -37,7 +37,7 @@ export class Component extends React.PureComponent {
   createMenuRef = menu => (this.menu = menu);
 
   handleAccordionTitleClick = event => {
-    if (this.state.activeAccordionItem) {
+    if (this.state.activeAccordionItem === event.currentTarget.offsetParent) {
       this.forceUpdate();
       return;
     }
