@@ -1,6 +1,6 @@
-jest.mock('lodash/get');
+jest.mock('get-value');
 
-import { get } from 'lodash';
+import get from 'get-value';
 
 import { getMenuWidth } from './getMenuWidth';
 

@@ -1,7 +1,7 @@
-jest.mock('lodash/get');
+jest.mock('get-value');
 jest.mock('./getWidthPlusMargin');
 
-import { get } from 'lodash';
+import get from 'get-value';
 
 import { getNavigationItemsWidth } from './getNavigationItemsWidth';
 import { getWidthPlusMargin } from './getWidthPlusMargin';
