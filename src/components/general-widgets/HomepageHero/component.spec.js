@@ -1,3 +1,4 @@
+jest.mock('uniqid');
 jest.mock('react-dates', () => {
   const { Component } = require('react');
 

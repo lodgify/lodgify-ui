@@ -392,7 +392,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                               daySize={52}
                                                               displayFormat="DD/MM/YYYY"
                                                               endDate={null}
-                                                              endDateId="end_date_id_7"
                                                               endDatePlaceholderText="Check-out"
                                                               focusedInput={null}
                                                               hideKeyboardShortcutsPanel={true}
@@ -434,7 +433,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                               onFocusChange={[Function]}
                                                               openDirection="up"
                                                               startDate={null}
-                                                              startDateId="start_date_id_8"
                                                               startDatePlaceholderText="Check-in"
                                                               withPortal={true}
                                                             >
@@ -1477,7 +1475,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                               daySize={52}
                                                               displayFormat="DD/MM/YYYY"
                                                               endDate={null}
-                                                              endDateId="end_date_id_3"
                                                               endDatePlaceholderText="Check-out"
                                                               focusedInput={null}
                                                               hideKeyboardShortcutsPanel={true}
@@ -1519,7 +1516,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                               onFocusChange={[Function]}
                                                               openDirection="up"
                                                               startDate={null}
-                                                              startDateId="start_date_id_4"
                                                               startDatePlaceholderText="Check-in"
                                                               withPortal={true}
                                                             >

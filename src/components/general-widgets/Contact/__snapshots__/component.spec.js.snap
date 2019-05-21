@@ -495,7 +495,6 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   daySize={52}
                                   displayFormat="DD/MM/YYYY"
                                   endDate={null}
-                                  endDateId="end_date_id_19"
                                   endDatePlaceholderText="Departure"
                                   focusedInput={null}
                                   hideKeyboardShortcutsPanel={true}
@@ -537,7 +536,6 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   startDate={null}
-                                  startDateId="start_date_id_20"
                                   startDatePlaceholderText="Arrival"
                                   withPortal={true}
                                 >
@@ -1297,7 +1295,6 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                   daySize={52}
                                   displayFormat="DD/MM/YYYY"
                                   endDate={null}
-                                  endDateId="end_date_id_15"
                                   endDatePlaceholderText="Departure"
                                   focusedInput={null}
                                   hideKeyboardShortcutsPanel={true}
@@ -1339,7 +1336,6 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   startDate={null}
-                                  startDateId="start_date_id_16"
                                   startDatePlaceholderText="Arrival"
                                   withPortal={true}
                                 >
@@ -2541,7 +2537,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   daySize={52}
                                   displayFormat="DD/MM/YYYY"
                                   endDate={null}
-                                  endDateId="end_date_id_7"
                                   endDatePlaceholderText="Departure"
                                   focusedInput={null}
                                   hideKeyboardShortcutsPanel={true}
@@ -2583,7 +2578,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   startDate={null}
-                                  startDateId="start_date_id_8"
                                   startDatePlaceholderText="Arrival"
                                   withPortal={true}
                                 >
@@ -3523,7 +3517,6 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                   daySize={52}
                                   displayFormat="DD/MM/YYYY"
                                   endDate={null}
-                                  endDateId="end_date_id_11"
                                   endDatePlaceholderText="Departure"
                                   focusedInput={null}
                                   hideKeyboardShortcutsPanel={true}
@@ -3565,7 +3558,6 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   startDate={null}
-                                  startDateId="start_date_id_12"
                                   startDatePlaceholderText="Arrival"
                                   withPortal={true}
                                 >
@@ -4449,7 +4441,6 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   daySize={52}
                                   displayFormat="DD/MM/YYYY"
                                   endDate={null}
-                                  endDateId="end_date_id_3"
                                   endDatePlaceholderText="Departure"
                                   focusedInput={null}
                                   hideKeyboardShortcutsPanel={true}
@@ -4491,7 +4482,6 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   startDate={null}
-                                  startDateId="start_date_id_4"
                                   startDatePlaceholderText="Arrival"
                                   withPortal={true}
                                 >

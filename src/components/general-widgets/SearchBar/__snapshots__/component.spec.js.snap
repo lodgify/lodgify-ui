@@ -501,7 +501,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                               daySize={52}
                               displayFormat="DD/MM/YYYY"
                               endDate={null}
-                              endDateId="end_date_id_3"
                               endDatePlaceholderText="Check-out"
                               focusedInput={null}
                               hideKeyboardShortcutsPanel={true}
@@ -543,7 +542,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                               onFocusChange={[Function]}
                               openDirection="down"
                               startDate={null}
-                              startDateId="start_date_id_4"
                               startDatePlaceholderText="Check-in"
                               withPortal={true}
                             >
@@ -1570,7 +1568,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                       daySize={52}
                                                       displayFormat="DD/MM/YYYY"
                                                       endDate={null}
-                                                      endDateId="end_date_id_7"
                                                       endDatePlaceholderText="Check-out"
                                                       focusedInput={null}
                                                       hideKeyboardShortcutsPanel={true}
@@ -1612,7 +1609,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                       onFocusChange={[Function]}
                                                       openDirection="up"
                                                       startDate={null}
-                                                      startDateId="start_date_id_8"
                                                       startDatePlaceholderText="Check-in"
                                                       withPortal={true}
                                                     >
@@ -2327,7 +2323,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                               daySize={52}
                               displayFormat="DD/MM/YYYY"
                               endDate={null}
-                              endDateId="end_date_id_11"
                               endDatePlaceholderText="Check-out"
                               focusedInput={null}
                               hideKeyboardShortcutsPanel={true}
@@ -2369,7 +2364,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                               onFocusChange={[Function]}
                               openDirection="down"
                               startDate={null}
-                              startDateId="start_date_id_12"
                               startDatePlaceholderText="Check-in"
                               withPortal={true}
                             >
@@ -2682,7 +2676,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                               daySize={52}
                               displayFormat="DD/MM/YYYY"
                               endDate={null}
-                              endDateId="end_date_id_15"
                               endDatePlaceholderText="Check-out"
                               focusedInput={null}
                               hideKeyboardShortcutsPanel={true}
@@ -2724,7 +2717,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                               onFocusChange={[Function]}
                               openDirection="down"
                               startDate={null}
-                              startDateId="start_date_id_16"
                               startDatePlaceholderText="Check-in"
                               withPortal={true}
                             >
@@ -3365,7 +3357,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                               daySize={52}
                               displayFormat="DD/MM/YYYY"
                               endDate={null}
-                              endDateId="end_date_id_19"
                               endDatePlaceholderText="Check-out"
                               focusedInput={null}
                               hideKeyboardShortcutsPanel={true}
@@ -3407,7 +3398,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                               onFocusChange={[Function]}
                               openDirection="down"
                               startDate={null}
-                              startDateId="start_date_id_20"
                               startDatePlaceholderText="Check-in"
                               withPortal={true}
                             >
