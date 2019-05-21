@@ -1,7 +1,8 @@
 import moment from 'moment';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { uniqueId, debounce } from 'lodash';
+import { uniqueId } from 'lodash';
+import { debounce } from 'debounce';
 import { DateRangePicker } from 'react-dates';
 
 import 'react-dates/initialize';

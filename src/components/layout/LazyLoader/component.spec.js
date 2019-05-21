@@ -1,5 +1,5 @@
 jest.mock('./utils/getIsVisible');
-jest.mock('lodash/debounce');
+jest.mock('debounce');
 
 import React from 'react';
 import { mount, shallow } from 'enzyme';

@@ -112,6 +112,7 @@
     "webpack-cli": "^3.0.0"
   },
   "dependencies": {
+    "debounce": "^1.2.0",
     "is-html": "^1.1.0",
     "is-url": "^1.2.4",
     "libphonenumber-js": "^1.1.9",

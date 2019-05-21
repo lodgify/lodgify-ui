@@ -1,10 +1,10 @@
-jest.mock('lodash/debounce');
+jest.mock('debounce');
 jest.mock('./utils/getParentNodeWidth');
 jest.mock('./utils/getImgSrc');
 
 import React from 'react';
 import { mount } from 'enzyme';
-import { debounce } from 'lodash';
+import { debounce } from 'debounce';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as GoogleMap } from './component';

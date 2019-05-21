@@ -1,10 +1,10 @@
-jest.mock('lodash/debounce');
+jest.mock('debounce');
 jest.mock('./utils/getNavigationItemsWidth');
 jest.mock('./utils/getMenuWidth');
 jest.mock('./utils/getIsMenuHidden');
 
 import React from 'react';
-import { debounce } from 'lodash';
+import { debounce } from 'debounce';
 import { mount, shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 

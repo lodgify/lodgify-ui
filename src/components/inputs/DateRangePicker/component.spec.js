@@ -11,7 +11,7 @@ jest.mock('react-dates', () => {
 });
 jest.mock('utils/get-window-height');
 jest.mock('utils/is-blur-event');
-jest.mock('lodash/debounce');
+jest.mock('debounce');
 jest.mock('lodash/uniqueId');
 jest.mock('./utils/getIsFocusControlled');
 
@@ -19,7 +19,8 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import moment from 'moment';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
-import { debounce, uniqueId } from 'lodash';
+import { uniqueId } from 'lodash';
+import { debounce } from 'debounce';
 
 import { getWindowHeight } from 'utils/get-window-height';
 import { isBlurEvent } from 'utils/is-blur-event';

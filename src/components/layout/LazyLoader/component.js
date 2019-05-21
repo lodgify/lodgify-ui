@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { debounce } from 'lodash';
+import { debounce } from 'debounce';
 import PropTypes from 'prop-types';
 
 import { getIsVisible } from './utils/getIsVisible';

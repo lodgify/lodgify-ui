@@ -2,7 +2,8 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 import { Form } from 'semantic-ui-react';
-import { debounce, isEqual } from 'lodash';
+import { isEqual } from 'lodash';
+import { debounce } from 'debounce';
 
 import { CHECK_OUR_AVAILABILITY, SEARCH } from 'utils/default-strings';
 import { HorizontalGutters } from 'layout/HorizontalGutters';

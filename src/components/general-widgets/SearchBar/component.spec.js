@@ -9,14 +9,14 @@ jest.mock('react-dates', () => {
 
   return { DateRangePicker };
 });
-jest.mock('lodash/debounce');
+jest.mock('debounce');
 jest.mock('./utils/getInitialValue');
 jest.mock('./utils/getWillLocationDropdownOpenAbove');
 
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { Form } from 'semantic-ui-react';
-import { debounce } from 'lodash';
+import { debounce } from 'debounce';
 
 import { Dropdown } from 'inputs/Dropdown';
 import { GridColumn } from 'layout/GridColumn';

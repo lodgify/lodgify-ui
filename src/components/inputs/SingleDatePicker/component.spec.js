@@ -10,12 +10,12 @@ jest.mock('react-dates', () => {
   return { SingleDatePicker };
 });
 jest.mock('utils/get-window-height');
-jest.mock('lodash/debounce');
+jest.mock('debounce');
 
 import React from 'react';
 import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
-import { debounce } from 'lodash';
+import { debounce } from 'debounce';
 
 import { getWindowHeight } from 'utils/get-window-height';
 
