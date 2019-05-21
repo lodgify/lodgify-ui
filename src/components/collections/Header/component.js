@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { debounce } from 'lodash';
+import { debounce } from 'debounce';
 import getClassNames from 'classnames';
 import { Menu } from 'semantic-ui-react';
 
