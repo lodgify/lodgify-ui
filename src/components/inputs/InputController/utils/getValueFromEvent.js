@@ -1,4 +1,4 @@
-import { get } from 'lodash';
+import get from 'get-value';
 
 /**
  * @param  {Object} event

@@ -1,7 +1,7 @@
 import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ImageGallery from 'react-image-gallery';
-import { get } from 'lodash';
+import get from 'get-value';
 import getClassNames from 'classnames';
 
 import { Heading } from 'typography/Heading';

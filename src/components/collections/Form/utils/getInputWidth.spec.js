@@ -17,7 +17,7 @@ describe('getInputWidth', () => {
   });
 
   it('should return undefined if `props.width` does not exist', () => {
-    const inputs = ['String for some reason', <input />, <TextInput />];
+    const inputs = [{}, <input />, <TextInput />];
 
     inputs.forEach(input => {
       const actual = getInputWidth(input);
