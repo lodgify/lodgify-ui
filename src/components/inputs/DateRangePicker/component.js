@@ -1,7 +1,7 @@
 import moment from 'moment';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { uniqueId } from 'lodash';
+import uniqid from 'uniqid';
 import { debounce } from 'debounce';
 import { DateRangePicker } from 'react-dates';
 
@@ -114,8 +114,8 @@ class Component extends PureComponent {
           onDatesChange={Function.prototype}
           onFocusChange={this.handleFocusChange}
           // Static required props.
-          endDateId={uniqueId('end_date_id_')}
-          startDateId={uniqueId('start_date_id_')}
+          endDateId={uniqid('end_date_id_')}
+          startDateId={uniqid('start_date_id_')}
           // Static custom appearance props.
           customArrowIcon={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
           customInputIcon={<Icon name={ICON_NAMES.CALENDAR} />}
