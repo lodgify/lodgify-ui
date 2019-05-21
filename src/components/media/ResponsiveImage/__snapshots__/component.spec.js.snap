@@ -92,7 +92,11 @@ exports[`<ResponsiveImage /> if \`props.isLazyLoaded\` is true should have the r
       }
     }
     lazyComponent={[Function]}
-    lazyProps={Object {}}
+    lazyProps={
+      Object {
+        "imageUrl": undefined,
+      }
+    }
   >
     <div>
       <ResponsiveImage

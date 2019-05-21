@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { omit, pick } from 'lodash';
 
 import { LazyLoader } from 'layout/LazyLoader';
+
+import { getLazyProps } from './utils/getLazyProps';
+import { getComponentProps } from './utils/getComponentProps';
 
 /**
  * @param  {string[]} lazyPropsKeys
@@ -21,8 +23,8 @@ export const withLazyLoad = (...lazyPropsKeys) => WrappedComponent =>
     };
 
     render = () => {
-      const lazyProps = pick(this.props, lazyPropsKeys);
-      const componentProps = omit(this.props, lazyPropsKeys);
+      const lazyProps = getLazyProps(this.props, lazyPropsKeys);
+      const componentProps = getComponentProps(this.props, lazyPropsKeys);
       const { isLazyLoaded } = this.props;
 
       if (isLazyLoaded) {
