@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { isEqual } from 'lodash';
+import isEqual from 'fast-deep-equal';
 
 import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { getControlledInputValue } from 'utils/get-controlled-input-value';

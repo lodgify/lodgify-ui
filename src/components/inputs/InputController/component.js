@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { isEqual, some } from 'lodash';
+import { some } from 'lodash';
 import { Input } from 'semantic-ui-react';
 import getClassNames from 'classnames';
+import isEqual from 'fast-deep-equal';
 
 import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { getControlledInputValue } from 'utils/get-controlled-input-value';
