@@ -1,6 +1,6 @@
-import { flatten } from 'lodash';
+import 'array-flat-polyfill';
 
-const newLineRegularExpression = /(\r\n|\r|\n)/;
+import { NEW_LINE_REGEX } from './constants';
 
 /**
  * Takes any number of strings, finds newlines and
@@ -9,13 +9,11 @@ const newLineRegularExpression = /(\r\n|\r|\n)/;
  * @return {string[]}
  */
 export const getParagraphsFromStrings = (...strings) =>
-  flatten(
-    strings.map(string =>
+  strings
+    .map(string =>
       string
-        .split(newLineRegularExpression)
+        .split(NEW_LINE_REGEX)
         .map(subString => subString.trim())
-        .filter(
-          subString => subString && !subString.match(newLineRegularExpression)
-        )
+        .filter(subString => subString && !subString.match(NEW_LINE_REGEX))
     )
-  );
+    .flat();
