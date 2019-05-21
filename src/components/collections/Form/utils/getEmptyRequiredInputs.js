@@ -1,4 +1,4 @@
-import { pickBy } from 'lodash';
+import { pickBy } from 'utils/pick-by';
 
 import { getValidationWithDefaults } from './getValidationWithDefaults';
 import { getIsRequiredError } from './getIsRequiredError';
