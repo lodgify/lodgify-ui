@@ -1,8 +1,8 @@
-jest.mock('lodash/isEqual');
+jest.mock('fast-deep-equal');
 jest.mock('./getErroredState');
 jest.mock('./setInputState');
 
-import { isEqual } from 'lodash';
+import isEqual from 'fast-deep-equal';
 
 import { getErroredState } from './getErroredState';
 import { setInputState } from './setInputState';
