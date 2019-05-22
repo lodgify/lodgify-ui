@@ -1,5 +1,3 @@
-jest.mock('dompurify');
-
 import React from 'react';
 import { shallow } from 'enzyme';
 import {
@@ -8,11 +6,6 @@ import {
   expectComponentToHaveDisplayName,
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
-import DOMPurify from 'dompurify';
-
-const SANITIZED_STRING = '🤬';
-
-DOMPurify.sanitize.mockReturnValue(SANITIZED_STRING);
 
 import { Component as HTML } from './component';
 
@@ -80,25 +73,6 @@ describe('<HTML />', () => {
             __html: expect.any(String),
           }),
         });
-      });
-    });
-  });
-
-  describe('`componentDidMount`', () => {
-    it('should call `this.setState` with the correct shape', () => {
-      const wrapper = getHTMLWidget();
-
-      wrapper.instance().setState = jest.fn();
-      wrapper.instance().componentDidMount();
-
-      expect(wrapper.instance().setState).toHaveBeenCalledWith({
-        cleanHTMLString: SANITIZED_STRING,
-      });
-    });
-
-    it('should call `DOMPurify.sanitize` with the correct arguments', () => {
-      expect(DOMPurify.sanitize).toHaveBeenCalledWith('', {
-        ADD_ATTR: ['target'],
       });
     });
   });
