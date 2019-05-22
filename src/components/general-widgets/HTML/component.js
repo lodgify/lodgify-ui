@@ -1,48 +1,25 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import DOMPurify from 'dompurify';
 
 /**
  * The HTML widget sanitises and renders HTML strings.
- * @extends {React.PureComponent}
- * @returns {Object}
  */
-export class Component extends PureComponent {
-  state = {
-    cleanHTMLString: null,
-  };
-
-  componentDidMount = () => {
-    this.setState({
-      // `DOMPurify.sanitize` is in `componentDidMount` so that it
-      // is not called during server side rendering.
-      // Reason: DOMPurify depends on browser features.
-      cleanHTMLString: DOMPurify.sanitize(this.props.htmlString, {
-        ADD_ATTR: ['target'],
-      }),
-    });
-  };
-
-  render() {
-    const { cleanHTMLString } = this.state;
-    const { children } = this.props;
-
-    return children ? (
-      <div>
-        <div
-          className="html-container"
-          dangerouslySetInnerHTML={{ __html: cleanHTMLString }}
-        />
-        {children}
-      </div>
-    ) : (
+// eslint-disable-next-line jsdoc/require-jsdoc
+export const Component = ({ children, htmlString }) =>
+  children ? (
+    <div>
       <div
         className="html-container"
-        dangerouslySetInnerHTML={{ __html: cleanHTMLString }}
+        dangerouslySetInnerHTML={{ __html: htmlString }}
       />
-    );
-  }
-}
+      {children}
+    </div>
+  ) : (
+    <div
+      className="html-container"
+      dangerouslySetInnerHTML={{ __html: htmlString }}
+    />
+  );
 
 Component.displayName = 'HTML';
 
