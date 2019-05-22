@@ -1,7 +1,6 @@
 import ReactPlayer from 'react-player';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import DOMPurify from 'dompurify';
 import isValidUrl from 'is-url';
 import isValidHTML from 'is-html';
 import getClassNames from 'classnames';
@@ -13,63 +12,39 @@ import { logWarning } from './utils/logWarning';
 /**
  * The Video widget. It allows the consumer to render videos given a URL or
  * an embeddable HTML snippet.
- * @extends {React.PureComponent}
- * @returns {Object}
  */
-export class Component extends PureComponent {
-  state = {
-    cleanHTMLString: null,
+// eslint-disable-next-line jsdoc/require-jsdoc
+export const Component = ({ height, isResponsive, videoSource, width }) => {
+  const playerWrapperProps = {
+    className: getClassNames('video', 'player-wrapper', {
+      'is-url': isValidUrl(videoSource),
+      'is-html': isValidHTML(videoSource),
+      'is-responsive': isResponsive,
+    }),
+    style: getPlayerCss(isResponsive, width, height),
   };
 
-  componentDidMount = () => {
-    const { videoSource } = this.props;
-
-    isValidHTML(videoSource) &&
-      this.setState({
-        // `DOMPurify.sanitize` is in `componentDidMount` so that it
-        // is not called during server side rendering.
-        // Reason: DOMPurify depends on browser features.
-        cleanHTMLString: DOMPurify.sanitize(videoSource, {
-          SANITIZE_DOM: true,
-          ALLOWED_TAGS: ['iframe', 'object', 'video', 'audio'],
-        }),
-      });
-  };
-
-  render() {
-    const { videoSource, isResponsive, width, height } = this.props;
-
-    const playerWrapperProps = {
-      className: getClassNames('video', 'player-wrapper', {
-        'is-url': isValidUrl(videoSource),
-        'is-html': isValidHTML(videoSource),
-        'is-responsive': isResponsive,
-      }),
-      style: getPlayerCss(isResponsive, width, height),
-    };
-
-    switch (true) {
-      case isValidUrl(videoSource):
-        return (
-          <div {...playerWrapperProps}>
-            <ReactPlayer {...getReactPlayerProps(isResponsive, videoSource)} />
-          </div>
-        );
-      case isValidHTML(videoSource):
-        return (
-          <div
-            {...playerWrapperProps}
-            dangerouslySetInnerHTML={{
-              __html: this.state.cleanHTMLString,
-            }}
-          />
-        );
-      default:
-        logWarning(videoSource);
-        return null;
-    }
+  switch (true) {
+    case isValidUrl(videoSource):
+      return (
+        <div {...playerWrapperProps}>
+          <ReactPlayer {...getReactPlayerProps(isResponsive, videoSource)} />
+        </div>
+      );
+    case isValidHTML(videoSource):
+      return (
+        <div
+          {...playerWrapperProps}
+          dangerouslySetInnerHTML={{
+            __html: videoSource,
+          }}
+        />
+      );
+    default:
+      logWarning(videoSource);
+      return null;
   }
-}
+};
 
 Component.displayName = 'Video';
 
