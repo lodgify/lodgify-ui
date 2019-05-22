@@ -1,6 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { GoogleMap, Marker, Circle } from 'react-google-maps';
+import { GoogleMap } from 'react-google-maps/lib/components/GoogleMap';
+import { Marker } from 'react-google-maps/lib/components/Marker';
+import { Circle } from 'react-google-maps/lib/components/Circle';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ReactGoogleMap } from './component';
