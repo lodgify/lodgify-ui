@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { GoogleMap, Marker, Circle } from 'react-google-maps';
+import { GoogleMap } from 'react-google-maps/lib/components/GoogleMap';
+import { Marker } from 'react-google-maps/lib/components/Marker';
+import { Circle } from 'react-google-maps/lib/components/Circle';
 
 import { mapOptions, circleOptions } from './constants';
 import { adaptCoordinates } from './utils/adaptCoordinates';
