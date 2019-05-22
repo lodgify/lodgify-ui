@@ -1,3 +1,13 @@
+## [1.190.2](https://github.com/lodgify/lodgify-ui/compare/v1.190.1...v1.190.2) (2019-05-22)
+
+
+### Bug Fixes
+
+* **HTML:** remove html string sanitisation ([26e4555](https://github.com/lodgify/lodgify-ui/commit/26e4555))
+* **Promotion:** background images always fit the available space ([4a2d039](https://github.com/lodgify/lodgify-ui/commit/4a2d039))
+* **Promotion:** discount box takes theme colour ([e6a1710](https://github.com/lodgify/lodgify-ui/commit/e6a1710))
+* **Video:** remove html string sanitisation ([987b708](https://github.com/lodgify/lodgify-ui/commit/987b708))
+
 ## [1.190.1](https://github.com/lodgify/lodgify-ui/compare/v1.190.0...v1.190.1) (2019-05-20)
 
 
