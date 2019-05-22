@@ -288,13 +288,23 @@
       z-index: @promotionBeforeLayerZIndex;
 
       > img {
-        left: 50%;
-        max-width: none;
-        min-height: 100%;
-        position: absolute;
+        width: 100%;
+        height: auto;
         top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        width: auto;
+      }
+
+      @supports (object-fit: cover) {
+
+        > img {
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          transform: none;
+          object-fit: cover;
+        }
       }
     }
 
