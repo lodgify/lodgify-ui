@@ -189,6 +189,8 @@
 
 .ui.segment.is-promotion {
   background-color: @promotionBackgroundColor;
+  background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+  color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
   border-radius: @promotionBorderRadius;
   cursor: pointer;
   z-index: @promotionZIndex;
