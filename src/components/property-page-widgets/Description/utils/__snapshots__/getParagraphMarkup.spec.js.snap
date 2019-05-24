@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getDescriptionTextMarkup should return the right shape 1`] = `
+Array [
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    yo yo yo yo yo yo yo yo yo yo
+  </Paragraph>,
+]
+`;

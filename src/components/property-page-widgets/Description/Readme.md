@@ -34,19 +34,35 @@ const {
 />
 ```
 
-#### Extra description text
+#### Long description text
 
 ```jsx
 const {
-  descriptionText,
-  extraDescriptionText,
+  longDescriptionText,
   homeHighlights,
   propertyMainCharacteristics,
 } = require('./mock-data/props');
 
 <Description
-  descriptionText={descriptionText}
-  extraDescriptionText={extraDescriptionText}
+  descriptionText={longDescriptionText}
+  homeHighlights={homeHighlights}
+  propertyMainCharacteristics={propertyMainCharacteristics}
+  propertyName="Lonely Lodge"
+  propertyType="Bed & Breakfast"
+/>
+```
+
+#### HTML description text
+
+```jsx
+const {
+  htmlDescriptionText,
+  homeHighlights,
+  propertyMainCharacteristics,
+} = require('./mock-data/props');
+
+<Description
+  descriptionText={htmlDescriptionText}
   homeHighlights={homeHighlights}
   propertyMainCharacteristics={propertyMainCharacteristics}
   propertyName="Lonely Lodge"

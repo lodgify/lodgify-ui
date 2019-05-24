@@ -4,7 +4,8 @@ import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-he
 
 import {
   descriptionText,
-  extraDescriptionText,
+  longDescriptionText,
+  htmlDescriptionText,
   propertyMainCharacteristics,
 } from './mock-data/props';
 import { Component as Description } from './component';
@@ -43,22 +44,27 @@ describe('<Description />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('if `props.descriptionText` is defined', () => {
+  describe('if `props.descriptionText` is HTML', () => {
+    it('should have the correct structure', () => {
+      const wrapper = getDescription({ descriptionText: htmlDescriptionText });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.descriptionText` is a plain string with fewer than 100 words', () => {
     it('should have the correct structure', () => {
       const wrapper = getDescription({ descriptionText });
 
       expect(wrapper).toMatchSnapshot();
     });
+  });
 
-    describe('if `props.extraDescriptionText` is defined', () => {
-      it('should have the correct structure', () => {
-        const wrapper = getDescription({
-          descriptionText,
-          extraDescriptionText,
-        });
+  describe('if `props.descriptionText` is a plain string with more than 100 words', () => {
+    it('should have the correct structure', () => {
+      const wrapper = getDescription({ descriptionText: longDescriptionText });
 
-        expect(wrapper).toMatchSnapshot();
-      });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
