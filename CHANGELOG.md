@@ -1,3 +1,10 @@
+# [1.191.0](https://github.com/lodgify/lodgify-ui/compare/v1.190.2...v1.191.0) (2019-05-24)
+
+
+### Features
+
+* **Description:** handle undefined description test and HTML content ([1d5de51](https://github.com/lodgify/lodgify-ui/commit/1d5de51))
+
 ## [1.190.2](https://github.com/lodgify/lodgify-ui/compare/v1.190.1...v1.190.2) (2019-05-22)
 
 
