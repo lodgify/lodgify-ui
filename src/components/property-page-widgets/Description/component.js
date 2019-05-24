@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { List, Button } from 'semantic-ui-react';
+import { List } from 'semantic-ui-react';
 import { size } from 'lodash';
+import isValidHTML from 'is-html';
 
 import { HOME_HIGHLIGHTS, VIEW_MORE } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
@@ -12,9 +13,9 @@ import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 import { Subheading } from 'typography/Subheading';
 import { ShowOn } from 'layout/ShowOn';
-import { Modal } from 'elements/Modal';
+import { HTML } from 'general-widgets/HTML';
 
-import { getParagraphOrHTML } from './utils/getParagraphOrHTML';
+import { getDescriptionTextMarkup } from './utils/getDescriptionTextMarkup';
 
 /**
  * The standard widget for displaying the description of a property.
@@ -23,7 +24,6 @@ import { getParagraphOrHTML } from './utils/getParagraphOrHTML';
 export const Component = ({
   descriptionText,
   extraDescriptionButtonText,
-  extraDescriptionText,
   homeHighlights,
   homeHighlightsHeadingText,
   propertyMainCharacteristics,
@@ -67,15 +67,10 @@ export const Component = ({
     </GridColumn>
     {descriptionText && (
       <GridColumn width={12}>
-        {getParagraphOrHTML(descriptionText)}
-        {extraDescriptionText && (
-          <Modal
-            hasPadding
-            trigger={<Button basic>{extraDescriptionButtonText}</Button>}
-          >
-            {getParagraphOrHTML(descriptionText)}
-            {getParagraphOrHTML(extraDescriptionText)}
-          </Modal>
+        {isValidHTML(descriptionText) ? (
+          <HTML htmlString={descriptionText} />
+        ) : (
+          getDescriptionTextMarkup(descriptionText, extraDescriptionButtonText)
         )}
       </GridColumn>
     )}
@@ -103,18 +98,15 @@ Component.displayName = 'Description';
 
 Component.defaultProps = {
   descriptionText: null,
-  extraDescriptionText: null,
   homeHighlightsHeadingText: HOME_HIGHLIGHTS,
   extraDescriptionButtonText: VIEW_MORE,
 };
 
 Component.propTypes = {
-  /** The description text to display. Respects HTML markup. */
+  /** The description text to display. Long text will be partially displayed in a modal. HTML strings of any length will be respected. */
   descriptionText: PropTypes.string,
   /** The text for the button that opens the extra description modal. */
   extraDescriptionButtonText: PropTypes.string,
-  /** Extra text to display in a modal. Respects HTML markup. */
-  extraDescriptionText: PropTypes.string,
   /** The home highlights to display. */
   homeHighlights: PropTypes.arrayOf(
     PropTypes.shape({

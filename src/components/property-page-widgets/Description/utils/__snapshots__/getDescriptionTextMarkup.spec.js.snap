@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getDescriptionTextMarkup if \`descriptionText\` has fewer than 100 words should return the right shape 1`] = `
+Array [
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo
+  </Paragraph>,
+]
+`;
+
+exports[`getDescriptionTextMarkup if \`descriptionText\` has more than 100 words should return the right shape 1`] = `
+<React.Fragment>
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo...
+  </Paragraph>
+  <Modal
+    hasCloseIcon={true}
+    hasPadding={true}
+    hasRoundedCorners={false}
+    header={null}
+    isFullscreen={false}
+    onClose={[Function]}
+    size="tiny"
+    trigger={
+      <Button
+        as="button"
+        basic={true}
+      >
+        some button text
+      </Button>
+    }
+  >
+    <Paragraph
+      size="medium"
+      weight={null}
+    >
+      yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo
+    </Paragraph>
+  </Modal>
+</React.Fragment>
+`;
