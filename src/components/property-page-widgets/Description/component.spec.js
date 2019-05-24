@@ -10,7 +10,6 @@ import {
 import { Component as Description } from './component';
 
 const props = {
-  descriptionText,
   homeHighlights: [
     { iconName: 'credit card', text: 'credit cards' },
     { iconName: 'no children', text: 'no children allowed' },
@@ -44,10 +43,19 @@ describe('<Description />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('if `props.extraDescriptionText` is passed', () => {
-    describe('the last `Paragraph` component', () => {
-      it('should render the right children', () => {
-        const wrapper = getDescription({ extraDescriptionText });
+  describe('if `props.descriptionText` is defined', () => {
+    it('should have the correct structure', () => {
+      const wrapper = getDescription({ descriptionText });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    describe('if `props.extraDescriptionText` is defined', () => {
+      it('should have the correct structure', () => {
+        const wrapper = getDescription({
+          descriptionText,
+          extraDescriptionText,
+        });
 
         expect(wrapper).toMatchSnapshot();
       });

@@ -1,10 +1,29 @@
 ```jsx
-const { descriptionText, homeHighlights, propertyMainCharacteristics } = require('./mock-data/props');
+const { homeHighlights, propertyMainCharacteristics } = require('./mock-data/props');
 
 // const homeHighlights = [
 //   { iconName: 'credit card', text: 'credit cards' },
 //   { iconName: 'no children', text: 'no children allowed' },
 // ];
+
+<Description
+  homeHighlights={homeHighlights}
+  propertyMainCharacteristics={propertyMainCharacteristics}
+  propertyName="Lonely Lodge"
+  propertyType="Bed & Breakfast"
+/>
+```
+
+### Content
+
+#### Description text
+
+```jsx
+const {
+  descriptionText,
+  homeHighlights,
+  propertyMainCharacteristics,
+} = require('./mock-data/props');
 
 <Description
   descriptionText={descriptionText}
@@ -14,8 +33,6 @@ const { descriptionText, homeHighlights, propertyMainCharacteristics } = require
   propertyType="Bed & Breakfast"
 />
 ```
-
-### Content
 
 #### Extra description text
 
