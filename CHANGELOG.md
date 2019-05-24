@@ -1,3 +1,10 @@
+# [1.192.0](https://github.com/lodgify/lodgify-ui/compare/v1.191.0...v1.192.0) (2019-05-24)
+
+
+### Features
+
+* **Description:** remove props.extraDescriptionText and handle HTML safely ([83e793f](https://github.com/lodgify/lodgify-ui/commit/83e793f))
+
 # [1.191.0](https://github.com/lodgify/lodgify-ui/compare/v1.190.2...v1.191.0) (2019-05-24)
 
 
