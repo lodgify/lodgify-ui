@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { List } from 'semantic-ui-react';
+import { List, Button } from 'semantic-ui-react';
 import { size } from 'lodash';
 
 import { HOME_HIGHLIGHTS, VIEW_MORE } from 'utils/default-strings';
@@ -12,8 +12,9 @@ import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 import { Subheading } from 'typography/Subheading';
 import { ShowOn } from 'layout/ShowOn';
+import { Modal } from 'elements/Modal';
 
-import { getDescriptions } from './utils/getDescriptions';
+import { getParagraphOrHTML } from './utils/getParagraphOrHTML';
 
 /**
  * The standard widget for displaying the description of a property.
@@ -64,13 +65,20 @@ export const Component = ({
         )}
       </ShowOn>
     </GridColumn>
-    <GridColumn width={12}>
-      {getDescriptions(
-        descriptionText,
-        extraDescriptionText,
-        extraDescriptionButtonText
-      )}
-    </GridColumn>
+    {descriptionText && (
+      <GridColumn width={12}>
+        {getParagraphOrHTML(descriptionText)}
+        {extraDescriptionText && (
+          <Modal
+            hasPadding
+            trigger={<Button basic>{extraDescriptionButtonText}</Button>}
+          >
+            {getParagraphOrHTML(descriptionText)}
+            {getParagraphOrHTML(extraDescriptionText)}
+          </Modal>
+        )}
+      </GridColumn>
+    )}
     {size(homeHighlights) > 0 && (
       <Fragment>
         <GridColumn width={12}>
@@ -94,6 +102,7 @@ export const Component = ({
 Component.displayName = 'Description';
 
 Component.defaultProps = {
+  descriptionText: null,
   extraDescriptionText: null,
   homeHighlightsHeadingText: HOME_HIGHLIGHTS,
   extraDescriptionButtonText: VIEW_MORE,
@@ -101,10 +110,10 @@ Component.defaultProps = {
 
 Component.propTypes = {
   /** The description text to display. Respects HTML markup. */
-  descriptionText: PropTypes.string.isRequired,
+  descriptionText: PropTypes.string,
   /** The text for the button that opens the extra description modal. */
   extraDescriptionButtonText: PropTypes.string,
-  /** Extra text to display in a modal. The description can be rendered as HTML strings. */
+  /** Extra text to display in a modal. Respects HTML markup. */
   extraDescriptionText: PropTypes.string,
   /** The home highlights to display. */
   homeHighlights: PropTypes.arrayOf(

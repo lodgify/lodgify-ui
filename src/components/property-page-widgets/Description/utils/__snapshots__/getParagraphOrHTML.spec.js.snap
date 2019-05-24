@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getParagraphOrHTML if \`isValidHTML\` returns \`false\` should return the right shape 1`] = `
+Array [
+  <Paragraph
+    size="medium"
+    weight={null}
+  >
+    a string
+  </Paragraph>,
+]
+`;
+
+exports[`getParagraphOrHTML if \`isValidHTML\` returns \`true\` should return the right shape 1`] = `
+<HTML
+  htmlString="a string"
+/>
+`;
