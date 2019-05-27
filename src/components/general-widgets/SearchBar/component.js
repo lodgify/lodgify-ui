@@ -13,7 +13,7 @@ import { ICON_NAMES } from 'elements/Icon';
 import { Button } from 'elements/Button';
 
 import { getInitialValue } from './utils/getInitialValue';
-import { getWillDropdownsOpenAbove } from './utils/getWillDropdownsOpenAbove';
+import { getWillLocationDropdownOpenAbove } from './utils/getWillLocationDropdownOpenAbove';
 import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
 import { getSearchBarModal } from './utils/getSearchBarModal';
 
@@ -26,7 +26,7 @@ export class Component extends PureComponent {
     dates: getInitialValue(this.props.datesInputValue),
     guests: getInitialValue(this.props.guestsInputValue),
     location: getInitialValue(this.props.locationInputValue),
-    willDropdownsOpenAbove: this.props.willDropdownsOpenAbove,
+    willLocationDropdownOpenAbove: this.props.willLocationDropdownOpenAbove,
   };
 
   componentDidMount = () => {
@@ -50,9 +50,9 @@ export class Component extends PureComponent {
 
   handleScroll = debounce(() => {
     this.setState({
-      willDropdownsOpenAbove: getWillDropdownsOpenAbove(
+      willLocationDropdownOpenAbove: getWillLocationDropdownOpenAbove(
         this.container,
-        this.props.willDropdownsOpenAbove
+        this.props.willLocationDropdownOpenAbove
       ),
     });
   }, 100);
@@ -125,7 +125,7 @@ export class Component extends PureComponent {
               this.props,
               this.persistInputChange,
               false,
-              this.state.willDropdownsOpenAbove
+              this.state.willLocationDropdownOpenAbove
             )}
           </Form.Group>
         </Form>
@@ -161,7 +161,7 @@ Component.defaultProps = {
     </Button>
   ),
   summaryElement: null,
-  willDropdownsOpenAbove: false,
+  willLocationDropdownOpenAbove: false,
 };
 
 Component.propTypes = {
@@ -254,5 +254,5 @@ Component.propTypes = {
   /** The element to display in the fixed container */
   summaryElement: PropTypes.node,
   /** The dropdowns will open above the search bar. */
-  willDropdownsOpenAbove: PropTypes.bool,
+  willLocationDropdownOpenAbove: PropTypes.bool,
 };

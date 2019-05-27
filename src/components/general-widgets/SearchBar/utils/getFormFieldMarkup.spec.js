@@ -12,7 +12,7 @@ const componentProps = {
   searchButton: <div />,
 };
 
-const willDropdownsOpenAbove = true;
+const willLocationDropdownOpenAbove = true;
 
 const getMarkup = overrideProps =>
   shallow(
@@ -24,7 +24,7 @@ const getMarkup = overrideProps =>
         },
         Function.prototype,
         false,
-        willDropdownsOpenAbove
+        willLocationDropdownOpenAbove
       )}
     </div>
   );

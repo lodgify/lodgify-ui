@@ -43,7 +43,7 @@ const { locationOptions } = require('./mock-data/options');
 
 <SearchBar
   locationOptions={locationOptions}
-  willDropdownsOpenAbove={true}
+  willLocationDropdownOpenAbove={true}
 />
 ```
 
