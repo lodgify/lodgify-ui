@@ -22,7 +22,7 @@ import { Dropdown } from 'inputs/Dropdown';
 import { GridColumn } from 'layout/GridColumn';
 
 import { Component as SearchBar } from './component';
-import { guestsOptions, locationOptions } from './mock-data/options';
+import { locationOptions } from './mock-data/options';
 import { getInitialValue } from './utils/getInitialValue';
 import { getWillDropdownsOpenAbove } from './utils/getWillDropdownsOpenAbove';
 
@@ -36,7 +36,6 @@ getWillDropdownsOpenAbove.mockReturnValue(WILL_THEY_OPEN_ABOVE);
 
 const props = {
   dateRangePickerLocaleCode: 'ko',
-  guestsOptions,
   locationOptions,
 };
 
@@ -50,7 +49,7 @@ describe('<SearchBar />', () => {
   describe('by default', () => {
     it('should call `getInitialValue` with the right arguments', () => {
       const datesInputValue = {};
-      const guestsInputValue = 'some guestsInputValue ';
+      const guestsInputValue = 1;
       const locationInputValue = 'some locationInputValue ';
 
       getSearchBarShallow({
@@ -280,7 +279,6 @@ describe('<SearchBar />', () => {
     it('should call `props.onSubmit` with the state', () => {
       const onSubmit = jest.fn();
       const wrapper = getSearchBarShallow({
-        guestsOptions,
         locationOptions,
         onSubmit,
       });
