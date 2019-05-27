@@ -28,14 +28,6 @@ exports[`HomepageHero should render the right structure 1`] = `
   placeholderBackgroundImageUrl={null}
   searchBarDatesInputOnFocusChange={[Function]}
   searchBarGetIsDayBlocked={[Function]}
-  searchBarGuestsOptions={
-    Array [
-      Object {
-        "text": "1",
-        "value": "1",
-      },
-    ]
-  }
   searchBarLocationOptions={
     Array [
       Object {
@@ -478,7 +470,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                       "searchButton": <button>
                                         search button
                                       </button>,
-                                      "willDropdownsOpenAbove": true,
+                                      "willLocationDropdownOpenAbove": true,
                                     }
                                   }
                                   tablet={true}
@@ -510,7 +502,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                       </button>
                                     }
                                     summaryElement={null}
-                                    willDropdownsOpenAbove={true}
+                                    willLocationDropdownOpenAbove={true}
                                   >
                                     <div
                                       className="show-on-tablet show-on-computer show-on-widescreen search-bar"
@@ -1006,7 +998,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                         </button>
                                       }
                                       summaryElement={null}
-                                      willDropdownsOpenAbove={false}
+                                      willLocationDropdownOpenAbove={false}
                                     >
                                       <Modal
                                         hasCloseIcon={true}

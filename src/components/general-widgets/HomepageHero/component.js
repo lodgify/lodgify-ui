@@ -116,7 +116,7 @@ export const Component = ({
                 parent={SearchBar}
                 parentProps={{
                   ...searchBarSharedProps,
-                  willDropdownsOpenAbove: true,
+                  willLocationDropdownOpenAbove: true,
                 }}
                 tablet
                 widescreen
