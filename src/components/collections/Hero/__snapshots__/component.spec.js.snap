@@ -25,14 +25,6 @@ exports[`<Hero /> by default should render the right structure 1`] = `
       "text": "Book now",
     }
   }
-  headerSearchBarGuestsOptions={
-    Array [
-      Object {
-        "href": "someHref",
-        "text": "someText",
-      },
-    ]
-  }
   headerSearchBarLocationOptions={
     Array [
       Object {
