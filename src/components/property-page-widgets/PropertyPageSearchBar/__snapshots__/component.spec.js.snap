@@ -106,7 +106,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               ratingNumber={4.5}
             />
           }
-          willDropdownsOpenAbove={false}
+          willLocationDropdownOpenAbove={false}
         >
           <div
             className="search-bar is-fixed"
@@ -639,7 +639,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               ratingNumber={4.5}
             />
           }
-          willDropdownsOpenAbove={false}
+          willLocationDropdownOpenAbove={false}
         >
           <div
             className="search-bar is-fixed"
@@ -1032,7 +1032,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               ratingNumber={4.5}
             />
           }
-          willDropdownsOpenAbove={false}
+          willLocationDropdownOpenAbove={false}
         >
           <div
             className="search-bar is-fixed"
@@ -1724,7 +1724,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               ratingNumber={4.5}
             />
           }
-          willDropdownsOpenAbove={false}
+          willLocationDropdownOpenAbove={false}
         >
           <div
             className="search-bar is-fixed"
