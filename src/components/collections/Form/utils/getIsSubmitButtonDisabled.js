@@ -1,4 +1,4 @@
-import { some } from 'lodash';
+import { some } from 'utils/some';
 
 /**
  * @param  {Object} inputsState
