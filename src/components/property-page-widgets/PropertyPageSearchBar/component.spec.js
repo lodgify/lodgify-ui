@@ -19,11 +19,8 @@ import { Button } from 'elements/Button';
 
 import { Component as PropertyPageSearchBar } from './component';
 
-const { guestsOptions } = require('./mock-data/options');
-
 const props = {
   getIsDayBlocked: Function.prototype,
-  guestsOptions: guestsOptions,
   isFixed: true,
   modalTrigger: (
     <Button isPositionedRight isRounded>
