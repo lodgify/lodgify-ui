@@ -5,6 +5,7 @@ import { size } from 'lodash';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
+import { NumberInput } from 'inputs/NumberInput';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 
 /**
@@ -13,7 +14,6 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
  * @param  {Object}   props.datesInputValue
  * @param  {Function} props.datesInputOnFocusChange
  * @param  {Function} props.getIsDayBlocked
- * @param  {Object[]} props.guestsOptions
  * @param  {string}   props.guestsInputValue
  * @param  {boolean}  props.isShowingSummary
  * @param  {string}   props.locationInputValue
@@ -21,7 +21,7 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
  * @param  {Node}     props.searchButton
  * @param  {Function} persistInputChange
  * @param  {boolean}  areColumnsStacked
- * @param  {boolean}  willDropdownsOpenAbove
+ * @param  {boolean}  willLocationDropdownOpenAbove
  * @return {Object}
  */
 export const getFormFieldMarkup = (
@@ -32,7 +32,6 @@ export const getFormFieldMarkup = (
     datesInputOnFocusChange,
     getIsDayBlocked,
     guestsInputValue,
-    guestsOptions,
     isShowingSummary,
     locationInputValue,
     locationOptions,
@@ -40,16 +39,17 @@ export const getFormFieldMarkup = (
   },
   persistInputChange,
   areColumnsStacked,
-  willDropdownsOpenAbove
+  willLocationDropdownOpenAbove
 ) => {
-  const defaultColumnWidth = areColumnsStacked ? 'twelve' : 'three';
+  const summaryColumnWidth = areColumnsStacked ? 'twelve' : 'three';
   const datePickerColumnWidth = areColumnsStacked ? 'twelve' : 'seven';
   const buttonColumnWidth = areColumnsStacked ? 'twelve' : 'four';
+  const guestInputColumnWidth = areColumnsStacked ? 'twelve' : 'two';
 
   return (
     <Fragment>
       {!!isShowingSummary && (
-        <Form.Field width={defaultColumnWidth}>
+        <Form.Field width={summaryColumnWidth}>
           <Icon
             isDisabled
             labelText="Property Summary"
@@ -66,7 +66,7 @@ export const getFormFieldMarkup = (
             onChange={persistInputChange}
             options={locationOptions}
             value={locationInputValue}
-            willOpenAbove={willDropdownsOpenAbove}
+            willOpenAbove={willLocationDropdownOpenAbove}
           />
         </Form.Field>
       )}
@@ -81,18 +81,17 @@ export const getFormFieldMarkup = (
           onFocusChange={datesInputOnFocusChange}
           startDatePlaceholderText="Check-in"
           value={datesInputValue}
-          willOpenAbove={willDropdownsOpenAbove}
+          willOpenAbove={willLocationDropdownOpenAbove}
         />
       </Form.Field>
-      <Form.Field width={defaultColumnWidth}>
-        <Dropdown
+      <Form.Field width={guestInputColumnWidth}>
+        <NumberInput
           icon={ICON_NAMES.USERS}
           label="Guests"
+          min={0}
           name="guests"
           onChange={persistInputChange}
-          options={guestsOptions}
           value={guestsInputValue}
-          willOpenAbove={willDropdownsOpenAbove}
         />
       </Form.Field>
       <Form.Field width={buttonColumnWidth}>{searchButton}</Form.Field>

@@ -196,21 +196,7 @@ Component.propTypes = {
   // eslint-disable-next-line react/no-unused-prop-types
   getIsDayBlocked: PropTypes.func,
   /** The value for the guests input. Used when consuming `SearchBar` as a controlled component. */
-  guestsInputValue: PropTypes.string,
-  /** The options which the user can select in the guests field. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  guestsOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ).isRequired,
+  guestsInputValue: PropTypes.number,
   /** Is the Search Bar displayed in a modal*/
   isDisplayedAsModal: PropTypes.bool,
   /** Is the Search Bar fixed to the bottom of the window */
