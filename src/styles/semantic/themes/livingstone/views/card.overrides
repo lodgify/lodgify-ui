@@ -97,7 +97,7 @@
     .content {
 
       > .meta,
-      > .header,
+      > .header .ui.header,
       > .description {
         overflow: hidden;
         text-overflow: ellipsis;
