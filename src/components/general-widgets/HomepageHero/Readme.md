@@ -1,6 +1,6 @@
 ```jsx
 const logoSrc = require('./mock-data/livingstoneLogo.png');
-const { backgroundImageUrl, navigationItems, guestsOptions, locationOptions } = require('./mock-data/mock-data');
+const { backgroundImageUrl, navigationItems, locationOptions } = require('./mock-data/mock-data');
 
 <HomepageHero
   activeNavigationItem={1}
@@ -10,7 +10,6 @@ const { backgroundImageUrl, navigationItems, guestsOptions, locationOptions } = 
   headerNavigationItems={navigationItems}
   headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
   headingText="Super Interesting Heading"
-  searchBarGuestsOptions={guestsOptions}
   searchBarLocationOptions={locationOptions}
 />
 ```
@@ -21,7 +20,7 @@ const { backgroundImageUrl, navigationItems, guestsOptions, locationOptions } = 
 
 ```jsx
 const logoSrc = require('./mock-data/livingstoneLogo.png');
-const { backgroundImageUrl, navigationItems, guestsOptions, locationOptions } = require('./mock-data/mock-data');
+const { backgroundImageUrl, navigationItems, locationOptions } = require('./mock-data/mock-data');
 
 <HomepageHero
   backgroundImageUrl={backgroundImageUrl}
@@ -29,7 +28,6 @@ const { backgroundImageUrl, navigationItems, guestsOptions, locationOptions } = 
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={navigationItems}
   headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
-  searchBarGuestsOptions={guestsOptions}
   searchBarLocationOptions={locationOptions}
   searchBarSearchButton={<Button>Check now!</Button>}
 />
@@ -41,7 +39,7 @@ const { backgroundImageUrl, navigationItems, guestsOptions, locationOptions } = 
 // Viewport width needs to be less than 600px to trigger modal
 
 const logoSrc = require('./mock-data/livingstoneLogo.png');
-const { backgroundImageUrl, navigationItems, guestsOptions } = require('./mock-data/mock-data');
+const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 
 <HomepageHero
   backgroundImageUrl={backgroundImageUrl}
@@ -49,7 +47,6 @@ const { backgroundImageUrl, navigationItems, guestsOptions } = require('./mock-d
   headerLogoText="Livingstone Cottage"
   headerNavigationItems={navigationItems}
   headerPrimaryCTA={{ onClick: console.log, text: 'Book now'}}
-  searchBarGuestsOptions={guestsOptions}
   searchBarModalHeadingText="Custom modal heading"
 />
 ```

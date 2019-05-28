@@ -20,7 +20,6 @@ export const Component = ({
   datesInputValue,
   getIsDayBlocked,
   guestsInputValue,
-  guestsOptions,
   isShowingPlaceholder,
   onChangeInput,
   onSubmit,
@@ -38,13 +37,11 @@ export const Component = ({
     datesInputValue,
     getIsDayBlocked,
     guestsInputValue,
-    guestsOptions,
     dateRangePickerLocaleCode,
     datesInputValue,
     datesInputOnFocusChange,
     getIsDayBlocked,
     guestsInputValue,
-    guestsOptions,
     isFixed: true,
     onChangeInput,
     onSubmit,
@@ -138,19 +135,6 @@ Component.propTypes = {
     PropTypes.number,
     PropTypes.string,
   ]),
-  /** The options that the user can select in the guests field. */
-  guestsOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ).isRequired,
   /** A function called when a change in an input occurs in the search bar.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates

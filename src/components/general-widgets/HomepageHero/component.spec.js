@@ -29,7 +29,6 @@ const props = {
   headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
   headingText: 'heading text',
   searchBarGetIsDayBlocked: Function.prototype,
-  searchBarGuestsOptions: [{ text: '1', value: '1' }],
   searchBarLocationOptions: [{ text: '1', value: '1' }],
   searchBarOnChangeInput: Function.prototype,
   searchBarOnSubmit: Function.prototype,

@@ -1,5 +1,4 @@
 ```jsx
-const { guestsOptions } = require('./mock-data/options');
 
 class Controller extends React.Component {
   constructor() {
@@ -18,7 +17,6 @@ class Controller extends React.Component {
         </Button>
         {isShowing && (
           <PropertyPageSearchBar
-            guestsOptions={guestsOptions}
             searchButton={<Button isCompact isRounded>Check Availability</Button>}
             summaryElement={<div>Property Information</div>}
             modalTrigger={<Button isPositionedRight isRounded isCompact>Check Availability</Button>}
@@ -42,7 +40,6 @@ class Controller extends React.Component {
 #### Showing placeholders
 
 ```jsx
-const { guestsOptions } = require('./mock-data/options');
 
 class Controller extends React.Component {
   constructor() {
@@ -61,7 +58,6 @@ class Controller extends React.Component {
         </Button>
         {isShowing && (
           <PropertyPageSearchBar
-            guestsOptions={guestsOptions}
             searchButton={<Button isCompact isRounded>Check Availability</Button>}
             summaryElement={<div>Property Information</div>}
             modalTrigger={<Button isPositionedRight isRounded isCompact>Check Availability</Button>}

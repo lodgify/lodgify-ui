@@ -15,7 +15,6 @@ const props = {
   headerLogoText: 'Livingstone Cottage',
   headerNavigationItems: [{ text: 'Home', href: '/' }],
   headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
-  headerSearchBarGuestsOptions: [{ href: 'someHref', text: 'someText' }],
   headerSearchBarLocationOptions: [
     { href: 'anotherHref', text: 'anotherText' },
   ],

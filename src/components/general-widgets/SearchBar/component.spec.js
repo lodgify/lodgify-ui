@@ -11,7 +11,7 @@ jest.mock('react-dates', () => {
 });
 jest.mock('lodash/debounce');
 jest.mock('./utils/getInitialValue');
-jest.mock('./utils/getWillDropdownsOpenAbove');
+jest.mock('./utils/getWillLocationDropdownOpenAbove');
 
 import React from 'react';
 import { mount, shallow } from 'enzyme';
@@ -22,9 +22,9 @@ import { Dropdown } from 'inputs/Dropdown';
 import { GridColumn } from 'layout/GridColumn';
 
 import { Component as SearchBar } from './component';
-import { guestsOptions, locationOptions } from './mock-data/options';
+import { locationOptions } from './mock-data/options';
 import { getInitialValue } from './utils/getInitialValue';
-import { getWillDropdownsOpenAbove } from './utils/getWillDropdownsOpenAbove';
+import { getWillLocationDropdownOpenAbove } from './utils/getWillLocationDropdownOpenAbove';
 
 const INITIAL_VALUE = 'some value';
 const WILL_THEY_OPEN_ABOVE = false;
@@ -32,11 +32,10 @@ const WILL_THEY_OPEN_ABOVE = false;
 global.document.addEventListener = jest.fn();
 debounce.mockImplementation(func => func);
 getInitialValue.mockReturnValue(INITIAL_VALUE);
-getWillDropdownsOpenAbove.mockReturnValue(WILL_THEY_OPEN_ABOVE);
+getWillLocationDropdownOpenAbove.mockReturnValue(WILL_THEY_OPEN_ABOVE);
 
 const props = {
   dateRangePickerLocaleCode: 'ko',
-  guestsOptions,
   locationOptions,
 };
 
@@ -50,7 +49,7 @@ describe('<SearchBar />', () => {
   describe('by default', () => {
     it('should call `getInitialValue` with the right arguments', () => {
       const datesInputValue = {};
-      const guestsInputValue = 'some guestsInputValue ';
+      const guestsInputValue = 1;
       const locationInputValue = 'some locationInputValue ';
 
       getSearchBarShallow({
@@ -72,7 +71,7 @@ describe('<SearchBar />', () => {
         dates: INITIAL_VALUE,
         guests: INITIAL_VALUE,
         location: INITIAL_VALUE,
-        willDropdownsOpenAbove: false,
+        willLocationDropdownOpenAbove: false,
       });
     });
 
@@ -161,15 +160,15 @@ describe('<SearchBar />', () => {
     });
 
     describe('the debounced function', () => {
-      it('should call `getWillDropdownsOpenAbove` with the right arguments', () => {
-        const willDropdownsOpenAbove = true;
-        const wrapper = getSearchBarShallow({ willDropdownsOpenAbove });
+      it('should call `getWillLocationDropdownOpenAbove` with the right arguments', () => {
+        const willLocationDropdownOpenAbove = true;
+        const wrapper = getSearchBarShallow({ willLocationDropdownOpenAbove });
 
         wrapper.instance().handleScroll();
 
-        expect(getWillDropdownsOpenAbove).toHaveBeenCalledWith(
+        expect(getWillLocationDropdownOpenAbove).toHaveBeenCalledWith(
           wrapper.instance().container,
-          willDropdownsOpenAbove
+          willLocationDropdownOpenAbove
         );
       });
 
@@ -181,7 +180,7 @@ describe('<SearchBar />', () => {
         wrapper.instance().handleScroll();
 
         expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          willDropdownsOpenAbove: WILL_THEY_OPEN_ABOVE,
+          willLocationDropdownOpenAbove: WILL_THEY_OPEN_ABOVE,
         });
       });
     });
@@ -271,7 +270,7 @@ describe('<SearchBar />', () => {
         dates: INITIAL_VALUE,
         guests: INITIAL_VALUE,
         location: '🍰',
-        willDropdownsOpenAbove: false,
+        willLocationDropdownOpenAbove: false,
       });
     });
   });
@@ -280,7 +279,6 @@ describe('<SearchBar />', () => {
     it('should call `props.onSubmit` with the state', () => {
       const onSubmit = jest.fn();
       const wrapper = getSearchBarShallow({
-        guestsOptions,
         locationOptions,
         onSubmit,
       });

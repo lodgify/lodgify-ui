@@ -1,13 +1,13 @@
-import { getWillDropdownsOpenAbove } from './getWillDropdownsOpenAbove';
+import { getWillLocationDropdownOpenAbove } from './getWillLocationDropdownOpenAbove';
 
-describe('getWillDropdownsOpenAbove', () => {
+describe('getWillLocationDropdownOpenAbove', () => {
   describe('if `element` is `undefined` or `null`', () => {
     it('should return `defaultValue`', () => {
       const testCases = [undefined, null];
       const defaultValue = 'sooooome value';
 
       testCases.forEach(testCase => {
-        const actual = getWillDropdownsOpenAbove(testCase, defaultValue);
+        const actual = getWillLocationDropdownOpenAbove(testCase, defaultValue);
 
         expect(actual).toBe(defaultValue);
       });
@@ -18,7 +18,7 @@ describe('getWillDropdownsOpenAbove', () => {
     it('should return `defaultValue`', () => {
       const defaultValue = 'sooooome value';
 
-      const actual = getWillDropdownsOpenAbove({}, defaultValue);
+      const actual = getWillLocationDropdownOpenAbove({}, defaultValue);
 
       expect(actual).toBe(defaultValue);
     });
@@ -30,7 +30,7 @@ describe('getWillDropdownsOpenAbove', () => {
         getBoundingClientRect: () => ({ top: 451 }),
       };
 
-      const actual = getWillDropdownsOpenAbove(element);
+      const actual = getWillLocationDropdownOpenAbove(element);
 
       expect(actual).toBe(true);
     });
@@ -42,7 +42,7 @@ describe('getWillDropdownsOpenAbove', () => {
         getBoundingClientRect: () => ({ top: 449 }),
       };
 
-      const actual = getWillDropdownsOpenAbove(element);
+      const actual = getWillLocationDropdownOpenAbove(element);
 
       expect(actual).toBe(false);
     });

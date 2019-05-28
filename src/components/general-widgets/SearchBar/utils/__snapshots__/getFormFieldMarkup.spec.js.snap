@@ -58,22 +58,18 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
     />
   </FormField>
   <FormField
-    width="three"
+    width="two"
   >
-    <Dropdown
+    <NumberInput
+      autoComplete={null}
       error={false}
       icon="users"
-      initialValue={null}
-      isDisabled={false}
-      isSearchable={false}
       isValid={false}
       label="Guests"
+      min={0}
       name="guests"
-      noResultsText="No results"
       onBlur={[Function]}
       onChange={[Function]}
-      options={Array []}
-      willOpenAbove={true}
     />
   </FormField>
   <FormField
@@ -117,22 +113,18 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
     />
   </FormField>
   <FormField
-    width="three"
+    width="two"
   >
-    <Dropdown
+    <NumberInput
+      autoComplete={null}
       error={false}
       icon="users"
-      initialValue={null}
-      isDisabled={false}
-      isSearchable={false}
       isValid={false}
       label="Guests"
+      min={0}
       name="guests"
-      noResultsText="No results"
       onBlur={[Function]}
       onChange={[Function]}
-      options={Array []}
-      willOpenAbove={true}
     />
   </FormField>
   <FormField

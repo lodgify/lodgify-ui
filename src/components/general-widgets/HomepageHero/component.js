@@ -38,7 +38,6 @@ export const Component = ({
   searchBarDatesInputValue,
   searchBarGetIsDayBlocked,
   searchBarGuestsInputValue,
-  searchBarGuestsOptions,
   searchBarLocationInputValue,
   searchBarLocationOptions,
   searchBarModalHeadingText,
@@ -53,7 +52,6 @@ export const Component = ({
     datesInputValue: searchBarDatesInputValue,
     getIsDayBlocked: searchBarGetIsDayBlocked,
     guestsInputValue: searchBarGuestsInputValue,
-    guestsOptions: searchBarGuestsOptions,
     locationInputValue: searchBarLocationInputValue,
     locationOptions: searchBarLocationOptions,
     onChangeInput: searchBarOnChangeInput,
@@ -118,7 +116,7 @@ export const Component = ({
                 parent={SearchBar}
                 parentProps={{
                   ...searchBarSharedProps,
-                  willDropdownsOpenAbove: true,
+                  willLocationDropdownOpenAbove: true,
                 }}
                 tablet
                 widescreen
@@ -255,24 +253,7 @@ Component.propTypes = {
    */
   searchBarGetIsDayBlocked: PropTypes.func,
   /** The value for the guests input of the search bar. Used when consuming `HomepageHero` as a controlled component. */
-  searchBarGuestsInputValue: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.number,
-    PropTypes.string,
-  ]),
-  /** The options which the user can select in the guests fields of the search bar. */
-  searchBarGuestsOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ).isRequired,
+  searchBarGuestsInputValue: PropTypes.number,
   /** The value for the location input of the search bar. Used when consuming `HomepageHero` as a controlled component. */
   searchBarLocationInputValue: PropTypes.string,
   /** The options which the user can select in the location field of the search bar. */
