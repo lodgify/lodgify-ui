@@ -1,3 +1,12 @@
+# [1.193.0](https://github.com/lodgify/lodgify-ui/compare/v1.192.0...v1.193.0) (2019-05-28)
+
+
+### Features
+
+* **HomepageHero:** remove searchBarGuestOptions prop ([05c67b6](https://github.com/lodgify/lodgify-ui/commit/05c67b6))
+* **PropertyPageSearchBar:** remove guestOptions prop ([3d240a4](https://github.com/lodgify/lodgify-ui/commit/3d240a4))
+* **SearchBar:** guest options is a number input ([77f77ac](https://github.com/lodgify/lodgify-ui/commit/77f77ac))
+
 # [1.192.0](https://github.com/lodgify/lodgify-ui/compare/v1.191.0...v1.192.0) (2019-05-24)
 
 
