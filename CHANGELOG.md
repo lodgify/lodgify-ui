@@ -1,3 +1,10 @@
+# [1.194.0](https://github.com/lodgify/lodgify-ui/compare/v1.193.0...v1.194.0) (2019-05-28)
+
+
+### Features
+
+* **FeaturedProperty:** update header ellipsis selector ([a49fcbc](https://github.com/lodgify/lodgify-ui/commit/a49fcbc))
+
 # [1.193.0](https://github.com/lodgify/lodgify-ui/compare/v1.192.0...v1.193.0) (2019-05-28)
 
 
