@@ -15,7 +15,8 @@ const props = {
 const getResponsiveImage = extraProps =>
   mount(<ResponsiveImage {...props} {...extraProps} />);
 
-const getWrappedResponsiveImage = () => getResponsiveImage().childAt(0);
+const getWrappedResponsiveImage = () =>
+  getResponsiveImage().find('ResponsiveImage');
 
 describe('<ResponsiveImage />', () => {
   describe('by default', () => {
@@ -44,9 +45,9 @@ describe('<ResponsiveImage />', () => {
     });
   });
 
-  describe('if `props.isLazyLoaded` is true', () => {
+  describe('if `props.isLazyLoaded` is false', () => {
     it('should have the right structure', () => {
-      const actual = getResponsiveImage({ isLazyLoaded: true });
+      const actual = getResponsiveImage({ isLazyLoaded: false });
 
       expect(actual).toMatchSnapshot();
     });
