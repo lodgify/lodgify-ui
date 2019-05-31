@@ -15,7 +15,7 @@ export const withLazyLoad = (...lazyPropsKeys) => WrappedComponent =>
     static displayName = `withLazyLoad(${WrappedComponent.displayName})`;
 
     static defaultProps = {
-      isLazyLoaded: false,
+      isLazyLoaded: true,
     };
 
     static propTypes = {
