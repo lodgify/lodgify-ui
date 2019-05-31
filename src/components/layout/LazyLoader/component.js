@@ -1,10 +1,12 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import { debounce } from 'debounce';
 import PropTypes from 'prop-types';
 
-import { getIsVisible } from './utils/getIsVisible';
+import { getIsTopComponentVisible } from './utils/getIsTopComponentVisible';
 import { getComponentToRender } from './utils/getComponentToRender';
 import { getComponentToRenderProps } from './utils/getComponentToRenderProps';
+import { getIsBottomComponentVisible } from './utils/getIsBottomComponentVisible';
+import { getComponentPosition } from './utils/getComponentPosition';
 
 /**
  * A wrapper which intercepts props being passed to a child
@@ -24,16 +26,27 @@ export class Component extends PureComponent {
   componentWillUnmount = () => this.removeEventListeners();
 
   getShouldComponentRender = () => {
-    if (!this.component || !this.component.getBoundingClientRect) return;
+    if (
+      !getComponentPosition(this.topComponent) ||
+      !getComponentPosition(this.bottomComponent)
+    )
+      return;
 
     const windowHeight = window.innerHeight;
-    const boundingClientRect = this.component.getBoundingClientRect();
 
-    const isComponentVisible = getIsVisible(boundingClientRect, windowHeight);
+    const isTopComponentVisible = getIsTopComponentVisible(
+      getComponentPosition(this.topComponent),
+      windowHeight
+    );
 
-    if (isComponentVisible) {
+    const isBottomComponentVisible = getIsBottomComponentVisible(
+      getComponentPosition(this.bottomComponent),
+      windowHeight
+    );
+
+    if (isTopComponentVisible || isBottomComponentVisible) {
       this.setState({
-        shouldRender: isComponentVisible,
+        shouldRender: true,
       });
 
       this.removeEventListeners();
@@ -71,7 +84,9 @@ export class Component extends PureComponent {
     );
   };
 
-  createComponentRef = component => (this.component = component);
+  createTopComponentRef = component => (this.topComponent = component);
+
+  createBottomComponentRef = component => (this.bottomComponent = component);
 
   render = () => {
     const { lazyComponent, lazyProps, componentProps } = this.props;
@@ -88,7 +103,13 @@ export class Component extends PureComponent {
       lazyProps
     );
 
-    return <div ref={this.createComponentRef}>{componentToRender}</div>;
+    return (
+      <Fragment>
+        <div ref={this.createTopComponentRef} />
+        {componentToRender}
+        <div ref={this.createBottomComponentRef} />
+      </Fragment>
+    );
   };
 }
 
