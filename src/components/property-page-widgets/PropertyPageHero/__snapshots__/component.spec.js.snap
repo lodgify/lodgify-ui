@@ -89,55 +89,77 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
           <withLazyLoad(ResponsiveImage)
             imageUrl="some url"
             isFluid={true}
-            isLazyLoaded={false}
+            isLazyLoaded={true}
             placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
           >
-            <ResponsiveImage
-              alternativeText="Image Widget"
-              hasRoundedCorners={false}
-              imageHeight={null}
-              imageNotFoundLabelText="Image not found!"
-              imageTitle="Image Title"
-              imageUrl="some url"
-              imageWidth={null}
-              isAvatar={false}
-              isCircular={false}
-              isFluid={true}
-              isLazyLoaded={false}
-              label={null}
-              placeholderImageUrl={null}
-              sizes={null}
-              srcSet={null}
+            <LazyLoader
+              componentProps={
+                Object {
+                  "imageHeight": undefined,
+                  "imageWidth": undefined,
+                  "isFluid": true,
+                  "isLazyLoaded": true,
+                  "placeholderImageUrl": null,
+                  "sizes": null,
+                  "srcSet": null,
+                }
+              }
+              lazyComponent={[Function]}
+              lazyProps={
+                Object {
+                  "imageUrl": "some url",
+                }
+              }
             >
-              <figure
-                className="responsive-image is-fluid"
+              <div />
+              <ResponsiveImage
+                alternativeText="Image Widget"
+                hasRoundedCorners={false}
+                imageHeight={null}
+                imageNotFoundLabelText="Image not found!"
+                imageTitle="Image Title"
+                imageUrl="some url"
+                imageWidth={null}
+                isAvatar={false}
+                isCircular={false}
+                isFluid={true}
+                isLazyLoaded={true}
+                label={null}
+                placeholderImageUrl={null}
+                sizes={null}
+                srcSet={null}
               >
-                <Image
-                  alt="Image Widget"
-                  as="img"
-                  avatar={false}
-                  fluid={true}
-                  onLoad={[Function]}
-                  sizes={null}
-                  src="some url"
-                  srcSet={null}
-                  title="Image Title"
-                  ui={true}
+                <figure
+                  className="responsive-image is-fluid"
                 >
-                  <img
+                  <Image
                     alt="Image Widget"
-                    className="ui fluid image"
+                    as="img"
+                    avatar={false}
+                    fluid={true}
                     onLoad={[Function]}
                     sizes={null}
                     src="some url"
                     srcSet={null}
                     title="Image Title"
-                  />
-                </Image>
-              </figure>
-            </ResponsiveImage>
+                    ui={true}
+                  >
+                    <img
+                      alt="Image Widget"
+                      className="ui fluid image"
+                      onLoad={[Function]}
+                      sizes={null}
+                      src="some url"
+                      srcSet={null}
+                      title="Image Title"
+                    />
+                  </Image>
+                </figure>
+              </ResponsiveImage>
+              <div />
+            </LazyLoader>
           </withLazyLoad(ResponsiveImage)>
           <Header
             activeNavigationItemIndex={1}
@@ -411,55 +433,77 @@ exports[`PropertyPageHero should render the right structure 1`] = `
           <withLazyLoad(ResponsiveImage)
             imageUrl="some url"
             isFluid={true}
-            isLazyLoaded={false}
+            isLazyLoaded={true}
             placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
           >
-            <ResponsiveImage
-              alternativeText="Image Widget"
-              hasRoundedCorners={false}
-              imageHeight={null}
-              imageNotFoundLabelText="Image not found!"
-              imageTitle="Image Title"
-              imageUrl="some url"
-              imageWidth={null}
-              isAvatar={false}
-              isCircular={false}
-              isFluid={true}
-              isLazyLoaded={false}
-              label={null}
-              placeholderImageUrl={null}
-              sizes={null}
-              srcSet={null}
+            <LazyLoader
+              componentProps={
+                Object {
+                  "imageHeight": undefined,
+                  "imageWidth": undefined,
+                  "isFluid": true,
+                  "isLazyLoaded": true,
+                  "placeholderImageUrl": null,
+                  "sizes": null,
+                  "srcSet": null,
+                }
+              }
+              lazyComponent={[Function]}
+              lazyProps={
+                Object {
+                  "imageUrl": "some url",
+                }
+              }
             >
-              <figure
-                className="responsive-image is-fluid"
+              <div />
+              <ResponsiveImage
+                alternativeText="Image Widget"
+                hasRoundedCorners={false}
+                imageHeight={null}
+                imageNotFoundLabelText="Image not found!"
+                imageTitle="Image Title"
+                imageUrl="some url"
+                imageWidth={null}
+                isAvatar={false}
+                isCircular={false}
+                isFluid={true}
+                isLazyLoaded={true}
+                label={null}
+                placeholderImageUrl={null}
+                sizes={null}
+                srcSet={null}
               >
-                <Image
-                  alt="Image Widget"
-                  as="img"
-                  avatar={false}
-                  fluid={true}
-                  onLoad={[Function]}
-                  sizes={null}
-                  src="some url"
-                  srcSet={null}
-                  title="Image Title"
-                  ui={true}
+                <figure
+                  className="responsive-image is-fluid"
                 >
-                  <img
+                  <Image
                     alt="Image Widget"
-                    className="ui fluid image"
+                    as="img"
+                    avatar={false}
+                    fluid={true}
                     onLoad={[Function]}
                     sizes={null}
                     src="some url"
                     srcSet={null}
                     title="Image Title"
-                  />
-                </Image>
-              </figure>
-            </ResponsiveImage>
+                    ui={true}
+                  >
+                    <img
+                      alt="Image Widget"
+                      className="ui fluid image"
+                      onLoad={[Function]}
+                      sizes={null}
+                      src="some url"
+                      srcSet={null}
+                      title="Image Title"
+                    />
+                  </Image>
+                </figure>
+              </ResponsiveImage>
+              <div />
+            </LazyLoader>
           </withLazyLoad(ResponsiveImage)>
           <Header
             activeNavigationItemIndex={1}

@@ -6,75 +6,6 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
   imageTitle="ResponsiveImage title"
   isAvatar={false}
   isFluid={true}
-  isLazyLoaded={false}
-  onLoad={[Function]}
-  sources={Array []}
->
-  <ResponsiveImage
-    alternativeText="Alternative Text 😝"
-    hasRoundedCorners={false}
-    imageHeight={null}
-    imageNotFoundLabelText="Image not found!"
-    imageTitle="ResponsiveImage title"
-    imageUrl=""
-    imageWidth={null}
-    isAvatar={false}
-    isCircular={false}
-    isFluid={true}
-    isLazyLoaded={false}
-    label={null}
-    onLoad={[Function]}
-    sizes={null}
-    sources={Array []}
-    srcSet={null}
-  >
-    <figure
-      className="responsive-image is-fluid"
-    >
-      <Image
-        alt="Alternative Text 😝"
-        as="img"
-        avatar={false}
-        fluid={true}
-        onLoad={[Function]}
-        sizes={null}
-        src=""
-        srcSet={null}
-        title="ResponsiveImage title"
-        ui={true}
-      >
-        <div
-          alt="Alternative Text 😝"
-          className="ui fluid image"
-          onLoad={[Function]}
-          sizes={null}
-          src=""
-          srcSet={null}
-          title="ResponsiveImage title"
-        >
-          <Label
-            content="Image not found!"
-          >
-            <div
-              className="ui label"
-              onClick={[Function]}
-            >
-              Image not found!
-            </div>
-          </Label>
-        </div>
-      </Image>
-    </figure>
-  </ResponsiveImage>
-</withLazyLoad(ResponsiveImage)>
-`;
-
-exports[`<ResponsiveImage /> if \`props.isLazyLoaded\` is true should have the right structure 1`] = `
-<withLazyLoad(ResponsiveImage)
-  alternativeText="Alternative Text 😝"
-  imageTitle="ResponsiveImage title"
-  isAvatar={false}
-  isFluid={true}
   isLazyLoaded={true}
   onLoad={[Function]}
   sources={Array []}
@@ -92,82 +23,77 @@ exports[`<ResponsiveImage /> if \`props.isLazyLoaded\` is true should have the r
       }
     }
     lazyComponent={[Function]}
-    lazyProps={
-      Object {
-        "imageUrl": undefined,
-      }
-    }
+    lazyProps={Object {}}
   >
-    <div>
-      <ResponsiveImage
-        alternativeText="Alternative Text 😝"
-        hasRoundedCorners={false}
-        imageHeight={null}
-        imageNotFoundLabelText="Image not found!"
-        imageTitle="ResponsiveImage title"
-        imageUrl=""
-        imageWidth={null}
-        isAvatar={false}
-        isCircular={false}
-        isFluid={true}
-        isLazyLoaded={true}
-        label={null}
-        onLoad={[Function]}
-        sizes={null}
-        sources={Array []}
-        srcSet={null}
+    <div />
+    <ResponsiveImage
+      alternativeText="Alternative Text 😝"
+      hasRoundedCorners={false}
+      imageHeight={null}
+      imageNotFoundLabelText="Image not found!"
+      imageTitle="ResponsiveImage title"
+      imageUrl=""
+      imageWidth={null}
+      isAvatar={false}
+      isCircular={false}
+      isFluid={true}
+      isLazyLoaded={true}
+      label={null}
+      onLoad={[Function]}
+      sizes={null}
+      sources={Array []}
+      srcSet={null}
+    >
+      <figure
+        className="responsive-image is-fluid"
       >
-        <figure
-          className="responsive-image is-fluid"
+        <Image
+          alt="Alternative Text 😝"
+          as="img"
+          avatar={false}
+          fluid={true}
+          onLoad={[Function]}
+          sizes={null}
+          src=""
+          srcSet={null}
+          title="ResponsiveImage title"
+          ui={true}
         >
-          <Image
+          <div
             alt="Alternative Text 😝"
-            as="img"
-            avatar={false}
-            fluid={true}
+            className="ui fluid image"
             onLoad={[Function]}
             sizes={null}
             src=""
             srcSet={null}
             title="ResponsiveImage title"
-            ui={true}
           >
-            <div
-              alt="Alternative Text 😝"
-              className="ui fluid image"
-              onLoad={[Function]}
-              sizes={null}
-              src=""
-              srcSet={null}
-              title="ResponsiveImage title"
+            <Label
+              content="Image not found!"
             >
-              <Label
-                content="Image not found!"
+              <div
+                className="ui label"
+                onClick={[Function]}
               >
-                <div
-                  className="ui label"
-                  onClick={[Function]}
-                >
-                  Image not found!
-                </div>
-              </Label>
-            </div>
-          </Image>
-        </figure>
-      </ResponsiveImage>
-    </div>
+                Image not found!
+              </div>
+            </Label>
+          </div>
+        </Image>
+      </figure>
+    </ResponsiveImage>
+    <div />
   </LazyLoader>
 </withLazyLoad(ResponsiveImage)>
 `;
 
-exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right structure 1`] = `
+exports[`<ResponsiveImage /> if \`props.isLazyLoaded\` is false should have the right structure 1`] = `
 <withLazyLoad(ResponsiveImage)
   alternativeText="Alternative Text 😝"
   imageTitle="ResponsiveImage title"
   isAvatar={false}
   isFluid={true}
   isLazyLoaded={false}
-  label="🔷"
   onLoad={[Function]}
   sources={Array []}
 >
@@ -183,7 +109,7 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
     isCircular={false}
     isFluid={true}
     isLazyLoaded={false}
-    label="🔷"
+    label={null}
     onLoad={[Function]}
     sizes={null}
     sources={Array []}
@@ -225,18 +151,111 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
           </Label>
         </div>
       </Image>
-      <Paragraph
-        size="medium"
-        weight={null}
-      >
-        <p
-          className=""
-        >
-          🔷
-        </p>
-      </Paragraph>
     </figure>
   </ResponsiveImage>
+</withLazyLoad(ResponsiveImage)>
+`;
+
+exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right structure 1`] = `
+<withLazyLoad(ResponsiveImage)
+  alternativeText="Alternative Text 😝"
+  imageTitle="ResponsiveImage title"
+  isAvatar={false}
+  isFluid={true}
+  isLazyLoaded={true}
+  label="🔷"
+  onLoad={[Function]}
+  sources={Array []}
+>
+  <LazyLoader
+    componentProps={
+      Object {
+        "alternativeText": "Alternative Text 😝",
+        "imageTitle": "ResponsiveImage title",
+        "isAvatar": false,
+        "isFluid": true,
+        "isLazyLoaded": true,
+        "label": "🔷",
+        "onLoad": [Function],
+        "sources": Array [],
+      }
+    }
+    lazyComponent={[Function]}
+    lazyProps={
+      Object {
+        "imageUrl": undefined,
+      }
+    }
+  >
+    <div />
+    <ResponsiveImage
+      alternativeText="Alternative Text 😝"
+      hasRoundedCorners={false}
+      imageHeight={null}
+      imageNotFoundLabelText="Image not found!"
+      imageTitle="ResponsiveImage title"
+      imageUrl=""
+      imageWidth={null}
+      isAvatar={false}
+      isCircular={false}
+      isFluid={true}
+      isLazyLoaded={true}
+      label="🔷"
+      onLoad={[Function]}
+      sizes={null}
+      sources={Array []}
+      srcSet={null}
+    >
+      <figure
+        className="responsive-image is-fluid"
+      >
+        <Image
+          alt="Alternative Text 😝"
+          as="img"
+          avatar={false}
+          fluid={true}
+          onLoad={[Function]}
+          sizes={null}
+          src=""
+          srcSet={null}
+          title="ResponsiveImage title"
+          ui={true}
+        >
+          <div
+            alt="Alternative Text 😝"
+            className="ui fluid image"
+            onLoad={[Function]}
+            sizes={null}
+            src=""
+            srcSet={null}
+            title="ResponsiveImage title"
+          >
+            <Label
+              content="Image not found!"
+            >
+              <div
+                className="ui label"
+                onClick={[Function]}
+              >
+                Image not found!
+              </div>
+            </Label>
+          </div>
+        </Image>
+        <Paragraph
+          size="medium"
+          weight={null}
+        >
+          <p
+            className=""
+          >
+            🔷
+          </p>
+        </Paragraph>
+      </figure>
+    </ResponsiveImage>
+    <div />
+  </LazyLoader>
 </withLazyLoad(ResponsiveImage)>
 `;
 
@@ -246,78 +265,97 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should h
   imageTitle="ResponsiveImage title"
   isAvatar={false}
   isFluid={true}
-  isLazyLoaded={false}
+  isLazyLoaded={true}
   onLoad={[Function]}
   placeholderImageUrl="ayyy"
   sources={Array []}
 >
-  <ResponsiveImage
-    alternativeText="Alternative Text 😝"
-    hasRoundedCorners={false}
-    imageHeight={null}
-    imageNotFoundLabelText="Image not found!"
-    imageTitle="ResponsiveImage title"
-    imageUrl=""
-    imageWidth={null}
-    isAvatar={false}
-    isCircular={false}
-    isFluid={true}
-    isLazyLoaded={false}
-    label={null}
-    onLoad={[Function]}
-    placeholderImageUrl="ayyy"
-    sizes={null}
-    sources={Array []}
-    srcSet={null}
+  <LazyLoader
+    componentProps={
+      Object {
+        "alternativeText": "Alternative Text 😝",
+        "imageTitle": "ResponsiveImage title",
+        "isAvatar": false,
+        "isFluid": true,
+        "isLazyLoaded": true,
+        "onLoad": [Function],
+        "placeholderImageUrl": "ayyy",
+        "sources": Array [],
+      }
+    }
+    lazyComponent={[Function]}
+    lazyProps={Object {}}
   >
-    <figure
-      className="responsive-image has-blurred-children has-placeholder is-fluid"
+    <div />
+    <ResponsiveImage
+      alternativeText="Alternative Text 😝"
+      hasRoundedCorners={false}
+      imageHeight={null}
+      imageNotFoundLabelText="Image not found!"
+      imageTitle="ResponsiveImage title"
+      imageUrl=""
+      imageWidth={null}
+      isAvatar={false}
+      isCircular={false}
+      isFluid={true}
+      isLazyLoaded={true}
+      label={null}
+      onLoad={[Function]}
+      placeholderImageUrl="ayyy"
+      sizes={null}
+      sources={Array []}
+      srcSet={null}
     >
-      <Image
-        alt="Alternative Text 😝"
-        as="img"
-        avatar={false}
-        fluid={true}
-        onLoad={[Function]}
-        sizes={null}
-        src=""
-        srcSet={null}
-        title="ResponsiveImage title"
-        ui={true}
+      <figure
+        className="responsive-image has-blurred-children has-placeholder is-fluid"
       >
-        <div
+        <Image
           alt="Alternative Text 😝"
-          className="ui fluid image"
+          as="img"
+          avatar={false}
+          fluid={true}
           onLoad={[Function]}
           sizes={null}
           src=""
           srcSet={null}
           title="ResponsiveImage title"
+          ui={true}
         >
-          <Label
-            content="Image not found!"
+          <div
+            alt="Alternative Text 😝"
+            className="ui fluid image"
+            onLoad={[Function]}
+            sizes={null}
+            src=""
+            srcSet={null}
+            title="ResponsiveImage title"
           >
-            <div
-              className="ui label"
-              onClick={[Function]}
+            <Label
+              content="Image not found!"
             >
-              Image not found!
-            </div>
-          </Label>
-        </div>
-      </Image>
-      <Image
-        as="img"
-        fluid={true}
-        src="ayyy"
-        ui={true}
-      >
-        <img
-          className="ui fluid image"
+              <div
+                className="ui label"
+                onClick={[Function]}
+              >
+                Image not found!
+              </div>
+            </Label>
+          </div>
+        </Image>
+        <Image
+          as="img"
+          fluid={true}
           src="ayyy"
-        />
-      </Image>
-    </figure>
-  </ResponsiveImage>
+          ui={true}
+        >
+          <img
+            className="ui fluid image"
+            src="ayyy"
+          />
+        </Image>
+      </figure>
+    </ResponsiveImage>
+    <div />
+  </LazyLoader>
 </withLazyLoad(ResponsiveImage)>
 `;
