@@ -21,6 +21,12 @@ module.exports = () => ({
         importType: isESBuild ? 'es' : 'commonjs',
       },
     ],
+    isProductionBuild && [
+      './tools/babel/plugin-react-dates-transform-imports',
+      {
+        importType: isESBuild ? 'es' : 'commonjs',
+      },
+    ],
     '@babel/plugin-proposal-object-rest-spread',
     '@babel/plugin-proposal-class-properties',
     'lodash',
