@@ -1,3 +1,11 @@
+# [1.195.0](https://github.com/lodgify/lodgify-ui/compare/v1.194.0...v1.195.0) (2019-06-06)
+
+
+### Features
+
+* **lib:** expose es6 modules in the built library ([85f4507](https://github.com/lodgify/lodgify-ui/commit/85f4507))
+* **react-dates:** add babel plugin to transform imports from react-dates ([c36fa82](https://github.com/lodgify/lodgify-ui/commit/c36fa82))
+
 # [1.194.0](https://github.com/lodgify/lodgify-ui/compare/v1.193.0...v1.194.0) (2019-05-28)
 
 
