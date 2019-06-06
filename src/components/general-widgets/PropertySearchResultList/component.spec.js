@@ -3,8 +3,7 @@ import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as PropertySearchResultList } from './component';
-
-const propertySearchResults = [{}, {}];
+import { propertySearchResults } from './mock-data/mock-data';
 
 const getPropertySearchResultList = otherProps =>
   mount(
@@ -27,6 +26,7 @@ describe('<PropertySearchResultList />', () => {
     it('should render the right structure', () => {
       const actual = getPropertySearchResultList({
         isShowingPlaceholder: true,
+        propertySearchResults: [],
       });
 
       expect(actual).toMatchSnapshot();
