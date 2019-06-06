@@ -23,7 +23,11 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
       }
     }
     lazyComponent={[Function]}
-    lazyProps={Object {}}
+    lazyProps={
+      Object {
+        "imageUrl": undefined,
+      }
+    }
   >
     <div />
     <ResponsiveImage
@@ -284,7 +288,11 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should h
       }
     }
     lazyComponent={[Function]}
-    lazyProps={Object {}}
+    lazyProps={
+      Object {
+        "imageUrl": undefined,
+      }
+    }
   >
     <div />
     <ResponsiveImage
