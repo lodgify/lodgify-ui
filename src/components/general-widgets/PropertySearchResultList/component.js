@@ -25,11 +25,15 @@ export const Component = ({
       <Divider size="small" />
       <TextPlaceholder length="short" />
       <Divider size="small" />
-      <FlexContainer flexWrap="wrap">
-        {PLACEHOLDERS.map(({ placeholderName }, index) => (
+      <FlexContainer flexWrap="wrap" justifyContent="center">
+        {PLACEHOLDERS.map((propertySearchResult, index) => (
           <PropertySearchResult
             isShowingPlaceholder
-            key={buildKeyFromStrings(placeholderName, index)}
+            key={buildKeyFromStrings(
+              propertySearchResult.placeholderName,
+              index
+            )}
+            {...propertySearchResult}
           />
         ))}
       </FlexContainer>
@@ -39,7 +43,7 @@ export const Component = ({
       <Heading size="small">
         {`${propertySearchResults.length} ${resultsCountText}`}
       </Heading>
-      <FlexContainer flexWrap="wrap">
+      <FlexContainer flexWrap="wrap" justifyContent="center">
         {propertySearchResults.map((propertySearchResult, index) => (
           <PropertySearchResult
             key={buildKeyFromStrings(propertySearchResult.propertyName, index)}
