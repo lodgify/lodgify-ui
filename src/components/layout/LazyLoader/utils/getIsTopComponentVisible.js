@@ -6,7 +6,7 @@ import { HEIGHT_OFF_SET } from './constants';
  * @param {number} boundingClientRect.bottom
  * @param {number} boundingClientRect.height
  * @param {number} windowHeight
+ * @return {boolean}
  */
-export const getIsVisible = ({ top, bottom, height }, windowHeight) =>
-  top + height >= 0 - HEIGHT_OFF_SET &&
-  bottom - height <= windowHeight + HEIGHT_OFF_SET;
+export const getIsTopComponentVisible = ({ top }, windowHeight) =>
+  top - HEIGHT_OFF_SET <= windowHeight && top > -windowHeight / 2;
