@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PropertySearchResultList /> by default should render the right structure 1`] = `
+<PropertySearchResultList
+  isShowingPlaceholder={false}
+  propertySearchResults={
+    Array [
+      Object {},
+      Object {},
+    ]
+  }
+  resultsCountText="results"
+>
+  <Heading
+    className={null}
+    hasMargin={true}
+    isColorInverted={false}
+    size="small"
+    textAlign={null}
+  >
+    <Header
+      as="h4"
+      className=""
+      inverted={false}
+      textAlign={null}
+    >
+      <h4
+        className="ui header"
+      >
+        2 results
+      </h4>
+    </Header>
+  </Heading>
+  <FlexContainer
+    alignContent={null}
+    alignItems={null}
+    flexDirection={null}
+    flexWrap="wrap"
+    justifyContent={null}
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": null,
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": "wrap",
+          "height": "100%",
+          "justifyContent": null,
+        }
+      }
+    >
+      <PropertySearchResult
+        key="0"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+      <PropertySearchResult
+        key="1"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+    </div>
+  </FlexContainer>
+</PropertySearchResultList>
+`;
+
+exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true should render the right structure 1`] = `
+<PropertySearchResultList
+  isShowingPlaceholder={true}
+  propertySearchResults={
+    Array [
+      Object {},
+      Object {},
+    ]
+  }
+  resultsCountText="results"
+>
+  <Divider
+    className=""
+    hasLine={false}
+    size="small"
+  >
+    <Divider
+      className="is-size-small"
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider is-size-small"
+      />
+    </Divider>
+  </Divider>
+  <TextPlaceholder
+    isFluid={true}
+    length="short"
+  >
+    <div
+      className="placeholder text short fluid"
+    />
+  </TextPlaceholder>
+  <Divider
+    className=""
+    hasLine={false}
+    size="small"
+  >
+    <Divider
+      className="is-size-small"
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider is-size-small"
+      />
+    </Divider>
+  </Divider>
+  <FlexContainer
+    alignContent={null}
+    alignItems={null}
+    flexDirection={null}
+    flexWrap="wrap"
+    justifyContent={null}
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": null,
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": "wrap",
+          "height": "100%",
+          "justifyContent": null,
+        }
+      }
+    >
+      <PropertySearchResult
+        isShowingPlaceholder={true}
+        key="placeholder0"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+      <PropertySearchResult
+        isShowingPlaceholder={true}
+        key="placeholder1"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+      <PropertySearchResult
+        isShowingPlaceholder={true}
+        key="placeholder2"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+      <PropertySearchResult
+        isShowingPlaceholder={true}
+        key="placeholder3"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+      <PropertySearchResult
+        isShowingPlaceholder={true}
+        key="placeholder4"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+      <PropertySearchResult
+        isShowingPlaceholder={true}
+        key="placeholder5"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+    </div>
+  </FlexContainer>
+</PropertySearchResultList>
+`;
+
+exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed should render the right structure 1`] = `
+<PropertySearchResultList
+  isShowingPlaceholder={false}
+  propertySearchResults={
+    Array [
+      Object {},
+      Object {},
+    ]
+  }
+  resultsCountText="My god I love Cliff Richard"
+>
+  <Heading
+    className={null}
+    hasMargin={true}
+    isColorInverted={false}
+    size="small"
+    textAlign={null}
+  >
+    <Header
+      as="h4"
+      className=""
+      inverted={false}
+      textAlign={null}
+    >
+      <h4
+        className="ui header"
+      >
+        2 My god I love Cliff Richard
+      </h4>
+    </Header>
+  </Heading>
+  <FlexContainer
+    alignContent={null}
+    alignItems={null}
+    flexDirection={null}
+    flexWrap="wrap"
+    justifyContent={null}
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": null,
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": "wrap",
+          "height": "100%",
+          "justifyContent": null,
+        }
+      }
+    >
+      <PropertySearchResult
+        key="0"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+      <PropertySearchResult
+        key="1"
+      >
+        <div>
+          Property search result
+        </div>
+      </PropertySearchResult>
+    </div>
+  </FlexContainer>
+</PropertySearchResultList>
+`;

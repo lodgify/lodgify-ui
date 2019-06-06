@@ -54,6 +54,7 @@ export const PROPERTIES = 'Properties';
 export const PROPERTY = 'Property';
 export const PROPERTY_PICTURES = 'Property pictures';
 export const PROPERTY_URL_TARGET = '_self';
+export const RESULTS = 'results';
 export const REVIEWS = 'Reviews';
 export const ROOM = 'Room';
 export const ROOM_AMENITIES = 'Room Amenities';
