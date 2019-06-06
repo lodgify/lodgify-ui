@@ -1,3 +1,11 @@
+# [1.196.0](https://github.com/lodgify/lodgify-ui/compare/v1.195.0...v1.196.0) (2019-06-06)
+
+
+### Features
+
+* **PropertySearchResult:** create dummy component ([3957f8f](https://github.com/lodgify/lodgify-ui/commit/3957f8f))
+* **PropertySearchResultList:** create component with tests and examples ([dc19b83](https://github.com/lodgify/lodgify-ui/commit/dc19b83))
+
 # [1.195.0](https://github.com/lodgify/lodgify-ui/compare/v1.194.0...v1.195.0) (2019-06-06)
 
 
