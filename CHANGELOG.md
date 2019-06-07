@@ -1,3 +1,16 @@
+# [1.198.0](https://github.com/lodgify/lodgify-ui/compare/v1.197.0...v1.198.0) (2019-06-07)
+
+
+### Features
+
+* **card.*:** add PropertySearchResult styles ([1de8bbd](https://github.com/lodgify/lodgify-ui/commit/1de8bbd))
+* **getDescriptionItem:** add util and unit test ([7ddeb61](https://github.com/lodgify/lodgify-ui/commit/7ddeb61))
+* **getPriceLabelMarkup:** add util and unit test ([361103c](https://github.com/lodgify/lodgify-ui/commit/361103c))
+* **getPropertyAmenities:** add util and unit test ([651c891](https://github.com/lodgify/lodgify-ui/commit/651c891))
+* **getSearchResultDescription:** add util and unit test ([21615c7](https://github.com/lodgify/lodgify-ui/commit/21615c7))
+* **PropertySearchResult:** expose component ([6385063](https://github.com/lodgify/lodgify-ui/commit/6385063))
+* **PropertySearchResultList:** integrate PropertySearchResult ([e4adce7](https://github.com/lodgify/lodgify-ui/commit/e4adce7))
+
 # [1.197.0](https://github.com/lodgify/lodgify-ui/compare/v1.196.0...v1.197.0) (2019-06-07)
 
 
