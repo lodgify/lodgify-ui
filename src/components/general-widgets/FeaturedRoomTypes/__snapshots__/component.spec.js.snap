@@ -59,51 +59,72 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
         <withLazyLoad(ResponsiveImage)
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           isFluid={true}
-          isLazyLoaded={false}
+          isLazyLoaded={true}
         >
-          <ResponsiveImage
-            alternativeText="Image Widget"
-            hasRoundedCorners={false}
-            imageHeight={null}
-            imageNotFoundLabelText="Image not found!"
-            imageTitle="Image Title"
-            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-            imageWidth={null}
-            isAvatar={false}
-            isCircular={false}
-            isFluid={true}
-            isLazyLoaded={false}
-            label={null}
-            sizes={null}
-            srcSet={null}
+          <LazyLoader
+            componentProps={
+              Object {
+                "alternativeText": undefined,
+                "isFluid": true,
+                "isLazyLoaded": true,
+                "placeholderImageUrl": undefined,
+                "sizes": undefined,
+                "srcSet": undefined,
+              }
+            }
+            lazyComponent={[Function]}
+            lazyProps={
+              Object {
+                "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              }
+            }
           >
-            <figure
-              className="responsive-image is-fluid"
+            <div />
+            <ResponsiveImage
+              alternativeText="Image Widget"
+              hasRoundedCorners={false}
+              imageHeight={null}
+              imageNotFoundLabelText="Image not found!"
+              imageTitle="Image Title"
+              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+              imageWidth={null}
+              isAvatar={false}
+              isCircular={false}
+              isFluid={true}
+              isLazyLoaded={true}
+              label={null}
+              sizes={null}
+              srcSet={null}
             >
-              <Image
-                alt="Image Widget"
-                as="img"
-                avatar={false}
-                fluid={true}
-                onLoad={[Function]}
-                sizes={null}
-                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                srcSet={null}
-                title="Image Title"
-                ui={true}
+              <figure
+                className="responsive-image is-fluid"
               >
-                <img
+                <Image
                   alt="Image Widget"
-                  className="ui fluid image"
+                  as="img"
+                  avatar={false}
+                  fluid={true}
                   onLoad={[Function]}
                   sizes={null}
                   src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
                   srcSet={null}
                   title="Image Title"
-                />
-              </Image>
-            </figure>
-          </ResponsiveImage>
+                  ui={true}
+                >
+                  <img
+                    alt="Image Widget"
+                    className="ui fluid image"
+                    onLoad={[Function]}
+                    sizes={null}
+                    src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    srcSet={null}
+                    title="Image Title"
+                  />
+                </Image>
+              </figure>
+            </ResponsiveImage>
+            <div />
+          </LazyLoader>
         </withLazyLoad(ResponsiveImage)>
         <CardContent>
           <div
@@ -214,51 +235,72 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
         <withLazyLoad(ResponsiveImage)
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           isFluid={true}
-          isLazyLoaded={false}
+          isLazyLoaded={true}
         >
-          <ResponsiveImage
-            alternativeText="Image Widget"
-            hasRoundedCorners={false}
-            imageHeight={null}
-            imageNotFoundLabelText="Image not found!"
-            imageTitle="Image Title"
-            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-            imageWidth={null}
-            isAvatar={false}
-            isCircular={false}
-            isFluid={true}
-            isLazyLoaded={false}
-            label={null}
-            sizes={null}
-            srcSet={null}
+          <LazyLoader
+            componentProps={
+              Object {
+                "alternativeText": undefined,
+                "isFluid": true,
+                "isLazyLoaded": true,
+                "placeholderImageUrl": undefined,
+                "sizes": undefined,
+                "srcSet": undefined,
+              }
+            }
+            lazyComponent={[Function]}
+            lazyProps={
+              Object {
+                "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              }
+            }
           >
-            <figure
-              className="responsive-image is-fluid"
+            <div />
+            <ResponsiveImage
+              alternativeText="Image Widget"
+              hasRoundedCorners={false}
+              imageHeight={null}
+              imageNotFoundLabelText="Image not found!"
+              imageTitle="Image Title"
+              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+              imageWidth={null}
+              isAvatar={false}
+              isCircular={false}
+              isFluid={true}
+              isLazyLoaded={true}
+              label={null}
+              sizes={null}
+              srcSet={null}
             >
-              <Image
-                alt="Image Widget"
-                as="img"
-                avatar={false}
-                fluid={true}
-                onLoad={[Function]}
-                sizes={null}
-                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                srcSet={null}
-                title="Image Title"
-                ui={true}
+              <figure
+                className="responsive-image is-fluid"
               >
-                <img
+                <Image
                   alt="Image Widget"
-                  className="ui fluid image"
+                  as="img"
+                  avatar={false}
+                  fluid={true}
                   onLoad={[Function]}
                   sizes={null}
                   src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
                   srcSet={null}
                   title="Image Title"
-                />
-              </Image>
-            </figure>
-          </ResponsiveImage>
+                  ui={true}
+                >
+                  <img
+                    alt="Image Widget"
+                    className="ui fluid image"
+                    onLoad={[Function]}
+                    sizes={null}
+                    src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    srcSet={null}
+                    title="Image Title"
+                  />
+                </Image>
+              </figure>
+            </ResponsiveImage>
+            <div />
+          </LazyLoader>
         </withLazyLoad(ResponsiveImage)>
         <CardContent>
           <div
@@ -697,51 +739,72 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
         <withLazyLoad(ResponsiveImage)
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           isFluid={true}
-          isLazyLoaded={false}
+          isLazyLoaded={true}
         >
-          <ResponsiveImage
-            alternativeText="Image Widget"
-            hasRoundedCorners={false}
-            imageHeight={null}
-            imageNotFoundLabelText="Image not found!"
-            imageTitle="Image Title"
-            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-            imageWidth={null}
-            isAvatar={false}
-            isCircular={false}
-            isFluid={true}
-            isLazyLoaded={false}
-            label={null}
-            sizes={null}
-            srcSet={null}
+          <LazyLoader
+            componentProps={
+              Object {
+                "alternativeText": undefined,
+                "isFluid": true,
+                "isLazyLoaded": true,
+                "placeholderImageUrl": undefined,
+                "sizes": undefined,
+                "srcSet": undefined,
+              }
+            }
+            lazyComponent={[Function]}
+            lazyProps={
+              Object {
+                "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              }
+            }
           >
-            <figure
-              className="responsive-image is-fluid"
+            <div />
+            <ResponsiveImage
+              alternativeText="Image Widget"
+              hasRoundedCorners={false}
+              imageHeight={null}
+              imageNotFoundLabelText="Image not found!"
+              imageTitle="Image Title"
+              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+              imageWidth={null}
+              isAvatar={false}
+              isCircular={false}
+              isFluid={true}
+              isLazyLoaded={true}
+              label={null}
+              sizes={null}
+              srcSet={null}
             >
-              <Image
-                alt="Image Widget"
-                as="img"
-                avatar={false}
-                fluid={true}
-                onLoad={[Function]}
-                sizes={null}
-                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                srcSet={null}
-                title="Image Title"
-                ui={true}
+              <figure
+                className="responsive-image is-fluid"
               >
-                <img
+                <Image
                   alt="Image Widget"
-                  className="ui fluid image"
+                  as="img"
+                  avatar={false}
+                  fluid={true}
                   onLoad={[Function]}
                   sizes={null}
                   src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
                   srcSet={null}
                   title="Image Title"
-                />
-              </Image>
-            </figure>
-          </ResponsiveImage>
+                  ui={true}
+                >
+                  <img
+                    alt="Image Widget"
+                    className="ui fluid image"
+                    onLoad={[Function]}
+                    sizes={null}
+                    src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    srcSet={null}
+                    title="Image Title"
+                  />
+                </Image>
+              </figure>
+            </ResponsiveImage>
+            <div />
+          </LazyLoader>
         </withLazyLoad(ResponsiveImage)>
         <CardContent>
           <div
@@ -852,51 +915,72 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
         <withLazyLoad(ResponsiveImage)
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           isFluid={true}
-          isLazyLoaded={false}
+          isLazyLoaded={true}
         >
-          <ResponsiveImage
-            alternativeText="Image Widget"
-            hasRoundedCorners={false}
-            imageHeight={null}
-            imageNotFoundLabelText="Image not found!"
-            imageTitle="Image Title"
-            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-            imageWidth={null}
-            isAvatar={false}
-            isCircular={false}
-            isFluid={true}
-            isLazyLoaded={false}
-            label={null}
-            sizes={null}
-            srcSet={null}
+          <LazyLoader
+            componentProps={
+              Object {
+                "alternativeText": undefined,
+                "isFluid": true,
+                "isLazyLoaded": true,
+                "placeholderImageUrl": undefined,
+                "sizes": undefined,
+                "srcSet": undefined,
+              }
+            }
+            lazyComponent={[Function]}
+            lazyProps={
+              Object {
+                "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              }
+            }
           >
-            <figure
-              className="responsive-image is-fluid"
+            <div />
+            <ResponsiveImage
+              alternativeText="Image Widget"
+              hasRoundedCorners={false}
+              imageHeight={null}
+              imageNotFoundLabelText="Image not found!"
+              imageTitle="Image Title"
+              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+              imageWidth={null}
+              isAvatar={false}
+              isCircular={false}
+              isFluid={true}
+              isLazyLoaded={true}
+              label={null}
+              sizes={null}
+              srcSet={null}
             >
-              <Image
-                alt="Image Widget"
-                as="img"
-                avatar={false}
-                fluid={true}
-                onLoad={[Function]}
-                sizes={null}
-                src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                srcSet={null}
-                title="Image Title"
-                ui={true}
+              <figure
+                className="responsive-image is-fluid"
               >
-                <img
+                <Image
                   alt="Image Widget"
-                  className="ui fluid image"
+                  as="img"
+                  avatar={false}
+                  fluid={true}
                   onLoad={[Function]}
                   sizes={null}
                   src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
                   srcSet={null}
                   title="Image Title"
-                />
-              </Image>
-            </figure>
-          </ResponsiveImage>
+                  ui={true}
+                >
+                  <img
+                    alt="Image Widget"
+                    className="ui fluid image"
+                    onLoad={[Function]}
+                    sizes={null}
+                    src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    srcSet={null}
+                    title="Image Title"
+                  />
+                </Image>
+              </figure>
+            </ResponsiveImage>
+            <div />
+          </LazyLoader>
         </withLazyLoad(ResponsiveImage)>
         <CardContent>
           <div

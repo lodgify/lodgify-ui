@@ -88,7 +88,7 @@ Component.defaultProps = {
   isAvatar: false,
   isCircular: false,
   isFluid: false,
-  isLazyLoaded: false,
+  isLazyLoaded: true,
   label: null,
   placeholderImageUrl: undefined,
   sizes: null,

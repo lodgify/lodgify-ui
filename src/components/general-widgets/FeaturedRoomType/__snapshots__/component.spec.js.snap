@@ -45,7 +45,7 @@ exports[`<FeaturedRoomType /> should render the right structure 1`] = `
     alternativeText="this alt tag"
     imageUrl="🐱🐱"
     isFluid={true}
-    isLazyLoaded={false}
+    isLazyLoaded={true}
   />
   <CardContent>
     <CardHeader>

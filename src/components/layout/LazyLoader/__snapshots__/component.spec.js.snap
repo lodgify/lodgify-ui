@@ -5,6 +5,7 @@ exports[`LazyLoader by default should render the right structure 1`] = `
   lazyComponent={[Function]}
 >
   <div />
+  <div />
 </LazyLoader>
 `;
 
@@ -17,15 +18,15 @@ exports[`LazyLoader if \`componentProps\` !== undefined should render the right 
   }
   lazyComponent={[Function]}
 >
-  <div>
-    <Component
-      mad="props"
-    >
-      <div>
-        🚸
-      </div>
-    </Component>
-  </div>
+  <div />
+  <Component
+    mad="props"
+  >
+    <div>
+      🚸
+    </div>
+  </Component>
+  <div />
 </LazyLoader>
 `;
 
@@ -38,13 +39,13 @@ exports[`LazyLoader if \`lazyProps\` is passed by default should render the righ
     }
   }
 >
-  <div>
-    <Component>
-      <div>
-        🚸
-      </div>
-    </Component>
-  </div>
+  <div />
+  <Component>
+    <div>
+      🚸
+    </div>
+  </Component>
+  <div />
 </LazyLoader>
 `;
 
@@ -57,13 +58,13 @@ exports[`LazyLoader if \`lazyProps\` is passed if \`shouldRender\` === true shou
     }
   }
 >
-  <div>
-    <Component>
-      <div>
-        🚸
-      </div>
-    </Component>
-  </div>
+  <div />
+  <Component>
+    <div>
+      🚸
+    </div>
+  </Component>
+  <div />
 </LazyLoader>
 `;
 
@@ -71,12 +72,12 @@ exports[`LazyLoader if \`shouldRender\` === true should render the right structu
 <LazyLoader
   lazyComponent={[Function]}
 >
-  <div>
-    <Component>
-      <div>
-        🚸
-      </div>
-    </Component>
-  </div>
+  <div />
+  <Component>
+    <div>
+      🚸
+    </div>
+  </Component>
+  <div />
 </LazyLoader>
 `;

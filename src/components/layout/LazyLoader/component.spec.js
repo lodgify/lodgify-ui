@@ -1,4 +1,6 @@
-jest.mock('./utils/getIsVisible');
+jest.mock('./utils/getIsTopComponentVisible');
+jest.mock('./utils/getIsBottomComponentVisible');
+jest.mock('./utils/getComponentPosition');
 jest.mock('debounce');
 
 import React from 'react';
@@ -6,7 +8,9 @@ import { mount, shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as LazyLoader } from './component';
-import { getIsVisible } from './utils/getIsVisible';
+import { getIsTopComponentVisible } from './utils/getIsTopComponentVisible';
+import { getIsBottomComponentVisible } from './utils/getIsBottomComponentVisible';
+import { getComponentPosition } from './utils/getComponentPosition';
 
 const Component = () => <div>🚸</div>;
 
@@ -26,6 +30,15 @@ Element.prototype.getBoundingClientRect = jest.fn(() => ({
   bottom: 0,
   right: 0,
 }));
+
+getComponentPosition.mockReturnValue({
+  width: 120,
+  height: 120,
+  top: 0,
+  left: 0,
+  bottom: 0,
+  right: 0,
+});
 
 const getLazyLoaderMount = extraProps =>
   mount(<LazyLoader {...props} {...extraProps} />);
@@ -100,95 +113,6 @@ describe('LazyLoader', () => {
     });
   });
 
-  describe('getShouldComponentRender', () => {
-    describe('if `this.component` is undefined', () => {
-      it('should return `undefined`', () => {
-        const wrapper = getLazyLoaderShallow();
-        const actual = wrapper.instance().getShouldComponentRender();
-
-        expect(actual).toBe(undefined);
-      });
-    });
-
-    describe('if `this.component.getBoundingClientRect` is undefined', () => {
-      it('should return `undefined`', () => {
-        const wrapper = getLazyLoaderShallow();
-        const COMPONENT = {
-          getBoundingClientRect: undefined,
-        };
-
-        wrapper.instance().createComponentRef(COMPONENT);
-
-        const actual = wrapper.instance().getShouldComponentRender();
-
-        expect(actual).toBe(undefined);
-      });
-    });
-
-    describe('by default', () => {
-      const COMPONENT = Element;
-
-      it('should call `this.component.getBoundingClientRect`', () => {
-        const wrapper = getLazyLoaderShallow();
-
-        wrapper.instance().createComponentRef(COMPONENT);
-        wrapper.instance().getShouldComponentRender();
-
-        expect(COMPONENT.prototype.getBoundingClientRect).toHaveBeenCalled();
-      });
-
-      it('should call `getIsVisible` with the correct arguments', () => {
-        const wrapper = getLazyLoaderShallow();
-
-        wrapper.instance().createComponentRef(COMPONENT);
-        getIsVisible.mockReturnValue(true);
-        wrapper.instance().getShouldComponentRender();
-
-        expect(getIsVisible).toHaveBeenCalledWith(
-          {
-            width: 120,
-            height: 120,
-            top: 0,
-            left: 0,
-            bottom: 0,
-            right: 0,
-          },
-          expect.any(Number)
-        );
-      });
-
-      describe('if `isComponentVisible` is truthy', () => {
-        const COMPONENT = {
-          getBoundingClientRect: Element.prototype.getBoundingClientRect,
-        };
-
-        it('should call `this.setState`', () => {
-          const wrapper = getLazyLoaderShallow();
-
-          wrapper.instance().createComponentRef(COMPONENT);
-          wrapper.instance().setState = jest.fn();
-          getIsVisible.mockReturnValue(true);
-          wrapper.instance().getShouldComponentRender();
-
-          expect(wrapper.instance().setState).toHaveBeenCalledWith({
-            shouldRender: true,
-          });
-        });
-
-        it('should call `this.removeEventListeners`', () => {
-          const wrapper = getLazyLoaderShallow();
-
-          getIsVisible.mockReturnValueOnce(true);
-          wrapper.instance().createComponentRef(COMPONENT);
-          wrapper.instance().removeEventListeners = jest.fn();
-          wrapper.instance().getShouldComponentRender();
-
-          expect(wrapper.instance().removeEventListeners).toHaveBeenCalled();
-        });
-      });
-    });
-  });
-
   describe('componentWillUnmount', () => {
     it('should call `this.removeEventListeners`', () => {
       const wrapper = getLazyLoaderShallow();
@@ -201,14 +125,164 @@ describe('LazyLoader', () => {
     });
   });
 
-  describe('createComponentRef', () => {
+  describe('getShouldComponentRender', () => {
+    describe('if `getComponentPosition` is undefined', () => {
+      it('should return `undefined`', () => {
+        const wrapper = getLazyLoaderShallow();
+
+        getComponentPosition.mockReturnValueOnce(undefined);
+
+        const actual = wrapper.instance().getShouldComponentRender();
+
+        expect(actual).toBe(undefined);
+      });
+    });
+
+    describe('if `this.topComponent.getBoundingClientRect` is undefined', () => {
+      it('should return `undefined`', () => {
+        const wrapper = getLazyLoaderShallow();
+        const COMPONENT = {
+          getBoundingClientRect: undefined,
+        };
+
+        wrapper.instance().createTopComponentRef(COMPONENT);
+
+        const actual = wrapper.instance().getShouldComponentRender();
+
+        expect(actual).toBe(undefined);
+      });
+    });
+
+    describe('by default', () => {
+      const COMPONENT = Element;
+
+      it('should call `getIsTopComponentVisible` with the correct arguments', () => {
+        const wrapper = getLazyLoaderShallow();
+
+        wrapper.instance().createTopComponentRef(COMPONENT);
+        getIsTopComponentVisible.mockReturnValue(true);
+        wrapper.instance().getShouldComponentRender();
+
+        expect(getIsTopComponentVisible).toHaveBeenCalledWith(
+          {
+            width: 120,
+            height: 120,
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+          },
+          expect.any(Number)
+        );
+      });
+
+      it('should call `getIsBottomComponentVisible` with the correct arguments', () => {
+        const wrapper = getLazyLoaderShallow();
+
+        wrapper.instance().createTopComponentRef(COMPONENT);
+        getIsBottomComponentVisible.mockReturnValue(true);
+        wrapper.instance().getShouldComponentRender();
+
+        expect(getIsTopComponentVisible).toHaveBeenCalledWith(
+          {
+            width: 120,
+            height: 120,
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+          },
+          expect.any(Number)
+        );
+      });
+
+      describe('if `getIsTopComponentVisible` is truthy', () => {
+        const COMPONENT = {
+          getBoundingClientRect: Element.prototype.getBoundingClientRect,
+        };
+
+        it('should call `this.setState`', () => {
+          const wrapper = getLazyLoaderShallow();
+
+          wrapper.instance().createTopComponentRef(COMPONENT);
+          wrapper.instance().createBottomComponentRef(COMPONENT);
+          wrapper.instance().setState = jest.fn();
+          getIsTopComponentVisible.mockReturnValue(true);
+          wrapper.instance().getShouldComponentRender();
+
+          expect(wrapper.instance().setState).toHaveBeenCalledWith({
+            shouldRender: true,
+          });
+        });
+
+        it('should call `this.removeEventListeners`', () => {
+          const wrapper = getLazyLoaderShallow();
+
+          getIsTopComponentVisible.mockReturnValueOnce(true);
+          wrapper.instance().createTopComponentRef(COMPONENT);
+          wrapper.instance().createBottomComponentRef(COMPONENT);
+          wrapper.instance().removeEventListeners = jest.fn();
+          wrapper.instance().getShouldComponentRender();
+
+          expect(wrapper.instance().removeEventListeners).toHaveBeenCalled();
+        });
+      });
+
+      describe('if `getIsBottomComponentVisible` is truthy', () => {
+        const COMPONENT = {
+          getBoundingClientRect: Element.prototype.getBoundingClientRect,
+        };
+
+        it('should call `this.setState`', () => {
+          const wrapper = getLazyLoaderShallow();
+
+          wrapper.instance().createTopComponentRef(COMPONENT);
+          wrapper.instance().createBottomComponentRef(COMPONENT);
+          wrapper.instance().setState = jest.fn();
+          getIsBottomComponentVisible.mockReturnValue(true);
+          wrapper.instance().getShouldComponentRender();
+
+          expect(wrapper.instance().setState).toHaveBeenCalledWith({
+            shouldRender: true,
+          });
+        });
+
+        it('should call `this.removeEventListeners`', () => {
+          const wrapper = getLazyLoaderShallow();
+
+          getIsTopComponentVisible.mockReturnValueOnce(true);
+          wrapper.instance().createTopComponentRef(COMPONENT);
+          wrapper.instance().createBottomComponentRef(COMPONENT);
+          wrapper.instance().removeEventListeners = jest.fn();
+          wrapper.instance().getShouldComponentRender();
+
+          expect(wrapper.instance().removeEventListeners).toHaveBeenCalled();
+        });
+      });
+    });
+  });
+
+  describe('createTopComponentRef', () => {
     it('should create the ref', () => {
       const wrapper = getLazyLoaderShallow();
       const COMPONENT = '🎧';
 
-      wrapper.instance().createComponentRef(COMPONENT);
+      wrapper.instance().createTopComponentRef(COMPONENT);
 
-      const actual = wrapper.instance().component;
+      const actual = wrapper.instance().topComponent;
+
+      expect(actual).toBe(COMPONENT);
+    });
+  });
+
+  describe('createBottomComponentRef', () => {
+    it('should create the ref', () => {
+      const wrapper = getLazyLoaderShallow();
+      const COMPONENT = '⚜';
+
+      wrapper.instance().createBottomComponentRef(COMPONENT);
+
+      const actual = wrapper.instance().bottomComponent;
 
       expect(actual).toBe(COMPONENT);
     });

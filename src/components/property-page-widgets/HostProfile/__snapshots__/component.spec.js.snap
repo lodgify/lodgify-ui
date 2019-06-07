@@ -132,53 +132,75 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                               hasRoundedCorners={false}
                               imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                               isCircular={true}
-                              isLazyLoaded={false}
+                              isLazyLoaded={true}
                               isSquare={false}
                             >
-                              <ResponsiveImage
-                                alternativeText="Image Widget"
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageNotFoundLabelText="Image not found!"
-                                imageTitle="Image Title"
-                                imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={true}
-                                isFluid={false}
-                                isLazyLoaded={false}
-                                isSquare={false}
-                                label={null}
-                                sizes={null}
-                                srcSet={null}
+                              <LazyLoader
+                                componentProps={
+                                  Object {
+                                    "alternativeText": undefined,
+                                    "hasRoundedCorners": false,
+                                    "isCircular": true,
+                                    "isLazyLoaded": true,
+                                    "isSquare": false,
+                                    "sizes": undefined,
+                                    "srcSet": undefined,
+                                  }
+                                }
+                                lazyComponent={[Function]}
+                                lazyProps={
+                                  Object {
+                                    "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                  }
+                                }
                               >
-                                <figure
-                                  className="responsive-image is-circular"
+                                <div />
+                                <ResponsiveImage
+                                  alternativeText="Image Widget"
+                                  hasRoundedCorners={false}
+                                  imageHeight={null}
+                                  imageNotFoundLabelText="Image not found!"
+                                  imageTitle="Image Title"
+                                  imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  imageWidth={null}
+                                  isAvatar={false}
+                                  isCircular={true}
+                                  isFluid={false}
+                                  isLazyLoaded={true}
+                                  isSquare={false}
+                                  label={null}
+                                  sizes={null}
+                                  srcSet={null}
                                 >
-                                  <Image
-                                    alt="Image Widget"
-                                    as="img"
-                                    avatar={false}
-                                    fluid={true}
-                                    onLoad={[Function]}
-                                    sizes={null}
-                                    src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                    srcSet={null}
-                                    title="Image Title"
-                                    ui={true}
+                                  <figure
+                                    className="responsive-image is-circular"
                                   >
-                                    <img
+                                    <Image
                                       alt="Image Widget"
-                                      className="ui fluid image"
+                                      as="img"
+                                      avatar={false}
+                                      fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
                                       src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                                       srcSet={null}
                                       title="Image Title"
-                                    />
-                                  </Image>
-                                </figure>
-                              </ResponsiveImage>
+                                      ui={true}
+                                    >
+                                      <img
+                                        alt="Image Widget"
+                                        className="ui fluid image"
+                                        onLoad={[Function]}
+                                        sizes={null}
+                                        src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                        srcSet={null}
+                                        title="Image Title"
+                                      />
+                                    </Image>
+                                  </figure>
+                                </ResponsiveImage>
+                                <div />
+                              </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                           </div>
                         </Thumbnail>
@@ -463,53 +485,75 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                               hasRoundedCorners={false}
                               imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                               isCircular={true}
-                              isLazyLoaded={false}
+                              isLazyLoaded={true}
                               isSquare={false}
                             >
-                              <ResponsiveImage
-                                alternativeText="Image Widget"
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageNotFoundLabelText="Image not found!"
-                                imageTitle="Image Title"
-                                imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={true}
-                                isFluid={false}
-                                isLazyLoaded={false}
-                                isSquare={false}
-                                label={null}
-                                sizes={null}
-                                srcSet={null}
+                              <LazyLoader
+                                componentProps={
+                                  Object {
+                                    "alternativeText": undefined,
+                                    "hasRoundedCorners": false,
+                                    "isCircular": true,
+                                    "isLazyLoaded": true,
+                                    "isSquare": false,
+                                    "sizes": undefined,
+                                    "srcSet": undefined,
+                                  }
+                                }
+                                lazyComponent={[Function]}
+                                lazyProps={
+                                  Object {
+                                    "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                  }
+                                }
                               >
-                                <figure
-                                  className="responsive-image is-circular"
+                                <div />
+                                <ResponsiveImage
+                                  alternativeText="Image Widget"
+                                  hasRoundedCorners={false}
+                                  imageHeight={null}
+                                  imageNotFoundLabelText="Image not found!"
+                                  imageTitle="Image Title"
+                                  imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  imageWidth={null}
+                                  isAvatar={false}
+                                  isCircular={true}
+                                  isFluid={false}
+                                  isLazyLoaded={true}
+                                  isSquare={false}
+                                  label={null}
+                                  sizes={null}
+                                  srcSet={null}
                                 >
-                                  <Image
-                                    alt="Image Widget"
-                                    as="img"
-                                    avatar={false}
-                                    fluid={true}
-                                    onLoad={[Function]}
-                                    sizes={null}
-                                    src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                    srcSet={null}
-                                    title="Image Title"
-                                    ui={true}
+                                  <figure
+                                    className="responsive-image is-circular"
                                   >
-                                    <img
+                                    <Image
                                       alt="Image Widget"
-                                      className="ui fluid image"
+                                      as="img"
+                                      avatar={false}
+                                      fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
                                       src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                                       srcSet={null}
                                       title="Image Title"
-                                    />
-                                  </Image>
-                                </figure>
-                              </ResponsiveImage>
+                                      ui={true}
+                                    >
+                                      <img
+                                        alt="Image Widget"
+                                        className="ui fluid image"
+                                        onLoad={[Function]}
+                                        sizes={null}
+                                        src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                        srcSet={null}
+                                        title="Image Title"
+                                      />
+                                    </Image>
+                                  </figure>
+                                </ResponsiveImage>
+                                <div />
+                              </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                           </div>
                         </Thumbnail>
@@ -787,53 +831,75 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                               hasRoundedCorners={false}
                               imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                               isCircular={true}
-                              isLazyLoaded={false}
+                              isLazyLoaded={true}
                               isSquare={false}
                             >
-                              <ResponsiveImage
-                                alternativeText="Image Widget"
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageNotFoundLabelText="Image not found!"
-                                imageTitle="Image Title"
-                                imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={true}
-                                isFluid={false}
-                                isLazyLoaded={false}
-                                isSquare={false}
-                                label={null}
-                                sizes={null}
-                                srcSet={null}
+                              <LazyLoader
+                                componentProps={
+                                  Object {
+                                    "alternativeText": undefined,
+                                    "hasRoundedCorners": false,
+                                    "isCircular": true,
+                                    "isLazyLoaded": true,
+                                    "isSquare": false,
+                                    "sizes": undefined,
+                                    "srcSet": undefined,
+                                  }
+                                }
+                                lazyComponent={[Function]}
+                                lazyProps={
+                                  Object {
+                                    "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                  }
+                                }
                               >
-                                <figure
-                                  className="responsive-image is-circular"
+                                <div />
+                                <ResponsiveImage
+                                  alternativeText="Image Widget"
+                                  hasRoundedCorners={false}
+                                  imageHeight={null}
+                                  imageNotFoundLabelText="Image not found!"
+                                  imageTitle="Image Title"
+                                  imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  imageWidth={null}
+                                  isAvatar={false}
+                                  isCircular={true}
+                                  isFluid={false}
+                                  isLazyLoaded={true}
+                                  isSquare={false}
+                                  label={null}
+                                  sizes={null}
+                                  srcSet={null}
                                 >
-                                  <Image
-                                    alt="Image Widget"
-                                    as="img"
-                                    avatar={false}
-                                    fluid={true}
-                                    onLoad={[Function]}
-                                    sizes={null}
-                                    src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                    srcSet={null}
-                                    title="Image Title"
-                                    ui={true}
+                                  <figure
+                                    className="responsive-image is-circular"
                                   >
-                                    <img
+                                    <Image
                                       alt="Image Widget"
-                                      className="ui fluid image"
+                                      as="img"
+                                      avatar={false}
+                                      fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
                                       src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                                       srcSet={null}
                                       title="Image Title"
-                                    />
-                                  </Image>
-                                </figure>
-                              </ResponsiveImage>
+                                      ui={true}
+                                    >
+                                      <img
+                                        alt="Image Widget"
+                                        className="ui fluid image"
+                                        onLoad={[Function]}
+                                        sizes={null}
+                                        src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                        srcSet={null}
+                                        title="Image Title"
+                                      />
+                                    </Image>
+                                  </figure>
+                                </ResponsiveImage>
+                                <div />
+                              </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                           </div>
                         </Thumbnail>
@@ -1115,53 +1181,75 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                               hasRoundedCorners={false}
                               imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                               isCircular={true}
-                              isLazyLoaded={false}
+                              isLazyLoaded={true}
                               isSquare={false}
                             >
-                              <ResponsiveImage
-                                alternativeText="Image Widget"
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageNotFoundLabelText="Image not found!"
-                                imageTitle="Image Title"
-                                imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={true}
-                                isFluid={false}
-                                isLazyLoaded={false}
-                                isSquare={false}
-                                label={null}
-                                sizes={null}
-                                srcSet={null}
+                              <LazyLoader
+                                componentProps={
+                                  Object {
+                                    "alternativeText": undefined,
+                                    "hasRoundedCorners": false,
+                                    "isCircular": true,
+                                    "isLazyLoaded": true,
+                                    "isSquare": false,
+                                    "sizes": undefined,
+                                    "srcSet": undefined,
+                                  }
+                                }
+                                lazyComponent={[Function]}
+                                lazyProps={
+                                  Object {
+                                    "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                  }
+                                }
                               >
-                                <figure
-                                  className="responsive-image is-circular"
+                                <div />
+                                <ResponsiveImage
+                                  alternativeText="Image Widget"
+                                  hasRoundedCorners={false}
+                                  imageHeight={null}
+                                  imageNotFoundLabelText="Image not found!"
+                                  imageTitle="Image Title"
+                                  imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  imageWidth={null}
+                                  isAvatar={false}
+                                  isCircular={true}
+                                  isFluid={false}
+                                  isLazyLoaded={true}
+                                  isSquare={false}
+                                  label={null}
+                                  sizes={null}
+                                  srcSet={null}
                                 >
-                                  <Image
-                                    alt="Image Widget"
-                                    as="img"
-                                    avatar={false}
-                                    fluid={true}
-                                    onLoad={[Function]}
-                                    sizes={null}
-                                    src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
-                                    srcSet={null}
-                                    title="Image Title"
-                                    ui={true}
+                                  <figure
+                                    className="responsive-image is-circular"
                                   >
-                                    <img
+                                    <Image
                                       alt="Image Widget"
-                                      className="ui fluid image"
+                                      as="img"
+                                      avatar={false}
+                                      fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
                                       src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                                       srcSet={null}
                                       title="Image Title"
-                                    />
-                                  </Image>
-                                </figure>
-                              </ResponsiveImage>
+                                      ui={true}
+                                    >
+                                      <img
+                                        alt="Image Widget"
+                                        className="ui fluid image"
+                                        onLoad={[Function]}
+                                        sizes={null}
+                                        src="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                        srcSet={null}
+                                        title="Image Title"
+                                      />
+                                    </Image>
+                                  </figure>
+                                </ResponsiveImage>
+                                <div />
+                              </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                           </div>
                         </Thumbnail>

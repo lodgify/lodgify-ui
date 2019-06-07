@@ -44,7 +44,7 @@ exports[`<FeaturedProperty /> should render the right structure 1`] = `
   <withLazyLoad(ResponsiveImage)
     imageUrl="🐱🐱"
     isFluid={true}
-    isLazyLoaded={false}
+    isLazyLoaded={true}
   />
   <CardContent>
     <CardMeta>

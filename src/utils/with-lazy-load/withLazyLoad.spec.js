@@ -1,7 +1,7 @@
 jest.mock('../../components/layout/LazyLoader');
 
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { LazyLoader } from 'layout/LazyLoader';
@@ -15,7 +15,7 @@ Component.displayName = DISPLAY_NAME;
 
 const props = { lazyProp: '😴', other: 'otherProps' };
 const getHOC = () =>
-  mount(React.createElement(withLazyLoad('lazyProp')(Component), props));
+  shallow(React.createElement(withLazyLoad('lazyProp')(Component), props));
 
 LazyLoader.mockImplementation(() => <div />);
 

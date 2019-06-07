@@ -66,53 +66,74 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                       >
                         <withLazyLoad(ResponsiveImage)
                           imageUrl="testimage"
-                          isLazyLoaded={false}
+                          isLazyLoaded={true}
                           placeholderImageUrl={null}
                         >
-                          <ResponsiveImage
-                            alternativeText="Image Widget"
-                            hasRoundedCorners={false}
-                            imageHeight={null}
-                            imageNotFoundLabelText="Image not found!"
-                            imageTitle="Image Title"
-                            imageUrl="testimage"
-                            imageWidth={null}
-                            isAvatar={false}
-                            isCircular={false}
-                            isFluid={false}
-                            isLazyLoaded={false}
-                            label={null}
-                            placeholderImageUrl={null}
-                            sizes={null}
-                            srcSet={null}
+                          <LazyLoader
+                            componentProps={
+                              Object {
+                                "imageHeight": undefined,
+                                "imageWidth": undefined,
+                                "isLazyLoaded": true,
+                                "placeholderImageUrl": null,
+                                "sizes": undefined,
+                                "srcSet": undefined,
+                              }
+                            }
+                            lazyComponent={[Function]}
+                            lazyProps={
+                              Object {
+                                "imageUrl": "testimage",
+                              }
+                            }
                           >
-                            <figure
-                              className="responsive-image"
+                            <div />
+                            <ResponsiveImage
+                              alternativeText="Image Widget"
+                              hasRoundedCorners={false}
+                              imageHeight={null}
+                              imageNotFoundLabelText="Image not found!"
+                              imageTitle="Image Title"
+                              imageUrl="testimage"
+                              imageWidth={null}
+                              isAvatar={false}
+                              isCircular={false}
+                              isFluid={false}
+                              isLazyLoaded={true}
+                              label={null}
+                              placeholderImageUrl={null}
+                              sizes={null}
+                              srcSet={null}
                             >
-                              <Image
-                                alt="Image Widget"
-                                as="img"
-                                avatar={false}
-                                fluid={true}
-                                onLoad={[Function]}
-                                sizes={null}
-                                src="testimage"
-                                srcSet={null}
-                                title="Image Title"
-                                ui={true}
+                              <figure
+                                className="responsive-image"
                               >
-                                <img
+                                <Image
                                   alt="Image Widget"
-                                  className="ui fluid image"
+                                  as="img"
+                                  avatar={false}
+                                  fluid={true}
                                   onLoad={[Function]}
                                   sizes={null}
                                   src="testimage"
                                   srcSet={null}
                                   title="Image Title"
-                                />
-                              </Image>
-                            </figure>
-                          </ResponsiveImage>
+                                  ui={true}
+                                >
+                                  <img
+                                    alt="Image Widget"
+                                    className="ui fluid image"
+                                    onLoad={[Function]}
+                                    sizes={null}
+                                    src="testimage"
+                                    srcSet={null}
+                                    title="Image Title"
+                                  />
+                                </Image>
+                              </figure>
+                            </ResponsiveImage>
+                            <div />
+                          </LazyLoader>
                         </withLazyLoad(ResponsiveImage)>
                         <Grid
                           areColumnsCentered={false}
