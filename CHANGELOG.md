@@ -1,3 +1,14 @@
+# [1.197.0](https://github.com/lodgify/lodgify-ui/compare/v1.196.0...v1.197.0) (2019-06-07)
+
+
+### Features
+
+* **getComponentPosition:** add util and unit test ([226c39e](https://github.com/lodgify/lodgify-ui/commit/226c39e))
+* **getIsBottomComponentVisible:** add util and unit test ([761b771](https://github.com/lodgify/lodgify-ui/commit/761b771))
+* **getIsTopComponentVisible:** add util and unit test ([45a3757](https://github.com/lodgify/lodgify-ui/commit/45a3757))
+* **LazyLoader:** add className to wrap fluid images ([2bebec4](https://github.com/lodgify/lodgify-ui/commit/2bebec4))
+* **ResponsiveImage:** set isLazyLoaded by default ([63b6a8c](https://github.com/lodgify/lodgify-ui/commit/63b6a8c))
+
 # [1.196.0](https://github.com/lodgify/lodgify-ui/compare/v1.195.0...v1.196.0) (2019-06-06)
 
 
