@@ -9,7 +9,7 @@ module.exports = {
     theme: 'lucario',
   },
   pagePerSection: true,
-  require: [path.join(SRC_DIR, 'styles/lodgify-ui.less')],
+  require: [path.join(SRC_DIR, 'styles/semantic/lodgify-ui.less')],
   sections: require('./options/sections'),
   serverPort: 6060,
   skipComponentsWithoutExample: true,

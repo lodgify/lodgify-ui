@@ -1,0 +1,24 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'quote';
+
+@import (multiple) '../../theme.config';
+
+/*-------------------
+        Quote
+--------------------*/
+
+blockquote.ui.quote {
+  border-left: @quoteBorderLeft;
+  box-shadow: @quoteBoxShadow;
+  padding: @quotePadding;
+  margin: @quoteMargin;
+}
+
+blockquote.ui.quote .row {
+  padding: @quoteRowPadding;
+}

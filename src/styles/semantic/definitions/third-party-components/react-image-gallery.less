@@ -121,6 +121,29 @@
 /*******************************
       RoomType Image Gallery
 *******************************/
+.image-gallery.fit-height {
+  height: 100%;
+  margin-bottom: 0;
+
+  .image-gallery-slide-wrapper,
+  .image-gallery-swipe,
+  .image-gallery-swipe *,
+  .image-gallery-content {
+    height: inherit;
+  }
+}
+
+.image-gallery-slide {
+  background: transparent;
+}
+
+&.no-shadow .image-gallery-content .image-gallery-slide-wrapper > .image-gallery-swipe {
+  box-shadow: none;
+}
+
+&.no-border-radius .image-gallery-content .image-gallery-slide-wrapper > .image-gallery-swipe {
+  border-radius: 0;
+}
 
 .ui.fluid.card.has-room-type-gallery {
 

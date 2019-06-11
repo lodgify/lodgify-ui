@@ -19,7 +19,7 @@ module.exports = {
     },
   },
   moduleNameMapper: {
-    '\\.css$': 'identity-obj-proxy',
+    '\\.(css|less)$': 'identity-obj-proxy',
   },
   rootDir: '../../',
   roots: ['<rootDir>/src/components', '<rootDir>/src/utils'],

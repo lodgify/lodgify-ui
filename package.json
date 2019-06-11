@@ -7,7 +7,7 @@
   "config": {
     "jest_config": "tools/jest/jest.config.js",
     "less_build_config": "tools/webpack/less.build.config.js",
-    "less_build_orphan": "lib/styles/orphan.js",
+    "less_build_orphan": "-rf lib/styles/*-orphan.js",
     "styleguide_config": "styleguide/config",
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -21,7 +21,7 @@
   },
   "size-limit": [
     {
-      "limit": "245 KB",
+      "limit": "315.3 KB",
       "path": "lib/es/index.js"
     }
   ],
@@ -79,6 +79,7 @@
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-semantic-ui-react-transform-imports": "^1.3.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.19",
+    "babel-plugin-transform-rename-import": "^2.3.0",
     "commitizen": "^2.9.6",
     "css-loader": "^0.28.10",
     "cz-conventional-changelog": "^2.1.0",
