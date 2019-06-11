@@ -10,6 +10,7 @@ import { InputController } from '../InputController';
 export const Component = ({
   autoComplete,
   error,
+  icon,
   isValid,
   label,
   max,
@@ -21,6 +22,7 @@ export const Component = ({
 }) => (
   <InputController
     error={error}
+    icon={icon}
     isValid={isValid}
     label={label}
     name={name}
@@ -43,6 +45,7 @@ Component.displayName = 'NumberInput';
 Component.defaultProps = {
   autoComplete: null,
   error: false,
+  icon: null,
   isValid: false,
   label: '',
   min: undefined,
@@ -58,6 +61,8 @@ Component.propTypes = {
   autoComplete: PropTypes.string,
   /** Is the number input in an error state. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  /** An icon to display in the input */
+  icon: PropTypes.element,
   /** Is the number input in a valid state. */
   isValid: PropTypes.bool,
   /** The visible label for the number input. */
