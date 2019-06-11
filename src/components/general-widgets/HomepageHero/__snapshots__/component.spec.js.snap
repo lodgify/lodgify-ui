@@ -902,15 +902,30 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                 </div>
                                               </FormField>
                                               <FormField
-                                                width="two"
+                                                width="three"
                                               >
                                                 <div
-                                                  className="two wide field"
+                                                  className="three wide field"
                                                 >
                                                   <NumberInput
                                                     autoComplete={null}
                                                     error={false}
-                                                    icon="users"
+                                                    icon={
+                                                      <Icon
+                                                        color={null}
+                                                        hasBorder={false}
+                                                        isButton={false}
+                                                        isCircular={false}
+                                                        isColorInverted={false}
+                                                        isDisabled={false}
+                                                        isLabelLeft={false}
+                                                        labelText={null}
+                                                        labelWeight={null}
+                                                        name="users"
+                                                        path={null}
+                                                        size={null}
+                                                      />
+                                                    }
                                                     isValid={false}
                                                     label="Guests"
                                                     min={0}
@@ -921,7 +936,22 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     <InputController
                                                       adaptOnChangeEvent={[Function]}
                                                       error={false}
-                                                      icon={null}
+                                                      icon={
+                                                        <Icon
+                                                          color={null}
+                                                          hasBorder={false}
+                                                          isButton={false}
+                                                          isCircular={false}
+                                                          isColorInverted={false}
+                                                          isDisabled={false}
+                                                          isLabelLeft={false}
+                                                          labelText={null}
+                                                          labelWeight={null}
+                                                          name="users"
+                                                          path={null}
+                                                          size={null}
+                                                        />
+                                                      }
                                                       initialValue=""
                                                       inputOnChangeFunctionName="onChange"
                                                       isFluid={false}
@@ -935,11 +965,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       <Input
                                                         className=""
                                                         fluid={false}
-                                                        iconPosition={null}
+                                                        iconPosition="left"
                                                         type="text"
                                                       >
                                                         <div
-                                                          className="ui input"
+                                                          className="ui left icon input"
                                                         >
                                                           <input
                                                             autoComplete={null}
@@ -957,6 +987,34 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           >
                                                             Guests
                                                           </label>
+                                                          <Icon
+                                                            color={null}
+                                                            hasBorder={false}
+                                                            isButton={false}
+                                                            isCircular={false}
+                                                            isColorInverted={false}
+                                                            isDisabled={false}
+                                                            isLabelLeft={false}
+                                                            key=".4"
+                                                            labelText={null}
+                                                            labelWeight={null}
+                                                            name="users"
+                                                            path={null}
+                                                            size={null}
+                                                          >
+                                                            <i
+                                                              className="icon"
+                                                            >
+                                                              <svg
+                                                                viewBox="0 0 24 24"
+                                                              >
+                                                                <path
+                                                                  d="M18.63,8.88h-.08a4,4,0,1,0-4.18,0h-.08a2.2,2.2,0,0,0-2.2,2.2v9.35a2.1,2.1,0,0,0,2.1,2.1h4.54a2.11,2.11,0,0,0,2.11-2.1V11.08A2.21,2.21,0,0,0,18.63,8.88Zm-5.18-3.4a3,3,0,1,1,3,3A3,3,0,0,1,13.45,5.48Zm6.39,15a1.11,1.11,0,0,1-1.11,1.1H14.19a1.1,1.1,0,0,1-1.1-1.1V11.08a1.2,1.2,0,0,1,1.2-1.2h4.34a1.21,1.21,0,0,1,1.21,1.2ZM9,11.89a3.27,3.27,0,1,0-3.77,0,2.21,2.21,0,0,0-2.09,2.19v6.24a2.12,2.12,0,0,0,2.11,2.11H9a2.11,2.11,0,0,0,2.1-2.11V14.08A2.21,2.21,0,0,0,9,11.89ZM7.13,7A2.27,2.27,0,1,1,4.87,9.24,2.27,2.27,0,0,1,7.13,7Zm3,13.35A1.11,1.11,0,0,1,9,21.43H5.27a1.11,1.11,0,0,1-1.11-1.11V14.08a1.21,1.21,0,0,1,1.21-1.2H8.9a1.2,1.2,0,0,1,1.2,1.2Z"
+                                                                  fill="currentColor"
+                                                                />
+                                                              </svg>
+                                                            </i>
+                                                          </Icon>
                                                         </div>
                                                       </Input>
                                                     </InputController>
