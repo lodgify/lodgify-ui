@@ -72,10 +72,9 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
           >
             <FormField
               className="location-dropdown"
-              width="three"
             >
               <div
-                className="three wide field location-dropdown"
+                className="field location-dropdown"
               >
                 <Dropdown
                   error={false}
@@ -1198,10 +1197,9 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                   >
                                     <FormField
                                       className="location-dropdown"
-                                      width="three"
                                     >
                                       <div
-                                        className="three wide field location-dropdown"
+                                        className="field location-dropdown"
                                       >
                                         <Dropdown
                                           error={false}
@@ -2012,10 +2010,9 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
             </FormField>
             <FormField
               className="location-dropdown"
-              width="three"
             >
               <div
-                className="three wide field location-dropdown"
+                className="field location-dropdown"
               >
                 <Dropdown
                   error={false}
@@ -3163,10 +3160,9 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
           >
             <FormField
               className="location-dropdown"
-              width="three"
             >
               <div
-                className="three wide field location-dropdown"
+                className="field location-dropdown"
               >
                 <Dropdown
                   error={false}
