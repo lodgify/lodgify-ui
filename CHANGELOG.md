@@ -1,3 +1,22 @@
+# [1.199.0](https://github.com/lodgify/lodgify-ui/compare/v1.198.0...v1.199.0) (2019-06-11)
+
+
+### Features
+
+* **babelrc:** delete orphans and replace .less imports with .css ([40cac72](https://github.com/lodgify/lodgify-ui/commit/40cac72))
+* **block-placeholder:** isolate css in lodgify-ui-components ([3be5562](https://github.com/lodgify/lodgify-ui/commit/3be5562))
+* **flex-container:** isolate css in lodgify-ui-components ([9218eef](https://github.com/lodgify/lodgify-ui/commit/9218eef))
+* **html:** isolate css in lodgify-ui-components ([f2b5f92](https://github.com/lodgify/lodgify-ui/commit/f2b5f92))
+* **property-page-search-bar:** isolate css in lodgify-ui-components ([b1c649e](https://github.com/lodgify/lodgify-ui/commit/b1c649e))
+* **quote:** isolate css in lodgify-ui-components ([9dab8da](https://github.com/lodgify/lodgify-ui/commit/9dab8da))
+* **react-image-gallery:** isolate RoomType image gallery styles ([46fecc6](https://github.com/lodgify/lodgify-ui/commit/46fecc6))
+* **search-bar:** isolate css in lodgify-ui-components ([9028ecf](https://github.com/lodgify/lodgify-ui/commit/9028ecf))
+* **semantic:** split imports by component ([462c601](https://github.com/lodgify/lodgify-ui/commit/462c601))
+* **text-placeholder:** isolate css in lodgify-ui-components ([fa468ce](https://github.com/lodgify/lodgify-ui/commit/fa468ce))
+* **thumbnail:** isolate css in lodgify-ui-components ([54426a4](https://github.com/lodgify/lodgify-ui/commit/54426a4))
+* **webpack:** build complete css file ([d3ff6cb](https://github.com/lodgify/lodgify-ui/commit/d3ff6cb))
+* **webpack:** build styles individually ([1dbf214](https://github.com/lodgify/lodgify-ui/commit/1dbf214))
+
 # [1.198.0](https://github.com/lodgify/lodgify-ui/compare/v1.197.0...v1.198.0) (2019-06-07)
 
 
