@@ -28,6 +28,14 @@
     in `node_modules/semantic-ui-less/definitions/elements/input.less`
   */
   &.left.icon {
+    min-width: @iconMinWidth;
+
+    &:not(.dirty) > label {
+      width: @labelWidth;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
     & > i.icon {
       padding: @iconPadding;

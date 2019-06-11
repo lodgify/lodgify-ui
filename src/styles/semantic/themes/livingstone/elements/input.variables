@@ -14,6 +14,7 @@
 
 /* Icon Input */
 @iconPadding: @8px @10px;
+@iconMinWidth: 80px;
 
 @flagIconXOffset: -(@7px);
 @flagIconYOffset: -(@5px);
@@ -26,6 +27,7 @@
 
 /* Labeled Input */
 @labelColor: @greySix;
+@labelWidth: 40%;
 @checkboxLabelColor: @black;
 @checkboxLabelLineHeight: @16px;
 @checkboxLabelLeftPosition: @22px;
