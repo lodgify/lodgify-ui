@@ -1,3 +1,16 @@
+# [1.200.0](https://github.com/lodgify/lodgify-ui/compare/v1.199.0...v1.200.0) (2019-06-12)
+
+
+### Bug Fixes
+
+* **searchBar:** implement users icon ([1875352](https://github.com/lodgify/lodgify-ui/commit/1875352))
+
+
+### Features
+
+* **input.*:** add styles for ellipsis and icon offset ([80cf92d](https://github.com/lodgify/lodgify-ui/commit/80cf92d))
+* **NumberInput:** implement icon prop ([89299f9](https://github.com/lodgify/lodgify-ui/commit/89299f9))
+
 # [1.199.0](https://github.com/lodgify/lodgify-ui/compare/v1.198.0...v1.199.0) (2019-06-11)
 
 
