@@ -4,6 +4,7 @@ exports[`<NumberInput /> should render the right structure 1`] = `
 <NumberInput
   autoComplete={null}
   error={false}
+  icon={null}
   isValid={false}
   label=""
   name=""

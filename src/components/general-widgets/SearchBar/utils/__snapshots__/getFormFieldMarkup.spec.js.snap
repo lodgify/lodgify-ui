@@ -58,12 +58,27 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
     />
   </FormField>
   <FormField
-    width="two"
+    width="three"
   >
     <NumberInput
       autoComplete={null}
       error={false}
-      icon="users"
+      icon={
+        <Icon
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="users"
+          path={null}
+          size={null}
+        />
+      }
       isValid={false}
       label="Guests"
       min={0}
@@ -113,12 +128,27 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
     />
   </FormField>
   <FormField
-    width="two"
+    width="three"
   >
     <NumberInput
       autoComplete={null}
       error={false}
-      icon="users"
+      icon={
+        <Icon
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="users"
+          path={null}
+          size={null}
+        />
+      }
       isValid={false}
       label="Guests"
       min={0}

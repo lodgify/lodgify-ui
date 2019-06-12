@@ -44,7 +44,7 @@ export const getFormFieldMarkup = (
   const summaryColumnWidth = areColumnsStacked ? 'twelve' : 'three';
   const datePickerColumnWidth = areColumnsStacked ? 'twelve' : 'seven';
   const buttonColumnWidth = areColumnsStacked ? 'twelve' : 'four';
-  const guestInputColumnWidth = areColumnsStacked ? 'twelve' : 'two';
+  const guestInputColumnWidth = areColumnsStacked ? 'twelve' : 'three';
 
   return (
     <Fragment>
@@ -86,7 +86,7 @@ export const getFormFieldMarkup = (
       </Form.Field>
       <Form.Field width={guestInputColumnWidth}>
         <NumberInput
-          icon={ICON_NAMES.USERS}
+          icon={<Icon name={ICON_NAMES.USERS} />}
           label="Guests"
           min={0}
           name="guests"
