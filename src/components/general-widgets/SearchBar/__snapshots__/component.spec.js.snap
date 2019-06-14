@@ -80,6 +80,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   error={false}
                   icon="map pin"
                   initialValue={null}
+                  isCompact={false}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -144,6 +145,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       additionLabel="Add "
                       additionPosition="top"
                       closeOnBlur={true}
+                      compact={false}
                       deburr={false}
                       disabled={false}
                       icon={
@@ -1205,6 +1207,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                           error={false}
                                           icon="map pin"
                                           initialValue={null}
+                                          isCompact={false}
                                           isDisabled={false}
                                           isSearchable={false}
                                           isValid={false}
@@ -1269,6 +1272,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                               additionLabel="Add "
                                               additionPosition="top"
                                               closeOnBlur={true}
+                                              compact={false}
                                               deburr={false}
                                               disabled={false}
                                               icon={
@@ -2018,6 +2022,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   error={false}
                   icon="map pin"
                   initialValue={null}
+                  isCompact={false}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -2082,6 +2087,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       additionLabel="Add "
                       additionPosition="top"
                       closeOnBlur={true}
+                      compact={false}
                       deburr={false}
                       disabled={false}
                       icon={
@@ -3168,6 +3174,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   error={false}
                   icon="map pin"
                   initialValue={null}
+                  isCompact={false}
                   isDisabled={false}
                   isSearchable={false}
                   isValid={false}
@@ -3232,6 +3239,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       additionLabel="Add "
                       additionPosition="top"
                       closeOnBlur={true}
+                      compact={false}
                       deburr={false}
                       disabled={false}
                       icon={

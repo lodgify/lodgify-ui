@@ -38,6 +38,7 @@ Array [
         error={false}
         icon={null}
         initialValue={null}
+        isCompact={false}
         isDisabled={false}
         isSearchable={false}
         isValid={false}
@@ -72,6 +73,7 @@ Array [
             additionLabel="Add "
             additionPosition="top"
             closeOnBlur={true}
+            compact={false}
             deburr={false}
             disabled={false}
             icon={
