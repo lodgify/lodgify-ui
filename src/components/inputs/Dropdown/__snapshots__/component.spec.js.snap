@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropdown /> if \`props.isCompact\` is \`true\` should render the right structure 1`] = `
+<div
+  className="dropdown-container is-compact"
+>
+  <Dropdown
+    additionLabel="Add "
+    additionPosition="top"
+    closeOnBlur={true}
+    compact={true}
+    deburr={false}
+    disabled={true}
+    icon={
+      <Icon
+        color={null}
+        hasBorder={false}
+        isButton={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="caret down"
+        path={null}
+        size="small"
+      />
+    }
+    minCharacters={1}
+    noResultsMessage="No results"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    open={false}
+    openOnFocus={true}
+    options={Array []}
+    placeholder=""
+    renderLabel={[Function]}
+    search={false}
+    searchInput="text"
+    selectOnBlur={false}
+    selectOnNavigation={true}
+    selection={true}
+    upward={false}
+    wrapSelection={true}
+  />
+</div>
+`;

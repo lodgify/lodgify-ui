@@ -42,6 +42,14 @@ describe('<Dropdown />', () => {
     expectComponentToBe(wrapper, 'div.dropdown-container');
   });
 
+  describe('if `props.isCompact` is `true`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getDropdown({ isCompact: true });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   describe('the validation states', () => {
     describe('error state', () => {
       it('should render ErrorMessage if message defined', () => {

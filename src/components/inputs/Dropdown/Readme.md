@@ -32,22 +32,12 @@ const { options } = require('./mock-data/options');
 <Dropdown isDisabled label="Location" options={options} />
 ```
 
-#### Dropdown opens above input
-
-```jsx
-const { options } = require('./mock-data/options');
-
-<Dropdown willOpenAbove label="Location" options={options} />
-```
-
 #### Valid
 
 ```jsx
 const { options } = require('./mock-data/options');
 
-<div>
-  <Dropdown isValid label="Location" options={options} />
-</div>
+<Dropdown isValid label="Location" options={options} />
 ```
 
 ##### Valid with Icon
@@ -55,12 +45,27 @@ const { options } = require('./mock-data/options');
 ```jsx
 const { options } = require('./mock-data/options');
 
-<div>
-  <Dropdown isValid label="Location" options={options} icon="map pin" />
-</div>
+
+<Dropdown isValid label="Location" options={options} icon="map pin" />
 ```
 
 ### Variations
+
+#### Compact
+
+```jsx
+const { options } = require('./mock-data/options');
+
+<Dropdown isCompact label="Location" options={options} />;
+```
+
+#### Dropdown opens above input
+
+```jsx
+const { options } = require('./mock-data/options');
+
+<Dropdown willOpenAbove label="Location" options={options} />
+```
 
 #### Icon
 

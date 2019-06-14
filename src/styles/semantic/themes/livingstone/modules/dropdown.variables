@@ -75,6 +75,16 @@
 @selectionMinWidth: auto;
 @selectionWidth: 100%;
 
+/* Compact */
+@compactBackground: @focusedInputBackground;
+@compactBorder: 1px solid @greyFour;
+@compactBorderRadius: @20px;
+@compactColor: @greyEight;
+@compactFontSize: @tinyParagraphFontSize;
+@compactPadding: @8px @37px @8px @13px;
+@compactRight: @22px;
+@compactTop: @20px;
+
 @selectionItemDivider: 0.5px solid @greyFour;
 @selectionItemPadding: @inputVerticalPadding @inputHorizontalPadding;
 

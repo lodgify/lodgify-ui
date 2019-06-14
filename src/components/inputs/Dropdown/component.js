@@ -8,6 +8,7 @@ import { getHasErrorMessage } from 'utils/get-has-error-message';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { NO_RESULTS } from 'utils/default-strings';
 import { getControlledInputValue } from 'utils/get-controlled-input-value';
+import { getPropOnCondition } from 'utils/get-prop-on-condition';
 
 import { ErrorMessage } from '../ErrorMessage';
 
@@ -57,6 +58,7 @@ export class Component extends PureComponent {
     const {
       error,
       icon,
+      isCompact,
       isDisabled,
       isSearchable,
       isValid,
@@ -78,6 +80,7 @@ export class Component extends PureComponent {
       <div
         className={getClassNames('dropdown-container', {
           'has-images': hasImages,
+          'is-compact': isCompact,
           dirty: isValueValid(value),
           error: error,
           focus: isOpen,
@@ -88,21 +91,28 @@ export class Component extends PureComponent {
         {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
         {!hasImages && icon && <Icon name={icon} />}
         <Dropdown
+          compact={isCompact}
           disabled={isDisabled || !adaptedOptions.length}
-          icon={<Icon name={ICON_NAMES.CARET_DOWN} />}
+          icon={
+            <Icon
+              name={ICON_NAMES.CARET_DOWN}
+              size={getPropOnCondition('small', isCompact)}
+            />
+          }
           noResultsMessage={noResultsText}
           onBlur={() => this.handleBlur(true)}
           onChange={this.handleChange}
           onClick={() => this.handleOpen(!isOpen)}
           open={isOpen}
           options={adaptedOptions}
+          placeholder={getPropOnCondition(label, isCompact)}
           search={isSearchable}
           selectOnBlur={false}
           selection
           upward={willOpenAbove}
           value={value}
         />
-        {!hasImages && label && (
+        {!hasImages && label && !isCompact && (
           <label onClick={() => this.handleOpen(true)}>{label}</label>
         )}
       </div>
@@ -115,6 +125,7 @@ Component.displayName = 'Dropdown';
 Component.defaultProps = {
   error: false,
   icon: null,
+  isCompact: false,
   isDisabled: false,
   isSearchable: false,
   isValid: false,
@@ -140,6 +151,8 @@ Component.propTypes = {
     PropTypes.number,
     PropTypes.string,
   ]),
+  /** A compact dropdown occupies less space. */
+  isCompact: PropTypes.bool,
   /** A disabled dropdown does not allow user interaction. */
   isDisabled: PropTypes.bool,
   /** Is the dropdown searchable with keyboard input */
