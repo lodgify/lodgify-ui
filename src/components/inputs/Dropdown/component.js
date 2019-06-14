@@ -175,6 +175,8 @@ Component.propTypes = {
   /** The options which the user can select. Dropdown is disabled if options is an empty array. */
   options: PropTypes.arrayOf(
     PropTypes.shape({
+      /** Optional visible content for displaying the option in the dropdown menu differently from the text displayed in the input. */
+      content: PropTypes.node,
       /** A list of one or more strings separated by commas indicating a set of source sizes for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
       imageSizes: PropTypes.string,
       /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */

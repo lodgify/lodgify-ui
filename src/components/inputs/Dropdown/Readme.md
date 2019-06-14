@@ -112,6 +112,27 @@ const { optionsWithImages } = require('./mock-data/options');
 <Dropdown label="Properties" options={optionsWithImages} icon="map pin" />;
 ```
 
+#### Content
+
+Options can display different content in the dropdown menu to the text displayed in the input.
+
+```jsx
+const optionsWithContent = [
+ {
+   content: 'Paris is great',
+   text: 'France',
+   value: 'fr',
+ },
+ {
+   content: 'Berlin is awesome',
+   text: 'Germany',
+   value: 'de',
+ }
+];
+
+<Dropdown label="Places" options={optionsWithContent} />;
+```
+
 #### Indented options
 
 ```jsx
