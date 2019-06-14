@@ -1,3 +1,10 @@
+## [1.200.1](https://github.com/lodgify/lodgify-ui/compare/v1.200.0...v1.200.1) (2019-06-14)
+
+
+### Bug Fixes
+
+* **index:** export PropertySearchResult and PropertySearchResultList ([4e25fc7](https://github.com/lodgify/lodgify-ui/commit/4e25fc7))
+
 # [1.200.0](https://github.com/lodgify/lodgify-ui/compare/v1.199.0...v1.200.0) (2019-06-12)
 
 
