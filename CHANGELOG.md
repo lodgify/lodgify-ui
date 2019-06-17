@@ -1,3 +1,11 @@
+# [1.201.0](https://github.com/lodgify/lodgify-ui/compare/v1.200.1...v1.201.0) (2019-06-17)
+
+
+### Features
+
+* **Dropdown:** add props.isCompact ([3a9d097](https://github.com/lodgify/lodgify-ui/commit/3a9d097))
+* **Dropdown:** explicitly expose options[n].content ([ea0a7ce](https://github.com/lodgify/lodgify-ui/commit/ea0a7ce))
+
 ## [1.200.1](https://github.com/lodgify/lodgify-ui/compare/v1.200.0...v1.200.1) (2019-06-14)
 
 
