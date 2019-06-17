@@ -1,0 +1,458 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> if \`props.hasOutline\` is informed should render the right structure 1`] = `
+<Button
+  hasShadow={false}
+  icon={null}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={false}
+  isLoading={false}
+  isOutlined={true}
+  isPositionedRight={false}
+  isRounded={false}
+  isSecondary={false}
+  onClick={[Function]}
+  size={null}
+>
+  <Button
+    as="button"
+    basic={true}
+    circular={false}
+    className="has-outline"
+    compact={false}
+    disabled={false}
+    floated="left"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={false}
+    size={null}
+    type="button"
+  >
+    <button
+      className="ui basic left floated button has-outline"
+      onClick={[Function]}
+      role="button"
+      type="button"
+    >
+      Press me
+    </button>
+  </Button>
+</Button>
+`;
+
+exports[`<Button /> if \`props.hasShadow\` is informed should render the right structure 1`] = `
+<Button
+  hasShadow={true}
+  icon={null}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={false}
+  isLoading={false}
+  isOutlined={false}
+  isPositionedRight={false}
+  isRounded={false}
+  isSecondary={false}
+  onClick={[Function]}
+  size={null}
+>
+  <Button
+    as="button"
+    basic={false}
+    circular={false}
+    className="has-shadow"
+    compact={false}
+    disabled={false}
+    floated="left"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={false}
+    size={null}
+    type="button"
+  >
+    <button
+      className="ui left floated button has-shadow"
+      onClick={[Function]}
+      role="button"
+      type="button"
+    >
+      Press me
+    </button>
+  </Button>
+</Button>
+`;
+
+exports[`<Button /> if \`props.icon\` is informed should render the right structure 1`] = `
+<Button
+  hasShadow={false}
+  icon="search"
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={false}
+  isLoading={false}
+  isOutlined={false}
+  isPositionedRight={false}
+  isRounded={false}
+  isSecondary={false}
+  onClick={[Function]}
+  size={null}
+>
+  <Button
+    as="button"
+    basic={false}
+    circular={false}
+    className=""
+    compact={false}
+    disabled={false}
+    floated="left"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={false}
+    size={null}
+    type="button"
+  >
+    <button
+      className="ui left floated button"
+      onClick={[Function]}
+      role="button"
+      type="button"
+    >
+      <Icon
+        color={null}
+        hasBorder={false}
+        isButton={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="search"
+        path={null}
+        size={null}
+      >
+        <i
+          className="icon"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+              fill="currentColor"
+            />
+          </svg>
+        </i>
+      </Icon>
+      Press me
+    </button>
+  </Button>
+</Button>
+`;
+
+exports[`<Button /> if \`props.isCompact\` is true should render the right structure 1`] = `
+<Button
+  hasShadow={false}
+  icon={null}
+  isCompact={true}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={false}
+  isLoading={false}
+  isOutlined={false}
+  isPositionedRight={false}
+  isRounded={false}
+  isSecondary={false}
+  onClick={[Function]}
+  size={null}
+>
+  <Button
+    as="button"
+    basic={false}
+    circular={false}
+    className=""
+    compact={true}
+    disabled={false}
+    floated="left"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={false}
+    size={null}
+    type="button"
+  >
+    <button
+      className="ui compact left floated button"
+      onClick={[Function]}
+      role="button"
+      type="button"
+    >
+      Press me
+    </button>
+  </Button>
+</Button>
+`;
+
+exports[`<Button /> if \`props.isFormSubmit\` is true should render the right structure 1`] = `
+<Button
+  hasShadow={false}
+  icon={null}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={true}
+  isLoading={false}
+  isOutlined={false}
+  isPositionedRight={false}
+  isRounded={false}
+  isSecondary={false}
+  onClick={[Function]}
+  size={null}
+>
+  <Button
+    as="button"
+    basic={false}
+    circular={false}
+    className=""
+    compact={false}
+    disabled={false}
+    floated="left"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={false}
+    size={null}
+    type="submit"
+  >
+    <button
+      className="ui left floated button"
+      onClick={[Function]}
+      role="button"
+      type="submit"
+    >
+      Press me
+    </button>
+  </Button>
+</Button>
+`;
+
+exports[`<Button /> if \`props.isPositionedRight\` is true should render the right structure 1`] = `
+<Button
+  hasShadow={false}
+  icon={null}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={false}
+  isLoading={false}
+  isOutlined={false}
+  isPositionedRight={true}
+  isRounded={false}
+  isSecondary={false}
+  onClick={[Function]}
+  size={null}
+>
+  <Button
+    as="button"
+    basic={false}
+    circular={false}
+    className=""
+    compact={false}
+    disabled={false}
+    floated="right"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={false}
+    size={null}
+    type="button"
+  >
+    <button
+      className="ui right floated button"
+      onClick={[Function]}
+      role="button"
+      type="button"
+    >
+      Press me
+    </button>
+  </Button>
+</Button>
+`;
+
+exports[`<Button /> if \`props.isRounded\` is true should render the right structure 1`] = `
+<Button
+  hasShadow={false}
+  icon={null}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={false}
+  isLoading={false}
+  isOutlined={false}
+  isPositionedRight={false}
+  isRounded={true}
+  isSecondary={false}
+  onClick={[Function]}
+  size={null}
+>
+  <Button
+    as="button"
+    basic={false}
+    circular={true}
+    className=""
+    compact={false}
+    disabled={false}
+    floated="left"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={false}
+    size={null}
+    type="button"
+  >
+    <button
+      className="ui circular left floated button"
+      onClick={[Function]}
+      role="button"
+      type="button"
+    >
+      Press me
+    </button>
+  </Button>
+</Button>
+`;
+
+exports[`<Button /> if \`props.isSecondary\` is true should render the right structure 1`] = `
+<Button
+  hasShadow={false}
+  icon={null}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={false}
+  isLoading={false}
+  isOutlined={false}
+  isPositionedRight={false}
+  isRounded={false}
+  isSecondary={true}
+  onClick={[Function]}
+  size={null}
+>
+  <Button
+    as="button"
+    basic={false}
+    circular={false}
+    className=""
+    compact={false}
+    disabled={false}
+    floated="left"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={true}
+    size={null}
+    type="button"
+  >
+    <button
+      className="ui secondary left floated button"
+      onClick={[Function]}
+      role="button"
+      type="button"
+    >
+      Press me
+    </button>
+  </Button>
+</Button>
+`;
+
+exports[`<Button /> if \`props.size\` is informed should pass the \`Button\` component \`size={size}\` 1`] = `
+<Button
+  hasShadow={false}
+  icon={null}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={false}
+  isLoading={false}
+  isOutlined={false}
+  isPositionedRight={false}
+  isRounded={false}
+  isSecondary={false}
+  onClick={[Function]}
+  size="massive"
+>
+  <Button
+    as="button"
+    basic={false}
+    circular={false}
+    className=""
+    compact={false}
+    disabled={false}
+    floated="left"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={false}
+    size="massive"
+    type="button"
+  >
+    <button
+      className="ui massive left floated button"
+      onClick={[Function]}
+      role="button"
+      type="button"
+    >
+      Press me
+    </button>
+  </Button>
+</Button>
+`;
+
+exports[`<Button /> should render a the right structure 1`] = `
+<Button
+  hasShadow={false}
+  icon={null}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isFormSubmit={false}
+  isLoading={false}
+  isOutlined={false}
+  isPositionedRight={false}
+  isRounded={false}
+  isSecondary={false}
+  onClick={[Function]}
+  size={null}
+>
+  <Button
+    as="button"
+    basic={false}
+    circular={false}
+    className=""
+    compact={false}
+    disabled={false}
+    floated="left"
+    fluid={false}
+    loading={false}
+    onClick={[Function]}
+    secondary={false}
+    size={null}
+    type="button"
+  >
+    <button
+      className="ui left floated button"
+      onClick={[Function]}
+      role="button"
+      type="button"
+    >
+      Press me
+    </button>
+  </Button>
+</Button>
+`;

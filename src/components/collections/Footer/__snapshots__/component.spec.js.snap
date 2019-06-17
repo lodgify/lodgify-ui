@@ -2502,6 +2502,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                                     isFluid={true}
                                     isFormSubmit={false}
                                     isLoading={false}
+                                    isOutlined={false}
                                     isPositionedRight={false}
                                     isRounded={true}
                                     isSecondary={false}
@@ -2510,6 +2511,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                                   >
                                     <Button
                                       as="button"
+                                      basic={false}
                                       circular={true}
                                       className=""
                                       compact={false}

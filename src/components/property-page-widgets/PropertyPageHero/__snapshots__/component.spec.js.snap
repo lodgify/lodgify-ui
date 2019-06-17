@@ -293,6 +293,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                                 isFluid={false}
                                 isFormSubmit={false}
                                 isLoading={false}
+                                isOutlined={false}
                                 isPositionedRight={false}
                                 isRounded={true}
                                 isSecondary={false}
@@ -301,6 +302,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                               >
                                 <Button
                                   as="button"
+                                  basic={false}
                                   circular={true}
                                   className=""
                                   compact={false}
@@ -637,6 +639,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                 isFluid={false}
                                 isFormSubmit={false}
                                 isLoading={false}
+                                isOutlined={false}
                                 isPositionedRight={false}
                                 isRounded={true}
                                 isSecondary={false}
@@ -645,6 +648,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                               >
                                 <Button
                                   as="button"
+                                  basic={false}
                                   circular={true}
                                   className=""
                                   compact={false}
@@ -727,6 +731,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                           isFluid={false}
                           isFormSubmit={false}
                           isLoading={false}
+                          isOutlined={false}
                           isPositionedRight={true}
                           isRounded={false}
                           isSecondary={true}
@@ -754,6 +759,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                             isFluid={false}
                             isFormSubmit={false}
                             isLoading={false}
+                            isOutlined={false}
                             isPositionedRight={true}
                             isRounded={false}
                             isSecondary={true}
@@ -797,6 +803,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                               isFluid={false}
                               isFormSubmit={false}
                               isLoading={false}
+                              isOutlined={false}
                               isPositionedRight={true}
                               isRounded={false}
                               isSecondary={true}
@@ -828,6 +835,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                 isFluid={false}
                                 isFormSubmit={false}
                                 isLoading={false}
+                                isOutlined={false}
                                 isPositionedRight={true}
                                 isRounded={false}
                                 isSecondary={true}
@@ -849,6 +857,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                 isFluid={false}
                                 isFormSubmit={false}
                                 isLoading={false}
+                                isOutlined={false}
                                 isPositionedRight={true}
                                 isRounded={false}
                                 isSecondary={true}
@@ -861,6 +870,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                               >
                                 <Button
                                   as="button"
+                                  basic={false}
                                   circular={false}
                                   className=""
                                   compact={true}
