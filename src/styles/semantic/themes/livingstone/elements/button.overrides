@@ -171,3 +171,24 @@
 .ui.button.has-shadow {
   box-shadow: @hasShadowBoxShadow;
 }
+
+/* Has Outline */
+.ui.button.basic.has-outline {
+  border-style: solid;
+  border-width: @hasOutlineBorderWidth;
+  border-color: @themeActionColorDefault;
+  border-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+  padding: @basicVerticalPadding @basicHorizontalPadding;
+  color: @themeActionColorDefault !important;
+  color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+
+  &.circular {
+    padding: 0;
+    width: @hasOutlineAndCircularMinWidth;
+    height: @hasOutlineAndCircularMinHeight;
+
+    i.icon {
+      margin: 0;
+    }
+  }
+}
