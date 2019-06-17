@@ -38,6 +38,26 @@ const { propertySearchResults } = require('./mock-data/mock-data');
 />
 ```
 
+#### Dropdown input
+
+```jsx
+const { propertySearchResults } = require('./mock-data/mock-data');
+
+<PropertySearchResultList
+  dropdownLabel="Sort"
+  dropdownOnChange={console.log}
+  dropdownOptions={[
+    {
+      content: 'Price (lowest to highest)',  
+      text: 'Sort by price (lowest first)',
+      value: 'price'
+    }
+  ]}
+  propertySearchResults={propertySearchResults}
+  resultsCountText="properties found"
+/>
+```
+
 ### States
 
 #### Showing placeholder
