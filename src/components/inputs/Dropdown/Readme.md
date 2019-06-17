@@ -32,22 +32,12 @@ const { options } = require('./mock-data/options');
 <Dropdown isDisabled label="Location" options={options} />
 ```
 
-#### Dropdown opens above input
-
-```jsx
-const { options } = require('./mock-data/options');
-
-<Dropdown willOpenAbove label="Location" options={options} />
-```
-
 #### Valid
 
 ```jsx
 const { options } = require('./mock-data/options');
 
-<div>
-  <Dropdown isValid label="Location" options={options} />
-</div>
+<Dropdown isValid label="Location" options={options} />
 ```
 
 ##### Valid with Icon
@@ -55,12 +45,27 @@ const { options } = require('./mock-data/options');
 ```jsx
 const { options } = require('./mock-data/options');
 
-<div>
-  <Dropdown isValid label="Location" options={options} icon="map pin" />
-</div>
+
+<Dropdown isValid label="Location" options={options} icon="map pin" />
 ```
 
 ### Variations
+
+#### Compact
+
+```jsx
+const { options } = require('./mock-data/options');
+
+<Dropdown isCompact label="Location" options={options} />;
+```
+
+#### Dropdown opens above input
+
+```jsx
+const { options } = require('./mock-data/options');
+
+<Dropdown willOpenAbove label="Location" options={options} />
+```
 
 #### Icon
 
@@ -105,6 +110,27 @@ const { optionsWithImages } = require('./mock-data/options');
 // ];
 
 <Dropdown label="Properties" options={optionsWithImages} icon="map pin" />;
+```
+
+#### Content
+
+Options can display different content in the dropdown menu to the text displayed in the input.
+
+```jsx
+const optionsWithContent = [
+ {
+   content: 'Paris is great',
+   text: 'France',
+   value: 'fr',
+ },
+ {
+   content: 'Berlin is awesome',
+   text: 'Germany',
+   value: 'de',
+ }
+];
+
+<Dropdown label="Places" options={optionsWithContent} />;
 ```
 
 #### Indented options

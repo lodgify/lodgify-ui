@@ -27,6 +27,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
       error={false}
       icon="map pin"
       initialValue={null}
+      isCompact={false}
       isDisabled={false}
       isSearchable={false}
       isValid={false}

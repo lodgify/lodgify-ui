@@ -141,11 +141,45 @@
   width: @inputWidth;
   min-width: @dropdownContainerMinWidth;
 
+  &.is-compact {
+    min-width: 0;
+    width: auto;
+  }
+
   .ui.selection.dropdown {
     color: @defaultTextColor;
     display: inline-flex;
     max-width: @selectionMaxWidth;
     width: @selectionWidth;
+
+    /* Compact */
+    &.compact {
+      background: none !important;
+      border: none;
+      box-shadow: none !important;
+      color: @compactColor;
+      font-size: @compactFontSize;
+      padding: 0;
+      width: auto;
+
+      > .text {
+        background: @compactBackground;
+        border: @compactBorder;
+        border-radius: @compactBorderRadius;
+        color: @compactColor;
+        padding: @compactPadding;
+      }
+
+      > i.icon {
+        padding: 0;
+        right: @compactRight;
+        top: @compactTop;
+      }
+
+      > .menu {
+        width: auto;
+      }
+    }
 
     /*  Selection Menu */
     &:not(.upward) .menu {
@@ -221,6 +255,13 @@
       background: @selectionFocusBackground;
       border-color: @selectionFocusBorderColor;
       color: @textColor;
+
+      &.compact > .text {
+        background: @themeActionLighterColorDefault;
+        background: var(@themeActionLighterColorIdentifier, @themeActionLighterColorDefault);
+        border-color: @themeActionLighterColorDefault;
+        border-color: var(@themeActionLighterColorIdentifier, @themeActionLighterColorDefault);
+      }
     }
 
     label {

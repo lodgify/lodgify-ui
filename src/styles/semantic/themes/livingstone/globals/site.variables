@@ -71,6 +71,9 @@
 @themeActionDarkerColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-darker-color";
 @themeActionDarkerColorDefault: @darkPrimaryColor;
 
+@themeActionLighterColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-lighter-color";
+@themeActionLighterColorDefault: @lightPrimaryColor;
+
 @themeActionContrastColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-contrast-color";
 @themeActionContrastColorDefault: @black;
 
