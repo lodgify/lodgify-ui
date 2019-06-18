@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Range render should render the right structure 1`] = `
+<Range
+  domain={
+    Array [
+      0,
+      100,
+    ]
+  }
+  initialValue={
+    Array [
+      0,
+      1,
+    ]
+  }
+  isShowingTrackOutsideLeft={true}
+  isShowingTrackOutsideRight={false}
+  name=""
+  onChange={[Function]}
+  renderValue={[Function]}
+  step={1}
+>
+  <Slider
+    className="ui range"
+    component="div"
+    disabled={false}
+    domain={
+      Array [
+        0,
+        100,
+      ]
+    }
+    flatten={false}
+    mode={2}
+    onChange={[Function]}
+    onSlideEnd={[Function]}
+    onSlideStart={[Function]}
+    onUpdate={[Function]}
+    reversed={false}
+    rootProps={Object {}}
+    rootStyle={Object {}}
+    step={1}
+    values={
+      Array [
+        0,
+        1,
+      ]
+    }
+    vertical={false}
+    warnOnChanges={false}
+  >
+    <div
+      className="ui range"
+      style={Object {}}
+    >
+      <Rail
+        activeHandleID={null}
+        emitKeyboard={[Function]}
+        emitMouse={[Function]}
+        emitTouch={[Function]}
+        getEventData={[Function]}
+        handles={
+          Array [
+            Object {
+              "id": "$$-0",
+              "percent": 0,
+              "value": 0,
+            },
+            Object {
+              "id": "$$-1",
+              "percent": 1,
+              "value": 1,
+            },
+          ]
+        }
+        key=".0"
+        scale={
+          LinearScale {
+            "domain": Array [
+              0,
+              100,
+            ],
+            "interpolator": [Function],
+            "range": Array [
+              0,
+              100,
+            ],
+          }
+        }
+      >
+        <div
+          className="rail"
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+        />
+      </Rail>
+      <div
+        key=".1"
+      />
+      <Tracks
+        activeHandleID={null}
+        emitKeyboard={[Function]}
+        emitMouse={[Function]}
+        emitTouch={[Function]}
+        getEventData={[Function]}
+        handles={
+          Array [
+            Object {
+              "id": "$$-0",
+              "percent": 0,
+              "value": 0,
+            },
+            Object {
+              "id": "$$-1",
+              "percent": 1,
+              "value": 1,
+            },
+          ]
+        }
+        key=".2"
+        left={true}
+        right={false}
+        scale={
+          LinearScale {
+            "domain": Array [
+              0,
+              100,
+            ],
+            "interpolator": [Function],
+            "range": Array [
+              0,
+              100,
+            ],
+          }
+        }
+      >
+        <div
+          className="track"
+          key="$-$$-0"
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+          style={
+            Object {
+              "left": "0%",
+              "width": "0%",
+            }
+          }
+        />
+        <div
+          className="track"
+          key="$$-0-$$-1"
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+          style={
+            Object {
+              "left": "0%",
+              "width": "1%",
+            }
+          }
+        />
+      </Tracks>
+      <Handles
+        activeHandleID={null}
+        emitKeyboard={[Function]}
+        emitMouse={[Function]}
+        emitTouch={[Function]}
+        getEventData={[Function]}
+        handles={
+          Array [
+            Object {
+              "id": "$$-0",
+              "percent": 0,
+              "value": 0,
+            },
+            Object {
+              "id": "$$-1",
+              "percent": 1,
+              "value": 1,
+            },
+          ]
+        }
+        key=".3"
+        scale={
+          LinearScale {
+            "domain": Array [
+              0,
+              100,
+            ],
+            "interpolator": [Function],
+            "range": Array [
+              0,
+              100,
+            ],
+          }
+        }
+      >
+        <div
+          className="handle-clickable-area active"
+          key="$$-0"
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+          style={
+            Object {
+              "left": "calc(0% - 10px)",
+            }
+          }
+        >
+          <div
+            className="handle"
+          />
+          <Label
+            pointing="below"
+          >
+            <div
+              className="ui pointing below label"
+              onClick={[Function]}
+            >
+              0
+            </div>
+          </Label>
+        </div>
+        <div
+          className="handle-clickable-area"
+          key="$$-1"
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+          style={
+            Object {
+              "left": "calc(1% - 10px)",
+            }
+          }
+        >
+          <div
+            className="handle"
+          />
+          <Label
+            pointing="below"
+          >
+            <div
+              className="ui pointing below label"
+              onClick={[Function]}
+            >
+              1
+            </div>
+          </Label>
+        </div>
+      </Handles>
+    </div>
+  </Slider>
+</Range>
+`;
