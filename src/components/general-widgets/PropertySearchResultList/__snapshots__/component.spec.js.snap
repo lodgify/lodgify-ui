@@ -2,6 +2,9 @@
 
 exports[`<PropertySearchResultList /> by default should render the right structure 1`] = `
 <PropertySearchResultList
+  dropdownLabel={null}
+  dropdownOnChange={[Function]}
+  dropdownOptions={null}
   isShowingPlaceholder={false}
   propertySearchResults={
     Array [
@@ -54,26 +57,1214 @@ exports[`<PropertySearchResultList /> by default should render the right structu
   }
   resultsCountText="results"
 >
-  <Heading
-    className={null}
-    hasMargin={true}
-    isColorInverted={false}
-    size="small"
-    textAlign={null}
+  <FlexContainer
+    alignContent={null}
+    alignItems="center"
+    flexDirection={null}
+    flexWrap={null}
+    justifyContent="space-between"
   >
-    <Header
-      as="h4"
-      className=""
-      inverted={false}
-      textAlign={null}
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": null,
+          "height": "100%",
+          "justifyContent": "space-between",
+        }
+      }
     >
-      <h4
-        className="ui header"
+      <Heading
+        className={null}
+        hasMargin={true}
+        isColorInverted={false}
+        size="small"
+        textAlign={null}
       >
-        2 results
-      </h4>
-    </Header>
-  </Heading>
+        <Header
+          as="h4"
+          className=""
+          inverted={false}
+          textAlign={null}
+        >
+          <h4
+            className="ui header"
+          >
+            2 results
+          </h4>
+        </Header>
+      </Heading>
+    </div>
+  </FlexContainer>
+  <Divider
+    className=""
+    hasLine={false}
+    size="small"
+  >
+    <Divider
+      className="is-size-small"
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider is-size-small"
+      />
+    </Divider>
+  </Divider>
+  <FlexContainer
+    alignContent={null}
+    alignItems={null}
+    flexDirection={null}
+    flexWrap="wrap"
+    justifyContent="center"
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": null,
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": "wrap",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        isShowingPlaceholder={false}
+        key="The Cat House0"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        propertyUrlTarget="_self"
+        ratingNumber={4.7}
+      >
+        <Card
+          className="has-search-result"
+          href="/"
+          target="_self"
+        >
+          <a
+            className="ui card has-search-result"
+            href="/"
+            onClick={[Function]}
+            target="_self"
+          >
+            <FlexContainer
+              alignContent={null}
+              alignItems={null}
+              flexDirection={null}
+              flexWrap={null}
+              justifyContent={null}
+            >
+              <div
+                className="flex-container"
+                style={
+                  Object {
+                    "alignContent": null,
+                    "alignItems": null,
+                    "display": "flex",
+                    "flexDirection": null,
+                    "flexGrow": "1",
+                    "flexWrap": null,
+                    "height": "100%",
+                    "justifyContent": null,
+                  }
+                }
+              >
+                <withLazyLoad(ResponsiveImage)
+                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                  isFluid={true}
+                  isLazyLoaded={true}
+                >
+                  <LazyLoader
+                    componentProps={
+                      Object {
+                        "alternativeText": undefined,
+                        "isFluid": true,
+                        "isLazyLoaded": true,
+                        "placeholderImageUrl": undefined,
+                        "sizes": undefined,
+                        "srcSet": undefined,
+                      }
+                    }
+                    lazyComponent={[Function]}
+                    lazyProps={
+                      Object {
+                        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                      }
+                    }
+                  >
+                    <div />
+                    <ResponsiveImage
+                      alternativeText="Image Widget"
+                      hasRoundedCorners={false}
+                      imageHeight={null}
+                      imageNotFoundLabelText="Image not found!"
+                      imageTitle="Image Title"
+                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      imageWidth={null}
+                      isAvatar={false}
+                      isCircular={false}
+                      isFluid={true}
+                      isLazyLoaded={true}
+                      label={null}
+                      sizes={null}
+                      srcSet={null}
+                    >
+                      <figure
+                        className="responsive-image is-fluid"
+                      >
+                        <Image
+                          alt="Image Widget"
+                          as="img"
+                          avatar={false}
+                          fluid={true}
+                          onLoad={[Function]}
+                          sizes={null}
+                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                          srcSet={null}
+                          title="Image Title"
+                          ui={true}
+                        >
+                          <img
+                            alt="Image Widget"
+                            className="ui fluid image"
+                            onLoad={[Function]}
+                            sizes={null}
+                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                            srcSet={null}
+                            title="Image Title"
+                          />
+                        </Image>
+                      </figure>
+                    </ResponsiveImage>
+                    <div />
+                  </LazyLoader>
+                </withLazyLoad(ResponsiveImage)>
+                <Segment
+                  raised={true}
+                >
+                  <div
+                    className="ui raised segment"
+                  >
+                    <FlexContainer
+                      alignContent={null}
+                      alignItems="center"
+                      flexDirection="row"
+                      flexWrap={null}
+                      justifyContent={null}
+                    >
+                      <div
+                        className="flex-container"
+                        style={
+                          Object {
+                            "alignContent": null,
+                            "alignItems": "center",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "flexGrow": "1",
+                            "flexWrap": null,
+                            "height": "100%",
+                            "justifyContent": null,
+                          }
+                        }
+                      >
+                        <Paragraph
+                          size="medium"
+                          weight={null}
+                        >
+                          <p
+                            className=""
+                          >
+                            from
+                          </p>
+                        </Paragraph>
+                        <Heading
+                          className={null}
+                          hasMargin={true}
+                          isColorInverted={false}
+                          size="medium"
+                          textAlign={null}
+                        >
+                          <Header
+                            as="h3"
+                            className=""
+                            inverted={false}
+                            textAlign={null}
+                          >
+                            <h3
+                              className="ui header"
+                            >
+                              $28000
+                            </h3>
+                          </Header>
+                        </Heading>
+                      </div>
+                    </FlexContainer>
+                    <Label>
+                      <div
+                        className="ui label"
+                        onClick={[Function]}
+                      >
+                         
+                        per month
+                      </div>
+                    </Label>
+                  </div>
+                </Segment>
+              </div>
+            </FlexContainer>
+            <CardContent>
+              <div
+                className="content"
+              >
+                <CardHeader>
+                  <div
+                    className="header"
+                  >
+                    <Heading
+                      className={null}
+                      hasMargin={true}
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        className=""
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          The Cat House
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </CardHeader>
+                <CardDescription>
+                  <div
+                    className="description"
+                  >
+                    <FlexContainer
+                      alignContent={null}
+                      alignItems="center"
+                      flexDirection="row"
+                      flexWrap={null}
+                      justifyContent={null}
+                    >
+                      <div
+                        className="flex-container"
+                        style={
+                          Object {
+                            "alignContent": null,
+                            "alignItems": "center",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "flexGrow": "1",
+                            "flexWrap": null,
+                            "height": "100%",
+                            "justifyContent": null,
+                          }
+                        }
+                      >
+                        <Rating
+                          iconSize="tiny"
+                          isShowingNumeral={true}
+                          ratingNumber={4.7}
+                        >
+                          4.7
+                          <Rating
+                            clearable="auto"
+                            disabled={true}
+                            maxRating={5}
+                            rating={5}
+                            size="tiny"
+                          >
+                            <div
+                              className="ui tiny disabled rating"
+                              onMouseLeave={[Function]}
+                              role="radiogroup"
+                            >
+                              <RatingIcon
+                                active={true}
+                                aria-checked={false}
+                                aria-posinset={1}
+                                aria-setsize={5}
+                                as="i"
+                                index={0}
+                                key="0"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={false}
+                                  aria-posinset={1}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                              <RatingIcon
+                                active={true}
+                                aria-checked={false}
+                                aria-posinset={2}
+                                aria-setsize={5}
+                                as="i"
+                                index={1}
+                                key="1"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={false}
+                                  aria-posinset={2}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                              <RatingIcon
+                                active={true}
+                                aria-checked={false}
+                                aria-posinset={3}
+                                aria-setsize={5}
+                                as="i"
+                                index={2}
+                                key="2"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={false}
+                                  aria-posinset={3}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                              <RatingIcon
+                                active={true}
+                                aria-checked={false}
+                                aria-posinset={4}
+                                aria-setsize={5}
+                                as="i"
+                                index={3}
+                                key="3"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={false}
+                                  aria-posinset={4}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                              <RatingIcon
+                                active={true}
+                                aria-checked={true}
+                                aria-posinset={5}
+                                aria-setsize={5}
+                                as="i"
+                                index={4}
+                                key="4"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={true}
+                                  aria-posinset={5}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                            </div>
+                          </Rating>
+                        </Rating>
+                        <Paragraph
+                          size="medium"
+                          weight={null}
+                        >
+                          <p
+                            className=""
+                          >
+                            · Bed and breakfast
+                          </p>
+                        </Paragraph>
+                      </div>
+                    </FlexContainer>
+                  </div>
+                </CardDescription>
+                <CardDescription>
+                  <div
+                    className="description"
+                  >
+                    2 guests · 2 bedrooms · 2 beds · 2 baths
+                  </div>
+                </CardDescription>
+                <CardDescription>
+                  <div
+                    className="description"
+                  >
+                    Pool · Wifi · Washer · Kitchen
+                  </div>
+                </CardDescription>
+              </div>
+            </CardContent>
+          </a>
+        </Card>
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={1}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={3}
+        bedsText="beds"
+        guestsNumber={4}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        isShowingPlaceholder={false}
+        key="Space Hub A-6751"
+        periodText=""
+        pricePerPeriod="$1280"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="Space Hub A-675"
+        propertyType="Space Station"
+        propertyUrl="/"
+        propertyUrlTarget="_self"
+        ratingNumber={4.7}
+      >
+        <Card
+          className="has-search-result"
+          href="/"
+          target="_self"
+        >
+          <a
+            className="ui card has-search-result"
+            href="/"
+            onClick={[Function]}
+            target="_self"
+          >
+            <FlexContainer
+              alignContent={null}
+              alignItems={null}
+              flexDirection={null}
+              flexWrap={null}
+              justifyContent={null}
+            >
+              <div
+                className="flex-container"
+                style={
+                  Object {
+                    "alignContent": null,
+                    "alignItems": null,
+                    "display": "flex",
+                    "flexDirection": null,
+                    "flexGrow": "1",
+                    "flexWrap": null,
+                    "height": "100%",
+                    "justifyContent": null,
+                  }
+                }
+              >
+                <withLazyLoad(ResponsiveImage)
+                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                  isFluid={true}
+                  isLazyLoaded={true}
+                >
+                  <LazyLoader
+                    componentProps={
+                      Object {
+                        "alternativeText": undefined,
+                        "isFluid": true,
+                        "isLazyLoaded": true,
+                        "placeholderImageUrl": undefined,
+                        "sizes": undefined,
+                        "srcSet": undefined,
+                      }
+                    }
+                    lazyComponent={[Function]}
+                    lazyProps={
+                      Object {
+                        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                      }
+                    }
+                  >
+                    <div />
+                    <ResponsiveImage
+                      alternativeText="Image Widget"
+                      hasRoundedCorners={false}
+                      imageHeight={null}
+                      imageNotFoundLabelText="Image not found!"
+                      imageTitle="Image Title"
+                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                      imageWidth={null}
+                      isAvatar={false}
+                      isCircular={false}
+                      isFluid={true}
+                      isLazyLoaded={true}
+                      label={null}
+                      sizes={null}
+                      srcSet={null}
+                    >
+                      <figure
+                        className="responsive-image is-fluid"
+                      >
+                        <Image
+                          alt="Image Widget"
+                          as="img"
+                          avatar={false}
+                          fluid={true}
+                          onLoad={[Function]}
+                          sizes={null}
+                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                          srcSet={null}
+                          title="Image Title"
+                          ui={true}
+                        >
+                          <img
+                            alt="Image Widget"
+                            className="ui fluid image"
+                            onLoad={[Function]}
+                            sizes={null}
+                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                            srcSet={null}
+                            title="Image Title"
+                          />
+                        </Image>
+                      </figure>
+                    </ResponsiveImage>
+                    <div />
+                  </LazyLoader>
+                </withLazyLoad(ResponsiveImage)>
+                <Segment
+                  raised={true}
+                >
+                  <div
+                    className="ui raised segment"
+                  >
+                    <Heading
+                      className={null}
+                      hasMargin={true}
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        className=""
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          $1280
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </Segment>
+              </div>
+            </FlexContainer>
+            <CardContent>
+              <div
+                className="content"
+              >
+                <CardHeader>
+                  <div
+                    className="header"
+                  >
+                    <Heading
+                      className={null}
+                      hasMargin={true}
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        className=""
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Space Hub A-675
+                        </h3>
+                      </Header>
+                    </Heading>
+                  </div>
+                </CardHeader>
+                <CardDescription>
+                  <div
+                    className="description"
+                  >
+                    <FlexContainer
+                      alignContent={null}
+                      alignItems="center"
+                      flexDirection="row"
+                      flexWrap={null}
+                      justifyContent={null}
+                    >
+                      <div
+                        className="flex-container"
+                        style={
+                          Object {
+                            "alignContent": null,
+                            "alignItems": "center",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "flexGrow": "1",
+                            "flexWrap": null,
+                            "height": "100%",
+                            "justifyContent": null,
+                          }
+                        }
+                      >
+                        <Rating
+                          iconSize="tiny"
+                          isShowingNumeral={true}
+                          ratingNumber={4.7}
+                        >
+                          4.7
+                          <Rating
+                            clearable="auto"
+                            disabled={true}
+                            maxRating={5}
+                            rating={5}
+                            size="tiny"
+                          >
+                            <div
+                              className="ui tiny disabled rating"
+                              onMouseLeave={[Function]}
+                              role="radiogroup"
+                            >
+                              <RatingIcon
+                                active={true}
+                                aria-checked={false}
+                                aria-posinset={1}
+                                aria-setsize={5}
+                                as="i"
+                                index={0}
+                                key="0"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={false}
+                                  aria-posinset={1}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                              <RatingIcon
+                                active={true}
+                                aria-checked={false}
+                                aria-posinset={2}
+                                aria-setsize={5}
+                                as="i"
+                                index={1}
+                                key="1"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={false}
+                                  aria-posinset={2}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                              <RatingIcon
+                                active={true}
+                                aria-checked={false}
+                                aria-posinset={3}
+                                aria-setsize={5}
+                                as="i"
+                                index={2}
+                                key="2"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={false}
+                                  aria-posinset={3}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                              <RatingIcon
+                                active={true}
+                                aria-checked={false}
+                                aria-posinset={4}
+                                aria-setsize={5}
+                                as="i"
+                                index={3}
+                                key="3"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={false}
+                                  aria-posinset={4}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                              <RatingIcon
+                                active={true}
+                                aria-checked={true}
+                                aria-posinset={5}
+                                aria-setsize={5}
+                                as="i"
+                                index={4}
+                                key="4"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                                selected={false}
+                              >
+                                <i
+                                  aria-checked={true}
+                                  aria-posinset={5}
+                                  aria-setsize={5}
+                                  className="active icon"
+                                  onClick={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseEnter={[Function]}
+                                  role="radio"
+                                  tabIndex={0}
+                                />
+                              </RatingIcon>
+                            </div>
+                          </Rating>
+                        </Rating>
+                        <Paragraph
+                          size="medium"
+                          weight={null}
+                        >
+                          <p
+                            className=""
+                          >
+                            · Space Station
+                          </p>
+                        </Paragraph>
+                      </div>
+                    </FlexContainer>
+                  </div>
+                </CardDescription>
+                <CardDescription>
+                  <div
+                    className="description"
+                  >
+                    4 guests · 2 bedrooms · 3 beds · 1 baths
+                  </div>
+                </CardDescription>
+                <CardDescription>
+                  <div
+                    className="description"
+                  >
+                    Pool · Wifi · Washer · Kitchen
+                  </div>
+                </CardDescription>
+              </div>
+            </CardContent>
+          </a>
+        </Card>
+      </PropertySearchResult>
+    </div>
+  </FlexContainer>
+</PropertySearchResultList>
+`;
+
+exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed should render the right structure 1`] = `
+<PropertySearchResultList
+  dropdownLabel="some label"
+  dropdownOnChange={[Function]}
+  dropdownOptions={
+    Array [
+      Object {
+        "content": "Price (lowest to highest)",
+        "text": "Sort by price (lowest first)",
+        "value": "price",
+      },
+    ]
+  }
+  dropdownValue="price"
+  isShowingPlaceholder={false}
+  propertySearchResults={
+    Array [
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 1,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 3,
+        "bedsText": "beds",
+        "guestsNumber": 4,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "pricePerPeriod": "$1280",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "Space Hub A-675",
+        "propertyType": "Space Station",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+    ]
+  }
+  resultsCountText="results"
+>
+  <FlexContainer
+    alignContent={null}
+    alignItems="center"
+    flexDirection={null}
+    flexWrap={null}
+    justifyContent="space-between"
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": null,
+          "height": "100%",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Heading
+        className={null}
+        hasMargin={true}
+        isColorInverted={false}
+        size="small"
+        textAlign={null}
+      >
+        <Header
+          as="h4"
+          className=""
+          inverted={false}
+          textAlign={null}
+        >
+          <h4
+            className="ui header"
+          >
+            2 results
+          </h4>
+        </Header>
+      </Heading>
+      <Dropdown
+        error={false}
+        icon={null}
+        initialValue={null}
+        isCompact={true}
+        isDisabled={false}
+        isSearchable={false}
+        isValid={false}
+        label="some label"
+        name=""
+        noResultsText="No results"
+        onBlur={[Function]}
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "content": "Price (lowest to highest)",
+              "text": "Sort by price (lowest first)",
+              "value": "price",
+            },
+          ]
+        }
+        value="price"
+        willOpenAbove={false}
+      >
+        <div
+          className="dropdown-container is-compact dirty"
+        >
+          <Dropdown
+            additionLabel="Add "
+            additionPosition="top"
+            closeOnBlur={true}
+            compact={true}
+            deburr={false}
+            disabled={false}
+            icon={
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="caret down"
+                path={null}
+                size="small"
+              />
+            }
+            minCharacters={1}
+            noResultsMessage="No results"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            open={false}
+            openOnFocus={true}
+            options={
+              Array [
+                Object {
+                  "content": "Price (lowest to highest)",
+                  "text": "Sort by price (lowest first)",
+                  "value": "price",
+                },
+              ]
+            }
+            placeholder="some label"
+            renderLabel={[Function]}
+            search={false}
+            searchInput="text"
+            selectOnBlur={false}
+            selectOnNavigation={true}
+            selection={true}
+            upward={false}
+            value="price"
+            wrapSelection={true}
+          >
+            <div
+              aria-disabled={false}
+              aria-expanded={false}
+              className="ui compact selection dropdown"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              role="listbox"
+              tabIndex={0}
+            >
+              <div
+                aria-live="polite"
+                className="text"
+                role="alert"
+              >
+                Sort by price (lowest first)
+              </div>
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="caret down"
+                onClick={[Function]}
+                path={null}
+                size="small"
+              >
+                <i
+                  className="icon small"
+                  onClick={[Function]}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20,8.5l-8,7-8-7Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </i>
+              </Icon>
+              <DropdownMenu
+                open={false}
+              >
+                <div
+                  className="menu transition"
+                >
+                  <DropdownItem
+                    active={true}
+                    content="Price (lowest to highest)"
+                    key="price"
+                    onClick={[Function]}
+                    selected={true}
+                    style={
+                      Object {
+                        "pointerEvents": "all",
+                      }
+                    }
+                    text="Sort by price (lowest first)"
+                    value="price"
+                  >
+                    <div
+                      aria-checked={true}
+                      aria-selected={true}
+                      className="active selected item"
+                      onClick={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "pointerEvents": "all",
+                        }
+                      }
+                    >
+                      <span
+                        className="text"
+                        key="Price (lowest to highest)"
+                      >
+                        Price (lowest to highest)
+                      </span>
+                    </div>
+                  </DropdownItem>
+                </div>
+              </DropdownMenu>
+            </div>
+          </Dropdown>
+        </div>
+      </Dropdown>
+    </div>
+  </FlexContainer>
+  <Divider
+    className=""
+    hasLine={false}
+    size="small"
+  >
+    <Divider
+      className="is-size-small"
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider is-size-small"
+      />
+    </Divider>
+  </Divider>
   <FlexContainer
     alignContent={null}
     alignItems={null}
@@ -928,6 +2119,9 @@ exports[`<PropertySearchResultList /> by default should render the right structu
 
 exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true should render the right structure 1`] = `
 <PropertySearchResultList
+  dropdownLabel={null}
+  dropdownOnChange={[Function]}
+  dropdownOptions={null}
   isShowingPlaceholder={true}
   propertySearchResults={Array []}
   resultsCountText="results"
@@ -1605,6 +2799,9 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
 
 exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed should render the right structure 1`] = `
 <PropertySearchResultList
+  dropdownLabel={null}
+  dropdownOnChange={[Function]}
+  dropdownOptions={null}
   isShowingPlaceholder={false}
   propertySearchResults={
     Array [
@@ -1657,26 +2854,65 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
   }
   resultsCountText="My god I love Cliff Richard"
 >
-  <Heading
-    className={null}
-    hasMargin={true}
-    isColorInverted={false}
-    size="small"
-    textAlign={null}
+  <FlexContainer
+    alignContent={null}
+    alignItems="center"
+    flexDirection={null}
+    flexWrap={null}
+    justifyContent="space-between"
   >
-    <Header
-      as="h4"
-      className=""
-      inverted={false}
-      textAlign={null}
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": null,
+          "height": "100%",
+          "justifyContent": "space-between",
+        }
+      }
     >
-      <h4
-        className="ui header"
+      <Heading
+        className={null}
+        hasMargin={true}
+        isColorInverted={false}
+        size="small"
+        textAlign={null}
       >
-        2 My god I love Cliff Richard
-      </h4>
-    </Header>
-  </Heading>
+        <Header
+          as="h4"
+          className=""
+          inverted={false}
+          textAlign={null}
+        >
+          <h4
+            className="ui header"
+          >
+            2 My god I love Cliff Richard
+          </h4>
+        </Header>
+      </Heading>
+    </div>
+  </FlexContainer>
+  <Divider
+    className=""
+    hasLine={false}
+    size="small"
+  >
+    <Divider
+      className="is-size-small"
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider is-size-small"
+      />
+    </Divider>
+  </Divider>
   <FlexContainer
     alignContent={null}
     alignItems={null}

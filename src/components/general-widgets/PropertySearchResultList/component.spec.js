@@ -42,6 +42,25 @@ describe('<PropertySearchResultList />', () => {
     });
   });
 
+  describe('if `props.dropdownOptions` is passed', () => {
+    it('should render the right structure', () => {
+      const actual = getPropertySearchResultList({
+        dropdownLabel: 'some label',
+        dropdownOnChange: () => {},
+        dropdownOptions: [
+          {
+            content: 'Price (lowest to highest)',
+            text: 'Sort by price (lowest first)',
+            value: 'price',
+          },
+        ],
+        dropdownValue: 'price',
+      });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   it('should have `displayName` `PropertySearchResultList`', () => {
     expectComponentToHaveDisplayName(
       PropertySearchResultList,
