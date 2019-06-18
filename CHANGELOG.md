@@ -1,3 +1,10 @@
+## [1.202.1](https://github.com/lodgify/lodgify-ui/compare/v1.202.0...v1.202.1) (2019-06-18)
+
+
+### Bug Fixes
+
+* **Checkbox:** stop translate on focus ([2a6f67a](https://github.com/lodgify/lodgify-ui/commit/2a6f67a))
+
 # [1.202.0](https://github.com/lodgify/lodgify-ui/compare/v1.201.0...v1.202.0) (2019-06-18)
 
 
