@@ -60,6 +60,7 @@ export { InputController } from './components/inputs/InputController';
 export { NumberInput } from './components/inputs/NumberInput';
 export { PhoneInput } from './components/inputs/PhoneInput';
 export { RadioButton } from './components/inputs/RadioButton';
+export { Range } from './components/inputs/Range';
 export { TextInput } from './components/inputs/TextInput';
 export { Toggle } from './components/inputs/Toggle';
 
