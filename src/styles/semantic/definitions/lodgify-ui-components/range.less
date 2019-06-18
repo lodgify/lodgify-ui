@@ -1,0 +1,84 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'range';
+
+@import (multiple) '../../theme.config';
+
+/*----------------------
+         Range
+-----------------------*/
+
+.ui.range {
+  height: @height;
+  margin-left: @marginLeft;
+  position: relative;
+  width: @width;
+
+  > .rail {
+    background: @railColor;
+    bottom: @railBottom;
+    cursor: pointer;
+    height: @railHeight;
+    position: absolute;
+    width: 100%;
+  }
+
+  > .track {
+    background: @themeActionColorDefault;
+    background: var(@themeActionColorIdentifier, @themeActionColorDefault);
+    bottom: @railBottom;
+    cursor: pointer;
+    height: @railHeight;
+    position: absolute;
+  }
+
+  > .handle-clickable-area {
+    align-items: center;
+    bottom: @clickableHandleBottom;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: @clickableHandleHeight;
+    position: absolute;
+    transform: @clickableHandleTransform;
+    transition: @clickableHandleTransition;
+    width: @clickableHandleWidth;
+    will-change: transform;
+
+    &.active {
+      transform: @activeClickableHandleTransform;
+      transform-origin: @activeClickableHandleTransformOrigin;
+    }
+
+    > .handle {
+      background: @themeActionColorDefault;
+      background: var(@themeActionColorIdentifier, @themeActionColorDefault);
+      border: @handleBorder;
+      border-radius: @handleBorderRadius;
+      height: @handleDiameter;
+      width: @handleDiameter;
+    }
+
+    > .ui.pointing.below.label {
+      align-items: center;
+      background: @themeActionColorDefault;
+      background: var(@themeActionColorIdentifier, @themeActionColorDefault);
+      border-radius: @labelBorderRadius;
+      color: @themeActionContrastColorDefault;
+      color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+      display: flex;
+      font-size: @fontSize;
+      margin: @labelMargin;
+      padding: @labelPadding;
+
+      > * {
+        margin: 0;
+      }
+    }
+  }
+}

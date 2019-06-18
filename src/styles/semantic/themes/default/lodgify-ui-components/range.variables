@@ -1,0 +1,30 @@
+/*----------------------
+        Range
+-----------------------*/
+
+@height: 60px;
+@marginLeft: @10px;
+@width: 250px;
+
+@railColor: @greyThree;
+@railBottom: @10px;
+@railHeight: @5px;
+
+@clickableHandleBottom: @4px;
+@clickableHandleHeight: @height - 10px;
+@clickableHandleTransform: scale(1);
+@clickableHandleTransition: transform 0.1s;
+@clickableHandleWidth: @20px;
+@clickableHandleWillChange: transform;
+
+@activeClickableHandleTransform: scale(1.1);
+@activeClickableHandleTransformOrigin: center calc(@height - 20px);
+
+@handleBorder: @2px solid @pureWhite;
+@handleBorderRadius: @circularBorderRadius;
+@handleDiameter: @17px;
+
+@labelBorderRadius: @1px;
+@labelFontSize: @fontSize;
+@labelMargin: 0 0 0 -0.5px;
+@labelPadding: @5px;
