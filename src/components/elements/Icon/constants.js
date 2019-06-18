@@ -31,6 +31,7 @@ export const ICON_NAMES = {
   DOUBLE_BED: 'double bed',
   ENTERTAINMENT: 'entertainment',
   FACEBOOK: 'facebook',
+  FILTER: 'filter',
   FIRE: 'fire',
   FURTHER_INFO: 'further info',
   GOOGLE_PLUS: 'google plus',
