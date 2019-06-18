@@ -1,3 +1,10 @@
+# [1.202.0](https://github.com/lodgify/lodgify-ui/compare/v1.201.0...v1.202.0) (2019-06-18)
+
+
+### Features
+
+* **PropertySearchResultList:** add dropdown input ([68605f2](https://github.com/lodgify/lodgify-ui/commit/68605f2))
+
 # [1.201.0](https://github.com/lodgify/lodgify-ui/compare/v1.200.1...v1.201.0) (2019-06-17)
 
 
