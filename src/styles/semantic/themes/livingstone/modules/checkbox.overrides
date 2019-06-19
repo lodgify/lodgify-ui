@@ -57,7 +57,7 @@
   /* Pressed */
 
   /* Focus */
-  input:focus {
+  input[type="checkbox"]:focus {
 
     & + label {
       font-size: inherit;
