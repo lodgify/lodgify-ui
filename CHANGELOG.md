@@ -1,3 +1,11 @@
+# [1.203.0](https://github.com/lodgify/lodgify-ui/compare/v1.202.1...v1.203.0) (2019-06-19)
+
+
+### Features
+
+* **Button:** expose isOutlined prop ([7c0eda8](https://github.com/lodgify/lodgify-ui/commit/7c0eda8))
+* **Pagination:** expose page numbers prop variation ([6910021](https://github.com/lodgify/lodgify-ui/commit/6910021))
+
 ## [1.202.1](https://github.com/lodgify/lodgify-ui/compare/v1.202.0...v1.202.1) (2019-06-18)
 
 
