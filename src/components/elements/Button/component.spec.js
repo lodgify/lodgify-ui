@@ -1,84 +1,55 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Button as SemanticButton } from 'semantic-ui-react';
-import {
-  expectComponentToBe,
-  expectComponentToHaveChildren,
-  expectComponentToHaveProps,
-  expectComponentToHaveDisplayName,
-} from '@lodgify/enzyme-jest-expect-helpers';
-
-import { Icon } from 'elements/Icon';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Button } from './component';
 
-const getButton = props => shallow(<Button {...props}>Press me</Button>);
+const getButton = props => mount(<Button {...props}>Press me</Button>);
 
 describe('<Button />', () => {
-  it('should render a single Semantic UI `Button` component', () => {
+  it('should render a the right structure', () => {
     const wrapper = getButton();
 
-    expectComponentToBe(wrapper, SemanticButton);
+    expect(wrapper).toMatchSnapshot();
   });
 
-  it('should pass the `Button` component the right props', () => {
-    const wrapper = getButton();
+  describe('if `props.isRounded` is true', () => {
+    it('should render the right structure', () => {
+      const wrapper = getButton({ isRounded: true });
 
-    expectComponentToHaveProps(wrapper, {
-      disabled: false,
-      floated: 'left',
-      loading: false,
-      circular: false,
-      compact: false,
-      type: 'button',
-    });
-  });
-
-  it('should pass the `Button` component `props.isRounded` as `circular`', () => {
-    const wrapper = getButton({ isRounded: true });
-
-    expectComponentToHaveProps(wrapper, {
-      circular: true,
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
   describe('if `props.isFormSubmit` is true', () => {
-    it('should pass the `Button` component `floated="right"`', () => {
+    it('should render the right structure', () => {
       const wrapper = getButton({ isFormSubmit: true });
 
-      expectComponentToHaveProps(wrapper, {
-        type: 'submit',
-      });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
   describe('if `props.isPositionedRight` is true', () => {
-    it('should pass the `Button` component `floated="right"`', () => {
+    it('should render the right structure', () => {
       const wrapper = getButton({ isPositionedRight: true });
 
-      expectComponentToHaveProps(wrapper, {
-        floated: 'right',
-      });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
   describe('if `props.isSecondary` is true', () => {
-    it('should pass the `Button` component `secondary={true}`', () => {
+    it('should render the right structure', () => {
       const wrapper = getButton({ isSecondary: true });
 
-      expectComponentToHaveProps(wrapper, {
-        secondary: true,
-      });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
   describe('if `props.isCompact` is true', () => {
-    it('should pass the `Button` component `compact={true}`', () => {
+    it('should render the right structure', () => {
       const wrapper = getButton({ isCompact: true });
 
-      expectComponentToHaveProps(wrapper, {
-        compact: true,
-      });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
@@ -86,45 +57,31 @@ describe('<Button />', () => {
     it('should pass the `Button` component `size={size}`', () => {
       const wrapper = getButton({ size: 'massive' });
 
-      expectComponentToHaveProps(wrapper, {
-        size: 'massive',
-      });
+      expect(wrapper).toMatchSnapshot();
     });
-  });
-
-  it('should render the right children', () => {
-    const wrapper = getButton();
-
-    expectComponentToHaveChildren(wrapper, 'Press me');
   });
 
   describe('if `props.icon` is informed', () => {
-    const getButtonWithIcon = () => getButton({ icon: 'search' });
+    it('should render the right structure', () => {
+      const wrapper = getButton({ icon: 'search' });
 
-    it('should render an <Icon />', () => {
-      const wrapper = getButtonWithIcon();
-
-      expectComponentToHaveChildren(wrapper, Icon, 'Press me');
-    });
-
-    describe('the <Icon>', () => {
-      it('should have the right props', () => {
-        const wrapper = getButtonWithIcon().find(Icon);
-
-        expectComponentToHaveProps(wrapper, {
-          name: 'search',
-        });
-      });
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
   describe('if `props.hasShadow` is informed', () => {
-    it('should have the `has-shadow` className', () => {
+    it('should render the right structure', () => {
       const wrapper = getButton({ hasShadow: true });
 
-      expectComponentToHaveProps(wrapper, {
-        className: 'has-shadow',
-      });
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.hasOutline` is informed', () => {
+    it('should render the right structure', () => {
+      const wrapper = getButton({ isOutlined: true });
+
+      expect(wrapper).toMatchSnapshot();
     });
   });
 

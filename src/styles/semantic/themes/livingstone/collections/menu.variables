@@ -170,6 +170,16 @@
 @paginationLabelHorizontalMargin: @8px;
 @paginationLabelVerticalMargin: @12px;
 
+@hasPageNumberPaginationMarginBottom: @20px;
+@hasPageNumbersItemMargin: 0 @15px 0 0;
+@hasPageNumbersItemMobileMargin: 0 @10px 0 0;
+@hasPageNumbersItemWidth: @30px;
+@hasPageNumbersItemHeight: @hasPageNumbersItemWidth;
+@hasPageNumbersDisabledItemLineHeight: 1.5em;
+@hasPageNumbersActiveItemBorderRadius: 50%;
+@hasPageNumbersFirstButtonMobileMargin: 0 @10px 0 0;
+@hasPageNumbersLastButtonMobileMargin: 0 0 0 @10px;
+
 /* Labeled Icon */
 
 /* Text */

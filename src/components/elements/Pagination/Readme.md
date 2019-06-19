@@ -2,7 +2,15 @@
 <Pagination totalPages={5} />
 ```
 
-### Usage
+### Variations
+
+#### Page numbers
+
+```jsx
+<Pagination isShowingPageNumbers totalPages={7} />
+```
+
+### Content
 
 #### Starting page
 
@@ -26,13 +34,4 @@
   <Divider />
   <Pagination totalPages={15} />
 </div>
-```
-
-#### On page change
-
-```jsx
-const handlePageChange = (event, props) =>
-  console.log(`Changed to page number ${props.activePage}`);
-
-<Pagination onPageChange={handlePageChange} totalPages={5} />
 ```

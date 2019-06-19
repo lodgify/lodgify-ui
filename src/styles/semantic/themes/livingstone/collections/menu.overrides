@@ -215,6 +215,74 @@
       }
     }
   }
+
+  /* Has page numbers */
+  &.has-page-numbers {
+    margin-bottom: @hasPageNumberPaginationMarginBottom;
+
+    a {
+
+      &.item {
+        display: flex;
+        height: @hasPageNumbersItemHeight;
+        justify-content: center;
+        margin: @hasPageNumbersItemMargin;
+        min-width: 0;
+        padding: 0;
+        width: @hasPageNumbersItemWidth;
+
+        &.disabled {
+          color: inherit !important;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: @hasPageNumbersDisabledItemLineHeight;
+        }
+
+        &:not(.active):not(.disabled) {
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background: none;
+          outline: none;
+        }
+
+        @media @mobileScreen {
+          margin: @hasPageNumbersItemMobileMargin;
+        }
+      }
+
+      &.item:last-of-type {
+        margin: 0;
+      }
+
+      &.active.item {
+        padding-top: 0;
+        border-radius: @hasPageNumbersActiveItemBorderRadius;
+        background: @themeActionColorDefault !important;
+        background: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+      }
+    }
+
+    .ui.button {
+
+      &:first-child {
+        @media @mobileScreen {
+          margin: @hasPageNumbersFirstButtonMobileMargin;
+        }
+      }
+
+      &:last-child {
+        @media @mobileScreen {
+          margin: @hasPageNumbersLastButtonMobileMargin;
+        }
+      }
+    }
+  }
 }
 
 /* Labeled Icon */

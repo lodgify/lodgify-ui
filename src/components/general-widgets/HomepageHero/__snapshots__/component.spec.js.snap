@@ -303,6 +303,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                 isFluid={false}
                                 isFormSubmit={false}
                                 isLoading={false}
+                                isOutlined={false}
                                 isPositionedRight={false}
                                 isRounded={true}
                                 isSecondary={false}
@@ -311,6 +312,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                               >
                                 <Button
                                   as="button"
+                                  basic={false}
                                   circular={true}
                                   className=""
                                   compact={false}

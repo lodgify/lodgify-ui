@@ -1373,6 +1373,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -1381,6 +1382,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -2357,6 +2359,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -2365,6 +2368,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -3661,6 +3665,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -3669,6 +3674,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}

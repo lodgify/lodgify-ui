@@ -378,6 +378,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -386,6 +387,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -796,6 +798,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -804,6 +807,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -1194,6 +1198,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -1202,6 +1207,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}

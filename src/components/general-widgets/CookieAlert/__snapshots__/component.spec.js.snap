@@ -234,6 +234,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                     isFluid={false}
                     isFormSubmit={true}
                     isLoading={false}
+                    isOutlined={false}
                     isPositionedRight={true}
                     isRounded={true}
                     isSecondary={false}
@@ -242,6 +243,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                   >
                     <Button
                       as="button"
+                      basic={false}
                       circular={true}
                       className=""
                       compact={false}

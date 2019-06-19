@@ -52,6 +52,7 @@ exports[`<Form /> by default should render the correct structure 1`] = `
                 isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
+                isOutlined={false}
                 isPositionedRight={true}
                 isRounded={true}
                 isSecondary={false}
@@ -60,6 +61,7 @@ exports[`<Form /> by default should render the correct structure 1`] = `
               >
                 <Button
                   as="button"
+                  basic={false}
                   circular={true}
                   className=""
                   compact={false}
@@ -175,6 +177,7 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
                 isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
+                isOutlined={false}
                 isPositionedRight={true}
                 isRounded={true}
                 isSecondary={false}
@@ -183,6 +186,7 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
               >
                 <Button
                   as="button"
+                  basic={false}
                   circular={true}
                   className=""
                   compact={false}
@@ -289,6 +293,7 @@ exports[`<Form /> if \`props.errorMessage\` is passed should render the correct 
                 isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
+                isOutlined={false}
                 isPositionedRight={true}
                 isRounded={true}
                 isSecondary={false}
@@ -297,6 +302,7 @@ exports[`<Form /> if \`props.errorMessage\` is passed should render the correct 
               >
                 <Button
                   as="button"
+                  basic={false}
                   circular={true}
                   className=""
                   compact={false}
@@ -406,6 +412,7 @@ exports[`<Form /> if \`props.headingText\` is passed should render the correct s
                 isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
+                isOutlined={false}
                 isPositionedRight={true}
                 isRounded={true}
                 isSecondary={false}
@@ -414,6 +421,7 @@ exports[`<Form /> if \`props.headingText\` is passed should render the correct s
               >
                 <Button
                   as="button"
+                  basic={false}
                   circular={true}
                   className=""
                   compact={false}
@@ -497,6 +505,7 @@ exports[`<Form /> if \`props.submitButtonText\` is an empty string should render
                 isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
+                isOutlined={false}
                 isPositionedRight={true}
                 isRounded={true}
                 isSecondary={false}
@@ -505,6 +514,7 @@ exports[`<Form /> if \`props.submitButtonText\` is an empty string should render
               >
                 <Button
                   as="button"
+                  basic={false}
                   circular={true}
                   className=""
                   compact={false}
@@ -588,6 +598,7 @@ exports[`<Form /> if \`props.submitButtonText\` is passed should render the corr
                 isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
+                isOutlined={false}
                 isPositionedRight={true}
                 isRounded={true}
                 isSecondary={false}
@@ -596,6 +607,7 @@ exports[`<Form /> if \`props.submitButtonText\` is passed should render the corr
               >
                 <Button
                   as="button"
+                  basic={false}
                   circular={true}
                   className=""
                   compact={false}
@@ -702,6 +714,7 @@ exports[`<Form /> if \`props.successMessage\` is passed should render the correc
                 isFluid={false}
                 isFormSubmit={true}
                 isLoading={false}
+                isOutlined={false}
                 isPositionedRight={true}
                 isRounded={true}
                 isSecondary={false}
@@ -710,6 +723,7 @@ exports[`<Form /> if \`props.successMessage\` is passed should render the correc
               >
                 <Button
                   as="button"
+                  basic={false}
                   circular={true}
                   className=""
                   compact={false}

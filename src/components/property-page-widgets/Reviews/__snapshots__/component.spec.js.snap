@@ -167,6 +167,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                           isFluid={false}
                           isFormSubmit={false}
                           isLoading={false}
+                          isOutlined={false}
                           isPositionedRight={true}
                           isRounded={true}
                           isSecondary={false}
@@ -210,6 +211,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                             isFluid={false}
                             isFormSubmit={false}
                             isLoading={false}
+                            isOutlined={false}
                             isPositionedRight={true}
                             isRounded={true}
                             isSecondary={false}
@@ -241,6 +243,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                               isFluid={false}
                               isFormSubmit={false}
                               isLoading={false}
+                              isOutlined={false}
                               isPositionedRight={true}
                               isRounded={true}
                               isSecondary={false}
@@ -262,6 +265,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                               isFluid={false}
                               isFormSubmit={false}
                               isLoading={false}
+                              isOutlined={false}
                               isPositionedRight={true}
                               isRounded={true}
                               isSecondary={false}
@@ -274,6 +278,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                             >
                               <Button
                                 as="button"
+                                basic={false}
                                 circular={true}
                                 className=""
                                 compact={true}
@@ -1219,6 +1224,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                           isFluid={false}
                           isFormSubmit={false}
                           isLoading={false}
+                          isOutlined={false}
                           isPositionedRight={true}
                           isRounded={true}
                           isSecondary={false}
@@ -1262,6 +1268,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                             isFluid={false}
                             isFormSubmit={false}
                             isLoading={false}
+                            isOutlined={false}
                             isPositionedRight={true}
                             isRounded={true}
                             isSecondary={false}
@@ -1293,6 +1300,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                               isFluid={false}
                               isFormSubmit={false}
                               isLoading={false}
+                              isOutlined={false}
                               isPositionedRight={true}
                               isRounded={true}
                               isSecondary={false}
@@ -1314,6 +1322,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                               isFluid={false}
                               isFormSubmit={false}
                               isLoading={false}
+                              isOutlined={false}
                               isPositionedRight={true}
                               isRounded={true}
                               isSecondary={false}
@@ -1326,6 +1335,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                             >
                               <Button
                                 as="button"
+                                basic={false}
                                 circular={true}
                                 className=""
                                 compact={true}
@@ -2286,6 +2296,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                           isFluid={false}
                           isFormSubmit={false}
                           isLoading={false}
+                          isOutlined={false}
                           isPositionedRight={true}
                           isRounded={true}
                           isSecondary={false}
@@ -2329,6 +2340,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                             isFluid={false}
                             isFormSubmit={false}
                             isLoading={false}
+                            isOutlined={false}
                             isPositionedRight={true}
                             isRounded={true}
                             isSecondary={false}
@@ -2360,6 +2372,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               isFluid={false}
                               isFormSubmit={false}
                               isLoading={false}
+                              isOutlined={false}
                               isPositionedRight={true}
                               isRounded={true}
                               isSecondary={false}
@@ -2381,6 +2394,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               isFluid={false}
                               isFormSubmit={false}
                               isLoading={false}
+                              isOutlined={false}
                               isPositionedRight={true}
                               isRounded={true}
                               isSecondary={false}
@@ -2393,6 +2407,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                             >
                               <Button
                                 as="button"
+                                basic={false}
                                 circular={true}
                                 className=""
                                 compact={true}

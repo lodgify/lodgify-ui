@@ -41,6 +41,12 @@
 </div>
 ```
 
+#### Outlined
+
+```jsx
+<Button isOutlined>Submit</Button>
+```
+
 #### Rounded
 
 ```jsx

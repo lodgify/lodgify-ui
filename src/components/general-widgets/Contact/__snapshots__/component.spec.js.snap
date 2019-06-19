@@ -727,6 +727,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -735,6 +736,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -1989,6 +1991,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -1997,6 +2000,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -2976,6 +2980,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -2984,6 +2989,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -3918,6 +3924,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -3926,6 +3933,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -4576,6 +4584,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -4584,6 +4593,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}

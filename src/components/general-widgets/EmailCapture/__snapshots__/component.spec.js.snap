@@ -384,6 +384,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                             isFluid={true}
                             isFormSubmit={false}
                             isLoading={false}
+                            isOutlined={false}
                             isPositionedRight={false}
                             isRounded={true}
                             isSecondary={false}
@@ -392,6 +393,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                           >
                             <Button
                               as="button"
+                              basic={false}
                               circular={true}
                               className=""
                               compact={false}
@@ -966,6 +968,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                             isFluid={true}
                             isFormSubmit={false}
                             isLoading={false}
+                            isOutlined={false}
                             isPositionedRight={false}
                             isRounded={true}
                             isSecondary={false}
@@ -974,6 +977,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                           >
                             <Button
                               as="button"
+                              basic={false}
                               circular={true}
                               className=""
                               compact={false}
@@ -1580,6 +1584,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                             isFluid={true}
                             isFormSubmit={false}
                             isLoading={false}
+                            isOutlined={false}
                             isPositionedRight={false}
                             isRounded={true}
                             isSecondary={false}
@@ -1588,6 +1593,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                           >
                             <Button
                               as="button"
+                              basic={false}
                               circular={true}
                               className=""
                               compact={false}

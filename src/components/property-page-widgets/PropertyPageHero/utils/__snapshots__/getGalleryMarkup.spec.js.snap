@@ -54,6 +54,7 @@ exports[`\`getViewMoreButtonMarkup\` if there are two images or more should retu
             isFluid={false}
             isFormSubmit={false}
             isLoading={false}
+            isOutlined={false}
             isPositionedRight={true}
             isRounded={false}
             isSecondary={true}
