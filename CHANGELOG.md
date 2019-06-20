@@ -1,3 +1,11 @@
+# [1.204.0](https://github.com/lodgify/lodgify-ui/compare/v1.203.0...v1.204.0) (2019-06-20)
+
+
+### Features
+
+* **Range:** add styles ([afccfb9](https://github.com/lodgify/lodgify-ui/commit/afccfb9))
+* **Range:** expose new component with tests and examples ([1994971](https://github.com/lodgify/lodgify-ui/commit/1994971))
+
 # [1.203.0](https://github.com/lodgify/lodgify-ui/compare/v1.202.1...v1.203.0) (2019-06-19)
 
 
