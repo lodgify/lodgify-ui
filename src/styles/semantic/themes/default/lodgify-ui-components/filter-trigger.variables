@@ -1,0 +1,13 @@
+/*----------------------
+    Filter Trigger
+-----------------------*/
+
+@filterTriggerButtonHeight: @30px;
+@filterTriggerButtonBorderRadius: @50px;
+
+@filterTriggerTextFontWeight: 700;
+
+@filterTriggerFilterButtonPadding: 0 0 0 1em;
+@filterTriggerFilterButtonBorderRadius: @50px 0 0 @50px;
+
+@filterTriggerClearFiltersButtonBorderRadius: 0 @50px @50px 0;
