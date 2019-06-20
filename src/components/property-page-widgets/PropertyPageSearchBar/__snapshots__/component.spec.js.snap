@@ -15,6 +15,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       isFluid={false}
       isFormSubmit={false}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={true}
       isRounded={true}
       isSecondary={false}
@@ -35,6 +36,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       isFluid={false}
       isFormSubmit={false}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={true}
       isRounded={true}
       isSecondary={false}
@@ -86,6 +88,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               isFluid={false}
               isFormSubmit={false}
               isLoading={false}
+              isOutlined={false}
               isPositionedRight={true}
               isRounded={true}
               isSecondary={false}
@@ -580,6 +583,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                   isFluid={false}
                                                   isFormSubmit={false}
                                                   isLoading={false}
+                                                  isOutlined={false}
                                                   isPositionedRight={true}
                                                   isRounded={true}
                                                   isSecondary={false}
@@ -588,6 +592,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                 >
                                                   <Button
                                                     as="button"
+                                                    basic={false}
                                                     circular={true}
                                                     className=""
                                                     compact={false}
@@ -675,6 +680,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               isFluid={false}
               isFormSubmit={false}
               isLoading={false}
+              isOutlined={false}
               isPositionedRight={true}
               isRounded={true}
               isSecondary={false}
@@ -829,6 +835,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                           isFluid={false}
                                           isFormSubmit={false}
                                           isLoading={false}
+                                          isOutlined={false}
                                           isPositionedRight={true}
                                           isRounded={true}
                                           isSecondary={false}
@@ -872,6 +879,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             isFluid={false}
                                             isFormSubmit={false}
                                             isLoading={false}
+                                            isOutlined={false}
                                             isPositionedRight={true}
                                             isRounded={true}
                                             isSecondary={false}
@@ -903,6 +911,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                               isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
+                                              isOutlined={false}
                                               isPositionedRight={true}
                                               isRounded={true}
                                               isSecondary={false}
@@ -924,6 +933,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                               isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
+                                              isOutlined={false}
                                               isPositionedRight={true}
                                               isRounded={true}
                                               isSecondary={false}
@@ -936,6 +946,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             >
                                               <Button
                                                 as="button"
+                                                basic={false}
                                                 circular={true}
                                                 className=""
                                                 compact={false}
@@ -997,6 +1008,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       isFluid={false}
       isFormSubmit={false}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={true}
       isRounded={true}
       isSecondary={false}
@@ -1017,6 +1029,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       isFluid={false}
       isFormSubmit={false}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={true}
       isRounded={true}
       isSecondary={false}
@@ -1068,6 +1081,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               isFluid={false}
               isFormSubmit={false}
               isLoading={false}
+              isOutlined={false}
               isPositionedRight={true}
               isRounded={true}
               isSecondary={false}
@@ -1721,6 +1735,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                   isFluid={false}
                                                   isFormSubmit={false}
                                                   isLoading={false}
+                                                  isOutlined={false}
                                                   isPositionedRight={true}
                                                   isRounded={true}
                                                   isSecondary={false}
@@ -1729,6 +1744,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                 >
                                                   <Button
                                                     as="button"
+                                                    basic={false}
                                                     circular={true}
                                                     className=""
                                                     compact={false}
@@ -1816,6 +1832,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               isFluid={false}
               isFormSubmit={false}
               isLoading={false}
+              isOutlined={false}
               isPositionedRight={true}
               isRounded={true}
               isSecondary={false}
@@ -2129,6 +2146,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                           isFluid={false}
                                           isFormSubmit={false}
                                           isLoading={false}
+                                          isOutlined={false}
                                           isPositionedRight={true}
                                           isRounded={true}
                                           isSecondary={false}
@@ -2172,6 +2190,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             isFluid={false}
                                             isFormSubmit={false}
                                             isLoading={false}
+                                            isOutlined={false}
                                             isPositionedRight={true}
                                             isRounded={true}
                                             isSecondary={false}
@@ -2203,6 +2222,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
+                                              isOutlined={false}
                                               isPositionedRight={true}
                                               isRounded={true}
                                               isSecondary={false}
@@ -2224,6 +2244,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               isFluid={false}
                                               isFormSubmit={false}
                                               isLoading={false}
+                                              isOutlined={false}
                                               isPositionedRight={true}
                                               isRounded={true}
                                               isSecondary={false}
@@ -2236,6 +2257,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             >
                                               <Button
                                                 as="button"
+                                                basic={false}
                                                 circular={true}
                                                 className=""
                                                 compact={false}

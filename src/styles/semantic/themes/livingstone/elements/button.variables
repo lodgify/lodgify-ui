@@ -134,3 +134,8 @@
 
 /* Has Shadow */
 @hasShadowBoxShadow: 0 2px 7px 0 @boxShadowColor;
+
+/* Has Outline */
+@hasOutlineBorderWidth: @1px;
+@hasOutlineAndCircularMinWidth: @30px;
+@hasOutlineAndCircularMinHeight: @hasOutlineAndCircularMinWidth;

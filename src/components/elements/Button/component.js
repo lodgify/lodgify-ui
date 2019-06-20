@@ -18,6 +18,7 @@ export const Component = ({
   isFluid,
   isFormSubmit,
   isLoading,
+  isOutlined,
   isPositionedRight,
   isRounded,
   isSecondary,
@@ -25,9 +26,11 @@ export const Component = ({
   size,
 }) => (
   <Button
+    basic={isOutlined}
     circular={isRounded}
     className={cx({
       'has-shadow': !!hasShadow,
+      'has-outline': !!isOutlined,
     })}
     compact={isCompact}
     disabled={isDisabled}
@@ -55,6 +58,7 @@ Component.defaultProps = {
   isFluid: false,
   isFormSubmit: false,
   isLoading: false,
+  isOutlined: false,
   isPositionedRight: false,
   isRounded: false,
   isSecondary: false,
@@ -81,6 +85,8 @@ Component.propTypes = {
   isFormSubmit: PropTypes.bool,
   /** Is the button in loading state. */
   isLoading: PropTypes.bool,
+  /** Is the button outlined. */
+  isOutlined: PropTypes.bool,
   /** Is the button positioned on the right hand side of its container. */
   isPositionedRight: PropTypes.bool,
   /** Has the button rounded borders. */

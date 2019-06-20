@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getNextItemMarkup if \`isShowingPageNumbers\` is false should return the right markup 1`] = `
+<Button
+  as="button"
+  circular={true}
+  content={null}
+>
+  <button
+    className="ui circular button"
+    onClick={[Function]}
+    role="button"
+  >
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={true}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="chevron right"
+      path={null}
+      size={null}
+    >
+      <i
+        className="icon inverted"
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+            fill="currentColor"
+          />
+        </svg>
+      </i>
+    </Icon>
+  </button>
+</Button>
+`;
+
+exports[`getNextItemMarkup if \`isShowingPageNumbers\` is true should return the right markup 1`] = `
+<Button
+  as="button"
+  basic={true}
+  circular={true}
+  className="has-outline"
+  content={null}
+>
+  <button
+    className="ui basic circular button has-outline"
+    onClick={[Function]}
+    role="button"
+  >
+    <Icon
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="chevron right"
+      path={null}
+      size={null}
+    >
+      <i
+        className="icon"
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+            fill="currentColor"
+          />
+        </svg>
+      </i>
+    </Icon>
+  </button>
+</Button>
+`;

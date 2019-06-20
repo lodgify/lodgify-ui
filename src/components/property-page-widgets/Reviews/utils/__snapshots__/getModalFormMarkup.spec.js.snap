@@ -18,6 +18,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
       isFluid={false}
       isFormSubmit={false}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={true}
       isRounded={true}
       isSecondary={false}
@@ -61,6 +62,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
         isFluid={false}
         isFormSubmit={false}
         isLoading={false}
+        isOutlined={false}
         isPositionedRight={true}
         isRounded={true}
         isSecondary={false}
@@ -92,6 +94,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
           isFluid={false}
           isFormSubmit={false}
           isLoading={false}
+          isOutlined={false}
           isPositionedRight={true}
           isRounded={true}
           isSecondary={false}
@@ -113,6 +116,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
           isFluid={false}
           isFormSubmit={false}
           isLoading={false}
+          isOutlined={false}
           isPositionedRight={true}
           isRounded={true}
           isSecondary={false}
@@ -125,6 +129,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
         >
           <Button
             as="button"
+            basic={false}
             circular={true}
             className=""
             compact={true}
@@ -171,6 +176,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
       isFluid={false}
       isFormSubmit={false}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={true}
       isRounded={true}
       isSecondary={false}
@@ -214,6 +220,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
         isFluid={false}
         isFormSubmit={false}
         isLoading={false}
+        isOutlined={false}
         isPositionedRight={true}
         isRounded={true}
         isSecondary={false}
@@ -245,6 +252,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
           isFluid={false}
           isFormSubmit={false}
           isLoading={false}
+          isOutlined={false}
           isPositionedRight={true}
           isRounded={true}
           isSecondary={false}
@@ -266,6 +274,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
           isFluid={false}
           isFormSubmit={false}
           isLoading={false}
+          isOutlined={false}
           isPositionedRight={true}
           isRounded={true}
           isSecondary={false}
@@ -278,6 +287,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
         >
           <Button
             as="button"
+            basic={false}
             circular={true}
             className=""
             compact={true}
@@ -326,6 +336,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
       isFluid={false}
       isFormSubmit={false}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={true}
       isRounded={true}
       isSecondary={false}
@@ -367,6 +378,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
         isFluid={false}
         isFormSubmit={false}
         isLoading={false}
+        isOutlined={false}
         isPositionedRight={true}
         isRounded={true}
         isSecondary={false}
@@ -396,6 +408,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
           isFluid={false}
           isFormSubmit={false}
           isLoading={false}
+          isOutlined={false}
           isPositionedRight={true}
           isRounded={true}
           isSecondary={false}
@@ -415,6 +428,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
           isFluid={false}
           isFormSubmit={false}
           isLoading={false}
+          isOutlined={false}
           isPositionedRight={true}
           isRounded={true}
           isSecondary={false}
@@ -427,6 +441,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
         >
           <Button
             as="button"
+            basic={false}
             circular={true}
             className=""
             compact={true}
@@ -471,6 +486,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
       isFluid={false}
       isFormSubmit={false}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={true}
       isRounded={true}
       isSecondary={false}
@@ -514,6 +530,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
         isFluid={false}
         isFormSubmit={false}
         isLoading={false}
+        isOutlined={false}
         isPositionedRight={true}
         isRounded={true}
         isSecondary={false}
@@ -545,6 +562,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
           isFluid={false}
           isFormSubmit={false}
           isLoading={false}
+          isOutlined={false}
           isPositionedRight={true}
           isRounded={true}
           isSecondary={false}
@@ -566,6 +584,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
           isFluid={false}
           isFormSubmit={false}
           isLoading={false}
+          isOutlined={false}
           isPositionedRight={true}
           isRounded={true}
           isSecondary={false}
@@ -578,6 +597,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
         >
           <Button
             as="button"
+            basic={false}
             circular={true}
             className=""
             compact={true}

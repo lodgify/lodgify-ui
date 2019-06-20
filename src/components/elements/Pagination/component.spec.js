@@ -1,38 +1,26 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { Pagination as SemanticPagination } from 'semantic-ui-react';
-import {
-  expectComponentToBe,
-  expectComponentToHaveDisplayName,
-  expectComponentToHaveProps,
-} from '@lodgify/enzyme-jest-expect-helpers';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { nextItem, pageItem, prevItem } from './navigationMarkup';
 import { Component as Pagination } from './component';
 
-const getPagination = () => shallow(<Pagination totalPages={5} />);
+const getPagination = extraProps =>
+  mount(<Pagination totalPages={5} {...extraProps} />);
 
 describe('<Pagination />', () => {
-  it('should render a single Semantic UI `Pagination` component', () => {
-    const wrapper = getPagination();
+  describe('by default', () => {
+    it('should render the right structure', () => {
+      const actual = getPagination();
 
-    expectComponentToBe(wrapper, SemanticPagination);
+      expect(actual).toMatchSnapshot();
+    });
   });
 
-  it('should pass the right props to the Semantic UI `Pagination` component', () => {
-    const wrapper = getPagination();
+  describe('if `props.isShowingPageNumbers` is true', () => {
+    it('should render the right structure', () => {
+      const actual = getPagination({ isShowingPageNumbers: true });
 
-    expectComponentToHaveProps(wrapper, {
-      boundaryRange: 10,
-      defaultActivePage: 1,
-      firstItem: null,
-      lastItem: null,
-      nextItem: nextItem,
-      onPageChange: expect.any(Function),
-      pageItem: pageItem,
-      prevItem: prevItem,
-      secondary: true,
-      totalPages: 5,
+      expect(actual).toMatchSnapshot();
     });
   });
 

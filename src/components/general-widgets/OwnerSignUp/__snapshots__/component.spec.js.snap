@@ -380,6 +380,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -388,6 +389,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -711,6 +713,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -719,6 +722,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -1042,6 +1046,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -1050,6 +1055,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -1353,6 +1359,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={true}
                   isRounded={true}
                   isSecondary={false}
@@ -1361,6 +1368,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}

@@ -43,6 +43,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
       isFluid={false}
       isFormSubmit={true}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={false}
       isRounded={true}
       isSecondary={false}
@@ -691,6 +692,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={false}
                   isRounded={true}
                   isSecondary={false}
@@ -699,6 +701,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -803,6 +806,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true if \`isDisplayedAsModal\` is
       isFluid={false}
       isFormSubmit={true}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={false}
       isRounded={true}
       isSecondary={false}
@@ -898,6 +902,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true if \`isDisplayedAsModal\` is
                                   isFluid={false}
                                   isFormSubmit={true}
                                   isLoading={false}
+                                  isOutlined={false}
                                   isPositionedRight={false}
                                   isRounded={true}
                                   isSecondary={false}
@@ -941,6 +946,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true if \`isDisplayedAsModal\` is
                                     isFluid={false}
                                     isFormSubmit={true}
                                     isLoading={false}
+                                    isOutlined={false}
                                     isPositionedRight={false}
                                     isRounded={true}
                                     isSecondary={false}
@@ -972,6 +978,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true if \`isDisplayedAsModal\` is
                                       isFluid={false}
                                       isFormSubmit={true}
                                       isLoading={false}
+                                      isOutlined={false}
                                       isPositionedRight={false}
                                       isRounded={true}
                                       isSecondary={false}
@@ -993,6 +1000,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true if \`isDisplayedAsModal\` is
                                       isFluid={false}
                                       isFormSubmit={true}
                                       isLoading={false}
+                                      isOutlined={false}
                                       isPositionedRight={false}
                                       isRounded={true}
                                       isSecondary={false}
@@ -1005,6 +1013,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true if \`isDisplayedAsModal\` is
                                     >
                                       <Button
                                         as="button"
+                                        basic={false}
                                         circular={true}
                                         className=""
                                         compact={false}
@@ -1117,6 +1126,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
       isFluid={false}
       isFormSubmit={true}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={false}
       isRounded={true}
       isSecondary={false}
@@ -1818,6 +1828,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                           isFluid={false}
                                           isFormSubmit={true}
                                           isLoading={false}
+                                          isOutlined={false}
                                           isPositionedRight={false}
                                           isRounded={true}
                                           isSecondary={false}
@@ -1826,6 +1837,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                         >
                                           <Button
                                             as="button"
+                                            basic={false}
                                             circular={true}
                                             className=""
                                             compact={false}
@@ -1940,6 +1952,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
       isFluid={false}
       isFormSubmit={true}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={false}
       isRounded={true}
       isSecondary={false}
@@ -2633,6 +2646,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={false}
                   isRounded={true}
                   isSecondary={false}
@@ -2641,6 +2655,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
@@ -2724,6 +2739,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
       isFluid={false}
       isFormSubmit={true}
       isLoading={false}
+      isOutlined={false}
       isPositionedRight={false}
       isRounded={true}
       isSecondary={false}
@@ -3044,6 +3060,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   isFluid={false}
                   isFormSubmit={true}
                   isLoading={false}
+                  isOutlined={false}
                   isPositionedRight={false}
                   isRounded={true}
                   isSecondary={false}
@@ -3052,6 +3069,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 >
                   <Button
                     as="button"
+                    basic={false}
                     circular={true}
                     className=""
                     compact={false}
