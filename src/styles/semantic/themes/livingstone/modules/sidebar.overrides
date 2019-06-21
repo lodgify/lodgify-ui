@@ -1,0 +1,50 @@
+/*******************************
+             Sidebar
+*******************************/
+
+.pushable {
+  width: 100%;
+
+  > .ui.sidebar {
+    background: @background;
+    max-width: 100%;
+
+    > i.icon:first-child {
+      cursor: pointer;
+      position: absolute;
+      top: @closeTop;
+      right: @closeRight;
+      color: @closeColor;
+      margin: 0;
+      padding: @closePadding;
+
+      > svg {
+        background: @closeBackgroundColor;
+        border-radius: @closeBorderRadius;
+        box-shadow: @closeBoxShadow;
+      }
+    }
+  }
+}
+
+/*-------------------
+       Content
+--------------------*/
+
+/* Animation */
+
+/* Dimmer */
+
+/* Color below page */
+
+/* Shadow */
+
+/* Layering */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Width */
+
+/* Height */
