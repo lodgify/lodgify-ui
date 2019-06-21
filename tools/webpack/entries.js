@@ -45,6 +45,7 @@ module.exports = {
     'property-page-search-bar.less'
   ),
   quote: path.join(SRC_SEMANTIC_STYLES_PATH, 'quote.less'),
+  range: path.join(SRC_SEMANTIC_STYLES_PATH, 'range.less'),
   rating: path.join(SRC_SEMANTIC_STYLES_PATH, 'rating.less'),
   'react-dates-datepicker': path.join(
     SRC_SEMANTIC_STYLES_PATH,
