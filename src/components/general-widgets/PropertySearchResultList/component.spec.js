@@ -1,9 +1,24 @@
+jest.mock('general-widgets/PropertySearchResult', () => {
+  const { Component } = require('react');
+
+  class PropertySearchResult extends Component {
+    render() {
+      return <div />;
+    }
+  }
+
+  return { PropertySearchResult };
+});
+
 import React from 'react';
 import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as PropertySearchResultList } from './component';
-import { propertySearchResults } from './mock-data/mock-data';
+import {
+  propertySearchResults,
+  moreThan12PropertySearchResults,
+} from './mock-data/mock-data';
 
 const getPropertySearchResultList = otherProps =>
   mount(
@@ -17,6 +32,16 @@ describe('<PropertySearchResultList />', () => {
   describe('by default', () => {
     it('should render the right structure', () => {
       const actual = getPropertySearchResultList();
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.propertySearchResults.length` > 12 ', () => {
+    it('should render the right structure', () => {
+      const actual = getPropertySearchResultList({
+        propertySearchResults: moreThan12PropertySearchResults,
+      });
 
       expect(actual).toMatchSnapshot();
     });
@@ -58,6 +83,21 @@ describe('<PropertySearchResultList />', () => {
       });
 
       expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('this.handleOnPageChange', () => {
+    it('should call `setState` with the right arguments', () => {
+      const activePage = 1;
+      const wrapper = getPropertySearchResultList();
+
+      wrapper.instance().setState = jest.fn();
+      wrapper.instance().handleOnPageChange({}, { activePage });
+
+      expect(wrapper.instance().setState).toHaveBeenCalledWith({
+        activePage,
+        propertySearchResultsToDisplay: expect.any(Object),
+      });
     });
   });
 
