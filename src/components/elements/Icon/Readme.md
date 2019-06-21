@@ -153,6 +153,8 @@ Library icons
 <Divider />
 <Icon labelText="facebook" name="facebook" />
 <Divider />
+<Icon labelText="filter" name="filter" />
+<Divider />
 <Icon labelText="further info" name="further info" />
 <Divider />
 <Icon labelText="google plus" name="google plus" />

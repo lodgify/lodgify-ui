@@ -1,0 +1,56 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'filter-trigger';
+
+@import (multiple) '../../theme.config';
+
+/*----------------------
+    Filter Trigger
+-----------------------*/
+
+.filter-trigger {
+  display: flex;
+
+  button {
+    border-radius: @filterTriggerButtonBorderRadius;
+    border: none;
+    cursor: pointer;
+    height: @filterTriggerButtonHeight;
+    outline: none;
+    padding: 0;
+
+    &,
+    & > i.icon p {
+      font-weight: @filterTriggerTextFontWeight;
+      color: @themeActionColorDefault;
+      color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+    }
+  }
+
+  button:first-of-type {
+    padding: @filterTriggerFilterButtonPadding;
+    border-radius: @filterTriggerFilterButtonBorderRadius;
+  }
+
+  button:last-of-type {
+    border-radius: @filterTriggerClearFiltersButtonBorderRadius;
+  }
+
+  &.has-filter {
+
+    button {
+
+      & > i.icon p {
+        font-weight: normal;
+        color: @textColor;
+      }
+
+      background-color: @themeActionLighterColorDefault;
+      background-color: var(@themeActionLighterColorIdentifier, @themeActionLighterColorDefault);
+    }
+  }
+}

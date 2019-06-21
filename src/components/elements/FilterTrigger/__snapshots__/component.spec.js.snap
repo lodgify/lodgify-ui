@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterTrigger /> by default should render the right structure 1`] = `
+<FilterTrigger
+  filterTriggerText="More filters"
+  hasFiltersSelected={false}
+  onClearFiltersClick={[Function]}
+  onFiltersClick={[Function]}
+>
+  <div
+    className="filter-trigger"
+  >
+    <button
+      onClick={[Function]}
+    >
+      <Icon
+        color={null}
+        hasBorder={false}
+        isButton={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText="More filters"
+        labelWeight={null}
+        name="filter"
+        path={null}
+        size={null}
+      >
+        <i
+          className="icon has-label"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21.5,8H2.5V6h19Zm-3,3H5.5v2h13Zm-4,5h-5v2h5Z"
+              fill="currentColor"
+            />
+          </svg>
+          <Paragraph
+            size="medium"
+            weight={null}
+          >
+            <p
+              className=""
+            >
+              More filters
+            </p>
+          </Paragraph>
+        </i>
+      </Icon>
+    </button>
+  </div>
+</FilterTrigger>
+`;
+
+exports[`<FilterTrigger /> if \`hasFiltersSelected\` === true should render the right structure 1`] = `
+<FilterTrigger
+  filterTriggerText="More filters"
+  hasFiltersSelected={true}
+  onClearFiltersClick={[Function]}
+  onFiltersClick={[Function]}
+>
+  <div
+    className="filter-trigger has-filter"
+  >
+    <button
+      onClick={[Function]}
+    >
+      <Icon
+        color={null}
+        hasBorder={false}
+        isButton={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText="More filters"
+        labelWeight={null}
+        name="filter"
+        path={null}
+        size={null}
+      >
+        <i
+          className="icon has-label"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21.5,8H2.5V6h19Zm-3,3H5.5v2h13Zm-4,5h-5v2h5Z"
+              fill="currentColor"
+            />
+          </svg>
+          <Paragraph
+            size="medium"
+            weight={null}
+          >
+            <p
+              className=""
+            >
+              More filters
+            </p>
+          </Paragraph>
+        </i>
+      </Icon>
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      <Icon
+        color={null}
+        hasBorder={false}
+        isButton={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="close"
+        path={null}
+        size={null}
+      >
+        <i
+          className="icon"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
+              fill="currentColor"
+            />
+          </svg>
+        </i>
+      </Icon>
+    </button>
+  </div>
+</FilterTrigger>
+`;

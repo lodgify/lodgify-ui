@@ -9,6 +9,7 @@ export { InputGroup } from './components/collections/InputGroup';
 export { BlockPlaceholder } from './components/elements/BlockPlaceholder';
 export { Button } from './components/elements/Button';
 export { Divider } from './components/elements/Divider';
+export { FilterTrigger } from './components/elements/FilterTrigger';
 export { GoogleMap } from './components/elements/GoogleMap';
 export { Icon, ICON_NAMES } from './components/elements/Icon';
 export { IconCard } from './components/elements/IconCard';
