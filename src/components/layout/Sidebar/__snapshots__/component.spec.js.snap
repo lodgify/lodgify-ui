@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidebar /> if \`hasCloseIcon\` is \`true\` should render the right structure 1`] = `
+<Sidebar
+  hasCloseIcon={true}
+  isVisible={false}
+  onClickCloseIcon={[Function]}
+  renderSidebarContent={[Function]}
+  willSlideFromTop={false}
+>
+  <SidebarPushable>
+    <div
+      className="pushable"
+    >
+      <Sidebar
+        animation="overlay"
+        direction="left"
+        visible={false}
+      >
+        <div
+          className="ui overlay left sidebar"
+        >
+          <Icon
+            color={null}
+            hasBorder={false}
+            isButton={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText={null}
+            labelWeight={null}
+            name="close"
+            onClick={[Function]}
+            path={null}
+            size={null}
+          >
+            <i
+              className="icon"
+              onClick={[Function]}
+            >
+              <svg
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </i>
+          </Icon>
+          <div>
+            Some content
+          </div>
+        </div>
+      </Sidebar>
+      <SidebarPusher
+        dimmed={false}
+      >
+        <div
+          className="pusher"
+        >
+          '🚸'
+        </div>
+      </SidebarPusher>
+    </div>
+  </SidebarPushable>
+</Sidebar>
+`;
+
+exports[`<Sidebar /> if \`isVisible\` is \`true\` should render the right structure 1`] = `
+<Sidebar
+  hasCloseIcon={false}
+  isVisible={true}
+  onClickCloseIcon={[Function]}
+  renderSidebarContent={[Function]}
+  willSlideFromTop={false}
+>
+  <SidebarPushable>
+    <div
+      className="pushable"
+    >
+      <Sidebar
+        animation="overlay"
+        direction="left"
+        visible={true}
+      >
+        <div
+          className="ui overlay left visible sidebar"
+        >
+          <div>
+            Some content
+          </div>
+        </div>
+      </Sidebar>
+      <SidebarPusher
+        dimmed={true}
+      >
+        <div
+          className="pusher dimmed"
+        >
+          '🚸'
+        </div>
+      </SidebarPusher>
+    </div>
+  </SidebarPushable>
+</Sidebar>
+`;
+
+exports[`<Sidebar /> if \`willSlideFromTop\` is \`true\` should render the right structure 1`] = `
+<Sidebar
+  hasCloseIcon={false}
+  isVisible={false}
+  onClickCloseIcon={[Function]}
+  renderSidebarContent={[Function]}
+  willSlideFromTop={true}
+>
+  <SidebarPushable>
+    <div
+      className="pushable"
+    >
+      <Sidebar
+        animation="overlay"
+        direction="top"
+        visible={false}
+      >
+        <div
+          className="ui overlay top sidebar"
+        >
+          <div>
+            Some content
+          </div>
+        </div>
+      </Sidebar>
+      <SidebarPusher
+        dimmed={false}
+      >
+        <div
+          className="pusher"
+        >
+          '🚸'
+        </div>
+      </SidebarPusher>
+    </div>
+  </SidebarPushable>
+</Sidebar>
+`;
+
+exports[`<Sidebar /> should render the right structure 1`] = `
+<Sidebar
+  hasCloseIcon={false}
+  isVisible={false}
+  onClickCloseIcon={[Function]}
+  renderSidebarContent={[Function]}
+  willSlideFromTop={false}
+>
+  <SidebarPushable>
+    <div
+      className="pushable"
+    >
+      <Sidebar
+        animation="overlay"
+        direction="left"
+        visible={false}
+      >
+        <div
+          className="ui overlay left sidebar"
+        >
+          <div>
+            Some content
+          </div>
+        </div>
+      </Sidebar>
+      <SidebarPusher
+        dimmed={false}
+      >
+        <div
+          className="pusher"
+        >
+          '🚸'
+        </div>
+      </SidebarPusher>
+    </div>
+  </SidebarPushable>
+</Sidebar>
+`;

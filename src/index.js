@@ -72,6 +72,7 @@ export { GridRow } from './components/layout/GridRow';
 export { HorizontalGutters } from './components/layout/HorizontalGutters';
 export { LazyLoader } from './components/layout/LazyLoader';
 export { ShowOn } from './components/layout/ShowOn';
+export { Sidebar } from './components/layout/Sidebar';
 export { VerticalGutters } from './components/layout/VerticalGutters';
 export { Viewport } from './components/layout/Viewport';
 
