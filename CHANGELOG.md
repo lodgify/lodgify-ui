@@ -1,3 +1,11 @@
+# [1.205.0](https://github.com/lodgify/lodgify-ui/compare/v1.204.0...v1.205.0) (2019-06-21)
+
+
+### Features
+
+* **FilterTrigger:** expose component to api ([f0f9b86](https://github.com/lodgify/lodgify-ui/commit/f0f9b86))
+* **Icon:** expose filter icon ([7b3a7e1](https://github.com/lodgify/lodgify-ui/commit/7b3a7e1))
+
 # [1.204.0](https://github.com/lodgify/lodgify-ui/compare/v1.203.0...v1.204.0) (2019-06-20)
 
 

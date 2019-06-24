@@ -35,6 +35,7 @@ export const LAST_NAME = 'Last Name';
 export const LEARN_MORE = 'Learn more';
 export const LOCATION = 'Location';
 export const LOGIN = 'Log in';
+export const MORE_FILTERS = 'More filters';
 export const MONTH = 'Month';
 export const NAME = 'Name';
 export const NEXT = 'Next';
