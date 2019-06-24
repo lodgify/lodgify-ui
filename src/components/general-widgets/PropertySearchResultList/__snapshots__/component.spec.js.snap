@@ -55,6 +55,7 @@ exports[`<PropertySearchResultList /> by default should render the right structu
       },
     ]
   }
+  renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
   <FlexContainer
@@ -148,7 +149,6 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         guestsNumber={2}
         guestsText="guests"
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isShowingPlaceholder={false}
         key="The Cat House0"
         periodText="per month"
         pricePerPeriod="$28000"
@@ -163,414 +163,9 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         propertyName="The Cat House"
         propertyType="Bed and breakfast"
         propertyUrl="/"
-        propertyUrlTarget="_self"
         ratingNumber={4.7}
       >
-        <Card
-          className="has-search-result"
-          href="/"
-          target="_self"
-        >
-          <a
-            className="ui card has-search-result"
-            href="/"
-            onClick={[Function]}
-            target="_self"
-          >
-            <FlexContainer
-              alignContent={null}
-              alignItems={null}
-              flexDirection={null}
-              flexWrap={null}
-              justifyContent={null}
-            >
-              <div
-                className="flex-container"
-                style={
-                  Object {
-                    "alignContent": null,
-                    "alignItems": null,
-                    "display": "flex",
-                    "flexDirection": null,
-                    "flexGrow": "1",
-                    "flexWrap": null,
-                    "height": "100%",
-                    "justifyContent": null,
-                  }
-                }
-              >
-                <withLazyLoad(ResponsiveImage)
-                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                  isFluid={true}
-                  isLazyLoaded={true}
-                >
-                  <LazyLoader
-                    componentProps={
-                      Object {
-                        "alternativeText": undefined,
-                        "isFluid": true,
-                        "isLazyLoaded": true,
-                        "placeholderImageUrl": undefined,
-                        "sizes": undefined,
-                        "srcSet": undefined,
-                      }
-                    }
-                    lazyComponent={[Function]}
-                    lazyProps={
-                      Object {
-                        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                      }
-                    }
-                  >
-                    <div />
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      isLazyLoaded={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
-                    >
-                      <figure
-                        className="responsive-image is-fluid"
-                      >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <div />
-                  </LazyLoader>
-                </withLazyLoad(ResponsiveImage)>
-                <Segment
-                  raised={true}
-                >
-                  <div
-                    className="ui raised segment"
-                  >
-                    <FlexContainer
-                      alignContent={null}
-                      alignItems="center"
-                      flexDirection="row"
-                      flexWrap={null}
-                      justifyContent={null}
-                    >
-                      <div
-                        className="flex-container"
-                        style={
-                          Object {
-                            "alignContent": null,
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "flexGrow": "1",
-                            "flexWrap": null,
-                            "height": "100%",
-                            "justifyContent": null,
-                          }
-                        }
-                      >
-                        <Paragraph
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            from
-                          </p>
-                        </Paragraph>
-                        <Heading
-                          className={null}
-                          hasMargin={true}
-                          isColorInverted={false}
-                          size="medium"
-                          textAlign={null}
-                        >
-                          <Header
-                            as="h3"
-                            className=""
-                            inverted={false}
-                            textAlign={null}
-                          >
-                            <h3
-                              className="ui header"
-                            >
-                              $28000
-                            </h3>
-                          </Header>
-                        </Heading>
-                      </div>
-                    </FlexContainer>
-                    <Label>
-                      <div
-                        className="ui label"
-                        onClick={[Function]}
-                      >
-                         
-                        per month
-                      </div>
-                    </Label>
-                  </div>
-                </Segment>
-              </div>
-            </FlexContainer>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        className=""
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          The Cat House
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </CardHeader>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    <FlexContainer
-                      alignContent={null}
-                      alignItems="center"
-                      flexDirection="row"
-                      flexWrap={null}
-                      justifyContent={null}
-                    >
-                      <div
-                        className="flex-container"
-                        style={
-                          Object {
-                            "alignContent": null,
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "flexGrow": "1",
-                            "flexWrap": null,
-                            "height": "100%",
-                            "justifyContent": null,
-                          }
-                        }
-                      >
-                        <Rating
-                          iconSize="tiny"
-                          isShowingNumeral={true}
-                          ratingNumber={4.7}
-                        >
-                          4.7
-                          <Rating
-                            clearable="auto"
-                            disabled={true}
-                            maxRating={5}
-                            rating={5}
-                            size="tiny"
-                          >
-                            <div
-                              className="ui tiny disabled rating"
-                              onMouseLeave={[Function]}
-                              role="radiogroup"
-                            >
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={1}
-                                aria-setsize={5}
-                                as="i"
-                                index={0}
-                                key="0"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={1}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={2}
-                                aria-setsize={5}
-                                as="i"
-                                index={1}
-                                key="1"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={2}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={3}
-                                aria-setsize={5}
-                                as="i"
-                                index={2}
-                                key="2"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={3}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={4}
-                                aria-setsize={5}
-                                as="i"
-                                index={3}
-                                key="3"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={4}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={true}
-                                aria-posinset={5}
-                                aria-setsize={5}
-                                as="i"
-                                index={4}
-                                key="4"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={true}
-                                  aria-posinset={5}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                            </div>
-                          </Rating>
-                        </Rating>
-                        <Paragraph
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            · Bed and breakfast
-                          </p>
-                        </Paragraph>
-                      </div>
-                    </FlexContainer>
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    2 guests · 2 bedrooms · 2 beds · 2 baths
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    Pool · Wifi · Washer · Kitchen
-                  </div>
-                </CardDescription>
-              </div>
-            </CardContent>
-          </a>
-        </Card>
+        <div />
       </PropertySearchResult>
       <PropertySearchResult
         bathsNumber={1}
@@ -582,9 +177,7 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         guestsNumber={4}
         guestsText="guests"
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isShowingPlaceholder={false}
         key="Space Hub A-6751"
-        periodText=""
         pricePerPeriod="$1280"
         propertyAmenities={
           Array [
@@ -597,371 +190,9 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         propertyName="Space Hub A-675"
         propertyType="Space Station"
         propertyUrl="/"
-        propertyUrlTarget="_self"
         ratingNumber={4.7}
       >
-        <Card
-          className="has-search-result"
-          href="/"
-          target="_self"
-        >
-          <a
-            className="ui card has-search-result"
-            href="/"
-            onClick={[Function]}
-            target="_self"
-          >
-            <FlexContainer
-              alignContent={null}
-              alignItems={null}
-              flexDirection={null}
-              flexWrap={null}
-              justifyContent={null}
-            >
-              <div
-                className="flex-container"
-                style={
-                  Object {
-                    "alignContent": null,
-                    "alignItems": null,
-                    "display": "flex",
-                    "flexDirection": null,
-                    "flexGrow": "1",
-                    "flexWrap": null,
-                    "height": "100%",
-                    "justifyContent": null,
-                  }
-                }
-              >
-                <withLazyLoad(ResponsiveImage)
-                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                  isFluid={true}
-                  isLazyLoaded={true}
-                >
-                  <LazyLoader
-                    componentProps={
-                      Object {
-                        "alternativeText": undefined,
-                        "isFluid": true,
-                        "isLazyLoaded": true,
-                        "placeholderImageUrl": undefined,
-                        "sizes": undefined,
-                        "srcSet": undefined,
-                      }
-                    }
-                    lazyComponent={[Function]}
-                    lazyProps={
-                      Object {
-                        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                      }
-                    }
-                  >
-                    <div />
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      isLazyLoaded={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
-                    >
-                      <figure
-                        className="responsive-image is-fluid"
-                      >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <div />
-                  </LazyLoader>
-                </withLazyLoad(ResponsiveImage)>
-                <Segment
-                  raised={true}
-                >
-                  <div
-                    className="ui raised segment"
-                  >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        className=""
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          $1280
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </Segment>
-              </div>
-            </FlexContainer>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        className=""
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          Space Hub A-675
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </CardHeader>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    <FlexContainer
-                      alignContent={null}
-                      alignItems="center"
-                      flexDirection="row"
-                      flexWrap={null}
-                      justifyContent={null}
-                    >
-                      <div
-                        className="flex-container"
-                        style={
-                          Object {
-                            "alignContent": null,
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "flexGrow": "1",
-                            "flexWrap": null,
-                            "height": "100%",
-                            "justifyContent": null,
-                          }
-                        }
-                      >
-                        <Rating
-                          iconSize="tiny"
-                          isShowingNumeral={true}
-                          ratingNumber={4.7}
-                        >
-                          4.7
-                          <Rating
-                            clearable="auto"
-                            disabled={true}
-                            maxRating={5}
-                            rating={5}
-                            size="tiny"
-                          >
-                            <div
-                              className="ui tiny disabled rating"
-                              onMouseLeave={[Function]}
-                              role="radiogroup"
-                            >
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={1}
-                                aria-setsize={5}
-                                as="i"
-                                index={0}
-                                key="0"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={1}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={2}
-                                aria-setsize={5}
-                                as="i"
-                                index={1}
-                                key="1"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={2}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={3}
-                                aria-setsize={5}
-                                as="i"
-                                index={2}
-                                key="2"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={3}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={4}
-                                aria-setsize={5}
-                                as="i"
-                                index={3}
-                                key="3"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={4}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={true}
-                                aria-posinset={5}
-                                aria-setsize={5}
-                                as="i"
-                                index={4}
-                                key="4"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={true}
-                                  aria-posinset={5}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                            </div>
-                          </Rating>
-                        </Rating>
-                        <Paragraph
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            · Space Station
-                          </p>
-                        </Paragraph>
-                      </div>
-                    </FlexContainer>
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    4 guests · 2 bedrooms · 3 beds · 1 baths
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    Pool · Wifi · Washer · Kitchen
-                  </div>
-                </CardDescription>
-              </div>
-            </CardContent>
-          </a>
-        </Card>
+        <div />
       </PropertySearchResult>
     </div>
   </FlexContainer>
@@ -1032,6 +263,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
       },
     ]
   }
+  renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
   <FlexContainer
@@ -1297,7 +529,6 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         guestsNumber={2}
         guestsText="guests"
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isShowingPlaceholder={false}
         key="The Cat House0"
         periodText="per month"
         pricePerPeriod="$28000"
@@ -1312,414 +543,9 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         propertyName="The Cat House"
         propertyType="Bed and breakfast"
         propertyUrl="/"
-        propertyUrlTarget="_self"
         ratingNumber={4.7}
       >
-        <Card
-          className="has-search-result"
-          href="/"
-          target="_self"
-        >
-          <a
-            className="ui card has-search-result"
-            href="/"
-            onClick={[Function]}
-            target="_self"
-          >
-            <FlexContainer
-              alignContent={null}
-              alignItems={null}
-              flexDirection={null}
-              flexWrap={null}
-              justifyContent={null}
-            >
-              <div
-                className="flex-container"
-                style={
-                  Object {
-                    "alignContent": null,
-                    "alignItems": null,
-                    "display": "flex",
-                    "flexDirection": null,
-                    "flexGrow": "1",
-                    "flexWrap": null,
-                    "height": "100%",
-                    "justifyContent": null,
-                  }
-                }
-              >
-                <withLazyLoad(ResponsiveImage)
-                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                  isFluid={true}
-                  isLazyLoaded={true}
-                >
-                  <LazyLoader
-                    componentProps={
-                      Object {
-                        "alternativeText": undefined,
-                        "isFluid": true,
-                        "isLazyLoaded": true,
-                        "placeholderImageUrl": undefined,
-                        "sizes": undefined,
-                        "srcSet": undefined,
-                      }
-                    }
-                    lazyComponent={[Function]}
-                    lazyProps={
-                      Object {
-                        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                      }
-                    }
-                  >
-                    <div />
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      isLazyLoaded={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
-                    >
-                      <figure
-                        className="responsive-image is-fluid"
-                      >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <div />
-                  </LazyLoader>
-                </withLazyLoad(ResponsiveImage)>
-                <Segment
-                  raised={true}
-                >
-                  <div
-                    className="ui raised segment"
-                  >
-                    <FlexContainer
-                      alignContent={null}
-                      alignItems="center"
-                      flexDirection="row"
-                      flexWrap={null}
-                      justifyContent={null}
-                    >
-                      <div
-                        className="flex-container"
-                        style={
-                          Object {
-                            "alignContent": null,
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "flexGrow": "1",
-                            "flexWrap": null,
-                            "height": "100%",
-                            "justifyContent": null,
-                          }
-                        }
-                      >
-                        <Paragraph
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            from
-                          </p>
-                        </Paragraph>
-                        <Heading
-                          className={null}
-                          hasMargin={true}
-                          isColorInverted={false}
-                          size="medium"
-                          textAlign={null}
-                        >
-                          <Header
-                            as="h3"
-                            className=""
-                            inverted={false}
-                            textAlign={null}
-                          >
-                            <h3
-                              className="ui header"
-                            >
-                              $28000
-                            </h3>
-                          </Header>
-                        </Heading>
-                      </div>
-                    </FlexContainer>
-                    <Label>
-                      <div
-                        className="ui label"
-                        onClick={[Function]}
-                      >
-                         
-                        per month
-                      </div>
-                    </Label>
-                  </div>
-                </Segment>
-              </div>
-            </FlexContainer>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        className=""
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          The Cat House
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </CardHeader>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    <FlexContainer
-                      alignContent={null}
-                      alignItems="center"
-                      flexDirection="row"
-                      flexWrap={null}
-                      justifyContent={null}
-                    >
-                      <div
-                        className="flex-container"
-                        style={
-                          Object {
-                            "alignContent": null,
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "flexGrow": "1",
-                            "flexWrap": null,
-                            "height": "100%",
-                            "justifyContent": null,
-                          }
-                        }
-                      >
-                        <Rating
-                          iconSize="tiny"
-                          isShowingNumeral={true}
-                          ratingNumber={4.7}
-                        >
-                          4.7
-                          <Rating
-                            clearable="auto"
-                            disabled={true}
-                            maxRating={5}
-                            rating={5}
-                            size="tiny"
-                          >
-                            <div
-                              className="ui tiny disabled rating"
-                              onMouseLeave={[Function]}
-                              role="radiogroup"
-                            >
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={1}
-                                aria-setsize={5}
-                                as="i"
-                                index={0}
-                                key="0"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={1}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={2}
-                                aria-setsize={5}
-                                as="i"
-                                index={1}
-                                key="1"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={2}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={3}
-                                aria-setsize={5}
-                                as="i"
-                                index={2}
-                                key="2"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={3}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={4}
-                                aria-setsize={5}
-                                as="i"
-                                index={3}
-                                key="3"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={4}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={true}
-                                aria-posinset={5}
-                                aria-setsize={5}
-                                as="i"
-                                index={4}
-                                key="4"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={true}
-                                  aria-posinset={5}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                            </div>
-                          </Rating>
-                        </Rating>
-                        <Paragraph
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            · Bed and breakfast
-                          </p>
-                        </Paragraph>
-                      </div>
-                    </FlexContainer>
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    2 guests · 2 bedrooms · 2 beds · 2 baths
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    Pool · Wifi · Washer · Kitchen
-                  </div>
-                </CardDescription>
-              </div>
-            </CardContent>
-          </a>
-        </Card>
+        <div />
       </PropertySearchResult>
       <PropertySearchResult
         bathsNumber={1}
@@ -1731,9 +557,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         guestsNumber={4}
         guestsText="guests"
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isShowingPlaceholder={false}
         key="Space Hub A-6751"
-        periodText=""
         pricePerPeriod="$1280"
         propertyAmenities={
           Array [
@@ -1746,371 +570,9 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         propertyName="Space Hub A-675"
         propertyType="Space Station"
         propertyUrl="/"
-        propertyUrlTarget="_self"
         ratingNumber={4.7}
       >
-        <Card
-          className="has-search-result"
-          href="/"
-          target="_self"
-        >
-          <a
-            className="ui card has-search-result"
-            href="/"
-            onClick={[Function]}
-            target="_self"
-          >
-            <FlexContainer
-              alignContent={null}
-              alignItems={null}
-              flexDirection={null}
-              flexWrap={null}
-              justifyContent={null}
-            >
-              <div
-                className="flex-container"
-                style={
-                  Object {
-                    "alignContent": null,
-                    "alignItems": null,
-                    "display": "flex",
-                    "flexDirection": null,
-                    "flexGrow": "1",
-                    "flexWrap": null,
-                    "height": "100%",
-                    "justifyContent": null,
-                  }
-                }
-              >
-                <withLazyLoad(ResponsiveImage)
-                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                  isFluid={true}
-                  isLazyLoaded={true}
-                >
-                  <LazyLoader
-                    componentProps={
-                      Object {
-                        "alternativeText": undefined,
-                        "isFluid": true,
-                        "isLazyLoaded": true,
-                        "placeholderImageUrl": undefined,
-                        "sizes": undefined,
-                        "srcSet": undefined,
-                      }
-                    }
-                    lazyComponent={[Function]}
-                    lazyProps={
-                      Object {
-                        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                      }
-                    }
-                  >
-                    <div />
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      isLazyLoaded={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
-                    >
-                      <figure
-                        className="responsive-image is-fluid"
-                      >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <div />
-                  </LazyLoader>
-                </withLazyLoad(ResponsiveImage)>
-                <Segment
-                  raised={true}
-                >
-                  <div
-                    className="ui raised segment"
-                  >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        className=""
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          $1280
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </Segment>
-              </div>
-            </FlexContainer>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        className=""
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          Space Hub A-675
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </CardHeader>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    <FlexContainer
-                      alignContent={null}
-                      alignItems="center"
-                      flexDirection="row"
-                      flexWrap={null}
-                      justifyContent={null}
-                    >
-                      <div
-                        className="flex-container"
-                        style={
-                          Object {
-                            "alignContent": null,
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "flexGrow": "1",
-                            "flexWrap": null,
-                            "height": "100%",
-                            "justifyContent": null,
-                          }
-                        }
-                      >
-                        <Rating
-                          iconSize="tiny"
-                          isShowingNumeral={true}
-                          ratingNumber={4.7}
-                        >
-                          4.7
-                          <Rating
-                            clearable="auto"
-                            disabled={true}
-                            maxRating={5}
-                            rating={5}
-                            size="tiny"
-                          >
-                            <div
-                              className="ui tiny disabled rating"
-                              onMouseLeave={[Function]}
-                              role="radiogroup"
-                            >
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={1}
-                                aria-setsize={5}
-                                as="i"
-                                index={0}
-                                key="0"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={1}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={2}
-                                aria-setsize={5}
-                                as="i"
-                                index={1}
-                                key="1"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={2}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={3}
-                                aria-setsize={5}
-                                as="i"
-                                index={2}
-                                key="2"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={3}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={4}
-                                aria-setsize={5}
-                                as="i"
-                                index={3}
-                                key="3"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={4}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={true}
-                                aria-posinset={5}
-                                aria-setsize={5}
-                                as="i"
-                                index={4}
-                                key="4"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={true}
-                                  aria-posinset={5}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                            </div>
-                          </Rating>
-                        </Rating>
-                        <Paragraph
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            · Space Station
-                          </p>
-                        </Paragraph>
-                      </div>
-                    </FlexContainer>
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    4 guests · 2 bedrooms · 3 beds · 1 baths
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    Pool · Wifi · Washer · Kitchen
-                  </div>
-                </CardDescription>
-              </div>
-            </CardContent>
-          </a>
-        </Card>
+        <div />
       </PropertySearchResult>
     </div>
   </FlexContainer>
@@ -2124,6 +586,7 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
   dropdownOptions={null}
   isShowingPlaceholder={true}
   propertySearchResults={Array []}
+  renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
   <Divider
@@ -2198,7 +661,6 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         imageUrl=""
         isShowingPlaceholder={true}
         key="placeholder0"
-        periodText=""
         placeholderName="placeholder"
         pricePerPeriod=""
         propertyAmenities={
@@ -2210,82 +672,9 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         propertyName=""
         propertyType=""
         propertyUrl=""
-        propertyUrlTarget="_self"
         ratingNumber={0}
       >
-        <Card
-          className="has-search-result"
-          href=""
-          target="_self"
-        >
-          <div
-            className="ui card has-search-result"
-            href=""
-            onClick={[Function]}
-            target="_self"
-          >
-            <BlockPlaceholder
-              isFluid={false}
-              isRectangular={true}
-              isSquare={false}
-            >
-              <div
-                className="placeholder block rectangle"
-              />
-            </BlockPlaceholder>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="small"
-                    >
-                      <Divider
-                        className="is-size-small"
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider is-size-small"
-                        />
-                      </Divider>
-                    </Divider>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="medium"
-                    >
-                      <div
-                        className="placeholder text medium fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                  </div>
-                </CardHeader>
-              </div>
-            </CardContent>
-          </div>
-        </Card>
+        <div />
       </PropertySearchResult>
       <PropertySearchResult
         bathsNumber={0}
@@ -2299,7 +688,6 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         imageUrl=""
         isShowingPlaceholder={true}
         key="placeholder1"
-        periodText=""
         placeholderName="placeholder"
         pricePerPeriod=""
         propertyAmenities={
@@ -2311,82 +699,9 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         propertyName=""
         propertyType=""
         propertyUrl=""
-        propertyUrlTarget="_self"
         ratingNumber={0}
       >
-        <Card
-          className="has-search-result"
-          href=""
-          target="_self"
-        >
-          <div
-            className="ui card has-search-result"
-            href=""
-            onClick={[Function]}
-            target="_self"
-          >
-            <BlockPlaceholder
-              isFluid={false}
-              isRectangular={true}
-              isSquare={false}
-            >
-              <div
-                className="placeholder block rectangle"
-              />
-            </BlockPlaceholder>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="small"
-                    >
-                      <Divider
-                        className="is-size-small"
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider is-size-small"
-                        />
-                      </Divider>
-                    </Divider>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="medium"
-                    >
-                      <div
-                        className="placeholder text medium fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                  </div>
-                </CardHeader>
-              </div>
-            </CardContent>
-          </div>
-        </Card>
+        <div />
       </PropertySearchResult>
       <PropertySearchResult
         bathsNumber={0}
@@ -2400,7 +715,6 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         imageUrl=""
         isShowingPlaceholder={true}
         key="placeholder2"
-        periodText=""
         placeholderName="placeholder"
         pricePerPeriod=""
         propertyAmenities={
@@ -2412,82 +726,9 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         propertyName=""
         propertyType=""
         propertyUrl=""
-        propertyUrlTarget="_self"
         ratingNumber={0}
       >
-        <Card
-          className="has-search-result"
-          href=""
-          target="_self"
-        >
-          <div
-            className="ui card has-search-result"
-            href=""
-            onClick={[Function]}
-            target="_self"
-          >
-            <BlockPlaceholder
-              isFluid={false}
-              isRectangular={true}
-              isSquare={false}
-            >
-              <div
-                className="placeholder block rectangle"
-              />
-            </BlockPlaceholder>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="small"
-                    >
-                      <Divider
-                        className="is-size-small"
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider is-size-small"
-                        />
-                      </Divider>
-                    </Divider>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="medium"
-                    >
-                      <div
-                        className="placeholder text medium fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                  </div>
-                </CardHeader>
-              </div>
-            </CardContent>
-          </div>
-        </Card>
+        <div />
       </PropertySearchResult>
       <PropertySearchResult
         bathsNumber={0}
@@ -2501,7 +742,6 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         imageUrl=""
         isShowingPlaceholder={true}
         key="placeholder3"
-        periodText=""
         placeholderName="placeholder"
         pricePerPeriod=""
         propertyAmenities={
@@ -2513,82 +753,9 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         propertyName=""
         propertyType=""
         propertyUrl=""
-        propertyUrlTarget="_self"
         ratingNumber={0}
       >
-        <Card
-          className="has-search-result"
-          href=""
-          target="_self"
-        >
-          <div
-            className="ui card has-search-result"
-            href=""
-            onClick={[Function]}
-            target="_self"
-          >
-            <BlockPlaceholder
-              isFluid={false}
-              isRectangular={true}
-              isSquare={false}
-            >
-              <div
-                className="placeholder block rectangle"
-              />
-            </BlockPlaceholder>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="small"
-                    >
-                      <Divider
-                        className="is-size-small"
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider is-size-small"
-                        />
-                      </Divider>
-                    </Divider>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="medium"
-                    >
-                      <div
-                        className="placeholder text medium fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                  </div>
-                </CardHeader>
-              </div>
-            </CardContent>
-          </div>
-        </Card>
+        <div />
       </PropertySearchResult>
       <PropertySearchResult
         bathsNumber={0}
@@ -2602,7 +769,6 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         imageUrl=""
         isShowingPlaceholder={true}
         key="placeholder4"
-        periodText=""
         placeholderName="placeholder"
         pricePerPeriod=""
         propertyAmenities={
@@ -2614,82 +780,9 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         propertyName=""
         propertyType=""
         propertyUrl=""
-        propertyUrlTarget="_self"
         ratingNumber={0}
       >
-        <Card
-          className="has-search-result"
-          href=""
-          target="_self"
-        >
-          <div
-            className="ui card has-search-result"
-            href=""
-            onClick={[Function]}
-            target="_self"
-          >
-            <BlockPlaceholder
-              isFluid={false}
-              isRectangular={true}
-              isSquare={false}
-            >
-              <div
-                className="placeholder block rectangle"
-              />
-            </BlockPlaceholder>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="small"
-                    >
-                      <Divider
-                        className="is-size-small"
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider is-size-small"
-                        />
-                      </Divider>
-                    </Divider>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="medium"
-                    >
-                      <div
-                        className="placeholder text medium fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                  </div>
-                </CardHeader>
-              </div>
-            </CardContent>
-          </div>
-        </Card>
+        <div />
       </PropertySearchResult>
       <PropertySearchResult
         bathsNumber={0}
@@ -2703,7 +796,6 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         imageUrl=""
         isShowingPlaceholder={true}
         key="placeholder5"
-        periodText=""
         placeholderName="placeholder"
         pricePerPeriod=""
         propertyAmenities={
@@ -2715,83 +807,1022 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
         propertyName=""
         propertyType=""
         propertyUrl=""
-        propertyUrlTarget="_self"
         ratingNumber={0}
       >
-        <Card
-          className="has-search-result"
-          href=""
-          target="_self"
-        >
-          <div
-            className="ui card has-search-result"
-            href=""
-            onClick={[Function]}
-            target="_self"
-          >
-            <BlockPlaceholder
-              isFluid={false}
-              isRectangular={true}
-              isSquare={false}
-            >
-              <div
-                className="placeholder block rectangle"
-              />
-            </BlockPlaceholder>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="small"
-                    >
-                      <Divider
-                        className="is-size-small"
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider is-size-small"
-                        />
-                      </Divider>
-                    </Divider>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="medium"
-                    >
-                      <div
-                        className="placeholder text medium fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                    <TextPlaceholder
-                      isFluid={true}
-                      length="long"
-                    >
-                      <div
-                        className="placeholder text long fluid"
-                      />
-                    </TextPlaceholder>
-                  </div>
-                </CardHeader>
-              </div>
-            </CardContent>
-          </div>
-        </Card>
+        <div />
       </PropertySearchResult>
+    </div>
+  </FlexContainer>
+</PropertySearchResultList>
+`;
+
+exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` > 12  should render the right structure 1`] = `
+<PropertySearchResultList
+  dropdownLabel={null}
+  dropdownOnChange={[Function]}
+  dropdownOptions={null}
+  isShowingPlaceholder={false}
+  propertySearchResults={
+    Array [
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+    ]
+  }
+  renderShowingResultsText={[Function]}
+  resultsCountText="results"
+>
+  <FlexContainer
+    alignContent={null}
+    alignItems="center"
+    flexDirection={null}
+    flexWrap={null}
+    justifyContent="space-between"
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": null,
+          "height": "100%",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Heading
+        className={null}
+        hasMargin={true}
+        isColorInverted={false}
+        size="small"
+        textAlign={null}
+      >
+        <Header
+          as="h4"
+          className=""
+          inverted={false}
+          textAlign={null}
+        >
+          <h4
+            className="ui header"
+          >
+            13 results
+          </h4>
+        </Header>
+      </Heading>
+    </div>
+  </FlexContainer>
+  <Divider
+    className=""
+    hasLine={false}
+    size="small"
+  >
+    <Divider
+      className="is-size-small"
+      hidden={true}
+      section={false}
+    >
+      <div
+        className="ui hidden divider is-size-small"
+      />
+    </Divider>
+  </Divider>
+  <FlexContainer
+    alignContent={null}
+    alignItems={null}
+    flexDirection={null}
+    flexWrap="wrap"
+    justifyContent="center"
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": null,
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": "wrap",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House0"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House1"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House2"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House3"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House4"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House5"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House6"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House7"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House8"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House9"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House10"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House11"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+    </div>
+  </FlexContainer>
+  <FlexContainer
+    alignContent={null}
+    alignItems="center"
+    flexDirection="column"
+    flexWrap="wrap"
+    justifyContent={null}
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "column",
+          "flexGrow": "1",
+          "flexWrap": "wrap",
+          "height": "100%",
+          "justifyContent": null,
+        }
+      }
+    >
+      <Pagination
+        isShowingPageNumbers={true}
+        onPageChange={[Function]}
+        startingPage={1}
+        totalPages={2}
+      >
+        <Pagination
+          aria-label="Pagination Navigation"
+          boundaryRange={1}
+          className="has-page-numbers"
+          defaultActivePage={1}
+          ellipsisItem="..."
+          firstItem={null}
+          lastItem={null}
+          nextItem={
+            <Button
+              as="button"
+              basic={true}
+              circular={true}
+              className="has-outline"
+              content={null}
+            >
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="chevron right"
+                path={null}
+                size={null}
+              />
+            </Button>
+          }
+          onPageChange={[Function]}
+          pageItem={Object {}}
+          prevItem={
+            <Button
+              as="button"
+              basic={true}
+              circular={true}
+              className="has-outline"
+              content={null}
+            >
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="chevron left"
+                path={null}
+                size={null}
+              />
+            </Button>
+          }
+          secondary={true}
+          siblingRange={0}
+          totalPages={2}
+        >
+          <Menu
+            aria-label="Pagination Navigation"
+            className="has-page-numbers"
+            pagination={true}
+            role="navigation"
+            secondary={true}
+          >
+            <div
+              aria-label="Pagination Navigation"
+              className="ui pagination secondary has-page-numbers menu"
+              role="navigation"
+            >
+              <Button
+                active={false}
+                as="button"
+                basic={true}
+                circular={true}
+                className="has-outline"
+                content={null}
+                key="prevItem-1"
+                onClick={[Function]}
+                type="prevItem"
+                value={1}
+              >
+                <button
+                  className="ui basic circular button has-outline"
+                  onClick={[Function]}
+                  role="button"
+                  type="prevItem"
+                  value={1}
+                >
+                  <Icon
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="chevron left"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </Icon>
+                </button>
+              </Button>
+              <PaginationItem
+                active={true}
+                content={1}
+                key="pageItem-1"
+                onClick={[Function]}
+                type="pageItem"
+                value={1}
+              >
+                <MenuItem
+                  active={true}
+                  aria-current={true}
+                  content={1}
+                  disabled={false}
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                  type="pageItem"
+                  value={1}
+                >
+                  <a
+                    aria-current={true}
+                    className="active item"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    tabIndex={0}
+                    type="pageItem"
+                    value={1}
+                  >
+                    1
+                  </a>
+                </MenuItem>
+              </PaginationItem>
+              <PaginationItem
+                active={false}
+                content={2}
+                key="pageItem-2"
+                onClick={[Function]}
+                type="pageItem"
+                value={2}
+              >
+                <MenuItem
+                  active={false}
+                  aria-current={false}
+                  content={2}
+                  disabled={false}
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                  type="pageItem"
+                  value={2}
+                >
+                  <a
+                    aria-current={false}
+                    className="item"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    tabIndex={0}
+                    type="pageItem"
+                    value={2}
+                  >
+                    2
+                  </a>
+                </MenuItem>
+              </PaginationItem>
+              <Button
+                active={false}
+                as="button"
+                basic={true}
+                circular={true}
+                className="has-outline"
+                content={null}
+                key="nextItem-2"
+                onClick={[Function]}
+                type="nextItem"
+                value={2}
+              >
+                <button
+                  className="ui basic circular button has-outline"
+                  onClick={[Function]}
+                  role="button"
+                  type="nextItem"
+                  value={2}
+                >
+                  <Icon
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="chevron right"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </Icon>
+                </button>
+              </Button>
+            </div>
+          </Menu>
+        </Pagination>
+      </Pagination>
+      <Paragraph
+        size="medium"
+        weight={null}
+      >
+        <p
+          className=""
+        >
+          Showing 1 - 12 of 13 places.
+        </p>
+      </Paragraph>
     </div>
   </FlexContainer>
 </PropertySearchResultList>
@@ -2852,6 +1883,7 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
       },
     ]
   }
+  renderShowingResultsText={[Function]}
   resultsCountText="My god I love Cliff Richard"
 >
   <FlexContainer
@@ -2945,7 +1977,6 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         guestsNumber={2}
         guestsText="guests"
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isShowingPlaceholder={false}
         key="The Cat House0"
         periodText="per month"
         pricePerPeriod="$28000"
@@ -2960,414 +1991,9 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         propertyName="The Cat House"
         propertyType="Bed and breakfast"
         propertyUrl="/"
-        propertyUrlTarget="_self"
         ratingNumber={4.7}
       >
-        <Card
-          className="has-search-result"
-          href="/"
-          target="_self"
-        >
-          <a
-            className="ui card has-search-result"
-            href="/"
-            onClick={[Function]}
-            target="_self"
-          >
-            <FlexContainer
-              alignContent={null}
-              alignItems={null}
-              flexDirection={null}
-              flexWrap={null}
-              justifyContent={null}
-            >
-              <div
-                className="flex-container"
-                style={
-                  Object {
-                    "alignContent": null,
-                    "alignItems": null,
-                    "display": "flex",
-                    "flexDirection": null,
-                    "flexGrow": "1",
-                    "flexWrap": null,
-                    "height": "100%",
-                    "justifyContent": null,
-                  }
-                }
-              >
-                <withLazyLoad(ResponsiveImage)
-                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                  isFluid={true}
-                  isLazyLoaded={true}
-                >
-                  <LazyLoader
-                    componentProps={
-                      Object {
-                        "alternativeText": undefined,
-                        "isFluid": true,
-                        "isLazyLoaded": true,
-                        "placeholderImageUrl": undefined,
-                        "sizes": undefined,
-                        "srcSet": undefined,
-                      }
-                    }
-                    lazyComponent={[Function]}
-                    lazyProps={
-                      Object {
-                        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                      }
-                    }
-                  >
-                    <div />
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      isLazyLoaded={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
-                    >
-                      <figure
-                        className="responsive-image is-fluid"
-                      >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <div />
-                  </LazyLoader>
-                </withLazyLoad(ResponsiveImage)>
-                <Segment
-                  raised={true}
-                >
-                  <div
-                    className="ui raised segment"
-                  >
-                    <FlexContainer
-                      alignContent={null}
-                      alignItems="center"
-                      flexDirection="row"
-                      flexWrap={null}
-                      justifyContent={null}
-                    >
-                      <div
-                        className="flex-container"
-                        style={
-                          Object {
-                            "alignContent": null,
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "flexGrow": "1",
-                            "flexWrap": null,
-                            "height": "100%",
-                            "justifyContent": null,
-                          }
-                        }
-                      >
-                        <Paragraph
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            from
-                          </p>
-                        </Paragraph>
-                        <Heading
-                          className={null}
-                          hasMargin={true}
-                          isColorInverted={false}
-                          size="medium"
-                          textAlign={null}
-                        >
-                          <Header
-                            as="h3"
-                            className=""
-                            inverted={false}
-                            textAlign={null}
-                          >
-                            <h3
-                              className="ui header"
-                            >
-                              $28000
-                            </h3>
-                          </Header>
-                        </Heading>
-                      </div>
-                    </FlexContainer>
-                    <Label>
-                      <div
-                        className="ui label"
-                        onClick={[Function]}
-                      >
-                         
-                        per month
-                      </div>
-                    </Label>
-                  </div>
-                </Segment>
-              </div>
-            </FlexContainer>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        className=""
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          The Cat House
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </CardHeader>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    <FlexContainer
-                      alignContent={null}
-                      alignItems="center"
-                      flexDirection="row"
-                      flexWrap={null}
-                      justifyContent={null}
-                    >
-                      <div
-                        className="flex-container"
-                        style={
-                          Object {
-                            "alignContent": null,
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "flexGrow": "1",
-                            "flexWrap": null,
-                            "height": "100%",
-                            "justifyContent": null,
-                          }
-                        }
-                      >
-                        <Rating
-                          iconSize="tiny"
-                          isShowingNumeral={true}
-                          ratingNumber={4.7}
-                        >
-                          4.7
-                          <Rating
-                            clearable="auto"
-                            disabled={true}
-                            maxRating={5}
-                            rating={5}
-                            size="tiny"
-                          >
-                            <div
-                              className="ui tiny disabled rating"
-                              onMouseLeave={[Function]}
-                              role="radiogroup"
-                            >
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={1}
-                                aria-setsize={5}
-                                as="i"
-                                index={0}
-                                key="0"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={1}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={2}
-                                aria-setsize={5}
-                                as="i"
-                                index={1}
-                                key="1"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={2}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={3}
-                                aria-setsize={5}
-                                as="i"
-                                index={2}
-                                key="2"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={3}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={4}
-                                aria-setsize={5}
-                                as="i"
-                                index={3}
-                                key="3"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={4}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={true}
-                                aria-posinset={5}
-                                aria-setsize={5}
-                                as="i"
-                                index={4}
-                                key="4"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={true}
-                                  aria-posinset={5}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                            </div>
-                          </Rating>
-                        </Rating>
-                        <Paragraph
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            · Bed and breakfast
-                          </p>
-                        </Paragraph>
-                      </div>
-                    </FlexContainer>
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    2 guests · 2 bedrooms · 2 beds · 2 baths
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    Pool · Wifi · Washer · Kitchen
-                  </div>
-                </CardDescription>
-              </div>
-            </CardContent>
-          </a>
-        </Card>
+        <div />
       </PropertySearchResult>
       <PropertySearchResult
         bathsNumber={1}
@@ -3379,9 +2005,7 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         guestsNumber={4}
         guestsText="guests"
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isShowingPlaceholder={false}
         key="Space Hub A-6751"
-        periodText=""
         pricePerPeriod="$1280"
         propertyAmenities={
           Array [
@@ -3394,371 +2018,9 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         propertyName="Space Hub A-675"
         propertyType="Space Station"
         propertyUrl="/"
-        propertyUrlTarget="_self"
         ratingNumber={4.7}
       >
-        <Card
-          className="has-search-result"
-          href="/"
-          target="_self"
-        >
-          <a
-            className="ui card has-search-result"
-            href="/"
-            onClick={[Function]}
-            target="_self"
-          >
-            <FlexContainer
-              alignContent={null}
-              alignItems={null}
-              flexDirection={null}
-              flexWrap={null}
-              justifyContent={null}
-            >
-              <div
-                className="flex-container"
-                style={
-                  Object {
-                    "alignContent": null,
-                    "alignItems": null,
-                    "display": "flex",
-                    "flexDirection": null,
-                    "flexGrow": "1",
-                    "flexWrap": null,
-                    "height": "100%",
-                    "justifyContent": null,
-                  }
-                }
-              >
-                <withLazyLoad(ResponsiveImage)
-                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                  isFluid={true}
-                  isLazyLoaded={true}
-                >
-                  <LazyLoader
-                    componentProps={
-                      Object {
-                        "alternativeText": undefined,
-                        "isFluid": true,
-                        "isLazyLoaded": true,
-                        "placeholderImageUrl": undefined,
-                        "sizes": undefined,
-                        "srcSet": undefined,
-                      }
-                    }
-                    lazyComponent={[Function]}
-                    lazyProps={
-                      Object {
-                        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                      }
-                    }
-                  >
-                    <div />
-                    <ResponsiveImage
-                      alternativeText="Image Widget"
-                      hasRoundedCorners={false}
-                      imageHeight={null}
-                      imageNotFoundLabelText="Image not found!"
-                      imageTitle="Image Title"
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      imageWidth={null}
-                      isAvatar={false}
-                      isCircular={false}
-                      isFluid={true}
-                      isLazyLoaded={true}
-                      label={null}
-                      sizes={null}
-                      srcSet={null}
-                    >
-                      <figure
-                        className="responsive-image is-fluid"
-                      >
-                        <Image
-                          alt="Image Widget"
-                          as="img"
-                          avatar={false}
-                          fluid={true}
-                          onLoad={[Function]}
-                          sizes={null}
-                          src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                          srcSet={null}
-                          title="Image Title"
-                          ui={true}
-                        >
-                          <img
-                            alt="Image Widget"
-                            className="ui fluid image"
-                            onLoad={[Function]}
-                            sizes={null}
-                            src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                            srcSet={null}
-                            title="Image Title"
-                          />
-                        </Image>
-                      </figure>
-                    </ResponsiveImage>
-                    <div />
-                  </LazyLoader>
-                </withLazyLoad(ResponsiveImage)>
-                <Segment
-                  raised={true}
-                >
-                  <div
-                    className="ui raised segment"
-                  >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        className=""
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          $1280
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </Segment>
-              </div>
-            </FlexContainer>
-            <CardContent>
-              <div
-                className="content"
-              >
-                <CardHeader>
-                  <div
-                    className="header"
-                  >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
-                    >
-                      <Header
-                        as="h3"
-                        className=""
-                        inverted={false}
-                        textAlign={null}
-                      >
-                        <h3
-                          className="ui header"
-                        >
-                          Space Hub A-675
-                        </h3>
-                      </Header>
-                    </Heading>
-                  </div>
-                </CardHeader>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    <FlexContainer
-                      alignContent={null}
-                      alignItems="center"
-                      flexDirection="row"
-                      flexWrap={null}
-                      justifyContent={null}
-                    >
-                      <div
-                        className="flex-container"
-                        style={
-                          Object {
-                            "alignContent": null,
-                            "alignItems": "center",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "flexGrow": "1",
-                            "flexWrap": null,
-                            "height": "100%",
-                            "justifyContent": null,
-                          }
-                        }
-                      >
-                        <Rating
-                          iconSize="tiny"
-                          isShowingNumeral={true}
-                          ratingNumber={4.7}
-                        >
-                          4.7
-                          <Rating
-                            clearable="auto"
-                            disabled={true}
-                            maxRating={5}
-                            rating={5}
-                            size="tiny"
-                          >
-                            <div
-                              className="ui tiny disabled rating"
-                              onMouseLeave={[Function]}
-                              role="radiogroup"
-                            >
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={1}
-                                aria-setsize={5}
-                                as="i"
-                                index={0}
-                                key="0"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={1}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={2}
-                                aria-setsize={5}
-                                as="i"
-                                index={1}
-                                key="1"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={2}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={3}
-                                aria-setsize={5}
-                                as="i"
-                                index={2}
-                                key="2"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={3}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={false}
-                                aria-posinset={4}
-                                aria-setsize={5}
-                                as="i"
-                                index={3}
-                                key="3"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={false}
-                                  aria-posinset={4}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                              <RatingIcon
-                                active={true}
-                                aria-checked={true}
-                                aria-posinset={5}
-                                aria-setsize={5}
-                                as="i"
-                                index={4}
-                                key="4"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                                selected={false}
-                              >
-                                <i
-                                  aria-checked={true}
-                                  aria-posinset={5}
-                                  aria-setsize={5}
-                                  className="active icon"
-                                  onClick={[Function]}
-                                  onKeyUp={[Function]}
-                                  onMouseEnter={[Function]}
-                                  role="radio"
-                                  tabIndex={0}
-                                />
-                              </RatingIcon>
-                            </div>
-                          </Rating>
-                        </Rating>
-                        <Paragraph
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            · Space Station
-                          </p>
-                        </Paragraph>
-                      </div>
-                    </FlexContainer>
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    4 guests · 2 bedrooms · 3 beds · 1 baths
-                  </div>
-                </CardDescription>
-                <CardDescription>
-                  <div
-                    className="description"
-                  >
-                    Pool · Wifi · Washer · Kitchen
-                  </div>
-                </CardDescription>
-              </div>
-            </CardContent>
-          </a>
-        </Card>
+        <div />
       </PropertySearchResult>
     </div>
   </FlexContainer>
