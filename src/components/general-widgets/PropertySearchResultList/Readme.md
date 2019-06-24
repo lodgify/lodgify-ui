@@ -58,6 +58,19 @@ const { propertySearchResults } = require('./mock-data/mock-data');
 />
 ```
 
+#### Message
+
+```jsx
+const { propertySearchResults } = require('./mock-data/mock-data');
+
+<PropertySearchResultList
+  messageButtonOnClick={console.log}
+  messageButtonText="You can click me"
+  messageText="Found you a whole bunch of properties"
+  propertySearchResults={propertySearchResults}
+/>
+```
+
 ### States
 
 #### Showing placeholder

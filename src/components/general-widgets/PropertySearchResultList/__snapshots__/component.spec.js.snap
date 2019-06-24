@@ -6,6 +6,9 @@ exports[`<PropertySearchResultList /> by default should render the right structu
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={false}
+  messageButtonOnClick={[Function]}
+  messageButtonText={null}
+  messageText={null}
   propertySearchResults={
     Array [
       Object {
@@ -214,6 +217,9 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
   }
   dropdownValue="price"
   isShowingPlaceholder={false}
+  messageButtonOnClick={[Function]}
+  messageButtonText={null}
+  messageText={null}
   propertySearchResults={
     Array [
       Object {
@@ -585,6 +591,9 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={true}
+  messageButtonOnClick={[Function]}
+  messageButtonText={null}
+  messageText={null}
   propertySearchResults={Array []}
   renderShowingResultsText={[Function]}
   resultsCountText="results"
@@ -816,12 +825,264 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
 </PropertySearchResultList>
 `;
 
+exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should render the right structure 1`] = `
+<PropertySearchResultList
+  dropdownLabel={null}
+  dropdownOnChange={[Function]}
+  dropdownOptions={null}
+  isShowingPlaceholder={false}
+  messageButtonOnClick={[Function]}
+  messageButtonText="Some button text"
+  messageText="Some message text"
+  propertySearchResults={
+    Array [
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "periodText": "per month",
+        "pricePerPeriod": "$28000",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 1,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 3,
+        "bedsText": "beds",
+        "guestsNumber": 4,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "pricePerPeriod": "$1280",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "Space Hub A-675",
+        "propertyType": "Space Station",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+    ]
+  }
+  renderShowingResultsText={[Function]}
+  resultsCountText="results"
+>
+  <FlexContainer
+    alignContent={null}
+    alignItems="center"
+    flexDirection={null}
+    flexWrap={null}
+    justifyContent="space-between"
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": null,
+          "height": "100%",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Heading
+        className={null}
+        hasMargin={true}
+        isColorInverted={false}
+        size="small"
+        textAlign={null}
+      >
+        <Header
+          as="h4"
+          className=""
+          inverted={false}
+          textAlign={null}
+        >
+          <h4
+            className="ui header"
+          >
+            2 results
+          </h4>
+        </Header>
+      </Heading>
+    </div>
+  </FlexContainer>
+  <Message>
+    <Message
+      className="padded"
+    >
+      <div
+        className="ui message padded"
+      >
+        <FlexContainer
+          alignContent={null}
+          alignItems="center"
+          flexDirection={null}
+          flexWrap={null}
+          justifyContent="space-between"
+        >
+          <div
+            className="flex-container"
+            style={
+              Object {
+                "alignContent": null,
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": null,
+                "flexGrow": "1",
+                "flexWrap": null,
+                "height": "100%",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            Some message text
+            <Link
+              href={null}
+              isPositionedRight={false}
+              onClick={[Function]}
+              willOpenInNewTab={false}
+            >
+              <Button
+                as={null}
+                basic={true}
+                floated="left"
+                href={null}
+                onClick={[Function]}
+                target="_self"
+                type="button"
+              >
+                <button
+                  className="ui basic left floated button"
+                  href={null}
+                  onClick={[Function]}
+                  role="button"
+                  target="_self"
+                  type="button"
+                >
+                  Some button text
+                </button>
+              </Button>
+            </Link>
+          </div>
+        </FlexContainer>
+      </div>
+    </Message>
+  </Message>
+  <FlexContainer
+    alignContent={null}
+    alignItems={null}
+    flexDirection={null}
+    flexWrap="wrap"
+    justifyContent="center"
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": null,
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": "wrap",
+          "height": "100%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <PropertySearchResult
+        bathsNumber={2}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={2}
+        bedsText="beds"
+        guestsNumber={2}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="The Cat House0"
+        periodText="per month"
+        pricePerPeriod="$28000"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="The Cat House"
+        propertyType="Bed and breakfast"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+      <PropertySearchResult
+        bathsNumber={1}
+        bathsText="baths"
+        bedroomsNumber={2}
+        bedroomsText="bedrooms"
+        bedsNumber={3}
+        bedsText="beds"
+        guestsNumber={4}
+        guestsText="guests"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        key="Space Hub A-6751"
+        pricePerPeriod="$1280"
+        propertyAmenities={
+          Array [
+            "Pool",
+            "Wifi",
+            "Washer",
+            "Kitchen",
+          ]
+        }
+        propertyName="Space Hub A-675"
+        propertyType="Space Station"
+        propertyUrl="/"
+        ratingNumber={4.7}
+      >
+        <div />
+      </PropertySearchResult>
+    </div>
+  </FlexContainer>
+</PropertySearchResultList>
+`;
+
 exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` > 12  should render the right structure 1`] = `
 <PropertySearchResultList
   dropdownLabel={null}
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={false}
+  messageButtonOnClick={[Function]}
+  messageButtonText={null}
+  messageText={null}
   propertySearchResults={
     Array [
       Object {
@@ -1834,6 +2095,9 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={false}
+  messageButtonOnClick={[Function]}
+  messageButtonText={null}
+  messageText={null}
   propertySearchResults={
     Array [
       Object {

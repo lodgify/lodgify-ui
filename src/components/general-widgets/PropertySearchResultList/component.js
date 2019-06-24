@@ -1,6 +1,8 @@
 import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
+import { Message } from 'elements/Message';
+import { Link } from 'elements/Link';
 import { Divider } from 'elements/Divider';
 import { TextPlaceholder } from 'elements/TextPlaceholder';
 import { Pagination } from 'elements/Pagination';
@@ -50,6 +52,9 @@ export class Component extends PureComponent {
       dropdownOptions,
       dropdownValue,
       isShowingPlaceholder,
+      messageButtonOnClick,
+      messageButtonText,
+      messageText,
       propertySearchResults,
       resultsCountText,
       renderShowingResultsText,
@@ -93,7 +98,16 @@ export class Component extends PureComponent {
             />
           )}
         </FlexContainer>
-        <Divider size="small" />
+        {messageText ? (
+          <Message>
+            <FlexContainer alignItems="center" justifyContent="space-between">
+              {messageText}
+              <Link onClick={messageButtonOnClick}>{messageButtonText}</Link>
+            </FlexContainer>
+          </Message>
+        ) : (
+          <Divider size="small" />
+        )}
         <FlexContainer flexWrap="wrap" justifyContent="center">
           {propertySearchResultsToDisplay.map((propertySearchResult, index) => (
             <PropertySearchResult
@@ -140,6 +154,9 @@ Component.defaultProps = {
   dropdownOnChange: Function.prototype,
   dropdownOptions: null,
   dropdownValue: undefined,
+  messageButtonOnClick: Function.prototype,
+  messageButtonText: null,
+  messageText: null,
   propertySearchResults: [],
   resultsCountText: RESULTS,
   isShowingPlaceholder: false,
@@ -175,6 +192,12 @@ Component.propTypes = {
   ]),
   /** Is the component showing placeholders to reserve space for content which will appear. */
   isShowingPlaceholder: PropTypes.bool,
+  /** Function called when the clickable button in the message is clicked. */
+  messageButtonOnClick: PropTypes.func,
+  /** Text to show as a clickable button in the message above the search results. */
+  messageButtonText: PropTypes.string,
+  /** Text to show as a message above the search results. */
+  messageText: PropTypes.string,
   /** An array of [`PropertySearchResult`](#/PropertySearchResult) props objects. */
   propertySearchResults: PropTypes.arrayOf(PropTypes.object),
   /** The text to display alongside the results count. */

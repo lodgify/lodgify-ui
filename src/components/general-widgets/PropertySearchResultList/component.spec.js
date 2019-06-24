@@ -86,6 +86,17 @@ describe('<PropertySearchResultList />', () => {
     });
   });
 
+  describe('if `props.messageText` is passed', () => {
+    it('should render the right structure', () => {
+      const actual = getPropertySearchResultList({
+        messageButtonText: 'Some button text',
+        messageText: 'Some message text',
+      });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   describe('this.handleOnPageChange', () => {
     it('should call `setState` with the right arguments', () => {
       const activePage = 1;
