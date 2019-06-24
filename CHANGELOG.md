@@ -1,3 +1,11 @@
+# [1.208.0](https://github.com/lodgify/lodgify-ui/compare/v1.207.0...v1.208.0) (2019-06-24)
+
+
+### Features
+
+* **Sidebar:** add styles ([c25ee54](https://github.com/lodgify/lodgify-ui/commit/c25ee54))
+* **Sidebar:** expose new component with examples and tests ([a090a12](https://github.com/lodgify/lodgify-ui/commit/a090a12))
+
 # [1.207.0](https://github.com/lodgify/lodgify-ui/compare/v1.206.0...v1.207.0) (2019-06-24)
 
 
