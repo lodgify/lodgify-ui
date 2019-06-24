@@ -1,3 +1,9 @@
+export const FIRST_ITEM_OF_PAGE_NUMBER_PLACEHOLDER =
+  '{firstItemOfPageNumberPlaceholder}';
+export const LAST_ITEM_OF_PAGE_NUMBER_PLACEHOLDER =
+  '{lastItemOfPageNumberPlaceholder}';
+export const TOTAL_ITEM_NUMBER_PLACEHOLDER = '{totalItemNumberPlaceholder}';
+
 export const ACCEPT = 'Accept';
 export const ACCEPT_PRIVACY_POLICY = 'I accept the privacy policy.';
 export const ADD_A_REVIEW = 'Add a Review';
@@ -63,6 +69,7 @@ export const SAVE_UP_TO = 'Save up to';
 export const SEARCH = 'Search';
 export const SEND = 'Send';
 export const SEND_RESET = 'Send reset';
+export const SHOWING_NUMBER_OF_PLACES = `Showing ${FIRST_ITEM_OF_PAGE_NUMBER_PLACEHOLDER} - ${LAST_ITEM_OF_PAGE_NUMBER_PLACEHOLDER} of ${TOTAL_ITEM_NUMBER_PLACEHOLDER} places.`;
 export const SIGN_UP = 'Sign up';
 export const SLEEPING_ARRANGEMENTS = 'Sleeping arrangements';
 export const SUBMIT_REVIEW = 'Submit a review';
