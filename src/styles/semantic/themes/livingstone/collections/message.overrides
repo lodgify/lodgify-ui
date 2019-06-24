@@ -2,6 +2,15 @@
             Message
 *******************************/
 
+.ui.message {
+  background: @themeActionLighterColorDefault;
+  background: var(@themeActionLighterColorIdentifier, @themeActionLighterColorDefault);
+
+  &.padded {
+    padding: @paddedPadding;
+  }
+}
+
 /*--------------
      Content
 ---------------*/
