@@ -1,3 +1,17 @@
+# [1.209.0](https://github.com/lodgify/lodgify-ui/compare/v1.208.0...v1.209.0) (2019-06-24)
+
+
+### Bug Fixes
+
+* **Card:** fix vertical alignment of populated and placeholder cards ([7f94da0](https://github.com/lodgify/lodgify-ui/commit/7f94da0))
+* **HTML:** scroll overflowing children ([dc306f3](https://github.com/lodgify/lodgify-ui/commit/dc306f3))
+
+
+### Features
+
+* **Message:** expose component with tests, example and styles ([d6cbaf8](https://github.com/lodgify/lodgify-ui/commit/d6cbaf8))
+* **PropertySearchResultList:** show optional message ([b49ecfa](https://github.com/lodgify/lodgify-ui/commit/b49ecfa))
+
 # [1.208.0](https://github.com/lodgify/lodgify-ui/compare/v1.207.0...v1.208.0) (2019-06-24)
 
 
