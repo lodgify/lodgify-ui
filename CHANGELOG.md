@@ -1,3 +1,15 @@
+# [1.206.0](https://github.com/lodgify/lodgify-ui/compare/v1.205.0...v1.206.0) (2019-06-24)
+
+
+### Bug Fixes
+
+* **package:** fix package eslint-plugin-react to 7.13 ([12429cf](https://github.com/lodgify/lodgify-ui/commit/12429cf))
+
+
+### Features
+
+* **PropertySearchResultList:** implement pagination for 12 or more items ([c14decb](https://github.com/lodgify/lodgify-ui/commit/c14decb))
+
 # [1.205.0](https://github.com/lodgify/lodgify-ui/compare/v1.204.0...v1.205.0) (2019-06-21)
 
 
