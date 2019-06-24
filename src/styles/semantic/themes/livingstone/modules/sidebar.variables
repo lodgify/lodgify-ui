@@ -1,0 +1,41 @@
+/*******************************
+             Sidebar
+*******************************/
+
+@background: @pureWhite;
+
+@closeColor: @greySix;
+@closeBackgroundColor: @white;
+@closeBorderRadius: 20px;
+@closeBoxShadow: 0 3px 9px 0 rgba(0, 0, 0, 0.25);
+
+@closeTop: 0;
+@closeRight: 0;
+
+@closePadding: @15px;
+
+/*-------------------
+       Content
+--------------------*/
+
+/* Animation */
+
+/* Dimmer */
+
+@dimmerColor: fade(@pureWhite, 70%);
+
+/* Color below page */
+
+/* Shadow */
+
+/* Layering */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Width */
+
+@width: 700px;
+
+/* Height */
