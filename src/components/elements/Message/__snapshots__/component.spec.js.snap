@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Message /> should render the right structure 1`] = `
+<Message>
+  <Message
+    className="padded"
+  >
+    <div
+      className="ui message padded"
+    >
+      Some children
+    </div>
+  </Message>
+</Message>
+`;
