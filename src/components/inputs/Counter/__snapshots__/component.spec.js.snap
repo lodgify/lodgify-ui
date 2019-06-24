@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter render should render the right structure 1`] = `
+<Counter
+  name=""
+  onChange={[Function]}
+  renderValue={[Function]}
+>
+  <div
+    className="ui counter"
+  >
+    <FlexContainer
+      alignContent={null}
+      alignItems="center"
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent="space-between"
+    >
+      <div
+        className="flex-container"
+        style={
+          Object {
+            "alignContent": null,
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": null,
+            "flexGrow": "1",
+            "flexWrap": null,
+            "height": "100%",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Button
+          hasShadow={false}
+          icon="minus"
+          isCompact={false}
+          isDisabled={false}
+          isFluid={false}
+          isFormSubmit={false}
+          isLoading={false}
+          isOutlined={true}
+          isPositionedRight={false}
+          isRounded={true}
+          isSecondary={false}
+          onClick={[Function]}
+          size={null}
+        >
+          <Button
+            as="button"
+            basic={true}
+            circular={true}
+            className="has-outline"
+            compact={false}
+            disabled={false}
+            floated="left"
+            fluid={false}
+            loading={false}
+            onClick={[Function]}
+            secondary={false}
+            size={null}
+            type="button"
+          >
+            <button
+              className="ui basic circular left floated button has-outline"
+              onClick={[Function]}
+              role="button"
+              type="button"
+            >
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="minus"
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12,23.39A11.34,11.34,0,1,1,23.33,12.06,11.35,11.35,0,0,1,12,23.39ZM12,2.72a9.34,9.34,0,1,0,9.33,9.34A9.35,9.35,0,0,0,12,2.72Zm4.35,8.55H7.65v1.57h8.7Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </i>
+              </Icon>
+            </button>
+          </Button>
+        </Button>
+        <Paragraph
+          size="medium"
+          weight={null}
+        >
+          <p
+            className=""
+          >
+            0
+          </p>
+        </Paragraph>
+        <Button
+          hasShadow={false}
+          icon="plus"
+          isCompact={false}
+          isDisabled={false}
+          isFluid={false}
+          isFormSubmit={false}
+          isLoading={false}
+          isOutlined={true}
+          isPositionedRight={false}
+          isRounded={true}
+          isSecondary={false}
+          onClick={[Function]}
+          size={null}
+        >
+          <Button
+            as="button"
+            basic={true}
+            circular={true}
+            className="has-outline"
+            compact={false}
+            disabled={false}
+            floated="left"
+            fluid={false}
+            loading={false}
+            onClick={[Function]}
+            secondary={false}
+            size={null}
+            type="button"
+          >
+            <button
+              className="ui basic circular left floated button has-outline"
+              onClick={[Function]}
+              role="button"
+              type="button"
+            >
+              <Icon
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="plus"
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12.18,23.39A11.34,11.34,0,1,1,23.52,12.06,11.34,11.34,0,0,1,12.18,23.39Zm0-20.67a9.34,9.34,0,1,0,9.34,9.34A9.34,9.34,0,0,0,12.18,2.72ZM13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </i>
+              </Icon>
+            </button>
+          </Button>
+        </Button>
+      </div>
+    </FlexContainer>
+  </div>
+</Counter>
+`;

@@ -1,3 +1,24 @@
+# [1.207.0](https://github.com/lodgify/lodgify-ui/compare/v1.206.0...v1.207.0) (2019-06-24)
+
+
+### Features
+
+* **Counter:** add new component with tests and examples ([254525b](https://github.com/lodgify/lodgify-ui/commit/254525b))
+* **Counter:** add styles ([52b76c7](https://github.com/lodgify/lodgify-ui/commit/52b76c7))
+* **Icon:** add plus and minus icon paths ([3b99c3a](https://github.com/lodgify/lodgify-ui/commit/3b99c3a))
+
+# [1.206.0](https://github.com/lodgify/lodgify-ui/compare/v1.205.0...v1.206.0) (2019-06-24)
+
+
+### Bug Fixes
+
+* **package:** fix package eslint-plugin-react to 7.13 ([12429cf](https://github.com/lodgify/lodgify-ui/commit/12429cf))
+
+
+### Features
+
+* **PropertySearchResultList:** implement pagination for 12 or more items ([c14decb](https://github.com/lodgify/lodgify-ui/commit/c14decb))
+
 # [1.205.0](https://github.com/lodgify/lodgify-ui/compare/v1.204.0...v1.205.0) (2019-06-21)
 
 
