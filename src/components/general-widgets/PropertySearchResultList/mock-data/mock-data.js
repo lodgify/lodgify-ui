@@ -37,3 +37,7 @@ export const propertySearchResults = [
     ratingNumber: 4.7,
   },
 ];
+
+export const moreThan12PropertySearchResults = new Array(13).fill(
+  propertySearchResults[0]
+);
