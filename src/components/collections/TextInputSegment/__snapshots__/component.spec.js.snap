@@ -88,6 +88,7 @@ exports[`<TextInputSegment /> should render the right structure 1`] = `
               icon={null}
               initialValue=""
               inputOnChangeFunctionName="onChange"
+              isCompact={false}
               isFluid={false}
               isFocused={false}
               isValid={false}

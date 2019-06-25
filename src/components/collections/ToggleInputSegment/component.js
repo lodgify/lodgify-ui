@@ -12,12 +12,9 @@ import { Paragraph } from 'typography/Paragraph';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isToggleChecked: props.isToggleChecked || false,
-    };
-  }
+  state = {
+    isToggleChecked: this.props.isToggleChecked || false,
+  };
 
   handleOnClick = event => {
     const { isToggleChecked } = this.state;
