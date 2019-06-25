@@ -30,6 +30,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
         icon={null}
         initialValue=""
         inputOnChangeFunctionName="onDatesChange"
+        isCompact={false}
         isFluid={false}
         isFocused={false}
         isValid={false}
@@ -169,6 +170,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
         icon={null}
         initialValue=""
         inputOnChangeFunctionName="onDatesChange"
+        isCompact={false}
         isFluid={false}
         isFocused={false}
         isValid={false}

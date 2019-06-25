@@ -291,6 +291,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                               icon={null}
                               initialValue=""
                               inputOnChangeFunctionName="onChange"
+                              isCompact={false}
                               isFluid={true}
                               isFocused={false}
                               isValid={false}
@@ -758,6 +759,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               icon={null}
                               initialValue=""
                               inputOnChangeFunctionName="onChange"
+                              isCompact={false}
                               isFluid={true}
                               isFocused={false}
                               isValid={false}
@@ -1193,6 +1195,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                               icon={null}
                               initialValue=""
                               inputOnChangeFunctionName="onChange"
+                              isCompact={false}
                               isFluid={true}
                               isFocused={false}
                               isValid={false}
@@ -1491,6 +1494,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                               icon={null}
                               initialValue=""
                               inputOnChangeFunctionName="onChange"
+                              isCompact={false}
                               isFluid={true}
                               isFocused={false}
                               isValid={false}

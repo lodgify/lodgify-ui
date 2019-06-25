@@ -114,6 +114,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -190,6 +191,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -292,6 +294,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -356,6 +359,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -443,6 +447,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -572,6 +577,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -917,6 +923,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -993,6 +1000,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -1095,6 +1103,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -1159,6 +1168,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -1246,6 +1256,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -1375,6 +1386,7 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -2166,6 +2178,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -2242,6 +2255,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -2344,6 +2358,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -2408,6 +2423,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -2495,6 +2511,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -2624,6 +2641,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -3151,6 +3169,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -3227,6 +3246,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -3329,6 +3349,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -3393,6 +3414,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -3480,6 +3502,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -3609,6 +3632,7 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -4080,6 +4104,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -4156,6 +4181,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -4258,6 +4284,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -4322,6 +4349,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -4409,6 +4437,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onDatesChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -4538,6 +4567,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}

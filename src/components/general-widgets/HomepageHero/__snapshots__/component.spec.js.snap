@@ -798,6 +798,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           icon={null}
                                                           initialValue=""
                                                           inputOnChangeFunctionName="onDatesChange"
+                                                          isCompact={false}
                                                           isFluid={false}
                                                           isFocused={false}
                                                           isValid={false}
@@ -958,6 +959,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       }
                                                       initialValue=""
                                                       inputOnChangeFunctionName="onChange"
+                                                      isCompact={false}
                                                       isFluid={false}
                                                       isFocused={false}
                                                       isValid={false}

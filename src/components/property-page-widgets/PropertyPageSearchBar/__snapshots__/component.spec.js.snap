@@ -342,6 +342,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                         icon={null}
                                                         initialValue=""
                                                         inputOnChangeFunctionName="onDatesChange"
+                                                        isCompact={false}
                                                         isFluid={false}
                                                         isFocused={false}
                                                         isValid={false}
@@ -502,6 +503,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                     }
                                                     initialValue=""
                                                     inputOnChangeFunctionName="onChange"
+                                                    isCompact={false}
                                                     isFluid={false}
                                                     isFocused={false}
                                                     isValid={false}
@@ -1494,6 +1496,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                         icon={null}
                                                         initialValue=""
                                                         inputOnChangeFunctionName="onDatesChange"
+                                                        isCompact={false}
                                                         isFluid={false}
                                                         isFocused={false}
                                                         isValid={false}
@@ -1654,6 +1657,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                                     }
                                                     initialValue=""
                                                     inputOnChangeFunctionName="onChange"
+                                                    isCompact={false}
                                                     isFluid={false}
                                                     isFocused={false}
                                                     isValid={false}

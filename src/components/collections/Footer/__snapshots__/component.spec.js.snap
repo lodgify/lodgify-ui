@@ -2409,6 +2409,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                                       icon={null}
                                       initialValue=""
                                       inputOnChangeFunctionName="onChange"
+                                      isCompact={false}
                                       isFluid={true}
                                       isFocused={false}
                                       isValid={false}
