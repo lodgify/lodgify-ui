@@ -274,6 +274,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                   >
                     <Checkbox
                       error={false}
+                      isCompact={false}
                       isDisabled={false}
                       isRadioButton={false}
                       isToggle={false}
@@ -300,6 +301,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}

@@ -467,6 +467,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                           <Checkbox
                             error={false}
                             isChecked={false}
+                            isCompact={false}
                             isDisabled={false}
                             isRadioButton={false}
                             isToggle={false}
@@ -492,6 +493,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                               icon={null}
                               initialValue=""
                               inputOnChangeFunctionName="onChange"
+                              isCompact={false}
                               isFluid={false}
                               isFocused={false}
                               isValid={false}
@@ -848,6 +850,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                           <Checkbox
                             error={false}
                             isChecked={false}
+                            isCompact={false}
                             isDisabled={false}
                             isRadioButton={false}
                             isToggle={false}
@@ -873,6 +876,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               icon={null}
                               initialValue=""
                               inputOnChangeFunctionName="onChange"
+                              isCompact={false}
                               isFluid={false}
                               isFocused={false}
                               isValid={false}

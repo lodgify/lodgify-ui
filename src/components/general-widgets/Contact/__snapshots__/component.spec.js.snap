@@ -624,6 +624,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                   >
                     <Checkbox
                       error={false}
+                      isCompact={false}
                       isDisabled={false}
                       isRadioButton={false}
                       isToggle={false}
@@ -650,6 +651,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}

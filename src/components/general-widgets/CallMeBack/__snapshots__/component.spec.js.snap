@@ -1269,6 +1269,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                   >
                     <Checkbox
                       error={false}
+                      isCompact={false}
                       isDisabled={false}
                       isRadioButton={false}
                       isToggle={false}
@@ -1295,6 +1296,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
