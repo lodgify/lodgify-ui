@@ -1,28 +1,226 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Checkbox /> should return the right structure 1`] = `
-<InputController
-  adaptOnChangeEvent={[Function]}
+exports[`<Checkbox /> if \`props.isFluid\` is true should return the right structure 1`] = `
+<Checkbox
   error={false}
-  icon={null}
-  initialValue=""
-  inputOnChangeFunctionName="onChange"
   isCompact={false}
-  isFluid={false}
-  isFocused={false}
-  isValid={false}
-  label={null}
-  mapValueToProps={[Function]}
+  isDisabled={false}
+  isFluid={true}
+  isLabelLeft={false}
+  isRadioButton={false}
+  isToggle={false}
+  label=""
   name=""
   onChange={[Function]}
+  onClick={[Function]}
 >
-  <Checkbox
-    disabled={false}
-    label=""
-    onClick={[Function]}
-    radio={false}
-    toggle={false}
-    type="checkbox"
-  />
-</InputController>
+  <InputController
+    adaptOnChangeEvent={[Function]}
+    error={false}
+    icon={null}
+    initialValue=""
+    inputOnChangeFunctionName="onChange"
+    isCompact={false}
+    isFluid={true}
+    isFocused={false}
+    isValid={false}
+    label={null}
+    mapValueToProps={[Function]}
+    name=""
+    onChange={[Function]}
+  >
+    <Input
+      className=""
+      fluid={true}
+      iconPosition={null}
+      type="text"
+    >
+      <div
+        className="ui fluid input"
+      >
+        <Checkbox
+          checked={false}
+          className="is-fluid"
+          disabled={false}
+          key=".0"
+          label=""
+          onChange={[Function]}
+          onClick={[Function]}
+          radio={false}
+          toggle={false}
+          type="checkbox"
+        >
+          <div
+            className="ui checkbox is-fluid"
+            onChange={[Function]}
+            onClick={[Function]}
+            onMouseDown={[Function]}
+          >
+            <input
+              checked={false}
+              className="hidden"
+              onClick={[Function]}
+              readOnly={true}
+              tabIndex={0}
+              type="checkbox"
+            />
+            <label
+              key=""
+            />
+          </div>
+        </Checkbox>
+      </div>
+    </Input>
+  </InputController>
+</Checkbox>
+`;
+
+exports[`<Checkbox /> if \`props.isLabelLeft\` is true should return the right structure 1`] = `
+<Checkbox
+  error={false}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isLabelLeft={true}
+  isRadioButton={false}
+  isToggle={false}
+  label=""
+  name=""
+  onChange={[Function]}
+  onClick={[Function]}
+>
+  <InputController
+    adaptOnChangeEvent={[Function]}
+    error={false}
+    icon={null}
+    initialValue=""
+    inputOnChangeFunctionName="onChange"
+    isCompact={false}
+    isFluid={false}
+    isFocused={false}
+    isValid={false}
+    label={null}
+    mapValueToProps={[Function]}
+    name=""
+    onChange={[Function]}
+  >
+    <Input
+      className=""
+      fluid={false}
+      iconPosition={null}
+      type="text"
+    >
+      <div
+        className="ui input"
+      >
+        <Checkbox
+          checked={false}
+          className="is-label-left"
+          disabled={false}
+          key=".0"
+          label=""
+          onChange={[Function]}
+          onClick={[Function]}
+          radio={false}
+          toggle={false}
+          type="checkbox"
+        >
+          <div
+            className="ui checkbox is-label-left"
+            onChange={[Function]}
+            onClick={[Function]}
+            onMouseDown={[Function]}
+          >
+            <input
+              checked={false}
+              className="hidden"
+              onClick={[Function]}
+              readOnly={true}
+              tabIndex={0}
+              type="checkbox"
+            />
+            <label
+              key=""
+            />
+          </div>
+        </Checkbox>
+      </div>
+    </Input>
+  </InputController>
+</Checkbox>
+`;
+
+exports[`<Checkbox /> should return the right structure 1`] = `
+<Checkbox
+  error={false}
+  isCompact={false}
+  isDisabled={false}
+  isFluid={false}
+  isLabelLeft={false}
+  isRadioButton={false}
+  isToggle={false}
+  label=""
+  name=""
+  onChange={[Function]}
+  onClick={[Function]}
+>
+  <InputController
+    adaptOnChangeEvent={[Function]}
+    error={false}
+    icon={null}
+    initialValue=""
+    inputOnChangeFunctionName="onChange"
+    isCompact={false}
+    isFluid={false}
+    isFocused={false}
+    isValid={false}
+    label={null}
+    mapValueToProps={[Function]}
+    name=""
+    onChange={[Function]}
+  >
+    <Input
+      className=""
+      fluid={false}
+      iconPosition={null}
+      type="text"
+    >
+      <div
+        className="ui input"
+      >
+        <Checkbox
+          checked={false}
+          className=""
+          disabled={false}
+          key=".0"
+          label=""
+          onChange={[Function]}
+          onClick={[Function]}
+          radio={false}
+          toggle={false}
+          type="checkbox"
+        >
+          <div
+            className="ui checkbox"
+            onChange={[Function]}
+            onClick={[Function]}
+            onMouseDown={[Function]}
+          >
+            <input
+              checked={false}
+              className="hidden"
+              onClick={[Function]}
+              readOnly={true}
+              tabIndex={0}
+              type="checkbox"
+            />
+            <label
+              key=""
+            />
+          </div>
+        </Checkbox>
+      </div>
+    </Input>
+  </InputController>
+</Checkbox>
 `;

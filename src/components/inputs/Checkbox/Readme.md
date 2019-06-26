@@ -11,8 +11,19 @@
 <Checkbox label="I am a checkbox" />
 ```
 
-### States
+#### Left labeled
 
+```jsx
+<Checkbox isLabelLeft label="I am a left labeled checkbox" />
+```
+
+#### Fluid
+
+```jsx
+<Checkbox isFluid label="I am a fluid checkbox" />
+```
+
+### States
 
 #### Checked
 

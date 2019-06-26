@@ -150,6 +150,40 @@
   /*-------------------
       Variations
 --------------------*/
+
+  /* Fluid */
+  &.is-fluid {
+
+    & > label {
+      width: 100%;
+      text-align: end;
+    }
+
+    &.is-label-left {
+
+      & > label {
+        text-align: start;
+      }
+    }
+  }
+
+  /* Left Labeled */
+  &.is-label-left {
+
+    & > label {
+      padding: @isLeftLabelPadding;
+
+      &:before {
+        left: auto;
+        right: 0;
+      }
+
+      &:after {
+        left: auto;
+        right: @isLeftLabelTickRightPosition;
+      }
+    }
+  }
 }
 
 /* Label */
