@@ -11,6 +11,7 @@ export { TextInputSegment } from './components/collections/TextInputSegment';
 export {
   ToggleInputSegment,
 } from './components/collections/ToggleInputSegment';
+export { RangeInputSegment } from './components/collections/RangeInputSegment';
 
 // Elements
 export { BlockPlaceholder } from './components/elements/BlockPlaceholder';
