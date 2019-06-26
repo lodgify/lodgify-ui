@@ -1,3 +1,10 @@
+## [1.209.1](https://github.com/lodgify/lodgify-ui/compare/v1.209.0...v1.209.1) (2019-06-26)
+
+
+### Bug Fixes
+
+* **HTML:** set to auto rather than scroll to hide scrollbar where possible ([9a0fa8b](https://github.com/lodgify/lodgify-ui/commit/9a0fa8b))
+
 # [1.209.0](https://github.com/lodgify/lodgify-ui/compare/v1.208.0...v1.209.0) (2019-06-24)
 
 

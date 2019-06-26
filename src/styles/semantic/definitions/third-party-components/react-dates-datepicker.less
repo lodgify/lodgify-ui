@@ -142,11 +142,13 @@
       &.CalendarDay__default:hover,
       &.CalendarDay__selected_span,
       &.CalendarDay__hovered_span {
-        background: @pickerDayHoveredBackground;
+        background: @themeActionLighterColorDefault;
+        background: var(@themeActionLighterColorIdentifier, @themeActionLighterColorDefault);
         color: inherit;
 
         &.CalendarDay__blocked_calendar {
-          background: @pickerDayHoveredBackground;
+          background: @themeActionLighterColorDefault;
+          background: var(@themeActionLighterColorIdentifier, @themeActionLighterColorDefault);
           color: inherit;
 
           &:hover {
@@ -161,7 +163,8 @@
         &,
         &:active,
         &:hover {
-          background: @pickerDaySelectedBackground;
+          background: @themeActionColorDefault;
+          background: var(@themeActionColorIdentifier, @themeActionColorDefault);
           color: inherit;
         }
 
@@ -169,7 +172,8 @@
 
           &.CalendarDay__selected_start,
           &.CalendarDay__selected_end {
-            background: @pickerDaySelectedBackground;
+            background: @themeActionColorDefault;
+            background: var(@themeActionColorIdentifier, @themeActionColorDefault);
             color: inherit;
           }
         }
@@ -335,6 +339,7 @@
   }
 
   .DateRangePicker .DateRangePickerInput input.DateInput_input__focused {
+    border-bottom: @inputFocusedBorderBottomPrimary;
     border-bottom: @inputFocusedBorderBottom;
     margin-bottom: @inputFocusedMarginBottom;
     padding-bottom: @inputFocusedPaddingBottom;
