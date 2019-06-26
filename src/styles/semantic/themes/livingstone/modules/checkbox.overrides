@@ -11,6 +11,11 @@
     user-select: none;
   }
 
+  &.toggle input[type="checkbox"] + label:before {
+    background-color: @themeActionColorDefault !important;
+    background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+  }
+
   input {
 
     & ~ label {
@@ -29,6 +34,11 @@
 
     & ~ label {
       font-weight: bold;
+
+      &:before {
+        background-color: @themeActionColorDefault !important;
+        background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+      }
     }
   }
 
