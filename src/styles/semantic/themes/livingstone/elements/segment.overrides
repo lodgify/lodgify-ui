@@ -360,4 +360,14 @@
       }
     }
   }
+
+  &.is-counter-input-segment {
+
+    & > .flex-container {
+
+      .flex-container {
+        width: 100%;
+      }
+    }
+  }
 }
