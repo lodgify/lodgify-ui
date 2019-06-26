@@ -11,7 +11,7 @@
     user-select: none;
   }
 
-  &.toggle input[type="checkbox"] + label:before {
+  &.toggle.checked input[type="checkbox"] + label:before {
     background-color: @themeActionColorDefault !important;
     background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
   }
