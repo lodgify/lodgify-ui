@@ -103,6 +103,7 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                     >
                       <Checkbox
                         error={false}
+                        isCompact={false}
                         isDisabled={false}
                         isFluid={false}
                         isLabelLeft={false}
@@ -119,6 +120,7 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                           icon={null}
                           initialValue=""
                           inputOnChangeFunctionName="onChange"
+                          isCompact={false}
                           isFluid={false}
                           isFocused={false}
                           isValid={false}
@@ -289,6 +291,7 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                     >
                       <Checkbox
                         error={false}
+                        isCompact={false}
                         isDisabled={false}
                         isFluid={true}
                         isLabelLeft={true}
@@ -305,6 +308,7 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                           icon={null}
                           initialValue=""
                           inputOnChangeFunctionName="onChange"
+                          isCompact={false}
                           isFluid={true}
                           isFocused={false}
                           isValid={false}
