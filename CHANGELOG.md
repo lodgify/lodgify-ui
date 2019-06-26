@@ -1,3 +1,16 @@
+# [1.210.0](https://github.com/lodgify/lodgify-ui/compare/v1.209.1...v1.210.0) (2019-06-26)
+
+
+### Bug Fixes
+
+* **react-dates-datepicker:** add theme colours ([913256a](https://github.com/lodgify/lodgify-ui/commit/913256a))
+
+
+### Features
+
+* **checkbox.overrides:** implement theme color ([4648dba](https://github.com/lodgify/lodgify-ui/commit/4648dba))
+* **react-dates-datepicker.variables:** add theme color to in inputFocusedBorderBottom ([71d5760](https://github.com/lodgify/lodgify-ui/commit/71d5760))
+
 ## [1.209.1](https://github.com/lodgify/lodgify-ui/compare/v1.209.0...v1.209.1) (2019-06-26)
 
 
