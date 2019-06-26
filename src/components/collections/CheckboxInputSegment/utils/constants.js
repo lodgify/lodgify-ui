@@ -1,0 +1,2 @@
+export const NUMBER_OF_COLUMNS_ON_MOBILE = 1;
+export const NUMBER_OF_COLUMNS_ON_LARGE_DEVICES = 2;
