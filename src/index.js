@@ -4,6 +4,7 @@ export { Form } from './components/collections/Form';
 export { Header } from './components/collections/Header';
 export { Hero } from './components/collections/Hero';
 export { InputGroup } from './components/collections/InputGroup';
+export { TextInputSegment } from './components/collections/TextInputSegment';
 
 // Elements
 export { BlockPlaceholder } from './components/elements/BlockPlaceholder';

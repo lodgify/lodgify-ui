@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInputSegment /> should render the right structure 1`] = `
+<TextInputSegment
+  heading="👤"
+  onTextInputChange={[Function]}
+  textInputLabel="🏷"
+>
+  <Segment
+    className="is-input-segment"
+    vertical={true}
+  >
+    <div
+      className="ui vertical segment is-input-segment"
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems="baseline"
+        flexDirection="column"
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "baseline",
+              "display": "flex",
+              "flexDirection": "column",
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            <Header
+              as="h3"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h3
+                className="ui header"
+              >
+                👤
+              </h3>
+            </Header>
+          </Heading>
+          <Divider
+            className=""
+            hasLine={false}
+            size="small"
+          >
+            <Divider
+              className="is-size-small"
+              hidden={true}
+              section={false}
+            >
+              <div
+                className="ui hidden divider is-size-small"
+              />
+            </Divider>
+          </Divider>
+          <TextInput
+            autoComplete={null}
+            error={false}
+            isFluid={false}
+            isValid={false}
+            label="🏷"
+            maxCharacters={null}
+            name=""
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          >
+            <InputController
+              adaptOnChangeEvent={[Function]}
+              error={false}
+              icon={null}
+              initialValue=""
+              inputOnChangeFunctionName="onChange"
+              isFluid={false}
+              isFocused={false}
+              isValid={false}
+              label="🏷"
+              mapValueToProps={[Function]}
+              name=""
+              onChange={[Function]}
+            >
+              <Input
+                className=""
+                fluid={false}
+                iconPosition={null}
+                type="text"
+              >
+                <div
+                  className="ui input"
+                >
+                  <input
+                    autoComplete={null}
+                    key=".0"
+                    maxLength={null}
+                    name=""
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    key=".3"
+                    onClick={[Function]}
+                  >
+                    🏷
+                  </label>
+                </div>
+              </Input>
+            </InputController>
+          </TextInput>
+        </div>
+      </FlexContainer>
+    </div>
+  </Segment>
+</TextInputSegment>
+`;
