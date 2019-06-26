@@ -75,7 +75,8 @@
 
 /* Focus */
 @InputFocusedBorderBottomWidth: @3px;
-@inputFocusedBorderBottom: @InputFocusedBorderBottomWidth solid @primaryColor !important;
+@inputFocusedBorderBottomPrimary: @InputFocusedBorderBottomWidth solid @primaryColor !important;
+@inputFocusedBorderBottom: @InputFocusedBorderBottomWidth solid var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
 @inputFocusedMarginBottom: -(@1px);
 @inputFocusedBorderBottomOffset: (@InputFocusedBorderBottomWidth + @inputFocusedMarginBottom);
 @inputFocusedPaddingBottom: (@verticalPadding - @inputBorderOffset - @inputFocusedBorderBottomOffset);
