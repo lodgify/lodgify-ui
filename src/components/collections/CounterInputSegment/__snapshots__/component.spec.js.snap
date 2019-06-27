@@ -1,0 +1,536 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CounterInputSegment /> should return the right structure 1`] = `
+<CounterInputSegment
+  counters={
+    Array [
+      Object {
+        "name": "Bedrooms",
+      },
+      Object {
+        "name": "Bathrooms",
+      },
+    ]
+  }
+  heading="🈵"
+>
+  <Segment
+    className="is-input-segment is-counter-input-segment"
+    vertical={true}
+  >
+    <div
+      className="ui vertical segment is-input-segment is-counter-input-segment"
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems="baseline"
+        flexDirection="column"
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "baseline",
+              "display": "flex",
+              "flexDirection": "column",
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            <Header
+              as="h3"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h3
+                className="ui header"
+              >
+                🈵
+              </h3>
+            </Header>
+          </Heading>
+          <Divider
+            className=""
+            hasLine={false}
+            size="small"
+          >
+            <Divider
+              className="is-size-small"
+              hidden={true}
+              section={false}
+            >
+              <div
+                className="ui hidden divider is-size-small"
+              />
+            </Divider>
+          </Divider>
+          <FlexContainer
+            alignContent={null}
+            alignItems={null}
+            flexDirection="row"
+            flexWrap={null}
+            justifyContent="space-between"
+          >
+            <div
+              className="flex-container"
+              style={
+                Object {
+                  "alignContent": null,
+                  "alignItems": null,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": "1",
+                  "flexWrap": null,
+                  "height": "100%",
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              <Paragraph
+                size="medium"
+                weight={null}
+              >
+                <p
+                  className=""
+                >
+                  Bedrooms
+                </p>
+              </Paragraph>
+              <Counter
+                name="Bedrooms"
+                onChange={[Function]}
+                renderValue={[Function]}
+              >
+                <div
+                  className="ui counter"
+                >
+                  <FlexContainer
+                    alignContent={null}
+                    alignItems="center"
+                    flexDirection={null}
+                    flexWrap={null}
+                    justifyContent="space-between"
+                  >
+                    <div
+                      className="flex-container"
+                      style={
+                        Object {
+                          "alignContent": null,
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexDirection": null,
+                          "flexGrow": "1",
+                          "flexWrap": null,
+                          "height": "100%",
+                          "justifyContent": "space-between",
+                        }
+                      }
+                    >
+                      <Button
+                        hasShadow={false}
+                        icon="minus"
+                        isCompact={false}
+                        isDisabled={false}
+                        isFluid={false}
+                        isFormSubmit={false}
+                        isLoading={false}
+                        isOutlined={true}
+                        isPositionedRight={false}
+                        isRounded={true}
+                        isSecondary={false}
+                        onClick={[Function]}
+                        size={null}
+                      >
+                        <Button
+                          as="button"
+                          basic={true}
+                          circular={true}
+                          className="has-outline"
+                          compact={false}
+                          disabled={false}
+                          floated="left"
+                          fluid={false}
+                          loading={false}
+                          onClick={[Function]}
+                          secondary={false}
+                          size={null}
+                          type="button"
+                        >
+                          <button
+                            className="ui basic circular left floated button has-outline"
+                            onClick={[Function]}
+                            role="button"
+                            type="button"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="minus"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M16.35,11.27H7.65v1.57h8.7Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </Icon>
+                          </button>
+                        </Button>
+                      </Button>
+                      <Paragraph
+                        size="medium"
+                        weight={null}
+                      >
+                        <p
+                          className=""
+                        >
+                          0
+                        </p>
+                      </Paragraph>
+                      <Button
+                        hasShadow={false}
+                        icon="plus"
+                        isCompact={false}
+                        isDisabled={false}
+                        isFluid={false}
+                        isFormSubmit={false}
+                        isLoading={false}
+                        isOutlined={true}
+                        isPositionedRight={false}
+                        isRounded={true}
+                        isSecondary={false}
+                        onClick={[Function]}
+                        size={null}
+                      >
+                        <Button
+                          as="button"
+                          basic={true}
+                          circular={true}
+                          className="has-outline"
+                          compact={false}
+                          disabled={false}
+                          floated="left"
+                          fluid={false}
+                          loading={false}
+                          onClick={[Function]}
+                          secondary={false}
+                          size={null}
+                          type="button"
+                        >
+                          <button
+                            className="ui basic circular left floated button has-outline"
+                            onClick={[Function]}
+                            role="button"
+                            type="button"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="plus"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </Icon>
+                          </button>
+                        </Button>
+                      </Button>
+                    </div>
+                  </FlexContainer>
+                </div>
+              </Counter>
+            </div>
+          </FlexContainer>
+          <Divider
+            className=""
+            hasLine={false}
+            size="small"
+          >
+            <Divider
+              className="is-size-small"
+              hidden={true}
+              section={false}
+            >
+              <div
+                className="ui hidden divider is-size-small"
+              />
+            </Divider>
+          </Divider>
+          <FlexContainer
+            alignContent={null}
+            alignItems={null}
+            flexDirection="row"
+            flexWrap={null}
+            justifyContent="space-between"
+          >
+            <div
+              className="flex-container"
+              style={
+                Object {
+                  "alignContent": null,
+                  "alignItems": null,
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "flexGrow": "1",
+                  "flexWrap": null,
+                  "height": "100%",
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              <Paragraph
+                size="medium"
+                weight={null}
+              >
+                <p
+                  className=""
+                >
+                  Bathrooms
+                </p>
+              </Paragraph>
+              <Counter
+                name="Bathrooms"
+                onChange={[Function]}
+                renderValue={[Function]}
+              >
+                <div
+                  className="ui counter"
+                >
+                  <FlexContainer
+                    alignContent={null}
+                    alignItems="center"
+                    flexDirection={null}
+                    flexWrap={null}
+                    justifyContent="space-between"
+                  >
+                    <div
+                      className="flex-container"
+                      style={
+                        Object {
+                          "alignContent": null,
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexDirection": null,
+                          "flexGrow": "1",
+                          "flexWrap": null,
+                          "height": "100%",
+                          "justifyContent": "space-between",
+                        }
+                      }
+                    >
+                      <Button
+                        hasShadow={false}
+                        icon="minus"
+                        isCompact={false}
+                        isDisabled={false}
+                        isFluid={false}
+                        isFormSubmit={false}
+                        isLoading={false}
+                        isOutlined={true}
+                        isPositionedRight={false}
+                        isRounded={true}
+                        isSecondary={false}
+                        onClick={[Function]}
+                        size={null}
+                      >
+                        <Button
+                          as="button"
+                          basic={true}
+                          circular={true}
+                          className="has-outline"
+                          compact={false}
+                          disabled={false}
+                          floated="left"
+                          fluid={false}
+                          loading={false}
+                          onClick={[Function]}
+                          secondary={false}
+                          size={null}
+                          type="button"
+                        >
+                          <button
+                            className="ui basic circular left floated button has-outline"
+                            onClick={[Function]}
+                            role="button"
+                            type="button"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="minus"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M16.35,11.27H7.65v1.57h8.7Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </Icon>
+                          </button>
+                        </Button>
+                      </Button>
+                      <Paragraph
+                        size="medium"
+                        weight={null}
+                      >
+                        <p
+                          className=""
+                        >
+                          0
+                        </p>
+                      </Paragraph>
+                      <Button
+                        hasShadow={false}
+                        icon="plus"
+                        isCompact={false}
+                        isDisabled={false}
+                        isFluid={false}
+                        isFormSubmit={false}
+                        isLoading={false}
+                        isOutlined={true}
+                        isPositionedRight={false}
+                        isRounded={true}
+                        isSecondary={false}
+                        onClick={[Function]}
+                        size={null}
+                      >
+                        <Button
+                          as="button"
+                          basic={true}
+                          circular={true}
+                          className="has-outline"
+                          compact={false}
+                          disabled={false}
+                          floated="left"
+                          fluid={false}
+                          loading={false}
+                          onClick={[Function]}
+                          secondary={false}
+                          size={null}
+                          type="button"
+                        >
+                          <button
+                            className="ui basic circular left floated button has-outline"
+                            onClick={[Function]}
+                            role="button"
+                            type="button"
+                          >
+                            <Icon
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="plus"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </Icon>
+                          </button>
+                        </Button>
+                      </Button>
+                    </div>
+                  </FlexContainer>
+                </div>
+              </Counter>
+            </div>
+          </FlexContainer>
+          <Divider
+            className=""
+            hasLine={false}
+            size="small"
+          >
+            <Divider
+              className="is-size-small"
+              hidden={true}
+              section={false}
+            >
+              <div
+                className="ui hidden divider is-size-small"
+              />
+            </Divider>
+          </Divider>
+        </div>
+      </FlexContainer>
+    </div>
+  </Segment>
+</CounterInputSegment>
+`;
