@@ -20,6 +20,7 @@ import {
 } from 'utils/default-strings';
 
 import { getPrivacyCheckboxMarkup } from './utils/getPrivacyCheckboxMarkup';
+import { getTextAlign } from './utils/getTextAlign';
 
 /**
  * An email capture displays a form inviting a user to submit an email address.
@@ -44,11 +45,19 @@ const Component = ({
   privacyConsentLabelText,
   successMessage,
 }) => (
-  <HorizontalGutters>
-    <Divider />
-    <Grid>
-      <GridRow verticalAlign="middle">
-        {!errorMessage ? (
+  <Fragment>
+    {(!!errorMessage || !!successMessage) && (
+      <Grid areColumnsCentered>
+        <GridColumn textAlign={getTextAlign(isUserOnMobile)} width={11}>
+          {!!errorMessage && <Message content={errorMessage} error />}
+          {!!successMessage && <Message content={successMessage} success />}
+        </GridColumn>
+      </Grid>
+    )}
+    <HorizontalGutters>
+      <Divider />
+      <Grid>
+        <GridRow verticalAlign="middle">
           <Fragment>
             <GridColumn computer={5} mobile={12} tablet={12} textAlign="center">
               <Heading hasMargin={false} size="small">
@@ -85,39 +94,31 @@ const Component = ({
                   <Divider />
                 </Fragment>
               )}
-              {!successMessage ? (
-                <Button isFluid isRounded onClick={onClickButton}>
-                  {buttonText}
-                </Button>
-              ) : (
-                <Message content={successMessage} success />
-              )}
+              <Button isFluid isRounded onClick={onClickButton}>
+                {buttonText}
+              </Button>
             </GridColumn>
           </Fragment>
-        ) : (
-          <GridColumn width={12}>
-            <Message content={errorMessage} error />
-          </GridColumn>
-        )}
-      </GridRow>
-      {!errorMessage && !isUserOnMobile && isPrivacyConsentRequired && (
-        <GridRow>
-          <GridColumn computer={5} />
-          <GridColumn computer={4} mobile={12} tablet={12}>
-            {getPrivacyCheckboxMarkup(
-              privacyConsentInputError,
-              isPrivacyConsentInputChecked,
-              privacyConsentLabelText,
-              privacyConsentLabelLinkUrl,
-              privacyConsentLabelLinkText,
-              onClickPrivacyConsentInput
-            )}
-          </GridColumn>
         </GridRow>
-      )}
-    </Grid>
-    <Divider />
-  </HorizontalGutters>
+        {!isUserOnMobile && isPrivacyConsentRequired && (
+          <GridRow>
+            <GridColumn computer={5} />
+            <GridColumn computer={7} mobile={12} tablet={12}>
+              {getPrivacyCheckboxMarkup(
+                privacyConsentInputError,
+                isPrivacyConsentInputChecked,
+                privacyConsentLabelText,
+                privacyConsentLabelLinkUrl,
+                privacyConsentLabelLinkText,
+                onClickPrivacyConsentInput
+              )}
+            </GridColumn>
+          </GridRow>
+        )}
+      </Grid>
+      <Divider />
+    </HorizontalGutters>
+  </Fragment>
 );
 
 export const ComponentWithResponsive = withResponsive(Component);
