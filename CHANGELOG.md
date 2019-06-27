@@ -1,3 +1,11 @@
+# [1.214.0](https://github.com/lodgify/lodgify-ui/compare/v1.213.0...v1.214.0) (2019-06-27)
+
+
+### Features
+
+* **Checkbox:** expose isFluid and isLeftLabeled props ([d6a32f3](https://github.com/lodgify/lodgify-ui/commit/d6a32f3))
+* **CheckboxInputSegment:** expose component to api ([ae5254e](https://github.com/lodgify/lodgify-ui/commit/ae5254e))
+
 # [1.213.0](https://github.com/lodgify/lodgify-ui/compare/v1.212.3...v1.213.0) (2019-06-27)
 
 
