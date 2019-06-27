@@ -17,6 +17,13 @@ input::placeholder,
   font-family: @bodyFont;
 }
 
+.has-sub-text {
+
+  p {
+    font-family: var(@subtitleFontIdentifier, @subtitleFontDefault) !important;
+  }
+}
+
 /*-------------------
       Base Sizes
 --------------------*/
