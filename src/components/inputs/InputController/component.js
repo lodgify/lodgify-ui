@@ -53,6 +53,7 @@ export class Component extends PureComponent {
       icon,
       initialValue,
       inputOnChangeFunctionName,
+      isCompact,
       isFluid,
       isFocused,
       isValid,
@@ -71,10 +72,11 @@ export class Component extends PureComponent {
     return (
       <Input
         className={getClassNames({
+          compact: isCompact,
           dirty: isDirty,
-          valid: isValid,
           error: error,
           focus: isFocused,
+          valid: isValid,
         })}
         fluid={isFluid}
         iconPosition={icon && 'left'}
@@ -100,6 +102,7 @@ Component.defaultProps = {
   icon: null,
   initialValue: '',
   inputOnChangeFunctionName: 'onChange',
+  isCompact: false,
   isFluid: false,
   isFocused: false,
   label: null,
@@ -121,6 +124,8 @@ Component.propTypes = {
   initialValue: PropTypes.any,
   /** The name of the change function on the input, if not `onChange`.  */
   inputOnChangeFunctionName: PropTypes.string,
+  /** Is the input only taking up as much space as necessary. */
+  isCompact: PropTypes.bool,
   /** Does the input fill the width of its container. */
   isFluid: PropTypes.bool,
   /** Is input in a focused state. */

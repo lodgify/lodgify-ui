@@ -4,6 +4,7 @@ exports[`getPrivacyCheckboxMarkup should return the correct structure 1`] = `
 <Checkbox
   error="privacyConsentInputError"
   isChecked={true}
+  isCompact={false}
   isDisabled={false}
   isRadioButton={false}
   isToggle={false}

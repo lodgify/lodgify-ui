@@ -5,6 +5,9 @@ export { Header } from './components/collections/Header';
 export { Hero } from './components/collections/Hero';
 export { InputGroup } from './components/collections/InputGroup';
 export { TextInputSegment } from './components/collections/TextInputSegment';
+export {
+  ToggleInputSegment,
+} from './components/collections/ToggleInputSegment';
 
 // Elements
 export { BlockPlaceholder } from './components/elements/BlockPlaceholder';

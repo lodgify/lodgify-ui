@@ -343,3 +343,21 @@
     }
   }
 }
+
+.ui.segment.is-input-segment {
+
+  &.is-toggle-input-segment {
+    cursor: pointer;
+    user-select: none;
+
+    .ui.input,
+    .ui.form .ui.input {
+
+      .ui.toggle.checkbox input {
+        position: static;
+        top: auto;
+        left: auto;
+      }
+    }
+  }
+}

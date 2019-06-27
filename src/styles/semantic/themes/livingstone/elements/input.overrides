@@ -11,6 +11,10 @@
   max-width: @inputMaxWidth;
   width: @inputWidth;
 
+  &.compact {
+    width: auto;
+  }
+
   &,
   & > input {
     font-family: @bodyFont;

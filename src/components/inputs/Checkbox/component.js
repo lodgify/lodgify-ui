@@ -15,6 +15,7 @@ export const Component = ({
   error,
   isDisabled,
   isChecked,
+  isCompact,
   isRadioButton,
   isToggle,
   label,
@@ -25,6 +26,7 @@ export const Component = ({
   <InputController
     adaptOnChangeEvent={adaptOnChangeEvent}
     error={error}
+    isCompact={isCompact}
     isValid={false}
     mapValueToProps={mapValueToProps}
     name={name}
@@ -46,6 +48,7 @@ Component.displayName = 'Checkbox';
 Component.defaultProps = {
   error: false,
   isChecked: undefined,
+  isCompact: false,
   isDisabled: false,
   isToggle: false,
   isRadioButton: false,
@@ -60,6 +63,8 @@ Component.propTypes = {
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   /** Is the checkbox checked. */
   isChecked: PropTypes.bool,
+  /** Is the checkbox only taking up as much space as necessary. */
+  isCompact: PropTypes.bool,
   /** Is the checkbox disabled. */
   isDisabled: PropTypes.bool,
   /** Is the checkbox formatted as a radio button. Prefer using the <RadioButton> component instead */

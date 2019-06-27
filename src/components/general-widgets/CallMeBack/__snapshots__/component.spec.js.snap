@@ -157,6 +157,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -233,6 +234,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -326,6 +328,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -395,6 +398,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                             icon={null}
                             initialValue={null}
                             inputOnChangeFunctionName="onDateChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -1218,6 +1222,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -1264,6 +1269,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                   >
                     <Checkbox
                       error={false}
+                      isCompact={false}
                       isDisabled={false}
                       isRadioButton={false}
                       isToggle={false}
@@ -1290,6 +1296,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -1553,6 +1560,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -1629,6 +1637,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -1722,6 +1731,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -1791,6 +1801,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                             icon={null}
                             initialValue={null}
                             inputOnChangeFunctionName="onDateChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -2313,6 +2324,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -2558,6 +2570,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -2634,6 +2647,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             }
                             initialValue=""
                             inputOnChangeFunctionName="onChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -2727,6 +2741,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -2796,6 +2811,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             icon={null}
                             initialValue={null}
                             inputOnChangeFunctionName="onDateChange"
+                            isCompact={false}
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
@@ -3619,6 +3635,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}

@@ -451,6 +451,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onDatesChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -611,6 +612,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     }
                     initialValue=""
                     inputOnChangeFunctionName="onChange"
+                    isCompact={false}
                     isFluid={false}
                     isFocused={false}
                     isValid={false}
@@ -1587,6 +1589,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                                 icon={null}
                                                 initialValue=""
                                                 inputOnChangeFunctionName="onDatesChange"
+                                                isCompact={false}
                                                 isFluid={false}
                                                 isFocused={false}
                                                 isValid={false}
@@ -1747,6 +1750,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                             }
                                             initialValue=""
                                             inputOnChangeFunctionName="onChange"
+                                            isCompact={false}
                                             isFluid={false}
                                             isFocused={false}
                                             isValid={false}
@@ -2405,6 +2409,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onDatesChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -2565,6 +2570,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     }
                     initialValue=""
                     inputOnChangeFunctionName="onChange"
+                    isCompact={false}
                     isFluid={false}
                     isFocused={false}
                     isValid={false}
@@ -2819,6 +2825,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onDatesChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -2979,6 +2986,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     }
                     initialValue=""
                     inputOnChangeFunctionName="onChange"
+                    isCompact={false}
                     isFluid={false}
                     isFocused={false}
                     isValid={false}
@@ -3562,6 +3570,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         icon={null}
                         initialValue=""
                         inputOnChangeFunctionName="onDatesChange"
+                        isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
@@ -3722,6 +3731,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     }
                     initialValue=""
                     inputOnChangeFunctionName="onChange"
+                    isCompact={false}
                     isFluid={false}
                     isFocused={false}
                     isValid={false}
