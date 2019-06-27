@@ -1,3 +1,10 @@
+## [1.212.2](https://github.com/lodgify/lodgify-ui/compare/v1.212.1...v1.212.2) (2019-06-27)
+
+
+### Bug Fixes
+
+* **Hero:** bump z-index up one for content dropdown to appear elements below hero in page ([bb77012](https://github.com/lodgify/lodgify-ui/commit/bb77012))
+
 ## [1.212.1](https://github.com/lodgify/lodgify-ui/compare/v1.212.0...v1.212.1) (2019-06-27)
 
 
