@@ -1,3 +1,10 @@
+## [1.212.1](https://github.com/lodgify/lodgify-ui/compare/v1.212.0...v1.212.1) (2019-06-27)
+
+
+### Bug Fixes
+
+* **PropertyPageSearchResultList:** respect updates to search results ([93aefdb](https://github.com/lodgify/lodgify-ui/commit/93aefdb))
+
 # [1.212.0](https://github.com/lodgify/lodgify-ui/compare/v1.211.0...v1.212.0) (2019-06-27)
 
 
