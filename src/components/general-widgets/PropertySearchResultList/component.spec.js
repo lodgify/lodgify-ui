@@ -9,18 +9,31 @@ jest.mock('general-widgets/PropertySearchResult', () => {
 
   return { PropertySearchResult };
 });
+jest.mock('./utils/getPropertySearchResultsToDisplay');
 
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { getPropertySearchResultsToDisplay } from './utils/getPropertySearchResultsToDisplay';
 import { Component as PropertySearchResultList } from './component';
 import {
   propertySearchResults,
   moreThan12PropertySearchResults,
 } from './mock-data/mock-data';
 
-const getPropertySearchResultList = otherProps =>
+getPropertySearchResultsToDisplay.mockImplementation(
+  (activePage, propertySearchResults) => propertySearchResults
+);
+
+const getShallowPropertySearchResultList = otherProps =>
+  shallow(
+    <PropertySearchResultList
+      propertySearchResults={propertySearchResults}
+      {...otherProps}
+    />
+  );
+const getMountedPropertySearchResultList = otherProps =>
   mount(
     <PropertySearchResultList
       propertySearchResults={propertySearchResults}
@@ -31,7 +44,7 @@ const getPropertySearchResultList = otherProps =>
 describe('<PropertySearchResultList />', () => {
   describe('by default', () => {
     it('should render the right structure', () => {
-      const actual = getPropertySearchResultList();
+      const actual = getMountedPropertySearchResultList();
 
       expect(actual).toMatchSnapshot();
     });
@@ -39,7 +52,7 @@ describe('<PropertySearchResultList />', () => {
 
   describe('if `props.propertySearchResults.length` > 12 ', () => {
     it('should render the right structure', () => {
-      const actual = getPropertySearchResultList({
+      const actual = getMountedPropertySearchResultList({
         propertySearchResults: moreThan12PropertySearchResults,
       });
 
@@ -49,7 +62,7 @@ describe('<PropertySearchResultList />', () => {
 
   describe('if `props.isShowingPlaceholder` is true', () => {
     it('should render the right structure', () => {
-      const actual = getPropertySearchResultList({
+      const actual = getMountedPropertySearchResultList({
         isShowingPlaceholder: true,
         propertySearchResults: [],
       });
@@ -61,7 +74,7 @@ describe('<PropertySearchResultList />', () => {
   describe('if `props.resultsCountText` is passed', () => {
     it('should render the right structure', () => {
       const resultsCountText = 'My god I love Cliff Richard';
-      const actual = getPropertySearchResultList({ resultsCountText });
+      const actual = getMountedPropertySearchResultList({ resultsCountText });
 
       expect(actual).toMatchSnapshot();
     });
@@ -69,7 +82,7 @@ describe('<PropertySearchResultList />', () => {
 
   describe('if `props.dropdownOptions` is passed', () => {
     it('should render the right structure', () => {
-      const actual = getPropertySearchResultList({
+      const actual = getMountedPropertySearchResultList({
         dropdownLabel: 'some label',
         dropdownOnChange: () => {},
         dropdownOptions: [
@@ -88,7 +101,7 @@ describe('<PropertySearchResultList />', () => {
 
   describe('if `props.messageText` is passed', () => {
     it('should render the right structure', () => {
-      const actual = getPropertySearchResultList({
+      const actual = getMountedPropertySearchResultList({
         messageButtonText: 'Some button text',
         messageText: 'Some message text',
       });
@@ -97,17 +110,102 @@ describe('<PropertySearchResultList />', () => {
     });
   });
 
+  describe('componentDidUpdate', () => {
+    describe('if neither `state.activePage` nor `props.propertySearchResults` has changed', () => {
+      it('should not call `setState`', () => {
+        const propertySearchResults = [];
+        const wrapper = getShallowPropertySearchResultList({
+          propertySearchResults,
+        });
+
+        wrapper.instance().setState = jest.fn();
+        wrapper
+          .instance()
+          .componentDidUpdate({ propertySearchResults }, { activePage: 1 });
+
+        expect(wrapper.instance().setState).not.toHaveBeenCalled();
+      });
+    });
+
+    describe('if `state.activePage` has changed', () => {
+      it('should call `getPropertySearchResultsToDisplay` with the right arguments', () => {
+        const propertySearchResults = [];
+        const wrapper = getShallowPropertySearchResultList({
+          propertySearchResults,
+        });
+
+        wrapper
+          .instance()
+          .componentDidUpdate({ propertySearchResults }, { activePage: 2 });
+
+        expect(getPropertySearchResultsToDisplay).toHaveBeenCalledWith(
+          1,
+          propertySearchResults
+        );
+      });
+
+      it('should call `setState` with the right arguments', () => {
+        const propertySearchResults = [];
+        const wrapper = getShallowPropertySearchResultList({
+          propertySearchResults,
+        });
+
+        wrapper.instance().setState = jest.fn();
+        wrapper
+          .instance()
+          .componentDidUpdate({ propertySearchResults }, { activePage: 2 });
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          propertySearchResultsToDisplay: propertySearchResults,
+        });
+      });
+    });
+
+    describe('if `props.propertySearchResults` has changed', () => {
+      it('should call `getPropertySearchResultsToDisplay` with the right arguments', () => {
+        const propertySearchResults = [];
+        const wrapper = getShallowPropertySearchResultList({
+          propertySearchResults,
+        });
+
+        wrapper
+          .instance()
+          .componentDidUpdate({ propertySearchResults: [] }, { activePage: 1 });
+
+        expect(getPropertySearchResultsToDisplay).toHaveBeenCalledWith(
+          1,
+          propertySearchResults
+        );
+      });
+
+      it('should call `setState` with the right arguments', () => {
+        const propertySearchResults = [];
+        const wrapper = getShallowPropertySearchResultList({
+          propertySearchResults,
+        });
+
+        wrapper.instance().setState = jest.fn();
+        wrapper
+          .instance()
+          .componentDidUpdate({ propertySearchResults: [] }, { activePage: 1 });
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          propertySearchResultsToDisplay: propertySearchResults,
+        });
+      });
+    });
+  });
+
   describe('this.handleOnPageChange', () => {
     it('should call `setState` with the right arguments', () => {
       const activePage = 1;
-      const wrapper = getPropertySearchResultList();
+      const wrapper = getShallowPropertySearchResultList();
 
       wrapper.instance().setState = jest.fn();
       wrapper.instance().handleOnPageChange({}, { activePage });
 
       expect(wrapper.instance().setState).toHaveBeenCalledWith({
         activePage,
-        propertySearchResultsToDisplay: expect.any(Object),
       });
     });
   });

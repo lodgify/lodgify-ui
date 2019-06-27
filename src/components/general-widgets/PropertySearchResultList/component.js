@@ -35,15 +35,28 @@ export class Component extends PureComponent {
     ),
   };
 
-  handleOnPageChange = (event, { activePage }) => {
+  componentDidUpdate = (
+    { propertySearchResults: previousPropertySearchResults },
+    { activePage: previousActivePage }
+  ) => {
+    const { propertySearchResults } = this.props;
+    const { activePage } = this.state;
+
+    if (
+      activePage === previousActivePage &&
+      propertySearchResults === previousPropertySearchResults
+    )
+      return;
+
     this.setState({
-      activePage,
       propertySearchResultsToDisplay: getPropertySearchResultsToDisplay(
         activePage,
-        this.props.propertySearchResults
+        propertySearchResults
       ),
     });
   };
+
+  handleOnPageChange = (event, { activePage }) => this.setState({ activePage });
 
   render = () => {
     const {

@@ -1,3 +1,17 @@
+# [1.212.0](https://github.com/lodgify/lodgify-ui/compare/v1.211.0...v1.212.0) (2019-06-27)
+
+
+### Bug Fixes
+
+* **Toggle:** only checked toggles take themeActionColor ([1c4332c](https://github.com/lodgify/lodgify-ui/commit/1c4332c))
+
+
+### Features
+
+* **Checkbox:** expose isCompact prop ([4ae84b7](https://github.com/lodgify/lodgify-ui/commit/4ae84b7))
+* **TextInputSegment:** expose component to api ([6e4fca0](https://github.com/lodgify/lodgify-ui/commit/6e4fca0))
+* **ToggleInputSegment:** expose component to api ([2bc6905](https://github.com/lodgify/lodgify-ui/commit/2bc6905))
+
 # [1.211.0](https://github.com/lodgify/lodgify-ui/compare/v1.210.0...v1.211.0) (2019-06-26)
 
 
