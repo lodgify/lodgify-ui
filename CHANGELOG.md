@@ -1,3 +1,15 @@
+# [1.213.0](https://github.com/lodgify/lodgify-ui/compare/v1.212.3...v1.213.0) (2019-06-27)
+
+
+### Bug Fixes
+
+* **EmailCapture:** privacy policy button is aligned with text ([09c3b31](https://github.com/lodgify/lodgify-ui/commit/09c3b31))
+
+
+### Features
+
+* **EmailCapture:** show messaging above inputs ([4dff977](https://github.com/lodgify/lodgify-ui/commit/4dff977))
+
 ## [1.212.3](https://github.com/lodgify/lodgify-ui/compare/v1.212.2...v1.212.3) (2019-06-27)
 
 
