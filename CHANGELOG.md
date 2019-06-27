@@ -1,3 +1,10 @@
+## [1.212.3](https://github.com/lodgify/lodgify-ui/compare/v1.212.2...v1.212.3) (2019-06-27)
+
+
+### Bug Fixes
+
+* **globals:** logo sub text takes subtitle font var ([93a0488](https://github.com/lodgify/lodgify-ui/commit/93a0488))
+
 ## [1.212.2](https://github.com/lodgify/lodgify-ui/compare/v1.212.1...v1.212.2) (2019-06-27)
 
 
