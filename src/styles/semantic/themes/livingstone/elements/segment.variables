@@ -93,7 +93,7 @@
 @promotionContentLayerZIndex: @promotionAfterLayerZIndex + 1;
 
 /* Is Hero */
-@heroZIndex: @zIndexLevelOne;
+@heroZIndex: @zIndexLevelOne + 1;
 @heroImageZIndex: @heroZIndex + 1;
 @heroGradientZIndex: @heroImageZIndex + 1;
 @heroContentZIndex: @heroGradientZIndex + 1;
