@@ -1,3 +1,10 @@
+# [1.211.0](https://github.com/lodgify/lodgify-ui/compare/v1.210.0...v1.211.0) (2019-06-26)
+
+
+### Features
+
+* **TextInputSegment:** expose component to api ([be16337](https://github.com/lodgify/lodgify-ui/commit/be16337))
+
 # [1.210.0](https://github.com/lodgify/lodgify-ui/compare/v1.209.1...v1.210.0) (2019-06-26)
 
 
