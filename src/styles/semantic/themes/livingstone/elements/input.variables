@@ -35,7 +35,7 @@
 @checkboxToggleLabelTopPosition: @1px;
 @checkboxPrivacyConsentLabelButtonPadding:  0 0 0 @6px;
 @checkboxPrivacyConsentParagraphLineHeight: @17px;
-@checkboxPrivacyConsentButtonBottomMargin: @7px;
+@checkboxPrivacyConsentButtonBottomMargin: @17px;
 
 /* Date Range Picker Input */
 @dateRangePickerMinWidth: 135px;
