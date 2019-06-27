@@ -1,0 +1,377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CheckboxInputSegment /> by default should return the right structure 1`] = `
+<CheckboxInputSegment
+  checkboxes={
+    Array [
+      Object {
+        "label": "yo",
+      },
+    ]
+  }
+  heading="🧢"
+  isUserOnMobile={false}
+>
+  <Segment
+    className="is-input-segment"
+    vertical={true}
+  >
+    <div
+      className="ui vertical segment is-input-segment"
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems="baseline"
+        flexDirection="column"
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "baseline",
+              "display": "flex",
+              "flexDirection": "column",
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            <Header
+              as="h3"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h3
+                className="ui header"
+              >
+                🧢
+              </h3>
+            </Header>
+          </Heading>
+          <Divider
+            className=""
+            hasLine={false}
+            size="small"
+          >
+            <Divider
+              className="is-size-small"
+              hidden={true}
+              section={false}
+            >
+              <div
+                className="ui hidden divider is-size-small"
+              />
+            </Divider>
+          </Divider>
+          <Grid
+            areColumnsCentered={false}
+            columns={2}
+            isStackable={false}
+          >
+            <Grid
+              centered={false}
+              columns={2}
+              stackable={false}
+            >
+              <div
+                className="ui two column grid"
+              >
+                <GridColumn
+                  key="yo"
+                  verticalAlignContent="top"
+                  width={null}
+                >
+                  <GridColumn
+                    verticalAlign="top"
+                    width={null}
+                  >
+                    <div
+                      className="top aligned column"
+                    >
+                      <Checkbox
+                        error={false}
+                        isCompact={false}
+                        isDisabled={false}
+                        isFluid={false}
+                        isLabelLeft={false}
+                        isRadioButton={false}
+                        isToggle={false}
+                        label="yo"
+                        name=""
+                        onChange={[Function]}
+                        onClick={[Function]}
+                      >
+                        <InputController
+                          adaptOnChangeEvent={[Function]}
+                          error={false}
+                          icon={null}
+                          initialValue=""
+                          inputOnChangeFunctionName="onChange"
+                          isCompact={false}
+                          isFluid={false}
+                          isFocused={false}
+                          isValid={false}
+                          label={null}
+                          mapValueToProps={[Function]}
+                          name=""
+                          onChange={[Function]}
+                        >
+                          <Input
+                            className=""
+                            fluid={false}
+                            iconPosition={null}
+                            type="text"
+                          >
+                            <div
+                              className="ui input"
+                            >
+                              <Checkbox
+                                checked={false}
+                                className=""
+                                disabled={false}
+                                key=".0"
+                                label="yo"
+                                onChange={[Function]}
+                                onClick={[Function]}
+                                radio={false}
+                                toggle={false}
+                                type="checkbox"
+                              >
+                                <div
+                                  className="ui checkbox"
+                                  onChange={[Function]}
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                >
+                                  <input
+                                    checked={false}
+                                    className="hidden"
+                                    onClick={[Function]}
+                                    readOnly={true}
+                                    tabIndex={0}
+                                    type="checkbox"
+                                  />
+                                  <label
+                                    key="yo"
+                                  >
+                                    yo
+                                  </label>
+                                </div>
+                              </Checkbox>
+                            </div>
+                          </Input>
+                        </InputController>
+                      </Checkbox>
+                    </div>
+                  </GridColumn>
+                </GridColumn>
+              </div>
+            </Grid>
+          </Grid>
+        </div>
+      </FlexContainer>
+    </div>
+  </Segment>
+</CheckboxInputSegment>
+`;
+
+exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return the right structure 1`] = `
+<CheckboxInputSegment
+  checkboxes={
+    Array [
+      Object {
+        "label": "yo",
+      },
+    ]
+  }
+  heading="🧢"
+  isUserOnMobile={true}
+>
+  <Segment
+    className="is-input-segment"
+    vertical={true}
+  >
+    <div
+      className="ui vertical segment is-input-segment"
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems="baseline"
+        flexDirection="column"
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "baseline",
+              "display": "flex",
+              "flexDirection": "column",
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            <Header
+              as="h3"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h3
+                className="ui header"
+              >
+                🧢
+              </h3>
+            </Header>
+          </Heading>
+          <Divider
+            className=""
+            hasLine={false}
+            size="small"
+          >
+            <Divider
+              className="is-size-small"
+              hidden={true}
+              section={false}
+            >
+              <div
+                className="ui hidden divider is-size-small"
+              />
+            </Divider>
+          </Divider>
+          <Grid
+            areColumnsCentered={false}
+            columns={1}
+            isStackable={false}
+          >
+            <Grid
+              centered={false}
+              columns={1}
+              stackable={false}
+            >
+              <div
+                className="ui one column grid"
+              >
+                <GridColumn
+                  key="yo"
+                  verticalAlignContent="top"
+                  width={null}
+                >
+                  <GridColumn
+                    verticalAlign="top"
+                    width={null}
+                  >
+                    <div
+                      className="top aligned column"
+                    >
+                      <Checkbox
+                        error={false}
+                        isCompact={false}
+                        isDisabled={false}
+                        isFluid={true}
+                        isLabelLeft={true}
+                        isRadioButton={false}
+                        isToggle={false}
+                        label="yo"
+                        name=""
+                        onChange={[Function]}
+                        onClick={[Function]}
+                      >
+                        <InputController
+                          adaptOnChangeEvent={[Function]}
+                          error={false}
+                          icon={null}
+                          initialValue=""
+                          inputOnChangeFunctionName="onChange"
+                          isCompact={false}
+                          isFluid={true}
+                          isFocused={false}
+                          isValid={false}
+                          label={null}
+                          mapValueToProps={[Function]}
+                          name=""
+                          onChange={[Function]}
+                        >
+                          <Input
+                            className=""
+                            fluid={true}
+                            iconPosition={null}
+                            type="text"
+                          >
+                            <div
+                              className="ui fluid input"
+                            >
+                              <Checkbox
+                                checked={false}
+                                className="is-label-left is-fluid"
+                                disabled={false}
+                                key=".0"
+                                label="yo"
+                                onChange={[Function]}
+                                onClick={[Function]}
+                                radio={false}
+                                toggle={false}
+                                type="checkbox"
+                              >
+                                <div
+                                  className="ui checkbox is-label-left is-fluid"
+                                  onChange={[Function]}
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                >
+                                  <input
+                                    checked={false}
+                                    className="hidden"
+                                    onClick={[Function]}
+                                    readOnly={true}
+                                    tabIndex={0}
+                                    type="checkbox"
+                                  />
+                                  <label
+                                    key="yo"
+                                  >
+                                    yo
+                                  </label>
+                                </div>
+                              </Checkbox>
+                            </div>
+                          </Input>
+                        </InputController>
+                      </Checkbox>
+                    </div>
+                  </GridColumn>
+                </GridColumn>
+              </div>
+            </Grid>
+          </Grid>
+        </div>
+      </FlexContainer>
+    </div>
+  </Segment>
+</CheckboxInputSegment>
+`;

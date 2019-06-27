@@ -80,3 +80,7 @@
 /*-------------------
       Variations
 --------------------*/
+
+/* Left labeled */
+@isLeftLabelPadding: 0 @26px 0 0;
+@isLeftLabelTickRightPosition: @1px;

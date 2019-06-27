@@ -69,6 +69,8 @@ exports[`Component by default should render the right structure 1`] = `
               isChecked={false}
               isCompact={true}
               isDisabled={false}
+              isFluid={false}
+              isLabelLeft={false}
               isRadioButton={false}
               isToggle={true}
               label=""
@@ -103,6 +105,7 @@ exports[`Component by default should render the right structure 1`] = `
                   >
                     <Checkbox
                       checked={false}
+                      className=""
                       disabled={false}
                       key=".0"
                       label=""
@@ -222,6 +225,8 @@ exports[`Component if \`props.description\` is passed should render the right st
               isChecked={false}
               isCompact={true}
               isDisabled={false}
+              isFluid={false}
+              isLabelLeft={false}
               isRadioButton={false}
               isToggle={true}
               label=""
@@ -256,6 +261,7 @@ exports[`Component if \`props.description\` is passed should render the right st
                   >
                     <Checkbox
                       checked={false}
+                      className=""
                       disabled={false}
                       key=".0"
                       label=""

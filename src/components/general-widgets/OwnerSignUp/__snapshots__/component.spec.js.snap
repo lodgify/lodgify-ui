@@ -276,6 +276,8 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                       error={false}
                       isCompact={false}
                       isDisabled={false}
+                      isFluid={false}
+                      isLabelLeft={false}
                       isRadioButton={false}
                       isToggle={false}
                       label={
@@ -321,6 +323,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                           >
                             <Checkbox
                               checked={false}
+                              className=""
                               disabled={false}
                               key=".0"
                               label={

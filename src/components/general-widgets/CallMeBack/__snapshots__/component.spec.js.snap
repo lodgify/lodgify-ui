@@ -1271,6 +1271,8 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                       error={false}
                       isCompact={false}
                       isDisabled={false}
+                      isFluid={false}
+                      isLabelLeft={false}
                       isRadioButton={false}
                       isToggle={false}
                       label={
@@ -1316,6 +1318,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                           >
                             <Checkbox
                               checked={false}
+                              className=""
                               disabled={false}
                               key=".0"
                               label={

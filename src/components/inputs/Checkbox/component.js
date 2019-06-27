@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Checkbox } from 'semantic-ui-react';
+import getClassNames from 'classnames';
 
 import { InputController } from '../InputController';
 
@@ -13,9 +14,11 @@ import { adaptOnChangeEvent } from './utils/adaptOnChangeEvent';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   error,
-  isDisabled,
   isChecked,
   isCompact,
+  isDisabled,
+  isFluid,
+  isLabelLeft,
   isRadioButton,
   isToggle,
   label,
@@ -27,6 +30,7 @@ export const Component = ({
     adaptOnChangeEvent={adaptOnChangeEvent}
     error={error}
     isCompact={isCompact}
+    isFluid={isFluid}
     isValid={false}
     mapValueToProps={mapValueToProps}
     name={name}
@@ -34,6 +38,10 @@ export const Component = ({
     value={isChecked}
   >
     <Checkbox
+      className={getClassNames({
+        'is-label-left': isLabelLeft,
+        'is-fluid': isFluid,
+      })}
       disabled={isDisabled}
       label={label}
       onClick={onClick}
@@ -50,6 +58,8 @@ Component.defaultProps = {
   isChecked: undefined,
   isCompact: false,
   isDisabled: false,
+  isFluid: false,
+  isLabelLeft: false,
   isToggle: false,
   isRadioButton: false,
   label: '',
@@ -67,6 +77,10 @@ Component.propTypes = {
   isCompact: PropTypes.bool,
   /** Is the checkbox disabled. */
   isDisabled: PropTypes.bool,
+  /** The checkbox fills the width of its parent. */
+  isFluid: PropTypes.bool,
+  /** Is the label on the left hand side of the checkbox. */
+  isLabelLeft: PropTypes.bool,
   /** Is the checkbox formatted as a radio button. Prefer using the <RadioButton> component instead */
   isRadioButton: PropTypes.bool,
   /** Format to show an on or off choice. */
@@ -78,7 +92,7 @@ Component.propTypes = {
   /**
    * Event called when the checkbox value changes.
    * @param {String} name
-   * @param{boolean} value
+   * @param {boolean} value
    */
   onChange: PropTypes.func,
   /**

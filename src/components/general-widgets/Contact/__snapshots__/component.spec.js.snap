@@ -626,6 +626,8 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                       error={false}
                       isCompact={false}
                       isDisabled={false}
+                      isFluid={false}
+                      isLabelLeft={false}
                       isRadioButton={false}
                       isToggle={false}
                       label={
@@ -671,6 +673,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           >
                             <Checkbox
                               checked={false}
+                              className=""
                               disabled={false}
                               key=".0"
                               label={
