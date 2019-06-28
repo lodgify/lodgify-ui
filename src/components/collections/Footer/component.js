@@ -11,7 +11,7 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Divider } from 'elements/Divider';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import { getHrefTelString } from 'utils/get-href-tel-string';
-import { EMAIL, FAX } from 'utils/default-strings/constants';
+import { EMAIL, FAX, FORM_PROTECTION } from 'utils/default-strings/constants';
 
 import { getHrefFaxString } from './utils/getHrefFaxString';
 import { getHrefMailToString } from './utils/getHrefMailToString';
@@ -31,6 +31,7 @@ export const Component = ({
   currencyValue,
   emailAddress,
   emailAddressLabel,
+  emailBotProtectionMessage,
   emailCaptureButtonText,
   emailCaptureErrorMessage,
   emailCaptureHeadingText,
@@ -46,6 +47,7 @@ export const Component = ({
   faxNumber,
   faxNumberLabel,
   hasEmailCapture,
+  isEmailBotProtected,
   isEmailCapturePrivacyConsentInputChecked,
   isEmailCapturePrivacyConsentRequired,
   languageOptions,
@@ -68,8 +70,10 @@ export const Component = ({
         emailInputValue={emailCaptureInputValue}
         errorMessage={emailCaptureErrorMessage}
         headingText={emailCaptureHeadingText}
+        isBotProtected={isEmailBotProtected}
         isPrivacyConsentInputChecked={isEmailCapturePrivacyConsentInputChecked}
         isPrivacyConsentRequired={isEmailCapturePrivacyConsentRequired}
+        notProtectionMessage={emailBotProtectionMessage}
         onChangeEmailInput={onChangeEmailCaptureInput}
         onClickButton={emailCaptureOnClickButton}
         onClickPrivacyConsentInput={onClickEmailCapturePrivacyConsentInput}
@@ -189,6 +193,7 @@ Component.defaultProps = {
   currencyValue: null,
   emailAddress: undefined,
   emailAddressLabel: EMAIL,
+  emailBotProtectionMessage: FORM_PROTECTION,
   emailCaptureButtonText: undefined,
   emailCaptureErrorMessage: undefined,
   emailCaptureHeadingText: undefined,
@@ -204,6 +209,7 @@ Component.defaultProps = {
   faxNumber: undefined,
   faxNumberLabel: FAX,
   hasEmailCapture: false,
+  isEmailBotProtected: false,
   isEmailCapturePrivacyConsentInputChecked: undefined,
   isEmailCapturePrivacyConsentRequired: undefined,
   languageOptions: [],
@@ -244,6 +250,11 @@ Component.propTypes = {
   emailAddress: PropTypes.string,
   /** The label for the email address. */
   emailAddressLabel: PropTypes.string,
+  /** The bot protection message that displays in the email capture form. */
+  emailBotProtectionMessage: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.node,
+  ]),
   /** The text to display on the button on the email capture form. */
   emailCaptureButtonText: PropTypes.string,
   /** An error message to display in place of the email capture form. */
@@ -279,6 +290,8 @@ Component.propTypes = {
   faxNumberLabel: PropTypes.string,
   /** Does the footer have an email capture form showing. */
   hasEmailCapture: PropTypes.bool,
+  /** Displays a bot protection message in the email capture form. */
+  isEmailBotProtected: PropTypes.bool,
   /** The value of the privacy consent checkbox. */
   isEmailCapturePrivacyConsentInputChecked: PropTypes.bool,
   /** Displays a privacy consent checkbox in the email capture form. */

@@ -17,8 +17,10 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
   }
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
@@ -620,8 +622,10 @@ exports[`<Footer /> if \`props.currencyOptions\` is an empty array or undefined 
   currencyOptions={Array []}
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
@@ -976,8 +980,10 @@ exports[`<Footer /> if \`props.emailAddress\` is passed should render the right 
   currencyValue={null}
   emailAddress="adsf@asdf.com"
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
@@ -1596,9 +1602,11 @@ exports[`<Footer /> if \`props.faxNumber\` is passed should render the right str
   }
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumber="123456"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
@@ -2217,8 +2225,10 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
   }
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={true}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
@@ -2239,22 +2249,30 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
   socialMediaLinks={Array []}
 >
   <footer>
-    <WithResponsive(undefined)>
+    <WithResponsive(undefined)
+      isBotProtected={false}
+      notProtectionMessage="This form is protected against bots"
+    >
       <Responsive
         as={[Function]}
+        isBotProtected={false}
         isUserOnMobile={false}
+        notProtectionMessage="This form is protected against bots"
         onUpdate={[Function]}
         windowInnerWidth={1024}
       >
         <EmailCapture
+          botProtectionMessage="This form is protected against bots"
           buttonText="Subscribe"
           emailInputError={false}
           emailInputLabel="Your email"
           errorMessage={null}
           headingText="Subscribe to our newsletter"
+          isBotProtected={false}
           isPrivacyConsentInputChecked={false}
           isPrivacyConsentRequired={false}
           isUserOnMobile={false}
+          notProtectionMessage="This form is protected against bots"
           onChangeEmailInput={[Function]}
           onClickButton={[Function]}
           onClickPrivacyConsentInput={[Function]}
@@ -3145,8 +3163,10 @@ exports[`<Footer /> if \`props.languageOptions\` is an empty array or undefined 
   }
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={Array []}
   languageValue={null}
   navigationItems={null}
@@ -3529,8 +3549,10 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
   }
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
@@ -4258,8 +4280,10 @@ exports[`<Footer /> if \`props.navigationItems\` are passed should render the ri
   }
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
@@ -4909,8 +4933,10 @@ exports[`<Footer /> if \`props.propertyAddress\` is passed should render the rig
   }
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
@@ -5523,8 +5549,10 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
   }
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
@@ -6222,8 +6250,10 @@ exports[`<Footer /> should render the right structure 1`] = `
   }
   currencyValue={null}
   emailAddressLabel="Email"
+  emailBotProtectionMessage="This form is protected against bots"
   faxNumberLabel="Fax"
   hasEmailCapture={false}
+  isEmailBotProtected={false}
   languageOptions={
     Array [
       Object {
