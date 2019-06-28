@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should render the right structure 1`] = `
+exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right structure 1`] = `
 <OwnerSignUp
+  botProtectionMessage="This form is protected against bots"
   emailInputLabel="Email"
   errorMessage=""
   firstNameInputLabel="First Name"
   headingText="Owner Signup"
-  isPrivacyConsentRequired={true}
+  isBotProtected={true}
+  isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
   privacyConsentLabelText="I accept the privacy policy."
@@ -272,6 +274,333 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                   <div
                     className="field"
                   >
+                    This form is protected against bots
+                  </div>
+                </FormField>
+                <Button
+                  hasShadow={false}
+                  icon={null}
+                  isCompact={false}
+                  isDisabled={false}
+                  isFluid={false}
+                  isFormSubmit={true}
+                  isLoading={false}
+                  isOutlined={false}
+                  isPositionedRight={true}
+                  isRounded={true}
+                  isSecondary={false}
+                  onClick={[Function]}
+                  size={null}
+                >
+                  <Button
+                    as="button"
+                    basic={false}
+                    circular={true}
+                    className=""
+                    compact={false}
+                    disabled={false}
+                    floated="right"
+                    fluid={false}
+                    loading={false}
+                    onClick={[Function]}
+                    secondary={false}
+                    size={null}
+                    type="submit"
+                  >
+                    <button
+                      className="ui circular right floated button"
+                      onClick={[Function]}
+                      role="button"
+                      type="submit"
+                    >
+                      Sign up
+                    </button>
+                  </Button>
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </Form>
+</OwnerSignUp>
+`;
+
+exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should render the right structure 1`] = `
+<OwnerSignUp
+  botProtectionMessage="This form is protected against bots"
+  emailInputLabel="Email"
+  errorMessage=""
+  firstNameInputLabel="First Name"
+  headingText="Owner Signup"
+  isBotProtected={false}
+  isPrivacyConsentRequired={true}
+  lastNameInputLabel="Last Name"
+  onSubmit={[Function]}
+  privacyConsentLabelText="I accept the privacy policy."
+  submitButtonText="Sign up"
+  successMessage=""
+  validation={Object {}}
+>
+  <Form
+    actionLink={null}
+    autoComplete={null}
+    errorMessage=""
+    headingText="Owner Signup"
+    onSubmit={[Function]}
+    submitButtonText="Sign up"
+    successMessage=""
+    validation={Object {}}
+  >
+    <Card
+      className="has-form"
+      fluid={true}
+    >
+      <div
+        className="ui fluid card has-form"
+        onClick={[Function]}
+      >
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Heading
+              className={null}
+              hasMargin={true}
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              <Header
+                as="h3"
+                className=""
+                inverted={false}
+                textAlign={null}
+              >
+                <h3
+                  className="ui header"
+                >
+                  Owner Signup
+                </h3>
+              </Header>
+            </Heading>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Form
+              as="form"
+              autoComplete={null}
+              error={false}
+              onSubmit={[Function]}
+              success={false}
+            >
+              <form
+                autoComplete={null}
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <FormField
+                  key=".0"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      autoComplete="given-name"
+                      error={false}
+                      isFluid={false}
+                      isValid={false}
+                      label="First Name"
+                      maxCharacters={255}
+                      name="firstName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        adaptOnChangeEvent={[Function]}
+                        error={false}
+                        icon={null}
+                        initialValue=""
+                        inputOnChangeFunctionName="onChange"
+                        isCompact={false}
+                        isFluid={false}
+                        isFocused={false}
+                        isValid={false}
+                        label="First Name"
+                        mapValueToProps={[Function]}
+                        name="firstName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          fluid={false}
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              autoComplete="given-name"
+                              key=".0"
+                              maxLength={255}
+                              name="firstName"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                              value=""
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              First Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".1"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      autoComplete="family-name"
+                      error={false}
+                      isFluid={false}
+                      isValid={false}
+                      label="Last Name"
+                      maxCharacters={80}
+                      name="lastName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        adaptOnChangeEvent={[Function]}
+                        error={false}
+                        icon={null}
+                        initialValue=""
+                        inputOnChangeFunctionName="onChange"
+                        isCompact={false}
+                        isFluid={false}
+                        isFocused={false}
+                        isValid={false}
+                        label="Last Name"
+                        mapValueToProps={[Function]}
+                        name="lastName"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          fluid={false}
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              autoComplete="family-name"
+                              key=".0"
+                              maxLength={80}
+                              name="lastName"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                              value=""
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Last Name
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextInput
+                      autoComplete="email"
+                      error={false}
+                      isFluid={false}
+                      isValid={false}
+                      label="Email"
+                      maxCharacters={80}
+                      name="email"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="text"
+                    >
+                      <InputController
+                        adaptOnChangeEvent={[Function]}
+                        error={false}
+                        icon={null}
+                        initialValue=""
+                        inputOnChangeFunctionName="onChange"
+                        isCompact={false}
+                        isFluid={false}
+                        isFocused={false}
+                        isValid={false}
+                        label="Email"
+                        mapValueToProps={[Function]}
+                        name="email"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          fluid={false}
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <input
+                              autoComplete="email"
+                              key=".0"
+                              maxLength={80}
+                              name="email"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              type="text"
+                              value=""
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Email
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextInput>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".4"
+                >
+                  <div
+                    className="field"
+                  >
                     <Checkbox
                       error={false}
                       isCompact={false}
@@ -432,10 +761,12 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
 
 exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the error message above the submit button 1`] = `
 <OwnerSignUp
+  botProtectionMessage="This form is protected against bots"
   emailInputLabel="Email"
   errorMessage="This is an error message"
   firstNameInputLabel="First Name"
   headingText="Owner Signup"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
@@ -768,10 +1099,12 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
 
 exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the success message above the submit button 1`] = `
 <OwnerSignUp
+  botProtectionMessage="This form is protected against bots"
   emailInputLabel="Email"
   errorMessage=""
   firstNameInputLabel="First Name"
   headingText="Owner Signup"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
@@ -1104,10 +1437,12 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
 
 exports[`<OwnerSignUp /> should render the correct structure 1`] = `
 <OwnerSignUp
+  botProtectionMessage="This form is protected against bots"
   emailInputLabel="Email"
   errorMessage=""
   firstNameInputLabel="First Name"
   headingText="Owner Signup"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   lastNameInputLabel="Last Name"
   onSubmit={[Function]}
