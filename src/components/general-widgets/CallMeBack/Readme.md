@@ -42,6 +42,8 @@ const timeOptions = [
   submitButtonText="Submit form"
   timeInputLabel="Choose an ideal time"
   timeOptions={[]}
+  isBotProtected
+  botProtectionMessage="The form is protected from hackers"
 />
 ```
 
