@@ -13,10 +13,11 @@ import { Checkbox } from 'inputs/Checkbox';
 import {
   ACCEPT_PRIVACY_POLICY,
   ARRIVAL,
-  CONTACT,
   COMMENTS,
+  CONTACT,
   DEPARTURE,
   EMAIL,
+  FORM_PROTECTION,
   GUESTS,
   NAME,
   PHONE,
@@ -39,6 +40,7 @@ import {
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   arrivalDateInputLabel,
+  botProtectionMessage,
   commentsInputLabel,
   dateRangePickerLocaleCode,
   departureDateInputLabel,
@@ -46,6 +48,7 @@ export const Component = ({
   errorMessage,
   guestsInputLabel,
   headingText,
+  isBotProtected,
   isPrivacyConsentRequired,
   nameInputLabel,
   onChangeProperty,
@@ -126,6 +129,7 @@ export const Component = ({
         )}
       </InputGroup>
     )}
+    {isBotProtected && botProtectionMessage}
     {isPrivacyConsentRequired && (
       <Checkbox
         label={getPrivacyConsentLabel(
@@ -143,6 +147,7 @@ Component.displayName = 'Contact';
 
 Component.defaultProps = {
   arrivalDateInputLabel: ARRIVAL,
+  botProtectionMessage: FORM_PROTECTION,
   commentsInputLabel: COMMENTS,
   dateRangePickerLocaleCode: undefined,
   departureDateInputLabel: DEPARTURE,
@@ -150,6 +155,7 @@ Component.defaultProps = {
   errorMessage: '',
   guestsInputLabel: GUESTS,
   headingText: CONTACT,
+  isBotProtected: false,
   isPrivacyConsentRequired: false,
   nameInputLabel: NAME,
   onChangeProperty: Function.prototype,
@@ -170,6 +176,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The label for the arrival date input.*/
   arrivalDateInputLabel: PropTypes.string,
+  /** The bot protection message that displays in the form. */
+  botProtectionMessage: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /** The label for the comments input.*/
   commentsInputLabel: PropTypes.string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
@@ -184,6 +192,8 @@ Component.propTypes = {
   guestsInputLabel: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** Displays a bot protection message in the form. */
+  isBotProtected: PropTypes.bool,
   /** Displays a privacy consent checkbox in the form. */
   isPrivacyConsentRequired: PropTypes.bool,
   /** The label for the name input.*/

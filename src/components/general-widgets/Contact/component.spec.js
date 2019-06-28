@@ -51,6 +51,16 @@ describe('<Contact />', () => {
     });
   });
 
+  describe('if `isBotProtected` === true', () => {
+    it('should render the right structure', () => {
+      const wrapper = getContact({
+        isBotProtected: true,
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   describe('if `isPrivacyConsentRequired` is `truthy`', () => {
     it('should render the right structure', () => {
       const wrapper = getContact({
