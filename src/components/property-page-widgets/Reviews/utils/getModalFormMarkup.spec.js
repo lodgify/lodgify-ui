@@ -49,6 +49,17 @@ describe('getModalFormMarkup', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  describe('if `isBotProtected` === true', () => {
+    it('should render the right structure', () => {
+      const wrapper = getModalForm({
+        ...props,
+        isBotProtected: true,
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   describe('if `isPrivacyConsentRequired` is `truthy`', () => {
     it('should render the right structure', () => {
       const wrapper = getModalForm({

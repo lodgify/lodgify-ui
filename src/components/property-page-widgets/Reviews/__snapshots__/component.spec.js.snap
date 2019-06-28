@@ -2,12 +2,14 @@
 
 exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.reviews\` has length \`0\` should render the right structure 1`] = `
 <Reviews
+  botProtectionMessage="This form is protected against bots"
   commentInputLabel="Comments"
   emailInputLabel="Your email"
   errorMessage=""
   guestTypeInputLabel="Guest Type"
   guestTypeOptions={Array []}
   headingText="Reviews"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   isShowingPlaceholder={true}
   locationInputLabel="Your location"
@@ -1032,12 +1034,14 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
 
 exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render the right structure 1`] = `
 <Reviews
+  botProtectionMessage="This form is protected against bots"
   commentInputLabel="Comments"
   emailInputLabel="Your email"
   errorMessage=""
   guestTypeInputLabel="Guest Type"
   guestTypeOptions={Array []}
   headingText="Reviews"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   isShowingPlaceholder={true}
   locationInputLabel="Your location"
@@ -1971,12 +1975,14 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
 
 exports[`<Reviews /> should render the right structure 1`] = `
 <Reviews
+  botProtectionMessage="This form is protected against bots"
   commentInputLabel="Comments"
   emailInputLabel="Your email"
   errorMessage=""
   guestTypeInputLabel="Guest Type"
   guestTypeOptions={Array []}
   headingText="Reviews"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   isShowingPlaceholder={false}
   locationInputLabel="Your location"

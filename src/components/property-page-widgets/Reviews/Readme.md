@@ -84,6 +84,8 @@ const reviews = [
   titleInputLabel="title"
   yearInputLabel="year"
   yearOptions={yearOptions}
+  isBotProtected
+  botProtectionMessage="The form is protected from hackers"
 />;
 ```
 
