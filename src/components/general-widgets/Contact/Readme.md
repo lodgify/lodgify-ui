@@ -80,6 +80,8 @@ const {
   roomInputLabel="Salon"
   roomOptions={roomOptions}
   submitButtonText="Submit"
+  isBotProtected
+  botProtectionMessage="The form is protected from hackers"
 />
 ```
 

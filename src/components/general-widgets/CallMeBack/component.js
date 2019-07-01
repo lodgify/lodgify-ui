@@ -7,6 +7,7 @@ import {
   CALL_ME_BACK,
   DATE,
   EMAIL,
+  FORM_PROTECTION,
   NAME,
   NOTES,
   PHONE,
@@ -36,10 +37,12 @@ import {
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  botProtectionMessage,
   dateInputPlaceholder,
   emailInputLabel,
   errorMessage,
   headingText,
+  isBotProtected,
   isPrivacyConsentRequired,
   nameInputLabel,
   notesInputLabel,
@@ -106,6 +109,7 @@ export const Component = ({
       maxCharacters={NOTES_MAX_CHARACTERS}
       name="notes"
     />
+    {isBotProtected && botProtectionMessage}
     {isPrivacyConsentRequired && (
       <Checkbox
         label={getPrivacyConsentLabel(
@@ -122,10 +126,12 @@ export const Component = ({
 Component.displayName = 'CallMeBack';
 
 Component.defaultProps = {
+  botProtectionMessage: FORM_PROTECTION,
   dateInputPlaceholder: DATE,
   emailInputLabel: EMAIL,
   errorMessage: '',
   headingText: CALL_ME_BACK,
+  isBotProtected: false,
   isPrivacyConsentRequired: false,
   nameInputLabel: NAME,
   notesInputLabel: NOTES,
@@ -143,6 +149,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** The bot protection message that displays in the form. */
+  botProtectionMessage: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /** The placeholder for the date input. */
   dateInputPlaceholder: PropTypes.string,
   /** The label for the email input. */
@@ -151,6 +159,8 @@ Component.propTypes = {
   errorMessage: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** Displays a bot protection message in the form. */
+  isBotProtected: PropTypes.bool,
   /** Displays a privacy consent checkbox in the form. */
   isPrivacyConsentRequired: PropTypes.bool,
   /** The label for the name input. */

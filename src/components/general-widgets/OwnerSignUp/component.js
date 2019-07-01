@@ -5,6 +5,7 @@ import {
   ACCEPT_PRIVACY_POLICY,
   EMAIL,
   FIRST_NAME,
+  FORM_PROTECTION,
   LAST_NAME,
   OWNER_SIGNUP,
   SIGN_UP,
@@ -25,10 +26,12 @@ import {
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  botProtectionMessage,
   emailInputLabel,
   errorMessage,
   firstNameInputLabel,
   headingText,
+  isBotProtected,
   isPrivacyConsentRequired,
   lastNameInputLabel,
   onSubmit,
@@ -65,6 +68,7 @@ export const Component = ({
       maxCharacters={FIRST_NAME_MAX_CHARACTERS}
       name="email"
     />
+    {isBotProtected && botProtectionMessage}
     {isPrivacyConsentRequired && (
       <Checkbox
         label={getPrivacyConsentLabel(
@@ -81,10 +85,12 @@ export const Component = ({
 Component.displayName = 'OwnerSignUp';
 
 Component.defaultProps = {
+  botProtectionMessage: FORM_PROTECTION,
   emailInputLabel: EMAIL,
   errorMessage: '',
   firstNameInputLabel: FIRST_NAME,
   headingText: OWNER_SIGNUP,
+  isBotProtected: false,
   isPrivacyConsentRequired: false,
   lastNameInputLabel: LAST_NAME,
   onSubmit: Function.prototype,
@@ -97,6 +103,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** The bot protection message that displays in the form. */
+  botProtectionMessage: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /** The label for the email input. */
   emailInputLabel: PropTypes.string,
   /** The message to display when the form has an error. */
@@ -105,6 +113,8 @@ Component.propTypes = {
   firstNameInputLabel: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** Displays a bot protection message in the form. */
+  isBotProtected: PropTypes.bool,
   /** Displays a privacy consent checkbox in the form. */
   isPrivacyConsentRequired: PropTypes.bool,
   /** The label for the last name input */

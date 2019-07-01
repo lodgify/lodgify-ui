@@ -37,5 +37,7 @@
   buttonText="Send"
   headingText="Go on, give us your email..."
   emailInputLabel="Type it here"
+  isBotProtected
+  botProtectionMessage="The form is protected from hackers"
 />
 ```

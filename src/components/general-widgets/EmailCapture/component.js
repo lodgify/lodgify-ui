@@ -14,6 +14,7 @@ import { Divider } from 'elements/Divider';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
 import {
   ACCEPT_PRIVACY_POLICY,
+  FORM_PROTECTION,
   SUBSCRIBE,
   SUBSCRIBE_TO_OUR_NEWSLETTER,
   YOUR_EMAIL,
@@ -27,12 +28,14 @@ import { getTextAlign } from './utils/getTextAlign';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
+  botProtectionMessage,
   buttonText,
   emailInputError,
   emailInputLabel,
   emailInputValue,
   errorMessage,
   headingText,
+  isBotProtected,
   isPrivacyConsentInputChecked,
   isPrivacyConsentRequired,
   isUserOnMobile,
@@ -81,16 +84,24 @@ const Component = ({
               <ShowOn mobile parent={Divider} parentProps={{ size: 'small' }} />
             </GridColumn>
             <GridColumn computer={3} mobile={12} tablet={5}>
-              {isUserOnMobile && isPrivacyConsentRequired && (
+              {isUserOnMobile && (isPrivacyConsentRequired || isBotProtected) && (
                 <Fragment>
-                  {getPrivacyCheckboxMarkup(
-                    privacyConsentInputError,
-                    isPrivacyConsentInputChecked,
-                    privacyConsentLabelText,
-                    privacyConsentLabelLinkUrl,
-                    privacyConsentLabelLinkText,
-                    onClickPrivacyConsentInput
+                  {isBotProtected && (
+                    <Fragment>
+                      {botProtectionMessage}
+                      <Divider />
+                    </Fragment>
                   )}
+                  <Divider />
+                  {isPrivacyConsentRequired &&
+                    getPrivacyCheckboxMarkup(
+                      privacyConsentInputError,
+                      isPrivacyConsentInputChecked,
+                      privacyConsentLabelText,
+                      privacyConsentLabelLinkUrl,
+                      privacyConsentLabelLinkText,
+                      onClickPrivacyConsentInput
+                    )}
                   <Divider />
                 </Fragment>
               )}
@@ -100,18 +111,25 @@ const Component = ({
             </GridColumn>
           </Fragment>
         </GridRow>
-        {!isUserOnMobile && isPrivacyConsentRequired && (
+        {!isUserOnMobile && (isPrivacyConsentRequired || isBotProtected) && (
           <GridRow>
             <GridColumn computer={5} />
             <GridColumn computer={7} mobile={12} tablet={12}>
-              {getPrivacyCheckboxMarkup(
-                privacyConsentInputError,
-                isPrivacyConsentInputChecked,
-                privacyConsentLabelText,
-                privacyConsentLabelLinkUrl,
-                privacyConsentLabelLinkText,
-                onClickPrivacyConsentInput
+              {isBotProtected && (
+                <Fragment>
+                  {botProtectionMessage}
+                  <Divider />
+                </Fragment>
               )}
+              {isPrivacyConsentRequired &&
+                getPrivacyCheckboxMarkup(
+                  privacyConsentInputError,
+                  isPrivacyConsentInputChecked,
+                  privacyConsentLabelText,
+                  privacyConsentLabelLinkUrl,
+                  privacyConsentLabelLinkText,
+                  onClickPrivacyConsentInput
+                )}
             </GridColumn>
           </GridRow>
         )}
@@ -126,12 +144,14 @@ export const ComponentWithResponsive = withResponsive(Component);
 Component.displayName = 'EmailCapture';
 
 Component.defaultProps = {
+  botProtectionMessage: FORM_PROTECTION,
   buttonText: SUBSCRIBE,
   emailInputError: false,
   emailInputLabel: YOUR_EMAIL,
   emailInputValue: undefined,
   errorMessage: null,
   headingText: SUBSCRIBE_TO_OUR_NEWSLETTER,
+  isBotProtected: false,
   isPrivacyConsentInputChecked: false,
   isPrivacyConsentRequired: false,
   onChangeEmailInput: Function.prototype,
@@ -145,6 +165,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** The bot protection message that displays in the form. */
+  botProtectionMessage: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /** The text to display on the button. */
   buttonText: PropTypes.string,
   /** An error message to display in place of the component. */
@@ -157,6 +179,8 @@ Component.propTypes = {
   errorMessage: PropTypes.string,
   /** The text to display as a heading. */
   headingText: PropTypes.string,
+  /** Displays a bot protection message in the form. */
+  isBotProtected: PropTypes.bool,
   /** The value of the privacy consent checkbox. */
   isPrivacyConsentInputChecked: PropTypes.bool,
   /** Displays a privacy consent checkbox. */

@@ -14,6 +14,7 @@ import {
   ACCEPT_PRIVACY_POLICY,
   ADD_A_REVIEW,
   COMMENTS,
+  FORM_PROTECTION,
   GUEST_TYPE,
   MONTH,
   REVIEWS,
@@ -91,6 +92,7 @@ export const Component = ({
 Component.displayName = 'Reviews';
 
 Component.defaultProps = {
+  botProtectionMessage: FORM_PROTECTION,
   roomTypeInputLabel: ROOM,
   commentInputLabel: COMMENTS,
   emailInputLabel: YOUR_EMAIL,
@@ -98,6 +100,7 @@ Component.defaultProps = {
   guestTypeInputLabel: GUEST_TYPE,
   guestTypeOptions: [],
   headingText: REVIEWS,
+  isBotProtected: false,
   isPrivacyConsentRequired: false,
   isShowingPlaceholder: false,
   locationInputLabel: YOUR_LOCATION,
@@ -121,6 +124,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** The bot protection message that displays in the review form. */
+  botProtectionMessage: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /** The label for the comment input. */
   // eslint-disable-next-line react/no-unused-prop-types
   commentInputLabel: PropTypes.string,
@@ -149,6 +154,8 @@ Component.propTypes = {
   ),
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** Displays a bot protection message in the review form. */
+  isBotProtected: PropTypes.bool,
   /** Displays a privacy consent checkbox to the review form. */
   isPrivacyConsentRequired: PropTypes.bool,
   /** Is the component showing placeholders to reserve space for content which will appear. */

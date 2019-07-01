@@ -17,6 +17,8 @@
   privacyConsentLabelLinkText="sign here"
   privacyConsentLabelLinkUrl="erl"
   privacyConsentLabelText="please"
+  isBotProtected
+  botProtectionMessage="The form is protected from hackers"
 />
 ```
 

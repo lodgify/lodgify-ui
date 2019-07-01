@@ -1,15 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render the right structure 1`] = `
+exports[`<Contact /> if \`isBotProtected\` === true should render the right structure 1`] = `
 <Contact
   arrivalDateInputLabel="Arrival"
+  botProtectionMessage="This form is protected against bots"
   commentsInputLabel="Comments"
   departureDateInputLabel="Departure"
   emailInputLabel="Email"
   errorMessage=""
   guestsInputLabel="Guests"
   headingText="Contact"
-  isPrivacyConsentRequired={true}
+  isBotProtected={true}
+  isPrivacyConsentRequired={false}
   nameInputLabel="Name"
   onChangeProperty={[Function]}
   onSubmit={[Function]}
@@ -622,6 +624,683 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                   <div
                     className="field"
                   >
+                    This form is protected against bots
+                  </div>
+                </FormField>
+                <Button
+                  hasShadow={false}
+                  icon={null}
+                  isCompact={false}
+                  isDisabled={false}
+                  isFluid={false}
+                  isFormSubmit={true}
+                  isLoading={false}
+                  isOutlined={false}
+                  isPositionedRight={true}
+                  isRounded={true}
+                  isSecondary={false}
+                  onClick={[Function]}
+                  size={null}
+                >
+                  <Button
+                    as="button"
+                    basic={false}
+                    circular={true}
+                    className=""
+                    compact={false}
+                    disabled={false}
+                    floated="right"
+                    fluid={false}
+                    loading={false}
+                    onClick={[Function]}
+                    secondary={false}
+                    size={null}
+                    type="submit"
+                  >
+                    <button
+                      className="ui circular right floated button"
+                      onClick={[Function]}
+                      role="button"
+                      type="submit"
+                    >
+                      Send
+                    </button>
+                  </Button>
+                </Button>
+              </form>
+            </Form>
+          </div>
+        </CardContent>
+      </div>
+    </Card>
+  </Form>
+</Contact>
+`;
+
+exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render the right structure 1`] = `
+<Contact
+  arrivalDateInputLabel="Arrival"
+  botProtectionMessage="This form is protected against bots"
+  commentsInputLabel="Comments"
+  departureDateInputLabel="Departure"
+  emailInputLabel="Email"
+  errorMessage=""
+  guestsInputLabel="Guests"
+  headingText="Contact"
+  isBotProtected={false}
+  isPrivacyConsentRequired={true}
+  nameInputLabel="Name"
+  onChangeProperty={[Function]}
+  onSubmit={[Function]}
+  phoneInputLabel="Phone"
+  privacyConsentLabelText="I accept the privacy policy."
+  propertyInputLabel="Property"
+  propertyOptions={null}
+  roomInputLabel="Room"
+  roomOptions={null}
+  submitButtonText="Send"
+  successMessage=""
+  validation={Object {}}
+>
+  <Form
+    actionLink={null}
+    autoComplete="off"
+    errorMessage=""
+    headingText="Contact"
+    onSubmit={[Function]}
+    submitButtonText="Send"
+    successMessage=""
+    validation={Object {}}
+  >
+    <Card
+      className="has-form"
+      fluid={true}
+    >
+      <div
+        className="ui fluid card has-form"
+        onClick={[Function]}
+      >
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Heading
+              className={null}
+              hasMargin={true}
+              isColorInverted={false}
+              size="medium"
+              textAlign={null}
+            >
+              <Header
+                as="h3"
+                className=""
+                inverted={false}
+                textAlign={null}
+              >
+                <h3
+                  className="ui header"
+                >
+                  Contact
+                </h3>
+              </Header>
+            </Heading>
+          </div>
+        </CardContent>
+        <CardContent>
+          <div
+            className="content"
+          >
+            <Form
+              as="form"
+              autoComplete="off"
+              error={false}
+              onSubmit={[Function]}
+              success={false}
+            >
+              <form
+                autoComplete="off"
+                className="ui form"
+                onSubmit={[Function]}
+              >
+                <InputGroup
+                  key=".0"
+                  widths="equal"
+                >
+                  <div
+                    className="equal width fields"
+                  >
+                    <FormField
+                      key=".0"
+                    >
+                      <div
+                        className="field"
+                      >
+                        <TextInput
+                          autoComplete="name"
+                          error={false}
+                          isFluid={false}
+                          isValid={false}
+                          label="Name"
+                          maxCharacters={80}
+                          name="name"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          type="text"
+                        >
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue=""
+                            inputOnChangeFunctionName="onChange"
+                            isCompact={false}
+                            isFluid={false}
+                            isFocused={false}
+                            isValid={false}
+                            label="Name"
+                            mapValueToProps={[Function]}
+                            name="name"
+                            onChange={[Function]}
+                          >
+                            <Input
+                              className=""
+                              fluid={false}
+                              iconPosition={null}
+                              type="text"
+                            >
+                              <div
+                                className="ui input"
+                              >
+                                <input
+                                  autoComplete="name"
+                                  key=".0"
+                                  maxLength={80}
+                                  name="name"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  type="text"
+                                  value=""
+                                />
+                                <label
+                                  key=".3"
+                                  onClick={[Function]}
+                                >
+                                  Name
+                                </label>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </TextInput>
+                      </div>
+                    </FormField>
+                    <FormField
+                      key=".1"
+                    >
+                      <div
+                        className="field"
+                      >
+                        <PhoneInput
+                          autoComplete="tel"
+                          error={false}
+                          isValid={false}
+                          label="Phone"
+                          maxCharacters={15}
+                          name="phone"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                        >
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={
+                              <Icon
+                                color={null}
+                                hasBorder={false}
+                                isButton={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="phone"
+                                path={null}
+                                size={null}
+                              />
+                            }
+                            initialValue=""
+                            inputOnChangeFunctionName="onChange"
+                            isCompact={false}
+                            isFluid={false}
+                            isFocused={false}
+                            isValid={false}
+                            label="Phone"
+                            mapValueToProps={[Function]}
+                            name="phone"
+                            onChange={[Function]}
+                            value=""
+                          >
+                            <Input
+                              className=""
+                              fluid={false}
+                              iconPosition="left"
+                              type="text"
+                            >
+                              <div
+                                className="ui left icon input"
+                              >
+                                <input
+                                  autoComplete="tel"
+                                  key=".0"
+                                  maxLength={15}
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  type="tel"
+                                  value=""
+                                />
+                                <label
+                                  key=".3"
+                                  onClick={[Function]}
+                                >
+                                  Phone
+                                </label>
+                                <Icon
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  key=".4"
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="phone"
+                                  path={null}
+                                  size={null}
+                                >
+                                  <i
+                                    className="icon"
+                                  >
+                                    <svg
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M17.26,20.77a10.82,10.82,0,0,1-4.91-1.31,18.17,18.17,0,0,1-4.5-3.31,18.36,18.36,0,0,1-3.31-4.5,11,11,0,0,1-1.3-4.91A3.72,3.72,0,0,1,4.58,4.39,4,4,0,0,1,6.73,3.23,2,2,0,0,1,8,3.91,11.34,11.34,0,0,1,9.16,5.26c.25.33,1.52,2,1.52,2.79s-.74,1.11-1.53,1.6a7.2,7.2,0,0,0-.84.56c-.24.19-.28.29-.29.32A11.62,11.62,0,0,0,13.47,16a.94.94,0,0,0,.32-.3,9.4,9.4,0,0,0,.56-.84c.48-.78.93-1.52,1.59-1.52s2.46,1.26,2.79,1.51a10.53,10.53,0,0,1,1.35,1.22,2,2,0,0,1,.68,1.21,4,4,0,0,1-1.15,2.16,3.78,3.78,0,0,1-2.35,1.35ZM6.73,4.11A3.25,3.25,0,0,0,5.17,5,2.86,2.86,0,0,0,4.11,6.74c0,5.9,7.25,13.15,13.15,13.15A2.84,2.84,0,0,0,19,18.83a3.35,3.35,0,0,0,.93-1.56c0-.17-.49-.82-1.75-1.79A7.23,7.23,0,0,0,16,14.19s-.12,0-.32.3-.36.52-.54.81c-.49.8-.95,1.55-1.62,1.55a.87.87,0,0,1-.32-.06A12.44,12.44,0,0,1,7.2,10.85c-.11-.28-.13-.71.42-1.21A8.34,8.34,0,0,1,8.69,8.9a9,9,0,0,0,.82-.54c.25-.2.29-.3.29-.31A6.78,6.78,0,0,0,8.51,5.86c-1-1.27-1.62-1.73-1.78-1.76Zm13.6,7a.43.43,0,0,1-.44-.44,6.58,6.58,0,0,0-6.58-6.57.44.44,0,1,1,0-.88,7.44,7.44,0,0,1,7.45,7.45A.43.43,0,0,1,20.33,11.12Zm-2.64,0a.43.43,0,0,1-.43-.44,4,4,0,0,0-4-3.94.44.44,0,1,1,0-.88,4.82,4.82,0,0,1,4.82,4.82A.43.43,0,0,1,17.69,11.12Zm-2.63,0a.43.43,0,0,1-.43-.44,1.32,1.32,0,0,0-1.32-1.31.44.44,0,0,1,0-.88,2.2,2.2,0,0,1,2.19,2.19A.43.43,0,0,1,15.06,11.12Z"
+                                        fill="currentColor"
+                                      />
+                                    </svg>
+                                  </i>
+                                </Icon>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </PhoneInput>
+                      </div>
+                    </FormField>
+                  </div>
+                </InputGroup>
+                <InputGroup
+                  key=".1"
+                  widths="equal"
+                >
+                  <div
+                    className="equal width fields"
+                  >
+                    <FormField
+                      key=".0"
+                      width="eight"
+                    >
+                      <div
+                        className="eight wide field"
+                      >
+                        <TextInput
+                          autoComplete="email"
+                          error={false}
+                          isFluid={false}
+                          isValid={false}
+                          label="Email"
+                          maxCharacters={255}
+                          name="email"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          type="text"
+                          width="eight"
+                        >
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue=""
+                            inputOnChangeFunctionName="onChange"
+                            isCompact={false}
+                            isFluid={false}
+                            isFocused={false}
+                            isValid={false}
+                            label="Email"
+                            mapValueToProps={[Function]}
+                            name="email"
+                            onChange={[Function]}
+                          >
+                            <Input
+                              className=""
+                              fluid={false}
+                              iconPosition={null}
+                              type="text"
+                            >
+                              <div
+                                className="ui input"
+                              >
+                                <input
+                                  autoComplete="email"
+                                  key=".0"
+                                  maxLength={255}
+                                  name="email"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  type="text"
+                                  value=""
+                                />
+                                <label
+                                  key=".3"
+                                  onClick={[Function]}
+                                >
+                                  Email
+                                </label>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </TextInput>
+                      </div>
+                    </FormField>
+                    <FormField
+                      key=".1"
+                      width="four"
+                    >
+                      <div
+                        className="four wide field"
+                      >
+                        <NumberInput
+                          autoComplete={null}
+                          error={false}
+                          icon={null}
+                          isValid={false}
+                          label="Guests"
+                          min={1}
+                          name="guests"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          width="four"
+                        >
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue=""
+                            inputOnChangeFunctionName="onChange"
+                            isCompact={false}
+                            isFluid={false}
+                            isFocused={false}
+                            isValid={false}
+                            label="Guests"
+                            mapValueToProps={[Function]}
+                            name="guests"
+                            onChange={[Function]}
+                          >
+                            <Input
+                              className=""
+                              fluid={false}
+                              iconPosition={null}
+                              type="text"
+                            >
+                              <div
+                                className="ui input"
+                              >
+                                <input
+                                  autoComplete={null}
+                                  key=".0"
+                                  min={1}
+                                  name="guests"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  type="number"
+                                  value=""
+                                />
+                                <label
+                                  key=".3"
+                                  onClick={[Function]}
+                                >
+                                  Guests
+                                </label>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </NumberInput>
+                      </div>
+                    </FormField>
+                  </div>
+                </InputGroup>
+                <FormField
+                  key=".2"
+                >
+                  <div
+                    className="field"
+                  >
+                    <WithResponsive(DateRangePicker)
+                      endDatePlaceholderText="Departure"
+                      name="dates"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      startDatePlaceholderText="Arrival"
+                    >
+                      <Responsive
+                        as={[Function]}
+                        endDatePlaceholderText="Departure"
+                        isUserOnMobile={false}
+                        name="dates"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onUpdate={[Function]}
+                        startDatePlaceholderText="Arrival"
+                        windowInnerWidth={1024}
+                      >
+                        <DateRangePicker
+                          displayFormat="DD/MM/YYYY"
+                          endDatePlaceholderText="Departure"
+                          error={false}
+                          getIsDayBlocked={[Function]}
+                          isUserOnMobile={false}
+                          isValid={false}
+                          localeCode="en"
+                          name="dates"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocusChange={[Function]}
+                          startDatePlaceholderText="Arrival"
+                          willOpenAbove={false}
+                          windowInnerWidth={1024}
+                        >
+                          <InputController
+                            adaptOnChangeEvent={[Function]}
+                            error={false}
+                            icon={null}
+                            initialValue=""
+                            inputOnChangeFunctionName="onDatesChange"
+                            isCompact={false}
+                            isFluid={false}
+                            isFocused={false}
+                            isValid={false}
+                            label={null}
+                            mapValueToProps={[Function]}
+                            name="dates"
+                            onChange={[Function]}
+                          >
+                            <Input
+                              className=""
+                              fluid={false}
+                              iconPosition={null}
+                              type="text"
+                            >
+                              <div
+                                className="ui input"
+                              >
+                                <DateRangePicker
+                                  customArrowIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  customInputIcon={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="calendar"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  daySize={52}
+                                  displayFormat="DD/MM/YYYY"
+                                  endDate={null}
+                                  endDatePlaceholderText="Departure"
+                                  focusedInput={null}
+                                  hideKeyboardShortcutsPanel={true}
+                                  isDayBlocked={[Function]}
+                                  key=".0"
+                                  navNext={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow right"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  navPrev={
+                                    <Icon
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="arrow left"
+                                      path={null}
+                                      size={null}
+                                    />
+                                  }
+                                  onDatesChange={[Function]}
+                                  onFocusChange={[Function]}
+                                  openDirection="down"
+                                  startDate={null}
+                                  startDatePlaceholderText="Arrival"
+                                  withPortal={true}
+                                >
+                                  <div />
+                                </DateRangePicker>
+                              </div>
+                            </Input>
+                          </InputController>
+                        </DateRangePicker>
+                      </Responsive>
+                    </WithResponsive(DateRangePicker)>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".3"
+                >
+                  <div
+                    className="field"
+                  >
+                    <TextArea
+                      autoComplete={null}
+                      error={false}
+                      isValid={false}
+                      label="Comments"
+                      maxCharacters={800}
+                      name="comments"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                    >
+                      <InputController
+                        adaptOnChangeEvent={[Function]}
+                        error={false}
+                        icon={null}
+                        initialValue=""
+                        inputOnChangeFunctionName="onChange"
+                        isCompact={false}
+                        isFluid={false}
+                        isFocused={false}
+                        isValid={false}
+                        label="Comments"
+                        mapValueToProps={[Function]}
+                        name="comments"
+                        onChange={[Function]}
+                      >
+                        <Input
+                          className=""
+                          fluid={false}
+                          iconPosition={null}
+                          type="text"
+                        >
+                          <div
+                            className="ui input"
+                          >
+                            <textarea
+                              autoComplete={null}
+                              key=".0"
+                              maxLength={800}
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              rows="8"
+                              value=""
+                            />
+                            <label
+                              key=".3"
+                              onClick={[Function]}
+                            >
+                              Comments
+                            </label>
+                          </div>
+                        </Input>
+                      </InputController>
+                    </TextArea>
+                  </div>
+                </FormField>
+                <FormField
+                  key=".6"
+                >
+                  <div
+                    className="field"
+                  >
                     <Checkbox
                       error={false}
                       isCompact={false}
@@ -783,12 +1462,14 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
 exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed should have the correct structure 1`] = `
 <Contact
   arrivalDateInputLabel="Arrival"
+  botProtectionMessage="This form is protected against bots"
   commentsInputLabel="Comments"
   departureDateInputLabel="Departure"
   emailInputLabel="Email"
   errorMessage=""
   guestsInputLabel="Guests"
   headingText="Contact"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   nameInputLabel="Name"
   onChangeProperty={[Function]}
@@ -2053,12 +2734,14 @@ exports[`<Contact /> if \`propertyOptions\` and \`roomOptions\` are passed shoul
 exports[`<Contact /> if \`props.propertyOptions\` is passed should have the correct structure 1`] = `
 <Contact
   arrivalDateInputLabel="Arrival"
+  botProtectionMessage="This form is protected against bots"
   commentsInputLabel="Comments"
   departureDateInputLabel="Departure"
   emailInputLabel="Email"
   errorMessage=""
   guestsInputLabel="Guests"
   headingText="Contact"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   nameInputLabel="Name"
   onChangeProperty={[Function]}
@@ -3048,12 +3731,14 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
 exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct structure 1`] = `
 <Contact
   arrivalDateInputLabel="Arrival"
+  botProtectionMessage="This form is protected against bots"
   commentsInputLabel="Comments"
   departureDateInputLabel="Departure"
   emailInputLabel="Email"
   errorMessage=""
   guestsInputLabel="Guests"
   headingText="Contact"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   nameInputLabel="Name"
   onChangeProperty={[Function]}
@@ -3998,12 +4683,14 @@ exports[`<Contact /> if \`props.roomOptions\` is passed should have the correct 
 exports[`<Contact /> should have the correct structure 1`] = `
 <Contact
   arrivalDateInputLabel="Arrival"
+  botProtectionMessage="This form is protected against bots"
   commentsInputLabel="Comments"
   departureDateInputLabel="Departure"
   emailInputLabel="Email"
   errorMessage=""
   guestsInputLabel="Guests"
   headingText="Contact"
+  isBotProtected={false}
   isPrivacyConsentRequired={false}
   nameInputLabel="Name"
   onChangeProperty={[Function]}

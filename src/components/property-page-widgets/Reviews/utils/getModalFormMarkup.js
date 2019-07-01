@@ -49,12 +49,14 @@ import {
 export const getModalFormMarkup = (
   {
     /* eslint-disable react/prop-types */
+    botProtectionMessage,
     commentInputLabel,
     emailInputLabel,
     errorMessage,
     formHeadingText,
     guestTypeInputLabel,
     guestTypeOptions,
+    isBotProtected,
     isPrivacyConsentRequired,
     locationInputLabel,
     monthInputLabel,
@@ -146,6 +148,7 @@ export const getModalFormMarkup = (
         maxCharacters={COMMENT_MAX_CHARACTERS}
         name="comments"
       />
+      {isBotProtected && botProtectionMessage}
       {isPrivacyConsentRequired && (
         <Checkbox
           label={getPrivacyConsentLabel(
