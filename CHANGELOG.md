@@ -1,3 +1,22 @@
+# [1.215.0](https://github.com/lodgify/lodgify-ui/compare/v1.214.0...v1.215.0) (2019-07-01)
+
+
+### Bug Fixes
+
+* **Icon:** update minus and plus svg paths ([9128a84](https://github.com/lodgify/lodgify-ui/commit/9128a84))
+
+
+### Features
+
+* **CallMeBack:** expose bot protection message props ([737c8e7](https://github.com/lodgify/lodgify-ui/commit/737c8e7))
+* **Contact:** expose bot protection message props ([8b21f71](https://github.com/lodgify/lodgify-ui/commit/8b21f71))
+* **CounterInputSegment:** expose component to api ([befcf9e](https://github.com/lodgify/lodgify-ui/commit/befcf9e))
+* **EmailCapture:** expose bot protection message props ([15c860d](https://github.com/lodgify/lodgify-ui/commit/15c860d))
+* **Footer:** expose bot protection message props ([7739772](https://github.com/lodgify/lodgify-ui/commit/7739772))
+* **OwnerSignup:** expose bot protection message props ([05d17eb](https://github.com/lodgify/lodgify-ui/commit/05d17eb))
+* **RangeInputSegment:** expose component to api ([8206657](https://github.com/lodgify/lodgify-ui/commit/8206657))
+* **Reviews:** expose bot protection message props ([4add2dc](https://github.com/lodgify/lodgify-ui/commit/4add2dc))
+
 # [1.214.0](https://github.com/lodgify/lodgify-ui/compare/v1.213.0...v1.214.0) (2019-06-27)
 
 
