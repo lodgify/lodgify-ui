@@ -37,6 +37,7 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
+            "placeholderImageUrl": undefined,
           }
         }
       >
@@ -129,6 +130,7 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
+            "placeholderImageUrl": undefined,
           }
         }
       >
@@ -221,6 +223,7 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
+            "placeholderImageUrl": undefined,
           }
         }
       >
@@ -313,6 +316,7 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
+            "placeholderImageUrl": undefined,
           }
         }
       >

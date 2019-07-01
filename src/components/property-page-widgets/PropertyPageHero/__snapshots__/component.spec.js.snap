@@ -101,7 +101,6 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                   "imageWidth": undefined,
                   "isFluid": true,
                   "isLazyLoaded": true,
-                  "placeholderImageUrl": null,
                   "sizes": null,
                   "srcSet": null,
                 }
@@ -110,6 +109,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
               lazyProps={
                 Object {
                   "imageUrl": "some url",
+                  "placeholderImageUrl": null,
                 }
               }
             >
@@ -447,7 +447,6 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                   "imageWidth": undefined,
                   "isFluid": true,
                   "isLazyLoaded": true,
-                  "placeholderImageUrl": null,
                   "sizes": null,
                   "srcSet": null,
                 }
@@ -456,6 +455,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
               lazyProps={
                 Object {
                   "imageUrl": "some url",
+                  "placeholderImageUrl": null,
                 }
               }
             >

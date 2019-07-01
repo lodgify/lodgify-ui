@@ -26,6 +26,7 @@ exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
     lazyProps={
       Object {
         "imageUrl": undefined,
+        "placeholderImageUrl": undefined,
       }
     }
   >
@@ -188,6 +189,7 @@ exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right 
     lazyProps={
       Object {
         "imageUrl": undefined,
+        "placeholderImageUrl": undefined,
       }
     }
   >
@@ -283,7 +285,6 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should h
         "isFluid": true,
         "isLazyLoaded": true,
         "onLoad": [Function],
-        "placeholderImageUrl": "ayyy",
         "sources": Array [],
       }
     }
@@ -291,6 +292,7 @@ exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should h
     lazyProps={
       Object {
         "imageUrl": undefined,
+        "placeholderImageUrl": "ayyy",
       }
     }
   >
