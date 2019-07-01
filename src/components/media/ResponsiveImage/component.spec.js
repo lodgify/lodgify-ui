@@ -15,8 +15,8 @@ const props = {
 const getResponsiveImage = extraProps =>
   mount(<ResponsiveImage {...props} {...extraProps} />);
 
-const getWrappedResponsiveImage = () =>
-  getResponsiveImage().find('ResponsiveImage');
+const getWrappedResponsiveImage = extraProps =>
+  getResponsiveImage(extraProps).find('ResponsiveImage');
 
 describe('<ResponsiveImage />', () => {
   describe('by default', () => {
@@ -34,6 +34,35 @@ describe('<ResponsiveImage />', () => {
       });
 
       expect(actual).toMatchSnapshot();
+    });
+
+    it('should call the Image constructor', () => {
+      const wrapper = getWrappedResponsiveImage({
+        placeholderImageUrl: 'ayyy',
+      });
+
+      global.Image = jest.fn();
+
+      wrapper.instance().componentDidMount();
+
+      expect(global.Image).toHaveBeenCalled();
+    });
+
+    it('should call setState with the right arguments', () => {
+      const wrapper = getWrappedResponsiveImage({
+        placeholderImageUrl: 'ayyy',
+      });
+
+      global.Image = jest.fn(() => ({ complete: true }));
+
+      wrapper.instance().setState = jest.fn();
+      wrapper.update();
+      wrapper.instance().componentDidMount();
+
+      expect(wrapper.instance().setState).toHaveBeenCalledWith({
+        shouldImageLoad: true,
+        isImageLoaded: true,
+      });
     });
   });
 

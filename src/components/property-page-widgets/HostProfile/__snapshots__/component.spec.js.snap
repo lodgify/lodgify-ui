@@ -151,6 +151,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -504,6 +505,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -850,6 +852,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -1200,6 +1203,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >

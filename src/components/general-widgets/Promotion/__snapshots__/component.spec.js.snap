@@ -75,7 +75,6 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                                 "imageHeight": undefined,
                                 "imageWidth": undefined,
                                 "isLazyLoaded": true,
-                                "placeholderImageUrl": null,
                                 "sizes": undefined,
                                 "srcSet": undefined,
                               }
@@ -84,6 +83,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                             lazyProps={
                               Object {
                                 "imageUrl": "testimage",
+                                "placeholderImageUrl": null,
                               }
                             }
                           >

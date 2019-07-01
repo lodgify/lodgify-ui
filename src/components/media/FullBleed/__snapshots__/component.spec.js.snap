@@ -41,7 +41,6 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
               "imageWidth": undefined,
               "isFluid": true,
               "isLazyLoaded": true,
-              "placeholderImageUrl": null,
               "sizes": null,
               "srcSet": null,
             }
@@ -50,6 +49,7 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
           lazyProps={
             Object {
               "imageUrl": "🐱🐱",
+              "placeholderImageUrl": null,
             }
           }
         >
@@ -147,7 +147,6 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
               "imageWidth": undefined,
               "isFluid": true,
               "isLazyLoaded": true,
-              "placeholderImageUrl": null,
               "sizes": null,
               "srcSet": null,
             }
@@ -156,6 +155,7 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
           lazyProps={
             Object {
               "imageUrl": "🐱🐱",
+              "placeholderImageUrl": null,
             }
           }
         >
@@ -253,7 +253,6 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
               "imageWidth": undefined,
               "isFluid": true,
               "isLazyLoaded": true,
-              "placeholderImageUrl": null,
               "sizes": null,
               "srcSet": null,
             }
@@ -262,6 +261,7 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
           lazyProps={
             Object {
               "imageUrl": "🐱🐱",
+              "placeholderImageUrl": null,
             }
           }
         >

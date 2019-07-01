@@ -67,7 +67,6 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
-                "placeholderImageUrl": undefined,
                 "sizes": undefined,
                 "srcSet": undefined,
               }
@@ -76,6 +75,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
             lazyProps={
               Object {
                 "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                "placeholderImageUrl": undefined,
               }
             }
           >
@@ -243,7 +243,6 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
-                "placeholderImageUrl": undefined,
                 "sizes": undefined,
                 "srcSet": undefined,
               }
@@ -252,6 +251,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
             lazyProps={
               Object {
                 "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                "placeholderImageUrl": undefined,
               }
             }
           >
@@ -747,7 +747,6 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
-                "placeholderImageUrl": undefined,
                 "sizes": undefined,
                 "srcSet": undefined,
               }
@@ -756,6 +755,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
             lazyProps={
               Object {
                 "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                "placeholderImageUrl": undefined,
               }
             }
           >
@@ -923,7 +923,6 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
-                "placeholderImageUrl": undefined,
                 "sizes": undefined,
                 "srcSet": undefined,
               }
@@ -932,6 +931,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
             lazyProps={
               Object {
                 "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                "placeholderImageUrl": undefined,
               }
             }
           >
