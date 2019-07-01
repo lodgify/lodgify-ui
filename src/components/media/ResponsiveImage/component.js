@@ -10,6 +10,7 @@ import {
 } from 'utils/default-strings';
 import { Paragraph } from 'typography/Paragraph';
 
+import { IMAGE_URL, PLACEHOLDER_IMAGE_URL } from './constants';
 import { getImageMarkup } from './utils/getImageMarkup';
 import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
 
@@ -137,4 +138,7 @@ Component.propTypes = {
   srcSet: PropTypes.string,
 };
 
-export const ComponentWithLazyLoad = withLazyLoad('imageUrl')(Component);
+export const ComponentWithLazyLoad = withLazyLoad(
+  IMAGE_URL,
+  PLACEHOLDER_IMAGE_URL
+)(Component);
