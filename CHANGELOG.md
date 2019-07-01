@@ -1,3 +1,10 @@
+## [1.215.1](https://github.com/lodgify/lodgify-ui/compare/v1.215.0...v1.215.1) (2019-07-01)
+
+
+### Bug Fixes
+
+* **ResponsiveImage:** add placeholderImageUrl as lazyProp ([60bdaad](https://github.com/lodgify/lodgify-ui/commit/60bdaad))
+
 # [1.215.0](https://github.com/lodgify/lodgify-ui/compare/v1.214.0...v1.215.0) (2019-07-01)
 
 
