@@ -97,14 +97,13 @@ exports[`<Hero /> by default should render the right structure 1`] = `
               imageHeight={null}
               imageNotFoundLabelText="Image not found!"
               imageTitle="Image Title"
-              imageUrl="https://darkpurple.com"
+              imageUrl=""
               imageWidth={null}
               isAvatar={false}
               isCircular={false}
               isFluid={true}
               isLazyLoaded={true}
               label={null}
-              placeholderImageUrl={null}
               sizes="a load of sizes"
               srcSet="a load of sources"
             >
@@ -118,20 +117,31 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                   fluid={true}
                   onLoad={[Function]}
                   sizes="a load of sizes"
-                  src="https://darkpurple.com"
+                  src=""
                   srcSet="a load of sources"
                   title="Image Title"
                   ui={true}
                 >
-                  <img
+                  <div
                     alt="Image Widget"
                     className="ui fluid image"
                     onLoad={[Function]}
                     sizes="a load of sizes"
-                    src="https://darkpurple.com"
+                    src=""
                     srcSet="a load of sources"
                     title="Image Title"
-                  />
+                  >
+                    <Label
+                      content="Image not found!"
+                    >
+                      <div
+                        className="ui label"
+                        onClick={[Function]}
+                      >
+                        Image not found!
+                      </div>
+                    </Label>
+                  </div>
                 </Image>
               </figure>
             </ResponsiveImage>

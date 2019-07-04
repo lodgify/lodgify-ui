@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 
 import { ComponentWithLazyLoad as ResponsiveImage } from './component';
 
@@ -12,16 +12,18 @@ const props = {
   imageTitle: 'ResponsiveImage title',
 };
 
-const getResponsiveImage = extraProps =>
-  mount(<ResponsiveImage {...props} {...extraProps} />);
+const getResponsiveImage = () => shallow(<ResponsiveImage {...props} />);
 
-const getWrappedResponsiveImage = extraProps =>
-  getResponsiveImage(extraProps).find('ResponsiveImage');
+const getWrappedResponsiveImage = extraProps => {
+  const Child = getResponsiveImage().prop('lazyComponent');
+
+  return mount(<Child {...props} {...extraProps} />);
+};
 
 describe('<ResponsiveImage />', () => {
   describe('by default', () => {
     it('should have the right structure', () => {
-      const actual = getResponsiveImage();
+      const actual = getWrappedResponsiveImage();
 
       expect(actual).toMatchSnapshot();
     });
@@ -29,7 +31,7 @@ describe('<ResponsiveImage />', () => {
 
   describe('if `props.placeholderImageUrl` is passed', () => {
     it('should have the right structure', () => {
-      const actual = getResponsiveImage({
+      const actual = getWrappedResponsiveImage({
         placeholderImageUrl: 'ayyy',
       });
 
@@ -68,7 +70,7 @@ describe('<ResponsiveImage />', () => {
 
   describe('if `props.label` is passed', () => {
     it('should have the right structure', () => {
-      const actual = getResponsiveImage({ label: '🔷' });
+      const actual = getWrappedResponsiveImage({ label: '🔷' });
 
       expect(actual).toMatchSnapshot();
     });
@@ -76,7 +78,7 @@ describe('<ResponsiveImage />', () => {
 
   describe('if `props.isLazyLoaded` is false', () => {
     it('should have the right structure', () => {
-      const actual = getResponsiveImage({ isLazyLoaded: false });
+      const actual = getWrappedResponsiveImage({ isLazyLoaded: false });
 
       expect(actual).toMatchSnapshot();
     });

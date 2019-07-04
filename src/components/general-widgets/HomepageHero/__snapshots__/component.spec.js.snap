@@ -130,14 +130,13 @@ exports[`HomepageHero should render the right structure 1`] = `
                 imageHeight={null}
                 imageNotFoundLabelText="Image not found!"
                 imageTitle="Image Title"
-                imageUrl="bare sources"
+                imageUrl=""
                 imageWidth={null}
                 isAvatar={false}
                 isCircular={false}
                 isFluid={true}
                 isLazyLoaded={true}
                 label={null}
-                placeholderImageUrl={null}
                 sizes="url"
                 srcSet="a load of sizes"
               >
@@ -151,20 +150,31 @@ exports[`HomepageHero should render the right structure 1`] = `
                     fluid={true}
                     onLoad={[Function]}
                     sizes="url"
-                    src="bare sources"
+                    src=""
                     srcSet="a load of sizes"
                     title="Image Title"
                     ui={true}
                   >
-                    <img
+                    <div
                       alt="Image Widget"
                       className="ui fluid image"
                       onLoad={[Function]}
                       sizes="url"
-                      src="bare sources"
+                      src=""
                       srcSet="a load of sizes"
                       title="Image Title"
-                    />
+                    >
+                      <Label
+                        content="Image not found!"
+                      >
+                        <div
+                          className="ui label"
+                          onClick={[Function]}
+                        >
+                          Image not found!
+                        </div>
+                      </Label>
+                    </div>
                   </Image>
                 </figure>
               </ResponsiveImage>

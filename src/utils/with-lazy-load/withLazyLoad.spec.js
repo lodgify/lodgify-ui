@@ -14,7 +14,7 @@ const DISPLAY_NAME = '🚜';
 Component.displayName = DISPLAY_NAME;
 
 const props = { lazyProp: '😴', other: 'otherProps' };
-const getHOC = () =>
+const getHOC = props =>
   shallow(React.createElement(withLazyLoad('lazyProp')(Component), props));
 
 LazyLoader.mockImplementation(() => <div />);
@@ -42,9 +42,21 @@ describe('withLazyLoad', () => {
 
   describe('WrapperComponent', () => {
     it('should pass the right props to `Component`', () => {
-      const actual = getHOC();
+      const actual = getHOC(props);
 
       expect(actual).toMatchSnapshot();
+    });
+
+    describe('if isLazyLoaded is false', () => {
+      it('should return the right structure', () => {
+        const actual = getHOC({
+          lazyProp: '😴',
+          other: 'otherProps',
+          isLazyLoaded: false,
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
     });
   });
 });

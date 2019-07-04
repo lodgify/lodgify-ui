@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`withLazyLoad WrapperComponent if isLazyLoaded is false should return the right structure 1`] = `
+<🚜
+  isLazyLoaded={false}
+  lazyProp="😴"
+  other="otherProps"
+/>
+`;
+
 exports[`withLazyLoad WrapperComponent should pass the right props to \`Component\` 1`] = `
 <LazyLoader
   componentProps={

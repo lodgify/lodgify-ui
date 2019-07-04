@@ -8,5 +8,8 @@ import { HEIGHT_OFF_SET } from './constants';
  * @param {number} windowHeight
  * @return {boolean}
  */
-export const getIsTopComponentVisible = ({ top }, windowHeight) =>
-  top - HEIGHT_OFF_SET <= windowHeight && top > -windowHeight / 2;
+export const getIsTopComponentVisible = ({ top }, windowHeight) => {
+  if (top === 0) return false;
+
+  return top - HEIGHT_OFF_SET <= windowHeight && top > -windowHeight / 2;
+};

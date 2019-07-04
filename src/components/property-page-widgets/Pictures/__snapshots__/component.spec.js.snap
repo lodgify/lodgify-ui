@@ -192,7 +192,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -213,20 +213,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
@@ -305,7 +316,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -326,20 +337,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
@@ -448,7 +470,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -469,20 +491,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
@@ -561,7 +594,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -582,20 +615,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
@@ -704,7 +748,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -725,20 +769,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
@@ -817,7 +872,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -838,20 +893,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
@@ -960,7 +1026,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -981,20 +1047,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
@@ -1073,7 +1150,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -1094,20 +1171,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
@@ -1216,7 +1304,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -1237,20 +1325,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
@@ -1329,7 +1428,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageHeight={null}
                                   imageNotFoundLabelText="Image not found!"
                                   imageTitle="Image Title"
-                                  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                  imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
@@ -1350,20 +1449,31 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                       fluid={true}
                                       onLoad={[Function]}
                                       sizes={null}
-                                      src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                      src=""
                                       srcSet={null}
                                       title="Image Title"
                                       ui={true}
                                     >
-                                      <img
+                                      <div
                                         alt="Image Widget"
                                         className="ui fluid image"
                                         onLoad={[Function]}
                                         sizes={null}
-                                        src="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                                        src=""
                                         srcSet={null}
                                         title="Image Title"
-                                      />
+                                      >
+                                        <Label
+                                          content="Image not found!"
+                                        >
+                                          <div
+                                            className="ui label"
+                                            onClick={[Function]}
+                                          >
+                                            Image not found!
+                                          </div>
+                                        </Label>
+                                      </div>
                                     </Image>
                                   </figure>
                                 </ResponsiveImage>
