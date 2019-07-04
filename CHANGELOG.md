@@ -1,3 +1,10 @@
+## [1.215.2](https://github.com/lodgify/lodgify-ui/compare/v1.215.1...v1.215.2) (2019-07-04)
+
+
+### Bug Fixes
+
+* **getIs*ComponentVisible:** return false if position is zero ([86a9c28](https://github.com/lodgify/lodgify-ui/commit/86a9c28))
+
 ## [1.215.1](https://github.com/lodgify/lodgify-ui/compare/v1.215.0...v1.215.1) (2019-07-01)
 
 
