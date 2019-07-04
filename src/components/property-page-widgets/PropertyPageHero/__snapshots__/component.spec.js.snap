@@ -120,14 +120,13 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                 imageHeight={null}
                 imageNotFoundLabelText="Image not found!"
                 imageTitle="Image Title"
-                imageUrl="some url"
+                imageUrl=""
                 imageWidth={null}
                 isAvatar={false}
                 isCircular={false}
                 isFluid={true}
                 isLazyLoaded={true}
                 label={null}
-                placeholderImageUrl={null}
                 sizes={null}
                 srcSet={null}
               >
@@ -141,20 +140,31 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                     fluid={true}
                     onLoad={[Function]}
                     sizes={null}
-                    src="some url"
+                    src=""
                     srcSet={null}
                     title="Image Title"
                     ui={true}
                   >
-                    <img
+                    <div
                       alt="Image Widget"
                       className="ui fluid image"
                       onLoad={[Function]}
                       sizes={null}
-                      src="some url"
+                      src=""
                       srcSet={null}
                       title="Image Title"
-                    />
+                    >
+                      <Label
+                        content="Image not found!"
+                      >
+                        <div
+                          className="ui label"
+                          onClick={[Function]}
+                        >
+                          Image not found!
+                        </div>
+                      </Label>
+                    </div>
                   </Image>
                 </figure>
               </ResponsiveImage>
@@ -466,14 +476,13 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                 imageHeight={null}
                 imageNotFoundLabelText="Image not found!"
                 imageTitle="Image Title"
-                imageUrl="some url"
+                imageUrl=""
                 imageWidth={null}
                 isAvatar={false}
                 isCircular={false}
                 isFluid={true}
                 isLazyLoaded={true}
                 label={null}
-                placeholderImageUrl={null}
                 sizes={null}
                 srcSet={null}
               >
@@ -487,20 +496,31 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                     fluid={true}
                     onLoad={[Function]}
                     sizes={null}
-                    src="some url"
+                    src=""
                     srcSet={null}
                     title="Image Title"
                     ui={true}
                   >
-                    <img
+                    <div
                       alt="Image Widget"
                       className="ui fluid image"
                       onLoad={[Function]}
                       sizes={null}
-                      src="some url"
+                      src=""
                       srcSet={null}
                       title="Image Title"
-                    />
+                    >
+                      <Label
+                        content="Image not found!"
+                      >
+                        <div
+                          className="ui label"
+                          onClick={[Function]}
+                        >
+                          Image not found!
+                        </div>
+                      </Label>
+                    </div>
                   </Image>
                 </figure>
               </ResponsiveImage>

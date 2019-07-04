@@ -60,14 +60,13 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
             imageHeight={null}
             imageNotFoundLabelText="Image not found!"
             imageTitle="Image Title"
-            imageUrl="🐱🐱"
+            imageUrl=""
             imageWidth={null}
             isAvatar={false}
             isCircular={false}
             isFluid={true}
             isLazyLoaded={true}
             label={null}
-            placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
           >
@@ -81,20 +80,31 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
                 fluid={true}
                 onLoad={[Function]}
                 sizes={null}
-                src="🐱🐱"
+                src=""
                 srcSet={null}
                 title="Image Title"
                 ui={true}
               >
-                <img
+                <div
                   alt="Image Widget"
                   className="ui fluid image"
                   onLoad={[Function]}
                   sizes={null}
-                  src="🐱🐱"
+                  src=""
                   srcSet={null}
                   title="Image Title"
-                />
+                >
+                  <Label
+                    content="Image not found!"
+                  >
+                    <div
+                      className="ui label"
+                      onClick={[Function]}
+                    >
+                      Image not found!
+                    </div>
+                  </Label>
+                </div>
               </Image>
             </figure>
           </ResponsiveImage>
@@ -166,14 +176,13 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
             imageHeight={null}
             imageNotFoundLabelText="Image not found!"
             imageTitle="Image Title"
-            imageUrl="🐱🐱"
+            imageUrl=""
             imageWidth={null}
             isAvatar={false}
             isCircular={false}
             isFluid={true}
             isLazyLoaded={true}
             label={null}
-            placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
           >
@@ -187,20 +196,31 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
                 fluid={true}
                 onLoad={[Function]}
                 sizes={null}
-                src="🐱🐱"
+                src=""
                 srcSet={null}
                 title="Image Title"
                 ui={true}
               >
-                <img
+                <div
                   alt="Image Widget"
                   className="ui fluid image"
                   onLoad={[Function]}
                   sizes={null}
-                  src="🐱🐱"
+                  src=""
                   srcSet={null}
                   title="Image Title"
-                />
+                >
+                  <Label
+                    content="Image not found!"
+                  >
+                    <div
+                      className="ui label"
+                      onClick={[Function]}
+                    >
+                      Image not found!
+                    </div>
+                  </Label>
+                </div>
               </Image>
             </figure>
           </ResponsiveImage>
@@ -272,14 +292,13 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
             imageHeight={null}
             imageNotFoundLabelText="Image not found!"
             imageTitle="Image Title"
-            imageUrl="🐱🐱"
+            imageUrl=""
             imageWidth={null}
             isAvatar={false}
             isCircular={false}
             isFluid={true}
             isLazyLoaded={true}
             label={null}
-            placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
           >
@@ -293,20 +312,31 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
                 fluid={true}
                 onLoad={[Function]}
                 sizes={null}
-                src="🐱🐱"
+                src=""
                 srcSet={null}
                 title="Image Title"
                 ui={true}
               >
-                <img
+                <div
                   alt="Image Widget"
                   className="ui fluid image"
                   onLoad={[Function]}
                   sizes={null}
-                  src="🐱🐱"
+                  src=""
                   srcSet={null}
                   title="Image Title"
-                />
+                >
+                  <Label
+                    content="Image not found!"
+                  >
+                    <div
+                      className="ui label"
+                      onClick={[Function]}
+                    >
+                      Image not found!
+                    </div>
+                  </Label>
+                </div>
               </Image>
             </figure>
           </ResponsiveImage>
