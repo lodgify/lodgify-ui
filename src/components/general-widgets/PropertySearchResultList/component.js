@@ -213,13 +213,13 @@ Component.propTypes = {
   messageText: PropTypes.string,
   /** An array of [`PropertySearchResult`](#/PropertySearchResult) props objects. */
   propertySearchResults: PropTypes.arrayOf(PropTypes.object),
-  /** The text to display alongside the results count. */
-  renderShowingResultsText: PropTypes.func,
   /**
    * Function called for creating text that shows how many items are showing.
    * @param  {number} activePageFirstItemPosition
    * @param  {number} activePageLastItemPosition
    * @param  {number} numberOfProperties
    */
+  renderShowingResultsText: PropTypes.func,
+  /** The text to display alongside the results count. */
   resultsCountText: PropTypes.string,
 };
