@@ -1,3 +1,10 @@
+## [1.215.3](https://github.com/lodgify/lodgify-ui/compare/v1.215.2...v1.215.3) (2019-07-08)
+
+
+### Bug Fixes
+
+* **PropertySearchResultList:** fix renderShowingResultsText prop description ([5452df4](https://github.com/lodgify/lodgify-ui/commit/5452df4))
+
 ## [1.215.2](https://github.com/lodgify/lodgify-ui/compare/v1.215.1...v1.215.2) (2019-07-04)
 
 
