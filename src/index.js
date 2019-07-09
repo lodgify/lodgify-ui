@@ -25,6 +25,7 @@ export { GoogleMap } from './components/elements/GoogleMap';
 export { Icon, ICON_NAMES } from './components/elements/Icon';
 export { IconCard } from './components/elements/IconCard';
 export { Link } from './components/elements/Link';
+export { Marker } from './components/elements/Marker';
 export { Modal } from './components/elements/Modal';
 export { Pagination } from './components/elements/Pagination';
 export { Quote } from './components/elements/Quote';
