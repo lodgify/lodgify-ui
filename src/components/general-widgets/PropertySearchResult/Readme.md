@@ -13,6 +13,7 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
   periodText="per month"
   pricePerPeriod="$280"
+  pricePerPeriodPrefix="from" 
   propertyAmenities={amenities}
   propertyName="The Cat House"
   propertyType="Bed and breakfast"

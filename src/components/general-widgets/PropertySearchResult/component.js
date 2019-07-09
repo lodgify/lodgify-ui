@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Segment } from 'semantic-ui-react';
 
+import { PriceLabel } from 'elements/PriceLabel';
 import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
 import { Rating } from 'elements/Rating';
 import { ResponsiveImage } from 'media/ResponsiveImage';
@@ -9,7 +10,6 @@ import { Paragraph } from 'typography/Paragraph';
 import { Heading } from 'typography/Heading';
 import { FlexContainer } from 'layout/FlexContainer';
 
-import { getPriceLabelMarkup } from './utils/getPriceLabelMarkup';
 import { getSearchResultDescription } from './utils/getSearchResultDescription';
 import { getPropertyAmenities } from './utils/getPropertyAmenities';
 
@@ -34,6 +34,7 @@ export const Component = ({
   periodText,
   placeholderImageUrl,
   pricePerPeriod,
+  pricePerPeriodPrefix,
   propertyAmenities,
   propertyName,
   propertyType,
@@ -60,7 +61,11 @@ export const Component = ({
             srcSet={imageSrcSet}
           />
           <Segment raised>
-            {getPriceLabelMarkup(pricePerPeriod, periodText)}
+            <PriceLabel
+              periodText={periodText}
+              pricePerPeriod={pricePerPeriod}
+              pricePerPeriodPrefix={pricePerPeriodPrefix}
+            />
           </Segment>
         </FlexContainer>
         <Card.Content>
@@ -108,6 +113,8 @@ Component.defaultProps = {
   imageSrcSet: undefined,
   isShowingPlaceholder: false,
   periodText: '',
+  pricePerPeriod: '',
+  pricePerPeriodPrefix: '',
   placeholderImageUrl: undefined,
   propertyAmenities: [],
   propertyUrlTarget: '_self',
@@ -145,7 +152,9 @@ Component.propTypes = {
   /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
   /** The price per period of the property, with currency symbol. */
-  pricePerPeriod: PropTypes.string.isRequired,
+  pricePerPeriod: PropTypes.string,
+  /** The text preposition to display along with the pricePerPeriod. */
+  pricePerPeriodPrefix: PropTypes.string,
   /** The amenities to display as a text*/
   propertyAmenities: PropTypes.arrayOf(PropTypes.string),
   /** The name of the property. */
