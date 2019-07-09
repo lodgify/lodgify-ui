@@ -76,6 +76,113 @@
     font-weight: @basicFontWeight;
   }
 
+  /* Price Label */
+
+  &.price-label {
+    background-color: @themeActionColorDefault;
+    background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+    border-radius: @priceLabelBorderRadius;
+    padding: @priceLabelPadding;
+    padding-top: @priceLabelPaddingTop;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: @priceLabelMinWidth;
+    max-width: @priceLabelMaxWidth;
+    word-break: break-word;
+    transition: @priceLabelTransitionOnHover;
+
+    &.has-shadow {
+
+      &.is-pointing {
+        box-shadow: @pointerLabelBoxShadow;
+
+        .pointer-arrow:after {
+          box-shadow: @pointerArrowBoxShadow;
+        }
+      }
+    }
+
+    &.is-pointing {
+      background-color: @white !important;
+
+      .pointer-arrow {
+        width: @pointerArrowContainerWidth;
+        height: @pointerArrowContainerHeight;
+        overflow: hidden;
+        transform: rotate(@pointerArrowContainerRotationDegrees);
+        position: absolute;
+        top: @pointerArrowContainerWithPeriodTextTopOffset;
+        display: flex;
+        justify-content: center;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: @pointerArrowWidth;
+          height: @pointerArrowHeight;
+          background: @white !important;
+          transform: rotate(@pointerArrowRotationDegrees);
+          top: @pointerArrowTopOverflow;
+        }
+      }
+
+      &.has-period-text .pointer-arrow {
+        top: @pointerArrowContainerWithoutPeriodTextTopOffset;
+      }
+
+      &.active {
+        background-color: @themeActionColorDefault;
+        background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+        transform: translateY(@pointerHoverTranslationY);
+        transition: @priceLabelTransitionOnHover;
+
+        .pointer-arrow:after {
+          background-color: @themeActionColorDefault;
+          background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+          transition: @priceLabelTransitionOnHover;
+        }
+      }
+
+      .ui.label {
+        box-shadow: none;
+      }
+    }
+
+    .ui.label {
+      background-color: transparent;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > .flex-container {
+        min-height: @priceLabelPricePerPeriodContainerMaxHeight;
+      }
+
+      .ui.header {
+        margin: 0;
+        font-size: @priceLabelPriceFontSize;
+        height: @priceLabelPriceHeight;
+        line-height: @priceLabelPriceLineHeight;
+      }
+
+      p {
+        margin-right: @priceLabelTextMargin;
+        color: @black;
+      }
+
+      .ui.label {
+        padding: @priceLabelPeriodTextPadding;
+        background: transparent;
+        border-radius: @priceLabelPeriodBorderRadius;
+        box-shadow: @priceLabelPeriodBoxShadow;
+        color: @black;
+      }
+    }
+  }
+
   /* Tag */
 
   /* Ribbon */
