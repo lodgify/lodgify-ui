@@ -1,0 +1,32 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'marker';
+
+@import (multiple) '../../theme.config';
+
+/*----------------------
+         Marker
+-----------------------*/
+
+.ui.marker {
+  background: @background;
+  border: @border;
+  border-radius: @circularBorderRadius;
+  box-shadow: @boxShadow;
+  cursor: @cursor;
+  height: @diameter;
+  transform: @transform;
+  transition: @backgroundTransition, @transformTransition;
+  width: @diameter;
+  will-change: @willChange;
+
+  &.active {
+    background: @themeActionColorDefault;
+    background: var(@themeActionColorIdentifier, @themeActionColorDefault);
+    transform: @activeTransform;
+  }
+}

@@ -1,0 +1,19 @@
+/*----------------------
+        Marker
+-----------------------*/
+
+@background: @pureWhite;
+@backgroundTransition: background @transitionTime;
+@border: @2px solid @black;
+@borderRadius: @circularBorderRadius;
+@boxShadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+@cursor: pointer;
+@diameter: @24px;
+@transform: scale(0.7);
+@transformTransition: transform @transitionTime;
+@transitionTime: 0.2s;
+@willChange: background, transform;
+
+// Active
+
+@activeTransform: scale(1);
