@@ -2,8 +2,8 @@
 <CounterInputSegment
   heading="Rooms and Bathrooms"
   counters={[
-    { name: "Bedrooms" },
-    { name: "Bathrooms" }
+    { labelText: "Bedrooms", name: "bedrooms" },
+    { labelText: "Bathrooms", name: "bathrooms" }
   ]}
 />
 ```
