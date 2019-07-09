@@ -1,3 +1,10 @@
+# [1.216.0](https://github.com/lodgify/lodgify-ui/compare/v1.215.3...v1.216.0) (2019-07-09)
+
+
+### Features
+
+* **CounterInputSegment:** add label text to component api ([1ae9cbc](https://github.com/lodgify/lodgify-ui/commit/1ae9cbc))
+
 ## [1.215.3](https://github.com/lodgify/lodgify-ui/compare/v1.215.2...v1.215.3) (2019-07-08)
 
 
