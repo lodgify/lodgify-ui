@@ -24,6 +24,7 @@ export { FilterTrigger } from './components/elements/FilterTrigger';
 export { GoogleMap } from './components/elements/GoogleMap';
 export { Icon, ICON_NAMES } from './components/elements/Icon';
 export { IconCard } from './components/elements/IconCard';
+export { PriceLabel } from './components/elements/PriceLabel';
 export { Link } from './components/elements/Link';
 export { Marker } from './components/elements/Marker';
 export { Modal } from './components/elements/Modal';
