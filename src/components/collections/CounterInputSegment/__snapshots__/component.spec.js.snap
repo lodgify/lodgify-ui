@@ -5,10 +5,12 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
   counters={
     Array [
       Object {
-        "name": "Bedrooms",
+        "labelText": "Bedrooms",
+        "name": "bedrooms",
       },
       Object {
-        "name": "Bathrooms",
+        "labelText": "Bathrooms",
+        "name": "bathrooms",
       },
     ]
   }
@@ -111,7 +113,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
                 </p>
               </Paragraph>
               <Counter
-                name="Bedrooms"
+                name="bedrooms"
                 onChange={[Function]}
                 renderValue={[Function]}
               >
@@ -336,7 +338,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
                 </p>
               </Paragraph>
               <Counter
-                name="Bathrooms"
+                name="bathrooms"
                 onChange={[Function]}
                 renderValue={[Function]}
               >

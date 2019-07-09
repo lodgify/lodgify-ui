@@ -7,7 +7,10 @@ import { Component as CounterInputSegment } from './component';
 const getCounterInputSegment = () =>
   mount(
     <CounterInputSegment
-      counters={[{ name: 'Bedrooms' }, { name: 'Bathrooms' }]}
+      counters={[
+        { name: 'bedrooms', labelText: 'Bedrooms' },
+        { name: 'bathrooms', labelText: 'Bathrooms' },
+      ]}
       heading="🈵"
     />
   );

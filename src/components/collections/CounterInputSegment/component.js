@@ -22,11 +22,11 @@ export const Component = ({ heading, counters }) => (
     >
       <Heading>{heading}</Heading>
       <Divider size="small" />
-      {counters.map(({ name, ...counterProps }, index) => (
-        <Fragment key={buildKeyFromStrings(name, index)}>
+      {counters.map(({ labelText, ...counterProps }, index) => (
+        <Fragment key={buildKeyFromStrings(labelText, index)}>
           <FlexContainer flexDirection="row" justifyContent="space-between">
-            <Paragraph>{name}</Paragraph>
-            <Counter name={name} {...counterProps} />
+            <Paragraph>{labelText}</Paragraph>
+            <Counter {...counterProps} />
           </FlexContainer>
           <Divider size="small" />
         </Fragment>
@@ -38,8 +38,25 @@ export const Component = ({ heading, counters }) => (
 Component.displayName = 'CounterInputSegment';
 
 Component.propTypes = {
-  /**	An array of [`Counter`](#/Counter) props objects. */
-  counters: PropTypes.arrayOf(PropTypes.object).isRequired,
+  /**	An array of counter prop objects. */
+  counters: PropTypes.arrayOf(
+    PropTypes.shape({
+      /** The default value of the range. Minimum 0. */
+      initialValue: PropTypes.number,
+      /** The text for the label displayed alongside the counter. */
+      labelText: PropTypes.string.isRequired,
+      /** The maximum value the input accepts. */
+      max: PropTypes.number,
+      /** The name for the range. */
+      name: PropTypes.string,
+      /** A function called when the range value changes. */
+      onChange: PropTypes.func,
+      /** A function returning a React node for modifying the way values are rendered. */
+      renderValue: PropTypes.func,
+      /** The current value of the range where it is consumed as a controlled component. Minimum 0. */
+      value: PropTypes.number,
+    })
+  ).isRequired,
   /** The text for the input segment's heading. */
   heading: PropTypes.string.isRequired,
 };
