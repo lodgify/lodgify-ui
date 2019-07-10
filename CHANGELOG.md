@@ -1,3 +1,11 @@
+# [1.217.0](https://github.com/lodgify/lodgify-ui/compare/v1.216.0...v1.217.0) (2019-07-10)
+
+
+### Features
+
+* **Marker:** add new component with examples and tests ([23768b1](https://github.com/lodgify/lodgify-ui/commit/23768b1))
+* **Marker:** add styles ([52a1643](https://github.com/lodgify/lodgify-ui/commit/52a1643))
+
 # [1.216.0](https://github.com/lodgify/lodgify-ui/compare/v1.215.3...v1.216.0) (2019-07-09)
 
 
