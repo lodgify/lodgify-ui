@@ -23,6 +23,7 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -155,6 +156,7 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         key="The Cat House0"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -234,6 +236,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -538,6 +541,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         key="The Cat House0"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -848,6 +852,7 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1027,6 +1032,7 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
         key="The Cat House0"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1097,6 +1103,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1120,6 +1127,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1143,6 +1151,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1166,6 +1175,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1189,6 +1199,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1212,6 +1223,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1235,6 +1247,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1258,6 +1271,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1281,6 +1295,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1304,6 +1319,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1327,6 +1343,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1350,6 +1367,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1373,6 +1391,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1483,6 +1502,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House0"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1511,6 +1531,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House1"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1539,6 +1560,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House2"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1567,6 +1589,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House3"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1595,6 +1618,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House4"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1623,6 +1647,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House5"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1651,6 +1676,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House6"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1679,6 +1705,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House7"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1707,6 +1734,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House8"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1735,6 +1763,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House9"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1763,6 +1792,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House10"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1791,6 +1821,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House11"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -1819,6 +1850,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         key="The Cat House12"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",
@@ -2140,6 +2172,7 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "periodText": "per month",
         "pricePerPeriod": "$28000",
+        "pricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -2272,6 +2305,7 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         key="The Cat House0"
         periodText="per month"
         pricePerPeriod="$28000"
+        pricePerPeriodPrefix="from"
         propertyAmenities={
           Array [
             "Pool",

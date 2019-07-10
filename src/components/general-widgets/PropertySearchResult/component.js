@@ -153,7 +153,7 @@ Component.propTypes = {
   placeholderImageUrl: PropTypes.string,
   /** The price per period of the property, with currency symbol. */
   pricePerPeriod: PropTypes.string,
-  /** The text preposition to display along with the pricePerPeriod. */
+  /** The text prefix to display along with the pricePerPeriod. */
   pricePerPeriodPrefix: PropTypes.string,
   /** The amenities to display as a text*/
   propertyAmenities: PropTypes.arrayOf(PropTypes.string),

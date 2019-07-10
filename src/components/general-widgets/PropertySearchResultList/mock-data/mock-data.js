@@ -12,6 +12,7 @@ export const propertySearchResults = [
       'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
     pricePerPeriod: '$28000',
     periodText: 'per month',
+    pricePerPeriodPrefix: 'from',
     propertyAmenities: ['Pool', 'Wifi', 'Washer', 'Kitchen'],
     propertyName: 'The Cat House',
     propertyType: 'Bed and breakfast',
