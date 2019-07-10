@@ -6,6 +6,8 @@ import { debounce } from 'debounce';
 import { ReactGoogleMap } from 'utils/react-google-maps';
 
 import { getParentNodeWidth } from './utils/getParentNodeWidth';
+import { getHeight } from './utils/getHeight';
+import { getMaxWidth } from './utils/getMaxWidth';
 import { getImgSrc } from './utils/getImgSrc';
 import { GOOGLE_MAPS_API_KEY } from './constants';
 
@@ -21,6 +23,8 @@ export class Component extends PureComponent {
   };
 
   componentDidMount = () => {
+    if (!this.img) return;
+
     global.addEventListener('resize', this.setParentNodeWidth);
     this.img.addEventListener('mousedown', this.setIsDynamicMapShowingTrue);
     this.img.addEventListener('mouseover', this.setIsMouseOverMapTrue);
@@ -38,6 +42,8 @@ export class Component extends PureComponent {
     );
 
   componentWillUnmount = () => {
+    if (!this.img) return;
+
     global.removeEventListener('resize', this.setParentNodeWidth);
     this.img.removeEventListener('mousedown', this.setIsDynamicMapShowingTrue);
     this.img.removeEventListener('mouseover', this.setIsMouseOverMapTrue);
@@ -64,16 +70,28 @@ export class Component extends PureComponent {
   render = () => {
     const {
       apiKey,
-      height,
+      isFullBleed,
+      isFluid,
       isShowingExactLocation,
       isShowingApproximateLocation,
       latitude,
       longitude,
     } = this.props;
 
-    return (
-      <Card fluid style={{ height, maxWidth: '640px' }}>
-        {this.state.isDynamicMapShowing ? (
+    const height = getHeight(this.props.height, isFullBleed, isFluid);
+
+    return isFullBleed ? (
+      <ReactGoogleMap
+        apiKey={apiKey}
+        height={height}
+        isShowingApproximateLocation={isShowingApproximateLocation}
+        isShowingExactLocation={isShowingExactLocation}
+        latitude={latitude}
+        longitude={longitude}
+      />
+    ) : (
+      <Card fluid style={{ height, maxWidth: getMaxWidth(isFluid) }}>
+        {isFluid || this.state.isDynamicMapShowing ? (
           <ReactGoogleMap
             apiKey={apiKey}
             height={height}
@@ -106,8 +124,12 @@ Component.displayName = 'GoogleMap';
 Component.defaultProps = {
   apiKey: GOOGLE_MAPS_API_KEY,
   height: '400px',
+  isFluid: false,
+  isFullBleed: false,
   isShowingExactLocation: false,
   isShowingApproximateLocation: false,
+  latitude: 0,
+  longitude: 0,
 };
 
 Component.propTypes = {
@@ -115,12 +137,16 @@ Component.propTypes = {
   apiKey: PropTypes.string,
   /** A valid CSS value to set the height of the map. */
   height: PropTypes.string,
-  /** Is the map showing a marker for the approximate location. */
+  /** Does the map show on a card which fills the width and height of its container. */
+  isFluid: PropTypes.bool,
+  /** Does the map fill the width and height of its container. */
+  isFullBleed: PropTypes.bool,
+  /** Is the map showing a single marker for the approximate location. */
   isShowingApproximateLocation: PropTypes.bool,
-  /** Is the map showing a marker for the exact location. */
+  /** Is the map showing a single marker for the exact location. */
   isShowingExactLocation: PropTypes.bool,
-  /** The latitude coordinate for the center of the map and/or location of the marker */
-  latitude: PropTypes.number.isRequired,
-  /** The longitude coordinate for the center of the map and/or location of the marker */
-  longitude: PropTypes.number.isRequired,
+  /** The latitude coordinate for the center of the map and/or location of the single marker. */
+  latitude: PropTypes.number,
+  /** The longitude coordinate for the center of the map and/or location of the single marker. */
+  longitude: PropTypes.number,
 };

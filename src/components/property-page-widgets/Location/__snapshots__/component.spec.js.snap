@@ -431,6 +431,8 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
               <GoogleMap
                 apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
                 height="400px"
+                isFluid={false}
+                isFullBleed={false}
                 isShowingApproximateLocation={false}
                 isShowingExactLocation={false}
                 latitude={41.387863}

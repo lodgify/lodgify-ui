@@ -29,6 +29,34 @@
 />
 ```
 
+#### Fluid
+
+A fluid map appears on a card filling the width and height of its container. It is always dynamic.
+
+```jsx
+<div style={{ height: '80vh' }}>
+  <GoogleMap
+    isFluid
+    latitude={41.387863}
+    longitude={2.158105}
+  />
+</div>
+```
+
+#### Full bleed
+
+A full bleed map appears with no card and fills the width and height of its container. It is always dynamic.
+
+```jsx
+<div style={{ height: '80vh' }}>
+  <GoogleMap
+    isFullBleed
+    latitude={41.387863}
+    longitude={2.158105}
+  />
+</div>
+```
+
 ### Usage
 
 #### Exact location

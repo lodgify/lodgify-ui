@@ -16,8 +16,12 @@ const props = {
   longitude: 0,
 };
 
-const getGoogleMap = () => mount(<GoogleMap {...props} />);
+const getGoogleMap = extraProps =>
+  mount(<GoogleMap {...props} {...extraProps} />);
 
+global.addEventListener = jest.fn();
+global.removeEventListener = jest.fn();
+global.setTimeout = jest.fn();
 debounce.mockImplementation(func => {
   func.isDebounced = true;
   return func;
@@ -25,11 +29,21 @@ debounce.mockImplementation(func => {
 
 describe('<GoogleMap />', () => {
   describe('componentDidMount', () => {
-    it('should call `global.addEventListener` with the right arguments', () => {
-      global.addEventListener = jest.fn();
+    describe('if `img` is undefined', () => {
+      it('should not call `global.addEventListener`', () => {
+        const wrapper = getGoogleMap({ isFullBleed: true });
 
+        global.addEventListener.mockClear();
+        wrapper.instance().componentDidMount();
+
+        expect(global.addEventListener).not.toHaveBeenCalled();
+      });
+    });
+
+    it('should call `global.addEventListener` with the right arguments', () => {
       const wrapper = getGoogleMap();
 
+      global.addEventListener.mockClear();
       wrapper.instance().componentDidMount();
 
       expect(global.addEventListener).toHaveBeenCalledWith(
@@ -130,7 +144,7 @@ describe('<GoogleMap />', () => {
 
         wrapper.setState({ isDynamicMapShowing: false, isMouseOverMap: true });
         wrapper.instance().setIsDynamicMapShowingTrue = jest.fn();
-        global.setTimeout = jest.fn(func => func());
+        global.setTimeout.mockImplementationOnce(func => func());
         wrapper.instance().componentDidUpdate({}, { isMouseOverMap: false });
 
         expect(
@@ -141,11 +155,21 @@ describe('<GoogleMap />', () => {
   });
 
   describe('componentWillUnmount', () => {
-    it('should call `global.addEventListener` with the right arguments', () => {
-      global.removeEventListener = jest.fn();
+    describe('if `img` is undefined', () => {
+      it('should not call `global.removeEventListener`', () => {
+        const wrapper = getGoogleMap({ isFullBleed: true });
 
+        global.removeEventListener.mockClear();
+        wrapper.instance().componentWillUnmount();
+
+        expect(global.removeEventListener).not.toHaveBeenCalled();
+      });
+    });
+
+    it('should call `global.removeEventListener` with the right arguments', () => {
       const wrapper = getGoogleMap();
 
+      global.removeEventListener.mockClear();
       wrapper.instance().componentWillUnmount();
 
       expect(global.removeEventListener).toHaveBeenCalledWith(
@@ -269,6 +293,22 @@ describe('<GoogleMap />', () => {
   });
 
   describe('render', () => {
+    describe('if `props.isFullBleed` is `true`', () => {
+      it('should return the right structure', () => {
+        const wrapper = getGoogleMap({ isFullBleed: true });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.isFluid` is `true`', () => {
+      it('should return the right structure', () => {
+        const wrapper = getGoogleMap({ isFluid: true });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
     describe('if `state.isDynamicMapShowing` is `false`', () => {
       it('should return the right structure', () => {
         getImgSrc.mockReturnValue('immmaaage');
@@ -278,12 +318,11 @@ describe('<GoogleMap />', () => {
       });
     });
 
-    describe('if `state.isDynamicMapShowing` is `false`', () => {
+    describe('if `state.isDynamicMapShowing` is `true`', () => {
       it('should return the right structure', () => {
         const wrapper = getGoogleMap();
 
         wrapper.setState({ isDynamicMapShowing: true });
-        wrapper.update();
 
         expect(wrapper).toMatchSnapshot();
       });
