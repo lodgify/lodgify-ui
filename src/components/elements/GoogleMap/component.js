@@ -13,6 +13,7 @@ import { GOOGLE_MAPS_API_KEY } from './constants';
 
 /**
  * A map displays a location.
+ * By default, the map will display a static image then load a dynamic interface on user interaction.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
@@ -76,6 +77,7 @@ export class Component extends PureComponent {
       isShowingApproximateLocation,
       latitude,
       longitude,
+      markers,
     } = this.props;
 
     const height = getHeight(this.props.height, isFullBleed, isFluid);
@@ -88,6 +90,7 @@ export class Component extends PureComponent {
         isShowingExactLocation={isShowingExactLocation}
         latitude={latitude}
         longitude={longitude}
+        markers={markers}
       />
     ) : (
       <Card fluid style={{ height, maxWidth: getMaxWidth(isFluid) }}>
@@ -99,6 +102,7 @@ export class Component extends PureComponent {
             isShowingExactLocation={isShowingExactLocation}
             latitude={latitude}
             longitude={longitude}
+            markers={markers}
           />
         ) : (
           <img
@@ -130,6 +134,7 @@ Component.defaultProps = {
   isShowingApproximateLocation: false,
   latitude: 0,
   longitude: 0,
+  markers: [],
 };
 
 Component.propTypes = {
@@ -141,12 +146,23 @@ Component.propTypes = {
   isFluid: PropTypes.bool,
   /** Does the map fill the width and height of its container. */
   isFullBleed: PropTypes.bool,
-  /** Is the map showing a single marker for the approximate location. */
+  /** Is the map showing a marker for the approximate location at the center of the map. */
   isShowingApproximateLocation: PropTypes.bool,
-  /** Is the map showing a single marker for the exact location. */
+  /** Is the map showing a marker for the exact location location at the center of the map. */
   isShowingExactLocation: PropTypes.bool,
-  /** The latitude coordinate for the center of the map and/or location of the single marker. */
+  /** The latitude coordinate for the center of the map. */
   latitude: PropTypes.number,
-  /** The longitude coordinate for the center of the map and/or location of the single marker. */
+  /** The longitude coordinate for the center of the map. */
   longitude: PropTypes.number,
+  /** The markers to display on the map. */
+  markers: PropTypes.arrayOf(
+    PropTypes.shape({
+      /** The React component to show as a marker. */
+      component: PropTypes.node.isRequired,
+      /** The latitude coordinate for the marker. */
+      latitude: PropTypes.number,
+      /** The longitude coordinate for the marker. */
+      longitude: PropTypes.number,
+    })
+  ),
 };

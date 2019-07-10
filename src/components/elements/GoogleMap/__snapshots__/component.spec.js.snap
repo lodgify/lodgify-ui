@@ -10,6 +10,7 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
   isShowingExactLocation={false}
   latitude={0}
   longitude={0}
+  markers={Array []}
 >
   <Card
     fluid={true}
@@ -37,6 +38,7 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
         isShowingExactLocation={false}
         latitude={0}
         longitude={0}
+        markers={Array []}
       >
         <withScriptjs(withGoogleMap(ReactGoogleMap))
           apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
@@ -73,6 +75,7 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
               }
             />
           }
+          markers={Array []}
         >
           <div
             style={
@@ -98,6 +101,7 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
   isShowingExactLocation={false}
   latitude={0}
   longitude={0}
+  markers={Array []}
 >
   <withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))
     apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
@@ -106,6 +110,7 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
     isShowingExactLocation={false}
     latitude={0}
     longitude={0}
+    markers={Array []}
   >
     <withScriptjs(withGoogleMap(ReactGoogleMap))
       apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
@@ -142,6 +147,7 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
           }
         />
       }
+      markers={Array []}
     >
       <div
         style={
@@ -165,6 +171,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` shou
   isShowingExactLocation={false}
   latitude={0}
   longitude={0}
+  markers={Array []}
 >
   <Card
     fluid={true}
@@ -203,6 +210,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
   isShowingExactLocation={false}
   latitude={0}
   longitude={0}
+  markers={Array []}
 >
   <Card
     fluid={true}
@@ -230,6 +238,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
         isShowingExactLocation={false}
         latitude={0}
         longitude={0}
+        markers={Array []}
       >
         <withScriptjs(withGoogleMap(ReactGoogleMap))
           apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
@@ -266,6 +275,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
               }
             />
           }
+          markers={Array []}
         >
           <div
             style={
