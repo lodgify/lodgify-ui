@@ -1,15 +1,18 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Segment } from 'semantic-ui-react';
+import getClassNames from 'classnames';
 
-import { PriceLabel } from 'elements/PriceLabel';
+import { getToggledIsActiveState } from 'utils/get-toggled-is-active-state';
 import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
 import { Rating } from 'elements/Rating';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 import { Paragraph } from 'typography/Paragraph';
 import { Heading } from 'typography/Heading';
 import { FlexContainer } from 'layout/FlexContainer';
+import { PriceLabel } from 'elements/PriceLabel';
 
+// import { getPriceLabelMarkup } from './utils/getPriceLabelMarkup';
 import { getSearchResultDescription } from './utils/getSearchResultDescription';
 import { getPropertyAmenities } from './utils/getPropertyAmenities';
 
@@ -17,87 +20,114 @@ import { getPropertyAmenities } from './utils/getPropertyAmenities';
  * The standard widget to display a property search result.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({
-  bathsNumber,
-  bathsText,
-  bedroomsNumber,
-  bedroomsText,
-  bedsNumber,
-  bedsText,
-  guestsNumber,
-  guestsText,
-  imageAlternativeText,
-  imageSizes,
-  imageSrcSet,
-  imageUrl,
-  isShowingPlaceholder,
-  periodText,
-  placeholderImageUrl,
-  pricePerPeriod,
-  pricePerPeriodPrefix,
-  propertyAmenities,
-  propertyName,
-  propertyType,
-  propertyUrl,
-  propertyUrlTarget,
-  ratingNumber,
-}) => (
-  <Card
-    className="has-search-result"
-    href={propertyUrl}
-    target={propertyUrlTarget}
-  >
-    {isShowingPlaceholder ? (
-      getCardPlaceholderMarkup()
-    ) : (
-      <Fragment>
-        <FlexContainer>
-          <ResponsiveImage
-            alternativeText={imageAlternativeText}
-            imageUrl={imageUrl}
-            isFluid
-            placeholderImageUrl={placeholderImageUrl}
-            sizes={imageSizes}
-            srcSet={imageSrcSet}
-          />
-          <Segment raised>
-            <PriceLabel
-              periodText={periodText}
-              pricePerPeriod={pricePerPeriod}
-              pricePerPeriodPrefix={pricePerPeriodPrefix}
-            />
-          </Segment>
-        </FlexContainer>
-        <Card.Content>
-          <Card.Header>
-            <Heading>{propertyName}</Heading>
-          </Card.Header>
-          <Card.Description>
-            <FlexContainer alignItems="center" flexDirection="row">
-              <Rating iconSize="tiny" ratingNumber={ratingNumber} />
-              <Paragraph size="medium">{`· ${propertyType}`}</Paragraph>
-            </FlexContainer>
-          </Card.Description>
-          <Card.Description>
-            {getSearchResultDescription(
-              bathsNumber,
-              bathsText,
-              bedroomsNumber,
-              bedroomsText,
-              bedsNumber,
-              bedsText,
-              guestsNumber,
-              guestsText
-            )}
-          </Card.Description>
-          <Card.Description>
-            {getPropertyAmenities(propertyAmenities)}
-          </Card.Description>
-        </Card.Content>
-      </Fragment>
-    )}
-  </Card>
-);
+export class Component extends PureComponent {
+  state = {
+    isActive: false,
+  };
+
+  componentDidUpdate = (previousProps, previousState) => {
+    const { isActive } = this.state;
+
+    if (previousState.isActive === isActive) return;
+
+    const { name, onChange } = this.props;
+
+    onChange(name, isActive);
+  };
+
+  toggleActive = () => this.setState(getToggledIsActiveState);
+
+  render = () => {
+    const {
+      bathsNumber,
+      bathsText,
+      bedroomsNumber,
+      bedroomsText,
+      bedsNumber,
+      bedsText,
+      guestsNumber,
+      guestsText,
+      imageAlternativeText,
+      imageSizes,
+      imageSrcSet,
+      imageUrl,
+      isActive,
+      isShowingPlaceholder,
+      placeholderImageUrl,
+      priceLabelperiodText,
+      priceLabelpricePerPeriod,
+      priceLabelpricePerPeriodPrefix,
+      propertyAmenities,
+      propertyName,
+      propertyType,
+      propertyUrl,
+      propertyUrlTarget,
+      ratingNumber,
+    } = this.props;
+
+    return (
+      <div
+        className={getClassNames('ui', 'card', 'has-search-result', {
+          active: isActive || this.state.isActive,
+        })}
+        onMouseOut={this.toggleActive}
+        onMouseOver={this.toggleActive}
+      >
+        <Card href={propertyUrl} target={propertyUrlTarget}>
+          {isShowingPlaceholder ? (
+            getCardPlaceholderMarkup()
+          ) : (
+            <Fragment>
+              <FlexContainer>
+                <ResponsiveImage
+                  alternativeText={imageAlternativeText}
+                  imageUrl={imageUrl}
+                  isFluid
+                  placeholderImageUrl={placeholderImageUrl}
+                  sizes={imageSizes}
+                  srcSet={imageSrcSet}
+                />
+                <Segment raised>
+                  <PriceLabel
+                    periodText={priceLabelperiodText}
+                    pricePerPeriod={priceLabelpricePerPeriod}
+                    pricePerPeriodPrefix={priceLabelpricePerPeriodPrefix}
+                  />
+                </Segment>
+              </FlexContainer>
+              <Card.Content>
+                <Card.Header>
+                  <Heading>{propertyName}</Heading>
+                </Card.Header>
+                <Card.Description>
+                  <FlexContainer alignItems="center" flexDirection="row">
+                    <Rating iconSize="tiny" ratingNumber={ratingNumber} />
+                    <Paragraph size="medium">{`· ${propertyType}`}</Paragraph>
+                  </FlexContainer>
+                </Card.Description>
+                <Card.Description>
+                  {getSearchResultDescription(
+                    bathsNumber,
+                    bathsText,
+                    bedroomsNumber,
+                    bedroomsText,
+                    bedsNumber,
+                    bedsText,
+                    guestsNumber,
+                    guestsText
+                  )}
+                </Card.Description>
+                <Card.Description>
+                  {getPropertyAmenities(propertyAmenities)}
+                </Card.Description>
+              </Card.Content>
+            </Fragment>
+          )}
+        </Card>
+      </div>
+    );
+  };
+}
 
 Component.displayName = 'PropertySearchResult';
 
@@ -111,11 +141,14 @@ Component.defaultProps = {
   imageAlternativeText: undefined,
   imageSizes: undefined,
   imageSrcSet: undefined,
+  isActive: false,
   isShowingPlaceholder: false,
-  periodText: '',
-  pricePerPeriod: '',
-  pricePerPeriodPrefix: '',
+  name: undefined,
+  onChange: Function.prototype,
   placeholderImageUrl: undefined,
+  priceLabelperiodText: '',
+  priceLabelpricePerPeriod: '',
+  priceLabelpricePerPeriodPrefix: '',
   propertyAmenities: [],
   propertyUrlTarget: '_self',
 };
@@ -145,16 +178,27 @@ Component.propTypes = {
   imageSrcSet: PropTypes.string,
   /** URL pointing to the image to display. */
   imageUrl: PropTypes.string.isRequired,
+  /** Is the property search result in an active state. */
+  isActive: PropTypes.bool,
   /** Is the component showing placeholders to reserve space for content which will appear. */
   isShowingPlaceholder: PropTypes.bool,
+  /** The name for the property search result. */
+  name: PropTypes.string,
   /** The text describing the pricing period. */
-  periodText: PropTypes.string,
+  /**
+   * A function called when the active state of the property search result changes.
+   * @param {string}  name
+   * @param {Boolean} isActive
+   */
+  onChange: PropTypes.func,
   /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
+  /** The text describing the pricing period. */
+  priceLabelperiodText: PropTypes.string,
   /** The price per period of the property, with currency symbol. */
-  pricePerPeriod: PropTypes.string,
-  /** The text prefix to display along with the pricePerPeriod. */
-  pricePerPeriodPrefix: PropTypes.string,
+  priceLabelpricePerPeriod: PropTypes.string,
+  /** The text prefix to display along with the price per period. */
+  priceLabelpricePerPeriodPrefix: PropTypes.string,
   /** The amenities to display as a text*/
   propertyAmenities: PropTypes.arrayOf(PropTypes.string),
   /** The name of the property. */
