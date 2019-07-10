@@ -83,6 +83,8 @@
 @searchResultHeight: 320px;
 @searchResultWidth: 260px;
 @searchResultMargin: 20px;
+@searchResultBoxShadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+@searchResultBoxShadowTransition: all 0.3s cubic-bezier(0.59, 0.25, 0, 1.13);
 
 @searchResultContentPadding: 25px 20px;
 @searchResultContentPaddingTop: 15px;
@@ -114,5 +116,5 @@
 
 /* Colored */
 
-/* Room Type Slideshow*/
+/* Room Type Slideshow */
 @roomTypeSlideshowImageHeight: 180px;
