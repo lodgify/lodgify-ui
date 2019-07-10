@@ -1,188 +1,203 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should render the right structure 1`] = `
-<Card
-  className="has-search-result"
-  href="/"
-  target="_self"
+<div
+  className="ui card has-search-result"
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
 >
-  <FlexContainer
-    alignContent={null}
-    alignItems={null}
-    flexDirection={null}
-    flexWrap={null}
-    justifyContent={null}
+  <Card
+    href="/"
+    target="_self"
   >
-    <withLazyLoad(ResponsiveImage)
-      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-      isFluid={true}
-      isLazyLoaded={true}
-    />
-    <Segment
-      raised={true}
+    <FlexContainer
+      alignContent={null}
+      alignItems={null}
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent={null}
     >
-      <PriceLabel
-        hasShadow={false}
-        isActive={false}
-        isPointing={false}
-        onChange={[Function]}
-        onClick={[Function]}
-        periodText="(ºOº)"
-        pricePerPeriod="$280"
-        pricePerPeriodPrefix=""
+      <withLazyLoad(ResponsiveImage)
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        isFluid={true}
+        isLazyLoaded={true}
       />
-    </Segment>
-  </FlexContainer>
-  <CardContent>
-    <CardHeader>
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="medium"
-        textAlign={null}
+      <Segment
+        raised={true}
       >
-        The Cat House
-      </Heading>
-    </CardHeader>
-    <CardDescription>
-      <FlexContainer
-        alignContent={null}
-        alignItems="center"
-        flexDirection="row"
-        flexWrap={null}
-        justifyContent={null}
-      >
-        <Rating
-          iconSize="tiny"
-          isShowingNumeral={true}
-          ratingNumber={4.7}
+        <PriceLabel
+          hasShadow={false}
+          isActive={false}
+          isPointing={false}
+          onChange={[Function]}
+          onClick={[Function]}
+          periodText=""
+          pricePerPeriod=""
+          pricePerPeriodPrefix=""
         />
-        <Paragraph
+      </Segment>
+    </FlexContainer>
+    <CardContent>
+      <CardHeader>
+        <Heading
+          className={null}
+          hasMargin={true}
+          isColorInverted={false}
           size="medium"
-          weight={null}
+          textAlign={null}
         >
-          · Bed and breakfast
-        </Paragraph>
-      </FlexContainer>
-    </CardDescription>
-    <CardDescription>
-      2 guests · 2 bedrooms · 2 beds · 2 baths
-    </CardDescription>
-    <CardDescription>
-      Pool · Wifi · Washer · Kitchen
-    </CardDescription>
-  </CardContent>
-</Card>
+          The Cat House
+        </Heading>
+      </CardHeader>
+      <CardDescription>
+        <FlexContainer
+          alignContent={null}
+          alignItems="center"
+          flexDirection="row"
+          flexWrap={null}
+          justifyContent={null}
+        >
+          <Rating
+            iconSize="tiny"
+            isShowingNumeral={true}
+            ratingNumber={4.7}
+          />
+          <Paragraph
+            size="medium"
+            weight={null}
+          >
+            · Bed and breakfast
+          </Paragraph>
+        </FlexContainer>
+      </CardDescription>
+      <CardDescription>
+        2 guests · 2 bedrooms · 2 beds · 2 baths
+      </CardDescription>
+      <CardDescription>
+        Pool · Wifi · Washer · Kitchen
+      </CardDescription>
+    </CardContent>
+  </Card>
+</div>
 `;
 
 exports[`<PropertySearchResult /> if \`props.isShowingPlaceholder\` is passed should return the right structure 1`] = `
-<Card
-  className="has-search-result"
-  href="/"
-  target="_self"
+<div
+  className="ui card has-search-result"
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
 >
-  <BlockPlaceholder
-    isFluid={false}
-    isRectangular={true}
-    isSquare={false}
-  />
-  <CardContent>
-    <CardHeader>
-      <Divider
-        className=""
-        hasLine={false}
-        size="small"
-      />
-      <TextPlaceholder
-        isFluid={true}
-        length="medium"
-      />
-      <TextPlaceholder
-        isFluid={true}
-        length="long"
-      />
-      <TextPlaceholder
-        isFluid={true}
-        length="long"
-      />
-    </CardHeader>
-  </CardContent>
-</Card>
+  <Card
+    href="/"
+    target="_self"
+  >
+    <BlockPlaceholder
+      isFluid={false}
+      isRectangular={true}
+      isSquare={false}
+    />
+    <CardContent>
+      <CardHeader>
+        <Divider
+          className=""
+          hasLine={false}
+          size="small"
+        />
+        <TextPlaceholder
+          isFluid={true}
+          length="medium"
+        />
+        <TextPlaceholder
+          isFluid={true}
+          length="long"
+        />
+        <TextPlaceholder
+          isFluid={true}
+          length="long"
+        />
+      </CardHeader>
+    </CardContent>
+  </Card>
+</div>
 `;
 
 exports[`<PropertySearchResult /> should render the right structure 1`] = `
-<Card
-  className="has-search-result"
-  href="/"
-  target="_self"
+<div
+  className="ui card has-search-result"
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
 >
-  <FlexContainer
-    alignContent={null}
-    alignItems={null}
-    flexDirection={null}
-    flexWrap={null}
-    justifyContent={null}
+  <Card
+    href="/"
+    target="_self"
   >
-    <withLazyLoad(ResponsiveImage)
-      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-      isFluid={true}
-      isLazyLoaded={true}
-    />
-    <Segment
-      raised={true}
+    <FlexContainer
+      alignContent={null}
+      alignItems={null}
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent={null}
     >
-      <PriceLabel
-        hasShadow={false}
-        isActive={false}
-        isPointing={false}
-        onChange={[Function]}
-        onClick={[Function]}
-        periodText=""
-        pricePerPeriod="$280"
-        pricePerPeriodPrefix=""
+      <withLazyLoad(ResponsiveImage)
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        isFluid={true}
+        isLazyLoaded={true}
       />
-    </Segment>
-  </FlexContainer>
-  <CardContent>
-    <CardHeader>
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="medium"
-        textAlign={null}
+      <Segment
+        raised={true}
       >
-        The Cat House
-      </Heading>
-    </CardHeader>
-    <CardDescription>
-      <FlexContainer
-        alignContent={null}
-        alignItems="center"
-        flexDirection="row"
-        flexWrap={null}
-        justifyContent={null}
-      >
-        <Rating
-          iconSize="tiny"
-          isShowingNumeral={true}
-          ratingNumber={4.7}
+        <PriceLabel
+          hasShadow={false}
+          isActive={false}
+          isPointing={false}
+          onChange={[Function]}
+          onClick={[Function]}
+          periodText=""
+          pricePerPeriod=""
+          pricePerPeriodPrefix=""
         />
-        <Paragraph
+      </Segment>
+    </FlexContainer>
+    <CardContent>
+      <CardHeader>
+        <Heading
+          className={null}
+          hasMargin={true}
+          isColorInverted={false}
           size="medium"
-          weight={null}
+          textAlign={null}
         >
-          · Bed and breakfast
-        </Paragraph>
-      </FlexContainer>
-    </CardDescription>
-    <CardDescription>
-      2 guests · 2 bedrooms · 2 beds · 2 baths
-    </CardDescription>
-    <CardDescription>
-      Pool · Wifi · Washer · Kitchen
-    </CardDescription>
-  </CardContent>
-</Card>
+          The Cat House
+        </Heading>
+      </CardHeader>
+      <CardDescription>
+        <FlexContainer
+          alignContent={null}
+          alignItems="center"
+          flexDirection="row"
+          flexWrap={null}
+          justifyContent={null}
+        >
+          <Rating
+            iconSize="tiny"
+            isShowingNumeral={true}
+            ratingNumber={4.7}
+          />
+          <Paragraph
+            size="medium"
+            weight={null}
+          >
+            · Bed and breakfast
+          </Paragraph>
+        </FlexContainer>
+      </CardDescription>
+      <CardDescription>
+        2 guests · 2 bedrooms · 2 beds · 2 baths
+      </CardDescription>
+      <CardDescription>
+        Pool · Wifi · Washer · Kitchen
+      </CardDescription>
+    </CardContent>
+  </Card>
+</div>
 `;

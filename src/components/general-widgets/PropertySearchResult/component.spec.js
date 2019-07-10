@@ -2,6 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
+import { getToggledIsActiveState } from 'utils/get-toggled-is-active-state';
+
 import { Component as PropertySearchResult } from './component';
 
 const propertyAmenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
@@ -43,11 +45,43 @@ describe('<PropertySearchResult />', () => {
     });
   });
 
-  it('should have `displayName` `PropertySearchResult`', () => {
-    expectComponentToHaveDisplayName(
-      PropertySearchResult,
-      'PropertySearchResult'
-    );
+  describe('componentDidUpdate', () => {
+    describe('if `state.isActive` has not changed', () => {
+      it('should not call `props.onChange`', () => {
+        const onChange = jest.fn();
+        const wrapper = getPropertySearchResult({ onChange });
+
+        wrapper.instance().componentDidUpdate({}, { isActive: false });
+
+        expect(onChange).not.toHaveBeenCalled();
+      });
+    });
+
+    describe('if `state.isActive` has changed', () => {
+      it('should call `props.onChange` with the right arguments', () => {
+        const name = 'Bill';
+        const onChange = jest.fn();
+        const wrapper = getPropertySearchResult({ name, onChange });
+
+        wrapper.instance().componentDidUpdate({}, { isActive: true });
+
+        expect(onChange).toHaveBeenCalledWith(name, false);
+      });
+    });
+  });
+
+  describe('toggleActive', () => {
+    it('should call `setState` with the right arguments', () => {
+      const wrapper = getPropertySearchResult();
+
+      wrapper.instance().setState = jest.fn();
+      wrapper.update();
+      wrapper.instance().toggleActive();
+
+      expect(wrapper.instance().setState).toHaveBeenCalledWith(
+        getToggledIsActiveState
+      );
+    });
   });
 
   describe('if `props.isShowingPlaceholder` is passed', () => {
@@ -56,5 +90,12 @@ describe('<PropertySearchResult />', () => {
 
       expect(actual).toMatchSnapshot();
     });
+  });
+
+  it('should have `displayName` `PropertySearchResult`', () => {
+    expectComponentToHaveDisplayName(
+      PropertySearchResult,
+      'PropertySearchResult'
+    );
   });
 });
