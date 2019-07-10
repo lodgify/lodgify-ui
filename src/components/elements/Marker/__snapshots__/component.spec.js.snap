@@ -4,11 +4,13 @@ exports[`<Marker /> by default should render the right structure 1`] = `
 <Marker
   isActive={false}
   onChange={[Function]}
+  onClick={[Function]}
 >
   <div
     className="ui marker"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
+    onClick={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   />
 </Marker>
 `;
@@ -17,11 +19,13 @@ exports[`<Marker /> if \`props.isActive === true\` should render the right struc
 <Marker
   isActive={true}
   onChange={[Function]}
+  onClick={[Function]}
 >
   <div
     className="ui marker active"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
+    onClick={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
   />
 </Marker>
 `;

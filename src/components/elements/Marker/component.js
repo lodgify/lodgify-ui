@@ -23,6 +23,12 @@ export class Component extends PureComponent {
     onChange(name, isActive);
   };
 
+  handleClick = syntheticEvent => {
+    const { name, onClick } = this.props;
+
+    onClick(name, syntheticEvent);
+  };
+
   toggleActive = () => this.setState(getToggledState);
 
   render = () => (
@@ -30,8 +36,9 @@ export class Component extends PureComponent {
       className={getClassNames('ui', 'marker', {
         active: this.props.isActive || this.state.isActive,
       })}
-      onMouseEnter={this.toggleActive}
-      onMouseLeave={this.toggleActive}
+      onClick={this.handleClick}
+      onMouseOut={this.toggleActive}
+      onMouseOver={this.toggleActive}
     />
   );
 }
@@ -42,6 +49,7 @@ Component.defaultProps = {
   isActive: false,
   name: undefined,
   onChange: Function.prototype,
+  onClick: Function.prototype,
 };
 
 Component.propTypes = {
@@ -50,9 +58,15 @@ Component.propTypes = {
   /** The name for the marker. */
   name: PropTypes.string,
   /**
-   * A function called when the active state of the marker changes
+   * A function called when the active state of the marker changes.
    * @param {string}  name
    * @param {Boolean} isActive
    */
   onChange: PropTypes.func,
+  /**
+   * A function called when the marker is clicked.
+   * @param {string}  name
+   * @param {Object}  syntheticEvent
+   */
+  onClick: PropTypes.func,
 };
