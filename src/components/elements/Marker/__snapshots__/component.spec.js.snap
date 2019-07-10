@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Marker /> by default should render the right structure 1`] = `
+<Marker
+  isActive={false}
+  onChange={[Function]}
+>
+  <div
+    className="ui marker"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  />
+</Marker>
+`;
+
+exports[`<Marker /> if \`props.isActive === true\` should render the right structure 1`] = `
+<Marker
+  isActive={true}
+  onChange={[Function]}
+>
+  <div
+    className="ui marker active"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  />
+</Marker>
+`;
