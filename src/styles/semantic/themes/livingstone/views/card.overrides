@@ -118,57 +118,68 @@
     margin: 0 @searchResultMargin @searchResultMargin 0;
     width: @searchResultWidth;
 
-    @media @tinyScreen {
+    &.active {
+      box-shadow: @searchResultBoxShadow;
+      transition: @searchResultBoxShadowTransition;
+    }
+
+    .ui.card {
+      display: inline-flex;
       width: 100%;
-      margin-right: 0;
-    }
-
-    > .flex-container {
-      position: relative;
-
-      > .ui.raised.segment {
-        background-color: @themeActionColorDefault;
-        background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: @searchResultLabelMargin;
-        border-radius: @searchResultLabelBorderRadius;
-        padding: 0;
-        padding-top: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-
-    .content {
-      padding: @searchResultContentPadding;
-      padding-top: @searchResultContentPaddingTop;
-
-      .description {
-        margin-top: 0;
-        font-size: @searchResultDescriptionFontSize;
-      }
-
-      > .meta,
-      > .header .ui.header,
-      > .description {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-    }
-
-    img {
-      flex-grow: @featuredImageFlexGrow;
-    }
-
-    .placeholder.block.rectangle {
-      padding-top: @searchResultPlaceholderPadding;
+      height: 100%;
 
       @media @tinyScreen {
-        padding-top: @mobileSearchResultPlaceholderPadding;
+        width: 100%;
+        margin-right: 0;
+      }
+
+      > .flex-container {
+        position: relative;
+
+        > .ui.raised.segment {
+          background-color: @themeActionColorDefault;
+          background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          margin: @searchResultLabelMargin;
+          border-radius: @searchResultLabelBorderRadius;
+          padding: 0;
+          padding-top: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .content {
+        padding: @searchResultContentPadding;
+        padding-top: @searchResultContentPaddingTop;
+
+        .description {
+          margin-top: 0;
+          font-size: @searchResultDescriptionFontSize;
+        }
+
+        > .meta,
+        > .header .ui.header,
+        > .description {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      img {
+        flex-grow: @featuredImageFlexGrow;
+      }
+
+      .placeholder.block.rectangle {
+        padding-top: @searchResultPlaceholderPadding;
+
+        @media @tinyScreen {
+          padding-top: @mobileSearchResultPlaceholderPadding;
+        }
       }
     }
   }
