@@ -1,3 +1,14 @@
+# [1.221.0](https://github.com/lodgify/lodgify-ui/compare/v1.220.0...v1.221.0) (2019-07-11)
+
+
+### Features
+
+* **card.*:** add active state and reorganize class inheritance ([50e8e73](https://github.com/lodgify/lodgify-ui/commit/50e8e73))
+* **getToggledState:** add global util ([87438ab](https://github.com/lodgify/lodgify-ui/commit/87438ab))
+* **Marker:** add getToggledIsActiveState ([533ed0a](https://github.com/lodgify/lodgify-ui/commit/533ed0a))
+* **PriceLabel:** add getToggledIsActiveState ([afb1a79](https://github.com/lodgify/lodgify-ui/commit/afb1a79))
+* **PropertySearchResult:** add active state ([52a5433](https://github.com/lodgify/lodgify-ui/commit/52a5433))
+
 # [1.220.0](https://github.com/lodgify/lodgify-ui/compare/v1.219.0...v1.220.0) (2019-07-11)
 
 
