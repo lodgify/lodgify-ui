@@ -1,3 +1,17 @@
+# [1.219.0](https://github.com/lodgify/lodgify-ui/compare/v1.218.0...v1.219.0) (2019-07-11)
+
+
+### Bug Fixes
+
+* **Marker:** use bubbling mouse events and add missing click handler ([0f9061a](https://github.com/lodgify/lodgify-ui/commit/0f9061a))
+
+
+### Features
+
+* **GoogleMap:** accept multiple markers as props ([9eb6d0c](https://github.com/lodgify/lodgify-ui/commit/9eb6d0c))
+* **GoogleMap:** expose props.isFluid and props.isFullBleed ([6a9bf97](https://github.com/lodgify/lodgify-ui/commit/6a9bf97))
+* **Icon:** add list icon ([d89ad87](https://github.com/lodgify/lodgify-ui/commit/d89ad87))
+
 # [1.218.0](https://github.com/lodgify/lodgify-ui/compare/v1.217.0...v1.218.0) (2019-07-11)
 
 
