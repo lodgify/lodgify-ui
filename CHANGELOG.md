@@ -1,3 +1,10 @@
+# [1.218.0](https://github.com/lodgify/lodgify-ui/compare/v1.217.0...v1.218.0) (2019-07-11)
+
+
+### Features
+
+* **FixedContainer:** create component with tests and examples ([33306fd](https://github.com/lodgify/lodgify-ui/commit/33306fd))
+
 # [1.217.0](https://github.com/lodgify/lodgify-ui/compare/v1.216.0...v1.217.0) (2019-07-10)
 
 
