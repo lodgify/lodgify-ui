@@ -1,13 +1,177 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` should return the right structure 1`] = `
+exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the right structure 1`] = `
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
   height="400px"
+  isFluid={true}
+  isFullBleed={false}
   isShowingApproximateLocation={false}
   isShowingExactLocation={false}
   latitude={0}
   longitude={0}
+  markers={Array []}
+>
+  <Card
+    fluid={true}
+    style={
+      Object {
+        "height": "100%",
+        "maxWidth": "100%",
+      }
+    }
+  >
+    <div
+      className="ui fluid card"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))
+        apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+        height="100%"
+        isShowingApproximateLocation={false}
+        isShowingExactLocation={false}
+        latitude={0}
+        longitude={0}
+        markers={Array []}
+      >
+        <withScriptjs(withGoogleMap(ReactGoogleMap))
+          apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+          containerElement={
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                }
+              }
+            />
+          }
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4&v=3.exp&libraries=geometry,drawing,places"
+          height="100%"
+          isShowingApproximateLocation={false}
+          isShowingExactLocation={false}
+          latitude={0}
+          loadingElement={
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                }
+              }
+            />
+          }
+          longitude={0}
+          mapElement={
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                }
+              }
+            />
+          }
+          markers={Array []}
+        >
+          <div
+            style={
+              Object {
+                "height": "100%",
+              }
+            }
+          />
+        </withScriptjs(withGoogleMap(ReactGoogleMap))>
+      </withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))>
+    </div>
+  </Card>
+</GoogleMap>
+`;
+
+exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return the right structure 1`] = `
+<GoogleMap
+  apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+  height="400px"
+  isFluid={false}
+  isFullBleed={true}
+  isShowingApproximateLocation={false}
+  isShowingExactLocation={false}
+  latitude={0}
+  longitude={0}
+  markers={Array []}
+>
+  <withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))
+    apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+    height="100%"
+    isShowingApproximateLocation={false}
+    isShowingExactLocation={false}
+    latitude={0}
+    longitude={0}
+    markers={Array []}
+  >
+    <withScriptjs(withGoogleMap(ReactGoogleMap))
+      apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+      containerElement={
+        <div
+          style={
+            Object {
+              "height": "100%",
+            }
+          }
+        />
+      }
+      googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4&v=3.exp&libraries=geometry,drawing,places"
+      height="100%"
+      isShowingApproximateLocation={false}
+      isShowingExactLocation={false}
+      latitude={0}
+      loadingElement={
+        <div
+          style={
+            Object {
+              "height": "100%",
+            }
+          }
+        />
+      }
+      longitude={0}
+      mapElement={
+        <div
+          style={
+            Object {
+              "height": "100%",
+            }
+          }
+        />
+      }
+      markers={Array []}
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+          }
+        }
+      />
+    </withScriptjs(withGoogleMap(ReactGoogleMap))>
+  </withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))>
+</GoogleMap>
+`;
+
+exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` should return the right structure 1`] = `
+<GoogleMap
+  apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+  height="400px"
+  isFluid={false}
+  isFullBleed={false}
+  isShowingApproximateLocation={false}
+  isShowingExactLocation={false}
+  latitude={0}
+  longitude={0}
+  markers={Array []}
 >
   <Card
     fluid={true}
@@ -36,14 +200,17 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` shou
 </GoogleMap>
 `;
 
-exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` should return the right structure 2`] = `
+exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` should return the right structure 1`] = `
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
   height="400px"
+  isFluid={false}
+  isFullBleed={false}
   isShowingApproximateLocation={false}
   isShowingExactLocation={false}
   latitude={0}
   longitude={0}
+  markers={Array []}
 >
   <Card
     fluid={true}
@@ -71,10 +238,19 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` shou
         isShowingExactLocation={false}
         latitude={0}
         longitude={0}
+        markers={Array []}
       >
         <withScriptjs(withGoogleMap(ReactGoogleMap))
           apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
-          containerElement={<div />}
+          containerElement={
+            <div
+              style={
+                Object {
+                  "height": "400px",
+                }
+              }
+            />
+          }
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4&v=3.exp&libraries=geometry,drawing,places"
           height="400px"
           isShowingApproximateLocation={false}
@@ -99,6 +275,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` shou
               }
             />
           }
+          markers={Array []}
         >
           <div
             style={

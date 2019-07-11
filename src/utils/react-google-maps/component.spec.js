@@ -1,8 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { GoogleMap } from 'react-google-maps/lib/components/GoogleMap';
-import { Marker } from 'react-google-maps/lib/components/Marker';
-import { Circle } from 'react-google-maps/lib/components/Circle';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as ReactGoogleMap } from './component';
@@ -10,97 +7,46 @@ import { Component as ReactGoogleMap } from './component';
 const props = {
   isShowingExactLocation: false,
   isShowingApproximateLocation: false,
-  latitude: 0,
+  latitude: 1,
   longitude: 0,
+  markers: [],
 };
 
 const getReactGoogleMap = extraProps =>
   shallow(<ReactGoogleMap {...props} {...extraProps} />);
-const getGoogleMap = extraProps =>
-  getReactGoogleMap(extraProps).find(GoogleMap);
 
 describe('<ReactGoogleMaps />', () => {
-  it('should render a single react-google-maps `GoogleMap` component', () => {
+  it('should render the right structure', () => {
     const wrapper = getReactGoogleMap();
-    const actual = wrapper.find(GoogleMap);
 
-    expect(actual).toHaveLength(1);
+    expect(wrapper).toMatchSnapshot();
   });
 
-  describe('the `GoogleMap` component', () => {
-    it('should get the right props', () => {
-      const wrapper = getGoogleMap();
-      const actual = wrapper.props();
+  describe('if `props.isShowingExactLocation` is `true`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getReactGoogleMap({ isShowingExactLocation: true });
 
-      expect(actual).toEqual(
-        expect.objectContaining({
-          center: expect.any(Object),
-          options: expect.any(Object),
-        })
-      );
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
-  describe('if `props.isShowingExactLocation` is false', () => {
-    it('should not render a `Marker`', () => {
-      const wrapper = getGoogleMap();
-      const actual = wrapper.find(Marker);
+  describe('if `props.isShowingApproximateLocation` is `true`', () => {
+    it('should render the right structure', () => {
+      const wrapper = getReactGoogleMap({ isShowingApproximateLocation: true });
 
-      expect(actual).toHaveLength(0);
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
-  describe('if `props.isShowingExactLocation` is true', () => {
-    it('should render a `Marker`', () => {
-      const wrapper = getGoogleMap({ isShowingExactLocation: true });
-      const actual = wrapper.find(Marker);
+  describe('if `props.markers` is populated', () => {
+    it('should render the right structure', () => {
+      const markers = [
+        { component: <div />, latitude: 41.38, longitude: 2.15 },
+        { component: <div />, latitude: 41.375, longitude: 2.16 },
+      ];
+      const wrapper = getReactGoogleMap({ markers });
 
-      expect(actual).toHaveLength(1);
-    });
-  });
-
-  describe('the `Marker` component', () => {
-    it('should get the right props', () => {
-      const wrapper = getGoogleMap({ isShowingExactLocation: true });
-      const actual = wrapper.find(Marker).props();
-
-      expect(actual).toEqual(
-        expect.objectContaining({
-          position: expect.any(Object),
-        })
-      );
-    });
-  });
-
-  describe('if `props.isShowingApproximateLocation` is false', () => {
-    it('should not render a `Circle`', () => {
-      const wrapper = getGoogleMap();
-      const actual = wrapper.find(Circle);
-
-      expect(actual).toHaveLength(0);
-    });
-  });
-
-  describe('if `props.isShowingApproximateLocation` is true', () => {
-    it('should render a `Circle`', () => {
-      const wrapper = getGoogleMap({ isShowingApproximateLocation: true });
-      const actual = wrapper.find(Circle);
-
-      expect(actual).toHaveLength(1);
-    });
-  });
-
-  describe('the `Circle` component', () => {
-    it('should get the right props', () => {
-      const wrapper = getGoogleMap({ isShowingApproximateLocation: true });
-      const actual = wrapper.find(Circle).props();
-
-      expect(actual).toEqual(
-        expect.objectContaining({
-          center: expect.any(Object),
-          options: expect.any(Object),
-        })
-      );
+      expect(wrapper).toMatchSnapshot();
     });
   });
 

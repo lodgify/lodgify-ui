@@ -46,6 +46,8 @@ Library icons
 <Divider />
 <Icon labelText="info" name="info" />
 <Divider />
+<Icon labelText="list" name="list" />
+<Divider />
 <Icon labelText="minus" name="minus" />
 <Divider />
 <Icon labelText="placeholder" name="placeholder" />
