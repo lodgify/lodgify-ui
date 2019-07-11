@@ -20,16 +20,6 @@ const { locationOptions } = require('./mock-data/options');
 />
 ```
 
-#### With Property Summary
-```jsx
-const { locationOptions } = require('./mock-data/options');
-
-<SearchBar
-  locationOptions={locationOptions}
-  isShowingSummary
-/>
-```
-
 #### Without Location Dropdown
 ```jsx
 
