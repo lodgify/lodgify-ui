@@ -516,7 +516,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     getIsDayBlocked={[Function]}
                                     isDisplayedAsModal={false}
                                     isFixed={false}
-                                    isShowingSummary={false}
+                                    isStackable={false}
                                     locationOptions={
                                       Array [
                                         Object {
@@ -549,382 +549,72 @@ exports[`HomepageHero should render the right structure 1`] = `
                                           className="ui form"
                                           onSubmit={[Function]}
                                         >
-                                          <FormGroup>
+                                          <div
+                                            className="inputs-container"
+                                          >
                                             <div
-                                              className="fields"
+                                              className="input-container location-input-container"
                                             >
-                                              <FormField
-                                                className="location-dropdown"
+                                              <Dropdown
+                                                error={false}
+                                                icon="map pin"
+                                                initialValue={null}
+                                                isCompact={false}
+                                                isDisabled={false}
+                                                isSearchable={false}
+                                                isValid={false}
+                                                label="Location"
+                                                name="location"
+                                                noResultsText="No results"
+                                                onBlur={[Function]}
+                                                onChange={[Function]}
+                                                options={
+                                                  Array [
+                                                    Object {
+                                                      "text": "1",
+                                                      "value": "1",
+                                                    },
+                                                  ]
+                                                }
+                                                willOpenAbove={true}
                                               >
                                                 <div
-                                                  className="field location-dropdown"
+                                                  className="dropdown-container"
                                                 >
-                                                  <Dropdown
-                                                    error={false}
-                                                    icon="map pin"
-                                                    initialValue={null}
-                                                    isCompact={false}
+                                                  <Icon
+                                                    color={null}
+                                                    hasBorder={false}
+                                                    isButton={false}
+                                                    isCircular={false}
+                                                    isColorInverted={false}
                                                     isDisabled={false}
-                                                    isSearchable={false}
-                                                    isValid={false}
-                                                    label="Location"
-                                                    name="location"
-                                                    noResultsText="No results"
-                                                    onBlur={[Function]}
-                                                    onChange={[Function]}
-                                                    options={
-                                                      Array [
-                                                        Object {
-                                                          "text": "1",
-                                                          "value": "1",
-                                                        },
-                                                      ]
-                                                    }
-                                                    willOpenAbove={true}
+                                                    isLabelLeft={false}
+                                                    labelText={null}
+                                                    labelWeight={null}
+                                                    name="map pin"
+                                                    path={null}
+                                                    size={null}
                                                   >
-                                                    <div
-                                                      className="dropdown-container"
+                                                    <i
+                                                      className="icon"
                                                     >
-                                                      <Icon
-                                                        color={null}
-                                                        hasBorder={false}
-                                                        isButton={false}
-                                                        isCircular={false}
-                                                        isColorInverted={false}
-                                                        isDisabled={false}
-                                                        isLabelLeft={false}
-                                                        labelText={null}
-                                                        labelWeight={null}
-                                                        name="map pin"
-                                                        path={null}
-                                                        size={null}
+                                                      <svg
+                                                        viewBox="0 0 24 24"
                                                       >
-                                                        <i
-                                                          className="icon"
-                                                        >
-                                                          <svg
-                                                            viewBox="0 0 24 24"
-                                                          >
-                                                            <path
-                                                              d="M12,2.72c-3.17,0-5.74,3-5.74,6.69S12,21.28,12,21.28s5.74-8.17,5.74-11.87S15.17,2.72,12,2.72Zm0,9.74a4,4,0,1,1,4-4A4,4,0,0,1,12,12.46Z"
-                                                              fill="currentColor"
-                                                            />
-                                                          </svg>
-                                                        </i>
-                                                      </Icon>
-                                                      <Dropdown
-                                                        additionLabel="Add "
-                                                        additionPosition="top"
-                                                        closeOnBlur={true}
-                                                        compact={false}
-                                                        deburr={false}
-                                                        disabled={false}
-                                                        icon={
-                                                          <Icon
-                                                            color={null}
-                                                            hasBorder={false}
-                                                            isButton={false}
-                                                            isCircular={false}
-                                                            isColorInverted={false}
-                                                            isDisabled={false}
-                                                            isLabelLeft={false}
-                                                            labelText={null}
-                                                            labelWeight={null}
-                                                            name="caret down"
-                                                            path={null}
-                                                            size={null}
-                                                          />
-                                                        }
-                                                        minCharacters={1}
-                                                        noResultsMessage="No results"
-                                                        onBlur={[Function]}
-                                                        onChange={[Function]}
-                                                        onClick={[Function]}
-                                                        open={false}
-                                                        openOnFocus={true}
-                                                        options={
-                                                          Array [
-                                                            Object {
-                                                              "text": "1",
-                                                              "value": "1",
-                                                            },
-                                                          ]
-                                                        }
-                                                        renderLabel={[Function]}
-                                                        search={false}
-                                                        searchInput="text"
-                                                        selectOnBlur={false}
-                                                        selectOnNavigation={true}
-                                                        selection={true}
-                                                        upward={true}
-                                                        value={null}
-                                                        wrapSelection={true}
-                                                      >
-                                                        <div
-                                                          aria-disabled={false}
-                                                          aria-expanded={false}
-                                                          className="ui selection upward dropdown"
-                                                          onBlur={[Function]}
-                                                          onChange={[Function]}
-                                                          onClick={[Function]}
-                                                          onFocus={[Function]}
-                                                          onMouseDown={[Function]}
-                                                          role="listbox"
-                                                          tabIndex={0}
-                                                        >
-                                                          <div
-                                                            aria-live="polite"
-                                                            className="text"
-                                                            role="alert"
-                                                          />
-                                                          <Icon
-                                                            color={null}
-                                                            hasBorder={false}
-                                                            isButton={false}
-                                                            isCircular={false}
-                                                            isColorInverted={false}
-                                                            isDisabled={false}
-                                                            isLabelLeft={false}
-                                                            labelText={null}
-                                                            labelWeight={null}
-                                                            name="caret down"
-                                                            onClick={[Function]}
-                                                            path={null}
-                                                            size={null}
-                                                          >
-                                                            <i
-                                                              className="icon"
-                                                              onClick={[Function]}
-                                                            >
-                                                              <svg
-                                                                viewBox="0 0 24 24"
-                                                              >
-                                                                <path
-                                                                  d="M20,8.5l-8,7-8-7Z"
-                                                                  fill="currentColor"
-                                                                />
-                                                              </svg>
-                                                            </i>
-                                                          </Icon>
-                                                          <DropdownMenu
-                                                            open={false}
-                                                          >
-                                                            <div
-                                                              className="menu transition"
-                                                            >
-                                                              <DropdownItem
-                                                                active={false}
-                                                                key="1"
-                                                                onClick={[Function]}
-                                                                selected={true}
-                                                                style={
-                                                                  Object {
-                                                                    "pointerEvents": "all",
-                                                                  }
-                                                                }
-                                                                text="1"
-                                                                value="1"
-                                                              >
-                                                                <div
-                                                                  aria-checked={false}
-                                                                  aria-selected={true}
-                                                                  className="selected item"
-                                                                  onClick={[Function]}
-                                                                  role="option"
-                                                                  style={
-                                                                    Object {
-                                                                      "pointerEvents": "all",
-                                                                    }
-                                                                  }
-                                                                >
-                                                                  <span
-                                                                    className="text"
-                                                                    key="1"
-                                                                  >
-                                                                    1
-                                                                  </span>
-                                                                </div>
-                                                              </DropdownItem>
-                                                            </div>
-                                                          </DropdownMenu>
-                                                        </div>
-                                                      </Dropdown>
-                                                      <label
-                                                        onClick={[Function]}
-                                                      >
-                                                        Location
-                                                      </label>
-                                                    </div>
-                                                  </Dropdown>
-                                                </div>
-                                              </FormField>
-                                              <FormField
-                                                width="seven"
-                                              >
-                                                <div
-                                                  className="seven wide field"
-                                                >
-                                                  <WithResponsive(DateRangePicker)
-                                                    endDatePlaceholderText="Check-out"
-                                                    getIsDayBlocked={[Function]}
-                                                    name="dates"
-                                                    onChange={[Function]}
-                                                    onFocusChange={[Function]}
-                                                    startDatePlaceholderText="Check-in"
-                                                    willOpenAbove={true}
-                                                  >
-                                                    <Responsive
-                                                      as={[Function]}
-                                                      endDatePlaceholderText="Check-out"
-                                                      getIsDayBlocked={[Function]}
-                                                      isUserOnMobile={false}
-                                                      name="dates"
-                                                      onChange={[Function]}
-                                                      onFocusChange={[Function]}
-                                                      onUpdate={[Function]}
-                                                      startDatePlaceholderText="Check-in"
-                                                      willOpenAbove={true}
-                                                      windowInnerWidth={1024}
-                                                    >
-                                                      <DateRangePicker
-                                                        displayFormat="DD/MM/YYYY"
-                                                        endDatePlaceholderText="Check-out"
-                                                        error={false}
-                                                        getIsDayBlocked={[Function]}
-                                                        isUserOnMobile={false}
-                                                        isValid={false}
-                                                        localeCode="en"
-                                                        name="dates"
-                                                        onBlur={[Function]}
-                                                        onChange={[Function]}
-                                                        onFocusChange={[Function]}
-                                                        startDatePlaceholderText="Check-in"
-                                                        willOpenAbove={true}
-                                                        windowInnerWidth={1024}
-                                                      >
-                                                        <InputController
-                                                          adaptOnChangeEvent={[Function]}
-                                                          error={false}
-                                                          icon={null}
-                                                          initialValue=""
-                                                          inputOnChangeFunctionName="onDatesChange"
-                                                          isCompact={false}
-                                                          isFluid={false}
-                                                          isFocused={false}
-                                                          isValid={false}
-                                                          label={null}
-                                                          mapValueToProps={[Function]}
-                                                          name="dates"
-                                                          onChange={[Function]}
-                                                        >
-                                                          <Input
-                                                            className=""
-                                                            fluid={false}
-                                                            iconPosition={null}
-                                                            type="text"
-                                                          >
-                                                            <div
-                                                              className="ui input"
-                                                            >
-                                                              <DateRangePicker
-                                                                customArrowIcon={
-                                                                  <Icon
-                                                                    color={null}
-                                                                    hasBorder={false}
-                                                                    isButton={false}
-                                                                    isCircular={false}
-                                                                    isColorInverted={false}
-                                                                    isDisabled={false}
-                                                                    isLabelLeft={false}
-                                                                    labelText={null}
-                                                                    labelWeight={null}
-                                                                    name="arrow right"
-                                                                    path={null}
-                                                                    size={null}
-                                                                  />
-                                                                }
-                                                                customInputIcon={
-                                                                  <Icon
-                                                                    color={null}
-                                                                    hasBorder={false}
-                                                                    isButton={false}
-                                                                    isCircular={false}
-                                                                    isColorInverted={false}
-                                                                    isDisabled={false}
-                                                                    isLabelLeft={false}
-                                                                    labelText={null}
-                                                                    labelWeight={null}
-                                                                    name="calendar"
-                                                                    path={null}
-                                                                    size={null}
-                                                                  />
-                                                                }
-                                                                daySize={52}
-                                                                displayFormat="DD/MM/YYYY"
-                                                                endDate={null}
-                                                                endDatePlaceholderText="Check-out"
-                                                                focusedInput={null}
-                                                                hideKeyboardShortcutsPanel={true}
-                                                                isDayBlocked={[Function]}
-                                                                key=".0"
-                                                                navNext={
-                                                                  <Icon
-                                                                    color={null}
-                                                                    hasBorder={false}
-                                                                    isButton={false}
-                                                                    isCircular={false}
-                                                                    isColorInverted={false}
-                                                                    isDisabled={false}
-                                                                    isLabelLeft={false}
-                                                                    labelText={null}
-                                                                    labelWeight={null}
-                                                                    name="arrow right"
-                                                                    path={null}
-                                                                    size={null}
-                                                                  />
-                                                                }
-                                                                navPrev={
-                                                                  <Icon
-                                                                    color={null}
-                                                                    hasBorder={false}
-                                                                    isButton={false}
-                                                                    isCircular={false}
-                                                                    isColorInverted={false}
-                                                                    isDisabled={false}
-                                                                    isLabelLeft={false}
-                                                                    labelText={null}
-                                                                    labelWeight={null}
-                                                                    name="arrow left"
-                                                                    path={null}
-                                                                    size={null}
-                                                                  />
-                                                                }
-                                                                onDatesChange={[Function]}
-                                                                onFocusChange={[Function]}
-                                                                openDirection="up"
-                                                                startDate={null}
-                                                                startDatePlaceholderText="Check-in"
-                                                                withPortal={true}
-                                                              >
-                                                                <div />
-                                                              </DateRangePicker>
-                                                            </div>
-                                                          </Input>
-                                                        </InputController>
-                                                      </DateRangePicker>
-                                                    </Responsive>
-                                                  </WithResponsive(DateRangePicker)>
-                                                </div>
-                                              </FormField>
-                                              <FormField
-                                                width="three"
-                                              >
-                                                <div
-                                                  className="three wide field"
-                                                >
-                                                  <NumberInput
-                                                    autoComplete={null}
-                                                    error={false}
+                                                        <path
+                                                          d="M12,2.72c-3.17,0-5.74,3-5.74,6.69S12,21.28,12,21.28s5.74-8.17,5.74-11.87S15.17,2.72,12,2.72Zm0,9.74a4,4,0,1,1,4-4A4,4,0,0,1,12,12.46Z"
+                                                          fill="currentColor"
+                                                        />
+                                                      </svg>
+                                                    </i>
+                                                  </Icon>
+                                                  <Dropdown
+                                                    additionLabel="Add "
+                                                    additionPosition="top"
+                                                    closeOnBlur={true}
+                                                    compact={false}
+                                                    deburr={false}
+                                                    disabled={false}
                                                     icon={
                                                       <Icon
                                                         color={null}
@@ -936,120 +626,412 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         isLabelLeft={false}
                                                         labelText={null}
                                                         labelWeight={null}
-                                                        name="users"
+                                                        name="caret down"
                                                         path={null}
                                                         size={null}
                                                       />
                                                     }
-                                                    isValid={false}
-                                                    label="Guests"
-                                                    min={0}
-                                                    name="guests"
+                                                    minCharacters={1}
+                                                    noResultsMessage="No results"
                                                     onBlur={[Function]}
                                                     onChange={[Function]}
+                                                    onClick={[Function]}
+                                                    open={false}
+                                                    openOnFocus={true}
+                                                    options={
+                                                      Array [
+                                                        Object {
+                                                          "text": "1",
+                                                          "value": "1",
+                                                        },
+                                                      ]
+                                                    }
+                                                    renderLabel={[Function]}
+                                                    search={false}
+                                                    searchInput="text"
+                                                    selectOnBlur={false}
+                                                    selectOnNavigation={true}
+                                                    selection={true}
+                                                    upward={true}
+                                                    value={null}
+                                                    wrapSelection={true}
+                                                  >
+                                                    <div
+                                                      aria-disabled={false}
+                                                      aria-expanded={false}
+                                                      className="ui selection upward dropdown"
+                                                      onBlur={[Function]}
+                                                      onChange={[Function]}
+                                                      onClick={[Function]}
+                                                      onFocus={[Function]}
+                                                      onMouseDown={[Function]}
+                                                      role="listbox"
+                                                      tabIndex={0}
+                                                    >
+                                                      <div
+                                                        aria-live="polite"
+                                                        className="text"
+                                                        role="alert"
+                                                      />
+                                                      <Icon
+                                                        color={null}
+                                                        hasBorder={false}
+                                                        isButton={false}
+                                                        isCircular={false}
+                                                        isColorInverted={false}
+                                                        isDisabled={false}
+                                                        isLabelLeft={false}
+                                                        labelText={null}
+                                                        labelWeight={null}
+                                                        name="caret down"
+                                                        onClick={[Function]}
+                                                        path={null}
+                                                        size={null}
+                                                      >
+                                                        <i
+                                                          className="icon"
+                                                          onClick={[Function]}
+                                                        >
+                                                          <svg
+                                                            viewBox="0 0 24 24"
+                                                          >
+                                                            <path
+                                                              d="M20,8.5l-8,7-8-7Z"
+                                                              fill="currentColor"
+                                                            />
+                                                          </svg>
+                                                        </i>
+                                                      </Icon>
+                                                      <DropdownMenu
+                                                        open={false}
+                                                      >
+                                                        <div
+                                                          className="menu transition"
+                                                        >
+                                                          <DropdownItem
+                                                            active={false}
+                                                            key="1"
+                                                            onClick={[Function]}
+                                                            selected={true}
+                                                            style={
+                                                              Object {
+                                                                "pointerEvents": "all",
+                                                              }
+                                                            }
+                                                            text="1"
+                                                            value="1"
+                                                          >
+                                                            <div
+                                                              aria-checked={false}
+                                                              aria-selected={true}
+                                                              className="selected item"
+                                                              onClick={[Function]}
+                                                              role="option"
+                                                              style={
+                                                                Object {
+                                                                  "pointerEvents": "all",
+                                                                }
+                                                              }
+                                                            >
+                                                              <span
+                                                                className="text"
+                                                                key="1"
+                                                              >
+                                                                1
+                                                              </span>
+                                                            </div>
+                                                          </DropdownItem>
+                                                        </div>
+                                                      </DropdownMenu>
+                                                    </div>
+                                                  </Dropdown>
+                                                  <label
+                                                    onClick={[Function]}
+                                                  >
+                                                    Location
+                                                  </label>
+                                                </div>
+                                              </Dropdown>
+                                            </div>
+                                            <div
+                                              className="input-container dates-input-container"
+                                            >
+                                              <WithResponsive(DateRangePicker)
+                                                endDatePlaceholderText="Check-out"
+                                                getIsDayBlocked={[Function]}
+                                                name="dates"
+                                                onChange={[Function]}
+                                                onFocusChange={[Function]}
+                                                startDatePlaceholderText="Check-in"
+                                                willOpenAbove={true}
+                                              >
+                                                <Responsive
+                                                  as={[Function]}
+                                                  endDatePlaceholderText="Check-out"
+                                                  getIsDayBlocked={[Function]}
+                                                  isUserOnMobile={false}
+                                                  name="dates"
+                                                  onChange={[Function]}
+                                                  onFocusChange={[Function]}
+                                                  onUpdate={[Function]}
+                                                  startDatePlaceholderText="Check-in"
+                                                  willOpenAbove={true}
+                                                  windowInnerWidth={1024}
+                                                >
+                                                  <DateRangePicker
+                                                    displayFormat="DD/MM/YYYY"
+                                                    endDatePlaceholderText="Check-out"
+                                                    error={false}
+                                                    getIsDayBlocked={[Function]}
+                                                    isUserOnMobile={false}
+                                                    isValid={false}
+                                                    localeCode="en"
+                                                    name="dates"
+                                                    onBlur={[Function]}
+                                                    onChange={[Function]}
+                                                    onFocusChange={[Function]}
+                                                    startDatePlaceholderText="Check-in"
+                                                    willOpenAbove={true}
+                                                    windowInnerWidth={1024}
                                                   >
                                                     <InputController
                                                       adaptOnChangeEvent={[Function]}
                                                       error={false}
-                                                      icon={
-                                                        <Icon
-                                                          color={null}
-                                                          hasBorder={false}
-                                                          isButton={false}
-                                                          isCircular={false}
-                                                          isColorInverted={false}
-                                                          isDisabled={false}
-                                                          isLabelLeft={false}
-                                                          labelText={null}
-                                                          labelWeight={null}
-                                                          name="users"
-                                                          path={null}
-                                                          size={null}
-                                                        />
-                                                      }
+                                                      icon={null}
                                                       initialValue=""
-                                                      inputOnChangeFunctionName="onChange"
+                                                      inputOnChangeFunctionName="onDatesChange"
                                                       isCompact={false}
                                                       isFluid={false}
                                                       isFocused={false}
                                                       isValid={false}
-                                                      label="Guests"
+                                                      label={null}
                                                       mapValueToProps={[Function]}
-                                                      name="guests"
+                                                      name="dates"
                                                       onChange={[Function]}
                                                     >
                                                       <Input
                                                         className=""
                                                         fluid={false}
-                                                        iconPosition="left"
+                                                        iconPosition={null}
                                                         type="text"
                                                       >
                                                         <div
-                                                          className="ui left icon input"
+                                                          className="ui input"
                                                         >
-                                                          <input
-                                                            autoComplete={null}
+                                                          <DateRangePicker
+                                                            customArrowIcon={
+                                                              <Icon
+                                                                color={null}
+                                                                hasBorder={false}
+                                                                isButton={false}
+                                                                isCircular={false}
+                                                                isColorInverted={false}
+                                                                isDisabled={false}
+                                                                isLabelLeft={false}
+                                                                labelText={null}
+                                                                labelWeight={null}
+                                                                name="arrow right"
+                                                                path={null}
+                                                                size={null}
+                                                              />
+                                                            }
+                                                            customInputIcon={
+                                                              <Icon
+                                                                color={null}
+                                                                hasBorder={false}
+                                                                isButton={false}
+                                                                isCircular={false}
+                                                                isColorInverted={false}
+                                                                isDisabled={false}
+                                                                isLabelLeft={false}
+                                                                labelText={null}
+                                                                labelWeight={null}
+                                                                name="calendar"
+                                                                path={null}
+                                                                size={null}
+                                                              />
+                                                            }
+                                                            daySize={52}
+                                                            displayFormat="DD/MM/YYYY"
+                                                            endDate={null}
+                                                            endDatePlaceholderText="Check-out"
+                                                            focusedInput={null}
+                                                            hideKeyboardShortcutsPanel={true}
+                                                            isDayBlocked={[Function]}
                                                             key=".0"
-                                                            min={0}
-                                                            name="guests"
-                                                            onBlur={[Function]}
-                                                            onChange={[Function]}
-                                                            type="number"
-                                                            value=""
-                                                          />
-                                                          <label
-                                                            key=".3"
-                                                            onClick={[Function]}
+                                                            navNext={
+                                                              <Icon
+                                                                color={null}
+                                                                hasBorder={false}
+                                                                isButton={false}
+                                                                isCircular={false}
+                                                                isColorInverted={false}
+                                                                isDisabled={false}
+                                                                isLabelLeft={false}
+                                                                labelText={null}
+                                                                labelWeight={null}
+                                                                name="arrow right"
+                                                                path={null}
+                                                                size={null}
+                                                              />
+                                                            }
+                                                            navPrev={
+                                                              <Icon
+                                                                color={null}
+                                                                hasBorder={false}
+                                                                isButton={false}
+                                                                isCircular={false}
+                                                                isColorInverted={false}
+                                                                isDisabled={false}
+                                                                isLabelLeft={false}
+                                                                labelText={null}
+                                                                labelWeight={null}
+                                                                name="arrow left"
+                                                                path={null}
+                                                                size={null}
+                                                              />
+                                                            }
+                                                            onDatesChange={[Function]}
+                                                            onFocusChange={[Function]}
+                                                            openDirection="up"
+                                                            startDate={null}
+                                                            startDatePlaceholderText="Check-in"
+                                                            withPortal={true}
                                                           >
-                                                            Guests
-                                                          </label>
-                                                          <Icon
-                                                            color={null}
-                                                            hasBorder={false}
-                                                            isButton={false}
-                                                            isCircular={false}
-                                                            isColorInverted={false}
-                                                            isDisabled={false}
-                                                            isLabelLeft={false}
-                                                            key=".4"
-                                                            labelText={null}
-                                                            labelWeight={null}
-                                                            name="users"
-                                                            path={null}
-                                                            size={null}
-                                                          >
-                                                            <i
-                                                              className="icon"
-                                                            >
-                                                              <svg
-                                                                viewBox="0 0 24 24"
-                                                              >
-                                                                <path
-                                                                  d="M18.63,8.88h-.08a4,4,0,1,0-4.18,0h-.08a2.2,2.2,0,0,0-2.2,2.2v9.35a2.1,2.1,0,0,0,2.1,2.1h4.54a2.11,2.11,0,0,0,2.11-2.1V11.08A2.21,2.21,0,0,0,18.63,8.88Zm-5.18-3.4a3,3,0,1,1,3,3A3,3,0,0,1,13.45,5.48Zm6.39,15a1.11,1.11,0,0,1-1.11,1.1H14.19a1.1,1.1,0,0,1-1.1-1.1V11.08a1.2,1.2,0,0,1,1.2-1.2h4.34a1.21,1.21,0,0,1,1.21,1.2ZM9,11.89a3.27,3.27,0,1,0-3.77,0,2.21,2.21,0,0,0-2.09,2.19v6.24a2.12,2.12,0,0,0,2.11,2.11H9a2.11,2.11,0,0,0,2.1-2.11V14.08A2.21,2.21,0,0,0,9,11.89ZM7.13,7A2.27,2.27,0,1,1,4.87,9.24,2.27,2.27,0,0,1,7.13,7Zm3,13.35A1.11,1.11,0,0,1,9,21.43H5.27a1.11,1.11,0,0,1-1.11-1.11V14.08a1.21,1.21,0,0,1,1.21-1.2H8.9a1.2,1.2,0,0,1,1.2,1.2Z"
-                                                                  fill="currentColor"
-                                                                />
-                                                              </svg>
-                                                            </i>
-                                                          </Icon>
+                                                            <div />
+                                                          </DateRangePicker>
                                                         </div>
                                                       </Input>
                                                     </InputController>
-                                                  </NumberInput>
-                                                </div>
-                                              </FormField>
-                                              <FormField
-                                                width="four"
-                                              >
-                                                <div
-                                                  className="four wide field"
-                                                >
-                                                  <button>
-                                                    search button
-                                                  </button>
-                                                </div>
-                                              </FormField>
+                                                  </DateRangePicker>
+                                                </Responsive>
+                                              </WithResponsive(DateRangePicker)>
                                             </div>
-                                          </FormGroup>
+                                            <div
+                                              className="input-container guests-input-container"
+                                            >
+                                              <NumberInput
+                                                autoComplete={null}
+                                                error={false}
+                                                icon={
+                                                  <Icon
+                                                    color={null}
+                                                    hasBorder={false}
+                                                    isButton={false}
+                                                    isCircular={false}
+                                                    isColorInverted={false}
+                                                    isDisabled={false}
+                                                    isLabelLeft={false}
+                                                    labelText={null}
+                                                    labelWeight={null}
+                                                    name="users"
+                                                    path={null}
+                                                    size={null}
+                                                  />
+                                                }
+                                                isValid={false}
+                                                label="Guests"
+                                                min={0}
+                                                name="guests"
+                                                onBlur={[Function]}
+                                                onChange={[Function]}
+                                              >
+                                                <InputController
+                                                  adaptOnChangeEvent={[Function]}
+                                                  error={false}
+                                                  icon={
+                                                    <Icon
+                                                      color={null}
+                                                      hasBorder={false}
+                                                      isButton={false}
+                                                      isCircular={false}
+                                                      isColorInverted={false}
+                                                      isDisabled={false}
+                                                      isLabelLeft={false}
+                                                      labelText={null}
+                                                      labelWeight={null}
+                                                      name="users"
+                                                      path={null}
+                                                      size={null}
+                                                    />
+                                                  }
+                                                  initialValue=""
+                                                  inputOnChangeFunctionName="onChange"
+                                                  isCompact={false}
+                                                  isFluid={false}
+                                                  isFocused={false}
+                                                  isValid={false}
+                                                  label="Guests"
+                                                  mapValueToProps={[Function]}
+                                                  name="guests"
+                                                  onChange={[Function]}
+                                                >
+                                                  <Input
+                                                    className=""
+                                                    fluid={false}
+                                                    iconPosition="left"
+                                                    type="text"
+                                                  >
+                                                    <div
+                                                      className="ui left icon input"
+                                                    >
+                                                      <input
+                                                        autoComplete={null}
+                                                        key=".0"
+                                                        min={0}
+                                                        name="guests"
+                                                        onBlur={[Function]}
+                                                        onChange={[Function]}
+                                                        type="number"
+                                                        value=""
+                                                      />
+                                                      <label
+                                                        key=".3"
+                                                        onClick={[Function]}
+                                                      >
+                                                        Guests
+                                                      </label>
+                                                      <Icon
+                                                        color={null}
+                                                        hasBorder={false}
+                                                        isButton={false}
+                                                        isCircular={false}
+                                                        isColorInverted={false}
+                                                        isDisabled={false}
+                                                        isLabelLeft={false}
+                                                        key=".4"
+                                                        labelText={null}
+                                                        labelWeight={null}
+                                                        name="users"
+                                                        path={null}
+                                                        size={null}
+                                                      >
+                                                        <i
+                                                          className="icon"
+                                                        >
+                                                          <svg
+                                                            viewBox="0 0 24 24"
+                                                          >
+                                                            <path
+                                                              d="M18.63,8.88h-.08a4,4,0,1,0-4.18,0h-.08a2.2,2.2,0,0,0-2.2,2.2v9.35a2.1,2.1,0,0,0,2.1,2.1h4.54a2.11,2.11,0,0,0,2.11-2.1V11.08A2.21,2.21,0,0,0,18.63,8.88Zm-5.18-3.4a3,3,0,1,1,3,3A3,3,0,0,1,13.45,5.48Zm6.39,15a1.11,1.11,0,0,1-1.11,1.1H14.19a1.1,1.1,0,0,1-1.1-1.1V11.08a1.2,1.2,0,0,1,1.2-1.2h4.34a1.21,1.21,0,0,1,1.21,1.2ZM9,11.89a3.27,3.27,0,1,0-3.77,0,2.21,2.21,0,0,0-2.09,2.19v6.24a2.12,2.12,0,0,0,2.11,2.11H9a2.11,2.11,0,0,0,2.1-2.11V14.08A2.21,2.21,0,0,0,9,11.89ZM7.13,7A2.27,2.27,0,1,1,4.87,9.24,2.27,2.27,0,0,1,7.13,7Zm3,13.35A1.11,1.11,0,0,1,9,21.43H5.27a1.11,1.11,0,0,1-1.11-1.11V14.08a1.21,1.21,0,0,1,1.21-1.2H8.9a1.2,1.2,0,0,1,1.2,1.2Z"
+                                                              fill="currentColor"
+                                                            />
+                                                          </svg>
+                                                        </i>
+                                                      </Icon>
+                                                    </div>
+                                                  </Input>
+                                                </InputController>
+                                              </NumberInput>
+                                            </div>
+                                            <div
+                                              className="button-container"
+                                            >
+                                              <button>
+                                                search button
+                                              </button>
+                                            </div>
+                                          </div>
                                         </form>
                                       </Form>
                                     </div>
@@ -1072,7 +1054,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                       getIsDayBlocked={[Function]}
                                       isDisplayedAsModal={true}
                                       isFixed={false}
-                                      isShowingSummary={false}
+                                      isStackable={false}
                                       locationOptions={
                                         Array [
                                           Object {
