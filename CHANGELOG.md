@@ -1,3 +1,24 @@
+# [1.220.0](https://github.com/lodgify/lodgify-ui/compare/v1.219.0...v1.220.0) (2019-07-11)
+
+
+### Bug Fixes
+
+* **card.*:** remove Label styles and variables ([40b9ee5](https://github.com/lodgify/lodgify-ui/commit/40b9ee5))
+
+
+### Features
+
+* **getToggledState:** add util and test ([1d12e58](https://github.com/lodgify/lodgify-ui/commit/1d12e58))
+* **label.*:** add styles and variables for Label ([6604d03](https://github.com/lodgify/lodgify-ui/commit/6604d03))
+* **PriceLabel:** expose component to registry ([bfb77ab](https://github.com/lodgify/lodgify-ui/commit/bfb77ab))
+* **PropertySearchResult:** consume Label ([63f5647](https://github.com/lodgify/lodgify-ui/commit/63f5647))
+* **PropertySearchResultList:** add pricePerPeriodPreposition ([e5ad89a](https://github.com/lodgify/lodgify-ui/commit/e5ad89a))
+
+
+### Performance Improvements
+
+* **getPriceLabelMarkup:** remove superfluous util ([c360994](https://github.com/lodgify/lodgify-ui/commit/c360994))
+
 # [1.219.0](https://github.com/lodgify/lodgify-ui/compare/v1.218.0...v1.219.0) (2019-07-11)
 
 
