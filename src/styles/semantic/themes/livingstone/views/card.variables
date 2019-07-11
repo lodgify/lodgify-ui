@@ -91,15 +91,6 @@
 
 @searchResultLabelMargin: 10px;
 @searchResultLabelBorderRadius: 5px;
-@searchResultLabelPadding: 8px;
-@searchResultLabelPaddingTop: 5px;
-@searchResultLabelPriceFontSize: 16px;
-@searchResultLabelPriceHeight: 24px;
-@searchResultLabelPriceLineHeight: 25px;
-@searchResultLabelTextMargin: 3px;
-@searchResultLabelPeriodTextPadding: 5px;
-@searchResultLabelPeriodBorderRadius: 2px;
-@searchResultLabelPeriodBoxShadow: 0 0 0 1px @black;
 
 @searchResultPlaceholderPadding: 63%;
 @mobileSearchResultPlaceholderPadding: 55%;

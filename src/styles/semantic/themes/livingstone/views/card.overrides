@@ -127,37 +127,18 @@
       position: relative;
 
       > .ui.raised.segment {
+        background-color: @themeActionColorDefault;
         background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
         position: absolute;
         right: 0;
         bottom: 0;
         margin: @searchResultLabelMargin;
         border-radius: @searchResultLabelBorderRadius;
-        padding: @searchResultLabelPadding;
-        padding-top: @searchResultLabelPaddingTop;
+        padding: 0;
+        padding-top: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        .ui.header {
-          margin: 0;
-          font-size: @searchResultLabelPriceFontSize;
-          height: @searchResultLabelPriceHeight;
-          line-height: @searchResultLabelPriceLineHeight;
-        }
-
-        p {
-          margin-right: @searchResultLabelTextMargin;
-          color: @black;
-        }
-
-        .ui.label {
-          padding: @searchResultLabelPeriodTextPadding;
-          background: transparent;
-          border-radius: @searchResultLabelPeriodBorderRadius;
-          box-shadow: @searchResultLabelPeriodBoxShadow;
-          color: @black;
-        }
       }
     }
 

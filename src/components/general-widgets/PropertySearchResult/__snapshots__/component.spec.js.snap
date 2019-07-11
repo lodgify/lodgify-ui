@@ -21,33 +21,16 @@ exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should ren
     <Segment
       raised={true}
     >
-      <FlexContainer
-        alignContent={null}
-        alignItems="center"
-        flexDirection="row"
-        flexWrap={null}
-        justifyContent={null}
-      >
-        <Paragraph
-          size="medium"
-          weight={null}
-        >
-          from
-        </Paragraph>
-        <Heading
-          className={null}
-          hasMargin={true}
-          isColorInverted={false}
-          size="medium"
-          textAlign={null}
-        >
-          $280
-        </Heading>
-      </FlexContainer>
-      <Label>
-         
-        (ºOº)
-      </Label>
+      <PriceLabel
+        hasShadow={false}
+        isActive={false}
+        isPointing={false}
+        onChange={[Function]}
+        onClick={[Function]}
+        periodText="(ºOº)"
+        pricePerPeriod="$280"
+        pricePerPeriodPrefix=""
+      />
     </Segment>
   </FlexContainer>
   <CardContent>
@@ -149,15 +132,16 @@ exports[`<PropertySearchResult /> should render the right structure 1`] = `
     <Segment
       raised={true}
     >
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="medium"
-        textAlign={null}
-      >
-        $280
-      </Heading>
+      <PriceLabel
+        hasShadow={false}
+        isActive={false}
+        isPointing={false}
+        onChange={[Function]}
+        onClick={[Function]}
+        periodText=""
+        pricePerPeriod="$280"
+        pricePerPeriodPrefix=""
+      />
     </Segment>
   </FlexContainer>
   <CardContent>

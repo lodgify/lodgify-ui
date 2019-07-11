@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the \`PriceLabel\` component if there is \`periodText\` if \`isPointing\` is true should return the right structure 1`] = `
+<div
+  className="ui label price-label is-pointing has-period-text"
+  onClick={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Label>
+    <FlexContainer
+      alignContent={null}
+      alignItems="center"
+      flexDirection="row"
+      flexWrap={null}
+      justifyContent={null}
+    >
+      <Paragraph
+        size="medium"
+        weight={null}
+      />
+      <Heading
+        className={null}
+        hasMargin={true}
+        isColorInverted={false}
+        size="medium"
+        textAlign={null}
+      >
+        €999
+      </Heading>
+    </FlexContainer>
+    <Label>
+      (ಠ益ಠ)
+    </Label>
+    <div
+      className="pointer-arrow"
+    />
+  </Label>
+</div>
+`;
+
+exports[`the \`PriceLabel\` component if there is \`periodText\` should return the right structure 1`] = `
+<div
+  className="ui label price-label has-period-text"
+  onClick={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Label>
+    <FlexContainer
+      alignContent={null}
+      alignItems="center"
+      flexDirection="row"
+      flexWrap={null}
+      justifyContent={null}
+    >
+      <Paragraph
+        size="medium"
+        weight={null}
+      />
+      <Heading
+        className={null}
+        hasMargin={true}
+        isColorInverted={false}
+        size="medium"
+        textAlign={null}
+      >
+        €999
+      </Heading>
+    </FlexContainer>
+    <Label>
+      (ಠ益ಠ)
+    </Label>
+  </Label>
+</div>
+`;
+
+exports[`the \`PriceLabel\` component if there is no \`periodText\` if \`isPointing\` is true should return the right structure 1`] = `
+<div
+  className="ui label price-label is-pointing"
+  onClick={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Label>
+    <Heading
+      className={null}
+      hasMargin={true}
+      isColorInverted={false}
+      size="medium"
+      textAlign={null}
+    >
+      €999
+    </Heading>
+    <div
+      className="pointer-arrow"
+    />
+  </Label>
+</div>
+`;
+
+exports[`the \`PriceLabel\` component if there is no \`periodText\` should return the right structure 1`] = `
+<div
+  className="ui label price-label"
+  onClick={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Label>
+    <Heading
+      className={null}
+      hasMargin={true}
+      isColorInverted={false}
+      size="medium"
+      textAlign={null}
+    >
+      €999
+    </Heading>
+  </Label>
+</div>
+`;

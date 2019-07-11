@@ -64,6 +64,38 @@
 @basicBorder: @basicBorderWidth solid @basicBorderColor;
 @basicFontWeight: @bold;
 
+/* Price Label */
+
+@priceLabelMinWidth: 50px;
+@priceLabelMaxWidth: 100px;
+@priceLabelBorderRadius: 5px;
+@priceLabelPadding: 8px;
+@priceLabelPaddingTop: 5px;
+@priceLabelPriceFontSize: 16px;
+@priceLabelPriceHeight: 24px;
+@priceLabelPriceLineHeight: 25px;
+@priceLabelTextMargin: 3px;
+@priceLabelPeriodTextPadding: 5px;
+@priceLabelPeriodBorderRadius: 2px;
+@priceLabelPeriodBoxShadow: 0 0 0 1px @black;
+@priceLabelTransitionOnHover: all 0.2s cubic-bezier(0.48, 0.73, 0.49, 1.29) 0s;
+@priceLabelPricePerPeriodContainerMaxHeight: 26px;
+
+@pointerLabelBoxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+@pointerHoverTranslationY: -4px;
+
+@pointerArrowContainerWidth: 37px;
+@pointerArrowContainerHeight: 12px;
+@pointerArrowContainerRotationDegrees: 180deg;
+@pointerArrowContainerWithPeriodTextTopOffset: 37px;
+@pointerArrowContainerWithoutPeriodTextTopOffset: 61px;
+
+@pointerArrowBoxShadow: 0 1px 3px 3px rgba(0, 0, 0, 0.2);
+@pointerArrowWidth: 10px;
+@pointerArrowHeight: 10px;
+@pointerArrowRotationDegrees: 45deg;
+@pointerArrowTopOverflow: 7px;
+
 /* Tag */
 
 /* Ribbon */
