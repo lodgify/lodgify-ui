@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import getClassNames from 'classnames';
 
-import { getToggledState } from './utils/getToggledState';
+import { getToggledIsActiveState } from 'utils/get-toggled-is-active-state';
 
 /**
  * A marker which marks a point on a plane.
@@ -29,7 +29,7 @@ export class Component extends PureComponent {
     onClick(name, syntheticEvent);
   };
 
-  toggleActive = () => this.setState(getToggledState);
+  toggleActive = () => this.setState(getToggledIsActiveState);
 
   render = () => (
     <div
