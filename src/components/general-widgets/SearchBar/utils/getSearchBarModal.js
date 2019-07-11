@@ -39,11 +39,13 @@ export const getSearchBarModal = (props, handleSubmit, persistInputChange) => {
       onClose={onCloseModal}
       trigger={searchButton}
     >
-      <HorizontalGutters>
-        <Form onSubmit={handleSubmit}>
-          {getFormFieldMarkup(props, persistInputChange, true, false)}
-        </Form>
-      </HorizontalGutters>
+      <div className="search-bar is-stackable">
+        <HorizontalGutters>
+          <Form onSubmit={handleSubmit}>
+            {getFormFieldMarkup(props, persistInputChange, false)}
+          </Form>
+        </HorizontalGutters>
+      </div>
     </Modal>
   );
 };

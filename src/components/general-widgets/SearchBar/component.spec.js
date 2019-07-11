@@ -193,16 +193,13 @@ describe('<SearchBar />', () => {
 
       expect(actual).toMatchSnapshot();
     });
+  });
 
-    describe('if `isDisplayedAsModal` is true', () => {
-      it('should render the right structure', () => {
-        const actual = getSearchBar({
-          isFixed: true,
-          isDisplayedAsModal: true,
-        });
+  describe('if `props.isStackable` is true', () => {
+    it('should render the right structure', () => {
+      const actual = getSearchBar({ isStackable: true });
 
-        expect(actual).toMatchSnapshot();
-      });
+      expect(actual).toMatchSnapshot();
     });
   });
 
