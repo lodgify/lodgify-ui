@@ -3,8 +3,7 @@ import React from 'react';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { PriceLabel } from 'elements/PriceLabel';
-
-import { getToggledState } from './utils/getToggledState';
+import { getToggledIsActiveState } from 'utils/get-toggled-is-active-state';
 
 const props = {
   pricePerPeriod: '€999',
@@ -96,7 +95,9 @@ describe('the `PriceLabel` component', () => {
       wrapper.update();
       wrapper.instance().toggleActive();
 
-      expect(wrapper.instance().setState).toHaveBeenCalledWith(getToggledState);
+      expect(wrapper.instance().setState).toHaveBeenCalledWith(
+        getToggledIsActiveState
+      );
     });
   });
 
