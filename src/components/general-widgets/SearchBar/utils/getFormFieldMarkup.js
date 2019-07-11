@@ -1,6 +1,4 @@
-/* eslint react/prop-types: 0 */
-import React, { Fragment } from 'react';
-import { Form } from 'semantic-ui-react';
+import React from 'react';
 
 import { size } from 'utils/size';
 import { Icon, ICON_NAMES } from 'elements/Icon';
@@ -19,12 +17,12 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
  * @param  {Object[]} props.locationOptions
  * @param  {Node}     props.searchButton
  * @param  {Function} persistInputChange
- * @param  {boolean}  areColumnsStacked
  * @param  {boolean}  willLocationDropdownOpenAbove
  * @return {Object}
  */
 export const getFormFieldMarkup = (
   {
+    /* eslint-disable react/prop-types */
     dateRangePickerLocaleCode,
     datesInputFocusedInput,
     datesInputValue,
@@ -34,55 +32,49 @@ export const getFormFieldMarkup = (
     locationInputValue,
     locationOptions,
     searchButton,
+    /* eslint-enable react/prop-types */
   },
   persistInputChange,
-  areColumnsStacked,
   willLocationDropdownOpenAbove
-) => {
-  const datePickerColumnWidth = areColumnsStacked ? 'twelve' : 'seven';
-  const buttonColumnWidth = areColumnsStacked ? 'twelve' : 'four';
-  const guestInputColumnWidth = areColumnsStacked ? 'twelve' : 'three';
-
-  return (
-    <Fragment>
-      {!!size(locationOptions) > 0 && (
-        <Form.Field className="location-dropdown">
-          <Dropdown
-            icon={ICON_NAMES.MAP_PIN}
-            label="Location"
-            name="location"
-            onChange={persistInputChange}
-            options={locationOptions}
-            value={locationInputValue}
-            willOpenAbove={willLocationDropdownOpenAbove}
-          />
-        </Form.Field>
-      )}
-      <Form.Field width={datePickerColumnWidth}>
-        <DateRangePicker
-          endDatePlaceholderText="Check-out"
-          focusedInput={datesInputFocusedInput}
-          getIsDayBlocked={getIsDayBlocked}
-          localeCode={dateRangePickerLocaleCode}
-          name="dates"
+) => (
+  <div className="inputs-container">
+    {!!size(locationOptions) && (
+      <div className="input-container location-input-container">
+        <Dropdown
+          icon={ICON_NAMES.MAP_PIN}
+          label="Location"
+          name="location"
           onChange={persistInputChange}
-          onFocusChange={datesInputOnFocusChange}
-          startDatePlaceholderText="Check-in"
-          value={datesInputValue}
+          options={locationOptions}
+          value={locationInputValue}
           willOpenAbove={willLocationDropdownOpenAbove}
         />
-      </Form.Field>
-      <Form.Field width={guestInputColumnWidth}>
-        <NumberInput
-          icon={<Icon name={ICON_NAMES.USERS} />}
-          label="Guests"
-          min={0}
-          name="guests"
-          onChange={persistInputChange}
-          value={guestsInputValue}
-        />
-      </Form.Field>
-      <Form.Field width={buttonColumnWidth}>{searchButton}</Form.Field>
-    </Fragment>
-  );
-};
+      </div>
+    )}
+    <div className="input-container dates-input-container">
+      <DateRangePicker
+        endDatePlaceholderText="Check-out"
+        focusedInput={datesInputFocusedInput}
+        getIsDayBlocked={getIsDayBlocked}
+        localeCode={dateRangePickerLocaleCode}
+        name="dates"
+        onChange={persistInputChange}
+        onFocusChange={datesInputOnFocusChange}
+        startDatePlaceholderText="Check-in"
+        value={datesInputValue}
+        willOpenAbove={willLocationDropdownOpenAbove}
+      />
+    </div>
+    <div className="input-container guests-input-container">
+      <NumberInput
+        icon={<Icon name={ICON_NAMES.USERS} />}
+        label="Guests"
+        min={0}
+        name="guests"
+        onChange={persistInputChange}
+        value={guestsInputValue}
+      />
+    </div>
+    <div className="button-container">{searchButton}</div>
+  </div>
+);

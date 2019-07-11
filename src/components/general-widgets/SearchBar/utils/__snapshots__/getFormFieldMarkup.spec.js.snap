@@ -2,130 +2,138 @@
 
 exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 should render the right structure 1`] = `
 <div>
-  <FormField
-    className="location-dropdown"
+  <div
+    className="inputs-container"
   >
-    <Dropdown
-      error={false}
-      icon="map pin"
-      initialValue={null}
-      isCompact={false}
-      isDisabled={false}
-      isSearchable={false}
-      isValid={false}
-      label="Location"
-      name="location"
-      noResultsText="No results"
-      onBlur={[Function]}
-      onChange={[Function]}
-      options={
-        Array [
-          Object {
-            "text": "yo",
-          },
-        ]
-      }
-      willOpenAbove={true}
-    />
-  </FormField>
-  <FormField
-    width="seven"
-  >
-    <WithResponsive(DateRangePicker)
-      endDatePlaceholderText="Check-out"
-      getIsDayBlocked={[Function]}
-      name="dates"
-      onChange={[Function]}
-      startDatePlaceholderText="Check-in"
-      willOpenAbove={true}
-    />
-  </FormField>
-  <FormField
-    width="three"
-  >
-    <NumberInput
-      autoComplete={null}
-      error={false}
-      icon={
-        <Icon
-          color={null}
-          hasBorder={false}
-          isButton={false}
-          isCircular={false}
-          isColorInverted={false}
-          isDisabled={false}
-          isLabelLeft={false}
-          labelText={null}
-          labelWeight={null}
-          name="users"
-          path={null}
-          size={null}
-        />
-      }
-      isValid={false}
-      label="Guests"
-      min={0}
-      name="guests"
-      onBlur={[Function]}
-      onChange={[Function]}
-    />
-  </FormField>
-  <FormField
-    width="four"
-  >
-    <div />
-  </FormField>
+    <div
+      className="input-container location-input-container"
+    >
+      <Dropdown
+        error={false}
+        icon="map pin"
+        initialValue={null}
+        isCompact={false}
+        isDisabled={false}
+        isSearchable={false}
+        isValid={false}
+        label="Location"
+        name="location"
+        noResultsText="No results"
+        onBlur={[Function]}
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "text": "yo",
+            },
+          ]
+        }
+        willOpenAbove={true}
+      />
+    </div>
+    <div
+      className="input-container dates-input-container"
+    >
+      <WithResponsive(DateRangePicker)
+        endDatePlaceholderText="Check-out"
+        getIsDayBlocked={[Function]}
+        name="dates"
+        onChange={[Function]}
+        startDatePlaceholderText="Check-in"
+        willOpenAbove={true}
+      />
+    </div>
+    <div
+      className="input-container guests-input-container"
+    >
+      <NumberInput
+        autoComplete={null}
+        error={false}
+        icon={
+          <Icon
+            color={null}
+            hasBorder={false}
+            isButton={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText={null}
+            labelWeight={null}
+            name="users"
+            path={null}
+            size={null}
+          />
+        }
+        isValid={false}
+        label="Guests"
+        min={0}
+        name="guests"
+        onBlur={[Function]}
+        onChange={[Function]}
+      />
+    </div>
+    <div
+      className="button-container"
+    >
+      <div />
+    </div>
+  </div>
 </div>
 `;
 
 exports[`getFormFieldMarkup should render the right structure\` 1`] = `
 <div>
-  <FormField
-    width="seven"
+  <div
+    className="inputs-container"
   >
-    <WithResponsive(DateRangePicker)
-      endDatePlaceholderText="Check-out"
-      getIsDayBlocked={[Function]}
-      name="dates"
-      onChange={[Function]}
-      startDatePlaceholderText="Check-in"
-      willOpenAbove={true}
-    />
-  </FormField>
-  <FormField
-    width="three"
-  >
-    <NumberInput
-      autoComplete={null}
-      error={false}
-      icon={
-        <Icon
-          color={null}
-          hasBorder={false}
-          isButton={false}
-          isCircular={false}
-          isColorInverted={false}
-          isDisabled={false}
-          isLabelLeft={false}
-          labelText={null}
-          labelWeight={null}
-          name="users"
-          path={null}
-          size={null}
-        />
-      }
-      isValid={false}
-      label="Guests"
-      min={0}
-      name="guests"
-      onBlur={[Function]}
-      onChange={[Function]}
-    />
-  </FormField>
-  <FormField
-    width="four"
-  >
-    <div />
-  </FormField>
+    <div
+      className="input-container dates-input-container"
+    >
+      <WithResponsive(DateRangePicker)
+        endDatePlaceholderText="Check-out"
+        getIsDayBlocked={[Function]}
+        name="dates"
+        onChange={[Function]}
+        startDatePlaceholderText="Check-in"
+        willOpenAbove={true}
+      />
+    </div>
+    <div
+      className="input-container guests-input-container"
+    >
+      <NumberInput
+        autoComplete={null}
+        error={false}
+        icon={
+          <Icon
+            color={null}
+            hasBorder={false}
+            isButton={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText={null}
+            labelWeight={null}
+            name="users"
+            path={null}
+            size={null}
+          />
+        }
+        isValid={false}
+        label="Guests"
+        min={0}
+        name="guests"
+        onBlur={[Function]}
+        onChange={[Function]}
+      />
+    </div>
+    <div
+      className="button-container"
+    >
+      <div />
+    </div>
+  </div>
 </div>
 `;
