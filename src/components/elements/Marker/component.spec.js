@@ -61,6 +61,20 @@ describe('<Marker />', () => {
     });
   });
 
+  describe('handleClick', () => {
+    it('should call `props.onClick` with the right arguments', () => {
+      const name = 'Pam';
+      const onClick = jest.fn();
+      const wrapper = getMarker({ name, onClick });
+
+      const syntheticEvent = 'some event';
+
+      wrapper.instance().handleClick(syntheticEvent);
+
+      expect(onClick).toHaveBeenCalledWith(name, syntheticEvent);
+    });
+  });
+
   it('should have `displayName` Marker', () => {
     expectComponentToHaveDisplayName(Marker, 'Marker');
   });

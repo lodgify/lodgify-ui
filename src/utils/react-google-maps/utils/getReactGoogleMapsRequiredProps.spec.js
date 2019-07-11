@@ -21,9 +21,11 @@ describe('getReactGoogleMapsRequiredProps', () => {
 
     expect(actual).toEqual(
       expect.objectContaining({
-        googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${usedProps.apiKey}&v=3.exp&libraries=geometry,drawing,places`,
+        googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${
+          usedProps.apiKey
+        }&v=3.exp&libraries=geometry,drawing,places`,
         loadingElement: <div style={{ height: usedProps.height }} />,
-        containerElement: <div />,
+        containerElement: <div style={{ height: usedProps.height }} />,
         mapElement: <div style={{ height: usedProps.height }} />,
         ...otherProps,
       })

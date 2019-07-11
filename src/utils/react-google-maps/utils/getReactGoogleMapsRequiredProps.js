@@ -17,7 +17,7 @@ export const getReactGoogleMapsRequiredProps = ({
   googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`,
   loadingElement: <div style={{ height }} />,
   // react-google-maps `withGoogleMap` props
-  containerElement: <div />,
+  containerElement: <div style={{ height }} />,
   mapElement: <div style={{ height }} />,
   ...props,
 });
