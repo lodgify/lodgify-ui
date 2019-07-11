@@ -6,8 +6,7 @@ import PropTypes from 'prop-types';
 import { Heading } from 'typography/Heading';
 import { FlexContainer } from 'layout/FlexContainer';
 import { Paragraph } from 'typography/Paragraph';
-
-import { getToggledState } from './utils/getToggledState';
+import { getToggledIsActiveState } from 'utils/get-toggled-is-active-state';
 
 /**
  * A price label displays pricing information relating to nearby content.
@@ -34,7 +33,7 @@ export class Component extends PureComponent {
     onClick(name, syntheticEvent);
   };
 
-  toggleActive = () => this.setState(getToggledState);
+  toggleActive = () => this.setState(getToggledIsActiveState);
 
   render = () => {
     const {
