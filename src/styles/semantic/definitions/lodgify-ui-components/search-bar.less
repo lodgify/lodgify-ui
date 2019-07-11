@@ -13,6 +13,74 @@
 --------------------*/
 .search-bar {
 
+  .inputs-container {
+    display: flex;
+
+    .input-container {
+      flex-grow: 1;
+      padding-right: @searchBarInputSpacing;
+
+      > * {
+        max-width: none !important;
+      }
+    }
+
+    .location-input-container,
+    .guests-input-container {
+      flex-basis: @searchBarStandardInputFlexBasis;
+    }
+
+    .dates-input-container {
+      flex-basis: @searchBarWideInputFlexBasis;
+    }
+
+    .button-container {
+
+      > * {
+        margin: 0;
+        width: 100% !important;
+      }
+    }
+  }
+
+  &.is-stackable {
+
+    .inputs-container {
+      @media @searchBarMobileScreen, @searchBarTabletScreen {
+        flex-wrap: wrap;
+
+        .input-container {
+          padding-bottom: @searchBarInputSpacing;
+          padding-right: 0;
+        }
+
+        .dropdown-container .ui.selection.dropdown {
+          max-width: none !important;
+        }
+
+        .dates-input-container {
+          flex-basis: 100%;
+        }
+
+        .button-container {
+          flex-basis: 100%;
+        }
+      }
+
+      @media @searchBarTabletScreen {
+
+        .location-input-container {
+          order: @searchBarTabletScreenLocationInputOrder;
+          padding-right: @searchBarInputSpacing;
+        }
+
+        .guests-input-container {
+          order: @searchBarTabletScreenGuestsInputOrder;
+        }
+      }
+    }
+  }
+
   &.is-fixed {
     position: fixed;
     bottom: 0;
@@ -23,29 +91,11 @@
     box-shadow: @searchBarFixedBoxShadow;
     height: @searchBarFixedHeight;
 
-    .ui.grid {
-      margin-top: 0;
-      margin-bottom: 0;
-
-      > .row {
-        height: @searchBarFixedHeight;
-        padding: @searchBarFixedPadding;
-      }
-    }
-
-    .ui.form .fields {
-      margin: 0;
-    }
-  }
-
-  .location-dropdown {
-
-    .dropdown-container {
-
-      .ui.selection.dropdown {
-        width: @searchBarLocationDropdownMinWidth;
-        padding-right: @38px;
-      }
+    .ui.container {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
     }
   }
 }
