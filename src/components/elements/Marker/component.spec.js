@@ -2,7 +2,8 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { getToggledState } from './utils/getToggledState';
+import { getToggledIsActiveState } from 'utils/get-toggled-is-active-state';
+
 import { Component as Marker } from './component';
 
 const getMarker = props => mount(<Marker {...props} />);
@@ -57,7 +58,9 @@ describe('<Marker />', () => {
       wrapper.update();
       wrapper.instance().toggleActive();
 
-      expect(wrapper.instance().setState).toHaveBeenCalledWith(getToggledState);
+      expect(wrapper.instance().setState).toHaveBeenCalledWith(
+        getToggledIsActiveState
+      );
     });
   });
 
