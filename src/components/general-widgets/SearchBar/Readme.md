@@ -1,82 +1,136 @@
 ```jsx
-const { locationOptions } = require('./mock-data/options');
-
-<SearchBar
-  locationOptions={locationOptions}
-/>
+<SearchBar />
 ```
 
 ### Variations
 
-#### Custom Search Button
+#### Dropdowns open above
 
 ```jsx
-const { Button } = require('../../elements/Button');
-const { locationOptions } = require('./mock-data/options');
-
 <SearchBar
-  locationOptions={locationOptions}
-  searchButton={<Button>Custom!</Button>}
-/>
-```
-
-#### Without Location Dropdown
-```jsx
-
-<SearchBar />
-
-```
-
-#### Dropdown open above
-```jsx
-const { locationOptions } = require('./mock-data/options');
-
-<SearchBar
-  locationOptions={locationOptions}
   willLocationDropdownOpenAbove={true}
 />
 ```
 
 #### Fixed
+
 ```jsx
+class Controller extends React.Component {
 
-// Please set this to true to see the example
-const displayAsFixed = false;
-
-<SearchBar
-  isFixed={displayAsFixed}
-  searchButton={<Button isRounded isCompact>Availability</Button>}
-  summaryElement={
-    <div>Property information</div>
+  constructor() {
+    super()
+    this.state = { isShowing: false }
   }
-/>
+
+  render() {
+    return (
+      <React.Fragment>
+        <Button
+          isRounded
+          onClick={
+            () => this.setState({ isShowing: true})
+          }
+        >
+          Show fixed search bar
+        </Button>
+        {this.state.isShowing && (
+          <SearchBar
+            isFixed={true}
+          />
+        )}
+      </React.Fragment>
+    )
+  }
+}
+
+<Controller />
 ```
 
-#### With summary element in modal and search bar fixed
+#### Modal
+
 ```jsx
-
-// Please set this to true to see the example
-const displayAsFixed = false;
-
 <SearchBar
-  isFixed={displayAsFixed}
   isDisplayedAsModal
-  modalSummaryElement={
-    <div>Property information for mobile modal</div>
-  }
-  summaryElement={
-    <div>Property information</div>
-  }
 />
 ```
 
-#### Display search bar in a modal
+#### Stackable
+
+```jsx
+const { locationOptions } = require('./mock-data/options');
+
+<SearchBar
+  isStackable
+  locationOptions={locationOptions}
+/>
+```
+
+### Content
+
+#### Location dropdown
 
 ```jsx
 const { locationOptions } = require('./mock-data/options');
 
 <SearchBar
   locationOptions={locationOptions}
+/>
+```
+
+#### Search button
+
+```jsx
+const { Button } = require('../../elements/Button');
+
+<SearchBar
+  searchButton={<Button>Custom!</Button>}
+/>
+```
+
+#### Summary content
+
+```jsx
+class Controller extends React.Component {
+
+  constructor() {
+    super()
+    this.state = { isShowing: false }
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <Button
+          isRounded
+          onClick={
+            () => this.setState({ isShowing: true})
+          }
+        >
+          Show fixed search bar
+        </Button>
+        {this.state.isShowing && (
+          <SearchBar
+            isFixed={true}
+            summaryElement={
+              <div>Property information</div>
+            }
+          />
+        )}
+      </React.Fragment>
+    )
+  }
+}
+
+<Controller />
+```
+
+#### Summary content in modal
+
+```jsx
+<SearchBar
   isDisplayedAsModal
+  modalSummaryElement={
+    <div>Property information</div>
+  }
 />
 ```
