@@ -121,14 +121,12 @@ export class Component extends PureComponent {
         ref={this.createRef}
       >
         <Form onSubmit={this.handleSubmit}>
-          <Form.Group>
-            {getFormFieldMarkup(
-              this.props,
-              this.persistInputChange,
-              false,
-              this.state.willLocationDropdownOpenAbove
-            )}
-          </Form.Group>
+          {getFormFieldMarkup(
+            this.props,
+            this.persistInputChange,
+            false,
+            this.state.willLocationDropdownOpenAbove
+          )}
         </Form>
       </div>
     );
@@ -148,7 +146,6 @@ Component.defaultProps = {
   isDisplayedAsModal: false,
   isFixed: false,
   isModalOpen: undefined,
-  isShowingSummary: false,
   locationInputValue: undefined,
   locationOptions: null,
   modalHeadingText: CHECK_OUR_AVAILABILITY,
@@ -205,9 +202,6 @@ Component.propTypes = {
   /** Is the modal open. Used when consuming `SearchBar` as a controlled component. */
   // eslint-disable-next-line react/no-unused-prop-types
   isModalOpen: PropTypes.bool,
-  /** Is Search Bar showing the Property Summary info. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  isShowingSummary: PropTypes.bool,
   /** The value for the location input. Used when consuming `SearchBar` as a controlled component. */
   locationInputValue: PropTypes.string,
   /** The options which the user can select in the location field. */

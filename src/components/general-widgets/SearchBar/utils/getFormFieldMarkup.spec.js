@@ -4,7 +4,6 @@ import { shallow } from 'enzyme';
 import { getFormFieldMarkup } from './getFormFieldMarkup';
 
 const componentProps = {
-  isShowingSummary: true,
   isShowingLocationDropdown: true,
   getIsDayBlocked: Function.prototype,
   locationOptions: [],

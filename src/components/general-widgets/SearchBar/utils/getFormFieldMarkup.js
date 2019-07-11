@@ -15,7 +15,6 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
  * @param  {Function} props.datesInputOnFocusChange
  * @param  {Function} props.getIsDayBlocked
  * @param  {string}   props.guestsInputValue
- * @param  {boolean}  props.isShowingSummary
  * @param  {string}   props.locationInputValue
  * @param  {Object[]} props.locationOptions
  * @param  {Node}     props.searchButton
@@ -32,7 +31,6 @@ export const getFormFieldMarkup = (
     datesInputOnFocusChange,
     getIsDayBlocked,
     guestsInputValue,
-    isShowingSummary,
     locationInputValue,
     locationOptions,
     searchButton,
@@ -41,22 +39,12 @@ export const getFormFieldMarkup = (
   areColumnsStacked,
   willLocationDropdownOpenAbove
 ) => {
-  const summaryColumnWidth = areColumnsStacked ? 'twelve' : 'three';
   const datePickerColumnWidth = areColumnsStacked ? 'twelve' : 'seven';
   const buttonColumnWidth = areColumnsStacked ? 'twelve' : 'four';
   const guestInputColumnWidth = areColumnsStacked ? 'twelve' : 'three';
 
   return (
     <Fragment>
-      {!!isShowingSummary && (
-        <Form.Field width={summaryColumnWidth}>
-          <Icon
-            isDisabled
-            labelText="Property Summary"
-            name={ICON_NAMES.HOME}
-          />
-        </Form.Field>
-      )}
       {!!size(locationOptions) > 0 && (
         <Form.Field className="location-dropdown">
           <Dropdown

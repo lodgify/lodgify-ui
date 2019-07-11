@@ -3,24 +3,6 @@
 exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 should render the right structure 1`] = `
 <div>
   <FormField
-    width="three"
-  >
-    <Icon
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={true}
-      isLabelLeft={false}
-      labelText="Property Summary"
-      labelWeight={null}
-      name="home"
-      path={null}
-      size={null}
-    />
-  </FormField>
-  <FormField
     className="location-dropdown"
   >
     <Dropdown
@@ -98,24 +80,6 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
 
 exports[`getFormFieldMarkup should render the right structure\` 1`] = `
 <div>
-  <FormField
-    width="three"
-  >
-    <Icon
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={true}
-      isLabelLeft={false}
-      labelText="Property Summary"
-      labelWeight={null}
-      name="home"
-      path={null}
-      size={null}
-    />
-  </FormField>
   <FormField
     width="seven"
   >
