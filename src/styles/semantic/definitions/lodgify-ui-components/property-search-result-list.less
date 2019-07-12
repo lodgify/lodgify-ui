@@ -1,0 +1,26 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'property-search-result-list';
+
+@import (multiple) '../../theme.config';
+
+/*--------------------------
+  Property search result list
+--------------------------*/
+
+.property-search-result-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow: hidden;
+
+  .result-list-container {
+    margin-right: @resultListContainerMarginRight;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}

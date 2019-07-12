@@ -115,7 +115,7 @@
   &.has-search-result {
     display: inline-flex;
     height: @searchResultHeight;
-    margin: 0 @searchResultMargin @searchResultMargin 0;
+    margin: 0 @searchResultSideMargin @searchResultMargin @searchResultSideMargin;
     width: @searchResultWidth;
 
     &.active {
