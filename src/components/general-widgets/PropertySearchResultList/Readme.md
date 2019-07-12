@@ -14,7 +14,7 @@ const { propertySearchResults } = require('./mock-data/mock-data');
   //     'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
   //   pricePerPeriod: '$280',
   //   periodText: 'per month',
-  //   pricePerPeriodPrefix: 'from' 
+  //   pricePerPeriodPrefix: 'from'
   //   propertyAmenities: ['Pool', 'Wifi', 'Washer', 'Kitchen'],
   //   propertyName: 'The Cat House',
   //   propertyType: 'Bed and breakfast',
@@ -70,6 +70,21 @@ const { propertySearchResults } = require('./mock-data/mock-data');
   messageText="Found you a whole bunch of properties"
   propertySearchResults={propertySearchResults}
 />
+```
+
+#### Scroll
+
+```jsx
+const { propertySearchResults } = require('./mock-data/mock-data');
+
+<div style={{ height: 300 }}>
+  <PropertySearchResultList
+    propertySearchResults={[
+      ...propertySearchResults,
+      ...propertySearchResults
+    ]}
+  />
+</div>
 ```
 
 ### States

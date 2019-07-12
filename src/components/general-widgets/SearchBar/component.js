@@ -5,11 +5,9 @@ import { Form } from 'semantic-ui-react';
 import { debounce } from 'debounce';
 import isEqual from 'fast-deep-equal';
 
-import { CHECK_OUR_AVAILABILITY, SEARCH } from 'utils/default-strings';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
-import { Grid } from 'layout/Grid';
-import { GridColumn } from 'layout/GridColumn';
-import { GridRow } from 'layout/GridRow';
+import { ShowOn } from 'layout/ShowOn';
+import { CHECK_OUR_AVAILABILITY, SEARCH } from 'utils/default-strings';
 import { ICON_NAMES } from 'elements/Icon';
 import { Button } from 'elements/Button';
 
@@ -71,65 +69,43 @@ export class Component extends PureComponent {
       className,
       isDisplayedAsModal,
       isFixed,
+      isStackable,
       summaryElement,
     } = this.props;
 
-    const searchBarAsModal =
-      isDisplayedAsModal &&
-      getSearchBarModal(this.props, this.handleSubmit, this.persistInputChange);
-
-    if (isFixed) {
-      return (
-        <div
-          className={getClassNames(className, 'search-bar', 'is-fixed')}
-          ref={this.createRef}
-        >
-          <HorizontalGutters>
-            <Grid>
-              <GridRow verticalAlign="middle">
-                <GridColumn width={5}>{summaryElement}</GridColumn>
-                <GridColumn floated="right" width={7}>
-                  {isDisplayedAsModal ? (
-                    searchBarAsModal
-                  ) : (
-                    <Form onSubmit={this.handleSubmit}>
-                      <Form.Group>
-                        {getFormFieldMarkup(
-                          this.props,
-                          this.persistInputChange,
-                          false,
-                          true
-                        )}
-                      </Form.Group>
-                    </Form>
-                  )}
-                </GridColumn>
-              </GridRow>
-            </Grid>
-          </HorizontalGutters>
-        </div>
-      );
-    }
-
-    if (isDisplayedAsModal) {
-      return searchBarAsModal;
-    }
-
-    return (
+    return isDisplayedAsModal ? (
+      getSearchBarModal(this.props, this.handleSubmit, this.persistInputChange)
+    ) : (
       <div
-        className={getClassNames(className, 'search-bar')}
+        className={getClassNames(className, 'search-bar', {
+          'is-fixed': isFixed,
+          'is-stackable': isStackable,
+        })}
         ref={this.createRef}
       >
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Group>
+        {isFixed ? (
+          <HorizontalGutters>
+            {summaryElement}
+            <ShowOn computer widescreen>
+              {getFormFieldMarkup(this.props, this.persistInputChange, true)}
+            </ShowOn>
+            <ShowOn mobile tablet>
+              {getSearchBarModal(
+                this.props,
+                this.handleSubmit,
+                this.persistInputChange
+              )}
+            </ShowOn>
+          </HorizontalGutters>
+        ) : (
+          <Form onSubmit={this.handleSubmit}>
             {getFormFieldMarkup(
               this.props,
               this.persistInputChange,
-              false,
               this.state.willLocationDropdownOpenAbove
             )}
-          </Form.Group>
-        </Form>
+          </Form>
+        )}
       </div>
     );
   };
@@ -148,7 +124,7 @@ Component.defaultProps = {
   isDisplayedAsModal: false,
   isFixed: false,
   isModalOpen: undefined,
-  isShowingSummary: false,
+  isStackable: false,
   locationInputValue: undefined,
   locationOptions: null,
   modalHeadingText: CHECK_OUR_AVAILABILITY,
@@ -205,9 +181,8 @@ Component.propTypes = {
   /** Is the modal open. Used when consuming `SearchBar` as a controlled component. */
   // eslint-disable-next-line react/no-unused-prop-types
   isModalOpen: PropTypes.bool,
-  /** Is Search Bar showing the Property Summary info. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  isShowingSummary: PropTypes.bool,
+  /** Do the inputs stack one on top of the other on smaller devices. */
+  isStackable: PropTypes.bool,
   /** The value for the location input. Used when consuming `SearchBar` as a controlled component. */
   locationInputValue: PropTypes.string,
   /** The options which the user can select in the location field. */

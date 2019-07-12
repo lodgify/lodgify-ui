@@ -10,9 +10,9 @@ export const propertySearchResults = [
     guestsText: 'guests',
     imageUrl:
       'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
-    pricePerPeriod: '$28000',
-    periodText: 'per month',
-    pricePerPeriodPrefix: 'from',
+    priceLabelPricePerPeriod: '$28000',
+    priceLabelPeriodText: 'per month',
+    priceLabelPricePerPeriodPrefix: 'from',
     propertyAmenities: ['Pool', 'Wifi', 'Washer', 'Kitchen'],
     propertyName: 'The Cat House',
     propertyType: 'Bed and breakfast',
@@ -30,7 +30,7 @@ export const propertySearchResults = [
     guestsText: 'guests',
     imageUrl:
       'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
-    pricePerPeriod: '$1280',
+    priceLabelPricePerPeriod: '$1280',
     propertyAmenities: ['Pool', 'Wifi', 'Washer', 'Kitchen'],
     propertyName: 'Space Hub A-675',
     propertyType: 'Space Station',

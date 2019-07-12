@@ -70,7 +70,6 @@ export const Component = ({
       <ShowOn mobile tablet>
         <SearchBar
           {...sharedProps}
-          isDisplayedAsModal
           modalSummaryElement={getSummaryMarkup({
             areOnlyNightPriceAndRatingDisplayed: false,
             ...summaryProps,

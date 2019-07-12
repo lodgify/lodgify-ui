@@ -1,3 +1,24 @@
+# [1.223.0](https://github.com/lodgify/lodgify-ui/compare/v1.222.0...v1.223.0) (2019-07-12)
+
+
+### Features
+
+* **SearchBar:** clean up top level markup and add props.isStackable ([6570d75](https://github.com/lodgify/lodgify-ui/commit/6570d75))
+* **SearchBar:** implement stackable ui with flexbox ([531c00f](https://github.com/lodgify/lodgify-ui/commit/531c00f))
+
+# [1.222.0](https://github.com/lodgify/lodgify-ui/compare/v1.221.0...v1.222.0) (2019-07-12)
+
+
+### Bug Fixes
+
+* **PropertySearchResult:** fix prop naming ([226d963](https://github.com/lodgify/lodgify-ui/commit/226d963))
+
+
+### Features
+
+* **PropertySearchResultList:** add markup to support scrolling with tests and examples ([63eb80a](https://github.com/lodgify/lodgify-ui/commit/63eb80a))
+* **PropertySearchResultList:** add styles for scrolling ([b3f15cf](https://github.com/lodgify/lodgify-ui/commit/b3f15cf))
+
 # [1.221.0](https://github.com/lodgify/lodgify-ui/compare/v1.220.0...v1.221.0) (2019-07-11)
 
 

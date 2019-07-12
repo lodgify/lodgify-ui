@@ -2,8 +2,25 @@
      Search Bar
 --------------------*/
 
+// Responsive breakpoints
+
+@tabletBreakpoint: 561px;
+@computerBreakpoint: 1241px;
+
+@largestMobileScreen: (@tabletBreakpoint - 1px);
+@largestTabletScreen: (@computerBreakpoint - 1px);
+
+@searchBarMobileScreen: ~"only screen and (max-width: @{largestMobileScreen})";
+@searchBarTabletScreen: ~"only screen and (min-width: @{tabletBreakpoint}) and (max-width: @{largestTabletScreen})";
+
+@searchBarInputSpacing: @10px;
+@searchBarStandardInputFlexBasis: 150px;
+@searchBarWideInputFlexBasis: 300px;
+
+@searchBarTabletScreenLocationInputOrder: -2;
+@searchBarTabletScreenGuestsInputOrder: -1;
+
 @searchBarFixedBackgroundColor: @pureWhite;
 @searchBarFixedZIndex: @zIndexLevelTwo;
 @searchBarFixedPadding: @10px 0;
 @searchBarFixedBoxShadow: 0 -(@4px) @9px -(@6px) rgba(0, 0, 0, 0.29);
-@searchBarLocationDropdownMinWidth: 170px;
