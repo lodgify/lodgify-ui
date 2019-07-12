@@ -77,40 +77,30 @@ export class Component extends PureComponent {
 
     const { activePage, propertySearchResultsToDisplay } = this.state;
 
-    return isShowingPlaceholder ? (
-      <Fragment>
-        <Divider size="small" />
-        <TextPlaceholder length="short" />
-        <Divider size="small" />
-        <FlexContainer flexWrap="wrap" justifyContent="center">
-          {PLACEHOLDERS.map((propertySearchResult, index) => (
-            <PropertySearchResult
-              isShowingPlaceholder
-              key={buildKeyFromStrings(
-                propertySearchResult.placeholderName,
-                index
-              )}
-              {...propertySearchResult}
-            />
-          ))}
-        </FlexContainer>
-      </Fragment>
-    ) : (
-      <Fragment>
-        <FlexContainer alignItems="center" justifyContent="space-between">
-          <Heading size="small">
-            {`${propertySearchResultsLength} ${resultsCountText}`}
-          </Heading>
-          {!!size(dropdownOptions) && (
-            <Dropdown
-              isCompact
-              label={dropdownLabel}
-              onChange={dropdownOnChange}
-              options={dropdownOptions}
-              value={dropdownValue}
-            />
-          )}
-        </FlexContainer>
+    return (
+      <div className="property-search-result-list">
+        {isShowingPlaceholder ? (
+          <Fragment>
+            <Divider size="small" />
+            <TextPlaceholder length="short" />
+            <Divider size="small" />
+          </Fragment>
+        ) : (
+          <FlexContainer alignItems="center" justifyContent="space-between">
+            <Heading size="small">
+              {`${propertySearchResultsLength} ${resultsCountText}`}
+            </Heading>
+            {!!size(dropdownOptions) && (
+              <Dropdown
+                isCompact
+                label={dropdownLabel}
+                onChange={dropdownOnChange}
+                options={dropdownOptions}
+                value={dropdownValue}
+              />
+            )}
+          </FlexContainer>
+        )}
         {messageText ? (
           <Message>
             <FlexContainer alignItems="center" justifyContent="space-between">
@@ -121,41 +111,47 @@ export class Component extends PureComponent {
         ) : (
           <Divider size="small" />
         )}
-        <FlexContainer flexWrap="wrap" justifyContent="center">
-          {propertySearchResultsToDisplay.map((propertySearchResult, index) => (
-            <PropertySearchResult
-              key={buildKeyFromStrings(
-                propertySearchResult.propertyName,
-                index
-              )}
-              {...propertySearchResult}
-            />
-          ))}
-        </FlexContainer>
-        {propertySearchResultsLength > NUMBER_OF_PROPERTIES_PER_PAGE && (
-          <FlexContainer
-            alignItems="center"
-            flexDirection="column"
-            flexWrap="wrap"
-          >
-            <Pagination
-              isShowingPageNumbers
-              onPageChange={this.handleOnPageChange}
-              totalPages={getNumberOfPages(propertySearchResultsLength)}
-            />
-            <Paragraph>
-              {renderShowingResultsText(
-                getFirstPropertyPositionOfActivePage(activePage),
-                getLastPropertyPositionOfActivePage(
-                  activePage,
-                  propertySearchResultsLength
-                ),
-                propertySearchResultsLength
-              )}
-            </Paragraph>
+        <div className="result-list-container">
+          <FlexContainer flexWrap="wrap">
+            {(isShowingPlaceholder
+              ? PLACEHOLDERS
+              : propertySearchResultsToDisplay
+            ).map((propertySearchResult, index) => (
+              <PropertySearchResult
+                isShowingPlaceholder={isShowingPlaceholder}
+                key={buildKeyFromStrings(
+                  propertySearchResult.propertyName,
+                  index
+                )}
+                {...propertySearchResult}
+              />
+            ))}
           </FlexContainer>
-        )}
-      </Fragment>
+          {propertySearchResultsLength > NUMBER_OF_PROPERTIES_PER_PAGE && (
+            <FlexContainer
+              alignItems="center"
+              flexDirection="column"
+              flexWrap="wrap"
+            >
+              <Pagination
+                isShowingPageNumbers
+                onPageChange={this.handleOnPageChange}
+                totalPages={getNumberOfPages(propertySearchResultsLength)}
+              />
+              <Paragraph>
+                {renderShowingResultsText(
+                  getFirstPropertyPositionOfActivePage(activePage),
+                  getLastPropertyPositionOfActivePage(
+                    activePage,
+                    propertySearchResultsLength
+                  ),
+                  propertySearchResultsLength
+                )}
+              </Paragraph>
+            </FlexContainer>
+          )}
+        </div>
+      </div>
     );
   };
 }
