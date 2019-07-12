@@ -86,6 +86,14 @@ describe('<PropertySearchResult />', () => {
     });
   });
 
+  describe('if `props.isCompact` is passed', () => {
+    it('should return the right structure', () => {
+      const actual = getPropertySearchResult({ isCompact: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   describe('if `props.isShowingPlaceholder` is passed', () => {
     it('should return the right structure', () => {
       const actual = getPropertySearchResult({ isShowingPlaceholder: true });

@@ -1,3 +1,16 @@
+# [1.224.0](https://github.com/lodgify/lodgify-ui/compare/v1.223.0...v1.224.0) (2019-07-12)
+
+
+### Bug Fixes
+
+* **PropertySearchResultList:** fix PriceLabel props ([3877d5c](https://github.com/lodgify/lodgify-ui/commit/3877d5c))
+
+
+### Features
+
+* **card.*:** implement compact styles ([7641744](https://github.com/lodgify/lodgify-ui/commit/7641744))
+* **PropertySearchResult:** expose isCompact prop ([a5943cb](https://github.com/lodgify/lodgify-ui/commit/a5943cb))
+
 # [1.223.0](https://github.com/lodgify/lodgify-ui/compare/v1.222.0...v1.223.0) (2019-07-12)
 
 

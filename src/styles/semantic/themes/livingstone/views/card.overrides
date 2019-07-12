@@ -119,13 +119,50 @@
     width: @searchResultWidth;
 
     @media @tinyScreen {
-      width: 100%;
+      width: 100% !important;
       margin-right: 0;
     }
 
     &.active {
       box-shadow: @searchResultBoxShadow;
       transition: @searchResultBoxShadowTransition;
+    }
+
+    &.is-compact {
+      height: auto;
+      width: @compactSearchResultWidth;
+
+      .ui.card {
+        height: auto !important;
+        flex-direction: row;
+
+        > .flex-container {
+          min-width: @compactSearchResultImageMinWidth;
+          height: auto !important;
+        }
+
+        > .content {
+          padding: @compactSearchResultContentPadding;
+          display: grid;
+
+          > .header .ui.header {
+            font-size: 16px;
+          }
+
+          > .flex-container {
+            height: inherit !important;
+            margin-top: @compactSearchResultPriceLabelMarginTop;
+
+            .ui.header {
+              padding: 0;
+            }
+
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
     }
 
     .ui.card {

@@ -12,7 +12,6 @@ import { Heading } from 'typography/Heading';
 import { FlexContainer } from 'layout/FlexContainer';
 import { PriceLabel } from 'elements/PriceLabel';
 
-// import { getPriceLabelMarkup } from './utils/getPriceLabelMarkup';
 import { getSearchResultDescription } from './utils/getSearchResultDescription';
 import { getPropertyAmenities } from './utils/getPropertyAmenities';
 
@@ -52,10 +51,11 @@ export class Component extends PureComponent {
       imageSrcSet,
       imageUrl,
       isActive,
+      isCompact,
       isShowingPlaceholder,
       placeholderImageUrl,
       priceLabelPeriodText,
-      priceLabelPricePerPeriod,
+      priceLabelpricePerPeriod,
       priceLabelPricePerPeriodPrefix,
       propertyAmenities,
       propertyName,
@@ -69,6 +69,7 @@ export class Component extends PureComponent {
       <div
         className={getClassNames('ui', 'card', 'has-search-result', {
           active: isActive || this.state.isActive,
+          'is-compact': isCompact,
         })}
         onMouseOut={this.toggleActive}
         onMouseOver={this.toggleActive}
@@ -87,13 +88,15 @@ export class Component extends PureComponent {
                   sizes={imageSizes}
                   srcSet={imageSrcSet}
                 />
-                <Segment raised>
-                  <PriceLabel
-                    periodText={priceLabelPeriodText}
-                    pricePerPeriod={priceLabelPricePerPeriod}
-                    pricePerPeriodPrefix={priceLabelPricePerPeriodPrefix}
-                  />
-                </Segment>
+                {!isCompact && (
+                  <Segment raised>
+                    <PriceLabel
+                      periodText={priceLabelPeriodText}
+                      pricePerPeriod={priceLabelpricePerPeriod}
+                      pricePerPeriodPrefix={priceLabelPricePerPeriodPrefix}
+                    />
+                  </Segment>
+                )}
               </FlexContainer>
               <Card.Content>
                 <Card.Header>
@@ -120,6 +123,15 @@ export class Component extends PureComponent {
                 <Card.Description>
                   {getPropertyAmenities(propertyAmenities)}
                 </Card.Description>
+                {isCompact && (
+                  <FlexContainer justifyContent="flex-end">
+                    <PriceLabel
+                      periodText={priceLabelPeriodText}
+                      pricePerPeriod={priceLabelpricePerPeriod}
+                      pricePerPeriodPrefix={priceLabelPricePerPeriodPrefix}
+                    />
+                  </FlexContainer>
+                )}
               </Card.Content>
             </Fragment>
           )}
@@ -142,12 +154,13 @@ Component.defaultProps = {
   imageSizes: undefined,
   imageSrcSet: undefined,
   isActive: false,
+  isCompact: false,
   isShowingPlaceholder: false,
   name: undefined,
   onChange: Function.prototype,
   placeholderImageUrl: undefined,
   priceLabelPeriodText: '',
-  priceLabelPricePerPeriod: '',
+  priceLabelpricePerPeriod: '',
   priceLabelPricePerPeriodPrefix: '',
   propertyAmenities: [],
   propertyUrlTarget: '_self',
@@ -180,6 +193,8 @@ Component.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   /** Is the property search result in an active state. */
   isActive: PropTypes.bool,
+  /** Is the property search result displayed with a compact layout. */
+  isCompact: PropTypes.bool,
   /** Is the component showing placeholders to reserve space for content which will appear. */
   isShowingPlaceholder: PropTypes.bool,
   /** The name for the property search result. */
@@ -195,10 +210,10 @@ Component.propTypes = {
   placeholderImageUrl: PropTypes.string,
   /** The text describing the pricing period. */
   priceLabelPeriodText: PropTypes.string,
-  /** The price per period of the property, with currency symbol. */
-  priceLabelPricePerPeriod: PropTypes.string,
   /** The text prefix to display along with the price per period. */
   priceLabelPricePerPeriodPrefix: PropTypes.string,
+  /** The price per period of the property, with currency symbol. */
+  priceLabelpricePerPeriod: PropTypes.string,
   /** The amenities to display as a text*/
   propertyAmenities: PropTypes.arrayOf(PropTypes.string),
   /** The name of the property. */
