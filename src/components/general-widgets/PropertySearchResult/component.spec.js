@@ -19,7 +19,9 @@ const props = {
   guestsText: 'guests',
   imageUrl:
     'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
-  pricePerPeriod: '$280',
+  priceLabelPeriodText: 'some priceLabelPeriodText',
+  priceLabelPricePerPeriod: 'some priceLabelPricePerPeriod',
+  priceLabelPricePerPeriodPrefix: 'some priceLabelPricePerPeriodPrefix',
   propertyAmenities,
   propertyName: 'The Cat House',
   propertyType: 'Bed and breakfast',
