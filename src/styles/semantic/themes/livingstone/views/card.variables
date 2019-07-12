@@ -121,6 +121,15 @@
 
 /* Sizes */
 
+/* Summary Card */
+
+@summaryCardPadding: 16px;
+@summaryCardFontSize: 14px;
+@summaryCardPropertyTypeMarginLeft: 10px;
+@summaryCardBoxShadow: 0 2px 8px 0 rgba(0, 0, 0, 0.18);
+@summaryCardHeight: 20px;
+@summaryCardLineHeight: 20px;
+
 /* Colored */
 
 /* Room Type Slideshow */

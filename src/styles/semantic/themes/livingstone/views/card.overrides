@@ -238,6 +238,29 @@
 
   /* Sizes */
 
+  /* Summary Card */
+
+  &.has-summary-card {
+    display: inline-block;
+    width: auto;
+    box-shadow: @summaryCardBoxShadow !important;
+    padding: @summaryCardPadding;
+
+    .ui.header {
+      font-size: @summaryCardFontSize;
+      line-height: @summaryCardLineHeight;
+      height: @summaryCardHeight;
+    }
+
+    > .flex-container {
+      color: @black;
+
+      p {
+        margin-left: @summaryCardPropertyTypeMarginLeft;
+      }
+    }
+  }
+
   /* Colored */
 }
 

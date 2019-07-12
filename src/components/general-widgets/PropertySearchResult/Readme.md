@@ -103,6 +103,7 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 <PropertySearchResult
   bedroomsNumber={0}
   guestsNumber={0}
+  guestsText=""
   imageUrl=""
   isShowingPlaceholder
   priceLabelpricePerPeriod=""
