@@ -34,6 +34,7 @@ export { Rating } from './components/elements/Rating';
 export { Submenu } from './components/elements/Submenu';
 export { TextPlaceholder } from './components/elements/TextPlaceholder';
 export { Tooltip } from './components/elements/Tooltip';
+export { SummaryCard } from './components/elements/SummaryCard';
 
 // General Widgets
 export { CallMeBack } from './components/general-widgets/CallMeBack';
