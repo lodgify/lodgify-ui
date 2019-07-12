@@ -1,3 +1,11 @@
+# [1.225.0](https://github.com/lodgify/lodgify-ui/compare/v1.224.0...v1.225.0) (2019-07-12)
+
+
+### Features
+
+* **card.*:** add SummaryCard styles ([bb72b29](https://github.com/lodgify/lodgify-ui/commit/bb72b29))
+* **SummaryCard:** expose component ([b902259](https://github.com/lodgify/lodgify-ui/commit/b902259))
+
 # [1.224.0](https://github.com/lodgify/lodgify-ui/compare/v1.223.0...v1.224.0) (2019-07-12)
 
 
