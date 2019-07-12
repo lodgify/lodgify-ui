@@ -118,6 +118,11 @@
     margin: 0 @searchResultMargin @searchResultMargin 0;
     width: @searchResultWidth;
 
+    @media @tinyScreen {
+      width: 100%;
+      margin-right: 0;
+    }
+
     &.active {
       box-shadow: @searchResultBoxShadow;
       transition: @searchResultBoxShadowTransition;
@@ -127,11 +132,6 @@
       display: inline-flex;
       width: 100%;
       height: 100%;
-
-      @media @tinyScreen {
-        width: 100%;
-        margin-right: 0;
-      }
 
       > .flex-container {
         position: relative;
@@ -200,6 +200,29 @@
   /* Stackable */
 
   /* Sizes */
+
+  /* Summary Card */
+
+  &.has-summary-card {
+    display: inline-block;
+    width: auto;
+    box-shadow: @summaryCardBoxShadow !important;
+    padding: @summaryCardPadding;
+
+    .ui.header {
+      font-size: @summaryCardFontSize;
+      line-height: @summaryCardLineHeight;
+      height: @summaryCardHeight;
+    }
+
+    > .flex-container {
+      color: @black;
+
+      p {
+        margin-left: @summaryCardPropertyTypeMarginLeft;
+      }
+    }
+  }
 
   /* Colored */
 }
