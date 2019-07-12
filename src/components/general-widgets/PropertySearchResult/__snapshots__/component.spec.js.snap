@@ -32,7 +32,7 @@ exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should ren
           onChange={[Function]}
           onClick={[Function]}
           periodText="some priceLabelPeriodText"
-          pricePerPeriod="some priceLabelPricePerPeriod"
+          pricePerPeriod=""
           pricePerPeriodPrefix="some priceLabelPricePerPeriodPrefix"
         />
       </Segment>
@@ -76,6 +76,91 @@ exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should ren
       <CardDescription>
         Pool · Wifi · Washer · Kitchen
       </CardDescription>
+    </CardContent>
+  </Card>
+</div>
+`;
+
+exports[`<PropertySearchResult /> if \`props.isCompact\` is passed should return the right structure 1`] = `
+<div
+  className="ui card has-search-result is-compact"
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Card
+    href="/"
+    target="_self"
+  >
+    <FlexContainer
+      alignContent={null}
+      alignItems={null}
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent={null}
+    >
+      <withLazyLoad(ResponsiveImage)
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        isFluid={true}
+        isLazyLoaded={true}
+      />
+    </FlexContainer>
+    <CardContent>
+      <CardHeader>
+        <Heading
+          className={null}
+          hasMargin={true}
+          isColorInverted={false}
+          size="medium"
+          textAlign={null}
+        >
+          The Cat House
+        </Heading>
+      </CardHeader>
+      <CardDescription>
+        <FlexContainer
+          alignContent={null}
+          alignItems="center"
+          flexDirection="row"
+          flexWrap={null}
+          justifyContent={null}
+        >
+          <Rating
+            iconSize="tiny"
+            isShowingNumeral={true}
+            ratingNumber={4.7}
+          />
+          <Paragraph
+            size="medium"
+            weight={null}
+          >
+            · Bed and breakfast
+          </Paragraph>
+        </FlexContainer>
+      </CardDescription>
+      <CardDescription>
+        2 guests · 2 bedrooms · 2 beds · 2 baths
+      </CardDescription>
+      <CardDescription>
+        Pool · Wifi · Washer · Kitchen
+      </CardDescription>
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection={null}
+        flexWrap={null}
+        justifyContent="flex-end"
+      >
+        <PriceLabel
+          hasShadow={false}
+          isActive={false}
+          isPointing={false}
+          onChange={[Function]}
+          onClick={[Function]}
+          periodText="some priceLabelPeriodText"
+          pricePerPeriod=""
+          pricePerPeriodPrefix="some priceLabelPricePerPeriodPrefix"
+        />
+      </FlexContainer>
     </CardContent>
   </Card>
 </div>
@@ -153,7 +238,7 @@ exports[`<PropertySearchResult /> should render the right structure 1`] = `
           onChange={[Function]}
           onClick={[Function]}
           periodText="some priceLabelPeriodText"
-          pricePerPeriod="some priceLabelPricePerPeriod"
+          pricePerPeriod=""
           pricePerPeriodPrefix="some priceLabelPricePerPeriodPrefix"
         />
       </Segment>

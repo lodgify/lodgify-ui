@@ -98,6 +98,12 @@
 @searchResultPlaceholderPadding: 63%;
 @mobileSearchResultPlaceholderPadding: 55%;
 
+@compactSearchResultWidth: 365px;
+@compactSearchResultImageMinWidth: 110px;
+@compactSearchResultContentPadding: 15px;
+@compactSearchResultFontSize: 16px;
+@compactSearchResultPriceLabelMarginTop: 10px;
+
 /*-------------------
       Variations
 --------------------*/
