@@ -21,9 +21,9 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -45,7 +45,7 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         "guestsNumber": 4,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "pricePerPeriod": "$1280",
+        "priceLabelPricePerPeriod": "$1280",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -62,145 +62,155 @@ exports[`<PropertySearchResultList /> by default should render the right structu
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
-  <FlexContainer
-    alignContent={null}
-    alignItems="center"
-    flexDirection={null}
-    flexWrap={null}
-    justifyContent="space-between"
+  <div
+    className="property-search-result-list"
   >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": null,
-          "height": "100%",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="small"
-        textAlign={null}
-      >
-        <Header
-          as="h4"
-          className=""
-          inverted={false}
-          textAlign={null}
-        >
-          <h4
-            className="ui header"
-          >
-            2 results
-          </h4>
-        </Header>
-      </Heading>
-    </div>
-  </FlexContainer>
-  <Divider
-    className=""
-    hasLine={false}
-    size="small"
-  >
-    <Divider
-      className="is-size-small"
-      hidden={true}
-      section={false}
+    <FlexContainer
+      alignContent={null}
+      alignItems="center"
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent="space-between"
     >
       <div
-        className="ui hidden divider is-size-small"
-      />
-    </Divider>
-  </Divider>
-  <FlexContainer
-    alignContent={null}
-    alignItems={null}
-    flexDirection={null}
-    flexWrap="wrap"
-    justifyContent="center"
-  >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": null,
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": "wrap",
-          "height": "100%",
-          "justifyContent": "center",
+        className="flex-container"
+        style={
+          Object {
+            "alignContent": null,
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": null,
+            "flexGrow": "1",
+            "flexWrap": null,
+            "height": "100%",
+            "justifyContent": "space-between",
+          }
         }
-      }
+      >
+        <Heading
+          className={null}
+          hasMargin={true}
+          isColorInverted={false}
+          size="small"
+          textAlign={null}
+        >
+          <Header
+            as="h4"
+            className=""
+            inverted={false}
+            textAlign={null}
+          >
+            <h4
+              className="ui header"
+            >
+              2 results
+            </h4>
+          </Header>
+        </Heading>
+      </div>
+    </FlexContainer>
+    <Divider
+      className=""
+      hasLine={false}
+      size="small"
     >
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House0"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
       >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={1}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={3}
-        bedsText="beds"
-        guestsNumber={4}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="Space Hub A-6751"
-        pricePerPeriod="$1280"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="Space Hub A-675"
-        propertyType="Space Station"
-        propertyUrl="/"
-        ratingNumber={4.7}
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
+    </Divider>
+    <div
+      className="result-list-container"
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection={null}
+        flexWrap="wrap"
+        justifyContent={null}
       >
-        <div />
-      </PropertySearchResult>
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": null,
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": "wrap",
+              "height": "100%",
+              "justifyContent": null,
+            }
+          }
+        >
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House0"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={1}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={3}
+            bedsText="beds"
+            guestsNumber={4}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="Space Hub A-6751"
+            priceLabelPricePerPeriod="$1280"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="Space Hub A-675"
+            propertyType="Space Station"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+        </div>
+      </FlexContainer>
     </div>
-  </FlexContainer>
+  </div>
 </PropertySearchResultList>
 `;
 
@@ -234,9 +244,9 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -258,7 +268,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         "guestsNumber": 4,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "pricePerPeriod": "$1280",
+        "priceLabelPricePerPeriod": "$1280",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -275,317 +285,327 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
-  <FlexContainer
-    alignContent={null}
-    alignItems="center"
-    flexDirection={null}
-    flexWrap={null}
-    justifyContent="space-between"
+  <div
+    className="property-search-result-list"
   >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": null,
-          "height": "100%",
-          "justifyContent": "space-between",
-        }
-      }
+    <FlexContainer
+      alignContent={null}
+      alignItems="center"
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent="space-between"
     >
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="small"
-        textAlign={null}
+      <div
+        className="flex-container"
+        style={
+          Object {
+            "alignContent": null,
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": null,
+            "flexGrow": "1",
+            "flexWrap": null,
+            "height": "100%",
+            "justifyContent": "space-between",
+          }
+        }
       >
-        <Header
-          as="h4"
-          className=""
-          inverted={false}
+        <Heading
+          className={null}
+          hasMargin={true}
+          isColorInverted={false}
+          size="small"
           textAlign={null}
         >
-          <h4
-            className="ui header"
+          <Header
+            as="h4"
+            className=""
+            inverted={false}
+            textAlign={null}
           >
-            2 results
-          </h4>
-        </Header>
-      </Heading>
-      <Dropdown
-        error={false}
-        icon={null}
-        initialValue={null}
-        isCompact={true}
-        isDisabled={false}
-        isSearchable={false}
-        isValid={false}
-        label="some label"
-        name=""
-        noResultsText="No results"
-        onBlur={[Function]}
-        onChange={[Function]}
-        options={
-          Array [
-            Object {
-              "content": "Price (lowest to highest)",
-              "text": "Sort by price (lowest first)",
-              "value": "price",
-            },
-          ]
-        }
-        value="price"
-        willOpenAbove={false}
-      >
-        <div
-          className="dropdown-container is-compact dirty"
+            <h4
+              className="ui header"
+            >
+              2 results
+            </h4>
+          </Header>
+        </Heading>
+        <Dropdown
+          error={false}
+          icon={null}
+          initialValue={null}
+          isCompact={true}
+          isDisabled={false}
+          isSearchable={false}
+          isValid={false}
+          label="some label"
+          name=""
+          noResultsText="No results"
+          onBlur={[Function]}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "content": "Price (lowest to highest)",
+                "text": "Sort by price (lowest first)",
+                "value": "price",
+              },
+            ]
+          }
+          value="price"
+          willOpenAbove={false}
         >
-          <Dropdown
-            additionLabel="Add "
-            additionPosition="top"
-            closeOnBlur={true}
-            compact={true}
-            deburr={false}
-            disabled={false}
-            icon={
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="caret down"
-                path={null}
-                size="small"
-              />
-            }
-            minCharacters={1}
-            noResultsMessage="No results"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onClick={[Function]}
-            open={false}
-            openOnFocus={true}
-            options={
-              Array [
-                Object {
-                  "content": "Price (lowest to highest)",
-                  "text": "Sort by price (lowest first)",
-                  "value": "price",
-                },
-              ]
-            }
-            placeholder="some label"
-            renderLabel={[Function]}
-            search={false}
-            searchInput="text"
-            selectOnBlur={false}
-            selectOnNavigation={true}
-            selection={true}
-            upward={false}
-            value="price"
-            wrapSelection={true}
+          <div
+            className="dropdown-container is-compact dirty"
           >
-            <div
-              aria-disabled={false}
-              aria-expanded={false}
-              className="ui compact selection dropdown"
+            <Dropdown
+              additionLabel="Add "
+              additionPosition="top"
+              closeOnBlur={true}
+              compact={true}
+              deburr={false}
+              disabled={false}
+              icon={
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isButton={false}
+                  isCircular={false}
+                  isColorInverted={false}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="caret down"
+                  path={null}
+                  size="small"
+                />
+              }
+              minCharacters={1}
+              noResultsMessage="No results"
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
-              onMouseDown={[Function]}
-              role="listbox"
-              tabIndex={0}
+              open={false}
+              openOnFocus={true}
+              options={
+                Array [
+                  Object {
+                    "content": "Price (lowest to highest)",
+                    "text": "Sort by price (lowest first)",
+                    "value": "price",
+                  },
+                ]
+              }
+              placeholder="some label"
+              renderLabel={[Function]}
+              search={false}
+              searchInput="text"
+              selectOnBlur={false}
+              selectOnNavigation={true}
+              selection={true}
+              upward={false}
+              value="price"
+              wrapSelection={true}
             >
               <div
-                aria-live="polite"
-                className="text"
-                role="alert"
-              >
-                Sort by price (lowest first)
-              </div>
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="caret down"
+                aria-disabled={false}
+                aria-expanded={false}
+                className="ui compact selection dropdown"
+                onBlur={[Function]}
+                onChange={[Function]}
                 onClick={[Function]}
-                path={null}
-                size="small"
-              >
-                <i
-                  className="icon small"
-                  onClick={[Function]}
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M20,8.5l-8,7-8-7Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </i>
-              </Icon>
-              <DropdownMenu
-                open={false}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                role="listbox"
+                tabIndex={0}
               >
                 <div
-                  className="menu transition"
+                  aria-live="polite"
+                  className="text"
+                  role="alert"
                 >
-                  <DropdownItem
-                    active={true}
-                    content="Price (lowest to highest)"
-                    key="price"
+                  Sort by price (lowest first)
+                </div>
+                <Icon
+                  color={null}
+                  hasBorder={false}
+                  isButton={false}
+                  isCircular={false}
+                  isColorInverted={false}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="caret down"
+                  onClick={[Function]}
+                  path={null}
+                  size="small"
+                >
+                  <i
+                    className="icon small"
                     onClick={[Function]}
-                    selected={true}
-                    style={
-                      Object {
-                        "pointerEvents": "all",
-                      }
-                    }
-                    text="Sort by price (lowest first)"
-                    value="price"
                   >
-                    <div
-                      aria-checked={true}
-                      aria-selected={true}
-                      className="active selected item"
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20,8.5l-8,7-8-7Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+                <DropdownMenu
+                  open={false}
+                >
+                  <div
+                    className="menu transition"
+                  >
+                    <DropdownItem
+                      active={true}
+                      content="Price (lowest to highest)"
+                      key="price"
                       onClick={[Function]}
-                      role="option"
+                      selected={true}
                       style={
                         Object {
                           "pointerEvents": "all",
                         }
                       }
+                      text="Sort by price (lowest first)"
+                      value="price"
                     >
-                      <span
-                        className="text"
-                        key="Price (lowest to highest)"
+                      <div
+                        aria-checked={true}
+                        aria-selected={true}
+                        className="active selected item"
+                        onClick={[Function]}
+                        role="option"
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
+                        }
                       >
-                        Price (lowest to highest)
-                      </span>
-                    </div>
-                  </DropdownItem>
-                </div>
-              </DropdownMenu>
-            </div>
-          </Dropdown>
-        </div>
-      </Dropdown>
-    </div>
-  </FlexContainer>
-  <Divider
-    className=""
-    hasLine={false}
-    size="small"
-  >
+                        <span
+                          className="text"
+                          key="Price (lowest to highest)"
+                        >
+                          Price (lowest to highest)
+                        </span>
+                      </div>
+                    </DropdownItem>
+                  </div>
+                </DropdownMenu>
+              </div>
+            </Dropdown>
+          </div>
+        </Dropdown>
+      </div>
+    </FlexContainer>
     <Divider
-      className="is-size-small"
-      hidden={true}
-      section={false}
+      className=""
+      hasLine={false}
+      size="small"
     >
-      <div
-        className="ui hidden divider is-size-small"
-      />
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
+      >
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
     </Divider>
-  </Divider>
-  <FlexContainer
-    alignContent={null}
-    alignItems={null}
-    flexDirection={null}
-    flexWrap="wrap"
-    justifyContent="center"
-  >
     <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": null,
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": "wrap",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
+      className="result-list-container"
     >
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House0"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection={null}
+        flexWrap="wrap"
+        justifyContent={null}
       >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={1}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={3}
-        bedsText="beds"
-        guestsNumber={4}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="Space Hub A-6751"
-        pricePerPeriod="$1280"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="Space Hub A-675"
-        propertyType="Space Station"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": null,
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": "wrap",
+              "height": "100%",
+              "justifyContent": null,
+            }
+          }
+        >
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House0"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={1}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={3}
+            bedsText="beds"
+            guestsNumber={4}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="Space Hub A-6751"
+            priceLabelPricePerPeriod="$1280"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="Space Hub A-675"
+            propertyType="Space Station"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+        </div>
+      </FlexContainer>
     </div>
-  </FlexContainer>
+  </div>
 </PropertySearchResultList>
 `;
 
@@ -602,230 +622,247 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
-  <Divider
-    className=""
-    hasLine={false}
-    size="small"
+  <div
+    className="property-search-result-list"
   >
     <Divider
-      className="is-size-small"
-      hidden={true}
-      section={false}
+      className=""
+      hasLine={false}
+      size="small"
+    >
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
+      >
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
+    </Divider>
+    <TextPlaceholder
+      isFluid={true}
+      length="short"
     >
       <div
-        className="ui hidden divider is-size-small"
+        className="placeholder text short fluid"
       />
-    </Divider>
-  </Divider>
-  <TextPlaceholder
-    isFluid={true}
-    length="short"
-  >
-    <div
-      className="placeholder text short fluid"
-    />
-  </TextPlaceholder>
-  <Divider
-    className=""
-    hasLine={false}
-    size="small"
-  >
+    </TextPlaceholder>
     <Divider
-      className="is-size-small"
-      hidden={true}
-      section={false}
+      className=""
+      hasLine={false}
+      size="small"
     >
-      <div
-        className="ui hidden divider is-size-small"
-      />
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
+      >
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
     </Divider>
-  </Divider>
-  <FlexContainer
-    alignContent={null}
-    alignItems={null}
-    flexDirection={null}
-    flexWrap="wrap"
-    justifyContent="center"
-  >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": null,
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": "wrap",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
+    <Divider
+      className=""
+      hasLine={false}
+      size="small"
     >
-      <PropertySearchResult
-        bathsNumber={0}
-        bathsText=""
-        bedroomsNumber={0}
-        bedroomsText=""
-        bedsNumber={0}
-        bedsText=""
-        guestsNumber={0}
-        guestsText=""
-        imageUrl=""
-        isShowingPlaceholder={true}
-        key="placeholder0"
-        placeholderName="placeholder"
-        pricePerPeriod=""
-        propertyAmenities={
-          Array [
-            "",
-            "",
-          ]
-        }
-        propertyName=""
-        propertyType=""
-        propertyUrl=""
-        ratingNumber={0}
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
       >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={0}
-        bathsText=""
-        bedroomsNumber={0}
-        bedroomsText=""
-        bedsNumber={0}
-        bedsText=""
-        guestsNumber={0}
-        guestsText=""
-        imageUrl=""
-        isShowingPlaceholder={true}
-        key="placeholder1"
-        placeholderName="placeholder"
-        pricePerPeriod=""
-        propertyAmenities={
-          Array [
-            "",
-            "",
-          ]
-        }
-        propertyName=""
-        propertyType=""
-        propertyUrl=""
-        ratingNumber={0}
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
+    </Divider>
+    <div
+      className="result-list-container"
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection={null}
+        flexWrap="wrap"
+        justifyContent={null}
       >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={0}
-        bathsText=""
-        bedroomsNumber={0}
-        bedroomsText=""
-        bedsNumber={0}
-        bedsText=""
-        guestsNumber={0}
-        guestsText=""
-        imageUrl=""
-        isShowingPlaceholder={true}
-        key="placeholder2"
-        placeholderName="placeholder"
-        pricePerPeriod=""
-        propertyAmenities={
-          Array [
-            "",
-            "",
-          ]
-        }
-        propertyName=""
-        propertyType=""
-        propertyUrl=""
-        ratingNumber={0}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={0}
-        bathsText=""
-        bedroomsNumber={0}
-        bedroomsText=""
-        bedsNumber={0}
-        bedsText=""
-        guestsNumber={0}
-        guestsText=""
-        imageUrl=""
-        isShowingPlaceholder={true}
-        key="placeholder3"
-        placeholderName="placeholder"
-        pricePerPeriod=""
-        propertyAmenities={
-          Array [
-            "",
-            "",
-          ]
-        }
-        propertyName=""
-        propertyType=""
-        propertyUrl=""
-        ratingNumber={0}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={0}
-        bathsText=""
-        bedroomsNumber={0}
-        bedroomsText=""
-        bedsNumber={0}
-        bedsText=""
-        guestsNumber={0}
-        guestsText=""
-        imageUrl=""
-        isShowingPlaceholder={true}
-        key="placeholder4"
-        placeholderName="placeholder"
-        pricePerPeriod=""
-        propertyAmenities={
-          Array [
-            "",
-            "",
-          ]
-        }
-        propertyName=""
-        propertyType=""
-        propertyUrl=""
-        ratingNumber={0}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={0}
-        bathsText=""
-        bedroomsNumber={0}
-        bedroomsText=""
-        bedsNumber={0}
-        bedsText=""
-        guestsNumber={0}
-        guestsText=""
-        imageUrl=""
-        isShowingPlaceholder={true}
-        key="placeholder5"
-        placeholderName="placeholder"
-        pricePerPeriod=""
-        propertyAmenities={
-          Array [
-            "",
-            "",
-          ]
-        }
-        propertyName=""
-        propertyType=""
-        propertyUrl=""
-        ratingNumber={0}
-      >
-        <div />
-      </PropertySearchResult>
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": null,
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": "wrap",
+              "height": "100%",
+              "justifyContent": null,
+            }
+          }
+        >
+          <PropertySearchResult
+            bathsNumber={0}
+            bathsText=""
+            bedroomsNumber={0}
+            bedroomsText=""
+            bedsNumber={0}
+            bedsText=""
+            guestsNumber={0}
+            guestsText=""
+            imageUrl=""
+            isShowingPlaceholder={true}
+            key="placeholder0"
+            pricePerPeriod=""
+            propertyAmenities={
+              Array [
+                "",
+                "",
+              ]
+            }
+            propertyName="placeholder"
+            propertyType=""
+            propertyUrl=""
+            ratingNumber={0}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={0}
+            bathsText=""
+            bedroomsNumber={0}
+            bedroomsText=""
+            bedsNumber={0}
+            bedsText=""
+            guestsNumber={0}
+            guestsText=""
+            imageUrl=""
+            isShowingPlaceholder={true}
+            key="placeholder1"
+            pricePerPeriod=""
+            propertyAmenities={
+              Array [
+                "",
+                "",
+              ]
+            }
+            propertyName="placeholder"
+            propertyType=""
+            propertyUrl=""
+            ratingNumber={0}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={0}
+            bathsText=""
+            bedroomsNumber={0}
+            bedroomsText=""
+            bedsNumber={0}
+            bedsText=""
+            guestsNumber={0}
+            guestsText=""
+            imageUrl=""
+            isShowingPlaceholder={true}
+            key="placeholder2"
+            pricePerPeriod=""
+            propertyAmenities={
+              Array [
+                "",
+                "",
+              ]
+            }
+            propertyName="placeholder"
+            propertyType=""
+            propertyUrl=""
+            ratingNumber={0}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={0}
+            bathsText=""
+            bedroomsNumber={0}
+            bedroomsText=""
+            bedsNumber={0}
+            bedsText=""
+            guestsNumber={0}
+            guestsText=""
+            imageUrl=""
+            isShowingPlaceholder={true}
+            key="placeholder3"
+            pricePerPeriod=""
+            propertyAmenities={
+              Array [
+                "",
+                "",
+              ]
+            }
+            propertyName="placeholder"
+            propertyType=""
+            propertyUrl=""
+            ratingNumber={0}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={0}
+            bathsText=""
+            bedroomsNumber={0}
+            bedroomsText=""
+            bedsNumber={0}
+            bedsText=""
+            guestsNumber={0}
+            guestsText=""
+            imageUrl=""
+            isShowingPlaceholder={true}
+            key="placeholder4"
+            pricePerPeriod=""
+            propertyAmenities={
+              Array [
+                "",
+                "",
+              ]
+            }
+            propertyName="placeholder"
+            propertyType=""
+            propertyUrl=""
+            ratingNumber={0}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={0}
+            bathsText=""
+            bedroomsNumber={0}
+            bedroomsText=""
+            bedsNumber={0}
+            bedsText=""
+            guestsNumber={0}
+            guestsText=""
+            imageUrl=""
+            isShowingPlaceholder={true}
+            key="placeholder5"
+            pricePerPeriod=""
+            propertyAmenities={
+              Array [
+                "",
+                "",
+              ]
+            }
+            propertyName="placeholder"
+            propertyType=""
+            propertyUrl=""
+            ratingNumber={0}
+          >
+            <div />
+          </PropertySearchResult>
+        </div>
+      </FlexContainer>
     </div>
-  </FlexContainer>
+  </div>
 </PropertySearchResultList>
 `;
 
@@ -850,9 +887,9 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -874,7 +911,7 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
         "guestsNumber": 4,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "pricePerPeriod": "$1280",
+        "priceLabelPricePerPeriod": "$1280",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -891,192 +928,202 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
-  <FlexContainer
-    alignContent={null}
-    alignItems="center"
-    flexDirection={null}
-    flexWrap={null}
-    justifyContent="space-between"
+  <div
+    className="property-search-result-list"
   >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": null,
-          "height": "100%",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="small"
-        textAlign={null}
-      >
-        <Header
-          as="h4"
-          className=""
-          inverted={false}
-          textAlign={null}
-        >
-          <h4
-            className="ui header"
-          >
-            2 results
-          </h4>
-        </Header>
-      </Heading>
-    </div>
-  </FlexContainer>
-  <Message>
-    <Message
-      className="padded"
+    <FlexContainer
+      alignContent={null}
+      alignItems="center"
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent="space-between"
     >
       <div
-        className="ui message padded"
+        className="flex-container"
+        style={
+          Object {
+            "alignContent": null,
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": null,
+            "flexGrow": "1",
+            "flexWrap": null,
+            "height": "100%",
+            "justifyContent": "space-between",
+          }
+        }
       >
-        <FlexContainer
-          alignContent={null}
-          alignItems="center"
-          flexDirection={null}
-          flexWrap={null}
-          justifyContent="space-between"
+        <Heading
+          className={null}
+          hasMargin={true}
+          isColorInverted={false}
+          size="small"
+          textAlign={null}
         >
-          <div
-            className="flex-container"
-            style={
-              Object {
-                "alignContent": null,
-                "alignItems": "center",
-                "display": "flex",
-                "flexDirection": null,
-                "flexGrow": "1",
-                "flexWrap": null,
-                "height": "100%",
-                "justifyContent": "space-between",
-              }
-            }
+          <Header
+            as="h4"
+            className=""
+            inverted={false}
+            textAlign={null}
           >
-            Some message text
-            <Link
-              href={null}
-              isPositionedRight={false}
-              onClick={[Function]}
-              willOpenInNewTab={false}
+            <h4
+              className="ui header"
             >
-              <Button
-                as={null}
-                basic={true}
-                floated="left"
+              2 results
+            </h4>
+          </Header>
+        </Heading>
+      </div>
+    </FlexContainer>
+    <Message>
+      <Message
+        className="padded"
+      >
+        <div
+          className="ui message padded"
+        >
+          <FlexContainer
+            alignContent={null}
+            alignItems="center"
+            flexDirection={null}
+            flexWrap={null}
+            justifyContent="space-between"
+          >
+            <div
+              className="flex-container"
+              style={
+                Object {
+                  "alignContent": null,
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flexDirection": null,
+                  "flexGrow": "1",
+                  "flexWrap": null,
+                  "height": "100%",
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              Some message text
+              <Link
                 href={null}
+                isPositionedRight={false}
                 onClick={[Function]}
-                target="_self"
-                type="button"
+                willOpenInNewTab={false}
               >
-                <button
-                  className="ui basic left floated button"
+                <Button
+                  as={null}
+                  basic={true}
+                  floated="left"
                   href={null}
                   onClick={[Function]}
-                  role="button"
                   target="_self"
                   type="button"
                 >
-                  Some button text
-                </button>
-              </Button>
-            </Link>
-          </div>
-        </FlexContainer>
-      </div>
+                  <button
+                    className="ui basic left floated button"
+                    href={null}
+                    onClick={[Function]}
+                    role="button"
+                    target="_self"
+                    type="button"
+                  >
+                    Some button text
+                  </button>
+                </Button>
+              </Link>
+            </div>
+          </FlexContainer>
+        </div>
+      </Message>
     </Message>
-  </Message>
-  <FlexContainer
-    alignContent={null}
-    alignItems={null}
-    flexDirection={null}
-    flexWrap="wrap"
-    justifyContent="center"
-  >
     <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": null,
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": "wrap",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
+      className="result-list-container"
     >
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House0"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection={null}
+        flexWrap="wrap"
+        justifyContent={null}
       >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={1}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={3}
-        bedsText="beds"
-        guestsNumber={4}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="Space Hub A-6751"
-        pricePerPeriod="$1280"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="Space Hub A-675"
-        propertyType="Space Station"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": null,
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": "wrap",
+              "height": "100%",
+              "justifyContent": null,
+            }
+          }
+        >
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House0"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={1}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={3}
+            bedsText="beds"
+            guestsNumber={4}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="Space Hub A-6751"
+            priceLabelPricePerPeriod="$1280"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="Space Hub A-675"
+            propertyType="Space Station"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+        </div>
+      </FlexContainer>
     </div>
-  </FlexContainer>
+  </div>
 </PropertySearchResultList>
 `;
 
@@ -1101,9 +1148,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1125,9 +1172,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1149,9 +1196,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1173,9 +1220,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1197,9 +1244,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1221,9 +1268,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1245,9 +1292,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1269,9 +1316,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1293,9 +1340,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1317,9 +1364,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1341,9 +1388,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1365,9 +1412,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1389,9 +1436,9 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1408,698 +1455,528 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
-  <FlexContainer
-    alignContent={null}
-    alignItems="center"
-    flexDirection={null}
-    flexWrap={null}
-    justifyContent="space-between"
+  <div
+    className="property-search-result-list"
   >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": null,
-          "height": "100%",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="small"
-        textAlign={null}
-      >
-        <Header
-          as="h4"
-          className=""
-          inverted={false}
-          textAlign={null}
-        >
-          <h4
-            className="ui header"
-          >
-            13 results
-          </h4>
-        </Header>
-      </Heading>
-    </div>
-  </FlexContainer>
-  <Divider
-    className=""
-    hasLine={false}
-    size="small"
-  >
-    <Divider
-      className="is-size-small"
-      hidden={true}
-      section={false}
+    <FlexContainer
+      alignContent={null}
+      alignItems="center"
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent="space-between"
     >
       <div
-        className="ui hidden divider is-size-small"
-      />
-    </Divider>
-  </Divider>
-  <FlexContainer
-    alignContent={null}
-    alignItems={null}
-    flexDirection={null}
-    flexWrap="wrap"
-    justifyContent="center"
-  >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": null,
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": "wrap",
-          "height": "100%",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House0"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House1"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House2"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House3"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House4"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House5"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House6"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House7"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House8"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House9"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House10"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House11"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House12"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
-      >
-        <div />
-      </PropertySearchResult>
-    </div>
-  </FlexContainer>
-  <FlexContainer
-    alignContent={null}
-    alignItems="center"
-    flexDirection="column"
-    flexWrap="wrap"
-    justifyContent={null}
-  >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": "column",
-          "flexGrow": "1",
-          "flexWrap": "wrap",
-          "height": "100%",
-          "justifyContent": null,
-        }
-      }
-    >
-      <Pagination
-        isShowingPageNumbers={true}
-        onPageChange={[Function]}
-        startingPage={1}
-        totalPages={2}
-      >
-        <Pagination
-          aria-label="Pagination Navigation"
-          boundaryRange={1}
-          className="has-page-numbers"
-          defaultActivePage={1}
-          ellipsisItem="..."
-          firstItem={null}
-          lastItem={null}
-          nextItem={
-            <Button
-              as="button"
-              basic={true}
-              circular={true}
-              className="has-outline"
-              content={null}
-            >
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="chevron right"
-                path={null}
-                size={null}
-              />
-            </Button>
+        className="flex-container"
+        style={
+          Object {
+            "alignContent": null,
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": null,
+            "flexGrow": "1",
+            "flexWrap": null,
+            "height": "100%",
+            "justifyContent": "space-between",
           }
-          onPageChange={[Function]}
-          pageItem={Object {}}
-          prevItem={
-            <Button
-              as="button"
-              basic={true}
-              circular={true}
-              className="has-outline"
-              content={null}
-            >
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="chevron left"
-                path={null}
-                size={null}
-              />
-            </Button>
-          }
-          secondary={true}
-          siblingRange={0}
-          totalPages={2}
+        }
+      >
+        <Heading
+          className={null}
+          hasMargin={true}
+          isColorInverted={false}
+          size="small"
+          textAlign={null}
         >
-          <Menu
-            aria-label="Pagination Navigation"
-            className="has-page-numbers"
-            pagination={true}
-            role="navigation"
-            secondary={true}
+          <Header
+            as="h4"
+            className=""
+            inverted={false}
+            textAlign={null}
           >
-            <div
-              aria-label="Pagination Navigation"
-              className="ui pagination secondary has-page-numbers menu"
-              role="navigation"
+            <h4
+              className="ui header"
             >
-              <Button
-                active={false}
-                as="button"
-                basic={true}
-                circular={true}
-                className="has-outline"
-                content={null}
-                key="prevItem-1"
-                onClick={[Function]}
-                type="prevItem"
-                value={1}
-              >
-                <button
-                  className="ui basic circular button has-outline"
-                  onClick={[Function]}
-                  role="button"
-                  type="prevItem"
-                  value={1}
-                >
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="chevron left"
-                    path={null}
-                    size={null}
-                  >
-                    <i
-                      className="icon"
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </i>
-                  </Icon>
-                </button>
-              </Button>
-              <PaginationItem
-                active={true}
-                content={1}
-                key="pageItem-1"
-                onClick={[Function]}
-                type="pageItem"
-                value={1}
-              >
-                <MenuItem
-                  active={true}
-                  aria-current={true}
-                  content={1}
-                  disabled={false}
-                  onClick={[Function]}
-                  onKeyDown={[Function]}
-                  tabIndex={0}
-                  type="pageItem"
-                  value={1}
-                >
-                  <a
-                    aria-current={true}
-                    className="active item"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
-                    tabIndex={0}
-                    type="pageItem"
-                    value={1}
-                  >
-                    1
-                  </a>
-                </MenuItem>
-              </PaginationItem>
-              <PaginationItem
-                active={false}
-                content={2}
-                key="pageItem-2"
-                onClick={[Function]}
-                type="pageItem"
-                value={2}
-              >
-                <MenuItem
-                  active={false}
-                  aria-current={false}
-                  content={2}
-                  disabled={false}
-                  onClick={[Function]}
-                  onKeyDown={[Function]}
-                  tabIndex={0}
-                  type="pageItem"
-                  value={2}
-                >
-                  <a
-                    aria-current={false}
-                    className="item"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
-                    tabIndex={0}
-                    type="pageItem"
-                    value={2}
-                  >
-                    2
-                  </a>
-                </MenuItem>
-              </PaginationItem>
-              <Button
-                active={false}
-                as="button"
-                basic={true}
-                circular={true}
-                className="has-outline"
-                content={null}
-                key="nextItem-2"
-                onClick={[Function]}
-                type="nextItem"
-                value={2}
-              >
-                <button
-                  className="ui basic circular button has-outline"
-                  onClick={[Function]}
-                  role="button"
-                  type="nextItem"
-                  value={2}
+              13 results
+            </h4>
+          </Header>
+        </Heading>
+      </div>
+    </FlexContainer>
+    <Divider
+      className=""
+      hasLine={false}
+      size="small"
+    >
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
+      >
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
+    </Divider>
+    <div
+      className="result-list-container"
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection={null}
+        flexWrap="wrap"
+        justifyContent={null}
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": null,
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": "wrap",
+              "height": "100%",
+              "justifyContent": null,
+            }
+          }
+        >
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House0"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House1"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House2"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House3"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House4"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House5"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House6"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House7"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House8"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House9"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House10"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House11"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House12"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+        </div>
+      </FlexContainer>
+      <FlexContainer
+        alignContent={null}
+        alignItems="center"
+        flexDirection="column"
+        flexWrap="wrap"
+        justifyContent={null}
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "column",
+              "flexGrow": "1",
+              "flexWrap": "wrap",
+              "height": "100%",
+              "justifyContent": null,
+            }
+          }
+        >
+          <Pagination
+            isShowingPageNumbers={true}
+            onPageChange={[Function]}
+            startingPage={1}
+            totalPages={2}
+          >
+            <Pagination
+              aria-label="Pagination Navigation"
+              boundaryRange={1}
+              className="has-page-numbers"
+              defaultActivePage={1}
+              ellipsisItem="..."
+              firstItem={null}
+              lastItem={null}
+              nextItem={
+                <Button
+                  as="button"
+                  basic={true}
+                  circular={true}
+                  className="has-outline"
+                  content={null}
                 >
                   <Icon
                     color={null}
@@ -2114,38 +1991,229 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
                     name="chevron right"
                     path={null}
                     size={null}
+                  />
+                </Button>
+              }
+              onPageChange={[Function]}
+              pageItem={Object {}}
+              prevItem={
+                <Button
+                  as="button"
+                  basic={true}
+                  circular={true}
+                  className="has-outline"
+                  content={null}
+                >
+                  <Icon
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="chevron left"
+                    path={null}
+                    size={null}
+                  />
+                </Button>
+              }
+              secondary={true}
+              siblingRange={0}
+              totalPages={2}
+            >
+              <Menu
+                aria-label="Pagination Navigation"
+                className="has-page-numbers"
+                pagination={true}
+                role="navigation"
+                secondary={true}
+              >
+                <div
+                  aria-label="Pagination Navigation"
+                  className="ui pagination secondary has-page-numbers menu"
+                  role="navigation"
+                >
+                  <Button
+                    active={false}
+                    as="button"
+                    basic={true}
+                    circular={true}
+                    className="has-outline"
+                    content={null}
+                    key="prevItem-1"
+                    onClick={[Function]}
+                    type="prevItem"
+                    value={1}
                   >
-                    <i
-                      className="icon"
+                    <button
+                      className="ui basic circular button has-outline"
+                      onClick={[Function]}
+                      role="button"
+                      type="prevItem"
+                      value={1}
                     >
-                      <svg
-                        viewBox="0 0 24 24"
+                      <Icon
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="chevron left"
+                        path={null}
+                        size={null}
                       >
-                        <path
-                          d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </i>
-                  </Icon>
-                </button>
-              </Button>
-            </div>
-          </Menu>
-        </Pagination>
-      </Pagination>
-      <Paragraph
-        size="medium"
-        weight={null}
-      >
-        <p
-          className=""
-        >
-          Showing 1 - 12 of 13 places.
-        </p>
-      </Paragraph>
+                        <i
+                          className="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                    </button>
+                  </Button>
+                  <PaginationItem
+                    active={true}
+                    content={1}
+                    key="pageItem-1"
+                    onClick={[Function]}
+                    type="pageItem"
+                    value={1}
+                  >
+                    <MenuItem
+                      active={true}
+                      aria-current={true}
+                      content={1}
+                      disabled={false}
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                      tabIndex={0}
+                      type="pageItem"
+                      value={1}
+                    >
+                      <a
+                        aria-current={true}
+                        className="active item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        tabIndex={0}
+                        type="pageItem"
+                        value={1}
+                      >
+                        1
+                      </a>
+                    </MenuItem>
+                  </PaginationItem>
+                  <PaginationItem
+                    active={false}
+                    content={2}
+                    key="pageItem-2"
+                    onClick={[Function]}
+                    type="pageItem"
+                    value={2}
+                  >
+                    <MenuItem
+                      active={false}
+                      aria-current={false}
+                      content={2}
+                      disabled={false}
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                      tabIndex={0}
+                      type="pageItem"
+                      value={2}
+                    >
+                      <a
+                        aria-current={false}
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        tabIndex={0}
+                        type="pageItem"
+                        value={2}
+                      >
+                        2
+                      </a>
+                    </MenuItem>
+                  </PaginationItem>
+                  <Button
+                    active={false}
+                    as="button"
+                    basic={true}
+                    circular={true}
+                    className="has-outline"
+                    content={null}
+                    key="nextItem-2"
+                    onClick={[Function]}
+                    type="nextItem"
+                    value={2}
+                  >
+                    <button
+                      className="ui basic circular button has-outline"
+                      onClick={[Function]}
+                      role="button"
+                      type="nextItem"
+                      value={2}
+                    >
+                      <Icon
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="chevron right"
+                        path={null}
+                        size={null}
+                      >
+                        <i
+                          className="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                    </button>
+                  </Button>
+                </div>
+              </Menu>
+            </Pagination>
+          </Pagination>
+          <Paragraph
+            size="medium"
+            weight={null}
+          >
+            <p
+              className=""
+            >
+              Showing 1 - 12 of 13 places.
+            </p>
+          </Paragraph>
+        </div>
+      </FlexContainer>
     </div>
-  </FlexContainer>
+  </div>
 </PropertySearchResultList>
 `;
 
@@ -2170,9 +2238,9 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         "guestsNumber": 2,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "periodText": "per month",
-        "pricePerPeriod": "$28000",
-        "pricePerPeriodPrefix": "from",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -2194,7 +2262,7 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         "guestsNumber": 4,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "pricePerPeriod": "$1280",
+        "priceLabelPricePerPeriod": "$1280",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -2211,144 +2279,154 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
   renderShowingResultsText={[Function]}
   resultsCountText="My god I love Cliff Richard"
 >
-  <FlexContainer
-    alignContent={null}
-    alignItems="center"
-    flexDirection={null}
-    flexWrap={null}
-    justifyContent="space-between"
+  <div
+    className="property-search-result-list"
   >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": null,
-          "height": "100%",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="small"
-        textAlign={null}
-      >
-        <Header
-          as="h4"
-          className=""
-          inverted={false}
-          textAlign={null}
-        >
-          <h4
-            className="ui header"
-          >
-            2 My god I love Cliff Richard
-          </h4>
-        </Header>
-      </Heading>
-    </div>
-  </FlexContainer>
-  <Divider
-    className=""
-    hasLine={false}
-    size="small"
-  >
-    <Divider
-      className="is-size-small"
-      hidden={true}
-      section={false}
+    <FlexContainer
+      alignContent={null}
+      alignItems="center"
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent="space-between"
     >
       <div
-        className="ui hidden divider is-size-small"
-      />
-    </Divider>
-  </Divider>
-  <FlexContainer
-    alignContent={null}
-    alignItems={null}
-    flexDirection={null}
-    flexWrap="wrap"
-    justifyContent="center"
-  >
-    <div
-      className="flex-container"
-      style={
-        Object {
-          "alignContent": null,
-          "alignItems": null,
-          "display": "flex",
-          "flexDirection": null,
-          "flexGrow": "1",
-          "flexWrap": "wrap",
-          "height": "100%",
-          "justifyContent": "center",
+        className="flex-container"
+        style={
+          Object {
+            "alignContent": null,
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": null,
+            "flexGrow": "1",
+            "flexWrap": null,
+            "height": "100%",
+            "justifyContent": "space-between",
+          }
         }
-      }
+      >
+        <Heading
+          className={null}
+          hasMargin={true}
+          isColorInverted={false}
+          size="small"
+          textAlign={null}
+        >
+          <Header
+            as="h4"
+            className=""
+            inverted={false}
+            textAlign={null}
+          >
+            <h4
+              className="ui header"
+            >
+              2 My god I love Cliff Richard
+            </h4>
+          </Header>
+        </Heading>
+      </div>
+    </FlexContainer>
+    <Divider
+      className=""
+      hasLine={false}
+      size="small"
     >
-      <PropertySearchResult
-        bathsNumber={2}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={2}
-        bedsText="beds"
-        guestsNumber={2}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="The Cat House0"
-        periodText="per month"
-        pricePerPeriod="$28000"
-        pricePerPeriodPrefix="from"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="The Cat House"
-        propertyType="Bed and breakfast"
-        propertyUrl="/"
-        ratingNumber={4.7}
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
       >
-        <div />
-      </PropertySearchResult>
-      <PropertySearchResult
-        bathsNumber={1}
-        bathsText="baths"
-        bedroomsNumber={2}
-        bedroomsText="bedrooms"
-        bedsNumber={3}
-        bedsText="beds"
-        guestsNumber={4}
-        guestsText="guests"
-        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        key="Space Hub A-6751"
-        pricePerPeriod="$1280"
-        propertyAmenities={
-          Array [
-            "Pool",
-            "Wifi",
-            "Washer",
-            "Kitchen",
-          ]
-        }
-        propertyName="Space Hub A-675"
-        propertyType="Space Station"
-        propertyUrl="/"
-        ratingNumber={4.7}
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
+    </Divider>
+    <div
+      className="result-list-container"
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection={null}
+        flexWrap="wrap"
+        justifyContent={null}
       >
-        <div />
-      </PropertySearchResult>
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": null,
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": "wrap",
+              "height": "100%",
+              "justifyContent": null,
+            }
+          }
+        >
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House0"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={1}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={3}
+            bedsText="beds"
+            guestsNumber={4}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="Space Hub A-6751"
+            priceLabelPricePerPeriod="$1280"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="Space Hub A-675"
+            propertyType="Space Station"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+        </div>
+      </FlexContainer>
     </div>
-  </FlexContainer>
+  </div>
 </PropertySearchResultList>
 `;
