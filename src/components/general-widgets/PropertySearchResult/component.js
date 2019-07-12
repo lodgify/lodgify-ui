@@ -54,9 +54,9 @@ export class Component extends PureComponent {
       isActive,
       isShowingPlaceholder,
       placeholderImageUrl,
-      priceLabelperiodText,
-      priceLabelpricePerPeriod,
-      priceLabelpricePerPeriodPrefix,
+      priceLabelPeriodText,
+      priceLabelPricePerPeriod,
+      priceLabelPricePerPeriodPrefix,
       propertyAmenities,
       propertyName,
       propertyType,
@@ -89,9 +89,9 @@ export class Component extends PureComponent {
                 />
                 <Segment raised>
                   <PriceLabel
-                    periodText={priceLabelperiodText}
-                    pricePerPeriod={priceLabelpricePerPeriod}
-                    pricePerPeriodPrefix={priceLabelpricePerPeriodPrefix}
+                    periodText={priceLabelPeriodText}
+                    pricePerPeriod={priceLabelPricePerPeriod}
+                    pricePerPeriodPrefix={priceLabelPricePerPeriodPrefix}
                   />
                 </Segment>
               </FlexContainer>
@@ -146,9 +146,9 @@ Component.defaultProps = {
   name: undefined,
   onChange: Function.prototype,
   placeholderImageUrl: undefined,
-  priceLabelperiodText: '',
-  priceLabelpricePerPeriod: '',
-  priceLabelpricePerPeriodPrefix: '',
+  priceLabelPeriodText: '',
+  priceLabelPricePerPeriod: '',
+  priceLabelPricePerPeriodPrefix: '',
   propertyAmenities: [],
   propertyUrlTarget: '_self',
 };
@@ -194,11 +194,11 @@ Component.propTypes = {
   /** URL pointing to the placeholder image to render. */
   placeholderImageUrl: PropTypes.string,
   /** The text describing the pricing period. */
-  priceLabelperiodText: PropTypes.string,
+  priceLabelPeriodText: PropTypes.string,
   /** The price per period of the property, with currency symbol. */
-  priceLabelpricePerPeriod: PropTypes.string,
+  priceLabelPricePerPeriod: PropTypes.string,
   /** The text prefix to display along with the price per period. */
-  priceLabelpricePerPeriodPrefix: PropTypes.string,
+  priceLabelPricePerPeriodPrefix: PropTypes.string,
   /** The amenities to display as a text*/
   propertyAmenities: PropTypes.arrayOf(PropTypes.string),
   /** The name of the property. */

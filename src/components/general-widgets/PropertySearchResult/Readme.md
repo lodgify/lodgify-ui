@@ -1,5 +1,5 @@
 ```jsx
-const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen']; 
+const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 <PropertySearchResult
   bathsNumber={2}
@@ -11,9 +11,9 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
   guestsNumber={2}
   guestsText="guests"
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-  priceLabelperiodText="per month"
-  priceLabelpricePerPeriod="$280"
-  priceLabelpricePerPeriodPrefix="from" 
+  priceLabelPeriodText="per month"
+  priceLabelPricePerPeriod="$280"
+  priceLabelPricePerPeriodPrefix="from"
   propertyAmenities={amenities}
   propertyName="The Cat House"
   propertyType="Bed and breakfast"
@@ -26,7 +26,7 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 #### Price without period text
 ```jsx
-const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen']; 
+const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 <PropertySearchResult
   bathsNumber={2}
@@ -38,7 +38,7 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
   guestsNumber={2}
   guestsText="guests"
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-  priceLabelpricePerPeriod="$280"
+  priceLabelPricePerPeriod="$280"
   propertyAmenities={amenities}
   propertyName="The Cat House"
   propertyType="Bed and breakfast"
@@ -51,7 +51,7 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 #### Active
 ```jsx
-const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen']; 
+const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 <PropertySearchResult
   isActive
@@ -64,7 +64,7 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
   guestsNumber={2}
   guestsText="guests"
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-  priceLabelpricePerPeriod="$280"
+  priceLabelPricePerPeriod="$280"
   propertyAmenities={amenities}
   propertyName="The Cat House"
   propertyType="Bed and breakfast"
@@ -81,7 +81,7 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
   guestsNumber={0}
   imageUrl=""
   isShowingPlaceholder
-  priceLabelpricePerPeriod=""
+  priceLabelPricePerPeriod=""
   propertyName=""
   propertyType=""
   propertyUrl=""

@@ -31,9 +31,9 @@ exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should ren
           isPointing={false}
           onChange={[Function]}
           onClick={[Function]}
-          periodText=""
-          pricePerPeriod=""
-          pricePerPeriodPrefix=""
+          periodText="some priceLabelPeriodText"
+          pricePerPeriod="some priceLabelPricePerPeriod"
+          pricePerPeriodPrefix="some priceLabelPricePerPeriodPrefix"
         />
       </Segment>
     </FlexContainer>
@@ -152,9 +152,9 @@ exports[`<PropertySearchResult /> should render the right structure 1`] = `
           isPointing={false}
           onChange={[Function]}
           onClick={[Function]}
-          periodText=""
-          pricePerPeriod=""
-          pricePerPeriodPrefix=""
+          periodText="some priceLabelPeriodText"
+          pricePerPeriod="some priceLabelPricePerPeriod"
+          pricePerPeriodPrefix="some priceLabelPricePerPeriodPrefix"
         />
       </Segment>
     </FlexContainer>
