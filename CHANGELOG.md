@@ -1,3 +1,16 @@
+# [1.222.0](https://github.com/lodgify/lodgify-ui/compare/v1.221.0...v1.222.0) (2019-07-12)
+
+
+### Bug Fixes
+
+* **PropertySearchResult:** fix prop naming ([226d963](https://github.com/lodgify/lodgify-ui/commit/226d963))
+
+
+### Features
+
+* **PropertySearchResultList:** add markup to support scrolling with tests and examples ([63eb80a](https://github.com/lodgify/lodgify-ui/commit/63eb80a))
+* **PropertySearchResultList:** add styles for scrolling ([b3f15cf](https://github.com/lodgify/lodgify-ui/commit/b3f15cf))
+
 # [1.221.0](https://github.com/lodgify/lodgify-ui/compare/v1.220.0...v1.221.0) (2019-07-11)
 
 
