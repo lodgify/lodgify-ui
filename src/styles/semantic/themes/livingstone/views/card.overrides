@@ -200,7 +200,8 @@
 
         > .meta,
         > .header .ui.header,
-        > .description {
+        > .description,
+        > .description p {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
