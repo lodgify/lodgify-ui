@@ -68,16 +68,14 @@ exports[`<Pictures /> should render the correct structure 1`] = `
 >
   <Grid
     areColumnsCentered={false}
-    columns={3}
     isStackable={false}
   >
     <Grid
       centered={false}
-      columns={3}
       stackable={false}
     >
       <div
-        className="ui three column grid"
+        className="ui grid"
       >
         <GridColumn
           verticalAlignContent="top"
@@ -123,16 +121,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
               className="left aligned row"
             >
               <GridColumn
+                computer={4}
                 key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max0"
+                mobile={6}
+                tablet={4}
                 verticalAlignContent="top"
                 width={null}
               >
                 <GridColumn
+                  computer={4}
+                  mobile={6}
+                  tablet={4}
                   verticalAlign="top"
                   width={null}
                 >
                   <div
-                    className="top aligned column"
+                    className="top aligned four wide computer six wide mobile four wide tablet column"
                   >
                     <ShowOn
                       computer={true}
@@ -150,6 +154,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Entrance"
                           isCircular={false}
                           isSquare={false}
                           label="Entrance"
@@ -162,6 +167,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               hasRoundedCorners={false}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
                               isSquare={false}
                             >
@@ -171,8 +177,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
                                     "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -181,7 +189,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -196,7 +203,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
                                   isSquare={false}
                                   label={null}
@@ -204,7 +211,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image"
+                                    className="responsive-image is-fluid"
                                   >
                                     <Image
                                       alt="Image Widget"
@@ -274,20 +281,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Entrance"
                           isCircular={false}
-                          isSquare={true}
+                          isSquare={false}
                           label="Entrance"
                           size="huge"
                         >
                           <div
-                            className="ui thumbnail huge is-square"
+                            className="ui thumbnail huge"
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
-                              isSquare={true}
+                              isSquare={false}
                             >
                               <LazyLoader
                                 componentProps={
@@ -295,8 +304,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
-                                    "isSquare": true,
+                                    "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -305,7 +316,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -320,15 +330,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
-                                  isSquare={true}
+                                  isSquare={false}
                                   label={null}
                                   sizes={null}
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image is-rounded"
+                                    className="responsive-image is-fluid is-rounded"
                                   >
                                     <Image
                                       alt="Image Widget"
@@ -401,16 +411,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                 </GridColumn>
               </GridColumn>
               <GridColumn
+                computer={4}
                 key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max1"
+                mobile={6}
+                tablet={4}
                 verticalAlignContent="top"
                 width={null}
               >
                 <GridColumn
+                  computer={4}
+                  mobile={6}
+                  tablet={4}
                   verticalAlign="top"
                   width={null}
                 >
                   <div
-                    className="top aligned column"
+                    className="top aligned four wide computer six wide mobile four wide tablet column"
                   >
                     <ShowOn
                       computer={true}
@@ -428,6 +444,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Kitchen"
                           isCircular={false}
                           isSquare={false}
                           label="Kitchen"
@@ -440,6 +457,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               hasRoundedCorners={false}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
                               isSquare={false}
                             >
@@ -449,8 +467,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
                                     "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -459,7 +479,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -474,7 +493,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
                                   isSquare={false}
                                   label={null}
@@ -482,7 +501,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image"
+                                    className="responsive-image is-fluid"
                                   >
                                     <Image
                                       alt="Image Widget"
@@ -552,20 +571,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Kitchen"
                           isCircular={false}
-                          isSquare={true}
+                          isSquare={false}
                           label="Kitchen"
                           size="huge"
                         >
                           <div
-                            className="ui thumbnail huge is-square"
+                            className="ui thumbnail huge"
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
-                              isSquare={true}
+                              isSquare={false}
                             >
                               <LazyLoader
                                 componentProps={
@@ -573,8 +594,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
-                                    "isSquare": true,
+                                    "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -583,7 +606,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -598,15 +620,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
-                                  isSquare={true}
+                                  isSquare={false}
                                   label={null}
                                   sizes={null}
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image is-rounded"
+                                    className="responsive-image is-fluid is-rounded"
                                   >
                                     <Image
                                       alt="Image Widget"
@@ -679,16 +701,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                 </GridColumn>
               </GridColumn>
               <GridColumn
+                computer={4}
                 key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max2"
+                mobile={6}
+                tablet={4}
                 verticalAlignContent="top"
                 width={null}
               >
                 <GridColumn
+                  computer={4}
+                  mobile={6}
+                  tablet={4}
                   verticalAlign="top"
                   width={null}
                 >
                   <div
-                    className="top aligned column"
+                    className="top aligned four wide computer six wide mobile four wide tablet column"
                   >
                     <ShowOn
                       computer={true}
@@ -706,6 +734,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Living room"
                           isCircular={false}
                           isSquare={false}
                           label="Living room"
@@ -718,6 +747,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               hasRoundedCorners={false}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
                               isSquare={false}
                             >
@@ -727,8 +757,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
                                     "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -737,7 +769,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -752,7 +783,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
                                   isSquare={false}
                                   label={null}
@@ -760,7 +791,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image"
+                                    className="responsive-image is-fluid"
                                   >
                                     <Image
                                       alt="Image Widget"
@@ -830,20 +861,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Living room"
                           isCircular={false}
-                          isSquare={true}
+                          isSquare={false}
                           label="Living room"
                           size="huge"
                         >
                           <div
-                            className="ui thumbnail huge is-square"
+                            className="ui thumbnail huge"
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
-                              isSquare={true}
+                              isSquare={false}
                             >
                               <LazyLoader
                                 componentProps={
@@ -851,8 +884,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
-                                    "isSquare": true,
+                                    "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -861,7 +896,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -876,15 +910,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
-                                  isSquare={true}
+                                  isSquare={false}
                                   label={null}
                                   sizes={null}
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image is-rounded"
+                                    className="responsive-image is-fluid is-rounded"
                                   >
                                     <Image
                                       alt="Image Widget"
@@ -957,16 +991,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                 </GridColumn>
               </GridColumn>
               <GridColumn
+                computer={4}
                 key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max3"
+                mobile={6}
+                tablet={4}
                 verticalAlignContent="top"
                 width={null}
               >
                 <GridColumn
+                  computer={4}
+                  mobile={6}
+                  tablet={4}
                   verticalAlign="top"
                   width={null}
                 >
                   <div
-                    className="top aligned column"
+                    className="top aligned four wide computer six wide mobile four wide tablet column"
                   >
                     <ShowOn
                       computer={true}
@@ -984,6 +1024,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Studio"
                           isCircular={false}
                           isSquare={false}
                           label="Studio"
@@ -996,6 +1037,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               hasRoundedCorners={false}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
                               isSquare={false}
                             >
@@ -1005,8 +1047,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
                                     "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -1015,7 +1059,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -1030,7 +1073,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
                                   isSquare={false}
                                   label={null}
@@ -1038,7 +1081,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image"
+                                    className="responsive-image is-fluid"
                                   >
                                     <Image
                                       alt="Image Widget"
@@ -1108,20 +1151,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Studio"
                           isCircular={false}
-                          isSquare={true}
+                          isSquare={false}
                           label="Studio"
                           size="huge"
                         >
                           <div
-                            className="ui thumbnail huge is-square"
+                            className="ui thumbnail huge"
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
-                              isSquare={true}
+                              isSquare={false}
                             >
                               <LazyLoader
                                 componentProps={
@@ -1129,8 +1174,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
-                                    "isSquare": true,
+                                    "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -1139,7 +1186,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -1154,15 +1200,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
-                                  isSquare={true}
+                                  isSquare={false}
                                   label={null}
                                   sizes={null}
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image is-rounded"
+                                    className="responsive-image is-fluid is-rounded"
                                   >
                                     <Image
                                       alt="Image Widget"
@@ -1235,16 +1281,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                 </GridColumn>
               </GridColumn>
               <GridColumn
+                computer={4}
                 key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max4"
+                mobile={6}
+                tablet={4}
                 verticalAlignContent="top"
                 width={null}
               >
                 <GridColumn
+                  computer={4}
+                  mobile={6}
+                  tablet={4}
                   verticalAlign="top"
                   width={null}
                 >
                   <div
-                    className="top aligned column"
+                    className="top aligned four wide computer six wide mobile four wide tablet column"
                   >
                     <ShowOn
                       computer={true}
@@ -1262,6 +1314,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={false}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Garden room"
                           isCircular={false}
                           isSquare={false}
                           label="Garden room"
@@ -1274,6 +1327,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               hasRoundedCorners={false}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
                               isSquare={false}
                             >
@@ -1283,8 +1337,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
                                     "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -1293,7 +1349,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -1308,7 +1363,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
                                   isSquare={false}
                                   label={null}
@@ -1316,7 +1371,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image"
+                                    className="responsive-image is-fluid"
                                   >
                                     <Image
                                       alt="Image Widget"
@@ -1386,20 +1441,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           hasMargin={false}
                           hasRoundedCorners={true}
                           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
+                          imageUrlAlternativeText="Garden room"
                           isCircular={false}
-                          isSquare={true}
+                          isSquare={false}
                           label="Garden room"
                           size="huge"
                         >
                           <div
-                            className="ui thumbnail huge is-square"
+                            className="ui thumbnail huge"
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
+                              isFluid={true}
                               isLazyLoaded={true}
-                              isSquare={true}
+                              isSquare={false}
                             >
                               <LazyLoader
                                 componentProps={
@@ -1407,8 +1464,10 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
+                                    "isFluid": true,
                                     "isLazyLoaded": true,
-                                    "isSquare": true,
+                                    "isSquare": false,
+                                    "placeholderImageUrl": undefined,
                                     "sizes": undefined,
                                     "srcSet": undefined,
                                   }
@@ -1417,7 +1476,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 lazyProps={
                                   Object {
                                     "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "placeholderImageUrl": undefined,
                                   }
                                 }
                               >
@@ -1432,15 +1490,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                   imageWidth={null}
                                   isAvatar={false}
                                   isCircular={false}
-                                  isFluid={false}
+                                  isFluid={true}
                                   isLazyLoaded={true}
-                                  isSquare={true}
+                                  isSquare={false}
                                   label={null}
                                   sizes={null}
                                   srcSet={null}
                                 >
                                   <figure
-                                    className="responsive-image is-rounded"
+                                    className="responsive-image is-fluid is-rounded"
                                   >
                                     <Image
                                       alt="Image Widget"
