@@ -20,6 +20,7 @@ export const Component = ({
   isCircular,
   isSquare,
   label,
+  placeholderImageUrl,
   size,
 }) => (
   <div
@@ -34,7 +35,10 @@ export const Component = ({
       hasRoundedCorners={hasRoundedCorners}
       imageUrl={imageUrl}
       isCircular={isCircular}
+      isFluid={!isSquare}
+      isLazyLoaded
       isSquare={isSquare}
+      placeholderImageUrl={placeholderImageUrl}
       sizes={imageSizes}
       srcSet={imageSrcSet}
     />
@@ -54,6 +58,7 @@ Component.defaultProps = {
   isCircular: false,
   isSquare: false,
   label: null,
+  placeholderImageUrl: undefined,
   size: null,
 };
 
@@ -82,6 +87,8 @@ Component.propTypes = {
   isSquare: PropTypes.bool,
   /** A visible label for the thumbnail */
   label: PropTypes.string,
+  /** URL pointing to the placeholder image to render. */
+  placeholderImageUrl: PropTypes.string,
   /** The size of the thumbnail */
   size: PropTypes.oneOf(['small', 'medium', 'large', 'huge']),
 };
