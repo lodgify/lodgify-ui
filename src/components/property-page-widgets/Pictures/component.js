@@ -28,33 +28,24 @@ export const Component = ({
   ratingNumber,
   thumbnailImages,
 }) => (
-  <Grid columns={3}>
+  <Grid>
     <GridColumn width={12}>
       <Heading>{headingText}</Heading>
     </GridColumn>
     <GridRow>
       {getFirstNItems(numberOfThumbnails, thumbnailImages).map(
-        ({ imageUrl, imageSizes, imageSrcSet, label }, index) => (
-          <GridColumn key={buildKeyFromStrings(imageUrl, index)}>
+        (imageProps, index) => (
+          <GridColumn
+            computer={4}
+            key={buildKeyFromStrings(imageProps.imageUrl, index)}
+            mobile={6}
+            tablet={4}
+          >
             <ShowOn computer parent="div" tablet widescreen>
-              <Thumbnail
-                imageSizes={imageSizes}
-                imageSrcSet={imageSrcSet}
-                imageUrl={imageUrl}
-                label={label}
-                size="huge"
-              />
+              <Thumbnail {...imageProps} size="huge" />
             </ShowOn>
             <ShowOn mobile parent="div">
-              <Thumbnail
-                hasRoundedCorners
-                imageSizes={imageSizes}
-                imageSrcSet={imageSrcSet}
-                imageUrl={imageUrl}
-                isSquare
-                label={label}
-                size="huge"
-              />
+              <Thumbnail {...imageProps} hasRoundedCorners size="huge" />
             </ShowOn>
             <Divider />
           </GridColumn>
