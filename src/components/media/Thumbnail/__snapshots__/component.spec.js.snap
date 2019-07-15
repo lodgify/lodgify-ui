@@ -18,6 +18,7 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
       hasRoundedCorners={false}
       imageUrl="www.⚡️.net"
       isCircular={false}
+      isFluid={true}
       isLazyLoaded={true}
       isSquare={false}
     >
@@ -27,8 +28,10 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
             "alternativeText": undefined,
             "hasRoundedCorners": false,
             "isCircular": false,
+            "isFluid": true,
             "isLazyLoaded": true,
             "isSquare": false,
+            "placeholderImageUrl": undefined,
             "sizes": undefined,
             "srcSet": undefined,
           }
@@ -37,7 +40,6 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
-            "placeholderImageUrl": undefined,
           }
         }
       >
@@ -52,7 +54,7 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
           imageWidth={null}
           isAvatar={false}
           isCircular={false}
-          isFluid={false}
+          isFluid={true}
           isLazyLoaded={true}
           isSquare={false}
           label={null}
@@ -60,7 +62,7 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
           srcSet={null}
         >
           <figure
-            className="responsive-image"
+            className="responsive-image is-fluid"
           >
             <Image
               alt="Image Widget"
@@ -122,6 +124,7 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
       hasRoundedCorners={false}
       imageUrl="www.⚡️.net"
       isCircular={true}
+      isFluid={true}
       isLazyLoaded={true}
       isSquare={false}
     >
@@ -131,8 +134,10 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
             "alternativeText": undefined,
             "hasRoundedCorners": false,
             "isCircular": true,
+            "isFluid": true,
             "isLazyLoaded": true,
             "isSquare": false,
+            "placeholderImageUrl": undefined,
             "sizes": undefined,
             "srcSet": undefined,
           }
@@ -141,7 +146,6 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
-            "placeholderImageUrl": undefined,
           }
         }
       >
@@ -156,7 +160,7 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
           imageWidth={null}
           isAvatar={false}
           isCircular={true}
-          isFluid={false}
+          isFluid={true}
           isLazyLoaded={true}
           isSquare={false}
           label={null}
@@ -164,7 +168,7 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
           srcSet={null}
         >
           <figure
-            className="responsive-image is-circular"
+            className="responsive-image is-fluid is-circular"
           >
             <Image
               alt="Image Widget"
@@ -226,6 +230,7 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
       hasRoundedCorners={false}
       imageUrl="www.⚡️.net"
       isCircular={false}
+      isFluid={false}
       isLazyLoaded={true}
       isSquare={true}
     >
@@ -235,8 +240,10 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
             "alternativeText": undefined,
             "hasRoundedCorners": false,
             "isCircular": false,
+            "isFluid": false,
             "isLazyLoaded": true,
             "isSquare": true,
+            "placeholderImageUrl": undefined,
             "sizes": undefined,
             "srcSet": undefined,
           }
@@ -245,7 +252,6 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
-            "placeholderImageUrl": undefined,
           }
         }
       >
@@ -330,6 +336,7 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
       hasRoundedCorners={false}
       imageUrl="www.⚡️.net"
       isCircular={false}
+      isFluid={true}
       isLazyLoaded={true}
       isSquare={false}
     >
@@ -339,8 +346,10 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
             "alternativeText": undefined,
             "hasRoundedCorners": false,
             "isCircular": false,
+            "isFluid": true,
             "isLazyLoaded": true,
             "isSquare": false,
+            "placeholderImageUrl": undefined,
             "sizes": undefined,
             "srcSet": undefined,
           }
@@ -349,7 +358,6 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
-            "placeholderImageUrl": undefined,
           }
         }
       >
@@ -364,7 +372,7 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
           imageWidth={null}
           isAvatar={false}
           isCircular={false}
-          isFluid={false}
+          isFluid={true}
           isLazyLoaded={true}
           isSquare={false}
           label={null}
@@ -372,7 +380,7 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
           srcSet={null}
         >
           <figure
-            className="responsive-image"
+            className="responsive-image is-fluid"
           >
             <Image
               alt="Image Widget"
