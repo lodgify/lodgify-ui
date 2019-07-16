@@ -1,3 +1,22 @@
+# [1.227.0](https://github.com/lodgify/lodgify-ui/compare/v1.226.0...v1.227.0) (2019-07-16)
+
+
+### Bug Fixes
+
+* **Form:** links take theme action color ([1c54f72](https://github.com/lodgify/lodgify-ui/commit/1c54f72))
+* **LazyLoader:** check if lazy child is rendered in DOM using offsetParent ([11aa2a1](https://github.com/lodgify/lodgify-ui/commit/11aa2a1))
+* **ResponsiveImage:** remove placeholderImageUrl from lazyProps ([d6717d8](https://github.com/lodgify/lodgify-ui/commit/d6717d8))
+
+
+### Features
+
+* **HomepageHero:** expose search bar string props ([e898e32](https://github.com/lodgify/lodgify-ui/commit/e898e32))
+* **Pictures:** pass placeholderImageUrl through to Thumbnail ([1750314](https://github.com/lodgify/lodgify-ui/commit/1750314))
+* **PropertyPageSearchBar:** expose search bar string props ([124c905](https://github.com/lodgify/lodgify-ui/commit/124c905))
+* **ResponsiveImage:** add srcSet to lazy props and clean up markup ([ab01004](https://github.com/lodgify/lodgify-ui/commit/ab01004))
+* **SearchBar:** expose search bar string props ([8b6d167](https://github.com/lodgify/lodgify-ui/commit/8b6d167))
+* **Thumbnail:** lazy load thumbnail images ([860c6b9](https://github.com/lodgify/lodgify-ui/commit/860c6b9))
+
 # [1.226.0](https://github.com/lodgify/lodgify-ui/compare/v1.225.0...v1.226.0) (2019-07-16)
 
 
