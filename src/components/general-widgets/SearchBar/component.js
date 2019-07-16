@@ -10,6 +10,7 @@ import { ShowOn } from 'layout/ShowOn';
 import { CHECK_OUR_AVAILABILITY, SEARCH } from 'utils/default-strings';
 import { ICON_NAMES } from 'elements/Icon';
 import { Button } from 'elements/Button';
+import { CHECK_IN, CHECK_OUT, GUESTS, LOCATION } from 'utils/default-strings';
 
 import { getInitialValue } from './utils/getInitialValue';
 import { getWillLocationDropdownOpenAbove } from './utils/getWillLocationDropdownOpenAbove';
@@ -116,15 +117,19 @@ Component.displayName = 'SearchBar';
 Component.defaultProps = {
   className: null,
   dateRangePickerLocaleCode: undefined,
+  datesCheckInLabel: CHECK_IN,
+  datesCheckOutLabel: CHECK_OUT,
   datesInputFocusedInput: undefined,
   datesInputOnFocusChange: Function.prototype,
   datesInputValue: undefined,
   getIsDayBlocked: Function.prototype,
+  guestsInputLabel: GUESTS,
   guestsInputValue: undefined,
   isDisplayedAsModal: false,
   isFixed: false,
   isModalOpen: undefined,
   isStackable: false,
+  locationInputLabel: LOCATION,
   locationInputValue: undefined,
   locationOptions: null,
   modalHeadingText: CHECK_OUR_AVAILABILITY,
@@ -151,6 +156,12 @@ Component.propTypes = {
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the date range picker. */
   // eslint-disable-next-line react/no-unused-prop-types
   dateRangePickerLocaleCode: PropTypes.string,
+  /** The label that goes inside the date range pickers check in input when there is no value selected. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  datesCheckInLabel: PropTypes.string,
+  /** The label that goes inside the date range pickers check out input when there is not value selected. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  datesCheckOutLabel: PropTypes.string,
   /** The field of the dates input which is currently focused. Used when consuming `SearchBar` as a controlled component. */
   // eslint-disable-next-line react/no-unused-prop-types
   datesInputFocusedInput: PropTypes.oneOf([null, 'startDate', 'endDate']),
@@ -172,6 +183,9 @@ Component.propTypes = {
    */
   // eslint-disable-next-line react/no-unused-prop-types
   getIsDayBlocked: PropTypes.func,
+  /** The label that goes inside the guests input when there is no value. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  guestsInputLabel: PropTypes.string,
   /** The value for the guests input. Used when consuming `SearchBar` as a controlled component. */
   guestsInputValue: PropTypes.number,
   /** Is the Search Bar displayed in a modal*/
@@ -183,6 +197,9 @@ Component.propTypes = {
   isModalOpen: PropTypes.bool,
   /** Do the inputs stack one on top of the other on smaller devices. */
   isStackable: PropTypes.bool,
+  /** The label that goes inside the location dropdown input when there is no option selected. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  locationInputLabel: PropTypes.string,
   /** The value for the location input. Used when consuming `SearchBar` as a controlled component. */
   locationInputValue: PropTypes.string,
   /** The options which the user can select in the location field. */
