@@ -68,11 +68,15 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       >
         <SearchBar
           className={null}
+          datesCheckInLabel="Check in"
+          datesCheckOutLabel="Check out"
           datesInputOnFocusChange={[Function]}
           getIsDayBlocked={[Function]}
+          guestsInputLabel="Guests"
           isDisplayedAsModal={false}
           isFixed={true}
           isStackable={false}
+          locationInputLabel="Location"
           locationOptions={null}
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
@@ -249,30 +253,30 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                           className="input-container dates-input-container"
                         >
                           <WithResponsive(DateRangePicker)
-                            endDatePlaceholderText="Check-out"
+                            endDatePlaceholderText="Check out"
                             getIsDayBlocked={[Function]}
                             name="dates"
                             onChange={[Function]}
                             onFocusChange={[Function]}
-                            startDatePlaceholderText="Check-in"
+                            startDatePlaceholderText="Check in"
                             willOpenAbove={true}
                           >
                             <Responsive
                               as={[Function]}
-                              endDatePlaceholderText="Check-out"
+                              endDatePlaceholderText="Check out"
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               name="dates"
                               onChange={[Function]}
                               onFocusChange={[Function]}
                               onUpdate={[Function]}
-                              startDatePlaceholderText="Check-in"
+                              startDatePlaceholderText="Check in"
                               willOpenAbove={true}
                               windowInnerWidth={1024}
                             >
                               <DateRangePicker
                                 displayFormat="DD/MM/YYYY"
-                                endDatePlaceholderText="Check-out"
+                                endDatePlaceholderText="Check out"
                                 error={false}
                                 getIsDayBlocked={[Function]}
                                 isUserOnMobile={false}
@@ -282,7 +286,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onFocusChange={[Function]}
-                                startDatePlaceholderText="Check-in"
+                                startDatePlaceholderText="Check in"
                                 willOpenAbove={true}
                                 windowInnerWidth={1024}
                               >
@@ -346,7 +350,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         daySize={52}
                                         displayFormat="DD/MM/YYYY"
                                         endDate={null}
-                                        endDatePlaceholderText="Check-out"
+                                        endDatePlaceholderText="Check out"
                                         focusedInput={null}
                                         hideKeyboardShortcutsPanel={true}
                                         isDayBlocked={[Function]}
@@ -387,7 +391,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         onFocusChange={[Function]}
                                         openDirection="up"
                                         startDate={null}
-                                        startDatePlaceholderText="Check-in"
+                                        startDatePlaceholderText="Check in"
                                         withPortal={true}
                                       >
                                         <div />
@@ -761,11 +765,15 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
       >
         <SearchBar
           className={null}
+          datesCheckInLabel="Check in"
+          datesCheckOutLabel="Check out"
           datesInputOnFocusChange={[Function]}
           getIsDayBlocked={[Function]}
+          guestsInputLabel="Guests"
           isDisplayedAsModal={false}
           isFixed={true}
           isStackable={false}
+          locationInputLabel="Location"
           locationOptions={null}
           modalHeadingText="Check our availability"
           modalSummaryElement={
@@ -888,30 +896,30 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                           className="input-container dates-input-container"
                         >
                           <WithResponsive(DateRangePicker)
-                            endDatePlaceholderText="Check-out"
+                            endDatePlaceholderText="Check out"
                             getIsDayBlocked={[Function]}
                             name="dates"
                             onChange={[Function]}
                             onFocusChange={[Function]}
-                            startDatePlaceholderText="Check-in"
+                            startDatePlaceholderText="Check in"
                             willOpenAbove={true}
                           >
                             <Responsive
                               as={[Function]}
-                              endDatePlaceholderText="Check-out"
+                              endDatePlaceholderText="Check out"
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               name="dates"
                               onChange={[Function]}
                               onFocusChange={[Function]}
                               onUpdate={[Function]}
-                              startDatePlaceholderText="Check-in"
+                              startDatePlaceholderText="Check in"
                               willOpenAbove={true}
                               windowInnerWidth={1024}
                             >
                               <DateRangePicker
                                 displayFormat="DD/MM/YYYY"
-                                endDatePlaceholderText="Check-out"
+                                endDatePlaceholderText="Check out"
                                 error={false}
                                 getIsDayBlocked={[Function]}
                                 isUserOnMobile={false}
@@ -921,7 +929,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onFocusChange={[Function]}
-                                startDatePlaceholderText="Check-in"
+                                startDatePlaceholderText="Check in"
                                 willOpenAbove={true}
                                 windowInnerWidth={1024}
                               >
@@ -985,7 +993,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         daySize={52}
                                         displayFormat="DD/MM/YYYY"
                                         endDate={null}
-                                        endDatePlaceholderText="Check-out"
+                                        endDatePlaceholderText="Check out"
                                         focusedInput={null}
                                         hideKeyboardShortcutsPanel={true}
                                         isDayBlocked={[Function]}
@@ -1026,7 +1034,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         onFocusChange={[Function]}
                                         openDirection="up"
                                         startDate={null}
-                                        startDatePlaceholderText="Check-in"
+                                        startDatePlaceholderText="Check in"
                                         withPortal={true}
                                       >
                                         <div />
@@ -1459,11 +1467,15 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       >
         <SearchBar
           className={null}
+          datesCheckInLabel="Check in"
+          datesCheckOutLabel="Check out"
           datesInputOnFocusChange={[Function]}
           getIsDayBlocked={[Function]}
+          guestsInputLabel="Guests"
           isDisplayedAsModal={false}
           isFixed={true}
           isStackable={false}
+          locationInputLabel="Location"
           locationOptions={null}
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
@@ -1799,30 +1811,30 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                           className="input-container dates-input-container"
                         >
                           <WithResponsive(DateRangePicker)
-                            endDatePlaceholderText="Check-out"
+                            endDatePlaceholderText="Check out"
                             getIsDayBlocked={[Function]}
                             name="dates"
                             onChange={[Function]}
                             onFocusChange={[Function]}
-                            startDatePlaceholderText="Check-in"
+                            startDatePlaceholderText="Check in"
                             willOpenAbove={true}
                           >
                             <Responsive
                               as={[Function]}
-                              endDatePlaceholderText="Check-out"
+                              endDatePlaceholderText="Check out"
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               name="dates"
                               onChange={[Function]}
                               onFocusChange={[Function]}
                               onUpdate={[Function]}
-                              startDatePlaceholderText="Check-in"
+                              startDatePlaceholderText="Check in"
                               willOpenAbove={true}
                               windowInnerWidth={1024}
                             >
                               <DateRangePicker
                                 displayFormat="DD/MM/YYYY"
-                                endDatePlaceholderText="Check-out"
+                                endDatePlaceholderText="Check out"
                                 error={false}
                                 getIsDayBlocked={[Function]}
                                 isUserOnMobile={false}
@@ -1832,7 +1844,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onFocusChange={[Function]}
-                                startDatePlaceholderText="Check-in"
+                                startDatePlaceholderText="Check in"
                                 willOpenAbove={true}
                                 windowInnerWidth={1024}
                               >
@@ -1896,7 +1908,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         daySize={52}
                                         displayFormat="DD/MM/YYYY"
                                         endDate={null}
-                                        endDatePlaceholderText="Check-out"
+                                        endDatePlaceholderText="Check out"
                                         focusedInput={null}
                                         hideKeyboardShortcutsPanel={true}
                                         isDayBlocked={[Function]}
@@ -1937,7 +1949,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         onFocusChange={[Function]}
                                         openDirection="up"
                                         startDate={null}
-                                        startDatePlaceholderText="Check-in"
+                                        startDatePlaceholderText="Check in"
                                         withPortal={true}
                                       >
                                         <div />
@@ -2311,11 +2323,15 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
       >
         <SearchBar
           className={null}
+          datesCheckInLabel="Check in"
+          datesCheckOutLabel="Check out"
           datesInputOnFocusChange={[Function]}
           getIsDayBlocked={[Function]}
+          guestsInputLabel="Guests"
           isDisplayedAsModal={false}
           isFixed={true}
           isStackable={false}
+          locationInputLabel="Location"
           locationOptions={null}
           modalHeadingText="Check our availability"
           modalSummaryElement={
@@ -2597,30 +2613,30 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                           className="input-container dates-input-container"
                         >
                           <WithResponsive(DateRangePicker)
-                            endDatePlaceholderText="Check-out"
+                            endDatePlaceholderText="Check out"
                             getIsDayBlocked={[Function]}
                             name="dates"
                             onChange={[Function]}
                             onFocusChange={[Function]}
-                            startDatePlaceholderText="Check-in"
+                            startDatePlaceholderText="Check in"
                             willOpenAbove={true}
                           >
                             <Responsive
                               as={[Function]}
-                              endDatePlaceholderText="Check-out"
+                              endDatePlaceholderText="Check out"
                               getIsDayBlocked={[Function]}
                               isUserOnMobile={false}
                               name="dates"
                               onChange={[Function]}
                               onFocusChange={[Function]}
                               onUpdate={[Function]}
-                              startDatePlaceholderText="Check-in"
+                              startDatePlaceholderText="Check in"
                               willOpenAbove={true}
                               windowInnerWidth={1024}
                             >
                               <DateRangePicker
                                 displayFormat="DD/MM/YYYY"
-                                endDatePlaceholderText="Check-out"
+                                endDatePlaceholderText="Check out"
                                 error={false}
                                 getIsDayBlocked={[Function]}
                                 isUserOnMobile={false}
@@ -2630,7 +2646,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onFocusChange={[Function]}
-                                startDatePlaceholderText="Check-in"
+                                startDatePlaceholderText="Check in"
                                 willOpenAbove={true}
                                 windowInnerWidth={1024}
                               >
@@ -2694,7 +2710,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         daySize={52}
                                         displayFormat="DD/MM/YYYY"
                                         endDate={null}
-                                        endDatePlaceholderText="Check-out"
+                                        endDatePlaceholderText="Check out"
                                         focusedInput={null}
                                         hideKeyboardShortcutsPanel={true}
                                         isDayBlocked={[Function]}
@@ -2735,7 +2751,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         onFocusChange={[Function]}
                                         openDirection="up"
                                         startDate={null}
-                                        startDatePlaceholderText="Check-in"
+                                        startDatePlaceholderText="Check in"
                                         withPortal={true}
                                       >
                                         <div />
