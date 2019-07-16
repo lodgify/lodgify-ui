@@ -24,11 +24,15 @@ export const getFormFieldMarkup = (
   {
     /* eslint-disable react/prop-types */
     dateRangePickerLocaleCode,
+    datesCheckInLabel,
+    datesCheckOutLabel,
     datesInputFocusedInput,
-    datesInputValue,
     datesInputOnFocusChange,
+    datesInputValue,
     getIsDayBlocked,
+    guestsInputLabel,
     guestsInputValue,
+    locationInputLabel,
     locationInputValue,
     locationOptions,
     searchButton,
@@ -42,7 +46,7 @@ export const getFormFieldMarkup = (
       <div className="input-container location-input-container">
         <Dropdown
           icon={ICON_NAMES.MAP_PIN}
-          label="Location"
+          label={locationInputLabel}
           name="location"
           onChange={persistInputChange}
           options={locationOptions}
@@ -53,14 +57,14 @@ export const getFormFieldMarkup = (
     )}
     <div className="input-container dates-input-container">
       <DateRangePicker
-        endDatePlaceholderText="Check-out"
+        endDatePlaceholderText={datesCheckOutLabel}
         focusedInput={datesInputFocusedInput}
         getIsDayBlocked={getIsDayBlocked}
         localeCode={dateRangePickerLocaleCode}
         name="dates"
         onChange={persistInputChange}
         onFocusChange={datesInputOnFocusChange}
-        startDatePlaceholderText="Check-in"
+        startDatePlaceholderText={datesCheckInLabel}
         value={datesInputValue}
         willOpenAbove={willLocationDropdownOpenAbove}
       />
@@ -68,7 +72,7 @@ export const getFormFieldMarkup = (
     <div className="input-container guests-input-container">
       <NumberInput
         icon={<Icon name={ICON_NAMES.USERS} />}
-        label="Guests"
+        label={guestsInputLabel}
         min={0}
         name="guests"
         onChange={persistInputChange}
