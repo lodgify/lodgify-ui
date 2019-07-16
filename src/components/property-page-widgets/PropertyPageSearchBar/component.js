@@ -23,6 +23,9 @@ export const Component = ({
   isShowingPlaceholder,
   onChangeInput,
   onSubmit,
+  searchBarDatesCheckInLabel,
+  searchBarDatesCheckOutLabel,
+  searchBarGuestsInputLabel,
   searchButton,
   summaryLocationName,
   summaryPeriodText,
@@ -31,6 +34,8 @@ export const Component = ({
   summaryRatingNumber,
 }) => {
   const sharedProps = {
+    datesCheckInLabel: searchBarDatesCheckInLabel,
+    datesCheckOutLabel: searchBarDatesCheckOutLabel,
     dateRangePickerLocaleCode,
     datesInputFocusedInput,
     datesInputOnFocusChange,
@@ -41,6 +46,7 @@ export const Component = ({
     datesInputValue,
     datesInputOnFocusChange,
     getIsDayBlocked,
+    guestsInputLabel: searchBarGuestsInputLabel,
     guestsInputValue,
     isFixed: true,
     onChangeInput,
@@ -96,6 +102,9 @@ Component.defaultProps = {
   isShowingPlaceholder: false,
   onChangeInput: undefined,
   onSubmit: undefined,
+  searchBarDatesCheckInLabel: undefined,
+  searchBarDatesCheckOutLabel: undefined,
+  searchBarGuestsInputLabel: undefined,
   searchButton: (
     <Button isFormSubmit isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
@@ -151,6 +160,12 @@ Component.propTypes = {
    *  @param {String} values.location
    */
   onSubmit: PropTypes.func,
+  /** The label for the date picker check in input of the search bar when there is no value selected. */
+  searchBarDatesCheckInLabel: PropTypes.string,
+  /** The label for the date picker check out input of the search bar when there is no value selected. */
+  searchBarDatesCheckOutLabel: PropTypes.string,
+  /** The label for the guests input of the search bar when there is no value. */
+  searchBarGuestsInputLabel: PropTypes.string,
   /** The Search Button the Search Bar displays. */
   searchButton: PropTypes.node,
   /** The location name displayed in the summary. */
