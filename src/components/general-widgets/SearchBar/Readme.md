@@ -134,3 +134,17 @@ class Controller extends React.Component {
   }
 />
 ```
+
+#### Strings
+
+```jsx
+const { locationOptions } = require('./mock-data/options');
+
+<SearchBar
+  locationOptions={locationOptions}
+  locationInputLabel="Places"
+  guestsInputLabel="People"
+  datesCheckInLabel="Arrival"
+  datesCheckOutLabel="Departure"
+/>
+```
