@@ -22,12 +22,4 @@ describe('getIsVisible', () => {
       expect(actual).toBe(false);
     });
   });
-
-  describe('when top offset is zero', () => {
-    it('should return false', () => {
-      const actual = getIsTopComponentVisible({ top: 0 }, 1000);
-
-      expect(actual).toBe(false);
-    });
-  });
 });

@@ -1,6 +1,11 @@
 /**
  * @param {Object} component
- * @return {Object}
+ * @return {undefined|Object}
  */
-export const getComponentPosition = component =>
-  !!component ? component.getBoundingClientRect() : undefined;
+export const getComponentPosition = component => {
+  if (!component) return;
+
+  if (!component.offsetParent) return;
+
+  return component.getBoundingClientRect();
+};

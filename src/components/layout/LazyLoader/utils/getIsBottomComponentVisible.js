@@ -8,10 +8,5 @@ import { HEIGHT_OFF_SET } from './constants';
  * @param {number} windowHeight
  * @return {boolean}
  */
-export const getIsBottomComponentVisible = ({ bottom }, windowHeight) => {
-  if (bottom === 0) return false;
-
-  return (
-    bottom + HEIGHT_OFF_SET > -windowHeight && bottom - windowHeight / 2 <= 0
-  );
-};
+export const getIsBottomComponentVisible = ({ bottom }, windowHeight) =>
+  bottom + HEIGHT_OFF_SET > -windowHeight && bottom - windowHeight / 2 <= 0;
