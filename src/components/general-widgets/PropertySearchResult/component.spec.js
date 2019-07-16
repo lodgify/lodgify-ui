@@ -47,6 +47,14 @@ describe('<PropertySearchResult />', () => {
     });
   });
 
+  describe('if `ratingNumber` is a truthy value', () => {
+    it('should render the right structure', () => {
+      const actual = getPropertySearchResult({ ratingNumber: 0 });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   describe('componentDidUpdate', () => {
     describe('if `state.isActive` has not changed', () => {
       it('should not call `props.onChange`', () => {

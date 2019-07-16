@@ -12,6 +12,7 @@ import { Heading } from 'typography/Heading';
 import { FlexContainer } from 'layout/FlexContainer';
 import { PriceLabel } from 'elements/PriceLabel';
 
+import { getPropertyTypeWithDot } from './utils/getPropertyTypeWithDot';
 import { getSearchResultDescription } from './utils/getSearchResultDescription';
 import { getPropertyAmenities } from './utils/getPropertyAmenities';
 
@@ -104,8 +105,12 @@ export class Component extends PureComponent {
                 </Card.Header>
                 <Card.Description>
                   <FlexContainer alignItems="center" flexDirection="row">
-                    <Rating iconSize="tiny" ratingNumber={ratingNumber} />
-                    <Paragraph size="medium">{`· ${propertyType}`}</Paragraph>
+                    {ratingNumber >= 1 && (
+                      <Rating iconSize="tiny" ratingNumber={ratingNumber} />
+                    )}
+                    <Paragraph size="medium">
+                      {getPropertyTypeWithDot(ratingNumber, propertyType)}
+                    </Paragraph>
                   </FlexContainer>
                 </Card.Description>
                 <Card.Description>
