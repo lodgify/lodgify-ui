@@ -487,11 +487,15 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   parentProps={
                                     Object {
                                       "dateRangePickerLocaleCode": undefined,
+                                      "datesCheckInLabel": undefined,
+                                      "datesCheckOutLabel": undefined,
                                       "datesInputFocusedInput": undefined,
                                       "datesInputOnFocusChange": [Function],
                                       "datesInputValue": undefined,
                                       "getIsDayBlocked": [Function],
+                                      "guestsInputLabel": undefined,
                                       "guestsInputValue": undefined,
+                                      "locationInputLabel": undefined,
                                       "locationInputValue": undefined,
                                       "locationOptions": Array [
                                         Object {
