@@ -3,8 +3,6 @@ import { debounce } from 'debounce';
 import PropTypes from 'prop-types';
 
 import { getIsTopComponentVisible } from './utils/getIsTopComponentVisible';
-import { getComponentToRender } from './utils/getComponentToRender';
-import { getComponentToRenderProps } from './utils/getComponentToRenderProps';
 import { getIsBottomComponentVisible } from './utils/getIsBottomComponentVisible';
 import { getComponentPosition } from './utils/getComponentPosition';
 
@@ -26,21 +24,19 @@ export class Component extends PureComponent {
   componentWillUnmount = () => this.removeEventListeners();
 
   getShouldComponentRender = () => {
-    if (
-      !getComponentPosition(this.topComponent) ||
-      !getComponentPosition(this.bottomComponent)
-    )
-      return;
+    const topComponentPosition = getComponentPosition(this.topComponent);
+    const bottomComponentPosition = getComponentPosition(this.bottomComponent);
+
+    if (!topComponentPosition || !bottomComponentPosition) return;
 
     const windowHeight = window.innerHeight;
 
     const isTopComponentVisible = getIsTopComponentVisible(
-      getComponentPosition(this.topComponent),
+      topComponentPosition,
       windowHeight
     );
-
     const isBottomComponentVisible = getIsBottomComponentVisible(
-      getComponentPosition(this.bottomComponent),
+      bottomComponentPosition,
       windowHeight
     );
 
@@ -89,24 +85,15 @@ export class Component extends PureComponent {
   createBottomComponentRef = component => (this.bottomComponent = component);
 
   render = () => {
-    const { lazyComponent, lazyProps, componentProps } = this.props;
-    const { shouldRender } = this.state;
-    const componentToRenderProps = getComponentToRenderProps(
-      shouldRender,
-      componentProps,
-      lazyProps
-    );
-    const componentToRender = getComponentToRender(
-      lazyComponent,
-      shouldRender,
-      componentToRenderProps,
-      lazyProps
-    );
+    const { children, lazyProps, componentProps } = this.props;
 
     return (
       <Fragment>
         <div ref={this.createTopComponentRef} />
-        {componentToRender}
+        {React.cloneElement(children, {
+          ...componentProps,
+          ...(this.state.shouldRender ? lazyProps : {}),
+        })}
         <div ref={this.createBottomComponentRef} />
       </Fragment>
     );
@@ -121,12 +108,11 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The props that will be passed to the component. */
+  /** The component to render when scrolled to component's position. */
+  children: PropTypes.node.isRequired,
+  /** The props that will always be passed to the component. */
   // eslint-disable-next-line react/forbid-prop-types
   componentProps: PropTypes.object,
-  /** The component to render when scrolled to component's position. */
-  lazyComponent: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
-    .isRequired,
   /** The props that will be passed when scrolled to the component's position. */
   // eslint-disable-next-line react/forbid-prop-types
   lazyProps: PropTypes.object,

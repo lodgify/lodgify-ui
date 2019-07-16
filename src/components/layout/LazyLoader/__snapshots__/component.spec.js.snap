@@ -1,10 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LazyLoader by default should render the right structure 1`] = `
-<LazyLoader
-  lazyComponent={[Function]}
->
+<LazyLoader>
   <div />
+  <Component>
+    <div>
+      🚸
+    </div>
+  </Component>
   <div />
 </LazyLoader>
 `;
@@ -16,7 +19,6 @@ exports[`LazyLoader if \`componentProps\` !== undefined should render the right 
       "mad": "props",
     }
   }
-  lazyComponent={[Function]}
 >
   <div />
   <Component
@@ -32,7 +34,6 @@ exports[`LazyLoader if \`componentProps\` !== undefined should render the right 
 
 exports[`LazyLoader if \`lazyProps\` is passed by default should render the right structure 1`] = `
 <LazyLoader
-  lazyComponent={[Function]}
   lazyProps={
     Object {
       "whut": "whut",
@@ -51,7 +52,6 @@ exports[`LazyLoader if \`lazyProps\` is passed by default should render the righ
 
 exports[`LazyLoader if \`lazyProps\` is passed if \`shouldRender\` === true should render the right structure 1`] = `
 <LazyLoader
-  lazyComponent={[Function]}
   lazyProps={
     Object {
       "whut": "whut",
@@ -59,7 +59,9 @@ exports[`LazyLoader if \`lazyProps\` is passed if \`shouldRender\` === true shou
   }
 >
   <div />
-  <Component>
+  <Component
+    whut="whut"
+  >
     <div>
       🚸
     </div>
@@ -69,9 +71,7 @@ exports[`LazyLoader if \`lazyProps\` is passed if \`shouldRender\` === true shou
 `;
 
 exports[`LazyLoader if \`shouldRender\` === true should render the right structure 1`] = `
-<LazyLoader
-  lazyComponent={[Function]}
->
+<LazyLoader>
   <div />
   <Component>
     <div>

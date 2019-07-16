@@ -29,11 +29,9 @@ export const withLazyLoad = (...lazyPropsKeys) => WrappedComponent =>
 
       if (isLazyLoaded) {
         return (
-          <LazyLoader
-            componentProps={componentProps}
-            lazyComponent={WrappedComponent}
-            lazyProps={lazyProps}
-          />
+          <LazyLoader componentProps={componentProps} lazyProps={lazyProps}>
+            <WrappedComponent />
+          </LazyLoader>
         );
       }
 

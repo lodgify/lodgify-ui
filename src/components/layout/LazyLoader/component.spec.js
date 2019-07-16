@@ -14,10 +14,6 @@ import { getComponentPosition } from './utils/getComponentPosition';
 
 const Component = () => <div>🚸</div>;
 
-const props = {
-  lazyComponent: Component,
-};
-
 const shouldRenderState = {
   shouldRender: true,
 };
@@ -41,9 +37,18 @@ getComponentPosition.mockReturnValue({
 });
 
 const getLazyLoaderMount = extraProps =>
-  mount(<LazyLoader {...props} {...extraProps} />);
+  mount(
+    <LazyLoader {...extraProps}>
+      <Component />
+    </LazyLoader>
+  );
 
-const getLazyLoaderShallow = () => shallow(<LazyLoader {...props} />);
+const getLazyLoaderShallow = () =>
+  shallow(
+    <LazyLoader>
+      <Component />
+    </LazyLoader>
+  );
 
 describe('LazyLoader', () => {
   describe('by default', () => {

@@ -22,12 +22,4 @@ describe('`getIsBottomComponentVisible`', () => {
       expect(actual).toBe(false);
     });
   });
-
-  describe('when bottom offset is zero', () => {
-    it('should return false', () => {
-      const actual = getIsBottomComponentVisible({ bottom: 0 }, 1000);
-
-      expect(actual).toBe(false);
-    });
-  });
 });

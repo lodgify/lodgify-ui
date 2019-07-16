@@ -16,11 +16,12 @@ exports[`withLazyLoad WrapperComponent should pass the right props to \`Componen
       "other": "otherProps",
     }
   }
-  lazyComponent={[Function]}
   lazyProps={
     Object {
       "lazyProp": "😴",
     }
   }
-/>
+>
+  <🚜 />
+</LazyLoader>
 `;
