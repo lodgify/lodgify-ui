@@ -15,8 +15,14 @@ const props = {
 };
 const handleImageLoad = () => {};
 
-const getImage = extraProps =>
-  mount(getImageMarkup({ ...props, ...extraProps }, handleImageLoad));
+const getImage = extraProps => {
+  const imageMarkup = getImageMarkup(
+    { ...props, ...extraProps },
+    handleImageLoad
+  );
+
+  return imageMarkup && mount(imageMarkup);
+};
 
 describe('`getImageMarkup`', () => {
   it('should render the right structure', () => {
@@ -25,11 +31,11 @@ describe('`getImageMarkup`', () => {
     expect(actual).toMatchSnapshot();
   });
 
-  describe('if no `imageUrl` is passed', () => {
+  describe('if no `imageUrl` or `srcSet` is passed', () => {
     it('should render the right structure', () => {
-      const actual = getImage({ imageUrl: null });
+      const actual = getImage({ imageUrl: null, srcSet: null });
 
-      expect(actual).toMatchSnapshot();
+      expect(actual).toBe(false);
     });
   });
 });

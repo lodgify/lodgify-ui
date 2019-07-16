@@ -1,259 +1,126 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ResponsiveImage /> by default should have the right structure 1`] = `
-<ResponsiveImage
-  alternativeText="Alternative Text 😝"
-  hasRoundedCorners={false}
-  imageHeight={null}
-  imageNotFoundLabelText="Image not found!"
-  imageTitle="ResponsiveImage title"
-  imageUrl=""
-  imageWidth={null}
-  isAvatar={false}
-  isCircular={false}
-  isFluid={true}
-  isLazyLoaded={true}
-  label={null}
-  onLoad={[Function]}
-  sizes={null}
-  sources={Array []}
-  srcSet={null}
+exports[`<ResponsiveImage /> \`render\` by default should have the right structure 1`] = `
+<figure
+  className="responsive-image"
 >
-  <figure
-    className="responsive-image is-fluid"
-  >
-    <Image
-      alt="Alternative Text 😝"
-      as="img"
-      avatar={false}
-      fluid={true}
-      onLoad={[Function]}
-      sizes={null}
-      src=""
-      srcSet={null}
-      title="ResponsiveImage title"
-      ui={true}
-    >
-      <div
-        alt="Alternative Text 😝"
-        className="ui fluid image"
-        onLoad={[Function]}
-        sizes={null}
-        src=""
-        srcSet={null}
-        title="ResponsiveImage title"
-      >
-        <Label
-          content="Image not found!"
-        >
-          <div
-            className="ui label"
-            onClick={[Function]}
-          >
-            Image not found!
-          </div>
-        </Label>
-      </div>
-    </Image>
-  </figure>
-</ResponsiveImage>
+  <img
+    id="image"
+  />
+</figure>
 `;
 
-exports[`<ResponsiveImage /> if \`props.isLazyLoaded\` is false should have the right structure 1`] = `
-<ResponsiveImage
-  alternativeText="Alternative Text 😝"
-  hasRoundedCorners={false}
-  imageHeight={null}
-  imageNotFoundLabelText="Image not found!"
-  imageTitle="ResponsiveImage title"
-  imageUrl=""
-  imageWidth={null}
-  isAvatar={false}
-  isCircular={false}
-  isFluid={true}
-  isLazyLoaded={false}
-  label={null}
-  onLoad={[Function]}
-  sizes={null}
-  sources={Array []}
-  srcSet={null}
+exports[`<ResponsiveImage /> \`render\` if \`props.hasRoundedCorners\` is passed should have the right structure 1`] = `
+<figure
+  className="responsive-image is-rounded"
 >
-  <figure
-    className="responsive-image is-fluid"
-  >
-    <Image
-      alt="Alternative Text 😝"
-      as="img"
-      avatar={false}
-      fluid={true}
-      onLoad={[Function]}
-      sizes={null}
-      src=""
-      srcSet={null}
-      title="ResponsiveImage title"
-      ui={true}
-    >
-      <div
-        alt="Alternative Text 😝"
-        className="ui fluid image"
-        onLoad={[Function]}
-        sizes={null}
-        src=""
-        srcSet={null}
-        title="ResponsiveImage title"
-      >
-        <Label
-          content="Image not found!"
-        >
-          <div
-            className="ui label"
-            onClick={[Function]}
-          >
-            Image not found!
-          </div>
-        </Label>
-      </div>
-    </Image>
-  </figure>
-</ResponsiveImage>
+  <img
+    id="image"
+  />
+</figure>
 `;
 
-exports[`<ResponsiveImage /> if \`props.label\` is passed should have the right structure 1`] = `
-<ResponsiveImage
-  alternativeText="Alternative Text 😝"
-  hasRoundedCorners={false}
-  imageHeight={null}
-  imageNotFoundLabelText="Image not found!"
-  imageTitle="ResponsiveImage title"
-  imageUrl=""
-  imageWidth={null}
-  isAvatar={false}
-  isCircular={false}
-  isFluid={true}
-  isLazyLoaded={true}
-  label="🔷"
-  onLoad={[Function]}
-  sizes={null}
-  sources={Array []}
-  srcSet={null}
+exports[`<ResponsiveImage /> \`render\` if \`props.isCircular\` is passed should have the right structure 1`] = `
+<figure
+  className="responsive-image is-circular"
 >
-  <figure
-    className="responsive-image is-fluid"
-  >
-    <Image
-      alt="Alternative Text 😝"
-      as="img"
-      avatar={false}
-      fluid={true}
-      onLoad={[Function]}
-      sizes={null}
-      src=""
-      srcSet={null}
-      title="ResponsiveImage title"
-      ui={true}
-    >
-      <div
-        alt="Alternative Text 😝"
-        className="ui fluid image"
-        onLoad={[Function]}
-        sizes={null}
-        src=""
-        srcSet={null}
-        title="ResponsiveImage title"
-      >
-        <Label
-          content="Image not found!"
-        >
-          <div
-            className="ui label"
-            onClick={[Function]}
-          >
-            Image not found!
-          </div>
-        </Label>
-      </div>
-    </Image>
-    <Paragraph
-      size="medium"
-      weight={null}
-    >
-      <p
-        className=""
-      >
-        🔷
-      </p>
-    </Paragraph>
-  </figure>
-</ResponsiveImage>
+  <img
+    id="image"
+  />
+</figure>
 `;
 
-exports[`<ResponsiveImage /> if \`props.placeholderImageUrl\` is passed should have the right structure 1`] = `
-<ResponsiveImage
-  alternativeText="Alternative Text 😝"
-  hasRoundedCorners={false}
-  imageHeight={null}
-  imageNotFoundLabelText="Image not found!"
-  imageTitle="ResponsiveImage title"
-  imageUrl=""
-  imageWidth={null}
-  isAvatar={false}
-  isCircular={false}
-  isFluid={true}
-  isLazyLoaded={true}
-  label={null}
-  onLoad={[Function]}
-  placeholderImageUrl="ayyy"
-  sizes={null}
-  sources={Array []}
-  srcSet={null}
+exports[`<ResponsiveImage /> \`render\` if \`props.isFluid\` is passed should have the right structure 1`] = `
+<figure
+  className="responsive-image is-fluid"
 >
-  <figure
-    className="responsive-image has-blurred-children has-placeholder is-fluid"
+  <img
+    id="image"
+  />
+</figure>
+`;
+
+exports[`<ResponsiveImage /> \`render\` if \`props.isLazyLoaded\` is false should have the right structure 1`] = `
+<figure
+  className="responsive-image"
+>
+  <img
+    id="image"
+  />
+</figure>
+`;
+
+exports[`<ResponsiveImage /> \`render\` if \`props.label\` is passed should have the right structure 1`] = `
+<figure
+  className="responsive-image"
+>
+  <img
+    id="image"
+  />
+  <Paragraph
+    size="medium"
+    weight={null}
   >
-    <Image
-      alt="Alternative Text 😝"
-      as="img"
-      avatar={false}
-      fluid={true}
-      onLoad={[Function]}
+    🔷
+  </Paragraph>
+</figure>
+`;
+
+exports[`<ResponsiveImage /> \`render\` if \`props.placeholderImageUrl\` is passed should have the right structure 1`] = `
+<figure
+  className="responsive-image has-placeholder"
+>
+  <img
+    id="image"
+  />
+  <img
+    id="placeholderImage"
+  />
+</figure>
+`;
+
+exports[`<ResponsiveImage /> should get wrapped by \`withLazyLoad\` 1`] = `
+<withLazyLoad(ResponsiveImage)
+  isLazyLoaded={true}
+>
+  <LazyLoader
+    componentProps={
+      Object {
+        "isLazyLoaded": true,
+      }
+    }
+    lazyProps={
+      Object {
+        "imageUrl": undefined,
+        "srcSet": undefined,
+      }
+    }
+  >
+    <div />
+    <ResponsiveImage
+      alternativeText="Image Widget"
+      hasRoundedCorners={false}
+      imageHeight={null}
+      imageTitle="Image Title"
+      imageUrl=""
+      imageWidth={null}
+      isAvatar={false}
+      isCircular={false}
+      isFluid={false}
+      isLazyLoaded={true}
+      label={null}
       sizes={null}
-      src=""
       srcSet={null}
-      title="ResponsiveImage title"
-      ui={true}
     >
-      <div
-        alt="Alternative Text 😝"
-        className="ui fluid image"
-        onLoad={[Function]}
-        sizes={null}
-        src=""
-        srcSet={null}
-        title="ResponsiveImage title"
+      <figure
+        className="responsive-image"
       >
-        <Label
-          content="Image not found!"
-        >
-          <div
-            className="ui label"
-            onClick={[Function]}
-          >
-            Image not found!
-          </div>
-        </Label>
-      </div>
-    </Image>
-    <Image
-      as="img"
-      fluid={true}
-      src="ayyy"
-      ui={true}
-    >
-      <img
-        className="ui fluid image"
-        src="ayyy"
-      />
-    </Image>
-  </figure>
-</ResponsiveImage>
+        <img
+          id="image"
+        />
+      </figure>
+    </ResponsiveImage>
+    <div />
+  </LazyLoader>
+</withLazyLoad(ResponsiveImage)>
 `;
