@@ -238,7 +238,7 @@ exports[`<PropertySearchResult /> if \`ratingNumber\` is a truthy value should r
           onChange={[Function]}
           onClick={[Function]}
           periodText="some priceLabelPeriodText"
-          pricePerPeriod="some priceLabelPricePerPeriod"
+          pricePerPeriod=""
           pricePerPeriodPrefix="some priceLabelPricePerPeriodPrefix"
         />
       </Segment>
