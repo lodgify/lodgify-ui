@@ -33,13 +33,12 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
             "isSquare": false,
             "placeholderImageUrl": undefined,
             "sizes": undefined,
-            "srcSet": undefined,
           }
         }
-        lazyComponent={[Function]}
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
+            "srcSet": undefined,
           }
         }
       >
@@ -48,7 +47,6 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
           alternativeText="Image Widget"
           hasRoundedCorners={false}
           imageHeight={null}
-          imageNotFoundLabelText="Image not found!"
           imageTitle="Image Title"
           imageUrl=""
           imageWidth={null}
@@ -63,41 +61,7 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
         >
           <figure
             className="responsive-image is-fluid"
-          >
-            <Image
-              alt="Image Widget"
-              as="img"
-              avatar={false}
-              fluid={true}
-              onLoad={[Function]}
-              sizes={null}
-              src=""
-              srcSet={null}
-              title="Image Title"
-              ui={true}
-            >
-              <div
-                alt="Image Widget"
-                className="ui fluid image"
-                onLoad={[Function]}
-                sizes={null}
-                src=""
-                srcSet={null}
-                title="Image Title"
-              >
-                <Label
-                  content="Image not found!"
-                >
-                  <div
-                    className="ui label"
-                    onClick={[Function]}
-                  >
-                    Image not found!
-                  </div>
-                </Label>
-              </div>
-            </Image>
-          </figure>
+          />
         </ResponsiveImage>
         <div />
       </LazyLoader>
@@ -139,13 +103,12 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
             "isSquare": false,
             "placeholderImageUrl": undefined,
             "sizes": undefined,
-            "srcSet": undefined,
           }
         }
-        lazyComponent={[Function]}
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
+            "srcSet": undefined,
           }
         }
       >
@@ -154,7 +117,6 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
           alternativeText="Image Widget"
           hasRoundedCorners={false}
           imageHeight={null}
-          imageNotFoundLabelText="Image not found!"
           imageTitle="Image Title"
           imageUrl=""
           imageWidth={null}
@@ -169,41 +131,7 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
         >
           <figure
             className="responsive-image is-fluid is-circular"
-          >
-            <Image
-              alt="Image Widget"
-              as="img"
-              avatar={false}
-              fluid={true}
-              onLoad={[Function]}
-              sizes={null}
-              src=""
-              srcSet={null}
-              title="Image Title"
-              ui={true}
-            >
-              <div
-                alt="Image Widget"
-                className="ui fluid image"
-                onLoad={[Function]}
-                sizes={null}
-                src=""
-                srcSet={null}
-                title="Image Title"
-              >
-                <Label
-                  content="Image not found!"
-                >
-                  <div
-                    className="ui label"
-                    onClick={[Function]}
-                  >
-                    Image not found!
-                  </div>
-                </Label>
-              </div>
-            </Image>
-          </figure>
+          />
         </ResponsiveImage>
         <div />
       </LazyLoader>
@@ -245,13 +173,12 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
             "isSquare": true,
             "placeholderImageUrl": undefined,
             "sizes": undefined,
-            "srcSet": undefined,
           }
         }
-        lazyComponent={[Function]}
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
+            "srcSet": undefined,
           }
         }
       >
@@ -260,7 +187,6 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
           alternativeText="Image Widget"
           hasRoundedCorners={false}
           imageHeight={null}
-          imageNotFoundLabelText="Image not found!"
           imageTitle="Image Title"
           imageUrl=""
           imageWidth={null}
@@ -275,41 +201,7 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
         >
           <figure
             className="responsive-image"
-          >
-            <Image
-              alt="Image Widget"
-              as="img"
-              avatar={false}
-              fluid={true}
-              onLoad={[Function]}
-              sizes={null}
-              src=""
-              srcSet={null}
-              title="Image Title"
-              ui={true}
-            >
-              <div
-                alt="Image Widget"
-                className="ui fluid image"
-                onLoad={[Function]}
-                sizes={null}
-                src=""
-                srcSet={null}
-                title="Image Title"
-              >
-                <Label
-                  content="Image not found!"
-                >
-                  <div
-                    className="ui label"
-                    onClick={[Function]}
-                  >
-                    Image not found!
-                  </div>
-                </Label>
-              </div>
-            </Image>
-          </figure>
+          />
         </ResponsiveImage>
         <div />
       </LazyLoader>
@@ -351,13 +243,12 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
             "isSquare": false,
             "placeholderImageUrl": undefined,
             "sizes": undefined,
-            "srcSet": undefined,
           }
         }
-        lazyComponent={[Function]}
         lazyProps={
           Object {
             "imageUrl": "www.⚡️.net",
+            "srcSet": undefined,
           }
         }
       >
@@ -366,7 +257,6 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
           alternativeText="Image Widget"
           hasRoundedCorners={false}
           imageHeight={null}
-          imageNotFoundLabelText="Image not found!"
           imageTitle="Image Title"
           imageUrl=""
           imageWidth={null}
@@ -381,41 +271,7 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
         >
           <figure
             className="responsive-image is-fluid"
-          >
-            <Image
-              alt="Image Widget"
-              as="img"
-              avatar={false}
-              fluid={true}
-              onLoad={[Function]}
-              sizes={null}
-              src=""
-              srcSet={null}
-              title="Image Title"
-              ui={true}
-            >
-              <div
-                alt="Image Widget"
-                className="ui fluid image"
-                onLoad={[Function]}
-                sizes={null}
-                src=""
-                srcSet={null}
-                title="Image Title"
-              >
-                <Label
-                  content="Image not found!"
-                >
-                  <div
-                    className="ui label"
-                    onClick={[Function]}
-                  >
-                    Image not found!
-                  </div>
-                </Label>
-              </div>
-            </Image>
-          </figure>
+          />
         </ResponsiveImage>
         <div />
       </LazyLoader>

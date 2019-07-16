@@ -111,15 +111,14 @@ exports[`HomepageHero should render the right structure 1`] = `
                   "imageWidth": undefined,
                   "isFluid": true,
                   "isLazyLoaded": true,
+                  "placeholderImageUrl": null,
                   "sizes": "url",
-                  "srcSet": "a load of sizes",
                 }
               }
-              lazyComponent={[Function]}
               lazyProps={
                 Object {
                   "imageUrl": "bare sources",
-                  "placeholderImageUrl": null,
+                  "srcSet": "a load of sizes",
                 }
               }
             >
@@ -128,7 +127,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                 alternativeText="Image Widget"
                 hasRoundedCorners={false}
                 imageHeight={null}
-                imageNotFoundLabelText="Image not found!"
                 imageTitle="Image Title"
                 imageUrl=""
                 imageWidth={null}
@@ -137,46 +135,13 @@ exports[`HomepageHero should render the right structure 1`] = `
                 isFluid={true}
                 isLazyLoaded={true}
                 label={null}
+                placeholderImageUrl={null}
                 sizes="url"
-                srcSet="a load of sizes"
+                srcSet={null}
               >
                 <figure
                   className="responsive-image is-fluid"
-                >
-                  <Image
-                    alt="Image Widget"
-                    as="img"
-                    avatar={false}
-                    fluid={true}
-                    onLoad={[Function]}
-                    sizes="url"
-                    src=""
-                    srcSet="a load of sizes"
-                    title="Image Title"
-                    ui={true}
-                  >
-                    <div
-                      alt="Image Widget"
-                      className="ui fluid image"
-                      onLoad={[Function]}
-                      sizes="url"
-                      src=""
-                      srcSet="a load of sizes"
-                      title="Image Title"
-                    >
-                      <Label
-                        content="Image not found!"
-                      >
-                        <div
-                          className="ui label"
-                          onClick={[Function]}
-                        >
-                          Image not found!
-                        </div>
-                      </Label>
-                    </div>
-                  </Image>
-                </figure>
+                />
               </ResponsiveImage>
               <div />
             </LazyLoader>

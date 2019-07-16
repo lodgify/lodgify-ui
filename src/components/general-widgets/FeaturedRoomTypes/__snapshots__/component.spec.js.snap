@@ -67,15 +67,14 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
+                "placeholderImageUrl": undefined,
                 "sizes": undefined,
-                "srcSet": undefined,
               }
             }
-            lazyComponent={[Function]}
             lazyProps={
               Object {
                 "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                "placeholderImageUrl": undefined,
+                "srcSet": undefined,
               }
             }
           >
@@ -84,7 +83,6 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
               alternativeText="Image Widget"
               hasRoundedCorners={false}
               imageHeight={null}
-              imageNotFoundLabelText="Image not found!"
               imageTitle="Image Title"
               imageUrl=""
               imageWidth={null}
@@ -98,41 +96,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
             >
               <figure
                 className="responsive-image is-fluid"
-              >
-                <Image
-                  alt="Image Widget"
-                  as="img"
-                  avatar={false}
-                  fluid={true}
-                  onLoad={[Function]}
-                  sizes={null}
-                  src=""
-                  srcSet={null}
-                  title="Image Title"
-                  ui={true}
-                >
-                  <div
-                    alt="Image Widget"
-                    className="ui fluid image"
-                    onLoad={[Function]}
-                    sizes={null}
-                    src=""
-                    srcSet={null}
-                    title="Image Title"
-                  >
-                    <Label
-                      content="Image not found!"
-                    >
-                      <div
-                        className="ui label"
-                        onClick={[Function]}
-                      >
-                        Image not found!
-                      </div>
-                    </Label>
-                  </div>
-                </Image>
-              </figure>
+              />
             </ResponsiveImage>
             <div />
           </LazyLoader>
@@ -254,15 +218,14 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
+                "placeholderImageUrl": undefined,
                 "sizes": undefined,
-                "srcSet": undefined,
               }
             }
-            lazyComponent={[Function]}
             lazyProps={
               Object {
                 "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                "placeholderImageUrl": undefined,
+                "srcSet": undefined,
               }
             }
           >
@@ -271,7 +234,6 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
               alternativeText="Image Widget"
               hasRoundedCorners={false}
               imageHeight={null}
-              imageNotFoundLabelText="Image not found!"
               imageTitle="Image Title"
               imageUrl=""
               imageWidth={null}
@@ -285,41 +247,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
             >
               <figure
                 className="responsive-image is-fluid"
-              >
-                <Image
-                  alt="Image Widget"
-                  as="img"
-                  avatar={false}
-                  fluid={true}
-                  onLoad={[Function]}
-                  sizes={null}
-                  src=""
-                  srcSet={null}
-                  title="Image Title"
-                  ui={true}
-                >
-                  <div
-                    alt="Image Widget"
-                    className="ui fluid image"
-                    onLoad={[Function]}
-                    sizes={null}
-                    src=""
-                    srcSet={null}
-                    title="Image Title"
-                  >
-                    <Label
-                      content="Image not found!"
-                    >
-                      <div
-                        className="ui label"
-                        onClick={[Function]}
-                      >
-                        Image not found!
-                      </div>
-                    </Label>
-                  </div>
-                </Image>
-              </figure>
+              />
             </ResponsiveImage>
             <div />
           </LazyLoader>
@@ -769,15 +697,14 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
+                "placeholderImageUrl": undefined,
                 "sizes": undefined,
-                "srcSet": undefined,
               }
             }
-            lazyComponent={[Function]}
             lazyProps={
               Object {
                 "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                "placeholderImageUrl": undefined,
+                "srcSet": undefined,
               }
             }
           >
@@ -786,7 +713,6 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
               alternativeText="Image Widget"
               hasRoundedCorners={false}
               imageHeight={null}
-              imageNotFoundLabelText="Image not found!"
               imageTitle="Image Title"
               imageUrl=""
               imageWidth={null}
@@ -800,41 +726,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
             >
               <figure
                 className="responsive-image is-fluid"
-              >
-                <Image
-                  alt="Image Widget"
-                  as="img"
-                  avatar={false}
-                  fluid={true}
-                  onLoad={[Function]}
-                  sizes={null}
-                  src=""
-                  srcSet={null}
-                  title="Image Title"
-                  ui={true}
-                >
-                  <div
-                    alt="Image Widget"
-                    className="ui fluid image"
-                    onLoad={[Function]}
-                    sizes={null}
-                    src=""
-                    srcSet={null}
-                    title="Image Title"
-                  >
-                    <Label
-                      content="Image not found!"
-                    >
-                      <div
-                        className="ui label"
-                        onClick={[Function]}
-                      >
-                        Image not found!
-                      </div>
-                    </Label>
-                  </div>
-                </Image>
-              </figure>
+              />
             </ResponsiveImage>
             <div />
           </LazyLoader>
@@ -956,15 +848,14 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
+                "placeholderImageUrl": undefined,
                 "sizes": undefined,
-                "srcSet": undefined,
               }
             }
-            lazyComponent={[Function]}
             lazyProps={
               Object {
                 "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                "placeholderImageUrl": undefined,
+                "srcSet": undefined,
               }
             }
           >
@@ -973,7 +864,6 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
               alternativeText="Image Widget"
               hasRoundedCorners={false}
               imageHeight={null}
-              imageNotFoundLabelText="Image not found!"
               imageTitle="Image Title"
               imageUrl=""
               imageWidth={null}
@@ -987,41 +877,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
             >
               <figure
                 className="responsive-image is-fluid"
-              >
-                <Image
-                  alt="Image Widget"
-                  as="img"
-                  avatar={false}
-                  fluid={true}
-                  onLoad={[Function]}
-                  sizes={null}
-                  src=""
-                  srcSet={null}
-                  title="Image Title"
-                  ui={true}
-                >
-                  <div
-                    alt="Image Widget"
-                    className="ui fluid image"
-                    onLoad={[Function]}
-                    sizes={null}
-                    src=""
-                    srcSet={null}
-                    title="Image Title"
-                  >
-                    <Label
-                      content="Image not found!"
-                    >
-                      <div
-                        className="ui label"
-                        onClick={[Function]}
-                      >
-                        Image not found!
-                      </div>
-                    </Label>
-                  </div>
-                </Image>
-              </figure>
+              />
             </ResponsiveImage>
             <div />
           </LazyLoader>
