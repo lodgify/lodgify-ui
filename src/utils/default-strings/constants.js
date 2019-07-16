@@ -33,7 +33,6 @@ export const GUEST_TYPE = 'Guest Type';
 export const GUESTS = 'Guests';
 export const HOME_HIGHLIGHTS = 'Home highlights';
 export const HOUSE_RULES = 'House Rules';
-export const IMAGE_NOT_FOUND = 'Image not found!';
 export const IMAGE_TITLE = 'Image Title';
 export const IMAGE_WIDGET = 'Image Widget';
 export const KEY_FACTS = 'Key facts';

@@ -1,114 +1,170 @@
+jest.mock('./utils/getImageMarkup');
+jest.mock('./utils/getPlaceholderImageMarkup');
+
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { ComponentWithLazyLoad as ResponsiveImage } from './component';
+import {
+  Component as ResponsiveImage,
+  ComponentWithLazyLoad,
+} from './component';
+import { getImageMarkup } from './utils/getImageMarkup';
+import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
 
-const props = {
-  sources: [],
-  alternativeText: 'Alternative Text 😝',
-  isAvatar: false,
-  isFluid: true,
-  onLoad: Function.prototype,
-  imageTitle: 'ResponsiveImage title',
-};
+const getResponsiveImage = props => shallow(<ResponsiveImage {...props} />);
 
-const getResponsiveImage = () => shallow(<ResponsiveImage {...props} />);
-
-const getWrappedResponsiveImage = extraProps => {
-  const Child = getResponsiveImage().prop('lazyComponent');
-
-  return mount(<Child {...props} {...extraProps} />);
-};
+getImageMarkup.mockReturnValue(<img id="image" />);
+getPlaceholderImageMarkup.mockReturnValue(<img id="placeholderImage" />);
 
 describe('<ResponsiveImage />', () => {
-  describe('by default', () => {
-    it('should have the right structure', () => {
-      const actual = getWrappedResponsiveImage();
+  describe('`componentDidMount`', () => {
+    describe('if `props.placeholderImageUrl` is passed', () => {
+      it('should create a new `Image` with the right attributes', () => {
+        const sizes = 'some sizes';
+        const imageUrl = 'some imageUrl';
+        const srcSet = 'some srcSet';
+        const wrapper = getResponsiveImage({
+          placeholderImageUrl: 'ayyy',
+          sizes,
+          imageUrl,
+          srcSet,
+        });
+        const fullsizeImage = {};
 
-      expect(actual).toMatchSnapshot();
-    });
-  });
+        global.Image = jest.fn(() => fullsizeImage);
 
-  describe('if `props.placeholderImageUrl` is passed', () => {
-    it('should have the right structure', () => {
-      const actual = getWrappedResponsiveImage({
-        placeholderImageUrl: 'ayyy',
+        wrapper.instance().componentDidMount();
+
+        expect(global.Image).toHaveBeenCalled();
+        expect(fullsizeImage).toEqual({
+          sizes,
+          src: imageUrl,
+          srcset: srcSet,
+        });
       });
 
-      expect(actual).toMatchSnapshot();
-    });
+      it('should call `setState` with the right arguments', () => {
+        const wrapper = getResponsiveImage({
+          placeholderImageUrl: 'ayyy',
+        });
+        const complete = 'I am a complete status';
 
-    it('should call the Image constructor', () => {
-      const wrapper = getWrappedResponsiveImage({
-        placeholderImageUrl: 'ayyy',
-      });
+        global.Image = jest.fn(() => ({ complete }));
 
-      global.Image = jest.fn();
+        wrapper.instance().setState = jest.fn();
+        wrapper.update();
+        wrapper.instance().componentDidMount();
 
-      wrapper.instance().componentDidMount();
-
-      expect(global.Image).toHaveBeenCalled();
-    });
-
-    it('should call setState with the right arguments', () => {
-      const wrapper = getWrappedResponsiveImage({
-        placeholderImageUrl: 'ayyy',
-      });
-
-      global.Image = jest.fn(() => ({ complete: true }));
-
-      wrapper.instance().setState = jest.fn();
-      wrapper.update();
-      wrapper.instance().componentDidMount();
-
-      expect(wrapper.instance().setState).toHaveBeenCalledWith({
-        shouldImageLoad: true,
-        isImageLoaded: true,
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          shouldImageLoad: true,
+          isImageLoaded: complete,
+        });
       });
     });
-  });
 
-  describe('if `props.label` is passed', () => {
-    it('should have the right structure', () => {
-      const actual = getWrappedResponsiveImage({ label: '🔷' });
+    describe('if `props.placeholderImageUrl` is not passed', () => {
+      it('should call `setState` with the right arguments', () => {
+        const wrapper = getResponsiveImage();
 
-      expect(actual).toMatchSnapshot();
-    });
-  });
+        wrapper.instance().setState = jest.fn();
+        wrapper.update();
+        wrapper.instance().componentDidMount();
 
-  describe('if `props.isLazyLoaded` is false', () => {
-    it('should have the right structure', () => {
-      const actual = getWrappedResponsiveImage({ isLazyLoaded: false });
-
-      expect(actual).toMatchSnapshot();
-    });
-  });
-
-  describe('on mount', () => {
-    it('should set `shouldImageLoad` to `true` in the components state', () => {
-      const wrapper = getWrappedResponsiveImage();
-
-      wrapper.instance().componentDidMount();
-      const actual = wrapper.state();
-
-      expect(actual).toEqual({
-        isImageLoaded: false,
-        shouldImageLoad: true,
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          shouldImageLoad: true,
+        });
       });
     });
   });
 
   describe('`handleImageLoad`', () => {
-    it('should set `isImageLoaded` to `true` in the components state', () => {
-      const wrapper = getWrappedResponsiveImage();
+    it('should call `setState` with the right arguments', () => {
+      const wrapper = getResponsiveImage();
 
+      wrapper.instance().setState = jest.fn();
+      wrapper.update();
       wrapper.instance().handleImageLoad();
-      const actual = wrapper.state();
 
-      expect(actual).toEqual({
+      expect(wrapper.instance().setState).toHaveBeenCalledWith({
         isImageLoaded: true,
-        shouldImageLoad: true,
       });
     });
+  });
+
+  describe('`render`', () => {
+    describe('by default', () => {
+      it('should have the right structure', () => {
+        const actual = getResponsiveImage();
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.placeholderImageUrl` is passed', () => {
+      it('should have the right structure', () => {
+        const actual = getResponsiveImage({
+          placeholderImageUrl: 'ayyy',
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.isFluid` is passed', () => {
+      it('should have the right structure', () => {
+        const actual = getResponsiveImage({
+          isFluid: true,
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.hasRoundedCorners` is passed', () => {
+      it('should have the right structure', () => {
+        const actual = getResponsiveImage({
+          hasRoundedCorners: true,
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.isCircular` is passed', () => {
+      it('should have the right structure', () => {
+        const actual = getResponsiveImage({
+          isCircular: true,
+        });
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.label` is passed', () => {
+      it('should have the right structure', () => {
+        const actual = getResponsiveImage({ label: '🔷' });
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.isLazyLoaded` is false', () => {
+      it('should have the right structure', () => {
+        const actual = getResponsiveImage({ isLazyLoaded: false });
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+  });
+
+  it('should have the right `displayName`', () => {
+    expectComponentToHaveDisplayName(ResponsiveImage, 'ResponsiveImage');
+  });
+
+  it('should get wrapped by `withLazyLoad`', () => {
+    const wrapper = mount(<ComponentWithLazyLoad />);
+
+    expect(wrapper).toMatchSnapshot();
   });
 });

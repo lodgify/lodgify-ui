@@ -3,14 +3,10 @@ import getClassNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import { withLazyLoad } from 'utils/with-lazy-load';
-import {
-  IMAGE_NOT_FOUND,
-  IMAGE_TITLE,
-  IMAGE_WIDGET,
-} from 'utils/default-strings';
+import { IMAGE_TITLE, IMAGE_WIDGET } from 'utils/default-strings';
 import { Paragraph } from 'typography/Paragraph';
 
-import { IMAGE_URL } from './constants';
+import { IMAGE_URL, SRC_SET } from './constants';
 import { getImageMarkup } from './utils/getImageMarkup';
 import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
 
@@ -18,7 +14,7 @@ import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
  * The standard widget for displaying an image.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-class Component extends PureComponent {
+export class Component extends PureComponent {
   state = {
     isImageLoaded: false,
     shouldImageLoad: false,
@@ -82,7 +78,6 @@ Component.defaultProps = {
   alternativeText: IMAGE_WIDGET,
   hasRoundedCorners: false,
   imageHeight: null,
-  imageNotFoundLabelText: IMAGE_NOT_FOUND,
   imageTitle: IMAGE_TITLE,
   imageUrl: '',
   imageWidth: null,
@@ -105,9 +100,6 @@ Component.propTypes = {
   /** The natural height of the image. */
   // eslint-disable-next-line react/no-unused-prop-types
   imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  /** The label text for the when the image is not found. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  imageNotFoundLabelText: PropTypes.string,
   /** Title of the image to show when hovering it on desktop browsers. */
   // eslint-disable-next-line react/no-unused-prop-types
   imageTitle: PropTypes.string,
@@ -138,4 +130,6 @@ Component.propTypes = {
   srcSet: PropTypes.string,
 };
 
-export const ComponentWithLazyLoad = withLazyLoad(IMAGE_URL)(Component);
+export const ComponentWithLazyLoad = withLazyLoad(IMAGE_URL, SRC_SET)(
+  Component
+);
