@@ -206,6 +206,82 @@ exports[`<PropertySearchResult /> if \`props.isShowingPlaceholder\` is passed sh
 </div>
 `;
 
+exports[`<PropertySearchResult /> if \`ratingNumber\` is a truthy value should render the right structure 1`] = `
+<div
+  className="ui card has-search-result"
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Card
+    href="/"
+    target="_self"
+  >
+    <FlexContainer
+      alignContent={null}
+      alignItems={null}
+      flexDirection={null}
+      flexWrap={null}
+      justifyContent={null}
+    >
+      <withLazyLoad(ResponsiveImage)
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        isFluid={true}
+        isLazyLoaded={true}
+      />
+      <Segment
+        raised={true}
+      >
+        <PriceLabel
+          hasShadow={false}
+          isActive={false}
+          isPointing={false}
+          onChange={[Function]}
+          onClick={[Function]}
+          periodText="some priceLabelPeriodText"
+          pricePerPeriod=""
+          pricePerPeriodPrefix="some priceLabelPricePerPeriodPrefix"
+        />
+      </Segment>
+    </FlexContainer>
+    <CardContent>
+      <CardHeader>
+        <Heading
+          className={null}
+          hasMargin={true}
+          isColorInverted={false}
+          size="medium"
+          textAlign={null}
+        >
+          The Cat House
+        </Heading>
+      </CardHeader>
+      <CardDescription>
+        <FlexContainer
+          alignContent={null}
+          alignItems="center"
+          flexDirection="row"
+          flexWrap={null}
+          justifyContent={null}
+        >
+          <Paragraph
+            size="medium"
+            weight={null}
+          >
+            Bed and breakfast
+          </Paragraph>
+        </FlexContainer>
+      </CardDescription>
+      <CardDescription>
+        2 guests · 2 bedrooms · 2 beds · 2 baths
+      </CardDescription>
+      <CardDescription>
+        Pool · Wifi · Washer · Kitchen
+      </CardDescription>
+    </CardContent>
+  </Card>
+</div>
+`;
+
 exports[`<PropertySearchResult /> should render the right structure 1`] = `
 <div
   className="ui card has-search-result"

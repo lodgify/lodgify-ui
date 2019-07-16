@@ -1,3 +1,16 @@
+# [1.226.0](https://github.com/lodgify/lodgify-ui/compare/v1.225.0...v1.226.0) (2019-07-16)
+
+
+### Bug Fixes
+
+* **card.*:** implement propertyType ellipsis ([5ad5daa](https://github.com/lodgify/lodgify-ui/commit/5ad5daa))
+* **PropertySearchResult:** remove rating if zero ([6337703](https://github.com/lodgify/lodgify-ui/commit/6337703))
+
+
+### Features
+
+* **getPropertyTypeWithDot:** implement util ([3ec8d9e](https://github.com/lodgify/lodgify-ui/commit/3ec8d9e))
+
 # [1.225.0](https://github.com/lodgify/lodgify-ui/compare/v1.224.0...v1.225.0) (2019-07-12)
 
 
