@@ -33,12 +33,16 @@ export const Component = ({
   headingText,
   placeholderBackgroundImageUrl,
   searchBarDateRangePickerLocaleCode,
+  searchBarDatesCheckOutLabel,
+  searchBarDatesCheckInLabel,
   searchBarDatesInputFocusedInput,
   searchBarDatesInputOnFocusChange,
   searchBarDatesInputValue,
   searchBarGetIsDayBlocked,
+  searchBarGuestsInputLabel,
   searchBarGuestsInputValue,
   searchBarLocationInputValue,
+  searchBarLocationInputLabel,
   searchBarLocationOptions,
   searchBarModalHeadingText,
   searchBarOnChangeInput,
@@ -47,11 +51,15 @@ export const Component = ({
 }) => {
   const searchBarSharedProps = {
     dateRangePickerLocaleCode: searchBarDateRangePickerLocaleCode,
+    datesCheckInLabel: searchBarDatesCheckInLabel,
+    datesCheckOutLabel: searchBarDatesCheckOutLabel,
     datesInputFocusedInput: searchBarDatesInputFocusedInput,
     datesInputOnFocusChange: searchBarDatesInputOnFocusChange,
     datesInputValue: searchBarDatesInputValue,
     getIsDayBlocked: searchBarGetIsDayBlocked,
+    guestsInputLabel: searchBarGuestsInputLabel,
     guestsInputValue: searchBarGuestsInputValue,
+    locationInputLabel: searchBarLocationInputLabel,
     locationInputValue: searchBarLocationInputValue,
     locationOptions: searchBarLocationOptions,
     onChangeInput: searchBarOnChangeInput,
@@ -156,9 +164,13 @@ Component.defaultProps = {
   searchBarLocationInputValue: undefined,
   placeholderBackgroundImageUrl: null,
   searchBarDateRangePickerLocaleCode: undefined,
+  searchBarDatesCheckInLabel: undefined,
+  searchBarDatesCheckOutLabel: undefined,
   searchBarDatesInputFocusedInput: undefined,
   searchBarDatesInputOnFocusChange: Function.prototype,
   searchBarGetIsDayBlocked: undefined,
+  searchBarGuestsInputLabel: undefined,
+  searchBarLocationInputLabel: undefined,
   searchBarLocationOptions: undefined,
   searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
   searchBarOnChangeInput: undefined,
@@ -229,6 +241,10 @@ Component.propTypes = {
   placeholderBackgroundImageUrl: PropTypes.string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the search bars date range picker. */
   searchBarDateRangePickerLocaleCode: PropTypes.string,
+  /** The label for the date picker check in input of the search bar when there is no value selected. */
+  searchBarDatesCheckInLabel: PropTypes.string,
+  /** The label for the date picker check out input of the search bar when there is no value selected. */
+  searchBarDatesCheckOutLabel: PropTypes.string,
   /** The field of the dates input which is currently focused. Used when consuming `PropertyPageSearchBar` as a controlled component. */
   searchBarDatesInputFocusedInput: PropTypes.oneOf([
     null,
@@ -252,8 +268,12 @@ Component.propTypes = {
    * @returns {boolean}     - Is the day blocked.
    */
   searchBarGetIsDayBlocked: PropTypes.func,
+  /** The label for the guests input of the search bar when there is no value. */
+  searchBarGuestsInputLabel: PropTypes.string,
   /** The value for the guests input of the search bar. Used when consuming `HomepageHero` as a controlled component. */
   searchBarGuestsInputValue: PropTypes.number,
+  /** The label for the location input of the search bar when there is no option selected. */
+  searchBarLocationInputLabel: PropTypes.string,
   /** The value for the location input of the search bar. Used when consuming `HomepageHero` as a controlled component. */
   searchBarLocationInputValue: PropTypes.string,
   /** The options which the user can select in the location field of the search bar. */
