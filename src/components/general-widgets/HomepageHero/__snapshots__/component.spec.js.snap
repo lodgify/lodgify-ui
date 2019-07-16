@@ -512,11 +512,15 @@ exports[`HomepageHero should render the right structure 1`] = `
                                 >
                                   <SearchBar
                                     className="show-on-tablet show-on-computer show-on-widescreen"
+                                    datesCheckInLabel="Check in"
+                                    datesCheckOutLabel="Check out"
                                     datesInputOnFocusChange={[Function]}
                                     getIsDayBlocked={[Function]}
+                                    guestsInputLabel="Guests"
                                     isDisplayedAsModal={false}
                                     isFixed={false}
                                     isStackable={false}
+                                    locationInputLabel="Location"
                                     locationOptions={
                                       Array [
                                         Object {
@@ -757,30 +761,30 @@ exports[`HomepageHero should render the right structure 1`] = `
                                               className="input-container dates-input-container"
                                             >
                                               <WithResponsive(DateRangePicker)
-                                                endDatePlaceholderText="Check-out"
+                                                endDatePlaceholderText="Check out"
                                                 getIsDayBlocked={[Function]}
                                                 name="dates"
                                                 onChange={[Function]}
                                                 onFocusChange={[Function]}
-                                                startDatePlaceholderText="Check-in"
+                                                startDatePlaceholderText="Check in"
                                                 willOpenAbove={true}
                                               >
                                                 <Responsive
                                                   as={[Function]}
-                                                  endDatePlaceholderText="Check-out"
+                                                  endDatePlaceholderText="Check out"
                                                   getIsDayBlocked={[Function]}
                                                   isUserOnMobile={false}
                                                   name="dates"
                                                   onChange={[Function]}
                                                   onFocusChange={[Function]}
                                                   onUpdate={[Function]}
-                                                  startDatePlaceholderText="Check-in"
+                                                  startDatePlaceholderText="Check in"
                                                   willOpenAbove={true}
                                                   windowInnerWidth={1024}
                                                 >
                                                   <DateRangePicker
                                                     displayFormat="DD/MM/YYYY"
-                                                    endDatePlaceholderText="Check-out"
+                                                    endDatePlaceholderText="Check out"
                                                     error={false}
                                                     getIsDayBlocked={[Function]}
                                                     isUserOnMobile={false}
@@ -790,7 +794,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     onBlur={[Function]}
                                                     onChange={[Function]}
                                                     onFocusChange={[Function]}
-                                                    startDatePlaceholderText="Check-in"
+                                                    startDatePlaceholderText="Check in"
                                                     willOpenAbove={true}
                                                     windowInnerWidth={1024}
                                                   >
@@ -854,7 +858,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             daySize={52}
                                                             displayFormat="DD/MM/YYYY"
                                                             endDate={null}
-                                                            endDatePlaceholderText="Check-out"
+                                                            endDatePlaceholderText="Check out"
                                                             focusedInput={null}
                                                             hideKeyboardShortcutsPanel={true}
                                                             isDayBlocked={[Function]}
@@ -895,7 +899,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             onFocusChange={[Function]}
                                                             openDirection="up"
                                                             startDate={null}
-                                                            startDatePlaceholderText="Check-in"
+                                                            startDatePlaceholderText="Check in"
                                                             withPortal={true}
                                                           >
                                                             <div />
@@ -1050,11 +1054,15 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   >
                                     <SearchBar
                                       className={null}
+                                      datesCheckInLabel="Check in"
+                                      datesCheckOutLabel="Check out"
                                       datesInputOnFocusChange={[Function]}
                                       getIsDayBlocked={[Function]}
+                                      guestsInputLabel="Guests"
                                       isDisplayedAsModal={true}
                                       isFixed={false}
                                       isStackable={false}
+                                      locationInputLabel="Location"
                                       locationOptions={
                                         Array [
                                           Object {

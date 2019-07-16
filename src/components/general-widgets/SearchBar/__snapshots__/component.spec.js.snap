@@ -4,11 +4,15 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesCheckInLabel="Check in"
+  datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
+  guestsInputLabel="Guests"
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={false}
+  locationInputLabel="Location"
   locationOptions={
     Array [
       Object {
@@ -398,18 +402,18 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
             className="input-container dates-input-container"
           >
             <WithResponsive(DateRangePicker)
-              endDatePlaceholderText="Check-out"
+              endDatePlaceholderText="Check out"
               getIsDayBlocked={[Function]}
               localeCode="ko"
               name="dates"
               onChange={[Function]}
               onFocusChange={[Function]}
-              startDatePlaceholderText="Check-in"
+              startDatePlaceholderText="Check in"
               willOpenAbove={false}
             >
               <Responsive
                 as={[Function]}
-                endDatePlaceholderText="Check-out"
+                endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
@@ -417,13 +421,13 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 onChange={[Function]}
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
-                startDatePlaceholderText="Check-in"
+                startDatePlaceholderText="Check in"
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
                 <DateRangePicker
                   displayFormat="DD/MM/YYYY"
-                  endDatePlaceholderText="Check-out"
+                  endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
                   isUserOnMobile={false}
@@ -433,7 +437,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocusChange={[Function]}
-                  startDatePlaceholderText="Check-in"
+                  startDatePlaceholderText="Check in"
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -497,7 +501,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           daySize={52}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
-                          endDatePlaceholderText="Check-out"
+                          endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
                           isDayBlocked={[Function]}
@@ -538,7 +542,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           onFocusChange={[Function]}
                           openDirection="down"
                           startDate={null}
-                          startDatePlaceholderText="Check-in"
+                          startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
                           <div />
@@ -751,11 +755,15 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesCheckInLabel="Check in"
+  datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
+  guestsInputLabel="Guests"
   isDisplayedAsModal={false}
   isFixed={true}
   isStackable={false}
+  locationInputLabel="Location"
   locationOptions={
     Array [
       Object {
@@ -1153,18 +1161,18 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                   className="input-container dates-input-container"
                 >
                   <WithResponsive(DateRangePicker)
-                    endDatePlaceholderText="Check-out"
+                    endDatePlaceholderText="Check out"
                     getIsDayBlocked={[Function]}
                     localeCode="ko"
                     name="dates"
                     onChange={[Function]}
                     onFocusChange={[Function]}
-                    startDatePlaceholderText="Check-in"
+                    startDatePlaceholderText="Check in"
                     willOpenAbove={true}
                   >
                     <Responsive
                       as={[Function]}
-                      endDatePlaceholderText="Check-out"
+                      endDatePlaceholderText="Check out"
                       getIsDayBlocked={[Function]}
                       isUserOnMobile={false}
                       localeCode="ko"
@@ -1172,13 +1180,13 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                       onChange={[Function]}
                       onFocusChange={[Function]}
                       onUpdate={[Function]}
-                      startDatePlaceholderText="Check-in"
+                      startDatePlaceholderText="Check in"
                       willOpenAbove={true}
                       windowInnerWidth={1024}
                     >
                       <DateRangePicker
                         displayFormat="DD/MM/YYYY"
-                        endDatePlaceholderText="Check-out"
+                        endDatePlaceholderText="Check out"
                         error={false}
                         getIsDayBlocked={[Function]}
                         isUserOnMobile={false}
@@ -1188,7 +1196,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                         onBlur={[Function]}
                         onChange={[Function]}
                         onFocusChange={[Function]}
-                        startDatePlaceholderText="Check-in"
+                        startDatePlaceholderText="Check in"
                         willOpenAbove={true}
                         windowInnerWidth={1024}
                       >
@@ -1252,7 +1260,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 daySize={52}
                                 displayFormat="DD/MM/YYYY"
                                 endDate={null}
-                                endDatePlaceholderText="Check-out"
+                                endDatePlaceholderText="Check out"
                                 focusedInput={null}
                                 hideKeyboardShortcutsPanel={true}
                                 isDayBlocked={[Function]}
@@ -1293,7 +1301,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 onFocusChange={[Function]}
                                 openDirection="up"
                                 startDate={null}
-                                startDatePlaceholderText="Check-in"
+                                startDatePlaceholderText="Check in"
                                 withPortal={true}
                               >
                                 <div />
@@ -1712,12 +1720,16 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesCheckInLabel="Check in"
+  datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
+  guestsInputLabel="Guests"
   isDisplayedAsModal={false}
   isFixed={false}
   isShowingSummary={true}
   isStackable={false}
+  locationInputLabel="Location"
   locationOptions={
     Array [
       Object {
@@ -2107,18 +2119,18 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
             className="input-container dates-input-container"
           >
             <WithResponsive(DateRangePicker)
-              endDatePlaceholderText="Check-out"
+              endDatePlaceholderText="Check out"
               getIsDayBlocked={[Function]}
               localeCode="ko"
               name="dates"
               onChange={[Function]}
               onFocusChange={[Function]}
-              startDatePlaceholderText="Check-in"
+              startDatePlaceholderText="Check in"
               willOpenAbove={false}
             >
               <Responsive
                 as={[Function]}
-                endDatePlaceholderText="Check-out"
+                endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
@@ -2126,13 +2138,13 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 onChange={[Function]}
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
-                startDatePlaceholderText="Check-in"
+                startDatePlaceholderText="Check in"
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
                 <DateRangePicker
                   displayFormat="DD/MM/YYYY"
-                  endDatePlaceholderText="Check-out"
+                  endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
                   isUserOnMobile={false}
@@ -2142,7 +2154,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocusChange={[Function]}
-                  startDatePlaceholderText="Check-in"
+                  startDatePlaceholderText="Check in"
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -2206,7 +2218,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           daySize={52}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
-                          endDatePlaceholderText="Check-out"
+                          endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
                           isDayBlocked={[Function]}
@@ -2247,7 +2259,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           onFocusChange={[Function]}
                           openDirection="down"
                           startDate={null}
-                          startDatePlaceholderText="Check-in"
+                          startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
                           <div />
@@ -2458,11 +2470,15 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesCheckInLabel="Check in"
+  datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
+  guestsInputLabel="Guests"
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={true}
+  locationInputLabel="Location"
   locationOptions={
     Array [
       Object {
@@ -2852,18 +2868,18 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
             className="input-container dates-input-container"
           >
             <WithResponsive(DateRangePicker)
-              endDatePlaceholderText="Check-out"
+              endDatePlaceholderText="Check out"
               getIsDayBlocked={[Function]}
               localeCode="ko"
               name="dates"
               onChange={[Function]}
               onFocusChange={[Function]}
-              startDatePlaceholderText="Check-in"
+              startDatePlaceholderText="Check in"
               willOpenAbove={false}
             >
               <Responsive
                 as={[Function]}
-                endDatePlaceholderText="Check-out"
+                endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
@@ -2871,13 +2887,13 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 onChange={[Function]}
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
-                startDatePlaceholderText="Check-in"
+                startDatePlaceholderText="Check in"
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
                 <DateRangePicker
                   displayFormat="DD/MM/YYYY"
-                  endDatePlaceholderText="Check-out"
+                  endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
                   isUserOnMobile={false}
@@ -2887,7 +2903,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocusChange={[Function]}
-                  startDatePlaceholderText="Check-in"
+                  startDatePlaceholderText="Check in"
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -2951,7 +2967,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           daySize={52}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
-                          endDatePlaceholderText="Check-out"
+                          endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
                           isDayBlocked={[Function]}
@@ -2992,7 +3008,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           onFocusChange={[Function]}
                           openDirection="down"
                           startDate={null}
-                          startDatePlaceholderText="Check-in"
+                          startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
                           <div />
@@ -3203,11 +3219,15 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesCheckInLabel="Check in"
+  datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
+  guestsInputLabel="Guests"
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={false}
+  locationInputLabel="Location"
   locationOptions={null}
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
@@ -3254,18 +3274,18 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
             className="input-container dates-input-container"
           >
             <WithResponsive(DateRangePicker)
-              endDatePlaceholderText="Check-out"
+              endDatePlaceholderText="Check out"
               getIsDayBlocked={[Function]}
               localeCode="ko"
               name="dates"
               onChange={[Function]}
               onFocusChange={[Function]}
-              startDatePlaceholderText="Check-in"
+              startDatePlaceholderText="Check in"
               willOpenAbove={false}
             >
               <Responsive
                 as={[Function]}
-                endDatePlaceholderText="Check-out"
+                endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
@@ -3273,13 +3293,13 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 onChange={[Function]}
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
-                startDatePlaceholderText="Check-in"
+                startDatePlaceholderText="Check in"
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
                 <DateRangePicker
                   displayFormat="DD/MM/YYYY"
-                  endDatePlaceholderText="Check-out"
+                  endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
                   isUserOnMobile={false}
@@ -3289,7 +3309,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocusChange={[Function]}
-                  startDatePlaceholderText="Check-in"
+                  startDatePlaceholderText="Check in"
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -3353,7 +3373,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           daySize={52}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
-                          endDatePlaceholderText="Check-out"
+                          endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
                           isDayBlocked={[Function]}
@@ -3394,7 +3414,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           onFocusChange={[Function]}
                           openDirection="down"
                           startDate={null}
-                          startDatePlaceholderText="Check-in"
+                          startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
                           <div />
@@ -3605,11 +3625,15 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
 <SearchBar
   className={null}
   dateRangePickerLocaleCode="ko"
+  datesCheckInLabel="Check in"
+  datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
   getIsDayBlocked={[Function]}
+  guestsInputLabel="Guests"
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={false}
+  locationInputLabel="Location"
   locationOptions={
     Array [
       Object {
@@ -3981,18 +4005,18 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
             className="input-container dates-input-container"
           >
             <WithResponsive(DateRangePicker)
-              endDatePlaceholderText="Check-out"
+              endDatePlaceholderText="Check out"
               getIsDayBlocked={[Function]}
               localeCode="ko"
               name="dates"
               onChange={[Function]}
               onFocusChange={[Function]}
-              startDatePlaceholderText="Check-in"
+              startDatePlaceholderText="Check in"
               willOpenAbove={false}
             >
               <Responsive
                 as={[Function]}
-                endDatePlaceholderText="Check-out"
+                endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
@@ -4000,13 +4024,13 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 onChange={[Function]}
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
-                startDatePlaceholderText="Check-in"
+                startDatePlaceholderText="Check in"
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
                 <DateRangePicker
                   displayFormat="DD/MM/YYYY"
-                  endDatePlaceholderText="Check-out"
+                  endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
                   isUserOnMobile={false}
@@ -4016,7 +4040,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocusChange={[Function]}
-                  startDatePlaceholderText="Check-in"
+                  startDatePlaceholderText="Check in"
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -4080,7 +4104,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           daySize={52}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
-                          endDatePlaceholderText="Check-out"
+                          endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
                           isDayBlocked={[Function]}
@@ -4121,7 +4145,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           onFocusChange={[Function]}
                           openDirection="down"
                           startDate={null}
-                          startDatePlaceholderText="Check-in"
+                          startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
                           <div />

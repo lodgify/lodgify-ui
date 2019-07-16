@@ -16,7 +16,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
         isDisabled={false}
         isSearchable={false}
         isValid={false}
-        label="Location"
+        label=""
         name="location"
         noResultsText="No results"
         onBlur={[Function]}
@@ -35,11 +35,9 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
       className="input-container dates-input-container"
     >
       <WithResponsive(DateRangePicker)
-        endDatePlaceholderText="Check-out"
         getIsDayBlocked={[Function]}
         name="dates"
         onChange={[Function]}
-        startDatePlaceholderText="Check-in"
         willOpenAbove={true}
       />
     </div>
@@ -66,7 +64,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
           />
         }
         isValid={false}
-        label="Guests"
+        label=""
         min={0}
         name="guests"
         onBlur={[Function]}
@@ -91,11 +89,9 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
       className="input-container dates-input-container"
     >
       <WithResponsive(DateRangePicker)
-        endDatePlaceholderText="Check-out"
         getIsDayBlocked={[Function]}
         name="dates"
         onChange={[Function]}
-        startDatePlaceholderText="Check-in"
         willOpenAbove={true}
       />
     </div>
@@ -122,7 +118,7 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
           />
         }
         isValid={false}
-        label="Guests"
+        label=""
         min={0}
         name="guests"
         onBlur={[Function]}
