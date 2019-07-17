@@ -170,7 +170,7 @@ export const Component = ({
           {emailAddress && (
             <Menu.Item className="is-selectable">
               <label>{emailAddressLabel}</label>
-              <a href={getHrefMailToString(faxNumber)}>{emailAddress}</a>
+              <a href={getHrefMailToString(emailAddress)}>{emailAddress}</a>
             </Menu.Item>
           )}
           {copyrightText && (
