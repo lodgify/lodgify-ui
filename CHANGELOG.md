@@ -1,3 +1,10 @@
+## [1.227.1](https://github.com/lodgify/lodgify-ui/compare/v1.227.0...v1.227.1) (2019-07-17)
+
+
+### Bug Fixes
+
+* **Footer:** pass email not faxNumber to href ([2ac0a7d](https://github.com/lodgify/lodgify-ui/commit/2ac0a7d))
+
 # [1.227.0](https://github.com/lodgify/lodgify-ui/compare/v1.226.0...v1.227.0) (2019-07-16)
 
 
