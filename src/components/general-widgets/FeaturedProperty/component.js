@@ -59,7 +59,9 @@ export const Component = ({
             {getPropertyDescription(guestsNumber, bedroomsNumber)}
           </Card.Description>
           <Card.Description>
-            <Rating iconSize="tiny" ratingNumber={ratingNumber} />
+            {!!ratingNumber && (
+              <Rating iconSize="tiny" ratingNumber={ratingNumber} />
+            )}
           </Card.Description>
           <Card.Description>
             {getPricePerPeriodMarkup(pricePerPeriod, periodText)}
@@ -81,6 +83,7 @@ Component.defaultProps = {
   periodText: PER_NIGHT,
   placeholderImageUrl: undefined,
   propertyUrlTarget: '_self',
+  ratingNumber: null,
 };
 
 Component.propTypes = {
@@ -115,5 +118,5 @@ Component.propTypes = {
   /** Specifies where to display the linked featured property URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
   propertyUrlTarget: PropTypes.string,
   /** The numeral rating for the property, out of 5 */
-  ratingNumber: PropTypes.number.isRequired,
+  ratingNumber: PropTypes.number,
 };
