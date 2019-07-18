@@ -57,18 +57,22 @@ h5,
   word-wrap: break-word;
 }
 
+h1,
 h1.ui.header {
   line-height: @h1LineHeight;
 }
 
+h2,
 h2.ui.header {
   line-height: @h2LineHeight;
 }
 
+h3,
 h3.ui.header {
   line-height: @h3LineHeight;
 }
 
+h4,
 h4.ui.header {
   line-height: @h4LineHeight;
 }
