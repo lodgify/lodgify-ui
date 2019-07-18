@@ -1625,6 +1625,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                                                       className="top aligned twelve wide column"
                                                     >
                                                       <Paragraph
+                                                        isCompact={false}
                                                         size="medium"
                                                         weight={null}
                                                       >
@@ -1661,6 +1662,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                                                       className="top aligned twelve wide column"
                                                     >
                                                       <Paragraph
+                                                        isCompact={false}
                                                         size="tiny"
                                                         weight={null}
                                                       >
@@ -2765,6 +2767,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                   className="description"
                                 >
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight={null}
                                   >
@@ -2832,6 +2835,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                       className="top aligned twelve wide column"
                                                     >
                                                       <Paragraph
+                                                        isCompact={false}
                                                         size="medium"
                                                         weight={null}
                                                       >
@@ -2868,6 +2872,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                       className="top aligned twelve wide column"
                                                     >
                                                       <Paragraph
+                                                        isCompact={false}
                                                         size="tiny"
                                                         weight={null}
                                                       >
@@ -3252,6 +3257,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                   className="description"
                                 >
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight={null}
                                   >

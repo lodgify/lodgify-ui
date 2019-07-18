@@ -2604,6 +2604,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                           className="privacy-consent-label"
                         >
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight={null}
                           >
@@ -2650,6 +2651,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   className="privacy-consent-label"
                                 >
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight={null}
                                   >
@@ -2681,6 +2683,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   className="privacy-consent-label"
                                 >
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight={null}
                                   >

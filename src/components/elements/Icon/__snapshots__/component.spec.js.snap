@@ -40,6 +40,7 @@ exports[`<Icon /> if \`isReversed\` is true should render the right structure 1`
   some="otherProps"
 >
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >
@@ -70,6 +71,7 @@ exports[`<Icon /> if \`labelText\` is passed should render the right structure 1
     />
   </svg>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >
@@ -92,6 +94,7 @@ exports[`<Icon /> if \`labelWeight\` and \`labelText\` is passed should render t
     />
   </svg>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="heavy"
   >

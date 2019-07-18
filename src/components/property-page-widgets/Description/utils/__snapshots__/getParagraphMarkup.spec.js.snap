@@ -3,6 +3,7 @@
 exports[`getDescriptionTextMarkup should return the right shape 1`] = `
 Array [
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >

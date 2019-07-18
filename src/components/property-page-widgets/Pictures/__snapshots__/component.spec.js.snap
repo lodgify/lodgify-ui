@@ -216,6 +216,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -307,6 +308,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -434,6 +436,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -525,6 +528,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -652,6 +656,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -743,6 +748,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -870,6 +876,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -961,6 +968,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -1088,6 +1096,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -1179,6 +1188,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >

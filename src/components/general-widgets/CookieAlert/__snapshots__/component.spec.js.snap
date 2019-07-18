@@ -176,6 +176,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                       className="field"
                     >
                       <Paragraph
+                        isCompact={false}
                         onBlur={[Function]}
                         onChange={[Function]}
                         size="medium"

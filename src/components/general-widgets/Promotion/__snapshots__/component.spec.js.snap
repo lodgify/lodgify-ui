@@ -540,6 +540,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                           >
                                             <div>
                                               <Paragraph
+                                                isCompact={false}
                                                 size="tiny"
                                                 weight={null}
                                               >
@@ -640,6 +641,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                           >
                                             <div>
                                               <Paragraph
+                                                isCompact={false}
                                                 size="tiny"
                                                 weight={null}
                                               >

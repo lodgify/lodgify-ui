@@ -3,12 +3,14 @@
 exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \`null\` or \`undefined\` should return the right markup 1`] = `
 <div>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="heavy"
   >
     Mid Season
   </Paragraph>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="light"
   >
@@ -37,12 +39,14 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \
 exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \`null\` or \`undefined\` should return the right markup 2`] = `
 <div>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="heavy"
   >
     High Season
   </Paragraph>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="light"
   >
@@ -71,12 +75,14 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \
 exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`null\` or \`undefined\` should return the right markup 1`] = `
 <div>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="heavy"
   >
     Mid Season
   </Paragraph>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="light"
   >
@@ -90,12 +96,14 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`nu
 exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`null\` or \`undefined\` should return the right markup 2`] = `
 <div>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="heavy"
   >
     High Season
   </Paragraph>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="light"
   >
@@ -109,12 +117,14 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`nu
 exports[`getRateCategoryHeadingMarkup if all values are defined should return the right markup 1`] = `
 <div>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="heavy"
   >
     Mid Season
   </Paragraph>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight="light"
   >

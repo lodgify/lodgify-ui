@@ -405,6 +405,7 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
   isStretched={false}
 >
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >

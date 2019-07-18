@@ -171,6 +171,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </i>
                           </Icon>
                           <Paragraph
+                            isCompact={false}
                             key="20km0"
                             size="medium"
                             weight={null}
@@ -182,6 +183,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             key="Airport1"
                             size="medium"
                             weight={null}
@@ -243,6 +245,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </i>
                           </Icon>
                           <Paragraph
+                            isCompact={false}
                             key="2km0"
                             size="medium"
                             weight={null}
@@ -254,6 +257,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             key="Bus1"
                             size="medium"
                             weight={null}
@@ -315,6 +319,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </i>
                           </Icon>
                           <Paragraph
+                            isCompact={false}
                             key="12km0"
                             size="medium"
                             weight={null}
@@ -326,6 +331,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             key="Motorway1"
                             size="medium"
                             weight={null}
@@ -387,6 +393,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </i>
                           </Icon>
                           <Paragraph
+                            isCompact={false}
                             key="2km0"
                             size="medium"
                             weight={null}
@@ -398,6 +405,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             key="Underground1"
                             size="medium"
                             weight={null}
@@ -557,6 +565,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </i>
                           </Icon>
                           <Paragraph
+                            isCompact={false}
                             key="20km0"
                             size="medium"
                             weight={null}
@@ -568,6 +577,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             key="Airport1"
                             size="medium"
                             weight={null}
@@ -629,6 +639,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </i>
                           </Icon>
                           <Paragraph
+                            isCompact={false}
                             key="2km0"
                             size="medium"
                             weight={null}
@@ -640,6 +651,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             key="Bus1"
                             size="medium"
                             weight={null}
@@ -701,6 +713,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </i>
                           </Icon>
                           <Paragraph
+                            isCompact={false}
                             key="12km0"
                             size="medium"
                             weight={null}
@@ -712,6 +725,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             key="Motorway1"
                             size="medium"
                             weight={null}
@@ -773,6 +787,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </i>
                           </Icon>
                           <Paragraph
+                            isCompact={false}
                             key="2km0"
                             size="medium"
                             weight={null}
@@ -784,6 +799,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             key="Underground1"
                             size="medium"
                             weight={null}
@@ -861,6 +877,7 @@ Array [
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="20km0"
           size="medium"
           weight={null}
@@ -872,6 +889,7 @@ Array [
           </p>
         </Paragraph>
         <Paragraph
+          isCompact={false}
           key="Airport1"
           size="medium"
           weight={null}
@@ -933,6 +951,7 @@ Array [
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="2km0"
           size="medium"
           weight={null}
@@ -944,6 +963,7 @@ Array [
           </p>
         </Paragraph>
         <Paragraph
+          isCompact={false}
           key="Bus1"
           size="medium"
           weight={null}
@@ -1005,6 +1025,7 @@ Array [
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="12km0"
           size="medium"
           weight={null}
@@ -1016,6 +1037,7 @@ Array [
           </p>
         </Paragraph>
         <Paragraph
+          isCompact={false}
           key="Motorway1"
           size="medium"
           weight={null}
@@ -1077,6 +1099,7 @@ Array [
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="2km0"
           size="medium"
           weight={null}
@@ -1088,6 +1111,7 @@ Array [
           </p>
         </Paragraph>
         <Paragraph
+          isCompact={false}
           key="Underground1"
           size="medium"
           weight={null}
@@ -1149,6 +1173,7 @@ Array [
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="20km0"
           size="medium"
           weight={null}
@@ -1160,6 +1185,7 @@ Array [
           </p>
         </Paragraph>
         <Paragraph
+          isCompact={false}
           key="Airport1"
           size="medium"
           weight={null}
@@ -1221,6 +1247,7 @@ Array [
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="2km0"
           size="medium"
           weight={null}
@@ -1232,6 +1259,7 @@ Array [
           </p>
         </Paragraph>
         <Paragraph
+          isCompact={false}
           key="Bus1"
           size="medium"
           weight={null}
@@ -1293,6 +1321,7 @@ Array [
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="12km0"
           size="medium"
           weight={null}
@@ -1304,6 +1333,7 @@ Array [
           </p>
         </Paragraph>
         <Paragraph
+          isCompact={false}
           key="Motorway1"
           size="medium"
           weight={null}
@@ -1365,6 +1395,7 @@ Array [
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="2km0"
           size="medium"
           weight={null}
@@ -1376,6 +1407,7 @@ Array [
           </p>
         </Paragraph>
         <Paragraph
+          isCompact={false}
           key="Underground1"
           size="medium"
           weight={null}

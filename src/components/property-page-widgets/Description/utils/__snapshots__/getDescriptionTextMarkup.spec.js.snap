@@ -3,6 +3,7 @@
 exports[`getDescriptionTextMarkup if \`descriptionText\` has fewer than 100 words should return the right shape 1`] = `
 Array [
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >
@@ -14,6 +15,7 @@ Array [
 exports[`getDescriptionTextMarkup if \`descriptionText\` has more than 100 words should return the right shape 1`] = `
 <React.Fragment>
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >
@@ -37,6 +39,7 @@ exports[`getDescriptionTextMarkup if \`descriptionText\` has more than 100 words
     }
   >
     <Paragraph
+      isCompact={false}
       size="medium"
       weight={null}
     >

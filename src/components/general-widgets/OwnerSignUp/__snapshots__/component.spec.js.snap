@@ -614,6 +614,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                           className="privacy-consent-label"
                         >
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight={null}
                           >
@@ -660,6 +661,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                   className="privacy-consent-label"
                                 >
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight={null}
                                   >
@@ -691,6 +693,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                   className="privacy-consent-label"
                                 >
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight={null}
                                   >

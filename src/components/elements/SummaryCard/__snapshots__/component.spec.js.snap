@@ -29,6 +29,7 @@ exports[`SummaryCard should have the right shape 1`] = `
       ratingNumber={4.5}
     />
     <Paragraph
+      isCompact={false}
       size="medium"
       weight={null}
     >

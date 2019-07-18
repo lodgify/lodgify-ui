@@ -352,6 +352,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
             width={null}
           >
             <Paragraph
+              isCompact={false}
               size="tiny"
               weight="heavy"
             >

@@ -39,6 +39,7 @@ exports[`<FilterTrigger /> by default should render the right structure 1`] = `
             />
           </svg>
           <Paragraph
+            isCompact={false}
             size="medium"
             weight={null}
           >
@@ -94,6 +95,7 @@ exports[`<FilterTrigger /> if \`hasFiltersSelected\` === true should render the 
             />
           </svg>
           <Paragraph
+            isCompact={false}
             size="medium"
             weight={null}
           >

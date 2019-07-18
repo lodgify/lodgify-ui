@@ -239,6 +239,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
                   >
                     <Paragraph
+                      isCompact={false}
                       size="medium"
                       weight={null}
                     >
@@ -570,6 +571,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
                   >
                     <Paragraph
+                      isCompact={false}
                       size="medium"
                       weight={null}
                     >
@@ -894,6 +896,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
                   >
                     <Paragraph
+                      isCompact={false}
                       size="medium"
                       weight={null}
                     >
@@ -1222,6 +1225,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
                   >
                     <Paragraph
+                      isCompact={false}
                       size="medium"
                       weight={null}
                     >

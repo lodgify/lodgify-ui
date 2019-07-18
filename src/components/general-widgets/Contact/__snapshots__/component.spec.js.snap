@@ -1310,6 +1310,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           className="privacy-consent-label"
                         >
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight={null}
                           >
@@ -1356,6 +1357,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   className="privacy-consent-label"
                                 >
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight={null}
                                   >
@@ -1387,6 +1389,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   className="privacy-consent-label"
                                 >
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight={null}
                                   >

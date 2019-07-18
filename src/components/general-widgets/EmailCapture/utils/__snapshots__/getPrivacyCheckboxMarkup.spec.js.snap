@@ -15,6 +15,7 @@ exports[`getPrivacyCheckboxMarkup should return the correct structure 1`] = `
       className="privacy-consent-label"
     >
       <Paragraph
+        isCompact={false}
         size="medium"
         weight={null}
       >

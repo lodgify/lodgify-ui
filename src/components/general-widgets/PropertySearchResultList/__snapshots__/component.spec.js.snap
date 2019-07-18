@@ -2201,6 +2201,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             </Pagination>
           </Pagination>
           <Paragraph
+            isCompact={false}
             size="medium"
             weight={null}
           >
