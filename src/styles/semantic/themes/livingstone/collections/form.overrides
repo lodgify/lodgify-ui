@@ -55,7 +55,6 @@
 
   /* Action link */
   a {
-    line-height: @actionLinkLineHeight;
     color: @themeActionColorDefault;
     color: var(@themeActionColorIdentifier, @themeActionColorDefault);
   }
@@ -133,6 +132,10 @@
 
     .field {
       margin-bottom: @cookieAlertFormFieldMarginBottom;
+    }
+
+    a {
+      line-height: @actionLinkLineHeight;
     }
 
     .ui.button {

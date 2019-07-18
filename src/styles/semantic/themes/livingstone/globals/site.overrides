@@ -132,6 +132,10 @@ p.light {
 
 p.is-compact {
   line-height: normal;
+
+  a {
+    line-height: inherit;
+  }
 }
 
 /*-------------------
