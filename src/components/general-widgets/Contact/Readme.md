@@ -1,12 +1,10 @@
 ```jsx
 const {
   propertyOptions,
-  roomOptions,
 } = require('./mock-data/options');
 
 <Contact
   propertyOptions={propertyOptions}
-  roomOptions={roomOptions}
 />
 ```
 
@@ -18,25 +16,14 @@ const {
 No dropdown will be rendered if there is no options prop.
 
 ```jsx
-const {
-  roomOptions,
-} = require('./mock-data/options');
-
-<Contact
-  roomOptions={roomOptions}
-/>
+<Contact />
 ```
 
 A disabled dropdown will be rendered if the options array is empty.
 
 ```jsx
-const {
-  roomOptions,
-} = require('./mock-data/options');
-
 <Contact
   propertyOptions={[]}
-  roomOptions={roomOptions}
 />
 ```
 
@@ -45,12 +32,10 @@ A dropdown will be rendered if the options array is populated.
 ```jsx
 const {
   propertyOptions,
-  roomOptions,
 } = require('./mock-data/options');
 
 <Contact
   propertyOptions={propertyOptions}
-  roomOptions={roomOptions}
 />
 ```
 
@@ -59,7 +44,6 @@ const {
 ```jsx
 const {
   propertyOptions,
-  roomOptions,
 } = require('./mock-data/options');
 
 <Contact
@@ -77,8 +61,6 @@ const {
   privacyConsentLabelText="I give my consent if you "
   propertyInputLabel="Chalet"
   propertyOptions={propertyOptions}
-  roomInputLabel="Salon"
-  roomOptions={roomOptions}
   submitButtonText="Submit"
   isBotProtected
   botProtectionMessage="The form is protected from hackers"
@@ -92,7 +74,6 @@ const {
 ```jsx
 const {
   propertyOptions,
-  roomOptions,
 } = require('./mock-data/options');
 
 const validation = {
@@ -105,11 +86,6 @@ const validation = {
   guests: { isRequired: true },
   name: { isRequired: true },
   phone: { isRequired: true },
-  room: {
-    isRequired: true,
-    invalidMessage: 'Garden is invalid',
-    getIsValid: value => value !== 'garden'
-  },
   privacyConsent: { isRequired: true },
   property: { isRequired: true },
 };
@@ -117,7 +93,6 @@ const validation = {
 <Contact
   isPrivacyConsentRequired
   propertyOptions={propertyOptions}
-  roomOptions={roomOptions}
   validation={validation}
 />
 ```
