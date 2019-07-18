@@ -16,9 +16,3 @@ export const propertyOptions = [
     value: 'blackLodge',
   },
 ];
-
-export const roomOptions = [
-  { text: 'Garden', value: 'garden' },
-  { text: 'Sunlight', value: 'sunlight' },
-  { text: 'Fireplace', value: 'fireplace' },
-];

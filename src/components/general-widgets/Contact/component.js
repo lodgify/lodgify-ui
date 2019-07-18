@@ -22,7 +22,6 @@ import {
   NAME,
   PHONE,
   PROPERTY,
-  ROOM,
   SEND,
 } from 'utils/default-strings';
 import { getPrivacyConsentLabel } from 'utils/get-privacy-consent-label';
@@ -59,8 +58,6 @@ export const Component = ({
   privacyConsentLabelText,
   propertyInputLabel,
   propertyOptions,
-  roomInputLabel,
-  roomOptions,
   submitButtonText,
   successMessage,
   validation,
@@ -114,20 +111,13 @@ export const Component = ({
       maxCharacters={COMMENT_MAX_CHARACTERS}
       name="comments"
     />
-    {(roomOptions || propertyOptions) && (
-      <InputGroup>
-        {propertyOptions && (
-          <Dropdown
-            label={propertyInputLabel}
-            name="property"
-            onChange={onChangeProperty}
-            options={propertyOptions}
-          />
-        )}
-        {roomOptions && (
-          <Dropdown label={roomInputLabel} name="room" options={roomOptions} />
-        )}
-      </InputGroup>
+    {propertyOptions && (
+      <Dropdown
+        label={propertyInputLabel}
+        name="property"
+        onChange={onChangeProperty}
+        options={propertyOptions}
+      />
     )}
     {isBotProtected && botProtectionMessage}
     {isPrivacyConsentRequired && (
@@ -166,8 +156,6 @@ Component.defaultProps = {
   privacyConsentLabelText: ACCEPT_PRIVACY_POLICY,
   propertyInputLabel: PROPERTY,
   propertyOptions: null,
-  roomInputLabel: ROOM,
-  roomOptions: null,
   submitButtonText: SEND,
   successMessage: '',
   validation: {},
@@ -222,21 +210,6 @@ Component.propTypes = {
     PropTypes.shape({
       /** The indent level of a property option. One of: 0, 1, 2, 3, 4, 5 */
       indent: PropTypes.oneOf([0, 1, 2, 3, 4, 5]),
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ),
-  /** The label for the room input.*/
-  roomInputLabel: PropTypes.string,
-  /** The options which the user can select for the room field. */
-  roomOptions: PropTypes.arrayOf(
-    PropTypes.shape({
       /** The visible text for the option. */
       text: PropTypes.string.isRequired,
       /** The underlying value for the option. */
