@@ -126,6 +126,10 @@ p.light {
   color: @lightParagraphColor;
 }
 
+p.is-compact {
+  line-height: normal;
+}
+
 /*-------------------
        Links
 --------------------*/
