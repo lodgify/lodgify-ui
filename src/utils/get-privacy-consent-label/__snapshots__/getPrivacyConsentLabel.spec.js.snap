@@ -5,6 +5,7 @@ exports[`getPrivacyConsentLabel if \`privacyConsentLabelLinkUrl\` is passed shou
   className="privacy-consent-label"
 >
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >
@@ -49,6 +50,7 @@ exports[`getPrivacyConsentLabel if both \`privacyConsentLabelLinkUrl\` and \`pri
   className="privacy-consent-label"
 >
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >
@@ -93,6 +95,7 @@ exports[`getPrivacyConsentLabel should return the right structure 1`] = `
   className="privacy-consent-label"
 >
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >

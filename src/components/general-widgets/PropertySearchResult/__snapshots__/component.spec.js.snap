@@ -63,6 +63,7 @@ exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should ren
             ratingNumber={4.7}
           />
           <Paragraph
+            isCompact={false}
             size="medium"
             weight={null}
           >
@@ -130,6 +131,7 @@ exports[`<PropertySearchResult /> if \`props.isCompact\` is passed should return
             ratingNumber={4.7}
           />
           <Paragraph
+            isCompact={false}
             size="medium"
             weight={null}
           >
@@ -264,6 +266,7 @@ exports[`<PropertySearchResult /> if \`ratingNumber\` is a truthy value should r
           justifyContent={null}
         >
           <Paragraph
+            isCompact={false}
             size="medium"
             weight={null}
           >
@@ -345,6 +348,7 @@ exports[`<PropertySearchResult /> should render the right structure 1`] = `
             ratingNumber={4.7}
           />
           <Paragraph
+            isCompact={false}
             size="medium"
             weight={null}
           >

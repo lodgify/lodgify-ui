@@ -241,6 +241,7 @@ exports[`<IconCard /> if \`props.label\` is defined should render the right stru
         </i>
       </Icon>
       <Paragraph
+        isCompact={false}
         key="🔺0"
         size="medium"
         weight={null}
@@ -301,6 +302,7 @@ exports[`<IconCard /> if \`props.size\` is \`large\` should render the right str
         </i>
       </Icon>
       <Paragraph
+        isCompact={false}
         key="large0"
         size="medium"
         weight={null}

@@ -12,6 +12,7 @@ exports[`\`getFormMarkup\` should render the right structure 1`] = `
   validation={Object {}}
 >
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >

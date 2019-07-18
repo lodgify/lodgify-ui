@@ -2,6 +2,7 @@
 
 exports[`\`getRuleMarkup\` should return the right structure 1`] = `
 <Paragraph
+  isCompact={false}
   size="medium"
   weight={null}
 >

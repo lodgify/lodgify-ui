@@ -85,6 +85,7 @@ exports[`<SleepingArrangements /> by default should render the right structure 1
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="1 king bed0"
           size="medium"
           weight={null}
@@ -143,6 +144,7 @@ exports[`<SleepingArrangements /> by default should render the right structure 1
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="2 single beds0"
           size="medium"
           weight={null}
@@ -201,6 +203,7 @@ exports[`<SleepingArrangements /> by default should render the right structure 1
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="1 kennel0"
           size="medium"
           weight={null}
@@ -302,6 +305,7 @@ exports[`<SleepingArrangements /> if \`props.headingText\` is defined should ren
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="1 king bed0"
           size="medium"
           weight={null}
@@ -360,6 +364,7 @@ exports[`<SleepingArrangements /> if \`props.headingText\` is defined should ren
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="2 single beds0"
           size="medium"
           weight={null}
@@ -418,6 +423,7 @@ exports[`<SleepingArrangements /> if \`props.headingText\` is defined should ren
           </i>
         </Icon>
         <Paragraph
+          isCompact={false}
           key="1 kennel0"
           size="medium"
           weight={null}

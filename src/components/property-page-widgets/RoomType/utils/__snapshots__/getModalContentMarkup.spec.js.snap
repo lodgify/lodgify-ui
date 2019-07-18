@@ -226,6 +226,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
       </ImageGallery>
     </Slideshow>
     <Paragraph
+      isCompact={false}
       size="medium"
       weight={null}
     >
@@ -251,6 +252,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -271,6 +273,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -322,6 +325,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
                 className="bottom aligned twelve wide column"
               >
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight={null}
                 >
@@ -601,6 +605,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -621,6 +626,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -765,6 +771,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                             className="icon has-label"
                           >
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight="heavy"
                             >
@@ -785,6 +792,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                           </i>
                         </Icon>
                         <Paragraph
+                          isCompact={false}
                           size="medium"
                           weight={null}
                         >
@@ -829,6 +837,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                             className="icon has-label"
                           >
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight="heavy"
                             >
@@ -849,6 +858,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                           </i>
                         </Icon>
                         <Paragraph
+                          isCompact={false}
                           size="medium"
                           weight={null}
                         >
@@ -893,6 +903,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                 className="bottom aligned twelve wide column"
               >
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight={null}
                 >
@@ -1001,6 +1012,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
       </ImageGallery>
     </Slideshow>
     <Paragraph
+      isCompact={false}
       size="medium"
       weight={null}
     >
@@ -1026,6 +1038,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -1046,6 +1059,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -1190,6 +1204,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                             className="icon has-label"
                           >
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight="heavy"
                             >
@@ -1210,6 +1225,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                           </i>
                         </Icon>
                         <Paragraph
+                          isCompact={false}
                           size="medium"
                           weight={null}
                         >
@@ -1254,6 +1270,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                             className="icon has-label"
                           >
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight="heavy"
                             >
@@ -1274,6 +1291,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                           </i>
                         </Icon>
                         <Paragraph
+                          isCompact={false}
                           size="medium"
                           weight={null}
                         >
@@ -1318,6 +1336,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                 className="bottom aligned twelve wide column"
               >
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight={null}
                 >
@@ -1579,6 +1598,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
       </ImageGallery>
     </Slideshow>
     <Paragraph
+      isCompact={false}
       size="medium"
       weight={null}
     >
@@ -1604,6 +1624,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -1624,6 +1645,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -1768,6 +1790,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                             className="icon has-label"
                           >
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight="heavy"
                             >
@@ -1788,6 +1811,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                           </i>
                         </Icon>
                         <Paragraph
+                          isCompact={false}
                           size="medium"
                           weight={null}
                         >
@@ -1832,6 +1856,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                             className="icon has-label"
                           >
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight="heavy"
                             >
@@ -1852,6 +1877,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                           </i>
                         </Icon>
                         <Paragraph
+                          isCompact={false}
                           size="medium"
                           weight={null}
                         >
@@ -1896,6 +1922,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                 className="bottom aligned twelve wide column"
               >
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight={null}
                 >
@@ -2145,6 +2172,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
       </ImageGallery>
     </Slideshow>
     <Paragraph
+      isCompact={false}
       size="medium"
       weight={null}
     >
@@ -2170,6 +2198,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -2190,6 +2219,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             role="listitem"
           >
             <Paragraph
+              isCompact={false}
               size="medium"
               weight="heavy"
             >
@@ -2334,6 +2364,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                             className="icon has-label"
                           >
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight="heavy"
                             >
@@ -2354,6 +2385,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                           </i>
                         </Icon>
                         <Paragraph
+                          isCompact={false}
                           size="medium"
                           weight={null}
                         >
@@ -2398,6 +2430,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                             className="icon has-label"
                           >
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight="heavy"
                             >
@@ -2418,6 +2451,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                           </i>
                         </Icon>
                         <Paragraph
+                          isCompact={false}
                           size="medium"
                           weight={null}
                         >
@@ -2462,6 +2496,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                 className="bottom aligned twelve wide column"
               >
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight={null}
                 >

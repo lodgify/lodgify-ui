@@ -184,6 +184,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -231,6 +232,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -278,6 +280,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -325,6 +328,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -410,6 +414,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -466,6 +471,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -522,6 +528,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -578,6 +585,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -704,6 +712,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                     />
                   </svg>
                   <Paragraph
+                    isCompact={false}
                     size="medium"
                     weight={null}
                   >
@@ -742,6 +751,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
                     />
                   </svg>
                   <Paragraph
+                    isCompact={false}
                     size="medium"
                     weight={null}
                   >
@@ -940,6 +950,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -987,6 +998,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -1034,6 +1046,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -1081,6 +1094,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -1166,6 +1180,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -1222,6 +1237,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -1278,6 +1294,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -1334,6 +1351,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -1367,6 +1385,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
               className="top aligned twelve wide column"
             >
               <Paragraph
+                isCompact={false}
                 key="Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.0"
                 size="medium"
                 weight={null}
@@ -1378,6 +1397,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                 </p>
               </Paragraph>
               <Paragraph
+                isCompact={false}
                 key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.1"
                 size="medium"
                 weight={null}
@@ -1450,6 +1470,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                     />
                   </svg>
                   <Paragraph
+                    isCompact={false}
                     size="medium"
                     weight={null}
                   >
@@ -1488,6 +1509,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
                     />
                   </svg>
                   <Paragraph
+                    isCompact={false}
                     size="medium"
                     weight={null}
                   >
@@ -1690,6 +1712,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -1737,6 +1760,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -1784,6 +1808,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -1831,6 +1856,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -1916,6 +1942,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -1972,6 +1999,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -2028,6 +2056,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -2084,6 +2113,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -2117,6 +2147,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
               className="top aligned twelve wide column"
             >
               <Paragraph
+                isCompact={false}
                 key="Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.0"
                 size="medium"
                 weight={null}
@@ -2128,6 +2159,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                 </p>
               </Paragraph>
               <Paragraph
+                isCompact={false}
                 key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.1"
                 size="medium"
                 weight={null}
@@ -2139,6 +2171,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                 </p>
               </Paragraph>
               <Paragraph
+                isCompact={false}
                 key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per...2"
                 size="medium"
                 weight={null}
@@ -2310,6 +2343,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                     />
                   </svg>
                   <Paragraph
+                    isCompact={false}
                     size="medium"
                     weight={null}
                   >
@@ -2348,6 +2382,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                     />
                   </svg>
                   <Paragraph
+                    isCompact={false}
                     size="medium"
                     weight={null}
                   >
@@ -2531,6 +2566,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -2578,6 +2614,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -2625,6 +2662,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -2672,6 +2710,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -2757,6 +2796,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -2813,6 +2853,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -2869,6 +2910,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -2925,6 +2967,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -3126,6 +3169,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -3173,6 +3217,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -3220,6 +3265,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -3267,6 +3313,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                               />
                             </svg>
                             <Paragraph
+                              isCompact={false}
                               size="medium"
                               weight={null}
                             >
@@ -3352,6 +3399,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -3408,6 +3456,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -3464,6 +3513,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -3520,6 +3570,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                                   />
                                 </svg>
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight={null}
                                 >
@@ -3600,6 +3651,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                     />
                   </svg>
                   <Paragraph
+                    isCompact={false}
                     size="medium"
                     weight={null}
                   >
@@ -3638,6 +3690,7 @@ exports[`<Description /> should have the correct structure 1`] = `
                     />
                   </svg>
                   <Paragraph
+                    isCompact={false}
                     size="medium"
                     weight={null}
                   >

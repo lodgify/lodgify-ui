@@ -25,6 +25,7 @@ Array [
       }
     >
       <Paragraph
+        isCompact={false}
         size="medium"
         weight="heavy"
       >

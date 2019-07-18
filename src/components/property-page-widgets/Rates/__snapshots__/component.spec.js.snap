@@ -407,6 +407,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               >
                                 <div>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="heavy"
                                   >
@@ -417,6 +418,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                     </p>
                                   </Paragraph>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="light"
                                   >
@@ -490,6 +492,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -550,6 +553,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -610,6 +614,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -670,6 +675,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -758,6 +764,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               >
                                 <div>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="heavy"
                                   >
@@ -768,6 +775,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                     </p>
                                   </Paragraph>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="light"
                                   >
@@ -841,6 +849,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -901,6 +910,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -961,6 +971,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -1021,6 +1032,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -1109,6 +1121,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               >
                                 <div>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="heavy"
                                   >
@@ -1119,6 +1132,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                     </p>
                                   </Paragraph>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="light"
                                   >
@@ -1192,6 +1206,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -1252,6 +1267,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -1312,6 +1328,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -1372,6 +1389,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -1432,12 +1450,14 @@ exports[`<Rates /> by default should have the right structure 1`] = `
             Array [
               <div>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="heavy"
                 >
                   Season 1
                 </Paragraph>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="light"
                 >
@@ -1472,12 +1492,14 @@ exports[`<Rates /> by default should have the right structure 1`] = `
             Array [
               <div>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="heavy"
                 >
                   Season 2
                 </Paragraph>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="light"
                 >
@@ -1512,12 +1534,14 @@ exports[`<Rates /> by default should have the right structure 1`] = `
             Array [
               <div>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="heavy"
                 >
                   Season 3
                 </Paragraph>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="light"
                 >
@@ -2002,6 +2026,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                       >
                         <div>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="heavy"
                           >
@@ -2012,6 +2037,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="light"
                           >
@@ -2119,6 +2145,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                       >
                         <div>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="heavy"
                           >
@@ -2129,6 +2156,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="light"
                           >
@@ -2236,6 +2264,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                       >
                         <div>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="heavy"
                           >
@@ -2246,6 +2275,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="light"
                           >
@@ -3186,6 +3216,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
       }
     >
       <Paragraph
+        isCompact={false}
         size="medium"
         weight="heavy"
       >
@@ -3974,6 +4005,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               >
                                 <div>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="heavy"
                                   >
@@ -3984,6 +4016,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                     </p>
                                   </Paragraph>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="light"
                                   >
@@ -4057,6 +4090,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4117,6 +4151,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4177,6 +4212,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4237,6 +4273,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4325,6 +4362,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               >
                                 <div>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="heavy"
                                   >
@@ -4335,6 +4373,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                     </p>
                                   </Paragraph>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="light"
                                   >
@@ -4408,6 +4447,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4468,6 +4508,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4528,6 +4569,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4588,6 +4630,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4676,6 +4719,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               >
                                 <div>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="heavy"
                                   >
@@ -4686,6 +4730,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                     </p>
                                   </Paragraph>
                                   <Paragraph
+                                    isCompact={false}
                                     size="medium"
                                     weight="light"
                                   >
@@ -4759,6 +4804,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4819,6 +4865,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4879,6 +4926,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4939,6 +4987,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 className="left floated top aligned column"
                               >
                                 <Paragraph
+                                  isCompact={false}
                                   size="medium"
                                   weight="heavy"
                                 >
@@ -4999,12 +5048,14 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             Array [
               <div>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="heavy"
                 >
                   Season 1
                 </Paragraph>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="light"
                 >
@@ -5039,12 +5090,14 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             Array [
               <div>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="heavy"
                 >
                   Season 2
                 </Paragraph>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="light"
                 >
@@ -5079,12 +5132,14 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             Array [
               <div>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="heavy"
                 >
                   Season 3
                 </Paragraph>
                 <Paragraph
+                  isCompact={false}
                   size="medium"
                   weight="light"
                 >
@@ -5569,6 +5624,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                       >
                         <div>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="heavy"
                           >
@@ -5579,6 +5635,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="light"
                           >
@@ -5686,6 +5743,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                       >
                         <div>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="heavy"
                           >
@@ -5696,6 +5754,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="light"
                           >
@@ -5803,6 +5862,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                       >
                         <div>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="heavy"
                           >
@@ -5813,6 +5873,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             </p>
                           </Paragraph>
                           <Paragraph
+                            isCompact={false}
                             size="medium"
                             weight="light"
                           >

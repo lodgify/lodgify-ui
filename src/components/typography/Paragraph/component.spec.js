@@ -1,49 +1,37 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import {
-  expectComponentToBe,
-  expectComponentToHaveDisplayName,
-} from '@lodgify/enzyme-jest-expect-helpers';
+import { mount } from 'enzyme';
+import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component as Paragraph } from './component';
 
-const getParagraph = props => shallow(<Paragraph {...props} />);
-
 const children = ['🚸', 2];
 
+const getParagraph = props =>
+  mount(<Paragraph children={children} {...props} />);
+
 describe('<Paragraph />', () => {
-  it('should default render a single `p` element', () => {
-    const wrapper = getParagraph({ children });
+  describe('by default', () => {
+    it('should render the right structure', () => {
+      const actual = getParagraph();
 
-    expectComponentToBe(wrapper, 'p');
+      expect(actual).toMatchSnapshot();
+    });
   });
 
-  it('should default to adding no className', () => {
-    const header = getParagraph({ children });
-    const actual = header.find('p.tiny');
+  describe('if `props.isCompact` is passed', () => {
+    it('should render the right structure', () => {
+      const actual = getParagraph({ isCompact: true });
 
-    expect(actual).toHaveLength(0);
+      expect(actual).toMatchSnapshot();
+    });
   });
 
-  it('should add no className if `props.size` is `medium`', () => {
-    const header = getParagraph({ children, size: 'medium' });
-    const actual = header.find('p.medium');
+  describe('if `props.size` === tiny', () => {
+    it('should render the right structure', () => {
+      const actual = getParagraph({ size: 'tiny' });
 
-    expect(actual).toHaveLength(0);
-  });
-
-  it('should add className `tiny` if `props.size` is `tiny`', () => {
-    const header = getParagraph({ children, size: 'tiny' });
-    const actual = header.find(`p.tiny`);
-
-    expect(actual).toHaveLength(1);
-  });
-
-  it('should render children', () => {
-    const header = getParagraph({ children });
-    const actual = header.contains(children);
-
-    expect(actual).toBe(true);
+      expect(actual).toMatchSnapshot();
+    });
   });
 
   it('should have displayName `Paragraph`', () => {

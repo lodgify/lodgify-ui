@@ -58,6 +58,7 @@ exports[`<ResponsiveImage /> \`render\` if \`props.label\` is passed should have
     id="image"
   />
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >

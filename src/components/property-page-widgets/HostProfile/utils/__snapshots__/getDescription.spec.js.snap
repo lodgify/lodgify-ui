@@ -9,6 +9,7 @@ exports[`\`getDescription\` if \`description\` is valid html should render the r
   width={null}
 >
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >
@@ -28,6 +29,7 @@ exports[`\`getDescription\` should have the right structure 1`] = `
   width={null}
 >
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >

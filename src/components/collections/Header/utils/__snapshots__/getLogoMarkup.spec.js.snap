@@ -54,6 +54,7 @@ exports[`getLogoMarkup by default should render the right structure 1`] = `
           </Header>
         </Heading>
         <Paragraph
+          isCompact={false}
           size="tiny"
           weight={null}
         >
@@ -69,9 +70,7 @@ exports[`getLogoMarkup by default should render the right structure 1`] = `
 </MenuItem>
 `;
 
-exports[
-  `getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are passed should render the right structure 1`
-] = `
+exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are passed should render the right structure 1`] = `
 <MenuItem
   className="has-sub-text"
   href="someLogoHref"
@@ -121,6 +120,7 @@ exports[
           />
         </Image>
         <Paragraph
+          isCompact={false}
           size="tiny"
           weight={null}
         >

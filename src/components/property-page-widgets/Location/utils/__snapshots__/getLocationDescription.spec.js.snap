@@ -21,6 +21,7 @@ exports[`getLocationDescription if passed a string that doesnt contain any HTML 
   width={null}
 >
   <Paragraph
+    isCompact={false}
     size="medium"
     weight={null}
   >

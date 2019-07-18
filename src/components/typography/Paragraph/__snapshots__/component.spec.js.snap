@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paragraph /> by default should render the right structure 1`] = `
+<Paragraph
+  isCompact={false}
+  size="medium"
+  weight={null}
+>
+  <p
+    className=""
+  >
+    🚸
+    2
+  </p>
+</Paragraph>
+`;
+
+exports[`<Paragraph /> if \`props.isCompact\` is passed should render the right structure 1`] = `
+<Paragraph
+  isCompact={true}
+  size="medium"
+  weight={null}
+>
+  <p
+    className="is-compact"
+  >
+    🚸
+    2
+  </p>
+</Paragraph>
+`;
+
+exports[`<Paragraph /> if \`props.size\` === tiny should render the right structure 1`] = `
+<Paragraph
+  isCompact={false}
+  size="tiny"
+  weight={null}
+>
+  <p
+    className="tiny"
+  >
+    🚸
+    2
+  </p>
+</Paragraph>
+`;
