@@ -1,3 +1,10 @@
+# [1.228.0](https://github.com/lodgify/lodgify-ui/compare/v1.227.2...v1.228.0) (2019-07-18)
+
+
+### Features
+
+* **Contact:** remove roomoptions ([7a46bf4](https://github.com/lodgify/lodgify-ui/commit/7a46bf4))
+
 ## [1.227.2](https://github.com/lodgify/lodgify-ui/compare/v1.227.1...v1.227.2) (2019-07-18)
 
 
