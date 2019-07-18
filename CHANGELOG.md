@@ -1,3 +1,10 @@
+## [1.227.2](https://github.com/lodgify/lodgify-ui/compare/v1.227.1...v1.227.2) (2019-07-18)
+
+
+### Bug Fixes
+
+* **FeaturedProperty:** remove rating requirement ([fa9afb5](https://github.com/lodgify/lodgify-ui/commit/fa9afb5))
+
 ## [1.227.1](https://github.com/lodgify/lodgify-ui/compare/v1.227.0...v1.227.1) (2019-07-17)
 
 
