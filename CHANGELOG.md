@@ -1,3 +1,16 @@
+# [1.229.0](https://github.com/lodgify/lodgify-ui/compare/v1.228.0...v1.229.0) (2019-07-19)
+
+
+### Bug Fixes
+
+* **globals:** increase h2 line height ([18f9689](https://github.com/lodgify/lodgify-ui/commit/18f9689))
+
+
+### Features
+
+* **Form:** links in isCompact paragraphs have reduced lineheight ([ebf830a](https://github.com/lodgify/lodgify-ui/commit/ebf830a))
+* **Paragraph:** expose isCompact prop ([72c079b](https://github.com/lodgify/lodgify-ui/commit/72c079b))
+
 # [1.228.0](https://github.com/lodgify/lodgify-ui/compare/v1.227.2...v1.228.0) (2019-07-18)
 
 
