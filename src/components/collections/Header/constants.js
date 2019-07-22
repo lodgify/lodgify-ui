@@ -1,1 +1,1 @@
-export const MINIMUM_LOGO_SPACING = 250;
+export const HEADER_HORIZONTAL_PADDING = 80;
