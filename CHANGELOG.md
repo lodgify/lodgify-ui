@@ -1,3 +1,10 @@
+## [1.229.1](https://github.com/lodgify/lodgify-ui/compare/v1.229.0...v1.229.1) (2019-07-23)
+
+
+### Bug Fixes
+
+* **sidebar.*:** increase close icon z-index ([52fd446](https://github.com/lodgify/lodgify-ui/commit/52fd446))
+
 # [1.229.0](https://github.com/lodgify/lodgify-ui/compare/v1.228.0...v1.229.0) (2019-07-19)
 
 
