@@ -2,6 +2,7 @@ jest.mock('debounce');
 jest.mock('./utils/getNavigationItemsWidth');
 jest.mock('./utils/getMenuWidth');
 jest.mock('./utils/getIsMenuHidden');
+jest.mock('./utils/getLogoWidth');
 
 import React from 'react';
 import { debounce } from 'debounce';
@@ -13,6 +14,7 @@ import { navigationItems } from './mock-data/navigationItems';
 import { getNavigationItemsWidth } from './utils/getNavigationItemsWidth';
 import { getMenuWidth } from './utils/getMenuWidth';
 import { getIsMenuHidden } from './utils/getIsMenuHidden';
+import { getLogoWidth } from './utils/getLogoWidth';
 
 const logoText = 'someLogoText';
 const props = {
@@ -118,15 +120,18 @@ describe('<Header />', () => {
       it('should call `getIsMenuHidden` with the right arguments', () => {
         const wrapper = getHeaderShallow();
         const MENU_WIDTH = 'some other width';
+        const LOGO_WIDTH = 'the logo measures';
 
         getMenuWidth.mockReturnValueOnce(MENU_WIDTH);
+        getLogoWidth.mockReturnValueOnce(LOGO_WIDTH);
         wrapper
           .instance()
           .componentDidUpdate(undefined, { windowInnerWidth: 'something new' });
 
         expect(getIsMenuHidden).toHaveBeenCalledWith(
           MENU_WIDTH,
-          wrapper.state('navigationItemsWidth')
+          wrapper.state('navigationItemsWidth'),
+          LOGO_WIDTH
         );
       });
 

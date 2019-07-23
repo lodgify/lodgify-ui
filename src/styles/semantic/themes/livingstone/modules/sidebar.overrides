@@ -17,6 +17,7 @@
       color: @closeColor;
       margin: 0;
       padding: @closePadding;
+      z-index: @closeZIndex;
 
       > svg {
         background: @closeBackgroundColor;

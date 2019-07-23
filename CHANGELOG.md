@@ -1,3 +1,23 @@
+# [1.230.0](https://github.com/lodgify/lodgify-ui/compare/v1.229.1...v1.230.0) (2019-07-23)
+
+
+### Bug Fixes
+
+* **getIsMenuHidden:** remove static logo size ([e29f733](https://github.com/lodgify/lodgify-ui/commit/e29f733))
+
+
+### Features
+
+* **getLogoWidth:** implement util and test ([5822302](https://github.com/lodgify/lodgify-ui/commit/5822302))
+* **Header:** pass logoWidth to getIsMenuHidden ([a4a7cd1](https://github.com/lodgify/lodgify-ui/commit/a4a7cd1))
+
+## [1.229.1](https://github.com/lodgify/lodgify-ui/compare/v1.229.0...v1.229.1) (2019-07-23)
+
+
+### Bug Fixes
+
+* **sidebar.*:** increase close icon z-index ([52fd446](https://github.com/lodgify/lodgify-ui/commit/52fd446))
+
 # [1.229.0](https://github.com/lodgify/lodgify-ui/compare/v1.228.0...v1.229.0) (2019-07-19)
 
 
