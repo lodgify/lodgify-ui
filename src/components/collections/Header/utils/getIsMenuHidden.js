@@ -1,9 +1,10 @@
-import { MINIMUM_LOGO_SPACING } from '../constants';
+import { HEADER_HORIZONTAL_PADDING } from '../constants';
 
 /**
  * @param  {number} menuWidth
  * @param  {number} navigationItemsWidth
+ * @param  {number} logoWidth
  * @return {boolean}
  */
-export const getIsMenuHidden = (menuWidth, navigationItemsWidth) =>
-  menuWidth <= navigationItemsWidth + MINIMUM_LOGO_SPACING;
+export const getIsMenuHidden = (menuWidth, navigationItemsWidth, logoWidth) =>
+  menuWidth - HEADER_HORIZONTAL_PADDING <= navigationItemsWidth + logoWidth;

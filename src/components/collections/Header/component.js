@@ -12,6 +12,7 @@ import { getLogoMarkup } from './utils/getLogoMarkup';
 import { getIsMenuHidden } from './utils/getIsMenuHidden';
 import { getStandardMenuMarkup } from './utils/getStandardMenuMarkup';
 import { HiddenMenu } from './utils/HiddenMenu';
+import { getLogoWidth } from './utils/getLogoWidth';
 
 /**
  * A header displays a logo, grouped navigation items
@@ -40,11 +41,13 @@ export class Component extends PureComponent {
   componentDidUpdate = (previousProps, previousState) => {
     if (previousState.windowInnerWidth !== this.state.windowInnerWidth) {
       const menuWidth = getMenuWidth(this.header);
+      const logoWidth = getLogoWidth(this.header);
 
       this.setState({
         isMenuHidden: getIsMenuHidden(
           menuWidth,
-          this.state.navigationItemsWidth
+          this.state.navigationItemsWidth,
+          logoWidth
         ),
       });
     }
