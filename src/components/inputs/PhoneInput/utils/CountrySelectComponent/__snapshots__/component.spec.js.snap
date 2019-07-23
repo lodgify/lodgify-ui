@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountrySelectComponent render should render the right structure 1`] = `
+<CountrySelectComponent
+  onChange={[Function]}
+  onFocus={[Function]}
+  options={Array []}
+>
+  <Dropdown
+    error={false}
+    getOptionsWithSearch={[Function]}
+    icon={null}
+    initialValue={null}
+    isCompact={false}
+    isDisabled={false}
+    isFluid={true}
+    isSearchable={false}
+    isValid={false}
+    label=""
+    name=""
+    noResultsText="No results"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    options={
+      Array [
+        Object {
+          "text": "some text",
+          "value": "some value ",
+        },
+      ]
+    }
+    willOpenAbove={false}
+  >
+    <div
+      className="dropdown-container"
+    >
+      <Dropdown
+        additionLabel="Add "
+        additionPosition="top"
+        closeOnBlur={true}
+        compact={false}
+        deburr={false}
+        disabled={false}
+        icon={
+          <Icon
+            color={null}
+            hasBorder={false}
+            isButton={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText={null}
+            labelWeight={null}
+            name="caret down"
+            path={null}
+            size={null}
+          />
+        }
+        minCharacters={1}
+        noResultsMessage="No results"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        open={false}
+        openOnFocus={true}
+        options={
+          Array [
+            Object {
+              "key": "0",
+              "label": undefined,
+              "text": "some text",
+              "value": "some value ",
+            },
+          ]
+        }
+        renderLabel={[Function]}
+        search={[Function]}
+        searchInput="text"
+        selectOnBlur={false}
+        selectOnNavigation={true}
+        selection={true}
+        upward={false}
+        value={null}
+        wrapSelection={true}
+      >
+        <div
+          aria-disabled={false}
+          aria-expanded={false}
+          className="ui search selection dropdown"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseDown={[Function]}
+          role="combobox"
+        >
+          <DropdownSearchInput
+            inputRef={[Function]}
+            key="text"
+            onChange={[Function]}
+            style={
+              Object {
+                "width": undefined,
+              }
+            }
+            tabIndex={0}
+            type="text"
+            value=""
+          >
+            <input
+              aria-autocomplete="list"
+              autoComplete="off"
+              className="search"
+              onChange={[Function]}
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+          </DropdownSearchInput>
+          <div
+            aria-live="polite"
+            className="text"
+            role="alert"
+          />
+          <Icon
+            color={null}
+            hasBorder={false}
+            isButton={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText={null}
+            labelWeight={null}
+            name="caret down"
+            onClick={[Function]}
+            path={null}
+            size={null}
+          >
+            <i
+              className="icon"
+              onClick={[Function]}
+            >
+              <svg
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20,8.5l-8,7-8-7Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </i>
+          </Icon>
+          <DropdownMenu
+            open={false}
+            role="listbox"
+          >
+            <div
+              className="menu transition"
+              role="listbox"
+            >
+              <DropdownItem
+                active={false}
+                key="0"
+                onClick={[Function]}
+                selected={true}
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+                text="some text"
+                value="some value "
+              >
+                <div
+                  aria-checked={false}
+                  aria-selected={true}
+                  className="selected item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                    key="some text"
+                  >
+                    some text
+                  </span>
+                </div>
+              </DropdownItem>
+            </div>
+          </DropdownMenu>
+        </div>
+      </Dropdown>
+    </div>
+  </Dropdown>
+</CountrySelectComponent>
+`;

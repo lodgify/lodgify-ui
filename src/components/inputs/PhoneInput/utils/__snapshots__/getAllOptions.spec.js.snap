@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getAllOptions should return the right shape 1`] = `
+Array [
+  Object {
+    "content": <React.Fragment>
+      JP
+      jappppan +81
+    </React.Fragment>,
+    "name": "jappppan",
+    "text": "JP",
+    "value": "JP",
+  },
+  Object {
+    "content": <React.Fragment>
+      DE
+      gerrrmany +49
+    </React.Fragment>,
+    "name": "gerrrmany",
+    "text": "DE",
+    "value": "DE",
+  },
+  Object {
+    "content": <React.Fragment>
+      GB
+      uunnniited +44
+    </React.Fragment>,
+    "name": "uunnniited",
+    "text": "GB",
+    "value": "GB",
+  },
+]
+`;

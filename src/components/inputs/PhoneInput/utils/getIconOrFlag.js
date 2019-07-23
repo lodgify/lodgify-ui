@@ -18,6 +18,6 @@ export const getIconOrFlag = country => {
   return flagName && VALID_FLAG_NAMES.includes(flagName) ? (
     <Flag name={flagName} />
   ) : (
-    <Icon name={ICON_NAMES.PHONE} />
+    <Icon name={ICON_NAMES.PHONE} size="small" />
   );
 };
