@@ -368,6 +368,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
           >
             <Dropdown
               error={false}
+              getOptionsWithSearch={null}
               icon="map pin"
               initialValue={null}
               isCompact={false}
@@ -379,6 +380,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
               noResultsText="No results"
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               options={
                 Array [
                   Object {

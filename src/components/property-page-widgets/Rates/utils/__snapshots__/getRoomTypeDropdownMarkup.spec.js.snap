@@ -37,6 +37,7 @@ Array [
       </Paragraph>
       <Dropdown
         error={false}
+        getOptionsWithSearch={null}
         icon={null}
         initialValue={null}
         isCompact={false}
@@ -48,6 +49,7 @@ Array [
         noResultsText="No results"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         options={
           Array [
             Object {
@@ -103,14 +105,20 @@ Array [
             options={
               Array [
                 Object {
+                  "key": "0",
+                  "label": undefined,
                   "text": "EUR €",
                   "value": "eur",
                 },
                 Object {
+                  "key": "1",
+                  "label": undefined,
                   "text": "GBP £",
                   "value": "gbp",
                 },
                 Object {
+                  "key": "2",
+                  "label": undefined,
                   "text": "USD $",
                   "value": "usd",
                 },
@@ -182,7 +190,7 @@ Array [
                 >
                   <DropdownItem
                     active={true}
-                    key="eur"
+                    key="0"
                     onClick={[Function]}
                     selected={true}
                     style={
@@ -215,7 +223,7 @@ Array [
                   </DropdownItem>
                   <DropdownItem
                     active={false}
-                    key="gbp"
+                    key="1"
                     onClick={[Function]}
                     selected={false}
                     style={
@@ -248,7 +256,7 @@ Array [
                   </DropdownItem>
                   <DropdownItem
                     active={false}
-                    key="usd"
+                    key="2"
                     onClick={[Function]}
                     selected={false}
                     style={

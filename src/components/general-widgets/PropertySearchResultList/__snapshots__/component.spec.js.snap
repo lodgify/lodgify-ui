@@ -332,6 +332,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         </Heading>
         <Dropdown
           error={false}
+          getOptionsWithSearch={null}
           icon={null}
           initialValue={null}
           isCompact={true}
@@ -343,6 +344,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
           noResultsText="No results"
           onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           options={
             Array [
               Object {
@@ -392,6 +394,8 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
                 Array [
                   Object {
                     "content": "Price (lowest to highest)",
+                    "key": "0",
+                    "label": undefined,
                     "text": "Sort by price (lowest first)",
                     "value": "price",
                   },
@@ -465,7 +469,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
                     <DropdownItem
                       active={true}
                       content="Price (lowest to highest)"
-                      key="price"
+                      key="0"
                       onClick={[Function]}
                       selected={true}
                       style={
