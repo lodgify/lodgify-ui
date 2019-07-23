@@ -47,6 +47,8 @@ export const Component = ({
   nameInputLabel,
   notesInputLabel,
   onSubmit,
+  phoneInputCountryNames,
+  phoneInputInitialCountryValue,
   phoneInputLabel,
   privacyConsentLabelText,
   privacyConsentLabelLinkText,
@@ -77,6 +79,8 @@ export const Component = ({
       />
       <PhoneInput
         autoComplete="tel"
+        countryNames={phoneInputCountryNames}
+        initialCountryValue={phoneInputInitialCountryValue}
         label={phoneInputLabel}
         maxCharacters={PHONE_MAX_CHARACTERS}
         name="phone"
@@ -136,6 +140,8 @@ Component.defaultProps = {
   nameInputLabel: NAME,
   notesInputLabel: NOTES,
   onSubmit: Function.prototype,
+  phoneInputCountryNames: undefined,
+  phoneInputInitialCountryValue: undefined,
   phoneInputLabel: PHONE,
   privacyConsentLabelText: ACCEPT_PRIVACY_POLICY,
   privacyConsentLabelLinkText: undefined,
@@ -171,6 +177,10 @@ Component.propTypes = {
    *  @param {Object} values - The values of the inputs in the form.
    */
   onSubmit: PropTypes.func,
+  /** A dictionary of custom names for countries in the dropdown. Keyed by [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). */
+  phoneInputCountryNames: PropTypes.objectOf(PropTypes.string),
+  /** The initial value of the country input. Must be a [two-letter ISO country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). */
+  phoneInputInitialCountryValue: PropTypes.string,
   /** The label for the phone input */
   phoneInputLabel: PropTypes.string,
   /** The text to display as the privacy policy link next to the privacy consent checkbox. */
