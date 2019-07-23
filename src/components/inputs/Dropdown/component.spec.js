@@ -309,6 +309,46 @@ describe('<Dropdown />', () => {
         expect(wrapper.instance().setState).not.toHaveBeenCalled();
       });
     });
+
+    describe('if `state.value` has changed', () => {
+      it('should call `props.onChange` with the right arguments', () => {
+        const value = '🆎';
+        const name = 'naaaame';
+        const onChange = jest.fn();
+        const wrapper = getDropdown({ name, onChange });
+
+        wrapper.setState({ value });
+        wrapper.instance().componentDidUpdate({}, {});
+
+        expect(onChange).toHaveBeenCalledWith(name, value);
+      });
+    });
+
+    describe('if `previousState.Blurred` is false and `state.isBlurred` is true', () => {
+      it('should call `props.onBlur`', () => {
+        const name = 'naaaame';
+        const onBlur = jest.fn();
+        const wrapper = getDropdown({ name, onBlur });
+
+        wrapper.setState({ isBlurred: true });
+        wrapper.instance().componentDidUpdate({}, { isBlurred: false });
+
+        expect(onBlur).toHaveBeenCalledWith(name);
+      });
+    });
+
+    describe('if `previousState.Blurred` is true and `state.isBlurred` is false', () => {
+      it('should call `props.onFocus`', () => {
+        const name = 'naaaame';
+        const onFocus = jest.fn();
+        const wrapper = getDropdown({ name, onFocus });
+
+        wrapper.setState({ isBlurred: false });
+        wrapper.instance().componentDidUpdate({}, { isBlurred: true });
+
+        expect(onFocus).toHaveBeenCalledWith(name);
+      });
+    });
   });
 
   describe('Interaction: onBlur', () => {
@@ -350,6 +390,7 @@ describe('<Dropdown />', () => {
       const actual = wrapper.state();
 
       expect(actual).toEqual({
+        isBlurred: true,
         isOpen: IS_OPEN,
         value: data.value,
       });
