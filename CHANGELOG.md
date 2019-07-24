@@ -1,3 +1,13 @@
+# [1.231.0](https://github.com/lodgify/lodgify-ui/compare/v1.230.0...v1.231.0) (2019-07-24)
+
+
+### Features
+
+* **Dropdown:** expose props.onFocus and props.getOptionsWithSearch ([98091dd](https://github.com/lodgify/lodgify-ui/commit/98091dd))
+* **PhoneInput:** add styles ([dceb1ee](https://github.com/lodgify/lodgify-ui/commit/dceb1ee))
+* **PhoneInput:** implement react-phone-number-input with tests and examples ([a0fdc9c](https://github.com/lodgify/lodgify-ui/commit/a0fdc9c))
+* **PhoneInput:** re-expose props in consuming components ([c52dd10](https://github.com/lodgify/lodgify-ui/commit/c52dd10))
+
 # [1.230.0](https://github.com/lodgify/lodgify-ui/compare/v1.229.1...v1.230.0) (2019-07-23)
 
 
