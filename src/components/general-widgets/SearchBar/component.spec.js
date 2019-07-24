@@ -123,6 +123,56 @@ describe('<SearchBar />', () => {
     });
   });
 
+  describe('componentDidUpdate', () => {
+    describe('if `previousInputValueProps` and `currentInputValueProps` do not equal', () => {
+      it('should call setState with the correct arguments', () => {
+        const onChangeInput = jest.fn();
+        const currentInputValueProps = {
+          datesInputValue: {
+            startDate: {},
+            endDate: {},
+          },
+          guestsInputValue: 1,
+          locationInputValue: 'bro',
+        };
+        const wrapper = getSearchBarShallow({
+          onChangeInput,
+          ...currentInputValueProps,
+        });
+
+        wrapper.instance().setState = jest.fn();
+        wrapper.instance().componentDidUpdate(
+          {
+            datesInputValue: {
+              startDate: {},
+              endDate: {},
+            },
+            guestsInputValue: 2,
+            locationInputValue: 'lol',
+          },
+          {}
+        );
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          dates: currentInputValueProps.datesInputValue,
+          guests: currentInputValueProps.guestsInputValue,
+          location: currentInputValueProps.locationInputValue,
+        });
+      });
+    });
+
+    describe('if `previousState` and `this.state` do not equal', () => {
+      it('should call `this.prop.onChangeInput` with the correct arguments', () => {
+        const onChangeInput = jest.fn();
+        const wrapper = getSearchBarShallow({ onChangeInput });
+
+        wrapper.instance().componentDidUpdate({}, {});
+
+        expect(onChangeInput).toHaveBeenCalledWith(wrapper.instance().state);
+      });
+    });
+  });
+
   describe('componentWillUnmount', () => {
     describe('if `this.props.isDisplayedAsModal` is `true`', () => {
       it('should not call `global.document.removeEventListener`', () => {
