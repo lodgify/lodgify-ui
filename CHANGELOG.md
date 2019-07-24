@@ -1,3 +1,10 @@
+## [1.231.1](https://github.com/lodgify/lodgify-ui/compare/v1.231.0...v1.231.1) (2019-07-24)
+
+
+### Bug Fixes
+
+* **SearchBar:** control input values on prop change ([b68d4a7](https://github.com/lodgify/lodgify-ui/commit/b68d4a7))
+
 # [1.231.0](https://github.com/lodgify/lodgify-ui/compare/v1.230.0...v1.231.0) (2019-07-24)
 
 
