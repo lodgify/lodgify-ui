@@ -36,6 +36,22 @@ export class Component extends PureComponent {
   };
 
   componentDidUpdate(previousProps, previousState) {
+    const previousInputValueProps = {
+      dates: previousProps.datesInputValue,
+      guests: previousProps.guestsInputValue,
+      location: previousProps.locationInputValue,
+    };
+
+    const currentInputValueProps = {
+      dates: this.props.datesInputValue,
+      guests: this.props.guestsInputValue,
+      location: this.props.locationInputValue,
+    };
+
+    if (!isEqual(previousInputValueProps, currentInputValueProps)) {
+      this.setState(currentInputValueProps);
+    }
+
     !isEqual(previousState, this.state) && this.props.onChangeInput(this.state);
   }
 
