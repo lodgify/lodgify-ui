@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getOptionsWithSearch should return the right array 1`] = `
+Array [
+  Object {
+    "name": "AB",
+    "value": "some value",
+  },
+  Object {
+    "name": "CC",
+    "value": "abkhazia",
+  },
+  Object {
+    "name": "DD",
+    "value": "absent minded",
+  },
+]
+`;

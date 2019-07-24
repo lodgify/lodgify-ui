@@ -530,6 +530,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                             >
                                               <Dropdown
                                                 error={false}
+                                                getOptionsWithSearch={null}
                                                 icon="map pin"
                                                 initialValue={null}
                                                 isCompact={false}
@@ -541,6 +542,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                 noResultsText="No results"
                                                 onBlur={[Function]}
                                                 onChange={[Function]}
+                                                onFocus={[Function]}
                                                 options={
                                                   Array [
                                                     Object {
@@ -614,6 +616,8 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     options={
                                                       Array [
                                                         Object {
+                                                          "key": "0",
+                                                          "label": undefined,
                                                           "text": "1",
                                                           "value": "1",
                                                         },
@@ -683,7 +687,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         >
                                                           <DropdownItem
                                                             active={false}
-                                                            key="1"
+                                                            key="0"
                                                             onClick={[Function]}
                                                             selected={true}
                                                             style={

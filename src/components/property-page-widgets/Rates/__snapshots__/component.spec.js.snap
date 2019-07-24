@@ -86,6 +86,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
     >
       <Dropdown
         error={false}
+        getOptionsWithSearch={null}
         icon={null}
         initialValue={null}
         isCompact={false}
@@ -97,6 +98,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
         noResultsText="No results"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         options={
           Array [
             Object {
@@ -151,14 +153,20 @@ exports[`<Rates /> by default should have the right structure 1`] = `
             options={
               Array [
                 Object {
+                  "key": "0",
+                  "label": undefined,
                   "text": "EUR €",
                   "value": "eur",
                 },
                 Object {
+                  "key": "1",
+                  "label": undefined,
                   "text": "GBP £",
                   "value": "gbp",
                 },
                 Object {
+                  "key": "2",
+                  "label": undefined,
                   "text": "USD $",
                   "value": "usd",
                 },
@@ -257,7 +265,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                 >
                   <DropdownItem
                     active={false}
-                    key="eur"
+                    key="0"
                     onClick={[Function]}
                     selected={true}
                     style={
@@ -290,7 +298,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                   </DropdownItem>
                   <DropdownItem
                     active={false}
-                    key="gbp"
+                    key="1"
                     onClick={[Function]}
                     selected={false}
                     style={
@@ -323,7 +331,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                   </DropdownItem>
                   <DropdownItem
                     active={false}
-                    key="usd"
+                    key="2"
                     onClick={[Function]}
                     selected={false}
                     style={
@@ -1579,6 +1587,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
           Array [
             <Dropdown
               error={false}
+              getOptionsWithSearch={null}
               icon={null}
               initialValue={null}
               isCompact={false}
@@ -1590,6 +1599,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
               noResultsText="No results"
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               options={
                 Array [
                   Object {
@@ -1653,6 +1663,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <Dropdown
                             error={false}
+                            getOptionsWithSearch={null}
                             icon={null}
                             initialValue={null}
                             isCompact={false}
@@ -1664,6 +1675,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                             noResultsText="No results"
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             options={
                               Array [
                                 Object {
@@ -1718,14 +1730,20 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 options={
                                   Array [
                                     Object {
+                                      "key": "0",
+                                      "label": undefined,
                                       "text": "EUR €",
                                       "value": "eur",
                                     },
                                     Object {
+                                      "key": "1",
+                                      "label": undefined,
                                       "text": "GBP £",
                                       "value": "gbp",
                                     },
                                     Object {
+                                      "key": "2",
+                                      "label": undefined,
                                       "text": "USD $",
                                       "value": "usd",
                                     },
@@ -1824,7 +1842,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                     >
                                       <DropdownItem
                                         active={false}
-                                        key="eur"
+                                        key="0"
                                         onClick={[Function]}
                                         selected={true}
                                         style={
@@ -1857,7 +1875,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                       </DropdownItem>
                                       <DropdownItem
                                         active={false}
-                                        key="gbp"
+                                        key="1"
                                         onClick={[Function]}
                                         selected={false}
                                         style={
@@ -1890,7 +1908,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                       </DropdownItem>
                                       <DropdownItem
                                         active={false}
-                                        key="usd"
+                                        key="2"
                                         onClick={[Function]}
                                         selected={false}
                                         style={
@@ -3228,6 +3246,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
       </Paragraph>
       <Dropdown
         error={false}
+        getOptionsWithSearch={null}
         icon={null}
         initialValue={null}
         isCompact={false}
@@ -3239,6 +3258,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         noResultsText="No results"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         options={
           Array [
             Object {
@@ -3301,6 +3321,8 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             options={
               Array [
                 Object {
+                  "key": "0",
+                  "label": undefined,
                   "text": Array [
                     <img
                       alt="🎅"
@@ -3316,6 +3338,8 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   "value": "🎅",
                 },
                 Object {
+                  "key": "1",
+                  "label": undefined,
                   "text": Array [
                     <img
                       alt="💪"
@@ -3331,6 +3355,8 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   "value": "💪",
                 },
                 Object {
+                  "key": "2",
+                  "label": undefined,
                   "text": Array [
                     <img
                       alt="👃"
@@ -3346,6 +3372,8 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   "value": "👃",
                 },
                 Object {
+                  "key": "3",
+                  "label": undefined,
                   "text": Array [
                     <img
                       alt="🧖️"
@@ -3426,7 +3454,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                 >
                   <DropdownItem
                     active={false}
-                    key="🎅"
+                    key="0"
                     onClick={[Function]}
                     selected={true}
                     style={
@@ -3482,7 +3510,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   </DropdownItem>
                   <DropdownItem
                     active={false}
-                    key="💪"
+                    key="1"
                     onClick={[Function]}
                     selected={false}
                     style={
@@ -3538,7 +3566,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   </DropdownItem>
                   <DropdownItem
                     active={false}
-                    key="👃"
+                    key="2"
                     onClick={[Function]}
                     selected={false}
                     style={
@@ -3594,7 +3622,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   </DropdownItem>
                   <DropdownItem
                     active={false}
-                    key="🧖️"
+                    key="3"
                     onClick={[Function]}
                     selected={false}
                     style={
@@ -3684,6 +3712,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
     >
       <Dropdown
         error={false}
+        getOptionsWithSearch={null}
         icon={null}
         initialValue={null}
         isCompact={false}
@@ -3695,6 +3724,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         noResultsText="No results"
         onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         options={
           Array [
             Object {
@@ -3749,14 +3779,20 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             options={
               Array [
                 Object {
+                  "key": "0",
+                  "label": undefined,
                   "text": "EUR €",
                   "value": "eur",
                 },
                 Object {
+                  "key": "1",
+                  "label": undefined,
                   "text": "GBP £",
                   "value": "gbp",
                 },
                 Object {
+                  "key": "2",
+                  "label": undefined,
                   "text": "USD $",
                   "value": "usd",
                 },
@@ -3855,7 +3891,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                 >
                   <DropdownItem
                     active={false}
-                    key="eur"
+                    key="0"
                     onClick={[Function]}
                     selected={true}
                     style={
@@ -3888,7 +3924,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   </DropdownItem>
                   <DropdownItem
                     active={false}
-                    key="gbp"
+                    key="1"
                     onClick={[Function]}
                     selected={false}
                     style={
@@ -3921,7 +3957,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   </DropdownItem>
                   <DropdownItem
                     active={false}
-                    key="usd"
+                    key="2"
                     onClick={[Function]}
                     selected={false}
                     style={
@@ -5177,6 +5213,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
           Array [
             <Dropdown
               error={false}
+              getOptionsWithSearch={null}
               icon={null}
               initialValue={null}
               isCompact={false}
@@ -5188,6 +5225,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
               noResultsText="No results"
               onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               options={
                 Array [
                   Object {
@@ -5251,6 +5289,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <Dropdown
                             error={false}
+                            getOptionsWithSearch={null}
                             icon={null}
                             initialValue={null}
                             isCompact={false}
@@ -5262,6 +5301,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             noResultsText="No results"
                             onBlur={[Function]}
                             onChange={[Function]}
+                            onFocus={[Function]}
                             options={
                               Array [
                                 Object {
@@ -5316,14 +5356,20 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 options={
                                   Array [
                                     Object {
+                                      "key": "0",
+                                      "label": undefined,
                                       "text": "EUR €",
                                       "value": "eur",
                                     },
                                     Object {
+                                      "key": "1",
+                                      "label": undefined,
                                       "text": "GBP £",
                                       "value": "gbp",
                                     },
                                     Object {
+                                      "key": "2",
+                                      "label": undefined,
                                       "text": "USD $",
                                       "value": "usd",
                                     },
@@ -5422,7 +5468,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                     >
                                       <DropdownItem
                                         active={false}
-                                        key="eur"
+                                        key="0"
                                         onClick={[Function]}
                                         selected={true}
                                         style={
@@ -5455,7 +5501,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                       </DropdownItem>
                                       <DropdownItem
                                         active={false}
-                                        key="gbp"
+                                        key="1"
                                         onClick={[Function]}
                                         selected={false}
                                         style={
@@ -5488,7 +5534,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                       </DropdownItem>
                                       <DropdownItem
                                         active={false}
-                                        key="usd"
+                                        key="2"
                                         onClick={[Function]}
                                         selected={false}
                                         style={

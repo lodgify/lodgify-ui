@@ -40,6 +40,15 @@
 /* Date Range Picker Input */
 @dateRangePickerMinWidth: 135px;
 
+/* Phone input */
+@phoneInputDropdownWidth: 60px;
+@phoneInputDropdownPadding: @11px;
+@phoneInputFlagPositionTransform: translateY(2px);
+@phoneInputIconMarginTop: -2px;
+@phoneInputDropdownMenuWidth: 200px;
+@phoneInputLabelLeftPosition: @phoneInputDropdownWidth + 2px;
+@phoneInputLabelFocusXTranslate: @phoneInputLabelLeftPosition;
+
 /*-------------------
         States
 --------------------*/

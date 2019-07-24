@@ -3,9 +3,13 @@
 exports[`adaptOptions by default should return the right \`options\` structure 1`] = `
 Array [
   Object {
+    "key": "0",
+    "label": undefined,
     "some": "option",
   },
   Object {
+    "key": "1",
+    "label": undefined,
     "no": "image",
   },
 ]
@@ -18,6 +22,8 @@ exports[`adaptOptions if one or more options have an \`indent\` should return th
 exports[`adaptOptions if one or more options specify an \`image\` should return the right \`options\` structure 1`] = `
 Array [
   Object {
+    "key": "0",
+    "label": undefined,
     "text": Array [
       <img
         className="ui image"
@@ -32,6 +38,8 @@ Array [
     "value": undefined,
   },
   Object {
+    "key": "1",
+    "label": undefined,
     "text": Array [
       <img
         className="ui image"

@@ -28,3 +28,27 @@
 ```jsx
 <PhoneInput label="Phone" />
 ```
+
+### Content
+
+#### Country names
+
+```jsx
+<PhoneInput
+  countryNames={{
+    US: 'Dagobah',
+    GB: 'Naboo',
+  }}
+/>
+```
+
+
+### Usage
+
+#### Initial country value
+
+```jsx
+<PhoneInput
+  initialCountryValue="JP"
+/>
+```

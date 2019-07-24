@@ -12,7 +12,7 @@ describe('getIconOrFlag', () => {
     it('should return an `Icon` component', () => {
       const actual = getIconOrFlag(undefined);
 
-      expect(actual).toEqual(<Icon name={ICON_NAMES.PHONE} />);
+      expect(actual).toEqual(<Icon name={ICON_NAMES.PHONE} size="small" />);
     });
   });
 
@@ -20,7 +20,7 @@ describe('getIconOrFlag', () => {
     it('should return an `Icon` component', () => {
       const actual = getIconOrFlag('zz');
 
-      expect(actual).toEqual(<Icon name={ICON_NAMES.PHONE} />);
+      expect(actual).toEqual(<Icon name={ICON_NAMES.PHONE} size="small" />);
     });
   });
 

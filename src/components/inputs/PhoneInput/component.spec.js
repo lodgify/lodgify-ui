@@ -1,23 +1,36 @@
 jest.mock('utils/get-is-input-value-reset');
 jest.mock('utils/get-controlled-input-value');
+jest.mock('./utils/getLabels');
 
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import ru from 'react-phone-number-input/locale/ru.json';
 
 import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { getControlledInputValue } from 'utils/get-controlled-input-value';
 
+import { getLabels } from './utils/getLabels';
 import { Component as PhoneInput } from './component';
 import { INITIAL_VALUE } from './constants';
 
 const getPhoneInput = props => shallow(<PhoneInput {...props} />);
+
+getLabels.mockReturnValue(ru);
 
 describe('<PhoneInput />', () => {
   it('should render the right structure', () => {
     const wrapper = mount(<PhoneInput />);
 
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should call `getLabels` with the right arguments', () => {
+    const countryNames = {};
+    const wrapper = getPhoneInput({ countryNames });
+
+    expect(getLabels).toHaveBeenCalledWith(countryNames);
+    expect(wrapper.state('labels')).toBe(ru);
   });
 
   describe('`componentDidUpdate`', () => {
@@ -47,7 +60,6 @@ describe('<PhoneInput />', () => {
         wrapper.instance().componentDidUpdate({}, {});
 
         expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          country: undefined,
           value: INITIAL_VALUE,
         });
       });

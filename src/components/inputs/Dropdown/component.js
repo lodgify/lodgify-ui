@@ -23,6 +23,7 @@ import { isValueValid } from './utils/isValueValid';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
+    isBlurred: true,
     isOpen: false,
     value: this.props.initialValue,
   };
@@ -34,11 +35,18 @@ export class Component extends PureComponent {
     }
 
     const { value, isBlurred } = this.state;
-    const { name, onChange, onBlur } = this.props;
+    const { name, onChange, onBlur, onFocus } = this.props;
 
-    if (previousState.value !== value && !isBlurred) {
+    if (previousState.value !== value) {
       onChange(name, value);
+    }
+
+    if (!previousState.isBlurred && isBlurred) {
       onBlur(name);
+    }
+
+    if (previousState.isBlurred && !isBlurred) {
+      onFocus(name);
     }
   }
 
@@ -56,6 +64,7 @@ export class Component extends PureComponent {
   render() {
     const { isOpen } = this.state;
     const {
+      getOptionsWithSearch,
       error,
       icon,
       isCompact,
@@ -106,7 +115,7 @@ export class Component extends PureComponent {
           open={isOpen}
           options={adaptedOptions}
           placeholder={getPropOnCondition(label, isCompact)}
-          search={isSearchable}
+          search={getOptionsWithSearch || isSearchable}
           selectOnBlur={false}
           selection
           upward={willOpenAbove}
@@ -124,6 +133,7 @@ Component.displayName = 'Dropdown';
 
 Component.defaultProps = {
   error: false,
+  getOptionsWithSearch: null,
   icon: null,
   isCompact: false,
   isDisabled: false,
@@ -134,6 +144,7 @@ Component.defaultProps = {
   noResultsText: NO_RESULTS,
   onBlur: Function.prototype,
   onChange: Function.prototype,
+  onFocus: Function.prototype,
   options: [],
   value: undefined,
   willOpenAbove: false,
@@ -143,6 +154,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** Is the dropdown in an error state. */
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  /** A function called when a user searches the dropdown options. Returns the filtered options. */
+  getOptionsWithSearch: PropTypes.func,
   /** Icon for the dropdown. Not displayed if options have images. */
   icon: PropTypes.string,
   /** The default value of the dropdown. */
@@ -172,6 +185,11 @@ Component.propTypes = {
   onBlur: PropTypes.func,
   /** A function called when the dropdown value changes. */
   onChange: PropTypes.func,
+  /**
+   * Used internally by `PhoneInput` so ignored in the styleguide.
+   * @ignore
+   */
+  onFocus: PropTypes.func,
   /** The options which the user can select. Dropdown is disabled if options is an empty array. */
   options: PropTypes.arrayOf(
     PropTypes.shape({
@@ -188,7 +206,7 @@ Component.propTypes = {
       /** The visible label for the option. */
       label: PropTypes.string,
       /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
+      text: PropTypes.node.isRequired,
       /** The underlying value for the option. */
       value: PropTypes.oneOfType([
         PropTypes.bool,

@@ -16,7 +16,7 @@
   }
 
   &,
-  & > input {
+  & input {
     font-family: @bodyFont;
   }
 
@@ -107,6 +107,7 @@
 
   input:focus + label,
   textarea:focus + label,
+  .react-phone-number-input.react-phone-number-input--focus + label,
   &.dirty > label {
     color: @labelFocusColor;
     font-size: @labelFocusFontSize;
@@ -137,6 +138,15 @@
 
   /* textarea */
 
+  textarea {
+    background: @background;
+    border: @border;
+    font-family: @inputFont;
+    outline: none;
+    width: @inputWidth;
+    padding: @padding;
+  }
+
   /* Date range picker */
 
   .DateRangePickerInput {
@@ -151,30 +161,112 @@
     }
   }
 
-  /* Single date picker */
+  /* Phone input */
 
-  textarea {
+  .react-phone-number-input {
     background: @background;
     border: @border;
-    font-family: @inputFont;
-    outline: none;
-    width: @inputWidth;
-    padding: @padding;
+    width: 100%;
+
+    .react-phone-number-input__row {
+      display: flex;
+
+      .dropdown-container {
+        cursor: pointer;
+        flex-basis: @phoneInputDropdownWidth;
+        flex-shrink: 0;
+        min-width: 0;
+
+        .ui.search.selection.dropdown {
+          background: transparent;
+          border: none;
+          box-shadow: none;
+          color: @greySix;
+          padding: @phoneInputDropdownPadding;
+
+          input.search {
+            padding: 0;
+            width: 0;
+          }
+
+          .text {
+            cursor: pointer;
+
+            .flag,
+            .icon {
+              margin: 0;
+              transform: @phoneInputFlagPositionTransform;
+            }
+
+            .flag {
+              opacity: 1;
+            }
+
+            .icon {
+              margin-top: @phoneInputIconMarginTop;
+            }
+          }
+
+          > .icon {
+            padding-right: 0;
+          }
+
+          .visible.menu {
+            width: @phoneInputDropdownMenuWidth;
+          }
+        }
+      }
+
+      .react-phone-number-input__input.react-phone-number-input__phone {
+        background: transparent;
+        border: none;
+        flex-grow: 1;
+        outline: none;
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    & + label {
+      left: @phoneInputLabelLeftPosition;
+    }
+
+    &.react-phone-number-input--focus + label,
+    .dirty & + label {
+      transform: translate(-(@phoneInputLabelFocusXTranslate), -(@labelFocusYTranslate));
+    }
+  }
+
+  &.dirty .react-phone-number-input + label {
+    transform: translate(-(@phoneInputLabelFocusXTranslate), -(@labelFocusYTranslate));
   }
 
   /*-------------------
         States
---------------------*/
+  --------------------*/
 
   /* Placeholder */
 
   /* Down */
 
   /* Focus */
-  textarea:focus {
+  textarea:focus,
+  .react-phone-number-input.react-phone-number-input--focus {
     border-color: @focusBorderColor;
     background: @focusBackground;
     color: @focusColor;
+  }
+
+  .react-phone-number-input.react-phone-number-input--focus {
+
+    .react-phone-number-input__row .dropdown-container .ui.search.selection.dropdown {
+      color: @focusColor;
+
+      .text .icon {
+        color: @focusColor;
+        opacity: 1;
+      }
+    }
   }
 
   /* Error */
@@ -182,7 +274,9 @@
 
     input,
     textarea,
-    .ui.checkbox label:before {
+    .ui.checkbox label:before,
+    .react-phone-number-input {
+      background: @focusedInputBackground;
       border-color: @errorBorder;
     }
 
@@ -206,7 +300,8 @@
   &:hover:not(.error):not(.valid):not(.dirty):not(.focus) {
 
     input:not(:focus),
-    textarea:not(:focus) {
+    textarea:not(:focus),
+    .react-phone-number-input:not(.react-phone-number-input--focus) {
       background: @focusedInputBackground;
       border-color: @hoveredInputBorderColor;
     }
@@ -223,9 +318,22 @@
   &.dirty:not(.error):not(.valid) {
 
     input,
-    textarea {
+    textarea,
+    .react-phone-number-input {
       background: @focusedInputBackground;
       border-color: @focusedFormBorderColor;
+    }
+
+    .react-phone-number-input {
+
+      .react-phone-number-input__row .dropdown-container .ui.search.selection.dropdown {
+        color: @focusColor;
+
+        .text .icon {
+          color: @focusColor;
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -233,7 +341,8 @@
   &.valid {
 
     input,
-    textarea {
+    textarea,
+    .react-phone-number-input {
       background: @focusedInputBackground;
       border-color: @validBorderColor;
     }
