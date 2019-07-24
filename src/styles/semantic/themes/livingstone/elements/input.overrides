@@ -78,8 +78,8 @@
       left: @leftIconInputLabelLeftPosition;
     }
 
-    input:focus + label,
-    textarea:focus + label,
+    input:focus ~ label,
+    textarea:focus ~ label,
     &.dirty > label {
       transform: translate(-(@leftIconInputLabelFocusXTranslate), -(@labelFocusYTranslate));
     }
@@ -105,9 +105,9 @@
     }
   }
 
-  input:focus + label,
-  textarea:focus + label,
-  .react-phone-number-input.react-phone-number-input--focus + label,
+  input:focus ~ label,
+  textarea:focus ~ label,
+  .react-phone-number-input.react-phone-number-input--focus ~ label,
   &.dirty > label {
     color: @labelFocusColor;
     font-size: @labelFocusFontSize;
@@ -227,17 +227,16 @@
       }
     }
 
-    & + label {
+    & ~ label {
       left: @phoneInputLabelLeftPosition;
     }
 
-    &.react-phone-number-input--focus + label,
-    .dirty & + label {
+    &.react-phone-number-input--focus ~ label {
       transform: translate(-(@phoneInputLabelFocusXTranslate), -(@labelFocusYTranslate));
     }
   }
 
-  &.dirty .react-phone-number-input + label {
+  &.dirty > .react-phone-number-input ~ label {
     transform: translate(-(@phoneInputLabelFocusXTranslate), -(@labelFocusYTranslate));
   }
 
