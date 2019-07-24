@@ -104,7 +104,9 @@ export class Component extends PureComponent {
           <HorizontalGutters>
             {summaryElement}
             <ShowOn computer widescreen>
-              {getFormFieldMarkup(this.props, this.persistInputChange, true)}
+              <Form onSubmit={this.handleSubmit}>
+                {getFormFieldMarkup(this.props, this.persistInputChange, true)}
+              </Form>
             </ShowOn>
             <ShowOn mobile tablet>
               {getSearchBarModal(
