@@ -1,3 +1,10 @@
+## [1.231.3](https://github.com/lodgify/lodgify-ui/compare/v1.231.2...v1.231.3) (2019-07-25)
+
+
+### Bug Fixes
+
+* **SearchBar:** wrap in form for submit ([eb65445](https://github.com/lodgify/lodgify-ui/commit/eb65445))
+
 ## [1.231.2](https://github.com/lodgify/lodgify-ui/compare/v1.231.1...v1.231.2) (2019-07-25)
 
 
