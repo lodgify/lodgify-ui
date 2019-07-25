@@ -12,7 +12,7 @@ const { propertySearchResults } = require('./mock-data/mock-data');
   //   guestsText: 'guests',
   //   imageUrl:
   //     'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
-  //   priceLabelpricePerPeriod: '$280',
+  //   priceLabelPricePerPeriod: '$280',
   //   priceLabelPeriodText: 'per month',
   //   priceLabelPricePerPeriodPrefix: 'from'
   //   propertyAmenities: ['Pool', 'Wifi', 'Washer', 'Kitchen'],
