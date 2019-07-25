@@ -407,6 +407,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         </div>
                                       </Input>
                                     </InputController>
+                                    <div />
                                   </DateRangePicker>
                                 </Responsive>
                               </WithResponsive(DateRangePicker)>
@@ -1060,6 +1061,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         </div>
                                       </Input>
                                     </InputController>
+                                    <div />
                                   </DateRangePicker>
                                 </Responsive>
                               </WithResponsive(DateRangePicker)>
@@ -1985,6 +1987,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         </div>
                                       </Input>
                                     </InputController>
+                                    <div />
                                   </DateRangePicker>
                                 </Responsive>
                               </WithResponsive(DateRangePicker)>
@@ -2797,6 +2800,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         </div>
                                       </Input>
                                     </InputController>
+                                    <div />
                                   </DateRangePicker>
                                 </Responsive>
                               </WithResponsive(DateRangePicker)>
