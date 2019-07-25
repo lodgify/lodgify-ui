@@ -43,6 +43,7 @@ export const ICON_NAMES = {
   LAUNDRY: 'laundry',
   LEAF: 'leaf',
   LINKEDIN: 'linkedin',
+  LIST: 'list',
   LOCATION: 'location',
   LOFT_BED: 'loft bed',
   MAP_PIN: 'map pin',
