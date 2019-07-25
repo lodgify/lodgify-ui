@@ -1,3 +1,10 @@
+## [1.231.5](https://github.com/lodgify/lodgify-ui/compare/v1.231.4...v1.231.5) (2019-07-25)
+
+
+### Bug Fixes
+
+* **Icon:** add LIST to icon names ([a4942ed](https://github.com/lodgify/lodgify-ui/commit/a4942ed))
+
 ## [1.231.4](https://github.com/lodgify/lodgify-ui/compare/v1.231.3...v1.231.4) (2019-07-25)
 
 
