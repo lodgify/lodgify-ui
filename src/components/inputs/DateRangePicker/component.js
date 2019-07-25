@@ -1,5 +1,5 @@
 import moment from 'moment';
-import React, { PureComponent } from 'react';
+import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import { debounce } from 'debounce';
@@ -19,6 +19,7 @@ import { isDisplayedAsModal } from 'utils/is-displayed-as-modal';
 import { getIsFocusControlled } from './utils/getIsFocusControlled';
 import { mapValueToProps } from './utils/mapValueToProps';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
+import { getIsVisible } from './utils/getIsVisible';
 import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 
 /**
@@ -27,6 +28,8 @@ import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
 // eslint-disable-next-line jsdoc/require-jsdoc
 class Component extends PureComponent {
   state = {
+    endDateId: uniqid('end_date_id_'),
+    startDateId: uniqid('start_date_id_'),
     focusedInput: null,
     windowHeight: null,
   };
@@ -52,7 +55,17 @@ class Component extends PureComponent {
     previousFocusedInput !== focusedInput && onFocusChange(focusedInput);
   };
 
+  createRef = ref => {
+    this.visibilityCheck = ref;
+  };
+
   handleFocusChange = focusedInput => {
+    if (
+      !isDisplayedAsModal(this.state.windowHeight) &&
+      !getIsVisible(this.visibilityCheck)
+    )
+      return;
+
     getIsFocusControlled(this.props.focusedInput)
       ? this.props.onFocusChange(focusedInput)
       : this.setState({ focusedInput });
@@ -83,51 +96,55 @@ class Component extends PureComponent {
       willOpenAbove,
       windowInnerWidth,
     } = this.props;
+    const { endDateId, startDateId } = this.state;
     const { focusedInput } = getIsFocusControlled(this.props.focusedInput)
       ? this.props
       : this.state;
 
     return (
-      <InputController
-        adaptOnChangeEvent={returnFirstArgument}
-        error={error}
-        initialValue={initialValue}
-        inputOnChangeFunctionName="onDatesChange"
-        isFocused={!!focusedInput}
-        isValid={isValid}
-        mapValueToProps={mapValueToProps}
-        name={name}
-        onChange={onChange}
-        value={value}
-      >
-        <DateRangePicker
-          /* eslint-disable react/jsx-sort-props */
-          // Consumer defined props.
-          displayFormat={displayFormat}
-          endDatePlaceholderText={endDatePlaceholderText}
-          isDayBlocked={getIsDayBlocked}
-          openDirection={getUpOrDownFromBoolean(willOpenAbove)}
-          startDatePlaceholderText={startDatePlaceholderText}
-          // Controlled props
-          focusedInput={focusedInput}
-          // NOTE onDatesChange is required by DateRangePicker but is set in `InputController`
-          onDatesChange={Function.prototype}
-          onFocusChange={this.handleFocusChange}
-          // Static required props.
-          endDateId={uniqid('end_date_id_')}
-          startDateId={uniqid('start_date_id_')}
-          // Static custom appearance props.
-          customArrowIcon={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
-          customInputIcon={<Icon name={ICON_NAMES.CALENDAR} />}
-          daySize={52}
-          hideKeyboardShortcutsPanel
-          navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
-          navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
-          numberOfMonths={getNumberOfMonths(windowInnerWidth)}
-          withPortal={isDisplayedAsModal(this.state.windowHeight)}
-          /* eslint-enable react/jsx-sort-props */
-        />
-      </InputController>
+      <Fragment>
+        <InputController
+          adaptOnChangeEvent={returnFirstArgument}
+          error={error}
+          initialValue={initialValue}
+          inputOnChangeFunctionName="onDatesChange"
+          isFocused={!!focusedInput}
+          isValid={isValid}
+          mapValueToProps={mapValueToProps}
+          name={name}
+          onChange={onChange}
+          value={value}
+        >
+          <DateRangePicker
+            /* eslint-disable react/jsx-sort-props */
+            // Consumer defined props.
+            displayFormat={displayFormat}
+            endDatePlaceholderText={endDatePlaceholderText}
+            isDayBlocked={getIsDayBlocked}
+            openDirection={getUpOrDownFromBoolean(willOpenAbove)}
+            startDatePlaceholderText={startDatePlaceholderText}
+            // Controlled props
+            focusedInput={focusedInput}
+            // NOTE onDatesChange is required by DateRangePicker but is set in `InputController`
+            onDatesChange={Function.prototype}
+            onFocusChange={this.handleFocusChange}
+            // Static required props.
+            endDateId={endDateId}
+            startDateId={startDateId}
+            // Static custom appearance props.
+            customArrowIcon={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
+            customInputIcon={<Icon name={ICON_NAMES.CALENDAR} />}
+            daySize={52}
+            hideKeyboardShortcutsPanel
+            navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
+            navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
+            numberOfMonths={getNumberOfMonths(windowInnerWidth)}
+            withPortal={isDisplayedAsModal(this.state.windowHeight)}
+            /* eslint-enable react/jsx-sort-props */
+          />
+        </InputController>
+        <div ref={this.createRef} />
+      </Fragment>
     );
   }
 }

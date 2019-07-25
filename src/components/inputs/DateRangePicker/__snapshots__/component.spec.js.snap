@@ -128,13 +128,13 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
               startDate={null}
               startDateId="start_date_id_"
               startDatePlaceholderText=""
-              withPortal={false}
             >
               <div />
             </DateRangePicker>
           </div>
         </Input>
       </InputController>
+      <div />
     </DateRangePicker>
   </Responsive>
 </WithResponsive(DateRangePicker)>
@@ -268,13 +268,13 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
               startDate={null}
               startDateId="start_date_id_"
               startDatePlaceholderText=""
-              withPortal={false}
             >
               <div />
             </DateRangePicker>
           </div>
         </Input>
       </InputController>
+      <div />
     </DateRangePicker>
   </Responsive>
 </WithResponsive(DateRangePicker)>

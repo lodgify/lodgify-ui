@@ -11,9 +11,11 @@ jest.mock('react-dates', () => {
 });
 jest.mock('utils/get-window-height');
 jest.mock('utils/is-blur-event');
+jest.mock('utils/is-displayed-as-modal');
 jest.mock('debounce');
 jest.mock('uniqid');
 jest.mock('./utils/getIsFocusControlled');
+jest.mock('./utils/getIsVisible');
 
 import React from 'react';
 import { mount, shallow } from 'enzyme';
@@ -24,8 +26,10 @@ import { debounce } from 'debounce';
 
 import { getWindowHeight } from 'utils/get-window-height';
 import { isBlurEvent } from 'utils/is-blur-event';
+import { isDisplayedAsModal } from 'utils/is-displayed-as-modal';
 
 import { getIsFocusControlled } from './utils/getIsFocusControlled';
+import { getIsVisible } from './utils/getIsVisible';
 import { ComponentWithResponsive as DateRangePicker } from './component';
 
 const STARTING_WINDOW_HEIGHT = 900;
@@ -212,14 +216,69 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('`handleFocusChange`', () => {
-    it('should call `getIsFocusControlled` with the right arguments', () => {
-      const focusedInput = 'endDate';
-      const wrapper = getWrappedDateRangePicker({ focusedInput });
+    it('should call `isDisplayedAsModal` with the right arguments', () => {
+      const wrapper = getWrappedDateRangePicker();
 
-      getIsFocusControlled.mockClear();
+      isDisplayedAsModal.mockClear();
       wrapper.instance().handleFocusChange();
 
-      expect(getIsFocusControlled).toHaveBeenCalledWith(focusedInput);
+      expect(isDisplayedAsModal).toHaveBeenCalledWith(
+        wrapper.state('windowHeight')
+      );
+    });
+
+    describe('if `isDisplayedAsModal` returns `false`', () => {
+      it('should call `getIsVisible` with the right arguments', () => {
+        const wrapper = getWrappedDateRangePicker();
+
+        getIsVisible.mockClear();
+        isDisplayedAsModal.mockReturnValueOnce(false);
+        wrapper.instance().handleFocusChange();
+
+        expect(getIsVisible).toHaveBeenCalledWith(
+          wrapper.instance().visibilityCheck
+        );
+      });
+    });
+
+    describe('if `getIsVisible` returns `false`', () => {
+      it('should not call `getIsFocusControlled`', () => {
+        const wrapper = getWrappedDateRangePicker();
+
+        getIsFocusControlled.mockClear();
+        isDisplayedAsModal.mockReturnValueOnce(false);
+        getIsVisible.mockReturnValueOnce(false);
+        wrapper.instance().handleFocusChange();
+
+        expect(getIsFocusControlled).not.toHaveBeenCalled();
+      });
+    });
+
+    describe('if `isDisplayedAsModal` returns `true`', () => {
+      it('should call `getIsFocusControlled` with the right arguments', () => {
+        const focusedInput = 'endDate';
+        const wrapper = getWrappedDateRangePicker({ focusedInput });
+
+        getIsFocusControlled.mockClear();
+        isDisplayedAsModal.mockReturnValueOnce(true);
+        wrapper.instance().handleFocusChange();
+
+        expect(getIsFocusControlled).toHaveBeenCalledWith(focusedInput);
+      });
+    });
+
+    describe('if `getIsVisible` returns `true`', () => {
+      it('should not call `getIsFocusControlled`', () => {
+        const focusedInput = 'endDate';
+        const wrapper = getWrappedDateRangePicker({ focusedInput });
+
+        getIsFocusControlled.mockClear();
+        isDisplayedAsModal.mockReturnValueOnce(false);
+        getIsVisible.mockReturnValueOnce(true);
+        wrapper.instance().handleFocusChange();
+
+        expect(getIsFocusControlled).toHaveBeenCalledWith(focusedInput);
+      });
     });
 
     describe('if `getIsFocusControlled` returns `true`', () => {
@@ -228,6 +287,7 @@ describe('<DateRangePicker />', () => {
         const focusedInput = 'startDate';
         const wrapper = getWrappedDateRangePicker({ onFocusChange });
 
+        isDisplayedAsModal.mockReturnValueOnce(true);
         getIsFocusControlled.mockReturnValueOnce(true);
         wrapper.instance().handleFocusChange(focusedInput);
 
@@ -240,6 +300,7 @@ describe('<DateRangePicker />', () => {
         const wrapper = getWrappedDateRangePicker();
         const focusedInput = 'startDate';
 
+        isDisplayedAsModal.mockReturnValueOnce(true);
         getIsFocusControlled.mockReturnValueOnce(false);
         wrapper.instance().setState = jest.fn();
         wrapper.update();
