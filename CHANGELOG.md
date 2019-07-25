@@ -1,3 +1,10 @@
+## [1.231.6](https://github.com/lodgify/lodgify-ui/compare/v1.231.5...v1.231.6) (2019-07-25)
+
+
+### Bug Fixes
+
+* **DateRangePicker:** ignore calls to onFocusChange for date range pickers which are not visible on the page ([1759452](https://github.com/lodgify/lodgify-ui/commit/1759452))
+
 ## [1.231.5](https://github.com/lodgify/lodgify-ui/compare/v1.231.4...v1.231.5) (2019-07-25)
 
 
