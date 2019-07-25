@@ -1,3 +1,10 @@
+## [1.231.4](https://github.com/lodgify/lodgify-ui/compare/v1.231.3...v1.231.4) (2019-07-25)
+
+
+### Bug Fixes
+
+* **PropertySearchResult:** fix naming of props.priceLabelPricePerPeriod ([cf38ba6](https://github.com/lodgify/lodgify-ui/commit/cf38ba6))
+
 ## [1.231.3](https://github.com/lodgify/lodgify-ui/compare/v1.231.2...v1.231.3) (2019-07-25)
 
 
