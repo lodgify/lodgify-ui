@@ -880,6 +880,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         </div>
                                                       </Input>
                                                     </InputController>
+                                                    <div />
                                                   </DateRangePicker>
                                                 </Responsive>
                                               </WithResponsive(DateRangePicker)>

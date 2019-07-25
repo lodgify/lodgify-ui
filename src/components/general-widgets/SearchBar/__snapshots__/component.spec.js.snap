@@ -560,6 +560,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       </div>
                     </Input>
                   </InputController>
+                  <div />
                 </DateRangePicker>
               </Responsive>
             </WithResponsive(DateRangePicker)>
@@ -1337,6 +1338,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 </div>
                               </Input>
                             </InputController>
+                            <div />
                           </DateRangePicker>
                         </Responsive>
                       </WithResponsive(DateRangePicker)>
@@ -2307,6 +2309,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       </div>
                     </Input>
                   </InputController>
+                  <div />
                 </DateRangePicker>
               </Responsive>
             </WithResponsive(DateRangePicker)>
@@ -3066,6 +3069,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       </div>
                     </Input>
                   </InputController>
+                  <div />
                 </DateRangePicker>
               </Responsive>
             </WithResponsive(DateRangePicker)>
@@ -3472,6 +3476,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       </div>
                     </Input>
                   </InputController>
+                  <div />
                 </DateRangePicker>
               </Responsive>
             </WithResponsive(DateRangePicker)>
@@ -4213,6 +4218,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       </div>
                     </Input>
                   </InputController>
+                  <div />
                 </DateRangePicker>
               </Responsive>
             </WithResponsive(DateRangePicker)>
