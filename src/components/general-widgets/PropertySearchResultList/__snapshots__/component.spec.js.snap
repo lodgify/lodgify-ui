@@ -22,8 +22,8 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -45,7 +45,7 @@ exports[`<PropertySearchResultList /> by default should render the right structu
         "guestsNumber": 4,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "priceLabelpricePerPeriod": "$1280",
+        "priceLabelPricePerPeriod": "$1280",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -162,8 +162,8 @@ exports[`<PropertySearchResultList /> by default should render the right structu
             isShowingPlaceholder={false}
             key="The Cat House0"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -191,7 +191,7 @@ exports[`<PropertySearchResultList /> by default should render the right structu
             imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
             isShowingPlaceholder={false}
             key="Space Hub A-6751"
-            priceLabelpricePerPeriod="$1280"
+            priceLabelPricePerPeriod="$1280"
             propertyAmenities={
               Array [
                 "Pool",
@@ -245,8 +245,8 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -268,7 +268,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
         "guestsNumber": 4,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "priceLabelpricePerPeriod": "$1280",
+        "priceLabelPricePerPeriod": "$1280",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -561,8 +561,8 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
             isShowingPlaceholder={false}
             key="The Cat House0"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -590,7 +590,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
             imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
             isShowingPlaceholder={false}
             key="Space Hub A-6751"
-            priceLabelpricePerPeriod="$1280"
+            priceLabelPricePerPeriod="$1280"
             propertyAmenities={
               Array [
                 "Pool",
@@ -892,8 +892,8 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -915,7 +915,7 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
         "guestsNumber": 4,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "priceLabelpricePerPeriod": "$1280",
+        "priceLabelPricePerPeriod": "$1280",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1079,8 +1079,8 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
             isShowingPlaceholder={false}
             key="The Cat House0"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1108,7 +1108,7 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
             imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
             isShowingPlaceholder={false}
             key="Space Hub A-6751"
-            priceLabelpricePerPeriod="$1280"
+            priceLabelPricePerPeriod="$1280"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1153,8 +1153,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1177,8 +1177,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1201,8 +1201,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1225,8 +1225,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1249,8 +1249,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1273,8 +1273,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1297,8 +1297,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1321,8 +1321,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1345,8 +1345,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1369,8 +1369,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1393,8 +1393,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1417,8 +1417,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1441,8 +1441,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -1559,8 +1559,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House0"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1589,8 +1589,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House1"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1619,8 +1619,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House2"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1649,8 +1649,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House3"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1679,8 +1679,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House4"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1709,8 +1709,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House5"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1739,8 +1739,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House6"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1769,8 +1769,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House7"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1799,8 +1799,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House8"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1829,8 +1829,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House9"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1859,8 +1859,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House10"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1889,8 +1889,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House11"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -1919,8 +1919,8 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
             isShowingPlaceholder={false}
             key="The Cat House12"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -2244,8 +2244,8 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
         "priceLabelPricePerPeriodPrefix": "from",
-        "priceLabelpricePerPeriod": "$28000",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -2267,7 +2267,7 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
         "guestsNumber": 4,
         "guestsText": "guests",
         "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-        "priceLabelpricePerPeriod": "$1280",
+        "priceLabelPricePerPeriod": "$1280",
         "propertyAmenities": Array [
           "Pool",
           "Wifi",
@@ -2384,8 +2384,8 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
             isShowingPlaceholder={false}
             key="The Cat House0"
             priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
             priceLabelPricePerPeriodPrefix="from"
-            priceLabelpricePerPeriod="$28000"
             propertyAmenities={
               Array [
                 "Pool",
@@ -2413,7 +2413,7 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
             imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
             isShowingPlaceholder={false}
             key="Space Hub A-6751"
-            priceLabelpricePerPeriod="$1280"
+            priceLabelPricePerPeriod="$1280"
             propertyAmenities={
               Array [
                 "Pool",
