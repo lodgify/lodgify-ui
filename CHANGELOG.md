@@ -1,3 +1,10 @@
+## [1.231.2](https://github.com/lodgify/lodgify-ui/compare/v1.231.1...v1.231.2) (2019-07-25)
+
+
+### Bug Fixes
+
+* **PhoneInput:** switch to general sibling combinators ([1ee10ab](https://github.com/lodgify/lodgify-ui/commit/1ee10ab))
+
 ## [1.231.1](https://github.com/lodgify/lodgify-ui/compare/v1.231.0...v1.231.1) (2019-07-24)
 
 
