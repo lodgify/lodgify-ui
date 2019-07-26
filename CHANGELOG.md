@@ -1,3 +1,10 @@
+## [1.231.7](https://github.com/lodgify/lodgify-ui/compare/v1.231.6...v1.231.7) (2019-07-26)
+
+
+### Bug Fixes
+
+* **DateRangePicker:** spellcheck ting ([0b83336](https://github.com/lodgify/lodgify-ui/commit/0b83336))
+
 ## [1.231.6](https://github.com/lodgify/lodgify-ui/compare/v1.231.5...v1.231.6) (2019-07-25)
 
 
