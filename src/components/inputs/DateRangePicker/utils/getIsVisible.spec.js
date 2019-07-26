@@ -13,9 +13,9 @@ describe('getIsVisible', () => {
     });
   });
 
-  describe('if `element.offSetParent` is `null` or `undefined`', () => {
+  describe('if `element.offsetParent` is `null` or `undefined`', () => {
     it('should return `false`', () => {
-      const testCases = [{ offSetParent: null }, { offSetParent: undefined }];
+      const testCases = [{ offsetParent: null }, { offsetParent: undefined }];
 
       testCases.forEach(testCase => {
         const actual = getIsVisible(testCase);
@@ -25,9 +25,9 @@ describe('getIsVisible', () => {
     });
   });
 
-  describe('if `element.offSetParent` is defined', () => {
+  describe('if `element.offsetParent` is defined', () => {
     it('should return `true`', () => {
-      const actual = getIsVisible({ offSetParent: '👨' });
+      const actual = getIsVisible({ offsetParent: '👨' });
 
       expect(actual).toBe(true);
     });
