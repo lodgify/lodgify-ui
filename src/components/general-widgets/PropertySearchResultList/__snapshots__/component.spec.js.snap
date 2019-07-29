@@ -9,6 +9,7 @@ exports[`<PropertySearchResultList /> by default should render the right structu
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
+  onChange={[Function]}
   propertySearchResults={
     Array [
       Object {
@@ -232,6 +233,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
+  onChange={[Function]}
   propertySearchResults={
     Array [
       Object {
@@ -622,6 +624,7 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
+  onChange={[Function]}
   propertySearchResults={Array []}
   renderShowingResultsText={[Function]}
   resultsCountText="results"
@@ -879,6 +882,7 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
   messageButtonOnClick={[Function]}
   messageButtonText="Some button text"
   messageText="Some message text"
+  onChange={[Function]}
   propertySearchResults={
     Array [
       Object {
@@ -1140,6 +1144,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
+  onChange={[Function]}
   propertySearchResults={
     Array [
       Object {
@@ -2231,6 +2236,7 @@ exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed sh
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
+  onChange={[Function]}
   propertySearchResults={
     Array [
       Object {

@@ -128,6 +128,21 @@ describe('<PropertySearchResultList />', () => {
     });
 
     describe('if `state.activePage` has changed', () => {
+      it('should call `props.onChange` with the right arguments', () => {
+        const onChange = jest.fn();
+        const propertySearchResults = [];
+        const wrapper = getShallowPropertySearchResultList({
+          onChange,
+          propertySearchResults,
+        });
+
+        wrapper
+          .instance()
+          .componentDidUpdate({ propertySearchResults }, { activePage: 2 });
+
+        expect(onChange).toHaveBeenCalledWith(1);
+      });
+
       it('should call `getPropertySearchResultsToDisplay` with the right arguments', () => {
         const propertySearchResults = [];
         const wrapper = getShallowPropertySearchResultList({
@@ -162,6 +177,20 @@ describe('<PropertySearchResultList />', () => {
     });
 
     describe('if `props.propertySearchResults` has changed', () => {
+      it('should call `props.onChange` with the right arguments', () => {
+        const onChange = jest.fn();
+        const wrapper = getShallowPropertySearchResultList({
+          onChange,
+          propertySearchResults: [],
+        });
+
+        wrapper
+          .instance()
+          .componentDidUpdate({ propertySearchResults: [] }, { activePage: 1 });
+
+        expect(onChange).toHaveBeenCalledWith(1);
+      });
+
       it('should call `getPropertySearchResultsToDisplay` with the right arguments', () => {
         const propertySearchResults = [];
         const wrapper = getShallowPropertySearchResultList({
