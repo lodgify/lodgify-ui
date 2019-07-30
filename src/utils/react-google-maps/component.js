@@ -35,8 +35,9 @@ export const Component = ({
         options={circleOptions}
       />
     )}
-    {markers.map(({ component, latitude, longitude }, index) => (
+    {markers.map(({ component, getOffset, latitude, longitude }, index) => (
       <OverlayView
+        getPixelPositionOffset={getOffset}
         key={buildKeyFromStrings(component.displayName, index)}
         mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
         position={adaptCoordinates(latitude, longitude)}

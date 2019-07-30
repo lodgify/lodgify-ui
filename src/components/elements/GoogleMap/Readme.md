@@ -104,3 +104,48 @@ Multiple markers show on the dynamic map only.
   />
 </div>
 ```
+
+#### Offset markers
+
+Markers can be offset for more precision.
+
+```jsx
+<div style={{ height: '400px' }}>
+  <GoogleMap
+    isFluid
+    latitude={41}
+    longitude={2}
+    markers={[
+      { component: <Marker />, latitude: 41, longitude: 2 },
+      {
+        component: <Marker />,
+        getOffset: (markerPixelWidth, markerPixelHeight) =>
+          ({ x: markerPixelWidth , y: 0 }),
+        latitude: 41,
+        longitude: 2,
+      },
+      {
+        component: <Marker />,
+        getOffset: (markerPixelWidth, markerPixelHeight) =>
+          ({ x: 0 , y: markerPixelHeight }),
+        latitude: 41,
+        longitude: 2,
+      },
+      {
+        component: <Marker />,
+        getOffset: (markerPixelWidth, markerPixelHeight) =>
+          ({ x: -markerPixelWidth , y: 0 }),
+        latitude: 41,
+        longitude: 2,
+      },
+      {
+        component: <Marker />,
+        getOffset: (markerPixelWidth, markerPixelHeight) =>
+          ({ x: 0 , y: -markerPixelHeight }),
+        latitude: 41,
+        longitude: 2,
+      },
+    ]}
+  />
+</div>
+```
