@@ -39,7 +39,7 @@ export class Component extends PureComponent {
     { propertySearchResults: previousPropertySearchResults },
     { activePage: previousActivePage }
   ) => {
-    const { propertySearchResults } = this.props;
+    const { onChange, propertySearchResults } = this.props;
     const { activePage } = this.state;
 
     if (
@@ -48,6 +48,7 @@ export class Component extends PureComponent {
     )
       return;
 
+    onChange(activePage);
     this.setState({
       propertySearchResultsToDisplay: getPropertySearchResultsToDisplay(
         activePage,
@@ -166,6 +167,7 @@ Component.defaultProps = {
   messageButtonOnClick: Function.prototype,
   messageButtonText: null,
   messageText: null,
+  onChange: Function.prototype,
   propertySearchResults: [],
   resultsCountText: RESULTS,
   isShowingPlaceholder: false,
@@ -207,6 +209,11 @@ Component.propTypes = {
   messageButtonText: PropTypes.string,
   /** Text to show as a message above the search results. */
   messageText: PropTypes.string,
+  /**
+   * A function called each time the page is changed.
+   * @param  {number} activePage
+   */
+  onChange: PropTypes.func,
   /** An array of [`PropertySearchResult`](#/PropertySearchResult) props objects. */
   propertySearchResults: PropTypes.arrayOf(PropTypes.object),
   /**
