@@ -93,6 +93,10 @@
     word-break: break-word;
     transition: @priceLabelTransitionOnHover;
 
+    &.is-clickable {
+      cursor: pointer;
+    }
+
     &.has-shadow {
 
       &.is-pointing {

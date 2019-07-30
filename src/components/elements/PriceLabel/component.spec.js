@@ -62,6 +62,14 @@ describe('the `PriceLabel` component', () => {
     });
   });
 
+  describe('if `onClick` is passed', () => {
+    it('should have the right class', () => {
+      const actual = getLabel({ onClick: () => {} });
+
+      expect(actual.hasClass('is-clickable')).toBe(true);
+    });
+  });
+
   describe('componentDidUpdate', () => {
     describe('if `state.isActive` has not changed', () => {
       it('should not call `props.onChange`', () => {
