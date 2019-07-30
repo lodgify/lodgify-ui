@@ -1,3 +1,10 @@
+# [1.232.0](https://github.com/lodgify/lodgify-ui/compare/v1.231.7...v1.232.0) (2019-07-30)
+
+
+### Features
+
+* **PropertySearchResultList:** expose props.onChange ([0031da4](https://github.com/lodgify/lodgify-ui/commit/0031da4))
+
 ## [1.231.7](https://github.com/lodgify/lodgify-ui/compare/v1.231.6...v1.231.7) (2019-07-26)
 
 
