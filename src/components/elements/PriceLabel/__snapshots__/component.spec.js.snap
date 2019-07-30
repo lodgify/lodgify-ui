@@ -2,7 +2,7 @@
 
 exports[`the \`PriceLabel\` component if there is \`periodText\` if \`isPointing\` is true should return the right structure 1`] = `
 <div
-  className="ui label price-label is-pointing has-period-text"
+  className="ui label price-label is-clickable is-pointing has-period-text"
   onClick={[Function]}
   onMouseOut={[Function]}
   onMouseOver={[Function]}
@@ -42,7 +42,7 @@ exports[`the \`PriceLabel\` component if there is \`periodText\` if \`isPointing
 
 exports[`the \`PriceLabel\` component if there is \`periodText\` should return the right structure 1`] = `
 <div
-  className="ui label price-label has-period-text"
+  className="ui label price-label is-clickable has-period-text"
   onClick={[Function]}
   onMouseOut={[Function]}
   onMouseOver={[Function]}
@@ -79,7 +79,7 @@ exports[`the \`PriceLabel\` component if there is \`periodText\` should return t
 
 exports[`the \`PriceLabel\` component if there is no \`periodText\` if \`isPointing\` is true should return the right structure 1`] = `
 <div
-  className="ui label price-label is-pointing"
+  className="ui label price-label is-clickable is-pointing"
   onClick={[Function]}
   onMouseOut={[Function]}
   onMouseOver={[Function]}
@@ -103,7 +103,7 @@ exports[`the \`PriceLabel\` component if there is no \`periodText\` if \`isPoint
 
 exports[`the \`PriceLabel\` component if there is no \`periodText\` should return the right structure 1`] = `
 <div
-  className="ui label price-label"
+  className="ui label price-label is-clickable"
   onClick={[Function]}
   onMouseOut={[Function]}
   onMouseOver={[Function]}

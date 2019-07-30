@@ -40,6 +40,7 @@ export class Component extends PureComponent {
       hasShadow,
       isActive,
       isPointing,
+      onClick,
       periodText,
       pricePerPeriod,
       pricePerPeriodPrefix,
@@ -49,6 +50,7 @@ export class Component extends PureComponent {
       <div
         className={getClassNames('ui', 'label', 'price-label', {
           active: isActive || this.state.isActive,
+          'is-clickable': onClick !== Function.prototype,
           'is-pointing': isPointing,
           'has-period-text': periodText,
           'has-shadow': hasShadow,
