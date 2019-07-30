@@ -159,6 +159,13 @@ Component.propTypes = {
     PropTypes.shape({
       /** The React component to show as a marker. */
       component: PropTypes.node.isRequired,
+      /**
+       * A function called to determine the offset of the marker relative to its top left corner.
+       * @param   {number} markerPixelWidth
+       * @param   {number} markerPixelHeight
+       * @return  {object}
+       */
+      getOffset: PropTypes.func,
       /** The latitude coordinate for the marker. */
       latitude: PropTypes.number,
       /** The longitude coordinate for the marker. */
