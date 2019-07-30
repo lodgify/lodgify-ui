@@ -1,3 +1,11 @@
+# [1.233.0](https://github.com/lodgify/lodgify-ui/compare/v1.232.0...v1.233.0) (2019-07-30)
+
+
+### Features
+
+* **GoogleMap:** accept offset for markers ([0dd1857](https://github.com/lodgify/lodgify-ui/commit/0dd1857))
+* **PriceLabel:** use pointer cursor for clickable labels ([6c39568](https://github.com/lodgify/lodgify-ui/commit/6c39568))
+
 # [1.232.0](https://github.com/lodgify/lodgify-ui/compare/v1.231.7...v1.232.0) (2019-07-30)
 
 
