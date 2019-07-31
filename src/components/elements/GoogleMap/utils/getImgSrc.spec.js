@@ -1,15 +1,18 @@
 import { getImgSrc } from './getImgSrc';
 
-const apiKey = 'some apiKey';
+const props = {
+  apiKey: 'some apiKey',
+  latitude: 123,
+  longitude: 234,
+};
+
 const height = '1px';
-const latitude = 123;
-const longitude = 234;
 const parentNodeWidth = 1;
 
 describe('getImgSrc', () => {
   describe('if `parentNodeWidth` is `0`', () => {
     it('should return `undefined`', () => {
-      const actual = getImgSrc(apiKey, height, true, latitude, longitude, 0);
+      const actual = getImgSrc(props, height, 0);
 
       expect(actual).toBe(undefined);
     });
@@ -19,12 +22,12 @@ describe('getImgSrc', () => {
     describe('if `isShowingExactLocation` and `isShowingApproximateLocation` are `false`', () => {
       it('should return the right string', () => {
         const actual = getImgSrc(
-          apiKey,
+          {
+            ...props,
+            isShowingApproximateLocation: false,
+            isShowingExactLocation: false,
+          },
           height,
-          false,
-          false,
-          latitude,
-          longitude,
           parentNodeWidth
         );
 
@@ -35,12 +38,12 @@ describe('getImgSrc', () => {
     describe('if `isShowingExactLocation` is `true`', () => {
       it('should return the right string', () => {
         const actual = getImgSrc(
-          apiKey,
+          {
+            ...props,
+            isShowingApproximateLocation: false,
+            isShowingExactLocation: true,
+          },
           height,
-          false,
-          true,
-          latitude,
-          longitude,
           parentNodeWidth
         );
 
@@ -51,12 +54,12 @@ describe('getImgSrc', () => {
     describe('if `isShowingApproximateLocation` is `true`', () => {
       it('should return the right string', () => {
         const actual = getImgSrc(
-          apiKey,
+          {
+            ...props,
+            isShowingApproximateLocation: true,
+            isShowingExactLocation: false,
+          },
           height,
-          true,
-          false,
-          latitude,
-          longitude,
           parentNodeWidth
         );
 

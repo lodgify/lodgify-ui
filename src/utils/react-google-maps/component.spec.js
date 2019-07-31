@@ -5,6 +5,7 @@ import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-he
 import { Component as ReactGoogleMap } from './component';
 
 const props = {
+  hasDefaultStyles: false,
   isShowingExactLocation: false,
   isShowingApproximateLocation: false,
   latitude: 1,

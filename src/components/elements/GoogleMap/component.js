@@ -71,6 +71,7 @@ export class Component extends PureComponent {
   render = () => {
     const {
       apiKey,
+      hasDefaultStyles,
       isFullBleed,
       isFluid,
       isShowingExactLocation,
@@ -85,6 +86,7 @@ export class Component extends PureComponent {
     return isFullBleed ? (
       <ReactGoogleMap
         apiKey={apiKey}
+        hasDefaultStyles={hasDefaultStyles}
         height={height}
         isShowingApproximateLocation={isShowingApproximateLocation}
         isShowingExactLocation={isShowingExactLocation}
@@ -97,6 +99,7 @@ export class Component extends PureComponent {
         {isFluid || this.state.isDynamicMapShowing ? (
           <ReactGoogleMap
             apiKey={apiKey}
+            hasDefaultStyles={hasDefaultStyles}
             height={height}
             isShowingApproximateLocation={isShowingApproximateLocation}
             isShowingExactLocation={isShowingExactLocation}
@@ -107,15 +110,7 @@ export class Component extends PureComponent {
         ) : (
           <img
             ref={this.createRef}
-            src={getImgSrc(
-              apiKey,
-              height,
-              isShowingApproximateLocation,
-              isShowingExactLocation,
-              latitude,
-              longitude,
-              this.state.parentNodeWidth
-            )}
+            src={getImgSrc(this.props, height, this.state.parentNodeWidth)}
           />
         )}
       </Card>
@@ -127,6 +122,7 @@ Component.displayName = 'GoogleMap';
 
 Component.defaultProps = {
   apiKey: GOOGLE_MAPS_API_KEY,
+  hasDefaultStyles: false,
   height: '400px',
   isFluid: false,
   isFullBleed: false,
@@ -140,6 +136,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** An [API key](https://developers.google.com/maps/documentation/javascript/get-api-key) for using Google Maps. */
   apiKey: PropTypes.string,
+  /** Does the map have the default Google Maps styles. */
+  hasDefaultStyles: PropTypes.bool,
   /** A valid CSS value to set the height of the map. */
   height: PropTypes.string,
   /** Does the map show on a card which fills the width and height of its container. */

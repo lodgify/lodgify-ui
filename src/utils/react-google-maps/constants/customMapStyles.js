@@ -1,7 +1,10 @@
+import { defaultMapStyles } from './defaultMapStyles';
+
 /**
  * Generated using https://mapstyle.withgoogle.com/
  */
-export const mapStyles = [
+export const customMapStyles = [
+  ...defaultMapStyles,
   {
     elementType: 'geometry',
     stylers: [
@@ -37,14 +40,6 @@ export const mapStyles = [
   },
   {
     featureType: 'administrative.land_parcel',
-    stylers: [
-      {
-        visibility: 'off',
-      },
-    ],
-  },
-  {
-    featureType: 'administrative.land_parcel',
     elementType: 'geometry.stroke',
     stylers: [
       {
@@ -58,14 +53,6 @@ export const mapStyles = [
     stylers: [
       {
         color: '#ae9e90',
-      },
-    ],
-  },
-  {
-    featureType: 'administrative.neighborhood',
-    stylers: [
-      {
-        visibility: 'off',
       },
     ],
   },
@@ -84,15 +71,6 @@ export const mapStyles = [
     stylers: [
       {
         color: '#dfd2ae',
-      },
-    ],
-  },
-  {
-    featureType: 'poi',
-    elementType: 'labels.text',
-    stylers: [
-      {
-        visibility: 'off',
       },
     ],
   },
@@ -129,15 +107,6 @@ export const mapStyles = [
     stylers: [
       {
         color: '#f5f1e6',
-      },
-    ],
-  },
-  {
-    featureType: 'road',
-    elementType: 'labels',
-    stylers: [
-      {
-        visibility: 'off',
       },
     ],
   },
@@ -237,15 +206,6 @@ export const mapStyles = [
     stylers: [
       {
         color: '#b9d3c2',
-      },
-    ],
-  },
-  {
-    featureType: 'water',
-    elementType: 'labels.text',
-    stylers: [
-      {
-        visibility: 'off',
       },
     ],
   },

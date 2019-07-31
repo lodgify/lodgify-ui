@@ -7,7 +7,8 @@ import { OverlayView } from 'react-google-maps/lib/components/OverlayView';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 
-import { mapOptions, circleOptions } from './constants';
+import { getMapOptions } from './utils/getMapOptions';
+import { circleOptions } from './constants';
 import { adaptCoordinates } from './utils/adaptCoordinates';
 
 /**
@@ -16,6 +17,7 @@ import { adaptCoordinates } from './utils/adaptCoordinates';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  hasDefaultStyles,
   isShowingExactLocation,
   isShowingApproximateLocation,
   latitude,
@@ -24,7 +26,7 @@ export const Component = ({
 }) => (
   <GoogleMap
     center={adaptCoordinates(latitude, longitude)}
-    options={mapOptions}
+    options={getMapOptions(hasDefaultStyles)}
   >
     {!!isShowingExactLocation && (
       <Marker position={adaptCoordinates(latitude, longitude)} />
@@ -51,6 +53,8 @@ export const Component = ({
 Component.displayName = 'ReactGoogleMap';
 
 Component.propTypes = {
+  /** Does the map have the default Google Maps styles. */
+  hasDefaultStyles: PropTypes.bool.isRequired,
   /** Is the map showing a marker for the approximate location at the center of the map. */
   isShowingApproximateLocation: PropTypes.bool.isRequired,
   /** Is the map showing a marker for the exact location location at the center of the map. */
