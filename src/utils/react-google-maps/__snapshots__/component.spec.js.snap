@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ReactGoogleMaps /> if \`props.isShowingApproximateLocation\` is \`true\` should render the right structure 1`] = `
+exports[`<ReactGoogleMaps /> render if \`props.isShowingApproximateLocation\` is \`true\` should render the right structure 1`] = `
 <GoogleMap
   center={
     Object {
@@ -295,7 +295,7 @@ exports[`<ReactGoogleMaps /> if \`props.isShowingApproximateLocation\` is \`true
 </GoogleMap>
 `;
 
-exports[`<ReactGoogleMaps /> if \`props.isShowingExactLocation\` is \`true\` should render the right structure 1`] = `
+exports[`<ReactGoogleMaps /> render if \`props.isShowingExactLocation\` is \`true\` should render the right structure 1`] = `
 <GoogleMap
   center={
     Object {
@@ -580,7 +580,7 @@ exports[`<ReactGoogleMaps /> if \`props.isShowingExactLocation\` is \`true\` sho
 </GoogleMap>
 `;
 
-exports[`<ReactGoogleMaps /> if \`props.markers\` is populated should render the right structure 1`] = `
+exports[`<ReactGoogleMaps /> render if \`props.markers\` is populated should render the right structure 1`] = `
 <GoogleMap
   center={
     Object {
@@ -881,7 +881,7 @@ exports[`<ReactGoogleMaps /> if \`props.markers\` is populated should render the
 </GoogleMap>
 `;
 
-exports[`<ReactGoogleMaps /> should render the right structure 1`] = `
+exports[`<ReactGoogleMaps /> render should render the right structure 1`] = `
 <GoogleMap
   center={
     Object {
