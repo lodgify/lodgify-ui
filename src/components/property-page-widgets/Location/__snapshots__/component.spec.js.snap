@@ -438,6 +438,8 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
             >
               <GoogleMap
                 apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+                bounds={null}
+                hasDefaultStyles={false}
                 height="400px"
                 isFluid={false}
                 isFullBleed={false}
@@ -446,6 +448,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                 latitude={41.387863}
                 longitude={2.158105}
                 markers={Array []}
+                onBoundsChange={[Function]}
               >
                 <Card
                   fluid={true}

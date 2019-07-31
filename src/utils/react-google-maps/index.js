@@ -1,2 +1,2 @@
-export { mapOptions } from './constants';
+export { getMapOptions } from './utils/getMapOptions';
 export { Container as ReactGoogleMap } from './container';

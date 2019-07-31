@@ -29,6 +29,16 @@
 />
 ```
 
+#### Default styles
+
+```jsx
+<GoogleMap
+  hasDefaultStyles
+  latitude={41.387863}
+  longitude={2.158105}
+/>
+```
+
 #### Fluid
 
 A fluid map appears on a card filling the width and height of its container. It is always dynamic.
@@ -148,4 +158,52 @@ Markers can be offset for more precision.
     ]}
   />
 </div>
+```
+
+#### Bounds
+
+The bounds of the map can be controlled.
+
+```jsx
+const boundsOne = {
+  east: 2.18,
+  north: 41.38,
+  south: 41.37,
+  west: 2.15
+};
+
+const boundsTwo = {
+  east: 2.83,
+  north: 41.98,
+  south: 41.97,
+  west: 2.8
+};
+
+class Controller extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <div style={{ height: 400, marginBottom: 20 }}>
+          <GoogleMap
+            bounds={this.state.isBoundsOne ? boundsOne : boundsTwo}
+            isFluid
+            onBoundsChange={console.log}
+          />
+        </div>
+        <Button
+          onClick={() => this.setState({ isBoundsOne: !this.state.isBoundsOne})}
+        >
+          Change bounds
+        </Button>
+      </React.Fragment>
+    )
+  }
+}
+
+<Controller />
 ```
