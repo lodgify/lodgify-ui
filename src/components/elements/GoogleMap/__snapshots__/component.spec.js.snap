@@ -3,6 +3,7 @@
 exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the right structure 1`] = `
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+  bounds={null}
   hasDefaultStyles={false}
   height="400px"
   isFluid={true}
@@ -12,6 +13,7 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
   latitude={0}
   longitude={0}
   markers={Array []}
+  onBoundsChange={[Function]}
 >
   <Card
     fluid={true}
@@ -34,6 +36,7 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
     >
       <withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))
         apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+        bounds={null}
         hasDefaultStyles={false}
         height="100%"
         isShowingApproximateLocation={false}
@@ -41,9 +44,11 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
         latitude={0}
         longitude={0}
         markers={Array []}
+        onBoundsChange={[Function]}
       >
         <withScriptjs(withGoogleMap(ReactGoogleMap))
           apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+          bounds={null}
           containerElement={
             <div
               style={
@@ -79,6 +84,7 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
             />
           }
           markers={Array []}
+          onBoundsChange={[Function]}
         >
           <div
             style={
@@ -97,6 +103,7 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
 exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return the right structure 1`] = `
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+  bounds={null}
   hasDefaultStyles={false}
   height="400px"
   isFluid={false}
@@ -106,9 +113,11 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
   latitude={0}
   longitude={0}
   markers={Array []}
+  onBoundsChange={[Function]}
 >
   <withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))
     apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+    bounds={null}
     hasDefaultStyles={false}
     height="100%"
     isShowingApproximateLocation={false}
@@ -116,9 +125,11 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
     latitude={0}
     longitude={0}
     markers={Array []}
+    onBoundsChange={[Function]}
   >
     <withScriptjs(withGoogleMap(ReactGoogleMap))
       apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+      bounds={null}
       containerElement={
         <div
           style={
@@ -154,6 +165,7 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
         />
       }
       markers={Array []}
+      onBoundsChange={[Function]}
     >
       <div
         style={
@@ -170,6 +182,7 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
 exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` should return the right structure 1`] = `
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+  bounds={null}
   hasDefaultStyles={false}
   height="400px"
   isFluid={false}
@@ -179,6 +192,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` shou
   latitude={0}
   longitude={0}
   markers={Array []}
+  onBoundsChange={[Function]}
 >
   <Card
     fluid={true}
@@ -210,6 +224,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` shou
 exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` should return the right structure 1`] = `
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+  bounds={null}
   hasDefaultStyles={false}
   height="400px"
   isFluid={false}
@@ -219,6 +234,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
   latitude={0}
   longitude={0}
   markers={Array []}
+  onBoundsChange={[Function]}
 >
   <Card
     fluid={true}
@@ -241,6 +257,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
     >
       <withProps(withScriptjs(withGoogleMap(ReactGoogleMap)))
         apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+        bounds={null}
         hasDefaultStyles={false}
         height="400px"
         isShowingApproximateLocation={false}
@@ -248,9 +265,11 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
         latitude={0}
         longitude={0}
         markers={Array []}
+        onBoundsChange={[Function]}
       >
         <withScriptjs(withGoogleMap(ReactGoogleMap))
           apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
+          bounds={null}
           containerElement={
             <div
               style={
@@ -286,6 +305,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
             />
           }
           markers={Array []}
+          onBoundsChange={[Function]}
         >
           <div
             style={

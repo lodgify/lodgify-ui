@@ -71,6 +71,7 @@ export class Component extends PureComponent {
   render = () => {
     const {
       apiKey,
+      bounds,
       hasDefaultStyles,
       isFullBleed,
       isFluid,
@@ -79,6 +80,7 @@ export class Component extends PureComponent {
       latitude,
       longitude,
       markers,
+      onBoundsChange,
     } = this.props;
 
     const height = getHeight(this.props.height, isFullBleed, isFluid);
@@ -86,6 +88,7 @@ export class Component extends PureComponent {
     return isFullBleed ? (
       <ReactGoogleMap
         apiKey={apiKey}
+        bounds={bounds}
         hasDefaultStyles={hasDefaultStyles}
         height={height}
         isShowingApproximateLocation={isShowingApproximateLocation}
@@ -93,12 +96,14 @@ export class Component extends PureComponent {
         latitude={latitude}
         longitude={longitude}
         markers={markers}
+        onBoundsChange={onBoundsChange}
       />
     ) : (
       <Card fluid style={{ height, maxWidth: getMaxWidth(isFluid) }}>
         {isFluid || this.state.isDynamicMapShowing ? (
           <ReactGoogleMap
             apiKey={apiKey}
+            bounds={bounds}
             hasDefaultStyles={hasDefaultStyles}
             height={height}
             isShowingApproximateLocation={isShowingApproximateLocation}
@@ -106,6 +111,7 @@ export class Component extends PureComponent {
             latitude={latitude}
             longitude={longitude}
             markers={markers}
+            onBoundsChange={onBoundsChange}
           />
         ) : (
           <img
@@ -122,20 +128,29 @@ Component.displayName = 'GoogleMap';
 
 Component.defaultProps = {
   apiKey: GOOGLE_MAPS_API_KEY,
+  bounds: null,
   hasDefaultStyles: false,
   height: '400px',
   isFluid: false,
   isFullBleed: false,
   isShowingExactLocation: false,
   isShowingApproximateLocation: false,
-  latitude: 0,
-  longitude: 0,
+  latitude: null,
+  longitude: null,
   markers: [],
+  onBoundsChange: Function.prototype,
 };
 
 Component.propTypes = {
   /** An [API key](https://developers.google.com/maps/documentation/javascript/get-api-key) for using Google Maps. */
   apiKey: PropTypes.string,
+  /** The bounds of the map as latitude and longitude values. */
+  bounds: PropTypes.shape({
+    east: PropTypes.number.isRequired,
+    north: PropTypes.number.isRequired,
+    south: PropTypes.number.isRequired,
+    west: PropTypes.number.isRequired,
+  }),
   /** Does the map have the default Google Maps styles. */
   hasDefaultStyles: PropTypes.bool,
   /** A valid CSS value to set the height of the map. */
@@ -170,4 +185,13 @@ Component.propTypes = {
       longitude: PropTypes.number,
     })
   ),
+  /**
+   * A function called when the bounds of a dynamic map change.
+   * @param {Object} bounds
+   * @param {number} bounds.east
+   * @param {number} bounds.north
+   * @param {number} bounds.south
+   * @param {number} bounds.west
+   */
+  onBoundsChange: PropTypes.func,
 };
