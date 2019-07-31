@@ -1,3 +1,12 @@
+# [1.234.0](https://github.com/lodgify/lodgify-ui/compare/v1.233.0...v1.234.0) (2019-07-31)
+
+
+### Features
+
+* **GoogleMap:** pass through bounds props and add example ([e9f0446](https://github.com/lodgify/lodgify-ui/commit/e9f0446))
+* **GoogleMap:** support default google map colours ([a8810ff](https://github.com/lodgify/lodgify-ui/commit/a8810ff))
+* **GoogleMaps:** support bounds control ([279f03e](https://github.com/lodgify/lodgify-ui/commit/279f03e))
+
 # [1.233.0](https://github.com/lodgify/lodgify-ui/compare/v1.232.0...v1.233.0) (2019-07-30)
 
 
