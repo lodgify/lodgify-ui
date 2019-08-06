@@ -1966,16 +1966,17 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
           }
         >
           <Pagination
+            activePage={1}
             isShowingPageNumbers={true}
             onPageChange={[Function]}
             startingPage={1}
             totalPages={2}
           >
             <Pagination
+              activePage={1}
               aria-label="Pagination Navigation"
               boundaryRange={1}
               className="has-page-numbers"
-              defaultActivePage={1}
               ellipsisItem="..."
               firstItem={null}
               lastItem={null}

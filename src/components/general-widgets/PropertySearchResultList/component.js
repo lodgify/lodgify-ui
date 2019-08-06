@@ -16,6 +16,7 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { RESULTS } from 'utils/default-strings';
 
 import { PLACEHOLDERS, NUMBER_OF_PROPERTIES_PER_PAGE } from './constants';
+import { getActivePage } from './utils/getActivePage';
 import { getNumberOfPages } from './utils/getNumberOfPages';
 import { getPropertySearchResultsToDisplay } from './utils/getPropertySearchResultsToDisplay';
 import { getFirstPropertyPositionOfActivePage } from './utils/getFirstPropertyPositionOfActivePage';
@@ -36,11 +37,21 @@ export class Component extends PureComponent {
   };
 
   componentDidUpdate = (
-    { propertySearchResults: previousPropertySearchResults },
-    { activePage: previousActivePage }
+    {
+      activePage: previousPropsActivePage,
+      propertySearchResults: previousPropertySearchResults,
+    },
+    { activePage: previousStateActivePage }
   ) => {
     const { onChange, propertySearchResults } = this.props;
-    const { activePage } = this.state;
+    const previousActivePage = getActivePage(
+      previousPropsActivePage,
+      previousStateActivePage
+    );
+    const activePage = getActivePage(
+      this.props.activePage,
+      this.state.activePage
+    );
 
     if (
       activePage === previousActivePage &&
@@ -73,9 +84,7 @@ export class Component extends PureComponent {
       resultsCountText,
       renderShowingResultsText,
     } = this.props;
-
     const { length: propertySearchResultsLength } = propertySearchResults;
-
     const { activePage, propertySearchResultsToDisplay } = this.state;
 
     return (
@@ -135,6 +144,7 @@ export class Component extends PureComponent {
               flexWrap="wrap"
             >
               <Pagination
+                activePage={activePage}
                 isShowingPageNumbers
                 onPageChange={this.handleOnPageChange}
                 totalPages={getNumberOfPages(propertySearchResultsLength)}
@@ -160,6 +170,7 @@ export class Component extends PureComponent {
 Component.displayName = 'PropertySearchResultList';
 
 Component.defaultProps = {
+  activePage: undefined,
   dropdownLabel: null,
   dropdownOnChange: Function.prototype,
   dropdownOptions: null,
@@ -175,6 +186,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** Index of the currently active page. */
+  activePage: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** The label for the dropdown input. */
   dropdownLabel: PropTypes.string,
   /** A function called when the dropdown input value changes. */
