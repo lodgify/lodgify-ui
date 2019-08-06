@@ -14,15 +14,19 @@ import { getSiblingRange } from './utils/getSiblingRange';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  activePage,
   isShowingPageNumbers,
   onPageChange,
   startingPage,
   totalPages,
 }) => (
   <Pagination
+    activePage={activePage}
     boundaryRange={getBoundryRange(isShowingPageNumbers)}
     className={classNames({ 'has-page-numbers': isShowingPageNumbers })}
-    defaultActivePage={startingPage}
+    defaultActivePage={
+      typeof activePage === 'undefined' ? startingPage : undefined
+    }
     firstItem={null}
     lastItem={null}
     nextItem={getNextItemMarkup(isShowingPageNumbers)}
@@ -38,12 +42,15 @@ export const Component = ({
 Component.displayName = 'Pagination';
 
 Component.defaultProps = {
+  activePage: undefined,
   isShowingPageNumbers: false,
   onPageChange: Function.prototype,
   startingPage: 1,
 };
 
 Component.propTypes = {
+  /** Index of the currently active page. */
+  activePage: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** Items are displayed as numbers. */
   isShowingPageNumbers: PropTypes.bool,
   /**

@@ -272,6 +272,279 @@ exports[`<Pagination /> by default should render the right structure 1`] = `
 </Pagination>
 `;
 
+exports[`<Pagination /> if \`props.activePage\` is defined should render the right structure 1`] = `
+<Pagination
+  activePage={1}
+  isShowingPageNumbers={false}
+  onPageChange={[Function]}
+  startingPage={1}
+  totalPages={5}
+>
+  <Pagination
+    activePage={1}
+    aria-label="Pagination Navigation"
+    boundaryRange={10}
+    className=""
+    ellipsisItem="..."
+    firstItem={null}
+    lastItem={null}
+    nextItem={
+      <Button
+        as="button"
+        circular={true}
+        content={null}
+      >
+        <Icon
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={true}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="chevron right"
+          path={null}
+          size={null}
+        />
+      </Button>
+    }
+    onPageChange={[Function]}
+    pageItem={
+      <Label
+        circular={true}
+        content={null}
+        empty={true}
+        size="tiny"
+      />
+    }
+    prevItem={
+      <Button
+        as="button"
+        circular={true}
+        content={null}
+      >
+        <Icon
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={true}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="chevron left"
+          path={null}
+          size={null}
+        />
+      </Button>
+    }
+    secondary={true}
+    siblingRange={1}
+    totalPages={5}
+  >
+    <Menu
+      aria-label="Pagination Navigation"
+      className=""
+      pagination={true}
+      role="navigation"
+      secondary={true}
+    >
+      <div
+        aria-label="Pagination Navigation"
+        className="ui pagination secondary menu"
+        role="navigation"
+      >
+        <Button
+          active={false}
+          as="button"
+          circular={true}
+          content={null}
+          key="prevItem-1"
+          onClick={[Function]}
+          type="prevItem"
+          value={1}
+        >
+          <button
+            className="ui circular button"
+            onClick={[Function]}
+            role="button"
+            type="prevItem"
+            value={1}
+          >
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={true}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="chevron left"
+              path={null}
+              size={null}
+            >
+              <i
+                className="icon inverted"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </i>
+            </Icon>
+          </button>
+        </Button>
+        <Label
+          active={true}
+          circular={true}
+          content={null}
+          empty={true}
+          key="pageItem-1"
+          onClick={[Function]}
+          size="tiny"
+          type="pageItem"
+          value={1}
+        >
+          <div
+            className="ui tiny active circular empty label"
+            onClick={[Function]}
+            type="pageItem"
+            value={1}
+          />
+        </Label>
+        <Label
+          active={false}
+          circular={true}
+          content={null}
+          empty={true}
+          key="pageItem-2"
+          onClick={[Function]}
+          size="tiny"
+          type="pageItem"
+          value={2}
+        >
+          <div
+            className="ui tiny circular empty label"
+            onClick={[Function]}
+            type="pageItem"
+            value={2}
+          />
+        </Label>
+        <Label
+          active={false}
+          circular={true}
+          content={null}
+          empty={true}
+          key="pageItem-3"
+          onClick={[Function]}
+          size="tiny"
+          type="pageItem"
+          value={3}
+        >
+          <div
+            className="ui tiny circular empty label"
+            onClick={[Function]}
+            type="pageItem"
+            value={3}
+          />
+        </Label>
+        <Label
+          active={false}
+          circular={true}
+          content={null}
+          empty={true}
+          key="pageItem-4"
+          onClick={[Function]}
+          size="tiny"
+          type="pageItem"
+          value={4}
+        >
+          <div
+            className="ui tiny circular empty label"
+            onClick={[Function]}
+            type="pageItem"
+            value={4}
+          />
+        </Label>
+        <Label
+          active={false}
+          circular={true}
+          content={null}
+          empty={true}
+          key="pageItem-5"
+          onClick={[Function]}
+          size="tiny"
+          type="pageItem"
+          value={5}
+        >
+          <div
+            className="ui tiny circular empty label"
+            onClick={[Function]}
+            type="pageItem"
+            value={5}
+          />
+        </Label>
+        <Button
+          active={false}
+          as="button"
+          circular={true}
+          content={null}
+          key="nextItem-2"
+          onClick={[Function]}
+          type="nextItem"
+          value={2}
+        >
+          <button
+            className="ui circular button"
+            onClick={[Function]}
+            role="button"
+            type="nextItem"
+            value={2}
+          >
+            <Icon
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={true}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="chevron right"
+              path={null}
+              size={null}
+            >
+              <i
+                className="icon inverted"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </i>
+            </Icon>
+          </button>
+        </Button>
+      </div>
+    </Menu>
+  </Pagination>
+</Pagination>
+`;
+
 exports[`<Pagination /> if \`props.isShowingPageNumbers\` is true should render the right structure 1`] = `
 <Pagination
   isShowingPageNumbers={true}
