@@ -4,7 +4,7 @@
  * @return {Object}
  */
 export const adaptCoordinates = (latitude, longitude) => {
-  if ([latitude, longitude].includes(null)) return;
+  if ([latitude, longitude].includes(null)) return { lat: 0, lng: 0 };
 
   return {
     lat: latitude,

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoogleMapMarker should render the right structure 1`] = `
+<img
+  lat={1}
+  lng={2}
+  src="some imageSrc"
+  style={
+    Object {
+      "transform": "some transform",
+    }
+  }
+/>
+`;

@@ -1,55 +1,50 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import isEqual from 'fast-deep-equal';
-import debounce from 'debounce';
-import { GoogleMap } from 'react-google-maps/lib/components/GoogleMap';
-import { Marker } from 'react-google-maps/lib/components/Marker';
-import { Circle } from 'react-google-maps/lib/components/Circle';
-import { OverlayView } from 'react-google-maps/lib/components/OverlayView';
+import GoogleMapReact from 'google-map-react';
+import { fitBounds } from 'google-map-react/utils';
 
-import { buildKeyFromStrings } from 'utils/build-key-from-strings';
+import {
+  DEFAULT_ZOOM,
+  MARKER_IMAGE_SRC,
+  MARKER_IMAGE_STYLE,
+  CIRCLE_IMAGE_SRC,
+  CIRCLE_IMAGE_STYLE,
+} from '../../constants';
+import { getMapOptions } from '../../utils/getMapOptions';
+import { GoogleMapMarker } from '../GoogleMapMarker';
 
-import { getBounds } from './utils/getBounds';
-import { getMapOptions } from './utils/getMapOptions';
-import { BOUNDS_PADDING, circleOptions } from './constants';
 import { adaptCoordinates } from './utils/adaptCoordinates';
+import { adaptENSWtoNESW } from './utils/adaptENSWtoNESW';
+import { adaptNESWtoENSW } from './utils/adaptNESWtoENSW';
 
-/**
- * Canonical implementation for react-google-maps.
- * See https://tomchentw.github.io/react-google-maps/#usage--configuration
- */
-// eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
-  componentDidMount = () => {
-    const { googleMap } = this;
-    const { bounds } = this.props;
-
-    if (!googleMap || !bounds) return;
-
-    googleMap.fitBounds(bounds, BOUNDS_PADDING);
+  state = {
+    center: adaptCoordinates(this.props.latitude, this.props.longitude),
+    size: null,
+    zoom: DEFAULT_ZOOM,
   };
 
-  componentDidUpdate = ({ bounds: previousBounds }) => {
-    const { googleMap } = this;
+  componentDidUpdate = ({ bounds: previousBounds }, { size: previousSize }) => {
     const { bounds } = this.props;
-
-    if (!googleMap || isEqual(previousBounds, bounds)) return;
-
-    googleMap.panToBounds(bounds, BOUNDS_PADDING);
-  };
-
-  handleBoundsChange = debounce(() => {
-    const bounds = getBounds(this.googleMap);
+    const { size } = this.state;
 
     if (!bounds) return;
 
-    this.props.onBoundsChange(bounds);
-  });
+    if (isEqual(previousSize, size) && isEqual(previousBounds, bounds)) return;
 
-  createRef = googleMap => (this.googleMap = googleMap);
+    this.setState(fitBounds(adaptENSWtoNESW(bounds), size));
+  };
+
+  handleChange = ({ bounds, size }) => {
+    if (!this.state.size) this.setState({ size });
+
+    this.props.onBoundsChange(adaptNESWtoENSW(bounds));
+  };
 
   render = () => {
     const {
+      apiKey,
       hasDefaultStyles,
       isShowingExactLocation,
       isShowingApproximateLocation,
@@ -57,39 +52,44 @@ export class Component extends PureComponent {
       longitude,
       markers,
     } = this.props;
+    const { center, zoom } = this.state;
 
     return (
-      <GoogleMap
-        center={adaptCoordinates(latitude, longitude)}
-        onBoundsChanged={this.handleBoundsChange}
+      <GoogleMapReact
+        bootstrapURLKeys={{
+          key: apiKey,
+        }}
+        center={center}
+        onChange={this.handleChange}
         options={getMapOptions(hasDefaultStyles)}
         ref={this.createRef}
+        zoom={zoom}
       >
         {!!isShowingExactLocation && (
-          <Marker position={adaptCoordinates(latitude, longitude)} />
-        )}
-        {!!isShowingApproximateLocation && (
-          <Circle
-            center={adaptCoordinates(latitude, longitude)}
-            options={circleOptions}
+          <GoogleMapMarker
+            imageSrc={MARKER_IMAGE_SRC}
+            latitude={latitude}
+            longitude={longitude}
+            style={MARKER_IMAGE_STYLE}
           />
         )}
-        {markers.map(({ component, getOffset, latitude, longitude }, index) => (
-          <OverlayView
-            getPixelPositionOffset={getOffset}
-            key={buildKeyFromStrings(component.displayName, index)}
-            mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
-            position={adaptCoordinates(latitude, longitude)}
-          >
-            {component}
-          </OverlayView>
-        ))}
-      </GoogleMap>
+        {!!isShowingApproximateLocation && (
+          <GoogleMapMarker
+            imageSrc={CIRCLE_IMAGE_SRC}
+            latitude={latitude}
+            longitude={longitude}
+            style={CIRCLE_IMAGE_STYLE}
+          />
+        )}
+        {markers.map(({ component, key, latitude, longitude }) =>
+          React.cloneElement(component, { key, lat: latitude, lng: longitude })
+        )}
+      </GoogleMapReact>
     );
   };
 }
 
-Component.displayName = 'ReactGoogleMap';
+Component.displayName = 'GoogleMapReact';
 
 Component.defaultProps = {
   bounds: null,
@@ -98,6 +98,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** An [API key](https://developers.google.com/maps/documentation/javascript/get-api-key) for using Google Maps. */
+  apiKey: PropTypes.string.isRequired,
   /** The bounds of the map as latitude and longitude values. */
   bounds: PropTypes.shape({
     east: PropTypes.number.isRequired,
@@ -120,6 +122,8 @@ Component.propTypes = {
     PropTypes.shape({
       /** The React component to show as a marker. */
       component: PropTypes.node.isRequired,
+      /** A unique identifier for the marker component. */
+      key: PropTypes.string.isRequired,
       /** The latitude coordinate for the marker. */
       latitude: PropTypes.number,
       /** The longitude coordinate for the marker. */

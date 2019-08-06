@@ -2,13 +2,13 @@ import { adaptCoordinates } from './adaptCoordinates';
 
 describe('adaptCoordinates', () => {
   describe('if either `latitude` or `longitude` is `null`', () => {
-    it('should return `undefined`', () => {
+    it('should return coordinates at the centre of the world', () => {
       const testCases = [[null, null], [null, 1], [1, null]];
 
       testCases.forEach(([latitude, longitude]) => {
         const actual = adaptCoordinates(latitude, longitude);
 
-        expect(actual).toBe(undefined);
+        expect(actual).toEqual({ lat: 0, lng: 0 });
       });
     });
   });
