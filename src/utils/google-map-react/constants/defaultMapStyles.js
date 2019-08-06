@@ -20,7 +20,6 @@ export const defaultMapStyles = [
   },
   {
     featureType: 'poi',
-    elementType: 'labels.text',
     stylers: [
       {
         visibility: 'off',
@@ -30,6 +29,14 @@ export const defaultMapStyles = [
   {
     featureType: 'road',
     elementType: 'labels',
+    stylers: [
+      {
+        visibility: 'off',
+      },
+    ],
+  },
+  {
+    featureType: 'transit',
     stylers: [
       {
         visibility: 'off',
