@@ -1,4 +1,8 @@
-import { getMapOptions } from 'utils/react-google-maps';
+import {
+  getMapOptions,
+  MARKER_IMAGE_SRC,
+  CIRCLE_IMAGE_SRC,
+} from 'utils/google-map-react';
 
 /**
  * @param  {Object}  props
@@ -43,10 +47,10 @@ export const getImgSrc = (
             .join('|')}`
       ),
       isShowingExactLocation
-        ? `&markers=icon:https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png|${latitude},${longitude}`
+        ? `&markers=icon:${MARKER_IMAGE_SRC}|${latitude},${longitude}`
         : '',
       isShowingApproximateLocation
-        ? `&markers=anchor:center|icon:http://i1.cdbcdn.com/images/google-maps-approximate-location.png|${latitude},${longitude}`
+        ? `&markers=anchor:center|icon:${CIRCLE_IMAGE_SRC}|${latitude},${longitude}`
         : '',
       `&key=${apiKey}`,
     ].join('')
