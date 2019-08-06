@@ -29,7 +29,7 @@ export class Component extends PureComponent {
     const { bounds } = this.props;
     const { size } = this.state;
 
-    if (!bounds) return;
+    if (!size || !bounds) return;
 
     if (isEqual(previousSize, size) && isEqual(previousBounds, bounds)) return;
 
