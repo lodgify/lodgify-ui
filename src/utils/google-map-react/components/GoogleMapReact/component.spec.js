@@ -31,10 +31,24 @@ const getGoogleMapReact = extraProps =>
 
 describe('<GoogleMapReacts />', () => {
   describe('componentDidUpdate', () => {
+    describe('if `state.size` is `null`', () => {
+      it('should not call `setState`', () => {
+        const wrapper = getGoogleMapReact({
+          bounds: { east: 0, north: 0, south: 0, west: 0 },
+        });
+
+        wrapper.instance().setState = jest.fn();
+        wrapper.instance().componentDidUpdate({}, {});
+
+        expect(wrapper.instance().setState).not.toHaveBeenCalled();
+      });
+    });
+
     describe('if `props.bounds` is `undefined`', () => {
       it('should not call `setState`', () => {
         const wrapper = getGoogleMapReact();
 
+        wrapper.setState({ size: 'some size' });
         wrapper.instance().setState = jest.fn();
         wrapper.instance().componentDidUpdate({}, {});
 
@@ -51,9 +65,10 @@ describe('<GoogleMapReacts />', () => {
             south: 0,
             west: 0,
           };
+          const size = 'some size';
           const wrapper = getGoogleMapReact({ bounds });
-          const { size } = wrapper.state();
 
+          wrapper.instance().setState({ size });
           wrapper.instance().setState = jest.fn();
           wrapper.instance().componentDidUpdate({ bounds }, { size });
 
@@ -73,6 +88,7 @@ describe('<GoogleMapReacts />', () => {
           const FITTED_BOUNDS = {};
           const wrapper = getGoogleMapReact({ bounds });
 
+          wrapper.instance().setState({ size: 'some starting size' });
           wrapper.instance().setState = jest.fn();
           adaptENSWtoNESW.mockClear();
           adaptENSWtoNESW.mockReturnValueOnce(ADAPTED_BOUNDS);
@@ -104,10 +120,12 @@ describe('<GoogleMapReacts />', () => {
             south: 0,
             west: 0,
           };
+          const size = 'some size';
           const ADAPTED_BOUNDS = {};
           const FITTED_BOUNDS = {};
           const wrapper = getGoogleMapReact({ bounds });
 
+          wrapper.instance().setState({ size });
           wrapper.instance().setState = jest.fn();
           adaptENSWtoNESW.mockClear();
           adaptENSWtoNESW.mockReturnValueOnce(ADAPTED_BOUNDS);
@@ -117,14 +135,11 @@ describe('<GoogleMapReacts />', () => {
             {
               bounds: {},
             },
-            { size: wrapper.state('size') }
+            { size }
           );
 
           expect(adaptENSWtoNESW).toHaveBeenCalledWith(bounds);
-          expect(fitBounds).toHaveBeenCalledWith(
-            ADAPTED_BOUNDS,
-            wrapper.state('size')
-          );
+          expect(fitBounds).toHaveBeenCalledWith(ADAPTED_BOUNDS, size);
           expect(wrapper.instance().setState).toHaveBeenCalledWith(
             FITTED_BOUNDS
           );
