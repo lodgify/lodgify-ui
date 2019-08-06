@@ -1,3 +1,10 @@
+## [1.234.1](https://github.com/lodgify/lodgify-ui/compare/v1.234.0...v1.234.1) (2019-08-06)
+
+
+### Bug Fixes
+
+* **GoogleMap:** tweak consumer to fit new library ([22e9814](https://github.com/lodgify/lodgify-ui/commit/22e9814))
+
 # [1.234.0](https://github.com/lodgify/lodgify-ui/compare/v1.233.0...v1.234.0) (2019-07-31)
 
 
