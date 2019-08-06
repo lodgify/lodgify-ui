@@ -16,6 +16,14 @@ describe('<Pagination />', () => {
     });
   });
 
+  describe('if `props.activePage` is defined', () => {
+    it('should render the right structure', () => {
+      const actual = getPagination({ activePage: 1 });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   describe('if `props.isShowingPageNumbers` is true', () => {
     it('should render the right structure', () => {
       const actual = getPagination({ isShowingPageNumbers: true });
