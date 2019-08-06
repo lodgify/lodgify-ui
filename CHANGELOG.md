@@ -1,3 +1,16 @@
+# [1.235.0](https://github.com/lodgify/lodgify-ui/compare/v1.234.1...v1.235.0) (2019-08-06)
+
+
+### Bug Fixes
+
+* **GoogleMapReact:** do not call fitBounds when size is null ([8fc88ff](https://github.com/lodgify/lodgify-ui/commit/8fc88ff))
+
+
+### Features
+
+* **Pagination:** accept controlled activePage ([3232c9d](https://github.com/lodgify/lodgify-ui/commit/3232c9d))
+* **PropertyPageSearchResultList:** accept controlled activePage ([7d3eb8e](https://github.com/lodgify/lodgify-ui/commit/7d3eb8e))
+
 ## [1.234.1](https://github.com/lodgify/lodgify-ui/compare/v1.234.0...v1.234.1) (2019-08-06)
 
 
