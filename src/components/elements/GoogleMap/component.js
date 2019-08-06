@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 import { debounce } from 'debounce';
 
-import { ReactGoogleMap } from 'utils/react-google-maps';
+import { GoogleMapReact } from 'utils/google-map-react';
 
 import { getParentNodeWidth } from './utils/getParentNodeWidth';
 import { getHeight } from './utils/getHeight';
@@ -86,11 +86,10 @@ export class Component extends PureComponent {
     const height = getHeight(this.props.height, isFullBleed, isFluid);
 
     return isFullBleed ? (
-      <ReactGoogleMap
+      <GoogleMapReact
         apiKey={apiKey}
         bounds={bounds}
         hasDefaultStyles={hasDefaultStyles}
-        height={height}
         isShowingApproximateLocation={isShowingApproximateLocation}
         isShowingExactLocation={isShowingExactLocation}
         latitude={latitude}
@@ -101,11 +100,10 @@ export class Component extends PureComponent {
     ) : (
       <Card fluid style={{ height, maxWidth: getMaxWidth(isFluid) }}>
         {isFluid || this.state.isDynamicMapShowing ? (
-          <ReactGoogleMap
+          <GoogleMapReact
             apiKey={apiKey}
             bounds={bounds}
             hasDefaultStyles={hasDefaultStyles}
-            height={height}
             isShowingApproximateLocation={isShowingApproximateLocation}
             isShowingExactLocation={isShowingExactLocation}
             latitude={latitude}
@@ -172,13 +170,8 @@ Component.propTypes = {
     PropTypes.shape({
       /** The React component to show as a marker. */
       component: PropTypes.node.isRequired,
-      /**
-       * A function called to determine the offset of the marker relative to its top left corner.
-       * @param   {number} markerPixelWidth
-       * @param   {number} markerPixelHeight
-       * @return  {object}
-       */
-      getOffset: PropTypes.func,
+      /** A unique identifier for the marker component. */
+      key: PropTypes.string.isRequired,
       /** The latitude coordinate for the marker. */
       latitude: PropTypes.number,
       /** The longitude coordinate for the marker. */

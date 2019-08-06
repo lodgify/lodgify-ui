@@ -1,4 +1,5 @@
 jest.mock('debounce');
+jest.mock('utils/google-map-react', () => ({ GoogleMapReact: () => <div /> }));
 jest.mock('./utils/getParentNodeWidth');
 jest.mock('./utils/getImgSrc');
 

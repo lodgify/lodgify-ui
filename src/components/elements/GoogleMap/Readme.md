@@ -104,57 +104,12 @@ Multiple markers show on the dynamic map only.
     latitude={41.387863}
     longitude={2.158105}
     markers={[
-      { component: <Marker />, latitude: 41.38, longitude: 2.15 },
-      { component: <Marker />, latitude: 41.375, longitude: 2.16 },
-      { component: <Marker />, latitude: 41.39, longitude: 2.18 },
-      { component: <Marker />, latitude: 41.388, longitude: 2.13 },
-      { component: <Marker />, latitude: 41.395, longitude: 2.145 },
-      { component: <Marker />, latitude: 41.398, longitude: 2.155 }
-    ]}
-  />
-</div>
-```
-
-#### Offset markers
-
-Markers can be offset for more precision.
-
-```jsx
-<div style={{ height: '400px' }}>
-  <GoogleMap
-    isFluid
-    latitude={41}
-    longitude={2}
-    markers={[
-      { component: <Marker />, latitude: 41, longitude: 2 },
-      {
-        component: <Marker />,
-        getOffset: (markerPixelWidth, markerPixelHeight) =>
-          ({ x: markerPixelWidth , y: 0 }),
-        latitude: 41,
-        longitude: 2,
-      },
-      {
-        component: <Marker />,
-        getOffset: (markerPixelWidth, markerPixelHeight) =>
-          ({ x: 0 , y: markerPixelHeight }),
-        latitude: 41,
-        longitude: 2,
-      },
-      {
-        component: <Marker />,
-        getOffset: (markerPixelWidth, markerPixelHeight) =>
-          ({ x: -markerPixelWidth , y: 0 }),
-        latitude: 41,
-        longitude: 2,
-      },
-      {
-        component: <Marker />,
-        getOffset: (markerPixelWidth, markerPixelHeight) =>
-          ({ x: 0 , y: -markerPixelHeight }),
-        latitude: 41,
-        longitude: 2,
-      },
+      { component: <Marker />, key: 'a', latitude: 41.38, longitude: 2.15 },
+      { component: <Marker />, key: 'b', latitude: 41.375, longitude: 2.16 },
+      { component: <Marker />, key: 'c', latitude: 41.39, longitude: 2.18 },
+      { component: <Marker />, key: 'd', latitude: 41.388, longitude: 2.13 },
+      { component: <Marker />, key: 'e', latitude: 41.395, longitude: 2.145 },
+      { component: <Marker />, key: 'f', latitude: 41.398, longitude: 2.155 }
     ]}
   />
 </div>
