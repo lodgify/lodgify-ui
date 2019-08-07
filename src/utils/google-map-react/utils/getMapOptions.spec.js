@@ -11,7 +11,6 @@ describe('getMapOptions', () => {
         mapTypeControl: false,
         streetViewControl: false,
         styles: customMapStyles,
-        zoom: 13,
       });
     });
   });
@@ -24,7 +23,6 @@ describe('getMapOptions', () => {
         mapTypeControl: false,
         streetViewControl: false,
         styles: defaultMapStyles,
-        zoom: 13,
       });
     });
   });

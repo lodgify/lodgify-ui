@@ -1,19 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<GoogleMapReacts /> render if \`props.isShowingApproximateLocation\` is \`true\` should render the right structure 1`] = `
+exports[`<GoogleMapReacts /> render if \`getCenter\` returns a value if \`props.isShowingApproximateLocation\` is \`true\` should render the right structure 1`] = `
 <Component
   bootstrapURLKeys={
     Object {
       "key": "some key",
     }
   }
-  center={
-    Object {
-      "lat": 1,
-      "lng": 0,
-    }
-  }
+  bounds={null}
+  center="some center"
   onChange={[Function]}
+  onDrag={[Function]}
   options={
     Object {
       "some": "options ",
@@ -23,8 +20,8 @@ exports[`<GoogleMapReacts /> render if \`props.isShowingApproximateLocation\` is
 >
   <GoogleMapMarker
     imageSrc="http://i1.cdbcdn.com/images/google-maps-approximate-location.png"
-    latitude={1}
-    longitude={0}
+    lat={1}
+    lng={0}
     style={
       Object {
         "transform": "translate(-50%, -50%)",
@@ -34,20 +31,17 @@ exports[`<GoogleMapReacts /> render if \`props.isShowingApproximateLocation\` is
 </Component>
 `;
 
-exports[`<GoogleMapReacts /> render if \`props.isShowingExactLocation\` is \`true\` should render the right structure 1`] = `
+exports[`<GoogleMapReacts /> render if \`getCenter\` returns a value if \`props.isShowingExactLocation\` is \`true\` should render the right structure 1`] = `
 <Component
   bootstrapURLKeys={
     Object {
       "key": "some key",
     }
   }
-  center={
-    Object {
-      "lat": 1,
-      "lng": 0,
-    }
-  }
+  bounds={null}
+  center="some center"
   onChange={[Function]}
+  onDrag={[Function]}
   options={
     Object {
       "some": "options ",
@@ -57,8 +51,8 @@ exports[`<GoogleMapReacts /> render if \`props.isShowingExactLocation\` is \`tru
 >
   <GoogleMapMarker
     imageSrc="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png"
-    latitude={1}
-    longitude={0}
+    lat={1}
+    lng={0}
     style={
       Object {
         "transform": "translate(-50%, -100%)",
@@ -68,20 +62,17 @@ exports[`<GoogleMapReacts /> render if \`props.isShowingExactLocation\` is \`tru
 </Component>
 `;
 
-exports[`<GoogleMapReacts /> render if \`props.markers\` is populated should render the right structure 1`] = `
+exports[`<GoogleMapReacts /> render if \`getCenter\` returns a value if \`props.markers\` is populated should render the right structure 1`] = `
 <Component
   bootstrapURLKeys={
     Object {
       "key": "some key",
     }
   }
-  center={
-    Object {
-      "lat": 1,
-      "lng": 0,
-    }
-  }
+  bounds={null}
+  center="some center"
   onChange={[Function]}
+  onDrag={[Function]}
   options={
     Object {
       "some": "options ",
@@ -102,20 +93,17 @@ exports[`<GoogleMapReacts /> render if \`props.markers\` is populated should ren
 </Component>
 `;
 
-exports[`<GoogleMapReacts /> render should render the right structure 1`] = `
+exports[`<GoogleMapReacts /> render if \`getCenter\` returns a value should render the right structure 1`] = `
 <Component
   bootstrapURLKeys={
     Object {
       "key": "some key",
     }
   }
-  center={
-    Object {
-      "lat": 1,
-      "lng": 0,
-    }
-  }
+  bounds={null}
+  center="some center"
   onChange={[Function]}
+  onDrag={[Function]}
   options={
     Object {
       "some": "options ",

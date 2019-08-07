@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import isEqual from 'fast-deep-equal';
 import GoogleMapReact from 'google-map-react';
 import { fitBounds } from 'google-map-react/utils';
+import debounce from 'debounce';
 
 import {
   DEFAULT_ZOOM,
@@ -14,33 +15,61 @@ import {
 import { getMapOptions } from '../../utils/getMapOptions';
 import { GoogleMapMarker } from '../GoogleMapMarker';
 
-import { adaptCoordinates } from './utils/adaptCoordinates';
 import { adaptENSWtoNESW } from './utils/adaptENSWtoNESW';
+import { getCenterFromBounds } from './utils/getCenterFromBounds';
 import { adaptNESWtoENSW } from './utils/adaptNESWtoENSW';
+import { getCenter } from './utils/getCenter';
 
 export class Component extends PureComponent {
   state = {
-    center: adaptCoordinates(this.props.latitude, this.props.longitude),
+    bounds: null,
+    center: null,
+    isDragged: false,
     size: null,
     zoom: DEFAULT_ZOOM,
   };
 
-  componentDidUpdate = ({ bounds: previousBounds }, { size: previousSize }) => {
+  componentDidMount = () => {
     const { bounds } = this.props;
-    const { size } = this.state;
 
-    if (!size || !bounds) return;
+    if (!bounds) return;
 
-    if (isEqual(previousSize, size) && isEqual(previousBounds, bounds)) return;
-
-    this.setState(fitBounds(adaptENSWtoNESW(bounds), size));
+    this.setState({
+      bounds: adaptENSWtoNESW(bounds),
+      center: getCenterFromBounds(bounds),
+    });
   };
 
-  handleChange = ({ bounds, size }) => {
-    if (!this.state.size) this.setState({ size });
+  componentDidUpdate = (
+    { bounds: previousControlledBounds },
+    { bounds: previousBounds }
+  ) => {
+    const { bounds, isDragged, size } = this.state;
+    const { bounds: controlledBounds, onBoundsChange } = this.props;
 
-    this.props.onBoundsChange(adaptNESWtoENSW(bounds));
+    if (!isEqual(previousBounds, bounds)) {
+      onBoundsChange(adaptNESWtoENSW(bounds), isDragged);
+      isDragged && this.setState({ isDragged: false });
+    }
+
+    if (isEqual(previousControlledBounds, controlledBounds)) return;
+
+    const { center, newBounds, zoom } = fitBounds(
+      adaptENSWtoNESW(controlledBounds),
+      size
+    );
+
+    this.setState({ bounds: newBounds, center, zoom });
   };
+
+  handleChange = ({ bounds, center, size, zoom }) => {
+    if (!this.props.bounds) return;
+    this.setState({ bounds, center, size, zoom });
+  };
+
+  handleDrag = debounce(() => {
+    this.setState({ isDragged: true });
+  });
 
   render = () => {
     const {
@@ -52,15 +81,21 @@ export class Component extends PureComponent {
       longitude,
       markers,
     } = this.props;
-    const { center, zoom } = this.state;
+    const { bounds, zoom } = this.state;
+
+    const center = getCenter(this.state.center, latitude, longitude);
+
+    if (!center) return null;
 
     return (
       <GoogleMapReact
         bootstrapURLKeys={{
           key: apiKey,
         }}
+        bounds={bounds}
         center={center}
         onChange={this.handleChange}
+        onDrag={this.handleDrag}
         options={getMapOptions(hasDefaultStyles)}
         ref={this.createRef}
         zoom={zoom}
@@ -68,16 +103,16 @@ export class Component extends PureComponent {
         {!!isShowingExactLocation && (
           <GoogleMapMarker
             imageSrc={MARKER_IMAGE_SRC}
-            latitude={latitude}
-            longitude={longitude}
+            lat={latitude}
+            lng={longitude}
             style={MARKER_IMAGE_STYLE}
           />
         )}
         {!!isShowingApproximateLocation && (
           <GoogleMapMarker
             imageSrc={CIRCLE_IMAGE_SRC}
-            latitude={latitude}
-            longitude={longitude}
+            lat={latitude}
+            lng={longitude}
             style={CIRCLE_IMAGE_STYLE}
           />
         )}
@@ -132,11 +167,12 @@ Component.propTypes = {
   ).isRequired,
   /**
    * A function called when the bounds of a dynamic map change.
-   * @param {Object} bounds
-   * @param {number} bounds.east
-   * @param {number} bounds.north
-   * @param {number} bounds.south
-   * @param {number} bounds.west
+   * @param {Object}  bounds
+   * @param {number}  bounds.east
+   * @param {number}  bounds.north
+   * @param {number}  bounds.south
+   * @param {number}  bounds.west
+   * @param {boolean} isDragged
    */
   onBoundsChange: PropTypes.func.isRequired,
 };
