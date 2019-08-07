@@ -30,42 +30,21 @@ import { getShowingResultsText } from './utils/getShowingResultsText';
 export class Component extends PureComponent {
   state = {
     activePage: 1,
-    propertySearchResultsToDisplay: getPropertySearchResultsToDisplay(
-      1,
-      this.props.propertySearchResults
-    ),
   };
 
   componentDidUpdate = (
-    {
-      activePage: previousPropsActivePage,
-      propertySearchResults: previousPropertySearchResults,
-    },
+    { activePage: previousPropsActivePage },
     { activePage: previousStateActivePage }
   ) => {
-    const { onChange, propertySearchResults } = this.props;
     const previousActivePage = getActivePage(
       previousPropsActivePage,
       previousStateActivePage
     );
-    const activePage = getActivePage(
-      this.props.activePage,
-      this.state.activePage
-    );
+    const { activePage } = this.state;
 
-    if (
-      activePage === previousActivePage &&
-      propertySearchResults === previousPropertySearchResults
-    )
-      return;
+    if (activePage === previousActivePage) return;
 
-    onChange(activePage);
-    this.setState({
-      propertySearchResultsToDisplay: getPropertySearchResultsToDisplay(
-        activePage,
-        propertySearchResults
-      ),
-    });
+    this.props.onChange(activePage);
   };
 
   handleOnPageChange = (event, { activePage }) => this.setState({ activePage });
@@ -84,8 +63,12 @@ export class Component extends PureComponent {
       resultsCountText,
       renderShowingResultsText,
     } = this.props;
-    const { length: propertySearchResultsLength } = propertySearchResults;
-    const { activePage, propertySearchResultsToDisplay } = this.state;
+    const { activePage } = this.state;
+    const propertySearchResultsToDisplay = getPropertySearchResultsToDisplay(
+      activePage,
+      propertySearchResults
+    );
+    const { length } = propertySearchResults;
 
     return (
       <div className="property-search-result-list">
@@ -97,9 +80,7 @@ export class Component extends PureComponent {
           </Fragment>
         ) : (
           <FlexContainer alignItems="center" justifyContent="space-between">
-            <Heading size="small">
-              {`${propertySearchResultsLength} ${resultsCountText}`}
-            </Heading>
+            <Heading size="small">{`${length} ${resultsCountText}`}</Heading>
             {!!size(dropdownOptions) && (
               <Dropdown
                 isCompact
@@ -137,7 +118,7 @@ export class Component extends PureComponent {
               />
             ))}
           </FlexContainer>
-          {propertySearchResultsLength > NUMBER_OF_PROPERTIES_PER_PAGE && (
+          {length > NUMBER_OF_PROPERTIES_PER_PAGE && (
             <FlexContainer
               alignItems="center"
               flexDirection="column"
@@ -147,16 +128,13 @@ export class Component extends PureComponent {
                 activePage={activePage}
                 isShowingPageNumbers
                 onPageChange={this.handleOnPageChange}
-                totalPages={getNumberOfPages(propertySearchResultsLength)}
+                totalPages={getNumberOfPages(length)}
               />
               <Paragraph>
                 {renderShowingResultsText(
                   getFirstPropertyPositionOfActivePage(activePage),
-                  getLastPropertyPositionOfActivePage(
-                    activePage,
-                    propertySearchResultsLength
-                  ),
-                  propertySearchResultsLength
+                  getLastPropertyPositionOfActivePage(activePage, length),
+                  length
                 )}
               </Paragraph>
             </FlexContainer>
