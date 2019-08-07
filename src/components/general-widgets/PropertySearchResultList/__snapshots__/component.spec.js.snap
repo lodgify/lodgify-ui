@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PropertySearchResultList /> by default should render the right structure 1`] = `
+exports[`<PropertySearchResultList /> render by default should render the right structure 1`] = `
 <PropertySearchResultList
   dropdownLabel={null}
   dropdownOnChange={[Function]}
@@ -215,7 +215,7 @@ exports[`<PropertySearchResultList /> by default should render the right structu
 </PropertySearchResultList>
 `;
 
-exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed should render the right structure 1`] = `
+exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is passed should render the right structure 1`] = `
 <PropertySearchResultList
   dropdownLabel="some label"
   dropdownOnChange={[Function]}
@@ -615,7 +615,7 @@ exports[`<PropertySearchResultList /> if \`props.dropdownOptions\` is passed sho
 </PropertySearchResultList>
 `;
 
-exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true should render the right structure 1`] = `
+exports[`<PropertySearchResultList /> render if \`props.isShowingPlaceholder\` is true should render the right structure 1`] = `
 <PropertySearchResultList
   dropdownLabel={null}
   dropdownOnChange={[Function]}
@@ -873,7 +873,7 @@ exports[`<PropertySearchResultList /> if \`props.isShowingPlaceholder\` is true 
 </PropertySearchResultList>
 `;
 
-exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should render the right structure 1`] = `
+exports[`<PropertySearchResultList /> render if \`props.messageText\` is passed should render the right structure 1`] = `
 <PropertySearchResultList
   dropdownLabel={null}
   dropdownOnChange={[Function]}
@@ -1135,7 +1135,7 @@ exports[`<PropertySearchResultList /> if \`props.messageText\` is passed should 
 </PropertySearchResultList>
 `;
 
-exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` > 12  should render the right structure 1`] = `
+exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.length\` > 12  should render the right structure 1`] = `
 <PropertySearchResultList
   dropdownLabel={null}
   dropdownOnChange={[Function]}
@@ -2228,7 +2228,7 @@ exports[`<PropertySearchResultList /> if \`props.propertySearchResults.length\` 
 </PropertySearchResultList>
 `;
 
-exports[`<PropertySearchResultList /> if \`props.resultsCountText\` is passed should render the right structure 1`] = `
+exports[`<PropertySearchResultList /> render if \`props.resultsCountText\` is passed should render the right structure 1`] = `
 <PropertySearchResultList
   dropdownLabel={null}
   dropdownOnChange={[Function]}
