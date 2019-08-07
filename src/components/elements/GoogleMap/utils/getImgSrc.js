@@ -2,6 +2,7 @@ import {
   getMapOptions,
   MARKER_IMAGE_SRC,
   CIRCLE_IMAGE_SRC,
+  DEFAULT_ZOOM,
 } from 'utils/google-map-react';
 
 /**
@@ -36,7 +37,7 @@ export const getImgSrc = (
     [
       `https://maps.googleapis.com/maps/api/staticmap?`,
       `center=${latitude},${longitude}`,
-      `&zoom=${mapOptions.zoom}`,
+      `&zoom=${DEFAULT_ZOOM}`,
       `&size=${parentNodeWidth}x${global.parseInt(height, 10)}`,
       ...mapOptions.styles.map(
         ({ elementType, featureType, stylers }) =>

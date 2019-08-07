@@ -180,11 +180,12 @@ Component.propTypes = {
   ),
   /**
    * A function called when the bounds of a dynamic map change.
-   * @param {Object} bounds
-   * @param {number} bounds.east
-   * @param {number} bounds.north
-   * @param {number} bounds.south
-   * @param {number} bounds.west
+   * @param {Object}  bounds
+   * @param {number}  bounds.east
+   * @param {number}  bounds.north
+   * @param {number}  bounds.south
+   * @param {number}  bounds.west
+   * @param {boolean} isDragged
    */
   onBoundsChange: PropTypes.func,
 };
