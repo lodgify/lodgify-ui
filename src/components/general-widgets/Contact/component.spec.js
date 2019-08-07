@@ -10,6 +10,15 @@ jest.mock('react-dates', () => {
 
   return { DateRangePicker };
 });
+jest.mock('react-phone-number-input', () => {
+  const { Component } = require('react');
+
+  return class PhoneInput extends Component {
+    render() {
+      return <div />;
+    }
+  };
+});
 
 import React from 'react';
 import { mount } from 'enzyme';
