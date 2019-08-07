@@ -1,3 +1,16 @@
+# [1.236.0](https://github.com/lodgify/lodgify-ui/compare/v1.235.0...v1.236.0) (2019-08-07)
+
+
+### Bug Fixes
+
+* **PhoneInput:** mock phone input library and update snapshots ([667f658](https://github.com/lodgify/lodgify-ui/commit/667f658))
+
+
+### Features
+
+* **GoogleMap:** make consequent changes to consumer ([b31b9a9](https://github.com/lodgify/lodgify-ui/commit/b31b9a9))
+* **GoogleMapReact:** pass drag event flag to onBoundsChange ([f95249c](https://github.com/lodgify/lodgify-ui/commit/f95249c))
+
 # [1.235.0](https://github.com/lodgify/lodgify-ui/compare/v1.234.1...v1.235.0) (2019-08-06)
 
 
