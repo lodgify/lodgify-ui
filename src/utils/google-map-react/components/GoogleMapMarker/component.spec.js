@@ -8,8 +8,6 @@ describe('GoogleMapMarker', () => {
     const wrapper = shallow(
       <GoogleMapMarker
         imageSrc="some imageSrc"
-        latitude={1}
-        longitude={2}
         style={{ transform: 'some transform' }}
       />
     );

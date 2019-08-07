@@ -1,4 +1,4 @@
-import { customMapStyles, defaultMapStyles, DEFAULT_ZOOM } from '../constants';
+import { customMapStyles, defaultMapStyles } from '../constants';
 
 /**
  * @param  {boolean} hasDefaultStyles
@@ -8,5 +8,4 @@ export const getMapOptions = hasDefaultStyles => ({
   mapTypeControl: false,
   streetViewControl: false,
   styles: hasDefaultStyles ? defaultMapStyles : customMapStyles,
-  zoom: DEFAULT_ZOOM,
 });
