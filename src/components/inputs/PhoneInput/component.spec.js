@@ -1,3 +1,12 @@
+jest.mock('react-phone-number-input', () => {
+  const { Component } = require('react');
+
+  return class PhoneInput extends Component {
+    render() {
+      return <div />;
+    }
+  };
+});
 jest.mock('utils/get-is-input-value-reset');
 jest.mock('utils/get-controlled-input-value');
 jest.mock('./utils/getLabels');
