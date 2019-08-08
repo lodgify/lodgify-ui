@@ -1,3 +1,10 @@
+## [1.236.2](https://github.com/lodgify/lodgify-ui/compare/v1.236.1...v1.236.2) (2019-08-08)
+
+
+### Bug Fixes
+
+* **PropertySearchresultList:** make the controlled pagination work (again) ([40ebaa3](https://github.com/lodgify/lodgify-ui/commit/40ebaa3))
+
 ## [1.236.1](https://github.com/lodgify/lodgify-ui/compare/v1.236.0...v1.236.1) (2019-08-07)
 
 
