@@ -10,13 +10,11 @@ jest.mock('general-widgets/PropertySearchResult', () => {
   return { PropertySearchResult };
 });
 jest.mock('./utils/getPropertySearchResultsToDisplay');
-jest.mock('./utils/getActivePage');
 
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { getActivePage } from './utils/getActivePage';
 import { getPropertySearchResultsToDisplay } from './utils/getPropertySearchResultsToDisplay';
 import { Component as PropertySearchResultList } from './component';
 import {
@@ -45,49 +43,61 @@ const getMountedPropertySearchResultList = otherProps =>
 
 describe('<PropertySearchResultList />', () => {
   describe('componentDidUpdate', () => {
-    it('should call `getActivePage` with the right arguments', () => {
-      const wrapper = getShallowPropertySearchResultList();
-      const previousPropsActivePage = 666;
-      const previousStateActivePage = 999;
+    describe('if `props.activePage` has not changed', () => {
+      it('should not call `setState`', () => {
+        const activePage = 999;
+        const wrapper = getShallowPropertySearchResultList({ activePage });
 
-      wrapper
-        .instance()
-        .componentDidUpdate(
-          { activePage: previousPropsActivePage },
-          { activePage: previousStateActivePage }
-        );
+        wrapper.instance().setState = jest.fn();
+        wrapper.instance().componentDidUpdate({ activePage }, {});
 
-      expect(getActivePage).toHaveBeenCalledWith(
-        previousPropsActivePage,
-        previousStateActivePage
-      );
+        expect(wrapper.instance().setState).not.toHaveBeenCalled();
+      });
     });
 
-    describe('if `activePage` has not changed', () => {
+    describe('if `props.activePage` has changed', () => {
+      it('should call `setState` with the right arguments', () => {
+        const activePage = 999;
+        const wrapper = getShallowPropertySearchResultList({ activePage });
+
+        wrapper.instance().setState = jest.fn();
+        wrapper.instance().componentDidUpdate({ activePage: 888 }, {});
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          activePage,
+        });
+      });
+    });
+
+    describe('if `state.activePage` has not changed', () => {
       it('should not call `props.onChange`', () => {
+        const activePage = 999;
         const onChange = jest.fn();
         const wrapper = getShallowPropertySearchResultList({
+          activePage,
           onChange,
         });
 
-        getActivePage.mockReturnValueOnce(1);
-        onChange.mockClear();
-        wrapper.instance().componentDidUpdate({}, {});
+        wrapper
+          .instance()
+          .componentDidUpdate({ activePage }, { activePage: 1 });
 
         expect(onChange).not.toHaveBeenCalled();
       });
     });
 
-    describe('if `activePage` has changed', () => {
-      it('should call `props.onChange` with the right arguments', () => {
+    describe('if `state.activePage` has changed', () => {
+      it('should call `setState` with the right arguments', () => {
+        const activePage = 999;
         const onChange = jest.fn();
         const wrapper = getShallowPropertySearchResultList({
+          activePage,
           onChange,
         });
 
-        getActivePage.mockReturnValueOnce(2);
-        onChange.mockClear();
-        wrapper.instance().componentDidUpdate({}, {});
+        wrapper
+          .instance()
+          .componentDidUpdate({ activePage }, { activePage: 2 });
 
         expect(onChange).toHaveBeenCalledWith(1);
       });
@@ -112,6 +122,16 @@ describe('<PropertySearchResultList />', () => {
     describe('by default', () => {
       it('should render the right structure', () => {
         const actual = getMountedPropertySearchResultList();
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.activePage` is defined', () => {
+      it('should render the right structure', () => {
+        const actual = getMountedPropertySearchResultList({
+          activePage: 12000,
+        });
 
         expect(actual).toMatchSnapshot();
       });

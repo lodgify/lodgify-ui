@@ -16,7 +16,6 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { RESULTS } from 'utils/default-strings';
 
 import { PLACEHOLDERS, NUMBER_OF_PROPERTIES_PER_PAGE } from './constants';
-import { getActivePage } from './utils/getActivePage';
 import { getNumberOfPages } from './utils/getNumberOfPages';
 import { getPropertySearchResultsToDisplay } from './utils/getPropertySearchResultsToDisplay';
 import { getFirstPropertyPositionOfActivePage } from './utils/getFirstPropertyPositionOfActivePage';
@@ -33,24 +32,26 @@ export class Component extends PureComponent {
   };
 
   componentDidUpdate = (
-    { activePage: previousPropsActivePage },
-    { activePage: previousStateActivePage }
+    { activePage: previousControlledActivePage },
+    { activePage: previousInternalActivePage }
   ) => {
-    const previousActivePage = getActivePage(
-      previousPropsActivePage,
-      previousStateActivePage
-    );
-    const { activePage } = this.state;
+    const { activePage: controlledActivePage } = this.props;
 
-    if (activePage === previousActivePage) return;
+    if (controlledActivePage !== previousControlledActivePage)
+      return this.setState({ activePage: controlledActivePage });
 
-    this.props.onChange(activePage);
+    const { activePage: internalActivePage } = this.state;
+
+    if (internalActivePage === previousInternalActivePage) return;
+
+    this.props.onChange(internalActivePage);
   };
 
   handleOnPageChange = (event, { activePage }) => this.setState({ activePage });
 
   render = () => {
     const {
+      activePage = this.state.activePage,
       dropdownLabel,
       dropdownOnChange,
       dropdownOptions,
@@ -63,7 +64,6 @@ export class Component extends PureComponent {
       resultsCountText,
       renderShowingResultsText,
     } = this.props;
-    const { activePage } = this.state;
     const propertySearchResultsToDisplay = getPropertySearchResultsToDisplay(
       activePage,
       propertySearchResults
