@@ -66,68 +66,68 @@ exports[`<PropertySearchResultList /> render by default should render the right 
   <div
     className="property-search-result-list"
   >
-    <FlexContainer
-      alignContent={null}
-      alignItems="center"
-      flexDirection={null}
-      flexWrap={null}
-      justifyContent="space-between"
-    >
-      <div
-        className="flex-container"
-        style={
-          Object {
-            "alignContent": null,
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": null,
-            "flexGrow": "1",
-            "flexWrap": null,
-            "height": "100%",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Heading
-          className={null}
-          hasMargin={true}
-          isColorInverted={false}
-          size="small"
-          textAlign={null}
-        >
-          <Header
-            as="h4"
-            className=""
-            inverted={false}
-            textAlign={null}
-          >
-            <h4
-              className="ui header"
-            >
-              2 results
-            </h4>
-          </Header>
-        </Heading>
-      </div>
-    </FlexContainer>
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
-      <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
-      >
-        <div
-          className="ui hidden divider is-size-small"
-        />
-      </Divider>
-    </Divider>
     <div
       className="result-list-container"
     >
+      <FlexContainer
+        alignContent={null}
+        alignItems="center"
+        flexDirection={null}
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            <Header
+              as="h4"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h4
+                className="ui header"
+              >
+                2 results
+              </h4>
+            </Header>
+          </Heading>
+        </div>
+      </FlexContainer>
+      <Divider
+        className=""
+        hasLine={false}
+        size="small"
+      >
+        <Divider
+          className="is-size-small"
+          hidden={true}
+          section={false}
+        >
+          <div
+            className="ui hidden divider is-size-small"
+          />
+        </Divider>
+      </Divider>
       <FlexContainer
         alignContent={null}
         alignItems={null}
@@ -282,68 +282,68 @@ exports[`<PropertySearchResultList /> render if \`props.activePage\` is defined 
   <div
     className="property-search-result-list"
   >
-    <FlexContainer
-      alignContent={null}
-      alignItems="center"
-      flexDirection={null}
-      flexWrap={null}
-      justifyContent="space-between"
-    >
-      <div
-        className="flex-container"
-        style={
-          Object {
-            "alignContent": null,
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": null,
-            "flexGrow": "1",
-            "flexWrap": null,
-            "height": "100%",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Heading
-          className={null}
-          hasMargin={true}
-          isColorInverted={false}
-          size="small"
-          textAlign={null}
-        >
-          <Header
-            as="h4"
-            className=""
-            inverted={false}
-            textAlign={null}
-          >
-            <h4
-              className="ui header"
-            >
-              2 results
-            </h4>
-          </Header>
-        </Heading>
-      </div>
-    </FlexContainer>
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
-      <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
-      >
-        <div
-          className="ui hidden divider is-size-small"
-        />
-      </Divider>
-    </Divider>
     <div
       className="result-list-container"
     >
+      <FlexContainer
+        alignContent={null}
+        alignItems="center"
+        flexDirection={null}
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            <Header
+              as="h4"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h4
+                className="ui header"
+              >
+                2 results
+              </h4>
+            </Header>
+          </Heading>
+        </div>
+      </FlexContainer>
+      <Divider
+        className=""
+        hasLine={false}
+        size="small"
+      >
+        <Divider
+          className="is-size-small"
+          hidden={true}
+          section={false}
+        >
+          <div
+            className="ui hidden divider is-size-small"
+          />
+        </Divider>
+      </Divider>
       <FlexContainer
         alignContent={null}
         alignItems={null}
@@ -506,244 +506,244 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
   <div
     className="property-search-result-list"
   >
-    <FlexContainer
-      alignContent={null}
-      alignItems="center"
-      flexDirection={null}
-      flexWrap={null}
-      justifyContent="space-between"
+    <div
+      className="result-list-container"
     >
-      <div
-        className="flex-container"
-        style={
-          Object {
-            "alignContent": null,
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": null,
-            "flexGrow": "1",
-            "flexWrap": null,
-            "height": "100%",
-            "justifyContent": "space-between",
-          }
-        }
+      <FlexContainer
+        alignContent={null}
+        alignItems="center"
+        flexDirection={null}
+        flexWrap={null}
+        justifyContent="space-between"
       >
-        <Heading
-          className={null}
-          hasMargin={true}
-          isColorInverted={false}
-          size="small"
-          textAlign={null}
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
         >
-          <Header
-            as="h4"
-            className=""
-            inverted={false}
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="small"
             textAlign={null}
           >
-            <h4
-              className="ui header"
+            <Header
+              as="h4"
+              className=""
+              inverted={false}
+              textAlign={null}
             >
-              2 results
-            </h4>
-          </Header>
-        </Heading>
-        <Dropdown
-          error={false}
-          getOptionsWithSearch={null}
-          icon={null}
-          initialValue={null}
-          isCompact={true}
-          isDisabled={false}
-          isSearchable={false}
-          isValid={false}
-          label="some label"
-          name=""
-          noResultsText="No results"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          options={
-            Array [
-              Object {
-                "content": "Price (lowest to highest)",
-                "text": "Sort by price (lowest first)",
-                "value": "price",
-              },
-            ]
-          }
-          value="price"
-          willOpenAbove={false}
-        >
-          <div
-            className="dropdown-container is-compact dirty"
+              <h4
+                className="ui header"
+              >
+                2 results
+              </h4>
+            </Header>
+          </Heading>
+          <Dropdown
+            error={false}
+            getOptionsWithSearch={null}
+            icon={null}
+            initialValue={null}
+            isCompact={true}
+            isDisabled={false}
+            isSearchable={false}
+            isValid={false}
+            label="some label"
+            name=""
+            noResultsText="No results"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            options={
+              Array [
+                Object {
+                  "content": "Price (lowest to highest)",
+                  "text": "Sort by price (lowest first)",
+                  "value": "price",
+                },
+              ]
+            }
+            value="price"
+            willOpenAbove={false}
           >
-            <Dropdown
-              additionLabel="Add "
-              additionPosition="top"
-              closeOnBlur={true}
-              compact={true}
-              deburr={false}
-              disabled={false}
-              icon={
-                <Icon
-                  color={null}
-                  hasBorder={false}
-                  isButton={false}
-                  isCircular={false}
-                  isColorInverted={false}
-                  isDisabled={false}
-                  isLabelLeft={false}
-                  labelText={null}
-                  labelWeight={null}
-                  name="caret down"
-                  path={null}
-                  size="small"
-                />
-              }
-              minCharacters={1}
-              noResultsMessage="No results"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              open={false}
-              openOnFocus={true}
-              options={
-                Array [
-                  Object {
-                    "content": "Price (lowest to highest)",
-                    "key": "0",
-                    "label": undefined,
-                    "text": "Sort by price (lowest first)",
-                    "value": "price",
-                  },
-                ]
-              }
-              placeholder="some label"
-              renderLabel={[Function]}
-              search={false}
-              searchInput="text"
-              selectOnBlur={false}
-              selectOnNavigation={true}
-              selection={true}
-              upward={false}
-              value="price"
-              wrapSelection={true}
+            <div
+              className="dropdown-container is-compact dirty"
             >
-              <div
-                aria-disabled={false}
-                aria-expanded={false}
-                className="ui compact selection dropdown"
+              <Dropdown
+                additionLabel="Add "
+                additionPosition="top"
+                closeOnBlur={true}
+                compact={true}
+                deburr={false}
+                disabled={false}
+                icon={
+                  <Icon
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="caret down"
+                    path={null}
+                    size="small"
+                  />
+                }
+                minCharacters={1}
+                noResultsMessage="No results"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onClick={[Function]}
-                onFocus={[Function]}
-                onMouseDown={[Function]}
-                role="listbox"
-                tabIndex={0}
+                open={false}
+                openOnFocus={true}
+                options={
+                  Array [
+                    Object {
+                      "content": "Price (lowest to highest)",
+                      "key": "0",
+                      "label": undefined,
+                      "text": "Sort by price (lowest first)",
+                      "value": "price",
+                    },
+                  ]
+                }
+                placeholder="some label"
+                renderLabel={[Function]}
+                search={false}
+                searchInput="text"
+                selectOnBlur={false}
+                selectOnNavigation={true}
+                selection={true}
+                upward={false}
+                value="price"
+                wrapSelection={true}
               >
                 <div
-                  aria-live="polite"
-                  className="text"
-                  role="alert"
-                >
-                  Sort by price (lowest first)
-                </div>
-                <Icon
-                  color={null}
-                  hasBorder={false}
-                  isButton={false}
-                  isCircular={false}
-                  isColorInverted={false}
-                  isDisabled={false}
-                  isLabelLeft={false}
-                  labelText={null}
-                  labelWeight={null}
-                  name="caret down"
+                  aria-disabled={false}
+                  aria-expanded={false}
+                  className="ui compact selection dropdown"
+                  onBlur={[Function]}
+                  onChange={[Function]}
                   onClick={[Function]}
-                  path={null}
-                  size="small"
-                >
-                  <i
-                    className="icon small"
-                    onClick={[Function]}
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M20,8.5l-8,7-8-7Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </i>
-                </Icon>
-                <DropdownMenu
-                  open={false}
+                  onFocus={[Function]}
+                  onMouseDown={[Function]}
+                  role="listbox"
+                  tabIndex={0}
                 >
                   <div
-                    className="menu transition"
+                    aria-live="polite"
+                    className="text"
+                    role="alert"
                   >
-                    <DropdownItem
-                      active={true}
-                      content="Price (lowest to highest)"
-                      key="0"
+                    Sort by price (lowest first)
+                  </div>
+                  <Icon
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="caret down"
+                    onClick={[Function]}
+                    path={null}
+                    size="small"
+                  >
+                    <i
+                      className="icon small"
                       onClick={[Function]}
-                      selected={true}
-                      style={
-                        Object {
-                          "pointerEvents": "all",
-                        }
-                      }
-                      text="Sort by price (lowest first)"
-                      value="price"
                     >
-                      <div
-                        aria-checked={true}
-                        aria-selected={true}
-                        className="active selected item"
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20,8.5l-8,7-8-7Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </Icon>
+                  <DropdownMenu
+                    open={false}
+                  >
+                    <div
+                      className="menu transition"
+                    >
+                      <DropdownItem
+                        active={true}
+                        content="Price (lowest to highest)"
+                        key="0"
                         onClick={[Function]}
-                        role="option"
+                        selected={true}
                         style={
                           Object {
                             "pointerEvents": "all",
                           }
                         }
+                        text="Sort by price (lowest first)"
+                        value="price"
                       >
-                        <span
-                          className="text"
-                          key="Price (lowest to highest)"
+                        <div
+                          aria-checked={true}
+                          aria-selected={true}
+                          className="active selected item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
                         >
-                          Price (lowest to highest)
-                        </span>
-                      </div>
-                    </DropdownItem>
-                  </div>
-                </DropdownMenu>
-              </div>
-            </Dropdown>
-          </div>
-        </Dropdown>
-      </div>
-    </FlexContainer>
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
+                          <span
+                            className="text"
+                            key="Price (lowest to highest)"
+                          >
+                            Price (lowest to highest)
+                          </span>
+                        </div>
+                      </DropdownItem>
+                    </div>
+                  </DropdownMenu>
+                </div>
+              </Dropdown>
+            </div>
+          </Dropdown>
+        </div>
+      </FlexContainer>
       <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
+        className=""
+        hasLine={false}
+        size="small"
       >
-        <div
-          className="ui hidden divider is-size-small"
-        />
+        <Divider
+          className="is-size-small"
+          hidden={true}
+          section={false}
+        >
+          <div
+            className="ui hidden divider is-size-small"
+          />
+        </Divider>
       </Divider>
-    </Divider>
-    <div
-      className="result-list-container"
-    >
       <FlexContainer
         alignContent={null}
         alignItems={null}
@@ -848,62 +848,62 @@ exports[`<PropertySearchResultList /> render if \`props.isShowingPlaceholder\` i
   <div
     className="property-search-result-list"
   >
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
-      <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
-      >
-        <div
-          className="ui hidden divider is-size-small"
-        />
-      </Divider>
-    </Divider>
-    <TextPlaceholder
-      isFluid={true}
-      length="short"
-    >
-      <div
-        className="placeholder text short fluid"
-      />
-    </TextPlaceholder>
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
-      <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
-      >
-        <div
-          className="ui hidden divider is-size-small"
-        />
-      </Divider>
-    </Divider>
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
-      <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
-      >
-        <div
-          className="ui hidden divider is-size-small"
-        />
-      </Divider>
-    </Divider>
     <div
       className="result-list-container"
     >
+      <Divider
+        className=""
+        hasLine={false}
+        size="small"
+      >
+        <Divider
+          className="is-size-small"
+          hidden={true}
+          section={false}
+        >
+          <div
+            className="ui hidden divider is-size-small"
+          />
+        </Divider>
+      </Divider>
+      <TextPlaceholder
+        isFluid={true}
+        length="short"
+      >
+        <div
+          className="placeholder text short fluid"
+        />
+      </TextPlaceholder>
+      <Divider
+        className=""
+        hasLine={false}
+        size="small"
+      >
+        <Divider
+          className="is-size-small"
+          hidden={true}
+          section={false}
+        >
+          <div
+            className="ui hidden divider is-size-small"
+          />
+        </Divider>
+      </Divider>
+      <Divider
+        className=""
+        hasLine={false}
+        size="small"
+      >
+        <Divider
+          className="is-size-small"
+          hidden={true}
+          section={false}
+        >
+          <div
+            className="ui hidden divider is-size-small"
+          />
+        </Divider>
+      </Divider>
       <FlexContainer
         alignContent={null}
         alignItems={null}
@@ -1155,115 +1155,115 @@ exports[`<PropertySearchResultList /> render if \`props.messageText\` is passed 
   <div
     className="property-search-result-list"
   >
-    <FlexContainer
-      alignContent={null}
-      alignItems="center"
-      flexDirection={null}
-      flexWrap={null}
-      justifyContent="space-between"
-    >
-      <div
-        className="flex-container"
-        style={
-          Object {
-            "alignContent": null,
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": null,
-            "flexGrow": "1",
-            "flexWrap": null,
-            "height": "100%",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Heading
-          className={null}
-          hasMargin={true}
-          isColorInverted={false}
-          size="small"
-          textAlign={null}
-        >
-          <Header
-            as="h4"
-            className=""
-            inverted={false}
-            textAlign={null}
-          >
-            <h4
-              className="ui header"
-            >
-              2 results
-            </h4>
-          </Header>
-        </Heading>
-      </div>
-    </FlexContainer>
-    <Message>
-      <Message
-        className="padded"
-      >
-        <div
-          className="ui message padded"
-        >
-          <FlexContainer
-            alignContent={null}
-            alignItems="center"
-            flexDirection={null}
-            flexWrap={null}
-            justifyContent="space-between"
-          >
-            <div
-              className="flex-container"
-              style={
-                Object {
-                  "alignContent": null,
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flexDirection": null,
-                  "flexGrow": "1",
-                  "flexWrap": null,
-                  "height": "100%",
-                  "justifyContent": "space-between",
-                }
-              }
-            >
-              Some message text
-              <Link
-                href={null}
-                isPositionedRight={false}
-                onClick={[Function]}
-                willOpenInNewTab={false}
-              >
-                <Button
-                  as={null}
-                  basic={true}
-                  floated="left"
-                  href={null}
-                  onClick={[Function]}
-                  target="_self"
-                  type="button"
-                >
-                  <button
-                    className="ui basic left floated button"
-                    href={null}
-                    onClick={[Function]}
-                    role="button"
-                    target="_self"
-                    type="button"
-                  >
-                    Some button text
-                  </button>
-                </Button>
-              </Link>
-            </div>
-          </FlexContainer>
-        </div>
-      </Message>
-    </Message>
     <div
       className="result-list-container"
     >
+      <FlexContainer
+        alignContent={null}
+        alignItems="center"
+        flexDirection={null}
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            <Header
+              as="h4"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h4
+                className="ui header"
+              >
+                2 results
+              </h4>
+            </Header>
+          </Heading>
+        </div>
+      </FlexContainer>
+      <Message>
+        <Message
+          className="padded"
+        >
+          <div
+            className="ui message padded"
+          >
+            <FlexContainer
+              alignContent={null}
+              alignItems="center"
+              flexDirection={null}
+              flexWrap={null}
+              justifyContent="space-between"
+            >
+              <div
+                className="flex-container"
+                style={
+                  Object {
+                    "alignContent": null,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": null,
+                    "flexGrow": "1",
+                    "flexWrap": null,
+                    "height": "100%",
+                    "justifyContent": "space-between",
+                  }
+                }
+              >
+                Some message text
+                <Link
+                  href={null}
+                  isPositionedRight={false}
+                  onClick={[Function]}
+                  willOpenInNewTab={false}
+                >
+                  <Button
+                    as={null}
+                    basic={true}
+                    floated="left"
+                    href={null}
+                    onClick={[Function]}
+                    target="_self"
+                    type="button"
+                  >
+                    <button
+                      className="ui basic left floated button"
+                      href={null}
+                      onClick={[Function]}
+                      role="button"
+                      target="_self"
+                      type="button"
+                    >
+                      Some button text
+                    </button>
+                  </Button>
+                </Link>
+              </div>
+            </FlexContainer>
+          </div>
+        </Message>
+      </Message>
       <FlexContainer
         alignContent={null}
         alignItems={null}
@@ -1683,68 +1683,68 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
   <div
     className="property-search-result-list"
   >
-    <FlexContainer
-      alignContent={null}
-      alignItems="center"
-      flexDirection={null}
-      flexWrap={null}
-      justifyContent="space-between"
-    >
-      <div
-        className="flex-container"
-        style={
-          Object {
-            "alignContent": null,
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": null,
-            "flexGrow": "1",
-            "flexWrap": null,
-            "height": "100%",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Heading
-          className={null}
-          hasMargin={true}
-          isColorInverted={false}
-          size="small"
-          textAlign={null}
-        >
-          <Header
-            as="h4"
-            className=""
-            inverted={false}
-            textAlign={null}
-          >
-            <h4
-              className="ui header"
-            >
-              13 results
-            </h4>
-          </Header>
-        </Heading>
-      </div>
-    </FlexContainer>
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
-      <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
-      >
-        <div
-          className="ui hidden divider is-size-small"
-        />
-      </Divider>
-    </Divider>
     <div
       className="result-list-container"
     >
+      <FlexContainer
+        alignContent={null}
+        alignItems="center"
+        flexDirection={null}
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            <Header
+              as="h4"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h4
+                className="ui header"
+              >
+                13 results
+              </h4>
+            </Header>
+          </Heading>
+        </div>
+      </FlexContainer>
+      <Divider
+        className=""
+        hasLine={false}
+        size="small"
+      >
+        <Divider
+          className="is-size-small"
+          hidden={true}
+          section={false}
+        >
+          <div
+            className="ui hidden divider is-size-small"
+          />
+        </Divider>
+      </Divider>
       <FlexContainer
         alignContent={null}
         alignItems={null}
@@ -2510,68 +2510,68 @@ exports[`<PropertySearchResultList /> render if \`props.resultsCountText\` is pa
   <div
     className="property-search-result-list"
   >
-    <FlexContainer
-      alignContent={null}
-      alignItems="center"
-      flexDirection={null}
-      flexWrap={null}
-      justifyContent="space-between"
-    >
-      <div
-        className="flex-container"
-        style={
-          Object {
-            "alignContent": null,
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": null,
-            "flexGrow": "1",
-            "flexWrap": null,
-            "height": "100%",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <Heading
-          className={null}
-          hasMargin={true}
-          isColorInverted={false}
-          size="small"
-          textAlign={null}
-        >
-          <Header
-            as="h4"
-            className=""
-            inverted={false}
-            textAlign={null}
-          >
-            <h4
-              className="ui header"
-            >
-              2 My god I love Cliff Richard
-            </h4>
-          </Header>
-        </Heading>
-      </div>
-    </FlexContainer>
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
-      <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
-      >
-        <div
-          className="ui hidden divider is-size-small"
-        />
-      </Divider>
-    </Divider>
     <div
       className="result-list-container"
     >
+      <FlexContainer
+        alignContent={null}
+        alignItems="center"
+        flexDirection={null}
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            <Header
+              as="h4"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h4
+                className="ui header"
+              >
+                2 My god I love Cliff Richard
+              </h4>
+            </Header>
+          </Heading>
+        </div>
+      </FlexContainer>
+      <Divider
+        className=""
+        hasLine={false}
+        size="small"
+      >
+        <Divider
+          className="is-size-small"
+          hidden={true}
+          section={false}
+        >
+          <div
+            className="ui hidden divider is-size-small"
+          />
+        </Divider>
+      </Divider>
       <FlexContainer
         alignContent={null}
         alignItems={null}

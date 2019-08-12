@@ -72,37 +72,37 @@ export class Component extends PureComponent {
 
     return (
       <div className="property-search-result-list">
-        {isShowingPlaceholder ? (
-          <Fragment>
-            <Divider size="small" />
-            <TextPlaceholder length="short" />
-            <Divider size="small" />
-          </Fragment>
-        ) : (
-          <FlexContainer alignItems="center" justifyContent="space-between">
-            <Heading size="small">{`${length} ${resultsCountText}`}</Heading>
-            {!!size(dropdownOptions) && (
-              <Dropdown
-                isCompact
-                label={dropdownLabel}
-                onChange={dropdownOnChange}
-                options={dropdownOptions}
-                value={dropdownValue}
-              />
-            )}
-          </FlexContainer>
-        )}
-        {messageText ? (
-          <Message>
-            <FlexContainer alignItems="center" justifyContent="space-between">
-              {messageText}
-              <Link onClick={messageButtonOnClick}>{messageButtonText}</Link>
-            </FlexContainer>
-          </Message>
-        ) : (
-          <Divider size="small" />
-        )}
         <div className="result-list-container">
+          {isShowingPlaceholder ? (
+            <Fragment>
+              <Divider size="small" />
+              <TextPlaceholder length="short" />
+              <Divider size="small" />
+            </Fragment>
+          ) : (
+            <FlexContainer alignItems="center" justifyContent="space-between">
+              <Heading size="small">{`${length} ${resultsCountText}`}</Heading>
+              {!!size(dropdownOptions) && (
+                <Dropdown
+                  isCompact
+                  label={dropdownLabel}
+                  onChange={dropdownOnChange}
+                  options={dropdownOptions}
+                  value={dropdownValue}
+                />
+              )}
+            </FlexContainer>
+          )}
+          {messageText ? (
+            <Message>
+              <FlexContainer alignItems="center" justifyContent="space-between">
+                {messageText}
+                <Link onClick={messageButtonOnClick}>{messageButtonText}</Link>
+              </FlexContainer>
+            </Message>
+          ) : (
+            <Divider size="small" />
+          )}
           <FlexContainer flexWrap="wrap">
             {(isShowingPlaceholder
               ? PLACEHOLDERS
