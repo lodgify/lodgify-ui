@@ -208,6 +208,10 @@
           text-overflow: ellipsis;
           white-space: nowrap;
         }
+
+        > .header .ui.header {
+          font-size: @searchResultHeaderFontSize;
+        }
       }
 
       img {
