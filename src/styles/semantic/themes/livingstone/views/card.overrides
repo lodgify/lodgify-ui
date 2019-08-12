@@ -172,6 +172,8 @@
 
       > .flex-container {
         position: relative;
+        min-height: @searchResultImageHeight;
+        max-height: @searchResultImageHeight;
 
         > .ui.raised.segment {
           background-color: @themeActionColorDefault;
