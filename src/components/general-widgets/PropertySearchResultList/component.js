@@ -14,6 +14,7 @@ import { FlexContainer } from 'layout/FlexContainer';
 import { PropertySearchResult } from 'general-widgets/PropertySearchResult';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { RESULTS } from 'utils/default-strings';
+import { withResponsive } from 'utils/with-responsive';
 
 import { PLACEHOLDERS, NUMBER_OF_PROPERTIES_PER_PAGE } from './constants';
 import { getNumberOfPages } from './utils/getNumberOfPages';
@@ -21,12 +22,13 @@ import { getPropertySearchResultsToDisplay } from './utils/getPropertySearchResu
 import { getFirstPropertyPositionOfActivePage } from './utils/getFirstPropertyPositionOfActivePage';
 import { getLastPropertyPositionOfActivePage } from './utils/getLastPropertyPositionOfActivePage';
 import { getShowingResultsText } from './utils/getShowingResultsText';
+import { getFlexDirection } from './utils/getFlexDirection';
 
 /**
  * The standard widget for displaying a list of property search results.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export class Component extends PureComponent {
+class Component extends PureComponent {
   state = {
     activePage: 1,
   };
@@ -57,6 +59,7 @@ export class Component extends PureComponent {
       dropdownOptions,
       dropdownValue,
       isShowingPlaceholder,
+      isUserOnMobile,
       messageButtonOnClick,
       messageButtonText,
       messageText,
@@ -94,10 +97,16 @@ export class Component extends PureComponent {
             </FlexContainer>
           )}
           {messageText ? (
-            <Message>
-              <FlexContainer alignItems="center" justifyContent="space-between">
+            <Message isTextAlignedCenter={isUserOnMobile}>
+              <FlexContainer
+                alignItems="center"
+                flexDirection={getFlexDirection(isUserOnMobile)}
+                justifyContent="space-between"
+              >
                 {messageText}
-                <Link onClick={messageButtonOnClick}>{messageButtonText}</Link>
+                <Link isFluid={isUserOnMobile} onClick={messageButtonOnClick}>
+                  {messageButtonText}
+                </Link>
               </FlexContainer>
             </Message>
           ) : (
@@ -194,6 +203,12 @@ Component.propTypes = {
   ]),
   /** Is the component showing placeholders to reserve space for content which will appear. */
   isShowingPlaceholder: PropTypes.bool,
+  /**
+   * Is the user on a mobile device.
+   * Provided by `withResponsive` so ignored in the styleguide.
+   * @ignore
+   */
+  isUserOnMobile: PropTypes.bool.isRequired,
   /** Function called when the clickable button in the message is clicked. */
   messageButtonOnClick: PropTypes.func,
   /** Text to show as a clickable button in the message above the search results. */
@@ -217,3 +232,5 @@ Component.propTypes = {
   /** The text to display alongside the results count. */
   resultsCountText: PropTypes.string,
 };
+
+export const ComponentWithResponsive = withResponsive(Component);
