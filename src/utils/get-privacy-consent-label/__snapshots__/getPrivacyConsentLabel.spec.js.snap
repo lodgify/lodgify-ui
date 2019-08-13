@@ -17,6 +17,7 @@ exports[`getPrivacyConsentLabel if \`privacyConsentLabelLinkUrl\` is passed shou
   </Paragraph>
   <Link
     href="labelLinkUrl"
+    isFluid={false}
     isPositionedRight={false}
     onClick={[Function]}
     willOpenInNewTab={true}
@@ -25,6 +26,7 @@ exports[`getPrivacyConsentLabel if \`privacyConsentLabelLinkUrl\` is passed shou
       as="a"
       basic={true}
       floated="left"
+      fluid={false}
       href="labelLinkUrl"
       onClick={[Function]}
       target="_blank"
@@ -62,6 +64,7 @@ exports[`getPrivacyConsentLabel if both \`privacyConsentLabelLinkUrl\` and \`pri
   </Paragraph>
   <Link
     href="labelLinkUrl"
+    isFluid={false}
     isPositionedRight={false}
     onClick={[Function]}
     willOpenInNewTab={true}
@@ -70,6 +73,7 @@ exports[`getPrivacyConsentLabel if both \`privacyConsentLabelLinkUrl\` and \`pri
       as="a"
       basic={true}
       floated="left"
+      fluid={false}
       href="labelLinkUrl"
       onClick={[Function]}
       target="_blank"

@@ -388,6 +388,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                       trigger={
                         <Link
                           href={null}
+                          isFluid={false}
                           isPositionedRight={false}
                           onClick={[Function]}
                           willOpenInNewTab={false}
@@ -423,6 +424,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                         trigger={
                           <Link
                             href={null}
+                            isFluid={false}
                             isPositionedRight={false}
                             onClick={[Function]}
                             willOpenInNewTab={false}
@@ -446,6 +448,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                           trigger={
                             <Link
                               href={null}
+                              isFluid={false}
                               isPositionedRight={false}
                               onClick={[Function]}
                               willOpenInNewTab={false}
@@ -459,6 +462,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                           >
                             <Link
                               href={null}
+                              isFluid={false}
                               isPositionedRight={false}
                               onBlur={[Function]}
                               onClick={[Function]}
@@ -471,6 +475,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                                 as={null}
                                 basic={true}
                                 floated="left"
+                                fluid={false}
                                 href={null}
                                 onClick={[Function]}
                                 target="_self"

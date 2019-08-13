@@ -2164,6 +2164,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   trigger={
                                                     <Link
                                                       href={null}
+                                                      isFluid={false}
                                                       isPositionedRight={false}
                                                       onClick={[Function]}
                                                       willOpenInNewTab={false}
@@ -2199,6 +2200,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                     trigger={
                                                       <Link
                                                         href={null}
+                                                        isFluid={false}
                                                         isPositionedRight={false}
                                                         onClick={[Function]}
                                                         willOpenInNewTab={false}
@@ -2222,6 +2224,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       trigger={
                                                         <Link
                                                           href={null}
+                                                          isFluid={false}
                                                           isPositionedRight={false}
                                                           onClick={[Function]}
                                                           willOpenInNewTab={false}
@@ -2235,6 +2238,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       >
                                                         <Link
                                                           href={null}
+                                                          isFluid={false}
                                                           isPositionedRight={false}
                                                           onBlur={[Function]}
                                                           onClick={[Function]}
@@ -2247,6 +2251,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                             as={null}
                                                             basic={true}
                                                             floated="left"
+                                                            fluid={false}
                                                             href={null}
                                                             onClick={[Function]}
                                                             target="_self"
@@ -3072,6 +3077,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                   trigger={
                                                     <Link
                                                       href={null}
+                                                      isFluid={false}
                                                       isPositionedRight={false}
                                                       onClick={[Function]}
                                                       willOpenInNewTab={false}
@@ -3107,6 +3113,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                     trigger={
                                                       <Link
                                                         href={null}
+                                                        isFluid={false}
                                                         isPositionedRight={false}
                                                         onClick={[Function]}
                                                         willOpenInNewTab={false}
@@ -3130,6 +3137,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       trigger={
                                                         <Link
                                                           href={null}
+                                                          isFluid={false}
                                                           isPositionedRight={false}
                                                           onClick={[Function]}
                                                           willOpenInNewTab={false}
@@ -3143,6 +3151,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       >
                                                         <Link
                                                           href={null}
+                                                          isFluid={false}
                                                           isPositionedRight={false}
                                                           onBlur={[Function]}
                                                           onClick={[Function]}
@@ -3155,6 +3164,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                             as={null}
                                                             basic={true}
                                                             floated="left"
+                                                            fluid={false}
                                                             href={null}
                                                             onClick={[Function]}
                                                             target="_self"

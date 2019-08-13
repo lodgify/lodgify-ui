@@ -144,6 +144,7 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
               </FormField>
               <Link
                 href={null}
+                isFluid={false}
                 isPositionedRight={false}
                 onClick={[Function]}
                 willOpenInNewTab={false}
@@ -152,6 +153,7 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
                   as={null}
                   basic={true}
                   floated="left"
+                  fluid={false}
                   href={null}
                   onClick={[Function]}
                   target="_self"

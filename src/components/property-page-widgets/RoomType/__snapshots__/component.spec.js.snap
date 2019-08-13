@@ -520,6 +520,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                             trigger={
                                               <Link
                                                 href={null}
+                                                isFluid={false}
                                                 isPositionedRight={false}
                                                 onClick={[Function]}
                                                 willOpenInNewTab={false}
@@ -555,6 +556,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                               trigger={
                                                 <Link
                                                   href={null}
+                                                  isFluid={false}
                                                   isPositionedRight={false}
                                                   onClick={[Function]}
                                                   willOpenInNewTab={false}
@@ -578,6 +580,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                 trigger={
                                                   <Link
                                                     href={null}
+                                                    isFluid={false}
                                                     isPositionedRight={false}
                                                     onClick={[Function]}
                                                     willOpenInNewTab={false}
@@ -591,6 +594,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                 >
                                                   <Link
                                                     href={null}
+                                                    isFluid={false}
                                                     isPositionedRight={false}
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
@@ -603,6 +607,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                       as={null}
                                                       basic={true}
                                                       floated="left"
+                                                      fluid={false}
                                                       href={null}
                                                       onClick={[Function]}
                                                       target="_self"
@@ -1463,6 +1468,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                             trigger={
                                               <Link
                                                 href={null}
+                                                isFluid={false}
                                                 isPositionedRight={false}
                                                 onClick={[Function]}
                                                 willOpenInNewTab={false}
@@ -1498,6 +1504,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                               trigger={
                                                 <Link
                                                   href={null}
+                                                  isFluid={false}
                                                   isPositionedRight={false}
                                                   onClick={[Function]}
                                                   willOpenInNewTab={false}
@@ -1521,6 +1528,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                 trigger={
                                                   <Link
                                                     href={null}
+                                                    isFluid={false}
                                                     isPositionedRight={false}
                                                     onClick={[Function]}
                                                     willOpenInNewTab={false}
@@ -1534,6 +1542,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                 >
                                                   <Link
                                                     href={null}
+                                                    isFluid={false}
                                                     isPositionedRight={false}
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
@@ -1546,6 +1555,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                       as={null}
                                                       basic={true}
                                                       floated="left"
+                                                      fluid={false}
                                                       href={null}
                                                       onClick={[Function]}
                                                       target="_self"

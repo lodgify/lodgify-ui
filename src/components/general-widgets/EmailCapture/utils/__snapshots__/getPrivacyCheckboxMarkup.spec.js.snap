@@ -23,6 +23,7 @@ exports[`getPrivacyCheckboxMarkup should return the correct structure 1`] = `
       </Paragraph>
       <Link
         href="privacyConsentLabelLinkUrl"
+        isFluid={false}
         isPositionedRight={false}
         onClick={[Function]}
         willOpenInNewTab={true}
