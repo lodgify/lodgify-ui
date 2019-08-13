@@ -93,6 +93,12 @@
     word-break: break-word;
     transition: @priceLabelTransitionOnHover;
 
+    .ui.label,
+    .ui.label .ui.label {
+      color: @themeActionContrastColorDefault;
+      color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+    }
+
     &.is-clickable {
       cursor: pointer;
     }
@@ -174,15 +180,22 @@
 
       p {
         margin-right: @priceLabelTextMargin;
-        color: @black;
       }
 
       .ui.label {
         padding: @priceLabelPeriodTextPadding;
         background: transparent;
         border-radius: @priceLabelPeriodBorderRadius;
+        color: @themeActionContrastColorDefault;
+        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
         box-shadow: @priceLabelPeriodBoxShadow;
-        color: @black;
+      }
+
+      .ui.label,
+      p,
+      h3 {
+        color: @themeActionContrastColorDefault;
+        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
       }
     }
   }
