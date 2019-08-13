@@ -57,17 +57,17 @@
         States
 --------------------*/
 
-/* Hovered */
-.ui.button:hover {
+/* Hovered, Focused and Active */
+.ui.button:hover,
+.ui.button:focus,
+.ui.button:active {
   background-color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
   color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
 }
 
+/* Hovered */
+
 /* Focused */
-.ui.button:focus {
-  background-color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault) !important;
-  color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
-}
 
 /* Disabled */
 .ui.disabled.button {
@@ -78,6 +78,9 @@
 /* Pressed Down */
 
 /* Active */
+.ui.button:active {
+  transform: @activeTransform;
+}
 
 /* Active + Hovered */
 
