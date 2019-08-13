@@ -10,7 +10,7 @@
 @verticalPadding: @12px;
 @horizontalPadding: @15px;
 
-@paddedPadding: @35px;
+@paddedPadding: 1.5rem;
 
 @borderRadius: 0;
 @borderWidth: 0;
