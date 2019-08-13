@@ -179,6 +179,7 @@
 @hasPageNumbersActiveItemBorderRadius: 50%;
 @hasPageNumbersFirstButtonMobileMargin: 0 @10px 0 0;
 @hasPageNumbersLastButtonMobileMargin: 0 0 0 @10px;
+@hasPageNumbersLastSVGMarginLeft: @5px;
 
 /* Labeled Icon */
 

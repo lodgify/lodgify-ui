@@ -280,6 +280,10 @@
         @media @mobileScreen {
           margin: @hasPageNumbersLastButtonMobileMargin;
         }
+
+        svg {
+          margin-left: @hasPageNumbersLastSVGMarginLeft;
+        }
       }
     }
   }
