@@ -1268,6 +1268,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                 trigger={
                   <Link
                     href={null}
+                    isFluid={false}
                     isPositionedRight={false}
                     onClick={[Function]}
                     willOpenInNewTab={false}
@@ -1287,6 +1288,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                   trigger={
                     <Link
                       href={null}
+                      isFluid={false}
                       isPositionedRight={false}
                       onClick={[Function]}
                       willOpenInNewTab={false}
@@ -1322,6 +1324,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                     trigger={
                       <Link
                         href={null}
+                        isFluid={false}
                         isPositionedRight={false}
                         onClick={[Function]}
                         willOpenInNewTab={false}
@@ -1345,6 +1348,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       trigger={
                         <Link
                           href={null}
+                          isFluid={false}
                           isPositionedRight={false}
                           onClick={[Function]}
                           willOpenInNewTab={false}
@@ -1358,6 +1362,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       >
                         <Link
                           href={null}
+                          isFluid={false}
                           isPositionedRight={false}
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -1370,6 +1375,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                             as={null}
                             basic={true}
                             floated="left"
+                            fluid={false}
                             href={null}
                             onClick={[Function]}
                             target="_self"

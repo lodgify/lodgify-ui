@@ -198,6 +198,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                     >
                       <Link
                         href="/"
+                        isFluid={false}
                         isPositionedRight={false}
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -208,6 +209,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                           as="a"
                           basic={true}
                           floated="left"
+                          fluid={false}
                           href="/"
                           onClick={[Function]}
                           target="_blank"

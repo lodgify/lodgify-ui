@@ -270,6 +270,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                 </Message>
                 <Link
                   href={null}
+                  isFluid={false}
                   isPositionedRight={false}
                   onClick={[Function]}
                   willOpenInNewTab={false}
@@ -278,6 +279,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                     as={null}
                     basic={true}
                     floated="left"
+                    fluid={false}
                     href={null}
                     onClick={[Function]}
                     target="_self"
@@ -692,6 +694,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                 </Message>
                 <Link
                   href={null}
+                  isFluid={false}
                   isPositionedRight={false}
                   onClick={[Function]}
                   willOpenInNewTab={false}
@@ -700,6 +703,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                     as={null}
                     basic={true}
                     floated="left"
+                    fluid={false}
                     href={null}
                     onClick={[Function]}
                     target="_self"
@@ -1094,6 +1098,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                 </FormField>
                 <Link
                   href={null}
+                  isFluid={false}
                   isPositionedRight={false}
                   onClick={[Function]}
                   willOpenInNewTab={false}
@@ -1102,6 +1107,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                     as={null}
                     basic={true}
                     floated="left"
+                    fluid={false}
                     href={null}
                     onClick={[Function]}
                     target="_self"
