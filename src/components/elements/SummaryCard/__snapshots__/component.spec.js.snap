@@ -1,5 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[` 1`] = `
+<Card
+  className="has-summary-card"
+  onClick={[Function]}
+>
+  <CardHeader>
+    <Heading
+      className={null}
+      hasMargin={true}
+      isColorInverted={false}
+      size="medium"
+      textAlign={null}
+    >
+      La casa d'Argent
+    </Heading>
+  </CardHeader>
+  <FlexContainer
+    alignContent={null}
+    alignItems="center"
+    flexDirection="row"
+    flexWrap={null}
+    justifyContent={null}
+  >
+    <Paragraph
+      isCompact={false}
+      size="medium"
+      weight={null}
+    >
+      Soterrani
+    </Paragraph>
+  </FlexContainer>
+</Card>
+`;
+
+exports[`SummaryCard if \`ratingNumber\` is falsy should return the right structure 1`] = `
+<Card
+  className="has-summary-card"
+  onClick={[Function]}
+>
+  <CardHeader>
+    <Heading
+      className={null}
+      hasMargin={true}
+      isColorInverted={false}
+      size="medium"
+      textAlign={null}
+    >
+      La casa d'Argent
+    </Heading>
+  </CardHeader>
+  <FlexContainer
+    alignContent={null}
+    alignItems="center"
+    flexDirection="row"
+    flexWrap={null}
+    justifyContent={null}
+  >
+    <Paragraph
+      isCompact={false}
+      size="medium"
+      weight={null}
+    >
+      Soterrani
+    </Paragraph>
+  </FlexContainer>
+</Card>
+`;
+
 exports[`SummaryCard should have the right shape 1`] = `
 <Card
   className="has-summary-card"

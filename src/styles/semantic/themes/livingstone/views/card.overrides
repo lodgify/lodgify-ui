@@ -262,7 +262,7 @@
     > .flex-container {
       color: @black;
 
-      p {
+      p:not(:first-child) {
         margin-left: @summaryCardPropertyTypeMarginLeft;
       }
     }

@@ -27,7 +27,9 @@ export class Component extends PureComponent {
           <Heading>{propertyName}</Heading>
         </Card.Header>
         <FlexContainer alignItems="center" flexDirection="row">
-          <Rating iconSize="tiny" ratingNumber={ratingNumber} />
+          {!!ratingNumber && (
+            <Rating iconSize="tiny" ratingNumber={ratingNumber} />
+          )}
           <Paragraph size="medium">{propertyType}</Paragraph>
         </FlexContainer>
       </Card>
@@ -40,6 +42,7 @@ Component.displayName = 'SummaryCard';
 Component.defaultProps = {
   name: undefined,
   onClick: Function.prototype,
+  ratingNumber: null,
 };
 
 Component.propTypes = {
@@ -54,5 +57,5 @@ Component.propTypes = {
   /** The name of the type of the property. */
   propertyType: PropTypes.string.isRequired,
   /** The numeral rating for the property, out of 5. */
-  ratingNumber: PropTypes.number.isRequired,
+  ratingNumber: PropTypes.number,
 };
