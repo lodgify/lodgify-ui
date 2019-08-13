@@ -16,7 +16,7 @@ import { shallow, mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { getPropertySearchResultsToDisplay } from './utils/getPropertySearchResultsToDisplay';
-import { Component as PropertySearchResultList } from './component';
+import { ComponentWithResponsive as PropertySearchResultList } from './component';
 import {
   propertySearchResults,
   moreThan12PropertySearchResults,
@@ -26,20 +26,44 @@ getPropertySearchResultsToDisplay.mockImplementation(
   (activePage, propertySearchResults) => propertySearchResults
 );
 
-const getShallowPropertySearchResultList = otherProps =>
+const getWrappedPropertySearchResultList = otherProps =>
   shallow(
     <PropertySearchResultList
       propertySearchResults={propertySearchResults}
       {...otherProps}
     />
+  ).prop('as');
+
+const getShallowPropertySearchResultList = otherProps => {
+  const WrappedPropertySearchResultList = getWrappedPropertySearchResultList(
+    otherProps
   );
-const getMountedPropertySearchResultList = otherProps =>
-  mount(
-    <PropertySearchResultList
+
+  return shallow(
+    <WrappedPropertySearchResultList
       propertySearchResults={propertySearchResults}
       {...otherProps}
+      isUserOnMobile={false}
     />
   );
+};
+
+const getMountedPropertySearchResultList = (
+  otherProps,
+  isUserOnMobile = false
+) => {
+  const WrappedPropertySearchResultList = getWrappedPropertySearchResultList(
+    otherProps
+  );
+
+  return mount(
+    <WrappedPropertySearchResultList
+      propertySearchResults={propertySearchResults}
+      {...otherProps}
+      isUserOnMobile={isUserOnMobile}
+    />
+  );
+};
 
 describe('<PropertySearchResultList />', () => {
   describe('componentDidUpdate', () => {
@@ -127,6 +151,14 @@ describe('<PropertySearchResultList />', () => {
       });
     });
 
+    describe('if `isUserOnMobile` === true', () => {
+      it('should return the right structure', () => {
+        const actual = getMountedPropertySearchResultList({}, true);
+
+        expect(actual).toMatchSnapshot();
+      });
+    });
+
     describe('if `props.activePage` is defined', () => {
       it('should render the right structure', () => {
         const actual = getMountedPropertySearchResultList({
@@ -199,9 +231,8 @@ describe('<PropertySearchResultList />', () => {
   });
 
   it('should have `displayName` `PropertySearchResultList`', () => {
-    expectComponentToHaveDisplayName(
-      PropertySearchResultList,
-      'PropertySearchResultList'
-    );
+    const component = shallow(<PropertySearchResultList />).prop('as');
+
+    expectComponentToHaveDisplayName(component, 'PropertySearchResultList');
   });
 });

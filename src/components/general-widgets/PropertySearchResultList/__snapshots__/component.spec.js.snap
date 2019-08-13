@@ -6,6 +6,223 @@ exports[`<PropertySearchResultList /> render by default should render the right 
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={false}
+  isUserOnMobile={false}
+  messageButtonOnClick={[Function]}
+  messageButtonText={null}
+  messageText={null}
+  onChange={[Function]}
+  propertySearchResults={
+    Array [
+      Object {
+        "bathsNumber": 2,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 2,
+        "bedsText": "beds",
+        "guestsNumber": 2,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "priceLabelPeriodText": "per month",
+        "priceLabelPricePerPeriod": "$28000",
+        "priceLabelPricePerPeriodPrefix": "from",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "The Cat House",
+        "propertyType": "Bed and breakfast",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+      Object {
+        "bathsNumber": 1,
+        "bathsText": "baths",
+        "bedroomsNumber": 2,
+        "bedroomsText": "bedrooms",
+        "bedsNumber": 3,
+        "bedsText": "beds",
+        "guestsNumber": 4,
+        "guestsText": "guests",
+        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+        "priceLabelPricePerPeriod": "$1280",
+        "propertyAmenities": Array [
+          "Pool",
+          "Wifi",
+          "Washer",
+          "Kitchen",
+        ],
+        "propertyName": "Space Hub A-675",
+        "propertyType": "Space Station",
+        "propertyUrl": "/",
+        "ratingNumber": 4.7,
+      },
+    ]
+  }
+  renderShowingResultsText={[Function]}
+  resultsCountText="results"
+>
+  <div
+    className="property-search-result-list"
+  >
+    <div
+      className="result-list-container"
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems="center"
+        flexDirection={null}
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            <Header
+              as="h4"
+              className=""
+              inverted={false}
+              textAlign={null}
+            >
+              <h4
+                className="ui header"
+              >
+                2 results
+              </h4>
+            </Header>
+          </Heading>
+        </div>
+      </FlexContainer>
+      <Divider
+        className=""
+        hasLine={false}
+        size="small"
+      >
+        <Divider
+          className="is-size-small"
+          hidden={true}
+          section={false}
+        >
+          <div
+            className="ui hidden divider is-size-small"
+          />
+        </Divider>
+      </Divider>
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection={null}
+        flexWrap="wrap"
+        justifyContent={null}
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": null,
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": "wrap",
+              "height": "100%",
+              "justifyContent": null,
+            }
+          }
+        >
+          <PropertySearchResult
+            bathsNumber={2}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={2}
+            bedsText="beds"
+            guestsNumber={2}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="The Cat House0"
+            priceLabelPeriodText="per month"
+            priceLabelPricePerPeriod="$28000"
+            priceLabelPricePerPeriodPrefix="from"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="The Cat House"
+            propertyType="Bed and breakfast"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+          <PropertySearchResult
+            bathsNumber={1}
+            bathsText="baths"
+            bedroomsNumber={2}
+            bedroomsText="bedrooms"
+            bedsNumber={3}
+            bedsText="beds"
+            guestsNumber={4}
+            guestsText="guests"
+            imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+            isShowingPlaceholder={false}
+            key="Space Hub A-6751"
+            priceLabelPricePerPeriod="$1280"
+            propertyAmenities={
+              Array [
+                "Pool",
+                "Wifi",
+                "Washer",
+                "Kitchen",
+              ]
+            }
+            propertyName="Space Hub A-675"
+            propertyType="Space Station"
+            propertyUrl="/"
+            ratingNumber={4.7}
+          >
+            <div />
+          </PropertySearchResult>
+        </div>
+      </FlexContainer>
+    </div>
+  </div>
+</PropertySearchResultList>
+`;
+
+exports[`<PropertySearchResultList /> render if \`isUserOnMobile\` === true should return the right structure 1`] = `
+<PropertySearchResultList
+  dropdownLabel={null}
+  dropdownOnChange={[Function]}
+  dropdownOptions={null}
+  isShowingPlaceholder={false}
+  isUserOnMobile={true}
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
@@ -222,6 +439,7 @@ exports[`<PropertySearchResultList /> render if \`props.activePage\` is defined 
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={false}
+  isUserOnMobile={false}
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
@@ -446,6 +664,7 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
   }
   dropdownValue="price"
   isShowingPlaceholder={false}
+  isUserOnMobile={false}
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
@@ -837,6 +1056,7 @@ exports[`<PropertySearchResultList /> render if \`props.isShowingPlaceholder\` i
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={true}
+  isUserOnMobile={false}
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
@@ -1095,6 +1315,7 @@ exports[`<PropertySearchResultList /> render if \`props.messageText\` is passed 
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={false}
+  isUserOnMobile={false}
   messageButtonOnClick={[Function]}
   messageButtonText="Some button text"
   messageText="Some message text"
@@ -1202,7 +1423,9 @@ exports[`<PropertySearchResultList /> render if \`props.messageText\` is passed 
           </Heading>
         </div>
       </FlexContainer>
-      <Message>
+      <Message
+        isTextAlignedCenter={false}
+      >
         <Message
           className="padded"
         >
@@ -1234,6 +1457,7 @@ exports[`<PropertySearchResultList /> render if \`props.messageText\` is passed 
                 Some message text
                 <Link
                   href={null}
+                  isFluid={false}
                   isPositionedRight={false}
                   onClick={[Function]}
                   willOpenInNewTab={false}
@@ -1242,6 +1466,7 @@ exports[`<PropertySearchResultList /> render if \`props.messageText\` is passed 
                     as={null}
                     basic={true}
                     floated="left"
+                    fluid={false}
                     href={null}
                     onClick={[Function]}
                     target="_self"
@@ -1357,6 +1582,7 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={false}
+  isUserOnMobile={false}
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
@@ -2450,6 +2676,7 @@ exports[`<PropertySearchResultList /> render if \`props.resultsCountText\` is pa
   dropdownOnChange={[Function]}
   dropdownOptions={null}
   isShowingPlaceholder={false}
+  isUserOnMobile={false}
   messageButtonOnClick={[Function]}
   messageButtonText={null}
   messageText={null}
