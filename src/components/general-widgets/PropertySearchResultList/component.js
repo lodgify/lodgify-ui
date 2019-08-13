@@ -1,4 +1,4 @@
-import React, { Fragment, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import { Message } from 'elements/Message';
@@ -76,26 +76,24 @@ class Component extends PureComponent {
     return (
       <div className="property-search-result-list">
         <div className="result-list-container">
-          {isShowingPlaceholder ? (
-            <Fragment>
-              <Divider size="small" />
-              <TextPlaceholder length="short" />
-              <Divider size="small" />
-            </Fragment>
-          ) : (
-            <FlexContainer alignItems="center" justifyContent="space-between">
+          <FlexContainer alignItems="center" justifyContent="space-between">
+            {isShowingPlaceholder ? (
+              <FlexContainer>
+                <TextPlaceholder length="short" />
+              </FlexContainer>
+            ) : (
               <Heading size="small">{`${length} ${resultsCountText}`}</Heading>
-              {!!size(dropdownOptions) && (
-                <Dropdown
-                  isCompact
-                  label={dropdownLabel}
-                  onChange={dropdownOnChange}
-                  options={dropdownOptions}
-                  value={dropdownValue}
-                />
-              )}
-            </FlexContainer>
-          )}
+            )}
+            {!!size(dropdownOptions) && (
+              <Dropdown
+                isCompact
+                label={dropdownLabel}
+                onChange={dropdownOnChange}
+                options={dropdownOptions}
+                value={dropdownValue}
+              />
+            )}
+          </FlexContainer>
           {messageText ? (
             <Message isTextAlignedCenter={isUserOnMobile}>
               <FlexContainer
