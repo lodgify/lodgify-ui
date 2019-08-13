@@ -8,15 +8,17 @@ import { Button } from 'semantic-ui-react';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   children,
-  isPositionedRight,
-  willOpenInNewTab,
   href,
+  isFluid,
+  isPositionedRight,
   onClick,
+  willOpenInNewTab,
 }) => (
   <Button
     as={href && 'a'}
     basic
     floated={isPositionedRight ? 'right' : 'left'}
+    fluid={isFluid}
     href={href}
     onClick={onClick}
     target={willOpenInNewTab ? '_blank' : '_self'}
@@ -30,6 +32,7 @@ Component.displayName = 'Link';
 
 Component.defaultProps = {
   href: null,
+  isFluid: false,
   isPositionedRight: false,
   onClick: Function.prototype,
   willOpenInNewTab: false,
@@ -40,6 +43,8 @@ Component.propTypes = {
   children: PropTypes.node.isRequired,
   /** The URL the link refers to. */
   href: PropTypes.string,
+  /** Does the link take up the width of it's container. */
+  isFluid: PropTypes.bool,
   /** Is the link positioned on the right hand side of its container. */
   isPositionedRight: PropTypes.bool,
   /** The function to call when the link is clicked.
