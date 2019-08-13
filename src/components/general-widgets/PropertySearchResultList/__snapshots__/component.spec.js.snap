@@ -899,44 +899,62 @@ exports[`<PropertySearchResultList /> render if \`props.isShowingPlaceholder\` i
     <div
       className="result-list-container"
     >
-      <Divider
-        className=""
-        hasLine={false}
-        size="small"
-      >
-        <Divider
-          className="is-size-small"
-          hidden={true}
-          section={false}
-        >
-          <div
-            className="ui hidden divider is-size-small"
-          />
-        </Divider>
-      </Divider>
-      <TextPlaceholder
-        isFluid={true}
-        length="short"
+      <FlexContainer
+        alignContent={null}
+        alignItems="center"
+        flexDirection={null}
+        flexWrap={null}
+        justifyContent="space-between"
       >
         <div
-          className="placeholder text short fluid"
-        />
-      </TextPlaceholder>
-      <Divider
-        className=""
-        hasLine={false}
-        size="small"
-      >
-        <Divider
-          className="is-size-small"
-          hidden={true}
-          section={false}
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": null,
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "space-between",
+            }
+          }
         >
-          <div
-            className="ui hidden divider is-size-small"
-          />
-        </Divider>
-      </Divider>
+          <FlexContainer
+            alignContent={null}
+            alignItems={null}
+            flexDirection={null}
+            flexWrap={null}
+            justifyContent={null}
+          >
+            <div
+              className="flex-container"
+              style={
+                Object {
+                  "alignContent": null,
+                  "alignItems": null,
+                  "display": "flex",
+                  "flexDirection": null,
+                  "flexGrow": "1",
+                  "flexWrap": null,
+                  "height": "100%",
+                  "justifyContent": null,
+                }
+              }
+            >
+              <TextPlaceholder
+                isFluid={true}
+                length="short"
+              >
+                <div
+                  className="placeholder text short fluid"
+                />
+              </TextPlaceholder>
+            </div>
+          </FlexContainer>
+        </div>
+      </FlexContainer>
       <Divider
         className=""
         hasLine={false}
