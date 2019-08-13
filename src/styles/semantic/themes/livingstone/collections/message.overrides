@@ -20,6 +20,9 @@
 /* Default font size */
 
 /* Paragraph */
+.ui.message p {
+  margin: 0;
+}
 
 /* List */
 
@@ -72,6 +75,11 @@
 /*--------------
      Types
 ---------------*/
+
+/* Text aligned center */
+.ui.message.text-aligned-center {
+  text-align: center;
+}
 
 /* Positive */
 

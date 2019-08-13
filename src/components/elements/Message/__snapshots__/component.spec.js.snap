@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Message /> should render the right structure 1`] = `
-<Message>
+<Message
+  isTextAlignedCenter={false}
+>
   <Message
     className="padded"
   >
