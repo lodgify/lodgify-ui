@@ -20,6 +20,14 @@ describe('SummaryCard', () => {
     expect(actual).toMatchSnapshot();
   });
 
+  describe('if `ratingNumber` is falsy', () => {
+    it('should return the right structure', () => {
+      const actual = getSummaryCard({ ratingNumber: 0 });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   describe('handleClick', () => {
     it('should call `props.onClick` with the right arguments', () => {
       const name = 'Argent';
