@@ -28,5 +28,18 @@
     .ui.message {
       margin-right: @resultListContainerMarginRight;
     }
+
+    @supports (scrollbar-width: none) {
+      scrollbar-width: none;
+
+      & > .flex-container:first-child,
+      .ui.message {
+        margin-right: auto;
+      }
+
+      & > .flex-container:first-child {
+        height: auto !important;
+      }
+    }
   }
 }
