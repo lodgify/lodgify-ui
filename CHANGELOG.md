@@ -1,3 +1,30 @@
+# [1.237.0](https://github.com/lodgify/lodgify-ui/compare/v1.236.2...v1.237.0) (2019-08-14)
+
+
+### Bug Fixes
+
+* **Button:** focus and active states give readable feedback ([a8f3e16](https://github.com/lodgify/lodgify-ui/commit/a8f3e16))
+* **Counter:** add active state ([6bd054e](https://github.com/lodgify/lodgify-ui/commit/6bd054e))
+* **FilterTrigger:** remove background color ([a7253ba](https://github.com/lodgify/lodgify-ui/commit/a7253ba))
+* **FilterTrigger:** remove padding from trigger without selected filters ([3927cc1](https://github.com/lodgify/lodgify-ui/commit/3927cc1))
+* **jest.framework-setup:** ignore react deprecated lifecycle warnings ([c105552](https://github.com/lodgify/lodgify-ui/commit/c105552))
+* **Pagination:** next page button icon is centered ([b63adfd](https://github.com/lodgify/lodgify-ui/commit/b63adfd))
+* **PriceLabel:** content color contrasts with background ([4f4280e](https://github.com/lodgify/lodgify-ui/commit/4f4280e))
+* **PropertySearchResult:** image height doesnt change without amenities ([5233018](https://github.com/lodgify/lodgify-ui/commit/5233018))
+* **PropertySearchResult:** reduce header font size ([352ca04](https://github.com/lodgify/lodgify-ui/commit/352ca04))
+* **PropertySearchResultLst:** placeholder shows sort dropdown ([cfe440c](https://github.com/lodgify/lodgify-ui/commit/cfe440c))
+* **SummaryCard:** header is elliptical at width of card ([7fbbd7a](https://github.com/lodgify/lodgify-ui/commit/7fbbd7a))
+* **SummaryCard:** hide rating when there is none ([debd375](https://github.com/lodgify/lodgify-ui/commit/debd375))
+
+
+### Features
+
+* **Link:** expose isFluid props ([a91f320](https://github.com/lodgify/lodgify-ui/commit/a91f320))
+* **Message:** expose isTextAlignedCenter prop ([9104285](https://github.com/lodgify/lodgify-ui/commit/9104285))
+* **PropertySearchResultList:** add responsive layout for message ([50faaa5](https://github.com/lodgify/lodgify-ui/commit/50faaa5))
+* **PropertySearchResultList:** dropdown does not overflow out of container bounds ([56cbcc1](https://github.com/lodgify/lodgify-ui/commit/56cbcc1))
+* **PropertySearchResultList:** result count and dropdown scroll with results ([fb5e9bd](https://github.com/lodgify/lodgify-ui/commit/fb5e9bd))
+
 ## [1.236.2](https://github.com/lodgify/lodgify-ui/compare/v1.236.1...v1.236.2) (2019-08-08)
 
 
