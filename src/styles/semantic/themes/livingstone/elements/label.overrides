@@ -89,7 +89,6 @@
     align-items: center;
     position: relative;
     min-width: @priceLabelMinWidth;
-    max-width: @priceLabelMaxWidth;
     word-break: break-word;
     transition: @priceLabelTransitionOnHover;
 
