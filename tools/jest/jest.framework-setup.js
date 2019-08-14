@@ -18,6 +18,8 @@ const consoleWarn = console.warn;
 const consoleError = console.error;
 
 const elevateLogToError = (...args) => {
+  // Remove this grim ting https://github.com/Semantic-Org/Semantic-UI-React/issues/3741
+  if (args[0].includes('UNSAFE_')) return;
   throw new Error(
     util.format.apply(this, args).replace(/^Error: (?:Warning: )?/, '')
   );
