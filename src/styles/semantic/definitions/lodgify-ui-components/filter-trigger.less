@@ -32,18 +32,18 @@
     }
   }
 
-  button:first-of-type {
-    padding: @filterTriggerFilterButtonPadding;
-    border-radius: @filterTriggerFilterButtonBorderRadius;
-  }
-
-  button:last-of-type {
-    border-radius: @filterTriggerClearFiltersButtonBorderRadius;
-  }
-
   &.has-filter {
 
     button {
+
+      &:first-of-type {
+        padding: @filterTriggerFilterButtonPadding;
+        border-radius: @filterTriggerFilterButtonBorderRadius;
+      }
+
+      &:last-of-type {
+        border-radius: @filterTriggerClearFiltersButtonBorderRadius;
+      }
 
       & > i.icon p {
         font-weight: normal;
