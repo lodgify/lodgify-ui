@@ -103,7 +103,7 @@ Component.propTypes = {
   /** Is the price label displayed as a pointer. */
   isPointing: PropTypes.bool,
   /** The name for the price label. */
-  name: PropTypes.string,
+  name: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
    * A function called when the active state of the price label changes.
    * @param {string}  name
