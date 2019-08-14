@@ -1,3 +1,10 @@
+## [1.238.1](https://github.com/lodgify/lodgify-ui/compare/v1.238.0...v1.238.1) (2019-08-14)
+
+
+### Bug Fixes
+
+* **PropertySearchResultLst:** add support for firefox ([a26514d](https://github.com/lodgify/lodgify-ui/commit/a26514d))
+
 # [1.238.0](https://github.com/lodgify/lodgify-ui/compare/v1.237.0...v1.238.0) (2019-08-14)
 
 
