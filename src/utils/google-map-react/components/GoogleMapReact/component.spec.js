@@ -19,6 +19,7 @@ import { adaptENSWtoNESW } from './utils/adaptENSWtoNESW';
 import { getCenterFromBounds } from './utils/getCenterFromBounds';
 import { getCenter } from './utils/getCenter';
 import { adaptNESWtoENSW } from './utils/adaptNESWtoENSW';
+import { getZoomedState } from './utils/getZoomedState';
 import { Component as GoogleMapReact } from './component';
 
 const props = {
@@ -74,76 +75,73 @@ describe('<GoogleMapReacts />', () => {
   });
 
   describe('componentDidUpdate', () => {
-    describe('if `state.bounds` has not changed', () => {
+    describe('if `state.areBoundsChanged` is false', () => {
       it('should not call `props.onBoundsChange`', () => {
         const onBoundsChange = jest.fn();
         const wrapper = getGoogleMapReact({ onBoundsChange });
-        const bounds = 'some bounds';
 
-        wrapper.setState({ bounds });
+        wrapper.setState({ areBoundsChanged: false });
         onBoundsChange.mockClear();
-        wrapper.instance().componentDidUpdate({ bounds: null }, { bounds });
+        wrapper.instance().componentDidUpdate({ bounds: null });
 
         expect(onBoundsChange).not.toHaveBeenCalled();
       });
     });
 
-    describe('if `state.bounds` has changed', () => {
+    describe('if `state.areBoundsChanged` is true', () => {
       it('should call `props.onBoundsChange` with the right arguments', () => {
         const onBoundsChange = jest.fn();
         const wrapper = getGoogleMapReact({ onBoundsChange });
         const bounds = 'some bounds';
         const ADAPTED_BOUNDS = 'adapted bounds';
 
-        wrapper.instance().setState({ bounds });
         adaptNESWtoENSW.mockClear();
         adaptNESWtoENSW.mockReturnValueOnce(ADAPTED_BOUNDS);
-        wrapper
-          .instance()
-          .componentDidUpdate(
-            { bounds: null },
-            { bounds: 'some other bounds' }
-          );
+        wrapper.instance().setState({ areBoundsChanged: true, bounds });
+        wrapper.instance().componentDidUpdate({ bounds: null });
 
         expect(adaptNESWtoENSW).toHaveBeenCalledWith(bounds);
         expect(onBoundsChange).toHaveBeenCalledWith(ADAPTED_BOUNDS, false);
       });
 
-      describe('if `state.isDragged` is `false`', () => {
-        it('should not call `setState`', () => {
-          const wrapper = getGoogleMapReact();
+      describe('if either `state.isZoomed` or `state.isDragged` is true', () => {
+        it('should call `props.onBoundsChange` with the right arguments', () => {
+          const testCases = [[true, false], [false, true]];
 
-          wrapper.instance().setState({ bounds: 'some bounds' });
-          wrapper.instance().setState = jest.fn();
-          wrapper
-            .instance()
-            .componentDidUpdate(
-              { bounds: null },
-              { bounds: 'some other bounds' }
-            );
+          testCases.forEach(([isZoomed, isDragged]) => {
+            const onBoundsChange = jest.fn();
+            const wrapper = getGoogleMapReact({ onBoundsChange });
+            const bounds = 'some bounds';
+            const ADAPTED_BOUNDS = 'adapted bounds';
 
-          expect(wrapper.instance().setState).not.toHaveBeenCalled();
+            adaptNESWtoENSW.mockClear();
+            adaptNESWtoENSW.mockReturnValueOnce(ADAPTED_BOUNDS);
+            wrapper.instance().setState({
+              areBoundsChanged: true,
+              bounds,
+              isZoomed,
+              isDragged,
+            });
+            wrapper.instance().componentDidUpdate({ bounds: null });
+
+            expect(adaptNESWtoENSW).toHaveBeenCalledWith(bounds);
+            expect(onBoundsChange).toHaveBeenCalledWith(ADAPTED_BOUNDS, true);
+          });
         });
       });
 
-      describe('if `state.isDragged` is `true`', () => {
-        it('should call `setState` with the right arguments', () => {
-          const wrapper = getGoogleMapReact();
+      it('should call `setState` with the right arguments', () => {
+        const wrapper = getGoogleMapReact();
 
-          wrapper.instance().setState = jest.fn(wrapper.instance().setState);
-          wrapper
-            .instance()
-            .setState({ bounds: 'some bounds', isDragged: true });
-          wrapper
-            .instance()
-            .componentDidUpdate(
-              { bounds: null },
-              { bounds: 'some other bounds' }
-            );
+        wrapper.instance().setState = jest.fn(wrapper.instance().setState);
+        wrapper.instance().setState({ areBoundsChanged: true });
+        wrapper.instance().componentDidUpdate({ bounds: null });
 
-          expect(wrapper.instance().setState).toHaveBeenCalledWith({
-            isDragged: false,
-          });
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          areBoundsChanged: false,
+          areBoundsChangedProgramatically: false,
+          isDragged: false,
+          isZoomed: false,
         });
       });
     });
@@ -200,8 +198,9 @@ describe('<GoogleMapReacts />', () => {
         expect(adaptENSWtoNESW).toHaveBeenCalledWith(bounds);
         expect(fitBounds).toHaveBeenCalledWith(ADAPTED_BOUNDS, size);
         expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          center,
+          areBoundsChangedProgramatically: true,
           bounds: newBounds,
+          center,
           zoom,
         });
       });
@@ -238,6 +237,7 @@ describe('<GoogleMapReacts />', () => {
         wrapper.instance().handleChange({ bounds, center, size, zoom });
 
         expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          areBoundsChanged: true,
           bounds,
           center,
           size,
@@ -268,6 +268,17 @@ describe('<GoogleMapReacts />', () => {
       expect(wrapper.instance().setState).toHaveBeenCalledWith({
         isDragged: true,
       });
+    });
+  });
+
+  describe('handleZoomAnimationEnd', () => {
+    it('should call `setState` with the right arguments', () => {
+      const wrapper = getGoogleMapReact();
+
+      wrapper.instance().setState = jest.fn();
+      wrapper.instance().handleZoomAnimationEnd({});
+
+      expect(wrapper.instance().setState).toHaveBeenCalledWith(getZoomedState);
     });
   });
 

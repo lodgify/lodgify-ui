@@ -11,6 +11,7 @@ exports[`<GoogleMapReacts /> render if \`getCenter\` returns a value if \`props.
   center="some center"
   onChange={[Function]}
   onDrag={[Function]}
+  onZoomAnimationEnd={[Function]}
   options={
     Object {
       "some": "options ",
@@ -42,6 +43,7 @@ exports[`<GoogleMapReacts /> render if \`getCenter\` returns a value if \`props.
   center="some center"
   onChange={[Function]}
   onDrag={[Function]}
+  onZoomAnimationEnd={[Function]}
   options={
     Object {
       "some": "options ",
@@ -73,6 +75,7 @@ exports[`<GoogleMapReacts /> render if \`getCenter\` returns a value if \`props.
   center="some center"
   onChange={[Function]}
   onDrag={[Function]}
+  onZoomAnimationEnd={[Function]}
   options={
     Object {
       "some": "options ",
@@ -104,6 +107,7 @@ exports[`<GoogleMapReacts /> render if \`getCenter\` returns a value should rend
   center="some center"
   onChange={[Function]}
   onDrag={[Function]}
+  onZoomAnimationEnd={[Function]}
   options={
     Object {
       "some": "options ",

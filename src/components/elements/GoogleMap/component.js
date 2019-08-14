@@ -185,7 +185,7 @@ Component.propTypes = {
    * @param {number}  bounds.north
    * @param {number}  bounds.south
    * @param {number}  bounds.west
-   * @param {boolean} isDragged
+   * @param {boolean} isUserAction
    */
   onBoundsChange: PropTypes.func,
 };

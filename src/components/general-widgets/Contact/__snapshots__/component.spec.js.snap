@@ -773,7 +773,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   openDirection="down"
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
-                                  withPortal={true}
+                                  withPortal={false}
                                 >
                                   <div />
                                 </DateRangePicker>
@@ -1679,7 +1679,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   openDirection="down"
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
-                                  withPortal={true}
+                                  withPortal={false}
                                 >
                                   <div />
                                 </DateRangePicker>
@@ -2712,7 +2712,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   openDirection="down"
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
-                                  withPortal={true}
+                                  withPortal={false}
                                 >
                                   <div />
                                 </DateRangePicker>
@@ -3920,7 +3920,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   openDirection="down"
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
-                                  withPortal={true}
+                                  withPortal={false}
                                 >
                                   <div />
                                 </DateRangePicker>

@@ -19,12 +19,16 @@ import { adaptENSWtoNESW } from './utils/adaptENSWtoNESW';
 import { getCenterFromBounds } from './utils/getCenterFromBounds';
 import { adaptNESWtoENSW } from './utils/adaptNESWtoENSW';
 import { getCenter } from './utils/getCenter';
+import { getZoomedState } from './utils/getZoomedState';
 
 export class Component extends PureComponent {
   state = {
+    areBoundsChanged: false,
+    areBoundsChangedProgramatically: false,
     bounds: null,
     center: null,
     isDragged: false,
+    isZoomed: false,
     size: null,
     zoom: DEFAULT_ZOOM,
   };
@@ -40,16 +44,18 @@ export class Component extends PureComponent {
     });
   };
 
-  componentDidUpdate = (
-    { bounds: previousControlledBounds },
-    { bounds: previousBounds }
-  ) => {
-    const { bounds, isDragged, size } = this.state;
+  componentDidUpdate = ({ bounds: previousControlledBounds }) => {
+    const { areBoundsChanged, bounds, isDragged, isZoomed, size } = this.state;
     const { bounds: controlledBounds, onBoundsChange } = this.props;
 
-    if (!isEqual(previousBounds, bounds)) {
-      onBoundsChange(adaptNESWtoENSW(bounds), isDragged);
-      isDragged && this.setState({ isDragged: false });
+    if (areBoundsChanged) {
+      onBoundsChange(adaptNESWtoENSW(bounds), isZoomed || isDragged);
+      this.setState({
+        areBoundsChanged: false,
+        areBoundsChangedProgramatically: false,
+        isDragged: false,
+        isZoomed: false,
+      });
     }
 
     if (isEqual(previousControlledBounds, controlledBounds)) return;
@@ -59,17 +65,24 @@ export class Component extends PureComponent {
       size
     );
 
-    this.setState({ bounds: newBounds, center, zoom });
+    this.setState({
+      areBoundsChangedProgramatically: true,
+      bounds: newBounds,
+      center,
+      zoom,
+    });
   };
 
   handleChange = ({ bounds, center, size, zoom }) => {
     if (!this.props.bounds) return;
-    this.setState({ bounds, center, size, zoom });
+    this.setState({ areBoundsChanged: true, bounds, center, size, zoom });
   };
 
   handleDrag = debounce(() => {
     this.setState({ isDragged: true });
   });
+
+  handleZoomAnimationEnd = () => this.setState(getZoomedState);
 
   render = () => {
     const {
@@ -96,6 +109,7 @@ export class Component extends PureComponent {
         center={center}
         onChange={this.handleChange}
         onDrag={this.handleDrag}
+        onZoomAnimationEnd={this.handleZoomAnimationEnd}
         options={getMapOptions(hasDefaultStyles)}
         ref={this.createRef}
         zoom={zoom}
@@ -172,7 +186,7 @@ Component.propTypes = {
    * @param {number}  bounds.north
    * @param {number}  bounds.south
    * @param {number}  bounds.west
-   * @param {boolean} isDragged
+   * @param {boolean} isUserAction
    */
   onBoundsChange: PropTypes.func.isRequired,
 };

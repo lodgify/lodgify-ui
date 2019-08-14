@@ -56,7 +56,7 @@ Component.propTypes = {
   /** Is the marker in an active state. */
   isActive: PropTypes.bool,
   /** The name for the marker. */
-  name: PropTypes.string,
+  name: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
    * A function called when the active state of the marker changes.
    * @param {string}  name

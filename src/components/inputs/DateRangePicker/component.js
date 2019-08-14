@@ -37,7 +37,7 @@ class Component extends PureComponent {
   componentDidMount = () => {
     moment.locale(this.props.localeCode);
     this.handleHeightChange();
-    global.addEventListener('resize', debounce(this.handleHeightChange, 150));
+    global.addEventListener('resize', this.handleHeightChange);
   };
 
   componentDidUpdate = (previousProps, previousState) => {
@@ -53,6 +53,10 @@ class Component extends PureComponent {
     if (isFocusControlled) return;
 
     previousFocusedInput !== focusedInput && onFocusChange(focusedInput);
+  };
+
+  componentWillUnmount = () => {
+    global.removeEventListener('resize', this.handleHeightChange);
   };
 
   createRef = ref => {
@@ -71,7 +75,7 @@ class Component extends PureComponent {
       : this.setState({ focusedInput });
   };
 
-  handleHeightChange = () => {
+  handleHeightChange = debounce(() => {
     const windowHeight = getWindowHeight();
 
     if (windowHeight !== this.state.windowHeight) {
@@ -79,7 +83,7 @@ class Component extends PureComponent {
         windowHeight,
       });
     }
-  };
+  });
 
   render() {
     const {

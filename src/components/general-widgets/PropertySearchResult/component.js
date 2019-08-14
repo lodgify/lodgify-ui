@@ -203,7 +203,7 @@ Component.propTypes = {
   /** Is the component showing placeholders to reserve space for content which will appear. */
   isShowingPlaceholder: PropTypes.bool,
   /** The name for the property search result. */
-  name: PropTypes.string,
+  name: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** The text describing the pricing period. */
   /**
    * A function called when the active state of the property search result changes.
