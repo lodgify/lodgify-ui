@@ -1,3 +1,18 @@
+# [1.238.0](https://github.com/lodgify/lodgify-ui/compare/v1.237.0...v1.238.0) (2019-08-14)
+
+
+### Bug Fixes
+
+* **DateRangePicker:** remove event listener on unmount ([823ed03](https://github.com/lodgify/lodgify-ui/commit/823ed03))
+* **Marker/PriceLabel/PropertySearchResult:** accept number as props.name ([8fe5d61](https://github.com/lodgify/lodgify-ui/commit/8fe5d61))
+* **PriceLabel:** remove max width ([e126b25](https://github.com/lodgify/lodgify-ui/commit/e126b25))
+
+
+### Features
+
+* **GoogleMap:** change parameter name for props.onBoundsChange ([615099d](https://github.com/lodgify/lodgify-ui/commit/615099d))
+* **GoogleMapReact:** handle muser zoom events ([2be41ea](https://github.com/lodgify/lodgify-ui/commit/2be41ea))
+
 # [1.237.0](https://github.com/lodgify/lodgify-ui/compare/v1.236.2...v1.237.0) (2019-08-14)
 
 
