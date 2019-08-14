@@ -43,6 +43,7 @@ const getWrappedDateRangePicker = props => {
   return shallow(<Child {...props} />);
 };
 
+debounce.mockImplementation(func => func);
 uniqid.mockImplementation(value => value);
 
 describe('<DateRangePicker />', () => {
@@ -73,23 +74,14 @@ describe('<DateRangePicker />', () => {
       expect(wrapper.instance().handleHeightChange).toHaveBeenCalled();
     });
 
-    it('should call `debounce` with the right arguments', () => {
-      const wrapper = getWrappedDateRangePicker();
-      const handler = wrapper.instance().handleHeightChange;
-
-      expect(debounce).toHaveBeenCalledWith(handler, 150);
-    });
-
-    it('should bind handleHeightChange to global resize event', () => {
+    it('should call `global.addEventListener` with the right arguments', () => {
       global.addEventListener = jest.fn();
       const wrapper = getWrappedDateRangePicker();
-
-      debounce.mockReturnValueOnce(wrapper.instance().handleHeightChange, 150);
 
       wrapper.instance().componentDidMount();
       expect(global.addEventListener).toHaveBeenCalledWith(
         'resize',
-        debounce()
+        wrapper.instance().handleHeightChange
       );
     });
   });
@@ -215,6 +207,19 @@ describe('<DateRangePicker />', () => {
     });
   });
 
+  describe('`componentWillUnmount`', () => {
+    it('should call `global.removeEventListener` with the right arguments', () => {
+      global.removeEventListener = jest.fn();
+      const wrapper = getWrappedDateRangePicker();
+
+      wrapper.instance().componentWillUnmount();
+      expect(global.removeEventListener).toHaveBeenCalledWith(
+        'resize',
+        wrapper.instance().handleHeightChange
+      );
+    });
+  });
+
   describe('`handleFocusChange`', () => {
     it('should call `isDisplayedAsModal` with the right arguments', () => {
       const wrapper = getWrappedDateRangePicker();
@@ -313,7 +318,18 @@ describe('<DateRangePicker />', () => {
     });
   });
 
-  describe('Interaction: onHeightChange', () => {
+  describe('handleHeightChange', () => {
+    it('should be debounced', () => {
+      const debouncedFunction = () => {};
+
+      debounce.mockReturnValueOnce(debouncedFunction);
+
+      const wrapper = getWrappedDateRangePicker();
+      const actual = wrapper.instance().handleHeightChange;
+
+      expect(actual).toBe(debouncedFunction);
+    });
+
     describe('if window height has changed', () => {
       it('should persist the value in component state', () => {
         const dateRangePicker = getWrappedDateRangePicker();
