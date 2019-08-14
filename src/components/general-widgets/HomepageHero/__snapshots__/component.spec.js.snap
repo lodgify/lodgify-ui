@@ -873,7 +873,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             openDirection="up"
                                                             startDate={null}
                                                             startDatePlaceholderText="Check in"
-                                                            withPortal={true}
+                                                            withPortal={false}
                                                           >
                                                             <div />
                                                           </DateRangePicker>

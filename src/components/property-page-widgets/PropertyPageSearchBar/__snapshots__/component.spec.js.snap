@@ -400,7 +400,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             openDirection="up"
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
-                                            withPortal={true}
+                                            withPortal={false}
                                           >
                                             <div />
                                           </DateRangePicker>
@@ -1054,7 +1054,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             openDirection="up"
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
-                                            withPortal={true}
+                                            withPortal={false}
                                           >
                                             <div />
                                           </DateRangePicker>
@@ -1980,7 +1980,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             openDirection="up"
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
-                                            withPortal={true}
+                                            withPortal={false}
                                           >
                                             <div />
                                           </DateRangePicker>
@@ -2793,7 +2793,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             openDirection="up"
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
-                                            withPortal={true}
+                                            withPortal={false}
                                           >
                                             <div />
                                           </DateRangePicker>
