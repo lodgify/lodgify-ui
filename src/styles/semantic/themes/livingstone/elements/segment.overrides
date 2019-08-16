@@ -370,4 +370,8 @@
       }
     }
   }
+
+  &.is-checkbox-input-segment > .flex-container > .grid {
+    width: 100%;
+  }
 }
