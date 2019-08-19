@@ -1,3 +1,12 @@
+## [1.238.2](https://github.com/lodgify/lodgify-ui/compare/v1.238.1...v1.238.2) (2019-08-19)
+
+
+### Bug Fixes
+
+* **Checkbox:** label color is black ([d4872fd](https://github.com/lodgify/lodgify-ui/commit/d4872fd))
+* **CheckboxInputSegment:** grid fills its container ([476ccae](https://github.com/lodgify/lodgify-ui/commit/476ccae))
+* **ToggleInputSegment:** control toggle values and expose on change props ([56c6670](https://github.com/lodgify/lodgify-ui/commit/56c6670))
+
 ## [1.238.1](https://github.com/lodgify/lodgify-ui/compare/v1.238.0...v1.238.1) (2019-08-14)
 
 
