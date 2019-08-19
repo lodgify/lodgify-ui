@@ -18,7 +18,7 @@ import { getGridColumns } from './utils/getGridColumns';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({ heading, checkboxes, isUserOnMobile }) => (
-  <Segment className="is-input-segment" vertical>
+  <Segment className="is-input-segment is-checkbox-input-segment" vertical>
     <FlexContainer
       alignItems="baseline"
       flexDirection="column"

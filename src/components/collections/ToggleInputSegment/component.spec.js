@@ -1,11 +1,16 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { Component } from './component';
 
+const heading = '👤';
+
 const getToggleInputSegment = props =>
-  mount(<Component heading="👤" {...props} />);
+  mount(<Component heading={heading} {...props} />);
+
+const getShallowToggleInputSegment = props =>
+  shallow(<Component heading={heading} {...props} />);
 
 describe('Component', () => {
   describe('by default', () => {
@@ -21,6 +26,77 @@ describe('Component', () => {
       const actual = getToggleInputSegment({ description: '🐷' });
 
       expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('componentDidUpdate', () => {
+    describe('if `this.props.isToggleChecked` has changed', () => {
+      it('should call `setState` and `props.onChange` with the right arguments', () => {
+        const name = 'some name';
+        const isToggleChecked = true;
+        const onChange = jest.fn();
+        const setState = jest.fn();
+        const props = {
+          name,
+          onChange,
+          isToggleChecked,
+        };
+        const wrapper = getShallowToggleInputSegment(props);
+
+        wrapper.instance().setState = setState;
+        wrapper.instance().componentDidUpdate({ isToggleChecked: false }, {});
+
+        expect(setState).toHaveBeenCalledWith({
+          isToggleChecked: props.isToggleChecked,
+        });
+        expect(onChange).toHaveBeenCalledWith(name, isToggleChecked);
+      });
+    });
+
+    describe('if `this.state.isToggleChecked` has changed', () => {
+      it('should call `onChange` with the right arguments', () => {
+        const name = 'some name';
+        const onChange = jest.fn();
+        const props = {
+          name,
+          onChange,
+        };
+        const wrapper = getShallowToggleInputSegment(props);
+
+        wrapper
+          .instance()
+          .componentDidUpdate(
+            { isToggleChecked: false },
+            { isToggleChecked: true }
+          );
+
+        expect(onChange).toHaveBeenCalledWith(
+          name,
+          wrapper.instance().state.isToggleChecked
+        );
+      });
+    });
+
+    describe('if neither `this.props.isToggleChecked` or `this.state.isToggleChecked` have changed', () => {
+      it('should not call `props.onChange` or `setState`', () => {
+        const onChange = jest.fn();
+        const setState = jest.fn();
+
+        const wrapper = getShallowToggleInputSegment({
+          onChange,
+        });
+
+        wrapper.instance().setState = setState;
+        wrapper
+          .instance()
+          .componentDidUpdate(
+            { isToggleChecked: false },
+            { isToggleChecked: false }
+          );
+
+        expect(onChange).not.toHaveBeenCalled();
+        expect(setState).not.toHaveBeenCalled();
+      });
     });
   });
 
@@ -50,17 +126,18 @@ describe('Component', () => {
     });
 
     it('should call `props.onClick` with the correct arguments', () => {
+      const event = {
+        '🎇': '🎆',
+      };
+
       const wrapper = getToggleInputSegment({
         onClick: jest.fn(),
         isToggleChecked: true,
       });
 
-      wrapper.instance().handleOnClick();
+      wrapper.instance().handleOnClick(event);
 
-      expect(wrapper.instance().props.onClick).toHaveBeenCalledWith(
-        undefined,
-        wrapper.instance().state.isToggleChecked
-      );
+      expect(wrapper.instance().props.onClick).toHaveBeenCalledWith(event);
     });
   });
 

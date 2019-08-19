@@ -5,6 +5,8 @@ exports[`Component by default should render the right structure 1`] = `
   description={null}
   heading="👤"
   isToggleChecked={false}
+  name=""
+  onChange={[Function]}
   onClick={[Function]}
 >
   <Segment
@@ -151,6 +153,8 @@ exports[`Component if \`props.description\` is passed should render the right st
   description="🐷"
   heading="👤"
   isToggleChecked={false}
+  name=""
+  onChange={[Function]}
   onClick={[Function]}
 >
   <Segment

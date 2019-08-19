@@ -13,11 +13,11 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
   isUserOnMobile={false}
 >
   <Segment
-    className="is-input-segment"
+    className="is-input-segment is-checkbox-input-segment"
     vertical={true}
   >
     <div
-      className="ui vertical segment is-input-segment"
+      className="ui vertical segment is-input-segment is-checkbox-input-segment"
     >
       <FlexContainer
         alignContent={null}
@@ -201,11 +201,11 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
   isUserOnMobile={true}
 >
   <Segment
-    className="is-input-segment"
+    className="is-input-segment is-checkbox-input-segment"
     vertical={true}
   >
     <div
-      className="ui vertical segment is-input-segment"
+      className="ui vertical segment is-input-segment is-checkbox-input-segment"
     >
       <FlexContainer
         alignContent={null}

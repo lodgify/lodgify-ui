@@ -16,13 +16,40 @@ export class Component extends PureComponent {
     isToggleChecked: this.props.isToggleChecked || false,
   };
 
+  componentDidUpdate = (
+    { isToggleChecked: previousControlledIsToggleChecked },
+    { isToggleChecked: previousIsToggleChecked }
+  ) => {
+    const { isToggleChecked } = this.state;
+    const {
+      name,
+      isToggleChecked: controlledIsToggleChecked,
+      onChange,
+    } = this.props;
+
+    if (previousControlledIsToggleChecked !== controlledIsToggleChecked) {
+      this.setState({ isToggleChecked: controlledIsToggleChecked });
+      onChange(name, controlledIsToggleChecked);
+      return;
+    }
+
+    if (previousIsToggleChecked !== isToggleChecked) {
+      onChange(name, isToggleChecked);
+    }
+  };
+
   handleOnClick = event => {
     const { isToggleChecked } = this.state;
+    const {
+      isToggleChecked: controlledIsToggleCheckedValue,
+      onClick,
+    } = this.props;
 
     this.setState({
-      isToggleChecked: this.props.isToggleChecked || !isToggleChecked,
+      isToggleChecked: controlledIsToggleCheckedValue || !isToggleChecked,
     });
-    this.props.onClick(event, isToggleChecked);
+
+    onClick(event);
   };
 
   render = () => {
@@ -55,7 +82,9 @@ Component.displayName = 'ToggleInputSegment';
 Component.defaultProps = {
   description: null,
   onClick: Function.prototype,
+  onChange: Function.prototype,
   isToggleChecked: false,
+  name: '',
 };
 
 Component.propTypes = {
@@ -65,10 +94,17 @@ Component.propTypes = {
   heading: PropTypes.string.isRequired,
   /** Is the toggle checked. */
   isToggleChecked: PropTypes.bool,
+  /** The name of the togglable value. */
+  name: PropTypes.string,
+  /**
+   * Event called when the toggle value changes.
+   * @param {string} name
+   * @param {bool}   isToggleChecked
+   */
+  onChange: PropTypes.func,
   /**
    * Event called when the input segment is clicked.
    * @param {Object} event
-   * @param {bool}   isToggleChecked
    */
   onClick: PropTypes.func,
 };
