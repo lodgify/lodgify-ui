@@ -92,12 +92,6 @@
     word-break: break-word;
     transition: @priceLabelTransitionOnHover;
 
-    .ui.label,
-    .ui.label .ui.label {
-      color: @themeActionContrastColorDefault;
-      color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
-    }
-
     &.is-clickable {
       cursor: pointer;
     }
@@ -147,6 +141,18 @@
         transform: translateY(@pointerHoverTranslationY);
         transition: @priceLabelTransitionOnHover;
 
+        .ui.label {
+          color: @themeActionContrastColorDefault;
+          color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+
+          .ui.label,
+          p,
+          h3 {
+            color: @themeActionContrastColorDefault;
+            color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+          }
+        }
+
         .pointer-arrow:after {
           background-color: @themeActionColorDefault;
           background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
@@ -179,22 +185,15 @@
 
       p {
         margin-right: @priceLabelTextMargin;
+        color: @black;
       }
 
       .ui.label {
         padding: @priceLabelPeriodTextPadding;
         background: transparent;
         border-radius: @priceLabelPeriodBorderRadius;
-        color: @themeActionContrastColorDefault;
-        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+        color: @black;
         box-shadow: @priceLabelPeriodBoxShadow;
-      }
-
-      .ui.label,
-      p,
-      h3 {
-        color: @themeActionContrastColorDefault;
-        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
       }
     }
   }
