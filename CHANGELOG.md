@@ -1,3 +1,12 @@
+## [1.238.3](https://github.com/lodgify/lodgify-ui/compare/v1.238.2...v1.238.3) (2019-08-20)
+
+
+### Bug Fixes
+
+* **GoogleMapReact:** reduce button size ([94b46d8](https://github.com/lodgify/lodgify-ui/commit/94b46d8))
+* **Pagination:** page number text contrasts on active ([51e444e](https://github.com/lodgify/lodgify-ui/commit/51e444e))
+* **PriceLabel:** text color contrast on active ([6736e70](https://github.com/lodgify/lodgify-ui/commit/6736e70))
+
 ## [1.238.2](https://github.com/lodgify/lodgify-ui/compare/v1.238.1...v1.238.2) (2019-08-19)
 
 
