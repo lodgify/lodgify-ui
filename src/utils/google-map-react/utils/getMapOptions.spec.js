@@ -1,4 +1,4 @@
-import { customMapStyles, defaultMapStyles } from '../constants';
+import { customMapStyles, defaultMapStyles, CONTROL_SIZE } from '../constants';
 
 import { getMapOptions } from './getMapOptions';
 
@@ -11,6 +11,7 @@ describe('getMapOptions', () => {
         mapTypeControl: false,
         streetViewControl: false,
         styles: customMapStyles,
+        controlSize: CONTROL_SIZE,
       });
     });
   });
@@ -23,6 +24,7 @@ describe('getMapOptions', () => {
         mapTypeControl: false,
         streetViewControl: false,
         styles: defaultMapStyles,
+        controlSize: CONTROL_SIZE,
       });
     });
   });

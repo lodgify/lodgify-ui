@@ -265,6 +265,13 @@
         border-radius: @hasPageNumbersActiveItemBorderRadius;
         background: @themeActionColorDefault !important;
         background: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+        color: @themeActionContrastColorDefault;
+        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+      }
+
+      &.active.item:hover {
+        color: @themeActionContrastColorDefault;
+        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
       }
     }
 
