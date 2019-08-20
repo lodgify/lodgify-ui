@@ -1,5 +1,7 @@
 export const DEFAULT_ZOOM = 13;
 
+export const CONTROL_SIZE = 25;
+
 export const MARKER_IMAGE_SRC =
   'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png';
 export const MARKER_IMAGE_STYLE = { transform: 'translate(-50%, -100%)' };

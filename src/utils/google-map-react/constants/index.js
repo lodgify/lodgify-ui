@@ -7,4 +7,5 @@ export {
   MARKER_IMAGE_STYLE,
   CIRCLE_IMAGE_SRC,
   CIRCLE_IMAGE_STYLE,
+  CONTROL_SIZE,
 } from './constants';
