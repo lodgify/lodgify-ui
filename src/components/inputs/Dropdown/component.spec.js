@@ -1,6 +1,7 @@
 jest.mock('utils/get-is-input-value-reset');
 jest.mock('utils/get-controlled-input-value');
 jest.mock('./utils/getIsOpenAfterChange');
+jest.mock('./utils/isValueValid');
 
 import React from 'react';
 import { shallow } from 'enzyme';
@@ -19,6 +20,7 @@ import { getControlledInputValue } from 'utils/get-controlled-input-value';
 
 import { ErrorMessage } from '../ErrorMessage';
 
+import { isValueValid } from './utils/isValueValid';
 import { getIsOpenAfterChange } from './utils/getIsOpenAfterChange';
 import { Component as Dropdown } from './component';
 
@@ -251,6 +253,61 @@ describe('<Dropdown />', () => {
     });
   });
 
+  describe('`componentDidMount`', () => {
+    describe('if `this.state.value` or `this.props.value` are truthy', () => {
+      it('should call `getControlledInputValue` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+        const PROPS_INITIAL_VALUE = '🌲';
+        const STATE_VALUE = '🌳';
+
+        const wrapper = getDropdown({
+          value: PROPS_VALUE,
+          initialValue: PROPS_INITIAL_VALUE,
+        });
+
+        wrapper.instance().state = {
+          value: STATE_VALUE,
+        };
+        wrapper.instance().componentDidMount();
+
+        expect(getControlledInputValue).toHaveBeenCalledWith(
+          PROPS_VALUE,
+          PROPS_INITIAL_VALUE,
+          STATE_VALUE
+        );
+      });
+
+      it('should call `isValueValid` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+        const PROPS_INITIAL_VALUE = '🌲';
+        const VALUE = '🐑';
+
+        getControlledInputValue.mockReturnValue(VALUE);
+        const wrapper = getDropdown({
+          value: PROPS_VALUE,
+          initialValue: PROPS_INITIAL_VALUE,
+        });
+
+        wrapper.instance().componentDidMount();
+
+        expect(isValueValid).toHaveBeenCalledWith(VALUE);
+      });
+
+      it('should call `this.setState` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+        const wrapper = getDropdown({ value: PROPS_VALUE });
+
+        isValueValid.mockReturnValueOnce(true);
+        wrapper.instance().setState = jest.fn();
+        wrapper.instance().componentDidMount();
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          isDirty: true,
+        });
+      });
+    });
+  });
+
   describe('`componentDidUpdate`', () => {
     it('should call `getIsInputValueReset` with the right arguments', () => {
       const PROPS_VALUE = '🌴';
@@ -296,17 +353,62 @@ describe('<Dropdown />', () => {
       });
     });
 
-    describe('if `getIsInputValueReset` returns `false`', () => {
-      it('should not call `setState`', () => {
-        const wrapper = getDropdown();
+    describe('if `previousProps.value` !== `this.props.value`', () => {
+      const PROPS_VALUE = '🌴';
+      const PROPS_INITIAL_VALUE = '🌲';
+      const PREVIOUS_PROPS_VALUE = '🎄';
+      const STATE_VALUE = '🌳';
+      const CONTROLLED_VALUE = '🐑';
 
-        getIsInputValueReset.mockReturnValueOnce(false);
+      it('should call `getControlledInputValue` with the correct arguments', () => {
+        const wrapper = getDropdown({
+          value: PROPS_VALUE,
+          initialValue: PROPS_INITIAL_VALUE,
+        });
 
+        wrapper.instance().state = {
+          value: STATE_VALUE,
+        };
+        wrapper
+          .instance()
+          .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
+
+        expect(getControlledInputValue).toHaveBeenCalledWith(
+          PROPS_VALUE,
+          PROPS_INITIAL_VALUE,
+          STATE_VALUE
+        );
+      });
+
+      it('should call `some` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+
+        getControlledInputValue.mockReturnValue(CONTROLLED_VALUE);
+        const wrapper = getDropdown({
+          value: PROPS_VALUE,
+        });
+
+        wrapper
+          .instance()
+          .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
+
+        expect(isValueValid).toHaveBeenCalledWith(CONTROLLED_VALUE);
+      });
+
+      it('should call `this.setState` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+        const wrapper = getDropdown({ value: PROPS_VALUE });
+
+        isValueValid.mockReturnValueOnce(false);
         wrapper.instance().setState = jest.fn();
-        wrapper.update();
-        wrapper.instance().componentDidUpdate({}, {});
+        wrapper
+          .instance()
+          .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
 
-        expect(wrapper.instance().setState).not.toHaveBeenCalled();
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          isDirty: false,
+          value: CONTROLLED_VALUE,
+        });
       });
     });
 
@@ -365,6 +467,7 @@ describe('<Dropdown />', () => {
         isBlurred: true,
         isOpen: false,
         value: null,
+        isDirty: false,
       });
     });
   });
@@ -393,16 +496,8 @@ describe('<Dropdown />', () => {
         isBlurred: true,
         isOpen: IS_OPEN,
         value: data.value,
+        isDirty: false,
       });
-    });
-
-    it('should apply the `dirty` class if the value is 0', () => {
-      getControlledInputValue.mockReturnValue(0);
-
-      const wrapper = getDropdown();
-      const actual = wrapper.hasClass('dirty');
-
-      expect(actual).toBe(true);
     });
   });
 
@@ -418,6 +513,7 @@ describe('<Dropdown />', () => {
         isOpen: true,
         isBlurred: false,
         value: null,
+        isDirty: false,
       });
     });
   });
@@ -434,6 +530,7 @@ describe('<Dropdown />', () => {
         isOpen: true,
         isBlurred: false,
         value: null,
+        isDirty: false,
       });
     });
   });
