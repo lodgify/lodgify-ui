@@ -24,9 +24,24 @@ import { isValueValid } from './utils/isValueValid';
 export class Component extends PureComponent {
   state = {
     isBlurred: true,
+    isDirty: false,
     isOpen: false,
     value: this.props.initialValue,
   };
+
+  componentDidMount() {
+    if (!!this.state.value || !!this.props.value) {
+      const value = getControlledInputValue(
+        this.props.value,
+        this.props.initialValue,
+        this.state.value
+      );
+
+      const isDirty = isValueValid(value);
+
+      this.setState({ isDirty });
+    }
+  }
 
   componentDidUpdate(previousProps, previousState) {
     if (getIsInputValueReset(previousProps.value, this.props.value)) {
@@ -36,6 +51,19 @@ export class Component extends PureComponent {
 
     const { value, isBlurred } = this.state;
     const { name, onChange, onBlur, onFocus } = this.props;
+
+    if (previousProps.value !== this.props.value) {
+      const value = getControlledInputValue(
+        this.props.value,
+        this.props.initialValue,
+        this.state.value
+      );
+
+      const isDirty = isValueValid(value);
+
+      this.setState({ isDirty, value });
+      return;
+    }
 
     if (previousState.value !== value) {
       onChange(name, value);
@@ -62,7 +90,7 @@ export class Component extends PureComponent {
   handleBlur = isBlurred => this.setState({ isBlurred, isOpen: false });
 
   render() {
-    const { isOpen } = this.state;
+    const { isOpen, isDirty } = this.state;
     const {
       getOptionsWithSearch,
       error,
@@ -90,7 +118,7 @@ export class Component extends PureComponent {
         className={getClassNames('dropdown-container', {
           'has-images': hasImages,
           'is-compact': isCompact,
-          dirty: isValueValid(value),
+          dirty: isDirty,
           error: error,
           focus: isOpen,
           valid: isValid,
