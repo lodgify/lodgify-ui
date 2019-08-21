@@ -1,3 +1,11 @@
+## [1.238.4](https://github.com/lodgify/lodgify-ui/compare/v1.238.3...v1.238.4) (2019-08-21)
+
+
+### Bug Fixes
+
+* **Dropdown:** dirty state is controlled in state ([1dbf03e](https://github.com/lodgify/lodgify-ui/commit/1dbf03e))
+* **InputController:** dirty state is controlled in state ([055f067](https://github.com/lodgify/lodgify-ui/commit/055f067))
+
 ## [1.238.3](https://github.com/lodgify/lodgify-ui/compare/v1.238.2...v1.238.3) (2019-08-20)
 
 
