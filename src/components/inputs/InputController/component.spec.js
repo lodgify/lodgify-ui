@@ -1,5 +1,6 @@
 jest.mock('utils/get-is-input-value-reset');
 jest.mock('utils/get-controlled-input-value');
+jest.mock('utils/some');
 
 import React from 'react';
 import { shallow, mount } from 'enzyme';
@@ -14,6 +15,7 @@ import {
 import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { getControlledInputValue } from 'utils/get-controlled-input-value';
+import { some } from 'utils/some';
 
 import { Component as InputController } from './component';
 
@@ -24,6 +26,11 @@ const props = {
   onChange: Function.prototype,
 };
 const children = <input />;
+
+const CONTROLLED_VALUE = '🐑';
+const SOME_VALUE = '🔢';
+
+some.mockReturnValue(SOME_VALUE);
 
 const getInputController = extraProps =>
   shallow(
@@ -268,6 +275,59 @@ describe('<InputController />', () => {
     });
   });
 
+  describe('`componentDidMount`', () => {
+    describe('if `this.state.value` or `this.props.value` are truthy', () => {
+      it('should call `getControlledInputValue` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+        const PROPS_INITIAL_VALUE = '🌲';
+        const STATE_VALUE = '🌳';
+
+        const wrapper = getInputController({
+          value: PROPS_VALUE,
+          initialValue: PROPS_INITIAL_VALUE,
+        });
+
+        wrapper.instance().state = {
+          value: STATE_VALUE,
+        };
+        wrapper.instance().componentDidMount();
+
+        expect(getControlledInputValue).toHaveBeenCalledWith(
+          PROPS_VALUE,
+          PROPS_INITIAL_VALUE,
+          STATE_VALUE
+        );
+      });
+
+      it('should call `some` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+        const PROPS_INITIAL_VALUE = '🌲';
+
+        getControlledInputValue.mockReturnValue(CONTROLLED_VALUE);
+        const wrapper = getInputController({
+          value: PROPS_VALUE,
+          initialValue: PROPS_INITIAL_VALUE,
+        });
+
+        wrapper.instance().componentDidMount();
+
+        expect(some).toHaveBeenCalledWith(CONTROLLED_VALUE);
+      });
+
+      it('should call `this.setState` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+        const wrapper = getInputController({ value: PROPS_VALUE });
+
+        wrapper.instance().setState = jest.fn();
+        wrapper.instance().componentDidMount();
+
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          isDirty: SOME_VALUE,
+        });
+      });
+    });
+  });
+
   describe('`componentDidUpdate`', () => {
     it('should call `getIsInputValueReset` with the right arguments', () => {
       const PROPS_VALUE = '🌴';
@@ -313,17 +373,61 @@ describe('<InputController />', () => {
       });
     });
 
-    describe('if `getIsInputValueReset` returns `false`', () => {
-      it('should not call `setState`', () => {
-        const wrapper = getInputController();
+    describe('if `previousProps.value` !== `this.props.value`', () => {
+      const PROPS_VALUE = '🌴';
+      const PROPS_INITIAL_VALUE = '🌲';
+      const PREVIOUS_PROPS_VALUE = '🎄';
+      const STATE_VALUE = '🌳';
 
-        getIsInputValueReset.mockReturnValueOnce(false);
+      it('should call `getControlledInputValue` with the correct arguments', () => {
+        const wrapper = getInputController({
+          value: PROPS_VALUE,
+          initialValue: PROPS_INITIAL_VALUE,
+        });
+
+        wrapper.instance().state = {
+          value: STATE_VALUE,
+        };
+        wrapper
+          .instance()
+          .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
+
+        expect(getControlledInputValue).toHaveBeenCalledWith(
+          PROPS_VALUE,
+          PROPS_INITIAL_VALUE,
+          STATE_VALUE
+        );
+      });
+
+      it('should call `some` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+        const VALUE = '🐑';
+
+        getControlledInputValue.mockReturnValue(VALUE);
+        const wrapper = getInputController({
+          value: PROPS_VALUE,
+        });
+
+        wrapper
+          .instance()
+          .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
+
+        expect(some).toHaveBeenCalledWith(VALUE);
+      });
+
+      it('should call `this.setState` with the correct arguments', () => {
+        const PROPS_VALUE = '🌴';
+        const wrapper = getInputController({ value: PROPS_VALUE });
 
         wrapper.instance().setState = jest.fn();
-        wrapper.update();
-        wrapper.instance().componentDidUpdate({}, {});
+        wrapper
+          .instance()
+          .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
 
-        expect(wrapper.instance().setState).not.toHaveBeenCalled();
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          isDirty: SOME_VALUE,
+          value: CONTROLLED_VALUE,
+        });
       });
     });
   });
