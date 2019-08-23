@@ -107,6 +107,23 @@
       }
     }
 
+    &:not(.is-pointing),
+    &.is-pointing.active,
+    &.is-pointing:hover {
+
+      .ui.label {
+        color: @themeActionContrastColorDefault;
+        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+
+        .ui.label,
+        p,
+        h3 {
+          color: @themeActionContrastColorDefault;
+          color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+        }
+      }
+    }
+
     &.is-pointing {
       background-color: @white !important;
 
@@ -135,7 +152,8 @@
         top: @pointerArrowContainerWithoutPeriodTextTopOffset;
       }
 
-      &.active {
+      &.active,
+      &.is-pointing:hover {
         background-color: @themeActionColorDefault;
         background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
         transform: translateY(@pointerHoverTranslationY);
