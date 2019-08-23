@@ -1,3 +1,10 @@
+## [1.238.5](https://github.com/lodgify/lodgify-ui/compare/v1.238.4...v1.238.5) (2019-08-23)
+
+
+### Bug Fixes
+
+* **PriceLabel:** text color contrast on hover if pointing ([211121b](https://github.com/lodgify/lodgify-ui/commit/211121b))
+
 ## [1.238.4](https://github.com/lodgify/lodgify-ui/compare/v1.238.3...v1.238.4) (2019-08-21)
 
 
