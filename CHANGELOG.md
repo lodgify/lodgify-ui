@@ -1,3 +1,10 @@
+# [1.239.0](https://github.com/lodgify/lodgify-ui/compare/v1.238.5...v1.239.0) (2019-08-26)
+
+
+### Features
+
+* **getResultsCountText:** expose prop for rendering results count text ([025c73b](https://github.com/lodgify/lodgify-ui/commit/025c73b))
+
 ## [1.238.5](https://github.com/lodgify/lodgify-ui/compare/v1.238.4...v1.238.5) (2019-08-23)
 
 
