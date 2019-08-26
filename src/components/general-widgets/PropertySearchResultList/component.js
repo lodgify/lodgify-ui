@@ -23,6 +23,7 @@ import { getFirstPropertyPositionOfActivePage } from './utils/getFirstPropertyPo
 import { getLastPropertyPositionOfActivePage } from './utils/getLastPropertyPositionOfActivePage';
 import { getShowingResultsText } from './utils/getShowingResultsText';
 import { getFlexDirection } from './utils/getFlexDirection';
+import { getResultsCountText } from './utils/getResultsCountText';
 
 /**
  * The standard widget for displaying a list of property search results.
@@ -65,6 +66,7 @@ class Component extends PureComponent {
       messageText,
       propertySearchResults,
       resultsCountText,
+      renderResultsCountText,
       renderShowingResultsText,
     } = this.props;
     const propertySearchResultsToDisplay = getPropertySearchResultsToDisplay(
@@ -82,7 +84,9 @@ class Component extends PureComponent {
                 <TextPlaceholder length="short" />
               </FlexContainer>
             ) : (
-              <Heading size="small">{`${length} ${resultsCountText}`}</Heading>
+              <Heading size="small">
+                {renderResultsCountText(length, resultsCountText)}
+              </Heading>
             )}
             {!!size(dropdownOptions) && (
               <Dropdown
@@ -160,14 +164,15 @@ Component.defaultProps = {
   dropdownOnChange: Function.prototype,
   dropdownOptions: null,
   dropdownValue: undefined,
+  isShowingPlaceholder: false,
   messageButtonOnClick: Function.prototype,
   messageButtonText: null,
   messageText: null,
   onChange: Function.prototype,
   propertySearchResults: [],
-  resultsCountText: RESULTS,
-  isShowingPlaceholder: false,
+  renderResultsCountText: getResultsCountText,
   renderShowingResultsText: getShowingResultsText,
+  resultsCountText: RESULTS,
 };
 
 Component.propTypes = {
@@ -220,6 +225,12 @@ Component.propTypes = {
   onChange: PropTypes.func,
   /** An array of [`PropertySearchResult`](#/PropertySearchResult) props objects. */
   propertySearchResults: PropTypes.arrayOf(PropTypes.object),
+  /**
+   * Function called for creating text that shows the total number of results in the list.
+   * @param  {number} numberOfResults
+   * @param  {string} resultsCountText
+   */
+  renderResultsCountText: PropTypes.func,
   /**
    * Function called for creating text that shows how many items are showing.
    * @param  {number} activePageFirstItemPosition
