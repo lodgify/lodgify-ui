@@ -61,6 +61,7 @@ exports[`<PropertySearchResultList /> render by default should render the right 
       },
     ]
   }
+  renderResultsCountText={[Function]}
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
@@ -277,6 +278,7 @@ exports[`<PropertySearchResultList /> render if \`isUserOnMobile\` === true shou
       },
     ]
   }
+  renderResultsCountText={[Function]}
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
@@ -494,6 +496,7 @@ exports[`<PropertySearchResultList /> render if \`props.activePage\` is defined 
       },
     ]
   }
+  renderResultsCountText={[Function]}
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
@@ -719,6 +722,7 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
       },
     ]
   }
+  renderResultsCountText={[Function]}
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
@@ -1062,6 +1066,7 @@ exports[`<PropertySearchResultList /> render if \`props.isShowingPlaceholder\` i
   messageText={null}
   onChange={[Function]}
   propertySearchResults={Array []}
+  renderResultsCountText={[Function]}
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
@@ -1388,6 +1393,7 @@ exports[`<PropertySearchResultList /> render if \`props.messageText\` is passed 
       },
     ]
   }
+  renderResultsCountText={[Function]}
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
@@ -1921,6 +1927,7 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
       },
     ]
   }
+  renderResultsCountText={[Function]}
   renderShowingResultsText={[Function]}
   resultsCountText="results"
 >
@@ -2749,6 +2756,7 @@ exports[`<PropertySearchResultList /> render if \`props.resultsCountText\` is pa
       },
     ]
   }
+  renderResultsCountText={[Function]}
   renderShowingResultsText={[Function]}
   resultsCountText="My god I love Cliff Richard"
 >
