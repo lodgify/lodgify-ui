@@ -1,3 +1,10 @@
+# [1.240.0](https://github.com/lodgify/lodgify-ui/compare/v1.239.0...v1.240.0) (2019-09-04)
+
+
+### Features
+
+* **ToggleInputSegment:** onClick passes name value and event arguments ([f32f415](https://github.com/lodgify/lodgify-ui/commit/f32f415))
+
 # [1.239.0](https://github.com/lodgify/lodgify-ui/compare/v1.238.5...v1.239.0) (2019-08-26)
 
 
