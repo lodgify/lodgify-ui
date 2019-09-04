@@ -39,17 +39,20 @@ export class Component extends PureComponent {
   };
 
   handleOnClick = event => {
-    const { isToggleChecked } = this.state;
     const {
       isToggleChecked: controlledIsToggleCheckedValue,
       onClick,
+      name,
     } = this.props;
 
+    const isToggleChecked =
+      controlledIsToggleCheckedValue || !this.state.isToggleChecked;
+
     this.setState({
-      isToggleChecked: controlledIsToggleCheckedValue || !isToggleChecked,
+      isToggleChecked,
     });
 
-    onClick(event);
+    onClick(name, isToggleChecked, event);
   };
 
   render = () => {
@@ -104,6 +107,8 @@ Component.propTypes = {
   onChange: PropTypes.func,
   /**
    * Event called when the input segment is clicked.
+   * @param {string} name
+   * @param {bool}   isToggleChecked
    * @param {Object} event
    */
   onClick: PropTypes.func,
