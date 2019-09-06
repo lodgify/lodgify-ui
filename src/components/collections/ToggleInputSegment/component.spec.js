@@ -129,21 +129,15 @@ describe('Component', () => {
       const event = {
         '🎇': '🎆',
       };
-      const name = 'john boy';
-      const isToggleChecked = true;
+
       const wrapper = getToggleInputSegment({
         onClick: jest.fn(),
-        name,
-        isToggleChecked,
+        isToggleChecked: true,
       });
 
       wrapper.instance().handleOnClick(event);
 
-      expect(wrapper.instance().props.onClick).toHaveBeenCalledWith(
-        name,
-        isToggleChecked,
-        event
-      );
+      expect(wrapper.instance().props.onClick).toHaveBeenCalledWith(event);
     });
   });
 
