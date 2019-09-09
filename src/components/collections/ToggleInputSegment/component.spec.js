@@ -30,7 +30,7 @@ describe('Component', () => {
   });
 
   describe('componentDidUpdate', () => {
-    describe('if `this.props.isToggleChecked` has changed', () => {
+    describe('if a controlled `isToggleChecked` value has changed', () => {
       it('should call `setState` and `props.onChange` with the right arguments', () => {
         const name = 'some name';
         const isToggleChecked = true;
@@ -53,7 +53,7 @@ describe('Component', () => {
       });
     });
 
-    describe('if `this.state.isToggleChecked` has changed', () => {
+    describe('if a uncontrolled `isToggleChecked` value has changed', () => {
       it('should call `onChange` with the right arguments', () => {
         const name = 'some name';
         const onChange = jest.fn();

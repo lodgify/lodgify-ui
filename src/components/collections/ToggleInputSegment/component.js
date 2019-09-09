@@ -7,6 +7,8 @@ import { FlexContainer } from 'layout/FlexContainer';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 
+import { getIsToggleCheckedControlled } from './utils/getIsToggleCheckedControlled';
+
 /**
  * A collection of information alongside a toggle input.
  */
@@ -27,13 +29,20 @@ export class Component extends PureComponent {
       onChange,
     } = this.props;
 
-    if (previousControlledIsToggleChecked !== controlledIsToggleChecked) {
+    const isControlled = getIsToggleCheckedControlled(
+      controlledIsToggleChecked
+    );
+
+    if (
+      isControlled &&
+      previousControlledIsToggleChecked !== controlledIsToggleChecked
+    ) {
       this.setState({ isToggleChecked: controlledIsToggleChecked });
       onChange(name, controlledIsToggleChecked);
       return;
     }
 
-    if (previousIsToggleChecked !== isToggleChecked) {
+    if (!isControlled && previousIsToggleChecked !== isToggleChecked) {
       onChange(name, isToggleChecked);
     }
   };
@@ -83,7 +92,7 @@ Component.defaultProps = {
   description: null,
   onClick: Function.prototype,
   onChange: Function.prototype,
-  isToggleChecked: false,
+  isToggleChecked: null,
   name: '',
 };
 
