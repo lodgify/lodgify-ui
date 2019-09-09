@@ -1,3 +1,15 @@
+# [1.241.0](https://github.com/lodgify/lodgify-ui/compare/v1.240.0...v1.241.0) (2019-09-09)
+
+
+### Bug Fixes
+
+* **ToggleInputSegment:** prevent additional calls to onChange prop ([8cedf87](https://github.com/lodgify/lodgify-ui/commit/8cedf87))
+
+
+### Features
+
+* **ToggleInputSegment:** add is controlled value util ([d90053d](https://github.com/lodgify/lodgify-ui/commit/d90053d))
+
 # [1.240.0](https://github.com/lodgify/lodgify-ui/compare/v1.239.0...v1.240.0) (2019-09-04)
 
 
