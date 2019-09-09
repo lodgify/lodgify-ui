@@ -30,7 +30,7 @@ describe('Component', () => {
   });
 
   describe('componentDidUpdate', () => {
-    describe('if `this.props.isToggleChecked` has changed', () => {
+    describe('if a controlled `isToggleChecked` value has changed', () => {
       it('should call `setState` and `props.onChange` with the right arguments', () => {
         const name = 'some name';
         const isToggleChecked = true;
@@ -53,7 +53,7 @@ describe('Component', () => {
       });
     });
 
-    describe('if `this.state.isToggleChecked` has changed', () => {
+    describe('if a uncontrolled `isToggleChecked` value has changed', () => {
       it('should call `onChange` with the right arguments', () => {
         const name = 'some name';
         const onChange = jest.fn();
@@ -129,21 +129,15 @@ describe('Component', () => {
       const event = {
         '🎇': '🎆',
       };
-      const name = 'john boy';
-      const isToggleChecked = true;
+
       const wrapper = getToggleInputSegment({
         onClick: jest.fn(),
-        name,
-        isToggleChecked,
+        isToggleChecked: true,
       });
 
       wrapper.instance().handleOnClick(event);
 
-      expect(wrapper.instance().props.onClick).toHaveBeenCalledWith(
-        name,
-        isToggleChecked,
-        event
-      );
+      expect(wrapper.instance().props.onClick).toHaveBeenCalledWith(event);
     });
   });
 

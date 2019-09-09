@@ -7,6 +7,8 @@ import { FlexContainer } from 'layout/FlexContainer';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 
+import { getIsToggleCheckedControlled } from './utils/getIsToggleCheckedControlled';
+
 /**
  * A collection of information alongside a toggle input.
  */
@@ -27,32 +29,36 @@ export class Component extends PureComponent {
       onChange,
     } = this.props;
 
-    if (previousControlledIsToggleChecked !== controlledIsToggleChecked) {
+    const isControlled = getIsToggleCheckedControlled(
+      controlledIsToggleChecked
+    );
+
+    if (
+      isControlled &&
+      previousControlledIsToggleChecked !== controlledIsToggleChecked
+    ) {
       this.setState({ isToggleChecked: controlledIsToggleChecked });
       onChange(name, controlledIsToggleChecked);
       return;
     }
 
-    if (previousIsToggleChecked !== isToggleChecked) {
+    if (!isControlled && previousIsToggleChecked !== isToggleChecked) {
       onChange(name, isToggleChecked);
     }
   };
 
   handleOnClick = event => {
+    const { isToggleChecked } = this.state;
     const {
       isToggleChecked: controlledIsToggleCheckedValue,
       onClick,
-      name,
     } = this.props;
 
-    const isToggleChecked =
-      controlledIsToggleCheckedValue || !this.state.isToggleChecked;
-
     this.setState({
-      isToggleChecked,
+      isToggleChecked: controlledIsToggleCheckedValue || !isToggleChecked,
     });
 
-    onClick(name, isToggleChecked, event);
+    onClick(event);
   };
 
   render = () => {
@@ -86,7 +92,7 @@ Component.defaultProps = {
   description: null,
   onClick: Function.prototype,
   onChange: Function.prototype,
-  isToggleChecked: false,
+  isToggleChecked: null,
   name: '',
 };
 
@@ -107,8 +113,6 @@ Component.propTypes = {
   onChange: PropTypes.func,
   /**
    * Event called when the input segment is clicked.
-   * @param {string} name
-   * @param {bool}   isToggleChecked
    * @param {Object} event
    */
   onClick: PropTypes.func,
