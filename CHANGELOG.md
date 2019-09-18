@@ -1,3 +1,10 @@
+# [1.242.0](https://github.com/lodgify/lodgify-ui/compare/v1.241.0...v1.242.0) (2019-09-18)
+
+
+### Features
+
+* **Dropdown:** allow to clear the field ([28d041d](https://github.com/lodgify/lodgify-ui/commit/28d041d))
+
 # [1.241.0](https://github.com/lodgify/lodgify-ui/compare/v1.240.0...v1.241.0) (2019-09-09)
 
 
